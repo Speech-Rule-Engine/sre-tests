@@ -19,7 +19,7 @@
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-goog.provide('sre.ClearspeakRuleTest');
+goog.provide('sre.ClearspeakFrenchRuleTest');
 
 goog.require('sre.AbstractRuleTest');
 goog.require('sre.ClearspeakPreferences');
@@ -30,8 +30,13 @@ goog.require('sre.ClearspeakPreferences');
  * @constructor
  * @extends {sre.AbstractRuleTest}
  */
-sre.ClearspeakRuleTest = function() {
-  sre.ClearspeakRuleTest.base(this, 'constructor');
+sre.ClearspeakFrenchRuleTest = function() {
+  sre.ClearspeakFrenchRuleTest.base(this, 'constructor');
+
+  /**
+   * @override
+   */
+  this.locale = 'fr';
 
   /**
    * @override
@@ -43,16 +48,17 @@ sre.ClearspeakRuleTest = function() {
    */
   this.semantics = true;
 
-  this.setActive('ClearspeakExamples');
+  this.actual = true;
+  this.setActive('ClearspeakFrench');
   this.startExamples();
 };
-goog.inherits(sre.ClearspeakRuleTest, sre.AbstractRuleTest);
+goog.inherits(sre.ClearspeakFrenchRuleTest, sre.AbstractRuleTest);
 
 
 /**
  * @override
  */
-sre.ClearspeakRuleTest.prototype.setUpTest = function() {
+sre.ClearspeakFrenchRuleTest.prototype.setUpTest = function() {
   sre.System.getInstance().setupEngine(
       {markup: sre.Engine.Markup.PUNCTUATION});
   sre.Engine.getInstance().parser = new sre.ClearspeakPreferences.Parser();
