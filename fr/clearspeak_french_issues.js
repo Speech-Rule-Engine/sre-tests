@@ -13,30 +13,30 @@
 // limitations under the License.
 
 //
-// Tests from the issues discovered in Clearspeak rules.
+// Tests from the issues discovered in ClearspeakFrench rules.
 //
 
 
-goog.provide('sre.ClearspeakIssues');
+goog.provide('sre.ClearspeakFrenchIssues');
 
-goog.require('sre.ClearspeakRuleTest');
+goog.require('sre.ClearspeakFrenchRuleTest');
 
 
 
 /**
 * @constructor
-* @extends {sre.ClearspeakRuleTest}
+* @extends {sre.ClearspeakFrenchRuleTest}
 */
-sre.ClearspeakIssues = function() {
-  sre.ClearspeakIssues.base(this, 'constructor');
+sre.ClearspeakFrenchIssues = function() {
+  sre.ClearspeakFrenchIssues.base(this, 'constructor');
 
   /**
    * @override
    */
-  this.information = 'Clearspeak Issues tests.';
+  this.information = 'ClearspeakFrench Issues tests.';
 
 };
-goog.inherits(sre.ClearspeakIssues, sre.ClearspeakRuleTest);
+goog.inherits(sre.ClearspeakFrenchIssues, sre.ClearspeakFrenchRuleTest);
 
 
 
@@ -45,25 +45,23 @@ goog.inherits(sre.ClearspeakIssues, sre.ClearspeakRuleTest);
 //
 
 
-sre.ClearspeakIssues.prototype.testIssue230 = function() {
+sre.ClearspeakFrenchIssues.prototype.testIssue230 = function() {
   var preference = 'default';
   this.executeRuleTest(
       '<mn>5</mn><mfrac><mn>3</mn><mn>224</mn></mfrac>',
-      '5 and, 3 over 224', preference);
+      '5 et, 3 sur 224', preference);
   this.executeRuleTest(
       '<mn>5</mn><mfrac><mn>3</mn><mn>4</mn></mfrac>',
-      '5 and three fourths', preference);
+      '5 et trois-quarts', preference);
 };
 
 
-sre.ClearspeakIssues.prototype.testIssueNumbers = function() {
+sre.ClearspeakFrenchIssues.prototype.testIssueNumbers = function() {
   var preference = 'default';
   this.executeRuleTest(
-      '<mrow><mn>t2e4</mn></mrow>', 'number t 2 e 4', preference);
+      '<mrow><mn>t2e4</mn></mrow>', 'nombre t 2 e 4', preference);
   this.executeRuleTest(
-      '<mrow><mn>#FF0000</mn></mrow>',
-      'number number sign F F 0 0 0 0', preference);
+      '<mrow><mn>#FF0000</mn></mrow>', 'nombre dièse F F 0 0 0 0', preference);
   this.executeRuleTest(
-      '<mrow><mn>#FFFF</mn></mrow>',
-      'number number sign F F F F', preference);
+      '<mrow><mn>#FFFF</mn></mrow>', 'nombre dièse F F F F', preference);
 };
