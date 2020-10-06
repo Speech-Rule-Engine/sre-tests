@@ -5,4 +5,3 @@ This is a separate repository for maintaining and running tests for [Speech Rule
 The majority of tests is available in a JSON format.
 
 
-## JSON format 
