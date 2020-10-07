@@ -30,7 +30,7 @@ export class Tests {
    * List of all environment variables that can be set.
    */
   public static environmentVars: string[] = [
-    'FILE', 'FILES', 'LOCALE', 'BLOCK', 'JSON', 'VERBOSE', 'WARN'];
+    'FILE', 'FILES', 'LOCALE', 'BLOCK', 'JSON', 'VERBOSE', 'WARN', 'NOOUTPUT'];
 
   /**
    * List of all available tests.
@@ -180,6 +180,7 @@ export class Tests {
    * Runs the set of tests.
    */
   public run() {
+    ExampleFiles.noOutput = !!this.environment['NOOUTPUT'];
     let timeIn = (new Date()).getTime();
     for (let i = 0, test; test = this.testList[i]; i++) {
       let obj = new test();

@@ -98,9 +98,8 @@ implements ExamplesOutput {
     if (!this.fileError_) {
       try {
         for (let key in this.examples_) {
-          fs.appendFileSync(
-            this.examplesFile_, key);
-          fs.appendFileSync(
+          ExampleFiles.append(this.examplesFile_, key);
+          ExampleFiles.append(
             this.examplesFile_, this.join(this.examples_[key]));
         }
       } catch (err) {
@@ -158,12 +157,15 @@ export namespace ExampleFiles {
 
   const descriptors: {[key: string]: number} = {};
 
+  export let noOutput = false;
+
   /**
    * Opens an output file and registers it.
    * @param file The name of the output file.
    * @param obj The test object.
    */
   export function openFile(file: string, obj: AbstractExamples) {
+    if (noOutput) return;
     if (!openFiles[file]) {
       let fd = fs.openSync(file, 'w+');
       descriptors[file] = fd;
@@ -176,11 +178,22 @@ export namespace ExampleFiles {
    * Finalises and closes all open output files.
    */
   export function closeFiles() {
+    if (noOutput) return;
     for (let file of Object.keys(openFiles)) {
       fs.appendFileSync(
         file, openFiles[file].footer());
       fs.closeSync(descriptors[file]);
     }
+  }
+
+  /**
+   * Appends to the given output file.
+   * @param {string} file The file name.
+   * @param {string} content The content to append.
+   */
+  export function append(file: string, content: string) {
+    if (noOutput) return;
+    fs.appendFileSync(file, content);
   }
 
 }
