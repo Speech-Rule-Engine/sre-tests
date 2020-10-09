@@ -6,7 +6,9 @@
     "test": "tests"
   },
   "scripts": {
-    "prepare": "npx rimraf js; npx rimraf dist; ./node_modules/.bin/tsc; ./node_modules/.bin/webpack"
+    "prepare-webpack": "npx rimraf js; npx rimraf dist; ./node_modules/.bin/tsc; ./node_modules/.bin/webpack",
+    "prepare-parcel": "npx rimraf js; npx rimraf dist; npx parcel build ts/index.ts --target node --out-file sretest.js",
+    "prepare": "npm run prepare-parcel"
   },
   "maintainers": [
     "Volker Sorge <Volker.Sorge@gmail.com> (http://www.cs.bham.ac.uk/~vxs)"
