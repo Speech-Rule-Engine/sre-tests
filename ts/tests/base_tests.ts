@@ -14,7 +14,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {ColorPickerTest} from './color_picker_test';
 import {DomTest} from './dom_test';
 import {MarkupTest} from './markup_test';
 import {SpeechRuleTest} from './speech_rule_test';
@@ -26,5 +25,5 @@ import {WalkerTest} from './walker_test';
  * Deprecated: New tests should always be added in JSON style.
  * @deprecated
  */
-export const testList: any[] = [ColorPickerTest, DomTest, MarkupTest,
+export const testList: any[] = [DomTest, MarkupTest,
                                 SpeechRuleTest, WalkerTest];
