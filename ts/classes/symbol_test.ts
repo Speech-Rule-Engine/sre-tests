@@ -26,9 +26,6 @@ export class SymbolTest extends SpeechTest {
   public type: string = 'character';
 
   public pickFields = ['name', 'expected'];
-  constructor() {
-    super();
-  }
 
   /**
    * Tests speech translation for single characters.

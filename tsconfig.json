@@ -13,13 +13,13 @@
     "downlevelIteration": true,
     "noLib": false,
     "alwaysStrict": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "lib": ["es6", "dom"],
     "typeRoots": [
       "./ts/typings",
       "./node_modules/@types"
     ],
-    "types": ["node", "sre"],
+    "types": ["node", "sre", "jest"],
     "outDir": "js"
   },
   "include": [
