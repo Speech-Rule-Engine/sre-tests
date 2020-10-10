@@ -28,6 +28,7 @@ import {ClearspeakAnnotationTest} from './clearspeak_annotation_test';
 import {ClearspeakTest} from './clearspeak_test';
 import {CollapseTest} from './collapse_test';
 import {ColorPickerTest} from './color_picker_test';
+import {HtmlTest, XpathTest} from './dom_test';
 import {PrefixTest} from './prefix_test';
 import {EnrichMathmlTest, EnrichSpeechTest, RebuildStreeTest, SemanticApiTest,
         SemanticTreeTest} from './semantic_test';
@@ -43,13 +44,15 @@ const map = new Map<string, any>([
   ['colorPicker', ColorPickerTest],
   ['enrichMathml', EnrichMathmlTest],
   ['enrichSpeech', EnrichSpeechTest],
+  ['html', HtmlTest],
   ['prefix', PrefixTest],
   ['rebuild', RebuildStreeTest],
   ['semanticApi', SemanticApiTest],
   ['speech', SpeechTest],
   ['stree', SemanticTreeTest],
   ['summary', SummaryTest],
-  ['symbol', SymbolTest]
+  ['symbol', SymbolTest],
+  ['xpath', XpathTest]
 ]);
 
 /**
