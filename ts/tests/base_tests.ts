@@ -14,9 +14,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {MarkupTest} from './markup_test';
 import {SpeechRuleTest} from './speech_rule_test';
-import {WalkerTest} from './walker_test';
 
 /**
  * List that collates old style functional and unit tests.
@@ -24,4 +22,4 @@ import {WalkerTest} from './walker_test';
  * Deprecated: New tests should always be added in JSON style.
  * @deprecated
  */
-export const testList: any[] = [MarkupTest, SpeechRuleTest, WalkerTest];
+export const testList: any[] = [SpeechRuleTest];
