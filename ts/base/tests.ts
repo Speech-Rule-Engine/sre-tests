@@ -23,6 +23,7 @@ import * as TestFactory from '../classes/test_factory';
 import * as BaseTests from '../tests/base_tests';
 import {TestRunner} from './runner';
 import {TestPath} from './test_util';
+import {sre} from './test_external';
 
 export class Tests {
 
@@ -30,7 +31,7 @@ export class Tests {
    * List of all environment variables that can be set.
    */
   public static environmentVars: string[] = [
-    'FILE', 'FILES', 'LOCALE', 'BLOCK', 'JSON', 'VERBOSE', 'WARN', 'NOOUTPUT'];
+    'FILE', 'FILES', 'LOCALE', 'BLOCK', 'JSON', 'VERBOSE', 'WARN', 'NOOUTPUT', 'DEBUG'];
 
   /**
    * List of all available tests.
@@ -47,6 +48,7 @@ export class Tests {
    */
   public environment: {[key: string]: number | boolean | string[]} = {
     JSON: true,
+    DEBUG: false,
     VERBOSE: 2,
     WARN: 1
   };
@@ -181,6 +183,9 @@ export class Tests {
    */
   public run() {
     ExampleFiles.noOutput = !!this.environment['NOOUTPUT'];
+    if (this.environment['DEBUG']) {
+      sre.Debugger.getInstance().init();
+    }
     let timeIn = (new Date()).getTime();
     for (let i = 0, test; test = this.testList[i]; i++) {
       let obj = new test();
