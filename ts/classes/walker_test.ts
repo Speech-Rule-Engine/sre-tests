@@ -28,27 +28,20 @@ export class WalkerTest extends AbstractJsonTest {
 
   private walker: sret.Walker;
 
+  /**
+   * @override
+   */
   constructor() {
     super();
     this.pickFields.push('modifier');
   }
 
+  /**
+   * @override
+   */
   public prepare() {
     super.prepare();
-    console.log("HERE");
-    console.log('JSON: ' + this.jsonTests);
-    let renderer: {renderer: string,
-                   browser?: string} = {renderer: this.jsonTests['renderer']};
-    console.log(renderer);
-    let browser = this.jsonTests['browser'];
-    if (browser) {
-      renderer['browser'] = browser;
-    }
-    let expression = this.baseTests['inputs'][this.jsonTests['expression']];
-    this.walker = this.createWalker(
-      this.jsonTests['walker'], sre.DomUtil.parseInput(expression),
-      this.jsonTests['generator'], renderer, expression
-    );
+    this.createWalker();
   }
 
   /**
@@ -104,15 +97,21 @@ export class WalkerTest extends AbstractJsonTest {
    * @param mml The MathML string for the node.
    * @return The newly created walker.
    */
-  private createWalker(
-    kind: string, node: Node, generator: string,
-    renderer: {renderer: string, browser?: string}, mml: string): sret.Walker {
-    return sre.WalkerFactory.walker(
-      kind, node,
-      sre.SpeechGeneratorFactory.generator(generator),
+  private createWalker() {
+    let renderer: {renderer: string,
+                   browser?: string} = {renderer: this.jsonTests['renderer']};
+    let browser = this.jsonTests['browser'];
+    if (browser) {
+      renderer['browser'] = browser;
+    }
+    let expression = this.jsonTests['expression'];
+    this.walker = sre.WalkerFactory.walker(
+      this.jsonTests['walker'],
+      sre.DomUtil.parseInput(this.baseTests['inputs'][expression]),
+      sre.SpeechGeneratorFactory.generator(this.jsonTests['generator']),
       (sre.HighlighterFactory.highlighter(
         {color: 'black'}, {color: 'white'}, renderer) as sret.Highlighter),
-      mml);
+      this.baseTests['inputs'][expression.replace(/_.*$/, '_Mml')]);
   }
 
 }
