@@ -1,4 +1,3 @@
-// import {ExampleFiles} from './classes/abstract_examples';
 import {get} from './classes/test_factory';
 
 /**
@@ -11,25 +10,24 @@ export function runJsonTest(file: string) {
     return;
   }
   testcases.prepare();
-  // afterAll(() => {
-  //   ExampleFiles.closeFiles();
-  // });
-  beforeEach(() => {
-    testcases.setUpTest();
-  });
-  afterEach(() => {
-    testcases.tearDownTest();
-  });
-  describe(testcases.information,
-           () => {
-             for (let testcase of testcases.inputTests) {
-               if (!testcase.test) {
-                 continue;
-               }
-               test(testcase.name, () => {
-                 testcases.method.bind(testcases).
-                   apply(null, testcases.pick(testcase));
-               });
-             }
-           });
+  describe(
+    testcases.information,
+    () => {
+      // This ensures clean testing even for multiple calls.
+      beforeAll(() => {
+        testcases.setUpTest();
+      });
+      afterAll(() => {
+        testcases.tearDownTest();
+      });
+      for (let testcase of testcases.inputTests) {
+        if (!testcase.test) {
+          continue;
+        }
+        test(testcase.name, () => {
+          testcases.method.bind(testcases).
+            apply(null, testcases.pick(testcase));
+        });
+      }
+    });
 }
