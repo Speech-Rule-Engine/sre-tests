@@ -10,8 +10,8 @@
     "prepare": "node tests.config.js; npm run prepare-webpack",
     "test": "npm run test-files",
     "test-all": "npm run test-files; npm run test-output",
-    "test-files": "npx jest --testPathPattern js/jest --testPathIgnorePatterns js/output",
-    "test-output": "npx jest --testPathPattern js/output --testPathIgnorePatterns js/jest",
+    "test-files": "npx jest --testPathPattern js --testPathIgnorePatterns js/output",
+    "test-output": "npx jest --testPathPattern js/output",
     "clean": "rm -rf dist js ts/output ts/jest coverage"
   },
   "maintainers": [
