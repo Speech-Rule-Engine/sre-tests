@@ -5,7 +5,7 @@ const path = require('path');
 const cp = require('child_process');
 
 const indir = 'expected/';
-const jestdir = 'ts/jest/';
+const jsondir = 'ts/json/';
 const alldir = 'ts/output/';  // To run tests with output.
 
 
@@ -68,7 +68,7 @@ let createJsonTests = function(files) {
     content.push(`import {ExampleFiles} from '${base}classes/abstract_examples'`);
     content.push('ExampleFiles.noOutput = true;');
     content.push(`runJsonTest('${file}');`);
-    createFile(jestdir + dir, path.basename(file).replace(/.json$/, '.test.ts'), content);
+    createFile(jsondir + dir, path.basename(file).replace(/.json$/, '.test.ts'), content);
   }
 };
 
@@ -86,7 +86,7 @@ let createOutputTests = function() {
 
 
 let cleanFiles = function() {
-  fs.rmdirSync(jestdir, {recursive: true});
+  fs.rmdirSync(jsondir, {recursive: true});
   fs.rmdirSync(alldir, {recursive: true});
 };
 
