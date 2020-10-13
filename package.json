@@ -6,13 +6,13 @@
     "test": "tests"
   },
   "scripts": {
-    "prepare-webpack": "npx rimraf js; npx rimraf dist; ./node_modules/.bin/tsc; ./node_modules/.bin/webpack",
-    "prepare": "node tests.config.js; npm run prepare-webpack",
-    "test": "npm run test-files",
-    "test-all": "npm run test-files; npm run test-output",
-    "test-files": "npx jest --testPathPattern js/jest --testPathIgnorePatterns js/output",
-    "test-output": "npx jest --testPathPattern js/output --testPathIgnorePatterns js/jest",
-    "clean": "rm -rf dist js ts/output ts/jest coverage"
+    "prepare:webpack": "npx rimraf js; npx rimraf dist; ./node_modules/.bin/tsc; ./node_modules/.bin/webpack",
+    "prepare": "node tests.config.js; npm run prepare:webpack",
+    "test": "npm run test:files",
+    "test:all": "npm run test:files; npm run test:output",
+    "test:files": "npx jest --testPathIgnorePatterns js/output",
+    "test:output": "npx jest --testPathPattern js/output",
+    "clean": "npx rimraf dist js ts/output ts/json coverage"
   },
   "maintainers": [
     "Volker Sorge <Volker.Sorge@gmail.com> (http://www.cs.bham.ac.uk/~vxs)"
