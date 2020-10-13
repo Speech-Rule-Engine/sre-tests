@@ -182,13 +182,11 @@
       "brief": true,
       "expected": "<infixop>-<content><operator>-</operator><operator>-</operator></content><children><infixop>+<content><operator>+</operator><operator>+</operator></content><children><identifier>a</identifier><identifier>b</identifier><identifier>c</identifier></children></infixop><identifier>d</identifier><identifier>e</identifier></children></infixop>"
     },
-    "brief": true,
     "_comment_25": " Addition and explicit multiplication.",
     "MultipleOperators_2": {
       "brief": true,
       "expected": "<infixop>+<content><operator>+</operator><operator>+</operator></content><children><identifier>a</identifier><infixop>∘<content><operator>∘</operator></content><children><identifier>b</identifier><identifier>c</identifier></children></infixop><identifier>d</identifier></children></infixop>"
     },
-    "brief": true,
     "_comment_26": " Addition with explicit and implicit multiplication.",
     "MultipleOperators_3": {
       "brief": true,
@@ -238,13 +236,11 @@
       "brief": true,
       "expected": "<fenced><content><fence>(</fence><fence>)</fence></content><children><empty/></children></fenced>"
     },
-    "brief": true,
     "_comment_35": " Single Fenced Expression.",
     "RegularFences_2": {
       "brief": true,
       "expected": "<fenced><content><fence>(</fence><fence>)</fence></content><children><infixop>+<content><operator>+</operator></content><children><identifier>a</identifier><identifier>b</identifier></children></infixop></children></fenced>"
     },
-    "brief": true,
     "_comment_36": " Single Fenced Expression and operators.",
     "RegularFences_3": {
       "brief": true,

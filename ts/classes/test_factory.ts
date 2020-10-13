@@ -27,27 +27,36 @@ import {ApiTest} from './api_test';
 import {ClearspeakAnnotationTest} from './clearspeak_annotation_test';
 import {ClearspeakTest} from './clearspeak_test';
 import {CollapseTest} from './collapse_test';
+import {ColorPickerTest} from './color_picker_test';
+import {HtmlTest, XpathTest} from './dom_test';
+import {MarkupTest} from './markup_test';
 import {PrefixTest} from './prefix_test';
 import {EnrichMathmlTest, EnrichSpeechTest, RebuildStreeTest, SemanticApiTest,
         SemanticTreeTest} from './semantic_test';
 import {SpeechTest} from './speech_test';
 import {SummaryTest} from './summary_test';
 import {SymbolTest} from './symbol_test';
+import {WalkerTest} from './walker_test';
 
 const map = new Map<string, any>([
   ['api', ApiTest],
   ['clearspeak', ClearspeakTest],
   ['clearspeakAnnotation', ClearspeakAnnotationTest],
   ['collapse', CollapseTest],
+  ['colorPicker', ColorPickerTest],
   ['enrichMathml', EnrichMathmlTest],
   ['enrichSpeech', EnrichSpeechTest],
+  ['html', HtmlTest],
+  ['markup', MarkupTest],
   ['prefix', PrefixTest],
   ['rebuild', RebuildStreeTest],
   ['semanticApi', SemanticApiTest],
   ['speech', SpeechTest],
   ['stree', SemanticTreeTest],
   ['summary', SummaryTest],
-  ['symbol', SymbolTest]
+  ['symbol', SymbolTest],
+  ['walker', WalkerTest],
+  ['xpath', XpathTest]
 ]);
 
 /**

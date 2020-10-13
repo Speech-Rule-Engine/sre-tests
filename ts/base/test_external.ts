@@ -26,7 +26,7 @@ import * as process from 'process';
 import xmldomLocal = require('xmldom-sre');
 
 export const xmldom = xmldomLocal;
-export const baseDir = __dirname.replace(/dist$/, '');
+export const baseDir = __dirname.replace(/(dist|js\/base)$/, '');
 let env = process.env['SRE_JSON_PATH'];
 let lib = process.env['SRE_LIBRARY'] || 'sre_test.js';
 let file = path.resolve(env ? env + '/../' + lib : baseDir + '../lib/' + lib);

@@ -23,12 +23,9 @@ export class SymbolTest extends SpeechTest {
 
   public styles: string[] = [];
 
-  public type: string = 'character';
+  public kind: string = 'character';
 
   public pickFields = ['name', 'expected'];
-  constructor() {
-    super();
-  }
 
   /**
    * Tests speech translation for single characters.
@@ -38,13 +35,7 @@ export class SymbolTest extends SpeechTest {
    */
   public executeCharTest(char: string, answers: string[]) {
     for (let i = 0; i < answers.length; i++) {
-      try {
-        this.executeTest(char, answers[i], this.styles[i]);
-      } catch (err) {
-        console.info('\nFailed Character: ' + char + ' (' +
-          this.domain + '.' + this.styles[i] + ')');
-        throw err;
-      }
+      this.executeTest(char, answers[i], this.styles[i]);
     }
   }
 
@@ -99,7 +90,7 @@ export class SymbolTest extends SpeechTest {
       throw e;
     } finally {
       this.styles = this.jsonTests.styles || [];
-      this.type = this.baseTests.type || 'character';
+      this.kind = this.baseTests.type || 'character';
     }
   }
 
@@ -107,7 +98,7 @@ export class SymbolTest extends SpeechTest {
    * @override
    */
   public method(...args: any[]) {
-    this.type === 'unit' ? this.executeUnitTest(args[0], args[1]) :
+    this.kind === 'unit' ? this.executeUnitTest(args[0], args[1]) :
       this.executeCharTest(args[0], args[1]);
   }
 }

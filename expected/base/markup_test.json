@@ -1,0 +1,41 @@
+{
+  "information": "Markup function test.",
+  "factory": "markup",
+  "tests": {
+    "_comment0_": " Test for simple speech.",
+    "SimpleString": {
+      "expected": "x equals negative b plus or minus Square root of b squared minus four times a times c divided by two times a",
+      "markup": "NONE"
+    },
+    "_comment0_": " Test for ACSS markup.",
+    "Acss": {
+      "expected": "(exp \"x\" (pause . 200) \"equals\" (pause . 450) (text ((richness . 6)) \"negative b plus or minus Square root of\") (text ((richness . 7)) \"b\") (text ((richness . 7) (average-pitch . 6)) \"squared\") (pause . 300) (text ((richness . 7)) \"minus four times a times c\") (pause . 650) \"divided by\" (text ((richness . 4)) \"two times a\"))",
+      "markup": "ACSS"
+    },
+    "_comment0_": " Test for Sable markup.",
+    "Sable": {
+      "expected": "x <BREAK MSEC=\"200\"/> equals <BREAK MSEC=\"450\"/> <RATE SPEED=\"17.5%\"> negative b plus or minus Square root of </RATE> <RATE SPEED=\"35%\"> b <PITCH RANGE=\"17.5%\"> squared </PITCH> <BREAK MSEC=\"300\"/> minus four times a times c </RATE> <RATE SPEED=\"17.5%\"> <BREAK MSEC=\"650\"/> </RATE> divided by <RATE SPEED=\"-17.5%\"> two times a </RATE> <BREAK MSEC=\"400\"/>",
+      "markup": "SABLE"
+    },
+    "_comment0_": " Test for SSML markup.",
+    "Ssml": {
+      "expected": "x <break time=\"200ms\"/> equals <break time=\"450ms\"/> <prosody rate=\"+17%\"> negative b plus or minus Square root of </prosody> <prosody rate=\"+35%\"> b <prosody pitch=\"+17%\"> squared </prosody> <break time=\"300ms\"/> minus four times a times c </prosody> <prosody rate=\"+17%\"> <break time=\"650ms\"/> </prosody> divided by <prosody rate=\"-18%\"> two times a </prosody> <break time=\"400ms\"/>",
+      "markup": "SSML"
+    },
+    "_comment0_": " Test for VoiceXML markup. (Currently that is the same as SSML.)",
+    "VoiceXml": {
+      "expected": "x <break time=\"200ms\"/> equals <break time=\"450ms\"/> <prosody rate=\"+17%\"> negative b plus or minus Square root of </prosody> <prosody rate=\"+35%\"> b <prosody pitch=\"+17%\"> squared </prosody> <break time=\"300ms\"/> minus four times a times c </prosody> <prosody rate=\"+17%\"> <break time=\"650ms\"/> </prosody> divided by <prosody rate=\"-18%\"> two times a </prosody> <break time=\"400ms\"/>",
+      "markup": "VOICEXML"
+    },
+    "_comment0_": " Test for SSML Step markup.",
+    "SsmlStep_0": {
+      "domain": "clearspeak",
+      "expected": "<say-as interpret-as=\"character\">x</say-as> equals <break time=\"250ms\"/> the fraction with numerator <mark name=\"0\"/> negative <mark name=\"1\"/> <say-as interpret-as=\"character\">b</say-as> <mark name=\"2\"/> plus or minus the square root of <say-as interpret-as=\"character\">b</say-as> squared minus <prosody rate=\"+25%\"> 4 <say-as interpret-as=\"character\">a</say-as> <say-as interpret-as=\"character\">c</say-as> </prosody> <break time=\"250ms\"/> and denominator <prosody rate=\"+25%\"> 2 <say-as interpret-as=\"character\">a</say-as> </prosody> <break time=\"250ms\"/>",
+      "markup": "SSML_STEP"},
+    "SsmlStep_1": {
+      "domain": "clearspeak",
+      "expected": "x equals <break time=\"250ms\"/> the fraction with numerator negative b plus or minus the square root of b squared minus <prosody rate=\"+25%\"> 4 a c </prosody> <break time=\"250ms\"/> and denominator <prosody rate=\"+25%\"> 2 a </prosody> <break time=\"250ms\"/>",
+      "markup": "SSML"
+    }
+  }
+}

@@ -21,6 +21,8 @@ import {TestPath, TestUtil} from '../base/test_util';
 
 export abstract class AbstractTest {
 
+  protected jest: boolean = false;
+
   /**
    * Basic information on the test case.
    */
@@ -29,7 +31,17 @@ export abstract class AbstractTest {
   /**
    * The assertion package.
    */
-  public assert: any = assert;
+  public assert: {
+    equal: (expected: any, actual: any) => void
+    deepEqual: (expected: any, actual: any) => void
+    fail: () => void;
+  } = {
+    equal: !this.jest ? assert.strictEqual :
+      (actual, expected) => {expect(actual).toEqual(expected); },
+    deepEqual: !this.jest ? assert.deepStrictEqual :
+      (actual, expected) => {expect(actual).toEqual(expected); },
+    fail: assert.fail
+  };
 
   /**
    * Sets up the basic requirements for the test.

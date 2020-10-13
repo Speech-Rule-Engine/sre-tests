@@ -21,6 +21,7 @@
 import {sre} from '../base/test_external';
 import {AbstractExamples} from './abstract_examples';
 
+
 export class SpeechTest extends AbstractExamples {
 
   public style: string;

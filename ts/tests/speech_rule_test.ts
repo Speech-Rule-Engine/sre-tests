@@ -35,12 +35,9 @@ export class SpeechRuleTest extends AbstractTest {
    * @param expected Expected value.
    * @param actual The actual computed value.
    */
-  public assertStructEquals(expected: any, actual: any): boolean {
-    if (typeof expected === 'object' && typeof actual === 'object') {
-      return this.assert.deepEqual(JSON.stringify(expected),
-                                   JSON.stringify(actual));
-    }
-    return this.assert.deepEqual(expected, actual);
+  public assertStructEquals(expected: any, actual: any) {
+    this.assert.deepEqual(JSON.parse(JSON.stringify(expected)),
+                          JSON.parse(JSON.stringify(actual)));
   }
 
   /**
