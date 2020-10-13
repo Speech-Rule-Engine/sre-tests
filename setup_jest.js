@@ -62,13 +62,13 @@ let createJsonTests = function(files) {
   for (let file of files) {
     let dir = path.dirname(file);
     let depth = dir.match(/\//g);
-    let base = Array(depth ? depth.length + 1 : 2).join('../');
+    let base = Array((depth ? depth.length : 0) + 3).join('../');
     let content = [];
-    content.push(`import {runJsonTest} from '${base}/jest'`);
-    content.push(`import {ExampleFiles} from '${base}/classes/abstract_examples'`);
+    content.push(`import {runJsonTest} from '${base}jest'`);
+    content.push(`import {ExampleFiles} from '${base}classes/abstract_examples'`);
     content.push('ExampleFiles.noOutput = true;');
     content.push(`runJsonTest('${file}');`);
-    createFile(jestdir + dir, path.basename(file).replace(/.json$/, '.ts'), content);
+    createFile(jestdir + dir, path.basename(file).replace(/.json$/, '.test.ts'), content);
   }
 };
 
@@ -80,7 +80,7 @@ let createOutputTests = function() {
     content.push(`import {ExampleFiles} from '../classes/abstract_examples'`);
     content.push('afterAll(() => {ExampleFiles.closeFiles();});');
     files.forEach(x => content.push(`runJsonTest('${x}');`));
-    createFile(alldir, file + '.ts', content);
+    createFile(alldir, file + '.test.ts', content);
   }
 };
 
@@ -95,3 +95,5 @@ let build = function() {
   cleanFiles();
   createFiles();
 };
+
+build();
