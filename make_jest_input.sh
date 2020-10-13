@@ -15,7 +15,7 @@ for i in $jsonfiles; do
     echo $dir
     name=`basename $i .json`
     name=$dir"_"$name
-    echo "import {ExampleFiles} from './classes/abstract_examples';" >  $DIR/$name.test.ts
+    echo "import {ExampleFiles} from '../classes/abstract_examples';" >  $DIR/$name.test.ts
     echo "import {runJsonTest} from '../jest';" >> $DIR/$name.test.ts
     echo "ExampleFiles.noOutput = true;" >> $DIR/$name.test.ts
     echo "runJsonTest('$i');" >> $DIR/$name.test.ts
