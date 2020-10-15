@@ -1,0 +1,128 @@
+{
+  "information": "Semantic tree tests for juxtaposition heuristic.",
+  "base": "input/base/semantic_implicit.json",
+  "factory": "stree",
+  "_comment0_": "Tests for the juxtaposition heuristic",
+  "tests": {
+    "Juxta_0": {
+      "expected": "<infixop role=\"division\" id=\"6\">/<content><operator role=\"division\" font=\"normal\" id=\"1\">/</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">n</identifier><infixop role=\"implicit\" id=\"5\">⁢<content><operator role=\"multiplication\" font=\"italic\" id=\"3\">⁢</operator></content><children><identifier role=\"greekletter\" font=\"italic\" id=\"2\">ϕ</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"4\">n</identifier></children></infixop></children></infixop>"
+    },
+    "Juxta_1": {
+      "expected": "<infixop role=\"implicit\" id=\"6\">⁢<content><operator role=\"multiplication\" font=\"italic\" id=\"4\">⁢</operator></content><children><infixop role=\"division\" id=\"3\">/<content><operator role=\"division\" font=\"normal\" id=\"1\">/</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">n</identifier><identifier role=\"greekletter\" font=\"italic\" id=\"2\">ϕ</identifier></children></infixop><identifier role=\"latinletter\" font=\"italic\" id=\"5\">m</identifier></children></infixop>"
+    },
+    "Juxta_2": {
+      "_comment1_": "⁢⁢ab",
+      "expected": "<prefixop role=\"multiop\" id=\"6\">⁢ ⁢<content><operator role=\"multiplication\" id=\"0\">⁢</operator><operator role=\"multiplication\" id=\"1\">⁢</operator></content><children><infixop role=\"implicit\" id=\"5\">⁢<content><operator role=\"multiplication\" id=\"4\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"2\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"3\">b</identifier></children></infixop></children></prefixop>"
+    },
+    "Juxta_3": {
+      "_comment2_": "a(b+c)⁢d*e",
+      "expected": "<infixop role=\"multiplication\" id=\"15\">∗<content><operator role=\"multiplication\" id=\"8\">∗</operator></content><children><infixop role=\"implicit\" id=\"14\">⁢<content><operator role=\"multiplication\" id=\"13\">⁢</operator><operator role=\"multiplication\" id=\"6\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><fenced role=\"leftright\" id=\"11\"><content><fence role=\"open\" id=\"1\">(</fence><fence role=\"close\" id=\"5\">)</fence></content><children><infixop role=\"addition\" id=\"10\">+<content><operator role=\"addition\" id=\"3\">+</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"2\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"4\">c</identifier></children></infixop></children></fenced><identifier role=\"latinletter\" font=\"italic\" id=\"7\">d</identifier></children></infixop><identifier role=\"latinletter\" font=\"italic\" id=\"9\">e</identifier></children></infixop>"
+    },
+    "Juxta_4": {
+      "_comment3_": "a(b+c)⁢d*e",
+      "expected": "<infixop role=\"multiplication\" id=\"15\">∗<content><operator role=\"multiplication\" id=\"8\">∗</operator></content><children><infixop role=\"implicit\" id=\"14\">⁢<content><operator role=\"multiplication\" id=\"13\">⁢</operator><operator role=\"multiplication\" id=\"6\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><fenced role=\"leftright\" id=\"11\"><content><fence role=\"open\" id=\"1\">(</fence><fence role=\"close\" id=\"5\">)</fence></content><children><infixop role=\"addition\" id=\"10\">+<content><operator role=\"addition\" id=\"3\">+</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"2\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"4\">c</identifier></children></infixop></children></fenced><identifier role=\"latinletter\" font=\"italic\" id=\"7\">d</identifier></children></infixop><identifier role=\"latinletter\" font=\"italic\" id=\"9\">e</identifier></children></infixop>"
+    },
+    "Juxta_5": {
+      "_comment4_": "a⁢db⁢c",
+      "expected": "<infixop role=\"implicit\" id=\"7\">⁢<content><operator role=\"multiplication\" id=\"4\">⁢</operator><operator role=\"multiplication\" id=\"5\">⁢</operator><operator role=\"multiplication\" id=\"6\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"1\">d</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"2\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"3\">c</identifier></children></infixop>"
+    },
+    "Juxta_6": {
+      "_comment5_": "a⁢d/b⁢c",
+      "expected": "<infixop role=\"division\" id=\"9\">/<content><operator role=\"division\" id=\"3\">/</operator></content><children><infixop role=\"implicit\" id=\"7\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"2\">d</identifier></children></infixop><infixop role=\"implicit\" id=\"8\">⁢<content><operator role=\"multiplication\" id=\"5\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"4\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"6\">c</identifier></children></infixop></children></infixop>"
+    },
+    "Juxta_7": {
+      "_comment6_": "a⁢d/b⁢c/e⁢f",
+      "expected": "<infixop role=\"division\" id=\"14\">/<content><operator role=\"division\" id=\"3\">/</operator></content><children><infixop role=\"implicit\" id=\"11\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"2\">d</identifier></children></infixop><infixop role=\"division\" id=\"15\">/<content><operator role=\"division\" id=\"7\">/</operator></content><children><infixop role=\"implicit\" id=\"12\">⁢<content><operator role=\"multiplication\" id=\"5\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"4\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"6\">c</identifier></children></infixop><infixop role=\"implicit\" id=\"13\">⁢<content><operator role=\"multiplication\" id=\"9\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"8\">e</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"10\">f</identifier></children></infixop></children></infixop></children></infixop>"
+    },
+    "Juxta_8": {
+      "expected": "<infixop role=\"division\" id=\"9\">/<content><operator role=\"division\" id=\"2\">/</operator></content><children><infixop role=\"implicit\" id=\"6\">⁢<content><operator role=\"multiplication\" id=\"5\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"1\">b</identifier></children></infixop><infixop role=\"implicit\" id=\"8\">⁢<content><operator role=\"multiplication\" id=\"7\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"3\">c</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"4\">d</identifier></children></infixop></children></infixop>"
+    },
+    "Juxta_9": {
+      "expected": "<bigop role=\"sum\" id=\"11\"><content><largeop role=\"sum\" id=\"0\">∑</largeop></content><children><largeop role=\"sum\" id=\"0\">∑</largeop><infixop role=\"addition\" id=\"10\">+<content><operator role=\"addition\" id=\"3\">+</operator></content><children><infixop role=\"implicit\" id=\"7\">⁢<content><operator role=\"multiplication\" id=\"6\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"1\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"2\">b</identifier></children></infixop><infixop role=\"implicit\" id=\"9\">⁢<content><operator role=\"multiplication\" id=\"8\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"4\">c</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"5\">d</identifier></children></infixop></children></infixop></children></bigop>"
+    },
+    "Juxta_10": {
+      "expected": "<bigop role=\"sum\" id=\"11\"><content><largeop role=\"sum\" id=\"0\">∑</largeop></content><children><largeop role=\"sum\" id=\"0\">∑</largeop><infixop role=\"implicit\" id=\"10\">⁢<content><operator role=\"multiplication\" id=\"9\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"1\">a</identifier><infixop role=\"addition\" id=\"8\">+<content><operator role=\"addition\" id=\"3\">+</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"2\">b</identifier><infixop role=\"implicit\" id=\"7\">⁢<content><operator role=\"multiplication\" id=\"6\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"4\">c</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"5\">d</identifier></children></infixop></children></infixop></children></infixop></children></bigop>"
+    },
+    "Juxta_11": {
+      "_comment7_": "Cases: 9",
+      "expected": "<infixop role=\"implicit\" id=\"6\">⁢<content><operator role=\"multiplication\" id=\"5\">⁢</operator><operator role=\"multiplication\" id=\"3\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"1\">c</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"2\">d</identifier></children></infixop>"
+    },
+    "Juxta_12": {
+      "_comment8_": "Cases: 3",
+      "expected": "<infixop role=\"implicit\" id=\"6\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"1\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"4\">c</identifier></children></infixop>"
+    },
+    "Juxta_13": {
+      "_comment9_": "Cases: 3+9",
+      "expected": "<infixop role=\"implicit\" id=\"9\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator><operator role=\"multiplication\" id=\"6\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"1\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"4\">c</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"5\">d</identifier></children></infixop>"
+    },
+    "Juxta_14": {
+      "expected": "<infixop role=\"implicit\" id=\"11\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator><operator role=\"multiplication\" id=\"4\">⁢</operator><operator role=\"multiplication\" id=\"8\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"1\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"5\">c</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"6\">d</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"7\">e</identifier></children></infixop>"
+    },
+    "Juxta_15": {
+      "expected": "<infixop role=\"implicit\" id=\"12\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator><operator role=\"multiplication\" id=\"4\">⁢</operator><operator role=\"multiplication\" id=\"9\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"1\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"5\">c</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"7\">d</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"8\">e</identifier></children></infixop>"
+    },
+    "Juxta_16": {
+      "_comment10_": "Cases: 8",
+      "expected": "<prefixop role=\"multiop\" id=\"9\">+ +<content><operator role=\"addition\" id=\"0\">+</operator><operator role=\"addition\" id=\"1\">+</operator></content><children><infixop role=\"implicit\" id=\"8\">⁢<content><operator role=\"multiplication\" id=\"3\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"2\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"4\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"5\">c</identifier></children></infixop></children></prefixop>"
+    },
+    "Juxta_17": {
+      "_comment11_": "Cases: 6 + 8",
+      "expected": "<infixop role=\"implicit\" id=\"5\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator><operator role=\"multiplication\" id=\"3\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"2\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"4\">c</identifier></children></infixop>"
+    },
+    "Juxta_18": {
+      "_comment12_": "Cases: 3 + 6 ",
+      "expected": "<infixop role=\"implicit\" id=\"3\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator><operator role=\"multiplication\" id=\"4\">⁢</operator><operator role=\"multiplication\" id=\"6\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"1\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"5\">c</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"7\">d</identifier></children></infixop>"
+    },
+    "Juxta_19": {
+      "_comment13_": "Cases: 6 + 8 + 9",
+      "expected": "<infixop role=\"implicit\" id=\"10\">⁢<content><operator role=\"multiplication\" id=\"9\">⁢</operator><operator role=\"multiplication\" id=\"3\">⁢</operator><operator role=\"multiplication\" id=\"5\">⁢</operator><operator role=\"multiplication\" id=\"7\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">f</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"1\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"2\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"6\">c</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"8\">d</identifier></children></infixop>"
+    },
+    "Juxta_20": {
+      "_comment14_": "Cases: 6 + 8 + 9",
+      "expected": "<infixop role=\"implicit\" id=\"7\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator><operator role=\"multiplication\" id=\"3\">⁢</operator><operator role=\"multiplication\" id=\"5\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"2\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"4\">c</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"6\">d</identifier></children></infixop>"
+    },
+    "Juxta_21": {
+      "_comment15_": "b\\sin⁢\\sin(a)",
+      "expected": "<infixop role=\"implicit\" id=\"12\">⁢<content><operator role=\"multiplication\" id=\"11\">⁢</operator><operator role=\"multiplication\" id=\"2\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">b</identifier><function role=\"prefix function\" font=\"normal\" id=\"1\">sin</function><appl role=\"prefix function\" id=\"9\"><content><punctuation role=\"application\" id=\"8\">⁡</punctuation><function role=\"prefix function\" font=\"normal\" id=\"3\">sin</function></content><children><function role=\"prefix function\" font=\"normal\" id=\"3\">sin</function><fenced role=\"leftright\" id=\"7\"><content><fence role=\"open\" id=\"4\">(</fence><fence role=\"close\" id=\"6\">)</fence></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"5\">a</identifier></children></fenced></children></appl></children></infixop>"
+    },
+    "Juxta_22": {
+      "_comment16_": "b+⁢\\sin(a)",
+      "expected": "<infixop role=\"addition\" id=\"12\">+<content><operator role=\"addition\" id=\"1\">+</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">b</identifier><prefixop role=\"multiplication\" id=\"11\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator></content><children><appl role=\"prefix function\" id=\"10\"><content><punctuation role=\"application\" id=\"9\">⁡</punctuation><function role=\"prefix function\" font=\"normal\" id=\"3\">sin</function></content><children><function role=\"prefix function\" font=\"normal\" id=\"3\">sin</function><fenced role=\"leftright\" id=\"8\"><content><fence role=\"open\" id=\"5\">(</fence><fence role=\"close\" id=\"7\">)</fence></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"6\">a</identifier></children></fenced></children></appl></children></prefixop></children></infixop>"
+    },
+    "Juxta_23": {
+      "_comment17_": "b+⁢+a",
+      "expected": "<infixop role=\"addition\" id=\"6\">+<content><operator role=\"addition\" id=\"1\">+</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">b</identifier><prefixop role=\"multiop\" id=\"5\">⁢ +<content><operator role=\"multiplication\" id=\"2\">⁢</operator><operator role=\"addition\" id=\"3\">+</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"4\">a</identifier></children></prefixop></children></infixop>"
+    },
+    "Juxta_24": {
+      "expected": "<infixop role=\"division\" id=\"14\">/<content><operator role=\"division\" id=\"6\">/</operator></content><children><infixop role=\"implicit\" id=\"3\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator><operator role=\"multiplication\" id=\"4\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"1\">c</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"5\">d</identifier></children></infixop><infixop role=\"implicit\" id=\"13\">⁢<content><operator role=\"multiplication\" id=\"12\">⁢</operator><operator role=\"multiplication\" id=\"9\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"7\">e</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"8\">d</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"10\">e</identifier></children></infixop></children></infixop>"
+    },
+    "Juxta_25": {
+      "expected": "<infixop role=\"implicit\" id=\"3\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator><operator role=\"multiplication\" id=\"4\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"1\">c</identifier><infixop role=\"division\" id=\"14\">/<content><operator role=\"division\" id=\"6\">/</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"5\">d</identifier><infixop role=\"implicit\" id=\"13\">⁢<content><operator role=\"multiplication\" id=\"12\">⁢</operator><operator role=\"multiplication\" id=\"9\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"7\">e</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"8\">d</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"10\">e</identifier></children></infixop></children></infixop></children></infixop>"
+    },
+    "Juxta_26": {
+      "expected": "<infixop role=\"implicit\" id=\"9\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator><operator role=\"multiplication\" id=\"6\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"1\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"4\">d</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"5\">e</identifier></children></infixop>"
+    },
+    "Juxta_27": {
+      "expected": "<infixop role=\"implicit\" id=\"10\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator><operator role=\"multiplication\" id=\"7\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"1\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"5\">d</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"6\">e</identifier></children></infixop>"
+    },
+    "Juxta_28": {
+      "expected": "<infixop role=\"implicit\" id=\"12\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator><operator role=\"multiplication\" id=\"4\">⁢</operator><operator role=\"multiplication\" id=\"9\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"1\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"5\">c</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"7\">d</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"8\">e</identifier></children></infixop>"
+    },
+    "Juxta_29": {
+      "expected": "<infixop role=\"implicit\" id=\"11\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator><operator role=\"multiplication\" id=\"3\">⁢</operator><operator role=\"multiplication\" id=\"7\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"2\">c</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"4\">b</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"6\">d</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"8\">e</identifier></children></infixop>"
+    },
+    "Juxta_Unit_0": {
+      "expected": "<infixop role=\"unit\" id=\"3\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator></content><children><number role=\"integer\" font=\"normal\" id=\"0\">1</number><identifier role=\"unit\" font=\"normal\" id=\"2\">mm</identifier></children></infixop>"
+    },
+    "Juxta_Unit_1": {
+      "expected": "<infixop role=\"unit\" id=\"6\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator></content><children><number role=\"integer\" font=\"normal\" id=\"0\">1</number><identifier role=\"unit\" font=\"normal\" id=\"2\">mm</identifier><identifier role=\"unit\" font=\"normal\" id=\"3\">h</identifier></children></infixop>"
+    },
+    "Juxta_Unit_2": {
+      "expected": "<infixop role=\"unit\" id=\"5\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator><operator role=\"multiplication\" id=\"3\">⁢</operator></content><children><number role=\"integer\" font=\"normal\" id=\"0\">1</number><identifier role=\"unit\" font=\"normal\" id=\"2\">mm</identifier><identifier role=\"unit\" font=\"normal\" id=\"4\">h</identifier></children></infixop>"
+    },
+    "Juxta_Unit_3": {
+      "expected": "<infixop role=\"implicit\" id=\"5\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator><operator role=\"multiplication\" id=\"3\">⁢</operator></content><children><number role=\"integer\" font=\"normal\" id=\"0\">1</number><identifier role=\"unit\" font=\"normal\" id=\"2\">mm</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"4\">h</identifier></children></infixop>"
+    }
+
+  }
+}
