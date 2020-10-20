@@ -1,17 +1,17 @@
 {
-  "name": "MathspeakSiUnitEnglishTest",
-  "locale": "en",
+  "name": "MathspeakSiUnitFrenchTest",
+  "locale": "fr",
   "domain": "mathspeak",
   "styles": [
     "default",
     "brief",
     "sbrief"
   ],
-  "active": "MathspeakSymbolsEnglish",
+  "active": "MathspeakSymbolsFrench",
   "type": "unit",
   "factory": "symbol",
   "base": "input/common/si_units.json",
-  "information": "English Mathspeak SI Unit tests.",
+  "information": "French Mathspeak SI Unit tests.",
   "tests": {
     "YW": {
       "expected": [
@@ -57,30 +57,30 @@
     },
     "PW": {
       "expected": [
-        "petawatt",
-        "petawatt",
-        "petawatt"
+        "pétawatt",
+        "pétawatt",
+        "pétawatt"
       ]
     },
     "Pw": {
       "expected": [
-        "petawatt",
-        "petawatt",
-        "petawatt"
+        "pétawatt",
+        "pétawatt",
+        "pétawatt"
       ]
     },
     "TW": {
       "expected": [
-        "terawatt",
-        "terawatt",
-        "terawatt"
+        "térawatt",
+        "térawatt",
+        "térawatt"
       ]
     },
     "Tw": {
       "expected": [
-        "terawatt",
-        "terawatt",
-        "terawatt"
+        "térawatt",
+        "térawatt",
+        "térawatt"
       ]
     },
     "GW": {
@@ -99,16 +99,16 @@
     },
     "MW": {
       "expected": [
-        "megawatt",
-        "megawatt",
-        "megawatt"
+        "mégawatt",
+        "mégawatt",
+        "mégawatt"
       ]
     },
     "Mw": {
       "expected": [
-        "megawatt",
-        "megawatt",
-        "megawatt"
+        "mégawatt",
+        "mégawatt",
+        "mégawatt"
       ]
     },
     "kW": {
@@ -141,30 +141,30 @@
     },
     "daW": {
       "expected": [
-        "dekawatt",
-        "dekawatt",
-        "dekawatt"
+        "décawatt",
+        "décawatt",
+        "décawatt"
       ]
     },
     "daw": {
       "expected": [
-        "dekawatt",
-        "dekawatt",
-        "dekawatt"
+        "décawatt",
+        "décawatt",
+        "décawatt"
       ]
     },
     "dW": {
       "expected": [
-        "deciwatt",
-        "deciwatt",
-        "deciwatt"
+        "déciwatt",
+        "déciwatt",
+        "déciwatt"
       ]
     },
     "dw": {
       "expected": [
-        "deciwatt",
-        "deciwatt",
-        "deciwatt"
+        "déciwatt",
+        "déciwatt",
+        "déciwatt"
       ]
     },
     "cW": {
@@ -344,16 +344,16 @@
     },
     "PJ": {
       "expected": [
-        "petajoule",
-        "petajoule",
-        "petajoule"
+        "pétajoule",
+        "pétajoule",
+        "pétajoule"
       ]
     },
     "TJ": {
       "expected": [
-        "terajoule",
-        "terajoule",
-        "terajoule"
+        "térajoule",
+        "térajoule",
+        "térajoule"
       ]
     },
     "GJ": {
@@ -365,9 +365,9 @@
     },
     "MJ": {
       "expected": [
-        "megajoule",
-        "megajoule",
-        "megajoule"
+        "mégajoule",
+        "mégajoule",
+        "mégajoule"
       ]
     },
     "kJ": {
@@ -386,16 +386,16 @@
     },
     "daJ": {
       "expected": [
-        "dekajoule",
-        "dekajoule",
-        "dekajoule"
+        "décajoule",
+        "décajoule",
+        "décajoule"
       ]
     },
     "dJ": {
       "expected": [
-        "decijoule",
-        "decijoule",
-        "decijoule"
+        "décijoule",
+        "décijoule",
+        "décijoule"
       ]
     },
     "cJ": {
@@ -477,310 +477,310 @@
     },
     "YN": {
       "expected": [
-        "yottaNewton",
-        "yottaNewton",
-        "yottaNewton"
+        "yottanewton",
+        "yottanewton",
+        "yottanewton"
       ]
     },
     "ZN": {
       "expected": [
-        "zettaNewton",
-        "zettaNewton",
-        "zettaNewton"
+        "zettanewton",
+        "zettanewton",
+        "zettanewton"
       ]
     },
     "EN": {
       "expected": [
-        "exaNewton",
-        "exaNewton",
-        "exaNewton"
+        "exanewton",
+        "exanewton",
+        "exanewton"
       ]
     },
     "PN": {
       "expected": [
-        "petaNewton",
-        "petaNewton",
-        "petaNewton"
+        "pétanewton",
+        "pétanewton",
+        "pétanewton"
       ]
     },
     "TN": {
       "expected": [
-        "teraNewton",
-        "teraNewton",
-        "teraNewton"
+        "téranewton",
+        "téranewton",
+        "téranewton"
       ]
     },
     "GN": {
       "expected": [
-        "gigaNewton",
-        "gigaNewton",
-        "gigaNewton"
+        "giganewton",
+        "giganewton",
+        "giganewton"
       ]
     },
     "MN": {
       "expected": [
-        "megaNewton",
-        "megaNewton",
-        "megaNewton"
+        "méganewton",
+        "méganewton",
+        "méganewton"
       ]
     },
     "kN": {
       "expected": [
-        "kiloNewton",
-        "kiloNewton",
-        "kiloNewton"
+        "kilonewton",
+        "kilonewton",
+        "kilonewton"
       ]
     },
     "hN": {
       "expected": [
-        "hectoNewton",
-        "hectoNewton",
-        "hectoNewton"
+        "hectonewton",
+        "hectonewton",
+        "hectonewton"
       ]
     },
     "daN": {
       "expected": [
-        "dekaNewton",
-        "dekaNewton",
-        "dekaNewton"
+        "décanewton",
+        "décanewton",
+        "décanewton"
       ]
     },
     "dN": {
       "expected": [
-        "deciNewton",
-        "deciNewton",
-        "deciNewton"
+        "décinewton",
+        "décinewton",
+        "décinewton"
       ]
     },
     "cN": {
       "expected": [
-        "centiNewton",
-        "centiNewton",
-        "centiNewton"
+        "centinewton",
+        "centinewton",
+        "centinewton"
       ]
     },
     "mN": {
       "expected": [
-        "milliNewton",
-        "milliNewton",
-        "milliNewton"
+        "millinewton",
+        "millinewton",
+        "millinewton"
       ]
     },
     "µN": {
       "expected": [
-        "microNewton",
-        "microNewton",
-        "microNewton"
+        "micronewton",
+        "micronewton",
+        "micronewton"
       ]
     },
     "μN": {
       "expected": [
-        "microNewton",
-        "microNewton",
-        "microNewton"
+        "micronewton",
+        "micronewton",
+        "micronewton"
       ]
     },
     "nN": {
       "expected": [
-        "nanoNewton",
-        "nanoNewton",
-        "nanoNewton"
+        "nanonewton",
+        "nanonewton",
+        "nanonewton"
       ]
     },
     "pN": {
       "expected": [
-        "picoNewton",
-        "picoNewton",
-        "picoNewton"
+        "piconewton",
+        "piconewton",
+        "piconewton"
       ]
     },
     "fN": {
       "expected": [
-        "femtoNewton",
-        "femtoNewton",
-        "femtoNewton"
+        "femtonewton",
+        "femtonewton",
+        "femtonewton"
       ]
     },
     "aN": {
       "expected": [
-        "attoNewton",
-        "attoNewton",
-        "attoNewton"
+        "attonewton",
+        "attonewton",
+        "attonewton"
       ]
     },
     "zN": {
       "expected": [
-        "zeptoNewton",
-        "zeptoNewton",
-        "zeptoNewton"
+        "zeptonewton",
+        "zeptonewton",
+        "zeptonewton"
       ]
     },
     "yN": {
       "expected": [
-        "yoctoNewton",
-        "yoctoNewton",
-        "yoctoNewton"
+        "yoctonewton",
+        "yoctonewton",
+        "yoctonewton"
       ]
     },
     "N": {
       "expected": [
-        "Newton",
-        "Newton",
-        "Newton"
+        "newton",
+        "newton",
+        "newton"
       ]
     },
     "YA": {
       "expected": [
-        "yottaampere",
-        "yottaampere",
-        "yottaampere"
+        "yottaampère",
+        "yottaampère",
+        "yottaampère"
       ]
     },
     "ZA": {
       "expected": [
-        "zettaampere",
-        "zettaampere",
-        "zettaampere"
+        "zettaampère",
+        "zettaampère",
+        "zettaampère"
       ]
     },
     "EA": {
       "expected": [
-        "exaampere",
-        "exaampere",
-        "exaampere"
+        "exaampère",
+        "exaampère",
+        "exaampère"
       ]
     },
     "PA": {
       "expected": [
-        "petaampere",
-        "petaampere",
-        "petaampere"
+        "pétaampère",
+        "pétaampère",
+        "pétaampère"
       ]
     },
     "TA": {
       "expected": [
-        "teraampere",
-        "teraampere",
-        "teraampere"
+        "téraampère",
+        "téraampère",
+        "téraampère"
       ]
     },
     "GA": {
       "expected": [
-        "gigaampere",
-        "gigaampere",
-        "gigaampere"
+        "gigaampère",
+        "gigaampère",
+        "gigaampère"
       ]
     },
     "MA": {
       "expected": [
-        "megaampere",
-        "megaampere",
-        "megaampere"
+        "mégaampère",
+        "mégaampère",
+        "mégaampère"
       ]
     },
     "kA": {
       "expected": [
-        "kiloampere",
-        "kiloampere",
-        "kiloampere"
+        "kiloampère",
+        "kiloampère",
+        "kiloampère"
       ]
     },
     "hA": {
       "expected": [
-        "hectoampere",
-        "hectoampere",
-        "hectoampere"
+        "hectoampère",
+        "hectoampère",
+        "hectoampère"
       ]
     },
     "daA": {
       "expected": [
-        "dekaampere",
-        "dekaampere",
-        "dekaampere"
+        "décaampère",
+        "décaampère",
+        "décaampère"
       ]
     },
     "dA": {
       "expected": [
-        "deciampere",
-        "deciampere",
-        "deciampere"
+        "déciampère",
+        "déciampère",
+        "déciampère"
       ]
     },
     "cA": {
       "expected": [
-        "centiampere",
-        "centiampere",
-        "centiampere"
+        "centiampère",
+        "centiampère",
+        "centiampère"
       ]
     },
     "mA": {
       "expected": [
-        "milliampere",
-        "milliampere",
-        "milliampere"
+        "milliampère",
+        "milliampère",
+        "milliampère"
       ]
     },
     "µA": {
       "expected": [
-        "microampere",
-        "microampere",
-        "microampere"
+        "microampère",
+        "microampère",
+        "microampère"
       ]
     },
     "μA": {
       "expected": [
-        "microampere",
-        "microampere",
-        "microampere"
+        "microampère",
+        "microampère",
+        "microampère"
       ]
     },
     "nA": {
       "expected": [
-        "nanoampere",
-        "nanoampere",
-        "nanoampere"
+        "nanoampère",
+        "nanoampère",
+        "nanoampère"
       ]
     },
     "pA": {
       "expected": [
-        "picoampere",
-        "picoampere",
-        "picoampere"
+        "picoampère",
+        "picoampère",
+        "picoampère"
       ]
     },
     "fA": {
       "expected": [
-        "femtoampere",
-        "femtoampere",
-        "femtoampere"
+        "femtoampère",
+        "femtoampère",
+        "femtoampère"
       ]
     },
     "aA": {
       "expected": [
-        "attoampere",
-        "attoampere",
-        "attoampere"
+        "attoampère",
+        "attoampère",
+        "attoampère"
       ]
     },
     "zA": {
       "expected": [
-        "zeptoampere",
-        "zeptoampere",
-        "zeptoampere"
+        "zeptoampère",
+        "zeptoampère",
+        "zeptoampère"
       ]
     },
     "yA": {
       "expected": [
-        "yoctoampere",
-        "yoctoampere",
-        "yoctoampere"
+        "yoctoampère",
+        "yoctoampère",
+        "yoctoampère"
       ]
     },
     "A": {
       "expected": [
-        "ampere",
-        "ampere",
-        "ampere"
+        "ampère",
+        "ampère",
+        "ampère"
       ]
     },
     "YV": {
@@ -806,16 +806,16 @@
     },
     "PV": {
       "expected": [
-        "petavolt",
-        "petavolt",
-        "petavolt"
+        "pétavolt",
+        "pétavolt",
+        "pétavolt"
       ]
     },
     "TV": {
       "expected": [
-        "teravolt",
-        "teravolt",
-        "teravolt"
+        "téravolt",
+        "téravolt",
+        "téravolt"
       ]
     },
     "GV": {
@@ -827,9 +827,9 @@
     },
     "MV": {
       "expected": [
-        "megavolt",
-        "megavolt",
-        "megavolt"
+        "mégavolt",
+        "mégavolt",
+        "mégavolt"
       ]
     },
     "kV": {
@@ -848,16 +848,16 @@
     },
     "daV": {
       "expected": [
-        "dekavolt",
-        "dekavolt",
-        "dekavolt"
+        "décavolt",
+        "décavolt",
+        "décavolt"
       ]
     },
     "dV": {
       "expected": [
-        "decivolt",
-        "decivolt",
-        "decivolt"
+        "décivolt",
+        "décivolt",
+        "décivolt"
       ]
     },
     "cV": {
@@ -960,16 +960,16 @@
     },
     "PΩ": {
       "expected": [
-        "petaohm",
-        "petaohm",
-        "petaohm"
+        "pétaohm",
+        "pétaohm",
+        "pétaohm"
       ]
     },
     "TΩ": {
       "expected": [
-        "teraohm",
-        "teraohm",
-        "teraohm"
+        "téraohm",
+        "téraohm",
+        "téraohm"
       ]
     },
     "GΩ": {
@@ -981,16 +981,16 @@
     },
     "MΩ": {
       "expected": [
-        "megohm",
-        "megohm",
-        "megohm"
+        "mégaohm",
+        "mégaohm",
+        "mégaohm"
       ]
     },
     "kΩ": {
       "expected": [
-        "kilohm",
-        "kilohm",
-        "kilohm"
+        "kiloohm",
+        "kiloohm",
+        "kiloohm"
       ]
     },
     "hΩ": {
@@ -1002,16 +1002,16 @@
     },
     "daΩ": {
       "expected": [
-        "dekaohm",
-        "dekaohm",
-        "dekaohm"
+        "décaohm",
+        "décaohm",
+        "décaohm"
       ]
     },
     "dΩ": {
       "expected": [
-        "deciohm",
-        "deciohm",
-        "deciohm"
+        "déciohm",
+        "déciohm",
+        "déciohm"
       ]
     },
     "cΩ": {
@@ -1093,772 +1093,926 @@
     },
     "Ym": {
       "expected": [
-        "yottameter",
-        "yottameter",
-        "yottameter"
+        "yottamètre",
+        "yottamètre",
+        "yottamètre"
       ]
     },
     "Zm": {
       "expected": [
-        "zettameter",
-        "zettameter",
-        "zettameter"
+        "zettamètre",
+        "zettamètre",
+        "zettamètre"
       ]
     },
     "Em": {
       "expected": [
-        "exameter",
-        "exameter",
-        "exameter"
+        "examètre",
+        "examètre",
+        "examètre"
       ]
     },
     "Pm": {
       "expected": [
-        "petameter",
-        "petameter",
-        "petameter"
+        "pétamètre",
+        "pétamètre",
+        "pétamètre"
       ]
     },
     "Tm": {
       "expected": [
-        "terameter",
-        "terameter",
-        "terameter"
+        "téramètre",
+        "téramètre",
+        "téramètre"
       ]
     },
     "Gm": {
       "expected": [
-        "gigameter",
-        "gigameter",
-        "gigameter"
+        "gigamètre",
+        "gigamètre",
+        "gigamètre"
       ]
     },
     "Mm": {
       "expected": [
-        "megameter",
-        "megameter",
-        "megameter"
+        "mégamètre",
+        "mégamètre",
+        "mégamètre"
       ]
     },
     "km": {
       "expected": [
-        "kilometer",
-        "kilometer",
-        "kilometer"
+        "kilomètre",
+        "kilomètre",
+        "kilomètre"
       ]
     },
     "hm": {
       "expected": [
-        "hectometer",
-        "hectometer",
-        "hectometer"
+        "hectomètre",
+        "hectomètre",
+        "hectomètre"
       ]
     },
     "dam": {
       "expected": [
-        "dekameter",
-        "dekameter",
-        "dekameter"
+        "décamètre",
+        "décamètre",
+        "décamètre"
       ]
     },
     "dm": {
       "expected": [
-        "decimeter",
-        "decimeter",
-        "decimeter"
+        "décimètre",
+        "décimètre",
+        "décimètre"
       ]
     },
     "cm": {
       "expected": [
-        "centimeter",
-        "centimeter",
-        "centimeter"
+        "centimètre",
+        "centimètre",
+        "centimètre"
       ]
     },
     "mm": {
       "expected": [
-        "millimeter",
-        "millimeter",
-        "millimeter"
+        "millimètre",
+        "millimètre",
+        "millimètre"
       ]
     },
     "µm": {
       "expected": [
-        "micrometer",
-        "micrometer",
-        "micrometer"
+        "micromètre",
+        "micromètre",
+        "micromètre"
       ]
     },
     "μm": {
       "expected": [
-        "micrometer",
-        "micrometer",
-        "micrometer"
+        "micromètre",
+        "micromètre",
+        "micromètre"
       ]
     },
     "nm": {
       "expected": [
-        "nanometer",
-        "nanometer",
-        "nanometer"
+        "nanomètre",
+        "nanomètre",
+        "nanomètre"
       ]
     },
     "pm": {
       "expected": [
-        "picometer",
-        "picometer",
-        "picometer"
+        "picomètre",
+        "picomètre",
+        "picomètre"
       ]
     },
     "fm": {
       "expected": [
-        "femtometer",
-        "femtometer",
-        "femtometer"
+        "femtomètre",
+        "femtomètre",
+        "femtomètre"
       ]
     },
     "am": {
       "expected": [
-        "attometer",
-        "attometer",
-        "attometer"
+        "attomètre",
+        "attomètre",
+        "attomètre"
       ]
     },
     "zm": {
       "expected": [
-        "zeptometer",
-        "zeptometer",
-        "zeptometer"
+        "zeptomètre",
+        "zeptomètre",
+        "zeptomètre"
       ]
     },
     "ym": {
       "expected": [
-        "yoctometer",
-        "yoctometer",
-        "yoctometer"
+        "yoctomètre",
+        "yoctomètre",
+        "yoctomètre"
       ]
     },
     "m": {
       "expected": [
-        "meter",
-        "meter",
-        "meter"
+        "mètre",
+        "mètre",
+        "mètre"
       ]
     },
     "YB": {
       "expected": [
-        "yottabyte",
-        "yottabyte",
-        "yottabyte"
+        "yottaoctet",
+        "yottaoctet",
+        "yottaoctet"
       ]
     },
     "ZB": {
       "expected": [
-        "zettabyte",
-        "zettabyte",
-        "zettabyte"
+        "zettaoctet",
+        "zettaoctet",
+        "zettaoctet"
       ]
     },
     "EB": {
       "expected": [
-        "exabyte",
-        "exabyte",
-        "exabyte"
+        "exaoctet",
+        "exaoctet",
+        "exaoctet"
       ]
     },
     "PB": {
       "expected": [
-        "petabyte",
-        "petabyte",
-        "petabyte"
+        "pétaoctet",
+        "pétaoctet",
+        "pétaoctet"
       ]
     },
     "TB": {
       "expected": [
-        "terabyte",
-        "terabyte",
-        "terabyte"
+        "téraoctet",
+        "téraoctet",
+        "téraoctet"
       ]
     },
     "GB": {
       "expected": [
-        "gigabyte",
-        "gigabyte",
-        "gigabyte"
+        "gigaoctet",
+        "gigaoctet",
+        "gigaoctet"
       ]
     },
     "MB": {
       "expected": [
-        "megabyte",
-        "megabyte",
-        "megabyte"
+        "mégaoctet",
+        "mégaoctet",
+        "mégaoctet"
       ]
     },
     "kB": {
       "expected": [
-        "kilobyte",
-        "kilobyte",
-        "kilobyte"
+        "kilooctet",
+        "kilooctet",
+        "kilooctet"
       ]
     },
     "hB": {
       "expected": [
-        "hectobyte",
-        "hectobyte",
-        "hectobyte"
+        "hectooctet",
+        "hectooctet",
+        "hectooctet"
       ]
     },
     "daB": {
       "expected": [
-        "dekabyte",
-        "dekabyte",
-        "dekabyte"
+        "décaoctet",
+        "décaoctet",
+        "décaoctet"
       ]
     },
     "dB": {
       "expected": [
-        "decibyte",
-        "decibyte",
-        "decibyte"
+        "décioctet",
+        "décioctet",
+        "décioctet"
       ]
     },
     "cB": {
       "expected": [
-        "centibyte",
-        "centibyte",
-        "centibyte"
+        "centioctet",
+        "centioctet",
+        "centioctet"
       ]
     },
     "mB": {
       "expected": [
-        "millibyte",
-        "millibyte",
-        "millibyte"
+        "millioctet",
+        "millioctet",
+        "millioctet"
       ]
     },
     "µB": {
       "expected": [
-        "microbyte",
-        "microbyte",
-        "microbyte"
+        "microoctet",
+        "microoctet",
+        "microoctet"
       ]
     },
     "μB": {
       "expected": [
-        "microbyte",
-        "microbyte",
-        "microbyte"
+        "microoctet",
+        "microoctet",
+        "microoctet"
       ]
     },
     "nB": {
       "expected": [
-        "nanobyte",
-        "nanobyte",
-        "nanobyte"
+        "nanooctet",
+        "nanooctet",
+        "nanooctet"
       ]
     },
     "pB": {
       "expected": [
-        "picobyte",
-        "picobyte",
-        "picobyte"
+        "picooctet",
+        "picooctet",
+        "picooctet"
       ]
     },
     "fB": {
       "expected": [
-        "femtobyte",
-        "femtobyte",
-        "femtobyte"
+        "femtooctet",
+        "femtooctet",
+        "femtooctet"
       ]
     },
     "aB": {
       "expected": [
-        "attobyte",
-        "attobyte",
-        "attobyte"
+        "attooctet",
+        "attooctet",
+        "attooctet"
       ]
     },
     "zB": {
       "expected": [
-        "zeptobyte",
-        "zeptobyte",
-        "zeptobyte"
+        "zeptooctet",
+        "zeptooctet",
+        "zeptooctet"
       ]
     },
     "yB": {
       "expected": [
-        "yoctobyte",
-        "yoctobyte",
-        "yoctobyte"
+        "yoctooctet",
+        "yoctooctet",
+        "yoctooctet"
       ]
     },
     "B": {
       "expected": [
-        "byte",
-        "byte",
-        "byte"
+        "octet",
+        "octet",
+        "octet"
       ]
     },
     "Ys": {
       "expected": [
-        "yottasecond",
-        "yottasecond",
-        "yottasecond"
+        "yottaseconde",
+        "yottaseconde",
+        "yottaseconde"
       ]
     },
     "Zs": {
       "expected": [
-        "zettasecond",
-        "zettasecond",
-        "zettasecond"
+        "zettaseconde",
+        "zettaseconde",
+        "zettaseconde"
       ]
     },
     "Es": {
       "expected": [
-        "exasecond",
-        "exasecond",
-        "exasecond"
+        "exaseconde",
+        "exaseconde",
+        "exaseconde"
       ]
     },
     "Ps": {
       "expected": [
-        "petasecond",
-        "petasecond",
-        "petasecond"
+        "pétaseconde",
+        "pétaseconde",
+        "pétaseconde"
       ]
     },
     "Ts": {
       "expected": [
-        "terasecond",
-        "terasecond",
-        "terasecond"
+        "téraseconde",
+        "téraseconde",
+        "téraseconde"
       ]
     },
     "Gs": {
       "expected": [
-        "gigasecond",
-        "gigasecond",
-        "gigasecond"
+        "gigaseconde",
+        "gigaseconde",
+        "gigaseconde"
       ]
     },
     "Ms": {
       "expected": [
-        "megasecond",
-        "megasecond",
-        "megasecond"
+        "mégaseconde",
+        "mégaseconde",
+        "mégaseconde"
       ]
     },
     "ks": {
       "expected": [
-        "kilosecond",
-        "kilosecond",
-        "kilosecond"
+        "kiloseconde",
+        "kiloseconde",
+        "kiloseconde"
       ]
     },
     "hs": {
       "expected": [
-        "hectosecond",
-        "hectosecond",
-        "hectosecond"
+        "hectoseconde",
+        "hectoseconde",
+        "hectoseconde"
       ]
     },
     "das": {
       "expected": [
-        "dekasecond",
-        "dekasecond",
-        "dekasecond"
+        "décaseconde",
+        "décaseconde",
+        "décaseconde"
       ]
     },
     "ds": {
       "expected": [
-        "decisecond",
-        "decisecond",
-        "decisecond"
+        "déciseconde",
+        "déciseconde",
+        "déciseconde"
       ]
     },
     "cs": {
       "expected": [
-        "centisecond",
-        "centisecond",
-        "centisecond"
+        "centiseconde",
+        "centiseconde",
+        "centiseconde"
       ]
     },
     "ms": {
       "expected": [
-        "millisecond",
-        "millisecond",
-        "millisecond"
+        "milliseconde",
+        "milliseconde",
+        "milliseconde"
       ]
     },
     "µs": {
       "expected": [
-        "microsecond",
-        "microsecond",
-        "microsecond"
+        "microseconde",
+        "microseconde",
+        "microseconde"
       ]
     },
     "μs": {
       "expected": [
-        "microsecond",
-        "microsecond",
-        "microsecond"
+        "microseconde",
+        "microseconde",
+        "microseconde"
       ]
     },
     "ns": {
       "expected": [
-        "nanosecond",
-        "nanosecond",
-        "nanosecond"
+        "nanoseconde",
+        "nanoseconde",
+        "nanoseconde"
       ]
     },
     "ps": {
       "expected": [
-        "picosecond",
-        "picosecond",
-        "picosecond"
+        "picoseconde",
+        "picoseconde",
+        "picoseconde"
       ]
     },
     "fs": {
       "expected": [
-        "femtosecond",
-        "femtosecond",
-        "femtosecond"
+        "femtoseconde",
+        "femtoseconde",
+        "femtoseconde"
       ]
     },
     "as": {
       "expected": [
-        "attosecond",
-        "attosecond",
-        "attosecond"
+        "attoseconde",
+        "attoseconde",
+        "attoseconde"
       ]
     },
     "zs": {
       "expected": [
-        "zeptosecond",
-        "zeptosecond",
-        "zeptosecond"
+        "zeptoseconde",
+        "zeptoseconde",
+        "zeptoseconde"
       ]
     },
     "ys": {
       "expected": [
-        "yoctosecond",
-        "yoctosecond",
-        "yoctosecond"
+        "yoctoseconde",
+        "yoctoseconde",
+        "yoctoseconde"
       ]
     },
     "s": {
       "expected": [
-        "second",
-        "second",
-        "second"
+        "seconde",
+        "seconde",
+        "seconde"
       ]
     },
     "Yl": {
       "expected": [
-        "yottaliter",
-        "yottaliter",
-        "yottaliter"
+        "yottalitre",
+        "yottalitre",
+        "yottalitre"
       ]
     },
     "Zl": {
       "expected": [
-        "zettaliter",
-        "zettaliter",
-        "zettaliter"
+        "zettalitre",
+        "zettalitre",
+        "zettalitre"
       ]
     },
     "El": {
       "expected": [
-        "exaliter",
-        "exaliter",
-        "exaliter"
+        "exalitre",
+        "exalitre",
+        "exalitre"
       ]
     },
     "Pl": {
       "expected": [
-        "petaliter",
-        "petaliter",
-        "petaliter"
+        "pétalitre",
+        "pétalitre",
+        "pétalitre"
       ]
     },
     "Tl": {
       "expected": [
-        "teraliter",
-        "teraliter",
-        "teraliter"
+        "téralitre",
+        "téralitre",
+        "téralitre"
       ]
     },
     "Gl": {
       "expected": [
-        "gigaliter",
-        "gigaliter",
-        "gigaliter"
+        "gigalitre",
+        "gigalitre",
+        "gigalitre"
       ]
     },
     "Ml": {
       "expected": [
-        "megaliter",
-        "megaliter",
-        "megaliter"
+        "mégalitre",
+        "mégalitre",
+        "mégalitre"
       ]
     },
     "kl": {
       "expected": [
-        "kiloliter",
-        "kiloliter",
-        "kiloliter"
+        "kilolitre",
+        "kilolitre",
+        "kilolitre"
       ]
     },
     "hl": {
       "expected": [
-        "hectoliter",
-        "hectoliter",
-        "hectoliter"
+        "hectolitre",
+        "hectolitre",
+        "hectolitre"
       ]
     },
     "dal": {
       "expected": [
-        "dekaliter",
-        "dekaliter",
-        "dekaliter"
+        "décalitre",
+        "décalitre",
+        "décalitre"
       ]
     },
     "dl": {
       "expected": [
-        "deciliter",
-        "deciliter",
-        "deciliter"
+        "décilitre",
+        "décilitre",
+        "décilitre"
       ]
     },
     "cl": {
       "expected": [
-        "centiliter",
-        "centiliter",
-        "centiliter"
+        "centilitre",
+        "centilitre",
+        "centilitre"
       ]
     },
     "ml": {
       "expected": [
-        "milliliter",
-        "milliliter",
-        "milliliter"
+        "millilitre",
+        "millilitre",
+        "millilitre"
       ]
     },
     "µl": {
       "expected": [
-        "microliter",
-        "microliter",
-        "microliter"
+        "microlitre",
+        "microlitre",
+        "microlitre"
       ]
     },
     "μl": {
       "expected": [
-        "microliter",
-        "microliter",
-        "microliter"
+        "microlitre",
+        "microlitre",
+        "microlitre"
       ]
     },
     "nl": {
       "expected": [
-        "nanoliter",
-        "nanoliter",
-        "nanoliter"
+        "nanolitre",
+        "nanolitre",
+        "nanolitre"
       ]
     },
     "pl": {
       "expected": [
-        "picoliter",
-        "picoliter",
-        "picoliter"
+        "picolitre",
+        "picolitre",
+        "picolitre"
       ]
     },
     "fl": {
       "expected": [
-        "femtoliter",
-        "femtoliter",
-        "femtoliter"
+        "femtolitre",
+        "femtolitre",
+        "femtolitre"
       ]
     },
     "al": {
       "expected": [
-        "attoliter",
-        "attoliter",
-        "attoliter"
+        "attolitre",
+        "attolitre",
+        "attolitre"
       ]
     },
     "zl": {
       "expected": [
-        "zeptoliter",
-        "zeptoliter",
-        "zeptoliter"
+        "zeptolitre",
+        "zeptolitre",
+        "zeptolitre"
       ]
     },
     "yl": {
       "expected": [
-        "yoctoliter",
-        "yoctoliter",
-        "yoctoliter"
+        "yoctolitre",
+        "yoctolitre",
+        "yoctolitre"
       ]
     },
     "l": {
       "expected": [
-        "liter",
-        "liter",
-        "liter"
+        "litre",
+        "litre",
+        "litre"
       ]
     },
     "Yg": {
       "expected": [
-        "yottagram",
-        "yottagram",
-        "yottagram"
+        "yottagramme",
+        "yottagramme",
+        "yottagramme"
       ]
     },
     "Zg": {
       "expected": [
-        "zettagram",
-        "zettagram",
-        "zettagram"
+        "zettagramme",
+        "zettagramme",
+        "zettagramme"
       ]
     },
     "Eg": {
       "expected": [
-        "exagram",
-        "exagram",
-        "exagram"
+        "exagramme",
+        "exagramme",
+        "exagramme"
       ]
     },
     "Pg": {
       "expected": [
-        "petagram",
-        "petagram",
-        "petagram"
+        "pétagramme",
+        "pétagramme",
+        "pétagramme"
       ]
     },
     "Tg": {
       "expected": [
-        "teragram",
-        "teragram",
-        "teragram"
+        "téragramme",
+        "téragramme",
+        "téragramme"
       ]
     },
     "Gg": {
       "expected": [
-        "gigagram",
-        "gigagram",
-        "gigagram"
+        "gigagramme",
+        "gigagramme",
+        "gigagramme"
       ]
     },
     "Mg": {
       "expected": [
-        "megagram",
-        "megagram",
-        "megagram"
+        "mégagramme",
+        "mégagramme",
+        "mégagramme"
       ]
     },
     "kg": {
       "expected": [
-        "kilogram",
-        "kilogram",
-        "kilogram"
+        "kilogramme",
+        "kilogramme",
+        "kilogramme"
       ]
     },
     "hg": {
       "expected": [
-        "hectogram",
-        "hectogram",
-        "hectogram"
+        "hectogramme",
+        "hectogramme",
+        "hectogramme"
       ]
     },
     "dag": {
       "expected": [
-        "dekagram",
-        "dekagram",
-        "dekagram"
+        "décagramme",
+        "décagramme",
+        "décagramme"
       ]
     },
     "dg": {
       "expected": [
-        "decigram",
-        "decigram",
-        "decigram"
+        "décigramme",
+        "décigramme",
+        "décigramme"
       ]
     },
     "cg": {
       "expected": [
-        "centigram",
-        "centigram",
-        "centigram"
+        "centigramme",
+        "centigramme",
+        "centigramme"
       ]
     },
     "mg": {
       "expected": [
-        "milligram",
-        "milligram",
-        "milligram"
+        "milligramme",
+        "milligramme",
+        "milligramme"
       ]
     },
     "µg": {
       "expected": [
-        "microgram",
-        "microgram",
-        "microgram"
+        "microgramme",
+        "microgramme",
+        "microgramme"
       ]
     },
     "μg": {
       "expected": [
-        "microgram",
-        "microgram",
-        "microgram"
+        "microgramme",
+        "microgramme",
+        "microgramme"
       ]
     },
     "ng": {
       "expected": [
-        "nanogram",
-        "nanogram",
-        "nanogram"
+        "nanogramme",
+        "nanogramme",
+        "nanogramme"
       ]
     },
     "pg": {
       "expected": [
-        "picogram",
-        "picogram",
-        "picogram"
+        "picogramme",
+        "picogramme",
+        "picogramme"
       ]
     },
     "fg": {
       "expected": [
-        "femtogram",
-        "femtogram",
-        "femtogram"
+        "femtogramme",
+        "femtogramme",
+        "femtogramme"
       ]
     },
     "ag": {
       "expected": [
-        "attogram",
-        "attogram",
-        "attogram"
+        "attogramme",
+        "attogramme",
+        "attogramme"
       ]
     },
     "zg": {
       "expected": [
-        "zeptogram",
-        "zeptogram",
-        "zeptogram"
+        "zeptogramme",
+        "zeptogramme",
+        "zeptogramme"
       ]
     },
     "yg": {
       "expected": [
-        "yoctogram",
-        "yoctogram",
-        "yoctogram"
+        "yoctogramme",
+        "yoctogramme",
+        "yoctogramme"
       ]
     },
     "g": {
       "expected": [
-        "gram",
-        "gram",
-        "gram"
+        "gramme",
+        "gramme",
+        "gramme"
+      ]
+    },
+    "Yo": {
+      "expected": [
+        "yottaoctet",
+        "yottaoctet",
+        "yottaoctet"
+      ]
+    },
+    "Zo": {
+      "expected": [
+        "zettaoctet",
+        "zettaoctet",
+        "zettaoctet"
+      ]
+    },
+    "Eo": {
+      "expected": [
+        "exaoctet",
+        "exaoctet",
+        "exaoctet"
+      ]
+    },
+    "Po": {
+      "expected": [
+        "pétaoctet",
+        "pétaoctet",
+        "pétaoctet"
+      ]
+    },
+    "To": {
+      "expected": [
+        "téraoctet",
+        "téraoctet",
+        "téraoctet"
+      ]
+    },
+    "Go": {
+      "expected": [
+        "gigaoctet",
+        "gigaoctet",
+        "gigaoctet"
+      ]
+    },
+    "Mo": {
+      "expected": [
+        "mégaoctet",
+        "mégaoctet",
+        "mégaoctet"
+      ]
+    },
+    "ko": {
+      "expected": [
+        "kilooctet",
+        "kilooctet",
+        "kilooctet"
+      ]
+    },
+    "ho": {
+      "expected": [
+        "hectooctet",
+        "hectooctet",
+        "hectooctet"
+      ]
+    },
+    "dao": {
+      "expected": [
+        "décaoctet",
+        "décaoctet",
+        "décaoctet"
+      ]
+    },
+    "do": {
+      "expected": [
+        "décioctet",
+        "décioctet",
+        "décioctet"
+      ]
+    },
+    "co": {
+      "expected": [
+        "centioctet",
+        "centioctet",
+        "centioctet"
+      ]
+    },
+    "mo": {
+      "expected": [
+        "millioctet",
+        "millioctet",
+        "millioctet"
+      ]
+    },
+    "µo": {
+      "expected": [
+        "microoctet",
+        "microoctet",
+        "microoctet"
+      ]
+    },
+    "μo": {
+      "expected": [
+        "microoctet",
+        "microoctet",
+        "microoctet"
+      ]
+    },
+    "no": {
+      "expected": [
+        "nanooctet",
+        "nanooctet",
+        "nanooctet"
+      ]
+    },
+    "po": {
+      "expected": [
+        "picooctet",
+        "picooctet",
+        "picooctet"
+      ]
+    },
+    "fo": {
+      "expected": [
+        "femtooctet",
+        "femtooctet",
+        "femtooctet"
+      ]
+    },
+    "ao": {
+      "expected": [
+        "attooctet",
+        "attooctet",
+        "attooctet"
+      ]
+    },
+    "zo": {
+      "expected": [
+        "zeptooctet",
+        "zeptooctet",
+        "zeptooctet"
+      ]
+    },
+    "yo": {
+      "expected": [
+        "yoctooctet",
+        "yoctooctet",
+        "yoctooctet"
+      ]
+    },
+    "o": {
+      "expected": [
+        "octet",
+        "octet",
+        "octet"
       ]
     }
   }
