@@ -27,6 +27,20 @@
         "carrée"
       ]
     },
+    "sq in": {
+      "expected": [
+        "pouce carré",
+        "pouce carré",
+        "pouce carré"
+      ]
+    },
+    "sq. in.": {
+      "expected": [
+        "pouce carré",
+        "pouce carré",
+        "pouce carré"
+      ]
+    },
     "sq inch": {
       "expected": [
         "pouce carré",
@@ -34,7 +48,7 @@
         "pouce carré"
       ]
     },
-    "sq. inch.": {
+    "sq. inch": {
       "expected": [
         "pouce carré",
         "pouce carré",
