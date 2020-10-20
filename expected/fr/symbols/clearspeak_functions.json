@@ -146,22 +146,22 @@
         "borne supérieure"
       ]
     },
-    "inj lim": {
-      "expected": [
-        "limite inductive"
-      ]
-    },
     "injlim": {
       "expected": [
         "limite inductive"
       ]
     },
-    "proj lim": {
+    "inj lim": {
+      "expected": [
+        "limite inductive"
+      ]
+    },
+    "projlim": {
       "expected": [
         "limite projective"
       ]
     },
-    "projlim": {
+    "proj lim": {
       "expected": [
         "limite projective"
       ]
@@ -334,6 +334,66 @@
     "arctan": {
       "expected": [
         "arc tangente"
+      ]
+    },
+    "PGCD": {
+      "expected": [
+        "pgcd"
+      ]
+    },
+    "pgcd": {
+      "expected": [
+        "pgcd"
+      ]
+    },
+    "ppcm": {
+      "expected": [
+        "ppcm"
+      ]
+    },
+    "PPCM": {
+      "expected": [
+        "ppcm"
+      ]
+    },
+    "PPMC": {
+      "expected": [
+        "ppcm"
+      ]
+    },
+    "ppmc": {
+      "expected": [
+        "ppcm"
+      ]
+    },
+    "argch": {
+      "expected": [
+        "argument cosinus hyperbolique"
+      ]
+    },
+    "argcoth": {
+      "expected": [
+        "argument cotangente hyperbolique"
+      ]
+    },
+    "argcsch": {
+      "expected": [
+        "argument cosécante hyperbolique"
+      ]
+    },
+    "argsech": {
+      "expected": [
+        "argument sécante hyperbolique"
+      ]
+    },
+    "argsh": {
+      "expected": [
+        "argument sinus hyperbolique"
+      ]
+    },
+    "argth": {
+      "expected": [
+        "argument tangente hyperbolique"
       ]
     }
   }

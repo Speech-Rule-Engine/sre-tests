@@ -202,13 +202,6 @@
         "borne supérieure"
       ]
     },
-    "inj lim": {
-      "expected": [
-        "limite inductive",
-        "limite inductive",
-        "limite inductive"
-      ]
-    },
     "injlim": {
       "expected": [
         "limite inductive",
@@ -216,14 +209,21 @@
         "limite inductive"
       ]
     },
-    "proj lim": {
+    "inj lim": {
+      "expected": [
+        "limite inductive",
+        "limite inductive",
+        "limite inductive"
+      ]
+    },
+    "projlim": {
       "expected": [
         "limite projective",
         "limite projective",
         "limite projective"
       ]
     },
-    "projlim": {
+    "proj lim": {
       "expected": [
         "limite projective",
         "limite projective",
@@ -466,6 +466,90 @@
         "arc tangente",
         "arc tangente",
         "arc tangente"
+      ]
+    },
+    "PGCD": {
+      "expected": [
+        "pgcd",
+        "pgcd",
+        "pgcd"
+      ]
+    },
+    "pgcd": {
+      "expected": [
+        "pgcd",
+        "pgcd",
+        "pgcd"
+      ]
+    },
+    "ppcm": {
+      "expected": [
+        "ppcm",
+        "ppcm",
+        "ppcm"
+      ]
+    },
+    "PPCM": {
+      "expected": [
+        "ppcm",
+        "ppcm",
+        "ppcm"
+      ]
+    },
+    "PPMC": {
+      "expected": [
+        "ppcm",
+        "ppcm",
+        "ppcm"
+      ]
+    },
+    "ppmc": {
+      "expected": [
+        "ppcm",
+        "ppcm",
+        "ppcm"
+      ]
+    },
+    "argch": {
+      "expected": [
+        "argument cosinus hyperbolique",
+        "argument cosinus hyperbolique",
+        "argument cosinus hyperbolique"
+      ]
+    },
+    "argcoth": {
+      "expected": [
+        "argument cotangente hyperbolique",
+        "argument cotangente hyperbolique",
+        "argument cotangente hyperbolique"
+      ]
+    },
+    "argcsch": {
+      "expected": [
+        "argument cosécante hyperbolique",
+        "argument cosécante hyperbolique",
+        "argument cosécante hyperbolique"
+      ]
+    },
+    "argsech": {
+      "expected": [
+        "argument sécante hyperbolique",
+        "argument sécante hyperbolique",
+        "argument sécante hyperbolique"
+      ]
+    },
+    "argsh": {
+      "expected": [
+        "argument sinus hyperbolique",
+        "argument sinus hyperbolique",
+        "argument sinus hyperbolique"
+      ]
+    },
+    "argth": {
+      "expected": [
+        "argument tangente hyperbolique",
+        "argument tangente hyperbolique",
+        "argument tangente hyperbolique"
       ]
     }
   }

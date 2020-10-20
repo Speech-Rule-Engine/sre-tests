@@ -203,13 +203,6 @@
         "Supremum"
       ]
     },
-    "inj lim": {
-      "expected": [
-        "Colimes",
-        "Colimes",
-        "Colimes"
-      ]
-    },
     "injlim": {
       "expected": [
         "Colimes",
@@ -217,14 +210,21 @@
         "Colimes"
       ]
     },
-    "proj lim": {
+    "inj lim": {
+      "expected": [
+        "Colimes",
+        "Colimes",
+        "Colimes"
+      ]
+    },
+    "projlim": {
       "expected": [
         "projektiver Limes",
         "projektiver Limes",
         "projektiver Limes"
       ]
     },
-    "projlim": {
+    "proj lim": {
       "expected": [
         "projektiver Limes",
         "projektiver Limes",
@@ -467,6 +467,34 @@
         "Arkustangens",
         "Arkustangens",
         "Arkustangens"
+      ]
+    },
+    "ggt": {
+      "expected": [
+        "ggt",
+        "ggt",
+        "ggt"
+      ]
+    },
+    "ggT": {
+      "expected": [
+        "ggt",
+        "ggt",
+        "ggt"
+      ]
+    },
+    "kgv": {
+      "expected": [
+        "kgv",
+        "kgv",
+        "kgv"
+      ]
+    },
+    "kgV": {
+      "expected": [
+        "kgv",
+        "kgv",
+        "kgv"
       ]
     }
   }

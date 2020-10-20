@@ -202,13 +202,6 @@
         "superior"
       ]
     },
-    "inj lim": {
-      "expected": [
-        "límite directo",
-        "límite directo",
-        "límite directo"
-      ]
-    },
     "injlim": {
       "expected": [
         "límite directo",
@@ -216,14 +209,21 @@
         "límite directo"
       ]
     },
-    "proj lim": {
+    "inj lim": {
+      "expected": [
+        "límite directo",
+        "límite directo",
+        "límite directo"
+      ]
+    },
+    "projlim": {
       "expected": [
         "límite inverso",
         "límite inverso",
         "límite inverso"
       ]
     },
-    "projlim": {
+    "proj lim": {
       "expected": [
         "límite inverso",
         "límite inverso",
@@ -466,6 +466,34 @@
         "arco tangente",
         "arco tangente",
         "arco tangente"
+      ]
+    },
+    "mcd": {
+      "expected": [
+        "MCD",
+        "MCD",
+        "MCD"
+      ]
+    },
+    "MCD": {
+      "expected": [
+        "MCD",
+        "MCD",
+        "MCD"
+      ]
+    },
+    "mcm": {
+      "expected": [
+        "mcm",
+        "mcm",
+        "mcm"
+      ]
+    },
+    "MCM": {
+      "expected": [
+        "mcm",
+        "mcm",
+        "mcm"
       ]
     },
     "sen": {
