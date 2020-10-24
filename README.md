@@ -4,7 +4,85 @@ This is a separate repository for maintaining and running tests for [Speech Rule
 
 The majority of tests is available in a JSON format.
 
-## JSON format 
+## JSON format
+
+``` json
+{
+  "factory": "Mandatory",
+  "information": "Optional but recommended",
+  "name": "Optional, necessary for analytics only",
+  "base": "Optional filename",
+  "exclude": [],
+  "_commentX_": "Optional",
+  ... other test class specific entries
+  "tests": "ALL" |
+    {
+    "test1": {
+        "test": true|false,
+        "input": "Optional",
+        "expected": "Mandatory test output"
+        ... other test specific fields
+        }
+    ... More uniquely named tests
+    }
+}
+```
+
+### Class Fields
+
+| Field         | Required    | Usage                                                              |
+| -----         | ----        | :-------                                                           |
+| `factory`     | Mandatory   | Specifies the test class factory entry that is used for this test. |
+| `information` | Recommended | Information on the test used as description for JEST testsuites.   |
+|               |             | See below for description conventions                              |
+| `name`        | Optional    | Name of the testsuite. This is necessary for analytics only,       |
+|               |             | Analytics files are use this name as prefix and only tests         |
+|               |             | that contain a `name` field will be compiled for analytics.        |
+|               |             | Consequently, names should be unique. See below for conventions.   |
+| `base`        | Optional    | Filename of the input file if this is _input test_.                |
+|               |             | This is either an absolute path or relative to the input folder.   |
+| `exclude`     | Optional    | List of tests to be excluded. Useful if loading from `base` files. |
+| `tests`       | Mandatory   | `"ALL"` or Association list of named tests.                        |
+|               |             | In case of an _input test_ `"ALL"` specifies that all tests from   |
+|               |             | the base file should be run for the given test class.              |
+| `...`         | Optional    | Other fields needed to intialise the test class.                   |
+
+
+
+### Test Fields
+
+| Field      | Required  | Usage                                                           |
+| -----      | ----      | :-------                                                        |
+| `test`     | Optional  | Boolean specifying if the test should be run. Default is `true` |
+| `input`    | Mandatory | Input for the tests.                                            |
+| `expected` | Optional  | The expected output. Can be omitted, for example, in the case   |
+|            |           | of tests that compare output for two methods.                   |
+| `...`      | Optional  | Other fields that are needed to run a test.                     |
+
+
+### Input vs Expected only tests
+
+We distinguish _input tests_ and _expected only tests_. The latter contain all
+the information for the test in the single JSON object, while the former load
+input information from a common `base` file, generally given in the `input`
+directory.
+
+The structure of `base` files is similar to the `expected` files. `expected`
+files can suppress running of certain tests using the `excluded` field.  Fields
+from the expected file overwrite those of the input file.
+
+The non-JEST test runner outputs warnings in case input tests have no expected
+value and are not explicitly excluded.
+
+### Names
+
+* `name`: Names are used as prefixes for output in the analytics module. As the
+  output structure is flat, they should be unique. For speech rule tests they
+  should be of the form `${Locale}${Domain}${Type}` and camel cased.
+* `information` entries of speech rule tests are of a similar form: `"${Locale}
+  ${Domain} ${Description}"`
+* Names and information entries of other tests follow a similar pattern,
+ starting with the description of the common aspect moving to the more specialised one. E.g.,
 
 
 ## Running Tests via Jest
@@ -93,8 +171,8 @@ make test (ENV=n)
         ├── locale_1    Expected values for speech tests of locale_1.
         │               ....
         └── locale_n    Expected values for speech tests of locale_n.
-        
-        
+
+
 ### Conent of Expected directories by locales
 
     └── expected
@@ -174,3 +252,6 @@ make test (ENV=n)
         └── tests
 
 
+
+
+# Analytics
