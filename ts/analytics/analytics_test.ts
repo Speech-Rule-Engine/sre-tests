@@ -142,9 +142,10 @@ export namespace Analytics {
         }
       }
     }
-    fs.mkdirSync(TestPath.ANALYSIS, {recursive: true});
+    let path = TestPath.ANALYSIS + 'uniqueAppliedRules/';
+    fs.mkdirSync(path, {recursive: true});
     fs.writeFileSync(
-      TestPath.ANALYSIS + currentTest + '-uniqueAppliedRules.txt',
+      path + currentTest + '.txt',
       Object.keys(rules).join('\n') + '\n');
   };
 
