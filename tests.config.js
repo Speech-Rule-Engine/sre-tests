@@ -7,8 +7,10 @@ const cp = require('child_process');
 const indir = 'expected/';
 const jsondir = 'ts/json/';
 const alldir = 'ts/output/';  // To run tests with output.
+const analysedir = 'ts/analyse/';  // To run tests with analytics.
+const analysisdir = 'analysis';
 
-
+const allAnalyse = [];
 const allOutputs = {};
 
 let addAllOutputs = function(out, path) {
@@ -42,6 +44,13 @@ let readDir = function(path, result) {
           .match(/\"active\": *\"(.*)\"/)[1],
         file);
     }
+    grep = cp.spawnSync('grep', ['"name"', file]);
+    if (!grep.status) {
+      allAnalyse.push(path);
+      // allAnalyse.set(
+      //   grep.stdout.toString()
+      //     .match(/\"name\": *\"(.*)\"/)[1], path);
+    }
     result.push(path);
   }
 };
@@ -56,6 +65,7 @@ let createFiles = function() {
   readDir('', files);
   createJsonTests(files);
   createOutputTests();
+  createAnalyseTests(files);
 };
 
 let createJsonTests = function(files) {
@@ -85,9 +95,28 @@ let createOutputTests = function() {
 };
 
 
+let createAnalyseTests = function() {
+  for (let file of allAnalyse) {
+    let dir = path.dirname(file);
+    let depth = dir.match(/\//g);
+    let base = Array((depth ? depth.length : 0) + 3).join('../');
+    let content = [];
+    content.push(`import {runJsonTest} from '${base}jest'`);
+    content.push(`import {ExampleFiles} from '${base}classes/abstract_examples'`);
+    content.push(`import {Analytics} from '${base}analytics/analytics_test'`);
+    content.push('Analytics.deep = true;');
+    content.push('ExampleFiles.noOutput = true;');
+    content.push('afterAll(() => {Analytics.outputUniqueAppliedRules();});');
+    content.push(`runJsonTest('${file}');`);
+    createFile(analysedir + dir, path.basename(file).replace(/.json$/, '.test.ts'), content);
+  }
+};
+
+
 let cleanFiles = function() {
   fs.rmdirSync(jsondir, {recursive: true});
   fs.rmdirSync(alldir, {recursive: true});
+  fs.rmdirSync(analysedir, {recursive: true});
 };
 
 

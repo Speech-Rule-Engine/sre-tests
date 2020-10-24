@@ -25,7 +25,8 @@ let TestDir = baseDir;
 export const TestPath: {[key: string]: string} = {
   INPUT: TestDir + 'input/',
   OUTPUT: TestDir + 'output/',
-  EXPECTED: TestDir + 'expected/'
+  EXPECTED: TestDir + 'expected/',
+  ANALYSIS: TestDir + 'analysis/'
 };
 
 /**

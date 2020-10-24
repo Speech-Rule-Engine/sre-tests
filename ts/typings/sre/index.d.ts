@@ -33,8 +33,12 @@ declare class Rule {
   attributesToString(): string;
 }
 
+export class SpeechRule {
+
+}
+
 export namespace SpeechRule {
-  export enum Type { NODE, MULTI, PERSONALITY, TEXT }
+  enum Type { NODE, MULTI, PERSONALITY, TEXT }
 }
 
 
