@@ -33,8 +33,15 @@ declare class Rule {
   attributesToString(): string;
 }
 
-export class SpeechRule {
+export interface SpeechRuleStore {
+  domain: string;
+  modality: string;
+  locale: string;
+  speechRules_: SpeechRule[];
+}
 
+export class SpeechRule {
+  dynamicCstr: string[];
 }
 
 export namespace SpeechRule {

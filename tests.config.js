@@ -106,7 +106,7 @@ let createAnalyseTests = function() {
     content.push(`import {Analytics} from '${base}analytics/analytics_test'`);
     content.push('Analytics.deep = true;');
     content.push('ExampleFiles.noOutput = true;');
-    content.push('afterAll(() => {Analytics.outputUniqueAppliedRules();});');
+    content.push('afterAll(() => {Analytics.output();});');
     content.push(`runJsonTest('${file}');`);
     createFile(analysedir + dir, path.basename(file).replace(/.json$/, '.test.ts'), content);
   }

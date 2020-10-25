@@ -12,7 +12,8 @@
     "test:all": "npm run test:files; npm run test:output; npm run test:anaytics",
     "test:files": "npx jest --testPathIgnorePatterns js/output --testPathIgnorePatterns js/analyse",
     "test:output": "npx jest --testPathPattern js/output",
-    "test:analytics": "npx jest --testPathPattern js/analyse",
+    "test:analytics": "npx jest --testPathPattern js/analyse; npm run test:allrules",
+    "test:allrules": "echo \"import {Analytics} from './js/analytics/analytics_test'; Analytics.outputAllRules()\" | node -r esm",  
     "clean": "npx rimraf dist js ts/output ts/json ts/analyse coverage"
   },
   "maintainers": [
@@ -35,6 +36,7 @@
   ],
   "homepage": "https://github.com/speech-rule-engine/sre-tests",
   "dependencies": {
+    "esm": "^3.2.25",
     "wicked-good-xpath": "^1.3.0",
     "xmldom-sre": "^0.1.31"
   },
