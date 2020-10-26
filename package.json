@@ -13,7 +13,8 @@
     "test:files": "npx jest --testPathIgnorePatterns js/output --testPathIgnorePatterns js/analyse",
     "test:output": "npx jest --testPathPattern js/output",
     "test:analytics": "npx jest --testPathPattern js/analyse; npm run test:allrules",
-    "test:allrules": "echo \"import AnalyticsTest from './js/analytics/analytics_test'; AnalyticsTest.outputAllRules()\" | node -r esm",  
+    "test:allrules": "echo \"import AnalyticsTest from './js/analytics/analytics_test'; AnalyticsTest.outputAllRules()\" | node -r esm",
+    "analyse:tries": "echo \"import AnalyticsTrie from './js/analytics/analytics_trie'; AnalyticsTrie.output()\" | node -r esm",
     "clean": "npx rimraf dist js ts/output ts/json ts/analyse coverage"
   },
   "maintainers": [

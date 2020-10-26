@@ -39,6 +39,11 @@ declare class Rule {
   attributesToString(): string;
 }
 
+declare class Precondition {
+  constraints: string[];
+  query: string;
+}
+
 export interface SpeechRuleStore {
   domain: string;
   modality: string;
@@ -46,8 +51,13 @@ export interface SpeechRuleStore {
   speechRules_: SpeechRule[];
 }
 
+export class DynamicConstraint {
+  getValues(): string[];
+}
+
 export class SpeechRule {
-  dynamicCstr: string[];
+  dynamicCstr: DynamicConstraint;
+  precondition: Precondition;
   action: Action;
   localizable(): boolean;
   hasType(str: string): boolean;
@@ -117,6 +127,7 @@ export namespace HighlighterFactory {
 
 export interface Trie {
 
+  locale: string;
   json(): any;
   collectRules(): SpeechRule[];
   singleStyle(style: string): SpeechRule[];

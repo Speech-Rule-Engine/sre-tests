@@ -155,29 +155,67 @@ namespace AnalyticsTrie {
 
   // Compares two rule sets and creates a trie out of those rules that are the
   // same and do not need to be localized.
-  export function compareRuleSets(rules: string[]) {
+  export function compareRuleSets(rules: string[], comparator: Function = compareTries) {
     let set1 = sre.SpeechRuleEngine.getInstance().ruleSets_[rules[0]];
     let set2 = sre.SpeechRuleEngine.getInstance().ruleSets_[rules[1]];
     if (!(set1 && set2)) return;
-    let trie = compareTries(set1.trie, set2.trie);
-    outputTrie(trie, 'intermediate1');
+    let trie = comparator(set1.trie, set2.trie);
     for (let i = 2, rule; rule = rules[i]; i++) {
       console.log(rule);
       let nextSet = sre.SpeechRuleEngine.getInstance().ruleSets_[rule];
-      trie = compareTries(trie, nextSet.trie);
-      outputTrie(trie, 'intermediate' + i);
+      trie = comparator(trie, nextSet.trie);
     }
     return trie;
   }
 
-  function compareTries(trie1: sret.Trie, trie2: sret.Trie) {
-    let style = 'default';  // TODO: Something later.
+  export function compareTriesConstraints(trie1: sret.Trie, trie2: sret.Trie) {
+    let rules = trie2.collectRules();
+    let old = trie1.collectRules();
+    let locale = old.length ? old[0].dynamicCstr.getValues()[0] : '';
+    let result = [];
+    for (let rule of rules) {
+      let prec = rule.precondition;
+      let cstr2 = rule.dynamicCstr.getValues();
+      let cstr1 = cstr2.slice(1);
+      cstr1.unshift(locale);
+      let node = trie1.byConstraint(cstr1.concat([prec.query], prec.constraints));
+      if (node && node.getRule && node.getRule()) {
+        result.push(rule);
+      }
+    }
+    let tmp = tempTrie(result);
+    return tmp;
+  }
+
+
+  export function compareTries(trie1: sret.Trie, trie2: sret.Trie) {
+    let rules = trie2.collectRules();
+    let old = trie1.collectRules();
+    let locale = old.length ? old[0].dynamicCstr.getValues()[0] : '';
+    let result = [];
+    for (let rule of rules) {
+      let prec = rule.precondition;
+      let cstr2 = rule.dynamicCstr.getValues();
+      let cstr1 = cstr2.slice(1);
+      cstr1.unshift(locale);
+      let node = trie1.byConstraint(cstr1.concat([prec.query], prec.constraints));
+      if (node && node.getRule && node.getRule() &&
+        node.getRule().action.toString() === rule.action.toString() &&
+        !rule.action.localizable()) {
+        result.push(rule);
+      }
+    }
+    let tmp = tempTrie(result);
+    return tmp;
+  }
+
+
+  // Compare two tries on default style only.
+  export function compareTriesStyle(trie1: sret.Trie, trie2: sret.Trie, style = 'default') {
     let rules = sre.Trie['collectRules_'](trie2.singleStyle(style));
-    console.log(rules.length);
     let cstr1 = trie1.getSingletonDynamic_();
     cstr1.push(style);
     cstr1 = cstr1.slice(0, 4);
-    console.log(cstr1);
     let result = [];
     for (let rule of rules) {
       let prec = rule.precondition;
@@ -230,20 +268,28 @@ namespace AnalyticsTrie {
     return trie;
   }
 
-  let pairs = [['PrefixRules', 'PrefixFrench'],
+  export let pairs = [['PrefixRules', 'PrefixFrench'],
                ['MathspeakRules', 'MathspeakGerman'],
                ['ClearspeakRules', 'ClearspeakFrench']];
 
+  let sets = [
+    ['MathspeakRules', 'MathspeakGerman', 'MathspeakSpanish', 'MathspeakFrench'],
+    ['ClearspeakRules', 'ClearspeakGerman', 'ClearspeakFrench'],
+    ['PrefixRules', 'PrefixGerman', 'PrefixSpanish', 'PrefixFrench'],
+    ['SummaryRules', 'SummaryGerman', 'SummarySpanish', 'SummaryFrench']
+  ];
+  
+  
   export function output() {
     sre.System.getInstance().setupEngine({});
-    outputTrie(diffRuleSets(pairs[0][0], pairs[0][1]), 'test1');
-    outputTrie(diffRuleSets(pairs[1][0], pairs[1][1]), 'test2');
-    outputTrie(diffRuleSets(pairs[2][0], pairs[2][1]), 'test3');
+    // outputTrie(diffRuleSets(pairs[0][0], pairs[0][1]), 'test1');
+    // outputTrie(diffRuleSets(pairs[1][0], pairs[1][1]), 'test2');
+    // outputTrie(diffRuleSets(pairs[2][0], pairs[2][1]), 'test3');
     // outputTrie(compareRuleSets(['MathspeakRules', 'ClearspeakRules']), 'compare1');
-    outputTrie(compareRuleSets(
-      ['MathspeakRules', 'MathspeakGerman', 'MathspeakSpanish', 'MathspeakFrench']), 'mathspeak-all');
-    // outputTrie(compareRuleSets(
-    //   ['MathspeakRules', 'MathspeakGerman']), 'mathspeak-german');
+    for (let rules of sets) {
+      outputTrie(compareRuleSets(rules), rules[0]);
+      outputTrie(compareRuleSets(rules, compareTriesConstraints), rules[0] + '-constr');
+    }
   }
 
 }
