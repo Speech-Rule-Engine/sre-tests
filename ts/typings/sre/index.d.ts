@@ -42,6 +42,7 @@ declare class Rule {
 declare class Precondition {
   constraints: string[];
   query: string;
+  hasDisjunctive(): boolean;
 }
 
 export interface SpeechRuleStore {

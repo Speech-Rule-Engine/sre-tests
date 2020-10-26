@@ -88,6 +88,10 @@ sre.SpeechRule.Action.prototype.hasType = function(type: string) {
   return this.components.some((x: sret.SpeechRule) => x.hasType(type));
 };
 
+sre.SpeechRule.Precondition.prototype.hasDisjunctive = function() {
+  return this.constraints.some((x: string) => x.match(/ or /));
+};
+
 sre.SpeechRule.Component.prototype.localizable = function(){
   return this.hasType(sre.SpeechRule.Type.TEXT) &&
     this.content.match(/^".*"$/);
@@ -153,6 +157,19 @@ namespace AnalyticsTrie {
     return outTrie;
   }
 
+  export function disjunctiveRules() {
+    let rulesets = Object.values(sre.SpeechRuleEngine.getInstance().ruleSets_) as sret.SpeechRuleStore[];
+    let result = [];
+    for (let rules of rulesets) {
+      for (let rule of rules.speechRules_) {
+        if (rule.precondition.hasDisjunctive()) {
+          result.push(rule);
+        }
+      }
+    }
+    outputTrie(tempTrie(result), 'disjunctiveRules');
+  }
+
   // Compares two rule sets and creates a trie out of those rules that are the
   // same and do not need to be localized.
   export function compareRuleSets(rules: string[], comparator: Function = compareTries) {
@@ -161,7 +178,6 @@ namespace AnalyticsTrie {
     if (!(set1 && set2)) return;
     let trie = comparator(set1.trie, set2.trie);
     for (let i = 2, rule; rule = rules[i]; i++) {
-      console.log(rule);
       let nextSet = sre.SpeechRuleEngine.getInstance().ruleSets_[rule];
       trie = comparator(trie, nextSet.trie);
     }
@@ -226,7 +242,6 @@ namespace AnalyticsTrie {
         result.push(rule);
       }
     }
-    console.log(result.length);
     let tmp = tempTrie(result);
     return tmp;
   }
@@ -290,6 +305,7 @@ namespace AnalyticsTrie {
       outputTrie(compareRuleSets(rules), rules[0]);
       outputTrie(compareRuleSets(rules, compareTriesConstraints), rules[0] + '-constr');
     }
+    disjunctiveRules();
   }
 
 }
