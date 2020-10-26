@@ -26,6 +26,12 @@ declare class Component {
   attributes: {[key: string]: string};
 }
 
+declare class Action {
+  attributes: {[key: string]: string};
+  hasType(str: string): boolean;
+  localizable(): boolean;
+}
+
 declare class Rule {
   components: Component[];
   getAttributes(): string[];
@@ -42,6 +48,9 @@ export interface SpeechRuleStore {
 
 export class SpeechRule {
   dynamicCstr: string[];
+  action: Action;
+  localizable(): boolean;
+  hasType(str: string): boolean;
 }
 
 export namespace SpeechRule {
@@ -58,6 +67,7 @@ export namespace SpeechRule.Component {
 
 export namespace SpeechRule.Action {
   export function fromString(str: string): Rule;
+  export function hasType(str: string): boolean;
 }
 
 
@@ -103,6 +113,15 @@ export namespace HighlighterFactory {
                               info: {renderer: string, browser?: string}
                              ): Highlighter;
 
+}
+
+export interface Trie {
+
+  json(): any;
+  collectRules(): SpeechRule[];
+  singleStyle(style: string): SpeechRule[];
+  getSingletonDynamic_(): any;
+  byConstraint(c1: any): any;
 }
 
 

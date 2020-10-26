@@ -103,10 +103,10 @@ let createAnalyseTests = function() {
     let content = [];
     content.push(`import {runJsonTest} from '${base}jest'`);
     content.push(`import {ExampleFiles} from '${base}classes/abstract_examples'`);
-    content.push(`import {Analytics} from '${base}analytics/analytics_test'`);
-    content.push('Analytics.deep = true;');
+    content.push(`import AnalyticsTest from '${base}analytics/analytics_test'`);
+    content.push('AnalyticsTest.deep = true;');
     content.push('ExampleFiles.noOutput = true;');
-    content.push('afterAll(() => {Analytics.output();});');
+    content.push('afterAll(() => {AnalyticsTest.output();});');
     content.push(`runJsonTest('${file}');`);
     createFile(analysedir + dir, path.basename(file).replace(/.json$/, '.test.ts'), content);
   }
