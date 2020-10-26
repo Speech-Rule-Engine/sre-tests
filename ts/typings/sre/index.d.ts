@@ -26,6 +26,12 @@ declare class Component {
   attributes: {[key: string]: string};
 }
 
+declare class Action {
+  attributes: {[key: string]: string};
+  hasType(str: string): boolean;
+  localizable(): boolean;
+}
+
 declare class Rule {
   components: Component[];
   getAttributes(): string[];
@@ -33,8 +39,32 @@ declare class Rule {
   attributesToString(): string;
 }
 
+declare class Precondition {
+  constraints: string[];
+  query: string;
+}
+
+export interface SpeechRuleStore {
+  domain: string;
+  modality: string;
+  locale: string;
+  speechRules_: SpeechRule[];
+}
+
+export class DynamicConstraint {
+  getValues(): string[];
+}
+
+export class SpeechRule {
+  dynamicCstr: DynamicConstraint;
+  precondition: Precondition;
+  action: Action;
+  localizable(): boolean;
+  hasType(str: string): boolean;
+}
+
 export namespace SpeechRule {
-  export enum Type { NODE, MULTI, PERSONALITY, TEXT }
+  enum Type { NODE, MULTI, PERSONALITY, TEXT }
 }
 
 
@@ -47,6 +77,7 @@ export namespace SpeechRule.Component {
 
 export namespace SpeechRule.Action {
   export function fromString(str: string): Rule;
+  export function hasType(str: string): boolean;
 }
 
 
@@ -92,6 +123,16 @@ export namespace HighlighterFactory {
                               info: {renderer: string, browser?: string}
                              ): Highlighter;
 
+}
+
+export interface Trie {
+
+  locale: string;
+  json(): any;
+  collectRules(): SpeechRule[];
+  singleStyle(style: string): SpeechRule[];
+  getSingletonDynamic_(): any;
+  byConstraint(c1: any): any;
 }
 
 

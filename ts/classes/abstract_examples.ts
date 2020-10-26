@@ -157,6 +157,7 @@ export namespace ExampleFiles {
 
   const descriptors: {[key: string]: number} = {};
 
+  export let currentExample: AbstractExamples = null;
   export let noOutput = false;
 
   /**
@@ -165,6 +166,7 @@ export namespace ExampleFiles {
    * @param obj The test object.
    */
   export function openFile(file: string, obj: AbstractExamples) {
+    currentExample = obj;
     if (noOutput) return;
     if (!openFiles[file]) {
       let fd = fs.openSync(file, 'w+');

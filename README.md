@@ -12,6 +12,7 @@ The majority of tests is available in a JSON format.
   "information": "Optional but recommended",
   "name": "Optional, necessary for analytics only",
   "base": "Optional filename",
+  "active": "Optional filename for test output",
   "exclude": [],
   "_commentX_": "Optional",
   ... other test class specific entries
@@ -41,6 +42,9 @@ The majority of tests is available in a JSON format.
 |               |             | Consequently, names should be unique. See below for conventions.   |
 | `base`        | Optional    | Filename of the input file if this is _input test_.                |
 |               |             | This is either an absolute path or relative to the input folder.   |
+| `active`      | Optional    | Target filename for tests that produce output.                     |
+|               |             | It is used to compile output tests and does not have to be unique. |
+|               |             | This is either an absolute path or relative to the ouptut folder.  |
 | `exclude`     | Optional    | List of tests to be excluded. Useful if loading from `base` files. |
 | `tests`       | Mandatory   | `"ALL"` or Association list of named tests.                        |
 |               |             | In case of an _input test_ `"ALL"` specifies that all tests from   |

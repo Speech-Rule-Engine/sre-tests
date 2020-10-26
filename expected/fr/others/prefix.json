@@ -1,5 +1,5 @@
 {
-  "name": "PrefixFrenchTest",
+  "name": "FrenchPrefix",
   "locale": "fr",
   "factory": "prefix",
   "base": "input/common/prefix.json",
@@ -143,6 +143,33 @@
       "expected": ""
     },
     "Vectors_5": {
+      "expected": ""
+    },
+    "Matrices_depth_0": {
+      "expected": "1re rangée"
+    },
+    "Matrices_depth_1": {
+      "expected": "1re rangée 1re colonne"
+    },
+    "Matrices_depth_2": {
+      "expected": "1re rangée 2e colonne"
+    },
+    "Matrices_depth_3": {
+      "expected": "2e rangée"
+    },
+    "Matrices_depth_4": {
+      "expected": "2e rangée 1re colonne"
+    },
+    "Matrices_depth_5": {
+      "expected": "2e rangée 2e colonne"
+    },
+    "Matrices_depth_6": {
+      "expected": ""
+    },
+    "Matrices_depth_7": {
+      "expected": ""
+    },
+    "Matrices_depth_8": {
       "expected": ""
     },
     "Matrices_0": {

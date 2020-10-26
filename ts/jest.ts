@@ -1,4 +1,5 @@
 import {get} from './classes/test_factory';
+import AnalyticsTest from './analytics/analytics_test';
 
 /**
  * Runs tests for a json file.
@@ -9,6 +10,7 @@ export function runJsonTest(file: string) {
   if (!testcases) {
     return;
   }
+  AnalyticsTest.currentTest = testcases.jsonTests.name;
   testcases.prepare();
   describe(
     testcases.information,
@@ -25,6 +27,7 @@ export function runJsonTest(file: string) {
           continue;
         }
         test(testcase.name, () => {
+          AnalyticsTest.currentTestcase = testcase.name;
           testcases.method.bind(testcases).
             apply(null, testcases.pick(testcase));
         });

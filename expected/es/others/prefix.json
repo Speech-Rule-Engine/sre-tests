@@ -1,5 +1,5 @@
 {
-  "name": "PrefixSpanishTest",
+  "name": "SpanishPrefix",
   "locale": "es",
   "factory": "prefix",
   "base": "input/common/prefix.json",
@@ -143,6 +143,33 @@
       "expected": ""
     },
     "Vectors_5": {
+      "expected": ""
+    },
+    "Matrices_depth_0": {
+      "expected": "1a fila"
+    },
+    "Matrices_depth_1": {
+      "expected": "1a fila 1a columna"
+    },
+    "Matrices_depth_2": {
+      "expected": "1a fila 2a columna"
+    },
+    "Matrices_depth_3": {
+      "expected": "2a fila"
+    },
+    "Matrices_depth_4": {
+      "expected": "2a fila 1a columna"
+    },
+    "Matrices_depth_5": {
+      "expected": "2a fila 2a columna"
+    },
+    "Matrices_depth_6": {
+      "expected": ""
+    },
+    "Matrices_depth_7": {
+      "expected": ""
+    },
+    "Matrices_depth_8": {
       "expected": ""
     },
     "Matrices_0": {
