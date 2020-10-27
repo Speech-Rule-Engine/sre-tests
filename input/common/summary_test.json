@@ -694,6 +694,56 @@
       "test": true,
       "input": "<mfenced open=\"[\" close=\"]\"><mtable><mtr><mtd><mi>a</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd></mtr><mtr><mtd><mi>e</mi></mtd></mtr></mtable></mfenced>",
       "preference": "sbrief"
+    },
+    "AbstrVarSubtraction_default": {
+      "test": true,
+      "input": "<mi>a</mi><mo>-</mo><mi>&#x2026;</mi><mo>-</mo><mi>b</mi>",
+      "preference": "default"
+    },
+    "AbstrVarSubtraction_brief": {
+      "test": true,
+      "input": "<mi>a</mi><mo>-</mo><mi>&#x2026;</mi><mo>-</mo><mi>b</mi>",
+      "preference": "brief"
+    },
+    "AbstrVarSubtraction_sbrief": {
+      "test": true,
+      "input": "<mi>a</mi><mo>-</mo><mi>&#x2026;</mi><mo>-</mo><mi>b</mi>",
+      "preference": "sbrief"
+    },
+    "AbstrCountImplicit_default": {
+      "test": true,
+      "input": "<mi>a</mi><mi>b</mi><mi>c</mi>",
+      "preference": "default"
+    },
+    "AbstrCountImplicit_brief": {
+      "test": true,
+      "input": "<mi>a</mi><mi>b</mi><mi>c</mi>",
+      "preference": "brief"
+    },
+    "AbstrCountImplicit_sbrief": {
+      "test": true,
+      "input": "<mi>a</mi><mi>b</mi><mi>c</mi>",
+      "preference": "sbrief"
+    },
+    "AbstrVarImplicit_default": {
+      "test": true,
+      "input": "<mi>a</mi><mo>&#x2062;</mo><mo>&#x2026;</mo><mo>&#x2062;</mo><mi>b</mi>",
+      "preference": "default"
+    },
+    "AbstrVarArrowRelation_default": {
+      "test": true,
+      "input": "<mi>a</mi><mo>→</mo><mo>&#x2026;</mo><mo>↔</mo><mi>b</mi>",
+      "preference": "default"
+    },
+    "AbstrArrowRelation_default": {
+      "test": true,
+      "input": "<mi>a</mi><mo>→</mo><mi>c</mi><mo>↔</mo><mi>b</mi>",
+      "preference": "default"
+    },
+    "AbstrVarRowvector_default": {
+      "test": true,
+      "input": "<mfenced open=\"[\" close=\"]\"><mtable><mtr><mtd><mi>a</mi></mtd><mtd><mo>&#x2026;</mo></mtd><mtd><mi>b</mi></mtd></mtr></mtable></mfenced>",
+      "preference": "default"
     }
   }
 }
