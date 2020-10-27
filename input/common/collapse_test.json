@@ -615,18 +615,6 @@
       "test": true,
       "input": "<mfenced open=\"[\" close=\"]\"><mtable><mtr><mtd><mi>a</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd></mtr><mtr><mtd><mi>e</mi></mtd></mtr></mtable></mfenced>",
       "preference": "sbrief"
-    },
-    "CollapsedRootInside_default": {
-      "test": true,
-      "input": "<mroot><mi>x</mi><mn>3</mn></mroot>",
-      "post": "<mi>a</mi>",
-      "preference": "default"
-    },
-    "CollapsedRootNestedInside_default": {
-      "test": true,
-      "input": "<mroot><mrow><mroot><mi>x</mi><mn>4</mn></mroot><mo>+</mo><mi>x</mi></mrow><mn>3</mn></mroot>",
-      "post": "<mi>a</mi>",
-      "preference": "default"
     }
   }
 }
