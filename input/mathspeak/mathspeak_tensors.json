@@ -9,274 +9,274 @@
     "_comment6_": "   A      C",
     "_comment7_": "  Where R is the rest.",
     "_comment8_": "  Wrapping is indicated before R (without baseline) or after R (with baseline).",
-    "SamplePartialTensorABCD_default": {
+    "PartialTensorABCD_default": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "default"
     },
-    "SamplePartialTensorABCD_brief": {
+    "PartialTensorABCD_brief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "brief"
     },
-    "SamplePartialTensorABCD_sbrief": {
+    "PartialTensorABCD_sbrief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "sbrief"
     },
-    "SamplePartialTensorABC_default": {
+    "PartialTensorABC_default": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mi>c</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "default"
     },
-    "SamplePartialTensorABC_brief": {
+    "PartialTensorABC_brief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mi>c</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "brief"
     },
-    "SamplePartialTensorABC_sbrief": {
+    "PartialTensorABC_sbrief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mi>c</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "sbrief"
     },
-    "SamplePartialTensorABD_default": {
+    "PartialTensorABD_default": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><none/><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "default"
     },
-    "SamplePartialTensorABD_brief": {
+    "PartialTensorABD_brief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><none/><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "brief"
     },
-    "SamplePartialTensorABD_sbrief": {
+    "PartialTensorABD_sbrief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><none/><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "sbrief"
     },
-    "SamplePartialTensorAB_default": {
+    "PartialTensorAB_default": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "default"
     },
-    "SamplePartialTensorAB_brief": {
+    "PartialTensorAB_brief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "brief"
     },
-    "SamplePartialTensorAB_sbrief": {
+    "PartialTensorAB_sbrief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "sbrief"
     },
-    "SamplePartialTensorABCR_default": {
+    "PartialTensorABCR_default": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mi>c</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts><mi>r</mi>",
       "preference": "default"
     },
-    "SamplePartialTensorABCR_brief": {
+    "PartialTensorABCR_brief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mi>c</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts><mi>r</mi>",
       "preference": "brief"
     },
-    "SamplePartialTensorABCR_sbrief": {
+    "PartialTensorABCR_sbrief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mi>c</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts><mi>r</mi>",
       "preference": "sbrief"
     },
-    "SamplePartialTensorABCDR_default": {
+    "PartialTensorABCDR_default": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts><mi>r</mi>",
       "preference": "default"
     },
-    "SamplePartialTensorABCDR_brief": {
+    "PartialTensorABCDR_brief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts><mi>r</mi>",
       "preference": "brief"
     },
-    "SamplePartialTensorABCDR_sbrief": {
+    "PartialTensorABCDR_sbrief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts><mi>r</mi>",
       "preference": "sbrief"
     },
-    "SamplePartialTensorABCDRoot_default": {
+    "PartialTensorABCDRoot_default": {
       "test": true,
       "input": "<msqrt><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts></msqrt>",
       "preference": "default"
     },
-    "SamplePartialTensorABCDRoot_brief": {
+    "PartialTensorABCDRoot_brief": {
       "test": true,
       "input": "<msqrt><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts></msqrt>",
       "preference": "brief"
     },
-    "SamplePartialTensorABCDRoot_sbrief": {
+    "PartialTensorABCDRoot_sbrief": {
       "test": true,
       "input": "<msqrt><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts></msqrt>",
       "preference": "sbrief"
     },
-    "SamplePartialTensorABCDRootR_default": {
+    "PartialTensorABCDRootR_default": {
       "test": true,
       "input": "<msqrt><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts></msqrt><mi>r</mi>",
       "preference": "default"
     },
-    "SamplePartialTensorABCDRootR_brief": {
+    "PartialTensorABCDRootR_brief": {
       "test": true,
       "input": "<msqrt><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts></msqrt><mi>r</mi>",
       "preference": "brief"
     },
-    "SamplePartialTensorABCDRootR_sbrief": {
+    "PartialTensorABCDRootR_sbrief": {
       "test": true,
       "input": "<msqrt><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts></msqrt><mi>r</mi>",
       "preference": "sbrief"
     },
-    "SamplePartialTensorABCDRRoot_default": {
+    "PartialTensorABCDRRoot_default": {
       "test": true,
       "input": "<msqrt><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts><mi>r</mi></msqrt>",
       "preference": "default"
     },
-    "SamplePartialTensorABCDRRoot_brief": {
+    "PartialTensorABCDRRoot_brief": {
       "test": true,
       "input": "<msqrt><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts><mi>r</mi></msqrt>",
       "preference": "brief"
     },
-    "SamplePartialTensorABCDRRoot_sbrief": {
+    "PartialTensorABCDRRoot_sbrief": {
       "test": true,
       "input": "<msqrt><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts><mi>r</mi></msqrt>",
       "preference": "sbrief"
     },
-    "SamplePartialTensorABCDFrac_default": {
+    "PartialTensorABCDFrac_default": {
       "test": true,
       "input": "<mfrac><mn>1</mn><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts></mfrac>",
       "preference": "default"
     },
-    "SamplePartialTensorABCDFrac_brief": {
+    "PartialTensorABCDFrac_brief": {
       "test": true,
       "input": "<mfrac><mn>1</mn><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts></mfrac>",
       "preference": "brief"
     },
-    "SamplePartialTensorABCDFrac_sbrief": {
+    "PartialTensorABCDFrac_sbrief": {
       "test": true,
       "input": "<mfrac><mn>1</mn><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts></mfrac>",
       "preference": "sbrief"
     },
-    "SamplePartialTensorABCDFracR_default": {
+    "PartialTensorABCDFracR_default": {
       "test": true,
       "input": "<mfrac><mn>1</mn><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts></mfrac><mi>r</mi>",
       "preference": "default"
     },
-    "SamplePartialTensorABCDFracR_brief": {
+    "PartialTensorABCDFracR_brief": {
       "test": true,
       "input": "<mfrac><mn>1</mn><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts></mfrac><mi>r</mi>",
       "preference": "brief"
     },
-    "SamplePartialTensorABCDFracR_sbrief": {
+    "PartialTensorABCDFracR_sbrief": {
       "test": true,
       "input": "<mfrac><mn>1</mn><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts></mfrac><mi>r</mi>",
       "preference": "sbrief"
     },
-    "SamplePartialTensorABCDRFrac_default": {
+    "PartialTensorABCDRFrac_default": {
       "test": true,
       "input": "<mfrac><mn>1</mn><mrow><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts><mi>r</mi></mrow></mfrac>",
       "preference": "default"
     },
-    "SamplePartialTensorABCDRFrac_brief": {
+    "PartialTensorABCDRFrac_brief": {
       "test": true,
       "input": "<mfrac><mn>1</mn><mrow><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts><mi>r</mi></mrow></mfrac>",
       "preference": "brief"
     },
-    "SamplePartialTensorABCDRFrac_sbrief": {
+    "PartialTensorABCDRFrac_sbrief": {
       "test": true,
       "input": "<mfrac><mn>1</mn><mrow><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts><mi>r</mi></mrow></mfrac>",
       "preference": "sbrief"
     },
 
     "_comment10_": "Rest",
-    "SampleTensorMultiSimpleABC_default": {
+    "TensorMultiSimpleABC_default": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><msup><mi>c</mi><mi>l</mi></msup><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "default"
     },
-    "SampleTensorMultiSimpleABC_brief": {
+    "TensorMultiSimpleABC_brief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><msup><mi>c</mi><mi>l</mi></msup><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "brief"
     },
-    "SampleTensorMultiSimpleABC_sbrief": {
+    "TensorMultiSimpleABC_sbrief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><msup><mi>c</mi><mi>l</mi></msup><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "sbrief"
     },
-    "SampleTensorMultiSub_default": {
+    "TensorMultiSub_default": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><msub><mi>c</mi><mi>l</mi></msub><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "default"
     },
-    "SampleTensorMultiSub_brief": {
+    "TensorMultiSub_brief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><msub><mi>c</mi><mi>l</mi></msub><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "brief"
     },
-    "SampleTensorMultiSub_sbrief": {
+    "TensorMultiSub_sbrief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><msub><mi>c</mi><mi>l</mi></msub><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "sbrief"
     },
-    "SampleTensorMultiSubSup_default": {
+    "TensorMultiSubSup_default": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><msub><mi>c</mi><msup><mi>l</mi><mi>k</mi></msup></msub><mi>d</mi><mi>e</mi><none/><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "default"
     },
-    "SampleTensorMultiSubSup_brief": {
+    "TensorMultiSubSup_brief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><msub><mi>c</mi><msup><mi>l</mi><mi>k</mi></msup></msub><mi>d</mi><mi>e</mi><none/><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "brief"
     },
-    "SampleTensorMultiSubSup_sbrief": {
+    "TensorMultiSubSup_sbrief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><msub><mi>c</mi><msup><mi>l</mi><mi>k</mi></msup></msub><mi>d</mi><mi>e</mi><none/><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "sbrief"
     },
-    "SampleTensorMultiSimple_default": {
+    "TensorMultiSimple_default": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><msup><mi>c</mi><mi>l</mi></msup><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "default"
     },
-    "SampleTensorMultiSimple_brief": {
+    "TensorMultiSimple_brief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><msup><mi>c</mi><mi>l</mi></msup><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "brief"
     },
-    "SampleTensorMultiSimple_sbrief": {
+    "TensorMultiSimple_sbrief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><msup><mi>c</mi><mi>l</mi></msup><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "sbrief"
     },
-    "SampleTensorMultiComplex_default": {
+    "TensorMultiComplex_default": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mrow><mi>c</mi><msup><mi>k</mi><mi>l</mi></msup></mrow><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "default"
     },
-    "SampleTensorMultiComplex_brief": {
+    "TensorMultiComplex_brief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mrow><mi>c</mi><msup><mi>k</mi><mi>l</mi></msup></mrow><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "brief"
     },
-    "SampleTensorMultiComplex_sbrief": {
+    "TensorMultiComplex_sbrief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mrow><mi>c</mi><msup><mi>k</mi><mi>l</mi></msup></mrow><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "sbrief"
     },
-    "SampleTwoTensors_default": {
+    "TwoTensors_default": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "default"
     },
-    "SampleTwoTensors_brief": {
+    "TwoTensors_brief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "brief"
     },
-    "SampleTwoTensors_sbrief": {
+    "TwoTensors_sbrief": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts>",
       "preference": "sbrief"

@@ -14,150 +14,150 @@
     "_comment3_": "     Base     R",
     "_comment4_": "   A      C",
     "_comment5_": "  Where R is the rest.",
-    "SamplePartialTensorABCD_default": {
+    "PartialTensorABCD_default": {
       "expected": "subíndice a superíndice b línea base x subíndice c superíndice d"
     },
-    "SamplePartialTensorABCD_brief": {
+    "PartialTensorABCD_brief": {
       "expected": "sub a sup b x sub c sup d"
     },
-    "SamplePartialTensorABCD_sbrief": {
+    "PartialTensorABCD_sbrief": {
       "expected": "sub a sup b x sub c sup d"
     },
-    "SamplePartialTensorABC_default": {
+    "PartialTensorABC_default": {
       "expected": "subíndice a superíndice b línea base x subíndice c"
     },
-    "SamplePartialTensorABC_brief": {
+    "PartialTensorABC_brief": {
       "expected": "sub a sup b x sub c"
     },
-    "SamplePartialTensorABC_sbrief": {
+    "PartialTensorABC_sbrief": {
       "expected": "sub a sup b x sub c"
     },
-    "SamplePartialTensorABD_default": {
+    "PartialTensorABD_default": {
       "expected": "subíndice a superíndice b línea base x superíndice d"
     },
-    "SamplePartialTensorABD_brief": {
+    "PartialTensorABD_brief": {
       "expected": "sub a sup b x sup d"
     },
-    "SamplePartialTensorABD_sbrief": {
+    "PartialTensorABD_sbrief": {
       "expected": "sub a sup b x sup d"
     },
-    "SamplePartialTensorAB_default": {
+    "PartialTensorAB_default": {
       "expected": "subíndice a superíndice b línea base x"
     },
-    "SamplePartialTensorAB_brief": {
+    "PartialTensorAB_brief": {
       "expected": "sub a sup b x"
     },
-    "SamplePartialTensorAB_sbrief": {
+    "PartialTensorAB_sbrief": {
       "expected": "sub a sup b x"
     },
-    "SamplePartialTensorABCR_default": {
+    "PartialTensorABCR_default": {
       "expected": "subíndice a superíndice b línea base x subíndice c línea base r"
     },
-    "SamplePartialTensorABCR_brief": {
+    "PartialTensorABCR_brief": {
       "expected": "sub a sup b x sub c r"
     },
-    "SamplePartialTensorABCR_sbrief": {
+    "PartialTensorABCR_sbrief": {
       "expected": "sub a sup b x sub c r"
     },
-    "SamplePartialTensorABCDR_default": {
+    "PartialTensorABCDR_default": {
       "expected": "subíndice a superíndice b línea base x subíndice c superíndice d línea base r"
     },
-    "SamplePartialTensorABCDR_brief": {
+    "PartialTensorABCDR_brief": {
       "expected": "sub a sup b x sub c sup d r"
     },
-    "SamplePartialTensorABCDR_sbrief": {
+    "PartialTensorABCDR_sbrief": {
       "expected": "sub a sup b x sub c sup d r"
     },
-    "SamplePartialTensorABCDRoot_default": {
+    "PartialTensorABCDRoot_default": {
       "expected": "empezar raíz cuadrada subíndice a superíndice b línea base x subíndice c superíndice d línea base finalizar raíz cuadrada"
     },
-    "SamplePartialTensorABCDRoot_brief": {
+    "PartialTensorABCDRoot_brief": {
       "expected": "empezar raíz cuadrada sub a sup b x sub c sup d finalizar raíz cuadrada"
     },
-    "SamplePartialTensorABCDRoot_sbrief": {
+    "PartialTensorABCDRoot_sbrief": {
       "expected": "raíz cuadrada sub a sup b x sub c sup d finalizar raíz cuadrada"
     },
-    "SamplePartialTensorABCDRootR_default": {
+    "PartialTensorABCDRootR_default": {
       "expected": "empezar raíz cuadrada subíndice a superíndice b línea base x subíndice c superíndice d línea base finalizar raíz cuadrada r"
     },
-    "SamplePartialTensorABCDRootR_brief": {
+    "PartialTensorABCDRootR_brief": {
       "expected": "empezar raíz cuadrada sub a sup b x sub c sup d finalizar raíz cuadrada r"
     },
-    "SamplePartialTensorABCDRootR_sbrief": {
+    "PartialTensorABCDRootR_sbrief": {
       "expected": "raíz cuadrada sub a sup b x sub c sup d finalizar raíz cuadrada r"
     },
-    "SamplePartialTensorABCDFrac_default": {
+    "PartialTensorABCDFrac_default": {
       "expected": "empezar fracción 1 entre subíndice a superíndice b línea base x subíndice c superíndice d línea base finalizar fracción"
     },
-    "SamplePartialTensorABCDFrac_brief": {
+    "PartialTensorABCDFrac_brief": {
       "expected": "empezar frac 1 entre sub a sup b x sub c sup d finalizar frac"
     },
-    "SamplePartialTensorABCDFrac_sbrief": {
+    "PartialTensorABCDFrac_sbrief": {
       "expected": "frac 1 entre sub a sup b x sub c sup d"
     },
-    "SamplePartialTensorABCDFracR_default": {
+    "PartialTensorABCDFracR_default": {
       "expected": "empezar fracción 1 entre subíndice a superíndice b línea base x subíndice c superíndice d línea base finalizar fracción r"
     },
-    "SamplePartialTensorABCDFracR_brief": {
+    "PartialTensorABCDFracR_brief": {
       "expected": "empezar frac 1 entre sub a sup b x sub c sup d finalizar frac r"
     },
-    "SamplePartialTensorABCDFracR_sbrief": {
+    "PartialTensorABCDFracR_sbrief": {
       "expected": "frac 1 entre sub a sup b x sub c sup d r"
     },
 
     "_comment10_": "Rest.",
-    "SampleTensorMultiSimpleABC_default": {
+    "TensorMultiSimpleABC_default": {
       "expected": "subíndice a superíndice b línea base x subíndice c sub superíndice l"
     },
-    "SampleTensorMultiSimpleABC_brief": {
+    "TensorMultiSimpleABC_brief": {
       "expected": "sub a sup b x sub c sub sup l"
     },
-    "SampleTensorMultiSimpleABC_sbrief": {
+    "TensorMultiSimpleABC_sbrief": {
       "expected": "sub a sup b x sub c sub sup l"
     },
-    "SampleTensorMultiSub_default": {
+    "TensorMultiSub_default": {
       "expected": "subíndice a superíndice b línea base x subíndice c sub subíndice l superíndice d"
     },
-    "SampleTensorMultiSub_brief": {
+    "TensorMultiSub_brief": {
       "expected": "sub a sup b x sub c sub sub l sup d"
     },
-    "SampleTensorMultiSub_sbrief": {
+    "TensorMultiSub_sbrief": {
       "expected": "sub a sup b x sub c sub sub l sup d"
     },
-    "SampleTensorMultiSubSup_default": {
+    "TensorMultiSubSup_default": {
       "expected": "subíndice a superíndice b línea base x subíndice c sub subíndice l sub sub superíndice k subíndice e superíndice d"
     },
-    "SampleTensorMultiSubSup_brief": {
+    "TensorMultiSubSup_brief": {
       "expected": "sub a sup b x sub c sub sub l sub sub sup k e sup d"
     },
-    "SampleTensorMultiSubSup_sbrief": {
+    "TensorMultiSubSup_sbrief": {
       "expected": "sub a sup b x sub c sub sub l sub sub sup k e sup d"
     },
-    "SampleTensorMultiSimple_default": {
+    "TensorMultiSimple_default": {
       "expected": "subíndice a superíndice b línea base x subíndice c sub superíndice l superíndice d"
     },
-    "SampleTensorMultiSimple_brief": {
+    "TensorMultiSimple_brief": {
       "expected": "sub a sup b x sub c sub sup l sup d"
     },
-    "SampleTensorMultiSimple_sbrief": {
+    "TensorMultiSimple_sbrief": {
       "expected": "sub a sup b x sub c sub sup l sup d"
     },
-    "SampleTensorMultiComplex_default": {
+    "TensorMultiComplex_default": {
       "expected": "subíndice a superíndice b línea base x subíndice c k sub superíndice l superíndice d"
     },
-    "SampleTensorMultiComplex_brief": {
+    "TensorMultiComplex_brief": {
       "expected": "sub a sup b x sub c k sub sup l sup d"
     },
-    "SampleTensorMultiComplex_sbrief": {
+    "TensorMultiComplex_sbrief": {
       "expected": "sub a sup b x sub c k sub sup l sup d"
     },
-    "SampleTwoTensors_default": {
+    "TwoTensors_default": {
       "expected": "subíndice a superíndice b línea base x subíndice c superíndice d línea base subíndice a superíndice b línea base x subíndice c superíndice d"
     },
-    "SampleTwoTensors_brief": {
+    "TwoTensors_brief": {
       "expected": "sub a sup b x sub c sup d sub a sup b x sub c sup d"
     },
-    "SampleTwoTensors_sbrief": {
+    "TwoTensors_sbrief": {
       "expected": "sub a sup b x sub c sup d sub a sup b x sub c sup d"
     }
   }
