@@ -1,0 +1,164 @@
+{
+  "name": "FrenchMathspeakTensors",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_tensors.json",
+  "information": "French Mathspeak Tensor tests.",
+  "domain": "mathspeak",
+  "locale": "fr",
+  "active": "MathspeakFrench",
+  "exclude": [],
+  "tests": {
+    "_comment2_": " Tensor tests are named with the convention of including the indices that are",
+    "_comment3_": " present:",
+    "_comment4_": "   B      D",
+    "_comment5_": "     Base     R",
+    "_comment6_": "   A      C",
+    "_comment7_": "  Where R is the rest.",
+    "SamplePartialTensorABCD_default": {
+      "expected": "indice gauche a exposant gauche b position de base x indice c exposant d"
+    },
+    "SamplePartialTensorABCD_brief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c sup d"
+    },
+    "SamplePartialTensorABCD_sbrief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c sup d"
+    },
+    "SamplePartialTensorABC_default": {
+      "expected": "indice gauche a exposant gauche b position de base x indice c"
+    },
+    "SamplePartialTensorABC_brief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c"
+    },
+    "SamplePartialTensorABC_sbrief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c"
+    },
+    "SamplePartialTensorABD_default": {
+      "expected": "indice gauche a exposant gauche b position de base x exposant d"
+    },
+    "SamplePartialTensorABD_brief": {
+      "expected": "sub gauche a sup gauche b position de base x sup d"
+    },
+    "SamplePartialTensorABD_sbrief": {
+      "expected": "sub gauche a sup gauche b position de base x sup d"
+    },
+    "SamplePartialTensorAB_default": {
+      "expected": "indice gauche a exposant gauche b position de base x"
+    },
+    "SamplePartialTensorAB_brief": {
+      "expected": "sub gauche a sup gauche b position de base x"
+    },
+    "SamplePartialTensorAB_sbrief": {
+      "expected": "sub gauche a sup gauche b position de base x"
+    },
+    "SamplePartialTensorABCR_default": {
+      "expected": "indice gauche a exposant gauche b position de base x indice c position de base r"
+    },
+    "SamplePartialTensorABCR_brief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c position de base r"
+    },
+    "SamplePartialTensorABCR_sbrief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c position de base r"
+    },
+    "SamplePartialTensorABCDR_default": {
+      "expected": "indice gauche a exposant gauche b position de base x indice c exposant d position de base r"
+    },
+    "SamplePartialTensorABCDR_brief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c sup d position de base r"
+    },
+    "SamplePartialTensorABCDR_sbrief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c sup d position de base r"
+    },
+    "SamplePartialTensorABCDRoot_default": {
+      "expected": "début racine carrée indice gauche a exposant gauche b position de base x indice c exposant d position de base fin racine carrée"
+    },
+    "SamplePartialTensorABCDRoot_brief": {
+      "expected": "début racine carrée sub gauche a sup gauche b position de base x sub c sup d position de base fin racine carrée"
+    },
+    "SamplePartialTensorABCDRoot_sbrief": {
+      "expected": "racine carrée sub gauche a sup gauche b position de base x sub c sup d position de base fin racine carrée"
+    },
+    "SamplePartialTensorABCDRootR_default": {
+      "expected": "début racine carrée indice gauche a exposant gauche b position de base x indice c exposant d position de base fin racine carrée r"
+    },
+    "SamplePartialTensorABCDRootR_brief": {
+      "expected": "début racine carrée sub gauche a sup gauche b position de base x sub c sup d position de base fin racine carrée r"
+    },
+    "SamplePartialTensorABCDRootR_sbrief": {
+      "expected": "racine carrée sub gauche a sup gauche b position de base x sub c sup d position de base fin racine carrée r"
+    },
+    "SamplePartialTensorABCDFrac_default": {
+      "expected": "début fraction 1 sur indice gauche a exposant gauche b position de base x indice c exposant d position de base fin fraction"
+    },
+    "SamplePartialTensorABCDFrac_brief": {
+      "expected": "début frac 1 sur sub gauche a sup gauche b position de base x sub c sup d position de base fin frac"
+    },
+    "SamplePartialTensorABCDFrac_sbrief": {
+      "expected": "frac 1 sur sub gauche a sup gauche b position de base x sub c sup d position de base fin frac"
+    },
+    "SamplePartialTensorABCDFracR_default": {
+      "expected": "début fraction 1 sur indice gauche a exposant gauche b position de base x indice c exposant d position de base fin fraction r"
+    },
+    "SamplePartialTensorABCDFracR_brief": {
+      "expected": "début frac 1 sur sub gauche a sup gauche b position de base x sub c sup d position de base fin frac r"
+    },
+    "SamplePartialTensorABCDFracR_sbrief": {
+      "expected": "frac 1 sur sub gauche a sup gauche b position de base x sub c sup d position de base fin frac r"
+    },
+
+    "_comment10_": "Rest.",
+    "SampleTensorMultiSimpleABC_default": {
+      "expected": "indice gauche a exposant gauche b position de base x indice c sub-exposant l"
+    },
+    "SampleTensorMultiSimpleABC_brief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c sub-sup l"
+    },
+    "SampleTensorMultiSimpleABC_sbrief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c sub-sup l"
+    },
+    "SampleTensorMultiSub_default": {
+      "expected": "indice gauche a exposant gauche b position de base x indice c sub-indice l exposant d"
+    },
+    "SampleTensorMultiSub_brief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c sub-sub l sup d"
+    },
+    "SampleTensorMultiSub_sbrief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c sub-sub l sup d"
+    },
+    "SampleTensorMultiSubSup_default": {
+      "expected": "indice gauche a exposant gauche b position de base x indice c sub-indice l sub-sub-exposant k sub e exposant d"
+    },
+    "SampleTensorMultiSubSup_brief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c sub-sub l sub-sub-sup k sub e sup d"
+    },
+    "SampleTensorMultiSubSup_sbrief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c sub-sub l sub-sub-sup k sub e sup d"
+    },
+    "SampleTensorMultiSimple_default": {
+      "expected": "indice gauche a exposant gauche b position de base x indice c sub-exposant l exposant d"
+    },
+    "SampleTensorMultiSimple_brief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c sub-sup l sup d"
+    },
+    "SampleTensorMultiSimple_sbrief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c sub-sup l sup d"
+    },
+    "SampleTensorMultiComplex_default": {
+      "expected": "indice gauche a exposant gauche b position de base x indice c k sub-exposant l exposant d"
+    },
+    "SampleTensorMultiComplex_brief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c k sub-sup l sup d"
+    },
+    "SampleTensorMultiComplex_sbrief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c k sub-sup l sup d"
+    },
+    "SampleTwoTensors_default": {
+      "expected": "indice gauche a exposant gauche b position de base x indice c exposant d position de base indice gauche a exposant gauche b position de base x indice c exposant d"
+    },
+    "SampleTwoTensors_brief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c sup d position de base sub gauche a sup gauche b position de base x sub c sup d"
+    },
+    "SampleTwoTensors_sbrief": {
+      "expected": "sub gauche a sup gauche b position de base x sub c sup d position de base sub gauche a sup gauche b position de base x sub c sup d"
+    }
+  }
+}
