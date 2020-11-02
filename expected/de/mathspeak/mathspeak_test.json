@@ -1,6 +1,6 @@
 {
   "_comment0_": " This work was sponsored by ETH Zurich",
-  "name": "MathspeakGermanTest",
+  "name": "GermanMathspeak",
   "factory": "speech",
   "base": "input/mathspeak/mathspeak_test.json",
   "information": "German Mathspeak tests.",
@@ -1109,6 +1109,15 @@
     },
     "Sample_15_6_1_sbrief": {
       "expected": "Binomial y aus x Ende Binomial"
+    },
+    "BaselineNumberFont_default": {
+      "expected": "n Grundlinie fettes 2"
+    },
+    "BaselineNumberFont_brief": {
+      "expected": "n Grund fettes 2"
+    },
+    "BaselineNumberFont_sbrief": {
+      "expected": "n Grund fettes 2"
     }
   }
 }

@@ -78,22 +78,22 @@
       "expected": "nombre t 2 e 4"
     },
     "Sample_1_4_2_default": {
-      "expected": "nombre dièse F majuscule F majuscule 0 0 0 0"
+      "expected": "nombre dièse F F 0 0 0 0"
     },
     "Sample_1_4_2_brief": {
-      "expected": "nombre dièse F majuscule F majuscule 0 0 0 0"
+      "expected": "nombre dièse F F 0 0 0 0"
     },
     "Sample_1_4_2_sbrief": {
-      "expected": "nombre dièse F majuscule F majuscule 0 0 0 0"
+      "expected": "nombre dièse F F 0 0 0 0"
     },
     "Sample_1_4_3_default": {
-      "expected": "nombre 0 x 1 5 F majuscule F majuscule plus nombre 0 x 2 B majuscule 0 1 égale nombre 0 x 4 1 0 0"
+      "expected": "nombre 0 x 1 5 F F plus nombre 0 x 2 B 0 1 égale nombre 0 x 4 1 0 0"
     },
     "Sample_1_4_3_brief": {
-      "expected": "nombre 0 x 1 5 F majuscule F majuscule plus nombre 0 x 2 B majuscule 0 1 égale nombre 0 x 4 1 0 0"
+      "expected": "nombre 0 x 1 5 F F plus nombre 0 x 2 B 0 1 égale nombre 0 x 4 1 0 0"
     },
     "Sample_1_4_3_sbrief": {
-      "expected": "nombre 0 x 1 5 F majuscule F majuscule plus nombre 0 x 2 B majuscule 0 1 égale nombre 0 x 4 1 0 0"
+      "expected": "nombre 0 x 1 5 F F plus nombre 0 x 2 B 0 1 égale nombre 0 x 4 1 0 0"
     },
     "Sample_1_5_1_default": {
       "expected": "I majuscule virgule MotMajuscule I I virgule MotMajuscule I I I virgule MotMajuscule I V virgule V majuscule point"
@@ -1103,6 +1103,15 @@
     },
     "Sample_15_6_1_sbrief": {
       "expected": "binomiale x parmi y fin binomiale"
+    },
+    "BaselineNumberFont_default": {
+      "expected": "n position de base 2 en gras"
+    },
+    "BaselineNumberFont_brief": {
+      "expected": "n base 2 en gras"
+    },
+    "BaselineNumberFont_sbrief": {
+      "expected": "n base 2 en gras"
     }
   }
 }

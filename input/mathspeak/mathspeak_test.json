@@ -962,6 +962,21 @@
       "input": "<mrow><mi>$</mi><mi>n</mi><mn>2</mn><mo>=</mo><mn>2</mn><mo>*</mo><mi>$</mi><mi>n</mi><mo>+</mo><mn>1</mn><mo>;</mo></mrow>",
       "preference": "sbrief"
     },
+    "BaselineNumberFont_default": {
+      "test": true,
+      "input": "<mrow><mi>n</mi><mn mathvariant=\"bold\">2</mn></mrow>",
+      "preference": "default"
+    },
+    "BaselineNumberFont_brief": {
+      "test": true,
+      "input": "<mrow><mi>n</mi><mn mathvariant=\"bold\">2</mn></mrow>",
+      "preference": "brief"
+    },
+    "BaselineNumberFont_sbrief": {
+      "test": true,
+      "input": "<mrow><mi>n</mi><mn mathvariant=\"bold\">2</mn></mrow>",
+      "preference": "sbrief"
+    },
     "Sample_8_8_1_naive_default": {
       "test": true,
       "input": "<mmultiscripts><mi>x</mi><mrow><mi>e</mi><mi>f</mi></mrow><mrow><mi>g</mi><mi>h</mi></mrow><mprescripts/><mrow><mi>c</mi><mi>d</mi></mrow><mrow><mi>a</mi><mi>b</mi></mrow></mmultiscripts>",
