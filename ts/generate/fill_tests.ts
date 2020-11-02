@@ -18,78 +18,70 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
-import {TestUtil} from '../base/test_util';
-import {JsonTest} from '../classes/abstract_test';
+import {AbstractJsonTest, JsonTest} from '../classes/abstract_test';
 import {get as factoryget} from '../classes/test_factory';
+import {TestUtil} from '../base/test_util';
+import * as fs from 'fs';
 
-function loadFiles(expected: string, base: string): [JsonTest, JsonTest] {
-  expected = TestUtil.fileExists(expected);
-  base = TestUtil.fileExists(base);
-  return [TestUtil.loadJson(expected), TestUtil.loadJson(base)];
-}
-
-function findMissing(expected: string, base: string) {
-  let [output, input] = loadFiles(expected, base);
-  // @ts-ignore
-  let [_tests, warn] = sre.TestUtil.combineTests(
-      input.tests, output.tests, output.exclude || []);
-  return [warn, input.tests, output.factory];
-}
-
-function runMissing(missing: string[], base: JsonTest, constr: string) {
-  let obj = factoryget(constr);
+function runMissing(expected: string): [JsonTest, AbstractJsonTest] {
+  let tests = factoryget(expected);
+  tests.prepare();
   let result: JsonTest = {};
+  let base = tests.baseTests.tests;
   try {
-    obj.setUpTest();
+    tests.setUpTest();
   } catch (e) {}
-  for (let miss of missing) {
-    console.log(miss);
+  for (let miss of tests.warn) {
     let test = base[miss];
     test.expected = '';
     try {
-      obj.method.apply(obj, obj.pick(test));
+      tests.method.apply(tests, tests.pick(test));
     } catch (e) {
       result[miss] = {'expected': e.actual};
     }
   }
   try {
-    obj.tearDownTest();
+    tests.tearDownTest();
   } catch (e) {}
-  return JSON.stringify(result, null, 2);
+  return [result, tests]; // Return tests for post-processing.
 }
 
-export function missingTests(expected: string, base: string) {
-  let [missing, tests, constr] = findMissing(expected, base);
-  console.log(runMissing(missing, tests, constr));
+export function printMissing(expected: string) {
+  let [result] = runMissing(expected);
+  console.log(JSON.stringify(result, null, 2));
 }
 
-export function runTest(expected: string, constr: string): string {
-  let obj = factoryget(constr);
-  obj['jsonFile'] = expected;
-  let missing = [];
-  try {
-    obj.prepare();
-  } catch (e) {
-    missing = e.value;
-  }
-  // let [missing, tests] = findMissing(expected, obj.baseFile);
+export function addMissing(expected: string) {
+  let [result, tests] = runMissing(expected);
+  let file = tests['jsonFile'];
+  let oldJson: JsonTest = TestUtil.loadJson(file);
+  Object.assign(oldJson.tests, result);
+  fs.writeFileSync(file,
+                   JSON.stringify(oldJson, null, 2) + '\n');
+}
+
+export function runTests(expected: string): JsonTest {
+  let obj = factoryget(expected);
+  obj.prepare();
   let result: JsonTest = {};
   try {
     obj.setUpTest();
   } catch (e) {}
   let tests = obj.baseTests.tests;
-  for (let miss of missing) {
-    let test = tests[miss];
+  for (let [key, test] of Object.entries(tests)) {
+    if (key.match(/_comment/)) {
+      continue;
+    }
     test.expected = '';
     try {
       obj.method.apply(obj, obj.pick(test));
     } catch (e) {
-      result[miss] = {'expected': e.actual};
+      console.log(e.actual);
+      result[key] = {'expected': e.actual};
     }
   }
   try {
     obj.tearDownTest();
   } catch (e) {}
-  return JSON.stringify(result, null, 2);
+  return result;
 }
