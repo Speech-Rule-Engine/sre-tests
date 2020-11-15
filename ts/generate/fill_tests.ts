@@ -23,6 +23,13 @@ import {get as factoryget} from '../classes/test_factory';
 import {TestUtil} from '../base/test_util';
 import * as fs from 'fs';
 
+
+/**
+ * Runs all missing tests for the given expected file and records their actual
+ * output.
+ * @param expected Relative file name of the expected file.
+ * @return Pair of JSON structure with expected output and the test object.
+ */
 function runMissing(expected: string): [JsonTest, AbstractJsonTest] {
   let tests = factoryget(expected);
   tests.prepare();
@@ -46,11 +53,20 @@ function runMissing(expected: string): [JsonTest, AbstractJsonTest] {
   return [result, tests]; // Return tests for post-processing.
 }
 
+/**
+ * Prints all output for missing tests to console.
+ * @param expected Relative file name of the expected file.
+ */
 export function printMissing(expected: string) {
   let [result] = runMissing(expected);
   console.log(JSON.stringify(result, null, 2));
 }
 
+/**
+ * Generates expected values for all missing tests and writes them to the given
+ * expected file.
+ * @param expected Relative file name of the expected file.
+ */
 export function addMissing(expected: string) {
   let [result, tests] = runMissing(expected);
   let file = tests['jsonFile'];
@@ -60,6 +76,11 @@ export function addMissing(expected: string) {
                    JSON.stringify(oldJson, null, 2) + '\n');
 }
 
+/**
+ * Runs all tests for the given expected file and collates the failing ones.
+ * @param expected Relative file name of the expected file.
+ * @return The JSON structure with all expected values for failed tests.
+ */
 export function runTests(expected: string): JsonTest {
   let obj = factoryget(expected);
   obj.prepare();
