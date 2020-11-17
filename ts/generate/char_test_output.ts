@@ -20,8 +20,7 @@
 
 import * as fs from 'fs';
 import {sre} from '../base/test_external';
-import {TestPath, TestUtil} from '../base/test_util';
-import {JsonTest} from '../classes/abstract_test';
+import {JsonFile, JsonTest, JsonTests, TestPath, TestUtil} from '../base/test_util';
 
 // All files that are generated.
 const CharPath = TestPath.INPUT + 'common/';
@@ -39,7 +38,7 @@ const FILES = new Map([
  */
 function loadBaseFile(file: string): string[] {
   console.log(file);
-  const json: JsonTest = TestUtil.loadJson(file);
+  const json = TestUtil.loadJson(file);
   console.log(Object.keys(json.tests).length);
   return Object.keys(json.tests);
 }
@@ -105,25 +104,26 @@ const AllConstraints: {[loc: string]: {[dom: string]: string[]}} = {
  * @param unit Is it his unit tests.
  * @return The test json structure.
  */
-function testOutput(locale: string, keys: string[], unit = false): JsonTest {
+function testOutput(locale: string, keys: string[], unit = false): JsonTests {
   let constraints = AllConstraints[locale];
   if (!constraints) {
     return {};
   }
-  let output: JsonTest = {};
+  let output: JsonFile = {};
   let modality = locale === 'nemeth' ? 'braille' : 'speech';
   for (let dom of Object.keys(constraints)) {
-    let json: JsonTest = { 'name': '',
-                 'locale': locale,
-                 'domain': dom,
-                 'styles': constraints[dom]
-               };
-    let tests: {[key: string]: any} = {};
+    let json: JsonFile = {
+      'name': '',
+      'locale': locale,
+      'domain': dom,
+      'styles': constraints[dom]
+    };
+    let tests: JsonTests = {};
     for (let key of keys) {
       if (key.match(/^_comment/)) {
         continue;
       }
-      let expected = [];
+      let expected: string[] = [];
       for (let style of constraints[dom]) {
         let result = getOutput(dom, modality, locale, style, key, unit);
         expected.push(result);
@@ -144,7 +144,7 @@ function isUnitTest(kind: string) {
   return kind === 'units' || kind === 'si_units';
 }
 
-function testFromBase(locale: string, kind: string) {
+function testFromBase(locale: string, kind: string): JsonFile {
   let file = FILES.get(kind);
   if (!file) {
     return [];
@@ -201,13 +201,10 @@ export function testOutputFromBoth(locale: string, kind: string, dir = '/tmp') {
 }
 
 function writeOutputToFile(
-  dir: string, json: string, locale: string, dom: string, kind: string) {
-  if (dir) {
-    fs.mkdirSync(`${dir}/${locale}`, {recursive: true});
-    fs.writeFileSync(`${dir}/${locale}/${dom}_${kind}.json`,
-                     JSON.stringify(json, null, 2));
-  }
+  dir: string, json: JsonFile, locale: string, dom: string, kind: string) {
+  TestUtil.saveJson(`${dir}/${locale}/${dom}_${kind}.json`, json);
 }
+
 
 // TODO: the si units!
 function getNamesFor(json: JsonTest, kind: string) {
@@ -280,8 +277,7 @@ export function replaceTests(dir = '/tmp/symbols') {
       let oldJson: JsonTest = TestUtil.loadJson(`${TestPath.EXPECTED}/${loc}/symbols/${file}`);
       let newJson: JsonTest = TestUtil.loadJson(`${dir}/${loc}/${file}`);
       oldJson.tests = newJson.tests;
-      fs.writeFileSync(`${TestPath.EXPECTED}/${loc}/symbols/${file}`,
-                       JSON.stringify(oldJson, null, 2) + '\n');
+      TestUtil.saveJson(`${TestPath.EXPECTED}/${loc}/symbols/${file}`, oldJson);
     }
   }
 }

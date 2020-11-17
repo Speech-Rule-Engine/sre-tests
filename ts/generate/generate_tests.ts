@@ -19,8 +19,7 @@
  */
 
 
-import * as fs from 'fs';
-import {JsonTest} from '../classes/abstract_test';
+import {JsonTest, TestUtil} from '../base/test_util';
 import {Transformer} from './transformers';
 
 
@@ -86,8 +85,7 @@ export function generateTestRequire(input: string, output: string,
   let file = require(input);
   let oldJson = file[Object.keys(file)[0]];
   let newJson = transformInput(oldJson, field);
-  fs.writeFileSync(output,
-                   JSON.stringify(newJson, null, 2) + '\n');
+  TestUtil.saveJson(output, newJson);
 }
 
 /**
@@ -98,10 +96,9 @@ export function generateTestRequire(input: string, output: string,
  */
 export function generateTestJson(input: string, output: string,
                                  field: string = 'input') {
-  let oldJson = JSON.parse(fs.readFileSync(input).toString());
+  let oldJson = TestUtil.loadJson(input);
   let newJson = transformInput(oldJson, field);
-  fs.writeFileSync(output,
-                   JSON.stringify(newJson, null, 2) + '\n');
+  TestUtil.saveJson(output, newJson);
 }
 
 /**
@@ -117,4 +114,15 @@ export function transformTests(json: JsonTest,
     }
   }
   return json;
+}
+
+/**
+ * Transforms test file in place.
+ * @param file File name.
+ * @param transformers Transformer list.
+ */
+export function transformTestsSource(file: string,
+                                     transformers: Transformer[]) {
+  let json = TestUtil.loadJson(file);
+  TestUtil.saveJson(file, transformTests(json, transformers));
 }

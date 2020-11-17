@@ -18,8 +18,7 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import * as fs from 'fs';
-import {TestPath} from '../base/test_util';
+import {JsonFile, TestUtil, TestPath} from '../base/test_util';
 
 namespace AnalyticsUtil {
 
@@ -33,16 +32,9 @@ namespace AnalyticsUtil {
     return Array.from(entries.keys());
   }
 
-  export function fileOutput(
-    prefix: string, content: string, name: string, ext: string) {
-    let path = TestPath.ANALYSIS + prefix;
-    fs.mkdirSync(path, {recursive: true});
-    fs.writeFileSync(
-      `${path}/${name}.${ext}`, content);
-  }
-
-  export function fileJson(prefix: string, json: any, name: string) {
-    fileOutput(prefix, JSON.stringify(json, null, 2), name, 'json');
+  export function fileJson(prefix: string, json: JsonFile, name: string, ext: string = 'json') {
+    let path = `${TestPath.ANALYSIS + prefix}/${name}.${ext}`;
+    TestUtil.saveJson(path, json);
   }
 
 }

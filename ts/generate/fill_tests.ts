@@ -18,10 +18,9 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {AbstractJsonTest, JsonTest} from '../classes/abstract_test';
+import {AbstractJsonTest} from '../classes/abstract_test';
 import {get as factoryget} from '../classes/test_factory';
-import {TestUtil} from '../base/test_util';
-import * as fs from 'fs';
+import {JsonFile, JsonTests, TestUtil} from '../base/test_util';
 
 
 /**
@@ -30,11 +29,11 @@ import * as fs from 'fs';
  * @param expected Relative file name of the expected file.
  * @return Pair of JSON structure with expected output and the test object.
  */
-function runMissing(expected: string): [JsonTest, AbstractJsonTest] {
+function runMissing(expected: string): [JsonTests, AbstractJsonTest] {
   let tests = factoryget(expected);
   tests.prepare();
-  let result: JsonTest = {};
-  let base = tests.baseTests.tests;
+  let result: JsonTests = {};
+  let base = tests.baseTests.tests as JsonTests;
   try {
     tests.setUpTest();
   } catch (e) {}
@@ -70,10 +69,9 @@ export function printMissing(expected: string) {
 export function addMissing(expected: string) {
   let [result, tests] = runMissing(expected);
   let file = tests['jsonFile'];
-  let oldJson: JsonTest = TestUtil.loadJson(file);
+  let oldJson: JsonFile = TestUtil.loadJson(file);
   Object.assign(oldJson.tests, result);
-  fs.writeFileSync(file,
-                   JSON.stringify(oldJson, null, 2) + '\n');
+  TestUtil.saveJson(file, oldJson);
 }
 
 /**
@@ -81,10 +79,10 @@ export function addMissing(expected: string) {
  * @param expected Relative file name of the expected file.
  * @return The JSON structure with all expected values for failed tests.
  */
-export function runTests(expected: string): JsonTest {
+export function runTests(expected: string): JsonTests {
   let obj = factoryget(expected);
   obj.prepare();
-  let result: JsonTest = {};
+  let result: JsonTests = {};
   try {
     obj.setUpTest();
   } catch (e) {}
