@@ -72,7 +72,7 @@ input information from a common `base` file, generally given in the `input`
 directory.
 
 The structure of `base` files is similar to the `expected` files. `expected`
-files can suppress running of certain tests using the `excluded` field.  Fields
+ can suppress running of certain tests using the `excluded` field.  Fields
 from the expected file overwrite those of the input file.
 
 The non-JEST test runner outputs warnings in case input tests have no expected
@@ -310,6 +310,25 @@ generated files are of type `.test.ts` so they can be run with `jest` directly.
 
 
 # Analytics
+
+Run with
+
+``` shell
+npm run prepare
+npm run test:analytics
+```
+
+This will generate SRE analytics in the `analysis` folder. In particular it will
+generate the following subfolders, which contains json files of the following
+nature:
+
+    ├── allRules            List of all rules available in each rule set.
+    ├── applicableRules     List of all rules applicable rules for each test run.
+    ├── appliedRules        List of all actually applied rules for each test run.
+    ├── diffAppliedRules    Difference list of rules applied and available for each rule set.
+    │                       Full test coverage for a rule set means that this list is empty.
+    └── uniqueAppliedRules  List of all unique rules applied during tests for test suite.
+
 
 # Generators
 
