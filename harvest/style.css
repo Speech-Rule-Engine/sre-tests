@@ -1,0 +1,111 @@
+body {
+  font-family: sans-serif
+}
+h2 {
+  margin: 1.5em 0 1em;
+  font-size: 120%;
+}
+h2:first-child {
+  margin-top: .5em;
+}
+.fullwidth {
+  width: 100%;
+}
+table.fullwidth tr {
+  vertical-align: baseline;
+}
+table.fullwidth td {
+  white-space: nowrap;
+}
+td.fullwidth input {
+  width: 100%;
+  box-sizing: border-box;
+  }
+  td.spacing {
+  width: 20%
+  }
+.red {
+  color: #880000;
+  background-color: #FFEEEE;
+}
+.green {
+  color: #008800;
+  background-color: #EEFFEE;
+}
+.converter {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 98%;
+  min-width: 25em;
+  vertical-align: top;
+  background-color: #F0F0F0;
+  border: 2px solid #CCC;
+  padding: .75em;
+}
+#input {
+  font-family: monospace;
+  font-size: 80%;
+  width: 100%;
+  box-sizing: border-box;
+}
+#error {
+  background-color: #EEE;
+  color: #F00;
+  display: inline-block;
+  padding: 1px 2px;
+  margin: 1px;
+}
+#explanation code {
+  padding: 0 2px;
+}
+span {
+display: inline-block;
+}
+
+div.section {
+height: 25px;
+}
+
+.pretitle {
+    width: 15%;
+}
+
+#mathjax {
+    height: 150px;
+}
+
+.mathexpression {
+    padding: .3em;
+}
+
+textarea {
+    border: 3px solid #cccccc;
+    resize: horizontal;
+}
+
+.btn {
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  height: 30px;
+  width: 30px;
+
+  border-radius: 2px;
+  background-color: rgba(0,0,0,0.5);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  z-index: 1;
+}
+
+.btn.next {
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M25.557 14.7L13.818 2.961 16.8 0l16.8 16.8-16.8 16.8-2.961-2.961L25.557 18.9H0v-4.2z" fill="%23FFF" fill-rule="evenodd"/></svg>');
+  right: 10px;
+}
+
+.btn.prev {
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M33.6 14.7H8.043L19.782 2.961 16.8 0 0 16.8l16.8 16.8 2.961-2.961L8.043 18.9H33.6z" fill="%23FFF" fill-rule="evenodd"/></svg>');
+  left: 10px;
+}
