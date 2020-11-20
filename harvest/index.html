@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>Convert LaTeX or MathML to Speech</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script id="Braille-script" src="./braille-convert.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>BRF to Nemeth Converter</h1>
+
+<span class="btn next"></span><span class="btn prev"></span>
+<div class="converter" id="inputpanel">
+  <div class="section" id="mathjax">
+    <span class="pretitle" id="mathname"></span>
+    <span class="mathexpression" id="mathexpression"></span>
+  </div>
+  <div class="section">
+    <span class="pretitle">Input:
+    <span><table class="fullwidth">
+      <tr>
+        <td>
+        <select id="format" onchange="Convert.changeFormat()">
+          <option value="bldt">BLDT</option>
+          <option value="nabt">NABT</option>
+        </select>
+        </td>
+      </tr>
+    </table></span>
+    </span>
+    <span class="active">
+      <textarea rows="1" cols="80" id="input" onMouseUp="Convert.generatem()" onKeyUp="Convert.generate()"></textarea>
+    </span>
+  </div>
+  <div class="section"></div>
+  <div class="section">
+    <span class="pretitle">Unicode Output:</span>
+    <span class="active"><div class="braille" id="braille"> </div></span>
+  </div>
+  <div class="section">
+    <span class="pretitle"></span>
+    <span class="active"><div class="error" id="error"> </div></span>
+  </div>
+</div>
+
+</body>
+<script>Convert.init()</script>
+</html>
