@@ -3,66 +3,28 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width">
-  <title>Convert LaTeX or MathML to Speech</title>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script>
-  MathJax = {
-    tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-  };
-  </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script id="Braille-script" src="./braille-convert.js"></script>
-<link rel="stylesheet" href="style.css">
+    <title>Login</title>
+  <script src="/__/firebase/8.1.1/firebase-app.js"></script>
+  <script src="/__/firebase/8.1.1/firebase-auth.js"></script>
+  <script src="/__/firebase/8.1.1/firebase-firestore.js"></script>
+  <script src="/__/firebase/8.1.1/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+  <link type="text/css" rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<h1>BRF to Nemeth Converter</h1>
+  <h1>Nemeth Test Generation</h1>
 
-<span class="btn next"></span><span class="btn prev"></span>
-<div class="converter" id="inputpanel">
-  <div class="section" id="mathjax">
-    <span class="pretitle" id="mathname"></span>
-    <span class="mathexpression" id="mathexpression"></span>
-  </div>
-  <div class="section">
-    <span class="pretitle">Input:
-    <span><table class="fullwidth">
-      <tr>
-        <td>
-        <select id="format" onchange="Convert.changeFormat()">
-          <option value="bldt">BLDT</option>
-          <option value="nabt">NABT</option>
-        </select>
-        </td>
-      </tr>
-    </table></span>
-    </span>
-    <span class="active">
-      <textarea rows="1" cols="80" id="input" onMouseUp="Convert.generatem()" onKeyUp="Convert.generate()"></textarea>
-    </span>
-  </div>
-  <div class="section"></div>
-  <div class="section">
-    <span class="pretitle">Unicode Output:</span>
-    <span class="active"><div class="braille" id="braille"> </div></span>
-  </div>
-  <div class="section">
-    <span class="pretitle"></span>
-    <span class="active"><div class="error" id="error"> </div></span>
-  </div>
-</div>
+<div id="firebaseui-auth-container"></div>
+<div id="loader">Loading...</div>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
 
-    <script>Convert.init()</script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script defer src="/__/firebase/8.1.1/firebase-app.js"></script>
-    <script defer src="/__/firebase/8.1.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.1.1/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.1.1/firebase-storage.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<!-- Initialize Firebase -->
-<script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js?useEmulator=true"></script>
+  <script defer src="./signin.js"></script>
 </body>
 </html>
