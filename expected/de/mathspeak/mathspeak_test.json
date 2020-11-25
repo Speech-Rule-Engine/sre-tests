@@ -1,8 +1,6 @@
 {
   "_comment0_": " This work was sponsored by ETH Zurich",
-  "name": "MathspeakGermanTest",
-  "factory": "speech",
-  "base": "input/mathspeak/mathspeak_test.json",
+  "name": "GermanMathspeak",
   "factory": "speech",
   "base": "input/mathspeak/mathspeak_test.json",
   "information": "German Mathspeak tests.",
@@ -614,156 +612,6 @@
     "Sample_8_8_1_sbrief": {
       "expected": "Index c d hoch a b Grund x Index e f hoch g h"
     },
-    "SampleTensorMultiSimpleABC_default": {
-      "expected": "Index a hoch b Grundlinie x Index c Index hoch l"
-    },
-    "SampleTensorMultiSimpleABC_brief": {
-      "expected": "Index a hoch b Grund x Index c Index hoch l"
-    },
-    "SampleTensorMultiSimpleABC_sbrief": {
-      "expected": "Index a hoch b Grund x Index c Index hoch l"
-    },
-    "SampleTensorMultiSub_default": {
-      "expected": "Index a hoch b Grundlinie x Index c Index Index l hoch d"
-    },
-    "SampleTensorMultiSub_brief": {
-      "expected": "Index a hoch b Grund x Index c Index Index l hoch d"
-    },
-    "SampleTensorMultiSub_sbrief": {
-      "expected": "Index a hoch b Grund x Index c Index Index l hoch d"
-    },
-    "SampleTensorMultiSubSup_default": {
-      "expected": "Index a hoch b Grundlinie x Index c Index Index l Index Index hoch k Index e hoch d"
-    },
-    "SampleTensorMultiSubSup_brief": {
-      "expected": "Index a hoch b Grund x Index c Index Index l Index Index hoch k Index e hoch d"
-    },
-    "SampleTensorMultiSubSup_sbrief": {
-      "expected": "Index a hoch b Grund x Index c Index Index l Index Index hoch k Index e hoch d"
-    },
-    "SampleTensorMultiSimple_default": {
-      "expected": "Index a hoch b Grundlinie x Index c Index hoch l hoch d"
-    },
-    "SampleTensorMultiSimple_brief": {
-      "expected": "Index a hoch b Grund x Index c Index hoch l hoch d"
-    },
-    "SampleTensorMultiSimple_sbrief": {
-      "expected": "Index a hoch b Grund x Index c Index hoch l hoch d"
-    },
-    "SampleTensorMultiComplex_default": {
-      "expected": "Index a hoch b Grundlinie x Index c k Index hoch l hoch d"
-    },
-    "SampleTensorMultiComplex_brief": {
-      "expected": "Index a hoch b Grund x Index c k Index hoch l hoch d"
-    },
-    "SampleTensorMultiComplex_sbrief": {
-      "expected": "Index a hoch b Grund x Index c k Index hoch l hoch d"
-    },
-    "SampleTwoTensors_default": {
-      "expected": "Index a hoch b Grundlinie x Index c hoch d Grundlinie Index a hoch b Grundlinie x Index c hoch d"
-    },
-    "SampleTwoTensors_brief": {
-      "expected": "Index a hoch b Grund x Index c hoch d Grund Index a hoch b Grund x Index c hoch d"
-    },
-    "SampleTwoTensors_sbrief": {
-      "expected": "Index a hoch b Grund x Index c hoch d Grund Index a hoch b Grund x Index c hoch d"
-    },
-    "_comment3_": " Tensor tests are named with the convention of including the indices that are",
-    "_comment4_": " present:",
-    "_comment5_": "   B      D",
-    "_comment6_": "     Base     R",
-    "_comment7_": "   A      C",
-    "_comment8_": "  Where R is the rest.",
-    "SamplePartialTensorABCD_default": {
-      "expected": "Index a hoch b Grundlinie x Index c hoch d"
-    },
-    "SamplePartialTensorABCD_brief": {
-      "expected": "Index a hoch b Grund x Index c hoch d"
-    },
-    "SamplePartialTensorABCD_sbrief": {
-      "expected": "Index a hoch b Grund x Index c hoch d"
-    },
-    "SamplePartialTensorABC_default": {
-      "expected": "Index a hoch b Grundlinie x Index c"
-    },
-    "SamplePartialTensorABC_brief": {
-      "expected": "Index a hoch b Grund x Index c"
-    },
-    "SamplePartialTensorABC_sbrief": {
-      "expected": "Index a hoch b Grund x Index c"
-    },
-    "SamplePartialTensorABD_default": {
-      "expected": "Index a hoch b Grundlinie x hoch d"
-    },
-    "SamplePartialTensorABD_brief": {
-      "expected": "Index a hoch b Grund x hoch d"
-    },
-    "SamplePartialTensorABD_sbrief": {
-      "expected": "Index a hoch b Grund x hoch d"
-    },
-    "SamplePartialTensorAB_default": {
-      "expected": "Index a hoch b Grundlinie x"
-    },
-    "SamplePartialTensorAB_brief": {
-      "expected": "Index a hoch b Grund x"
-    },
-    "SamplePartialTensorAB_sbrief": {
-      "expected": "Index a hoch b Grund x"
-    },
-    "SamplePartialTensorABCR_default": {
-      "expected": "Index a hoch b Grundlinie x Index c Grundlinie r"
-    },
-    "SamplePartialTensorABCR_brief": {
-      "expected": "Index a hoch b Grund x Index c Grund r"
-    },
-    "SamplePartialTensorABCR_sbrief": {
-      "expected": "Index a hoch b Grund x Index c Grund r"
-    },
-    "SamplePartialTensorABCDR_default": {
-      "expected": "Index a hoch b Grundlinie x Index c hoch d Grundlinie r"
-    },
-    "SamplePartialTensorABCDR_brief": {
-      "expected": "Index a hoch b Grund x Index c hoch d Grund r"
-    },
-    "SamplePartialTensorABCDR_sbrief": {
-      "expected": "Index a hoch b Grund x Index c hoch d Grund r"
-    },
-    "SamplePartialTensorABCDRoot_default": {
-      "expected": "Anfang Quadratwurzel Index a hoch b Grundlinie x Index c hoch d Grundlinie Ende Quadratwurzel"
-    },
-    "SamplePartialTensorABCDRoot_brief": {
-      "expected": "Anfang Quadratwurzel Index a hoch b Grund x Index c hoch d Grund Ende Quadratwurzel"
-    },
-    "SamplePartialTensorABCDRoot_sbrief": {
-      "expected": "Quadratwurzel Index a hoch b Grund x Index c hoch d Grund Ende Quadratwurzel"
-    },
-    "SamplePartialTensorABCDRootR_default": {
-      "expected": "Anfang Quadratwurzel Index a hoch b Grundlinie x Index c hoch d Grundlinie Ende Quadratwurzel r"
-    },
-    "SamplePartialTensorABCDRootR_brief": {
-      "expected": "Anfang Quadratwurzel Index a hoch b Grund x Index c hoch d Grund Ende Quadratwurzel r"
-    },
-    "SamplePartialTensorABCDRootR_sbrief": {
-      "expected": "Quadratwurzel Index a hoch b Grund x Index c hoch d Grund Ende Quadratwurzel r"
-    },
-    "SamplePartialTensorABCDFrac_default": {
-      "expected": "Anfang Bruch 1 durch Index a hoch b Grundlinie x Index c hoch d Grundlinie Ende Bruch"
-    },
-    "SamplePartialTensorABCDFrac_brief": {
-      "expected": "Anfang Bruch 1 durch Index a hoch b Grund x Index c hoch d Grund Ende Bruch"
-    },
-    "SamplePartialTensorABCDFrac_sbrief": {
-      "expected": "Bruch 1 durch Index a hoch b Grund x Index c hoch d Grund Ende Bruch"
-    },
-    "SamplePartialTensorABCDFracR_default": {
-      "expected": "Anfang Bruch 1 durch Index a hoch b Grundlinie x Index c hoch d Grundlinie Ende Bruch r"
-    },
-    "SamplePartialTensorABCDFracR_brief": {
-      "expected": "Anfang Bruch 1 durch Index a hoch b Grund x Index c hoch d Grund Ende Bruch r"
-    },
-    "SamplePartialTensorABCDFracR_sbrief": {
-      "expected": "Bruch 1 durch Index a hoch b Grund x Index c hoch d Grund Ende Bruch r"
-    },
     "SampleSimpleSquare_default": {
       "expected": "großes T 0 Quadrat"
     },
@@ -810,13 +658,13 @@
       "expected": "großes T Index n minus 1 hoch 2"
     },
     "Sample_8_9_1_default": {
-      "expected": "x Hochkomma"
+      "expected": "x Strich"
     },
     "Sample_8_9_1_brief": {
-      "expected": "x Hochkomma"
+      "expected": "x Strich"
     },
     "Sample_8_9_1_sbrief": {
-      "expected": "x Hochkomma"
+      "expected": "x Strich"
     },
     "Sample_8_9_2_default": {
       "expected": "f drei Strich Klammer auf y Klammer zu ist gleich Anfang Bruch d f zwei Strich Klammer auf y Klammer zu durch d y Ende Bruch"
@@ -828,31 +676,31 @@
       "expected": "f drei Strich Klammer auf y Klammer zu ist gleich Bruch d f zwei Strich Klammer auf y Klammer zu durch d y Ende Bruch"
     },
     "Sample_8_10_1_default": {
-      "expected": "rho Hochkomma ist gleich rho Hochkomma Index plus Grundlinie plus rho Hochkomma Index minus"
+      "expected": "rho Strich ist gleich rho Strich Index plus Grundlinie plus rho Strich Index minus"
     },
     "Sample_8_10_1_brief": {
-      "expected": "rho Hochkomma ist gleich rho Hochkomma Index plus Grund plus rho Hochkomma Index minus"
+      "expected": "rho Strich ist gleich rho Strich Index plus Grund plus rho Strich Index minus"
     },
     "Sample_8_10_1_sbrief": {
-      "expected": "rho Hochkomma ist gleich rho Hochkomma Index plus Grund plus rho Hochkomma Index minus"
+      "expected": "rho Strich ist gleich rho Strich Index plus Grund plus rho Strich Index minus"
     },
     "Sample_8_10_2_default": {
-      "expected": "x Hochkomma 10"
+      "expected": "x Strich 10"
     },
     "Sample_8_10_2_brief": {
-      "expected": "x Hochkomma 10"
+      "expected": "x Strich 10"
     },
     "Sample_8_10_2_sbrief": {
-      "expected": "x Hochkomma 10"
+      "expected": "x Strich 10"
     },
     "Sample_8_10_3_default": {
-      "expected": "großes T Hochkomma Index n"
+      "expected": "großes T Strich Index n"
     },
     "Sample_8_10_3_brief": {
-      "expected": "großes T Hochkomma Index n"
+      "expected": "großes T Strich Index n"
     },
     "Sample_8_10_3_sbrief": {
-      "expected": "großes T Hochkomma Index n"
+      "expected": "großes T Strich Index n"
     },
     "Sample_8_11_1_default": {
       "expected": "Anfang 2 mal 3 Matrize 1. Zeile 1. Spalte x hoch n 2. Spalte y hoch n 3. Spalte z hoch n 2. Zeile 1. Spalte x hoch n plus 1 2. Spalte y hoch n plus 1 3. Spalte z hoch n plus 1 Ende Matrize"
@@ -1261,6 +1109,15 @@
     },
     "Sample_15_6_1_sbrief": {
       "expected": "Binomial y aus x Ende Binomial"
+    },
+    "BaselineNumberFont_default": {
+      "expected": "n Grundlinie fettes 2"
+    },
+    "BaselineNumberFont_brief": {
+      "expected": "n Grund fettes 2"
+    },
+    "BaselineNumberFont_sbrief": {
+      "expected": "n Grund fettes 2"
     }
   }
 }

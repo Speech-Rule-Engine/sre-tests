@@ -439,6 +439,36 @@
     },
     "AbstrVector_sbrief": {
       "expected": "vecteur"
+    },
+    "AbstrVarSubtraction_default": {
+      "expected": "soustraction avec un nombre d'éléments variable"
+    },
+    "AbstrVarSubtraction_brief": {
+      "expected": "soustraction"
+    },
+    "AbstrVarSubtraction_sbrief": {
+      "expected": "soustraction"
+    },
+    "AbstrCountImplicit_default": {
+      "expected": "produit avec 3 facteurs"
+    },
+    "AbstrCountImplicit_brief": {
+      "expected": "produit"
+    },
+    "AbstrCountImplicit_sbrief": {
+      "expected": "produit"
+    },
+    "AbstrVarImplicit_default": {
+      "expected": "produit avec un nombre de facteurs variable"
+    },
+    "AbstrVarArrowRelation_default": {
+      "expected": "flèche séquence avec un nombre de éléments variable"
+    },
+    "AbstrArrowRelation_default": {
+      "expected": "flèche"
+    },
+    "AbstrVarRowvector_default": {
+      "expected": "vecteur ligne de dimension n"
     }
   }
 }

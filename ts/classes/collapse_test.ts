@@ -36,11 +36,23 @@ export class CollapseTest extends SpeechTest {
   public domain = 'mathspeak';
 
   /**
+   * Collapse tests class.
+   * @constructor
+   */
+  constructor() {
+    super();
+    this.pickFields.push('pre');
+    this.pickFields.push('post');
+  }
+
+  /**
    * @override
    */
-  public executeTest(mml: string, answer: string, style?: string) {
-    mml = '<maction><mtext>action</mtext><mrow data-semantic-id="A">' +
-      mml + '</mrow></maction>';
+  public executeTest(mml: string, answer: string, style: string = '',
+                     pre: string = '', post: string = '') {
+    mml = (pre || '') + '<maction><mtext>action</mtext>' +
+      '<mrow data-semantic-id="A" ext-id="A">' +
+      mml + '</mrow></maction>' + (post || '');
     super.executeTest(mml, answer, style);
   }
 
@@ -64,9 +76,18 @@ export class CollapseTest extends SpeechTest {
     let mml = sre.DomUtil.parseInput(mathMl);
     let stree = sre.Semantic.getTree(mml);
     let xml = stree.xml();
-    xml.childNodes[0].setAttribute('id', 'A');
+    let node = sre.DomUtil.querySelectorAllByAttr(xml, 'ext-id')[0];
+    node.setAttribute('id', node.getAttribute('ext-id'));
     sre.SpeechGeneratorUtil.connectAllMactions(mml, xml);
     let descrs = sre.SpeechGeneratorUtil.computeSpeech(xml);
     return sre.AuralRendering.getInstance().markup(descrs);
   }
+
+  /**
+   * @override
+   */
+  public method(...args: any[]) {
+    this.executeTest(args[0], args[1], args[2], args[3], args[4]);
+  }
+
 }

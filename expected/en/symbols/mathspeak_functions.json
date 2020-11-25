@@ -202,13 +202,6 @@
         "sup"
       ]
     },
-    "inj lim": {
-      "expected": [
-        "colimit",
-        "colimit",
-        "colimit"
-      ]
-    },
     "injlim": {
       "expected": [
         "colimit",
@@ -216,14 +209,21 @@
         "colimit"
       ]
     },
-    "proj lim": {
+    "inj lim": {
+      "expected": [
+        "colimit",
+        "colimit",
+        "colimit"
+      ]
+    },
+    "projlim": {
       "expected": [
         "projective limit",
         "projective limit",
         "projective limit"
       ]
     },
-    "projlim": {
+    "proj lim": {
       "expected": [
         "projective limit",
         "projective limit",

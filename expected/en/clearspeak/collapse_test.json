@@ -131,6 +131,20 @@
     },
     "CollapsedVector_default": {
       "expected": "collapsed 3 dimensional vector"
+    },
+    "CollapsedRootInside_default": {
+      "test": true,
+      "input": "<mroot><mi>x</mi><mn>3</mn></mroot>",
+      "post": "<mi>a</mi>",
+      "preference": "default",
+      "expected": "collapsed root of index 3 endindex a"
+    },
+    "CollapsedRootNestedInside_default": {
+      "test": true,
+      "input": "<mroot><mrow><mroot><mi>x</mi><mn>4</mn></mroot><mo>+</mo><mi>x</mi></mrow><mn>3</mn></mroot>",
+      "post": "<mi>a</mi>",
+      "preference": "default",
+      "expected": "collapsed nested root of index 3 endindex a"
     }
   }
 }

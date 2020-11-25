@@ -193,6 +193,24 @@
     "EmptyLine_sbrief": {
       "expected": "esquema primera fila  espacio finalizar esquema"
     },
+    "EmptyRow_default": {
+      "expected": "empezar esquema primera fila primera columna a segunda columna b segunda fila  espacio finalizar esquema"
+    },
+    "EmptyRow_brief": {
+      "expected": "empezar esquema primera fila primera columna a segunda columna b segunda fila  espacio finalizar esquema"
+    },
+    "EmptyRow_sbrief": {
+      "expected": "esquema primera fila primera columna a segunda columna b segunda fila  espacio finalizar esquema"
+    },
+    "EmptyCell_default": {
+      "expected": "empezar esquema primera fila  espacio finalizar esquema"
+    },
+    "EmptyCell_brief": {
+      "expected": "empezar esquema primera fila  espacio finalizar esquema"
+    },
+    "EmptyCell_sbrief": {
+      "expected": "esquema primera fila  espacio finalizar esquema"
+    },
     "TextLabelledLine_default": {
       "expected": "empezar esquema primera fila  con etiqueta paréntesis izquierdo 1 paréntesis derecho finalizar etiqueta a finalizar esquema"
     },
@@ -201,6 +219,15 @@
     },
     "TextLabelledLine_sbrief": {
       "expected": "esquema primera fila  etiqueta 1 a finalizar esquema"
+    },
+    "TextLabelledRow_default": {
+      "expected": "empezar esquema primera fila  con etiqueta paréntesis izquierdo 1 paréntesis derecho finalizar etiqueta primera columna a segunda columna b finalizar esquema"
+    },
+    "TextLabelledRow_brief": {
+      "expected": "empezar esquema primera fila  etiqueta paréntesis izquierdo 1 paréntesis derecho primera columna a segunda columna b finalizar esquema"
+    },
+    "TextLabelledRow_sbrief": {
+      "expected": "esquema primera fila  etiqueta 1 primera columna a segunda columna b finalizar esquema"
     },
     "EncloseOverbar_default": {
       "expected": "a barra"
@@ -219,6 +246,33 @@
     },
     "EncloseUnderbar_sbrief": {
       "expected": "a subbarra"
+    },
+    "PrefixopSquare_default": {
+      "expected": "diferencial parcial al cuadrado x"
+    },
+    "PrefixopSquare_brief": {
+      "expected": "diferencial parcial al cuadrado x"
+    },
+    "PrefixopSquare_sbrief": {
+      "expected": "diferencial parcial al cuadrado x"
+    },
+    "PrefixopCube_default": {
+      "expected": "diferencial parcial al cubo x"
+    },
+    "PrefixopCube_brief": {
+      "expected": "diferencial parcial al cubo x"
+    },
+    "PrefixopCube_sbrief": {
+      "expected": "diferencial parcial al cubo x"
+    },
+    "Vector_default": {
+      "expected": "empezar matriz 3 por 1 primera fila  a segunda fila  b tercera fila  c finalizar matriz"
+    },
+    "Vector_brief": {
+      "expected": "empezar matriz 3 por 1 primera fila  a segunda fila  b tercera fila  c finalizar matriz"
+    },
+    "Vector_sbrief": {
+      "expected": "matriz 3 por 1 primera   a segunda   b tercera   c finalizar matriz"
     }
   }
 }

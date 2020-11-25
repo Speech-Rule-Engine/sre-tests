@@ -46,24 +46,12 @@
     },
     "_comment0_": " TODO",
     "AbstrCell_default": {
-      "steps": [
-        "DOWN",
-        "DOWN"
-      ],
       "expected": "1st Column in table"
     },
     "AbstrCell_brief": {
-      "steps": [
-        "DOWN",
-        "DOWN"
-      ],
       "expected": "1st Column in table"
     },
     "AbstrCell_sbrief": {
-      "steps": [
-        "DOWN",
-        "DOWN"
-      ],
       "expected": "1st Column in table"
     },
     "AbstrContinuedFraction_default": {
@@ -143,21 +131,12 @@
     },
     "_comment2_": " TODO",
     "AbstrLine_default": {
-      "steps": [
-        "DOWN"
-      ],
       "expected": "1st Row in multiple lines"
     },
     "AbstrLine_brief": {
-      "steps": [
-        "DOWN"
-      ],
       "expected": "1st Row in multiple lines"
     },
     "AbstrLine_sbrief": {
-      "steps": [
-        "DOWN"
-      ],
       "expected": "1st Row in multiple lines"
     },
     "AbstrMatrix_default": {
@@ -252,21 +231,12 @@
     },
     "_comment3_": " TODO",
     "AbstrRow_default": {
-      "steps": [
-        "DOWN"
-      ],
       "expected": "1st Row in table with 2 columns"
     },
     "AbstrRow_brief": {
-      "steps": [
-        "DOWN"
-      ],
       "expected": "1st Row in table with 2 columns"
     },
     "AbstrRow_sbrief": {
-      "steps": [
-        "DOWN"
-      ],
       "expected": "1st Row in table with 2 columns"
     },
     "AbstrRowvector_default": {
@@ -439,6 +409,36 @@
     },
     "AbstrVector_sbrief": {
       "expected": "vector"
+    },
+    "AbstrVarSubtraction_default": {
+      "expected": "subtraction with variable number of elements"
+    },
+    "AbstrVarSubtraction_brief": {
+      "expected": "subtraction"
+    },
+    "AbstrVarSubtraction_sbrief": {
+      "expected": "subtraction"
+    },
+    "AbstrCountImplicit_default": {
+      "expected": "product with 3 factors"
+    },
+    "AbstrCountImplicit_brief": {
+      "expected": "product"
+    },
+    "AbstrCountImplicit_sbrief": {
+      "expected": "product"
+    },
+    "AbstrVarImplicit_default": {
+      "expected": "product with variable number of factors"
+    },
+    "AbstrVarArrowRelation_default": {
+      "expected": "arrow sequence with variable number of elements"
+    },
+    "AbstrArrowRelation_default": {
+      "expected": "arrow"
+    },
+    "AbstrVarRowvector_default": {
+      "expected": "n dimensional row vector"
     }
   }
 }

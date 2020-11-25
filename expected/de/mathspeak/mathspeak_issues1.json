@@ -194,6 +194,24 @@
     "EmptyLine_sbrief": {
       "expected": "Anordnung 1. Zeile  leer Ende Anordnung"
     },
+    "EmptyRow_default": {
+      "expected": "Anfang Anordnung 1. Zeile 1. Spalte a 2. Spalte b 2. Zeile  leer Ende Anordnung"
+    },
+    "EmptyRow_brief": {
+      "expected": "Anfang Anordnung 1. Zeile 1. Spalte a 2. Spalte b 2. Zeile  leer Ende Anordnung"
+    },
+    "EmptyRow_sbrief": {
+      "expected": "Anordnung 1. Zeile 1. Spalte a 2. Spalte b 2. Zeile  leer Ende Anordnung"
+    },
+    "EmptyCell_default": {
+      "expected": "Anfang Anordnung 1. Zeile  leer Ende Anordnung"
+    },
+    "EmptyCell_brief": {
+      "expected": "Anfang Anordnung 1. Zeile  leer Ende Anordnung"
+    },
+    "EmptyCell_sbrief": {
+      "expected": "Anordnung 1. Zeile  leer Ende Anordnung"
+    },
     "TextLabelledLine_default": {
       "expected": "Anfang Anordnung 1. Zeile  mit Bezeichner Klammer auf 1 Klammer zu Ende Bezeichner a Ende Anordnung"
     },
@@ -202,6 +220,15 @@
     },
     "TextLabelledLine_sbrief": {
       "expected": "Anordnung 1. Zeile  Bezeichner 1 a Ende Anordnung"
+    },
+    "TextLabelledRow_default": {
+      "expected": "Anfang Anordnung 1. Zeile  mit Bezeichner Klammer auf 1 Klammer zu Ende Bezeichner 1. Spalte a 2. Spalte b Ende Anordnung"
+    },
+    "TextLabelledRow_brief": {
+      "expected": "Anfang Anordnung 1. Zeile  Bezeichner Klammer auf 1 Klammer zu 1. Spalte a 2. Spalte b Ende Anordnung"
+    },
+    "TextLabelledRow_sbrief": {
+      "expected": "Anordnung 1. Zeile  Bezeichner 1 1. Spalte a 2. Spalte b Ende Anordnung"
     },
     "EncloseOverbar_default": {
       "expected": "a Überstrich"
@@ -220,6 +247,33 @@
     },
     "EncloseUnderbar_sbrief": {
       "expected": "a Unterstrich"
+    },
+    "PrefixopSquare_default": {
+      "expected": "partielle Ableitung Quadrat x"
+    },
+    "PrefixopSquare_brief": {
+      "expected": "partielle Ableitung Quadrat x"
+    },
+    "PrefixopSquare_sbrief": {
+      "expected": "partielle Ableitung Quadrat x"
+    },
+    "PrefixopCube_default": {
+      "expected": "partielle Ableitung Kubik x"
+    },
+    "PrefixopCube_brief": {
+      "expected": "partielle Ableitung Kubik x"
+    },
+    "PrefixopCube_sbrief": {
+      "expected": "partielle Ableitung Kubik x"
+    },
+    "Vector_default": {
+      "expected": "Anfang 3 mal 1 Matrize 1. Zeile  a 2. Zeile  b 3. Zeile  c Ende Matrize"
+    },
+    "Vector_brief": {
+      "expected": "Anfang 3 mal 1 Matrize 1. Zeile  a 2. Zeile  b 3. Zeile  c Ende Matrize"
+    },
+    "Vector_sbrief": {
+      "expected": "3 mal 1 Matrize 1. Zeile  a 2. Zeile  b 3. Zeile  c Ende Matrize"
     }
   }
 }

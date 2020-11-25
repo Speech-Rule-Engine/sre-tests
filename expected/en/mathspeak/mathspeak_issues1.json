@@ -188,6 +188,24 @@
     "EmptyLine_sbrief": {
       "expected": "Layout 1st Row  Blank EndLayout"
     },
+    "EmptyRow_default": {
+      "expected": "StartLayout 1st Row 1st Column a 2nd Column b 2nd Row  Blank EndLayout"
+    },
+    "EmptyRow_brief": {
+      "expected": "StartLayout 1st Row 1st Column a 2nd Column b 2nd Row  Blank EndLayout"
+    },
+    "EmptyRow_sbrief": {
+      "expected": "Layout 1st Row 1st Column a 2nd Column b 2nd Row  Blank EndLayout"
+    },
+    "EmptyCell_default": {
+      "expected": "StartLayout 1st Row  Blank EndLayout"
+    },
+    "EmptyCell_brief": {
+      "expected": "StartLayout 1st Row  Blank EndLayout"
+    },
+    "EmptyCell_sbrief": {
+      "expected": "Layout 1st Row  Blank EndLayout"
+    },
     "TextLabelledLine_default": {
       "expected": "StartLayout 1st Row  with Label left parenthesis 1 right parenthesis EndLabel a EndLayout"
     },
@@ -196,6 +214,15 @@
     },
     "TextLabelledLine_sbrief": {
       "expected": "Layout 1st Row  Label 1 a EndLayout"
+    },
+    "TextLabelledRow_default": {
+      "expected": "StartLayout 1st Row  with Label left parenthesis 1 right parenthesis EndLabel 1st Column a 2nd Column b EndLayout"
+    },
+    "TextLabelledRow_brief": {
+      "expected": "StartLayout 1st Row  Label left p'ren 1 right p'ren 1st Column a 2nd Column b EndLayout"
+    },
+    "TextLabelledRow_sbrief": {
+      "expected": "Layout 1st Row  Label 1 1st Column a 2nd Column b EndLayout"
     },
     "EncloseOverbar_default": {
       "expected": "a overbar"
@@ -214,6 +241,33 @@
     },
     "EncloseUnderbar_sbrief": {
       "expected": "a underBar"
+    },
+    "PrefixopSquare_default": {
+      "expected": "partial differential squared x"
+    },
+    "PrefixopSquare_brief": {
+      "expected": "partial differential squared x"
+    },
+    "PrefixopSquare_sbrief": {
+      "expected": "partial differential squared x"
+    },
+    "PrefixopCube_default": {
+      "expected": "partial differential cubed x"
+    },
+    "PrefixopCube_brief": {
+      "expected": "partial differential cubed x"
+    },
+    "PrefixopCube_sbrief": {
+      "expected": "partial differential cubed x"
+    },
+    "Vector_default": {
+      "expected": "Start 3 By 1 Matrix 1st Row  a 2nd Row  b 3rd Row  c EndMatrix"
+    },
+    "Vector_brief": {
+      "expected": "Start 3 By 1 Matrix 1st Row  a 2nd Row  b 3rd Row  c EndMatrix"
+    },
+    "Vector_sbrief": {
+      "expected": "3 By 1 Matrix 1st Row  a 2nd Row  b 3rd Row  c EndMatrix"
     }
   }
 }
