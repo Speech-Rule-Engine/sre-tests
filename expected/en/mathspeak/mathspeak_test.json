@@ -604,156 +604,6 @@
     "Sample_8_8_1_sbrief": {
       "expected": "Sub c d Sup a b Base x Sub e f Sup g h"
     },
-    "SampleTensorMultiSimpleABC_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c Sub Superscript l"
-    },
-    "SampleTensorMultiSimpleABC_brief": {
-      "expected": "Sub a Sup b Base x Sub c Sub Sup l"
-    },
-    "SampleTensorMultiSimpleABC_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c Sub Sup l"
-    },
-    "SampleTensorMultiSub_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c Sub Subscript l Superscript d"
-    },
-    "SampleTensorMultiSub_brief": {
-      "expected": "Sub a Sup b Base x Sub c Sub Sub l Sup d"
-    },
-    "SampleTensorMultiSub_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c Sub Sub l Sup d"
-    },
-    "SampleTensorMultiSubSup_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c Sub Subscript l Sub Sub Superscript k Subscript e Superscript d"
-    },
-    "SampleTensorMultiSubSup_brief": {
-      "expected": "Sub a Sup b Base x Sub c Sub Sub l Sub Sub Sup k Sub e Sup d"
-    },
-    "SampleTensorMultiSubSup_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c Sub Sub l Sub Sub Sup k Sub e Sup d"
-    },
-    "SampleTensorMultiSimple_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c Sub Superscript l Superscript d"
-    },
-    "SampleTensorMultiSimple_brief": {
-      "expected": "Sub a Sup b Base x Sub c Sub Sup l Sup d"
-    },
-    "SampleTensorMultiSimple_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c Sub Sup l Sup d"
-    },
-    "SampleTensorMultiComplex_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c k Sub Superscript l Superscript d"
-    },
-    "SampleTensorMultiComplex_brief": {
-      "expected": "Sub a Sup b Base x Sub c k Sub Sup l Sup d"
-    },
-    "SampleTensorMultiComplex_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c k Sub Sup l Sup d"
-    },
-    "SampleTwoTensors_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c Superscript d Baseline Subscript a Superscript b Baseline x Subscript c Superscript d"
-    },
-    "SampleTwoTensors_brief": {
-      "expected": "Sub a Sup b Base x Sub c Sup d Base Sub a Sup b Base x Sub c Sup d"
-    },
-    "SampleTwoTensors_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c Sup d Base Sub a Sup b Base x Sub c Sup d"
-    },
-    "_comment2_": " Tensor tests are named with the convention of including the indices that are",
-    "_comment3_": " present:",
-    "_comment4_": "   B      D",
-    "_comment5_": "     Base     R",
-    "_comment6_": "   A      C",
-    "_comment7_": "  Where R is the rest.",
-    "SamplePartialTensorABCD_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c Superscript d"
-    },
-    "SamplePartialTensorABCD_brief": {
-      "expected": "Sub a Sup b Base x Sub c Sup d"
-    },
-    "SamplePartialTensorABCD_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c Sup d"
-    },
-    "SamplePartialTensorABC_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c"
-    },
-    "SamplePartialTensorABC_brief": {
-      "expected": "Sub a Sup b Base x Sub c"
-    },
-    "SamplePartialTensorABC_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c"
-    },
-    "SamplePartialTensorABD_default": {
-      "expected": "Subscript a Superscript b Baseline x Superscript d"
-    },
-    "SamplePartialTensorABD_brief": {
-      "expected": "Sub a Sup b Base x Sup d"
-    },
-    "SamplePartialTensorABD_sbrief": {
-      "expected": "Sub a Sup b Base x Sup d"
-    },
-    "SamplePartialTensorAB_default": {
-      "expected": "Subscript a Superscript b Baseline x"
-    },
-    "SamplePartialTensorAB_brief": {
-      "expected": "Sub a Sup b Base x"
-    },
-    "SamplePartialTensorAB_sbrief": {
-      "expected": "Sub a Sup b Base x"
-    },
-    "SamplePartialTensorABCR_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c Baseline r"
-    },
-    "SamplePartialTensorABCR_brief": {
-      "expected": "Sub a Sup b Base x Sub c Base r"
-    },
-    "SamplePartialTensorABCR_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c Base r"
-    },
-    "SamplePartialTensorABCDR_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c Superscript d Baseline r"
-    },
-    "SamplePartialTensorABCDR_brief": {
-      "expected": "Sub a Sup b Base x Sub c Sup d Base r"
-    },
-    "SamplePartialTensorABCDR_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c Sup d Base r"
-    },
-    "SamplePartialTensorABCDRoot_default": {
-      "expected": "StartRoot Subscript a Superscript b Baseline x Subscript c Superscript d Baseline EndRoot"
-    },
-    "SamplePartialTensorABCDRoot_brief": {
-      "expected": "StartRoot Sub a Sup b Base x Sub c Sup d Base EndRoot"
-    },
-    "SamplePartialTensorABCDRoot_sbrief": {
-      "expected": "Root Sub a Sup b Base x Sub c Sup d Base EndRoot"
-    },
-    "SamplePartialTensorABCDRootR_default": {
-      "expected": "StartRoot Subscript a Superscript b Baseline x Subscript c Superscript d Baseline EndRoot r"
-    },
-    "SamplePartialTensorABCDRootR_brief": {
-      "expected": "StartRoot Sub a Sup b Base x Sub c Sup d Base EndRoot r"
-    },
-    "SamplePartialTensorABCDRootR_sbrief": {
-      "expected": "Root Sub a Sup b Base x Sub c Sup d Base EndRoot r"
-    },
-    "SamplePartialTensorABCDFrac_default": {
-      "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x Subscript c Superscript d Baseline EndFraction"
-    },
-    "SamplePartialTensorABCDFrac_brief": {
-      "expected": "StartFrac 1 Over Sub a Sup b Base x Sub c Sup d Base EndFrac"
-    },
-    "SamplePartialTensorABCDFrac_sbrief": {
-      "expected": "Frac 1 Over Sub a Sup b Base x Sub c Sup d Base EndFrac"
-    },
-    "SamplePartialTensorABCDFracR_default": {
-      "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x Subscript c Superscript d Baseline EndFraction r"
-    },
-    "SamplePartialTensorABCDFracR_brief": {
-      "expected": "StartFrac 1 Over Sub a Sup b Base x Sub c Sup d Base EndFrac r"
-    },
-    "SamplePartialTensorABCDFracR_sbrief": {
-      "expected": "Frac 1 Over Sub a Sup b Base x Sub c Sup d Base EndFrac r"
-    },
     "SampleSimpleSquare_default": {
       "expected": "upper T 0 squared"
     },
@@ -1272,6 +1122,15 @@
     },
     "Sample_15_6_1_sbrief": {
       "expected": "BinomialOrMatrix x Choose y EndBinomialOrMatrix"
+    },
+    "BaselineNumberFont_default": {
+      "expected": "n Baseline bold 2"
+    },
+    "BaselineNumberFont_brief": {
+      "expected": "n Base bold 2"
+    },
+    "BaselineNumberFont_sbrief": {
+      "expected": "n Base bold 2"
     }
   }
 }

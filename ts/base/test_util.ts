@@ -17,7 +17,7 @@
  */
 
 import * as fs from 'fs';
-import {JsonTest} from '../classes/abstract_test';
+import * as path from 'path';
 import {baseDir} from './test_external';
 
 let TestDir = baseDir;
@@ -51,6 +51,25 @@ export class TestError extends Error {
   }
 }
 
+export interface JsonTest {
+  test?: boolean;
+  name?: string;
+  input?: string;
+  expected?: string | string[];
+  [propName: string]: any;
+}
+
+export declare type JsonTests = {[name: string]: JsonTest};
+
+export interface JsonFile {
+  factory?: string;
+  information?: string;
+  exlcude?: string[];
+  base?: string;
+  tests?: JsonTests | 'ALL';
+  [propName: string]: any;
+}
+
 export namespace TestUtil {
 
   /**
@@ -58,13 +77,24 @@ export namespace TestUtil {
    * @param file The filename.
    * @return The parsed JSON object.
    */
-  export function loadJson(file: string): Object {
+  export function loadJson(file: string): JsonFile {
     try {
       return (
-        JSON.parse(fs.readFileSync(file).toString()) as Object);
+        JSON.parse(fs.readFileSync(file).toString()) as JsonFile);
     } catch (e) {
       throw new TestError('Bad filename or content', file);
     }
+  }
+
+  /**
+   * Saves a formatted JSON object to file.
+   * @param file The filename.
+   * @param json The JSON object.
+   */
+  export function saveJson(file: string, json: JsonFile) {
+    let dir = path.dirname(file);
+    fs.mkdirSync(dir, {recursive: true});
+    fs.writeFileSync(file, JSON.stringify(json, null, 2) + '\n');
   }
 
   /**
@@ -100,8 +130,8 @@ export namespace TestUtil {
    * @param exclude A list of tests to be excluded.
    * @return Done.
    */
-  export function combineTests(input: JsonTest, expected: JsonTest | string,
-                               exclude: string[]): [any[], any[]] {
+  export function combineTests(input: JsonTests, expected: JsonTests | 'ALL',
+                               exclude: string[]): [JsonTest[], string[]] {
     let warn = [];
     let results = [];
     if (expected === 'ALL') {
@@ -117,9 +147,6 @@ export namespace TestUtil {
         results.push(json);
       }
       return [results, []];
-    }
-    if (typeof expected === 'string') {
-      return [[], []];
     }
     for (let key of Object.keys(input)) {
       if (key.match(/^_/) || exclude.indexOf(key) !== -1) {

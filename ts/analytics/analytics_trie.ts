@@ -132,8 +132,7 @@ namespace AnalyticsTrie {
     let json = trie.json();
     let rules = trie.collectRules();
     AnalyticsUtil.fileJson('trie', json, name);
-    AnalyticsUtil.fileOutput(
-      'trie', rules.map((x: sret.SpeechRule) => x.toString()).join('\n'),
+    AnalyticsUtil.fileJson('trie', rules.map((x: sret.SpeechRule) => x.toString()),
       name, 'txt');
   }
 

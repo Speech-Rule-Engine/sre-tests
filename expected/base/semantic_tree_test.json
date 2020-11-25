@@ -952,11 +952,11 @@
     },
     "LimitFunctions_2": {
       "brief": true,
-      "expected": "<appl><content><punctuation>⁡</punctuation><function>lim</function></content><children><limupper><children><limlower><children><function>lim</function><relseq>→<content><relation>→</relation></content><children><identifier>x</identifier><identifier>∞</identifier></children></relseq></children></limlower><operator>+</operator></children></limupper><fenced><content><fence>(</fence><fence>)</fence></content><children><identifier>x</identifier></children></fenced></children></appl>"
+      "expected": "<appl><content><punctuation>⁡</punctuation><function>lim</function></content><children><superscript><children><limlower><children><function>lim</function><relseq>→<content><relation>→</relation></content><children><identifier>x</identifier><identifier>∞</identifier></children></relseq></children></limlower><operator>+</operator></children></superscript><fenced><content><fence>(</fence><fence>)</fence></content><children><identifier>x</identifier></children></fenced></children></appl>"
     },
     "LimitFunctions_3": {
       "brief": true,
-      "expected": "<appl><content><punctuation>⁡</punctuation><function>lim</function></content><children><limboth><children><function>lim</function><punctuation>―</punctuation><relseq>→<content><relation>→</relation></content><children><identifier>x</identifier><identifier>∞</identifier></children></relseq></children></limboth><fenced><content><fence>(</fence><fence>)</fence></content><children><identifier>x</identifier></children></fenced></children></appl>"
+      "expected": "<appl><content><punctuation>⁡</punctuation><function>lim</function></content><children><limupper><children><underscore><children><function>lim</function><punctuation>―</punctuation></children></underscore><relseq>→<content><relation>→</relation></content><children><identifier>x</identifier><identifier>∞</identifier></children></relseq></children></limupper><fenced><content><fence>(</fence><fence>)</fence></content><children><identifier>x</identifier></children></fenced></children></appl>"
     },
     "LimitFunctions_4": {
       "brief": true,

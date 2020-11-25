@@ -199,6 +199,24 @@
     "EmptyLine_sbrief": {
       "expected": "tableau 1re rangée  vide fin tableau"
     },
+    "EmptyRow_default": {
+      "expected": "début tableau 1re rangée 1re colonne a 2e colonne b 2e rangée  vide fin tableau"
+    },
+    "EmptyRow_brief": {
+      "expected": "début tableau 1re rangée 1re colonne a 2e colonne b 2e rangée  vide fin tableau"
+    },
+    "EmptyRow_sbrief": {
+      "expected": "tableau 1re rangée 1re colonne a 2e colonne b 2e rangée  vide fin tableau"
+    },
+    "EmptyCell_default": {
+      "expected": "début tableau 1re rangée  vide fin tableau"
+    },
+    "EmptyCell_brief": {
+      "expected": "début tableau 1re rangée  vide fin tableau"
+    },
+    "EmptyCell_sbrief": {
+      "expected": "tableau 1re rangée  vide fin tableau"
+    },
     "TextLabelledLine_default": {
       "expected": "début tableau 1re rangée  avec etiquette parenthèse gauche 1 parenthèse droite fin etiquette a fin tableau"
     },
@@ -207,6 +225,15 @@
     },
     "TextLabelledLine_sbrief": {
       "expected": "tableau 1re rangée  etiquette 1 a fin tableau"
+    },
+    "TextLabelledRow_default": {
+      "expected": "début tableau 1re rangée  avec étiquette parenthèse gauche 1 parenthèse droite fin étiquette 1re colonne a 2e colonne b fin tableau"
+    },
+    "TextLabelledRow_brief": {
+      "expected": "début tableau 1re rangée  étiquette parenthèse gauche 1 parenthèse droite 1re colonne a 2e colonne b fin tableau"
+    },
+    "TextLabelledRow_sbrief": {
+      "expected": "tableau 1re rangée  étiquette 1 1re colonne a 2e colonne b fin tableau"
     },
     "EncloseOverbar_default": {
       "expected": "début trait suscrit a fin trait suscrit"
@@ -225,6 +252,33 @@
     },
     "EncloseUnderbar_sbrief": {
       "expected": "début trait souscrit a fin trait souscrit"
+    },
+    "PrefixopSquare_default": {
+      "expected": "dérivée partielle au carré x"
+    },
+    "PrefixopSquare_brief": {
+      "expected": "dérivée partielle au carré x"
+    },
+    "PrefixopSquare_sbrief": {
+      "expected": "dérivée partielle au carré x"
+    },
+    "PrefixopCube_default": {
+      "expected": "dérivée partielle cubique x"
+    },
+    "PrefixopCube_brief": {
+      "expected": "dérivée partielle cubique x"
+    },
+    "PrefixopCube_sbrief": {
+      "expected": "dérivée partielle cubique x"
+    },
+    "Vector_default": {
+      "expected": "début matrice 3 par 1 1re rangée  a 2e rangée  b 3e rangée  c fin matrice"
+    },
+    "Vector_brief": {
+      "expected": "début matrice 3 par 1 1re rangée  a 2e rangée  b 3e rangée  c fin matrice"
+    },
+    "Vector_sbrief": {
+      "expected": "matrice 3 par 1 1re rangée  a 2e rangée  b 3e rangée  c fin matrice"
     }
   }
 }

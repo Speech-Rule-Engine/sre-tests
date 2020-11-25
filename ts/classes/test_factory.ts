@@ -20,7 +20,7 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import {AbstractJsonTest, JsonFile} from './abstract_test';
+import {AbstractJsonTest} from './abstract_test';
 
 import {TestError, TestPath, TestUtil} from '../base/test_util';
 import {ApiTest} from './api_test';
@@ -66,7 +66,7 @@ const map = new Map<string, any>([
  */
 export function get(file: string): AbstractJsonTest {
   let filename = TestUtil.fileExists(file, TestPath.EXPECTED);
-  let json = TestUtil.loadJson(filename) as JsonFile;
+  let json = TestUtil.loadJson(filename);
   let factory = json['factory'] as string;
   let constructor = map.get(factory);
   if (!constructor) {

@@ -125,4 +125,6 @@ let build = function() {
   createFiles();
 };
 
+module.exports.build = build;
+module.exports.clean = cleanFiles;
 build();

@@ -17,7 +17,7 @@
  */
 
 import * as assert from 'assert';
-import {TestPath, TestUtil} from '../base/test_util';
+import {JsonFile, JsonTest, JsonTests, TestPath, TestUtil} from '../base/test_util';
 
 export abstract class AbstractTest {
 
@@ -54,23 +54,6 @@ export abstract class AbstractTest {
    */
   public tearDownTest() {
   }
-}
-
-export interface JsonTest {
-  test?: boolean;
-  name?: string;
-  input?: string;
-  expected?: string;
-  [propName: string]: any;
-}
-
-export interface JsonFile {
-  factory?: string;
-  information?: string;
-  exlcude?: string[];
-  base?: string;
-  tests?: {[name: string]: JsonTest};
-  [propName: string]: any;
 }
 
 /**
@@ -136,7 +119,7 @@ export abstract class AbstractJsonTest extends AbstractTest {
     let file = this.jsonTests['base'];
     this.baseFile = TestUtil.fileExists(file, TestPath.INPUT);
     this.baseTests = this.baseFile ? TestUtil.loadJson(this.baseFile) : {};
-    let input = this.baseTests['tests'] || {};
+    let input: JsonTests = (this.baseTests['tests'] || {}) as JsonTests;
     let output = this.jsonTests['tests'] || {};
     let exclude = this.jsonTests['exclude'] || [];
     let tests = TestUtil.combineTests(input, output, exclude);

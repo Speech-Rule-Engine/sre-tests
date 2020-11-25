@@ -288,15 +288,45 @@
     },
     "EmptyLine_default": {
       "test": true,
-      "input": "<mtable><mtr><mtd></mtd></mtr></mtable>",
+      "input": "<mtable><mtr></mtr></mtable>",
       "preference": "default"
     },
     "EmptyLine_brief": {
       "test": true,
-      "input": "<mtable><mtr><mtd></mtd></mtr></mtable>",
+      "input": "<mtable><mtr></mtr></mtable>",
       "preference": "brief"
     },
     "EmptyLine_sbrief": {
+      "test": true,
+      "input": "<mtable><mtr></mtr></mtable>",
+      "preference": "sbrief"
+    },
+    "EmptyRow_default": {
+      "test": true,
+      "input": "<mtable><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr></mtr></mtable>",
+      "preference": "default"
+    },
+    "EmptyRow_brief": {
+      "test": true,
+      "input": "<mtable><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr></mtr></mtable>",
+      "preference": "brief"
+    },
+    "EmptyRow_sbrief": {
+      "test": true,
+      "input": "<mtable><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr></mtr></mtable>",
+      "preference": "sbrief"
+    },
+    "EmptyCell_default": {
+      "test": true,
+      "input": "<mtable><mtr><mtd></mtd></mtr></mtable>",
+      "preference": "default"
+    },
+    "EmptyCell_brief": {
+      "test": true,
+      "input": "<mtable><mtr><mtd></mtd></mtr></mtable>",
+      "preference": "brief"
+    },
+    "EmptyCell_sbrief": {
       "test": true,
       "input": "<mtable><mtr><mtd></mtd></mtr></mtable>",
       "preference": "sbrief"
@@ -314,6 +344,21 @@
     "TextLabelledLine_sbrief": {
       "test": true,
       "input": "<mtable><mlabeledtr><mtd><mtext>(1)</mtext></mtd><mtd><mi>a</mi></mtd></mlabeledtr></mtable>",
+      "preference": "sbrief"
+    },
+    "TextLabelledRow_default": {
+      "test": true,
+      "input": "<mtable><mlabeledtr><mtd><mtext>(1)</mtext></mtd><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mlabeledtr></mtable>",
+      "preference": "default"
+    },
+    "TextLabelledRow_brief": {
+      "test": true,
+      "input": "<mtable><mlabeledtr><mtd><mtext>(1)</mtext></mtd><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mlabeledtr></mtable>",
+      "preference": "brief"
+    },
+    "TextLabelledRow_sbrief": {
+      "test": true,
+      "input": "<mtable><mlabeledtr><mtd><mtext>(1)</mtext></mtd><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mlabeledtr></mtable>",
       "preference": "sbrief"
     },
     "EncloseOverbar_default": {
@@ -345,6 +390,48 @@
       "test": true,
       "input": "<menclose notation=\"bottom\"><mi>a</mi></menclose>",
       "preference": "sbrief"
-    }
+    },
+    "PrefixopSquare_default": {
+      "test": true,
+      "input": "<msup><mo>∂</mo><mn>2</mn></msup><mi>x</mi>",
+      "preference": "default"
+    },
+    "PrefixopSquare_brief": {
+      "test": true,
+      "input": "<msup><mo>∂</mo><mn>2</mn></msup><mi>x</mi>",
+      "preference": "brief"
+    },
+    "PrefixopSquare_sbrief": {
+      "test": true,
+      "input": "<msup><mo>∂</mo><mn>2</mn></msup><mi>x</mi>",
+      "preference": "sbrief"
+    },
+    "PrefixopCube_default": {
+      "test": true,
+      "input": "<msup><mo>∂</mo><mn>3</mn></msup><mi>x</mi>",
+      "preference": "default"
+    },
+    "PrefixopCube_brief": {
+      "test": true,
+      "input": "<msup><mo>∂</mo><mn>3</mn></msup><mi>x</mi>",
+      "preference": "brief"
+    },
+    "PrefixopCube_sbrief": {
+      "test": true,
+      "input": "<msup><mo>∂</mo><mn>3</mn></msup><mi>x</mi>",
+      "preference": "sbrief"
+    },
+    "Vector_default": {
+      "input": "<mo>[</mo><mtable><mtr><mtd><mi>a</mi></mtd></mtr><mtr><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd></mtr></mtable><mo>]</mo>",
+      "preference": "default"
+    },
+    "Vector_brief": {
+      "input": "<mo>[</mo><mtable><mtr><mtd><mi>a</mi></mtd></mtr><mtr><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd></mtr></mtable><mo>]</mo>",
+      "preference": "brief"
+    },
+    "Vector_sbrief": {
+      "input": "<mo>[</mo><mtable><mtr><mtd><mi>a</mi></mtd></mtr><mtr><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd></mtr></mtable><mo>]</mo>",
+      "preference": "sbrief"
+    } 
   }
 }

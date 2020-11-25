@@ -114,9 +114,7 @@ namespace AnalyticsTest {
       allAppliedRules = allAppliedRules.concat(
         TestUtil.loadJson(path + file) as string[]);
     });
-    console.log(allAppliedRules.length);
     allAppliedRules = AnalyticsUtil.removeDuplicates(allAppliedRules);
-    console.log(allAppliedRules.length);
     allAppliedRules.forEach(x => uniqueAppliedRules.set(x, true));
   }
 
