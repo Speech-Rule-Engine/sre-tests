@@ -27,6 +27,7 @@ module.exports = {
   node: {
     __dirname: false
   },
+  devtool: 'source-map',
   optimization: {
     minimize: true,
     minimizer: [new TerserPlugin({
@@ -34,8 +35,7 @@ module.exports = {
         output: {
           ascii_only: true
         }
-      },
-      sourceMap: true
+      }
     })]
   },
   mode: 'production'
