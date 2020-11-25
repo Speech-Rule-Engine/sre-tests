@@ -1,5 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: sans-serif
+  margin: 0;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+#user-info {
+  border: 1px solid #CCC;
+  clear: both;
+  margin: 0 auto 20px;
+  max-width: fit-content;
+  padding: 10px;
+  text-align: left;
+  float: right;
+}
+
+body {
+  font-family: Roboto, arial, sans-serif
 }
 h2 {
   margin: 1.5em 0 1em;

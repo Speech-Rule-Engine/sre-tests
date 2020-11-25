@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width">
-  <title>Convert LaTeX or MathML to Speech</title>
+  <title>Convert BRF to Nemeth</title>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script>
   MathJax = {
@@ -11,14 +11,23 @@
   };
   </script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script id="Braille-script" src="./braille-convert.js"></script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>BRF to Nemeth Converter</h1>
+<span class="title">BRF to Nemeth Converter</span>
+<span id="user-signed-in" class="hidden">
+  <span id="user-info">
+    <span id="name"></span>
+    (<span id="email"></span>)
+    <div><span><button id="sign-out">Sign Out</button></span>
+    <span><button id="delete-account">Delete account</button></span>
+    </div>
+  </span>
+</span>
 
 <span class="btn next"></span><span class="btn prev"></span>
+
 <div class="converter" id="inputpanel">
   <div class="section" id="mathjax">
     <span class="pretitle" id="mathname"></span>
@@ -52,6 +61,22 @@
   </div>
 </div>
 
-</body>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script defer src="/__/firebase/8.1.1/firebase-app.js"></script>
+    <script defer src="/__/firebase/8.1.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.1.1/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.1.1/firebase-storage.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<script defer src="/__/firebase/init.js"></script>
+<script defer src="./user.js"></script>
+<script id="Braille-script" src="./braille-convert.js"></script>
 <script>Convert.init()</script>
+    
+</body>
 </html>
