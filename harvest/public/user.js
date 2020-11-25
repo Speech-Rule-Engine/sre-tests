@@ -53,6 +53,6 @@ let initApp = function() {
   firebase.auth().onAuthStateChanged(function(user) {
     user ? handleSignedInUser(user) : handleSignedOutUser();
   });
-}
+};
 
 window.addEventListener('load', initApp);

@@ -18,16 +18,6 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-
-import {mathjax} from '../../node_modules/mathjax-full/js/mathjax';
-import {TeX} from '../../node_modules/mathjax-full/js/input/tex';
-import {RegisterHTMLHandler} from '../../node_modules/mathjax-full/js/handlers/html';
-import {liteAdaptor} from '../../node_modules/mathjax-full/js/adaptors/liteAdaptor';
-import {AllPackages} from '../../node_modules/mathjax-full/js/input/tex/AllPackages';
-import {STATE} from '../../node_modules/mathjax-full/js/core/MathItem';
-import {SVG} from '../../node_modules/mathjax-full/js/output/svg';
-import {SerializedMmlVisitor} from '../../node_modules/mathjax-full/js/core/MmlTree/SerializedMmlVisitor';
-
 /**
  * Interface for test transformers.
  */
@@ -47,11 +37,15 @@ export interface Transformer {
    * Transformer method.
    */
   via: (src: string) => string;
-  
+
 }
 
-abstract class AbstractTransformer implements Transformer {
+export abstract class AbstractTransformer implements Transformer {
 
+  /**
+   * @param src Source field to transform from.
+   * @param dst Destination field to transform to.
+   */
   constructor(public src: string, public dst: string) {}
 
   /**
@@ -60,34 +54,6 @@ abstract class AbstractTransformer implements Transformer {
   public via(src: string) {
     return src;
   }
-}
-
-
-export class Tex2Mml extends AbstractTransformer {
-
-  constructor(src: string = 'tex', dst: string = 'input') {
-    super(src, dst);
-  }
-
-  /**
-   * @override
-   */
-  public via(src: string) {
-    return this.tex2mml(src);
-  }
-
-  private tex2mml(input: string) {
-    RegisterHTMLHandler(liteAdaptor());
-    let document = mathjax.document('<html></html>', {
-      InputJax: new TeX({packages: AllPackages}),
-      OutputJax: new SVG()
-    });
-    let visitor = new SerializedMmlVisitor();
-    let math = document.convert(input, {end: STATE.CONVERT});
-    let str = visitor.visitTree(math);
-    return str.replace(/>\n *</g, '><');
-  }
-  
 }
 
 abstract class BrailleTransformer extends AbstractTransformer {
@@ -103,6 +69,9 @@ abstract class BrailleTransformer extends AbstractTransformer {
     return (this.kind === 'NABT' ? this.format.NABT : this.format.BLDT)
   }
 
+  /**
+   * Sets up the brf to unicode map.
+   */
   protected abstract setupMap(): void;
 
   constructor(private _kind: string = 'BLDT',
@@ -114,13 +83,13 @@ abstract class BrailleTransformer extends AbstractTransformer {
   public get kind() {
     return this._kind;
   }
-  
+
   public set kind(kind: string) {
     this._kind = kind;
     this.translate = new Map();
     this.setupMap();
   }
-  
+
   /**
    * @override
    */
@@ -140,6 +109,9 @@ abstract class BrailleTransformer extends AbstractTransformer {
 
 export class Unicode2Brf extends BrailleTransformer {
 
+  /**
+   * @override
+   */
   protected setupMap() {
     let count = 0;
     for (let str of this.getFormat().split('')) {
@@ -151,6 +123,9 @@ export class Unicode2Brf extends BrailleTransformer {
 
 export class Brf2Unicode extends BrailleTransformer {
 
+  /**
+   * @override
+   */
   protected setupMap() {
     let count = 0;
     for (let str of this.getFormat().split('')) {
