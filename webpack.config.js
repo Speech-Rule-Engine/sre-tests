@@ -46,7 +46,8 @@ let baseConfig = Object.assign({}, config, {
 
 let convertConfig = Object.assign({}, config, {
   entry: path.resolve(__dirname, 'ts/convert.ts'),
-  target:'web',
+  devtool: false,
+  target: 'web',
   output: {
     filename: 'braille-convert.js',
     library: 'Convert',

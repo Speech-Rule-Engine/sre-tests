@@ -18,7 +18,7 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {JsonTest, JsonTests} from '../base/test_util';
+import {JsonTest} from '../base/test_util';
 
 export class FireTest {
 
@@ -26,7 +26,7 @@ export class FireTest {
   private preparedTests: JsonTest[] = [];
   private _keys: string[] = [];
 
-  constructor(public tests: JsonTests,
+  constructor(public tests: JsonTest[],
               public getTest: () => JsonTest,
               public setTest: (test: JsonTest) => void) {
     this._keys = Object.keys(tests);
@@ -37,14 +37,16 @@ export class FireTest {
     return this._keys;
   }
 
+  /**
+   * @return The currently active test.
+   */
   public currentTest() {
     return this.preparedTests[this.countTests];
-  };
+  }
 
   // This should probably be specialised in a subclass;
   protected prepareTests() {
-    for (let [name, test] of Object.entries(this.tests)) {
-      test.name = name;
+    for (let test of this.tests) {
       test.brf = '';
       test.unicode = '';
       this.preparedTests.push(test);
@@ -70,6 +72,10 @@ export class FireTest {
     }
   }
 
+  /**
+   * The next test in the cycle.
+   * @param {boolean} direction Forward if true.
+   */
   public cycleTests(direction: boolean) {
     this.saveTest(this.getTest());
     this.setTest(this.nextTest(direction));
