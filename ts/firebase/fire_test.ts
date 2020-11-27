@@ -18,7 +18,7 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {JsonTest} from '../base/test_util';
+import {JsonTest, JsonTests} from '../base/test_util';
 
 export class FireTest {
 
@@ -26,7 +26,8 @@ export class FireTest {
   private preparedTests: JsonTest[] = [];
   private _keys: string[] = [];
 
-  constructor(public tests: JsonTest[],
+  constructor(public tests: JsonTests,
+              public order: string[],
               public getTest: () => JsonTest,
               public setTest: (test: JsonTest) => void) {
     this._keys = Object.keys(tests);
@@ -46,7 +47,8 @@ export class FireTest {
 
   // This should probably be specialised in a subclass;
   protected prepareTests() {
-    for (let test of this.tests) {
+    for (let key of this.order) {
+      let test = this.tests[key];
       test.brf = '';
       test.unicode = '';
       this.preparedTests.push(test);

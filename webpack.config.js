@@ -57,7 +57,19 @@ let convertConfig = Object.assign({}, config, {
   }
 });
 
+let updateConfig = Object.assign({}, config, {
+  entry: path.resolve(__dirname, 'ts/firebase.ts'),
+  devtool: false,
+  target: 'web',
+  output: {
+    filename: 'firebase-update.js',
+    library: 'Fireup',
+    libraryTarget: 'umd',
+    globalObject: 'this',
+    path: path.join(__dirname, 'harvest/public'),
+  }
+});
 
 
-module.exports = [baseConfig, convertConfig]; 
 
+module.exports = [baseConfig, convertConfig, updateConfig]; 

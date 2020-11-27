@@ -16,17 +16,9 @@
 <body>
 
 <span class="title">BRF to Nemeth Converter</span>
-<span id="user-signed-in" class="hidden">
-  <span id="user-info">
-    <span id="name"></span>
-    (<span id="email"></span>)
-    <div><span><button id="sign-out">Sign Out</button></span>
-    <span><button id="delete-account">Delete account</button></span>
-    </div>
-  </span>
-</span>
 
 <span class="btn next"></span><span class="btn prev"></span>
+<span class="btn next ff"></span><span class="btn prev ff"></span>
 
 <div class="converter" id="inputpanel">
   <div class="section" id="mathjax">
@@ -76,7 +68,6 @@
     <script src="/__/firebase/init.js"></script>
     <script src="./user.js"></script>
     <script id="Braille-script" src="./braille-convert.js"></script>
-    <script>Convert.init()</script>
     
 </body>
 </html>

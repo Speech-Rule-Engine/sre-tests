@@ -20,10 +20,12 @@
  */
 
 import admin = require('firebase-admin');
+import {JsonTests} from '../base/test_util';
 import {AbstractJsonTest} from '../classes/abstract_test';
 // import {JsonTest, JsonTests, TestUtil} from '../base/test_util';
 import {get} from '../classes/test_factory';
 import * as FC from './fire_constants';
+import * as FU from './fire_util';
 
 export function initFirebase(
   credentials: string, url: string = FC.NemethUrl) {
@@ -47,27 +49,18 @@ export async function uploadTest(db: any, file: string,
     return;
   }
   testcases.prepare();
-  let path = testcases['jsonFile'].split('/');
-  db.collection(collection).doc(testcases['jsonFile']).set(
-    {information: testcases.information,
-     name: testcases.jsonTests.name,
-     tests: testcases.inputTests
-    }).
-    then(() => {
-    console.log(`Tests for ${file} successfully uploaded to collection ${collection}`);
-    }).
-    catch((error: Error) => {
-      console.log(`Uploading ${file} to collection ${collection} failed with: ${error}`);
-      return;
-    });
-  let paths = await db.collection(collection).doc(path[0]).get('paths');
-  let data = paths.data();
-  data[testcases['jsonFile']] = true;
-  db.collection(collection).doc(path[0]).set({paths: data}).
-    catch((error: Error) => {
-      console.log(`Setting path failed for ${path[0]} with: ${error}`);
-      return;
-    });
+  let testMap: JsonTests = {};
+  let order = testcases.inputTests.map(x => {
+    testMap[x.name] = x;
+    return x.name;
+  });
+  FU.uploadData(db, collection, testcases['jsonFile'],
+                {information: testcases.information,
+                 name: testcases.jsonTests.name,
+                 order: order,
+                 tests: testMap
+                });
+  FU.setPath(db, collection, testcases['jsonFile']);
 }
 
 export async function info(db: any, collection: string) {

@@ -1,106 +1,112 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
 .title {
-  font-size: 2em;
-  font-weight: bold;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 #container {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .clearfix {
-  clear: both;
+    clear: both;
 }
 
 .hidden {
-  display: none;
+    display: none;
+}
+
+#user-signed-in {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 #user-info {
-  border: 1px solid #CCC;
-  clear: both;
-  margin: 0 auto 20px;
-  max-width: fit-content;
-  padding: 10px;
-  text-align: left;
-  float: right;
+    border: 1px solid #B1DF84;
+    background: #B1DF84;
+    clear: both;
+    margin: 0 auto 20px;
+    padding: 10px;
+    text-align: left;
+    float: right;
 }
 
 body {
-  font-family: Roboto, arial, sans-serif
+    font-family: Roboto, arial, sans-serif
 }
 h2 {
-  margin: 1.5em 0 1em;
-  font-size: 120%;
+    margin: 1.5em 0 1em;
+    font-size: 120%;
 }
 h2:first-child {
-  margin-top: .5em;
+    margin-top: .5em;
 }
 .fullwidth {
-  width: 100%;
+    width: 100%;
 }
 table.fullwidth tr {
-  vertical-align: baseline;
+    vertical-align: baseline;
 }
 table.fullwidth td {
-  white-space: nowrap;
+    white-space: nowrap;
 }
 td.fullwidth input {
-  width: 100%;
-  box-sizing: border-box;
-  }
-  td.spacing {
-  width: 20%
-  }
+    width: 100%;
+    box-sizing: border-box;
+}
+td.spacing {
+    width: 20%
+}
 .red {
-  color: #880000;
-  background-color: #FFEEEE;
+    color: #880000;
+    background-color: #FFEEEE;
 }
 .green {
-  color: #008800;
-  background-color: #EEFFEE;
+    color: #008800;
+    background-color: #EEFFEE;
 }
 .converter {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 98%;
-  min-width: 25em;
-  vertical-align: top;
-  background-color: #F0F0F0;
-  border: 2px solid #CCC;
-  padding: .75em;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 98%;
+    min-width: 25em;
+    vertical-align: top;
+    background-color: #F7F4ED;
+    border: 2px solid #CCC;
+    padding: .75em;
 }
 #input {
-  font-family: monospace;
-  font-size: 80%;
-  width: 100%;
-  box-sizing: border-box;
+    font-family: monospace;
+    font-size: 80%;
+    width: 100%;
+    box-sizing: border-box;
 }
 #error {
-  background-color: #EEE;
-  color: #F00;
-  display: inline-block;
-  padding: 1px 2px;
-  margin: 1px;
+    background-color: #EEE;
+    color: #F00;
+    display: inline-block;
+    padding: 1px 2px;
+    margin: 1px;
 }
 #explanation code {
-  padding: 0 2px;
+    padding: 0 2px;
 }
 span {
-display: inline-block;
+    display: inline-block;
 }
 
 div.section {
-height: 25px;
+    height: 25px;
 }
 
 .pretitle {
@@ -121,28 +127,53 @@ textarea {
 }
 
 .btn {
-  position: absolute;
+    position: absolute;
 
-  top: 50%;
-  transform: translateY(-50%);
+    top: 50%;
+    transform: translateY(-50%);
 
-  height: 30px;
-  width: 30px;
+    height: 30px;
+    width: 30px;
 
-  border-radius: 2px;
-  background-color: rgba(0,0,0,0.5);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0.5);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 
-  z-index: 1;
+    z-index: 1;
 }
 
 .btn.next {
-  background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M25.557 14.7L13.818 2.961 16.8 0l16.8 16.8-16.8 16.8-2.961-2.961L25.557 18.9H0v-4.2z" fill="%23FFF" fill-rule="evenodd"/></svg>');
-  right: 10px;
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 50.8" enable-background="new 0 0 36 50.8" xml:space="preserve"><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="34,25.9 17.4,48.1 2.9,48.1 19.5,25.9 2.9,3.7 2.5,3.3 17,3.3 17.4,3.7 "/></svg>');
+    right: 10px;
+}
+
+.btn.next.ff {
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 58.3 57.3" enable-background="new 0 0 58.3 57.3" xml:space="preserve"><g transform="rotate(180 29 29)"><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="1.6,28.6 19.8,1.3 33,1.3 14.9,28.6 33,56 19.8,56"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="43.1,1.3 56.4,1.3 38.2,28.6 56.4,56 43.1,56 24.9,28.6"/></g></svg>');
+    right: 45px;
 }
 
 .btn.prev {
-  background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M33.6 14.7H8.043L19.782 2.961 16.8 0 0 16.8l16.8 16.8 2.961-2.961L8.043 18.9H33.6z" fill="%23FFF" fill-rule="evenodd"/></svg>');
-  left: 10px;
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 43.3 61" enable-background="new 0 0 43.3 61" xml:space="preserve"><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="2.1,30.6 23.3,58.7 41.6,58.7 20.6,30.6 41.6,2.7 42,2.1 23.7,2.1 23.3,2.7 "/></svg>');
+    left: 10px;
 }
+
+.btn.prev.ff {
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 58.3 57.3" enable-background="new 0 0 58.3 57.3" xml:space="preserve"><g><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="1.6,28.6 19.8,1.3 33,1.3 14.9,28.6 33,56 19.8,56"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="43.1,1.3 56.4,1.3 38.2,28.6 56.4,56 43.1,56 24.9,28.6"/></g></svg>');
+    left: 45px;
+}
+
+
+
+
+.btn.next.old {
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M25.557 14.7L13.818 2.961 16.8 0l16.8 16.8-16.8 16.8-2.961-2.961L25.557 18.9H0v-4.2z" fill="%23FFF" fill-rule="evenodd"/></svg>');
+    right: 10px;
+}
+
+.btn.prev.old {
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M33.6 14.7H8.043L19.782 2.961 16.8 0 0 16.8l16.8 16.8 2.961-2.961L8.043 18.9H33.6z" fill="%23FFF" fill-rule="evenodd"/></svg>');
+    left: 10px;
+}
+
+

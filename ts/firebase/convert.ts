@@ -70,10 +70,8 @@ async function initFile(file: string) {
   transformer = new Brf2Unicode();
   // TODO: Sort this out properly!
   let fi = await firebase.app().firestore().collection('tests').doc(file).get();
-  let tests = fi.data().tests;
-  console.log(tests);
-  fireTest = new FireTest(tests, getTest, setTest);
-  // fireTest = new FireTest(tmpTests, getTest, setTest);
+  let data = fi.data();
+  fireTest = new FireTest(data.tests, data.order, getTest, setTest);
   field.ip = document.getElementById('input');
   field.out = document.getElementById('braille');
   field.error = document.getElementById('error');
