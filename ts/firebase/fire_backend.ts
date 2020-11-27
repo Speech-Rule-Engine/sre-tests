@@ -22,11 +22,15 @@
 import admin = require('firebase-admin');
 import {JsonTests} from '../base/test_util';
 import {AbstractJsonTest} from '../classes/abstract_test';
-// import {JsonTest, JsonTests, TestUtil} from '../base/test_util';
 import {get} from '../classes/test_factory';
 import * as FC from './fire_constants';
 import * as FU from './fire_util';
 
+/**
+ * Inits the firebase communication
+ * @param {string} credentials File with credentials.
+ * @param {string = FC.NemethUrl} url URL of the firebase.
+ */
 export function initFirebase(
   credentials: string, url: string = FC.NemethUrl) {
   let serviceAccount = require(credentials);
@@ -37,6 +41,12 @@ export function initFirebase(
   return admin.firestore();
 }
 
+/**
+ * Uploads tests to the firebase store.
+ * @param {any} db The firestore.
+ * @param {string} file The test file to upload.
+ * @param {string = FC.TestsCollection} collection The collection name.
+ */
 export async function uploadTest(db: any, file: string,
                                  collection: string = FC.TestsCollection) {
   let testcases: AbstractJsonTest = null;
@@ -63,7 +73,19 @@ export async function uploadTest(db: any, file: string,
   FU.setPath(db, collection, testcases['jsonFile']);
 }
 
-export async function info(db: any, collection: string) {
-  const snapshot = await db.collection(collection).get();
-  snapshot.forEach((doc: any) => {console.log(doc.id);});
+/**
+ * @return Promise with the list of uids.
+ */
+export async function getUsers() {
+  let users = await admin.auth().listUsers();
+  return users.users.map(y => y.uid);
 }
+
+// Missing:
+// * Differences between user and original
+// * Harvest user input
+//
+
+// process.env.SRE_JSON_PATH='../speech-rule-engine/lib/mathmaps'; fb = require('./js/firebase/fire_backend'); fu = require('./js/firebase/fire_util');
+// db = fb.initFirebase('/home/sorge/Progressive/web/gcp-keys/nemeth-project-firebase-adminsdk-57cvs-e4cf9322a2.json');
+//

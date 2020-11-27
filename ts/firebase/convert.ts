@@ -19,7 +19,7 @@
  */
 
 import {JsonTest} from '../base/test_util';
-import {Brf2Unicode} from '../generate/transformers';
+import {Brf2Unicode} from '../generate/braille_transformer';
 import {FireTest} from './fire_test';
 
 let transformer: Brf2Unicode = null;
