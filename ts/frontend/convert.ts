@@ -21,11 +21,29 @@
 import {JsonTest} from '../base/test_util';
 import * as FC from '../firebase/fire_constants';
 import {FireTest} from '../firebase/fire_test';
-import {Brf2Unicode, Unicode2Brf} from '../generate/braille_transformer';
+import {Bldt2Unicode, BrailleTransformer, Nabt2Unicode, Unicode2Bldt, Unicode2Nabt} from '../generate/braille_transformer';
 import {init as initButtons} from './buttons';
 
-let transformer: Brf2Unicode = null;
-let backtransformer: Unicode2Brf = null;
+let transformers: Map<string, BrailleTransformer> = new Map<string, BrailleTransformer>([
+  ['NABT', new Nabt2Unicode()],
+  ['BLDT', new Bldt2Unicode()]
+]);
+
+let backtransformers: Map<string, BrailleTransformer> = new Map<string, BrailleTransformer>([
+  ['NABT', new Unicode2Nabt()],
+  ['BLDT', new Unicode2Bldt()]
+]);
+
+let kind = 'NABT';
+
+function transformer() {
+  return transformers.get(kind.toUpperCase());
+}
+
+function backtransformer() {
+  return backtransformers.get(kind.toUpperCase());
+}
+
 let field: {[name: string]: Element} = {};
 export let fireTest: FireTest = null;
 let current: string = '';
@@ -44,7 +62,7 @@ function setTest(test: JsonTest) {
   field.out.innerHTML = test.expected as string;
   // TODO: Transform here, depending on the transformation value;
   (field.ip as HTMLTextAreaElement).value =
-    backtransformer.via(test.expected as string);
+    backtransformer().via(test.expected as string);
   (field.ip as HTMLTextAreaElement).focus();
   console.log(test);
   let status = test[FC.Interaction];
@@ -90,8 +108,6 @@ export function init(collection: string, file: string) {
 }
 
 async function initFile(collection: string, file: string) {
-  transformer = new Brf2Unicode();
-  backtransformer = new Unicode2Brf();
   // TODO: Sort this out properly!
   const db = firebase.app().firestore();
   fireTest = new FireTest(db, collection, file, getTest, setTest);
@@ -115,7 +131,7 @@ function translate(str: string) {
   for (let char of str.split('')) {
     let res = '';
     try {
-      res = transformer.via(char);
+      res = transformer().via(char);
     } catch (e) {
       field.error.innerHTML = 'Unknown element ' + char;
       continue;
@@ -155,7 +171,9 @@ export function generatem() {
  * Changes the brf format.
  */
 export function changeFormat() {
-  let value = (field.format as HTMLButtonElement).value.toUpperCase();
-  transformer.kind = value;
-  backtransformer.kind = value;
+  console.log(kind);
+  console.log(transformer());
+  kind = (field.format as HTMLButtonElement).value;
+  console.log(kind);
+  console.log(transformer());
 }

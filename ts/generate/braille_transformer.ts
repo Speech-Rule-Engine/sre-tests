@@ -18,40 +18,56 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {AbstractTransformer} from './transformers';
+import {AbstractTransformer, Transformer} from './transformers';
 
-abstract class BrailleTransformer extends AbstractTransformer {
+export interface BrailleTransformer extends Transformer {
 
+  /**
+   * What kind of Braille representation.
+   */
+  kind(): string;
+
+}
+
+abstract class BrfTransformer extends AbstractTransformer implements BrailleTransformer {
+
+  /**
+   * Translations for the brf tables.
+   */
   protected static format = {
     NABT: ' a1b\'k2l@cif/msp"e3h9o6r^djg>ntq,*5<-u8v.%[$+x!&;:4\\0z7(_?w]#y)=',
     BLDT: ' a1b\'k2l`cif/msp"e3h9o6r~djg>ntq,*5<-u8v.%{$+x!&;:4|0z7(_?w}#y)='
-  }
+  };
 
-  protected static getFormat(kind: string) {
-    return (kind === 'BLDT' ? BrailleTransformer.format.BLDT :
-      BrailleTransformer.format.NABT)
-  }
+  /**
+   * @override
+   */
+  public abstract kind(): string;
 
+  /**
+   * Translation map.
+   */
   protected translate: Map<string, string> = new Map();
+
+  /**
+   * Get translation string for format.
+   * @param kind The format.
+   */
+  protected static getFormat(kind: string) {
+    return (kind.toUpperCase() === 'BLDT' ? BrfTransformer.format.BLDT :
+      BrfTransformer.format.NABT);
+  }
 
   /**
    * Sets up the brf to unicode map.
    */
   protected abstract setupMap(): void;
 
-  constructor(private _kind: string = 'NABT',
-              src: string = 'brf', dst: string = 'output') {
+  /**
+   * @override
+   */
+  constructor(src: string, dst: string) {
     super(src, dst);
-    this.kind = this._kind;
-  }
-
-  public get kind() {
-    return this._kind;
-  }
-
-  public set kind(kind: string) {
-    this._kind = kind;
-    this.translate.clear();
     this.setupMap();
   }
 
@@ -63,6 +79,8 @@ abstract class BrailleTransformer extends AbstractTransformer {
     for (let str of src.split('')) {
       let dst = this.translate.get(str.toLowerCase());
       if (!dst) {
+        // TODO: Make this more informative! Maybe throw the error only at the
+        // end, with position?
         throw new Error('Illegal input character: ' + str);
       }
       result += dst;
@@ -72,30 +90,88 @@ abstract class BrailleTransformer extends AbstractTransformer {
 
 }
 
-export class Unicode2Brf extends BrailleTransformer {
+abstract class Unicode2Brf extends BrfTransformer {
+  
+  /**
+   * @override
+   */
+  constructor() {
+    super('expected', '');
+    this.dst = this.kind();
+  }
 
   /**
    * @override
    */
   protected setupMap() {
     let count = 0;
-    for (let str of BrailleTransformer.getFormat(this.kind).split('')) {
+    console.log(this.kind());
+    for (let str of BrfTransformer.getFormat(this.kind()).split('')) {
       this.translate.set(String.fromCodePoint(0x2800 + count++), str);
     }
   }
 
 }
 
-export class Brf2Unicode extends BrailleTransformer {
+abstract class Brf2Unicode extends BrfTransformer {
+
+  /**
+   * @override
+   */
+  constructor() {
+    super('', 'expected');
+    this.src = this.kind();
+  }
 
   /**
    * @override
    */
   protected setupMap() {
     let count = 0;
-    for (let str of BrailleTransformer.getFormat(this.kind).split('')) {
+    console.log(this.kind());
+    for (let str of BrfTransformer.getFormat(this.kind()).split('')) {
       this.translate.set(str, String.fromCodePoint(0x2800 + count++));
     }
   }
 
+}
+
+export class Nabt2Unicode extends Brf2Unicode {
+
+  /**
+   * @override
+   */
+  public kind() {
+    return 'NABT';
+  }
+}
+
+export class Bldt2Unicode extends Brf2Unicode {
+
+  /**
+   * @override
+   */
+  public kind() {
+    return 'BLDT';
+  }
+}
+
+export class Unicode2Nabt extends Unicode2Brf {
+
+  /**
+   * @override
+   */
+  public kind() {
+    return 'NABT';
+  }
+}
+
+export class Unicode2Bldt extends Unicode2Brf {
+
+  /**
+   * @override
+   */
+  public kind() {
+    return 'BLDT';
+  }
 }
