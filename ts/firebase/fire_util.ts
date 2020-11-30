@@ -24,7 +24,7 @@ import * as FC from './fire_constants';
 /**
  * Verbosity flag.
  */
-export let verbose: boolean = false;
+export let verbose: boolean = true;
 
 /**
  * Output method for controlling verbosity.

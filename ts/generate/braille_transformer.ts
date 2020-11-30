@@ -23,13 +23,13 @@ import {AbstractTransformer} from './transformers';
 abstract class BrailleTransformer extends AbstractTransformer {
 
   protected static format = {
-    NABT: ' A1B\'K2L@CIF/MSP"E3H9O6R^DJG>NTQ,*5<-U8V.%[$+X!&;:4\\0Z7(_?W]#Y)=',
+    NABT: ' a1b\'k2l@cif/msp"e3h9o6r^djg>ntq,*5<-u8v.%[$+x!&;:4\\0z7(_?w]#y)=',
     BLDT: ' a1b\'k2l`cif/msp"e3h9o6r~djg>ntq,*5<-u8v.%{$+x!&;:4|0z7(_?w}#y)='
   }
 
   protected static getFormat(kind: string) {
-    return (kind === 'NABT' ? BrailleTransformer.format.NABT :
-      BrailleTransformer.format.BLDT)
+    return (kind === 'BLDT' ? BrailleTransformer.format.BLDT :
+      BrailleTransformer.format.NABT)
   }
 
   protected translate: Map<string, string> = new Map();
@@ -39,7 +39,7 @@ abstract class BrailleTransformer extends AbstractTransformer {
    */
   protected abstract setupMap(): void;
 
-  constructor(private _kind: string = 'BLDT',
+  constructor(private _kind: string = 'NABT',
               src: string = 'brf', dst: string = 'output') {
     super(src, dst);
     this.kind = this._kind;
@@ -61,7 +61,7 @@ abstract class BrailleTransformer extends AbstractTransformer {
   public via(src: string) {
     let result = '';
     for (let str of src.split('')) {
-      let dst = this.translate.get(str);
+      let dst = this.translate.get(str.toLowerCase());
       if (!dst) {
         throw new Error('Illegal input character: ' + str);
       }
