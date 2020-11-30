@@ -73,11 +73,10 @@ export class FireTest {
 
   protected jumpTest(direction: boolean, stop: (x: FC.Status) => boolean) {
     let currentCount = this.countTests;
-    let test;
-    do {
-      test = this.nextTest(direction);
-    } while (!stop(test[FC.Interaction]) && this.countTests !== currentCount);
-    return currentCount !== this.countTests ? test : this.nextTest(direction);
+    while (!stop(this.nextTest(direction)[FC.Interaction]) &&
+      this.countTests !== currentCount) {}
+    return currentCount !== this.countTests ? this.currentTest() :
+      this.nextTest(direction);
   }
 
   // Where should that go?
