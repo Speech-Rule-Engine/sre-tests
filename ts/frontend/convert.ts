@@ -28,7 +28,7 @@ import {init as initButtons} from './buttons';
 let transformer: Brf2Unicode = null;
 let backtransformer: Unicode2Brf = null;
 let field: {[name: string]: Element} = {};
-export let fireTest: FireTest = null;
+let fireTest: FireTest = null;
 let current: string = '';
 
 declare const MathJax: any;
@@ -95,7 +95,8 @@ async function initFile(collection: string, file: string) {
   backtransformer = new Unicode2Brf();
   // TODO: Sort this out properly!
   const db = firebase.app().firestore();
-  fireTest = new FireTest(db, collection, file, getTest, setTest);
+  let data = await FU.downloadData(db, collection, file);
+  fireTest = new FireTest(data.tests, data.order, getTest, setTest);
   field.ip = document.getElementById('input');
   field.out = document.getElementById('braille');
   field.error = document.getElementById('error');
