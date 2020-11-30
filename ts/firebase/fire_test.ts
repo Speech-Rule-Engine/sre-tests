@@ -20,23 +20,24 @@
 
 import {JsonTest, JsonTests} from '../base/test_util';
 import * as FC from './fire_constants';
+import * as FU from './fire_util';
 
 export class FireTest {
 
   private countTests = 0;
   private preparedTests: JsonTest[] = [];
-  private _keys: string[] = [];
+  public tests: JsonTests;
+  public order: string[];
+  private _data: JsonTests;
 
-  constructor(public tests: JsonTests,
-              public order: string[],
+
+  constructor(public db: any, public collection: string, public doc: string,
               public getTest: () => JsonTest,
               public setTest: (test: JsonTest) => void) {
-    this._keys = Object.keys(tests);
-    this.prepareTests();
   }
 
-  get keys() {
-    return this._keys;
+  public getData() {
+    return this._data;
   }
 
   /**
@@ -47,7 +48,10 @@ export class FireTest {
   }
 
   // This should probably be specialised in a subclass;
-  protected prepareTests() {
+  public async prepareTests() {
+    this._data = await FU.downloadData(this.db, this.collection, this.doc);
+    this.order = this._data.order as string[];
+    this.tests = this._data.tests as JsonTests;
     for (let key of this.order) {
       let test = this.tests[key];
       test.brf = '';
@@ -67,8 +71,17 @@ export class FireTest {
     return this.currentTest();
   }
 
+  protected jumpTest(direction: boolean, stop: (x: FC.Status) => boolean) {
+    let currentCount = this.countTests;
+    let test;
+    do {
+      test = this.nextTest(direction);
+    } while (!stop(test[FC.Interaction]) && this.countTests !== currentCount);
+    return currentCount !== this.countTests ? test : this.nextTest(direction);
+  }
+
   // Where should that go?
-  public saveTest(values: JsonTest) {
+  public async saveTest(values: JsonTest) {
     let test = this.currentTest();
     let status = null;
     for (let key of Object.keys(values)) {
@@ -90,8 +103,8 @@ export class FireTest {
    * The next test in the cycle.
    * @param {boolean} direction Forward if true.
    */
-  public cycleTests(direction: boolean) {
-    this.saveTest(this.getTest());
+  public async cycleTests(direction: boolean) {
+    await this.saveTest(this.getTest());
     this.setTest(this.nextTest(direction));
   }
 
@@ -99,18 +112,22 @@ export class FireTest {
    * Cycle to next test the user has not changeds.
    * @param {boolean} direction Forward if true.
    */
-  public cycleUnchangedTests(direction: boolean) {
+  public async cycleUnchangedTests(direction: boolean) {
     // TODO: Add functionality.
-    this.cycleTests(direction);
+    await this.saveTest(this.getTest());
+    this.setTest(this.jumpTest(direction,
+                               (x: FC.Status) => x !== FC.Status.CHANGED));
   }
 
   /**
    * Cycle to next test the user has not seen yet.
    * @param {boolean} direction Forward if true.
    */
-  public cycleNewTests(direction: boolean) {
+  public async cycleNewTests(direction: boolean) {
     // TODO: Add functionality.
-    this.cycleTests(direction);
+    await this.saveTest(this.getTest());
+    this.setTest(this.jumpTest(direction,
+                               (x: FC.Status) => x === FC.Status.NEW));
   }
 
 }
