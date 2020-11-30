@@ -171,9 +171,5 @@ export function generatem() {
  * Changes the brf format.
  */
 export function changeFormat() {
-  console.log(kind);
-  console.log(transformer());
   kind = (field.format as HTMLButtonElement).value;
-  console.log(kind);
-  console.log(transformer());
 }

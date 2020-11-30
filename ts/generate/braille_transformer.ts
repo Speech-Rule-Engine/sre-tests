@@ -91,7 +91,7 @@ abstract class BrfTransformer extends AbstractTransformer implements BrailleTran
 }
 
 abstract class Unicode2Brf extends BrfTransformer {
-  
+
   /**
    * @override
    */
@@ -105,7 +105,6 @@ abstract class Unicode2Brf extends BrfTransformer {
    */
   protected setupMap() {
     let count = 0;
-    console.log(this.kind());
     for (let str of BrfTransformer.getFormat(this.kind()).split('')) {
       this.translate.set(String.fromCodePoint(0x2800 + count++), str);
     }
@@ -128,7 +127,6 @@ abstract class Brf2Unicode extends BrfTransformer {
    */
   protected setupMap() {
     let count = 0;
-    console.log(this.kind());
     for (let str of BrfTransformer.getFormat(this.kind()).split('')) {
       this.translate.set(str, String.fromCodePoint(0x2800 + count++));
     }
@@ -174,4 +172,154 @@ export class Unicode2Bldt extends Unicode2Brf {
   public kind() {
     return 'BLDT';
   }
+}
+
+abstract class FromMultikey extends AbstractTransformer implements BrailleTransformer {
+
+  /**
+   * @override
+   */
+  public abstract kind(): string;
+
+  public abstract toBraille(str: string): string;
+
+  public via(str: string) {
+    return str.split(',').map(this.toBraille.bind(this)).join('');
+  }
+
+}
+
+abstract class ToMultikey extends AbstractTransformer implements BrailleTransformer {
+
+  /**
+   * @override
+   */
+  public abstract kind(): string;
+
+  public abstract fromBraille(str: string): string;
+
+  public via(str: string) {
+    return str.split('').map(this.fromBraille.bind(this)).join(',');
+  }
+
+}
+
+
+export class Numeric2Braille extends FromMultikey {
+
+  /**
+   * @override
+   */
+  public kind() {
+    return '1-6';
+  }
+
+  protected static numToBraille(list: number[]): string {
+    let duplicates: {[num: number]: boolean} = {};
+    let code = 0;
+    for (let bit of list) {
+      if (!duplicates[bit] && bit > 0 && bit < 9) {
+        code += Math.pow(2, bit - 1);
+      }
+      duplicates[bit] = true;
+    }
+    let base = parseInt('2800', 16);
+    return String.fromCodePoint(base + code);
+  }
+
+  /**
+   * @override
+   */
+  public toBraille(str: string) {
+    return Numeric2Braille.numToBraille(str.split('')
+      .map(x => parseInt(x, 10)).
+      filter(x => !isNaN(x)));
+  }
+
+}
+
+export class Ascii2Braille extends Numeric2Braille {
+
+  private trans: {[char: string]: number} = {
+    ' ': 0, s: 1, d: 2, f: 3, j: 4, k: 5, l: 6
+  };
+
+  /**
+   * @override
+   */
+  public kind() {
+    return 'sdf/jkl';
+  }
+
+  /**
+   * @override
+   */
+  public toBraille(str: string) {
+    let legal = [];
+    for (let char of str.split('')) {
+      let trans = this.trans[char];
+      if (trans !== undefined) {
+        legal.push(trans);
+      }
+    }
+    return Numeric2Braille.numToBraille(legal);
+  }
+
+}
+
+export class Braille2Numeric extends ToMultikey {
+
+  /**
+   * @override
+   */
+  public kind() {
+    return '1-6';
+  }
+
+  protected static unicodeToNumber(char: string): number[] {
+    let hex = char.codePointAt(0) - 0x2800;
+    if (!hex) {
+      return [0];
+    }
+    let result = [];
+    for (let i = 1; i <= 8; i++) {
+      let bit = hex % 2;
+      if (bit) {
+        result.push(i);
+      }
+      hex = Math.floor(hex / 2);
+    }
+    return result;
+  }
+
+  /**
+   * @override
+   */
+  public fromBraille(str: string) {
+    return Braille2Numeric.unicodeToNumber(str).join('');
+  }
+
+}
+
+export class Braille2Ascii extends Braille2Numeric {
+
+  private trans: {[num: number]: string} = {
+    0: ' ', 1: 's', 2: 'd', 3: 'f', 4: 'j', 5: 'k', 6: 'l', 7: '', 8: ''
+  };
+
+  /**
+   * @override
+   */
+  public kind() {
+    return 'sdf/jkl';
+  }
+
+  /**
+   * @override
+   */
+  public fromBraille(str: string) {
+    return Braille2Numeric.unicodeToNumber(str)
+      .map(x => this.trans[x]).join('');
+  }
+
 }
