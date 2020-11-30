@@ -85,7 +85,3 @@ export async function getUsers() {
 // * Differences between user and original
 // * Harvest user input
 //
-
-// process.env.SRE_JSON_PATH='../speech-rule-engine/lib/mathmaps'; fb = require('./js/firebase/fire_backend'); fu = require('./js/firebase/fire_util');
-// db = fb.initFirebase('/home/sorge/Progressive/web/gcp-keys/nemeth-project-firebase-adminsdk-57cvs-e4cf9322a2.json');
-//

@@ -19,12 +19,16 @@
  */
 
 import {JsonTest} from '../base/test_util';
-import {Brf2Unicode} from '../generate/braille_transformer';
-import {FireTest} from './fire_test';
+import * as FC from '../firebase/fire_constants';
+import {FireTest} from '../firebase/fire_test';
+import * as FU from '../firebase/fire_util';
+import {Brf2Unicode, Unicode2Brf} from '../generate/braille_transformer';
+import {init as initButtons} from './buttons';
 
 let transformer: Brf2Unicode = null;
+let backtransformer: Unicode2Brf = null;
 let field: {[name: string]: Element} = {};
-let fireTest: FireTest = null;
+export let fireTest: FireTest = null;
 let current: string = '';
 
 declare const MathJax: any;
@@ -39,8 +43,31 @@ function setTest(test: JsonTest) {
   field.expression.innerHTML = test.input ?
     `<math>${test.input}</math>` : `\\[${test.tex}\\]`;
   field.out.innerHTML = test.expected as string;
-  (field.ip as HTMLTextAreaElement).value = test.brf;
+  // TODO: Transform here, depending on the transformation value;
+  (field.ip as HTMLTextAreaElement).value =
+    backtransformer.via(test.expected as string);
   (field.ip as HTMLTextAreaElement).focus();
+  console.log(test);
+  let status = test[FC.Interaction];
+  if (status !== undefined) {
+    switch (status) {
+      case FC.Status.NEW:
+        field.statuscolor.className = 'green';
+        field.statusvalue.innerHTML = 'New';
+        break;
+      case FC.Status.VIEWED:
+        field.statuscolor.className = 'yellow';
+        field.statusvalue.innerHTML = 'Viewed';
+        break;
+      case FC.Status.CHANGED:
+        field.statuscolor.className = 'red';
+        field.statusvalue.innerHTML = 'Changed';
+        break;
+      default:
+        field.statuscolor.className = '';
+        field.statusvalue.innerHTML = '';
+    }
+  }
   if (MathJax.typeset) {
     MathJax.typeset();
   }
@@ -51,40 +78,34 @@ function setTest(test: JsonTest) {
  * @return The test fields that are harvested from the HTML.
  */
 function getTest(): JsonTest {
-  return {brf: (field.ip as HTMLTextAreaElement).value,
-          expected: field.out.innerHTML};
+  return {expected: field.out.innerHTML};
 }
 
-export function init() {
-  console.log('Init:');
-  console.log(MathJax);
-  // console.log(firebase);
+// TODO: Work with localStorage!
+export function init(collection: string, file: string) {
   if (firebase) {
-    initFile('nemeth/rules/aata.json');
+    initFile(collection, file);
     return;
   }
   setTimeout(init, 100);
 }
 
-async function initFile(file: string) {
+async function initFile(collection: string, file: string) {
   transformer = new Brf2Unicode();
+  backtransformer = new Unicode2Brf();
   // TODO: Sort this out properly!
-  let fi = await firebase.app().firestore().collection('tests').doc(file).get();
-  let data = fi.data();
-  fireTest = new FireTest(data.tests, data.order, getTest, setTest);
+  const db = firebase.app().firestore();
+  fireTest = new FireTest(db, collection, file, getTest, setTest);
   field.ip = document.getElementById('input');
   field.out = document.getElementById('braille');
   field.error = document.getElementById('error');
   field.format = document.getElementById('format');
   field.expression = document.getElementById('mathexpression');
   field.name = document.getElementById('mathname');
-  document.querySelector('.btn.next').addEventListener('click', () => {
-    fireTest.cycleTests(true);
-  });
-  document.querySelector('.btn.prev').addEventListener('click', () => {
-    fireTest.cycleTests(false);
-  });
+  field.statuscolor = document.getElementById('statuscolor');
+  field.statusvalue = document.getElementById('statusvalue');
   fireTest.setTest(fireTest.currentTest());
+  initButtons(fireTest);
 }
 
 function translate(str: string) {
@@ -134,5 +155,7 @@ export function generatem() {
  * Changes the brf format.
  */
 export function changeFormat() {
-  transformer.kind = (field.format as HTMLButtonElement).value.toUpperCase();
+  let value = (field.format as HTMLButtonElement).value.toUpperCase();
+  transformer.kind = value;
+  backtransformer.kind = value;
 }

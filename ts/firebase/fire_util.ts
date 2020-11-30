@@ -18,22 +18,81 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
+import {JsonTest, JsonTests} from '../base/test_util';
+import * as FC from './fire_constants';
+
+/**
+ * Verbosity flag.
+ */
+export let verbose: boolean = false;
+
+/**
+ * Output method for controlling verbosity.
+ * @param {string} str The output string.
+ */
+function output(str: string) {
+  if (verbose) {
+    console.log(str);
+  }
+}
+
+/**
+ * Uploads an entire data set to firebase.
+ * @param {any} db The database.
+ * @param {string} collection The collection to add data to.
+ * @param {string} doc The document to add data to.
+ * @param {any} data The data to upload.
+ */
 export async function uploadData(db: any, collection: string,
                                  doc: string, data: any) {
   db.collection(collection).doc(doc).set(data).
     then(() => {
-      console.log(`Data for document ${doc} successfully uploaded to collection ${collection}`);
+      output(`Data for document ${doc} successfully uploaded to collection ${collection}`);
     }).
     catch((error: Error) => {
-      console.log(`Uploading data to document ${doc} in collection ${collection} failed with: ${error}`);
+      output(`Uploading data to document ${doc} in collection ${collection} failed with: ${error}`);
     });
 }
 
+/**
+ * Updates data in a nested firebase entry.
+ * @param {any} db The database.
+ * @param {string} collection The collection to add data to.
+ * @param {string} path The path to the data to update.
+ * @param {any} data The data to upload.
+ */
+export async function updateData(db: any, collection: string,
+                                 path: string, data: any, nesting: string[]) {
+  let entry: JsonTest = {};
+  let key = nesting.join('.');
+  entry[key] = data;
+  db.collection(collection).doc(path).update(entry).
+    then(() => {
+      output(`Data successfully updated in collection ${collection} with path ${path}`);
+    }).
+    catch((error: Error) => {
+      output(`Updating data in collection ${collection} with path ${path} failed with: ${error}`);
+    });
+}
+
+/**
+ * Downloads data from a document specified by a path.
+ * @param {any} db The database.
+ * @param {string} collection The collection containing the document.
+ * @param {string} path The path to the data to download.
+ * @return The data content.
+ */
 export async function downloadData(db: any, collection: string, path: string) {
   let doc = await db.collection(collection).doc(path).get();
   return doc.data();
 }
 
+/**
+ * Sets the path Downloads data from a document specified by a path.
+ * @param {any} db The database.
+ * @param {string} collection The collection containing the document.
+ * @param {string} path The path to the data to download.
+ */
 export async function setPath(db: any, collection: string, path: string) {
   let doc = path.split('/')[0];
   let paths = await db.collection(collection).doc(doc).get();
@@ -45,37 +104,77 @@ export async function setPath(db: any, collection: string, path: string) {
   uploadData(db, collection, doc, data);
 }
 
+/**
+ * Retrieves all paths for a given document in a collection.
+ * @param {any} db The database.
+ * @param {string} collection The collection containing the document.
+ * @param {string} doc The document name.
+ * @return The paths object.
+ */
 export async function getPaths(db: any, collection: string, doc: string) {
   let path = doc.split('/')[0];
   let paths = await db.collection(collection).doc(path).get();
   return paths.data();
 }
 
-
 /**
- * Updates date in collection B from collection A.
+ * Updates data in collection B from collection A for a given document.
  * @param {any} db The databae.
  * @param {string} collA Source collection.
  * @param {string} collB Target collection.
  * @param {string} doc The document to update.
+ * @return List of info on loaded documents.
  */
-export async function updateData(
+export async function updateCollection(
   db: any, collA: string, collB: string, doc: string) {
-  console.log(3);
+  let result: {name: string, information: string, path: string}[] = [];
   let paths = await getPaths(db, collA, doc);
-  console.log(paths);
   if (!paths) {
-    return;
+    return result;
   }
   for (let path of Object.keys(paths)) {
-    console.log(path);
+    let dataA = await downloadData(db, collA, path);
     let dataB = await downloadData(db, collB, path);
-    console.log(dataB);
+    result.push({
+      name: dataA.name,
+      information: dataA.information,
+      path: path
+    });
     if (!dataB) {
-      let dataA = await downloadData(db, collA, path);
-      console.log(dataA);
+      setTestsStatus(dataA);
       await uploadData(db, collB, path, dataA);
       await setPath(db, collB, path);
+      continue;
     }
+    // Update single entries.
+    let tests = dataB.tests;
+    for (let key of dataA.order) {
+      if (tests[key]) {
+        continue;
+      }
+      let entryA: JsonTest = dataA.tests[key];
+      setStatus(entryA);
+      await updateData(db, collB, path, entryA, ['tests', key]);
+    }
+    await updateData(db, collB, path, dataA.order, ['order']);
   }
+  return result;
+}
+
+/**
+ * Sets the status of all tests to new.
+ * @param {JsonTests} tests The tests object.
+ */
+function setTestsStatus(tests: JsonTests) {
+  for (let entry of Object.values(tests.tests)) {
+    setStatus(entry);
+  }
+}
+
+/**
+ * Sets the status of a single test entry to new.
+ * @param {JsonTest} entry The test entry.
+ */
+function setStatus(entry: JsonTest) {
+  entry[FC.Interaction] = FC.Status.NEW;
 }

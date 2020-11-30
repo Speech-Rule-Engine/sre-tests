@@ -67,13 +67,37 @@ td.fullwidth input {
 td.spacing {
     width: 20%
 }
+table#selection {
+    border-collapse: collapse;
+    border: 1px solid gray;
+}
+
+table#selection > tr, td, th {
+    border: 1px solid gray;
+    text-align: left;
+    padding: 5px;
+}
+
+tr.selection:hover, tr.selection:focus {
+    background-color: #ffff99;
+}
+
+#statuscolor {
+    width: 10px;
+    height: 10px;
+}
+
 .red {
     color: #880000;
-    background-color: #FFEEEE;
+    background-color: #880000;
 }
 .green {
     color: #008800;
-    background-color: #EEFFEE;
+    background-color: #008800;
+}
+.yellow {
+    color: #888800;
+    background-color: #888800;
 }
 .converter {
     display: inline-block;
@@ -126,54 +150,73 @@ textarea {
     resize: horizontal;
 }
 
-.btn {
-    position: absolute;
 
-    top: 50%;
-    transform: translateY(-50%);
+.btns {
+    position: absolute;
+    z-index: 1;
+}
+
+div.btns {
+    position: relative;
+}
+
+.btn {
 
     height: 30px;
     width: 30px;
+    margin: 3px;
 
     border-radius: 2px;
     background-color: rgba(0,0,0,0.5);
     background-position: 50% 50%;
     background-repeat: no-repeat;
-
-    z-index: 1;
 }
 
-.btn.next {
+#forward {
+  right: 40px;
+}
+
+#backward {
+  left: 10px;
+}
+
+.btn.forward.f {
     background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 50.8" enable-background="new 0 0 36 50.8" xml:space="preserve"><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="34,25.9 17.4,48.1 2.9,48.1 19.5,25.9 2.9,3.7 2.5,3.3 17,3.3 17.4,3.7 "/></svg>');
-    right: 10px;
+    width: 35px;
 }
 
-.btn.next.ff {
+.btn.forward.ff {
     background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 58.3 57.3" enable-background="new 0 0 58.3 57.3" xml:space="preserve"><g transform="rotate(180 29 29)"><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="1.6,28.6 19.8,1.3 33,1.3 14.9,28.6 33,56 19.8,56"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="43.1,1.3 56.4,1.3 38.2,28.6 56.4,56 43.1,56 24.9,28.6"/></g></svg>');
-    right: 45px;
 }
 
-.btn.prev {
+.btn.forward.fff {
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 78.3 57.3" enable-background="new 0 0 58.3 57.3" xml:space="preserve"><g transform="rotate(180 39 29)"><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="19.8,1.3 33,1.3 14.9,28.6 33,56 19.8,56 1.6,28.6"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="43.1,1.3 56.4,1.3 38.2,28.6 56.4,56 43.1,56 24.9,28.6"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="66.4,1.3 79.7,1.3 61.5,28.6 79.7,56 66.4,56 48.2,28.6"/></g></svg>');
+}
+
+.btn.backward.f {
     background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 43.3 61" enable-background="new 0 0 43.3 61" xml:space="preserve"><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="2.1,30.6 23.3,58.7 41.6,58.7 20.6,30.6 41.6,2.7 42,2.1 23.7,2.1 23.3,2.7 "/></svg>');
-    left: 10px;
 }
 
-.btn.prev.ff {
+.btn.backward.ff {
     background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 58.3 57.3" enable-background="new 0 0 58.3 57.3" xml:space="preserve"><g><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="1.6,28.6 19.8,1.3 33,1.3 14.9,28.6 33,56 19.8,56"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="43.1,1.3 56.4,1.3 38.2,28.6 56.4,56 43.1,56 24.9,28.6"/></g></svg>');
-    left: 45px;
 }
 
+.btn.backward.fff {
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 78.3 57.3" enable-background="new 0 0 58.3 57.3" xml:space="preserve"><g><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="19.8,1.3 33,1.3 14.9,28.6 33,56 19.8,56 1.6,28.6"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="43.1,1.3 56.4,1.3 38.2,28.6 56.4,56 43.1,56 24.9,28.6"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="66.4,1.3 79.7,1.3 61.5,28.6 79.7,56 66.4,56 48.2,28.6"/></g></svg>');
+}
 
-
-
-.btn.next.old {
+.btn.next.arrow {
     background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M25.557 14.7L13.818 2.961 16.8 0l16.8 16.8-16.8 16.8-2.961-2.961L25.557 18.9H0v-4.2z" fill="%23FFF" fill-rule="evenodd"/></svg>');
     right: 10px;
 }
 
-.btn.prev.old {
+.btn.prev.arrow {
     background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M33.6 14.7H8.043L19.782 2.961 16.8 0 0 16.8l16.8 16.8 2.961-2.961L8.043 18.9H33.6z" fill="%23FFF" fill-rule="evenodd"/></svg>');
     left: 10px;
 }
 
 
+.btn:hover, .btn:focus {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}

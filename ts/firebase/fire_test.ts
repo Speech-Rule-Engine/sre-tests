@@ -19,6 +19,7 @@
  */
 
 import {JsonTest, JsonTests} from '../base/test_util';
+import * as FC from './fire_constants';
 
 export class FireTest {
 
@@ -69,8 +70,19 @@ export class FireTest {
   // Where should that go?
   public saveTest(values: JsonTest) {
     let test = this.currentTest();
+    let status = null;
     for (let key of Object.keys(values)) {
+      if (test[key] !== values[key]) {
+        status = FC.Status.CHANGED;
+      }
       test[key] = values[key];
+    }
+    if (status === FC.Status.CHANGED) {
+      // Save;
+      test[FC.Interaction] = status;
+    }
+    if (!status && !test[FC.Interaction]) {
+      test[FC.Interaction] = FC.Status.VIEWED;
     }
   }
 
@@ -81,6 +93,24 @@ export class FireTest {
   public cycleTests(direction: boolean) {
     this.saveTest(this.getTest());
     this.setTest(this.nextTest(direction));
+  }
+
+  /**
+   * Cycle to next test the user has not changeds.
+   * @param {boolean} direction Forward if true.
+   */
+  public cycleUnchangedTests(direction: boolean) {
+    // TODO: Add functionality.
+    this.cycleTests(direction);
+  }
+
+  /**
+   * Cycle to next test the user has not seen yet.
+   * @param {boolean} direction Forward if true.
+   */
+  public cycleNewTests(direction: boolean) {
+    // TODO: Add functionality.
+    this.cycleTests(direction);
   }
 
 }

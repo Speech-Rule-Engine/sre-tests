@@ -5,7 +5,7 @@ let update = async function(authResult) {
   div.textContent = 'Updating...';
   document.body.appendChild(div);
   await Fireup.update(firebase.firestore(), 'tests', authResult.user.uid, 'nemeth');
-  window.location.assign('brf2nemeth.html');
+  window.location.assign('selection.html');
 };
 
 let uiConfig = {

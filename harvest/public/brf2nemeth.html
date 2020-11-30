@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width">
-  <title>Convert BRF to Nemeth</title>
+  <title>Nemeth Test Generation: Editor</title>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script>
   MathJax = {
@@ -17,39 +17,43 @@
 
 <span class="title">BRF to Nemeth Converter</span>
 
-<span class="btn next"></span><span class="btn prev"></span>
-<span class="btn next ff"></span><span class="btn prev ff"></span>
-
 <div class="converter" id="inputpanel">
   <div class="section" id="mathjax">
     <span class="pretitle" id="mathname"></span>
     <span class="mathexpression" id="mathexpression"></span>
   </div>
   <div class="section">
-    <span class="pretitle">Input:
-    <span><table class="fullwidth">
-      <tr>
-        <td>
+    <span class="pretitle">Input Format:
+    <span>
         <select id="format" onchange="Convert.changeFormat()">
           <option value="bldt">BLDT</option>
           <option value="nabt">NABT</option>
         </select>
-        </td>
-      </tr>
-    </table></span>
+        </span>
     </span>
     <span class="active">
       <textarea rows="1" cols="80" id="input" onMouseUp="Convert.generatem()" onKeyUp="Convert.generate()"></textarea>
     </span>
   </div>
+  <div class="section">
+    <span class="pretitle"></span>
+    <span class="active"><div class="error" id="error"> </div></span>
+  </div>
   <div class="section"></div>
   <div class="section">
-    <span class="pretitle">Unicode Output:</span>
+    <span class="pretitle">Braille:</span>
     <span class="active"><div class="braille" id="braille"> </div></span>
   </div>
   <div class="section">
     <span class="pretitle"></span>
     <span class="active"><div class="error" id="error"> </div></span>
+  </div>
+  <div class="section">
+    <span class="pretitle">Status</span>
+        <span class="active"><div class="status" id="status">
+        <span id="statuscolor"></span>
+        <span id="statusvalue"></span>
+        </div></span>
   </div>
 </div>
 
@@ -66,8 +70,19 @@
 
 <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
-    <script src="./user.js"></script>
     <script id="Braille-script" src="./braille-convert.js"></script>
-    
+    <script src="./firebase-update.js"></script>
+    <script>
+    window.addEventListener('load', () => {
+      let path = localStorage[Fireup.Fc.NemethProjectPath]
+      let user = localStorage[Fireup.Fc.NemethProjectUser]
+      console.log(firebase.auth().getUid());
+      console.log(user);
+      console.log(path);
+      if (path && user) {
+        Convert.convertInit(user, path);
+      }
+    });
+    </script>
 </body>
 </html>

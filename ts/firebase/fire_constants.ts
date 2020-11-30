@@ -26,3 +26,15 @@ export const NemethProject = 'nemeth-project';
 export const NemethCollection = 'nemeth';
 
 export const TestsCollection = 'tests';
+
+export const enum Status {
+  NEW, VIEWED, CHANGED
+}
+
+export const Interaction = 'InteractionStatus';
+
+export const NemethProjectDocuments = NemethProject + '::documents';
+
+export const NemethProjectPath = NemethProject + '::path';
+
+export const NemethProjectUser = NemethProject + '::user';
