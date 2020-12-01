@@ -48,11 +48,6 @@ abstract class BrfTransformer extends AbstractTransformer implements BrailleTran
   };
 
   /**
-   * @override
-   */
-  public abstract kind(): string;
-
-  /**
    * Translation map.
    */
   protected translate: Map<string, string> = new Map();
@@ -65,6 +60,11 @@ abstract class BrfTransformer extends AbstractTransformer implements BrailleTran
     return (kind.toUpperCase() === 'BLDT' ? BrfTransformer.format.BLDT :
       BrfTransformer.format.NABT);
   }
+
+  /**
+   * @override
+   */
+  public abstract kind(): string;
 
   /**
    * Sets up the brf to unicode map.
@@ -197,7 +197,12 @@ export class Unicode2Bldt extends Unicode2Brf {
 
 abstract class FromMultikey extends BrfTransformer {
 
-  public abstract toBraille(str: string): string;
+  /**
+   * Translates a string representing a single character to Unicode Braille.
+   * @param {string} char The input string.
+   * @return {string} The single Unicode character.
+   */
+  public abstract toBraille(char: string): string;
 
   /**
    * @override
@@ -210,6 +215,11 @@ abstract class FromMultikey extends BrfTransformer {
 
 abstract class ToMultikey extends BrfTransformer {
 
+  /**
+   * Translates a Unicode Braille character to its string representation.
+   * @param {string} char The single Unicode character.
+   * @return {string} The string representation.
+   */
   public abstract fromBraille(str: string): string;
 
   /**
@@ -295,7 +305,7 @@ export class Ascii2Braille extends Numeric2Braille {
       [[',', 'T'], [' ', '0'], ['s', '1'], ['d', '2'],
        ['f', '3'], ['j', '4'], ['k', '5'], ['l', '6']]);
   }
-  
+
 }
 
 export class Braille2Numeric extends ToMultikey {
@@ -338,7 +348,7 @@ export class Braille2Numeric extends ToMultikey {
       this.translate.set(String.fromCodePoint(0x2800 + i), 'T');
     }
   }
-  
+
 }
 
 export class Braille2Ascii extends Braille2Numeric {
@@ -370,5 +380,5 @@ export class Braille2Ascii extends Braille2Numeric {
       this.translate.set(String.fromCodePoint(0x2800 + i), 'T');
     }
   }
-  
+
 }
