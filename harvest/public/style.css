@@ -143,6 +143,7 @@ div.section {
 
 .mathexpression {
     padding: .3em;
+    font-size: 150%;
 }
 
 textarea {
@@ -152,12 +153,13 @@ textarea {
 
 
 .btns {
-    position: absolute;
+    /* position: absolute; */
     z-index: 1;
 }
 
 div.btns {
     position: relative;
+    display: flex;
 }
 
 .btn {
@@ -172,12 +174,23 @@ div.btns {
     background-repeat: no-repeat;
 }
 
+.btn.center {
+    color: white;
+    display: block;
+    font-size: 150%;
+    padding-left: 10px;
+    padding-right: 110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #next {
-  right: 40px;
+    padding-right: 40px;
 }
 
 #previous {
-  left: 10px;
+    padding-left: 20px;
+    margin-right; auto;
 }
 
 .btn.next.f {

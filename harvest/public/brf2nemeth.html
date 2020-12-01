@@ -28,6 +28,8 @@
         <select id="format" onchange="Convert.changeFormat()">
           <option value="nabt">NABT</option>
           <option value="bldt">BLDT</option>
+          <option value="sdf/jkl">sdf/jkl</option>
+          <option value="1-6">1-6</option>
         </select>
         </span>
     </span>
@@ -76,9 +78,6 @@
     window.addEventListener('load', () => {
       let path = localStorage[Fireup.Fc.NemethProjectPath]
       let user = localStorage[Fireup.Fc.NemethProjectUser]
-      console.log(firebase.auth().getUid());
-      console.log(user);
-      console.log(path);
       if (path && user) {
         Convert.convertInit(user, path);
       }

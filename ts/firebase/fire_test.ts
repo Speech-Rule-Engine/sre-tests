@@ -24,10 +24,10 @@ import * as FU from './fire_util';
 
 export class FireTest {
 
-  private countTests = 0;
-  private preparedTests: JsonTest[] = [];
   public tests: JsonTests;
   public order: string[];
+  private countTests = 0;
+  private preparedTests: JsonTest[] = [];
   private _data: JsonTests;
 
 

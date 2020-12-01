@@ -27,6 +27,14 @@ export interface BrailleTransformer extends Transformer {
    */
   kind(): string;
 
+  /**
+   * Cleans a string to be suitable for the transformer.
+   * @param {string} str The input string.
+   * @return {[string, string]} The cleaned input and the comma separated
+   * erroroneous elements.
+   */
+  cleanInput(str: string): [string, string];
+
 }
 
 abstract class BrfTransformer extends AbstractTransformer implements BrailleTransformer {
@@ -86,6 +94,19 @@ abstract class BrfTransformer extends AbstractTransformer implements BrailleTran
       result += dst;
     }
     return result;
+  }
+
+  public cleanInput(str: string): [string, string] {
+    let input = [];
+    let error = [];
+    for (let char of str.split('')) {
+      if (this.translate.get(char) !== undefined) {
+        input.push(char);
+      } else {
+        error.push(char);
+      }
+    }
+    return [input.join(''), error.join(', ')];
   }
 
 }
@@ -174,36 +195,31 @@ export class Unicode2Bldt extends Unicode2Brf {
   }
 }
 
-abstract class FromMultikey extends AbstractTransformer implements BrailleTransformer {
+abstract class FromMultikey extends BrfTransformer {
+
+  public abstract toBraille(str: string): string;
 
   /**
    * @override
    */
-  public abstract kind(): string;
-
-  public abstract toBraille(str: string): string;
-
   public via(str: string) {
     return str.split(',').map(this.toBraille.bind(this)).join('');
   }
 
 }
 
-abstract class ToMultikey extends AbstractTransformer implements BrailleTransformer {
+abstract class ToMultikey extends BrfTransformer {
+
+  public abstract fromBraille(str: string): string;
 
   /**
    * @override
    */
-  public abstract kind(): string;
-
-  public abstract fromBraille(str: string): string;
-
   public via(str: string) {
     return str.split('').map(this.fromBraille.bind(this)).join(',');
   }
 
 }
-
 
 export class Numeric2Braille extends FromMultikey {
 
@@ -236,13 +252,19 @@ export class Numeric2Braille extends FromMultikey {
       filter(x => !isNaN(x)));
   }
 
+  /**
+   * @override
+   */
+  protected setupMap() {
+    for (let i = 0; i <= 8; i++) {
+      this.translate.set(i.toString(), 'T');
+    }
+    this.translate.set(',', 'T');
+  }
+
 }
 
 export class Ascii2Braille extends Numeric2Braille {
-
-  private trans: {[char: string]: number} = {
-    ' ': 0, s: 1, d: 2, f: 3, j: 4, k: 5, l: 6
-  };
 
   /**
    * @override
@@ -257,14 +279,23 @@ export class Ascii2Braille extends Numeric2Braille {
   public toBraille(str: string) {
     let legal = [];
     for (let char of str.split('')) {
-      let trans = this.trans[char];
-      if (trans !== undefined) {
+      let trans = parseInt(this.translate.get(char), 10);
+      if (!isNaN(trans)) {
         legal.push(trans);
       }
     }
     return Numeric2Braille.numToBraille(legal);
   }
 
+  /**
+   * @override
+   */
+  protected setupMap() {
+    this.translate = new Map(
+      [[',', 'T'], [' ', '0'], ['s', '1'], ['d', '2'],
+       ['f', '3'], ['j', '4'], ['k', '5'], ['l', '6']]);
+  }
+  
 }
 
 export class Braille2Numeric extends ToMultikey {
@@ -299,6 +330,15 @@ export class Braille2Numeric extends ToMultikey {
     return Braille2Numeric.unicodeToNumber(str).join('');
   }
 
+  /**
+   * @override
+   */
+  protected setupMap() {
+    for (let i = 0; i <= 0xFF; i++) {
+      this.translate.set(String.fromCodePoint(0x2800 + i), 'T');
+    }
+  }
+  
 }
 
 export class Braille2Ascii extends Braille2Numeric {
@@ -322,4 +362,13 @@ export class Braille2Ascii extends Braille2Numeric {
       .map(x => this.trans[x]).join('');
   }
 
+  /**
+   * @override
+   */
+  protected setupMap() {
+    for (let i = 0; i <= 0x3F; i++) {
+      this.translate.set(String.fromCodePoint(0x2800 + i), 'T');
+    }
+  }
+  
 }

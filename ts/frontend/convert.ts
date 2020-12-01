@@ -21,17 +21,21 @@
 import {JsonTest} from '../base/test_util';
 import * as FC from '../firebase/fire_constants';
 import {FireTest} from '../firebase/fire_test';
-import {Bldt2Unicode, BrailleTransformer, Nabt2Unicode, Unicode2Bldt, Unicode2Nabt} from '../generate/braille_transformer';
+import * as BT  from '../generate/braille_transformer';
 import {init as initButtons} from './buttons';
 
-let transformers: Map<string, BrailleTransformer> = new Map<string, BrailleTransformer>([
-  ['NABT', new Nabt2Unicode()],
-  ['BLDT', new Bldt2Unicode()]
+let transformers: Map<string, BT.BrailleTransformer> = new Map<string, BT.BrailleTransformer>([
+  ['NABT', new BT.Nabt2Unicode()],
+  ['BLDT', new BT.Bldt2Unicode()],
+  ['SDF/JKL', new BT.Ascii2Braille('', '')],
+  ['1-6', new BT.Numeric2Braille('', '')]
 ]);
 
-let backtransformers: Map<string, BrailleTransformer> = new Map<string, BrailleTransformer>([
-  ['NABT', new Unicode2Nabt()],
-  ['BLDT', new Unicode2Bldt()]
+let backtransformers: Map<string, BT.BrailleTransformer> = new Map<string, BT.BrailleTransformer>([
+  ['NABT', new BT.Unicode2Nabt()],
+  ['BLDT', new BT.Unicode2Bldt()],
+  ['SDF/JKL', new BT.Braille2Ascii('', '')],
+  ['1-6', new BT.Braille2Numeric('', '')]
 ]);
 
 let kind = 'NABT';
@@ -64,8 +68,13 @@ function setTest(test: JsonTest) {
   (field.ip as HTMLTextAreaElement).value =
     backtransformer().via(test.expected as string);
   (field.ip as HTMLTextAreaElement).focus();
-  console.log(test);
-  let status = test[FC.Interaction];
+  setStatus(test[FC.Interaction]);
+  if (MathJax.typeset) {
+    MathJax.typeset();
+  }
+}
+
+function setStatus(status: FC.Status) {
   if (status !== undefined) {
     switch (status) {
       case FC.Status.NEW:
@@ -84,9 +93,6 @@ function setTest(test: JsonTest) {
         field.statuscolor.className = '';
         field.statusvalue.innerHTML = '';
     }
-  }
-  if (MathJax.typeset) {
-    MathJax.typeset();
   }
 }
 
@@ -125,21 +131,8 @@ async function initFile(collection: string, file: string) {
 }
 
 function translate(str: string) {
-  field.error.innerHTML = '';
-  let newStr = '';
-  let result = '';
-  for (let char of str.split('')) {
-    let res = '';
-    try {
-      res = transformer().via(char);
-    } catch (e) {
-      field.error.innerHTML = 'Unknown element ' + char;
-      continue;
-    }
-    newStr += char;
-    result += res;
-  }
-  return [newStr, result];
+  let [input, error] = transformer().cleanInput(str);
+  return [input, transformer().via(input), error];
 }
 
 /**
@@ -151,13 +144,22 @@ export function generate() {
     return;
   }
   let cursor = ip.selectionStart;
-  let length = ip.value.length;
+  // let length = ip.value.length;
   field.out.innerHTML = '';
-  let [input, output] = translate(ip.value);
+  field.error.innerHTML = '';
+  let [input, output, error] = translate(ip.value);
+  if (error) {
+    field.error.innerHTML = 'Unknown ' +
+      (error.length > 1 ? 'elements ' : 'element ') + error;
+  }
+  // Change status to changed
+  if (input !== current) {
+    setStatus(FC.Status.CHANGED);
+  }
   ip.value = input;
   current = input;
   field.out.innerHTML = output;
-  ip.selectionEnd = cursor - (length - output.length);
+  ip.selectionEnd = cursor - error.length;
 }
 
 /**
@@ -171,5 +173,7 @@ export function generatem() {
  * Changes the brf format.
  */
 export function changeFormat() {
+  fireTest.saveTest(fireTest.getTest());
   kind = (field.format as HTMLButtonElement).value;
+  fireTest.setTest(fireTest.currentTest());
 }
