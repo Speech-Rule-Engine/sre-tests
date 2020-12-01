@@ -169,13 +169,13 @@ div.btns {
     margin: 3px;
 
     border-radius: 2px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: #B1DF84;
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
 
 .btn.center {
-    color: white;
+    color: black;
     display: block;
     font-size: 150%;
     padding-left: 10px;
@@ -194,37 +194,37 @@ div.btns {
 }
 
 .btn.next.f {
-    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 50.8" enable-background="new 0 0 36 50.8" xml:space="preserve"><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="34,25.9 17.4,48.1 2.9,48.1 19.5,25.9 2.9,3.7 2.5,3.3 17,3.3 17.4,3.7 "/></svg>');
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 50.8" enable-background="new 0 0 36 50.8" xml:space="preserve"><polygon fill-rule="evenodd" clip-rule="evenodd" fill="black" points="34,25.9 17.4,48.1 2.9,48.1 19.5,25.9 2.9,3.7 2.5,3.3 17,3.3 17.4,3.7 "/></svg>');
     width: 35px;
 }
 
 .btn.next.ff {
-    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 58.3 57.3" enable-background="new 0 0 58.3 57.3" xml:space="preserve"><g transform="rotate(180 29 29)"><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="1.6,28.6 19.8,1.3 33,1.3 14.9,28.6 33,56 19.8,56"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="43.1,1.3 56.4,1.3 38.2,28.6 56.4,56 43.1,56 24.9,28.6"/></g></svg>');
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 58.3 57.3" enable-background="new 0 0 58.3 57.3" xml:space="preserve"><g transform="rotate(180 29 29)"><polygon fill-rule="evenodd" clip-rule="evenodd" fill="black" points="1.6,28.6 19.8,1.3 33,1.3 14.9,28.6 33,56 19.8,56"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="black" points="43.1,1.3 56.4,1.3 38.2,28.6 56.4,56 43.1,56 24.9,28.6"/></g></svg>');
 }
 
 .btn.next.fff {
-    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 78.3 57.3" enable-background="new 0 0 58.3 57.3" xml:space="preserve"><g transform="rotate(180 39 29)"><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="19.8,1.3 33,1.3 14.9,28.6 33,56 19.8,56 1.6,28.6"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="43.1,1.3 56.4,1.3 38.2,28.6 56.4,56 43.1,56 24.9,28.6"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="66.4,1.3 79.7,1.3 61.5,28.6 79.7,56 66.4,56 48.2,28.6"/></g></svg>');
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 78.3 57.3" enable-background="new 0 0 58.3 57.3" xml:space="preserve"><g transform="rotate(180 39 29)"><polygon fill-rule="evenodd" clip-rule="evenodd" fill="black" points="19.8,1.3 33,1.3 14.9,28.6 33,56 19.8,56 1.6,28.6"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="black" points="43.1,1.3 56.4,1.3 38.2,28.6 56.4,56 43.1,56 24.9,28.6"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="black" points="66.4,1.3 79.7,1.3 61.5,28.6 79.7,56 66.4,56 48.2,28.6"/></g></svg>');
 }
 
 .btn.previous.f {
-    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 43.3 61" enable-background="new 0 0 43.3 61" xml:space="preserve"><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="2.1,30.6 23.3,58.7 41.6,58.7 20.6,30.6 41.6,2.7 42,2.1 23.7,2.1 23.3,2.7 "/></svg>');
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 43.3 61" enable-background="new 0 0 43.3 61" xml:space="preserve"><polygon fill-rule="evenodd" clip-rule="evenodd" fill="black" points="2.1,30.6 23.3,58.7 41.6,58.7 20.6,30.6 41.6,2.7 42,2.1 23.7,2.1 23.3,2.7 "/></svg>');
 }
 
 .btn.previous.ff {
-    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 58.3 57.3" enable-background="new 0 0 58.3 57.3" xml:space="preserve"><g><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="1.6,28.6 19.8,1.3 33,1.3 14.9,28.6 33,56 19.8,56"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="43.1,1.3 56.4,1.3 38.2,28.6 56.4,56 43.1,56 24.9,28.6"/></g></svg>');
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 58.3 57.3" enable-background="new 0 0 58.3 57.3" xml:space="preserve"><g><polygon fill-rule="evenodd" clip-rule="evenodd" fill="black" points="1.6,28.6 19.8,1.3 33,1.3 14.9,28.6 33,56 19.8,56"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="black" points="43.1,1.3 56.4,1.3 38.2,28.6 56.4,56 43.1,56 24.9,28.6"/></g></svg>');
 }
 
 .btn.previous.fff {
-    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 78.3 57.3" enable-background="new 0 0 58.3 57.3" xml:space="preserve"><g><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="19.8,1.3 33,1.3 14.9,28.6 33,56 19.8,56 1.6,28.6"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="43.1,1.3 56.4,1.3 38.2,28.6 56.4,56 43.1,56 24.9,28.6"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%23FFF" points="66.4,1.3 79.7,1.3 61.5,28.6 79.7,56 66.4,56 48.2,28.6"/></g></svg>');
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 78.3 57.3" enable-background="new 0 0 58.3 57.3" xml:space="preserve"><g><polygon fill-rule="evenodd" clip-rule="evenodd" fill="black" points="19.8,1.3 33,1.3 14.9,28.6 33,56 19.8,56 1.6,28.6"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="black" points="43.1,1.3 56.4,1.3 38.2,28.6 56.4,56 43.1,56 24.9,28.6"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="black" points="66.4,1.3 79.7,1.3 61.5,28.6 79.7,56 66.4,56 48.2,28.6"/></g></svg>');
 }
 
 .btn.next.arrow {
-    background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M25.557 14.7L13.818 2.961 16.8 0l16.8 16.8-16.8 16.8-2.961-2.961L25.557 18.9H0v-4.2z" fill="%23FFF" fill-rule="evenodd"/></svg>');
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M25.557 14.7L13.818 2.961 16.8 0l16.8 16.8-16.8 16.8-2.961-2.961L25.557 18.9H0v-4.2z" fill="black" fill-rule="evenodd"/></svg>');
     right: 10px;
 }
 
 .btn.prev.arrow {
-    background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M33.6 14.7H8.043L19.782 2.961 16.8 0 0 16.8l16.8 16.8 2.961-2.961L8.043 18.9H33.6z" fill="%23FFF" fill-rule="evenodd"/></svg>');
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M33.6 14.7H8.043L19.782 2.961 16.8 0 0 16.8l16.8 16.8 2.961-2.961L8.043 18.9H33.6z" fill="black" fill-rule="evenodd"/></svg>');
     left: 10px;
 }
 
