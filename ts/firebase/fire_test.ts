@@ -26,10 +26,11 @@ export class FireTest {
 
   public tests: JsonTests;
   public order: string[];
+  public update: boolean = true;
+
   private countTests = 0;
   private preparedTests: JsonTest[] = [];
   private _data: JsonTests;
-
 
   constructor(public db: any, public collection: string, public doc: string,
               public getTest: () => JsonTest,
@@ -90,11 +91,19 @@ export class FireTest {
       test[key] = values[key];
     }
     if (status === FC.Status.CHANGED) {
-      // Save;
+      // Save full test.
       test[FC.Interaction] = status;
+      if (this.update) {
+        FU.updateData(this.db, this.collection,
+                      this.doc, test, ['tests', test.name]);
+      }
     }
     if (!status && !test[FC.Interaction]) {
       test[FC.Interaction] = FC.Status.VIEWED;
+      if (this.update) {
+        FU.updateData(this.db, this.collection, this.doc, test[FC.Interaction],
+                      ['tests', test.name, FC.Interaction]);
+      }
     }
   }
 
