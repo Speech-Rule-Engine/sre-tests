@@ -75,11 +75,26 @@ export function addMissing(expected: string) {
 }
 
 /**
+ * Generates actual expected values for all tests and writes them to the given
+ * expected file.
+ * @param expected Relative file name of the expected file.
+ */
+export function addActual(expected: string) {
+  let [result, tests] = runTests(expected, true);
+  let file = tests['jsonFile'];
+  let oldJson: JsonFile = TestUtil.loadJson(file);
+  Object.assign(oldJson.tests, result);
+  TestUtil.saveJson(file, oldJson);
+}
+
+/**
  * Runs all tests for the given expected file and collates the failing ones.
  * @param expected Relative file name of the expected file.
+ * @param all Optional flag to run all tests, not just the really failing ones.
  * @return The JSON structure with all expected values for failed tests.
  */
-export function runTests(expected: string): JsonTests {
+export function runTests(
+  expected: string, all: boolean = false): [JsonTests, AbstractJsonTest] {
   let obj = factoryget(expected);
   obj.prepare();
   let result: JsonTests = {};
@@ -91,7 +106,9 @@ export function runTests(expected: string): JsonTests {
     if (key.match(/_comment/)) {
       continue;
     }
-    test.expected = '';
+    if (all) {
+      test.expected = '';
+    }
     try {
       obj.method.apply(obj, obj.pick(test));
     } catch (e) {
@@ -102,5 +119,5 @@ export function runTests(expected: string): JsonTests {
   try {
     obj.tearDownTest();
   } catch (e) {}
-  return result;
+  return [result, obj];
 }
