@@ -231,11 +231,13 @@ export class EnrichMathmlTest extends SemanticTest {
   private attrBlacklist: string[] = [];
 
   /**
-   * @constructor
+   * @override
    */
-  constructor() {
-    super();
-    this.setActive('EnrichExamples', 'json');
+  public prepare() {
+    super.prepare();
+    if (this.jsonTests.active) {
+      this.setActive(this.jsonTests.active, 'json');
+    }
   }
 
   /**

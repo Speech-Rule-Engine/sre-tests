@@ -1,6 +1,7 @@
 {
   "information": "Mathml enrichment tests for limits heuristic.",
   "base": "input/base/semantic_limits.json",
+  "active": "EnrichExamples",
   "factory": "enrichMathml",
   "tests": {
     "Sum_0": {
