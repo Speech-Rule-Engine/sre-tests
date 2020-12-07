@@ -46,7 +46,7 @@ function runTests(
     }
     let test = base[key];
     if (flag !== TestFlag.FAILED) {
-      test.expected = '';
+      test.expected = null;
     }
     try {
       tests.method.apply(tests, tests.pick(test));

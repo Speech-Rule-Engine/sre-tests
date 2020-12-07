@@ -35,9 +35,15 @@ export class PrefixTest extends SpeechTest {
    */
   public modality = 'prefix';
 
-  public id: number = 0;
+  /**
+   * The id of the subnode. Passed on if one is given.
+   */
+  public id: number = null;
 
-  public subExpr: Element = null;
+  /**
+   * The subexpression for output file.
+   */
+   public subExpr: Element = null;
 
   constructor() {
     super();
@@ -49,7 +55,7 @@ export class PrefixTest extends SpeechTest {
    * @override
    */
   public method(...args: string[]) {
-    this.id = parseInt(args[2], 10);
+    this.id = args[2] === undefined ? null : parseInt(args[2], 10);
     if (args[3]) {
       sre.Grammar.getInstance().setParameter(args[3], true);
     }
@@ -61,14 +67,17 @@ export class PrefixTest extends SpeechTest {
    * @override
    */
   public getSpeech(mml: string) {
+    sre.Engine.getInstance().cache = false;
     let stree = sre.Semantic.getTreeFromString(mml);
     let node = stree.root.querySelectorAll(
+      this.id === null ?
+        (x: Element) => (x.attributes as any)['extid'] === 'A' :
       (x: Element) => parseInt(x.id, 10) === this.id)[0];
-    this.subExpr = node.mathmlTree;
     if (!node) {
       this.assert.fail();
       return '';
     }
+    this.subExpr = node.mathmlTree;
     return sre.SpeechGeneratorUtil.retrievePrefix(node);
   }
 
