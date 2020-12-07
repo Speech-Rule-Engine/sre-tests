@@ -18,106 +18,93 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
+import {JsonFile, JsonTests, TestUtil} from '../base/test_util';
 import {AbstractJsonTest} from '../classes/abstract_test';
 import {get as factoryget} from '../classes/test_factory';
-import {JsonFile, JsonTests, TestUtil} from '../base/test_util';
 
+const enum TestFlag {ALL, FAILED, MISSING}
 
 /**
- * Runs all missing tests for the given expected file and records their actual
- * output.
+ * Runs all tests for the given expected file and collates the failing ones.
  * @param expected Relative file name of the expected file.
+ * @param flag Flag which tests to run. Values: all, failed, missing.
  * @return Pair of JSON structure with expected output and the test object.
  */
-function runMissing(expected: string): [JsonTests, AbstractJsonTest] {
+function runTests(
+  expected: string, flag: TestFlag): [JsonTests, AbstractJsonTest] {
   let tests = factoryget(expected);
   tests.prepare();
   let result: JsonTests = {};
-  let base = tests.baseTests.tests as JsonTests;
   try {
     tests.setUpTest();
   } catch (e) {}
-  for (let miss of tests.warn) {
-    let test = base[miss];
-    test.expected = '';
+  let base = tests.baseTests.tests as JsonTests;
+  let keys = flag === TestFlag.MISSING ? tests.warn : Object.keys(base);
+  for (let key of keys) {
+    if (key.match(/_comment/)) {
+      continue;
+    }
+    let test = base[key];
+    if (flag !== TestFlag.FAILED) {
+      test.expected = '';
+    }
     try {
       tests.method.apply(tests, tests.pick(test));
     } catch (e) {
-      result[miss] = {'expected': e.actual};
+      result[key] = {'expected': e.actual};
     }
   }
   try {
     tests.tearDownTest();
   } catch (e) {}
-  return [result, tests]; // Return tests for post-processing.
+  return [result, tests];
 }
 
 /**
- * Prints all output for missing tests to console.
+ * Generates expected values for the flagged tests and writes them to the given
+ * expected file.
  * @param expected Relative file name of the expected file.
+ * @param flag Flag which tests to run. Values: all, failed, missing.
+ * @param dryrun Print to console instead to file.
  */
-export function printMissing(expected: string) {
-  let [result] = runMissing(expected);
-  console.log(JSON.stringify(result, null, 2));
+function add(expected: string, flag: TestFlag, dryrun: boolean) {
+  let [result, tests] = runTests(expected, flag);
+  if (dryrun) {
+    console.log(JSON.stringify(result, null, 2));
+    return;
+  }
+  let file = tests['jsonFile'];
+  let oldJson: JsonFile = TestUtil.loadJson(file);
+  Object.assign(oldJson.tests, result);
+  TestUtil.saveJson(file, oldJson);
 }
 
 /**
  * Generates expected values for all missing tests and writes them to the given
  * expected file.
  * @param expected Relative file name of the expected file.
+ * @param dryrun Print to console instead to file.
  */
-export function addMissing(expected: string) {
-  let [result, tests] = runMissing(expected);
-  let file = tests['jsonFile'];
-  let oldJson: JsonFile = TestUtil.loadJson(file);
-  Object.assign(oldJson.tests, result);
-  TestUtil.saveJson(file, oldJson);
+export function addMissing(expected: string, dryrun: boolean = false) {
+  add(expected, TestFlag.MISSING, dryrun);
 }
 
 /**
  * Generates actual expected values for all tests and writes them to the given
  * expected file.
  * @param expected Relative file name of the expected file.
+ * @param dryrun Print to console instead to file.
  */
-export function addActual(expected: string) {
-  let [result, tests] = runTests(expected, true);
-  let file = tests['jsonFile'];
-  let oldJson: JsonFile = TestUtil.loadJson(file);
-  Object.assign(oldJson.tests, result);
-  TestUtil.saveJson(file, oldJson);
+export function addActual(expected: string, dryrun: boolean = false) {
+  add(expected, TestFlag.ALL, dryrun);
 }
 
 /**
- * Runs all tests for the given expected file and collates the failing ones.
+ * Generates actual expected values for failed tests and writes them to the
+ * given expected file.
  * @param expected Relative file name of the expected file.
- * @param all Optional flag to run all tests, not just the really failing ones.
- * @return The JSON structure with all expected values for failed tests.
+ * @param dryrun Print to console instead to file.
  */
-export function runTests(
-  expected: string, all: boolean = false): [JsonTests, AbstractJsonTest] {
-  let obj = factoryget(expected);
-  obj.prepare();
-  let result: JsonTests = {};
-  try {
-    obj.setUpTest();
-  } catch (e) {}
-  let tests = obj.baseTests.tests;
-  for (let [key, test] of Object.entries(tests)) {
-    if (key.match(/_comment/)) {
-      continue;
-    }
-    if (all) {
-      test.expected = '';
-    }
-    try {
-      obj.method.apply(obj, obj.pick(test));
-    } catch (e) {
-      console.log(e.actual);
-      result[key] = {'expected': e.actual};
-    }
-  }
-  try {
-    obj.tearDownTest();
-  } catch (e) {}
-  return [result, obj];
+export function addFailed(expected: string, dryrun: boolean = false) {
+  add(expected, TestFlag.FAILED, dryrun);
 }
