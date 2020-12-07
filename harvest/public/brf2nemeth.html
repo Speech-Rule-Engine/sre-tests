@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width">
-  <title>Convert BRF to Nemeth</title>
+  <title>Nemeth Test Generation: Editor</title>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script>
   MathJax = {
@@ -16,17 +16,6 @@
 <body>
 
 <span class="title">BRF to Nemeth Converter</span>
-<span id="user-signed-in" class="hidden">
-  <span id="user-info">
-    <span id="name"></span>
-    (<span id="email"></span>)
-    <div><span><button id="sign-out">Sign Out</button></span>
-    <span><button id="delete-account">Delete account</button></span>
-    </div>
-  </span>
-</span>
-
-<span class="btn next"></span><span class="btn prev"></span>
 
 <div class="converter" id="inputpanel">
   <div class="section" id="mathjax">
@@ -34,49 +23,65 @@
     <span class="mathexpression" id="mathexpression"></span>
   </div>
   <div class="section">
-    <span class="pretitle">Input:
-    <span><table class="fullwidth">
-      <tr>
-        <td>
+    <span class="pretitle">Input Format:
+    <span>
         <select id="format" onchange="Convert.changeFormat()">
-          <option value="bldt">BLDT</option>
           <option value="nabt">NABT</option>
+          <option value="bldt">BLDT</option>
+          <option value="sdf/jkl">sdf/jkl</option>
+          <option value="1-6">1-6</option>
         </select>
-        </td>
-      </tr>
-    </table></span>
+        </span>
     </span>
     <span class="active">
       <textarea rows="1" cols="80" id="input" onMouseUp="Convert.generatem()" onKeyUp="Convert.generate()"></textarea>
     </span>
   </div>
+  <div class="section">
+    <span class="pretitle"></span>
+    <span class="active"><div class="error" id="error"> </div></span>
+  </div>
   <div class="section"></div>
   <div class="section">
-    <span class="pretitle">Unicode Output:</span>
+    <span class="pretitle">Braille:</span>
     <span class="active"><div class="braille" id="braille"> </div></span>
   </div>
   <div class="section">
     <span class="pretitle"></span>
     <span class="active"><div class="error" id="error"> </div></span>
   </div>
+  <div class="section">
+    <span class="pretitle">Status</span>
+        <span class="active"><div class="status" id="status">
+        <span id="statuscolor"></span>
+        <span id="statusvalue"></span>
+        </div></span>
+  </div>
 </div>
 
 
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script defer src="/__/firebase/8.1.1/firebase-app.js"></script>
-    <script defer src="/__/firebase/8.1.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.1.1/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.1.1/firebase-storage.js"></script>
+    <script src="/__/firebase/8.1.1/firebase-app.js"></script>
+    <script src="/__/firebase/8.1.1/firebase-auth.js"></script>
+    <script src="/__/firebase/8.1.1/firebase-firestore.js"></script>
+    <script src="/__/firebase/8.1.1/firebase-storage.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
 <!-- Initialize Firebase -->
-<script defer src="/__/firebase/init.js"></script>
-<script defer src="./user.js"></script>
-<script id="Braille-script" src="./braille-convert.js"></script>
-<script>Convert.init()</script>
-    
+    <script src="/__/firebase/init.js?useEmulator=true"></script>
+    <script id="Braille-script" src="./braille-convert.js"></script>
+    <script src="./firebase-update.js"></script>
+    <script>
+    window.addEventListener('load', () => {
+      let path = localStorage[Fireup.Fc.NemethProjectPath]
+      let user = localStorage[Fireup.Fc.NemethProjectUser]
+      if (path && user) {
+        Convert.convertInit(user, path);
+      }
+    });
+    </script>
 </body>
 </html>

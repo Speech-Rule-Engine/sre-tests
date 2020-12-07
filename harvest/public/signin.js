@@ -1,28 +1,22 @@
-var ui = new firebaseui.auth.AuthUI(firebase.auth());
+let ui = new firebaseui.auth.AuthUI(firebase.auth());
 
-let auth = function() {
-  firebase.auth().createUserWithEmailAndPassword(email, password)
-    .then((user) => {
-      console.log('Signed in: ' + user);
-      // Signed in 
-      // ...
-    })
-    .catch((error) => {
-      var errorCode = error.code;
-      var errorMessage = error.message;
-      // ..
-    })};
+let update = async function(authResult) {
+  let div = document.createElement('div');
+  div.textContent = 'Updating...';
+  document.body.appendChild(div);
+  await Fireup.update(firebase.firestore(), 'tests', authResult.user.uid, 'nemeth');
+  window.location.assign('selection.html');
+};
 
-var uiConfig = {
+let uiConfig = {
   callbacks: {
-    // signInSuccessWithAuthResult: function(authResult) {
-    //   // User successfully signed in.
-    //   // Return type determines whether we continue the redirect automatically
-    //   // or whether we leave that to developer to handle.
-    //   console.log('Signed in: ');
-    //   console.log(authResult);
-    //   return 'brf2nemeth.html';
-    // },
+    signInSuccessWithAuthResult: function(authResult) {
+      // User successfully signed in.
+      // Return type determines whether we continue the redirect automatically
+      // or whether we leave that to developer to handle.
+      update(authResult);
+      return false;
+    },
     uiShown: function() {
       // The widget is rendered.
       // Hide the loader.
@@ -36,9 +30,9 @@ var uiConfig = {
     firebase.auth.EmailAuthProvider.PROVIDER_ID
   ],
   // Terms of service url.
-  tosUrl: '<your-tos-url>',
+  tosUrl: 'privacy.html',
   // Privacy policy url.
-  privacyPolicyUrl: '<your-privacy-policy-url>'
+  privacyPolicyUrl: 'privacy.html'
 };
 
 ui.start('#firebaseui-auth-container', uiConfig);

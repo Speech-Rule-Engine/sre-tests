@@ -135,7 +135,7 @@ export class Tests {
 
     if (this.environment['JSON']) {
       let files = (
-        this.environment['FILES'] || this.getFiles());
+        this.environment['FILES'] || this.getFiles()) as string[];
       for (let key of files) {
         let test = TestFactory.get(key);
         if (test) {

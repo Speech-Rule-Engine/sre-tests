@@ -200,11 +200,27 @@ export class SemanticTreeTest extends SemanticTest {
     let node = sre.DomUtil.parseInput(mathMl);
     let sxml = (new sre.SemanticTree(node)).xml(opt_brief);
     let dp = new xmldom.DOMParser();
-    let xml = dp.parseFromString('<stree>' + sml + '</stree>', 'text/xml');
+    let xml = dp.parseFromString(this.prepareStree(sml), 'text/xml');
     let xmls = new xmldom.XMLSerializer();
     this.assert.equal(xmls.serializeToString(sxml),
                       xmls.serializeToString(xml));
   }
+
+  /**
+   * Adds stree tags to a semantic tree string, if necessary.
+   * @param sml Stree XML string.
+   * @return The augmented expression.
+   */
+  private prepareStree(sml: string): string {
+    if (!sml.match(/^<stree/)) {
+      sml = '<stree>' + sml;
+    }
+    if (!sml.match(/\/stree>$/)) {
+      sml += '</stree>';
+    }
+    return sml;
+  }
+
 }
 
 /**
@@ -215,11 +231,13 @@ export class EnrichMathmlTest extends SemanticTest {
   private attrBlacklist: string[] = [];
 
   /**
-   * @constructor
+   * @override
    */
-  constructor() {
-    super();
-    this.setActive('EnrichExamples', 'json');
+  public prepare() {
+    super.prepare();
+    if (this.jsonTests.active) {
+      this.setActive(this.jsonTests.active, 'json');
+    }
   }
 
   /**

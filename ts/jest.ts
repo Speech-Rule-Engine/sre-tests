@@ -1,5 +1,5 @@
-import {get} from './classes/test_factory';
 import AnalyticsTest from './analytics/analytics_test';
+import {get} from './classes/test_factory';
 
 /**
  * Runs tests for a json file.

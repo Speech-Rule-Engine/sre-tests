@@ -1,10 +1,7 @@
 const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 
-module.exports = {
-  entry: path.resolve(__dirname, 'ts/index.ts'),
-  mode: 'development',
-  target:'node',
+let config = {
   module: {
     rules: [
       {
@@ -17,27 +14,62 @@ module.exports = {
   resolve: {
     extensions: [ '.tsx', '.ts', '.js' ],
   },
+  node: {
+    __dirname: false
+  },
+  devtool: 'source-map',
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin({
+      terserOptions: { 
+       output: {
+          ascii_only: true
+        }
+      }
+    })]
+  },
+  mode: 'production'
+};
+
+let baseConfig = Object.assign({}, config, {
+  entry: path.resolve(__dirname, 'ts/index.ts'),
+  target:'node',
   output: {
     filename: 'sretest.js',
     library: 'sretest',
     libraryTarget: 'umd',
     globalObject: 'this',
     path: path.join(__dirname, 'dist'),
-  },
-  node: {
-    __dirname: false
-  },
-  optimization: {
-    minimize: true,
-    minimizer: [new TerserPlugin({
-      terserOptions: {
-        output: {
-          ascii_only: true
-        }
-      },
-      sourceMap: true
-    })]
-  },
-  mode: 'production'
-};
+  }
+});
 
+
+let convertConfig = Object.assign({}, config, {
+  entry: path.resolve(__dirname, 'ts/convert.ts'),
+  // devtool: false,
+  target: 'web',
+  output: {
+    filename: 'braille-convert.js',
+    library: 'Convert',
+    libraryTarget: 'umd',
+    globalObject: 'this',
+    path: path.join(__dirname, 'harvest/public'),
+  }
+});
+
+let updateConfig = Object.assign({}, config, {
+  entry: path.resolve(__dirname, 'ts/firebase.ts'),
+  devtool: false,
+  target: 'web',
+  output: {
+    filename: 'firebase-update.js',
+    library: 'Fireup',
+    libraryTarget: 'umd',
+    globalObject: 'this',
+    path: path.join(__dirname, 'harvest/public'),
+  }
+});
+
+
+
+module.exports = [baseConfig, convertConfig, updateConfig]; 
