@@ -323,7 +323,7 @@ generate the following subfolders, which contains json files of the following
 nature:
 
     ├── allRules            List of all rules available in each rule set.
-    ├── applicableRules     List of all rules applicable rules for each test run.
+    ├── applicableRules     List of all applicable rules for each test run.
     ├── appliedRules        List of all actually applied rules for each test run.
     ├── diffAppliedRules    Difference list of rules applied and available for each rule set.
     │                       Full test coverage for a rule set means that this list is empty.
