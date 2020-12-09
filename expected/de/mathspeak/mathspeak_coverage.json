@@ -1,0 +1,112 @@
+{
+  "name": "GermanMathspeakCoverage",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_coverage.json",
+  "information": "German Mathspeak tests for achieving full coverage.",
+  "domain": "mathspeak",
+  "locale": "de",
+  "compare": true,
+  "active": "MathspeakGerman",
+  "exclude": [],
+  "tests": {
+    "BaselineNumberGreek_default": {
+      "expected": "alpha Grundlinie 2"
+    },
+    "BaselineNumberGreek_brief": {
+      "expected": "alpha Grund 2"
+    },
+    "BaselineNumberGreek_sbrief": {
+      "expected": "alpha Grund 2"
+    },
+    "BaselineNumberOther_default": {
+      "expected": "normales Alef-Symbol Grundlinie 2"
+    },
+    "BaselineNumberOther_brief": {
+      "expected": "normales Alef-Symbol Grund 2"
+    },
+    "BaselineNumberOther_sbrief": {
+      "expected": "normales Alef-Symbol Grund 2"
+    },
+    "BaselineNumberFontGreek_default": {
+      "expected": "alpha Grundlinie fettes 2"
+    },
+    "BaselineNumberFontGreek_brief": {
+      "expected": "alpha Grund fettes 2"
+    },
+    "BaselineNumberFontGreek_sbrief": {
+      "expected": "alpha Grund fettes 2"
+    },
+    "BaselineNumberFontOther_default": {
+      "expected": "normales Alef-Symbol Grundlinie fettes 2"
+    },
+    "BaselineNumberFontOther_brief": {
+      "expected": "normales Alef-Symbol Grund fettes 2"
+    },
+    "BaselineNumberFontOther_sbrief": {
+      "expected": "normales Alef-Symbol Grund fettes 2"
+    },
+    "OverbarGreek_default": {
+      "expected": "alpha Überstrich"
+    },
+    "OverbarOther_default": {
+      "expected": "normales Alef-Symbol Überstrich"
+    },
+    "UnderbarGreek_default": {
+      "expected": "alpha Unterstrich"
+    },
+    "UnderbarOther_default": {
+      "expected": "normales Alef-Symbol Unterstrich"
+    },
+    "OvertildeGreek_default": {
+      "expected": "alpha Tilde oben"
+    },
+    "OvertildeOther_default": {
+      "expected": "normales Alef-Symbol Tilde oben"
+    },
+    "UndertildeGreek_default": {
+      "expected": "alpha Tilde unten"
+    },
+    "UndertildeOther_default": {
+      "expected": "normales Alef-Symbol Tilde unten"
+    },
+    "SetEmpty_default": {
+      "expected": "leere Menge"
+    },
+    "SetEmpty_brief": {
+      "expected": "leere Menge"
+    },
+    "SetEmpty_sbrief": {
+      "expected": "leere Menge"
+    },
+    "SetSingleton_default": {
+      "expected": "Anfang Menge a Ende Menge"
+    },
+    "SetSingleton_brief": {
+      "expected": "Anfang Menge a Ende Menge"
+    },
+    "SetSingleton_sbrief": {
+      "expected": "Menge a Ende Menge"
+    },
+    "SetCollection_default": {
+      "expected": "Anfang Menge a Komma b Ende Menge"
+    },
+    "SetCollection_brief": {
+      "expected": "Anfang Menge a Komma b Ende Menge"
+    },
+    "SetCollection_sbrief": {
+      "expected": "Menge a Komma b Ende Menge"
+    },
+    "SetExtended_default": {
+      "expected": "Anfang Menge a Komma b Ende Menge"
+    },
+    "SetExtended_brief": {
+      "expected": "Anfang Menge a Komma b Ende Menge"
+    },
+    "SetExtended_sbrief": {
+      "expected": "Menge a Komma b Ende Menge"
+    },
+    "NumberSet": {
+      "expected": "großes C mit Doppelstrich"
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "name": "EnglishMathspeakCoverage",
+  "locale": "en",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_coverage.json",
+  "information": "English Mathspeak tests for achieving full coverage.",
+  "domain": "mathspeak",
+  "active": "MathspeakEnglish",
+  "exclude": [],
+  "tests": {
+    "BaselineNumberGreek_default": {
+      "expected": "alpha Baseline 2"
+    },
+    "BaselineNumberGreek_brief": {
+      "expected": "alpha Base 2"
+    },
+    "BaselineNumberGreek_sbrief": {
+      "expected": "alpha Base 2"
+    },
+    "BaselineNumberOther_default": {
+      "expected": "normal first transfinite cardinal Baseline 2"
+    },
+    "BaselineNumberOther_brief": {
+      "expected": "normal first transfinite cardinal Base 2"
+    },
+    "BaselineNumberOther_sbrief": {
+      "expected": "normal first transfinite cardinal Base 2"
+    },
+    "BaselineNumberFontGreek_default": {
+      "expected": "alpha Baseline bold 2"
+    },
+    "BaselineNumberFontGreek_brief": {
+      "expected": "alpha Base bold 2"
+    },
+    "BaselineNumberFontGreek_sbrief": {
+      "expected": "alpha Base bold 2"
+    },
+    "BaselineNumberFontOther_default": {
+      "expected": "normal first transfinite cardinal Baseline bold 2"
+    },
+    "BaselineNumberFontOther_brief": {
+      "expected": "normal first transfinite cardinal Base bold 2"
+    },
+    "BaselineNumberFontOther_sbrief": {
+      "expected": "normal first transfinite cardinal Base bold 2"
+    },
+    "OverbarGreek_default": {
+      "expected": "alpha overbar"
+    },
+    "OverbarOther_default": {
+      "expected": "normal first transfinite cardinal overbar"
+    },
+    "UnderbarGreek_default": {
+      "expected": "alpha underbar"
+    },
+    "UnderbarOther_default": {
+      "expected": "normal first transfinite cardinal underbar"
+    },
+    "OvertildeGreek_default": {
+      "expected": "alpha overTilde"
+    },
+    "OvertildeOther_default": {
+      "expected": "normal first transfinite cardinal overTilde"
+    },
+    "UndertildeGreek_default": {
+      "expected": "alpha underTilde"
+    },
+    "UndertildeOther_default": {
+      "expected": "normal first transfinite cardinal underTilde"
+    },
+    "SetEmpty_default": {
+      "expected": "empty set"
+    },
+    "SetEmpty_brief": {
+      "expected": "empty set"
+    },
+    "SetEmpty_sbrief": {
+      "expected": "empty set"
+    },
+    "SetSingleton_default": {
+      "expected": "StartSet a EndSet"
+    },
+    "SetSingleton_brief": {
+      "expected": "StartSet a EndSet"
+    },
+    "SetSingleton_sbrief": {
+      "expected": "Set a EndSet"
+    },
+    "SetCollection_default": {
+      "expected": "StartSet a comma b EndSet"
+    },
+    "SetCollection_brief": {
+      "expected": "StartSet a comma b EndSet"
+    },
+    "SetCollection_sbrief": {
+      "expected": "Set a comma b EndSet"
+    },
+    "SetExtended_default": {
+      "expected": "StartSet a comma b EndSet"
+    },
+    "SetExtended_brief": {
+      "expected": "StartSet a comma b EndSet"
+    },
+    "SetExtended_sbrief": {
+      "expected": "Set a comma b EndSet"
+    },
+    "NumberSet": {
+      "expected": "double struck upper C"
+    }
+  }
+}

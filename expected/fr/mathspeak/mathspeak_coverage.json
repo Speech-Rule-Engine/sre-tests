@@ -1,0 +1,111 @@
+{
+  "name": "FrenchMathspeakCoverage",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_coverage.json",
+  "information": "French Mathspeak tests for achieving full coverage.",
+  "domain": "mathspeak",
+  "locale": "fr",
+  "active": "MathspeakFrench",
+  "exclude": [],
+  "tests": {
+    "BaselineNumberGreek_default": {
+      "expected": "alpha position de base 2"
+    },
+    "BaselineNumberGreek_brief": {
+      "expected": "alpha base 2"
+    },
+    "BaselineNumberGreek_sbrief": {
+      "expected": "alpha base 2"
+    },
+    "BaselineNumberOther_default": {
+      "expected": "alef en normal position de base 2"
+    },
+    "BaselineNumberOther_brief": {
+      "expected": "alef en normal base 2"
+    },
+    "BaselineNumberOther_sbrief": {
+      "expected": "alef en normal base 2"
+    },
+    "BaselineNumberFontGreek_default": {
+      "expected": "alpha position de base 2 en gras"
+    },
+    "BaselineNumberFontGreek_brief": {
+      "expected": "alpha base 2 en gras"
+    },
+    "BaselineNumberFontGreek_sbrief": {
+      "expected": "alpha base 2 en gras"
+    },
+    "BaselineNumberFontOther_default": {
+      "expected": "alef en normal position de base 2 en gras"
+    },
+    "BaselineNumberFontOther_brief": {
+      "expected": "alef en normal base 2 en gras"
+    },
+    "BaselineNumberFontOther_sbrief": {
+      "expected": "alef en normal base 2 en gras"
+    },
+    "OverbarGreek_default": {
+      "expected": "suscrire alpha avec macron"
+    },
+    "OverbarOther_default": {
+      "expected": "suscrire alef en normal avec macron"
+    },
+    "UnderbarGreek_default": {
+      "expected": "souscrire alpha avec macron"
+    },
+    "UnderbarOther_default": {
+      "expected": "souscrire alef en normal avec macron"
+    },
+    "OvertildeGreek_default": {
+      "expected": "suscrire alpha avec tilde"
+    },
+    "OvertildeOther_default": {
+      "expected": "suscrire alef en normal avec tilde"
+    },
+    "UndertildeGreek_default": {
+      "expected": "souscrire alpha avec tilde"
+    },
+    "UndertildeOther_default": {
+      "expected": "souscrire alef en normal avec tilde"
+    },
+    "SetEmpty_default": {
+      "expected": "ensemble vide"
+    },
+    "SetEmpty_brief": {
+      "expected": "ensemble vide"
+    },
+    "SetEmpty_sbrief": {
+      "expected": "ensemble vide"
+    },
+    "SetSingleton_default": {
+      "expected": "début ensemble a fin ensemble"
+    },
+    "SetSingleton_brief": {
+      "expected": "début ensemble a fin ensemble"
+    },
+    "SetSingleton_sbrief": {
+      "expected": "ensemble a fin ensemble"
+    },
+    "SetCollection_default": {
+      "expected": "début ensemble a virgule b fin ensemble"
+    },
+    "SetCollection_brief": {
+      "expected": "début ensemble a virgule b fin ensemble"
+    },
+    "SetCollection_sbrief": {
+      "expected": "ensemble a virgule b fin ensemble"
+    },
+    "SetExtended_default": {
+      "expected": "début ensemble a virgule b fin ensemble"
+    },
+    "SetExtended_brief": {
+      "expected": "début ensemble a virgule b fin ensemble"
+    },
+    "SetExtended_sbrief": {
+      "expected": "ensemble a virgule b fin ensemble"
+    },
+    "NumberSet": {
+      "expected": "C majuscule ajouré"
+    }
+  }
+}
