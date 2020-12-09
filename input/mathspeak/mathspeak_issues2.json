@@ -502,6 +502,45 @@
     },
     "Prime_18": {
       "input": "<msup><mi>x</mi><mrow><mo>''''''</mo></mrow></msup>"
+    },
+    "LimBoth_0": {
+      "input": "<mrow><mover><munder><mrow><mo></mo><munderover><mo extid=\"A\">&#x2211;</mo><mi>n</mi><mn>2</mn></munderover></mrow><mo>_</mo></munder><mo>~</mo></mover></mrow>"
+    },
+    "LimBoth_1": {
+      "input": "<mrow><mover><munder><mrow><mo></mo><munderover><mo>&#x2211;</mo><mi>n</mi><mn extid=\"A\">2</mn></munderover></mrow><mo>_</mo></munder><mo>~</mo></mover></mrow>"
+    },
+    "LimBoth_2": {
+      "input": "<mrow><mover><munder><mrow><mo></mo><munderover><mo>&#x2211;</mo><mi extid=\"A\">n</mi><mn>2</mn></munderover></mrow><mo>_</mo></munder><mo>~</mo></mover></mrow>"
+    },
+    "LimBoth_3": {
+      "input": "<munderover><mo extid=\"A\">&#x2211;</mo><mi>n</mi><mn>2</mn></munderover>"
+    },
+    "LimBoth_4": {
+      "input": "<munderover><mo extid=\"A\">&#x2211;</mo><mi>n</mi><mn>2</mn></munderover><mi>a</mi>"
+    },
+    "LimUpper_0": {
+      "input": "<mover><mo>&#x2211;</mo><mi extid=\"A\">n</mi></mover>"
+    },
+    "LimUpper_1": {
+      "input": "<mover><mo>&#x2211;</mo><mi extid=\"A\">n</mi></mover><mi>a</mi>"
+    },
+    "LimUpper_2": {
+      "input": "<mover><mo extid=\"A\">&#x2211;</mo><mi>n</mi></mover>"
+    },
+    "LimUpper_3": {
+      "input": "<mover><mo extid=\"A\">&#x2211;</mo><mi>n</mi></mover><mi>a</mi>"
+    },
+    "LimLower_0": {
+      "input": "<munder><mo>&#x2211;</mo><mi extid=\"A\">n</mi></munder>"
+    },
+    "LimLower_1": {
+      "input": "<munder><mo>&#x2211;</mo><mi extid=\"A\">n</mi></munder><mi>a</mi>"
+    },
+    "LimLower_2": {
+      "input": "<munder><mo extid=\"A\">&#x2211;</mo><mi>n</mi></munder>"
+    },
+    "LimLower_3": {
+      "input": "<munder><mo extid=\"A\">&#x2211;</mo><mi>n</mi></munder><mi>a</mi>"
     }
   }
 }
