@@ -2,7 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<title>French Mathspeak Issues 1.</title>
+<title>French Mathspeak tests for achieving full coverage.</title>
 
 <style>
  table, th, td {
@@ -11,6 +11,48 @@
 
 </head>
 <body>
+<h2>French Mathspeak tests for achieving full coverage. Locale: fr, Style: <td>Verbose</td>.</h2>
+<table>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>α</mi><mn>2</mn></mrow></math></td><td>alpha position de base 2</td></tr>
+<tr><td>1</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>ℵ</mi><mn>2</mn></mrow></math></td><td>alef en normal position de base 2</td></tr>
+<tr><td>2</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>α</mi><mn mathvariant="bold">2</mn></mrow></math></td><td>alpha position de base 2 en gras</td></tr>
+<tr><td>3</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>ℵ</mi><mn mathvariant="bold">2</mn></mrow></math></td><td>alef en normal position de base 2 en gras</td></tr>
+<tr><td>4</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent="true"><mi>α</mi><mo>¯</mo></mover></math></td><td>suscrire alpha avec macron</td></tr>
+<tr><td>5</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent="true"><mi>ℵ</mi><mo>¯</mo></mover></math></td><td>suscrire alef en normal avec macron</td></tr>
+<tr><td>6</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><munder accent="true"><mi>α</mi><mo>¯</mo></munder></math></td><td>souscrire alpha avec macron</td></tr>
+<tr><td>7</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><munder accent="true"><mi>ℵ</mi><mo>¯</mo></munder></math></td><td>souscrire alef en normal avec macron</td></tr>
+<tr><td>8</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent="true"><mi>α</mi><mo>~</mo></mover></math></td><td>suscrire alpha avec tilde</td></tr>
+<tr><td>9</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent="true"><mi>ℵ</mi><mo>~</mo></mover></math></td><td>suscrire alef en normal avec tilde</td></tr>
+<tr><td>10</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><munder accent="true"><mi>α</mi><mo>~</mo></munder></math></td><td>souscrire alpha avec tilde</td></tr>
+<tr><td>11</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><munder accent="true"><mi>ℵ</mi><mo>~</mo></munder></math></td><td>souscrire alef en normal avec tilde</td></tr>
+<tr><td>12</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mo>}</mo></math></td><td>ensemble vide</td></tr>
+<tr><td>13</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>}</mo></math></td><td>début ensemble a fin ensemble</td></tr>
+<tr><td>14</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>}</mo></math></td><td>début ensemble a virgule b fin ensemble</td></tr>
+<tr><td>15</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>}</mo></math></td><td>début ensemble a virgule b fin ensemble</td></tr>
+<tr><td>16</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>ℂ</mi></math></td><td>C majuscule ajouré</td></tr>
+</table>
+<h2>French Mathspeak tests for achieving full coverage. Locale: fr, Style: <td>Brief</td>.</h2>
+<table>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>α</mi><mn>2</mn></mrow></math></td><td>alpha base 2</td></tr>
+<tr><td>1</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>ℵ</mi><mn>2</mn></mrow></math></td><td>alef en normal base 2</td></tr>
+<tr><td>2</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>α</mi><mn mathvariant="bold">2</mn></mrow></math></td><td>alpha base 2 en gras</td></tr>
+<tr><td>3</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>ℵ</mi><mn mathvariant="bold">2</mn></mrow></math></td><td>alef en normal base 2 en gras</td></tr>
+<tr><td>4</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mo>}</mo></math></td><td>ensemble vide</td></tr>
+<tr><td>5</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>}</mo></math></td><td>début ensemble a fin ensemble</td></tr>
+<tr><td>6</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>}</mo></math></td><td>début ensemble a virgule b fin ensemble</td></tr>
+<tr><td>7</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>}</mo></math></td><td>début ensemble a virgule b fin ensemble</td></tr>
+</table>
+<h2>French Mathspeak tests for achieving full coverage. Locale: fr, Style: <td>Superbrief</td>.</h2>
+<table>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>α</mi><mn>2</mn></mrow></math></td><td>alpha base 2</td></tr>
+<tr><td>1</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>ℵ</mi><mn>2</mn></mrow></math></td><td>alef en normal base 2</td></tr>
+<tr><td>2</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>α</mi><mn mathvariant="bold">2</mn></mrow></math></td><td>alpha base 2 en gras</td></tr>
+<tr><td>3</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>ℵ</mi><mn mathvariant="bold">2</mn></mrow></math></td><td>alef en normal base 2 en gras</td></tr>
+<tr><td>4</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mo>}</mo></math></td><td>ensemble vide</td></tr>
+<tr><td>5</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>}</mo></math></td><td>ensemble a fin ensemble</td></tr>
+<tr><td>6</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>}</mo></math></td><td>ensemble a virgule b fin ensemble</td></tr>
+<tr><td>7</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>}</mo></math></td><td>ensemble a virgule b fin ensemble</td></tr>
+</table>
 <h2>French Mathspeak Issues 1. Locale: fr, Style: <td>Verbose</td>.</h2>
 <table>
 <tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>|</mo><mi>a</mi><mo>|</mo></math></td><td>début valeur absolue a fin valeur absolue</td></tr>

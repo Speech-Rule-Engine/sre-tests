@@ -2,7 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<title>English Mathspeak Issues 1.</title>
+<title>English Mathspeak tests for achieving full coverage.</title>
 
 <style>
  table, th, td {
@@ -11,6 +11,48 @@
 
 </head>
 <body>
+<h2>English Mathspeak tests for achieving full coverage. Locale: en, Style: <td>Verbose</td>.</h2>
+<table>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>α</mi><mn>2</mn></mrow></math></td><td>alpha Baseline 2</td></tr>
+<tr><td>1</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>ℵ</mi><mn>2</mn></mrow></math></td><td>normal first transfinite cardinal Baseline 2</td></tr>
+<tr><td>2</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>α</mi><mn mathvariant="bold">2</mn></mrow></math></td><td>alpha Baseline bold 2</td></tr>
+<tr><td>3</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>ℵ</mi><mn mathvariant="bold">2</mn></mrow></math></td><td>normal first transfinite cardinal Baseline bold 2</td></tr>
+<tr><td>4</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent="true"><mi>α</mi><mo>¯</mo></mover></math></td><td>alpha overbar</td></tr>
+<tr><td>5</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent="true"><mi>ℵ</mi><mo>¯</mo></mover></math></td><td>normal first transfinite cardinal overbar</td></tr>
+<tr><td>6</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><munder accent="true"><mi>α</mi><mo>¯</mo></munder></math></td><td>alpha underbar</td></tr>
+<tr><td>7</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><munder accent="true"><mi>ℵ</mi><mo>¯</mo></munder></math></td><td>normal first transfinite cardinal underbar</td></tr>
+<tr><td>8</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent="true"><mi>α</mi><mo>~</mo></mover></math></td><td>alpha overTilde</td></tr>
+<tr><td>9</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent="true"><mi>ℵ</mi><mo>~</mo></mover></math></td><td>normal first transfinite cardinal overTilde</td></tr>
+<tr><td>10</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><munder accent="true"><mi>α</mi><mo>~</mo></munder></math></td><td>alpha underTilde</td></tr>
+<tr><td>11</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><munder accent="true"><mi>ℵ</mi><mo>~</mo></munder></math></td><td>normal first transfinite cardinal underTilde</td></tr>
+<tr><td>12</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mo>}</mo></math></td><td>empty set</td></tr>
+<tr><td>13</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>}</mo></math></td><td>StartSet a EndSet</td></tr>
+<tr><td>14</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>}</mo></math></td><td>StartSet a comma b EndSet</td></tr>
+<tr><td>15</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>}</mo></math></td><td>StartSet a comma b EndSet</td></tr>
+<tr><td>16</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>ℂ</mi></math></td><td>double struck upper C</td></tr>
+</table>
+<h2>English Mathspeak tests for achieving full coverage. Locale: en, Style: <td>Brief</td>.</h2>
+<table>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>α</mi><mn>2</mn></mrow></math></td><td>alpha Base 2</td></tr>
+<tr><td>1</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>ℵ</mi><mn>2</mn></mrow></math></td><td>normal first transfinite cardinal Base 2</td></tr>
+<tr><td>2</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>α</mi><mn mathvariant="bold">2</mn></mrow></math></td><td>alpha Base bold 2</td></tr>
+<tr><td>3</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>ℵ</mi><mn mathvariant="bold">2</mn></mrow></math></td><td>normal first transfinite cardinal Base bold 2</td></tr>
+<tr><td>4</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mo>}</mo></math></td><td>empty set</td></tr>
+<tr><td>5</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>}</mo></math></td><td>StartSet a EndSet</td></tr>
+<tr><td>6</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>}</mo></math></td><td>StartSet a comma b EndSet</td></tr>
+<tr><td>7</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>}</mo></math></td><td>StartSet a comma b EndSet</td></tr>
+</table>
+<h2>English Mathspeak tests for achieving full coverage. Locale: en, Style: <td>Superbrief</td>.</h2>
+<table>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>α</mi><mn>2</mn></mrow></math></td><td>alpha Base 2</td></tr>
+<tr><td>1</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>ℵ</mi><mn>2</mn></mrow></math></td><td>normal first transfinite cardinal Base 2</td></tr>
+<tr><td>2</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>α</mi><mn mathvariant="bold">2</mn></mrow></math></td><td>alpha Base bold 2</td></tr>
+<tr><td>3</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>ℵ</mi><mn mathvariant="bold">2</mn></mrow></math></td><td>normal first transfinite cardinal Base bold 2</td></tr>
+<tr><td>4</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mo>}</mo></math></td><td>empty set</td></tr>
+<tr><td>5</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>}</mo></math></td><td>Set a EndSet</td></tr>
+<tr><td>6</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>}</mo></math></td><td>Set a comma b EndSet</td></tr>
+<tr><td>7</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>}</mo></math></td><td>Set a comma b EndSet</td></tr>
+</table>
 <h2>English Mathspeak Issues 1. Locale: en, Style: <td>Verbose</td>.</h2>
 <table>
 <tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>|</mo><mi>a</mi><mo>|</mo></math></td><td>StartAbsoluteValue a EndAbsoluteValue</td></tr>
