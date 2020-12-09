@@ -302,8 +302,8 @@ export class Ascii2Braille extends Numeric2Braille {
    */
   protected setupMap() {
     this.translate = new Map(
-      [[',', 'T'], [' ', '0'], ['s', '1'], ['d', '2'],
-       ['f', '3'], ['j', '4'], ['k', '5'], ['l', '6']]);
+      [[',', 'T'], [' ', '0'], ['f', '1'], ['d', '2'],
+       ['s', '3'], ['j', '4'], ['k', '5'], ['l', '6']]);
   }
 
 }
@@ -354,7 +354,7 @@ export class Braille2Numeric extends ToMultikey {
 export class Braille2Ascii extends Braille2Numeric {
 
   private trans: {[num: number]: string} = {
-    0: ' ', 1: 's', 2: 'd', 3: 'f', 4: 'j', 5: 'k', 6: 'l', 7: '', 8: ''
+    0: ' ', 1: 'f', 2: 'd', 3: 's', 4: 'j', 5: 'k', 6: 'l', 7: '', 8: ''
   };
 
   /**

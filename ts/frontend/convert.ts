@@ -62,7 +62,7 @@ declare const firebase: any;
 function setTest(test: JsonTest) {
   field.name.innerHTML = test.name;
   field.expression.innerHTML = test.input ?
-    `<math>${test.input}</math>` : `\\[${test.tex}\\]`;
+    `<math display="block">${test.input}</math>` : `\\[${test.tex}\\]`;
   field.out.innerHTML = test.expected as string;
   // TODO: Transform here, depending on the transformation value;
   (field.ip as HTMLTextAreaElement).value =
