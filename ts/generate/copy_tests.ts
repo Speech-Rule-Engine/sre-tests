@@ -40,6 +40,13 @@ export function copyTestLocale(source: string, locale: string,
   addMissing(dst);
 }
 
+/**
+ * Replaces content in string field if an entry for a given key exists.
+ * @param {JsonFile} tests The test file structure.
+ * @param {string} key The key of the field.
+ * @param {string} what What should be replaced.
+ * @param {string} by By what it should be replaced.
+ */
 function replaceInTests(
   tests: JsonFile, key: string, what: string, by: string) {
   if (tests[key]) {
