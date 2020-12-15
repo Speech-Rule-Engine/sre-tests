@@ -143,6 +143,30 @@ export function generate() {
   if (current === ip.value) {
     return;
   }
+  if (kind.toUpperCase() === 'SDF/JKL') {
+    collateKeys();
+  }
+  processKeys();
+}
+
+let collating = false;
+function collateKeys() {
+  if (collating) {
+    return;
+  }
+  collating = true;
+  setTimeout(() => {
+    collating = false;
+    processKeys();
+    let ip = field.ip as HTMLTextAreaElement;
+    if (ip.value[ip.value.length - 1] !== ',') {
+      ip.value = ip.value + ',';
+    }
+  }, 100);
+}
+
+function processKeys() {
+  let ip = field.ip as HTMLTextAreaElement;
   let cursor = ip.selectionStart;
   // let length = ip.value.length;
   field.out.innerHTML = '';

@@ -208,7 +208,8 @@ abstract class FromMultikey extends BrfTransformer {
    * @override
    */
   public via(str: string) {
-    return str.split(',').map(this.toBraille.bind(this)).join('');
+    return str.split(',').filter(x => x).
+      map(this.toBraille.bind(this)).join('');
   }
 
 }
@@ -381,4 +382,10 @@ export class Braille2Ascii extends Braille2Numeric {
     }
   }
 
+  /**
+   * @override
+   */
+  public via(str: string) {
+    return super.via(str) + ',';
+  }
 }
