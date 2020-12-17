@@ -3,9 +3,7 @@
   "locale": "nemeth",
   "domain": "default",
   "modality": "braille",
-  "styles": [
-    "default"
-  ],
+  "style": "default",
   "compare": true,
   "active": "DefaultSymbolsNemeth",
   "type": "function",
@@ -14,309 +12,199 @@
   "information": "Nemeth Default Function tests.",
   "tests": {
     "deg": {
-      "expected": [
-        "⠙⠑⠛"
-      ]
+      "expected": "⠙⠑⠛"
     },
     "det": {
-      "expected": [
-        "⠙⠑⠞"
-      ]
+      "expected": "⠙⠑⠞"
     },
     "dim": {
-      "expected": [
-        "⠙⠊⠍"
-      ]
+      "expected": "⠙⠊⠍"
     },
     "hom": {
-      "expected": [
-        "⠓⠕⠍"
-      ]
+      "expected": "⠓⠕⠍"
     },
     "Hom": {
-      "expected": [
-        "⠓⠕⠍"
-      ]
+      "expected": "⠓⠕⠍"
     },
     "ker": {
-      "expected": [
-        "⠅⠑⠗"
-      ]
+      "expected": "⠅⠑⠗"
     },
     "Tr": {
-      "expected": [
-        "⠠⠞⠗"
-      ]
+      "expected": "⠠⠞⠗"
     },
     "tr": {
-      "expected": [
-        "⠠⠞⠗"
-      ]
+      "expected": "⠠⠞⠗"
     },
     "log": {
-      "expected": [
-        "⠇⠕⠏⠀"
-      ]
+      "expected": "⠇⠕⠏⠀"
     },
     "ln": {
-      "expected": [
-        "⠇⠝⠀"
-      ]
+      "expected": "⠇⠝⠀"
     },
     "lg": {
-      "expected": [
-        "⠇⠛"
-      ]
+      "expected": "⠇⠛"
     },
     "exp": {
-      "expected": [
-        "⠑⠭⠏"
-      ]
+      "expected": "⠑⠭⠏"
     },
     "expt": {
-      "expected": [
-        "⠑⠭⠏"
-      ]
+      "expected": "⠑⠭⠏"
     },
     "gcd": {
-      "expected": [
-        "⠛⠉⠙"
-      ]
+      "expected": "⠛⠉⠙"
     },
     "lcm": {
-      "expected": [
-        "⠇⠉⠍"
-      ]
+      "expected": "⠇⠉⠍"
     },
     "arg": {
-      "expected": [
-        "⠁⠗⠛⠀"
-      ]
+      "expected": "⠁⠗⠛⠀"
     },
     "im": {
-      "expected": [
-        "⠊⠍"
-      ]
+      "expected": "⠊⠍"
     },
     "re": {
-      "expected": [
-        "⠗⠑"
-      ]
+      "expected": "⠗⠑"
     },
     "inf": {
-      "expected": [
-        "⠊⠝⠋⠀"
-      ]
+      "expected": "⠊⠝⠋⠀"
     },
     "lim": {
-      "expected": [
-        "⠇⠊⠍"
-      ]
+      "expected": "⠇⠊⠍"
+    },
+    "lim inf": {
+      "expected": "⠇⠊⠍⠊⠝⠀⠋"
     },
     "liminf": {
-      "expected": [
-        "⠇⠊⠍⠊⠝⠀⠋"
-      ]
+      "expected": "⠇⠊⠍⠊⠝⠀⠋"
+    },
+    "lim sup": {
+      "expected": "⠇⠊⠍⠎⠥⠏"
     },
     "limsup": {
-      "expected": [
-        "⠇⠊⠍⠎⠥⠏"
-      ]
+      "expected": "⠇⠊⠍⠎⠥⠏"
     },
     "max": {
-      "expected": [
-        "⠍⠁⠭⠀"
-      ]
+      "expected": "⠍⠁⠭⠀"
     },
     "min": {
-      "expected": [
-        "⠍⠊⠝⠀"
-      ]
+      "expected": "⠍⠊⠝⠀"
     },
     "sup": {
-      "expected": [
-        "⠎⠥⠏"
-      ]
+      "expected": "⠎⠥⠏"
     },
     "injlim": {
-      "expected": [
-        "⠊⠝⠚⠇⠊⠍"
-      ]
+      "expected": "⠊⠝⠚⠇⠊⠍"
+    },
+    "inj lim": {
+      "expected": "⠊⠝⠚⠇⠊⠍"
     },
     "projlim": {
-      "expected": [
-        "⠏⠗⠕⠚⠇⠊⠍"
-      ]
+      "expected": "⠏⠗⠕⠚⠇⠊⠍"
+    },
+    "proj lim": {
+      "expected": "⠏⠗⠕⠚⠇⠊⠍"
     },
     "mod": {
-      "expected": [
-        "⠍⠕⠙"
-      ]
+      "expected": "⠍⠕⠙"
     },
     "Pr": {
-      "expected": [
-        "⠠⠏⠗"
-      ]
+      "expected": "⠠⠏⠗"
     },
     "cosh": {
-      "expected": [
-        "⠉⠕⠎⠓⠀"
-      ]
+      "expected": "⠉⠕⠎⠓⠀"
     },
     "coth": {
-      "expected": [
-        "⠉⠕⠞⠓⠀"
-      ]
+      "expected": "⠉⠕⠞⠓⠀"
     },
     "csch": {
-      "expected": [
-        "⠉⠎⠉⠓⠀"
-      ]
+      "expected": "⠉⠎⠉⠓⠀"
     },
     "sech": {
-      "expected": [
-        "⠎⠑⠉⠓⠀"
-      ]
+      "expected": "⠎⠑⠉⠓⠀"
     },
     "sinh": {
-      "expected": [
-        "⠎⠊⠝⠓⠀"
-      ]
+      "expected": "⠎⠊⠝⠓⠀"
     },
     "tanh": {
-      "expected": [
-        "⠞⠁⠕⠓⠀"
-      ]
+      "expected": "⠞⠁⠕⠓⠀"
     },
     "arcosh": {
-      "expected": [
-        "⠁⠗⠉⠀⠕⠎⠓"
-      ]
+      "expected": "⠁⠗⠉⠀⠕⠎⠓"
     },
     "arccosh": {
-      "expected": [
-        "⠁⠗⠉⠀⠕⠎⠓"
-      ]
+      "expected": "⠁⠗⠉⠀⠕⠎⠓"
     },
     "arcoth": {
-      "expected": [
-        "⠁⠗⠉⠀⠕⠞⠓"
-      ]
+      "expected": "⠁⠗⠉⠀⠕⠞⠓"
     },
     "arccoth": {
-      "expected": [
-        "⠁⠗⠉⠀⠕⠞⠓"
-      ]
+      "expected": "⠁⠗⠉⠀⠕⠞⠓"
     },
     "arcsch": {
-      "expected": [
-        "⠁⠗⠉⠀⠎⠉⠓"
-      ]
+      "expected": "⠁⠗⠉⠀⠎⠉⠓"
     },
     "arccsch": {
-      "expected": [
-        "⠁⠗⠉⠀⠎⠉⠓"
-      ]
+      "expected": "⠁⠗⠉⠀⠎⠉⠓"
     },
     "arsech": {
-      "expected": [
-        "⠁⠗⠎⠑⠉⠓⠀"
-      ]
+      "expected": "⠁⠗⠎⠑⠉⠓⠀"
     },
     "arcsech": {
-      "expected": [
-        "⠁⠗⠎⠑⠉⠓⠀"
-      ]
+      "expected": "⠁⠗⠎⠑⠉⠓⠀"
     },
     "arsinh": {
-      "expected": [
-        "⠁⠗⠎⠊⠝⠓⠀"
-      ]
+      "expected": "⠁⠗⠎⠊⠝⠓⠀"
     },
     "arcsinh": {
-      "expected": [
-        "⠁⠗⠎⠊⠝⠓⠀"
-      ]
+      "expected": "⠁⠗⠎⠊⠝⠓⠀"
     },
     "artanh": {
-      "expected": [
-        "⠁⠗⠞⠁⠕⠓⠀"
-      ]
+      "expected": "⠁⠗⠞⠁⠕⠓⠀"
     },
     "arctanh": {
-      "expected": [
-        "⠁⠗⠞⠁⠕⠓⠀"
-      ]
+      "expected": "⠁⠗⠞⠁⠕⠓⠀"
     },
     "cos": {
-      "expected": [
-        "⠉⠕⠎⠀"
-      ]
+      "expected": "⠉⠕⠎⠀"
     },
     "cosine": {
-      "expected": [
-        "⠉⠕⠎⠀"
-      ]
+      "expected": "⠉⠕⠎⠀"
     },
     "cot": {
-      "expected": [
-        "⠉⠕⠞⠀"
-      ]
+      "expected": "⠉⠕⠞⠀"
     },
     "csc": {
-      "expected": [
-        "⠉⠎⠉⠀"
-      ]
+      "expected": "⠉⠎⠉⠀"
     },
     "sec": {
-      "expected": [
-        "⠎⠑⠉⠀"
-      ]
+      "expected": "⠎⠑⠉⠀"
     },
     "sin": {
-      "expected": [
-        "⠎⠊⠝⠀"
-      ]
+      "expected": "⠎⠊⠝⠀"
     },
     "sine": {
-      "expected": [
-        "⠎⠊⠝⠀"
-      ]
+      "expected": "⠎⠊⠝⠀"
     },
     "tan": {
-      "expected": [
-        "⠞⠁⠝⠀"
-      ]
+      "expected": "⠞⠁⠝⠀"
     },
     "arccos": {
-      "expected": [
-        "⠁⠗⠉⠉⠕⠎⠀"
-      ]
+      "expected": "⠁⠗⠉⠉⠕⠎⠀"
     },
     "arccot": {
-      "expected": [
-        "⠁⠗⠉⠀⠉⠕⠞⠀"
-      ]
+      "expected": "⠁⠗⠉⠀⠉⠕⠞⠀"
     },
     "arccsc": {
-      "expected": [
-        "⠁⠗⠉⠀⠉⠎⠉⠀"
-      ]
+      "expected": "⠁⠗⠉⠀⠉⠎⠉⠀"
     },
     "arcsec": {
-      "expected": [
-        "⠁⠗⠉⠀⠎⠑⠉⠀"
-      ]
+      "expected": "⠁⠗⠉⠀⠎⠑⠉⠀"
     },
     "arcsin": {
-      "expected": [
-        "⠁⠗⠉⠀⠎⠊⠝⠀"
-      ]
+      "expected": "⠁⠗⠉⠀⠎⠊⠝⠀"
     },
     "arctan": {
-      "expected": [
-        "⠁⠗⠉⠀⠞⠁⠝⠀"
-      ]
+      "expected": "⠁⠗⠉⠀⠞⠁⠝⠀"
     }
   }
 }

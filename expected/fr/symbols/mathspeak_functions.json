@@ -2,11 +2,9 @@
   "name": "FrenchMathspeakFunction",
   "locale": "fr",
   "domain": "mathspeak",
-  "styles": [
-    "default",
+  "style": "default",
     "brief",
     "sbrief"
-  ],
   "active": "MathspeakSymbolsFrench",
   "type": "function",
   "factory": "symbol",
@@ -14,543 +12,235 @@
   "information": "French Mathspeak Function tests.",
   "tests": {
     "deg": {
-      "expected": [
-        "degré",
-        "degré",
-        "degré"
-      ]
+      "expected": "degré"
     },
     "det": {
-      "expected": [
-        "déterminant",
-        "déterminant",
-        "déterminant"
-      ]
+      "expected": "déterminant"
     },
     "dim": {
-      "expected": [
-        "dimension",
-        "dimension",
-        "dimension"
-      ]
+      "expected": "dimension"
     },
     "hom": {
-      "expected": [
-        "homomorphisme",
-        "homomorphisme",
-        "homomorphisme"
-      ]
+      "expected": "homomorphisme"
     },
     "Hom": {
-      "expected": [
-        "homomorphisme",
-        "homomorphisme",
-        "homomorphisme"
-      ]
+      "expected": "homomorphisme"
     },
     "ker": {
-      "expected": [
-        "noyau",
-        "noyau",
-        "noyau"
-      ]
+      "expected": "noyau"
     },
     "Tr": {
-      "expected": [
-        "trace",
-        "trace",
-        "trace"
-      ]
+      "expected": "trace"
     },
     "tr": {
-      "expected": [
-        "trace",
-        "trace",
-        "trace"
-      ]
+      "expected": "trace"
     },
     "log": {
-      "expected": [
-        "log",
-        "log",
-        "log"
-      ]
+      "expected": "log"
     },
     "ln": {
-      "expected": [
-        "logarithme népérien",
-        "logarithme népérien",
-        "logarithme népérien"
-      ]
+      "expected": "logarithme népérien"
     },
     "lg": {
-      "expected": [
-        "logarithme décimal",
-        "logarithme décimal",
-        "logarithme décimal"
-      ]
+      "expected": "logarithme décimal"
     },
     "exp": {
-      "expected": [
-        "exponentielle",
-        "exponentielle",
-        "exponentielle"
-      ]
+      "expected": "exponentielle"
     },
     "expt": {
-      "expected": [
-        "exponentielle",
-        "exponentielle",
-        "exponentielle"
-      ]
+      "expected": "exponentielle"
     },
     "gcd": {
-      "expected": [
-        "pgcd",
-        "pgcd",
-        "pgcd"
-      ]
+      "expected": "pgcd"
     },
     "lcm": {
-      "expected": [
-        "ppcm",
-        "ppcm",
-        "ppcm"
-      ]
+      "expected": "ppcm"
     },
     "arg": {
-      "expected": [
-        "argument",
-        "argument",
-        "argument"
-      ]
+      "expected": "argument"
     },
     "im": {
-      "expected": [
-        "partie imaginaire",
-        "partie imaginaire",
-        "partie imaginaire"
-      ]
+      "expected": "partie imaginaire"
     },
     "re": {
-      "expected": [
-        "partie réelle",
-        "partie réelle",
-        "partie réelle"
-      ]
+      "expected": "partie réelle"
     },
     "inf": {
-      "expected": [
-        "borne inférieure",
-        "borne inférieure",
-        "borne inférieure"
-      ]
+      "expected": "borne inférieure"
     },
     "lim": {
-      "expected": [
-        "limite",
-        "limite",
-        "limite"
-      ]
+      "expected": "limite"
     },
     "lim inf": {
-      "expected": [
-        "limite inferior",
-        "limite inferior",
-        "limite inferior"
-      ]
+      "expected": "limite inferior"
     },
     "liminf": {
-      "expected": [
-        "limite inferior",
-        "limite inferior",
-        "limite inferior"
-      ]
+      "expected": "limite inferior"
     },
     "lim sup": {
-      "expected": [
-        "limite superior",
-        "limite superior",
-        "limite superior"
-      ]
+      "expected": "limite superior"
     },
     "limsup": {
-      "expected": [
-        "limite superior",
-        "limite superior",
-        "limite superior"
-      ]
+      "expected": "limite superior"
     },
     "max": {
-      "expected": [
-        "maximum",
-        "maximum",
-        "maximum"
-      ]
+      "expected": "maximum"
     },
     "min": {
-      "expected": [
-        "minimum",
-        "minimum",
-        "minimum"
-      ]
+      "expected": "minimum"
     },
     "sup": {
-      "expected": [
-        "borne supérieure",
-        "borne supérieure",
-        "borne supérieure"
-      ]
+      "expected": "borne supérieure"
     },
     "injlim": {
-      "expected": [
-        "limite inductive",
-        "limite inductive",
-        "limite inductive"
-      ]
+      "expected": "limite inductive"
     },
     "inj lim": {
-      "expected": [
-        "limite inductive",
-        "limite inductive",
-        "limite inductive"
-      ]
+      "expected": "limite inductive"
     },
     "projlim": {
-      "expected": [
-        "limite projective",
-        "limite projective",
-        "limite projective"
-      ]
+      "expected": "limite projective"
     },
     "proj lim": {
-      "expected": [
-        "limite projective",
-        "limite projective",
-        "limite projective"
-      ]
+      "expected": "limite projective"
     },
     "mod": {
-      "expected": [
-        "modulo",
-        "modulo",
-        "modulo"
-      ]
+      "expected": "modulo"
     },
     "Pr": {
-      "expected": [
-        "probabilité",
-        "probabilité",
-        "probabilité"
-      ]
+      "expected": "probabilité"
     },
     "cosh": {
-      "expected": [
-        "cosinus hyperbolique",
-        "cosinus hyperbolique",
-        "cosinus hyperbolique"
-      ]
+      "expected": "cosinus hyperbolique"
     },
     "coth": {
-      "expected": [
-        "cotangente hyperbolique",
-        "cotangente hyperbolique",
-        "cotangente hyperbolique"
-      ]
+      "expected": "cotangente hyperbolique"
     },
     "csch": {
-      "expected": [
-        "cosécante hyperbolique",
-        "cosécante hyperbolique",
-        "cosécante hyperbolique"
-      ]
+      "expected": "cosécante hyperbolique"
     },
     "sech": {
-      "expected": [
-        "sécante hyperbolique",
-        "sécante hyperbolique",
-        "sécante hyperbolique"
-      ]
+      "expected": "sécante hyperbolique"
     },
     "sinh": {
-      "expected": [
-        "sinus hyperbolique",
-        "sinus hyperbolique",
-        "sinus hyperbolique"
-      ]
+      "expected": "sinus hyperbolique"
     },
     "tanh": {
-      "expected": [
-        "tangente hyperbolique",
-        "tangente hyperbolique",
-        "tangente hyperbolique"
-      ]
+      "expected": "tangente hyperbolique"
     },
     "arcosh": {
-      "expected": [
-        "argument cosinus hyperbolique",
-        "argument cosinus hyperbolique",
-        "argument cosinus hyperbolique"
-      ]
+      "expected": "argument cosinus hyperbolique"
     },
     "arccosh": {
-      "expected": [
-        "argument cosinus hyperbolique",
-        "argument cosinus hyperbolique",
-        "argument cosinus hyperbolique"
-      ]
+      "expected": "argument cosinus hyperbolique"
     },
     "arcoth": {
-      "expected": [
-        "argument cotangente hyperbolique",
-        "argument cotangente hyperbolique",
-        "argument cotangente hyperbolique"
-      ]
+      "expected": "argument cotangente hyperbolique"
     },
     "arccoth": {
-      "expected": [
-        "argument cotangente hyperbolique",
-        "argument cotangente hyperbolique",
-        "argument cotangente hyperbolique"
-      ]
+      "expected": "argument cotangente hyperbolique"
     },
     "arcsch": {
-      "expected": [
-        "argument cosécante hyperbolique",
-        "argument cosécante hyperbolique",
-        "argument cosécante hyperbolique"
-      ]
+      "expected": "argument cosécante hyperbolique"
     },
     "arccsch": {
-      "expected": [
-        "argument cosécante hyperbolique",
-        "argument cosécante hyperbolique",
-        "argument cosécante hyperbolique"
-      ]
+      "expected": "argument cosécante hyperbolique"
     },
     "arsech": {
-      "expected": [
-        "argument sécante hyperbolique",
-        "argument sécante hyperbolique",
-        "argument sécante hyperbolique"
-      ]
+      "expected": "argument sécante hyperbolique"
     },
     "arcsech": {
-      "expected": [
-        "argument sécante hyperbolique",
-        "argument sécante hyperbolique",
-        "argument sécante hyperbolique"
-      ]
+      "expected": "argument sécante hyperbolique"
     },
     "arsinh": {
-      "expected": [
-        "argument sinus hyperbolique",
-        "argument sinus hyperbolique",
-        "argument sinus hyperbolique"
-      ]
+      "expected": "argument sinus hyperbolique"
     },
     "arcsinh": {
-      "expected": [
-        "argument sinus hyperbolique",
-        "argument sinus hyperbolique",
-        "argument sinus hyperbolique"
-      ]
+      "expected": "argument sinus hyperbolique"
     },
     "artanh": {
-      "expected": [
-        "argument tangente hyperbolique",
-        "argument tangente hyperbolique",
-        "argument tangente hyperbolique"
-      ]
+      "expected": "argument tangente hyperbolique"
     },
     "arctanh": {
-      "expected": [
-        "argument tangente hyperbolique",
-        "argument tangente hyperbolique",
-        "argument tangente hyperbolique"
-      ]
+      "expected": "argument tangente hyperbolique"
     },
     "cos": {
-      "expected": [
-        "cosinus",
-        "cosinus",
-        "cosinus"
-      ]
+      "expected": "cosinus"
     },
     "cosine": {
-      "expected": [
-        "cosinus",
-        "cosinus",
-        "cosinus"
-      ]
+      "expected": "cosinus"
     },
     "cot": {
-      "expected": [
-        "cotangente",
-        "cotangente",
-        "cotangente"
-      ]
+      "expected": "cotangente"
     },
     "csc": {
-      "expected": [
-        "cosécante",
-        "cosécante",
-        "cosécante"
-      ]
+      "expected": "cosécante"
     },
     "sec": {
-      "expected": [
-        "sécante",
-        "sécante",
-        "sécante"
-      ]
+      "expected": "sécante"
     },
     "sin": {
-      "expected": [
-        "sinus",
-        "sinus",
-        "sinus"
-      ]
+      "expected": "sinus"
     },
     "sine": {
-      "expected": [
-        "sinus",
-        "sinus",
-        "sinus"
-      ]
+      "expected": "sinus"
     },
     "tan": {
-      "expected": [
-        "tangente",
-        "tangente",
-        "tangente"
-      ]
+      "expected": "tangente"
     },
     "arccos": {
-      "expected": [
-        "arc cosinus",
-        "arc cosinus",
-        "arc cosinus"
-      ]
+      "expected": "arc cosinus"
     },
     "arccot": {
-      "expected": [
-        "arc cotangente",
-        "arc cotangente",
-        "arc cotangente"
-      ]
+      "expected": "arc cotangente"
     },
     "arccsc": {
-      "expected": [
-        "arc cosécante",
-        "arc cosécante",
-        "arc cosécante"
-      ]
+      "expected": "arc cosécante"
     },
     "arcsec": {
-      "expected": [
-        "arc sécante",
-        "arc sécante",
-        "arc sécante"
-      ]
+      "expected": "arc sécante"
     },
     "arcsin": {
-      "expected": [
-        "arc sinus",
-        "arc sinus",
-        "arc sinus"
-      ]
+      "expected": "arc sinus"
     },
     "arctan": {
-      "expected": [
-        "arc tangente",
-        "arc tangente",
-        "arc tangente"
-      ]
+      "expected": "arc tangente"
     },
     "PGCD": {
-      "expected": [
-        "pgcd",
-        "pgcd",
-        "pgcd"
-      ]
+      "expected": "pgcd"
     },
     "pgcd": {
-      "expected": [
-        "pgcd",
-        "pgcd",
-        "pgcd"
-      ]
+      "expected": "pgcd"
     },
     "ppcm": {
-      "expected": [
-        "ppcm",
-        "ppcm",
-        "ppcm"
-      ]
+      "expected": "ppcm"
     },
     "PPCM": {
-      "expected": [
-        "ppcm",
-        "ppcm",
-        "ppcm"
-      ]
+      "expected": "ppcm"
     },
     "PPMC": {
-      "expected": [
-        "ppcm",
-        "ppcm",
-        "ppcm"
-      ]
+      "expected": "ppcm"
     },
     "ppmc": {
-      "expected": [
-        "ppcm",
-        "ppcm",
-        "ppcm"
-      ]
+      "expected": "ppcm"
     },
     "argch": {
-      "expected": [
-        "argument cosinus hyperbolique",
-        "argument cosinus hyperbolique",
-        "argument cosinus hyperbolique"
-      ]
+      "expected": "argument cosinus hyperbolique"
     },
     "argcoth": {
-      "expected": [
-        "argument cotangente hyperbolique",
-        "argument cotangente hyperbolique",
-        "argument cotangente hyperbolique"
-      ]
+      "expected": "argument cotangente hyperbolique"
     },
     "argcsch": {
-      "expected": [
-        "argument cosécante hyperbolique",
-        "argument cosécante hyperbolique",
-        "argument cosécante hyperbolique"
-      ]
+      "expected": "argument cosécante hyperbolique"
     },
     "argsech": {
-      "expected": [
-        "argument sécante hyperbolique",
-        "argument sécante hyperbolique",
-        "argument sécante hyperbolique"
-      ]
+      "expected": "argument sécante hyperbolique"
     },
     "argsh": {
-      "expected": [
-        "argument sinus hyperbolique",
-        "argument sinus hyperbolique",
-        "argument sinus hyperbolique"
-      ]
+      "expected": "argument sinus hyperbolique"
     },
     "argth": {
-      "expected": [
-        "argument tangente hyperbolique",
-        "argument tangente hyperbolique",
-        "argument tangente hyperbolique"
-      ]
+      "expected": "argument tangente hyperbolique"
     }
   }
 }
