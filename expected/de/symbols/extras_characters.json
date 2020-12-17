@@ -6,58 +6,58 @@
   "active": "ExtraSymbolsGerman",
   "tests": {
     "00B2-clearspeak-Exponent_Exponent": {
-      "name": "00B2",
+      "key": "00B2",
       "domain": "clearspeak",
       "style": "Exponent_Exponent",
-      "expected": "00B2"
+      "expected": "mit Exponent 2"
     },
     "00B2-clearspeak-Exponent_OrdinalPower": {
-      "name": "00B2",
+      "key": "00B2",
       "domain": "clearspeak",
       "style": "Exponent_OrdinalPower",
-      "expected": "00B2"
+      "expected": "zur zweiten Potenz"
     },
     "00B3-clearspeak-Exponent_Exponent": {
-      "name": "00B3",
+      "key": "00B3",
       "domain": "clearspeak",
       "style": "Exponent_Exponent",
-      "expected": "00B3"
+      "expected": "mit Exponent 3"
     },
     "00B3-clearspeak-Exponent_OrdinalPower": {
-      "name": "00B3",
+      "key": "00B3",
       "domain": "clearspeak",
       "style": "Exponent_OrdinalPower",
-      "expected": "00B3"
+      "expected": "zur dritten Potenz"
     },
     "0394-clearspeak-TriangleSymbol_Delta": {
-      "name": "0394",
+      "key": "0394",
       "domain": "clearspeak",
       "style": "TriangleSymbol_Delta",
-      "expected": "0394"
+      "expected": "großes Delta"
     },
     "00AF-default-alternative": {
-      "name": "00AF",
+      "key": "00AF",
       "domain": "default",
       "style": "alternative",
-      "expected": "00AF"
+      "expected": "Makron"
     },
     "00B7-default-alternative": {
-      "name": "00B7",
+      "key": "00B7",
       "domain": "default",
       "style": "alternative",
-      "expected": "00B7"
+      "expected": "Punkt mittig"
     },
     "22C5-default-alternative": {
-      "name": "22C5",
+      "key": "22C5",
       "domain": "default",
       "style": "alternative",
-      "expected": "22C5"
+      "expected": "Multiplikationspunkt"
     },
     "FFE3-default-alternative": {
-      "name": "FFE3",
+      "key": "FFE3",
       "domain": "default",
       "style": "alternative",
-      "expected": "FFE3"
+      "expected": "vollbreites Makron"
     }
   }
 }
