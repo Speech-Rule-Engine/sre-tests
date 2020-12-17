@@ -1,0 +1,357 @@
+{
+  "locale": "fr",
+  "name": "FrenchExtraUnit",
+  "type": "unit",
+  "factory": "symbol",
+  "active": "ExtraSymbolsFrench",
+  "tests": {
+    "sq ft-default-plural": {
+      "name": "sq ft",
+      "domain": "default",
+      "style": "plural",
+      "expected": "pieds carrés"
+    },
+    "$-default-singular": {
+      "name": "$",
+      "domain": "default",
+      "style": "singular",
+      "expected": "dollar"
+    },
+    "$-default-dual": {
+      "name": "$",
+      "domain": "default",
+      "style": "dual",
+      "expected": "$"
+    },
+    "£-default-singular": {
+      "name": "£",
+      "domain": "default",
+      "style": "singular",
+      "expected": "£"
+    },
+    "£-default-dual": {
+      "name": "£",
+      "domain": "default",
+      "style": "dual",
+      "expected": "£"
+    },
+    "¥-default-singular": {
+      "name": "¥",
+      "domain": "default",
+      "style": "singular",
+      "expected": "¥"
+    },
+    "¥-default-dual": {
+      "name": "¥",
+      "domain": "default",
+      "style": "dual",
+      "expected": "¥"
+    },
+    "€-default-singular": {
+      "name": "€",
+      "domain": "default",
+      "style": "singular",
+      "expected": "euro"
+    },
+    "€-default-dual": {
+      "name": "€",
+      "domain": "default",
+      "style": "dual",
+      "expected": "€"
+    },
+    "₡-default-singular": {
+      "name": "₡",
+      "domain": "default",
+      "style": "singular",
+      "expected": "₡"
+    },
+    "₡-default-dual": {
+      "name": "₡",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₡"
+    },
+    "₢-default-singular": {
+      "name": "₢",
+      "domain": "default",
+      "style": "singular",
+      "expected": "₢"
+    },
+    "₢-default-dual": {
+      "name": "₢",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₢"
+    },
+    "₣-default-singular": {
+      "name": "₣",
+      "domain": "default",
+      "style": "singular",
+      "expected": "franc"
+    },
+    "₣-default-dual": {
+      "name": "₣",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₣"
+    },
+    "₤-default-singular": {
+      "name": "₤",
+      "domain": "default",
+      "style": "singular",
+      "expected": "lire"
+    },
+    "₤-default-dual": {
+      "name": "₤",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₤"
+    },
+    "₥-default-singular": {
+      "name": "₥",
+      "domain": "default",
+      "style": "singular",
+      "expected": "₥"
+    },
+    "₥-default-dual": {
+      "name": "₥",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₥"
+    },
+    "₦-default-singular": {
+      "name": "₦",
+      "domain": "default",
+      "style": "singular",
+      "expected": "₦"
+    },
+    "₦-default-dual": {
+      "name": "₦",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₦"
+    },
+    "₧-default-singular": {
+      "name": "₧",
+      "domain": "default",
+      "style": "singular",
+      "expected": "₧"
+    },
+    "₧-default-dual": {
+      "name": "₧",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₧"
+    },
+    "₨-default-singular": {
+      "name": "₨",
+      "domain": "default",
+      "style": "singular",
+      "expected": "₨"
+    },
+    "₨-default-dual": {
+      "name": "₨",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₨"
+    },
+    "₩-default-singular": {
+      "name": "₩",
+      "domain": "default",
+      "style": "singular",
+      "expected": "₩"
+    },
+    "₩-default-dual": {
+      "name": "₩",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₩"
+    },
+    "₪-default-singular": {
+      "name": "₪",
+      "domain": "default",
+      "style": "singular",
+      "expected": "chékel"
+    },
+    "₪-default-dual": {
+      "name": "₪",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₪"
+    },
+    "₫-default-singular": {
+      "name": "₫",
+      "domain": "default",
+      "style": "singular",
+      "expected": "₫"
+    },
+    "₫-default-dual": {
+      "name": "₫",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₫"
+    },
+    "₭-default-singular": {
+      "name": "₭",
+      "domain": "default",
+      "style": "singular",
+      "expected": "₭"
+    },
+    "₭-default-dual": {
+      "name": "₭",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₭"
+    },
+    "₮-default-singular": {
+      "name": "₮",
+      "domain": "default",
+      "style": "singular",
+      "expected": "₮"
+    },
+    "₮-default-dual": {
+      "name": "₮",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₮"
+    },
+    "₯-default-singular": {
+      "name": "₯",
+      "domain": "default",
+      "style": "singular",
+      "expected": "₯"
+    },
+    "₯-default-dual": {
+      "name": "₯",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₯"
+    },
+    "₰-default-singular": {
+      "name": "₰",
+      "domain": "default",
+      "style": "singular",
+      "expected": "₰"
+    },
+    "₰-default-dual": {
+      "name": "₰",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₰"
+    },
+    "₱-default-singular": {
+      "name": "₱",
+      "domain": "default",
+      "style": "singular",
+      "expected": "₱"
+    },
+    "₱-default-dual": {
+      "name": "₱",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₱"
+    },
+    "₲-default-singular": {
+      "name": "₲",
+      "domain": "default",
+      "style": "singular",
+      "expected": "₲"
+    },
+    "₲-default-dual": {
+      "name": "₲",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₲"
+    },
+    "₳-default-singular": {
+      "name": "₳",
+      "domain": "default",
+      "style": "singular",
+      "expected": "₳"
+    },
+    "₳-default-dual": {
+      "name": "₳",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₳"
+    },
+    "₴-default-singular": {
+      "name": "₴",
+      "domain": "default",
+      "style": "singular",
+      "expected": "₴"
+    },
+    "₴-default-dual": {
+      "name": "₴",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₴"
+    },
+    "₵-default-singular": {
+      "name": "₵",
+      "domain": "default",
+      "style": "singular",
+      "expected": "₵"
+    },
+    "₵-default-dual": {
+      "name": "₵",
+      "domain": "default",
+      "style": "dual",
+      "expected": "₵"
+    },
+    "元-default-singular": {
+      "name": "元",
+      "domain": "default",
+      "style": "singular",
+      "expected": "元"
+    },
+    "元-default-dual": {
+      "name": "元",
+      "domain": "default",
+      "style": "dual",
+      "expected": "元"
+    },
+    "rpm-default-plural": {
+      "name": "rpm",
+      "domain": "default",
+      "style": "plural",
+      "expected": "tours par minute"
+    },
+    "kmh-default-plural": {
+      "name": "kmh",
+      "domain": "default",
+      "style": "plural",
+      "expected": "kilomètres par heure"
+    },
+    "mph-default-plural": {
+      "name": "mph",
+      "domain": "default",
+      "style": "plural",
+      "expected": "miles par heure"
+    },
+    "s-default-dual": {
+      "name": "s",
+      "domain": "default",
+      "style": "dual",
+      "expected": "s"
+    },
+    "″-default-dual": {
+      "name": "″",
+      "domain": "default",
+      "style": "dual",
+      "expected": "″"
+    },
+    "tbsp-default-plural": {
+      "name": "tbsp",
+      "domain": "default",
+      "style": "plural",
+      "expected": "cuillères à soupe"
+    },
+    "tsp-default-plural": {
+      "name": "tsp",
+      "domain": "default",
+      "style": "plural",
+      "expected": "cuillères à thé"
+    }
+  }
+}

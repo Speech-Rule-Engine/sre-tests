@@ -1,0 +1,63 @@
+{
+  "locale": "de",
+  "name": "GermanExtraCharacter",
+  "type": "character",
+  "factory": "symbol",
+  "active": "ExtraSymbolsGerman",
+  "tests": {
+    "00B2-clearspeak-Exponent_Exponent": {
+      "name": "00B2",
+      "domain": "clearspeak",
+      "style": "Exponent_Exponent",
+      "expected": "00B2"
+    },
+    "00B2-clearspeak-Exponent_OrdinalPower": {
+      "name": "00B2",
+      "domain": "clearspeak",
+      "style": "Exponent_OrdinalPower",
+      "expected": "00B2"
+    },
+    "00B3-clearspeak-Exponent_Exponent": {
+      "name": "00B3",
+      "domain": "clearspeak",
+      "style": "Exponent_Exponent",
+      "expected": "00B3"
+    },
+    "00B3-clearspeak-Exponent_OrdinalPower": {
+      "name": "00B3",
+      "domain": "clearspeak",
+      "style": "Exponent_OrdinalPower",
+      "expected": "00B3"
+    },
+    "0394-clearspeak-TriangleSymbol_Delta": {
+      "name": "0394",
+      "domain": "clearspeak",
+      "style": "TriangleSymbol_Delta",
+      "expected": "0394"
+    },
+    "00AF-default-alternative": {
+      "name": "00AF",
+      "domain": "default",
+      "style": "alternative",
+      "expected": "00AF"
+    },
+    "00B7-default-alternative": {
+      "name": "00B7",
+      "domain": "default",
+      "style": "alternative",
+      "expected": "00B7"
+    },
+    "22C5-default-alternative": {
+      "name": "22C5",
+      "domain": "default",
+      "style": "alternative",
+      "expected": "22C5"
+    },
+    "FFE3-default-alternative": {
+      "name": "FFE3",
+      "domain": "default",
+      "style": "alternative",
+      "expected": "FFE3"
+    }
+  }
+}

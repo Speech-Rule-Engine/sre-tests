@@ -1,0 +1,45 @@
+{
+  "locale": "de",
+  "name": "GermanExtraFunction",
+  "type": "function",
+  "factory": "symbol",
+  "active": "ExtraSymbolsGerman",
+  "tests": {
+    "arccos-clearspeak-Trig_TrigInverse": {
+      "name": "arccos",
+      "domain": "clearspeak",
+      "style": "Trig_TrigInverse",
+      "expected": "inverser Kosinus"
+    },
+    "arccot-clearspeak-Trig_TrigInverse": {
+      "name": "arccot",
+      "domain": "clearspeak",
+      "style": "Trig_TrigInverse",
+      "expected": "inverser Kotangens"
+    },
+    "arccsc-clearspeak-Trig_TrigInverse": {
+      "name": "arccsc",
+      "domain": "clearspeak",
+      "style": "Trig_TrigInverse",
+      "expected": "inverser Kosekans"
+    },
+    "arcsec-clearspeak-Trig_TrigInverse": {
+      "name": "arcsec",
+      "domain": "clearspeak",
+      "style": "Trig_TrigInverse",
+      "expected": "inverser Sekans"
+    },
+    "arcsin-clearspeak-Trig_TrigInverse": {
+      "name": "arcsin",
+      "domain": "clearspeak",
+      "style": "Trig_TrigInverse",
+      "expected": "inverser Sinus"
+    },
+    "arctan-clearspeak-Trig_TrigInverse": {
+      "name": "arctan",
+      "domain": "clearspeak",
+      "style": "Trig_TrigInverse",
+      "expected": "inverser Tangens"
+    }
+  }
+}

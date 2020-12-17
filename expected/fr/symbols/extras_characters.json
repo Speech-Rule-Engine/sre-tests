@@ -1,0 +1,57 @@
+{
+  "locale": "fr",
+  "name": "FrenchExtraCharacter",
+  "type": "character",
+  "factory": "symbol",
+  "active": "ExtraSymbolsFrench",
+  "tests": {
+    "0394-clearspeak-TriangleSymbol_Delta": {
+      "name": "0394",
+      "domain": "clearspeak",
+      "style": "TriangleSymbol_Delta",
+      "expected": "0394"
+    },
+    "0028-default-alternative": {
+      "name": "0028",
+      "domain": "default",
+      "style": "alternative",
+      "expected": "0028"
+    },
+    "0029-default-alternative": {
+      "name": "0029",
+      "domain": "default",
+      "style": "alternative",
+      "expected": "0029"
+    },
+    "005B-default-alternative": {
+      "name": "005B",
+      "domain": "default",
+      "style": "alternative",
+      "expected": "005B"
+    },
+    "005D-default-alternative": {
+      "name": "005D",
+      "domain": "default",
+      "style": "alternative",
+      "expected": "005D"
+    },
+    "007B-default-alternative": {
+      "name": "007B",
+      "domain": "default",
+      "style": "alternative",
+      "expected": "007B"
+    },
+    "007D-default-alternative": {
+      "name": "007D",
+      "domain": "default",
+      "style": "alternative",
+      "expected": "007D"
+    },
+    "0027-default-alternative": {
+      "name": "0027",
+      "domain": "default",
+      "style": "alternative",
+      "expected": "0027"
+    }
+  }
+}

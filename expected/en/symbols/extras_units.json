@@ -1,0 +1,27 @@
+{
+  "locale": "en",
+  "name": "EnglishExtraUnit",
+  "type": "unit",
+  "factory": "symbol",
+  "active": "ExtraSymbolsEnglish",
+  "tests": {
+    "sq ft-default-plural": {
+      "name": "sq ft",
+      "domain": "default",
+      "style": "plural",
+      "expected": "square feet"
+    },
+    "C-default-alternative": {
+      "name": "C",
+      "domain": "default",
+      "style": "alternative",
+      "expected": "Centigrade"
+    },
+    "cu ft-default-plural": {
+      "name": "cu ft",
+      "domain": "default",
+      "style": "plural",
+      "expected": "cubic feet"
+    }
+  }
+}
