@@ -90,7 +90,7 @@ const AllConstraints: {[loc: string]: string[]} = {
  * file.
  * @param locale The locale.
  * @param keys The keys for symbols to test.
- * @param unit Is it his unit tests.
+ * @param unit Are the symbols units.
  * @return The test json structure.
  */
 function testOutput(locale: string, keys: string[], unit = false): JsonFile {
@@ -105,17 +105,15 @@ function testOutput(locale: string, keys: string[], unit = false): JsonFile {
       'name': '',
       'locale': locale,
       'domain': dom,
-      'styles': ['default']
+      'style': 'default'
     };
     let tests: JsonTests = {};
     for (let key of keys) {
       if (key.match(/^_comment/)) {
         continue;
       }
-      let expected: string[] = [];
       let result = getOutput(dom, modality, locale, 'default', key, unit);
-      expected.push(result);
-      tests[key] = {'expected': expected};
+      tests[key] = {'expected': result};
     }
     json.tests = tests;
     output[dom] = json;
@@ -149,14 +147,73 @@ export function testFromLocale(locale: string, kind: SymbolType): JsonFile {
   return testOutput(locale, keys, isUnitTest(kind));
 }
 
+/**
+ * Gets all the expected values for a given locale for the tests in the base
+ * file.
+ * @param  locale The locale.
+ * @param  kind The kind of symbol for which to generate tests.
+ * @param  dir Output directory.
+ */
+export function testOutputFromExtras(locale: string, kind: SymbolType, dir = '/tmp') {
+  if (kind === SymbolType.SIUNITS || locale === 'nemeth') {
+    return;
+  }
+  let output = testFromExtras(locale, kind);
+  if (!Object.keys(output.tests).length) {
+    return;
+  }
+  let tests = output.tests;
+  delete output.tests;
+  let singular = (kind === SymbolType.CHARACTERS) ? 'character' : kind.replace(/s$/, '');
+  output.name = `Extra${singular.replace(/^\w/, c => c.toUpperCase())}`;
+  output.type = singular;
+  output.factory = 'symbol';
+  output.active = 'ExtraSymbols';
+  output.tests = tests;
+  writeOutputToFile(dir, output, locale, 'extras', kind);
+}
+
 export function testFromExtras(locale: string, kind: SymbolType): JsonFile {
   let file = sre.BaseUtil.makePath(sre.SystemExternal.jsonPath) +
       locale + '.js';
   let json = JSON.parse(sre.MathMap.loadFile(file));
   let extras = getExtrasFor(locale, json, kind);
-  console.log('Extras:');
-  console.log(extras);
-  return testOutput(locale, [], isUnitTest(kind));
+  return testExtras(locale, extras, kind);
+}
+
+/**
+ * Gets all the expected values for a given locale for the tests in the base
+ * file.
+ * @param locale The locale.
+ * @param extras The keys for symbols to test.
+ * @param unit Is the symbol a unit.
+ * @return The test json structure.
+ */
+function testExtras(
+  locale: string, extras: JsonTests, kind: SymbolType): JsonFile {
+  let json: JsonFile = {'locale': locale};
+  let tests: JsonTests = {};
+  for (let [key, constr] of Object.entries(extras)) {
+    if (key.match(/^_comment/)) {
+      continue;
+    }
+    for (let [dom, styles] of Object.entries(constr)) {
+      for (let style of styles) {
+        let char = kind === SymbolType.CHARACTERS ?
+          String.fromCodePoint(parseInt(key, 16)) : key;
+        let result = getOutput(
+          dom, 'speech', locale, style, char, isUnitTest(kind));
+        tests[`${key}-${dom}-${style}`] = {
+          'key': char,
+          'domain': dom,
+          'style': style,
+          'expected': result
+        };
+      }
+    }
+  }
+  json.tests = tests;
+  return json;
 }
 
 export function getExtrasFor(
@@ -171,7 +228,7 @@ export function getExtrasFor(
     let mappings = symbol.mappings;
     for (let [domain, styles] of Object.entries(mappings)) {
       if (domains.indexOf(domain) === -1) {
-        extras[symbol.key] = mappings;
+        // extras[symbol.key] = mappings;
         continue;
       }
       let result: JsonTest = {};
@@ -330,6 +387,7 @@ export function allTests(dir = '/tmp/symbols') {
   for (let loc of sre.Variables.LOCALES) {
     for (const kind of Object.values(SymbolType)) {
       testOutputFromBoth(loc, kind, dir);
+      testOutputFromExtras(loc, kind, dir);
     }
   }
 }
@@ -347,7 +405,3 @@ export function replaceTests(dir = '/tmp/symbols') {
     }
   }
 }
-
-// Rewrite:
-// Constraints by default
-// Everything else into extra?

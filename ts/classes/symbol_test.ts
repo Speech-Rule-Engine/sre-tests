@@ -21,18 +21,15 @@ import {SpeechTest} from './speech_test';
 
 export class SymbolTest extends SpeechTest {
 
+  /**
+   * The type of symbol that is tested.
+   */
   public kind: string = 'character';
 
-  public pickFields = ['name', 'expected', 'style'];
-
-  // /**
-  //  * Tests speech translation for single characters.
-  //  * @param char The Unicode character.
-  //  * @param answer Expected speech translation for the character and style.
-  //  */
-  // public executeCharTest(char: string, answer: string) {
-  //     this.executeTest(char, answer, this.style);
-  // }
+  /**
+   * @override
+   */
+  public pickFields = ['name', 'key', 'expected', 'style', 'domain'];
 
   /**
    * Execute test for a single unit string.
@@ -61,7 +58,7 @@ export class SymbolTest extends SpeechTest {
        modality: this.modality, rules: this.rules, locale: this.locale});
     let actual = this.getSpeech(text);
     let expected = this.actual ? actual : answer;
-    this.appendRuleExample(text, expected, style);
+    this.appendRuleExample(text, expected, style, this.domain);
     this.assert.equal(actual, expected);
   }
 
@@ -84,7 +81,7 @@ export class SymbolTest extends SpeechTest {
     } catch (e) {
       throw e;
     } finally {
-      this.kind = this.baseTests.type || 'character';
+      this.kind = this.baseTests.type || this.jsonTests.type || 'character';
     }
   }
 
@@ -92,7 +89,9 @@ export class SymbolTest extends SpeechTest {
    * @override
    */
   public method(...args: any[]) {
-    this.kind === 'unit' ? this.executeUnitTest(args[0], args[1], args[2]) :
-      this.executeTest(args[0], args[1], args[2]);
+    let key = args[1] ? args[1] : args[0];
+    this.domain = args[4] || this.domain;
+    this.kind === 'unit' ? this.executeUnitTest(key, args[2], args[3]) :
+      this.executeTest(key, args[2], args[3]);
   }
 }

@@ -4,51 +4,52 @@
   "type": "character",
   "factory": "symbol",
   "active": "ExtraSymbolsFrench",
+  "information": "French Extra Character tests.",
   "tests": {
     "0394-clearspeak-TriangleSymbol_Delta": {
-      "key": "0394",
+      "key": "Δ",
       "domain": "clearspeak",
       "style": "TriangleSymbol_Delta",
       "expected": "Delta majuscule"
     },
     "0028-default-alternative": {
-      "key": "0028",
+      "key": "(",
       "domain": "default",
       "style": "alternative",
       "expected": "parenthèse ouvrante"
     },
     "0029-default-alternative": {
-      "key": "0029",
+      "key": ")",
       "domain": "default",
       "style": "alternative",
       "expected": "parenthèse fermante"
     },
     "005B-default-alternative": {
-      "key": "005B",
+      "key": "[",
       "domain": "default",
       "style": "alternative",
       "expected": "crochet ouvrant"
     },
     "005D-default-alternative": {
-      "key": "005D",
+      "key": "]",
       "domain": "default",
       "style": "alternative",
       "expected": "crochet fermant"
     },
     "007B-default-alternative": {
-      "key": "007B",
+      "key": "{",
       "domain": "default",
       "style": "alternative",
       "expected": "accolade ouvrante"
     },
     "007D-default-alternative": {
-      "key": "007D",
+      "key": "}",
       "domain": "default",
       "style": "alternative",
       "expected": "accolade fermante"
     },
     "0027-default-alternative": {
-      "key": "0027",
+      "key": "'",
       "domain": "default",
       "style": "alternative",
       "expected": "apostrophe"

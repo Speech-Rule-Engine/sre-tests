@@ -4,57 +4,58 @@
   "type": "character",
   "factory": "symbol",
   "active": "ExtraSymbolsGerman",
+  "information": "German Extra Character tests.",
   "tests": {
     "00B2-clearspeak-Exponent_Exponent": {
-      "key": "00B2",
+      "key": "²",
       "domain": "clearspeak",
       "style": "Exponent_Exponent",
       "expected": "mit Exponent 2"
     },
     "00B2-clearspeak-Exponent_OrdinalPower": {
-      "key": "00B2",
+      "key": "²",
       "domain": "clearspeak",
       "style": "Exponent_OrdinalPower",
       "expected": "zur zweiten Potenz"
     },
     "00B3-clearspeak-Exponent_Exponent": {
-      "key": "00B3",
+      "key": "³",
       "domain": "clearspeak",
       "style": "Exponent_Exponent",
       "expected": "mit Exponent 3"
     },
     "00B3-clearspeak-Exponent_OrdinalPower": {
-      "key": "00B3",
+      "key": "³",
       "domain": "clearspeak",
       "style": "Exponent_OrdinalPower",
       "expected": "zur dritten Potenz"
     },
     "0394-clearspeak-TriangleSymbol_Delta": {
-      "key": "0394",
+      "key": "Δ",
       "domain": "clearspeak",
       "style": "TriangleSymbol_Delta",
       "expected": "großes Delta"
     },
     "00AF-default-alternative": {
-      "key": "00AF",
+      "key": "¯",
       "domain": "default",
       "style": "alternative",
       "expected": "Makron"
     },
     "00B7-default-alternative": {
-      "key": "00B7",
+      "key": "·",
       "domain": "default",
       "style": "alternative",
       "expected": "Punkt mittig"
     },
     "22C5-default-alternative": {
-      "key": "22C5",
+      "key": "⋅",
       "domain": "default",
       "style": "alternative",
       "expected": "Multiplikationspunkt"
     },
     "FFE3-default-alternative": {
-      "key": "FFE3",
+      "key": "￣",
       "domain": "default",
       "style": "alternative",
       "expected": "vollbreites Makron"
