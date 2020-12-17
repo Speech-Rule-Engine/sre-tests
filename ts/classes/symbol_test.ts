@@ -21,33 +21,28 @@ import {SpeechTest} from './speech_test';
 
 export class SymbolTest extends SpeechTest {
 
-  public styles: string[] = [];
-
   public kind: string = 'character';
 
-  public pickFields = ['name', 'expected'];
+  public pickFields = ['name', 'expected', 'style'];
 
-  /**
-   * Tests speech translation for single characters.
-   * @param char The Unicode character.
-   * @param answers List of expected speech translations for each
-   *     available style.
-   */
-  public executeCharTest(char: string, answers: string[]) {
-    for (let i = 0; i < answers.length; i++) {
-      this.executeTest(char, answers[i], this.styles[i]);
-    }
-  }
+  // /**
+  //  * Tests speech translation for single characters.
+  //  * @param char The Unicode character.
+  //  * @param answer Expected speech translation for the character and style.
+  //  */
+  // public executeCharTest(char: string, answer: string) {
+  //     this.executeTest(char, answer, this.style);
+  // }
 
   /**
    * Execute test for a single unit string.
    * @param char The character or string representing the unit.
-   * @param answers A list of answers.
+   * @param answer Expected speech translation for the unit and style.
    */
-  public executeUnitTest(char: string, answers: string[]) {
+  public executeUnitTest(char: string, answer: string, style?: string) {
     sre.Grammar.getInstance().pushState({annotation: 'unit'});
     try {
-      this.executeCharTest(char, answers);
+      this.executeTest(char, answer, style);
     } catch (err) {
       throw err;
     } finally {
@@ -89,7 +84,6 @@ export class SymbolTest extends SpeechTest {
     } catch (e) {
       throw e;
     } finally {
-      this.styles = this.jsonTests.styles || [];
       this.kind = this.baseTests.type || 'character';
     }
   }
@@ -98,7 +92,7 @@ export class SymbolTest extends SpeechTest {
    * @override
    */
   public method(...args: any[]) {
-    this.kind === 'unit' ? this.executeUnitTest(args[0], args[1]) :
-      this.executeCharTest(args[0], args[1]);
+    this.kind === 'unit' ? this.executeUnitTest(args[0], args[1], args[2]) :
+      this.executeTest(args[0], args[1], args[2]);
   }
 }
