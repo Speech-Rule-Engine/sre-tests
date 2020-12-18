@@ -31,7 +31,13 @@ export const enum Status {
   NEW, VIEWED, CHANGED
 }
 
+export const enum Feedback {
+  CORRECT, UNKNOWN, LAYOUT, DISCUSSION, SEMANTIC, PRINT
+}
+
 export const Interaction = 'InteractionStatus';
+
+export const FeedbackStatus = 'feedback';
 
 export const NemethProjectDocuments = NemethProject + '::documents';
 

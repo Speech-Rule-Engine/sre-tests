@@ -81,6 +81,18 @@ export async function getUsers() {
   return users.users.map(y => y.uid);
 }
 
+// This forces an update of a field for every user. Be careful!
+export async function updateField(
+  db: any, doc: string, field: string, value: any) {
+  let users = await getUsers();
+  for (let user of users) {
+    let paths = await FU.getPaths(db, user, doc);
+    for (let path of Object.keys(paths)) {
+      FU.updateField(db, user, path, field, value);
+    }
+  }
+}
+
 // Missing:
 // * Differences between user and original
 // * Harvest user input

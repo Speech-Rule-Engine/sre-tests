@@ -142,6 +142,7 @@ export async function updateCollection(
     });
     if (!dataB) {
       setTestsStatus(dataA);
+      setTestsFeedback(dataA);
       await uploadData(db, collB, path, dataA);
       await setPath(db, collB, path);
       continue;
@@ -154,12 +155,23 @@ export async function updateCollection(
       }
       let entryA: JsonTest = dataA.tests[key];
       setStatus(entryA);
+      setFeedback(entryA);
       await updateData(db, collB, path, entryA, ['tests', key]);
     }
     await updateData(db, collB, path, dataA.order, ['order']);
   }
   return result;
 }
+
+// Update a field in all tests entries of a collection.
+export async function updateField(
+  db: any, collection: string, path: string, field: string, value: any) {
+  let data = await downloadData(db, collection, path);
+  for (let key of data.order) {
+    await updateData(db, collection, path, value, ['tests', key, field]);
+  }
+}
+
 
 /**
  * Sets the status of all tests to new.
@@ -177,4 +189,22 @@ function setTestsStatus(tests: JsonTests) {
  */
 function setStatus(entry: JsonTest) {
   entry[FC.Interaction] = FC.Status.NEW;
+}
+
+/**
+ * Sets the feedback of all tests to new.
+ * @param {JsonTests} tests The tests object.
+ */
+function setTestsFeedback(tests: JsonTests) {
+  for (let entry of Object.values(tests.tests)) {
+    setFeedback(entry);
+  }
+}
+
+/**
+ * Sets the feedback of a single test entry to new.
+ * @param {JsonTest} entry The test entry.
+ */
+function setFeedback(entry: JsonTest) {
+  entry[FC.FeedbackStatus] = FC.Feedback.CORRECT;
 }

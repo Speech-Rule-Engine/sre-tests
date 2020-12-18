@@ -57,6 +57,19 @@
         <span id="statusvalue"></span>
         </div></span>
   </div>
+  <div class="section">
+    <span class="pretitle">Feedback:</span>
+    <span class="active">
+        <select id="feedback" onchange="Convert.changeFeedback()">
+          <option value="0">Correct - Correct transcription</option>
+          <option value="1">Unknown - A symbol is not in the Nemeth standard</option>
+          <option value="2">Layout - Can only be expressed in 2D layout</option>
+          <option value="3">Discussion - This needs further discussion</option>
+          <option value="4">Semantic - Interpretation depends on the context</option>
+          <option value="5">Print - Transcription depends on typesetting. E.g., inline vs block formulas</option>
+        </select>
+    </span>
+  </div>
 </div>
 
 

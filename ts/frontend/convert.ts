@@ -69,8 +69,15 @@ function setTest(test: JsonTest) {
     backtransformer().via(test.expected as string);
   (field.ip as HTMLTextAreaElement).focus();
   setStatus(test[FC.Interaction]);
+  setFeedback(test[FC.FeedbackStatus]);
   if (MathJax.typeset) {
     MathJax.typeset();
+  }
+}
+
+function setFeedback(feedback: FC.Feedback) {
+  if (feedback !== undefined) {
+    (field.feedback as HTMLButtonElement).value = feedback.toString();
   }
 }
 
@@ -126,6 +133,7 @@ async function initFile(collection: string, file: string) {
   field.name = document.getElementById('mathname');
   field.statuscolor = document.getElementById('statuscolor');
   field.statusvalue = document.getElementById('statusvalue');
+  field.feedback = document.getElementById('feedback');
   fireTest.setTest(fireTest.currentTest());
   initButtons(fireTest);
 }
@@ -200,4 +208,13 @@ export function changeFormat() {
   fireTest.saveTest(fireTest.getTest());
   kind = (field.format as HTMLButtonElement).value;
   fireTest.setTest(fireTest.currentTest());
+}
+
+/**
+ * Changes the feedback entry.
+ */
+export function changeFeedback() {
+  let value = parseInt((field.feedback as HTMLButtonElement).value, 10);
+  fireTest.currentTest()[FC.FeedbackStatus] = value;
+  fireTest.saveFeedback(value);
 }

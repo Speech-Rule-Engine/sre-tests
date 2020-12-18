@@ -107,6 +107,12 @@ export class FireTest {
     }
   }
 
+  public async saveFeedback(feedback: FC.Feedback) {
+    let test = this.currentTest();
+    FU.updateData(this.db, this.collection, this.doc, feedback,
+                  ['tests', test.name, FC.FeedbackStatus]);
+  }
+  
   /**
    * The next test in the cycle.
    * @param {boolean} direction Forward if true.
