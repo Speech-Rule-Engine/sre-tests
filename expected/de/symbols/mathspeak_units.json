@@ -3,11 +3,7 @@
   "name": "GermanMathspeakUnit",
   "locale": "de",
   "domain": "mathspeak",
-  "styles": [
-    "default",
-    "brief",
-    "sbrief"
-  ],
+  "style": "default",
   "active": "MathspeakSymbolsGerman",
   "type": "unit",
   "factory": "symbol",
@@ -15,1124 +11,484 @@
   "information": "German Mathspeak Unit tests.",
   "tests": {
     "sq": {
-      "expected": [
-        "Quadrat",
-        "Quadrat",
-        "Quadrat"
-      ]
+      "expected": "Quadrat"
     },
     "sq.": {
-      "expected": [
-        "Quadrat",
-        "Quadrat",
-        "Quadrat"
-      ]
+      "expected": "Quadrat"
     },
     "sq in": {
-      "expected": [
-        "Quadratzoll",
-        "Quadratzoll",
-        "Quadratzoll"
-      ]
+      "expected": "Quadratzoll"
     },
     "sq. in.": {
-      "expected": [
-        "Quadratzoll",
-        "Quadratzoll",
-        "Quadratzoll"
-      ]
+      "expected": "Quadratzoll"
     },
     "sq inch": {
-      "expected": [
-        "Quadratzoll",
-        "Quadratzoll",
-        "Quadratzoll"
-      ]
+      "expected": "Quadratzoll"
     },
     "sq. inch": {
-      "expected": [
-        "Quadratzoll",
-        "Quadratzoll",
-        "Quadratzoll"
-      ]
+      "expected": "Quadratzoll"
     },
     "sq rd": {
-      "expected": [
-        "Quadratrute",
-        "Quadratrute",
-        "Quadratrute"
-      ]
+      "expected": "Quadratrute"
     },
     "sq. rd.": {
-      "expected": [
-        "Quadratrute",
-        "Quadratrute",
-        "Quadratrute"
-      ]
+      "expected": "Quadratrute"
     },
     "sq ft": {
-      "expected": [
-        "Quadratfuß",
-        "Quadratfuß",
-        "Quadratfuß"
-      ]
+      "expected": "Quadratfuß"
     },
     "sq. ft.": {
-      "expected": [
-        "Quadratfuß",
-        "Quadratfuß",
-        "Quadratfuß"
-      ]
+      "expected": "Quadratfuß"
     },
     "sq yd": {
-      "expected": [
-        "Quadratyard",
-        "Quadratyard",
-        "Quadratyard"
-      ]
+      "expected": "Quadratyard"
     },
     "sq. yd.": {
-      "expected": [
-        "Quadratyard",
-        "Quadratyard",
-        "Quadratyard"
-      ]
+      "expected": "Quadratyard"
     },
     "sq mi": {
-      "expected": [
-        "Quadratmeile",
-        "Quadratmeile",
-        "Quadratmeile"
-      ]
+      "expected": "Quadratmeile"
     },
     "sq. mi.": {
-      "expected": [
-        "Quadratmeile",
-        "Quadratmeile",
-        "Quadratmeile"
-      ]
+      "expected": "Quadratmeile"
     },
     "ac": {
-      "expected": [
-        "Morgen",
-        "Morgen",
-        "Morgen"
-      ]
+      "expected": "Morgen"
     },
     "ac.": {
-      "expected": [
-        "Morgen",
-        "Morgen",
-        "Morgen"
-      ]
+      "expected": "Morgen"
     },
     "acr": {
-      "expected": [
-        "Morgen",
-        "Morgen",
-        "Morgen"
-      ]
+      "expected": "Morgen"
     },
     "acr.": {
-      "expected": [
-        "Morgen",
-        "Morgen",
-        "Morgen"
-      ]
+      "expected": "Morgen"
     },
     "ha": {
-      "expected": [
-        "Hektar",
-        "Hektar",
-        "Hektar"
-      ]
+      "expected": "Hektar"
     },
     "$": {
-      "expected": [
-        "Dollar",
-        "Dollar",
-        "Dollar"
-      ]
+      "expected": "Dollar"
     },
     "💲": {
-      "expected": [
-        "Dollar",
-        "Dollar",
-        "Dollar"
-      ]
+      "expected": "Dollar"
     },
     "＄": {
-      "expected": [
-        "Dollar",
-        "Dollar",
-        "Dollar"
-      ]
+      "expected": "Dollar"
     },
     "﹩": {
-      "expected": [
-        "Dollar",
-        "Dollar",
-        "Dollar"
-      ]
+      "expected": "Dollar"
     },
     "USD": {
-      "expected": [
-        "Dollar",
-        "Dollar",
-        "Dollar"
-      ]
+      "expected": "Dollar"
     },
     "£": {
-      "expected": [
-        "Pfund",
-        "Pfund",
-        "Pfund"
-      ]
+      "expected": "Pfund"
     },
     "￡": {
-      "expected": [
-        "Pfund",
-        "Pfund",
-        "Pfund"
-      ]
+      "expected": "Pfund"
     },
     "GBP": {
-      "expected": [
-        "Pfund",
-        "Pfund",
-        "Pfund"
-      ]
+      "expected": "Pfund"
     },
     "¥": {
-      "expected": [
-        "Yen",
-        "Yen",
-        "Yen"
-      ]
+      "expected": "Yen"
     },
     "￥": {
-      "expected": [
-        "Yen",
-        "Yen",
-        "Yen"
-      ]
+      "expected": "Yen"
     },
     "JPY": {
-      "expected": [
-        "Yen",
-        "Yen",
-        "Yen"
-      ]
+      "expected": "Yen"
     },
     "€": {
-      "expected": [
-        "Euro",
-        "Euro",
-        "Euro"
-      ]
+      "expected": "Euro"
     },
     "EUR": {
-      "expected": [
-        "Euro",
-        "Euro",
-        "Euro"
-      ]
+      "expected": "Euro"
     },
     "₡": {
-      "expected": [
-        "Colon",
-        "Colon",
-        "Colon"
-      ]
+      "expected": "Colon"
     },
     "CRC": {
-      "expected": [
-        "Colon",
-        "Colon",
-        "Colon"
-      ]
+      "expected": "Colon"
     },
     "₢": {
-      "expected": [
-        "Cruzeiro",
-        "Cruzeiro",
-        "Cruzeiro"
-      ]
+      "expected": "Cruzeiro"
     },
     "₣": {
-      "expected": [
-        "Franc",
-        "Franc",
-        "Franc"
-      ]
+      "expected": "Franc"
     },
     "₤": {
-      "expected": [
-        "Lira",
-        "Lira",
-        "Lira"
-      ]
+      "expected": "Lira"
     },
     "₥": {
-      "expected": [
-        "Mill",
-        "Mill",
-        "Mill"
-      ]
+      "expected": "Mill"
     },
     "₦": {
-      "expected": [
-        "Naira",
-        "Naira",
-        "Naira"
-      ]
+      "expected": "Naira"
     },
     "NGN": {
-      "expected": [
-        "Naira",
-        "Naira",
-        "Naira"
-      ]
+      "expected": "Naira"
     },
     "₧": {
-      "expected": [
-        "Pesete",
-        "Pesete",
-        "Pesete"
-      ]
+      "expected": "Pesete"
     },
     "₨": {
-      "expected": [
-        "Rupie",
-        "Rupie",
-        "Rupie"
-      ]
+      "expected": "Rupie"
     },
     "₹": {
-      "expected": [
-        "Rupie",
-        "Rupie",
-        "Rupie"
-      ]
+      "expected": "Rupie"
     },
     "INR": {
-      "expected": [
-        "Rupie",
-        "Rupie",
-        "Rupie"
-      ]
+      "expected": "Rupie"
     },
     "NPR": {
-      "expected": [
-        "Rupie",
-        "Rupie",
-        "Rupie"
-      ]
+      "expected": "Rupie"
     },
     "PKR": {
-      "expected": [
-        "Rupie",
-        "Rupie",
-        "Rupie"
-      ]
+      "expected": "Rupie"
     },
     "LKR": {
-      "expected": [
-        "Rupie",
-        "Rupie",
-        "Rupie"
-      ]
+      "expected": "Rupie"
     },
     "₩": {
-      "expected": [
-        "Won",
-        "Won",
-        "Won"
-      ]
+      "expected": "Won"
     },
     "￦": {
-      "expected": [
-        "Won",
-        "Won",
-        "Won"
-      ]
+      "expected": "Won"
     },
     "KRW": {
-      "expected": [
-        "Won",
-        "Won",
-        "Won"
-      ]
+      "expected": "Won"
     },
     "₪": {
-      "expected": [
-        "Schekel",
-        "Schekel",
-        "Schekel"
-      ]
+      "expected": "Schekel"
     },
     "₫": {
-      "expected": [
-        "Dong",
-        "Dong",
-        "Dong"
-      ]
+      "expected": "Dong"
     },
     "₭": {
-      "expected": [
-        "Kip",
-        "Kip",
-        "Kip"
-      ]
+      "expected": "Kip"
     },
     "₮": {
-      "expected": [
-        "Tögrög",
-        "Tögrög",
-        "Tögrög"
-      ]
+      "expected": "Tögrög"
     },
     "₯": {
-      "expected": [
-        "Drachme",
-        "Drachme",
-        "Drachme"
-      ]
+      "expected": "Drachme"
     },
     "₰": {
-      "expected": [
-        "Pfennig",
-        "Pfennig",
-        "Pfennig"
-      ]
+      "expected": "Pfennig"
     },
     "₱": {
-      "expected": [
-        "Peso",
-        "Peso",
-        "Peso"
-      ]
+      "expected": "Peso"
     },
     "₲": {
-      "expected": [
-        "Guarani",
-        "Guarani",
-        "Guarani"
-      ]
+      "expected": "Guarani"
     },
     "₳": {
-      "expected": [
-        "Austral",
-        "Austral",
-        "Austral"
-      ]
+      "expected": "Austral"
     },
     "₴": {
-      "expected": [
-        "Hrywnja",
-        "Hrywnja",
-        "Hrywnja"
-      ]
+      "expected": "Hrywnja"
     },
     "UAH": {
-      "expected": [
-        "Hrywnja",
-        "Hrywnja",
-        "Hrywnja"
-      ]
+      "expected": "Hrywnja"
     },
     "₵": {
-      "expected": [
-        "Cedi",
-        "Cedi",
-        "Cedi"
-      ]
+      "expected": "Cedi"
     },
     "GHS": {
-      "expected": [
-        "Cedi",
-        "Cedi",
-        "Cedi"
-      ]
+      "expected": "Cedi"
     },
     "元": {
-      "expected": [
-        "Yuan",
-        "Yuan",
-        "Yuan"
-      ]
+      "expected": "Yuan"
     },
     "￠": {
-      "expected": [
-        "Cent",
-        "Cent",
-        "Cent"
-      ]
+      "expected": "Cent"
     },
     "¢": {
-      "expected": [
-        "Cent",
-        "Cent",
-        "Cent"
-      ]
+      "expected": "Cent"
     },
     "kwh": {
-      "expected": [
-        "Kilowattstunde",
-        "Kilowattstunde",
-        "Kilowattstunde"
-      ]
+      "expected": "Kilowattstunde"
     },
     "kWh": {
-      "expected": [
-        "Kilowattstunde",
-        "Kilowattstunde",
-        "Kilowattstunde"
-      ]
+      "expected": "Kilowattstunde"
     },
     "Ohm": {
-      "expected": [
-        "Ohm",
-        "Ohm",
-        "Ohm"
-      ]
+      "expected": "Ohm"
     },
     "ohm": {
-      "expected": [
-        "Ohm",
-        "Ohm",
-        "Ohm"
-      ]
+      "expected": "Ohm"
     },
     "ft": {
-      "expected": [
-        "Fuß",
-        "Fuß",
-        "Fuß"
-      ]
+      "expected": "Fuß"
     },
     "ft.": {
-      "expected": [
-        "Fuß",
-        "Fuß",
-        "Fuß"
-      ]
+      "expected": "Fuß"
     },
     "in": {
-      "expected": [
-        "Zoll",
-        "Zoll",
-        "Zoll"
-      ]
+      "expected": "Zoll"
     },
     "in.": {
-      "expected": [
-        "Zoll",
-        "Zoll",
-        "Zoll"
-      ]
+      "expected": "Zoll"
     },
     "mi": {
-      "expected": [
-        "Meile",
-        "Meile",
-        "Meile"
-      ]
+      "expected": "Meile"
     },
     "mi.": {
-      "expected": [
-        "Meile",
-        "Meile",
-        "Meile"
-      ]
+      "expected": "Meile"
     },
     "yd": {
-      "expected": [
-        "Yard",
-        "Yard",
-        "Yard"
-      ]
+      "expected": "Yard"
     },
     "yd.": {
-      "expected": [
-        "Yard",
-        "Yard",
-        "Yard"
-      ]
+      "expected": "Yard"
     },
     "li": {
-      "expected": [
-        "Kettenglied",
-        "Kettenglied",
-        "Kettenglied"
-      ]
+      "expected": "Kettenglied"
     },
     "li.": {
-      "expected": [
-        "Kettenglied",
-        "Kettenglied",
-        "Kettenglied"
-      ]
+      "expected": "Kettenglied"
     },
     "rd": {
-      "expected": [
-        "Rute",
-        "Rute",
-        "Rute"
-      ]
+      "expected": "Rute"
     },
     "rd.": {
-      "expected": [
-        "Rute",
-        "Rute",
-        "Rute"
-      ]
+      "expected": "Rute"
     },
     "ch": {
-      "expected": [
-        "Kette",
-        "Kette",
-        "Kette"
-      ]
+      "expected": "Kette"
     },
     "ch.": {
-      "expected": [
-        "Kette",
-        "Kette",
-        "Kette"
-      ]
+      "expected": "Kette"
     },
     "fur": {
-      "expected": [
-        "Furchenlänge",
-        "Furchenlänge",
-        "Furchenlänge"
-      ]
+      "expected": "Furchenlänge"
     },
     "fur.": {
-      "expected": [
-        "Furchenlänge",
-        "Furchenlänge",
-        "Furchenlänge"
-      ]
+      "expected": "Furchenlänge"
     },
     "n.m.": {
-      "expected": [
-        "nautische Meile",
-        "nautische Meile",
-        "nautische Meile"
-      ]
+      "expected": "nautische Meile"
     },
     "b": {
-      "expected": [
-        "Bit",
-        "Bit",
-        "Bit"
-      ]
+      "expected": "Bit"
     },
     "KB": {
-      "expected": [
-        "Kilobyte",
-        "Kilobyte",
-        "Kilobyte"
-      ]
+      "expected": "Kilobyte"
     },
     "doz": {
-      "expected": [
-        "Dutzend",
-        "Dutzend",
-        "Dutzend"
-      ]
+      "expected": "Dutzend"
     },
     "doz.": {
-      "expected": [
-        "Dutzend",
-        "Dutzend",
-        "Dutzend"
-      ]
+      "expected": "Dutzend"
     },
     "dz": {
-      "expected": [
-        "Dutzend",
-        "Dutzend",
-        "Dutzend"
-      ]
+      "expected": "Dutzend"
     },
     "dz.": {
-      "expected": [
-        "Dutzend",
-        "Dutzend",
-        "Dutzend"
-      ]
+      "expected": "Dutzend"
     },
     "kt": {
-      "expected": [
-        "Knoten",
-        "Knoten",
-        "Knoten"
-      ]
+      "expected": "Knoten"
     },
     "kt.": {
-      "expected": [
-        "Knoten",
-        "Knoten",
-        "Knoten"
-      ]
+      "expected": "Knoten"
     },
     "mph": {
-      "expected": [
-        "Meilen pro Stunde",
-        "Meilen pro Stunde",
-        "Meilen pro Stunde"
-      ]
+      "expected": "Meilen pro Stunde"
     },
     "rpm": {
-      "expected": [
-        "Umdrehungen pro Minute",
-        "Umdrehungen pro Minute",
-        "Umdrehungen pro Minute"
-      ]
+      "expected": "Umdrehungen pro Minute"
     },
     "kmh": {
-      "expected": [
-        "Kilometer pro Stunde",
-        "Kilometer pro Stunde",
-        "Kilometer pro Stunde"
-      ]
+      "expected": "Kilometer pro Stunde"
     },
     "F": {
-      "expected": [
-        "Farad",
-        "Farad",
-        "Farad"
-      ]
+      "expected": "Farad"
     },
     "F.": {
-      "expected": [
-        "Farad",
-        "Farad",
-        "Farad"
-      ]
+      "expected": "Farad"
     },
     "°F": {
-      "expected": [
-        "Farad",
-        "Farad",
-        "Farad"
-      ]
+      "expected": "Farad"
     },
     "C": {
-      "expected": [
-        "Celsius",
-        "Celsius",
-        "Celsius"
-      ]
+      "expected": "Celsius"
     },
     "°C": {
-      "expected": [
-        "Celsius",
-        "Celsius",
-        "Celsius"
-      ]
+      "expected": "Celsius"
     },
     "K": {
-      "expected": [
-        "Kelvin",
-        "Kelvin",
-        "Kelvin"
-      ]
+      "expected": "Kelvin"
     },
     "°K": {
-      "expected": [
-        "Kelvin",
-        "Kelvin",
-        "Kelvin"
-      ]
+      "expected": "Kelvin"
     },
     "min": {
-      "expected": [
-        "Minute",
-        "Minute",
-        "Minute"
-      ]
+      "expected": "Minute"
     },
     "h": {
-      "expected": [
-        "Stunde",
-        "Stunde",
-        "Stunde"
-      ]
+      "expected": "Stunde"
     },
     "hr": {
-      "expected": [
-        "Stunde",
-        "Stunde",
-        "Stunde"
-      ]
+      "expected": "Stunde"
     },
     "cu": {
-      "expected": [
-        "Kubik",
-        "Kubik",
-        "Kubik"
-      ]
+      "expected": "Kubik"
     },
     "cu.": {
-      "expected": [
-        "Kubik",
-        "Kubik",
-        "Kubik"
-      ]
+      "expected": "Kubik"
     },
     "cu in": {
-      "expected": [
-        "Kubikinch",
-        "Kubikinch",
-        "Kubikinch"
-      ]
+      "expected": "Kubikinch"
     },
     "cu. in.": {
-      "expected": [
-        "Kubikinch",
-        "Kubikinch",
-        "Kubikinch"
-      ]
+      "expected": "Kubikinch"
     },
     "cu ft": {
-      "expected": [
-        "Kubikfuß",
-        "Kubikfuß",
-        "Kubikfuß"
-      ]
+      "expected": "Kubikfuß"
     },
     "cu. ft.": {
-      "expected": [
-        "Kubikfuß",
-        "Kubikfuß",
-        "Kubikfuß"
-      ]
+      "expected": "Kubikfuß"
     },
     "cu yd": {
-      "expected": [
-        "Kubikyard",
-        "Kubikyard",
-        "Kubikyard"
-      ]
+      "expected": "Kubikyard"
     },
     "cu. yd.": {
-      "expected": [
-        "Kubikyard",
-        "Kubikyard",
-        "Kubikyard"
-      ]
+      "expected": "Kubikyard"
     },
     "bbl.": {
-      "expected": [
-        "Fass",
-        "Fass",
-        "Fass"
-      ]
+      "expected": "Fass"
     },
     "bbl": {
-      "expected": [
-        "Fass",
-        "Fass",
-        "Fass"
-      ]
+      "expected": "Fass"
     },
     "fl. oz.": {
-      "expected": [
-        "Fluid ounce",
-        "Fluid ounce",
-        "Fluid ounce"
-      ]
+      "expected": "Fluid ounce"
     },
     "fl oz": {
-      "expected": [
-        "Fluid ounce",
-        "Fluid ounce",
-        "Fluid ounce"
-      ]
+      "expected": "Fluid ounce"
     },
     "gal": {
-      "expected": [
-        "Gallone",
-        "Gallone",
-        "Gallone"
-      ]
+      "expected": "Gallone"
     },
     "gal.": {
-      "expected": [
-        "Gallone",
-        "Gallone",
-        "Gallone"
-      ]
+      "expected": "Gallone"
     },
     "pt": {
-      "expected": [
-        "Pint",
-        "Pint",
-        "Pint"
-      ]
+      "expected": "Pint"
     },
     "pt.": {
-      "expected": [
-        "Pint",
-        "Pint",
-        "Pint"
-      ]
+      "expected": "Pint"
     },
     "qt": {
-      "expected": [
-        "Quart",
-        "Quart",
-        "Quart"
-      ]
+      "expected": "Quart"
     },
     "qt.": {
-      "expected": [
-        "Quart",
-        "Quart",
-        "Quart"
-      ]
+      "expected": "Quart"
     },
     "fl dr": {
-      "expected": [
-        "Flüssigdrachme",
-        "Flüssigdrachme",
-        "Flüssigdrachme"
-      ]
+      "expected": "Flüssigdrachme"
     },
     "fl. dr.": {
-      "expected": [
-        "Flüssigdrachme",
-        "Flüssigdrachme",
-        "Flüssigdrachme"
-      ]
+      "expected": "Flüssigdrachme"
     },
     "tbsp": {
-      "expected": [
-        "Esslöffel",
-        "Esslöffel",
-        "Esslöffel"
-      ]
+      "expected": "Esslöffel"
     },
     "tbsp.": {
-      "expected": [
-        "Esslöffel",
-        "Esslöffel",
-        "Esslöffel"
-      ]
+      "expected": "Esslöffel"
     },
     "Tbsp": {
-      "expected": [
-        "Esslöffel",
-        "Esslöffel",
-        "Esslöffel"
-      ]
+      "expected": "Esslöffel"
     },
     "Tbsp.": {
-      "expected": [
-        "Esslöffel",
-        "Esslöffel",
-        "Esslöffel"
-      ]
+      "expected": "Esslöffel"
     },
     "tsp": {
-      "expected": [
-        "Teelöffel",
-        "Teelöffel",
-        "Teelöffel"
-      ]
+      "expected": "Teelöffel"
     },
     "tsp.": {
-      "expected": [
-        "Teelöffel",
-        "Teelöffel",
-        "Teelöffel"
-      ]
+      "expected": "Teelöffel"
     },
     "cp": {
-      "expected": [
-        "Tasse",
-        "Tasse",
-        "Tasse"
-      ]
+      "expected": "Tasse"
     },
     "cp.": {
-      "expected": [
-        "Tasse",
-        "Tasse",
-        "Tasse"
-      ]
+      "expected": "Tasse"
     },
     "cc": {
-      "expected": [
-        "Kubikzentimeter",
-        "Kubikzentimeter",
-        "Kubikzentimeter"
-      ]
+      "expected": "Kubikzentimeter"
     },
     "ccm": {
-      "expected": [
-        "Kubikzentimeter",
-        "Kubikzentimeter",
-        "Kubikzentimeter"
-      ]
+      "expected": "Kubikzentimeter"
     },
     "dr": {
-      "expected": [
-        "Drachme",
-        "Drachme",
-        "Drachme"
-      ]
+      "expected": "Drachme"
     },
     "dr.": {
-      "expected": [
-        "Drachme",
-        "Drachme",
-        "Drachme"
-      ]
+      "expected": "Drachme"
     },
     "oz": {
-      "expected": [
-        "Unze",
-        "Unze",
-        "Unze"
-      ]
+      "expected": "Unze"
     },
     "oz.": {
-      "expected": [
-        "Unze",
-        "Unze",
-        "Unze"
-      ]
+      "expected": "Unze"
     },
     "lb": {
-      "expected": [
-        "Pfund",
-        "Pfund",
-        "Pfund"
-      ]
+      "expected": "Pfund"
     },
     "lb.": {
-      "expected": [
-        "Pfund",
-        "Pfund",
-        "Pfund"
-      ]
+      "expected": "Pfund"
     },
     "st": {
-      "expected": [
-        "Stone",
-        "Stone",
-        "Stone"
-      ]
+      "expected": "Stone"
     },
     "st.": {
-      "expected": [
-        "Stone",
-        "Stone",
-        "Stone"
-      ]
+      "expected": "Stone"
     },
     "qtr": {
-      "expected": [
-        "Viertelzentner",
-        "Viertelzentner",
-        "Viertelzentner"
-      ]
+      "expected": "Viertelzentner"
     },
     "qtr.": {
-      "expected": [
-        "Viertelzentner",
-        "Viertelzentner",
-        "Viertelzentner"
-      ]
+      "expected": "Viertelzentner"
     },
     "cwt": {
-      "expected": [
-        "Zentner",
-        "Zentner",
-        "Zentner"
-      ]
+      "expected": "Zentner"
     },
     "cwt.": {
-      "expected": [
-        "Zentner",
-        "Zentner",
-        "Zentner"
-      ]
+      "expected": "Zentner"
     },
     "LT": {
-      "expected": [
-        "Long ton",
-        "Long ton",
-        "Long ton"
-      ]
+      "expected": "Long ton"
     },
     "L.T.": {
-      "expected": [
-        "Long ton",
-        "Long ton",
-        "Long ton"
-      ]
+      "expected": "Long ton"
     },
     "gr": {
-      "expected": [
-        "Gramm",
-        "Gramm",
-        "Gramm"
-      ]
+      "expected": "Gramm"
     },
     "mcg": {
-      "expected": [
-        "Mikrogramm",
-        "Mikrogramm",
-        "Mikrogramm"
-      ]
+      "expected": "Mikrogramm"
     },
     "t": {
-      "expected": [
-        "Tonne",
-        "Tonne",
-        "Tonne"
-      ]
+      "expected": "Tonne"
     },
     "T": {
-      "expected": [
-        "Tonne",
-        "Tonne",
-        "Tonne"
-      ]
+      "expected": "Tonne"
     },
     "″": {
-      "expected": [
-        "Sekunde",
-        "Sekunde",
-        "Sekunde"
-      ]
+      "expected": "Sekunde"
     },
     "′": {
-      "expected": [
-        "Minute",
-        "Minute",
-        "Minute"
-      ]
+      "expected": "Minute"
     },
     "Ztr.": {
-      "expected": [
-        "Zentner",
-        "Zentner",
-        "Zentner"
-      ]
+      "expected": "Zentner"
     },
     "Ctr.": {
-      "expected": [
-        "Zentner",
-        "Zentner",
-        "Zentner"
-      ]
+      "expected": "Zentner"
     }
   }
 }

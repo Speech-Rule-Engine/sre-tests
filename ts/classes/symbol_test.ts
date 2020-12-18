@@ -21,33 +21,25 @@ import {SpeechTest} from './speech_test';
 
 export class SymbolTest extends SpeechTest {
 
-  public styles: string[] = [];
-
+  /**
+   * The type of symbol that is tested.
+   */
   public kind: string = 'character';
 
-  public pickFields = ['name', 'expected'];
-
   /**
-   * Tests speech translation for single characters.
-   * @param char The Unicode character.
-   * @param answers List of expected speech translations for each
-   *     available style.
+   * @override
    */
-  public executeCharTest(char: string, answers: string[]) {
-    for (let i = 0; i < answers.length; i++) {
-      this.executeTest(char, answers[i], this.styles[i]);
-    }
-  }
+  public pickFields = ['name', 'key', 'expected', 'style', 'domain'];
 
   /**
    * Execute test for a single unit string.
    * @param char The character or string representing the unit.
-   * @param answers A list of answers.
+   * @param answer Expected speech translation for the unit and style.
    */
-  public executeUnitTest(char: string, answers: string[]) {
+  public executeUnitTest(char: string, answer: string, style?: string) {
     sre.Grammar.getInstance().pushState({annotation: 'unit'});
     try {
-      this.executeCharTest(char, answers);
+      this.executeTest(char, answer, style);
     } catch (err) {
       throw err;
     } finally {
@@ -66,7 +58,7 @@ export class SymbolTest extends SpeechTest {
        modality: this.modality, rules: this.rules, locale: this.locale});
     let actual = this.getSpeech(text);
     let expected = this.actual ? actual : answer;
-    this.appendRuleExample(text, expected, style);
+    this.appendRuleExample(text, expected, style, this.domain);
     this.assert.equal(actual, expected);
   }
 
@@ -89,8 +81,7 @@ export class SymbolTest extends SpeechTest {
     } catch (e) {
       throw e;
     } finally {
-      this.styles = this.jsonTests.styles || [];
-      this.kind = this.baseTests.type || 'character';
+      this.kind = this.baseTests.type || this.jsonTests.type || 'character';
     }
   }
 
@@ -98,7 +89,9 @@ export class SymbolTest extends SpeechTest {
    * @override
    */
   public method(...args: any[]) {
-    this.kind === 'unit' ? this.executeUnitTest(args[0], args[1]) :
-      this.executeCharTest(args[0], args[1]);
+    let key = args[1] ? args[1] : args[0];
+    this.domain = args[4] || this.domain;
+    this.kind === 'unit' ? this.executeUnitTest(key, args[2], args[3]) :
+      this.executeTest(key, args[2], args[3]);
   }
 }

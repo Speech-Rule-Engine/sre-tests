@@ -23,18 +23,18 @@ import {sre} from '../base/test_external';
 import {JsonFile, JsonTest, JsonTests, TestPath, TestUtil} from '../base/test_util';
 
 // All files that are generated.
-const CharPath = TestPath.INPUT + 'common/';
+const InputPath = TestPath.INPUT + 'common/';
 enum SymbolType {
-  CHARACTERS = 'characters',
+  CHARACTERS = 'symbols',
   FUNCTIONS = 'functions',
   SIUNITS = 'si_units',
   UNITS = 'units'
 }
 const FILES = new Map([
-  [SymbolType.UNITS, CharPath + 'units.json'],
-  [SymbolType.SIUNITS, CharPath + 'si_units.json'],
-  [SymbolType.CHARACTERS, CharPath + 'characters.json'],
-  [SymbolType.FUNCTIONS, CharPath + 'functions.json']
+  [SymbolType.UNITS, 'units.json'],
+  [SymbolType.SIUNITS, 'si_units.json'],
+  [SymbolType.CHARACTERS, 'characters.json'],
+  [SymbolType.FUNCTIONS, 'functions.json']
 ]);
 
 /**
@@ -77,64 +77,43 @@ function getOutput(
     getCharOutput(dom, modality, loc, style, char);
 }
 
-const AllConstraints: {[loc: string]: {[dom: string]: string[]}} = {
-    en: {
-      default: ['default'],
-      mathspeak: ['default', 'brief', 'sbrief'],
-      clearspeak: ['default']
-    },
-    es: {
-      default: ['default'],
-      mathspeak: ['default', 'brief', 'sbrief']
-    },
-    fr: {
-      default: ['default'],
-      mathspeak: ['default', 'brief', 'sbrief'],
-      clearspeak: ['default']
-    },
-    de: {
-      default: ['default'],
-      mathspeak: ['default', 'brief', 'sbrief'],
-      clearspeak: ['default']
-    },
-    nemeth: {
-      default: ['default']
-    }
-  };
+const AllConstraints: {[loc: string]: string[]} = {
+  en: ['default', 'mathspeak', 'clearspeak'],
+  es: ['default', 'mathspeak'],
+  fr: ['default', 'mathspeak', 'clearspeak'],
+  de: ['default', 'mathspeak', 'clearspeak'],
+  nemeth: ['default']
+};
 
 /**
  * Gets all the expected values for a given locale for the tests in the base
  * file.
  * @param locale The locale.
  * @param keys The keys for symbols to test.
- * @param unit Is it his unit tests.
+ * @param unit Are the symbols units.
  * @return The test json structure.
  */
-function testOutput(locale: string, keys: string[], unit = false): JsonTests {
+function testOutput(locale: string, keys: string[], unit = false): JsonFile {
   let constraints = AllConstraints[locale];
   if (!constraints) {
     return {};
   }
   let output: JsonFile = {};
   let modality = locale === 'nemeth' ? 'braille' : 'speech';
-  for (let dom of Object.keys(constraints)) {
+  for (let dom of constraints) {
     let json: JsonFile = {
       'name': '',
       'locale': locale,
       'domain': dom,
-      'styles': constraints[dom]
+      'style': 'default'
     };
     let tests: JsonTests = {};
     for (let key of keys) {
       if (key.match(/^_comment/)) {
         continue;
       }
-      let expected: string[] = [];
-      for (let style of constraints[dom]) {
-        let result = getOutput(dom, modality, locale, style, key, unit);
-        expected.push(result);
-      }
-      tests[key] = {'expected': expected};
+      let result = getOutput(dom, modality, locale, 'default', key, unit);
+      tests[key] = {'expected': result};
     }
     json.tests = tests;
     output[dom] = json;
@@ -150,8 +129,8 @@ function isUnitTest(kind: SymbolType) {
   return kind === SymbolType.UNITS || kind === SymbolType.SIUNITS;
 }
 
-function testFromBase(locale: string, kind: SymbolType): JsonFile {
-  let file = FILES.get(kind);
+export function testFromBase(locale: string, kind: SymbolType): JsonFile {
+  let file = InputPath + FILES.get(kind);
   if (!file) {
     return [];
   }
@@ -159,15 +138,117 @@ function testFromBase(locale: string, kind: SymbolType): JsonFile {
   return testOutput(locale, keys, isUnitTest(kind));
 }
 
-// Loads the locale symbol file from mathmaps.
-export function testFromLocale(locale: string, kind: SymbolType) {
+// Loads the locale symbol file from mathmaps and generates the actual output.
+export function testFromLocale(locale: string, kind: SymbolType): JsonFile {
   let file = sre.BaseUtil.makePath(sre.SystemExternal.jsonPath) +
       locale + '.js';
   let json = JSON.parse(sre.MathMap.loadFile(file));
   let keys = getNamesFor(json, kind);
   return testOutput(locale, keys, isUnitTest(kind));
+}
 
-};
+/**
+ * Gets all the expected values for a given locale for the tests in the base
+ * file.
+ * @param  locale The locale.
+ * @param  kind The kind of symbol for which to generate tests.
+ * @param  dir Output directory.
+ */
+export function testOutputFromExtras(locale: string, kind: SymbolType, dir = '/tmp') {
+  if (kind === SymbolType.SIUNITS || locale === 'nemeth') {
+    return;
+  }
+  let output = testFromExtras(locale, kind);
+  if (!Object.keys(output.tests).length) {
+    return;
+  }
+  let tests = output.tests;
+  delete output.tests;
+  let singular = (kind === SymbolType.CHARACTERS) ? 'character' : kind.replace(/s$/, '');
+  output.name = `Extra${singular.replace(/^\w/, c => c.toUpperCase())}`;
+  output.type = singular;
+  output.factory = 'symbol';
+  output.active = 'ExtraSymbols';
+  output.tests = tests;
+  writeOutputToFile(dir, output, locale, 'extras', kind);
+}
+
+export function testFromExtras(locale: string, kind: SymbolType): JsonFile {
+  let file = sre.BaseUtil.makePath(sre.SystemExternal.jsonPath) +
+      locale + '.js';
+  let json = JSON.parse(sre.MathMap.loadFile(file));
+  let extras = getExtrasFor(locale, json, kind);
+  return testExtras(locale, extras, kind);
+}
+
+/**
+ * Gets all the expected values for a given locale for the tests in the base
+ * file.
+ * @param locale The locale.
+ * @param extras The keys for symbols to test.
+ * @param unit Is the symbol a unit.
+ * @return The test json structure.
+ */
+function testExtras(
+  locale: string, extras: JsonTests, kind: SymbolType): JsonFile {
+  let json: JsonFile = {'locale': locale};
+  let tests: JsonTests = {};
+  for (let [key, constr] of Object.entries(extras)) {
+    if (key.match(/^_comment/)) {
+      continue;
+    }
+    for (let [dom, styles] of Object.entries(constr)) {
+      for (let style of styles) {
+        let char = kind === SymbolType.CHARACTERS ?
+          String.fromCodePoint(parseInt(key, 16)) : key;
+        let result = getOutput(
+          dom, 'speech', locale, style, char, isUnitTest(kind));
+        tests[`${key}-${dom}-${style}`] = {
+          'key': char,
+          'domain': dom,
+          'style': style,
+          'expected': result
+        };
+      }
+    }
+  }
+  json.tests = tests;
+  return json;
+}
+
+export function getExtrasFor(
+  locale: string, json: JsonTests, kind: SymbolType) {
+  let symbols = symbolsfromLocale(json, kind);
+  let domains = AllConstraints[locale];
+  let extras: JsonTests = {};
+  for (let symbol of symbols) {
+    if (!symbol.mappings || !symbol.key) {
+      continue;
+    }
+    let mappings = symbol.mappings;
+    for (let [domain, styles] of Object.entries(mappings)) {
+      if (domains.indexOf(domain) === -1) {
+        // extras[symbol.key] = mappings;
+        continue;
+      }
+      let result: JsonTest = {};
+      for (let [style, _] of Object.entries(styles)) {
+        if (style === 'default') {
+          continue;
+        }
+        if (result[domain]) {
+          result[domain].push(style);
+        } else {
+          result[domain] = [style];
+        }
+      }
+      if (Object.keys(result).length) {
+        extras[symbol.key] = result;
+      }
+    }
+  }
+  return extras;
+}
 
 // Run with e.g.:
 // testOutputFromBase('de', 'units');
@@ -180,60 +261,95 @@ export function testFromLocale(locale: string, kind: SymbolType) {
  */
 export function testOutputFromBase(locale: string, kind: SymbolType, dir = '/tmp') {
   let output = testFromBase(locale, kind);
-  for (let [dom, json] of Object.entries(output)) {
-    writeOutputToFile(dir, json, locale, dom, kind);
+  for (let [_dom, json] of Object.entries(output)) {
+    writeOutputToFile(dir, json, locale, json.domain, kind);
   }
 }
 
 export function testOutputFromLocale(
   locale: string, kind: SymbolType, dir = '/tmp') {
   let output = testFromLocale(locale, kind);
-  for (let [dom, json] of Object.entries(output)) {
-    writeOutputToFile(dir, json, locale, dom, kind);
+  for (let [_dom, json] of Object.entries(output)) {
+    writeOutputToFile(dir, json, locale, json.domain, kind);
   }
 }
 
-export function testOutputFromBoth(locale: string, kind: SymbolType, dir = '/tmp') {
+/**
+ * Compiles test output using both the locale and base file as input and writes
+ * it to the destination directory.
+ * @param {string} locale The locale.
+ * @param {SymbolType} kind The type of symbol that is considered.
+ * @param {string = '/tmp'} dir The output directory.
+ */
+export function testOutputFromBoth(
+  locale: string, kind: SymbolType, dir: string = '/tmp') {
   let output = testFromBase(locale, kind);
   let comp = diffBaseVsLocale(locale, kind);
-  for (let [dom, json] of Object.entries(output)) {
-    let [base, loc] = comp[dom];
+  for (let [_dom, json] of Object.entries(output)) {
+    let [base, loc] = comp[json.domain];
     if (Object.keys(base).length && kind !== SymbolType.CHARACTERS) {
       json.exclude = Object.keys(base);
     }
     Object.assign(json.tests, loc);
-    writeOutputToFile(dir, json, locale, dom, kind);
+    writeOutputToFile(dir, json, locale, json.domain, kind);
   }
 }
 
+/**
+ * Writes JSON output to a file.
+ * @param {string} dir The target directory.
+ * @param {JsonFile} json The JSON structure to output.
+ * @param {string} locale The locale.
+ * @param {string} dom The domain name for the tests.
+ * @param {SymbolType} kind The type of symbols.
+ */
 function writeOutputToFile(
   dir: string, json: JsonFile, locale: string, dom: string, kind: SymbolType) {
-  TestUtil.saveJson(`${dir}/${locale}/${dom}_${kind}.json`, json);
+  TestUtil.saveJson(`${dir}/${locale}/${dom}_${FILES.get(kind)}`, json);
 }
 
-
-// TODO: the si units!
-function getNamesFor(json: JsonTest, kind: SymbolType) {
+function symbolsfromLocale(json: JsonTest, kind: SymbolType): JsonTest[] {
   let keys = Object.keys(json);
   let si = kind === SymbolType.SIUNITS;
   let symbols = keys.filter(j => j.match(RegExp(`^.+/${si ? 'units' : kind}/.+\.js`)));
-  let prefixes = json[keys.find(j => j.match(/^.+\/si\/prefixes\.js/))][0];
-  let result: string[] = [];
+  let result: JsonTest[] = [];
   for (let key of symbols) {
-    for (let obj of Object.values(json[key]) as JsonTest[]) {
-      if (si && obj.names && obj.si) {
-        result = result.concat(getSINamesFor(prefixes, obj.names));
-        continue;
-      }
-      if (!si && obj.names && !obj.si) {
-        result = result.concat(obj.names);
-      }
+    result = result.concat(json[key]);
+  }
+  return result;
+}
+
+/**
+ * Computes a list of all names available in the JSON structure for the
+ * particular symbol type. Note, that the JSON structure is the locale one,
+ * mapping filenames to symbol mappings. This also takes care of SI units.
+ * @param {JsonTest} json The locale JSON structure.
+ * @param {SymbolType} kind The type of symbol.
+ * @return {string[]} The list of names.
+ */
+function getNamesFor(json: JsonTest, kind: SymbolType): string[] {
+  let symbols = symbolsfromLocale(json, kind);
+  let si = kind === SymbolType.SIUNITS;
+  let prefixes = json[Object.keys(json).find(j => j.match(/^.+\/si\/prefixes\.js/))][0];
+  let result: string[] = [];
+  for (let obj of symbols) {
+    if (si && obj.names && obj.si) {
+      result = result.concat(getSINamesFor(prefixes, obj.names));
+      continue;
+    }
+    if (!si && obj.names && !obj.si) {
+      result = result.concat(obj.names);
     }
   }
   return result;
 }
 
-// Generates the SI unit names
+/**
+ * Generates the SI unit names.
+ * @param {string[]} prefixes The list of prefixes.
+ * @param {string} names The base unit name.
+ * @return {string[]} The list of SI units with prefixes.
+ */
 function getSINamesFor(prefixes: string[], names: string): string[] {
   let result: string[] = [];
   prefixes = Object.keys(prefixes);
@@ -249,7 +365,7 @@ function getSINamesFor(prefixes: string[], names: string): string[] {
 //
 // One is from base tests
 // Two is from locale
-function diffBaseVsLocale(locale: string, kind: SymbolType): JsonTest {
+export function diffBaseVsLocale(locale: string, kind: SymbolType): JsonTest {
   let output1 = testFromBase(locale, kind);
   let output2 = testFromLocale(locale, kind);
   let result: JsonTest = {};
@@ -271,6 +387,7 @@ export function allTests(dir = '/tmp/symbols') {
   for (let loc of sre.Variables.LOCALES) {
     for (const kind of Object.values(SymbolType)) {
       testOutputFromBoth(loc, kind, dir);
+      testOutputFromExtras(loc, kind, dir);
     }
   }
 }

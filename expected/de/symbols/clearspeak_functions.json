@@ -3,9 +3,7 @@
   "name": "GermanClearspeakFunction",
   "locale": "de",
   "domain": "clearspeak",
-  "styles": [
-    "default"
-  ],
+  "style": "default",
   "active": "ClearspeakSymbolsGerman",
   "type": "function",
   "factory": "symbol",
@@ -13,349 +11,211 @@
   "information": "German Clearspeak Function tests.",
   "tests": {
     "deg": {
-      "expected": [
-        "Grad"
-      ]
+      "expected": "Grad"
     },
     "det": {
-      "expected": [
-        "Determinante"
-      ]
+      "expected": "Determinante"
     },
     "dim": {
-      "expected": [
-        "Dimension"
-      ]
+      "expected": "Dimension"
     },
     "hom": {
-      "expected": [
-        "hom"
-      ]
+      "expected": "hom"
     },
     "Hom": {
-      "expected": [
-        "hom"
-      ]
+      "expected": "hom"
     },
     "ker": {
-      "expected": [
-        "Kern"
-      ]
+      "expected": "Kern"
     },
     "Tr": {
-      "expected": [
-        "Spur"
-      ]
+      "expected": "Spur"
     },
     "tr": {
-      "expected": [
-        "Spur"
-      ]
+      "expected": "Spur"
     },
     "log": {
-      "expected": [
-        "Logarithmus"
-      ]
+      "expected": "Logarithmus"
     },
     "ln": {
-      "expected": [
-        "natürlicher Logarithmus"
-      ]
+      "expected": "natürlicher Logarithmus"
     },
     "lg": {
-      "expected": [
-        "Logarithmus zur Basis 10"
-      ]
+      "expected": "Logarithmus zur Basis 10"
     },
     "exp": {
-      "expected": [
-        "exp"
-      ]
+      "expected": "exp"
     },
     "expt": {
-      "expected": [
-        "exp"
-      ]
+      "expected": "exp"
     },
     "gcd": {
-      "expected": [
-        "ggt"
-      ]
+      "expected": "ggt"
     },
     "lcm": {
-      "expected": [
-        "kgv"
-      ]
+      "expected": "kgv"
     },
     "arg": {
-      "expected": [
-        "Argument"
-      ]
+      "expected": "Argument"
     },
     "im": {
-      "expected": [
-        "der Imaginärteil der komplexen Zahl"
-      ]
+      "expected": "der Imaginärteil der komplexen Zahl"
     },
     "re": {
-      "expected": [
-        "der Realteil der komplexen Zahl"
-      ]
+      "expected": "der Realteil der komplexen Zahl"
     },
     "inf": {
-      "expected": [
-        "Infimum"
-      ]
+      "expected": "Infimum"
     },
     "lim": {
-      "expected": [
-        "Limes"
-      ]
+      "expected": "Limes"
     },
     "lim inf": {
-      "expected": [
-        "Limes inferior"
-      ]
+      "expected": "Limes inferior"
     },
     "liminf": {
-      "expected": [
-        "Limes inferior"
-      ]
+      "expected": "Limes inferior"
     },
     "lim sup": {
-      "expected": [
-        "Limes superior"
-      ]
+      "expected": "Limes superior"
     },
     "limsup": {
-      "expected": [
-        "Limes superior"
-      ]
+      "expected": "Limes superior"
     },
     "max": {
-      "expected": [
-        "Maximum"
-      ]
+      "expected": "Maximum"
     },
     "min": {
-      "expected": [
-        "Minimum"
-      ]
+      "expected": "Minimum"
     },
     "sup": {
-      "expected": [
-        "Supremum"
-      ]
+      "expected": "Supremum"
     },
     "injlim": {
-      "expected": [
-        "Colimes"
-      ]
+      "expected": "Colimes"
     },
     "inj lim": {
-      "expected": [
-        "Colimes"
-      ]
+      "expected": "Colimes"
     },
     "projlim": {
-      "expected": [
-        "projektiver Limes"
-      ]
+      "expected": "projektiver Limes"
     },
     "proj lim": {
-      "expected": [
-        "projektiver Limes"
-      ]
+      "expected": "projektiver Limes"
     },
     "mod": {
-      "expected": [
-        "modulo"
-      ]
+      "expected": "modulo"
     },
     "Pr": {
-      "expected": [
-        "Wahrscheinlichkeit"
-      ]
+      "expected": "Wahrscheinlichkeit"
     },
     "cosh": {
-      "expected": [
-        "Kosinus hyperbolicus"
-      ]
+      "expected": "Kosinus hyperbolicus"
     },
     "coth": {
-      "expected": [
-        "Kotangens hyperbolicus"
-      ]
+      "expected": "Kotangens hyperbolicus"
     },
     "csch": {
-      "expected": [
-        "Kosekans hyperbolicus"
-      ]
+      "expected": "Kosekans hyperbolicus"
     },
     "sech": {
-      "expected": [
-        "Sekans hyperbolicus"
-      ]
+      "expected": "Sekans hyperbolicus"
     },
     "sinh": {
-      "expected": [
-        "Sinus hyperbolicus"
-      ]
+      "expected": "Sinus hyperbolicus"
     },
     "tanh": {
-      "expected": [
-        "Tangens hyperbolicus"
-      ]
+      "expected": "Tangens hyperbolicus"
     },
     "arcosh": {
-      "expected": [
-        "Areakosinus hyperbolicus"
-      ]
+      "expected": "Areakosinus hyperbolicus"
     },
     "arccosh": {
-      "expected": [
-        "Areakosinus hyperbolicus"
-      ]
+      "expected": "Areakosinus hyperbolicus"
     },
     "arcoth": {
-      "expected": [
-        "Areakotangens hyperbolicus"
-      ]
+      "expected": "Areakotangens hyperbolicus"
     },
     "arccoth": {
-      "expected": [
-        "Areakotangens hyperbolicus"
-      ]
+      "expected": "Areakotangens hyperbolicus"
     },
     "arcsch": {
-      "expected": [
-        "Areakosekans hyperbolicus"
-      ]
+      "expected": "Areakosekans hyperbolicus"
     },
     "arccsch": {
-      "expected": [
-        "Areakosekans hyperbolicus"
-      ]
+      "expected": "Areakosekans hyperbolicus"
     },
     "arsech": {
-      "expected": [
-        "Areasekans hyperbolicus"
-      ]
+      "expected": "Areasekans hyperbolicus"
     },
     "arcsech": {
-      "expected": [
-        "Areasekans hyperbolicus"
-      ]
+      "expected": "Areasekans hyperbolicus"
     },
     "arsinh": {
-      "expected": [
-        "Areasinus hyperbolicus"
-      ]
+      "expected": "Areasinus hyperbolicus"
     },
     "arcsinh": {
-      "expected": [
-        "Areasinus hyperbolicus"
-      ]
+      "expected": "Areasinus hyperbolicus"
     },
     "artanh": {
-      "expected": [
-        "Areatangens hyperbolicus "
-      ]
+      "expected": "Areatangens hyperbolicus "
     },
     "arctanh": {
-      "expected": [
-        "Areatangens hyperbolicus "
-      ]
+      "expected": "Areatangens hyperbolicus "
     },
     "cos": {
-      "expected": [
-        "Kosinus"
-      ]
+      "expected": "Kosinus"
     },
     "cosine": {
-      "expected": [
-        "Kosinus"
-      ]
+      "expected": "Kosinus"
     },
     "cot": {
-      "expected": [
-        "Kotangens"
-      ]
+      "expected": "Kotangens"
     },
     "csc": {
-      "expected": [
-        "Kosekans"
-      ]
+      "expected": "Kosekans"
     },
     "sec": {
-      "expected": [
-        "Sekans"
-      ]
+      "expected": "Sekans"
     },
     "sin": {
-      "expected": [
-        "Sinus"
-      ]
+      "expected": "Sinus"
     },
     "sine": {
-      "expected": [
-        "Sinus"
-      ]
+      "expected": "Sinus"
     },
     "tan": {
-      "expected": [
-        "Tangens"
-      ]
+      "expected": "Tangens"
     },
     "arccos": {
-      "expected": [
-        "Arkuskosinus"
-      ]
+      "expected": "Arkuskosinus"
     },
     "arccot": {
-      "expected": [
-        "Arkuskotangens"
-      ]
+      "expected": "Arkuskotangens"
     },
     "arccsc": {
-      "expected": [
-        "Arkuskosekans"
-      ]
+      "expected": "Arkuskosekans"
     },
     "arcsec": {
-      "expected": [
-        "Arkussekans"
-      ]
+      "expected": "Arkussekans"
     },
     "arcsin": {
-      "expected": [
-        "Arkussinus"
-      ]
+      "expected": "Arkussinus"
     },
     "arctan": {
-      "expected": [
-        "Arkustangens"
-      ]
+      "expected": "Arkustangens"
     },
     "ggt": {
-      "expected": [
-        "ggt"
-      ]
+      "expected": "ggt"
     },
     "ggT": {
-      "expected": [
-        "ggt"
-      ]
+      "expected": "ggt"
     },
     "kgv": {
-      "expected": [
-        "kgv"
-      ]
+      "expected": "kgv"
     },
     "kgV": {
-      "expected": [
-        "kgv"
-      ]
+      "expected": "kgv"
     }
   }
 }

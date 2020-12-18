@@ -1,0 +1,28 @@
+{
+  "locale": "en",
+  "name": "EnglishExtraUnit",
+  "type": "unit",
+  "factory": "symbol",
+  "active": "ExtraSymbolsEnglish",
+  "information": "English Extra Unit tests.",
+  "tests": {
+    "sq ft-default-plural": {
+      "key": "sq ft",
+      "domain": "default",
+      "style": "plural",
+      "expected": "square feet"
+    },
+    "C-default-alternative": {
+      "key": "C",
+      "domain": "default",
+      "style": "alternative",
+      "expected": "Centigrade"
+    },
+    "cu ft-default-plural": {
+      "key": "cu ft",
+      "domain": "default",
+      "style": "plural",
+      "expected": "cubic feet"
+    }
+  }
+}
