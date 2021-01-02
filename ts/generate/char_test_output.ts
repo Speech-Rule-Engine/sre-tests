@@ -36,6 +36,7 @@ const FILES = new Map([
   [SymbolType.CHARACTERS, 'characters.json'],
   [SymbolType.FUNCTIONS, 'functions.json']
 ]);
+const NemethFire = true;
 
 /**
  * Loads the base file.
@@ -43,9 +44,7 @@ const FILES = new Map([
  * @return The symbol keys in the base.
  */
 function loadBaseFile(file: string): string[] {
-  console.log(file);
   const json = TestUtil.loadJson(file);
-  console.log(Object.keys(json.tests).length);
   return Object.keys(json.tests);
 }
 
@@ -291,9 +290,47 @@ export function testOutputFromBoth(
       json.exclude = Object.keys(base);
     }
     Object.assign(json.tests, loc);
-    writeOutputToFile(dir, json, locale, json.domain, kind);
+    if (locale === 'nemeth' && kind === SymbolType.CHARACTERS && NemethFire) {
+      splitNemethForFire(dir, json);
+    } else {
+      writeOutputToFile(dir, json, locale, json.domain, kind);
+    }
   }
 }
+
+export function splitNemethForFire(dir: string, json: JsonFile) {
+  console.log(dir);
+  console.log(Object.keys(json.tests).length);
+  splitNemethByAlphabet(json.tests as JsonTests)
+  console.log(Object.keys(json.tests).length);
+  let file = sre.BaseUtil.makePath(sre.SystemExternal.jsonPath) +
+    'nemeth.js';
+  let locale = JSON.parse(sre.MathMap.loadFile(file));
+  console.log(locale['nemeth/symbols/math_symbols.js'].length);
+  console.log(locale['nemeth/symbols/latin-lower-phonetic.js'].length);
+  console.log(locale['nemeth/symbols/math_geometry.js'].length);
+}
+
+function splitNemethByAlphabet(json: JsonTests) {
+  let intervals = sre.AlphabetGenerator.INTERVALS;
+  let byFonts: {[name: string]: JsonTest[]} = {};
+  for (let value of Object.values(sre.AlphabetGenerator.Font)) {
+    byFonts[value as string] = [];
+  }
+  for (let value of Object.values(sre.AlphabetGenerator.Embellish)) {
+    byFonts[value as string] = [];
+  }
+  for (var i = 0, int: JsonTest; int = intervals[i]; i++) {
+    let keys = sre.AlphabetGenerator.makeInterval(int.interval, int.subst);
+    keys.map(function(x: string) {
+      let letter = sre.SemanticUtil.numberToUnicode(parseInt(x, 16));
+      byFonts[int.font].push(json[letter]);
+      delete json[letter];
+    }); 
+  }
+  return byFonts;
+}
+
 
 /**
  * Writes JSON output to a file.

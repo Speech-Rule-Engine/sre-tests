@@ -332,6 +332,15 @@ nature:
 
 # Generators
 
+## Working in Node
+
+``` javascript
+process.env['SRE_JSON_PATH'] = '../speech-rule-engine/lib/mathmaps';
+let gt = require('./js/generate/generate_tests.js');
+let cto = require('./js/generate/char_test_output.js');
+...
+```
+
 ## Symbol Tests
 
 ### Basic Symbol Tests
