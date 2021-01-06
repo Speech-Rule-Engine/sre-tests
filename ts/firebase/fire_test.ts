@@ -51,6 +51,7 @@ export class FireTest {
   // This should probably be specialised in a subclass;
   public async prepareTests() {
     this._data = await FU.downloadData(this.db, this.collection, this.doc);
+    console.log(this._data);
     this.order = this._data.order as string[];
     this.tests = this._data.tests as JsonTests;
     for (let key of this.order) {
@@ -142,6 +143,20 @@ export class FireTest {
     await this.saveTest(this.getTest());
     this.setTest(this.jumpTest(direction,
                                (x: FC.Status) => x === FC.Status.NEW));
+  }
+
+  /**
+   * Goto test by name.
+   * @param {string} name The name of the test.
+   */
+  public async goTest(name: string) {
+    await this.saveTest(this.getTest());
+    let index = this.order.indexOf(name);
+    if (index === -1) {
+      return;
+    }
+    this.countTests = index;
+    this.setTest(this.currentTest());
   }
 
 }

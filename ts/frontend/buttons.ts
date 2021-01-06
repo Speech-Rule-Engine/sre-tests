@@ -98,6 +98,24 @@ function addListeners(test: FireTest) {
   addListener(forwardBtn.fff, async () => await test.cycleNewTests(true));
 }
 
+function addAccess(test: FireTest) {
+  let access = Buttons.createElement('btn center', 'access');
+  let select = document.createElement('select');
+  select.id = 'access';
+  select.addEventListener('change', (e: any) => {
+    test.goTest(e.target.value);
+  });
+  access.appendChild(select);
+  for (let name of test.order) {
+    let option = document.createElement('option');
+    option.setAttribute('value', name);
+    option.textContent = name;
+    select.appendChild(option);
+  }
+  return access;
+}
+
+
 export function init(test: FireTest) {
   addListeners(test);
   let div = document.createElement('div');
@@ -105,6 +123,7 @@ export function init(test: FireTest) {
   document.body.appendChild(div);
   div.appendChild(backwardBtn.span);
   backwardBtn.show();
+  div.appendChild(addAccess(test));
   let up = Buttons.createElement('btn center', 'selection');
   up.textContent = 'Selection';
   up.setAttribute('tabindex', '0');

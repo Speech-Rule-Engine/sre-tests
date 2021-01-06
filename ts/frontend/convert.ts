@@ -24,19 +24,21 @@ import {FireTest} from '../firebase/fire_test';
 import * as BT  from '../generate/braille_transformer';
 import {init as initButtons} from './buttons';
 
-let transformers: Map<string, BT.BrailleTransformer> = new Map<string, BT.BrailleTransformer>([
-  ['NABT', new BT.Nabt2Unicode()],
-  ['BLDT', new BT.Bldt2Unicode()],
-  ['SDF/JKL', new BT.Ascii2Braille('', '')],
-  ['1-6', new BT.Numeric2Braille('', '')]
-]);
+let transformers: Map<string, BT.BrailleTransformer> =
+  new Map<string, BT.BrailleTransformer>([
+    ['NABT', new BT.Nabt2Unicode()],
+    ['BLDT', new BT.Bldt2Unicode()],
+    ['SDF/JKL', new BT.Ascii2Braille('', '')],
+    ['1-6', new BT.Numeric2Braille('', '')]
+  ]);
 
-let backtransformers: Map<string, BT.BrailleTransformer> = new Map<string, BT.BrailleTransformer>([
-  ['NABT', new BT.Unicode2Nabt()],
-  ['BLDT', new BT.Unicode2Bldt()],
-  ['SDF/JKL', new BT.Braille2Ascii('', '')],
-  ['1-6', new BT.Braille2Numeric('', '')]
-]);
+let backtransformers: Map<string, BT.BrailleTransformer> =
+  new Map<string, BT.BrailleTransformer>([
+    ['NABT', new BT.Unicode2Nabt()],
+    ['BLDT', new BT.Unicode2Bldt()],
+    ['SDF/JKL', new BT.Braille2Ascii('', '')],
+    ['1-6', new BT.Braille2Numeric('', '')]
+  ]);
 
 let kind = 'NABT';
 
@@ -62,7 +64,8 @@ declare const firebase: any;
 function setTest(test: JsonTest) {
   field.name.innerHTML = test.name;
   field.expression.innerHTML = test.input ?
-    `<math display="block">${test.input}</math>` : `\\[${test.tex}\\]`;
+    `<math display="block">${test.input}</math>` : (
+      test.tex ? `\\[${test.tex}\\]`  : `${test.name}`);
   field.out.innerHTML = test.expected as string;
   // TODO: Transform here, depending on the transformation value;
   (field.ip as HTMLTextAreaElement).value =

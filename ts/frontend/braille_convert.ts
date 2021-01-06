@@ -1,5 +1,5 @@
-import * as fb from './frontend/convert';
-import {init as userinit} from './frontend/user';
+import * as fb from './convert';
+import {init as userinit} from './user';
 
 export let convertInit = fb.init;
 export let generate = fb.generate;

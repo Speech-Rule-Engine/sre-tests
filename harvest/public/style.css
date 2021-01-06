@@ -179,7 +179,8 @@ div.btns {
     display: block;
     font-size: 150%;
     padding-left: 10px;
-    padding-right: 110px;
+    padding-right: 10px;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
 }
@@ -232,4 +233,20 @@ div.btns {
 .btn:hover, .btn:focus {
     -webkit-filter: invert(100%);
     filter: invert(100%);
+}
+
+.boxed {
+    border: 1px solid #B1DF84 ;
+}
+
+select#access {
+    background-color: #B1DF84 ;
+}
+
+select#access select {
+    display: none;
+}
+
+select#access > option {
+    padding: 5px;
 }

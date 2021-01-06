@@ -45,7 +45,7 @@ let baseConfig = Object.assign({}, config, {
 
 
 let convertConfig = Object.assign({}, config, {
-  entry: path.resolve(__dirname, 'ts/convert.ts'),
+  entry: path.resolve(__dirname, 'ts/frontend/braille_convert.ts'),
   // devtool: false,
   target: 'web',
   output: {
@@ -58,7 +58,7 @@ let convertConfig = Object.assign({}, config, {
 });
 
 let updateConfig = Object.assign({}, config, {
-  entry: path.resolve(__dirname, 'ts/firebase.ts'),
+  entry: path.resolve(__dirname, 'ts/frontend/firebase_update.ts'),
   devtool: false,
   target: 'web',
   output: {
@@ -70,6 +70,19 @@ let updateConfig = Object.assign({}, config, {
   }
 });
 
+let documentSelection = Object.assign({}, config, {
+  entry: path.resolve(__dirname, 'ts/frontend/selection.ts'),
+  devtool: false,
+  target: 'web',
+  output: {
+    filename: 'document-selection.js',
+    library: 'Select',
+    libraryTarget: 'umd',
+    globalObject: 'this',
+    path: path.join(__dirname, 'harvest/public'),
+  }
+});
 
 
-module.exports = [baseConfig, convertConfig, updateConfig]; 
+
+module.exports = [baseConfig, convertConfig, updateConfig, documentSelection]; 

@@ -10,17 +10,46 @@
 
 <span class="title">Document Selection</span>
 
-<div class="converter" id="inputpanel">
+<div class="converter" id="documentstable">
 <div class="section">
 Select a document to work on:
 </div>
-<table id="selection">
+<table id="documents">
   <tr class="heading">
     <th>Name</th>
     <th>Information</th>
     <th>Path</th>
   </tr>
 </table>
+</div>
+<hr width="100%" color="#B1DF84" size="6">
+<div class="converter" id="characterstable">
+<div class="section">
+Select a character set to work on:
+</div>
+<table id="characters">
+  <tr class="heading">
+    <th>Name</th>
+    <th>Information</th>
+    <th>Path</th>
+  </tr>
+</table>
+</div>
+
+</div>
+<hr width="100%" color="#B1DF84" size="6">
+<div class="converter" id="alphabetstable">
+<div class="section">
+Select an alphabet to work on:
+</div>
+<table id="alphabets">
+  <tr class="heading">
+    <th>Name</th>
+    <th>Information</th>
+    <th>Path</th>
+  </tr>
+</table>
+</div>
 </div>
     
 <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -34,31 +63,13 @@ Select a document to work on:
 
 <!-- Initialize Firebase -->
 <script src="/__/firebase/init.js?useEmulator=true"></script>
-<script id="Braille-script" src="./braille-convert.js"></script>
 <script src="./firebase-update.js"></script>
+<script src="./braille-convert.js"></script>
+<script src="./document-selection.js"></script>
 <script>
-let storage = localStorage[Fireup.Fc.NemethProjectDocuments];
-if (storage) {
-let documents = JSON.parse(storage);
-let table = document.getElementById('selection');
-for (let entry of documents) {
-  let row = document.createElement('tr');
-  row.setAttribute('tabindex', '0');
-  row.classList.add('selection');
-  row.innerHTML = `<td class="selection">${entry.name}</td><td>${entry.information}</td><td>${entry.path}</td>`;
-      row.addEventListener('click', () => {
-        localStorage[Fireup.Fc.NemethProjectPath] = entry.path;
-        localStorage[Fireup.Fc.NemethProjectUser] = firebase.auth().getUid();
-        window.location.assign('brf2nemeth.html');
-      });
-      row.addEventListener('keyup', (e) => {
-      if (e.key === 'Enter') {
-        localStorage[Fireup.Fc.NemethProjectPath] = entry.path;
-        localStorage[Fireup.Fc.NemethProjectUser] = firebase.auth().getUid();
-        window.location.assign('brf2nemeth.html');
-      }});
-  table.appendChild(row);
-}}
+Select.addDocuments(document.getElementById('documents'), 'nemeth/rules');
+Select.addDocuments(document.getElementById('characters'), 'nemeth/symbols/default_characters');
+Select.addDocuments(document.getElementById('alphabets'), 'nemeth/symbols/default_alphabet');
 </script>
 </body>
 </html>

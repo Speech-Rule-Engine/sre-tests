@@ -44,7 +44,7 @@
   <div class="section"></div>
   <div class="section">
     <span class="pretitle">Braille:</span>
-    <span class="active"><div class="braille" id="braille"> </div></span>
+    <span class="active"><div class="braille boxed" id="braille"> </div></span>
   </div>
   <div class="section">
     <span class="pretitle"></span>
@@ -91,7 +91,7 @@
     window.addEventListener('load', () => {
       let path = localStorage[Fireup.Fc.NemethProjectPath]
       let user = localStorage[Fireup.Fc.NemethProjectUser]
-      if (path && user) {
+        if (path && user) {
         Convert.convertInit(user, path);
       }
     });

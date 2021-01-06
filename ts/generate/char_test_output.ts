@@ -299,36 +299,85 @@ export function testOutputFromBoth(
 }
 
 export function splitNemethForFire(dir: string, json: JsonFile) {
-  console.log(dir);
-  console.log(Object.keys(json.tests).length);
-  splitNemethByAlphabet(json.tests as JsonTests)
-  console.log(Object.keys(json.tests).length);
+  let tests = json.tests as JsonTests;
+  splitNemethByAlphabet(dir, tests);
   let file = sre.BaseUtil.makePath(sre.SystemExternal.jsonPath) +
     'nemeth.js';
   let locale = JSON.parse(sre.MathMap.loadFile(file));
-  console.log(locale['nemeth/symbols/math_symbols.js'].length);
-  console.log(locale['nemeth/symbols/latin-lower-phonetic.js'].length);
-  console.log(locale['nemeth/symbols/math_geometry.js'].length);
+  splitNemethByFile(dir, locale, tests, 'math_symbols');
+  splitNemethByFile(dir, locale, tests, 'latin-lower-phonetic');
+  splitNemethByFile(dir, locale, tests, 'math_geometry');
+  writeNemethSymbolOutput(dir, tests, 'Characters', 'rest');
 }
 
-function splitNemethByAlphabet(json: JsonTests) {
+function splitNemethByFile(dir: string, locale: JsonTests,
+                           json: JsonTests, file: string) {
+  let keys = [];
+  let entries = locale[`nemeth/symbols/${file}.js`] as JsonTest[];
+  for (let entry of entries) {
+    if (entry.key) {
+      keys.push(entry.key);
+    }
+  }
+  writeNemethSymbolOutput(dir, splitOffKeys(json, keys), 'Characters', file);
+}
+
+function splitNemethByAlphabet(dir: string, json: JsonTests) {
   let intervals = sre.AlphabetGenerator.INTERVALS;
-  let byFonts: {[name: string]: JsonTest[]} = {};
+  let byFonts: {[name: string]: JsonTests} = {};
   for (let value of Object.values(sre.AlphabetGenerator.Font)) {
-    byFonts[value as string] = [];
+    byFonts[value as string] = {};
   }
   for (let value of Object.values(sre.AlphabetGenerator.Embellish)) {
-    byFonts[value as string] = [];
+    byFonts[value as string] = {};
   }
-  for (var i = 0, int: JsonTest; int = intervals[i]; i++) {
+  for (let i = 0, int: JsonTest; int = intervals[i]; i++) {
     let keys = sre.AlphabetGenerator.makeInterval(int.interval, int.subst);
-    keys.map(function(x: string) {
-      let letter = sre.SemanticUtil.numberToUnicode(parseInt(x, 16));
-      byFonts[int.font].push(json[letter]);
-      delete json[letter];
-    }); 
+    splitOffKeys(json, keys, byFonts[int.font]);
+  }
+  for (let [key, values] of Object.entries(byFonts)) {
+    writeNemethSymbolOutput(dir, values, 'Alphabet', key);
   }
   return byFonts;
+}
+
+
+/**
+ * Splits of tests from a Json structure for a given set of keys into the
+ * results.
+ * @param {JsonTests} json The Json structure.
+ * @param {string[]} keys A list of keys.
+ * @param {JsonTests} result The result structure.
+ */
+function splitOffKeys(json: JsonTests, keys: string[], result: JsonTests = {}) {
+  keys.forEach(function(x: string) {
+    let letter = sre.SemanticUtil.numberToUnicode(parseInt(x, 16));
+    result[letter] = json[letter];
+    delete json[letter];
+  });
+  console.log(Object.keys(result).length);
+  return result;
+}
+
+function writeNemethSymbolOutput(
+  dir: string, json: JsonTests, base: string, key: string) {
+  let name = key.split(/_|-/g).
+    map(x => x.charAt(0).toUpperCase() + x.slice(1)).join('');
+  let file: JsonFile = {
+    name: `NemethDefault${base}${name}`,
+    locale: 'nemeth',
+    domain: 'default',
+    modality: 'braille',
+    style: 'default',
+    compare: true,
+    active: 'DefaultSymbolsNemeth',
+    type: 'character',
+    factory: 'symbol',
+    information: `Nemeth Default ${base} ${key} tests.`,
+    tests: json
+  };
+  TestUtil.saveJson(
+    `${dir}/nemeth/default_${base.toLowerCase()}_${key.replace(/-/g, '_')}.json`, file);
 }
 
 

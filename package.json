@@ -9,7 +9,7 @@
     "prepare:webpack": "npx rimraf js; npx rimraf dist; ./node_modules/.bin/tsc; ./node_modules/.bin/webpack",
     "prepare": "node tests.config.js; npm run prepare:webpack",
     "test": "npm run test:files",
-    "test:all": "npm run test:files; npm run test:output; npm run test:anaytics",
+    "test:all": "npm run test:files; npm run test:output; npm run test:analytics",
     "test:files": "npx jest --testPathIgnorePatterns js/output --testPathIgnorePatterns js/analyse",
     "test:output": "npx jest --testPathPattern js/output",
     "test:analytics": "npx jest --testPathPattern js/analyse; npm run test:allrules",

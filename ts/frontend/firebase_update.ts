@@ -1,5 +1,5 @@
-import * as fc from './firebase/fire_constants';
-import * as fu from './firebase/fire_util';
+import * as fc from '../firebase/fire_constants';
+import * as fu from '../firebase/fire_util';
 
 export let Fu = fu;
 export let Fc = fc;
