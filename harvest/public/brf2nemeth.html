@@ -25,7 +25,7 @@
   <div class="section">
     <span class="pretitle">Input Format:
     <span>
-        <select id="format" onchange="Convert.changeFormat()">
+        <select id="format" onchange="Nemeth.Convert.changeFormat()">
           <option value="nabt">NABT</option>
           <option value="bldt">BLDT</option>
           <option value="sdf/jkl">sdf/jkl</option>
@@ -34,7 +34,7 @@
         </span>
     </span>
     <span class="active">
-      <textarea rows="1" cols="80" id="input" onMouseUp="Convert.generatem()" onKeyUp="Convert.generate()"></textarea>
+      <textarea rows="1" cols="80" id="input" onMouseUp="Nemeth.Convert.generatem()" onKeyUp="Nemeth.Convert.generate()"></textarea>
     </span>
   </div>
   <div class="section">
@@ -60,7 +60,7 @@
   <div class="section">
     <span class="pretitle">Feedback:</span>
     <span class="active">
-        <select id="feedback" onchange="Convert.changeFeedback()">
+        <select id="feedback" onchange="Nemeth.Convert.changeFeedback()">
           <option value="0">Correct - Correct transcription</option>
           <option value="1">Unknown - A symbol is not in the Nemeth standard</option>
           <option value="2">Layout - Can only be expressed in 2D layout</option>
@@ -85,14 +85,14 @@
 
 <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js?useEmulator=true"></script>
-    <script id="Braille-script" src="./braille-convert.js"></script>
-    <script src="./firebase-update.js"></script>
+    <script src="./nemeth-project.js"></script>
     <script>
+    window.addEventListener('load', Nemeth.User.init);
     window.addEventListener('load', () => {
-      let path = localStorage[Fireup.Fc.NemethProjectPath]
-      let user = localStorage[Fireup.Fc.NemethProjectUser]
+      let path = localStorage[Nemeth.Fc.NemethProjectPath]
+      let user = localStorage[Nemeth.Fc.NemethProjectUser]
         if (path && user) {
-        Convert.convertInit(user, path);
+        Nemeth.Convert.init(user, path);
       }
     });
     </script>

@@ -44,45 +44,17 @@ let baseConfig = Object.assign({}, config, {
 });
 
 
-let convertConfig = Object.assign({}, config, {
-  entry: path.resolve(__dirname, 'ts/frontend/braille_convert.ts'),
+let harvestConfig = Object.assign({}, config, {
+  entry: path.resolve(__dirname, 'ts/frontend/firebase_frontend.ts'),
   // devtool: false,
   target: 'web',
   output: {
-    filename: 'braille-convert.js',
-    library: 'Convert',
+    filename: 'nemeth-project.js',
+    library: 'Nemeth',
     libraryTarget: 'umd',
     globalObject: 'this',
     path: path.join(__dirname, 'harvest/public'),
   }
 });
 
-let updateConfig = Object.assign({}, config, {
-  entry: path.resolve(__dirname, 'ts/frontend/firebase_update.ts'),
-  devtool: false,
-  target: 'web',
-  output: {
-    filename: 'firebase-update.js',
-    library: 'Fireup',
-    libraryTarget: 'umd',
-    globalObject: 'this',
-    path: path.join(__dirname, 'harvest/public'),
-  }
-});
-
-let documentSelection = Object.assign({}, config, {
-  entry: path.resolve(__dirname, 'ts/frontend/selection.ts'),
-  devtool: false,
-  target: 'web',
-  output: {
-    filename: 'document-selection.js',
-    library: 'Select',
-    libraryTarget: 'umd',
-    globalObject: 'this',
-    path: path.join(__dirname, 'harvest/public'),
-  }
-});
-
-
-
-module.exports = [baseConfig, convertConfig, updateConfig, documentSelection]; 
+module.exports = [baseConfig, harvestConfig]; 

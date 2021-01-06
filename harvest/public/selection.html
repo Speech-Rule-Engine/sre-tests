@@ -63,13 +63,12 @@ Select an alphabet to work on:
 
 <!-- Initialize Firebase -->
 <script src="/__/firebase/init.js?useEmulator=true"></script>
-<script src="./firebase-update.js"></script>
-<script src="./braille-convert.js"></script>
-<script src="./document-selection.js"></script>
+<script src="./nemeth-project.js"></script>
 <script>
-Select.addDocuments(document.getElementById('documents'), 'nemeth/rules');
-Select.addDocuments(document.getElementById('characters'), 'nemeth/symbols/default_characters');
-Select.addDocuments(document.getElementById('alphabets'), 'nemeth/symbols/default_alphabet');
+window.addEventListener('load', Nemeth.User.init);
+Nemeth.Select.addDocuments(document.getElementById('documents'), 'nemeth/rules');
+Nemeth.Select.addDocuments(document.getElementById('characters'), 'nemeth/symbols/default_characters');
+Nemeth.Select.addDocuments(document.getElementById('alphabets'), 'nemeth/symbols/default_alphabet');
 </script>
 </body>
 </html>

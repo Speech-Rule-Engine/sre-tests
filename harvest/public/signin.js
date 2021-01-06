@@ -4,7 +4,7 @@ let update = async function(authResult) {
   let div = document.createElement('div');
   div.textContent = 'Updating...';
   document.body.appendChild(div);
-  await Fireup.update(firebase.firestore(), 'tests', authResult.user.uid, 'nemeth');
+  await Nemeth.update(firebase.firestore(), 'tests', authResult.user.uid, 'nemeth');
   window.location.assign('selection.html');
 };
 
