@@ -45,7 +45,7 @@ let baseConfig = Object.assign({}, config, {
 
 
 let harvestConfig = Object.assign({}, config, {
-  entry: path.resolve(__dirname, 'ts/frontend/firebase_frontend.ts'),
+  entry: path.resolve(__dirname, 'ts/frontend/fire_frontend.ts'),
   // devtool: false,
   target: 'web',
   output: {
