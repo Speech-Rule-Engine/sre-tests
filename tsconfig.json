@@ -17,7 +17,8 @@
     "lib": ["es6", "dom"],
     "typeRoots": [
       "./ts/typings",
-      "./node_modules/@types"
+      "./node_modules/@types",
+      "./node_modules/mathjax-full/js"
     ],
     "types": ["node", "sre", "jest"],
     "outDir": "js"
