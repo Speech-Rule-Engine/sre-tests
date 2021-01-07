@@ -23,6 +23,7 @@ import * as FC from '../firebase/fire_constants';
 import {FireTest} from '../firebase/fire_test';
 import * as BT  from '../generate/braille_transformer';
 import {init as initButtons} from './buttons';
+import * as LU from './local_util';
 
 let transformers: Map<string, BT.BrailleTransformer> =
   new Map<string, BT.BrailleTransformer>([
@@ -114,13 +115,20 @@ function getTest(): JsonTest {
   return {expected: field.out.innerHTML};
 }
 
-// TODO: Work with localStorage!
-export function init(collection: string, file: string) {
+function initConversion(collection: string, file: string) {
   if (firebase) {
     initFile(collection, file);
     return;
   }
-  setTimeout(init, 100);
+  setTimeout(initConversion, 100);
+}
+
+export function init() {
+  let path = LU.getStorage(FC.NemethProjectPath);
+  let user = LU.getStorage(FC.NemethProjectUser);
+  if (path && user) {
+    initConversion(user, path);
+  }
 }
 
 async function initFile(collection: string, file: string) {
@@ -221,3 +229,4 @@ export function changeFeedback() {
   fireTest.currentTest()[FC.FeedbackStatus] = value;
   fireTest.saveFeedback(value);
 }
+

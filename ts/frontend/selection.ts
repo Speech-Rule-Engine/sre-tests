@@ -19,25 +19,10 @@
  */
 
 import * as fc from '../firebase/fire_constants';
-
-declare const firebase: any;
-
-function getFirebase(): any {
-  return firebase;
-}
-
-function getStorage(key: string) {
-  return localStorage[key];
-}
-
-function setStorage(key: string, value: string) {
-  localStorage[key] = value;
-}
-
-// let table = document.getElementById('selection');
+import * as lu from './local_util';
 
 export function addDocuments(node: Element, path: string) {
-  let storage = getStorage(fc.NemethProjectDocuments);
+  let storage = lu.getStorage(fc.NemethProjectDocuments);
   if (storage) {
     let documents = JSON.parse(storage);
     createRows(documents.filter((doc: any) => doc.path.match(path)), node);
@@ -45,24 +30,26 @@ export function addDocuments(node: Element, path: string) {
 }
 
 export function getUid() {
-  return getFirebase().auth().getUid();
+  return (lu.getFirebase().auth() as any).getUid();
 }
 
 function createRows(documents: any, anchor: Element) {
+  documents.sort((x: any, y: any) =>
+    ('' + x.name).localeCompare(y.name));
   for (let entry of documents) {
     let row = document.createElement('tr');
     row.setAttribute('tabindex', '0');
     row.classList.add('selection');
     row.innerHTML = `<td class="selection">${entry.name}</td><td>${entry.information}</td><td>${entry.path}</td>`;
     row.addEventListener('click', () => {
-      setStorage(fc.NemethProjectPath, entry.path);
-      setStorage(fc.NemethProjectUser, getUid());
+      lu.setStorage(fc.NemethProjectPath, entry.path);
+      lu.setStorage(fc.NemethProjectUser, getUid());
       window.location.assign('brf2nemeth.html');
     });
     row.addEventListener('keyup', (e) => {
       if (e.key === 'Enter') {
-        setStorage(fc.NemethProjectPath, entry.path);
-        setStorage(fc.NemethProjectUser, getUid());
+        lu.setStorage(fc.NemethProjectPath, entry.path);
+        lu.setStorage(fc.NemethProjectUser, getUid());
         window.location.assign('brf2nemeth.html');
       }});
     anchor.appendChild(row);

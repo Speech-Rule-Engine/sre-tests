@@ -70,7 +70,8 @@ export async function uploadTest(db: any, file: string,
                  order: order,
                  tests: testMap
                 });
-  FU.setPath(db, collection, testcases['jsonFile']);
+  FU.setPath(db, collection, testcases['jsonFile'],
+             [testcases.jsonTests.name, testcases.information]);
 }
 
 /**

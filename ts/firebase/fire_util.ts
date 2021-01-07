@@ -24,7 +24,7 @@ import * as FC from './fire_constants';
 /**
  * Verbosity flag.
  */
-export let verbose: boolean = true;
+export let verbose: boolean = false;
 
 /**
  * Output method for controlling verbosity.
@@ -92,15 +92,16 @@ export async function downloadData(db: any, collection: string, path: string) {
  * @param {any} db The database.
  * @param {string} collection The collection containing the document.
  * @param {string} path The path to the data to download.
+ * @param {any=} value An optional value for the path.
  */
-export async function setPath(db: any, collection: string, path: string) {
+export async function setPath(db: any, collection: string, path: string, value: any = true) {
   let doc = path.split('/')[0];
   let paths = await db.collection(collection).doc(doc).get();
   let data = paths.data();
   if (!data) {
     data = {};
   }
-  data[path] = true;
+  data[path] = value;
   uploadData(db, collection, doc, data);
 }
 
@@ -126,20 +127,28 @@ export async function getPaths(db: any, collection: string, doc: string) {
  * @return List of info on loaded documents.
  */
 export async function updateCollection(
-  db: any, collA: string, collB: string, doc: string) {
+  db: any, collA: string, collB: string, doc: string, callback: Function =
+    (_x: string, _y: string[]) => {}) {
   let result: {name: string, information: string, path: string}[] = [];
   let paths = await getPaths(db, collA, doc);
   if (!paths) {
     return result;
   }
-  for (let path of Object.keys(paths)) {
-    let dataA = await downloadData(db, collA, path);
-    let dataB = await downloadData(db, collB, path);
+  let pathsB = await getPaths(db, collB, doc);
+  for (let [path, [name, info]] of
+       Object.entries(paths) as [string, [string, string]]) {
+    callback(path, Object.keys(paths));
     result.push({
-      name: dataA.name,
-      information: dataA.information,
+      name: name,
+      information: info,
       path: path
     });
+    // We assume single entries in symbol sets will not change.
+    if (pathsB[path] && path.match(/^nemeth\/symbols/)) {
+      continue;
+    }
+    let dataA = await downloadData(db, collA, path);
+    let dataB = await downloadData(db, collB, path);
     if (!dataB) {
       setTestsStatus(dataA);
       setTestsFeedback(dataA);
@@ -147,7 +156,7 @@ export async function updateCollection(
       await setPath(db, collB, path);
       continue;
     }
-    // Update single entries.
+    // Update single entries only for documents. 
     let tests = dataB.tests;
     for (let key of dataA.order) {
       if (tests[key]) {

@@ -24,8 +24,11 @@
        https://firebase.google.com/docs/web/setup#available-libraries -->
 
   <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js?useEmulator=true"></script>
-  <script src="./nemeth-project.js"></script>
-  <script src="./signin.js"></script>
+<script src="/__/firebase/init.js?useEmulator=true"></script>
+<script src="./nemeth-project.js"></script>
+<script>
+  Nemeth.Signin.init(firebaseui, '#firebaseui-auth-container');
+</script>
+
 </body>
 </html>

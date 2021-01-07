@@ -88,13 +88,7 @@
     <script src="./nemeth-project.js"></script>
     <script>
     window.addEventListener('load', Nemeth.User.init);
-    window.addEventListener('load', () => {
-      let path = localStorage[Nemeth.Fc.NemethProjectPath]
-      let user = localStorage[Nemeth.Fc.NemethProjectUser]
-        if (path && user) {
-        Nemeth.Convert.init(user, path);
-      }
-    });
+    window.addEventListener('load', Nemeth.Convert.init);
     </script>
 </body>
 </html>
