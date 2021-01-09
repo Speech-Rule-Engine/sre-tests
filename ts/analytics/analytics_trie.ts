@@ -283,17 +283,17 @@ namespace AnalyticsTrie {
   }
 
   export let pairs = [['PrefixRules', 'PrefixFrench'],
-               ['MathspeakRules', 'MathspeakGerman'],
-               ['ClearspeakRules', 'ClearspeakFrench']];
+                      ['MathspeakRules', 'MathspeakGerman'],
+                      ['ClearspeakRules', 'ClearspeakFrench']];
 
   let sets = [
-    ['MathspeakRules', 'MathspeakGerman', 'MathspeakSpanish', 'MathspeakFrench'],
+    ['MathspeakRules', 'MathspeakGerman',
+     'MathspeakSpanish', 'MathspeakFrench'],
     ['ClearspeakRules', 'ClearspeakGerman', 'ClearspeakFrench'],
     ['PrefixRules', 'PrefixGerman', 'PrefixSpanish', 'PrefixFrench'],
     ['SummaryRules', 'SummaryGerman', 'SummarySpanish', 'SummaryFrench']
   ];
-  
-  
+
   export function output() {
     sre.System.getInstance().setupEngine({});
     // outputTrie(diffRuleSets(pairs[0][0], pairs[0][1]), 'test1');

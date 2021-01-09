@@ -89,7 +89,7 @@ let createOutputTests = function() {
     let content = [];
     content.push(`import {ExampleFiles} from '../classes/abstract_examples';`);
     content.push(`import {runJsonTest} from '../jest';`);
-    content.push('afterAll(() => { ExampleFiles.closeFiles(); });');
+    content.push('afterAll(() => {\n  ExampleFiles.closeFiles();\n});');
     files.forEach(x => content.push(`runJsonTest('${x}');`));
     content.push(``);
     createFile(alldir, file + '.test.ts', content);
@@ -108,7 +108,7 @@ let createAnalyseTests = function() {
     content.push(`import {runJsonTest} from '${base}jest';`);
     content.push('AnalyticsTest.deep = true;');
     content.push('ExampleFiles.noOutput = true;');
-    content.push('afterAll(() => { AnalyticsTest.output(); });');
+    content.push('afterAll(() => {\n  AnalyticsTest.output();\n});');
     content.push(`runJsonTest('${file}');`);
     content.push(``);
     createFile(analysedir + dir, path.basename(file).replace(/.json$/, '.test.ts'), content);

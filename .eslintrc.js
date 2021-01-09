@@ -37,13 +37,30 @@ module.exports = {
     }
   },
   "rules": {
+    "@typescript-eslint/naming-convention": ["error", {
+      "selector": "enumMember",
+      "format": ["UPPER_CASE"],
+      "leadingUnderscore": "forbid",
+      "trailingUnderscore": "forbid"
+    }],
     "@typescript-eslint/explicit-member-accessibility": [
       "error",
       {
         "accessibility": "explicit"
       }
     ],
-    "@typescript-eslint/indent": ["error", 2],
+    "@typescript-eslint/indent": ["error", 2, {
+      "VariableDeclarator": "off",
+      "ArrayExpression": "first",
+      "ObjectExpression": "first",
+      "FunctionExpression": {
+        "parameters": "first"
+      },
+      "CallExpression": {
+        "arguments": "first"
+      },
+      "SwitchCase": 0
+    }],
     "@typescript-eslint/member-delimiter-style": [
       "error",
       {
@@ -58,7 +75,6 @@ module.exports = {
       }
     ],
     "@typescript-eslint/member-ordering": "error",
-    "@typescript-eslint/naming-convention": "error",
     "@typescript-eslint/prefer-namespace-keyword": "error",
     "@typescript-eslint/quotes": [
       "error",
@@ -114,7 +130,6 @@ module.exports = {
     ],
     "no-redeclare": "error",
     "no-trailing-spaces": "error",
-    "no-underscore-dangle": "error",
     "no-var": "error",
     "spaced-comment": [
       "error",

@@ -23,7 +23,7 @@ import {JsonTest, JsonTests, TestUtil} from '../base/test_util';
 import * as sret from '../typings/sre';
 import {Transformer} from './transformers';
 
-/************************************************************/
+/* ********************************************************* */
 /*
  * Test generation for multiple expressions.
  *
@@ -31,7 +31,7 @@ import {Transformer} from './transformers';
  *           or the tests for a particular issue. They all should be included
  *           with consecutively enumerated base names.
  */
-/************************************************************/
+/* ******************************************************** */
 
 /**
  * Generates JSON test entries from lists of data elements. The input JSON is of
@@ -56,11 +56,12 @@ import {Transformer} from './transformers';
  *   ...
  * }
  *
- * @param json The initial JSON input.
- * @param field The optional field name, defaults to input.
- * @return The newly transformed JSON.
+ * @param {JsonTest} json The initial JSON input.
+ * @param {string=} field The optional field name, defaults to input.
+ * @return {JsonTests} The newly transformed JSON.
  */
-export function transformInput(json: JsonTest, field: string = 'input') {
+export function transformInput(
+  json: JsonTest, field: string = 'input'): JsonTests {
   let result: {[name: string]: {}} = {};
   for (let [name, expressions] of Object.entries(json)) {
     let count = 0;
@@ -89,8 +90,8 @@ export function transformInput(json: JsonTest, field: string = 'input') {
  * @param output Output filename.
  * @param field The optional field name, defaults to input.
  */
-export function generateTestRequire(input: string, output: string,
-                                    field: string = 'input') {
+export function generateTestRequire(
+  input: string, output: string, field: string = 'input') {
   let file = require(input);
   let oldJson = file[Object.keys(file)[0]];
   let newJson = transformInput(oldJson, field);
@@ -112,11 +113,12 @@ export function generateTestJson(input: string, output: string,
 
 /**
  * Runs a series of transformers on the given tests.
- * @param json The JSON tests.
- * @param transformers List of transformers.
+ * @param {JsonTest} json The JSON tests.
+ * @param {Transformer[]} transformers List of transformers.
+ * @return {JsonTest} The updated json test.
  */
 export function transformTests(json: JsonTest,
-                               transformers: Transformer[]) {
+                               transformers: Transformer[]): JsonTest {
   for (let value of Object.values(json)) {
     for (let transformer of transformers) {
       value[transformer.dst] = transformer.via(value[transformer.src]);

@@ -95,8 +95,9 @@ namespace AnalyticsTest {
   export function outputAllRules() {
     sre.System.getInstance().setupEngine({});
     loadAllAppliedRules();
-    for (let [name, obj] of
-         Object.entries(sre.SpeechRuleEngine.getInstance().ruleSets_)) {
+    for (
+      let [name, obj] of
+      Object.entries(sre.SpeechRuleEngine.getInstance().ruleSets_)) {
       let rules = (obj as sret.SpeechRuleStore).speechRules_
         .map(x => x.toString());
       AnalyticsUtil.fileJson('allRules', rules.sort(), name);
