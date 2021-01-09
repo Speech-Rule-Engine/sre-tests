@@ -26,6 +26,7 @@ const enum TestFlag {ALL, FAILED, MISSING}
 
 /**
  * Runs all tests for the given expected file and collates the failing ones.
+ *
  * @param expected Relative file name of the expected file.
  * @param flag Flag which tests to run. Values: all, failed, missing.
  * @return Pair of JSON structure with expected output and the test object.
@@ -63,6 +64,7 @@ function runTests(
 /**
  * Generates expected values for the flagged tests and writes them to the given
  * expected file.
+ *
  * @param expected Relative file name of the expected file.
  * @param flag Flag which tests to run. Values: all, failed, missing.
  * @param dryrun Print to console instead to file.
@@ -82,6 +84,7 @@ function add(expected: string, flag: TestFlag, dryrun: boolean) {
 /**
  * Generates expected values for all missing tests and writes them to the given
  * expected file.
+ *
  * @param expected Relative file name of the expected file.
  * @param dryrun Print to console instead to file.
  */
@@ -92,6 +95,7 @@ export function addMissing(expected: string, dryrun: boolean = false) {
 /**
  * Generates actual expected values for all tests and writes them to the given
  * expected file.
+ *
  * @param expected Relative file name of the expected file.
  * @param dryrun Print to console instead to file.
  */
@@ -102,6 +106,7 @@ export function addActual(expected: string, dryrun: boolean = false) {
 /**
  * Generates actual expected values for failed tests and writes them to the
  * given expected file.
+ *
  * @param expected Relative file name of the expected file.
  * @param dryrun Print to console instead to file.
  */

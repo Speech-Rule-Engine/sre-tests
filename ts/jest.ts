@@ -3,6 +3,7 @@ import {get} from './classes/test_factory';
 
 /**
  * Runs tests for a json file.
+ *
  * @param file The filename.
  */
 export function runJsonTest(file: string) {

@@ -40,6 +40,7 @@ const NemethFire = true;
 
 /**
  * Loads the base file.
+ *
  * @param file The base file.
  * @return The symbol keys in the base.
  */
@@ -48,6 +49,13 @@ function loadBaseFile(file: string): string[] {
   return Object.keys(json.tests);
 }
 
+/**
+ * @param dom
+ * @param modality
+ * @param loc
+ * @param style
+ * @param char
+ */
 function getCharOutput(
   dom: string, modality: string, loc: string, style: string, char: string) {
   let aural = sre.AuralRendering.getInstance();
@@ -61,6 +69,13 @@ function getCharOutput(
   return aural.finalize(aural.markup(descrs));
 }
 
+/**
+ * @param dom
+ * @param modality
+ * @param loc
+ * @param style
+ * @param unit
+ */
 function getUnitOutput(
   dom: string, modality: string, loc: string, style: string, unit: string) {
   sre.Grammar.getInstance().pushState({annotation: 'unit'});
@@ -69,6 +84,14 @@ function getUnitOutput(
   return output;
 }
 
+/**
+ * @param dom
+ * @param modality
+ * @param loc
+ * @param style
+ * @param char
+ * @param unit
+ */
 function getOutput(
   dom: string, modality: string, loc: string, style: string,
   char: string, unit = false) {
@@ -87,6 +110,7 @@ const AllConstraints: {[loc: string]: string[]} = {
 /**
  * Gets all the expected values for a given locale for the tests in the base
  * file.
+ *
  * @param locale The locale.
  * @param keys The keys for symbols to test.
  * @param unit Are the symbols units.
@@ -122,12 +146,17 @@ function testOutput(locale: string, keys: string[], unit = false): JsonFile {
 
 /**
  * Test if this is a unit file type.
+ *
  * @param kind The type.
  */
 function isUnitTest(kind: SymbolType) {
   return kind === SymbolType.UNITS || kind === SymbolType.SIUNITS;
 }
 
+/**
+ * @param locale
+ * @param kind
+ */
 export function testFromBase(locale: string, kind: SymbolType): JsonFile {
   let file = InputPath + FILES.get(kind);
   if (!file) {
@@ -138,6 +167,10 @@ export function testFromBase(locale: string, kind: SymbolType): JsonFile {
 }
 
 // Loads the locale symbol file from mathmaps and generates the actual output.
+/**
+ * @param locale
+ * @param kind
+ */
 export function testFromLocale(locale: string, kind: SymbolType): JsonFile {
   let file = sre.BaseUtil.makePath(sre.SystemExternal.jsonPath) +
       locale + '.js';
@@ -149,6 +182,7 @@ export function testFromLocale(locale: string, kind: SymbolType): JsonFile {
 /**
  * Gets all the expected values for a given locale for the tests in the base
  * file.
+ *
  * @param  locale The locale.
  * @param  kind The kind of symbol for which to generate tests.
  * @param  dir Output directory.
@@ -172,6 +206,10 @@ export function testOutputFromExtras(locale: string, kind: SymbolType, dir = '/t
   writeOutputToFile(dir, output, locale, 'extras', kind);
 }
 
+/**
+ * @param locale
+ * @param kind
+ */
 export function testFromExtras(locale: string, kind: SymbolType): JsonFile {
   let file = sre.BaseUtil.makePath(sre.SystemExternal.jsonPath) +
       locale + '.js';
@@ -183,9 +221,11 @@ export function testFromExtras(locale: string, kind: SymbolType): JsonFile {
 /**
  * Gets all the expected values for a given locale for the tests in the base
  * file.
+ *
  * @param locale The locale.
  * @param extras The keys for symbols to test.
  * @param unit Is the symbol a unit.
+ * @param kind
  * @return The test json structure.
  */
 function testExtras(
@@ -215,6 +255,11 @@ function testExtras(
   return json;
 }
 
+/**
+ * @param locale
+ * @param json
+ * @param kind
+ */
 export function getExtrasFor(
   locale: string, json: JsonTests, kind: SymbolType) {
   let symbols = symbolsfromLocale(json, kind);
@@ -254,6 +299,7 @@ export function getExtrasFor(
 /**
  * Gets all the expected values for a given locale for the tests in the base
  * file.
+ *
  * @param  locale The locale.
  * @param  kind The kind of symbol for which to generate tests.
  * @param  dir Output directory.
@@ -265,6 +311,11 @@ export function testOutputFromBase(locale: string, kind: SymbolType, dir = '/tmp
   }
 }
 
+/**
+ * @param locale
+ * @param kind
+ * @param dir
+ */
 export function testOutputFromLocale(
   locale: string, kind: SymbolType, dir = '/tmp') {
   let output = testFromLocale(locale, kind);
@@ -276,6 +327,7 @@ export function testOutputFromLocale(
 /**
  * Compiles test output using both the locale and base file as input and writes
  * it to the destination directory.
+ *
  * @param {string} locale The locale.
  * @param {SymbolType} kind The type of symbol that is considered.
  * @param {string = '/tmp'} dir The output directory.
@@ -298,6 +350,10 @@ export function testOutputFromBoth(
   }
 }
 
+/**
+ * @param dir
+ * @param json
+ */
 export function splitNemethForFire(dir: string, json: JsonFile) {
   let tests = json.tests as JsonTests;
   splitNemethByAlphabet(dir, tests);
@@ -310,8 +366,14 @@ export function splitNemethForFire(dir: string, json: JsonFile) {
   writeNemethSymbolOutput(dir, tests, 'Characters', 'rest');
 }
 
+/**
+ * @param dir
+ * @param locale
+ * @param json
+ * @param file
+ */
 function splitNemethByFile(dir: string, locale: JsonTests,
-                           json: JsonTests, file: string) {
+  json: JsonTests, file: string) {
   let keys = [];
   let entries = locale[`nemeth/symbols/${file}.js`] as JsonTest[];
   for (let entry of entries) {
@@ -322,6 +384,10 @@ function splitNemethByFile(dir: string, locale: JsonTests,
   writeNemethSymbolOutput(dir, splitOffKeys(json, keys), 'Characters', file);
 }
 
+/**
+ * @param dir
+ * @param json
+ */
 function splitNemethByAlphabet(dir: string, json: JsonTests) {
   let intervals = sre.AlphabetGenerator.INTERVALS;
   let byFonts: {[name: string]: JsonTests} = {};
@@ -341,10 +407,10 @@ function splitNemethByAlphabet(dir: string, json: JsonTests) {
   return byFonts;
 }
 
-
 /**
  * Splits of tests from a Json structure for a given set of keys into the
  * results.
+ *
  * @param {JsonTests} json The Json structure.
  * @param {string[]} keys A list of keys.
  * @param {JsonTests} result The result structure.
@@ -359,6 +425,12 @@ function splitOffKeys(json: JsonTests, keys: string[], result: JsonTests = {}) {
   return result;
 }
 
+/**
+ * @param dir
+ * @param json
+ * @param base
+ * @param key
+ */
 function writeNemethSymbolOutput(
   dir: string, json: JsonTests, base: string, key: string) {
   let name = key.split(/_|-/g).map(TestUtil.capitalize).join('');
@@ -379,9 +451,9 @@ function writeNemethSymbolOutput(
     `${dir}/nemeth/default_${base.toLowerCase()}_${key.replace(/-/g, '_')}.json`, file);
 }
 
-
 /**
  * Writes JSON output to a file.
+ *
  * @param {string} dir The target directory.
  * @param {JsonFile} json The JSON structure to output.
  * @param {string} locale The locale.
@@ -393,6 +465,10 @@ function writeOutputToFile(
   TestUtil.saveJson(`${dir}/${locale}/${dom}_${FILES.get(kind)}`, json);
 }
 
+/**
+ * @param json
+ * @param kind
+ */
 function symbolsfromLocale(json: JsonTest, kind: SymbolType): JsonTest[] {
   let keys = Object.keys(json);
   let si = kind === SymbolType.SIUNITS;
@@ -408,6 +484,7 @@ function symbolsfromLocale(json: JsonTest, kind: SymbolType): JsonTest[] {
  * Computes a list of all names available in the JSON structure for the
  * particular symbol type. Note, that the JSON structure is the locale one,
  * mapping filenames to symbol mappings. This also takes care of SI units.
+ *
  * @param {JsonTest} json The locale JSON structure.
  * @param {SymbolType} kind The type of symbol.
  * @return {string[]} The list of names.
@@ -431,6 +508,7 @@ function getNamesFor(json: JsonTest, kind: SymbolType): string[] {
 
 /**
  * Generates the SI unit names.
+ *
  * @param {string[]} prefixes The list of prefixes.
  * @param {string} names The base unit name.
  * @return {string[]} The list of SI units with prefixes.
@@ -450,6 +528,10 @@ function getSINamesFor(prefixes: string[], names: string): string[] {
 //
 // One is from base tests
 // Two is from locale
+/**
+ * @param locale
+ * @param kind
+ */
 export function diffBaseVsLocale(locale: string, kind: SymbolType): JsonTest {
   let output1 = testFromBase(locale, kind);
   let output2 = testFromLocale(locale, kind);
@@ -468,6 +550,9 @@ export function diffBaseVsLocale(locale: string, kind: SymbolType): JsonTest {
   return result;
 }
 
+/**
+ * @param dir
+ */
 export function allTests(dir = '/tmp/symbols') {
   for (let loc of sre.Variables.LOCALES) {
     for (const kind of Object.values(SymbolType)) {
@@ -477,6 +562,9 @@ export function allTests(dir = '/tmp/symbols') {
   }
 }
 
+/**
+ * @param dir
+ */
 export function replaceTests(dir = '/tmp/symbols') {
   let locales = fs.readdirSync(dir);
   for (let loc of locales) {

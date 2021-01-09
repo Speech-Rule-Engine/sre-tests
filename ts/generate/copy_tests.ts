@@ -24,10 +24,14 @@ import {addMissing} from './fill_tests';
 
 /**
  * Copies and adapts a single test file from one locale to another.
+ *
  * @param source The expected source file.
+ * @param locale
+ * @param loc1
+ * @param loc2
  */
 export function copyTestLocale(source: string, locale: string,
-                               loc1: string, loc2: string) {
+  loc1: string, loc2: string) {
   let tests = factoryget(source);
   let dst = [TestPath.EXPECTED, locale].concat(
     source.split('/').slice(1)).join('/');
@@ -42,6 +46,7 @@ export function copyTestLocale(source: string, locale: string,
 
 /**
  * Replaces content in string field if an entry for a given key exists.
+ *
  * @param {JsonFile} tests The test file structure.
  * @param {string} key The key of the field.
  * @param {string} what What should be replaced.

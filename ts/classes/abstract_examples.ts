@@ -22,7 +22,7 @@ import {AbstractJsonTest} from './abstract_test';
 import {ExamplesOutput} from './examples_output';
 
 export abstract class AbstractExamples extends AbstractJsonTest
-implements ExamplesOutput {
+  implements ExamplesOutput {
 
   /**
    * Base directory for the output file.
@@ -129,6 +129,7 @@ implements ExamplesOutput {
 
   /**
    * Joins the accumulated list of examples into a single output string.
+   *
    * @param examples The list of examples.
    * @return The joined string.
    */
@@ -162,12 +163,15 @@ export namespace ExampleFiles {
 
   /**
    * Opens an output file and registers it.
+   *
    * @param file The name of the output file.
    * @param obj The test object.
    */
   export function openFile(file: string, obj: AbstractExamples) {
     currentExample = obj;
-    if (noOutput) return;
+    if (noOutput) {
+      return;
+    }
     if (!openFiles[file]) {
       let fd = fs.openSync(file, 'w+');
       descriptors[file] = fd;
@@ -180,7 +184,9 @@ export namespace ExampleFiles {
    * Finalises and closes all open output files.
    */
   export function closeFiles() {
-    if (noOutput) return;
+    if (noOutput) {
+      return;
+    }
     for (let file of Object.keys(openFiles)) {
       fs.appendFileSync(
         file, openFiles[file].footer());
@@ -190,11 +196,14 @@ export namespace ExampleFiles {
 
   /**
    * Appends to the given output file.
+   *
    * @param {string} file The file name.
    * @param {string} content The content to append.
    */
   export function append(file: string, content: string) {
-    if (noOutput) return;
+    if (noOutput) {
+      return;
+    }
     fs.appendFileSync(file, content);
   }
 

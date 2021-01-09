@@ -47,7 +47,8 @@ export class SummaryTest extends SpeechTest {
 
   /**
    * Summary tests class.
-   * @constructor
+   *
+   * @class
    */
   constructor() {
     super();
@@ -63,7 +64,7 @@ export class SummaryTest extends SpeechTest {
     }
     sre.ProcessorFactory.process('walker', mathMl);
     this.steps.forEach(step =>
-        sre.ProcessorFactory.process('move', sre.EventUtil.KeyCode[step]));
+      sre.ProcessorFactory.process('move', sre.EventUtil.KeyCode[step]));
     return sre.ProcessorFactory.process('move', sre.EventUtil.KeyCode['X']);
   }
 

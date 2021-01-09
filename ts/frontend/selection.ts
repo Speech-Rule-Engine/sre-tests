@@ -21,6 +21,10 @@
 import * as fc from '../firebase/fire_constants';
 import * as lu from './local_util';
 
+/**
+ * @param node
+ * @param path
+ */
 export function addDocuments(node: Element, path: string) {
   let storage = lu.getStorage(fc.NemethProjectDocuments);
   if (storage) {
@@ -29,10 +33,17 @@ export function addDocuments(node: Element, path: string) {
   }
 }
 
+/**
+ *
+ */
 export function getUid() {
   return (lu.getFirebase().auth() as any).getUid();
 }
 
+/**
+ * @param documents
+ * @param anchor
+ */
 function createRows(documents: any, anchor: Element) {
   documents.sort((x: any, y: any) =>
     ('' + x.name).localeCompare(y.name));
@@ -51,7 +62,8 @@ function createRows(documents: any, anchor: Element) {
         lu.setStorage(fc.NemethProjectPath, entry.path);
         lu.setStorage(fc.NemethProjectUser, getUid());
         window.location.assign('brf2nemeth.html');
-      }});
+      }
+    });
     anchor.appendChild(row);
   }
 }

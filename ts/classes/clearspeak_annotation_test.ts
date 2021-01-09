@@ -35,6 +35,7 @@ export class ClearspeakAnnotationTest extends AbstractJsonTest {
 
   /**
    * Tests simple annotator for Clearspeak.
+   *
    * @param mml Snippet of a MathML expression.
    * @param expected The expression is simple or not.
    */

@@ -28,6 +28,7 @@ export let verbose: boolean = false;
 
 /**
  * Output method for controlling verbosity.
+ *
  * @param {string} str The output string.
  */
 function output(str: string) {
@@ -38,13 +39,14 @@ function output(str: string) {
 
 /**
  * Uploads an entire data set to firebase.
+ *
  * @param {any} db The database.
  * @param {string} collection The collection to add data to.
  * @param {string} doc The document to add data to.
  * @param {any} data The data to upload.
  */
 export async function uploadData(db: any, collection: string,
-                                 doc: string, data: any) {
+  doc: string, data: any) {
   db.collection(collection).doc(doc).set(data).
     then(() => {
       output(`Data for document ${doc} successfully uploaded to collection ${collection}`);
@@ -56,13 +58,15 @@ export async function uploadData(db: any, collection: string,
 
 /**
  * Updates data in a nested firebase entry.
+ *
  * @param {any} db The database.
  * @param {string} collection The collection to add data to.
  * @param {string} path The path to the data to update.
  * @param {any} data The data to upload.
+ * @param nesting
  */
 export async function updateData(db: any, collection: string,
-                                 path: string, data: any, nesting: string[]) {
+  path: string, data: any, nesting: string[]) {
   let entry: JsonTest = {};
   let key = nesting.join('.');
   entry[key] = data;
@@ -77,6 +81,7 @@ export async function updateData(db: any, collection: string,
 
 /**
  * Downloads data from a document specified by a path.
+ *
  * @param {any} db The database.
  * @param {string} collection The collection containing the document.
  * @param {string} path The path to the data to download.
@@ -89,6 +94,7 @@ export async function downloadData(db: any, collection: string, path: string) {
 
 /**
  * Sets the path Downloads data from a document specified by a path.
+ *
  * @param {any} db The database.
  * @param {string} collection The collection containing the document.
  * @param {string} path The path to the data to download.
@@ -107,6 +113,7 @@ export async function setPath(db: any, collection: string, path: string, value: 
 
 /**
  * Retrieves all paths for a given document in a collection.
+ *
  * @param {any} db The database.
  * @param {string} collection The collection containing the document.
  * @param {string} doc The document name.
@@ -120,23 +127,25 @@ export async function getPaths(db: any, collection: string, doc: string) {
 
 /**
  * Updates data in collection B from collection A for a given document.
+ *
  * @param {any} db The databae.
  * @param {string} collA Source collection.
  * @param {string} collB Target collection.
  * @param {string} doc The document to update.
+ * @param callback
  * @return List of info on loaded documents.
  */
 export async function updateCollection(
   db: any, collA: string, collB: string, doc: string, callback: Function =
-    (_x: string, _y: string[]) => {}) {
-  let result: {name: string, information: string, path: string}[] = [];
+  (_x: string, _y: string[]) => {}) {
+  let result: {name: string; information: string; path: string}[] = [];
   let paths = await getPaths(db, collA, doc);
   if (!paths) {
     return result;
   }
   let pathsB = await getPaths(db, collB, doc);
   for (let [path, [name, info]] of
-       Object.entries(paths) as [string, [string, string]]) {
+    Object.entries(paths) as [string, [string, string]]) {
     callback(path, Object.keys(paths));
     result.push({
       name: name,
@@ -156,7 +165,7 @@ export async function updateCollection(
       await setPath(db, collB, path);
       continue;
     }
-    // Update single entries only for documents. 
+    // Update single entries only for documents.
     let tests = dataB.tests;
     for (let key of dataA.order) {
       if (tests[key]) {
@@ -173,6 +182,13 @@ export async function updateCollection(
 }
 
 // Update a field in all tests entries of a collection.
+/**
+ * @param db
+ * @param collection
+ * @param path
+ * @param field
+ * @param value
+ */
 export async function updateField(
   db: any, collection: string, path: string, field: string, value: any) {
   let data = await downloadData(db, collection, path);
@@ -181,9 +197,9 @@ export async function updateField(
   }
 }
 
-
 /**
  * Sets the status of all tests to new.
+ *
  * @param {JsonTests} tests The tests object.
  */
 function setTestsStatus(tests: JsonTests) {
@@ -194,6 +210,7 @@ function setTestsStatus(tests: JsonTests) {
 
 /**
  * Sets the status of a single test entry to new.
+ *
  * @param {JsonTest} entry The test entry.
  */
 function setStatus(entry: JsonTest) {
@@ -202,6 +219,7 @@ function setStatus(entry: JsonTest) {
 
 /**
  * Sets the feedback of all tests to new.
+ *
  * @param {JsonTests} tests The tests object.
  */
 function setTestsFeedback(tests: JsonTests) {
@@ -212,6 +230,7 @@ function setTestsFeedback(tests: JsonTests) {
 
 /**
  * Sets the feedback of a single test entry to new.
+ *
  * @param {JsonTest} entry The test entry.
  */
 function setFeedback(entry: JsonTest) {

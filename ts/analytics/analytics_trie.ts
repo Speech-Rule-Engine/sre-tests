@@ -18,38 +18,35 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-
 import {sre} from '../base/test_external';
 import * as sret from '../typings/sre';
 import AnalyticsUtil from './analytics_util';
 import AnalyticsTest from './analytics_test';
 
-
 sre.AbstractTrieNode.prototype.json = function() {
   return {
     type: this.getKind(),
-    "$t": this.getConstraint(),
+    '$t': this.getConstraint(),
     children:
     !this.getChildren().length ?
-      [] : this.getChildren().map(function(x: any) {return x.json();})
+      [] : this.getChildren().map(function(x: any) {
+        return x.json();
+      })
   };
 };
 
-
 sre.StaticTrieNode.prototype.json = function() {
-  var json = sre.StaticTrieNode.base(this, 'json');
-  var rule = this.getRule();
+  let json = sre.StaticTrieNode.base(this, 'json');
+  let rule = this.getRule();
   if (rule) {
     json['role'] = rule.action.toString();
   }
   return json;
 };
 
-
 sre.Trie.prototype.json = function() {
   return {stree: this.root.json()};
 };
-
 
 sre.Trie.prototype.getSingletonDynamic_ = function() {
   let node = this.root;
@@ -61,13 +58,11 @@ sre.Trie.prototype.getSingletonDynamic_ = function() {
   return result;
 };
 
-
 sre.Trie.prototype.singleStyle = function(style: string)  {
   // console.log(style);
   // console.log(this.getSingletonDynamic_());
   return this.byConstraint(this.getSingletonDynamic_()).getChild(style);
 };
-
 
 // Quaries for rule sets.
 
@@ -78,7 +73,6 @@ sre.BaseRuleStore.prototype.allText = function() {
 sre.BaseRuleStore.prototype.allLocalizable = function() {
   return this.getSpeechRules().filter((x: sret.SpeechRule) => x.action.localizable());
 };
-
 
 sre.SpeechRule.Action.prototype.localizable = function() {
   return this.components.some((x: sret.SpeechRule) => x.localizable());
@@ -103,6 +97,7 @@ sre.SpeechRule.Component.prototype.hasType = function(type: string){
 
 /**
  * Retrieves a rules for a given sequence of constraints.
+ *
  * @param {Array.<string>} constraint A list of constraints.
  * @return {sre.TrieNode} The speech rule or null.
  * What if multiple rules exist?
@@ -116,9 +111,11 @@ sre.Trie.prototype.byConstraint = function(constraint: any) {
   return node || null;
 };
 
-
 namespace AnalyticsTrie {
 
+  /**
+   * @param rules
+   */
   export function tempTrie(rules: sret.SpeechRule[]) {
     let store = new sre.MathStore();
     let trie = store.trie;
@@ -128,14 +125,21 @@ namespace AnalyticsTrie {
     return trie;
   }
 
+  /**
+   * @param trie
+   * @param name
+   */
   export function outputTrie(trie: sret.Trie, name: string) {
     let json = trie.json();
     let rules = trie.collectRules();
     AnalyticsUtil.fileJson('trie', json, name);
     AnalyticsUtil.fileJson('trie', rules.map((x: sret.SpeechRule) => x.toString()),
-      name, 'txt');
+                           name, 'txt');
   }
 
+  /**
+   *
+   */
   export function restTrie() {
     let applied = Array.from(AnalyticsTest.appliedRule.values())
       .reduce((x, y) => x.concat(y), []);
@@ -156,6 +160,9 @@ namespace AnalyticsTrie {
     return outTrie;
   }
 
+  /**
+   *
+   */
   export function disjunctiveRules() {
     let rulesets = Object.values(sre.SpeechRuleEngine.getInstance().ruleSets_) as sret.SpeechRuleStore[];
     let result = [];
@@ -171,10 +178,16 @@ namespace AnalyticsTrie {
 
   // Compares two rule sets and creates a trie out of those rules that are the
   // same and do not need to be localized.
+  /**
+   * @param rules
+   * @param comparator
+   */
   export function compareRuleSets(rules: string[], comparator: Function = compareTries) {
     let set1 = sre.SpeechRuleEngine.getInstance().ruleSets_[rules[0]];
     let set2 = sre.SpeechRuleEngine.getInstance().ruleSets_[rules[1]];
-    if (!(set1 && set2)) return;
+    if (!(set1 && set2)) {
+      return;
+    }
     let trie = comparator(set1.trie, set2.trie);
     for (let i = 2, rule; rule = rules[i]; i++) {
       let nextSet = sre.SpeechRuleEngine.getInstance().ruleSets_[rule];
@@ -183,6 +196,10 @@ namespace AnalyticsTrie {
     return trie;
   }
 
+  /**
+   * @param trie1
+   * @param trie2
+   */
   export function compareTriesConstraints(trie1: sret.Trie, trie2: sret.Trie) {
     let rules = trie2.collectRules();
     let old = trie1.collectRules();
@@ -202,7 +219,10 @@ namespace AnalyticsTrie {
     return tmp;
   }
 
-
+  /**
+   * @param trie1
+   * @param trie2
+   */
   export function compareTries(trie1: sret.Trie, trie2: sret.Trie) {
     let rules = trie2.collectRules();
     let old = trie1.collectRules();
@@ -224,8 +244,12 @@ namespace AnalyticsTrie {
     return tmp;
   }
 
-
   // Compare two tries on default style only.
+  /**
+   * @param trie1
+   * @param trie2
+   * @param style
+   */
   export function compareTriesStyle(trie1: sret.Trie, trie2: sret.Trie, style = 'default') {
     let rules = sre.Trie['collectRules_'](trie2.singleStyle(style));
     let cstr1 = trie1.getSingletonDynamic_();
@@ -245,13 +269,18 @@ namespace AnalyticsTrie {
     return tmp;
   }
 
-
   // Compute the diff of two rule sets, wrt. to constraints only (i.e., no
   // comparison of actions).
+  /**
+   * @param rules1
+   * @param rules2
+   */
   export function diffRuleSets(rules1: string, rules2: string) {
     let set1 = sre.SpeechRuleEngine.getInstance().ruleSets_[rules1];
     let set2 = sre.SpeechRuleEngine.getInstance().ruleSets_[rules2];
-    if (!(set1 && set2)) return;
+    if (!(set1 && set2)) {
+      return;
+    }
     let trie = tempTrie([]);
     let trie1 = set1.trie;
     let trie2 = set2.trie;
@@ -294,6 +323,9 @@ namespace AnalyticsTrie {
     ['SummaryRules', 'SummaryGerman', 'SummarySpanish', 'SummaryFrench']
   ];
 
+  /**
+   *
+   */
   export function output() {
     sre.System.getInstance().setupEngine({});
     // outputTrie(diffRuleSets(pairs[0][0], pairs[0][1]), 'test1');

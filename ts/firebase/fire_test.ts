@@ -112,9 +112,10 @@ export class FireTest {
     FU.updateData(this.db, this.collection, this.doc, feedback,
                   ['tests', test.name, FC.FeedbackStatus]);
   }
-  
+
   /**
    * The next test in the cycle.
+   *
    * @param {boolean} direction Forward if true.
    */
   public async cycleTests(direction: boolean) {
@@ -124,6 +125,7 @@ export class FireTest {
 
   /**
    * Cycle to next test the user has not changeds.
+   *
    * @param {boolean} direction Forward if true.
    */
   public async cycleUnchangedTests(direction: boolean) {
@@ -135,6 +137,7 @@ export class FireTest {
 
   /**
    * Cycle to next test the user has not seen yet.
+   *
    * @param {boolean} direction Forward if true.
    */
   public async cycleNewTests(direction: boolean) {
@@ -146,6 +149,7 @@ export class FireTest {
 
   /**
    * Goto test by name.
+   *
    * @param {string} name The name of the test.
    */
   public async goTest(name: string) {

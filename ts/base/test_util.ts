@@ -31,6 +31,7 @@ export const TestPath: {[key: string]: string} = {
 
 /**
  * The base error class for signaling Test errors.
+ *
  * @param msg The error message.
  * @param value Additional values.
  */
@@ -42,7 +43,7 @@ export class TestError extends Error {
   public name = 'SRE Test Error';
 
   /**
-   * @constructor
+   * @class
    * @param message The Error message.
    * @param value An arbitrary error value to propagate.
    */
@@ -52,28 +53,29 @@ export class TestError extends Error {
 }
 
 export interface JsonTest {
-  test?: boolean;
-  name?: string;
-  input?: string;
-  expected?: string | string[];
-  [propName: string]: any;
+  test?: boolean
+  name?: string
+  input?: string
+  expected?: string | string[]
+  [propName: string]: any
 }
 
 export declare type JsonTests = {[name: string]: JsonTest};
 
 export interface JsonFile {
-  factory?: string;
-  information?: string;
-  exlcude?: string[];
-  base?: string;
-  tests?: JsonTests | 'ALL';
-  [propName: string]: any;
+  factory?: string
+  information?: string
+  exlcude?: string[]
+  base?: string
+  tests?: JsonTests | 'ALL'
+  [propName: string]: any
 }
 
 export namespace TestUtil {
 
   /**
    * Loads and parses a JSON file.
+   *
    * @param file The filename.
    * @return The parsed JSON object.
    */
@@ -88,6 +90,7 @@ export namespace TestUtil {
 
   /**
    * Saves a formatted JSON object to file.
+   *
    * @param file The filename.
    * @param json The JSON object.
    */
@@ -99,6 +102,7 @@ export namespace TestUtil {
 
   /**
    * Checks if a file exists. Goes through a number of possible path names.
+   *
    * @param file The filename.
    * @param opt_path An optional path name.
    * @return The actual filename with full path.
@@ -124,6 +128,7 @@ export namespace TestUtil {
    * Finaly all left over expected tests are added to the list of tests.
    *
    * If expected is 'ALL', all tests are taken directly.
+   *
    * @param input An association list of input test specifications.
    * @param expected A association list of test specifications
    *     with expected values.
@@ -131,7 +136,7 @@ export namespace TestUtil {
    * @return Done.
    */
   export function combineTests(input: JsonTests, expected: JsonTests | 'ALL',
-                               exclude: string[]): [JsonTest[], string[]] {
+    exclude: string[]): [JsonTest[], string[]] {
     let warn = [];
     let results = [];
     if (expected === 'ALL') {
@@ -181,6 +186,7 @@ export namespace TestUtil {
 
   /**
    * Capitalizes the input string.
+   *
    * @param str The input string.
    * @return The capitalized string.
    */

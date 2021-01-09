@@ -20,9 +20,9 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
+import {TestError, TestPath, TestUtil} from '../base/test_util';
 import {AbstractJsonTest} from './abstract_test';
 
-import {TestError, TestPath, TestUtil} from '../base/test_util';
 import {ApiTest} from './api_test';
 import {ClearspeakAnnotationTest} from './clearspeak_annotation_test';
 import {ClearspeakTest} from './clearspeak_test';
@@ -32,7 +32,7 @@ import {HtmlTest, XpathTest} from './dom_test';
 import {MarkupTest} from './markup_test';
 import {PrefixTest} from './prefix_test';
 import {EnrichMathmlTest, EnrichSpeechTest, RebuildStreeTest, SemanticApiTest,
-        SemanticTreeTest, SemanticXmlTest} from './semantic_test';
+  SemanticTreeTest, SemanticXmlTest} from './semantic_test';
 import {SpeechTest} from './speech_test';
 import {SummaryTest} from './summary_test';
 import {SymbolTest} from './symbol_test';
@@ -62,6 +62,7 @@ const map = new Map<string, any>([
 
 /**
  * Retrieves and instantiates a test object for a given input json file.
+ *
  * @param file The input json file.
  * @return The JSON test.
  */

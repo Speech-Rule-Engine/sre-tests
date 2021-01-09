@@ -64,6 +64,9 @@ namespace AnalyticsTest {
   export let appliedRule: Map<string, sret.SpeechRule[]> = new Map();
   export let applicableRules: Map<string, sret.SpeechRule[][]> = new Map();
 
+  /**
+   * @param rule
+   */
   export function addAppliedRule(rule: sret.SpeechRule) {
     let cases = appliedRule.get(currentTestcase);
     if (!cases) {
@@ -73,6 +76,9 @@ namespace AnalyticsTest {
     cases.push(rule);
   }
 
+  /**
+   * @param rules
+   */
   export function addApplicableRules(rules: sret.SpeechRule[]) {
     let cases = applicableRules.get(currentTestcase);
     if (!cases) {
@@ -82,6 +88,9 @@ namespace AnalyticsTest {
     cases.push(rules);
   }
 
+  /**
+   *
+   */
   export function output() {
     if (!deep) {
       return;
@@ -92,6 +101,9 @@ namespace AnalyticsTest {
   }
 
   // This works now as all rule sets are loaded.
+  /**
+   *
+   */
   export function outputAllRules() {
     sre.System.getInstance().setupEngine({});
     loadAllAppliedRules();
@@ -108,6 +120,9 @@ namespace AnalyticsTest {
   let allAppliedRules: string[] = [];
   let uniqueAppliedRules: Map<string, boolean> = new Map();
 
+  /**
+   *
+   */
   function loadAllAppliedRules() {
     let path = TestPath.ANALYSIS + '/uniqueAppliedRules/';
     let files = fs.readdirSync(path);
@@ -119,6 +134,10 @@ namespace AnalyticsTest {
     allAppliedRules.forEach(x => uniqueAppliedRules.set(x, true));
   }
 
+  /**
+   * @param rules
+   * @param name
+   */
   function allRulesDifference(rules: string[], name: string) {
     let diff = [];
     for (let rule of rules) {
@@ -129,6 +148,9 @@ namespace AnalyticsTest {
     AnalyticsUtil.fileJson('diffAppliedRules', diff, name);
   }
 
+  /**
+   *
+   */
   export function outputAppliedRules() {
     let jsonObj: {[name: string]: string[]} = {};
     for (let [key, value] of appliedRule.entries()) {
@@ -137,6 +159,9 @@ namespace AnalyticsTest {
     }
   }
 
+  /**
+   *
+   */
   export function outputApplicableRules() {
     let jsonObj: {[name: string]: string[][]} = {};
     for (let [key, value] of applicableRules.entries()) {
@@ -147,6 +172,9 @@ namespace AnalyticsTest {
     AnalyticsUtil.fileJson('applicableRules', jsonObj, currentTest);
   }
 
+  /**
+   *
+   */
   export function outputUniqueAppliedRules() {
     let rules: sret.SpeechRule[] = [];
     for (let value of appliedRule.values()) {

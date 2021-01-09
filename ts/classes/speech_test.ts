@@ -21,7 +21,6 @@
 import {sre} from '../base/test_external';
 import {AbstractExamples} from './abstract_examples';
 
-
 export class SpeechTest extends AbstractExamples {
 
   public style: string;
@@ -53,6 +52,7 @@ export class SpeechTest extends AbstractExamples {
 
   /**
    * Wraps an entry into an HTML cell.
+   *
    * @param entries A list of entries.
    * @return The HTML cell.
    */
@@ -62,6 +62,7 @@ export class SpeechTest extends AbstractExamples {
 
   /**
    * Maps a style name to its English equivalent and does some pretty printing.
+   *
    * @param style The style name.
    * @return The prettier name.
    */
@@ -74,6 +75,7 @@ export class SpeechTest extends AbstractExamples {
 
   /**
    * Wraps an entry into an HTML cell.
+   *
    * @param entry A single entry.
    * @return The HTML cell.
    */
@@ -103,6 +105,7 @@ export class SpeechTest extends AbstractExamples {
   /**
    * Tests if for speech translation of a given html snippet is equal to the
    * answer provided.
+   *
    * @param mml Snippet of a MathML expression.
    * @param answer Expected speech translation of MathML expression.
    * @param opt_style Mathspeak style for translation.
@@ -124,6 +127,7 @@ export class SpeechTest extends AbstractExamples {
 
   /**
    * Retrieves the speech for a MathML element.
+   *
    * @param mathMl The element to transcribe.
    * @return The resulting speech.
    */
@@ -133,10 +137,12 @@ export class SpeechTest extends AbstractExamples {
 
   /**
    * Appends a single example to the HTML example output.
+   *
    * @param input The input expression.
    * @param output The expected output.
    * @param style The speech style.
    * @param opt_rest The rest that is to be appended.
+   * @param {...any} rest
    */
   public appendRuleExample(
     input: string, output: string, style: string, ...rest: string[]) {

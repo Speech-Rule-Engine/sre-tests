@@ -82,6 +82,7 @@ export class ApiTest extends AbstractJsonTest {
 
   /**
    * Sets up SRE.
+   *
    * @param feature The feature vector for the engine.
    */
   public setupEngine(feature: {[key: string]: string}) {
@@ -90,6 +91,7 @@ export class ApiTest extends AbstractJsonTest {
 
   /**
    * Executes single API tests.
+   *
    * @param func The API function to test.
    * @param expr The input expression.
    * @param result The expected result.

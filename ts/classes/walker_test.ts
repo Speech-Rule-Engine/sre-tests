@@ -65,9 +65,11 @@ export class WalkerTest extends AbstractJsonTest {
 
   /**
    * Executes single walker moves and tests the resulting speech.
+   *
    * @param walker The walker.
    * @param move The move of the walker.
    * @param result The expected result.
+   * @param modifier
    */
   public executeTest(move: string | null, result: string | null,
                      modifier: boolean = false) {
@@ -87,6 +89,7 @@ export class WalkerTest extends AbstractJsonTest {
 
   /**
    * Creates a walker.
+   *
    * @param kind The type of the walker.
    * @param node The node on which to start the walker.
    * @param generator The speech generator to use.
@@ -98,7 +101,7 @@ export class WalkerTest extends AbstractJsonTest {
    * @return The newly created walker.
    */
   private createWalker() {
-    let renderer: {renderer: string,
+    let renderer: {renderer: string
                    browser?: string} = {renderer: this.jsonTests['renderer']};
     let browser = this.jsonTests['browser'];
     if (browser) {

@@ -20,25 +20,27 @@ export interface ExamplesOutput {
 
   /**
    * Activates the example output.
+   *
    * @param file The output file.
    * @param opt_ext A file extension.
    */
-  setActive(file: string, opt_ext?: string): void;
+  setActive(file: string, opt_ext?: string): void
 
   /**
    * Initialised the examples output but setting up the file.
    */
-  startExamples(): void;
+  startExamples(): void
 
   /**
    * Appends a string to the examples file if it exists.
+   *
    * @param type The type of example.
    * @param example The example output.
    */
-  appendExamples(type: string, example: string): void;
+  appendExamples(type: string, example: string): void
 
   /**
    * Finished writing examples and closes the file.
    */
-  endExamples(): void;
+  endExamples(): void
 }

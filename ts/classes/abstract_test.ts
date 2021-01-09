@@ -34,12 +34,16 @@ export abstract class AbstractTest {
   public assert: {
     equal: (expected: any, actual: any) => void
     deepEqual: (expected: any, actual: any) => void
-    fail: () => void;
+    fail: () => void
   } = {
     equal: !this.jest ? assert.strictEqual :
-      (actual, expected) => {expect(actual).toEqual(expected); },
+      (actual, expected) => {
+        expect(actual).toEqual(expected);
+      },
     deepEqual: !this.jest ? assert.deepStrictEqual :
-      (actual, expected) => {expect(actual).toEqual(expected); },
+      (actual, expected) => {
+        expect(actual).toEqual(expected);
+      },
     fail: assert.fail
   };
 
@@ -102,6 +106,7 @@ export abstract class AbstractJsonTest extends AbstractTest {
 
   /**
    * Picks arguments from a JSON element.
+   *
    * @param json The JSON element.
    * @return The array of arguments for the test method.
    */
@@ -129,6 +134,7 @@ export abstract class AbstractJsonTest extends AbstractTest {
 
   /**
    * The actual test method.
+   *
    * @param args Arguments for the test method.
    */
   public abstract method(...args: any[]): void;

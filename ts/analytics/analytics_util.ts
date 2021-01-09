@@ -23,6 +23,9 @@ import {JsonFile, TestUtil, TestPath} from '../base/test_util';
 namespace AnalyticsUtil {
 
   // Removes duplicates from a list in O(n).
+  /**
+   * @param list
+   */
   export function removeDuplicates<T>(list: T[]): T[] {
     let entries: Map<T, boolean> = new Map();
     for (let entry of list) {
@@ -32,6 +35,12 @@ namespace AnalyticsUtil {
     return Array.from(entries.keys());
   }
 
+  /**
+   * @param prefix
+   * @param json
+   * @param name
+   * @param ext
+   */
   export function fileJson(prefix: string, json: JsonFile, name: string, ext: string = 'json') {
     let path = `${TestPath.ANALYSIS + prefix}/${name}.${ext}`;
     TestUtil.saveJson(path, json);

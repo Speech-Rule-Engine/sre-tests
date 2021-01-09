@@ -80,6 +80,7 @@ export class TestRunner {
 
   /**
    * Success status of the runner.
+   *
    * @return True if tests have passed.
    */
   public success(): boolean {
@@ -88,6 +89,7 @@ export class TestRunner {
 
   /**
    * Registers an test object to be run with this runner.
+   *
    * @param test A test case that is added to the runner.
    */
   public registerTest(test: AbstractTest) {
@@ -109,6 +111,7 @@ export class TestRunner {
 
   /**
    * Executes all Json tests provided by the test case.
+   *
    * @param testcase The Json test object.
    */
   public executeJsonTests(testcase: AbstractJsonTest) {
@@ -145,6 +148,7 @@ export class TestRunner {
 
   /**
    * Executes a single Json test.
+   *
    * @param name The name of the test.
    * @param func The actual test function.
    * @param args A list of arguments.
@@ -156,6 +160,7 @@ export class TestRunner {
 
   /**
    * Execute single tests.
+   *
    * @param testcase The current test case to run.
    */
   public executeTests(testcase: AbstractTest) {
@@ -164,7 +169,7 @@ export class TestRunner {
     for (let propertyName in testcase) {
       if (propertyName.search('test') === 0) {
         this.executeTest(propertyName,
-                          (testcase as any)[propertyName].bind(testcase));
+                         (testcase as any)[propertyName].bind(testcase));
       }
     }
     testcase.tearDownTest();
@@ -192,6 +197,7 @@ export class TestRunner {
   /**
    * Prints information to the console if it has priority greater or equal to
    * verbosity mode.
+   *
    * @param priority The output priority.
    * @param output The output string.
    */
@@ -203,6 +209,7 @@ export class TestRunner {
 
   /**
    * Colors information for printing.
+   *
    * @param output The output string.
    * @param color An optional color argument.
    * @return The colored string.
@@ -214,6 +221,7 @@ export class TestRunner {
   /**
    * Prints information to the console. This always forces a line, unless
    * verbose is 0.
+   *
    * @param priority The output priority.
    * @param output The output string.
    * @param opt_color An optional color argument.
@@ -227,6 +235,7 @@ export class TestRunner {
 
   /**
    * Queues information for printing.
+   *
    * @param output The output string.
    * @param opt_color An optional color argument.
    */
@@ -237,6 +246,7 @@ export class TestRunner {
   /**
    * Prints the queued information on a spanning line. This only forces a line,
    * when verbose is set to 2.
+   *
    * @param priority The output priority.
    * @param output The output string.
    * @param opt_color An optional color argument.
@@ -254,6 +264,7 @@ export class TestRunner {
 
   /**
    * Execute a single tests.
+   *
    * @param name Function name.
    * @param func Function to be executed.
    */

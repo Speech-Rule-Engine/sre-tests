@@ -43,7 +43,7 @@ export class PrefixTest extends SpeechTest {
   /**
    * The subexpression for output file.
    */
-   public subExpr: Element = null;
+  public subExpr: Element = null;
 
   constructor() {
     super();
@@ -72,7 +72,7 @@ export class PrefixTest extends SpeechTest {
     let node = stree.root.querySelectorAll(
       this.id === null ?
         (x: Element) => (x.attributes as any)['extid'] === 'A' :
-      (x: Element) => parseInt(x.id, 10) === this.id)[0];
+        (x: Element) => parseInt(x.id, 10) === this.id)[0];
     if (!node) {
       this.assert.fail();
       return '';

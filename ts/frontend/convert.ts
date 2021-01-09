@@ -43,10 +43,16 @@ let backtransformers: Map<string, BT.BrailleTransformer> =
 
 let kind = 'NABT';
 
+/**
+ *
+ */
 function transformer() {
   return transformers.get(kind.toUpperCase());
 }
 
+/**
+ *
+ */
 function backtransformer() {
   return backtransformers.get(kind.toUpperCase());
 }
@@ -60,6 +66,7 @@ declare const firebase: any;
 
 /**
  * Method for setting the test into HTML elements.
+ *
  * @param {JsonTest} test The test.
  */
 function setTest(test: JsonTest) {
@@ -79,42 +86,53 @@ function setTest(test: JsonTest) {
   }
 }
 
+/**
+ * @param feedback
+ */
 function setFeedback(feedback: FC.Feedback) {
   if (feedback !== undefined) {
     (field.feedback as HTMLButtonElement).value = feedback.toString();
   }
 }
 
+/**
+ * @param status
+ */
 function setStatus(status: FC.Status) {
   if (status !== undefined) {
     switch (status) {
-      case FC.Status.NEW:
-        field.statuscolor.className = 'green';
-        field.statusvalue.innerHTML = 'New';
-        break;
-      case FC.Status.VIEWED:
-        field.statuscolor.className = 'yellow';
-        field.statusvalue.innerHTML = 'Viewed';
-        break;
-      case FC.Status.CHANGED:
-        field.statuscolor.className = 'red';
-        field.statusvalue.innerHTML = 'Changed';
-        break;
-      default:
-        field.statuscolor.className = '';
-        field.statusvalue.innerHTML = '';
+    case FC.Status.NEW:
+      field.statuscolor.className = 'green';
+      field.statusvalue.innerHTML = 'New';
+      break;
+    case FC.Status.VIEWED:
+      field.statuscolor.className = 'yellow';
+      field.statusvalue.innerHTML = 'Viewed';
+      break;
+    case FC.Status.CHANGED:
+      field.statuscolor.className = 'red';
+      field.statusvalue.innerHTML = 'Changed';
+      break;
+    default:
+      field.statuscolor.className = '';
+      field.statusvalue.innerHTML = '';
     }
   }
 }
 
 /**
  * Method for getting tests from HTML elements.
+ *
  * @return The test fields that are harvested from the HTML.
  */
 function getTest(): JsonTest {
   return {expected: field.out.innerHTML};
 }
 
+/**
+ * @param collection
+ * @param file
+ */
 function initConversion(collection: string, file: string) {
   if (firebase) {
     initFile(collection, file);
@@ -123,6 +141,9 @@ function initConversion(collection: string, file: string) {
   setTimeout(initConversion, 100);
 }
 
+/**
+ *
+ */
 export function init() {
   let path = LU.getStorage(FC.NemethProjectPath);
   let user = LU.getStorage(FC.NemethProjectUser);
@@ -131,6 +152,10 @@ export function init() {
   }
 }
 
+/**
+ * @param collection
+ * @param file
+ */
 async function initFile(collection: string, file: string) {
   // TODO: Sort this out properly!
   const db = firebase.app().firestore();
@@ -149,6 +174,9 @@ async function initFile(collection: string, file: string) {
   initButtons(fireTest);
 }
 
+/**
+ * @param str
+ */
 function translate(str: string) {
   let [input, error] = transformer().cleanInput(str);
   return [input, transformer().via(input), error];
@@ -169,6 +197,9 @@ export function generate() {
 }
 
 let collating = false;
+/**
+ *
+ */
 function collateKeys() {
   if (collating) {
     return;
@@ -184,6 +215,9 @@ function collateKeys() {
   }, 100);
 }
 
+/**
+ *
+ */
 function processKeys() {
   let ip = field.ip as HTMLTextAreaElement;
   let cursor = ip.selectionStart;

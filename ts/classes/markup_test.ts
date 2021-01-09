@@ -27,7 +27,7 @@ export class MarkupTest extends AbstractJsonTest {
    * The quadratic equation as a MathML string with some external markup.
    */
   public static QUADRATIC: string =
-    '<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">' +
+  '<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">' +
     '<mi>x</mi>' +
     '<mo>=</mo>' +
     '<mfrac>' +
@@ -66,11 +66,12 @@ export class MarkupTest extends AbstractJsonTest {
    */
   public tearDownTest() {
     sre.System.getInstance().setupEngine(
-    {markup: sre.Engine.Markup.NONE});
+      {markup: sre.Engine.Markup.NONE});
   }
 
   /**
    * Executes single markup tests.
+   *
    * @param expr The input expression.
    * @param result The expected result.
    * @param markup The markup to test.

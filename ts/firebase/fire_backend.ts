@@ -28,6 +28,7 @@ import * as FU from './fire_util';
 
 /**
  * Inits the firebase communication
+ *
  * @param {string} credentials File with credentials.
  * @param {string = FC.NemethUrl} url URL of the firebase.
  */
@@ -35,7 +36,7 @@ export function initFirebase(
   credentials: string, url: string = FC.NemethUrl) {
   let serviceAccount = require(credentials);
   admin.initializeApp({
-      credential: admin.credential.cert(serviceAccount),
+    credential: admin.credential.cert(serviceAccount),
     databaseURL: url
   });
   return admin.firestore();
@@ -43,12 +44,13 @@ export function initFirebase(
 
 /**
  * Uploads tests to the firebase store.
+ *
  * @param {any} db The firestore.
  * @param {string} file The test file to upload.
  * @param {string = FC.TestsCollection} collection The collection name.
  */
 export async function uploadTest(db: any, file: string,
-                                 collection: string = FC.TestsCollection) {
+  collection: string = FC.TestsCollection) {
   let testcases: AbstractJsonTest = null;
   try {
     testcases = get(file);
@@ -83,6 +85,12 @@ export async function getUsers() {
 }
 
 // This forces an update of a field for every user. Be careful!
+/**
+ * @param db
+ * @param doc
+ * @param field
+ * @param value
+ */
 export async function updateField(
   db: any, doc: string, field: string, value: any) {
   let users = await getUsers();

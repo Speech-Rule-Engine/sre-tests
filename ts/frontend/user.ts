@@ -22,9 +22,12 @@ declare const firebase: any;
 
 /**
  * Displays the UI for a signed in user.
+ *
  * @param user The uid of the current user.
+ * @param user.displayName
+ * @param user.email
  */
-export function handleSignedInUser(user: {displayName: string, email: string}) {
+export function handleSignedInUser(user: {displayName: string; email: string}) {
   document.getElementById('user-signed-in').style.display = 'inline';
   document.getElementById('name').textContent = user.displayName;
   document.getElementById('email').textContent = user.email;
@@ -45,17 +48,17 @@ export function deleteAccount() {
   if (window.confirm('Are you sure you want to delete your account?')) {
     firebase.auth().currentUser.delete().catch(
       (error: any) => {
-      if (error.code === 'auth/requires-recent-login') {
+        if (error.code === 'auth/requires-recent-login') {
         // The user's credential is too old. She needs to sign in again.
-        firebase.auth().signOut().then(function() {
+          firebase.auth().signOut().then(function() {
           // The timeout allows the message to be displayed after the UI has
           // changed to the signed out state.
-          setTimeout(function() {
-            alert('Please sign in again to delete your account.');
-          }, 1);
-        });
-      }
-    });
+            setTimeout(function() {
+              alert('Please sign in again to delete your account.');
+            }, 1);
+          });
+        }
+      });
   }
 }
 
@@ -87,7 +90,7 @@ export function addSpan() {
 export function init() {
   addSpan();
   firebase.auth().onAuthStateChanged(
-    (user: {displayName: string, email: string}) => {
-    user ? handleSignedInUser(user) : handleSignedOutUser();
+    (user: {displayName: string; email: string}) => {
+      user ? handleSignedInUser(user) : handleSignedOutUser();
     });
 }

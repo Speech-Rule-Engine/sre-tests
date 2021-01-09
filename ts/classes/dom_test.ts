@@ -24,6 +24,7 @@ export class HtmlTest extends AbstractJsonTest {
 
   /**
    * Executes entity tests.
+   *
    * @param xml The XML input string.
    * @param result The expected output.
    */
@@ -53,6 +54,7 @@ export class XpathTest extends AbstractJsonTest {
 
   /**
    * Executes entity tests.
+   *
    * @param xml The XML input string.
    * @param result The expected output.
    * @param kind The type of Xpath query.

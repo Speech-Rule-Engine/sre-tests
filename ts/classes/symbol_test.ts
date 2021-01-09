@@ -33,8 +33,10 @@ export class SymbolTest extends SpeechTest {
 
   /**
    * Execute test for a single unit string.
+   *
    * @param char The character or string representing the unit.
    * @param answer Expected speech translation for the unit and style.
+   * @param style
    */
   public executeUnitTest(char: string, answer: string, style?: string) {
     sre.Grammar.getInstance().pushState({annotation: 'unit'});

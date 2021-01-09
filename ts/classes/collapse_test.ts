@@ -37,7 +37,8 @@ export class CollapseTest extends SpeechTest {
 
   /**
    * Collapse tests class.
-   * @constructor
+   *
+   * @class
    */
   constructor() {
     super();

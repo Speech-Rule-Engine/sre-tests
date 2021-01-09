@@ -32,6 +32,7 @@ export class SpeechRuleTest extends AbstractTest {
   /**
    * Test objects for structural equality using JSON, otherwise use
    * normal equality.
+   *
    * @param expected Expected value.
    * @param actual The actual computed value.
    */

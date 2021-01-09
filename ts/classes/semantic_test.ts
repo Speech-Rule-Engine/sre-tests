@@ -37,6 +37,7 @@ export abstract class SemanticTest extends AbstractExamples {
 
   /**
    * Executes a single test. This is called by the method.
+   *
    * @param input The input element.
    * @param expected The expected output.
    */
@@ -56,6 +57,7 @@ export class RebuildStreeTest extends SemanticTest {
 
   /**
    * Tests if for a given mathml snippet results in a particular semantic tree.
+   *
    * @param expr MathML expression.
    */
   public executeTest(expr: string) {
@@ -103,6 +105,7 @@ export class EnrichSpeechTest extends SemanticTest {
   /**
    * Tests if speech strings computed directly for a MathML expression are
    * equivalent to those computed for enriched expressions.
+   *
    * @override
    */
   public executeTest(expr: string) {
@@ -191,6 +194,7 @@ export class SemanticTreeTest extends SemanticTest {
 
   /**
    * Tests if for a given mathml snippet results in a particular semantic tree.
+   *
    * @param mml MathML expression.
    * @param sml XML snippet for the semantic tree.
    * @param opt_brief Brief XML output.
@@ -208,6 +212,7 @@ export class SemanticTreeTest extends SemanticTest {
 
   /**
    * Adds stree tags to a semantic tree string, if necessary.
+   *
    * @param sml Stree XML string.
    * @return The augmented expression.
    */
@@ -255,6 +260,7 @@ export class EnrichMathmlTest extends SemanticTest {
 
   /**
    * Tests if for a given mathml snippet results in a particular semantic tree.
+   *
    * @param mml MathML expression.
    * @param smml MathML snippet for the semantic information.
    */
@@ -273,6 +279,7 @@ export class EnrichMathmlTest extends SemanticTest {
 
   /**
    * Removes XML nodes according to the XPath elements in the blacklist.
+   *
    * @param xml Xml representation of the semantic node.
    */
   public customizeXml(xml: Element) {
@@ -307,6 +314,7 @@ export class SemanticApiTest extends SemanticTest {
 
   /**
    * Tests if for a given mathml snippet results in a particular semantic tree.
+   *
    * @param expr MathML expression.
    */
   public executeTest(expr: string) {
@@ -319,6 +327,7 @@ export class SemanticApiTest extends SemanticTest {
 
   /**
    * Tests Tree generation vs Xml output.
+   *
    * @param mml The node.
    */
   public treeVsXml(mml: Node) {
@@ -329,6 +338,7 @@ export class SemanticApiTest extends SemanticTest {
 
   /**
    * Tests Tree generation vs Xml output.
+   *
    * @param mml The node.
    * @param mstr The XML as string.
    */
@@ -340,6 +350,7 @@ export class SemanticApiTest extends SemanticTest {
 
   /**
    * Tests Tree generation vs Xml output.
+   *
    * @param mml The node.
    * @param mstr The XML as string.
    */
@@ -368,6 +379,7 @@ export class SemanticXmlTest extends SemanticTest {
 
   /**
    * Tests if for a given mathml snippet results in a particular semantic tree.
+   *
    * @param expr MathML expression.
    */
   public executeTest(expr: string) {

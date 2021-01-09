@@ -25,15 +25,16 @@ export interface BrailleTransformer extends Transformer {
   /**
    * What kind of Braille representation.
    */
-  kind(): string;
+  kind(): string
 
   /**
    * Cleans a string to be suitable for the transformer.
+   *
    * @param {string} str The input string.
    * @return {[string, string]} The cleaned input and the comma separated
    * erroroneous elements.
    */
-  cleanInput(str: string): [string, string];
+  cleanInput(str: string): [string, string]
 
 }
 
@@ -54,6 +55,7 @@ abstract class BrfTransformer extends AbstractTransformer implements BrailleTran
 
   /**
    * Get translation string for format.
+   *
    * @param kind The format.
    */
   protected static getFormat(kind: string) {
@@ -199,6 +201,7 @@ abstract class FromMultikey extends BrfTransformer {
 
   /**
    * Translates a string representing a single character to Unicode Braille.
+   *
    * @param {string} char The input string.
    * @return {string} The single Unicode character.
    */
@@ -218,6 +221,7 @@ abstract class ToMultikey extends BrfTransformer {
 
   /**
    * Translates a Unicode Braille character to its string representation.
+   *
    * @param {string} char The single Unicode character.
    * @return {string} The string representation.
    */

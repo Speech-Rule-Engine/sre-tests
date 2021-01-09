@@ -60,6 +60,7 @@ export class Tests {
 
   /**
    * Load all json files from the expected directory
+   *
    * @return A list of all json file path names.
    */
   public static allJson(): string[] {
@@ -70,6 +71,7 @@ export class Tests {
 
   /**
    * Recursively find all files with .json extension under the given path.
+   *
    * @param path The top pathname.
    * @param result Accumulator for pathnames.
    */
@@ -91,6 +93,7 @@ export class Tests {
 
   /**
    * Filters the file list wrt. to the string list of an environment variable.
+   *
    * @param files The files list.
    * @param filter The filtering list of strings from an env variable.
    * @param start The start of the filtering regular expression.
@@ -112,7 +115,7 @@ export class Tests {
   }
 
   /**
-   * @constructor
+   * @class
    */
   constructor() {
     Tests.environmentVars.forEach(x => this.getEnvironment(x));
@@ -159,6 +162,7 @@ export class Tests {
 
   /**
    * Fills the list of environment variables.
+   *
    * @param variable The variable name.
    */
   public getEnvironment(variable: string) {

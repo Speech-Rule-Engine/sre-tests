@@ -86,6 +86,7 @@ export function transformInput(
 /**
  * Generates test using require to load. Needs to be exposed with
  * module.exports.
+ *
  * @param input Input filename.
  * @param output Output filename.
  * @param field The optional field name, defaults to input.
@@ -100,12 +101,13 @@ export function generateTestRequire(
 
 /**
  * Generates test from a json file.
+ *
  * @param input Input filename.
  * @param output Output filename.
  * @param field The optional field name, defaults to input.
  */
 export function generateTestJson(input: string, output: string,
-                                 field: string = 'input') {
+  field: string = 'input') {
   let oldJson = TestUtil.loadJson(input);
   let newJson = transformInput(oldJson, field);
   TestUtil.saveJson(output, newJson);
@@ -113,12 +115,13 @@ export function generateTestJson(input: string, output: string,
 
 /**
  * Runs a series of transformers on the given tests.
+ *
  * @param {JsonTest} json The JSON tests.
  * @param {Transformer[]} transformers List of transformers.
  * @return {JsonTest} The updated json test.
  */
 export function transformTests(json: JsonTest,
-                               transformers: Transformer[]): JsonTest {
+  transformers: Transformer[]): JsonTest {
   for (let value of Object.values(json)) {
     for (let transformer of transformers) {
       value[transformer.dst] = transformer.via(value[transformer.src]);
@@ -129,16 +132,17 @@ export function transformTests(json: JsonTest,
 
 /**
  * Transforms test file in place.
+ *
  * @param file File name.
  * @param transformers Transformer list.
  */
 export function transformTestsSource(file: string,
-                                     transformers: Transformer[]) {
+  transformers: Transformer[]) {
   let json = TestUtil.loadJson(file);
   TestUtil.saveJson(file, transformTests(json, transformers));
 }
 
-/************************************************************/
+/** **********************************************************/
 /*
  * Test generation for the PreTeXt project.
  *
@@ -146,8 +150,11 @@ export function transformTestsSource(file: string,
  *           cleaned by combining duplicates and collating reference
  *           urls. Possibly split into different files.
  */
-/************************************************************/
+/** **********************************************************/
 
+/**
+ * @param file
+ */
 export function transformPretextSource(file: string) {
   let json = TestUtil.loadJson(file) as JsonTest[];
   let tests = cleanPretextSource(json);
@@ -156,6 +163,9 @@ export function transformPretextSource(file: string) {
   return allTests;
 }
 
+/**
+ * @param json
+ */
 function cleanPretextSource(json: JsonTest[]) {
   let count = 0;
   let result: JsonTests = {};
@@ -185,6 +195,9 @@ function cleanPretextSource(json: JsonTest[]) {
   return result;
 }
 
+/**
+ * @param tests
+ */
 function splitPretextSource(tests: JsonTests) {
   let numbers = splitOffBySemantics(
     tests, (x: sret.SemanticNode) =>
@@ -230,7 +243,7 @@ function splitPretextSource(tests: JsonTests) {
         x.type === 'punctuated' && x.role === 'sequence' &&
           (x.childNodes[x.childNodes.length - 1].textContent === '∈' ||
             x.childNodes[x.childNodes.length - 1].textContent === '∉')
-    ));
+      ));
   saveRenamedTests(elements, 'element');
 
   let inequalities = splitOffBySemantics(
@@ -252,6 +265,10 @@ function splitPretextSource(tests: JsonTests) {
   return tests;
 }
 
+/**
+ * @param tests
+ * @param pred
+ */
 function splitOffBySemantics(
   tests: JsonTests, pred: (x: sret.SemanticNode) => boolean): JsonTests {
   let result: JsonTests = {};
@@ -266,6 +283,11 @@ function splitOffBySemantics(
   return result;
 }
 
+/**
+ * @param tests
+ * @param prefix
+ * @param dir
+ */
 function saveRenamedTests(tests: JsonTests, prefix: string, dir: string = '/tmp') {
   let result: JsonTests = {};
   let name = TestUtil.capitalize(prefix) + '_';

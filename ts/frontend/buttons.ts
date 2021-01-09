@@ -36,6 +36,7 @@ class Buttons {
 
   /**
    * Creates a span element.
+   *
    * @param cls Class name.
    * @param title Optional title/aria-label string.
    * @return The newly created element.
@@ -79,6 +80,10 @@ class Buttons {
 export let forwardBtn = new Buttons('next');
 export let backwardBtn = new Buttons('previous');
 
+/**
+ * @param button
+ * @param method
+ */
 function addListener(button: Element, method: EventListener) {
   button.addEventListener('click', method);
   button.addEventListener('keyup', (e: KeyboardEvent) => {
@@ -88,6 +93,9 @@ function addListener(button: Element, method: EventListener) {
   });
 }
 
+/**
+ * @param test
+ */
 function addListeners(test: FireTest) {
   addListener(backwardBtn.f, async () => await test.cycleTests(false));
   addListener(backwardBtn.ff,
@@ -98,6 +106,9 @@ function addListeners(test: FireTest) {
   addListener(forwardBtn.fff, async () => await test.cycleNewTests(true));
 }
 
+/**
+ * @param test
+ */
 function addAccess(test: FireTest) {
   let access = Buttons.createElement('btn center', 'access');
   let select = document.createElement('select');
@@ -115,7 +126,9 @@ function addAccess(test: FireTest) {
   return access;
 }
 
-
+/**
+ * @param test
+ */
 export function init(test: FireTest) {
   addListeners(test);
   let div = document.createElement('div');

@@ -25,6 +25,7 @@ export class ColorPickerTest extends AbstractJsonTest {
   /**
    * Tests if a given color object produces the correct rgba value. The test is
    * run on background colors.
+   *
    * @param color The color specification.
    * @param expected The expected rgba string.
    */
