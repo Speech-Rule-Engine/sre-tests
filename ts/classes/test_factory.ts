@@ -32,7 +32,7 @@ import {HtmlTest, XpathTest} from './dom_test';
 import {MarkupTest} from './markup_test';
 import {PrefixTest} from './prefix_test';
 import {EnrichMathmlTest, EnrichSpeechTest, RebuildStreeTest, SemanticApiTest,
-        SemanticTreeTest} from './semantic_test';
+        SemanticTreeTest, SemanticXmlTest} from './semantic_test';
 import {SpeechTest} from './speech_test';
 import {SummaryTest} from './summary_test';
 import {SymbolTest} from './symbol_test';
@@ -51,6 +51,7 @@ const map = new Map<string, any>([
   ['prefix', PrefixTest],
   ['rebuild', RebuildStreeTest],
   ['semanticApi', SemanticApiTest],
+  ['semanticXml', SemanticXmlTest],
   ['speech', SpeechTest],
   ['stree', SemanticTreeTest],
   ['summary', SummaryTest],

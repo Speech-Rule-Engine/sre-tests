@@ -187,3 +187,18 @@ export class ColorPicker {
 export class SemanticAnnotator {}
 
 export class SemanticVisitor {}
+
+
+export class SemanticTree {
+  root: SemanticNode;
+}
+
+
+export class SemanticNode {
+  type: string;
+  role: string;
+  font: string;
+  textContent: string;
+  childNodes: SemanticNode[];
+  contentNodes: SemanticNode[];
+}

@@ -361,8 +361,7 @@ function splitOffKeys(json: JsonTests, keys: string[], result: JsonTests = {}) {
 
 function writeNemethSymbolOutput(
   dir: string, json: JsonTests, base: string, key: string) {
-  let name = key.split(/_|-/g).
-    map(x => x.charAt(0).toUpperCase() + x.slice(1)).join('');
+  let name = key.split(/_|-/g).map(TestUtil.capitalize).join('');
   let file: JsonFile = {
     name: `NemethDefault${base}${name}`,
     locale: 'nemeth',

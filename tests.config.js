@@ -74,10 +74,11 @@ let createJsonTests = function(files) {
     let depth = dir.match(/\//g);
     let base = Array((depth ? depth.length : 0) + 3).join('../');
     let content = [];
-    content.push(`import {runJsonTest} from '${base}jest'`);
-    content.push(`import {ExampleFiles} from '${base}classes/abstract_examples'`);
+    content.push(`import {ExampleFiles} from '${base}classes/abstract_examples';`);
+    content.push(`import {runJsonTest} from '${base}jest';`);
     content.push('ExampleFiles.noOutput = true;');
     content.push(`runJsonTest('${file}');`);
+    content.push(``);
     createFile(jsondir + dir, path.basename(file).replace(/.json$/, '.test.ts'), content);
   }
 };
@@ -86,10 +87,11 @@ let createOutputTests = function() {
   for (let file of Object.keys(allOutputs)) {
     let files = allOutputs[file];
     let content = [];
-    content.push(`import {runJsonTest} from '../jest'`);
-    content.push(`import {ExampleFiles} from '../classes/abstract_examples'`);
-    content.push('afterAll(() => {ExampleFiles.closeFiles();});');
+    content.push(`import {ExampleFiles} from '../classes/abstract_examples';`);
+    content.push(`import {runJsonTest} from '../jest';`);
+    content.push('afterAll(() => { ExampleFiles.closeFiles(); });');
     files.forEach(x => content.push(`runJsonTest('${x}');`));
+    content.push(``);
     createFile(alldir, file + '.test.ts', content);
   }
 };
@@ -101,13 +103,14 @@ let createAnalyseTests = function() {
     let depth = dir.match(/\//g);
     let base = Array((depth ? depth.length : 0) + 3).join('../');
     let content = [];
-    content.push(`import {runJsonTest} from '${base}jest'`);
-    content.push(`import {ExampleFiles} from '${base}classes/abstract_examples'`);
-    content.push(`import AnalyticsTest from '${base}analytics/analytics_test'`);
+    content.push(`import AnalyticsTest from '${base}analytics/analytics_test';`);
+    content.push(`import {ExampleFiles} from '${base}classes/abstract_examples';`);
+    content.push(`import {runJsonTest} from '${base}jest';`);
     content.push('AnalyticsTest.deep = true;');
     content.push('ExampleFiles.noOutput = true;');
-    content.push('afterAll(() => {AnalyticsTest.output();});');
+    content.push('afterAll(() => { AnalyticsTest.output(); });');
     content.push(`runJsonTest('${file}');`);
+    content.push(``);
     createFile(analysedir + dir, path.basename(file).replace(/.json$/, '.test.ts'), content);
   }
 };

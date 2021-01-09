@@ -350,3 +350,33 @@ export class SemanticApiTest extends SemanticTest {
   }
 
 }
+
+/**
+ * Tests for the XML parser for the semantic tree.
+ */
+export class SemanticXmlTest extends SemanticTest {
+
+  /**
+   * @override
+   */
+  public information = 'Semantic Xml parser tests.';
+
+  /**
+   * @override
+   */
+  public pickFields = ['input'];
+
+  /**
+   * Tests if for a given mathml snippet results in a particular semantic tree.
+   * @param expr MathML expression.
+   */
+  public executeTest(expr: string) {
+    let mathMl = sre.Enrich.prepareMmlString(expr);
+    let mml = sre.DomUtil.parseInput(mathMl);
+    let stree = new sre.SemanticTree(mml);
+    let xml = stree.xml();
+    this.assert.equal(xml.toString(),
+                      sre.SemanticTree.fromXml(xml).xml().toString());
+  }
+
+}

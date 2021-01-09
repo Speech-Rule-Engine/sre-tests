@@ -179,4 +179,13 @@ export namespace TestUtil {
     return [results, warn];
   }
 
+  /**
+   * Capitalizes the input string.
+   * @param str The input string.
+   * @return The capitalized string.
+   */
+  export function capitalize(str: string): string {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
 }
