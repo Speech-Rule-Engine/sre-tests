@@ -18,7 +18,7 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {JsonFile, TestUtil, TestPath} from '../base/test_util';
+import {JsonFile, TestPath, TestUtil} from '../base/test_util';
 
 namespace AnalyticsUtil {
 
@@ -41,7 +41,8 @@ namespace AnalyticsUtil {
    * @param name
    * @param ext
    */
-  export function fileJson(prefix: string, json: JsonFile, name: string, ext: string = 'json') {
+  export function fileJson(
+    prefix: string, json: JsonFile, name: string, ext: string = 'json') {
     let path = `${TestPath.ANALYSIS + prefix}/${name}.${ext}`;
     TestUtil.saveJson(path, json);
   }

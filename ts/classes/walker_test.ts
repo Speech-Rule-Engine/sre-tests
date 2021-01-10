@@ -31,7 +31,7 @@ export class WalkerTest extends AbstractJsonTest {
   /**
    * @override
    */
-  constructor() {
+  public constructor() {
     super();
     this.pickFields.push('modifier');
   }
@@ -101,7 +101,7 @@ export class WalkerTest extends AbstractJsonTest {
    * @return The newly created walker.
    */
   private createWalker() {
-    let renderer: {renderer: string
+    let renderer: {renderer: string,
                    browser?: string} = {renderer: this.jsonTests['renderer']};
     let browser = this.jsonTests['browser'];
     if (browser) {

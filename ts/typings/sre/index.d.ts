@@ -134,6 +134,7 @@ export interface Trie {
   singleStyle(style: string): SpeechRule[];
   getSingletonDynamic_(): any;
   byConstraint(c1: any): any;
+  addRule(rule: SpeechRule): void;
 }
 
 

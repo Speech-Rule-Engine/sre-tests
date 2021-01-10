@@ -25,8 +25,6 @@ import {TestPath, TestUtil} from '../base/test_util';
 import * as sret from '../typings/sre';
 import AnalyticsUtil from './analytics_util';
 
-// import {ExampleFiles} from '../classes/abstract_examples'
-
 // Saves
 //  * All applicable rules for a test case
 //  * All actually applied rule for a test case
@@ -65,7 +63,9 @@ namespace AnalyticsTest {
   export let applicableRules: Map<string, sret.SpeechRule[][]> = new Map();
 
   /**
-   * @param rule
+   * Records a rule applied while a running a test case.
+   *
+   * @param rule The applied rule.
    */
   export function addAppliedRule(rule: sret.SpeechRule) {
     let cases = appliedRule.get(currentTestcase);
@@ -77,7 +77,9 @@ namespace AnalyticsTest {
   }
 
   /**
-   * @param rules
+   * Records all rules applicable while running a test case.
+   *
+   * @param rules The list of applicable rules.
    */
   export function addApplicableRules(rules: sret.SpeechRule[]) {
     let cases = applicableRules.get(currentTestcase);
@@ -89,7 +91,7 @@ namespace AnalyticsTest {
   }
 
   /**
-   *
+   * Generate all output files.
    */
   export function output() {
     if (!deep) {
@@ -102,14 +104,15 @@ namespace AnalyticsTest {
 
   // This works now as all rule sets are loaded.
   /**
-   *
+   * Outputs a json file enumerating all rules for every rule set as well as the
+   * difference between those and the list of unique rules actually applied
+   * during tests.
    */
   export function outputAllRules() {
     sre.System.getInstance().setupEngine({});
     loadAllAppliedRules();
-    for (
-      let [name, obj] of
-      Object.entries(sre.SpeechRuleEngine.getInstance().ruleSets_)) {
+    for (let [name, obj] of Object.entries(
+      sre.SpeechRuleEngine.getInstance().ruleSets_)) {
       let rules = (obj as sret.SpeechRuleStore).speechRules_
         .map(x => x.toString());
       AnalyticsUtil.fileJson('allRules', rules.sort(), name);
@@ -121,7 +124,7 @@ namespace AnalyticsTest {
   let uniqueAppliedRules: Map<string, boolean> = new Map();
 
   /**
-   *
+   * Loads the list of all uniquely applied rules.
    */
   function loadAllAppliedRules() {
     let path = TestPath.ANALYSIS + '/uniqueAppliedRules/';
@@ -135,8 +138,11 @@ namespace AnalyticsTest {
   }
 
   /**
-   * @param rules
-   * @param name
+   * Generates json files for difference of all rules in a set and those
+   * actually applied during the tests.
+   *
+   * @param rules The list of rules in the set.
+   * @param name The name of the rule set.
    */
   function allRulesDifference(rules: string[], name: string) {
     let diff = [];
@@ -149,7 +155,8 @@ namespace AnalyticsTest {
   }
 
   /**
-   *
+   * Outputs a list of all applied rules for each test of the current test
+   * suite.
    */
   export function outputAppliedRules() {
     let jsonObj: {[name: string]: string[]} = {};
@@ -160,7 +167,8 @@ namespace AnalyticsTest {
   }
 
   /**
-   *
+   * Outputs lists of lists of all applicable rules for each test of the current
+   * test suite.
    */
   export function outputApplicableRules() {
     let jsonObj: {[name: string]: string[][]} = {};
@@ -173,7 +181,7 @@ namespace AnalyticsTest {
   }
 
   /**
-   *
+   * Outputs the unique applied rules for each test suite.
    */
   export function outputUniqueAppliedRules() {
     let rules: sret.SpeechRule[] = [];

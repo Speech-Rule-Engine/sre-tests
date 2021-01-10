@@ -83,7 +83,7 @@ export class SpeechTest extends AbstractExamples {
     return '<td>' + entry + '</td>';
   }
 
-  constructor() {
+  public constructor() {
     super();
     this.style = sre.DynamicCstr.DEFAULT_VALUES[sre.DynamicCstr.Axis.STYLE];
     this.domain = sre.DynamicCstr.DEFAULT_VALUES[sre.DynamicCstr.Axis.DOMAIN];

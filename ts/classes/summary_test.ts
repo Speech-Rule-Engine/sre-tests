@@ -50,7 +50,7 @@ export class SummaryTest extends SpeechTest {
    *
    * @class
    */
-  constructor() {
+  public constructor() {
     super();
     this.pickFields.push('steps');
   }

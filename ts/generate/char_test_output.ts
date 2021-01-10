@@ -20,10 +20,10 @@
 
 import * as fs from 'fs';
 import {sre} from '../base/test_external';
-import {JsonFile, JsonTest, JsonTests, TestPath, TestUtil} from '../base/test_util';
+import * as tu from '../base/test_util';
 
 // All files that are generated.
-const InputPath = TestPath.INPUT + 'common/';
+const InputPath = tu.TestPath.INPUT + 'common/';
 enum SymbolType {
   CHARACTERS = 'symbols',
   FUNCTIONS = 'functions',
@@ -45,7 +45,7 @@ const NemethFire = true;
  * @return The symbol keys in the base.
  */
 function loadBaseFile(file: string): string[] {
-  const json = TestUtil.loadJson(file);
+  const json = tu.TestUtil.loadJson(file);
   return Object.keys(json.tests);
 }
 
@@ -116,21 +116,21 @@ const AllConstraints: {[loc: string]: string[]} = {
  * @param unit Are the symbols units.
  * @return The test json structure.
  */
-function testOutput(locale: string, keys: string[], unit = false): JsonFile {
+function testOutput(locale: string, keys: string[], unit = false): tu.JsonFile {
   let constraints = AllConstraints[locale];
   if (!constraints) {
     return {};
   }
-  let output: JsonFile = {};
+  let output: tu.JsonFile = {};
   let modality = locale === 'nemeth' ? 'braille' : 'speech';
   for (let dom of constraints) {
-    let json: JsonFile = {
+    let json: tu.JsonFile = {
       'name': '',
       'locale': locale,
       'domain': dom,
       'style': 'default'
     };
-    let tests: JsonTests = {};
+    let tests: tu.JsonTests = {};
     for (let key of keys) {
       if (key.match(/^_comment/)) {
         continue;
@@ -157,7 +157,7 @@ function isUnitTest(kind: SymbolType) {
  * @param locale
  * @param kind
  */
-export function testFromBase(locale: string, kind: SymbolType): JsonFile {
+export function testFromBase(locale: string, kind: SymbolType): tu.JsonFile {
   let file = InputPath + FILES.get(kind);
   if (!file) {
     return [];
@@ -171,7 +171,7 @@ export function testFromBase(locale: string, kind: SymbolType): JsonFile {
  * @param locale
  * @param kind
  */
-export function testFromLocale(locale: string, kind: SymbolType): JsonFile {
+export function testFromLocale(locale: string, kind: SymbolType): tu.JsonFile {
   let file = sre.BaseUtil.makePath(sre.SystemExternal.jsonPath) +
       locale + '.js';
   let json = JSON.parse(sre.MathMap.loadFile(file));
@@ -187,7 +187,8 @@ export function testFromLocale(locale: string, kind: SymbolType): JsonFile {
  * @param  kind The kind of symbol for which to generate tests.
  * @param  dir Output directory.
  */
-export function testOutputFromExtras(locale: string, kind: SymbolType, dir = '/tmp') {
+export function testOutputFromExtras(
+  locale: string, kind: SymbolType, dir = '/tmp') {
   if (kind === SymbolType.SIUNITS || locale === 'nemeth') {
     return;
   }
@@ -197,7 +198,8 @@ export function testOutputFromExtras(locale: string, kind: SymbolType, dir = '/t
   }
   let tests = output.tests;
   delete output.tests;
-  let singular = (kind === SymbolType.CHARACTERS) ? 'character' : kind.replace(/s$/, '');
+  let singular = (kind === SymbolType.CHARACTERS) ?
+    'character' : kind.replace(/s$/, '');
   output.name = `Extra${singular.replace(/^\w/, c => c.toUpperCase())}`;
   output.type = singular;
   output.factory = 'symbol';
@@ -210,7 +212,7 @@ export function testOutputFromExtras(locale: string, kind: SymbolType, dir = '/t
  * @param locale
  * @param kind
  */
-export function testFromExtras(locale: string, kind: SymbolType): JsonFile {
+export function testFromExtras(locale: string, kind: SymbolType): tu.JsonFile {
   let file = sre.BaseUtil.makePath(sre.SystemExternal.jsonPath) +
       locale + '.js';
   let json = JSON.parse(sre.MathMap.loadFile(file));
@@ -229,9 +231,9 @@ export function testFromExtras(locale: string, kind: SymbolType): JsonFile {
  * @return The test json structure.
  */
 function testExtras(
-  locale: string, extras: JsonTests, kind: SymbolType): JsonFile {
-  let json: JsonFile = {'locale': locale};
-  let tests: JsonTests = {};
+  locale: string, extras: tu.JsonTests, kind: SymbolType): tu.JsonFile {
+  let json: tu.JsonFile = {'locale': locale};
+  let tests: tu.JsonTests = {};
   for (let [key, constr] of Object.entries(extras)) {
     if (key.match(/^_comment/)) {
       continue;
@@ -261,10 +263,10 @@ function testExtras(
  * @param kind
  */
 export function getExtrasFor(
-  locale: string, json: JsonTests, kind: SymbolType) {
+  locale: string, json: tu.JsonTests, kind: SymbolType) {
   let symbols = symbolsfromLocale(json, kind);
   let domains = AllConstraints[locale];
-  let extras: JsonTests = {};
+  let extras: tu.JsonTests = {};
   for (let symbol of symbols) {
     if (!symbol.mappings || !symbol.key) {
       continue;
@@ -275,7 +277,7 @@ export function getExtrasFor(
         // extras[symbol.key] = mappings;
         continue;
       }
-      let result: JsonTest = {};
+      let result: tu.JsonTest = {};
       for (let [style, _] of Object.entries(styles)) {
         if (style === 'default') {
           continue;
@@ -304,7 +306,8 @@ export function getExtrasFor(
  * @param  kind The kind of symbol for which to generate tests.
  * @param  dir Output directory.
  */
-export function testOutputFromBase(locale: string, kind: SymbolType, dir = '/tmp') {
+export function testOutputFromBase(
+  locale: string, kind: SymbolType, dir = '/tmp') {
   let output = testFromBase(locale, kind);
   for (let [_dom, json] of Object.entries(output)) {
     writeOutputToFile(dir, json, locale, json.domain, kind);
@@ -354,8 +357,8 @@ export function testOutputFromBoth(
  * @param dir
  * @param json
  */
-export function splitNemethForFire(dir: string, json: JsonFile) {
-  let tests = json.tests as JsonTests;
+export function splitNemethForFire(dir: string, json: tu.JsonFile) {
+  let tests = json.tests as tu.JsonTests;
   splitNemethByAlphabet(dir, tests);
   let file = sre.BaseUtil.makePath(sre.SystemExternal.jsonPath) +
     'nemeth.js';
@@ -372,10 +375,10 @@ export function splitNemethForFire(dir: string, json: JsonFile) {
  * @param json
  * @param file
  */
-function splitNemethByFile(dir: string, locale: JsonTests,
-  json: JsonTests, file: string) {
+function splitNemethByFile(dir: string, locale: tu.JsonTests,
+  json: tu.JsonTests, file: string) {
   let keys = [];
-  let entries = locale[`nemeth/symbols/${file}.js`] as JsonTest[];
+  let entries = locale[`nemeth/symbols/${file}.js`] as tu.JsonTest[];
   for (let entry of entries) {
     if (entry.key) {
       keys.push(entry.key);
@@ -388,16 +391,16 @@ function splitNemethByFile(dir: string, locale: JsonTests,
  * @param dir
  * @param json
  */
-function splitNemethByAlphabet(dir: string, json: JsonTests) {
+function splitNemethByAlphabet(dir: string, json: tu.JsonTests) {
   let intervals = sre.AlphabetGenerator.INTERVALS;
-  let byFonts: {[name: string]: JsonTests} = {};
+  let byFonts: {[name: string]: tu.JsonTests} = {};
   for (let value of Object.values(sre.AlphabetGenerator.Font)) {
     byFonts[value as string] = {};
   }
   for (let value of Object.values(sre.AlphabetGenerator.Embellish)) {
     byFonts[value as string] = {};
   }
-  for (let i = 0, int: JsonTest; int = intervals[i]; i++) {
+  for (let i = 0, int: tu.JsonTest; int = intervals[i]; i++) {
     let keys = sre.AlphabetGenerator.makeInterval(int.interval, int.subst);
     splitOffKeys(json, keys, byFonts[int.font]);
   }
@@ -415,7 +418,8 @@ function splitNemethByAlphabet(dir: string, json: JsonTests) {
  * @param {string[]} keys A list of keys.
  * @param {JsonTests} result The result structure.
  */
-function splitOffKeys(json: JsonTests, keys: string[], result: JsonTests = {}) {
+function splitOffKeys(
+  json: tu.JsonTests, keys: string[], result: tu.JsonTests = {}) {
   keys.forEach(function(x: string) {
     let letter = sre.SemanticUtil.numberToUnicode(parseInt(x, 16));
     result[letter] = json[letter];
@@ -432,9 +436,9 @@ function splitOffKeys(json: JsonTests, keys: string[], result: JsonTests = {}) {
  * @param key
  */
 function writeNemethSymbolOutput(
-  dir: string, json: JsonTests, base: string, key: string) {
-  let name = key.split(/_|-/g).map(TestUtil.capitalize).join('');
-  let file: JsonFile = {
+  dir: string, json: tu.JsonTests, base: string, key: string) {
+  let name = key.split(/_|-/g).map(tu.TestUtil.capitalize).join('');
+  let file: tu.JsonFile = {
     name: `NemethDefault${base}${name}`,
     locale: 'nemeth',
     domain: 'default',
@@ -447,8 +451,9 @@ function writeNemethSymbolOutput(
     information: `Nemeth Default ${base} ${key} tests.`,
     tests: json
   };
-  TestUtil.saveJson(
-    `${dir}/nemeth/default_${base.toLowerCase()}_${key.replace(/-/g, '_')}.json`, file);
+  tu.TestUtil.saveJson(
+    `${dir}/nemeth/default_${base.toLowerCase()}_` +
+      `${key.replace(/-/g, '_')}.json`, file);
 }
 
 /**
@@ -461,19 +466,21 @@ function writeNemethSymbolOutput(
  * @param {SymbolType} kind The type of symbols.
  */
 function writeOutputToFile(
-  dir: string, json: JsonFile, locale: string, dom: string, kind: SymbolType) {
-  TestUtil.saveJson(`${dir}/${locale}/${dom}_${FILES.get(kind)}`, json);
+  dir: string, json: tu.JsonFile, locale: string, dom: string,
+  kind: SymbolType) {
+  tu.TestUtil.saveJson(`${dir}/${locale}/${dom}_${FILES.get(kind)}`, json);
 }
 
 /**
  * @param json
  * @param kind
  */
-function symbolsfromLocale(json: JsonTest, kind: SymbolType): JsonTest[] {
+function symbolsfromLocale(json: tu.JsonTest, kind: SymbolType): tu.JsonTest[] {
   let keys = Object.keys(json);
   let si = kind === SymbolType.SIUNITS;
-  let symbols = keys.filter(j => j.match(RegExp(`^.+/${si ? 'units' : kind}/.+\.js`)));
-  let result: JsonTest[] = [];
+  let symbols = keys.filter(
+    j => j.match(RegExp(`^.+/${si ? 'units' : kind}/.+\.js`)));
+  let result: tu.JsonTest[] = [];
   for (let key of symbols) {
     result = result.concat(json[key]);
   }
@@ -485,14 +492,15 @@ function symbolsfromLocale(json: JsonTest, kind: SymbolType): JsonTest[] {
  * particular symbol type. Note, that the JSON structure is the locale one,
  * mapping filenames to symbol mappings. This also takes care of SI units.
  *
- * @param {JsonTest} json The locale JSON structure.
+ * @param {tu.JsonTest} json The locale JSON structure.
  * @param {SymbolType} kind The type of symbol.
  * @return {string[]} The list of names.
  */
-function getNamesFor(json: JsonTest, kind: SymbolType): string[] {
+function getNamesFor(json: tu.JsonTest, kind: SymbolType): string[] {
   let symbols = symbolsfromLocale(json, kind);
   let si = kind === SymbolType.SIUNITS;
-  let prefixes = json[Object.keys(json).find(j => j.match(/^.+\/si\/prefixes\.js/))][0];
+  let prefixes = json[Object.keys(json)
+    .find(j => j.match(/^.+\/si\/prefixes\.js/))][0];
   let result: string[] = [];
   for (let obj of symbols) {
     if (si && obj.names && obj.si) {
@@ -532,10 +540,11 @@ function getSINamesFor(prefixes: string[], names: string): string[] {
  * @param locale
  * @param kind
  */
-export function diffBaseVsLocale(locale: string, kind: SymbolType): JsonTest {
+export function diffBaseVsLocale(
+  locale: string, kind: SymbolType): tu.JsonTest {
   let output1 = testFromBase(locale, kind);
   let output2 = testFromLocale(locale, kind);
-  let result: JsonTest = {};
+  let result: tu.JsonTest = {};
   for (const dom of Object.keys(output1)) {
     let tests1 = output1[dom].tests;
     let tests2 = output2[dom].tests;
@@ -571,10 +580,13 @@ export function replaceTests(dir = '/tmp/symbols') {
     let files = fs.readdirSync(`${dir}/${loc}`);
     for (let file of files) {
       console.log(file);
-      let oldJson: JsonTest = TestUtil.loadJson(`${TestPath.EXPECTED}/${loc}/symbols/${file}`);
-      let newJson: JsonTest = TestUtil.loadJson(`${dir}/${loc}/${file}`);
+      let oldJson: tu.JsonTest =
+        tu.TestUtil.loadJson(`${tu.TestPath.EXPECTED}/${loc}/symbols/${file}`);
+      let newJson: tu.JsonTest =
+        tu.TestUtil.loadJson(`${dir}/${loc}/${file}`);
       oldJson.tests = newJson.tests;
-      TestUtil.saveJson(`${TestPath.EXPECTED}/${loc}/symbols/${file}`, oldJson);
+      tu.TestUtil.saveJson(`${tu.TestPath.EXPECTED}/${loc}/symbols/${file}`,
+                           oldJson);
     }
   }
 }

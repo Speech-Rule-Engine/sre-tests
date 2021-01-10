@@ -26,17 +26,17 @@ export interface Transformer {
   /**
    * Source field to transform from.
    */
-  src: string
+  src: string;
 
   /**
    * Destination field to transform to.
    */
-  dst: string
+  dst: string;
 
   /**
    * Transformer method.
    */
-  via: (src: string) => string
+  via: (src: string) => string;
 
 }
 
@@ -46,7 +46,7 @@ export abstract class AbstractTransformer implements Transformer {
    * @param src Source field to transform from.
    * @param dst Destination field to transform to.
    */
-  constructor(public src: string, public dst: string) {}
+  public constructor(public src: string, public dst: string) {}
 
   /**
    * @override

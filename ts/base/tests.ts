@@ -22,8 +22,8 @@ import {ExampleFiles} from '../classes/abstract_examples';
 import * as TestFactory from '../classes/test_factory';
 import * as BaseTests from '../tests/base_tests';
 import {TestRunner} from './runner';
-import {TestPath} from './test_util';
 import {sre} from './test_external';
+import {TestPath} from './test_util';
 
 export class Tests {
 
@@ -31,7 +31,8 @@ export class Tests {
    * List of all environment variables that can be set.
    */
   public static environmentVars: string[] = [
-    'FILE', 'FILES', 'LOCALE', 'BLOCK', 'JSON', 'VERBOSE', 'WARN', 'NOOUTPUT', 'DEBUG'];
+    'FILE', 'FILES', 'LOCALE', 'BLOCK', 'JSON',
+    'VERBOSE', 'WARN', 'NOOUTPUT', 'DEBUG'];
 
   /**
    * List of all available tests.

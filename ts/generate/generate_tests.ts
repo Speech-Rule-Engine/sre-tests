@@ -37,14 +37,17 @@ import {Transformer} from './transformers';
  * Generates JSON test entries from lists of data elements. The input JSON is of
  * the form
  *
+ * ```javascript
  * {
  *   "foo": [d0, d1, d2, ....],
  *   "bar": [e0, e1, e2, ....],
  *   ...
  * }
+ * ```
  *
  * Output will be for the form
  *
+ * ```javascript
  * {
  *   "foo_0": {"field": d0},
  *   "foo_1": {"field": d1},
@@ -55,6 +58,7 @@ import {Transformer} from './transformers';
  *   "bar_2": {"field": e2},
  *   ...
  * }
+ * ```
  *
  * @param {JsonTest} json The initial JSON input.
  * @param {string=} field The optional field name, defaults to input.
@@ -288,7 +292,8 @@ function splitOffBySemantics(
  * @param prefix
  * @param dir
  */
-function saveRenamedTests(tests: JsonTests, prefix: string, dir: string = '/tmp') {
+function saveRenamedTests(
+  tests: JsonTests, prefix: string, dir: string = '/tmp') {
   let result: JsonTests = {};
   let name = TestUtil.capitalize(prefix) + '_';
   let count = 0;

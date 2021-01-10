@@ -56,7 +56,7 @@ export class MarkupTest extends AbstractJsonTest {
   /**
    * @override
    */
-  constructor() {
+  public constructor() {
     super();
     this.pickFields = this.pickFields.concat(['markup', 'domain']);
   }

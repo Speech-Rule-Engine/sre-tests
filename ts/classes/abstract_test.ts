@@ -17,10 +17,13 @@
  */
 
 import * as assert from 'assert';
-import {JsonFile, JsonTest, JsonTests, TestPath, TestUtil} from '../base/test_util';
+import * as tu from '../base/test_util';
 
 export abstract class AbstractTest {
 
+  /**
+   * The Jest package.
+   */
   protected jest: boolean = false;
 
   /**
@@ -32,8 +35,8 @@ export abstract class AbstractTest {
    * The assertion package.
    */
   public assert: {
-    equal: (expected: any, actual: any) => void
-    deepEqual: (expected: any, actual: any) => void
+    equal: (expected: any, actual: any) => void,
+    deepEqual: (expected: any, actual: any) => void,
     fail: () => void
   } = {
     equal: !this.jest ? assert.strictEqual :
@@ -74,17 +77,17 @@ export abstract class AbstractJsonTest extends AbstractTest {
   /**
    * The Json for the input from an expected file.
    */
-  public jsonTests: JsonFile = null;
+  public jsonTests: tu.JsonFile = null;
 
   /**
    * The Json for the input from a base file.
    */
-  public baseTests: JsonFile = {};
+  public baseTests: tu.JsonFile = {};
 
   /**
    * The actual tests to run.
    */
-  public inputTests: JsonTest[] = [];
+  public inputTests: tu.JsonTest[] = [];
 
   /**
    * The elements to be picked from the test JSON.
@@ -110,7 +113,7 @@ export abstract class AbstractJsonTest extends AbstractTest {
    * @param json The JSON element.
    * @return The array of arguments for the test method.
    */
-  public pick(json: JsonTest): string[] {
+  public pick(json: tu.JsonTest): string[] {
     return this.pickFields.map(x => json[x]);
   }
 
@@ -119,15 +122,15 @@ export abstract class AbstractJsonTest extends AbstractTest {
    */
   public prepare() {
     this.jsonTests = this.jsonTests || (
-      this.jsonFile ? TestUtil.loadJson(this.jsonFile) : {});
+      this.jsonFile ? tu.TestUtil.loadJson(this.jsonFile) : {});
     this.information = this.jsonTests.information || 'Unnamed tests';
     let file = this.jsonTests['base'];
-    this.baseFile = TestUtil.fileExists(file, TestPath.INPUT);
-    this.baseTests = this.baseFile ? TestUtil.loadJson(this.baseFile) : {};
-    let input: JsonTests = (this.baseTests['tests'] || {}) as JsonTests;
+    this.baseFile = tu.TestUtil.fileExists(file, tu.TestPath.INPUT);
+    this.baseTests = this.baseFile ? tu.TestUtil.loadJson(this.baseFile) : {};
+    let input: tu.JsonTests = (this.baseTests['tests'] || {}) as tu.JsonTests;
     let output = this.jsonTests['tests'] || {};
     let exclude = this.jsonTests['exclude'] || [];
-    let tests = TestUtil.combineTests(input, output, exclude);
+    let tests = tu.TestUtil.combineTests(input, output, exclude);
     this.inputTests = tests[0];
     this.warn = tests[1];
   }

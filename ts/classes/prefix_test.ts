@@ -45,7 +45,7 @@ export class PrefixTest extends SpeechTest {
    */
   public subExpr: Element = null;
 
-  constructor() {
+  public constructor() {
     super();
     this.pickFields[2] = 'id';
     this.pickFields[3] = 'grammar';

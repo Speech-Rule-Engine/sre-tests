@@ -28,7 +28,8 @@ export class ClearspeakTest extends SpeechTest {
    * @override
    */
   public domain = 'clearspeak';
-  constructor() {
+
+  public constructor() {
     super();
   }
 

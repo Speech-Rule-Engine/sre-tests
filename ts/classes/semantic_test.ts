@@ -158,7 +158,7 @@ export class SemanticTreeTest extends SemanticTest {
     attr.rightFences.unshift(close);
   }
 
-  constructor() {
+  public constructor() {
     super();
 
     this.pickFields.push('brief');

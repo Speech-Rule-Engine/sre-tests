@@ -32,7 +32,7 @@ export class FireTest {
   private preparedTests: JsonTest[] = [];
   private _data: JsonTests;
 
-  constructor(public db: any, public collection: string, public doc: string,
+  public constructor(public db: any, public collection: string, public doc: string,
               public getTest: () => JsonTest,
               public setTest: (test: JsonTest) => void) {
   }
@@ -59,25 +59,6 @@ export class FireTest {
       test.unicode = '';
       this.preparedTests.push(test);
     }
-  }
-
-  protected nextTest(direction: boolean) {
-    this.countTests = this.countTests + (direction ? 1 : -1);
-    if (this.countTests < 0) {
-      this.countTests = this.preparedTests.length - 1;
-    }
-    if (this.countTests >= this.preparedTests.length) {
-      this.countTests = 0;
-    }
-    return this.currentTest();
-  }
-
-  protected jumpTest(direction: boolean, stop: (x: FC.Status) => boolean) {
-    let currentCount = this.countTests;
-    while (!stop(this.nextTest(direction)[FC.Interaction]) &&
-      this.countTests !== currentCount) {}
-    return currentCount !== this.countTests ? this.currentTest() :
-      this.nextTest(direction);
   }
 
   // Where should that go?
@@ -160,6 +141,25 @@ export class FireTest {
     }
     this.countTests = index;
     this.setTest(this.currentTest());
+  }
+
+  protected nextTest(direction: boolean) {
+    this.countTests = this.countTests + (direction ? 1 : -1);
+    if (this.countTests < 0) {
+      this.countTests = this.preparedTests.length - 1;
+    }
+    if (this.countTests >= this.preparedTests.length) {
+      this.countTests = 0;
+    }
+    return this.currentTest();
+  }
+
+  protected jumpTest(direction: boolean, stop: (x: FC.Status) => boolean) {
+    let currentCount = this.countTests;
+    while (!stop(this.nextTest(direction)[FC.Interaction]) &&
+      this.countTests !== currentCount) {}
+    return currentCount !== this.countTests ? this.currentTest() :
+      this.nextTest(direction);
   }
 
 }

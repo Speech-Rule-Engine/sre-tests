@@ -67,11 +67,13 @@ sre.Trie.prototype.singleStyle = function(style: string)  {
 // Quaries for rule sets.
 
 sre.BaseRuleStore.prototype.allText = function() {
-  return this.getSpeechRules().filter((x: sret.SpeechRule) => x.action.hasType(sre.SpeechRule.Type.TEXT));
+  return this.getSpeechRules().filter((x: sret.SpeechRule) =>
+    x.action.hasType(sre.SpeechRule.Type.TEXT));
 };
 
 sre.BaseRuleStore.prototype.allLocalizable = function() {
-  return this.getSpeechRules().filter((x: sret.SpeechRule) => x.action.localizable());
+  return this.getSpeechRules().filter((x: sret.SpeechRule) =>
+    x.action.localizable());
 };
 
 sre.SpeechRule.Action.prototype.localizable = function() {
@@ -116,7 +118,7 @@ namespace AnalyticsTrie {
   /**
    * @param rules
    */
-  export function tempTrie(rules: sret.SpeechRule[]) {
+  export function tempTrie(rules: sret.SpeechRule[]): sret.Trie {
     let store = new sre.MathStore();
     let trie = store.trie;
     for (let rule of rules) {
@@ -133,7 +135,8 @@ namespace AnalyticsTrie {
     let json = trie.json();
     let rules = trie.collectRules();
     AnalyticsUtil.fileJson('trie', json, name);
-    AnalyticsUtil.fileJson('trie', rules.map((x: sret.SpeechRule) => x.toString()),
+    AnalyticsUtil.fileJson('trie',
+                           rules.map((x: sret.SpeechRule) => x.toString()),
                            name, 'txt');
   }
 
@@ -164,7 +167,8 @@ namespace AnalyticsTrie {
    *
    */
   export function disjunctiveRules() {
-    let rulesets = Object.values(sre.SpeechRuleEngine.getInstance().ruleSets_) as sret.SpeechRuleStore[];
+    let rulesets = Object.values(
+      sre.SpeechRuleEngine.getInstance().ruleSets_) as sret.SpeechRuleStore[];
     let result = [];
     for (let rules of rulesets) {
       for (let rule of rules.speechRules_) {
@@ -182,7 +186,8 @@ namespace AnalyticsTrie {
    * @param rules
    * @param comparator
    */
-  export function compareRuleSets(rules: string[], comparator: Function = compareTries) {
+  export function compareRuleSets(
+    rules: string[], comparator: Function = compareTries) {
     let set1 = sre.SpeechRuleEngine.getInstance().ruleSets_[rules[0]];
     let set2 = sre.SpeechRuleEngine.getInstance().ruleSets_[rules[1]];
     if (!(set1 && set2)) {
@@ -210,7 +215,8 @@ namespace AnalyticsTrie {
       let cstr2 = rule.dynamicCstr.getValues();
       let cstr1 = cstr2.slice(1);
       cstr1.unshift(locale);
-      let node = trie1.byConstraint(cstr1.concat([prec.query], prec.constraints));
+      let node = trie1.byConstraint(
+        cstr1.concat([prec.query], prec.constraints));
       if (node && node.getRule && node.getRule()) {
         result.push(rule);
       }
@@ -233,7 +239,8 @@ namespace AnalyticsTrie {
       let cstr2 = rule.dynamicCstr.getValues();
       let cstr1 = cstr2.slice(1);
       cstr1.unshift(locale);
-      let node = trie1.byConstraint(cstr1.concat([prec.query], prec.constraints));
+      let node = trie1.byConstraint(
+        cstr1.concat([prec.query], prec.constraints));
       if (node && node.getRule && node.getRule() &&
         node.getRule().action.toString() === rule.action.toString() &&
         !rule.action.localizable()) {
@@ -250,7 +257,8 @@ namespace AnalyticsTrie {
    * @param trie2
    * @param style
    */
-  export function compareTriesStyle(trie1: sret.Trie, trie2: sret.Trie, style = 'default') {
+  export function compareTriesStyle(
+    trie1: sret.Trie, trie2: sret.Trie, style = 'default') {
     let rules = sre.Trie['collectRules_'](trie2.singleStyle(style));
     let cstr1 = trie1.getSingletonDynamic_();
     cstr1.push(style);
@@ -258,7 +266,8 @@ namespace AnalyticsTrie {
     let result = [];
     for (let rule of rules) {
       let prec = rule.precondition;
-      let node = trie1.byConstraint(cstr1.concat([prec.query], prec.constraints));
+      let node = trie1.byConstraint(
+        cstr1.concat([prec.query], prec.constraints));
       if (node && node.getRule && node.getRule() &&
         node.getRule().action.toString() === rule.action.toString() &&
         !rule.action.localizable()) {
@@ -275,11 +284,11 @@ namespace AnalyticsTrie {
    * @param rules1
    * @param rules2
    */
-  export function diffRuleSets(rules1: string, rules2: string) {
+  export function diffRuleSets(rules1: string, rules2: string): sret.Trie {
     let set1 = sre.SpeechRuleEngine.getInstance().ruleSets_[rules1];
     let set2 = sre.SpeechRuleEngine.getInstance().ruleSets_[rules2];
     if (!(set1 && set2)) {
-      return;
+      return null;
     }
     let trie = tempTrie([]);
     let trie1 = set1.trie;
@@ -291,7 +300,8 @@ namespace AnalyticsTrie {
       let cstr = rule.dynamicCstr.getValues();
       cstr.shift();
       cstr.unshift(locale);
-      let node = trie1.byConstraint(cstr.concat([prec.query], prec.constraints));
+      let node = trie1.byConstraint(
+        cstr.concat([prec.query], prec.constraints));
       if (!node || !node.getRule || !node.getRule()) {
         trie.addRule(rule);
       }
@@ -303,7 +313,8 @@ namespace AnalyticsTrie {
       let cstr = rule.dynamicCstr.getValues();
       cstr.shift();
       cstr.unshift(locale);
-      let node = trie2.byConstraint(cstr.concat([prec.query], prec.constraints));
+      let node = trie2.byConstraint(
+        cstr.concat([prec.query], prec.constraints));
       if (!node || !node.getRule || !node.getRule()) {
         trie.addRule(rule);
       }
@@ -328,13 +339,10 @@ namespace AnalyticsTrie {
    */
   export function output() {
     sre.System.getInstance().setupEngine({});
-    // outputTrie(diffRuleSets(pairs[0][0], pairs[0][1]), 'test1');
-    // outputTrie(diffRuleSets(pairs[1][0], pairs[1][1]), 'test2');
-    // outputTrie(diffRuleSets(pairs[2][0], pairs[2][1]), 'test3');
-    // outputTrie(compareRuleSets(['MathspeakRules', 'ClearspeakRules']), 'compare1');
     for (let rules of sets) {
       outputTrie(compareRuleSets(rules), rules[0]);
-      outputTrie(compareRuleSets(rules, compareTriesConstraints), rules[0] + '-constr');
+      outputTrie(compareRuleSets(rules, compareTriesConstraints),
+                 rules[0] + '-constr');
     }
     disjunctiveRules();
   }

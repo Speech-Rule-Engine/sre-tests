@@ -33,7 +33,7 @@ export class Tex2Mml extends AbstractTransformer {
   /**
    * @override
    */
-  constructor(src: string = 'tex', dst: string = 'input') {
+  public constructor(src: string = 'tex', dst: string = 'input') {
     super(src, dst);
   }
 

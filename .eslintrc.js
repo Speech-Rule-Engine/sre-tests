@@ -66,12 +66,20 @@ module.exports = {
       "error",
       {
         "multiline": {
-          "delimiter": "none",
-          "requireLast": true
+          "delimiter": "comma",
+          "requireLast": false
         },
         "singleline": {
           "delimiter": "semi",
           "requireLast": false
+        },
+        "overrides": {
+          "interface": {
+            "multiline": {
+                "delimiter": "semi",
+                "requireLast": true
+            }
+          }
         }
       }
     ],
@@ -113,13 +121,14 @@ module.exports = {
     "jsdoc/require-property-type": "off",
     "jsdoc/require-returns-type": "off",
     "jsdoc/check-alignment": "error",
-    "jsdoc/check-indentation": "error",
+    "jsdoc/check-indentation": "off",
     "jsdoc/newline-after-description": "error",
     "linebreak-style": "error",
     "max-len": [
       "error",
       {
-        "code": 80
+        "code": 80,
+        "ignorePattern": "^import\ .*node_modules.*"
       }
     ],
     "no-eval": "error",
@@ -160,5 +169,13 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["ts/**/*.test.ts"],
+      "rules": {
+        "max-len": ["off"]
+      }
+    }
+  ]
 };

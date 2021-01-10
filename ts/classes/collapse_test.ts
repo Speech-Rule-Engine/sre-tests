@@ -40,7 +40,7 @@ export class CollapseTest extends SpeechTest {
    *
    * @class
    */
-  constructor() {
+  public constructor() {
     super();
     this.pickFields.push('pre');
     this.pickFields.push('post');

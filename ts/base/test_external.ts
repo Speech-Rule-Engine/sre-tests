@@ -31,5 +31,6 @@ let env = process.env['SRE_JSON_PATH'];
 let lib = process.env['SRE_LIBRARY'] || 'sre_test.js';
 let file = path.resolve(env ? env + '/../' + lib : baseDir + '../lib/' + lib);
 /* tslint:disable:no-eval */
+/* eslint-disable no-eval */
 let SRE = eval(fs.readFileSync(file) + '');
 export const sre = SRE;

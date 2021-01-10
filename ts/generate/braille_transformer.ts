@@ -25,7 +25,7 @@ export interface BrailleTransformer extends Transformer {
   /**
    * What kind of Braille representation.
    */
-  kind(): string
+  kind(): string;
 
   /**
    * Cleans a string to be suitable for the transformer.
@@ -34,7 +34,7 @@ export interface BrailleTransformer extends Transformer {
    * @return {[string, string]} The cleaned input and the comma separated
    * erroroneous elements.
    */
-  cleanInput(str: string): [string, string]
+  cleanInput(str: string): [string, string];
 
 }
 

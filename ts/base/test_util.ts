@@ -47,28 +47,28 @@ export class TestError extends Error {
    * @param message The Error message.
    * @param value An arbitrary error value to propagate.
    */
-  constructor(public message: string, public value: any) {
+  public constructor(public message: string, public value: any) {
     super();
   }
 }
 
 export interface JsonTest {
-  test?: boolean
-  name?: string
-  input?: string
-  expected?: string | string[]
-  [propName: string]: any
+  [propName: string]: any;
+  test?: boolean;
+  name?: string;
+  input?: string;
+  expected?: string | string[];
 }
 
 export declare type JsonTests = {[name: string]: JsonTest};
 
 export interface JsonFile {
-  factory?: string
-  information?: string
-  exlcude?: string[]
-  base?: string
-  tests?: JsonTests | 'ALL'
-  [propName: string]: any
+  [propName: string]: any;
+  factory?: string;
+  information?: string;
+  exlcude?: string[];
+  base?: string;
+  tests?: JsonTests | 'ALL';
 }
 
 export namespace TestUtil {
@@ -130,8 +130,8 @@ export namespace TestUtil {
    * If expected is 'ALL', all tests are taken directly.
    *
    * @param input An association list of input test specifications.
-   * @param expected A association list of test specifications
-   *     with expected values.
+   * @param expected A association list of test specifications with expected
+   *     values.
    * @param exclude A list of tests to be excluded.
    * @return Done.
    */
