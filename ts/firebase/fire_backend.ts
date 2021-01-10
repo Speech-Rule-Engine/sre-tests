@@ -30,7 +30,7 @@ import * as FU from './fire_util';
  * Inits the firebase communication
  *
  * @param {string} credentials File with credentials.
- * @param {string = FC.NemethUrl} url URL of the firebase.
+ * @param {string} url URL of the firebase.
  */
 export function initFirebase(
   credentials: string, url: string = FC.NemethUrl) {
@@ -47,7 +47,7 @@ export function initFirebase(
  *
  * @param {any} db The firestore.
  * @param {string} file The test file to upload.
- * @param {string = FC.TestsCollection} collection The collection name.
+ * @param {string} collection The collection name.
  */
 export async function uploadTest(db: any, file: string,
   collection: string = FC.TestsCollection) {

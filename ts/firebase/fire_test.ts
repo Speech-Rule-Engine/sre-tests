@@ -32,9 +32,10 @@ export class FireTest {
   private preparedTests: JsonTest[] = [];
   private _data: JsonTests;
 
-  public constructor(public db: any, public collection: string, public doc: string,
-              public getTest: () => JsonTest,
-              public setTest: (test: JsonTest) => void) {
+  public constructor(public db: any, public collection: string,
+                     public doc: string,
+                     public getTest: () => JsonTest,
+                     public setTest: (test: JsonTest) => void) {
   }
 
   public getData() {

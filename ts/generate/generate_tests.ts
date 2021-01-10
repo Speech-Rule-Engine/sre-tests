@@ -146,7 +146,7 @@ export function transformTestsSource(file: string,
   TestUtil.saveJson(file, transformTests(json, transformers));
 }
 
-/** **********************************************************/
+/* ********************************************************** */
 /*
  * Test generation for the PreTeXt project.
  *
@@ -154,7 +154,7 @@ export function transformTestsSource(file: string,
  *           cleaned by combining duplicates and collating reference
  *           urls. Possibly split into different files.
  */
-/** **********************************************************/
+/* ********************************************************** */
 
 /**
  * @param file

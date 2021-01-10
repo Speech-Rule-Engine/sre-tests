@@ -83,7 +83,7 @@ module.exports = {
         }
       }
     ],
-    "@typescript-eslint/member-ordering": "error",
+    "@typescript-eslint/member-ordering": "error", // Make this more precise!
     "@typescript-eslint/prefer-namespace-keyword": "error",
     "@typescript-eslint/quotes": [
       "error",
