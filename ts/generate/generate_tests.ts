@@ -301,7 +301,6 @@ function splitOffBySemantics(
  */
 function saveRenamedTests(
   tests: tu.JsonTests, prefix: string, dir: string = '/tmp') {
-  console.log(prefix);
   let result: tu.JsonTests = {};
   let name = tu.TestUtil.capitalize(prefix);
   let capBase = tu.TestUtil.capitalize(basename);
