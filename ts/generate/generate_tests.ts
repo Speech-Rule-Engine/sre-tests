@@ -23,6 +23,7 @@ import * as tu from '../base/test_util';
 import * as sret from '../typings/sre';
 import {Transformer} from './transformers';
 import {addActual} from './fill_tests';
+import * as TestFactory from '../classes/test_factory';
 
 /* ********************************************************* */
 /*
@@ -174,9 +175,40 @@ export function transformPretextSource(file: string, name: string) {
 }
 
 /**
+ * Adds a references from the full PreTeXt document to a partial file.
+ * @param {string} origFile The partial filename wrt. expected directory.
+ * @param {string} refFile The path to the reference file.
+ */
+export function addPretextReferences(origFile: string, refFile: string) {
+  let ref = tu.TestUtil.loadJson(refFile) as tu.JsonTest[];
+  let refTests = cleanPretextSource(ref);
+  let streeRefs: tu.JsonTests = {};
+  Object.entries(refTests).forEach(
+    ([_x, y]) => streeRefs[y.stree] = y.reference);
+  let orig = TestFactory.get(origFile);
+  orig.prepare();
+  addPretextReference(orig.inputTests, streeRefs);
+  tu.TestUtil.saveJson(orig['baseFile'], orig.baseTests);
+}
+
+function addPretextReference(orig: tu.JsonTest[], ref: tu.JsonTests) {
+  for (let test of orig) {
+    let stree = sre.Semantic.getTreeFromString(
+      sre.Enrich.prepareMmlString(test.input)).xml().toString();
+    let reference = ref[stree];
+    console.log(reference);
+    if (reference) {
+      test.reference = reference;
+    }
+    delete test.expected;
+    delete test.name;
+  }
+}
+
+/**
  * @param json
  */
-function cleanPretextSource(json: tu.JsonTest[]) {
+function cleanPretextSource(json: tu.JsonTest[]): tu.JsonTests {
   let count = 0;
   let result: tu.JsonTests = {};
   let tex = new Map();
