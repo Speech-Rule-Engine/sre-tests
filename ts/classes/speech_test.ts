@@ -19,6 +19,7 @@
  */
 
 import {sre} from '../base/test_external';
+import {TestUtil} from '../base/test_util';
 import {AbstractExamples} from './abstract_examples';
 
 export class SpeechTest extends AbstractExamples {
@@ -70,7 +71,7 @@ export class SpeechTest extends AbstractExamples {
     let map: {[key: string]: string} = {'default': 'verbose',
                                         'sbrief': 'superbrief'};
     let newStyle = map[style] || style;
-    return newStyle.charAt(0).toUpperCase() + newStyle.slice(1);
+    return TestUtil.capitalize(newStyle);
   }
 
   /**
@@ -83,6 +84,9 @@ export class SpeechTest extends AbstractExamples {
     return '<td>' + entry + '</td>';
   }
 
+  /**
+   * @class
+   */
   public constructor() {
     super();
     this.style = sre.DynamicCstr.DEFAULT_VALUES[sre.DynamicCstr.Axis.STYLE];

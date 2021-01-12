@@ -79,7 +79,9 @@ function setTest(test: JsonTest) {
   (field.ip as HTMLTextAreaElement).value =
     backtransformer().via(test.expected as string);
   (field.ip as HTMLTextAreaElement).focus();
-  setReferences(test.reference);
+  if (test.reference) {
+    setReferences(test.reference);
+  }
   setStatus(test[FC.Interaction]);
   setFeedback(test[FC.FeedbackStatus]);
   if (MathJax.typeset) {
