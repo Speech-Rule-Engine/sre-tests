@@ -301,21 +301,22 @@ function splitOffBySemantics(
  */
 function saveRenamedTests(
   tests: tu.JsonTests, prefix: string, dir: string = '/tmp') {
+  console.log(prefix);
   let result: tu.JsonTests = {};
-  let name = tu.TestUtil.capitalize(prefix) + '_';
+  let name = tu.TestUtil.capitalize(prefix);
   let capBase = tu.TestUtil.capitalize(basename);
   let count = 0;
   for (let test of Object.values(tests)) {
     if (removeStree) {
       delete test.stree;
     }
-    result[name + count++] = test;
+    result[name + '_' + count++] = test;
   }
   //
   let json: tu.JsonFile = {
     'factory': 'speech',
     'name': `PreTeXt${capBase}${name}Tests`,
-    'information': `PreTeXt document ${capBase}.`,
+    'information': `PreTeXt ${capBase} document ${name} expressions.`,
     'locale': 'nemeth',
     'domain': 'default',
     'style': 'default',
