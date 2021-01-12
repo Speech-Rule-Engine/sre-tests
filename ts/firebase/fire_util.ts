@@ -153,7 +153,7 @@ export async function updateCollection(
       path: path
     });
     // We assume single entries in symbol sets will not change.
-    if (pathsB[path] && path.match(/^nemeth\/symbols/)) {
+    if (pathsB[path] && !path.match(/^nemeth\/rules/)) {
       continue;
     }
     let dataA = await downloadData(db, collA, path);

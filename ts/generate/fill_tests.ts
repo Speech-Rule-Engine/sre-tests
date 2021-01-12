@@ -39,7 +39,8 @@ function runTests(
   try {
     tests.setUpTest();
   } catch (e) {}
-  let base = tests.baseTests.tests as JsonTests;
+  let base = (tests.baseTests.tests ?
+    tests.baseTests.tests : tests.jsonTests.tests) as JsonTests;
   let keys = flag === TestFlag.MISSING ? tests.warn : Object.keys(base);
   for (let key of keys) {
     if (key.match(/_comment/)) {
@@ -77,7 +78,15 @@ function add(expected: string, flag: TestFlag, dryrun: boolean) {
   }
   let file = tests['jsonFile'];
   let oldJson: JsonFile = TestUtil.loadJson(file);
-  Object.assign(oldJson.tests, result);
+  let base = oldJson['base'];
+  if (base) {
+    Object.assign(oldJson.tests, result);
+  } else {
+    let oldTests = oldJson.tests as JsonTests;
+    for (let key of Object.keys(result)) {
+      Object.assign(oldTests[key], result[key]);
+    }
+  }
   TestUtil.saveJson(file, oldJson);
 }
 

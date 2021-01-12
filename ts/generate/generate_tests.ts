@@ -19,9 +19,10 @@
  */
 
 import {sre} from '../base/test_external';
-import {JsonTest, JsonTests, TestUtil} from '../base/test_util';
+import * as tu from '../base/test_util';
 import * as sret from '../typings/sre';
 import {Transformer} from './transformers';
+import {addActual} from './fill_tests';
 
 /* ********************************************************* */
 /*
@@ -65,7 +66,7 @@ import {Transformer} from './transformers';
  * @return {JsonTests} The newly transformed JSON.
  */
 export function transformInput(
-  json: JsonTest, field: string = 'input'): JsonTests {
+  json: tu.JsonTest, field: string = 'input'): tu.JsonTests {
   let result: {[name: string]: {}} = {};
   for (let [name, expressions] of Object.entries(json)) {
     let count = 0;
@@ -100,7 +101,7 @@ export function generateTestRequire(
   let file = require(input);
   let oldJson = file[Object.keys(file)[0]];
   let newJson = transformInput(oldJson, field);
-  TestUtil.saveJson(output, newJson);
+  tu.TestUtil.saveJson(output, newJson);
 }
 
 /**
@@ -112,9 +113,9 @@ export function generateTestRequire(
  */
 export function generateTestJson(input: string, output: string,
   field: string = 'input') {
-  let oldJson = TestUtil.loadJson(input);
+  let oldJson = tu.TestUtil.loadJson(input);
   let newJson = transformInput(oldJson, field);
-  TestUtil.saveJson(output, newJson);
+  tu.TestUtil.saveJson(output, newJson);
 }
 
 /**
@@ -124,8 +125,8 @@ export function generateTestJson(input: string, output: string,
  * @param {Transformer[]} transformers List of transformers.
  * @return {JsonTest} The updated json test.
  */
-export function transformTests(json: JsonTest,
-  transformers: Transformer[]): JsonTest {
+export function transformTests(json: tu.JsonTest,
+  transformers: Transformer[]): tu.JsonTest {
   for (let value of Object.values(json)) {
     for (let transformer of transformers) {
       value[transformer.dst] = transformer.via(value[transformer.src]);
@@ -142,8 +143,8 @@ export function transformTests(json: JsonTest,
  */
 export function transformTestsSource(file: string,
   transformers: Transformer[]) {
-  let json = TestUtil.loadJson(file);
-  TestUtil.saveJson(file, transformTests(json, transformers));
+  let json = tu.TestUtil.loadJson(file);
+  tu.TestUtil.saveJson(file, transformTests(json, transformers));
 }
 
 /* ********************************************************** */
@@ -156,23 +157,28 @@ export function transformTestsSource(file: string,
  */
 /* ********************************************************** */
 
+// TODO: Convert this into class or namespace.
+export let basename: string = '';
+export let removeStree: boolean = true;
+
 /**
  * @param file
  */
-export function transformPretextSource(file: string) {
-  let json = TestUtil.loadJson(file) as JsonTest[];
+export function transformPretextSource(file: string, name: string) {
+  basename = name;
+  let json = tu.TestUtil.loadJson(file) as tu.JsonTest[];
   let tests = cleanPretextSource(json);
   let allTests = splitPretextSource(tests);
-  saveRenamedTests(allTests, 'test');
+  saveRenamedTests(allTests, 'rest');
   return allTests;
 }
 
 /**
  * @param json
  */
-function cleanPretextSource(json: JsonTest[]) {
+function cleanPretextSource(json: tu.JsonTest[]) {
   let count = 0;
-  let result: JsonTests = {};
+  let result: tu.JsonTests = {};
   let tex = new Map();
   let mml = new Map();
   let stree = new Map();
@@ -199,10 +205,11 @@ function cleanPretextSource(json: JsonTest[]) {
   return result;
 }
 
+// TODO: Cleanup.
 /**
  * @param tests
  */
-function splitPretextSource(tests: JsonTests) {
+function splitPretextSource(tests: tu.JsonTests) {
   let numbers = splitOffBySemantics(
     tests, (x: sret.SemanticNode) =>
       x.type === 'number' || (x.type === 'prefixop' && x.role === 'negative'));
@@ -274,8 +281,8 @@ function splitPretextSource(tests: JsonTests) {
  * @param pred
  */
 function splitOffBySemantics(
-  tests: JsonTests, pred: (x: sret.SemanticNode) => boolean): JsonTests {
-  let result: JsonTests = {};
+  tests: tu.JsonTests, pred: (x: sret.SemanticNode) => boolean): tu.JsonTests {
+  let result: tu.JsonTests = {};
   for (let [key, test] of Object.entries(tests)) {
     let stree = sre.SemanticTree.fromXml(
       sre.DomUtil.parseInput(test.stree)).root;
@@ -293,12 +300,28 @@ function splitOffBySemantics(
  * @param dir
  */
 function saveRenamedTests(
-  tests: JsonTests, prefix: string, dir: string = '/tmp') {
-  let result: JsonTests = {};
-  let name = TestUtil.capitalize(prefix) + '_';
+  tests: tu.JsonTests, prefix: string, dir: string = '/tmp') {
+  let result: tu.JsonTests = {};
+  let name = tu.TestUtil.capitalize(prefix) + '_';
+  let capBase = tu.TestUtil.capitalize(basename);
   let count = 0;
   for (let test of Object.values(tests)) {
+    if (removeStree) {
+      delete test.stree;
+    }
     result[name + count++] = test;
   }
-  TestUtil.saveJson(`${dir}/${prefix}.json`, result);
+  //
+  let json: tu.JsonFile = {
+    'factory': 'speech',
+    'name': `PreTeXt${capBase}${name}Tests`,
+    'information': `PreTeXt document ${capBase}.`,
+    'locale': 'nemeth',
+    'domain': 'default',
+    'style': 'default',
+    'modality': 'braille',
+    'tests': result
+  };
+  tu.TestUtil.saveJson(`${dir}/${basename}_${prefix}.json`, json);
+  addActual(`${dir}/${basename}_${prefix}.json`);
 }

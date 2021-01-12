@@ -239,14 +239,18 @@ div.btns {
     border: 1px solid #B1DF84 ;
 }
 
-select#access {
+.access {
     background-color: #B1DF84 ;
 }
 
-select#access select {
+.access select {
     display: none;
 }
 
-select#access > option {
+.access > option {
+    padding: 5px;
+}
+
+a.reflink {
     padding: 5px;
 }

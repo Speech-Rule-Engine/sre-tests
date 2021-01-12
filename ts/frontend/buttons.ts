@@ -77,8 +77,41 @@ class Buttons {
 
 }
 
+class Access {
+
+  public anchor = Buttons.createElement('btn center', 'access');
+  private select: HTMLSelectElement = document.createElement('select');
+  private test: FireTest;
+
+  public constructor() {
+    this.select.id = 'access';
+    this.select.classList.add('access');
+    this.anchor.appendChild(this.select);
+  }
+
+  public init(test: FireTest) {
+    this.test = test;
+    this.select.addEventListener('change', (e: any) => {
+      this.test.goTest(e.target.value);
+    });
+    for (let name of this.test.order) {
+      let option = document.createElement('option');
+      option.setAttribute('value', name);
+      option.classList.add('access');
+      option.textContent = name;
+      this.select.appendChild(option);
+    }
+    this.update();
+  }
+
+  public update() {
+    this.select.value = this.test.currentTest().name;
+  }
+}
+
 export let forwardBtn = new Buttons('next');
 export let backwardBtn = new Buttons('previous');
+export let access = new Access();
 
 /**
  * @param button
@@ -109,21 +142,8 @@ function addListeners(test: FireTest) {
 /**
  * @param test
  */
-function addAccess(test: FireTest) {
-  let access = Buttons.createElement('btn center', 'access');
-  let select = document.createElement('select');
-  select.id = 'access';
-  select.addEventListener('change', (e: any) => {
-    test.goTest(e.target.value);
-  });
-  access.appendChild(select);
-  for (let name of test.order) {
-    let option = document.createElement('option');
-    option.setAttribute('value', name);
-    option.textContent = name;
-    select.appendChild(option);
-  }
-  return access;
+export function updateAccess() {
+  access.update();
 }
 
 /**
@@ -136,7 +156,8 @@ export function init(test: FireTest) {
   document.body.appendChild(div);
   div.appendChild(backwardBtn.span);
   backwardBtn.show();
-  div.appendChild(addAccess(test));
+  access.init(test);
+  div.appendChild(access.anchor);
   let up = Buttons.createElement('btn center', 'selection');
   up.textContent = 'Selection';
   up.setAttribute('tabindex', '0');

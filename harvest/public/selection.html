@@ -10,47 +10,6 @@
 
 <span class="title">Document Selection</span>
 
-<div class="converter" id="documentstable">
-<div class="section">
-Select a document to work on:
-</div>
-<table id="documents">
-  <tr class="heading">
-    <th>Name</th>
-    <th>Information</th>
-    <th>Path</th>
-  </tr>
-</table>
-</div>
-<hr width="100%" color="#B1DF84" size="6">
-<div class="converter" id="characterstable">
-<div class="section">
-Select a character set to work on:
-</div>
-<table id="characters">
-  <tr class="heading">
-    <th>Name</th>
-    <th>Information</th>
-    <th>Path</th>
-  </tr>
-</table>
-</div>
-
-</div>
-<hr width="100%" color="#B1DF84" size="6">
-<div class="converter" id="alphabetstable">
-<div class="section">
-Select an alphabet to work on:
-</div>
-<table id="alphabets">
-  <tr class="heading">
-    <th>Name</th>
-    <th>Information</th>
-    <th>Path</th>
-  </tr>
-</table>
-</div>
-</div>
     
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="/__/firebase/8.1.1/firebase-app.js"></script>
@@ -66,9 +25,10 @@ Select an alphabet to work on:
 <script src="./nemeth-project.js"></script>
 <script>
 window.addEventListener('load', Nemeth.User.init);
-Nemeth.Select.addDocuments(document.getElementById('documents'), 'nemeth/rules');
-Nemeth.Select.addDocuments(document.getElementById('characters'), 'nemeth/symbols/default_characters');
-Nemeth.Select.addDocuments(document.getElementById('alphabets'), 'nemeth/symbols/default_alphabet');
+Nemeth.Select.addSection('tests', 'nemeth/rules', 'a test set', document.body);
+Nemeth.Select.addSection('aata', 'nemeth/doc_aata', 'a set for the AATA document', document.body);
+Nemeth.Select.addSection('characters', 'nemeth/symbols/default_characters', 'a character set', document.body);
+Nemeth.Select.addSection('alphabets', 'nemeth/symbols/default_alphabet', 'an alphabet', document.body);
 </script>
 </body>
 </html>

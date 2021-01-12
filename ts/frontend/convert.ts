@@ -22,7 +22,7 @@ import {JsonTest} from '../base/test_util';
 import * as FC from '../firebase/fire_constants';
 import {FireTest} from '../firebase/fire_test';
 import * as BT  from '../generate/braille_transformer';
-import {init as initButtons} from './buttons';
+import {init as initButtons, updateAccess} from './buttons';
 import * as LU from './local_util';
 
 let transformers: Map<string, BT.BrailleTransformer> =
@@ -79,11 +79,66 @@ function setTest(test: JsonTest) {
   (field.ip as HTMLTextAreaElement).value =
     backtransformer().via(test.expected as string);
   (field.ip as HTMLTextAreaElement).focus();
+  setReferences(test.reference);
   setStatus(test[FC.Interaction]);
   setFeedback(test[FC.FeedbackStatus]);
   if (MathJax.typeset) {
     MathJax.typeset();
   }
+  updateAccess();
+}
+
+function setReferences(references: {[id: string]: string}) {
+  field.refname.innerHTML = '';
+  field.references.innerHTML = '';
+  let keys = Object.keys(references).sort((x, y) => {
+    let numX = parseInt(x.split('-')[1], 10);
+    let numY = parseInt(y.split('-')[1], 10);
+    return numX < numY ? -1 : (numX > numY ? 1 : 0);
+  });
+  let size = keys.length;
+  if (!size) {
+    return;
+  }
+  field.refname.innerHTML = 'References:';
+  let links = [];
+  let makeRef = size > 10 ? optionReference : linkReference;
+  for (let id of keys) {
+    let url = references[id];
+    links.push(makeRef(id, url));
+  }
+  if (size <= 10) {
+    field.references.append(...links);
+    return;
+  }
+  let select = document.createElement('select');
+  select.setAttribute('onChange',
+                      'window.open(this.value, "_blank")');
+  select.classList.add('access');
+  let option = document.createElement('option');
+  option.setAttribute('disabled', '');
+  option.setAttribute('selected', '');
+  option.textContent = 'Select:';
+  select.appendChild(option);
+  select.append(...links);
+  field.references.appendChild(select);
+}
+
+function linkReference(id: string, url: string) {
+  let link = document.createElement('a');
+  link.classList.add('reflink');
+  link.setAttribute('href', url);
+  link.setAttribute('target', '_blank');
+  link.textContent = id;
+  return link;
+}
+
+function optionReference(id: string, url: string) {
+  let option = document.createElement('option');
+  option.classList.add('access');
+  option.textContent = id;
+  option.value = url;
+  return option;
 }
 
 /**
@@ -170,8 +225,10 @@ async function initFile(collection: string, file: string) {
   field.statuscolor = document.getElementById('statuscolor');
   field.statusvalue = document.getElementById('statusvalue');
   field.feedback = document.getElementById('feedback');
-  fireTest.setTest(fireTest.currentTest());
+  field.refname = document.getElementById('refname');
+  field.references = document.getElementById('references');
   initButtons(fireTest);
+  fireTest.setTest(fireTest.currentTest());
 }
 
 /**
@@ -263,4 +320,3 @@ export function changeFeedback() {
   fireTest.currentTest()[FC.FeedbackStatus] = value;
   fireTest.saveFeedback(value);
 }
-
