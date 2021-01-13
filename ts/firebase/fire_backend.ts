@@ -20,7 +20,7 @@
  */
 
 import admin = require('firebase-admin');
-import {JsonTests} from '../base/test_util';
+import {JsonTests, TestUtil} from '../base/test_util';
 import {AbstractJsonTest} from '../classes/abstract_test';
 import {get} from '../classes/test_factory';
 import * as FC from './fire_constants';
@@ -99,6 +99,23 @@ export async function updateField(
     for (let path of Object.keys(paths)) {
       FU.updateField(db, user, path, field, value);
     }
+  }
+}
+
+export async function backup(db: any, dir: string = '/tmp/backup') {
+  let users = await getUsers();
+  for (let user of users) {
+    await downloadUser(db, user, dir);
+  }
+}
+
+export async function downloadUser(
+  db: any, user: string, dir: string = '/tmp/backup') {
+  let paths = await FU.getPaths(db, user, FC.NemethCollection);
+  TestUtil.saveJson(dir + '/paths.json', paths);
+  for (let path of paths) {
+    let data = FU.downloadData(db, user, path);
+    TestUtil.saveJson(dir + '/' + path, data);
   }
 }
 
