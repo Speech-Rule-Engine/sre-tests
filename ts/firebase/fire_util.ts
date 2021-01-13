@@ -193,10 +193,42 @@ export async function updateField(
   db: any, collection: string, path: string, field: string, value: any) {
   let data = await downloadData(db, collection, path);
   for (let key of data.order) {
-    await updateData(db, collection, path, value, ['tests', key, field]);
+    await updateData(db, collection, path, value,
+                     ['tests', key, field]);
   }
 }
 
+/**
+ * Restores a data field for all test entries in collection B from collection A
+ * for a given document.
+ *
+ * @param {any} db The databae.
+ * @param {string} collA Source collection.
+ * @param {string} collB Target collection.
+ * @param {string} doc The document to update. This has to be the complete path.
+ * @param {string} field The field name.
+ */
+export async function restoreField(
+  db: any, collA: string, collB: string, doc: string, field: string) {
+  let dataA = await downloadData(db, collA, doc);
+  let dataB = await downloadData(db, collB, doc);
+  if (!dataB) {
+    return;
+  }
+  for (let key of dataB.order) {
+    let testA = dataA.tests[key];
+    if (!testA) {
+      continue;
+    }
+    let value = testA[field];
+    if (typeof value === 'undefined') {
+      continue;
+    }
+    await updateData(db, collB, doc, value, ['tests', key, field]);
+  }
+}
+
+// m-3792 m-4194 m-4526
 /**
  * Sets the status of all tests to new.
  *

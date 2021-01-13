@@ -79,9 +79,7 @@ function setTest(test: JsonTest) {
   (field.ip as HTMLTextAreaElement).value =
     backtransformer().via(test.expected as string);
   (field.ip as HTMLTextAreaElement).focus();
-  if (test.reference) {
-    setReferences(test.reference);
-  }
+  setReferences(test.reference);
   setStatus(test[FC.Interaction]);
   setFeedback(test[FC.FeedbackStatus]);
   if (MathJax.typeset) {
@@ -93,6 +91,9 @@ function setTest(test: JsonTest) {
 function setReferences(references: {[id: string]: string}) {
   field.refname.innerHTML = '';
   field.references.innerHTML = '';
+  if (!references) {
+    return;
+  }
   let keys = Object.keys(references).sort((x, y) => {
     let numX = parseInt(x.split('-')[1], 10);
     let numY = parseInt(y.split('-')[1], 10);

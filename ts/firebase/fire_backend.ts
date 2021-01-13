@@ -102,20 +102,44 @@ export async function updateField(
   }
 }
 
+/**
+ * This restores a field value from tests for all users. Be careful!
+ *
+ * @param db The database
+ * @param doc Document with full path.
+ * @param field The field torestore.
+ */
+export async function restoreField(
+  db: any, doc: string, field: string) {
+  let users = await getUsers();
+  for (let user of users) {
+    console.log(user);
+    await FU.restoreField(db, FC.TestsCollection, user, doc, field);
+  }
+  console.log('Done restoring fields');
+}
+
 export async function backup(db: any, dir: string = '/tmp/backup') {
   let users = await getUsers();
   for (let user of users) {
     await downloadUser(db, user, dir);
   }
+  await downloadUser(db, FC.TestsCollection, dir);
+  console.log('Firebase backup complete!');
 }
 
 export async function downloadUser(
   db: any, user: string, dir: string = '/tmp/backup') {
   let paths = await FU.getPaths(db, user, FC.NemethCollection);
-  TestUtil.saveJson(dir + '/paths.json', paths);
-  for (let path of paths) {
-    let data = FU.downloadData(db, user, path);
-    TestUtil.saveJson(dir + '/' + path, data);
+  TestUtil.saveJson(`${dir}/${user}/paths.json`, paths);
+  if (!paths) {
+    return;
+  }
+  for (let path of Object.keys(paths)) {
+    let data = await FU.downloadData(db, user, path);
+    if (data) {
+      TestUtil.saveJson(`${dir}/${user}/` + path, data);
+    }
   }
 }
 
