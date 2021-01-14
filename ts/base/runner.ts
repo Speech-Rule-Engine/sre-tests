@@ -115,15 +115,7 @@ export class TestRunner {
    * @param testcase The Json test object.
    */
   public executeJsonTests(testcase: AbstractJsonTest) {
-    try {
-      testcase.prepare();
-    } catch (e) {
-      if (e.message.match(/Bad filename/)) {
-        this.status_ = Results.FAIL;
-        this.failedTests_.push(e.message + ' ' + e.value);
-        return;
-      }
-    }
+    this.prepareJsonTest(testcase);
     this.outputLine(1, 'Running ' + testcase.information);
     if (this.warn && testcase.warn.length) {
       for (let warn of testcase.warn) {
@@ -260,6 +252,37 @@ export class TestRunner {
       priority <= 1 ? '\r' + output + '\n' : '\r' + output;
     this.output(priority, output);
     this.outputQueue = [];
+  }
+
+  /**
+   * Test case runner.
+   */
+  public queryJsonTests(query: (x: AbstractJsonTest) => any): any[] {
+    let result = [];
+    for (let i = 0, test; test = this.testQueue_[i]; i++) {
+      if (test instanceof AbstractJsonTest) {
+        this.prepareJsonTest(test);
+        result.push(query(test));
+      }
+    }
+    return result;
+  }
+
+  /**
+   * Prepares a Json test to be run.
+   *
+   * @param test The Json test object.
+   */
+  private prepareJsonTest(test: AbstractJsonTest) {
+    try {
+      test.prepare();
+    } catch (e) {
+      if (e.message.match(/Bad filename/)) {
+        this.status_ = Results.FAIL;
+        this.failedTests_.push(e.message + ' ' + e.value);
+        return;
+      }
+    }
   }
 
   /**

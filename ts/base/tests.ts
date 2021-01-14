@@ -60,40 +60,6 @@ export class Tests {
   public runner: TestRunner = new TestRunner();
 
   /**
-   * @class
-   */
-  public constructor() {
-    Tests.environmentVars.forEach(x => this.getEnvironment(x));
-    let file = this.environment['FILE'] as string[];
-    if (file) {
-      let names: {[key: string]: Function} = {};
-      Tests.allTests.map(x => names[x.name] = x);
-      this.testList = file.map((x: string) =>  names[x]);
-    }
-    let locale = this.environment['LOCALE'] as string[];
-    if (locale && locale[0] === 'Base') {
-      this.testList = this.testList.concat(BaseTests.testList);
-    }
-    if (!this.testList.length) {
-      this.testList = this.testList.concat(Tests.allTests);
-    }
-    // This is set via string fields to please the linter!
-    this.runner.warn = this.environment['WARN'] as number;
-    this.runner.verbose = this.environment['VERBOSE'] as number;
-
-    if (this.environment['JSON']) {
-      let files = (
-        this.environment['FILES'] || this.getFiles()) as string[];
-      for (let key of files) {
-        let test = TestFactory.get(key);
-        if (test) {
-          this.runner.registerTest(test);
-        }
-      }
-    }
-  }
-
-  /**
    * Load all json files from the expected directory
    *
    * @return A list of all json file path names.
@@ -147,6 +113,40 @@ export class Tests {
         files.filter(x => x.match(RegExp(start + fil + end))));
     }
     return result;
+  }
+
+  /**
+   * @class
+   */
+  public constructor() {
+    Tests.environmentVars.forEach(x => this.getEnvironment(x));
+    let file = this.environment['FILE'] as string[];
+    if (file) {
+      let names: {[key: string]: Function} = {};
+      Tests.allTests.map(x => names[x.name] = x);
+      this.testList = file.map((x: string) =>  names[x]);
+    }
+    let locale = this.environment['LOCALE'] as string[];
+    if (locale && locale[0] === 'Base') {
+      this.testList = this.testList.concat(BaseTests.testList);
+    }
+    if (!this.testList.length) {
+      this.testList = this.testList.concat(Tests.allTests);
+    }
+    // This is set via string fields to please the linter!
+    this.runner.warn = this.environment['WARN'] as number;
+    this.runner.verbose = this.environment['VERBOSE'] as number;
+
+    if (this.environment['JSON']) {
+      let files = (
+        this.environment['FILES'] || this.getFiles()) as string[];
+      for (let key of files) {
+        let test = TestFactory.get(key);
+        if (test) {
+          this.runner.registerTest(test);
+        }
+      }
+    }
   }
 
   /**

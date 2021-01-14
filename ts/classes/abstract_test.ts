@@ -104,6 +104,7 @@ export abstract class AbstractJsonTest extends AbstractTest {
    */
   public information: string = '';
 
+  private prepared: boolean = false;
   private jsonFile: string = '';
   private baseFile: string = '';
 
@@ -118,9 +119,13 @@ export abstract class AbstractJsonTest extends AbstractTest {
   }
 
   /**
-   * Prepares the individual tests of this object.
+   * Prepares the individual tests of this object. Preparation is distructive
+   * and should only be carried out once.
    */
   public prepare() {
+    if (this.prepared) {
+      return;
+    }
     this.jsonTests = this.jsonTests || (
       this.jsonFile ? tu.TestUtil.loadJson(this.jsonFile) : {});
     this.information = this.jsonTests.information || 'Unnamed tests';
@@ -133,6 +138,7 @@ export abstract class AbstractJsonTest extends AbstractTest {
     let tests = tu.TestUtil.combineTests(input, output, exclude);
     this.inputTests = tests[0];
     this.warn = tests[1];
+    this.prepared = true;
   }
 
   /**

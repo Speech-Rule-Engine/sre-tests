@@ -18,7 +18,8 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {JsonFile, JsonTests, TestUtil} from '../base/test_util';
+import {Tests} from '../base/tests';
+import {JsonFile, JsonTests, TestPath, TestUtil} from '../base/test_util';
 import {AbstractJsonTest} from '../classes/abstract_test';
 import {get as factoryget} from '../classes/test_factory';
 
@@ -77,7 +78,8 @@ function add(expected: string, flag: TestFlag, dryrun: boolean) {
     return;
   }
   let file = tests['jsonFile'];
-  let oldJson: JsonFile = TestUtil.loadJson(file);
+  let filename = TestUtil.fileExists(file, TestPath.EXPECTED);
+  let oldJson: JsonFile = TestUtil.loadJson(filename);
   let base = oldJson['base'];
   if (base) {
     Object.assign(oldJson.tests, result);
@@ -87,7 +89,7 @@ function add(expected: string, flag: TestFlag, dryrun: boolean) {
       Object.assign(oldTests[key], result[key]);
     }
   }
-  TestUtil.saveJson(file, oldJson);
+  TestUtil.saveJson(filename, oldJson);
 }
 
 /**
@@ -121,4 +123,19 @@ export function addActual(expected: string, dryrun: boolean = false) {
  */
 export function addFailed(expected: string, dryrun: boolean = false) {
   add(expected, TestFlag.FAILED, dryrun);
+}
+
+/**
+ * Shows the result for all missing tests. This is to inspect before adding them
+ * automatically using, for example, `addMissing`.
+ */
+export function showMissing() {
+  let tests = new Tests();
+  tests.runner
+    .queryJsonTests(x => [x, x.warn])
+    .filter(([_x, y]) => y.length)
+    .map(([x]) => {
+      console.log(x.jsonFile);
+      addMissing(x.jsonFile, true);
+    });
 }
