@@ -128,12 +128,13 @@ export function addFailed(expected: string, dryrun: boolean = false) {
 /**
  * Shows the result for all missing tests. This is to inspect before adding them
  * automatically using, for example, `addMissing`.
+ * @param regexp A regular expression to filter output.
  */
-export function showMissing() {
+export function showMissing(regexp: RegExp = /./) {
   let tests = new Tests();
   tests.runner
     .queryJsonTests(x => [x, x.warn])
-    .filter(([_x, y]) => y.length)
+    .filter(([x, y]) => (y.length && x.jsonFile.match(regexp)))
     .map(([x]) => {
       console.log(x.jsonFile);
       addMissing(x.jsonFile, true);
