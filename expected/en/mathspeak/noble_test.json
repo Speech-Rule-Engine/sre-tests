@@ -45,22 +45,22 @@
       "expected": "L p'ren negative 4 R p'ren times 3 equals negative 12"
     },
     "Sample_5_default": {
-      "expected": "negative 12 division sign 3 equals negative 4"
+      "expected": "negative 12 divided by 3 equals negative 4"
     },
     "Sample_5_brief": {
-      "expected": "negative 12 division sign 3 equals negative 4"
+      "expected": "negative 12 divided by 3 equals negative 4"
     },
     "Sample_5_sbrief": {
-      "expected": "negative 12 division sign 3 equals negative 4"
+      "expected": "negative 12 divided by 3 equals negative 4"
     },
     "Sample_6_default": {
-      "expected": "negative 12 division sign left parenthesis negative 4 right parenthesis equals 3"
+      "expected": "negative 12 divided by left parenthesis negative 4 right parenthesis equals 3"
     },
     "Sample_6_brief": {
-      "expected": "negative 12 division sign left p'ren negative 4 right p'ren equals 3"
+      "expected": "negative 12 divided by left p'ren negative 4 right p'ren equals 3"
     },
     "Sample_6_sbrief": {
-      "expected": "negative 12 division sign L p'ren negative 4 R p'ren equals 3"
+      "expected": "negative 12 divided by L p'ren negative 4 R p'ren equals 3"
     },
     "Sample_7_default": {
       "expected": "6 times 5"
@@ -549,13 +549,13 @@
       "expected": "limit Underscript n R arrow infinity Endscripts upper E L brace AbsoluteValue upper X Sub n Base minus upper X EndAbsoluteValue R brace equals upper E L brace limit Underscript n R arrow infinity Endscripts AbsoluteValue upper X Sub n Base minus upper X EndAbsoluteValue R brace equals 0 period"
     },
     "Sample_61_default": {
-      "expected": "StartLayout 1st Row 1st Column upper P Subscript mu comma sigma Baseline left brace upper Y greater than or equals l Subscript beta Baseline left parenthesis upper Y overbar Subscript n Baseline comma upper S Subscript n Baseline right parenthesis right brace equals upper P Subscript mu comma sigma Baseline left brace left parenthesis upper Y minus upper Y overbar Subscript n Baseline right parenthesis slash left parenthesis upper S dot left parenthesis 1 plus StartFraction 1 Over n EndFraction right parenthesis Superscript 1 slash 2 Baseline right parenthesis greater than or equals minus t Subscript beta Baseline left bracket n minus 1 right bracket right brace equals beta comma 2nd Row 1st Column Blank 2nd Column left parenthesis 1 right parenthesis EndLayout"
+      "expected": "StartLayout 1st Row 1st Column upper P Subscript mu comma sigma Baseline left brace upper Y greater than or equals l Subscript beta Baseline left parenthesis upper Y overbar Subscript n Baseline comma upper S Subscript n Baseline right parenthesis right brace equals upper P Subscript mu comma sigma Baseline left brace left parenthesis upper Y minus upper Y overbar Subscript n Baseline right parenthesis divided by left parenthesis upper S dot left parenthesis 1 plus StartFraction 1 Over n EndFraction right parenthesis Superscript 1 divided by 2 Baseline right parenthesis greater than or equals minus t Subscript beta Baseline left bracket n minus 1 right bracket right brace equals beta comma 2nd Row 1st Column Blank 2nd Column left parenthesis 1 right parenthesis EndLayout"
     },
     "Sample_61_brief": {
-      "expected": "StartLayout 1st Row 1st Column upper P Sub mu comma sigma Base left brace upper Y greater than or equals l Sub beta Base left p'ren upper Y overBar Sub n Base comma upper S Sub n Base right p'ren right brace equals upper P Sub mu comma sigma Base left brace left p'ren upper Y minus upper Y overBar Sub n Base right p'ren slash left p'ren upper S dot left p'ren 1 plus StartFrac 1 Over n EndFrac right p'ren Sup 1 slash 2 Base right p'ren greater than or equals minus t Sub beta Base left brack n minus 1 right brack right brace equals beta comma 2nd Row 1st Column Blank 2nd Column left p'ren 1 right p'ren EndLayout"
+      "expected": "StartLayout 1st Row 1st Column upper P Sub mu comma sigma Base left brace upper Y greater than or equals l Sub beta Base left p'ren upper Y overBar Sub n Base comma upper S Sub n Base right p'ren right brace equals upper P Sub mu comma sigma Base left brace left p'ren upper Y minus upper Y overBar Sub n Base right p'ren divided by left p'ren upper S dot left p'ren 1 plus StartFrac 1 Over n EndFrac right p'ren Sup 1 divided by 2 Base right p'ren greater than or equals minus t Sub beta Base left brack n minus 1 right brack right brace equals beta comma 2nd Row 1st Column Blank 2nd Column left p'ren 1 right p'ren EndLayout"
     },
     "Sample_61_sbrief": {
-      "expected": "Layout 1st Row 1st Column upper P Sub mu comma sigma Base L brace upper Y greater than or equals l Sub beta Base L p'ren upper Y overBar Sub n Base comma upper S Sub n Base R p'ren R brace equals upper P Sub mu comma sigma Base L brace L p'ren upper Y minus upper Y overBar Sub n Base R p'ren slash L p'ren upper S dot L p'ren 1 plus Frac 1 Over n EndFrac R p'ren Sup 1 slash 2 Base R p'ren greater than or equals minus t Sub beta Base L brack n minus 1 R brack R brace equals beta comma 2nd Row 1st Column Blank 2nd Column L p'ren 1 R p'ren EndLayout"
+      "expected": "Layout 1st Row 1st Column upper P Sub mu comma sigma Base L brace upper Y greater than or equals l Sub beta Base L p'ren upper Y overBar Sub n Base comma upper S Sub n Base R p'ren R brace equals upper P Sub mu comma sigma Base L brace L p'ren upper Y minus upper Y overBar Sub n Base R p'ren divided by L p'ren upper S dot L p'ren 1 plus Frac 1 Over n EndFrac R p'ren Sup 1 divided by 2 Base R p'ren greater than or equals minus t Sub beta Base L brack n minus 1 R brack R brace equals beta comma 2nd Row 1st Column Blank 2nd Column L p'ren 1 R p'ren EndLayout"
     },
     "Sample_62_default": {
       "expected": "upper L equals Start 5 By 6 Matrix 1st Row 1st Column 1 2nd Column negative 1 3rd Column Blank 4th Column Blank 5th Column Blank 6th Column Blank 2nd Row 1st Column Blank 2nd Column 1 3rd Column negative 1 4th Column Blank 5th Column 0 6th Column Blank 3rd Row 1st Column Blank 2nd Column Blank 3rd Column Blank 4th Column Blank 5th Column Blank 6th Column Blank 4th Row 1st Column Blank 2nd Column 0 3rd Column Blank 4th Column Blank 5th Column Blank 6th Column Blank 5th Row 1st Column Blank 2nd Column Blank 3rd Column Blank 4th Column Blank 5th Column 1 6th Column negative 1 EndMatrix period"
@@ -567,13 +567,13 @@
       "expected": "upper L equals 5 By 6 Matrix 1st Row 1st Column 1 2nd Column negative 1 3rd Column Blank 4th Column Blank 5th Column Blank 6th Column Blank 2nd Row 1st Column Blank 2nd Column 1 3rd Column negative 1 4th Column Blank 5th Column 0 6th Column Blank 3rd Row 1st Column Blank 2nd Column Blank 3rd Column Blank 4th Column Blank 5th Column Blank 6th Column Blank 4th Row 1st Column Blank 2nd Column 0 3rd Column Blank 4th Column Blank 5th Column Blank 6th Column Blank 5th Row 1st Column Blank 2nd Column Blank 3rd Column Blank 4th Column Blank 5th Column 1 6th Column negative 1 EndMatrix period"
     },
     "Sample_63_default": {
-      "expected": "StartRoot n EndRoot left bracket upper Y overbar Subscript n Baseline minus left parenthesis mu plus z Subscript beta Baseline sigma right parenthesis right bracket slash upper S Subscript n Baseline tilde StartFraction upper U plus StartRoot n EndRoot z Subscript 1 minus beta Baseline Over left parenthesis chi squared left bracket n minus 1 right bracket slash left parenthesis n minus 1 right parenthesis right parenthesis Superscript 1 slash 2 Baseline EndFraction tilde t left bracket n minus 1 semicolon StartRoot n EndRoot z Subscript 1 minus beta Baseline right bracket comma"
+      "expected": "StartRoot n EndRoot left bracket upper Y overbar Subscript n Baseline minus left parenthesis mu plus z Subscript beta Baseline sigma right parenthesis right bracket divided by upper S Subscript n Baseline tilde StartFraction upper U plus StartRoot n EndRoot z Subscript 1 minus beta Baseline Over left parenthesis chi squared left bracket n minus 1 right bracket divided by left parenthesis n minus 1 right parenthesis right parenthesis Superscript 1 divided by 2 Baseline EndFraction tilde t left bracket n minus 1 semicolon StartRoot n EndRoot z Subscript 1 minus beta Baseline right bracket comma"
     },
     "Sample_63_brief": {
-      "expected": "StartRoot n EndRoot left brack upper Y overBar Sub n Base minus left p'ren mu plus z Sub beta Base sigma right p'ren right brack slash upper S Sub n Base tilde StartFrac upper U plus StartRoot n EndRoot z Sub 1 minus beta Base Over left p'ren chi squared left brack n minus 1 right brack slash left p'ren n minus 1 right p'ren right p'ren Sup 1 slash 2 Base EndFrac tilde t left brack n minus 1 semicolon StartRoot n EndRoot z Sub 1 minus beta Base right brack comma"
+      "expected": "StartRoot n EndRoot left brack upper Y overBar Sub n Base minus left p'ren mu plus z Sub beta Base sigma right p'ren right brack divided by upper S Sub n Base tilde StartFrac upper U plus StartRoot n EndRoot z Sub 1 minus beta Base Over left p'ren chi squared left brack n minus 1 right brack divided by left p'ren n minus 1 right p'ren right p'ren Sup 1 divided by 2 Base EndFrac tilde t left brack n minus 1 semicolon StartRoot n EndRoot z Sub 1 minus beta Base right brack comma"
     },
     "Sample_63_sbrief": {
-      "expected": "Root n EndRoot L brack upper Y overBar Sub n Base minus L p'ren mu plus z Sub beta Base sigma R p'ren R brack slash upper S Sub n Base tilde Frac upper U plus Root n EndRoot z Sub 1 minus beta Base Over L p'ren chi squared L brack n minus 1 R brack slash L p'ren n minus 1 R p'ren R p'ren Sup 1 slash 2 Base EndFrac tilde t L brack n minus 1 semicolon Root n EndRoot z Sub 1 minus beta Base R brack comma"
+      "expected": "Root n EndRoot L brack upper Y overBar Sub n Base minus L p'ren mu plus z Sub beta Base sigma R p'ren R brack divided by upper S Sub n Base tilde Frac upper U plus Root n EndRoot z Sub 1 minus beta Base Over L p'ren chi squared L brack n minus 1 R brack divided by L p'ren n minus 1 R p'ren R p'ren Sup 1 divided by 2 Base EndFrac tilde t L brack n minus 1 semicolon Root n EndRoot z Sub 1 minus beta Base R brack comma"
     },
     "Sample_64_default": {
       "expected": "StartLayout 1st Row 1st Column gamma 2nd Column equals upper P left brace upper E Subscript p comma q Baseline subset of left parenthesis upper X Subscript left parenthesis r right parenthesis Baseline comma upper X Subscript left parenthesis s right parenthesis Baseline right brace 2nd Row 1st Column Blank 2nd Column equals StartFraction n factorial Over left parenthesis r minus 1 right parenthesis factorial EndFraction sigma summation Underscript j equals 0 Overscript s minus r minus 1 Endscripts left parenthesis negative 1 right parenthesis Superscript j Baseline StartFraction p Superscript r plus j Baseline Over left parenthesis n minus r minus j right parenthesis factorial j factorial EndFraction upper I Subscript 1 minus q Baseline left parenthesis n minus s plus 1 comma s minus r minus j right parenthesis period EndLayout"
@@ -585,13 +585,13 @@
       "expected": "Layout 1st Row 1st Column gamma 2nd Column equals upper P L brace upper E Sub p comma q Base subset of L p'ren upper X Sub L p'ren r R p'ren Base comma upper X Sub L p'ren s R p'ren Base R brace 2nd Row 1st Column Blank 2nd Column equals Frac n factorial Over L p'ren r minus 1 R p'ren factorial EndFrac sigma summation Underscript j equals 0 Overscript s minus r minus 1 Endscripts L p'ren negative 1 R p'ren Sup j Base Frac p Sup r plus j Base Over L p'ren n minus r minus j R p'ren factorial j factorial EndFrac upper I Sub 1 minus q Base L p'ren n minus s plus 1 comma s minus r minus j R p'ren period EndLayout"
     },
     "Sample_65_default": {
-      "expected": "upper S Subscript i Baseline StartBinomialOrMatrix t Choose x EndBinomialOrMatrix equals Start 2 By 2 Matrix 1st Row 1st Column 1 slash m 2nd Column 0 2nd Row 1st Column a Subscript i Baseline 2nd Column r Subscript i Baseline EndMatrix StartBinomialOrMatrix t Choose x EndBinomialOrMatrix plus StartBinomialOrMatrix left parenthesis i minus 1 right parenthesis slash m Choose b Subscript i Baseline EndBinomialOrMatrix comma"
+      "expected": "upper S Subscript i Baseline StartBinomialOrMatrix t Choose x EndBinomialOrMatrix equals Start 2 By 2 Matrix 1st Row 1st Column 1 divided by m 2nd Column 0 2nd Row 1st Column a Subscript i Baseline 2nd Column r Subscript i Baseline EndMatrix StartBinomialOrMatrix t Choose x EndBinomialOrMatrix plus StartBinomialOrMatrix left parenthesis i minus 1 right parenthesis divided by m Choose b Subscript i Baseline EndBinomialOrMatrix comma"
     },
     "Sample_65_brief": {
-      "expected": "upper S Sub i Base StartBinomialOrMatrix t Choose x EndBinomialOrMatrix equals Start 2 By 2 Matrix 1st Row 1st Column 1 slash m 2nd Column 0 2nd Row 1st Column a Sub i Base 2nd Column r Sub i Base EndMatrix StartBinomialOrMatrix t Choose x EndBinomialOrMatrix plus StartBinomialOrMatrix left p'ren i minus 1 right p'ren slash m Choose b Sub i Base EndBinomialOrMatrix comma"
+      "expected": "upper S Sub i Base StartBinomialOrMatrix t Choose x EndBinomialOrMatrix equals Start 2 By 2 Matrix 1st Row 1st Column 1 divided by m 2nd Column 0 2nd Row 1st Column a Sub i Base 2nd Column r Sub i Base EndMatrix StartBinomialOrMatrix t Choose x EndBinomialOrMatrix plus StartBinomialOrMatrix left p'ren i minus 1 right p'ren divided by m Choose b Sub i Base EndBinomialOrMatrix comma"
     },
     "Sample_65_sbrief": {
-      "expected": "upper S Sub i Base BinomialOrMatrix t Choose x EndBinomialOrMatrix equals 2 By 2 Matrix 1st Row 1st Column 1 slash m 2nd Column 0 2nd Row 1st Column a Sub i Base 2nd Column r Sub i Base EndMatrix BinomialOrMatrix t Choose x EndBinomialOrMatrix plus BinomialOrMatrix L p'ren i minus 1 R p'ren slash m Choose b Sub i Base EndBinomialOrMatrix comma"
+      "expected": "upper S Sub i Base BinomialOrMatrix t Choose x EndBinomialOrMatrix equals 2 By 2 Matrix 1st Row 1st Column 1 divided by m 2nd Column 0 2nd Row 1st Column a Sub i Base 2nd Column r Sub i Base EndMatrix BinomialOrMatrix t Choose x EndBinomialOrMatrix plus BinomialOrMatrix L p'ren i minus 1 R p'ren divided by m Choose b Sub i Base EndBinomialOrMatrix comma"
     },
     "Sample_66_default": {
       "expected": "c 1 h Superscript 4 minus 2 s Baseline less than or equals StartFraction 1 Over 2 upper T EndFraction integral Subscript negative upper T Superscript upper T Baseline left parenthesis f left parenthesis t plus h right parenthesis minus f left parenthesis t right parenthesis right parenthesis squared normal d t less than or equals c 2 h Superscript 4 minus 2 s"
@@ -621,13 +621,13 @@
       "expected": "upper S L p'ren omega R p'ren equals limit Underscript upper T R arrow infinity Endscripts Frac 1 Over 2 upper T EndFrac AbsoluteValue integral Sub negative upper T Sup upper T Base comma f comma L p'ren comma t comma R p'ren comma normal e Sup italic i t omega Base comma normal d comma t EndAbsoluteValue squared period"
     },
     "Sample_69_default": {
-      "expected": "integral Subscript 0 Superscript 1 Baseline integral Subscript 0 Superscript 1 Baseline left bracket StartAbsoluteValue f left parenthesis t right parenthesis minus f left parenthesis u right parenthesis EndAbsoluteValue squared plus StartAbsoluteValue t minus u EndAbsoluteValue squared right bracket Superscript negative s slash 2 Baseline normal d t normal d u less than infinity"
+      "expected": "integral Subscript 0 Superscript 1 Baseline integral Subscript 0 Superscript 1 Baseline left bracket StartAbsoluteValue f left parenthesis t right parenthesis minus f left parenthesis u right parenthesis EndAbsoluteValue squared plus StartAbsoluteValue t minus u EndAbsoluteValue squared right bracket Superscript negative s divided by 2 Baseline normal d t normal d u less than infinity"
     },
     "Sample_69_brief": {
-      "expected": "integral Sub 0 Sup 1 Base integral Sub 0 Sup 1 Base left brack StartAbsoluteValue f left p'ren t right p'ren minus f left p'ren u right p'ren EndAbsoluteValue squared plus StartAbsoluteValue t minus u EndAbsoluteValue squared right brack Sup negative s slash 2 Base normal d t normal d u less than infinity"
+      "expected": "integral Sub 0 Sup 1 Base integral Sub 0 Sup 1 Base left brack StartAbsoluteValue f left p'ren t right p'ren minus f left p'ren u right p'ren EndAbsoluteValue squared plus StartAbsoluteValue t minus u EndAbsoluteValue squared right brack Sup negative s divided by 2 Base normal d t normal d u less than infinity"
     },
     "Sample_69_sbrief": {
-      "expected": "integral Sub 0 Sup 1 Base integral Sub 0 Sup 1 Base L brack AbsoluteValue f L p'ren t R p'ren minus f L p'ren u R p'ren EndAbsoluteValue squared plus AbsoluteValue t minus u EndAbsoluteValue squared R brack Sup negative s slash 2 Base normal d t normal d u less than infinity"
+      "expected": "integral Sub 0 Sup 1 Base integral Sub 0 Sup 1 Base L brack AbsoluteValue f L p'ren t R p'ren minus f L p'ren u R p'ren EndAbsoluteValue squared plus AbsoluteValue t minus u EndAbsoluteValue squared R brack Sup negative s divided by 2 Base normal d t normal d u less than infinity"
     },
     "Sample_70_default": {
       "expected": "sans serif upper E left parenthesis sigma summation Underscript upper I element of upper E Subscript k plus 1 Baseline Endscripts StartAbsoluteValue upper I EndAbsoluteValue Superscript s Baseline right parenthesis equals sans serif upper E left parenthesis sigma summation Underscript upper I element of upper E Subscript k Baseline Endscripts StartAbsoluteValue upper I EndAbsoluteValue Superscript s Baseline right parenthesis sans serif upper E left parenthesis upper R 1 Superscript s Baseline plus upper R 2 Superscript s Baseline right parenthesis period"
@@ -945,13 +945,13 @@
       "expected": "u Sub n Base L p'ren x R p'ren equals gamma Sub n Base L p'ren hyperbolic cosine k Sub n Base x minus cosine k Sub n Base x R p'ren plus L p'ren hyperbolic sine k Sub n Base x minus sine k Sub n Base x R p'ren"
     },
     "Sample_105_default": {
-      "expected": "StartLayout 1st Row 1st Column upper B 2nd Column equals StartStartFraction StartFraction upper F 0 Over m EndFraction OverOver StartRoot left parenthesis omega 0 squared minus omega squared right parenthesis squared plus 4 n squared omega squared EndRoot EndEndFraction 2nd Row 1st Column Blank 2nd Column equals StartStartFraction StartFraction upper F 0 Over k EndFraction OverOver StartRoot left parenthesis 1 minus left parenthesis omega slash omega 0 squared right parenthesis squared right parenthesis squared plus 4 left parenthesis n slash omega 0 right parenthesis squared left parenthesis omega slash omega 0 right parenthesis squared EndRoot EndEndFraction EndLayout"
+      "expected": "StartLayout 1st Row 1st Column upper B 2nd Column equals StartStartFraction StartFraction upper F 0 Over m EndFraction OverOver StartRoot left parenthesis omega 0 squared minus omega squared right parenthesis squared plus 4 n squared omega squared EndRoot EndEndFraction 2nd Row 1st Column Blank 2nd Column equals StartStartFraction StartFraction upper F 0 Over k EndFraction OverOver StartRoot left parenthesis 1 minus left parenthesis omega divided by omega 0 squared right parenthesis squared right parenthesis squared plus 4 left parenthesis n divided by omega 0 right parenthesis squared left parenthesis omega divided by omega 0 right parenthesis squared EndRoot EndEndFraction EndLayout"
     },
     "Sample_105_brief": {
-      "expected": "StartLayout 1st Row 1st Column upper B 2nd Column equals StartStartFrac StartFrac upper F 0 Over m EndFrac OverOver StartRoot left p'ren omega 0 squared minus omega squared right p'ren squared plus 4 n squared omega squared EndRoot EndEndFrac 2nd Row 1st Column Blank 2nd Column equals StartStartFrac StartFrac upper F 0 Over k EndFrac OverOver StartRoot left p'ren 1 minus left p'ren omega slash omega 0 squared right p'ren squared right p'ren squared plus 4 left p'ren n slash omega 0 right p'ren squared left p'ren omega slash omega 0 right p'ren squared EndRoot EndEndFrac EndLayout"
+      "expected": "StartLayout 1st Row 1st Column upper B 2nd Column equals StartStartFrac StartFrac upper F 0 Over m EndFrac OverOver StartRoot left p'ren omega 0 squared minus omega squared right p'ren squared plus 4 n squared omega squared EndRoot EndEndFrac 2nd Row 1st Column Blank 2nd Column equals StartStartFrac StartFrac upper F 0 Over k EndFrac OverOver StartRoot left p'ren 1 minus left p'ren omega divided by omega 0 squared right p'ren squared right p'ren squared plus 4 left p'ren n divided by omega 0 right p'ren squared left p'ren omega divided by omega 0 right p'ren squared EndRoot EndEndFrac EndLayout"
     },
     "Sample_105_sbrief": {
-      "expected": "Layout 1st Row 1st Column upper B 2nd Column equals NestFrac Frac upper F 0 Over m EndFrac NestOver Root L p'ren omega 0 squared minus omega squared R p'ren squared plus 4 n squared omega squared EndRoot NestEndFrac 2nd Row 1st Column Blank 2nd Column equals NestFrac Frac upper F 0 Over k EndFrac NestOver Root L p'ren 1 minus L p'ren omega slash omega 0 squared R p'ren squared R p'ren squared plus 4 L p'ren n slash omega 0 R p'ren squared L p'ren omega slash omega 0 R p'ren squared EndRoot NestEndFrac EndLayout"
+      "expected": "Layout 1st Row 1st Column upper B 2nd Column equals NestFrac Frac upper F 0 Over m EndFrac NestOver Root L p'ren omega 0 squared minus omega squared R p'ren squared plus 4 n squared omega squared EndRoot NestEndFrac 2nd Row 1st Column Blank 2nd Column equals NestFrac Frac upper F 0 Over k EndFrac NestOver Root L p'ren 1 minus L p'ren omega divided by omega 0 squared R p'ren squared R p'ren squared plus 4 L p'ren n divided by omega 0 R p'ren squared L p'ren omega divided by omega 0 R p'ren squared EndRoot NestEndFrac EndLayout"
     },
     "Sample_106_default": {
       "expected": "normal p left parenthesis upper A a n d upper B right parenthesis equals normal p left parenthesis upper A right parenthesis normal p left parenthesis upper B vertical bar upper A right parenthesis"
@@ -990,13 +990,13 @@
       "expected": "Frac d x Over d theta EndFrac equals Frac beta Over cosine squared theta EndFrac"
     },
     "Sample_110_default": {
-      "expected": "s slash StartRoot 2 left parenthesis n minus 1 right parenthesis EndRoot"
+      "expected": "s divided by StartRoot 2 left parenthesis n minus 1 right parenthesis EndRoot"
     },
     "Sample_110_brief": {
-      "expected": "s slash StartRoot 2 left p'ren n minus 1 right p'ren EndRoot"
+      "expected": "s divided by StartRoot 2 left p'ren n minus 1 right p'ren EndRoot"
     },
     "Sample_110_sbrief": {
-      "expected": "s slash Root 2 L p'ren n minus 1 R p'ren EndRoot"
+      "expected": "s divided by Root 2 L p'ren n minus 1 R p'ren EndRoot"
     }
   }
 }
