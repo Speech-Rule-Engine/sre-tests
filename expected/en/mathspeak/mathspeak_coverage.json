@@ -108,13 +108,14 @@
       "expected": "double struck upper C"
     },
     "LimitLower0_default": {
-      "input": "<msubsup><munder><mrow><mover><munderover><mo>lim</mo><mi>n</mi><mn>2</mn></munderover><mo>~</mo></mover></mrow><mo>_</mo></munder><mi>m</mi><mn>5</mn></msubsup>",
-      "expected": ""
+      "expected": "ModifyingBelow ModifyingAbove limit Underscript n Overscript 2 Endscripts With tilde With bar Underscript m Overscript 5 Endscripts"
     },
     "LimitLower1_default": {
-      "input": "<mover><munderover><mo>lim</mo><mi>n</mi><mn>2</mn></munderover><mrow><mi>x</mi></mrow></mover>",
-      "expected": ""
+      "expected": "limit Underscript n Overscript 2 Endscripts Overscript x Endscripts"
     },
-    "_comment10_": "Coverage for under/over scripts"
+    "_comment10_": "Coverage for under/over scripts",
+    "BlankLineEmpty0_default": {
+      "expected": "StartLayout 1st Row  a 2nd Row  Blank EndLayout"
+    }
   }
 }

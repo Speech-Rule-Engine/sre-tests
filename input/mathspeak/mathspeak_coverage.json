@@ -150,6 +150,14 @@
     "LimitLower0_default": {
       "input": "<mrow><munder><munder><munder><mrow><mi>lim</mi></mrow> <mo>_</mo></munder><mrow><mi>a</mi><mo>=</mo><mn>5</mn></mrow></munder><mrow><mi>b</mi><mo>=</mo><mn>3</mn></mrow></munder></mrow>",
       "preference": "default"
+    },
+    "LimitLower1_default": {
+      "input": "<mover><munderover><mo>lim</mo><mi>n</mi><mn>2</mn></munderover><mrow><mi>x</mi></mrow></mover>",
+      "preference": "default"
+    },
+    "BlankLineEmpty0_default": {
+      "input": "<mtable><mtr><mtd><mi>a</mi></mtd></mtr><mtr><mtd><mi></mi></mtd></mtr></mtable>",
+      "preference": "default"
     }
   }
 }
