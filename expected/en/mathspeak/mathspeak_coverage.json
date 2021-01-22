@@ -107,8 +107,14 @@
     "NumberSet": {
       "expected": "double struck upper C"
     },
-    "LimitLower_default": {
+    "LimitLower0_default": {
+      "input": "<msubsup><munder><mrow><mover><munderover><mo>lim</mo><mi>n</mi><mn>2</mn></munderover><mo>~</mo></mover></mrow><mo>_</mo></munder><mi>m</mi><mn>5</mn></msubsup>",
       "expected": ""
-    }
+    },
+    "LimitLower1_default": {
+      "input": "<mover><munderover><mo>lim</mo><mi>n</mi><mn>2</mn></munderover><mrow><mi>x</mi></mrow></mover>",
+      "expected": ""
+    },
+    "_comment10_": "Coverage for under/over scripts"
   }
 }
