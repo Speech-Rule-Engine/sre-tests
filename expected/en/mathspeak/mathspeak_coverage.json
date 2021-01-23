@@ -116,6 +116,24 @@
     "_comment10_": "Coverage for under/over scripts",
     "BlankLineEmpty0_default": {
       "expected": "StartLayout 1st Row  a 2nd Row  Blank EndLayout"
+    },
+    "SubBaseRelseq_default": {
+      "expected": "c 1 h Subscript 4 minus 2 s Baseline less than or equals StartFraction 1 Over 2 upper T EndFraction less than or equals c 2 h Subscript 4 minus 2 s"
+    },
+    "SubBaseRelseq_brief": {
+      "expected": "c 1 h Sub 4 minus 2 s Base less than or equals StartFrac 1 Over 2 upper T EndFrac less than or equals c 2 h Sub 4 minus 2 s"
+    },
+    "SubBaseRelseq_sbrief": {
+      "expected": "c 1 h Sub 4 minus 2 s Base less than or equals Frac 1 Over 2 upper T EndFrac less than or equals c 2 h Sub 4 minus 2 s"
+    },
+    "SubBaseMultirel_default": {
+      "expected": "c 1 h Subscript 4 minus 2 s Baseline less than or equals StartFraction 1 Over 2 upper T EndFraction equals c 2 h Subscript 4 minus 2 s"
+    },
+    "SubBaseMultirel_brief": {
+      "expected": "c 1 h Sub 4 minus 2 s Base less than or equals StartFrac 1 Over 2 upper T EndFrac equals c 2 h Sub 4 minus 2 s"
+    },
+    "SubBaseMultirel_sbrief": {
+      "expected": "c 1 h Sub 4 minus 2 s Base less than or equals Frac 1 Over 2 upper T EndFrac equals c 2 h Sub 4 minus 2 s"
     }
   }
 }

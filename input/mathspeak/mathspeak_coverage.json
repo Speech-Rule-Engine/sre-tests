@@ -158,6 +158,36 @@
     "BlankLineEmpty0_default": {
       "input": "<mtable><mtr><mtd><mi>a</mi></mtd></mtr><mtr><mtd><mi></mi></mtd></mtr></mtable>",
       "preference": "default"
+    },
+    "SubBaseRelseq_default": {
+      "test": true,
+      "input": "<mrow><msub><mrow><mi>c</mi></mrow><mrow><mn>1</mn></mrow></msub><msub><mrow><mi>h</mi></mrow><mrow><mn>4</mn><mo>-</mo><mn>2</mn><mi>s</mi></mrow></msub><mo>&#x2264;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn><mi>T</mi></mrow></mfrac><mo>&#x2264;</mo><msub><mrow><mi>c</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>h</mi></mrow><mrow><mn>4</mn><mo>-</mo><mn>2</mn><mi>s</mi></mrow></msub></mrow>",
+      "preference": "default"
+    },
+    "SubBaseRelseq_brief": {
+      "test": true,
+      "input": "<mrow><msub><mrow><mi>c</mi></mrow><mrow><mn>1</mn></mrow></msub><msub><mrow><mi>h</mi></mrow><mrow><mn>4</mn><mo>-</mo><mn>2</mn><mi>s</mi></mrow></msub><mo>&#x2264;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn><mi>T</mi></mrow></mfrac><mo>&#x2264;</mo><msub><mrow><mi>c</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>h</mi></mrow><mrow><mn>4</mn><mo>-</mo><mn>2</mn><mi>s</mi></mrow></msub></mrow>",
+      "preference": "brief"
+    },
+    "SubBaseRelseq_sbrief": {
+      "test": true,
+      "input": "<mrow><msub><mrow><mi>c</mi></mrow><mrow><mn>1</mn></mrow></msub><msub><mrow><mi>h</mi></mrow><mrow><mn>4</mn><mo>-</mo><mn>2</mn><mi>s</mi></mrow></msub><mo>&#x2264;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn><mi>T</mi></mrow></mfrac><mo>&#x2264;</mo><msub><mrow><mi>c</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>h</mi></mrow><mrow><mn>4</mn><mo>-</mo><mn>2</mn><mi>s</mi></mrow></msub></mrow>",
+      "preference": "sbrief"
+    },
+    "SubBaseMultirel_default": {
+      "test": true,
+      "input": "<mrow><msub><mrow><mi>c</mi></mrow><mrow><mn>1</mn></mrow></msub><msub><mrow><mi>h</mi></mrow><mrow><mn>4</mn><mo>-</mo><mn>2</mn><mi>s</mi></mrow></msub><mo>&#x2264;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn><mi>T</mi></mrow></mfrac><mo>=</mo><msub><mrow><mi>c</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>h</mi></mrow><mrow><mn>4</mn><mo>-</mo><mn>2</mn><mi>s</mi></mrow></msub></mrow>",
+      "preference": "default"
+    },
+    "SubBaseMultirel_brief": {
+      "test": true,
+      "input": "<mrow><msub><mrow><mi>c</mi></mrow><mrow><mn>1</mn></mrow></msub><msub><mrow><mi>h</mi></mrow><mrow><mn>4</mn><mo>-</mo><mn>2</mn><mi>s</mi></mrow></msub><mo>&#x2264;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn><mi>T</mi></mrow></mfrac><mo>=</mo><msub><mrow><mi>c</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>h</mi></mrow><mrow><mn>4</mn><mo>-</mo><mn>2</mn><mi>s</mi></mrow></msub></mrow>",
+      "preference": "brief"
+    },
+    "SubBaseMultirel_sbrief": {
+      "test": true,
+      "input": "<mrow><msub><mrow><mi>c</mi></mrow><mrow><mn>1</mn></mrow></msub><msub><mrow><mi>h</mi></mrow><mrow><mn>4</mn><mo>-</mo><mn>2</mn><mi>s</mi></mrow></msub><mo>&#x2264;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn><mi>T</mi></mrow></mfrac><mo>=</mo><msub><mrow><mi>c</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>h</mi></mrow><mrow><mn>4</mn><mo>-</mo><mn>2</mn><mi>s</mi></mrow></msub></mrow>",
+      "preference": "sbrief"
     }
   }
 }
