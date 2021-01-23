@@ -1,0 +1,41 @@
+{
+  "name": "EnglishClearspeakCoverage",
+  "locale": "en",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_coverage.json",
+  "information": "English Clearspeak Coverage tests.",
+  "active": "ClearspeakEnglish",
+  "exclude": [],
+  "tests": {
+    "ApplSimple_0": {
+      "expected": "f of, g of x"
+    },
+    "ApplSimple_1": {
+      "expected": "f of, g of x, equals f of x, plus g of x"
+    },
+    "BinaryOperationPause_0": {
+      "expected": "sine x y"
+    },
+    "Empty_Line_0": {
+      "expected": "2 lines, Line 1: a. Line 2: blank"
+    },
+    "Empty_Line_1": {
+      "expected": "2 lines, Line 1: a. Line 2: blank"
+    },
+    "Empty_Line_2": {
+      "expected": "2 lines, Line 1: a. Line 2: blank"
+    },
+    "Empty_Cell_0": {
+      "expected": "2 lines, Line 1: a; equals; b"
+    },
+    "Empty_Cell_1": {
+      "expected": "2 lines, Line 1: a; equals; b. Line 2: blank"
+    },
+    "Empty_Cell_2": {
+      "expected": "2 lines, Line 1: a; equals; b. Line 2: blank"
+    },
+    "Empty_Cell_3": {
+      "expected": "2 lines, Line 1: a; equals; b. Line 2: 1; blank; 2"
+    }
+  }
+}

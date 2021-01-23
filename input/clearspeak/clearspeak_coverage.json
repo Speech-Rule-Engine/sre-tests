@@ -1,0 +1,34 @@
+{
+  "tests": {
+    "ApplSimple_0": {
+      "input": "<mi>f</mi><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo>"
+    },
+    "ApplSimple_1": {
+      "input": "<mi>f</mi><mi>g</mi><mi>x</mi><mo>=</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo>"
+    },
+    "BinaryOperationPause_0": {
+      "input": "<mi>sin</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>y</mi>"
+    },
+    "Empty_Line_0": {
+      "input": "<mtable><mtr><mtd><mi>a</mi></mtd></mtr><mtr></mtr></mtable>"
+    },
+    "Empty_Line_1": {
+      "input": "<mtable><mtr><mtd><mi>a</mi></mtd></mtr><mtr><mtd></mtd></mtr></mtable>"
+    },
+    "Empty_Line_2": {
+      "input": "<mtable><mtr><mtd><mi>a</mi></mtd></mtr><mtr><mtd><mi></mi></mtd></mtr></mtable>"
+    },
+    "Empty_Cell_0": {
+      "input": "<mtable><mtr><mtd><mi>a</mi></mtd><mtd><mo>=</mo></mtd><mtd><mi>b</mi></mtd></mtr><mtr></mtr></mtable>"
+    },
+    "Empty_Cell_1": {
+      "input": "<mtable><mtr><mtd><mi>a</mi></mtd><mtd><mo>=</mo></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd></mtd></mtr></mtable>"
+    },
+    "Empty_Cell_2": {
+      "input": "<mtable><mtr><mtd><mi>a</mi></mtd><mtd><mo>=</mo></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi></mi></mtd></mtr></mtable>"
+    },
+    "Empty_Cell_3": {
+      "input": "<mtable><mtr><mtd><mi>a</mi></mtd><mtd><mo>=</mo></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd></mtd><mtd><mn>2</mn></mtd></mtr></mtable>"
+    }
+  }
+}
