@@ -1,0 +1,387 @@
+{
+  "name": "ItalianMathspeakIssues2",
+  "locale": "it",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_issues2.json",
+  "information": "Italian Mathspeak Issues 2.",
+  "domain": "mathspeak",
+  "active": "MathspeakIssuesItalian",
+  "exclude": [],
+  "tests": {
+    "MathspeakRoots_0": {
+      "expected": "Inizio Radice a Fine Radice"
+    },
+    "MathspeakRoots_1": {
+      "expected": "Indice Radice 2 Inizio Radice a Fine Radice"
+    },
+    "MathspeakRoots_2": {
+      "expected": "Indice Radice 3 Inizio Radice a Fine Radice"
+    },
+    "MathspeakRoots_3": {
+      "expected": "Indice Radice 4 Inizio Radice a Fine Radice"
+    },
+    "MathspeakRoots_4": {
+      "expected": "Inizio Radice Annidato Inizio Radice a Fine Radice Fine Radice Annidato"
+    },
+    "MathspeakRoots_5": {
+      "expected": "Inizio Radice Annidato Inizio Radice Annidato Inizio Radice a Fine Radice Fine Radice Annidato Fine Radice Annidato"
+    },
+    "MathspeakRoots_6": {
+      "expected": "Indice Radice Annidato 2 Inizio Radice Annidato Indice Radice 2 Inizio Radice a Fine Radice Fine Radice Annidato"
+    },
+    "MathspeakRoots_7": {
+      "expected": "Indice Radice Annidato 2 Inizio Radice Annidato Indice Radice Annidato 2 Inizio Radice Annidato Indice Radice 2 Inizio Radice a Fine Radice Fine Radice Annidato Fine Radice Annidato"
+    },
+    "MathspeakRoots_8": {
+      "expected": "Indice Radice Annidato 3 Inizio Radice Annidato Indice Radice 3 Inizio Radice a Fine Radice Fine Radice Annidato"
+    },
+    "MathspeakRoots_9": {
+      "expected": "Indice Radice Annidato 3 Inizio Radice Annidato Indice Radice Annidato 3 Inizio Radice Annidato Indice Radice 3 Inizio Radice a Fine Radice Fine Radice Annidato Fine Radice Annidato"
+    },
+    "MathspeakRoots_10": {
+      "expected": "Indice Radice Annidato 4 Inizio Radice Annidato Indice Radice 4 Inizio Radice a Fine Radice Fine Radice Annidato"
+    },
+    "MathspeakRoots_11": {
+      "expected": "Indice Radice Annidato 4 Inizio Radice Annidato Indice Radice Annidato 4 Inizio Radice Annidato Indice Radice 4 Inizio Radice a Fine Radice Fine Radice Annidato Fine Radice Annidato"
+    },
+    "MathspeakRoots_12": {
+      "expected": "Indice Radice Annidato 2 Inizio Radice Annidato Indice Radice Annidato 3 Inizio Radice Annidato Indice Radice 4 Inizio Radice a Fine Radice Fine Radice Annidato Fine Radice Annidato"
+    },
+    "MathspeakRoots_13": {
+      "expected": "Indice Radice Annidato 4 Inizio Radice Annidato Indice Radice Annidato 3 Inizio Radice Annidato Indice Radice 2 Inizio Radice a Fine Radice Fine Radice Annidato Fine Radice Annidato"
+    },
+    "HtmlEntities_0": {
+      "expected": "minore di"
+    },
+    "HtmlEntities_1": {
+      "expected": "maggiore di"
+    },
+    "HtmlEntities_2": {
+      "expected": "n"
+    },
+    "HtmlEntities_3": {
+      "expected": "m"
+    },
+    "HtmlEntities_4": {
+      "expected": "n m"
+    },
+    "HtmlEntities_5": {
+      "expected": "n m"
+    },
+    "BinomialFromFrac_0": {
+      "expected": "Inizio Binomiale O Matrice n scelta k Fine Binomiale O Matrice"
+    },
+    "BinomialFromFrac_1": {
+      "expected": "Inizio Binomiale O Matrice n scelta k Fine Binomiale O Matrice"
+    },
+    "BinomialFromFrac_2": {
+      "expected": "Inizio Binomiale O Matrice n scelta k Fine Binomiale O Matrice"
+    },
+    "BinomialFromFrac_3": {
+      "expected": "parentesi tonda aperta Inizio Frazione n Sopra k Fine Frazione parentesi tonda chiusa"
+    },
+    "BinomialFromFrac_4": {
+      "expected": "parentesi tonda aperta Inizio Frazione n Sopra k Fine Frazione parentesi tonda chiusa"
+    },
+    "BinomialFromFrac_5": {
+      "expected": "parentesi tonda aperta Inizio Frazione n Sopra k Fine Frazione parentesi tonda chiusa"
+    },
+    "UnnecessarySpaces_0": {
+      "expected": "5"
+    },
+    "UnnecessarySpaces_1": {
+      "expected": "5"
+    },
+    "AbsValueVsNeutral_0": {
+      "expected": "linea verticale fullwidth a doppia barra verticale"
+    },
+    "AbsValueVsNeutral_1": {
+      "expected": "doppia barra verticale a doppia barra verticale"
+    },
+    "AbsValueVsNeutral_2": {
+      "expected": "barra verticale interrotta a barra verticale interrotta"
+    },
+    "NegativeVulgarFraction_0": {
+      "expected": "uno half meno cinque diciottoths"
+    },
+    "NegativeVulgarFraction_1": {
+      "expected": "meno Inizio Frazione 5,2 Sopra a Fine Frazione"
+    },
+    "NegativeVulgarFraction_2": {
+      "expected": "meno Inizio Frazione 5,2 Sopra 18 Fine Frazione"
+    },
+    "TrivialStuff_0": {
+      "expected": "a uguale a b"
+    },
+    "TrivialStuff_1": {
+      "expected": "virgolette"
+    },
+    "TrivialStuff_2": {
+      "expected": "virgolette x virgolette"
+    },
+    "TrivialStuff_3": {
+      "expected": "apostrofo"
+    },
+    "GermanFonts_0": {
+      "expected": "A maiuscolo Tedesco"
+    },
+    "GermanFonts_1": {
+      "expected": "A maiuscolo Tedesco in grassetto"
+    },
+    "GermanFonts_2": {
+      "expected": "A maiuscolo Tedesco"
+    },
+    "GermanFonts_3": {
+      "expected": "A maiuscolo Tedesco in grassetto"
+    },
+    "GermanFonts_4": {
+      "expected": "abc Tedesco in grassetto"
+    },
+    "GermanFonts_5": {
+      "expected": "ABC Tedesco in grassetto"
+    },
+    "GermanFonts_6": {
+      "expected": "A maiuscolo B maiuscolo C maiuscolo Tedesco in grassetto"
+    },
+    "OtherFonts_0": {
+      "expected": "m"
+    },
+    "OtherFonts_1": {
+      "expected": "m normale"
+    },
+    "OtherFonts_2": {
+      "expected": "m i"
+    },
+    "OtherFonts_3": {
+      "expected": "m i italico"
+    },
+    "OtherFonts_4": {
+      "expected": "30"
+    },
+    "OtherFonts_5": {
+      "expected": "3 italico"
+    },
+    "OtherFonts_6": {
+      "expected": "30 gradi"
+    },
+    "OtherFonts_7": {
+      "expected": "3 0 m A maiuscolo"
+    },
+    "Multiline_0": {
+      "expected": "Inizio Layout 1a Row  a 2a Row  b Fine Layout"
+    },
+    "Multiline_1": {
+      "expected": "Inizio Layout 1a Row 1a colonna a 2a colonna c 2a Row 1a colonna b 2a colonna d Fine Layout"
+    },
+    "RelationsWithEmpty_0": {
+      "expected": "minore o uguale a 2"
+    },
+    "RelationsWithEmpty_1": {
+      "expected": "uguale a 2 uguale a"
+    },
+    "RelationsWithEmpty_2": {
+      "expected": "minore o uguale a 2 uguale a"
+    },
+    "RelationsWithEmpty_3": {
+      "expected": "Inizio Layout 1a Row 1a colonna 1 2a colonna minore o uguale a 2 Fine Layout"
+    },
+    "EncloseGeneral": {
+      "expected": "Inizio Chiuso cerchio a Fine Chiuso"
+    },
+    "EncloseLeftbar": {
+      "expected": "barra vericale a"
+    },
+    "EncloseRightbar": {
+      "expected": "a barra vericale"
+    },
+    "LatinMathfonts_0": {
+      "expected": "A maiuscolo Tedesco"
+    },
+    "LatinMathfonts_1": {
+      "expected": "A maiuscolo Tedesco in grassetto"
+    },
+    "LatinMathfonts_2": {
+      "expected": "A maiuscolo grassetto script"
+    },
+    "LatinMathfonts_3": {
+      "expected": "A maiuscolo grassetto italico"
+    },
+    "LatinMathfonts_4": {
+      "expected": "A maiuscolo grassetto"
+    },
+    "LatinMathfonts_5": {
+      "expected": "A maiuscolo grassetto da lavagna"
+    },
+    "LatinMathfonts_6": {
+      "expected": "A maiuscolo italico"
+    },
+    "LatinMathfonts_7": {
+      "expected": "A maiuscolo monospazio"
+    },
+    "LatinMathfonts_8": {
+      "expected": "A maiuscolo senza grazie italico"
+    },
+    "LatinMathfonts_9": {
+      "expected": "A maiuscolo senza grazie grassetto"
+    },
+    "LatinMathfonts_10": {
+      "expected": "A maiuscolo senza grazie grassetto italico"
+    },
+    "LatinMathfonts_11": {
+      "expected": "A maiuscolo senza grazie"
+    },
+    "LatinMathfonts_12": {
+      "expected": "A maiuscolo script"
+    },
+    "GreekMathfonts_0": {
+      "expected": "Alpha maiuscolo grassetto"
+    },
+    "GreekMathfonts_1": {
+      "expected": "Alpha maiuscolo italico"
+    },
+    "GreekMathfonts_2": {
+      "expected": "Alpha maiuscolo grassetto italico"
+    },
+    "GreekMathfonts_3": {
+      "expected": "Alpha maiuscolo senza grazie italico"
+    },
+    "GreekMathfonts_4": {
+      "expected": "Alpha maiuscolo senza grazie grassetto italico"
+    },
+    "Issue279_0": {
+      "expected": ""
+    },
+    "Issue279_1": {
+      "expected": "Inizio Layout 1a Row  con etichetta parentesi tonda aperta 3 punto 1 punto 10 parentesi tonda chiusa Fine Etichetta Fine Layout"
+    },
+    "Issue320_0": {
+      "expected": "derivata parziale"
+    },
+    "Issue320_1": {
+      "expected": "x fattoriale"
+    },
+    "Issue320_2": {
+      "expected": "meno negativo x"
+    },
+    "Issue320_3": {
+      "expected": "più più x"
+    },
+    "Issue320_4": {
+      "expected": "seno seno x"
+    },
+    "Issue320_5": {
+      "expected": "derivata parziale derivata parziale x"
+    },
+    "Issue320_6": {
+      "expected": "parentesi tonda aperta Inizio Frazione derivata parziale quadrato Sopra derivata parziale x quadrato Fine Frazione più Inizio Frazione derivata parziale quadrato Sopra derivata parziale y quadrato Fine Frazione parentesi tonda chiusa Inizio Valore Assoluto phi parentesi tonda aperta x più i normale y parentesi tonda chiusa Fine Valore Assoluto quadrato uguale a 0"
+    },
+    "Prime_0": {
+      "expected": "x primo"
+    },
+    "Prime_1": {
+      "expected": "x doppio primo"
+    },
+    "Prime_2": {
+      "expected": "x triplo primo"
+    },
+    "Prime_3": {
+      "expected": "x primo quadruplo"
+    },
+    "Prime_4": {
+      "expected": "x primo"
+    },
+    "Prime_5": {
+      "expected": "x doppio primo"
+    },
+    "Prime_6": {
+      "expected": "x ʹ"
+    },
+    "Prime_7": {
+      "expected": "x ʺ"
+    },
+    "Prime_8": {
+      "expected": "x apostrofo"
+    },
+    "Prime_9": {
+      "expected": "x doppio primo"
+    },
+    "Prime_10": {
+      "expected": "x triplo primo"
+    },
+    "Prime_11": {
+      "expected": "x quattro volte primo"
+    },
+    "Prime_12": {
+      "expected": "x cinque primo"
+    },
+    "Prime_13": {
+      "expected": "x sei primo"
+    },
+    "Prime_14": {
+      "expected": "x doppio primo"
+    },
+    "Prime_15": {
+      "expected": "x triplo primo"
+    },
+    "Prime_16": {
+      "expected": "x quattro volte primo"
+    },
+    "Prime_17": {
+      "expected": "x cinque primo"
+    },
+    "Prime_18": {
+      "expected": "x sei primo"
+    },
+    "LimBoth_0": {
+      "expected": "ModificanteSopra ModificanteSotto somma Sottoscritto n Soprascritto 2 Fine Script con linea bassa con tilde"
+    },
+    "LimBoth_1": {
+      "expected": "ModificanteSopra ModificanteSotto somma Sottoscritto n Soprascritto 2 Fine Script con linea bassa con tilde"
+    },
+    "LimBoth_2": {
+      "expected": "ModificanteSopra ModificanteSotto somma Sottoscritto n Soprascritto 2 Fine Script con linea bassa con tilde"
+    },
+    "LimBoth_3": {
+      "expected": "somma Sottoscritto n Soprascritto 2 Fine Script"
+    },
+    "LimBoth_4": {
+      "expected": "somma Sottoscritto n Soprascritto 2 Fine Script a"
+    },
+    "LimUpper_0": {
+      "expected": "somma Soprascritto n Fine Script"
+    },
+    "LimUpper_1": {
+      "expected": "somma Soprascritto n Fine Script a"
+    },
+    "LimUpper_2": {
+      "expected": "somma Soprascritto n Fine Script"
+    },
+    "LimUpper_3": {
+      "expected": "somma Soprascritto n Fine Script a"
+    },
+    "LimLower_0": {
+      "expected": "somma Sottoscritto n Fine Script"
+    },
+    "LimLower_1": {
+      "expected": "somma Sottoscritto n Fine Script a"
+    },
+    "LimLower_2": {
+      "expected": "somma Sottoscritto n Fine Script"
+    },
+    "LimLower_3": {
+      "expected": "somma Sottoscritto n Fine Script a"
+    },
+    "Issue_442_0": {
+      "expected": "9 diviso per 3 diverso da 9 moltiplicato 3"
+    },
+    "Issue_442_1": {
+      "expected": "9 diviso per 3"
+    },
+    "Issue_442_2": {
+      "expected": "9 diviso per 3 diverso da 9 moltiplicato 3"
+    },
+    "Issue_442_3": {
+      "expected": "9 diviso per 3"
+    }
+  }
+}

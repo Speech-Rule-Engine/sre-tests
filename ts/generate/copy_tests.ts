@@ -18,17 +18,18 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
+import * as fs from 'fs';
 import {JsonFile, TestPath, TestUtil} from '../base/test_util';
 import {get as factoryget} from '../classes/test_factory';
-import {addMissing} from './fill_tests';
+import {addActual} from './fill_tests';
 
 /**
  * Copies and adapts a single test file from one locale to another.
  *
  * @param source The expected source file.
- * @param locale
- * @param loc1
- * @param loc2
+ * @param locale Destination locale (e.g., 'it').
+ * @param loc1 Source locale string (e.g., "English").
+ * @param loc2 Destination locale string (e.g., "Italian").
  */
 export function copyTestLocale(source: string, locale: string,
   loc1: string, loc2: string) {
@@ -41,7 +42,23 @@ export function copyTestLocale(source: string, locale: string,
   replaceInTests(tests.jsonTests, 'active', loc1, loc2);
   replaceInTests(tests.jsonTests, 'information', loc1, loc2);
   TestUtil.saveJson(dst, tests.jsonTests);
-  addMissing(dst);
+  addActual(dst);
+}
+
+/**
+ * Copies and adapts all test file from one locale directory to another.
+ *
+ * @param source The expected source directory.
+ * @param locale Destination locale (e.g., 'it').
+ * @param loc1 Source locale string (e.g., "English").
+ * @param loc2 Destination locale string (e.g., "Italian").
+ */
+export function copyTestLocaleDir(source: string, locale: string,
+  loc1: string, loc2: string) {
+  let files = fs.readdirSync(source);
+  for (let file of files) {
+    copyTestLocale(file, locale, loc1, loc2);
+  }
 }
 
 /**

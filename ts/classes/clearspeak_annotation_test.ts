@@ -31,7 +31,8 @@ export class ClearspeakAnnotationTest extends AbstractJsonTest {
   /**
    * The clearspeak annotator to test.
    */
-  public annotator: any = sre.ClearspeakUtil.simpleExpression();
+  public annotator: any =
+    sre.SemanticAnnotations.getInstance().annotators['clearspeak:simple'];
 
   /**
    * Tests simple annotator for Clearspeak.

@@ -1,0 +1,48 @@
+{
+  "name": "ItalianMathspeakInference",
+  "domain": "mathspeak",
+  "locale": "it",
+  "factory": "speech",
+  "base": "input/common/inference.json",
+  "information": "Italian Mathspeak Inference rules.",
+  "active": "InferenceItalian",
+  "exclude": [],
+  "tests": {
+    "NoLabel_0": {
+      "expected": "regola di inferenza con conclusione X maiuscolo e 1 premessa"
+    },
+    "NoLabel_1": {
+      "expected": "regola di inferenza con conclusione X maiuscolo e 1 premessa"
+    },
+    "Premise_0": {
+      "expected": "regola di inferenza con conclusione X maiuscolo e 1 premessa"
+    },
+    "Premise_1": {
+      "expected": "regola di inferenza etichetta N maiuscolo con conclusione X maiuscolo e 1 premessa"
+    },
+    "Axiom": {
+      "expected": "assioma A maiuscolo"
+    },
+    "EmptyAxiom": {
+      "expected": "assioma"
+    },
+    "RightLabel_0": {
+      "expected": "regola di inferenza etichetta N maiuscolo con conclusione X maiuscolo e 1 premessa"
+    },
+    "RightLabel_1": {
+      "expected": "regola di inferenza etichetta N maiuscolo con conclusione X maiuscolo e 2 premesse"
+    },
+    "RightLabel_2": {
+      "expected": "regola di inferenza etichetta N maiuscolo con conclusione X maiuscolo e 3 premesse"
+    },
+    "LeftLabel_0": {
+      "expected": "regola di inferenza etichetta N maiuscolo con conclusione X maiuscolo e 1 premessa"
+    },
+    "LeftLabel_1": {
+      "expected": "regola di inferenza etichetta N maiuscolo con conclusione X maiuscolo e 2 premesse"
+    },
+    "LeftLabel_2": {
+      "expected": "regola di inferenza etichetta N maiuscolo con conclusione X maiuscolo e 3 premesse"
+    }
+  }
+}
