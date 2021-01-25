@@ -9,13 +9,13 @@
   "exclude": [],
   "tests": {
     "BaselineNumberGreek_default": {
-      "expected": "alpha Linea di base 2"
+      "expected": "alfa Linea di base 2"
     },
     "BaselineNumberGreek_brief": {
-      "expected": "alpha Base 2"
+      "expected": "alfa Base 2"
     },
     "BaselineNumberGreek_sbrief": {
-      "expected": "alpha Base 2"
+      "expected": "alfa Base 2"
     },
     "BaselineNumberOther_default": {
       "expected": "alef normale Linea di base 2"
@@ -27,13 +27,13 @@
       "expected": "alef normale Base 2"
     },
     "BaselineNumberFontGreek_default": {
-      "expected": "alpha Linea di base 2 grassetto"
+      "expected": "alfa Linea di base 2 grassetto"
     },
     "BaselineNumberFontGreek_brief": {
-      "expected": "alpha Base 2 grassetto"
+      "expected": "alfa Base 2 grassetto"
     },
     "BaselineNumberFontGreek_sbrief": {
-      "expected": "alpha Base 2 grassetto"
+      "expected": "alfa Base 2 grassetto"
     },
     "BaselineNumberFontOther_default": {
       "expected": "alef normale Linea di base 2 grassetto"
@@ -45,25 +45,25 @@
       "expected": "alef normale Base 2 grassetto"
     },
     "OverbarGreek_default": {
-      "expected": "alpha barra sopra"
+      "expected": "alfa barra sopra"
     },
     "OverbarOther_default": {
       "expected": "alef normale barra sopra"
     },
     "UnderbarGreek_default": {
-      "expected": "alpha sottobarra"
+      "expected": "alfa sottobarra"
     },
     "UnderbarOther_default": {
       "expected": "alef normale sottobarra"
     },
     "OvertildeGreek_default": {
-      "expected": "alpha tilde sopra"
+      "expected": "alfa tilde sopra"
     },
     "OvertildeOther_default": {
       "expected": "alef normale tilde sopra"
     },
     "UndertildeGreek_default": {
-      "expected": "alpha tilde sotto"
+      "expected": "alfa tilde sotto"
     },
     "UndertildeOther_default": {
       "expected": "alef normale tilde sotto"
@@ -105,7 +105,7 @@
       "expected": "Insieme a virgola b Fine Insieme"
     },
     "NumberSet": {
-      "expected": "C maiuscolo grassetto da lavagna"
+      "expected": "C maiuscola grassetto da lavagna"
     },
     "LimitLower0_default": {
       "expected": "ModificanteSotto limite con linea bassa Sottoscritto a uguale a 5 Fine Script Sottoscritto b uguale a 3 Fine Script"
@@ -117,22 +117,22 @@
       "expected": "Inizio Layout 1a Row  a 2a Row  Vuoto Fine Layout"
     },
     "SubBaseRelseq_default": {
-      "expected": "c 1 h Pedice 4 meno 2 s Linea di base minore o uguale a Inizio Frazione 1 Sopra 2 T maiuscolo Fine Frazione minore o uguale a c 2 h Pedice 4 meno 2 s"
+      "expected": "c 1 h Pedice 4 meno 2 s Linea di base minore o uguale a Inizio Frazione 1 fratto 2 T maiuscola Fine Frazione minore o uguale a c 2 h Pedice 4 meno 2 s"
     },
     "SubBaseRelseq_brief": {
-      "expected": "c 1 h Sub 4 meno 2 s Base minore o uguale a Inizio Frazione 1 Sopra 2 T maiuscolo Fine Frazione minore o uguale a c 2 h Sub 4 meno 2 s"
+      "expected": "c 1 h Sub 4 meno 2 s Base minore o uguale a Inizio Frazione 1 fratto 2 T maiuscola Fine Frazione minore o uguale a c 2 h Sub 4 meno 2 s"
     },
     "SubBaseRelseq_sbrief": {
-      "expected": "c 1 h Sub 4 meno 2 s Base minore o uguale a Frazione 1 Sopra 2 T maiuscolo Fine Frazione minore o uguale a c 2 h Sub 4 meno 2 s"
+      "expected": "c 1 h Sub 4 meno 2 s Base minore o uguale a Frazione 1 fratto 2 T maiuscola Fine Frazione minore o uguale a c 2 h Sub 4 meno 2 s"
     },
     "SubBaseMultirel_default": {
-      "expected": "c 1 h Pedice 4 meno 2 s Linea di base minore o uguale a Inizio Frazione 1 Sopra 2 T maiuscolo Fine Frazione uguale a c 2 h Pedice 4 meno 2 s"
+      "expected": "c 1 h Pedice 4 meno 2 s Linea di base minore o uguale a Inizio Frazione 1 fratto 2 T maiuscola Fine Frazione uguale a c 2 h Pedice 4 meno 2 s"
     },
     "SubBaseMultirel_brief": {
-      "expected": "c 1 h Sub 4 meno 2 s Base minore o uguale a Inizio Frazione 1 Sopra 2 T maiuscolo Fine Frazione uguale a c 2 h Sub 4 meno 2 s"
+      "expected": "c 1 h Sub 4 meno 2 s Base minore o uguale a Inizio Frazione 1 fratto 2 T maiuscola Fine Frazione uguale a c 2 h Sub 4 meno 2 s"
     },
     "SubBaseMultirel_sbrief": {
-      "expected": "c 1 h Sub 4 meno 2 s Base minore o uguale a Frazione 1 Sopra 2 T maiuscolo Fine Frazione uguale a c 2 h Sub 4 meno 2 s"
+      "expected": "c 1 h Sub 4 meno 2 s Base minore o uguale a Frazione 1 fratto 2 T maiuscola Fine Frazione uguale a c 2 h Sub 4 meno 2 s"
     }
   }
 }
