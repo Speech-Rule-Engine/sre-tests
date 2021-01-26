@@ -17,7 +17,7 @@
  */
 
 import * as fs from 'fs';
-import {TestError, TestPath} from '../base/test_util';
+import {TestError, TestPath, TestUtil} from '../base/test_util';
 import {AbstractJsonTest} from './abstract_test';
 import {ExamplesOutput} from './examples_output';
 
@@ -173,6 +173,7 @@ export namespace ExampleFiles {
       return;
     }
     if (!openFiles[file]) {
+      TestUtil.makeDir(file);
       let fd = fs.openSync(file, 'w+');
       descriptors[file] = fd;
       fs.appendFileSync(fd, obj.header());

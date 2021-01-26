@@ -89,14 +89,23 @@ export namespace TestUtil {
   }
 
   /**
-   * Saves a formatted JSON object to file.
+   * Creates recursively all directories for the given file.
    *
    * @param file The filename.
-   * @param json The JSON object.
    */
-  export function saveJson(file: string, json: JsonFile) {
+  export function makeDir(file: string) {
     let dir = path.dirname(file);
     fs.mkdirSync(dir, {recursive: true});
+  }
+
+  /**
+   * Saves a formatted JSON object to file.
+   *
+   * @param {string} file The filename
+   * @param {JsonFile} json The JSON output.
+   */
+  export function saveJson(file: string, json: JsonFile) {
+    makeDir(file);
     fs.writeFileSync(file, JSON.stringify(json, null, 2) + '\n');
   }
 
