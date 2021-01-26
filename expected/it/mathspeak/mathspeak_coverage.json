@@ -9,40 +9,40 @@
   "exclude": [],
   "tests": {
     "BaselineNumberGreek_default": {
-      "expected": "alfa Linea di base 2"
+      "expected": "alfa linea di base 2"
     },
     "BaselineNumberGreek_brief": {
-      "expected": "alfa Base 2"
+      "expected": "alfa base 2"
     },
     "BaselineNumberGreek_sbrief": {
-      "expected": "alfa Base 2"
+      "expected": "alfa base 2"
     },
     "BaselineNumberOther_default": {
-      "expected": "alef normale Linea di base 2"
+      "expected": "alef normale linea di base 2"
     },
     "BaselineNumberOther_brief": {
-      "expected": "alef normale Base 2"
+      "expected": "alef normale base 2"
     },
     "BaselineNumberOther_sbrief": {
-      "expected": "alef normale Base 2"
+      "expected": "alef normale base 2"
     },
     "BaselineNumberFontGreek_default": {
-      "expected": "alfa Linea di base 2 grassetto"
+      "expected": "alfa linea di base 2 grassetto"
     },
     "BaselineNumberFontGreek_brief": {
-      "expected": "alfa Base 2 grassetto"
+      "expected": "alfa base 2 grassetto"
     },
     "BaselineNumberFontGreek_sbrief": {
-      "expected": "alfa Base 2 grassetto"
+      "expected": "alfa base 2 grassetto"
     },
     "BaselineNumberFontOther_default": {
-      "expected": "alef normale Linea di base 2 grassetto"
+      "expected": "alef normale linea di base 2 grassetto"
     },
     "BaselineNumberFontOther_brief": {
-      "expected": "alef normale Base 2 grassetto"
+      "expected": "alef normale base 2 grassetto"
     },
     "BaselineNumberFontOther_sbrief": {
-      "expected": "alef normale Base 2 grassetto"
+      "expected": "alef normale base 2 grassetto"
     },
     "OverbarGreek_default": {
       "expected": "alfa barra sopra"
@@ -78,61 +78,61 @@
       "expected": "insieme vuoto"
     },
     "SetSingleton_default": {
-      "expected": "Inizio Insieme a Fine Insieme"
+      "expected": "inizio insieme a fine insieme"
     },
     "SetSingleton_brief": {
-      "expected": "Inizio Insieme a Fine Insieme"
+      "expected": "inizio insieme a fine insieme"
     },
     "SetSingleton_sbrief": {
-      "expected": "Insieme a Fine Insieme"
+      "expected": "insieme a fine insieme"
     },
     "SetCollection_default": {
-      "expected": "Inizio Insieme a virgola b Fine Insieme"
+      "expected": "inizio insieme a virgola b fine insieme"
     },
     "SetCollection_brief": {
-      "expected": "Inizio Insieme a virgola b Fine Insieme"
+      "expected": "inizio insieme a virgola b fine insieme"
     },
     "SetCollection_sbrief": {
-      "expected": "Insieme a virgola b Fine Insieme"
+      "expected": "insieme a virgola b fine insieme"
     },
     "SetExtended_default": {
-      "expected": "Inizio Insieme a virgola b Fine Insieme"
+      "expected": "inizio insieme a virgola b fine insieme"
     },
     "SetExtended_brief": {
-      "expected": "Inizio Insieme a virgola b Fine Insieme"
+      "expected": "inizio insieme a virgola b fine insieme"
     },
     "SetExtended_sbrief": {
-      "expected": "Insieme a virgola b Fine Insieme"
+      "expected": "insieme a virgola b fine insieme"
     },
     "NumberSet": {
       "expected": "C maiuscola grassetto da lavagna"
     },
     "LimitLower0_default": {
-      "expected": "ModificanteSotto limite con linea bassa Sottoscritto a uguale a 5 Fine Script Sottoscritto b uguale a 3 Fine Script"
+      "expected": "modificanteSotto limite con linea bassa sottoscritto a uguale a 5 fine script sottoscritto b uguale a 3 fine script"
     },
     "LimitLower1_default": {
-      "expected": "limite Sottoscritto n Soprascritto 2 Fine Script Soprascritto x Fine Script"
+      "expected": "limite sottoscritto n soprascritto 2 fine script soprascritto x fine script"
     },
     "BlankLineEmpty0_default": {
-      "expected": "Inizio Layout 1a Row  a 2a Row  Vuoto Fine Layout"
+      "expected": "inizio layout 1a row  a 2a row  vuoto fine layout"
     },
     "SubBaseRelseq_default": {
-      "expected": "c 1 h Pedice 4 meno 2 s Linea di base minore o uguale a Inizio Frazione 1 fratto 2 T maiuscola Fine Frazione minore o uguale a c 2 h Pedice 4 meno 2 s"
+      "expected": "c 1 h pedice 4 meno 2 s linea di base minore o uguale a inizio frazione 1 fratto 2 T maiuscola fine frazione minore o uguale a c 2 h pedice 4 meno 2 s"
     },
     "SubBaseRelseq_brief": {
-      "expected": "c 1 h Sub 4 meno 2 s Base minore o uguale a Inizio Frazione 1 fratto 2 T maiuscola Fine Frazione minore o uguale a c 2 h Sub 4 meno 2 s"
+      "expected": "c 1 h sub 4 meno 2 s base minore o uguale a inizio frazione 1 fratto 2 T maiuscola fine frazione minore o uguale a c 2 h sub 4 meno 2 s"
     },
     "SubBaseRelseq_sbrief": {
-      "expected": "c 1 h Sub 4 meno 2 s Base minore o uguale a Frazione 1 fratto 2 T maiuscola Fine Frazione minore o uguale a c 2 h Sub 4 meno 2 s"
+      "expected": "c 1 h sub 4 meno 2 s base minore o uguale a frazione 1 fratto 2 T maiuscola fine frazione minore o uguale a c 2 h sub 4 meno 2 s"
     },
     "SubBaseMultirel_default": {
-      "expected": "c 1 h Pedice 4 meno 2 s Linea di base minore o uguale a Inizio Frazione 1 fratto 2 T maiuscola Fine Frazione uguale a c 2 h Pedice 4 meno 2 s"
+      "expected": "c 1 h pedice 4 meno 2 s linea di base minore o uguale a inizio frazione 1 fratto 2 T maiuscola fine frazione uguale a c 2 h pedice 4 meno 2 s"
     },
     "SubBaseMultirel_brief": {
-      "expected": "c 1 h Sub 4 meno 2 s Base minore o uguale a Inizio Frazione 1 fratto 2 T maiuscola Fine Frazione uguale a c 2 h Sub 4 meno 2 s"
+      "expected": "c 1 h sub 4 meno 2 s base minore o uguale a inizio frazione 1 fratto 2 T maiuscola fine frazione uguale a c 2 h sub 4 meno 2 s"
     },
     "SubBaseMultirel_sbrief": {
-      "expected": "c 1 h Sub 4 meno 2 s Base minore o uguale a Frazione 1 fratto 2 T maiuscola Fine Frazione uguale a c 2 h Sub 4 meno 2 s"
+      "expected": "c 1 h sub 4 meno 2 s base minore o uguale a frazione 1 fratto 2 T maiuscola fine frazione uguale a c 2 h sub 4 meno 2 s"
     }
   }
 }
