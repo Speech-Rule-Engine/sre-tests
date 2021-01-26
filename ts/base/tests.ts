@@ -16,14 +16,13 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import * as fs from 'fs';
 import * as process from 'process';
 import {ExampleFiles} from '../classes/abstract_examples';
 import * as TestFactory from '../classes/test_factory';
 import * as BaseTests from '../tests/base_tests';
 import {TestRunner} from './runner';
 import {sre} from './test_external';
-import {TestPath} from './test_util';
+import {TestUtil} from './test_util';
 
 export class Tests {
 
@@ -65,31 +64,7 @@ export class Tests {
    * @return A list of all json file path names.
    */
   public static allJson(): string[] {
-    let json: string[] = [];
-    Tests.readDir_('', json);
-    return json;
-  }
-
-  /**
-   * Recursively find all files with .json extension under the given path.
-   *
-   * @param path The top pathname.
-   * @param result Accumulator for pathnames.
-   */
-  private static readDir_(path: string, result: string[]) {
-    if (typeof path === 'undefined') {
-      return;
-    }
-    let file = TestPath.EXPECTED + path;
-    if (fs.lstatSync(file).isDirectory()) {
-      let files = fs.readdirSync(file);
-      files.forEach(
-        x => Tests.readDir_(path ? path + '/' + x : x, result));
-      return;
-    }
-    if (path.match(/\.json$/)) {
-      result.push(path);
-    }
+    return TestUtil.readDir('');
   }
 
   /**

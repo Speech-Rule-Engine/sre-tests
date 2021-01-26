@@ -194,4 +194,38 @@ export namespace TestUtil {
     return str.charAt(0).toUpperCase() + str.slice(1);
   }
 
+  /**
+   * Recursively find all files with .json extension under the given path.
+   *
+   * @param path The top pathname.
+   * @param result Accumulator for pathnames.
+   */
+  function readDir_(path: string, result: string[]) {
+    if (typeof path === 'undefined') {
+      return;
+    }
+    let file = TestPath.EXPECTED + path;
+    if (fs.lstatSync(file).isDirectory()) {
+      let files = fs.readdirSync(file);
+      files.forEach(
+        x => readDir_(path ? path + '/' + x : x, result));
+      return;
+    }
+    if (path.match(/\.json$/)) {
+      result.push(path);
+    }
+  }
+
+  /**
+   * Recursively find all files with .json extension under the given path.
+   *
+   * @param path The top pathname.
+   * @return List of all filenames.
+   */
+  export function readDir(path: string): string[] {
+    let result: string[] = [];
+    readDir_(path, result);
+    return result;
+  }
+
 }

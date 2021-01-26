@@ -20,10 +20,10 @@
 
 import {sre} from '../base/test_external';
 import * as tu from '../base/test_util';
-import * as sret from '../typings/sre';
-import {Transformer} from './transformers';
-import {addActual} from './fill_tests';
 import * as TestFactory from '../classes/test_factory';
+import * as sret from '../typings/sre';
+import {addActual} from './fill_tests';
+import {Transformer} from './transformers';
 
 /* ********************************************************* */
 /*
@@ -62,9 +62,9 @@ import * as TestFactory from '../classes/test_factory';
  * }
  * ```
  *
- * @param {JsonTest} json The initial JSON input.
+ * @param {tu.JsonTest} json The initial JSON input.
  * @param {string=} field The optional field name, defaults to input.
- * @return {JsonTests} The newly transformed JSON.
+ * @return {tu.JsonTests} The newly transformed JSON.
  */
 export function transformInput(
   json: tu.JsonTest, field: string = 'input'): tu.JsonTests {
@@ -122,9 +122,9 @@ export function generateTestJson(input: string, output: string,
 /**
  * Runs a series of transformers on the given tests.
  *
- * @param {JsonTest} json The JSON tests.
+ * @param {tu.JsonTest} json The JSON tests.
  * @param {Transformer[]} transformers List of transformers.
- * @return {JsonTest} The updated json test.
+ * @return {tu.JsonTest} The updated json test.
  */
 export function transformTests(json: tu.JsonTest,
   transformers: Transformer[]): tu.JsonTest {
@@ -163,7 +163,12 @@ export let basename: string = '';
 export let removeStree: boolean = true;
 
 /**
- * @param file
+ * Transforms a PreText source file by cleaning it, removing duplicates,
+ * renaming tests, completing entries, and splitting them into smaller elements.
+ *
+ * @param file The source file.
+ * @param name The basename for the output files.
+ * @return The list of all transformed tests.
  */
 export function transformPretextSource(file: string, name: string) {
   basename = name;

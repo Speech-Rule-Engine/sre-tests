@@ -18,7 +18,6 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import * as fs from 'fs';
 import {JsonFile, TestPath, TestUtil} from '../base/test_util';
 import {get as factoryget} from '../classes/test_factory';
 import {addActual} from './fill_tests';
@@ -55,7 +54,7 @@ export function copyTestLocale(source: string, locale: string,
  */
 export function copyTestLocaleDir(source: string, locale: string,
   loc1: string, loc2: string) {
-  let files = fs.readdirSync(source);
+  let files = TestUtil.readDir(source);
   for (let file of files) {
     copyTestLocale(file, locale, loc1, loc2);
   }
