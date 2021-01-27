@@ -60,14 +60,6 @@ let createFile = function(dir, file, content) {
   fs.writeFileSync(dir + '/' + file, content.join('\n'));
 };
 
-let createFiles = function() {
-  let files = [];
-  readDir('', files);
-  createJsonTests(files);
-  createOutputTests();
-  createAnalyseTests(files);
-};
-
 let createJsonTests = function(files) {
   for (let file of files) {
     let dir = path.dirname(file);
@@ -115,6 +107,50 @@ let createAnalyseTests = function() {
   }
 };
 
+let createFiles = function() {
+  let files = [];
+  readDir('', files);
+  createJsonTests(files);
+  createOutputTests();
+  createAnalyseTests(files);
+};
+
+let createHtmlFiles = function() {
+  let languages = {};
+  let tables = {};
+  for (let key of Object.keys(allOutputs)) {
+    let language = key.match(/^DefaultSymbols(.*)/);
+    if (!language || !language[1]) continue;
+    languages[language[1]] = allOutputs[key][0].split('/')[1];
+    tables[language[1]] = {};
+  }
+  for (let [language, iso] of Object.entries(languages)) {
+    let output = Object.keys(allOutputs).filter(x => x.match(language));
+    for (let file of output) {
+      let type = allOutputs[file][0].split('/')[2];
+      if (tables[language][type]) {
+        tables[language][type].push(file);
+      } else {
+        tables[language][type] = [file];
+      }
+    }
+  }
+  let str = '';
+  let cap = x => x[0].toUpperCase() + x.slice(1);
+  for (let language of Object.keys(tables).sort()) {
+    let iso = languages[language];
+    str += `<h2>${language}</h2>\n`;
+    for (let [type, files] of Object.entries(tables[language])) {
+      str += `<table border="2">\n<tr><th>${cap(type)}</th></tr>\n`;
+      for (let file of files) {
+        str += `<tr><td><a href="${iso}/${file}.html">${file}</a></td></tr>\n`;
+      }
+      str += '</table>\n\n';
+    }
+    str += '\n\n';
+  }
+  fs.writeFileSync('output/index.html', '<html>\n<body>\n' + str+ '</body>\n</html>\n');
+};
 
 let cleanFiles = function() {
   fs.rmdirSync(jsondir, {recursive: true});
@@ -122,10 +158,10 @@ let cleanFiles = function() {
   fs.rmdirSync(analysedir, {recursive: true});
 };
 
-
 let build = function() {
   cleanFiles();
   createFiles();
+  createHtmlFiles();
 };
 
 module.exports.build = build;
