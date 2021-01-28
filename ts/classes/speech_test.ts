@@ -150,8 +150,10 @@ export class SpeechTest extends AbstractExamples {
    */
   public appendRuleExample(
     input: string, output: string, style: string, ...rest: string[]) {
-    let key = '<h2>' + this.information + ' Locale: ' + this.locale +
-      ', Style: ' +
+    let id = this.information.replace(/\s|\./g, '_') + '_' +
+      this.locale + '_' + style;
+    let key = '<h2 id="' + id + '">' + this.information +
+      ' Locale: ' + this.locale + ', Style: ' +
       SpeechTest.htmlCell_(SpeechTest.styleMap_(style)) +
       '.</h2>';
     let outList = [input];
