@@ -135,9 +135,12 @@ let createHtmlFiles = function() {
       }
     }
   }
-  let str = '';
+  let str = '<h1>Locales</h1>\n<ul>\n';
+  let langKeys = Object.keys(tables).sort();
+  langKeys.forEach(lang => str += `<li><a href="#${lang}">${lang}</a> (${languages[lang]})</li>\n`);
+  str += '</ul>\n';
   let cap = x => x[0].toUpperCase() + x.slice(1);
-  for (let language of Object.keys(tables).sort()) {
+  for (let language of langKeys) {
     let iso = languages[language];
     str += `<h2 id="${language}">${language}</h2>\n`;
     str += '<table border="2">\n';
