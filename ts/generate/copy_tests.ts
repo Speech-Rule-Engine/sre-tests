@@ -20,7 +20,7 @@
 
 import {JsonFile, TestPath, TestUtil} from '../base/test_util';
 import {get as factoryget} from '../classes/test_factory';
-import {addActual} from './fill_tests';
+import {addMissing} from './fill_tests';
 
 /**
  * Copies and adapts a single test file from one locale to another.
@@ -41,7 +41,7 @@ export function copyTestLocale(source: string, locale: string,
   replaceInTests(tests.jsonTests, 'active', loc1, loc2);
   replaceInTests(tests.jsonTests, 'information', loc1, loc2);
   TestUtil.saveJson(dst, tests.jsonTests);
-  addActual(dst);
+  addMissing(dst);
 }
 
 /**

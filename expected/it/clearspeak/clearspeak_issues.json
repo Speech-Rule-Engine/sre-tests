@@ -1,0 +1,72 @@
+{
+  "_comment0_": " Tests from the issues discovered in ClearspeakEnglish rules.",
+  "name": "ItalianClearspeakIssues",
+  "locale": "it",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_issues.json",
+  "information": "Italian Clearspeak Issues tests.",
+  "active": "ClearspeakIssuesItalian",
+  "exclude": [],
+  "tests": {
+    "Issue230_1": {
+      "expected": "5 e, 3 sopra 224"
+    },
+    "Issue230_2": {
+      "expected": "5 e tre quarte"
+    },
+    "IssueNumbers_1": {
+      "expected": "numero t 2 e 4"
+    },
+    "IssueNumbers_2": {
+      "expected": "numero cancelletto F F 0 0 0 0"
+    },
+    "IssueNumbers_3": {
+      "expected": "numero cancelletto F F F F"
+    },
+    "Issue320_1": {
+      "expected": "derivata parziale"
+    },
+    "Issue320_2": {
+      "expected": "x fattoriale"
+    },
+    "Issue320_3": {
+      "expected": "negativo negativo x"
+    },
+    "Issue320_4": {
+      "expected": "più più x"
+    },
+    "Issue320_5": {
+      "expected": "seno seno x"
+    },
+    "Issue320_6": {
+      "expected": "derivata parziale derivata parziale x"
+    },
+    "Issue320_7": {
+      "expected": "parentesi tonda aperta, la frazione con numerature derivata parziale quadrato, e denominatore derivata parziale x quadrato, più, la frazione con numerature derivata parziale quadrato, e denominatore derivata parziale y quadrato, parentesi tonda chiusa,  , il valore assoluto phi  , parentesi tonda aperta, x più i normale, y, parentesi tonda chiusa, quadrato uguale a 0"
+    },
+    "Issue301_1": {
+      "expected": "4 mm"
+    },
+    "Issue301_2": {
+      "expected": "1 mm"
+    },
+    "Issue301_3": {
+      "expected": "4 mm"
+    },
+    "Issue301_4": {
+      "expected": "1 mm"
+    },
+    "Issue_442_0": {
+      "expected": "9 diviso per 3 diverso da 9 per 3"
+    },
+    "Issue_442_1": {
+      "expected": "9 diviso per 3"
+    },
+    "Issue_442_2": {
+      "expected": "9 diviso per 3 diverso da 9 per 3"
+    },
+    "Issue_442_3": {
+      "expected": "9 diviso per 3"
+    }
+  }
+}

@@ -1,0 +1,565 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "ItalianClearspeakFunctions",
+  "locale": "it",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_functions.json",
+  "information": "Italian Clearspeak Functions rule tests.",
+  "active": "ClearspeakItalian",
+  "exclude": [
+    "Function011b",
+    "Function012b",
+    "Function013b",
+    "Function014b",
+    "Function015b",
+    "Function016b",
+    "Function017b",
+    "Function018b",
+    "Function019b",
+    "Function020b",
+    "Function021b",
+    "Function022b",
+    "Function023b",
+    "Function024b",
+    "Function025b",
+    "Function026b",
+    "Function027b",
+    "Function028b",
+    "Function029b",
+    "Function030b",
+    "Function031b",
+    "Function032b",
+    "Function033b",
+    "Function034b",
+    "Function035b",
+    "Function036b",
+    "Function037b",
+    "Function038b",
+    "Function039b",
+    "Function040b",
+    "Function041b",
+    "Function042b",
+    "Function043b",
+    "Function044b",
+    "Function045b",
+    "Function046b",
+    "Function047b",
+    "Function048b",
+    "Function049b",
+    "Function050b",
+    "Function051b",
+    "Function052b",
+    "Function053b",
+    "Function054b",
+    "Function055b",
+    "Function056b",
+    "Function057b",
+    "Function058b",
+    "Function059b",
+    "Function060b",
+    "Function061b",
+    "Function062b",
+    "Function063b",
+    "Function064b",
+    "Function065b",
+    "Function066b",
+    "Function067b",
+    "Function068b",
+    "Function069b",
+    "Function070b",
+    "Function071b",
+    "Function072b",
+    "Function073b",
+    "Function074b",
+    "Function075b",
+    "Function076b",
+    "Function077b",
+    "Function078b",
+    "Function079b"
+  ],
+  "tests": {
+    "Function001": {
+      "expected": "f di x"
+    },
+    "Function002": {
+      "expected": "g di x"
+    },
+    "Function003": {
+      "expected": "h di x"
+    },
+    "Function004": {
+      "expected": "f di 2 x"
+    },
+    "Function005": {
+      "expected": "g di negativo 2 x"
+    },
+    "Function006": {
+      "expected": "h di uno mezzo"
+    },
+    "Function007": {
+      "expected": "h di, parentesi tonda aperta, 1 sopra 2, parentesi tonda chiusa"
+    },
+    "Function008": {
+      "expected": "f di, parentesi tonda aperta, x più 1, parentesi tonda chiusa, uguale a f di x, più 1"
+    },
+    "Function009": {
+      "expected": "g di, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function010": {
+      "expected": "g di, parentesi tonda aperta, x quadrato, parentesi tonda chiusa"
+    },
+    "Function011": {
+      "expected": "f inverso di x"
+    },
+    "Function012": {
+      "expected": "g inverso di x"
+    },
+    "Function013": {
+      "expected": "h inverso di x"
+    },
+    "Function014": {
+      "expected": "f inverso di 2 x"
+    },
+    "Function015": {
+      "expected": "g inverso di negativo 2 x"
+    },
+    "Function016": {
+      "expected": "f inverso di, parentesi tonda aperta, 3 x, meno 1, parentesi tonda chiusa"
+    },
+    "Function017": {
+      "expected": "g inverso di, parentesi tonda aperta, x quadrato, parentesi tonda chiusa"
+    },
+    "Function018": {
+      "expected": "h inverso di uno mezzo"
+    },
+    "Function019": {
+      "expected": "h inverso di, parentesi tonda aperta, 1 sopra 2, parentesi tonda chiusa"
+    },
+    "Function020": {
+      "expected": "f inverso di, f di x"
+    },
+    "Function021": {
+      "expected": "g inverso di, g di x"
+    },
+    "Function022": {
+      "expected": "h inverso di, h di x"
+    },
+    "Function023": {
+      "expected": "f inverso di, f di 2 x"
+    },
+    "Function024": {
+      "expected": "g inverso di, g di negativo 2 x"
+    },
+    "Function025": {
+      "expected": "h inverso di, h di uno mezzo"
+    },
+    "Function026": {
+      "expected": "h inverso di, parentesi tonda aperta, h di, parentesi tonda aperta, 1 sopra 2, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "Function027": {
+      "expected": "f inverso di, parentesi tonda aperta, f di, parentesi tonda aperta, x più 1, parentesi tonda chiusa, parentesi tonda chiusa, uguale a x più 1"
+    },
+    "Function028": {
+      "expected": "g inverso di, parentesi tonda aperta, g di, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "Function029": {
+      "expected": "g inverso di, parentesi tonda aperta, g di, parentesi tonda aperta, x quadrato, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "Function030": {
+      "expected": "f di, f inverso di x"
+    },
+    "Function031": {
+      "expected": "g di, g inverso di x"
+    },
+    "Function032": {
+      "expected": "h di, h inverso di x"
+    },
+    "Function033": {
+      "expected": "f di, f inverso di 2 x"
+    },
+    "Function034": {
+      "expected": "g di, g inverso di negativo 2 x"
+    },
+    "Function035": {
+      "expected": "f di, parentesi tonda aperta, f inverso di, parentesi tonda aperta, 3 x, meno 1, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "Function036": {
+      "expected": "g di, g inverso di, parentesi tonda aperta, x quadrato, parentesi tonda chiusa"
+    },
+    "Function037": {
+      "expected": "h di, h inverso di uno mezzo"
+    },
+    "Function038": {
+      "expected": "h di, h inverso di, parentesi tonda aperta, la frazione 1 sopra 2, parentesi tonda chiusa"
+    },
+    "Function039": {
+      "expected": "f di, g di x"
+    },
+    "Function040": {
+      "expected": "f di, parentesi tonda aperta, g di, parentesi tonda aperta, x più 1, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "Function041": {
+      "expected": "h di, g di x"
+    },
+    "Function042": {
+      "expected": "h di, parentesi tonda aperta, g di, parentesi tonda aperta, la frazione con numerature x, e denominatore x più 1, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "Function043": {
+      "expected": "parentesi tonda aperta, f più g, parentesi tonda chiusa, di x, uguale a f di x, più g di x"
+    },
+    "Function044": {
+      "expected": "parentesi tonda aperta, f più g, parentesi tonda chiusa, di, parentesi tonda aperta, x più 1, parentesi tonda chiusa, uguale a f di, parentesi tonda aperta, x più 1, parentesi tonda chiusa, più g di, parentesi tonda aperta, x più 1, parentesi tonda chiusa"
+    },
+    "Function045": {
+      "expected": "parentesi tonda aperta, f punto g, parentesi tonda chiusa, di x"
+    },
+    "Function046": {
+      "expected": "parentesi tonda aperta, f punto g, parentesi tonda chiusa, di, parentesi tonda aperta, 2 x, più 5, parentesi tonda chiusa"
+    },
+    "Function047": {
+      "expected": "parentesi tonda aperta, f sopra g, parentesi tonda chiusa, di x, uguale a, f di x, sopra g di x"
+    },
+    "Function048": {
+      "expected": "parentesi tonda aperta, f sopra g, parentesi tonda chiusa, di, parentesi tonda aperta, 2 x, più 5, parentesi tonda chiusa, uguale a, la frazione con numerature f di, parentesi tonda aperta, 2 x, più 5, parentesi tonda chiusa, e denominatore g di, parentesi tonda aperta, 2 x, più 5, parentesi tonda chiusa"
+    },
+    "Function049": {
+      "expected": "parentesi tonda aperta, f composizione g, parentesi tonda chiusa, di x, uguale a f di, g di x"
+    },
+    "Function050": {
+      "expected": "2 f di x"
+    },
+    "Function051": {
+      "expected": "c f di x"
+    },
+    "Function052": {
+      "expected": "f quadrato di x"
+    },
+    "Function053": {
+      "expected": "f quadrato di, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function054": {
+      "expected": "f cubo di x"
+    },
+    "Function055": {
+      "expected": "f cubo di, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function056": {
+      "expected": "il quarta potenza di, f di x"
+    },
+    "Function057": {
+      "expected": "il quarta potenza di, f di, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function058": {
+      "expected": "il quinta potenza di, f di x"
+    },
+    "Function059": {
+      "expected": "il quinta potenza di, f di, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function060": {
+      "expected": "il n-esimo potenza di, f di x"
+    },
+    "Function061": {
+      "expected": "il n-esimo potenza di, f di, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function062": {
+      "expected": "g quadrato di x"
+    },
+    "Function063": {
+      "expected": "g quadrato di, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function064": {
+      "expected": "h cubo di x"
+    },
+    "Function065": {
+      "expected": "h cubo di, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function066": {
+      "expected": "il quarta potenza di, g di x"
+    },
+    "Function067": {
+      "expected": "il quarta potenza di, g di, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function068": {
+      "expected": "il quinta potenza di, h di x"
+    },
+    "Function069": {
+      "expected": "il quinta potenza di, h di, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function070": {
+      "expected": "il n-esimo potenza di, g di x"
+    },
+    "Function071": {
+      "expected": "il n-esimo potenza di, g di, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function072": {
+      "expected": "f sub 1, di x"
+    },
+    "Function073": {
+      "expected": "g sub 2, di, parentesi tonda aperta, x cubo, parentesi tonda chiusa"
+    },
+    "Function074": {
+      "expected": "h sub n, di, parentesi tonda aperta, 3 x, meno 2, parentesi tonda chiusa"
+    },
+    "Function075": {
+      "expected": "f sub 1, inverso di x"
+    },
+    "Function076": {
+      "expected": "g sub 2, inverso di, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function077": {
+      "expected": "h sub n, inverso di x"
+    },
+    "Function078": {
+      "expected": "g sub 1, inverso di, g sub 2, di x"
+    },
+    "Function079": {
+      "expected": "f sub 1, di, g sub 2, inverso di x"
+    },
+    "Function080": {
+      "expected": "f di, parentesi tonda aperta, x virgola y, parentesi tonda chiusa"
+    },
+    "Function081": {
+      "expected": "f di, parentesi tonda aperta, x virgola y virgola z, parentesi tonda chiusa"
+    },
+    "Function082": {
+      "expected": "f di, parentesi tonda aperta, x più 1, virgola, 2 y, parentesi tonda chiusa"
+    },
+    "Function083": {
+      "expected": "f di, parentesi tonda aperta, 2 x, virgola, x più 1, virgola, x quadrato, parentesi tonda chiusa"
+    },
+    "Function084": {
+      "expected": "f per x"
+    },
+    "Function085": {
+      "expected": "g per x"
+    },
+    "Function086": {
+      "expected": "h per x"
+    },
+    "Function087": {
+      "expected": "f per 2 x"
+    },
+    "Function088": {
+      "expected": "g per negativo 2 x"
+    },
+    "Function089": {
+      "expected": "h per uno mezzo"
+    },
+    "Function091": {
+      "expected": "f per, parentesi tonda aperta, x più 1, parentesi tonda chiusa, uguale a, f per x, più 1"
+    },
+    "Function092": {
+      "expected": "g per, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function093": {
+      "expected": "g per, parentesi tonda aperta, x quadrato, parentesi tonda chiusa"
+    },
+    "Function094": {
+      "expected": "f alla negativo 1 potenza, per x"
+    },
+    "Function095": {
+      "expected": "g alla negativo 1 potenza, per x"
+    },
+    "Function096": {
+      "expected": "h alla negativo 1 potenza, per x"
+    },
+    "Function097": {
+      "expected": "f alla negativo 1 potenza, per 2 x"
+    },
+    "Function098": {
+      "expected": "g alla negativo 1 potenza, per negativo 2 x"
+    },
+    "Function099": {
+      "expected": "f alla negativo 1 potenza, per, parentesi tonda aperta, 3 x, meno 1, parentesi tonda chiusa"
+    },
+    "Function100": {
+      "expected": "g alla negativo 1 potenza, per, parentesi tonda aperta, x quadrato, parentesi tonda chiusa"
+    },
+    "Function101": {
+      "expected": "h alla negativo 1 potenza, per uno mezzo"
+    },
+    "Function103": {
+      "expected": "f alla negativo 1 potenza, per, f per x"
+    },
+    "Function104": {
+      "expected": "g alla negativo 1 potenza, per, g per x"
+    },
+    "Function105": {
+      "expected": "h alla negativo 1 potenza, per, h per x"
+    },
+    "Function106": {
+      "expected": "f alla negativo 1 potenza, per, f per 2 x"
+    },
+    "Function107": {
+      "expected": "g alla negativo 1 potenza, per, g per negativo 2 x"
+    },
+    "Function108": {
+      "expected": "h alla negativo 1 potenza, per, h per uno mezzo"
+    },
+    "Function110": {
+      "expected": "f alla negativo 1 potenza, per, parentesi tonda aperta, f per, parentesi tonda aperta, x più 1, parentesi tonda chiusa, parentesi tonda chiusa, uguale a x più 1"
+    },
+    "Function111": {
+      "expected": "g alla negativo 1 potenza, per, parentesi tonda aperta, g per, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "Function112": {
+      "expected": "g alla negativo 1 potenza, per, parentesi tonda aperta, g per, parentesi tonda aperta, x quadrato, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "Function113": {
+      "expected": "f per, parentesi tonda aperta, f alla negativo 1 potenza, per x, parentesi tonda chiusa"
+    },
+    "Function114": {
+      "expected": "g per, parentesi tonda aperta, g alla negativo 1 potenza, per x, parentesi tonda chiusa"
+    },
+    "Function115": {
+      "expected": "h per, parentesi tonda aperta, h alla negativo 1 potenza, per x, parentesi tonda chiusa"
+    },
+    "Function116": {
+      "expected": "f per, parentesi tonda aperta, f alla negativo 1 potenza, per 2 x, parentesi tonda chiusa"
+    },
+    "Function117": {
+      "expected": "g per, parentesi tonda aperta, g alla negativo 1 potenza, per negativo 2 x, parentesi tonda chiusa"
+    },
+    "Function118": {
+      "expected": "f per, parentesi tonda aperta, f alla negativo 1 potenza, per, parentesi tonda aperta, 3 x, meno 1, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "Function119": {
+      "expected": "g per, parentesi tonda aperta, g alla negativo 1 potenza, per, parentesi tonda aperta, x quadrato, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "Function120": {
+      "expected": "h per, parentesi tonda aperta, h alla negativo 1 potenza, per uno mezzo, parentesi tonda chiusa"
+    },
+    "Function122": {
+      "expected": "f per, g per x"
+    },
+    "Function123": {
+      "expected": "f per, parentesi tonda aperta, g per, parentesi tonda aperta, x più 1, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "Function124": {
+      "expected": "h per, g per x"
+    },
+    "Function125": {
+      "expected": "h per, parentesi tonda aperta, g per, parentesi tonda aperta, la frazione con numerature x, e denominatore x più 1, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "Function126": {
+      "expected": "parentesi tonda aperta, f più g, parentesi tonda chiusa, per x, uguale a, f per x, più, g per x"
+    },
+    "Function127": {
+      "expected": "parentesi tonda aperta, f più g, parentesi tonda chiusa, per, parentesi tonda aperta, x più 1, parentesi tonda chiusa, uguale a, f per, parentesi tonda aperta, x più 1, parentesi tonda chiusa, più, g per, parentesi tonda aperta, x più 1, parentesi tonda chiusa"
+    },
+    "Function128": {
+      "expected": "parentesi tonda aperta, f punto g, parentesi tonda chiusa, per x"
+    },
+    "Function129": {
+      "expected": "parentesi tonda aperta, f punto g, parentesi tonda chiusa, per, parentesi tonda aperta, 2 x, più 5, parentesi tonda chiusa"
+    },
+    "Function130": {
+      "expected": "parentesi tonda aperta, f sopra g, parentesi tonda chiusa, per x, uguale a, la frazione con numerature, f per x, e denominatore, g per x"
+    },
+    "Function131": {
+      "expected": "parentesi tonda aperta, f sopra g, parentesi tonda chiusa, per, parentesi tonda aperta, 2 x, più 5, parentesi tonda chiusa, uguale a, la frazione con numerature, f per, parentesi tonda aperta, 2 x, più 5, parentesi tonda chiusa, e denominatore, g per, parentesi tonda aperta, 2 x, più 5, parentesi tonda chiusa"
+    },
+    "Function132": {
+      "expected": "2, f per x"
+    },
+    "Function133": {
+      "expected": "c, f per x"
+    },
+    "Function134": {
+      "expected": "f quadrato per x"
+    },
+    "Function135": {
+      "expected": "f quadrato per, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function136": {
+      "expected": "f cubo per x"
+    },
+    "Function137": {
+      "expected": "f cubo per, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function138": {
+      "expected": "f alla quarta potenza, per x"
+    },
+    "Function139": {
+      "expected": "f alla quarta potenza, per, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function140": {
+      "expected": "f alla quinta potenza, per x"
+    },
+    "Function141": {
+      "expected": "f alla quinta potenza, per, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function142": {
+      "expected": "f alla n-esimo potenza, per x"
+    },
+    "Function143": {
+      "expected": "f alla n-esimo potenza, per, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function144": {
+      "expected": "g quadrato per x"
+    },
+    "Function145": {
+      "expected": "g quadrato per, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function146": {
+      "expected": "h cubo per x"
+    },
+    "Function147": {
+      "expected": "h cubo per, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function148": {
+      "expected": "g alla quarta potenza, per x"
+    },
+    "Function149": {
+      "expected": "g alla quarta potenza, per, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function150": {
+      "expected": "h alla quinta potenza, per x"
+    },
+    "Function151": {
+      "expected": "h alla quinta potenza, per, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function152": {
+      "expected": "g alla n-esimo potenza, per x"
+    },
+    "Function153": {
+      "expected": "g alla n-esimo potenza, per, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function154": {
+      "expected": "f sub 1, per x"
+    },
+    "Function156": {
+      "expected": "g sub 2, per, parentesi tonda aperta, x cubo, parentesi tonda chiusa"
+    },
+    "Function157": {
+      "expected": "h sub n, per, parentesi tonda aperta, 3 x, meno 2, parentesi tonda chiusa"
+    },
+    "Function158": {
+      "expected": "f sub 1, alla negativo 1 potenza, per x"
+    },
+    "Function159": {
+      "expected": "g sub 2, alla negativo 1 potenza, per, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa"
+    },
+    "Function160": {
+      "expected": "h sub n, alla negativo 1 potenza, per x"
+    },
+    "Function161": {
+      "expected": "g sub 1, alla negativo 1 potenza, per, parentesi tonda aperta, g sub 2, per x, parentesi tonda chiusa"
+    },
+    "Function162": {
+      "expected": "f sub 1, per, parentesi tonda aperta, g sub 2, alla negativo 1 potenza, per x, parentesi tonda chiusa"
+    },
+    "Function163": {
+      "expected": "f per, parentesi tonda aperta, x virgola y, parentesi tonda chiusa"
+    },
+    "Function164": {
+      "expected": "f per, parentesi tonda aperta, x virgola y virgola z, parentesi tonda chiusa"
+    },
+    "Function165": {
+      "expected": "f per, parentesi tonda aperta, x più 1, virgola, 2 y, parentesi tonda chiusa"
+    },
+    "Function166": {
+      "expected": "f per, parentesi tonda aperta, 2 x, virgola, x più 1, virgola, x quadrato, parentesi tonda chiusa"
+    }
+  }
+}

@@ -1,0 +1,423 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "ItalianClearspeakRoots",
+  "locale": "it",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_roots.json",
+  "information": "Italian Clearspeak Roots rule tests.",
+  "active": "ClearspeakItalian",
+  "exclude": [],
+  "tests": {
+    "Root001": {
+      "expected": "la radice quadrata di 2"
+    },
+    "Root002": {
+      "expected": "3 più la radice quadrata di 2"
+    },
+    "Root003": {
+      "expected": "3 più o meno la radice quadrata di 2"
+    },
+    "Root004": {
+      "expected": "3 meno più la radice quadrata di 2"
+    },
+    "Root005": {
+      "expected": "la radice quadrata negativa di 2"
+    },
+    "Root006": {
+      "expected": "3 meno la radice quadrata di 2"
+    },
+    "Root007": {
+      "expected": "3 più la radice quadrata negativa di 2"
+    },
+    "Root008": {
+      "expected": "3 meno la radice quadrata negativa di 2"
+    },
+    "Root009": {
+      "expected": "3 più, parentesi tonda aperta, la radice quadrata negativa di 2, parentesi tonda chiusa"
+    },
+    "Root010": {
+      "expected": "3 meno, parentesi tonda aperta, la radice quadrata negativa di 2, parentesi tonda chiusa"
+    },
+    "Root011": {
+      "expected": "la radice quadrata di x più 1"
+    },
+    "Root011a": {
+      "expected": "la radice quadrata di x, più 1"
+    },
+    "Root012": {
+      "expected": "la radice quadrata negativa di x"
+    },
+    "Root013": {
+      "expected": "parentesi tonda aperta, la radice quadrata di x, parentesi tonda chiusa, quadrato"
+    },
+    "Root014": {
+      "expected": "negativo, parentesi tonda aperta, la radice quadrata di x, parentesi tonda chiusa, quadrato"
+    },
+    "Root015": {
+      "expected": "la radice quadrata di x, quadrato"
+    },
+    "Root016": {
+      "expected": "la radice quadrata di x quadrato"
+    },
+    "Root017": {
+      "expected": "la radice quadrata di x quadrato più y quadrato"
+    },
+    "Root018": {
+      "expected": "la radice quadrata di, x sub 1, quadrato più, x sub 2, quadrato"
+    },
+    "Root019": {
+      "expected": "la radice quadrata di, parentesi tonda aperta, x sub 2, meno, x sub 1, parentesi tonda chiusa, quadrato più, parentesi tonda aperta, y sub 2, meno, y sub 1, parentesi tonda chiusa, quadrato"
+    },
+    "Root020": {
+      "expected": "la radice quadrata di uno mezzo"
+    },
+    "Root021": {
+      "expected": "la radice quadrata di, 23 sopra 66"
+    },
+    "Root022": {
+      "expected": "la radice quadrata di, la frazione con numerature x più 1, e denominatore 2 x, più 5"
+    },
+    "Root023": {
+      "expected": "la frazione con numerature negativo b più o meno la radice quadrata di b quadrato meno 4 a c, e denominatore 2 a"
+    },
+    "Root024": {
+      "expected": "la radice quadrata positiva di 2"
+    },
+    "Root025": {
+      "expected": "3 più la radice quadrata positiva di 2"
+    },
+    "Root026": {
+      "expected": "3 più o meno la radice quadrata di 2"
+    },
+    "Root027": {
+      "expected": "3 meno più la radice quadrata di 2"
+    },
+    "Root028": {
+      "expected": "la radice quadrata negativa di 2"
+    },
+    "Root029": {
+      "expected": "3 meno la radice quadrata positiva di 2"
+    },
+    "Root030": {
+      "expected": "3 più la radice quadrata negativa di 2"
+    },
+    "Root031": {
+      "expected": "3 meno la radice quadrata negativa di 2"
+    },
+    "Root032": {
+      "expected": "3 più, parentesi tonda aperta, la radice quadrata negativa di 2, parentesi tonda chiusa"
+    },
+    "Root033": {
+      "expected": "3 meno, parentesi tonda aperta, la radice quadrata negativa di 2, parentesi tonda chiusa"
+    },
+    "Root034": {
+      "expected": "la radice quadrata positiva di x più 1"
+    },
+    "Root034a": {
+      "expected": "la radice quadrata positiva di x, più 1"
+    },
+    "Root035": {
+      "expected": "la radice quadrata negativa di x"
+    },
+    "Root036": {
+      "expected": "parentesi tonda aperta, la radice quadrata positiva di x, parentesi tonda chiusa, quadrato"
+    },
+    "Root037": {
+      "expected": "parentesi tonda aperta, la radice quadrata negativa di x, parentesi tonda chiusa, quadrato"
+    },
+    "Root038": {
+      "expected": "negativo, parentesi tonda aperta, la radice quadrata positiva di x, parentesi tonda chiusa, quadrato"
+    },
+    "Root039": {
+      "expected": "la radice quadrata positiva di x, quadrato"
+    },
+    "Root040": {
+      "expected": "la radice quadrata positiva di x quadrato"
+    },
+    "Root041": {
+      "expected": "la radice quadrata positiva di x quadrato più y quadrato"
+    },
+    "Root042": {
+      "expected": "la radice quadrata positiva di, x sub 1, quadrato più, x sub 2, quadrato"
+    },
+    "Root043": {
+      "expected": "la radice quadrata positiva di, parentesi tonda aperta, x sub 2, meno, x sub 1, parentesi tonda chiusa, quadrato più, parentesi tonda aperta, y sub 2, meno, y sub 1, parentesi tonda chiusa, quadrato"
+    },
+    "Root044": {
+      "expected": "la radice quadrata positiva di uno mezzo"
+    },
+    "Root045": {
+      "expected": "la radice quadrata positiva di, 23 sopra 66"
+    },
+    "Root046": {
+      "expected": "la radice quadrata positiva di, la frazione con numerature x più 1, e denominatore 2 x, più 5"
+    },
+    "Root047": {
+      "expected": "la frazione con numerature negativo b più o meno la radice quadrata di b quadrato meno 4 a c, e denominatore 2 a"
+    },
+    "Root048": {
+      "expected": "la radice quadrata di 2, fine radice"
+    },
+    "Root049": {
+      "expected": "3 più la radice quadrata di 2, fine radice"
+    },
+    "Root050": {
+      "expected": "3 più o meno la radice quadrata di 2, fine radice"
+    },
+    "Root051": {
+      "expected": "3 meno più la radice quadrata di 2, fine radice"
+    },
+    "Root052": {
+      "expected": "la radice quadrata negativa di 2, fine radice"
+    },
+    "Root053": {
+      "expected": "3 meno la radice quadrata di 2, fine radice"
+    },
+    "Root054": {
+      "expected": "3 più la radice quadrata negativa di 2, fine radice"
+    },
+    "Root055": {
+      "expected": "3 meno la radice quadrata negativa di 2, fine radice"
+    },
+    "Root056": {
+      "expected": "3 più, parentesi tonda aperta, la radice quadrata negativa di 2, fine radice, parentesi tonda chiusa"
+    },
+    "Root057": {
+      "expected": "3 meno, parentesi tonda aperta, la radice quadrata negativa di 2, fine radice, parentesi tonda chiusa"
+    },
+    "Root058": {
+      "expected": "la radice quadrata di x più 1, fine radice"
+    },
+    "Root058a": {
+      "expected": "la radice quadrata di x, fine radice, più 1"
+    },
+    "Root059": {
+      "expected": "la radice quadrata negativa di x, fine radice"
+    },
+    "Root060": {
+      "expected": "parentesi tonda aperta, la radice quadrata di x, fine radice, parentesi tonda chiusa, quadrato"
+    },
+    "Root061": {
+      "expected": "negativo, parentesi tonda aperta, la radice quadrata di x, fine radice, parentesi tonda chiusa, quadrato"
+    },
+    "Root062": {
+      "expected": "la radice quadrata di x, fine radice, quadrato"
+    },
+    "Root063": {
+      "expected": "la radice quadrata di x quadrato, fine radice"
+    },
+    "Root064": {
+      "expected": "la radice quadrata di x quadrato più y quadrato, fine radice"
+    },
+    "Root065": {
+      "expected": "la radice quadrata di, x sub 1, quadrato più, x sub 2, quadrato, fine radice"
+    },
+    "Root066": {
+      "expected": "la radice quadrata di, parentesi tonda aperta, x sub 2, meno, x sub 1, parentesi tonda chiusa, quadrato più, parentesi tonda aperta, y sub 2, meno, y sub 1, parentesi tonda chiusa, quadrato, fine radice"
+    },
+    "Root067": {
+      "expected": "la radice quadrata di uno mezzo, fine radice"
+    },
+    "Root068": {
+      "expected": "la radice quadrata di, 23 sopra 66, fine radice"
+    },
+    "Root069": {
+      "expected": "la radice quadrata di, la frazione con numerature x più 1, e denominatore 2 x, più 5, fine radice"
+    },
+    "Root070": {
+      "expected": "la frazione con numerature negativo b più o meno la radice quadrata di b quadrato meno 4 a c, fine radice, e denominatore 2 a"
+    },
+    "Root071": {
+      "expected": "la radice quadrata positiva di 2, fine radice"
+    },
+    "Root072": {
+      "expected": "3 più la radice quadrata positiva di 2, fine radice"
+    },
+    "Root073": {
+      "expected": "3 più o meno la radice quadrata di 2, fine radice"
+    },
+    "Root074": {
+      "expected": "3 meno più la radice quadrata di 2, fine radice"
+    },
+    "Root075": {
+      "expected": "la radice quadrata negativa di 2, fine radice"
+    },
+    "Root076": {
+      "expected": "3 meno la radice quadrata positiva di 2, fine radice"
+    },
+    "Root077": {
+      "expected": "3 più la radice quadrata negativa di 2, fine radice"
+    },
+    "Root078": {
+      "expected": "3 meno la radice quadrata negativa di 2, fine radice"
+    },
+    "Root079": {
+      "expected": "3 più, parentesi tonda aperta, la radice quadrata negativa di 2, fine radice, parentesi tonda chiusa"
+    },
+    "Root080": {
+      "expected": "3 meno, parentesi tonda aperta, la radice quadrata negativa di 2, fine radice, parentesi tonda chiusa"
+    },
+    "Root081": {
+      "expected": "la radice quadrata positiva di x più 1, fine radice"
+    },
+    "Root081a": {
+      "expected": "la radice quadrata positiva di x, fine radice, più 1"
+    },
+    "Root082": {
+      "expected": "la radice quadrata negativa di x, fine radice"
+    },
+    "Root083": {
+      "expected": "parentesi tonda aperta, la radice quadrata positiva di x, fine radice, parentesi tonda chiusa, quadrato"
+    },
+    "Root084": {
+      "expected": "parentesi tonda aperta, la radice quadrata negativa di x, fine radice, parentesi tonda chiusa, quadrato"
+    },
+    "Root085": {
+      "expected": "la radice quadrata positiva di x, fine radice, quadrato"
+    },
+    "Root086": {
+      "expected": "la radice quadrata positiva di x quadrato, fine radice"
+    },
+    "Root087": {
+      "expected": "la radice quadrata positiva di x quadrato più y quadrato, fine radice"
+    },
+    "Root088": {
+      "expected": "la radice quadrata positiva di, x sub 1, quadrato più, x sub 2, quadrato, fine radice"
+    },
+    "Root089": {
+      "expected": "la radice quadrata positiva di, parentesi tonda aperta, x sub 2, meno, x sub 1, parentesi tonda chiusa, quadrato più, parentesi tonda aperta, y sub 2, meno, y sub 1, parentesi tonda chiusa, quadrato, fine radice"
+    },
+    "Root090": {
+      "expected": "la radice quadrata positiva di uno mezzo, fine radice"
+    },
+    "Root091": {
+      "expected": "la radice quadrata positiva di, 23 sopra 66, fine radice"
+    },
+    "Root092": {
+      "expected": "la radice quadrata positiva di, la frazione con numerature x più 1, e denominatore 2 x, più 5, fine radice"
+    },
+    "Root093": {
+      "expected": "la frazione con numerature negativo b più o meno la radice quadrata di b quadrato meno 4 a c, fine radice, e denominatore 2 a"
+    },
+    "HighRoot001": {
+      "expected": "la radice cubica di y"
+    },
+    "HighRoot002": {
+      "expected": "il quarta radice di n"
+    },
+    "HighRoot003": {
+      "expected": "il quinta radice di 35"
+    },
+    "HighRoot004": {
+      "expected": "il nona radice di 146"
+    },
+    "HighRoot005": {
+      "expected": "il n-esimo radice di d"
+    },
+    "HighRoot006": {
+      "expected": "il m-esimo radice di 243"
+    },
+    "HighRoot007": {
+      "expected": "il i-esimo radice di 2 alla i-esimo potenza"
+    },
+    "HighRoot008": {
+      "expected": "il j-esimo radice di 125"
+    },
+    "HighRoot009": {
+      "expected": "negativo la radice cubica di y"
+    },
+    "HighRoot010": {
+      "expected": "negativo il quarta radice di n"
+    },
+    "HighRoot011": {
+      "expected": "la radice cubica di y, fine radice"
+    },
+    "HighRoot012": {
+      "expected": "il quarta radice di n, fine radice"
+    },
+    "HighRoot013": {
+      "expected": "il quinta radice di 35, fine radice"
+    },
+    "HighRoot014": {
+      "expected": "il nona radice di 146, fine radice"
+    },
+    "HighRoot015": {
+      "expected": "il n-esimo radice di d, fine radice"
+    },
+    "HighRoot016": {
+      "expected": "il m-esimo radice di 243, fine radice"
+    },
+    "HighRoot017": {
+      "expected": "il i-esimo radice di 2 alla i-esimo potenza, fine radice"
+    },
+    "HighRoot018": {
+      "expected": "il j-esimo radice di 125, fine radice"
+    },
+    "HighRoot019": {
+      "expected": "negativo la radice cubica di y, fine radice"
+    },
+    "HighRoot020": {
+      "expected": "negativo il quarta radice di n, fine radice"
+    },
+    "HighRoot021": {
+      "expected": "la radice cubica di y"
+    },
+    "HighRoot022": {
+      "expected": "il quarta radice di n"
+    },
+    "HighRoot023": {
+      "expected": "il quinta radice di 35"
+    },
+    "HighRoot024": {
+      "expected": "il nona radice di 146"
+    },
+    "HighRoot025": {
+      "expected": "il n-esimo radice di d"
+    },
+    "HighRoot026": {
+      "expected": "il m-esimo radice di 243"
+    },
+    "HighRoot027": {
+      "expected": "il i-esimo radice di 2 alla i-esimo potenza"
+    },
+    "HighRoot028": {
+      "expected": "il j-esimo radice di 125"
+    },
+    "HighRoot029": {
+      "expected": "negativo la radice cubica di y"
+    },
+    "HighRoot030": {
+      "expected": "negativo il quarta radice di n"
+    },
+    "HighRoot031": {
+      "expected": "la radice cubica di y, fine radice"
+    },
+    "HighRoot032": {
+      "expected": "il quarta radice di n, fine radice"
+    },
+    "HighRoot033": {
+      "expected": "il quinta radice di 35, fine radice"
+    },
+    "HighRoot034": {
+      "expected": "il nona radice di 146, fine radice"
+    },
+    "HighRoot035": {
+      "expected": "il n-esimo radice di d, fine radice"
+    },
+    "HighRoot036": {
+      "expected": "il m-esimo radice di 243, fine radice"
+    },
+    "HighRoot037": {
+      "expected": "il i-esimo radice di 2 alla i-esimo potenza, fine radice"
+    },
+    "HighRoot038": {
+      "expected": "il j-esimo radice di 125, fine radice"
+    },
+    "HighRoot039": {
+      "expected": "negativo la radice cubica di y, fine radice"
+    },
+    "HighRoot040": {
+      "expected": "negativo il quarta radice di n, fine radice"
+    }
+  }
+}

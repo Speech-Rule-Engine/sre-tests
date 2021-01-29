@@ -1,0 +1,41 @@
+{
+  "name": "ItalianClearspeakCoverage",
+  "locale": "it",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_coverage.json",
+  "information": "Italian Clearspeak Coverage tests.",
+  "active": "ClearspeakItalian",
+  "exclude": [],
+  "tests": {
+    "ApplSimple_0": {
+      "expected": "f di, g di x"
+    },
+    "ApplSimple_1": {
+      "expected": "f di, g di x, uguale a f di x, più g di x"
+    },
+    "BinaryOperationPause_0": {
+      "expected": "seno x y"
+    },
+    "Empty_Line_0": {
+      "expected": "2 linee, Riga 1: a. Riga 2: vuoto"
+    },
+    "Empty_Line_1": {
+      "expected": "2 linee, Riga 1: a. Riga 2: vuoto"
+    },
+    "Empty_Line_2": {
+      "expected": "2 linee, Riga 1: a. Riga 2: vuoto"
+    },
+    "Empty_Cell_0": {
+      "expected": "2 linee, Riga 1: a; uguale a; b"
+    },
+    "Empty_Cell_1": {
+      "expected": "2 linee, Riga 1: a; uguale a; b. Riga 2: vuoto"
+    },
+    "Empty_Cell_2": {
+      "expected": "2 linee, Riga 1: a; uguale a; b. Riga 2: vuoto"
+    },
+    "Empty_Cell_3": {
+      "expected": "2 linee, Riga 1: a; uguale a; b. Riga 2: 1; vuoto; 2"
+    }
+  }
+}

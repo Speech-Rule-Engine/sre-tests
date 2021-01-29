@@ -1,0 +1,420 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "ItalianClearspeakFractions",
+  "locale": "it",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_fractions.json",
+  "information": "Italian Clearspeak Fractions rule tests.",
+  "active": "ClearspeakItalian",
+  "exclude": [],
+  "tests": {
+    "Frac001": {
+      "expected": "uno mezzo"
+    },
+    "Frac002": {
+      "expected": "12 sopra 32"
+    },
+    "Frac002a": {
+      "expected": "x sopra y"
+    },
+    "Frac002b": {
+      "expected": "2 x sopra 3 y"
+    },
+    "Frac002c": {
+      "expected": "x y sopra c d"
+    },
+    "Frac002d": {
+      "expected": "uno mezzo sopra uno terza"
+    },
+    "Frac002e": {
+      "expected": "negativo x sopra y"
+    },
+    "Frac002f": {
+      "expected": "negativo 2 x sopra 3 y"
+    },
+    "Frac002g": {
+      "expected": "x y sopra negativo c d"
+    },
+    "Frac002h": {
+      "expected": "uno mezzo sopra negativo uno terza"
+    },
+    "Frac003": {
+      "expected": "la frazione con numerature 2 più 3, e denominatore 13"
+    },
+    "Frac004": {
+      "expected": "la frazione con numerature x più y, e denominatore 2"
+    },
+    "Frac005": {
+      "expected": "la frazione con numerature x più y, e denominatore x meno y"
+    },
+    "Frac006": {
+      "expected": "la frazione con numerature x più y, e denominatore x meno y, più due terze"
+    },
+    "Frac007": {
+      "expected": "miles sopra gallon"
+    },
+    "Frac008": {
+      "expected": "2 miles sopra 3 gallons"
+    },
+    "Frac009": {
+      "expected": "1 sopra 2"
+    },
+    "Frac010": {
+      "expected": "12 sopra 32"
+    },
+    "Frac011": {
+      "expected": "2 più 3 sopra 13"
+    },
+    "Frac012": {
+      "expected": "x più y sopra 2"
+    },
+    "Frac013": {
+      "expected": "x più y sopra x meno y"
+    },
+    "Frac014": {
+      "expected": "x più y sopra x meno y, più, 2 sopra 3"
+    },
+    "Frac015": {
+      "expected": "miles sopra gallon"
+    },
+    "Frac016": {
+      "expected": "2 miles sopra 3 gallons"
+    },
+    "Frac017": {
+      "expected": "1 sopra 2, fine frazione"
+    },
+    "Frac018": {
+      "expected": "12 sopra 32, fine frazione"
+    },
+    "Frac019": {
+      "expected": "2 più 3 sopra 13, fine frazione"
+    },
+    "Frac020": {
+      "expected": "x più y sopra 2, fine frazione"
+    },
+    "Frac021": {
+      "expected": "x più y sopra x meno y, fine frazione"
+    },
+    "Frac022": {
+      "expected": "x più y sopra x meno y, fine frazione, più, 2 sopra 3, fine frazione"
+    },
+    "Frac023": {
+      "expected": "miles sopra gallons, fine frazione"
+    },
+    "Frac024": {
+      "expected": "2 miles sopra 3 gallons, fine frazione"
+    },
+    "Frac025": {
+      "expected": "la frazione con numerature 1, e denominatore 2, fine frazione"
+    },
+    "Frac026": {
+      "expected": "la frazione con numerature 12, e denominatore 32, fine frazione"
+    },
+    "Frac027": {
+      "expected": "la frazione con numerature 2 più 3, e denominatore 13, fine frazione"
+    },
+    "Frac028": {
+      "expected": "la frazione con numerature x più y, e denominatore 2, fine frazione"
+    },
+    "Frac029": {
+      "expected": "la frazione con numerature x più y, e denominatore x meno y, fine frazione"
+    },
+    "Frac030": {
+      "expected": "la frazione con numerature x più y, e denominatore x meno y, fine frazione, più, la frazione con numerature 2, e denominatore 3, fine frazione"
+    },
+    "Frac031": {
+      "expected": "la frazione con numerature miles, e denominatore gallon, fine frazione"
+    },
+    "Frac032": {
+      "expected": "la frazione con numerature 1, e denominatore 2"
+    },
+    "Frac033": {
+      "expected": "la frazione con numerature 12, e denominatore 32"
+    },
+    "Frac034": {
+      "expected": "la frazione con numerature 2 più 3, e denominatore 13"
+    },
+    "Frac035": {
+      "expected": "la frazione con numerature x più y, e denominatore 2"
+    },
+    "Frac036": {
+      "expected": "la frazione con numerature x più y, e denominatore x meno y"
+    },
+    "Frac037": {
+      "expected": "la frazione con numerature x più y, e denominatore x meno y, più, la frazione con numerature 2, e denominatore 3"
+    },
+    "Frac038": {
+      "expected": "la frazione con numerature miles, e denominatore gallon"
+    },
+    "Frac039": {
+      "expected": "la frazione con numerature 2 miles, e denominatore 3 gallons"
+    },
+    "Frac040": {
+      "expected": "la frazione 1 sopra 2"
+    },
+    "Frac041": {
+      "expected": "la frazione 12 sopra 32"
+    },
+    "Frac042": {
+      "expected": "la frazione 2 più 3 sopra 13"
+    },
+    "Frac043": {
+      "expected": "la frazione x più y sopra 2"
+    },
+    "Frac044": {
+      "expected": "la frazione x più y sopra x meno y"
+    },
+    "Frac045": {
+      "expected": "la frazione x più y sopra x meno y, più, la frazione 2 sopra 3"
+    },
+    "Frac046": {
+      "expected": "la frazione miles sopra gallon"
+    },
+    "Frac047": {
+      "expected": "la frazione 2 miles sopra 3 gallons"
+    },
+    "Frac048": {
+      "expected": "1 per 2"
+    },
+    "Frac049": {
+      "expected": "12 per 32"
+    },
+    "Frac050": {
+      "expected": "2 più 3 per 13"
+    },
+    "Frac051": {
+      "expected": "x più y per 2"
+    },
+    "Frac052": {
+      "expected": "x più y per x meno y"
+    },
+    "Frac053": {
+      "expected": "x più y per x meno y, più, 2 per 3"
+    },
+    "Frac054": {
+      "expected": "miles per gallon"
+    },
+    "Frac055": {
+      "expected": "2 miles per 3 gallons"
+    },
+    "Frac056": {
+      "expected": "uno mezzo"
+    },
+    "Frac057": {
+      "expected": "dodici trentaduesime"
+    },
+    "Frac058": {
+      "expected": "la frazione con numerature 2 più 3, e denominatore 13"
+    },
+    "Frac059": {
+      "expected": "la frazione con numerature x più y, e denominatore 2"
+    },
+    "Frac060": {
+      "expected": "la frazione con numerature x più y, e denominatore x meno y"
+    },
+    "Frac061": {
+      "expected": "la frazione con numerature x più y, e denominatore x meno y, più due terze"
+    },
+    "Frac062": {
+      "expected": "miles sopra gallon"
+    },
+    "Frac063": {
+      "expected": "2 miles sopra 3 gallons"
+    },
+    "Frac064": {
+      "expected": "uno mezzo"
+    },
+    "Frac065": {
+      "expected": "12 sopra 32, fine frazione"
+    },
+    "Frac066": {
+      "expected": "la frazione con numerature 2 più 3, e denominatore 13, fine frazione"
+    },
+    "Frac067": {
+      "expected": "la frazione con numerature x più y, e denominatore 2, fine frazione"
+    },
+    "Frac068": {
+      "expected": "la frazione con numerature x più y, e denominatore x meno y, fine frazione"
+    },
+    "Frac069": {
+      "expected": "la frazione con numerature x più y, e denominatore x meno y, fine frazione, più due terze"
+    },
+    "Frac070": {
+      "expected": "miles sopra gallons"
+    },
+    "Frac071": {
+      "expected": "2 miles sopra 3 gallons"
+    },
+    "FrTxt001": {
+      "expected": "2 miles sopra 3 gallons"
+    },
+    "FrTxt002": {
+      "expected": "rise sopra run"
+    },
+    "FrTxt003": {
+      "expected": "successful outcomes sopra total outcomes"
+    },
+    "FrTxt004": {
+      "expected": "6 ways of rolling a 7 sopra 36 ways of rolling the pair of dice"
+    },
+    "NestFrac001": {
+      "expected": "uno mezzo sopra uno terza"
+    },
+    "NestFrac002": {
+      "expected": "la frazione con numerature 1, e denominatore, 2 sopra uno terza"
+    },
+    "NestFrac003": {
+      "expected": "uno mezzo sopra 3"
+    },
+    "NestFrac004": {
+      "expected": "1 sopra due terze"
+    },
+    "NestFrac005": {
+      "expected": "la frazione con numerature, 11 sopra 32, e denominatore, 16 sopra 51"
+    },
+    "NestFrac006": {
+      "expected": "la frazione con numerature 11, e denominatore, la frazione con numerature 32, e denominatore, 16 sopra 51"
+    },
+    "NestFrac007": {
+      "expected": "la frazione con numerature 1 più, 4 sopra x, e denominatore 2"
+    },
+    "NestFrac008": {
+      "expected": "la frazione con numerature 3, e denominatore 2 più, 4 sopra x"
+    },
+    "NestFrac009": {
+      "expected": "la frazione con numerature, 10 sopra 22, e denominatore uno mezzo"
+    },
+    "NestFrac010": {
+      "expected": "la frazione con numerature 1 più due terze, e denominatore 1 meno due terze"
+    },
+    "NestFrac011": {
+      "expected": "la frazione con numerature 1 più, x sopra 2, e denominatore 1 meno, x sopra 2"
+    },
+    "NestFrac012": {
+      "expected": "la frazione con numerature, la frazione con numerature x più 1, e denominatore x meno 1, più 1, e denominatore x più 1"
+    },
+    "NestFrac013": {
+      "expected": "la frazione con numerature, la frazione con numerature x più 1, e denominatore x meno 4, più uno mezzo, e denominatore x più, 1 sopra 16"
+    },
+    "NestFrac014": {
+      "expected": "1 più, la frazione con numerature x, e denominatore 1 più, 2 sopra x"
+    },
+    "NestFrac015": {
+      "expected": "1 più, la frazione con numerature x più 3, e denominatore 1 più, la frazione con numerature 2, e denominatore x più 3"
+    },
+    "NestFrac016": {
+      "expected": "1 più, la frazione con numerature 1, e denominatore 1 più, la frazione con numerature 1, e denominatore 1 più, la frazione con numerature 1, e denominatore 1 più 1"
+    },
+    "NestFrac017": {
+      "expected": "1 più, la frazione con numerature 1, e denominatore 1 più, la frazione con numerature 1, e denominatore 1 più, la frazione con numerature 1, e denominatore 1 più puntini in orizzontale"
+    },
+    "NestFrac018": {
+      "expected": "a sub 0, più, la frazione con numerature 1, e denominatore, a sub 1, più, la frazione con numerature 1, e denominatore, a sub 2, più, la frazione con numerature 1, e denominatore, a sub 3, più puntini in orizzontale"
+    },
+    "NestFrac019": {
+      "expected": "uno mezzo sopra uno terza"
+    },
+    "NestFrac020": {
+      "expected": "la frazione con numerature 1, e denominatore, 2 sopra uno terza, fine frazione"
+    },
+    "NestFrac021": {
+      "expected": "uno mezzo sopra 3, fine frazione"
+    },
+    "NestFrac022": {
+      "expected": "1 sopra due terze, fine frazione"
+    },
+    "NestFrac023": {
+      "expected": "la frazione con numerature, 11 sopra 32, e denominatore, 16 sopra 51, fine frazione"
+    },
+    "NestFrac024": {
+      "expected": "la frazione con numerature 11, e denominatore, la frazione con numerature 32, e denominatore, 16 sopra 51, fine frazione"
+    },
+    "NestFrac025": {
+      "expected": "la frazione con numerature 1 più, 4 sopra x, e denominatore 2, fine frazione"
+    },
+    "NestFrac026": {
+      "expected": "la frazione con numerature 3, e denominatore 2 più, 4 sopra x, fine frazione"
+    },
+    "NestFrac027": {
+      "expected": "la frazione con numerature, 10 sopra 22, e denominatore uno mezzo, fine frazione"
+    },
+    "NestFrac028": {
+      "expected": "la frazione con numerature 1 più due terze, e denominatore 1 meno due terze, fine frazione"
+    },
+    "NestFrac029": {
+      "expected": "la frazione con numerature 1 più, x sopra 2, e denominatore 1 meno, x sopra 2, fine frazione"
+    },
+    "NestFrac030": {
+      "expected": "la frazione con numerature, la frazione con numerature x più 1, e denominatore x meno 1, più 1, e denominatore x più 1, fine frazione"
+    },
+    "NestFrac031": {
+      "expected": "la frazione con numerature, la frazione con numerature x più 1, e denominatore x meno 4, più uno mezzo, e denominatore x più, 1 sopra 16, fine frazione"
+    },
+    "NestFrac032": {
+      "expected": "1 più, la frazione con numerature x, e denominatore 1 più, 2 sopra x, fine frazione"
+    },
+    "NestFrac033": {
+      "expected": "1 più, la frazione con numerature x più 3, e denominatore 1 più, la frazione con numerature 2, e denominatore x più 3, fine frazione"
+    },
+    "NestFrac034": {
+      "expected": "1 più, la frazione con numerature 1, e denominatore 1 più, la frazione con numerature 1, e denominatore 1 più, la frazione con numerature 1, e denominatore 1 più 1, fine frazione"
+    },
+    "NestFrac035": {
+      "expected": "1 più, la frazione con numerature 1, e denominatore 1 più, la frazione con numerature 1, e denominatore 1 più, la frazione con numerature 1, e denominatore 1 più puntini in orizzontale, fine frazione"
+    },
+    "NestFrac036": {
+      "expected": "a sub 0, più, la frazione con numerature 1, e denominatore, a sub 1, più, la frazione con numerature 1, e denominatore, a sub 2, più, la frazione con numerature 1, e denominatore, a sub 3, più puntini in orizzontale, fine frazione"
+    },
+    "Fracfunct001": {
+      "expected": "f di x, sopra g di x"
+    },
+    "Fracfunct002": {
+      "expected": "la frazione con numerature f di x, più g di x, e denominatore g di x"
+    },
+    "Fracfunct003": {
+      "expected": "la frazione con numerature f di, parentesi tonda aperta, x più 1, parentesi tonda chiusa, e denominatore g di x"
+    },
+    "Fracfunct004": {
+      "expected": "f di x, sopra 2"
+    },
+    "Fracfunct005": {
+      "expected": "2 sopra f di x"
+    },
+    "Fracfunct006": {
+      "expected": "la frazione con numerature 2, e denominatore g di x, più g di, parentesi tonda aperta, x più 1, parentesi tonda chiusa"
+    },
+    "Fracfunct007": {
+      "expected": "seno x sopra coseno x"
+    },
+    "Fracfunct009": {
+      "expected": "la frazione con numerature seno x più coseno x, e denominatore coseno x"
+    },
+    "Fracfunct010": {
+      "expected": "seno 2 x sopra coseno 3 x"
+    },
+    "Fracfunct011": {
+      "expected": "la frazione con numerature, il seno di, parentesi tonda aperta, x più y, parentesi tonda chiusa, e denominatore, il coseno di, parentesi tonda aperta, x più y, parentesi tonda chiusa"
+    },
+    "Fracfunct012": {
+      "expected": "f di 2 x, sopra g di 3 x"
+    },
+    "Fracfunct013": {
+      "expected": "logaritmo x sopra logaritmo y"
+    },
+    "Fracfunct014": {
+      "expected": "logaritmo 2 x sopra logaritmo 3 y"
+    },
+    "Fracfunct015": {
+      "expected": "il logaritmo base 10 di, x, sopra, il logaritmo base 5 di, y"
+    },
+    "Fracfunct016": {
+      "expected": "il logaritmo base 10 di, 2 x, sopra, il logaritmo base 5 di, 3 y"
+    },
+    "Fracfunct017": {
+      "expected": "la frazione con numerature, il logaritmo di, parentesi tonda aperta, x più 1, parentesi tonda chiusa, e denominatore logaritmo y"
+    },
+    "Fracfunct018": {
+      "expected": "f sub 1, di x, sopra, g sub 1, di x"
+    }
+  }
+}

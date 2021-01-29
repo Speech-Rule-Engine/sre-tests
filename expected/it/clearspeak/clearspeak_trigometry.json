@@ -1,0 +1,491 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "ItalianClearspeakTrigometry",
+  "locale": "it",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_trigometry.json",
+  "information": "Italian Clearspeak Trigometry rule tests.",
+  "active": "ClearspeakItalian",
+  "exclude": [
+    "TrigReciprocal001",
+    "TrigReciprocal002",
+    "TrigReciprocal003",
+    "TrigReciprocal004",
+    "TrigReciprocal005",
+    "TrigReciprocal006",
+    "TrigReciprocal007",
+    "TrigReciprocal008",
+    "TrigReciprocal009",
+    "TrigReciprocal010",
+    "TrigReciprocal011",
+    "TrigReciprocal012",
+    "TrigReciprocal013",
+    "TrigReciprocal014",
+    "TrigReciprocal015",
+    "TrigReciprocal016",
+    "TrigReciprocal017",
+    "TrigReciprocal018",
+    "TrigReciprocal019",
+    "TrigReciprocal020",
+    "TrigReciprocal021",
+    "TrigReciprocal022",
+    "TrigReciprocal023",
+    "TrigReciprocal024",
+    "TrigReciprocal025",
+    "TrigReciprocal026",
+    "HypTrigReciprocal001",
+    "HypTrigReciprocal002",
+    "HypTrigReciprocal003",
+    "HypTrigReciprocal004",
+    "HypTrigReciprocal005",
+    "HypTrigReciprocal006",
+    "HypTrigReciprocal007",
+    "HypTrigReciprocal008",
+    "HypTrigReciprocal009",
+    "HypTrigReciprocal010",
+    "HypTrigReciprocal011",
+    "HypTrigReciprocal012",
+    "HypTrigReciprocal013",
+    "HypTrigReciprocal014",
+    "HypTrigReciprocal015",
+    "HypTrigReciprocal016",
+    "HypTrigReciprocal017",
+    "HypTrigReciprocal018",
+    "HypTrigReciprocal019",
+    "HypTrigReciprocal020"
+  ],
+  "tests": {
+    "Trig001": {
+      "expected": "seno x"
+    },
+    "Trig002": {
+      "expected": "coseno x"
+    },
+    "Trig003": {
+      "expected": "tangente theta"
+    },
+    "Trig004": {
+      "expected": "secante theta"
+    },
+    "Trig005": {
+      "expected": "cosecante x"
+    },
+    "Trig006": {
+      "expected": "cotangente x"
+    },
+    "Trig007": {
+      "expected": "seno quadrato x"
+    },
+    "Trig008": {
+      "expected": "coseno cubo x"
+    },
+    "Trig009": {
+      "expected": "tangente quadrato x"
+    },
+    "Trig010": {
+      "expected": "secante cubo x"
+    },
+    "Trig011": {
+      "expected": "cosecante quadrato x"
+    },
+    "Trig012": {
+      "expected": "cotangente quadrato x"
+    },
+    "Trig013": {
+      "expected": "seno 2 pi greco"
+    },
+    "Trig014": {
+      "expected": "il seno di, parentesi tonda aperta, pi greco k, più, pi greco sopra 2, parentesi tonda chiusa"
+    },
+    "Trig015": {
+      "expected": "il coseno di, pi greco sopra 2"
+    },
+    "Trig016": {
+      "expected": "il seno di, pi greco sopra 2"
+    },
+    "Trig017": {
+      "expected": "seno pi greco sopra 2"
+    },
+    "Trig018": {
+      "expected": "2 sopra seno pi greco"
+    },
+    "Trig019": {
+      "expected": "la frazione con numerature, il seno di, pi greco sopra 2, e denominatore 3"
+    },
+    "Trig020": {
+      "expected": "tangente negativo pi greco"
+    },
+    "Trig021": {
+      "expected": "il seno di, parentesi tonda aperta, x più pi greco, parentesi tonda chiusa"
+    },
+    "Trig022": {
+      "expected": "il coseno di, parentesi tonda aperta, x più, pi greco sopra 2, parentesi tonda chiusa"
+    },
+    "Trig023": {
+      "expected": "il coseno di, parentesi tonda aperta, pi greco sopra 2, più x, parentesi tonda chiusa"
+    },
+    "Trig024": {
+      "expected": "seno quadrato x, più, coseno quadrato x, uguale a 1"
+    },
+    "Trig025": {
+      "expected": "la potenza quarta di seno x"
+    },
+    "Trig026": {
+      "expected": "la potenza quinta di coseno x"
+    },
+    "Trig027": {
+      "expected": "la potenza n-esimo di tangente x"
+    },
+    "Trig028": {
+      "expected": "seno x sopra coseno x"
+    },
+    "Trig029": {
+      "expected": "tangente 35 gradi"
+    },
+    "Trig031": {
+      "expected": "il tangente di, parentesi tonda aperta, angolo D maiuscola E maiuscola F maiuscola, parentesi tonda chiusa"
+    },
+    "Trig032": {
+      "expected": "il tangente di, parentesi tonda aperta, angolo D maiuscola, parentesi tonda chiusa"
+    },
+    "Trig033": {
+      "expected": "il seno di, parentesi tonda aperta, x più y, parentesi tonda chiusa, uguale a, seno x coseno y, più, coseno x seno y"
+    },
+    "Trig034": {
+      "expected": "il coseno di, parentesi tonda aperta, x più y, parentesi tonda chiusa, uguale a, coseno x coseno y, meno, seno x seno y"
+    },
+    "Trig035": {
+      "expected": "il tangente di, parentesi tonda aperta, x più y, parentesi tonda chiusa, uguale a, la frazione con numerature tangente x meno tangente y, e denominatore 1 meno, tangente x tangente y"
+    },
+    "Trig037": {
+      "expected": "il tangente di, parentesi tonda aperta, pi greco sopra 6, più, 2 pi greco sopra 3, parentesi tonda chiusa, uguale a, la frazione con numerature, il tangente di, pi greco sopra 6, meno, il tangente di, 2 pi greco sopra 3, e denominatore 1 meno, il tangente di, pi greco sopra 6, il tangente di, 2 pi greco sopra 3"
+    },
+    "Trig038": {
+      "expected": "tangente 2 x, uguale a, la frazione con numerature 2 tangente x, e denominatore 1 meno, tangente quadrato x"
+    },
+    "Trig039": {
+      "expected": "coseno 2 x, uguale a 2, coseno quadrato x, meno 1"
+    },
+    "Trig040": {
+      "expected": "il seno di, x sopra 2, uguale a più o meno la radice quadrata di, la frazione con numerature 1 meno coseno x, e denominatore 2"
+    },
+    "Trig041": {
+      "expected": "il tangente di, x sopra 2, uguale a più o meno la radice quadrata di, la frazione con numerature 1 meno coseno x, e denominatore 1 più coseno x"
+    },
+    "Trig042": {
+      "expected": "coseno x coseno y, uguale a 2, il coseno di, la frazione con numerature x più y, e denominatore 2, il coseno di, la frazione con numerature x meno y, e denominatore 2"
+    },
+    "Trig043": {
+      "expected": "il seno di, parentesi tonda aperta, negativo, pi greco sopra 8, parentesi tonda chiusa, uguale a negativo uno mezzo la radice quadrata di 2 meno la radice quadrata di 2, fine radice, fine radice"
+    },
+    "Trig044": {
+      "expected": "il tangente di, 3 pi greco sopra 8, uguale a, la frazione con numerature la radice quadrata di, la radice quadrata di 2, fine radice, più 1, fine radice, e denominatore la radice quadrata di, la radice quadrata di 2, fine radice, meno 1, fine radice"
+    },
+    "Trig045": {
+      "expected": "il tangente di, pi greco sopra 12, uguale a uno mezzo la radice quadrata di 2 meno la radice quadrata di 3, fine radice, fine radice"
+    },
+    "TrigInvAuto001": {
+      "expected": "inverso del seno di x"
+    },
+    "TrigInvAuto002": {
+      "expected": "inverso del coseno di x"
+    },
+    "TrigInvAuto003": {
+      "expected": "inverso del tangente di x"
+    },
+    "TrigInvAuto004": {
+      "expected": "inverso del cotangente di x"
+    },
+    "TrigInvAuto005": {
+      "expected": "inverso del secante di x"
+    },
+    "TrigInvAuto006": {
+      "expected": "inverso del cosecante di x"
+    },
+    "TrigInvAuto007": {
+      "expected": "inverso del seno di, la frazione con numerature la radice quadrata di 2, e denominatore 2"
+    },
+    "TrigInvAuto008": {
+      "expected": "inverso del coseno di uno mezzo"
+    },
+    "TrigInvAuto009": {
+      "expected": "inverso del tangente di 17"
+    },
+    "TrigInvAuto010": {
+      "expected": "inverso del cotangente di 32"
+    },
+    "TrigInvAuto011": {
+      "expected": "inverso del secante di 100"
+    },
+    "TrigInvAuto012": {
+      "expected": "inverso del cosecante di 85"
+    },
+    "TrigInvAuto013": {
+      "expected": "inverso del seno di negativo x"
+    },
+    "TrigInvAuto014": {
+      "expected": "inverso del coseno di negativo x"
+    },
+    "TrigInvAuto015": {
+      "expected": "inverso del tangente di, parentesi tonda aperta, negativo x più 12, parentesi tonda chiusa"
+    },
+    "TrigInvAuto016": {
+      "expected": "inverso del cotangente di, parentesi tonda aperta, negativo x meno 1, parentesi tonda chiusa"
+    },
+    "TrigInvAuto017": {
+      "expected": "inverso del seno di seno 0"
+    },
+    "TrigInvAuto018": {
+      "expected": "inverso del cosecante di cosecante x"
+    },
+    "TrigInvAuto019": {
+      "expected": "il coseno di, parentesi tonda aperta, inverso del coseno di, parentesi tonda aperta, negativo, la frazione con numerature la radice quadrata di 2, e denominatore 2, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "TrigInvAuto020": {
+      "expected": "il coseno di, parentesi tonda aperta, negativo, inverso del coseno di, parentesi tonda aperta, la frazione con numerature la radice quadrata di 2, e denominatore 2, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "TrigInvAuto021": {
+      "expected": "inverso del seno di, parentesi tonda aperta, il coseno di, pi greco sopra 4, parentesi tonda chiusa"
+    },
+    "TrigInvAuto022": {
+      "expected": "seno, inverso del coseno di uno mezzo"
+    },
+    "TrigInvAuto023": {
+      "expected": "seno, inverso del tangente di 1"
+    },
+    "TrigInvAuto024": {
+      "expected": "il seno di, parentesi tonda aperta, negativo, inverso del tangente di 1, parentesi tonda chiusa"
+    },
+    "TrigInvAuto025": {
+      "expected": "il seno di, parentesi tonda aperta, negativo, inverso del tangente di negativo 1, parentesi tonda chiusa"
+    },
+    "TrigInvAuto026": {
+      "expected": "inverso del secante di secante x"
+    },
+    "TrigInverse001": {
+      "expected": "seno inverso di x"
+    },
+    "TrigInverse002": {
+      "expected": "coseno inverso di x"
+    },
+    "TrigInverse003": {
+      "expected": "tangente inverso di x"
+    },
+    "TrigInverse004": {
+      "expected": "cotangente inverso di x"
+    },
+    "TrigInverse005": {
+      "expected": "secante inverso di x"
+    },
+    "TrigInverse006": {
+      "expected": "cosecante inverso di x"
+    },
+    "TrigInverse007": {
+      "expected": "seno inverso di, la frazione con numerature la radice quadrata di 2, e denominatore 2"
+    },
+    "TrigInverse008": {
+      "expected": "coseno inverso di uno mezzo"
+    },
+    "TrigInverse009": {
+      "expected": "tangente inverso di 17"
+    },
+    "TrigInverse010": {
+      "expected": "cotangente inverso di 32"
+    },
+    "TrigInverse011": {
+      "expected": "secante inverso di 100"
+    },
+    "TrigInverse012": {
+      "expected": "cosecante inverso di 85"
+    },
+    "TrigInverse013": {
+      "expected": "seno inverso di negativo x"
+    },
+    "TrigInverse014": {
+      "expected": "coseno inverso di negativo x"
+    },
+    "TrigInverse015": {
+      "expected": "tangente inverso di, parentesi tonda aperta, negativo x più 12, parentesi tonda chiusa"
+    },
+    "TrigInverse016": {
+      "expected": "cotangente inverso di, parentesi tonda aperta, negativo x meno 1, parentesi tonda chiusa"
+    },
+    "TrigInverse017": {
+      "expected": "seno inverso di seno 0"
+    },
+    "TrigInverse018": {
+      "expected": "cosecante inverso di cosecante x"
+    },
+    "TrigInverse019": {
+      "expected": "il coseno di, parentesi tonda aperta, coseno inverso di, parentesi tonda aperta, negativo, la frazione con numerature la radice quadrata di 2, e denominatore 2, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "TrigInverse020": {
+      "expected": "il coseno di, parentesi tonda aperta, negativo, coseno inverso di, parentesi tonda aperta, la frazione con numerature la radice quadrata di 2, e denominatore 2, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "TrigInverse021": {
+      "expected": "seno inverso di, parentesi tonda aperta, il coseno di, pi greco sopra 4, parentesi tonda chiusa"
+    },
+    "TrigInverse022": {
+      "expected": "seno, coseno inverso di uno mezzo"
+    },
+    "TrigInverse023": {
+      "expected": "seno, tangente inverso di 1"
+    },
+    "TrigInverse024": {
+      "expected": "il seno di, parentesi tonda aperta, negativo, tangente inverso di 1, parentesi tonda chiusa"
+    },
+    "TrigInverse025": {
+      "expected": "il seno di, parentesi tonda aperta, negativo, tangente inverso di negativo 1, parentesi tonda chiusa"
+    },
+    "TrigInverse026": {
+      "expected": "secante inverso di secante x"
+    },
+    "ArcTrig001": {
+      "expected": "arco seno x"
+    },
+    "ArcTrig002": {
+      "expected": "arco coseno x"
+    },
+    "ArcTrig003": {
+      "expected": "arco tangente x"
+    },
+    "ArcTrig004": {
+      "expected": "arco cotangente x"
+    },
+    "ArcTrig005": {
+      "expected": "arco secante x"
+    },
+    "ArcTrig006": {
+      "expected": "arco cosecante x"
+    },
+    "ArcTrig007": {
+      "expected": "arco seno di, la frazione con numerature la radice quadrata di 2, e denominatore 2"
+    },
+    "ArcTrig008": {
+      "expected": "arco coseno uno mezzo"
+    },
+    "ArcTrig009": {
+      "expected": "arco tangente 17"
+    },
+    "ArcTrig010": {
+      "expected": "arco cotangente 32"
+    },
+    "ArcTrig011": {
+      "expected": "arco secante 100"
+    },
+    "ArcTrig012": {
+      "expected": "arco cosecante 85"
+    },
+    "ArcTrig013": {
+      "expected": "arco seno negativo x"
+    },
+    "ArcTrig014": {
+      "expected": "arco coseno negativo x"
+    },
+    "ArcTrig015": {
+      "expected": "arco tangente di, parentesi tonda aperta, negativo x più 12, parentesi tonda chiusa"
+    },
+    "ArcTrig016": {
+      "expected": "arco cotangente di, parentesi tonda aperta, negativo x meno 1, parentesi tonda chiusa"
+    },
+    "ArcTrig017": {
+      "expected": "arco seno, seno 0"
+    },
+    "ArcTrig018": {
+      "expected": "arco cosecante, cosecante x"
+    },
+    "ArcTrig019": {
+      "expected": "il coseno di, parentesi tonda aperta, arco coseno di, parentesi tonda aperta, negativo, la frazione con numerature la radice quadrata di 2, e denominatore 2, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "ArcTrig020": {
+      "expected": "il coseno di, parentesi tonda aperta, negativo, arco coseno di, parentesi tonda aperta, la frazione con numerature la radice quadrata di 2, e denominatore 2, parentesi tonda chiusa, parentesi tonda chiusa"
+    },
+    "ArcTrig021": {
+      "expected": "arco seno di, parentesi tonda aperta, il coseno di, pi greco sopra 4, parentesi tonda chiusa"
+    },
+    "ArcTrig022": {
+      "expected": "seno, arco coseno uno mezzo"
+    },
+    "ArcTrig023": {
+      "expected": "seno, arco tangente 1"
+    },
+    "ArcTrig024": {
+      "expected": "il seno di, parentesi tonda aperta, negativo, arco tangente 1, parentesi tonda chiusa"
+    },
+    "ArcTrig025": {
+      "expected": "il seno di, parentesi tonda aperta, negativo, arco tangente negativo 1, parentesi tonda chiusa"
+    },
+    "ArcTrig026": {
+      "expected": "arco secante, secante x"
+    },
+    "AllTrig01": {
+      "expected": "arcoseno x"
+    },
+    "AllTrig02": {
+      "expected": "arcocoseno x"
+    },
+    "AllTrig03": {
+      "expected": "arcotangente x"
+    },
+    "HypTrig001": {
+      "expected": "seno iperbolico di x"
+    },
+    "HypTrig002": {
+      "expected": "coseno iperbolico di x"
+    },
+    "HypTrig003": {
+      "expected": "tangente iperbolica di x"
+    },
+    "HypTrig004": {
+      "expected": "cotangente iperbolica di x"
+    },
+    "HypTrig005": {
+      "expected": "secante iperbolica di x"
+    },
+    "HypTrig006": {
+      "expected": "cosecante iperbolica di x"
+    },
+    "HypTrig007": {
+      "expected": "inverso del seno iperbolico di x"
+    },
+    "HypTrig008": {
+      "expected": "inverso del coseno iperbolico di x"
+    },
+    "HypTrig009": {
+      "expected": "inverso del tangente iperbolica di x"
+    },
+    "HypTrig010": {
+      "expected": "inverso del cotangente iperbolica di x"
+    },
+    "HypTrig011": {
+      "expected": "inverso del secante iperbolica di x"
+    },
+    "HypTrig012": {
+      "expected": "inverso del cosecante iperbolica di x"
+    },
+    "HypTrig013": {
+      "expected": "seno iperbolico di, inverso del seno iperbolico di x"
+    },
+    "HypTrig014": {
+      "expected": "coseno iperbolico di, inverso del coseno iperbolico di x"
+    },
+    "HypTrig015": {
+      "expected": "tangente iperbolica di, inverso del tangente iperbolica di x"
+    },
+    "HypTrig016": {
+      "expected": "cotangente iperbolica di, inverso del cotangente iperbolica di x"
+    },
+    "HypTrig017": {
+      "expected": "inverso del seno iperbolico di, seno iperbolico di x"
+    },
+    "HypTrig018": {
+      "expected": "inverso del coseno iperbolico di, coseno iperbolico di x"
+    },
+    "HypTrig019": {
+      "expected": "inverso del tangente iperbolica di, tangente iperbolica di x"
+    },
+    "HypTrig020": {
+      "expected": "inverso del cotangente iperbolica di, cotangente iperbolica di x"
+    }
+  }
+}
