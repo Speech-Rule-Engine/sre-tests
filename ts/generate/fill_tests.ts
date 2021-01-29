@@ -44,10 +44,13 @@ function runTests(
     tests.baseTests.tests : tests.jsonTests.tests) as JsonTests;
   let keys = flag === TestFlag.MISSING ? tests.warn : Object.keys(base);
   for (let key of keys) {
-    if (key.match(/_comment/)) {
+    let test = base[key];
+    if (key.match(/_comment/) || !test.test) {
+      if (key.match(/_comment/) && flag === TestFlag.ALL) {
+        result[key] = test;
+      }
       continue;
     }
-    let test = base[key];
     if (flag !== TestFlag.FAILED) {
       test.expected = null;
     }
