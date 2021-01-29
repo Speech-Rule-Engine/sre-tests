@@ -5,5 +5,234 @@
   "factory": "symbol",
   "active": "ExtraSymbolsItalian",
   "information": "Italian Extra Function tests.",
-  "tests": {}
+  "tests": {
+    "deg-default-singular": {
+      "key": "deg",
+      "domain": "default",
+      "style": "singular",
+      "expected": "deg"
+    },
+    "deg-default-dual": {
+      "key": "deg",
+      "domain": "default",
+      "style": "dual",
+      "expected": "deg"
+    },
+    "dim-default-singular": {
+      "key": "dim",
+      "domain": "default",
+      "style": "singular",
+      "expected": "dim"
+    },
+    "dim-default-dual": {
+      "key": "dim",
+      "domain": "default",
+      "style": "dual",
+      "expected": "dim"
+    },
+    "hom-default-singular": {
+      "key": "hom",
+      "domain": "default",
+      "style": "singular",
+      "expected": "hom"
+    },
+    "hom-default-dual": {
+      "key": "hom",
+      "domain": "default",
+      "style": "dual",
+      "expected": "hom"
+    },
+    "ker-default-singular": {
+      "key": "ker",
+      "domain": "default",
+      "style": "singular",
+      "expected": "ker"
+    },
+    "ker-default-dual": {
+      "key": "ker",
+      "domain": "default",
+      "style": "dual",
+      "expected": "ker"
+    },
+    "Tr-default-singular": {
+      "key": "Tr",
+      "domain": "default",
+      "style": "singular",
+      "expected": "Tr"
+    },
+    "Tr-default-dual": {
+      "key": "Tr",
+      "domain": "default",
+      "style": "dual",
+      "expected": "Tr"
+    },
+    "lg-default-singular": {
+      "key": "lg",
+      "domain": "default",
+      "style": "singular",
+      "expected": "lg"
+    },
+    "lg-default-dual": {
+      "key": "lg",
+      "domain": "default",
+      "style": "dual",
+      "expected": "lg"
+    },
+    "exp-default-singular": {
+      "key": "exp",
+      "domain": "default",
+      "style": "singular",
+      "expected": "exp"
+    },
+    "exp-default-dual": {
+      "key": "exp",
+      "domain": "default",
+      "style": "dual",
+      "expected": "exp"
+    },
+    "gcd-default-singular": {
+      "key": "gcd",
+      "domain": "default",
+      "style": "singular",
+      "expected": "gcd"
+    },
+    "gcd-default-dual": {
+      "key": "gcd",
+      "domain": "default",
+      "style": "dual",
+      "expected": "gcd"
+    },
+    "lcm-default-singular": {
+      "key": "lcm",
+      "domain": "default",
+      "style": "singular",
+      "expected": "lcm"
+    },
+    "lcm-default-dual": {
+      "key": "lcm",
+      "domain": "default",
+      "style": "dual",
+      "expected": "lcm"
+    },
+    "arg-default-singular": {
+      "key": "arg",
+      "domain": "default",
+      "style": "singular",
+      "expected": "arg"
+    },
+    "arg-default-dual": {
+      "key": "arg",
+      "domain": "default",
+      "style": "dual",
+      "expected": "arg"
+    },
+    "inf-default-singular": {
+      "key": "inf",
+      "domain": "default",
+      "style": "singular",
+      "expected": "inf"
+    },
+    "inf-default-dual": {
+      "key": "inf",
+      "domain": "default",
+      "style": "dual",
+      "expected": "inf"
+    },
+    "liminf-default-singular": {
+      "key": "liminf",
+      "domain": "default",
+      "style": "singular",
+      "expected": "liminf"
+    },
+    "liminf-default-dual": {
+      "key": "liminf",
+      "domain": "default",
+      "style": "dual",
+      "expected": "liminf"
+    },
+    "limsup-default-singular": {
+      "key": "limsup",
+      "domain": "default",
+      "style": "singular",
+      "expected": "limsup"
+    },
+    "limsup-default-dual": {
+      "key": "limsup",
+      "domain": "default",
+      "style": "dual",
+      "expected": "limsup"
+    },
+    "max-default-singular": {
+      "key": "max",
+      "domain": "default",
+      "style": "singular",
+      "expected": "max"
+    },
+    "max-default-dual": {
+      "key": "max",
+      "domain": "default",
+      "style": "dual",
+      "expected": "max"
+    },
+    "min-default-singular": {
+      "key": "min",
+      "domain": "default",
+      "style": "singular",
+      "expected": "min"
+    },
+    "min-default-dual": {
+      "key": "min",
+      "domain": "default",
+      "style": "dual",
+      "expected": "min"
+    },
+    "sup-default-singular": {
+      "key": "sup",
+      "domain": "default",
+      "style": "singular",
+      "expected": "sup"
+    },
+    "sup-default-dual": {
+      "key": "sup",
+      "domain": "default",
+      "style": "dual",
+      "expected": "sup"
+    },
+    "injlim-default-singular": {
+      "key": "injlim",
+      "domain": "default",
+      "style": "singular",
+      "expected": "injlim"
+    },
+    "injlim-default-dual": {
+      "key": "injlim",
+      "domain": "default",
+      "style": "dual",
+      "expected": "injlim"
+    },
+    "projlim-default-singular": {
+      "key": "projlim",
+      "domain": "default",
+      "style": "singular",
+      "expected": "projlim"
+    },
+    "projlim-default-dual": {
+      "key": "projlim",
+      "domain": "default",
+      "style": "dual",
+      "expected": "projlim"
+    },
+    "Pr-default-singular": {
+      "key": "Pr",
+      "domain": "default",
+      "style": "singular",
+      "expected": "Pr"
+    },
+    "Pr-default-dual": {
+      "key": "Pr",
+      "domain": "default",
+      "style": "dual",
+      "expected": "Pr"
+    }
+  }
 }

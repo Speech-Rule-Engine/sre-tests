@@ -5,5 +5,18 @@
   "factory": "symbol",
   "active": "ExtraSymbolsItalian",
   "information": "Italian Extra Character tests.",
-  "tests": {}
+  "tests": {
+    "0394-clearspeak-TriangleSymbol_Delta": {
+      "key": "Δ",
+      "domain": "clearspeak",
+      "style": "TriangleSymbol_Delta",
+      "expected": "delta maiuscola"
+    },
+    "00D7-default-alternative": {
+      "key": "×",
+      "domain": "default",
+      "style": "alternative",
+      "expected": "moltiplicato"
+    }
+  }
 }
