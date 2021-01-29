@@ -104,6 +104,7 @@ const AllConstraints: {[loc: string]: string[]} = {
   es: ['default', 'mathspeak'],
   fr: ['default', 'mathspeak', 'clearspeak'],
   de: ['default', 'mathspeak', 'clearspeak'],
+  it: ['default', 'mathspeak', 'clearspeak'],
   nemeth: ['default']
 };
 

@@ -363,15 +363,19 @@ the symbol. Finally, currently no extra tests are generated for `si_unit`.
 
 ### Re-generating Tests
 
+``` javascript
+let cto = require('./js/generate/char_test_output.js');
+```
+Make sure the `AllConstraints` variable is up to date for all locales, before loading and running: 
 
-``` shell
-allTests(?dir)
+``` javascript
+cto.allTests(?dir)
 ```
 
 generates tests in `dir`. If not given in `/tmp/symbols`.
 
-``` shell
-replaceTests(?dir)
+``` javascript
+cto.replaceTests(?dir)
 ```
 
 replaces expected tests output in the corresponding files of the
