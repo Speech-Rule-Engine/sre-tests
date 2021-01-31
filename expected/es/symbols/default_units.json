@@ -4,16 +4,18 @@
   "domain": "default",
   "style": "default",
   "active": "DefaultSymbolsSpanish",
-  "grammar": {"annotation": "unit"},
+  "grammar": {
+    "annotation": "unit"
+  },
   "factory": "symbol",
   "base": "input/common/units.json",
   "information": "Spanish Default Unit tests.",
   "tests": {
     "sq": {
-      "expected": "al cuadrado"
+      "expected": "cuadrado"
     },
     "sq.": {
-      "expected": "al cuadrado"
+      "expected": "cuadrado"
     },
     "sq in": {
       "expected": "pulgada cuadrada"
@@ -67,88 +69,88 @@
       "expected": "hectarea"
     },
     "$": {
-      "expected": "dólares"
+      "expected": "dólar"
     },
     "💲": {
-      "expected": "dólares"
+      "expected": "dólar"
     },
     "＄": {
-      "expected": "dólares"
+      "expected": "dólar"
     },
     "﹩": {
-      "expected": "dólares"
+      "expected": "dólar"
     },
     "USD": {
-      "expected": "dólares"
+      "expected": "dólar"
     },
     "£": {
-      "expected": "peniques"
+      "expected": "penique"
     },
     "￡": {
-      "expected": "peniques"
+      "expected": "penique"
     },
     "GBP": {
-      "expected": "peniques"
+      "expected": "penique"
     },
     "¥": {
-      "expected": "yens"
+      "expected": "yen"
     },
     "￥": {
-      "expected": "yens"
+      "expected": "yen"
     },
     "JPY": {
-      "expected": "yens"
+      "expected": "yen"
     },
     "€": {
-      "expected": "euros"
+      "expected": "euro"
     },
     "EUR": {
-      "expected": "euros"
+      "expected": "euro"
     },
     "₡": {
-      "expected": "colones"
+      "expected": "colón"
     },
     "CRC": {
-      "expected": "colones"
+      "expected": "colón"
     },
     "₢": {
-      "expected": "cruzeiros"
+      "expected": "cruzeiro"
     },
     "₣": {
-      "expected": "francos"
+      "expected": "franco"
     },
     "₤": {
-      "expected": "liras"
+      "expected": "lira"
     },
     "₥": {
       "expected": "mills"
     },
     "₦": {
-      "expected": "nairas"
+      "expected": "naira"
     },
     "NGN": {
-      "expected": "nairas"
+      "expected": "naira"
     },
     "₧": {
-      "expected": "pesetas"
+      "expected": "peseta"
     },
     "₨": {
-      "expected": "rupias"
+      "expected": "rupia"
     },
     "₹": {
-      "expected": "rupias"
+      "expected": "rupia"
     },
     "INR": {
-      "expected": "rupias"
+      "expected": "rupia"
     },
     "NPR": {
-      "expected": "rupias"
+      "expected": "rupia"
     },
     "PKR": {
-      "expected": "rupias"
+      "expected": "rupia"
     },
     "LKR": {
-      "expected": "rupias"
+      "expected": "rupia"
     },
     "₩": {
       "expected": "won"
@@ -160,7 +162,7 @@
       "expected": "won"
     },
     "₪": {
-      "expected": "shekels"
+      "expected": "siclo"
     },
     "₫": {
       "expected": "dong"
@@ -178,13 +180,13 @@
       "expected": "peniques alemanes"
     },
     "₱": {
-      "expected": "pesos"
+      "expected": "peso"
     },
     "₲": {
-      "expected": "guaraníes"
+      "expected": "guaraní"
     },
     "₳": {
-      "expected": "australes"
+      "expected": "austral"
     },
     "₴": {
       "expected": "hryvnias"
@@ -199,7 +201,7 @@
       "expected": "cedis"
     },
     "元": {
-      "expected": "yuans"
+      "expected": "yuan"
     },
     "￠": {
       "expected": "centésimo"
@@ -208,10 +210,10 @@
       "expected": "centésimo"
     },
     "kwh": {
-      "expected": "kilowatt hora"
+      "expected": "kilovatio hora"
     },
     "kWh": {
-      "expected": "kilowatt hora"
+      "expected": "kilovatio hora"
     },
     "Ohm": {
       "expected": "ohmio"
@@ -268,7 +270,7 @@
       "expected": "furlong"
     },
     "n.m.": {
-      "expected": "millas náuticas"
+      "expected": "milla náutica"
     },
     "b": {
       "expected": "bit"
@@ -295,7 +297,7 @@
       "expected": "nudo"
     },
     "mph": {
-      "expected": "millas por hora"
+      "expected": "milla por hora"
     },
     "rpm": {
       "expected": "revoluciones por minuto"
@@ -304,19 +306,19 @@
       "expected": "kilómetros por hora"
     },
     "F": {
-      "expected": "Fahrenheit"
+      "expected": "grado Fahrenheit"
     },
     "F.": {
-      "expected": "Fahrenheit"
+      "expected": "grado Fahrenheit"
     },
     "°F": {
-      "expected": "Fahrenheit"
+      "expected": "grado Fahrenheit"
     },
     "C": {
-      "expected": "centígrados"
+      "expected": "centígrado"
     },
     "°C": {
-      "expected": "centígrados"
+      "expected": "centígrado"
     },
     "K": {
       "expected": "Kelvin"
@@ -325,7 +327,7 @@
       "expected": "Kelvin"
     },
     "min": {
-      "expected": "minutos"
+      "expected": "minuto"
     },
     "h": {
       "expected": "hora"
@@ -340,10 +342,10 @@
       "expected": "cúbico"
     },
     "cu in": {
-      "expected": "pulgada cúbico"
+      "expected": "pulgada cúbica"
     },
     "cu. in.": {
-      "expected": "pulgada cúbico"
+      "expected": "pulgada cúbica"
     },
     "cu ft": {
       "expected": "pies cúbico"
@@ -364,10 +366,10 @@
       "expected": "barrile"
     },
     "fl. oz.": {
-      "expected": "onzas líquidas"
+      "expected": "onza líquida"
     },
     "fl oz": {
-      "expected": "onzas líquidas"
+      "expected": "onza líquida"
     },
     "gal": {
       "expected": "galone"
@@ -388,10 +390,10 @@
       "expected": "quart"
     },
     "fl dr": {
-      "expected": "dracma líquidas"
+      "expected": "dracma líquida"
     },
     "fl. dr.": {
-      "expected": "dracma líquidas"
+      "expected": "dracma líquida"
     },
     "tbsp": {
       "expected": "cuchara"
@@ -418,10 +420,10 @@
       "expected": "taza"
     },
     "cc": {
-      "expected": "centímetros cúbicos"
+      "expected": "centímetro cúbico"
     },
     "ccm": {
-      "expected": "centímetros cúbicos"
+      "expected": "centímetro cúbico"
     },
     "dr": {
       "expected": "dracma"
@@ -454,16 +456,16 @@
       "expected": "cuarto corto"
     },
     "cwt": {
-      "expected": "Zentner"
+      "expected": "centena"
     },
     "cwt.": {
-      "expected": "Zentner"
+      "expected": "centena"
     },
     "LT": {
-      "expected": "libras imperiales"
+      "expected": "libra imperiale"
     },
     "L.T.": {
-      "expected": "libras imperiales"
+      "expected": "libra imperiale"
     },
     "gr": {
       "expected": "gramo"
@@ -478,10 +480,10 @@
       "expected": "tonelada"
     },
     "″": {
-      "expected": "segundos"
+      "expected": "segundo"
     },
     "′": {
-      "expected": "minutos"
+      "expected": "minuto"
     }
   }
 }
