@@ -27,27 +27,14 @@ export class SymbolTest extends SpeechTest {
   public kind: string = 'character';
 
   /**
+   * A grammar annotation.
+   */
+  public grammar: {[name: string]: string | boolean} = {};
+
+  /**
    * @override
    */
   public pickFields = ['name', 'key', 'expected', 'style', 'domain'];
-
-  /**
-   * Execute test for a single unit string.
-   *
-   * @param char The character or string representing the unit.
-   * @param answer Expected speech translation for the unit and style.
-   * @param style
-   */
-  public executeUnitTest(char: string, answer: string, style?: string) {
-    sre.Grammar.getInstance().pushState({annotation: 'unit'});
-    try {
-      this.executeTest(char, answer, style);
-    } catch (err) {
-      throw err;
-    } finally {
-      sre.Grammar.getInstance().popState();
-    }
-  }
 
   /**
    * @override
@@ -84,6 +71,8 @@ export class SymbolTest extends SpeechTest {
       throw e;
     } finally {
       this.kind = this.baseTests.type || this.jsonTests.type || 'character';
+      this.grammar = this.baseTests.grammar ||
+        this.jsonTests.grammar || this.grammar;
     }
   }
 
@@ -93,7 +82,13 @@ export class SymbolTest extends SpeechTest {
   public method(...args: any[]) {
     let key = args[1] ? args[1] : args[0];
     this.domain = args[4] || this.domain;
-    this.kind === 'unit' ? this.executeUnitTest(key, args[2], args[3]) :
+    sre.Grammar.getInstance().pushState(Object.assign({}, this.grammar));
+    try {
       this.executeTest(key, args[2], args[3]);
+    } catch (err) {
+      throw err;
+    } finally {
+      sre.Grammar.getInstance().popState();
+    }
   }
 }
