@@ -82,13 +82,21 @@ export class SymbolTest extends SpeechTest {
   public method(...args: any[]) {
     let key = args[1] ? args[1] : args[0];
     this.domain = args[4] || this.domain;
-    sre.Grammar.getInstance().pushState(Object.assign({}, this.grammar));
-    try {
-      this.executeTest(key, args[2], args[3]);
-    } catch (err) {
-      throw err;
-    } finally {
-      sre.Grammar.getInstance().popState();
-    }
+    this.executeTest(key, args[2], args[3]);
   }
+
+  /**
+   * @override
+   */
+  public setUpTest() {
+    sre.Grammar.getInstance().pushState(Object.assign({}, this.grammar));
+  }
+
+  /**
+   * @override
+   */
+  public tearDownTest() {
+    sre.Grammar.getInstance().popState();
+  }
+
 }
