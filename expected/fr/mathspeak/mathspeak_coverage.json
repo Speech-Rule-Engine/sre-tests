@@ -106,6 +106,78 @@
     },
     "NumberSet": {
       "expected": "C majuscule ajouré"
+    },
+    "LimitLower0_default": {
+      "expected": "souscrire limite avec tiret bas début souscript a égale 5 fin scripts début souscript b égale 3 fin scripts"
+    },
+    "LimitLower1_default": {
+      "expected": "limite début souscript n début suscript 2 fin scripts début suscript x fin scripts"
+    },
+    "BlankLineEmpty0_default": {
+      "expected": "début tableau 1re rangée  a 2e rangée  vide fin tableau"
+    },
+    "SubBaseRelseq_default": {
+      "expected": "c indice 1 position de base h indice 4 moins 2 s position de base plus petit ou égal à début fraction 1 sur 2 T majuscule fin fraction plus petit ou égal à c indice 2 position de base h indice 4 moins 2 s"
+    },
+    "SubBaseRelseq_brief": {
+      "expected": "c 1 h sub 4 moins 2 s position de base plus petit ou égal à début frac 1 sur 2 T majuscule fin frac plus petit ou égal à c 2 h sub 4 moins 2 s"
+    },
+    "SubBaseRelseq_sbrief": {
+      "expected": "c 1 h sub 4 moins 2 s position de base plus petit ou égal à frac 1 sur 2 T majuscule fin frac plus petit ou égal à c 2 h sub 4 moins 2 s"
+    },
+    "SubBaseMultirel_default": {
+      "expected": "c indice 1 position de base h indice 4 moins 2 s position de base plus petit ou égal à début fraction 1 sur 2 T majuscule fin fraction égale c indice 2 position de base h indice 4 moins 2 s"
+    },
+    "SubBaseMultirel_brief": {
+      "expected": "c 1 h sub 4 moins 2 s position de base plus petit ou égal à début frac 1 sur 2 T majuscule fin frac égale c 2 h sub 4 moins 2 s"
+    },
+    "SubBaseMultirel_sbrief": {
+      "expected": "c 1 h sub 4 moins 2 s position de base plus petit ou égal à frac 1 sur 2 T majuscule fin frac égale c 2 h sub 4 moins 2 s"
+    },
+    "UnitSquare_default": {
+      "expected": "pouces carré"
+    },
+    "UnitSquare_brief": {
+      "expected": "pouces carré"
+    },
+    "UnitSquare_sbrief": {
+      "expected": "pouces carré"
+    },
+    "UnitCube_default": {
+      "expected": "pouces cubique"
+    },
+    "UnitCube_brief": {
+      "expected": "pouces cubique"
+    },
+    "UnitCube_sbrief": {
+      "expected": "pouces cubique"
+    },
+    "UnitInverse_default": {
+      "expected": "réciproque pouces"
+    },
+    "UnitInverse_brief": {
+      "expected": "réciproque pouces"
+    },
+    "UnitInverse_sbrief": {
+      "expected": "réciproque pouces"
+    },
+    "UnitDoubleInverse_default": {
+      "expected": "réciproque pouces par millimètres"
+    },
+    "UnitDoubleInverse_brief": {
+      "expected": "réciproque pouces par millimètres"
+    },
+    "UnitDoubleInverse_sbrief": {
+      "expected": "réciproque pouces par millimètres"
+    },
+    "UnitDivide_default": {
+      "expected": "pouces par millimètres"
+    },
+    "UnitDivide_brief": {
+      "expected": "pouces par millimètres"
+    },
+    "UnitDivide_sbrief": {
+      "expected": "pouces par millimètres"
     }
   }
 }
