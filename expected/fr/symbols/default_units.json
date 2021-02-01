@@ -4,7 +4,9 @@
   "domain": "default",
   "style": "default",
   "active": "DefaultSymbolsFrench",
-  "grammar": {"annotation": "unit"},
+  "grammar": {
+    "annotation": "unit"
+  },
   "factory": "symbol",
   "base": "input/common/units.json",
   "information": "French Default Unit tests.",
@@ -34,16 +36,16 @@
       "expected": "rod carré"
     },
     "sq ft": {
-      "expected": "pied carrés"
+      "expected": "pied carré"
     },
     "sq. ft.": {
-      "expected": "pied carrés"
+      "expected": "pied carré"
     },
     "sq yd": {
-      "expected": "square yard"
+      "expected": "verge carrée"
     },
     "sq. yd.": {
-      "expected": "square yard"
+      "expected": "verge carrée"
     },
     "sq mi": {
       "expected": "mile carré"
@@ -67,28 +69,28 @@
       "expected": "hectare"
     },
     "$": {
-      "expected": "dollars"
+      "expected": "dollar"
     },
     "💲": {
-      "expected": "dollars"
+      "expected": "dollar"
     },
     "＄": {
-      "expected": "dollars"
+      "expected": "dollar"
     },
     "﹩": {
-      "expected": "dollars"
+      "expected": "dollar"
     },
     "USD": {
-      "expected": "dollars"
+      "expected": "dollar"
     },
     "£": {
-      "expected": "pee"
+      "expected": "livre"
     },
     "￡": {
-      "expected": "pee"
+      "expected": "livre"
     },
     "GBP": {
-      "expected": "pee"
+      "expected": "livre"
     },
     "¥": {
       "expected": "yen"
@@ -100,10 +102,10 @@
       "expected": "yen"
     },
     "€": {
-      "expected": "euros"
+      "expected": "euro"
     },
     "EUR": {
-      "expected": "euros"
+      "expected": "euro"
     },
     "₡": {
       "expected": "colon"
@@ -115,10 +117,10 @@
       "expected": "cruzeiro"
     },
     "₣": {
-      "expected": "francs"
+      "expected": "franc"
     },
     "₤": {
-      "expected": "lires"
+      "expected": "lire"
     },
     "₥": {
       "expected": "millième"
@@ -133,22 +135,22 @@
       "expected": "peseta"
     },
     "₨": {
-      "expected": "roupies"
+      "expected": "roupie"
     },
     "₹": {
-      "expected": "roupies"
+      "expected": "roupie"
     },
     "INR": {
-      "expected": "roupies"
+      "expected": "roupie"
     },
     "NPR": {
-      "expected": "roupies"
+      "expected": "roupie"
     },
     "PKR": {
-      "expected": "roupies"
+      "expected": "roupie"
     },
     "LKR": {
-      "expected": "roupies"
+      "expected": "roupie"
     },
     "₩": {
       "expected": "won"
@@ -160,7 +162,7 @@
       "expected": "won"
     },
     "₪": {
-      "expected": "chékel"
+      "expected": "shekel"
     },
     "₫": {
       "expected": "dong"
@@ -178,25 +180,25 @@
       "expected": "pfennig"
     },
     "₱": {
-      "expected": "pesos"
+      "expected": "peso"
     },
     "₲": {
-      "expected": "guaranis"
+      "expected": "guarani"
     },
     "₳": {
-      "expected": "australs"
+      "expected": "austral"
     },
     "₴": {
-      "expected": "hryvnias"
+      "expected": "hryvnia"
     },
     "UAH": {
-      "expected": "hryvnias"
+      "expected": "hryvnia"
     },
     "₵": {
-      "expected": "cedis"
+      "expected": "cedi"
     },
     "GHS": {
-      "expected": "cedis"
+      "expected": "cedi"
     },
     "元": {
       "expected": "yuan"
