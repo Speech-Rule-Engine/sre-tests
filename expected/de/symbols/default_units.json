@@ -5,7 +5,9 @@
   "domain": "default",
   "style": "default",
   "active": "DefaultSymbolsGerman",
-  "grammar": {"annotation": "unit"},
+  "grammar": {
+    "annotation": "unit"
+  },
   "factory": "symbol",
   "base": "input/common/units.json",
   "information": "German Default Unit tests.",
@@ -296,28 +298,28 @@
       "expected": "Knoten"
     },
     "mph": {
-      "expected": "Meilen pro Stunde"
+      "expected": "Meile pro Stunde"
     },
     "rpm": {
-      "expected": "Umdrehungen pro Minute"
+      "expected": "Umdrehung pro Minute"
     },
     "kmh": {
       "expected": "Kilometer pro Stunde"
     },
     "F": {
-      "expected": "Farad"
+      "expected": "Grad Fahrenheit"
     },
     "F.": {
-      "expected": "Farad"
+      "expected": "Grad Fahrenheit"
     },
     "°F": {
-      "expected": "Farad"
+      "expected": "Grad Fahrenheit"
     },
     "C": {
-      "expected": "Celsius"
+      "expected": "Grad Celsius"
     },
     "°C": {
-      "expected": "Celsius"
+      "expected": "Grad Celsius"
     },
     "K": {
       "expected": "Kelvin"
