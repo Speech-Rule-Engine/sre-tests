@@ -16,7 +16,7 @@
       "key": "deg",
       "domain": "default",
       "style": "dual",
-      "expected": "deg"
+      "expected": "grado"
     },
     "dim-default-singular": {
       "key": "dim",
@@ -28,7 +28,7 @@
       "key": "dim",
       "domain": "default",
       "style": "dual",
-      "expected": "dim"
+      "expected": "dimensione"
     },
     "hom-default-singular": {
       "key": "hom",
@@ -40,7 +40,7 @@
       "key": "hom",
       "domain": "default",
       "style": "dual",
-      "expected": "hom"
+      "expected": "omomorfismo"
     },
     "ker-default-singular": {
       "key": "ker",
@@ -52,7 +52,7 @@
       "key": "ker",
       "domain": "default",
       "style": "dual",
-      "expected": "ker"
+      "expected": "nucleo"
     },
     "Tr-default-singular": {
       "key": "Tr",
@@ -64,7 +64,7 @@
       "key": "Tr",
       "domain": "default",
       "style": "dual",
-      "expected": "Tr"
+      "expected": "traccia"
     },
     "lg-default-singular": {
       "key": "lg",
@@ -76,7 +76,7 @@
       "key": "lg",
       "domain": "default",
       "style": "dual",
-      "expected": "lg"
+      "expected": "logaritmo in basi 10"
     },
     "exp-default-singular": {
       "key": "exp",
@@ -88,7 +88,7 @@
       "key": "exp",
       "domain": "default",
       "style": "dual",
-      "expected": "exp"
+      "expected": "esponenziale"
     },
     "gcd-default-singular": {
       "key": "gcd",
@@ -100,7 +100,7 @@
       "key": "gcd",
       "domain": "default",
       "style": "dual",
-      "expected": "gcd"
+      "expected": "massimo comun divisore"
     },
     "lcm-default-singular": {
       "key": "lcm",
@@ -112,7 +112,7 @@
       "key": "lcm",
       "domain": "default",
       "style": "dual",
-      "expected": "lcm"
+      "expected": "minimo comune multiplo"
     },
     "arg-default-singular": {
       "key": "arg",
@@ -124,7 +124,7 @@
       "key": "arg",
       "domain": "default",
       "style": "dual",
-      "expected": "arg"
+      "expected": "argomento"
     },
     "inf-default-singular": {
       "key": "inf",
@@ -136,7 +136,7 @@
       "key": "inf",
       "domain": "default",
       "style": "dual",
-      "expected": "inf"
+      "expected": "estremo inferiore"
     },
     "liminf-default-singular": {
       "key": "liminf",
@@ -148,7 +148,7 @@
       "key": "liminf",
       "domain": "default",
       "style": "dual",
-      "expected": "liminf"
+      "expected": "limite inferiore"
     },
     "limsup-default-singular": {
       "key": "limsup",
@@ -160,7 +160,7 @@
       "key": "limsup",
       "domain": "default",
       "style": "dual",
-      "expected": "limsup"
+      "expected": "limite superiore"
     },
     "max-default-singular": {
       "key": "max",
@@ -172,7 +172,7 @@
       "key": "max",
       "domain": "default",
       "style": "dual",
-      "expected": "max"
+      "expected": "massimo"
     },
     "min-default-singular": {
       "key": "min",
@@ -184,7 +184,7 @@
       "key": "min",
       "domain": "default",
       "style": "dual",
-      "expected": "min"
+      "expected": "minimo"
     },
     "sup-default-singular": {
       "key": "sup",
@@ -196,7 +196,7 @@
       "key": "sup",
       "domain": "default",
       "style": "dual",
-      "expected": "sup"
+      "expected": "estremo superiore"
     },
     "injlim-default-singular": {
       "key": "injlim",
@@ -208,7 +208,7 @@
       "key": "injlim",
       "domain": "default",
       "style": "dual",
-      "expected": "injlim"
+      "expected": "colimiti"
     },
     "projlim-default-singular": {
       "key": "projlim",
@@ -220,7 +220,7 @@
       "key": "projlim",
       "domain": "default",
       "style": "dual",
-      "expected": "projlim"
+      "expected": "limite proiettivo"
     },
     "Pr-default-singular": {
       "key": "Pr",
@@ -232,7 +232,7 @@
       "key": "Pr",
       "domain": "default",
       "style": "dual",
-      "expected": "Pr"
+      "expected": "probabilità"
     }
   }
 }
