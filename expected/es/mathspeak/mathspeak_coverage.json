@@ -106,6 +106,33 @@
     },
     "NumberSet": {
       "expected": "negrita de pizarra mayúscula C"
+    },
+    "LimitLower0_default": {
+      "expected": "modificando inferior límite con subrayado bajoíndice a igual 5 finalizar índices bajoíndice b igual 3 finalizar índices"
+    },
+    "LimitLower1_default": {
+      "expected": "límite bajoíndice n sobreíndice 2 finalizar índices sobreíndice x finalizar índices"
+    },
+    "BlankLineEmpty0_default": {
+      "expected": "empezar esquema primera fila  a segunda fila  espacio finalizar esquema"
+    },
+    "SubBaseRelseq_default": {
+      "expected": "c subíndice 1 línea base h subíndice 4 menos 2 s línea base menor o igual que empezar fracción 1 entre 2 mayúscula T finalizar fracción menor o igual que c subíndice 2 línea base h subíndice 4 menos 2 s"
+    },
+    "SubBaseRelseq_brief": {
+      "expected": "c sub 1 h sub 4 menos 2 s menor o igual que empezar frac 1 entre 2 mayúscula T finalizar frac menor o igual que c sub 2 h sub 4 menos 2 s"
+    },
+    "SubBaseRelseq_sbrief": {
+      "expected": "c sub 1 h sub 4 menos 2 s menor o igual que frac 1 entre 2 mayúscula T menor o igual que c sub 2 h sub 4 menos 2 s"
+    },
+    "SubBaseMultirel_default": {
+      "expected": "c subíndice 1 línea base h subíndice 4 menos 2 s línea base menor o igual que empezar fracción 1 entre 2 mayúscula T finalizar fracción igual c subíndice 2 línea base h subíndice 4 menos 2 s"
+    },
+    "SubBaseMultirel_brief": {
+      "expected": "c sub 1 h sub 4 menos 2 s menor o igual que empezar frac 1 entre 2 mayúscula T finalizar frac igual c sub 2 h sub 4 menos 2 s"
+    },
+    "SubBaseMultirel_sbrief": {
+      "expected": "c sub 1 h sub 4 menos 2 s menor o igual que frac 1 entre 2 mayúscula T igual c sub 2 h sub 4 menos 2 s"
     }
   }
 }

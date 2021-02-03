@@ -104,7 +104,6 @@
     "PartialTensorABCDFracR_sbrief": {
       "expected": "frac 1 entre sub a sup b base x sub c sup d r"
     },
-
     "_comment20_": "New completion.",
     "PartialTensorB_default": {
       "expected": "superíndice b línea base x"
@@ -628,7 +627,6 @@
     "PartialTensorABDRFrac_sbrief": {
       "expected": "frac 1 entre sub a sup b base x sup d base r"
     },
-
     "_comment10_": "Rest.",
     "TensorMultiSimpleABC_default": {
       "expected": "subíndice a superíndice b línea base x subíndice c sub superíndice l"
@@ -683,6 +681,24 @@
     },
     "TwoTensors_sbrief": {
       "expected": "sub a sup b base x sub c sup d base sub a sup b base x sub c sup d"
+    },
+    "PartialTensorABCDRRoot_default": {
+      "expected": "empezar raíz cuadrada subíndice a superíndice b línea base x subíndice c superíndice d línea base r finalizar raíz cuadrada"
+    },
+    "PartialTensorABCDRRoot_brief": {
+      "expected": "empezar raíz cuadrada sub a sup b base x sub c sup d base r finalizar raíz cuadrada"
+    },
+    "PartialTensorABCDRRoot_sbrief": {
+      "expected": "raíz cuadrada sub a sup b base x sub c sup d base r finalizar raíz cuadrada"
+    },
+    "PartialTensorABCDRFrac_default": {
+      "expected": "empezar fracción 1 entre subíndice a superíndice b línea base x subíndice c superíndice d línea base r finalizar fracción"
+    },
+    "PartialTensorABCDRFrac_brief": {
+      "expected": "empezar frac 1 entre sub a sup b base x sub c sup d base r finalizar frac"
+    },
+    "PartialTensorABCDRFrac_sbrief": {
+      "expected": "frac 1 entre sub a sup b base x sub c sup d base r"
     }
   }
 }
