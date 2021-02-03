@@ -18,6 +18,7 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
+import {Tests} from '../base/tests';
 import {JsonFile, TestPath, TestUtil} from '../base/test_util';
 import {get as factoryget} from '../classes/test_factory';
 import {addMissing} from './fill_tests';
@@ -73,4 +74,65 @@ function replaceInTests(
   if (tests[key]) {
     tests[key] = tests[key].replace(what, by);
   }
+}
+
+/**
+ * Shows the difference in test files between two locales.
+ *
+ * @param {string} loc1 First locale.
+ * @param {string} loc2 Second locale.
+ */
+export function showDifference(loc1: string, loc2: string) {
+  let tests = Tests.allJson();
+  let tests1 = cleanLocaleDiffs(tests, loc1);
+  let tests2 = cleanLocaleDiffs(tests, loc2);
+  console.log(`Missing ${loc1}:`);
+  outputDifference(tests2, tests1);
+  console.log(`Missing ${loc2}:`);
+  outputDifference(tests1, tests2);
+}
+
+
+/**
+ * Computes and outputs the difference between two locale test directories.
+ *
+ * @param {{[name: string]: string[]}} tests1 Test files for locale 1.
+ * @param {{[name: string]: string[]}} tests2 Test files for locale 2.
+ */
+function outputDifference(tests1: {[name: string]: string[]},
+                          tests2: {[name: string]: string[]}) {
+  for (let block of Object.keys(tests1)) {
+    let block2 = tests2[block];
+    console.log(`Block ${block}:`);
+    if (!block2) {
+      console.log(tests1[block]);
+      continue;
+    }
+    console.log(tests1[block].filter(x => !block2.includes(x)));
+  }
+}
+
+/**
+ * Retrieves the files for a particular locale in the set of all test files and
+ * collates them by blocks corresponding to their sub-directories.
+ *
+ * @param {string[]} files The list of all files.
+ * @param {string} loc The locale.
+ */
+function cleanLocaleDiffs(files: string[], loc: string) {
+  let regexp = new RegExp(`^${loc}/`);
+  let tests = files.filter(x => x.match(regexp))
+    .map(x => x.replace(regexp, ''));
+  let result: {[name: string]: string[]} = {};
+  for (let path of tests) {
+    let match = path.match(/^(\w*)\/(.*)/);
+    let block = match[1];
+    let file = match[2];
+    if (result[block]) {
+      result[block].push(file);
+    } else {
+      result[block] = [file];
+    }
+  }
+  return result;
 }
