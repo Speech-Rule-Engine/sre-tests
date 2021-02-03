@@ -104,7 +104,6 @@
     "PartialTensorABCDFracR_sbrief": {
       "expected": "frac 1 sur sub gauche a sup gauche b position de base x sub c sup d fin frac r"
     },
-
     "_comment20_": "New completion.",
     "PartialTensorB_default": {
       "expected": "exposant gauche b position de base x"
@@ -628,7 +627,6 @@
     "PartialTensorABDRFrac_sbrief": {
       "expected": "frac 1 sur sub gauche a sup gauche b position de base x sup d position de base r fin frac"
     },
-
     "_comment10_": "Rest.",
     "TensorMultiSimpleABC_default": {
       "expected": "indice gauche a exposant gauche b position de base x indice c sub-exposant l"
@@ -683,6 +681,24 @@
     },
     "TwoTensors_sbrief": {
       "expected": "sub gauche a sup gauche b position de base x sub c sup d position de base sub gauche a sup gauche b position de base x sub c sup d"
+    },
+    "PartialTensorABCDRRoot_default": {
+      "expected": "début racine carrée indice gauche a exposant gauche b position de base x indice c exposant d position de base r fin racine carrée"
+    },
+    "PartialTensorABCDRRoot_brief": {
+      "expected": "début racine carrée sub gauche a sup gauche b position de base x sub c sup d position de base r fin racine carrée"
+    },
+    "PartialTensorABCDRRoot_sbrief": {
+      "expected": "racine carrée sub gauche a sup gauche b position de base x sub c sup d position de base r fin racine carrée"
+    },
+    "PartialTensorABCDRFrac_default": {
+      "expected": "début fraction 1 sur indice gauche a exposant gauche b position de base x indice c exposant d position de base r fin fraction"
+    },
+    "PartialTensorABCDRFrac_brief": {
+      "expected": "début frac 1 sur sub gauche a sup gauche b position de base x sub c sup d position de base r fin frac"
+    },
+    "PartialTensorABCDRFrac_sbrief": {
+      "expected": "frac 1 sur sub gauche a sup gauche b position de base x sub c sup d position de base r fin frac"
     }
   }
 }
