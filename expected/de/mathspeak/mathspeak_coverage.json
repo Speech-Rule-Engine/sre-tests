@@ -107,6 +107,33 @@
     },
     "NumberSet": {
       "expected": "großes C mit Doppelstrich"
+    },
+    "LimitLower0_default": {
+      "expected": "modifiziert unten Limes mit Unterstrich Unterschrift a ist gleich 5 Ende Unterschrift Unterschrift b ist gleich 3 Ende Unterschrift"
+    },
+    "LimitLower1_default": {
+      "expected": "Limes Unterschrift n Überschrift 2 Ende Überschrift Überschrift x Ende Überschrift"
+    },
+    "BlankLineEmpty0_default": {
+      "expected": "Anfang Anordnung 1. Zeile  a 2. Zeile  leer Ende Anordnung"
+    },
+    "SubBaseRelseq_default": {
+      "expected": "c 1 h Index 4 minus 2 s Grundlinie kleiner oder gleich Anfang Bruch 1 durch 2 großes T Ende Bruch kleiner oder gleich c 2 h Index 4 minus 2 s"
+    },
+    "SubBaseRelseq_brief": {
+      "expected": "c 1 h Index 4 minus 2 s Grund kleiner oder gleich Anfang Bruch 1 durch 2 großes T Ende Bruch kleiner oder gleich c 2 h Index 4 minus 2 s"
+    },
+    "SubBaseRelseq_sbrief": {
+      "expected": "c 1 h Index 4 minus 2 s Grund kleiner oder gleich Bruch 1 durch 2 großes T Ende Bruch kleiner oder gleich c 2 h Index 4 minus 2 s"
+    },
+    "SubBaseMultirel_default": {
+      "expected": "c 1 h Index 4 minus 2 s Grundlinie kleiner oder gleich Anfang Bruch 1 durch 2 großes T Ende Bruch ist gleich c 2 h Index 4 minus 2 s"
+    },
+    "SubBaseMultirel_brief": {
+      "expected": "c 1 h Index 4 minus 2 s Grund kleiner oder gleich Anfang Bruch 1 durch 2 großes T Ende Bruch ist gleich c 2 h Index 4 minus 2 s"
+    },
+    "SubBaseMultirel_sbrief": {
+      "expected": "c 1 h Index 4 minus 2 s Grund kleiner oder gleich Bruch 1 durch 2 großes T Ende Bruch ist gleich c 2 h Index 4 minus 2 s"
     }
   }
 }
