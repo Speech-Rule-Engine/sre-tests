@@ -29,6 +29,72 @@
     },
     "Empty_Cell_3": {
       "input": "<mtable><mtr><mtd><mi>a</mi></mtd><mtd><mo>=</mo></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd></mtd><mtd><mn>2</mn></mtd></mtr></mtable>"
+    },
+    "Angle_0_default": {
+      "input": "<mrow><mn>45</mn><mo>°</mo><msup><mn>10</mn><mo>′</mo></msup><msup><mn>20</mn><mo>″</mo></msup></mrow>"
+    },
+    "Angle_1_default": {
+      "input": "<mrow><mn>1</mn><mo>°</mo><msup><mn>10</mn><mo>′</mo></msup><msup><mn>20</mn><mo>″</mo></msup></mrow>"
+    },
+    "Angle_2_default": {
+      "input": "<mrow><mn>45</mn><mo>°</mo><msup><mn>1</mn><mo>′</mo></msup><msup><mn>20</mn><mo>″</mo></msup></mrow>"
+    },
+    "Angle_3_default": {
+      "input": "<mrow><mn>45</mn><mo>°</mo><msup><mn>10</mn><mo>′</mo></msup><msup><mn>1</mn><mo>″</mo></msup></mrow>"
+    },
+    "Angle_4_default": {
+      "input": "<mrow><msup><mn>1</mn><mo>′</mo></msup><msup><mn>20</mn><mo>″</mo></msup></mrow>"
+    },
+    "Angle_5_default": {
+      "input": "<mrow><msup><mn>10</mn><mo>′</mo></msup><msup><mn>1</mn><mo>″</mo></msup></mrow>"
+    },
+    "Angle_0_Angle": {
+      "input": "<mrow><mn>45</mn><mo>°</mo><msup><mn>10</mn><mo>′</mo></msup><msup><mn>20</mn><mo>″</mo></msup></mrow>",
+      "preference": "Prime_Angle"
+    },
+    "Angle_1_Angle": {
+      "input": "<mrow><mn>1</mn><mo>°</mo><msup><mn>10</mn><mo>′</mo></msup><msup><mn>20</mn><mo>″</mo></msup></mrow>",
+      "preference": "Prime_Angle"
+    },
+    "Angle_2_Angle": {
+      "input": "<mrow><mn>45</mn><mo>°</mo><msup><mn>1</mn><mo>′</mo></msup><msup><mn>20</mn><mo>″</mo></msup></mrow>",
+      "preference": "Prime_Angle"
+    },
+    "Angle_3_Angle": {
+      "input": "<mrow><mn>45</mn><mo>°</mo><msup><mn>10</mn><mo>′</mo></msup><msup><mn>1</mn><mo>″</mo></msup></mrow>",
+      "preference": "Prime_Angle"
+    },
+    "Angle_4_Angle": {
+      "input": "<mrow><msup><mn>1</mn><mo>′</mo></msup><msup><mn>20</mn><mo>″</mo></msup></mrow>",
+      "preference": "Prime_Angle"
+    },
+    "Angle_5_Angle": {
+      "input": "<mrow><msup><mn>10</mn><mo>′</mo></msup><msup><mn>1</mn><mo>″</mo></msup></mrow>",
+      "preference": "Prime_Angle"
+    },
+    "Angle_0_Length": {
+      "input": "<mrow><mn>45</mn><mo>°</mo><msup><mn>10</mn><mo>′</mo></msup><msup><mn>20</mn><mo>″</mo></msup></mrow>",
+      "preference": "Prime_Length"
+    },
+    "Angle_1_Length": {
+      "input": "<mrow><mn>1</mn><mo>°</mo><msup><mn>10</mn><mo>′</mo></msup><msup><mn>20</mn><mo>″</mo></msup></mrow>",
+      "preference": "Prime_Length"
+    },
+    "Angle_2_Length": {
+      "input": "<mrow><mn>45</mn><mo>°</mo><msup><mn>1</mn><mo>′</mo></msup><msup><mn>20</mn><mo>″</mo></msup></mrow>",
+      "preference": "Prime_Length"
+    },
+    "Angle_3_Length": {
+      "input": "<mrow><mn>45</mn><mo>°</mo><msup><mn>10</mn><mo>′</mo></msup><msup><mn>1</mn><mo>″</mo></msup></mrow>",
+      "preference": "Prime_Length"
+    },
+    "Angle_4_Length": {
+      "input": "<mrow><msup><mn>1</mn><mo>′</mo></msup><msup><mn>20</mn><mo>″</mo></msup></mrow>",
+      "preference": "Prime_Length"
+    },
+    "Angle_5_Length": {
+      "input": "<mrow><msup><mn>10</mn><mo>′</mo></msup><msup><mn>1</mn><mo>″</mo></msup></mrow>",
+      "preference": "Prime_Length"
     }
   }
 }

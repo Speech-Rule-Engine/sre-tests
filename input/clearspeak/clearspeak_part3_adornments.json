@@ -69,12 +69,12 @@
       "input": "<math><mrow><mi>x</mi><mo>°</mo><msup><mi>y</mi><mo>′</mo></msup></mrow></math>"
     },
     "Prime014": {
-      "test": false,
+      "test": true,
       "preference": "Prime_Auto",
       "input": "<math><mrow><mn>45</mn><mo>°</mo><msup><mn>10</mn><mo>′</mo></msup><msup><mn>25</mn><mo>″</mo></msup></mrow></math>"
     },
     "Prime015": {
-      "test": false,
+      "test": true,
       "preference": "Prime_Auto",
       "input": "<math><mrow><mi>x</mi><mo>°</mo><msup><mi>y</mi><mo>′</mo></msup><msup><mi>z</mi><mo>″</mo></msup></mrow></math>"
     },
@@ -190,24 +190,24 @@
     },
     "_comment4_": " TODO: (Simons) Rewrite prime etc into superscript.",
     "Prime038": {
-      "test": false,
+      "test": true,
       "preference": "Prime_Length",
-      "input": "<math><mrow><mn>16</mn><mo>′</mo></msup><mn>10</mn><mo>″</mo></msup></mrow></math>"
+      "input": "<math><mrow><msup><mn>16</mn><mo>′</mo></msup><msup><mn>10</mn><mo>″</mo></msup></mrow></math>"
     },
     "Prime039": {
-      "test": false,
+      "test": true,
       "preference": "Prime_Length",
       "input": "<math><mrow><msup><mi>x</mi><mo>′</mo></msup><msup><mi>y</mi><mo>″</mo></msup></mrow></math>"
     },
     "Prime040": {
-      "test": false,
+      "test": true,
       "preference": "Prime_Length",
-      "input": "<math><mrow><mn>45</mn><mo>°</mo><mn>10</mn><mo>′</mo></msup></mrow></math>"
+      "input": "<math><mrow><mn>45</mn><mo>°</mo><msup><mn>10</mn><mo>′</mo></msup></mrow></math>"
     },
     "Prime041": {
-      "test": false,
+      "test": true,
       "preference": "Prime_Length",
-      "input": "<math><mrow><mn>45</mn><mo>°</mo><mn>10</mn><mo>′</mo></msup><mn>25</mn><mo>″</mo></msup></mrow></math>"
+      "input": "<math><mrow><mn>45</mn><mo>°</mo><msup><mn>10</mn><mo>′</mo></msup><msup><mn>25</mn><mo>″</mo></msup></mrow></math>"
     },
     "Prime042": {
       "test": true,
