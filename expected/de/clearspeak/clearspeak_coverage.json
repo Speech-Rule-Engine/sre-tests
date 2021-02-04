@@ -1,0 +1,95 @@
+{
+  "name": "GermanClearspeakCoverage",
+  "locale": "de",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_coverage.json",
+  "information": "German Clearspeak Coverage tests.",
+  "active": "ClearspeakGerman",
+  "exclude": [],
+  "tests": {
+    "ApplSimple_0": {
+      "expected": "f von, g von x"
+    },
+    "ApplSimple_1": {
+      "expected": "f von, g von x, ist gleich f von x, plus g von x"
+    },
+    "BinaryOperationPause_0": {
+      "expected": "Sinus x y"
+    },
+    "Empty_Line_0": {
+      "expected": "2 Zeilen, Zeile 1: a. Zeile 2: leer"
+    },
+    "Empty_Line_1": {
+      "expected": "2 Zeilen, Zeile 1: a. Zeile 2: leer"
+    },
+    "Empty_Line_2": {
+      "expected": "2 Zeilen, Zeile 1: a. Zeile 2: leer"
+    },
+    "Empty_Cell_0": {
+      "expected": "2 Zeilen, Zeile 1: a; ist gleich; b"
+    },
+    "Empty_Cell_1": {
+      "expected": "2 Zeilen, Zeile 1: a; ist gleich; b. Zeile 2: leer"
+    },
+    "Empty_Cell_2": {
+      "expected": "2 Zeilen, Zeile 1: a; ist gleich; b. Zeile 2: leer"
+    },
+    "Empty_Cell_3": {
+      "expected": "2 Zeilen, Zeile 1: a; ist gleich; b. Zeile 2: 1; leer; 2"
+    },
+    "Angle_0_default": {
+      "expected": "45 Grad, 10 Minuten, 20 Sekunden"
+    },
+    "Angle_1_default": {
+      "expected": "1 Grad, 10 Minuten, 20 Sekunden"
+    },
+    "Angle_2_default": {
+      "expected": "45 Grad, 1 Minute, 20 Sekunden"
+    },
+    "Angle_3_default": {
+      "expected": "45 Grad, 10 Minuten, 1 Sekunde"
+    },
+    "Angle_4_default": {
+      "expected": "1 Fuß, 20 Zoll"
+    },
+    "Angle_5_default": {
+      "expected": "10 Fuß, 1 Zoll"
+    },
+    "Angle_0_Angle": {
+      "expected": "45 Grad, 10 Minuten, 20 Sekunden"
+    },
+    "Angle_1_Angle": {
+      "expected": "1 Grad, 10 Minuten, 20 Sekunden"
+    },
+    "Angle_2_Angle": {
+      "expected": "45 Grad, 1 Minute, 20 Sekunden"
+    },
+    "Angle_3_Angle": {
+      "expected": "45 Grad, 10 Minuten, 1 Sekunde"
+    },
+    "Angle_4_Angle": {
+      "expected": "1 Minute, 20 Sekunden"
+    },
+    "Angle_5_Angle": {
+      "expected": "10 Minuten, 1 Sekunde"
+    },
+    "Angle_0_Length": {
+      "expected": "45 Grad, 10 Minuten, 20 Sekunden"
+    },
+    "Angle_1_Length": {
+      "expected": "1 Grad, 10 Minuten, 20 Sekunden"
+    },
+    "Angle_2_Length": {
+      "expected": "45 Grad, 1 Minute, 20 Sekunden"
+    },
+    "Angle_3_Length": {
+      "expected": "45 Grad, 10 Minuten, 1 Sekunde"
+    },
+    "Angle_4_Length": {
+      "expected": "1 Fuß, 20 Zoll"
+    },
+    "Angle_5_Length": {
+      "expected": "10 Fuß, 1 Zoll"
+    }
+  }
+}
