@@ -56,8 +56,21 @@ export class SymbolTest extends SpeechTest {
    */
   public getSpeech(text: string) {
     let aural = sre.AuralRendering.getInstance();
-    let descrs = [sre.AuditoryDescription.create(
-      {text: text}, {adjust: true, translate: true})];
+    let descrs = [];
+    if (this.modality === 'braille') {
+      if (text.match(/^\s+$/)) {
+        // TODO: This is just a temporary fix.
+        return '⠀';
+      }
+      let node = sre.DomUtil.parseInput('<mi></mi>');
+      node.textContent = text;
+      let evaluator = sre.SpeechRuleEngine.getInstance()
+        .getEvaluator(this.locale, this.modality);
+      descrs = evaluator(node);
+    } else {
+      descrs = [sre.AuditoryDescription.create(
+        {text: text}, {adjust: true, translate: true})];
+    }
     return aural.finalize(aural.markup(descrs));
   }
 

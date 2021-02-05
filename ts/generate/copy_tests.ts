@@ -92,7 +92,6 @@ export function showDifference(loc1: string, loc2: string) {
   outputDifference(tests1, tests2);
 }
 
-
 /**
  * Computes and outputs the difference between two locale test directories.
  *

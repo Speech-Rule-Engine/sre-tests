@@ -164,6 +164,7 @@ export namespace TestUtil {
     }
     for (let key of Object.keys(input)) {
       if (key.match(/^_/) || exclude.indexOf(key) !== -1) {
+        delete expected[key];
         continue;
       }
       let json = input[key];
