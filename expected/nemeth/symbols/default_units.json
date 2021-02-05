@@ -6,154 +6,296 @@
   "style": "default",
   "compare": true,
   "active": "DefaultSymbolsNemeth",
-  "grammar": {"annotation": "unit"},
+  "grammar": {},
   "factory": "symbol",
   "base": "input/common/units.json",
   "information": "Nemeth Default Unit tests.",
+  "exclude": ["💲", "€", "₡", "₢", "₣", "₤", "₥", "₦", "₧", "₨", "₹", "₩", "₪", "₫", "₭", "₮", "₯", "₰", "₱", "₲", "₳", "₴", "₵", "元", "元"],
   "tests": {
-    "W": {
-      "expected": "⠠⠺"
+    "sq": {
+      "expected": "⠎⠟"
     },
-    "w": {
-      "expected": "⠠⠺"
+    "sq.": {
+      "expected": "⠎⠟⠨"
     },
-    "kw": {
-      "expected": "⠅⠠⠺"
+    "sq in": {
+      "expected": "⠎⠟⠀⠊⠝"
     },
-    "kW": {
-      "expected": "⠅⠠⠺"
+    "sq. in.": {
+      "expected": "⠎⠟⠨⠀⠊⠝⠨"
     },
-    "mw": {
-      "expected": "⠍⠠⠺"
+    "sq inch": {
+      "expected": "⠎⠟⠀⠊⠝⠉⠓"
     },
-    "mW": {
-      "expected": "⠍⠠⠺"
+    "sq. inch": {
+      "expected": "⠎⠟⠨⠀⠊⠝⠉⠓"
+    },
+    "sq rd": {
+      "expected": "⠎⠟⠀⠗⠙"
+    },
+    "sq. rd.": {
+      "expected": "⠎⠟⠨⠀⠗⠙⠨"
+    },
+    "sq ft": {
+      "expected": "⠎⠟⠀⠋⠞"
+    },
+    "sq. ft.": {
+      "expected": "⠎⠟⠨⠀⠋⠞⠨"
+    },
+    "sq yd": {
+      "expected": "⠎⠟⠀⠽⠙"
+    },
+    "sq. yd.": {
+      "expected": "⠎⠟⠨⠀⠽⠙⠨"
+    },
+    "sq mi": {
+      "expected": "⠎⠟⠀⠍⠊"
+    },
+    "sq. mi.": {
+      "expected": "⠎⠟⠨⠀⠍⠊⠨"
+    },
+    "ac": {
+      "expected": "⠁⠉"
+    },
+    "ac.": {
+      "expected": "⠁⠉⠨"
+    },
+    "acr": {
+      "expected": "⠁⠉⠗"
+    },
+    "acr.": {
+      "expected": "⠁⠉⠗⠨"
+    },
+    "ha": {
+      "expected": "⠓⠁"
+    },
+    "$": {
+      "expected": "⠈⠎"
+    },
+    "💲": {
+      "expected": ""
+    },
+    "＄": {
+      "expected": ""
+    },
+    "﹩": {
+      "expected": ""
+    },
+    "USD": {
+      "expected": "⠠⠥⠠⠎⠠⠙"
+    },
+    "£": {
+      "expected": "⠼"
+    },
+    "￡": {
+      "expected": ""
+    },
+    "GBP": {
+      "expected": "⠠⠛⠠⠃⠠⠏"
+    },
+    "¥": {
+      "expected": ""
+    },
+    "￥": {
+      "expected": ""
+    },
+    "JPY": {
+      "expected": "⠠⠚⠠⠏⠠⠽"
+    },
+    "€": {
+      "expected": ""
+    },
+    "EUR": {
+      "expected": "⠠⠑⠠⠥⠠⠗"
+    },
+    "₡": {
+      "expected": ""
+    },
+    "CRC": {
+      "expected": "⠠⠉⠠⠗⠠⠉"
+    },
+    "₢": {
+      "expected": ""
+    },
+    "₣": {
+      "expected": ""
+    },
+    "₤": {
+      "expected": ""
+    },
+    "₥": {
+      "expected": ""
+    },
+    "₦": {
+      "expected": ""
+    },
+    "NGN": {
+      "expected": "⠠⠝⠠⠛⠠⠝"
+    },
+    "₧": {
+      "expected": ""
+    },
+    "₨": {
+      "expected": ""
+    },
+    "₹": {
+      "expected": ""
+    },
+    "INR": {
+      "expected": "⠠⠊⠠⠝⠠⠗"
+    },
+    "NPR": {
+      "expected": "⠠⠝⠠⠏⠠⠗"
+    },
+    "PKR": {
+      "expected": "⠠⠏⠠⠅⠠⠗"
+    },
+    "LKR": {
+      "expected": "⠠⠇⠠⠅⠠⠗"
+    },
+    "₩": {
+      "expected": ""
+    },
+    "￦": {
+      "expected": ""
+    },
+    "KRW": {
+      "expected": "⠠⠅⠠⠗⠠⠺"
+    },
+    "₪": {
+      "expected": ""
+    },
+    "₫": {
+      "expected": ""
+    },
+    "₭": {
+      "expected": ""
+    },
+    "₮": {
+      "expected": ""
+    },
+    "₯": {
+      "expected": ""
+    },
+    "₰": {
+      "expected": ""
+    },
+    "₱": {
+      "expected": ""
+    },
+    "₲": {
+      "expected": ""
+    },
+    "₳": {
+      "expected": ""
+    },
+    "₴": {
+      "expected": ""
+    },
+    "UAH": {
+      "expected": "⠠⠥⠠⠁⠠⠓"
+    },
+    "₵": {
+      "expected": ""
+    },
+    "GHS": {
+      "expected": "⠠⠛⠠⠓⠠⠎"
+    },
+    "元": {
+      "expected": ""
+    },
+    "￠": {
+      "expected": ""
+    },
+    "¢": {
+      "expected": "⠈⠉"
     },
     "kwh": {
       "expected": "⠅⠺⠓"
     },
     "kWh": {
-      "expected": "⠅⠺⠓"
-    },
-    "J": {
-      "expected": "⠠⠚"
-    },
-    "N": {
-      "expected": "⠠⠝"
-    },
-    "A": {
-      "expected": "⠠⠁"
-    },
-    "V": {
-      "expected": "⠠⠧"
-    },
-    "µΩ": {
-      "expected": "⠨⠍⠨⠠⠺"
-    },
-    "mΩ": {
-      "expected": "⠍⠨⠠⠺"
-    },
-    "Ω": {
-      "expected": "⠨⠠⠺"
+      "expected": "⠅⠠⠺⠓"
     },
     "Ohm": {
-      "expected": "⠨⠠⠺"
+      "expected": "⠠⠕⠓⠍"
     },
-    "kΩ": {
-      "expected": "⠅⠨⠠⠺"
-    },
-    "KΩ": {
-      "expected": "⠅⠨⠠⠺"
-    },
-    "MΩ": {
-      "expected": "⠍⠨⠠⠺"
-    },
-    "GΩ": {
-      "expected": "⠛⠨⠠⠺"
-    },
-    "mm": {
-      "expected": "⠍⠍"
-    },
-    "cm": {
-      "expected": "⠉⠍"
-    },
-    "m": {
-      "expected": "⠍"
-    },
-    "km": {
-      "expected": "⠅⠍"
+    "ohm": {
+      "expected": "⠕⠓⠍"
     },
     "ft": {
       "expected": "⠋⠞"
     },
     "ft.": {
-      "expected": "⠋⠞"
+      "expected": "⠋⠞⠨"
     },
     "in": {
       "expected": "⠊⠝"
     },
     "in.": {
-      "expected": "⠊⠝"
+      "expected": "⠊⠝⠨"
     },
     "mi": {
       "expected": "⠍⠊"
     },
     "mi.": {
-      "expected": "⠍⠊"
+      "expected": "⠍⠊⠨"
     },
     "yd": {
       "expected": "⠽⠙"
     },
     "yd.": {
-      "expected": "⠽⠙"
+      "expected": "⠽⠙⠨"
+    },
+    "li": {
+      "expected": "⠇⠊"
+    },
+    "li.": {
+      "expected": "⠇⠊⠨"
+    },
+    "rd": {
+      "expected": "⠗⠙"
+    },
+    "rd.": {
+      "expected": "⠗⠙⠨"
+    },
+    "ch": {
+      "expected": "⠉⠓"
+    },
+    "ch.": {
+      "expected": "⠉⠓⠨"
+    },
+    "fur": {
+      "expected": "⠋⠥⠗"
+    },
+    "fur.": {
+      "expected": "⠋⠥⠗⠨"
     },
     "n.m.": {
-      "expected": "⠝⠲⠍⠸⠲"
+      "expected": "⠝⠨⠍⠨"
     },
     "b": {
       "expected": "⠃"
     },
-    "B": {
-      "expected": "⠠⠃"
-    },
     "KB": {
-      "expected": "⠅⠃"
-    },
-    "MB": {
-      "expected": "⠍⠃"
-    },
-    "GB": {
-      "expected": "⠛⠃"
-    },
-    "TB": {
-      "expected": "⠞⠃"
+      "expected": "⠠⠅⠠⠃"
     },
     "doz": {
       "expected": "⠙⠕⠵"
     },
     "doz.": {
-      "expected": "⠙⠕⠵"
+      "expected": "⠙⠕⠵⠨"
     },
     "dz": {
-      "expected": "⠙⠕⠵"
+      "expected": "⠙⠵"
     },
     "dz.": {
-      "expected": "⠙⠕⠵"
-    },
-    "sq": {
-      "expected": "⠎⠟"
-    },
-    "sq.": {
-      "expected": "⠎⠟"
-    },
-    "ha": {
-      "expected": "⠓⠁"
+      "expected": "⠙⠵⠨"
     },
     "kt": {
       "expected": "⠅⠞"
     },
     "kt.": {
-      "expected": "⠅⠞"
+      "expected": "⠅⠞⠨"
     },
     "mph": {
       "expected": "⠍⠏⠓"
@@ -168,139 +310,184 @@
       "expected": "⠠⠋"
     },
     "F.": {
-      "expected": "⠠⠋"
+      "expected": "⠠⠋⠨"
     },
     "°F": {
-      "expected": "⠠⠋"
+      "expected": "⠘⠨⠡⠠⠋"
     },
     "C": {
       "expected": "⠠⠉"
     },
     "°C": {
-      "expected": "⠠⠉"
+      "expected": "⠘⠨⠡⠠⠉"
     },
     "K": {
       "expected": "⠠⠅"
     },
     "°K": {
-      "expected": "⠠⠅"
-    },
-    "ns": {
-      "expected": "⠝⠎"
-    },
-    "µs": {
-      "expected": "⠨⠍⠎"
-    },
-    "ms": {
-      "expected": "⠍⠎"
-    },
-    "s": {
-      "expected": "⠎"
+      "expected": "⠘⠨⠡⠠⠅"
     },
     "min": {
-      "expected": "⠍⠊⠝⠀"
+      "expected": "⠍⠊⠝"
     },
     "h": {
       "expected": "⠓"
     },
     "hr": {
-      "expected": "⠓"
-    },
-    "bbl.": {
-      "expected": "⠃⠃⠇"
-    },
-    "bbl": {
-      "expected": "⠃⠃⠇"
+      "expected": "⠓⠗"
     },
     "cu": {
       "expected": "⠉⠥"
     },
     "cu.": {
-      "expected": "⠉⠥"
+      "expected": "⠉⠥⠨"
+    },
+    "cu in": {
+      "expected": "⠉⠥⠀⠊⠝"
+    },
+    "cu. in.": {
+      "expected": "⠉⠥⠨⠀⠊⠝⠨"
+    },
+    "cu ft": {
+      "expected": "⠉⠥⠀⠋⠞"
+    },
+    "cu. ft.": {
+      "expected": "⠉⠥⠨⠀⠋⠞⠨"
+    },
+    "cu yd": {
+      "expected": "⠉⠥⠀⠽⠙"
+    },
+    "cu. yd.": {
+      "expected": "⠉⠥⠨⠀⠽⠙⠨"
+    },
+    "bbl.": {
+      "expected": "⠃⠃⠇⠨"
+    },
+    "bbl": {
+      "expected": "⠃⠃⠇"
+    },
+    "fl. oz.": {
+      "expected": "⠋⠇⠨⠀⠕⠵⠨"
+    },
+    "fl oz": {
+      "expected": "⠋⠇⠀⠕⠵"
     },
     "gal": {
       "expected": "⠛⠁⠇"
     },
     "gal.": {
-      "expected": "⠛⠁⠇"
+      "expected": "⠛⠁⠇⠨"
     },
     "pt": {
       "expected": "⠏⠞"
     },
     "pt.": {
-      "expected": "⠏⠞"
+      "expected": "⠏⠞⠨"
     },
     "qt": {
       "expected": "⠟⠞"
     },
     "qt.": {
-      "expected": "⠟⠞"
+      "expected": "⠟⠞⠨"
+    },
+    "fl dr": {
+      "expected": "⠋⠇⠀⠙⠗"
+    },
+    "fl. dr.": {
+      "expected": "⠋⠇⠨⠀⠙⠗⠨"
     },
     "tbsp": {
       "expected": "⠞⠃⠎⠏"
     },
     "tbsp.": {
-      "expected": "⠞⠃⠎⠏"
+      "expected": "⠞⠃⠎⠏⠨"
+    },
+    "Tbsp": {
+      "expected": "⠠⠞⠃⠎⠏"
+    },
+    "Tbsp.": {
+      "expected": "⠠⠞⠃⠎⠏⠨"
     },
     "tsp": {
       "expected": "⠞⠎⠏"
     },
     "tsp.": {
-      "expected": "⠞⠎⠏"
+      "expected": "⠞⠎⠏⠨"
+    },
+    "cp": {
+      "expected": "⠉⠏"
+    },
+    "cp.": {
+      "expected": "⠉⠏⠨"
     },
     "cc": {
       "expected": "⠉⠉"
     },
-    "kl": {
-      "expected": "⠅⠇"
+    "ccm": {
+      "expected": "⠉⠉⠍"
     },
-    "l": {
-      "expected": "⠇"
+    "dr": {
+      "expected": "⠙⠗"
     },
-    "ml": {
-      "expected": "⠍⠇"
-    },
-    "lb": {
-      "expected": "⠇⠃"
-    },
-    "lb.": {
-      "expected": "⠇⠃"
-    },
-    "LT": {
-      "expected": "⠇⠞"
-    },
-    "L.T.": {
-      "expected": "⠇⠞"
+    "dr.": {
+      "expected": "⠙⠗⠨"
     },
     "oz": {
       "expected": "⠕⠵"
     },
     "oz.": {
-      "expected": "⠕⠵"
+      "expected": "⠕⠵⠨"
     },
-    "g": {
-      "expected": "⠛⠗"
+    "lb": {
+      "expected": "⠇⠃"
+    },
+    "lb.": {
+      "expected": "⠇⠃⠨"
+    },
+    "st": {
+      "expected": "⠎⠞"
+    },
+    "st.": {
+      "expected": "⠎⠞⠨"
+    },
+    "qtr": {
+      "expected": "⠟⠞⠗"
+    },
+    "qtr.": {
+      "expected": "⠟⠞⠗⠨"
+    },
+    "cwt": {
+      "expected": "⠉⠺⠞"
+    },
+    "cwt.": {
+      "expected": "⠉⠺⠞⠨"
+    },
+    "LT": {
+      "expected": "⠠⠇⠠⠞"
+    },
+    "L.T.": {
+      "expected": "⠠⠇⠨⠠⠞⠨"
     },
     "gr": {
       "expected": "⠛⠗"
     },
-    "kg": {
-      "expected": "⠅⠛"
-    },
     "mcg": {
-      "expected": "⠨⠍⠛"
-    },
-    "µg": {
       "expected": "⠍⠉⠛"
-    },
-    "mg": {
-      "expected": "⠍⠛"
     },
     "t": {
       "expected": "⠞"
     },
     "T": {
-      "expected": "⠞"
+      "expected": "⠠⠞"
+    },
+    "′": {
+      "expected": "⠄"
+    },
+    "°": {
+      "expected": "⠘⠨⠡"
+    },
+    "″": {
+      "expected": "⠄⠄"
     }
   }
 }
