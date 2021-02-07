@@ -337,9 +337,28 @@ nature:
 ``` javascript
 process.env['SRE_JSON_PATH'] = '../speech-rule-engine/lib/mathmaps';
 let gt = require('./js/generate/generate_tests.js');
-let cto = require('./js/generate/char_test_output.js');
 ...
 ```
+
+## Generating Tests and Expected Values
+
+Tests can be generated or regenerated using the `fill_tests` module:
+
+``` javascript
+let ft = require('./js/generate/fill_tests.js');
+```
+
+Each of the following commands takes an path to a file with expected values and
+optionally a flag indicating if it is a dry run or if the changes are to be made
+destructively to the input file.
+
+| `addMissing` | Adds expected values for all missing tests.          |
+| `addActual`  | Overwrites all expected values with the actual ones. |
+| `addFailed`  | Overwrites expected values for all failed tests.     |
+
+
+`showMissing` prints all missing tests for all available test files. Output can
+be restricted by providing a regular expression for filtering filenames.
 
 ## Symbol Tests
 
@@ -412,3 +431,13 @@ ct.copyTestLocaleDir('en/', 'it', 'English', 'Italian');
 ```
 
 Recursively performs the above action on a subdirectory.
+
+### Comparison
+
+Show the difference between test files existing in locale directories.
+
+``` javascript
+ct.showDifference('en', 'it');
+```
+
+
