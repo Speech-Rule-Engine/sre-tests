@@ -3,7 +3,6 @@
   "name": "ItalianClearspeakPart2Symbols",
   "locale": "it",
   "compare": true,
-  "actual": true,
   "factory": "clearspeak",
   "base": "input/clearspeak/clearspeak_part2_symbols.json",
   "information": "Italian Clearspeak Part2Symbols rule tests.",
@@ -50,16 +49,16 @@
       "expected": "3 punto 3"
     },
     "Triangle001": {
-      "expected": "triangolo A maiuscola B maiuscola C maiuscola"
+      "expected": "triangolo A B C"
     },
     "Triangle002": {
-      "expected": "triangolo D maiuscola E maiuscola F maiuscola"
+      "expected": "triangolo D E F"
     },
     "Triangle003": {
-      "expected": "delta maiuscola x"
+      "expected": "delta x"
     },
     "Triangle004": {
-      "expected": "f di, parentesi tonda aperta, x più delta maiuscola x, parentesi tonda chiusa"
+      "expected": "f di, parentesi tonda aperta, x più delta x, parentesi tonda chiusa"
     },
     "Ellipses001": {
       "expected": "1 virgola 2 virgola 3 virgola punti di sospensione"
@@ -68,7 +67,7 @@
       "expected": "1 virgola 2 virgola 3 virgola punti di sospensione virgola 20"
     },
     "Ellipses003": {
-      "expected": "punti di sospensione virgola, negativo 2, virgola, negativo 1, virgola 0 virgola 1 virgola 2 virgola punti di sospensione"
+      "expected": "punti di sospensione virgola, meno 2, virgola, meno 1, virgola 0 virgola 1 virgola 2 virgola punti di sospensione"
     },
     "Ellipses004": {
       "expected": "1 virgola 2 virgola 3 virgola e così via"
@@ -77,7 +76,7 @@
       "expected": "1 virgola 2 virgola 3 virgola e così via fino a virgola 20"
     },
     "Ellipses006": {
-      "expected": "punti di sospensione virgola, negativo 2, virgola, negativo 1, virgola 0 virgola 1 virgola 2 virgola punti di sospensione"
+      "expected": "punti di sospensione virgola, meno 2, virgola, meno 1, virgola 0 virgola 1 virgola 2 virgola punti di sospensione"
     },
     "VertLine001": {
       "expected": "3 divide 6"
@@ -86,7 +85,7 @@
       "expected": "l'insieme di tutti x tale che x maggiore di 0"
     },
     "VertLine003": {
-      "expected": "l'insieme di tutti x tale che, il valore assoluto x, maggiore di 2"
+      "expected": "l'insieme di tutti x tale che, il valore assoluto di x, maggiore di 2"
     },
     "VertLine004": {
       "expected": "f di x, valutato a x uguale a 5"
@@ -104,7 +103,7 @@
       "expected": "3 divide 6"
     },
     "VertLine009": {
-      "expected": "P maiuscola di, parentesi tonda aperta, A maiuscola dato B maiuscola, parentesi tonda chiusa"
+      "expected": "P di, parentesi tonda aperta, A dato B, parentesi tonda chiusa"
     },
     "MembSym001": {
       "expected": "If x appartenente a gli interi then 2 x, is an even number punto"
@@ -167,40 +166,40 @@
       "expected": "il sommatoria sopra i appartenente a gli interi positivi, di i"
     },
     "Sum004": {
-      "expected": "il sommatoria sopra S maiuscola, di i"
+      "expected": "il sommatoria sopra S, di i"
     },
     "Sum005": {
-      "expected": "il sommatoria di, a sub i"
+      "expected": "il sommatoria di, a pedice i"
     },
     "Sum006": {
-      "expected": "il prodotto da i uguale a 1 a 10 di i"
+      "expected": "il produttoria da i uguale a 1 a 10 di i"
     },
     "Sum007": {
-      "expected": "il prodotto sopra i appartenente a gli interi positivi, di, la frazione con numerature i, e denominatore i più 1"
+      "expected": "il produttoria sopra i appartenente a gli interi positivi, di, frazione con numeratore i, e denominatore i più 1"
     },
     "Sum008": {
-      "expected": "il prodotto sopra gli interi positivi, di, la frazione con numerature i, e denominatore i più 1"
+      "expected": "il produttoria sopra gli interi positivi, di, frazione con numeratore i, e denominatore i più 1"
     },
     "Sum009": {
-      "expected": "il prodotto di, a sub i"
+      "expected": "il produttoria di, a pedice i"
     },
     "Sum010": {
-      "expected": "il intersezione da i uguale a 1 a 10 di, S maiuscola sub i"
+      "expected": "il intersezione da i uguale a 1 a 10 di, S pedice i"
     },
     "Sum011": {
-      "expected": "il unione da i uguale a 1 a 10 di, S maiuscola sub i"
+      "expected": "il unione da i uguale a 1 a 10 di, S pedice i"
     },
     "Sum012": {
-      "expected": "il intersezione di, S maiuscola sub i"
+      "expected": "il intersezione di, S pedice i"
     },
     "Sum013": {
-      "expected": "il unione di, S maiuscola sub i"
+      "expected": "il unione di, S pedice i"
     },
     "Sum014": {
-      "expected": "il intersezione sopra C maiuscola, di, S maiuscola sub i"
+      "expected": "il intersezione sopra C, di, S pedice i"
     },
     "Sum015": {
-      "expected": "il unione sopra C maiuscola, di, S maiuscola sub i"
+      "expected": "il unione sopra C, di, S pedice i"
     },
     "Sum016": {
       "expected": "il integrale di f di x, d x"

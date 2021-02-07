@@ -3,7 +3,6 @@
   "name": "ItalianClearspeakParentheses",
   "locale": "it",
   "compare": true,
-  "actual": true,
   "factory": "clearspeak",
   "base": "input/clearspeak/clearspeak_parentheses.json",
   "information": "Italian Clearspeak Parentheses rule tests.",
@@ -17,16 +16,16 @@
       "expected": "2 x"
     },
     "Paren003": {
-      "expected": "2 più negativo 2"
+      "expected": "2 più meno 2"
     },
     "Paren004": {
-      "expected": "2 meno negativo 2"
+      "expected": "2 meno meno 2"
     },
     "Paren004a": {
-      "expected": "2 meno negativo 2"
+      "expected": "2 meno meno 2"
     },
     "Paren005": {
-      "expected": "2 meno, parentesi tonda aperta, negativo 2, parentesi tonda chiusa, cubo"
+      "expected": "2 meno, parentesi tonda aperta, meno 2, parentesi tonda chiusa, cubo"
     },
     "Paren006": {
       "expected": "parentesi tonda aperta, 2 x, parentesi tonda chiusa, quadrato"
@@ -35,28 +34,28 @@
       "expected": "parentesi tonda aperta, 2 x, parentesi tonda chiusa, elevato alla y più 1"
     },
     "Paren008": {
-      "expected": "negativo 2 x"
+      "expected": "meno 2 x"
     },
     "Paren009": {
-      "expected": "parentesi tonda aperta, negativo 2 x, parentesi tonda chiusa, quadrato"
+      "expected": "parentesi tonda aperta, meno 2 x, parentesi tonda chiusa, quadrato"
     },
     "Paren010": {
-      "expected": "negativo, parentesi tonda aperta, 2 x, parentesi tonda chiusa, quadrato"
+      "expected": "meno, parentesi tonda aperta, 2 x, parentesi tonda chiusa, quadrato"
     },
     "Paren011": {
-      "expected": "uno mezzo"
+      "expected": "un mezzo"
     },
     "Paren012": {
-      "expected": "tre quarte x"
+      "expected": "tre quarti x"
     },
     "Paren013": {
-      "expected": "parentesi tonda aperta, 11 sopra 22, parentesi tonda chiusa"
+      "expected": "parentesi tonda aperta, 11 fratto 22, parentesi tonda chiusa"
     },
     "Paren014": {
-      "expected": "uno mezzo alla quarta potenza"
+      "expected": "un mezzo alla quarta potenza"
     },
     "Paren015": {
-      "expected": "parentesi tonda aperta, 11 sopra 15, parentesi tonda chiusa, quadrato"
+      "expected": "parentesi tonda aperta, 11 fratto 15, parentesi tonda chiusa, quadrato"
     },
     "Paren016": {
       "expected": "parentesi tonda aperta, 25, parentesi tonda chiusa"
@@ -65,13 +64,13 @@
       "expected": "parentesi tonda aperta, 2 x, parentesi tonda chiusa"
     },
     "Paren018": {
-      "expected": "2 più, parentesi tonda aperta, negativo 2, parentesi tonda chiusa"
+      "expected": "2 più, parentesi tonda aperta, meno 2, parentesi tonda chiusa"
     },
     "Paren019": {
-      "expected": "2 meno, parentesi tonda aperta, negativo 2, parentesi tonda chiusa"
+      "expected": "2 meno, parentesi tonda aperta, meno 2, parentesi tonda chiusa"
     },
     "Paren020": {
-      "expected": "2 meno, parentesi tonda aperta, negativo 2, parentesi tonda chiusa, cubo"
+      "expected": "2 meno, parentesi tonda aperta, meno 2, parentesi tonda chiusa, cubo"
     },
     "Paren021": {
       "expected": "parentesi tonda aperta, 2 x, parentesi tonda chiusa, quadrato"
@@ -80,28 +79,28 @@
       "expected": "parentesi tonda aperta, 2 x, parentesi tonda chiusa, elevato alla y più 1"
     },
     "Paren023": {
-      "expected": "parentesi tonda aperta, negativo 2 x, parentesi tonda chiusa"
+      "expected": "parentesi tonda aperta, meno 2 x, parentesi tonda chiusa"
     },
     "Paren024": {
-      "expected": "parentesi tonda aperta, negativo 2 x, parentesi tonda chiusa, quadrato"
+      "expected": "parentesi tonda aperta, meno 2 x, parentesi tonda chiusa, quadrato"
     },
     "Paren025": {
-      "expected": "negativo, parentesi tonda aperta, 2 x, parentesi tonda chiusa, quadrato"
+      "expected": "meno, parentesi tonda aperta, 2 x, parentesi tonda chiusa, quadrato"
     },
     "Paren026": {
-      "expected": "parentesi tonda aperta, uno mezzo, parentesi tonda chiusa"
+      "expected": "parentesi tonda aperta, un mezzo, parentesi tonda chiusa"
     },
     "Paren027": {
-      "expected": "parentesi tonda aperta, tre quarte x, parentesi tonda chiusa"
+      "expected": "parentesi tonda aperta, tre quarti x, parentesi tonda chiusa"
     },
     "Paren028": {
-      "expected": "parentesi tonda aperta, 11 sopra 22, parentesi tonda chiusa"
+      "expected": "parentesi tonda aperta, 11 fratto 22, parentesi tonda chiusa"
     },
     "Paren029": {
-      "expected": "parentesi tonda aperta, uno mezzo, parentesi tonda chiusa, alla quarta potenza"
+      "expected": "parentesi tonda aperta, un mezzo, parentesi tonda chiusa, alla quarta potenza"
     },
     "Paren030": {
-      "expected": "parentesi tonda aperta, 11 sopra 15, parentesi tonda chiusa, quadrato"
+      "expected": "parentesi tonda aperta, 11 fratto 15, parentesi tonda chiusa, quadrato"
     },
     "Paren031": {
       "expected": "il punto con coordinate 1 virgola 2"
@@ -143,16 +142,16 @@
       "expected": "l'intervallo da 0 a 1, che include 0 e 1"
     },
     "Paren044": {
-      "expected": "l'intervallo da negativo infinito a b, che non include b"
+      "expected": "l'intervallo da meno infinito a b, che non include b"
     },
     "Paren045": {
-      "expected": "l'intervallo da negativo infinito a 1, che non include 1"
+      "expected": "l'intervallo da meno infinito a 1, che non include 1"
     },
     "Paren046": {
-      "expected": "l'intervallo da negativo infinito a b, che include b"
+      "expected": "l'intervallo da meno infinito a b, che include b"
     },
     "Paren047": {
-      "expected": "l'intervallo da negativo infinito a 1, che include 1"
+      "expected": "l'intervallo da meno infinito a 1, che include 1"
     },
     "Paren048": {
       "expected": "l'intervallo da a a infinito, che non include a"
@@ -167,10 +166,10 @@
       "expected": "l'intervallo da 1 a infinito, che include 1"
     },
     "Paren052": {
-      "expected": "l'intervallo da negativo infinito a infinito"
+      "expected": "l'intervallo da meno infinito a infinito"
     },
     "Paren053": {
-      "expected": "l'intervallo da negativo infinito a positivo infinito"
+      "expected": "l'intervallo da meno infinito a più infinito"
     },
     "Nest001": {
       "expected": "f di, g di x"
@@ -185,10 +184,10 @@
       "expected": "6 meno, parentesi tonda aperta, 2 meno, seconda parentesi tonda aperta, 3 più 5, seconda parentesi tonda chiusa, parentesi tonda chiusa"
     },
     "Nest005": {
-      "expected": "4  , parentesi quadra aperta, x più 3  , parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa, parentesi quadra chiusa"
+      "expected": "4 per, parentesi quadra aperta, x più 3 per, parentesi tonda aperta, 2 x, più 1, parentesi tonda chiusa, parentesi quadra chiusa"
     },
     "Nest006": {
-      "expected": "4  , parentesi tonda aperta, x più 3  , seconda parentesi tonda aperta, 2 x, più 1, seconda parentesi tonda chiusa, parentesi tonda chiusa"
+      "expected": "4 per, parentesi tonda aperta, x più 3 per, seconda parentesi tonda aperta, 2 x, più 1, seconda parentesi tonda chiusa, parentesi tonda chiusa"
     },
     "Nest007": {
       "expected": "1 più, parentesi tonda aperta, 2 più, seconda parentesi tonda aperta, 3 più 7, seconda parentesi tonda chiusa, meno, seconda parentesi tonda aperta, 2 più 8, seconda parentesi tonda chiusa, parentesi tonda chiusa"
@@ -206,13 +205,13 @@
       "expected": "2 x"
     },
     "SilParen003": {
-      "expected": "2 più, negativo 2"
+      "expected": "2 più, meno 2"
     },
     "SilParen004": {
-      "expected": "2 meno, negativo 2"
+      "expected": "2 meno, meno 2"
     },
     "SilParen005": {
-      "expected": "2 meno, negativo 2, cubo"
+      "expected": "2 meno, meno 2, cubo"
     },
     "SilParen006": {
       "expected": "2 x, quadrato"
@@ -221,28 +220,28 @@
       "expected": "2 x, elevato alla y più 1"
     },
     "SilParen008": {
-      "expected": "negativo 2 x"
+      "expected": "meno 2 x"
     },
     "SilParen009": {
-      "expected": "negativo 2 x, quadrato"
+      "expected": "meno 2 x, quadrato"
     },
     "SilParen010": {
-      "expected": "negativo, 2 x, quadrato"
+      "expected": "meno, 2 x, quadrato"
     },
     "SilParen011": {
-      "expected": "uno mezzo"
+      "expected": "un mezzo"
     },
     "SilParen012": {
-      "expected": "tre quarte x"
+      "expected": "tre quarti x"
     },
     "SilParen013": {
-      "expected": "11 sopra 22"
+      "expected": "11 fratto 22"
     },
     "SilParen014": {
-      "expected": "uno mezzo, alla quarta potenza"
+      "expected": "un mezzo, alla quarta potenza"
     },
     "SilParen015": {
-      "expected": "11 sopra 15, quadrato"
+      "expected": "11 fratto 15, quadrato"
     }
   }
 }

@@ -3,7 +3,6 @@
   "name": "ItalianClearspeakPart3Adornments",
   "locale": "it",
   "compare": true,
-  "actual": true,
   "factory": "clearspeak",
   "base": "input/clearspeak/clearspeak_part3_adornments.json",
   "information": "Italian Clearspeak Part3Adornments rule tests.",
@@ -11,13 +10,13 @@
   "exclude": [],
   "tests": {
     "Prime001": {
-      "expected": "A maiuscola primo, B maiuscola primo"
+      "expected": "A primo, B primo"
     },
     "Prime002": {
-      "expected": "A maiuscola doppio primo, B maiuscola doppio primo"
+      "expected": "A doppio primo, B doppio primo"
     },
     "Prime003": {
-      "expected": "A maiuscola triplo primo, B maiuscola triplo primo"
+      "expected": "A triplo primo, B triplo primo"
     },
     "Prime004": {
       "expected": "f primo di x"
@@ -44,10 +43,10 @@
       "expected": "16 piedi, 10 pollici"
     },
     "Prime012": {
-      "expected": "45 gradi, 10 minuti"
+      "expected": "45 grado, 10 minuti"
     },
     "Prime013": {
-      "expected": "x gradi, y minuti"
+      "expected": "x grado, y minuti"
     },
     "Prime016": {
       "expected": "1 minuto"
@@ -74,19 +73,19 @@
       "expected": "x minuti, y secondi"
     },
     "Prime024": {
-      "expected": "45 gradi, 10 minuti"
+      "expected": "45 grado, 10 minuti"
     },
     "Prime025": {
-      "expected": "45 gradi, 10 minuti, 25 secondi"
+      "expected": "45 grado, 10 minuti, 25 secondi"
     },
     "Prime026": {
-      "expected": "A maiuscola primo, B maiuscola primo"
+      "expected": "A primo, B primo"
     },
     "Prime027": {
-      "expected": "A maiuscola doppio primo, B maiuscola doppio primo"
+      "expected": "A doppio primo, B doppio primo"
     },
     "Prime028": {
-      "expected": "A maiuscola triplo primo, B maiuscola triplo primo"
+      "expected": "A triplo primo, B triplo primo"
     },
     "Prime029": {
       "expected": "f primo di x"
@@ -116,13 +115,13 @@
       "expected": "2 pollici"
     },
     "Prime042": {
-      "expected": "A maiuscola primo, B maiuscola primo"
+      "expected": "A primo, B primo"
     },
     "Prime043": {
-      "expected": "A maiuscola doppio primo, B maiuscola doppio primo"
+      "expected": "A doppio primo, B doppio primo"
     },
     "Prime044": {
-      "expected": "A maiuscola triplo primo, B maiuscola triplo primo"
+      "expected": "A triplo primo, B triplo primo"
     },
     "Prime045": {
       "expected": "f primo di x"
@@ -134,16 +133,16 @@
       "expected": "f triplo primo di x"
     },
     "CombPerm001a": {
-      "expected": "n C maiuscola r"
+      "expected": "n C r"
     },
     "CombPerm002a": {
-      "expected": "n P maiuscola r"
+      "expected": "n P r"
     },
     "CombPerm003a": {
-      "expected": "10 C maiuscola 3"
+      "expected": "10 C 3"
     },
     "CombPerm004a": {
-      "expected": "10 P maiuscola 3"
+      "expected": "10 P 3"
     },
     "CombPerm005a": {
       "expected": "composizione di n per r"
@@ -164,10 +163,10 @@
       "expected": "f segno di vocale lunga di x"
     },
     "Bar003": {
-      "expected": "f sub 1, segno di vocale lunga"
+      "expected": "f pedice 1, segno di vocale lunga"
     },
     "Bar004": {
-      "expected": "f sub 1, segno di vocale lunga di x"
+      "expected": "f pedice 1, segno di vocale lunga di x"
     },
     "Bar005": {
       "expected": "z segno di vocale lunga"
@@ -191,16 +190,16 @@
       "expected": "z, z segno di vocale lunga"
     },
     "Bar012": {
-      "expected": "la linea segmento C maiuscola D maiuscola"
+      "expected": "la linea segmento C D"
     },
     "Bar013": {
-      "expected": "la linea segmento C maiuscola primo D maiuscola primo"
+      "expected": "la linea segmento C primo D primo"
     },
     "Bar014": {
-      "expected": "la linea segmento C maiuscola doppio primo D maiuscola doppio primo"
+      "expected": "la linea segmento C doppio primo D doppio primo"
     },
     "Bar015": {
-      "expected": "la linea segmento C maiuscola triplo primo D maiuscola triplo primo"
+      "expected": "la linea segmento C triplo primo D triplo primo"
     },
     "Bar016": {
       "expected": "il coniugato complesso di z"
@@ -237,6 +236,24 @@
     },
     "Equal004": {
       "expected": "x più 2 segno uguale a con punto interrogativo sopra esso 4"
+    },
+    "Prime014": {
+      "expected": "45 grado, 10 minuti, 25 secondi"
+    },
+    "Prime015": {
+      "expected": "x grado, y minuti, z secondi"
+    },
+    "Prime038": {
+      "expected": "16 piedi, 10 pollici"
+    },
+    "Prime039": {
+      "expected": "x piedi, y pollici"
+    },
+    "Prime040": {
+      "expected": "45 grado, 10 minuti"
+    },
+    "Prime041": {
+      "expected": "45 grado, 10 minuti, 25 secondi"
     }
   }
 }

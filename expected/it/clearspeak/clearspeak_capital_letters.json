@@ -3,7 +3,6 @@
   "name": "ItalianClearspeakCapitalLetters",
   "locale": "it",
   "compare": true,
-  "actual": true,
   "factory": "clearspeak",
   "base": "input/clearspeak/clearspeak_capital_letters.json",
   "information": "Italian Clearspeak CapitalLetters rule tests.",
@@ -11,43 +10,43 @@
   "exclude": [],
   "tests": {
     "Cap001": {
-      "expected": "seno A maiuscola sopra a, uguale a, seno B maiuscola sopra b"
+      "expected": "seno di A fratto a, uguale a, seno di B fratto b"
     },
     "Cap002": {
-      "expected": "c quadrato uguale a a quadrato più b quadrato meno 2 a b coseno C maiuscola"
+      "expected": "c quadrato uguale a a quadrato più b quadrato meno 2 a b coseno di C"
     },
     "Cap003": {
-      "expected": "tangente A maiuscola uguale a, a sopra b"
+      "expected": "tangente di A uguale a, a fratto b"
     },
     "Cap004": {
-      "expected": "A maiuscola B maiuscola"
+      "expected": "A B"
     },
     "Cap005": {
-      "expected": "a A maiuscola"
+      "expected": "a A"
     },
     "Cap006": {
-      "expected": "b A maiuscola"
+      "expected": "b A"
     },
     "Cap007": {
-      "expected": "B maiuscola a"
+      "expected": "B a"
     },
     "Cap008": {
-      "expected": "angolo A maiuscola B maiuscola C maiuscola"
+      "expected": "angolo A B C"
     },
     "Cap009": {
-      "expected": "la misura di angolo A maiuscola B maiuscola C maiuscola"
+      "expected": "misura di angolo A B C"
     },
     "Cap010": {
-      "expected": "la misura di angolo A maiuscola"
+      "expected": "misura di angolo A"
     },
     "Cap011": {
-      "expected": "seno A maiuscola sopra a, uguale a, seno B maiuscola sopra b"
+      "expected": "seno di A maiuscola fratto a, uguale a, seno di B maiuscola fratto b"
     },
     "Cap012": {
-      "expected": "c quadrato uguale a a quadrato più b quadrato meno 2 a b coseno C maiuscola"
+      "expected": "c quadrato uguale a a quadrato più b quadrato meno 2 a b coseno di C maiuscola"
     },
     "Cap013": {
-      "expected": "tangente A maiuscola uguale a, a sopra b"
+      "expected": "tangente di A maiuscola uguale a, a fratto b"
     },
     "Cap014": {
       "expected": "A maiuscola, B maiuscola"
@@ -65,10 +64,10 @@
       "expected": "angolo A maiuscola, B maiuscola, C maiuscola"
     },
     "Cap019": {
-      "expected": "la misura di angolo A maiuscola, B maiuscola, C maiuscola"
+      "expected": "misura di angolo A maiuscola, B maiuscola, C maiuscola"
     },
     "Cap020": {
-      "expected": "la misura di angolo A maiuscola"
+      "expected": "misura di angolo A maiuscola"
     },
     "Cap020a": {
       "expected": "angolo A maiuscola"

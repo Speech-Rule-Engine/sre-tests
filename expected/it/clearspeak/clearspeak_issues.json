@@ -3,7 +3,6 @@
   "name": "ItalianClearspeakIssues",
   "locale": "it",
   "compare": true,
-  "actual": true,
   "factory": "clearspeak",
   "base": "input/clearspeak/clearspeak_issues.json",
   "information": "Italian Clearspeak Issues tests.",
@@ -11,10 +10,10 @@
   "exclude": [],
   "tests": {
     "Issue230_1": {
-      "expected": "5 e, 3 sopra 224"
+      "expected": "5 e, 3 fratto 224"
     },
     "Issue230_2": {
-      "expected": "5 e tre quarte"
+      "expected": "5 e tre quarti"
     },
     "IssueNumbers_1": {
       "expected": "numero t 2 e 4"
@@ -32,31 +31,31 @@
       "expected": "x fattoriale"
     },
     "Issue320_3": {
-      "expected": "negativo negativo x"
+      "expected": "meno meno x"
     },
     "Issue320_4": {
       "expected": "più più x"
     },
     "Issue320_5": {
-      "expected": "seno seno x"
+      "expected": "seno di seno di x"
     },
     "Issue320_6": {
       "expected": "derivata parziale derivata parziale x"
     },
     "Issue320_7": {
-      "expected": "parentesi tonda aperta, la frazione con numerature derivata parziale quadrato, e denominatore derivata parziale x quadrato, più, la frazione con numerature derivata parziale quadrato, e denominatore derivata parziale y quadrato, parentesi tonda chiusa,  , il valore assoluto phi  , parentesi tonda aperta, x più i normale, y, parentesi tonda chiusa, quadrato uguale a 0"
+      "expected": "parentesi tonda aperta, frazione con numeratore derivata parziale quadrato, e denominatore derivata parziale x quadrato, più, frazione con numeratore derivata parziale quadrato, e denominatore derivata parziale y quadrato, parentesi tonda chiusa, per, il valore assoluto di phi per, parentesi tonda aperta, x più i normale, y, parentesi tonda chiusa, quadrato uguale a 0"
     },
     "Issue301_1": {
-      "expected": "4 mm"
+      "expected": "4 millimetri"
     },
     "Issue301_2": {
-      "expected": "1 mm"
+      "expected": "1 millimetro"
     },
     "Issue301_3": {
-      "expected": "4 mm"
+      "expected": "4 millimetri"
     },
     "Issue301_4": {
-      "expected": "1 mm"
+      "expected": "1 millimetro"
     },
     "Issue_442_0": {
       "expected": "9 diviso per 3 diverso da 9 per 3"
