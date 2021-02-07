@@ -335,7 +335,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-sets.html#czW",
       "input": "<math><mi>f</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>x</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo>:</mo><mi>x</mi><mo>&gt;</mo><mn>0</mn><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "f({\\mathbb R} ) = \\{ x \\in {\\mathbb R} : x \\gt 0 \\}",
-      "expected": "⠋⠷⠸⠠⠗⠾⠀⠨⠅⠀⠨⠷⠭⠀⠈⠑⠀⠸⠠⠗⠒⠀⠭⠀⠨⠂⠀⠼⠴⠨⠾",
+      "expected": "⠋⠷⠸⠰⠠⠗⠾⠀⠨⠅⠀⠨⠷⠭⠀⠈⠑⠀⠸⠰⠠⠗⠒⠀⠭⠀⠨⠂⠀⠼⠴⠨⠾",
       "reference": {
         "m-582": "http://abstract.ups.edu/aata/exercises-sets.html#czW"
       }
@@ -345,7 +345,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-sets.html#czW",
       "input": "<math><mi>f</mi><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"double-struck\">R</mi></mrow><mo stretchy=\"false\">)</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>x</mi><mo>:</mo><mo>−</mo><mn>1</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>1</mn><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "f(\\mathbb R) = \\{ x : -1 \\leq x \\leq 1 \\}",
-      "expected": "⠋⠷⠸⠠⠗⠾⠀⠨⠅⠀⠨⠷⠭⠒⠀⠤⠼⠂⠀⠐⠅⠱⠀⠭⠀⠐⠅⠱⠀⠼⠂⠨⠾",
+      "expected": "⠋⠷⠸⠰⠠⠗⠾⠀⠨⠅⠀⠨⠷⠭⠒⠀⠤⠼⠂⠀⠐⠅⠱⠀⠭⠀⠐⠅⠱⠀⠼⠂⠨⠾",
       "reference": {
         "m-584": "http://abstract.ups.edu/aata/exercises-sets.html#czW"
       }
@@ -892,7 +892,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-crypt.html#skx",
       "input": "<math><mi>f</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"bold\">p</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo>=</mo><mi>A</mi><mrow><mrow><mi mathvariant=\"bold\">p</mi></mrow></mrow><mo>+</mo><mrow><mrow><mi mathvariant=\"bold\">b</mi></mrow></mrow></math>",
       "tex": "f({\\mathbf p}) = A {\\mathbf p} + {\\mathbf b}",
-      "expected": "⠋⠷⠸⠏⠾⠀⠨⠅⠀⠠⠁⠸⠏⠬⠸⠃",
+      "expected": "⠋⠷⠸⠰⠏⠾⠀⠨⠅⠀⠠⠁⠸⠰⠏⠬⠸⠰⠃",
       "reference": {
         "m-3627": "http://abstract.ups.edu/aata/exercises-crypt.html#skx"
       }
@@ -902,7 +902,7 @@
       "url": "http://abstract.ups.edu/aata/section-error-detecting-correcting-codes.html#EaQ",
       "input": "<math><mi>w</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo>=</mo><mi>d</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>,</mo><mrow><mrow><mn mathvariant=\"bold\">0</mn></mrow></mrow><mo stretchy=\"false\">)</mo></math>",
       "tex": "w({\\mathbf x}) = d({\\mathbf x}, {\\mathbf 0})",
-      "expected": "⠺⠷⠸⠭⠾⠀⠨⠅⠀⠙⠷⠸⠭⠠⠀⠼⠴⠾",
+      "expected": "⠺⠷⠸⠰⠭⠾⠀⠨⠅⠀⠙⠷⠸⠰⠭⠠⠀⠼⠴⠾",
       "reference": {
         "m-3879": "http://abstract.ups.edu/aata/section-error-detecting-correcting-codes.html#EaQ",
         "m-3892": "http://abstract.ups.edu/aata/section-error-detecting-correcting-codes.html#URK",
@@ -914,7 +914,7 @@
       "url": "http://abstract.ups.edu/aata/section-error-detecting-correcting-codes.html#hgc",
       "input": "<math><mi>d</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>,</mo><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn></math>",
       "tex": "d( {\\mathbf x}, {\\mathbf y}) = 0",
-      "expected": "⠙⠷⠸⠭⠠⠀⠸⠽⠾⠀⠨⠅⠀⠼⠴",
+      "expected": "⠙⠷⠸⠰⠭⠠⠀⠸⠰⠽⠾⠀⠨⠅⠀⠼⠴",
       "reference": {
         "m-3894": "http://abstract.ups.edu/aata/section-error-detecting-correcting-codes.html#hgc",
         "m-4596": "http://abstract.ups.edu/aata/exercises-algcodes.html#caK"
@@ -925,7 +925,7 @@
       "url": "http://abstract.ups.edu/aata/section-error-detecting-correcting-codes.html#Nnl",
       "input": "<math><mi>d</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>,</mo><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo>=</mo><mi>d</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo>,</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo stretchy=\"false\">)</mo></math>",
       "tex": "d( {\\mathbf x}, {\\mathbf y})= d( {\\mathbf y}, {\\mathbf x})",
-      "expected": "⠙⠷⠸⠭⠠⠀⠸⠽⠾⠀⠨⠅⠀⠙⠷⠸⠽⠠⠀⠸⠭⠾",
+      "expected": "⠙⠷⠸⠰⠭⠠⠀⠸⠰⠽⠾⠀⠨⠅⠀⠙⠷⠸⠰⠽⠠⠀⠸⠰⠭⠾",
       "reference": {
         "m-3896": "http://abstract.ups.edu/aata/section-error-detecting-correcting-codes.html#Nnl",
         "m-4598": "http://abstract.ups.edu/aata/exercises-algcodes.html#IhT"
@@ -936,7 +936,7 @@
       "url": "http://abstract.ups.edu/aata/section-error-detecting-correcting-codes.html#wwr",
       "input": "<math><mi>d</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>,</mo><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo>=</mo><mn>1</mn></math>",
       "tex": "d({\\mathbf x}, {\\mathbf y}) = 1",
-      "expected": "⠙⠷⠸⠭⠠⠀⠸⠽⠾⠀⠨⠅⠀⠼⠂",
+      "expected": "⠙⠷⠸⠰⠭⠠⠀⠸⠰⠽⠾⠀⠨⠅⠀⠼⠂",
       "reference": {
         "m-3903": "http://abstract.ups.edu/aata/section-error-detecting-correcting-codes.html#wwr",
         "m-3992": "http://abstract.ups.edu/aata/section-error-detecting-correcting-codes.html#cDA",
@@ -948,7 +948,7 @@
       "url": "http://abstract.ups.edu/aata/section-error-detecting-correcting-codes.html#wwr",
       "input": "<math><mi>d</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>,</mo><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo>=</mo><mn>2</mn></math>",
       "tex": "d({\\mathbf x}, {\\mathbf y}) = 2",
-      "expected": "⠙⠷⠸⠭⠠⠀⠸⠽⠾⠀⠨⠅⠀⠼⠆",
+      "expected": "⠙⠷⠸⠰⠭⠠⠀⠸⠰⠽⠾⠀⠨⠅⠀⠼⠆",
       "reference": {
         "m-3906": "http://abstract.ups.edu/aata/section-error-detecting-correcting-codes.html#wwr",
         "m-3998": "http://abstract.ups.edu/aata/section-error-detecting-correcting-codes.html#cDA",
@@ -960,7 +960,7 @@
       "url": "http://abstract.ups.edu/aata/section-linear-codes.html#tnq",
       "input": "<math><mi>w</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>+</mo><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo>=</mo><mi>d</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>,</mo><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo stretchy=\"false\">)</mo></math>",
       "tex": "w({\\mathbf x} + {\\mathbf y}) = d({\\mathbf x}, {\\mathbf y})",
-      "expected": "⠺⠷⠸⠭⠬⠸⠽⠾⠀⠨⠅⠀⠙⠷⠸⠭⠠⠀⠸⠽⠾",
+      "expected": "⠺⠷⠸⠰⠭⠬⠸⠰⠽⠾⠀⠨⠅⠀⠙⠷⠸⠰⠭⠠⠀⠸⠰⠽⠾",
       "reference": {
         "m-4076": "http://abstract.ups.edu/aata/section-linear-codes.html#tnq"
       }
@@ -970,7 +970,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-algcodes.html#Dya",
       "input": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>d</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>,</mo><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo>=</mo><mi>d</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>+</mo><mrow><mrow><mi mathvariant=\"bold\">z</mi></mrow></mrow><mo>,</mo><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo>+</mo><mrow><mrow><mi mathvariant=\"bold\">z</mi></mrow></mrow><mo stretchy=\"false\">)</mo></mstyle></math>",
       "tex": "d( {\\mathbf x}, {\\mathbf y}) = d( {\\mathbf x} + {\\mathbf z}, {\\mathbf y} + {\\mathbf z} )",
-      "expected": "⠙⠷⠸⠭⠠⠀⠸⠽⠾⠀⠨⠅⠀⠙⠷⠸⠭⠬⠸⠵⠠⠀⠸⠽⠬⠸⠵⠾",
+      "expected": "⠙⠷⠸⠰⠭⠠⠀⠸⠰⠽⠾⠀⠨⠅⠀⠙⠷⠸⠰⠭⠬⠸⠰⠵⠠⠀⠸⠰⠽⠬⠸⠰⠵⠾",
       "reference": {
         "m-4590": "http://abstract.ups.edu/aata/exercises-algcodes.html#Dya"
       }
@@ -980,7 +980,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-algcodes.html#jFj",
       "input": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mi>d</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>,</mo><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo>=</mo><mi>w</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>−</mo><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo stretchy=\"false\">)</mo></mstyle></math>",
       "tex": "d({\\mathbf x}, {\\mathbf y}) = w({\\mathbf x}- {\\mathbf y})",
-      "expected": "⠙⠷⠸⠭⠠⠀⠸⠽⠾⠀⠨⠅⠀⠺⠷⠸⠭⠤⠸⠽⠾",
+      "expected": "⠙⠷⠸⠰⠭⠠⠀⠸⠰⠽⠾⠀⠨⠅⠀⠺⠷⠸⠰⠭⠤⠸⠰⠽⠾",
       "reference": {
         "m-4591": "http://abstract.ups.edu/aata/exercises-algcodes.html#jFj"
       }
@@ -1151,7 +1151,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-isomorph.html#TEA",
       "input": "<math><mi>U</mi><mo stretchy=\"false\">(</mo><mn>8</mn><mo stretchy=\"false\">)</mo><mo>≅</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mn>4</mn></msub></math>",
       "tex": "U(8) \\cong {\\mathbb Z}_4",
-      "expected": "⠠⠥⠷⠼⠦⠾⠀⠈⠱⠈⠱⠀⠸⠠⠵⠲",
+      "expected": "⠠⠥⠷⠼⠦⠾⠀⠈⠱⠈⠱⠀⠸⠰⠠⠵⠲",
       "reference": {
         "m-5037": "http://abstract.ups.edu/aata/exercises-isomorph.html#TEA"
       }
@@ -1181,7 +1181,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-isomorph.html#PEB",
       "input": "<math><mi>U</mi><mo stretchy=\"false\">(</mo><mn>5</mn><mo stretchy=\"false\">)</mo><mo>≅</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mn>4</mn></msub></math>",
       "tex": "U(5) \\cong {\\mathbb Z}_4",
-      "expected": "⠠⠥⠷⠼⠢⠾⠀⠈⠱⠈⠱⠀⠸⠠⠵⠲",
+      "expected": "⠠⠥⠷⠼⠢⠾⠀⠈⠱⠈⠱⠀⠸⠰⠠⠵⠲",
       "reference": {
         "m-5135": "http://abstract.ups.edu/aata/exercises-isomorph.html#PEB"
       }
@@ -1499,7 +1499,7 @@
       "url": "http://abstract.ups.edu/aata/homomorph-exercises-automorphisms.html#qmg",
       "input": "<math><mi>Aut</mi><mo data-mjx-texclass=\"NONE\">⁡</mo><mo stretchy=\"false\">(</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mn>8</mn></msub><mo stretchy=\"false\">)</mo><mo>≅</mo><mi>U</mi><mo stretchy=\"false\">(</mo><mn>8</mn><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\aut({\\mathbb Z}_8) \\cong U(8)",
-      "expected": "⠠⠁⠥⠞⠷⠸⠠⠵⠦⠾⠀⠈⠱⠈⠱⠀⠠⠥⠷⠼⠦⠾",
+      "expected": "⠠⠁⠥⠞⠷⠸⠰⠠⠵⠦⠾⠀⠈⠱⠈⠱⠀⠠⠥⠷⠼⠦⠾",
       "reference": {
         "m-6232": "http://abstract.ups.edu/aata/homomorph-exercises-automorphisms.html#qmg"
       }
@@ -1509,7 +1509,7 @@
       "url": "http://abstract.ups.edu/aata/section-matrix-groups.html#hdc",
       "input": "<math><mo fence=\"false\" stretchy=\"false\">⟨</mo><mi>α</mi><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>,</mo><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">⟩</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">⟨</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>,</mo><mi>α</mi><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">⟩</mo><mo>=</mo><mi>α</mi><mo fence=\"false\" stretchy=\"false\">⟨</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>,</mo><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">⟩</mo></math>",
       "tex": "\\langle \\alpha {\\mathbf x}, {\\mathbf y} \\rangle = \\langle {\\mathbf x}, \\alpha {\\mathbf y} \\rangle = \\alpha \\langle {\\mathbf x}, {\\mathbf y} \\rangle",
-      "expected": "⠨⠨⠷⠁⠸⠭⠠⠀⠸⠽⠨⠨⠾⠀⠨⠅⠀⠨⠨⠷⠸⠭⠠⠀⠁⠸⠽⠨⠨⠾⠀⠨⠅⠀⠁⠨⠨⠷⠸⠭⠠⠀⠸⠽⠨⠨⠾",
+      "expected": "⠨⠨⠷⠁⠸⠰⠭⠠⠀⠸⠰⠽⠨⠨⠾⠀⠨⠅⠀⠨⠨⠷⠸⠰⠭⠠⠀⠁⠸⠰⠽⠨⠨⠾⠀⠨⠅⠀⠁⠨⠨⠷⠸⠰⠭⠠⠀⠸⠰⠽⠨⠨⠾",
       "reference": {
         "m-6397": "http://abstract.ups.edu/aata/section-matrix-groups.html#hdc",
         "m-6677": "http://abstract.ups.edu/aata/exercises-matrix.html#nCi"
@@ -1520,7 +1520,7 @@
       "url": "http://abstract.ups.edu/aata/section-symmetry.html#ION",
       "input": "<math><msub><mi>T</mi><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow></msub><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo>=</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>+</mo><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow></math>",
       "tex": "T_{\\mathbf y}({\\mathbf x}) = {\\mathbf x} + {\\mathbf y}",
-      "expected": "⠠⠞⠰⠸⠽⠐⠷⠸⠭⠾⠀⠨⠅⠀⠸⠭⠬⠸⠽",
+      "expected": "⠠⠞⠰⠸⠰⠽⠐⠷⠸⠰⠭⠾⠀⠨⠅⠀⠸⠰⠭⠬⠸⠰⠽",
       "reference": {
         "m-6494": "http://abstract.ups.edu/aata/section-symmetry.html#ION"
       }
@@ -1541,7 +1541,7 @@
       "url": "http://abstract.ups.edu/aata/section-symmetry.html#Vdf",
       "input": "<math><mi>f</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo>=</mo><mi>A</mi><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo>+</mo><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow></math>",
       "tex": "f({\\mathbf y}) = A {\\mathbf y} + {\\mathbf x}",
-      "expected": "⠋⠷⠸⠽⠾⠀⠨⠅⠀⠠⠁⠸⠽⠬⠸⠭",
+      "expected": "⠋⠷⠸⠰⠽⠾⠀⠨⠅⠀⠠⠁⠸⠰⠽⠬⠸⠰⠭",
       "reference": {
         "m-6520": "http://abstract.ups.edu/aata/section-symmetry.html#Vdf"
       }
@@ -1826,7 +1826,7 @@
       "url": "http://abstract.ups.edu/aata/section-rings-definitions.html#uTz",
       "input": "<math><mi>R</mi><mo>=</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">M</mi></mrow></mrow><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo stretchy=\"false\">)</mo></math>",
       "tex": "R ={\\mathbb M}_2( {\\mathbb R} )",
-      "expected": "⠠⠗⠀⠨⠅⠀⠸⠠⠍⠆⠷⠸⠠⠗⠾",
+      "expected": "⠠⠗⠀⠨⠅⠀⠸⠰⠠⠍⠆⠷⠸⠰⠠⠗⠾",
       "reference": {
         "m-9044": "http://abstract.ups.edu/aata/section-rings-definitions.html#uTz"
       }
@@ -1836,7 +1836,7 @@
       "url": "http://abstract.ups.edu/aata/section-domains-and-fields.html#baI",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo stretchy=\"false\">[</mo><mi>i</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>m</mi><mo>+</mo><mi>n</mi><mi>i</mi><mo>:</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "{\\mathbb Z}[ i ] = \\{ m + ni : m, n \\in {\\mathbb Z} \\}",
-      "expected": "⠸⠠⠵⠈⠷⠊⠈⠾⠀⠨⠅⠀⠨⠷⠍⠬⠝⠊⠒⠀⠍⠠⠀⠝⠀⠈⠑⠀⠸⠠⠵⠨⠾",
+      "expected": "⠸⠰⠠⠵⠈⠷⠊⠈⠾⠀⠨⠅⠀⠨⠷⠍⠬⠝⠊⠒⠀⠍⠠⠀⠝⠀⠈⠑⠀⠸⠰⠠⠵⠨⠾",
       "reference": {
         "m-9067": "http://abstract.ups.edu/aata/section-domains-and-fields.html#baI"
       }
@@ -1846,7 +1846,7 @@
       "url": "http://abstract.ups.edu/aata/section-domains-and-fields.html#npa",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>2</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>a</mi><mo>+</mo><mi>b</mi><msqrt><mn>2</mn></msqrt><mo>:</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "{\\mathbb Q}( \\sqrt{2}\\, ) = \\{ a + b \\sqrt{2} : a, b \\in {\\mathbb Q} \\}",
-      "expected": "⠸⠠⠟⠷⠜⠆⠻⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠆⠻⠒⠀⠁⠠⠀⠃⠀⠈⠑⠀⠸⠠⠟⠨⠾",
+      "expected": "⠸⠰⠠⠟⠷⠜⠆⠻⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠆⠻⠒⠀⠁⠠⠀⠃⠀⠈⠑⠀⠸⠰⠠⠟⠨⠾",
       "reference": {
         "m-9082": "http://abstract.ups.edu/aata/section-domains-and-fields.html#npa",
         "m-9550": "http://abstract.ups.edu/aata/exercises-rings.html#YIF",
@@ -1981,7 +1981,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-rings.html#EPO",
       "input": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>2</mn></msqrt><mo>,</mo><msqrt><mn>3</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>a</mi><mo>+</mo><mi>b</mi><msqrt><mn>2</mn></msqrt><mo>+</mo><mi>c</mi><msqrt><mn>3</mn></msqrt><mo>+</mo><mi>d</mi><msqrt><mn>6</mn></msqrt><mo>:</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">}</mo></mstyle></math>",
       "tex": "{\\mathbb Q} ( \\sqrt{2}, \\sqrt{3}\\, ) = \\{a + b \\sqrt{2} + c \\sqrt{3} + d \\sqrt{6} : a, b, c, d \\in {\\mathbb Q}\\}",
-      "expected": "⠸⠠⠟⠷⠜⠆⠻⠠⠀⠜⠒⠻⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠆⠻⠬⠉⠜⠒⠻⠬⠙⠜⠖⠻⠒⠀⠁⠠⠀⠃⠠⠀⠉⠠⠀⠙⠀⠈⠑⠀⠸⠠⠟⠨⠾",
+      "expected": "⠸⠰⠠⠟⠷⠜⠆⠻⠠⠀⠜⠒⠻⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠆⠻⠬⠉⠜⠒⠻⠬⠙⠜⠖⠻⠒⠀⠁⠠⠀⠃⠠⠀⠉⠠⠀⠙⠀⠈⠑⠀⠸⠰⠠⠟⠨⠾",
       "reference": {
         "m-9551": "http://abstract.ups.edu/aata/exercises-rings.html#EPO"
       }
@@ -1991,7 +1991,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-rings.html#kWX",
       "input": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo stretchy=\"false\">[</mo><msqrt><mn>3</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">]</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>a</mi><mo>+</mo><mi>b</mi><msqrt><mn>3</mn></msqrt><mo>:</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">}</mo></mstyle></math>",
       "tex": "{\\mathbb Z}[\\sqrt{3}\\, ] = \\{ a + b \\sqrt{3} : a, b \\in {\\mathbb Z} \\}",
-      "expected": "⠸⠠⠵⠈⠷⠜⠒⠻⠈⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠒⠻⠒⠀⠁⠠⠀⠃⠀⠈⠑⠀⠸⠠⠵⠨⠾",
+      "expected": "⠸⠰⠠⠵⠈⠷⠜⠒⠻⠈⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠒⠻⠒⠀⠁⠠⠀⠃⠀⠈⠑⠀⠸⠰⠠⠵⠨⠾",
       "reference": {
         "m-9552": "http://abstract.ups.edu/aata/exercises-rings.html#kWX"
       }
@@ -2001,7 +2001,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-rings.html#xlp",
       "input": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo stretchy=\"false\">[</mo><mi>i</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo>:</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mtext> and </mtext><msup><mi>i</mi><mn>2</mn></msup><mo>=</mo><mo>−</mo><mn>1</mn><mo fence=\"false\" stretchy=\"false\">}</mo></mstyle></math>",
       "tex": "{\\mathbb Z}[ i ] = \\{ a + b i : a, b \\in {\\mathbb Z} \\text{ and } i^2 = -1 \\}",
-      "expected": "⠸⠠⠵⠈⠷⠊⠈⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠊⠒⠀⠁⠠⠀⠃⠀⠈⠑⠀⠸⠠⠵⠀⠁⠝⠙⠀⠊⠘⠆⠐⠀⠨⠅⠀⠤⠼⠂⠨⠾",
+      "expected": "⠸⠰⠠⠵⠈⠷⠊⠈⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠊⠒⠀⠁⠠⠀⠃⠀⠈⠑⠀⠸⠰⠠⠵⠀⠁⠝⠙⠀⠊⠘⠆⠐⠀⠨⠅⠀⠤⠼⠂⠨⠾",
       "reference": {
         "m-9554": "http://abstract.ups.edu/aata/exercises-rings.html#xlp"
       }
@@ -2011,7 +2011,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-rings.html#dsy",
       "input": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><mroot><mn>3</mn><mn>3</mn></mroot><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>a</mi><mo>+</mo><mi>b</mi><mroot><mn>3</mn><mn>3</mn></mroot><mo>+</mo><mi>c</mi><mroot><mn>9</mn><mn>3</mn></mroot><mo>:</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">}</mo></mstyle></math>",
       "tex": "{\\mathbb Q}( \\sqrt[3]{3}\\, ) = \\{ a + b \\sqrt[3]{3} + c \\sqrt[3]{9} : a, b, c \\in {\\mathbb Q} \\}",
-      "expected": "⠸⠠⠟⠷⠣⠒⠜⠒⠻⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠣⠒⠜⠒⠻⠬⠉⠣⠒⠜⠔⠻⠒⠀⠁⠠⠀⠃⠠⠀⠉⠀⠈⠑⠀⠸⠠⠟⠨⠾",
+      "expected": "⠸⠰⠠⠟⠷⠣⠒⠜⠒⠻⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠣⠒⠜⠒⠻⠬⠉⠣⠒⠜⠔⠻⠒⠀⠁⠠⠀⠃⠠⠀⠉⠀⠈⠑⠀⠸⠰⠠⠟⠨⠾",
       "reference": {
         "m-9555": "http://abstract.ups.edu/aata/exercises-rings.html#dsy"
       }
@@ -2031,7 +2031,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-rings.html#DhS",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>3</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>a</mi><mo>+</mo><mi>b</mi><msqrt><mn>3</mn></msqrt><mo>:</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "{\\mathbb Q}( \\sqrt{3}\\, ) = \\{a + b \\sqrt{3} : a, b \\in {\\mathbb Q} \\}",
-      "expected": "⠸⠠⠟⠷⠜⠒⠻⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠒⠻⠒⠀⠁⠠⠀⠃⠀⠈⠑⠀⠸⠠⠟⠨⠾",
+      "expected": "⠸⠰⠠⠟⠷⠜⠒⠻⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠒⠻⠒⠀⠁⠠⠀⠃⠀⠈⠑⠀⠸⠰⠠⠟⠨⠾",
       "reference": {
         "m-9603": "http://abstract.ups.edu/aata/exercises-rings.html#DhS"
       }
@@ -2051,7 +2051,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-rings.html#bKC",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo stretchy=\"false\">[</mo><msqrt><mn>3</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mi>i</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>a</mi><mo>+</mo><mi>b</mi><msqrt><mn>3</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mi>i</mi><mo>:</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "{\\mathbb Z}[ \\sqrt{3}\\, i ] = \\{ a + b \\sqrt{3}\\, i : a, b \\in {\\mathbb Z} \\}",
-      "expected": "⠸⠠⠵⠈⠷⠜⠒⠻⠊⠈⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠒⠻⠊⠒⠀⠁⠠⠀⠃⠀⠈⠑⠀⠸⠠⠵⠨⠾",
+      "expected": "⠸⠰⠠⠵⠈⠷⠜⠒⠻⠊⠈⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠒⠻⠊⠒⠀⠁⠠⠀⠃⠀⠈⠑⠀⠸⠰⠠⠵⠨⠾",
       "reference": {
         "m-9612": "http://abstract.ups.edu/aata/exercises-rings.html#bKC"
       }
@@ -2841,7 +2841,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#KCj",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo stretchy=\"false\">[</mo><msqrt><mn>3</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mi>i</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>a</mi><mo>+</mo><mi>b</mi><msqrt><mn>3</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mi>i</mi><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "{\\mathbb Z}[ \\sqrt{3}\\, i ] = \\{ a + b \\sqrt{3}\\, i\\}",
-      "expected": "⠸⠠⠵⠈⠷⠜⠒⠻⠊⠈⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠒⠻⠊⠨⠾",
+      "expected": "⠸⠰⠠⠵⠈⠷⠜⠒⠻⠊⠈⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠒⠻⠊⠨⠾",
       "reference": {
         "m-10885": "http://abstract.ups.edu/aata/section-factorization-domains.html#KCj"
       }
@@ -2921,7 +2921,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#WQB",
       "input": "<math><mo fence=\"false\" stretchy=\"false\">⟨</mo><mi>p</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo fence=\"false\" stretchy=\"false\">⟩</mo><mo>=</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo></math>",
       "tex": "\\langle p(x) \\rangle = {\\mathbb Z}[x]",
-      "expected": "⠨⠨⠷⠏⠷⠭⠾⠨⠨⠾⠀⠨⠅⠀⠸⠠⠵⠈⠷⠭⠈⠾",
+      "expected": "⠨⠨⠷⠏⠷⠭⠾⠨⠨⠾⠀⠨⠅⠀⠸⠰⠠⠵⠈⠷⠭⠈⠾",
       "reference": {
         "m-11110": "http://abstract.ups.edu/aata/section-factorization-domains.html#WQB"
       }
@@ -2941,7 +2941,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#bAu",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><mi>i</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>p</mi><mo>+</mo><mi>q</mi><mi>i</mi><mo>:</mo><mi>p</mi><mo>,</mo><mi>q</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "{\\mathbb Q}(i) = \\{ p + qi : p, q \\in {\\mathbb Q} \\}",
-      "expected": "⠸⠠⠟⠷⠊⠾⠀⠨⠅⠀⠨⠷⠏⠬⠟⠊⠒⠀⠏⠠⠀⠟⠀⠈⠑⠀⠸⠠⠟⠨⠾",
+      "expected": "⠸⠰⠠⠟⠷⠊⠾⠀⠨⠅⠀⠨⠷⠏⠬⠟⠊⠒⠀⠏⠠⠀⠟⠀⠈⠑⠀⠸⠰⠠⠟⠨⠾",
       "reference": {
         "m-11162": "http://abstract.ups.edu/aata/section-factorization-domains.html#bAu"
       }
@@ -3042,7 +3042,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-domains.html#unS",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo stretchy=\"false\">[</mo><msqrt><mn>2</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">]</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>a</mi><mo>+</mo><mi>b</mi><msqrt><mn>2</mn></msqrt><mo>:</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "{\\mathbb Z}[ \\sqrt{2}\\, ] = \\{ a + b \\sqrt{2} : a, b \\in {\\mathbb Z} \\}",
-      "expected": "⠸⠠⠵⠈⠷⠜⠆⠻⠈⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠆⠻⠒⠀⠁⠠⠀⠃⠀⠈⠑⠀⠸⠠⠵⠨⠾",
+      "expected": "⠸⠰⠠⠵⠈⠷⠜⠆⠻⠈⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠆⠻⠒⠀⠁⠠⠀⠃⠀⠈⠑⠀⠸⠰⠠⠵⠨⠾",
       "reference": {
         "m-11461": "http://abstract.ups.edu/aata/exercises-domains.html#unS"
       }
@@ -3132,7 +3132,7 @@
       "url": "http://abstract.ups.edu/aata/section-vect-definitions-and-examples.html#kFy",
       "input": "<math><mi>V</mi><mo>=</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>2</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>a</mi><mo>+</mo><mi>b</mi><msqrt><mn>2</mn></msqrt><mo>:</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "V = {\\mathbb Q}(\\sqrt{2}\\, ) = \\{ a + b \\sqrt{2} : a, b \\in {\\mathbb Q } \\}",
-      "expected": "⠠⠧⠀⠨⠅⠀⠸⠠⠟⠷⠜⠆⠻⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠆⠻⠒⠀⠁⠠⠀⠃⠀⠈⠑⠀⠸⠠⠟⠨⠾",
+      "expected": "⠠⠧⠀⠨⠅⠀⠸⠰⠠⠟⠷⠜⠆⠻⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠆⠻⠒⠀⠁⠠⠀⠃⠀⠈⠑⠀⠸⠰⠠⠟⠨⠾",
       "reference": {
         "m-12399": "http://abstract.ups.edu/aata/section-vect-definitions-and-examples.html#kFy"
       }
@@ -3153,7 +3153,7 @@
       "url": "http://abstract.ups.edu/aata/reading-questions-20.html#ewN",
       "input": "<math><mi>V</mi><mo>=</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>11</mn></msqrt><mo stretchy=\"false\">)</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>a</mi><mo>+</mo><mi>b</mi><msqrt><mn>11</mn></msqrt><mo>∣</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "V={\\mathbb Q}(\\sqrt{11})=\\{a+b\\sqrt{11}\\mid a,b\\in{\\mathbb Q}\\}",
-      "expected": "⠠⠧⠀⠨⠅⠀⠸⠠⠟⠷⠜⠂⠂⠻⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠂⠂⠻⠳⠁⠠⠀⠃⠀⠈⠑⠀⠸⠠⠟⠨⠾",
+      "expected": "⠠⠧⠀⠨⠅⠀⠸⠰⠠⠟⠷⠜⠂⠂⠻⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠜⠂⠂⠻⠳⠁⠠⠀⠃⠀⠈⠑⠀⠸⠰⠠⠟⠨⠾",
       "reference": {
         "m-12567": "http://abstract.ups.edu/aata/reading-questions-20.html#ewN"
       }
@@ -3233,7 +3233,7 @@
       "url": "http://abstract.ups.edu/aata/section-extension-fields.html#UPk",
       "input": "<math><mi>p</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>∈</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mn>2</mn></msub><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo></math>",
       "tex": "p(x) = x^2 + x + 1 \\in {\\mathbb Z}_2[x]",
-      "expected": "⠏⠷⠭⠾⠀⠨⠅⠀⠭⠘⠆⠐⠬⠭⠬⠂⠀⠈⠑⠀⠸⠠⠵⠆⠈⠷⠭⠈⠾",
+      "expected": "⠏⠷⠭⠾⠀⠨⠅⠀⠭⠘⠆⠐⠬⠭⠬⠂⠀⠈⠑⠀⠸⠰⠠⠵⠆⠈⠷⠭⠈⠾",
       "reference": {
         "m-12889": "http://abstract.ups.edu/aata/section-extension-fields.html#UPk"
       }
@@ -3264,7 +3264,7 @@
       "url": "http://abstract.ups.edu/aata/section-extension-fields.html#AWt",
       "input": "<math><mi>p</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msup><mi>x</mi><mn>5</mn></msup><mo>+</mo><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mn>1</mn><mo>∈</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mn>2</mn></msub><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo></math>",
       "tex": "p(x) = x^5 + x^4 + 1 \\in {\\mathbb Z}_2[x]",
-      "expected": "⠏⠷⠭⠾⠀⠨⠅⠀⠭⠘⠢⠐⠬⠭⠘⠲⠐⠬⠂⠀⠈⠑⠀⠸⠠⠵⠆⠈⠷⠭⠈⠾",
+      "expected": "⠏⠷⠭⠾⠀⠨⠅⠀⠭⠘⠢⠐⠬⠭⠘⠲⠐⠬⠂⠀⠈⠑⠀⠸⠰⠠⠵⠆⠈⠷⠭⠈⠾",
       "reference": {
         "m-12963": "http://abstract.ups.edu/aata/section-extension-fields.html#AWt"
       }
@@ -3395,7 +3395,7 @@
       "url": "http://abstract.ups.edu/aata/section-extension-fields.html#Zzd",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo stretchy=\"false\">(</mo><mi>α</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>α</mi><mo>:</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "{\\mathbb R}( \\alpha ) = \\{ a + b \\alpha : a, b \\in {\\mathbb R} \\}",
-      "expected": "⠸⠠⠗⠷⠨⠁⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠨⠁⠒⠀⠁⠠⠀⠃⠀⠈⠑⠀⠸⠠⠗⠨⠾",
+      "expected": "⠸⠰⠠⠗⠷⠨⠁⠾⠀⠨⠅⠀⠨⠷⠁⠬⠃⠨⠁⠒⠀⠁⠠⠀⠃⠀⠈⠑⠀⠸⠰⠠⠗⠨⠾",
       "reference": {
         "m-13166": "http://abstract.ups.edu/aata/section-extension-fields.html#Zzd"
       }
@@ -3405,7 +3405,7 @@
       "url": "http://abstract.ups.edu/aata/section-extension-fields.html#FGm",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>3</mn></msqrt><mo>,</mo><msqrt><mn>5</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>3</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><msqrt><mn>5</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo></math>",
       "tex": "{\\mathbb Q}( \\sqrt{3}, \\sqrt{5}\\, ) = ( {\\mathbb Q}(\\sqrt{3}\\, ))( \\sqrt{5}\\, )",
-      "expected": "⠸⠠⠟⠷⠜⠒⠻⠠⠀⠜⠢⠻⠾⠀⠨⠅⠀⠷⠸⠠⠟⠷⠜⠒⠻⠾⠾⠷⠜⠢⠻⠾",
+      "expected": "⠸⠰⠠⠟⠷⠜⠒⠻⠠⠀⠜⠢⠻⠾⠀⠨⠅⠀⠷⠸⠰⠠⠟⠷⠜⠒⠻⠾⠾⠷⠜⠢⠻⠾",
       "reference": {
         "m-13279": "http://abstract.ups.edu/aata/section-extension-fields.html#FGm"
       }
@@ -3415,7 +3415,7 @@
       "url": "http://abstract.ups.edu/aata/section-extension-fields.html#FGm",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>3</mn></msqrt><mo>,</mo><msqrt><mn>5</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo><mo>=</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>3</mn></msqrt><mo>+</mo><msqrt><mn>5</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo></math>",
       "tex": "{\\mathbb Q}( \\sqrt{3}, \\sqrt{5}\\, ) = {\\mathbb Q}( \\sqrt{3} + \\sqrt{5}\\, )",
-      "expected": "⠸⠠⠟⠷⠜⠒⠻⠠⠀⠜⠢⠻⠾⠀⠨⠅⠀⠸⠠⠟⠷⠜⠒⠻⠬⠜⠢⠻⠾",
+      "expected": "⠸⠰⠠⠟⠷⠜⠒⠻⠠⠀⠜⠢⠻⠾⠀⠨⠅⠀⠸⠰⠠⠟⠷⠜⠒⠻⠬⠜⠢⠻⠾",
       "reference": {
         "m-13282": "http://abstract.ups.edu/aata/section-extension-fields.html#FGm"
       }
@@ -3425,7 +3425,7 @@
       "url": "http://abstract.ups.edu/aata/section-extension-fields.html#lNv",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><mroot><mn>5</mn><mn>6</mn></mroot><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mi>i</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><mroot><mn>5</mn><mn>3</mn></mroot><mo>,</mo><msqrt><mn>5</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mi>i</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "{\\mathbb Q}( \\sqrt[6]{5}\\, i) = {\\mathbb Q}( \\sqrt[3]{5}, \\sqrt{5}\\, i )",
-      "expected": "⠸⠠⠟⠷⠣⠖⠜⠢⠻⠊⠾⠀⠨⠅⠀⠸⠠⠟⠷⠣⠒⠜⠢⠻⠠⠀⠜⠢⠻⠊⠾",
+      "expected": "⠸⠰⠠⠟⠷⠣⠖⠜⠢⠻⠊⠾⠀⠨⠅⠀⠸⠰⠠⠟⠷⠣⠒⠜⠢⠻⠠⠀⠜⠢⠻⠊⠾",
       "reference": {
         "m-13305": "http://abstract.ups.edu/aata/section-extension-fields.html#lNv"
       }
@@ -3539,7 +3539,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-fields.html#ddD",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>2</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo><mo>≅</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>3</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo></math>",
       "tex": "{\\mathbb Q}( \\sqrt{2}\\, ) \\cong {\\mathbb Q}( \\sqrt{3}\\, )",
-      "expected": "⠸⠠⠟⠷⠜⠆⠻⠾⠀⠈⠱⠈⠱⠀⠸⠠⠟⠷⠜⠒⠻⠾",
+      "expected": "⠸⠰⠠⠟⠷⠜⠆⠻⠾⠀⠈⠱⠈⠱⠀⠸⠰⠠⠟⠷⠜⠒⠻⠾",
       "reference": {
         "m-13784": "http://abstract.ups.edu/aata/exercises-fields.html#ddD"
       }
@@ -3569,7 +3569,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-fields.html#mxp",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>3</mn></msqrt><mo>,</mo><msqrt><mn>7</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo><mo>=</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>3</mn></msqrt><mo>+</mo><msqrt><mn>7</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo></math>",
       "tex": "{\\mathbb Q}( \\sqrt{3}, \\sqrt{7}\\, ) = {\\mathbb Q}( \\sqrt{3} + \\sqrt{7}\\, )",
-      "expected": "⠸⠠⠟⠷⠜⠒⠻⠠⠀⠜⠶⠻⠾⠀⠨⠅⠀⠸⠠⠟⠷⠜⠒⠻⠬⠜⠶⠻⠾",
+      "expected": "⠸⠰⠠⠟⠷⠜⠒⠻⠠⠀⠜⠶⠻⠾⠀⠨⠅⠀⠸⠰⠠⠟⠷⠜⠒⠻⠬⠜⠶⠻⠾",
       "reference": {
         "m-13836": "http://abstract.ups.edu/aata/exercises-fields.html#mxp",
         "m-13846": "http://abstract.ups.edu/aata/exercises-fields.html#Emy"
@@ -3580,7 +3580,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-fields.html#mxp",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mi>a</mi></msqrt><mo>,</mo><msqrt><mi>b</mi></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo><mo>=</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mi>a</mi></msqrt><mo>+</mo><msqrt><mi>b</mi></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo></math>",
       "tex": "{\\mathbb Q}( \\sqrt{a}, \\sqrt{b}\\, ) = {\\mathbb Q}( \\sqrt{a} + \\sqrt{b}\\, )",
-      "expected": "⠸⠠⠟⠷⠜⠁⠻⠠⠀⠜⠃⠻⠾⠀⠨⠅⠀⠸⠠⠟⠷⠜⠁⠻⠬⠜⠃⠻⠾",
+      "expected": "⠸⠰⠠⠟⠷⠜⠁⠻⠠⠀⠜⠃⠻⠾⠀⠨⠅⠀⠸⠰⠠⠟⠷⠜⠁⠻⠬⠜⠃⠻⠾",
       "reference": {
         "m-13837": "http://abstract.ups.edu/aata/exercises-fields.html#mxp"
       }
@@ -4199,7 +4199,7 @@
       "url": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#brQ",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><mroot><mn>2</mn><mn>4</mn></mroot><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>i</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><mroot><mn>2</mn><mn>4</mn></mroot><mo>,</mo><mi>i</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "{\\mathbb Q}(\\sqrt[4]{2}\\, )(i) = {\\mathbb Q}( \\sqrt[4]{2}, i )",
-      "expected": "⠸⠠⠟⠷⠣⠲⠜⠆⠻⠾⠷⠊⠾⠀⠨⠅⠀⠸⠠⠟⠷⠣⠲⠜⠆⠻⠠⠀⠊⠾",
+      "expected": "⠸⠰⠠⠟⠷⠣⠲⠜⠆⠻⠾⠷⠊⠾⠀⠨⠅⠀⠸⠰⠠⠟⠷⠣⠲⠜⠆⠻⠠⠀⠊⠾",
       "reference": {
         "m-15287": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#brQ"
       }
@@ -4340,7 +4340,7 @@
       "url": "http://abstract.ups.edu/aata/section-galois-applications.html#zUA",
       "input": "<math><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msup><mi>x</mi><mn>5</mn></msup><mo>−</mo><mn>6</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>27</mn><mi>x</mi><mo>−</mo><mn>3</mn><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo></math>",
       "tex": "f(x) = x^5 - 6 x^3 - 27 x - 3 \\in {\\mathbb Q}[x]",
-      "expected": "⠋⠷⠭⠾⠀⠨⠅⠀⠭⠘⠢⠐⠤⠖⠭⠘⠒⠐⠤⠆⠶⠭⠤⠒⠀⠈⠑⠀⠸⠠⠟⠈⠷⠭⠈⠾",
+      "expected": "⠋⠷⠭⠾⠀⠨⠅⠀⠭⠘⠢⠐⠤⠖⠭⠘⠒⠐⠤⠆⠶⠭⠤⠒⠀⠈⠑⠀⠸⠰⠠⠟⠈⠷⠭⠈⠾",
       "reference": {
         "m-15499": "http://abstract.ups.edu/aata/section-galois-applications.html#zUA"
       }
@@ -4380,7 +4380,7 @@
       "url": "http://abstract.ups.edu/aata/section-galois-applications.html#cLr",
       "input": "<math><mi>E</mi><mo>=</mo><mrow><mrow><mi mathvariant=\"double-struck\">C</mi></mrow></mrow><mo stretchy=\"false\">(</mo><mi>α</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "E = {\\mathbb C}( \\alpha )",
-      "expected": "⠠⠑⠀⠨⠅⠀⠸⠠⠉⠷⠨⠁⠾",
+      "expected": "⠠⠑⠀⠨⠅⠀⠸⠰⠠⠉⠷⠨⠁⠾",
       "reference": {
         "m-15556": "http://abstract.ups.edu/aata/section-galois-applications.html#cLr"
       }
@@ -4390,7 +4390,7 @@
       "url": "http://abstract.ups.edu/aata/section-galois-applications.html#cLr",
       "input": "<math><mi>K</mi><mo>=</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo stretchy=\"false\">(</mo><mi>β</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "K = {\\mathbb R}(\\beta)",
-      "expected": "⠠⠅⠀⠨⠅⠀⠸⠠⠗⠷⠨⠃⠾",
+      "expected": "⠠⠅⠀⠨⠅⠀⠸⠰⠠⠗⠷⠨⠃⠾",
       "reference": {
         "m-15580": "http://abstract.ups.edu/aata/section-galois-applications.html#cLr"
       }
@@ -4501,7 +4501,7 @@
       "url": "http://abstract.ups.edu/aata/galois-sage.html#JCH",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><mroot><mn>2</mn><mn>4</mn></mroot><mi>i</mi><mo>−</mo><mroot><mn>2</mn><mn>4</mn></mroot><mo stretchy=\"false\">)</mo><mo>=</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><mi>i</mi><mo stretchy=\"false\">)</mo><mroot><mn>2</mn><mn>4</mn></mroot><mo stretchy=\"false\">)</mo></math>",
       "tex": "{\\mathbb Q}(\\sqrt[4]{2}i - \\sqrt[4]{2}) = {\\mathbb Q}((1-i)\\sqrt[4]{2})",
-      "expected": "⠸⠠⠟⠷⠣⠲⠜⠆⠻⠊⠤⠣⠲⠜⠆⠻⠾⠀⠨⠅⠀⠸⠠⠟⠷⠷⠼⠂⠤⠊⠾⠣⠲⠜⠆⠻⠾",
+      "expected": "⠸⠰⠠⠟⠷⠣⠲⠜⠆⠻⠊⠤⠣⠲⠜⠆⠻⠾⠀⠨⠅⠀⠸⠰⠠⠟⠷⠷⠼⠂⠤⠊⠾⠣⠲⠜⠆⠻⠾",
       "reference": {
         "m-15809": "http://abstract.ups.edu/aata/galois-sage.html#JCH"
       }

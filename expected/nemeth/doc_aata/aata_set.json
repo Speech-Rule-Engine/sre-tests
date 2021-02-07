@@ -94,7 +94,7 @@
       "url": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#nIV",
       "input": "<math><mrow><mrow><mi data-mjx-variant=\"-tex-calligraphic\" mathvariant=\"script\">P</mi></mrow></mrow><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><msub><mi>X</mi><mi>i</mi></msub><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "{\\mathcal P} = \\{ X_i\\}",
-      "expected": "⠈⠠⠏⠀⠨⠅⠀⠨⠷⠠⠭⠰⠊⠐⠨⠾",
+      "expected": "⠈⠰⠠⠏⠀⠨⠅⠀⠨⠷⠠⠭⠰⠊⠐⠨⠾",
       "reference": {
         "m-428": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#nIV",
         "m-450": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#Alv"
@@ -155,7 +155,7 @@
       "url": "http://abstract.ups.edu/aata/section-math-induction.html#xhy",
       "input": "<math><mi>S</mi><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>n</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">N</mi></mrow></mrow><mo>:</mo><mi>n</mi><mo>≥</mo><mn>1</mn><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "S = \\{ n \\in {\\mathbb N} : n \\geq 1 \\}",
-      "expected": "⠠⠎⠀⠨⠅⠀⠨⠷⠝⠀⠈⠑⠀⠸⠠⠝⠒⠀⠝⠀⠨⠂⠱⠀⠼⠂⠨⠾",
+      "expected": "⠠⠎⠀⠨⠅⠀⠨⠷⠝⠀⠈⠑⠀⠸⠰⠠⠝⠒⠀⠝⠀⠨⠂⠱⠀⠼⠂⠨⠾",
       "reference": {
         "m-754": "http://abstract.ups.edu/aata/section-math-induction.html#xhy"
       }
@@ -165,7 +165,7 @@
       "url": "http://abstract.ups.edu/aata/section-groups-define.html#Zca",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mo>…</mo><mo>,</mo><mo>−</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mo>…</mo><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "{\\mathbb Z } = \\{ \\ldots , -1, 0, 1, 2, \\ldots \\}",
-      "expected": "⠸⠠⠵⠀⠨⠅⠀⠨⠷⠀⠄⠄⠄⠀⠠⠀⠤⠼⠂⠠⠀⠼⠴⠠⠀⠼⠂⠠⠀⠼⠆⠠⠀⠄⠄⠄⠨⠾",
+      "expected": "⠸⠰⠠⠵⠀⠨⠅⠀⠨⠷⠀⠄⠄⠄⠀⠠⠀⠤⠼⠂⠠⠀⠼⠴⠠⠀⠼⠂⠠⠀⠼⠆⠠⠀⠄⠄⠄⠨⠾",
       "reference": {
         "m-1403": "http://abstract.ups.edu/aata/section-groups-define.html#Zca"
       }
@@ -175,7 +175,7 @@
       "url": "http://abstract.ups.edu/aata/section-groups-define.html#Fjj",
       "input": "<math><msub><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mi>n</mi></msub><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mo>…</mo><mo>,</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "{\\mathbb Z}_n = \\{0, 1, \\ldots,\n          n-1 \\}",
-      "expected": "⠸⠠⠵⠰⠝⠐⠀⠨⠅⠀⠨⠷⠼⠴⠠⠀⠼⠂⠠⠀⠄⠄⠄⠀⠠⠀⠝⠤⠂⠨⠾",
+      "expected": "⠸⠰⠠⠵⠰⠝⠐⠀⠨⠅⠀⠨⠷⠼⠴⠠⠀⠼⠂⠠⠀⠄⠄⠄⠀⠠⠀⠝⠤⠂⠨⠾",
       "reference": {
         "m-1433": "http://abstract.ups.edu/aata/section-groups-define.html#Fjj"
       }
@@ -195,7 +195,7 @@
       "url": "http://abstract.ups.edu/aata/section-subgroups.html#Ylc",
       "input": "<math><mn>2</mn><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mo>…</mo><mo>,</mo><mo>−</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mo>…</mo><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "2{\\mathbb Z} = \\{\\ldots, -2, 0, 2, 4, \\ldots \\}",
-      "expected": "⠼⠆⠸⠠⠵⠀⠨⠅⠀⠨⠷⠀⠄⠄⠄⠀⠠⠀⠤⠼⠆⠠⠀⠼⠴⠠⠀⠼⠆⠠⠀⠼⠲⠠⠀⠄⠄⠄⠨⠾",
+      "expected": "⠼⠆⠸⠰⠠⠵⠀⠨⠅⠀⠨⠷⠀⠄⠄⠄⠀⠠⠀⠤⠼⠆⠠⠀⠼⠴⠠⠀⠼⠆⠠⠀⠼⠲⠠⠀⠄⠄⠄⠨⠾",
       "reference": {
         "m-1598": "http://abstract.ups.edu/aata/section-subgroups.html#Ylc"
       }
@@ -257,7 +257,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-groups.html#nBe",
       "input": "<math><mn>3</mn><mo>+</mo><mn>7</mn><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mo>…</mo><mo>,</mo><mo>−</mo><mn>4</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>10</mn><mo>,</mo><mo>…</mo><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "3 + 7 \\mathbb Z = \\{ \\ldots, -4, 3, 10, \\ldots \\}",
-      "expected": "⠼⠒⠬⠶⠸⠠⠵⠀⠨⠅⠀⠨⠷⠀⠄⠄⠄⠀⠠⠀⠤⠼⠲⠠⠀⠼⠒⠠⠀⠼⠂⠴⠠⠀⠄⠄⠄⠨⠾",
+      "expected": "⠼⠒⠬⠶⠸⠰⠠⠵⠀⠨⠅⠀⠨⠷⠀⠄⠄⠄⠀⠠⠀⠤⠼⠲⠠⠀⠼⠒⠠⠀⠼⠂⠴⠠⠀⠄⠄⠄⠨⠾",
       "reference": {
         "m-1747": "http://abstract.ups.edu/aata/exercises-groups.html#nBe"
       }
@@ -277,7 +277,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-groups.html#mam",
       "input": "<math><msubsup><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mn>2</mn><mi>n</mi></msubsup><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mo stretchy=\"false\">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo>:</mo><msub><mi>a</mi><mi>i</mi></msub><mo>∈</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mn>2</mn></msub><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "{\\mathbb Z}_2^n = \\{ (a_1, a_2, \\ldots,\n          a_n) : a_i \\in {\\mathbb Z}_2 \\}",
-      "expected": "⠸⠠⠵⠆⠘⠝⠐⠀⠨⠅⠀⠨⠷⠷⠁⠂⠠⠀⠁⠆⠠⠀⠄⠄⠄⠀⠠⠀⠁⠰⠝⠐⠾⠒⠀⠁⠰⠊⠐⠀⠈⠑⠀⠸⠠⠵⠆⠨⠾",
+      "expected": "⠸⠰⠠⠵⠆⠘⠝⠐⠀⠨⠅⠀⠨⠷⠷⠁⠂⠠⠀⠁⠆⠠⠀⠄⠄⠄⠀⠠⠀⠁⠰⠝⠐⠾⠒⠀⠁⠰⠊⠐⠀⠈⠑⠀⠸⠰⠠⠵⠆⠨⠾",
       "reference": {
         "m-1770": "http://abstract.ups.edu/aata/exercises-groups.html#mam"
       }
@@ -337,7 +337,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-groups.html#JxD",
       "input": "<math><mi>H</mi><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><msup><mn>2</mn><mi>k</mi></msup><mo>:</mo><mi>k</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "H = \\{2^k : k \\in {\\mathbb Z} \\}",
-      "expected": "⠠⠓⠀⠨⠅⠀⠨⠷⠼⠆⠘⠅⠐⠒⠀⠅⠀⠈⠑⠀⠸⠠⠵⠨⠾",
+      "expected": "⠠⠓⠀⠨⠅⠀⠨⠷⠼⠆⠘⠅⠐⠒⠀⠅⠀⠈⠑⠀⠸⠰⠠⠵⠨⠾",
       "reference": {
         "m-1853": "http://abstract.ups.edu/aata/exercises-groups.html#JxD"
       }
@@ -347,7 +347,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-groups.html#pEM",
       "input": "<math><mi>n</mi><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>n</mi><mi>k</mi><mo>:</mo><mi>k</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "n {\\mathbb Z} = \\{ nk : k \\in {\\mathbb Z} \\}",
-      "expected": "⠝⠸⠠⠵⠀⠨⠅⠀⠨⠷⠝⠅⠒⠀⠅⠀⠈⠑⠀⠸⠠⠵⠨⠾",
+      "expected": "⠝⠸⠰⠠⠵⠀⠨⠅⠀⠨⠷⠝⠅⠒⠀⠅⠀⠈⠑⠀⠸⠰⠠⠵⠨⠾",
       "reference": {
         "m-1857": "http://abstract.ups.edu/aata/exercises-groups.html#pEM"
       }
@@ -357,7 +357,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-groups.html#VLV",
       "input": "<math><mrow><mrow><mi mathvariant=\"double-struck\">T</mi></mrow></mrow><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>z</mi><mo>∈</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">C</mi></mrow></mrow><mo>∗</mo></msup><mo>:</mo><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo><mi>z</mi><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo><mo>=</mo><mn>1</mn><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "{\\mathbb T} = \\{ z \\in {\\mathbb C}^* : |z| =1 \\}",
-      "expected": "⠸⠠⠞⠀⠨⠅⠀⠨⠷⠵⠀⠈⠑⠀⠸⠠⠉⠘⠈⠼⠐⠒⠀⠳⠵⠳⠀⠨⠅⠀⠼⠂⠨⠾",
+      "expected": "⠸⠰⠠⠞⠀⠨⠅⠀⠨⠷⠵⠀⠈⠑⠀⠸⠰⠠⠉⠘⠈⠼⠐⠒⠀⠳⠵⠳⠀⠨⠅⠀⠼⠂⠨⠾",
       "reference": {
         "m-1861": "http://abstract.ups.edu/aata/exercises-groups.html#VLV"
       }
@@ -387,7 +387,7 @@
       "url": "http://abstract.ups.edu/aata/section-cyclic-subgroups.html#qbc",
       "input": "<math><mi>H</mi><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><msup><mn>2</mn><mi>n</mi></msup><mo>:</mo><mi>n</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "H = \\{ 2^n : n \\in {\\mathbb Z} \\}",
-      "expected": "⠠⠓⠀⠨⠅⠀⠨⠷⠼⠆⠘⠝⠐⠒⠀⠝⠀⠈⠑⠀⠸⠠⠵⠨⠾",
+      "expected": "⠠⠓⠀⠨⠅⠀⠨⠷⠼⠆⠘⠝⠐⠒⠀⠝⠀⠈⠑⠀⠸⠰⠠⠵⠨⠾",
       "reference": {
         "m-1982": "http://abstract.ups.edu/aata/section-cyclic-subgroups.html#qbc"
       }
@@ -397,7 +397,7 @@
       "url": "http://abstract.ups.edu/aata/section-cyclic-subgroups.html#XXy",
       "input": "<math><mo fence=\"false\" stretchy=\"false\">⟨</mo><mi>a</mi><mo fence=\"false\" stretchy=\"false\">⟩</mo><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>n</mi><mi>a</mi><mo>:</mo><mi>n</mi><mo>∈</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "\\langle a \\rangle = \\{ na : n \\in {\\mathbb Z} \\}",
-      "expected": "⠨⠨⠷⠁⠨⠨⠾⠀⠨⠅⠀⠨⠷⠝⠁⠒⠀⠝⠀⠈⠑⠀⠸⠠⠵⠨⠾",
+      "expected": "⠨⠨⠷⠁⠨⠨⠾⠀⠨⠅⠀⠨⠷⠝⠁⠒⠀⠝⠀⠈⠑⠀⠸⠰⠠⠵⠨⠾",
       "reference": {
         "m-2026": "http://abstract.ups.edu/aata/section-cyclic-subgroups.html#XXy"
       }
@@ -417,7 +417,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-cyclic.html#pri",
       "input": "<math><mn>7</mn><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mo>…</mo><mo>,</mo><mo>−</mo><mn>7</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>14</mn><mo>,</mo><mo>…</mo><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "7 {\\mathbb Z} = \\{ \\ldots, -7, 0, 7, 14, \\ldots \\}",
-      "expected": "⠼⠶⠸⠠⠵⠀⠨⠅⠀⠨⠷⠀⠄⠄⠄⠀⠠⠀⠤⠼⠶⠠⠀⠼⠴⠠⠀⠼⠶⠠⠀⠼⠂⠲⠠⠀⠄⠄⠄⠨⠾",
+      "expected": "⠼⠶⠸⠰⠠⠵⠀⠨⠅⠀⠨⠷⠀⠄⠄⠄⠀⠠⠀⠤⠼⠶⠠⠀⠼⠴⠠⠀⠼⠶⠠⠀⠼⠂⠲⠠⠀⠄⠄⠄⠨⠾",
       "reference": {
         "m-2349": "http://abstract.ups.edu/aata/exercises-cyclic.html#pri"
       }
@@ -491,7 +491,7 @@
       "url": "http://abstract.ups.edu/aata/section-parity-check.html#QaN",
       "input": "<math><mi>C</mi><mo>=</mo><mrow data-mjx-texclass=\"INNER\"><mo data-mjx-texclass=\"OPEN\">{</mo><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo>:</mo><mi>G</mi><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>=</mo><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mtext> for </mtext><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>∈</mo><msubsup><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mn>2</mn><mi>k</mi></msubsup><mo data-mjx-texclass=\"CLOSE\">}</mo></mrow></math>",
       "tex": "C = \\left\\{{\\mathbf y} : G{\\mathbf x} ={\\mathbf y}\\text{ for }{\\mathbf x}\\in {\\mathbb Z}_2^k\\right\\}",
-      "expected": "⠠⠉⠀⠨⠅⠀⠨⠷⠸⠽⠒⠀⠠⠛⠸⠭⠀⠨⠅⠀⠸⠽⠀⠋⠕⠗⠀⠸⠭⠀⠈⠑⠀⠸⠠⠵⠆⠘⠅⠐⠨⠾",
+      "expected": "⠠⠉⠀⠨⠅⠀⠨⠷⠸⠰⠽⠒⠀⠠⠛⠸⠰⠭⠀⠨⠅⠀⠸⠰⠽⠀⠋⠕⠗⠀⠸⠰⠭⠀⠈⠑⠀⠸⠰⠠⠵⠆⠘⠅⠐⠨⠾",
       "reference": {
         "m-4223": "http://abstract.ups.edu/aata/section-parity-check.html#QaN"
       }
@@ -686,7 +686,7 @@
       "url": "http://abstract.ups.edu/aata/section-groups-acting-on-sets.html#wbf",
       "input": "<math><msub><mrow><mrow><mi data-mjx-variant=\"-tex-calligraphic\" mathvariant=\"script\">O</mi></mrow></mrow><mn>1</mn></msub><mo>=</mo><msub><mrow><mrow><mi data-mjx-variant=\"-tex-calligraphic\" mathvariant=\"script\">O</mi></mrow></mrow><mn>2</mn></msub><mo>=</mo><msub><mrow><mrow><mi data-mjx-variant=\"-tex-calligraphic\" mathvariant=\"script\">O</mi></mrow></mrow><mn>3</mn></msub><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "{\\mathcal O}_1 = {\\mathcal O}_2 = {\\mathcal O}_3 =\\{1, 2, 3\\}",
-      "expected": "⠈⠠⠕⠂⠀⠨⠅⠀⠈⠠⠕⠆⠀⠨⠅⠀⠈⠠⠕⠒⠀⠨⠅⠀⠨⠷⠼⠂⠠⠀⠼⠆⠠⠀⠼⠒⠨⠾",
+      "expected": "⠈⠰⠠⠕⠂⠀⠨⠅⠀⠈⠰⠠⠕⠆⠀⠨⠅⠀⠈⠰⠠⠕⠒⠀⠨⠅⠀⠨⠷⠼⠂⠠⠀⠼⠆⠠⠀⠼⠒⠨⠾",
       "reference": {
         "m-7407": "http://abstract.ups.edu/aata/section-groups-acting-on-sets.html#wbf",
         "m-7908": "http://abstract.ups.edu/aata/exercises-actions.html#Abe"
@@ -697,7 +697,7 @@
       "url": "http://abstract.ups.edu/aata/section-groups-acting-on-sets.html#wbf",
       "input": "<math><msub><mrow><mrow><mi data-mjx-variant=\"-tex-calligraphic\" mathvariant=\"script\">O</mi></mrow></mrow><mn>4</mn></msub><mo>=</mo><msub><mrow><mrow><mi data-mjx-variant=\"-tex-calligraphic\" mathvariant=\"script\">O</mi></mrow></mrow><mn>5</mn></msub><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "{\\mathcal O}_4 = {\\mathcal O}_5 = \\{4, 5\\}",
-      "expected": "⠈⠠⠕⠲⠀⠨⠅⠀⠈⠠⠕⠢⠀⠨⠅⠀⠨⠷⠼⠲⠠⠀⠼⠢⠨⠾",
+      "expected": "⠈⠰⠠⠕⠲⠀⠨⠅⠀⠈⠰⠠⠕⠢⠀⠨⠅⠀⠨⠷⠼⠲⠠⠀⠼⠢⠨⠾",
       "reference": {
         "m-7408": "http://abstract.ups.edu/aata/section-groups-acting-on-sets.html#wbf"
       }
@@ -1093,7 +1093,7 @@
       "url": "http://abstract.ups.edu/aata/reading-questions-20.html#ewN",
       "input": "<math><mi>S</mi><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mrow><mi mathvariant=\"bold\">u</mi></mrow><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "S=\\{\\mathbf{u}\\}",
-      "expected": "⠠⠎⠀⠨⠅⠀⠨⠷⠸⠥⠨⠾",
+      "expected": "⠠⠎⠀⠨⠅⠀⠨⠷⠸⠰⠥⠨⠾",
       "reference": {
         "m-12568": "http://abstract.ups.edu/aata/reading-questions-20.html#ewN"
       }
