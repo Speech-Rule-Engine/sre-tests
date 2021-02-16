@@ -24,6 +24,7 @@ import * as TestFactory from '../classes/test_factory';
 import * as sret from '../typings/sre';
 import {addActual} from './fill_tests';
 import {AbstractTransformer, Transformer} from './transformers';
+import {Tex2Mml} from './tex_transformer';
 
 /* ********************************************************* */
 /*
@@ -250,6 +251,7 @@ function cleanPretextSource(json: tu.JsonTest[]): tu.JsonTests {
   let tex = new Map();
   let mml = new Map();
   let stree = new Map();
+
   for (let test of json) {
     if (test.input) {
       // Possibly use the tex transformer here if input is missing.
@@ -395,6 +397,66 @@ function saveRenamedTests(
   tu.TestUtil.saveJson(`${dir}/${basename}_${prefix}.json`, json);
   addActual(`${dir}/${basename}_${prefix}.json`);
 }
+
+
+export class PretextGenerator {
+
+  protected basename: string = 'Test';
+  public kind: string = 'Pretext';
+  public tests: tu.JsonTests = {};
+  public fileBase: tu.JsonFile = {
+    'factory': 'speech',
+    'locale': 'nemeth',
+    'domain': 'default',
+    'style': 'default',
+    'modality': 'braille'
+  };
+  public transformers: Transformer[] = [
+    new Tex2Mml(), new SemanticTransformer()
+  ];
+
+  constructor(public file: string) {
+    this.prepare();
+    this.transform();
+  }
+
+  public clean() {
+    console.log(Object.keys(this.tests).length);
+    let tex = new Map();
+    let mml = new Map();
+    let stree = new Map();
+    for (let [id, test] of Object.entries(this.tests)) {
+      // What if tex is snot given?
+      let texId = tex.get(test.tex);
+      let mmlId = mml.get(test.input);
+      let streeId = stree.get(test.stree);
+      let id = texId || mmlId || streeId || id;
+      tex.set(test.tex, id);
+      mml.set(test.input, id);
+      stree.set(test.stree, id);
+      // very pretext specific
+      result[id].reference[test.id] = test.url;
+    }
+  return result;
+}
+  }
+  
+  public transform() {
+    transformTests(Object.values(this.json), transformers);
+  }
+  
+  public prepare() {
+    let json = tu.TestUtil.loadJson(file) as tu.JsonTest[];
+    let count = 0;
+    for (let test of json) {
+      id = `Test_${count++}`;
+      this.tests[id] = test;
+      test.reference = {};
+    }
+  }
+  
+}
+
 
 // Auxiliary methods to belatedly add references to an existing pretext file.
 /**
