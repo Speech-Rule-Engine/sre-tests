@@ -202,4 +202,5 @@ export class SemanticNode {
   textContent: string;
   childNodes: SemanticNode[];
   contentNodes: SemanticNode[];
+  querySelectorAll: (pred: (x: SemanticNode) => boolean) => SemanticNode[];
 }

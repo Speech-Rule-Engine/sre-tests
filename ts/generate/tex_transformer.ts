@@ -31,6 +31,12 @@ import {AbstractTransformer} from './transformers';
 export class Tex2Mml extends AbstractTransformer {
 
   /**
+   * Display math input. Default is true.
+   * @type {boolean}
+   */
+  public display: boolean = true;
+
+  /**
    * @override
    */
   public constructor(src: string = 'tex', dst: string = 'input') {
@@ -46,12 +52,13 @@ export class Tex2Mml extends AbstractTransformer {
 
   private tex2mml(input: string) {
     RegisterHTMLHandler(liteAdaptor());
-    let document = mathjax.document('<html></html>', {
+    let document = mathjax.document('', {
       InputJax: new TeX({packages: AllPackages}),
       OutputJax: new SVG()
     });
     let visitor = new SerializedMmlVisitor();
-    let math = document.convert(input, {end: STATE.CONVERT});
+    let math = document.convert(
+      input, {display: this.display, end: STATE.CONVERT});
     let str = visitor.visitTree(math);
     return str.replace(/>\n *</g, '><');
   }
