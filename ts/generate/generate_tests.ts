@@ -23,7 +23,7 @@ import * as tu from '../base/test_util';
 import * as TestFactory from '../classes/test_factory';
 import * as sret from '../typings/sre';
 import {addActual} from './fill_tests';
-import {Transformer} from './transformers';
+import {AbstractTransformer, Transformer} from './transformers';
 
 /* ********************************************************* */
 /*
@@ -120,17 +120,31 @@ export function generateTestJson(input: string, output: string,
 }
 
 /**
- * Runs a series of transformers on the given tests.
+ * Runs a series of transformers on the given tests object.
  *
- * @param {tu.JsonTest} json The JSON tests.
+ * @param {tu.JsonTest[]} json The JSON tests.
+ * @param {Transformer[]} transformers List of transformers.
+ * @return {tu.JsonTest[]} The updated json test.
+ */
+export function transformTests(json: tu.JsonTest[],
+  transformers: Transformer[]): tu.JsonTest[] {
+  json.forEach(x => transformTest(x, transformers));
+  return json;
+}
+
+/**
+ * Runs a series of transformers on a single test.
+ *
+ * @param {tu.JsonTest} json The JSON test.
  * @param {Transformer[]} transformers List of transformers.
  * @return {tu.JsonTest} The updated json test.
  */
-export function transformTests(json: tu.JsonTest,
-  transformers: Transformer[]): tu.JsonTest {
-  for (let value of Object.values(json)) {
-    for (let transformer of transformers) {
-      value[transformer.dst] = transformer.via(value[transformer.src]);
+export function transformTest(
+  json: tu.JsonTest, transformers: Transformer[]): tu.JsonTest {
+  for (let transformer of transformers) {
+    let src = json[transformer.src];
+    if (typeof src !== undefined) {
+      json[transformer.dst] = transformer.via(src);
     }
   }
   return json;
@@ -142,10 +156,24 @@ export function transformTests(json: tu.JsonTest,
  * @param file File name.
  * @param transformers Transformer list.
  */
-export function transformTestsSource(file: string,
+export function transformJsonTests(file: string,
   transformers: Transformer[]) {
   let json = tu.TestUtil.loadJson(file);
-  tu.TestUtil.saveJson(file, transformTests(json, transformers));
+  transformTests(Object.values(json), transformers);
+  tu.TestUtil.saveJson(file, json);
+}
+
+/**
+ * Transforms test file in place.
+ *
+ * @param file File name.
+ * @param transformers Transformer list.
+ */
+export function transformTestsFile(file: string,
+  transformers: Transformer[]) {
+  let json = tu.TestUtil.loadJson(file) as tu.JsonTest[];
+  transformTests(json, transformers);
+  tu.TestUtil.saveJson(file, json);
 }
 
 /* ********************************************************** */
@@ -155,8 +183,38 @@ export function transformTestsSource(file: string,
  * Use case: We get a list of expressions from a PreTeXt book. The need to be
  *           cleaned by combining duplicates and collating reference
  *           urls. Possibly split into different files.
+ *
+ * Workflow:
+ * Run transformPretextSource('SOURCE.json', 'TARGET_BASENAME')
+ *
+ * * Loads file: Expects a list of basic tests.
+ * * Cleans the sources
+ * * Splits the sources into chunks wrt. some predicates.
+ *
+ * Note, `AddPretextReferences` adds new references to an existing file. This
+ * should not be necessary for new files anymore.
+ *
  */
 /* ********************************************************** */
+
+export class SemanticTransformer extends AbstractTransformer {
+
+  /**
+   * @override
+   */
+  public constructor(src: string = 'input', dst: string = 'stree') {
+    super(src, dst);
+  }
+
+  /**
+   * @override
+   */
+  public via(src: string) {
+    return sre.Semantic.getTreeFromString(
+      sre.Enrich.prepareMmlString(src)).xml().toString();
+  }
+
+}
 
 // TODO: Convert this into class or namespace.
 export let basename: string = '';
@@ -179,36 +237,9 @@ export function transformPretextSource(file: string, name: string) {
   return allTests;
 }
 
-/**
- * Adds a references from the full PreTeXt document to a partial file.
- * @param {string} origFile The partial filename wrt. expected directory.
- * @param {string} refFile The path to the reference file.
- */
-export function addPretextReferences(origFile: string, refFile: string) {
-  let ref = tu.TestUtil.loadJson(refFile) as tu.JsonTest[];
-  let refTests = cleanPretextSource(ref);
-  let streeRefs: tu.JsonTests = {};
-  Object.entries(refTests).forEach(
-    ([_x, y]) => streeRefs[y.stree] = y.reference);
-  let orig = TestFactory.get(origFile);
-  orig.prepare();
-  addPretextReference(orig.inputTests, streeRefs);
-  tu.TestUtil.saveJson(orig['baseFile'], orig.baseTests);
-}
-
-function addPretextReference(orig: tu.JsonTest[], ref: tu.JsonTests) {
-  for (let test of orig) {
-    let stree = sre.Semantic.getTreeFromString(
-      sre.Enrich.prepareMmlString(test.input)).xml().toString();
-    let reference = ref[stree];
-    console.log(reference);
-    if (reference) {
-      test.reference = reference;
-    }
-    delete test.expected;
-    delete test.name;
-  }
-}
+// Prepare: Add ids or insert ids from outside.
+// Transform: Add input/stree, etc.
+// Cleanup: Remove duplicates as much as possible
 
 /**
  * @param json
@@ -332,6 +363,8 @@ function splitOffBySemantics(
 }
 
 /**
+ * If removeStree is set it removes the stree entry in each test element.
+ *
  * @param tests
  * @param prefix
  * @param dir
@@ -362,3 +395,53 @@ function saveRenamedTests(
   tu.TestUtil.saveJson(`${dir}/${basename}_${prefix}.json`, json);
   addActual(`${dir}/${basename}_${prefix}.json`);
 }
+
+// Auxiliary methods to belatedly add references to an existing pretext file.
+/**
+ * Adds references from the full PreTeXt document to a partial file. This is
+ * done with respect to the semantic tree representation.
+ *
+ * @param {string} origFile The partial filename wrt. expected directory.
+ * @param {string} refFile The path to the reference file.
+ */
+export function addPretextReferences(origFile: string, refFile: string) {
+  let ref = tu.TestUtil.loadJson(refFile) as tu.JsonTest[];
+  let refTests = cleanPretextSource(ref);
+  let streeRefs: tu.JsonTests = {};
+  // Associates references by their semantic trees.
+  Object.entries(refTests).forEach(
+    ([_x, y]) => streeRefs[y.stree] = y.reference);
+  let orig = TestFactory.get(origFile);
+  orig.prepare();
+  addPretextReference(orig.inputTests, streeRefs);
+  tu.TestUtil.saveJson(orig['baseFile'], orig.baseTests);
+}
+
+/**
+ * Adds the reference to the elements of a test file.
+ *
+ * @param {tu.JsonTest[]} orig The original test file.
+ * @param {tu.JsonTests} ref The references associated via their semantic tree
+ * representations.
+ */
+function addPretextReference(orig: tu.JsonTest[], ref: tu.JsonTests) {
+  for (let test of orig) {
+    let stree = sre.Semantic.getTreeFromString(
+      sre.Enrich.prepareMmlString(test.input)).xml().toString();
+    let reference = ref[stree];
+    if (reference) {
+      test.reference = reference;
+    }
+    delete test.expected;
+    delete test.name;
+  }
+}
+
+/* ********************************************************** */
+/*
+ * Test generation from Elsevier experiments.
+ *
+ */
+/* ********************************************************** */
+
+// Specialist cleanup.
