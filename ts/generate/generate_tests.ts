@@ -23,6 +23,7 @@ import * as tu from '../base/test_util';
 import * as TestFactory from '../classes/test_factory';
 import * as sret from '../typings/sre';
 import {addActual} from './fill_tests';
+import {Tex2Mml} from './tex_transformer';
 import {AbstractTransformer, Transformer} from './transformers';
 
 /* ********************************************************* */
@@ -216,232 +217,382 @@ export class SemanticTransformer extends AbstractTransformer {
 
 }
 
-// TODO: Convert this into class or namespace.
-export let basename: string = '';
-export let removeStree: boolean = true;
-
 /**
- * Transforms a PreText source file by cleaning it, removing duplicates,
- * renaming tests, completing entries, and splitting them into smaller elements.
- *
- * @param file The source file.
- * @param name The basename for the output files.
- * @return The list of all transformed tests.
+ * Splitters filter by some constellation of the semantic tree.
  */
-export function transformPretextSource(file: string, name: string) {
-  basename = name;
-  let json = tu.TestUtil.loadJson(file) as tu.JsonTest[];
-  let tests = cleanPretextSource(json);
-  let allTests = splitPretextSource(tests);
-  saveRenamedTests(allTests, 'rest');
-  return allTests;
-}
+export class Splitter {
 
-// Prepare: Add ids or insert ids from outside.
-// Transform: Add input/stree, etc.
-// Cleanup: Remove duplicates as much as possible
+  constructor(public name: string,
+              public pred: (n: sret.SemanticNode) => boolean) {}
 
-/**
- * @param json
- */
-function cleanPretextSource(json: tu.JsonTest[]): tu.JsonTests {
-  let count = 0;
-  let result: tu.JsonTests = {};
-  let tex = new Map();
-  let mml = new Map();
-  let stree = new Map();
-  for (let test of json) {
-    if (test.input) {
-      // Possibly use the tex transformer here if input is missing.
-      test.input = test.input.replace(/>[ \f\n\r\t\v​]+</g, '><').trim();
+  /**
+   * @param tests
+   * @param pred
+   */
+  public split(tests: tu.JsonTests): tu.JsonTests {
+    let result: tu.JsonTests = {};
+    for (let [key, test] of Object.entries(tests)) {
+      let stree = sre.SemanticTree.fromXml(
+        sre.DomUtil.parseInput(test.stree)).root;
+      if (this.pred(stree)) {
+        result[key] = test;
+        delete tests[key];
+      }
     }
-    test.stree = sre.Semantic.getTreeFromString(test.input).xml().toString();
-    let texId = tex.get(test.tex);
-    let mmlId = mml.get(test.input);
-    let streeId = stree.get(test.stree);
-    let id = texId || mmlId || streeId;
-    if (!id) {
-      id = `Test_${count++}`;
-      result[id] = test;
-      test.reference = {};
-    }
-    tex.set(test.tex, id);
-    mml.set(test.input, id);
-    stree.set(test.stree, id);
-    result[id].reference[test.id] = test.url;
+    return result;
   }
-  return result;
+
 }
 
-// TODO: Cleanup.
-/**
- * @param tests
- */
-function splitPretextSource(tests: tu.JsonTests) {
-  let numbers = splitOffBySemantics(
-    tests, (x: sret.SemanticNode) =>
-      x.type === 'number' || (x.type === 'prefixop' && x.role === 'negative'));
-  saveRenamedTests(numbers, 'number');
+export namespace SplitterFactory {
 
-  let letters = splitOffBySemantics(
-    tests, (x: sret.SemanticNode) =>
-      x.type === 'identifier' || x.type === 'overscore' ||
-      ((x.type === 'subscript' || x.type === 'superscript') &&
-        !!x.role.match(/letter/)));
-  saveRenamedTests(letters, 'letter');
+  let mapping = new Map();
 
-  let scripts = splitOffBySemantics(
-    tests, (x: sret.SemanticNode) =>
-      x.type === 'subscript' || x.type === 'superscript');
-  saveRenamedTests(scripts, 'script');
+  export function get(name: string) {
+    return mapping.get(name);
+  }
 
-  let appls = splitOffBySemantics(
-    tests, (x: sret.SemanticNode) => x.type === 'appl');
-  saveRenamedTests(appls, 'appl');
+  export function set(name: string, pred: (n: sret.SemanticNode) => boolean) {
+    mapping.set(name, new Splitter(name, pred));
+  }
 
-  let functions = splitOffBySemantics(
-    tests, (x: sret.SemanticNode) =>
-      x.type === 'relseq' && x.role === 'equality' &&
-      x.childNodes.some(y => y.role === 'simple function'));
-  saveRenamedTests(functions, 'function');
-
-  let sets = splitOffBySemantics(
-    tests, (x: sret.SemanticNode) =>
-      x.type === 'relseq' && x.role === 'equality' &&
-      x.childNodes.some(y => y.role.match(/^set/)));
-  saveRenamedTests(sets, 'set');
-
-  let equalities = splitOffBySemantics(
-    tests, (x: sret.SemanticNode) =>
-      (x.type === 'relseq' || x.type === 'multirel') && x.role === 'equality');
-  saveRenamedTests(equalities, 'equality');
-
-  let elements = splitOffBySemantics(
-    tests, (x: sret.SemanticNode) =>
-      x.textContent === '∈' || x.textContent === '∉' || (
-        x.type === 'punctuated' && x.role === 'sequence' &&
-          (x.childNodes[x.childNodes.length - 1].textContent === '∈' ||
-            x.childNodes[x.childNodes.length - 1].textContent === '∉')
-      ));
-  saveRenamedTests(elements, 'element');
-
-  let inequalities = splitOffBySemantics(
-    tests, (x: sret.SemanticNode) =>
-      (x.type === 'relseq' || x.type === 'multirel') &&
-      x.role === 'inequality');
-  saveRenamedTests(inequalities, 'inequality');
-
-  let sums = splitOffBySemantics(
-    tests, (x: sret.SemanticNode) =>
-      x.type === 'infixop' &&
-      (x.role === 'addition' || x.role === 'subtraction'));
-  saveRenamedTests(sums, 'sum');
-
-  let sequences = splitOffBySemantics(
-    tests, (x: sret.SemanticNode) => x.type === 'punctuated');
-  saveRenamedTests(sequences, 'sequence');
-
-  return tests;
+  SplitterFactory.set('number', (x: sret.SemanticNode) =>
+    x.type === 'number' || (x.type === 'prefixop' && x.role === 'negative'));
+  SplitterFactory.set('letter', (x: sret.SemanticNode) =>
+    x.type === 'identifier' || x.type === 'overscore' ||
+    ((x.type === 'subscript' || x.type === 'superscript') &&
+      !!x.role.match(/letter/)));
+  SplitterFactory.set('script', (x: sret.SemanticNode) =>
+        x.type === 'subscript' || x.type === 'superscript');
+  SplitterFactory.set('appl', (x: sret.SemanticNode) => x.type === 'appl');
+  SplitterFactory.set('function', (x: sret.SemanticNode) =>
+    x.type === 'relseq' && x.role === 'equality' &&
+    x.childNodes.some(y => y.role === 'simple function'));
+  SplitterFactory.set('set', (x: sret.SemanticNode) =>
+    x.type === 'relseq' && x.role === 'equality' &&
+    x.childNodes.some(y => y.role.match(/^set/)));
+  SplitterFactory.set('equality', (x: sret.SemanticNode) =>
+    (x.type === 'relseq' || x.type === 'multirel') && x.role === 'equality');
+  SplitterFactory.set('element', (x: sret.SemanticNode) =>
+    x.textContent === '∈' || x.textContent === '∉' || (
+      x.type === 'punctuated' && x.role === 'sequence' &&
+        (x.childNodes[x.childNodes.length - 1].textContent === '∈' ||
+          x.childNodes[x.childNodes.length - 1].textContent === '∉')));
+  SplitterFactory.set('inequality', (x: sret.SemanticNode) =>
+    (x.type === 'relseq' || x.type === 'multirel') && x.role === 'inequality');
+  SplitterFactory.set('sum', (x: sret.SemanticNode) =>
+    x.type === 'infixop' &&
+    (x.role === 'addition' || x.role === 'subtraction'));
+  SplitterFactory.set(
+    'sequence', (x: sret.SemanticNode) => x.type === 'punctuated');
+  SplitterFactory.set(
+    'fenced', (x: sret.SemanticNode) => x.type === 'fenced');
+  SplitterFactory.set(
+    'prefix',  (x: sret.SemanticNode) => !!x.querySelectorAll(
+      (y: sret.SemanticNode) => y.role === 'prefix function').length);
+  SplitterFactory.set('simpequ', (x: sret.SemanticNode) =>
+    x.type === 'relseq' && x.role === 'equality' &&
+    x.childNodes.every(y => y.type === 'identifier' || y.type === 'number'));
 }
 
-/**
- * @param tests
- * @param pred
- */
-function splitOffBySemantics(
-  tests: tu.JsonTests, pred: (x: sret.SemanticNode) => boolean): tu.JsonTests {
-  let result: tu.JsonTests = {};
-  for (let [key, test] of Object.entries(tests)) {
-    let stree = sre.SemanticTree.fromXml(
-      sre.DomUtil.parseInput(test.stree)).root;
-    if (pred(stree)) {
-      result[key] = test;
-      delete tests[key];
+const PretextSplitters = new Map([
+  ['aata', ['number', 'letter', 'script', 'appl', 'function', 'set',
+            'equality', 'element', 'inequality', 'sum', 'sequence']],
+  ['acs', ['number', 'letter', 'prefix', 'appl', 'function', 'simpequ',
+           'equality', 'inequality', 'sum', 'sequence', 'fenced']]
+]);
+
+
+abstract class AbstractGenerator {
+
+  public kind: string;
+  public tests: tu.JsonTests = {};
+  public fileBase: tu.JsonFile = {};
+  public transformers: Transformer[] = [];
+  public remove: string[] = [];
+  public splitters: string[] = [];
+
+  /**
+   * @param {string} file The filename to use for the generator.
+   */
+  constructor(public file: string,
+              protected basename: string = 'Test',
+              protected outdir: string = '/tmp') {
+    this.prepare();
+  }
+
+  public run() {
+    this.transform();
+    this.collate();
+    this.split();
+    this.save(this.tests, this.splitters.length ? 'rest' : '');
+  }
+
+  /**
+   * Splitting of test files.
+   */
+  public split() {
+    for (let name of this.splitters) {
+      let splitter = SplitterFactory.get(name);
+      if (splitter) {
+        let tests = splitter.split(this.tests);
+        this.save(tests, name);
+      }
     }
   }
-  return result;
+
+  /**
+   * Save of test files.
+   */
+  public save(tests: tu.JsonTests, prefix: string = '') {
+    let name = tu.TestUtil.capitalize(prefix);
+    let basename = tu.TestUtil.capitalize(this.basename);
+    let kind = tu.TestUtil.capitalize(this.kind);
+    let json: tu.JsonFile = Object.assign({}, this.fileBase);
+    json.name = `${kind}${basename}${name}Tests`,
+    json.information = `${kind} ${basename} document` +
+      (name ? ` ${name} expressions.` : '');
+    json.tests = this.clean(tests, name);
+    let outfile = `${this.outdir}/${this.basename}` +
+      (name ? `_${prefix}` : '') + '.json';
+    tu.TestUtil.saveJson(outfile, json);
+    this.addExpected(outfile);
+  }
+
+  /**
+   * Adds expected values to the element.
+   *
+   * @param {string} outfile The output file name.
+   */
+  protected addExpected(outfile: string) {
+    addActual(outfile);
+  }
+
+  /**
+   * Clean tests by removing remove entries. Renames tests if a new name is
+   * provided.
+   *
+   * @param {tu.JsonTests} tests The list of tests.
+   * @param {string = ''} name The new name for the tests.
+   * @return {tu.JsonTests} The cleaned list.
+   */
+  public clean(tests: tu.JsonTests, name: string = ''): tu.JsonTests {
+    let result: tu.JsonTests = {};
+    let count = 0;
+    for (let [id, test] of Object.entries(tests)) {
+      for (let remove of this.remove) {
+        delete test[remove];
+      }
+      this.cleanTest(test);
+      result[name ? name + '_' + count++ : id] = test;
+    }
+    return result;
+  }
+
+  /**
+   * Additional cleaning on a single test.
+   * @param {tu.JsonTest} test
+   */
+  protected cleanTest(_test: tu.JsonTest) {};
+
+  /**
+   * Cleans tests by removing duplicates and collating references.
+   */
+  public collate() {
+    console.log(Object.keys(this.tests).length);
+    let stree = new Map();
+    let result: tu.JsonTests = {};
+    for (let [name, test] of Object.entries(this.tests)) {
+      let streeId = stree.get(test.stree);
+      if (!streeId) {
+        stree.set(test.stree, name);
+        streeId = name;
+        result[streeId] = test;
+      }
+      this.collateTest(result[streeId], test);
+    }
+    this.tests = result;
+    console.log(Object.keys(this.tests).length);
+  }
+
+  /**
+   * Actions taken to collate a single test.
+   */
+  protected collateTest(_retain: tu.JsonTest, _discard: tu.JsonTest) {};
+
+  /**
+   * Applies the transformers.
+   */
+  public transform() {
+    transformTests(Object.values(this.tests), this.transformers);
+  }
+
+  /**
+   * Preparation of input tests.
+   */
+  public prepare() {
+    this.tests = tu.TestUtil.loadJson(this.file);
+  }
+
 }
 
-/**
- * If removeStree is set it removes the stree entry in each test element.
- *
- * @param tests
- * @param prefix
- * @param dir
- */
-function saveRenamedTests(
-  tests: tu.JsonTests, prefix: string, dir: string = '/tmp') {
-  let result: tu.JsonTests = {};
-  let name = tu.TestUtil.capitalize(prefix);
-  let capBase = tu.TestUtil.capitalize(basename);
-  let count = 0;
-  for (let test of Object.values(tests)) {
-    if (removeStree) {
-      delete test.stree;
-    }
-    result[name + '_' + count++] = test;
-  }
-  //
-  let json: tu.JsonFile = {
+export class PretextGenerator extends AbstractGenerator {
+
+  public kind: string = 'Pretext';
+  public fileBase: tu.JsonFile = {
     'factory': 'speech',
-    'name': `PreTeXt${capBase}${name}Tests`,
-    'information': `PreTeXt ${capBase} document ${name} expressions.`,
     'locale': 'nemeth',
     'domain': 'default',
     'style': 'default',
-    'modality': 'braille',
-    'tests': result
+    'modality': 'braille'
   };
-  tu.TestUtil.saveJson(`${dir}/${basename}_${prefix}.json`, json);
-  addActual(`${dir}/${basename}_${prefix}.json`);
-}
+  protected texTransformer: Tex2Mml;
+  public remove: string[] = ['stree'];
 
-// Auxiliary methods to belatedly add references to an existing pretext file.
-/**
- * Adds references from the full PreTeXt document to a partial file. This is
- * done with respect to the semantic tree representation.
- *
- * @param {string} origFile The partial filename wrt. expected directory.
- * @param {string} refFile The path to the reference file.
- */
-export function addPretextReferences(origFile: string, refFile: string) {
-  let ref = tu.TestUtil.loadJson(refFile) as tu.JsonTest[];
-  let refTests = cleanPretextSource(ref);
-  let streeRefs: tu.JsonTests = {};
-  // Associates references by their semantic trees.
-  Object.entries(refTests).forEach(
-    ([_x, y]) => streeRefs[y.stree] = y.reference);
-  let orig = TestFactory.get(origFile);
-  orig.prepare();
-  addPretextReference(orig.inputTests, streeRefs);
-  tu.TestUtil.saveJson(orig['baseFile'], orig.baseTests);
-}
-
-/**
- * Adds the reference to the elements of a test file.
- *
- * @param {tu.JsonTest[]} orig The original test file.
- * @param {tu.JsonTests} ref The references associated via their semantic tree
- * representations.
- */
-function addPretextReference(orig: tu.JsonTest[], ref: tu.JsonTests) {
-  for (let test of orig) {
-    let stree = sre.Semantic.getTreeFromString(
-      sre.Enrich.prepareMmlString(test.input)).xml().toString();
-    let reference = ref[stree];
-    if (reference) {
-      test.reference = reference;
-    }
-    delete test.expected;
-    delete test.name;
+  /**
+   * Adds expected values to the element.
+   *
+   * @param {string} outfile The output file name.
+   */
+  protected addExpected(outfile: string) {
+    addActual(outfile);
   }
+
+  /**
+   * Cleans tests by removing duplicates and collating references.
+   */
+  public collateTest(retain: tu.JsonTest, discard: tu.JsonTest) {
+    // This is very pretext specific.
+    retain.reference[discard.id] = discard.url;
+  }
+
+  /**
+   * Applies the transformers.
+   */
+  public transform() {
+    transformTests(Object.values(this.tests), this.transformers);
+  }
+
+  /**
+   * Preparation of input tests.
+   */
+  public prepare() {
+    this.splitters = PretextSplitters.get(this.basename);
+    this.texTransformer = new Tex2Mml();
+    this.texTransformer.display = false;
+    this.transformers = [this.texTransformer, new SemanticTransformer()];
+    let json = tu.TestUtil.loadJson(this.file) as tu.JsonTest[];
+    let count = 0;
+    for (let test of json) {
+      let id = `${this.basename}_${count++}`;
+      this.tests[id] = test;
+      test.reference = {};
+    }
+  }
+
+  // Auxiliary methods to belatedly add references to an existing pretext file.
+  /**
+   * Adds references from the full PreTeXt document to a partial file. This is
+   * done with respect to the semantic tree representation.
+   *
+   * @param {string} origFile The partial filename wrt. expected directory.
+   * @param {string} refFile The path to the reference file.
+   */
+  public static addPretextReferences(origFile: string, refFile: string) {
+    let refTests = new PretextGenerator(refFile);
+    refTests.collate();
+    let streeRefs: tu.JsonTests = {};
+    // Associates references by their semantic trees.
+    Object.entries(refTests).forEach(
+      ([_x, y]) => streeRefs[y.stree] = y.reference);
+    let orig = TestFactory.get(origFile);
+    orig.prepare();
+    PretextGenerator.addPretextReference(orig.inputTests, streeRefs);
+    tu.TestUtil.saveJson(orig['baseFile'], orig.baseTests);
+  }
+
+  /**
+   * Adds the reference to the elements of a test file.
+   *
+   * @param {tu.JsonTest[]} orig The original test file.
+   * @param {tu.JsonTests} ref The references associated via their semantic tree
+   * representations.
+   */
+  private static addPretextReference(orig: tu.JsonTest[], ref: tu.JsonTests) {
+    for (let test of orig) {
+      let stree = sre.Semantic.getTreeFromString(
+        sre.Enrich.prepareMmlString(test.input)).xml().toString();
+      let reference = ref[stree];
+      if (reference) {
+        test.reference = reference;
+      }
+      delete test.expected;
+      delete test.name;
+    }
+  }
+
 }
+
 
 /* ********************************************************** */
 /*
- * Test generation from Elsevier experiments.
+ * Test generation for experiements with Publishers corpora.
+ * Note: These files are not included in the public repository!
  *
  */
 /* ********************************************************** */
 
-// Specialist cleanup.
+export class PublisherGenerator extends AbstractGenerator {
+
+  /**
+   * @override
+   */
+  public fileBase: tu.JsonFile = {
+    'factory': 'stree'
+  };
+
+  /**
+   * @override
+   */
+  constructor(public file: string,
+              public kind: string,
+              protected outdir: string = '/tmp') {
+    super(file, file.split('/').reverse()[0].replace(/\.json$/, ''), outdir);
+  }
+
+  /**
+   * @override
+   */
+  public prepare() {
+    this.transformers = [new SemanticTransformer()];
+    super.prepare();
+  }
+
+  /**
+   * @override
+   */
+  protected addExpected(_outfile: string) { }
+
+  /**
+   * @override
+   */
+  protected cleanTest(test: tu.JsonTest) {
+    test.expected = test.stree;
+    delete test.stree;
+  }
+
+}
+
+/**
+ * Generates tests for an entire corpus.
+ * @param {string} indir Input directory of the corpus files.
+ * @param {string} outdir The output directory for the test files.
+ * @param {string} publisher Name of the publisher.
+ */
+export function generatePublisherTests(
+  indir: string, outdir: string, publisher: string) {
+  let files = tu.TestUtil.readDir(indir);
+  for (let file of files) {
+    (new PublisherGenerator(file, publisher, outdir)).run();
+  }
+}
