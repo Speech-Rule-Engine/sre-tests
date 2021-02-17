@@ -217,6 +217,9 @@ export class SemanticTreeTest extends SemanticTest {
    * @return The augmented expression.
    */
   private prepareStree(sml: string): string {
+    if (!sml) {
+      return '<stree></stree>';
+    }
     if (!sml.match(/^<stree/)) {
       sml = '<stree>' + sml;
     }
