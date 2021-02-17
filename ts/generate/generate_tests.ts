@@ -536,25 +536,46 @@ export class PretextGenerator extends AbstractGenerator {
 
 /* ********************************************************** */
 /*
- * Test generation from Elsevier experiments.
+ * Test generation for experiements with Publishers corpora.
+ * Note: These files are not included in the public repository!
  *
  */
 /* ********************************************************** */
 
-export class ElsevierGenerator extends AbstractGenerator {
+export class PublisherGenerator extends AbstractGenerator {
 
-  public kind: string = 'Elsevier';
+  /**
+   * @override
+   */
   public fileBase: tu.JsonFile = {
     'factory': 'stree'
   };
 
+  /**
+   * @override
+   */
+  constructor(public file: string,
+              public kind: string,
+              protected outdir: string = '/tmp') {
+    super(file, file.split('/').reverse()[0].replace(/\.json$/, ''), outdir);
+  }
+
+  /**
+   * @override
+   */
   public prepare() {
     this.transformers = [new SemanticTransformer()];
     super.prepare();
   }
 
+  /**
+   * @override
+   */
   protected addExpected(_outfile: string) { }
 
+  /**
+   * @override
+   */
   protected cleanTest(test: tu.JsonTest) {
     test.expected = test.stree;
     delete test.stree;
@@ -562,11 +583,16 @@ export class ElsevierGenerator extends AbstractGenerator {
 
 }
 
-export function generateElsevierTests(indir: string, outdir: string) {
+/**
+ * Generates tests for an entire corpus.
+ * @param {string} indir Input directory of the corpus files.
+ * @param {string} outdir The output directory for the test files.
+ * @param {string} publisher Name of the publisher.
+ */
+export function generatePublisherTests(
+  indir: string, outdir: string, publisher: string) {
   let files = tu.TestUtil.readDir(indir);
   for (let file of files) {
-    let basename = file.split('/').reverse()[0].replace(/\.json$/, '');
-    console.log(basename);
-    (new ElsevierGenerator(file, basename, outdir)).run();
+    (new PublisherGenerator(file, publisher, outdir)).run();
   }
 }
