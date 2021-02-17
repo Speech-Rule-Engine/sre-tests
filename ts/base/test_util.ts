@@ -214,9 +214,8 @@ export namespace TestUtil {
     if (typeof path === 'undefined') {
       return;
     }
-    let file = TestPath.EXPECTED + path;
-    if (fs.lstatSync(file).isDirectory()) {
-      let files = fs.readdirSync(file);
+    if (fs.existsSync(path) && fs.lstatSync(path).isDirectory()) {
+      let files = fs.readdirSync(path);
       files.forEach(
         x => readDir_(path ? path + '/' + x : x, result));
       return;
@@ -234,7 +233,11 @@ export namespace TestUtil {
    */
   export function readDir(path: string): string[] {
     let result: string[] = [];
-    readDir_(path, result);
+    let file = TestPath.EXPECTED + path;
+    if (!fs.existsSync(file) || !fs.lstatSync(file).isDirectory()) {
+      file = path;
+    }
+    readDir_(file, result);
     return result;
   }
 

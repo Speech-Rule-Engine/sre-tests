@@ -361,7 +361,7 @@ abstract class AbstractGenerator {
 
   /**
    * Adds expected values to the element.
-   * 
+   *
    * @param {string} outfile The output file name.
    */
   protected addExpected(outfile: string) {
@@ -371,7 +371,7 @@ abstract class AbstractGenerator {
   /**
    * Clean tests by removing remove entries. Renames tests if a new name is
    * provided.
-   * 
+   *
    * @param {tu.JsonTests} tests The list of tests.
    * @param {string = ''} name The new name for the tests.
    * @return {tu.JsonTests} The cleaned list.
@@ -383,10 +383,17 @@ abstract class AbstractGenerator {
       for (let remove of this.remove) {
         delete test[remove];
       }
+      this.cleanTest(test);
       result[name ? name + '_' + count++ : id] = test;
     }
     return result;
   }
+
+  /**
+   * Additional cleaning on a single test.
+   * @param {tu.JsonTest} test
+   */
+  protected cleanTest(_test: tu.JsonTest) {};
 
   /**
    * Cleans tests by removing duplicates and collating references.
@@ -408,10 +415,11 @@ abstract class AbstractGenerator {
     console.log(Object.keys(this.tests).length);
   }
 
+  /**
+   * Actions taken to collate a single test.
+   */
+  protected collateTest(_retain: tu.JsonTest, _discard: tu.JsonTest) {};
 
-  protected abstract collateTest(
-    retain: tu.JsonTest, discard: tu.JsonTest): void;
-  
   /**
    * Applies the transformers.
    */
@@ -423,17 +431,9 @@ abstract class AbstractGenerator {
    * Preparation of input tests.
    */
   public prepare() {
-    let json = tu.TestUtil.loadJson(this.file) as tu.JsonTest[];
-    let count = 0;
-    for (let test of json) {
-      let id = `${this.basename}_${count++}`;
-      this.tests[id] = test;
-      this.prepareTest(test);
-    }
+    this.tests = tu.TestUtil.loadJson(this.file);
   }
 
-  protected abstract prepareTest(test: tu.JsonTest): void;
-  
 }
 
 export class PretextGenerator extends AbstractGenerator {
@@ -451,7 +451,7 @@ export class PretextGenerator extends AbstractGenerator {
 
   /**
    * Adds expected values to the element.
-   * 
+   *
    * @param {string} outfile The output file name.
    */
   protected addExpected(outfile: string) {
@@ -481,11 +481,13 @@ export class PretextGenerator extends AbstractGenerator {
     this.texTransformer = new Tex2Mml();
     this.texTransformer.display = false;
     this.transformers = [this.texTransformer, new SemanticTransformer()];
-    super.prepare();
-  }
-
-  protected prepareTest(test: tu.JsonTest) {
-    test.reference = {};
+    let json = tu.TestUtil.loadJson(this.file) as tu.JsonTest[];
+    let count = 0;
+    for (let test of json) {
+      let id = `${this.basename}_${count++}`;
+      this.tests[id] = test;
+      test.reference = {};
+    }
   }
 
   // Auxiliary methods to belatedly add references to an existing pretext file.
@@ -539,4 +541,32 @@ export class PretextGenerator extends AbstractGenerator {
  */
 /* ********************************************************** */
 
-// Specialist cleanup.
+export class ElsevierGenerator extends AbstractGenerator {
+
+  public kind: string = 'Elsevier';
+  public fileBase: tu.JsonFile = {
+    'factory': 'stree'
+  };
+
+  public prepare() {
+    this.transformers = [new SemanticTransformer()];
+    super.prepare();
+  }
+
+  protected addExpected(_outfile: string) { }
+
+  protected cleanTest(test: tu.JsonTest) {
+    test.expected = test.stree;
+    delete test.stree;
+  }
+
+}
+
+export function generateElsevierTests(indir: string, outdir: string) {
+  let files = tu.TestUtil.readDir(indir);
+  for (let file of files) {
+    let basename = file.split('/').reverse()[0].replace(/\.json$/, '');
+    console.log(basename);
+    (new ElsevierGenerator(file, basename, outdir)).run();
+  }
+}
