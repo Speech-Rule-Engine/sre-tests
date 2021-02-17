@@ -302,6 +302,14 @@ const PretextSplitters = new Map([
            'equality', 'inequality', 'sum', 'sequence', 'fenced']]
 ]);
 
+const TransformerFactory = new Map([
+  ['semantic', new SemanticTransformer()],
+  ['tex', new Tex2Mml()]
+]);
+
+function getTransformers(trans: string[]) {
+  return trans.map(x => TransformerFactory.get(x));
+}
 
 abstract class AbstractGenerator {
 
@@ -311,21 +319,27 @@ abstract class AbstractGenerator {
   public transformers: Transformer[] = [];
   public remove: string[] = [];
   public splitters: string[] = [];
+  public file: string = '';
+
+  /**
+   * @param {string} basename The base name of the tests.
+   * @param {string} outdir The output directory.
+   */
+  constructor(protected basename: string = 'Test',
+              protected outdir: string = '/tmp') {
+  }
 
   /**
    * @param {string} file The filename to use for the generator.
    */
-  constructor(public file: string,
-              protected basename: string = 'Test',
-              protected outdir: string = '/tmp') {
+  public run(file: string) {
+    this.file = file;
     this.prepare();
-  }
-
-  public run() {
     this.transform();
     this.collate();
     this.split();
     this.save(this.tests, this.splitters.length ? 'rest' : '');
+    this.tests = {};
   }
 
   /**
@@ -393,12 +407,13 @@ abstract class AbstractGenerator {
    * Additional cleaning on a single test.
    * @param {tu.JsonTest} test
    */
-  protected cleanTest(_test: tu.JsonTest) {};
+  protected cleanTest(_test: tu.JsonTest) {}
 
   /**
    * Cleans tests by removing duplicates and collating references.
    */
   public collate() {
+    console.log(this.basename);
     console.log(Object.keys(this.tests).length);
     let stree = new Map();
     let result: tu.JsonTests = {};
@@ -418,7 +433,7 @@ abstract class AbstractGenerator {
   /**
    * Actions taken to collate a single test.
    */
-  protected collateTest(_retain: tu.JsonTest, _discard: tu.JsonTest) {};
+  protected collateTest(_retain: tu.JsonTest, _discard: tu.JsonTest) {}
 
   /**
    * Applies the transformers.
@@ -446,8 +461,12 @@ export class PretextGenerator extends AbstractGenerator {
     'style': 'default',
     'modality': 'braille'
   };
-  protected texTransformer: Tex2Mml;
   public remove: string[] = ['stree'];
+
+  /**
+   * @override
+   */
+  public transformers = getTransformers(['tex', 'semantic']);
 
   /**
    * Adds expected values to the element.
@@ -467,20 +486,11 @@ export class PretextGenerator extends AbstractGenerator {
   }
 
   /**
-   * Applies the transformers.
-   */
-  public transform() {
-    transformTests(Object.values(this.tests), this.transformers);
-  }
-
-  /**
-   * Preparation of input tests.
+   * @override
    */
   public prepare() {
     this.splitters = PretextSplitters.get(this.basename);
-    this.texTransformer = new Tex2Mml();
-    this.texTransformer.display = false;
-    this.transformers = [this.texTransformer, new SemanticTransformer()];
+    (this.transformers[0] as Tex2Mml).display = false;
     let json = tu.TestUtil.loadJson(this.file) as tu.JsonTest[];
     let count = 0;
     for (let test of json) {
@@ -547,6 +557,11 @@ export class PublisherGenerator extends AbstractGenerator {
   /**
    * @override
    */
+  public transformers = getTransformers(['semantic']);
+
+  /**
+   * @override
+   */
   public fileBase: tu.JsonFile = {
     'factory': 'stree'
   };
@@ -554,18 +569,17 @@ export class PublisherGenerator extends AbstractGenerator {
   /**
    * @override
    */
-  constructor(public file: string,
-              public kind: string,
+  constructor(public kind: string,
               protected outdir: string = '/tmp') {
-    super(file, file.split('/').reverse()[0].replace(/\.json$/, ''), outdir);
+    super(kind, outdir);
   }
 
   /**
    * @override
    */
-  public prepare() {
-    this.transformers = [new SemanticTransformer()];
-    super.prepare();
+  public run(file: string) {
+    this.basename = file.split('/').reverse()[0].replace(/\.json$/, '');
+    super.run(file);
   }
 
   /**
@@ -583,6 +597,33 @@ export class PublisherGenerator extends AbstractGenerator {
 
 }
 
+export class TexlistGenerator extends PublisherGenerator {
+
+  /**
+   * @override
+   */
+  public transformers = getTransformers(['tex', 'semantic']);
+
+  /**
+   * @override
+   */
+  public prepare() {
+    let json = tu.TestUtil.loadJson(this.file) as string[];
+    let count = 0;
+    for (let test of json) {
+      if (test.match(/\&(lt|gt|amp|nbsp);/g)) {
+        test = test.replace(/&nbsp;/g, ' ')
+          .replace(/&gt;/g, '>')
+          .replace(/&lt;/g, '<')
+          .replace(/&amp;/g, '&');
+      }
+      let id = `${this.basename}_${count++}`;
+      this.tests[id] = {tex: test};
+    }
+  }
+
+}
+
 /**
  * Generates tests for an entire corpus.
  * @param {string} indir Input directory of the corpus files.
@@ -592,7 +633,10 @@ export class PublisherGenerator extends AbstractGenerator {
 export function generatePublisherTests(
   indir: string, outdir: string, publisher: string) {
   let files = tu.TestUtil.readDir(indir);
+  let generator = publisher === 'AMS' ?
+      new TexlistGenerator(publisher, outdir) :
+    new PublisherGenerator(publisher, outdir);
   for (let file of files) {
-    (new PublisherGenerator(file, publisher, outdir)).run();
+    generator.run(file);
   }
 }

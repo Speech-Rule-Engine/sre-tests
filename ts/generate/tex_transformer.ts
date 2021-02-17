@@ -35,12 +35,19 @@ export class Tex2Mml extends AbstractTransformer {
    * @type {boolean}
    */
   public display: boolean = true;
+  private visitor = new SerializedMmlVisitor();
+  private document: any = null;
 
   /**
    * @override
    */
   public constructor(src: string = 'tex', dst: string = 'input') {
     super(src, dst);
+    RegisterHTMLHandler(liteAdaptor());
+    this.document = mathjax.document('', {
+      InputJax: new TeX({packages: AllPackages}),
+      OutputJax: new SVG()
+    });
   }
 
   /**
@@ -51,15 +58,9 @@ export class Tex2Mml extends AbstractTransformer {
   }
 
   private tex2mml(input: string) {
-    RegisterHTMLHandler(liteAdaptor());
-    let document = mathjax.document('', {
-      InputJax: new TeX({packages: AllPackages}),
-      OutputJax: new SVG()
-    });
-    let visitor = new SerializedMmlVisitor();
-    let math = document.convert(
+    let math = this.document.convert(
       input, {display: this.display, end: STATE.CONVERT});
-    let str = visitor.visitTree(math);
+    let str = this.visitor.visitTree(math);
     return str.replace(/>\n *</g, '><');
   }
 
