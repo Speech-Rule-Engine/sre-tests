@@ -1,7 +1,7 @@
 {
   "name": "EnglishDefaultFunction",
   "locale": "en",
-  "domain": "default",
+  "domain": "chromevox",
   "style": "default",
   "active": "DefaultSymbolsEnglish",
   "type": "function",
@@ -13,16 +13,16 @@
       "expected": "degree"
     },
     "det": {
-      "expected": "det"
+      "expected": "determinant"
     },
     "dim": {
       "expected": "dimension"
     },
     "hom": {
-      "expected": "hom"
+      "expected": "homomorphism"
     },
     "Hom": {
-      "expected": "hom"
+      "expected": "homomorphism"
     },
     "ker": {
       "expected": "kernel"
@@ -37,58 +37,58 @@
       "expected": "log"
     },
     "ln": {
-      "expected": "ln"
+      "expected": "natural log"
     },
     "lg": {
       "expected": "log base 10"
     },
     "exp": {
-      "expected": "exp"
+      "expected": "exponential"
     },
     "expt": {
-      "expected": "exp"
+      "expected": "exponential"
     },
     "gcd": {
-      "expected": "gcd"
+      "expected": "greatest common divisor"
     },
     "lcm": {
-      "expected": "lcm"
+      "expected": "least common multiple"
     },
     "arg": {
-      "expected": "arg"
+      "expected": "argument"
     },
     "im": {
-      "expected": "im"
+      "expected": "imaginary part"
     },
     "re": {
-      "expected": "re"
+      "expected": "real part"
     },
     "inf": {
-      "expected": "inf"
+      "expected": "infimum"
     },
     "lim": {
       "expected": "limit"
     },
     "lim inf": {
-      "expected": "liminf"
+      "expected": "limit inferior"
     },
     "liminf": {
-      "expected": "liminf"
+      "expected": "limit inferior"
     },
     "lim sup": {
-      "expected": "limsup"
+      "expected": "limit superior"
     },
     "limsup": {
-      "expected": "limsup"
+      "expected": "limit superior"
     },
     "max": {
-      "expected": "max"
+      "expected": "maximum"
     },
     "min": {
-      "expected": "min"
+      "expected": "minimum"
     },
     "sup": {
-      "expected": "sup"
+      "expected": "supremum"
     },
     "injlim": {
       "expected": "colimit"
@@ -103,7 +103,7 @@
       "expected": "projective limit"
     },
     "mod": {
-      "expected": "mod"
+      "expected": "modulo"
     },
     "Pr": {
       "expected": "probability"

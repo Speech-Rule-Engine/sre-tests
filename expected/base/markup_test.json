@@ -4,26 +4,31 @@
   "tests": {
     "_comment0_": " Test for simple speech.",
     "SimpleString": {
+      "domain": "chromevox",
       "expected": "x equals negative b plus or minus Square root of b squared minus four times a times c divided by two times a",
       "markup": "NONE"
     },
     "_comment0_": " Test for ACSS markup.",
     "Acss": {
+      "domain": "chromevox",
       "expected": "(exp \"x\" (pause . 200) \"equals\" (pause . 450) (text ((richness . 6)) \"negative b plus or minus Square root of\") (text ((richness . 7)) \"b\") (text ((richness . 7) (average-pitch . 6)) \"squared\") (pause . 300) (text ((richness . 7)) \"minus four times a times c\") (pause . 650) \"divided by\" (text ((richness . 4)) \"two times a\"))",
       "markup": "ACSS"
     },
     "_comment0_": " Test for Sable markup.",
     "Sable": {
+      "domain": "chromevox",
       "expected": "x <BREAK MSEC=\"200\"/> equals <BREAK MSEC=\"450\"/> <RATE SPEED=\"17.5%\"> negative b plus or minus Square root of </RATE> <RATE SPEED=\"35%\"> b <PITCH RANGE=\"17.5%\"> squared </PITCH> <BREAK MSEC=\"300\"/> minus four times a times c </RATE> <RATE SPEED=\"17.5%\"> <BREAK MSEC=\"650\"/> </RATE> divided by <RATE SPEED=\"-17.5%\"> two times a </RATE> <BREAK MSEC=\"400\"/>",
       "markup": "SABLE"
     },
     "_comment0_": " Test for SSML markup.",
     "Ssml": {
+      "domain": "chromevox",
       "expected": "x <break time=\"200ms\"/> equals <break time=\"450ms\"/> <prosody rate=\"+17%\"> negative b plus or minus Square root of </prosody> <prosody rate=\"+35%\"> b <prosody pitch=\"+17%\"> squared </prosody> <break time=\"300ms\"/> minus four times a times c </prosody> <prosody rate=\"+17%\"> <break time=\"650ms\"/> </prosody> divided by <prosody rate=\"-18%\"> two times a </prosody> <break time=\"400ms\"/>",
       "markup": "SSML"
     },
     "_comment0_": " Test for VoiceXML markup. (Currently that is the same as SSML.)",
     "VoiceXml": {
+      "domain": "chromevox",
       "expected": "x <break time=\"200ms\"/> equals <break time=\"450ms\"/> <prosody rate=\"+17%\"> negative b plus or minus Square root of </prosody> <prosody rate=\"+35%\"> b <prosody pitch=\"+17%\"> squared </prosody> <break time=\"300ms\"/> minus four times a times c </prosody> <prosody rate=\"+17%\"> <break time=\"650ms\"/> </prosody> divided by <prosody rate=\"-18%\"> two times a </prosody> <break time=\"400ms\"/>",
       "markup": "VOICEXML"
     },
