@@ -54,6 +54,24 @@ export class PrefixTest extends SpeechTest {
   /**
    * @override
    */
+  public setUpTest() {
+    super.setUpTest();
+    sre.System.getInstance().setupEngine(
+      {markup: sre.Engine.Markup.PUNCTUATION});
+  }
+
+  /**
+   * @override
+   */
+  public tearDownTest() {
+    sre.System.getInstance().setupEngine(
+      {markup: sre.Engine.Markup.NONE});
+    super.tearDownTest();
+  }
+
+  /**
+   * @override
+   */
   public method(...args: string[]) {
     this.id = args[2] === undefined ? null : parseInt(args[2], 10);
     if (args[3]) {
