@@ -22,6 +22,7 @@ import {sre} from '../base/test_external';
 import * as sret from '../typings/sre';
 import AnalyticsUtil from './analytics_util';
 import AnalyticsTest from './analytics_test';
+import {TestUtil} from '../base/test_util';
 
 sre.AbstractTrieNode.prototype.json = function() {
   return {
@@ -346,6 +347,30 @@ namespace AnalyticsTrie {
     }
     disjunctiveRules();
   }
+
+
+  export function getAllSets(): {[name: string]: sret.SpeechRule[]} {
+    for (let locale of sre.Variables.LOCALES) {
+      sre.System.getInstance().setupEngine({locale: locale});
+    }
+    let trie = sre.SpeechRuleEngine.getInstance().activeStore_.trie;
+    let result: {[name: string]: sret.SpeechRule[]} = {};
+    for (let [loc, rest] of Object.entries(sre.SpeechRuleEngine.getInstance().enumerate())) {
+      for (let [mod, rules] of Object.entries(rest)) {
+        if (mod === 'speech') {
+          for (let rule of Object.keys(rules)) {
+            result[TestUtil.capitalize(rule) + TestUtil.capitalize(loc)] =
+              sre.Trie.collectRules_(trie.byConstraint([loc, mod, rule]));
+          }
+        } else {
+          result[TestUtil.capitalize(mod) + TestUtil.capitalize(loc)] =
+            sre.Trie.collectRules_(trie.byConstraint([loc, mod]));
+        }
+      }
+    }
+    return result;
+  }
+
 
 }
 

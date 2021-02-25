@@ -23,6 +23,7 @@ import * as fs from 'fs';
 import {sre} from '../base/test_external';
 import {TestPath, TestUtil} from '../base/test_util';
 import * as sret from '../typings/sre';
+import AnalyticsTrie from './analytics_trie';
 import AnalyticsUtil from './analytics_util';
 
 // Saves
@@ -109,12 +110,10 @@ namespace AnalyticsTest {
    * during tests.
    */
   export function outputAllRules() {
-    sre.System.getInstance().setupEngine({});
     loadAllAppliedRules();
-    for (let [name, obj] of Object.entries(
-      sre.SpeechRuleEngine.getInstance().ruleSets_)) {
-      let rules = (obj as sret.SpeechRuleStore).speechRules_
-        .map(x => x.toString());
+    let ruleSets = AnalyticsTrie.getAllSets();
+    for (let [name, obj] of Object.entries(ruleSets)) {
+      let rules = obj.map((x: sret.SpeechRule) => x.toString());
       AnalyticsUtil.fileJson('allRules', rules.sort(), name);
       allRulesDifference(rules, name);
     }
