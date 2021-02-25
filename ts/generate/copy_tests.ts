@@ -13,12 +13,11 @@
 // limitations under the License.
 
 /**
- * @fileoverview Methods for copying and transformng test files.
+ * @fileoverview Methods for copying and transforming test files.
  *
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {Tests} from '../base/tests';
 import {JsonFile, TestPath, TestUtil} from '../base/test_util';
 import {get as factoryget} from '../classes/test_factory';
 import {addMissing} from './fill_tests';
@@ -83,12 +82,11 @@ function replaceInTests(
  * @param {string} loc2 Second locale.
  */
 export function showDifference(loc1: string, loc2: string) {
-  let tests = Tests.allJson();
-  let tests1 = cleanLocaleDiffs(tests, loc1);
-  let tests2 = cleanLocaleDiffs(tests, loc2);
-  console.log(`Missing ${loc1}:`);
+  let tests1 = cleanLocaleDiffs(TestUtil.readDir(loc1), loc1);
+  let tests2 = cleanLocaleDiffs(TestUtil.readDir(loc2), loc2);
+  console.info(`Missing ${loc1}:`);
   outputDifference(tests2, tests1);
-  console.log(`Missing ${loc2}:`);
+  console.info(`Missing ${loc2}:`);
   outputDifference(tests1, tests2);
 }
 
@@ -102,12 +100,12 @@ function outputDifference(tests1: {[name: string]: string[]},
                           tests2: {[name: string]: string[]}) {
   for (let block of Object.keys(tests1)) {
     let block2 = tests2[block];
-    console.log(`Block ${block}:`);
+    console.info(`Block ${block}:`);
     if (!block2) {
-      console.log(tests1[block]);
+      console.info(tests1[block]);
       continue;
     }
-    console.log(tests1[block].filter(x => !block2.includes(x)));
+    console.info(tests1[block].filter(x => !block2.includes(x)));
   }
 }
 
@@ -119,9 +117,8 @@ function outputDifference(tests1: {[name: string]: string[]},
  * @param {string} loc The locale.
  */
 function cleanLocaleDiffs(files: string[], loc: string) {
-  let regexp = new RegExp(`^${loc}/`);
-  let tests = files.filter(x => x.match(regexp))
-    .map(x => x.replace(regexp, ''));
+  let regexp = new RegExp(`^${TestPath.EXPECTED}${loc}/`);
+  let tests = files.map(x => x.replace(regexp, ''));
   let result: {[name: string]: string[]} = {};
   for (let path of tests) {
     let match = path.match(/^(\w*)\/(.*)/);
