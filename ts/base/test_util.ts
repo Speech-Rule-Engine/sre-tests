@@ -207,38 +207,49 @@ export namespace TestUtil {
   /**
    * Recursively find all files with .json extension under the given path.
    *
-   * @param path The top pathname.
+   * @param dir The top pathname.
    * @param result Accumulator for pathnames.
    */
-  function readDir_(path: string, result: string[]) {
-    if (typeof path === 'undefined') {
+  function readDir_(dir: string, result: string[]) {
+    if (typeof dir === 'undefined') {
       return;
     }
-    if (fs.existsSync(path) && fs.lstatSync(path).isDirectory()) {
-      let files = fs.readdirSync(path);
+    if (fs.existsSync(dir) && fs.lstatSync(dir).isDirectory()) {
+      let files = fs.readdirSync(dir);
       files.forEach(
-        x => readDir_(path ? path + '/' + x : x, result));
+        x => readDir_(dir ? path.join(dir, x) : x, result));
       return;
     }
-    if (path.match(/\.json$/)) {
-      result.push(path);
+    if (dir.match(/\.json$/)) {
+      result.push(dir);
     }
   }
 
   /**
    * Recursively find all files with .json extension under the given path.
    *
-   * @param path The top pathname.
+   * @param dir The top pathname.
    * @return List of all filenames.
    */
-  export function readDir(path: string): string[] {
+  export function readDir(dir: string): string[] {
     let result: string[] = [];
-    let file = TestPath.EXPECTED + path;
+    let file = TestPath.EXPECTED + dir;
     if (!fs.existsSync(file) || !fs.lstatSync(file).isDirectory()) {
-      file = path;
+      file = dir;
     }
     readDir_(file, result);
     return result;
+  }
+
+  /**
+   * Cleans a list of filenames by removing expecte path.
+   * @param {string[]} files The files.
+   * @param {string = ''} dir The optional additional path.
+   * @return {string[]} The cleaned up list.
+   */
+  export function cleanFiles(files: string[], dir: string = ''): string[] {
+    let regexp = new RegExp(`^${TestPath.EXPECTED}` + (dir ? `${dir}/` : ''));
+    return files.map(x => x.replace(regexp, ''));
   }
 
 }

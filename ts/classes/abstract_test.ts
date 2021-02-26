@@ -129,9 +129,7 @@ export abstract class AbstractJsonTest extends AbstractTest {
     this.jsonTests = this.jsonTests || (
       this.jsonFile ? tu.TestUtil.loadJson(this.jsonFile) : {});
     this.information = this.jsonTests.information || 'Unnamed tests';
-    let file = this.jsonTests['base'];
-    this.baseFile = tu.TestUtil.fileExists(file, tu.TestPath.INPUT);
-    this.baseTests = this.baseFile ? tu.TestUtil.loadJson(this.baseFile) : {};
+    this.loadBase();
     let input: tu.JsonTests = (this.baseTests['tests'] || {}) as tu.JsonTests;
     let output = this.jsonTests['tests'] || {};
     let exclude = this.jsonTests['exclude'] || [];
@@ -139,6 +137,15 @@ export abstract class AbstractJsonTest extends AbstractTest {
     this.inputTests = tests[0];
     this.warn = tests[1];
     this.prepared = true;
+  }
+
+  /**
+   * Loads the base file if it exists.
+   */
+  public loadBase() {
+    let file = this.jsonTests['base'];
+    this.baseFile = tu.TestUtil.fileExists(file, tu.TestPath.INPUT);
+    this.baseTests = this.baseFile ? tu.TestUtil.loadJson(this.baseFile) : {};
   }
 
   /**

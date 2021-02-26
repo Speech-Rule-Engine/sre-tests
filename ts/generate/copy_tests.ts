@@ -18,7 +18,7 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {JsonFile, TestPath, TestUtil} from '../base/test_util';
+import {JsonFile, JsonTest, JsonTests, TestPath, TestUtil} from '../base/test_util';
 import {get as factoryget} from '../classes/test_factory';
 import {addMissing} from './fill_tests';
 
@@ -75,15 +75,21 @@ function replaceInTests(
   }
 }
 
+//
+// Some filter and inspection tooling
+//
+
 /**
  * Shows the difference in test files between two locales.
  *
  * @param {string} loc1 First locale.
  * @param {string} loc2 Second locale.
  */
-export function showDifference(loc1: string, loc2: string) {
-  let tests1 = cleanLocaleDiffs(TestUtil.readDir(loc1), loc1);
-  let tests2 = cleanLocaleDiffs(TestUtil.readDir(loc2), loc2);
+export function localeDifference(loc1: string, loc2: string) {
+  let tests1 = localeToBlocks(
+    TestUtil.cleanFiles(TestUtil.readDir(loc1), loc1));
+  let tests2 = localeToBlocks(
+    TestUtil.cleanFiles(TestUtil.readDir(loc2), loc2));
   console.info(`Missing ${loc1}:`);
   outputDifference(tests2, tests1);
   console.info(`Missing ${loc2}:`);
@@ -110,17 +116,14 @@ function outputDifference(tests1: {[name: string]: string[]},
 }
 
 /**
- * Retrieves the files for a particular locale in the set of all test files and
- * collates them by blocks corresponding to their sub-directories.
+ * Collates the files of a locale into blocks corresponding to their
+ * sub-directories.
  *
  * @param {string[]} files The list of all files.
- * @param {string} loc The locale.
  */
-function cleanLocaleDiffs(files: string[], loc: string) {
-  let regexp = new RegExp(`^${TestPath.EXPECTED}${loc}/`);
-  let tests = files.map(x => x.replace(regexp, ''));
+function localeToBlocks(files: string[]) {
   let result: {[name: string]: string[]} = {};
-  for (let path of tests) {
+  for (let path of files) {
     let match = path.match(/^(\w*)\/(.*)/);
     let block = match[1];
     let file = match[2];
@@ -131,4 +134,78 @@ function cleanLocaleDiffs(files: string[], loc: string) {
     }
   }
   return result;
+}
+
+export function showNonExpected(loc: string, exclude: string[] = []) {
+  let nonExpected = getNonExpected(loc, exclude);
+  let [missing, same, different] = siftNonExpected(nonExpected);
+  console.info('Missing');
+  for (let [file, key, value] of missing) {
+    console.info(`${file} ${key}:`);
+    console.info(value);
+  }
+  console.log('Same');
+  for (let [file, key, value, base] of same) {
+    console.info(`${file} ${key}:`);
+    console.info(value);
+    console.info(base);
+  }
+  console.log('Different');
+  for (let [file, key, value, base] of different) {
+    console.info(`${file} ${key}:`);
+    console.info(value);
+    console.info(base);
+  }
+}
+
+function siftNonExpected(nonExpected: [string, string, JsonTest][]) {
+  let missing: [string, string, JsonTest][] = [];
+  let same: [string, string, JsonTest, JsonTest][] = [];
+  let different: [string, string, JsonTest, JsonTest][] = [];
+  for (let [file, key, value] of nonExpected) {
+    let json = factoryget(file);
+    json.loadBase();
+    let base = json.baseTests.tests as JsonTests;
+    let baseTest = base[key];
+    if (typeof baseTest === 'undefined') {
+      missing.push([file, key, value]);
+      continue;
+    }
+    if (baseTest.input && value.input && baseTest.input === value.input) {
+      same.push([file, key, value, baseTest]);
+      continue;
+    }
+    different.push([file, key, value, baseTest]);
+  }
+  return [missing, same, different];
+}
+
+function getNonExpected(
+  loc: string, exclude: string[] = []): [string, string, JsonTest][] {
+  let result: [string, string, JsonTest][] = [];
+  let tests = TestUtil.cleanFiles(TestUtil.readDir(loc));
+  for (let test of tests) {
+    let json = factoryget(test);
+    if (exclude.indexOf(json.jsonTests.factory) !== -1) {
+      continue;
+    }
+    for (let [key, entry] of Object.entries(json.jsonTests.tests)) {
+      if (key.match(/_comment/)) {
+        continue;
+      }
+      cleanEntry(entry);
+      if (Object.keys(entry).length) {
+        result.push([test, key, entry]);
+      }
+    }
+  }
+  return result;
+}
+
+function cleanEntry(entry: JsonTest) {
+  delete entry.expected;
+  delete entry.test;
+  Object.keys(entry).
+    filter(key => key.match(/_comment/)).
+    forEach(x => delete entry[x]);
 }

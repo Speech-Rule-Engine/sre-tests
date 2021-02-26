@@ -64,7 +64,7 @@ export class Tests {
    * @return A list of all json file path names.
    */
   public static allJson(): string[] {
-    return TestUtil.readDir('');
+    return TestUtil.cleanFiles(TestUtil.readDir(''));
   }
 
   /**
