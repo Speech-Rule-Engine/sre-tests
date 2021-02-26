@@ -379,6 +379,42 @@
     },
     "CollapsedVector_sbrief": {
       "expected": "vecteur compressé"
+    },
+    "CollapsedVarSubtraction_default": {
+      "expected": "soustraction avec un nombre d'éléments variable compressé"
+    },
+    "CollapsedVarSubtraction_brief": {
+      "expected": "soustraction compressé"
+    },
+    "CollapsedVarSubtraction_sbrief": {
+      "expected": "soustraction compressé"
+    },
+    "CollapsedCountImplicit_default": {
+      "expected": "produit avec 3 facteurs compressé"
+    },
+    "CollapsedCountImplicit_brief": {
+      "expected": "produit compressé"
+    },
+    "CollapsedCountImplicit_sbrief": {
+      "expected": "produit compressé"
+    },
+    "CollapsedVarImplicit_default": {
+      "expected": "produit avec un nombre de facteurs variable compressé"
+    },
+    "CollapsedVarArrowRelation_default": {
+      "expected": "flèche séquence avec un nombre de éléments variable compressée"
+    },
+    "CollapsedArrowRelation_default": {
+      "expected": "flèche compressé"
+    },
+    "CollapsedVarRowvector_default": {
+      "expected": "vecteur ligne de dimension n"
+    },
+    "CollapsedRootInside_default": {
+      "expected": "racine d'indice 3 fin indice compressée a"
+    },
+    "CollapsedRootNestedInside_default": {
+      "expected": "racine imbriquée d'indice 3 fin indice compressée a"
     }
   }
 }

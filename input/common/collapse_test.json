@@ -615,6 +615,68 @@
       "test": true,
       "input": "<mfenced open=\"[\" close=\"]\"><mtable><mtr><mtd><mi>a</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd></mtr><mtr><mtd><mi>e</mi></mtd></mtr></mtable></mfenced>",
       "preference": "sbrief"
+    },
+    "CollapsedVarSubtraction_default": {
+      "test": true,
+      "input": "<mi>a</mi><mo>-</mo><mi>&#x2026;</mi><mo>-</mo><mi>b</mi>",
+      "preference": "default"
+    },
+    "CollapsedVarSubtraction_brief": {
+      "test": true,
+      "input": "<mi>a</mi><mo>-</mo><mi>&#x2026;</mi><mo>-</mo><mi>b</mi>",
+      "preference": "brief"
+    },
+    "CollapsedVarSubtraction_sbrief": {
+      "test": true,
+      "input": "<mi>a</mi><mo>-</mo><mi>&#x2026;</mi><mo>-</mo><mi>b</mi>",
+      "preference": "sbrief"
+    },
+    "CollapsedCountImplicit_default": {
+      "test": true,
+      "input": "<mi>a</mi><mi>b</mi><mi>c</mi>",
+      "preference": "default"
+    },
+    "CollapsedCountImplicit_brief": {
+      "test": true,
+      "input": "<mi>a</mi><mi>b</mi><mi>c</mi>",
+      "preference": "brief"
+    },
+    "CollapsedCountImplicit_sbrief": {
+      "test": true,
+      "input": "<mi>a</mi><mi>b</mi><mi>c</mi>",
+      "preference": "sbrief"
+    },
+    "CollapsedVarImplicit_default": {
+      "test": true,
+      "input": "<mi>a</mi><mo>&#x2062;</mo><mo>&#x2026;</mo><mo>&#x2062;</mo><mi>b</mi>",
+      "preference": "default"
+    },
+    "CollapsedVarArrowRelation_default": {
+      "test": true,
+      "input": "<mi>a</mi><mo>→</mo><mo>&#x2026;</mo><mo>↔</mo><mi>b</mi>",
+      "preference": "default"
+    },
+    "CollapsedArrowRelation_default": {
+      "test": true,
+      "input": "<mi>a</mi><mo>→</mo><mi>c</mi><mo>↔</mo><mi>b</mi>",
+      "preference": "default"
+    },
+    "CollapsedVarRowvector_default": {
+      "test": true,
+      "input": "<mfenced open=\"[\" close=\"]\"><mtable><mtr><mtd><mi>a</mi></mtd><mtd><mo>&#x2026;</mo></mtd><mtd><mi>b</mi></mtd></mtr></mtable></mfenced>",
+      "preference": "default"
+    },
+    "CollapsedRootInside_default": {
+      "test": true,
+      "input": "<mroot><mi>x</mi><mn>3</mn></mroot>",
+      "post": "<mi>a</mi>",
+      "preference": "default"
+    },
+    "CollapsedRootNestedInside_default": {
+      "test": true,
+      "input": "<mroot><mrow><mroot><mi>x</mi><mn>4</mn></mroot><mo>+</mo><mi>x</mi></mrow><mn>3</mn></mroot>",
+      "post": "<mi>a</mi>",
+      "preference": "default"
     }
   }
 }

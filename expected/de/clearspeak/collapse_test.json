@@ -7,7 +7,96 @@
   "domain": "clearspeak",
   "locale": "de",
   "active": "CollapseGerman",
-  "exclude": ["CollapsedAddition_brief", "CollapsedAddition_sbrief", "CollapsedBigop_brief", "CollapsedBigop_sbrief", "CollapsedBinomial_brief", "CollapsedBinomial_sbrief", "CollapsedCases_brief", "CollapsedCases_sbrief", "CollapsedCell_brief", "CollapsedCell_sbrief", "CollapsedContinuedFraction_brief", "CollapsedContinuedFraction_sbrief", "CollapsedDeterminant_brief", "CollapsedDeterminant_sbrief", "CollapsedFraction_brief", "CollapsedFraction_sbrief", "CollapsedFunction_brief", "CollapsedFunction_sbrief", "CollapsedIdentifier_brief", "CollapsedIdentifier_sbrief", "CollapsedInfixop_brief", "CollapsedInfixop_sbrief", "CollapsedIntegral_brief", "CollapsedIntegral_sbrief", "CollapsedLim_brief", "CollapsedLim_sbrief", "CollapsedLine_brief", "CollapsedLine_sbrief", "CollapsedMatrix_brief", "CollapsedMatrix_sbrief", "CollapsedMixedNumber_brief", "CollapsedMixedNumber_sbrief", "CollapsedMultiplication_brief", "CollapsedMultiplication_sbrief", "CollapsedMultirel_brief", "CollapsedMultirel_sbrief", "CollapsedNumber_brief", "CollapsedNumber_sbrief", "CollapsedPunctuated_brief", "CollapsedPunctuated_sbrief", "CollapsedRelation_brief", "CollapsedRelation_sbrief", "CollapsedRelationSeq_brief", "CollapsedRelationSeq_sbrief", "CollapsedRoot_brief", "CollapsedRoot_sbrief", "CollapsedRootNested_brief", "CollapsedRootNested_sbrief", "CollapsedRow_brief", "CollapsedRow_sbrief", "CollapsedRowvector_brief", "CollapsedRowvector_sbrief", "CollapsedSqrt_brief", "CollapsedSqrt_sbrief", "CollapsedSqrtNested_brief", "CollapsedSqrtNested_sbrief", "CollapsedSquarematrix_brief", "CollapsedSquarematrix_sbrief", "CollapsedSubscript_brief", "CollapsedSubscript_sbrief", "CollapsedSubsup_brief", "CollapsedSubsup_sbrief", "CollapsedSuperscript_brief", "CollapsedSuperscript_sbrief", "CollapsedTable_brief", "CollapsedTable_sbrief", "CollapsedText_brief", "CollapsedText_sbrief", "CollapsedVarAddition_brief", "CollapsedVarAddition_sbrief", "CollapsedVarCases_brief", "CollapsedVarCases_sbrief", "CollapsedVarDeterminant_brief", "CollapsedVarDeterminant_sbrief", "CollapsedVarMatrix_brief", "CollapsedVarMatrix_sbrief", "CollapsedVarMultiplication_brief", "CollapsedVarMultiplication_sbrief", "CollapsedVarMultirel_brief", "CollapsedVarMultirel_sbrief", "CollapsedVarPunctuated_brief", "CollapsedVarPunctuated_sbrief", "CollapsedVarRelation_brief", "CollapsedVarRelation_sbrief", "CollapsedVarVector_brief", "CollapsedVarVector_sbrief", "CollapsedVector_brief", "CollapsedVector_sbrief"],
+  "exclude": [
+    "CollapsedAddition_brief",
+    "CollapsedAddition_sbrief",
+    "CollapsedBigop_brief",
+    "CollapsedBigop_sbrief",
+    "CollapsedBinomial_brief",
+    "CollapsedBinomial_sbrief",
+    "CollapsedCases_brief",
+    "CollapsedCases_sbrief",
+    "CollapsedCell_brief",
+    "CollapsedCell_sbrief",
+    "CollapsedContinuedFraction_brief",
+    "CollapsedContinuedFraction_sbrief",
+    "CollapsedDeterminant_brief",
+    "CollapsedDeterminant_sbrief",
+    "CollapsedFraction_brief",
+    "CollapsedFraction_sbrief",
+    "CollapsedFunction_brief",
+    "CollapsedFunction_sbrief",
+    "CollapsedIdentifier_brief",
+    "CollapsedIdentifier_sbrief",
+    "CollapsedInfixop_brief",
+    "CollapsedInfixop_sbrief",
+    "CollapsedIntegral_brief",
+    "CollapsedIntegral_sbrief",
+    "CollapsedLim_brief",
+    "CollapsedLim_sbrief",
+    "CollapsedLine_brief",
+    "CollapsedLine_sbrief",
+    "CollapsedMatrix_brief",
+    "CollapsedMatrix_sbrief",
+    "CollapsedMixedNumber_brief",
+    "CollapsedMixedNumber_sbrief",
+    "CollapsedMultiplication_brief",
+    "CollapsedMultiplication_sbrief",
+    "CollapsedMultirel_brief",
+    "CollapsedMultirel_sbrief",
+    "CollapsedNumber_brief",
+    "CollapsedNumber_sbrief",
+    "CollapsedPunctuated_brief",
+    "CollapsedPunctuated_sbrief",
+    "CollapsedRelation_brief",
+    "CollapsedRelation_sbrief",
+    "CollapsedRelationSeq_brief",
+    "CollapsedRelationSeq_sbrief",
+    "CollapsedRoot_brief",
+    "CollapsedRoot_sbrief",
+    "CollapsedRootNested_brief",
+    "CollapsedRootNested_sbrief",
+    "CollapsedRow_brief",
+    "CollapsedRow_sbrief",
+    "CollapsedRowvector_brief",
+    "CollapsedRowvector_sbrief",
+    "CollapsedSqrt_brief",
+    "CollapsedSqrt_sbrief",
+    "CollapsedSqrtNested_brief",
+    "CollapsedSqrtNested_sbrief",
+    "CollapsedSquarematrix_brief",
+    "CollapsedSquarematrix_sbrief",
+    "CollapsedSubscript_brief",
+    "CollapsedSubscript_sbrief",
+    "CollapsedSubsup_brief",
+    "CollapsedSubsup_sbrief",
+    "CollapsedSuperscript_brief",
+    "CollapsedSuperscript_sbrief",
+    "CollapsedTable_brief",
+    "CollapsedTable_sbrief",
+    "CollapsedText_brief",
+    "CollapsedText_sbrief",
+    "CollapsedVarAddition_brief",
+    "CollapsedVarAddition_sbrief",
+    "CollapsedVarCases_brief",
+    "CollapsedVarCases_sbrief",
+    "CollapsedVarDeterminant_brief",
+    "CollapsedVarDeterminant_sbrief",
+    "CollapsedVarMatrix_brief",
+    "CollapsedVarMatrix_sbrief",
+    "CollapsedVarMultiplication_brief",
+    "CollapsedVarMultiplication_sbrief",
+    "CollapsedVarMultirel_brief",
+    "CollapsedVarMultirel_sbrief",
+    "CollapsedVarPunctuated_brief",
+    "CollapsedVarPunctuated_sbrief",
+    "CollapsedVarRelation_brief",
+    "CollapsedVarRelation_sbrief",
+    "CollapsedVarVector_brief",
+    "CollapsedVarVector_sbrief",
+    "CollapsedVector_brief",
+    "CollapsedVector_sbrief"
+  ],
   "tests": {
     "CollapsedAddition_default": {
       "expected": "Summe mit 2 Summanden kollabiert"
@@ -132,6 +221,42 @@
     },
     "CollapsedVector_default": {
       "expected": "3 dimensionaler Vektor kollabiert"
+    },
+    "CollapsedVarSubtraction_default": {
+      "expected": "Subtraktion mit veränderlicher Anzahl an Elementen kollabiert"
+    },
+    "CollapsedVarSubtraction_brief": {
+      "expected": "Subtraktion mit veränderlicher Anzahl an Elementen kollabiert"
+    },
+    "CollapsedVarSubtraction_sbrief": {
+      "expected": "Subtraktion mit veränderlicher Anzahl an Elementen kollabiert"
+    },
+    "CollapsedCountImplicit_default": {
+      "expected": "Produkt mit 3 Faktoren kollabiert"
+    },
+    "CollapsedCountImplicit_brief": {
+      "expected": "Produkt mit 3 Faktoren kollabiert"
+    },
+    "CollapsedCountImplicit_sbrief": {
+      "expected": "Produkt mit 3 Faktoren kollabiert"
+    },
+    "CollapsedVarImplicit_default": {
+      "expected": "Produkt mit veränderlicher Anzahl an Faktoren kollabiert"
+    },
+    "CollapsedVarArrowRelation_default": {
+      "expected": "Pfeilssequenz mit veränderlicher Anzahl an Elementen kollabiert"
+    },
+    "CollapsedArrowRelation_default": {
+      "expected": "Pfeil kollabiert"
+    },
+    "CollapsedVarRowvector_default": {
+      "expected": "n dimensionaler Zeilenvektor kollabiert"
+    },
+    "CollapsedRootInside_default": {
+      "expected": "Wurzel mit Exponent 3 Ende Exponent kollabiert a"
+    },
+    "CollapsedRootNestedInside_default": {
+      "expected": "verschachtelte Wurzel mit Exponent 3 Ende Exponent kollabiert a"
     }
   }
 }

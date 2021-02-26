@@ -159,10 +159,10 @@
       "expected": "uguaglianza sequenza con 3 elementi collassata"
     },
     "CollapsedRoot_default": {
-      "expected": "radice di indice collassata 3"
+      "expected": "radice di indice 3 collassata"
     },
     "CollapsedRootNested_default": {
-      "expected": "radicale doppio di indice collassato 3"
+      "expected": "radicale doppio di indice 3 collassato"
     },
     "CollapsedRowvector_default": {
       "expected": "2 vettore riga dimensionale collassato"
@@ -342,16 +342,16 @@
       "expected": "uguaglianza sequenza con 3 elementi collassata"
     },
     "CollapsedRoot_brief": {
-      "expected": "radice di indice collassata 3"
+      "expected": "radice di indice 3 collassata"
     },
     "CollapsedRoot_sbrief": {
-      "expected": "radice di indice collassata 3"
+      "expected": "radice di indice 3 collassata"
     },
     "CollapsedRootNested_brief": {
-      "expected": "radicale doppio di indice collassato 3"
+      "expected": "radicale doppio di indice 3 collassato"
     },
     "CollapsedRootNested_sbrief": {
-      "expected": "radicale doppio di indice collassato 3"
+      "expected": "radicale doppio di indice 3 collassato"
     },
     "CollapsedRowvector_brief": {
       "expected": "2 vettore riga dimensionale collassato"
@@ -466,6 +466,42 @@
     },
     "CollapsedVector_sbrief": {
       "expected": "3 vettore dimensionale collassato"
+    },
+    "CollapsedVarSubtraction_default": {
+      "expected": "sottrazione con numero variabile di elementi collassato"
+    },
+    "CollapsedVarSubtraction_brief": {
+      "expected": "sottrazione con numero variabile di elementi collassato"
+    },
+    "CollapsedVarSubtraction_sbrief": {
+      "expected": "sottrazione con numero variabile di elementi collassato"
+    },
+    "CollapsedCountImplicit_default": {
+      "expected": "prodotto di 3 fattori collassato"
+    },
+    "CollapsedCountImplicit_brief": {
+      "expected": "prodotto di 3 fattori collassato"
+    },
+    "CollapsedCountImplicit_sbrief": {
+      "expected": "prodotto di 3 fattori collassato"
+    },
+    "CollapsedVarImplicit_default": {
+      "expected": "prodotto con numero variabile di fattori collassato"
+    },
+    "CollapsedVarArrowRelation_default": {
+      "expected": "freccia sequenza con numero variabile di elementi collassata"
+    },
+    "CollapsedArrowRelation_default": {
+      "expected": "freccia collassato"
+    },
+    "CollapsedVarRowvector_default": {
+      "expected": "vettore riga di dimensione n collassata"
+    },
+    "CollapsedRootInside_default": {
+      "expected": "radice di indice 3 indice finale collassata a"
+    },
+    "CollapsedRootNestedInside_default": {
+      "expected": "radicale doppio di indice 3 indice finale collassato a"
     }
   }
 }

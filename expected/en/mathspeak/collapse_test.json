@@ -381,18 +381,40 @@
       "expected": "collapsed vector"
     },
     "CollapsedRootInside_default": {
-      "test": true,
-      "input": "<mroot><mi>x</mi><mn>3</mn></mroot>",
-      "post": "<mi>a</mi>",
-      "preference": "default",
       "expected": "collapsed root of index 3 endindex a"
     },
     "CollapsedRootNestedInside_default": {
-      "test": true,
-      "input": "<mroot><mrow><mroot><mi>x</mi><mn>4</mn></mroot><mo>+</mo><mi>x</mi></mrow><mn>3</mn></mroot>",
-      "post": "<mi>a</mi>",
-      "preference": "default",
       "expected": "collapsed nested root of index 3 endindex a"
+    },
+    "CollapsedVarSubtraction_default": {
+      "expected": "collapsed subtraction with variable number of elements"
+    },
+    "CollapsedVarSubtraction_brief": {
+      "expected": "collapsed subtraction"
+    },
+    "CollapsedVarSubtraction_sbrief": {
+      "expected": "collapsed subtraction"
+    },
+    "CollapsedCountImplicit_default": {
+      "expected": "collapsed product with 3 factors"
+    },
+    "CollapsedCountImplicit_brief": {
+      "expected": "collapsed product"
+    },
+    "CollapsedCountImplicit_sbrief": {
+      "expected": "collapsed product"
+    },
+    "CollapsedVarImplicit_default": {
+      "expected": "collapsed product with variable number of factors"
+    },
+    "CollapsedVarArrowRelation_default": {
+      "expected": "collapsed arrow sequence with variable number of elements"
+    },
+    "CollapsedArrowRelation_default": {
+      "expected": "collapsed arrow"
+    },
+    "CollapsedVarRowvector_default": {
+      "expected": "collapsed n dimensional row vector"
     }
   }
 }
