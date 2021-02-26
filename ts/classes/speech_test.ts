@@ -119,7 +119,6 @@ export class SpeechTest extends AbstractExamples {
     let style = opt_style || this.style;
     let mathMl = '<math xmlns="http://www.w3.org/1998/Math/MathML">' +
       mml + '</math>';
-    sre.SpeechRuleEngine.getInstance().clearCache();
     sre.System.getInstance().setupEngine(
       {domain: this.domain, style: style,
        modality: this.modality, rules: this.rules, locale: this.locale});

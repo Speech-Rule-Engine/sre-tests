@@ -41,7 +41,6 @@ export class SymbolTest extends SpeechTest {
    */
   public executeTest(text: string, answer: string, style?: string) {
     style = style || this.style;
-    sre.SpeechRuleEngine.getInstance().clearCache();
     sre.System.getInstance().setupEngine(
       {domain: this.domain, style: style,
        modality: this.modality, rules: this.rules, locale: this.locale});

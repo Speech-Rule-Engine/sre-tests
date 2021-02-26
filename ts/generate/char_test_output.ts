@@ -59,7 +59,6 @@ function loadBaseFile(file: string): string[] {
 function getCharOutput(
   dom: string, modality: string, loc: string, style: string, char: string) {
   let aural = sre.AuralRendering.getInstance();
-  sre.SpeechRuleEngine.getInstance().clearCache();
   sre.System.getInstance().setupEngine({
     domain: dom, modality: modality, locale: loc, style: style});
   // let grammar = {translate: true};
