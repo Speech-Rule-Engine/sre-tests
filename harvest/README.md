@@ -82,3 +82,14 @@ fb.updateField(db, 'nemeth', FIELD, KEY);
 
 
 ## Harvesting the Database
+
+
+### Running a backup
+
+```
+fb = require('./js/firebase/fire_backend');
+db = fb.initFirebase(CREDENTIALS);
+fb.backup(TARGET);
+```
+
+`TARGET` is the target directory for the backup.

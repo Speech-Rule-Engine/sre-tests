@@ -20,11 +20,13 @@
  */
 
 import admin = require('firebase-admin');
-import {JsonTests, TestUtil} from '../base/test_util';
+import {JsonTest, JsonTests, TestUtil} from '../base/test_util';
 import {AbstractJsonTest} from '../classes/abstract_test';
 import {get} from '../classes/test_factory';
 import * as FC from './fire_constants';
 import * as FU from './fire_util';
+import * as path from 'path';
+import {addToFile} from '../generate/fill_tests';
 
 /**
  * Inits the firebase communication
@@ -113,12 +115,16 @@ export async function restoreField(
   db: any, doc: string, field: string) {
   let users = await getUsers();
   for (let user of users) {
-    console.log(user);
     await FU.restoreField(db, FC.TestsCollection, user, doc, field);
   }
   console.log('Done restoring fields');
 }
 
+/**
+ * Backup the firebase.
+ * @param {any} db The database.
+ * @param {string = '/tmp/backup'} dir The backup directory.
+ */
 export async function backup(db: any, dir: string = '/tmp/backup') {
   let users = await getUsers();
   for (let user of users) {
@@ -128,6 +134,12 @@ export async function backup(db: any, dir: string = '/tmp/backup') {
   console.log('Firebase backup complete!');
 }
 
+/**
+ * Backs up a single user.
+ * @param {any} db The database.
+ * @param {string} user The user as a hash string.
+ * @param {string = '/tmp/backup'} dir The backup directoy.
+ */
 export async function downloadUser(
   db: any, user: string, dir: string = '/tmp/backup') {
   let paths = await FU.getPaths(db, user, FC.NemethCollection);
@@ -147,3 +159,71 @@ export async function downloadUser(
 // * Differences between user and original
 // * Harvest user input
 //
+
+/**
+ * Loads test files for a user from the local filesystem. This assumes a recent
+ * backup of the firebase.
+ *
+ * @param {string} user The user authentication.
+ * @param {string = '/tmp/backup'} dir The backup directory.
+ */
+export function loadUser(user: string, dir: string = '/tmp/backup') {
+  let basepath = path.join(dir, user);
+  let paths = TestUtil.loadJson(path.join(basepath, 'paths.json'));
+  for (let file of Object.keys(paths)) {
+    paths[file] = TestUtil.loadJson(path.join(basepath, file));
+  }
+  return paths;
+}
+
+
+declare type TestFilter = (test: JsonTest) => boolean;
+
+let changedFilter: TestFilter =
+  (test: JsonTest) => test[FC.Interaction] === FC.Status.CHANGED;
+
+export function filterTests(tests: JsonTests,
+                            filter: TestFilter = changedFilter) {
+  let result: JsonTests = {};
+  for (let [key, test] of Object.entries(tests)) {
+    if (filter(test)) {
+      result[key] = test;
+    }
+  }
+  return result;
+}
+
+export function filterFiles(tests: JsonTests,
+                            filter: TestFilter = changedFilter) {
+  let result: JsonTests = {};
+  for (let [path, test] of Object.entries(tests)) {
+    let changed = filterTests(test.tests, filter);
+    if (Object.keys(changed).length) {
+      result[path] = changed;
+    }
+  }
+  return result;
+}
+
+export function changedTests(tests: JsonTests) {
+  return filterFiles(
+    tests, (test: JsonTest) => test[FC.Interaction] === FC.Status.CHANGED ||
+      test[FC.FeedbackStatus] !== FC.Feedback.CORRECT);
+}
+
+export function feedbackTests(tests: JsonTests) {
+  return filterFiles(
+    tests, (test: JsonTest) => test[FC.FeedbackStatus] !== FC.Feedback.CORRECT);
+}
+
+
+export function editedTests(tests: JsonTests) {
+  return filterFiles(tests);
+}
+
+export function updateEditedTests(tests: JsonTests) {
+  let edited = editedTests(tests);
+  for (let [file, test] of Object.entries(edited)) {
+    addToFile(file, test);
+  }
+}
