@@ -11,10 +11,10 @@
   "information": "Nemeth Default Characters math_symbols tests.",
   "tests": {
     "!": {
-      "expected": "⠖"
+      "expected": "⠯"
     },
     "\"": {
-      "expected": "⠹"
+      "expected": "⠄⠄"
     },
     "#": {
       "expected": "⠨⠼"
@@ -65,7 +65,7 @@
       "expected": "⠀⠨⠂⠀"
     },
     "?": {
-      "expected": "⠸⠦"
+      "expected": "⠿"
     },
     "@": {
       "expected": "⠈⠁"
@@ -74,7 +74,7 @@
       "expected": "⠸⠡"
     },
     "^": {
-      "expected": "⡘"
+      "expected": "⠸⠣"
     },
     "_": {
       "expected": "⠸"
@@ -95,16 +95,16 @@
       "expected": "⠈⠉"
     },
     "£": {
-      "expected": "⠼"
+      "expected": "⠈⠇"
     },
     "¤": {
       "expected": "⠫"
     },
     "¥": {
-      "expected": ""
+      "expected": "⠈⠽"
     },
     "¦": {
-      "expected": "⠸⠳"
+      "expected": ""
     },
     "§": {
       "expected": "⠈⠠⠎"
@@ -116,10 +116,10 @@
       "expected": "⠘⠉"
     },
     "ª": {
-      "expected": ""
+      "expected": "⠸⠰⠁"
     },
     "«": {
-      "expected": ""
+      "expected": "⠐⠅⠈⠐⠅⠻"
     },
     "¬": {
       "expected": ""
@@ -131,7 +131,7 @@
       "expected": "⠱"
     },
     "°": {
-      "expected": "⠘⠨⠡"
+      "expected": "⠨⠡"
     },
     "±": {
       "expected": "⠬⠤"
@@ -143,7 +143,7 @@
       "expected": "⠨⠍"
     },
     "¶": {
-      "expected": ""
+      "expected": "⠈⠠⠏"
     },
     "·": {
       "expected": "⠡"
@@ -599,10 +599,10 @@
       "expected": "⠀⠐⠂⠀"
     },
     "∷": {
-      "expected": ""
+      "expected": "⠰⠆⠀"
     },
     "∸": {
-      "expected": ""
+      "expected": "⠨⠤"
     },
     "∹": {
       "expected": ""
@@ -629,34 +629,34 @@
       "expected": ""
     },
     "≁": {
-      "expected": ""
+      "expected": "⠌⠈⠱"
     },
     "≂": {
-      "expected": ""
+      "expected": "⠱⠈⠱"
     },
     "≃": {
-      "expected": ""
+      "expected": "⠈⠱⠱"
     },
     "≄": {
-      "expected": ""
+      "expected": "⠌⠈⠱⠱"
     },
     "≅": {
-      "expected": "⠀⠈⠱⠈⠱⠀"
+      "expected": "⠈⠱⠨⠅"
     },
     "≆": {
-      "expected": ""
+      "expected": "⠈⠱⠌⠨⠅"
     },
     "≇": {
-      "expected": ""
+      "expected": "⠌⠈⠱⠨⠅"
     },
     "≈": {
-      "expected": ""
+      "expected": "⠈⠱⠈⠱"
     },
     "≉": {
-      "expected": ""
+      "expected": "⠌⠈⠱⠈⠱"
     },
     "≊": {
-      "expected": ""
+      "expected": "⠈⠱⠈⠱⠱"
     },
     "≋": {
       "expected": ""
@@ -668,16 +668,16 @@
       "expected": "⠀⠈⠣⠠⠣⠀"
     },
     "≎": {
-      "expected": ""
+      "expected": "⠈⠣⠠⠣"
     },
     "≏": {
       "expected": ""
     },
     "≐": {
-      "expected": ""
+      "expected": "⠐⠨⠅⠣⠡⠻"
     },
     "≑": {
-      "expected": ""
+      "expected": "⠐⠨⠅⠩⠡⠣⠡⠻"
     },
     "≒": {
       "expected": ""
@@ -695,31 +695,31 @@
       "expected": ""
     },
     "≗": {
-      "expected": ""
+      "expected": "⠐⠨⠅⠣⠨⠡⠻"
     },
     "≘": {
-      "expected": ""
+      "expected": "⠐⠨⠅⠣⠫⠁⠻"
     },
     "≙": {
-      "expected": ""
+      "expected": "⠐⠨⠅⠣⠸⠣⠻"
     },
     "≚": {
-      "expected": ""
+      "expected": "⠐⠨⠅⠣⠸⠩⠻"
     },
     "≛": {
-      "expected": ""
+      "expected": "⠐⠨⠅⠣⠫⠸⠎⠻"
     },
     "≜": {
-      "expected": ""
+      "expected": "⠐⠨⠅⠣⠫⠞⠻"
     },
     "≝": {
-      "expected": ""
+      "expected": "⠐⠨⠅⠣⠙⠑⠋⠻"
     },
     "≞": {
-      "expected": ""
+      "expected": "⠐⠨⠅⠣⠍⠻"
     },
     "≟": {
-      "expected": ""
+      "expected": "⠐⠨⠅⠣⠸⠦⠻"
     },
     "≠": {
       "expected": "⠀⠌⠨⠅⠀"
@@ -836,16 +836,16 @@
       "expected": "⠀⠌⠸⠨⠂⠀"
     },
     "⊆": {
-      "expected": "⠸⠀⠅⠱"
+      "expected": "⠸⠐⠅⠱"
     },
     "⊇": {
-      "expected": "⠀⠨⠂⠱⠀"
+      "expected": "⠸⠨⠂⠱⠀"
     },
     "⊈": {
-      "expected": "⠀⠌⠀⠅⠱⠀"
+      "expected": "⠌⠸⠐⠅⠱"
     },
     "⊉": {
-      "expected": "⠀⠌⠨⠂⠱⠀"
+      "expected": "⠌⠸⠨⠂⠱⠀"
     },
     "⊊": {
       "expected": "⠀⠸⠐⠅⠌⠨⠅⠀"

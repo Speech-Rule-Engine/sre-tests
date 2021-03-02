@@ -224,6 +224,10 @@ export function editedTests(tests: JsonTests) {
 export function updateEditedTests(tests: JsonTests) {
   let edited = editedTests(tests);
   for (let [file, test] of Object.entries(edited)) {
-    addToFile(file, test);
+    let expected: JsonTest = {};
+    for (let [name, result] of Object.entries(test)) {
+      expected[name] = {expected: result.expected};
+    }
+    addToFile(file, expected);
   }
 }
