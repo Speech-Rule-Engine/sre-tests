@@ -161,6 +161,60 @@
     },
     "Issue_457_12": {
       "expected": "<stree><relseq role=\"equality\" id=\"11\">=<content><relation role=\"equality\" id=\"8\">=</relation></content><children><infixop role=\"implicit\" id=\"9\">⁢<content><operator role=\"multiplication\" id=\"6\">⁢</operator></content><children><subscript role=\"implicit\" id=\"5\"><children><infixop role=\"implicit\" id=\"3\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"2\">a</identifier></children></infixop><identifier role=\"latinletter\" font=\"italic\" id=\"4\">b</identifier></children></subscript><identifier role=\"latinletter\" font=\"italic\" id=\"7\">a</identifier></children></infixop><empty role=\"unknown\" id=\"10\"/></children></relseq></stree>"
+    },
+    "Prefix_0": {
+      "expected": "<stree><infixop role=\"implicit\" id=\"3\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"1\">b</identifier></children></infixop></stree>"
+    },
+    "Prefix_1": {
+      "expected": "<stree><prefixop role=\"multiplication\" id=\"5\">⁢<content><operator role=\"multiplication\" id=\"0\">⁢</operator></content><children><infixop role=\"implicit\" id=\"4\">⁢<content><operator role=\"multiplication\" id=\"3\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"1\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"2\">b</identifier></children></infixop></children></prefixop></stree>"
+    },
+    "Prefix_2": {
+      "expected": "<stree><infixop role=\"multiplication\" id=\"5\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator></content><children><prefixop role=\"multiplication\" id=\"4\">⁢<content><operator role=\"multiplication\" id=\"0\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"1\">a</identifier></children></prefixop><identifier role=\"latinletter\" font=\"italic\" id=\"3\">b</identifier></children></infixop></stree>"
+    },
+    "Prefix_3": {
+      "expected": "<stree><infixop role=\"multiplication\" id=\"7\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator></content><children><prefixop role=\"multiplication\" id=\"5\">⁢<content><operator role=\"multiplication\" id=\"0\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"1\">a</identifier></children></prefixop><prefixop role=\"multiplication\" id=\"6\">⁢<content><operator role=\"multiplication\" id=\"3\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"4\">b</identifier></children></prefixop></children></infixop></stree>"
+    },
+    "Prefix_4": {
+      "expected": "<stree><infixop role=\"multiplication\" id=\"9\">⁢<content><operator role=\"multiplication\" id=\"3\">⁢</operator></content><children><prefixop role=\"multiop\" id=\"7\">⁢ ⁢<content><operator role=\"multiplication\" id=\"0\">⁢</operator><operator role=\"multiplication\" id=\"1\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"2\">a</identifier></children></prefixop><prefixop role=\"multiop\" id=\"8\">⁢ ⁢<content><operator role=\"multiplication\" id=\"4\">⁢</operator><operator role=\"multiplication\" id=\"5\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"6\">b</identifier></children></prefixop></children></infixop></stree>"
+    },
+    "Prefix_5": {
+      "expected": "<stree><infixop role=\"multiplication\" id=\"5\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><prefixop role=\"multiplication\" id=\"4\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"3\">b</identifier></children></prefixop></children></infixop></stree>"
+    },
+    "Prefix_6": {
+      "expected": "<stree><infixop role=\"multiplication\" id=\"8\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator><operator role=\"multiplication\" id=\"4\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><prefixop role=\"multiplication\" id=\"7\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"3\">b</identifier></children></prefixop><prefixop role=\"multiplication\" id=\"9\">⁢<content><operator role=\"multiplication\" id=\"5\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"6\">c</identifier></children></prefixop></children></infixop></stree>"
+    },
+    "Postfix_0": {
+      "expected": "<stree><postfixop role=\"multiplication\" id=\"2\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">b</identifier></children></postfixop></stree>"
+    },
+    "Postfix_1": {
+      "expected": "<stree><infixop role=\"implicit\" id=\"4\">⁢<content><operator role=\"multiplication\" id=\"3\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><postfixop role=\"multiplication\" id=\"5\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"1\">b</identifier></children></postfixop></children></infixop></stree>"
+    },
+    "Postfix_2": {
+      "expected": "<stree><infixop role=\"multiplication\" id=\"4\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><postfixop role=\"multiplication\" id=\"5\">⁢<content><operator role=\"multiplication\" id=\"3\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"2\">b</identifier></children></postfixop></children></infixop></stree>"
+    },
+    "Postfix_3": {
+      "expected": "<stree><infixop role=\"multiplication\" id=\"6\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><postfixop role=\"multiplication\" id=\"7\">⁢<content><operator role=\"multiplication\" id=\"4\">⁢</operator></content><children><prefixop role=\"multiplication\" id=\"5\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"3\">b</identifier></children></prefixop></children></postfixop></children></infixop></stree>"
+    },
+    "Postfix_4": {
+      "expected": "<stree><postfixop role=\"multiop\" id=\"3\">⁢ ⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator><operator role=\"multiplication\" id=\"2\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">b</identifier></children></postfixop></stree>"
+    },
+    "Prefix_7": {
+      "expected": "<stree><infixop role=\"multiplication\" id=\"10\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><infixop role=\"implicit\" id=\"9\">⁢<content><operator role=\"multiplication\" id=\"8\">⁢</operator></content><children><prefixop role=\"multiplication\" id=\"4\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"3\">b</identifier></children></prefixop><prefixop role=\"multiplication\" id=\"7\">⁢<content><operator role=\"multiplication\" id=\"5\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"6\">c</identifier></children></prefixop></children></infixop></children></infixop></stree>"
+    },
+    "Prefix_8": {
+      "expected": "<stree><infixop role=\"multiplication\" id=\"10\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><prefixop role=\"multiplication\" id=\"9\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator></content><children><infixop role=\"implicit\" id=\"8\">⁢<content><operator role=\"multiplication\" id=\"7\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"3\">b</identifier><prefixop role=\"multiplication\" id=\"6\">⁢<content><operator role=\"multiplication\" id=\"4\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"5\">c</identifier></children></prefixop></children></infixop></children></prefixop></children></infixop></stree>"
+    },
+    "Prefix_9": {
+      "expected": "<stree><infixop role=\"multiplication\" id=\"7\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator><operator role=\"multiplication\" id=\"5\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><prefixop role=\"multiplication\" id=\"4\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"3\">b</identifier></children></prefixop><identifier role=\"latinletter\" font=\"italic\" id=\"6\">c</identifier></children></infixop></stree>"
+    },
+    "Postfix_5": {
+      "expected": "<stree><infixop role=\"multiplication\" id=\"10\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><prefixop role=\"multiplication\" id=\"9\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator></content><children><infixop role=\"implicit\" id=\"8\">⁢<content><operator role=\"multiplication\" id=\"7\">⁢</operator></content><children><postfixop role=\"multiplication\" id=\"5\">⁢<content><operator role=\"multiplication\" id=\"4\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"3\">b</identifier></children></postfixop><identifier role=\"latinletter\" font=\"italic\" id=\"6\">c</identifier></children></infixop></children></prefixop></children></infixop></stree>"
+    },
+    "Postfix_6": {
+      "expected": "<stree><infixop role=\"multiplication\" id=\"10\">⁢<content><operator role=\"multiplication\" id=\"3\">⁢</operator></content><children><postfixop role=\"multiplication\" id=\"2\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier></children></postfixop><infixop role=\"implicit\" id=\"9\">⁢<content><operator role=\"multiplication\" id=\"8\">⁢</operator></content><children><postfixop role=\"multiplication\" id=\"6\">⁢<content><operator role=\"multiplication\" id=\"5\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"4\">b</identifier></children></postfixop><identifier role=\"latinletter\" font=\"italic\" id=\"7\">c</identifier></children></infixop></children></infixop></stree>"
+    },
+    "Postfix_7": {
+      "expected": "<stree><infixop role=\"implicit\" id=\"9\">⁢<content><operator role=\"multiplication\" id=\"7\">⁢</operator><operator role=\"multiplication\" id=\"8\">⁢</operator></content><children><postfixop role=\"multiplication\" id=\"2\">⁢<content><operator role=\"multiplication\" id=\"1\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier></children></postfixop><postfixop role=\"multiplication\" id=\"5\">⁢<content><operator role=\"multiplication\" id=\"4\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"3\">b</identifier></children></postfixop><identifier role=\"latinletter\" font=\"italic\" id=\"6\">c</identifier></children></infixop></stree>"
     }
   }
 }

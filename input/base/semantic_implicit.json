@@ -161,6 +161,60 @@
     "Issue_457_12": {
       "tex": "{aa}_{b}a=",
       "input": "<msub><mrow><mi>a</mi><mo>&#x2062;</mo><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msub><mo>&#x2062;</mo><mi>a</mi></mrow><mo>=</mo>"
+    },
+    "Prefix_0": {
+      "input": "<mi>a</mi><mi>b</mi>"
+    },
+    "Prefix_1": {
+      "input": "<mo>&#x2062;</mo><mi>a</mi><mi>b</mi>"
+    },
+    "Prefix_2": {
+      "input": "<mo>&#x2062;</mo><mi>a</mi><mo>&#x2062;</mo><mi>b</mi>"
+    },
+    "Prefix_3": {
+      "input": "<mo>&#x2062;</mo><mi>a</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mi>b</mi>"
+    },
+    "Prefix_4": {
+      "input": "<mo>&#x2062;</mo><mo>&#x2062;</mo><mi>a</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mo>&#x2062;</mo><mi>b</mi>"
+    },
+    "Prefix_5": {
+      "input": "<mi>a</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mi>b</mi>"
+    },
+    "Prefix_6": {
+      "input": "<mi>a</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mi>b</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mi>c</mi>"
+    },
+    "Prefix_7": {
+      "input": "<mi>a</mi><mo>&#x2062;</mo><mrow><mo>&#x2062;</mo><mi>b</mi></mrow><mrow><mo>&#x2062;</mo><mi>c</mi></mrow>"
+    },
+    "Prefix_8": {
+      "input": "<mi>a</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mi>b</mi><mrow><mo>&#x2062;</mo><mi>c</mi></mrow>"
+    },
+    "Prefix_9": {
+      "input": "<mi>a</mi><mo>&#x2062;</mo><mrow><mo>&#x2062;</mo><mi>b</mi></mrow><mo>&#x2062;</mo><mi>c</mi>"
+    },
+    "Postfix_0": {
+      "input": "<mi>b</mi><mo>&#x2062;</mo>"
+    },
+    "Postfix_1": {
+      "input": "<mi>a</mi><mi>b</mi><mo>&#x2062;</mo>"
+    },
+    "Postfix_2": {
+      "input": "<mi>a</mi><mo>&#x2062;</mo><mi>b</mi><mo>&#x2062;</mo>"
+    },
+    "Postfix_3": {
+      "input": "<mi>a</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mi>b</mi><mo>&#x2062;</mo>"
+    },
+    "Postfix_4": {
+      "input": "<mi>b</mi><mo>&#x2062;</mo><mo>&#x2062;</mo>"
+    },
+    "Postfix_5": {
+      "input": "<mi>a</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mrow><mi>b</mi><mo>&#x2062;</mo></mrow><mi>c</mi>"
+    },
+    "Postfix_6": {
+      "input": "<mrow><mi>a</mi><mo>&#x2062;</mo></mrow><mo>&#x2062;</mo><mrow><mi>b</mi><mo>&#x2062;</mo></mrow><mi>c</mi>"
+    },
+    "Postfix_7": {
+      "input": "<mrow><mi>a</mi><mo>&#x2062;</mo></mrow><mrow><mi>b</mi><mo>&#x2062;</mo></mrow><mi>c</mi>"
     }
   }
 }
