@@ -206,10 +206,14 @@ export class SemanticTreeTest extends SemanticTest {
     let dp = new xmldom.DOMParser();
     let xml = dp.parseFromString(this.prepareStree(sml), 'text/xml');
     let xmls = new xmldom.XMLSerializer();
-    this.assert.equal(xmls.serializeToString(sxml),
+    this.assert.equal(this.cleanStree(xmls.serializeToString(sxml)),
                       xmls.serializeToString(xml));
   }
 
+  protected cleanStree(stree: string): string {
+    return stree;
+  }
+  
   /**
    * Adds stree tags to a semantic tree string, if necessary.
    *
@@ -227,6 +231,20 @@ export class SemanticTreeTest extends SemanticTest {
       sml += '</stree>';
     }
     return sml;
+  }
+
+}
+
+/**
+ * Semantic Tree Tests without certain attributes.
+ */
+export class SemanticTreeSelectTest extends SemanticTreeTest {
+
+  /**
+   * @override
+   */
+  protected cleanStree(stree: string): string {
+    return stree.replace(/ id=\"\d+\"/g, '');
   }
 
 }

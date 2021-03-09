@@ -179,6 +179,37 @@ export function transformTestsFile(file: string,
 
 /* ********************************************************** */
 /*
+ * Splitting input files from expected into base files.
+ */
+/* ********************************************************** */
+
+/**
+ * Splits an expected file into base file and expected, leaving only the
+ * expected values in the tests for original file.
+ *
+ * @param {string} expected The name of the expected file.
+ * @param {string} base The name of the new base file. Note that this will be
+ * overwritten! So apply only once!
+ */
+export function splitExpected(expected: string, base: string) {
+  let filename = tu.TestUtil.fileExists(expected, tu.TestPath.EXPECTED);
+  let json = tu.TestUtil.loadJson(filename);
+  let tests = json.tests;
+  json.tests = {};
+  let baseJson: tu.JsonTests = {tests: {}};
+  for (let [key, entry] of Object.entries(tests)) {
+    let expected = entry.expected;
+    delete entry.expected;
+    baseJson.tests[key] = entry;
+    json.tests[key] = {expected: expected};
+  }
+  json.base = base;
+  tu.TestUtil.saveJson(filename, json);
+  tu.TestUtil.saveJson(base, baseJson);
+}
+
+/* ********************************************************** */
+/*
  * Test generation for the PreTeXt project.
  *
  * Use case: We get a list of expressions from a PreTeXt book. The need to be

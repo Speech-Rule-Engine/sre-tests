@@ -53,6 +53,7 @@ const map = new Map<string, any>([
   ['semanticXml', st.SemanticXmlTest],
   ['speech', SpeechTest],
   ['stree', st.SemanticTreeTest],
+  ['streeSelect', st.SemanticTreeSelectTest],
   ['summary', SummaryTest],
   ['symbol', SymbolTest],
   ['walker', WalkerTest],

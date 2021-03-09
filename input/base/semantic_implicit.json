@@ -215,6 +215,24 @@
     },
     "Postfix_7": {
       "input": "<mrow><mi>a</mi><mo>&#x2062;</mo></mrow><mrow><mi>b</mi><mo>&#x2062;</mo></mrow><mi>c</mi>"
+    },
+    "MixFix_0": {
+      "input": "<mrow><mi>a</mi><mo>&#x2062;</mo></mrow><mrow><mo>&#x2062;</mo><mi>d</mi></mrow><mrow><mi>c</mi><mo>&#x2062;</mo><mi>e</mi></mrow>"
+    },
+    "MixFix_1": {
+      "input": "<mrow><mi>a</mi><mo>&#x2062;</mo></mrow><mrow><mo>&#x2062;</mo><mi>d</mi></mrow><mi>c</mi>"
+    },
+    "MixFix_2": {
+      "input": "<mrow><mi>a</mi><mo>&#x2062;</mo></mrow><mrow><mo>&#x2062;</mo><mi>d</mi></mrow><mo>&#x2062;</mo><mi>c</mi>"
+    },
+    "MixFix_3": {
+      "input": "<mi>a</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mrow><mrow><mo>&#x2062;</mo><mi>q</mi></mrow><mo>&#x2062;</mo><mi>d</mi></mrow><mo>&#x2062;</mo><mi>c</mi>"
+    },
+    "MixFix_4": {
+      "input": "<mi>a</mi><mo>&#x2062;</mo><mi>b</mi><mo>&#x2062;</mo><mrow><mi>c</mi><mo>&#x2062;</mo><mi>d</mi></mrow><mo>&#x2062;</mo><mi>e</mi>"
+    },
+    "MixFix_5": {
+      "input": "<mo>&#x2062;</mo><mi>a</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mo>&#x2062;</mo><mi>c</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mo>&#x2062;</mo><mrow><mi>b</mi><mi>q</mi><mi>b</mi></mrow><mo>&#x2062;</mo><mo>&#x2062;</mo><mi>q</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mi>b</mi><mo>&#x2062;</mo>"
     }
   }
 }

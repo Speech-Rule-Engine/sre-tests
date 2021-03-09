@@ -242,7 +242,7 @@ export namespace TestUtil {
   }
 
   /**
-   * Cleans a list of filenames by removing expecte path.
+   * Cleans a list of filenames by removing expected path.
    * @param {string[]} files The files.
    * @param {string = ''} dir The optional additional path.
    * @return {string[]} The cleaned up list.
