@@ -233,6 +233,21 @@
     },
     "MixFix_5": {
       "input": "<mo>&#x2062;</mo><mi>a</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mo>&#x2062;</mo><mi>c</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mo>&#x2062;</mo><mrow><mi>b</mi><mi>q</mi><mi>b</mi></mrow><mo>&#x2062;</mo><mo>&#x2062;</mo><mi>q</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mi>b</mi><mo>&#x2062;</mo>"
+    },
+    "OutsideNesting_0": {
+      "input": "<mo>&#x2062;</mo><mi>a</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mo>&#x2062;</mo><mi>c</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mo>&#x2062;</mo><mrow something=\"other\"><mi>b</mi><mi>q</mi><mi>b</mi></mrow>"
+    },
+    "OutsideNesting_1": {
+      "input": "<mo>&#x2062;</mo><mi>a</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mo>&#x2062;</mo><mi>c</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mo>&#x2062;</mo><mrow something=\"other\"><mi>b</mi><mi>q</mi><mi>b</mi></mrow><mrow something=\"other2\"><mi>b</mi><mi>q</mi><mi>b</mi></mrow>"
+    },
+    "OutsideNesting_2": {
+      "input": "<mo>&#x2062;</mo><mi>a</mi><mo>&#x2062;</mo><mrow something=\"other2\"><mi>b</mi><mi>q</mi></mrow>"
+    },
+    "OutsideNesting_3": {
+      "input": "<mi>a</mi><mo>&#x2062;</mo><mrow><mi>c</mi></mrow><mo>&#x2062;</mo><mrow><mi>b</mi><mi>q</mi><mi>b</mi></mrow>"
+    },
+    "OutsideNesting_4": {
+      "input": "<mi>a</mi><mo>&#x2062;</mo><mrow><mi>c</mi></mrow><mo>&#x2062;</mo><mrow><mi>q</mi><mi>b</mi></mrow>"
     }
   }
 }
