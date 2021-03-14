@@ -340,7 +340,59 @@ let gt = require('./js/generate/generate_tests.js');
 ...
 ```
 
-## Generating Tests and Expected Values
+## Generating Tests
+
+Simplest way is to generate tests from experimental data using input
+transformers.  The standard use case is: You have a set of expressions from
+experiments or investigating an issue. These should now be transformed into
+tests. Simply combine them into a single json file like where `foo` and `bar`
+represent names for the issue or type of experiment.
+
+```javascript
+{
+  "foo": [d0, d1, d2, ....],
+  "bar": [e0, e1, e2, ....],
+  ...
+}
+```
+
+These case can be loaded and transformed into a regular `JsonTests` structure
+using method:
+
+``` javascript
+gt.generateTestJson(INPUT, OUTPUT, option FIELD);
+```
+
+This transforms the `INPUT` file sets into `OUTPUT` fof the form
+
+```javascript
+{
+  "foo_0": {"field": d0},
+  "foo_1": {"field": d1},
+  "foo_2": {"field": d2},
+  ...
+  "bar_0": {"field": e0},
+  "bar_1": {"field": e1},
+  "bar_2": {"field": e2},
+  ...
+}
+```
+
+The optional `FIELD` parameter can be used to specify the target field in the
+single tests.  E.g. for a set of tex expressions you might want to choose `tex`
+as field so a transformer can be applied directly. `FIELD` defaults to `input`.
+
+To further transform the tests, apply one or more transformers to the file:
+
+``` javascript
+gt.transformJsonTests(INPUT, gt.getTransformers(['tex']));
+```
+
+Applies a TeX transformer to all `tex` fields in `INPUT` resulting in an `input`
+field with a mml expression, writing the output to the same file. Other useful
+transformers are found in `braille_transformer.ts`.
+
+## Filling Tests and Expected Values
 
 Tests can be generated or regenerated using the `fill_tests` module:
 
