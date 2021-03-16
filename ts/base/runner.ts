@@ -297,7 +297,7 @@ export class TestRunner {
       func.apply(null);
     } catch (e) {
       this.outputEnd(1, '[FAIL]', Color.RED);
-      this.outputLine(1, 'Actual: ' + (e.actual || ''));
+      this.outputLine(1, 'Received: ' + (e.actual || ''));
       this.outputLine(1, 'Expected: ' + (e.expected || ''));
       this.status_ = Results.FAIL;
       this.failedTests_.push(name);

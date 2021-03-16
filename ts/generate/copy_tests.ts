@@ -34,13 +34,15 @@ import {addMissing} from './fill_tests';
 export function copyTestLocale(source: string, locale: string,
   loc1: string, loc2: string) {
   let tests = factoryget(source);
-  let dst = [TestPath.EXPECTED, locale].concat(
-    source.split('/').slice(1)).join('/');
-  tests.jsonTests.tests = {};
+  let dst = path.join(
+    TestPath.EXPECTED, locale, ...source.split('/').slice(-2));
+  delete tests.jsonTests.tests;
   tests.jsonTests.locale = locale;
   replaceInTests(tests.jsonTests, 'name', loc1, loc2);
   replaceInTests(tests.jsonTests, 'active', loc1, loc2);
   replaceInTests(tests.jsonTests, 'information', loc1, loc2);
+  tests.jsonTests['compare'] = true;
+  tests.jsonTests.tests = {};
   TestUtil.saveJson(dst, tests.jsonTests);
   addMissing(dst);
 }
