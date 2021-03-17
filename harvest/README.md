@@ -93,3 +93,33 @@ fb.backup(TARGET);
 ```
 
 `TARGET` is the target directory for the backup.
+
+### Loading a User's transcriptions
+
+
+``` javascript
+let tests = fb.loadUser(USER, TARGET);
+```
+
+`USER` is the hash representing the user, which is the same as the subdirectory
+in the `TARGET` directory of the backup.
+
+``` javascript
+fb.changedTests(tests);
+```
+
+Prints all the tests a user has actively changed, i.e., not just viewed. This
+includes both edited tests and tests where particular feedback was provided.
+
+### Update existing files
+
+* Updates the actual test files from the changed tests. This will only use
+  changed, not feedback changes.
+
+``` javascript
+fb.updateEditedTests(tests);
+```
+
+* Update Symbol files from the changed tests.
+
+__Not yet implemented__

@@ -20,13 +20,13 @@
  */
 
 import admin = require('firebase-admin');
+import * as path from 'path';
 import {JsonTest, JsonTests, TestUtil} from '../base/test_util';
 import {AbstractJsonTest} from '../classes/abstract_test';
 import {get} from '../classes/test_factory';
+import {addToFile} from '../generate/fill_tests';
 import * as FC from './fire_constants';
 import * as FU from './fire_util';
-import * as path from 'path';
-import {addToFile} from '../generate/fill_tests';
 
 /**
  * Inits the firebase communication
@@ -205,6 +205,10 @@ export function filterFiles(tests: JsonTests,
   return result;
 }
 
+/**
+ * Find all tests that are changed (i.e., either changed or with some feedback).
+ * @param {JsonTests} tests The users tests.
+ */
 export function changedTests(tests: JsonTests) {
   return filterFiles(
     tests, (test: JsonTest) => test[FC.Interaction] === FC.Status.CHANGED ||
@@ -230,4 +234,46 @@ export function updateEditedTests(tests: JsonTests) {
     }
     addToFile(file, expected);
   }
+}
+
+
+/**
+ * Updates Symbol mappings in SRE from edited Tests. The given file should be of
+ * the form `default_characters_FILE.json` where `FILE.js` is a unicode mapping
+ * file in SRE.
+ *
+ * @param {JsonTests} tests The tests.
+ * @param {string} file The name of the test file.
+ */
+export function updateSymbolMappings(tests: JsonTests, file: string) {
+  let changes: JsonTest = editedTests(tests);
+  let selection: JsonTest = changes[file];
+  let result: JsonTest = {};
+  if (!selection) {
+    return result;
+  }
+  for (let [key, value] of Object.entries(selection)) {
+    if ([...key].length > 1) {
+      continue;
+    }
+    let unicode = key.codePointAt(0).toString(16);
+    let filler = (4 - unicode.length <= 0) ? unicode :
+      new Array(4 - unicode.length + 1).join('0') + unicode;
+    result[filler.toUpperCase()] = value.expected;
+  }
+  let env = path.join(process.env['SRE_JSON_PATH'], '../..', 'src/mathmaps');
+  let mathmaps = path.join(
+    env, path.dirname(file),
+    path.basename(file).replace(/^default_characters_/, '').replace(/on$/, ''));
+  let json = TestUtil.loadJson(mathmaps) as JsonTest[];
+  for (let entry of json) {
+    if (entry.mappings) {
+      let replace = result[entry.key];
+      if (replace !== undefined) {
+        entry.mappings.default.default = replace;
+      }
+    }
+  }
+  TestUtil.saveJson(mathmaps, json);
+  return json;
 }
