@@ -1,0 +1,388 @@
+{
+  "name": "HindiMathspeakIssues2",
+  "locale": "hi",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_issues2.json",
+  "information": "Hindi Mathspeak Issues 2.",
+  "domain": "mathspeak",
+  "active": "MathspeakIssuesHindi",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "MathspeakRoots_0": {
+      "expected": "StartRoot ए EndRoot"
+    },
+    "MathspeakRoots_1": {
+      "expected": "RootIndex 2 StartRoot ए EndRoot"
+    },
+    "MathspeakRoots_2": {
+      "expected": "RootIndex 3 StartRoot ए EndRoot"
+    },
+    "MathspeakRoots_3": {
+      "expected": "RootIndex 4 StartRoot ए EndRoot"
+    },
+    "MathspeakRoots_4": {
+      "expected": "NestedStartRoot StartRoot ए EndRoot NestedEndRoot"
+    },
+    "MathspeakRoots_5": {
+      "expected": "NestedTwiceStartRoot NestedStartRoot StartRoot ए EndRoot NestedEndRoot NestedTwiceEndRoot"
+    },
+    "MathspeakRoots_6": {
+      "expected": "NestedRootIndex 2 NestedStartRoot RootIndex 2 StartRoot ए EndRoot NestedEndRoot"
+    },
+    "MathspeakRoots_7": {
+      "expected": "NestedTwiceRootIndex 2 NestedTwiceStartRoot NestedRootIndex 2 NestedStartRoot RootIndex 2 StartRoot ए EndRoot NestedEndRoot NestedTwiceEndRoot"
+    },
+    "MathspeakRoots_8": {
+      "expected": "NestedRootIndex 3 NestedStartRoot RootIndex 3 StartRoot ए EndRoot NestedEndRoot"
+    },
+    "MathspeakRoots_9": {
+      "expected": "NestedTwiceRootIndex 3 NestedTwiceStartRoot NestedRootIndex 3 NestedStartRoot RootIndex 3 StartRoot ए EndRoot NestedEndRoot NestedTwiceEndRoot"
+    },
+    "MathspeakRoots_10": {
+      "expected": "NestedRootIndex 4 NestedStartRoot RootIndex 4 StartRoot ए EndRoot NestedEndRoot"
+    },
+    "MathspeakRoots_11": {
+      "expected": "NestedTwiceRootIndex 4 NestedTwiceStartRoot NestedRootIndex 4 NestedStartRoot RootIndex 4 StartRoot ए EndRoot NestedEndRoot NestedTwiceEndRoot"
+    },
+    "MathspeakRoots_12": {
+      "expected": "NestedTwiceRootIndex 2 NestedTwiceStartRoot NestedRootIndex 3 NestedStartRoot RootIndex 4 StartRoot ए EndRoot NestedEndRoot NestedTwiceEndRoot"
+    },
+    "MathspeakRoots_13": {
+      "expected": "NestedTwiceRootIndex 4 NestedTwiceStartRoot NestedRootIndex 3 NestedStartRoot RootIndex 2 StartRoot ए EndRoot NestedEndRoot NestedTwiceEndRoot"
+    },
+    "HtmlEntities_0": {
+      "expected": "कम-से-अधिक संकेत"
+    },
+    "HtmlEntities_1": {
+      "expected": "ग्रेटर-थान साइन"
+    },
+    "HtmlEntities_2": {
+      "expected": "एन"
+    },
+    "HtmlEntities_3": {
+      "expected": "एम"
+    },
+    "HtmlEntities_4": {
+      "expected": "एन एम"
+    },
+    "HtmlEntities_5": {
+      "expected": "एन एम"
+    },
+    "BinomialFromFrac_0": {
+      "expected": "द्विपद अथवा आव्यूह आरंभ एन चयन करें के द्विपद अथवा आव्यूह समाप्त"
+    },
+    "BinomialFromFrac_1": {
+      "expected": "द्विपद अथवा आव्यूह आरंभ एन चयन करें के द्विपद अथवा आव्यूह समाप्त"
+    },
+    "BinomialFromFrac_2": {
+      "expected": "द्विपद अथवा आव्यूह आरंभ एन चयन करें के द्विपद अथवा आव्यूह समाप्त"
+    },
+    "BinomialFromFrac_3": {
+      "expected": "वाम कोष्ठक :  कोष्ठक खोलना StartFraction एन Over के EndFraction सही कोष्ठक :  बंद कोष्ठक"
+    },
+    "BinomialFromFrac_4": {
+      "expected": "वाम कोष्ठक :  कोष्ठक खोलना StartFraction एन Over के EndFraction सही कोष्ठक :  बंद कोष्ठक"
+    },
+    "BinomialFromFrac_5": {
+      "expected": "वाम कोष्ठक :  कोष्ठक खोलना StartFraction एन Over के EndFraction सही कोष्ठक :  बंद कोष्ठक"
+    },
+    "UnnecessarySpaces_0": {
+      "expected": "5"
+    },
+    "UnnecessarySpaces_1": {
+      "expected": "5"
+    },
+    "AbsValueVsNeutral_0": {
+      "expected": "पूर्णविराम ऊर्ध्वाधर रेखा ए डबल वर्टिकल लाइन"
+    },
+    "AbsValueVsNeutral_1": {
+      "expected": "डबल वर्टिकल लाइन ए डबल वर्टिकल लाइन"
+    },
+    "AbsValueVsNeutral_2": {
+      "expected": "टूटी हुई पट्टी :  टूटी हुई ऊर्ध्वाधर पट्टी :  जुदा नियम (टाइपोग्राफी में) ए टूटी हुई पट्टी :  टूटी हुई ऊर्ध्वाधर पट्टी :  जुदा नियम (टाइपोग्राफी में)"
+    },
+    "NegativeVulgarFraction_0": {
+      "expected": "एक half minus पाँच अठारहths"
+    },
+    "NegativeVulgarFraction_1": {
+      "expected": "बाकी StartFraction 5.2 Over ए EndFraction"
+    },
+    "NegativeVulgarFraction_2": {
+      "expected": "बाकी StartFraction 5.2 Over 18 EndFraction"
+    },
+    "TrivialStuff_0": {
+      "expected": "ए बराबर का चिह्न बी"
+    },
+    "TrivialStuff_1": {
+      "expected": "उद्धरण चिन्ह"
+    },
+    "TrivialStuff_2": {
+      "expected": "उद्धरण चिन्ह एक्स उद्धरण चिन्ह"
+    },
+    "TrivialStuff_3": {
+      "expected": "apostrophe :  apostrophe-उद्धरण :  apl बोली"
+    },
+    "GermanFonts_0": {
+      "expected": "German कैपिटल ए"
+    },
+    "GermanFonts_1": {
+      "expected": "bold German कैपिटल ए"
+    },
+    "GermanFonts_2": {
+      "expected": "German कैपिटल ए"
+    },
+    "GermanFonts_3": {
+      "expected": "bold German कैपिटल ए"
+    },
+    "GermanFonts_4": {
+      "expected": "bold German abc"
+    },
+    "GermanFonts_5": {
+      "expected": "bold German ABC"
+    },
+    "GermanFonts_6": {
+      "expected": "bold German कैपिटल ए कैपिटल बी कैपिटल सी"
+    },
+    "OtherFonts_0": {
+      "expected": "एम"
+    },
+    "OtherFonts_1": {
+      "expected": "सामान्य एम"
+    },
+    "OtherFonts_2": {
+      "expected": "एम आय"
+    },
+    "OtherFonts_3": {
+      "expected": "इटैलिक एम आय"
+    },
+    "OtherFonts_4": {
+      "expected": "30"
+    },
+    "OtherFonts_5": {
+      "expected": "इटैलिक 3"
+    },
+    "OtherFonts_6": {
+      "expected": "30 डिग्री साइन"
+    },
+    "OtherFonts_7": {
+      "expected": "3 0 एम कैपिटल ए"
+    },
+    "Multiline_0": {
+      "expected": "खाका आरंभ 1st Row  ए 2nd Row  बी खाका समाप्त"
+    },
+    "Multiline_1": {
+      "expected": "खाका आरंभ 1st Row 1st Column ए 2nd Column सी 2nd Row 1st Column बी 2nd Column डी खाका समाप्त"
+    },
+    "RelationsWithEmpty_0": {
+      "expected": "से कम या बराबर 2"
+    },
+    "RelationsWithEmpty_1": {
+      "expected": "बराबर का चिह्न 2 बराबर का चिह्न"
+    },
+    "RelationsWithEmpty_2": {
+      "expected": "से कम या बराबर 2 बराबर का चिह्न"
+    },
+    "RelationsWithEmpty_3": {
+      "expected": "खाका आरंभ 1st Row 1st Column 1 2nd Column से कम या बराबर 2 खाका समाप्त"
+    },
+    "EncloseGeneral": {
+      "expected": "घेरे का आरंभ circle ए घेरा समाप्त"
+    },
+    "EncloseLeftbar": {
+      "expected": "ऊर्ध्वाधर दंड ए"
+    },
+    "EncloseRightbar": {
+      "expected": "ए ऊर्ध्वाधर दंड"
+    },
+    "LatinMathfonts_0": {
+      "expected": "German कैपिटल ए"
+    },
+    "LatinMathfonts_1": {
+      "expected": "bold German कैपिटल ए"
+    },
+    "LatinMathfonts_2": {
+      "expected": "बोल्ड स्क्रिप्ट कैपिटल ए"
+    },
+    "LatinMathfonts_3": {
+      "expected": "बोल्ड इटैलिक कैपिटल ए"
+    },
+    "LatinMathfonts_4": {
+      "expected": "बोल्ड कैपिटल ए"
+    },
+    "LatinMathfonts_5": {
+      "expected": "डबल-स्ट्रक कैपिटल ए"
+    },
+    "LatinMathfonts_6": {
+      "expected": "इटैलिक कैपिटल ए"
+    },
+    "LatinMathfonts_7": {
+      "expected": "मोनोपेस कैपिटल ए"
+    },
+    "LatinMathfonts_8": {
+      "expected": "सैंस-सेरिफ़ इटैलिक कैपिटल ए"
+    },
+    "LatinMathfonts_9": {
+      "expected": "संस-सेरिफ़ बोल्ड कैपिटल ए"
+    },
+    "LatinMathfonts_10": {
+      "expected": "संस-सेरिफ़ बोल्ड इटैलिक कैपिटल ए"
+    },
+    "LatinMathfonts_11": {
+      "expected": "संस-सेरिफ़ कैपिटल ए"
+    },
+    "LatinMathfonts_12": {
+      "expected": "लिपि कैपिटल ए"
+    },
+    "GreekMathfonts_0": {
+      "expected": "बोल्ड कैपिटल आल्फा"
+    },
+    "GreekMathfonts_1": {
+      "expected": "इटैलिक कैपिटल आल्फा"
+    },
+    "GreekMathfonts_2": {
+      "expected": "बोल्ड इटैलिक कैपिटल आल्फा"
+    },
+    "GreekMathfonts_3": {
+      "expected": "सैंस-सेरिफ़ इटैलिक कैपिटल आल्फा"
+    },
+    "GreekMathfonts_4": {
+      "expected": "संस-सेरिफ़ बोल्ड इटैलिक कैपिटल आल्फा"
+    },
+    "Issue279_0": {
+      "expected": ""
+    },
+    "Issue279_1": {
+      "expected": "खाका आरंभ 1st Row  लेबल के साथ वाम कोष्ठक :  कोष्ठक खोलना 3.1 .10 सही कोष्ठक :  बंद कोष्ठक लेबल समाप्त खाका समाप्त"
+    },
+    "Issue320_0": {
+      "expected": "आंशिक अवकलन"
+    },
+    "Issue320_1": {
+      "expected": "एक्स क्रमगुणित"
+    },
+    "Issue320_2": {
+      "expected": "बाकी ऋण एक्स"
+    },
+    "Issue320_3": {
+      "expected": "पलस हसताक्षर पलस हसताक्षर एक्स"
+    },
+    "Issue320_4": {
+      "expected": "साइन साइन एक्स"
+    },
+    "Issue320_5": {
+      "expected": "आंशिक अवकलन आंशिक अवकलन एक्स"
+    },
+    "Issue320_6": {
+      "expected": "वाम कोष्ठक :  कोष्ठक खोलना StartFraction आंशिक अवकलन वर्ग Over आंशिक अवकलन एक्स वर्ग EndFraction पलस हसताक्षर StartFraction आंशिक अवकलन वर्ग Over आंशिक अवकलन वाई वर्ग EndFraction सही कोष्ठक :  बंद कोष्ठक निरपेक्ष मान आरंभ फाई वाम कोष्ठक :  कोष्ठक खोलना एक्स पलस हसताक्षर सामान्य आय वाई सही कोष्ठक :  बंद कोष्ठक निरपेक्ष मान समाप्त वर्ग बराबर का चिह्न 0"
+    },
+    "Prime_0": {
+      "expected": "एक्स प्रधान :  मिनट, पैर"
+    },
+    "Prime_1": {
+      "expected": "एक्स डबल प्राइम :  सेकंड, इंच"
+    },
+    "Prime_2": {
+      "expected": "एक्स ट्रिपल प्राइम :  लाइनें (पुराना माप, 1/12 इंच का)"
+    },
+    "Prime_3": {
+      "expected": "एक्स चौगुना प्रधान"
+    },
+    "Prime_4": {
+      "expected": "एक्स प्रधान :  मिनट, पैर"
+    },
+    "Prime_5": {
+      "expected": "एक्स डबल प्राइम :  सेकंड, इंच"
+    },
+    "Prime_6": {
+      "expected": "एक्स संशोधक पत्र प्रधान"
+    },
+    "Prime_7": {
+      "expected": "एक्स संशोधक पत्र डबल प्राइम"
+    },
+    "Prime_8": {
+      "expected": "एक्स apostrophe :  apostrophe-उद्धरण :  apl बोली"
+    },
+    "Prime_9": {
+      "expected": "एक्स डबल प्राइम"
+    },
+    "Prime_10": {
+      "expected": "एक्स तिगुना प्राइम"
+    },
+    "Prime_11": {
+      "expected": "एक्स चौगुना प्राइम"
+    },
+    "Prime_12": {
+      "expected": "एक्स पाँच अभाज्य (as in prime number)"
+    },
+    "Prime_13": {
+      "expected": "एक्स छः अभाज्य (as in prime number)"
+    },
+    "Prime_14": {
+      "expected": "एक्स डबल प्राइम"
+    },
+    "Prime_15": {
+      "expected": "एक्स तिगुना प्राइम"
+    },
+    "Prime_16": {
+      "expected": "एक्स चौगुना प्राइम"
+    },
+    "Prime_17": {
+      "expected": "एक्स पाँच अभाज्य (as in prime number)"
+    },
+    "Prime_18": {
+      "expected": "एक्स छः अभाज्य (as in prime number)"
+    },
+    "LimBoth_0": {
+      "expected": "ऊपर संशोधित निचे संशोधित एन-आर्य योग :  योग चिह्न Underscript एन Overscript 2 लिपि समाप्त के साथ निम्न रेखा :  अंडरस्कोर की जगह के साथ टिल्ड"
+    },
+    "LimBoth_1": {
+      "expected": "ऊपर संशोधित निचे संशोधित एन-आर्य योग :  योग चिह्न Underscript एन Overscript 2 लिपि समाप्त के साथ निम्न रेखा :  अंडरस्कोर की जगह के साथ टिल्ड"
+    },
+    "LimBoth_2": {
+      "expected": "ऊपर संशोधित निचे संशोधित एन-आर्य योग :  योग चिह्न Underscript एन Overscript 2 लिपि समाप्त के साथ निम्न रेखा :  अंडरस्कोर की जगह के साथ टिल्ड"
+    },
+    "LimBoth_3": {
+      "expected": "एन-आर्य योग :  योग चिह्न Underscript एन Overscript 2 लिपि समाप्त"
+    },
+    "LimBoth_4": {
+      "expected": "एन-आर्य योग :  योग चिह्न Underscript एन Overscript 2 लिपि समाप्त ए"
+    },
+    "LimUpper_0": {
+      "expected": "एन-आर्य योग :  योग चिह्न Overscript एन लिपि समाप्त"
+    },
+    "LimUpper_1": {
+      "expected": "एन-आर्य योग :  योग चिह्न Overscript एन लिपि समाप्त ए"
+    },
+    "LimUpper_2": {
+      "expected": "एन-आर्य योग :  योग चिह्न Overscript एन लिपि समाप्त"
+    },
+    "LimUpper_3": {
+      "expected": "एन-आर्य योग :  योग चिह्न Overscript एन लिपि समाप्त ए"
+    },
+    "LimLower_0": {
+      "expected": "एन-आर्य योग :  योग चिह्न Underscript एन लिपि समाप्त"
+    },
+    "LimLower_1": {
+      "expected": "एन-आर्य योग :  योग चिह्न Underscript एन लिपि समाप्त ए"
+    },
+    "LimLower_2": {
+      "expected": "एन-आर्य योग :  योग चिह्न Underscript एन लिपि समाप्त"
+    },
+    "LimLower_3": {
+      "expected": "एन-आर्य योग :  योग चिह्न Underscript एन लिपि समाप्त ए"
+    },
+    "Issue_442_0": {
+      "expected": "9 divided by 3 बराबर नही है 9 गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद 3"
+    },
+    "Issue_442_1": {
+      "expected": "9 divided by 3"
+    },
+    "Issue_442_2": {
+      "expected": "9 divided by 3 बराबर नही है 9 गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद 3"
+    },
+    "Issue_442_3": {
+      "expected": "9 divided by 3"
+    }
+  }
+}

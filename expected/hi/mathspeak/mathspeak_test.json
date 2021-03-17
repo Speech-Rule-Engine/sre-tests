@@ -1,0 +1,1093 @@
+{
+  "name": "HindiMathspeak",
+  "locale": "hi",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_test.json",
+  "information": "Hindi Mathspeak tests.",
+  "domain": "mathspeak",
+  "active": "MathspeakHindi",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Sample_1_1_1_default": {
+      "expected": "पाइ लगभग बराबर :  करने के लिए स्पर्शोन्मुख 3.14159"
+    },
+    "Sample_1_1_1_brief": {
+      "expected": "पाइ लगभग बराबर :  करने के लिए स्पर्शोन्मुख 3.14159"
+    },
+    "Sample_1_1_1_sbrief": {
+      "expected": "पाइ लगभग बराबर :  करने के लिए स्पर्शोन्मुख 3.14159"
+    },
+    "Sample_1_1_2_default": {
+      "expected": "102 पलस हसताक्षर 2,214 पलस हसताक्षर 15 बराबर का चिह्न 2,331"
+    },
+    "Sample_1_1_2_brief": {
+      "expected": "102 पलस हसताक्षर 2,214 पलस हसताक्षर 15 बराबर का चिह्न 2,331"
+    },
+    "Sample_1_1_2_sbrief": {
+      "expected": "102 पलस हसताक्षर 2,214 पलस हसताक्षर 15 बराबर का चिह्न 2,331"
+    },
+    "Sample_1_1_3_default": {
+      "expected": "59 गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद 0 बराबर का चिह्न 0"
+    },
+    "Sample_1_1_3_brief": {
+      "expected": "59 गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद 0 बराबर का चिह्न 0"
+    },
+    "Sample_1_1_3_sbrief": {
+      "expected": "59 गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद 0 बराबर का चिह्न 0"
+    },
+    "Sample_1_2_1_default": {
+      "expected": "3 minus ऋण 2"
+    },
+    "Sample_1_2_1_brief": {
+      "expected": "3 minus ऋण 2"
+    },
+    "Sample_1_2_1_sbrief": {
+      "expected": "3 minus ऋण 2"
+    },
+    "Sample_1_2_2_default": {
+      "expected": "ऋण वाई"
+    },
+    "Sample_1_2_2_brief": {
+      "expected": "ऋण वाई"
+    },
+    "Sample_1_2_2_sbrief": {
+      "expected": "ऋण वाई"
+    },
+    "Sample_1_2_3_default": {
+      "expected": "ऋण 32"
+    },
+    "Sample_1_2_3_brief": {
+      "expected": "ऋण 32"
+    },
+    "Sample_1_2_3_sbrief": {
+      "expected": "ऋण 32"
+    },
+    "Sample_1_4_1_default": {
+      "expected": "संख्या t 2 e 4"
+    },
+    "Sample_1_4_1_brief": {
+      "expected": "संख्या t 2 e 4"
+    },
+    "Sample_1_4_1_sbrief": {
+      "expected": "संख्या t 2 e 4"
+    },
+    "Sample_1_4_2_default": {
+      "expected": "संख्या संख्या चिह्न :  पाउन्ड चिन्ह :  हैश :  crosshatch :  octothorpe F F 0 0 0 0"
+    },
+    "Sample_1_4_2_brief": {
+      "expected": "संख्या संख्या चिह्न :  पाउन्ड चिन्ह :  हैश :  crosshatch :  octothorpe F F 0 0 0 0"
+    },
+    "Sample_1_4_2_sbrief": {
+      "expected": "संख्या संख्या चिह्न :  पाउन्ड चिन्ह :  हैश :  crosshatch :  octothorpe F F 0 0 0 0"
+    },
+    "Sample_1_4_3_default": {
+      "expected": "संख्या 0 x 1 5 F F पलस हसताक्षर संख्या 0 x 2 B 0 1 बराबर का चिह्न संख्या 0 x 4 1 0 0"
+    },
+    "Sample_1_4_3_brief": {
+      "expected": "संख्या 0 x 1 5 F F पलस हसताक्षर संख्या 0 x 2 B 0 1 बराबर का चिह्न संख्या 0 x 4 1 0 0"
+    },
+    "Sample_1_4_3_sbrief": {
+      "expected": "संख्या 0 x 1 5 F F पलस हसताक्षर संख्या 0 x 2 B 0 1 बराबर का चिह्न संख्या 0 x 4 1 0 0"
+    },
+    "Sample_1_5_1_default": {
+      "expected": "कैपिटल आय अल्पविराम :  दशमलव विभाजक ऊपर का शब्द I I अल्पविराम :  दशमलव विभाजक ऊपर का शब्द I I I अल्पविराम :  दशमलव विभाजक ऊपर का शब्द I V अल्पविराम :  दशमलव विभाजक कैपिटल वी पूर्ण विराम :  अवधि, बिंदु, दशमलव बिंदु"
+    },
+    "Sample_1_5_1_brief": {
+      "expected": "कैपिटल आय अल्पविराम :  दशमलव विभाजक ऊपर का शब्द I I अल्पविराम :  दशमलव विभाजक ऊपर का शब्द I I I अल्पविराम :  दशमलव विभाजक ऊपर का शब्द I V अल्पविराम :  दशमलव विभाजक कैपिटल वी पूर्ण विराम :  अवधि, बिंदु, दशमलव बिंदु"
+    },
+    "Sample_1_5_1_sbrief": {
+      "expected": "कैपिटल आय अल्पविराम :  दशमलव विभाजक ऊपर का शब्द I I अल्पविराम :  दशमलव विभाजक ऊपर का शब्द I I I अल्पविराम :  दशमलव विभाजक ऊपर का शब्द I V अल्पविराम :  दशमलव विभाजक कैपिटल वी पूर्ण विराम :  अवधि, बिंदु, दशमलव बिंदु"
+    },
+    "Sample_2_1_1_default": {
+      "expected": "डी बराबर का चिह्न StartRoot वाम कोष्ठक :  कोष्ठक खोलना कैपिटल एक्स minus एक्स सही कोष्ठक :  बंद कोष्ठक वर्ग minus वाम कोष्ठक :  कोष्ठक खोलना कैपिटल वाई minus वाई सही कोष्ठक :  बंद कोष्ठक वर्ग EndRoot"
+    },
+    "Sample_2_1_1_brief": {
+      "expected": "डी बराबर का चिह्न StartRoot वाम कोष्ठक :  कोष्ठक खोलना कैपिटल एक्स minus एक्स सही कोष्ठक :  बंद कोष्ठक वर्ग minus वाम कोष्ठक :  कोष्ठक खोलना कैपिटल वाई minus वाई सही कोष्ठक :  बंद कोष्ठक वर्ग EndRoot"
+    },
+    "Sample_2_1_1_sbrief": {
+      "expected": "डी बराबर का चिह्न Root वाम कोष्ठक :  कोष्ठक खोलना कैपिटल एक्स minus एक्स सही कोष्ठक :  बंद कोष्ठक वर्ग minus वाम कोष्ठक :  कोष्ठक खोलना कैपिटल वाई minus वाई सही कोष्ठक :  बंद कोष्ठक वर्ग EndRoot"
+    },
+    "Sample_2_3_1_default": {
+      "expected": "If कैपिटल ए दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन कैपिटल बी and कैपिटल बी दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन कैपिटल सी then कैपिटल ए दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन कैपिटल सी पूर्ण विराम :  अवधि, बिंदु, दशमलव बिंदु"
+    },
+    "Sample_2_3_1_brief": {
+      "expected": "If कैपिटल ए दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन कैपिटल बी and कैपिटल बी दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन कैपिटल सी then कैपिटल ए दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन कैपिटल सी पूर्ण विराम :  अवधि, बिंदु, दशमलव बिंदु"
+    },
+    "Sample_2_3_1_sbrief": {
+      "expected": "If कैपिटल ए दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन कैपिटल बी and कैपिटल बी दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन कैपिटल सी then कैपिटल ए दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन कैपिटल सी पूर्ण विराम :  अवधि, बिंदु, दशमलव बिंदु"
+    },
+    "Sample_2_6_1_default": {
+      "expected": "बोल्ड बाएँ वर्ग ब्रैकेट :  चौकोर कोष्ठक खोलना एक्स बोल्ड राइट स्क्वायर ब्रैकेट :  समापन वर्ग ब्रैकेट"
+    },
+    "Sample_2_6_1_brief": {
+      "expected": "बोल्ड बाएँ वर्ग ब्रैकेट :  चौकोर कोष्ठक खोलना एक्स बोल्ड राइट स्क्वायर ब्रैकेट :  समापन वर्ग ब्रैकेट"
+    },
+    "Sample_2_6_1_sbrief": {
+      "expected": "बोल्ड बाएँ वर्ग ब्रैकेट :  चौकोर कोष्ठक खोलना एक्स बोल्ड राइट स्क्वायर ब्रैकेट :  समापन वर्ग ब्रैकेट"
+    },
+    "Sample_2_6_2_default": {
+      "expected": "कंटूर इंटीग्रल कैपिटल ई मध्य डॉट :  मध्यबिंदु :  मॉडल अल्पविराम :  ग्रीक मध्य डॉट, डॉट प्रतीक डी बोल्ड एल बराबर का चिह्न बाकी StartFraction डी कैपिटल फाई कैपिटल बी Over डी टी EndFraction"
+    },
+    "Sample_2_6_2_brief": {
+      "expected": "कंटूर इंटीग्रल कैपिटल ई मध्य डॉट :  मध्यबिंदु :  मॉडल अल्पविराम :  ग्रीक मध्य डॉट, डॉट प्रतीक डी बोल्ड एल बराबर का चिह्न बाकी StartFrac डी कैपिटल फाई कैपिटल बी Over डी टी EndFrac"
+    },
+    "Sample_2_6_2_sbrief": {
+      "expected": "कंटूर इंटीग्रल कैपिटल ई मध्य डॉट :  मध्यबिंदु :  मॉडल अल्पविराम :  ग्रीक मध्य डॉट, डॉट प्रतीक डी बोल्ड एल बराबर का चिह्न बाकी Frac डी कैपिटल फाई कैपिटल बी Over डी टी EndFrac"
+    },
+    "NegativeVsMinus_0": {
+      "expected": "बाकी StartFraction 1 Over बी EndFraction"
+    },
+    "NegativeVsMinus_1": {
+      "expected": "बाकी StartFraction ए Over बी EndFraction"
+    },
+    "NegativeVsMinus_2": {
+      "expected": "ऋण 3 और एक half"
+    },
+    "Sample_4_2_1_default": {
+      "expected": "Uppercase वाम कोष्ठक :  कोष्ठक खोलना समुच्चय आरंभ आल्फा अल्पविराम :  दशमलव विभाजक बीटा अल्पविराम :  दशमलव विभाजक गामा अल्पविराम :  दशमलव विभाजक डेल्टा अल्पविराम :  दशमलव विभाजक ल्यूनेट एप्सिलॉन  अल्पविराम :  दशमलव विभाजक फाई समुच्चय समाप्त सही कोष्ठक :  बंद कोष्ठक बराबर का चिह्न समुच्चय आरंभ कैपिटल आल्फा अल्पविराम :  दशमलव विभाजक कैपिटल बीटा अल्पविराम :  दशमलव विभाजक कैपिटल गामा अल्पविराम :  दशमलव विभाजक कैपिटल डेल्टा अल्पविराम :  दशमलव विभाजक कैपिटल एप्सिलॉन अल्पविराम :  दशमलव विभाजक कैपिटल फाई समुच्चय समाप्त"
+    },
+    "Sample_4_2_1_brief": {
+      "expected": "Uppercase वाम कोष्ठक :  कोष्ठक खोलना समुच्चय आरंभ आल्फा अल्पविराम :  दशमलव विभाजक बीटा अल्पविराम :  दशमलव विभाजक गामा अल्पविराम :  दशमलव विभाजक डेल्टा अल्पविराम :  दशमलव विभाजक ल्यूनेट एप्सिलॉन  अल्पविराम :  दशमलव विभाजक फाई समुच्चय समाप्त सही कोष्ठक :  बंद कोष्ठक बराबर का चिह्न समुच्चय आरंभ कैपिटल आल्फा अल्पविराम :  दशमलव विभाजक कैपिटल बीटा अल्पविराम :  दशमलव विभाजक कैपिटल गामा अल्पविराम :  दशमलव विभाजक कैपिटल डेल्टा अल्पविराम :  दशमलव विभाजक कैपिटल एप्सिलॉन अल्पविराम :  दशमलव विभाजक कैपिटल फाई समुच्चय समाप्त"
+    },
+    "Sample_4_2_1_sbrief": {
+      "expected": "Uppercase वाम कोष्ठक :  कोष्ठक खोलना समुच्चय आल्फा अल्पविराम :  दशमलव विभाजक बीटा अल्पविराम :  दशमलव विभाजक गामा अल्पविराम :  दशमलव विभाजक डेल्टा अल्पविराम :  दशमलव विभाजक ल्यूनेट एप्सिलॉन  अल्पविराम :  दशमलव विभाजक फाई समुच्चय समाप्त सही कोष्ठक :  बंद कोष्ठक बराबर का चिह्न समुच्चय कैपिटल आल्फा अल्पविराम :  दशमलव विभाजक कैपिटल बीटा अल्पविराम :  दशमलव विभाजक कैपिटल गामा अल्पविराम :  दशमलव विभाजक कैपिटल डेल्टा अल्पविराम :  दशमलव विभाजक कैपिटल एप्सिलॉन अल्पविराम :  दशमलव विभाजक कैपिटल फाई समुच्चय समाप्त"
+    },
+    "Sample_5_1_1_default": {
+      "expected": "वाई minus 1"
+    },
+    "Sample_5_1_1_brief": {
+      "expected": "वाई minus 1"
+    },
+    "Sample_5_1_1_sbrief": {
+      "expected": "वाई minus 1"
+    },
+    "Sample_5_1_2_default": {
+      "expected": "वाम कोष्ठक :  कोष्ठक खोलना 1 हाइफ़न-माइनस :  हाइफ़न या माइनस साइन to हाइफ़न-माइनस :  हाइफ़न या माइनस साइन 1 सही कोष्ठक :  बंद कोष्ठक"
+    },
+    "Sample_5_1_2_brief": {
+      "expected": "वाम कोष्ठक :  कोष्ठक खोलना 1 हाइफ़न-माइनस :  हाइफ़न या माइनस साइन to हाइफ़न-माइनस :  हाइफ़न या माइनस साइन 1 सही कोष्ठक :  बंद कोष्ठक"
+    },
+    "Sample_5_1_2_sbrief": {
+      "expected": "वाम कोष्ठक :  कोष्ठक खोलना 1 हाइफ़न-माइनस :  हाइफ़न या माइनस साइन to हाइफ़न-माइनस :  हाइफ़न या माइनस साइन 1 सही कोष्ठक :  बंद कोष्ठक"
+    },
+    "Sample_5_1_3_default": {
+      "expected": "ऋण 1"
+    },
+    "Sample_5_1_3_brief": {
+      "expected": "ऋण 1"
+    },
+    "Sample_5_1_3_sbrief": {
+      "expected": "ऋण 1"
+    },
+    "Sample_6_1_1_default": {
+      "expected": "The Fibonacci numbers are कोलोन समुच्चय आरंभ 0 अल्पविराम :  दशमलव विभाजक 1 अल्पविराम :  दशमलव विभाजक 1 अल्पविराम :  दशमलव विभाजक 2 अल्पविराम :  दशमलव विभाजक 3 अल्पविराम :  दशमलव विभाजक 5 अल्पविराम :  दशमलव विभाजक 8 अल्पविराम :  दशमलव विभाजक क्षैतिज एलिप्सिस :  तीन डॉट नेता समुच्चय समाप्त"
+    },
+    "Sample_6_1_1_brief": {
+      "expected": "The Fibonacci numbers are कोलोन समुच्चय आरंभ 0 अल्पविराम :  दशमलव विभाजक 1 अल्पविराम :  दशमलव विभाजक 1 अल्पविराम :  दशमलव विभाजक 2 अल्पविराम :  दशमलव विभाजक 3 अल्पविराम :  दशमलव विभाजक 5 अल्पविराम :  दशमलव विभाजक 8 अल्पविराम :  दशमलव विभाजक क्षैतिज एलिप्सिस :  तीन डॉट नेता समुच्चय समाप्त"
+    },
+    "Sample_6_1_1_sbrief": {
+      "expected": "The Fibonacci numbers are कोलोन समुच्चय 0 अल्पविराम :  दशमलव विभाजक 1 अल्पविराम :  दशमलव विभाजक 1 अल्पविराम :  दशमलव विभाजक 2 अल्पविराम :  दशमलव विभाजक 3 अल्पविराम :  दशमलव विभाजक 5 अल्पविराम :  दशमलव विभाजक 8 अल्पविराम :  दशमलव विभाजक क्षैतिज एलिप्सिस :  तीन डॉट नेता समुच्चय समाप्त"
+    },
+    "Sample_6_2_1_default": {
+      "expected": "निरपेक्ष मान आरंभ 4 minus 7 निरपेक्ष मान समाप्त बराबर का चिह्न 3"
+    },
+    "Sample_6_2_1_brief": {
+      "expected": "निरपेक्ष मान आरंभ 4 minus 7 निरपेक्ष मान समाप्त बराबर का चिह्न 3"
+    },
+    "Sample_6_2_1_sbrief": {
+      "expected": "निरपेक्ष मान 4 minus 7 निरपेक्ष मान समाप्त बराबर का चिह्न 3"
+    },
+    "Sample_6_2_2_default": {
+      "expected": "निरपेक्ष मान आरंभ ए प्लस माइनस सिंबल निरपेक्ष मान आरंभ बी minus सी निरपेक्ष मान समाप्त निरपेक्ष मान समाप्त बराबर नही है निरपेक्ष मान आरंभ ए निरपेक्ष मान समाप्त प्लस माइनस सिंबल निरपेक्ष मान आरंभ बी minus सी निरपेक्ष मान समाप्त"
+    },
+    "Sample_6_2_2_brief": {
+      "expected": "निरपेक्ष मान आरंभ ए प्लस माइनस सिंबल निरपेक्ष मान आरंभ बी minus सी निरपेक्ष मान समाप्त निरपेक्ष मान समाप्त बराबर नही है निरपेक्ष मान आरंभ ए निरपेक्ष मान समाप्त प्लस माइनस सिंबल निरपेक्ष मान आरंभ बी minus सी निरपेक्ष मान समाप्त"
+    },
+    "Sample_6_2_2_sbrief": {
+      "expected": "निरपेक्ष मान ए प्लस माइनस सिंबल निरपेक्ष मान बी minus सी निरपेक्ष मान समाप्त निरपेक्ष मान समाप्त बराबर नही है निरपेक्ष मान ए निरपेक्ष मान समाप्त प्लस माइनस सिंबल निरपेक्ष मान बी minus सी निरपेक्ष मान समाप्त"
+    },
+    "Sample_7_1_1_default": {
+      "expected": "StartFraction 1 Over एक्स EndFraction"
+    },
+    "Sample_7_1_1_brief": {
+      "expected": "StartFrac 1 Over एक्स EndFrac"
+    },
+    "Sample_7_1_1_sbrief": {
+      "expected": "Frac 1 Over एक्स EndFrac"
+    },
+    "Sample_7_1_2_default": {
+      "expected": "ए minus StartFraction बी पलस हसताक्षर सी Over डी minus ई EndFraction गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद एफ"
+    },
+    "Sample_7_1_2_brief": {
+      "expected": "ए minus StartFrac बी पलस हसताक्षर सी Over डी minus ई EndFrac गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद एफ"
+    },
+    "Sample_7_1_2_sbrief": {
+      "expected": "ए minus Frac बी पलस हसताक्षर सी Over डी minus ई EndFrac गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद एफ"
+    },
+    "Sample_7_2_1_default": {
+      "expected": "StartStartFraction StartFraction एक्स Over वाई EndFraction OverOver जेड EndEndFraction बराबर नही है StartStartFraction एक्स OverOver StartFraction वाई Over जेड EndFraction EndEndFraction"
+    },
+    "Sample_7_2_1_brief": {
+      "expected": "StartStartFrac StartFrac एक्स Over वाई EndFrac OverOver जेड EndEndFrac बराबर नही है StartStartFrac एक्स OverOver StartFrac वाई Over जेड EndFrac EndEndFrac"
+    },
+    "Sample_7_2_1_sbrief": {
+      "expected": "NestFrac Frac एक्स Over वाई EndFrac NestOver जेड NestEndFrac बराबर नही है NestFrac एक्स NestOver Frac वाई Over जेड EndFrac NestEndFrac"
+    },
+    "Sample_7_3_1_default": {
+      "expected": "StartStartStartFraction StartStartFraction वाम कोष्ठक :  कोष्ठक खोलना 1 minus एक्स सही कोष्ठक :  बंद कोष्ठक StartFraction डी Over डी एक्स EndFraction वाम कोष्ठक :  कोष्ठक खोलना 2 एक्स सही कोष्ठक :  बंद कोष्ठक minus 2 एक्स StartFraction डी Over डी एक्स EndFraction वाम कोष्ठक :  कोष्ठक खोलना 1 minus एक्स सही कोष्ठक :  बंद कोष्ठक OverOver वाम कोष्ठक :  कोष्ठक खोलना 1 minus एक्स सही कोष्ठक :  बंद कोष्ठक वर्ग EndEndFraction OverOverOver 1 पलस हसताक्षर वाम कोष्ठक :  कोष्ठक खोलना StartFraction 2 एक्स Over 1 minus एक्स EndFraction सही कोष्ठक :  बंद कोष्ठक वर्ग EndEndEndFraction"
+    },
+    "Sample_7_3_1_brief": {
+      "expected": "StartStartStartFrac StartStartFrac वाम कोष्ठक :  कोष्ठक खोलना 1 minus एक्स सही कोष्ठक :  बंद कोष्ठक StartFrac डी Over डी एक्स EndFrac वाम कोष्ठक :  कोष्ठक खोलना 2 एक्स सही कोष्ठक :  बंद कोष्ठक minus 2 एक्स StartFrac डी Over डी एक्स EndFrac वाम कोष्ठक :  कोष्ठक खोलना 1 minus एक्स सही कोष्ठक :  बंद कोष्ठक OverOver वाम कोष्ठक :  कोष्ठक खोलना 1 minus एक्स सही कोष्ठक :  बंद कोष्ठक वर्ग EndEndFrac OverOverOver 1 पलस हसताक्षर वाम कोष्ठक :  कोष्ठक खोलना StartFrac 2 एक्स Over 1 minus एक्स EndFrac सही कोष्ठक :  बंद कोष्ठक वर्ग EndEndEndFrac"
+    },
+    "Sample_7_3_1_sbrief": {
+      "expected": "NestTwiceFrac NestFrac वाम कोष्ठक :  कोष्ठक खोलना 1 minus एक्स सही कोष्ठक :  बंद कोष्ठक Frac डी Over डी एक्स EndFrac वाम कोष्ठक :  कोष्ठक खोलना 2 एक्स सही कोष्ठक :  बंद कोष्ठक minus 2 एक्स Frac डी Over डी एक्स EndFrac वाम कोष्ठक :  कोष्ठक खोलना 1 minus एक्स सही कोष्ठक :  बंद कोष्ठक NestOver वाम कोष्ठक :  कोष्ठक खोलना 1 minus एक्स सही कोष्ठक :  बंद कोष्ठक वर्ग NestEndFrac NestTwiceOver 1 पलस हसताक्षर वाम कोष्ठक :  कोष्ठक खोलना Frac 2 एक्स Over 1 minus एक्स EndFrac सही कोष्ठक :  बंद कोष्ठक वर्ग NestTwiceEndFrac"
+    },
+    "Sample_7_3_2_default": {
+      "expected": "ए 0 पलस हसताक्षर StartStartStartStartFraction 1 OverOverOverOver ए 1 पलस हसताक्षर StartStartStartFraction 1 OverOverOver ए 2 पलस हसताक्षर StartStartFraction 1 OverOver क्षैतिज एलिप्सिस :  तीन डॉट नेता पलस हसताक्षर StartFraction 1 Over ए Subscript एन Baseline EndFraction EndEndFraction EndEndEndFraction EndEndEndEndFraction"
+    },
+    "Sample_7_3_2_brief": {
+      "expected": "ए 0 पलस हसताक्षर StartStartStartStartFrac 1 OverOverOverOver ए 1 पलस हसताक्षर StartStartStartFrac 1 OverOverOver ए 2 पलस हसताक्षर StartStartFrac 1 OverOver क्षैतिज एलिप्सिस :  तीन डॉट नेता पलस हसताक्षर StartFrac 1 Over ए Sub एन Base EndFrac EndEndFrac EndEndEndFrac EndEndEndEndFrac"
+    },
+    "Sample_7_3_2_sbrief": {
+      "expected": "ए 0 पलस हसताक्षर Nest3Frac 1 Nest3Over ए 1 पलस हसताक्षर NestTwiceFrac 1 NestTwiceOver ए 2 पलस हसताक्षर NestFrac 1 NestOver क्षैतिज एलिप्सिस :  तीन डॉट नेता पलस हसताक्षर Frac 1 Over ए Sub एन Base EndFrac NestEndFrac NestTwiceEndFrac Nest3EndFrac"
+    },
+    "Sample_7_4_1_default": {
+      "expected": "एक half पलस हसताक्षर दो halves पलस हसताक्षर तीन halves पलस हसताक्षर चार halves पलस हसताक्षर क्षैतिज एलिप्सिस :  तीन डॉट नेता बराबर का चिह्न एन-आर्य योग :  योग चिह्न Underscript एन बराबर का चिह्न 1 Overscript अनन्तता लिपि समाप्त StartFraction एन Over 2 EndFraction"
+    },
+    "Sample_7_4_1_brief": {
+      "expected": "एक half पलस हसताक्षर दो halves पलस हसताक्षर तीन halves पलस हसताक्षर चार halves पलस हसताक्षर क्षैतिज एलिप्सिस :  तीन डॉट नेता बराबर का चिह्न एन-आर्य योग :  योग चिह्न Underscript एन बराबर का चिह्न 1 Overscript अनन्तता लिपि समाप्त StartFrac एन Over 2 EndFrac"
+    },
+    "Sample_7_4_1_sbrief": {
+      "expected": "एक half पलस हसताक्षर दो halves पलस हसताक्षर तीन halves पलस हसताक्षर चार halves पलस हसताक्षर क्षैतिज एलिप्सिस :  तीन डॉट नेता बराबर का चिह्न एन-आर्य योग :  योग चिह्न Underscript एन बराबर का चिह्न 1 Overscript अनन्तता लिपि समाप्त Frac एन Over 2 EndFrac"
+    },
+    "Sample_7_4_2_default": {
+      "expected": "StartFraction 20 Over 5 EndFraction गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद StartFraction 1 Over 100 EndFraction बराबर का चिह्न एक पच्चीसth"
+    },
+    "Sample_7_4_2_brief": {
+      "expected": "StartFrac 20 Over 5 EndFrac गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद StartFrac 1 Over 100 EndFrac बराबर का चिह्न एक पच्चीसth"
+    },
+    "Sample_7_4_2_sbrief": {
+      "expected": "Frac 20 Over 5 EndFrac गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद Frac 1 Over 100 EndFrac बराबर का चिह्न एक पच्चीसth"
+    },
+    "Sample_7_4_3_default": {
+      "expected": "StartFraction तीन पाँचths Over 8 EndFraction बराबर का चिह्न तीन पाँचths गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद एक आठth"
+    },
+    "Sample_7_4_3_brief": {
+      "expected": "StartFrac तीन पाँचths Over 8 EndFrac बराबर का चिह्न तीन पाँचths गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद एक आठth"
+    },
+    "Sample_7_4_3_sbrief": {
+      "expected": "Frac तीन पाँचths Over 8 EndFrac बराबर का चिह्न तीन पाँचths गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद एक आठth"
+    },
+    "Sample_7_5_1_default": {
+      "expected": "3 और पाँच आठths बराबर का चिह्न StartFraction 29 Over 8 EndFraction"
+    },
+    "Sample_7_5_1_brief": {
+      "expected": "3 और पाँच आठths बराबर का चिह्न StartFrac 29 Over 8 EndFrac"
+    },
+    "Sample_7_5_1_sbrief": {
+      "expected": "3 और पाँच आठths बराबर का चिह्न Frac 29 Over 8 EndFrac"
+    },
+    "Sample_7_6_1_default": {
+      "expected": "ए 0 पलस हसताक्षर भिन्न चालू बी 1 ऊपर ए 1 पलस हसताक्षर आरंभ भिन्न बी 2 ऊपर ए 2 पलस हसताक्षर आरंभ भिन्न बी 3 ऊपर ए 3 पलस हसताक्षर क्षैतिज एलिप्सिस :  तीन डॉट नेता बराबर का चिह्न ए 0 पलस हसताक्षर StartFraction बी 1 Over ए 1 EndFraction पलस हसताक्षर StartFraction बी 2 Over ए 2 EndFraction पलस हसताक्षर क्षैतिज एलिप्सिस :  तीन डॉट नेता"
+    },
+    "Sample_7_6_1_brief": {
+      "expected": "ए 0 पलस हसताक्षर भिन्न चालू बी 1 ऊपर ए 1 पलस हसताक्षर आरंभ भिन्न बी 2 ऊपर ए 2 पलस हसताक्षर आरंभ भिन्न बी 3 ऊपर ए 3 पलस हसताक्षर क्षैतिज एलिप्सिस :  तीन डॉट नेता बराबर का चिह्न ए 0 पलस हसताक्षर StartFrac बी 1 Over ए 1 EndFrac पलस हसताक्षर StartFrac बी 2 Over ए 2 EndFrac पलस हसताक्षर क्षैतिज एलिप्सिस :  तीन डॉट नेता"
+    },
+    "Sample_7_6_1_sbrief": {
+      "expected": "ए 0 पलस हसताक्षर भिन्न चालू बी 1 ऊपर ए 1 पलस हसताक्षर भिन्न बी 2 ऊपर ए 2 पलस हसताक्षर भिन्न बी 3 ऊपर ए 3 पलस हसताक्षर क्षैतिज एलिप्सिस :  तीन डॉट नेता बराबर का चिह्न ए 0 पलस हसताक्षर Frac बी 1 Over ए 1 EndFrac पलस हसताक्षर Frac बी 2 Over ए 2 EndFrac पलस हसताक्षर क्षैतिज एलिप्सिस :  तीन डॉट नेता"
+    },
+    "Sample_8_1_1_default": {
+      "expected": "एक्स घन पलस हसताक्षर 6 एक्स वर्ग minus एक्स बराबर का चिह्न 30"
+    },
+    "Sample_8_1_1_brief": {
+      "expected": "एक्स घन पलस हसताक्षर 6 एक्स वर्ग minus एक्स बराबर का चिह्न 30"
+    },
+    "Sample_8_1_1_sbrief": {
+      "expected": "एक्स घन पलस हसताक्षर 6 एक्स वर्ग minus एक्स बराबर का चिह्न 30"
+    },
+    "Sample_8_1_2_default": {
+      "expected": "StartFraction डी वर्ग वाई Over डी एक्स वर्ग EndFraction पलस हसताक्षर वाम कोष्ठक :  कोष्ठक खोलना ए एक्स वर्ग पलस हसताक्षर बी एक्स पलस हसताक्षर सी सही कोष्ठक :  बंद कोष्ठक वाई बराबर का चिह्न 0"
+    },
+    "Sample_8_1_2_brief": {
+      "expected": "StartFrac डी वर्ग वाई Over डी एक्स वर्ग EndFrac पलस हसताक्षर वाम कोष्ठक :  कोष्ठक खोलना ए एक्स वर्ग पलस हसताक्षर बी एक्स पलस हसताक्षर सी सही कोष्ठक :  बंद कोष्ठक वाई बराबर का चिह्न 0"
+    },
+    "Sample_8_1_2_sbrief": {
+      "expected": "Frac डी वर्ग वाई Over डी एक्स वर्ग EndFrac पलस हसताक्षर वाम कोष्ठक :  कोष्ठक खोलना ए एक्स वर्ग पलस हसताक्षर बी एक्स पलस हसताक्षर सी सही कोष्ठक :  बंद कोष्ठक वाई बराबर का चिह्न 0"
+    },
+    "Sample_8_2_1_default": {
+      "expected": "एक्स Superscript एक half"
+    },
+    "Sample_8_2_1_brief": {
+      "expected": "एक्स Sup एक half"
+    },
+    "Sample_8_2_1_sbrief": {
+      "expected": "एक्स Sup एक half"
+    },
+    "Sample_8_2_2_default": {
+      "expected": "एक्स Subscript एन"
+    },
+    "Sample_8_2_2_brief": {
+      "expected": "एक्स Sub एन"
+    },
+    "Sample_8_2_2_sbrief": {
+      "expected": "एक्स Sub एन"
+    },
+    "Sample_8_2_3_default": {
+      "expected": "एक्स Superscript ए"
+    },
+    "Sample_8_2_3_brief": {
+      "expected": "एक्स Sup ए"
+    },
+    "Sample_8_2_3_sbrief": {
+      "expected": "एक्स Sup ए"
+    },
+    "Sample_8_3_1_default": {
+      "expected": "एक्स Superscript एम पलस हसताक्षर एन"
+    },
+    "Sample_8_3_1_brief": {
+      "expected": "एक्स Sup एम पलस हसताक्षर एन"
+    },
+    "Sample_8_3_1_sbrief": {
+      "expected": "एक्स Sup एम पलस हसताक्षर एन"
+    },
+    "Sample_8_3_2_default": {
+      "expected": "कैपिटल टी Subscript एन minus 1 Baseline पलस हसताक्षर 5 बराबर का चिह्न 0"
+    },
+    "Sample_8_3_2_brief": {
+      "expected": "कैपिटल टी Sub एन minus 1 Base पलस हसताक्षर 5 बराबर का चिह्न 0"
+    },
+    "Sample_8_3_2_sbrief": {
+      "expected": "कैपिटल टी Sub एन minus 1 Base पलस हसताक्षर 5 बराबर का चिह्न 0"
+    },
+    "Sample_8_3_3_default": {
+      "expected": "एक्स Superscript एम पलस हसताक्षर एन Baseline बराबर का चिह्न एक्स Superscript एम Baseline एक्स Superscript एन"
+    },
+    "Sample_8_3_3_brief": {
+      "expected": "एक्स Sup एम पलस हसताक्षर एन Base बराबर का चिह्न एक्स Sup एम Base एक्स Sup एन"
+    },
+    "Sample_8_3_3_sbrief": {
+      "expected": "एक्स Sup एम पलस हसताक्षर एन Base बराबर का चिह्न एक्स Sup एम Base एक्स Sup एन"
+    },
+    "Sample_8_4_1_default": {
+      "expected": "एक्स Superscript ए Super Subscript एन Superscript पलस हसताक्षर ए Super Subscript एन minus 1"
+    },
+    "Sample_8_4_1_brief": {
+      "expected": "एक्स Sup ए Sup Sub एन Sup पलस हसताक्षर ए Sup Sub एन minus 1"
+    },
+    "Sample_8_4_1_sbrief": {
+      "expected": "एक्स Sup ए Sup Sub एन Sup पलस हसताक्षर ए Sup Sub एन minus 1"
+    },
+    "Sample_8_4_2_default": {
+      "expected": "एक्स Superscript ए Super Subscript बी"
+    },
+    "Sample_8_4_2_brief": {
+      "expected": "एक्स Sup ए Sup Sub बी"
+    },
+    "Sample_8_4_2_sbrief": {
+      "expected": "एक्स Sup ए Sup Sub बी"
+    },
+    "Sample_8_4_3_default": {
+      "expected": "एक्स Subscript ए Sub Superscript बी"
+    },
+    "Sample_8_4_3_brief": {
+      "expected": "एक्स Sub ए Sub Sup बी"
+    },
+    "Sample_8_4_3_sbrief": {
+      "expected": "एक्स Sub ए Sub Sup बी"
+    },
+    "Sample_8_4_4_default": {
+      "expected": "वाई Superscript ए Super Superscript बी Super Super Subscript सी Baseline बराबर नही है वाई Superscript ए Super Superscript बी Superscript सी"
+    },
+    "Sample_8_4_4_brief": {
+      "expected": "वाई Sup ए Sup Sup बी Sup Sup Sub सी Base बराबर नही है वाई Sup ए Sup Sup बी Sup सी"
+    },
+    "Sample_8_4_4_sbrief": {
+      "expected": "वाई Sup ए Sup Sup बी Sup Sup Sub सी Base बराबर नही है वाई Sup ए Sup Sup बी Sup सी"
+    },
+    "Sample_8_4_5_default": {
+      "expected": "वाई Superscript ए Super Super Subscript सी Super Superscript बी"
+    },
+    "Sample_8_4_5_brief": {
+      "expected": "वाई Sup ए Sup Sup Sub सी Sup Sup बी"
+    },
+    "Sample_8_4_5_sbrief": {
+      "expected": "वाई Sup ए Sup Sup Sub सी Sup Sup बी"
+    },
+    "Sample_8_4_5Short_default": {
+      "expected": "वाई Superscript ए Super Super Subscript सी"
+    },
+    "Sample_8_4_5Short_brief": {
+      "expected": "वाई Sup ए Sup Sup Sub सी"
+    },
+    "Sample_8_4_5Short_sbrief": {
+      "expected": "वाई Sup ए Sup Sup Sub सी"
+    },
+    "Sample_8_4_5Inv_default": {
+      "expected": "वाई Subscript ए Sub Sub Superscript सी"
+    },
+    "Sample_8_4_5Inv_brief": {
+      "expected": "वाई Sub ए Sub Sub Sup सी"
+    },
+    "Sample_8_4_5Inv_sbrief": {
+      "expected": "वाई Sub ए Sub Sub Sup सी"
+    },
+    "Sample_8_4_5InvShort_default": {
+      "expected": "वाई Subscript ए Sub Sub Superscript सी Sub Subscript बी"
+    },
+    "Sample_8_4_5InvShort_brief": {
+      "expected": "वाई Sub ए Sub Sub Sup सी Sub Sub बी"
+    },
+    "Sample_8_4_5InvShort_sbrief": {
+      "expected": "वाई Sub ए Sub Sub Sup सी Sub Sub बी"
+    },
+    "Sample_8_4_6_default": {
+      "expected": "एक्स Superscript ए Super Superscript बी"
+    },
+    "Sample_8_4_6_brief": {
+      "expected": "एक्स Sup ए Sup Sup बी"
+    },
+    "Sample_8_4_6_sbrief": {
+      "expected": "एक्स Sup ए Sup Sup बी"
+    },
+    "Sample_8_4_7_default": {
+      "expected": "एक्स Subscript ए Sub Subscript बी"
+    },
+    "Sample_8_4_7_brief": {
+      "expected": "एक्स Sub ए Sub Sub बी"
+    },
+    "Sample_8_4_7_sbrief": {
+      "expected": "एक्स Sub ए Sub Sub बी"
+    },
+    "Sample_8_4_8_default": {
+      "expected": "कैपिटल टी Superscript वाम कोष्ठक :  कोष्ठक खोलना एक्स Super Superscript ए Superscript पलस हसताक्षर वाई Super Superscript बी Superscript सही कोष्ठक :  बंद कोष्ठक"
+    },
+    "Sample_8_4_8_brief": {
+      "expected": "कैपिटल टी Sup वाम कोष्ठक :  कोष्ठक खोलना एक्स Sup Sup ए Sup पलस हसताक्षर वाई Sup Sup बी Sup सही कोष्ठक :  बंद कोष्ठक"
+    },
+    "Sample_8_4_8_sbrief": {
+      "expected": "कैपिटल टी Sup वाम कोष्ठक :  कोष्ठक खोलना एक्स Sup Sup ए Sup पलस हसताक्षर वाई Sup Sup बी Sup सही कोष्ठक :  बंद कोष्ठक"
+    },
+    "Sample_8_5_1_default": {
+      "expected": "एक्स 1"
+    },
+    "Sample_8_5_1_brief": {
+      "expected": "एक्स 1"
+    },
+    "Sample_8_5_1_sbrief": {
+      "expected": "एक्स 1"
+    },
+    "Sample_8_5_2_default": {
+      "expected": "एक्स Subscript ऋण 1"
+    },
+    "Sample_8_5_2_brief": {
+      "expected": "एक्स Sub ऋण 1"
+    },
+    "Sample_8_5_2_sbrief": {
+      "expected": "एक्स Sub ऋण 1"
+    },
+    "Sample_8_5_3_default": {
+      "expected": "एक्स 10,000"
+    },
+    "Sample_8_5_3_brief": {
+      "expected": "एक्स 10,000"
+    },
+    "Sample_8_5_3_sbrief": {
+      "expected": "एक्स 10,000"
+    },
+    "Sample_8_5_4_default": {
+      "expected": "एक्स 1.3"
+    },
+    "Sample_8_5_4_brief": {
+      "expected": "एक्स 1.3"
+    },
+    "Sample_8_5_4_sbrief": {
+      "expected": "एक्स 1.3"
+    },
+    "Sample_8_5_5_default": {
+      "expected": "4 कैपिटल एफ ई पलस हसताक्षर 3 कैपिटल ओ 2 दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन 2 कैपिटल एफ ई 2 कैपिटल ओ 3"
+    },
+    "Sample_8_5_5_brief": {
+      "expected": "4 कैपिटल एफ ई पलस हसताक्षर 3 कैपिटल ओ 2 दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन 2 कैपिटल एफ ई 2 कैपिटल ओ 3"
+    },
+    "Sample_8_5_5_sbrief": {
+      "expected": "4 कैपिटल एफ ई पलस हसताक्षर 3 कैपिटल ओ 2 दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन 2 कैपिटल एफ ई 2 कैपिटल ओ 3"
+    },
+    "Sample_8_5_6_default": {
+      "expected": "ए Subscript 2 अल्पविराम :  दशमलव विभाजक 3"
+    },
+    "Sample_8_5_6_brief": {
+      "expected": "ए Sub 2 अल्पविराम :  दशमलव विभाजक 3"
+    },
+    "Sample_8_5_6_sbrief": {
+      "expected": "ए Sub 2 अल्पविराम :  दशमलव विभाजक 3"
+    },
+    "Sample_8_5_7_default": {
+      "expected": "कैपिटल टी Subscript एन 1 पलस हसताक्षर एन 0"
+    },
+    "Sample_8_5_7_brief": {
+      "expected": "कैपिटल टी Sub एन 1 पलस हसताक्षर एन 0"
+    },
+    "Sample_8_5_7_sbrief": {
+      "expected": "कैपिटल टी Sub एन 1 पलस हसताक्षर एन 0"
+    },
+    "Sample_8_5_8_default": {
+      "expected": "लघुगणक Subscript 2 Baseline वाम कोष्ठक :  कोष्ठक खोलना एक्स सही कोष्ठक :  बंद कोष्ठक बराबर का चिह्न StartFraction लघुगणक Subscript 10 Baseline वाम कोष्ठक :  कोष्ठक खोलना एक्स सही कोष्ठक :  बंद कोष्ठक Over लघुगणक Subscript 10 Baseline वाम कोष्ठक :  कोष्ठक खोलना 2 सही कोष्ठक :  बंद कोष्ठक EndFraction"
+    },
+    "Sample_8_5_8_brief": {
+      "expected": "लघुगणक Sub 2 Base वाम कोष्ठक :  कोष्ठक खोलना एक्स सही कोष्ठक :  बंद कोष्ठक बराबर का चिह्न StartFrac लघुगणक Sub 10 Base वाम कोष्ठक :  कोष्ठक खोलना एक्स सही कोष्ठक :  बंद कोष्ठक Over लघुगणक Sub 10 Base वाम कोष्ठक :  कोष्ठक खोलना 2 सही कोष्ठक :  बंद कोष्ठक EndFrac"
+    },
+    "Sample_8_5_8_sbrief": {
+      "expected": "लघुगणक Sub 2 Base वाम कोष्ठक :  कोष्ठक खोलना एक्स सही कोष्ठक :  बंद कोष्ठक बराबर का चिह्न Frac लघुगणक Sub 10 Base वाम कोष्ठक :  कोष्ठक खोलना एक्स सही कोष्ठक :  बंद कोष्ठक Over लघुगणक Sub 10 Base वाम कोष्ठक :  कोष्ठक खोलना 2 सही कोष्ठक :  बंद कोष्ठक EndFrac"
+    },
+    "Sample_8_5_9_default": {
+      "expected": "कैपिटल फाई 5"
+    },
+    "Sample_8_5_9_brief": {
+      "expected": "कैपिटल फाई 5"
+    },
+    "Sample_8_5_9_sbrief": {
+      "expected": "कैपिटल फाई 5"
+    },
+    "Sample_8_5_10_default": {
+      "expected": "प्राकृतिक लघुगणक एक्स बराबर का चिह्न अविभाज्य पादांक (when number) 1 उर्ध्वान्क (when number) एक्स आधार रेखा StartFraction डी टी Over टी EndFraction"
+    },
+    "Sample_8_5_10_brief": {
+      "expected": "प्राकृतिक लघुगणक एक्स बराबर का चिह्न अविभाज्य अधो 1 उर्ध्व एक्स आधार StartFrac डी टी Over टी EndFrac"
+    },
+    "Sample_8_5_10_sbrief": {
+      "expected": "प्राकृतिक लघुगणक एक्स बराबर का चिह्न अविभाज्य अधो 1 उर्ध्व एक्स आधार Frac डी टी Over टी EndFrac"
+    },
+    "Sample_8_6_1_default": {
+      "expected": "डॉलर का चिह्न :  milréis :  Escudo एन आधार रेखा 2 बराबर का चिह्न 2 तारांकन :  तारा डॉलर का चिह्न :  milréis :  Escudo एन पलस हसताक्षर 1 सेमीकोलन"
+    },
+    "Sample_8_6_1_brief": {
+      "expected": "डॉलर का चिह्न :  milréis :  Escudo एन आधार 2 बराबर का चिह्न 2 तारांकन :  तारा डॉलर का चिह्न :  milréis :  Escudo एन पलस हसताक्षर 1 सेमीकोलन"
+    },
+    "Sample_8_6_1_sbrief": {
+      "expected": "डॉलर का चिह्न :  milréis :  Escudo एन आधार 2 बराबर का चिह्न 2 तारांकन :  तारा डॉलर का चिह्न :  milréis :  Escudo एन पलस हसताक्षर 1 सेमीकोलन"
+    },
+    "BaselineNumberFont_default": {
+      "expected": "एन आधार रेखा bold 2"
+    },
+    "BaselineNumberFont_brief": {
+      "expected": "एन आधार bold 2"
+    },
+    "BaselineNumberFont_sbrief": {
+      "expected": "एन आधार bold 2"
+    },
+    "Sample_8_8_1_naive_default": {
+      "expected": "Subscript सी डी Superscript ए बी Baseline एक्स Subscript ई एफ Superscript जी एच"
+    },
+    "Sample_8_8_1_naive_brief": {
+      "expected": "Sub सी डी Sup ए बी Base एक्स Sub ई एफ Sup जी एच"
+    },
+    "Sample_8_8_1_naive_sbrief": {
+      "expected": "Sub सी डी Sup ए बी Base एक्स Sub ई एफ Sup जी एच"
+    },
+    "Sample_8_8_1_default": {
+      "expected": "Subscript सी डी Superscript ए बी Baseline एक्स Subscript ई एफ Superscript जी एच"
+    },
+    "Sample_8_8_1_brief": {
+      "expected": "Sub सी डी Sup ए बी Base एक्स Sub ई एफ Sup जी एच"
+    },
+    "Sample_8_8_1_sbrief": {
+      "expected": "Sub सी डी Sup ए बी Base एक्स Sub ई एफ Sup जी एच"
+    },
+    "SampleSimpleSquare_default": {
+      "expected": "कैपिटल टी 0 वर्ग"
+    },
+    "SampleSimpleSquare_brief": {
+      "expected": "कैपिटल टी 0 वर्ग"
+    },
+    "SampleSimpleSquare_sbrief": {
+      "expected": "कैपिटल टी 0 वर्ग"
+    },
+    "SampleSimpleSquare_2_default": {
+      "expected": "कैपिटल टी 0 वर्ग"
+    },
+    "SampleSimpleSquare_2_brief": {
+      "expected": "कैपिटल टी 0 वर्ग"
+    },
+    "SampleSimpleSquare_2_sbrief": {
+      "expected": "कैपिटल टी 0 वर्ग"
+    },
+    "SampleSimpleCube_default": {
+      "expected": "कैपिटल टी 0 घन"
+    },
+    "SampleSimpleCube_brief": {
+      "expected": "कैपिटल टी 0 घन"
+    },
+    "SampleSimpleCube_sbrief": {
+      "expected": "कैपिटल टी 0 घन"
+    },
+    "SampleSimpleCube_2_default": {
+      "expected": "कैपिटल टी 0 घन"
+    },
+    "SampleSimpleCube_2_brief": {
+      "expected": "कैपिटल टी 0 घन"
+    },
+    "SampleSimpleCube_2_sbrief": {
+      "expected": "कैपिटल टी 0 घन"
+    },
+    "Sample_8_8_2_default": {
+      "expected": "कैपिटल टी Subscript एन minus 1 Superscript 2"
+    },
+    "Sample_8_8_2_brief": {
+      "expected": "कैपिटल टी Sub एन minus 1 Sup 2"
+    },
+    "Sample_8_8_2_sbrief": {
+      "expected": "कैपिटल टी Sub एन minus 1 Sup 2"
+    },
+    "Sample_8_9_1_default": {
+      "expected": "एक्स apostrophe :  apostrophe-उद्धरण :  apl बोली"
+    },
+    "Sample_8_9_1_brief": {
+      "expected": "एक्स apostrophe :  apostrophe-उद्धरण :  apl बोली"
+    },
+    "Sample_8_9_1_sbrief": {
+      "expected": "एक्स apostrophe :  apostrophe-उद्धरण :  apl बोली"
+    },
+    "Sample_8_9_2_default": {
+      "expected": "एफ तिगुना प्राइम वाम कोष्ठक :  कोष्ठक खोलना वाई सही कोष्ठक :  बंद कोष्ठक बराबर का चिह्न StartFraction डी एफ डबल प्राइम वाम कोष्ठक :  कोष्ठक खोलना वाई सही कोष्ठक :  बंद कोष्ठक Over डी वाई EndFraction"
+    },
+    "Sample_8_9_2_brief": {
+      "expected": "एफ तिगुना प्राइम वाम कोष्ठक :  कोष्ठक खोलना वाई सही कोष्ठक :  बंद कोष्ठक बराबर का चिह्न StartFrac डी एफ डबल प्राइम वाम कोष्ठक :  कोष्ठक खोलना वाई सही कोष्ठक :  बंद कोष्ठक Over डी वाई EndFrac"
+    },
+    "Sample_8_9_2_sbrief": {
+      "expected": "एफ तिगुना प्राइम वाम कोष्ठक :  कोष्ठक खोलना वाई सही कोष्ठक :  बंद कोष्ठक बराबर का चिह्न Frac डी एफ डबल प्राइम वाम कोष्ठक :  कोष्ठक खोलना वाई सही कोष्ठक :  बंद कोष्ठक Over डी वाई EndFrac"
+    },
+    "Sample_8_10_1_default": {
+      "expected": "रो apostrophe :  apostrophe-उद्धरण :  apl बोली बराबर का चिह्न रो apostrophe :  apostrophe-उद्धरण :  apl बोली Subscript पलस हसताक्षर Baseline पलस हसताक्षर रो apostrophe :  apostrophe-उद्धरण :  apl बोली Subscript बाकी"
+    },
+    "Sample_8_10_1_brief": {
+      "expected": "रो apostrophe :  apostrophe-उद्धरण :  apl बोली बराबर का चिह्न रो apostrophe :  apostrophe-उद्धरण :  apl बोली Sub पलस हसताक्षर Base पलस हसताक्षर रो apostrophe :  apostrophe-उद्धरण :  apl बोली Sub बाकी"
+    },
+    "Sample_8_10_1_sbrief": {
+      "expected": "रो apostrophe :  apostrophe-उद्धरण :  apl बोली बराबर का चिह्न रो apostrophe :  apostrophe-उद्धरण :  apl बोली Sub पलस हसताक्षर Base पलस हसताक्षर रो apostrophe :  apostrophe-उद्धरण :  apl बोली Sub बाकी"
+    },
+    "Sample_8_10_2_default": {
+      "expected": "एक्स apostrophe :  apostrophe-उद्धरण :  apl बोली 10"
+    },
+    "Sample_8_10_2_brief": {
+      "expected": "एक्स apostrophe :  apostrophe-उद्धरण :  apl बोली 10"
+    },
+    "Sample_8_10_2_sbrief": {
+      "expected": "एक्स apostrophe :  apostrophe-उद्धरण :  apl बोली 10"
+    },
+    "Sample_8_10_3_default": {
+      "expected": "कैपिटल टी apostrophe :  apostrophe-उद्धरण :  apl बोली Subscript एन"
+    },
+    "Sample_8_10_3_brief": {
+      "expected": "कैपिटल टी apostrophe :  apostrophe-उद्धरण :  apl बोली Sub एन"
+    },
+    "Sample_8_10_3_sbrief": {
+      "expected": "कैपिटल टी apostrophe :  apostrophe-उद्धरण :  apl बोली Sub एन"
+    },
+    "Sample_8_11_1_default": {
+      "expected": "आरंभ 2 द्वारा 3 आव्यूह 1st Row 1st Column एक्स Superscript एन 2nd Column वाई Superscript एन 3rd Column जेड Superscript एन 2nd Row 1st Column एक्स Superscript एन पलस हसताक्षर 1 2nd Column वाई Superscript एन पलस हसताक्षर 1 3rd Column जेड Superscript एन पलस हसताक्षर 1 आव्यूह समाप्त"
+    },
+    "Sample_8_11_1_brief": {
+      "expected": "आरंभ 2 द्वारा 3 आव्यूह 1st Row 1st Column एक्स Sup एन 2nd Column वाई Sup एन 3rd Column जेड Sup एन 2nd Row 1st Column एक्स Sup एन पलस हसताक्षर 1 2nd Column वाई Sup एन पलस हसताक्षर 1 3rd Column जेड Sup एन पलस हसताक्षर 1 आव्यूह समाप्त"
+    },
+    "Sample_8_11_1_sbrief": {
+      "expected": "2 द्वारा 3 आव्यूह 1st Row 1st Column एक्स Sup एन 2nd Column वाई Sup एन 3rd Column जेड Sup एन 2nd Row 1st Column एक्स Sup एन पलस हसताक्षर 1 2nd Column वाई Sup एन पलस हसताक्षर 1 3rd Column जेड Sup एन पलस हसताक्षर 1 आव्यूह समाप्त"
+    },
+    "Sample_8_12_1_default": {
+      "expected": "एक्स Subscript ए Baseline Superscript बी"
+    },
+    "Sample_8_12_1_brief": {
+      "expected": "एक्स Sub ए Base Sup बी"
+    },
+    "Sample_8_12_1_sbrief": {
+      "expected": "एक्स Sub ए Base Sup बी"
+    },
+    "Sample_8_12_2_default": {
+      "expected": "एक्स Superscript बी Baseline Subscript ए"
+    },
+    "Sample_8_12_2_brief": {
+      "expected": "एक्स Sup बी Base Sub ए"
+    },
+    "Sample_8_12_2_sbrief": {
+      "expected": "एक्स Sup बी Base Sub ए"
+    },
+    "Sample_8_13_1_default": {
+      "expected": "लघुगणक Superscript 4 Superscript बी Baseline एक्स"
+    },
+    "Sample_8_13_1_brief": {
+      "expected": "लघुगणक Sup 4 Sup बी Base एक्स"
+    },
+    "Sample_8_13_1_sbrief": {
+      "expected": "लघुगणक Sup 4 Sup बी Base एक्स"
+    },
+    "Sample_8_13_2_default": {
+      "expected": "कैपिटल टी Subscript एन Subscript ए Baseline वाई"
+    },
+    "Sample_8_13_2_brief": {
+      "expected": "कैपिटल टी Sub एन Sub ए Base वाई"
+    },
+    "Sample_8_13_2_sbrief": {
+      "expected": "कैपिटल टी Sub एन Sub ए Base वाई"
+    },
+    "Sample_9_1_1_default": {
+      "expected": "StartRoot 2 EndRoot"
+    },
+    "Sample_9_1_1_brief": {
+      "expected": "StartRoot 2 EndRoot"
+    },
+    "Sample_9_1_1_sbrief": {
+      "expected": "Root 2 EndRoot"
+    },
+    "Sample_9_1_2_default": {
+      "expected": "StartRoot एम पलस हसताक्षर एन EndRoot"
+    },
+    "Sample_9_1_2_brief": {
+      "expected": "StartRoot एम पलस हसताक्षर एन EndRoot"
+    },
+    "Sample_9_1_2_sbrief": {
+      "expected": "Root एम पलस हसताक्षर एन EndRoot"
+    },
+    "Sample_9_2_1_default": {
+      "expected": "RootIndex एम पलस हसताक्षर एन StartRoot एक्स पलस हसताक्षर वाई EndRoot"
+    },
+    "Sample_9_2_1_brief": {
+      "expected": "RootIndex एम पलस हसताक्षर एन StartRoot एक्स पलस हसताक्षर वाई EndRoot"
+    },
+    "Sample_9_2_1_sbrief": {
+      "expected": "Index एम पलस हसताक्षर एन Root एक्स पलस हसताक्षर वाई EndRoot"
+    },
+    "Sample_9_2_2_default": {
+      "expected": "RootIndex एन StartRoot एक्स Superscript एम Baseline EndRoot बराबर का चिह्न वाम कोष्ठक :  कोष्ठक खोलना RootIndex एन StartRoot एक्स EndRoot सही कोष्ठक :  बंद कोष्ठक Superscript एम Baseline बराबर का चिह्न एक्स Superscript StartFraction एम Over एन EndFraction Baseline अल्पविराम :  दशमलव विभाजक एक्स ग्रेटर-थान साइन 0"
+    },
+    "Sample_9_2_2_brief": {
+      "expected": "RootIndex एन StartRoot एक्स Sup एम Base EndRoot बराबर का चिह्न वाम कोष्ठक :  कोष्ठक खोलना RootIndex एन StartRoot एक्स EndRoot सही कोष्ठक :  बंद कोष्ठक Sup एम Base बराबर का चिह्न एक्स Sup StartFrac एम Over एन EndFrac Base अल्पविराम :  दशमलव विभाजक एक्स ग्रेटर-थान साइन 0"
+    },
+    "Sample_9_2_2_sbrief": {
+      "expected": "Index एन Root एक्स Sup एम Base EndRoot बराबर का चिह्न वाम कोष्ठक :  कोष्ठक खोलना Index एन Root एक्स EndRoot सही कोष्ठक :  बंद कोष्ठक Sup एम Base बराबर का चिह्न एक्स Sup Frac एम Over एन EndFrac Base अल्पविराम :  दशमलव विभाजक एक्स ग्रेटर-थान साइन 0"
+    },
+    "Sample_9_2_3_default": {
+      "expected": "RootIndex 3 StartRoot एक्स EndRoot बराबर का चिह्न एक्स Superscript एक तीनth"
+    },
+    "Sample_9_2_3_brief": {
+      "expected": "RootIndex 3 StartRoot एक्स EndRoot बराबर का चिह्न एक्स Sup एक तीनth"
+    },
+    "Sample_9_2_3_sbrief": {
+      "expected": "Index 3 Root एक्स EndRoot बराबर का चिह्न एक्स Sup एक तीनth"
+    },
+    "Sample_9_3_1_default": {
+      "expected": "NestedStartRoot StartRoot एक्स पलस हसताक्षर 1 EndRoot पलस हसताक्षर StartRoot वाई पलस हसताक्षर 1 EndRoot NestedEndRoot"
+    },
+    "Sample_9_3_1_brief": {
+      "expected": "NestStartRoot StartRoot एक्स पलस हसताक्षर 1 EndRoot पलस हसताक्षर StartRoot वाई पलस हसताक्षर 1 EndRoot NestEndRoot"
+    },
+    "Sample_9_3_1_sbrief": {
+      "expected": "NestRoot Root एक्स पलस हसताक्षर 1 EndRoot पलस हसताक्षर Root वाई पलस हसताक्षर 1 EndRoot NestEndRoot"
+    },
+    "Sample_9_3_2_default": {
+      "expected": "NestedRootIndex एन NestedStartRoot RootIndex एम StartRoot एक्स EndRoot NestedEndRoot बराबर का चिह्न NestedRootIndex एम NestedStartRoot RootIndex एन StartRoot एक्स EndRoot NestedEndRoot"
+    },
+    "Sample_9_3_2_brief": {
+      "expected": "NestRootIndex एन NestStartRoot RootIndex एम StartRoot एक्स EndRoot NestEndRoot बराबर का चिह्न NestRootIndex एम NestStartRoot RootIndex एन StartRoot एक्स EndRoot NestEndRoot"
+    },
+    "Sample_9_3_2_sbrief": {
+      "expected": "NestIndex एन NestRoot Index एम Root एक्स EndRoot NestEndRoot बराबर का चिह्न NestIndex एम NestRoot Index एन Root एक्स EndRoot NestEndRoot"
+    },
+    "Sample_9_3_3_default": {
+      "expected": "एक्स Superscript ई minus 2 Baseline बराबर का चिह्न Nested3StartRoot एक्स NestedTwiceRootIndex 3 NestedTwiceStartRoot एक्स NestedRootIndex 4 NestedStartRoot एक्स RootIndex 5 StartRoot एक्स क्षैतिज एलिप्सिस :  तीन डॉट नेता EndRoot NestedEndRoot NestedTwiceEndRoot Nested3EndRoot अल्पविराम :  दशमलव विभाजक एक्स का तत्व डबल-स्ट्रक कैपिटल आर"
+    },
+    "Sample_9_3_3_brief": {
+      "expected": "एक्स Sup ई minus 2 Base बराबर का चिह्न Nest3StartRoot एक्स NestTwiceRootIndex 3 NestTwiceStartRoot एक्स NestRootIndex 4 NestStartRoot एक्स RootIndex 5 StartRoot एक्स क्षैतिज एलिप्सिस :  तीन डॉट नेता EndRoot NestEndRoot NestTwiceEndRoot Nest3EndRoot अल्पविराम :  दशमलव विभाजक एक्स का तत्व डबल-स्ट्रक कैपिटल आर"
+    },
+    "Sample_9_3_3_sbrief": {
+      "expected": "एक्स Sup ई minus 2 Base बराबर का चिह्न Nest3Root एक्स NestTwiceIndex 3 NestTwiceRoot एक्स NestIndex 4 NestRoot एक्स Index 5 Root एक्स क्षैतिज एलिप्सिस :  तीन डॉट नेता EndRoot NestEndRoot NestTwiceEndRoot Nest3EndRoot अल्पविराम :  दशमलव विभाजक एक्स का तत्व डबल-स्ट्रक कैपिटल आर"
+    },
+    "Sample_9_3_4_default": {
+      "expected": "StartFraction 2 Over पाइ EndFraction बराबर का चिह्न StartFraction StartRoot 2 EndRoot Over 2 EndFraction StartFraction NestedStartRoot 2 पलस हसताक्षर StartRoot 2 EndRoot NestedEndRoot Over 2 EndFraction StartFraction NestedTwiceStartRoot 2 पलस हसताक्षर NestedStartRoot 2 पलस हसताक्षर StartRoot 2 EndRoot NestedEndRoot NestedTwiceEndRoot Over 2 EndFraction क्षैतिज एलिप्सिस :  तीन डॉट नेता"
+    },
+    "Sample_9_3_4_brief": {
+      "expected": "StartFrac 2 Over पाइ EndFrac बराबर का चिह्न StartFrac StartRoot 2 EndRoot Over 2 EndFrac StartFrac NestStartRoot 2 पलस हसताक्षर StartRoot 2 EndRoot NestEndRoot Over 2 EndFrac StartFrac NestTwiceStartRoot 2 पलस हसताक्षर NestStartRoot 2 पलस हसताक्षर StartRoot 2 EndRoot NestEndRoot NestTwiceEndRoot Over 2 EndFrac क्षैतिज एलिप्सिस :  तीन डॉट नेता"
+    },
+    "Sample_9_3_4_sbrief": {
+      "expected": "Frac 2 Over पाइ EndFrac बराबर का चिह्न Frac Root 2 EndRoot Over 2 EndFrac Frac NestRoot 2 पलस हसताक्षर Root 2 EndRoot NestEndRoot Over 2 EndFrac Frac NestTwiceRoot 2 पलस हसताक्षर NestRoot 2 पलस हसताक्षर Root 2 EndRoot NestEndRoot NestTwiceEndRoot Over 2 EndFrac क्षैतिज एलिप्सिस :  तीन डॉट नेता"
+    },
+    "Sample_10_1_1_default": {
+      "expected": "StartFraction 5 एक्स मिटाया हुआ वाई मिटाया हुआ समाप्त Over 2 मिटाया हुआ वाई मिटाया हुआ समाप्त EndFraction बराबर का चिह्न पाँच halves एक्स"
+    },
+    "Sample_10_1_1_brief": {
+      "expected": "StartFrac 5 एक्स मिटाया हुआ वाई मिटाया हुआ समाप्त Over 2 मिटाया हुआ वाई मिटाया हुआ समाप्त EndFrac बराबर का चिह्न पाँच halves एक्स"
+    },
+    "Sample_10_1_1_sbrief": {
+      "expected": "Frac 5 एक्स मिटाया हुआ वाई मिटाया हुआ समाप्त Over 2 मिटाया हुआ वाई मिटाया हुआ समाप्त EndFrac बराबर का चिह्न पाँच halves एक्स"
+    },
+    "Sample_10_2_1_default": {
+      "expected": "StartFraction 12 Over 18 EndFraction बराबर का चिह्न StartFraction मिटाया हुआ 12 के साथ 2 मिटाया हुआ समाप्त Over मिटाया हुआ 18 के साथ 3 मिटाया हुआ समाप्त EndFraction बराबर का चिह्न दो तीनths"
+    },
+    "Sample_10_2_1_brief": {
+      "expected": "StartFrac 12 Over 18 EndFrac बराबर का चिह्न StartFrac मिटाया हुआ 12 के साथ 2 मिटाया हुआ समाप्त Over मिटाया हुआ 18 के साथ 3 मिटाया हुआ समाप्त EndFrac बराबर का चिह्न दो तीनths"
+    },
+    "Sample_10_2_1_sbrief": {
+      "expected": "Frac 12 Over 18 EndFrac बराबर का चिह्न Frac मिटाया हुआ 12 के साथ 2 मिटाया हुआ समाप्त Over मिटाया हुआ 18 के साथ 3 मिटाया हुआ समाप्त EndFrac बराबर का चिह्न दो तीनths"
+    },
+    "Sample_10_2_2_default": {
+      "expected": "StartFraction 12 Over 18 EndFraction बराबर का चिह्न StartFraction मिटाया हुआ 12 के साथ 2 मिटाया हुआ समाप्त Over मिटाया हुआ 18 के साथ 3 मिटाया हुआ समाप्त EndFraction बराबर का चिह्न दो तीनths"
+    },
+    "Sample_10_2_2_brief": {
+      "expected": "StartFrac 12 Over 18 EndFrac बराबर का चिह्न StartFrac मिटाया हुआ 12 के साथ 2 मिटाया हुआ समाप्त Over मिटाया हुआ 18 के साथ 3 मिटाया हुआ समाप्त EndFrac बराबर का चिह्न दो तीनths"
+    },
+    "Sample_10_2_2_sbrief": {
+      "expected": "Frac 12 Over 18 EndFrac बराबर का चिह्न Frac मिटाया हुआ 12 के साथ 2 मिटाया हुआ समाप्त Over मिटाया हुआ 18 के साथ 3 मिटाया हुआ समाप्त EndFrac बराबर का चिह्न दो तीनths"
+    },
+    "Sample_11_1_1_default": {
+      "expected": "ऊपर संशोधित एक्स के साथ डायरेसेस"
+    },
+    "Sample_11_1_1_brief": {
+      "expected": "ऊपर संशोधित एक्स के साथ डायरेसेस"
+    },
+    "Sample_11_1_1_sbrief": {
+      "expected": "ऊपर संशोधित एक्स के साथ डायरेसेस"
+    },
+    "Sample_11_1_2_default": {
+      "expected": "ऊपर संशोधित एक्स पलस हसताक्षर वाई के साथ दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन"
+    },
+    "Sample_11_1_2_brief": {
+      "expected": "ऊपर संशोधित एक्स पलस हसताक्षर वाई के साथ दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन"
+    },
+    "Sample_11_1_2_sbrief": {
+      "expected": "ऊपर संशोधित एक्स पलस हसताक्षर वाई के साथ दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन"
+    },
+    "Sample_11_1_3_default": {
+      "expected": "ऊपर संशोधित एक्स के साथ सर्कुफ्लेक्स एक्सेंट"
+    },
+    "Sample_11_1_3_brief": {
+      "expected": "ऊपर संशोधित एक्स के साथ सर्कुफ्लेक्स एक्सेंट"
+    },
+    "Sample_11_1_3_sbrief": {
+      "expected": "ऊपर संशोधित एक्स के साथ सर्कुफ्लेक्स एक्सेंट"
+    },
+    "Sample_11_2_1_default": {
+      "expected": "निचे संशोधित एक्स के साथ ऊपर का डॉट"
+    },
+    "Sample_11_2_1_brief": {
+      "expected": "निचे संशोधित एक्स के साथ ऊपर का डॉट"
+    },
+    "Sample_11_2_1_sbrief": {
+      "expected": "निचे संशोधित एक्स के साथ ऊपर का डॉट"
+    },
+    "Sample_11_3_1_default": {
+      "expected": "एक्स उर्ध्व अंतर-चिह्न"
+    },
+    "Sample_11_3_1_brief": {
+      "expected": "एक्स उर्ध्व अंतर-चिह्न"
+    },
+    "Sample_11_3_1_sbrief": {
+      "expected": "एक्स उर्ध्व अंतर-चिह्न"
+    },
+    "Sample_11_3_2_default": {
+      "expected": "एक्स उर्ध्व दंड"
+    },
+    "Sample_11_3_2_brief": {
+      "expected": "एक्स उर्ध्व दंड"
+    },
+    "Sample_11_3_2_sbrief": {
+      "expected": "एक्स उर्ध्व दंड"
+    },
+    "Sample_11_3_3_default": {
+      "expected": "वाई अधो अंतर-चिह्न"
+    },
+    "Sample_11_3_3_brief": {
+      "expected": "वाई अधो अंतर-चिह्न"
+    },
+    "Sample_11_3_3_sbrief": {
+      "expected": "वाई अधो अंतर-चिह्न"
+    },
+    "Sample_11_4_1_default": {
+      "expected": "एक्स उर्ध्व दंड उर्ध्व दंड"
+    },
+    "Sample_11_4_1_brief": {
+      "expected": "एक्स उर्ध्व दंड उर्ध्व दंड"
+    },
+    "Sample_11_4_1_sbrief": {
+      "expected": "एक्स उर्ध्व दंड उर्ध्व दंड"
+    },
+    "Sample_11_4_2_default": {
+      "expected": "वाई उर्ध्व दंड उर्ध्व दंड अधो दंड अधो दंड"
+    },
+    "Sample_11_4_2_brief": {
+      "expected": "वाई उर्ध्व दंड उर्ध्व दंड अधो दंड अधो दंड"
+    },
+    "Sample_11_4_2_sbrief": {
+      "expected": "वाई उर्ध्व दंड उर्ध्व दंड अधो दंड अधो दंड"
+    },
+    "Sample_11_6_1_default": {
+      "expected": "निचे के निचे संशोधित निचे संशोधित ए पलस हसताक्षर बी के साथ निम्न रेखा :  अंडरस्कोर की जगह के साथ तारांकन :  तारा"
+    },
+    "Sample_11_6_1_brief": {
+      "expected": "निचे के निचे संशोधित निचे संशोधित ए पलस हसताक्षर बी के साथ निम्न रेखा :  अंडरस्कोर की जगह के साथ तारांकन :  तारा"
+    },
+    "Sample_11_6_1_sbrief": {
+      "expected": "निचे के निचे संशोधित निचे संशोधित ए पलस हसताक्षर बी के साथ निम्न रेखा :  अंडरस्कोर की जगह के साथ तारांकन :  तारा"
+    },
+    "Sample_11_6_3_default": {
+      "expected": "ऊपर के ऊपर संशोधित ऊपर संशोधित एक्स पलस हसताक्षर वाई के साथ छोटा टिल्ड के साथ अंग्रेज़ी स्वर पर दीर्घ का चिह्न :  overline, apl overbar"
+    },
+    "Sample_11_6_3_brief": {
+      "expected": "ऊपर के ऊपर संशोधित ऊपर संशोधित एक्स पलस हसताक्षर वाई के साथ छोटा टिल्ड के साथ अंग्रेज़ी स्वर पर दीर्घ का चिह्न :  overline, apl overbar"
+    },
+    "Sample_11_6_3_sbrief": {
+      "expected": "ऊपर के ऊपर संशोधित ऊपर संशोधित एक्स पलस हसताक्षर वाई के साथ छोटा टिल्ड के साथ अंग्रेज़ी स्वर पर दीर्घ का चिह्न :  overline, apl overbar"
+    },
+    "Sample_11_7_1_default": {
+      "expected": "एन-आर्य योग :  योग चिह्न Underscript एन बराबर का चिह्न 1 Overscript अनन्तता लिपि समाप्त ए Subscript एन"
+    },
+    "Sample_11_7_1_brief": {
+      "expected": "एन-आर्य योग :  योग चिह्न Underscript एन बराबर का चिह्न 1 Overscript अनन्तता लिपि समाप्त ए Sub एन"
+    },
+    "Sample_11_7_1_sbrief": {
+      "expected": "एन-आर्य योग :  योग चिह्न Underscript एन बराबर का चिह्न 1 Overscript अनन्तता लिपि समाप्त ए Sub एन"
+    },
+    "Sample_11_8_1_default": {
+      "expected": "निचे संशोधित एक्स पलस हसताक्षर वाई के साथ निम्न रेखा :  अंडरस्कोर की जगह Underscript ए बराबर का चिह्न 5 UnderUnderscript बी बराबर का चिह्न 3 लिपि समाप्त"
+    },
+    "Sample_11_8_1_brief": {
+      "expected": "निचे संशोधित एक्स पलस हसताक्षर वाई के साथ निम्न रेखा :  अंडरस्कोर की जगह Underscript ए बराबर का चिह्न 5 UnderUnderscript बी बराबर का चिह्न 3 लिपि समाप्त"
+    },
+    "Sample_11_8_1_sbrief": {
+      "expected": "निचे संशोधित एक्स पलस हसताक्षर वाई के साथ निम्न रेखा :  अंडरस्कोर की जगह Underscript ए बराबर का चिह्न 5 UnderUnderscript बी बराबर का चिह्न 3 लिपि समाप्त"
+    },
+    "Sample_11_8_2_default": {
+      "expected": "ऊपर संशोधित एक्स पलस हसताक्षर वाई के साथ अंग्रेज़ी स्वर पर दीर्घ का चिह्न :  overline, apl overbar Overscript एन बराबर का चिह्न 1 OverOverscript एम बराबर का चिह्न 2 लिपि समाप्त"
+    },
+    "Sample_11_8_2_brief": {
+      "expected": "ऊपर संशोधित एक्स पलस हसताक्षर वाई के साथ अंग्रेज़ी स्वर पर दीर्घ का चिह्न :  overline, apl overbar Overscript एन बराबर का चिह्न 1 OverOverscript एम बराबर का चिह्न 2 लिपि समाप्त"
+    },
+    "Sample_11_8_2_sbrief": {
+      "expected": "ऊपर संशोधित एक्स पलस हसताक्षर वाई के साथ अंग्रेज़ी स्वर पर दीर्घ का चिह्न :  overline, apl overbar Overscript एन बराबर का चिह्न 1 OverOverscript एम बराबर का चिह्न 2 लिपि समाप्त"
+    },
+    "Sample_12_1_1_default": {
+      "expected": "लघुगणक Subscript बी Baseline एक्स"
+    },
+    "Sample_12_1_1_brief": {
+      "expected": "लघुगणक Sub बी Base एक्स"
+    },
+    "Sample_12_1_1_sbrief": {
+      "expected": "लघुगणक Sub बी Base एक्स"
+    },
+    "Sample_12_1_2_default": {
+      "expected": "कोस वाई"
+    },
+    "Sample_12_1_2_brief": {
+      "expected": "कोस वाई"
+    },
+    "Sample_12_1_2_sbrief": {
+      "expected": "कोस वाई"
+    },
+    "Sample_12_1_3_default": {
+      "expected": "साइन एक्स"
+    },
+    "Sample_12_1_3_brief": {
+      "expected": "साइन एक्स"
+    },
+    "Sample_12_1_3_sbrief": {
+      "expected": "साइन एक्स"
+    },
+    "Sample_13_1_1_default": {
+      "expected": "StartFraction 60 मिटाया हुआ मीलs मिटाया हुआ समाप्त Over मिटाया हुआ घंटा मिटाया हुआ समाप्त EndFraction गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद StartFraction 5,280 फिट Over 1 मिटाया हुआ मीलs मिटाया हुआ समाप्त EndFraction गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद StartFraction 1 मिटाया हुआ घंटा मिटाया हुआ समाप्त Over 60 मिनटs EndFraction बराबर का चिह्न StartFraction 5,280 फिट Over मिनटs EndFraction"
+    },
+    "Sample_13_1_1_brief": {
+      "expected": "StartFrac 60 मिटाया हुआ मीलs मिटाया हुआ समाप्त Over मिटाया हुआ घंटा मिटाया हुआ समाप्त EndFrac गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद StartFrac 5,280 फिट Over 1 मिटाया हुआ मीलs मिटाया हुआ समाप्त EndFrac गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद StartFrac 1 मिटाया हुआ घंटा मिटाया हुआ समाप्त Over 60 मिनटs EndFrac बराबर का चिह्न StartFrac 5,280 फिट Over मिनटs EndFrac"
+    },
+    "Sample_13_1_1_sbrief": {
+      "expected": "Frac 60 मिटाया हुआ मीलs मिटाया हुआ समाप्त Over मिटाया हुआ घंटा मिटाया हुआ समाप्त EndFrac गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद Frac 5,280 फिट Over 1 मिटाया हुआ मीलs मिटाया हुआ समाप्त EndFrac गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद Frac 1 मिटाया हुआ घंटा मिटाया हुआ समाप्त Over 60 मिनटs EndFrac बराबर का चिह्न Frac 5,280 फिट Over मिनटs EndFrac"
+    },
+    "Sample_13_1_2_default": {
+      "expected": "1 जूलs बराबर का चिह्न 1 किलोग्रामs मध्य डॉट :  मध्यबिंदु :  मॉडल अल्पविराम :  ग्रीक मध्य डॉट, डॉट प्रतीक मीटरs वर्ग मध्य डॉट :  मध्यबिंदु :  मॉडल अल्पविराम :  ग्रीक मध्य डॉट, डॉट प्रतीक सेकंडs Superscript ऋण 2"
+    },
+    "Sample_13_1_2_brief": {
+      "expected": "1 जूलs बराबर का चिह्न 1 किलोग्रामs मध्य डॉट :  मध्यबिंदु :  मॉडल अल्पविराम :  ग्रीक मध्य डॉट, डॉट प्रतीक मीटरs वर्ग मध्य डॉट :  मध्यबिंदु :  मॉडल अल्पविराम :  ग्रीक मध्य डॉट, डॉट प्रतीक सेकंडs Sup ऋण 2"
+    },
+    "Sample_13_1_2_sbrief": {
+      "expected": "1 जूलs बराबर का चिह्न 1 किलोग्रामs मध्य डॉट :  मध्यबिंदु :  मॉडल अल्पविराम :  ग्रीक मध्य डॉट, डॉट प्रतीक मीटरs वर्ग मध्य डॉट :  मध्यबिंदु :  मॉडल अल्पविराम :  ग्रीक मध्य डॉट, डॉट प्रतीक सेकंडs Sup ऋण 2"
+    },
+    "Sample_13_1_3_default": {
+      "expected": "एम मीटरs बराबर का चिह्न 100 एम सेन्टीमीटरs बराबर का चिह्न StartFraction एम Over 1,000 EndFraction किलोमीटरs"
+    },
+    "Sample_13_1_3_brief": {
+      "expected": "एम मीटरs बराबर का चिह्न 100 एम सेन्टीमीटरs बराबर का चिह्न StartFrac एम Over 1,000 EndFrac किलोमीटरs"
+    },
+    "Sample_13_1_3_sbrief": {
+      "expected": "एम मीटरs बराबर का चिह्न 100 एम सेन्टीमीटरs बराबर का चिह्न Frac एम Over 1,000 EndFrac किलोमीटरs"
+    },
+    "Sample_13_1_4_default": {
+      "expected": "1 मीलs लगभग बराबर :  करने के लिए स्पर्शोन्मुख 1.6 किलोमीटरs"
+    },
+    "Sample_13_1_4_brief": {
+      "expected": "1 मीलs लगभग बराबर :  करने के लिए स्पर्शोन्मुख 1.6 किलोमीटरs"
+    },
+    "Sample_13_1_4_sbrief": {
+      "expected": "1 मीलs लगभग बराबर :  करने के लिए स्पर्शोन्मुख 1.6 किलोमीटरs"
+    },
+    "Sample_13_1_5_default": {
+      "expected": "1 इंचs बराबर का चिह्न 2.54 सेन्टीमीटरs"
+    },
+    "Sample_13_1_5_brief": {
+      "expected": "1 इंचs बराबर का चिह्न 2.54 सेन्टीमीटरs"
+    },
+    "Sample_13_1_5_sbrief": {
+      "expected": "1 इंचs बराबर का चिह्न 2.54 सेन्टीमीटरs"
+    },
+    "Sample_14_1_1_default": {
+      "expected": "खाका आरंभ 1st Row 1st Column कैपिटल एच 2 2nd Column पलस हसताक्षर 3rd Column कैपिटल एफ 2 4th Column दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन 5th Column 2 कैपिटल एच कैपिटल एफ 2nd Row 1st Column hydrogen 2nd Column रिक्त 3rd Column fluorine 4th Column रिक्त 5th Column hydrogen fluoride खाका समाप्त"
+    },
+    "Sample_14_1_1_brief": {
+      "expected": "खाका आरंभ 1st Row 1st Column कैपिटल एच 2 2nd Column पलस हसताक्षर 3rd Column कैपिटल एफ 2 4th Column दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन 5th Column 2 कैपिटल एच कैपिटल एफ 2nd Row 1st Column hydrogen 2nd Column रिक्त 3rd Column fluorine 4th Column रिक्त 5th Column hydrogen fluoride खाका समाप्त"
+    },
+    "Sample_14_1_1_sbrief": {
+      "expected": "खाका 1st Row 1st Column कैपिटल एच 2 2nd Column पलस हसताक्षर 3rd Column कैपिटल एफ 2 4th Column दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन 5th Column 2 कैपिटल एच कैपिटल एफ 2nd Row 1st Column hydrogen 2nd Column रिक्त 3rd Column fluorine 4th Column रिक्त 5th Column hydrogen fluoride खाका समाप्त"
+    },
+    "Sample_14_3_1_default": {
+      "expected": "एक्स बराबर का चिह्न खाका आरंभ विस्तारित लेफ्ट कर्ली ब्रैकेट :  कर्ली ब्रैकेट खोलना :  कंस छोड़ दिया 1st Row 1st Column वाई कम-से-अधिक संकेत 0 2nd Column 0 2nd Row 1st Column वाई इससे बड़ा या इसके बराबर 0 2nd Column 2 वाई खाका समाप्त"
+    },
+    "Sample_14_3_1_brief": {
+      "expected": "एक्स बराबर का चिह्न खाका आरंभ विस्तारित लेफ्ट कर्ली ब्रैकेट :  कर्ली ब्रैकेट खोलना :  कंस छोड़ दिया 1st Row 1st Column वाई कम-से-अधिक संकेत 0 2nd Column 0 2nd Row 1st Column वाई इससे बड़ा या इसके बराबर 0 2nd Column 2 वाई खाका समाप्त"
+    },
+    "Sample_14_3_1_sbrief": {
+      "expected": "एक्स बराबर का चिह्न खाका विस्तारित लेफ्ट कर्ली ब्रैकेट :  कर्ली ब्रैकेट खोलना :  कंस छोड़ दिया 1st Row 1st Column वाई कम-से-अधिक संकेत 0 2nd Column 0 2nd Row 1st Column वाई इससे बड़ा या इसके बराबर 0 2nd Column 2 वाई खाका समाप्त"
+    },
+    "Sample_15_1_1_default": {
+      "expected": "आरंभ 3 द्वारा 3 आव्यूह 1st Row 1st Column एक्स पलस हसताक्षर ए 2nd Column एक्स पलस हसताक्षर बी 3rd Column एक्स पलस हसताक्षर सी 2nd Row 1st Column वाई पलस हसताक्षर ए 2nd Column वाई पलस हसताक्षर बी 3rd Column वाई पलस हसताक्षर सी 3rd Row 1st Column जेड पलस हसताक्षर ए 2nd Column जेड पलस हसताक्षर बी 3rd Column जेड पलस हसताक्षर सी आव्यूह समाप्त"
+    },
+    "Sample_15_1_1_brief": {
+      "expected": "आरंभ 3 द्वारा 3 आव्यूह 1st Row 1st Column एक्स पलस हसताक्षर ए 2nd Column एक्स पलस हसताक्षर बी 3rd Column एक्स पलस हसताक्षर सी 2nd Row 1st Column वाई पलस हसताक्षर ए 2nd Column वाई पलस हसताक्षर बी 3rd Column वाई पलस हसताक्षर सी 3rd Row 1st Column जेड पलस हसताक्षर ए 2nd Column जेड पलस हसताक्षर बी 3rd Column जेड पलस हसताक्षर सी आव्यूह समाप्त"
+    },
+    "Sample_15_1_1_sbrief": {
+      "expected": "3 द्वारा 3 आव्यूह 1st Row 1st Column एक्स पलस हसताक्षर ए 2nd Column एक्स पलस हसताक्षर बी 3rd Column एक्स पलस हसताक्षर सी 2nd Row 1st Column वाई पलस हसताक्षर ए 2nd Column वाई पलस हसताक्षर बी 3rd Column वाई पलस हसताक्षर सी 3rd Row 1st Column जेड पलस हसताक्षर ए 2nd Column जेड पलस हसताक्षर बी 3rd Column जेड पलस हसताक्षर सी आव्यूह समाप्त"
+    },
+    "Sample_15_2_1_default": {
+      "expected": "आरंभ 2 द्वारा 2 सारणिक 1st Row 1st Column ए पलस हसताक्षर 1 2nd Column बी 2nd Row 1st Column सी 2nd Column डी सारणिक समाप्त बराबर का चिह्न वाम कोष्ठक :  कोष्ठक खोलना ए पलस हसताक्षर 1 सही कोष्ठक :  बंद कोष्ठक डी minus बी सी"
+    },
+    "Sample_15_2_1_brief": {
+      "expected": "आरंभ 2 द्वारा 2 सारणिक 1st Row 1st Column ए पलस हसताक्षर 1 2nd Column बी 2nd Row 1st Column सी 2nd Column डी सारणिक समाप्त बराबर का चिह्न वाम कोष्ठक :  कोष्ठक खोलना ए पलस हसताक्षर 1 सही कोष्ठक :  बंद कोष्ठक डी minus बी सी"
+    },
+    "Sample_15_2_1_sbrief": {
+      "expected": "2 द्वारा 2 सारणिक 1st Row 1st Column ए पलस हसताक्षर 1 2nd Column बी 2nd Row 1st Column सी 2nd Column डी सारणिक समाप्त बराबर का चिह्न वाम कोष्ठक :  कोष्ठक खोलना ए पलस हसताक्षर 1 सही कोष्ठक :  बंद कोष्ठक डी minus बी सी"
+    },
+    "Sample_15_4_1_default": {
+      "expected": "आरंभ 2 द्वारा 2 सारणिक 1st Row ए बी 2nd Row सी डी सारणिक समाप्त बराबर का चिह्न ए डी minus बी सी"
+    },
+    "Sample_15_4_1_brief": {
+      "expected": "आरंभ 2 द्वारा 2 सारणिक 1st Row ए बी 2nd Row सी डी सारणिक समाप्त बराबर का चिह्न ए डी minus बी सी"
+    },
+    "Sample_15_4_1_sbrief": {
+      "expected": "2 द्वारा 2 सारणिक 1st Row ए बी 2nd Row सी डी सारणिक समाप्त बराबर का चिह्न ए डी minus बी सी"
+    },
+    "Sample_15_6_1_default": {
+      "expected": "द्विपद अथवा आव्यूह आरंभ एक्स चयन करें वाई द्विपद अथवा आव्यूह समाप्त"
+    },
+    "Sample_15_6_1_brief": {
+      "expected": "द्विपद अथवा आव्यूह आरंभ एक्स चयन करें वाई द्विपद अथवा आव्यूह समाप्त"
+    },
+    "Sample_15_6_1_sbrief": {
+      "expected": "द्विपद अथवा आव्यूह एक्स चयन करें वाई द्विपद अथवा आव्यूह समाप्त"
+    }
+  }
+}

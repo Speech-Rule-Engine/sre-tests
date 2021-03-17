@@ -1,0 +1,73 @@
+{
+  "_comment0_": " Tests from the issues discovered in ClearspeakEnglish rules.",
+  "name": "HindiClearspeakIssues",
+  "locale": "hi",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_issues.json",
+  "information": "Hindi Clearspeak Issues tests.",
+  "active": "ClearspeakIssuesHindi",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Issue230_1": {
+      "expected": "5 और, 3 over 224"
+    },
+    "Issue230_2": {
+      "expected": "5 और तीन चारths"
+    },
+    "IssueNumbers_1": {
+      "expected": "संख्या t 2 e 4"
+    },
+    "IssueNumbers_2": {
+      "expected": "संख्या संख्या चिह्न :  पाउन्ड चिन्ह :  हैश :  crosshatch :  octothorpe F F 0 0 0 0"
+    },
+    "IssueNumbers_3": {
+      "expected": "संख्या संख्या चिह्न :  पाउन्ड चिन्ह :  हैश :  crosshatch :  octothorpe F F F F"
+    },
+    "Issue320_1": {
+      "expected": "आंशिक अवकलन"
+    },
+    "Issue320_2": {
+      "expected": "एक्स क्रमगुणित"
+    },
+    "Issue320_3": {
+      "expected": "ऋण ऋण एक्स"
+    },
+    "Issue320_4": {
+      "expected": "पलस हसताक्षर पलस हसताक्षर एक्स"
+    },
+    "Issue320_5": {
+      "expected": "साइन साइन एक्स"
+    },
+    "Issue320_6": {
+      "expected": "आंशिक अवकलन आंशिक अवकलन एक्स"
+    },
+    "Issue320_7": {
+      "expected": "वाम कोष्ठक :  कोष्ठक खोलना, भिन्न जिसका अंश आंशिक अवकलन वर्गित, और हर आंशिक अवकलन एक्स वर्गित, पलस हसताक्षर, भिन्न जिसका अंश आंशिक अवकलन वर्गित, और हर आंशिक अवकलन वाई वर्गित, सही कोष्ठक :  बंद कोष्ठक, अदृश्य समय, का निरपेक्ष मान फाई अदृश्य समय, वाम कोष्ठक :  कोष्ठक खोलना, एक्स पलस हसताक्षर सामान्य आय, वाई, सही कोष्ठक :  बंद कोष्ठक, वर्गित बराबर का चिह्न 0"
+    },
+    "Issue301_1": {
+      "expected": "4 मिलीमीटरs"
+    },
+    "Issue301_2": {
+      "expected": "1 मिलीमीटर"
+    },
+    "Issue301_3": {
+      "expected": "4 मिलीमीटरs"
+    },
+    "Issue301_4": {
+      "expected": "1 मिलीमीटर"
+    },
+    "Issue_442_0": {
+      "expected": "9 divided by 3 बराबर नही है 9 गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद 3"
+    },
+    "Issue_442_1": {
+      "expected": "9 divided by 3"
+    },
+    "Issue_442_2": {
+      "expected": "9 divided by 3 बराबर नही है 9 गुणन चिन्ह :  z अंकन कार्टेसियन उत्पाद 3"
+    },
+    "Issue_442_3": {
+      "expected": "9 divided by 3"
+    }
+  }
+}

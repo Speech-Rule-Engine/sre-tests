@@ -1,0 +1,243 @@
+{
+  "name": "HindiPrefix",
+  "locale": "hi",
+  "factory": "prefix",
+  "base": "input/common/prefix.json",
+  "information": "Hindi Prefix rule tests.",
+  "active": "PrefixHindi",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Sub_0": {
+      "expected": "आधार"
+    },
+    "Sub_1": {
+      "expected": "पादांक (when a number)"
+    },
+    "Sub_2": {
+      "expected": ""
+    },
+    "Super_0": {
+      "expected": "आधार"
+    },
+    "Super_1": {
+      "expected": "घातांक"
+    },
+    "Super_2": {
+      "expected": ""
+    },
+    "Over_0": {
+      "expected": "आधार"
+    },
+    "Over_1": {
+      "expected": "उर्ध्वान्क (when a number)"
+    },
+    "Over_2": {
+      "expected": ""
+    },
+    "Under_0": {
+      "expected": "आधार"
+    },
+    "Under_1": {
+      "expected": "निम्नांक (when a number)"
+    },
+    "Under_2": {
+      "expected": ""
+    },
+    "Fractions_0": {
+      "expected": "अंश"
+    },
+    "Fractions_1": {
+      "expected": "हर"
+    },
+    "Fractions_2": {
+      "expected": ""
+    },
+    "SquareRoot_0": {
+      "expected": "करणीगत राशि"
+    },
+    "SquareRoot_1": {
+      "expected": ""
+    },
+    "Root_0": {
+      "expected": "करणीगत राशि"
+    },
+    "Root_1": {
+      "expected": "सूचि"
+    },
+    "Root_2": {
+      "expected": ""
+    },
+    "SimpleTensors_0": {
+      "expected": "आधार"
+    },
+    "SimpleTensors_1": {
+      "expected": "वाम पादांक (when a number)"
+    },
+    "SimpleTensors_2": {
+      "expected": "वाम उर्ध्वान्क (when a number)"
+    },
+    "SimpleTensors_3": {
+      "expected": "दक्षिण पादांक (when a number)"
+    },
+    "SimpleTensors_4": {
+      "expected": "दक्षिण उर्ध्वान्क (when a number)"
+    },
+    "ComplexTensors_0": {
+      "expected": "आधार"
+    },
+    "ComplexTensors_1": {
+      "expected": "1st वाम पादांक (when a number)"
+    },
+    "ComplexTensors_2": {
+      "expected": "2nd वाम पादांक (when a number)"
+    },
+    "ComplexTensors_3": {
+      "expected": "1st वाम उर्ध्वान्क (when a number)"
+    },
+    "ComplexTensors_4": {
+      "expected": "2nd वाम उर्ध्वान्क (when a number)"
+    },
+    "ComplexTensors_5": {
+      "expected": "1st दक्षिण पादांक (when a number)"
+    },
+    "ComplexTensors_6": {
+      "expected": "2nd दक्षिण पादांक (when a number)"
+    },
+    "ComplexTensors_7": {
+      "expected": "1st दक्षिण उर्ध्वान्क (when a number)"
+    },
+    "ComplexTensors_8": {
+      "expected": "2nd दक्षिण उर्ध्वान्क (when a number)"
+    },
+    "ComplexTensors_9": {
+      "expected": ""
+    },
+    "Binomials_0": {
+      "expected": "विकल्प तादात"
+    },
+    "Binomials_1": {
+      "expected": "चयन तादात"
+    },
+    "Binomials_2": {
+      "expected": ""
+    },
+    "Binomials_3": {
+      "expected": ""
+    },
+    "Binomials_4": {
+      "expected": ""
+    },
+    "Vectors_0": {
+      "expected": "1st पंक्ति"
+    },
+    "Vectors_1": {
+      "expected": "2nd पंक्ति"
+    },
+    "Vectors_2": {
+      "expected": "3rd पंक्ति"
+    },
+    "Vectors_3": {
+      "expected": ""
+    },
+    "Vectors_4": {
+      "expected": ""
+    },
+    "Vectors_5": {
+      "expected": ""
+    },
+    "Matrices_depth_0": {
+      "expected": "1st पंक्ति"
+    },
+    "Matrices_depth_1": {
+      "expected": "1st पंक्ति, 1st स्तंभ"
+    },
+    "Matrices_depth_2": {
+      "expected": "1st पंक्ति, 2nd स्तंभ"
+    },
+    "Matrices_depth_3": {
+      "expected": "2nd पंक्ति"
+    },
+    "Matrices_depth_4": {
+      "expected": "2nd पंक्ति, 1st स्तंभ"
+    },
+    "Matrices_depth_5": {
+      "expected": "2nd पंक्ति, 2nd स्तंभ"
+    },
+    "Matrices_depth_6": {
+      "expected": ""
+    },
+    "Matrices_depth_7": {
+      "expected": ""
+    },
+    "Matrices_depth_8": {
+      "expected": ""
+    },
+    "Matrices_0": {
+      "expected": "1st पंक्ति"
+    },
+    "Matrices_1": {
+      "expected": "1st पंक्ति, 1st स्तंभ"
+    },
+    "Matrices_2": {
+      "expected": "1st पंक्ति, 2nd स्तंभ"
+    },
+    "Matrices_3": {
+      "expected": "2nd पंक्ति"
+    },
+    "Matrices_4": {
+      "expected": "2nd पंक्ति, 1st स्तंभ"
+    },
+    "Matrices_5": {
+      "expected": "2nd पंक्ति, 2nd स्तंभ"
+    },
+    "Matrices_6": {
+      "expected": ""
+    },
+    "Matrices_7": {
+      "expected": ""
+    },
+    "Matrices_8": {
+      "expected": ""
+    },
+    "LimBoth_0": {
+      "expected": "आधार"
+    },
+    "LimBoth_1": {
+      "expected": "उर्ध्वान्क (when a number)"
+    },
+    "LimBoth_2": {
+      "expected": "निम्नांक (when a number)"
+    },
+    "LimBoth_3": {
+      "expected": "आधार"
+    },
+    "LimBoth_4": {
+      "expected": "आधार"
+    },
+    "LimUpper_0": {
+      "expected": "उर्ध्वान्क (when a number)"
+    },
+    "LimUpper_1": {
+      "expected": "उर्ध्वान्क (when a number)"
+    },
+    "LimUpper_2": {
+      "expected": "आधार"
+    },
+    "LimUpper_3": {
+      "expected": "आधार"
+    },
+    "LimLower_0": {
+      "expected": "निम्नांक (when a number)"
+    },
+    "LimLower_1": {
+      "expected": "निम्नांक (when a number)"
+    },
+    "LimLower_2": {
+      "expected": "आधार"
+    },
+    "LimLower_3": {
+      "expected": "आधार"
+    }
+  }
+}

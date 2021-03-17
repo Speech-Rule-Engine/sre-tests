@@ -1,0 +1,85 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "HindiClearspeakAbsoluteValue",
+  "locale": "hi",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_absolute_value.json",
+  "information": "Hindi Clearspeak AbsoluteValue rule tests.",
+  "active": "ClearspeakHindi",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Abs01": {
+      "expected": "का निरपेक्ष मान एक्स"
+    },
+    "Abs02": {
+      "expected": "का निरपेक्ष मान एक्स पलस हसताक्षर 1"
+    },
+    "Abs03": {
+      "expected": "का निरपेक्ष मान एक्स, पलस हसताक्षर 1"
+    },
+    "Abs04": {
+      "expected": "का निरपेक्ष मान एक्स, पलस हसताक्षर, का निरपेक्ष मान वाई, इससे बड़ा या इसके बराबर, का निरपेक्ष मान जेड"
+    },
+    "AbsEnd01": {
+      "expected": "का निरपेक्ष मान एक्स, निरपेक्ष मान समाप्त"
+    },
+    "AbsEnd02": {
+      "expected": "का निरपेक्ष मान एक्स पलस हसताक्षर 1, निरपेक्ष मान समाप्त"
+    },
+    "AbsEnd03": {
+      "expected": "का निरपेक्ष मान एक्स, निरपेक्ष मान समाप्त, पलस हसताक्षर 1"
+    },
+    "AbsEnd04": {
+      "expected": "का निरपेक्ष मान एक्स, निरपेक्ष मान समाप्त, पलस हसताक्षर, का निरपेक्ष मान वाई, निरपेक्ष मान समाप्त, इससे बड़ा या इसके बराबर, का निरपेक्ष मान जेड, निरपेक्ष मान समाप्त"
+    },
+    "Card01": {
+      "expected": "की गणनीयता कैपिटल एस"
+    },
+    "Determinant01": {
+      "expected": "का सारणिक कैपिटल एम"
+    },
+    "AbsDet01": {
+      "expected": "का सारणिक 2 द्वारा 2 आव्यूह. Row 1: 2, 1 Row 2: 7, 5"
+    },
+    "AbsDet02": {
+      "expected": "का सारणिक 3 द्वारा 3 आव्यूह. Row 1: 2, 4, 1 Row 2: 3, 5, 2 Row 3: 1, 4, 7"
+    },
+    "AbsDet03": {
+      "expected": "का सारणिक 4 द्वारा 4 आव्यूह. Row 1: Column 1, 0; Column 2, 3; Column 3, 4; Column 4, 3. Row 2: Column 1, 2; Column 2, 1; Column 3, 0; Column 4, 9. Row 3: Column 1, 3; Column 2, 0; Column 3, 2; Column 4, 1. Row 4: Column 1, 6; Column 2, 2; Column 3, 9; Column 4, 0"
+    },
+    "AbsDet04": {
+      "expected": "का सारणिक 2 द्वारा 2 आव्यूह. Row 1: Column 1, 2; Column 2, 1. Row 2: Column 1, 7; Column 2, 5 पलस हसताक्षर एक्स"
+    },
+    "AbsDet05": {
+      "expected": "का सारणिक 2 द्वारा 2 आव्यूह. Row 1: 2 एक्स, 1 Row 2: 7, 5"
+    },
+    "AbsDet06": {
+      "expected": "का सारणिक 2 द्वारा 2 आव्यूह. Row 1: 2 एक्स, वाई Row 2: एक half, दो तीनths"
+    },
+    "AbsDet07": {
+      "expected": "का सारणिक 2 द्वारा 2 आव्यूह. Row 1: एक half, दो तीनths Row 2: तीन चारths, एक पाँचth"
+    },
+    "AbsDet08": {
+      "expected": "का सारणिक 2 द्वारा 2 आव्यूह. Row 1: 2, 1 Row 2: 7, 5"
+    },
+    "AbsDet09": {
+      "expected": "का सारणिक 3 द्वारा 3 आव्यूह. Row 1: 2, 4, 1 Row 2: 3, 5, 2 Row 3: 1, 4, 7"
+    },
+    "AbsDet10": {
+      "expected": "का सारणिक 4 द्वारा 4 आव्यूह. Row 1: Column 1, 0; Column 2, 3; Column 3, 4; Column 4, 3. Row 2: Column 1, 2; Column 2, 1; Column 3, 0; Column 4, 9. Row 3: Column 1, 3; Column 2, 0; Column 3, 2; Column 4, 1. Row 4: Column 1, 6; Column 2, 2; Column 3, 9; Column 4, 0"
+    },
+    "AbsDet11": {
+      "expected": "का सारणिक 2 द्वारा 2 आव्यूह. Row 1: Column 1, 2; Column 2, 1. Row 2: Column 1, 7; Column 2, 5 पलस हसताक्षर एक्स"
+    },
+    "AbsDet12": {
+      "expected": "का सारणिक 2 द्वारा 2 आव्यूह. Row 1: 2 एक्स, 1 Row 2: 7, 5"
+    },
+    "AbsDet13": {
+      "expected": "का सारणिक 2 द्वारा 2 आव्यूह. Row 1: 2 एक्स, वाई Row 2: एक half, दो तीनths"
+    },
+    "AbsDet14": {
+      "expected": "का सारणिक 2 द्वारा 2 आव्यूह. Row 1: एक half, दो तीनths Row 2: तीन चारths, एक पाँचth"
+    }
+  }
+}

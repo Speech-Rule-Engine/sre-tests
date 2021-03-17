@@ -1,0 +1,274 @@
+{
+  "name": "HindiMathspeakIssues1",
+  "locale": "hi",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_issues1.json",
+  "information": "Hindi Mathspeak Issues 1.",
+  "domain": "mathspeak",
+  "active": "MathspeakIssuesHindi",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "AbsValueVsNeutral_0_default": {
+      "expected": "निरपेक्ष मान आरंभ ए निरपेक्ष मान समाप्त"
+    },
+    "AbsValueVsNeutral_0_brief": {
+      "expected": "निरपेक्ष मान आरंभ ए निरपेक्ष मान समाप्त"
+    },
+    "AbsValueVsNeutral_0_sbrief": {
+      "expected": "निरपेक्ष मान ए निरपेक्ष मान समाप्त"
+    },
+    "AbsValueVsNeutral_1_default": {
+      "expected": "निरपेक्ष मान आरंभ ए निरपेक्ष मान समाप्त"
+    },
+    "AbsValueVsNeutral_1_brief": {
+      "expected": "निरपेक्ष मान आरंभ ए निरपेक्ष मान समाप्त"
+    },
+    "AbsValueVsNeutral_1_sbrief": {
+      "expected": "निरपेक्ष मान ए निरपेक्ष मान समाप्त"
+    },
+    "NegativeVulgarFraction_default": {
+      "expected": "ऋण पाँच अठारहths"
+    },
+    "NegativeVulgarFraction_brief": {
+      "expected": "ऋण पाँच अठारहths"
+    },
+    "NegativeVulgarFraction_sbrief": {
+      "expected": "ऋण पाँच अठारहths"
+    },
+    "NonalphaIdentifier_default": {
+      "expected": "30 डिग्री साइन"
+    },
+    "NonalphaIdentifier_brief": {
+      "expected": "30 डिग्री साइन"
+    },
+    "NonalphaIdentifier_sbrief": {
+      "expected": "30 डिग्री साइन"
+    },
+    "MixedIdentifier_default": {
+      "expected": "कैपिटल एस आय सामान्य कैपिटल ओ 2 पलस हसताक्षर 6 सामान्य कैपिटल एच सामान्य कैपिटल एफ दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन सामान्य कैपिटल एच 2 कैपिटल एस आय सामान्य कैपिटल एफ 6 पलस हसताक्षर 2 सामान्य कैपिटल एच 2 सामान्य कैपिटल ओ"
+    },
+    "MixedIdentifier_brief": {
+      "expected": "कैपिटल एस आय सामान्य कैपिटल ओ 2 पलस हसताक्षर 6 सामान्य कैपिटल एच सामान्य कैपिटल एफ दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन सामान्य कैपिटल एच 2 कैपिटल एस आय सामान्य कैपिटल एफ 6 पलस हसताक्षर 2 सामान्य कैपिटल एच 2 सामान्य कैपिटल ओ"
+    },
+    "MixedIdentifier_sbrief": {
+      "expected": "कैपिटल एस आय सामान्य कैपिटल ओ 2 पलस हसताक्षर 6 सामान्य कैपिटल एच सामान्य कैपिटल एफ दाईं ओर तीर :  z नोटेशन कुल फ़ंक्शन सामान्य कैपिटल एच 2 कैपिटल एस आय सामान्य कैपिटल एफ 6 पलस हसताक्षर 2 सामान्य कैपिटल एच 2 सामान्य कैपिटल ओ"
+    },
+    "ParenSuper_default": {
+      "expected": "वाम कोष्ठक :  कोष्ठक खोलना ए सही कोष्ठक :  बंद कोष्ठक वर्ग"
+    },
+    "ParenSuper_brief": {
+      "expected": "वाम कोष्ठक :  कोष्ठक खोलना ए सही कोष्ठक :  बंद कोष्ठक वर्ग"
+    },
+    "ParenSuper_sbrief": {
+      "expected": "वाम कोष्ठक :  कोष्ठक खोलना ए सही कोष्ठक :  बंद कोष्ठक वर्ग"
+    },
+    "ParenConvoluted_default": {
+      "expected": "वाम कोष्ठक :  कोष्ठक खोलना बाकी एक्स वर्ग सोलिडस :  स्लैश, कुंवारी 2 सही कोष्ठक :  बंद कोष्ठक"
+    },
+    "ParenConvoluted_brief": {
+      "expected": "वाम कोष्ठक :  कोष्ठक खोलना बाकी एक्स वर्ग सोलिडस :  स्लैश, कुंवारी 2 सही कोष्ठक :  बंद कोष्ठक"
+    },
+    "ParenConvoluted_sbrief": {
+      "expected": "वाम कोष्ठक :  कोष्ठक खोलना बाकी एक्स वर्ग सोलिडस :  स्लैश, कुंवारी 2 सही कोष्ठक :  बंद कोष्ठक"
+    },
+    "SupBaseRelseq_default": {
+      "expected": "सी 1 एच Superscript 4 minus 2 एस Baseline से कम या बराबर StartFraction 1 Over 2 कैपिटल टी EndFraction से कम या बराबर सी 2 एच Superscript 4 minus 2 एस"
+    },
+    "SupBaseRelseq_brief": {
+      "expected": "सी 1 एच Sup 4 minus 2 एस Base से कम या बराबर StartFrac 1 Over 2 कैपिटल टी EndFrac से कम या बराबर सी 2 एच Sup 4 minus 2 एस"
+    },
+    "SupBaseRelseq_sbrief": {
+      "expected": "सी 1 एच Sup 4 minus 2 एस Base से कम या बराबर Frac 1 Over 2 कैपिटल टी EndFrac से कम या बराबर सी 2 एच Sup 4 minus 2 एस"
+    },
+    "SupBaseMultirel_default": {
+      "expected": "सी 1 एच Superscript 4 minus 2 एस Baseline से कम या बराबर StartFraction 1 Over 2 कैपिटल टी EndFraction बराबर का चिह्न सी 2 एच Superscript 4 minus 2 एस"
+    },
+    "SupBaseMultirel_brief": {
+      "expected": "सी 1 एच Sup 4 minus 2 एस Base से कम या बराबर StartFrac 1 Over 2 कैपिटल टी EndFrac बराबर का चिह्न सी 2 एच Sup 4 minus 2 एस"
+    },
+    "SupBaseMultirel_sbrief": {
+      "expected": "सी 1 एच Sup 4 minus 2 एस Base से कम या बराबर Frac 1 Over 2 कैपिटल टी EndFrac बराबर का चिह्न सी 2 एच Sup 4 minus 2 एस"
+    },
+    "SubBaseRelseq_default": {
+      "expected": "एच Subscript एस Baseline से कम या बराबर StartFraction 1 Over 2 कैपिटल टी EndFraction से कम या बराबर एच Subscript एस"
+    },
+    "SubBaseRelseq_brief": {
+      "expected": "एच Sub एस Base से कम या बराबर StartFrac 1 Over 2 कैपिटल टी EndFrac से कम या बराबर एच Sub एस"
+    },
+    "SubBaseRelseq_sbrief": {
+      "expected": "एच Sub एस Base से कम या बराबर Frac 1 Over 2 कैपिटल टी EndFrac से कम या बराबर एच Sub एस"
+    },
+    "SubBaseMultirel_default": {
+      "expected": "एच Subscript एस Baseline से कम या बराबर StartFraction 1 Over 2 कैपिटल टी EndFraction बराबर का चिह्न एच Subscript एस"
+    },
+    "SubBaseMultirel_brief": {
+      "expected": "एच Sub एस Base से कम या बराबर StartFrac 1 Over 2 कैपिटल टी EndFrac बराबर का चिह्न एच Sub एस"
+    },
+    "SubBaseMultirel_sbrief": {
+      "expected": "एच Sub एस Base से कम या बराबर Frac 1 Over 2 कैपिटल टी EndFrac बराबर का चिह्न एच Sub एस"
+    },
+    "SubSuperBaseRelseq_default": {
+      "expected": "एच Subscript एस Superscript टी Baseline से कम या बराबर StartFraction 1 Over 2 कैपिटल टी EndFraction से कम या बराबर एच Subscript एस Superscript टी"
+    },
+    "SubSuperBaseRelseq_brief": {
+      "expected": "एच Sub एस Sup टी Base से कम या बराबर StartFrac 1 Over 2 कैपिटल टी EndFrac से कम या बराबर एच Sub एस Sup टी"
+    },
+    "SubSuperBaseRelseq_sbrief": {
+      "expected": "एच Sub एस Sup टी Base से कम या बराबर Frac 1 Over 2 कैपिटल टी EndFrac से कम या बराबर एच Sub एस Sup टी"
+    },
+    "SubSuperBaseMultirel_default": {
+      "expected": "एच Subscript एस Superscript टी Baseline से कम या बराबर StartFraction 1 Over 2 कैपिटल टी EndFraction बराबर का चिह्न एच Subscript एस Superscript टी"
+    },
+    "SubSuperBaseMultirel_brief": {
+      "expected": "एच Sub एस Sup टी Base से कम या बराबर StartFrac 1 Over 2 कैपिटल टी EndFrac बराबर का चिह्न एच Sub एस Sup टी"
+    },
+    "SubSuperBaseMultirel_sbrief": {
+      "expected": "एच Sub एस Sup टी Base से कम या बराबर Frac 1 Over 2 कैपिटल टी EndFrac बराबर का चिह्न एच Sub एस Sup टी"
+    },
+    "SquareWithText_default": {
+      "expected": "StartFraction area of triangle Over area of square EndFraction बराबर का चिह्न StartFraction 1 unit वर्ग Over 16 units घन EndFraction"
+    },
+    "SquareWithText_brief": {
+      "expected": "StartFrac area of triangle Over area of square EndFrac बराबर का चिह्न StartFrac 1 unit वर्ग Over 16 units घन EndFrac"
+    },
+    "SquareWithText_sbrief": {
+      "expected": "Frac area of triangle Over area of square EndFrac बराबर का चिह्न Frac 1 unit वर्ग Over 16 units घन EndFrac"
+    },
+    "FootnoteWithText_default": {
+      "expected": "area of triangle area of square Superscript 1 Baseline 1 unit Superscript 2 Baseline 16 units Superscript 3"
+    },
+    "FootnoteWithText_brief": {
+      "expected": "area of triangle area of square Sup 1 Base 1 unit Sup 2 Base 16 units Sup 3"
+    },
+    "FootnoteWithText_sbrief": {
+      "expected": "area of triangle area of square Sup 1 Base 1 unit Sup 2 Base 16 units Sup 3"
+    },
+    "FootnoteWithSimpleText_default": {
+      "expected": "area of triangle Superscript 2"
+    },
+    "FootnoteWithSimpleText_brief": {
+      "expected": "area of triangle Sup 2"
+    },
+    "FootnoteWithSimpleText_sbrief": {
+      "expected": "area of triangle Sup 2"
+    },
+    "LabelledRow_default": {
+      "expected": "खाका आरंभ 1st Row  लेबल के साथ वाम कोष्ठक :  कोष्ठक खोलना 1 सही कोष्ठक :  बंद कोष्ठक लेबल समाप्त 1st Column ए 2nd Column बी खाका समाप्त"
+    },
+    "LabelledRow_brief": {
+      "expected": "खाका आरंभ 1st Row  लेबल वाम कोष्ठक :  कोष्ठक खोलना 1 सही कोष्ठक :  बंद कोष्ठक 1st Column ए 2nd Column बी खाका समाप्त"
+    },
+    "LabelledRow_sbrief": {
+      "expected": "खाका 1st Row  लेबल वाम कोष्ठक :  कोष्ठक खोलना 1 सही कोष्ठक :  बंद कोष्ठक 1st Column ए 2nd Column बी खाका समाप्त"
+    },
+    "LabelledLine_default": {
+      "expected": "खाका आरंभ 1st Row  लेबल के साथ वाम कोष्ठक :  कोष्ठक खोलना 1 सही कोष्ठक :  बंद कोष्ठक लेबल समाप्त ए खाका समाप्त"
+    },
+    "LabelledLine_brief": {
+      "expected": "खाका आरंभ 1st Row  लेबल वाम कोष्ठक :  कोष्ठक खोलना 1 सही कोष्ठक :  बंद कोष्ठक ए खाका समाप्त"
+    },
+    "LabelledLine_sbrief": {
+      "expected": "खाका 1st Row  लेबल वाम कोष्ठक :  कोष्ठक खोलना 1 सही कोष्ठक :  बंद कोष्ठक ए खाका समाप्त"
+    },
+    "LabelledEmptyLine_default": {
+      "expected": "खाका आरंभ 1st Row  लेबल के साथ वाम कोष्ठक :  कोष्ठक खोलना 1 सही कोष्ठक :  बंद कोष्ठक लेबल समाप्त रिक्त खाका समाप्त"
+    },
+    "LabelledEmptyLine_brief": {
+      "expected": "खाका आरंभ 1st Row  लेबल वाम कोष्ठक :  कोष्ठक खोलना 1 सही कोष्ठक :  बंद कोष्ठक रिक्त खाका समाप्त"
+    },
+    "LabelledEmptyLine_sbrief": {
+      "expected": "खाका 1st Row  लेबल वाम कोष्ठक :  कोष्ठक खोलना 1 सही कोष्ठक :  बंद कोष्ठक रिक्त खाका समाप्त"
+    },
+    "EmptyLine_default": {
+      "expected": "खाका आरंभ 1st Row  रिक्त खाका समाप्त"
+    },
+    "EmptyLine_brief": {
+      "expected": "खाका आरंभ 1st Row  रिक्त खाका समाप्त"
+    },
+    "EmptyLine_sbrief": {
+      "expected": "खाका 1st Row  रिक्त खाका समाप्त"
+    },
+    "EmptyRow_default": {
+      "expected": "खाका आरंभ 1st Row 1st Column ए 2nd Column बी 2nd Row  रिक्त खाका समाप्त"
+    },
+    "EmptyRow_brief": {
+      "expected": "खाका आरंभ 1st Row 1st Column ए 2nd Column बी 2nd Row  रिक्त खाका समाप्त"
+    },
+    "EmptyRow_sbrief": {
+      "expected": "खाका 1st Row 1st Column ए 2nd Column बी 2nd Row  रिक्त खाका समाप्त"
+    },
+    "EmptyCell_default": {
+      "expected": "खाका आरंभ 1st Row  रिक्त खाका समाप्त"
+    },
+    "EmptyCell_brief": {
+      "expected": "खाका आरंभ 1st Row  रिक्त खाका समाप्त"
+    },
+    "EmptyCell_sbrief": {
+      "expected": "खाका 1st Row  रिक्त खाका समाप्त"
+    },
+    "TextLabelledLine_default": {
+      "expected": "खाका आरंभ 1st Row  लेबल के साथ वाम कोष्ठक :  कोष्ठक खोलना 1 सही कोष्ठक :  बंद कोष्ठक लेबल समाप्त ए खाका समाप्त"
+    },
+    "TextLabelledLine_brief": {
+      "expected": "खाका आरंभ 1st Row  लेबल वाम कोष्ठक :  कोष्ठक खोलना 1 सही कोष्ठक :  बंद कोष्ठक ए खाका समाप्त"
+    },
+    "TextLabelledLine_sbrief": {
+      "expected": "खाका 1st Row  लेबल 1 ए खाका समाप्त"
+    },
+    "TextLabelledRow_default": {
+      "expected": "खाका आरंभ 1st Row  लेबल के साथ वाम कोष्ठक :  कोष्ठक खोलना 1 सही कोष्ठक :  बंद कोष्ठक लेबल समाप्त 1st Column ए 2nd Column बी खाका समाप्त"
+    },
+    "TextLabelledRow_brief": {
+      "expected": "खाका आरंभ 1st Row  लेबल वाम कोष्ठक :  कोष्ठक खोलना 1 सही कोष्ठक :  बंद कोष्ठक 1st Column ए 2nd Column बी खाका समाप्त"
+    },
+    "TextLabelledRow_sbrief": {
+      "expected": "खाका 1st Row  लेबल 1 1st Column ए 2nd Column बी खाका समाप्त"
+    },
+    "EncloseOverbar_default": {
+      "expected": "ए उर्ध्व दंड"
+    },
+    "EncloseOverbar_brief": {
+      "expected": "ए उर्ध्व दंड"
+    },
+    "EncloseOverbar_sbrief": {
+      "expected": "ए उर्ध्व दंड"
+    },
+    "EncloseUnderbar_default": {
+      "expected": "ए अधो दंड"
+    },
+    "EncloseUnderbar_brief": {
+      "expected": "ए अधो दंड"
+    },
+    "EncloseUnderbar_sbrief": {
+      "expected": "ए अधो दंड"
+    },
+    "PrefixopSquare_default": {
+      "expected": "आंशिक अवकलन वर्ग एक्स"
+    },
+    "PrefixopSquare_brief": {
+      "expected": "आंशिक अवकलन वर्ग एक्स"
+    },
+    "PrefixopSquare_sbrief": {
+      "expected": "आंशिक अवकलन वर्ग एक्स"
+    },
+    "PrefixopCube_default": {
+      "expected": "आंशिक अवकलन घन एक्स"
+    },
+    "PrefixopCube_brief": {
+      "expected": "आंशिक अवकलन घन एक्स"
+    },
+    "PrefixopCube_sbrief": {
+      "expected": "आंशिक अवकलन घन एक्स"
+    },
+    "Vector_default": {
+      "expected": "आरंभ 3 द्वारा 1 आव्यूह 1st Row  ए 2nd Row  बी 3rd Row  सी आव्यूह समाप्त"
+    },
+    "Vector_brief": {
+      "expected": "आरंभ 3 द्वारा 1 आव्यूह 1st Row  ए 2nd Row  बी 3rd Row  सी आव्यूह समाप्त"
+    },
+    "Vector_sbrief": {
+      "expected": "3 द्वारा 1 आव्यूह 1st Row  ए 2nd Row  बी 3rd Row  सी आव्यूह समाप्त"
+    }
+  }
+}

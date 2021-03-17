@@ -1,0 +1,697 @@
+{
+  "name": "HindiMathspeakTensors",
+  "locale": "hi",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_tensors.json",
+  "information": "Hindi Mathspeak Tensor tests.",
+  "domain": "mathspeak",
+  "active": "MathspeakHindi",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "PartialTensorABCD_default": {
+      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी"
+    },
+    "PartialTensorABCD_brief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी Sup डी"
+    },
+    "PartialTensorABCD_sbrief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी Sup डी"
+    },
+    "PartialTensorABC_default": {
+      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी"
+    },
+    "PartialTensorABC_brief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी"
+    },
+    "PartialTensorABC_sbrief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी"
+    },
+    "PartialTensorABD_default": {
+      "expected": "Subscript ए Superscript बी Baseline एक्स Superscript डी"
+    },
+    "PartialTensorABD_brief": {
+      "expected": "Sub ए Sup बी Base एक्स Sup डी"
+    },
+    "PartialTensorABD_sbrief": {
+      "expected": "Sub ए Sup बी Base एक्स Sup डी"
+    },
+    "PartialTensorABDR_default": {
+      "expected": "Subscript ए Superscript बी Baseline एक्स Superscript डी Baseline आर"
+    },
+    "PartialTensorABDR_brief": {
+      "expected": "Sub ए Sup बी Base एक्स Sup डी Base आर"
+    },
+    "PartialTensorABDR_sbrief": {
+      "expected": "Sub ए Sup बी Base एक्स Sup डी Base आर"
+    },
+    "PartialTensorABDRootR_default": {
+      "expected": "StartRoot Subscript ए Superscript बी Baseline एक्स Superscript डी EndRoot आर"
+    },
+    "PartialTensorABDRootR_brief": {
+      "expected": "StartRoot Sub ए Sup बी Base एक्स Sup डी EndRoot आर"
+    },
+    "PartialTensorABDRootR_sbrief": {
+      "expected": "Root Sub ए Sup बी Base एक्स Sup डी EndRoot आर"
+    },
+    "PartialTensorABDRRoot_default": {
+      "expected": "StartRoot Subscript ए Superscript बी Baseline एक्स Superscript डी Baseline आर EndRoot"
+    },
+    "PartialTensorABDRRoot_brief": {
+      "expected": "StartRoot Sub ए Sup बी Base एक्स Sup डी Base आर EndRoot"
+    },
+    "PartialTensorABDRRoot_sbrief": {
+      "expected": "Root Sub ए Sup बी Base एक्स Sup डी Base आर EndRoot"
+    },
+    "PartialTensorABDFracR_default": {
+      "expected": "StartFraction 1 Over Subscript ए Superscript बी Baseline एक्स Superscript डी EndFraction आर"
+    },
+    "PartialTensorABDFracR_brief": {
+      "expected": "StartFrac 1 Over Sub ए Sup बी Base एक्स Sup डी EndFrac आर"
+    },
+    "PartialTensorABDFracR_sbrief": {
+      "expected": "Frac 1 Over Sub ए Sup बी Base एक्स Sup डी EndFrac आर"
+    },
+    "PartialTensorABDRFrac_default": {
+      "expected": "StartFraction 1 Over Subscript ए Superscript बी Baseline एक्स Superscript डी Baseline आर EndFraction"
+    },
+    "PartialTensorABDRFrac_brief": {
+      "expected": "StartFrac 1 Over Sub ए Sup बी Base एक्स Sup डी Base आर EndFrac"
+    },
+    "PartialTensorABDRFrac_sbrief": {
+      "expected": "Frac 1 Over Sub ए Sup बी Base एक्स Sup डी Base आर EndFrac"
+    },
+    "PartialTensorAB_default": {
+      "expected": "Subscript ए Superscript बी Baseline एक्स"
+    },
+    "PartialTensorAB_brief": {
+      "expected": "Sub ए Sup बी Base एक्स"
+    },
+    "PartialTensorAB_sbrief": {
+      "expected": "Sub ए Sup बी Base एक्स"
+    },
+    "PartialTensorABR_default": {
+      "expected": "Subscript ए Superscript बी Baseline एक्स Baseline आर"
+    },
+    "PartialTensorABR_brief": {
+      "expected": "Sub ए Sup बी Base एक्स Base आर"
+    },
+    "PartialTensorABR_sbrief": {
+      "expected": "Sub ए Sup बी Base एक्स Base आर"
+    },
+    "PartialTensorABRootR_default": {
+      "expected": "StartRoot Subscript ए Superscript बी Baseline एक्स EndRoot आर"
+    },
+    "PartialTensorABRootR_brief": {
+      "expected": "StartRoot Sub ए Sup बी Base एक्स EndRoot आर"
+    },
+    "PartialTensorABRootR_sbrief": {
+      "expected": "Root Sub ए Sup बी Base एक्स EndRoot आर"
+    },
+    "PartialTensorABRRoot_default": {
+      "expected": "StartRoot Subscript ए Superscript बी Baseline एक्स Baseline आर EndRoot"
+    },
+    "PartialTensorABRRoot_brief": {
+      "expected": "StartRoot Sub ए Sup बी Base एक्स Base आर EndRoot"
+    },
+    "PartialTensorABRRoot_sbrief": {
+      "expected": "Root Sub ए Sup बी Base एक्स Base आर EndRoot"
+    },
+    "PartialTensorABFracR_default": {
+      "expected": "StartFraction 1 Over Subscript ए Superscript बी Baseline एक्स EndFraction आर"
+    },
+    "PartialTensorABFracR_brief": {
+      "expected": "StartFrac 1 Over Sub ए Sup बी Base एक्स EndFrac आर"
+    },
+    "PartialTensorABFracR_sbrief": {
+      "expected": "Frac 1 Over Sub ए Sup बी Base एक्स EndFrac आर"
+    },
+    "PartialTensorABRFrac_default": {
+      "expected": "StartFraction 1 Over Subscript ए Superscript बी Baseline एक्स Baseline आर EndFraction"
+    },
+    "PartialTensorABRFrac_brief": {
+      "expected": "StartFrac 1 Over Sub ए Sup बी Base एक्स Base आर EndFrac"
+    },
+    "PartialTensorABRFrac_sbrief": {
+      "expected": "Frac 1 Over Sub ए Sup बी Base एक्स Base आर EndFrac"
+    },
+    "PartialTensorABCR_default": {
+      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी Baseline आर"
+    },
+    "PartialTensorABCR_brief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी Base आर"
+    },
+    "PartialTensorABCR_sbrief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी Base आर"
+    },
+    "PartialTensorABCDR_default": {
+      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी Baseline आर"
+    },
+    "PartialTensorABCDR_brief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी Sup डी Base आर"
+    },
+    "PartialTensorABCDR_sbrief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी Sup डी Base आर"
+    },
+    "PartialTensorABCDRoot_default": {
+      "expected": "StartRoot Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी EndRoot"
+    },
+    "PartialTensorABCDRoot_brief": {
+      "expected": "StartRoot Sub ए Sup बी Base एक्स Sub सी Sup डी EndRoot"
+    },
+    "PartialTensorABCDRoot_sbrief": {
+      "expected": "Root Sub ए Sup बी Base एक्स Sub सी Sup डी EndRoot"
+    },
+    "PartialTensorABCDRootR_default": {
+      "expected": "StartRoot Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी EndRoot आर"
+    },
+    "PartialTensorABCDRootR_brief": {
+      "expected": "StartRoot Sub ए Sup बी Base एक्स Sub सी Sup डी EndRoot आर"
+    },
+    "PartialTensorABCDRootR_sbrief": {
+      "expected": "Root Sub ए Sup बी Base एक्स Sub सी Sup डी EndRoot आर"
+    },
+    "PartialTensorABCDRRoot_default": {
+      "expected": "StartRoot Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी Baseline आर EndRoot"
+    },
+    "PartialTensorABCDRRoot_brief": {
+      "expected": "StartRoot Sub ए Sup बी Base एक्स Sub सी Sup डी Base आर EndRoot"
+    },
+    "PartialTensorABCDRRoot_sbrief": {
+      "expected": "Root Sub ए Sup बी Base एक्स Sub सी Sup डी Base आर EndRoot"
+    },
+    "PartialTensorABCDFrac_default": {
+      "expected": "StartFraction 1 Over Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी EndFraction"
+    },
+    "PartialTensorABCDFrac_brief": {
+      "expected": "StartFrac 1 Over Sub ए Sup बी Base एक्स Sub सी Sup डी EndFrac"
+    },
+    "PartialTensorABCDFrac_sbrief": {
+      "expected": "Frac 1 Over Sub ए Sup बी Base एक्स Sub सी Sup डी EndFrac"
+    },
+    "PartialTensorABCDFracR_default": {
+      "expected": "StartFraction 1 Over Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी EndFraction आर"
+    },
+    "PartialTensorABCDFracR_brief": {
+      "expected": "StartFrac 1 Over Sub ए Sup बी Base एक्स Sub सी Sup डी EndFrac आर"
+    },
+    "PartialTensorABCDFracR_sbrief": {
+      "expected": "Frac 1 Over Sub ए Sup बी Base एक्स Sub सी Sup डी EndFrac आर"
+    },
+    "PartialTensorABCDRFrac_default": {
+      "expected": "StartFraction 1 Over Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी Baseline आर EndFraction"
+    },
+    "PartialTensorABCDRFrac_brief": {
+      "expected": "StartFrac 1 Over Sub ए Sup बी Base एक्स Sub सी Sup डी Base आर EndFrac"
+    },
+    "PartialTensorABCDRFrac_sbrief": {
+      "expected": "Frac 1 Over Sub ए Sup बी Base एक्स Sub सी Sup डी Base आर EndFrac"
+    },
+    "PartialTensorB_default": {
+      "expected": "Superscript बी Baseline एक्स"
+    },
+    "PartialTensorB_brief": {
+      "expected": "Sup बी Base एक्स"
+    },
+    "PartialTensorB_sbrief": {
+      "expected": "Sup बी Base एक्स"
+    },
+    "PartialTensorBR_default": {
+      "expected": "Superscript बी Baseline एक्स Baseline आर"
+    },
+    "PartialTensorBR_brief": {
+      "expected": "Sup बी Base एक्स Base आर"
+    },
+    "PartialTensorBR_sbrief": {
+      "expected": "Sup बी Base एक्स Base आर"
+    },
+    "PartialTensorBRootR_default": {
+      "expected": "StartRoot Superscript बी Baseline एक्स EndRoot आर"
+    },
+    "PartialTensorBRootR_brief": {
+      "expected": "StartRoot Sup बी Base एक्स EndRoot आर"
+    },
+    "PartialTensorBRootR_sbrief": {
+      "expected": "Root Sup बी Base एक्स EndRoot आर"
+    },
+    "PartialTensorBRRoot_default": {
+      "expected": "StartRoot Superscript बी Baseline एक्स Baseline आर EndRoot"
+    },
+    "PartialTensorBRRoot_brief": {
+      "expected": "StartRoot Sup बी Base एक्स Base आर EndRoot"
+    },
+    "PartialTensorBRRoot_sbrief": {
+      "expected": "Root Sup बी Base एक्स Base आर EndRoot"
+    },
+    "PartialTensorBFracR_default": {
+      "expected": "StartFraction 1 Over Superscript बी Baseline एक्स EndFraction आर"
+    },
+    "PartialTensorBFracR_brief": {
+      "expected": "StartFrac 1 Over Sup बी Base एक्स EndFrac आर"
+    },
+    "PartialTensorBFracR_sbrief": {
+      "expected": "Frac 1 Over Sup बी Base एक्स EndFrac आर"
+    },
+    "PartialTensorBRFrac_default": {
+      "expected": "StartFraction 1 Over Superscript बी Baseline एक्स Baseline आर EndFraction"
+    },
+    "PartialTensorBRFrac_brief": {
+      "expected": "StartFrac 1 Over Sup बी Base एक्स Base आर EndFrac"
+    },
+    "PartialTensorBRFrac_sbrief": {
+      "expected": "Frac 1 Over Sup बी Base एक्स Base आर EndFrac"
+    },
+    "PartialTensorBD_default": {
+      "expected": "Superscript बी Baseline एक्स Superscript डी"
+    },
+    "PartialTensorBD_brief": {
+      "expected": "Sup बी Base एक्स Sup डी"
+    },
+    "PartialTensorBD_sbrief": {
+      "expected": "Sup बी Base एक्स Sup डी"
+    },
+    "PartialTensorBDR_default": {
+      "expected": "Superscript बी Baseline एक्स Superscript डी Baseline आर"
+    },
+    "PartialTensorBDR_brief": {
+      "expected": "Sup बी Base एक्स Sup डी Base आर"
+    },
+    "PartialTensorBDR_sbrief": {
+      "expected": "Sup बी Base एक्स Sup डी Base आर"
+    },
+    "PartialTensorBDRootR_default": {
+      "expected": "StartRoot Superscript बी Baseline एक्स Superscript डी EndRoot आर"
+    },
+    "PartialTensorBDRootR_brief": {
+      "expected": "StartRoot Sup बी Base एक्स Sup डी EndRoot आर"
+    },
+    "PartialTensorBDRootR_sbrief": {
+      "expected": "Root Sup बी Base एक्स Sup डी EndRoot आर"
+    },
+    "PartialTensorBDRRoot_default": {
+      "expected": "StartRoot Superscript बी Baseline एक्स Superscript डी Baseline आर EndRoot"
+    },
+    "PartialTensorBDRRoot_brief": {
+      "expected": "StartRoot Sup बी Base एक्स Sup डी Base आर EndRoot"
+    },
+    "PartialTensorBDRRoot_sbrief": {
+      "expected": "Root Sup बी Base एक्स Sup डी Base आर EndRoot"
+    },
+    "PartialTensorBDFracR_default": {
+      "expected": "StartFraction 1 Over Superscript बी Baseline एक्स Superscript डी EndFraction आर"
+    },
+    "PartialTensorBDFracR_brief": {
+      "expected": "StartFrac 1 Over Sup बी Base एक्स Sup डी EndFrac आर"
+    },
+    "PartialTensorBDFracR_sbrief": {
+      "expected": "Frac 1 Over Sup बी Base एक्स Sup डी EndFrac आर"
+    },
+    "PartialTensorBDRFrac_default": {
+      "expected": "StartFraction 1 Over Superscript बी Baseline एक्स Superscript डी Baseline आर EndFraction"
+    },
+    "PartialTensorBDRFrac_brief": {
+      "expected": "StartFrac 1 Over Sup बी Base एक्स Sup डी Base आर EndFrac"
+    },
+    "PartialTensorBDRFrac_sbrief": {
+      "expected": "Frac 1 Over Sup बी Base एक्स Sup डी Base आर EndFrac"
+    },
+    "PartialTensorBC_default": {
+      "expected": "Superscript बी Baseline एक्स Subscript सी"
+    },
+    "PartialTensorBC_brief": {
+      "expected": "Sup बी Base एक्स Sub सी"
+    },
+    "PartialTensorBC_sbrief": {
+      "expected": "Sup बी Base एक्स Sub सी"
+    },
+    "PartialTensorBCR_default": {
+      "expected": "Superscript बी Baseline एक्स Subscript सी Baseline आर"
+    },
+    "PartialTensorBCR_brief": {
+      "expected": "Sup बी Base एक्स Sub सी Base आर"
+    },
+    "PartialTensorBCR_sbrief": {
+      "expected": "Sup बी Base एक्स Sub सी Base आर"
+    },
+    "PartialTensorBCRootR_default": {
+      "expected": "StartRoot Superscript बी Baseline एक्स Subscript सी EndRoot आर"
+    },
+    "PartialTensorBCRootR_brief": {
+      "expected": "StartRoot Sup बी Base एक्स Sub सी EndRoot आर"
+    },
+    "PartialTensorBCRootR_sbrief": {
+      "expected": "Root Sup बी Base एक्स Sub सी EndRoot आर"
+    },
+    "PartialTensorBCRRoot_default": {
+      "expected": "StartRoot Superscript बी Baseline एक्स Subscript सी Baseline आर EndRoot"
+    },
+    "PartialTensorBCRRoot_brief": {
+      "expected": "StartRoot Sup बी Base एक्स Sub सी Base आर EndRoot"
+    },
+    "PartialTensorBCRRoot_sbrief": {
+      "expected": "Root Sup बी Base एक्स Sub सी Base आर EndRoot"
+    },
+    "PartialTensorBCFracR_default": {
+      "expected": "StartFraction 1 Over Superscript बी Baseline एक्स Subscript सी EndFraction आर"
+    },
+    "PartialTensorBCFracR_brief": {
+      "expected": "StartFrac 1 Over Sup बी Base एक्स Sub सी EndFrac आर"
+    },
+    "PartialTensorBCFracR_sbrief": {
+      "expected": "Frac 1 Over Sup बी Base एक्स Sub सी EndFrac आर"
+    },
+    "PartialTensorBCRFrac_default": {
+      "expected": "StartFraction 1 Over Superscript बी Baseline एक्स Subscript सी Baseline आर EndFraction"
+    },
+    "PartialTensorBCRFrac_brief": {
+      "expected": "StartFrac 1 Over Sup बी Base एक्स Sub सी Base आर EndFrac"
+    },
+    "PartialTensorBCRFrac_sbrief": {
+      "expected": "Frac 1 Over Sup बी Base एक्स Sub सी Base आर EndFrac"
+    },
+    "PartialTensorBCD_default": {
+      "expected": "Superscript बी Baseline एक्स Subscript सी Superscript डी"
+    },
+    "PartialTensorBCD_brief": {
+      "expected": "Sup बी Base एक्स Sub सी Sup डी"
+    },
+    "PartialTensorBCD_sbrief": {
+      "expected": "Sup बी Base एक्स Sub सी Sup डी"
+    },
+    "PartialTensorBCDR_default": {
+      "expected": "Superscript बी Baseline एक्स Subscript सी Superscript डी Baseline आर"
+    },
+    "PartialTensorBCDR_brief": {
+      "expected": "Sup बी Base एक्स Sub सी Sup डी Base आर"
+    },
+    "PartialTensorBCDR_sbrief": {
+      "expected": "Sup बी Base एक्स Sub सी Sup डी Base आर"
+    },
+    "PartialTensorBCDRootR_default": {
+      "expected": "StartRoot Superscript बी Baseline एक्स Subscript सी Superscript डी EndRoot आर"
+    },
+    "PartialTensorBCDRootR_brief": {
+      "expected": "StartRoot Sup बी Base एक्स Sub सी Sup डी EndRoot आर"
+    },
+    "PartialTensorBCDRootR_sbrief": {
+      "expected": "Root Sup बी Base एक्स Sub सी Sup डी EndRoot आर"
+    },
+    "PartialTensorBCDRRoot_default": {
+      "expected": "StartRoot Superscript बी Baseline एक्स Subscript सी Superscript डी Baseline आर EndRoot"
+    },
+    "PartialTensorBCDRRoot_brief": {
+      "expected": "StartRoot Sup बी Base एक्स Sub सी Sup डी Base आर EndRoot"
+    },
+    "PartialTensorBCDRRoot_sbrief": {
+      "expected": "Root Sup बी Base एक्स Sub सी Sup डी Base आर EndRoot"
+    },
+    "PartialTensorBCDFracR_default": {
+      "expected": "StartFraction 1 Over Superscript बी Baseline एक्स Subscript सी Superscript डी EndFraction आर"
+    },
+    "PartialTensorBCDFracR_brief": {
+      "expected": "StartFrac 1 Over Sup बी Base एक्स Sub सी Sup डी EndFrac आर"
+    },
+    "PartialTensorBCDFracR_sbrief": {
+      "expected": "Frac 1 Over Sup बी Base एक्स Sub सी Sup डी EndFrac आर"
+    },
+    "PartialTensorBCDRFrac_default": {
+      "expected": "StartFraction 1 Over Superscript बी Baseline एक्स Subscript सी Superscript डी Baseline आर EndFraction"
+    },
+    "PartialTensorBCDRFrac_brief": {
+      "expected": "StartFrac 1 Over Sup बी Base एक्स Sub सी Sup डी Base आर EndFrac"
+    },
+    "PartialTensorBCDRFrac_sbrief": {
+      "expected": "Frac 1 Over Sup बी Base एक्स Sub सी Sup डी Base आर EndFrac"
+    },
+    "PartialTensorA_default": {
+      "expected": "Subscript ए Baseline एक्स"
+    },
+    "PartialTensorA_brief": {
+      "expected": "Sub ए Base एक्स"
+    },
+    "PartialTensorA_sbrief": {
+      "expected": "Sub ए Base एक्स"
+    },
+    "PartialTensorAR_default": {
+      "expected": "Subscript ए Baseline एक्स Baseline आर"
+    },
+    "PartialTensorAR_brief": {
+      "expected": "Sub ए Base एक्स Base आर"
+    },
+    "PartialTensorAR_sbrief": {
+      "expected": "Sub ए Base एक्स Base आर"
+    },
+    "PartialTensorARootR_default": {
+      "expected": "StartRoot Subscript ए Baseline एक्स EndRoot आर"
+    },
+    "PartialTensorARootR_brief": {
+      "expected": "StartRoot Sub ए Base एक्स EndRoot आर"
+    },
+    "PartialTensorARootR_sbrief": {
+      "expected": "Root Sub ए Base एक्स EndRoot आर"
+    },
+    "PartialTensorARRoot_default": {
+      "expected": "StartRoot Subscript ए Baseline एक्स Baseline आर EndRoot"
+    },
+    "PartialTensorARRoot_brief": {
+      "expected": "StartRoot Sub ए Base एक्स Base आर EndRoot"
+    },
+    "PartialTensorARRoot_sbrief": {
+      "expected": "Root Sub ए Base एक्स Base आर EndRoot"
+    },
+    "PartialTensorAFracR_default": {
+      "expected": "StartFraction 1 Over Subscript ए Baseline एक्स EndFraction आर"
+    },
+    "PartialTensorAFracR_brief": {
+      "expected": "StartFrac 1 Over Sub ए Base एक्स EndFrac आर"
+    },
+    "PartialTensorAFracR_sbrief": {
+      "expected": "Frac 1 Over Sub ए Base एक्स EndFrac आर"
+    },
+    "PartialTensorARFrac_default": {
+      "expected": "StartFraction 1 Over Subscript ए Baseline एक्स Baseline आर EndFraction"
+    },
+    "PartialTensorARFrac_brief": {
+      "expected": "StartFrac 1 Over Sub ए Base एक्स Base आर EndFrac"
+    },
+    "PartialTensorARFrac_sbrief": {
+      "expected": "Frac 1 Over Sub ए Base एक्स Base आर EndFrac"
+    },
+    "PartialTensorAD_default": {
+      "expected": "Subscript ए Baseline एक्स Superscript डी"
+    },
+    "PartialTensorAD_brief": {
+      "expected": "Sub ए Base एक्स Sup डी"
+    },
+    "PartialTensorAD_sbrief": {
+      "expected": "Sub ए Base एक्स Sup डी"
+    },
+    "PartialTensorADR_default": {
+      "expected": "Subscript ए Baseline एक्स Superscript डी Baseline आर"
+    },
+    "PartialTensorADR_brief": {
+      "expected": "Sub ए Base एक्स Sup डी Base आर"
+    },
+    "PartialTensorADR_sbrief": {
+      "expected": "Sub ए Base एक्स Sup डी Base आर"
+    },
+    "PartialTensorADRootR_default": {
+      "expected": "StartRoot Subscript ए Baseline एक्स Superscript डी EndRoot आर"
+    },
+    "PartialTensorADRootR_brief": {
+      "expected": "StartRoot Sub ए Base एक्स Sup डी EndRoot आर"
+    },
+    "PartialTensorADRootR_sbrief": {
+      "expected": "Root Sub ए Base एक्स Sup डी EndRoot आर"
+    },
+    "PartialTensorADRRoot_default": {
+      "expected": "StartRoot Subscript ए Baseline एक्स Superscript डी Baseline आर EndRoot"
+    },
+    "PartialTensorADRRoot_brief": {
+      "expected": "StartRoot Sub ए Base एक्स Sup डी Base आर EndRoot"
+    },
+    "PartialTensorADRRoot_sbrief": {
+      "expected": "Root Sub ए Base एक्स Sup डी Base आर EndRoot"
+    },
+    "PartialTensorADFracR_default": {
+      "expected": "StartFraction 1 Over Subscript ए Baseline एक्स Superscript डी EndFraction आर"
+    },
+    "PartialTensorADFracR_brief": {
+      "expected": "StartFrac 1 Over Sub ए Base एक्स Sup डी EndFrac आर"
+    },
+    "PartialTensorADFracR_sbrief": {
+      "expected": "Frac 1 Over Sub ए Base एक्स Sup डी EndFrac आर"
+    },
+    "PartialTensorADRFrac_default": {
+      "expected": "StartFraction 1 Over Subscript ए Baseline एक्स Superscript डी Baseline आर EndFraction"
+    },
+    "PartialTensorADRFrac_brief": {
+      "expected": "StartFrac 1 Over Sub ए Base एक्स Sup डी Base आर EndFrac"
+    },
+    "PartialTensorADRFrac_sbrief": {
+      "expected": "Frac 1 Over Sub ए Base एक्स Sup डी Base आर EndFrac"
+    },
+    "PartialTensorAC_default": {
+      "expected": "Subscript ए Baseline एक्स Subscript सी"
+    },
+    "PartialTensorAC_brief": {
+      "expected": "Sub ए Base एक्स Sub सी"
+    },
+    "PartialTensorAC_sbrief": {
+      "expected": "Sub ए Base एक्स Sub सी"
+    },
+    "PartialTensorACR_default": {
+      "expected": "Subscript ए Baseline एक्स Subscript सी Baseline आर"
+    },
+    "PartialTensorACR_brief": {
+      "expected": "Sub ए Base एक्स Sub सी Base आर"
+    },
+    "PartialTensorACR_sbrief": {
+      "expected": "Sub ए Base एक्स Sub सी Base आर"
+    },
+    "PartialTensorACRootR_default": {
+      "expected": "StartRoot Subscript ए Baseline एक्स Subscript सी EndRoot आर"
+    },
+    "PartialTensorACRootR_brief": {
+      "expected": "StartRoot Sub ए Base एक्स Sub सी EndRoot आर"
+    },
+    "PartialTensorACRootR_sbrief": {
+      "expected": "Root Sub ए Base एक्स Sub सी EndRoot आर"
+    },
+    "PartialTensorACRRoot_default": {
+      "expected": "StartRoot Subscript ए Baseline एक्स Subscript सी Baseline आर EndRoot"
+    },
+    "PartialTensorACRRoot_brief": {
+      "expected": "StartRoot Sub ए Base एक्स Sub सी Base आर EndRoot"
+    },
+    "PartialTensorACRRoot_sbrief": {
+      "expected": "Root Sub ए Base एक्स Sub सी Base आर EndRoot"
+    },
+    "PartialTensorACFracR_default": {
+      "expected": "StartFraction 1 Over Subscript ए Baseline एक्स Subscript सी EndFraction आर"
+    },
+    "PartialTensorACFracR_brief": {
+      "expected": "StartFrac 1 Over Sub ए Base एक्स Sub सी EndFrac आर"
+    },
+    "PartialTensorACFracR_sbrief": {
+      "expected": "Frac 1 Over Sub ए Base एक्स Sub सी EndFrac आर"
+    },
+    "PartialTensorACRFrac_default": {
+      "expected": "StartFraction 1 Over Subscript ए Baseline एक्स Subscript सी Baseline आर EndFraction"
+    },
+    "PartialTensorACRFrac_brief": {
+      "expected": "StartFrac 1 Over Sub ए Base एक्स Sub सी Base आर EndFrac"
+    },
+    "PartialTensorACRFrac_sbrief": {
+      "expected": "Frac 1 Over Sub ए Base एक्स Sub सी Base आर EndFrac"
+    },
+    "PartialTensorACD_default": {
+      "expected": "Subscript ए Baseline एक्स Subscript सी Superscript डी"
+    },
+    "PartialTensorACD_brief": {
+      "expected": "Sub ए Base एक्स Sub सी Sup डी"
+    },
+    "PartialTensorACD_sbrief": {
+      "expected": "Sub ए Base एक्स Sub सी Sup डी"
+    },
+    "PartialTensorACDR_default": {
+      "expected": "Subscript ए Baseline एक्स Subscript सी Superscript डी Baseline आर"
+    },
+    "PartialTensorACDR_brief": {
+      "expected": "Sub ए Base एक्स Sub सी Sup डी Base आर"
+    },
+    "PartialTensorACDR_sbrief": {
+      "expected": "Sub ए Base एक्स Sub सी Sup डी Base आर"
+    },
+    "PartialTensorACDRootR_default": {
+      "expected": "StartRoot Subscript ए Baseline एक्स Subscript सी Superscript डी EndRoot आर"
+    },
+    "PartialTensorACDRootR_brief": {
+      "expected": "StartRoot Sub ए Base एक्स Sub सी Sup डी EndRoot आर"
+    },
+    "PartialTensorACDRootR_sbrief": {
+      "expected": "Root Sub ए Base एक्स Sub सी Sup डी EndRoot आर"
+    },
+    "PartialTensorACDRRoot_default": {
+      "expected": "StartRoot Subscript ए Baseline एक्स Subscript सी Superscript डी Baseline आर EndRoot"
+    },
+    "PartialTensorACDRRoot_brief": {
+      "expected": "StartRoot Sub ए Base एक्स Sub सी Sup डी Base आर EndRoot"
+    },
+    "PartialTensorACDRRoot_sbrief": {
+      "expected": "Root Sub ए Base एक्स Sub सी Sup डी Base आर EndRoot"
+    },
+    "PartialTensorACDFracR_default": {
+      "expected": "StartFraction 1 Over Subscript ए Baseline एक्स Subscript सी Superscript डी EndFraction आर"
+    },
+    "PartialTensorACDFracR_brief": {
+      "expected": "StartFrac 1 Over Sub ए Base एक्स Sub सी Sup डी EndFrac आर"
+    },
+    "PartialTensorACDFracR_sbrief": {
+      "expected": "Frac 1 Over Sub ए Base एक्स Sub सी Sup डी EndFrac आर"
+    },
+    "PartialTensorACDRFrac_default": {
+      "expected": "StartFraction 1 Over Subscript ए Baseline एक्स Subscript सी Superscript डी Baseline आर EndFraction"
+    },
+    "PartialTensorACDRFrac_brief": {
+      "expected": "StartFrac 1 Over Sub ए Base एक्स Sub सी Sup डी Base आर EndFrac"
+    },
+    "PartialTensorACDRFrac_sbrief": {
+      "expected": "Frac 1 Over Sub ए Base एक्स Sub सी Sup डी Base आर EndFrac"
+    },
+    "TensorMultiSimpleABC_default": {
+      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी Sub Superscript एल"
+    },
+    "TensorMultiSimpleABC_brief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी Sub Sup एल"
+    },
+    "TensorMultiSimpleABC_sbrief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी Sub Sup एल"
+    },
+    "TensorMultiSub_default": {
+      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी Sub Subscript एल Superscript डी"
+    },
+    "TensorMultiSub_brief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी Sub Sub एल Sup डी"
+    },
+    "TensorMultiSub_sbrief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी Sub Sub एल Sup डी"
+    },
+    "TensorMultiSubSup_default": {
+      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी Sub Subscript एल Sub Sub Superscript के Subscript ई Superscript डी"
+    },
+    "TensorMultiSubSup_brief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी Sub Sub एल Sub Sub Sup के Sub ई Sup डी"
+    },
+    "TensorMultiSubSup_sbrief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी Sub Sub एल Sub Sub Sup के Sub ई Sup डी"
+    },
+    "TensorMultiSimple_default": {
+      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी Sub Superscript एल Superscript डी"
+    },
+    "TensorMultiSimple_brief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी Sub Sup एल Sup डी"
+    },
+    "TensorMultiSimple_sbrief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी Sub Sup एल Sup डी"
+    },
+    "TensorMultiComplex_default": {
+      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी के Sub Superscript एल Superscript डी"
+    },
+    "TensorMultiComplex_brief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी के Sub Sup एल Sup डी"
+    },
+    "TensorMultiComplex_sbrief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी के Sub Sup एल Sup डी"
+    },
+    "TwoTensors_default": {
+      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी Baseline Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी"
+    },
+    "TwoTensors_brief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी Sup डी Base Sub ए Sup बी Base एक्स Sub सी Sup डी"
+    },
+    "TwoTensors_sbrief": {
+      "expected": "Sub ए Sup बी Base एक्स Sub सी Sup डी Base Sub ए Sup बी Base एक्स Sub सी Sup डी"
+    }
+  }
+}

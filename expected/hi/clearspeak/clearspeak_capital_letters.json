@@ -1,0 +1,76 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "HindiClearspeakCapitalLetters",
+  "locale": "hi",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_capital_letters.json",
+  "information": "Hindi Clearspeak CapitalLetters rule tests.",
+  "active": "ClearspeakHindi",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Cap001": {
+      "expected": "साइन कैपिटल ए over ए, बराबर का चिह्न, साइन कैपिटल बी over बी"
+    },
+    "Cap002": {
+      "expected": "सी वर्गित बराबर का चिह्न ए वर्गित पलस हसताक्षर बी वर्गित घटाव का चिन्ह 2 ए बी कोस कैपिटल सी"
+    },
+    "Cap003": {
+      "expected": "टेन कैपिटल ए बराबर का चिह्न, ए over बी"
+    },
+    "Cap004": {
+      "expected": "कैपिटल ए कैपिटल बी"
+    },
+    "Cap005": {
+      "expected": "ए कैपिटल ए"
+    },
+    "Cap006": {
+      "expected": "बी कैपिटल ए"
+    },
+    "Cap007": {
+      "expected": "कैपिटल बी ए"
+    },
+    "Cap008": {
+      "expected": "कोण कैपिटल ए कैपिटल बी कैपिटल सी"
+    },
+    "Cap009": {
+      "expected": "का मापन कोण कैपिटल ए कैपिटल बी कैपिटल सी"
+    },
+    "Cap010": {
+      "expected": "का मापन कोण कैपिटल ए"
+    },
+    "Cap011": {
+      "expected": "साइन कैपिटल ए over ए, बराबर का चिह्न, साइन कैपिटल बी over बी"
+    },
+    "Cap012": {
+      "expected": "सी वर्गित बराबर का चिह्न ए वर्गित पलस हसताक्षर बी वर्गित घटाव का चिन्ह 2 ए बी कोस कैपिटल सी"
+    },
+    "Cap013": {
+      "expected": "टेन कैपिटल ए बराबर का चिह्न, ए over बी"
+    },
+    "Cap014": {
+      "expected": "कैपिटल ए, कैपिटल बी"
+    },
+    "Cap015": {
+      "expected": "ए, कैपिटल ए"
+    },
+    "Cap016": {
+      "expected": "बी, कैपिटल ए"
+    },
+    "Cap017": {
+      "expected": "कैपिटल बी, ए"
+    },
+    "Cap018": {
+      "expected": "कोण कैपिटल ए, कैपिटल बी, कैपिटल सी"
+    },
+    "Cap019": {
+      "expected": "का मापन कोण कैपिटल ए, कैपिटल बी, कैपिटल सी"
+    },
+    "Cap020": {
+      "expected": "का मापन कोण कैपिटल ए"
+    },
+    "Cap020a": {
+      "expected": "कोण कैपिटल ए"
+    }
+  }
+}
