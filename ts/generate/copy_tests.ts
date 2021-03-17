@@ -239,28 +239,31 @@ export function copySemanticTest(base: string) {
   if (!filename) {
     return;
   }
-  let basename = path.basename(base, '.json');
+  let basename = path.basename(base);
   let dirname = path.dirname(base);
-  let postfix = basename.replace(/^semantic/, '');
-  createSemanticTestFile(dirname, postfix, 'semantic_tree', base,
+  createSemanticTestFile(dirname, 'semantic_tree', basename,
                          {factory: 'stree'});
-  createSemanticTestFile(dirname, postfix, 'enrich_mathml', base,
+  createSemanticTestFile(dirname, 'enrich_mathml', basename,
                          {factory: 'enrichMathml', active: 'EnrichExamples'});
-  createSemanticTestFile(dirname, postfix, 'enrich_speech', base,
+  createSemanticTestFile(dirname, 'enrich_speech', basename,
                          {factory: 'enrichSpeech', tests: 'ALL'});
-  createSemanticTestFile(dirname, postfix, 'rebuild_stree', base,
+  createSemanticTestFile(dirname, 'rebuild_stree', basename,
                          {factory: 'rebuild', tests: 'ALL'});
+  createSemanticTestFile(dirname, 'semantic_xml', basename,
+                         {factory: 'semanticXml', tests: 'ALL'});
+  createSemanticTestFile(dirname, 'semantic_api', basename,
+                         {factory: 'semanticApi', tests: 'ALL'});
 }
 
-function createSemanticTestFile(dir: string, post: string, pre: string,
+function createSemanticTestFile(dir: string, kind: string,
                                 base: string, init: JsonFile) {
-  let filename = path.join(dir, `${pre}${post}.json`);
+  let filename = path.join(dir, kind, base);
   let file = TestUtil.fileExists(filename, TestPath.EXPECTED);
   if (file) {
     console.error(`File ${file} already exists.`);
     return;
   }
-  let basename = path.join('input', base);
+  let basename = path.join('input', dir, base);
   init.base = basename;
   if (!init.tests) {
     init.tests = {};

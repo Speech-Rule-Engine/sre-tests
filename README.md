@@ -529,16 +529,21 @@ ct.showDifference('en', 'it');
 
 ## Semantic Tests
 
-They generally reside in the `base` test directory and consist of four test types:
+They normally reside in the `semantic` test directory. The actual tests consist
+of six different types, therefore their expected files are given in six
+different sub-directories:
 
-1. `semantic_tree`, translate into semantic trees.
-2. `enrich_mathml`, translate to enriched Mathml output.
-3. `enrich_speech`, test if speech strings computed directly for a MathML
+1. `enrich_mathml`, translate to enriched Mathml output.
+2. `enrich_speech`, test if speech strings computed directly for a MathML
    expression are equivalent to those computed for enriched expressions.
-4. `rebuild_stree`, test if semantic trees build from enriched MathML
+3. `rebuild_stree`, test if semantic trees build from enriched MathML
    expressions are equivalent to hose computed directly.
-   
-Note that the latter two tests usually run with respect to `"tests": "ALL"`.
+4. `semantic_api`, tests consistency of the various semantic APIs.
+5. `semantic_tree`, translate into semantic trees.
+6. `semantic_xml`, tests consistency of the semantic tree parser, i.e., parsing
+   the XML output of the semantic tree results in the equivalent semantic tree.
+
+Note that tests 2, 3, 4, and 6, usually run with respect to `"tests": "ALL"`.
 
 
 ### Copying tests
@@ -552,6 +557,3 @@ ct.copySemanticTest(BASE);
 
 Note, that neither the `semantic_tree` nor the `enrich_mathml` tests will be
 filled with expected. This has to be done manually, e.g., using `ft.addMissing`.
-
-__Place and naming convention could change in the future as more semantic tests
-are created and split.__
