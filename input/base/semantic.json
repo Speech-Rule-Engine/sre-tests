@@ -1450,6 +1450,12 @@
     "SpacesAndEmptyFences_4": {
       "input": "<mrow><mo>{</mo><mtable><mtr><mtd><mi>u</mi></mtd></mtr></mtable><mo fence=\"true\"></mo></mrow><mspace width=\"2em\"/><mi>v</mi>"
     },
+    "SpacesAndEmptyFences_5": {
+      "input": "<mo>{</mo><mi>a</mi><mo fence=\"true\"></mo><mspace width=\"2em\"/><mi>v</mi>"
+    },
+    "SpacesAndEmptyFences_6": {
+      "input": "<mo>{</mo><mtable><mtr><mtd><mi>u</mi><mo fence=\"true\"></mo><mspace width=\"2em\"/><mi>v</mi></mtd></mtr></mtable>"
+    },
     "_comment_169": " Set expressions.",
     "Sets_0": {
       "input": "<mo>{</mo><mo>}</mo>"

@@ -1469,16 +1469,16 @@
     },
     "_comment_154": " Ellipses and explicit spacing.",
     "EllipsesExplicitSpacing_0": {
-      "expected": "<punctuated role=\"text\" id=\"3\"><content><punctuation role=\"dummy\" id=\"2\">⁣</punctuation></content><children><text role=\"unknown\" id=\"0\"> </text><punctuation role=\"ellipsis\" id=\"1\">…</punctuation></children></punctuated>"
+      "expected": "<punctuated role=\"text\" id=\"3\"><content><punctuation role=\"dummy\" id=\"2\">⁣</punctuation></content><children><text role=\"space\" id=\"0\"> </text><punctuation role=\"ellipsis\" id=\"1\">…</punctuation></children></punctuated>"
     },
     "EllipsesExplicitSpacing_1": {
-      "expected": "<punctuated role=\"text\" id=\"3\"><content><punctuation role=\"dummy\" id=\"2\">⁣</punctuation></content><children><punctuation role=\"ellipsis\" id=\"0\">…</punctuation><text role=\"unknown\" id=\"1\"> </text></children></punctuated>"
+      "expected": "<punctuated role=\"text\" id=\"3\"><content><punctuation role=\"dummy\" id=\"2\">⁣</punctuation></content><children><punctuation role=\"ellipsis\" id=\"0\">…</punctuation><text role=\"space\" id=\"1\"> </text></children></punctuated>"
     },
     "EllipsesExplicitSpacing_2": {
-      "expected": "<punctuated role=\"text\" id=\"5\"><content><punctuation role=\"dummy\" id=\"3\">⁣</punctuation><punctuation role=\"dummy\" id=\"4\">⁣</punctuation></content><children><punctuation role=\"ellipsis\" id=\"0\">…</punctuation><text role=\"unknown\" id=\"1\"> </text><punctuation role=\"ellipsis\" id=\"2\">…</punctuation></children></punctuated>"
+      "expected": "<punctuated role=\"text\" id=\"5\"><content><punctuation role=\"dummy\" id=\"3\">⁣</punctuation><punctuation role=\"dummy\" id=\"4\">⁣</punctuation></content><children><punctuation role=\"ellipsis\" id=\"0\">…</punctuation><text role=\"space\" id=\"1\"> </text><punctuation role=\"ellipsis\" id=\"2\">…</punctuation></children></punctuated>"
     },
     "EllipsesExplicitSpacing_3": {
-      "expected": "<punctuated role=\"text\" id=\"5\"><content><punctuation role=\"dummy\" id=\"3\">⁣</punctuation><punctuation role=\"dummy\" id=\"4\">⁣</punctuation></content><children><text role=\"unknown\" id=\"0\"> </text><punctuation role=\"ellipsis\" id=\"1\">…</punctuation><text role=\"unknown\" id=\"2\"> </text></children></punctuated>"
+      "expected": "<punctuated role=\"text\" id=\"5\"><content><punctuation role=\"dummy\" id=\"3\">⁣</punctuation><punctuation role=\"dummy\" id=\"4\">⁣</punctuation></content><children><text role=\"space\" id=\"0\"> </text><punctuation role=\"ellipsis\" id=\"1\">…</punctuation><text role=\"space\" id=\"2\"> </text></children></punctuated>"
     },
     "_comment_155": " Labels in multiline expressions.",
     "LabelledLines_0": {
@@ -1639,19 +1639,19 @@
       "expected": "<infixop role=\"implicit\" id=\"12\">⁢<content><operator role=\"multiplication\" id=\"11\">⁢</operator><operator role=\"multiplication\" font=\"italic\" id=\"8\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><infixop role=\"multiplication\" id=\"7\">*<content><operator role=\"multiplication\" id=\"5\">*</operator></content><children><infixop role=\"division\" id=\"4\">/<content><operator role=\"division\" font=\"normal\" id=\"2\">/</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"1\">n</identifier><identifier role=\"greekletter\" font=\"italic\" id=\"3\">ϕ</identifier></children></infixop><identifier role=\"latinletter\" font=\"italic\" id=\"6\">b</identifier></children></infixop><identifier role=\"latinletter\" font=\"italic\" id=\"9\">m</identifier></children></infixop>"
     },
     "SpacesAndEmptyFences_0": {
-      "expected": "<identifier role=\"latinletter\" font=\"italic\" id=\"1\">v</identifier>"
+      "expected": "<stree><punctuated role=\"text\" id=\"4\"><content><punctuation role=\"dummy\" id=\"3\">⁣</punctuation></content><children><text role=\"space\" id=\"1\"/><identifier role=\"latinletter\" font=\"italic\" id=\"2\">v</identifier></children></punctuated></stree>"
     },
     "SpacesAndEmptyFences_1": {
-      "expected": "<punctuated role=\"startpunct\" id=\"3\"><content><punctuation role=\"openfence\" id=\"0\">{</punctuation></content><children><punctuation role=\"openfence\" id=\"0\">{</punctuation><identifier role=\"latinletter\" font=\"italic\" id=\"2\">v</identifier></children></punctuated>"
+      "expected": "<stree><punctuated role=\"startpunct\" id=\"6\"><content><punctuation role=\"openfence\" id=\"0\">{</punctuation></content><children><punctuation role=\"openfence\" id=\"0\">{</punctuation><punctuated role=\"text\" id=\"5\"><content><punctuation role=\"dummy\" id=\"4\">⁣</punctuation></content><children><text role=\"space\" id=\"2\"/><identifier role=\"latinletter\" font=\"italic\" id=\"3\">v</identifier></children></punctuated></children></punctuated></stree>"
     },
     "SpacesAndEmptyFences_2": {
-      "expected": "<infixop role=\"implicit\" id=\"4\">⁢<content><operator role=\"multiplication\" id=\"3\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"2\">v</identifier></children></infixop>"
+      "expected": "<stree><punctuated role=\"text\" id=\"6\"><content><punctuation role=\"dummy\" id=\"4\">⁣</punctuation><punctuation role=\"dummy\" id=\"5\">⁣</punctuation></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">a</identifier><text role=\"space\" id=\"2\"/><identifier role=\"latinletter\" font=\"italic\" id=\"3\">v</identifier></children></punctuated></stree>"
     },
     "SpacesAndEmptyFences_3": {
-      "expected": "<infixop role=\"implicit\" id=\"6\">⁢<content><operator role=\"multiplication\" id=\"5\">⁢</operator></content><children><punctuated role=\"startpunct\" id=\"3\"><content><punctuation role=\"openfence\" id=\"0\">{</punctuation></content><children><punctuation role=\"openfence\" id=\"0\">{</punctuation><identifier role=\"latinletter\" font=\"italic\" id=\"1\">a</identifier></children></punctuated><identifier role=\"latinletter\" font=\"italic\" id=\"4\">v</identifier></children></infixop>"
+      "expected": "<stree><punctuated role=\"text\" id=\"8\"><content><punctuation role=\"dummy\" id=\"6\">⁣</punctuation><punctuation role=\"dummy\" id=\"7\">⁣</punctuation></content><children><punctuated role=\"startpunct\" id=\"3\"><content><punctuation role=\"openfence\" id=\"0\">{</punctuation></content><children><punctuation role=\"openfence\" id=\"0\">{</punctuation><identifier role=\"latinletter\" font=\"italic\" id=\"1\">a</identifier></children></punctuated><text role=\"space\" id=\"4\"/><identifier role=\"latinletter\" font=\"italic\" id=\"5\">v</identifier></children></punctuated></stree>"
     },
     "SpacesAndEmptyFences_4": {
-      "expected": "<infixop role=\"implicit\" id=\"8\">⁢<content><operator role=\"multiplication\" id=\"7\">⁢</operator></content><children><cases role=\"unknown\" id=\"4\"><content><punctuation role=\"openfence\" id=\"0\">{</punctuation></content><children><line role=\"cases\" id=\"3\"><children><identifier role=\"latinletter\" font=\"italic\" id=\"1\">u</identifier></children></line></children></cases><identifier role=\"latinletter\" font=\"italic\" id=\"6\">v</identifier></children></infixop>"
+      "expected": "<stree><punctuated role=\"text\" id=\"10\"><content><punctuation role=\"dummy\" id=\"8\">⁣</punctuation><punctuation role=\"dummy\" id=\"9\">⁣</punctuation></content><children><cases role=\"unknown\" id=\"4\"><content><punctuation role=\"openfence\" id=\"0\">{</punctuation></content><children><line role=\"cases\" id=\"3\"><children><identifier role=\"latinletter\" font=\"italic\" id=\"1\">u</identifier></children></line></children></cases><text role=\"space\" id=\"6\"/><identifier role=\"latinletter\" font=\"italic\" id=\"7\">v</identifier></children></punctuated></stree>"
     },
     "_comment_179": " Set expressions.",
     "Sets_0": {
@@ -1807,6 +1807,12 @@
     },
     "issue451_6": {
       "expected": "<stree><relseq role=\"equality\" id=\"19\">=<content><relation role=\"equality\" id=\"4\">=</relation></content><children><appl role=\"simple function\" id=\"16\"><content><punctuation role=\"application\" id=\"15\">⁡</punctuation><identifier role=\"simple function\" font=\"italic\" id=\"0\">M</identifier></content><children><identifier role=\"simple function\" font=\"italic\" id=\"0\">M</identifier><fenced role=\"leftright\" id=\"14\"><content><fence role=\"open\" id=\"1\">(</fence><fence role=\"close\" id=\"3\">)</fence></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"2\">t</identifier></children></fenced></children></appl><infixop role=\"implicit\" id=\"18\">⁢<content><operator role=\"multiplication\" id=\"17\">⁢</operator></content><children><appl role=\"implicit\" id=\"12\"><content><punctuation role=\"application\" id=\"11\">⁡</punctuation></content><children><infixop role=\"implicit\" id=\"8\">⁢<content><operator role=\"multiplication\" id=\"7\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"5\">l</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"6\">i</identifier></children></infixop><identifier role=\"simple function\" font=\"italic\" id=\"10\">M</identifier></children></appl><identifier role=\"latinletter\" font=\"italic\" id=\"13\">x</identifier></children></infixop></children></relseq></stree>"
+    },
+    "SpacesAndEmptyFences_5": {
+      "expected": "<stree><punctuated role=\"startpunct\" id=\"8\"><content><punctuation role=\"openfence\" id=\"0\">{</punctuation></content><children><punctuation role=\"openfence\" id=\"0\">{</punctuation><punctuated role=\"text\" id=\"7\"><content><punctuation role=\"dummy\" id=\"5\">⁣</punctuation><punctuation role=\"dummy\" id=\"6\">⁣</punctuation></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"1\">a</identifier><text role=\"space\" id=\"3\"/><identifier role=\"latinletter\" font=\"italic\" id=\"4\">v</identifier></children></punctuated></children></punctuated></stree>"
+    },
+    "SpacesAndEmptyFences_6": {
+      "expected": "<stree><cases role=\"unknown\" id=\"10\"><content><punctuation role=\"openfence\" id=\"0\">{</punctuation></content><children><line role=\"cases\" id=\"9\"><children><punctuated role=\"text\" id=\"7\"><content><punctuation role=\"dummy\" id=\"5\">⁣</punctuation><punctuation role=\"dummy\" id=\"6\">⁣</punctuation></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"1\">u</identifier><text role=\"space\" id=\"3\"/><identifier role=\"latinletter\" font=\"italic\" id=\"4\">v</identifier></children></punctuated></children></line></children></cases></stree>"
     }
   }
 }
