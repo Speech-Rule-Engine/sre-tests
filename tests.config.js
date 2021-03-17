@@ -157,9 +157,9 @@ let createHtmlFiles = function() {
 };
 
 let cleanFiles = function() {
-  fs.rmdirSync(jsondir, {recursive: true});
-  fs.rmdirSync(alldir, {recursive: true});
-  fs.rmdirSync(analysedir, {recursive: true});
+  fs.rmSync(jsondir, {force: true, recursive: true});
+  fs.rmSync(alldir, {force: true, recursive: true});
+  fs.rmSync(analysedir, {force: true, recursive: true});
 };
 
 let build = function() {
