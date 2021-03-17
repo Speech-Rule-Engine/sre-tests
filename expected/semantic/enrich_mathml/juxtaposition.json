@@ -1,7 +1,7 @@
 {
   "factory": "enrichMathml",
   "active": "EnrichExamples",
-  "base": "input/base/semantic_juxtaposition.json",
+  "base": "input/semantic/juxtaposition.json",
   "tests": {
     "Juxta_Nested_2_0": {
       "expected": "<math><mrow type=\"infixop\" role=\"implicit\" id=\"3\" children=\"0,2\" content=\"1\"><mi type=\"identifier\" role=\"latinletter\" id=\"0\" parent=\"3\">a</mi><mo type=\"operator\" role=\"multiplication\" id=\"1\" parent=\"3\" operator=\"infixop,⁢\">⁢</mo><mi type=\"identifier\" role=\"latinletter\" id=\"2\" parent=\"3\">b</mi></mrow></math>"

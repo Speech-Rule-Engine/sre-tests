@@ -1,6 +1,6 @@
 {
   "factory": "enrichSpeech",
-  "base": "input/base/semantic.json",
+  "base": "input/semantic/base.json",
   "information": "API consistency tests for speech generation.",
   "exclude": ["Mfenced_14", "Actions_0", "Actions_1", "SemanticsAnnotation_0", "SemanticsAnnotationXml_1"],
   "tests": "ALL"
