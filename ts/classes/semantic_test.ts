@@ -118,13 +118,52 @@ export class EnrichSpeechTest extends SemanticTest {
 }
 
 /**
+ * Tests that can remove elements from an XML element.
+ */
+export abstract class SemanticBlacklistTest extends SemanticTest {
+
+  /**
+   * The blacklist of attributes to be removed before comparison.
+   */
+  protected blacklist: string[] = [];
+
+  /**
+   * Removes XML nodes according to the XPath elements in the blacklist.
+   *
+   * @param xml Xml representation of the semantic node.
+   */
+  protected customizeXml(xml: Element) {
+    this.blacklist.forEach(
+      attr => {
+        xml.removeAttribute(attr);
+        let removes = sre.DomUtil.querySelectorAllByAttr(xml, attr);
+        if (xml.hasAttribute(attr)) {
+          removes.push(xml);
+        }
+        removes.forEach((node: Element) => node.removeAttribute(attr));
+      });
+  }
+
+  /**
+   * @override
+   */
+  public prepare() {
+    super.prepare();
+    this.blacklist = this.jsonTests.blacklist || this.blacklist;
+  }
+
+}
+
+/**
  * Semantic Tree Tests
  */
-export class SemanticTreeTest extends SemanticTest {
+export class SemanticTreeTest extends SemanticBlacklistTest {
 
+  /**
+   * @override
+   */
   public constructor() {
     super();
-
     this.pickFields.push('brief');
   }
 
@@ -146,17 +185,14 @@ export class SemanticTreeTest extends SemanticTest {
     let mathMl = sre.Enrich.prepareMmlString(mml);
     let node = sre.DomUtil.parseInput(mathMl);
     let sxml = (new sre.SemanticTree(node)).xml(opt_brief);
+    this.customizeXml(sxml);
     let dp = new xmldom.DOMParser();
     let xml = dp.parseFromString(this.prepareStree(sml), 'text/xml');
     let xmls = new xmldom.XMLSerializer();
-    this.assert.equal(this.cleanStree(xmls.serializeToString(sxml)),
+    this.assert.equal(xmls.serializeToString(sxml),
                       xmls.serializeToString(xml));
   }
 
-  protected cleanStree(stree: string): string {
-    return stree;
-  }
-  
   /**
    * Adds stree tags to a semantic tree string, if necessary.
    *
@@ -179,25 +215,20 @@ export class SemanticTreeTest extends SemanticTest {
 }
 
 /**
- * Semantic Tree Tests without certain attributes.
+ * Tests for enriched MathML expressions.
  */
-export class SemanticTreeSelectTest extends SemanticTreeTest {
+export class EnrichMathmlTest extends SemanticBlacklistTest {
 
   /**
    * @override
    */
-  protected cleanStree(stree: string): string {
-    return stree.replace(/ id=\"\d+\"/g, '');
-  }
-
-}
-
-/**
- * Tests for enriched MathML expressions.
- */
-export class EnrichMathmlTest extends SemanticTest {
-
-  private attrBlacklist: string[] = [];
+  protected blacklist: string[] = [
+    'data-semantic-annotation',
+    'data-semantic-font',
+    'data-semantic-embellished',
+    'data-semantic-fencepointer',
+    'data-semantic-structure'
+  ];
 
   /**
    * @override
@@ -207,19 +238,6 @@ export class EnrichMathmlTest extends SemanticTest {
     if (this.jsonTests.active) {
       this.setActive(this.jsonTests.active, 'json');
     }
-  }
-
-  /**
-   * @override
-   */
-  public setUpTest() {
-    super.setUpTest();
-    this.attrBlacklist = [
-      'data-semantic-annotation',
-      'data-semantic-font',
-      'data-semantic-embellished',
-      'data-semantic-fencepointer',
-      'data-semantic-structure'];
   }
 
   /**
@@ -241,22 +259,6 @@ export class EnrichMathmlTest extends SemanticTest {
     this.assert.equal(cleaned, xmls.serializeToString(xml));
   }
 
-  /**
-   * Removes XML nodes according to the XPath elements in the blacklist.
-   *
-   * @param xml Xml representation of the semantic node.
-   */
-  public customizeXml(xml: Element) {
-    this.attrBlacklist.forEach(
-      attr => {
-        xml.removeAttribute(attr);
-        let removes = sre.DomUtil.querySelectorAllByAttr(xml, attr);
-        if (xml.hasAttribute(attr)) {
-          removes.push(xml);
-        }
-        removes.forEach((node: Element) => node.removeAttribute(attr));
-      });
-  }
 }
 
 /**
