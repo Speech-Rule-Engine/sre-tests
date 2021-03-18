@@ -239,32 +239,42 @@ export function copySemanticTest(base: string) {
   if (!filename) {
     return;
   }
+  let json = TestUtil.loadJson(filename);
+  let info = json.information || '';
   let basename = path.basename(base);
   let dirname = path.dirname(base);
-  createSemanticTestFile(dirname, 'semantic_tree', basename,
+  createSemanticTestFile(dirname, 'semantic_tree', basename, info,
                          {factory: 'stree'});
-  createSemanticTestFile(dirname, 'enrich_mathml', basename,
+  createSemanticTestFile(dirname, 'enrich_mathml', basename, info,
                          {factory: 'enrichMathml', active: 'EnrichExamples'});
-  createSemanticTestFile(dirname, 'enrich_speech', basename,
+  createSemanticTestFile(dirname, 'enrich_speech', basename, info,
                          {factory: 'enrichSpeech', tests: 'ALL'});
-  createSemanticTestFile(dirname, 'rebuild_stree', basename,
+  createSemanticTestFile(dirname, 'rebuild_stree', basename, info,
                          {factory: 'rebuild', tests: 'ALL'});
-  createSemanticTestFile(dirname, 'semantic_xml', basename,
+  createSemanticTestFile(dirname, 'semantic_xml', basename, info,
                          {factory: 'semanticXml', tests: 'ALL'});
-  createSemanticTestFile(dirname, 'semantic_api', basename,
+  createSemanticTestFile(dirname, 'semantic_api', basename, info,
                          {factory: 'semanticApi', tests: 'ALL'});
 }
 
-function createSemanticTestFile(dir: string, kind: string,
-                                base: string, init: JsonFile) {
+function createSemanticTestFile(dir: string, kind: string, base: string,
+                                info: string, init: JsonFile) {
   let filename = path.join(dir, kind, base);
   let file = TestUtil.fileExists(filename, TestPath.EXPECTED);
   if (file) {
     console.error(`File ${file} already exists.`);
     return;
   }
-  let basename = path.join('input', dir, base);
-  init.base = basename;
+  let baseinfo = TestUtil.capitalize(kind).split('_');
+  if (info) {
+    baseinfo.push(info);
+  } else {
+    baseinfo.push(...path.basename(base, '.json').split('_'));
+    baseinfo.push('tests.');
+  }
+  init.information = baseinfo.join(' ');
+  let basefile = path.join('input', dir, base);
+  init.base = basefile;
   if (!init.tests) {
     init.tests = {};
   }
