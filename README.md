@@ -151,7 +151,13 @@ will run German locale only.
 ``` shell
 npx jest --testPathPattern js/json/de/clearspeak js/json/base
 ```
-will run Clearspeak German tests and base tests.
+will run Clearspeak German tests and base tests. Generally the switch `--testPathPattern` can be omitted. E.g., 
+
+``` shell
+npx jest js/output
+```
+
+will run all the test that produce output files.
 
 ### Running Tests via Make in the SRE repository
 
@@ -334,13 +340,73 @@ nature:
 
 ## Working in Node
 
-``` javascript
-process.env['SRE_JSON_PATH'] = '../speech-rule-engine/lib/mathmaps';
-let gt = require('./js/generate/generate_tests.js');
-...
+The majority of test generation, copying, etc. will be handled on the Node
+REPL. There are two ways to ensure that all the necessary files in SRE can be found. 
+
+1. Run node in a shell on where the `SRE_JSON_PATH` variable is set. Or start an
+   Emacs that will run the REPL in such a shell.
+
+2. Set the `SRE_JSON_PATH` environment variable explicitly in node. For example:
+
+    ``` javascript
+    process.env['SRE_JSON_PATH'] = '../speech-rule-engine/lib/mathmaps';
+    let gt = require('./js/generate/generate_tests.js');
+    ...
+    ```
+
+## Generating Tests
+
+Simplest way is to generate tests from experimental data using input
+transformers.  The standard use case is: You have a set of expressions from
+experiments or investigating an issue. These should now be transformed into
+tests. Simply combine them into a single json file like where `foo` and `bar`
+represent names for the issue or type of experiment.
+
+```javascript
+{
+  "foo": [d0, d1, d2, ....],
+  "bar": [e0, e1, e2, ....],
+  ...
+}
 ```
 
-## Generating Tests and Expected Values
+These case can be loaded and transformed into a regular `JsonTests` structure
+using method:
+
+``` javascript
+gt.generateTestJson(INPUT, OUTPUT, option FIELD);
+```
+
+This transforms the `INPUT` file sets into `OUTPUT` fof the form
+
+```javascript
+{
+  "foo_0": {"field": d0},
+  "foo_1": {"field": d1},
+  "foo_2": {"field": d2},
+  ...
+  "bar_0": {"field": e0},
+  "bar_1": {"field": e1},
+  "bar_2": {"field": e2},
+  ...
+}
+```
+
+The optional `FIELD` parameter can be used to specify the target field in the
+single tests.  E.g. for a set of tex expressions you might want to choose `tex`
+as field so a transformer can be applied directly. `FIELD` defaults to `input`.
+
+To further transform the tests, apply one or more transformers to the file:
+
+``` javascript
+gt.transformJsonTests(INPUT, gt.getTransformers(['tex']));
+```
+
+Applies a TeX transformer to all `tex` fields in `INPUT` resulting in an `input`
+field with a mml expression, writing the output to the same file. Other useful
+transformers are found in `braille_transformer.ts`.
+
+## Filling Tests and Expected Values
 
 Tests can be generated or regenerated using the `fill_tests` module:
 
@@ -359,6 +425,27 @@ destructively to the input file.
 
 `showMissing` prints all missing tests for all available test files. Output can
 be restricted by providing a regular expression for filtering filenames.
+
+## Splitting Tests
+
+Although test files that provide complete tests (i.e., containing both `input`
+and `expected` elements plus all necessary parameters) can be run, it is often
+useful to have separate files for `input` and `expected` values in the
+respective directories. For example, when running speech rule tests all locales
+can use a single base file. Likewise the different types of semantic
+interpretation tests can share the same base file. 
+
+Splitting a comprehensive file into a base file and one with `expected` entries
+only is done by:
+
+``` javascript
+gt.splitExpected(EXPECTED, BASE);
+```
+
+The `EXPECTED` filename is considered relative to the `expected` directory. The
+name of the new base file is absolute. Note that this file will be overwritten!
+__So apply only once!__
+
 
 ## Symbol Tests
 
@@ -440,4 +527,33 @@ Show the difference between test files existing in locale directories.
 ct.showDifference('en', 'it');
 ```
 
+## Semantic Tests
 
+They normally reside in the `semantic` test directory. The actual tests consist
+of six different types, therefore their expected files are given in six
+different sub-directories:
+
+1. `enrich_mathml`, translate to enriched Mathml output.
+2. `enrich_speech`, test if speech strings computed directly for a MathML
+   expression are equivalent to those computed for enriched expressions.
+3. `rebuild_stree`, test if semantic trees build from enriched MathML
+   expressions are equivalent to hose computed directly.
+4. `semantic_api`, tests consistency of the various semantic APIs.
+5. `semantic_tree`, translate into semantic trees.
+6. `semantic_xml`, tests consistency of the semantic tree parser, i.e., parsing
+   the XML output of the semantic tree results in the equivalent semantic tree.
+
+Note that tests 2, 3, 4, and 6, usually run with respect to `"tests": "ALL"`.
+
+
+### Copying tests
+
+Given a base file `BASE` in the `input` directory, we can generate the basic
+structure for the above tests using
+
+``` javascript
+ct.copySemanticTest(BASE);
+```
+
+Note, that neither the `semantic_tree` nor the `enrich_mathml` tests will be
+filled with expected. This has to be done manually, e.g., using `ft.addMissing`.
