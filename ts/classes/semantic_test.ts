@@ -20,7 +20,6 @@
  */
 
 import {sre, xmldom} from '../base/test_external';
-import * as sret from '../typings/sre';
 import {AbstractExamples} from './abstract_examples';
 
 /**
@@ -123,66 +122,10 @@ export class EnrichSpeechTest extends SemanticTest {
  */
 export class SemanticTreeTest extends SemanticTest {
 
-  /**
-   * Stash semantic annotators that are removed for the purpose of this test.
-   */
-  public annotations: {[key: string]: sret.SemanticAnnotator} = null;
-
-  /**
-   * Stash semantic visitors that are removed for the purpose of this test.
-   */
-  public visitors: {[key: string]: sret.SemanticVisitor} = null;
-
-  /**
-   * Adds some unicode characters via hex code to the right category.
-   *
-   * This method is necessary as the test framework can not handle code
-   * containing utf-8 encoded characters.
-   */
-  public static setupAttributes() {
-    let attr = sre.SemanticAttr.getInstance();
-    attr.neutralFences.unshift(sre.SemanticUtil.numberToUnicode(0x00A6));
-    attr.dashes.unshift(sre.SemanticUtil.numberToUnicode(0x2015));
-    attr.neutralFences.unshift(sre.SemanticUtil.numberToUnicode(0x2016));
-    attr.arrows.unshift(sre.SemanticUtil.numberToUnicode(0x2192));
-    attr.sumOps.unshift(sre.SemanticUtil.numberToUnicode(0x2211));
-    attr.additions.unshift(sre.SemanticUtil.numberToUnicode(0x2213));
-    attr.multiplications.unshift(sre.SemanticUtil.numberToUnicode(0x2218));
-    attr.intOps.unshift(sre.SemanticUtil.numberToUnicode(0x222B));
-    attr.inequalities.unshift(sre.SemanticUtil.numberToUnicode(0x2264));
-    attr.additions.unshift(sre.SemanticUtil.numberToUnicode(0x2295));
-    let open = sre.SemanticUtil.numberToUnicode(0x3008);
-    let close = sre.SemanticUtil.numberToUnicode(0x3009);
-    attr.openClosePairs[open] = close;
-    attr.leftFences.unshift(open);
-    attr.rightFences.unshift(close);
-  }
-
   public constructor() {
     super();
 
     this.pickFields.push('brief');
-  }
-
-  /**
-   * @override
-   */
-  public setUpTest() {
-    super.setUpTest();
-    this.annotations = sre.SemanticAnnotations.getInstance().annotators;
-    this.visitors = sre.SemanticAnnotations.getInstance().visitors;
-    sre.SemanticAnnotations.getInstance().annotators = {};
-    sre.SemanticAnnotations.getInstance().visitors = {};
-    SemanticTreeTest.setupAttributes();
-  }
-
-  /**
-   * @override
-   */
-  public tearDownTest() {
-    sre.SemanticAnnotations.getInstance().annotators = this.annotations;
-    sre.SemanticAnnotations.getInstance().visitors = this.visitors;
-    super.tearDownTest();
   }
 
   /**
