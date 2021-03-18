@@ -21,7 +21,6 @@
  */
 
 import {sre} from '../base/test_external';
-import * as sret from '../typings/sre';
 import {AbstractJsonTest} from './abstract_test';
 
 export class ApiTest extends AbstractJsonTest {
@@ -46,16 +45,6 @@ export class ApiTest extends AbstractJsonTest {
   public information = 'API function test.';
 
   /**
-   * Stash semantic annotators that are removed for the purpose of this test.
-   */
-  public annotations: {[key: string]: sret.SemanticAnnotator} = null;
-
-  /**
-   * Stash semantic visitors that are removed for the purpose of this test.
-   */
-  public visitors: {[key: string]: sret.SemanticVisitor} = null;
-
-  /**
    * @override
    */
   public pickFields = ['type', 'input', 'expected',
@@ -65,19 +54,8 @@ export class ApiTest extends AbstractJsonTest {
    * @override
    */
   public setUpTest() {
-    this.annotations = sre.SemanticAnnotations.getInstance().annotators;
-    this.visitors = sre.SemanticAnnotations.getInstance().visitors;
-    this.setupEngine(null);
     sre.SemanticAnnotations.getInstance().annotators = {};
     sre.SemanticAnnotations.getInstance().visitors = {};
-  }
-
-  /**
-   * @override
-   */
-  public tearDownTest() {
-    sre.SemanticAnnotations.getInstance().annotators = this.annotations;
-    sre.SemanticAnnotations.getInstance().visitors = this.visitors;
   }
 
   /**
