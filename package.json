@@ -6,8 +6,9 @@
     "test": "tests"
   },
   "scripts": {
-    "prepare:webpack": "npx rimraf js; npx rimraf dist; ./node_modules/.bin/tsc; ./node_modules/.bin/webpack",
-    "prepare": "node tests.config.js; npm run prepare:webpack",
+    "compile": "./node_modules/.bin/tsc",
+    "prepare": "npm run clean; node tests.config.js; npm run compile; npm run webpack",
+    "webpack": "./node_modules/.bin/webpack",
     "test": "npm run test:files",
     "test:all": "npm run test:files; npm run test:output; npm run test:analytics",
     "test:files": "npx jest --testPathIgnorePatterns js/output --testPathIgnorePatterns js/analyse",
