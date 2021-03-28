@@ -1414,7 +1414,7 @@
     },
     "_comment_168": " Tests originating from issue #186. Incorrectly reordering elements.",
     "SpacesAndEmptyFences_0": {
-      "expected": "<math><mrow><mo fence=\"true\"/></mrow><mrow type=\"punctuated\" role=\"text\" id=\"4\" children=\"1,2\" collapsed=\"(4 (c 3) 1 2)\"><mspace width=\"2em\" type=\"text\" role=\"space\" id=\"1\" parent=\"4\"/></mrow><mi type=\"identifier\" role=\"latinletter\" id=\"2\" parent=\"4\">v</mi></math>"
+      "expected": "<math><mrow><mo fence=\"true\"/></mrow><mrow type=\"punctuated\" role=\"text\" id=\"4\" children=\"1,2\" collapsed=\"(4 (c 3) 1 2)\"><mspace width=\"2em\" type=\"text\" role=\"space\" id=\"1\" parent=\"4\"/><mi type=\"identifier\" role=\"latinletter\" id=\"2\" parent=\"4\">v</mi></mrow></math>"
     },
     "SpacesAndEmptyFences_1": {
       "expected": "<math type=\"punctuated\" role=\"startpunct\" id=\"6\" children=\"0,5\" content=\"0\"><mrow><mo type=\"punctuation\" role=\"openfence\" id=\"0\" parent=\"6\" operator=\"punctuated\">{</mo><mo fence=\"true\"/></mrow><mrow type=\"punctuated\" role=\"text\" id=\"5\" children=\"2,3\" parent=\"6\" collapsed=\"(5 (c 4) 2 3)\"><mspace width=\"2em\" type=\"text\" role=\"space\" id=\"2\" parent=\"5\"/><mi type=\"identifier\" role=\"latinletter\" id=\"3\" parent=\"5\">v</mi></mrow></math>"

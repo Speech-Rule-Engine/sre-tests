@@ -73,7 +73,7 @@
       "url": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#xcH",
       "input": "<math><mi>f</mi><mo>∘</mo><mi>g</mi><mo>≠</mo><mi>g</mi><mo>∘</mo><mi>f</mi></math>",
       "tex": "f \\circ g \\neq g \\circ f",
-      "expected": "⠋⠘⠨⠡⠛⠀⠌⠨⠅⠀⠛⠘⠨⠡⠋",
+      "expected": "⠋⠨⠡⠛⠀⠌⠨⠅⠀⠛⠨⠡⠋",
       "reference": {
         "m-242": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#xcH"
       }
@@ -141,7 +141,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-sets.html#Yey",
       "input": "<math><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>≤</mo><msup><mi>c</mi><mn>2</mn></msup><mo>+</mo><msup><mi>d</mi><mn>2</mn></msup></math>",
       "tex": "a^2 + b^2 \\leq c^2 + d^2",
-      "expected": "⠁⠘⠆⠐⠬⠃⠘⠆⠐⠀⠐⠅⠱⠀⠉⠘⠆⠐⠬⠙⠘⠆",
+      "expected": "⠁⠘⠆⠐⠬⠃⠘⠆⠀⠐⠅⠱⠀⠉⠘⠆⠐⠬⠙⠘⠆",
       "reference": {
         "m-668": "http://abstract.ups.edu/aata/exercises-sets.html#Yey"
       }
@@ -184,7 +184,7 @@
       "url": "http://abstract.ups.edu/aata/section-math-induction.html#rli",
       "input": "<math><msup><mn>2</mn><mi>n</mi></msup><mo>&gt;</mo><mi>n</mi><mo>+</mo><mn>4</mn></math>",
       "tex": "2^n \\gt n + 4",
-      "expected": "⠼⠆⠘⠝⠐⠀⠨⠂⠀⠝⠬⠲",
+      "expected": "⠼⠆⠘⠝⠀⠨⠂⠀⠝⠬⠲",
       "reference": {
         "m-716": "http://abstract.ups.edu/aata/section-math-induction.html#rli"
       }
@@ -194,7 +194,7 @@
       "url": "http://abstract.ups.edu/aata/section-math-induction.html#rli",
       "input": "<math><msup><mn>2</mn><mi>k</mi></msup><mo>&gt;</mo><mi>k</mi><mo>+</mo><mn>4</mn></math>",
       "tex": "2^k \\gt k + 4",
-      "expected": "⠼⠆⠘⠅⠐⠀⠨⠂⠀⠅⠬⠲",
+      "expected": "⠼⠆⠘⠅⠀⠨⠂⠀⠅⠬⠲",
       "reference": {
         "m-718": "http://abstract.ups.edu/aata/section-math-induction.html#rli"
       }
@@ -400,7 +400,7 @@
       "url": "http://abstract.ups.edu/aata/section-division-algorithm.html#YEO",
       "input": "<math><msup><mi>r</mi><mo>′</mo></msup><mo>≥</mo><mi>r</mi></math>",
       "tex": "r' \\geq r",
-      "expected": "⠗⠘⠄⠐⠀⠨⠂⠱⠀⠗",
+      "expected": "⠗⠄⠀⠨⠂⠱⠀⠗",
       "reference": {
         "m-837": "http://abstract.ups.edu/aata/section-division-algorithm.html#YEO"
       }
@@ -410,7 +410,7 @@
       "url": "http://abstract.ups.edu/aata/section-division-algorithm.html#YEO",
       "input": "<math><mn>0</mn><mo>≤</mo><msup><mi>r</mi><mo>′</mo></msup><mo>−</mo><mi>r</mi><mo>≤</mo><msup><mi>r</mi><mo>′</mo></msup><mo>&lt;</mo><mi>b</mi></math>",
       "tex": "0 \\leq r'- r \\leq r' \\lt b",
-      "expected": "⠼⠴⠀⠐⠅⠱⠀⠗⠘⠄⠐⠤⠗⠀⠐⠅⠱⠀⠗⠘⠄⠐⠀⠐⠅⠀⠃",
+      "expected": "⠼⠴⠀⠐⠅⠱⠀⠗⠘⠄⠐⠤⠗⠀⠐⠅⠱⠀⠗⠄⠀⠐⠅⠀⠃",
       "reference": {
         "m-841": "http://abstract.ups.edu/aata/section-division-algorithm.html#YEO"
       }
@@ -420,7 +420,7 @@
       "url": "http://abstract.ups.edu/aata/section-division-algorithm.html#ELX",
       "input": "<math><mn>0</mn><mo>≤</mo><msup><mi>r</mi><mo>′</mo></msup><mo>&lt;</mo><mi>d</mi></math>",
       "tex": "0 \\leq r' \\lt d",
-      "expected": "⠼⠴⠀⠐⠅⠱⠀⠗⠘⠄⠐⠀⠐⠅⠀⠙",
+      "expected": "⠼⠴⠀⠐⠅⠱⠀⠗⠄⠀⠐⠅⠀⠙",
       "reference": {
         "m-886": "http://abstract.ups.edu/aata/section-division-algorithm.html#ELX"
       }
@@ -430,7 +430,7 @@
       "url": "http://abstract.ups.edu/aata/section-division-algorithm.html#ELX",
       "input": "<math><msup><mi>r</mi><mo>′</mo></msup><mo>&gt;</mo><mn>0</mn></math>",
       "tex": "r' \\gt 0",
-      "expected": "⠗⠘⠄⠐⠀⠨⠂⠀⠼⠴",
+      "expected": "⠗⠄⠀⠨⠂⠀⠼⠴",
       "reference": {
         "m-887": "http://abstract.ups.edu/aata/section-division-algorithm.html#ELX"
       }
@@ -481,7 +481,7 @@
       "url": "http://abstract.ups.edu/aata/section-division-algorithm.html#Rap",
       "input": "<math><msub><mi>p</mi><mn>1</mn></msub><mo>≤</mo><msub><mi>p</mi><mn>2</mn></msub><mo>≤</mo><mo>⋯</mo><mo>≤</mo><msub><mi>p</mi><mi>k</mi></msub></math>",
       "tex": "p_1 \\leq p_2 \\leq \\cdots \\leq p_k",
-      "expected": "⠏⠂⠀⠐⠅⠱⠀⠏⠆⠀⠐⠅⠱⠀⠄⠄⠄⠀⠐⠅⠱⠀⠏⠰⠅",
+      "expected": "⠏⠂⠀⠐⠅⠱⠀⠏⠆⠀⠐⠅⠱⠀⠄⠄⠄⠀⠀⠐⠅⠱⠀⠏⠰⠅",
       "reference": {
         "m-1000": "http://abstract.ups.edu/aata/section-division-algorithm.html#Rap"
       }
@@ -491,7 +491,7 @@
       "url": "http://abstract.ups.edu/aata/section-division-algorithm.html#Rap",
       "input": "<math><msub><mi>q</mi><mn>1</mn></msub><mo>≤</mo><msub><mi>q</mi><mn>2</mn></msub><mo>≤</mo><mo>⋯</mo><mo>≤</mo><msub><mi>q</mi><mi>l</mi></msub></math>",
       "tex": "q_1 \\leq q_2 \\leq \\cdots \\leq q_l",
-      "expected": "⠟⠂⠀⠐⠅⠱⠀⠟⠆⠀⠐⠅⠱⠀⠄⠄⠄⠀⠐⠅⠱⠀⠟⠰⠇",
+      "expected": "⠟⠂⠀⠐⠅⠱⠀⠟⠆⠀⠐⠅⠱⠀⠄⠄⠄⠀⠀⠐⠅⠱⠀⠟⠰⠇",
       "reference": {
         "m-1001": "http://abstract.ups.edu/aata/section-division-algorithm.html#Rap"
       }
@@ -532,7 +532,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-integers.html#JYG",
       "input": "<math><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>x</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup><mo>−</mo><mn>1</mn><mo>≥</mo><mi>n</mi><mi>x</mi></math>",
       "tex": "(1 + x)^n - 1 \\geq nx",
-      "expected": "⠷⠼⠂⠬⠭⠾⠘⠝⠐⠤⠂⠀⠨⠂⠱⠀⠝⠭",
+      "expected": "⠷⠂⠬⠭⠾⠘⠝⠐⠤⠂⠀⠨⠂⠱⠀⠝⠭",
       "reference": {
         "m-1078": "http://abstract.ups.edu/aata/exercises-integers.html#JYG"
       }
@@ -542,7 +542,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-integers.html#xvT",
       "input": "<math><msub><mi>f</mi><mi>n</mi></msub><mo>&lt;</mo><msup><mn>2</mn><mi>n</mi></msup></math>",
       "tex": "f_n \\lt 2^n",
-      "expected": "⠋⠰⠝⠐⠀⠐⠅⠀⠼⠆⠘⠝",
+      "expected": "⠋⠰⠝⠀⠐⠅⠀⠼⠆⠘⠝",
       "reference": {
         "m-1127": "http://abstract.ups.edu/aata/exercises-integers.html#xvT"
       }
@@ -608,7 +608,7 @@
       "url": "http://abstract.ups.edu/aata/section-groups-define.html#TBj",
       "input": "<math><mo stretchy=\"false\">(</mo><mi>g</mi><mi>h</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup><mo>≠</mo><msup><mi>g</mi><mi>n</mi></msup><msup><mi>h</mi><mi>n</mi></msup></math>",
       "tex": "(gh)^n \\neq g^nh^n",
-      "expected": "⠷⠛⠓⠾⠘⠝⠐⠀⠌⠨⠅⠀⠛⠘⠝⠐⠓⠘⠝",
+      "expected": "⠷⠛⠓⠾⠘⠝⠀⠌⠨⠅⠀⠛⠘⠝⠐⠓⠘⠝",
       "reference": {
         "m-1585": "http://abstract.ups.edu/aata/section-groups-define.html#TBj",
         "m-1783": "http://abstract.ups.edu/aata/exercises-groups.html#KCW"
@@ -662,7 +662,7 @@
       "url": "http://abstract.ups.edu/aata/groups-exercises-detecting-errors.html#Isk",
       "input": "<math><mn>0</mn><mo>≤</mo><msub><mi>d</mi><mi>i</mi></msub><mo>&lt;</mo><mi>n</mi></math>",
       "tex": "0 \\leq d_i \\lt n",
-      "expected": "⠼⠴⠀⠐⠅⠱⠀⠙⠰⠊⠐⠀⠐⠅⠀⠝",
+      "expected": "⠼⠴⠀⠐⠅⠱⠀⠙⠰⠊⠀⠐⠅⠀⠝",
       "reference": {
         "m-1929": "http://abstract.ups.edu/aata/groups-exercises-detecting-errors.html#Isk",
         "m-1935": "http://abstract.ups.edu/aata/groups-exercises-detecting-errors.html#ozt"
@@ -726,7 +726,7 @@
       "url": "http://abstract.ups.edu/aata/section-mult-group-c.html#Bkb",
       "input": "<math><msup><mn>0</mn><mrow><mo>∘</mo></mrow></msup><mo>≤</mo><mi>θ</mi><mo>&lt;</mo><msup><mn>360</mn><mrow><mo>∘</mo></mrow></msup></math>",
       "tex": "0^{\\circ} \\leq \\theta \\lt 360^{\\circ}",
-      "expected": "⠼⠴⠘⠘⠨⠡⠐⠀⠐⠅⠱⠀⠨⠹⠀⠐⠅⠀⠼⠒⠖⠴⠘⠘⠨⠡",
+      "expected": "⠼⠴⠘⠨⠡⠀⠐⠅⠱⠀⠨⠹⠀⠐⠅⠀⠼⠒⠖⠴⠘⠨⠡",
       "reference": {
         "m-2231": "http://abstract.ups.edu/aata/section-mult-group-c.html#Bkb"
       }
@@ -747,7 +747,7 @@
       "url": "http://abstract.ups.edu/aata/section-method-of-repeated-squares.html#JcV",
       "input": "<math><msub><mi>k</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>k</mi><mn>2</mn></msub><mo>&lt;</mo><mo>⋯</mo><mo>&lt;</mo><msub><mi>k</mi><mi>n</mi></msub></math>",
       "tex": "k_1 \\lt k_2 \\lt \\cdots \\lt k_n",
-      "expected": "⠅⠂⠀⠐⠅⠀⠅⠆⠀⠐⠅⠀⠄⠄⠄⠀⠐⠅⠀⠅⠰⠝",
+      "expected": "⠅⠂⠀⠐⠅⠀⠅⠆⠀⠐⠅⠀⠄⠄⠄⠀⠀⠐⠅⠀⠅⠰⠝",
       "reference": {
         "m-2291": "http://abstract.ups.edu/aata/section-method-of-repeated-squares.html#JcV"
       }
@@ -797,7 +797,7 @@
       "url": "http://abstract.ups.edu/aata/section-permutation-definitions.html#nKZ",
       "input": "<math><msub><mi>a</mi><mi>i</mi></msub><mo>≠</mo><msub><mi>b</mi><mi>j</mi></msub></math>",
       "tex": "a_i \\neq b_j",
-      "expected": "⠁⠰⠊⠐⠀⠌⠨⠅⠀⠃⠰⠚",
+      "expected": "⠁⠰⠊⠀⠌⠨⠅⠀⠃⠰⠚",
       "reference": {
         "m-2654": "http://abstract.ups.edu/aata/section-permutation-definitions.html#nKZ"
       }
@@ -827,7 +827,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-permute.html#aTR",
       "input": "<math><msub><mrow><mrow><mi data-mjx-variant=\"-tex-calligraphic\" mathvariant=\"script\">O</mi></mrow></mrow><mrow><mi>x</mi><mo>,</mo><mi>σ</mi></mrow></msub><mo>∩</mo><msub><mrow><mrow><mi data-mjx-variant=\"-tex-calligraphic\" mathvariant=\"script\">O</mi></mrow></mrow><mrow><mi>y</mi><mo>,</mo><mi>σ</mi></mrow></msub><mo>≠</mo><mi mathvariant=\"normal\">∅</mi></math>",
       "tex": "{\\mathcal O}_{x, \\sigma} \\cap {\\mathcal O}_{y, \\sigma} \\neq \\emptyset",
-      "expected": "⠈⠰⠠⠕⠰⠭⠠⠀⠨⠎⠐⠨⠩⠈⠰⠠⠕⠰⠽⠠⠀⠨⠎⠐⠀⠌⠨⠅⠀⠸⠴",
+      "expected": "⠈⠰⠠⠕⠰⠭⠠⠀⠨⠎⠐⠨⠩⠈⠰⠠⠕⠰⠽⠠⠀⠨⠎⠀⠌⠨⠅⠀⠸⠴",
       "reference": {
         "m-2996": "http://abstract.ups.edu/aata/exercises-permute.html#aTR"
       }
@@ -950,7 +950,7 @@
       "url": "http://abstract.ups.edu/aata/section-error-detecting-correcting-codes.html#IKJ",
       "input": "<math><msub><mi>d</mi><mrow><mo data-mjx-texclass=\"OP\" movablelimits=\"true\">min</mo></mrow></msub><mo>≥</mo><mn>3</mn></math>",
       "tex": "d_{\\min} \\geq 3",
-      "expected": "⠙⠰⠍⠊⠝⠐⠀⠨⠂⠱⠀⠼⠒",
+      "expected": "⠙⠰⠍⠊⠝⠀⠨⠂⠱⠀⠼⠒",
       "reference": {
         "m-4007": "http://abstract.ups.edu/aata/section-error-detecting-correcting-codes.html#IKJ"
       }
@@ -1020,7 +1020,7 @@
       "url": "http://abstract.ups.edu/aata/section-parity-check.html#hng",
       "input": "<math><mi>H</mi><msub><mrow><mrow><mi mathvariant=\"bold\">e</mi></mrow></mrow><mi>i</mi></msub><mo>≠</mo><mrow><mrow><mn mathvariant=\"bold\">0</mn></mrow></mrow></math>",
       "tex": "H{\\mathbf e}_i \\neq {\\mathbf 0}",
-      "expected": "⠠⠓⠸⠰⠑⠰⠊⠐⠀⠌⠨⠅⠀⠼⠴",
+      "expected": "⠠⠓⠸⠰⠑⠰⠊⠀⠌⠨⠅⠀⠸⠼⠴",
       "reference": {
         "m-4308": "http://abstract.ups.edu/aata/section-parity-check.html#hng"
       }
@@ -1086,7 +1086,7 @@
       "url": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#pAM",
       "input": "<math><msup><mi>a</mi><mi>m</mi></msup><mo>≠</mo><msup><mi>a</mi><mi>n</mi></msup></math>",
       "tex": "a^m \\neq a^n",
-      "expected": "⠁⠘⠍⠐⠀⠌⠨⠅⠀⠁⠘⠝",
+      "expected": "⠁⠘⠍⠀⠌⠨⠅⠀⠁⠘⠝",
       "reference": {
         "m-4758": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#pAM"
       }
@@ -1262,7 +1262,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#xdL",
       "input": "<math><msup><mi>a</mi><mi>r</mi></msup><mo>≠</mo><mn>1</mn></math>",
       "tex": "a^r \\neq 1",
-      "expected": "⠁⠘⠗⠐⠀⠌⠨⠅⠀⠼⠂",
+      "expected": "⠁⠘⠗⠀⠌⠨⠅⠀⠼⠂",
       "reference": {
         "m-6874": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#xdL",
         "m-6878": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#xdL"
@@ -1305,7 +1305,7 @@
       "url": "http://abstract.ups.edu/aata/section-class-equation.html#Eih",
       "input": "<math><msub><mi>n</mi><mi>i</mi></msub><mo>&gt;</mo><mn>1</mn></math>",
       "tex": "n_i \\gt 1",
-      "expected": "⠝⠰⠊⠐⠀⠨⠂⠀⠼⠂",
+      "expected": "⠝⠰⠊⠀⠨⠂⠀⠼⠂",
       "reference": {
         "m-7534": "http://abstract.ups.edu/aata/section-class-equation.html#Eih"
       }
@@ -1395,7 +1395,7 @@
       "url": "http://abstract.ups.edu/aata/section-sylow-applications.html#aWE",
       "input": "<math><mn>5</mn><mo>≢</mo><mn>1</mn><mspace width=\"0.444em\" /><mo stretchy=\"false\">(</mo><mi>mod</mi><mspace width=\"0.333em\" /><mn>3</mn><mo stretchy=\"false\">)</mo></math>",
       "tex": "5 \\not\\equiv 1 \\pmod{3}",
-      "expected": "⠼⠢⠀⠌⠸⠇⠀⠼⠂⠷⠍⠕⠙⠀⠒⠾",
+      "expected": "⠼⠢⠀⠌⠸⠇⠀⠼⠂⠷⠍⠕⠙⠀⠼⠒⠾",
       "reference": {
         "m-8368": "http://abstract.ups.edu/aata/section-sylow-applications.html#aWE"
       }
@@ -1455,7 +1455,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-sylow.html#fsc",
       "input": "<math><msup><mi>p</mi><mi>k</mi></msup><mo>≤</mo><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo><mi>H</mi><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo></math>",
       "tex": "p^k \\leq |H|",
-      "expected": "⠏⠘⠅⠐⠀⠐⠅⠱⠀⠳⠠⠓⠳",
+      "expected": "⠏⠘⠅⠀⠐⠅⠱⠀⠳⠠⠓⠳",
       "reference": {
         "m-8721": "http://abstract.ups.edu/aata/exercises-sylow.html#fsc"
       }
@@ -1537,7 +1537,7 @@
       "url": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#gne",
       "input": "<math><mi>ϕ</mi><mo stretchy=\"false\">(</mo><mi>R</mi><mo stretchy=\"false\">)</mo><mo>≠</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mn>0</mn><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "\\phi(R) \\neq \\{ 0 \\}",
-      "expected": "⠋⠷⠠⠗⠾⠀⠌⠨⠅⠀⠨⠷⠼⠴⠨⠾",
+      "expected": "⠋⠷⠠⠗⠾⠀⠌⠨⠅⠀⠨⠷⠴⠨⠾",
       "reference": {
         "m-9210": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#gne"
       }
@@ -1547,7 +1547,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-rings.html#nKz",
       "input": "<math><mi>I</mi><mo>≠</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mn>0</mn><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "I \\neq \\{ 0 \\}",
-      "expected": "⠠⠊⠀⠌⠨⠅⠀⠨⠷⠼⠴⠨⠾",
+      "expected": "⠠⠊⠀⠌⠨⠅⠀⠨⠷⠴⠨⠾",
       "reference": {
         "m-9627": "http://abstract.ups.edu/aata/exercises-rings.html#nKz"
       }
@@ -1587,7 +1587,7 @@
       "url": "http://abstract.ups.edu/aata/section-poly-rings.html#NWS",
       "input": "<math><msub><mi>a</mi><mi>n</mi></msub><mo>≠</mo><mn>0</mn></math>",
       "tex": "a_n \\neq 0",
-      "expected": "⠁⠰⠝⠐⠀⠌⠨⠅⠀⠼⠴",
+      "expected": "⠁⠰⠝⠀⠌⠨⠅⠀⠼⠴",
       "reference": {
         "m-9842": "http://abstract.ups.edu/aata/section-poly-rings.html#NWS",
         "m-9849": "http://abstract.ups.edu/aata/section-poly-rings.html#NWS",
@@ -1609,7 +1609,7 @@
       "url": "http://abstract.ups.edu/aata/section-poly-rings.html#eUQ",
       "input": "<math><msub><mi>a</mi><mi>m</mi></msub><mo>≠</mo><mn>0</mn></math>",
       "tex": "a_m \\neq 0",
-      "expected": "⠁⠰⠍⠐⠀⠌⠨⠅⠀⠼⠴",
+      "expected": "⠁⠰⠍⠀⠌⠨⠅⠀⠼⠴",
       "reference": {
         "m-9894": "http://abstract.ups.edu/aata/section-poly-rings.html#eUQ"
       }
@@ -1619,7 +1619,7 @@
       "url": "http://abstract.ups.edu/aata/section-poly-rings.html#eUQ",
       "input": "<math><msub><mi>b</mi><mi>n</mi></msub><mo>≠</mo><mn>0</mn></math>",
       "tex": "b_n \\neq 0",
-      "expected": "⠃⠰⠝⠐⠀⠌⠨⠅⠀⠼⠴",
+      "expected": "⠃⠰⠝⠀⠌⠨⠅⠀⠼⠴",
       "reference": {
         "m-9895": "http://abstract.ups.edu/aata/section-poly-rings.html#eUQ"
       }
@@ -1805,7 +1805,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#KCj",
       "input": "<math><mi>ν</mi><mo stretchy=\"false\">(</mo><mi>z</mi><mo stretchy=\"false\">)</mo><mo>≥</mo><mn>0</mn></math>",
       "tex": "\\nu(z) \\geq 0",
-      "expected": "⠝⠷⠵⠾⠀⠨⠂⠱⠀⠼⠴",
+      "expected": "⠨⠝⠷⠵⠾⠀⠨⠂⠱⠀⠼⠴",
       "reference": {
         "m-10889": "http://abstract.ups.edu/aata/section-factorization-domains.html#KCj"
       }
@@ -1857,7 +1857,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#lbk",
       "input": "<math><mi>ν</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo><mo>≤</mo><mi>ν</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mi>b</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\nu(a) \\leq \\nu(ab)",
-      "expected": "⠝⠷⠁⠾⠀⠐⠅⠱⠀⠝⠷⠁⠃⠾",
+      "expected": "⠨⠝⠷⠁⠾⠀⠐⠅⠱⠀⠨⠝⠷⠁⠃⠾",
       "reference": {
         "m-11127": "http://abstract.ups.edu/aata/section-factorization-domains.html#lbk"
       }
@@ -1878,7 +1878,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#Rit",
       "input": "<math><mi>ν</mi><mo stretchy=\"false\">(</mo><mi>r</mi><mo stretchy=\"false\">)</mo><mo>&lt;</mo><mi>ν</mi><mo stretchy=\"false\">(</mo><mi>b</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\nu(r) \\lt \\nu(b)",
-      "expected": "⠝⠷⠗⠾⠀⠐⠅⠀⠝⠷⠃⠾",
+      "expected": "⠨⠝⠷⠗⠾⠀⠐⠅⠀⠨⠝⠷⠃⠾",
       "reference": {
         "m-11133": "http://abstract.ups.edu/aata/section-factorization-domains.html#Rit",
         "m-11195": "http://abstract.ups.edu/aata/section-factorization-domains.html#ZDQ"
@@ -1889,7 +1889,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#vtl",
       "input": "<math><mi>ν</mi><mo stretchy=\"false\">(</mo><mi>z</mi><mo stretchy=\"false\">)</mo><mo>≥</mo><mn>1</mn></math>",
       "tex": "\\nu(z) \\geq 1",
-      "expected": "⠝⠷⠵⠾⠀⠨⠂⠱⠀⠼⠂",
+      "expected": "⠨⠝⠷⠵⠾⠀⠨⠂⠱⠀⠼⠂",
       "reference": {
         "m-11147": "http://abstract.ups.edu/aata/section-factorization-domains.html#vtl"
       }
@@ -1899,7 +1899,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#vtl",
       "input": "<math><mi>ν</mi><mo stretchy=\"false\">(</mo><mi>z</mi><mo stretchy=\"false\">)</mo><mo>≤</mo><mi>ν</mi><mo stretchy=\"false\">(</mo><mi>z</mi><mo stretchy=\"false\">)</mo><mi>ν</mi><mo stretchy=\"false\">(</mo><mi>w</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\nu( z) \\leq \\nu(z) \\nu(w)",
-      "expected": "⠝⠷⠵⠾⠀⠐⠅⠱⠀⠝⠷⠵⠾⠝⠷⠺⠾",
+      "expected": "⠨⠝⠷⠵⠾⠀⠐⠅⠱⠀⠨⠝⠷⠵⠾⠨⠝⠷⠺⠾",
       "reference": {
         "m-11149": "http://abstract.ups.edu/aata/section-factorization-domains.html#vtl"
       }
@@ -1919,7 +1919,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#bAu",
       "input": "<math><mi>ν</mi><mo stretchy=\"false\">(</mo><mi>r</mi><mo stretchy=\"false\">)</mo><mo>&lt;</mo><mi>ν</mi><mo stretchy=\"false\">(</mo><mi>w</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\nu(r) \\lt \\nu(w)",
-      "expected": "⠝⠷⠗⠾⠀⠐⠅⠀⠝⠷⠺⠾",
+      "expected": "⠨⠝⠷⠗⠾⠀⠐⠅⠀⠨⠝⠷⠺⠾",
       "reference": {
         "m-11159": "http://abstract.ups.edu/aata/section-factorization-domains.html#bAu",
         "m-11180": "http://abstract.ups.edu/aata/section-factorization-domains.html#bAu"
@@ -1940,7 +1940,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-domains.html#Xma",
       "input": "<math><mi>ν</mi><mo stretchy=\"false\">(</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo>≤</mo><mi>ν</mi><mo stretchy=\"false\">(</mo><mi>u</mi><mi>b</mi><mo stretchy=\"false\">)</mo><mo>≤</mo><mi>ν</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\nu(b) \\leq \\nu(ub) \\leq \\nu(a)",
-      "expected": "⠝⠷⠃⠾⠀⠐⠅⠱⠀⠝⠷⠥⠃⠾⠀⠐⠅⠱⠀⠝⠷⠁⠾",
+      "expected": "⠨⠝⠷⠃⠾⠀⠐⠅⠱⠀⠨⠝⠷⠥⠃⠾⠀⠐⠅⠱⠀⠨⠝⠷⠁⠾",
       "reference": {
         "m-11521": "http://abstract.ups.edu/aata/exercises-domains.html#Xma"
       }
@@ -1950,7 +1950,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-domains.html#Xma",
       "input": "<math><mi>ν</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo><mo>≤</mo><mi>ν</mi><mo stretchy=\"false\">(</mo><mi>b</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\nu(a) \\leq \\nu(b)",
-      "expected": "⠝⠷⠁⠾⠀⠐⠅⠱⠀⠝⠷⠃⠾",
+      "expected": "⠨⠝⠷⠁⠾⠀⠐⠅⠱⠀⠨⠝⠷⠃⠾",
       "reference": {
         "m-11522": "http://abstract.ups.edu/aata/exercises-domains.html#Xma"
       }
@@ -2301,7 +2301,7 @@
       "url": "http://abstract.ups.edu/aata/section-boolean-algebras.html#JVT",
       "input": "<math><mi>b</mi><mo>∧</mo><msup><mi>c</mi><mo>′</mo></msup><mo>≠</mo><mi>O</mi></math>",
       "tex": "b \\wedge c' \\neq O",
-      "expected": "⠃⠈⠩⠉⠘⠄⠐⠀⠌⠨⠅⠀⠠⠕",
+      "expected": "⠃⠈⠩⠉⠄⠀⠌⠨⠅⠀⠠⠕",
       "reference": {
         "m-12053": "http://abstract.ups.edu/aata/section-boolean-algebras.html#JVT"
       }
@@ -2321,7 +2321,7 @@
       "url": "http://abstract.ups.edu/aata/section-boolean-algebras.html#cgO",
       "input": "<math><msub><mi>a</mi><mi>i</mi></msub><mo>⪯</mo><mi>b</mi></math>",
       "tex": "a_i \\preceq b",
-      "expected": "⠁⠰⠊⠐⠀⠨⠐⠅⠱⠀⠃",
+      "expected": "⠁⠰⠊⠀⠨⠐⠅⠱⠀⠃",
       "reference": {
         "m-12061": "http://abstract.ups.edu/aata/section-boolean-algebras.html#cgO",
         "m-12066": "http://abstract.ups.edu/aata/section-boolean-algebras.html#cgO",
@@ -2395,7 +2395,7 @@
       "url": "http://abstract.ups.edu/aata/section-linear-independence.html#QFq",
       "input": "<math><msub><mi>α</mi><mi>k</mi></msub><mo>≠</mo><mn>0</mn></math>",
       "tex": "\\alpha_k \\neq 0",
-      "expected": "⠨⠁⠰⠅⠐⠀⠌⠨⠅⠀⠼⠴",
+      "expected": "⠨⠁⠰⠅⠀⠌⠨⠅⠀⠼⠴",
       "reference": {
         "m-12507": "http://abstract.ups.edu/aata/section-linear-independence.html#QFq"
       }
@@ -2498,7 +2498,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-field.html#OfW",
       "input": "<math><msub><mi>α</mi><mi>i</mi></msub><mo>≠</mo><msub><mi>α</mi><mi>j</mi></msub></math>",
       "tex": "\\alpha_i \\neq \\alpha_j",
-      "expected": "⠨⠁⠰⠊⠐⠀⠌⠨⠅⠀⠨⠁⠰⠚",
+      "expected": "⠨⠁⠰⠊⠀⠌⠨⠅⠀⠨⠁⠰⠚",
       "reference": {
         "m-14052": "http://abstract.ups.edu/aata/section-finite-field.html#OfW"
       }
@@ -2579,7 +2579,7 @@
       "url": "http://abstract.ups.edu/aata/section-field-automorphisms.html#gLq",
       "input": "<math><mo stretchy=\"false\">[</mo><mi>E</mi><mo>:</mo><mi>F</mi><mo stretchy=\"false\">]</mo><mo>&gt;</mo><mn>1</mn></math>",
       "tex": "[E:F] \\gt 1",
-      "expected": "⠈⠷⠠⠑⠒⠀⠠⠋⠈⠾⠀⠨⠂⠀⠼⠂",
+      "expected": "⠈⠷⠠⠑⠀⠐⠂⠀⠠⠋⠈⠾⠀⠨⠂⠀⠼⠂",
       "reference": {
         "m-14781": "http://abstract.ups.edu/aata/section-field-automorphisms.html#gLq"
       }
@@ -2661,7 +2661,7 @@
       "url": "http://abstract.ups.edu/aata/section-field-automorphisms.html#EiH",
       "input": "<math><mi>γ</mi><mo>−</mo><mi>a</mi><msub><mi>β</mi><mi>j</mi></msub><mo>≠</mo><msub><mi>α</mi><mi>i</mi></msub></math>",
       "tex": "\\gamma - a \\beta_j \\neq \\alpha_i",
-      "expected": "⠨⠛⠤⠁⠨⠃⠰⠚⠐⠀⠌⠨⠅⠀⠨⠁⠰⠊",
+      "expected": "⠨⠛⠤⠁⠨⠃⠰⠚⠀⠌⠨⠅⠀⠨⠁⠰⠊",
       "reference": {
         "m-14978": "http://abstract.ups.edu/aata/section-field-automorphisms.html#EiH"
       }
@@ -2681,7 +2681,7 @@
       "url": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#ZCD",
       "input": "<math><mo stretchy=\"false\">[</mo><mi>E</mi><mo>:</mo><mi>F</mi><mo stretchy=\"false\">]</mo><mo>≤</mo><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo><mi>G</mi><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo></math>",
       "tex": "[E:F] \\leq |G|",
-      "expected": "⠈⠷⠠⠑⠒⠀⠠⠋⠈⠾⠀⠐⠅⠱⠀⠳⠠⠛⠳",
+      "expected": "⠈⠷⠠⠑⠀⠐⠂⠀⠠⠋⠈⠾⠀⠐⠅⠱⠀⠳⠠⠛⠳",
       "reference": {
         "m-15042": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#ZCD",
         "m-15123": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#kpQ"
@@ -2692,7 +2692,7 @@
       "url": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#tJC",
       "input": "<math><msub><mi>σ</mi><mi>i</mi></msub><mo stretchy=\"false\">(</mo><msub><mi>a</mi><mn>2</mn></msub><mo stretchy=\"false\">)</mo><mo>≠</mo><msub><mi>a</mi><mn>2</mn></msub></math>",
       "tex": "\\sigma_i( a_2 ) \\neq a_2",
-      "expected": "⠎⠰⠊⠐⠷⠁⠆⠾⠀⠌⠨⠅⠀⠁⠆",
+      "expected": "⠨⠎⠰⠊⠐⠷⠁⠆⠾⠀⠌⠨⠅⠀⠁⠆",
       "reference": {
         "m-15072": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#tJC",
         "m-15079": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#tJC"
@@ -2725,7 +2725,7 @@
       "url": "http://abstract.ups.edu/aata/section-galois-applications.html#cLr",
       "input": "<math><mi>L</mi><mo>≠</mo><mrow><mrow><mi mathvariant=\"double-struck\">C</mi></mrow></mrow></math>",
       "tex": "L \\neq {\\mathbb C}",
-      "expected": "⠠⠇⠀⠌⠨⠅⠀⠸⠰⠠⠉",
+      "expected": "⠠⠇⠀⠌⠨⠅⠀⠈⠰⠠⠉",
       "reference": {
         "m-15587": "http://abstract.ups.edu/aata/section-galois-applications.html#cLr"
       }
@@ -2735,7 +2735,7 @@
       "url": "http://abstract.ups.edu/aata/section-galois-applications.html#cLr",
       "input": "<math><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo><mi>G</mi><mo stretchy=\"false\">(</mo><mi>L</mi><mrow><mo>/</mo></mrow><mrow><mrow><mi mathvariant=\"double-struck\">C</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo><mo>≥</mo><mn>2</mn></math>",
       "tex": "|G(L / {\\mathbb C})| \\geq 2",
-      "expected": "⠳⠠⠛⠷⠠⠇⠸⠌⠸⠰⠠⠉⠾⠳⠀⠨⠂⠱⠀⠼⠆",
+      "expected": "⠳⠠⠛⠷⠠⠇⠸⠌⠈⠰⠠⠉⠾⠳⠀⠨⠂⠱⠀⠼⠆",
       "reference": {
         "m-15588": "http://abstract.ups.edu/aata/section-galois-applications.html#cLr"
       }
@@ -2755,7 +2755,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-galois.html#IiT",
       "input": "<math><mi>σ</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo><mo>&gt;</mo><mn>0</mn></math>",
       "tex": "\\sigma( a) > 0",
-      "expected": "⠎⠷⠁⠾⠀⠨⠂⠀⠼⠴",
+      "expected": "⠨⠎⠷⠁⠾⠀⠨⠂⠀⠼⠴",
       "reference": {
         "m-15707": "http://abstract.ups.edu/aata/exercises-galois.html#IiT"
       }
@@ -2765,7 +2765,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-galois.html#Uxl",
       "input": "<math><mi>char</mi><mo data-mjx-texclass=\"NONE\">⁡</mo><mo stretchy=\"false\">(</mo><mi>F</mi><mo stretchy=\"false\">)</mo><mo>≠</mo><mn>2</mn></math>",
       "tex": "\\chr(F) \\neq 2",
-      "expected": "⠉⠓⠁⠗⠷⠠⠋⠾⠀⠌⠨⠅⠀⠼⠆",
+      "expected": "⠉⠓⠁⠗⠀⠷⠠⠋⠾⠀⠌⠨⠅⠀⠼⠆",
       "reference": {
         "m-15712": "http://abstract.ups.edu/aata/exercises-galois.html#Uxl"
       }
@@ -2775,7 +2775,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-galois.html#DGe",
       "input": "<math><mi>ω</mi><mo>≠</mo><mn>1</mn></math>",
       "tex": "\\omega \\neq 1",
-      "expected": "⠨⠕⠀⠌⠨⠅⠀⠼⠂",
+      "expected": "⠨⠺⠀⠌⠨⠅⠀⠼⠂",
       "reference": {
         "m-15737": "http://abstract.ups.edu/aata/exercises-galois.html#DGe"
       }
