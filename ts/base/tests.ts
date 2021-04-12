@@ -19,7 +19,6 @@
 import * as process from 'process';
 import {ExampleFiles} from '../classes/abstract_examples';
 import * as TestFactory from '../classes/test_factory';
-import * as BaseTests from '../tests/base_tests';
 import {TestRunner} from './runner';
 import {sre} from './test_external';
 import {TestUtil} from './test_util';
@@ -36,7 +35,7 @@ export class Tests {
   /**
    * List of all available tests.
    */
-  public static allTests: any[] = BaseTests.testList;
+  public static allTests: any[] = [];
 
   /**
    * List of tests to run. Initially empty.
@@ -100,10 +99,6 @@ export class Tests {
       let names: {[key: string]: Function} = {};
       Tests.allTests.map(x => names[x.name] = x);
       this.testList = file.map((x: string) =>  names[x]);
-    }
-    let locale = this.environment['LOCALE'] as string[];
-    if (locale && locale[0] === 'Base') {
-      this.testList = this.testList.concat(BaseTests.testList);
     }
     if (!this.testList.length) {
       this.testList = this.testList.concat(Tests.allTests);

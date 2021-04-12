@@ -12,7 +12,7 @@
       "url": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#VjS",
       "input": "<math><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub></math>",
       "tex": "x_1, x_2, \\ldots, x_n",
-      "expected": "⠭⠂⠠⠀⠭⠆⠠⠀⠄⠄⠄⠀⠠⠀⠭⠰⠝⠐",
+      "expected": "⠭⠂⠠⠀⠭⠆⠠⠀⠄⠄⠄⠠⠀⠭⠰⠝",
       "reference": {
         "m-45": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#VjS"
       }
@@ -22,7 +22,7 @@
       "url": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#tMC",
       "input": "<math><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub></math>",
       "tex": "A_1, \\ldots, A_n",
-      "expected": "⠠⠁⠂⠠⠀⠄⠄⠄⠀⠠⠀⠠⠁⠰⠝⠐",
+      "expected": "⠠⠁⠂⠠⠀⠄⠄⠄⠠⠀⠠⠁⠰⠝",
       "reference": {
         "m-87": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#tMC"
       }
@@ -32,7 +32,7 @@
       "url": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#eDE",
       "input": "<math><mi>f</mi><mo>:</mo><mi>A</mi><mo stretchy=\"false\">→</mo><mi>B</mi></math>",
       "tex": "f:A \\rightarrow B",
-      "expected": "⠋⠒⠀⠠⠁⠀⠫⠕⠀⠠⠃",
+      "expected": "⠋⠸⠒⠀⠠⠁⠀⠫⠕⠀⠠⠃",
       "reference": {
         "m-181": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#eDE",
         "m-201": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#KKN",
@@ -51,7 +51,7 @@
       "url": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#eDE",
       "input": "<math><mi>f</mi><mo>:</mo><mi>a</mi><mo stretchy=\"false\">↦</mo><mi>b</mi></math>",
       "tex": "f : a \\mapsto b",
-      "expected": "⠋⠒⠀⠁⠀⠫⠳⠒⠒⠕⠀⠃",
+      "expected": "⠋⠸⠒⠀⠁⠀⠫⠳⠒⠒⠕⠀⠃",
       "reference": {
         "m-185": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#eDE"
       }
@@ -61,7 +61,7 @@
       "url": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#KKN",
       "input": "<math><mi>f</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow></math>",
       "tex": "f: {\\mathbb R} \\rightarrow {\\mathbb R}",
-      "expected": "⠋⠒⠀⠸⠰⠠⠗⠀⠫⠕⠀⠸⠰⠠⠗",
+      "expected": "⠋⠸⠒⠀⠈⠰⠠⠗⠀⠫⠕⠀⠈⠰⠠⠗",
       "reference": {
         "m-202": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#KKN",
         "m-573": "http://abstract.ups.edu/aata/exercises-sets.html#iKH",
@@ -73,7 +73,7 @@
       "url": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#KKN",
       "input": "<math><mi>f</mi><mo>:</mo><mi>x</mi><mo stretchy=\"false\">↦</mo><msup><mi>x</mi><mn>3</mn></msup></math>",
       "tex": "f:x \\mapsto x^3",
-      "expected": "⠋⠒⠀⠭⠀⠫⠳⠒⠒⠕⠀⠭⠘⠒",
+      "expected": "⠋⠸⠒⠀⠭⠀⠫⠳⠒⠒⠕⠀⠭⠘⠒",
       "reference": {
         "m-204": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#KKN"
       }
@@ -83,7 +83,7 @@
       "url": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#qRW",
       "input": "<math><mi>f</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow></math>",
       "tex": "f : {\\mathbb Q} \\rightarrow {\\mathbb Z}",
-      "expected": "⠋⠒⠀⠸⠰⠠⠟⠀⠫⠕⠀⠸⠰⠠⠵",
+      "expected": "⠋⠸⠒⠀⠈⠰⠠⠟⠀⠫⠕⠀⠈⠰⠠⠵",
       "reference": {
         "m-205": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#qRW"
       }
@@ -93,7 +93,7 @@
       "url": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#kOp",
       "input": "<math><mi>f</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow></math>",
       "tex": "f:{\\mathbb Z} \\rightarrow {\\mathbb Q}",
-      "expected": "⠋⠒⠀⠸⠰⠠⠵⠀⠫⠕⠀⠸⠰⠠⠟",
+      "expected": "⠋⠸⠒⠀⠈⠰⠠⠵⠀⠫⠕⠀⠈⠰⠠⠟",
       "reference": {
         "m-223": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#kOp"
       }
@@ -103,7 +103,7 @@
       "url": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#kOp",
       "input": "<math><mi>g</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow></math>",
       "tex": "g : {\\mathbb Q} \\rightarrow {\\mathbb Z}",
-      "expected": "⠛⠒⠀⠸⠰⠠⠟⠀⠫⠕⠀⠸⠰⠠⠵",
+      "expected": "⠛⠸⠒⠀⠈⠰⠠⠟⠀⠫⠕⠀⠈⠰⠠⠵",
       "reference": {
         "m-226": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#kOp"
       }
@@ -113,7 +113,7 @@
       "url": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#Dgo",
       "input": "<math><mi>g</mi><mo>:</mo><mi>B</mi><mo stretchy=\"false\">→</mo><mi>C</mi></math>",
       "tex": "g : B \\rightarrow C",
-      "expected": "⠛⠒⠀⠠⠃⠀⠫⠕⠀⠠⠉",
+      "expected": "⠛⠸⠒⠀⠠⠃⠀⠫⠕⠀⠠⠉",
       "reference": {
         "m-231": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#Dgo",
         "m-238": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#QVy",
@@ -127,7 +127,7 @@
       "url": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#QVy",
       "input": "<math><mi>g</mi><mo>∘</mo><mi>f</mi><mo>:</mo><mi>A</mi><mo stretchy=\"false\">→</mo><mi>C</mi></math>",
       "tex": "g \\circ f: A \\rightarrow C",
-      "expected": "⠛⠘⠨⠡⠋⠒⠀⠠⠁⠀⠫⠕⠀⠠⠉",
+      "expected": "⠛⠨⠡⠋⠸⠒⠀⠠⠁⠀⠫⠕⠀⠠⠉",
       "reference": {
         "m-239": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#QVy"
       }
@@ -137,7 +137,7 @@
       "url": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#JqZ",
       "input": "<math><msub><mi>T</mi><mi>A</mi></msub><mo>:</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mn>2</mn></msup><mo stretchy=\"false\">→</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mn>2</mn></msup></math>",
       "tex": "T_A : {\\mathbb R}^2 \\rightarrow {\\mathbb R}^2",
-      "expected": "⠠⠞⠰⠠⠁⠐⠒⠀⠸⠰⠠⠗⠘⠆⠐⠀⠫⠕⠀⠸⠰⠠⠗⠘⠆",
+      "expected": "⠠⠞⠰⠠⠁⠸⠒⠀⠈⠰⠠⠗⠘⠆⠀⠫⠕⠀⠈⠰⠠⠗⠘⠆",
       "reference": {
         "m-247": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#JqZ"
       }
@@ -147,7 +147,7 @@
       "url": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#pyi",
       "input": "<math><mi>π</mi><mo>:</mo><mi>S</mi><mo stretchy=\"false\">→</mo><mi>S</mi></math>",
       "tex": "\\pi :S\\rightarrow S",
-      "expected": "⠨⠏⠒⠀⠠⠎⠀⠫⠕⠀⠠⠎",
+      "expected": "⠨⠏⠸⠒⠀⠠⠎⠀⠫⠕⠀⠠⠎",
       "reference": {
         "m-253": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#pyi",
         "m-256": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#pyi",
@@ -160,7 +160,7 @@
       "url": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#buD",
       "input": "<math><mi>h</mi><mo>:</mo><mi>C</mi><mo stretchy=\"false\">→</mo><mi>D</mi></math>",
       "tex": "h : C \\rightarrow D",
-      "expected": "⠓⠒⠀⠠⠉⠀⠫⠕⠀⠠⠙",
+      "expected": "⠓⠸⠒⠀⠠⠉⠀⠫⠕⠀⠠⠙",
       "reference": {
         "m-260": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#buD"
       }
@@ -170,7 +170,7 @@
       "url": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#jnx",
       "input": "<math><mi>g</mi><mo>:</mo><mi>B</mi><mo stretchy=\"false\">→</mo><mi>A</mi></math>",
       "tex": "g: B \\rightarrow A",
-      "expected": "⠛⠒⠀⠠⠃⠀⠫⠕⠀⠠⠁",
+      "expected": "⠛⠸⠒⠀⠠⠃⠀⠫⠕⠀⠠⠁",
       "reference": {
         "m-288": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#jnx",
         "m-312": "http://abstract.ups.edu/aata/section-sets-and-equivalence-relations.html#Uem"
@@ -191,7 +191,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-sets.html#uRV",
       "input": "<math><mi>f</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow></math>",
       "tex": "f: {\\mathbb Q} \\rightarrow {\\mathbb Q}",
-      "expected": "⠋⠒⠀⠸⠰⠠⠟⠀⠫⠕⠀⠸⠰⠠⠟",
+      "expected": "⠋⠸⠒⠀⠈⠰⠠⠟⠀⠫⠕⠀⠈⠰⠠⠟",
       "reference": {
         "m-564": "http://abstract.ups.edu/aata/exercises-sets.html#uRV"
       }
@@ -201,7 +201,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-sets.html#ORQ",
       "input": "<math><mi>f</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow></math>",
       "tex": "f: {\\mathbb Z} \\rightarrow {\\mathbb Z}",
-      "expected": "⠋⠒⠀⠸⠰⠠⠵⠀⠫⠕⠀⠸⠰⠠⠵",
+      "expected": "⠋⠸⠒⠀⠈⠰⠠⠵⠀⠫⠕⠀⠈⠰⠠⠵",
       "reference": {
         "m-575": "http://abstract.ups.edu/aata/exercises-sets.html#ORQ",
         "m-579": "http://abstract.ups.edu/aata/exercises-sets.html#bgi"
@@ -212,7 +212,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-sets.html#Hnr",
       "input": "<math><mi>f</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">N</mi></mrow></mrow><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">N</mi></mrow></mrow></math>",
       "tex": "f: {\\mathbb N} \\rightarrow {\\mathbb N}",
-      "expected": "⠋⠒⠀⠸⠰⠠⠝⠀⠫⠕⠀⠸⠰⠠⠝",
+      "expected": "⠋⠸⠒⠀⠈⠰⠠⠝⠀⠫⠕⠀⠈⠰⠠⠝",
       "reference": {
         "m-590": "http://abstract.ups.edu/aata/exercises-sets.html#Hnr",
         "m-591": "http://abstract.ups.edu/aata/exercises-sets.html#nuA"
@@ -223,7 +223,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-sets.html#LQg",
       "input": "<math><mi>f</mi><mo>:</mo><mi>X</mi><mo stretchy=\"false\">→</mo><mi>Y</mi></math>",
       "tex": "f: X \\rightarrow Y",
-      "expected": "⠋⠒⠀⠠⠭⠀⠫⠕⠀⠠⠽",
+      "expected": "⠋⠸⠒⠀⠠⠭⠀⠫⠕⠀⠠⠽",
       "reference": {
         "m-626": "http://abstract.ups.edu/aata/exercises-sets.html#LQg",
         "m-7630": "http://abstract.ups.edu/aata/section-burnsides-counting-theorem.html#Dkf",
@@ -265,7 +265,7 @@
       "url": "http://abstract.ups.edu/aata/section-math-induction.html#DzA",
       "input": "<math><mi>n</mi><mo>!</mo><mrow><mo>/</mo></mrow><mo stretchy=\"false\">(</mo><mi>k</mi><mo>!</mo><mo stretchy=\"false\">(</mo><mi>n</mi><mo>−</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>!</mo><mo stretchy=\"false\">)</mo></math>",
       "tex": "n!/(k!(n-k)!)",
-      "expected": "⠝⠖⠀⠸⠌⠷⠅⠖⠀⠷⠝⠤⠅⠾⠯⠾",
+      "expected": "⠝⠯⠀⠸⠌⠷⠅⠯⠀⠷⠝⠤⠅⠾⠯⠾",
       "reference": {
         "m-736": "http://abstract.ups.edu/aata/section-math-induction.html#DzA"
       }
@@ -275,7 +275,7 @@
       "url": "http://abstract.ups.edu/aata/section-math-induction.html#eWQ",
       "input": "<math><mi>S</mi><mo stretchy=\"false\">(</mo><msub><mi>n</mi><mn>0</mn></msub><mo stretchy=\"false\">)</mo><mo>,</mo><mi>S</mi><mo stretchy=\"false\">(</mo><msub><mi>n</mi><mn>0</mn></msub><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo>,</mo><mo>…</mo><mo>,</mo><mi>S</mi><mo stretchy=\"false\">(</mo><mi>k</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "S(n_0), S(n_0 + 1), \\ldots, S(k)",
-      "expected": "⠠⠎⠷⠝⠴⠾⠠⠀⠠⠎⠷⠝⠴⠬⠂⠾⠠⠀⠄⠄⠄⠀⠠⠀⠠⠎⠷⠅⠾",
+      "expected": "⠠⠎⠷⠝⠴⠾⠠⠀⠠⠎⠷⠝⠴⠬⠂⠾⠠⠀⠄⠄⠄⠠⠀⠠⠎⠷⠅⠾",
       "reference": {
         "m-744": "http://abstract.ups.edu/aata/section-math-induction.html#eWQ"
       }
@@ -300,7 +300,7 @@
       "url": "http://abstract.ups.edu/aata/section-math-induction.html#Dlf",
       "input": "<math><mi>n</mi><mo>!</mo><mo>=</mo><mn>1</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>⋯</mo><mo stretchy=\"false\">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo>⋅</mo><mi>n</mi></math>",
       "tex": "n! = 1 \\cdot 2 \\cdot 3 \\cdots (n - 1) \\cdot n",
-      "expected": "⠝⠖⠀⠀⠨⠅⠀⠼⠂⠡⠆⠡⠒⠀⠄⠄⠄⠀⠷⠝⠤⠂⠾⠡⠝",
+      "expected": "⠝⠯⠀⠀⠨⠅⠀⠼⠂⠡⠆⠡⠒⠀⠄⠄⠄⠀⠷⠝⠤⠂⠾⠡⠝",
       "reference": {
         "m-785": "http://abstract.ups.edu/aata/section-math-induction.html#Dlf"
       }
@@ -310,7 +310,7 @@
       "url": "http://abstract.ups.edu/aata/section-math-induction.html#jso",
       "input": "<math><mn>1</mn><mo>!</mo><mo>=</mo><mn>1</mn></math>",
       "tex": "1! = 1",
-      "expected": "⠼⠂⠖⠀⠀⠨⠅⠀⠼⠂",
+      "expected": "⠼⠂⠯⠀⠀⠨⠅⠀⠼⠂",
       "reference": {
         "m-786": "http://abstract.ups.edu/aata/section-math-induction.html#jso"
       }
@@ -320,7 +320,7 @@
       "url": "http://abstract.ups.edu/aata/section-math-induction.html#jso",
       "input": "<math><mi>n</mi><mo>!</mo><mo>=</mo><mi>n</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo>!</mo></math>",
       "tex": "n! = n(n - 1)!",
-      "expected": "⠝⠖⠀⠀⠨⠅⠀⠝⠷⠝⠤⠂⠾⠯",
+      "expected": "⠝⠯⠀⠀⠨⠅⠀⠝⠷⠝⠤⠂⠾⠯",
       "reference": {
         "m-787": "http://abstract.ups.edu/aata/section-math-induction.html#jso"
       }
@@ -372,7 +372,7 @@
       "url": "http://abstract.ups.edu/aata/section-division-algorithm.html#Ijt",
       "input": "<math><msup><mi>d</mi><mo>′</mo></msup><mo>∣</mo><mi>d</mi></math>",
       "tex": "d' \\mid d",
-      "expected": "⠙⠘⠄⠐⠳⠙",
+      "expected": "⠙⠄⠳⠙",
       "reference": {
         "m-864": "http://abstract.ups.edu/aata/section-division-algorithm.html#Ijt",
         "m-902": "http://abstract.ups.edu/aata/section-division-algorithm.html#ELX"
@@ -420,7 +420,7 @@
       "url": "http://abstract.ups.edu/aata/section-division-algorithm.html#kTg",
       "input": "<math><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><msub><mi>p</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>p</mi><mi>n</mi></msub></math>",
       "tex": "p_1, p_2, \\ldots, p_n",
-      "expected": "⠏⠂⠠⠀⠏⠆⠠⠀⠄⠄⠄⠀⠠⠀⠏⠰⠝⠐",
+      "expected": "⠏⠂⠠⠀⠏⠆⠠⠀⠄⠄⠄⠠⠀⠏⠰⠝",
       "reference": {
         "m-979": "http://abstract.ups.edu/aata/section-division-algorithm.html#kTg"
       }
@@ -440,7 +440,7 @@
       "url": "http://abstract.ups.edu/aata/section-division-algorithm.html#kTg",
       "input": "<math><mi>P</mi><mo>−</mo><msub><mi>p</mi><mn>1</mn></msub><msub><mi>p</mi><mn>2</mn></msub><mo>⋯</mo><msub><mi>p</mi><mi>n</mi></msub><mo>=</mo><mn>1</mn></math>",
       "tex": "P - p_1 p_2 \\cdots p_n = 1",
-      "expected": "⠠⠏⠤⠏⠂⠏⠆⠀⠄⠄⠄⠀⠏⠰⠝⠐⠀⠨⠅⠀⠼⠂",
+      "expected": "⠠⠏⠤⠏⠂⠏⠆⠀⠄⠄⠄⠀⠏⠰⠝⠀⠨⠅⠀⠼⠂",
       "reference": {
         "m-985": "http://abstract.ups.edu/aata/section-division-algorithm.html#kTg"
       }
@@ -450,7 +450,7 @@
       "url": "http://abstract.ups.edu/aata/section-division-algorithm.html#amX",
       "input": "<math><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>p</mi><mi>k</mi></msub></math>",
       "tex": "p_1, \\ldots, p_k",
-      "expected": "⠏⠂⠠⠀⠄⠄⠄⠀⠠⠀⠏⠰⠅⠐",
+      "expected": "⠏⠂⠠⠀⠄⠄⠄⠠⠀⠏⠰⠅",
       "reference": {
         "m-991": "http://abstract.ups.edu/aata/section-division-algorithm.html#amX",
         "m-4957": "http://abstract.ups.edu/aata/section-direct-products.html#cCN",
@@ -463,7 +463,7 @@
       "url": "http://abstract.ups.edu/aata/section-division-algorithm.html#Rap",
       "input": "<math><msub><mi>p</mi><mn>1</mn></msub><mo>∣</mo><msub><mi>q</mi><mi>i</mi></msub></math>",
       "tex": "p_1  \\mid  q_i",
-      "expected": "⠏⠂⠳⠟⠰⠊⠐",
+      "expected": "⠏⠂⠳⠟⠰⠊",
       "reference": {
         "m-1002": "http://abstract.ups.edu/aata/section-division-algorithm.html#Rap"
       }
@@ -473,7 +473,7 @@
       "url": "http://abstract.ups.edu/aata/section-division-algorithm.html#Rap",
       "input": "<math><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mo>…</mo><mo>,</mo><mi>l</mi></math>",
       "tex": "i = 1, \\ldots,\n            l",
-      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠀⠠⠀⠇",
+      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠠⠀⠇",
       "reference": {
         "m-1003": "http://abstract.ups.edu/aata/section-division-algorithm.html#Rap"
       }
@@ -483,7 +483,7 @@
       "url": "http://abstract.ups.edu/aata/section-division-algorithm.html#Rap",
       "input": "<math><msub><mi>q</mi><mn>1</mn></msub><mo>∣</mo><msub><mi>p</mi><mi>j</mi></msub></math>",
       "tex": "q_1  \\mid  p_j",
-      "expected": "⠟⠂⠳⠏⠰⠚⠐",
+      "expected": "⠟⠂⠳⠏⠰⠚",
       "reference": {
         "m-1004": "http://abstract.ups.edu/aata/section-division-algorithm.html#Rap"
       }
@@ -493,7 +493,7 @@
       "url": "http://abstract.ups.edu/aata/section-division-algorithm.html#Rap",
       "input": "<math><mi>j</mi><mo>=</mo><mn>1</mn><mo>,</mo><mo>…</mo><mo>,</mo><mi>k</mi></math>",
       "tex": "j = 1, \\ldots, k",
-      "expected": "⠚⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠀⠠⠀⠅",
+      "expected": "⠚⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠠⠀⠅",
       "reference": {
         "m-1005": "http://abstract.ups.edu/aata/section-division-algorithm.html#Rap"
       }
@@ -503,7 +503,7 @@
       "url": "http://abstract.ups.edu/aata/section-division-algorithm.html#Rap",
       "input": "<math><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mo>…</mo><mo>,</mo><mi>k</mi></math>",
       "tex": "i = 1, \\ldots, k",
-      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠀⠠⠀⠅",
+      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠠⠀⠅",
       "reference": {
         "m-1014": "http://abstract.ups.edu/aata/section-division-algorithm.html#Rap",
         "m-6912": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd",
@@ -516,7 +516,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-integers.html#iWP",
       "input": "<math><mi>S</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo>:</mo><mo stretchy=\"false\">[</mo><mn>1</mn><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mo stretchy=\"false\">(</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo><mrow><mo>/</mo></mrow><mn>6</mn><mo>=</mo><mn>1</mn><mo>=</mo><msup><mn>1</mn><mn>2</mn></msup></math>",
       "tex": "S(1): [1(1 + 1)(2(1) + 1)]/6 = 1 = 1^2",
-      "expected": "⠠⠎⠷⠼⠂⠾⠒⠀⠈⠷⠼⠂⠷⠂⠬⠂⠾⠷⠆⠷⠂⠾⠬⠂⠾⠈⠾⠸⠌⠖⠀⠨⠅⠀⠼⠂⠀⠨⠅⠀⠼⠂⠘⠆",
+      "expected": "⠠⠎⠷⠂⠾⠸⠒⠈⠷⠂⠷⠂⠬⠂⠾⠷⠆⠷⠂⠾⠬⠂⠾⠈⠾⠸⠌⠖⠀⠨⠅⠀⠼⠂⠀⠨⠅⠀⠼⠂⠘⠆",
       "reference": {
         "m-1049": "http://abstract.ups.edu/aata/exercises-integers.html#iWP"
       }
@@ -526,7 +526,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-integers.html#iWP",
       "input": "<math><mi>S</mi><mo stretchy=\"false\">(</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>:</mo><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mo>⋯</mo><mo>+</mo><msup><mi>k</mi><mn>2</mn></msup><mo>=</mo><mo stretchy=\"false\">[</mo><mi>k</mi><mo stretchy=\"false\">(</mo><mi>k</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>k</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo><mrow><mo>/</mo></mrow><mn>6</mn></math>",
       "tex": "S(k): 1^2 + 2^2 + \\cdots + k^2 = [k(k + 1)(2k + 1)]/6",
-      "expected": "⠠⠎⠷⠅⠾⠒⠀⠼⠂⠘⠆⠐⠬⠆⠘⠆⠐⠬⠄⠄⠄⠬⠅⠘⠆⠐⠀⠨⠅⠀⠈⠷⠅⠷⠅⠬⠂⠾⠷⠆⠅⠬⠂⠾⠈⠾⠸⠌⠖",
+      "expected": "⠠⠎⠷⠅⠾⠸⠒⠼⠂⠘⠆⠐⠬⠆⠘⠆⠬⠄⠄⠄⠀⠬⠅⠘⠆⠐⠀⠨⠅⠀⠈⠷⠅⠷⠅⠬⠂⠾⠷⠆⠅⠬⠂⠾⠈⠾⠸⠌⠖",
       "reference": {
         "m-1050": "http://abstract.ups.edu/aata/exercises-integers.html#iWP"
       }
@@ -536,7 +536,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-integers.html#MTm",
       "input": "<math><mi>n</mi><mo>!</mo><mo>&gt;</mo><msup><mn>2</mn><mi>n</mi></msup></math>",
       "tex": "n! \\gt 2^n",
-      "expected": "⠝⠖⠀⠀⠨⠂⠀⠼⠆⠘⠝",
+      "expected": "⠝⠯⠀⠀⠨⠂⠀⠼⠆⠘⠝",
       "reference": {
         "m-1055": "http://abstract.ups.edu/aata/exercises-integers.html#MTm"
       }
@@ -546,7 +546,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-integers.html#PdY",
       "input": "<math><mi>S</mi><mo stretchy=\"false\">(</mo><mn>4</mn><mo stretchy=\"false\">)</mo><mo>:</mo><mn>4</mn><mo>!</mo><mo>=</mo><mn>24</mn><mo>&gt;</mo><mn>16</mn><mo>=</mo><msup><mn>2</mn><mn>4</mn></msup></math>",
       "tex": "S(4): 4! = 24 \\gt 16 =2^4",
-      "expected": "⠠⠎⠷⠼⠲⠾⠒⠀⠼⠲⠖⠀⠀⠨⠅⠀⠼⠆⠲⠀⠨⠂⠀⠼⠂⠖⠀⠨⠅⠀⠼⠆⠘⠲",
+      "expected": "⠠⠎⠷⠲⠾⠸⠒⠲⠯⠀⠀⠨⠅⠀⠼⠆⠲⠀⠨⠂⠀⠼⠂⠖⠀⠨⠅⠀⠼⠆⠘⠲",
       "reference": {
         "m-1057": "http://abstract.ups.edu/aata/exercises-integers.html#PdY"
       }
@@ -556,7 +556,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-integers.html#PdY",
       "input": "<math><mi>S</mi><mo stretchy=\"false\">(</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>:</mo><mi>k</mi><mo>!</mo><mo>&gt;</mo><msup><mn>2</mn><mi>k</mi></msup></math>",
       "tex": "S(k): k! \\gt 2^k",
-      "expected": "⠠⠎⠷⠅⠾⠒⠀⠅⠖⠀⠀⠨⠂⠀⠼⠆⠘⠅",
+      "expected": "⠠⠎⠷⠅⠾⠸⠒⠅⠯⠀⠀⠨⠂⠀⠼⠆⠘⠅",
       "reference": {
         "m-1058": "http://abstract.ups.edu/aata/exercises-integers.html#PdY"
       }
@@ -566,7 +566,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-integers.html#PdY",
       "input": "<math><mo stretchy=\"false\">(</mo><mi>k</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo>!</mo><mo>=</mo><mi>k</mi><mo>!</mo><mo stretchy=\"false\">(</mo><mi>k</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo>&gt;</mo><msup><mn>2</mn><mi>k</mi></msup><mo>⋅</mo><mn>2</mn><mo>=</mo><msup><mn>2</mn><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup></math>",
       "tex": "(k + 1)! = k! (k + 1) \\gt 2^k \\cdot 2 = 2^{k + 1}",
-      "expected": "⠷⠅⠬⠂⠾⠖⠀⠀⠨⠅⠀⠅⠖⠀⠷⠅⠬⠂⠾⠀⠨⠂⠀⠼⠆⠘⠅⠐⠡⠆⠀⠨⠅⠀⠼⠆⠘⠅⠬⠂",
+      "expected": "⠷⠅⠬⠂⠾⠯⠀⠀⠨⠅⠀⠅⠯⠀⠷⠅⠬⠂⠾⠀⠨⠂⠀⠼⠆⠘⠅⠐⠡⠆⠀⠨⠅⠀⠼⠆⠘⠅⠬⠂",
       "reference": {
         "m-1059": "http://abstract.ups.edu/aata/exercises-integers.html#PdY"
       }
@@ -589,7 +589,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-integers.html#bsq",
       "input": "<math><mi>S</mi><mo stretchy=\"false\">(</mo><mn>0</mn><mo stretchy=\"false\">)</mo><mo>:</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>x</mi><msup><mo stretchy=\"false\">)</mo><mn>0</mn></msup><mo>−</mo><mn>1</mn><mo>=</mo><mn>0</mn><mo>≥</mo><mn>0</mn><mo>=</mo><mn>0</mn><mo>⋅</mo><mi>x</mi></math>",
       "tex": "S(0): (1 + x)^0 - 1 = 0 \\geq 0 = 0 \\cdot x",
-      "expected": "⠠⠎⠷⠼⠴⠾⠒⠀⠷⠼⠂⠬⠭⠾⠘⠴⠐⠤⠂⠀⠨⠅⠀⠼⠴⠀⠨⠂⠱⠀⠼⠴⠀⠨⠅⠀⠼⠴⠡⠭",
+      "expected": "⠠⠎⠷⠴⠾⠸⠒⠷⠂⠬⠭⠾⠘⠴⠐⠤⠂⠀⠨⠅⠀⠼⠴⠀⠨⠂⠱⠀⠼⠴⠀⠨⠅⠀⠼⠴⠡⠭",
       "reference": {
         "m-1080": "http://abstract.ups.edu/aata/exercises-integers.html#bsq"
       }
@@ -599,7 +599,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-integers.html#bsq",
       "input": "<math><mi>S</mi><mo stretchy=\"false\">(</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>:</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>x</mi><msup><mo stretchy=\"false\">)</mo><mi>k</mi></msup><mo>−</mo><mn>1</mn><mo>≥</mo><mi>k</mi><mi>x</mi></math>",
       "tex": "S(k): (1 + x)^k -1 \\geq kx",
-      "expected": "⠠⠎⠷⠅⠾⠒⠀⠷⠼⠂⠬⠭⠾⠘⠅⠐⠤⠂⠀⠨⠂⠱⠀⠅⠭",
+      "expected": "⠠⠎⠷⠅⠾⠸⠒⠷⠂⠬⠭⠾⠘⠅⠐⠤⠂⠀⠨⠂⠱⠀⠅⠭",
       "reference": {
         "m-1081": "http://abstract.ups.edu/aata/exercises-integers.html#bsq"
       }
@@ -619,7 +619,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-integers.html#zzB",
       "input": "<math><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mo>…</mo><mo>,</mo><mi>n</mi><mo>−</mo><mn>1</mn></math>",
       "tex": "0, 1, \\ldots, n-1",
-      "expected": "⠼⠴⠠⠀⠼⠂⠠⠀⠄⠄⠄⠀⠠⠀⠝⠤⠂",
+      "expected": "⠼⠴⠠⠀⠼⠂⠠⠀⠄⠄⠄⠠⠀⠝⠤⠂",
       "reference": {
         "m-1158": "http://abstract.ups.edu/aata/exercises-integers.html#zzB"
       }
@@ -649,7 +649,7 @@
       "url": "http://abstract.ups.edu/aata/integers-exercises-programming.html#paw",
       "input": "<math><mi>A</mi><mo>:</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">N</mi></mrow></mrow><mn>0</mn></msup><mo>×</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">N</mi></mrow></mrow><mn>0</mn></msup><mo stretchy=\"false\">→</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">N</mi></mrow></mrow><mn>0</mn></msup></math>",
       "tex": "A :{\\mathbb N}^0 \\times {\\mathbb N}^0 \\rightarrow {\\mathbb N}^0",
-      "expected": "⠠⠁⠒⠀⠸⠰⠠⠝⠘⠴⠐⠈⠡⠸⠰⠠⠝⠘⠴⠐⠀⠫⠕⠀⠸⠰⠠⠝⠘⠴",
+      "expected": "⠠⠁⠸⠒⠀⠈⠰⠠⠝⠘⠴⠐⠈⠡⠈⠰⠠⠝⠘⠴⠐⠀⠫⠕⠀⠈⠰⠠⠝⠘⠴",
       "reference": {
         "m-1230": "http://abstract.ups.edu/aata/integers-exercises-programming.html#paw"
       }
@@ -659,7 +659,7 @@
       "url": "http://abstract.ups.edu/aata/section-mod-n-sym.html#xTf",
       "input": "<math><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mo>…</mo><mo>,</mo><mn>11</mn></math>",
       "tex": "0, 1, \\ldots, 11",
-      "expected": "⠼⠴⠠⠀⠼⠂⠠⠀⠄⠄⠄⠀⠠⠀⠼⠂⠂",
+      "expected": "⠼⠴⠠⠀⠼⠂⠠⠀⠄⠄⠄⠠⠀⠼⠂⠂",
       "reference": {
         "m-1287": "http://abstract.ups.edu/aata/section-mod-n-sym.html#xTf"
       }
@@ -669,7 +669,7 @@
       "url": "http://abstract.ups.edu/aata/section-mod-n-sym.html#xTf",
       "input": "<math><mrow><mo stretchy=\"false\">[</mo><mn>0</mn><mo stretchy=\"false\">]</mo></mrow><mo>,</mo><mrow><mo stretchy=\"false\">[</mo><mn>1</mn><mo stretchy=\"false\">]</mo></mrow><mo>,</mo><mo>…</mo><mo>,</mo><mrow><mo stretchy=\"false\">[</mo><mn>11</mn><mo stretchy=\"false\">]</mo></mrow></math>",
       "tex": "{[0]}, {[1]}, \\ldots, {[11]}",
-      "expected": "⠈⠷⠼⠴⠈⠾⠠⠀⠈⠷⠼⠂⠈⠾⠠⠀⠄⠄⠄⠀⠠⠀⠈⠷⠼⠂⠂⠈⠾",
+      "expected": "⠈⠷⠴⠈⠾⠠⠀⠈⠷⠂⠈⠾⠠⠀⠄⠄⠄⠠⠀⠈⠷⠂⠂⠈⠾",
       "reference": {
         "m-1288": "http://abstract.ups.edu/aata/section-mod-n-sym.html#xTf"
       }
@@ -679,7 +679,7 @@
       "url": "http://abstract.ups.edu/aata/section-mod-n-sym.html#Khx",
       "input": "<math><mn>3</mn><mo>!</mo><mo>=</mo><mn>6</mn></math>",
       "tex": "3! = 6",
-      "expected": "⠼⠒⠖⠀⠀⠨⠅⠀⠼⠖",
+      "expected": "⠼⠒⠯⠀⠀⠨⠅⠀⠼⠖",
       "reference": {
         "m-1361": "http://abstract.ups.edu/aata/section-mod-n-sym.html#Khx",
         "m-8017": "http://abstract.ups.edu/aata/actions-sage.html#aHw"
@@ -690,7 +690,7 @@
       "url": "http://abstract.ups.edu/aata/section-mod-n-sym.html#Khx",
       "input": "<math><mn>3</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>1</mn><mo>=</mo><mn>3</mn><mo>!</mo><mo>=</mo><mn>6</mn></math>",
       "tex": "3 \\cdot 2 \\cdot 1 = 3! = 6",
-      "expected": "⠼⠒⠡⠆⠡⠂⠀⠨⠅⠀⠼⠒⠖⠀⠀⠨⠅⠀⠼⠖",
+      "expected": "⠼⠒⠡⠆⠡⠂⠀⠨⠅⠀⠼⠒⠯⠀⠀⠨⠅⠀⠼⠖",
       "reference": {
         "m-1362": "http://abstract.ups.edu/aata/section-mod-n-sym.html#Khx"
       }
@@ -720,7 +720,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-groups.html#AdR",
       "input": "<math><msub><mi>g</mi><mn>1</mn></msub><msub><mi>g</mi><mn>2</mn></msub><mo>⋯</mo><msub><mi>g</mi><mi>n</mi></msub></math>",
       "tex": "g _1 g_2 \\cdots g_n",
-      "expected": "⠛⠂⠛⠆⠀⠄⠄⠄⠀⠛⠰⠝⠐",
+      "expected": "⠛⠂⠛⠆⠀⠄⠄⠄⠀⠛⠰⠝",
       "reference": {
         "m-1815": "http://abstract.ups.edu/aata/exercises-groups.html#AdR"
       }
@@ -730,7 +730,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-groups.html#AdR",
       "input": "<math><msubsup><mi>g</mi><mi>n</mi><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><msubsup><mi>g</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo>⋯</mo><msubsup><mi>g</mi><mn>1</mn><mrow><mo>−</mo><mn>1</mn></mrow></msubsup></math>",
       "tex": "g_n^{-1} g_{n-1}^{-1} \\cdots g_1^{-1}",
-      "expected": "⠛⠰⠝⠘⠤⠼⠂⠐⠛⠰⠝⠤⠂⠘⠤⠼⠂⠐⠀⠄⠄⠄⠀⠛⠂⠘⠤⠼⠂",
+      "expected": "⠛⠰⠝⠘⠤⠂⠐⠛⠰⠝⠤⠂⠘⠤⠂⠀⠄⠄⠄⠀⠛⠂⠘⠤⠂",
       "reference": {
         "m-1816": "http://abstract.ups.edu/aata/exercises-groups.html#AdR"
       }
@@ -750,7 +750,7 @@
       "url": "http://abstract.ups.edu/aata/groups-exercises-detecting-errors.html#Isk",
       "input": "<math><msub><mi>d</mi><mn>1</mn></msub><msub><mi>d</mi><mn>2</mn></msub><mo>⋯</mo><msub><mi>d</mi><mi>k</mi></msub></math>",
       "tex": "d_1 d_2 \\cdots d_k",
-      "expected": "⠙⠂⠙⠆⠀⠄⠄⠄⠀⠙⠰⠅⠐",
+      "expected": "⠙⠂⠙⠆⠀⠄⠄⠄⠀⠙⠰⠅",
       "reference": {
         "m-1928": "http://abstract.ups.edu/aata/groups-exercises-detecting-errors.html#Isk",
         "m-1934": "http://abstract.ups.edu/aata/groups-exercises-detecting-errors.html#ozt"
@@ -771,7 +771,7 @@
       "url": "http://abstract.ups.edu/aata/section-mult-group-c.html#ZcR",
       "input": "<math><mi>k</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mo>…</mo><mo>,</mo><mi>n</mi><mo>−</mo><mn>1</mn></math>",
       "tex": "k = 0, 1, \\ldots, n-1",
-      "expected": "⠅⠀⠨⠅⠀⠼⠴⠠⠀⠼⠂⠠⠀⠄⠄⠄⠀⠠⠀⠝⠤⠂",
+      "expected": "⠅⠀⠨⠅⠀⠼⠴⠠⠀⠼⠂⠠⠀⠄⠄⠄⠠⠀⠝⠤⠂",
       "reference": {
         "m-2269": "http://abstract.ups.edu/aata/section-mult-group-c.html#ZcR"
       }
@@ -821,7 +821,7 @@
       "url": "http://abstract.ups.edu/aata/section-permutation-definitions.html#cBN",
       "input": "<math><mi>f</mi><mo>:</mo><msub><mi>S</mi><mi>n</mi></msub><mo stretchy=\"false\">→</mo><msub><mi>S</mi><mi>n</mi></msub></math>",
       "tex": "f : S_n \\rightarrow S_n",
-      "expected": "⠋⠒⠀⠠⠎⠰⠝⠐⠀⠫⠕⠀⠠⠎⠰⠝⠐",
+      "expected": "⠋⠸⠒⠀⠠⠎⠰⠝⠀⠫⠕⠀⠠⠎⠰⠝",
       "reference": {
         "m-2608": "http://abstract.ups.edu/aata/section-permutation-definitions.html#cBN"
       }
@@ -851,7 +851,7 @@
       "url": "http://abstract.ups.edu/aata/section-permutation-definitions.html#IIW",
       "input": "<math><mi>σ</mi><mo>=</mo><msub><mi>σ</mi><mn>1</mn></msub><msub><mi>σ</mi><mn>2</mn></msub><mo>⋯</mo><msub><mi>σ</mi><mi>r</mi></msub></math>",
       "tex": "\\sigma = \\sigma_1 \\sigma_2 \\cdots \\sigma_r",
-      "expected": "⠨⠎⠀⠨⠅⠀⠨⠎⠂⠨⠎⠆⠀⠄⠄⠄⠀⠨⠎⠰⠗⠐",
+      "expected": "⠨⠎⠀⠨⠅⠀⠨⠎⠂⠨⠎⠆⠀⠄⠄⠄⠀⠨⠎⠰⠗",
       "reference": {
         "m-2702": "http://abstract.ups.edu/aata/section-permutation-definitions.html#IIW",
         "m-7519": "http://abstract.ups.edu/aata/section-class-equation.html#UDP"
@@ -862,7 +862,7 @@
       "url": "http://abstract.ups.edu/aata/section-permutation-definitions.html#IIW",
       "input": "<math><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><msub><mi>X</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>X</mi><mi>r</mi></msub></math>",
       "tex": "X_1, X_2, \\ldots, X_r",
-      "expected": "⠠⠭⠂⠠⠀⠠⠭⠆⠠⠀⠄⠄⠄⠀⠠⠀⠠⠭⠰⠗⠐",
+      "expected": "⠠⠭⠂⠠⠀⠠⠭⠆⠠⠀⠄⠄⠄⠠⠀⠠⠭⠰⠗",
       "reference": {
         "m-2703": "http://abstract.ups.edu/aata/section-permutation-definitions.html#IIW"
       }
@@ -872,7 +872,7 @@
       "url": "http://abstract.ups.edu/aata/section-permutation-definitions.html#IIW",
       "input": "<math><msub><mi>σ</mi><mn>1</mn></msub><mo>,</mo><msub><mi>σ</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>σ</mi><mi>r</mi></msub></math>",
       "tex": "\\sigma_1, \\sigma_2, \\ldots, \\sigma_r",
-      "expected": "⠨⠎⠂⠠⠀⠨⠎⠆⠠⠀⠄⠄⠄⠀⠠⠀⠨⠎⠰⠗⠐",
+      "expected": "⠨⠎⠂⠠⠀⠨⠎⠆⠠⠀⠄⠄⠄⠠⠀⠨⠎⠰⠗",
       "reference": {
         "m-2704": "http://abstract.ups.edu/aata/section-permutation-definitions.html#IIW"
       }
@@ -882,7 +882,7 @@
       "url": "http://abstract.ups.edu/aata/section-permutation-definitions.html#oQf",
       "input": "<math><msub><mi>σ</mi><mi>m</mi></msub><mo>⋯</mo><msub><mi>σ</mi><mn>1</mn></msub></math>",
       "tex": "\\sigma_m \\cdots \\sigma_1",
-      "expected": "⠨⠎⠰⠍⠐⠀⠄⠄⠄⠀⠨⠎⠂",
+      "expected": "⠨⠎⠰⠍⠀⠄⠄⠄⠀⠨⠎⠂",
       "reference": {
         "m-2745": "http://abstract.ups.edu/aata/section-permutation-definitions.html#oQf"
       }
@@ -892,7 +892,7 @@
       "url": "http://abstract.ups.edu/aata/section-permutation-definitions.html#NOB",
       "input": "<math><mi>n</mi><mo>!</mo><mrow><mo>/</mo></mrow><mn>2</mn></math>",
       "tex": "n!/2",
-      "expected": "⠝⠖⠀⠸⠌⠼⠆",
+      "expected": "⠝⠯⠀⠸⠌⠼⠆",
       "reference": {
         "m-2764": "http://abstract.ups.edu/aata/section-permutation-definitions.html#NOB",
         "m-3043": "http://abstract.ups.edu/aata/permute-sage.html#xtg"
@@ -913,7 +913,7 @@
       "url": "http://abstract.ups.edu/aata/section-dihedral-groups.html#sQr",
       "input": "<math><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mo>…</mo><mo>,</mo><mi>n</mi></math>",
       "tex": "1, 2, \\ldots,\n        n",
-      "expected": "⠼⠂⠠⠀⠼⠆⠠⠀⠄⠄⠄⠀⠠⠀⠝",
+      "expected": "⠼⠂⠠⠀⠼⠆⠠⠀⠄⠄⠄⠠⠀⠝",
       "reference": {
         "m-2786": "http://abstract.ups.edu/aata/section-dihedral-groups.html#sQr"
       }
@@ -923,7 +923,7 @@
       "url": "http://abstract.ups.edu/aata/section-dihedral-groups.html#Bex",
       "input": "<math><msub><mi>s</mi><mn>1</mn></msub><mo>,</mo><msub><mi>s</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>s</mi><mi>n</mi></msub></math>",
       "tex": "s_1, s_2, \\ldots, s_n",
-      "expected": "⠎⠂⠠⠀⠎⠆⠠⠀⠄⠄⠄⠀⠠⠀⠎⠰⠝⠐",
+      "expected": "⠎⠂⠠⠀⠎⠆⠠⠀⠄⠄⠄⠠⠀⠎⠰⠝",
       "reference": {
         "m-2808": "http://abstract.ups.edu/aata/section-dihedral-groups.html#Bex",
         "m-2813": "http://abstract.ups.edu/aata/section-dihedral-groups.html#Bex"
@@ -934,7 +934,7 @@
       "url": "http://abstract.ups.edu/aata/section-dihedral-groups.html#Bex",
       "input": "<math><msub><mi>s</mi><mn>1</mn></msub><mo>=</mo><msub><mi>s</mi><mrow><mi>n</mi><mrow><mo>/</mo></mrow><mn>2</mn><mo>+</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>s</mi><mn>2</mn></msub><mo>=</mo><msub><mi>s</mi><mrow><mi>n</mi><mrow><mo>/</mo></mrow><mn>2</mn><mo>+</mo><mn>2</mn></mrow></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>s</mi><mrow><mi>n</mi><mrow><mo>/</mo></mrow><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>s</mi><mi>n</mi></msub></math>",
       "tex": "s_1 = s_{n/2 + 1}, s_2 = s_{n/2 + 2}, \\ldots, s_{n/2}  = s_n",
-      "expected": "⠎⠂⠀⠨⠅⠀⠎⠰⠝⠸⠌⠆⠬⠂⠐⠠⠀⠎⠆⠀⠨⠅⠀⠎⠰⠝⠸⠌⠆⠬⠆⠐⠠⠀⠄⠄⠄⠀⠠⠀⠎⠰⠝⠸⠌⠆⠐⠀⠨⠅⠀⠎⠰⠝⠐",
+      "expected": "⠎⠂⠀⠨⠅⠀⠎⠰⠝⠸⠌⠆⠬⠂⠠⠀⠎⠆⠀⠨⠅⠀⠎⠰⠝⠸⠌⠆⠬⠆⠠⠀⠄⠄⠄⠠⠀⠎⠰⠝⠸⠌⠆⠀⠨⠅⠀⠎⠰⠝",
       "reference": {
         "m-2812": "http://abstract.ups.edu/aata/section-dihedral-groups.html#Bex"
       }
@@ -944,7 +944,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-permute.html#eTQ",
       "input": "<math><mo fence=\"false\" stretchy=\"false\">{</mo><mi>σ</mi><mo>∈</mo><msub><mi>S</mi><mn>4</mn></msub><mo>:</mo><mi>σ</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo>=</mo><mn>3</mn></math>",
       "tex": "\\{ \\sigma \\in S_4 : \\sigma(1) = 3",
-      "expected": "⠨⠷⠀⠎⠀⠈⠑⠀⠠⠎⠲⠒⠀⠎⠷⠼⠂⠾⠀⠨⠅⠀⠼⠒",
+      "expected": "⠨⠷⠀⠨⠎⠀⠈⠑⠀⠠⠎⠲⠸⠒⠨⠎⠷⠂⠾⠀⠨⠅⠀⠼⠒",
       "reference": {
         "m-2896": "http://abstract.ups.edu/aata/exercises-permute.html#eTQ"
       }
@@ -954,7 +954,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-permute.html#eTQ",
       "input": "<math><mi>σ</mi><mo stretchy=\"false\">(</mo><mn>2</mn><mo stretchy=\"false\">)</mo><mo>=</mo><mn>2</mn><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "\\sigma(2) = 2 \\}",
-      "expected": "⠎⠷⠼⠆⠾⠀⠨⠅⠀⠼⠆⠨⠾",
+      "expected": "⠨⠎⠷⠆⠾⠀⠨⠅⠀⠼⠆⠨⠾",
       "reference": {
         "m-2897": "http://abstract.ups.edu/aata/exercises-permute.html#eTQ"
       }
@@ -964,7 +964,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-permute.html#aMN",
       "input": "<math><mi>n</mi><mo>=</mo><mn>3</mn><mo>,</mo><mo>…</mo><mo>,</mo><mn>10</mn></math>",
       "tex": "n = 3, \\ldots, 10",
-      "expected": "⠝⠀⠨⠅⠀⠼⠒⠠⠀⠄⠄⠄⠀⠠⠀⠼⠂⠴",
+      "expected": "⠝⠀⠨⠅⠀⠼⠒⠠⠀⠄⠄⠄⠠⠀⠼⠂⠴",
       "reference": {
         "m-2909": "http://abstract.ups.edu/aata/exercises-permute.html#aMN"
       }
@@ -974,7 +974,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-permute.html#Tio",
       "input": "<math><msub><mi>σ</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>σ</mi><mi>m</mi></msub></math>",
       "tex": "\\sigma_1, \\ldots, \\sigma_m",
-      "expected": "⠨⠎⠂⠠⠀⠄⠄⠄⠀⠠⠀⠨⠎⠰⠍⠐",
+      "expected": "⠨⠎⠂⠠⠀⠄⠄⠄⠠⠀⠨⠎⠰⠍",
       "reference": {
         "m-2921": "http://abstract.ups.edu/aata/exercises-permute.html#Tio"
       }
@@ -984,7 +984,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-permute.html#ZeE",
       "input": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mo stretchy=\"false\">(</mo><mn>1</mn><mn>2</mn><mo stretchy=\"false\">)</mo><mo>,</mo><mo stretchy=\"false\">(</mo><mn>13</mn><mo stretchy=\"false\">)</mo><mo>,</mo><mo>…</mo><mo>,</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mi>n</mi><mo stretchy=\"false\">)</mo></mstyle></math>",
       "tex": "(1 2), (13), \\ldots, (1n)",
-      "expected": "⠷⠼⠂⠆⠾⠠⠀⠷⠼⠂⠒⠾⠠⠀⠄⠄⠄⠀⠠⠀⠷⠼⠂⠝⠾",
+      "expected": "⠷⠂⠆⠾⠠⠀⠷⠂⠒⠾⠠⠀⠄⠄⠄⠠⠀⠷⠂⠝⠾",
       "reference": {
         "m-2955": "http://abstract.ups.edu/aata/exercises-permute.html#ZeE"
       }
@@ -994,7 +994,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-permute.html#FlN",
       "input": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mo stretchy=\"false\">(</mo><mn>1</mn><mn>2</mn><mo stretchy=\"false\">)</mo><mo>,</mo><mo stretchy=\"false\">(</mo><mn>23</mn><mo stretchy=\"false\">)</mo><mo>,</mo><mo>…</mo><mo>,</mo><mo stretchy=\"false\">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo>,</mo><mi>n</mi><mo stretchy=\"false\">)</mo></mstyle></math>",
       "tex": "(1 2), (23), \\ldots, (n- 1,n)",
-      "expected": "⠷⠼⠂⠆⠾⠠⠀⠷⠼⠆⠒⠾⠠⠀⠄⠄⠄⠀⠠⠀⠷⠝⠤⠂⠠⠀⠝⠾",
+      "expected": "⠷⠂⠆⠾⠠⠀⠷⠆⠒⠾⠠⠀⠄⠄⠄⠠⠀⠷⠝⠤⠂⠠⠀⠝⠾",
       "reference": {
         "m-2956": "http://abstract.ups.edu/aata/exercises-permute.html#FlN"
       }
@@ -1004,7 +1004,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-permute.html#lsW",
       "input": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mo stretchy=\"false\">(</mo><mn>12</mn><mo stretchy=\"false\">)</mo><mo>,</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mn>2</mn><mo>…</mo><mi>n</mi><mo stretchy=\"false\">)</mo></mstyle></math>",
       "tex": "(12), (1 2 \\ldots n )",
-      "expected": "⠷⠼⠂⠆⠾⠠⠀⠷⠼⠂⠆⠀⠄⠄⠄⠀⠝⠾",
+      "expected": "⠷⠂⠆⠾⠠⠀⠷⠂⠆⠀⠄⠄⠄⠀⠝⠾",
       "reference": {
         "m-2957": "http://abstract.ups.edu/aata/exercises-permute.html#lsW"
       }
@@ -1014,7 +1014,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-permute.html#BeK",
       "input": "<math><msub><mi>λ</mi><mi>g</mi></msub><mo>:</mo><mi>G</mi><mo stretchy=\"false\">→</mo><mi>G</mi></math>",
       "tex": "\\lambda_g : G \\rightarrow G",
-      "expected": "⠨⠇⠰⠛⠐⠒⠀⠠⠛⠀⠫⠕⠀⠠⠛",
+      "expected": "⠨⠇⠰⠛⠸⠒⠀⠠⠛⠀⠫⠕⠀⠠⠛",
       "reference": {
         "m-2959": "http://abstract.ups.edu/aata/exercises-permute.html#BeK",
         "m-4793": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#BPe",
@@ -1038,7 +1038,7 @@
       "url": "http://abstract.ups.edu/aata/section-cosets.html#dxL",
       "input": "<math><mi>ϕ</mi><mo>:</mo><msub><mrow><mrow><mi data-mjx-variant=\"-tex-calligraphic\" mathvariant=\"script\">L</mi></mrow></mrow><mi>H</mi></msub><mo stretchy=\"false\">→</mo><msub><mrow><mrow><mi data-mjx-variant=\"-tex-calligraphic\" mathvariant=\"script\">R</mi></mrow></mrow><mi>H</mi></msub></math>",
       "tex": "\\phi : {\\mathcal L}_H \\rightarrow {\\mathcal R}_H",
-      "expected": "⠨⠋⠒⠀⠈⠰⠠⠇⠰⠠⠓⠐⠀⠫⠕⠀⠈⠰⠠⠗⠰⠠⠓⠐",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠇⠰⠠⠓⠀⠫⠕⠀⠈⠰⠠⠗⠰⠠⠓",
       "reference": {
         "m-3167": "http://abstract.ups.edu/aata/section-cosets.html#dxL",
         "m-3406": "http://abstract.ups.edu/aata/exercises-cosets.html#vIG"
@@ -1049,7 +1049,7 @@
       "url": "http://abstract.ups.edu/aata/section-lagranges-theorem.html#ORD",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>H</mi><mo stretchy=\"false\">→</mo><mi>g</mi><mi>H</mi></math>",
       "tex": "\\phi:H \\rightarrow gH",
-      "expected": "⠨⠋⠒⠀⠠⠓⠀⠫⠕⠀⠛⠠⠓",
+      "expected": "⠨⠋⠸⠒⠀⠠⠓⠀⠫⠕⠀⠛⠠⠓",
       "reference": {
         "m-3180": "http://abstract.ups.edu/aata/section-lagranges-theorem.html#ORD"
       }
@@ -1059,7 +1059,7 @@
       "url": "http://abstract.ups.edu/aata/section-fermat-euler.html#wNZ",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">N</mi></mrow></mrow><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">N</mi></mrow></mrow></math>",
       "tex": "\\phi : {\\mathbb N } \\rightarrow {\\mathbb N}",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠝⠀⠫⠕⠀⠸⠰⠠⠝",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠝⠀⠫⠕⠀⠈⠰⠠⠝",
       "reference": {
         "m-3293": "http://abstract.ups.edu/aata/section-fermat-euler.html#wNZ"
       }
@@ -1069,7 +1069,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-cosets.html#YVj",
       "input": "<math><mi>n</mi><mo>=</mo><msubsup><mi>p</mi><mn>1</mn><mrow><msub><mi>e</mi><mn>1</mn></msub></mrow></msubsup><msubsup><mi>p</mi><mn>2</mn><mrow><msub><mi>e</mi><mn>2</mn></msub></mrow></msubsup><mo>⋯</mo><msubsup><mi>p</mi><mi>k</mi><mrow><msub><mi>e</mi><mi>k</mi></msub></mrow></msubsup></math>",
       "tex": "n = p_1^{e_1} p_2^{e_2} \\cdots p_k^{e_k}",
-      "expected": "⠝⠀⠨⠅⠀⠏⠂⠘⠑⠂⠐⠏⠆⠘⠑⠆⠐⠀⠄⠄⠄⠀⠏⠰⠅⠘⠑⠘⠰⠅⠘",
+      "expected": "⠝⠀⠨⠅⠀⠏⠂⠘⠑⠂⠐⠏⠆⠘⠑⠆⠀⠄⠄⠄⠀⠏⠰⠅⠘⠑⠘⠰⠅",
       "reference": {
         "m-3455": "http://abstract.ups.edu/aata/exercises-cosets.html#YVj"
       }
@@ -1079,7 +1079,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-cosets.html#YVj",
       "input": "<math><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><msub><mi>p</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>p</mi><mi>k</mi></msub></math>",
       "tex": "p_1, p_2, \\ldots, p_k",
-      "expected": "⠏⠂⠠⠀⠏⠆⠠⠀⠄⠄⠄⠀⠠⠀⠏⠰⠅⠐",
+      "expected": "⠏⠂⠠⠀⠏⠆⠠⠀⠄⠄⠄⠠⠀⠏⠰⠅",
       "reference": {
         "m-3456": "http://abstract.ups.edu/aata/exercises-cosets.html#YVj"
       }
@@ -1089,7 +1089,7 @@
       "url": "http://abstract.ups.edu/aata/cosets-sage-exercises.html#pTu",
       "input": "<math><mn>7</mn><mo>!</mo><mo>=</mo><mn>5040</mn></math>",
       "tex": "7! = 5040",
-      "expected": "⠼⠶⠖⠀⠀⠨⠅⠀⠼⠢⠴⠲⠴",
+      "expected": "⠼⠶⠯⠀⠀⠨⠅⠀⠼⠢⠴⠲⠴",
       "reference": {
         "m-3492": "http://abstract.ups.edu/aata/cosets-sage-exercises.html#pTu"
       }
@@ -1099,7 +1099,7 @@
       "url": "http://abstract.ups.edu/aata/section-private-key-crypt.html#RSA",
       "input": "<math><mtext>A</mtext><mo>=</mo><mn>00</mn><mo>,</mo><mtext>B</mtext><mo>=</mo><mn>01</mn><mo>,</mo><mo>…</mo><mo>,</mo><mtext>Z</mtext><mo>=</mo><mn>25</mn></math>",
       "tex": "\\text{A}  = 00, \\text{B}  = 01, \\ldots, \\text{Z} = 25",
-      "expected": "⠠⠁⠀⠨⠅⠀⠼⠴⠴⠠⠀⠠⠃⠀⠨⠅⠀⠼⠴⠂⠠⠀⠄⠄⠄⠀⠠⠀⠠⠵⠀⠨⠅⠀⠼⠆⠢",
+      "expected": "⠠⠁⠀⠨⠅⠀⠼⠴⠴⠠⠀⠠⠃⠀⠨⠅⠀⠼⠴⠂⠠⠀⠄⠄⠄⠠⠀⠠⠵⠀⠨⠅⠀⠼⠆⠢",
       "reference": {
         "m-3518": "http://abstract.ups.edu/aata/section-private-key-crypt.html#RSA"
       }
@@ -1109,7 +1109,7 @@
       "url": "http://abstract.ups.edu/aata/section-private-key-crypt.html#RSA",
       "input": "<math><mi>A</mi><mo stretchy=\"false\">↦</mo><mi>D</mi><mo>,</mo><mi>B</mi><mo stretchy=\"false\">↦</mo><mi>E</mi><mo>,</mo><mo>…</mo><mo>,</mo><mi>Z</mi><mo stretchy=\"false\">↦</mo><mi>C</mi></math>",
       "tex": "A \\mapsto D, B \\mapsto E, \\ldots, Z \\mapsto C",
-      "expected": "⠠⠁⠀⠫⠳⠒⠒⠕⠀⠠⠙⠠⠀⠠⠃⠀⠫⠳⠒⠒⠕⠀⠠⠑⠠⠀⠄⠄⠄⠀⠠⠀⠠⠵⠀⠫⠳⠒⠒⠕⠀⠠⠉",
+      "expected": "⠠⠁⠀⠫⠳⠒⠒⠕⠀⠠⠙⠠⠀⠠⠃⠀⠫⠳⠒⠒⠕⠀⠠⠑⠠⠀⠄⠄⠄⠠⠀⠠⠵⠀⠫⠳⠒⠒⠕⠀⠠⠉",
       "reference": {
         "m-3519": "http://abstract.ups.edu/aata/section-private-key-crypt.html#RSA"
       }
@@ -1159,7 +1159,7 @@
       "url": "http://abstract.ups.edu/aata/section-public-key-crypt.html#Dtw",
       "input": "<math><mtext>A</mtext><mo>=</mo><mn>00</mn><mo>,</mo><mtext>B</mtext><mo>=</mo><mn>02</mn><mo>,</mo><mo>…</mo><mo>,</mo><mtext>Z</mtext><mo>=</mo><mn>25</mn></math>",
       "tex": "\\text{A} = 00, \\text{B} = 02, \\ldots, \\text{Z}= 25",
-      "expected": "⠠⠁⠀⠨⠅⠀⠼⠴⠴⠠⠀⠠⠃⠀⠨⠅⠀⠼⠴⠆⠠⠀⠄⠄⠄⠀⠠⠀⠠⠵⠀⠨⠅⠀⠼⠆⠢",
+      "expected": "⠠⠁⠀⠨⠅⠀⠼⠴⠴⠠⠀⠠⠃⠀⠨⠅⠀⠼⠴⠆⠠⠀⠄⠄⠄⠠⠀⠠⠵⠀⠨⠅⠀⠼⠆⠢",
       "reference": {
         "m-3569": "http://abstract.ups.edu/aata/section-public-key-crypt.html#Dtw"
       }
@@ -1169,7 +1169,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-crypt.html#tpQ",
       "input": "<math><mn>26</mn><mo>!</mo><mo>−</mo><mn>1</mn></math>",
       "tex": "26! - 1",
-      "expected": "⠼⠆⠖⠖⠀⠤⠼⠂",
+      "expected": "⠼⠆⠖⠯⠀⠤⠼⠂",
       "reference": {
         "m-3622": "http://abstract.ups.edu/aata/exercises-crypt.html#tpQ"
       }
@@ -1259,7 +1259,7 @@
       "url": "http://abstract.ups.edu/aata/crypt-exercises-additional.html#nff",
       "input": "<math><mi>d</mi><mo>=</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>…</mo><mo>,</mo><msqrt><mi>n</mi></msqrt></math>",
       "tex": "d = 2, 3, \\ldots, \\sqrt{n}",
-      "expected": "⠙⠀⠨⠅⠀⠼⠆⠠⠀⠼⠒⠠⠀⠄⠄⠄⠀⠠⠀⠜⠝⠻",
+      "expected": "⠙⠀⠨⠅⠀⠼⠆⠠⠀⠼⠒⠠⠀⠄⠄⠄⠠⠀⠜⠝⠻",
       "reference": {
         "m-3670": "http://abstract.ups.edu/aata/crypt-exercises-additional.html#nff"
       }
@@ -1269,7 +1269,7 @@
       "url": "http://abstract.ups.edu/aata/crypt-sage.html#lpS",
       "input": "<math><msup><mn>128</mn><mn>4</mn></msup><mo>=</mo><mn>268</mn><mo>,</mo><mn>435</mn><mo>,</mo><mn>456</mn></math>",
       "tex": "128^4=268,435,456",
-      "expected": "⠼⠂⠆⠦⠘⠲⠐⠀⠨⠅⠀⠼⠆⠖⠦⠠⠀⠼⠲⠒⠢⠠⠀⠼⠲⠢⠖",
+      "expected": "⠼⠂⠆⠦⠘⠲⠀⠨⠅⠀⠼⠆⠖⠦⠠⠀⠼⠲⠒⠢⠠⠀⠼⠲⠢⠖",
       "reference": {
         "m-3723": "http://abstract.ups.edu/aata/crypt-sage.html#lpS"
       }
@@ -1279,7 +1279,7 @@
       "url": "http://abstract.ups.edu/aata/section-parity-check.html#UYO",
       "input": "<math><msub><mi>x</mi><mn>1</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>x</mi><mi>k</mi></msub><mo>−</mo><msub><mi>y</mi><mi>k</mi></msub></math>",
       "tex": "x_1 -y_1, \\ldots,\n          x_k - y_k",
-      "expected": "⠭⠂⠤⠽⠂⠠⠀⠄⠄⠄⠀⠠⠀⠭⠰⠅⠐⠤⠽⠰⠅⠐",
+      "expected": "⠭⠂⠤⠽⠂⠠⠀⠄⠄⠄⠠⠀⠭⠰⠅⠐⠤⠽⠰⠅",
       "reference": {
         "m-4235": "http://abstract.ups.edu/aata/section-parity-check.html#UYO"
       }
@@ -1289,7 +1289,7 @@
       "url": "http://abstract.ups.edu/aata/section-parity-check.html#BfX",
       "input": "<math><msub><mi>y</mi><mrow><mi>n</mi><mo>−</mo><mi>m</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>y</mi><mi>n</mi></msub></math>",
       "tex": "y_{n-m+1}, \\ldots,\n          y_n",
-      "expected": "⠽⠰⠝⠤⠍⠬⠂⠐⠠⠀⠄⠄⠄⠀⠠⠀⠽⠰⠝⠐",
+      "expected": "⠽⠰⠝⠤⠍⠬⠂⠠⠀⠄⠄⠄⠠⠀⠽⠰⠝",
       "reference": {
         "m-4270": "http://abstract.ups.edu/aata/section-parity-check.html#BfX"
       }
@@ -1299,7 +1299,7 @@
       "url": "http://abstract.ups.edu/aata/section-parity-check.html#BfX",
       "input": "<math><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>y</mi><mrow><mi>n</mi><mo>−</mo><mi>m</mi></mrow></msub></math>",
       "tex": "y_1, \\ldots, y_{n-m}",
-      "expected": "⠽⠂⠠⠀⠄⠄⠄⠀⠠⠀⠽⠰⠝⠤⠍⠐",
+      "expected": "⠽⠂⠠⠀⠄⠄⠄⠠⠀⠽⠰⠝⠤⠍",
       "reference": {
         "m-4271": "http://abstract.ups.edu/aata/section-parity-check.html#BfX"
       }
@@ -1309,7 +1309,7 @@
       "url": "http://abstract.ups.edu/aata/section-parity-check.html#BfX",
       "input": "<math><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mo>…</mo><mo>,</mo><mi>n</mi><mo>−</mo><mi>m</mi></math>",
       "tex": "i= 1, \\ldots, n - m",
-      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠀⠠⠀⠝⠤⠍",
+      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠠⠀⠝⠤⠍",
       "reference": {
         "m-4273": "http://abstract.ups.edu/aata/section-parity-check.html#BfX"
       }
@@ -1319,7 +1319,7 @@
       "url": "http://abstract.ups.edu/aata/section-parity-check.html#hng",
       "input": "<math><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mo>…</mo><mo>,</mo><mi>n</mi></math>",
       "tex": "i = 1, \\ldots, n",
-      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠀⠠⠀⠝",
+      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠠⠀⠝",
       "reference": {
         "m-4300": "http://abstract.ups.edu/aata/section-parity-check.html#hng",
         "m-11360": "http://abstract.ups.edu/aata/section-factorization-domains.html#lSi",
@@ -1332,7 +1332,7 @@
       "url": "http://abstract.ups.edu/aata/section-parity-check.html#JuD",
       "input": "<math><mrow><mrow><mn mathvariant=\"bold\">0</mn></mrow></mrow><mo>,</mo><msub><mrow><mrow><mi mathvariant=\"bold\">e</mi></mrow></mrow><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mrow><mrow><mi mathvariant=\"bold\">e</mi></mrow></mrow><mi>m</mi></msub></math>",
       "tex": "{\\mathbf 0}, {\\mathbf e}_1, \\ldots, {\\mathbf e}_m",
-      "expected": "⠼⠴⠠⠀⠸⠰⠑⠂⠠⠀⠄⠄⠄⠀⠠⠀⠸⠰⠑⠰⠍⠐",
+      "expected": "⠸⠼⠴⠠⠀⠸⠰⠑⠂⠠⠀⠄⠄⠄⠠⠀⠸⠰⠑⠰⠍",
       "reference": {
         "m-4351": "http://abstract.ups.edu/aata/section-parity-check.html#JuD"
       }
@@ -1342,7 +1342,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-algcodes.html#ZBD",
       "input": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mo stretchy=\"false\">(</mo><mn>011010</mn><mo stretchy=\"false\">)</mo><mo>,</mo><mo stretchy=\"false\">(</mo><mn>011100</mn><mo stretchy=\"false\">)</mo></mstyle></math>",
       "tex": "(011010), (011100)",
-      "expected": "⠷⠼⠴⠂⠂⠴⠂⠴⠾⠠⠀⠷⠼⠴⠂⠂⠂⠴⠴⠾",
+      "expected": "⠷⠴⠂⠂⠴⠂⠴⠾⠠⠀⠷⠴⠂⠂⠂⠴⠴⠾",
       "reference": {
         "m-4538": "http://abstract.ups.edu/aata/exercises-algcodes.html#ZBD"
       }
@@ -1352,7 +1352,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-algcodes.html#FIM",
       "input": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mo stretchy=\"false\">(</mo><mn>11110101</mn><mo stretchy=\"false\">)</mo><mo>,</mo><mo stretchy=\"false\">(</mo><mn>01010100</mn><mo stretchy=\"false\">)</mo></mstyle></math>",
       "tex": "(11110101), (01010100)",
-      "expected": "⠷⠼⠂⠂⠂⠂⠴⠂⠴⠂⠾⠠⠀⠷⠼⠴⠂⠴⠂⠴⠂⠴⠴⠾",
+      "expected": "⠷⠂⠂⠂⠂⠴⠂⠴⠂⠾⠠⠀⠷⠴⠂⠴⠂⠴⠂⠴⠴⠾",
       "reference": {
         "m-4539": "http://abstract.ups.edu/aata/exercises-algcodes.html#FIM"
       }
@@ -1362,7 +1362,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-algcodes.html#lPV",
       "input": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mo stretchy=\"false\">(</mo><mn>00110</mn><mo stretchy=\"false\">)</mo><mo>,</mo><mo stretchy=\"false\">(</mo><mn>01111</mn><mo stretchy=\"false\">)</mo></mstyle></math>",
       "tex": "(00110), (01111)",
-      "expected": "⠷⠼⠴⠴⠂⠂⠴⠾⠠⠀⠷⠼⠴⠂⠂⠂⠂⠾",
+      "expected": "⠷⠴⠴⠂⠂⠴⠾⠠⠀⠷⠴⠂⠂⠂⠂⠾",
       "reference": {
         "m-4540": "http://abstract.ups.edu/aata/exercises-algcodes.html#lPV"
       }
@@ -1372,7 +1372,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-algcodes.html#RXe",
       "input": "<math><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mo stretchy=\"false\">(</mo><mn>1001</mn><mo stretchy=\"false\">)</mo><mo>,</mo><mo stretchy=\"false\">(</mo><mn>0111</mn><mo stretchy=\"false\">)</mo></mstyle></math>",
       "tex": "(1001), (0111)",
-      "expected": "⠷⠼⠂⠴⠴⠂⠾⠠⠀⠷⠼⠴⠂⠂⠂⠾",
+      "expected": "⠷⠂⠴⠴⠂⠾⠠⠀⠷⠴⠂⠂⠂⠾",
       "reference": {
         "m-4541": "http://abstract.ups.edu/aata/exercises-algcodes.html#RXe"
       }
@@ -1382,7 +1382,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-algcodes.html#TMr",
       "input": "<math><mo stretchy=\"false\">(</mo><mn>00000</mn><mo stretchy=\"false\">)</mo><mo>,</mo><mo stretchy=\"false\">(</mo><mn>00101</mn><mo stretchy=\"false\">)</mo><mo>,</mo><mo stretchy=\"false\">(</mo><mn>10011</mn><mo stretchy=\"false\">)</mo><mo>,</mo><mo stretchy=\"false\">(</mo><mn>10110</mn><mo stretchy=\"false\">)</mo></math>",
       "tex": "(00000), (00101), (10011), (10110)",
-      "expected": "⠷⠼⠴⠴⠴⠴⠴⠾⠠⠀⠷⠼⠴⠴⠂⠴⠂⠾⠠⠀⠷⠼⠂⠴⠴⠂⠂⠾⠠⠀⠷⠼⠂⠴⠂⠂⠴⠾",
+      "expected": "⠷⠴⠴⠴⠴⠴⠾⠠⠀⠷⠴⠴⠂⠴⠂⠾⠠⠀⠷⠂⠴⠴⠂⠂⠾⠠⠀⠷⠂⠴⠂⠂⠴⠾",
       "reference": {
         "m-4561": "http://abstract.ups.edu/aata/exercises-algcodes.html#TMr"
       }
@@ -1392,7 +1392,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-algcodes.html#zTA",
       "input": "<math><mo stretchy=\"false\">(</mo><mn>000000</mn><mo stretchy=\"false\">)</mo><mo>,</mo><mo stretchy=\"false\">(</mo><mn>010111</mn><mo stretchy=\"false\">)</mo><mo>,</mo><mo stretchy=\"false\">(</mo><mn>101101</mn><mo stretchy=\"false\">)</mo><mo>,</mo><mo stretchy=\"false\">(</mo><mn>111010</mn><mo stretchy=\"false\">)</mo></math>",
       "tex": "(000000), (010111), (101101), (111010)",
-      "expected": "⠷⠼⠴⠴⠴⠴⠴⠴⠾⠠⠀⠷⠼⠴⠂⠴⠂⠂⠂⠾⠠⠀⠷⠼⠂⠴⠂⠂⠴⠂⠾⠠⠀⠷⠼⠂⠂⠂⠴⠂⠴⠾",
+      "expected": "⠷⠴⠴⠴⠴⠴⠴⠾⠠⠀⠷⠴⠂⠴⠂⠂⠂⠾⠠⠀⠷⠂⠴⠂⠂⠴⠂⠾⠠⠀⠷⠂⠂⠂⠴⠂⠴⠾",
       "reference": {
         "m-4562": "http://abstract.ups.edu/aata/exercises-algcodes.html#zTA"
       }
@@ -1402,7 +1402,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-algcodes.html#MKI",
       "input": "<math><mi>d</mi><mo>:</mo><mi>X</mi><mo>×</mo><mi>X</mi><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow></math>",
       "tex": "d: X \\times X \\rightarrow {\\mathbb R}",
-      "expected": "⠙⠒⠀⠠⠭⠈⠡⠠⠭⠀⠫⠕⠀⠸⠰⠠⠗",
+      "expected": "⠙⠸⠒⠀⠠⠭⠈⠡⠠⠭⠀⠫⠕⠀⠈⠰⠠⠗",
       "reference": {
         "m-4593": "http://abstract.ups.edu/aata/exercises-algcodes.html#MKI"
       }
@@ -1412,7 +1412,7 @@
       "url": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#Wzg",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>G</mi><mo stretchy=\"false\">→</mo><mi>H</mi></math>",
       "tex": "\\phi : G \\rightarrow H",
-      "expected": "⠨⠋⠒⠀⠠⠛⠀⠫⠕⠀⠠⠓",
+      "expected": "⠨⠋⠸⠒⠀⠠⠛⠀⠫⠕⠀⠠⠓",
       "reference": {
         "m-4670": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#Wzg",
         "m-4727": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#idE",
@@ -1433,7 +1433,7 @@
       "url": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#Qaa",
       "input": "<math><mi>ϕ</mi><mo>:</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mn>4</mn></msub><mo stretchy=\"false\">→</mo><mo fence=\"false\" stretchy=\"false\">⟨</mo><mi>i</mi><mo fence=\"false\" stretchy=\"false\">⟩</mo></math>",
       "tex": "\\phi: {\\mathbb Z}_4 \\rightarrow \\langle i \\rangle",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠵⠲⠀⠫⠕⠀⠨⠨⠷⠊⠨⠨⠾",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠵⠲⠀⠫⠕⠀⠨⠨⠷⠊⠨⠨⠾",
       "reference": {
         "m-4681": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#Qaa"
       }
@@ -1443,7 +1443,7 @@
       "url": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#cos",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo stretchy=\"false\">→</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo>∗</mo></msup></math>",
       "tex": "\\phi: {\\mathbb Z} \\rightarrow {\\mathbb Q}^\\ast",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠵⠀⠫⠕⠀⠸⠰⠠⠟⠘⠈⠼",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠵⠀⠫⠕⠀⠈⠰⠠⠟⠘⠈⠼",
       "reference": {
         "m-4691": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#cos"
       }
@@ -1453,7 +1453,7 @@
       "url": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#IvB",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>U</mi><mo stretchy=\"false\">(</mo><mn>8</mn><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">→</mo><mi>U</mi><mo stretchy=\"false\">(</mo><mn>12</mn><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\phi : U(8) \\rightarrow U(12)",
-      "expected": "⠨⠋⠒⠀⠠⠥⠷⠼⠦⠾⠀⠫⠕⠀⠠⠥⠷⠼⠂⠆⠾",
+      "expected": "⠨⠋⠸⠒⠀⠠⠥⠷⠦⠾⠀⠫⠕⠀⠠⠥⠷⠂⠆⠾",
       "reference": {
         "m-4706": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#IvB"
       }
@@ -1463,7 +1463,7 @@
       "url": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#oCK",
       "input": "<math><mi>ϕ</mi><mo>:</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mn>6</mn></msub><mo stretchy=\"false\">→</mo><msub><mi>S</mi><mn>3</mn></msub></math>",
       "tex": "\\phi : {\\mathbb Z}_6 \\rightarrow  S_3",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠵⠖⠀⠫⠕⠀⠠⠎⠒",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠵⠖⠀⠫⠕⠀⠠⠎⠒",
       "reference": {
         "m-4718": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#oCK"
       }
@@ -1473,7 +1473,7 @@
       "url": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#UQX",
       "input": "<math><msup><mi>ϕ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>:</mo><mi>H</mi><mo stretchy=\"false\">→</mo><mi>G</mi></math>",
       "tex": "\\phi^{-1} : H \\rightarrow G",
-      "expected": "⠨⠋⠘⠤⠼⠂⠐⠒⠀⠠⠓⠀⠫⠕⠀⠠⠛",
+      "expected": "⠨⠋⠘⠤⠂⠸⠒⠀⠠⠓⠀⠫⠕⠀⠠⠛",
       "reference": {
         "m-4728": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#UQX"
       }
@@ -1483,7 +1483,7 @@
       "url": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#pAM",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo stretchy=\"false\">→</mo><mi>G</mi></math>",
       "tex": "\\phi : {\\mathbb Z} \\rightarrow  G",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠵⠀⠫⠕⠀⠠⠛",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠵⠀⠫⠕⠀⠠⠛",
       "reference": {
         "m-4750": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#pAM",
         "m-5802": "http://abstract.ups.edu/aata/section-group-homomorphisms.html#QZC",
@@ -1495,7 +1495,7 @@
       "url": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#pAM",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>n</mi><mo stretchy=\"false\">↦</mo><msup><mi>a</mi><mi>n</mi></msup></math>",
       "tex": "\\phi : n \\mapsto a^n",
-      "expected": "⠨⠋⠒⠀⠝⠀⠫⠳⠒⠒⠕⠀⠁⠘⠝",
+      "expected": "⠨⠋⠸⠒⠀⠝⠀⠫⠳⠒⠒⠕⠀⠁⠘⠝",
       "reference": {
         "m-4751": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#pAM"
       }
@@ -1505,7 +1505,7 @@
       "url": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#VHV",
       "input": "<math><mi>ϕ</mi><mo>:</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mi>n</mi></msub><mo stretchy=\"false\">→</mo><mi>G</mi></math>",
       "tex": "\\phi : {\\mathbb Z}_n \\rightarrow G",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠵⠰⠝⠐⠀⠫⠕⠀⠠⠛",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠵⠰⠝⠀⠫⠕⠀⠠⠛",
       "reference": {
         "m-4774": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#VHV"
       }
@@ -1515,7 +1515,7 @@
       "url": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#VHV",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>k</mi><mo stretchy=\"false\">↦</mo><msup><mi>a</mi><mi>k</mi></msup></math>",
       "tex": "\\phi : k \\mapsto a^k",
-      "expected": "⠨⠋⠒⠀⠅⠀⠫⠳⠒⠒⠕⠀⠁⠘⠅",
+      "expected": "⠨⠋⠸⠒⠀⠅⠀⠫⠳⠒⠒⠕⠀⠁⠘⠅",
       "reference": {
         "m-4775": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#VHV"
       }
@@ -1525,7 +1525,7 @@
       "url": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#BPe",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>g</mi><mo stretchy=\"false\">↦</mo><msub><mi>λ</mi><mi>g</mi></msub></math>",
       "tex": "\\phi : g \\mapsto \\lambda_g",
-      "expected": "⠨⠋⠒⠀⠛⠀⠫⠳⠒⠒⠕⠀⠨⠇⠰⠛⠐",
+      "expected": "⠨⠋⠸⠒⠀⠛⠀⠫⠳⠒⠒⠕⠀⠨⠇⠰⠛",
       "reference": {
         "m-4811": "http://abstract.ups.edu/aata/section-isomorph-definitions.html#BPe"
       }
@@ -1535,7 +1535,7 @@
       "url": "http://abstract.ups.edu/aata/section-direct-products.html#Qov",
       "input": "<math><msub><mi>G</mi><mn>1</mn></msub><mo>,</mo><msub><mi>G</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>G</mi><mi>n</mi></msub></math>",
       "tex": "G_1, G_2, \\ldots, G_n",
-      "expected": "⠠⠛⠂⠠⠀⠠⠛⠆⠠⠀⠄⠄⠄⠀⠠⠀⠠⠛⠰⠝⠐",
+      "expected": "⠠⠛⠂⠠⠀⠠⠛⠆⠠⠀⠄⠄⠄⠠⠀⠠⠛⠰⠝",
       "reference": {
         "m-4872": "http://abstract.ups.edu/aata/section-direct-products.html#Qov"
       }
@@ -1545,7 +1545,7 @@
       "url": "http://abstract.ups.edu/aata/section-direct-products.html#XEz",
       "input": "<math><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>r</mi><mi>n</mi></msub></math>",
       "tex": "r_1, \\ldots, r_n",
-      "expected": "⠗⠂⠠⠀⠄⠄⠄⠀⠠⠀⠗⠰⠝⠐",
+      "expected": "⠗⠂⠠⠀⠄⠄⠄⠠⠀⠗⠰⠝",
       "reference": {
         "m-4913": "http://abstract.ups.edu/aata/section-direct-products.html#XEz",
         "m-11529": "http://abstract.ups.edu/aata/exercises-domains.html#Lmd"
@@ -1556,7 +1556,7 @@
       "url": "http://abstract.ups.edu/aata/section-direct-products.html#DLI",
       "input": "<math><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>n</mi><mi>k</mi></msub></math>",
       "tex": "n_1, \\ldots, n_k",
-      "expected": "⠝⠂⠠⠀⠄⠄⠄⠀⠠⠀⠝⠰⠅⠐",
+      "expected": "⠝⠂⠠⠀⠄⠄⠄⠠⠀⠝⠰⠅",
       "reference": {
         "m-4950": "http://abstract.ups.edu/aata/section-direct-products.html#DLI",
         "m-5208": "http://abstract.ups.edu/aata/exercises-isomorph.html#pWy"
@@ -1567,7 +1567,7 @@
       "url": "http://abstract.ups.edu/aata/section-direct-products.html#ukF",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>G</mi><mo stretchy=\"false\">→</mo><mi>H</mi><mo>×</mo><mi>K</mi></math>",
       "tex": "\\phi : G \\rightarrow H \\times K",
-      "expected": "⠨⠋⠒⠀⠠⠛⠀⠫⠕⠀⠠⠓⠈⠡⠠⠅",
+      "expected": "⠨⠋⠸⠒⠀⠠⠛⠀⠫⠕⠀⠠⠓⠈⠡⠠⠅",
       "reference": {
         "m-4996": "http://abstract.ups.edu/aata/section-direct-products.html#ukF",
         "m-5188": "http://abstract.ups.edu/aata/exercises-isomorph.html#RtO"
@@ -1578,7 +1578,7 @@
       "url": "http://abstract.ups.edu/aata/section-direct-products.html#UYo",
       "input": "<math><msub><mi>H</mi><mn>1</mn></msub><mo>,</mo><msub><mi>H</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>H</mi><mi>n</mi></msub></math>",
       "tex": "H_1, H_2, \\ldots, H_n",
-      "expected": "⠠⠓⠂⠠⠀⠠⠓⠆⠠⠀⠄⠄⠄⠀⠠⠀⠠⠓⠰⠝⠐",
+      "expected": "⠠⠓⠂⠠⠀⠠⠓⠆⠠⠀⠄⠄⠄⠠⠀⠠⠓⠰⠝",
       "reference": {
         "m-5016": "http://abstract.ups.edu/aata/section-direct-products.html#UYo",
         "m-5215": "http://abstract.ups.edu/aata/exercises-isomorph.html#CkQ"
@@ -1589,7 +1589,7 @@
       "url": "http://abstract.ups.edu/aata/section-direct-products.html#RWr",
       "input": "<math><mi>G</mi><mo>=</mo><msub><mi>H</mi><mn>1</mn></msub><msub><mi>H</mi><mn>2</mn></msub><mo>⋯</mo><msub><mi>H</mi><mi>n</mi></msub><mo>=</mo><mo fence=\"false\" stretchy=\"false\">{</mo><msub><mi>h</mi><mn>1</mn></msub><msub><mi>h</mi><mn>2</mn></msub><mo>⋯</mo><msub><mi>h</mi><mi>n</mi></msub><mo>:</mo><msub><mi>h</mi><mi>i</mi></msub><mo>∈</mo><msub><mi>H</mi><mi>i</mi></msub><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "G = H_1 H_2 \\cdots H_n = \\{ h_1 h_2 \\cdots h_n : h_i \\in H_i \\}",
-      "expected": "⠠⠛⠀⠨⠅⠀⠠⠓⠂⠠⠓⠆⠀⠄⠄⠄⠀⠠⠓⠰⠝⠐⠀⠨⠅⠀⠨⠷⠓⠂⠓⠆⠀⠄⠄⠄⠀⠓⠰⠝⠐⠒⠀⠓⠰⠊⠐⠀⠈⠑⠀⠠⠓⠰⠊⠐⠨⠾",
+      "expected": "⠠⠛⠀⠨⠅⠀⠠⠓⠂⠠⠓⠆⠀⠄⠄⠄⠀⠠⠓⠰⠝⠀⠨⠅⠀⠨⠷⠓⠂⠓⠆⠀⠄⠄⠄⠀⠓⠰⠝⠸⠒⠓⠰⠊⠐⠀⠈⠑⠀⠠⠓⠰⠊⠐⠨⠾",
       "reference": {
         "m-5018": "http://abstract.ups.edu/aata/section-direct-products.html#RWr"
       }
@@ -1599,7 +1599,7 @@
       "url": "http://abstract.ups.edu/aata/section-direct-products.html#fiY",
       "input": "<math><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mo>…</mo><mo>,</mo><mi>n</mi></math>",
       "tex": "i = 1, 2, \\ldots, n",
-      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠼⠆⠠⠀⠄⠄⠄⠀⠠⠀⠝",
+      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠼⠆⠠⠀⠄⠄⠄⠠⠀⠝",
       "reference": {
         "m-5025": "http://abstract.ups.edu/aata/section-direct-products.html#fiY"
       }
@@ -1609,7 +1609,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-isomorph.html#SkM",
       "input": "<math><mi>ϕ</mi><mo>:</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">C</mi></mrow></mrow><mo>∗</mo></msup><mo stretchy=\"false\">→</mo><mi>G</mi><msub><mi>L</mi><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\phi: {\\mathbb C}^* \\rightarrow GL_2( {\\mathbb R})",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠉⠘⠈⠼⠐⠀⠫⠕⠀⠠⠛⠠⠇⠆⠷⠸⠰⠠⠗⠾",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠉⠘⠈⠼⠀⠫⠕⠀⠠⠛⠠⠇⠆⠷⠈⠰⠠⠗⠾",
       "reference": {
         "m-5036": "http://abstract.ups.edu/aata/exercises-isomorph.html#SkM"
       }
@@ -1619,7 +1619,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-isomorph.html#jxs",
       "input": "<math><mi>ϕ</mi><mo>:</mo><msub><mi>G</mi><mn>1</mn></msub><mo stretchy=\"false\">→</mo><msub><mi>G</mi><mn>2</mn></msub></math>",
       "tex": "\\phi : G_1 \\rightarrow G_2",
-      "expected": "⠨⠋⠒⠀⠠⠛⠂⠀⠫⠕⠀⠠⠛⠆",
+      "expected": "⠨⠋⠸⠒⠀⠠⠛⠂⠀⠫⠕⠀⠠⠛⠆",
       "reference": {
         "m-5131": "http://abstract.ups.edu/aata/exercises-isomorph.html#jxs",
         "m-5824": "http://abstract.ups.edu/aata/section-group-homomorphisms.html#kSt",
@@ -1632,7 +1632,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-isomorph.html#jxs",
       "input": "<math><mi>ψ</mi><mo>:</mo><msub><mi>G</mi><mn>2</mn></msub><mo stretchy=\"false\">→</mo><msub><mi>G</mi><mn>3</mn></msub></math>",
       "tex": "\\psi : G_2 \\rightarrow G_3",
-      "expected": "⠨⠓⠒⠀⠠⠛⠆⠀⠫⠕⠀⠠⠛⠒",
+      "expected": "⠨⠽⠸⠒⠀⠠⠛⠆⠀⠫⠕⠀⠠⠛⠒",
       "reference": {
         "m-5132": "http://abstract.ups.edu/aata/exercises-isomorph.html#jxs"
       }
@@ -1642,7 +1642,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-isomorph.html#sRe",
       "input": "<math><msub><mi>i</mi><mi>g</mi></msub><mo>:</mo><mi>G</mi><mo stretchy=\"false\">→</mo><mi>G</mi></math>",
       "tex": "i_g : G \\rightarrow G",
-      "expected": "⠊⠰⠛⠐⠒⠀⠠⠛⠀⠫⠕⠀⠠⠛",
+      "expected": "⠊⠰⠛⠸⠒⠀⠠⠛⠀⠫⠕⠀⠠⠛",
       "reference": {
         "m-5164": "http://abstract.ups.edu/aata/exercises-isomorph.html#sRe",
         "m-5691": "http://abstract.ups.edu/aata/exercises-normal.html#LPg"
@@ -1653,7 +1653,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-isomorph.html#lmF",
       "input": "<math><msub><mi>ρ</mi><mi>g</mi></msub><mo>:</mo><mi>G</mi><mo stretchy=\"false\">→</mo><mi>G</mi></math>",
       "tex": "\\rho_g :G \\rightarrow G",
-      "expected": "⠨⠗⠰⠛⠐⠒⠀⠠⠛⠀⠫⠕⠀⠠⠛",
+      "expected": "⠨⠗⠰⠛⠸⠒⠀⠠⠛⠀⠫⠕⠀⠠⠛",
       "reference": {
         "m-5178": "http://abstract.ups.edu/aata/exercises-isomorph.html#lmF"
       }
@@ -1713,7 +1713,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-normal.html#LPg",
       "input": "<math><msub><mi>i</mi><mi>g</mi></msub><mo>:</mo><mi>x</mi><mo stretchy=\"false\">↦</mo><mi>g</mi><mi>x</mi><msup><mi>g</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></math>",
       "tex": "i_g : x \\mapsto gxg^{-1}",
-      "expected": "⠊⠰⠛⠐⠒⠀⠭⠀⠫⠳⠒⠒⠕⠀⠛⠭⠛⠘⠤⠼⠂",
+      "expected": "⠊⠰⠛⠸⠒⠀⠭⠀⠫⠳⠒⠒⠕⠀⠛⠭⠛⠘⠤⠂",
       "reference": {
         "m-5692": "http://abstract.ups.edu/aata/exercises-normal.html#LPg"
       }
@@ -1723,7 +1723,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-normal.html#Ydy",
       "input": "<math><mi>h</mi><mo>=</mo><msub><mi>h</mi><mn>1</mn></msub><mo>⋯</mo><msub><mi>h</mi><mi>n</mi></msub></math>",
       "tex": "h = h_1 \\cdots h_n",
-      "expected": "⠓⠀⠨⠅⠀⠓⠂⠀⠄⠄⠄⠀⠓⠰⠝⠐",
+      "expected": "⠓⠀⠨⠅⠀⠓⠂⠀⠄⠄⠄⠀⠓⠰⠝",
       "reference": {
         "m-5736": "http://abstract.ups.edu/aata/exercises-normal.html#Ydy"
       }
@@ -1733,7 +1733,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-normal.html#Ydy",
       "input": "<math><mi>g</mi><mi>h</mi><msup><mi>g</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mi>g</mi><msub><mi>h</mi><mn>1</mn></msub><mo>⋯</mo><msub><mi>h</mi><mi>n</mi></msub><msup><mi>g</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mo stretchy=\"false\">(</mo><mi>g</mi><msub><mi>h</mi><mn>1</mn></msub><msup><mi>g</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>g</mi><msub><mi>h</mi><mn>2</mn></msub><msup><mi>g</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy=\"false\">)</mo><mo>⋯</mo><mo stretchy=\"false\">(</mo><mi>g</mi><msub><mi>h</mi><mi>n</mi></msub><msup><mi>g</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy=\"false\">)</mo></math>",
       "tex": "ghg^{-1} = g h_1 \\cdots h_n g^{-1} = (gh_1g^{-1})(gh_2g^{-1}) \\cdots (gh_ng^{-1})",
-      "expected": "⠛⠓⠛⠘⠤⠼⠂⠐⠀⠨⠅⠀⠛⠓⠂⠀⠄⠄⠄⠀⠓⠰⠝⠐⠛⠘⠤⠼⠂⠐⠀⠨⠅⠀⠷⠛⠓⠂⠛⠘⠤⠼⠂⠐⠾⠷⠛⠓⠆⠛⠘⠤⠼⠂⠐⠾⠀⠄⠄⠄⠀⠷⠛⠓⠰⠝⠐⠛⠘⠤⠼⠂⠐⠾",
+      "expected": "⠛⠓⠛⠘⠤⠂⠐⠀⠨⠅⠀⠛⠓⠂⠀⠄⠄⠄⠀⠓⠰⠝⠐⠛⠘⠤⠂⠐⠀⠨⠅⠀⠷⠛⠓⠂⠛⠘⠤⠂⠐⠾⠷⠛⠓⠆⠛⠘⠤⠂⠾⠀⠄⠄⠄⠀⠷⠛⠓⠰⠝⠐⠛⠘⠤⠂⠐⠾",
       "reference": {
         "m-5739": "http://abstract.ups.edu/aata/exercises-normal.html#Ydy"
       }
@@ -1743,7 +1743,7 @@
       "url": "http://abstract.ups.edu/aata/section-group-homomorphisms.html#xgL",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>G</mi><msub><mi>L</mi><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">→</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo>∗</mo></msup></math>",
       "tex": "\\phi : GL_2( {\\mathbb R }) \\rightarrow {\\mathbb R}^\\ast",
-      "expected": "⠨⠋⠒⠀⠠⠛⠠⠇⠆⠷⠸⠰⠠⠗⠾⠀⠫⠕⠀⠸⠰⠠⠗⠘⠈⠼",
+      "expected": "⠨⠋⠸⠒⠀⠠⠛⠠⠇⠆⠷⠈⠰⠠⠗⠾⠀⠫⠕⠀⠈⠰⠠⠗⠘⠈⠼",
       "reference": {
         "m-5815": "http://abstract.ups.edu/aata/section-group-homomorphisms.html#xgL",
         "m-5901": "http://abstract.ups.edu/aata/section-group-homomorphisms.html#Jvd",
@@ -1755,7 +1755,7 @@
       "url": "http://abstract.ups.edu/aata/section-group-homomorphisms.html#dnU",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>θ</mi><mo stretchy=\"false\">↦</mo><mi>cos</mi><mo data-mjx-texclass=\"NONE\">⁡</mo><mi>θ</mi><mo>+</mo><mi>i</mi><mi>sin</mi><mo data-mjx-texclass=\"NONE\">⁡</mo><mi>θ</mi></math>",
       "tex": "\\phi : \\theta \\mapsto \\cos \\theta + i \\sin \\theta",
-      "expected": "⠨⠋⠒⠀⠨⠹⠀⠫⠳⠒⠒⠕⠀⠉⠕⠎⠀⠨⠹⠬⠊⠎⠊⠝⠀⠨⠹",
+      "expected": "⠨⠋⠸⠒⠀⠨⠹⠀⠫⠳⠒⠒⠕⠀⠉⠕⠎⠀⠨⠹⠬⠊⠎⠊⠝⠀⠨⠹",
       "reference": {
         "m-5823": "http://abstract.ups.edu/aata/section-group-homomorphisms.html#dnU"
       }
@@ -1765,7 +1765,7 @@
       "url": "http://abstract.ups.edu/aata/section-group-homomorphisms.html#pCm",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo stretchy=\"false\">→</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">C</mi></mrow></mrow><mo>∗</mo></msup></math>",
       "tex": "\\phi : {\\mathbb R} \\rightarrow {\\mathbb C}^\\ast",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠗⠀⠫⠕⠀⠸⠰⠠⠉⠘⠈⠼",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠗⠀⠫⠕⠀⠈⠰⠠⠉⠘⠈⠼",
       "reference": {
         "m-5907": "http://abstract.ups.edu/aata/section-group-homomorphisms.html#pCm"
       }
@@ -1775,7 +1775,7 @@
       "url": "http://abstract.ups.edu/aata/section-group-isomorphism-theorems.html#MpJ",
       "input": "<math><mi>ψ</mi><mo>:</mo><mi>G</mi><mo stretchy=\"false\">→</mo><mi>H</mi></math>",
       "tex": "\\psi : G \\rightarrow H",
-      "expected": "⠨⠓⠒⠀⠠⠛⠀⠫⠕⠀⠠⠓",
+      "expected": "⠨⠽⠸⠒⠀⠠⠛⠀⠫⠕⠀⠠⠓",
       "reference": {
         "m-5947": "http://abstract.ups.edu/aata/section-group-isomorphism-theorems.html#MpJ"
       }
@@ -1785,7 +1785,7 @@
       "url": "http://abstract.ups.edu/aata/section-group-isomorphism-theorems.html#MpJ",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>G</mi><mo stretchy=\"false\">→</mo><mi>G</mi><mrow><mo>/</mo></mrow><mi>K</mi></math>",
       "tex": "\\phi: G \\rightarrow G/K",
-      "expected": "⠨⠋⠒⠀⠠⠛⠀⠫⠕⠀⠠⠛⠸⠌⠠⠅",
+      "expected": "⠨⠋⠸⠒⠀⠠⠛⠀⠫⠕⠀⠠⠛⠸⠌⠠⠅",
       "reference": {
         "m-5951": "http://abstract.ups.edu/aata/section-group-isomorphism-theorems.html#MpJ"
       }
@@ -1795,7 +1795,7 @@
       "url": "http://abstract.ups.edu/aata/section-group-isomorphism-theorems.html#MpJ",
       "input": "<math><mi>η</mi><mo>:</mo><mi>G</mi><mrow><mo>/</mo></mrow><mi>K</mi><mo stretchy=\"false\">→</mo><mi>ψ</mi><mo stretchy=\"false\">(</mo><mi>G</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\eta: G/K \\rightarrow \\psi(G)",
-      "expected": "⠨⠦⠒⠀⠠⠛⠸⠌⠠⠅⠀⠫⠕⠀⠓⠷⠠⠛⠾",
+      "expected": "⠨⠱⠸⠒⠀⠠⠛⠸⠌⠠⠅⠀⠫⠕⠀⠨⠽⠷⠠⠛⠾",
       "reference": {
         "m-5952": "http://abstract.ups.edu/aata/section-group-isomorphism-theorems.html#MpJ",
         "m-5956": "http://abstract.ups.edu/aata/section-group-isomorphism-theorems.html#mOK",
@@ -1807,7 +1807,7 @@
       "url": "http://abstract.ups.edu/aata/reading-questions-11.html#rgE",
       "input": "<math><mi>ϕ</mi><mo>:</mo><msub><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow><mrow><mn>10</mn></mrow></msub><mo stretchy=\"false\">→</mo><msub><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow><mrow><mn>10</mn></mrow></msub></math>",
       "tex": "\\phi:\\mathbb Z_{10}\\rightarrow\\mathbb Z_{10}",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠵⠂⠴⠀⠫⠕⠀⠸⠰⠠⠵⠂⠴",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠵⠂⠴⠀⠫⠕⠀⠈⠰⠠⠵⠂⠴",
       "reference": {
         "m-6105": "http://abstract.ups.edu/aata/reading-questions-11.html#rgE"
       }
@@ -1817,7 +1817,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-homomorph.html#PFO",
       "input": "<math><mi>ϕ</mi><mo>:</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo>∗</mo></msup><mo stretchy=\"false\">→</mo><mi>G</mi><msub><mi>L</mi><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\phi : {\\mathbb R}^\\ast \\rightarrow GL_2 ( {\\mathbb R})",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠗⠘⠈⠼⠐⠀⠫⠕⠀⠠⠛⠠⠇⠆⠷⠸⠰⠠⠗⠾",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠗⠘⠈⠼⠀⠫⠕⠀⠠⠛⠠⠇⠆⠷⠈⠰⠠⠗⠾",
       "reference": {
         "m-6114": "http://abstract.ups.edu/aata/exercises-homomorph.html#PFO"
       }
@@ -1827,7 +1827,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-homomorph.html#vMX",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo stretchy=\"false\">→</mo><mi>G</mi><msub><mi>L</mi><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\phi : {\\mathbb R} \\rightarrow GL_2 ( {\\mathbb R})",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠗⠀⠫⠕⠀⠠⠛⠠⠇⠆⠷⠸⠰⠠⠗⠾",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠗⠀⠫⠕⠀⠠⠛⠠⠇⠆⠷⠈⠰⠠⠗⠾",
       "reference": {
         "m-6115": "http://abstract.ups.edu/aata/exercises-homomorph.html#vMX"
       }
@@ -1837,7 +1837,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-homomorph.html#bUg",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>G</mi><msub><mi>L</mi><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow></math>",
       "tex": "\\phi : GL_2 ({\\mathbb R})   \\rightarrow {\\mathbb R}",
-      "expected": "⠨⠋⠒⠀⠠⠛⠠⠇⠆⠷⠸⠰⠠⠗⠾⠀⠫⠕⠀⠸⠰⠠⠗",
+      "expected": "⠨⠋⠸⠒⠀⠠⠛⠠⠇⠆⠷⠈⠰⠠⠗⠾⠀⠫⠕⠀⠈⠰⠠⠗",
       "reference": {
         "m-6116": "http://abstract.ups.edu/aata/exercises-homomorph.html#bUg"
       }
@@ -1847,7 +1847,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-homomorph.html#oiy",
       "input": "<math><mi>ϕ</mi><mo>:</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">M</mi></mrow></mrow><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow></math>",
       "tex": "\\phi : {\\mathbb M}_2( {\\mathbb R}) \\rightarrow {\\mathbb R}",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠍⠆⠷⠸⠰⠠⠗⠾⠀⠫⠕⠀⠸⠰⠠⠗",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠍⠆⠷⠈⠰⠠⠗⠾⠀⠫⠕⠀⠈⠰⠠⠗",
       "reference": {
         "m-6118": "http://abstract.ups.edu/aata/exercises-homomorph.html#oiy"
       }
@@ -1857,7 +1857,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-homomorph.html#yVY",
       "input": "<math><mi>ϕ</mi><mo>:</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mi>n</mi></msup><mo stretchy=\"false\">→</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mi>m</mi></msup></math>",
       "tex": "\\phi : {\\mathbb R}^n \\rightarrow {\\mathbb R}^m",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠗⠘⠝⠐⠀⠫⠕⠀⠸⠰⠠⠗⠘⠍",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠗⠘⠝⠀⠫⠕⠀⠈⠰⠠⠗⠘⠍",
       "reference": {
         "m-6126": "http://abstract.ups.edu/aata/exercises-homomorph.html#yVY"
       }
@@ -1867,7 +1867,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-homomorph.html#fdh",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow></math>",
       "tex": "\\phi : {\\mathbb Z} \\rightarrow {\\mathbb Z}",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠵⠀⠫⠕⠀⠸⠰⠠⠵",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠵⠀⠫⠕⠀⠈⠰⠠⠵",
       "reference": {
         "m-6127": "http://abstract.ups.edu/aata/exercises-homomorph.html#fdh",
         "m-6229": "http://abstract.ups.edu/aata/homomorph-exercises-automorphisms.html#KeX"
@@ -1878,7 +1878,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-homomorph.html#lXM",
       "input": "<math><mi>ϕ</mi><mo>:</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mrow><mn>24</mn></mrow></msub><mo stretchy=\"false\">→</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mrow><mn>18</mn></mrow></msub></math>",
       "tex": "\\phi : {\\mathbb Z}_{24} \\rightarrow {\\mathbb Z}_{18}",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠵⠆⠲⠀⠫⠕⠀⠸⠰⠠⠵⠂⠦",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠵⠆⠲⠀⠫⠕⠀⠈⠰⠠⠵⠂⠦",
       "reference": {
         "m-6135": "http://abstract.ups.edu/aata/exercises-homomorph.html#lXM"
       }
@@ -1888,7 +1888,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-homomorph.html#DFR",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>G</mi><mo stretchy=\"false\">→</mo><mi>G</mi></math>",
       "tex": "\\phi : G \\rightarrow G",
-      "expected": "⠨⠋⠒⠀⠠⠛⠀⠫⠕⠀⠠⠛",
+      "expected": "⠨⠋⠸⠒⠀⠠⠛⠀⠫⠕⠀⠠⠛",
       "reference": {
         "m-6154": "http://abstract.ups.edu/aata/exercises-homomorph.html#DFR"
       }
@@ -1898,7 +1898,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-homomorph.html#owT",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>G</mi><mo stretchy=\"false\">→</mo><mi>G</mi><mrow><mo>/</mo></mrow><mi>N</mi></math>",
       "tex": "\\phi : G \\rightarrow G/N",
-      "expected": "⠨⠋⠒⠀⠠⠛⠀⠫⠕⠀⠠⠛⠸⠌⠠⠝",
+      "expected": "⠨⠋⠸⠒⠀⠠⠛⠀⠫⠕⠀⠠⠛⠸⠌⠠⠝",
       "reference": {
         "m-6178": "http://abstract.ups.edu/aata/exercises-homomorph.html#owT",
         "m-8158": "http://abstract.ups.edu/aata/section-sylow-theorems.html#FvE"
@@ -1909,7 +1909,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-homomorph.html#UEc",
       "input": "<math><mover><mi>ϕ</mi><mo accent=\"false\">¯</mo></mover><mo>:</mo><mo stretchy=\"false\">(</mo><msub><mi>G</mi><mn>1</mn></msub><mrow><mo>/</mo></mrow><msub><mi>H</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">→</mo><mo stretchy=\"false\">(</mo><msub><mi>G</mi><mn>2</mn></msub><mrow><mo>/</mo></mrow><msub><mi>H</mi><mn>2</mn></msub><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\overline{\\phi} : (G_1/H_1) \\rightarrow (G_2/H_2)",
-      "expected": "⠐⠨⠋⠣⠱⠻⠒⠀⠷⠠⠛⠂⠸⠌⠠⠓⠂⠾⠀⠫⠕⠀⠷⠠⠛⠆⠸⠌⠠⠓⠆⠾",
+      "expected": "⠨⠋⠱⠸⠒⠀⠷⠠⠛⠂⠸⠌⠠⠓⠂⠾⠀⠫⠕⠀⠷⠠⠛⠆⠸⠌⠠⠓⠆⠾",
       "reference": {
         "m-6187": "http://abstract.ups.edu/aata/exercises-homomorph.html#UEc"
       }
@@ -1919,7 +1919,7 @@
       "url": "http://abstract.ups.edu/aata/homomorph-exercises-automorphisms.html#Wtp",
       "input": "<math><msub><mi>ϕ</mi><mi>k</mi></msub><mo>:</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mi>n</mi></msub><mo stretchy=\"false\">→</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mi>n</mi></msub></math>",
       "tex": "\\phi_k : {\\mathbb Z}_n \\rightarrow {\\mathbb Z}_n",
-      "expected": "⠨⠋⠰⠅⠐⠒⠀⠸⠰⠠⠵⠰⠝⠐⠀⠫⠕⠀⠸⠰⠠⠵⠰⠝⠐",
+      "expected": "⠨⠋⠰⠅⠸⠒⠀⠈⠰⠠⠵⠰⠝⠀⠫⠕⠀⠈⠰⠠⠵⠰⠝",
       "reference": {
         "m-6234": "http://abstract.ups.edu/aata/homomorph-exercises-automorphisms.html#Wtp"
       }
@@ -1929,7 +1929,7 @@
       "url": "http://abstract.ups.edu/aata/homomorph-exercises-automorphisms.html#OOQ",
       "input": "<math><mi>ψ</mi><mo>:</mo><mi>U</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">→</mo><mi>Aut</mi><mo data-mjx-texclass=\"NONE\">⁡</mo><mo stretchy=\"false\">(</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mi>n</mi></msub><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\psi : U(n) \\rightarrow \\aut({\\mathbb Z}_n)",
-      "expected": "⠨⠓⠒⠀⠠⠥⠷⠝⠾⠀⠫⠕⠀⠠⠁⠥⠞⠷⠸⠰⠠⠵⠰⠝⠐⠾",
+      "expected": "⠨⠽⠸⠒⠀⠠⠥⠷⠝⠾⠀⠫⠕⠀⠠⠁⠥⠞⠷⠈⠰⠠⠵⠰⠝⠐⠾",
       "reference": {
         "m-6244": "http://abstract.ups.edu/aata/homomorph-exercises-automorphisms.html#OOQ"
       }
@@ -1939,7 +1939,7 @@
       "url": "http://abstract.ups.edu/aata/homomorph-exercises-automorphisms.html#OOQ",
       "input": "<math><mi>ψ</mi><mo>:</mo><mi>k</mi><mo stretchy=\"false\">↦</mo><msub><mi>ϕ</mi><mi>k</mi></msub></math>",
       "tex": "\\psi : k \\mapsto \\phi_k",
-      "expected": "⠨⠓⠒⠀⠅⠀⠫⠳⠒⠒⠕⠀⠨⠋⠰⠅⠐",
+      "expected": "⠨⠽⠸⠒⠀⠅⠀⠫⠳⠒⠒⠕⠀⠨⠋⠰⠅",
       "reference": {
         "m-6245": "http://abstract.ups.edu/aata/homomorph-exercises-automorphisms.html#OOQ"
       }
@@ -1949,7 +1949,7 @@
       "url": "http://abstract.ups.edu/aata/section-matrix-groups.html#Mtn",
       "input": "<math><mi>T</mi><mo>:</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mi>n</mi></msup><mo stretchy=\"false\">→</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mi>m</mi></msup></math>",
       "tex": "T : {\\mathbb R}^n \\rightarrow {\\mathbb R}^m",
-      "expected": "⠠⠞⠒⠀⠸⠰⠠⠗⠘⠝⠐⠀⠫⠕⠀⠸⠰⠠⠗⠘⠍",
+      "expected": "⠠⠞⠸⠒⠀⠈⠰⠠⠗⠘⠝⠀⠫⠕⠀⠈⠰⠠⠗⠘⠍",
       "reference": {
         "m-6293": "http://abstract.ups.edu/aata/section-matrix-groups.html#Mtn",
         "m-6310": "http://abstract.ups.edu/aata/section-matrix-groups.html#sAw"
@@ -1960,7 +1960,7 @@
       "url": "http://abstract.ups.edu/aata/section-matrix-groups.html#rQC",
       "input": "<math><mi>T</mi><mo>:</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mn>2</mn></msup><mo stretchy=\"false\">→</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mn>2</mn></msup></math>",
       "tex": "T : {\\mathbb R}^2 \\rightarrow {\\mathbb R}^2",
-      "expected": "⠠⠞⠒⠀⠸⠰⠠⠗⠘⠆⠐⠀⠫⠕⠀⠸⠰⠠⠗⠘⠆",
+      "expected": "⠠⠞⠸⠒⠀⠈⠰⠠⠗⠘⠆⠀⠫⠕⠀⠈⠰⠠⠗⠘⠆",
       "reference": {
         "m-6315": "http://abstract.ups.edu/aata/section-matrix-groups.html#rQC"
       }
@@ -1970,7 +1970,7 @@
       "url": "http://abstract.ups.edu/aata/section-symmetry.html#RFJ",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>G</mi><mo stretchy=\"false\">→</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mo>−</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "\\phi : G \\rightarrow \\{-1, 1\\}",
-      "expected": "⠨⠋⠒⠀⠠⠛⠀⠫⠕⠀⠨⠷⠤⠼⠂⠠⠀⠼⠂⠨⠾",
+      "expected": "⠨⠋⠸⠒⠀⠠⠛⠀⠫⠕⠀⠨⠷⠤⠼⠂⠠⠀⠼⠂⠨⠾",
       "reference": {
         "m-6566": "http://abstract.ups.edu/aata/section-symmetry.html#RFJ"
       }
@@ -1990,7 +1990,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-matrix.html#MOM",
       "input": "<math><mo data-mjx-texclass=\"OP\" movablelimits=\"true\">det</mo><mo>:</mo><mi>O</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">→</mo><msup><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo>∗</mo></msup></math>",
       "tex": "\\det : O(n) \\rightarrow {\\mathbb R}^*",
-      "expected": "⠙⠑⠞⠒⠀⠠⠕⠷⠝⠾⠀⠫⠕⠀⠸⠰⠠⠗⠘⠈⠼",
+      "expected": "⠙⠑⠞⠸⠒⠀⠠⠕⠷⠝⠾⠀⠫⠕⠀⠈⠰⠠⠗⠘⠈⠼",
       "reference": {
         "m-6701": "http://abstract.ups.edu/aata/exercises-matrix.html#MOM"
       }
@@ -2000,7 +2000,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Gqt",
       "input": "<math><msub><mi>p</mi><mn>1</mn></msub><mrow><mo>/</mo></mrow><msub><mi>q</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>p</mi><mi>n</mi></msub><mrow><mo>/</mo></mrow><msub><mi>q</mi><mi>n</mi></msub></math>",
       "tex": "p_1/q_1, \\ldots,\n        p_n/q_n",
-      "expected": "⠏⠂⠸⠌⠟⠂⠠⠀⠄⠄⠄⠀⠠⠀⠏⠰⠝⠐⠸⠌⠟⠰⠝⠐",
+      "expected": "⠏⠂⠸⠌⠟⠂⠠⠀⠄⠄⠄⠠⠀⠏⠰⠝⠐⠸⠌⠟⠰⠝",
       "reference": {
         "m-6768": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Gqt",
         "m-6774": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Gqt"
@@ -2011,7 +2011,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Gqt",
       "input": "<math><msub><mi>q</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>q</mi><mi>n</mi></msub></math>",
       "tex": "q_1, \\ldots, q_n",
-      "expected": "⠟⠂⠠⠀⠄⠄⠄⠀⠠⠀⠟⠰⠝⠐",
+      "expected": "⠟⠂⠠⠀⠄⠄⠄⠠⠀⠟⠰⠝",
       "reference": {
         "m-6771": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Gqt"
       }
@@ -2021,7 +2021,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#QWC",
       "input": "<math><msubsup><mi>g</mi><mrow><msub><mi>i</mi><mn>1</mn></msub></mrow><mrow><msub><mi>α</mi><mn>1</mn></msub></mrow></msubsup><mo>⋯</mo><msubsup><mi>g</mi><mrow><msub><mi>i</mi><mi>n</mi></msub></mrow><mrow><msub><mi>α</mi><mi>n</mi></msub></mrow></msubsup></math>",
       "tex": "g_{i_1}^{\\alpha_1} \\cdots g_{i_n}^{\\alpha_n}",
-      "expected": "⠛⠰⠊⠂⠘⠨⠁⠂⠐⠀⠄⠄⠄⠀⠛⠰⠊⠰⠰⠝⠰⠘⠨⠁⠘⠰⠝⠘",
+      "expected": "⠛⠰⠊⠂⠘⠨⠁⠂⠀⠄⠄⠄⠀⠛⠰⠊⠰⠰⠝⠰⠘⠨⠁⠘⠰⠝",
       "reference": {
         "m-6782": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#QWC"
       }
@@ -2031,7 +2031,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#QWC",
       "input": "<math><mi>g</mi><mo>=</mo><msubsup><mi>g</mi><mrow><msub><mi>i</mi><mn>1</mn></msub></mrow><mrow><msub><mi>k</mi><mn>1</mn></msub></mrow></msubsup><mo>⋯</mo><msubsup><mi>g</mi><mrow><msub><mi>i</mi><mi>n</mi></msub></mrow><mrow><msub><mi>k</mi><mi>n</mi></msub></mrow></msubsup></math>",
       "tex": "g =g_{i_1}^{k_1} \\cdots g_{i_n}^{k_n}",
-      "expected": "⠛⠀⠨⠅⠀⠛⠰⠊⠂⠘⠅⠂⠐⠀⠄⠄⠄⠀⠛⠰⠊⠰⠰⠝⠰⠘⠅⠘⠰⠝⠘",
+      "expected": "⠛⠀⠨⠅⠀⠛⠰⠊⠂⠘⠅⠂⠀⠄⠄⠄⠀⠛⠰⠊⠰⠰⠝⠰⠘⠅⠘⠰⠝",
       "reference": {
         "m-6794": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#QWC"
       }
@@ -2051,7 +2051,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#NUS",
       "input": "<math><mi>n</mi><mo>=</mo><msubsup><mi>p</mi><mn>1</mn><mrow><msub><mi>α</mi><mn>1</mn></msub></mrow></msubsup><mo>⋯</mo><msubsup><mi>p</mi><mi>k</mi><mrow><msub><mi>α</mi><mi>k</mi></msub></mrow></msubsup></math>",
       "tex": "n = p_1^{\\alpha_1} \\cdots p_k^{\\alpha_k}",
-      "expected": "⠝⠀⠨⠅⠀⠏⠂⠘⠨⠁⠂⠐⠀⠄⠄⠄⠀⠏⠰⠅⠘⠨⠁⠘⠰⠅⠘",
+      "expected": "⠝⠀⠨⠅⠀⠏⠂⠘⠨⠁⠂⠀⠄⠄⠄⠀⠏⠰⠅⠘⠨⠁⠘⠰⠅",
       "reference": {
         "m-6900": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#NUS"
       }
@@ -2061,7 +2061,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#NUS",
       "input": "<math><msub><mi>α</mi><mn>1</mn></msub><mo>,</mo><msub><mi>α</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>α</mi><mi>k</mi></msub></math>",
       "tex": "\\alpha_1, \\alpha_2, \\ldots, \\alpha_k",
-      "expected": "⠨⠁⠂⠠⠀⠨⠁⠆⠠⠀⠄⠄⠄⠀⠠⠀⠨⠁⠰⠅⠐",
+      "expected": "⠨⠁⠂⠠⠀⠨⠁⠆⠠⠀⠄⠄⠄⠠⠀⠨⠁⠰⠅",
       "reference": {
         "m-6902": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#NUS"
       }
@@ -2071,7 +2071,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#NUS",
       "input": "<math><msub><mi>G</mi><mn>1</mn></msub><mo>,</mo><msub><mi>G</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>G</mi><mi>k</mi></msub></math>",
       "tex": "G_1, G_2, \\ldots, G_k",
-      "expected": "⠠⠛⠂⠠⠀⠠⠛⠆⠠⠀⠄⠄⠄⠀⠠⠀⠠⠛⠰⠅⠐",
+      "expected": "⠠⠛⠂⠠⠀⠠⠛⠆⠠⠀⠄⠄⠄⠠⠀⠠⠛⠰⠅",
       "reference": {
         "m-6904": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#NUS"
       }
@@ -2081,7 +2081,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd",
       "input": "<math><msub><mi>G</mi><mn>2</mn></msub><mo>,</mo><msub><mi>G</mi><mn>3</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>G</mi><mi>k</mi></msub></math>",
       "tex": "G_2, G_3, \\ldots, G_k",
-      "expected": "⠠⠛⠆⠠⠀⠠⠛⠒⠠⠀⠄⠄⠄⠀⠠⠀⠠⠛⠰⠅⠐",
+      "expected": "⠠⠛⠆⠠⠀⠠⠛⠒⠠⠀⠄⠄⠄⠠⠀⠠⠛⠰⠅",
       "reference": {
         "m-6927": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd",
         "m-6940": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd"
@@ -2092,7 +2092,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd",
       "input": "<math><msub><mi>g</mi><mn>1</mn></msub><mo>=</mo><msub><mi>g</mi><mn>2</mn></msub><msub><mi>g</mi><mn>3</mn></msub><mo>⋯</mo><msub><mi>g</mi><mi>k</mi></msub></math>",
       "tex": "g_1 = g_2 g_3 \\cdots g_k",
-      "expected": "⠛⠂⠀⠨⠅⠀⠛⠆⠛⠒⠀⠄⠄⠄⠀⠛⠰⠅⠐",
+      "expected": "⠛⠂⠀⠨⠅⠀⠛⠆⠛⠒⠀⠄⠄⠄⠀⠛⠰⠅",
       "reference": {
         "m-6928": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd"
       }
@@ -2102,7 +2102,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd",
       "input": "<math><mi>i</mi><mo>=</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>…</mo><mo>,</mo><mi>k</mi></math>",
       "tex": "i = 2, 3, \\ldots, k",
-      "expected": "⠊⠀⠨⠅⠀⠼⠆⠠⠀⠼⠒⠠⠀⠄⠄⠄⠀⠠⠀⠅",
+      "expected": "⠊⠀⠨⠅⠀⠼⠆⠠⠀⠼⠒⠠⠀⠄⠄⠄⠠⠀⠅",
       "reference": {
         "m-6933": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd"
       }
@@ -2112,7 +2112,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd",
       "input": "<math><msub><mi>g</mi><mn>1</mn></msub><mo>⋯</mo><msub><mi>g</mi><mi>k</mi></msub></math>",
       "tex": "g_1 \\cdots g_k",
-      "expected": "⠛⠂⠀⠄⠄⠄⠀⠛⠰⠅⠐",
+      "expected": "⠛⠂⠀⠄⠄⠄⠀⠛⠰⠅",
       "reference": {
         "m-6944": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd"
       }
@@ -2122,7 +2122,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd",
       "input": "<math><msub><mi>β</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>β</mi><mi>k</mi></msub></math>",
       "tex": "\\beta_1, \\ldots, \\beta_k",
-      "expected": "⠨⠃⠂⠠⠀⠄⠄⠄⠀⠠⠀⠨⠃⠰⠅⠐",
+      "expected": "⠨⠃⠂⠠⠀⠄⠄⠄⠠⠀⠨⠃⠰⠅",
       "reference": {
         "m-6948": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd"
       }
@@ -2132,7 +2132,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd",
       "input": "<math><msub><mi>b</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>b</mi><mi>k</mi></msub></math>",
       "tex": "b_1, \\ldots,\n          b_k",
-      "expected": "⠃⠂⠠⠀⠄⠄⠄⠀⠠⠀⠃⠰⠅⠐",
+      "expected": "⠃⠂⠠⠀⠄⠄⠄⠠⠀⠃⠰⠅",
       "reference": {
         "m-6951": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd"
       }
@@ -2142,7 +2142,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd",
       "input": "<math><mi>g</mi><mo>=</mo><msub><mi>g</mi><mn>1</mn></msub><mo>⋯</mo><msub><mi>g</mi><mi>k</mi></msub><mo>∈</mo><msub><mi>G</mi><mn>1</mn></msub><msub><mi>G</mi><mn>2</mn></msub><mo>⋯</mo><msub><mi>G</mi><mi>k</mi></msub></math>",
       "tex": "g = g_1 \\cdots g_k \\in G_1 G_2 \\cdots G_k",
-      "expected": "⠛⠀⠨⠅⠀⠛⠂⠀⠄⠄⠄⠀⠛⠰⠅⠐⠀⠈⠑⠀⠠⠛⠂⠠⠛⠆⠀⠄⠄⠄⠀⠠⠛⠰⠅⠐",
+      "expected": "⠛⠀⠨⠅⠀⠛⠂⠀⠄⠄⠄⠀⠛⠰⠅⠐⠀⠈⠑⠀⠠⠛⠂⠠⠛⠆⠀⠄⠄⠄⠀⠠⠛⠰⠅",
       "reference": {
         "m-6956": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd"
       }
@@ -2152,7 +2152,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd",
       "input": "<math><mi>G</mi><mo>=</mo><msub><mi>G</mi><mn>1</mn></msub><msub><mi>G</mi><mn>2</mn></msub><mo>⋯</mo><msub><mi>G</mi><mi>k</mi></msub></math>",
       "tex": "G = G_1 G_2 \\cdots G_k",
-      "expected": "⠠⠛⠀⠨⠅⠀⠠⠛⠂⠠⠛⠆⠀⠄⠄⠄⠀⠠⠛⠰⠅⠐",
+      "expected": "⠠⠛⠀⠨⠅⠀⠠⠛⠂⠠⠛⠆⠀⠄⠄⠄⠀⠠⠛⠰⠅",
       "reference": {
         "m-6957": "http://abstract.ups.edu/aata/section-finite-abelian-groups.html#Jsd"
       }
@@ -2172,7 +2172,7 @@
       "url": "http://abstract.ups.edu/aata/section-class-equation.html#wpA",
       "input": "<math><msub><mi>x</mi><mi>k</mi></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub></math>",
       "tex": "x_k, \\ldots,\n      x_n",
-      "expected": "⠭⠰⠅⠐⠠⠀⠄⠄⠄⠀⠠⠀⠭⠰⠝⠐",
+      "expected": "⠭⠰⠅⠠⠀⠄⠄⠄⠠⠀⠭⠰⠝",
       "reference": {
         "m-7497": "http://abstract.ups.edu/aata/section-class-equation.html#wpA"
       }
@@ -2182,7 +2182,7 @@
       "url": "http://abstract.ups.edu/aata/section-class-equation.html#cwJ",
       "input": "<math><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>x</mi><mi>k</mi></msub></math>",
       "tex": "x_1, \\ldots,\n      x_k",
-      "expected": "⠭⠂⠠⠀⠄⠄⠄⠀⠠⠀⠭⠰⠅⠐",
+      "expected": "⠭⠂⠠⠀⠄⠄⠄⠠⠀⠭⠰⠅",
       "reference": {
         "m-7503": "http://abstract.ups.edu/aata/section-class-equation.html#cwJ",
         "m-8044": "http://abstract.ups.edu/aata/section-sylow-theorems.html#kqq"
@@ -2193,7 +2193,7 @@
       "url": "http://abstract.ups.edu/aata/section-class-equation.html#cwJ",
       "input": "<math><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo><msub><mrow><mrow><mi data-mjx-variant=\"-tex-calligraphic\" mathvariant=\"script\">O</mi></mrow></mrow><mrow><msub><mi>x</mi><mn>1</mn></msub></mrow></msub><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo><mo>=</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo><msub><mrow><mrow><mi data-mjx-variant=\"-tex-calligraphic\" mathvariant=\"script\">O</mi></mrow></mrow><mrow><msub><mi>x</mi><mi>k</mi></msub></mrow></msub><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo><mo>=</mo><msub><mi>n</mi><mi>k</mi></msub></math>",
       "tex": "|{\\mathcal O}_{x_1}| = n_1, \\ldots, |{\\mathcal O}_{x_k}| = n_k",
-      "expected": "⠳⠈⠰⠠⠕⠰⠭⠂⠐⠳⠀⠨⠅⠀⠝⠂⠠⠀⠄⠄⠄⠀⠠⠀⠳⠈⠰⠠⠕⠰⠭⠰⠰⠅⠰⠐⠳⠀⠨⠅⠀⠝⠰⠅⠐",
+      "expected": "⠳⠈⠰⠠⠕⠰⠭⠂⠐⠳⠀⠨⠅⠀⠝⠂⠠⠀⠄⠄⠄⠠⠀⠳⠈⠰⠠⠕⠰⠭⠰⠰⠅⠰⠐⠳⠀⠨⠅⠀⠝⠰⠅",
       "reference": {
         "m-7505": "http://abstract.ups.edu/aata/section-class-equation.html#cwJ"
       }
@@ -2203,7 +2203,7 @@
       "url": "http://abstract.ups.edu/aata/section-class-equation.html#Eih",
       "input": "<math><msub><mi>n</mi><mi>i</mi></msub><mo>∣</mo><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo><mi>G</mi><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo></math>",
       "tex": "n_i \\mid |G|",
-      "expected": "⠝⠰⠊⠐⠳⠳⠠⠛⠳",
+      "expected": "⠝⠰⠊⠳⠳⠠⠛⠳",
       "reference": {
         "m-7535": "http://abstract.ups.edu/aata/section-class-equation.html#Eih"
       }
@@ -2223,7 +2223,7 @@
       "url": "http://abstract.ups.edu/aata/section-burnsides-counting-theorem.html#ISa",
       "input": "<math><mi>ϕ</mi><mo>:</mo><msub><mi>G</mi><mi>x</mi></msub><mo stretchy=\"false\">→</mo><msub><mi>G</mi><mi>y</mi></msub></math>",
       "tex": "\\phi: G_x \\rightarrow G_y",
-      "expected": "⠨⠋⠒⠀⠠⠛⠰⠭⠐⠀⠫⠕⠀⠠⠛⠰⠽⠐",
+      "expected": "⠨⠋⠸⠒⠀⠠⠛⠰⠭⠀⠫⠕⠀⠠⠛⠰⠽",
       "reference": {
         "m-7590": "http://abstract.ups.edu/aata/section-burnsides-counting-theorem.html#ISa"
       }
@@ -2233,7 +2233,7 @@
       "url": "http://abstract.ups.edu/aata/section-burnsides-counting-theorem.html#GlP",
       "input": "<math><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo><mrow><mover><mi>X</mi><mo>~</mo></mover></mrow><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo><mo>=</mo><msup><mn>2</mn><mn>4</mn></msup><mo>=</mo><mtext> </mtext><mn>16</mn></math>",
       "tex": "|\\widetilde{X}| = 2^4 =~16",
-      "expected": "⠳⠐⠠⠭⠣⠈⠱⠻⠳⠀⠨⠅⠀⠼⠆⠘⠲⠐⠀⠨⠅⠀⠼⠂⠖",
+      "expected": "⠳⠐⠠⠭⠣⠈⠱⠻⠳⠀⠨⠅⠀⠼⠆⠘⠲⠀⠨⠅⠀⠼⠂⠖",
       "reference": {
         "m-7649": "http://abstract.ups.edu/aata/section-burnsides-counting-theorem.html#GlP"
       }
@@ -2243,7 +2243,7 @@
       "url": "http://abstract.ups.edu/aata/section-burnsides-counting-theorem.html#cKR",
       "input": "<math><mi>σ</mi><mo>=</mo><msub><mi>σ</mi><mn>1</mn></msub><msub><mi>σ</mi><mn>2</mn></msub><mo>⋯</mo><msub><mi>σ</mi><mi>n</mi></msub></math>",
       "tex": "\\sigma = \\sigma_1 \\sigma_2 \\cdots \\sigma_n",
-      "expected": "⠨⠎⠀⠨⠅⠀⠨⠎⠂⠨⠎⠆⠀⠄⠄⠄⠀⠨⠎⠰⠝⠐",
+      "expected": "⠨⠎⠀⠨⠅⠀⠨⠎⠂⠨⠎⠆⠀⠄⠄⠄⠀⠨⠎⠰⠝",
       "reference": {
         "m-7709": "http://abstract.ups.edu/aata/section-burnsides-counting-theorem.html#cKR"
       }
@@ -2253,7 +2253,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-actions.html#OOD",
       "input": "<math><mo stretchy=\"false\">(</mo><mi>g</mi><mo>,</mo><mi>h</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mo stretchy=\"false\">↦</mo><mtext> </mtext><mi>g</mi><mi>h</mi><msup><mi>g</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></math>",
       "tex": "(g,h)~\\mapsto~ghg^{-1}",
-      "expected": "⠷⠛⠠⠀⠓⠾⠀⠫⠳⠒⠒⠕⠀⠛⠓⠛⠘⠤⠼⠂",
+      "expected": "⠷⠛⠠⠀⠓⠾⠫⠳⠒⠒⠕⠛⠓⠛⠘⠤⠂",
       "reference": {
         "m-7920": "http://abstract.ups.edu/aata/exercises-actions.html#OOD"
       }
@@ -2263,7 +2263,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-actions.html#Tyw",
       "input": "<math><mn>1</mn><mo>,</mo><mo>…</mo><mo>,</mo><mn>6</mn></math>",
       "tex": "1, \\ldots, 6",
-      "expected": "⠼⠂⠠⠀⠄⠄⠄⠀⠠⠀⠼⠖",
+      "expected": "⠼⠂⠠⠀⠄⠄⠄⠠⠀⠼⠖",
       "reference": {
         "m-7932": "http://abstract.ups.edu/aata/exercises-actions.html#Tyw"
       }
@@ -2303,7 +2303,7 @@
       "url": "http://abstract.ups.edu/aata/section-sylow-theorems.html#FvE",
       "input": "<math><msup><mi>p</mi><mi>r</mi></msup><mo>∣</mo><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo><mi>C</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo></math>",
       "tex": "p^r \\mid |C(x_i)|",
-      "expected": "⠏⠘⠗⠐⠳⠳⠠⠉⠷⠭⠰⠊⠐⠾⠳",
+      "expected": "⠏⠘⠗⠳⠳⠠⠉⠷⠭⠰⠊⠐⠾⠳",
       "reference": {
         "m-8129": "http://abstract.ups.edu/aata/section-sylow-theorems.html#FvE"
       }
@@ -2346,7 +2346,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-sylow.html#nUQ",
       "input": "<math><msubsup><mi>p</mi><mn>1</mn><mrow><msub><mi>e</mi><mn>1</mn></msub></mrow></msubsup><mo>⋯</mo><msubsup><mi>p</mi><mi>n</mi><mrow><msub><mi>e</mi><mi>n</mi></msub></mrow></msubsup></math>",
       "tex": "p_1^{e_1} \\cdots p_n^{e_n}",
-      "expected": "⠏⠂⠘⠑⠂⠐⠀⠄⠄⠄⠀⠏⠰⠝⠘⠑⠘⠰⠝⠘",
+      "expected": "⠏⠂⠘⠑⠂⠀⠄⠄⠄⠀⠏⠰⠝⠘⠑⠘⠰⠝",
       "reference": {
         "m-8653": "http://abstract.ups.edu/aata/exercises-sylow.html#nUQ"
       }
@@ -2356,7 +2356,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-sylow.html#nUQ",
       "input": "<math><msub><mi>P</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>P</mi><mi>n</mi></msub></math>",
       "tex": "P_1, \\ldots, P_n",
-      "expected": "⠠⠏⠂⠠⠀⠄⠄⠄⠀⠠⠀⠠⠏⠰⠝⠐",
+      "expected": "⠠⠏⠂⠠⠀⠄⠄⠄⠠⠀⠠⠏⠰⠝",
       "reference": {
         "m-8657": "http://abstract.ups.edu/aata/exercises-sylow.html#nUQ"
       }
@@ -2366,7 +2366,7 @@
       "url": "http://abstract.ups.edu/aata/sylow-exercises-project.html#xoC",
       "input": "<math><mi>n</mi><mo>=</mo><mn>1</mn><mo>,</mo><mo>…</mo><mo>,</mo><mn>60</mn></math>",
       "tex": "n = 1, \\ldots, 60",
-      "expected": "⠝⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠀⠠⠀⠼⠖⠴",
+      "expected": "⠝⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠠⠀⠼⠖⠴",
       "reference": {
         "m-8831": "http://abstract.ups.edu/aata/sylow-exercises-project.html#xoC"
       }
@@ -2396,7 +2396,7 @@
       "url": "http://abstract.ups.edu/aata/section-domains-and-fields.html#Ocj",
       "input": "<math><msub><mi>λ</mi><mi>a</mi></msub><mo>:</mo><msup><mi>D</mi><mo>∗</mo></msup><mo stretchy=\"false\">→</mo><msup><mi>D</mi><mo>∗</mo></msup></math>",
       "tex": "\\lambda_a : D^\\ast \\rightarrow D^\\ast",
-      "expected": "⠨⠇⠰⠁⠐⠒⠀⠠⠙⠘⠈⠼⠐⠀⠫⠕⠀⠠⠙⠘⠈⠼",
+      "expected": "⠨⠇⠰⠁⠸⠒⠀⠠⠙⠘⠈⠼⠀⠫⠕⠀⠠⠙⠘⠈⠼",
       "reference": {
         "m-9110": "http://abstract.ups.edu/aata/section-domains-and-fields.html#Ocj"
       }
@@ -2406,7 +2406,7 @@
       "url": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#ajK",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>R</mi><mo stretchy=\"false\">→</mo><mi>S</mi></math>",
       "tex": "\\phi : R \\rightarrow S",
-      "expected": "⠨⠋⠒⠀⠠⠗⠀⠫⠕⠀⠠⠎",
+      "expected": "⠨⠋⠸⠒⠀⠠⠗⠀⠫⠕⠀⠠⠎",
       "reference": {
         "m-9182": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#ajK",
         "m-9184": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#ajK",
@@ -2422,7 +2422,7 @@
       "url": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#zDs",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo stretchy=\"false\">→</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mi>n</mi></msub></math>",
       "tex": "\\phi : {\\mathbb Z} \\rightarrow {\\mathbb Z}_n",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠵⠀⠫⠕⠀⠸⠰⠠⠵⠰⠝⠐",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠵⠀⠫⠕⠀⠈⠰⠠⠵⠰⠝",
       "reference": {
         "m-9189": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#zDs"
       }
@@ -2432,7 +2432,7 @@
       "url": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#fKB",
       "input": "<math><msub><mi>ϕ</mi><mrow><mi>α</mi></mrow></msub><mo>:</mo><mi>C</mi><mo stretchy=\"false\">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow></math>",
       "tex": "\\phi_{\\alpha} : C[a, b] \\rightarrow {\\mathbb R}",
-      "expected": "⠨⠋⠰⠨⠁⠐⠒⠀⠠⠉⠈⠷⠁⠠⠀⠃⠈⠾⠀⠫⠕⠀⠸⠰⠠⠗",
+      "expected": "⠨⠋⠰⠨⠁⠸⠒⠀⠠⠉⠈⠷⠁⠠⠀⠃⠈⠾⠀⠫⠕⠀⠈⠰⠠⠗",
       "reference": {
         "m-9196": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#fKB"
       }
@@ -2442,7 +2442,7 @@
       "url": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#DDr",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>R</mi><mo stretchy=\"false\">→</mo><mi>R</mi><mrow><mo>/</mo></mrow><mi>I</mi></math>",
       "tex": "\\phi : R \\rightarrow R/I",
-      "expected": "⠨⠋⠒⠀⠠⠗⠀⠫⠕⠀⠠⠗⠸⠌⠠⠊",
+      "expected": "⠨⠋⠸⠒⠀⠠⠗⠀⠫⠕⠀⠠⠗⠸⠌⠠⠊",
       "reference": {
         "m-9322": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#DDr",
         "m-9327": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#mET",
@@ -2454,7 +2454,7 @@
       "url": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#jKA",
       "input": "<math><mi>ψ</mi><mo>:</mo><mi>R</mi><mo stretchy=\"false\">→</mo><mi>S</mi></math>",
       "tex": "\\psi : R \\rightarrow S",
-      "expected": "⠨⠓⠒⠀⠠⠗⠀⠫⠕⠀⠠⠎",
+      "expected": "⠨⠽⠸⠒⠀⠠⠗⠀⠫⠕⠀⠠⠎",
       "reference": {
         "m-9333": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#jKA"
       }
@@ -2464,7 +2464,7 @@
       "url": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#jKA",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>R</mi><mo stretchy=\"false\">→</mo><mi>R</mi><mrow><mo>/</mo></mrow><mi>ker</mi><mo data-mjx-texclass=\"NONE\">⁡</mo><mi>ψ</mi></math>",
       "tex": "\\phi : R \\rightarrow R/\\ker \\psi",
-      "expected": "⠨⠋⠒⠀⠠⠗⠀⠫⠕⠀⠠⠗⠸⠌⠅⠑⠗⠀⠨⠓",
+      "expected": "⠨⠋⠸⠒⠀⠠⠗⠀⠫⠕⠀⠠⠗⠸⠌⠅⠑⠗⠀⠨⠽",
       "reference": {
         "m-9336": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#jKA"
       }
@@ -2474,7 +2474,7 @@
       "url": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#jKA",
       "input": "<math><mi>η</mi><mo>:</mo><mi>R</mi><mrow><mo>/</mo></mrow><mi>ker</mi><mo data-mjx-texclass=\"NONE\">⁡</mo><mi>ψ</mi><mo stretchy=\"false\">→</mo><mi>ψ</mi><mo stretchy=\"false\">(</mo><mi>R</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\eta: R/\\ker \\psi \\rightarrow \\psi(R)",
-      "expected": "⠨⠦⠒⠀⠠⠗⠸⠌⠅⠑⠗⠀⠓⠀⠫⠕⠀⠓⠷⠠⠗⠾",
+      "expected": "⠨⠱⠸⠒⠀⠠⠗⠸⠌⠅⠑⠗⠀⠨⠽⠀⠫⠕⠀⠨⠽⠷⠠⠗⠾",
       "reference": {
         "m-9337": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#jKA"
       }
@@ -2484,7 +2484,7 @@
       "url": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#SMc",
       "input": "<math><mi>η</mi><mo>:</mo><mi>R</mi><mrow><mo>/</mo></mrow><mi>K</mi><mo stretchy=\"false\">→</mo><mi>ψ</mi><mo stretchy=\"false\">(</mo><mi>R</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\eta: R/K \\rightarrow \\psi(R)",
-      "expected": "⠨⠦⠒⠀⠠⠗⠸⠌⠠⠅⠀⠫⠕⠀⠓⠷⠠⠗⠾",
+      "expected": "⠨⠱⠸⠒⠀⠠⠗⠸⠌⠠⠅⠀⠫⠕⠀⠨⠽⠷⠠⠗⠾",
       "reference": {
         "m-9340": "http://abstract.ups.edu/aata/section-ring-homomorphisms.html#SMc"
       }
@@ -2494,7 +2494,7 @@
       "url": "http://abstract.ups.edu/aata/section-software-application.html#out",
       "input": "<math><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>n</mi><mi>k</mi></msub></math>",
       "tex": "n_1, n_2, \\ldots,\n          n_k",
-      "expected": "⠝⠂⠠⠀⠝⠆⠠⠀⠄⠄⠄⠀⠠⠀⠝⠰⠅⠐",
+      "expected": "⠝⠂⠠⠀⠝⠆⠠⠀⠄⠄⠄⠠⠀⠝⠰⠅",
       "reference": {
         "m-9520": "http://abstract.ups.edu/aata/section-software-application.html#out"
       }
@@ -2504,7 +2504,7 @@
       "url": "http://abstract.ups.edu/aata/section-software-application.html#out",
       "input": "<math><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>a</mi><mi>k</mi></msub></math>",
       "tex": "a_1, \\ldots, a_k",
-      "expected": "⠁⠂⠠⠀⠄⠄⠄⠀⠠⠀⠁⠰⠅⠐",
+      "expected": "⠁⠂⠠⠀⠄⠄⠄⠠⠀⠁⠰⠅",
       "reference": {
         "m-9523": "http://abstract.ups.edu/aata/section-software-application.html#out",
         "m-14622": "http://abstract.ups.edu/aata/finite-exercises-bch-codes.html#pKD"
@@ -2515,7 +2515,7 @@
       "url": "http://abstract.ups.edu/aata/section-software-application.html#out",
       "input": "<math><msub><mi>n</mi><mn>1</mn></msub><msub><mi>n</mi><mn>2</mn></msub><mo>⋯</mo><msub><mi>n</mi><mi>k</mi></msub></math>",
       "tex": "n_1 n_2 \\cdots n_k",
-      "expected": "⠝⠂⠝⠆⠀⠄⠄⠄⠀⠝⠰⠅⠐",
+      "expected": "⠝⠂⠝⠆⠀⠄⠄⠄⠀⠝⠰⠅",
       "reference": {
         "m-9524": "http://abstract.ups.edu/aata/section-software-application.html#out"
       }
@@ -2525,7 +2525,7 @@
       "url": "http://abstract.ups.edu/aata/section-software-application.html#fau",
       "input": "<math><msub><mi>n</mi><mn>1</mn></msub><mo>⋯</mo><msub><mi>n</mi><mi>k</mi></msub></math>",
       "tex": "n_1 \\cdots n_k",
-      "expected": "⠝⠂⠀⠄⠄⠄⠀⠝⠰⠅⠐",
+      "expected": "⠝⠂⠀⠄⠄⠄⠀⠝⠰⠅",
       "reference": {
         "m-9528": "http://abstract.ups.edu/aata/section-software-application.html#fau",
         "m-9530": "http://abstract.ups.edu/aata/section-software-application.html#fau"
@@ -2536,7 +2536,7 @@
       "url": "http://abstract.ups.edu/aata/section-software-application.html#fau",
       "input": "<math><msub><mi>n</mi><mn>1</mn></msub><mo>…</mo><msub><mi>n</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub></math>",
       "tex": "n_1 \\ldots n_{k+1}",
-      "expected": "⠝⠂⠀⠄⠄⠄⠀⠝⠰⠅⠬⠂⠐",
+      "expected": "⠝⠂⠀⠄⠄⠄⠀⠝⠰⠅⠬⠂",
       "reference": {
         "m-9532": "http://abstract.ups.edu/aata/section-software-application.html#fau"
       }
@@ -2546,7 +2546,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-rings.html#qTA",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mrow><mo>/</mo></mrow><mn>6</mn><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mrow><mo>/</mo></mrow><mn>15</mn><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow></math>",
       "tex": "\\phi : {\\mathbb Z} / 6 {\\mathbb Z} \\rightarrow {\\mathbb Z} / 15 {\\mathbb Z}",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠵⠸⠌⠖⠸⠰⠠⠵⠀⠫⠕⠀⠸⠰⠠⠵⠸⠌⠂⠢⠸⠰⠠⠵",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠵⠸⠌⠖⠈⠰⠠⠵⠀⠫⠕⠀⠈⠰⠠⠵⠸⠌⠂⠢⠈⠰⠠⠵",
       "reference": {
         "m-9597": "http://abstract.ups.edu/aata/exercises-rings.html#qTA"
       }
@@ -2556,7 +2556,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-rings.html#voY",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">C</mi></mrow></mrow><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow></math>",
       "tex": "\\phi: {\\mathbb C} \\rightarrow {\\mathbb R}",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠉⠀⠫⠕⠀⠸⠰⠠⠗",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠉⠀⠫⠕⠀⠈⠰⠠⠗",
       "reference": {
         "m-9600": "http://abstract.ups.edu/aata/exercises-rings.html#voY"
       }
@@ -2566,7 +2566,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-rings.html#bwh",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>2</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>3</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\phi: {\\mathbb Q}(\\sqrt{2}\\, ) \\rightarrow {\\mathbb Q}(\\sqrt{3}\\, )",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠟⠷⠜⠆⠻⠾⠀⠫⠕⠀⠸⠰⠠⠟⠷⠜⠒⠻⠾",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠟⠷⠜⠆⠻⠾⠀⠫⠕⠀⠈⠰⠠⠟⠷⠜⠒⠻⠾",
       "reference": {
         "m-9604": "http://abstract.ups.edu/aata/exercises-rings.html#bwh"
       }
@@ -2576,7 +2576,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-rings.html#Pwk",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">C</mi></mrow></mrow><mo stretchy=\"false\">→</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">M</mi></mrow></mrow><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></mrow><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\phi : {\\mathbb C} \\rightarrow {\\mathbb M}_2 ({\\mathbb R})",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠉⠀⠫⠕⠀⠸⠰⠠⠍⠆⠷⠸⠰⠠⠗⠾",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠉⠀⠫⠕⠀⠈⠰⠠⠍⠆⠷⠈⠰⠠⠗⠾",
       "reference": {
         "m-9607": "http://abstract.ups.edu/aata/exercises-rings.html#Pwk"
       }
@@ -2586,7 +2586,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-rings.html#kBy",
       "input": "<math><msub><mi>i</mi><mi>u</mi></msub><mo>:</mo><mi>R</mi><mo stretchy=\"false\">→</mo><mi>R</mi></math>",
       "tex": "i_u : R \\rightarrow R",
-      "expected": "⠊⠰⠥⠐⠒⠀⠠⠗⠀⠫⠕⠀⠠⠗",
+      "expected": "⠊⠰⠥⠸⠒⠀⠠⠗⠀⠫⠕⠀⠠⠗",
       "reference": {
         "m-9740": "http://abstract.ups.edu/aata/exercises-rings.html#kBy"
       }
@@ -2596,7 +2596,7 @@
       "url": "http://abstract.ups.edu/aata/section-poly-rings.html#NWS",
       "input": "<math><msub><mi>a</mi><mn>0</mn></msub><mo>,</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub></math>",
       "tex": "a_0, a_1, \\ldots,\n      a_n",
-      "expected": "⠁⠴⠠⠀⠁⠂⠠⠀⠄⠄⠄⠀⠠⠀⠁⠰⠝⠐",
+      "expected": "⠁⠴⠠⠀⠁⠂⠠⠀⠄⠄⠄⠠⠀⠁⠰⠝",
       "reference": {
         "m-9845": "http://abstract.ups.edu/aata/section-poly-rings.html#NWS"
       }
@@ -2606,7 +2606,7 @@
       "url": "http://abstract.ups.edu/aata/section-poly-rings.html#LTk",
       "input": "<math><msub><mi>ϕ</mi><mrow><mi>α</mi></mrow></msub><mo>:</mo><mi>R</mi><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">→</mo><mi>R</mi></math>",
       "tex": "\\phi_{\\alpha} : R[x] \\rightarrow R",
-      "expected": "⠨⠋⠰⠨⠁⠐⠒⠀⠠⠗⠈⠷⠭⠈⠾⠀⠫⠕⠀⠠⠗",
+      "expected": "⠨⠋⠰⠨⠁⠸⠒⠀⠠⠗⠈⠷⠭⠈⠾⠀⠫⠕⠀⠠⠗",
       "reference": {
         "m-9928": "http://abstract.ups.edu/aata/section-poly-rings.html#LTk",
         "m-9935": "http://abstract.ups.edu/aata/section-poly-rings.html#Gst"
@@ -2629,7 +2629,7 @@
       "url": "http://abstract.ups.edu/aata/section-irreducible-poly.html#IYE",
       "input": "<math><mi>r</mi><mo>,</mo><mi>s</mi><mo>,</mo><msub><mi>a</mi><mn>0</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub></math>",
       "tex": "r, s, a_0, \\ldots, a_n",
-      "expected": "⠗⠠⠀⠎⠠⠀⠁⠴⠠⠀⠄⠄⠄⠀⠠⠀⠁⠰⠝⠐",
+      "expected": "⠗⠠⠀⠎⠠⠀⠁⠴⠠⠀⠄⠄⠄⠠⠀⠁⠰⠝",
       "reference": {
         "m-10200": "http://abstract.ups.edu/aata/section-irreducible-poly.html#IYE"
       }
@@ -2639,7 +2639,7 @@
       "url": "http://abstract.ups.edu/aata/section-irreducible-poly.html#rji",
       "input": "<math><msub><mi>d</mi><mn>0</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>d</mi><mi>n</mi></msub></math>",
       "tex": "d_0, \\ldots, d_n",
-      "expected": "⠙⠴⠠⠀⠄⠄⠄⠀⠠⠀⠙⠰⠝⠐",
+      "expected": "⠙⠴⠠⠀⠄⠄⠄⠠⠀⠙⠰⠝",
       "reference": {
         "m-10207": "http://abstract.ups.edu/aata/section-irreducible-poly.html#rji",
         "m-10209": "http://abstract.ups.edu/aata/section-irreducible-poly.html#rji"
@@ -2671,7 +2671,7 @@
       "url": "http://abstract.ups.edu/aata/section-irreducible-poly.html#EoL",
       "input": "<math><mi>p</mi><mo>∣</mo><msub><mi>a</mi><mi>i</mi></msub></math>",
       "tex": "p \\mid a_i",
-      "expected": "⠏⠳⠁⠰⠊⠐",
+      "expected": "⠏⠳⠁⠰⠊",
       "reference": {
         "m-10321": "http://abstract.ups.edu/aata/section-irreducible-poly.html#EoL"
       }
@@ -2681,7 +2681,7 @@
       "url": "http://abstract.ups.edu/aata/section-irreducible-poly.html#EoL",
       "input": "<math><mi>i</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mo>…</mo><mo>,</mo><mi>n</mi><mo>−</mo><mn>1</mn></math>",
       "tex": "i = 0, 1, \\ldots,\n            n-1",
-      "expected": "⠊⠀⠨⠅⠀⠼⠴⠠⠀⠼⠂⠠⠀⠄⠄⠄⠀⠠⠀⠝⠤⠂",
+      "expected": "⠊⠀⠨⠅⠀⠼⠴⠠⠀⠼⠂⠠⠀⠄⠄⠄⠠⠀⠝⠤⠂",
       "reference": {
         "m-10322": "http://abstract.ups.edu/aata/section-irreducible-poly.html#EoL",
         "m-13155": "http://abstract.ups.edu/aata/section-extension-fields.html#XXY"
@@ -2742,7 +2742,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-poly.html#chB",
       "input": "<math><mover><mi>ϕ</mi><mo accent=\"false\">¯</mo></mover><mo>:</mo><mi>R</mi><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">→</mo><mi>S</mi><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo></math>",
       "tex": "\\overline{\\phi} : R[x] \\rightarrow S[x]",
-      "expected": "⠐⠨⠋⠣⠱⠻⠒⠀⠠⠗⠈⠷⠭⠈⠾⠀⠫⠕⠀⠠⠎⠈⠷⠭⠈⠾",
+      "expected": "⠨⠋⠱⠸⠒⠀⠠⠗⠈⠷⠭⠈⠾⠀⠫⠕⠀⠠⠎⠈⠷⠭⠈⠾",
       "reference": {
         "m-10556": "http://abstract.ups.edu/aata/exercises-poly.html#chB"
       }
@@ -2762,7 +2762,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-poly.html#CdZ",
       "input": "<math><mi>s</mi><mo>∣</mo><msub><mi>a</mi><mi>n</mi></msub></math>",
       "tex": "s \\mid a_n",
-      "expected": "⠎⠳⠁⠰⠝⠐",
+      "expected": "⠎⠳⠁⠰⠝",
       "reference": {
         "m-10568": "http://abstract.ups.edu/aata/exercises-poly.html#CdZ"
       }
@@ -2772,7 +2772,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-poly.html#Tjo",
       "input": "<math><mi>D</mi><mo>:</mo><mi>F</mi><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">→</mo><mi>F</mi><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo></math>",
       "tex": "D : F[x] \\rightarrow F[x]",
-      "expected": "⠠⠙⠒⠀⠠⠋⠈⠷⠭⠈⠾⠀⠫⠕⠀⠠⠋⠈⠷⠭⠈⠾",
+      "expected": "⠠⠙⠸⠒⠀⠠⠋⠈⠷⠭⠈⠾⠀⠫⠕⠀⠠⠋⠈⠷⠭⠈⠾",
       "reference": {
         "m-10593": "http://abstract.ups.edu/aata/exercises-poly.html#Tjo"
       }
@@ -2792,7 +2792,7 @@
       "url": "http://abstract.ups.edu/aata/section-field-of-fractions.html#GXJ",
       "input": "<math><mi>ψ</mi><mo>:</mo><msub><mi>F</mi><mi>D</mi></msub><mo stretchy=\"false\">→</mo><mi>E</mi></math>",
       "tex": "\\psi : F_D \\rightarrow E",
-      "expected": "⠨⠓⠒⠀⠠⠋⠰⠠⠙⠐⠀⠫⠕⠀⠠⠑",
+      "expected": "⠨⠽⠸⠒⠀⠠⠋⠰⠠⠙⠀⠫⠕⠀⠠⠑",
       "reference": {
         "m-10771": "http://abstract.ups.edu/aata/section-field-of-fractions.html#GXJ",
         "m-10793": "http://abstract.ups.edu/aata/section-field-of-fractions.html#hip"
@@ -2803,7 +2803,7 @@
       "url": "http://abstract.ups.edu/aata/section-field-of-fractions.html#hip",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>D</mi><mo stretchy=\"false\">→</mo><msub><mi>F</mi><mi>D</mi></msub></math>",
       "tex": "\\phi : D \\rightarrow F_D",
-      "expected": "⠨⠋⠒⠀⠠⠙⠀⠫⠕⠀⠠⠋⠰⠠⠙⠐",
+      "expected": "⠨⠋⠸⠒⠀⠠⠙⠀⠫⠕⠀⠠⠋⠰⠠⠙",
       "reference": {
         "m-10779": "http://abstract.ups.edu/aata/section-field-of-fractions.html#hip"
       }
@@ -2813,7 +2813,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#syF",
       "input": "<math><msub><mi>p</mi><mn>1</mn></msub><mo>⋯</mo><msub><mi>p</mi><mi>k</mi></msub></math>",
       "tex": "p_1 \\cdots p_k",
-      "expected": "⠏⠂⠀⠄⠄⠄⠀⠏⠰⠅⠐",
+      "expected": "⠏⠂⠀⠄⠄⠄⠀⠏⠰⠅",
       "reference": {
         "m-10867": "http://abstract.ups.edu/aata/section-factorization-domains.html#syF"
       }
@@ -2823,7 +2823,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#MyA",
       "input": "<math><mi>a</mi><mo>=</mo><msub><mi>p</mi><mn>1</mn></msub><mo>⋯</mo><msub><mi>p</mi><mi>r</mi></msub><mo>=</mo><msub><mi>q</mi><mn>1</mn></msub><mo>⋯</mo><msub><mi>q</mi><mi>s</mi></msub></math>",
       "tex": "a = p_1 \\cdots p_r = q_1 \\cdots q_s",
-      "expected": "⠁⠀⠨⠅⠀⠏⠂⠀⠄⠄⠄⠀⠏⠰⠗⠐⠀⠨⠅⠀⠟⠂⠀⠄⠄⠄⠀⠟⠰⠎⠐",
+      "expected": "⠁⠀⠨⠅⠀⠏⠂⠀⠄⠄⠄⠀⠏⠰⠗⠀⠨⠅⠀⠟⠂⠀⠄⠄⠄⠀⠟⠰⠎",
       "reference": {
         "m-10877": "http://abstract.ups.edu/aata/section-factorization-domains.html#MyA"
       }
@@ -2833,7 +2833,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#MyA",
       "input": "<math><mi>j</mi><mo>=</mo><mn>1</mn><mo>,</mo><mo>…</mo><mo>,</mo><mi>r</mi></math>",
       "tex": "j = 1, \\ldots, r",
-      "expected": "⠚⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠀⠠⠀⠗",
+      "expected": "⠚⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠠⠀⠗",
       "reference": {
         "m-10884": "http://abstract.ups.edu/aata/section-factorization-domains.html#MyA"
       }
@@ -2843,7 +2843,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#KCj",
       "input": "<math><mi>ν</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo stretchy=\"false\">[</mo><msqrt><mn>3</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mi>i</mi><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">N</mi></mrow></mrow><mo>∪</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mn>0</mn><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "\\nu : {\\mathbb Z}[ \\sqrt{3}\\, i ] \\rightarrow {\\mathbb N} \\cup \\{ 0 \\}",
-      "expected": "⠨⠝⠒⠀⠸⠰⠠⠵⠈⠷⠜⠒⠻⠊⠈⠾⠀⠫⠕⠀⠸⠰⠠⠝⠨⠬⠨⠷⠴⠨⠾",
+      "expected": "⠨⠝⠸⠒⠀⠈⠰⠠⠵⠈⠷⠜⠒⠻⠊⠈⠾⠀⠫⠕⠀⠈⠰⠠⠝⠨⠬⠨⠷⠴⠨⠾",
       "reference": {
         "m-10887": "http://abstract.ups.edu/aata/section-factorization-domains.html#KCj"
       }
@@ -2894,7 +2894,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#twH",
       "input": "<math><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>p</mi><mi>r</mi></msub></math>",
       "tex": "p_1, \\ldots, p_r",
-      "expected": "⠏⠂⠠⠀⠄⠄⠄⠀⠠⠀⠏⠰⠗⠐",
+      "expected": "⠏⠂⠠⠀⠄⠄⠄⠠⠀⠏⠰⠗",
       "reference": {
         "m-11078": "http://abstract.ups.edu/aata/section-factorization-domains.html#twH"
       }
@@ -2904,7 +2904,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#twH",
       "input": "<math><msub><mi>q</mi><mn>1</mn></msub><msub><mi>q</mi><mn>2</mn></msub><mo>⋯</mo><msub><mi>q</mi><mi>s</mi></msub></math>",
       "tex": "q_1 q_2 \\cdots q_s",
-      "expected": "⠟⠂⠟⠆⠀⠄⠄⠄⠀⠟⠰⠎⠐",
+      "expected": "⠟⠂⠟⠆⠀⠄⠄⠄⠀⠟⠰⠎",
       "reference": {
         "m-11083": "http://abstract.ups.edu/aata/section-factorization-domains.html#twH"
       }
@@ -2924,7 +2924,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#twH",
       "input": "<math><msub><mi>p</mi><mn>2</mn></msub><mo>=</mo><msub><mi>q</mi><mn>2</mn></msub><mo>,</mo><msub><mi>p</mi><mn>3</mn></msub><mo>=</mo><msub><mi>q</mi><mn>3</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>p</mi><mi>r</mi></msub><mo>=</mo><msub><mi>q</mi><mi>r</mi></msub></math>",
       "tex": "p_2 = q_2, p_3 = q_3, \\ldots,\n            p_r = q_r",
-      "expected": "⠏⠆⠀⠨⠅⠀⠟⠆⠠⠀⠏⠒⠀⠨⠅⠀⠟⠒⠠⠀⠄⠄⠄⠀⠠⠀⠏⠰⠗⠐⠀⠨⠅⠀⠟⠰⠗⠐",
+      "expected": "⠏⠆⠀⠨⠅⠀⠟⠆⠠⠀⠏⠒⠀⠨⠅⠀⠟⠒⠠⠀⠄⠄⠄⠠⠀⠏⠰⠗⠀⠨⠅⠀⠟⠰⠗",
       "reference": {
         "m-11091": "http://abstract.ups.edu/aata/section-factorization-domains.html#twH"
       }
@@ -2934,7 +2934,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#twH",
       "input": "<math><msub><mi>q</mi><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⋯</mo><msub><mi>q</mi><mi>s</mi></msub></math>",
       "tex": "q_{r + 1} \\cdots q_s",
-      "expected": "⠟⠰⠗⠬⠂⠐⠀⠄⠄⠄⠀⠟⠰⠎⠐",
+      "expected": "⠟⠰⠗⠬⠂⠀⠄⠄⠄⠀⠟⠰⠎",
       "reference": {
         "m-11092": "http://abstract.ups.edu/aata/section-factorization-domains.html#twH"
       }
@@ -2944,7 +2944,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#twH",
       "input": "<math><msub><mi>q</mi><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>q</mi><mi>s</mi></msub></math>",
       "tex": "q_{r + 1}, \\ldots, q_s",
-      "expected": "⠟⠰⠗⠬⠂⠐⠠⠀⠄⠄⠄⠀⠠⠀⠟⠰⠎⠐",
+      "expected": "⠟⠰⠗⠬⠂⠠⠀⠄⠄⠄⠠⠀⠟⠰⠎",
       "reference": {
         "m-11093": "http://abstract.ups.edu/aata/section-factorization-domains.html#twH"
       }
@@ -2954,7 +2954,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#wdf",
       "input": "<math><mi>ν</mi><mo>:</mo><mi>D</mi><mo>∖</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mn>0</mn><mo fence=\"false\" stretchy=\"false\">}</mo><mo accent=\"false\" stretchy=\"false\">→</mo><mrow><mi mathvariant=\"double-struck\">N</mi></mrow></math>",
       "tex": "\\nu : D \\setminus \\{0\\} \\to \\mathbb N",
-      "expected": "⠨⠝⠒⠀⠠⠙⠸⠡⠨⠷⠴⠨⠾⠀⠫⠕⠀⠸⠰⠠⠝",
+      "expected": "⠨⠝⠸⠒⠀⠠⠙⠸⠡⠨⠷⠴⠨⠾⠀⠫⠕⠀⠈⠰⠠⠝",
       "reference": {
         "m-11122": "http://abstract.ups.edu/aata/section-factorization-domains.html#wdf"
       }
@@ -2964,7 +2964,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#Irx",
       "input": "<math><msub><mi>a</mi><mn>0</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub></math>",
       "tex": "a_0, \\ldots, a_n",
-      "expected": "⠁⠴⠠⠀⠄⠄⠄⠀⠠⠀⠁⠰⠝⠐",
+      "expected": "⠁⠴⠠⠀⠄⠄⠄⠠⠀⠁⠰⠝",
       "reference": {
         "m-11209": "http://abstract.ups.edu/aata/section-factorization-domains.html#Irx"
       }
@@ -2974,7 +2974,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#FKZ",
       "input": "<math><msub><mi>a</mi><mn>0</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>a</mi><mrow><mi>r</mi><mo>−</mo><mn>1</mn></mrow></msub></math>",
       "tex": "a_0, \\ldots,\n            a_{r-1}",
-      "expected": "⠁⠴⠠⠀⠄⠄⠄⠀⠠⠀⠁⠰⠗⠤⠂⠐",
+      "expected": "⠁⠴⠠⠀⠄⠄⠄⠠⠀⠁⠰⠗⠤⠂",
       "reference": {
         "m-11234": "http://abstract.ups.edu/aata/section-factorization-domains.html#FKZ"
       }
@@ -2984,7 +2984,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#FKZ",
       "input": "<math><msub><mi>b</mi><mn>0</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>b</mi><mrow><mi>s</mi><mo>−</mo><mn>1</mn></mrow></msub></math>",
       "tex": "b_0, \\ldots, b_{s-1}",
-      "expected": "⠃⠴⠠⠀⠄⠄⠄⠀⠠⠀⠃⠰⠎⠤⠂⠐",
+      "expected": "⠃⠴⠠⠀⠄⠄⠄⠠⠀⠃⠰⠎⠤⠂",
       "reference": {
         "m-11235": "http://abstract.ups.edu/aata/section-factorization-domains.html#FKZ"
       }
@@ -2994,7 +2994,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#FKZ",
       "input": "<math><mi>p</mi><mo>∣</mo><msub><mi>c</mi><mrow><mi>r</mi><mo>+</mo><mi>s</mi></mrow></msub></math>",
       "tex": "p \\mid c_{r+s}",
-      "expected": "⠏⠳⠉⠰⠗⠬⠎⠐",
+      "expected": "⠏⠳⠉⠰⠗⠬⠎",
       "reference": {
         "m-11239": "http://abstract.ups.edu/aata/section-factorization-domains.html#FKZ"
       }
@@ -3034,7 +3034,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#lSi",
       "input": "<math><mi>b</mi><mo>=</mo><msub><mi>b</mi><mn>1</mn></msub><mo>⋯</mo><msub><mi>b</mi><mi>n</mi></msub></math>",
       "tex": "b = b_1 \\cdots b_n",
-      "expected": "⠃⠀⠨⠅⠀⠃⠂⠀⠄⠄⠄⠀⠃⠰⠝⠐",
+      "expected": "⠃⠀⠨⠅⠀⠃⠂⠀⠄⠄⠄⠀⠃⠰⠝",
       "reference": {
         "m-11335": "http://abstract.ups.edu/aata/section-factorization-domains.html#lSi"
       }
@@ -3054,7 +3054,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#lSi",
       "input": "<math><msub><mi>a</mi><mn>1</mn></msub><mo>⋯</mo><msub><mi>a</mi><mi>n</mi></msub></math>",
       "tex": "a_1 \\cdots a_n",
-      "expected": "⠁⠂⠀⠄⠄⠄⠀⠁⠰⠝⠐",
+      "expected": "⠁⠂⠀⠄⠄⠄⠀⠁⠰⠝",
       "reference": {
         "m-11337": "http://abstract.ups.edu/aata/section-factorization-domains.html#lSi"
       }
@@ -3074,7 +3074,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#lSi",
       "input": "<math><mi>u</mi><msub><mi>c</mi><mn>1</mn></msub><mo>⋯</mo><msub><mi>c</mi><mi>k</mi></msub></math>",
       "tex": "u c_1 \\cdots c_k",
-      "expected": "⠥⠉⠂⠀⠄⠄⠄⠀⠉⠰⠅⠐",
+      "expected": "⠥⠉⠂⠀⠄⠄⠄⠀⠉⠰⠅",
       "reference": {
         "m-11343": "http://abstract.ups.edu/aata/section-factorization-domains.html#lSi"
       }
@@ -3084,7 +3084,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#lSi",
       "input": "<math><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>c</mi><mi>n</mi></msub></math>",
       "tex": "c_1, \\ldots,\n            c_n",
-      "expected": "⠉⠂⠠⠀⠄⠄⠄⠀⠠⠀⠉⠰⠝⠐",
+      "expected": "⠉⠂⠠⠀⠄⠄⠄⠠⠀⠉⠰⠝",
       "reference": {
         "m-11361": "http://abstract.ups.edu/aata/section-factorization-domains.html#lSi"
       }
@@ -3094,7 +3094,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#lSi",
       "input": "<math><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>d</mi><mi>n</mi></msub></math>",
       "tex": "d_1, \\ldots,\n            d_n",
-      "expected": "⠙⠂⠠⠀⠄⠄⠄⠀⠠⠀⠙⠰⠝⠐",
+      "expected": "⠙⠂⠠⠀⠄⠄⠄⠠⠀⠙⠰⠝",
       "reference": {
         "m-11362": "http://abstract.ups.edu/aata/section-factorization-domains.html#lSi"
       }
@@ -3104,7 +3104,7 @@
       "url": "http://abstract.ups.edu/aata/section-factorization-domains.html#lSi",
       "input": "<math><msub><mi>a</mi><mn>1</mn></msub><mo>⋯</mo><msub><mi>a</mi><mi>m</mi></msub><mo>=</mo><mi>u</mi><msub><mi>b</mi><mn>1</mn></msub><mo>⋯</mo><msub><mi>b</mi><mi>r</mi></msub></math>",
       "tex": "a_1 \\cdots a_m = u b_1 \\cdots b_r",
-      "expected": "⠁⠂⠀⠄⠄⠄⠀⠁⠰⠍⠐⠀⠨⠅⠀⠥⠃⠂⠀⠄⠄⠄⠀⠃⠰⠗⠐",
+      "expected": "⠁⠂⠀⠄⠄⠄⠀⠁⠰⠍⠀⠨⠅⠀⠥⠃⠂⠀⠄⠄⠄⠀⠃⠰⠗",
       "reference": {
         "m-11371": "http://abstract.ups.edu/aata/section-factorization-domains.html#lSi"
       }
@@ -3124,7 +3124,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-domains.html#Lth",
       "input": "<math><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub></math>",
       "tex": "x_1, \\ldots, x_n",
-      "expected": "⠭⠂⠠⠀⠄⠄⠄⠀⠠⠀⠭⠰⠝⠐",
+      "expected": "⠭⠂⠠⠀⠄⠄⠄⠠⠀⠭⠰⠝",
       "reference": {
         "m-11437": "http://abstract.ups.edu/aata/exercises-domains.html#Lth",
         "m-12304": "http://abstract.ups.edu/aata/boolean-exercises-programming.html#vEg"
@@ -3135,7 +3135,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-domains.html#Lmd",
       "input": "<math><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub></math>",
       "tex": "a_1, \\ldots,\n          a_n",
-      "expected": "⠁⠂⠠⠀⠄⠄⠄⠀⠠⠀⠁⠰⠝⠐",
+      "expected": "⠁⠂⠠⠀⠄⠄⠄⠠⠀⠁⠰⠝",
       "reference": {
         "m-11525": "http://abstract.ups.edu/aata/exercises-domains.html#Lmd",
         "m-12059": "http://abstract.ups.edu/aata/section-boolean-algebras.html#cgO"
@@ -3146,7 +3146,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-domains.html#xZw",
       "input": "<math><mi>ψ</mi><mo>:</mo><mi>R</mi><mo stretchy=\"false\">→</mo><msup><mi>S</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>R</mi></math>",
       "tex": "\\psi : R \\rightarrow S^{-1}R",
-      "expected": "⠨⠓⠒⠀⠠⠗⠀⠫⠕⠀⠠⠎⠘⠤⠼⠂⠐⠠⠗",
+      "expected": "⠨⠽⠸⠒⠀⠠⠗⠀⠫⠕⠀⠠⠎⠘⠤⠂⠐⠠⠗",
       "reference": {
         "m-11562": "http://abstract.ups.edu/aata/exercises-domains.html#xZw"
       }
@@ -3211,7 +3211,7 @@
       "url": "http://abstract.ups.edu/aata/section-boolean-algebras.html#Cdm",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>B</mi><mo stretchy=\"false\">→</mo><mi>C</mi></math>",
       "tex": "\\phi : B \\rightarrow C",
-      "expected": "⠨⠋⠒⠀⠠⠃⠀⠫⠕⠀⠠⠉",
+      "expected": "⠨⠋⠸⠒⠀⠠⠃⠀⠫⠕⠀⠠⠉",
       "reference": {
         "m-11971": "http://abstract.ups.edu/aata/section-boolean-algebras.html#Cdm"
       }
@@ -3221,7 +3221,7 @@
       "url": "http://abstract.ups.edu/aata/section-boolean-algebras.html#cgO",
       "input": "<math><mi>a</mi><mo>,</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub></math>",
       "tex": "a, a_1, \\ldots,\n            a_n",
-      "expected": "⠁⠠⠀⠁⠂⠠⠀⠄⠄⠄⠀⠠⠀⠁⠰⠝⠐",
+      "expected": "⠁⠠⠀⠁⠂⠠⠀⠄⠄⠄⠠⠀⠁⠰⠝",
       "reference": {
         "m-12063": "http://abstract.ups.edu/aata/section-boolean-algebras.html#cgO"
       }
@@ -3231,7 +3231,7 @@
       "url": "http://abstract.ups.edu/aata/section-boolean-algebras.html#ltj",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>B</mi><mo stretchy=\"false\">→</mo><mrow><mrow><mi data-mjx-variant=\"-tex-calligraphic\" mathvariant=\"script\">P</mi></mrow></mrow><mo stretchy=\"false\">(</mo><mi>X</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\phi : B \\rightarrow {\\mathcal P}(X)",
-      "expected": "⠨⠋⠒⠀⠠⠃⠀⠫⠕⠀⠈⠰⠠⠏⠷⠠⠭⠾",
+      "expected": "⠨⠋⠸⠒⠀⠠⠃⠀⠫⠕⠀⠈⠰⠠⠏⠷⠠⠭⠾",
       "reference": {
         "m-12106": "http://abstract.ups.edu/aata/section-boolean-algebras.html#ltj"
       }
@@ -3251,7 +3251,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-boolean.html#Xbw",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>X</mi><mo stretchy=\"false\">→</mo><mi>Y</mi></math>",
       "tex": "\\phi : X \\rightarrow Y",
-      "expected": "⠨⠋⠒⠀⠠⠭⠀⠫⠕⠀⠠⠽",
+      "expected": "⠨⠋⠸⠒⠀⠠⠭⠀⠫⠕⠀⠠⠽",
       "reference": {
         "m-12274": "http://abstract.ups.edu/aata/exercises-boolean.html#Xbw"
       }
@@ -3261,7 +3261,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-boolean.html#Xbw",
       "input": "<math><mi>ψ</mi><mo>:</mo><mi>L</mi><mo stretchy=\"false\">→</mo><mi>M</mi></math>",
       "tex": "\\psi: L \\rightarrow M",
-      "expected": "⠨⠓⠒⠀⠠⠇⠀⠫⠕⠀⠠⠍",
+      "expected": "⠨⠽⠸⠒⠀⠠⠇⠀⠫⠕⠀⠠⠍",
       "reference": {
         "m-12279": "http://abstract.ups.edu/aata/exercises-boolean.html#Xbw"
       }
@@ -3271,7 +3271,7 @@
       "url": "http://abstract.ups.edu/aata/boolean-exercises-programming.html#vEg",
       "input": "<math><mi>f</mi><mo>:</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mi>O</mi><mo>,</mo><mi>I</mi><msup><mo fence=\"false\" stretchy=\"false\">}</mo><mi>n</mi></msup><mo stretchy=\"false\">→</mo><mo fence=\"false\" stretchy=\"false\">{</mo><mn>0</mn><mo>,</mo><mi>I</mi><mo fence=\"false\" stretchy=\"false\">}</mo></math>",
       "tex": "f : \\{O, I\\}^n \\rightarrow \\{ 0, I\\}",
-      "expected": "⠋⠒⠀⠨⠷⠠⠕⠠⠀⠠⠊⠨⠾⠘⠝⠐⠀⠫⠕⠀⠨⠷⠼⠴⠠⠀⠠⠊⠨⠾",
+      "expected": "⠋⠸⠒⠀⠨⠷⠠⠕⠠⠀⠠⠊⠨⠾⠘⠝⠀⠫⠕⠀⠨⠷⠴⠠⠀⠠⠊⠨⠾",
       "reference": {
         "m-12303": "http://abstract.ups.edu/aata/boolean-exercises-programming.html#vEg"
       }
@@ -3281,7 +3281,7 @@
       "url": "http://abstract.ups.edu/aata/section-subspaces.html#tDL",
       "input": "<math><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><msub><mi>v</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>v</mi><mi>n</mi></msub></math>",
       "tex": "v_1, v_2, \\ldots,\n      v_n",
-      "expected": "⠧⠂⠠⠀⠧⠆⠠⠀⠄⠄⠄⠀⠠⠀⠧⠰⠝⠐",
+      "expected": "⠧⠂⠠⠀⠧⠆⠠⠀⠄⠄⠄⠠⠀⠧⠰⠝",
       "reference": {
         "m-12464": "http://abstract.ups.edu/aata/section-subspaces.html#tDL",
         "m-12470": "http://abstract.ups.edu/aata/section-subspaces.html#tDL",
@@ -3297,7 +3297,7 @@
       "url": "http://abstract.ups.edu/aata/section-subspaces.html#tDL",
       "input": "<math><msub><mi>α</mi><mn>1</mn></msub><mo>,</mo><msub><mi>α</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>α</mi><mi>n</mi></msub></math>",
       "tex": "\\alpha_1, \\alpha_2, \\ldots, \\alpha_n",
-      "expected": "⠨⠁⠂⠠⠀⠨⠁⠆⠠⠀⠄⠄⠄⠀⠠⠀⠨⠁⠰⠝⠐",
+      "expected": "⠨⠁⠂⠠⠀⠨⠁⠆⠠⠀⠄⠄⠄⠠⠀⠨⠁⠰⠝",
       "reference": {
         "m-12466": "http://abstract.ups.edu/aata/section-subspaces.html#tDL"
       }
@@ -3307,7 +3307,7 @@
       "url": "http://abstract.ups.edu/aata/section-linear-independence.html#THn",
       "input": "<math><msub><mi>α</mi><mn>1</mn></msub><mo>=</mo><msub><mi>β</mi><mn>1</mn></msub><mo>,</mo><msub><mi>α</mi><mn>2</mn></msub><mo>=</mo><msub><mi>β</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>α</mi><mi>n</mi></msub><mo>=</mo><msub><mi>β</mi><mi>n</mi></msub></math>",
       "tex": "\\alpha_1 = \\beta_1, \\alpha_2 = \\beta_2, \\ldots, \\alpha_n = \\beta_n",
-      "expected": "⠨⠁⠂⠀⠨⠅⠀⠨⠃⠂⠠⠀⠨⠁⠆⠀⠨⠅⠀⠨⠃⠆⠠⠀⠄⠄⠄⠀⠠⠀⠨⠁⠰⠝⠐⠀⠨⠅⠀⠨⠃⠰⠝⠐",
+      "expected": "⠨⠁⠂⠀⠨⠅⠀⠨⠃⠂⠠⠀⠨⠁⠆⠀⠨⠅⠀⠨⠃⠆⠠⠀⠄⠄⠄⠠⠀⠨⠁⠰⠝⠀⠨⠅⠀⠨⠃⠰⠝",
       "reference": {
         "m-12497": "http://abstract.ups.edu/aata/section-linear-independence.html#THn"
       }
@@ -3317,7 +3317,7 @@
       "url": "http://abstract.ups.edu/aata/section-linear-independence.html#kyh",
       "input": "<math><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>v</mi><mi>n</mi></msub></math>",
       "tex": "v_1, \\ldots, v_n",
-      "expected": "⠧⠂⠠⠀⠄⠄⠄⠀⠠⠀⠧⠰⠝⠐",
+      "expected": "⠧⠂⠠⠀⠄⠄⠄⠠⠀⠧⠰⠝",
       "reference": {
         "m-12498": "http://abstract.ups.edu/aata/section-linear-independence.html#kyh",
         "m-12761": "http://abstract.ups.edu/aata/exercises-vect.html#FZh",
@@ -3329,7 +3329,7 @@
       "url": "http://abstract.ups.edu/aata/section-linear-independence.html#QFq",
       "input": "<math><msub><mi>α</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>α</mi><mi>n</mi></msub></math>",
       "tex": "\\alpha_1, \\ldots, \\alpha_n",
-      "expected": "⠨⠁⠂⠠⠀⠄⠄⠄⠀⠠⠀⠨⠁⠰⠝⠐",
+      "expected": "⠨⠁⠂⠠⠀⠄⠄⠄⠠⠀⠨⠁⠰⠝",
       "reference": {
         "m-12505": "http://abstract.ups.edu/aata/section-linear-independence.html#QFq",
         "m-12992": "http://abstract.ups.edu/aata/section-extension-fields.html#lrW",
@@ -3358,7 +3358,7 @@
       "url": "http://abstract.ups.edu/aata/section-linear-independence.html#Fpn",
       "input": "<math><msub><mi>v</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>v</mi><mi>n</mi></msub></math>",
       "tex": "v_{k + 1}, \\ldots, v_n",
-      "expected": "⠧⠰⠅⠬⠂⠐⠠⠀⠄⠄⠄⠀⠠⠀⠧⠰⠝⠐",
+      "expected": "⠧⠰⠅⠬⠂⠠⠀⠄⠄⠄⠠⠀⠧⠰⠝",
       "reference": {
         "m-12565": "http://abstract.ups.edu/aata/section-linear-independence.html#Fpn",
         "m-12642": "http://abstract.ups.edu/aata/exercises-vect.html#uQi"
@@ -3369,7 +3369,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-vect.html#PHo",
       "input": "<math><mi>T</mi><mo>:</mo><mi>V</mi><mo stretchy=\"false\">→</mo><mi>W</mi></math>",
       "tex": "T: V \\rightarrow W",
-      "expected": "⠠⠞⠒⠀⠠⠧⠀⠫⠕⠀⠠⠺",
+      "expected": "⠠⠞⠸⠒⠀⠠⠧⠀⠫⠕⠀⠠⠺",
       "reference": {
         "m-12661": "http://abstract.ups.edu/aata/exercises-vect.html#PHo",
         "m-12675": "http://abstract.ups.edu/aata/exercises-vect.html#fHk",
@@ -3382,7 +3382,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-vect.html#FZh",
       "input": "<math><msub><mi>ϕ</mi><mi>i</mi></msub><mo>:</mo><mi>V</mi><mo stretchy=\"false\">→</mo><mi>F</mi></math>",
       "tex": "\\phi_i : V \\rightarrow F",
-      "expected": "⠨⠋⠰⠊⠐⠒⠀⠠⠧⠀⠫⠕⠀⠠⠋",
+      "expected": "⠨⠋⠰⠊⠸⠒⠀⠠⠧⠀⠫⠕⠀⠠⠋",
       "reference": {
         "m-12765": "http://abstract.ups.edu/aata/exercises-vect.html#FZh"
       }
@@ -3402,7 +3402,7 @@
       "url": "http://abstract.ups.edu/aata/section-extension-fields.html#fCx",
       "input": "<math><mi>ψ</mi><mo>:</mo><mi>F</mi><mo stretchy=\"false\">→</mo><mi>F</mi><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mrow><mo>/</mo></mrow><mo fence=\"false\" stretchy=\"false\">⟨</mo><mi>p</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo fence=\"false\" stretchy=\"false\">⟩</mo></math>",
       "tex": "\\psi:F \\rightarrow F[x]/\\langle p(x) \\rangle",
-      "expected": "⠨⠓⠒⠀⠠⠋⠀⠫⠕⠀⠠⠋⠈⠷⠭⠈⠾⠸⠌⠨⠨⠷⠏⠷⠭⠾⠨⠨⠾",
+      "expected": "⠨⠽⠸⠒⠀⠠⠋⠀⠫⠕⠀⠠⠋⠈⠷⠭⠈⠾⠸⠌⠨⠨⠷⠏⠷⠭⠾⠨⠨⠾",
       "reference": {
         "m-12936": "http://abstract.ups.edu/aata/section-extension-fields.html#fCx"
       }
@@ -3412,7 +3412,7 @@
       "url": "http://abstract.ups.edu/aata/section-extension-fields.html#LJG",
       "input": "<math><msub><mi>ϕ</mi><mrow><mi>α</mi></mrow></msub><mo>:</mo><mi>F</mi><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">→</mo><mi>E</mi></math>",
       "tex": "\\phi_{\\alpha} : F[x] \\rightarrow E",
-      "expected": "⠨⠋⠰⠨⠁⠐⠒⠀⠠⠋⠈⠷⠭⠈⠾⠀⠫⠕⠀⠠⠑",
+      "expected": "⠨⠋⠰⠨⠁⠸⠒⠀⠠⠋⠈⠷⠭⠈⠾⠀⠫⠕⠀⠠⠑",
       "reference": {
         "m-13040": "http://abstract.ups.edu/aata/section-extension-fields.html#LJG",
         "m-13065": "http://abstract.ups.edu/aata/section-extension-fields.html#rQP",
@@ -3424,7 +3424,7 @@
       "url": "http://abstract.ups.edu/aata/section-splitting-fields.html#IPa",
       "input": "<math><msub><mi>α</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>α</mi><mi>n</mi></msub></math>",
       "tex": "\\alpha_2, \\ldots, \\alpha_n",
-      "expected": "⠨⠁⠆⠠⠀⠄⠄⠄⠀⠠⠀⠨⠁⠰⠝⠐",
+      "expected": "⠨⠁⠆⠠⠀⠄⠄⠄⠠⠀⠨⠁⠰⠝",
       "reference": {
         "m-13456": "http://abstract.ups.edu/aata/section-splitting-fields.html#IPa"
       }
@@ -3434,7 +3434,7 @@
       "url": "http://abstract.ups.edu/aata/section-splitting-fields.html#Jzh",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>K</mi><mo stretchy=\"false\">→</mo><mi>L</mi></math>",
       "tex": "\\phi : K \\rightarrow L",
-      "expected": "⠨⠋⠒⠀⠠⠅⠀⠫⠕⠀⠠⠇",
+      "expected": "⠨⠋⠸⠒⠀⠠⠅⠀⠫⠕⠀⠠⠇",
       "reference": {
         "m-13462": "http://abstract.ups.edu/aata/section-splitting-fields.html#Jzh"
       }
@@ -3444,7 +3444,7 @@
       "url": "http://abstract.ups.edu/aata/section-splitting-fields.html#fop",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>E</mi><mo stretchy=\"false\">→</mo><mi>F</mi></math>",
       "tex": "\\phi : E \\rightarrow F",
-      "expected": "⠨⠋⠒⠀⠠⠑⠀⠫⠕⠀⠠⠋",
+      "expected": "⠨⠋⠸⠒⠀⠠⠑⠀⠫⠕⠀⠠⠋",
       "reference": {
         "m-13464": "http://abstract.ups.edu/aata/section-splitting-fields.html#fop",
         "m-13493": "http://abstract.ups.edu/aata/section-splitting-fields.html#NyT",
@@ -3456,7 +3456,7 @@
       "url": "http://abstract.ups.edu/aata/section-splitting-fields.html#fop",
       "input": "<math><mover><mi>ϕ</mi><mo accent=\"false\">¯</mo></mover><mo>:</mo><mi>E</mi><mo stretchy=\"false\">(</mo><mi>α</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">→</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>β</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\overline{\\phi} : E( \\alpha ) \\rightarrow F( \\beta )",
-      "expected": "⠐⠨⠋⠣⠱⠻⠒⠀⠠⠑⠷⠨⠁⠾⠀⠫⠕⠀⠠⠋⠷⠨⠃⠾",
+      "expected": "⠨⠋⠱⠸⠒⠀⠠⠑⠷⠨⠁⠾⠀⠫⠕⠀⠠⠋⠷⠨⠃⠾",
       "reference": {
         "m-13477": "http://abstract.ups.edu/aata/section-splitting-fields.html#fop",
         "m-13534": "http://abstract.ups.edu/aata/section-splitting-fields.html#oWj"
@@ -3467,7 +3467,7 @@
       "url": "http://abstract.ups.edu/aata/section-splitting-fields.html#NyT",
       "input": "<math><mn>1</mn><mo>,</mo><mi>α</mi><mo>,</mo><mo>…</mo><mo>,</mo><msup><mi>α</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></math>",
       "tex": "1, \\alpha, \\ldots, \\alpha^{n - 1}",
-      "expected": "⠼⠂⠠⠀⠨⠁⠠⠀⠄⠄⠄⠀⠠⠀⠨⠁⠘⠝⠤⠂",
+      "expected": "⠼⠂⠠⠀⠨⠁⠠⠀⠄⠄⠄⠠⠀⠨⠁⠘⠝⠤⠂",
       "reference": {
         "m-13485": "http://abstract.ups.edu/aata/section-splitting-fields.html#NyT"
       }
@@ -3477,7 +3477,7 @@
       "url": "http://abstract.ups.edu/aata/section-splitting-fields.html#NyT",
       "input": "<math><mi>ψ</mi><mo>:</mo><mi>E</mi><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mrow><mo>/</mo></mrow><mo fence=\"false\" stretchy=\"false\">⟨</mo><mi>p</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo fence=\"false\" stretchy=\"false\">⟩</mo><mo stretchy=\"false\">→</mo><mi>F</mi><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mrow><mo>/</mo></mrow><mo fence=\"false\" stretchy=\"false\">⟨</mo><mi>q</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo fence=\"false\" stretchy=\"false\">⟩</mo></math>",
       "tex": "\\psi : E[x] / \\langle p(x) \\rangle \\rightarrow F[x]/\\langle q(x) \\rangle",
-      "expected": "⠨⠓⠒⠀⠠⠑⠈⠷⠭⠈⠾⠸⠌⠨⠨⠷⠏⠷⠭⠾⠨⠨⠾⠀⠫⠕⠀⠠⠋⠈⠷⠭⠈⠾⠸⠌⠨⠨⠷⠟⠷⠭⠾⠨⠨⠾",
+      "expected": "⠨⠽⠸⠒⠀⠠⠑⠈⠷⠭⠈⠾⠸⠌⠨⠨⠷⠏⠷⠭⠾⠨⠨⠾⠀⠫⠕⠀⠠⠋⠈⠷⠭⠈⠾⠸⠌⠨⠨⠷⠟⠷⠭⠾⠨⠨⠾",
       "reference": {
         "m-13498": "http://abstract.ups.edu/aata/section-splitting-fields.html#NyT"
       }
@@ -3487,7 +3487,7 @@
       "url": "http://abstract.ups.edu/aata/section-splitting-fields.html#NyT",
       "input": "<math><mi>σ</mi><mo>:</mo><mi>E</mi><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mrow><mo>/</mo></mrow><mo fence=\"false\" stretchy=\"false\">⟨</mo><mi>p</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo fence=\"false\" stretchy=\"false\">⟩</mo><mo stretchy=\"false\">→</mo><mi>E</mi><mo stretchy=\"false\">(</mo><mi>α</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\sigma: E[x]/\\langle p(x) \\rangle \\rightarrow E(\\alpha)",
-      "expected": "⠨⠎⠒⠀⠠⠑⠈⠷⠭⠈⠾⠸⠌⠨⠨⠷⠏⠷⠭⠾⠨⠨⠾⠀⠫⠕⠀⠠⠑⠷⠨⠁⠾",
+      "expected": "⠨⠎⠸⠒⠀⠠⠑⠈⠷⠭⠈⠾⠸⠌⠨⠨⠷⠏⠷⠭⠾⠨⠨⠾⠀⠫⠕⠀⠠⠑⠷⠨⠁⠾",
       "reference": {
         "m-13499": "http://abstract.ups.edu/aata/section-splitting-fields.html#NyT"
       }
@@ -3497,7 +3497,7 @@
       "url": "http://abstract.ups.edu/aata/section-splitting-fields.html#NyT",
       "input": "<math><mi>τ</mi><mo>:</mo><mi>F</mi><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mrow><mo>/</mo></mrow><mo fence=\"false\" stretchy=\"false\">⟨</mo><mi>q</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo fence=\"false\" stretchy=\"false\">⟩</mo><mo stretchy=\"false\">→</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>β</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\tau : F[x]/\\langle q(x) \\rangle \\rightarrow F( \\beta )",
-      "expected": "⠨⠞⠒⠀⠠⠋⠈⠷⠭⠈⠾⠸⠌⠨⠨⠷⠟⠷⠭⠾⠨⠨⠾⠀⠫⠕⠀⠠⠋⠷⠨⠃⠾",
+      "expected": "⠨⠞⠸⠒⠀⠠⠋⠈⠷⠭⠈⠾⠸⠌⠨⠨⠷⠟⠷⠭⠾⠨⠨⠾⠀⠫⠕⠀⠠⠋⠷⠨⠃⠾",
       "reference": {
         "m-13500": "http://abstract.ups.edu/aata/section-splitting-fields.html#NyT"
       }
@@ -3507,7 +3507,7 @@
       "url": "http://abstract.ups.edu/aata/section-splitting-fields.html#GLF",
       "input": "<math><mi>ψ</mi><mo>:</mo><mi>K</mi><mo stretchy=\"false\">→</mo><mi>L</mi></math>",
       "tex": "\\psi : K \\rightarrow L",
-      "expected": "⠨⠓⠒⠀⠠⠅⠀⠫⠕⠀⠠⠇",
+      "expected": "⠨⠽⠸⠒⠀⠠⠅⠀⠫⠕⠀⠠⠇",
       "reference": {
         "m-13514": "http://abstract.ups.edu/aata/section-splitting-fields.html#GLF",
         "m-13551": "http://abstract.ups.edu/aata/section-splitting-fields.html#oWj",
@@ -3519,7 +3519,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-fields.html#wWu",
       "input": "<math><mo stretchy=\"false\">[</mo><mi>E</mi><mo>:</mo><mi>F</mi><mo stretchy=\"false\">]</mo><mo>≤</mo><mi>n</mi><mo>!</mo></math>",
       "tex": "[E : F] \\leq n!",
-      "expected": "⠈⠷⠠⠑⠒⠀⠠⠋⠈⠾⠀⠐⠅⠱⠀⠝⠯",
+      "expected": "⠈⠷⠠⠑⠀⠐⠂⠀⠠⠋⠈⠾⠀⠐⠅⠱⠀⠝⠯",
       "reference": {
         "m-13783": "http://abstract.ups.edu/aata/exercises-fields.html#wWu"
       }
@@ -3539,7 +3539,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-field.html#BRE",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mo stretchy=\"false\">→</mo><mi>F</mi></math>",
       "tex": "\\phi : {\\mathbb Z} \\rightarrow F",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠵⠀⠫⠕⠀⠠⠋",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠵⠀⠫⠕⠀⠠⠋",
       "reference": {
         "m-13973": "http://abstract.ups.edu/aata/section-finite-field.html#BRE"
       }
@@ -3549,7 +3549,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-field.html#hYN",
       "input": "<math><mi>k</mi><mo>!</mo><mo stretchy=\"false\">(</mo><mi>p</mi><mo>−</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>!</mo></math>",
       "tex": "k!(p - k)!",
-      "expected": "⠅⠖⠀⠷⠏⠤⠅⠾⠯",
+      "expected": "⠅⠯⠀⠷⠏⠤⠅⠾⠯",
       "reference": {
         "m-14010": "http://abstract.ups.edu/aata/section-finite-field.html#hYN"
       }
@@ -3569,7 +3569,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-field.html#doU",
       "input": "<math><mi>n</mi><mo>=</mo><msubsup><mi>p</mi><mn>1</mn><mrow><msub><mi>e</mi><mn>1</mn></msub></mrow></msubsup><mo>⋯</mo><msubsup><mi>p</mi><mi>k</mi><mrow><msub><mi>e</mi><mi>k</mi></msub></mrow></msubsup></math>",
       "tex": "n = p_1^{e_1} \\cdots p_k^{e_k}",
-      "expected": "⠝⠀⠨⠅⠀⠏⠂⠘⠑⠂⠐⠀⠄⠄⠄⠀⠏⠰⠅⠘⠑⠘⠰⠅⠘",
+      "expected": "⠝⠀⠨⠅⠀⠏⠂⠘⠑⠂⠀⠄⠄⠄⠀⠏⠰⠅⠘⠑⠘⠰⠅",
       "reference": {
         "m-14165": "http://abstract.ups.edu/aata/section-finite-field.html#doU"
       }
@@ -3579,7 +3579,7 @@
       "url": "http://abstract.ups.edu/aata/section-finite-field.html#doU",
       "input": "<math><msubsup><mi>p</mi><mn>1</mn><mrow><msub><mi>e</mi><mn>1</mn></msub></mrow></msubsup><mo>,</mo><mo>…</mo><mo>,</mo><msubsup><mi>p</mi><mi>k</mi><mrow><msub><mi>e</mi><mi>k</mi></msub></mrow></msubsup></math>",
       "tex": "p_1^{e_1}, \\ldots,\n          p_k^{e_k}",
-      "expected": "⠏⠂⠘⠑⠂⠐⠠⠀⠄⠄⠄⠀⠠⠀⠏⠰⠅⠘⠑⠘⠰⠅⠘",
+      "expected": "⠏⠂⠘⠑⠂⠠⠀⠄⠄⠄⠠⠀⠏⠰⠅⠘⠑⠘⠰⠅",
       "reference": {
         "m-14168": "http://abstract.ups.edu/aata/section-finite-field.html#doU"
       }
@@ -3589,7 +3589,7 @@
       "url": "http://abstract.ups.edu/aata/section-poly-codes.html#dwl",
       "input": "<math><mi>E</mi><mo>:</mo><msubsup><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mrow><mn>2</mn></mrow><mrow><mi>k</mi></mrow></msubsup><mo stretchy=\"false\">→</mo><msubsup><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mrow><mn>2</mn></mrow><mrow><mi>n</mi></mrow></msubsup></math>",
       "tex": "E:{\\mathbb Z}^{k}_{2} \\rightarrow {\\mathbb Z}^{n}_{2}",
-      "expected": "⠠⠑⠒⠀⠸⠰⠠⠵⠆⠘⠅⠐⠀⠫⠕⠀⠸⠰⠠⠵⠆⠘⠝",
+      "expected": "⠠⠑⠸⠒⠀⠈⠰⠠⠵⠆⠘⠅⠀⠫⠕⠀⠈⠰⠠⠵⠆⠘⠝",
       "reference": {
         "m-14202": "http://abstract.ups.edu/aata/section-poly-codes.html#dwl"
       }
@@ -3599,7 +3599,7 @@
       "url": "http://abstract.ups.edu/aata/section-poly-codes.html#dwl",
       "input": "<math><mi>D</mi><mo>:</mo><msubsup><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mrow><mn>2</mn></mrow><mrow><mi>n</mi></mrow></msubsup><mo stretchy=\"false\">→</mo><msubsup><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mrow><mn>2</mn></mrow><mrow><mi>k</mi></mrow></msubsup></math>",
       "tex": "D:{\\mathbb Z}^{n}_{2} \\rightarrow {\\mathbb Z}^{k}_{2}",
-      "expected": "⠠⠙⠒⠀⠸⠰⠠⠵⠆⠘⠝⠐⠀⠫⠕⠀⠸⠰⠠⠵⠆⠘⠅",
+      "expected": "⠠⠙⠸⠒⠀⠈⠰⠠⠵⠆⠘⠝⠀⠫⠕⠀⠈⠰⠠⠵⠆⠘⠅",
       "reference": {
         "m-14203": "http://abstract.ups.edu/aata/section-poly-codes.html#dwl"
       }
@@ -3609,7 +3609,7 @@
       "url": "http://abstract.ups.edu/aata/section-poly-codes.html#JDu",
       "input": "<math><mi>ϕ</mi><mo>:</mo><msubsup><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mn>2</mn><mi>k</mi></msubsup><mo stretchy=\"false\">→</mo><msubsup><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mn>2</mn><mi>n</mi></msubsup></math>",
       "tex": "\\phi : {\\mathbb Z}_2^k \\rightarrow {\\mathbb Z}_2^n",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠵⠆⠘⠅⠐⠀⠫⠕⠀⠸⠰⠠⠵⠆⠘⠝",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠵⠆⠘⠅⠀⠫⠕⠀⠈⠰⠠⠵⠆⠘⠝",
       "reference": {
         "m-14206": "http://abstract.ups.edu/aata/section-poly-codes.html#JDu"
       }
@@ -3619,7 +3619,7 @@
       "url": "http://abstract.ups.edu/aata/section-poly-codes.html#sFj",
       "input": "<math><mi>ϕ</mi><mo>:</mo><msubsup><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mn>2</mn><mn>3</mn></msubsup><mo stretchy=\"false\">→</mo><msubsup><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mn>2</mn><mn>6</mn></msubsup></math>",
       "tex": "\\phi : {\\mathbb Z}_2^3 \\rightarrow {\\mathbb Z}_2^6",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠵⠆⠘⠒⠐⠀⠫⠕⠀⠸⠰⠠⠵⠆⠘⠖",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠵⠆⠘⠒⠀⠫⠕⠀⠈⠰⠠⠵⠆⠘⠖",
       "reference": {
         "m-14252": "http://abstract.ups.edu/aata/section-poly-codes.html#sFj"
       }
@@ -3629,7 +3629,7 @@
       "url": "http://abstract.ups.edu/aata/section-poly-codes.html#sFj",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">↦</mo><mi>g</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\phi  : f(x) \\mapsto g(x) f(x)",
-      "expected": "⠨⠋⠒⠀⠋⠷⠭⠾⠀⠫⠳⠒⠒⠕⠀⠛⠷⠭⠾⠋⠷⠭⠾",
+      "expected": "⠨⠋⠸⠒⠀⠋⠷⠭⠾⠀⠫⠳⠒⠒⠕⠀⠛⠷⠭⠾⠋⠷⠭⠾",
       "reference": {
         "m-14253": "http://abstract.ups.edu/aata/section-poly-codes.html#sFj"
       }
@@ -3639,7 +3639,7 @@
       "url": "http://abstract.ups.edu/aata/section-poly-codes.html#Jwd",
       "input": "<math><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>,</mo><mi>t</mi><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>,</mo><msup><mi>t</mi><mn>2</mn></msup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>,</mo><mo>…</mo><mo>,</mo><msup><mi>t</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "f(t), tf(t),\n            t^2f(t), \\ldots, t^{n-1}f(t)",
-      "expected": "⠋⠷⠞⠾⠠⠀⠞⠋⠷⠞⠾⠠⠀⠞⠘⠆⠐⠋⠷⠞⠾⠠⠀⠄⠄⠄⠀⠠⠀⠞⠘⠝⠤⠂⠐⠋⠷⠞⠾",
+      "expected": "⠋⠷⠞⠾⠠⠀⠞⠋⠷⠞⠾⠠⠀⠞⠘⠆⠐⠋⠷⠞⠾⠠⠀⠄⠄⠄⠠⠀⠞⠘⠝⠤⠂⠐⠋⠷⠞⠾",
       "reference": {
         "m-14293": "http://abstract.ups.edu/aata/section-poly-codes.html#Jwd"
       }
@@ -3649,7 +3649,7 @@
       "url": "http://abstract.ups.edu/aata/section-poly-codes.html#Eyc",
       "input": "<math><mi>ϕ</mi><mo>:</mo><msub><mrow><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow></mrow><mn>2</mn></msub><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">→</mo><msub><mi>R</mi><mi>n</mi></msub></math>",
       "tex": "\\phi : {\\mathbb Z}_2[x] \\rightarrow R_n",
-      "expected": "⠨⠋⠒⠀⠸⠰⠠⠵⠆⠈⠷⠭⠈⠾⠀⠫⠕⠀⠠⠗⠰⠝⠐",
+      "expected": "⠨⠋⠸⠒⠀⠈⠰⠠⠵⠆⠈⠷⠭⠈⠾⠀⠫⠕⠀⠠⠗⠰⠝",
       "reference": {
         "m-14309": "http://abstract.ups.edu/aata/section-poly-codes.html#Eyc"
       }
@@ -3659,7 +3659,7 @@
       "url": "http://abstract.ups.edu/aata/section-poly-codes.html#unf",
       "input": "<math><msub><mi>α</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>α</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></math>",
       "tex": "\\alpha_1, \\ldots, \\alpha_{n-1}",
-      "expected": "⠨⠁⠂⠠⠀⠄⠄⠄⠀⠠⠀⠨⠁⠰⠝⠤⠂⠐",
+      "expected": "⠨⠁⠂⠠⠀⠄⠄⠄⠠⠀⠨⠁⠰⠝⠤⠂",
       "reference": {
         "m-14376": "http://abstract.ups.edu/aata/section-poly-codes.html#unf"
       }
@@ -3680,7 +3680,7 @@
       "url": "http://abstract.ups.edu/aata/section-poly-codes.html#VKv",
       "input": "<math><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mo>…</mo><mo>,</mo><mn>2</mn><mi>r</mi></math>",
       "tex": "i = 1, \\ldots, 2r",
-      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠀⠠⠀⠼⠆⠗",
+      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠠⠀⠼⠆⠗",
       "reference": {
         "m-14431": "http://abstract.ups.edu/aata/section-poly-codes.html#VKv",
         "m-14457": "http://abstract.ups.edu/aata/section-poly-codes.html#VKv",
@@ -3703,7 +3703,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-finite.html#UMt",
       "input": "<math><mi mathvariant=\"normal\">Φ</mi><mo>:</mo><mi>GF</mi><mo data-mjx-texclass=\"NONE\">⁡</mo><mo stretchy=\"false\">(</mo><msup><mi>p</mi><mi>n</mi></msup><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">→</mo><mi>GF</mi><mo data-mjx-texclass=\"NONE\">⁡</mo><mo stretchy=\"false\">(</mo><msup><mi>p</mi><mi>n</mi></msup><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\Phi : \\gf(p^n) \\rightarrow \\gf(p^n)",
-      "expected": "⠨⠠⠋⠒⠀⠠⠛⠠⠋⠷⠏⠘⠝⠐⠾⠀⠫⠕⠀⠠⠛⠠⠋⠷⠏⠘⠝⠐⠾",
+      "expected": "⠨⠠⠋⠸⠒⠀⠠⠠⠛⠋⠷⠏⠘⠝⠐⠾⠀⠫⠕⠀⠠⠠⠛⠋⠷⠏⠘⠝⠐⠾",
       "reference": {
         "m-14568": "http://abstract.ups.edu/aata/exercises-finite.html#UMt"
       }
@@ -3713,7 +3713,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-finite.html#UMt",
       "input": "<math><mi mathvariant=\"normal\">Φ</mi><mo>:</mo><mi>α</mi><mo stretchy=\"false\">↦</mo><msup><mi>α</mi><mi>p</mi></msup></math>",
       "tex": "\\Phi : \\alpha \\mapsto \\alpha^p",
-      "expected": "⠨⠠⠋⠒⠀⠨⠁⠀⠫⠳⠒⠒⠕⠀⠨⠁⠘⠏",
+      "expected": "⠨⠠⠋⠸⠒⠀⠨⠁⠀⠫⠳⠒⠒⠕⠀⠨⠁⠘⠏",
       "reference": {
         "m-14569": "http://abstract.ups.edu/aata/exercises-finite.html#UMt"
       }
@@ -3723,7 +3723,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-finite.html#NhU",
       "input": "<math><mo stretchy=\"false\">(</mo><mi>p</mi><mo>−</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo>!</mo><mo>≡</mo><mo>−</mo><mn>1</mn><mspace width=\"0.444em\" /><mo stretchy=\"false\">(</mo><mi>mod</mi><mspace width=\"0.333em\" /><mi>p</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "(p-1)! \\equiv -1 \\pmod{p}",
-      "expected": "⠷⠏⠤⠂⠾⠖⠀⠀⠸⠇⠀⠤⠼⠂⠷⠍⠕⠙⠀⠏⠾",
+      "expected": "⠷⠏⠤⠂⠾⠯⠀⠀⠸⠇⠀⠤⠼⠂⠷⠍⠕⠙⠀⠏⠾",
       "reference": {
         "m-14581": "http://abstract.ups.edu/aata/exercises-finite.html#NhU"
       }
@@ -3743,7 +3743,7 @@
       "url": "http://abstract.ups.edu/aata/finite-exercises-bch-codes.html#pKD",
       "input": "<math><msub><mi>s</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>s</mi><mrow><mn>2</mn><mi>r</mi></mrow></msub></math>",
       "tex": "s_1, \\ldots, s_{2r}",
-      "expected": "⠎⠂⠠⠀⠄⠄⠄⠀⠠⠀⠎⠰⠆⠗⠐",
+      "expected": "⠎⠂⠠⠀⠄⠄⠄⠠⠀⠎⠰⠆⠗",
       "reference": {
         "m-14636": "http://abstract.ups.edu/aata/finite-exercises-bch-codes.html#pKD"
       }
@@ -3773,7 +3773,7 @@
       "url": "http://abstract.ups.edu/aata/section-field-automorphisms.html#oLB",
       "input": "<math><mi>σ</mi><mo>:</mo><mi>E</mi><mo stretchy=\"false\">→</mo><mi>E</mi></math>",
       "tex": "\\sigma : E \\rightarrow E",
-      "expected": "⠨⠎⠒⠀⠠⠑⠀⠫⠕⠀⠠⠑",
+      "expected": "⠨⠎⠸⠒⠀⠠⠑⠀⠫⠕⠀⠠⠑",
       "reference": {
         "m-14691": "http://abstract.ups.edu/aata/section-field-automorphisms.html#oLB",
         "m-14846": "http://abstract.ups.edu/aata/section-field-automorphisms.html#Smm"
@@ -3784,7 +3784,7 @@
       "url": "http://abstract.ups.edu/aata/section-field-automorphisms.html#qAO",
       "input": "<math><mi>σ</mi><mo>:</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo stretchy=\"false\">↦</mo><mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi></math>",
       "tex": "\\sigma : a + bi \\mapsto a - bi",
-      "expected": "⠨⠎⠒⠀⠁⠬⠃⠊⠀⠫⠳⠒⠒⠕⠀⠁⠤⠃⠊",
+      "expected": "⠨⠎⠸⠒⠀⠁⠬⠃⠊⠀⠫⠳⠒⠒⠕⠀⠁⠤⠃⠊",
       "reference": {
         "m-14726": "http://abstract.ups.edu/aata/section-field-automorphisms.html#qAO"
       }
@@ -3794,7 +3794,7 @@
       "url": "http://abstract.ups.edu/aata/section-field-automorphisms.html#WHX",
       "input": "<math><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo><mi>G</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>3</mn></msqrt><mo>,</mo><msqrt><mn>5</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo><mrow><mo>/</mo></mrow><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo data-mjx-texclass=\"ORD\" stretchy=\"false\">|</mo><mo>=</mo><mo stretchy=\"false\">[</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>3</mn></msqrt><mo>,</mo><msqrt><mn>5</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo><mo>=</mo><mn>4</mn></math>",
       "tex": "|G( {\\mathbb Q}( \\sqrt{3}, \\sqrt{5}\\, ) /{\\mathbb Q})| = [{\\mathbb Q}(\\sqrt{3}, \\sqrt{5}\\, ):{\\mathbb Q})] = 4",
-      "expected": "⠳⠠⠛⠷⠸⠰⠠⠟⠷⠜⠒⠻⠠⠀⠜⠢⠻⠾⠸⠌⠸⠰⠠⠟⠾⠳⠀⠨⠅⠀⠈⠷⠸⠰⠠⠟⠷⠜⠒⠻⠠⠀⠜⠢⠻⠾⠒⠀⠸⠰⠠⠟⠾⠈⠾⠀⠀⠨⠅⠀⠼⠲",
+      "expected": "⠳⠠⠛⠷⠈⠰⠠⠟⠷⠜⠒⠻⠠⠀⠜⠢⠻⠾⠸⠌⠈⠰⠠⠟⠾⠳⠀⠨⠅⠀⠈⠷⠈⠰⠠⠟⠷⠜⠒⠻⠠⠀⠜⠢⠻⠾⠸⠒⠈⠰⠠⠟⠾⠈⠾⠀⠀⠨⠅⠀⠼⠲",
       "reference": {
         "m-14744": "http://abstract.ups.edu/aata/section-field-automorphisms.html#WHX"
       }
@@ -3804,7 +3804,7 @@
       "url": "http://abstract.ups.edu/aata/section-field-automorphisms.html#AZT",
       "input": "<math><mi>σ</mi><mo>:</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>α</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">→</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>β</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\sigma : F( \\alpha ) \\rightarrow F( \\beta )",
-      "expected": "⠨⠎⠒⠀⠠⠋⠷⠨⠁⠾⠀⠫⠕⠀⠠⠋⠷⠨⠃⠾",
+      "expected": "⠨⠎⠸⠒⠀⠠⠋⠷⠨⠁⠾⠀⠫⠕⠀⠠⠋⠷⠨⠃⠾",
       "reference": {
         "m-14769": "http://abstract.ups.edu/aata/section-field-automorphisms.html#AZT"
       }
@@ -3814,7 +3814,7 @@
       "url": "http://abstract.ups.edu/aata/section-field-automorphisms.html#gLq",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>α</mi><mo stretchy=\"false\">)</mo><mo accent=\"false\" stretchy=\"false\">→</mo><mi>E</mi></math>",
       "tex": "\\phi: F(\\alpha) \\to  E",
-      "expected": "⠨⠋⠒⠀⠠⠋⠷⠨⠁⠾⠀⠫⠕⠀⠠⠑",
+      "expected": "⠨⠋⠸⠒⠀⠠⠋⠷⠨⠁⠾⠀⠫⠕⠀⠠⠑",
       "reference": {
         "m-14791": "http://abstract.ups.edu/aata/section-field-automorphisms.html#gLq"
       }
@@ -3824,7 +3824,7 @@
       "url": "http://abstract.ups.edu/aata/section-field-automorphisms.html#gLq",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>α</mi><mo stretchy=\"false\">)</mo><mo accent=\"false\" stretchy=\"false\">→</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>β</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\phi: F(\\alpha) \\to F(\\beta)",
-      "expected": "⠨⠋⠒⠀⠠⠋⠷⠨⠁⠾⠀⠫⠕⠀⠠⠋⠷⠨⠃⠾",
+      "expected": "⠨⠋⠸⠒⠀⠠⠋⠷⠨⠁⠾⠀⠫⠕⠀⠠⠋⠷⠨⠃⠾",
       "reference": {
         "m-14794": "http://abstract.ups.edu/aata/section-field-automorphisms.html#gLq",
         "m-14823": "http://abstract.ups.edu/aata/section-field-automorphisms.html#gLq"
@@ -3835,7 +3835,7 @@
       "url": "http://abstract.ups.edu/aata/section-field-automorphisms.html#gLq",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>α</mi><mo stretchy=\"false\">)</mo><mo accent=\"false\" stretchy=\"false\">→</mo><mi>F</mi><mo stretchy=\"false\">(</mo><msub><mi>β</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\phi: F(\\alpha) \\to F(\\beta_i)",
-      "expected": "⠨⠋⠒⠀⠠⠋⠷⠨⠁⠾⠀⠫⠕⠀⠠⠋⠷⠨⠃⠰⠊⠐⠾",
+      "expected": "⠨⠋⠸⠒⠀⠠⠋⠷⠨⠁⠾⠀⠫⠕⠀⠠⠋⠷⠨⠃⠰⠊⠐⠾",
       "reference": {
         "m-14800": "http://abstract.ups.edu/aata/section-field-automorphisms.html#gLq"
       }
@@ -3845,7 +3845,7 @@
       "url": "http://abstract.ups.edu/aata/section-field-automorphisms.html#gLq",
       "input": "<math><msub><mi>β</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>β</mi><mi>d</mi></msub></math>",
       "tex": "\\beta_1, \\ldots, \\beta_d",
-      "expected": "⠨⠃⠂⠠⠀⠄⠄⠄⠀⠠⠀⠨⠃⠰⠙⠐",
+      "expected": "⠨⠃⠂⠠⠀⠄⠄⠄⠠⠀⠨⠃⠰⠙",
       "reference": {
         "m-14802": "http://abstract.ups.edu/aata/section-field-automorphisms.html#gLq"
       }
@@ -3855,7 +3855,7 @@
       "url": "http://abstract.ups.edu/aata/section-field-automorphisms.html#gLq",
       "input": "<math><mi>ψ</mi><mo>:</mo><mi>E</mi><mo accent=\"false\" stretchy=\"false\">→</mo><mi>E</mi></math>",
       "tex": "\\psi : E \\to E",
-      "expected": "⠨⠓⠒⠀⠠⠑⠀⠫⠕⠀⠠⠑",
+      "expected": "⠨⠽⠸⠒⠀⠠⠑⠀⠫⠕⠀⠠⠑",
       "reference": {
         "m-14815": "http://abstract.ups.edu/aata/section-field-automorphisms.html#gLq"
       }
@@ -3865,7 +3865,7 @@
       "url": "http://abstract.ups.edu/aata/section-field-automorphisms.html#iWp",
       "input": "<math><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mo>…</mo><mo>,</mo><mn>4</mn></math>",
       "tex": "i = 1, \\ldots, 4",
-      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠀⠠⠀⠼⠲",
+      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠄⠄⠄⠠⠀⠼⠲",
       "reference": {
         "m-14884": "http://abstract.ups.edu/aata/section-field-automorphisms.html#iWp",
         "m-14890": "http://abstract.ups.edu/aata/section-field-automorphisms.html#iWp"
@@ -3876,7 +3876,7 @@
       "url": "http://abstract.ups.edu/aata/section-field-automorphisms.html#EiH",
       "input": "<math><mi>α</mi><mo>=</mo><msub><mi>α</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>α</mi><mi>n</mi></msub></math>",
       "tex": "\\alpha = \\alpha_1, \\ldots, \\alpha_n",
-      "expected": "⠨⠁⠀⠨⠅⠀⠨⠁⠂⠠⠀⠄⠄⠄⠀⠠⠀⠨⠁⠰⠝⠐",
+      "expected": "⠨⠁⠀⠨⠅⠀⠨⠁⠂⠠⠀⠄⠄⠄⠠⠀⠨⠁⠰⠝",
       "reference": {
         "m-14962": "http://abstract.ups.edu/aata/section-field-automorphisms.html#EiH"
       }
@@ -3886,7 +3886,7 @@
       "url": "http://abstract.ups.edu/aata/section-field-automorphisms.html#EiH",
       "input": "<math><mi>β</mi><mo>=</mo><msub><mi>β</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>β</mi><mi>m</mi></msub></math>",
       "tex": "\\beta = \\beta_1, \\ldots, \\beta_m",
-      "expected": "⠨⠃⠀⠨⠅⠀⠨⠃⠂⠠⠀⠄⠄⠄⠀⠠⠀⠨⠃⠰⠍⠐",
+      "expected": "⠨⠃⠀⠨⠅⠀⠨⠃⠂⠠⠀⠄⠄⠄⠠⠀⠨⠃⠰⠍",
       "reference": {
         "m-14965": "http://abstract.ups.edu/aata/section-field-automorphisms.html#EiH"
       }
@@ -3906,7 +3906,7 @@
       "url": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#Pdy",
       "input": "<math><mi>σ</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>3</mn></msqrt><mo>,</mo><msqrt><mn>5</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>3</mn></msqrt><mo>,</mo><msqrt><mn>5</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\sigma : {\\mathbb Q}(\\sqrt{3}, \\sqrt{5}\\, ) \\rightarrow {\\mathbb Q}(\\sqrt{3}, \\sqrt{5}\\, )",
-      "expected": "⠨⠎⠒⠀⠸⠰⠠⠟⠷⠜⠒⠻⠠⠀⠜⠢⠻⠾⠀⠫⠕⠀⠸⠰⠠⠟⠷⠜⠒⠻⠠⠀⠜⠢⠻⠾",
+      "expected": "⠨⠎⠸⠒⠀⠈⠰⠠⠟⠷⠜⠒⠻⠠⠀⠜⠢⠻⠾⠀⠫⠕⠀⠈⠰⠠⠟⠷⠜⠒⠻⠠⠀⠜⠢⠻⠾",
       "reference": {
         "m-15023": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#Pdy"
       }
@@ -3916,7 +3916,7 @@
       "url": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#tJC",
       "input": "<math><msub><mi>α</mi><mn>1</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>α</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></math>",
       "tex": "\\alpha_1, \\ldots, \\alpha_{n + 1}",
-      "expected": "⠨⠁⠂⠠⠀⠄⠄⠄⠀⠠⠀⠨⠁⠰⠝⠬⠂⠐",
+      "expected": "⠨⠁⠂⠠⠀⠄⠄⠄⠠⠀⠨⠁⠰⠝⠬⠂",
       "reference": {
         "m-15045": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#tJC"
       }
@@ -3926,7 +3926,7 @@
       "url": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#tJC",
       "input": "<math><msub><mi>σ</mi><mn>1</mn></msub><mo>=</mo><mrow><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">d</mi></mrow><mo>,</mo><msub><mi>σ</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>σ</mi><mi>n</mi></msub></math>",
       "tex": "\\sigma_1 = \\identity, \\sigma_2, \\ldots, \\sigma_n",
-      "expected": "⠨⠎⠂⠀⠨⠅⠀⠊⠙⠠⠀⠨⠎⠆⠠⠀⠄⠄⠄⠀⠠⠀⠨⠎⠰⠝⠐",
+      "expected": "⠨⠎⠂⠀⠨⠅⠀⠊⠙⠠⠀⠨⠎⠆⠠⠀⠄⠄⠄⠠⠀⠨⠎⠰⠝",
       "reference": {
         "m-15049": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#tJC"
       }
@@ -3936,7 +3936,7 @@
       "url": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#tJC",
       "input": "<math><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mo>…</mo><mo>,</mo><mi>n</mi><mo>+</mo><mn>1</mn></math>",
       "tex": "i = 1, 2, \\ldots, n + 1",
-      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠼⠆⠠⠀⠄⠄⠄⠀⠠⠀⠝⠬⠂",
+      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠼⠆⠠⠀⠄⠄⠄⠠⠀⠝⠬⠂",
       "reference": {
         "m-15052": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#tJC"
       }
@@ -3946,7 +3946,7 @@
       "url": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#tJC",
       "input": "<math><msub><mi>α</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>α</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></math>",
       "tex": "\\alpha_2, \\ldots, \\alpha_{n + 1}",
-      "expected": "⠨⠁⠆⠠⠀⠄⠄⠄⠀⠠⠀⠨⠁⠰⠝⠬⠂⠐",
+      "expected": "⠨⠁⠆⠠⠀⠄⠄⠄⠠⠀⠨⠁⠰⠝⠬⠂",
       "reference": {
         "m-15063": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#tJC"
       }
@@ -3956,7 +3956,7 @@
       "url": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#kpQ",
       "input": "<math><msub><mi>α</mi><mn>1</mn></msub><mo>=</mo><mi>α</mi><mo>,</mo><msub><mi>α</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>α</mi><mi>n</mi></msub></math>",
       "tex": "\\alpha_1 = \\alpha, \\alpha_2, \\ldots, \\alpha_n",
-      "expected": "⠨⠁⠂⠀⠨⠅⠀⠨⠁⠠⠀⠨⠁⠆⠠⠀⠄⠄⠄⠀⠠⠀⠨⠁⠰⠝⠐",
+      "expected": "⠨⠁⠂⠀⠨⠅⠀⠨⠁⠠⠀⠨⠁⠆⠠⠀⠄⠄⠄⠠⠀⠨⠁⠰⠝",
       "reference": {
         "m-15138": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#kpQ"
       }
@@ -3966,7 +3966,7 @@
       "url": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#BJN",
       "input": "<math><mi>G</mi><mo stretchy=\"false\">(</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow><mo stretchy=\"false\">(</mo><msqrt><mn>3</mn></msqrt><mo>,</mo><msqrt><mn>5</mn></msqrt><mstyle scriptlevel=\"0\"><mspace width=\"thinmathspace\" /></mstyle><mo stretchy=\"false\">)</mo><mrow><mo>/</mo></mrow><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">)</mo></mrow></math>",
       "tex": "G({\\mathbb Q( \\sqrt{3}, \\sqrt{5}\\, ) / {\\mathbb Q})}",
-      "expected": "⠠⠛⠷⠀⠸⠰⠠⠟⠷⠜⠒⠻⠠⠀⠜⠢⠻⠾⠸⠌⠸⠰⠠⠟⠾",
+      "expected": "⠠⠛⠷⠀⠈⠰⠠⠟⠷⠜⠒⠻⠠⠀⠜⠢⠻⠾⠸⠌⠈⠰⠠⠟⠾",
       "reference": {
         "m-15170": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#BJN"
       }
@@ -3976,7 +3976,7 @@
       "url": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#QwZ",
       "input": "<math><mi>ϕ</mi><mo>:</mo><mi>G</mi><mo stretchy=\"false\">(</mo><mi>E</mi><mrow><mo>/</mo></mrow><mi>F</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">→</mo><mi>G</mi><mo stretchy=\"false\">(</mo><mi>K</mi><mrow><mo>/</mo></mrow><mi>F</mi><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\phi:G(E/F) \\rightarrow G(K/F)",
-      "expected": "⠨⠋⠒⠀⠠⠛⠷⠠⠑⠸⠌⠠⠋⠾⠀⠫⠕⠀⠠⠛⠷⠠⠅⠸⠌⠠⠋⠾",
+      "expected": "⠨⠋⠸⠒⠀⠠⠛⠷⠠⠑⠸⠌⠠⠋⠾⠀⠫⠕⠀⠠⠛⠷⠠⠅⠸⠌⠠⠋⠾",
       "reference": {
         "m-15262": "http://abstract.ups.edu/aata/section-fund-theorem-galois-theory.html#QwZ"
       }
@@ -3986,7 +3986,7 @@
       "url": "http://abstract.ups.edu/aata/section-galois-applications.html#wEv",
       "input": "<math><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mo>…</mo><mo>,</mo><mi>r</mi></math>",
       "tex": "i = 1, 2, \\ldots, r",
-      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠼⠆⠠⠀⠄⠄⠄⠀⠠⠀⠗",
+      "expected": "⠊⠀⠨⠅⠀⠼⠂⠠⠀⠼⠆⠠⠀⠄⠄⠄⠠⠀⠗",
       "reference": {
         "m-15324": "http://abstract.ups.edu/aata/section-galois-applications.html#wEv",
         "m-15423": "http://abstract.ups.edu/aata/section-galois-applications.html#FXU",
@@ -3998,7 +3998,7 @@
       "url": "http://abstract.ups.edu/aata/section-galois-applications.html#TNr",
       "input": "<math><mn>1</mn><mo>,</mo><mi>ω</mi><mo>,</mo><msup><mi>ω</mi><mn>2</mn></msup><mo>,</mo><mo>…</mo><mo>,</mo><msup><mi>ω</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></math>",
       "tex": "1, \\omega, \\omega^2, \\ldots, \\omega^{n - 1}",
-      "expected": "⠼⠂⠠⠀⠨⠕⠠⠀⠨⠕⠘⠆⠐⠠⠀⠄⠄⠄⠀⠠⠀⠨⠕⠘⠝⠤⠂",
+      "expected": "⠼⠂⠠⠀⠨⠺⠠⠀⠨⠺⠘⠆⠠⠀⠄⠄⠄⠠⠀⠨⠺⠘⠝⠤⠂",
       "reference": {
         "m-15344": "http://abstract.ups.edu/aata/section-galois-applications.html#TNr"
       }
@@ -4008,7 +4008,7 @@
       "url": "http://abstract.ups.edu/aata/section-galois-applications.html#ZQL",
       "input": "<math><mroot><mi>a</mi><mi>n</mi></mroot><mo>,</mo><mi>ω</mi><mroot><mi>a</mi><mi>n</mi></mroot><mo>,</mo><mo>…</mo><mo>,</mo><msup><mi>ω</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mroot><mi>a</mi><mi>n</mi></mroot></math>",
       "tex": "\\sqrt[n]{a}, \\omega \\sqrt[n]{a}, \\ldots, \\omega^{n-1} \\sqrt[n]{a}",
-      "expected": "⠣⠝⠜⠁⠻⠠⠀⠨⠕⠣⠝⠜⠁⠻⠠⠀⠄⠄⠄⠀⠠⠀⠨⠕⠘⠝⠤⠂⠐⠣⠝⠜⠁⠻",
+      "expected": "⠣⠝⠜⠁⠻⠠⠀⠨⠺⠣⠝⠜⠁⠻⠠⠀⠄⠄⠄⠠⠀⠨⠺⠘⠝⠤⠂⠐⠣⠝⠜⠁⠻",
       "reference": {
         "m-15364": "http://abstract.ups.edu/aata/section-galois-applications.html#ZQL"
       }
@@ -4018,7 +4018,7 @@
       "url": "http://abstract.ups.edu/aata/section-galois-applications.html#ZQL",
       "input": "<math><mi>ζ</mi><mo>,</mo><mi>ω</mi><mi>ζ</mi><mo>,</mo><mo>…</mo><mo>,</mo><msup><mi>ω</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mi>ζ</mi></math>",
       "tex": "\\zeta, \\omega \\zeta, \\ldots, \\omega^{n - 1} \\zeta",
-      "expected": "⠨⠱⠠⠀⠨⠕⠨⠱⠠⠀⠄⠄⠄⠀⠠⠀⠨⠕⠘⠝⠤⠂⠐⠨⠱",
+      "expected": "⠨⠵⠠⠀⠨⠺⠨⠵⠠⠀⠄⠄⠄⠠⠀⠨⠺⠘⠝⠤⠂⠐⠨⠵",
       "reference": {
         "m-15372": "http://abstract.ups.edu/aata/section-galois-applications.html#ZQL"
       }
@@ -4028,7 +4028,7 @@
       "url": "http://abstract.ups.edu/aata/section-galois-applications.html#FXU",
       "input": "<math><msub><mi>α</mi><mn>1</mn></msub><mo>,</mo><msub><mi>α</mi><mn>1</mn></msub><mi>ω</mi><mo>,</mo><msub><mi>α</mi><mn>1</mn></msub><msup><mi>ω</mi><mn>2</mn></msup><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>α</mi><mn>1</mn></msub><msup><mi>ω</mi><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>−</mo><mn>1</mn></mrow></msup></math>",
       "tex": "\\alpha_1, \\alpha_1 \\omega, \\alpha_1 \\omega^2, \\ldots, \\alpha_1 \\omega^{n_1 - 1}",
-      "expected": "⠨⠁⠂⠠⠀⠨⠁⠂⠨⠕⠠⠀⠨⠁⠂⠨⠕⠘⠆⠐⠠⠀⠄⠄⠄⠀⠠⠀⠨⠁⠂⠨⠕⠘⠝⠂⠤⠂",
+      "expected": "⠨⠁⠂⠠⠀⠨⠁⠂⠨⠺⠠⠀⠨⠁⠂⠨⠺⠘⠆⠠⠀⠄⠄⠄⠠⠀⠨⠁⠂⠨⠺⠘⠝⠂⠤⠂",
       "reference": {
         "m-15431": "http://abstract.ups.edu/aata/section-galois-applications.html#FXU"
       }
@@ -4038,7 +4038,7 @@
       "url": "http://abstract.ups.edu/aata/section-galois-applications.html#FXU",
       "input": "<math><mi>β</mi><mo>,</mo><mi>ω</mi><mi>β</mi><mo>,</mo><mo>…</mo><mo>,</mo><msup><mi>ω</mi><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>−</mo><mn>1</mn></mrow></msup></math>",
       "tex": "\\beta, \\omega \\beta, \\ldots, \\omega^{n_1-1}",
-      "expected": "⠨⠃⠠⠀⠨⠕⠨⠃⠠⠀⠄⠄⠄⠀⠠⠀⠨⠕⠘⠝⠂⠤⠂",
+      "expected": "⠨⠃⠠⠀⠨⠺⠨⠃⠠⠀⠄⠄⠄⠠⠀⠨⠺⠘⠝⠂⠤⠂",
       "reference": {
         "m-15442": "http://abstract.ups.edu/aata/section-galois-applications.html#FXU"
       }
@@ -4048,7 +4048,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-galois.html#LkD",
       "input": "<math><mi>ω</mi><mo>,</mo><msup><mi>ω</mi><mn>2</mn></msup><mo>,</mo><mo>…</mo><mo>,</mo><msup><mi>ω</mi><mrow><mi>p</mi><mo>−</mo><mn>1</mn></mrow></msup></math>",
       "tex": "\\omega, \\omega^2, \\ldots, \\omega^{p-1}",
-      "expected": "⠨⠕⠠⠀⠨⠕⠘⠆⠐⠠⠀⠄⠄⠄⠀⠠⠀⠨⠕⠘⠏⠤⠂",
+      "expected": "⠨⠺⠠⠀⠨⠺⠘⠆⠠⠀⠄⠄⠄⠠⠀⠨⠺⠘⠏⠤⠂",
       "reference": {
         "m-15729": "http://abstract.ups.edu/aata/exercises-galois.html#LkD",
         "m-15736": "http://abstract.ups.edu/aata/exercises-galois.html#DGe",
@@ -4061,7 +4061,7 @@
       "url": "http://abstract.ups.edu/aata/exercises-galois.html#jNn",
       "input": "<math><msub><mi>ϕ</mi><mi>i</mi></msub><mo>:</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><mi>ω</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">→</mo><mrow><mrow><mi mathvariant=\"double-struck\">Q</mi></mrow></mrow><mo stretchy=\"false\">(</mo><msup><mi>ω</mi><mi>i</mi></msup><mo stretchy=\"false\">)</mo></math>",
       "tex": "\\phi_i: {\\mathbb Q}(\\omega) \\rightarrow {\\mathbb Q}(\\omega^i)",
-      "expected": "⠨⠋⠰⠊⠐⠒⠀⠸⠰⠠⠟⠷⠨⠕⠾⠀⠫⠕⠀⠸⠰⠠⠟⠷⠨⠕⠘⠊⠐⠾",
+      "expected": "⠨⠋⠰⠊⠸⠒⠀⠈⠰⠠⠟⠷⠨⠺⠾⠀⠫⠕⠀⠈⠰⠠⠟⠷⠨⠺⠘⠊⠐⠾",
       "reference": {
         "m-15743": "http://abstract.ups.edu/aata/exercises-galois.html#jNn"
       }

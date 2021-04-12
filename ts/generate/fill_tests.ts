@@ -80,16 +80,24 @@ function add(expected: string, flag: TestFlag, dryrun: boolean) {
     console.log(JSON.stringify(result, null, 2));
     return;
   }
-  let file = tests['jsonFile'];
+  addToFile(tests['jsonFile'], result);
+}
+
+/**
+ * Adds the expected values to the file, overwriting the current ones.
+ * @param {string} file The file name.
+ * @param {JsonTests} expected The expected values.
+ */
+export function addToFile(file: string, expected: JsonTests) {
   let filename = TestUtil.fileExists(file, TestPath.EXPECTED);
   let oldJson: JsonFile = TestUtil.loadJson(filename);
   let base = oldJson['base'];
   if (base) {
-    Object.assign(oldJson.tests, result);
+    Object.assign(oldJson.tests, expected);
   } else {
     let oldTests = oldJson.tests as JsonTests;
-    for (let key of Object.keys(result)) {
-      Object.assign(oldTests[key], result[key]);
+    for (let key of Object.keys(expected)) {
+      Object.assign(oldTests[key], expected[key]);
     }
   }
   TestUtil.saveJson(filename, oldJson);

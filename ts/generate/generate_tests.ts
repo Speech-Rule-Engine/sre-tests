@@ -91,22 +91,6 @@ export function transformInput(
 }
 
 /**
- * Generates test using require to load. Needs to be exposed with
- * module.exports.
- *
- * @param input Input filename.
- * @param output Output filename.
- * @param field The optional field name, defaults to input.
- */
-export function generateTestRequire(
-  input: string, output: string, field: string = 'input') {
-  let file = require(input);
-  let oldJson = file[Object.keys(file)[0]];
-  let newJson = transformInput(oldJson, field);
-  tu.TestUtil.saveJson(output, newJson);
-}
-
-/**
  * Generates test from a json file.
  *
  * @param input Input filename.
@@ -338,7 +322,7 @@ const TransformerFactory = new Map([
   ['tex', new Tex2Mml()]
 ]);
 
-function getTransformers(trans: string[]) {
+export function getTransformers(trans: string[]) {
   return trans.map(x => TransformerFactory.get(x));
 }
 

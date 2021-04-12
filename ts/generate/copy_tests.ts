@@ -34,13 +34,15 @@ import {addMissing} from './fill_tests';
 export function copyTestLocale(source: string, locale: string,
   loc1: string, loc2: string) {
   let tests = factoryget(source);
-  let dst = [TestPath.EXPECTED, locale].concat(
-    source.split('/').slice(1)).join('/');
-  tests.jsonTests.tests = {};
+  let dst = path.join(
+    TestPath.EXPECTED, locale, ...source.split('/').slice(-2));
+  delete tests.jsonTests.tests;
   tests.jsonTests.locale = locale;
   replaceInTests(tests.jsonTests, 'name', loc1, loc2);
   replaceInTests(tests.jsonTests, 'active', loc1, loc2);
   replaceInTests(tests.jsonTests, 'information', loc1, loc2);
+  tests.jsonTests['compare'] = true;
+  tests.jsonTests.tests = {};
   TestUtil.saveJson(dst, tests.jsonTests);
   addMissing(dst);
 }
@@ -239,29 +241,42 @@ export function copySemanticTest(base: string) {
   if (!filename) {
     return;
   }
-  let basename = path.basename(base, '.json');
+  let json = TestUtil.loadJson(filename);
+  let info = json.information || '';
+  let basename = path.basename(base);
   let dirname = path.dirname(base);
-  let postfix = basename.replace(/^semantic/, '');
-  createSemanticTestFile(dirname, postfix, 'semantic_tree', base,
+  createSemanticTestFile(dirname, 'semantic_tree', basename, info,
                          {factory: 'stree'});
-  createSemanticTestFile(dirname, postfix, 'enrich_mathml', base,
+  createSemanticTestFile(dirname, 'enrich_mathml', basename, info,
                          {factory: 'enrichMathml', active: 'EnrichExamples'});
-  createSemanticTestFile(dirname, postfix, 'enrich_speech', base,
+  createSemanticTestFile(dirname, 'enrich_speech', basename, info,
                          {factory: 'enrichSpeech', tests: 'ALL'});
-  createSemanticTestFile(dirname, postfix, 'rebuild_stree', base,
+  createSemanticTestFile(dirname, 'rebuild_stree', basename, info,
                          {factory: 'rebuild', tests: 'ALL'});
+  createSemanticTestFile(dirname, 'semantic_xml', basename, info,
+                         {factory: 'semanticXml', tests: 'ALL'});
+  createSemanticTestFile(dirname, 'semantic_api', basename, info,
+                         {factory: 'semanticApi', tests: 'ALL'});
 }
 
-function createSemanticTestFile(dir: string, post: string, pre: string,
-                                base: string, init: JsonFile) {
-  let filename = path.join(dir, `${pre}${post}.json`);
+function createSemanticTestFile(dir: string, kind: string, base: string,
+                                info: string, init: JsonFile) {
+  let filename = path.join(dir, kind, base);
   let file = TestUtil.fileExists(filename, TestPath.EXPECTED);
   if (file) {
     console.error(`File ${file} already exists.`);
     return;
   }
-  let basename = path.join('input', base);
-  init.base = basename;
+  let baseinfo = TestUtil.capitalize(kind).split('_');
+  if (info) {
+    baseinfo.push(info);
+  } else {
+    baseinfo.push(...path.basename(base, '.json').split('_'));
+    baseinfo.push('tests.');
+  }
+  init.information = baseinfo.join(' ');
+  let basefile = path.join('input', dir, base);
+  init.base = basefile;
   if (!init.tests) {
     init.tests = {};
   }
