@@ -10,688 +10,688 @@
   "compare": true,
   "tests": {
     "PartialTensorABCD_default": {
-      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी"
+      "expected": "पादांक ए उर्ध्वान्क बी आधार रेखा एक्स पादांक सी उर्ध्वान्क डी"
     },
     "PartialTensorABCD_brief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी Sup डी"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी"
     },
     "PartialTensorABCD_sbrief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी Sup डी"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी"
     },
     "PartialTensorABC_default": {
-      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी"
+      "expected": "पादांक ए उर्ध्वान्क बी आधार रेखा एक्स पादांक सी"
     },
     "PartialTensorABC_brief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी"
     },
     "PartialTensorABC_sbrief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी"
     },
     "PartialTensorABD_default": {
-      "expected": "Subscript ए Superscript बी Baseline एक्स Superscript डी"
+      "expected": "पादांक ए उर्ध्वान्क बी आधार रेखा एक्स उर्ध्वान्क डी"
     },
     "PartialTensorABD_brief": {
-      "expected": "Sub ए Sup बी Base एक्स Sup डी"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स उर्ध्व डी"
     },
     "PartialTensorABD_sbrief": {
-      "expected": "Sub ए Sup बी Base एक्स Sup डी"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स उर्ध्व डी"
     },
     "PartialTensorABDR_default": {
-      "expected": "Subscript ए Superscript बी Baseline एक्स Superscript डी Baseline आर"
+      "expected": "पादांक ए उर्ध्वान्क बी आधार रेखा एक्स उर्ध्वान्क डी आधार रेखा आर"
     },
     "PartialTensorABDR_brief": {
-      "expected": "Sub ए Sup बी Base एक्स Sup डी Base आर"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स उर्ध्व डी आधार आर"
     },
     "PartialTensorABDR_sbrief": {
-      "expected": "Sub ए Sup बी Base एक्स Sup डी Base आर"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स उर्ध्व डी आधार आर"
     },
     "PartialTensorABDRootR_default": {
-      "expected": "StartRoot Subscript ए Superscript बी Baseline एक्स Superscript डी EndRoot आर"
+      "expected": "मूल आरंभ पादांक ए उर्ध्वान्क बी आधार रेखा एक्स उर्ध्वान्क डी मूल समाप्त आर"
     },
     "PartialTensorABDRootR_brief": {
-      "expected": "StartRoot Sub ए Sup बी Base एक्स Sup डी EndRoot आर"
+      "expected": "मूल आरंभ अधो ए उर्ध्व बी आधार एक्स उर्ध्व डी मूल समाप्त आर"
     },
     "PartialTensorABDRootR_sbrief": {
-      "expected": "Root Sub ए Sup बी Base एक्स Sup डी EndRoot आर"
+      "expected": "मूल अधो ए उर्ध्व बी आधार एक्स उर्ध्व डी मूल समाप्त आर"
     },
     "PartialTensorABDRRoot_default": {
-      "expected": "StartRoot Subscript ए Superscript बी Baseline एक्स Superscript डी Baseline आर EndRoot"
+      "expected": "मूल आरंभ पादांक ए उर्ध्वान्क बी आधार रेखा एक्स उर्ध्वान्क डी आधार रेखा आर मूल समाप्त"
     },
     "PartialTensorABDRRoot_brief": {
-      "expected": "StartRoot Sub ए Sup बी Base एक्स Sup डी Base आर EndRoot"
+      "expected": "मूल आरंभ अधो ए उर्ध्व बी आधार एक्स उर्ध्व डी आधार आर मूल समाप्त"
     },
     "PartialTensorABDRRoot_sbrief": {
-      "expected": "Root Sub ए Sup बी Base एक्स Sup डी Base आर EndRoot"
+      "expected": "मूल अधो ए उर्ध्व बी आधार एक्स उर्ध्व डी आधार आर मूल समाप्त"
     },
     "PartialTensorABDFracR_default": {
-      "expected": "StartFraction 1 Over Subscript ए Superscript बी Baseline एक्स Superscript डी EndFraction आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त पादांक ए उर्ध्वान्क बी आधार रेखा एक्स उर्ध्वान्क डी अंतभिन्न आर"
     },
     "PartialTensorABDFracR_brief": {
-      "expected": "StartFrac 1 Over Sub ए Sup बी Base एक्स Sup डी EndFrac आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त अधो ए उर्ध्व बी आधार एक्स उर्ध्व डी अंतभिन्न आर"
     },
     "PartialTensorABDFracR_sbrief": {
-      "expected": "Frac 1 Over Sub ए Sup बी Base एक्स Sup डी EndFrac आर"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त अधो ए उर्ध्व बी आधार एक्स उर्ध्व डी भिन्न समाप्त आर"
     },
     "PartialTensorABDRFrac_default": {
-      "expected": "StartFraction 1 Over Subscript ए Superscript बी Baseline एक्स Superscript डी Baseline आर EndFraction"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त पादांक ए उर्ध्वान्क बी आधार रेखा एक्स उर्ध्वान्क डी आधार रेखा आर अंतभिन्न"
     },
     "PartialTensorABDRFrac_brief": {
-      "expected": "StartFrac 1 Over Sub ए Sup बी Base एक्स Sup डी Base आर EndFrac"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त अधो ए उर्ध्व बी आधार एक्स उर्ध्व डी आधार आर अंतभिन्न"
     },
     "PartialTensorABDRFrac_sbrief": {
-      "expected": "Frac 1 Over Sub ए Sup बी Base एक्स Sup डी Base आर EndFrac"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त अधो ए उर्ध्व बी आधार एक्स उर्ध्व डी आधार आर भिन्न समाप्त"
     },
     "PartialTensorAB_default": {
-      "expected": "Subscript ए Superscript बी Baseline एक्स"
+      "expected": "पादांक ए उर्ध्वान्क बी आधार रेखा एक्स"
     },
     "PartialTensorAB_brief": {
-      "expected": "Sub ए Sup बी Base एक्स"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स"
     },
     "PartialTensorAB_sbrief": {
-      "expected": "Sub ए Sup बी Base एक्स"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स"
     },
     "PartialTensorABR_default": {
-      "expected": "Subscript ए Superscript बी Baseline एक्स Baseline आर"
+      "expected": "पादांक ए उर्ध्वान्क बी आधार रेखा एक्स आधार रेखा आर"
     },
     "PartialTensorABR_brief": {
-      "expected": "Sub ए Sup बी Base एक्स Base आर"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स आधार आर"
     },
     "PartialTensorABR_sbrief": {
-      "expected": "Sub ए Sup बी Base एक्स Base आर"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स आधार आर"
     },
     "PartialTensorABRootR_default": {
-      "expected": "StartRoot Subscript ए Superscript बी Baseline एक्स EndRoot आर"
+      "expected": "मूल आरंभ पादांक ए उर्ध्वान्क बी आधार रेखा एक्स मूल समाप्त आर"
     },
     "PartialTensorABRootR_brief": {
-      "expected": "StartRoot Sub ए Sup बी Base एक्स EndRoot आर"
+      "expected": "मूल आरंभ अधो ए उर्ध्व बी आधार एक्स मूल समाप्त आर"
     },
     "PartialTensorABRootR_sbrief": {
-      "expected": "Root Sub ए Sup बी Base एक्स EndRoot आर"
+      "expected": "मूल अधो ए उर्ध्व बी आधार एक्स मूल समाप्त आर"
     },
     "PartialTensorABRRoot_default": {
-      "expected": "StartRoot Subscript ए Superscript बी Baseline एक्स Baseline आर EndRoot"
+      "expected": "मूल आरंभ पादांक ए उर्ध्वान्क बी आधार रेखा एक्स आधार रेखा आर मूल समाप्त"
     },
     "PartialTensorABRRoot_brief": {
-      "expected": "StartRoot Sub ए Sup बी Base एक्स Base आर EndRoot"
+      "expected": "मूल आरंभ अधो ए उर्ध्व बी आधार एक्स आधार आर मूल समाप्त"
     },
     "PartialTensorABRRoot_sbrief": {
-      "expected": "Root Sub ए Sup बी Base एक्स Base आर EndRoot"
+      "expected": "मूल अधो ए उर्ध्व बी आधार एक्स आधार आर मूल समाप्त"
     },
     "PartialTensorABFracR_default": {
-      "expected": "StartFraction 1 Over Subscript ए Superscript बी Baseline एक्स EndFraction आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त पादांक ए उर्ध्वान्क बी आधार रेखा एक्स अंतभिन्न आर"
     },
     "PartialTensorABFracR_brief": {
-      "expected": "StartFrac 1 Over Sub ए Sup बी Base एक्स EndFrac आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त अधो ए उर्ध्व बी आधार एक्स अंतभिन्न आर"
     },
     "PartialTensorABFracR_sbrief": {
-      "expected": "Frac 1 Over Sub ए Sup बी Base एक्स EndFrac आर"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त अधो ए उर्ध्व बी आधार एक्स भिन्न समाप्त आर"
     },
     "PartialTensorABRFrac_default": {
-      "expected": "StartFraction 1 Over Subscript ए Superscript बी Baseline एक्स Baseline आर EndFraction"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त पादांक ए उर्ध्वान्क बी आधार रेखा एक्स आधार रेखा आर अंतभिन्न"
     },
     "PartialTensorABRFrac_brief": {
-      "expected": "StartFrac 1 Over Sub ए Sup बी Base एक्स Base आर EndFrac"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त अधो ए उर्ध्व बी आधार एक्स आधार आर अंतभिन्न"
     },
     "PartialTensorABRFrac_sbrief": {
-      "expected": "Frac 1 Over Sub ए Sup बी Base एक्स Base आर EndFrac"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त अधो ए उर्ध्व बी आधार एक्स आधार आर भिन्न समाप्त"
     },
     "PartialTensorABCR_default": {
-      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी Baseline आर"
+      "expected": "पादांक ए उर्ध्वान्क बी आधार रेखा एक्स पादांक सी आधार रेखा आर"
     },
     "PartialTensorABCR_brief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी Base आर"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी आधार आर"
     },
     "PartialTensorABCR_sbrief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी Base आर"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी आधार आर"
     },
     "PartialTensorABCDR_default": {
-      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी Baseline आर"
+      "expected": "पादांक ए उर्ध्वान्क बी आधार रेखा एक्स पादांक सी उर्ध्वान्क डी आधार रेखा आर"
     },
     "PartialTensorABCDR_brief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी Sup डी Base आर"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी आधार आर"
     },
     "PartialTensorABCDR_sbrief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी Sup डी Base आर"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी आधार आर"
     },
     "PartialTensorABCDRoot_default": {
-      "expected": "StartRoot Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी EndRoot"
+      "expected": "मूल आरंभ पादांक ए उर्ध्वान्क बी आधार रेखा एक्स पादांक सी उर्ध्वान्क डी मूल समाप्त"
     },
     "PartialTensorABCDRoot_brief": {
-      "expected": "StartRoot Sub ए Sup बी Base एक्स Sub सी Sup डी EndRoot"
+      "expected": "मूल आरंभ अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी मूल समाप्त"
     },
     "PartialTensorABCDRoot_sbrief": {
-      "expected": "Root Sub ए Sup बी Base एक्स Sub सी Sup डी EndRoot"
+      "expected": "मूल अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी मूल समाप्त"
     },
     "PartialTensorABCDRootR_default": {
-      "expected": "StartRoot Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी EndRoot आर"
+      "expected": "मूल आरंभ पादांक ए उर्ध्वान्क बी आधार रेखा एक्स पादांक सी उर्ध्वान्क डी मूल समाप्त आर"
     },
     "PartialTensorABCDRootR_brief": {
-      "expected": "StartRoot Sub ए Sup बी Base एक्स Sub सी Sup डी EndRoot आर"
+      "expected": "मूल आरंभ अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी मूल समाप्त आर"
     },
     "PartialTensorABCDRootR_sbrief": {
-      "expected": "Root Sub ए Sup बी Base एक्स Sub सी Sup डी EndRoot आर"
+      "expected": "मूल अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी मूल समाप्त आर"
     },
     "PartialTensorABCDRRoot_default": {
-      "expected": "StartRoot Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी Baseline आर EndRoot"
+      "expected": "मूल आरंभ पादांक ए उर्ध्वान्क बी आधार रेखा एक्स पादांक सी उर्ध्वान्क डी आधार रेखा आर मूल समाप्त"
     },
     "PartialTensorABCDRRoot_brief": {
-      "expected": "StartRoot Sub ए Sup बी Base एक्स Sub सी Sup डी Base आर EndRoot"
+      "expected": "मूल आरंभ अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी आधार आर मूल समाप्त"
     },
     "PartialTensorABCDRRoot_sbrief": {
-      "expected": "Root Sub ए Sup बी Base एक्स Sub सी Sup डी Base आर EndRoot"
+      "expected": "मूल अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी आधार आर मूल समाप्त"
     },
     "PartialTensorABCDFrac_default": {
-      "expected": "StartFraction 1 Over Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी EndFraction"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त पादांक ए उर्ध्वान्क बी आधार रेखा एक्स पादांक सी उर्ध्वान्क डी अंतभिन्न"
     },
     "PartialTensorABCDFrac_brief": {
-      "expected": "StartFrac 1 Over Sub ए Sup बी Base एक्स Sub सी Sup डी EndFrac"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी अंतभिन्न"
     },
     "PartialTensorABCDFrac_sbrief": {
-      "expected": "Frac 1 Over Sub ए Sup बी Base एक्स Sub सी Sup डी EndFrac"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी भिन्न समाप्त"
     },
     "PartialTensorABCDFracR_default": {
-      "expected": "StartFraction 1 Over Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी EndFraction आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त पादांक ए उर्ध्वान्क बी आधार रेखा एक्स पादांक सी उर्ध्वान्क डी अंतभिन्न आर"
     },
     "PartialTensorABCDFracR_brief": {
-      "expected": "StartFrac 1 Over Sub ए Sup बी Base एक्स Sub सी Sup डी EndFrac आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी अंतभिन्न आर"
     },
     "PartialTensorABCDFracR_sbrief": {
-      "expected": "Frac 1 Over Sub ए Sup बी Base एक्स Sub सी Sup डी EndFrac आर"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी भिन्न समाप्त आर"
     },
     "PartialTensorABCDRFrac_default": {
-      "expected": "StartFraction 1 Over Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी Baseline आर EndFraction"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त पादांक ए उर्ध्वान्क बी आधार रेखा एक्स पादांक सी उर्ध्वान्क डी आधार रेखा आर अंतभिन्न"
     },
     "PartialTensorABCDRFrac_brief": {
-      "expected": "StartFrac 1 Over Sub ए Sup बी Base एक्स Sub सी Sup डी Base आर EndFrac"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी आधार आर अंतभिन्न"
     },
     "PartialTensorABCDRFrac_sbrief": {
-      "expected": "Frac 1 Over Sub ए Sup बी Base एक्स Sub सी Sup डी Base आर EndFrac"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी आधार आर भिन्न समाप्त"
     },
     "PartialTensorB_default": {
-      "expected": "Superscript बी Baseline एक्स"
+      "expected": "उर्ध्वान्क बी आधार रेखा एक्स"
     },
     "PartialTensorB_brief": {
-      "expected": "Sup बी Base एक्स"
+      "expected": "उर्ध्व बी आधार एक्स"
     },
     "PartialTensorB_sbrief": {
-      "expected": "Sup बी Base एक्स"
+      "expected": "उर्ध्व बी आधार एक्स"
     },
     "PartialTensorBR_default": {
-      "expected": "Superscript बी Baseline एक्स Baseline आर"
+      "expected": "उर्ध्वान्क बी आधार रेखा एक्स आधार रेखा आर"
     },
     "PartialTensorBR_brief": {
-      "expected": "Sup बी Base एक्स Base आर"
+      "expected": "उर्ध्व बी आधार एक्स आधार आर"
     },
     "PartialTensorBR_sbrief": {
-      "expected": "Sup बी Base एक्स Base आर"
+      "expected": "उर्ध्व बी आधार एक्स आधार आर"
     },
     "PartialTensorBRootR_default": {
-      "expected": "StartRoot Superscript बी Baseline एक्स EndRoot आर"
+      "expected": "मूल आरंभ उर्ध्वान्क बी आधार रेखा एक्स मूल समाप्त आर"
     },
     "PartialTensorBRootR_brief": {
-      "expected": "StartRoot Sup बी Base एक्स EndRoot आर"
+      "expected": "मूल आरंभ उर्ध्व बी आधार एक्स मूल समाप्त आर"
     },
     "PartialTensorBRootR_sbrief": {
-      "expected": "Root Sup बी Base एक्स EndRoot आर"
+      "expected": "मूल उर्ध्व बी आधार एक्स मूल समाप्त आर"
     },
     "PartialTensorBRRoot_default": {
-      "expected": "StartRoot Superscript बी Baseline एक्स Baseline आर EndRoot"
+      "expected": "मूल आरंभ उर्ध्वान्क बी आधार रेखा एक्स आधार रेखा आर मूल समाप्त"
     },
     "PartialTensorBRRoot_brief": {
-      "expected": "StartRoot Sup बी Base एक्स Base आर EndRoot"
+      "expected": "मूल आरंभ उर्ध्व बी आधार एक्स आधार आर मूल समाप्त"
     },
     "PartialTensorBRRoot_sbrief": {
-      "expected": "Root Sup बी Base एक्स Base आर EndRoot"
+      "expected": "मूल उर्ध्व बी आधार एक्स आधार आर मूल समाप्त"
     },
     "PartialTensorBFracR_default": {
-      "expected": "StartFraction 1 Over Superscript बी Baseline एक्स EndFraction आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त उर्ध्वान्क बी आधार रेखा एक्स अंतभिन्न आर"
     },
     "PartialTensorBFracR_brief": {
-      "expected": "StartFrac 1 Over Sup बी Base एक्स EndFrac आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त उर्ध्व बी आधार एक्स अंतभिन्न आर"
     },
     "PartialTensorBFracR_sbrief": {
-      "expected": "Frac 1 Over Sup बी Base एक्स EndFrac आर"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त उर्ध्व बी आधार एक्स भिन्न समाप्त आर"
     },
     "PartialTensorBRFrac_default": {
-      "expected": "StartFraction 1 Over Superscript बी Baseline एक्स Baseline आर EndFraction"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त उर्ध्वान्क बी आधार रेखा एक्स आधार रेखा आर अंतभिन्न"
     },
     "PartialTensorBRFrac_brief": {
-      "expected": "StartFrac 1 Over Sup बी Base एक्स Base आर EndFrac"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त उर्ध्व बी आधार एक्स आधार आर अंतभिन्न"
     },
     "PartialTensorBRFrac_sbrief": {
-      "expected": "Frac 1 Over Sup बी Base एक्स Base आर EndFrac"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त उर्ध्व बी आधार एक्स आधार आर भिन्न समाप्त"
     },
     "PartialTensorBD_default": {
-      "expected": "Superscript बी Baseline एक्स Superscript डी"
+      "expected": "उर्ध्वान्क बी आधार रेखा एक्स उर्ध्वान्क डी"
     },
     "PartialTensorBD_brief": {
-      "expected": "Sup बी Base एक्स Sup डी"
+      "expected": "उर्ध्व बी आधार एक्स उर्ध्व डी"
     },
     "PartialTensorBD_sbrief": {
-      "expected": "Sup बी Base एक्स Sup डी"
+      "expected": "उर्ध्व बी आधार एक्स उर्ध्व डी"
     },
     "PartialTensorBDR_default": {
-      "expected": "Superscript बी Baseline एक्स Superscript डी Baseline आर"
+      "expected": "उर्ध्वान्क बी आधार रेखा एक्स उर्ध्वान्क डी आधार रेखा आर"
     },
     "PartialTensorBDR_brief": {
-      "expected": "Sup बी Base एक्स Sup डी Base आर"
+      "expected": "उर्ध्व बी आधार एक्स उर्ध्व डी आधार आर"
     },
     "PartialTensorBDR_sbrief": {
-      "expected": "Sup बी Base एक्स Sup डी Base आर"
+      "expected": "उर्ध्व बी आधार एक्स उर्ध्व डी आधार आर"
     },
     "PartialTensorBDRootR_default": {
-      "expected": "StartRoot Superscript बी Baseline एक्स Superscript डी EndRoot आर"
+      "expected": "मूल आरंभ उर्ध्वान्क बी आधार रेखा एक्स उर्ध्वान्क डी मूल समाप्त आर"
     },
     "PartialTensorBDRootR_brief": {
-      "expected": "StartRoot Sup बी Base एक्स Sup डी EndRoot आर"
+      "expected": "मूल आरंभ उर्ध्व बी आधार एक्स उर्ध्व डी मूल समाप्त आर"
     },
     "PartialTensorBDRootR_sbrief": {
-      "expected": "Root Sup बी Base एक्स Sup डी EndRoot आर"
+      "expected": "मूल उर्ध्व बी आधार एक्स उर्ध्व डी मूल समाप्त आर"
     },
     "PartialTensorBDRRoot_default": {
-      "expected": "StartRoot Superscript बी Baseline एक्स Superscript डी Baseline आर EndRoot"
+      "expected": "मूल आरंभ उर्ध्वान्क बी आधार रेखा एक्स उर्ध्वान्क डी आधार रेखा आर मूल समाप्त"
     },
     "PartialTensorBDRRoot_brief": {
-      "expected": "StartRoot Sup बी Base एक्स Sup डी Base आर EndRoot"
+      "expected": "मूल आरंभ उर्ध्व बी आधार एक्स उर्ध्व डी आधार आर मूल समाप्त"
     },
     "PartialTensorBDRRoot_sbrief": {
-      "expected": "Root Sup बी Base एक्स Sup डी Base आर EndRoot"
+      "expected": "मूल उर्ध्व बी आधार एक्स उर्ध्व डी आधार आर मूल समाप्त"
     },
     "PartialTensorBDFracR_default": {
-      "expected": "StartFraction 1 Over Superscript बी Baseline एक्स Superscript डी EndFraction आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त उर्ध्वान्क बी आधार रेखा एक्स उर्ध्वान्क डी अंतभिन्न आर"
     },
     "PartialTensorBDFracR_brief": {
-      "expected": "StartFrac 1 Over Sup बी Base एक्स Sup डी EndFrac आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त उर्ध्व बी आधार एक्स उर्ध्व डी अंतभिन्न आर"
     },
     "PartialTensorBDFracR_sbrief": {
-      "expected": "Frac 1 Over Sup बी Base एक्स Sup डी EndFrac आर"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त उर्ध्व बी आधार एक्स उर्ध्व डी भिन्न समाप्त आर"
     },
     "PartialTensorBDRFrac_default": {
-      "expected": "StartFraction 1 Over Superscript बी Baseline एक्स Superscript डी Baseline आर EndFraction"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त उर्ध्वान्क बी आधार रेखा एक्स उर्ध्वान्क डी आधार रेखा आर अंतभिन्न"
     },
     "PartialTensorBDRFrac_brief": {
-      "expected": "StartFrac 1 Over Sup बी Base एक्स Sup डी Base आर EndFrac"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त उर्ध्व बी आधार एक्स उर्ध्व डी आधार आर अंतभिन्न"
     },
     "PartialTensorBDRFrac_sbrief": {
-      "expected": "Frac 1 Over Sup बी Base एक्स Sup डी Base आर EndFrac"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त उर्ध्व बी आधार एक्स उर्ध्व डी आधार आर भिन्न समाप्त"
     },
     "PartialTensorBC_default": {
-      "expected": "Superscript बी Baseline एक्स Subscript सी"
+      "expected": "उर्ध्वान्क बी आधार रेखा एक्स पादांक सी"
     },
     "PartialTensorBC_brief": {
-      "expected": "Sup बी Base एक्स Sub सी"
+      "expected": "उर्ध्व बी आधार एक्स अधो सी"
     },
     "PartialTensorBC_sbrief": {
-      "expected": "Sup बी Base एक्स Sub सी"
+      "expected": "उर्ध्व बी आधार एक्स अधो सी"
     },
     "PartialTensorBCR_default": {
-      "expected": "Superscript बी Baseline एक्स Subscript सी Baseline आर"
+      "expected": "उर्ध्वान्क बी आधार रेखा एक्स पादांक सी आधार रेखा आर"
     },
     "PartialTensorBCR_brief": {
-      "expected": "Sup बी Base एक्स Sub सी Base आर"
+      "expected": "उर्ध्व बी आधार एक्स अधो सी आधार आर"
     },
     "PartialTensorBCR_sbrief": {
-      "expected": "Sup बी Base एक्स Sub सी Base आर"
+      "expected": "उर्ध्व बी आधार एक्स अधो सी आधार आर"
     },
     "PartialTensorBCRootR_default": {
-      "expected": "StartRoot Superscript बी Baseline एक्स Subscript सी EndRoot आर"
+      "expected": "मूल आरंभ उर्ध्वान्क बी आधार रेखा एक्स पादांक सी मूल समाप्त आर"
     },
     "PartialTensorBCRootR_brief": {
-      "expected": "StartRoot Sup बी Base एक्स Sub सी EndRoot आर"
+      "expected": "मूल आरंभ उर्ध्व बी आधार एक्स अधो सी मूल समाप्त आर"
     },
     "PartialTensorBCRootR_sbrief": {
-      "expected": "Root Sup बी Base एक्स Sub सी EndRoot आर"
+      "expected": "मूल उर्ध्व बी आधार एक्स अधो सी मूल समाप्त आर"
     },
     "PartialTensorBCRRoot_default": {
-      "expected": "StartRoot Superscript बी Baseline एक्स Subscript सी Baseline आर EndRoot"
+      "expected": "मूल आरंभ उर्ध्वान्क बी आधार रेखा एक्स पादांक सी आधार रेखा आर मूल समाप्त"
     },
     "PartialTensorBCRRoot_brief": {
-      "expected": "StartRoot Sup बी Base एक्स Sub सी Base आर EndRoot"
+      "expected": "मूल आरंभ उर्ध्व बी आधार एक्स अधो सी आधार आर मूल समाप्त"
     },
     "PartialTensorBCRRoot_sbrief": {
-      "expected": "Root Sup बी Base एक्स Sub सी Base आर EndRoot"
+      "expected": "मूल उर्ध्व बी आधार एक्स अधो सी आधार आर मूल समाप्त"
     },
     "PartialTensorBCFracR_default": {
-      "expected": "StartFraction 1 Over Superscript बी Baseline एक्स Subscript सी EndFraction आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त उर्ध्वान्क बी आधार रेखा एक्स पादांक सी अंतभिन्न आर"
     },
     "PartialTensorBCFracR_brief": {
-      "expected": "StartFrac 1 Over Sup बी Base एक्स Sub सी EndFrac आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त उर्ध्व बी आधार एक्स अधो सी अंतभिन्न आर"
     },
     "PartialTensorBCFracR_sbrief": {
-      "expected": "Frac 1 Over Sup बी Base एक्स Sub सी EndFrac आर"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त उर्ध्व बी आधार एक्स अधो सी भिन्न समाप्त आर"
     },
     "PartialTensorBCRFrac_default": {
-      "expected": "StartFraction 1 Over Superscript बी Baseline एक्स Subscript सी Baseline आर EndFraction"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त उर्ध्वान्क बी आधार रेखा एक्स पादांक सी आधार रेखा आर अंतभिन्न"
     },
     "PartialTensorBCRFrac_brief": {
-      "expected": "StartFrac 1 Over Sup बी Base एक्स Sub सी Base आर EndFrac"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त उर्ध्व बी आधार एक्स अधो सी आधार आर अंतभिन्न"
     },
     "PartialTensorBCRFrac_sbrief": {
-      "expected": "Frac 1 Over Sup बी Base एक्स Sub सी Base आर EndFrac"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त उर्ध्व बी आधार एक्स अधो सी आधार आर भिन्न समाप्त"
     },
     "PartialTensorBCD_default": {
-      "expected": "Superscript बी Baseline एक्स Subscript सी Superscript डी"
+      "expected": "उर्ध्वान्क बी आधार रेखा एक्स पादांक सी उर्ध्वान्क डी"
     },
     "PartialTensorBCD_brief": {
-      "expected": "Sup बी Base एक्स Sub सी Sup डी"
+      "expected": "उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी"
     },
     "PartialTensorBCD_sbrief": {
-      "expected": "Sup बी Base एक्स Sub सी Sup डी"
+      "expected": "उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी"
     },
     "PartialTensorBCDR_default": {
-      "expected": "Superscript बी Baseline एक्स Subscript सी Superscript डी Baseline आर"
+      "expected": "उर्ध्वान्क बी आधार रेखा एक्स पादांक सी उर्ध्वान्क डी आधार रेखा आर"
     },
     "PartialTensorBCDR_brief": {
-      "expected": "Sup बी Base एक्स Sub सी Sup डी Base आर"
+      "expected": "उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी आधार आर"
     },
     "PartialTensorBCDR_sbrief": {
-      "expected": "Sup बी Base एक्स Sub सी Sup डी Base आर"
+      "expected": "उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी आधार आर"
     },
     "PartialTensorBCDRootR_default": {
-      "expected": "StartRoot Superscript बी Baseline एक्स Subscript सी Superscript डी EndRoot आर"
+      "expected": "मूल आरंभ उर्ध्वान्क बी आधार रेखा एक्स पादांक सी उर्ध्वान्क डी मूल समाप्त आर"
     },
     "PartialTensorBCDRootR_brief": {
-      "expected": "StartRoot Sup बी Base एक्स Sub सी Sup डी EndRoot आर"
+      "expected": "मूल आरंभ उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी मूल समाप्त आर"
     },
     "PartialTensorBCDRootR_sbrief": {
-      "expected": "Root Sup बी Base एक्स Sub सी Sup डी EndRoot आर"
+      "expected": "मूल उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी मूल समाप्त आर"
     },
     "PartialTensorBCDRRoot_default": {
-      "expected": "StartRoot Superscript बी Baseline एक्स Subscript सी Superscript डी Baseline आर EndRoot"
+      "expected": "मूल आरंभ उर्ध्वान्क बी आधार रेखा एक्स पादांक सी उर्ध्वान्क डी आधार रेखा आर मूल समाप्त"
     },
     "PartialTensorBCDRRoot_brief": {
-      "expected": "StartRoot Sup बी Base एक्स Sub सी Sup डी Base आर EndRoot"
+      "expected": "मूल आरंभ उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी आधार आर मूल समाप्त"
     },
     "PartialTensorBCDRRoot_sbrief": {
-      "expected": "Root Sup बी Base एक्स Sub सी Sup डी Base आर EndRoot"
+      "expected": "मूल उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी आधार आर मूल समाप्त"
     },
     "PartialTensorBCDFracR_default": {
-      "expected": "StartFraction 1 Over Superscript बी Baseline एक्स Subscript सी Superscript डी EndFraction आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त उर्ध्वान्क बी आधार रेखा एक्स पादांक सी उर्ध्वान्क डी अंतभिन्न आर"
     },
     "PartialTensorBCDFracR_brief": {
-      "expected": "StartFrac 1 Over Sup बी Base एक्स Sub सी Sup डी EndFrac आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी अंतभिन्न आर"
     },
     "PartialTensorBCDFracR_sbrief": {
-      "expected": "Frac 1 Over Sup बी Base एक्स Sub सी Sup डी EndFrac आर"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी भिन्न समाप्त आर"
     },
     "PartialTensorBCDRFrac_default": {
-      "expected": "StartFraction 1 Over Superscript बी Baseline एक्स Subscript सी Superscript डी Baseline आर EndFraction"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त उर्ध्वान्क बी आधार रेखा एक्स पादांक सी उर्ध्वान्क डी आधार रेखा आर अंतभिन्न"
     },
     "PartialTensorBCDRFrac_brief": {
-      "expected": "StartFrac 1 Over Sup बी Base एक्स Sub सी Sup डी Base आर EndFrac"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी आधार आर अंतभिन्न"
     },
     "PartialTensorBCDRFrac_sbrief": {
-      "expected": "Frac 1 Over Sup बी Base एक्स Sub सी Sup डी Base आर EndFrac"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी आधार आर भिन्न समाप्त"
     },
     "PartialTensorA_default": {
-      "expected": "Subscript ए Baseline एक्स"
+      "expected": "पादांक ए आधार रेखा एक्स"
     },
     "PartialTensorA_brief": {
-      "expected": "Sub ए Base एक्स"
+      "expected": "अधो ए आधार एक्स"
     },
     "PartialTensorA_sbrief": {
-      "expected": "Sub ए Base एक्स"
+      "expected": "अधो ए आधार एक्स"
     },
     "PartialTensorAR_default": {
-      "expected": "Subscript ए Baseline एक्स Baseline आर"
+      "expected": "पादांक ए आधार रेखा एक्स आधार रेखा आर"
     },
     "PartialTensorAR_brief": {
-      "expected": "Sub ए Base एक्स Base आर"
+      "expected": "अधो ए आधार एक्स आधार आर"
     },
     "PartialTensorAR_sbrief": {
-      "expected": "Sub ए Base एक्स Base आर"
+      "expected": "अधो ए आधार एक्स आधार आर"
     },
     "PartialTensorARootR_default": {
-      "expected": "StartRoot Subscript ए Baseline एक्स EndRoot आर"
+      "expected": "मूल आरंभ पादांक ए आधार रेखा एक्स मूल समाप्त आर"
     },
     "PartialTensorARootR_brief": {
-      "expected": "StartRoot Sub ए Base एक्स EndRoot आर"
+      "expected": "मूल आरंभ अधो ए आधार एक्स मूल समाप्त आर"
     },
     "PartialTensorARootR_sbrief": {
-      "expected": "Root Sub ए Base एक्स EndRoot आर"
+      "expected": "मूल अधो ए आधार एक्स मूल समाप्त आर"
     },
     "PartialTensorARRoot_default": {
-      "expected": "StartRoot Subscript ए Baseline एक्स Baseline आर EndRoot"
+      "expected": "मूल आरंभ पादांक ए आधार रेखा एक्स आधार रेखा आर मूल समाप्त"
     },
     "PartialTensorARRoot_brief": {
-      "expected": "StartRoot Sub ए Base एक्स Base आर EndRoot"
+      "expected": "मूल आरंभ अधो ए आधार एक्स आधार आर मूल समाप्त"
     },
     "PartialTensorARRoot_sbrief": {
-      "expected": "Root Sub ए Base एक्स Base आर EndRoot"
+      "expected": "मूल अधो ए आधार एक्स आधार आर मूल समाप्त"
     },
     "PartialTensorAFracR_default": {
-      "expected": "StartFraction 1 Over Subscript ए Baseline एक्स EndFraction आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त पादांक ए आधार रेखा एक्स अंतभिन्न आर"
     },
     "PartialTensorAFracR_brief": {
-      "expected": "StartFrac 1 Over Sub ए Base एक्स EndFrac आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त अधो ए आधार एक्स अंतभिन्न आर"
     },
     "PartialTensorAFracR_sbrief": {
-      "expected": "Frac 1 Over Sub ए Base एक्स EndFrac आर"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त अधो ए आधार एक्स भिन्न समाप्त आर"
     },
     "PartialTensorARFrac_default": {
-      "expected": "StartFraction 1 Over Subscript ए Baseline एक्स Baseline आर EndFraction"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त पादांक ए आधार रेखा एक्स आधार रेखा आर अंतभिन्न"
     },
     "PartialTensorARFrac_brief": {
-      "expected": "StartFrac 1 Over Sub ए Base एक्स Base आर EndFrac"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त अधो ए आधार एक्स आधार आर अंतभिन्न"
     },
     "PartialTensorARFrac_sbrief": {
-      "expected": "Frac 1 Over Sub ए Base एक्स Base आर EndFrac"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त अधो ए आधार एक्स आधार आर भिन्न समाप्त"
     },
     "PartialTensorAD_default": {
-      "expected": "Subscript ए Baseline एक्स Superscript डी"
+      "expected": "पादांक ए आधार रेखा एक्स उर्ध्वान्क डी"
     },
     "PartialTensorAD_brief": {
-      "expected": "Sub ए Base एक्स Sup डी"
+      "expected": "अधो ए आधार एक्स उर्ध्व डी"
     },
     "PartialTensorAD_sbrief": {
-      "expected": "Sub ए Base एक्स Sup डी"
+      "expected": "अधो ए आधार एक्स उर्ध्व डी"
     },
     "PartialTensorADR_default": {
-      "expected": "Subscript ए Baseline एक्स Superscript डी Baseline आर"
+      "expected": "पादांक ए आधार रेखा एक्स उर्ध्वान्क डी आधार रेखा आर"
     },
     "PartialTensorADR_brief": {
-      "expected": "Sub ए Base एक्स Sup डी Base आर"
+      "expected": "अधो ए आधार एक्स उर्ध्व डी आधार आर"
     },
     "PartialTensorADR_sbrief": {
-      "expected": "Sub ए Base एक्स Sup डी Base आर"
+      "expected": "अधो ए आधार एक्स उर्ध्व डी आधार आर"
     },
     "PartialTensorADRootR_default": {
-      "expected": "StartRoot Subscript ए Baseline एक्स Superscript डी EndRoot आर"
+      "expected": "मूल आरंभ पादांक ए आधार रेखा एक्स उर्ध्वान्क डी मूल समाप्त आर"
     },
     "PartialTensorADRootR_brief": {
-      "expected": "StartRoot Sub ए Base एक्स Sup डी EndRoot आर"
+      "expected": "मूल आरंभ अधो ए आधार एक्स उर्ध्व डी मूल समाप्त आर"
     },
     "PartialTensorADRootR_sbrief": {
-      "expected": "Root Sub ए Base एक्स Sup डी EndRoot आर"
+      "expected": "मूल अधो ए आधार एक्स उर्ध्व डी मूल समाप्त आर"
     },
     "PartialTensorADRRoot_default": {
-      "expected": "StartRoot Subscript ए Baseline एक्स Superscript डी Baseline आर EndRoot"
+      "expected": "मूल आरंभ पादांक ए आधार रेखा एक्स उर्ध्वान्क डी आधार रेखा आर मूल समाप्त"
     },
     "PartialTensorADRRoot_brief": {
-      "expected": "StartRoot Sub ए Base एक्स Sup डी Base आर EndRoot"
+      "expected": "मूल आरंभ अधो ए आधार एक्स उर्ध्व डी आधार आर मूल समाप्त"
     },
     "PartialTensorADRRoot_sbrief": {
-      "expected": "Root Sub ए Base एक्स Sup डी Base आर EndRoot"
+      "expected": "मूल अधो ए आधार एक्स उर्ध्व डी आधार आर मूल समाप्त"
     },
     "PartialTensorADFracR_default": {
-      "expected": "StartFraction 1 Over Subscript ए Baseline एक्स Superscript डी EndFraction आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त पादांक ए आधार रेखा एक्स उर्ध्वान्क डी अंतभिन्न आर"
     },
     "PartialTensorADFracR_brief": {
-      "expected": "StartFrac 1 Over Sub ए Base एक्स Sup डी EndFrac आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त अधो ए आधार एक्स उर्ध्व डी अंतभिन्न आर"
     },
     "PartialTensorADFracR_sbrief": {
-      "expected": "Frac 1 Over Sub ए Base एक्स Sup डी EndFrac आर"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त अधो ए आधार एक्स उर्ध्व डी भिन्न समाप्त आर"
     },
     "PartialTensorADRFrac_default": {
-      "expected": "StartFraction 1 Over Subscript ए Baseline एक्स Superscript डी Baseline आर EndFraction"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त पादांक ए आधार रेखा एक्स उर्ध्वान्क डी आधार रेखा आर अंतभिन्न"
     },
     "PartialTensorADRFrac_brief": {
-      "expected": "StartFrac 1 Over Sub ए Base एक्स Sup डी Base आर EndFrac"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त अधो ए आधार एक्स उर्ध्व डी आधार आर अंतभिन्न"
     },
     "PartialTensorADRFrac_sbrief": {
-      "expected": "Frac 1 Over Sub ए Base एक्स Sup डी Base आर EndFrac"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त अधो ए आधार एक्स उर्ध्व डी आधार आर भिन्न समाप्त"
     },
     "PartialTensorAC_default": {
-      "expected": "Subscript ए Baseline एक्स Subscript सी"
+      "expected": "पादांक ए आधार रेखा एक्स पादांक सी"
     },
     "PartialTensorAC_brief": {
-      "expected": "Sub ए Base एक्स Sub सी"
+      "expected": "अधो ए आधार एक्स अधो सी"
     },
     "PartialTensorAC_sbrief": {
-      "expected": "Sub ए Base एक्स Sub सी"
+      "expected": "अधो ए आधार एक्स अधो सी"
     },
     "PartialTensorACR_default": {
-      "expected": "Subscript ए Baseline एक्स Subscript सी Baseline आर"
+      "expected": "पादांक ए आधार रेखा एक्स पादांक सी आधार रेखा आर"
     },
     "PartialTensorACR_brief": {
-      "expected": "Sub ए Base एक्स Sub सी Base आर"
+      "expected": "अधो ए आधार एक्स अधो सी आधार आर"
     },
     "PartialTensorACR_sbrief": {
-      "expected": "Sub ए Base एक्स Sub सी Base आर"
+      "expected": "अधो ए आधार एक्स अधो सी आधार आर"
     },
     "PartialTensorACRootR_default": {
-      "expected": "StartRoot Subscript ए Baseline एक्स Subscript सी EndRoot आर"
+      "expected": "मूल आरंभ पादांक ए आधार रेखा एक्स पादांक सी मूल समाप्त आर"
     },
     "PartialTensorACRootR_brief": {
-      "expected": "StartRoot Sub ए Base एक्स Sub सी EndRoot आर"
+      "expected": "मूल आरंभ अधो ए आधार एक्स अधो सी मूल समाप्त आर"
     },
     "PartialTensorACRootR_sbrief": {
-      "expected": "Root Sub ए Base एक्स Sub सी EndRoot आर"
+      "expected": "मूल अधो ए आधार एक्स अधो सी मूल समाप्त आर"
     },
     "PartialTensorACRRoot_default": {
-      "expected": "StartRoot Subscript ए Baseline एक्स Subscript सी Baseline आर EndRoot"
+      "expected": "मूल आरंभ पादांक ए आधार रेखा एक्स पादांक सी आधार रेखा आर मूल समाप्त"
     },
     "PartialTensorACRRoot_brief": {
-      "expected": "StartRoot Sub ए Base एक्स Sub सी Base आर EndRoot"
+      "expected": "मूल आरंभ अधो ए आधार एक्स अधो सी आधार आर मूल समाप्त"
     },
     "PartialTensorACRRoot_sbrief": {
-      "expected": "Root Sub ए Base एक्स Sub सी Base आर EndRoot"
+      "expected": "मूल अधो ए आधार एक्स अधो सी आधार आर मूल समाप्त"
     },
     "PartialTensorACFracR_default": {
-      "expected": "StartFraction 1 Over Subscript ए Baseline एक्स Subscript सी EndFraction आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त पादांक ए आधार रेखा एक्स पादांक सी अंतभिन्न आर"
     },
     "PartialTensorACFracR_brief": {
-      "expected": "StartFrac 1 Over Sub ए Base एक्स Sub सी EndFrac आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त अधो ए आधार एक्स अधो सी अंतभिन्न आर"
     },
     "PartialTensorACFracR_sbrief": {
-      "expected": "Frac 1 Over Sub ए Base एक्स Sub सी EndFrac आर"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त अधो ए आधार एक्स अधो सी भिन्न समाप्त आर"
     },
     "PartialTensorACRFrac_default": {
-      "expected": "StartFraction 1 Over Subscript ए Baseline एक्स Subscript सी Baseline आर EndFraction"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त पादांक ए आधार रेखा एक्स पादांक सी आधार रेखा आर अंतभिन्न"
     },
     "PartialTensorACRFrac_brief": {
-      "expected": "StartFrac 1 Over Sub ए Base एक्स Sub सी Base आर EndFrac"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त अधो ए आधार एक्स अधो सी आधार आर अंतभिन्न"
     },
     "PartialTensorACRFrac_sbrief": {
-      "expected": "Frac 1 Over Sub ए Base एक्स Sub सी Base आर EndFrac"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त अधो ए आधार एक्स अधो सी आधार आर भिन्न समाप्त"
     },
     "PartialTensorACD_default": {
-      "expected": "Subscript ए Baseline एक्स Subscript सी Superscript डी"
+      "expected": "पादांक ए आधार रेखा एक्स पादांक सी उर्ध्वान्क डी"
     },
     "PartialTensorACD_brief": {
-      "expected": "Sub ए Base एक्स Sub सी Sup डी"
+      "expected": "अधो ए आधार एक्स अधो सी उर्ध्व डी"
     },
     "PartialTensorACD_sbrief": {
-      "expected": "Sub ए Base एक्स Sub सी Sup डी"
+      "expected": "अधो ए आधार एक्स अधो सी उर्ध्व डी"
     },
     "PartialTensorACDR_default": {
-      "expected": "Subscript ए Baseline एक्स Subscript सी Superscript डी Baseline आर"
+      "expected": "पादांक ए आधार रेखा एक्स पादांक सी उर्ध्वान्क डी आधार रेखा आर"
     },
     "PartialTensorACDR_brief": {
-      "expected": "Sub ए Base एक्स Sub सी Sup डी Base आर"
+      "expected": "अधो ए आधार एक्स अधो सी उर्ध्व डी आधार आर"
     },
     "PartialTensorACDR_sbrief": {
-      "expected": "Sub ए Base एक्स Sub सी Sup डी Base आर"
+      "expected": "अधो ए आधार एक्स अधो सी उर्ध्व डी आधार आर"
     },
     "PartialTensorACDRootR_default": {
-      "expected": "StartRoot Subscript ए Baseline एक्स Subscript सी Superscript डी EndRoot आर"
+      "expected": "मूल आरंभ पादांक ए आधार रेखा एक्स पादांक सी उर्ध्वान्क डी मूल समाप्त आर"
     },
     "PartialTensorACDRootR_brief": {
-      "expected": "StartRoot Sub ए Base एक्स Sub सी Sup डी EndRoot आर"
+      "expected": "मूल आरंभ अधो ए आधार एक्स अधो सी उर्ध्व डी मूल समाप्त आर"
     },
     "PartialTensorACDRootR_sbrief": {
-      "expected": "Root Sub ए Base एक्स Sub सी Sup डी EndRoot आर"
+      "expected": "मूल अधो ए आधार एक्स अधो सी उर्ध्व डी मूल समाप्त आर"
     },
     "PartialTensorACDRRoot_default": {
-      "expected": "StartRoot Subscript ए Baseline एक्स Subscript सी Superscript डी Baseline आर EndRoot"
+      "expected": "मूल आरंभ पादांक ए आधार रेखा एक्स पादांक सी उर्ध्वान्क डी आधार रेखा आर मूल समाप्त"
     },
     "PartialTensorACDRRoot_brief": {
-      "expected": "StartRoot Sub ए Base एक्स Sub सी Sup डी Base आर EndRoot"
+      "expected": "मूल आरंभ अधो ए आधार एक्स अधो सी उर्ध्व डी आधार आर मूल समाप्त"
     },
     "PartialTensorACDRRoot_sbrief": {
-      "expected": "Root Sub ए Base एक्स Sub सी Sup डी Base आर EndRoot"
+      "expected": "मूल अधो ए आधार एक्स अधो सी उर्ध्व डी आधार आर मूल समाप्त"
     },
     "PartialTensorACDFracR_default": {
-      "expected": "StartFraction 1 Over Subscript ए Baseline एक्स Subscript सी Superscript डी EndFraction आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त पादांक ए आधार रेखा एक्स पादांक सी उर्ध्वान्क डी अंतभिन्न आर"
     },
     "PartialTensorACDFracR_brief": {
-      "expected": "StartFrac 1 Over Sub ए Base एक्स Sub सी Sup डी EndFrac आर"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त अधो ए आधार एक्स अधो सी उर्ध्व डी अंतभिन्न आर"
     },
     "PartialTensorACDFracR_sbrief": {
-      "expected": "Frac 1 Over Sub ए Base एक्स Sub सी Sup डी EndFrac आर"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त अधो ए आधार एक्स अधो सी उर्ध्व डी भिन्न समाप्त आर"
     },
     "PartialTensorACDRFrac_default": {
-      "expected": "StartFraction 1 Over Subscript ए Baseline एक्स Subscript सी Superscript डी Baseline आर EndFraction"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त पादांक ए आधार रेखा एक्स पादांक सी उर्ध्वान्क डी आधार रेखा आर अंतभिन्न"
     },
     "PartialTensorACDRFrac_brief": {
-      "expected": "StartFrac 1 Over Sub ए Base एक्स Sub सी Sup डी Base आर EndFrac"
+      "expected": "आरंभभिन्न 1 अपूर्णांक समाप्त अधो ए आधार एक्स अधो सी उर्ध्व डी आधार आर अंतभिन्न"
     },
     "PartialTensorACDRFrac_sbrief": {
-      "expected": "Frac 1 Over Sub ए Base एक्स Sub सी Sup डी Base आर EndFrac"
+      "expected": "भिन्न 1 अपूर्णांक समाप्त अधो ए आधार एक्स अधो सी उर्ध्व डी आधार आर भिन्न समाप्त"
     },
     "TensorMultiSimpleABC_default": {
-      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी Sub Superscript एल"
+      "expected": "पादांक ए उर्ध्वान्क बी आधार रेखा एक्स पादांक सी अधो उर्ध्वान्क एल"
     },
     "TensorMultiSimpleABC_brief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी Sub Sup एल"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी अधो उर्ध्व एल"
     },
     "TensorMultiSimpleABC_sbrief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी Sub Sup एल"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी अधो उर्ध्व एल"
     },
     "TensorMultiSub_default": {
-      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी Sub Subscript एल Superscript डी"
+      "expected": "पादांक ए उर्ध्वान्क बी आधार रेखा एक्स पादांक सी अधो पादांक एल उर्ध्वान्क डी"
     },
     "TensorMultiSub_brief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी Sub Sub एल Sup डी"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी अधो अधो एल उर्ध्व डी"
     },
     "TensorMultiSub_sbrief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी Sub Sub एल Sup डी"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी अधो अधो एल उर्ध्व डी"
     },
     "TensorMultiSubSup_default": {
-      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी Sub Subscript एल Sub Sub Superscript के Subscript ई Superscript डी"
+      "expected": "पादांक ए उर्ध्वान्क बी आधार रेखा एक्स पादांक सी अधो पादांक एल अधो अधो उर्ध्वान्क के पादांक ई उर्ध्वान्क डी"
     },
     "TensorMultiSubSup_brief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी Sub Sub एल Sub Sub Sup के Sub ई Sup डी"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी अधो अधो एल अधो अधो उर्ध्व के अधो ई उर्ध्व डी"
     },
     "TensorMultiSubSup_sbrief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी Sub Sub एल Sub Sub Sup के Sub ई Sup डी"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी अधो अधो एल अधो अधो उर्ध्व के अधो ई उर्ध्व डी"
     },
     "TensorMultiSimple_default": {
-      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी Sub Superscript एल Superscript डी"
+      "expected": "पादांक ए उर्ध्वान्क बी आधार रेखा एक्स पादांक सी अधो उर्ध्वान्क एल उर्ध्वान्क डी"
     },
     "TensorMultiSimple_brief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी Sub Sup एल Sup डी"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी अधो उर्ध्व एल उर्ध्व डी"
     },
     "TensorMultiSimple_sbrief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी Sub Sup एल Sup डी"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी अधो उर्ध्व एल उर्ध्व डी"
     },
     "TensorMultiComplex_default": {
-      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी के Sub Superscript एल Superscript डी"
+      "expected": "पादांक ए उर्ध्वान्क बी आधार रेखा एक्स पादांक सी के अधो उर्ध्वान्क एल उर्ध्वान्क डी"
     },
     "TensorMultiComplex_brief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी के Sub Sup एल Sup डी"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी के अधो उर्ध्व एल उर्ध्व डी"
     },
     "TensorMultiComplex_sbrief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी के Sub Sup एल Sup डी"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी के अधो उर्ध्व एल उर्ध्व डी"
     },
     "TwoTensors_default": {
-      "expected": "Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी Baseline Subscript ए Superscript बी Baseline एक्स Subscript सी Superscript डी"
+      "expected": "पादांक ए उर्ध्वान्क बी आधार रेखा एक्स पादांक सी उर्ध्वान्क डी आधार रेखा पादांक ए उर्ध्वान्क बी आधार रेखा एक्स पादांक सी उर्ध्वान्क डी"
     },
     "TwoTensors_brief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी Sup डी Base Sub ए Sup बी Base एक्स Sub सी Sup डी"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी आधार अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी"
     },
     "TwoTensors_sbrief": {
-      "expected": "Sub ए Sup बी Base एक्स Sub सी Sup डी Base Sub ए Sup बी Base एक्स Sub सी Sup डी"
+      "expected": "अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी आधार अधो ए उर्ध्व बी आधार एक्स अधो सी उर्ध्व डी"
     }
   }
 }

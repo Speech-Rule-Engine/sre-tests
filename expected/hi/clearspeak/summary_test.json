@@ -106,7 +106,7 @@
       "expected": "के साथ योग 2 पद"
     },
     "AbstrBigop_default": {
-      "expected": "एन-आर्य योग :  योग चिह्न"
+      "expected": "योग चिह्न"
     },
     "AbstrBinomial_default": {
       "expected": "द्विपद"
@@ -115,7 +115,7 @@
       "expected": "फलन उपशर्त कथन के साथ 2 फलन उपशर्त"
     },
     "AbstrCell_default": {
-      "expected": "1st स्तंभ में table"
+      "expected": "१ली स्तंभ में सारणी"
     },
     "AbstrContinuedFraction_default": {
       "expected": "सतत भिन्न"
@@ -133,7 +133,7 @@
       "expected": "तत्समक"
     },
     "AbstrInfixop_default": {
-      "expected": "division के साथ 2 अवयव"
+      "expected": "विभाजन के साथ 2 अवयव"
     },
     "AbstrIntegral_default": {
       "expected": "समाकल (in calculus)"
@@ -142,7 +142,7 @@
       "expected": "फलन सीमा"
     },
     "AbstrLine_default": {
-      "expected": "1st पंक्ति में multiple lines"
+      "expected": "१ली पंक्ति में बहु रेखाएं"
     },
     "AbstrMatrix_default": {
       "expected": "3 गुणा 2 आव्यूह"
@@ -160,13 +160,13 @@
       "expected": "संख्या"
     },
     "AbstrPunctuated_default": {
-      "expected": "अल्पविराम :  दशमलव विभाजक विभाजित सूचि लम्बाई का 3"
+      "expected": "अल्पविराम विभाजित सूचि लम्बाई का 3"
     },
     "AbstrRelation_default": {
-      "expected": "equality"
+      "expected": "समता"
     },
     "AbstrRelationSeq_default": {
-      "expected": "equality अनुक्रम के साथ 3 अवयव"
+      "expected": "समता अनुक्रम के साथ 3 अवयव"
     },
     "AbstrRoot_default": {
       "expected": "वां मूल 3"
@@ -175,7 +175,7 @@
       "expected": "नीड़ित मूल्यांक 3"
     },
     "AbstrRow_default": {
-      "expected": "1st पंक्ति में table के साथ 2 स्तंभ"
+      "expected": "१ली पंक्ति में सारणी के साथ 2 स्तंभ"
     },
     "AbstrRowvector_default": {
       "expected": "2 विमीय पंक्ति सदिश"
@@ -223,10 +223,10 @@
       "expected": "चल तादात के अवयवों का संबंधानुक्रम"
     },
     "AbstrVarPunctuated_default": {
-      "expected": "अल्पविराम :  दशमलव विभाजक विभाजित सूचि चल लम्बाई का"
+      "expected": "अल्पविराम विभाजित सूचि चल लम्बाई का"
     },
     "AbstrVarRelation_default": {
-      "expected": "equality अनुक्रम चल तादात के अवयवों के साथ"
+      "expected": "समता अनुक्रम चल तादात के अवयवों के साथ"
     },
     "AbstrVarVector_default": {
       "expected": "एन विमीय सदिश"
@@ -235,7 +235,7 @@
       "expected": "3 विमीय सदिश"
     },
     "AbstrVarSubtraction_default": {
-      "expected": "subtraction चल तादात के अवयवों के साथ"
+      "expected": "व्यवकलन चल तादात के अवयवों के साथ"
     },
     "AbstrCountImplicit_default": {
       "expected": "के साथ गुणनफल 3 गुणनखंड"
@@ -244,13 +244,289 @@
       "expected": "चल तादात के गुणनखंडो का गुणनफल"
     },
     "AbstrVarArrowRelation_default": {
-      "expected": "arrow अनुक्रम चल तादात के अवयवों के साथ"
+      "expected": "तीर अनुक्रम चल तादात के अवयवों के साथ"
     },
     "AbstrArrowRelation_default": {
-      "expected": "arrow"
+      "expected": "तीर"
     },
     "AbstrVarRowvector_default": {
       "expected": "एन विमीय पंक्ति सदिश"
+    },
+    "AbstrAddition_brief": {
+      "expected": "के साथ योग 2 पद"
+    },
+    "AbstrAddition_sbrief": {
+      "expected": "के साथ योग 2 पद"
+    },
+    "AbstrBigop_brief": {
+      "expected": "योग चिह्न"
+    },
+    "AbstrBigop_sbrief": {
+      "expected": "योग चिह्न"
+    },
+    "AbstrBinomial_brief": {
+      "expected": "द्विपद"
+    },
+    "AbstrBinomial_sbrief": {
+      "expected": "द्विपद"
+    },
+    "AbstrCases_brief": {
+      "expected": "फलन उपशर्त कथन के साथ 2 फलन उपशर्त"
+    },
+    "AbstrCases_sbrief": {
+      "expected": "फलन उपशर्त कथन के साथ 2 फलन उपशर्त"
+    },
+    "AbstrCell_brief": {
+      "expected": "१ली स्तंभ में सारणी"
+    },
+    "AbstrCell_sbrief": {
+      "expected": "१ली स्तंभ में सारणी"
+    },
+    "AbstrContinuedFraction_brief": {
+      "expected": "सतत भिन्न"
+    },
+    "AbstrContinuedFraction_sbrief": {
+      "expected": "सतत भिन्न"
+    },
+    "AbstrDeterminant_brief": {
+      "expected": "2 विमीय सारणिक"
+    },
+    "AbstrDeterminant_sbrief": {
+      "expected": "2 विमीय सारणिक"
+    },
+    "AbstrFraction_brief": {
+      "expected": "भिन्न"
+    },
+    "AbstrFraction_sbrief": {
+      "expected": "भिन्न"
+    },
+    "AbstrFunction_brief": {
+      "expected": "फलन व्यंजक"
+    },
+    "AbstrFunction_sbrief": {
+      "expected": "फलन व्यंजक"
+    },
+    "AbstrIdentifier_brief": {
+      "expected": "तत्समक"
+    },
+    "AbstrIdentifier_sbrief": {
+      "expected": "तत्समक"
+    },
+    "AbstrInfixop_brief": {
+      "expected": "विभाजन के साथ 2 अवयव"
+    },
+    "AbstrInfixop_sbrief": {
+      "expected": "विभाजन के साथ 2 अवयव"
+    },
+    "AbstrIntegral_brief": {
+      "expected": "समाकल (in calculus)"
+    },
+    "AbstrIntegral_sbrief": {
+      "expected": "समाकल (in calculus)"
+    },
+    "AbstrLim_brief": {
+      "expected": "फलन सीमा"
+    },
+    "AbstrLim_sbrief": {
+      "expected": "फलन सीमा"
+    },
+    "AbstrLine_brief": {
+      "expected": "१ली पंक्ति में बहु रेखाएं"
+    },
+    "AbstrLine_sbrief": {
+      "expected": "१ली पंक्ति में बहु रेखाएं"
+    },
+    "AbstrMatrix_brief": {
+      "expected": "3 गुणा 2 आव्यूह"
+    },
+    "AbstrMatrix_sbrief": {
+      "expected": "3 गुणा 2 आव्यूह"
+    },
+    "AbstrMixedNumber_brief": {
+      "expected": "मिश्र संख्या"
+    },
+    "AbstrMixedNumber_sbrief": {
+      "expected": "मिश्र संख्या"
+    },
+    "AbstrMultiplication_brief": {
+      "expected": "के साथ गुणनफल 2 गुणनखंड"
+    },
+    "AbstrMultiplication_sbrief": {
+      "expected": "के साथ गुणनफल 2 गुणनखंड"
+    },
+    "AbstrMultirel_brief": {
+      "expected": "संबंधानुक्रम के साथ 3 अवयव"
+    },
+    "AbstrMultirel_sbrief": {
+      "expected": "संबंधानुक्रम के साथ 3 अवयव"
+    },
+    "AbstrNumber_brief": {
+      "expected": "संख्या"
+    },
+    "AbstrNumber_sbrief": {
+      "expected": "संख्या"
+    },
+    "AbstrPunctuated_brief": {
+      "expected": "अल्पविराम विभाजित सूचि लम्बाई का 3"
+    },
+    "AbstrPunctuated_sbrief": {
+      "expected": "अल्पविराम विभाजित सूचि लम्बाई का 3"
+    },
+    "AbstrRelation_brief": {
+      "expected": "समता"
+    },
+    "AbstrRelation_sbrief": {
+      "expected": "समता"
+    },
+    "AbstrRelationSeq_brief": {
+      "expected": "समता अनुक्रम के साथ 3 अवयव"
+    },
+    "AbstrRelationSeq_sbrief": {
+      "expected": "समता अनुक्रम के साथ 3 अवयव"
+    },
+    "AbstrRoot_brief": {
+      "expected": "वां मूल 3"
+    },
+    "AbstrRoot_sbrief": {
+      "expected": "वां मूल 3"
+    },
+    "AbstrRootNested_brief": {
+      "expected": "नीड़ित मूल्यांक 3"
+    },
+    "AbstrRootNested_sbrief": {
+      "expected": "नीड़ित मूल्यांक 3"
+    },
+    "AbstrRow_brief": {
+      "expected": "१ली पंक्ति में सारणी के साथ 2 स्तंभ"
+    },
+    "AbstrRow_sbrief": {
+      "expected": "१ली पंक्ति में सारणी के साथ 2 स्तंभ"
+    },
+    "AbstrRowvector_brief": {
+      "expected": "2 विमीय पंक्ति सदिश"
+    },
+    "AbstrRowvector_sbrief": {
+      "expected": "2 विमीय पंक्ति सदिश"
+    },
+    "AbstrSqrt_brief": {
+      "expected": "वर्ग मूल"
+    },
+    "AbstrSqrt_sbrief": {
+      "expected": "वर्ग मूल"
+    },
+    "AbstrSqrtNested_brief": {
+      "expected": "नीड़ित वर्ग मूल"
+    },
+    "AbstrSqrtNested_sbrief": {
+      "expected": "नीड़ित वर्ग मूल"
+    },
+    "AbstrSquarematrix_brief": {
+      "expected": "2 विमीय वर्ग आव्यूह"
+    },
+    "AbstrSquarematrix_sbrief": {
+      "expected": "2 विमीय वर्ग आव्यूह"
+    },
+    "AbstrSubscript_brief": {
+      "expected": "पादांक (when a number)"
+    },
+    "AbstrSubscript_sbrief": {
+      "expected": "पादांक (when a number)"
+    },
+    "AbstrSubsup_brief": {
+      "expected": "पादांक वाला घातांक"
+    },
+    "AbstrSubsup_sbrief": {
+      "expected": "पादांक वाला घातांक"
+    },
+    "AbstrSuperscript_brief": {
+      "expected": "घातांक"
+    },
+    "AbstrSuperscript_sbrief": {
+      "expected": "घातांक"
+    },
+    "AbstrTable_brief": {
+      "expected": "के साथ सारणी 2 पक्तियां और 2 स्तंभ"
+    },
+    "AbstrTable_sbrief": {
+      "expected": "के साथ सारणी 2 पक्तियां और 2 स्तंभ"
+    },
+    "AbstrText_brief": {
+      "expected": "पाठ"
+    },
+    "AbstrText_sbrief": {
+      "expected": "पाठ"
+    },
+    "AbstrVarAddition_brief": {
+      "expected": "चल तादात के पदों का योग"
+    },
+    "AbstrVarAddition_sbrief": {
+      "expected": "चल तादात के पदों का योग"
+    },
+    "AbstrVarCases_brief": {
+      "expected": "चल तादात की फलन उपशर्तों वाला फलन उपशर्त कथन"
+    },
+    "AbstrVarCases_sbrief": {
+      "expected": "चल तादात की फलन उपशर्तों वाला फलन उपशर्त कथन"
+    },
+    "AbstrVarDeterminant_brief": {
+      "expected": "एन विमीय सारणिक"
+    },
+    "AbstrVarDeterminant_sbrief": {
+      "expected": "एन विमीय सारणिक"
+    },
+    "AbstrVarMatrix_brief": {
+      "expected": "एन गुणा एम आव्यूह"
+    },
+    "AbstrVarMatrix_sbrief": {
+      "expected": "एन गुणा एम आव्यूह"
+    },
+    "AbstrVarMultiplication_brief": {
+      "expected": "चल तादात के गुणनखंडो का गुणनफल"
+    },
+    "AbstrVarMultiplication_sbrief": {
+      "expected": "चल तादात के गुणनखंडो का गुणनफल"
+    },
+    "AbstrVarMultirel_brief": {
+      "expected": "चल तादात के अवयवों का संबंधानुक्रम"
+    },
+    "AbstrVarMultirel_sbrief": {
+      "expected": "चल तादात के अवयवों का संबंधानुक्रम"
+    },
+    "AbstrVarPunctuated_brief": {
+      "expected": "अल्पविराम विभाजित सूचि चल लम्बाई का"
+    },
+    "AbstrVarPunctuated_sbrief": {
+      "expected": "अल्पविराम विभाजित सूचि चल लम्बाई का"
+    },
+    "AbstrVarRelation_brief": {
+      "expected": "समता अनुक्रम चल तादात के अवयवों के साथ"
+    },
+    "AbstrVarRelation_sbrief": {
+      "expected": "समता अनुक्रम चल तादात के अवयवों के साथ"
+    },
+    "AbstrVarVector_brief": {
+      "expected": "एन विमीय सदिश"
+    },
+    "AbstrVarVector_sbrief": {
+      "expected": "एन विमीय सदिश"
+    },
+    "AbstrVector_brief": {
+      "expected": "3 विमीय सदिश"
+    },
+    "AbstrVector_sbrief": {
+      "expected": "3 विमीय सदिश"
+    },
+    "AbstrVarSubtraction_brief": {
+      "expected": "व्यवकलन चल तादात के अवयवों के साथ"
+    },
+    "AbstrVarSubtraction_sbrief": {
+      "expected": "व्यवकलन चल तादात के अवयवों के साथ"
+    },
+    "AbstrCountImplicit_brief": {
+      "expected": "के साथ गुणनफल 3 गुणनखंड"
+    },
+    "AbstrCountImplicit_sbrief": {
+      "expected": "के साथ गुणनफल 3 गुणनखंड"
     }
   }
 }
