@@ -1752,37 +1752,37 @@
       "expected": "<number role=\"mixed\" id=\"5\"><children><number role=\"latinletter\" font=\"normal\" id=\"0\">a</number><fraction role=\"division\" id=\"4\"><children><number role=\"integer\" font=\"normal\" id=\"2\">3</number><identifier role=\"latinletter\" font=\"italic\" id=\"3\">p</identifier></children></fraction></children></number>"
     },
     "MglyphTokens_0": {
-      "expected": "<identifier role=\"unknown\" id=\"0\" ext-speech=\"my glyph\"/>"
+      "expected": "<identifier role=\"mglyph\" id=\"0\" ext-speech=\"my glyph\"/>"
     },
     "MglyphToken_1": {
-      "expected": "<identifier role=\"unknown\" id=\"0\" ext-speech=\"your glyph\"/>"
+      "expected": "<identifier role=\"mglyph\" id=\"0\" ext-speech=\"your glyph\"/>"
     },
     "MglyphToken_2": {
-      "expected": "<operator role=\"unknown\" id=\"0\" ext-speech=\"my glyph\"/>"
+      "expected": "<operator role=\"mglyph\" id=\"0\" ext-speech=\"my glyph\"/>"
     },
     "MglyphToken_3": {
-      "expected": "<operator role=\"unknown\" id=\"0\" ext-speech=\"your glyph\"/>"
+      "expected": "<operator role=\"mglyph\" id=\"0\" ext-speech=\"your glyph\"/>"
     },
     "MglyphToken_4": {
-      "expected": "<number role=\"integer\" id=\"0\" ext-speech=\"my glyph\"/>"
+      "expected": "<number role=\"mglyph\" id=\"0\" ext-speech=\"my glyph\"/>"
     },
     "MglyphToken_5": {
-      "expected": "<number role=\"integer\" id=\"0\" ext-speech=\"your glyph\"/>"
+      "expected": "<number role=\"mglyph\" id=\"0\" ext-speech=\"your glyph\"/>"
     },
     "MglyphToken_6": {
-      "expected": "<unknown role=\"unknown\" id=\"0\" ext-speech=\"my glyph\"/>"
+      "expected": "<unknown role=\"mglyph\" id=\"0\" ext-speech=\"my glyph\"/>"
     },
     "MglyphToken_7": {
-      "expected": "<unknown role=\"unknown\" id=\"0\" ext-speech=\"your glyph\"/>"
+      "expected": "<unknown role=\"mglyph\" id=\"0\" ext-speech=\"your glyph\"/>"
     },
     "MglyphToken_8": {
-      "expected": "<unknown role=\"unknown\" id=\"0\" ext-speech=\"my glyph\"/>"
+      "expected": "<unknown role=\"mglyph\" id=\"0\" ext-speech=\"my glyph\"/>"
     },
     "MglyphToken_9": {
-      "expected": "<unknown role=\"unknown\" id=\"0\" ext-speech=\"your glyph\"/>"
+      "expected": "<unknown role=\"mglyph\" id=\"0\" ext-speech=\"your glyph\"/>"
     },
     "MglyphGeneral_0": {
-      "expected": "<relseq role=\"equality\" id=\"6\">=<content><relation role=\"equality\" id=\"3\">=</relation></content><children><infixop role=\"addition\" id=\"5\">+<content><operator role=\"addition\" id=\"1\">+</operator></content><children><identifier role=\"unknown\" id=\"0\" ext-speech=\"23braid\"/><identifier role=\"unknown\" id=\"2\" ext-speech=\"132braid\"/></children></infixop><identifier role=\"unknown\" id=\"4\" ext-speech=\"13braid\"/></children></relseq>"
+      "expected": "<relseq role=\"equality\" id=\"6\">=<content><relation role=\"equality\" id=\"3\">=</relation></content><children><infixop role=\"addition\" id=\"5\">+<content><operator role=\"addition\" id=\"1\">+</operator></content><children><identifier role=\"mglyph\" id=\"0\" ext-speech=\"23braid\"/><identifier role=\"mglyph\" id=\"2\" ext-speech=\"132braid\"/></children></infixop><identifier role=\"mglyph\" id=\"4\" ext-speech=\"13braid\"/></children></relseq>"
     },
     "MglyphGeneral_1": {
       "expected": "<stree><infixop role=\"implicit\" id=\"8\">⁢<content><operator role=\"multiplication\" id=\"7\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">N</identifier><subscript role=\"latinletter\" id=\"6\"><children><identifier role=\"latinletter\" font=\"italic\" id=\"1\">M</identifier><relseq role=\"set\" id=\"5\">⊂<content><relation role=\"set\" id=\"3\">⊂</relation></content><children><number role=\"integer\" font=\"normal\" id=\"2\">1</number><unknown role=\"mglyph\" id=\"4\" ext-speech=\"mfin\"/></children></relseq></children></subscript></children></infixop></stree>"
