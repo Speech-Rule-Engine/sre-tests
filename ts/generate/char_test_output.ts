@@ -104,6 +104,7 @@ const AllConstraints: {[loc: string]: string[]} = {
   fr: ['default', 'mathspeak', 'clearspeak'],
   de: ['default', 'mathspeak', 'clearspeak'],
   it: ['default', 'mathspeak', 'clearspeak'],
+  hi: ['default', 'mathspeak', 'clearspeak'],
   nemeth: ['default']
 };
 
@@ -258,11 +259,14 @@ function testExtras(
 }
 
 /**
- * @param locale
- * @param json
- * @param kind
+ * Retrieves all extra definitions (i.e., none default style) from the json
+ * tests.
+ *
+ * @param locale The locale.
+ * @param json The JSON test object.
+ * @param kind The symbol type.
  */
-export function getExtrasFor(
+function getExtrasFor(
   locale: string, json: tu.JsonTests, kind: SymbolType) {
   let symbols = symbolsfromLocale(json, kind);
   let domains = AllConstraints[locale];
@@ -472,8 +476,12 @@ function writeOutputToFile(
 }
 
 /**
- * @param json
- * @param kind
+ * Retrieves all symbols from the given (excludes SI units, those are computed
+ * separately).
+ *
+ * @param json The json test structure of the locale.
+ * @param kind The kind of symbosl to be retrieved.
+ * @return List of symbol mappings
  */
 function symbolsfromLocale(json: tu.JsonTest, kind: SymbolType): tu.JsonTest[] {
   let keys = Object.keys(json);
@@ -537,8 +545,11 @@ function getSINamesFor(prefixes: string[], names: string): string[] {
 // One is from base tests
 // Two is from locale
 /**
- * @param locale
- * @param kind
+ * Computes the difference of tests form the base file and the actual symbols in
+ * the locale.
+ *
+ * @param locale The locale.
+ * @param kind The type of symbols.
  */
 export function diffBaseVsLocale(
   locale: string, kind: SymbolType): tu.JsonTest {
