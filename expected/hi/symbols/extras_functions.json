@@ -6,5 +6,12 @@
   "active": "ExtraSymbolsHindi",
   "information": "Hindi Extra Function tests.",
   "compare": true,
-  "tests": {}
+  "tests": {
+    "ln-clearspeak-Log_LnAsNaturalLog": {
+      "key": "ln",
+      "domain": "clearspeak",
+      "style": "Log_LnAsNaturalLog",
+      "expected": "प्राकृतिक लघुगणक"
+    }
+  }
 }

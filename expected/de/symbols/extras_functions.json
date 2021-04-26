@@ -6,6 +6,12 @@
   "active": "ExtraSymbolsGerman",
   "information": "German Extra Function tests.",
   "tests": {
+    "ln-clearspeak-Log_LnAsNaturalLog": {
+      "key": "ln",
+      "domain": "clearspeak",
+      "style": "Log_LnAsNaturalLog",
+      "expected": "natürlicher Logarithmus"
+    },
     "arccos-clearspeak-Trig_TrigInverse": {
       "key": "arccos",
       "domain": "clearspeak",
