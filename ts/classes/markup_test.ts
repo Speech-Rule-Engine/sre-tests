@@ -28,27 +28,27 @@ export class MarkupTest extends AbstractJsonTest {
    */
   public static QUADRATIC: string =
   '<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">' +
-    '<mi>x</mi>' +
-    '<mo>=</mo>' +
-    '<mfrac>' +
-    '<mrow extid="0">' +
-    '<mo>&#x2212;<!-- − --></mo>' +
-    '<mi extid="1">b</mi>' +
-    '<mo extid="2">&#x00B1;<!-- ± --></mo>' +
-    '<msqrt>' +
-    '<msup>' +
-    '<mi>b</mi>' +
-    '<mn>2</mn>' +
+    '<mi extid="0">x</mi>' +
+    '<mo extid="1">=</mo>' +
+    '<mfrac extid="3">' +
+    '<mrow extid="4">' +
+    '<mo extid="5">&#x2212;<!-- − --></mo>' +
+    '<mi extid="6">b</mi>' +
+    '<mo extid="7">&#x00B1;<!-- ± --></mo>' +
+    '<msqrt extid="8">' +
+    '<msup extid="9">' +
+    '<mi extid="10">b</mi>' +
+    '<mn extid="11">2</mn>' +
     '</msup>' +
-    '<mo>&#x2212;<!-- − --></mo>' +
-    '<mn>4</mn>' +
-    '<mi>a</mi>' +
-    '<mi>c</mi>' +
+    '<mo extid="12">&#x2212;<!-- − --></mo>' +
+    '<mn extid="13">4</mn>' +
+    '<mi extid="14">a</mi>' +
+    '<mi extid="15">c</mi>' +
     '</msqrt>' +
     '</mrow>' +
-    '<mrow>' +
-    '<mn>2</mn>' +
-    '<mi>a</mi>' +
+    '<mrow extid="16">' +
+    '<mn extid="17">2</mn>' +
+    '<mi extid="18">a</mi>' +
     '</mrow>' +
     '</mfrac>' +
     '</math>';
