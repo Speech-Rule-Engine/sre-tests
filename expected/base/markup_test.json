@@ -71,7 +71,7 @@
     },
     "SsmlStep_1_Quadratic_CS": {
       "domain": "clearspeak",
-      "expected": "<mark name=\"0\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"1\"/> equals <break time=\"250ms\"/> <mark name=\"3\"/> the fraction with numerator <mark name=\"4\"/> negative <mark name=\"6\"/> <say-as interpret-as=\"character\">b</say-as> <mark name=\"7\"/> plus or minus <mark name=\"8\"/> the square root of <mark name=\"10\"/> <say-as interpret-as=\"character\">b</say-as> <mark name=\"9\"/> squared <mark name=\"12\"/> minus <prosody rate=\"+25%\"> <mark name=\"13\"/> 4 <mark name=\"14\"/> <say-as interpret-as=\"character\">a</say-as> <mark name=\"15\"/> <say-as interpret-as=\"character\">c</say-as> </prosody> <break time=\"250ms\"/> and denominator <prosody rate=\"+25%\"> <mark name=\"17\"/> 2 <mark name=\"18\"/> <say-as interpret-as=\"character\">a</say-as> </prosody> <break time=\"250ms\"/>",
+      "expected": "<mark name=\"0\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"1\"/> equals <break time=\"250ms\"/> <mark name=\"3\"/> the fraction with numerator <mark name=\"5\"/> negative <mark name=\"6\"/> <say-as interpret-as=\"character\">b</say-as> <mark name=\"7\"/> plus or minus <mark name=\"8\"/> the square root of <mark name=\"10\"/> <say-as interpret-as=\"character\">b</say-as> <mark name=\"11\"/> squared <mark name=\"12\"/> minus <prosody rate=\"+25%\"> <mark name=\"13\"/> 4 <mark name=\"14\"/> <say-as interpret-as=\"character\">a</say-as> <mark name=\"15\"/> <say-as interpret-as=\"character\">c</say-as> </prosody> <break time=\"250ms\"/> and denominator <prosody rate=\"+25%\"> <mark name=\"17\"/> 2 <mark name=\"18\"/> <say-as interpret-as=\"character\">a</say-as> </prosody> <break time=\"250ms\"/>",
       "markup": "SSML_STEP"
     },
     "SsmlStep_1_Quadratic_CV": {
@@ -166,7 +166,7 @@
     "SsmlStep_1_VulgarFrac_CS": {
       "domain": "clearspeak",
       "input": "<mfrac extid=\"0\"><mn extid=\"1\">1</mn><mn extid=\"2\">2</mn></mfrac>",
-      "expected": "<mark name=\"0\"/> one half",
+      "expected": "<mark name=\"1\"/> one <mark name=\"0\"/>   <mark name=\"2\"/> half",
       "markup": "SSML_STEP"
     },
     "SsmlStep_1_VulgarFrac_CV": {
@@ -178,7 +178,7 @@
     "SsmlStep_VulgarFrac_MS": {
       "domain": "mathspeak",
       "input": "<mfrac extid=\"0\"><mn extid=\"1\">1</mn><mn extid=\"2\">2</mn></mfrac>",
-      "expected": "<mark name=\"0\"/> one half",
+      "expected": "<mark name=\"1\"/> one <mark name=\"0\"/>   <mark name=\"2\"/> half",
       "markup": "SSML_STEP"
     },
     "_comment3_": " Tests with squared.",
@@ -263,7 +263,7 @@
     "SsmlStep_1_Squared_CS": {
       "domain": "clearspeak",
       "input": "<msup extid=\"0\"><mi extid=\"1\">x</mi><mn extid=\"2\">2</mn></msup>",
-      "expected": "<mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"0\"/> squared",
+      "expected": "<mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"2\"/> squared",
       "markup": "SSML_STEP"
     },
     "SsmlStep_1_Squared_CV": {
@@ -360,7 +360,7 @@
     "SsmlStep_1_Cubed_CS": {
       "domain": "clearspeak",
       "input": "<msup extid=\"0\"><mi extid=\"1\">x</mi><mn extid=\"2\">3</mn></msup>",
-      "expected": "<mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"0\"/> cubed",
+      "expected": "<mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"2\"/> cubed",
       "markup": "SSML_STEP"
     },
     "SsmlStep_1_Cubed_CV": {
