@@ -20,11 +20,15 @@
  */
 
 import {MathStore} from '../../../speech-rule-engine-tots/js/rule_engine/math_store';
+import {SpeechRule} from '../../../speech-rule-engine-tots/js/rule_engine/speech_rule';
+import {Trie} from '../../../speech-rule-engine-tots/js/indexing/trie';
+import System from '../../../speech-rule-engine-tots/js/common/system';
+import {Variables} from '../../../speech-rule-engine-tots/js/common/variables';
+import {SpeechRuleEngine} from '../../../speech-rule-engine-tots/js/rule_engine/speech_rule_engine';
 
 import * as fs from 'fs';
 import {TestPath, TestUtil} from '../base/test_util';
-import * as sret from '../typings/sre';
-import AnalyticsTrie from './analytics_trie';
+// import AnalyticsTrie from './analytics_trie';
 import AnalyticsUtil from './analytics_util';
 
 // Saves
@@ -33,22 +37,25 @@ import AnalyticsUtil from './analytics_util';
 //  * Unique applied rules for each test suite
 //  * Comparison with actual rules
 
+let oldLookupRule = MathStore.prototype.lookupRule;
+
 /**
  * @override
  */
 MathStore.prototype.lookupRule = function(node: any, dynamic: any) {
-  let rule = this.prototype.lookupRule(node, dynamic);
+  let rule = oldLookupRule.bind(this)(node, dynamic);
   if (AnalyticsTest.deep && rule) {
     AnalyticsTest.addAppliedRule(rule);
   }
   return rule;
 };
 
+let oldLookupRules = MathStore.prototype.lookupRules;
 /**
  * @override
  */
 MathStore.prototype.lookupRules = function(node: any, dynamic: any) {
-  let rules = this.prototype.lookupRule(node, dynamic);
+  let rules = oldLookupRules.bind(this)(node, dynamic);
   if (AnalyticsTest.deep) {
     AnalyticsTest.addApplicableRules(rules);
   }
@@ -61,15 +68,15 @@ namespace AnalyticsTest {
   export let currentTestcase = '';
   export let deep = false;
 
-  export let appliedRule: Map<string, sret.SpeechRule[]> = new Map();
-  export let applicableRules: Map<string, sret.SpeechRule[][]> = new Map();
+  export let appliedRule: Map<string, SpeechRule[]> = new Map();
+  export let applicableRules: Map<string, SpeechRule[][]> = new Map();
 
   /**
    * Records a rule applied while a running a test case.
    *
    * @param rule The applied rule.
    */
-  export function addAppliedRule(rule: sret.SpeechRule) {
+  export function addAppliedRule(rule: SpeechRule) {
     let cases = appliedRule.get(currentTestcase);
     if (!cases) {
       cases = [];
@@ -83,7 +90,7 @@ namespace AnalyticsTest {
    *
    * @param rules The list of applicable rules.
    */
-  export function addApplicableRules(rules: sret.SpeechRule[]) {
+  export function addApplicableRules(rules: SpeechRule[]) {
     let cases = applicableRules.get(currentTestcase);
     if (!cases) {
       cases = [];
@@ -112,9 +119,9 @@ namespace AnalyticsTest {
    */
   export function outputAllRules() {
     loadAllAppliedRules();
-    let ruleSets = AnalyticsTrie.getAllSets();
+    let ruleSets = getAllSets();
     for (let [name, obj] of Object.entries(ruleSets)) {
-      let rules = obj.map((x: sret.SpeechRule) => x.toString());
+      let rules = obj.map((x: SpeechRule) => x.toString());
       AnalyticsUtil.fileJson('allRules', rules.sort(), name);
       allRulesDifference(rules, name);
     }
@@ -184,13 +191,35 @@ namespace AnalyticsTest {
    * Outputs the unique applied rules for each test suite.
    */
   export function outputUniqueAppliedRules() {
-    let rules: sret.SpeechRule[] = [];
+    let rules: SpeechRule[] = [];
     for (let value of appliedRule.values()) {
       rules = rules.concat(value);
     }
     rules = AnalyticsUtil.removeDuplicates(rules);
     AnalyticsUtil.fileJson('uniqueAppliedRules',
                            rules.map(x => x.toString()), currentTest);
+  }
+
+  export function getAllSets(): {[name: string]: SpeechRule[]} {
+    for (let locale of Variables.LOCALES) {
+      System.setupEngine({locale: locale});
+    }
+    let trie = SpeechRuleEngine.getInstance().getStore().trie;
+    let result: {[name: string]: SpeechRule[]} = {};
+    for (let [loc, rest] of Object.entries(SpeechRuleEngine.getInstance().enumerate())) {
+      for (let [mod, rules] of Object.entries(rest)) {
+        if (mod === 'speech') {
+          for (let rule of Object.keys(rules)) {
+            result[TestUtil.capitalize(rule) + TestUtil.capitalize(loc)] =
+              Trie.collectRules_(trie.byConstraint([loc, mod, rule]));
+          }
+        } else {
+          result[TestUtil.capitalize(mod) + TestUtil.capitalize(loc)] =
+            Trie.collectRules_(trie.byConstraint([loc, mod]));
+        }
+      }
+    }
+    return result;
   }
 
 }

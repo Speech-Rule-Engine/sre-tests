@@ -18,36 +18,57 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {StaticTrieNode, AbstractTrieNode} from '../../../speech-rule-engine-tots/js/indexing/abstract_trie_node';
+import {TrieNode} from '../../../speech-rule-engine-tots/js/indexing/trie_node';
 import {Trie} from '../../../speech-rule-engine-tots/js/indexing/trie';
+import System from '../../../speech-rule-engine-tots/js/common/system';
+import {Variables} from '../../../speech-rule-engine-tots/js/common/variables';
+import {SpeechRuleEngine} from '../../../speech-rule-engine-tots/js/rule_engine/speech_rule_engine';
+import {BaseRuleStore} from '../../../speech-rule-engine-tots/js/rule_engine/base_rule_store';
+import {MathStore} from '../../../speech-rule-engine-tots/js/rule_engine/math_store';
+import {SpeechRule} from '../../../speech-rule-engine-tots/js/rule_engine/speech_rule';
 
 import AnalyticsUtil from './analytics_util';
 import AnalyticsTest from './analytics_test';
 import {TestUtil} from '../base/test_util';
 
-AbstractTrieNode.prototype.json = function() {
-  return {
-    type: this.getKind(),
-    '$t': this.getConstraint(),
-    children:
-    !this.getChildren().length ?
-      [] : this.getChildren().map(function(x: any) {
-        return x.json();
-      })
-  };
-};
+declare module '../../../speech-rule-engine-tots/js/indexing/trie' {
+  interface Trie {
+    store: BaseRuleStore;
+    root: TrieNode;
+    addRule(rule: SpeechRule): void;
+    lookupRules(xml: Node, dynamic: string[][]): SpeechRule[];
+    hasSubtrie(cstrs: string[]): boolean;
+    toString(): string;
+    collectRules(): SpeechRule[];
+    order(): number;
+    enumerate(opt_info?: Object): Object;
+    byConstraint(constraint: string[]): TrieNode;
+    // Extension
+    json(): {[key: string]: Object};
+    getSingletonDynamic_(): SpeechRule[];
+    singleStyle(style: string): SpeechRule;
+  }
+}
 
-StaticTrieNode.prototype.json = function() {
-  let json = sre.StaticTrieNode.base(this, 'json');
+function trieJson(node: TrieNode): {[key: string]: Object} {
+  let json: {[key: string]: Object} = {
+    type: node.getKind(),
+    '$t': node.getConstraint(),
+    children:
+    !node.getChildren().length ?
+      [] : node.getChildren().map(function(x: any) {
+        return trieJson(x);
+      })
+  }
   let rule = this.getRule();
   if (rule) {
-    json['role'] = rule.action.toString();
+    json['rule'] = rule;
   }
   return json;
 };
 
 Trie.prototype.json = function() {
-  return {stree: this.root.json()};
+  return {stree: trieJson(this.root)};
 };
 
 Trie.prototype.getSingletonDynamic_ = function() {
@@ -68,45 +89,45 @@ Trie.prototype.singleStyle = function(style: string)  {
 
 // Quaries for rule sets.
 
-sre.BaseRuleStore.prototype.allText = function() {
-  return this.getSpeechRules().filter((x: sret.SpeechRule) =>
-    x.action.hasType(sre.SpeechRule.Type.TEXT));
-};
+// BaseRuleStore.prototype.allText = function() {
+//   return this.getSpeechRules().filter((x: SpeechRule) =>
+//     x.action.hasType(SpeechRule.Type.TEXT));
+// };
 
-sre.BaseRuleStore.prototype.allLocalizable = function() {
-  return this.getSpeechRules().filter((x: sret.SpeechRule) =>
-    x.action.localizable());
-};
+// BaseRuleStore.prototype.allLocalizable = function() {
+//   return this.getSpeechRules().filter((x: sret.SpeechRule) =>
+//     x.action.localizable());
+// };
 
-sre.SpeechRule.Action.prototype.localizable = function() {
-  return this.components.some((x: sret.SpeechRule) => x.localizable());
-};
+// SpeechRule.Action.prototype.localizable = function() {
+//   return this.components.some((x: sret.SpeechRule) => x.localizable());
+// };
 
-sre.SpeechRule.Action.prototype.hasType = function(type: string) {
-  return this.components.some((x: sret.SpeechRule) => x.hasType(type));
-};
+// SpeechRule.Action.prototype.hasType = function(type: string) {
+//   return this.components.some((x: sret.SpeechRule) => x.hasType(type));
+// };
 
-sre.SpeechRule.Precondition.prototype.hasDisjunctive = function() {
-  return this.constraints.some((x: string) => x.match(/ or /));
-};
+// SpeechRule.Precondition.prototype.hasDisjunctive = function() {
+//   return this.constraints.some((x: string) => x.match(/ or /));
+// };
 
-sre.SpeechRule.Component.prototype.localizable = function(){
-  return this.hasType(sre.SpeechRule.Type.TEXT) &&
-    this.content.match(/^".*"$/);
-};
+// SpeechRule.Component.prototype.localizable = function(){
+//   return this.hasType(SpeechRule.Type.TEXT) &&
+//     this.content.match(/^".*"$/);
+// };
 
-sre.SpeechRule.Component.prototype.hasType = function(type: string){
-  return this.type === type;
-};
+// SpeechRule.Component.prototype.hasType = function(type: string){
+//   return this.type === type;
+// };
 
 /**
  * Retrieves a rules for a given sequence of constraints.
  *
  * @param {Array.<string>} constraint A list of constraints.
- * @return {sre.TrieNode} The speech rule or null.
+ * @return {TrieNode} The speech rule or null.
  * What if multiple rules exist?
  */
-sre.Trie.prototype.byConstraint = function(constraint: any) {
+Trie.prototype.byConstraint = function(constraint: any) {
   let node = this.root;
   while (constraint.length && node) {
     let cstr = constraint.shift();
@@ -120,8 +141,8 @@ namespace AnalyticsTrie {
   /**
    * @param rules
    */
-  export function tempTrie(rules: sret.SpeechRule[]): sret.Trie {
-    let store = new sre.MathStore();
+  export function tempTrie(rules: SpeechRule[]): Trie {
+    let store = new MathStore();
     let trie = store.trie;
     for (let rule of rules) {
       trie.addRule(rule);
@@ -133,12 +154,12 @@ namespace AnalyticsTrie {
    * @param trie
    * @param name
    */
-  export function outputTrie(trie: sret.Trie, name: string) {
+  export function outputTrie(trie: Trie, name: string) {
     let json = trie.json();
     let rules = trie.collectRules();
     AnalyticsUtil.fileJson('trie', json, name);
     AnalyticsUtil.fileJson('trie',
-                           rules.map((x: sret.SpeechRule) => x.toString()),
+                           rules.map((x: SpeechRule) => x.toString()),
                            name, 'txt');
   }
 
@@ -149,7 +170,7 @@ namespace AnalyticsTrie {
     let applied = Array.from(AnalyticsTest.appliedRule.values())
       .reduce((x, y) => x.concat(y), []);
     let usedTrie = tempTrie(applied);
-    let allRules = sre.SpeechRuleEngine.getInstance()['activeStore_']
+    let allRules = SpeechRuleEngine.getInstance()['activeStore_']
       .trie.collectRules();
     let outTrie = tempTrie([]);
     for (let rule of allRules) {
@@ -170,7 +191,7 @@ namespace AnalyticsTrie {
    */
   export function disjunctiveRules() {
     let rulesets = Object.values(
-      sre.SpeechRuleEngine.getInstance().ruleSets_) as sret.SpeechRuleStore[];
+      SpeechRuleEngine.getInstance().ruleSets_) as SpeechRuleStore[];
     let result = [];
     for (let rules of rulesets) {
       for (let rule of rules.speechRules_) {
@@ -190,14 +211,14 @@ namespace AnalyticsTrie {
    */
   export function compareRuleSets(
     rules: string[], comparator: Function = compareTries) {
-    let set1 = sre.SpeechRuleEngine.getInstance().ruleSets_[rules[0]];
-    let set2 = sre.SpeechRuleEngine.getInstance().ruleSets_[rules[1]];
+    let set1 = SpeechRuleEngine.getInstance().ruleSets_[rules[0]];
+    let set2 = SpeechRuleEngine.getInstance().ruleSets_[rules[1]];
     if (!(set1 && set2)) {
       return;
     }
     let trie = comparator(set1.trie, set2.trie);
     for (let i = 2, rule; rule = rules[i]; i++) {
-      let nextSet = sre.SpeechRuleEngine.getInstance().ruleSets_[rule];
+      let nextSet = SpeechRuleEngine.getInstance().ruleSets_[rule];
       trie = comparator(trie, nextSet.trie);
     }
     return trie;
@@ -207,7 +228,7 @@ namespace AnalyticsTrie {
    * @param trie1
    * @param trie2
    */
-  export function compareTriesConstraints(trie1: sret.Trie, trie2: sret.Trie) {
+  export function compareTriesConstraints(trie1: Trie, trie2: Trie) {
     let rules = trie2.collectRules();
     let old = trie1.collectRules();
     let locale = old.length ? old[0].dynamicCstr.getValues()[0] : '';
@@ -231,7 +252,7 @@ namespace AnalyticsTrie {
    * @param trie1
    * @param trie2
    */
-  export function compareTries(trie1: sret.Trie, trie2: sret.Trie) {
+  export function compareTries(trie1: Trie, trie2: Trie) {
     let rules = trie2.collectRules();
     let old = trie1.collectRules();
     let locale = old.length ? old[0].dynamicCstr.getValues()[0] : '';
@@ -260,8 +281,8 @@ namespace AnalyticsTrie {
    * @param style
    */
   export function compareTriesStyle(
-    trie1: sret.Trie, trie2: sret.Trie, style = 'default') {
-    let rules = sre.Trie['collectRules_'](trie2.singleStyle(style));
+    trie1: Trie, trie2: Trie, style = 'default') {
+    let rules = Trie['collectRules_'](trie2.singleStyle(style));
     let cstr1 = trie1.getSingletonDynamic_();
     cstr1.push(style);
     cstr1 = cstr1.slice(0, 4);
@@ -286,9 +307,9 @@ namespace AnalyticsTrie {
    * @param rules1
    * @param rules2
    */
-  export function diffRuleSets(rules1: string, rules2: string): sret.Trie {
-    let set1 = sre.SpeechRuleEngine.getInstance().ruleSets_[rules1];
-    let set2 = sre.SpeechRuleEngine.getInstance().ruleSets_[rules2];
+  export function diffRuleSets(rules1: string, rules2: string): Trie {
+    let set1 = SpeechRuleEngine.getInstance().ruleSets_[rules1];
+    let set2 = SpeechRuleEngine.getInstance().ruleSets_[rules2];
     if (!(set1 && set2)) {
       return null;
     }
@@ -340,7 +361,7 @@ namespace AnalyticsTrie {
    *
    */
   export function output() {
-    sre.System.getInstance().setupEngine({});
+    System.setupEngine({});
     for (let rules of sets) {
       outputTrie(compareRuleSets(rules), rules[0]);
       outputTrie(compareRuleSets(rules, compareTriesConstraints),
@@ -350,22 +371,22 @@ namespace AnalyticsTrie {
   }
 
 
-  export function getAllSets(): {[name: string]: sret.SpeechRule[]} {
-    for (let locale of sre.Variables.LOCALES) {
-      sre.System.getInstance().setupEngine({locale: locale});
+  export function getAllSets(): {[name: string]: SpeechRule[]} {
+    for (let locale of Variables.LOCALES) {
+      System.setupEngine({locale: locale});
     }
-    let trie = sre.SpeechRuleEngine.getInstance().activeStore_.trie;
-    let result: {[name: string]: sret.SpeechRule[]} = {};
-    for (let [loc, rest] of Object.entries(sre.SpeechRuleEngine.getInstance().enumerate())) {
+    let trie = SpeechRuleEngine.getInstance().getStore().trie;
+    let result: {[name: string]: SpeechRule[]} = {};
+    for (let [loc, rest] of Object.entries(SpeechRuleEngine.getInstance().enumerate())) {
       for (let [mod, rules] of Object.entries(rest)) {
         if (mod === 'speech') {
           for (let rule of Object.keys(rules)) {
             result[TestUtil.capitalize(rule) + TestUtil.capitalize(loc)] =
-              sre.Trie.collectRules_(trie.byConstraint([loc, mod, rule]));
+              Trie.collectRules_(trie.byConstraint([loc, mod, rule]));
           }
         } else {
           result[TestUtil.capitalize(mod) + TestUtil.capitalize(loc)] =
-            sre.Trie.collectRules_(trie.byConstraint([loc, mod]));
+            Trie.collectRules_(trie.byConstraint([loc, mod]));
         }
       }
     }
