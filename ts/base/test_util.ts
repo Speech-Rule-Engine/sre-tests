@@ -18,9 +18,8 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
-import {baseDir} from './test_external';
 
-let TestDir = baseDir;
+let TestDir = __dirname.replace(/(dist|js\/base)$/, '');
 
 export const TestPath: {[key: string]: string} = {
   INPUT: TestDir + 'input/',

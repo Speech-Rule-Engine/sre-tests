@@ -19,8 +19,9 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
+import {MathStore} from '../../../speech-rule-engine-tots/js/rule_engine/math_store';
+
 import * as fs from 'fs';
-import {sre} from '../base/test_external';
 import {TestPath, TestUtil} from '../base/test_util';
 import * as sret from '../typings/sre';
 import AnalyticsTrie from './analytics_trie';
@@ -35,8 +36,8 @@ import AnalyticsUtil from './analytics_util';
 /**
  * @override
  */
-sre.MathStore.prototype.lookupRule = function(node: any, dynamic: any) {
-  let rule = sre.MathStore.base(this, 'lookupRule', node, dynamic);
+MathStore.prototype.lookupRule = function(node: any, dynamic: any) {
+  let rule = this.prototype.lookupRule(node, dynamic);
   if (AnalyticsTest.deep && rule) {
     AnalyticsTest.addAppliedRule(rule);
   }
@@ -46,8 +47,8 @@ sre.MathStore.prototype.lookupRule = function(node: any, dynamic: any) {
 /**
  * @override
  */
-sre.MathStore.prototype.lookupRules = function(node: any, dynamic: any) {
-  let rules = sre.MathStore.base(this, 'lookupRules', node, dynamic);
+MathStore.prototype.lookupRules = function(node: any, dynamic: any) {
+  let rules = this.prototype.lookupRule(node, dynamic);
   if (AnalyticsTest.deep) {
     AnalyticsTest.addApplicableRules(rules);
   }

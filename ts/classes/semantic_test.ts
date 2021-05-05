@@ -19,7 +19,7 @@
  * @author sorge@google.com (Volker Sorge)
  */
 
-import {xmldom} from '../base/test_external';
+import xmldom = require('xmldom-sre');
 import {AbstractExamples} from './abstract_examples';
 
 import * as Enrich from '../../../speech-rule-engine-tots/js/enrich_mathml/enrich';

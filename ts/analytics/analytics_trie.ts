@@ -18,13 +18,14 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
-import * as sret from '../typings/sre';
+import {StaticTrieNode, AbstractTrieNode} from '../../../speech-rule-engine-tots/js/indexing/abstract_trie_node';
+import {Trie} from '../../../speech-rule-engine-tots/js/indexing/trie';
+
 import AnalyticsUtil from './analytics_util';
 import AnalyticsTest from './analytics_test';
 import {TestUtil} from '../base/test_util';
 
-sre.AbstractTrieNode.prototype.json = function() {
+AbstractTrieNode.prototype.json = function() {
   return {
     type: this.getKind(),
     '$t': this.getConstraint(),
@@ -36,7 +37,7 @@ sre.AbstractTrieNode.prototype.json = function() {
   };
 };
 
-sre.StaticTrieNode.prototype.json = function() {
+StaticTrieNode.prototype.json = function() {
   let json = sre.StaticTrieNode.base(this, 'json');
   let rule = this.getRule();
   if (rule) {
@@ -45,11 +46,11 @@ sre.StaticTrieNode.prototype.json = function() {
   return json;
 };
 
-sre.Trie.prototype.json = function() {
+Trie.prototype.json = function() {
   return {stree: this.root.json()};
 };
 
-sre.Trie.prototype.getSingletonDynamic_ = function() {
+Trie.prototype.getSingletonDynamic_ = function() {
   let node = this.root;
   let result = [];
   while (node.getChildren().length === 1) {
@@ -59,7 +60,7 @@ sre.Trie.prototype.getSingletonDynamic_ = function() {
   return result;
 };
 
-sre.Trie.prototype.singleStyle = function(style: string)  {
+Trie.prototype.singleStyle = function(style: string)  {
   // console.log(style);
   // console.log(this.getSingletonDynamic_());
   return this.byConstraint(this.getSingletonDynamic_()).getChild(style);
