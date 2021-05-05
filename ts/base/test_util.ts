@@ -217,7 +217,7 @@ export namespace TestUtil {
     if (fs.existsSync(dir) && fs.lstatSync(dir).isDirectory()) {
       let files = fs.readdirSync(dir);
       files.forEach(
-        x => readDir_(dir ? path.join(dir, x) : x, result));
+        (x: string) => readDir_(dir ? path.join(dir, x) : x, result));
       return;
     }
     if (dir.match(/\.json$/)) {
