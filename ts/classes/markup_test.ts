@@ -18,7 +18,10 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
+import {EngineConst} from '../../../speech-rule-engine-tots/js/common/engine';
+import System from '../../../speech-rule-engine-tots/js/common/system';
+import AuralRendering from '../../../speech-rule-engine-tots/js/audio/aural_rendering';
+
 import {AbstractJsonTest} from '../classes/abstract_test';
 
 export class MarkupTest extends AbstractJsonTest {
@@ -65,8 +68,8 @@ export class MarkupTest extends AbstractJsonTest {
    * @override
    */
   public tearDownTest() {
-    sre.System.getInstance().setupEngine(
-      {markup: sre.Engine.Markup.NONE});
+    System.setupEngine(
+      {markup: EngineConst.Markup.NONE});
   }
 
   /**
@@ -80,12 +83,13 @@ export class MarkupTest extends AbstractJsonTest {
   public executeTest(expr: string, result: string, markup: string,
                      domain: string) {
     expr = expr || MarkupTest.QUADRATIC;
-    sre.System.getInstance().setupEngine(
+    System.setupEngine(
       {locale: 'en', modality: 'speech', domain: domain || 'default',
        style: 'default',
-       markup: markup ? sre.Engine.Markup[markup] : sre.Engine.Markup.NONE});
-    let descrs = sre.System.getInstance().toDescription(expr);
-    let output = sre.AuralRendering.getInstance().markup(descrs);
+       markup: markup ? markup.toLowerCase() : EngineConst.Markup.NONE});
+    // TODO (TS): Markup should be taken from the enum.
+    let descrs = System.toDescription(expr);
+    let output = AuralRendering.markup(descrs);
     this.assert.equal(output, result);
   }
 

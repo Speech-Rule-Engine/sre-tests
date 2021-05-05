@@ -18,9 +18,10 @@
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
 import {TestUtil} from '../base/test_util';
 import {AbstractExamples} from './abstract_examples';
+import System from '../../../speech-rule-engine-tots/js/common/system';
+import {Axis, DynamicCstr} from '../../../speech-rule-engine-tots/js/rule_engine/dynamic_cstr';
 
 export class SpeechTest extends AbstractExamples {
 
@@ -36,7 +37,7 @@ export class SpeechTest extends AbstractExamples {
    * Specify particular rule sets for a test. By default all available rule sets
    * are used.
    */
-  public rules: string[] = null;
+  // public rules: string[] = null;
 
   /**
    * Flag indicating if the actual output should be written to the HTML example
@@ -89,11 +90,10 @@ export class SpeechTest extends AbstractExamples {
    */
   public constructor() {
     super();
-    this.style = sre.DynamicCstr.DEFAULT_VALUES[sre.DynamicCstr.Axis.STYLE];
-    this.domain = sre.DynamicCstr.DEFAULT_VALUES[sre.DynamicCstr.Axis.DOMAIN];
-    this.locale = sre.DynamicCstr.DEFAULT_VALUES[sre.DynamicCstr.Axis.LOCALE];
-    this.modality = sre.DynamicCstr.DEFAULT_VALUES[
-      sre.DynamicCstr.Axis.MODALITY];
+    this.style = DynamicCstr.DEFAULT_VALUES[Axis.STYLE];
+    this.domain = DynamicCstr.DEFAULT_VALUES[Axis.DOMAIN];
+    this.locale = DynamicCstr.DEFAULT_VALUES[Axis.LOCALE];
+    this.modality = DynamicCstr.DEFAULT_VALUES[Axis.MODALITY];
 
     this.pickFields.push('preference');
   }
@@ -119,9 +119,9 @@ export class SpeechTest extends AbstractExamples {
     let style = opt_style || this.style;
     let mathMl = '<math xmlns="http://www.w3.org/1998/Math/MathML">' +
       mml + '</math>';
-    sre.System.getInstance().setupEngine(
+    System.setupEngine(
       {domain: this.domain, style: style,
-       modality: this.modality, rules: this.rules, locale: this.locale});
+       modality: this.modality, locale: this.locale});
     let actual = this.getSpeech(mathMl);
     let expected = this.actual ? actual : answer;
     this.appendRuleExample(mathMl, expected, style);
@@ -135,7 +135,7 @@ export class SpeechTest extends AbstractExamples {
    * @return The resulting speech.
    */
   public getSpeech(mathMl: string): string {
-    return sre.System.getInstance().toSpeech(mathMl);
+    return System.toSpeech(mathMl);
   }
 
   /**
@@ -157,9 +157,9 @@ export class SpeechTest extends AbstractExamples {
       '.</h2>';
     let outList = [input];
     if (this.compare) {
-      sre.System.getInstance().setupEngine(
+      System.setupEngine(
         {domain: this.domain, style: style,
-         modality: this.modality, rules: this.rules, locale: 'en'});
+         modality: this.modality, locale: 'en'});
       outList.push(this.getSpeech(input));
     }
     outList.push(output);

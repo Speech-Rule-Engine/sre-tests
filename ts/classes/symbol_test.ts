@@ -16,7 +16,13 @@
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
+import * as DomUtil from '../../../speech-rule-engine-tots/js/common/dom_util';
+import System from '../../../speech-rule-engine-tots/js/common/system';
+import {SpeechRuleEngine} from '../../../speech-rule-engine-tots/js/rule_engine/speech_rule_engine';
+import {Grammar} from '../../../speech-rule-engine-tots/js/rule_engine/grammar';
+import AuralRendering from '../../../speech-rule-engine-tots/js/audio/aural_rendering';
+import {AuditoryDescription} from '../../../speech-rule-engine-tots/js/audio/auditory_description';
+
 import {SpeechTest} from './speech_test';
 
 export class SymbolTest extends SpeechTest {
@@ -41,9 +47,9 @@ export class SymbolTest extends SpeechTest {
    */
   public executeTest(text: string, answer: string, style?: string) {
     style = style || this.style;
-    sre.System.getInstance().setupEngine(
+    System.setupEngine(
       {domain: this.domain, style: style,
-       modality: this.modality, rules: this.rules, locale: this.locale});
+       modality: this.modality, locale: this.locale});
     let actual = this.getSpeech(text);
     let expected = this.actual ? actual : answer;
     this.appendRuleExample(text, expected, style, this.domain);
@@ -54,23 +60,22 @@ export class SymbolTest extends SpeechTest {
    * @override
    */
   public getSpeech(text: string) {
-    let aural = sre.AuralRendering.getInstance();
     let descrs = [];
     if (this.modality === 'braille') {
       if (text.match(/^\s+$/)) {
         // TODO: This is just a temporary fix.
         return '⠀';
       }
-      let node = sre.DomUtil.parseInput('<mi></mi>');
+      let node = DomUtil.parseInput('<mi></mi>');
       node.textContent = text;
-      let evaluator = sre.SpeechRuleEngine.getInstance()
+      let evaluator = SpeechRuleEngine.getInstance()
         .getEvaluator(this.locale, this.modality);
       descrs = evaluator(node);
     } else {
-      descrs = [sre.AuditoryDescription.create(
+      descrs = [AuditoryDescription.create(
         {text: text}, {adjust: true, translate: true})];
     }
-    return aural.finalize(aural.markup(descrs));
+    return AuralRendering.finalize(AuralRendering.markup(descrs));
   }
 
   /**
@@ -102,14 +107,14 @@ export class SymbolTest extends SpeechTest {
    */
   public setUpTest() {
     super.setUpTest();
-    sre.Grammar.getInstance().pushState(Object.assign({}, this.grammar));
+    Grammar.getInstance().pushState(Object.assign({}, this.grammar));
   }
 
   /**
    * @override
    */
   public tearDownTest() {
-    sre.Grammar.getInstance().popState();
+    Grammar.getInstance().popState();
     super.tearDownTest();
   }
 
