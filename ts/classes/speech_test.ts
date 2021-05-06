@@ -18,26 +18,33 @@
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import {TestUtil} from '../base/test_util';
-import {AbstractExamples} from './abstract_examples';
 import System from '../../../speech-rule-engine-tots/js/common/system';
 import {Axis, DynamicCstr} from '../../../speech-rule-engine-tots/js/rule_engine/dynamic_cstr';
 
+import {TestUtil} from '../base/test_util';
+import {AbstractExamples} from './abstract_examples';
+
 export class SpeechTest extends AbstractExamples {
 
-  public style: string;
-
-  public domain: string;
-
-  public locale: string;
-
-  public modality: string;
+  /**
+   * The speech style of the tests.
+   */
+  public style: string = DynamicCstr.DEFAULT_VALUES[Axis.STYLE];
 
   /**
-   * Specify particular rule sets for a test. By default all available rule sets
-   * are used.
+   * The speech rules for the tests.
    */
-  // public rules: string[] = null;
+  public domain: string = DynamicCstr.DEFAULT_VALUES[Axis.DOMAIN];
+
+  /**
+   * The locale for the tests.
+   */
+  public locale: string = DynamicCstr.DEFAULT_VALUES[Axis.LOCALE];
+
+  /**
+   * The modality for the tests.
+   */
+  public modality: string = DynamicCstr.DEFAULT_VALUES[Axis.MODALITY];
 
   /**
    * Flag indicating if the actual output should be written to the HTML example
@@ -49,8 +56,6 @@ export class SpeechTest extends AbstractExamples {
    * Flag indicating if English output should be generate for comparison.
    */
   public compare: boolean = false;
-
-  public fileDirectory: string;
 
   /**
    * Wraps an entry into an HTML cell.
@@ -90,11 +95,6 @@ export class SpeechTest extends AbstractExamples {
    */
   public constructor() {
     super();
-    this.style = DynamicCstr.DEFAULT_VALUES[Axis.STYLE];
-    this.domain = DynamicCstr.DEFAULT_VALUES[Axis.DOMAIN];
-    this.locale = DynamicCstr.DEFAULT_VALUES[Axis.LOCALE];
-    this.modality = DynamicCstr.DEFAULT_VALUES[Axis.MODALITY];
-
     this.pickFields.push('preference');
   }
 
@@ -158,8 +158,8 @@ export class SpeechTest extends AbstractExamples {
     let outList = [input];
     if (this.compare) {
       System.setupEngine(
-        {domain: this.domain, style: style,
-         modality: this.modality, locale: 'en'});
+        {domain: this.domain, style: style,  locale: 'en',
+         modality: (this.modality === 'braille') ? 'speech' : this.modality});
       outList.push(this.getSpeech(input));
     }
     outList.push(output);
