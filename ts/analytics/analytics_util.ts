@@ -18,6 +18,12 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
+import {Trie} from '../../../speech-rule-engine-tots/js/indexing/trie';
+import * as System from '../../../speech-rule-engine-tots/js/common/system';
+import {Variables} from '../../../speech-rule-engine-tots/js/common/variables';
+import {SpeechRuleEngine} from '../../../speech-rule-engine-tots/js/rule_engine/speech_rule_engine';
+import {SpeechRule} from '../../../speech-rule-engine-tots/js/rule_engine/speech_rule';
+
 import {JsonFile, TestPath, TestUtil} from '../base/test_util';
 
 namespace AnalyticsUtil {
@@ -45,6 +51,33 @@ namespace AnalyticsUtil {
     prefix: string, json: JsonFile, name: string, ext: string = 'json') {
     let path = `${TestPath.ANALYSIS + prefix}/${name}.${ext}`;
     TestUtil.saveJson(path, json);
+  }
+
+
+  export function initAllSets(): void {
+    for (let locale of Variables.LOCALES) {
+      System.setupEngine({locale: locale});
+    }
+  }
+
+  export function getAllSets(): {[name: string]: SpeechRule[]} {
+    initAllSets();
+    let trie = SpeechRuleEngine.getInstance().getStore().trie;
+    let result: {[name: string]: SpeechRule[]} = {};
+    for (let [loc, rest] of Object.entries(SpeechRuleEngine.getInstance().enumerate())) {
+      for (let [mod, rules] of Object.entries(rest)) {
+        if (mod === 'speech') {
+          for (let rule of Object.keys(rules)) {
+            result[TestUtil.capitalize(rule) + TestUtil.capitalize(loc)] =
+              Trie.collectRules_(trie.byConstraint([loc, mod, rule]));
+          }
+        } else {
+          result[TestUtil.capitalize(mod) + TestUtil.capitalize(loc)] =
+            Trie.collectRules_(trie.byConstraint([loc, mod]));
+        }
+      }
+    }
+    return result;
   }
 
 }

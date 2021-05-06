@@ -29,7 +29,7 @@ import {SemanticTree} from '../../../speech-rule-engine-tots/js/semantic_tree/se
 import * as Semantic from '../../../speech-rule-engine-tots/js/semantic_tree/semantic';
 import {RebuildStree} from '../../../speech-rule-engine-tots/js/walker/rebuild_stree';
 import {EngineConst} from '../../../speech-rule-engine-tots/js/common/engine';
-import System from '../../../speech-rule-engine-tots/js/common/system';
+import * as System from '../../../speech-rule-engine-tots/js/common/system';
 import * as WalkerUtil from '../../../speech-rule-engine-tots/js/walker/walker_util';
 
 

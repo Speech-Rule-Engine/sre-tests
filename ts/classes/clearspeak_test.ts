@@ -20,7 +20,7 @@
  */
 
 import {EngineConst} from '../../../speech-rule-engine-tots/js/common/engine';
-import System from '../../../speech-rule-engine-tots/js/common/system';
+import * as System from '../../../speech-rule-engine-tots/js/common/system';
 
 import {SpeechTest} from './speech_test';
 

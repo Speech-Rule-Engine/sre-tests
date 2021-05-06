@@ -21,14 +21,9 @@
 
 import {MathStore} from '../../../speech-rule-engine-tots/js/rule_engine/math_store';
 import {SpeechRule} from '../../../speech-rule-engine-tots/js/rule_engine/speech_rule';
-import {Trie} from '../../../speech-rule-engine-tots/js/indexing/trie';
-import System from '../../../speech-rule-engine-tots/js/common/system';
-import {Variables} from '../../../speech-rule-engine-tots/js/common/variables';
-import {SpeechRuleEngine} from '../../../speech-rule-engine-tots/js/rule_engine/speech_rule_engine';
 
 import * as fs from 'fs';
 import {TestPath, TestUtil} from '../base/test_util';
-// import AnalyticsTrie from './analytics_trie';
 import AnalyticsUtil from './analytics_util';
 
 // Saves
@@ -119,7 +114,7 @@ namespace AnalyticsTest {
    */
   export function outputAllRules() {
     loadAllAppliedRules();
-    let ruleSets = getAllSets();
+    let ruleSets = AnalyticsUtil.getAllSets();
     for (let [name, obj] of Object.entries(ruleSets)) {
       let rules = obj.map((x: SpeechRule) => x.toString());
       AnalyticsUtil.fileJson('allRules', rules.sort(), name);
@@ -198,28 +193,6 @@ namespace AnalyticsTest {
     rules = AnalyticsUtil.removeDuplicates(rules);
     AnalyticsUtil.fileJson('uniqueAppliedRules',
                            rules.map(x => x.toString()), currentTest);
-  }
-
-  export function getAllSets(): {[name: string]: SpeechRule[]} {
-    for (let locale of Variables.LOCALES) {
-      System.setupEngine({locale: locale});
-    }
-    let trie = SpeechRuleEngine.getInstance().getStore().trie;
-    let result: {[name: string]: SpeechRule[]} = {};
-    for (let [loc, rest] of Object.entries(SpeechRuleEngine.getInstance().enumerate())) {
-      for (let [mod, rules] of Object.entries(rest)) {
-        if (mod === 'speech') {
-          for (let rule of Object.keys(rules)) {
-            result[TestUtil.capitalize(rule) + TestUtil.capitalize(loc)] =
-              Trie.collectRules_(trie.byConstraint([loc, mod, rule]));
-          }
-        } else {
-          result[TestUtil.capitalize(mod) + TestUtil.capitalize(loc)] =
-            Trie.collectRules_(trie.byConstraint([loc, mod]));
-        }
-      }
-    }
-    return result;
   }
 
 }

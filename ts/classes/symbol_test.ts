@@ -17,7 +17,7 @@
  */
 
 import * as DomUtil from '../../../speech-rule-engine-tots/js/common/dom_util';
-import System from '../../../speech-rule-engine-tots/js/common/system';
+import * as System from '../../../speech-rule-engine-tots/js/common/system';
 import {SpeechRuleEngine} from '../../../speech-rule-engine-tots/js/rule_engine/speech_rule_engine';
 import {Grammar} from '../../../speech-rule-engine-tots/js/rule_engine/grammar';
 import AuralRendering from '../../../speech-rule-engine-tots/js/audio/aural_rendering';

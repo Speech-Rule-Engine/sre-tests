@@ -21,7 +21,7 @@
 import {Grammar} from '../../../speech-rule-engine-tots/js/rule_engine/grammar';
 import {MathMap} from '../../../speech-rule-engine-tots/js/speech_rules/math_map';
 import * as AlphabetGenerator from '../../../speech-rule-engine-tots/js/speech_rules/alphabet_generator';
-import System from '../../../speech-rule-engine-tots/js/common/system';
+import * as System from '../../../speech-rule-engine-tots/js/common/system';
 import {Variables} from '../../../speech-rule-engine-tots/js/common/variables';
 import * as BaseUtil from '../../../speech-rule-engine-tots/js/common/base_util';
 import SystemExternal from '../../../speech-rule-engine-tots/js/common/system_external';

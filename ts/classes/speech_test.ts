@@ -18,7 +18,7 @@
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import System from '../../../speech-rule-engine-tots/js/common/system';
+import * as System from '../../../speech-rule-engine-tots/js/common/system';
 import {Axis, DynamicCstr} from '../../../speech-rule-engine-tots/js/rule_engine/dynamic_cstr';
 
 import {TestUtil} from '../base/test_util';

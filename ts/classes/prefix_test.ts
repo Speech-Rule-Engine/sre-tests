@@ -20,7 +20,7 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import System from '../../../speech-rule-engine-tots/js/common/system';
+import * as System from '../../../speech-rule-engine-tots/js/common/system';
 import {Grammar} from '../../../speech-rule-engine-tots/js/rule_engine/grammar';
 import * as SpeechGeneratorUtil from '../../../speech-rule-engine-tots/js/speech_generator/speech_generator_util';
 import * as Semantic from '../../../speech-rule-engine-tots/js/semantic_tree/semantic';

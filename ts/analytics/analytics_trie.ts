@@ -19,17 +19,18 @@
  */
 
 import {TrieNode} from '../../../speech-rule-engine-tots/js/indexing/trie_node';
+import {StaticTrieNode} from '../../../speech-rule-engine-tots/js/indexing/abstract_trie_node';
 import {Trie} from '../../../speech-rule-engine-tots/js/indexing/trie';
-import System from '../../../speech-rule-engine-tots/js/common/system';
-import {Variables} from '../../../speech-rule-engine-tots/js/common/variables';
 import {SpeechRuleEngine} from '../../../speech-rule-engine-tots/js/rule_engine/speech_rule_engine';
-import {BaseRuleStore} from '../../../speech-rule-engine-tots/js/rule_engine/base_rule_store';
+import {RulesJson, BaseRuleStore} from '../../../speech-rule-engine-tots/js/rule_engine/base_rule_store';
 import {MathStore} from '../../../speech-rule-engine-tots/js/rule_engine/math_store';
-import {SpeechRule} from '../../../speech-rule-engine-tots/js/rule_engine/speech_rule';
+import {Action, ActionType, Component, Precondition, SpeechRule} from '../../../speech-rule-engine-tots/js/rule_engine/speech_rule';
+
+import {TestUtil} from '../base/test_util';
 
 import AnalyticsUtil from './analytics_util';
 import AnalyticsTest from './analytics_test';
-import {TestUtil} from '../base/test_util';
+
 
 declare module '../../../speech-rule-engine-tots/js/indexing/trie' {
   interface Trie {
@@ -45,8 +46,8 @@ declare module '../../../speech-rule-engine-tots/js/indexing/trie' {
     byConstraint(constraint: string[]): TrieNode;
     // Extension
     json(): {[key: string]: Object};
-    getSingletonDynamic_(): SpeechRule[];
-    singleStyle(style: string): SpeechRule;
+    getSingletonDynamic_(): string[];
+    singleStyle(style: string): TrieNode;
   }
 }
 
@@ -59,8 +60,11 @@ function trieJson(node: TrieNode): {[key: string]: Object} {
       [] : node.getChildren().map(function(x: any) {
         return trieJson(x);
       })
+  };
+  if (!(node instanceof StaticTrieNode)) {
+    return json;
   }
-  let rule = this.getRule();
+  let rule = node.getRule();
   if (rule) {
     json['rule'] = rule;
   }
@@ -82,52 +86,109 @@ Trie.prototype.getSingletonDynamic_ = function() {
 };
 
 Trie.prototype.singleStyle = function(style: string)  {
-  // console.log(style);
-  // console.log(this.getSingletonDynamic_());
   return this.byConstraint(this.getSingletonDynamic_()).getChild(style);
 };
 
-// Quaries for rule sets.
+// Queries for rule sets.
+declare module '../../../speech-rule-engine-tots/js/rule_engine/math_store' {
+  interface MathStore {
+    annotators: string[];
+    initialize(): void;
+    annotations(): void;
+    defineUniqueRuleAlias(name: string, dynamic: string, query: string, ...args: string[]): void;
+    defineRuleAlias(name: string, query: string, ...args: string[]): void;
+    defineRulesAlias(name: string, query: string, ...args: string[]): void;
+    defineSpecialisedRule(name: string, oldDynamic: string, newDynamic: string, opt_action?: string): void;
+    evaluateString(str: string): any[];
+    parse(ruleSet: RulesJson): void;
+    allText(): boolean;
+    allLocalizable(): boolean;
+  }
+}
 
-// BaseRuleStore.prototype.allText = function() {
-//   return this.getSpeechRules().filter((x: SpeechRule) =>
-//     x.action.hasType(SpeechRule.Type.TEXT));
-// };
 
-// BaseRuleStore.prototype.allLocalizable = function() {
-//   return this.getSpeechRules().filter((x: sret.SpeechRule) =>
-//     x.action.localizable());
-// };
+MathStore.prototype.allText = function() {
+  return this.getSpeechRules().filter((x: SpeechRule) =>
+    x.action.hasType(ActionType.TEXT));
+};
 
-// SpeechRule.Action.prototype.localizable = function() {
-//   return this.components.some((x: sret.SpeechRule) => x.localizable());
-// };
+MathStore.prototype.allLocalizable = function() {
+  return this.getSpeechRules().filter((x: SpeechRule) =>
+    x.action.localizable());
+};
 
-// SpeechRule.Action.prototype.hasType = function(type: string) {
-//   return this.components.some((x: sret.SpeechRule) => x.hasType(type));
-// };
 
-// SpeechRule.Precondition.prototype.hasDisjunctive = function() {
-//   return this.constraints.some((x: string) => x.match(/ or /));
-// };
+let oldInitialize = MathStore.prototype.initialize;
 
-// SpeechRule.Component.prototype.localizable = function(){
-//   return this.hasType(SpeechRule.Type.TEXT) &&
-//     this.content.match(/^".*"$/);
-// };
+const allStores: MathStore[] = [];
+/**
+ * @override
+ */
+MathStore.prototype.initialize = function() {
+  oldInitialize.bind(this)();
+  allStores.push(this);
+};
 
-// SpeechRule.Component.prototype.hasType = function(type: string){
-//   return this.type === type;
-// };
+
+declare module '../../../speech-rule-engine-tots/js/rule_engine/speech_rule' {
+  interface SpeechRule {
+    toString(): string;
+    localizable(): boolean;
+    hasType(type: string): boolean;
+  }
+  
+  interface Action {
+    components: Component[];
+    toString(): string;
+    localizable(): boolean;
+    hasType(type: string): boolean;
+  }
+
+  interface Component {
+    toString(): string;
+    grammarToString(): string;
+    getGrammar(): string[];
+    attributesToString(): string;
+    getAttributes(): string[];
+    localizable(): boolean;
+    hasType(type: string): boolean;
+  }
+
+  interface Precondition {
+    toString(): string;
+    hasDisjunctive(): boolean;
+  }
+
+}
+
+Action.prototype.localizable = function() {
+  return this.components.some((x: SpeechRule) => x.localizable());
+};
+
+Action.prototype.hasType = function(type: string) {
+  return this.components.some((x: SpeechRule) => x.hasType(type));
+};
+
+Precondition.prototype.hasDisjunctive = function() {
+  return this.constraints.some((x: string) => x.match(/ or /));
+};
+
+Component.prototype.localizable = function(){
+  return this.hasType(ActionType.TEXT) &&
+    this.content.match(/^".*"$/);
+};
+
+Component.prototype.hasType = function(type: string){
+  return this.type === type;
+};
 
 /**
  * Retrieves a rules for a given sequence of constraints.
  *
- * @param {Array.<string>} constraint A list of constraints.
- * @return {TrieNode} The speech rule or null.
- * What if multiple rules exist?
+ * @param constraint A list of constraints.
+ * @return The speech rule or null. What if multiple rules exist?
  */
-Trie.prototype.byConstraint = function(constraint: any) {
+Trie.prototype.byConstraint = function(constraint: string[]): TrieNode {
   let node = this.root;
   while (constraint.length && node) {
     let cstr = constraint.shift();
@@ -178,7 +239,7 @@ namespace AnalyticsTrie {
       let cstr = rule.dynamicCstr.getValues();
       let node = usedTrie.byConstraint(
         cstr.concat([prec.query], prec.constraints));
-      if (!node || !node.getRule || !node.getRule() ||
+      if (!node || !(node instanceof StaticTrieNode) || !node.getRule() ||
         node.getRule() !== rule) {
         outTrie.addRule(rule);
       }
@@ -190,15 +251,13 @@ namespace AnalyticsTrie {
    *
    */
   export function disjunctiveRules() {
-    let rulesets = Object.values(
-      SpeechRuleEngine.getInstance().ruleSets_) as SpeechRuleStore[];
-    let result = [];
-    for (let rules of rulesets) {
-      for (let rule of rules.speechRules_) {
+    let ruleSets = AnalyticsUtil.getAllSets();
+    let result: SpeechRule[] = [];
+    for (let [ , rules] of Object.entries(ruleSets)) {
+      rules.forEach(rule => {
         if (rule.precondition.hasDisjunctive()) {
           result.push(rule);
-        }
-      }
+        }});
     }
     outputTrie(tempTrie(result), 'disjunctiveRules');
   }
@@ -210,15 +269,14 @@ namespace AnalyticsTrie {
    * @param comparator
    */
   export function compareRuleSets(
-    rules: string[], comparator: Function = compareTries) {
-    let set1 = SpeechRuleEngine.getInstance().ruleSets_[rules[0]];
-    let set2 = SpeechRuleEngine.getInstance().ruleSets_[rules[1]];
+    rules: MathStore[], comparator: Function = compareTries) {
+    let set1 = rules[0];
+    let set2 = rules[1];
     if (!(set1 && set2)) {
       return;
     }
     let trie = comparator(set1.trie, set2.trie);
-    for (let i = 2, rule; rule = rules[i]; i++) {
-      let nextSet = SpeechRuleEngine.getInstance().ruleSets_[rule];
+    for (let i = 2, nextSet; nextSet = rules[i]; i++) {
       trie = comparator(trie, nextSet.trie);
     }
     return trie;
@@ -240,7 +298,7 @@ namespace AnalyticsTrie {
       cstr1.unshift(locale);
       let node = trie1.byConstraint(
         cstr1.concat([prec.query], prec.constraints));
-      if (node && node.getRule && node.getRule()) {
+      if (node && (node instanceof StaticTrieNode) && node.getRule()) {
         result.push(rule);
       }
     }
@@ -264,7 +322,7 @@ namespace AnalyticsTrie {
       cstr1.unshift(locale);
       let node = trie1.byConstraint(
         cstr1.concat([prec.query], prec.constraints));
-      if (node && node.getRule && node.getRule() &&
+      if (node && (node instanceof StaticTrieNode) && node.getRule() &&
         node.getRule().action.toString() === rule.action.toString() &&
         !rule.action.localizable()) {
         result.push(rule);
@@ -282,7 +340,7 @@ namespace AnalyticsTrie {
    */
   export function compareTriesStyle(
     trie1: Trie, trie2: Trie, style = 'default') {
-    let rules = Trie['collectRules_'](trie2.singleStyle(style));
+    let rules = Trie.collectRules_(trie2.singleStyle(style));
     let cstr1 = trie1.getSingletonDynamic_();
     cstr1.push(style);
     cstr1 = cstr1.slice(0, 4);
@@ -291,7 +349,7 @@ namespace AnalyticsTrie {
       let prec = rule.precondition;
       let node = trie1.byConstraint(
         cstr1.concat([prec.query], prec.constraints));
-      if (node && node.getRule && node.getRule() &&
+      if (node && (node instanceof StaticTrieNode) && node.getRule() &&
         node.getRule().action.toString() === rule.action.toString() &&
         !rule.action.localizable()) {
         result.push(rule);
@@ -307,9 +365,7 @@ namespace AnalyticsTrie {
    * @param rules1
    * @param rules2
    */
-  export function diffRuleSets(rules1: string, rules2: string): Trie {
-    let set1 = SpeechRuleEngine.getInstance().ruleSets_[rules1];
-    let set2 = SpeechRuleEngine.getInstance().ruleSets_[rules2];
+  export function diffRuleSets(set1: MathStore, set2: MathStore): Trie {
     if (!(set1 && set2)) {
       return null;
     }
@@ -317,7 +373,7 @@ namespace AnalyticsTrie {
     let trie1 = set1.trie;
     let trie2 = set2.trie;
     let locale = set1.locale;
-    let rules = set2.speechRules_;
+    let rules = set2.getSpeechRules();
     for (let rule of rules) {
       let prec = rule.precondition;
       let cstr = rule.dynamicCstr.getValues();
@@ -325,12 +381,12 @@ namespace AnalyticsTrie {
       cstr.unshift(locale);
       let node = trie1.byConstraint(
         cstr.concat([prec.query], prec.constraints));
-      if (!node || !node.getRule || !node.getRule()) {
+      if (!node || !(node instanceof StaticTrieNode) || !node.getRule()) {
         trie.addRule(rule);
       }
     }
     locale = set2.locale;
-    rules = set1.speechRules_;
+    rules = set1.getSpeechRules();
     for (let rule of rules) {
       let prec = rule.precondition;
       let cstr = rule.dynamicCstr.getValues();
@@ -338,59 +394,29 @@ namespace AnalyticsTrie {
       cstr.unshift(locale);
       let node = trie2.byConstraint(
         cstr.concat([prec.query], prec.constraints));
-      if (!node || !node.getRule || !node.getRule()) {
+      if (!node || !(node instanceof StaticTrieNode) || !node.getRule()) {
         trie.addRule(rule);
       }
     }
     return trie;
   }
 
-  export let pairs = [['PrefixRules', 'PrefixFrench'],
-                      ['MathspeakRules', 'MathspeakGerman'],
-                      ['ClearspeakRules', 'ClearspeakFrench']];
-
-  let sets = [
-    ['MathspeakRules', 'MathspeakGerman',
-     'MathspeakSpanish', 'MathspeakFrench'],
-    ['ClearspeakRules', 'ClearspeakGerman', 'ClearspeakFrench'],
-    ['PrefixRules', 'PrefixGerman', 'PrefixSpanish', 'PrefixFrench'],
-    ['SummaryRules', 'SummaryGerman', 'SummarySpanish', 'SummaryFrench']
-  ];
-
+  function outputName(store: MathStore) {
+    return TestUtil.capitalize(store.modality) +
+      TestUtil.capitalize(store.domain);
+  }
+  
   /**
    *
    */
   export function output() {
-    System.setupEngine({});
-    for (let rules of sets) {
-      outputTrie(compareRuleSets(rules), rules[0]);
-      outputTrie(compareRuleSets(rules, compareTriesConstraints),
-                 rules[0] + '-constr');
-    }
+    AnalyticsUtil.initAllSets();
+    let rules = allStores;
+    // TODO: Divides these by modality and domain. O/w it makes little sense!
+    outputTrie(compareRuleSets(rules), outputName(rules[0]));
+    outputTrie(compareRuleSets(rules, compareTriesConstraints),
+               outputName(rules[0]) + '-constr');
     disjunctiveRules();
-  }
-
-
-  export function getAllSets(): {[name: string]: SpeechRule[]} {
-    for (let locale of Variables.LOCALES) {
-      System.setupEngine({locale: locale});
-    }
-    let trie = SpeechRuleEngine.getInstance().getStore().trie;
-    let result: {[name: string]: SpeechRule[]} = {};
-    for (let [loc, rest] of Object.entries(SpeechRuleEngine.getInstance().enumerate())) {
-      for (let [mod, rules] of Object.entries(rest)) {
-        if (mod === 'speech') {
-          for (let rule of Object.keys(rules)) {
-            result[TestUtil.capitalize(rule) + TestUtil.capitalize(loc)] =
-              Trie.collectRules_(trie.byConstraint([loc, mod, rule]));
-          }
-        } else {
-          result[TestUtil.capitalize(mod) + TestUtil.capitalize(loc)] =
-            Trie.collectRules_(trie.byConstraint([loc, mod]));
-        }
-      }
-    }
-    return result;
   }
 
 

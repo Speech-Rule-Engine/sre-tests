@@ -21,7 +21,7 @@
  */
 
 import {EngineConst} from '../../../speech-rule-engine-tots/js/common/engine';
-import System from '../../../speech-rule-engine-tots/js/common/system';
+import * as System from '../../../speech-rule-engine-tots/js/common/system';
 import {Walker} from '../../../speech-rule-engine-tots/js/walker/walker';
 import {TableWalker} from '../../../speech-rule-engine-tots/js/walker/table_walker';
 import * as DomUtil from '../../../speech-rule-engine-tots/js/common/dom_util';
