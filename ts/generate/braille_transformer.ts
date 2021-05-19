@@ -101,7 +101,7 @@ abstract class BrfTransformer extends AbstractTransformer implements BrailleTran
   public cleanInput(str: string): [string, string] {
     let input = [];
     let error = [];
-    for (let char of str.split('')) {
+    for (let char of str.toLowerCase().split('')) {
       if (this.translate.get(char) !== undefined) {
         input.push(char);
       } else {
