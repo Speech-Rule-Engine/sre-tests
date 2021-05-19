@@ -2,6 +2,7 @@
   "information": "Semantic tree tests for limits heuristic.",
   "base": "input/semantic/limits.json",
   "factory": "stree",
+  "blacklist": ["annotation"],
   "tests": {
     "Sum_0": {
       "expected": "<stree><underscore role=\"sum\" id=\"2\"><children><largeop role=\"sum\" id=\"0\">∑</largeop><operator role=\"underaccent\" id=\"1\">_</operator></children></underscore></stree>"
