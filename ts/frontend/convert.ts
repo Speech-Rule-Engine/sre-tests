@@ -29,6 +29,8 @@ let transformers: Map<string, BT.BrailleTransformer> =
   new Map<string, BT.BrailleTransformer>([
     ['NABT', new BT.Nabt2Unicode()],
     ['BLDT', new BT.Bldt2Unicode()],
+    ['NABT-TABLE', new BT.Nabt2UnicodeTable()],
+    ['BLDT-TABLE', new BT.Bldt2UnicodeTable()],
     ['SDF/JKL', new BT.Ascii2Braille('', '')],
     ['1-6', new BT.Numeric2Braille('', '')]
   ]);
@@ -47,6 +49,8 @@ let kind = 'NABT';
  *
  */
 function transformer() {
+  console.log(7);
+  console.log(kind.toUpperCase());
   return transformers.get(kind.toUpperCase());
 }
 
@@ -54,6 +58,8 @@ function transformer() {
  *
  */
 function backtransformer() {
+  console.log(8);
+  console.log(kind.toUpperCase());
   return backtransformers.get(kind.toUpperCase());
 }
 
@@ -70,15 +76,15 @@ declare const firebase: any;
  * @param {JsonTest} test The test.
  */
 function setTest(test: JsonTest) {
-  field.name.innerHTML = test.name;
-  field.expression.innerHTML = test.input ?
+  field.mathname.innerHTML = test.name;
+  field.mathexpression.innerHTML = test.input ?
     `<math display="block">${test.input}</math>` : (
       test.tex ? `\\[${test.tex}\\]`  : `${test.name}`);
-  field.out.innerHTML = test.expected as string;
+  field.braille.innerHTML = test.expected as string;
   // TODO: Transform here, depending on the transformation value;
-  (field.ip as HTMLTextAreaElement).value =
+  (field.input as HTMLTextAreaElement).value =
     backtransformer().via(test.expected as string);
-  (field.ip as HTMLTextAreaElement).focus();
+  (field.input as HTMLTextAreaElement).focus();
   setReferences(test.reference);
   setStatus(test[FC.Interaction]);
   setFeedback(test[FC.FeedbackStatus]);
@@ -184,7 +190,7 @@ function setStatus(status: FC.Status) {
  * @return The test fields that are harvested from the HTML.
  */
 function getTest(): JsonTest {
-  return {expected: field.out.innerHTML};
+  return {expected: field.braille.innerHTML};
 }
 
 /**
@@ -219,19 +225,20 @@ async function initFile(collection: string, file: string) {
   const db = firebase.app().firestore();
   fireTest = new FireTest(db, collection, file, getTest, setTest);
   await fireTest.prepareTests();
-  field.ip = document.getElementById('input');
-  field.out = document.getElementById('braille');
-  field.error = document.getElementById('error');
-  field.format = document.getElementById('format');
-  field.expression = document.getElementById('mathexpression');
-  field.name = document.getElementById('mathname');
-  field.statuscolor = document.getElementById('statuscolor');
-  field.statusvalue = document.getElementById('statusvalue');
-  field.feedback = document.getElementById('feedback');
-  field.refname = document.getElementById('refname');
-  field.references = document.getElementById('references');
+  fillField();
   initButtons(fireTest);
   fireTest.setTest(fireTest.currentTest());
+}
+
+/**
+ * Automatically fills all the field elements.
+ */
+function fillField() {
+  let nodes = document.evaluate('//*[@id]', document.body);
+  for (let node = nodes.iterateNext() as Element; node;
+       node = nodes.iterateNext() as Element) {
+    field[node.id] = node;
+  }
 }
 
 /**
@@ -246,7 +253,7 @@ function translate(str: string) {
  * Generates with keyboard interaction.
  */
 export function generate() {
-  let ip = field.ip as HTMLTextAreaElement;
+  let ip = field.input as HTMLTextAreaElement;
   if (current === ip.value) {
     return;
   }
@@ -268,7 +275,7 @@ function collateKeys() {
   setTimeout(() => {
     collating = false;
     processKeys();
-    let ip = field.ip as HTMLTextAreaElement;
+    let ip = field.input as HTMLTextAreaElement;
     if (ip.value[ip.value.length - 1] !== ',') {
       ip.value = ip.value + ',';
     }
@@ -279,10 +286,10 @@ function collateKeys() {
  *
  */
 function processKeys() {
-  let ip = field.ip as HTMLTextAreaElement;
+  let ip = field.input as HTMLTextAreaElement;
   let cursor = ip.selectionStart;
   // let length = ip.value.length;
-  field.out.innerHTML = '';
+  field.braille.innerHTML = '';
   field.error.innerHTML = '';
   let [input, output, error] = translate(ip.value);
   if (error) {
@@ -295,7 +302,8 @@ function processKeys() {
   }
   ip.value = input;
   current = input;
-  field.out.innerHTML = output;
+  output = output.split('\n').join('<br>');
+  field.braille.innerHTML = output;
   ip.selectionEnd = cursor - error.length;
 }
 
@@ -322,4 +330,18 @@ export function changeFeedback() {
   let value = parseInt((field.feedback as HTMLButtonElement).value, 10);
   fireTest.currentTest()[FC.FeedbackStatus] = value;
   fireTest.saveFeedback(value);
+}
+
+// Harvesting 2D tests.
+export function harvest() {
+  let path = LU.getStorage(FC.NemethProjectPath);
+  let user = LU.getStorage(FC.NemethProjectUser);
+  if (path && user) {
+    initHarvest(user, path);
+  }
+}
+
+export function initHarvest(user: string, path: string) {
+  console.log(path);
+  console.log(user);
 }

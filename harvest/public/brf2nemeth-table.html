@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>Nemeth Test Generation: Editor</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<span class="title">BRF to Nemeth Converter</span>
+
+<div class="converter" id="inputpanel">
+  <div class="section" id="mathjax">
+    <span class="pretitle" id="mathname"></span>
+    <span class="mathexpression" id="mathexpression"></span>
+  </div>
+  <div class="section">
+    <span class="pretitle">Input Format:
+    <span>
+        <select id="format" onchange="Nemeth.Convert.changeFormat()">
+          <option value="nabt-table">NABT-2D</option>
+          <option value="bldt-table">BLDT-2D</option>
+          <option value="sdf/jkl">sdf/jkl</option>
+          <option value="1-6">1-6</option>
+        </select>
+        </span>
+    </span>
+    <span class="active">
+      <textarea class="twod" rows="6" cols="80" id="input" onMouseUp="Nemeth.Convert.generatem()" onKeyUp="Nemeth.Convert.generate()"></textarea>
+    </span>
+  </div>
+  <div class="section">
+    <span class="pretitle"></span>
+    <span class="active"><div class="error" id="error"> </div></span>
+  </div>
+  <div class="section"> </div>
+  <div class="section"> </div>
+  <div class="tall">
+    <span class="pretitle">Braille:</span>
+    <span class="active"><div class="braille boxed" id="braille"> </div></span>
+  </div>
+  <div class="section">
+    <span class="pretitle"></span>
+    <span class="active"><div class="error" id="error"> </div></span>
+  </div>
+  <div class="section">
+    <span class="pretitle" id="refname"></span>
+    <span class="active"><div id="references"> </div></span>
+  </div>
+  <div class="section">
+    <span class="pretitle">Status:</span>
+        <span class="active"><div class="status" id="status">
+        <span id="statuscolor"></span>
+        <span id="statusvalue"></span>
+        </div></span>
+  </div>
+  <div class="section">
+    <span class="pretitle">Feedback:</span>
+    <span class="active">
+        <select id="feedback" onchange="Nemeth.Convert.changeFeedback()">
+          <option value="0">Correct - Correct transcription</option>
+          <option value="1">Unknown - A symbol is not in the Nemeth standard</option>
+          <option value="2">Layout - Can only be expressed in 2D layout</option>
+          <option value="3">Discussion - This needs further discussion</option>
+          <option value="4">Semantic - Interpretation depends on the context</option>
+          <option value="5">Print - Transcription depends on typesetting. E.g., inline vs block formulas</option>
+        </select>
+    </span>
+  </div>
+</div>
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.1.1/firebase-app.js"></script>
+    <script src="/__/firebase/8.1.1/firebase-auth.js"></script>
+    <script src="/__/firebase/8.1.1/firebase-firestore.js"></script>
+    <script src="/__/firebase/8.1.1/firebase-storage.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js?useEmulator=true"></script>
+    <script src="./nemeth-project.js"></script>
+    <script>
+    window.addEventListener('load', Nemeth.User.init);
+    window.addEventListener('load', Nemeth.Convert.init);
+    </script>
+</body>
+</html>
