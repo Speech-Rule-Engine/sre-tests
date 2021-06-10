@@ -10,7 +10,7 @@
   "compare": true,
   "tests": {
     "CollapsedAddition_default": {
-      "expected": "निपातित के साथ योग 2 पद"
+      "expected": "निपातित 2 पद के साथ योग"
     },
     "CollapsedAddition_brief": {
       "expected": "निपातित योग"
@@ -37,7 +37,7 @@
       "expected": "निपातित द्विपद"
     },
     "CollapsedCases_default": {
-      "expected": "निपातित फलन उपशर्त कथन के साथ 2 फलन उपशर्त"
+      "expected": "निपातित 2 फलन उपशर्त के साथ फलन उपशर्त कथन"
     },
     "CollapsedCases_brief": {
       "expected": "निपातित फलन उपशर्त कथन"
@@ -91,7 +91,7 @@
       "expected": "निपातित दीर्घ तत्समक"
     },
     "CollapsedInfixop_default": {
-      "expected": "निपातित विभाजन के साथ 2 अवयव"
+      "expected": "निपातित 2 अवयव के साथ विभाजन"
     },
     "CollapsedInfixop_brief": {
       "expected": "निपातित विभाजन"
@@ -136,7 +136,7 @@
       "expected": "निपातित दीर्घ मिश्र संख्या"
     },
     "CollapsedMultiplication_default": {
-      "expected": "निपातित के साथ गुणनफल 2 गुणनखंड"
+      "expected": "निपातित 2 गुणनखंड के साथ गुणनफल"
     },
     "CollapsedMultiplication_brief": {
       "expected": "निपातित गुणनफल"
@@ -145,7 +145,7 @@
       "expected": "निपातित गुणनफल"
     },
     "CollapsedMultirel_default": {
-      "expected": "निपातित संबंधानुक्रम के साथ 3 अवयव"
+      "expected": "निपातित 3 अवयव के साथ संबंधानुक्रम"
     },
     "CollapsedMultirel_brief": {
       "expected": "निपातित संबंधानुक्रम"
@@ -163,7 +163,7 @@
       "expected": "निपातित दीर्घ संख्या"
     },
     "CollapsedPunctuated_default": {
-      "expected": "निपातित अल्पविराम विभाजित सूचि लम्बाई का 3"
+      "expected": "निपातित 3 लम्बाई की अल्पविराम विभाजित सूचि"
     },
     "CollapsedPunctuated_brief": {
       "expected": "निपातित अल्पविराम विभाजित सूचि"
@@ -181,7 +181,7 @@
       "expected": "निपातित समता"
     },
     "CollapsedRelationSeq_default": {
-      "expected": "निपातित समता अनुक्रम के साथ 3 अवयव"
+      "expected": "निपातित 3 अवयव के साथ समता अनुक्रम"
     },
     "CollapsedRelationSeq_brief": {
       "expected": "निपातित समता अनुक्रम"
@@ -190,7 +190,7 @@
       "expected": "निपातित समता अनुक्रम"
     },
     "CollapsedRoot_default": {
-      "expected": "निपातित वां मूल 3"
+      "expected": "निपातित 3 वां मूल"
     },
     "CollapsedRoot_brief": {
       "expected": "निपातित मूल"
@@ -244,13 +244,13 @@
       "expected": "निपातित वर्ग आव्यूह"
     },
     "CollapsedSubscript_default": {
-      "expected": "निपातित पादांक (when a number)"
+      "expected": "निपातित पादांक"
     },
     "CollapsedSubscript_brief": {
-      "expected": "निपातित पादांक (when a number)"
+      "expected": "निपातित पादांक"
     },
     "CollapsedSubscript_sbrief": {
-      "expected": "निपातित पादांक (when a number)"
+      "expected": "निपातित पादांक"
     },
     "CollapsedSubsup_default": {
       "expected": "निपातित पादांक वाला घातांक"
@@ -271,13 +271,13 @@
       "expected": "निपातित घातांक"
     },
     "CollapsedTable_default": {
-      "expected": "निपातित के साथ सारणी 2 पक्तियां और 2 स्तंभ"
+      "expected": "निपातित 2 पक्तियां और 2 स्तंभ के साथ सारणी"
     },
     "CollapsedTable_brief": {
-      "expected": "निपातित के साथ सारणी 2 पक्तियां और 2 स्तंभ"
+      "expected": "निपातित 2 पक्तियां और 2 स्तंभ के साथ सारणी"
     },
     "CollapsedTable_sbrief": {
-      "expected": "निपातित के साथ सारणी 2 पक्तियां और 2 स्तंभ"
+      "expected": "निपातित 2 पक्तियां और 2 स्तंभ के साथ सारणी"
     },
     "CollapsedText_default": {
       "expected": "निपातित पाठ"
@@ -343,7 +343,7 @@
       "expected": "निपातित संबंधानुक्रम"
     },
     "CollapsedVarPunctuated_default": {
-      "expected": "निपातित अल्पविराम विभाजित सूचि चल लम्बाई का"
+      "expected": "निपातित चल लम्बाई की अल्पविराम विभाजित सूचि"
     },
     "CollapsedVarPunctuated_brief": {
       "expected": "निपातित अल्पविराम विभाजित सूचि"
@@ -352,7 +352,7 @@
       "expected": "निपातित अल्पविराम विभाजित सूचि"
     },
     "CollapsedVarRelation_default": {
-      "expected": "निपातित समता अनुक्रम चल तादात के अवयवों के साथ"
+      "expected": "निपातित चल तादात के अवयवों के साथ समता अनुक्रम"
     },
     "CollapsedVarRelation_brief": {
       "expected": "निपातित समता अनुक्रम"
@@ -379,7 +379,7 @@
       "expected": "निपातित सदिश"
     },
     "CollapsedVarSubtraction_default": {
-      "expected": "निपातित व्यवकलन चल तादात के अवयवों के साथ"
+      "expected": "निपातित चल तादात के अवयवों के साथ व्यवकलन"
     },
     "CollapsedVarSubtraction_brief": {
       "expected": "निपातित व्यवकलन"
@@ -388,7 +388,7 @@
       "expected": "निपातित व्यवकलन"
     },
     "CollapsedCountImplicit_default": {
-      "expected": "निपातित के साथ गुणनफल 3 गुणनखंड"
+      "expected": "निपातित 3 गुणनखंड के साथ गुणनफल"
     },
     "CollapsedCountImplicit_brief": {
       "expected": "निपातित गुणनफल"
@@ -400,7 +400,7 @@
       "expected": "निपातित चल तादात के गुणनखंडो का गुणनफल"
     },
     "CollapsedVarArrowRelation_default": {
-      "expected": "निपातित तीर अनुक्रम चल तादात के अवयवों के साथ"
+      "expected": "निपातित चल तादात के अवयवों के साथ तीर अनुक्रम"
     },
     "CollapsedArrowRelation_default": {
       "expected": "निपातित तीर"
