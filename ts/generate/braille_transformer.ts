@@ -59,7 +59,7 @@ abstract class BrfTransformer extends AbstractTransformer implements BrailleTran
    * @param kind The format.
    */
   protected static getFormat(kind: string) {
-    return (kind.toUpperCase() === 'BLDT' ? BrfTransformer.format.BLDT :
+    return (kind.toUpperCase().match(/^BLDT/) ? BrfTransformer.format.BLDT :
       BrfTransformer.format.NABT);
   }
 
@@ -101,7 +101,7 @@ abstract class BrfTransformer extends AbstractTransformer implements BrailleTran
   public cleanInput(str: string): [string, string] {
     let input = [];
     let error = [];
-    for (let char of str.split('')) {
+    for (let char of str.toLowerCase().split('')) {
       if (this.translate.get(char) !== undefined) {
         input.push(char);
       } else {
@@ -175,6 +175,88 @@ export class Bldt2Unicode extends Brf2Unicode {
   public kind() {
     return 'BLDT';
   }
+}
+
+export class Nabt2UnicodeTable extends Nabt2Unicode {
+
+  /**
+   * @override
+   */
+  public kind() {
+    return 'NABT-TABLE';
+  }
+
+  /**
+   * @override
+   */
+  public via(src: string) {
+    let result = [];
+    for (let line of src.split('\n')) {
+      result.push(super.via(line));
+    }
+    console.log(result.join('\n'));
+    return result.join('\n');
+  }
+
+  public cleanInput(str: string): [string, string] {
+    console.log(5);
+    let input = [];
+    let error = [];
+    for (let line of str.split('\n')) {
+      for (let char of line.toLowerCase().split('')) {
+        if (this.translate.get(char) !== undefined) {
+          input.push(char);
+        } else {
+          error.push(char);
+        }
+      }
+      input.push('\n');
+    }
+    input.pop();
+    return [input.join(''), error.join(', ')];
+  }
+
+}
+
+export class Bldt2UnicodeTable extends Bldt2Unicode {
+
+  /**
+   * @override
+   */
+  public kind() {
+    return 'BLDT-TABLE';
+  }
+
+  /**
+   * @override
+   */
+  public via(src: string) {
+    let result = [];
+    for (let line of src.split('\n')) {
+      result.push(super.via(line));
+    }
+    console.log(result.join('\n'));
+    return result.join('\n');
+  }
+
+  public cleanInput(str: string): [string, string] {
+    console.log(5);
+    let input = [];
+    let error = [];
+    for (let line of str.split('\n')) {
+      for (let char of line.toLowerCase().split('')) {
+        if (this.translate.get(char) !== undefined) {
+          input.push(char);
+        } else {
+          error.push(char);
+        }
+      }
+      input.push('\n');
+    }
+    input.pop();
+    return [input.join(''), error.join(', ')];
+  }
+
 }
 
 export class Unicode2Nabt extends Unicode2Brf {

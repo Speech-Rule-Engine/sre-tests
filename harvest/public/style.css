@@ -133,6 +133,10 @@ div.section {
     height: 25px;
 }
 
+div.tall {
+    height: 200px;
+}
+
 .pretitle {
     width: 15%;
 }
@@ -149,6 +153,10 @@ div.section {
 textarea {
     border: 3px solid #cccccc;
     resize: horizontal;
+}
+
+textarea.twod {
+    resize: both;
 }
 
 
