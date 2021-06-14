@@ -20,7 +20,7 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import {Locale} from '../../../speech-rule-engine-tots/js/l10n/messages';
+import {LOCALE} from '../../../speech-rule-engine-tots/js/l10n/locale';
 
 import {SpeechTest} from './speech_test';
 
@@ -51,7 +51,7 @@ export class NumberTest extends SpeechTest {
    * @override
    */
   public getSpeech(_mml: string) {
-    return (Locale.NUMBERS as any)[this.kind](this.num);
+    return (LOCALE.NUMBERS as any)[this.kind](this.num);
   }
   
 }
