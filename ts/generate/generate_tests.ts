@@ -18,11 +18,11 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {SemanticTree} from '../../../speech-rule-engine-tots/js/semantic_tree/semantic_tree';
-import {SemanticNode} from '../../../speech-rule-engine-tots/js/semantic_tree/semantic_node';
-import * as Semantic from '../../../speech-rule-engine-tots/js/semantic_tree/semantic';
-import * as Enrich from '../../../speech-rule-engine-tots/js/enrich_mathml/enrich';
-import * as DomUtil from '../../../speech-rule-engine-tots/js/common/dom_util';
+import {SemanticTree} from '../../speech-rule-engine/js/semantic_tree/semantic_tree';
+import {SemanticNode} from '../../speech-rule-engine/js/semantic_tree/semantic_node';
+import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
+import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
+import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
 
 
 import * as tu from '../base/test_util';

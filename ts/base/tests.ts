@@ -21,7 +21,7 @@ import {ExampleFiles} from '../classes/abstract_examples';
 import * as TestFactory from '../classes/test_factory';
 import {TestRunner} from './runner';
 import {TestUtil} from './test_util';
-import {Debugger} from '../../../speech-rule-engine-tots/js/common/debugger';
+import {Debugger} from '../../speech-rule-engine/js/common/debugger';
 
 export class Tests {
 

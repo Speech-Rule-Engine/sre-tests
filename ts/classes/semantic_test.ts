@@ -22,15 +22,15 @@
 import xmldom = require('xmldom-sre');
 import {AbstractExamples} from './abstract_examples';
 
-import * as Enrich from '../../../speech-rule-engine-tots/js/enrich_mathml/enrich';
-import * as EnrichMathml from '../../../speech-rule-engine-tots/js/enrich_mathml/enrich_mathml';
-import * as DomUtil from '../../../speech-rule-engine-tots/js/common/dom_util';
-import {SemanticTree} from '../../../speech-rule-engine-tots/js/semantic_tree/semantic_tree';
-import * as Semantic from '../../../speech-rule-engine-tots/js/semantic_tree/semantic';
-import {RebuildStree} from '../../../speech-rule-engine-tots/js/walker/rebuild_stree';
-import {EngineConst} from '../../../speech-rule-engine-tots/js/common/engine';
-import * as System from '../../../speech-rule-engine-tots/js/common/system';
-import * as WalkerUtil from '../../../speech-rule-engine-tots/js/walker/walker_util';
+import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
+import * as EnrichMathml from '../../speech-rule-engine/js/enrich_mathml/enrich_mathml';
+import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
+import {SemanticTree} from '../../speech-rule-engine/js/semantic_tree/semantic_tree';
+import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
+import {RebuildStree} from '../../speech-rule-engine/js/walker/rebuild_stree';
+import {EngineConst} from '../../speech-rule-engine/js/common/engine';
+import * as System from '../../speech-rule-engine/js/common/system';
+import * as WalkerUtil from '../../speech-rule-engine/js/walker/walker_util';
 
 
 /**

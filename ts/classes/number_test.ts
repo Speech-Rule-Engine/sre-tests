@@ -20,7 +20,7 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import {LOCALE} from '../../../speech-rule-engine-tots/js/l10n/locale';
+import {LOCALE} from '../../speech-rule-engine/js/l10n/locale';
 
 import {SpeechTest} from './speech_test';
 

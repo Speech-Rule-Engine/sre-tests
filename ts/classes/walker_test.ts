@@ -20,15 +20,15 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {EngineConst} from '../../../speech-rule-engine-tots/js/common/engine';
-import * as System from '../../../speech-rule-engine-tots/js/common/system';
-import {Walker} from '../../../speech-rule-engine-tots/js/walker/walker';
-import {TableWalker} from '../../../speech-rule-engine-tots/js/walker/table_walker';
-import * as DomUtil from '../../../speech-rule-engine-tots/js/common/dom_util';
-import * as WalkerFactory from '../../../speech-rule-engine-tots/js/walker/walker_factory';
-import * as SpeechGeneratorFactory from '../../../speech-rule-engine-tots/js/speech_generator/speech_generator_factory';
-import {Highlighter} from '../../../speech-rule-engine-tots/js/highlighter/highlighter';
-import * as HighlighterFactory from '../../../speech-rule-engine-tots/js/highlighter/highlighter_factory';
+import {EngineConst} from '../../speech-rule-engine/js/common/engine';
+import * as System from '../../speech-rule-engine/js/common/system';
+import {Walker} from '../../speech-rule-engine/js/walker/walker';
+import {TableWalker} from '../../speech-rule-engine/js/walker/table_walker';
+import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
+import * as WalkerFactory from '../../speech-rule-engine/js/walker/walker_factory';
+import * as SpeechGeneratorFactory from '../../speech-rule-engine/js/speech_generator/speech_generator_factory';
+import {Highlighter} from '../../speech-rule-engine/js/highlighter/highlighter';
+import * as HighlighterFactory from '../../speech-rule-engine/js/highlighter/highlighter_factory';
 
 import {AbstractJsonTest} from '../classes/abstract_test';
 import {Key} from './keycodes';

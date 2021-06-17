@@ -19,8 +19,8 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {MathStore} from '../../../speech-rule-engine-tots/js/rule_engine/math_store';
-import {SpeechRule} from '../../../speech-rule-engine-tots/js/rule_engine/speech_rule';
+import {MathStore} from '../../speech-rule-engine/js/rule_engine/math_store';
+import {SpeechRule} from '../../speech-rule-engine/js/rule_engine/speech_rule';
 
 import * as fs from 'fs';
 import {TestPath, TestUtil} from '../base/test_util';

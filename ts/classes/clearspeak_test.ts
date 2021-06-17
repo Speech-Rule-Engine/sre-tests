@@ -19,8 +19,8 @@
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import {EngineConst} from '../../../speech-rule-engine-tots/js/common/engine';
-import * as System from '../../../speech-rule-engine-tots/js/common/system';
+import {EngineConst} from '../../speech-rule-engine/js/common/engine';
+import * as System from '../../speech-rule-engine/js/common/system';
 
 import {SpeechTest} from './speech_test';
 

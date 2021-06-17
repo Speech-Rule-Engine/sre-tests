@@ -16,7 +16,7 @@
  * @author sorge@google.com (Volker Sorge)
  */
 
-import {Color, ColorPicker} from '../../../speech-rule-engine-tots/js/highlighter/color_picker';
+import {Color, ColorPicker} from '../../speech-rule-engine/js/highlighter/color_picker';
 
 import {AbstractJsonTest} from '../classes/abstract_test';
 

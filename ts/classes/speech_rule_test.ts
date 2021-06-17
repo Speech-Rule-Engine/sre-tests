@@ -20,7 +20,7 @@
  */
 
 import {AbstractJsonTest} from './abstract_test';
-import {Component, Action} from '../../../speech-rule-engine-tots/js/rule_engine/speech_rule';
+import {Component, Action} from '../../speech-rule-engine/js/rule_engine/speech_rule';
 
 export class SpeechRuleTest extends AbstractJsonTest {
 

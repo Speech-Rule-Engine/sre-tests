@@ -21,10 +21,10 @@
  */
 
 import {SpeechTest} from './speech_test';
-import * as DomUtil from '../../../speech-rule-engine-tots/js/common/dom_util';
-import AuralRendering from '../../../speech-rule-engine-tots/js/audio/aural_rendering';
-import * as SpeechGeneratorUtil from '../../../speech-rule-engine-tots/js/speech_generator/speech_generator_util';
-import * as Semantic from '../../../speech-rule-engine-tots/js/semantic_tree/semantic';
+import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
+import AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
+import * as SpeechGeneratorUtil from '../../speech-rule-engine/js/speech_generator/speech_generator_util';
+import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
 
 export class CollapseTest extends SpeechTest {
 

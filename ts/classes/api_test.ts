@@ -20,9 +20,9 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {SemanticAnnotations} from '../../../speech-rule-engine-tots/js/semantic_tree/semantic_annotations';
-import {EngineConst} from '../../../speech-rule-engine-tots/js/common/engine';
-import * as System from '../../../speech-rule-engine-tots/js/common/system';
+import {SemanticAnnotations} from '../../speech-rule-engine/js/semantic_tree/semantic_annotations';
+import {EngineConst} from '../../speech-rule-engine/js/common/engine';
+import * as System from '../../speech-rule-engine/js/common/system';
 import {Key} from './keycodes';
 
 import {AbstractJsonTest} from './abstract_test';

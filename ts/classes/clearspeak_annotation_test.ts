@@ -18,8 +18,8 @@
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import {SemanticAnnotations} from '../../../speech-rule-engine-tots/js/semantic_tree/semantic_annotations';
-import * as Semantic from '../../../speech-rule-engine-tots/js/semantic_tree/semantic';
+import {SemanticAnnotations} from '../../speech-rule-engine/js/semantic_tree/semantic_annotations';
+import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
 
 import {AbstractJsonTest} from './abstract_test';
 
