@@ -30,6 +30,7 @@ import {CollapseTest} from './collapse_test';
 import {ColorPickerTest} from './color_picker_test';
 import {HtmlTest, XpathTest} from './dom_test';
 import {MarkupTest} from './markup_test';
+import {NumberTest} from './number_test';
 import {PrefixTest} from './prefix_test';
 import * as st from './semantic_test';
 import {SpeechRuleTest} from './speech_rule_test';
@@ -48,6 +49,7 @@ const map = new Map<string, any>([
   ['enrichSpeech', st.EnrichSpeechTest],
   ['html', HtmlTest],
   ['markup', MarkupTest],
+  ['number', NumberTest],
   ['prefix', PrefixTest],
   ['rebuild', st.RebuildStreeTest],
   ['rules', SpeechRuleTest],
