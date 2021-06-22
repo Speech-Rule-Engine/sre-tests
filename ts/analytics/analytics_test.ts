@@ -19,7 +19,7 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {MathStore} from '../../speech-rule-engine/js/rule_engine/math_store';
+import {SpeechRuleEngine} from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
 import {SpeechRule} from '../../speech-rule-engine/js/rule_engine/speech_rule';
 
 import * as fs from 'fs';
@@ -32,12 +32,12 @@ import AnalyticsUtil from './analytics_util';
 //  * Unique applied rules for each test suite
 //  * Comparison with actual rules
 
-let oldLookupRule = MathStore.prototype.lookupRule;
+let oldLookupRule = SpeechRuleEngine.prototype.lookupRule;
 
 /**
  * @override
  */
-MathStore.prototype.lookupRule = function(node: any, dynamic: any) {
+SpeechRuleEngine.prototype.lookupRule = function(node: any, dynamic: any) {
   let rule = oldLookupRule.bind(this)(node, dynamic);
   if (AnalyticsTest.deep && rule) {
     AnalyticsTest.addAppliedRule(rule);
@@ -45,11 +45,11 @@ MathStore.prototype.lookupRule = function(node: any, dynamic: any) {
   return rule;
 };
 
-let oldLookupRules = MathStore.prototype.lookupRules;
+let oldLookupRules = SpeechRuleEngine.prototype.lookupRules;
 /**
  * @override
  */
-MathStore.prototype.lookupRules = function(node: any, dynamic: any) {
+SpeechRuleEngine.prototype.lookupRules = function(node: any, dynamic: any) {
   let rules = oldLookupRules.bind(this)(node, dynamic);
   if (AnalyticsTest.deep) {
     AnalyticsTest.addApplicableRules(rules);

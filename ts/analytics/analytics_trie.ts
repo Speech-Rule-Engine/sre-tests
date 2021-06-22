@@ -203,8 +203,7 @@ namespace AnalyticsTrie {
    * @param rules
    */
   export function tempTrie(rules: SpeechRule[]): Trie {
-    let store = new MathStore();
-    let trie = store.trie;
+    let trie = new Trie();
     for (let rule of rules) {
       trie.addRule(rule);
     }
@@ -231,8 +230,7 @@ namespace AnalyticsTrie {
     let applied = Array.from(AnalyticsTest.appliedRule.values())
       .reduce((x, y) => x.concat(y), []);
     let usedTrie = tempTrie(applied);
-    let allRules = SpeechRuleEngine.getInstance()['activeStore_']
-      .trie.collectRules();
+    let allRules = SpeechRuleEngine.getInstance().trie.collectRules();
     let outTrie = tempTrie([]);
     for (let rule of allRules) {
       let prec = rule.precondition;
@@ -275,13 +273,22 @@ namespace AnalyticsTrie {
     if (!(set1 && set2)) {
       return;
     }
-    let trie = comparator(set1.trie, set2.trie);
+    let trie1 = trieFromStore(set1);
+    let trie2 = trieFromStore(set2);
+    let trie = comparator(trie1, trie2);
     for (let i = 2, nextSet; nextSet = rules[i]; i++) {
-      trie = comparator(trie, nextSet.trie);
+      let nextTrie = trieFromStore(nextSet);
+      trie = comparator(trie, nextTrie);
     }
     return trie;
   }
 
+  function trieFromStore(store: MathStore) {
+    let trie = new Trie();
+    store.getSpeechRules().forEach(x => trie.addRule(x));
+    return trie;
+  }
+  
   /**
    * @param trie1
    * @param trie2
@@ -370,8 +377,8 @@ namespace AnalyticsTrie {
       return null;
     }
     let trie = tempTrie([]);
-    let trie1 = set1.trie;
-    let trie2 = set2.trie;
+    let trie1 = trieFromStore(set1);
+    let trie2 = trieFromStore(set2);
     let locale = set1.locale;
     let rules = set2.getSpeechRules();
     for (let rule of rules) {
