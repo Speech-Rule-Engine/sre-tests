@@ -62,7 +62,7 @@ namespace AnalyticsUtil {
 
   export function getAllSets(): {[name: string]: SpeechRule[]} {
     initAllSets();
-    let trie = SpeechRuleEngine.getInstance().getStore().trie;
+    let trie = SpeechRuleEngine.getInstance().trie;
     let result: {[name: string]: SpeechRule[]} = {};
     for (let [loc, rest] of Object.entries(SpeechRuleEngine.getInstance().enumerate())) {
       for (let [mod, rules] of Object.entries(rest)) {
