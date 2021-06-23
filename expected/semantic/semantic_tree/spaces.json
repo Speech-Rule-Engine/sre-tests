@@ -2,6 +2,7 @@
   "factory": "stree",
   "information": "Semantic Tree Tests for semantically annotated spacing elements",
   "base": "input/semantic/spaces.json",
+  "blacklist": ["annotation"],
   "tests": {
     "FootnoteWithText": {
       "expected": "<stree><punctuated role=\"text\" id=\"19\"><content><punctuation role=\"dummy\" id=\"13\">⁣</punctuation><punctuation role=\"dummy\" id=\"14\">⁣</punctuation><punctuation role=\"dummy\" id=\"15\">⁣</punctuation><punctuation role=\"dummy\" id=\"16\">⁣</punctuation><punctuation role=\"dummy\" id=\"17\">⁣</punctuation><punctuation role=\"dummy\" id=\"18\">⁣</punctuation></content><children><text role=\"unknown\" font=\"normal\" id=\"0\">area of triangle</text><text role=\"space\" id=\"1\"> </text><superscript role=\"unknown\" id=\"4\"><children><text role=\"unknown\" font=\"normal\" id=\"2\">area of square</text><number role=\"integer\" font=\"normal\" id=\"3\">1</number></children></superscript><text role=\"space\" id=\"5\"> </text><superscript role=\"unknown\" id=\"8\"><children><text role=\"unknown\" font=\"normal\" id=\"6\">1 unit</text><number role=\"integer\" font=\"normal\" id=\"7\">2</number></children></superscript><text role=\"space\" id=\"9\"> </text><superscript role=\"unknown\" id=\"12\"><children><text role=\"unknown\" font=\"normal\" id=\"10\">16 units</text><number role=\"integer\" font=\"normal\" id=\"11\">3</number></children></superscript></children></punctuated></stree>"

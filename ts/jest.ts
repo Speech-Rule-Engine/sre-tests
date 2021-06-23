@@ -22,6 +22,7 @@ export function runJsonTest(file: string) {
       });
       afterAll(() => {
         testcases.tearDownTest();
+        global.gc && global.gc();
       });
       for (let testcase of testcases.inputTests) {
         if (!testcase.test) {

@@ -18,25 +18,33 @@
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
+import * as System from '../../speech-rule-engine/js/common/system';
+import {Axis, DynamicCstr} from '../../speech-rule-engine/js/rule_engine/dynamic_cstr';
+
 import {TestUtil} from '../base/test_util';
 import {AbstractExamples} from './abstract_examples';
 
 export class SpeechTest extends AbstractExamples {
 
-  public style: string;
-
-  public domain: string;
-
-  public locale: string;
-
-  public modality: string;
+  /**
+   * The speech style of the tests.
+   */
+  public style: string = DynamicCstr.DEFAULT_VALUES[Axis.STYLE];
 
   /**
-   * Specify particular rule sets for a test. By default all available rule sets
-   * are used.
+   * The speech rules for the tests.
    */
-  public rules: string[] = null;
+  public domain: string = DynamicCstr.DEFAULT_VALUES[Axis.DOMAIN];
+
+  /**
+   * The locale for the tests.
+   */
+  public locale: string = DynamicCstr.DEFAULT_VALUES[Axis.LOCALE];
+
+  /**
+   * The modality for the tests.
+   */
+  public modality: string = DynamicCstr.DEFAULT_VALUES[Axis.MODALITY];
 
   /**
    * Flag indicating if the actual output should be written to the HTML example
@@ -48,8 +56,6 @@ export class SpeechTest extends AbstractExamples {
    * Flag indicating if English output should be generate for comparison.
    */
   public compare: boolean = false;
-
-  public fileDirectory: string;
 
   /**
    * Wraps an entry into an HTML cell.
@@ -89,12 +95,6 @@ export class SpeechTest extends AbstractExamples {
    */
   public constructor() {
     super();
-    this.style = sre.DynamicCstr.DEFAULT_VALUES[sre.DynamicCstr.Axis.STYLE];
-    this.domain = sre.DynamicCstr.DEFAULT_VALUES[sre.DynamicCstr.Axis.DOMAIN];
-    this.locale = sre.DynamicCstr.DEFAULT_VALUES[sre.DynamicCstr.Axis.LOCALE];
-    this.modality = sre.DynamicCstr.DEFAULT_VALUES[
-      sre.DynamicCstr.Axis.MODALITY];
-
     this.pickFields.push('preference');
   }
 
@@ -119,9 +119,9 @@ export class SpeechTest extends AbstractExamples {
     let style = opt_style || this.style;
     let mathMl = '<math xmlns="http://www.w3.org/1998/Math/MathML">' +
       mml + '</math>';
-    sre.System.getInstance().setupEngine(
+    System.setupEngine(
       {domain: this.domain, style: style,
-       modality: this.modality, rules: this.rules, locale: this.locale});
+       modality: this.modality, locale: this.locale});
     let actual = this.getSpeech(mathMl);
     let expected = this.actual ? actual : answer;
     this.appendRuleExample(mathMl, expected, style);
@@ -135,7 +135,7 @@ export class SpeechTest extends AbstractExamples {
    * @return The resulting speech.
    */
   public getSpeech(mathMl: string): string {
-    return sre.System.getInstance().toSpeech(mathMl);
+    return System.toSpeech(mathMl);
   }
 
   /**
@@ -157,9 +157,9 @@ export class SpeechTest extends AbstractExamples {
       '.</h2>';
     let outList = [input];
     if (this.compare) {
-      sre.System.getInstance().setupEngine(
-        {domain: this.domain, style: style,
-         modality: this.modality, rules: this.rules, locale: 'en'});
+      System.setupEngine(
+        {domain: this.domain, style: style,  locale: 'en',
+         modality: (this.modality === 'braille') ? 'speech' : this.modality});
       outList.push(this.getSpeech(input));
     }
     outList.push(output);

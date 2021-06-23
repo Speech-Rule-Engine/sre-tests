@@ -17,7 +17,9 @@
  * @author sorge@google.com (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
+import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
+import XpathUtil from '../../speech-rule-engine/js/common/xpath_util';
+
 import {AbstractJsonTest} from '../classes/abstract_test';
 
 export class HtmlTest extends AbstractJsonTest {
@@ -29,7 +31,7 @@ export class HtmlTest extends AbstractJsonTest {
    * @param result The expected output.
    */
   public entitiesTest(xml: string, result: string) {
-    let parsed = sre.DomUtil.parseInput(xml);
+    let parsed = DomUtil.parseInput(xml);
     this.assert.equal(parsed.toString(), result);
   }
 
@@ -62,8 +64,8 @@ export class XpathTest extends AbstractJsonTest {
    */
   public entitiesTest(xml: string, result: string,
                       kind: string, query: string) {
-    let parsed = sre.DomUtil.parseInput(xml);
-    let actual = sre.XpathUtil[kind](query, parsed);
+    let parsed = DomUtil.parseInput(xml);
+    let actual = (XpathUtil as any)[kind](query, parsed);
     this.assert.equal(actual.toString(), result.toString());
   }
 

@@ -16,9 +16,9 @@
  * @author sorge@google.com (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
+import {Color, ColorPicker} from '../../speech-rule-engine/js/highlighter/color_picker';
+
 import {AbstractJsonTest} from '../classes/abstract_test';
-import * as sret from '../typings/sre';
 
 export class ColorPickerTest extends AbstractJsonTest {
 
@@ -29,8 +29,8 @@ export class ColorPickerTest extends AbstractJsonTest {
    * @param color The color specification.
    * @param expected The expected rgba string.
    */
-  public executeTest(color: sret.colorType, expected: string) {
-    let picker = new sre.ColorPicker(color);
+  public executeTest(color: Color, expected: string) {
+    let picker = new ColorPicker(color);
     this.assert.equal(picker.rgba().background, expected);
   }
 

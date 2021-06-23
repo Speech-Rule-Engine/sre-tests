@@ -20,13 +20,23 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
+import {EngineConst} from '../../speech-rule-engine/js/common/engine';
+import * as System from '../../speech-rule-engine/js/common/system';
+import {Walker} from '../../speech-rule-engine/js/walker/walker';
+import {TableWalker} from '../../speech-rule-engine/js/walker/table_walker';
+import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
+import * as WalkerFactory from '../../speech-rule-engine/js/walker/walker_factory';
+import * as SpeechGeneratorFactory from '../../speech-rule-engine/js/speech_generator/speech_generator_factory';
+import {Highlighter} from '../../speech-rule-engine/js/highlighter/highlighter';
+import * as HighlighterFactory from '../../speech-rule-engine/js/highlighter/highlighter_factory';
+
 import {AbstractJsonTest} from '../classes/abstract_test';
-import * as sret from '../typings/sre';
+import {Key} from './keycodes';
+
 
 export class WalkerTest extends AbstractJsonTest {
 
-  private walker: sret.Walker;
+  private walker: Walker;
 
   /**
    * @override
@@ -48,9 +58,9 @@ export class WalkerTest extends AbstractJsonTest {
    * @override
    */
   public setUpTest() {
-    sre.System.getInstance().setupEngine(
+    System.setupEngine(
       {modality: 'speech', locale: 'en', domain: 'mathspeak',
-       style: 'default', speech: sre.Engine.Speech.NONE});
+       style: 'default', speech: EngineConst.Speech.NONE});
   }
 
   // /**
@@ -73,9 +83,9 @@ export class WalkerTest extends AbstractJsonTest {
    */
   public executeTest(move: string | null, result: string | null,
                      modifier: boolean = false) {
-    this.walker.modifier = modifier;
+    (this.walker as TableWalker).modifier = modifier;
     if (move) {
-      this.walker.move(sre.EventUtil.KeyCode[move]);
+      this.walker.move(Key.get(move));
     }
     this.assert.equal(this.walker.speech(), result);
   }
@@ -108,12 +118,12 @@ export class WalkerTest extends AbstractJsonTest {
       renderer['browser'] = browser;
     }
     let expression = this.jsonTests['expression'];
-    this.walker = sre.WalkerFactory.walker(
+    this.walker = WalkerFactory.walker(
       this.jsonTests['walker'],
-      sre.DomUtil.parseInput(this.baseTests['inputs'][expression]),
-      sre.SpeechGeneratorFactory.generator(this.jsonTests['generator']),
-      (sre.HighlighterFactory.highlighter(
-        {color: 'black'}, {color: 'white'}, renderer) as sret.Highlighter),
+      DomUtil.parseInput(this.baseTests['inputs'][expression]),
+      SpeechGeneratorFactory.generator(this.jsonTests['generator']),
+      (HighlighterFactory.highlighter(
+        {color: 'black'}, {color: 'white'}, renderer) as Highlighter),
       this.baseTests['inputs'][expression.replace(/_.*$/, '_Mml')]);
   }
 

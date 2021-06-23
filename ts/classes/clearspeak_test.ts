@@ -19,7 +19,9 @@
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
+import {EngineConst} from '../../speech-rule-engine/js/common/engine';
+import * as System from '../../speech-rule-engine/js/common/system';
+
 import {SpeechTest} from './speech_test';
 
 export class ClearspeakTest extends SpeechTest {
@@ -38,16 +40,16 @@ export class ClearspeakTest extends SpeechTest {
    */
   public setUpTest() {
     super.setUpTest();
-    sre.System.getInstance().setupEngine(
-      {markup: sre.Engine.Markup.PUNCTUATION});
+    System.setupEngine(
+      {markup: EngineConst.Markup.PUNCTUATION});
   }
 
   /**
    * @override
    */
   public tearDownTest() {
-    sre.System.getInstance().setupEngine(
-      {markup: sre.Engine.Markup.NONE});
+    System.setupEngine(
+      {markup: EngineConst.Markup.NONE});
     super.tearDownTest();
   }
 }

@@ -20,7 +20,11 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
+import {SemanticAnnotations} from '../../speech-rule-engine/js/semantic_tree/semantic_annotations';
+import {EngineConst} from '../../speech-rule-engine/js/common/engine';
+import * as System from '../../speech-rule-engine/js/common/system';
+import {Key} from './keycodes';
+
 import {AbstractJsonTest} from './abstract_test';
 
 export class ApiTest extends AbstractJsonTest {
@@ -30,7 +34,7 @@ export class ApiTest extends AbstractJsonTest {
    */
   public static SETUP: {[key: string]: string} = {
     locale: 'en', domain: 'mathspeak', style: 'default',
-    modality: 'speech', speech: sre.Engine.Speech.NONE
+    modality: 'speech', speech: EngineConst.Speech.NONE
   };
 
   /**
@@ -54,8 +58,8 @@ export class ApiTest extends AbstractJsonTest {
    * @override
    */
   public setUpTest() {
-    sre.SemanticAnnotations.getInstance().annotators = {};
-    sre.SemanticAnnotations.getInstance().visitors = {};
+    SemanticAnnotations.annotators = {};
+    SemanticAnnotations.visitors = {};
   }
 
   /**
@@ -64,7 +68,7 @@ export class ApiTest extends AbstractJsonTest {
    * @param feature The feature vector for the engine.
    */
   public setupEngine(feature: {[key: string]: string}) {
-    sre.System.getInstance().setupEngine(feature || ApiTest.SETUP);
+    System.setupEngine(feature || ApiTest.SETUP);
   }
 
   /**
@@ -77,12 +81,13 @@ export class ApiTest extends AbstractJsonTest {
    * @param json Json output expected?
    * @param move Is this a move with some keyboard input?
    */
-  public executeTest(func: string, expr: string, result: string | null,
+  public executeTest(func: string, expr: any, result: string | null,
                      feature: {[key: string]: string},
                      json: boolean, move: boolean) {
     this.setupEngine(feature);
-    expr = move ? sre.EventUtil.KeyCode[expr] : expr || ApiTest.QUADRATIC;
-    let output = sre.System.getInstance()[func](expr);
+    // TODO (TS): This is an enum and does not work!
+    expr = move ? Key.get(expr) : expr || ApiTest.QUADRATIC;
+    let output = (System as any)[func](expr);
     output = output ?
       (json ? JSON.stringify(output) : output.toString()) : output;
     this.assert.equal(output, result);

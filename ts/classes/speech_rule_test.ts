@@ -19,18 +19,18 @@
  * @author sorge@google.com (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
 import {AbstractJsonTest} from './abstract_test';
+import {Component, Action} from '../../speech-rule-engine/js/rule_engine/speech_rule';
 
 export class SpeechRuleTest extends AbstractJsonTest {
 
-  private _fromString = new Map([
-    ['Grammar', sre.SpeechRule.Component.grammarFromString],
-    ['Attributes', sre.SpeechRule.Component.attributesFromString],
-    ['Components', sre.SpeechRule.Component.fromString],
-    ['Actions', sre.SpeechRule.Action.fromString],
+  private _fromString: Map<string, (p1: string) => any> = new Map([
+    ['Grammar', Component.grammarFromString as (p1: string) => any],
+    ['Attributes', Component.attributesFromString as (p1: string) => any],
+    ['Components', Component.fromString as (p1: string) => any],
+    ['Actions', Action.fromString as (p1: string) => any],
     ['AttributesList', (inp: string) =>
-      sre.SpeechRule.Component.fromString(inp).getAttributes()]
+      Component.fromString(inp).getAttributes()]
   ],
   );
 

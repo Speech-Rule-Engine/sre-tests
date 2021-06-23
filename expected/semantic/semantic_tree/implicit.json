@@ -3,6 +3,7 @@
   "base": "input/semantic/implicit.json",
   "factory": "stree",
   "_comment0_": "Tests for the juxtaposition heuristic",
+  "blacklist": ["annotation"],
   "tests": {
     "Juxta_0": {
       "expected": "<infixop role=\"division\" id=\"6\">/<content><operator role=\"division\" font=\"normal\" id=\"1\">/</operator></content><children><identifier role=\"latinletter\" font=\"italic\" id=\"0\">n</identifier><infixop role=\"implicit\" id=\"5\">⁢<content><operator role=\"multiplication\" font=\"italic\" id=\"3\">⁢</operator></content><children><identifier role=\"greekletter\" font=\"italic\" id=\"2\">ϕ</identifier><identifier role=\"latinletter\" font=\"italic\" id=\"4\">n</identifier></children></infixop></children></infixop>"

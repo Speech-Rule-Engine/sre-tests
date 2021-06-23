@@ -20,7 +20,13 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
+import * as System from '../../speech-rule-engine/js/common/system';
+import {Grammar} from '../../speech-rule-engine/js/rule_engine/grammar';
+import * as SpeechGeneratorUtil from '../../speech-rule-engine/js/speech_generator/speech_generator_util';
+import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
+import {SemanticNode} from '../../speech-rule-engine/js/semantic_tree/semantic_node';
+import {EngineConst} from '../../speech-rule-engine/js/common/engine';
+
 import {SpeechTest} from './speech_test';
 
 export class PrefixTest extends SpeechTest {
@@ -56,16 +62,16 @@ export class PrefixTest extends SpeechTest {
    */
   public setUpTest() {
     super.setUpTest();
-    sre.System.getInstance().setupEngine(
-      {markup: sre.Engine.Markup.PUNCTUATION});
+    System.setupEngine(
+      {markup: EngineConst.Markup.PUNCTUATION});
   }
 
   /**
    * @override
    */
   public tearDownTest() {
-    sre.System.getInstance().setupEngine(
-      {markup: sre.Engine.Markup.NONE});
+    System.setupEngine(
+      {markup: EngineConst.Markup.NONE});
     super.tearDownTest();
   }
 
@@ -75,28 +81,27 @@ export class PrefixTest extends SpeechTest {
   public method(...args: string[]) {
     this.id = args[2] === undefined ? null : parseInt(args[2], 10);
     if (args[3]) {
-      sre.Grammar.getInstance().setParameter(args[3], true);
+      Grammar.getInstance().setParameter(args[3], true);
     }
     super.method(args[0], args[1]);
-    sre.Grammar.getInstance().clear();
+    Grammar.getInstance().clear();
   }
 
   /**
    * @override
    */
   public getSpeech(mml: string) {
-    sre.Engine.getInstance().cache = false;
-    let stree = sre.Semantic.getTreeFromString(mml);
+    let stree = Semantic.getTreeFromString(mml);
     let node = stree.root.querySelectorAll(
       this.id === null ?
-        (x: Element) => (x.attributes as any)['extid'] === 'A' :
-        (x: Element) => parseInt(x.id, 10) === this.id)[0];
+        (x: SemanticNode) => x.attributes['extid'] === 'A' :
+        (x: SemanticNode) => x.id === this.id)[0];
     if (!node) {
       this.assert.fail();
       return '';
     }
     this.subExpr = node.mathmlTree;
-    return sre.SpeechGeneratorUtil.retrievePrefix(node);
+    return SpeechGeneratorUtil.retrievePrefix(node);
   }
 
   /**

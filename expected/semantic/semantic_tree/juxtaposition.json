@@ -2,7 +2,7 @@
   "information": "Semantic tree tests for nested juxtaposition heuristic.",
   "factory": "stree",
   "base": "input/semantic/juxtaposition.json",
-  "blacklist": ["id"],
+  "blacklist": ["id", "annotation"],
   "tests": {
     "Juxta_Nested_2_0": {
       "expected": "<stree><infixop role=\"implicit\">⁢<content><operator role=\"multiplication\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\">a</identifier><identifier role=\"latinletter\" font=\"italic\">b</identifier></children></infixop></stree>"
