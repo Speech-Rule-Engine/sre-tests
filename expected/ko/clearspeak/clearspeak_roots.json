@@ -10,416 +10,416 @@
   "tests": {
     "_comment1_": " Roots",
     "Root001": {
-      "expected": "the square root of 2"
+      "expected": "루트 2"
     },
     "Root002": {
-      "expected": "3 plus the square root of 2"
+      "expected": "3 더하기 루트 2"
     },
     "Root003": {
-      "expected": "3 plus or minus the square root of 2"
+      "expected": "3 플러스 마이너스 루트 2"
     },
     "Root004": {
-      "expected": "3 minus or plus the square root of 2"
+      "expected": "3 마이너스 플러스 루트 2"
     },
     "Root005": {
-      "expected": "the negative square root of 2"
+      "expected": "마이너스 루트 2"
     },
     "Root006": {
-      "expected": "3 minus the square root of 2"
+      "expected": "3 빼기 루트 2"
     },
     "Root007": {
-      "expected": "3 plus the negative square root of 2"
+      "expected": "3 더하기 마이너스 루트 2"
     },
     "Root008": {
-      "expected": "3 minus the negative square root of 2"
+      "expected": "3 빼기 마이너스 루트 2"
     },
     "Root009": {
-      "expected": "3 plus, open paren, the negative square root of 2, close paren"
+      "expected": "3 더하기, 괄호 열고, 마이너스 루트 2, 괄호 닫고"
     },
     "Root010": {
-      "expected": "3 minus, open paren, the negative square root of 2, close paren"
+      "expected": "3 빼기, 괄호 열고, 마이너스 루트 2, 괄호 닫고"
     },
     "Root011": {
-      "expected": "the square root of x plus 1"
+      "expected": "루트 x 더하기 1"
     },
     "Root011a": {
-      "expected": "the square root of x, plus 1"
+      "expected": "루트 x, 더하기 1"
     },
     "Root012": {
-      "expected": "the negative square root of x"
+      "expected": "마이너스 루트 x"
     },
     "Root013": {
-      "expected": "open paren, the square root of x, close paren, squared"
+      "expected": "괄호 열고, 루트 x, 괄호 닫고, 제곱"
     },
     "Root014": {
-      "expected": "negative, open paren, the square root of x, close paren, squared"
+      "expected": "마이너스, 괄호 열고, 루트 x, 괄호 닫고, 제곱"
     },
     "Root015": {
-      "expected": "the square root of x, squared"
+      "expected": "루트 x, 제곱"
     },
     "Root016": {
-      "expected": "the square root of x squared"
+      "expected": "루트 x 제곱"
     },
     "Root017": {
-      "expected": "the square root of x squared plus y squared"
+      "expected": "루트 x 제곱 더하기 y 제곱"
     },
     "Root018": {
-      "expected": "the square root of, x sub 1, squared plus, x sub 2, squared"
+      "expected": "루트, x 아래첨자 1, 제곱 더하기, x 아래첨자 2, 제곱"
     },
     "Root019": {
-      "expected": "the square root of, open paren, x sub 2, minus, x sub 1, close paren, squared plus, open paren, y sub 2, minus, y sub 1, close paren, squared"
+      "expected": "루트, 괄호 열고, x 아래첨자 2, 빼기, x 아래첨자 1, 괄호 닫고, 제곱 더하기, 괄호 열고, y 아래첨자 2, 빼기, y 아래첨자 1, 괄호 닫고, 제곱"
     },
     "Root020": {
-      "expected": "the square root of one half"
+      "expected": "루트 이 분의 일"
     },
     "Root021": {
-      "expected": "the square root of, 23 over 66"
+      "expected": "루트, 66 분의 23"
     },
     "Root022": {
-      "expected": "the square root of, the fraction with numerator x plus 1, and denominator 2 x, plus 5"
+      "expected": "루트, 분모가 2 x, 더하기 5 이고 분자가 x 더하기 1 인 분수"
     },
     "Root023": {
-      "expected": "the fraction with numerator negative b plus or minus the square root of b squared minus 4 a c, and denominator 2 a"
+      "expected": "분모가 2 a 이고 분자가 마이너스 b 플러스 마이너스 루트 b 제곱 빼기 4 a c 인 분수"
     },
     "Root024": {
-      "expected": "the positive square root of 2"
+      "expected": "플러스 루트 2"
     },
     "Root025": {
-      "expected": "3 plus the positive square root of 2"
+      "expected": "3 더하기 플러스 루트 2"
     },
     "Root026": {
-      "expected": "3 plus or minus the square root of 2"
+      "expected": "3 플러스 마이너스 루트 2"
     },
     "Root027": {
-      "expected": "3 minus or plus the square root of 2"
+      "expected": "3 마이너스 플러스 루트 2"
     },
     "Root028": {
-      "expected": "the negative square root of 2"
+      "expected": "마이너스 루트 2"
     },
     "Root029": {
-      "expected": "3 minus the positive square root of 2"
+      "expected": "3 빼기 플러스 루트 2"
     },
     "Root030": {
-      "expected": "3 plus the negative square root of 2"
+      "expected": "3 더하기 마이너스 루트 2"
     },
     "Root031": {
-      "expected": "3 minus the negative square root of 2"
+      "expected": "3 빼기 마이너스 루트 2"
     },
     "Root032": {
-      "expected": "3 plus, open paren, the negative square root of 2, close paren"
+      "expected": "3 더하기, 괄호 열고, 마이너스 루트 2, 괄호 닫고"
     },
     "Root033": {
-      "expected": "3 minus, open paren, the negative square root of 2, close paren"
+      "expected": "3 빼기, 괄호 열고, 마이너스 루트 2, 괄호 닫고"
     },
     "Root034": {
-      "expected": "the positive square root of x plus 1"
+      "expected": "플러스 루트 x 더하기 1"
     },
     "Root034a": {
-      "expected": "the positive square root of x, plus 1"
+      "expected": "플러스 루트 x, 더하기 1"
     },
     "Root035": {
-      "expected": "the negative square root of x"
+      "expected": "마이너스 루트 x"
     },
     "Root036": {
-      "expected": "open paren, the positive square root of x, close paren, squared"
+      "expected": "괄호 열고, 플러스 루트 x, 괄호 닫고, 제곱"
     },
     "Root037": {
-      "expected": "open paren, the negative square root of x, close paren, squared"
+      "expected": "괄호 열고, 마이너스 루트 x, 괄호 닫고, 제곱"
     },
     "Root038": {
-      "expected": "negative, open paren, the positive square root of x, close paren, squared"
+      "expected": "마이너스, 괄호 열고, 플러스 루트 x, 괄호 닫고, 제곱"
     },
     "Root039": {
-      "expected": "the positive square root of x, squared"
+      "expected": "플러스 루트 x, 제곱"
     },
     "Root040": {
-      "expected": "the positive square root of x squared"
+      "expected": "플러스 루트 x 제곱"
     },
     "Root041": {
-      "expected": "the positive square root of x squared plus y squared"
+      "expected": "플러스 루트 x 제곱 더하기 y 제곱"
     },
     "Root042": {
-      "expected": "the positive square root of, x sub 1, squared plus, x sub 2, squared"
+      "expected": "플러스 루트, x 아래첨자 1, 제곱 더하기, x 아래첨자 2, 제곱"
     },
     "Root043": {
-      "expected": "the positive square root of, open paren, x sub 2, minus, x sub 1, close paren, squared plus, open paren, y sub 2, minus, y sub 1, close paren, squared"
+      "expected": "플러스 루트, 괄호 열고, x 아래첨자 2, 빼기, x 아래첨자 1, 괄호 닫고, 제곱 더하기, 괄호 열고, y 아래첨자 2, 빼기, y 아래첨자 1, 괄호 닫고, 제곱"
     },
     "Root044": {
-      "expected": "the positive square root of one half"
+      "expected": "플러스 루트 이 분의 일"
     },
     "Root045": {
-      "expected": "the positive square root of, 23 over 66"
+      "expected": "플러스 루트, 66 분의 23"
     },
     "Root046": {
-      "expected": "the positive square root of, the fraction with numerator x plus 1, and denominator 2 x, plus 5"
+      "expected": "플러스 루트, 분모가 2 x, 더하기 5 이고 분자가 x 더하기 1 인 분수"
     },
     "Root047": {
-      "expected": "the fraction with numerator negative b plus or minus the square root of b squared minus 4 a c, and denominator 2 a"
+      "expected": "분모가 2 a 이고 분자가 마이너스 b 플러스 마이너스 루트 b 제곱 빼기 4 a c 인 분수"
     },
     "Root048": {
-      "expected": "the square root of 2, end root"
+      "expected": "루트 2, 루트 끝"
     },
     "Root049": {
-      "expected": "3 plus the square root of 2, end root"
+      "expected": "3 더하기 루트 2, 루트 끝"
     },
     "Root050": {
-      "expected": "3 plus or minus the square root of 2, end root"
+      "expected": "3 플러스 마이너스 루트 2, 루트 끝"
     },
     "Root051": {
-      "expected": "3 minus or plus the square root of 2, end root"
+      "expected": "3 마이너스 플러스 루트 2, 루트 끝"
     },
     "Root052": {
-      "expected": "the negative square root of 2, end root"
+      "expected": "마이너스 루트 2, 루트 끝"
     },
     "Root053": {
-      "expected": "3 minus the square root of 2, end root"
+      "expected": "3 빼기 루트f 2, 루트 끝"
     },
     "Root054": {
-      "expected": "3 plus the negative square root of 2, end root"
+      "expected": "3 더하기 마이너스 루트 2, 루트 끝"
     },
     "Root055": {
-      "expected": "3 minus the negative square root of 2, end root"
+      "expected": "3 빼기 마이너스 루트 2, 루트 끝"
     },
     "Root056": {
-      "expected": "3 plus, open paren, the negative square root of 2, end root, close paren"
+      "expected": "3 더하기, 괄호 열고, 마이너스 루트 2, 루트 끝, 괄호 닫고"
     },
     "Root057": {
-      "expected": "3 minus, open paren, the negative square root of 2, end root, close paren"
+      "expected": "3 빼기, 괄호 열고, 마이너스 루트 2, 루트 끝, 괄호 닫고"
     },
     "Root058": {
-      "expected": "the square root of x plus 1, end root"
+      "expected": "루트 x 더하기 1, 루트 끝"
     },
     "Root058a": {
-      "expected": "the square root of x, end root, plus 1"
+      "expected": "루트 x, 루트 끝, 더하기 1"
     },
     "Root059": {
-      "expected": "the negative square root of x, end root"
+      "expected": "마이너스 루트 x, 루트 끝"
     },
     "Root060": {
-      "expected": "open paren, the square root of x, end root, close paren, squared"
+      "expected": "괄호 열고, 루트 x, 루트 끝, 괄호 닫고, 제곱"
     },
     "Root061": {
-      "expected": "negative, open paren, the square root of x, end root, close paren, squared"
+      "expected": "마이너스, 괄호 열고, 루트 x, 루트 끝, 괄호 닫고, 제곱"
     },
     "Root062": {
-      "expected": "the square root of x, end root, squared"
+      "expected": "루트 x, 루트 끝, 제곱"
     },
     "Root063": {
-      "expected": "the square root of x squared, end root"
+      "expected": "루트 x 제곱, 루트 끝"
     },
     "Root064": {
-      "expected": "the square root of x squared plus y squared, end root"
+      "expected": "루트 x 제곱 더하기 y 제곱, 루트 끝"
     },
     "Root065": {
-      "expected": "the square root of, x sub 1, squared plus, x sub 2, squared, end root"
+      "expected": "루트, x 아래첨자 1, 제곱 더하기, x 아래첨자 2, 제곱, 루트 끝"
     },
     "Root066": {
-      "expected": "the square root of, open paren, x sub 2, minus, x sub 1, close paren, squared plus, open paren, y sub 2, minus, y sub 1, close paren, squared, end root"
+      "expected": "루트, 괄호 열고, x 아래첨자 2, 빼기, x 아래첨자 1, 괄호 닫고, 제곱 더하기, 괄호 열고, y 아래첨자 2, 빼기, y 아래첨자 1, 괄호 닫고, 제곱, 루트 끝"
     },
     "Root067": {
-      "expected": "the square root of one half, end root"
+      "expected": "루트 이 분의 일, 루트 끝"
     },
     "Root068": {
-      "expected": "the square root of, 23 over 66, end root"
+      "expected": "루트, 66 분의 23, 루트 끝"
     },
     "Root069": {
-      "expected": "the square root of, the fraction with numerator x plus 1, and denominator 2 x, plus 5, end root"
+      "expected": "루트, 분모가 2 x, 더하기 5 이고 분자가 x 더하기 1 인 분수, 루트 끝"
     },
     "Root070": {
-      "expected": "the fraction with numerator negative b plus or minus the square root of b squared minus 4 a c, end root, and denominator 2 a"
+      "expected": "분모가 2 a 이고 분자가 마이너스 b 플러스 마이너스 루트 b 제곱 빼기 4 a c, 루트 끝 인 분수"
     },
     "Root071": {
-      "expected": "the positive square root of 2, end root"
+      "expected": "플러스 루트 2, 루트 끝"
     },
     "Root072": {
-      "expected": "3 plus the positive square root of 2, end root"
+      "expected": "3 더하기 플러스 루트 2, 루트 끝"
     },
     "Root073": {
-      "expected": "3 plus or minus the square root of 2, end root"
+      "expected": "3 플러스 마이너스 루트 2, 루트 끝"
     },
     "Root074": {
-      "expected": "3 minus or plus the square root of 2, end root"
+      "expected": "3 마이너스 플러스 루트 2, 루트 끝"
     },
     "Root075": {
-      "expected": "the negative square root of 2, end root"
+      "expected": "마이너스 루트 2, 루트 끝"
     },
     "Root076": {
-      "expected": "3 minus the positive square root of 2, end root"
+      "expected": "3 빼기 플러스 루트 2, 루트 끝"
     },
     "Root077": {
-      "expected": "3 plus the negative square root of 2, end root"
+      "expected": "3 더하기 마이너스 루트 2, 루트 끝"
     },
     "Root078": {
-      "expected": "3 minus the negative square root of 2, end root"
+      "expected": "3 빼기 마이너스 루트 2, 루트 끝"
     },
     "Root079": {
-      "expected": "3 plus, open paren, the negative square root of 2, end root, close paren"
+      "expected": "3 더하기, 괄호 열고, 마이너스 루트 2, 루트 끝, 괄호 닫고"
     },
     "Root080": {
-      "expected": "3 minus, open paren, the negative square root of 2, end root, close paren"
+      "expected": "3 빼기, 괄호 열고, 마이너스 루트 2, 루트 끝, 괄호 닫고"
     },
     "Root081": {
-      "expected": "the positive square root of x plus 1, end root"
+      "expected": "플러스 루트 x 더하기 1, 루트 끝"
     },
     "Root081a": {
-      "expected": "the positive square root of x, end root, plus 1"
+      "expected": "플러스 루트 x, 루트 끝, 더하기 1"
     },
     "Root082": {
-      "expected": "the negative square root of x, end root"
+      "expected": "플러스 루트 x, 루트 끝"
     },
     "Root083": {
-      "expected": "open paren, the positive square root of x, end root, close paren, squared"
+      "expected": "괄호 열고, 플러스 루트 x, 루트 끝, 괄호 닫고, 제곱"
     },
     "Root084": {
-      "expected": "open paren, the negative square root of x, end root, close paren, squared"
+      "expected": "괄호 열고, 마이너스 루트 x, 루트 끝, 괄호 닫고, 제곱"
     },
     "Root085": {
-      "expected": "the positive square root of x, end root, squared"
+      "expected": "플러스 루트 x, 루트 끝, 제곱"
     },
     "Root086": {
-      "expected": "the positive square root of x squared, end root"
+      "expected": "플러스 루트 x 제곱, 루트 끝"
     },
     "Root087": {
-      "expected": "the positive square root of x squared plus y squared, end root"
+      "expected": "플러스 루트 x 제곱 더하기 y 제곱, 루트 끝"
     },
     "Root088": {
-      "expected": "the positive square root of, x sub 1, squared plus, x sub 2, squared, end root"
+      "expected": "플러스 루트, x 아래첨자 1, 제곱 더하기, x 아래첨자 2, 제곱, 루트 끝"
     },
     "Root089": {
-      "expected": "the positive square root of, open paren, x sub 2, minus, x sub 1, close paren, squared plus, open paren, y sub 2, minus, y sub 1, close paren, squared, end root"
+      "expected": "플러스 루트, 괄호 열고, x 아래첨자 2, 빼기, x 아래첨자 1, 괄호 닫고, 제곱 더하기, 괄호 열고, y 아래첨자 2, 빼기, y 아래첨자 1, 괄호 닫고, 제곱, 루트 끝"
     },
     "Root090": {
-      "expected": "the positive square root of one half, end root"
+      "expected": "플러스 루트 이 분의 일, 루트 끝"
     },
     "Root091": {
-      "expected": "the positive square root of, 23 over 66, end root"
+      "expected": "플러스 루트, 66 분의 23, 루트 끝"
     },
     "Root092": {
-      "expected": "the positive square root of, the fraction with numerator x plus 1, and denominator 2 x, plus 5, end root"
+      "expected": "플러스 루트, 분모가 2 x, 더하기 5 이고 분자가 x 더하기 1 인 분수, 루트 끝"
     },
     "Root093": {
-      "expected": "the fraction with numerator negative b plus or minus the square root of b squared minus 4 a c, end root, and denominator 2 a"
+      "expected": "분모가 2 a 이고 분자가 마이너스 b 플러스 마이너스 루트 b 제곱 빼기 4 a c 인 분수, 루트 끝"
     },
     "_comment2_": " Higher order roots",
     "HighRoot001": {
-      "expected": "the cube root of y"
+      "expected": "세제곱근 y"
     },
     "HighRoot002": {
-      "expected": "the fourth root of n"
+      "expected": "4 제곱근 n"
     },
     "HighRoot003": {
-      "expected": "the fifth root of 35"
+      "expected": "5 제곱근 35"
     },
     "HighRoot004": {
-      "expected": "the ninth root of 146"
+      "expected": "9 제곱근 146"
     },
     "HighRoot005": {
-      "expected": "the n-th root of d"
+      "expected": "n 제곱근 d"
     },
     "HighRoot006": {
-      "expected": "the m-th root of 243"
+      "expected": "m 제곱근 243"
     },
     "HighRoot007": {
-      "expected": "the i-th root of 2 to the i-th power"
+      "expected": "i 제곱근 2 의 i 제곱"
     },
     "HighRoot008": {
-      "expected": "the j-th root of 125"
+      "expected": "j 제곱근 125"
     },
     "HighRoot009": {
-      "expected": "negative the cube root of y"
+      "expected": "마이너스 세제곱근 y"
     },
     "HighRoot010": {
-      "expected": "negative the fourth root of n"
+      "expected": "마이너스 4 제곱근 n"
     },
     "HighRoot011": {
-      "expected": "the cube root of y, end root"
+      "expected": "세제곱근 y, 루트 끝"
     },
     "HighRoot012": {
-      "expected": "the fourth root of n, end root"
+      "expected": "4 제곱근 n, 루트 끝"
     },
     "HighRoot013": {
-      "expected": "the fifth root of 35, end root"
+      "expected": "5 제곱근 35, 루트 끝"
     },
     "HighRoot014": {
-      "expected": "the ninth root of 146, end root"
+      "expected": "9 제곱근 146, 루트 끝"
     },
     "HighRoot015": {
-      "expected": "the n-th root of d, end root"
+      "expected": "n 제곱근 d, 루트 끝"
     },
     "HighRoot016": {
-      "expected": "the m-th root of 243, end root"
+      "expected": "m 제곱근 243, 루트 끝"
     },
     "HighRoot017": {
-      "expected": "the i-th root of 2 to the i-th power, end root"
+      "expected": "i 제곱근 2 의 i 제곱, 루트 끝"
     },
     "HighRoot018": {
-      "expected": "the j-th root of 125, end root"
+      "expected": "j 제곱근 125, 루트 끝"
     },
     "HighRoot019": {
-      "expected": "negative the cube root of y, end root"
+      "expected": "마이너스 세제곱근 y, 루트 끝"
     },
     "HighRoot020": {
-      "expected": "negative the fourth root of n, end root"
+      "expected": "마이너스 4 제곱근 n, 루트 끝"
     },
     "HighRoot021": {
-      "expected": "the cube root of y"
+      "expected": "세제곱근 y"
     },
     "HighRoot022": {
-      "expected": "the fourth root of n"
+      "expected": "4 제곱근 n"
     },
     "HighRoot023": {
-      "expected": "the fifth root of 35"
+      "expected": "5 제곱근 35"
     },
     "HighRoot024": {
-      "expected": "the ninth root of 146"
+      "expected": "9 제곱근 146"
     },
     "HighRoot025": {
-      "expected": "the n-th root of d"
+      "expected": "n 제곱근 d"
     },
     "HighRoot026": {
-      "expected": "the m-th root of 243"
+      "expected": "m 제곱근 243"
     },
     "HighRoot027": {
-      "expected": "the i-th root of 2 to the i-th power"
+      "expected": "i 제곱근 2 의 i 제곱"
     },
     "HighRoot028": {
-      "expected": "the j-th root of 125"
+      "expected": "j 제곱근 125"
     },
     "HighRoot029": {
-      "expected": "negative the cube root of y"
+      "expected": "마이너스 세제곱근 y"
     },
     "HighRoot030": {
-      "expected": "negative the fourth root of n"
+      "expected": "마이너스 4 제곱근 n"
     },
     "HighRoot031": {
-      "expected": "the cube root of y, end root"
+      "expected": "세제곱근 y, 루트 끝"
     },
     "HighRoot032": {
-      "expected": "the fourth root of n, end root"
+      "expected": "4 제곱근 n, 루트 끝"
     },
     "HighRoot033": {
-      "expected": "the fifth root of 35, end root"
+      "expected": "5 제곱근 35, 루트 끝"
     },
     "HighRoot034": {
-      "expected": "the ninth root of 146, end root"
+      "expected": "9 제곱근 146, 루트 끝"
     },
     "HighRoot035": {
-      "expected": "the n-th root of d, end root"
+      "expected": "n 제곱근 d, 루트 끝"
     },
     "HighRoot036": {
-      "expected": "the m-th root of 243, end root"
+      "expected": "m 제곱근 243, 루트 끝"
     },
     "HighRoot037": {
-      "expected": "the i-th root of 2 to the i-th power, end root"
+      "expected": "i 제곱근 2 의 i 제곱, 루트 끝"
     },
     "HighRoot038": {
-      "expected": "the j-th root of 125, end root"
+      "expected": "j 제곱근 125, 루트 끝"
     },
     "HighRoot039": {
-      "expected": "negative the cube root of y, end root"
+      "expected": "마이너스 세제곱근 y, 루트 끝"
     },
     "HighRoot040": {
-      "expected": "negative the fourth root of n, end root"
+      "expected": "마이너스 4 제곱근 n, 루트 끝"
     }
   }
 }

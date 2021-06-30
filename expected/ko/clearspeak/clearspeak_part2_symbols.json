@@ -1,114 +1,114 @@
 {
   "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
-  "name": "EnglishClearspeakPart2Symbols",
-  "locale": "en",
+  "name": "KoreanClearspeakPart2Symbols",
+  "locale": "ko",
   "factory": "clearspeak",
   "base": "input/clearspeak/clearspeak_part2_symbols.json",
-  "information": "English Clearspeak Part2Symbols rule tests.",
-  "active": "ClearspeakEnglish",
+  "information": "Korean Clearspeak Part2Symbols rule tests.",
+  "active": "ClearspeakKorean",
   "exclude": [],
   "tests": {
     "_comment1_": " Part 2: Symbols",
     "_comment2_": " Multiplication Symbol",
     "X001": {
-      "expected": "6 times 8"
+      "expected": "6 곱하기 8"
     },
     "X002": {
-      "expected": "m times n"
+      "expected": "m 곱하기 n"
     },
     "X003": {
-      "expected": "3 times 3"
+      "expected": "3 곱하기 3"
     },
     "X004": {
-      "expected": "6 by 8"
+      "expected": "6 곱하기 8"
     },
     "X005": {
-      "expected": "m by n"
+      "expected": "m 곱하기 n"
     },
     "X006": {
-      "expected": "3 by 3"
+      "expected": "3 곱하기 3"
     },
     "X007": {
-      "expected": "u cross v"
+      "expected": "u 외적 v"
     },
     "_comment3_": " Multiplication Symbol",
     "Dot001": {
-      "expected": "6 times 8"
+      "expected": "6 곱하기 8"
     },
     "Dot002": {
-      "expected": "m times n"
+      "expected": "m 곱하기 n"
     },
     "Dot003": {
-      "expected": "3 times 3"
+      "expected": "3 곱하기 3"
     },
     "Dot004": {
-      "expected": "6 dot 8"
+      "expected": "6 내적 8"
     },
     "Dot005": {
-      "expected": "m dot n"
+      "expected": "m 내적 n"
     },
     "Dot006": {
-      "expected": "3 dot 3"
+      "expected": "3 내적 3"
     },
     "_comment4_": " Triangle Symbol",
     "Triangle001": {
-      "expected": "triangle A B C"
+      "expected": "삼각형 A B C"
     },
     "Triangle002": {
-      "expected": "triangle D E F"
+      "expected": "삼각형 D E F"
     },
     "Triangle003": {
-      "expected": "Delta x"
+      "expected": "델타 x"
     },
     "Triangle004": {
-      "expected": "f of, open paren, x plus Delta x, close paren"
+      "expected": "f 의, 괄호 열고, x 더하기 델타 x, 괄호 닫고"
     },
     "_comment5_": " Ellipses",
     "Ellipses001": {
-      "expected": "1 comma 2 comma 3 comma dot dot dot"
+      "expected": "1 콤마 2 콤마 3 콤마 점 점 점"
     },
     "Ellipses002": {
       "expected": "1 comma 2 comma 3 comma dot dot dot comma 20"
     },
     "Ellipses003": {
-      "expected": "dot dot dot comma, negative 2, comma, negative 1, comma 0 comma 1 comma 2 comma dot dot dot"
+      "expected": "점 점 점 comma, 마이너스 2, comma, 마이너스 1, comma 0 comma 1 comma 2 comma 점 점 점"
     },
     "Ellipses004": {
-      "expected": "1 comma 2 comma 3 comma and so on"
+      "expected": "1 콤마 2 콤마 3 콤마 점 점 점"
     },
     "Ellipses005": {
       "expected": "1 comma 2 comma 3 comma and so on up to comma 20"
     },
     "Ellipses006": {
-      "expected": "dot dot dot comma, negative 2, comma, negative 1, comma 0 comma 1 comma 2 comma dot dot dot"
+      "expected": "점 점 점 콤마, 마이너스 2, 콤마, 마이너스 1, 콤마 0 콤마 1 콤마 2 콤마 점 점 점"
     },
     "_comment6_": " Vertical Line",
     "VertLine001": {
       "expected": "3 divides 6"
     },
     "VertLine002": {
-      "expected": "the set of all x such that x is greater than 0"
+      "expected": "x 는 0 보다 크다 를 만족하는 모든 x 의 집합"
     },
     "VertLine003": {
-      "expected": "the set of all x such that, the absolute value of x, is greater than 2"
+      "expected": "절댓값 x, 는 2 보다 크다 를 만족하는 모든 x 의 집합"
     },
     "VertLine004": {
-      "expected": "f of x, evaluated at x equals 5"
+      "expected": "f 의 x, 조건 x equals 5"
     },
     "VertLine005": {
-      "expected": "x squared plus 2 x, evaluated at x equals 2"
+      "expected": "x 제곱 더하기 2 x, 조건 x 는 2"
     },
     "VertLine006": {
-      "expected": "x squared plus x, evaluated at 1, minus the same expression evaluated at 0"
+      "expected": "x 제곱 더하기 x, 1 일 때, 빼기 같은 수식 0 일 때"
     },
     "VertLine007": {
-      "expected": "the set of all x such that x is greater than 0"
+      "expected": "x 는 0 보다 크다 를 만족하는 모든 x 의 집합"
     },
     "VertLine008": {
       "expected": "3 divides 6"
     },
     "VertLine009": {
-      "expected": "P of, open paren, A given B, close paren"
+      "expected": "P 의, 괄호 열고, A given B, 괄호 닫고"
     },
     "_comment7_": " Set Membership Symbols",
     "MembSym001": {
@@ -166,58 +166,58 @@
     },
     "_comment10_": " Sums, Products, Unions, Intersections, and Integrals",
     "Sum001": {
-      "expected": "the sum from n equals 1 to 10 of n"
+      "expected": "시그마 n 는 1 에서 10 까지 n"
     },
     "Sum002": {
-      "expected": "the sum from n equals 1 to infinity of n"
+      "expected": "시그마 n 는 1 에서 무한대 까지 n"
     },
     "Sum003": {
       "expected": "the sum over i is a member of the positive integers, of i"
     },
     "Sum004": {
-      "expected": "the sum over S, of i"
+      "expected": "S 에 대한 시그마, i"
     },
     "Sum005": {
-      "expected": "the sum of, a sub i"
+      "expected": "시그마 a 아래첨자 i"
     },
     "Sum006": {
-      "expected": "the product from i equals 1 to 10 of i"
+      "expected": "파이 i 는 1 에서 10 까지 i"
     },
     "Sum007": {
       "expected": "the product over i is a member of the positive integers, of, the fraction with numerator i, and denominator i plus 1"
     },
     "Sum008": {
-      "expected": "the product over the positive integers, of, the fraction with numerator i, and denominator i plus 1"
+      "expected": "양의 정수 집합 에 대한 파이, 분모가 i 더하기 1 이고 분자가 with i 인 분수"
     },
     "Sum009": {
-      "expected": "the product of, a sub i"
+      "expected": "파이 a 아래첨자 i"
     },
     "Sum010": {
-      "expected": "the intersection from i equals 1 to 10 of, S sub i"
+      "expected": "교집합 i 는 1 에서 10 까지, S 아래첨자 i"
     },
     "Sum011": {
-      "expected": "the union from i equals 1 to 10 of, S sub i"
+      "expected": "합집합 i 는 1 에서 10 까지, S 아래첨자 i"
     },
     "Sum012": {
-      "expected": "the intersection of, S sub i"
+      "expected": "교집합 S 아래첨자 i"
     },
     "Sum013": {
-      "expected": "the union of, S sub i"
+      "expected": "합집합 S 아래첨자 i"
     },
     "Sum014": {
-      "expected": "the intersection over C, of, S sub i"
+      "expected": "C 에 대한 교집합, S 아래첨자 i"
     },
     "Sum015": {
-      "expected": "the union over C, of, S sub i"
+      "expected": "C 에 대한 합집합, S 아래첨자 i"
     },
     "Sum016": {
-      "expected": "the integral of f of x, d x"
+      "expected": "인테그럴 f 의 x, d x"
     },
     "Sum017": {
-      "expected": "the integral from 0 to 1 of f of x, d x"
+      "expected": "인테그럴 0 에서 1 까지 f 의 x, d x"
     },
     "Sum018": {
-      "expected": "the integral over the real numbers, of f of x, d x"
+      "expected": "실수 집합 에 대한 인테그럴, f 의 x, d x"
     }
   }
 }
