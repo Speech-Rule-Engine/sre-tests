@@ -37,8 +37,8 @@ export class ColorPickerTest extends AbstractJsonTest {
   /**
    * @override
    */
-  public method(...args: any[]) {
-    this.executeTest(args[0], args[1]);
+  public method() {
+    this.executeTest(this.field('input'), this.field('expected'));
   }
 
 }

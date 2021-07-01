@@ -96,8 +96,10 @@ export class MarkupTest extends AbstractJsonTest {
   /**
    * @override
    */
-  public method(...args: any[]) {
-    this.executeTest(args[0], args[1], args[2], args[3]);
+  public method() {
+    this.executeTest(
+      ...this.pickFields.map(x =>
+        this.inputFields.get(x)) as [string, string, string, string]);
   }
 
 }

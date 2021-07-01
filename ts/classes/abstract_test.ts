@@ -100,6 +100,11 @@ export abstract class AbstractJsonTest extends AbstractTest {
   public warn: string[] = [];
 
   /**
+   * The input fields needed for the test.
+   */
+  public inputFields = new Map();
+
+  /**
    * An information string.
    */
   public information: string = '';
@@ -114,8 +119,17 @@ export abstract class AbstractJsonTest extends AbstractTest {
    * @param json The JSON element.
    * @return The array of arguments for the test method.
    */
-  public pick(json: tu.JsonTest): string[] {
-    return this.pickFields.map(x => json[x]);
+  public pick(json: tu.JsonTest) {
+    this.pickFields.forEach(x => this.inputFields.set(x, json[x]));
+  }
+
+  /**
+   * Retrieves an input field.
+   * @param key The key.
+   * @return The input field for that key.
+   */
+  public field(key: string) {
+    return this.inputFields.get(key);
   }
 
   /**
@@ -153,6 +167,6 @@ export abstract class AbstractJsonTest extends AbstractTest {
    *
    * @param args Arguments for the test method.
    */
-  public abstract method(...args: any[]): void;
+  public abstract method(): void;
 
 }

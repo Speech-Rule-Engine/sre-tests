@@ -80,12 +80,13 @@ export class PrefixTest extends SpeechTest {
   /**
    * @override
    */
-  public method(...args: string[]) {
-    this.id = args[3] === undefined ? null : parseInt(args[3], 10);
-    if (args[4]) {
-      Grammar.getInstance().setParameter(args[4], true);
+  public method() {
+    this.id = this.field('id') === undefined ? null :
+        parseInt(this.field('id'), 10);
+    if (this.field('grammar')) {
+      Grammar.getInstance().setParameter(this.field('grammar'), true);
     }
-    super.method(args[0], args[1], args[2]);
+    super.method();
     Grammar.getInstance().clear();
   }
 
