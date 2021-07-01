@@ -51,7 +51,7 @@ export class XpathTest extends AbstractJsonTest {
    */
   public constructor() {
     super();
-    this.pickFields = this.pickFields.concat(['type', 'query']);
+    this.pickFields.push('type', 'query');
   }
 
   /**

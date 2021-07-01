@@ -61,7 +61,7 @@ export class MarkupTest extends AbstractJsonTest {
    */
   public constructor() {
     super();
-    this.pickFields = this.pickFields.concat(['markup', 'domain']);
+    this.pickFields.push('markup', 'domain');
   }
 
   /**
