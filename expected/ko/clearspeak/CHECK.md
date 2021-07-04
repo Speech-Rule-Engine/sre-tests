@@ -11,6 +11,8 @@
 # :
     2^2^2 같은 경우 2 의 2 제곱 제곱 으로 읽음. 이 경우 혼동 가능하다고 생각.
     squared => 현제 '제곱' 이라고 되있어서 'power'와 혼동 가능성 있다고 생각 '2제곱'으로 바꾸는건..?
+# Line 147:
+    times 를 따로 안정해줌. 어디서 정해주는지 찾아보고 확인 필요
 
 ## [clearspeak_matrices_vectors_and combinatorics](clearspeak_matrices_vectors_and_combinatorics.json)
 
@@ -30,7 +32,7 @@
 ## [clearspeak_multi_line_entries](expected\ko\clearspeak\clearspeak_multi_line_entries.json)
 
 # Line 12:
-    'equals'는 뭐라고 처리해야?
+    'equals'는 뭐라고 처리해야? 
 
 # Line 15:
     MathML에서 두 칸 띄어져 있으면 ;으로 변환하는데 어떻게 처리하는지?
