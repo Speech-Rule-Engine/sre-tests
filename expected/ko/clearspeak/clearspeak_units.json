@@ -28,28 +28,28 @@
   ],
   "tests": {
     "UnitSquare_0_default": {
-      "expected": "square inches"
+      "expected": "인치 제곱"
     },
     "UnitSquare_1_default": {
-      "expected": "seconds to the second power"
+      "expected": "초 제곱"
     },
     "UnitSquare_2_default": {
-      "expected": "square meters"
+      "expected": "미터 제곱"
     },
     "UnitCube_0_default": {
-      "expected": "cubic inches"
+      "expected": "인치 세제곱"
     },
     "UnitCube_1_default": {
-      "expected": "seconds to the third power"
+      "expected": "초 세제곱"
     },
     "UnitCube_2_default": {
-      "expected": "cubic meters"
+      "expected": "미터 네제곱"
     },
     "UnitInverse_default": {
-      "expected": "reciprocal inches"
+      "expected": "역수 인치"
     },
     "UnitDoubleInverse_default": {
-      "expected": "reciprocal inches per millimeter"
+      "expected": "역수 인치 퍼 밀리미터"
     },
     "UnitDivide_default": {
       "expected": "inches per millimeter"
@@ -70,7 +70,7 @@
       "expected": "Celsius"
     },
     "UnitsSimple_0": {
-      "expected": "min of minutes"
+      "expected": "분의 분"
     },
     "UnitsSimple_1": {
       "expected": "3 kilometers"
@@ -91,16 +91,16 @@
       "expected": "reciprocal meters"
     },
     "UnitsSuperscript_4": {
-      "expected": "seconds per meter"
+      "expected": "초 퍼 미터"
     },
     "UnitsSuperscript_5": {
-      "expected": "seconds per meter to the negative 1 power"
+      "expected": "초 퍼 미터 마이너스 1 제곱"
     },
     "UnitsSuperscript_6": {
       "expected": "seconds per meter to the negative 1 power"
     },
     "UnitsSuperscript_7": {
-      "expected": "3 reciprocal meters"
+      "expected": "3 역수 미터"
     },
     "UnitsSuperscript_8": {
       "expected": "kilometers per hour"
@@ -118,10 +118,10 @@
       "expected": "seconds 3 m kilometers hours"
     },
     "UnitsExpressions_1": {
-      "expected": "kilometers seconds to the second power 3 m kilometers hours"
+      "expected": "킬로미터 초 2제곱 3 m 킬로미터 시간"
     },
     "UnitsExpressions_2": {
-      "expected": "3 m kilometers hours the fraction with numerator N and denominator seconds to the second power"
+      "expected": "3 m 킬로미터 시간 분모가 N 이고 분자가 초 제곱 인 분수"
     },
     "UnitsExpressions_3": {
       "expected": "3 m kilometers hours Newtons per second to the second power"
@@ -214,7 +214,7 @@
       "expected": "3 kilometers kilograms seconds to the second power joules"
     },
     "UnitLong_3": {
-      "expected": "3 kilometers 4 kilograms seconds to the second power joules"
+      "expected": "3 킬로미터 4 킬로그램 초 2제곱 줄"
     },
     "UnitLong_4": {
       "expected": "3 kilometers 1 kilogram seconds to the second power joules"

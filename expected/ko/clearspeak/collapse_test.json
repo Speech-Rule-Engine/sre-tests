@@ -1,11 +1,11 @@
 {
-  "name": "EnglishClearspeakCollapse",
-  "locale": "en",
+  "name": "KoreanClearspeakCollapse",
+  "locale": "ko",
   "factory": "collapse",
   "base": "input/common/collapse_test.json",
-  "information": "English Clearspeak Collapse tests.",
+  "information": "Korean Clearspeak Collapse tests.",
   "domain": "clearspeak",
-  "active": "CollapseEnglish",
+  "active": "CollapseKorean",
   "exclude": [
     "CollapsedAddition_brief",
     "CollapsedAddition_sbrief",
@@ -98,7 +98,7 @@
   ],
   "tests": {
     "CollapsedAddition_default": {
-      "expected": "collapsed sum with 2 summands"
+      "expected": "접다 sum with 2 summands"
     },
     "CollapsedBigop_default": {
       "expected": "collapsed sum"

@@ -1,15 +1,15 @@
 {
   "domain": "clearspeak",
-  "name": "EnglishClearspeakDirectSpeech",
-  "locale": "en",
+  "name": "KoreanClearspeakDirectSpeech",
+  "locale": "ko",
   "factory": "speech",
   "base": "input/common/direct_speech.json",
-  "information": "English Clearspeak Direct speech attributes.",
-  "active": "DirectSpeechEnglish",
+  "information": "Korean Clearspeak Direct speech attributes.",
+  "active": "DirectSpeechKorean",
   "exclude": [],
   "tests": {
     "AriaLabels_0": {
-      "expected": "AC line"
+      "expected": "선분 AC"
     },
     "AriaLabels_1": {
       "expected": "derivative of x is equal to sigma times left parenthesis y minus x right parenthesis"
@@ -62,10 +62,10 @@
       "expected": "your glyph"
     },
     "MglyphGeneral_0": {
-      "expected": "23braid plus 132braid equals 13braid"
+      "expected": "23braid 더하기 132braid 등호 13braid"
     },
     "MglyphGeneral_1": {
-      "expected": "N M sub 1 subset of mfin"
+      "expected": "N M 아래 첨자 1 부분집합 mfin"
     }
   }
 }
