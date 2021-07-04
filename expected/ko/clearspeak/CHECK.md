@@ -1,3 +1,8 @@
+## [clearspeak_absolute_value](clearspeak_absolute_value.json)
+
+# Line 22:
+      부등호 사용시 조사는 어떻게 할것 인지? ex) x>y : x는 y"보다" 크다
+
 ## [clearspeak_matrices_vectors_and combinatorics](clearspeak_matrices_vectors_and_combinatorics.json)
 
 # Line 14:
