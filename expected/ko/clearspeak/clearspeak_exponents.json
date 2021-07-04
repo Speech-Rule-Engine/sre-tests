@@ -1,567 +1,567 @@
 {
   "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
-  "name": "EnglishClearspeakExponents",
+  "name": "EnglishClearspeak지수 시작s",
   "locale": "en",
   "factory": "clearspeak",
-  "base": "input/clearspeak/clearspeak_exponents.json",
-  "information": "English Clearspeak Exponents rule tests.",
+  "base": "input/clearspeak/clearspeak_지수 시작s.json",
+  "information": "English Clearspeak 지수 시작s rule tests.",
   "active": "ClearspeakEnglish",
   "exclude": [],
   "tests": {
-    "_comment1_": " Exponents",
+    "_comment1_": " 지수 시작s",
     "Exp001": {
-      "expected": "3 squared"
+      "expected": "3 제곱"
     },
     "Exp002a": {
-      "expected": "3 cubed"
+      "expected": "3 세제곱"
     },
     "Exp003": {
-      "expected": "3 to the fifth power"
+      "expected": "3의 5 제곱"
     },
     "Exp004": {
-      "expected": "3 to the first power"
+      "expected": "3의 일 제곱"
     },
     "Exp005": {
-      "expected": "b to the first power"
+      "expected": "b의 일 제곱"
     },
     "Exp006": {
-      "expected": "3 raised to the 5.0 power"
+      "expected": "3의 5.0 제곱"
     },
     "Exp007": {
-      "expected": "3 to the 0 power"
+      "expected": "3의 0 제곱"
     },
     "Exp008": {
-      "expected": "4 to the 11th power"
+      "expected": "4의 11 제곱"
     },
     "Exp009": {
-      "expected": "3 to the negative 2 power"
+      "expected": "3의 마이너스 2 제곱"
     },
     "Exp010a": {
-      "expected": "3 raised to the negative 2.0 power"
+      "expected": "3의 마이너스 2.0 제곱"
     },
     "Exp011": {
-      "expected": "4 to the x-th power"
+      "expected": "4의 엑스 제곱"
     },
     "Exp012": {
-      "expected": "3 raised to the y plus 2 power"
+      "expected": "3의 와이 플러스 2 제곱"
     },
     "Exp013": {
-      "expected": "open paren, 2 y, minus 3, close paren, raised to the 3 z, plus 8 power"
+      "expected": "괄호 시작, 2 와이, 빼기 3, 괄호 끝, 의  3 제트, 플러스 8 제곱"
     },
     "Exp014": {
-      "expected": "p sub 1, squared"
+      "expected": "피 아래첨지 1, 제곱"
     },
     "Exp015": {
-      "expected": "p sub 1, cubed"
+      "expected": "피 아래첨지 1, 세제곱"
     },
     "Exp016": {
-      "expected": "p sub 1, to the fourth power"
+      "expected": "피 아래첨지 1,의 네제곱"
     },
     "Exp017": {
-      "expected": "p sub 1, to the tenth power"
+      "expected": "피 아래첨지 1 의 5 제곱"
     },
     "Exp018": {
-      "expected": "p sub 1, raised to the x plus 1 power"
+      "expected": "피 아래첨지 1 의 엑스 플러스 1 제곱"
     },
     "Exp019": {
-      "expected": "p sub, x sub 1, squared"
+      "expected": "피 아래첨자 엑스 아래첨자 1, 제곱"
     },
     "Exp010b": {
-      "expected": "p sub, x sub 1, cubed"
+      "expected": "피 아래첨자 엑스 아래첨자 1 세제곱"
     },
     "Exp011b": {
-      "expected": "p sub, x sub 1, to the fourth power"
+      "expected": "피 아래첨자 엑스 아래첨자 1 의 네제곱"
     },
     "Exp012b": {
-      "expected": "p sub, x sub 1, to the tenth power"
+      "expected": "피 아래첨자 엑스 아래첨자 1 의 10 제곱"
     },
     "Exp013b": {
-      "expected": "p sub, x sub 1, raised to the y plus 1 power"
+      "expected": "피 아래첨자 엑스 아래첨자 1 의 와이 플러스 1 제곱"
     },
     "Exp014b": {
-      "expected": "3 raised to the 2 squared power"
+      "expected": "3 의 2 제곱 제곱"
     },
     "Exp015b": {
-      "expected": "3 raised to the 2 x squared power"
+      "expected": "3 의 2 엑스 제곱 제곱"
     },
     "Exp016b": {
-      "expected": "5 raised to the 2 cubed power"
+      "expected": "5 의 2 세제곱 제곱"
     },
     "Exp017b": {
-      "expected": "5 raised to the 2 x cubed power"
+      "expected": "5 의 2 엑스 세제곱 제곱"
     },
     "Exp018b": {
-      "expected": "3 raised to the exponent, 2 squared plus 1, end exponent"
+      "expected": "3 지수 시작, 2 제곱 플러스 1, 지수 끝"
     },
     "Exp019b": {
-      "expected": "3 raised to the 2 squared power, plus 1"
+      "expected": "3 의 2 제곱 제곱, 플러스 1"
     },
     "Exp020": {
-      "expected": "2 raised to the exponent, x squared plus 3 x cubed, end exponent"
+      "expected": "2 지수 시작, 엑스 제곱 풀러스 3 엑스 세제곱, 지수 끝"
     },
     "Exp021": {
-      "expected": "3 raised to the exponent, 3 to the fourth power, end exponent"
+      "expected": "3 지수 시작, 3 의 네제곱, 지수 끝"
     },
     "Exp022": {
-      "expected": "3 raised to the exponent, 3 to the fourth power, plus 2, end exponent"
+      "expected": "3 지수 시작, 3 의 네제곱, 플러스 2, 지수 끝"
     },
     "Exp023": {
-      "expected": "3 raised to the exponent, 3 to the fourth power, end exponent, plus 2"
+      "expected": "3 지수 시작, 3 의 네제곱, 지수 끝, 플러스 2"
     },
     "Exp024": {
-      "expected": "2 raised to the exponent, x to the fourth power, end exponent"
+      "expected": "2 지수 시작, 엑스 의 네제곱, 지수 끝"
     },
     "Exp025": {
-      "expected": "2 raised to the exponent, 10 raised to the x plus 3 power, end exponent"
+      "expected": "2 지수 시작, 10 의 엑스 플러스 3 제곱, 지수 끝"
     },
     "Exp026": {
-      "expected": "3 raised to the exponent, 3 to the tenth power, end exponent"
+      "expected": "3 지수 시작, 3 의 10 제곱, 지수 끝"
     },
     "Exp027": {
-      "expected": "3 raised to the exponent, 3 to the tenth power, plus 1, end exponent"
+      "expected": "3 지수 시작, 3 의 10 제곱, 플러스 1, 지수 끝"
     },
     "Exp028": {
-      "expected": "3 raised to the exponent, 3 to the tenth power, end exponent, plus 1"
+      "expected": "3 지수 시작, 3 의 10 제곱, 지수 끝, 플러스 1"
     },
     "Exp029": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, squared, end exponent"
+      "expected": "3 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 제곱, 지수 끝"
     },
     "Exp030": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, to the tenth power, end exponent"
+      "expected": "3 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 의 10 제곱, 지수 끝"
     },
     "Exp031": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, raised to the y plus 2 power, end exponent"
+      "expected": "3 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 의 와이 플러스 2 제곱, 지수 끝"
     },
     "Exp032": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, to the y-th power, plus 2, end exponent"
+      "expected": "3 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 의 와이 제곱, 플러스 2, 지수 끝"
     },
     "Exp033": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, to the y-th power, end exponent, plus 2"
+      "expected": "3 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 의 와이 제곱, 지수 끝, 플러스 2"
     },
-    "_comment2_": " TODO: (Simons) This does not work as semantically we have a -(xy) rather than",
+    "_comment2_": " TODO: (Simons) This does not work as semanticall와이 we have a -(xy) rather than",
     "_comment3_": "       (-x)(y).",
     "Exp034": {
-      "expected": "e raised to the negative one half, x squared power"
+      "expected": "e 의 지수 시작 마이너스 이분의 일 , 엑스 제곱 제곱"
     },
     "Exp035": {
-      "expected": "e raised to the exponent, negative one half times, open paren, the fraction with numerator x minus mu, and denominator sigma, close paren, squared, end exponent"
+      "expected": "e 의 지수 시작, 마이너스 이분의 일 곱하기, 괄호 시작, 분모가 시그마, 분자가 엑스 빼기 엠유 인 분수  괄호 끝, 제곱, 지수 끝"
     },
     "Exp036": {
-      "expected": "2 to the n-th power"
+      "expected": "2 의 엔 제곱"
     },
     "Exp037": {
-      "expected": "2 to the m-th power"
+      "expected": "2 의 엠 제곱"
     },
     "Exp038": {
-      "expected": "2 to the i-th power"
+      "expected": "2 의 아이 제곱"
     },
     "Exp039": {
-      "expected": "2 to the j-th power"
+      "expected": "2 의 제이 제곱"
     },
     "Exp040": {
-      "expected": "2 to the a-th power"
+      "expected": "2 의 에이 제곱"
     },
     "Exp041": {
-      "expected": "3 to the second"
+      "expected": "3 의 2 제곱"
     },
     "Exp042": {
-      "expected": "3 to the third"
+      "expected": "3 의 3 제곱"
     },
     "Exp043": {
-      "expected": "3 to the zero"
+      "expected": "3 의 0 제곱"
     },
     "Exp044": {
-      "expected": "3 to the first"
+      "expected": "3 의 1 제곱"
     },
     "Exp045": {
-      "expected": "3 to the fifth"
+      "expected": "3 의 5 제곱"
     },
     "Exp046": {
-      "expected": "4 raised to the 3.0 power"
+      "expected": "4 의 3.0 제곱"
     },
     "Exp047": {
-      "expected": "4 to the eleventh"
+      "expected": "4 의 11 제곱"
     },
     "Exp048": {
-      "expected": "3 to the negative 2"
+      "expected": "3 의 마이너스 2 제곱"
     },
     "Exp049": {
-      "expected": "3 raised to the negative 2.0 power"
+      "expected": "3 의 마이너스 2.0 제곱"
     },
     "Exp050": {
-      "expected": "4 to the x-th"
+      "expected": "4 의 엑스 제곱"
     },
     "Exp051": {
-      "expected": "3 raised to the y plus 2 power"
+      "expected": "3 의 와이 플러스 2 제곱"
     },
     "Exp052": {
-      "expected": "open paren, 2 y, minus 3, close paren, raised to the 3 z, plus 8 power"
+      "expected": "괄호 시작, 2 와이, minus 3, 괄호 끝, 의 3 z, 플러스 8 제곱"
     },
     "Exp053": {
-      "expected": "p sub 1, to the second"
+      "expected": "p 아래첨자 1, 의 2 제곱"
     },
     "Exp054": {
-      "expected": "p sub 1, to the third"
+      "expected": "p 아래첨자 1, 의 3 제곱"
     },
     "Exp055": {
-      "expected": "p sub 1, to the fourth"
+      "expected": "p 아래첨자 1, 의 4 제곱"
     },
     "Exp056": {
-      "expected": "p sub 1, to the tenth"
+      "expected": "p 아래첨자 1, 의 10 제곱"
     },
     "Exp057": {
-      "expected": "p sub 1, raised to the x plus 1 power"
+      "expected": "p 아래첨자 1, 의 엑스 플러스 1 제곱"
     },
     "Exp058": {
-      "expected": "p sub, x sub 1, to the second"
+      "expected": "p 아래첨자, 엑스 아래첨자 1, 의 2 제곱"
     },
     "Exp059": {
-      "expected": "p sub, x sub 1, to the third"
+      "expected": "p 아래첨자, 엑스 아래첨자 1, 의 3 제곱"
     },
     "Exp060": {
-      "expected": "p sub, x sub 1, to the fourth"
+      "expected": "p 아래첨자, 엑스 아래첨자 1, 의 4 제곱"
     },
     "Exp061": {
-      "expected": "p sub, x sub 1, to the tenth"
+      "expected": "p 아래첨자, 엑스 아래첨자 1, 의 10 제곱"
     },
     "Exp062": {
-      "expected": "p sub, x sub 1, raised to the y plus 1 power"
+      "expected": "p 아래첨자, 엑스 아래첨자 1, 의 와이 플러스 1 제곱"
     },
     "Exp063": {
-      "expected": "3 raised to the exponent, 2 to the second, end exponent"
+      "expected": "3 의 지수 시작, 2 의 2 제곱, 지수 끝"
     },
     "Exp064": {
-      "expected": "3 raised to the exponent, 2 x to the second, end exponent"
+      "expected": "3 의 지수 시작, 2 엑스 의 2 제곱, 지수 끝"
     },
     "Exp065": {
-      "expected": "5 raised to the exponent, 2 to the third, end exponent"
+      "expected": "5 의 지수 시작, 2 의 3 제곱, 지수 끝"
     },
     "Exp066": {
-      "expected": "5 raised to the exponent, 2 x to the third, end exponent"
+      "expected": "5 의 지수 시작, 2 엑스 의 3 제곱, 지수 끝"
     },
     "Exp067": {
-      "expected": "3 raised to the exponent, 2 to the second, plus 1, end exponent"
+      "expected": "3 의 지수 시작, 2 의 2 제곱, 플러스 1, 지수 끝"
     },
     "Exp068": {
-      "expected": "3 raised to the exponent, 2 to the second, end exponent, plus 1"
+      "expected": "3 의 지수 시작, 2 의 2 제곱, 지수 끝, 플러스 1"
     },
     "Exp069": {
-      "expected": "2 raised to the exponent, x to the second, plus 3 x to the third, end exponent"
+      "expected": "2 의 지수 시작, 엑스 의 2 제곱, 플러스 3 엑스 의 3 제곱, 지수 끝"
     },
     "Exp070": {
-      "expected": "3 raised to the exponent, 3 to the fourth, end exponent"
+      "expected": "3 의 지수 시작, 3 의 4 제곱, 지수 끝"
     },
     "Exp071": {
-      "expected": "3 raised to the exponent, 3 to the fourth, plus 2, end exponent"
+      "expected": "3 의 지수 시작, 3 의 4 제곱, 플러스 2, 지수 끝"
     },
     "Exp072": {
-      "expected": "3 raised to the exponent, 3 to the fourth, end exponent, plus 2"
+      "expected": "3 의 지수 시작, 3 의 4 제곱, 지수 끝, 플러스 2"
     },
     "Exp073": {
-      "expected": "2 raised to the exponent, x to the fourth, end exponent"
+      "expected": "2 의 지수 시작, 엑스 의 4 제곱, 지수 끝"
     },
     "Exp074": {
-      "expected": "2 raised to the exponent, 10 raised to the x plus 3 power, end exponent"
+      "expected": "2 의 지수 시작, 10 의 엑스 플러스 3 제곱, 지수 끝"
     },
     "Exp075": {
-      "expected": "3 raised to the exponent, 3 to the tenth, end exponent"
+      "expected": "3 의 지수 시작, 3 의 10 제곱, 지수 끝"
     },
     "Exp076": {
-      "expected": "3 raised to the exponent, 3 to the tenth, plus 1, end exponent"
+      "expected": "3 의 지수 시작, 3 의 10 제곱, 플러스 1, 지수 끝"
     },
     "Exp077": {
-      "expected": "3 raised to the exponent, 3 to the tenth, end exponent, plus 1"
+      "expected": "3 의 지수 시작, 3 의 10 제곱, 지수 끝, 플러스 1"
     },
     "Exp078": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, to the second, end exponent"
+      "expected": "3 의 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 의 2 제곱, 지수 끝"
     },
     "Exp079": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, to the tenth, end exponent"
+      "expected": "3 의 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 의 10 제곱, 지수 끝"
     },
     "Exp080": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, raised to the y plus 2 power, end exponent"
+      "expected": "3 의 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 의 와이 플러스 2 제곱, 지수 끝"
     },
     "Exp081": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, to the y-th, plus 2, end exponent"
+      "expected": "3 의 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 의 와이 제곱, 플러스 2, 지수 끝"
     },
     "Exp082": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, to the y-th, end exponent, plus 2"
+      "expected": "3 의 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 의 와이 제곱, 지수 끝, 플러스 2"
     },
     "Exp083": {
-      "expected": "e raised to the exponent, negative one half x to the second, end exponent"
+      "expected": "e 의 지수 시작, 마이너스 이분의 일 엑스 의 2 제곱, 지수 끝"
     },
     "Exp084": {
-      "expected": "e raised to the exponent, negative one half times, open paren, the fraction with numerator x minus mu, and denominator sigma, close paren, to the second, end exponent"
+      "expected": "e 의 지수 시작, 마이너스 이분의 일 곱하기, 괄호 시작, 분모가 시그마, 분자가 엑스 마이너스 엠유인 분수, 괄호 끝, 의 2 제곱, 지수 끝"
     },
-    "Exp085": {
-      "expected": "3 to the second power"
+    "Exp085": {//Afterpower
+      "expected": "3 의 2 제곱"
     },
     "Exp086": {
-      "expected": "3 to the third power"
+      "expected": "3 의 3 제곱 "
     },
     "Exp087": {
-      "expected": "3 to the zero power"
+      "expected": "3 의 0 제곱"
     },
     "Exp088": {
-      "expected": "3 to the first power"
+      "expected": "3 의 1 제곱"
     },
     "Exp089": {
-      "expected": "3 to the fifth power"
+      "expected": "3 의 5 제곱"
     },
     "Exp090": {
-      "expected": "3 raised to the 5.0 power"
+      "expected": "3 의 5.0 제곱"
     },
     "Exp091": {
-      "expected": "4 to the eleventh power"
+      "expected": "4 의 11 제곱"
     },
     "Exp092": {
-      "expected": "3 to the negative 2 power"
+      "expected": "3 의 마이너스 2 제곱"
     },
     "Exp093": {
-      "expected": "3 raised to the negative 2.0 power"
+      "expected": "3 의 마이너스 2.0 제곱"
     },
     "Exp094": {
-      "expected": "4 to the x-th power"
+      "expected": "4 의 엑스 제곱"
     },
     "Exp095": {
-      "expected": "3 raised to the y plus 2 power"
+      "expected": "3 의 와이 플러스 2 제곱"
     },
     "Exp096": {
-      "expected": "open paren, 2 y, minus 3, close paren, raised to the 3 z, plus 8 power"
+      "expected": "괄호 시작, 2 와이, 빼기 3, 괄호 끝, 의 3 제트, 플러스 8 제곱"
     },
     "Exp097": {
-      "expected": "p sub 1, to the second power"
+      "expected": "p 아래첨자 1, 의 2 제곱"
     },
     "Exp098": {
-      "expected": "p sub 1, to the third power"
+      "expected": "p 아래첨자 1, 의 3 제곱"
     },
     "Exp099": {
-      "expected": "p sub 1, to the fourth power"
+      "expected": "p 아래첨자 1, 의 네제곱"
     },
     "Exp100": {
-      "expected": "p sub 1, to the tenth power"
+      "expected": "p 아래첨자 1, 의 10 제곱"
     },
     "Exp101": {
-      "expected": "p sub 1, raised to the x plus 1 power"
+      "expected": "p 아래첨자 1, 의 엑스 플러스 1 제곱"
     },
     "Exp102": {
-      "expected": "p sub, x sub 1, to the second power"
+      "expected": "p 아래첨자, 엑스 아래첨자 1, 의 2 제곱"
     },
     "Exp103": {
-      "expected": "p sub, x sub 1, to the third power"
+      "expected": "p 아래첨자, 엑스 아래첨자 1, 의 3 제곱"
     },
     "Exp104": {
-      "expected": "p sub, x sub 1, to the fourth power"
+      "expected": "p 아래첨자, 엑스 아래첨자 1, 의 4 제곱"
     },
     "Exp105": {
-      "expected": "p sub, x sub 1, to the tenth power"
+      "expected": "p 아래첨자, 엑스 아래첨자 1, 의 10 제곱"
     },
     "Exp106": {
-      "expected": "p sub, x sub 1, raised to the y plus 1 power"
+      "expected": "p 아래첨자, 엑스 아래첨자 1, 의 와이 플러스 1 제곱"
     },
     "Exp107": {
-      "expected": "3 raised to the exponent, 2 to the second power, end exponent"
+      "expected": "3 의 지수 시작, 2 의 2 제곱, 지수 끝"
     },
     "Exp108": {
-      "expected": "3 raised to the exponent, 2 x to the second power, end exponent"
+      "expected": "3 의 지수 시작, 2 엑스 의 2 제곱, 지수 끝"
     },
     "Exp109": {
-      "expected": "5 raised to the exponent, 2 to the third power, end exponent"
+      "expected": "5 의 지수 시작, 2 의 3 제곱, 지수 끝"
     },
     "Exp110": {
-      "expected": "5 raised to the exponent, 2 x to the third power, end exponent"
+      "expected": "5 의 지수 시작, 2 엑스 의 3 제곱, 지수 끝"
     },
     "Exp111": {
-      "expected": "3 raised to the exponent, 2 to the second power, plus 1, end exponent"
+      "expected": "3 의 지수 시작, 2 의 2 제곱, 플러스 1, 지수 끝"
     },
     "Exp112": {
-      "expected": "3 raised to the exponent, 2 to the second power, end exponent, plus 1"
+      "expected": "3 의 지수 시작, 2 의 2 제곱, 지수 끝, 플러스 1"
     },
     "Exp113": {
-      "expected": "2 raised to the exponent, x to the second power, plus 3 x to the third power, end exponent"
+      "expected": "2 의 지수 시작, 엑스 의 2 제곱, 플러스 3 엑스 의 3 제곱, 지수 끝"
     },
     "Exp114": {
-      "expected": "3 raised to the exponent, 3 to the fourth power, end exponent"
+      "expected": "3 의 지수 시작, 3 의 4 제곱, 지수 끝"
     },
     "Exp115": {
-      "expected": "3 raised to the exponent, 3 to the fourth power, plus 2, end exponent"
+      "expected": "3 의 지수 시작, 3 의 4 제곱, 플러스 2, 지수 끝"
     },
     "Exp116": {
-      "expected": "3 raised to the exponent, 3 to the fourth power, end exponent, plus 2"
+      "expected": "3 의 지수 시작, 3 의 4 제곱, 지수 끝, 플러스 2"
     },
     "Exp117": {
-      "expected": "2 raised to the exponent, x to the fourth power, end exponent"
+      "expected": "2 의 지수 시작, 엑스 의 4 제곱, 지수 끝"
     },
     "Exp118": {
-      "expected": "2 raised to the exponent, 10 raised to the x plus 3 power, end exponent"
+      "expected": "2 의 지수 시작, 10 의 엑스 플러스 3, 지수 끝"
     },
     "Exp119": {
-      "expected": "3 raised to the exponent, 3 to the tenth power, end exponent"
+      "expected": "3 의 지수 시작, 3 의 10 제곱, 지수 끝"
     },
     "Exp120": {
-      "expected": "3 raised to the exponent, 3 to the tenth power, plus 1, end exponent"
+      "expected": "3 의 지수 시작, 3 의 10 제곱, 플러스 1, 지수 끝"
     },
     "Exp121": {
-      "expected": "3 raised to the exponent, 3 to the tenth power, end exponent, plus 1"
+      "expected": "3 의 지수 시작, 3 의 10 제곱, 지수 끝, 플러스 1"
     },
     "Exp122": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, to the second power, end exponent"
+      "expected": "3 의 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 의 2 제곱, 지수 끝"
     },
     "Exp123": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, to the tenth power, end exponent"
+      "expected": "3 의 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 의 10 제곱, 지수 끝"
     },
     "Exp124": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, raised to the y plus 2 power, end exponent"
+      "expected": "3 의 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 의 와이 플러스 2 제곱, 지수 끝"
     },
     "Exp125": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, to the y-th power, plus 2, end exponent"
+      "expected": "3 의 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝,  와이 제곱, 플러스 2, 지수 끝"
     },
     "Exp126": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, to the y-th power, end exponent, plus 2"
+      "expected": "3 의 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝,  와이 제곱, 지수 끝, 플러스 2"
     },
     "Exp127": {
-      "expected": "e raised to the exponent, negative one half x to the second power, end exponent"
+      "expected": "e 의 지수 시작, 마이너스 이분의 일 엑스 의 2 제곱, 지수 끝"
     },
     "Exp128": {
-      "expected": "e raised to the exponent, negative one half times, open paren, the fraction with numerator x minus mu, and denominator sigma, close paren, to the second power, end exponent"
+      "expected": "e 의 지수 시작, 마이너스 이분의 일 times, 괄호 시작, 분모가 시그마, 분자가 엑스 빼기 엠유,인 분수 괄호 끝, 의 2 제곱, 지수 끝"
     },
     "Exp129": {
-      "expected": "3 raised to the power 2"
+      "expected": "3 의 2 제곱"
     },
     "Exp130": {
-      "expected": "3 raised to the power 3"
+      "expected": "3 의 3 제곱"
     },
     "Exp131": {
-      "expected": "3 raised to the power 1"
+      "expected": "3 의 1 제곱"
     },
     "Exp132b": {
-      "expected": "3 raised to the power 0"
+      "expected": "3 의 0 제곱"
     },
     "Exp133": {
-      "expected": "3 raised to the power 5"
+      "expected": "3 의 power 5"
     },
     "Exp134": {
-      "expected": "3 raised to the power 5.0"
+      "expected": "3 의 power 5.0"
     },
     "Exp135": {
-      "expected": "4 raised to the power 11"
+      "expected": "4 의 power 11"
     },
     "Exp136": {
-      "expected": "3 raised to the power negative 2"
+      "expected": "3 의 power negative 2"
     },
     "Exp137": {
-      "expected": "3 raised to the power negative 2.0"
+      "expected": "3 의 power negative 2.0"
     },
     "Exp138": {
-      "expected": "4 raised to the power x"
+      "expected": "4 의 power x"
     },
     "Exp139": {
-      "expected": "3 raised to the power y plus 2"
+      "expected": "3 의 power 와이 플러스 2"
     },
     "Exp140": {
-      "expected": "open paren, 2 y, minus 3, close paren, raised to the power 3 z plus 8"
+      "expected": "괄호 시작, 2 y, minus 3, 괄호 끝, 의 power 3 z 플러스 8"
     },
     "Exp141": {
-      "expected": "p sub 1, raised to the power 2"
+      "expected": "p 아래첨자 1, 의 power 2"
     },
     "Exp142": {
-      "expected": "p sub 1, raised to the power 3"
+      "expected": "p 아래첨자 1, 의 power 3"
     },
     "Exp143": {
-      "expected": "p sub 1, raised to the power 4"
+      "expected": "p 아래첨자 1, 의 power 4"
     },
     "Exp144": {
-      "expected": "p sub 1, raised to the power 10"
+      "expected": "p 아래첨자 1, 의 power 10"
     },
     "Exp145": {
-      "expected": "p sub 1, raised to the power x plus 1"
+      "expected": "p 아래첨자 1, 의 power 엑스 플러스 1"
     },
     "Exp146": {
-      "expected": "p sub, x sub 1, raised to the power 2"
+      "expected": "p 아래첨자, 엑스 아래첨자 1, 의 power 2"
     },
     "Exp147": {
-      "expected": "p sub, x sub 1, raised to the power 3"
+      "expected": "p 아래첨자, 엑스 아래첨자 1, 의 power 3"
     },
     "Exp148": {
-      "expected": "p sub, x sub 1, raised to the power 4"
+      "expected": "p 아래첨자, 엑스 아래첨자 1, 의 power 4"
     },
     "Exp149": {
-      "expected": "p sub, x sub 1, raised to the power 10"
+      "expected": "p 아래첨자, 엑스 아래첨자 1, 의 power 10"
     },
     "Exp150": {
-      "expected": "p sub, x sub 1, raised to the power y plus 1"
+      "expected": "p 아래첨자, 엑스 아래첨자 1, 의 power 와이 플러스 1"
     },
     "Exp151": {
-      "expected": "3 raised to the exponent, 2 raised to the power 2, end exponent"
+      "expected": "3 의 지수 시작, 2 의 power 2, 지수 끝"
     },
     "Exp152": {
-      "expected": "3 raised to the exponent, 2 x raised to the power 2, end exponent"
+      "expected": "3 의 지수 시작, 2 엑스 의 power 2, 지수 끝"
     },
     "Exp153": {
-      "expected": "3 raised to the exponent, 2 raised to the power 2, end exponent"
+      "expected": "3 의 지수 시작, 2 의 power 2, 지수 끝"
     },
     "Exp154": {
-      "expected": "3 raised to the exponent, 2 x raised to the power 2, end exponent"
+      "expected": "3 의 지수 시작, 2 엑스 의 power 2, 지수 끝"
     },
     "Exp155": {
-      "expected": "5 raised to the exponent, 2 raised to the power 3, end exponent"
+      "expected": "5 의 지수 시작, 2 의 power 3, 지수 끝"
     },
     "Exp156": {
-      "expected": "5 raised to the exponent, 2 x raised to the power 3, end exponent"
+      "expected": "5 의 지수 시작, 2 엑스 의 power 3, 지수 끝"
     },
     "Exp157": {
-      "expected": "3 raised to the exponent, 2 raised to the power 2, plus 1, end exponent"
+      "expected": "3 의 지수 시작, 2 의 power 2, 플러스 1, 지수 끝"
     },
     "Exp158": {
-      "expected": "3 raised to the exponent, 2 raised to the power 2, end exponent, plus 1"
+      "expected": "3 의 지수 시작, 2 의 power 2, 지수 끝, 플러스 1"
     },
     "Exp159": {
-      "expected": "2 raised to the exponent, x raised to the power 2, plus 3 x raised to the power 3, end exponent"
+      "expected": "2 의 지수 시작, 엑스 의 power 2, 플러스 3 엑스 의 power 3, 지수 끝"
     },
     "Exp160": {
-      "expected": "3 raised to the exponent, 3 raised to the power 4, end exponent"
+      "expected": "3 의 지수 시작, 3 의 power 4, 지수 끝"
     },
     "Exp161": {
-      "expected": "3 raised to the exponent, 3 raised to the power 4, plus 2, end exponent"
+      "expected": "3 의 지수 시작, 3 의 power 4, 플러스 2, 지수 끝"
     },
     "Exp162": {
-      "expected": "3 raised to the exponent, 3 raised to the power 4, end exponent, plus 2"
+      "expected": "3 의 지수 시작, 3 의 power 4, 지수 끝, 플러스 2"
     },
     "Exp163": {
-      "expected": "2 raised to the exponent, x raised to the power 4, end exponent"
+      "expected": "2 의 지수 시작, 엑스 의 power 4, 지수 끝"
     },
     "Exp164": {
-      "expected": "2 raised to the exponent, 10 raised to the power x plus 3, end exponent"
+      "expected": "2 의 지수 시작, 10 의 power 엑스 플러스 3, 지수 끝"
     },
     "Exp165": {
-      "expected": "3 raised to the exponent, 3 raised to the power 10, end exponent"
+      "expected": "3 의 지수 시작, 3 의 power 10, 지수 끝"
     },
     "Exp166": {
-      "expected": "3 raised to the exponent, 3 raised to the power 10, plus 1, end exponent"
+      "expected": "3 의 지수 시작, 3 의 power 10, 플러스 1, 지수 끝"
     },
     "Exp167": {
-      "expected": "3 raised to the exponent, 3 raised to the power 10, end exponent, plus 1"
+      "expected": "3 의 지수 시작, 3 의 power 10, 지수 끝, 플러스 1"
     },
     "Exp168": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, raised to the power 2, end exponent"
+      "expected": "3 의 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 의 power 2, 지수 끝"
     },
     "Exp169": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, raised to the power 10, end exponent"
+      "expected": "3 의 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 의 power 10, 지수 끝"
     },
     "Exp170": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, raised to the power y plus 2, end exponent"
+      "expected": "3 의 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 의 power 와이 플러스 2, 지수 끝"
     },
     "Exp171": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, raised to the power y, plus 2, end exponent"
+      "expected": "3 의 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 의 power y, 플러스 2, 지수 끝"
     },
     "Exp172": {
-      "expected": "3 raised to the exponent, open paren, x plus 1, close paren, raised to the power y, end exponent, plus 2"
+      "expected": "3 의 지수 시작, 괄호 시작, 엑스 플러스 1, 괄호 끝, 의 power y, 지수 끝, 플러스 2"
     },
     "Exp173": {
-      "expected": "e raised to the exponent, negative one half x raised to the power 2, end exponent"
+      "expected": "e 의 지수 시작, 마이너스 이분의 일 엑스 의 power 2, 지수 끝"
     },
     "Exp174": {
-      "expected": "e raised to the exponent, negative one half times, open paren, the fraction with numerator x minus mu, and denominator sigma, close paren, raised to the power 2, end exponent"
+      "expected": "e 의 지수 시작, 마이너스 이분의 일 times, 괄호 시작, the fraction with numerator 엑스 minus mu, and denominator sigma, 괄호 끝, 의 power 2, 지수 끝"
     }
   }
 }
