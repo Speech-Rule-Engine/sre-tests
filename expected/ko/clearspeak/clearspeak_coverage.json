@@ -8,88 +8,88 @@
   "exclude": [],
   "tests": {
     "ApplSimple_0": {
-      "expected": "f of, g of x"
+      "expected": "에프의, 지의 엑스"
     },
     "ApplSimple_1": {
-      "expected": "f of, g of x, equals f of x, plus g of x"
+      "expected": "에프의, 지의 엑스 같다 에프의 엑스 플러스 지의 엑스"
     },
     "BinaryOperationPause_0": {
-      "expected": "sine x y"
+      "expected": "사인 엑스 와이"
     },
     "Empty_Line_0": {
-      "expected": "2 lines, Line 1: a. Line 2: blank"
+      "expected": "총 줄 수 2  1행 : 에이. 2행: 빈 칸"
     },
     "Empty_Line_1": {
-      "expected": "2 lines, Line 1: a. Line 2: blank"
+      "expected": "총 줄 수 2  1행 : 에이. 2행: 빈 칸"
     },
     "Empty_Line_2": {
-      "expected": "2 lines, Line 1: a. Line 2: blank"
+      "expected": "총 줄 수 2  1행 : 에이. 2행: 빈 칸"
     },
     "Empty_Cell_0": {
-      "expected": "2 lines, Line 1: a; equals; b"
+      "expected": "총 줄 수 2  1행 : 에이; 같다; 비 "
     },
     "Empty_Cell_1": {
-      "expected": "2 lines, Line 1: a; equals; b. Line 2: blank"
+      "expected": "총 줄 수 2  1행 : 에이; 같다; 비 2행: 빈 칸"
     },
     "Empty_Cell_2": {
-      "expected": "2 lines, Line 1: a; equals; b. Line 2: blank"
+      "expected": "총 줄 수 2  1행 : 에이; 같다; 비 2행: 빈 칸"
     },
     "Empty_Cell_3": {
-      "expected": "2 lines, Line 1: a; equals; b. Line 2: 1; blank; 2"
+      "expected": "총 줄 수 2  1행 : 에이; 같다; 비 2행: 1; 빈 칸; 2"
     },
     "Angle_0_default": {
-      "expected": "45 degrees, 10 minutes, 20 seconds"
+      "expected": "45 도, 10 분, 20 초"
     },
     "Angle_1_default": {
-      "expected": "1 degree, 10 minutes, 20 seconds"
+      "expected": "1 도, 10 분, 20 초"
     },
     "Angle_2_default": {
-      "expected": "45 degrees, 1 minute, 20 seconds"
+      "expected": "45 도, 1 분, 20 초"
     },
     "Angle_3_default": {
-      "expected": "45 degrees, 10 minutes, 1 second"
+      "expected": "45 도, 10 분, 1 초"
     },
     "Angle_4_default": {
-      "expected": "1 foot, 20 inches"
+      "expected": "1 피트, 20 인치"
     },
     "Angle_5_default": {
-      "expected": "10 feet, 1 inch"
+      "expected": "10 피트, 1 인치"
     },
     "Angle_0_Angle": {
-      "expected": "45 degrees, 10 minutes, 20 seconds"
+      "expected": "45 도, 10 분, 20 초"
     },
     "Angle_1_Angle": {
-      "expected": "1 degree, 10 minutes, 20 seconds"
+      "expected": "1 도, 10 분, 20 초"
     },
     "Angle_2_Angle": {
-      "expected": "45 degrees, 1 minute, 20 seconds"
+      "expected": "45 도, 1 분, 20 초"
     },
     "Angle_3_Angle": {
-      "expected": "45 degrees, 10 minutes, 1 second"
+      "expected": "45 도, 10 분, 1 초"
     },
     "Angle_4_Angle": {
-      "expected": "1 minute, 20 seconds"
+      "expected": "1 분, 20 초"
     },
     "Angle_5_Angle": {
-      "expected": "10 minutes, 1 second"
+      "expected": "10 분, 1 초"
     },
     "Angle_0_Length": {
-      "expected": "45 degrees, 10 minutes, 20 seconds"
+      "expected": "45 도, 10 분, 20 초"
     },
     "Angle_1_Length": {
-      "expected": "1 degree, 10 minutes, 20 seconds"
+      "expected": "1 도, 10 분, 20 초"
     },
     "Angle_2_Length": {
-      "expected": "45 degrees, 1 minute, 20 seconds"
+      "expected": "45 도, 1 분, 20 초"
     },
     "Angle_3_Length": {
-      "expected": "45 degrees, 10 minutes, 1 second"
+      "expected": "45 도, 10 분, 1 초"
     },
     "Angle_4_Length": {
-      "expected": "1 foot, 20 inches"
+      "expected": "1 피트, 20 인치"
     },
     "Angle_5_Length": {
-      "expected": "10 feet, 1 inch"
+      "expected": "10 피트, 1 인치"
     }
   }
 }
