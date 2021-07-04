@@ -1,3 +1,24 @@
+## [summary_test](summary_test.json)
+
+# Line 11,24:
+      서수, 개수 부분 어떻게 표현되는건지 찾아보기 힘들어요ㅠㅠ
+
+
+## [clearspeak_direct_speech](clearspeak_direct_speech.json)
+
+# Line 14,68:
+      부분집합, 등호 등등의 순서 지정 필요. ( "A 부분집합 B" vs "A는 B의 부분집합이다")
+
+
+## [clearspeak_unit](clearspeak_unit.json)
+
+# Line 94:
+      해석의 순서, 일관성 (초 퍼 미터 -> 미터 퍼 세크)
+
+# Line 94:
+      제곱에 대해 깔끔하게 정리 필요.(전체의 제곱인지 일부의 제곱인지)
+
+
 ## [clearspeak_font](clearspeak_font.json)
 
 # All:
