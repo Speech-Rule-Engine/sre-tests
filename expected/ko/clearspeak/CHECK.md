@@ -1,3 +1,11 @@
+## [clearspeak_font](clearspeak_font.json)
+
+# Line 417:
+      자연스런 해석 필요('monospace': '고정폭, 'fullwidth': '넓게')
+# All:
+      1행, 2행 이렇게 할것인지 1 행, 1 열로 말한 것인지 확인.
+
+
 ## [clearspeak_absolute_value](clearspeak_absolute_value.json)
 
 # Line 22:
