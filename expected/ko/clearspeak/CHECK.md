@@ -6,6 +6,12 @@
       1행, 2행 이렇게 할것인지 1 행, 1 열로 말한 것인지 확인.
 
 
+## [clearspeak_exponents](clearspeak_exponents.json)
+
+# :
+    2^2^2 같은 경우 2 의 2 제곱 제곱 으로 읽음. 이 경우 혼동 가능하다고 생각.
+    squared => 현제 '제곱' 이라고 되있어서 'power'와 혼동 가능성 있다고 생각 '2제곱'으로 바꾸는건..?
+
 ## [clearspeak_matrices_vectors_and combinatorics](clearspeak_matrices_vectors_and_combinatorics.json)
 
 # Line 14:
