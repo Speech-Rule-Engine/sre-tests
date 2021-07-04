@@ -13,6 +13,8 @@
     squared => 현제 '제곱' 이라고 되있어서 'power'와 혼동 가능성 있다고 생각 '2제곱'으로 바꾸는건..?
 # Line 147:
     times 를 따로 안정해줌. 어디서 정해주는지 찾아보고 확인 필요
+# Line 428:
+     조건이 Afterpower 인 경우도 다 바꿔줫는데 power의 위치 조정 필요
 
 ## [clearspeak_matrices_vectors_and combinatorics](clearspeak_matrices_vectors_and_combinatorics.json)
 
