@@ -2,6 +2,9 @@
 
 # Line 22:
       부등호 사용시 조사는 어떻게 할것 인지? ex) x>y : x는 y"보다" 크다
+# All:
+      1행, 2행 이렇게 할것인지 1 행, 1 열로 말한 것인지 확인.
+
 
 ## [clearspeak_matrices_vectors_and combinatorics](clearspeak_matrices_vectors_and_combinatorics.json)
 
