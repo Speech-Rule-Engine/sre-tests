@@ -101,3 +101,22 @@
 
 # Line 187:
     second, third 등이 들어가는 구조 파악 필요
+
+
+## [clearspeak_part2_symbols](clearspeak_part2_symbols.json)
+
+# Line 32:
+    cross => 외적 or 곱하기 ??
+
+# Line 45:
+    dot => 내적 or 외적 ??
+
+## [clearspeak_part3_adornments](clearspeak_part3_adornments.json)
+
+# Line 213:
+    f bar => "f 바" or "f 윗줄"
+
+# All:
+    역함수 OO(ex. 탄젠트) 의 OO (ex. x)
+    OO(ex. 탄젠트) 역함수 의 OO (ex. x)
+    둘 다 괜찮은지
