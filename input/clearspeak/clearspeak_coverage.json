@@ -334,6 +334,15 @@
     },
     "Overscript": {
       "input": "<mover><mi>A</mi><mi>B</mi></mover>"
+    },
+    "_comment_": "Italian coverage",
+    "DetFemale": {
+      "input": "<mi>det</mi><mi>A</mi>"
+    },
+    "_comment_": "French coverage",
+    "ExponentLatinCap": {
+      "input": "<msup><mi>x</mi><mi>A</mi></msup>",
+      "preference": "Exponent_Ordinal"
     }
   }
 }
