@@ -1,10 +1,10 @@
 {
-  "locale": "en",
-  "name": "EnglishExtraCharacter",
+  "locale": "ko",
+  "name": "KoreanExtraCharacter",
   "type": "character",
   "factory": "symbol",
-  "active": "ExtraSymbolsEnglish",
-  "information": "English Extra Character tests.",
+  "active": "ExtraSymbolsKorean",
+  "information": "Korean Extra Character tests.",
   "tests": {
     "2045-mathspeak-brief": {
       "key": "⁅",
@@ -88,61 +88,61 @@
       "key": "←",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "L arrow"
+      "expected": "왼쪽 화살표"
     },
     "2191-mathspeak-sbrief": {
       "key": "↑",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "U arrow"
+      "expected": "위쪽 화살표"
     },
     "2192-mathspeak-sbrief": {
       "key": "→",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "R arrow"
+      "expected": "오른쪽 화살표"
     },
     "2193-mathspeak-sbrief": {
       "key": "↓",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "D arrow"
+      "expected": "아래쪽 화살표"
     },
     "2194-mathspeak-sbrief": {
       "key": "↔",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "L R arrow"
+      "expected": "좌우 화살표"
     },
     "2195-mathspeak-sbrief": {
       "key": "↕",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "U D arrow"
+      "expected": "상하 화살표"
     },
     "2196-mathspeak-sbrief": {
       "key": "↖",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "U L arrow"
+      "expected": "좌상향 화살표"
     },
     "2197-mathspeak-sbrief": {
       "key": "↗",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "U R arrow"
+      "expected": "우상향 화살표"
     },
     "2198-mathspeak-sbrief": {
       "key": "↘",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "D R arrow"
+      "expected": "우하향 화살표"
     },
     "2199-mathspeak-sbrief": {
       "key": "↙",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "D L arrow"
+      "expected": "좌하향 화살표"
     },
     "2208-clearspeak-SetMemberSymbol_Member": {
       "key": "∈",
@@ -202,19 +202,19 @@
       "key": "⌃",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "U arrowhead"
+      "expected": "위쪽 화살촉"
     },
     "2304-mathspeak-sbrief": {
       "key": "⌄",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "D arrowhead"
+      "expected": "아래쪽 화살촉"
     },
     "2324-mathspeak-sbrief": {
       "key": "⌤",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "U arrowhead between two horizontal bars"
+      "expected": "두 가로 막대 사이의 위쪽 화살촉"
     },
     "2329-default-physics": {
       "key": "〈",
@@ -268,259 +268,259 @@
       "key": "➔",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "heavy wide headed R arrow"
+      "expected": "굵고 넓은 오른쪽 화살표"
     },
     "2798-mathspeak-sbrief": {
       "key": "➘",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "heavy d R arrow"
+      "expected": "진한 우하향 화살표"
     },
     "2799-mathspeak-sbrief": {
       "key": "➙",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "heavy R arrow"
+      "expected": "진한 오른쪽 화살표"
     },
     "2900-mathspeak-sbrief": {
       "key": "⤀",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "two headed R arrow with vertical stroke"
+      "expected": "세로선이 그어진 오른쪽 쌍화살표"
     },
     "2901-mathspeak-sbrief": {
       "key": "⤁",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "two headed R arrow with double vertical stroke"
+      "expected": "두 개의 세로선이 그어진 오른쪽 쌍화살표"
     },
     "2902-mathspeak-sbrief": {
       "key": "⤂",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "double L arrow with vertical stroke"
+      "expected": "세로선이 그어진 왼쪽 이중 화살표"
     },
     "2903-mathspeak-sbrief": {
       "key": "⤃",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "double R arrow with vertical stroke"
+      "expected": "세로선이 그어진 오른쪽 이중 화살표"
     },
     "2904-mathspeak-sbrief": {
       "key": "⤄",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "double L R arrow with vertical stroke"
+      "expected": "세로선이 그어진 좌우 이중 화살표"
     },
     "2905-mathspeak-sbrief": {
       "key": "⤅",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "two headed R arrow from bar"
+      "expected": "세로 막대에서 시작하는 오른쪽 쌍화살표"
     },
     "2906-mathspeak-sbrief": {
       "key": "⤆",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "double L arrow from bar"
+      "expected": "세로 막대에서 시작하는 왼쪽 이중 화살표"
     },
     "2907-mathspeak-sbrief": {
       "key": "⤇",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "double R arrow from bar"
+      "expected": "세로 막대에서 시작하는 오른쪽 이중 화살표"
     },
     "2909-mathspeak-sbrief": {
       "key": "⤉",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "U arrow with horizontal stroke"
+      "expected": "가로선이 그어진 위쪽 화살표"
     },
     "2910-mathspeak-sbrief": {
       "key": "⤐",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "r two headed triple dash arrow"
+      "expected": "화살깃이 있는 오른쪽 쌍화살표"
     },
     "2911-mathspeak-sbrief": {
       "key": "⤑",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "R arrow with dotted stem"
+      "expected": "오른쪽 점선 화살표"
     },
     "2912-mathspeak-sbrief": {
       "key": "⤒",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "U arrow to bar"
+      "expected": "막대를 가리키는 위쪽 화살표"
     },
     "2913-mathspeak-sbrief": {
       "key": "⤓",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "D arrow to bar"
+      "expected": "막대를 가리키는 아래쪽 화살표"
     },
     "2914-mathspeak-sbrief": {
       "key": "⤔",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "R arrow with tail with vertical stroke"
+      "expected": "세로선이 그어졌고 화살깃이 있는 오른쪽 화살표"
     },
     "2915-mathspeak-sbrief": {
       "key": "⤕",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "R arrow with tail with double vertical stroke"
+      "expected": "두 개의 세로선이 그어졌고 화살깃이 있는 오른쪽 화살표"
     },
     "2916-mathspeak-sbrief": {
       "key": "⤖",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "r two headed arrow with tail"
+      "expected": "화살깃이 있는 오른쪽 쌍화살표"
     },
     "2917-mathspeak-sbrief": {
       "key": "⤗",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "r two headed arrow with tail with vertical stroke"
+      "expected": "세로선이 그어졌고 화살깃이 있는 오른쪽 쌍화살표"
     },
     "2918-mathspeak-sbrief": {
       "key": "⤘",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "r two headed arrow with tail with double vertical stroke"
+      "expected": "두 개의 세로선이 그어졌고 화살깃이 있는 오른쪽 쌍화살표"
     },
     "2919-mathspeak-sbrief": {
       "key": "⤙",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "L arrow tail"
+      "expected": "꼬리만 있는 왼쪽 화살표"
     },
     "2920-mathspeak-sbrief": {
       "key": "⤠",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "R arrow from bar to black diamond"
+      "expected": "세로 막대에서 시작하여 검정 다이아몬드를 가리키는 오른쪽 화살표"
     },
     "2938-mathspeak-sbrief": {
       "key": "⤸",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "r side arc clockwise arrow"
+      "expected": "시계 방향 원호 화살표"
     },
     "2939-mathspeak-sbrief": {
       "key": "⤹",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "l side arc anticlockwise arrow"
+      "expected": "반시계 방향 원호 화살표"
     },
     "2942-mathspeak-sbrief": {
       "key": "⥂",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "R arrow above short L arrow"
+      "expected": "짦은 왼쪽 화살표와 그 위에 오른쪽 화살표"
     },
     "2943-mathspeak-sbrief": {
       "key": "⥃",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "L arrow above short R arrow"
+      "expected": "짦은 오른쪽 화살표와 그 위에 왼쪽 화살표"
     },
     "2944-mathspeak-sbrief": {
       "key": "⥄",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "short R arrow above L arrow"
+      "expected": "왼쪽 화살표와 그 위에 짦은 오른쪽 화살표"
     },
     "2945-mathspeak-sbrief": {
       "key": "⥅",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "R arrow with plus below"
+      "expected": "오른쪽 화살표와 그 아래 플러스 기호"
     },
     "2946-mathspeak-sbrief": {
       "key": "⥆",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "L arrow with plus below"
+      "expected": "왼쪽 화살표와 그 아래 플러스 기호"
     },
     "2947-mathspeak-sbrief": {
       "key": "⥇",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "R arrow through x"
+      "expected": "엑스 자를 통과하는 오른쪽 화살표"
     },
     "2948-mathspeak-sbrief": {
       "key": "⥈",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "L R arrow through small circle"
+      "expected": "작은 원이 붙은 좌우 화살표"
     },
     "2949-mathspeak-sbrief": {
       "key": "⥉",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "U two headed arrow from small circle"
+      "expected": "작은 원에서 시작하는 위쪽 쌍화살표"
     },
     "2970-mathspeak-sbrief": {
       "key": "⥰",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "R double arrow with rounded head"
+      "expected": "끝이 뭉툭한 오른쪽 이중 화살표"
     },
     "2971-mathspeak-sbrief": {
       "key": "⥱",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "equals sign above R arrow"
+      "expected": "위에 등호가 붙은 오른쪽 화살표"
     },
     "2972-mathspeak-sbrief": {
       "key": "⥲",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "tilde operator above R arrow"
+      "expected": "위에 물결표가 붙은 오른쪽 화살표"
     },
     "2973-mathspeak-sbrief": {
       "key": "⥳",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "L arrow above tilde operator"
+      "expected": "밑에 물결표가 붙은 왼쪽 화살표"
     },
     "2974-mathspeak-sbrief": {
       "key": "⥴",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "R arrow above tilde operator"
+      "expected": "밑에 물결표가 붙은 오른쪽 화살표"
     },
     "2975-mathspeak-sbrief": {
       "key": "⥵",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "R arrow above almost equals"
+      "expected": "밑에 근사 등호가 붙은 오른쪽 화살표"
     },
     "2976-mathspeak-sbrief": {
       "key": "⥶",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "less than above L arrow"
+      "expected": "위에 미만 부등호가 붙은 왼쪽 화살표"
     },
     "2977-mathspeak-sbrief": {
       "key": "⥷",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "L arrow through less than"
+      "expected": "미만 부등호가 붙은 왼쪽 화살표"
     },
     "2978-mathspeak-sbrief": {
       "key": "⥸",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "greater than above R arrow"
+      "expected": "위에 초과 부등호가 붙은 오른쪽 화살표"
     },
     "2979-mathspeak-sbrief": {
       "key": "⥹",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "subset above R arrow"
+      "expected": "위에 부분 집합이 붙은 왼쪽 화살표"
     },
     "2985-mathspeak-brief": {
       "key": "⦅",
@@ -592,913 +592,913 @@
       "key": "à",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above a with grave"
+      "expected": "억음 부호가 올려진 a"
     },
     "00E0-mathspeak-sbrief": {
       "key": "à",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above a with grave"
+      "expected": "억음 부호가 올려진 a"
     },
     "00E1-mathspeak-brief": {
       "key": "á",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above a with acute"
+      "expected": "양음 부호가 올려진 a"
     },
     "00E1-mathspeak-sbrief": {
       "key": "á",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above a with acute"
+      "expected": "양음 부호가 올려진 a"
     },
     "00E2-mathspeak-brief": {
       "key": "â",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above a with caret"
+      "expected": "삽입 기호가 올려진 a"
     },
     "00E2-mathspeak-sbrief": {
       "key": "â",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above a with caret"
+      "expected": "삽입 기호가 올려진 a"
     },
     "00E3-mathspeak-brief": {
       "key": "ã",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "a overtilde"
+      "expected": "물결표가 올려진 a"
     },
     "00E3-mathspeak-sbrief": {
       "key": "ã",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "a overtilde"
+      "expected": "물결표가 올려진 a"
     },
     "00E4-mathspeak-brief": {
       "key": "ä",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above a with double dot"
+      "expected": "분음 부호가 올려진 a"
     },
     "00E4-mathspeak-sbrief": {
       "key": "ä",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above a with double dot"
+      "expected": "분음 부호가 올려진 a"
     },
     "00E5-mathspeak-brief": {
       "key": "å",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above a with ring"
+      "expected": "반지 부호가 올려진 a"
     },
     "00E5-mathspeak-sbrief": {
       "key": "å",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above a with ring"
+      "expected": "반지 부호가 올려진 a"
     },
     "00E7-mathspeak-brief": {
       "key": "ç",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above c with cedilla"
+      "expected": "갈고리형 부호가 붙여진 c"
     },
     "00E7-mathspeak-sbrief": {
       "key": "ç",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above c with cedilla"
+      "expected": "갈고리형 부호가 붙여진 c"
     },
     "00E8-mathspeak-brief": {
       "key": "è",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above e with grave"
+      "expected": "억음 부호가 올려진 e"
     },
     "00E8-mathspeak-sbrief": {
       "key": "è",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above e with grave"
+      "expected": "억음 부호가 올려진 e"
     },
     "00E9-mathspeak-brief": {
       "key": "é",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above e with acute"
+      "expected": "양음 부호가 올려진 e"
     },
     "00E9-mathspeak-sbrief": {
       "key": "é",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above e with acute"
+      "expected": "양음 부호가 올려진 e"
     },
     "00EA-mathspeak-brief": {
       "key": "ê",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above e with caret"
+      "expected": "삽입 기호가 올려진 e"
     },
     "00EA-mathspeak-sbrief": {
       "key": "ê",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above e with caret"
+      "expected": "삽입 기호가 올려진 e"
     },
     "00EB-mathspeak-brief": {
       "key": "ë",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above e with double dot"
+      "expected": "분음 부호가 올려진 e"
     },
     "00EB-mathspeak-sbrief": {
       "key": "ë",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above e with double dot"
+      "expected": "분음 부호가 올려진 e"
     },
     "00EC-mathspeak-brief": {
       "key": "ì",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above i with grave"
+      "expected": "억음 부호가 올려진 i"
     },
     "00EC-mathspeak-sbrief": {
       "key": "ì",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above i with grave"
+      "expected": "억음 부호가 올려진 i"
     },
     "00ED-mathspeak-brief": {
       "key": "í",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above i with acute"
+      "expected": "양음 부호가 올려진 i"
     },
     "00ED-mathspeak-sbrief": {
       "key": "í",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above i with acute"
+      "expected": "양음 부호가 올려진 i"
     },
     "00EE-mathspeak-brief": {
       "key": "î",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above i with caret"
+      "expected": "삽입 기호가 올려진 i"
     },
     "00EE-mathspeak-sbrief": {
       "key": "î",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above i with caret"
+      "expected": "삽입 기호가 올려진 i"
     },
     "00EF-mathspeak-brief": {
       "key": "ï",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above i with double dot"
+      "expected": "분음 부호가 올려진 i"
     },
     "00EF-mathspeak-sbrief": {
       "key": "ï",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above i with double dot"
+      "expected": "분음 부호가 올려진 i"
     },
     "00F1-mathspeak-brief": {
       "key": "ñ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "n overtilde"
+      "expected": "물결표가 올려진 n"
     },
     "00F1-mathspeak-sbrief": {
       "key": "ñ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "n overtilde"
+      "expected": "물결표가 올려진 n"
     },
     "00F2-mathspeak-brief": {
       "key": "ò",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above o with grave"
+      "expected": "억음 부호가 올려진 o"
     },
     "00F2-mathspeak-sbrief": {
       "key": "ò",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above o with grave"
+      "expected": "억음 부호가 올려진 o"
     },
     "00F3-mathspeak-brief": {
       "key": "ó",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above o with acute"
+      "expected": "양음 부호가 올려진 o"
     },
     "00F3-mathspeak-sbrief": {
       "key": "ó",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above o with acute"
+      "expected": "양음 부호가 올려진 o"
     },
     "00F4-mathspeak-brief": {
       "key": "ô",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above o with caret"
+      "expected": "삽입 기호가 올려진 o"
     },
     "00F4-mathspeak-sbrief": {
       "key": "ô",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above o with caret"
+      "expected": "삽입 기호가 올려진 o"
     },
     "00F5-mathspeak-brief": {
       "key": "õ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "o overtilde"
+      "expected": "물결표가 올려진 o"
     },
     "00F5-mathspeak-sbrief": {
       "key": "õ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "o overtilde"
+      "expected": "물결표가 올려진 o"
     },
     "00F6-mathspeak-brief": {
       "key": "ö",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above o with double dot"
+      "expected": "분음 부호가 올려진 o"
     },
     "00F6-mathspeak-sbrief": {
       "key": "ö",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above o with double dot"
+      "expected": "분음 부호가 올려진 o"
     },
     "00F9-mathspeak-brief": {
       "key": "ù",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above u with grave"
+      "expected": "억음 부호가 올려진 u"
     },
     "00F9-mathspeak-sbrief": {
       "key": "ù",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above u with grave"
+      "expected": "억음 부호가 올려진 u"
     },
     "00FA-mathspeak-brief": {
       "key": "ú",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above u with acute"
+      "expected": "양음 부호가 올려진 u"
     },
     "00FA-mathspeak-sbrief": {
       "key": "ú",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above u with acute"
+      "expected": "양음 부호가 올려진 u"
     },
     "00FB-mathspeak-brief": {
       "key": "û",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above u with caret"
+      "expected": "삽입 기호가 올려진 u"
     },
     "00FB-mathspeak-sbrief": {
       "key": "û",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above u with caret"
+      "expected": "삽입 기호가 올려진 u"
     },
     "00FC-mathspeak-brief": {
       "key": "ü",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above u with double dot"
+      "expected": "분음 부호가 올려진 u"
     },
     "00FC-mathspeak-sbrief": {
       "key": "ü",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above u with double dot"
+      "expected": "분음 부호가 올려진 u"
     },
     "00FD-mathspeak-brief": {
       "key": "ý",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above y with acute"
+      "expected": "양음 부호가 올려진 y"
     },
     "00FD-mathspeak-sbrief": {
       "key": "ý",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above y with acute"
+      "expected": "양음 부호가 올려진 y"
     },
     "00FF-mathspeak-brief": {
       "key": "ÿ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above y with double dot"
+      "expected": "음 부호가 올려진 y"
     },
     "00FF-mathspeak-sbrief": {
       "key": "ÿ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above y with double dot"
+      "expected": "음 부호가 올려진 y"
     },
     "0101-mathspeak-brief": {
       "key": "ā",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "a overbar"
+      "expected": "오버바 부호가 올려진 a"
     },
     "0101-mathspeak-sbrief": {
       "key": "ā",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "a overbar"
+      "expected": "오버바 부호가 올려진 a"
     },
     "0103-mathspeak-brief": {
       "key": "ă",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above a with breve"
+      "expected": "겹온음표 부호가 올려진 a"
     },
     "0103-mathspeak-sbrief": {
       "key": "ă",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above a with breve"
+      "expected": "겹온음표 부호가 올려진 a"
     },
     "0105-mathspeak-brief": {
       "key": "ą",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above a with ogonek"
+      "expected": "아가뇩 부호가 있는 a"
     },
     "0105-mathspeak-sbrief": {
       "key": "ą",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above a with ogonek"
+      "expected": "아가뇩 부호가 있는 a"
     },
     "0107-mathspeak-brief": {
       "key": "ć",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above c with acute"
+      "expected": "양음 부호가 올려진 c"
     },
     "0107-mathspeak-sbrief": {
       "key": "ć",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above c with acute"
+      "expected": "양음 부호가 올려진 c"
     },
     "0109-mathspeak-brief": {
       "key": "ĉ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above c with caret"
+      "expected": "삽입 기호가 올려진 c"
     },
     "0109-mathspeak-sbrief": {
       "key": "ĉ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above c with caret"
+      "expected": "삽입 기호가 올려진 c"
     },
     "010B-mathspeak-brief": {
       "key": "ċ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above c with dot"
+      "expected": "마침점 부호가 올려진 c"
     },
     "010B-mathspeak-sbrief": {
       "key": "ċ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above c with dot"
+      "expected": "마침점 부호가 올려진 c"
     },
     "010D-mathspeak-brief": {
       "key": "č",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above c with caron"
+      "expected": "카론 부호가 올려진 c"
     },
     "010D-mathspeak-sbrief": {
       "key": "č",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above c with caron"
+      "expected": "카론 부호가 올려진 c"
     },
     "010F-mathspeak-brief": {
       "key": "ď",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above d with caron"
+      "expected": "카론 부호가 올려진 d"
     },
     "010F-mathspeak-sbrief": {
       "key": "ď",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above d with caron"
+      "expected": "카론 부호가 올려진 d"
     },
     "0113-mathspeak-brief": {
       "key": "ē",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "e overbar"
+      "expected": "오버바 부호가 올려진 e"
     },
     "0113-mathspeak-sbrief": {
       "key": "ē",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "e overbar"
+      "expected": "오버바 부호가 올려진 e"
     },
     "0115-mathspeak-brief": {
       "key": "ĕ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above e with breve"
+      "expected": "겹온음표 부호가 올려진 e"
     },
     "0115-mathspeak-sbrief": {
       "key": "ĕ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above e with breve"
+      "expected": "겹온음표 부호가 올려진 e"
     },
     "0117-mathspeak-brief": {
       "key": "ė",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above e with dot"
+      "expected": "마침점 부호가 올려진 e"
     },
     "0117-mathspeak-sbrief": {
       "key": "ė",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above e with dot"
+      "expected": "마침점 부호가 올려진 e"
     },
     "0119-mathspeak-brief": {
       "key": "ę",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above e with ogonek"
+      "expected": "아가뇩 부호가 있는 e"
     },
     "0119-mathspeak-sbrief": {
       "key": "ę",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above e with ogonek"
+      "expected": "아가뇩 부호가 있는 e"
     },
     "011B-mathspeak-brief": {
       "key": "ě",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above e with caron"
+      "expected": "카론 부호가 올려진 e"
     },
     "011B-mathspeak-sbrief": {
       "key": "ě",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above e with caron"
+      "expected": "카론 부호가 올려진 e"
     },
     "011D-mathspeak-brief": {
       "key": "ĝ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above g with caret"
+      "expected": "삽입 기호가 올려진 g"
     },
     "011D-mathspeak-sbrief": {
       "key": "ĝ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above g with caret"
+      "expected": "삽입 기호가 올려진 g"
     },
     "011F-mathspeak-brief": {
       "key": "ğ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above g with breve"
+      "expected": "겹온음표 부호가 올려진 g"
     },
     "011F-mathspeak-sbrief": {
       "key": "ğ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above g with breve"
+      "expected": "겹온음표 부호가 올려진 g"
     },
     "0121-mathspeak-brief": {
       "key": "ġ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above g with dot"
+      "expected": "마침점 부호가 올려진 g"
     },
     "0121-mathspeak-sbrief": {
       "key": "ġ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above g with dot"
+      "expected": "마침점 부호가 올려진 g"
     },
     "0123-mathspeak-brief": {
       "key": "ģ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above g with cedilla"
+      "expected": "갈고리형 부호가 붙여진 g"
     },
     "0123-mathspeak-sbrief": {
       "key": "ģ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above g with cedilla"
+      "expected": "갈고리형 부호가 붙여진 g"
     },
     "0125-mathspeak-brief": {
       "key": "ĥ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above h with caret"
+      "expected": "삽입 기호가 올려진 h"
     },
     "0125-mathspeak-sbrief": {
       "key": "ĥ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above h with caret"
+      "expected": "삽입 기호가 올려진 h"
     },
     "0129-mathspeak-brief": {
       "key": "ĩ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "i overtilde"
+      "expected": "물결표가 올려진 i"
     },
     "0129-mathspeak-sbrief": {
       "key": "ĩ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "i overtilde"
+      "expected": "물결표가 올려진 i"
     },
     "012B-mathspeak-brief": {
       "key": "ī",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "i overbar"
+      "expected": "오버바 부호가 올려진 i"
     },
     "012B-mathspeak-sbrief": {
       "key": "ī",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "i overbar"
+      "expected": "오버바 부호가 올려진 i"
     },
     "012D-mathspeak-brief": {
       "key": "ĭ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above i with breve"
+      "expected": "겹온음표 부호가 올려진 i"
     },
     "012D-mathspeak-sbrief": {
       "key": "ĭ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above i with breve"
+      "expected": "겹온음표 부호가 올려진 i"
     },
     "012F-mathspeak-brief": {
       "key": "į",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above i with ogonek"
+      "expected": "아가뇩 부호가 있는 i"
     },
     "012F-mathspeak-sbrief": {
       "key": "į",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above i with ogonek"
+      "expected": "아가뇩 부호가 있는 i"
     },
     "0131-mathspeak-brief": {
       "key": "ı",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above dotless i"
+      "expected": "위에 점이 없는 i"
     },
     "0131-mathspeak-sbrief": {
       "key": "ı",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above dotless i"
+      "expected": "위에 점이 없는 i"
     },
     "0135-mathspeak-brief": {
       "key": "ĵ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above j with caret"
+      "expected": "삽입 기호가 올려진 j"
     },
     "0135-mathspeak-sbrief": {
       "key": "ĵ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above j with caret"
+      "expected": "삽입 기호가 올려진 j"
     },
     "0137-mathspeak-brief": {
       "key": "ķ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above k with cedilla"
+      "expected": "갈고리형 부호가 붙여진 k"
     },
     "0137-mathspeak-sbrief": {
       "key": "ķ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above k with cedilla"
+      "expected": "갈고리형 부호가 붙여진 k"
     },
     "013A-mathspeak-brief": {
       "key": "ĺ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above l with acute"
+      "expected": "양음 부호가 올려진 l"
     },
     "013A-mathspeak-sbrief": {
       "key": "ĺ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above l with acute"
+      "expected": "양음 부호가 올려진 l"
     },
     "013C-mathspeak-brief": {
       "key": "ļ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above l with cedilla"
+      "expected": "갈고리형 부호가 붙여진 l"
     },
     "013C-mathspeak-sbrief": {
       "key": "ļ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above l with cedilla"
+      "expected": "갈고리형 부호가 붙여진 l"
     },
     "013E-mathspeak-brief": {
       "key": "ľ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above l with caron"
+      "expected": "카론 부호가 올려진 l"
     },
     "013E-mathspeak-sbrief": {
       "key": "ľ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above l with caron"
+      "expected": "카론 부호가 올려진 l"
     },
     "0140-mathspeak-brief": {
       "key": "ŀ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above l with middle dot"
+      "expected": "중간점 부호가 있는 l"
     },
     "0140-mathspeak-sbrief": {
       "key": "ŀ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above l with middle dot"
+      "expected": "중간점 부호가 있는 l"
     },
     "0144-mathspeak-brief": {
       "key": "ń",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above n with acute"
+      "expected": "양음 부호가 올려진 n"
     },
     "0144-mathspeak-sbrief": {
       "key": "ń",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above n with acute"
+      "expected": "양음 부호가 올려진 n"
     },
     "0146-mathspeak-brief": {
       "key": "ņ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above n with cedilla"
+      "expected": "갈고리형 부호가 붙여진 n"
     },
     "0146-mathspeak-sbrief": {
       "key": "ņ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above n with cedilla"
+      "expected": "갈고리형 부호가 붙여진 n"
     },
     "0148-mathspeak-brief": {
       "key": "ň",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above n with caron"
+      "expected": "카론 부호가 올려진 n"
     },
     "0148-mathspeak-sbrief": {
       "key": "ň",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above n with caron"
+      "expected": "카론 부호가 올려진 n"
     },
     "014D-mathspeak-brief": {
       "key": "ō",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "o overbar"
+      "expected": "오버바 부호가 올려진 o"
     },
     "014D-mathspeak-sbrief": {
       "key": "ō",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "o overbar"
+      "expected": "오버바 부호가 올려진 o"
     },
     "014F-mathspeak-brief": {
       "key": "ŏ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above o with breve"
+      "expected": "겹온음표 부호가 올려진 o"
     },
     "014F-mathspeak-sbrief": {
       "key": "ŏ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above o with breve"
+      "expected": "겹온음표 부호가 올려진 o"
     },
     "0151-mathspeak-brief": {
       "key": "ő",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above o with double acute"
+      "expected": "이중 양음 부호가 올려진 o"
     },
     "0151-mathspeak-sbrief": {
       "key": "ő",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above o with double acute"
+      "expected": "이중 양음 부호가 올려진 o"
     },
     "0155-mathspeak-brief": {
       "key": "ŕ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above r with acute"
+      "expected": "양음 부호가 올려진 r"
     },
     "0155-mathspeak-sbrief": {
       "key": "ŕ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above r with acute"
+      "expected": "양음 부호가 올려진 r"
     },
     "0157-mathspeak-brief": {
       "key": "ŗ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above r with cedilla"
+      "expected": "고리형 부호가 붙여진 r"
     },
     "0157-mathspeak-sbrief": {
       "key": "ŗ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above r with cedilla"
+      "expected": "고리형 부호가 붙여진 r"
     },
     "0159-mathspeak-brief": {
       "key": "ř",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above r with caron"
+      "expected": "카론 부호가 올려진 r"
     },
     "0159-mathspeak-sbrief": {
       "key": "ř",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above r with caron"
+      "expected": "카론 부호가 올려진 r"
     },
     "015B-mathspeak-brief": {
       "key": "ś",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above s with acute"
+      "expected": "양음 부호가 올려진 s"
     },
     "015B-mathspeak-sbrief": {
       "key": "ś",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above s with acute"
+      "expected": "양음 부호가 올려진 s"
     },
     "015D-mathspeak-brief": {
       "key": "ŝ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above s with caret"
+      "expected": "삽입 기호가 올려진 s"
     },
     "015D-mathspeak-sbrief": {
       "key": "ŝ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above s with caret"
+      "expected": "삽입 기호가 올려진 s"
     },
     "015F-mathspeak-brief": {
       "key": "ş",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above s with cedilla"
+      "expected": "갈고리형 부호가 붙여진 s"
     },
     "015F-mathspeak-sbrief": {
       "key": "ş",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above s with cedilla"
+      "expected": "갈고리형 부호가 붙여진 s"
     },
     "0161-mathspeak-brief": {
       "key": "š",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above s with caron"
+      "expected": "카론 부호가 올려진 s"
     },
     "0161-mathspeak-sbrief": {
       "key": "š",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above s with caron"
+      "expected": "카론 부호가 올려진 s"
     },
     "0163-mathspeak-brief": {
       "key": "ţ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above t with cedilla"
+      "expected": "갈고리형 부호가 붙여진 t"
     },
     "0163-mathspeak-sbrief": {
       "key": "ţ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above t with cedilla"
+      "expected": "갈고리형 부호가 붙여진 t"
     },
     "0165-mathspeak-brief": {
       "key": "ť",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above t with caron"
+      "expected": "카론 부호가 올려진 t"
     },
     "0165-mathspeak-sbrief": {
       "key": "ť",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above t with caron"
+      "expected": "카론 부호가 올려진 t"
     },
     "0169-mathspeak-brief": {
       "key": "ũ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "u overtilde"
+      "expected": "물결표가 올려진 u"
     },
     "0169-mathspeak-sbrief": {
       "key": "ũ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "u overtilde"
+      "expected": "물결표가 올려진 u"
     },
     "016B-mathspeak-brief": {
       "key": "ū",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "u overbar"
+      "expected": "오버바 부호가 올려진 u"
     },
     "016B-mathspeak-sbrief": {
       "key": "ū",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "u overbar"
+      "expected": "오버바 부호가 올려진 u"
     },
     "016D-mathspeak-brief": {
       "key": "ŭ",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above u with breve"
+      "expected": "겹온음표 부호가 올려진 u"
     },
     "016D-mathspeak-sbrief": {
       "key": "ŭ",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above u with breve"
+      "expected": "겹온음표 부호가 올려진 u"
     },
     "016F-mathspeak-brief": {
       "key": "ů",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above u with ring"
+      "expected": "반지 부호가 올려진 u"
     },
     "016F-mathspeak-sbrief": {
       "key": "ů",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above u with ring"
+      "expected": "반지 부호가 올려진 u"
     },
     "0171-mathspeak-brief": {
       "key": "ű",
       "domain": "mathspeak",
       "style": "brief",
-      "expected": "mod above u with double acute"
+      "expected": "이중 양음 부호가 올려진 u"
     },
     "0171-mathspeak-sbrief": {
       "key": "ű",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "mod above u with double acute"
+      "expected": "이중 양음 부호가 올려진 u"
     },
     "0173-mathspeak-brief": {
       "key": "ų",
