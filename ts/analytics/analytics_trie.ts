@@ -120,7 +120,7 @@ MathStore.prototype.allLocalizable = function() {
 
 let oldInitialize = MathStore.prototype.initialize;
 
-const allStores: MathStore[] = [];
+export const allStores: MathStore[] = [];
 /**
  * @override
  */
@@ -260,8 +260,6 @@ namespace AnalyticsTrie {
     outputTrie(tempTrie(result), 'disjunctiveRules');
   }
 
-  // Compares two rule sets and creates a trie out of those rules that are the
-  // same and do not need to be localized.
   /**
    * @param rules
    * @param comparator
@@ -288,8 +286,9 @@ namespace AnalyticsTrie {
     store.getSpeechRules().forEach(x => trie.addRule(x));
     return trie;
   }
-  
+
   /**
+   * Compares constraints ignoring the locale.
    * @param trie1
    * @param trie2
    */
@@ -313,6 +312,8 @@ namespace AnalyticsTrie {
     return tmp;
   }
 
+  // Compares two rule sets and creates a trie out of those rules that are the
+  // same and do not need to be localized.
   /**
    * @param trie1
    * @param trie2
