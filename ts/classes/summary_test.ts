@@ -67,15 +67,15 @@ export class SummaryTest extends SpeechTest {
     ProcessorFactory.process('walker', mathMl);
     this.steps.forEach(step =>
       ProcessorFactory.process('move', Key.get(step) as any));
-    return ProcessorFactory.process('move', Key.get('X') as any) as string;
+    return ProcessorFactory.process('move', Key.get('RETURN') as any) as string;
   }
 
   /**
    * @override
    */
-  public method(...args: any[]) {
-    this.steps = args[3];
-    super.method(args[0], args[1], args[2]);
+  public method() {
+    this.steps = this.field('steps');
+    super.method();
     this.steps = null;
   }
 }

@@ -38,8 +38,8 @@ export class HtmlTest extends AbstractJsonTest {
   /**
    * @override
    */
-  public method(...args: any[]) {
-    this.entitiesTest(args[0], args[1]);
+  public method() {
+    this.entitiesTest(this.field('input'), this.field('expected'));
   }
 
 }
@@ -51,7 +51,7 @@ export class XpathTest extends AbstractJsonTest {
    */
   public constructor() {
     super();
-    this.pickFields = this.pickFields.concat(['type', 'query']);
+    this.pickFields.push('type', 'query');
   }
 
   /**
@@ -72,8 +72,9 @@ export class XpathTest extends AbstractJsonTest {
   /**
    * @override
    */
-  public method(...args: any[]) {
-    this.entitiesTest(args[0], args[1], args[2], args[3]);
+  public method() {
+    this.entitiesTest(this.field('input'), this.field('expected'),
+                      this.field('type'), this.field('query'));
   }
 
 }

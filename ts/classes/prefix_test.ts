@@ -51,10 +51,12 @@ export class PrefixTest extends SpeechTest {
    */
   public subExpr: Element = null;
 
+  /**
+   * @class
+   */
   public constructor() {
     super();
-    this.pickFields[2] = 'id';
-    this.pickFields[3] = 'grammar';
+    this.pickFields.push('id', 'grammar');
   }
 
   /**
@@ -78,12 +80,13 @@ export class PrefixTest extends SpeechTest {
   /**
    * @override
    */
-  public method(...args: string[]) {
-    this.id = args[2] === undefined ? null : parseInt(args[2], 10);
-    if (args[3]) {
-      Grammar.getInstance().setParameter(args[3], true);
+  public method() {
+    this.id = this.field('id') === undefined ? null :
+        parseInt(this.field('id'), 10);
+    if (this.field('grammar')) {
+      Grammar.getInstance().setParameter(this.field('grammar'), true);
     }
-    super.method(args[0], args[1]);
+    super.method();
     Grammar.getInstance().clear();
   }
 

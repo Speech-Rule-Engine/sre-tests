@@ -224,7 +224,8 @@ export class SpeechTest extends AbstractExamples {
   /**
    * @override
    */
-  public method(...args: (string | any)[]) {
-    this.executeTest(args[0], args[1], args[2]);
+  public method() {
+    this.executeTest(
+      this.field('input'), this.field('expected'), this.field('preference'));
   }
 }

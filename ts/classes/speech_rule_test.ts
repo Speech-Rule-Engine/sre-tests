@@ -46,9 +46,7 @@ export class SpeechRuleTest extends AbstractJsonTest {
    */
   public constructor() {
     super();
-    this.pickFields.push('kind');
-    this.pickFields.push('string');
-    this.pickFields.push('pick');
+    this.pickFields.push('kind', 'string', 'pick');
   }
 
   /**
@@ -66,20 +64,21 @@ export class SpeechRuleTest extends AbstractJsonTest {
   /**
    * @override
    */
-  public method(...args: any[]) {
-    let fromString = this._fromString.get(args[2]);
+  public method() {
+    let fromString = this._fromString.get(this.field('kind'));
     if (!fromString) {
       this.assert.fail();
     }
-    let received = this.pickComponent(fromString(args[0]), args[4]);
-    if (args[3]) {
-      let toString = this._toString.get(args[3]);
+    let received = this.pickComponent(fromString(this.field('input')),
+                                      this.field('pick'));
+    if (this.field('string')) {
+      let toString = this._toString.get(this.field('string'));
       if (!toString) {
         this.assert.fail();
       }
-      this.assert.equal(toString(received), args[1]);
+      this.assert.equal(toString(received), this.field('expected'));
     } else {
-      this.assertStructEquals(received, args[1]);
+      this.assertStructEquals(received, this.field('expected'));
     }
   }
 

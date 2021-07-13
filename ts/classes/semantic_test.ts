@@ -41,8 +41,8 @@ export abstract class SemanticTest extends AbstractExamples {
   /**
    * @override
    */
-  public method(...args: any[]) {
-    this.executeTest(args[0], args[1]);
+  public method() {
+    this.executeTest(this.field('input'), this.field('expected'));
   }
 
   /**
@@ -181,8 +181,9 @@ export class SemanticTreeTest extends SemanticBlacklistTest {
   /**
    * @override
    */
-  public method(...args: any[]) {
-    this.executeTest(args[0], args[1], args[2]);
+  public method() {
+    this.executeTest(
+      this.field('input'), this.field('expected'), this.field('brief'));
   }
 
   /**
