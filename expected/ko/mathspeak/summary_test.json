@@ -1,444 +1,444 @@
 {
-  "name": "EnglishMathspeakSummary",
-  "locale": "en",
+  "name": "KoreanMathspeakSummary",
+  "locale": "ko",
   "domain": "mathspeak",
   "factory": "summary",
   "base": "input/common/summary_test.json",
-  "information": "English Mathspeak Summary tests.",
-  "active": "SummaryEnglish",
+  "information": "Korean Mathspeak Summary tests.",
+  "active": "SummaryKorean",
   "exclude": [],
   "tests": {
     "AbstrAddition_default": {
-      "expected": "sum with 2 summands"
+      "expected": "항이 2 개인 덧셈"
     },
     "AbstrAddition_brief": {
-      "expected": "sum"
+      "expected": "덧셈"
     },
     "AbstrAddition_sbrief": {
-      "expected": "sum"
+      "expected": "덧셈"
     },
     "AbstrBigop_default": {
-      "expected": "sigma summation"
+      "expected": "시그마 합"
     },
     "AbstrBigop_brief": {
-      "expected": "sigma summation"
+      "expected": "시그마 합"
     },
     "AbstrBigop_sbrief": {
-      "expected": "sigma summation"
+      "expected": "시그마 합"
     },
     "AbstrBinomial_default": {
-      "expected": "binomial"
+      "expected": "이항계수"
     },
     "AbstrBinomial_brief": {
-      "expected": "binomial"
+      "expected": "이항계수"
     },
     "AbstrBinomial_sbrief": {
-      "expected": "binomial"
+      "expected": "이항계수"
     },
     "AbstrCases_default": {
-      "expected": "case statement with 2 cases"
+      "expected": "케이스가 2 개인 조건문"
     },
     "AbstrCases_brief": {
-      "expected": "case statement"
+      "expected": "조건문"
     },
     "AbstrCases_sbrief": {
-      "expected": "case statement"
+      "expected": "조건문"
     },
     "_comment0_": " TODO",
     "AbstrCell_default": {
-      "expected": "1st Column in table"
+      "expected": "표에서 첫번째 열"
     },
     "AbstrCell_brief": {
-      "expected": "1st Column in table"
+      "expected": "표에서 첫번째 열"
     },
     "AbstrCell_sbrief": {
-      "expected": "1st Column in table"
+      "expected": "표에서 첫번째 열"
     },
     "AbstrContinuedFraction_default": {
-      "expected": "continued fraction"
+      "expected": "연속되는 분수"
     },
     "AbstrContinuedFraction_brief": {
-      "expected": "continued frac"
+      "expected": "연분수"
     },
     "AbstrContinuedFraction_sbrief": {
-      "expected": "continued frac"
+      "expected": "연분수"
     },
     "AbstrDeterminant_default": {
-      "expected": "2 dimensional determinant"
+      "expected": "2 차원 행렬식"
     },
     "AbstrDeterminant_brief": {
-      "expected": "determinant"
+      "expected": "행렬식"
     },
     "AbstrDeterminant_sbrief": {
-      "expected": "determinant"
+      "expected": "행렬식"
     },
     "AbstrFraction_default": {
-      "expected": "fraction"
+      "expected": "분수"
     },
     "AbstrFraction_brief": {
-      "expected": "frac"
+      "expected": "분수"
     },
     "AbstrFraction_sbrief": {
-      "expected": "frac"
+      "expected": "분수"
     },
     "AbstrFunction_default": {
       "_comment1_": " var input = '<mi>sin</mi><mi>x</mi>';",
-      "expected": "functional expression"
+      "expected": "함수식"
     },
     "AbstrFunction_brief": {
       "_comment1_": " var input = '<mi>sin</mi><mi>x</mi>';",
-      "expected": "function"
+      "expected": "함수"
     },
     "AbstrFunction_sbrief": {
       "_comment1_": " var input = '<mi>sin</mi><mi>x</mi>';",
-      "expected": "function"
+      "expected": "함수"
     },
     "AbstrIdentifier_default": {
-      "expected": "identifier"
+      "expected": "식별자"
     },
     "AbstrIdentifier_brief": {
-      "expected": "identifier"
+      "expected": "식별자"
     },
     "AbstrIdentifier_sbrief": {
-      "expected": "identifier"
+      "expected": "식별자"
     },
     "AbstrInfixop_default": {
-      "expected": "division with 2 elements"
+      "expected": "인자가 2 개인 나눗셈"
     },
     "AbstrInfixop_brief": {
-      "expected": "division"
+      "expected": "나눗셈"
     },
     "AbstrInfixop_sbrief": {
-      "expected": "division"
+      "expected": "나눗셈"
     },
     "AbstrIntegral_default": {
-      "expected": "integral"
+      "expected": "인테그럴"
     },
     "AbstrIntegral_brief": {
-      "expected": "integral"
+      "expected": "인테그럴"
     },
     "AbstrIntegral_sbrief": {
-      "expected": "integral"
+      "expected": "인테그럴"
     },
     "AbstrLim_default": {
-      "expected": "limit function"
+      "expected": "리미트"
     },
     "AbstrLim_brief": {
-      "expected": "lim"
+      "expected": "리미트"
     },
     "AbstrLim_sbrief": {
-      "expected": "lim"
+      "expected": "리미트"
     },
     "_comment2_": " TODO",
     "AbstrLine_default": {
-      "expected": "1st Row in multiple lines"
+      "expected": "여러 줄에서 첫번째 열"
     },
     "AbstrLine_brief": {
-      "expected": "1st Row in multiple lines"
+      "expected": "여러 줄에서 첫번째 열"
     },
     "AbstrLine_sbrief": {
-      "expected": "1st Row in multiple lines"
+      "expected": "여러 줄에서 첫번째 열"
     },
     "AbstrMatrix_default": {
-      "expected": "3 by 2 matrix"
+      "expected": "3 행 2 열의 행렬"
     },
     "AbstrMatrix_brief": {
-      "expected": "matrix"
+      "expected": "행렬"
     },
     "AbstrMatrix_sbrief": {
-      "expected": "matrix"
+      "expected": "행렬"
     },
     "AbstrMixedNumber_default": {
-      "expected": "mixed number"
+      "expected": "대분수"
     },
     "AbstrMixedNumber_brief": {
-      "expected": "mixed number"
+      "expected": "대분수"
     },
     "AbstrMixedNumber_sbrief": {
-      "expected": "mixed number"
+      "expected": "대분수"
     },
     "AbstrMultiplication_default": {
-      "expected": "product with 2 factors"
+      "expected": "인자가 2 개인 곱셈"
     },
     "AbstrMultiplication_brief": {
-      "expected": "product"
+      "expected": "곱셈"
     },
     "AbstrMultiplication_sbrief": {
-      "expected": "product"
+      "expected": "곱셈"
     },
     "AbstrMultirel_default": {
-      "expected": "relation sequence with 3 elements"
+      "expected": "항이 3 개인 연속 관계식"
     },
     "AbstrMultirel_brief": {
-      "expected": "relation sequence"
+      "expected": "항이 3 개인 연속 관계식"
     },
     "AbstrMultirel_sbrief": {
-      "expected": "relation sequence"
+      "expected": "항이 3 개인 연속 관계식"
     },
     "AbstrNumber_default": {
-      "expected": "number"
+      "expected": "수"
     },
     "AbstrNumber_brief": {
-      "expected": "number"
+      "expected": "수"
     },
     "AbstrNumber_sbrief": {
-      "expected": "number"
+      "expected": "수"
     },
     "AbstrPunctuated_default": {
-      "expected": "comma separated list of length 3"
+      "expected": "길이가 3 인 콤마 로 구분된 리스트"
     },
     "AbstrPunctuated_brief": {
-      "expected": "comma separated list"
+      "expected": "콤마 로 구분된 리스트"
     },
     "AbstrPunctuated_sbrief": {
-      "expected": "comma separated list"
+      "expected": "콤마 로 구분된 리스트"
     },
     "AbstrRelation_default": {
-      "expected": "equality"
+      "expected": "등식"
     },
     "AbstrRelation_brief": {
-      "expected": "equality"
+      "expected": "등식"
     },
     "AbstrRelation_sbrief": {
-      "expected": "equality"
+      "expected": "등식"
     },
     "AbstrRelationSeq_default": {
-      "expected": "equality sequence with 3 elements"
+      "expected": "항이 3 개인 연속 등식"
     },
     "AbstrRelationSeq_brief": {
-      "expected": "equality sequence"
+      "expected": "연속 등식"
     },
     "AbstrRelationSeq_sbrief": {
-      "expected": "equality sequence"
+      "expected": "연속 등식"
     },
     "AbstrRoot_default": {
-      "expected": "root of index 3"
+      "expected": "세제곱근"
     },
     "AbstrRoot_brief": {
-      "expected": "root"
+      "expected": "루트"
     },
     "AbstrRoot_sbrief": {
-      "expected": "root"
+      "expected": "루트"
     },
     "AbstrRootNested_default": {
-      "expected": "nested root of index 3"
+      "expected": "세제곱근의 중첩 루트"
     },
     "AbstrRootNested_brief": {
-      "expected": "nested root"
+      "expected": "중첩 루트"
     },
     "AbstrRootNested_sbrief": {
-      "expected": "nested root"
+      "expected": "중첩 루트"
     },
     "_comment3_": " TODO",
     "AbstrRow_default": {
-      "expected": "1st Row in table with 2 columns"
+      "expected": "2 열의 표에서 첫번째 행"
     },
     "AbstrRow_brief": {
-      "expected": "1st Row in table with 2 columns"
+      "expected": "2 열의 표에서 첫번째 행"
     },
     "AbstrRow_sbrief": {
-      "expected": "1st Row in table with 2 columns"
+      "expected": "2 열의 표에서 첫번째 행"
     },
     "AbstrRowvector_default": {
-      "expected": "2 dimensional row vector"
+      "expected": "2 행의 벡터"
     },
     "AbstrRowvector_brief": {
-      "expected": "row vector"
+      "expected": "벡터"
     },
     "AbstrRowvector_sbrief": {
-      "expected": "row vector"
+      "expected": "벡터"
     },
     "AbstrSqrt_default": {
-      "expected": "square root"
+      "expected": "제곱근"
     },
     "AbstrSqrt_brief": {
-      "expected": "square root"
+      "expected": "제곱근"
     },
     "AbstrSqrt_sbrief": {
-      "expected": "square root"
+      "expected": "제곱근"
     },
     "AbstrSqrtNested_default": {
-      "expected": "nested square root"
+      "expected": "중첩 제곱근"
     },
     "AbstrSqrtNested_brief": {
-      "expected": "nested square root"
+      "expected": "중첩 제곱근"
     },
     "AbstrSqrtNested_sbrief": {
-      "expected": "nested square root"
+      "expected": "중첩 제곱근"
     },
     "AbstrSquarematrix_default": {
-      "expected": "2 dimensional square matrix"
+      "expected": "2 차원 정방 행렬"
     },
     "AbstrSquarematrix_brief": {
-      "expected": "square matrix"
+      "expected": "정방 행렬"
     },
     "AbstrSquarematrix_sbrief": {
-      "expected": "square matrix"
+      "expected": "정방 행렬"
     },
     "AbstrSubscript_default": {
-      "expected": "subscript"
+      "expected": "아래첨자"
     },
     "AbstrSubscript_brief": {
-      "expected": "subscript"
+      "expected": "아래첨자"
     },
     "AbstrSubscript_sbrief": {
-      "expected": "subscript"
+      "expected": "아래첨자"
     },
     "AbstrSubsup_default": {
-      "expected": "power with subscript"
+      "expected": "아래첨자가 있는 거듭제곱"
     },
     "AbstrSubsup_brief": {
-      "expected": "power with subscript"
+      "expected": "아래첨자가 있는 거듭제곱"
     },
     "AbstrSubsup_sbrief": {
-      "expected": "power with subscript"
+      "expected": "아래첨자가 있는 거듭제곱"
     },
     "AbstrSuperscript_default": {
-      "expected": "power"
+      "expected": "거듭제곱"
     },
     "AbstrSuperscript_brief": {
-      "expected": "power"
+      "expected": "거듭제곱"
     },
     "AbstrSuperscript_sbrief": {
-      "expected": "power"
+      "expected": "거듭제곱"
     },
     "AbstrTable_default": {
-      "expected": "table with 2 rows and 2 columns"
+      "expected": "2 행 2 열의 표"
     },
     "AbstrTable_brief": {
-      "expected": "table with 2 rows and 2 columns"
+      "expected": "2 행 2 열의 표"
     },
     "AbstrTable_sbrief": {
-      "expected": "table with 2 rows and 2 columns"
+      "expected": "2 행 2 열의 표"
     },
     "AbstrText_default": {
-      "expected": "text"
+      "expected": "텍스트"
     },
     "AbstrText_brief": {
-      "expected": "text"
+      "expected": "텍스트"
     },
     "AbstrText_sbrief": {
-      "expected": "text"
+      "expected": "텍스트"
     },
     "AbstrVarAddition_default": {
-      "expected": "sum with variable number of summands"
+      "expected": "항이 가변 개인 덧셈"
     },
     "AbstrVarAddition_brief": {
-      "expected": "sum"
+      "expected": "덧셈"
     },
     "AbstrVarAddition_sbrief": {
-      "expected": "sum"
+      "expected": "덧셈"
     },
     "AbstrVarCases_default": {
-      "expected": "case statement with variable number of cases"
+      "expected": "케이스가 가변 개인 조건문"
     },
     "AbstrVarCases_brief": {
-      "expected": "case statement"
+      "expected": "조건문"
     },
     "AbstrVarCases_sbrief": {
-      "expected": "case statement"
+      "expected": "조건문"
     },
     "AbstrVarDeterminant_default": {
-      "expected": "n dimensional determinant"
+      "expected": "엔 차원 행렬식"
     },
     "AbstrVarDeterminant_brief": {
-      "expected": "determinant"
+      "expected": "행렬식"
     },
     "AbstrVarDeterminant_sbrief": {
-      "expected": "determinant"
+      "expected": "행렬식"
     },
     "AbstrVarMatrix_default": {
-      "expected": "n by m dimensional matrix"
+      "expected": "엔 행 엠 열의 행렬"
     },
     "AbstrVarMatrix_brief": {
-      "expected": "square matrix"
+      "expected": "정방 행렬"
     },
     "AbstrVarMatrix_sbrief": {
-      "expected": "square matrix"
+      "expected": "정방 행렬"
     },
     "AbstrVarMultiplication_default": {
-      "expected": "product with variable number of factors"
+      "expected": "인자가 가변 개인 곱셈"
     },
     "AbstrVarMultiplication_brief": {
-      "expected": "product"
+      "expected": "곱셈"
     },
     "AbstrVarMultiplication_sbrief": {
-      "expected": "product"
+      "expected": "곱셈"
     },
     "AbstrVarMultirel_default": {
-      "expected": "relation sequence with variable number of elements"
+      "expected": "항이 가변 개인 연속 관계식"
     },
     "AbstrVarMultirel_brief": {
-      "expected": "relation sequence"
+      "expected": "연속 관계식"
     },
     "AbstrVarMultirel_sbrief": {
-      "expected": "relation sequence"
+      "expected": "연속 관계식"
     },
     "AbstrVarPunctuated_default": {
-      "expected": "comma separated list of variable length"
+      "expected": "길이가 가변 인 콤마 로 구분된 리스트"
     },
     "AbstrVarPunctuated_brief": {
-      "expected": "comma separated list"
+      "expected": "콤마 로 구분된 리스트"
     },
     "AbstrVarPunctuated_sbrief": {
-      "expected": "comma separated list"
+      "expected": "콤마 로 구분된 리스트"
     },
     "AbstrVarRelation_default": {
-      "expected": "equality sequence with variable number of elements"
+      "expected": "항이 가변 개인 연속 등식"
     },
     "AbstrVarRelation_brief": {
-      "expected": "equality sequence"
+      "expected": "연속 등식"
     },
     "AbstrVarRelation_sbrief": {
-      "expected": "equality sequence"
+      "expected": "연속 등식"
     },
     "AbstrVarVector_default": {
-      "expected": "n dimensional vector"
+      "expected": "엔 차원 벡터"
     },
     "AbstrVarVector_brief": {
-      "expected": "vector"
+      "expected": "벡터"
     },
     "AbstrVarVector_sbrief": {
-      "expected": "vector"
+      "expected": "벡터"
     },
     "AbstrVector_default": {
-      "expected": "3 dimensional vector"
+      "expected": "3 차원 벡터"
     },
     "AbstrVector_brief": {
-      "expected": "vector"
+      "expected": "벡터"
     },
     "AbstrVector_sbrief": {
-      "expected": "vector"
+      "expected": "벡터"
     },
     "AbstrVarSubtraction_default": {
-      "expected": "subtraction with variable number of elements"
+      "expected": "항이 가변 개인 뺄셈"
     },
     "AbstrVarSubtraction_brief": {
-      "expected": "subtraction"
+      "expected": "뺄셈"
     },
     "AbstrVarSubtraction_sbrief": {
-      "expected": "subtraction"
+      "expected": "뺄셈"
     },
     "AbstrCountImplicit_default": {
-      "expected": "product with 3 factors"
+      "expected": "인자가 3 개인 곱셈"
     },
     "AbstrCountImplicit_brief": {
-      "expected": "product"
+      "expected": "곱셈"
     },
     "AbstrCountImplicit_sbrief": {
-      "expected": "product"
+      "expected": "곱셈"
     },
     "AbstrVarImplicit_default": {
-      "expected": "product with variable number of factors"
+      "expected": "인자가 가변 개인 곱셈"
     },
     "AbstrVarArrowRelation_default": {
-      "expected": "arrow sequence with variable number of elements"
+      "expected": "항이 가변 개인 연속 화살표"
     },
     "AbstrArrowRelation_default": {
-      "expected": "arrow"
+      "expected": "화살표"
     },
     "AbstrVarRowvector_default": {
-      "expected": "n dimensional row vector"
+      "expected": "엔 행의 벡터"
     }
   }
 }

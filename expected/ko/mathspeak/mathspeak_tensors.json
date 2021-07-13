@@ -1,714 +1,714 @@
 {
-  "name": "EnglishMathspeakTensors",
-  "locale": "en",
+  "name": "KoreanMathspeakTensors",
+  "locale": "ko",
   "factory": "speech",
   "base": "input/mathspeak/mathspeak_tensors.json",
-  "information": "English Mathspeak Tensor tests.",
+  "information": "Korean Mathspeak Tensor tests.",
   "domain": "mathspeak",
-  "active": "MathspeakEnglish",
+  "active": "MathspeakKorean",
   "exclude": [],
   "tests": {
-    "_comment1_": "Systematic testing of tensor rules.",
-    "_comment2_": " Tensor tests are named with the convention of including the indices that are",
+    "_comment1_": "Systematic testing of tensor 알ules.",
+    "_comment2_": " Tensor tests are named with the 씨onvention of including the indices that are",
     "_comment3_": " present:",
     "_comment4_": "   B      D",
     "_comment5_": "      X      R",
     "_comment6_": "   A      C",
-    "_comment7_": "  Where R is the rest.",
+    "_comment7_": "  Where R is the 알est.",
     "_comment8_": "  Wrapping is indicated before R (without baseline) or after R (with baseline).",
     "PartialTensorABCD_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c Superscript d"
+      "expected": "아래첨자 에이 위첨자 비 Baseline 엑스 아래첨자 씨 위첨자 디"
     },
     "PartialTensorABCD_brief": {
-      "expected": "Sub a Sup b Base x Sub c Sup d"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 위 디"
     },
     "PartialTensorABCD_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c Sup d"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 위 디"
     },
     "PartialTensorABC_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c"
+      "expected": "아래첨자 에이 위첨자 비 Baseline 엑스 아래첨자 씨"
     },
     "PartialTensorABC_brief": {
-      "expected": "Sub a Sup b Base x Sub c"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨"
     },
     "PartialTensorABC_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨"
     },
     "PartialTensorABD_default": {
-      "expected": "Subscript a Superscript b Baseline x Superscript d"
+      "expected": "아래첨자 에이 위첨자 비 Baseline 엑스 위첨자 디"
     },
     "PartialTensorABD_brief": {
-      "expected": "Sub a Sup b Base x Sup d"
+      "expected": "아래 에이 위 비 Base 엑스 위 디"
     },
     "PartialTensorABD_sbrief": {
-      "expected": "Sub a Sup b Base x Sup d"
+      "expected": "아래 에이 위 비 Base 엑스 위 디"
     },
     "PartialTensorAB_default": {
-      "expected": "Subscript a Superscript b Baseline x"
+      "expected": "아래첨자 에이 위첨자 비 Baseline 엑스"
     },
     "PartialTensorAB_brief": {
-      "expected": "Sub a Sup b Base x"
+      "expected": "아래 에이 위 비 Base 엑스"
     },
     "PartialTensorAB_sbrief": {
-      "expected": "Sub a Sup b Base x"
+      "expected": "아래 에이 위 비 Base 엑스"
     },
     "PartialTensorABCR_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c Baseline r"
+      "expected": "아래첨자 에이 위첨자 비 Baseline 엑스 아래첨자 씨 Baseline 알"
     },
     "PartialTensorABCR_brief": {
-      "expected": "Sub a Sup b Base x Sub c Base r"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 Base 알"
     },
     "PartialTensorABCR_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c Base r"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 Base 알"
     },
     "PartialTensorABCDR_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c Superscript d Baseline r"
+      "expected": "아래첨자 에이 위첨자 비 Baseline 엑스 아래첨자 씨 위첨자 디 Baseline 알"
     },
     "PartialTensorABCDR_brief": {
-      "expected": "Sub a Sup b Base x Sub c Sup d Base r"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 위 디 Base 알"
     },
     "PartialTensorABCDR_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c Sup d Base r"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 위 디 Base 알"
     },
     "PartialTensorABCDRoot_default": {
-      "expected": "StartRoot Subscript a Superscript b Baseline x Subscript c Superscript d EndRoot"
+      "expected": "루트시작 아래첨자 에이 위첨자 비 Baseline 엑스 아래첨자 씨 위첨자 디 루트끝"
     },
     "PartialTensorABCDRoot_brief": {
-      "expected": "StartRoot Sub a Sup b Base x Sub c Sup d EndRoot"
+      "expected": "루트시작 아래 에이 위 비 Base 엑스 아래 씨 위 디 루트끝"
     },
     "PartialTensorABCDRoot_sbrief": {
-      "expected": "Root Sub a Sup b Base x Sub c Sup d EndRoot"
+      "expected": "루트 아래 에이 위 비 Base 엑스 아래 씨 위 디 루트끝"
     },
     "PartialTensorABCDRootR_default": {
-      "expected": "StartRoot Subscript a Superscript b Baseline x Subscript c Superscript d EndRoot r"
+      "expected": "루트시작 아래첨자 에이 위첨자 비 Baseline 엑스 아래첨자 씨 위첨자 디 루트끝 알"
     },
     "PartialTensorABCDRootR_brief": {
-      "expected": "StartRoot Sub a Sup b Base x Sub c Sup d EndRoot r"
+      "expected": "루트시작 아래 에이 위 비 Base 엑스 아래 씨 위 디 루트끝 알"
     },
     "PartialTensorABCDRootR_sbrief": {
-      "expected": "Root Sub a Sup b Base x Sub c Sup d EndRoot r"
+      "expected": "루트 아래 에이 위 비 Base 엑스 아래 씨 위 디 루트끝 알"
     },
     "PartialTensorABCDRRoot_default": {
-      "expected": "StartRoot Subscript a Superscript b Baseline x Subscript c Superscript d Baseline r EndRoot"
+      "expected": "루트시작 아래첨자 에이 위첨자 비 Baseline 엑스 아래첨자 씨 위첨자 디 Baseline 알 루트끝"
     },
     "PartialTensorABCDRRoot_brief": {
-      "expected": "StartRoot Sub a Sup b Base x Sub c Sup d Base r EndRoot"
+      "expected": "루트시작 아래 에이 위 비 Base 엑스 아래 씨 위 디 Base 알 루트끝"
     },
     "PartialTensorABCDRRoot_sbrief": {
-      "expected": "Root Sub a Sup b Base x Sub c Sup d Base r EndRoot"
+      "expected": "루트 아래 에이 위 비 Base 엑스 아래 씨 위 디 Base 알 루트끝"
     },
     "PartialTensorABCDFrac_default": {
-      "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x Subscript c Superscript d EndFraction"
+      "expected": "분수시작 아래첨자 에이 위첨자 비 Baseline 엑스 아래첨자 씨 위첨자 디 분의 1 분수끝"
     },
     "PartialTensorABCDFrac_brief": {
-      "expected": "StartFrac 1 Over Sub a Sup b Base x Sub c Sup d EndFrac"
+      "expected": "분수시작 아래 에이 위 비 Base 엑스 아래 씨 위 디 분의 1 분수끝"
     },
     "PartialTensorABCDFrac_sbrief": {
-      "expected": "Frac 1 Over Sub a Sup b Base x Sub c Sup d EndFrac"
+      "expected": "분수 아래 에이 위 비 Base 엑스 아래 씨 위 디 분의 1 분수끝"
     },
     "PartialTensorABCDFracR_default": {
-      "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x Subscript c Superscript d EndFraction r"
+      "expected": "분수시작 아래첨자 에이 위첨자 비 Baseline 엑스 아래첨자 씨 위첨자 디 분의 1 분수끝 알"
     },
     "PartialTensorABCDFracR_brief": {
-      "expected": "StartFrac 1 Over Sub a Sup b Base x Sub c Sup d EndFrac r"
+      "expected": "분수시작 아래 에이 위 비 Base 엑스 아래 씨 위 디 분의 1 분수끝 알"
     },
     "PartialTensorABCDFracR_sbrief": {
-      "expected": "Frac 1 Over Sub a Sup b Base x Sub c Sup d EndFrac r"
+      "expected": "분수 아래 에이 위 비 Base 엑스 아래 씨 위 디 분의 1 분수끝 알"
     },
     "PartialTensorABCDRFrac_default": {
-      "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x Subscript c Superscript d Baseline r EndFraction"
+      "expected": "분수시작 아래첨자 에이 위첨자 비 Baseline 엑스 아래첨자 씨 위첨자 디 Baseline 알 분의 1 분수끝"
     },
     "PartialTensorABCDRFrac_brief": {
-      "expected": "StartFrac 1 Over Sub a Sup b Base x Sub c Sup d Base r EndFrac"
+      "expected": "분수시작 아래 에이 위 비 Base 엑스 아래 씨 위 디 Base 알 분의 1 분수끝"
     },
     "PartialTensorABCDRFrac_sbrief": {
-      "expected": "Frac 1 Over Sub a Sup b Base x Sub c Sup d Base r EndFrac"
+      "expected": "분수 아래 에이 위 비 Base 엑스 아래 씨 위 디 Base 알 분의 1 분수끝"
     },
 
     "_comment20_": "New completion.",
     "PartialTensorB_default": {
-      "expected": "Superscript b Baseline x"
+      "expected": "위첨자 비 Baseline 엑스"
     },
     "PartialTensorB_brief": {
-      "expected": "Sup b Base x"
+      "expected": "위 비 Base 엑스"
     },
     "PartialTensorB_sbrief": {
-      "expected": "Sup b Base x"
+      "expected": "위 비 Base 엑스"
     },
     "PartialTensorBR_default": {
-      "expected": "Superscript b Baseline x Baseline r"
+      "expected": "위첨자 비 Baseline 엑스 Baseline 알"
     },
     "PartialTensorBR_brief": {
-      "expected": "Sup b Base x Base r"
+      "expected": "위 비 Base 엑스 Base 알"
     },
     "PartialTensorBR_sbrief": {
-      "expected": "Sup b Base x Base r"
+      "expected": "위 비 Base 엑스 Base 알"
     },
     "PartialTensorBRootR_default": {
-      "expected": "StartRoot Superscript b Baseline x EndRoot r"
+      "expected": "루트시작 위첨자 비 Baseline 엑스 루트끝 알"
     },
     "PartialTensorBRootR_brief": {
-      "expected": "StartRoot Sup b Base x EndRoot r"
+      "expected": "루트시작 위 비 Base 엑스 루트끝 알"
     },
     "PartialTensorBRootR_sbrief": {
-      "expected": "Root Sup b Base x EndRoot r"
+      "expected": "루트 위 비 Base 엑스 루트끝 알"
     },
     "PartialTensorBRRoot_default": {
-      "expected": "StartRoot Superscript b Baseline x Baseline r EndRoot"
+      "expected": "루트시작 위첨자 비 Baseline 엑스 Baseline 알 루트끝"
     },
     "PartialTensorBRRoot_brief": {
-      "expected": "StartRoot Sup b Base x Base r EndRoot"
+      "expected": "루트시작 위 비 Base 엑스 Base 알 루트끝"
     },
     "PartialTensorBRRoot_sbrief": {
-      "expected": "Root Sup b Base x Base r EndRoot"
+      "expected": "루트 위 비 Base 엑스 Base 알 루트끝"
     },
     "PartialTensorBFracR_default": {
-      "expected": "StartFraction 1 Over Superscript b Baseline x EndFraction r"
+      "expected": "분수시작 위첨자 비 Baseline 엑스 분의 1 분수끝 알"
     },
     "PartialTensorBFracR_brief": {
-      "expected": "StartFrac 1 Over Sup b Base x EndFrac r"
+      "expected": "분수시작 위 비 Base 엑스 분의 1 분수끝 알"
     },
     "PartialTensorBFracR_sbrief": {
-      "expected": "Frac 1 Over Sup b Base x EndFrac r"
+      "expected": "분수 위 비 Base 엑스 분의 1 분수끝 알"
     },
     "PartialTensorBRFrac_default": {
-      "expected": "StartFraction 1 Over Superscript b Baseline x Baseline r EndFraction"
+      "expected": "분수시작 위첨자 비 Baseline 엑스 Baseline 알 분의 1 분수끝"
     },
     "PartialTensorBRFrac_brief": {
-      "expected": "StartFrac 1 Over Sup b Base x Base r EndFrac"
+      "expected": "분수시작 위 비 Base 엑스 Base 알 분의 1 분수끝"
     },
     "PartialTensorBRFrac_sbrief": {
-      "expected": "Frac 1 Over Sup b Base x Base r EndFrac"
+      "expected": "분수 위 비 Base 엑스 Base 알 분의 1 분수끝"
     },
     "PartialTensorBD_default": {
-      "expected": "Superscript b Baseline x Superscript d"
+      "expected": "위첨자 비 Baseline 엑스 위첨자 디"
     },
     "PartialTensorBD_brief": {
-      "expected": "Sup b Base x Sup d"
+      "expected": "위 비 Base 엑스 위 디"
     },
     "PartialTensorBD_sbrief": {
-      "expected": "Sup b Base x Sup d"
+      "expected": "위 비 Base 엑스 위 디"
     },
     "PartialTensorBDR_default": {
-      "expected": "Superscript b Baseline x Superscript d Baseline r"
+      "expected": "위첨자 비 Baseline 엑스 위첨자 디 Baseline 알"
     },
     "PartialTensorBDR_brief": {
-      "expected": "Sup b Base x Sup d Base r"
+      "expected": "위 비 Base 엑스 위 디 Base 알"
     },
     "PartialTensorBDR_sbrief": {
-      "expected": "Sup b Base x Sup d Base r"
+      "expected": "위 비 Base 엑스 위 디 Base 알"
     },
     "PartialTensorBDRootR_default": {
-      "expected": "StartRoot Superscript b Baseline x Superscript d EndRoot r"
+      "expected": "루트시작 위첨자 비 Baseline 엑스 위첨자 디 루트끝 알"
     },
     "PartialTensorBDRootR_brief": {
-      "expected": "StartRoot Sup b Base x Sup d EndRoot r"
+      "expected": "루트시작 위 비 Base 엑스 위 디 루트끝 알"
     },
     "PartialTensorBDRootR_sbrief": {
-      "expected": "Root Sup b Base x Sup d EndRoot r"
+      "expected": "루트 위 비 Base 엑스 위 디 루트끝 알"
     },
     "PartialTensorBDRRoot_default": {
-      "expected": "StartRoot Superscript b Baseline x Superscript d Baseline r EndRoot"
+      "expected": "루트시작 위첨자 비 Baseline 엑스 위첨자 디 Baseline 알 루트끝"
     },
     "PartialTensorBDRRoot_brief": {
-      "expected": "StartRoot Sup b Base x Sup d Base r EndRoot"
+      "expected": "루트시작 위 비 Base 엑스 위 디 Base 알 루트끝"
     },
     "PartialTensorBDRRoot_sbrief": {
-      "expected": "Root Sup b Base x Sup d Base r EndRoot"
+      "expected": "루트 위 비 Base 엑스 위 디 Base 알 루트끝"
     },
     "PartialTensorBDFracR_default": {
-      "expected": "StartFraction 1 Over Superscript b Baseline x Superscript d EndFraction r"
+      "expected": "분수시작 위첨자 비 Baseline 엑스 위첨자 디 분의 1 분수끝 알"
     },
     "PartialTensorBDFracR_brief": {
-      "expected": "StartFrac 1 Over Sup b Base x Sup d EndFrac r"
+      "expected": "분수시작 위 비 Base 엑스 위 디 분의 1 분수끝 알"
     },
     "PartialTensorBDFracR_sbrief": {
-      "expected": "Frac 1 Over Sup b Base x Sup d EndFrac r"
+      "expected": "분수 위 비 Base 엑스 위 디 분의 1 분수끝 알"
     },
     "PartialTensorBDRFrac_default": {
-      "expected": "StartFraction 1 Over Superscript b Baseline x Superscript d Baseline r EndFraction"
+      "expected": "분수시작 위첨자 비 Baseline 엑스 위첨자 디 Baseline 알 분의 1 분수끝"
     },
     "PartialTensorBDRFrac_brief": {
-      "expected": "StartFrac 1 Over Sup b Base x Sup d Base r EndFrac"
+      "expected": "분수시작 위 비 Base 엑스 위 디 Base 알 분의 1 분수끝"
     },
     "PartialTensorBDRFrac_sbrief": {
-      "expected": "Frac 1 Over Sup b Base x Sup d Base r EndFrac"
+      "expected": "분수 위 비 Base 엑스 위 디 Base 알 분의 1 분수끝"
     },
     "PartialTensorBC_default": {
-      "expected": "Superscript b Baseline x Subscript c"
+      "expected": "위첨자 비 Baseline 엑스 아래첨자 씨"
     },
     "PartialTensorBC_brief": {
-      "expected": "Sup b Base x Sub c"
+      "expected": "위 비 Base 엑스 아래 씨"
     },
     "PartialTensorBC_sbrief": {
-      "expected": "Sup b Base x Sub c"
+      "expected": "위 비 Base 엑스 아래 씨"
     },
     "PartialTensorBCR_default": {
-      "expected": "Superscript b Baseline x Subscript c Baseline r"
+      "expected": "위첨자 비 Baseline 엑스 아래첨자 씨 Baseline 알"
     },
     "PartialTensorBCR_brief": {
-      "expected": "Sup b Base x Sub c Base r"
+      "expected": "위 비 Base 엑스 아래 씨 Base 알"
     },
     "PartialTensorBCR_sbrief": {
-      "expected": "Sup b Base x Sub c Base r"
+      "expected": "위 비 Base 엑스 아래 씨 Base 알"
     },
     "PartialTensorBCRootR_default": {
-      "expected": "StartRoot Superscript b Baseline x Subscript c EndRoot r"
+      "expected": "루트시작 위첨자 비 Baseline 엑스 아래첨자 씨 루트끝 알"
     },
     "PartialTensorBCRootR_brief": {
-      "expected": "StartRoot Sup b Base x Sub c EndRoot r"
+      "expected": "루트시작 위 비 Base 엑스 아래 씨 루트끝 알"
     },
     "PartialTensorBCRootR_sbrief": {
-      "expected": "Root Sup b Base x Sub c EndRoot r"
+      "expected": "루트 위 비 Base 엑스 아래 씨 루트끝 알"
     },
     "PartialTensorBCRRoot_default": {
-      "expected": "StartRoot Superscript b Baseline x Subscript c Baseline r EndRoot"
+      "expected": "루트시작 위첨자 비 Baseline 엑스 아래첨자 씨 Baseline 알 루트끝"
     },
     "PartialTensorBCRRoot_brief": {
-      "expected": "StartRoot Sup b Base x Sub c Base r EndRoot"
+      "expected": "루트시작 위 비 Base 엑스 아래 씨 Base 알 루트끝"
     },
     "PartialTensorBCRRoot_sbrief": {
-      "expected": "Root Sup b Base x Sub c Base r EndRoot"
+      "expected": "루트 위 비 Base 엑스 아래 씨 Base 알 루트끝"
     },
     "PartialTensorBCFracR_default": {
-      "expected": "StartFraction 1 Over Superscript b Baseline x Subscript c EndFraction r"
+      "expected": "분수시작 위첨자 비 Baseline 엑스 아래첨자 씨 분의 1 분수끝 알"
     },
     "PartialTensorBCFracR_brief": {
-      "expected": "StartFrac 1 Over Sup b Base x Sub c EndFrac r"
+      "expected": "분수시작 위 비 Base 엑스 아래 씨 분의 1 분수끝 알"
     },
     "PartialTensorBCFracR_sbrief": {
-      "expected": "Frac 1 Over Sup b Base x Sub c EndFrac r"
+      "expected": "분수 위 비 Base 엑스 아래 씨 분의 1 분수끝 알"
     },
     "PartialTensorBCRFrac_default": {
-      "expected": "StartFraction 1 Over Superscript b Baseline x Subscript c Baseline r EndFraction"
+      "expected": "분수시작 위첨자 비 Baseline 엑스 아래첨자 씨 Baseline 알 분의 1 분수끝"
     },
     "PartialTensorBCRFrac_brief": {
-      "expected": "StartFrac 1 Over Sup b Base x Sub c Base r EndFrac"
+      "expected": "분수시작 위 비 Base 엑스 아래 씨 Base 알 분의 1 분수끝"
     },
     "PartialTensorBCRFrac_sbrief": {
-      "expected": "Frac 1 Over Sup b Base x Sub c Base r EndFrac"
+      "expected": "분수 위 비 Base 엑스 아래 씨 Base 알 분의 1 분수끝"
     },
     "PartialTensorBCD_default": {
-      "expected": "Superscript b Baseline x Subscript c Superscript d"
+      "expected": "위첨자 비 Baseline 엑스 아래첨자 씨 위첨자 디"
     },
     "PartialTensorBCD_brief": {
-      "expected": "Sup b Base x Sub c Sup d"
+      "expected": "위 비 Base 엑스 아래 씨 위 디"
     },
     "PartialTensorBCD_sbrief": {
-      "expected": "Sup b Base x Sub c Sup d"
+      "expected": "위 비 Base 엑스 아래 씨 위 디"
     },
     "PartialTensorBCDR_default": {
-      "expected": "Superscript b Baseline x Subscript c Superscript d Baseline r"
+      "expected": "위첨자 비 Baseline 엑스 아래첨자 씨 위첨자 디 Baseline 알"
     },
     "PartialTensorBCDR_brief": {
-      "expected": "Sup b Base x Sub c Sup d Base r"
+      "expected": "위 비 Base 엑스 아래 씨 위 디 Base 알"
     },
     "PartialTensorBCDR_sbrief": {
-      "expected": "Sup b Base x Sub c Sup d Base r"
+      "expected": "위 비 Base 엑스 아래 씨 위 디 Base 알"
     },
     "PartialTensorBCDRootR_default": {
-      "expected": "StartRoot Superscript b Baseline x Subscript c Superscript d EndRoot r"
+      "expected": "루트시작 위첨자 비 Baseline 엑스 아래첨자 씨 위첨자 디 루트끝 알"
     },
     "PartialTensorBCDRootR_brief": {
-      "expected": "StartRoot Sup b Base x Sub c Sup d EndRoot r"
+      "expected": "루트시작 위 비 Base 엑스 아래 씨 위 디 루트끝 알"
     },
     "PartialTensorBCDRootR_sbrief": {
-      "expected": "Root Sup b Base x Sub c Sup d EndRoot r"
+      "expected": "루트 위 비 Base 엑스 아래 씨 위 디 루트끝 알"
     },
     "PartialTensorBCDRRoot_default": {
-      "expected": "StartRoot Superscript b Baseline x Subscript c Superscript d Baseline r EndRoot"
+      "expected": "루트시작 위첨자 비 Baseline 엑스 아래첨자 씨 위첨자 디 Baseline 알 루트끝"
     },
     "PartialTensorBCDRRoot_brief": {
-      "expected": "StartRoot Sup b Base x Sub c Sup d Base r EndRoot"
+      "expected": "루트시작 위 비 Base 엑스 아래 씨 위 디 Base 알 루트끝"
     },
     "PartialTensorBCDRRoot_sbrief": {
-      "expected": "Root Sup b Base x Sub c Sup d Base r EndRoot"
+      "expected": "루트 위 비 Base 엑스 아래 씨 위 디 Base 알 루트끝"
     },
     "PartialTensorBCDFracR_default": {
-      "expected": "StartFraction 1 Over Superscript b Baseline x Subscript c Superscript d EndFraction r"
+      "expected": "분수시작 위첨자 비 Baseline 엑스 아래첨자 씨 위첨자 디 분의 1 분수끝 알"
     },
     "PartialTensorBCDFracR_brief": {
-      "expected": "StartFrac 1 Over Sup b Base x Sub c Sup d EndFrac r"
+      "expected": "분수시작 위 비 Base 엑스 아래 씨 위 디 분의 1 분수끝 알"
     },
     "PartialTensorBCDFracR_sbrief": {
-      "expected": "Frac 1 Over Sup b Base x Sub c Sup d EndFrac r"
+      "expected": "분수 위 비 Base 엑스 아래 씨 위 디 분의 1 분수끝 알"
     },
     "PartialTensorBCDRFrac_default": {
-      "expected": "StartFraction 1 Over Superscript b Baseline x Subscript c Superscript d Baseline r EndFraction"
+      "expected": "분수시작 위첨자 비 Baseline 엑스 아래첨자 씨 위첨자 디 Baseline 알 분의 1 분수끝"
     },
     "PartialTensorBCDRFrac_brief": {
-      "expected": "StartFrac 1 Over Sup b Base x Sub c Sup d Base r EndFrac"
+      "expected": "분수시작 위 비 Base 엑스 아래 씨 위 디 Base 알 분의 1 분수끝"
     },
     "PartialTensorBCDRFrac_sbrief": {
-      "expected": "Frac 1 Over Sup b Base x Sub c Sup d Base r EndFrac"
+      "expected": "분수 위 비 Base 엑스 아래 씨 위 디 Base 알 분의 1 분수끝"
     },
     "PartialTensorA_default": {
-      "expected": "Subscript a Baseline x"
+      "expected": "아래첨자 에이 Baseline 엑스"
     },
     "PartialTensorA_brief": {
-      "expected": "Sub a Base x"
+      "expected": "아래 에이 Base 엑스"
     },
     "PartialTensorA_sbrief": {
-      "expected": "Sub a Base x"
+      "expected": "아래 에이 Base 엑스"
     },
     "PartialTensorAR_default": {
-      "expected": "Subscript a Baseline x Baseline r"
+      "expected": "아래첨자 에이 Baseline 엑스 Baseline 알"
     },
     "PartialTensorAR_brief": {
-      "expected": "Sub a Base x Base r"
+      "expected": "아래 에이 Base 엑스 Base 알"
     },
     "PartialTensorAR_sbrief": {
-      "expected": "Sub a Base x Base r"
+      "expected": "아래 에이 Base 엑스 Base 알"
     },
     "PartialTensorARootR_default": {
-      "expected": "StartRoot Subscript a Baseline x EndRoot r"
+      "expected": "루트시작 아래첨자 에이 Baseline 엑스 루트끝 알"
     },
     "PartialTensorARootR_brief": {
-      "expected": "StartRoot Sub a Base x EndRoot r"
+      "expected": "루트시작 아래 에이 Base 엑스 루트끝 알"
     },
     "PartialTensorARootR_sbrief": {
-      "expected": "Root Sub a Base x EndRoot r"
+      "expected": "루트 아래 에이 Base 엑스 루트끝 알"
     },
     "PartialTensorARRoot_default": {
-      "expected": "StartRoot Subscript a Baseline x Baseline r EndRoot"
+      "expected": "루트시작 아래첨자 에이 Baseline 엑스 Baseline 알 루트끝"
     },
     "PartialTensorARRoot_brief": {
-      "expected": "StartRoot Sub a Base x Base r EndRoot"
+      "expected": "루트시작 아래 에이 Base 엑스 Base 알 루트끝"
     },
     "PartialTensorARRoot_sbrief": {
-      "expected": "Root Sub a Base x Base r EndRoot"
+      "expected": "루트 아래 에이 Base 엑스 Base 알 루트끝"
     },
     "PartialTensorAFracR_default": {
-      "expected": "StartFraction 1 Over Subscript a Baseline x EndFraction r"
+      "expected": "분수시작 아래첨자 에이 Baseline 엑스 분의 1 분수끝 알"
     },
     "PartialTensorAFracR_brief": {
-      "expected": "StartFrac 1 Over Sub a Base x EndFrac r"
+      "expected": "분수시작 아래 에이 Base 엑스 분의 1 분수끝 알"
     },
     "PartialTensorAFracR_sbrief": {
-      "expected": "Frac 1 Over Sub a Base x EndFrac r"
+      "expected": "분수 아래 에이 Base 엑스 분의 1 분수끝 알"
     },
     "PartialTensorARFrac_default": {
-      "expected": "StartFraction 1 Over Subscript a Baseline x Baseline r EndFraction"
+      "expected": "분수시작 아래첨자 에이 Baseline 엑스 Baseline 알 분의 1 분수끝"
     },
     "PartialTensorARFrac_brief": {
-      "expected": "StartFrac 1 Over Sub a Base x Base r EndFrac"
+      "expected": "분수시작 아래 에이 Base 엑스 Base 알 분의 1 분수끝"
     },
     "PartialTensorARFrac_sbrief": {
-      "expected": "Frac 1 Over Sub a Base x Base r EndFrac"
+      "expected": "분수 아래 에이 Base 엑스 Base 알 분의 1 분수끝"
     },
     "PartialTensorAD_default": {
-      "expected": "Subscript a Baseline x Superscript d"
+      "expected": "아래첨자 에이 Baseline 엑스 위첨자 디"
     },
     "PartialTensorAD_brief": {
-      "expected": "Sub a Base x Sup d"
+      "expected": "아래 에이 Base 엑스 위 디"
     },
     "PartialTensorAD_sbrief": {
-      "expected": "Sub a Base x Sup d"
+      "expected": "아래 에이 Base 엑스 위 디"
     },
     "PartialTensorADR_default": {
-      "expected": "Subscript a Baseline x Superscript d Baseline r"
+      "expected": "아래첨자 에이 Baseline 엑스 위첨자 디 Baseline 알"
     },
     "PartialTensorADR_brief": {
-      "expected": "Sub a Base x Sup d Base r"
+      "expected": "아래 에이 Base 엑스 위 디 Base 알"
     },
     "PartialTensorADR_sbrief": {
-      "expected": "Sub a Base x Sup d Base r"
+      "expected": "아래 에이 Base 엑스 위 디 Base 알"
     },
     "PartialTensorADRootR_default": {
-      "expected": "StartRoot Subscript a Baseline x Superscript d EndRoot r"
+      "expected": "루트시작 아래첨자 에이 Baseline 엑스 위첨자 디 루트끝 알"
     },
     "PartialTensorADRootR_brief": {
-      "expected": "StartRoot Sub a Base x Sup d EndRoot r"
+      "expected": "루트시작 아래 에이 Base 엑스 위 디 루트끝 알"
     },
     "PartialTensorADRootR_sbrief": {
-      "expected": "Root Sub a Base x Sup d EndRoot r"
+      "expected": "루트 아래 에이 Base 엑스 위 디 루트끝 알"
     },
     "PartialTensorADRRoot_default": {
-      "expected": "StartRoot Subscript a Baseline x Superscript d Baseline r EndRoot"
+      "expected": "루트시작 아래첨자 에이 Baseline 엑스 위첨자 디 Baseline 알 루트끝"
     },
     "PartialTensorADRRoot_brief": {
-      "expected": "StartRoot Sub a Base x Sup d Base r EndRoot"
+      "expected": "루트시작 아래 에이 Base 엑스 위 디 Base 알 루트끝"
     },
     "PartialTensorADRRoot_sbrief": {
-      "expected": "Root Sub a Base x Sup d Base r EndRoot"
+      "expected": "루트 아래 에이 Base 엑스 위 디 Base 알 루트끝"
     },
     "PartialTensorADFracR_default": {
-      "expected": "StartFraction 1 Over Subscript a Baseline x Superscript d EndFraction r"
+      "expected": "분수시작 아래첨자 에이 Baseline 엑스 위첨자 디 분의 1 분수끝 알"
     },
     "PartialTensorADFracR_brief": {
-      "expected": "StartFrac 1 Over Sub a Base x Sup d EndFrac r"
+      "expected": "분수시작 아래 에이 Base 엑스 위 디 분의 1 분수끝 알"
     },
     "PartialTensorADFracR_sbrief": {
-      "expected": "Frac 1 Over Sub a Base x Sup d EndFrac r"
+      "expected": "분수 아래 에이 Base 엑스 위 디 분의 1 분수끝 알"
     },
     "PartialTensorADRFrac_default": {
-      "expected": "StartFraction 1 Over Subscript a Baseline x Superscript d Baseline r EndFraction"
+      "expected": "분수시작 아래첨자 에이 Baseline 엑스 위첨자 디 Baseline 알 분의 1 분수끝"
     },
     "PartialTensorADRFrac_brief": {
-      "expected": "StartFrac 1 Over Sub a Base x Sup d Base r EndFrac"
+      "expected": "분수시작 아래 에이 Base 엑스 위 디 Base 알 분의 1 분수끝"
     },
     "PartialTensorADRFrac_sbrief": {
-      "expected": "Frac 1 Over Sub a Base x Sup d Base r EndFrac"
+      "expected": "분수 아래 에이 Base 엑스 위 디 Base 알 분의 1 분수끝"
     },
     "PartialTensorAC_default": {
-      "expected": "Subscript a Baseline x Subscript c"
+      "expected": "아래첨자 에이 Baseline 엑스 아래첨자 씨"
     },
     "PartialTensorAC_brief": {
-      "expected": "Sub a Base x Sub c"
+      "expected": "아래 에이 Base 엑스 아래 씨"
     },
     "PartialTensorAC_sbrief": {
-      "expected": "Sub a Base x Sub c"
+      "expected": "아래 에이 Base 엑스 아래 씨"
     },
     "PartialTensorACR_default": {
-      "expected": "Subscript a Baseline x Subscript c Baseline r"
+      "expected": "아래첨자 에이 Baseline 엑스 아래첨자 씨 Baseline 알"
     },
     "PartialTensorACR_brief": {
-      "expected": "Sub a Base x Sub c Base r"
+      "expected": "아래 에이 Base 엑스 아래 씨 Base 알"
     },
     "PartialTensorACR_sbrief": {
-      "expected": "Sub a Base x Sub c Base r"
+      "expected": "아래 에이 Base 엑스 아래 씨 Base 알"
     },
     "PartialTensorACRootR_default": {
-      "expected": "StartRoot Subscript a Baseline x Subscript c EndRoot r"
+      "expected": "루트시작 아래첨자 에이 Baseline 엑스 아래첨자 씨 루트끝 알"
     },
     "PartialTensorACRootR_brief": {
-      "expected": "StartRoot Sub a Base x Sub c EndRoot r"
+      "expected": "루트시작 아래 에이 Base 엑스 아래 씨 루트끝 알"
     },
     "PartialTensorACRootR_sbrief": {
-      "expected": "Root Sub a Base x Sub c EndRoot r"
+      "expected": "루트 아래 에이 Base 엑스 아래 씨 루트끝 알"
     },
     "PartialTensorACRRoot_default": {
-      "expected": "StartRoot Subscript a Baseline x Subscript c Baseline r EndRoot"
+      "expected": "루트시작 아래첨자 에이 Baseline 엑스 아래첨자 씨 Baseline 알 루트끝"
     },
     "PartialTensorACRRoot_brief": {
-      "expected": "StartRoot Sub a Base x Sub c Base r EndRoot"
+      "expected": "루트시작 아래 에이 Base 엑스 아래 씨 Base 알 루트끝"
     },
     "PartialTensorACRRoot_sbrief": {
-      "expected": "Root Sub a Base x Sub c Base r EndRoot"
+      "expected": "루트 아래 에이 Base 엑스 아래 씨 Base 알 루트끝"
     },
     "PartialTensorACFracR_default": {
-      "expected": "StartFraction 1 Over Subscript a Baseline x Subscript c EndFraction r"
+      "expected": "분수시작 아래첨자 에이 Baseline 엑스 아래첨자 씨 분의 1 분수끝 알"
     },
     "PartialTensorACFracR_brief": {
-      "expected": "StartFrac 1 Over Sub a Base x Sub c EndFrac r"
+      "expected": "분수시작 아래 에이 Base 엑스 아래 씨 분의 1 분수끝 알"
     },
     "PartialTensorACFracR_sbrief": {
-      "expected": "Frac 1 Over Sub a Base x Sub c EndFrac r"
+      "expected": "분수 아래 에이 Base 엑스 아래 씨 분의 1 분수끝 알"
     },
     "PartialTensorACRFrac_default": {
-      "expected": "StartFraction 1 Over Subscript a Baseline x Subscript c Baseline r EndFraction"
+      "expected": "분수시작 아래첨자 에이 Baseline 엑스 아래첨자 씨 Baseline 알 분의 1 분수끝"
     },
     "PartialTensorACRFrac_brief": {
-      "expected": "StartFrac 1 Over Sub a Base x Sub c Base r EndFrac"
+      "expected": "분수시작 아래 에이 Base 엑스 아래 씨 Base 알 분의 1 분수끝"
     },
     "PartialTensorACRFrac_sbrief": {
-      "expected": "Frac 1 Over Sub a Base x Sub c Base r EndFrac"
+      "expected": "분수 아래 에이 Base 엑스 아래 씨 Base 알 분의 1 분수끝"
     },
     "PartialTensorACD_default": {
-      "expected": "Subscript a Baseline x Subscript c Superscript d"
+      "expected": "아래첨자 에이 Baseline 엑스 아래첨자 씨 위첨자 디"
     },
     "PartialTensorACD_brief": {
-      "expected": "Sub a Base x Sub c Sup d"
+      "expected": "아래 에이 Base 엑스 아래 씨 위 디"
     },
     "PartialTensorACD_sbrief": {
-      "expected": "Sub a Base x Sub c Sup d"
+      "expected": "아래 에이 Base 엑스 아래 씨 위 디"
     },
     "PartialTensorACDR_default": {
-      "expected": "Subscript a Baseline x Subscript c Superscript d Baseline r"
+      "expected": "아래첨자 에이 Baseline 엑스 아래첨자 씨 위첨자 디 Baseline 알"
     },
     "PartialTensorACDR_brief": {
-      "expected": "Sub a Base x Sub c Sup d Base r"
+      "expected": "아래 에이 Base 엑스 아래 씨 위 디 Base 알"
     },
     "PartialTensorACDR_sbrief": {
-      "expected": "Sub a Base x Sub c Sup d Base r"
+      "expected": "아래 에이 Base 엑스 아래 씨 위 디 Base 알"
     },
     "PartialTensorACDRootR_default": {
-      "expected": "StartRoot Subscript a Baseline x Subscript c Superscript d EndRoot r"
+      "expected": "루트시작 아래첨자 에이 Baseline 엑스 아래첨자 씨 위첨자 디 루트끝 알"
     },
     "PartialTensorACDRootR_brief": {
-      "expected": "StartRoot Sub a Base x Sub c Sup d EndRoot r"
+      "expected": "루트시작 아래 에이 Base 엑스 아래 씨 위 디 루트끝 알"
     },
     "PartialTensorACDRootR_sbrief": {
-      "expected": "Root Sub a Base x Sub c Sup d EndRoot r"
+      "expected": "루트 아래 에이 Base 엑스 아래 씨 위 디 루트끝 알"
     },
     "PartialTensorACDRRoot_default": {
-      "expected": "StartRoot Subscript a Baseline x Subscript c Superscript d Baseline r EndRoot"
+      "expected": "루트시작 아래첨자 에이 Baseline 엑스 아래첨자 씨 위첨자 디 Baseline 알 루트끝"
     },
     "PartialTensorACDRRoot_brief": {
-      "expected": "StartRoot Sub a Base x Sub c Sup d Base r EndRoot"
+      "expected": "루트시작 아래 에이 Base 엑스 아래 씨 위 디 Base 알 루트끝"
     },
     "PartialTensorACDRRoot_sbrief": {
-      "expected": "Root Sub a Base x Sub c Sup d Base r EndRoot"
+      "expected": "루트 아래 에이 Base 엑스 아래 씨 위 디 Base 알 루트끝"
     },
     "PartialTensorACDFracR_default": {
-      "expected": "StartFraction 1 Over Subscript a Baseline x Subscript c Superscript d EndFraction r"
+      "expected": "분수시작 아래첨자 에이 Baseline 엑스 아래첨자 씨 위첨자 디 분의 1 분수끝 알"
     },
     "PartialTensorACDFracR_brief": {
-      "expected": "StartFrac 1 Over Sub a Base x Sub c Sup d EndFrac r"
+      "expected": "분수시작 아래 에이 Base 엑스 아래 씨 위 디 분의 1 분수끝 알"
     },
     "PartialTensorACDFracR_sbrief": {
-      "expected": "Frac 1 Over Sub a Base x Sub c Sup d EndFrac r"
+      "expected": "분수 아래 에이 Base 엑스 아래 씨 위 디 분의 1 분수끝 알"
     },
     "PartialTensorACDRFrac_default": {
-      "expected": "StartFraction 1 Over Subscript a Baseline x Subscript c Superscript d Baseline r EndFraction"
+      "expected": "분수시작 아래첨자 에이 Baseline 엑스 아래첨자 씨 위첨자 디 Baseline 알 분의 1 분수끝"
     },
     "PartialTensorACDRFrac_brief": {
-      "expected": "StartFrac 1 Over Sub a Base x Sub c Sup d Base r EndFrac"
+      "expected": "분수시작 아래 에이 Base 엑스 아래 씨 위 디 Base 알 분의 1 분수끝"
     },
     "PartialTensorACDRFrac_sbrief": {
-      "expected": "Frac 1 Over Sub a Base x Sub c Sup d Base r EndFrac"
+      "expected": "분수 아래 에이 Base 엑스 아래 씨 위 디 Base 알 분의 1 분수끝"
     },
     "PartialTensorABR_default": {
-      "expected": "Subscript a Superscript b Baseline x Baseline r"
+      "expected": "아래첨자 에이 위첨자 비 Baseline 엑스 Baseline 알"
     },
     "PartialTensorABR_brief": {
-      "expected": "Sub a Sup b Base x Base r"
+      "expected": "아래 에이 위 비 Base 엑스 Base 알"
     },
     "PartialTensorABR_sbrief": {
-      "expected": "Sub a Sup b Base x Base r"
+      "expected": "아래 에이 위 비 Base 엑스 Base 알"
     },
     "PartialTensorABRootR_default": {
-      "expected": "StartRoot Subscript a Superscript b Baseline x EndRoot r"
+      "expected": "루트시작 아래첨자 에이 위첨자 비 Baseline 엑스 루트끝 알"
     },
     "PartialTensorABRootR_brief": {
-      "expected": "StartRoot Sub a Sup b Base x EndRoot r"
+      "expected": "루트시작 아래 에이 위 비 Base 엑스 루트끝 알"
     },
     "PartialTensorABRootR_sbrief": {
-      "expected": "Root Sub a Sup b Base x EndRoot r"
+      "expected": "루트 아래 에이 위 비 Base 엑스 루트끝 알"
     },
     "PartialTensorABRRoot_default": {
-      "expected": "StartRoot Subscript a Superscript b Baseline x Baseline r EndRoot"
+      "expected": "루트시작 아래첨자 에이 위첨자 비 Baseline 엑스 Baseline 알 루트끝"
     },
     "PartialTensorABRRoot_brief": {
-      "expected": "StartRoot Sub a Sup b Base x Base r EndRoot"
+      "expected": "루트시작 아래 에이 위 비 Base 엑스 Base 알 루트끝"
     },
     "PartialTensorABRRoot_sbrief": {
-      "expected": "Root Sub a Sup b Base x Base r EndRoot"
+      "expected": "루트 아래 에이 위 비 Base 엑스 Base 알 루트끝"
     },
     "PartialTensorABFracR_default": {
-      "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x EndFraction r"
+      "expected": "분수시작 아래첨자 에이 위첨자 비 Baseline 엑스 분의 1 분수끝 알"
     },
     "PartialTensorABFracR_brief": {
-      "expected": "StartFrac 1 Over Sub a Sup b Base x EndFrac r"
+      "expected": "분수시작 아래 에이 위 비 Base 엑스 분의 1 분수끝 알"
     },
     "PartialTensorABFracR_sbrief": {
-      "expected": "Frac 1 Over Sub a Sup b Base x EndFrac r"
+      "expected": "분수 아래 에이 위 비 Base 엑스 분의 1 분수끝 알"
     },
     "PartialTensorABRFrac_default": {
-      "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x Baseline r EndFraction"
+      "expected": "분수시작 아래첨자 에이 위첨자 비 Baseline 엑스 Baseline 알 분의 1 분수끝"
     },
     "PartialTensorABRFrac_brief": {
-      "expected": "StartFrac 1 Over Sub a Sup b Base x Base r EndFrac"
+      "expected": "분수시작 아래 에이 위 비 Base 엑스 Base 알 분의 1 분수끝"
     },
     "PartialTensorABRFrac_sbrief": {
-      "expected": "Frac 1 Over Sub a Sup b Base x Base r EndFrac"
+      "expected": "분수 아래 에이 위 비 Base 엑스 Base 알 분의 1 분수끝"
     },
     "PartialTensorABDR_default": {
-      "expected": "Subscript a Superscript b Baseline x Superscript d Baseline r"
+      "expected": "아래첨자 에이 위첨자 비 Baseline 엑스 위첨자 디 Baseline 알"
     },
     "PartialTensorABDR_brief": {
-      "expected": "Sub a Sup b Base x Sup d Base r"
+      "expected": "아래 에이 위 비 Base 엑스 위 디 Base 알"
     },
     "PartialTensorABDR_sbrief": {
-      "expected": "Sub a Sup b Base x Sup d Base r"
+      "expected": "아래 에이 위 비 Base 엑스 위 디 Base 알"
     },
     "PartialTensorABDRootR_default": {
-      "expected": "StartRoot Subscript a Superscript b Baseline x Superscript d EndRoot r"
+      "expected": "루트시작 아래첨자 에이 위첨자 비 Baseline 엑스 위첨자 디 루트끝 알"
     },
     "PartialTensorABDRootR_brief": {
-      "expected": "StartRoot Sub a Sup b Base x Sup d EndRoot r"
+      "expected": "루트시작 아래 에이 위 비 Base 엑스 위 디 루트끝 알"
     },
     "PartialTensorABDRootR_sbrief": {
-      "expected": "Root Sub a Sup b Base x Sup d EndRoot r"
+      "expected": "루트 아래 에이 위 비 Base 엑스 위 디 루트끝 알"
     },
     "PartialTensorABDRRoot_default": {
-      "expected": "StartRoot Subscript a Superscript b Baseline x Superscript d Baseline r EndRoot"
+      "expected": "루트시작 아래첨자 에이 위첨자 비 Baseline 엑스 위첨자 디 Baseline 알 루트끝"
     },
     "PartialTensorABDRRoot_brief": {
-      "expected": "StartRoot Sub a Sup b Base x Sup d Base r EndRoot"
+      "expected": "루트시작 아래 에이 위 비 Base 엑스 위 디 Base 알 루트끝"
     },
     "PartialTensorABDRRoot_sbrief": {
-      "expected": "Root Sub a Sup b Base x Sup d Base r EndRoot"
+      "expected": "루트 아래 에이 위 비 Base 엑스 위 디 Base 알 루트끝"
     },
     "PartialTensorABDFracR_default": {
-      "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x Superscript d EndFraction r"
+      "expected": "분수시작 아래첨자 에이 위첨자 비 Baseline 엑스 위첨자 디 분의 1 분수끝 알"
     },
     "PartialTensorABDFracR_brief": {
-      "expected": "StartFrac 1 Over Sub a Sup b Base x Sup d EndFrac r"
+      "expected": "분수시작 아래 에이 위 비 Base 엑스 위 디 분의 1 분수끝 알"
     },
     "PartialTensorABDFracR_sbrief": {
-      "expected": "Frac 1 Over Sub a Sup b Base x Sup d EndFrac r"
+      "expected": "분수 아래 에이 위 비 Base 엑스 위 디 분의 1 분수끝 알"
     },
     "PartialTensorABDRFrac_default": {
-      "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x Superscript d Baseline r EndFraction"
+      "expected": "분수시작 아래첨자 에이 위첨자 비 Baseline 엑스 위첨자 디 Baseline 알 분의 1 분수끝"
     },
     "PartialTensorABDRFrac_brief": {
-      "expected": "StartFrac 1 Over Sub a Sup b Base x Sup d Base r EndFrac"
+      "expected": "분수시작 아래 에이 위 비 Base 엑스 위 디 Base 알 분의 1 분수끝"
     },
     "PartialTensorABDRFrac_sbrief": {
-      "expected": "Frac 1 Over Sub a Sup b Base x Sup d Base r EndFrac"
+      "expected": "분수 아래 에이 위 비 Base 엑스 위 디 Base 알 분의 1 분수끝"
     },
 
     
     
     "_comment10_": "Simple tensors with multi indices.",
     "TensorMultiSimpleABC_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c Sub Superscript l"
+      "expected": "아래첨자 에이 위첨자 비 Baseline 엑스 아래첨자 씨 아래 위첨자 l"
     },
     "TensorMultiSimpleABC_brief": {
-      "expected": "Sub a Sup b Base x Sub c Sub Sup l"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 아래 위 l"
     },
     "TensorMultiSimpleABC_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c Sub Sup l"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 아래 위 l"
     },
     "TensorMultiSub_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c Sub Subscript l Superscript d"
+      "expected": "아래첨자 에이 위첨자 비 Baseline 엑스 아래첨자 씨 아래 아래첨자 l 위첨자 디"
     },
     "TensorMultiSub_brief": {
-      "expected": "Sub a Sup b Base x Sub c Sub Sub l Sup d"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 아래 아래 l 위 디"
     },
     "TensorMultiSub_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c Sub Sub l Sup d"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 아래 아래 l 위 디"
     },
     "TensorMultiSubSup_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c Sub Subscript l Sub Sub Superscript k Subscript e Superscript d"
+      "expected": "아래첨자 에이 위첨자 비 Baseline 엑스 아래첨자 씨 아래 아래첨자 l 아래 아래 위첨자 케이 아래첨자 이 위첨자 디"
     },
     "TensorMultiSubSup_brief": {
-      "expected": "Sub a Sup b Base x Sub c Sub Sub l Sub Sub Sup k Sub e Sup d"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 아래 아래 l 아래 아래 위 케이 아래 이 위 디"
     },
     "TensorMultiSubSup_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c Sub Sub l Sub Sub Sup k Sub e Sup d"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 아래 아래 l 아래 아래 위 케이 아래 이 위 디"
     },
     "TensorMultiSimple_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c Sub Superscript l Superscript d"
+      "expected": "아래첨자 에이 위첨자 비 Baseline 엑스 아래첨자 씨 아래 위첨자 l 위첨자 디"
     },
     "TensorMultiSimple_brief": {
-      "expected": "Sub a Sup b Base x Sub c Sub Sup l Sup d"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 아래 위 l 위 디"
     },
     "TensorMultiSimple_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c Sub Sup l Sup d"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 아래 위 l 위 디"
     },
 
     "_comment11_": "Complex tensors with multi indices.",
     "TensorMultiComplex_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c k Sub Superscript l Superscript d"
+      "expected": "아래첨자 에이 위첨자 비 Baseline 엑스 아래첨자 씨 케이 아래 위첨자 l 위첨자 디"
     },
     "TensorMultiComplex_brief": {
-      "expected": "Sub a Sup b Base x Sub c k Sub Sup l Sup d"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 케이 아래 위 l 위 디"
     },
     "TensorMultiComplex_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c k Sub Sup l Sup d"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 케이 아래 위 l 위 디"
     },
 
     "_comment12_": "Double tensors.",
     "TwoTensors_default": {
-      "expected": "Subscript a Superscript b Baseline x Subscript c Superscript d Baseline Subscript a Superscript b Baseline x Subscript c Superscript d"
+      "expected": "아래첨자 에이 위첨자 비 Baseline 엑스 아래첨자 씨 위첨자 디 Baseline 아래첨자 에이 위첨자 비 Baseline 엑스 아래첨자 씨 위첨자 디"
     },
     "TwoTensors_brief": {
-      "expected": "Sub a Sup b Base x Sub c Sup d Base Sub a Sup b Base x Sub c Sup d"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 위 디 Base 아래 에이 위 비 Base 엑스 아래 씨 위 디"
     },
     "TwoTensors_sbrief": {
-      "expected": "Sub a Sup b Base x Sub c Sup d Base Sub a Sup b Base x Sub c Sup d"
+      "expected": "아래 에이 위 비 Base 엑스 아래 씨 위 디 Base 아래 에이 위 비 Base 엑스 아래 씨 위 디"
     }
   }
 }

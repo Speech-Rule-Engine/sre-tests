@@ -1,139 +1,139 @@
 {
-  "name": "EnglishMathspeakCoverage",
-  "locale": "en",
+  "name": "KoreanMathspeakCoverage",
+  "locale": "ko",
   "factory": "speech",
   "base": "input/mathspeak/mathspeak_coverage.json",
-  "information": "English Mathspeak tests for achieving full coverage.",
+  "information": "Korean Mathspeak tests for achieving full coverage.",
   "domain": "mathspeak",
-  "active": "MathspeakIssuesEnglish",
+  "active": "MathspeakIssuesKorean",
   "exclude": [],
   "tests": {
     "BaselineNumberGreek_default": {
-      "expected": "alpha Baseline 2"
+      "expected": "알파 Baseline 2"
     },
     "BaselineNumberGreek_brief": {
-      "expected": "alpha Base 2"
+      "expected": "알파 Base 2"
     },
     "BaselineNumberGreek_sbrief": {
-      "expected": "alpha Base 2"
+      "expected": "알파 Base 2"
     },
     "BaselineNumberOther_default": {
-      "expected": "normal first transfinite cardinal Baseline 2"
+      "expected": "기본 first transfinite cardinal Baseline 2"
     },
     "BaselineNumberOther_brief": {
-      "expected": "normal first transfinite cardinal Base 2"
+      "expected": "기본 first transfinite cardinal Base 2"
     },
     "BaselineNumberOther_sbrief": {
-      "expected": "normal first transfinite cardinal Base 2"
+      "expected": "기본 first transfinite cardinal Base 2"
     },
     "BaselineNumberFontGreek_default": {
-      "expected": "alpha Baseline bold 2"
+      "expected": "알파 Baseline 진한 2"
     },
     "BaselineNumberFontGreek_brief": {
-      "expected": "alpha Base bold 2"
+      "expected": "알파 Base 진한 2"
     },
     "BaselineNumberFontGreek_sbrief": {
-      "expected": "alpha Base bold 2"
+      "expected": "알파 Base 진한 2"
     },
     "BaselineNumberFontOther_default": {
-      "expected": "normal first transfinite cardinal Baseline bold 2"
+      "expected": "기본 first transfinite cardinal Baseline 진한 2"
     },
     "BaselineNumberFontOther_brief": {
-      "expected": "normal first transfinite cardinal Base bold 2"
+      "expected": "기본 first transfinite cardinal Base 진한 2"
     },
     "BaselineNumberFontOther_sbrief": {
-      "expected": "normal first transfinite cardinal Base bold 2"
+      "expected": "기본 first transfinite cardinal Base 진한 2"
     },
     "OverbarGreek_default": {
-      "expected": "alpha overbar"
+      "expected": "알파 윗줄"
     },
     "OverbarOther_default": {
-      "expected": "normal first transfinite cardinal overbar"
+      "expected": "기본 first transfinite cardinal 윗줄"
     },
     "UnderbarGreek_default": {
-      "expected": "alpha underbar"
+      "expected": "알파 밑줄"
     },
     "UnderbarOther_default": {
-      "expected": "normal first transfinite cardinal underbar"
+      "expected": "기본 first transfinite cardinal 밑줄"
     },
     "OvertildeGreek_default": {
-      "expected": "alpha overTilde"
+      "expected": "알파 윗물결"
     },
     "OvertildeOther_default": {
-      "expected": "normal first transfinite cardinal overTilde"
+      "expected": "기본 first transfinite cardinal 윗물결"
     },
     "UndertildeGreek_default": {
-      "expected": "alpha underTilde"
+      "expected": "알파 밑물결"
     },
     "UndertildeOther_default": {
-      "expected": "normal first transfinite cardinal underTilde"
+      "expected": "기본 first transfinite cardinal 밑물결"
     },
     "SetEmpty_default": {
-      "expected": "empty set"
+      "expected": "공집합"
     },
     "SetEmpty_brief": {
-      "expected": "empty set"
+      "expected": "공집합"
     },
     "SetEmpty_sbrief": {
-      "expected": "empty set"
+      "expected": "공집합"
     },
     "SetSingleton_default": {
-      "expected": "StartSet a EndSet"
+      "expected": "집합시작 에이 집합끝"
     },
     "SetSingleton_brief": {
-      "expected": "StartSet a EndSet"
+      "expected": "집합시작 에이 집합끝"
     },
     "SetSingleton_sbrief": {
-      "expected": "Set a EndSet"
+      "expected": "집합 에이 집합끝"
     },
     "SetCollection_default": {
-      "expected": "StartSet a comma b EndSet"
+      "expected": "집합시작 에이 콤마 비 집합끝"
     },
     "SetCollection_brief": {
-      "expected": "StartSet a comma b EndSet"
+      "expected": "집합시작 에이 콤마 비 집합끝"
     },
     "SetCollection_sbrief": {
-      "expected": "Set a comma b EndSet"
+      "expected": "집합 에이 콤마 비 집합끝"
     },
     "SetExtended_default": {
-      "expected": "StartSet a comma b EndSet"
+      "expected": "집합시작 에이 콤마 비 집합끝"
     },
     "SetExtended_brief": {
-      "expected": "StartSet a comma b EndSet"
+      "expected": "집합시작 에이 콤마 비 집합끝"
     },
     "SetExtended_sbrief": {
-      "expected": "Set a comma b EndSet"
+      "expected": "집합 에이 콤마 비 집합끝"
     },
     "NumberSet": {
-      "expected": "double struck upper C"
+      "expected": "테두리체 큰 씨"
     },
     "LimitLower0_default": {
-      "expected": "ModifyingBelow limit With bar Underscript a equals 5 Endscripts Underscript b equals 3 Endscripts"
+      "expected": "리미트 아래에있는 바 하단첨자 에이 equals 5 첨자끝 하단첨자 비 equals 3 첨자끝"
     },
     "LimitLower1_default": {
-      "expected": "limit Underscript n Overscript 2 Endscripts Overscript x Endscripts"
+      "expected": "리미트 하단첨자 엔 상단첨자 2 첨자끝 상단첨자 엑스 첨자끝"
     },
     "_comment10_": "Coverage for under/over scripts",
     "BlankLineEmpty0_default": {
-      "expected": "StartLayout 1st Row  a 2nd Row  Blank EndLayout"
+      "expected": "배열시작 첫번째 행  에이 두번째 행  빈 칸 배열끝"
     },
     "SubBaseRelseq_default": {
-      "expected": "c 1 h Subscript 4 minus 2 s Baseline less than or equals StartFraction 1 Over 2 upper T EndFraction less than or equals c 2 h Subscript 4 minus 2 s"
+      "expected": "씨 1 에이치 아래첨자 4 빼기 2 에스 Baseline less than or equals 분수시작 1 Over 2 큰 티 분수끝 less than or equals 씨 2 에이치 아래첨자 4 빼기 2 에스"
     },
     "SubBaseRelseq_brief": {
-      "expected": "c 1 h Sub 4 minus 2 s Base less than or equals StartFrac 1 Over 2 upper T EndFrac less than or equals c 2 h Sub 4 minus 2 s"
+      "expected": "씨 1 에이치 아래 4 빼기 2 에스 Base less than or equals 분수시작 2 큰 티 분의 1 분수끝 less than or equals 씨 2 에이치 아래 4 빼기 2 에스"
     },
     "SubBaseRelseq_sbrief": {
-      "expected": "c 1 h Sub 4 minus 2 s Base less than or equals Frac 1 Over 2 upper T EndFrac less than or equals c 2 h Sub 4 minus 2 s"
+      "expected": "씨 1 에이치 아래 4 빼기 2 에스 Base less than or equals 분수 2 큰 티 분의 1 분수끝 less than or equals 씨 2 에이치 아래 4 빼기 2 에스"
     },
     "SubBaseMultirel_default": {
-      "expected": "c 1 h Subscript 4 minus 2 s Baseline less than or equals StartFraction 1 Over 2 upper T EndFraction equals c 2 h Subscript 4 minus 2 s"
+      "expected": "씨 1 에이치 아래첨자 4 빼기 2 에스 Baseline less than or equals 분수시작 2 큰 티 분의 1 분수끝 equals 씨 2 에이치 아래첨자 4 빼기 2 에스"
     },
     "SubBaseMultirel_brief": {
-      "expected": "c 1 h Sub 4 minus 2 s Base less than or equals StartFrac 1 Over 2 upper T EndFrac equals c 2 h Sub 4 minus 2 s"
+      "expected": "씨 1 에이치 아래 4 빼기 2 에스 Base less than or equals 분수시작 2 큰 티 분의 1 분수끝 equals 씨 2 에이치 아래 4 빼기 2 에스"
     },
     "SubBaseMultirel_sbrief": {
-      "expected": "c 1 h Sub 4 minus 2 s Base less than or equals Frac 1 Over 2 upper T EndFrac equals c 2 h Sub 4 minus 2 s"
+      "expected": "씨 1 에이치 아래 4 빼기 2 에스 Base less than or equals 분수 2 큰 티 분의 1 분수끝 equals 씨 2 에이치 아래 4 빼기 2 에스"
     }
   }
 }

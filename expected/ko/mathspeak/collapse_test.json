@@ -1,420 +1,420 @@
 {
-  "name": "EnglishMathspeakCollapse",
-  "locale": "en",
+  "name": "KoreanMathspeakCollapse",
+  "locale": "ko",
   "factory": "collapse",
   "base": "input/common/collapse_test.json",
-  "information": "English Mathspeak Collapse tests.",
+  "information": "Korean Mathspeak Collapse tests.",
   "domain": "mathspeak",
-  "active": "CollapseEnglish",
+  "active": "CollapseKorean",
   "exclude": [],
   "tests": {
     "CollapsedAddition_default": {
-      "expected": "collapsed sum with 2 summands"
+      "expected": "여닫기 항이 2 개인 덧셈"
     },
     "CollapsedAddition_brief": {
-      "expected": "collapsed sum"
+      "expected": "여닫기 덧셈"
     },
     "CollapsedAddition_sbrief": {
-      "expected": "collapsed sum"
+      "expected": "여닫기 덧셈"
     },
     "CollapsedBigop_default": {
-      "expected": "collapsed sigma summation"
+      "expected": "여닫기 시그마 합"
     },
     "CollapsedBigop_brief": {
-      "expected": "collapsed sigma summation"
+      "expected": "여닫기 시그마 합"
     },
     "CollapsedBigop_sbrief": {
-      "expected": "collapsed sigma summation"
+      "expected": "여닫기 시그마 합"
     },
     "CollapsedBinomial_default": {
-      "expected": "collapsed binomial"
+      "expected": "여닫기 이항계수"
     },
     "CollapsedBinomial_brief": {
-      "expected": "collapsed binomial"
+      "expected": "여닫기 이항계수"
     },
     "CollapsedBinomial_sbrief": {
-      "expected": "collapsed binomial"
+      "expected": "여닫기 이항계수"
     },
     "CollapsedCases_default": {
-      "expected": "collapsed case statement with 2 cases"
+      "expected": "여닫기 케이스가 2 개인 조건문"
     },
     "CollapsedCases_brief": {
-      "expected": "collapsed case statement"
+      "expected": "여닫기 조건문"
     },
     "CollapsedCases_sbrief": {
-      "expected": "collapsed case statement"
+      "expected": "여닫기 조건문"
     },
     "CollapsedContinuedFraction_default": {
-      "expected": "collapsed continued fraction"
+      "expected": "여닫기 연속되는 분수"
     },
     "CollapsedContinuedFraction_brief": {
-      "expected": "collapsed continued frac"
+      "expected": "여닫기 연분수"
     },
     "CollapsedContinuedFraction_sbrief": {
-      "expected": "collapsed continued frac"
+      "expected": "여닫기 연분수"
     },
     "CollapsedDeterminant_default": {
-      "expected": "collapsed 2 dimensional determinant"
+      "expected": "여닫기 2 차원 행렬식"
     },
     "CollapsedDeterminant_brief": {
-      "expected": "collapsed determinant"
+      "expected": "여닫기 행렬식"
     },
     "CollapsedDeterminant_sbrief": {
-      "expected": "collapsed determinant"
+      "expected": "여닫기 행렬식"
     },
     "CollapsedFraction_default": {
-      "expected": "collapsed fraction"
+      "expected": "여닫기 분수"
     },
     "CollapsedFraction_brief": {
-      "expected": "collapsed frac"
+      "expected": "여닫기 분수"
     },
     "CollapsedFraction_sbrief": {
-      "expected": "collapsed frac"
+      "expected": "여닫기 분수"
     },
     "CollapsedFunction_default": {
       "_comment0_": " var input = '<mi>sin</mi><mi>x</mi>';",
-      "expected": "collapsed functional expression"
+      "expected": "여닫기 함수식"
     },
     "CollapsedFunction_brief": {
       "_comment0_": " var input = '<mi>sin</mi><mi>x</mi>';",
-      "expected": "collapsed function"
+      "expected": "여닫기 함수"
     },
     "CollapsedFunction_sbrief": {
       "_comment0_": " var input = '<mi>sin</mi><mi>x</mi>';",
-      "expected": "collapsed function"
+      "expected": "여닫기 함수"
     },
     "CollapsedIdentifier_default": {
-      "expected": "collapsed long identifier"
+      "expected": "여닫기 긴 식별자"
     },
     "CollapsedIdentifier_brief": {
-      "expected": "collapsed long identifier"
+      "expected": "여닫기 긴 식별자"
     },
     "CollapsedIdentifier_sbrief": {
-      "expected": "collapsed long identifier"
+      "expected": "여닫기 긴 식별자"
     },
     "CollapsedInfixop_default": {
-      "expected": "collapsed division with 2 elements"
+      "expected": "여닫기 인자가 2 개인 나눗셈"
     },
     "CollapsedInfixop_brief": {
-      "expected": "collapsed division"
+      "expected": "여닫기 나눗셈"
     },
     "CollapsedInfixop_sbrief": {
-      "expected": "collapsed division"
+      "expected": "여닫기 나눗셈"
     },
     "CollapsedIntegral_default": {
-      "expected": "collapsed integral"
+      "expected": "여닫기 인테그럴"
     },
     "CollapsedIntegral_brief": {
-      "expected": "collapsed integral"
+      "expected": "여닫기 인테그럴"
     },
     "CollapsedIntegral_sbrief": {
-      "expected": "collapsed integral"
+      "expected": "여닫기 인테그럴"
     },
     "CollapsedLim_default": {
-      "expected": "collapsed limit function"
+      "expected": "여닫기 리미트"
     },
     "CollapsedLim_brief": {
-      "expected": "collapsed lim"
+      "expected": "여닫기 리미트"
     },
     "CollapsedLim_sbrief": {
-      "expected": "collapsed lim"
+      "expected": "여닫기 리미트"
     },
     "CollapsedMatrix_default": {
-      "expected": "collapsed 3 by 2 matrix"
+      "expected": "여닫기 3 행 2 열의 행렬"
     },
     "CollapsedMatrix_brief": {
-      "expected": "collapsed matrix"
+      "expected": "여닫기 행렬"
     },
     "CollapsedMatrix_sbrief": {
-      "expected": "collapsed matrix"
+      "expected": "여닫기 행렬"
     },
     "CollapsedMixedNumber_default": {
-      "expected": "collapsed long mixed number"
+      "expected": "여닫기 긴 대분수"
     },
     "CollapsedMixedNumber_brief": {
-      "expected": "collapsed long mixed number"
+      "expected": "여닫기 긴 대분수"
     },
     "CollapsedMixedNumber_sbrief": {
-      "expected": "collapsed long mixed number"
+      "expected": "여닫기 긴 대분수"
     },
     "CollapsedMultiplication_default": {
-      "expected": "collapsed product with 2 factors"
+      "expected": "여닫기 인자가 2 개인 곱셈"
     },
     "CollapsedMultiplication_brief": {
-      "expected": "collapsed product"
+      "expected": "여닫기 곱셈"
     },
     "CollapsedMultiplication_sbrief": {
-      "expected": "collapsed product"
+      "expected": "여닫기 곱셈"
     },
     "CollapsedMultirel_default": {
-      "expected": "collapsed relation sequence with 3 elements"
+      "expected": "여닫기 항이 3 개인 연속 관계식"
     },
     "CollapsedMultirel_brief": {
-      "expected": "collapsed relation sequence"
+      "expected": "여닫기 연속 관계식"
     },
     "CollapsedMultirel_sbrief": {
-      "expected": "collapsed relation sequence"
+      "expected": "여닫기 연속 관계식"
     },
     "CollapsedNumber_default": {
-      "expected": "collapsed long number"
+      "expected": "여닫기 긴 수"
     },
     "CollapsedNumber_brief": {
-      "expected": "collapsed long number"
+      "expected": "여닫기 긴 수"
     },
     "CollapsedNumber_sbrief": {
-      "expected": "collapsed long number"
+      "expected": "여닫기 긴 수"
     },
     "CollapsedPunctuated_default": {
-      "expected": "collapsed comma separated list of length 3"
+      "expected": "여닫기 길이가 3 인 콤마 로 구분된 리스트"
     },
     "CollapsedPunctuated_brief": {
-      "expected": "collapsed comma separated list"
+      "expected": "여닫기 콤마 로 구분된 리스트"
     },
     "CollapsedPunctuated_sbrief": {
-      "expected": "collapsed comma separated list"
+      "expected": "여닫기 콤마 로 구분된 리스트"
     },
     "CollapsedRelation_default": {
-      "expected": "collapsed equality"
+      "expected": "여닫기 등식"
     },
     "CollapsedRelation_brief": {
-      "expected": "collapsed equality"
+      "expected": "여닫기 등식"
     },
     "CollapsedRelation_sbrief": {
-      "expected": "collapsed equality"
+      "expected": "여닫기 등식"
     },
     "CollapsedRelationSeq_default": {
-      "expected": "collapsed equality sequence with 3 elements"
+      "expected": "여닫기 항이 3 개인 연속 등식"
     },
     "CollapsedRelationSeq_brief": {
-      "expected": "collapsed equality sequence"
+      "expected": "여닫기 연속 등식"
     },
     "CollapsedRelationSeq_sbrief": {
-      "expected": "collapsed equality sequence"
+      "expected": "여닫기 연속 등식"
     },
     "CollapsedRoot_default": {
-      "expected": "collapsed root of index 3"
+      "expected": "여닫기 세제곱근"
     },
     "CollapsedRoot_brief": {
-      "expected": "collapsed root"
+      "expected": "여닫기 루트"
     },
     "CollapsedRoot_sbrief": {
-      "expected": "collapsed root"
+      "expected": "여닫기 루트"
     },
     "CollapsedRootNested_default": {
-      "expected": "collapsed nested root of index 3"
+      "expected": "여닫기 세제곱근의 중첩 루트"
     },
     "CollapsedRootNested_brief": {
-      "expected": "collapsed nested root"
+      "expected": "여닫기 중첩 루트"
     },
     "CollapsedRootNested_sbrief": {
-      "expected": "collapsed nested root"
+      "expected": "여닫기 중첩 루트"
     },
     "CollapsedRowvector_default": {
-      "expected": "collapsed 2 dimensional row vector"
+      "expected": "여닫기 2 행의 벡터"
     },
     "CollapsedRowvector_brief": {
-      "expected": "collapsed row vector"
+      "expected": "여닫기 벡터"
     },
     "CollapsedRowvector_sbrief": {
-      "expected": "collapsed row vector"
+      "expected": "여닫기 벡터"
     },
     "CollapsedSqrt_default": {
-      "expected": "collapsed square root"
+      "expected": "여닫기 제곱근"
     },
     "CollapsedSqrt_brief": {
-      "expected": "collapsed square root"
+      "expected": "여닫기 제곱근"
     },
     "CollapsedSqrt_sbrief": {
-      "expected": "collapsed square root"
+      "expected": "여닫기 제곱근"
     },
     "CollapsedSqrtNested_default": {
-      "expected": "collapsed nested square root"
+      "expected": "여닫기 중첩 제곱근"
     },
     "CollapsedSqrtNested_brief": {
-      "expected": "collapsed nested square root"
+      "expected": "여닫기 중첩 제곱근"
     },
     "CollapsedSqrtNested_sbrief": {
-      "expected": "collapsed nested square root"
+      "expected": "여닫기 중첩 제곱근"
     },
     "CollapsedSquarematrix_default": {
-      "expected": "collapsed 2 dimensional square matrix"
+      "expected": "여닫기 2 차원 정방 행렬"
     },
     "CollapsedSquarematrix_brief": {
-      "expected": "collapsed square matrix"
+      "expected": "여닫기 정방 행렬"
     },
     "CollapsedSquarematrix_sbrief": {
-      "expected": "collapsed square matrix"
+      "expected": "여닫기 정방 행렬"
     },
     "CollapsedSubscript_default": {
-      "expected": "collapsed subscript"
+      "expected": "여닫기 아래첨자"
     },
     "CollapsedSubscript_brief": {
-      "expected": "collapsed subscript"
+      "expected": "여닫기 아래첨자"
     },
     "CollapsedSubscript_sbrief": {
-      "expected": "collapsed subscript"
+      "expected": "여닫기 아래첨자"
     },
     "CollapsedSubsup_default": {
-      "expected": "collapsed power with subscript"
+      "expected": "여닫기 아래첨자가 있는 거듭제곱"
     },
     "CollapsedSubsup_brief": {
-      "expected": "collapsed power with subscript"
+      "expected": "여닫기 아래첨자가 있는 거듭제곱"
     },
     "CollapsedSubsup_sbrief": {
-      "expected": "collapsed power with subscript"
+      "expected": "여닫기 아래첨자가 있는 거듭제곱"
     },
     "CollapsedSuperscript_default": {
-      "expected": "collapsed power"
+      "expected": "여닫기 거듭제곱"
     },
     "CollapsedSuperscript_brief": {
-      "expected": "collapsed power"
+      "expected": "여닫기 거듭제곱"
     },
     "CollapsedSuperscript_sbrief": {
-      "expected": "collapsed power"
+      "expected": "여닫기 거듭제곱"
     },
     "CollapsedTable_default": {
-      "expected": "collapsed table with 2 rows and 2 columns"
+      "expected": "여닫기 2 행 2 열의 표"
     },
     "CollapsedTable_brief": {
-      "expected": "collapsed table with 2 rows and 2 columns"
+      "expected": "여닫기 2 행 2 열의 표"
     },
     "CollapsedTable_sbrief": {
-      "expected": "collapsed table with 2 rows and 2 columns"
+      "expected": "여닫기 2 행 2 열의 표"
     },
     "CollapsedText_default": {
-      "expected": "collapsed text"
+      "expected": "여닫기 텍스트"
     },
     "CollapsedText_brief": {
-      "expected": "collapsed text"
+      "expected": "여닫기 텍스트"
     },
     "CollapsedText_sbrief": {
-      "expected": "collapsed text"
+      "expected": "여닫기 텍스트"
     },
     "CollapsedVarAddition_default": {
-      "expected": "collapsed sum with variable number of summands"
+      "expected": "여닫기 항이 가변 개인 덧셈"
     },
     "CollapsedVarAddition_brief": {
-      "expected": "collapsed sum"
+      "expected": "여닫기 덧셈"
     },
     "CollapsedVarAddition_sbrief": {
-      "expected": "collapsed sum"
+      "expected": "여닫기 덧셈"
     },
     "CollapsedVarCases_default": {
-      "expected": "collapsed case statement with variable number of cases"
+      "expected": "여닫기 케이스가 가변 개인 조건문"
     },
     "CollapsedVarCases_brief": {
-      "expected": "collapsed case statement"
+      "expected": "여닫기 조건문"
     },
     "CollapsedVarCases_sbrief": {
-      "expected": "collapsed case statement"
+      "expected": "여닫기 조건문"
     },
     "CollapsedVarDeterminant_default": {
-      "expected": "collapsed n dimensional determinant"
+      "expected": "여닫기 엔 차원 행렬식"
     },
     "CollapsedVarDeterminant_brief": {
-      "expected": "collapsed determinant"
+      "expected": "여닫기 행렬식"
     },
     "CollapsedVarDeterminant_sbrief": {
-      "expected": "collapsed determinant"
+      "expected": "여닫기 행렬식"
     },
     "CollapsedVarMatrix_default": {
-      "expected": "collapsed n by m dimensional matrix"
+      "expected": "여닫기 엔 행 엠 열의 행렬"
     },
     "CollapsedVarMatrix_brief": {
-      "expected": "collapsed square matrix"
+      "expected": "여닫기 정방 행렬"
     },
     "CollapsedVarMatrix_sbrief": {
-      "expected": "collapsed square matrix"
+      "expected": "여닫기 정방 행렬"
     },
     "CollapsedVarMultiplication_default": {
-      "expected": "collapsed product with variable number of factors"
+      "expected": "여닫기 인자가 가변 개인 곱셈"
     },
     "CollapsedVarMultiplication_brief": {
-      "expected": "collapsed product"
+      "expected": "여닫기 곱셈"
     },
     "CollapsedVarMultiplication_sbrief": {
-      "expected": "collapsed product"
+      "expected": "여닫기 곱셈"
     },
     "CollapsedVarMultirel_default": {
-      "expected": "collapsed relation sequence with variable number of elements"
+      "expected": "여닫기 항이 가변 개인 연속 관계식"
     },
     "CollapsedVarMultirel_brief": {
-      "expected": "collapsed relation sequence"
+      "expected": "여닫기 연속 관계식"
     },
     "CollapsedVarMultirel_sbrief": {
-      "expected": "collapsed relation sequence"
+      "expected": "여닫기 연속 관계식"
     },
     "CollapsedVarPunctuated_default": {
-      "expected": "collapsed comma separated list of variable length"
+      "expected": "여닫기 길이가 가변 인 콤마 로 구분된 리스트"
     },
     "CollapsedVarPunctuated_brief": {
-      "expected": "collapsed comma separated list"
+      "expected": "여닫기 콤마 로 구분된 리스트"
     },
     "CollapsedVarPunctuated_sbrief": {
-      "expected": "collapsed comma separated list"
+      "expected": "여닫기 콤마 로 구분된 리스트"
     },
     "CollapsedVarRelation_default": {
-      "expected": "collapsed equality sequence with variable number of elements"
+      "expected": "여닫기 항이 가변 개인 연속 등식"
     },
     "CollapsedVarRelation_brief": {
-      "expected": "collapsed equality sequence"
+      "expected": "여닫기 연속 등식"
     },
     "CollapsedVarRelation_sbrief": {
-      "expected": "collapsed equality sequence"
+      "expected": "여닫기 연속 등식"
     },
     "CollapsedVarVector_default": {
-      "expected": "collapsed n dimensional vector"
+      "expected": "여닫기 엔 차원 벡터"
     },
     "CollapsedVarVector_brief": {
-      "expected": "collapsed vector"
+      "expected": "여닫기 벡터"
     },
     "CollapsedVarVector_sbrief": {
-      "expected": "collapsed vector"
+      "expected": "여닫기 벡터"
     },
     "CollapsedVector_default": {
-      "expected": "collapsed 3 dimensional vector"
+      "expected": "여닫기 3 차원 벡터"
     },
     "CollapsedVector_brief": {
-      "expected": "collapsed vector"
+      "expected": "여닫기 벡터"
     },
     "CollapsedVector_sbrief": {
-      "expected": "collapsed vector"
+      "expected": "여닫기 벡터"
     },
     "CollapsedRootInside_default": {
-      "expected": "collapsed root of index 3 endindex a"
+      "expected": "여닫기 세제곱근 에이"
     },
     "CollapsedRootNestedInside_default": {
-      "expected": "collapsed nested root of index 3 endindex a"
+      "expected": "여닫기 세제곱근의 중첩 루트 에이"
     },
     "CollapsedVarSubtraction_default": {
-      "expected": "collapsed subtraction with variable number of elements"
+      "expected": "여닫기 항이 가변 개인 뺄셈"
     },
     "CollapsedVarSubtraction_brief": {
-      "expected": "collapsed subtraction"
+      "expected": "여닫기 뺄셈"
     },
     "CollapsedVarSubtraction_sbrief": {
-      "expected": "collapsed subtraction"
+      "expected": "여닫기 뺄셈"
     },
     "CollapsedCountImplicit_default": {
-      "expected": "collapsed product with 3 factors"
+      "expected": "여닫기 인자가 3 개인 곱셈"
     },
     "CollapsedCountImplicit_brief": {
-      "expected": "collapsed product"
+      "expected": "여닫기 곱셈"
     },
     "CollapsedCountImplicit_sbrief": {
-      "expected": "collapsed product"
+      "expected": "여닫기 곱셈"
     },
     "CollapsedVarImplicit_default": {
-      "expected": "collapsed product with variable number of factors"
+      "expected": "여닫기 인자가 가변 개인 곱셈"
     },
     "CollapsedVarArrowRelation_default": {
-      "expected": "collapsed arrow sequence with variable number of elements"
+      "expected": "여닫기 항이 가변 개인 연속 화살표"
     },
     "CollapsedArrowRelation_default": {
-      "expected": "collapsed arrow"
+      "expected": "여닫기 화살표"
     },
     "CollapsedVarRowvector_default": {
-      "expected": "collapsed n dimensional row vector"
+      "expected": "여닫기 엔 행의 벡터"
     }
   }
 }

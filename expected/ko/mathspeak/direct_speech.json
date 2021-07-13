@@ -1,30 +1,30 @@
 {
-  "name": "EnglishMathspeakDirectSpeech",
+  "name": "KoreanMathspeakDirectSpeech",
   "domain": "mathspeak",
-  "locale": "en",
+  "locale": "ko",
   "factory": "speech",
   "base": "input/common/direct_speech.json",
-  "information": "English Mathspeak Direct speech attributes.",
-  "active": "DirectSpeechEnglish",
+  "information": "Korean Mathspeak Direct speech attributes.",
+  "active": "DirectSpeechKorean",
   "exclude": [],
   "tests": {
     "AriaLabels_0": {
-      "expected": "ModifyingAbove upper A upper C With line"
+      "expected": "큰 에이 큰 씨 위에있는 선"
     },
     "AriaLabels_1": {
-      "expected": "derivative of x is equal to sigma left parenthesis y minus x right parenthesis"
+      "expected": "엑스 의 도함수 is equal to 시그마 왼쪽 괄호 와이 빼기 엑스 오른쪽 괄호"
     },
     "AltText_0": {
-      "expected": "A C under line"
+      "expected": "에이 씨 아래 상단 선"
     },
     "AltText_1": {
-      "expected": "ModifyingAbove upper A upper C With line"
+      "expected": "큰 에이 큰 씨 위에있는 선"
     },
     "ExactSpeech_0": {
-      "expected": "A C under line"
+      "expected": "A C 상단 선"
     },
     "ExactSpeech_1": {
-      "expected": "ModifyingAbove upper A upper C With line"
+      "expected": "큰 에이 큰 씨 위에있는 선"
     },
     "MglyphTokens_0": {
       "_comment0_": " mi",
@@ -62,10 +62,10 @@
       "expected": "your glyph"
     },
     "MglyphGeneral_0": {
-      "expected": "23braid plus 132braid equals 13braid"
+      "expected": "23braid 더하기 132braid equals 13braid"
     },
     "MglyphGeneral_1": {
-      "expected": "upper N upper M Subscript 1 subset of mfin"
+      "expected": "큰 엔 큰 엠 아래첨자 1 부분집합 끝"
     }
   }
 }

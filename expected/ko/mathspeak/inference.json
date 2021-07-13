@@ -1,48 +1,48 @@
 {
-  "name": "EnglishMathspeakInference",
+  "name": "KoreanMathspeakInference",
   "domain": "mathspeak",
-  "locale": "en",
+  "locale": "ko",
   "factory": "speech",
   "base": "input/common/inference.json",
-  "information": "English Mathspeak Inference rules.",
-  "active": "InferenceEnglish",
+  "information": "Korean Mathspeak Inference rules.",
+  "active": "InferenceKorean",
   "exclude": [],
   "tests": {
     "NoLabel_0": {
-      "expected": "inference rule with conclusion upper X and 1 premise"
+      "expected": "추론 규칙 결론은 큰 엑스 이고 전제는 1 개"
     },
     "NoLabel_1": {
-      "expected": "inference rule with conclusion upper X and 1 premise"
+      "expected": "추론 규칙 결론은 큰 엑스 이고 전제는 1 개"
     },
     "Premise_0": {
-      "expected": "inference rule with conclusion upper X and 1 premise"
+      "expected": "추론 규칙 결론은 큰 엑스 이고 전제는 1 개"
     },
     "Premise_1": {
-      "expected": "inference rule label upper N with conclusion upper X and 1 premise"
+      "expected": "추론 규칙 꼬리표 큰 엔 결론은 큰 엑스 이고 전제는 1 개"
     },
     "Axiom": {
-      "expected": "axiom upper A"
+      "expected": "공리 큰 에이"
     },
     "EmptyAxiom": {
-      "expected": "axiom"
+      "expected": "공리"
     },
     "RightLabel_0": {
-      "expected": "inference rule label upper N with conclusion upper X and 1 premise"
+      "expected": "추론 규칙 꼬리표 큰 엔 결론은 큰 엑스 이고 전제는 1 개"
     },
     "RightLabel_1": {
-      "expected": "inference rule label upper N with conclusion upper X and 2 premises"
+      "expected": "추론 규칙 꼬리표 큰 엔 결론은 큰 엑스 이고 전제는 2 개"
     },
     "RightLabel_2": {
-      "expected": "inference rule label upper N with conclusion upper X and 3 premises"
+      "expected": "추론 규칙 꼬리표 큰 엔 결론은 큰 엑스 이고 전제는 3 개"
     },
     "LeftLabel_0": {
-      "expected": "inference rule label upper N with conclusion upper X and 1 premise"
+      "expected": "추론 규칙 꼬리표 큰 엔 결론은 큰 엑스 이고 전제는 1 개"
     },
     "LeftLabel_1": {
-      "expected": "inference rule label upper N with conclusion upper X and 2 premises"
+      "expected": "추론 규칙 꼬리표 큰 엔 결론은 큰 엑스 이고 전제는 2 개"
     },
     "LeftLabel_2": {
-      "expected": "inference rule label upper N with conclusion upper X and 3 premises"
+      "expected": "추론 규칙 꼬리표 큰 엔 결론은 큰 엑스 이고 전제는 3 개"
     }
   }
 }
