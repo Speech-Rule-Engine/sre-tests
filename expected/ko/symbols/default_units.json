@@ -1,510 +1,510 @@
 {
-  "name": "EnglishDefaultUnit",
-  "locale": "en",
+  "name": "KoreanDefaultUnit",
+  "locale": "ko",
   "domain": "default",
   "style": "default",
-  "active": "DefaultSymbolsEnglish",
+  "active": "DefaultSymbolsKorean",
   "grammar": {
     "annotation": "unit"
   },
   "factory": "symbol",
   "base": "input/common/units.json",
-  "information": "English Default Unit tests.",
+  "information": "Korean Default Unit tests.",
   "tests": {
     "sq": {
-      "expected": "square"
+      "expected": "제곱미터"
     },
     "sq.": {
-      "expected": "square"
+      "expected": "제곱미터"
     },
     "sq in": {
-      "expected": "square inch"
+      "expected": "제곱인치"
     },
     "sq. in.": {
-      "expected": "square inch"
+      "expected": "제곱인치"
     },
     "sq inch": {
-      "expected": "square inch"
+      "expected": "제곱인치"
     },
     "sq. inch": {
-      "expected": "square inch"
+      "expected": "제곱인치"
     },
     "sq rd": {
-      "expected": "square rod"
+      "expected": "제곱로드"
     },
     "sq. rd.": {
-      "expected": "square rod"
+      "expected": "제곱로드"
     },
     "sq ft": {
-      "expected": "square foot"
+      "expected": "제곱피트"
     },
     "sq. ft.": {
-      "expected": "square foot"
+      "expected": "제곱피트"
     },
     "sq yd": {
-      "expected": "square yard"
+      "expected": "제곱야드"
     },
     "sq. yd.": {
-      "expected": "square yard"
+      "expected": "제곱야드"
     },
     "sq mi": {
-      "expected": "square mile"
+      "expected": "제곱마일"
     },
     "sq. mi.": {
-      "expected": "square mile"
+      "expected": "제곱마일"
     },
     "ac": {
-      "expected": "acre"
+      "expected": "에이커"
     },
     "ac.": {
-      "expected": "acre"
+      "expected": "에이커"
     },
     "acr": {
-      "expected": "acre"
+      "expected": "에이커"
     },
     "acr.": {
-      "expected": "acre"
+      "expected": "에이커"
     },
     "ha": {
-      "expected": "hectare"
+      "expected": "헥타르"
     },
     "$": {
-      "expected": "dollar"
+      "expected": "달러"
     },
     "💲": {
-      "expected": "dollar"
+      "expected": "달러"
     },
     "＄": {
-      "expected": "dollar"
+      "expected": "달러"
     },
     "﹩": {
-      "expected": "dollar"
+      "expected": "달러"
     },
     "USD": {
-      "expected": "dollar"
+      "expected": "달러"
     },
     "£": {
-      "expected": "pound"
+      "expected": "파운드"
     },
     "￡": {
-      "expected": "pound"
+      "expected": "파운드"
     },
     "GBP": {
-      "expected": "pound"
+      "expected": "파운드"
     },
     "¥": {
-      "expected": "yen"
+      "expected": "엔"
     },
     "￥": {
-      "expected": "yen"
+      "expected": "엔"
     },
     "JPY": {
-      "expected": "yen"
+      "expected": "엔"
     },
     "€": {
-      "expected": "euro"
+      "expected": "유로"
     },
     "EUR": {
-      "expected": "euro"
+      "expected": "유로"
     },
     "₡": {
-      "expected": "colon"
+      "expected": "콜론"
     },
     "CRC": {
-      "expected": "colon"
+      "expected": "콜론"
     },
     "₢": {
-      "expected": "cruzeiro"
+      "expected": "크루제이루"
     },
     "₣": {
-      "expected": "franc"
+      "expected": "프랑"
     },
     "₤": {
-      "expected": "lira"
+      "expected": "리라"
     },
     "₥": {
-      "expected": "mill"
+      "expected": "밀"
     },
     "₦": {
-      "expected": "naira"
+      "expected": "나이라"
     },
     "NGN": {
-      "expected": "naira"
+      "expected": "나이라"
     },
     "₧": {
-      "expected": "peseta"
+      "expected": "페세타"
     },
     "₨": {
-      "expected": "rupee"
+      "expected": "루피"
     },
     "₹": {
-      "expected": "rupee"
+      "expected": "루피"
     },
     "INR": {
-      "expected": "rupee"
+      "expected": "루피"
     },
     "NPR": {
-      "expected": "rupee"
+      "expected": "루피"
     },
     "PKR": {
-      "expected": "rupee"
+      "expected": "루피"
     },
     "LKR": {
-      "expected": "rupee"
+      "expected": "루피"
     },
     "₩": {
-      "expected": "won"
+      "expected": "원"
     },
     "￦": {
-      "expected": "won"
+      "expected": "원"
     },
     "KRW": {
-      "expected": "won"
+      "expected": "원"
     },
     "₪": {
-      "expected": "sheqel"
+      "expected": "세겔"
     },
     "₫": {
-      "expected": "dong"
+      "expected": "동"
     },
     "₭": {
-      "expected": "kip"
+      "expected": "낍"
     },
     "₮": {
-      "expected": "tugrik"
+      "expected": "투그릭"
     },
     "₯": {
-      "expected": "drachma"
+      "expected": "드라크마"
     },
     "₰": {
-      "expected": "Pfennig"
+      "expected": "페니히"
     },
     "₱": {
-      "expected": "peso"
+      "expected": "페소"
     },
     "₲": {
-      "expected": "guaranis"
+      "expected": "과라니"
     },
     "₳": {
-      "expected": "austral"
+      "expected": "오스트랄"
     },
     "₴": {
-      "expected": "hryvnia"
+      "expected": "그리브나"
     },
     "UAH": {
-      "expected": "hryvnia"
+      "expected": "그리브나"
     },
     "₵": {
-      "expected": "cedis"
+      "expected": "세디"
     },
     "GHS": {
-      "expected": "cedis"
+      "expected": "세디"
     },
     "元": {
-      "expected": "yuan"
+      "expected": "위안"
     },
     "￠": {
-      "expected": "cent"
+      "expected": "센트"
     },
     "¢": {
-      "expected": "cent"
+      "expected": "센트"
     },
     "kwh": {
-      "expected": "kilowatt hour"
+      "expected": "킬로와트시"
     },
     "kWh": {
-      "expected": "kilowatt hour"
+      "expected": "킬로와트시"
     },
     "Ohm": {
-      "expected": "ohm"
+      "expected": "옴"
     },
     "ohm": {
-      "expected": "ohm"
+      "expected": "옴"
     },
     "ft": {
-      "expected": "foot"
+      "expected": "피트"
     },
     "ft.": {
-      "expected": "foot"
+      "expected": "피트"
     },
     "in": {
-      "expected": "inch"
+      "expected": "인치"
     },
     "in.": {
-      "expected": "inch"
+      "expected": "인치"
     },
     "mi": {
-      "expected": "mile"
+      "expected": "마일"
     },
     "mi.": {
-      "expected": "mile"
+      "expected": "마일"
     },
     "yd": {
-      "expected": "yard"
+      "expected": "야드"
     },
     "yd.": {
-      "expected": "yard"
+      "expected": "야드"
     },
     "li": {
-      "expected": "link"
+      "expected": "링크"
     },
     "li.": {
-      "expected": "link"
+      "expected": "링크"
     },
     "rd": {
-      "expected": "rod"
+      "expected": "로드"
     },
     "rd.": {
-      "expected": "rod"
+      "expected": "로드"
     },
     "ch": {
-      "expected": "chain"
+      "expected": "체인"
     },
     "ch.": {
-      "expected": "chain"
+      "expected": "체인"
     },
     "fur": {
-      "expected": "furlong"
+      "expected": "펄롱"
     },
     "fur.": {
-      "expected": "furlong"
+      "expected": "펄롱"
     },
     "n.m.": {
-      "expected": "nautical mile"
+      "expected": "해리"
     },
     "b": {
-      "expected": "bit"
+      "expected": "비트"
     },
     "KB": {
-      "expected": "kilobyte"
+      "expected": "킬로바이트"
     },
     "doz": {
-      "expected": "dozen"
+      "expected": "다스"
     },
     "doz.": {
-      "expected": "dozen"
+      "expected": "다스"
     },
     "dz": {
-      "expected": "dozen"
+      "expected": "다스"
     },
     "dz.": {
-      "expected": "dozen"
+      "expected": "다스"
     },
     "kt": {
-      "expected": "knot"
+      "expected": "노트"
     },
     "kt.": {
-      "expected": "knot"
+      "expected": "노트"
     },
     "mph": {
-      "expected": "miles per hour"
+      "expected": "마일 퍼 아워"
     },
     "rpm": {
-      "expected": "revolutions per minute"
+      "expected": "레볼루션 퍼 미닛"
     },
     "kmh": {
-      "expected": "kilometers per hour"
+      "expected": "킬로미터 퍼 아워"
     },
     "F": {
-      "expected": "Fahrenheit"
+      "expected": "화씨"
     },
     "F.": {
-      "expected": "Fahrenheit"
+      "expected": "화씨"
     },
     "°F": {
-      "expected": "Fahrenheit"
+      "expected": "화씨"
     },
     "C": {
-      "expected": "Celsius"
+      "expected": "섭씨"
     },
     "°C": {
-      "expected": "Celsius"
+      "expected": "섭씨"
     },
     "K": {
-      "expected": "Kelvin"
+      "expected": "켈빈"
     },
     "°K": {
-      "expected": "Kelvin"
+      "expected": "켈빈"
     },
     "min": {
-      "expected": "minute"
+      "expected": "분"
     },
     "h": {
-      "expected": "hour"
+      "expected": "시"
     },
     "hr": {
-      "expected": "hour"
+      "expected": "시"
     },
     "cu": {
-      "expected": "cubic"
+      "expected": "세제곱미터"
     },
     "cu.": {
-      "expected": "cubic"
+      "expected": "세제곱미터"
     },
     "cu in": {
-      "expected": "cubic inch"
+      "expected": "세제곱인치"
     },
     "cu. in.": {
-      "expected": "cubic inch"
+      "expected": "세제곱인치"
     },
     "cu ft": {
-      "expected": "cubic foot"
+      "expected": "세제곱피트"
     },
     "cu. ft.": {
-      "expected": "cubic foot"
+      "expected": "세제곱피트"
     },
     "cu yd": {
-      "expected": "cubic yard"
+      "expected": "세제곱야드"
     },
     "cu. yd.": {
-      "expected": "cubic yard"
+      "expected": "세제곱야드"
     },
     "bbl.": {
-      "expected": "barrel"
+      "expected": "배럴"
     },
     "bbl": {
-      "expected": "barrel"
+      "expected": "배럴"
     },
     "fl. oz.": {
-      "expected": "fluid ounce"
+      "expected": "액량 온스"
     },
     "fl oz": {
-      "expected": "fluid ounce"
+      "expected": "액량 온스"
     },
     "gal": {
-      "expected": "gallon"
+      "expected": "갤런"
     },
     "gal.": {
-      "expected": "gallon"
+      "expected": "갤런"
     },
     "pt": {
-      "expected": "pint"
+      "expected": "파인트"
     },
     "pt.": {
-      "expected": "pint"
+      "expected": "파인트"
     },
     "qt": {
-      "expected": "quart"
+      "expected": "쿼트"
     },
     "qt.": {
-      "expected": "quart"
+      "expected": "쿼트"
     },
     "fl dr": {
-      "expected": "fluid dram"
+      "expected": "액량 드램"
     },
     "fl. dr.": {
-      "expected": "fluid dram"
+      "expected": "액량 드램"
     },
     "tbsp": {
-      "expected": "tablespoon"
+      "expected": "테이블스푼"
     },
     "tbsp.": {
-      "expected": "tablespoon"
+      "expected": "테이블스푼"
     },
     "Tbsp": {
-      "expected": "tablespoon"
+      "expected": "테이블스푼"
     },
     "Tbsp.": {
-      "expected": "tablespoon"
+      "expected": "테이블스푼"
     },
     "tsp": {
-      "expected": "teaspoon"
+      "expected": "티스푼"
     },
     "tsp.": {
-      "expected": "teaspoon"
+      "expected": "티스푼"
     },
     "cp": {
-      "expected": "cup"
+      "expected": "컵"
     },
     "cp.": {
-      "expected": "cup"
+      "expected": "컵"
     },
     "cc": {
-      "expected": "cubic centimeter"
+      "expected": "세제곱센티미터"
     },
     "ccm": {
-      "expected": "cubic centimeter"
+      "expected": "세제곱센티미터"
     },
     "dr": {
-      "expected": "dram"
+      "expected": "드램"
     },
     "dr.": {
-      "expected": "dram"
+      "expected": "드램"
     },
     "oz": {
-      "expected": "ounce"
+      "expected": "온스"
     },
     "oz.": {
-      "expected": "ounce"
+      "expected": "온스"
     },
     "lb": {
-      "expected": "pound"
+      "expected": "파운드"
     },
     "lb.": {
-      "expected": "pound"
+      "expected": "파운드"
     },
     "st": {
-      "expected": "stone"
+      "expected": "스톤"
     },
     "st.": {
-      "expected": "stone"
+      "expected": "스톤"
     },
     "qtr": {
-      "expected": "quarter"
+      "expected": "쿼터"
     },
     "qtr.": {
-      "expected": "quarter"
+      "expected": "쿼터"
     },
     "cwt": {
-      "expected": "hundredweight"
+      "expected": "헌드레드웨이트"
     },
     "cwt.": {
-      "expected": "hundredweight"
+      "expected": "헌드레드웨이트"
     },
     "LT": {
-      "expected": "long ton"
+      "expected": "롱톤"
     },
     "L.T.": {
-      "expected": "long ton"
+      "expected": "롱톤"
     },
     "gr": {
-      "expected": "gram"
+      "expected": "그램"
     },
     "mcg": {
-      "expected": "microgram"
+      "expected": "마이크로그램"
     },
     "t": {
-      "expected": "ton"
+      "expected": "톤"
     },
     "T": {
-      "expected": "ton"
+      "expected": "톤"
     },
     "₶": {
-      "expected": "livre tournois"
+      "expected": "리브르 투르누아"
     },
     "₷": {
-      "expected": "spesmilo"
+      "expected": "스페스밀로"
     },
     "₸": {
-      "expected": "tenge"
+      "expected": "텡게"
     },
     "KZT": {
-      "expected": "tenge"
+      "expected": "텡게"
     },
     "₺": {
-      "expected": "turkish lira"
+      "expected": "터키 리라"
     },
     "TRY": {
-      "expected": "turkish lira"
+      "expected": "터키 리라"
     },
     "″": {
-      "expected": "second"
+      "expected": "초"
     },
     "′": {
-      "expected": "minute"
+      "expected": "분"
     },
     "°": {
-      "expected": "degree"
+      "expected": "도"
     }
   }
 }
