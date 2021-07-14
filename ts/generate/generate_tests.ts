@@ -166,6 +166,27 @@ export function transformTestsFile(file: string,
   tu.TestUtil.saveJson(file, json);
 }
 
+/**
+ * Triples tests in a json file for all three Mathspeak preferences.
+ *
+ * @param input Input filename.
+ * @param output Output filename.
+ */
+export function generateMathspeakTest(input: string, output: string) {
+  let json = tu.TestUtil.loadJson(input);
+  let tests = json.tests;
+  json.tests = {};
+  for (let [key, entry] of Object.entries(tests)) {
+    json.tests[`${key}_default`] =
+      Object.assign({'preference': 'default'}, entry);
+    json.tests[`${key}_brief`] =
+      Object.assign({'preference': 'brief'}, entry);
+    json.tests[`${key}_sbrief`] =
+      Object.assign({'preference': 'sbrief'}, entry);
+  }
+  tu.TestUtil.saveJson(output, json);
+}
+
 /* ********************************************************** */
 /*
  * Splitting input files from expected into base files.
