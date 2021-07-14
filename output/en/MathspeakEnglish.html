@@ -2,7 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<title>English Mathspeak Tensor tests.</title>
+<title>English Mathspeak Roots tests.</title>
 
 <style>
  table, th, td {
@@ -11,6 +11,135 @@
 
 </head>
 <body>
+<h2 id="English_Mathspeak_Roots_tests__en_default">English Mathspeak Roots tests. Locale: en, Style: <td>Verbose</td>.</h2>
+<table>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mi>a</mi></msqrt></math></td><td>StartRoot a EndRoot</td></tr>
+<tr><td>1</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>2</mn></mroot></math></td><td>RootIndex 2 StartRoot a EndRoot</td></tr>
+<tr><td>2</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><msqrt><mi>a</mi></msqrt></msqrt></math></td><td>NestedStartRoot StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>3</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><msqrt><msqrt><msqrt><mi>a</mi></msqrt></msqrt></msqrt></msqrt></math></td><td>Nested3StartRoot NestedTwiceStartRoot NestedStartRoot StartRoot a EndRoot NestedEndRoot NestedTwiceEndRoot Nested3EndRoot</td></tr>
+<tr><td>4</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>1</mn></mroot></math></td><td>RootIndex 1 StartRoot a EndRoot</td></tr>
+<tr><td>5</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>2</mn></mroot></math></td><td>RootIndex 2 StartRoot a EndRoot</td></tr>
+<tr><td>6</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>3</mn></mroot></math></td><td>RootIndex 3 StartRoot a EndRoot</td></tr>
+<tr><td>7</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>4</mn></mroot></math></td><td>RootIndex 4 StartRoot a EndRoot</td></tr>
+<tr><td>8</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>5</mn></mroot></math></td><td>RootIndex 5 StartRoot a EndRoot</td></tr>
+<tr><td>9</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>6</mn></mroot></math></td><td>RootIndex 6 StartRoot a EndRoot</td></tr>
+<tr><td>10</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>7</mn></mroot></math></td><td>RootIndex 7 StartRoot a EndRoot</td></tr>
+<tr><td>11</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>8</mn></mroot></math></td><td>RootIndex 8 StartRoot a EndRoot</td></tr>
+<tr><td>12</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>9</mn></mroot></math></td><td>RootIndex 9 StartRoot a EndRoot</td></tr>
+<tr><td>13</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>10</mn></mroot></math></td><td>RootIndex 10 StartRoot a EndRoot</td></tr>
+<tr><td>14</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>11</mn></mroot></math></td><td>RootIndex 11 StartRoot a EndRoot</td></tr>
+<tr><td>15</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>1</mn></mroot><mn>1</mn></mroot></math></td><td>NestedRootIndex 1 NestedStartRoot RootIndex 1 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>16</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>2</mn></mroot><mn>2</mn></mroot></math></td><td>NestedRootIndex 2 NestedStartRoot RootIndex 2 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>17</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>3</mn></mroot></math></td><td>NestedRootIndex 3 NestedStartRoot RootIndex 3 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>18</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>4</mn></mroot><mn>4</mn></mroot></math></td><td>NestedRootIndex 4 NestedStartRoot RootIndex 4 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>19</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>5</mn></mroot><mn>5</mn></mroot></math></td><td>NestedRootIndex 5 NestedStartRoot RootIndex 5 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>20</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>6</mn></mroot><mn>6</mn></mroot></math></td><td>NestedRootIndex 6 NestedStartRoot RootIndex 6 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>21</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>7</mn></mroot><mn>7</mn></mroot></math></td><td>NestedRootIndex 7 NestedStartRoot RootIndex 7 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>22</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>8</mn></mroot><mn>8</mn></mroot></math></td><td>NestedRootIndex 8 NestedStartRoot RootIndex 8 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>23</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>9</mn></mroot><mn>9</mn></mroot></math></td><td>NestedRootIndex 9 NestedStartRoot RootIndex 9 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>24</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>10</mn></mroot><mn>10</mn></mroot></math></td><td>NestedRootIndex 10 NestedStartRoot RootIndex 10 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>25</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>11</mn></mroot><mn>11</mn></mroot></math></td><td>NestedRootIndex 11 NestedStartRoot RootIndex 11 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>26</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>1</mn></mroot></math></td><td>NestedRootIndex 1 NestedStartRoot RootIndex 3 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>27</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>2</mn></mroot></math></td><td>NestedRootIndex 2 NestedStartRoot RootIndex 3 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>28</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>3</mn></mroot></math></td><td>NestedRootIndex 3 NestedStartRoot RootIndex 3 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>29</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>4</mn></mroot></math></td><td>NestedRootIndex 4 NestedStartRoot RootIndex 3 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>30</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>5</mn></mroot></math></td><td>NestedRootIndex 5 NestedStartRoot RootIndex 3 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>31</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>6</mn></mroot></math></td><td>NestedRootIndex 6 NestedStartRoot RootIndex 3 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>32</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>7</mn></mroot></math></td><td>NestedRootIndex 7 NestedStartRoot RootIndex 3 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>33</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>8</mn></mroot></math></td><td>NestedRootIndex 8 NestedStartRoot RootIndex 3 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>34</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>9</mn></mroot></math></td><td>NestedRootIndex 9 NestedStartRoot RootIndex 3 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>35</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>10</mn></mroot></math></td><td>NestedRootIndex 10 NestedStartRoot RootIndex 3 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>36</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>11</mn></mroot></math></td><td>NestedRootIndex 11 NestedStartRoot RootIndex 3 StartRoot a EndRoot NestedEndRoot</td></tr>
+<tr><td>37</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mroot><mroot><mi>a</mi><mn>5</mn></mroot><mn>4</mn></mroot><mn>3</mn></mroot><mn>2</mn></mroot></math></td><td>Nested3RootIndex 2 Nested3StartRoot NestedTwiceRootIndex 3 NestedTwiceStartRoot NestedRootIndex 4 NestedStartRoot RootIndex 5 StartRoot a EndRoot NestedEndRoot NestedTwiceEndRoot Nested3EndRoot</td></tr>
+<tr><td>38</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>2</mn></mroot><mn>3</mn></mroot><mn>2</mn></mroot></math></td><td>Nested3RootIndex 2 Nested3StartRoot NestedTwiceRootIndex 3 NestedTwiceStartRoot NestedRootIndex 2 NestedStartRoot RootIndex 3 StartRoot a EndRoot NestedEndRoot NestedTwiceEndRoot Nested3EndRoot</td></tr>
+<tr><td>39</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><msqrt><mroot><msqrt><mi>a</mi></msqrt><mn>3</mn></mroot></msqrt><mn>3</mn></mroot><mn>2</mn></mroot></math></td><td>Nested4RootIndex 2 Nested4StartRoot Nested3RootIndex 3 Nested3StartRoot NestedTwiceStartRoot NestedRootIndex 3 NestedStartRoot StartRoot a EndRoot NestedEndRoot NestedTwiceEndRoot Nested3EndRoot Nested4EndRoot</td></tr>
+</table>
+<h2 id="English_Mathspeak_Roots_tests__en_brief">English Mathspeak Roots tests. Locale: en, Style: <td>Brief</td>.</h2>
+<table>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mi>a</mi></msqrt></math></td><td>StartRoot a EndRoot</td></tr>
+<tr><td>1</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>2</mn></mroot></math></td><td>RootIndex 2 StartRoot a EndRoot</td></tr>
+<tr><td>2</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><msqrt><mi>a</mi></msqrt></msqrt></math></td><td>NestStartRoot StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>3</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><msqrt><msqrt><msqrt><mi>a</mi></msqrt></msqrt></msqrt></msqrt></math></td><td>Nest3StartRoot NestTwiceStartRoot NestStartRoot StartRoot a EndRoot NestEndRoot NestTwiceEndRoot Nest3EndRoot</td></tr>
+<tr><td>4</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>1</mn></mroot></math></td><td>RootIndex 1 StartRoot a EndRoot</td></tr>
+<tr><td>5</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>2</mn></mroot></math></td><td>RootIndex 2 StartRoot a EndRoot</td></tr>
+<tr><td>6</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>3</mn></mroot></math></td><td>RootIndex 3 StartRoot a EndRoot</td></tr>
+<tr><td>7</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>4</mn></mroot></math></td><td>RootIndex 4 StartRoot a EndRoot</td></tr>
+<tr><td>8</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>5</mn></mroot></math></td><td>RootIndex 5 StartRoot a EndRoot</td></tr>
+<tr><td>9</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>6</mn></mroot></math></td><td>RootIndex 6 StartRoot a EndRoot</td></tr>
+<tr><td>10</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>7</mn></mroot></math></td><td>RootIndex 7 StartRoot a EndRoot</td></tr>
+<tr><td>11</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>8</mn></mroot></math></td><td>RootIndex 8 StartRoot a EndRoot</td></tr>
+<tr><td>12</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>9</mn></mroot></math></td><td>RootIndex 9 StartRoot a EndRoot</td></tr>
+<tr><td>13</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>10</mn></mroot></math></td><td>RootIndex 10 StartRoot a EndRoot</td></tr>
+<tr><td>14</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>11</mn></mroot></math></td><td>RootIndex 11 StartRoot a EndRoot</td></tr>
+<tr><td>15</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>1</mn></mroot><mn>1</mn></mroot></math></td><td>NestRootIndex 1 NestStartRoot RootIndex 1 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>16</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>2</mn></mroot><mn>2</mn></mroot></math></td><td>NestRootIndex 2 NestStartRoot RootIndex 2 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>17</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>3</mn></mroot></math></td><td>NestRootIndex 3 NestStartRoot RootIndex 3 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>18</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>4</mn></mroot><mn>4</mn></mroot></math></td><td>NestRootIndex 4 NestStartRoot RootIndex 4 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>19</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>5</mn></mroot><mn>5</mn></mroot></math></td><td>NestRootIndex 5 NestStartRoot RootIndex 5 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>20</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>6</mn></mroot><mn>6</mn></mroot></math></td><td>NestRootIndex 6 NestStartRoot RootIndex 6 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>21</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>7</mn></mroot><mn>7</mn></mroot></math></td><td>NestRootIndex 7 NestStartRoot RootIndex 7 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>22</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>8</mn></mroot><mn>8</mn></mroot></math></td><td>NestRootIndex 8 NestStartRoot RootIndex 8 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>23</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>9</mn></mroot><mn>9</mn></mroot></math></td><td>NestRootIndex 9 NestStartRoot RootIndex 9 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>24</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>10</mn></mroot><mn>10</mn></mroot></math></td><td>NestRootIndex 10 NestStartRoot RootIndex 10 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>25</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>11</mn></mroot><mn>11</mn></mroot></math></td><td>NestRootIndex 11 NestStartRoot RootIndex 11 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>26</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>1</mn></mroot></math></td><td>NestRootIndex 1 NestStartRoot RootIndex 3 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>27</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>2</mn></mroot></math></td><td>NestRootIndex 2 NestStartRoot RootIndex 3 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>28</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>3</mn></mroot></math></td><td>NestRootIndex 3 NestStartRoot RootIndex 3 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>29</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>4</mn></mroot></math></td><td>NestRootIndex 4 NestStartRoot RootIndex 3 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>30</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>5</mn></mroot></math></td><td>NestRootIndex 5 NestStartRoot RootIndex 3 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>31</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>6</mn></mroot></math></td><td>NestRootIndex 6 NestStartRoot RootIndex 3 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>32</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>7</mn></mroot></math></td><td>NestRootIndex 7 NestStartRoot RootIndex 3 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>33</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>8</mn></mroot></math></td><td>NestRootIndex 8 NestStartRoot RootIndex 3 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>34</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>9</mn></mroot></math></td><td>NestRootIndex 9 NestStartRoot RootIndex 3 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>35</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>10</mn></mroot></math></td><td>NestRootIndex 10 NestStartRoot RootIndex 3 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>36</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>11</mn></mroot></math></td><td>NestRootIndex 11 NestStartRoot RootIndex 3 StartRoot a EndRoot NestEndRoot</td></tr>
+<tr><td>37</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mroot><mroot><mi>a</mi><mn>5</mn></mroot><mn>4</mn></mroot><mn>3</mn></mroot><mn>2</mn></mroot></math></td><td>Nest3RootIndex 2 Nest3StartRoot NestTwiceRootIndex 3 NestTwiceStartRoot NestRootIndex 4 NestStartRoot RootIndex 5 StartRoot a EndRoot NestEndRoot NestTwiceEndRoot Nest3EndRoot</td></tr>
+<tr><td>38</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>2</mn></mroot><mn>3</mn></mroot><mn>2</mn></mroot></math></td><td>Nest3RootIndex 2 Nest3StartRoot NestTwiceRootIndex 3 NestTwiceStartRoot NestRootIndex 2 NestStartRoot RootIndex 3 StartRoot a EndRoot NestEndRoot NestTwiceEndRoot Nest3EndRoot</td></tr>
+<tr><td>39</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><msqrt><mroot><msqrt><mi>a</mi></msqrt><mn>3</mn></mroot></msqrt><mn>3</mn></mroot><mn>2</mn></mroot></math></td><td>Nest4RootIndex 2 Nest4StartRoot Nest3RootIndex 3 Nest3StartRoot NestTwiceStartRoot NestRootIndex 3 NestStartRoot StartRoot a EndRoot NestEndRoot NestTwiceEndRoot Nest3EndRoot Nest4EndRoot</td></tr>
+</table>
+<h2 id="English_Mathspeak_Roots_tests__en_sbrief">English Mathspeak Roots tests. Locale: en, Style: <td>Superbrief</td>.</h2>
+<table>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mi>a</mi></msqrt></math></td><td>Root a EndRoot</td></tr>
+<tr><td>1</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>2</mn></mroot></math></td><td>Index 2 Root a EndRoot</td></tr>
+<tr><td>2</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><msqrt><mi>a</mi></msqrt></msqrt></math></td><td>NestRoot Root a EndRoot NestEndRoot</td></tr>
+<tr><td>3</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><msqrt><msqrt><msqrt><mi>a</mi></msqrt></msqrt></msqrt></msqrt></math></td><td>Nest3Root NestTwiceRoot NestRoot Root a EndRoot NestEndRoot NestTwiceEndRoot Nest3EndRoot</td></tr>
+<tr><td>4</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>1</mn></mroot></math></td><td>Index 1 Root a EndRoot</td></tr>
+<tr><td>5</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>2</mn></mroot></math></td><td>Index 2 Root a EndRoot</td></tr>
+<tr><td>6</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>3</mn></mroot></math></td><td>Index 3 Root a EndRoot</td></tr>
+<tr><td>7</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>4</mn></mroot></math></td><td>Index 4 Root a EndRoot</td></tr>
+<tr><td>8</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>5</mn></mroot></math></td><td>Index 5 Root a EndRoot</td></tr>
+<tr><td>9</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>6</mn></mroot></math></td><td>Index 6 Root a EndRoot</td></tr>
+<tr><td>10</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>7</mn></mroot></math></td><td>Index 7 Root a EndRoot</td></tr>
+<tr><td>11</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>8</mn></mroot></math></td><td>Index 8 Root a EndRoot</td></tr>
+<tr><td>12</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>9</mn></mroot></math></td><td>Index 9 Root a EndRoot</td></tr>
+<tr><td>13</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>10</mn></mroot></math></td><td>Index 10 Root a EndRoot</td></tr>
+<tr><td>14</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>a</mi><mn>11</mn></mroot></math></td><td>Index 11 Root a EndRoot</td></tr>
+<tr><td>15</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>1</mn></mroot><mn>1</mn></mroot></math></td><td>NestIndex 1 NestRoot Index 1 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>16</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>2</mn></mroot><mn>2</mn></mroot></math></td><td>NestIndex 2 NestRoot Index 2 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>17</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>3</mn></mroot></math></td><td>NestIndex 3 NestRoot Index 3 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>18</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>4</mn></mroot><mn>4</mn></mroot></math></td><td>NestIndex 4 NestRoot Index 4 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>19</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>5</mn></mroot><mn>5</mn></mroot></math></td><td>NestIndex 5 NestRoot Index 5 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>20</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>6</mn></mroot><mn>6</mn></mroot></math></td><td>NestIndex 6 NestRoot Index 6 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>21</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>7</mn></mroot><mn>7</mn></mroot></math></td><td>NestIndex 7 NestRoot Index 7 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>22</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>8</mn></mroot><mn>8</mn></mroot></math></td><td>NestIndex 8 NestRoot Index 8 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>23</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>9</mn></mroot><mn>9</mn></mroot></math></td><td>NestIndex 9 NestRoot Index 9 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>24</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>10</mn></mroot><mn>10</mn></mroot></math></td><td>NestIndex 10 NestRoot Index 10 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>25</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>11</mn></mroot><mn>11</mn></mroot></math></td><td>NestIndex 11 NestRoot Index 11 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>26</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>1</mn></mroot></math></td><td>NestIndex 1 NestRoot Index 3 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>27</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>2</mn></mroot></math></td><td>NestIndex 2 NestRoot Index 3 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>28</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>3</mn></mroot></math></td><td>NestIndex 3 NestRoot Index 3 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>29</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>4</mn></mroot></math></td><td>NestIndex 4 NestRoot Index 3 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>30</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>5</mn></mroot></math></td><td>NestIndex 5 NestRoot Index 3 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>31</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>6</mn></mroot></math></td><td>NestIndex 6 NestRoot Index 3 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>32</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>7</mn></mroot></math></td><td>NestIndex 7 NestRoot Index 3 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>33</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>8</mn></mroot></math></td><td>NestIndex 8 NestRoot Index 3 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>34</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>9</mn></mroot></math></td><td>NestIndex 9 NestRoot Index 3 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>35</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>10</mn></mroot></math></td><td>NestIndex 10 NestRoot Index 3 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>36</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>11</mn></mroot></math></td><td>NestIndex 11 NestRoot Index 3 Root a EndRoot NestEndRoot</td></tr>
+<tr><td>37</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mroot><mroot><mi>a</mi><mn>5</mn></mroot><mn>4</mn></mroot><mn>3</mn></mroot><mn>2</mn></mroot></math></td><td>Nest3Index 2 Nest3Root NestTwiceIndex 3 NestTwiceRoot NestIndex 4 NestRoot Index 5 Root a EndRoot NestEndRoot NestTwiceEndRoot Nest3EndRoot</td></tr>
+<tr><td>38</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><mroot><mroot><mi>a</mi><mn>3</mn></mroot><mn>2</mn></mroot><mn>3</mn></mroot><mn>2</mn></mroot></math></td><td>Nest3Index 2 Nest3Root NestTwiceIndex 3 NestTwiceRoot NestIndex 2 NestRoot Index 3 Root a EndRoot NestEndRoot NestTwiceEndRoot Nest3EndRoot</td></tr>
+<tr><td>39</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mroot><msqrt><mroot><msqrt><mi>a</mi></msqrt><mn>3</mn></mroot></msqrt><mn>3</mn></mroot><mn>2</mn></mroot></math></td><td>Nest4Index 2 Nest4Root Nest3Index 3 Nest3Root NestTwiceRoot NestIndex 3 NestRoot Root a EndRoot NestEndRoot NestTwiceEndRoot Nest3EndRoot Nest4EndRoot</td></tr>
+</table>
 <h2 id="English_Mathspeak_Tensor_tests__en_default">English Mathspeak Tensor tests. Locale: en, Style: <td>Verbose</td>.</h2>
 <table>
 <tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mmultiscripts><mi>x</mi><mi>c</mi><mi>d</mi><mprescripts/><mi>a</mi><mi>b</mi></mmultiscripts></math></td><td>Subscript a Superscript b Baseline x Subscript c Superscript d</td></tr>
