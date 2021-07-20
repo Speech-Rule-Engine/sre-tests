@@ -45,8 +45,8 @@ export function runTests(
   let keys = flag === TestFlag.MISSING ? tests.warn : Object.keys(base);
   for (let key of keys) {
     let test = base[key];
-    if (key.match(/_comment/) || !test.test ||
-      tests.jsonTests.exclude.indexOf(key) !== -1) {
+    if (key.match(/_comment/) || !test.test || (tests.jsonTests.exclude &&
+      tests.jsonTests.exclude.indexOf(key) !== -1)) {
       if (key.match(/_comment/) && flag === TestFlag.ALL) {
         result[key] = test;
       }
