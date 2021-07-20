@@ -76,7 +76,7 @@
       "expected": "vertical bar a broken vertical bar"
     },
     "BarFencedMixed_3_default": {
-      "expected": "triple vertical bar delimiter a double vertical bar"
+      "expected": "triple vertical bar a double vertical bar"
     },
     "CenterBar_0_default": {
       "expected": "a vertical bar b"
@@ -94,7 +94,7 @@
       "expected": "a parallel to b"
     },
     "CenterBar_5_default": {
-      "expected": "a triple vertical bar delimiter b"
+      "expected": "a triple vertical bar b"
     },
     "BarFenced_0_sbrief": {
       "expected": "AbsoluteValue a EndAbsoluteValue"
@@ -127,7 +127,7 @@
       "expected": "vertical bar a broken vertical bar"
     },
     "BarFencedMixed_3_sbrief": {
-      "expected": "triple vertical bar delimiter a double vertical bar"
+      "expected": "triple vertical bar a double vertical bar"
     },
     "CenterBar_0_sbrief": {
       "expected": "a vertical bar b"
@@ -145,7 +145,121 @@
       "expected": "a parallel to b"
     },
     "CenterBar_5_sbrief": {
-      "expected": "a triple vertical bar delimiter b"
+      "expected": "a triple vertical bar b"
+    },
+    "CenterBarFunc_0_default": {
+      "expected": "f vertical bar g"
+    },
+    "CenterBarFunc_1_default": {
+      "expected": "f vertical bar g"
+    },
+    "CenterBarFunc_2_default": {
+      "expected": "f broken vertical bar g"
+    },
+    "CenterBarFunc_3_default": {
+      "expected": "f double vertical bar g"
+    },
+    "CenterBarFunc_4_default": {
+      "expected": "f parallel to g"
+    },
+    "CenterBarFunc_5_default": {
+      "expected": "f triple vertical bar g"
+    },
+    "CenterBarFunc_6_default": {
+      "expected": "sine triple vertical bar g"
+    },
+    "Function_0_default": {
+      "expected": "f StartAbsoluteValue a EndAbsoluteValue"
+    },
+    "Function_1_default": {
+      "expected": "g StartAbsoluteValue a EndAbsoluteValue"
+    },
+    "Function_2_default": {
+      "expected": "h StartAbsoluteValue a EndAbsoluteValue"
+    },
+    "Function_3_default": {
+      "expected": "r StartAbsoluteValue a EndAbsoluteValue"
+    },
+    "Function_4_default": {
+      "expected": "sine StartAbsoluteValue a EndAbsoluteValue"
+    },
+    "Function_5_default": {
+      "expected": "sigma summation StartAbsoluteValue a EndAbsoluteValue"
+    },
+    "FunctionMetric0_default": {
+      "expected": "f StartMetric a EndMetric"
+    },
+    "FunctionMetric1_default": {
+      "expected": "g StartMetric a EndMetric"
+    },
+    "FunctionMetric2_default": {
+      "expected": "h StartMetric a EndMetric"
+    },
+    "FunctionMetric3_default": {
+      "expected": "r StartMetric a EndMetric"
+    },
+    "FunctionMetric4_default": {
+      "expected": "sine StartMetric a EndMetric"
+    },
+    "FunctionMetric5_default": {
+      "expected": "sigma summation StartMetric a EndMetric"
+    },
+    "Function_0_sbrief": {
+      "expected": "f AbsoluteValue a EndAbsoluteValue"
+    },
+    "Function_1_sbrief": {
+      "expected": "g AbsoluteValue a EndAbsoluteValue"
+    },
+    "Function_2_sbrief": {
+      "expected": "h AbsoluteValue a EndAbsoluteValue"
+    },
+    "Function_3_sbrief": {
+      "expected": "r AbsoluteValue a EndAbsoluteValue"
+    },
+    "Function_4_sbrief": {
+      "expected": "sine AbsoluteValue a EndAbsoluteValue"
+    },
+    "Function_5_sbrief": {
+      "expected": "sigma summation AbsoluteValue a EndAbsoluteValue"
+    },
+    "FunctionMetric0_sbrief": {
+      "expected": "f Metric a EndMetric"
+    },
+    "FunctionMetric1_sbrief": {
+      "expected": "g Metric a EndMetric"
+    },
+    "FunctionMetric2_sbrief": {
+      "expected": "h Metric a EndMetric"
+    },
+    "FunctionMetric3_sbrief": {
+      "expected": "r Metric a EndMetric"
+    },
+    "FunctionMetric4_sbrief": {
+      "expected": "sine Metric a EndMetric"
+    },
+    "FunctionMetric5_sbrief": {
+      "expected": "sigma summation Metric a EndMetric"
+    },
+    "CenterBarFunc_0_sbrief": {
+      "expected": "f vertical bar g"
+    },
+    "CenterBarFunc_1_sbrief": {
+      "expected": "f vertical bar g"
+    },
+    "CenterBarFunc_2_sbrief": {
+      "expected": "f broken vertical bar g"
+    },
+    "CenterBarFunc_3_sbrief": {
+      "expected": "f double vertical bar g"
+    },
+    "CenterBarFunc_4_sbrief": {
+      "expected": "f parallel to g"
+    },
+    "CenterBarFunc_5_sbrief": {
+      "expected": "f triple vertical bar g"
+    },
+    "CenterBarFunc_6_sbrief": {
+      "expected": "sine triple vertical bar g"
     }
   }
 }
