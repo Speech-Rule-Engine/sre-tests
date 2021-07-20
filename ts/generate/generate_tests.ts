@@ -187,6 +187,66 @@ export function generateMathspeakTest(input: string, output: string) {
   tu.TestUtil.saveJson(output, json);
 }
 
+/**
+ * Duplicates default tests for a new preference.
+ *
+ * @param input Input filename.
+ * @param preference The preference string.
+ */
+export function generatePreferenceTest(input: string, preference: string) {
+  if (!preference) {
+    return;
+  }
+  let filename = tu.TestUtil.fileExists(input, tu.TestPath.INPUT);
+  let json = tu.TestUtil.loadJson(filename);
+  let tests = json.tests as tu.JsonTests;
+  for (let [key, entry] of Object.entries(tests)) {
+    if (key.match(/_default$/)) {
+      let newKey = key.replace(/default$/, preference);
+      if (tests[newKey]) {
+        continue;
+      }
+      let newEntry = Object.assign({}, entry);
+      newEntry.preference = preference;
+      tests[newKey] = newEntry;
+    }
+  }
+  tu.TestUtil.saveJson(filename, json);
+}
+
+/**
+ * Generates a list of tests to be excluded by preference ending.
+ *
+ * @param input Input filename.
+ * @param preferences The list of preference strings.
+ * @param output An optional output file where the exclusion list will be
+ *    updated.
+ */
+export function generateExclusionList(input: string, preferences: string[],
+                                      output: string = '') {
+  let filename = tu.TestUtil.fileExists(input, tu.TestPath.INPUT);
+  let json = tu.TestUtil.loadJson(filename);
+  let result = [];
+  for (let pref of preferences) {
+    for (let key of Object.keys(json.tests)) {
+      if (key.match(new RegExp(`_${pref}$`))) {
+        result.push(key);
+      }
+    }
+  }
+  if (!output) {
+    return result;
+  }
+  let outfile = tu.TestUtil.fileExists(output, tu.TestPath.EXPECTED);
+  if (!outfile) {
+    return result;
+  }
+  let outjson = tu.TestUtil.loadJson(outfile);
+  outjson.exclude = result;
+  tu.TestUtil.saveJson(outfile, outjson);
+  return result;
+}
+
 /* ********************************************************** */
 /*
  * Splitting input files from expected into base files.

@@ -47,7 +47,7 @@ export class TestError extends Error {
    * @param value An arbitrary error value to propagate.
    */
   public constructor(public message: string, public value: any) {
-    super();
+    super(value);
   }
 }
 

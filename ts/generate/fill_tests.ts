@@ -23,7 +23,7 @@ import {JsonFile, JsonTests, TestPath, TestUtil} from '../base/test_util';
 import {AbstractJsonTest} from '../classes/abstract_test';
 import {get as factoryget} from '../classes/test_factory';
 
-const enum TestFlag {ALL, FAILED, MISSING}
+const enum TestFlag {ALL, FAILED, MISSING, REMOVE}
 
 /**
  * Runs all tests for the given expected file and collates the failing ones.
@@ -32,15 +32,15 @@ const enum TestFlag {ALL, FAILED, MISSING}
  * @param flag Flag which tests to run. Values: all, failed, missing.
  * @return Pair of JSON structure with expected output and the test object.
  */
-function runTests(
+export function runTests(
   expected: string, flag: TestFlag): [JsonTests, AbstractJsonTest] {
   let tests = factoryget(expected);
   tests.prepare();
   let result: JsonTests = {};
   try {
     tests.setUpTest();
-  } catch (e) {}
-  let base = (tests.baseTests.tests ?
+  } catch (e) { }
+  let base = ((tests.baseTests.tests && flag !== TestFlag.REMOVE) ?
     tests.baseTests.tests : tests.jsonTests.tests) as JsonTests;
   let keys = flag === TestFlag.MISSING ? tests.warn : Object.keys(base);
   for (let key of keys) {
@@ -135,6 +135,32 @@ export function addActual(expected: string, dryrun: boolean = false) {
  */
 export function addFailed(expected: string, dryrun: boolean = false) {
   add(expected, TestFlag.FAILED, dryrun);
+}
+
+export function removeFromFile(file: string, removal: JsonTests) {
+  let filename = TestUtil.fileExists(file, TestPath.EXPECTED);
+  let oldJson: JsonFile = TestUtil.loadJson(filename);
+  let tests = oldJson.tests as JsonTests;
+  for (let key of Object.keys(removal)) {
+    delete tests[key];
+  }
+  TestUtil.saveJson(filename, oldJson);
+}
+
+/**
+ * Generates actual expected values for failed tests and writes them to the
+ * given expected file.
+ *
+ * @param expected Relative file name of the expected file.
+ * @param dryrun Print to console instead to file.
+ */
+export function removeMissing(expected: string, dryrun: boolean = false) {
+  let [result, tests] = runTests(expected, TestFlag.REMOVE);
+  if (dryrun) {
+    console.log(JSON.stringify(result, null, 2));
+    return;
+  }
+  removeFromFile(tests['jsonFile'], result);
 }
 
 /**
