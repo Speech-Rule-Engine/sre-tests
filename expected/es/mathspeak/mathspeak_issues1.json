@@ -48,10 +48,10 @@
       "expected": "mayúscula S i normal mayúscula O subíndice 2 línea base más 6 normal mayúscula H normal mayúscula F flecha derecha normal mayúscula H subíndice 2 línea base mayúscula S i normal mayúscula F subíndice 6 línea base más 2 normal mayúscula H subíndice 2 línea base normal mayúscula O"
     },
     "MixedIdentifier_brief": {
-      "expected": "mayúscula S i normal mayúscula O sub 2 más 6 normal mayúscula H normal mayúscula F flecha derecha normal mayúscula H sub 2 mayúscula S i normal mayúscula F sub 6 más 2 normal mayúscula H sub 2 normal mayúscula O"
+      "expected": "mayúscula S i normal mayúscula O sub 2 base más 6 normal mayúscula H normal mayúscula F flecha derecha normal mayúscula H sub 2 base mayúscula S i normal mayúscula F sub 6 base más 2 normal mayúscula H sub 2 base normal mayúscula O"
     },
     "MixedIdentifier_sbrief": {
-      "expected": "mayúscula S i normal mayúscula O sub 2 más 6 normal mayúscula H normal mayúscula F flecha derecha normal mayúscula H sub 2 mayúscula S i normal mayúscula F sub 6 más 2 normal mayúscula H sub 2 normal mayúscula O"
+      "expected": "mayúscula S i normal mayúscula O sub 2 base más 6 normal mayúscula H normal mayúscula F flecha derecha normal mayúscula H sub 2 base mayúscula S i normal mayúscula F sub 6 base más 2 normal mayúscula H sub 2 base normal mayúscula O"
     },
     "_comment0_": " TODO (sorge) Test currently fails as the parenthesis is seen to be",
     "_comment1_": "     embellished! Should work again once embellished parenthesis are fully",
@@ -78,55 +78,55 @@
       "expected": "c subíndice 1 línea base h superíndice 4 menos 2 s línea base menor o igual que empezar fracción 1 entre 2 mayúscula T finalizar fracción menor o igual que c subíndice 2 línea base h superíndice 4 menos 2 s"
     },
     "SupBaseRelseq_brief": {
-      "expected": "c sub 1 h sup 4 menos 2 s menor o igual que empezar frac 1 entre 2 mayúscula T finalizar frac menor o igual que c sub 2 h sup 4 menos 2 s"
+      "expected": "c sub 1 base h sup 4 menos 2 s base menor o igual que empezar frac 1 entre 2 mayúscula T finalizar frac menor o igual que c sub 2 base h sup 4 menos 2 s"
     },
     "SupBaseRelseq_sbrief": {
-      "expected": "c sub 1 h sup 4 menos 2 s menor o igual que frac 1 entre 2 mayúscula T menor o igual que c sub 2 h sup 4 menos 2 s"
+      "expected": "c sub 1 base h sup 4 menos 2 s base menor o igual que frac 1 entre 2 mayúscula T menor o igual que c sub 2 base h sup 4 menos 2 s"
     },
     "SupBaseMultirel_default": {
       "expected": "c subíndice 1 línea base h superíndice 4 menos 2 s línea base menor o igual que empezar fracción 1 entre 2 mayúscula T finalizar fracción igual c subíndice 2 línea base h superíndice 4 menos 2 s"
     },
     "SupBaseMultirel_brief": {
-      "expected": "c sub 1 h sup 4 menos 2 s menor o igual que empezar frac 1 entre 2 mayúscula T finalizar frac igual c sub 2 h sup 4 menos 2 s"
+      "expected": "c sub 1 base h sup 4 menos 2 s base menor o igual que empezar frac 1 entre 2 mayúscula T finalizar frac igual c sub 2 base h sup 4 menos 2 s"
     },
     "SupBaseMultirel_sbrief": {
-      "expected": "c sub 1 h sup 4 menos 2 s menor o igual que frac 1 entre 2 mayúscula T igual c sub 2 h sup 4 menos 2 s"
+      "expected": "c sub 1 base h sup 4 menos 2 s base menor o igual que frac 1 entre 2 mayúscula T igual c sub 2 base h sup 4 menos 2 s"
     },
     "SubBaseRelseq_default": {
       "expected": "h subíndice s línea base menor o igual que empezar fracción 1 entre 2 mayúscula T finalizar fracción menor o igual que h subíndice s"
     },
     "SubBaseRelseq_brief": {
-      "expected": "h sub s menor o igual que empezar frac 1 entre 2 mayúscula T finalizar frac menor o igual que h sub s"
+      "expected": "h sub s base menor o igual que empezar frac 1 entre 2 mayúscula T finalizar frac menor o igual que h sub s"
     },
     "SubBaseRelseq_sbrief": {
-      "expected": "h sub s menor o igual que frac 1 entre 2 mayúscula T menor o igual que h sub s"
+      "expected": "h sub s base menor o igual que frac 1 entre 2 mayúscula T menor o igual que h sub s"
     },
     "SubBaseMultirel_default": {
       "expected": "h subíndice s línea base menor o igual que empezar fracción 1 entre 2 mayúscula T finalizar fracción igual h subíndice s"
     },
     "SubBaseMultirel_brief": {
-      "expected": "h sub s menor o igual que empezar frac 1 entre 2 mayúscula T finalizar frac igual h sub s"
+      "expected": "h sub s base menor o igual que empezar frac 1 entre 2 mayúscula T finalizar frac igual h sub s"
     },
     "SubBaseMultirel_sbrief": {
-      "expected": "h sub s menor o igual que frac 1 entre 2 mayúscula T igual h sub s"
+      "expected": "h sub s base menor o igual que frac 1 entre 2 mayúscula T igual h sub s"
     },
     "SubSuperBaseRelseq_default": {
       "expected": "h subíndice s superíndice t línea base menor o igual que empezar fracción 1 entre 2 mayúscula T finalizar fracción menor o igual que h subíndice s superíndice t"
     },
     "SubSuperBaseRelseq_brief": {
-      "expected": "h sub s sup t menor o igual que empezar frac 1 entre 2 mayúscula T finalizar frac menor o igual que h sub s sup t"
+      "expected": "h sub s sup t base menor o igual que empezar frac 1 entre 2 mayúscula T finalizar frac menor o igual que h sub s sup t"
     },
     "SubSuperBaseRelseq_sbrief": {
-      "expected": "h sub s sup t menor o igual que frac 1 entre 2 mayúscula T menor o igual que h sub s sup t"
+      "expected": "h sub s sup t base menor o igual que frac 1 entre 2 mayúscula T menor o igual que h sub s sup t"
     },
     "SubSuperBaseMultirel_default": {
       "expected": "h subíndice s superíndice t línea base menor o igual que empezar fracción 1 entre 2 mayúscula T finalizar fracción igual h subíndice s superíndice t"
     },
     "SubSuperBaseMultirel_brief": {
-      "expected": "h sub s sup t menor o igual que empezar frac 1 entre 2 mayúscula T finalizar frac igual h sub s sup t"
+      "expected": "h sub s sup t base menor o igual que empezar frac 1 entre 2 mayúscula T finalizar frac igual h sub s sup t"
     },
     "SubSuperBaseMultirel_sbrief": {
-      "expected": "h sub s sup t menor o igual que frac 1 entre 2 mayúscula T igual h sub s sup t"
+      "expected": "h sub s sup t base menor o igual que frac 1 entre 2 mayúscula T igual h sub s sup t"
     },
     "SquareWithText_default": {
       "expected": "empezar fracción area of triangle entre area of square finalizar fracción igual empezar fracción 1 unit al cuadrado entre 16 units al cubo finalizar fracción"
@@ -142,10 +142,10 @@
       "expected": "area of triangle area of square superíndice 1 línea base 1 unit superíndice 2 línea base 16 units superíndice 3"
     },
     "FootnoteWithText_brief": {
-      "expected": "area of triangle area of square sup 1 1 unit sup 2 16 units sup 3"
+      "expected": "area of triangle area of square sup 1 base 1 unit sup 2 base 16 units sup 3"
     },
     "FootnoteWithText_sbrief": {
-      "expected": "area of triangle area of square sup 1 1 unit sup 2 16 units sup 3"
+      "expected": "area of triangle area of square sup 1 base 1 unit sup 2 base 16 units sup 3"
     },
     "_comment4_": " TODO: (v2.3.0) Fix this error.",
     "FootnoteWithSimpleText_default": {
