@@ -2,7 +2,8 @@
   "name": "ItalianMathspeakInference",
   "domain": "mathspeak",
   "locale": "it",
-  "factory": "speech",
+  "modality": "speech",
+  "factory": "summary",
   "base": "input/common/inference.json",
   "information": "Italian Mathspeak Inference rules.",
   "active": "InferenceItalian",
@@ -24,7 +25,7 @@
       "expected": "assioma A maiuscola"
     },
     "EmptyAxiom": {
-      "expected": "assioma"
+      "expected": "assioma vuoto"
     },
     "RightLabel_0": {
       "expected": "regola di inferenza etichetta N maiuscola con conclusione X maiuscola e 1 premessa"
@@ -43,6 +44,15 @@
     },
     "LeftLabel_2": {
       "expected": "regola di inferenza etichetta N maiuscola con conclusione X maiuscola e 3 premesse"
+    },
+    "Premises_0": {
+      "expected": "1a premise  assioma A maiuscola"
+    },
+    "Premises_1": {
+      "expected": "1a premise  assioma A maiuscola 2a premise  assioma B maiuscola"
+    },
+    "Premises_2": {
+      "expected": "1a premise  assioma A maiuscola 2a premise  assioma B maiuscola 3a premise  assioma C maiuscola"
     }
   }
 }

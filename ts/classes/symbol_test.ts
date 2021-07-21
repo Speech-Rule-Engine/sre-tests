@@ -96,10 +96,10 @@ export class SymbolTest extends SpeechTest {
   /**
    * @override
    */
-  public method(...args: any[]) {
-    let key = args[1] ? args[1] : args[0];
-    this.domain = args[4] || this.domain;
-    this.executeTest(key, args[2], args[3]);
+  public method() {
+    let key = this.field('key') ? this.field('key') : this.field('name');
+    this.domain = this.field('domain') || this.domain;
+    this.executeTest(key, this.field('expected'), this.field('style'));
   }
 
   /**

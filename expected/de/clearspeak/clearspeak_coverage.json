@@ -90,6 +90,189 @@
     },
     "Angle_5_Length": {
       "expected": "10 Fuß, 1 Zoll"
+    },
+    "Enclose_0": {
+      "expected": "12"
+    },
+    "Enclose_1": {
+      "expected": "12"
+    },
+    "Enclose_2": {
+      "expected": "2 über 12"
+    },
+    "Enclose_3": {
+      "expected": "12 über 2"
+    },
+    "Enclose_4": {
+      "expected": "12 unter 2"
+    },
+    "Enclose_5": {
+      "expected": "2 unter 12"
+    },
+    "Enclose_6": {
+      "expected": "12"
+    },
+    "Enclose_7": {
+      "expected": "12"
+    },
+    "Enclose_8": {
+      "expected": "2 über 12"
+    },
+    "Enclose_9": {
+      "expected": "12 über 2"
+    },
+    "Enclose_10": {
+      "expected": "12 unter 2"
+    },
+    "Enclose_11": {
+      "expected": "2 unter 12"
+    },
+    "EncloseSpecial_0": {
+      "expected": "großes A"
+    },
+    "EncloseSpecial_1": {
+      "expected": "großes A"
+    },
+    "EncloseSpecial_2": {
+      "expected": "großes A"
+    },
+    "EncloseSpecial_3": {
+      "expected": "großes A"
+    },
+    "NestedRoots_0": {
+      "expected": "Quadratwurzel aus, Kubikwurzel aus a, plus b"
+    },
+    "NestedRoots_1": {
+      "expected": "Quadratwurzel aus, die vierte Wurzel aus a, plus b"
+    },
+    "NestedRoots_2": {
+      "expected": "Quadratwurzel aus, Quadratwurzel aus a, plus b"
+    },
+    "NestedRoots_3": {
+      "expected": "positive Quadratwurzel aus, positive Quadratwurzel aus a, plus b"
+    },
+    "NestedRoots_4": {
+      "expected": "positive Quadratwurzel aus, positive Quadratwurzel aus a, plus b, Wurzel Ende"
+    },
+    "NestedRoots_5": {
+      "expected": "positive Quadratwurzel aus, negative Quadratwurzel aus a, Wurzel Ende, plus b, Wurzel Ende"
+    },
+    "Tensor_0": {
+      "expected": "linker unterer Index a linker oberer Index b x rechter unterer Index c rechter oberer Index d"
+    },
+    "Tensor_1": {
+      "expected": "linker unterer Index a b linker oberer Index g h x rechter unterer Index c d rechter oberer Index e f"
+    },
+    "Tensor_2": {
+      "expected": "linker unterer Index a linker oberer Index b x; rechter oberer Index d"
+    },
+    "Tensor_3": {
+      "expected": "linker unterer Index a linker oberer Index b x rechter unterer Index c; r"
+    },
+    "Tensor_4": {
+      "expected": "l; linker oberer Index b x rechter unterer Index c rechter oberer Index d"
+    },
+    "Tensor_5": {
+      "expected": "linker unterer Index a; x rechter unterer Index c rechter oberer Index d"
+    },
+    "Set_0": {
+      "expected": "die Menge aller x nicht in A mit B"
+    },
+    "Set_1": {
+      "expected": "die Menge aller x gehört nicht zu A mit B"
+    },
+    "Set_2": {
+      "expected": "die Menge aller x kein Element von A mit B"
+    },
+    "Set_3": {
+      "expected": "die Menge aller x nicht in A mit B"
+    },
+    "Set_4": {
+      "expected": "die Menge B"
+    },
+    "Set_5": {
+      "expected": "die leere Menge"
+    },
+    "NamedSet_0": {
+      "expected": "die positiven rationalen Zahlen"
+    },
+    "NamedSet_1": {
+      "expected": "die positiven rationalen Zahlen"
+    },
+    "NamedSet_2": {
+      "expected": "die negativen rationalen Zahlen"
+    },
+    "NamedSet_3": {
+      "expected": "die negativen rationalen Zahlen"
+    },
+    "NamedSet_4": {
+      "expected": "q-zwei"
+    },
+    "NamedSet_5": {
+      "expected": "q-zwei"
+    },
+    "NamedSet_6": {
+      "expected": "n-zwei"
+    },
+    "NamedSet_7": {
+      "expected": "n-zwei"
+    },
+    "Unknown": {
+      "expected": "a"
+    },
+    "MultiLines_0": {
+      "expected": "2 Fälle, Fall 1: f von x, ist gleich minus x, if x kleiner als 0. Fall 2: f von x, ist gleich x, if x größer oder gleich 0"
+    },
+    "MultiLines_1": {
+      "expected": "2 Bedingungen, Bedingung 1: f von x, ist gleich minus x; if x kleiner als 0. Bedingung 2: f von x, ist gleich x, if x größer oder gleich 0"
+    },
+    "VulgarFraction": {
+      "expected": "10 geteilt durch 20"
+    },
+    "UnitFraction": {
+      "expected": "2 Kilometer geteilt durch b"
+    },
+    "Decimal": {
+      "expected": "Dezimalbruch 1 Komma 4 mit Periode 3"
+    },
+    "VertLine_SuchThat": {
+      "expected": "3 so dass 6"
+    },
+    "VectorEndDeterminant": {
+      "expected": "die Determinante der 2 mal 2 Matrize. Zeile 1: 2, 1 Zeile 2: 7, 5. Ende Determinante"
+    },
+    "SimpleExponentSquared_0": {
+      "expected": "3 hoch 2 Quadrat"
+    },
+    "SimpleExponentSquared_1": {
+      "expected": "3 hoch i Quadrat"
+    },
+    "SimpleExponentSquared_2": {
+      "expected": "3 hoch zwei drittel Quadrat"
+    },
+    "SimpleExponentCubed_0": {
+      "expected": "3 hoch 2 Kubik"
+    },
+    "SimpleExponentCubed_1": {
+      "expected": "3 hoch i Kubik"
+    },
+    "SimpleExponentCubed_2": {
+      "expected": "3 hoch zwei drittel Kubik"
+    },
+    "MultiRel": {
+      "expected": "a kleiner oder gleich b ist gleich c"
+    },
+    "PrefixFunctionAsExponent": {
+      "expected": "3 hoch Sinus von, Klammer auf, 2 plus x, Klammer zu"
+    },
+    "CompositeFunctionFences": {
+      "expected": "Klammer auf, f plus g, Klammer zu, von, Klammer auf, 2 plus x, Klammer zu"
+    },
+    "LimUpper": {
+      "expected": "Summe unter I"
+    },
+    "Overscript": {
+      "expected": "A unter B"
     }
   }
 }

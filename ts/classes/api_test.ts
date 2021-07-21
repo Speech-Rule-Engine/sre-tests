@@ -96,8 +96,10 @@ export class ApiTest extends AbstractJsonTest {
   /**
    * @override
    */
-  public method(...args: any[]) {
-    this.executeTest(args[0], args[1], args[2], args[3], args[4], args[5]);
+  public method() {
+    this.executeTest(
+      this.field('type'), this.field('input'), this.field('expected'),
+      this.field('setup'), this.field('json'), this.field('move'));
   }
 
 }

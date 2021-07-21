@@ -34,9 +34,11 @@ export class NumberTest extends SpeechTest {
   /**
    * @override
    */
-  public method(...args: string[]) {
-    this.num = args[0] === undefined ? 0 : parseInt(args[0], 10);
-    this.executeTest(args[0], args[1], args[2]);
+  public method() {
+    this.num = this.field('input') === undefined ? 0 :
+      parseInt(this.field('input'), 10);
+    this.executeTest(
+      this.field('input'), this.field('expected'), this.field('preference'));
   }
 
   /**
@@ -46,12 +48,12 @@ export class NumberTest extends SpeechTest {
     super.prepare();
     this.kind = this.jsonTests.kind || this.kind;
   }
-  
+
   /**
    * @override
    */
   public getSpeech(_mml: string) {
     return (LOCALE.NUMBERS as any)[this.kind](this.num);
   }
-  
+
 }

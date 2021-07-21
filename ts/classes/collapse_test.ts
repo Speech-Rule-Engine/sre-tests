@@ -90,8 +90,10 @@ export class CollapseTest extends SpeechTest {
   /**
    * @override
    */
-  public method(...args: any[]) {
-    this.executeTest(args[0], args[1], args[2], args[3], args[4]);
+  public method() {
+    this.executeTest(
+      this.field('input'), this.field('expected'), this.field('preference'),
+      this.field('pre'), this.field('post'));
   }
 
 }
