@@ -112,13 +112,13 @@
       "expected": "나눗셈"
     },
     "AbstrIntegral_default": {
-      "expected": "인테그럴"
+      "expected": "인테그랄"
     },
     "AbstrIntegral_brief": {
-      "expected": "인테그럴"
+      "expected": "인테그랄"
     },
     "AbstrIntegral_sbrief": {
-      "expected": "인테그럴"
+      "expected": "인테그랄"
     },
     "AbstrLim_default": {
       "expected": "리미트"
@@ -240,13 +240,13 @@
       "expected": "2 열의 표에서 첫번째 행"
     },
     "AbstrRowvector_default": {
-      "expected": "2 행의 벡터"
+      "expected": "2 행의 행 벡터"
     },
     "AbstrRowvector_brief": {
-      "expected": "벡터"
+      "expected": "행 벡터"
     },
     "AbstrRowvector_sbrief": {
-      "expected": "벡터"
+      "expected": "행 벡터"
     },
     "AbstrSqrt_default": {
       "expected": "제곱근"
@@ -267,31 +267,31 @@
       "expected": "중첩 제곱근"
     },
     "AbstrSquarematrix_default": {
-      "expected": "2 차원 정방 행렬"
+      "expected": "2 차원 정방행렬"
     },
     "AbstrSquarematrix_brief": {
-      "expected": "정방 행렬"
+      "expected": "정방행렬"
     },
     "AbstrSquarematrix_sbrief": {
-      "expected": "정방 행렬"
+      "expected": "정방행렬"
     },
     "AbstrSubscript_default": {
-      "expected": "아래첨자"
+      "expected": "아래 첨자"
     },
     "AbstrSubscript_brief": {
-      "expected": "아래첨자"
+      "expected": "아래 첨자"
     },
     "AbstrSubscript_sbrief": {
-      "expected": "아래첨자"
+      "expected": "아래 첨자"
     },
     "AbstrSubsup_default": {
-      "expected": "아래첨자가 있는 거듭제곱"
+      "expected": "아래 첨자가 있는 거듭제곱"
     },
     "AbstrSubsup_brief": {
-      "expected": "아래첨자가 있는 거듭제곱"
+      "expected": "아래 첨자가 있는 거듭제곱"
     },
     "AbstrSubsup_sbrief": {
-      "expected": "아래첨자가 있는 거듭제곱"
+      "expected": "아래 첨자가 있는 거듭제곱"
     },
     "AbstrSuperscript_default": {
       "expected": "거듭제곱"
@@ -339,7 +339,7 @@
       "expected": "조건문"
     },
     "AbstrVarDeterminant_default": {
-      "expected": "엔 차원 행렬식"
+      "expected": "n 차원 행렬식"
     },
     "AbstrVarDeterminant_brief": {
       "expected": "행렬식"
@@ -348,13 +348,13 @@
       "expected": "행렬식"
     },
     "AbstrVarMatrix_default": {
-      "expected": "엔 행 엠 열의 행렬"
+      "expected": "n 행 m 열의 행렬"
     },
     "AbstrVarMatrix_brief": {
-      "expected": "정방 행렬"
+      "expected": "정방행렬"
     },
     "AbstrVarMatrix_sbrief": {
-      "expected": "정방 행렬"
+      "expected": "정방행렬"
     },
     "AbstrVarMultiplication_default": {
       "expected": "인자가 가변 개인 곱셈"
@@ -393,7 +393,7 @@
       "expected": "연속 등식"
     },
     "AbstrVarVector_default": {
-      "expected": "엔 차원 벡터"
+      "expected": "n 차원 벡터"
     },
     "AbstrVarVector_brief": {
       "expected": "벡터"
@@ -438,7 +438,7 @@
       "expected": "화살표"
     },
     "AbstrVarRowvector_default": {
-      "expected": "엔 행의 벡터"
+      "expected": "n 행의 벡터"
     }
   }
 }
