@@ -1,11 +1,11 @@
 {
   "name": "EnglishMathspeak",
   "locale": "en",
-  "에프actor와이": "speech",
+  "factory": "speech",
   "base": "input/mathspeak/mathspeak_test.json",
   "information": "English Mathspeak tests.",
   "domain": "mathspeak",
-  "에이ctive": "MathspeakEnglish",
+  "active": "MathspeakEnglish",
   "exclude": [],
   "tests": {
     "Sample_1_1_1_default": {
@@ -98,7 +98,7 @@
     "Sample_1_5_1_sbrief": {
       "expected": "대문자 아이 콤마 대문자묶음 아이 아이 콤마 대문자묶음 아이 아이 아이 콤마 대문자묶음 아이 브이 콤마 대문자 브이 마침표"
     },
-    "_comment0_": " not yet possible, 에이s we do not yet handle mstack.",
+    "_comment0_": " not yet possible, as we do not yet handle mstack.",
     "Sample_1_6_1_default": {
       "expected": "분수시작 7 분의 22 분수끝 equals 3 점 ModifyingAbove 1 4 2 8 5 7 With bar"
     },
@@ -144,13 +144,13 @@
     "Sample_2_6_2_sbrief": {
       "expected": "contour integral 대문자 이 닷 디 진한 엘 equals 빼기 분수 디 티 분의 디 대문자 파이 대문자 비 분수끝"
     },
-    "마이너스Vs빼기_0": {
+    "NegativeVsMinus_0": {
       "expected": "빼기 분수시작 비 분의 1 분수끝"
     },
-    "마이너스Vs빼기_1": {
+    "NegativeVsMinus_1": {
       "expected": "빼기 분수시작 비 분의 에이 분수끝"
     },
-    "마이너스Vs빼기_2": {
+    "NegativeVsMinus_2": {
       "expected": "마이너스 3 와(과) 2 분의 1"
     },
     "Sample_4_2_1_default": {
@@ -938,8 +938,8 @@
       "expected": "ModBelow Below ModBelow 에이 더하기 비 With bar With 별표"
     },
     "_comment8_": " This one is odd. This rule example seems to contradict Rule 11.2, where we",
-    "_comment9_": " ModifyAbove/Below with 닷.  Here the 닷 is used 에이s",
-    "_comment10_": " Over/하단첨자. However, we express 닷 에이s 에이 multi modifier.",
+    "_comment9_": " ModifyAbove/Below with dot.  Here the dot is used as",
+    "_comment10_": " Over/Subscript. However, we express 닷 as a multi modifier.",
     "Sample_11_6_2_default": {
       "expected": "ModifyingAbove ModifyingBelow 에이 더하기 비 With 왼쪽 화살표 With 오른쪽 화살표 하단첨자 닷 상단첨자 닷 첨자끝"
     },
@@ -985,7 +985,7 @@
     "Sample_11_8_2_sbrief": {
       "expected": "ModAbove 엑스 더하기 와이 With bar 상단첨자 엔 equals 1 Over상단첨자 엠 equals 2 첨자끝"
     },
-    "_comment11_": " This rule is currently not possible. It 엔eeds 에이n enhanced processing in the",
+    "_comment11_": " This rule is currently not possible. It needs an enhanced processing in the",
     "_comment12_": " semantic tree maybe together with 에이 simultaneous treatment of mstacks.",
     "Sample_11_9_1_default": {
       "expected": "12 분의 7 equals .58 ModifyingEachAbove 3 3 3 With 닷"
@@ -1032,7 +1032,7 @@
     "Sample_13_1_1_sbrief": {
       "expected": "분수 소거 시간 소거끝 분의 60 소거 마일 소거끝 분수끝 곱하기 분수 1 소거 마일 소거끝 분의 5,280 피트 분수끝 곱하기 분수 60 분 분의 1 소거 시간 소거끝 분수끝 equals 분수 분 분의 5,280 피트 분수끝"
     },
-    "_comment13_": " That should be 마이너스 2!",
+    "_comment13_": " That should be negative 2!",
     "Sample_13_1_2_default": {
       "expected": "1 줄 equals 1 킬로그램 닷 미터 제곱 닷 초 위첨자 마이너스 2"
     },
