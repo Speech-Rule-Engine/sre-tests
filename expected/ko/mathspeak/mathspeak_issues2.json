@@ -9,46 +9,46 @@
   "exclude": [],
   "tests": {
     "MathspeakRoots_0": {
-      "expected": "루트시작 에이 루트끝"
+      "expected": "루트 시작 a a 끝"
     },
     "MathspeakRoots_1": {
-      "expected": "제곱 루트시작 에이 루트끝"
+      "expected": "제곱 루트 시작 a 루트 끝"
     },
     "MathspeakRoots_2": {
-      "expected": "세제곱 루트시작 에이 루트끝"
+      "expected": "세제곱 루트 시작 a 루트 끝"
     },
     "MathspeakRoots_3": {
-      "expected": "네제곱 루트시작 에이 루트끝"
+      "expected": "네제곱 루트 시작 a 루트 끝"
     },
     "MathspeakRoots_4": {
-      "expected": "Nested루트시작 루트시작 에이 루트끝 Nested루트끝"
+      "expected": "Nested루트 시작 루트 시작 a 루트 끝 Nested루트 끝"
     },
     "MathspeakRoots_5": {
-      "expected": "NestedTwice루트시작 Nested루트시작 루트시작 에이 루트끝 Nested루트끝 NestedTwice루트끝"
+      "expected": "NestedTwice루트 시작 Nested루트 시작 루트 시작 a 루트 끝 Nested루트 끝 NestedTwice루트 끝"
     },
     "MathspeakRoots_6": {
-      "expected": "NestedRootIndex 2 Nested루트시작 RootIndex 2 루트시작 에이 루트끝 Nested루트끝"
+      "expected": "NestedRootIndex 2 Nested루트 시작 RootIndex 2 루트 시작 a 루트 끝 Nested루트 끝"
     },
     "MathspeakRoots_7": {
-      "expected": "NestedTwiceRootIndex 2 NestedTwice루트시작 NestedRootIndex 2 Nested루트시작 RootIndex 2 루트시작 에이 루트끝 Nested루트끝 NestedTwice루트끝"
+      "expected": "NestedTwiceRootIndex 2 NestedTwice루트 시작 NestedRootIndex 2 Nested루트 시작 RootIndex 2 루트 시작 a 루트 끝 Nested루트 끝 NestedTwice루트 끝"
     },
     "MathspeakRoots_8": {
-      "expected": "NestedRootIndex 3 Nested루트시작 RootIndex 3 루트시작 에이 루트끝 Nested루트끝"
+      "expected": "NestedRootIndex 3 Nested루트 시작 RootIndex 3 루트 시작 a 루트 끝 Nested루트 끝"
     },
     "MathspeakRoots_9": {
-      "expected": "NestedTwiceRootIndex 3 NestedTwice루트시작 NestedRootIndex 3 Nested루트시작 RootIndex 3 루트시작 에이 루트끝 Nested루트끝 NestedTwice루트끝"
+      "expected": "NestedTwiceRootIndex 3 NestedTwice루트 시작 NestedRootIndex 3 Nested루트 시작 RootIndex 3 루트 시작 a 루트 끝 Nested루트 끝 NestedTwice루트 끝"
     },
     "MathspeakRoots_10": {
-      "expected": "NestedRootIndex 4 Nested루트시작 RootIndex 4 루트시작 에이 루트끝 Nested루트끝"
+      "expected": "NestedRootIndex 4 Nested루트 시작 RootIndex 4 루트 시작 a 루트 끝 Nested루트 끝"
     },
     "MathspeakRoots_11": {
-      "expected": "NestedTwiceRootIndex 4 NestedTwice루트시작 NestedRootIndex 4 Nested루트시작 RootIndex 4 루트시작 에이 루트끝 Nested루트끝 NestedTwice루트끝"
+      "expected": "NestedTwiceRootIndex 4 NestedTwice루트 시작 NestedRootIndex 4 Nested루트 시작 RootIndex 4 루트 시작 a 루트 끝 Nested루트 끝 NestedTwice루트 끝"
     },
     "MathspeakRoots_12": {
-      "expected": "NestedTwiceRootIndex 2 NestedTwice루트시작 NestedRootIndex 3 Nested루트시작 RootIndex 4 루트시작 에이 루트끝 Nested루트끝 NestedTwice루트끝"
+      "expected": "NestedTwiceRootIndex 2 NestedTwice루트 시작 NestedRootIndex 3 Nested루트 시작 RootIndex 4 루트 시작 a 루트 끝 Nested루트 끝 NestedTwice루트 끝"
     },
     "MathspeakRoots_13": {
-      "expected": "NestedTwiceRootIndex 4 NestedTwice루트시작 NestedRootIndex 3 Nested루트시작 RootIndex 2 루트시작 에이 루트끝 Nested루트끝 NestedTwice루트끝"
+      "expected": "NestedTwiceRootIndex 4 NestedTwice루트 시작 NestedRootIndex 3 Nested루트 시작 RootIndex 2 루트 시작 a 루트 끝 Nested루트 끝 NestedTwice루트 끝"
     },
     "HtmlEntities_0": {
       "expected": "less than"
@@ -57,34 +57,34 @@
       "expected": "greater than"
     },
     "HtmlEntities_2": {
-      "expected": "엔"
+      "expected": "n"
     },
     "HtmlEntities_3": {
-      "expected": "엠"
+      "expected": "m"
     },
     "HtmlEntities_4": {
-      "expected": "엔 엠"
+      "expected": "n m"
     },
     "HtmlEntities_5": {
-      "expected": "엔 엠"
+      "expected": "n m"
     },
     "BinomialFromFrac_0": {
-      "expected": "이항계수시작 조합 엔 씨 케이 이항계수끝"
+      "expected": "이항계수 시작 조합 n 씨 k 이항계수 끝"
     },
     "BinomialFromFrac_1": {
-      "expected": "이항계수시작 조합 엔 씨 케이 이항계수끝"
+      "expected": "이항계수 시작 조합 n 씨 k 이항계수 끝"
     },
     "BinomialFromFrac_2": {
-      "expected": "이항계수시작 조합 엔 씨 케이 이항계수끝"
+      "expected": "이항계수 시작 조합 n 씨 k 이항계수 끝"
     },
     "BinomialFromFrac_3": {
-      "expected": "왼쪽 괄호 분수시작 케이 분의 n 분수끝 오른쪽 괄호"
+      "expected": "왼쪽 괄호 분수 시작 k 분의 n 분수 끝 오른쪽 괄호"
     },
     "BinomialFromFrac_4": {
-      "expected": "왼쪽 괄호 분수시작 케이 분의 n 분수끝 오른쪽 괄호"
+      "expected": "왼쪽 괄호 분수 시작 k 분의 n 분수 끝 오른쪽 괄호"
     },
     "BinomialFromFrac_5": {
-      "expected": "왼쪽 괄호 분수시작 케이 분의 n 분수끝 오른쪽 괄호"
+      "expected": "왼쪽 괄호 분수 시작 k 분의 n 분수 끝 오른쪽 괄호"
     },
     "UnnecessarySpaces_0": {
       "expected": "5"
@@ -93,25 +93,25 @@
       "expected": "5"
     },
     "A비sValueVsNeutral_0": {
-      "expected": "세로선 에이 이중 세로선"
+      "expected": "세로선 a 이중 세로선"
     },
     "A비sValueVsNeutral_1": {
-      "expected": "이중 세로선 에이 이중 세로선"
+      "expected": "이중 세로선 a 이중 세로선"
     },
     "A비sValueVsNeutral_2": {
-      "expected": "끊어진 세로선 에이 끊어진 세로선"
+      "expected": "끊어진 세로선 a 끊어진 세로선"
     },
     "NegativeVulgarFraction_0": {
       "expected": "2 분의 1 빼기 18 분의 5"
     },
     "NegativeVulgarFraction_1": {
-      "expected": "빼기 분수시작 에이 분의 5.2 분수끝"
+      "expected": "빼기 분수 시작 a 분의 5.2 분수 끝"
     },
     "NegativeVulgarFraction_2": {
-      "expected": "빼기 분수시작 18 분의 5.2 분수끝"
+      "expected": "빼기 분수 시작 18 분의 5.2 분수 끝"
     },
     "TrivialStuff_0": {
-      "expected": "에이 equals 비"
+      "expected": "a equals 비"
     },
     "TrivialStuff_1": {
       "expected": "따옴표"
@@ -123,16 +123,16 @@
       "expected": "프라임"
     },
     "GermanFonts_0": {
-      "expected": "프락투어 큰 에이"
+      "expected": "프락투어 큰 a"
     },
     "GermanFonts_1": {
-      "expected": "진한 프락투어 큰 에이"
+      "expected": "진한 프락투어 큰 a"
     },
     "GermanFonts_2": {
-      "expected": "프락투어 큰 에이"
+      "expected": "프락투어 큰 a"
     },
     "GermanFonts_3": {
-      "expected": "진한 프락투어 큰 에이"
+      "expected": "진한 프락투어 큰 a"
     },
     "GermanFonts_4": {
       "expected": "진한 프락투어 abc"
@@ -141,19 +141,19 @@
       "expected": "진한 프락투어 ABC"
     },
     "GermanFonts_6": {
-      "expected": "진한 프락투어 큰 에이 큰 비 큰 씨"
+      "expected": "진한 프락투어 큰 a 큰 비 큰 씨"
     },
     "OtherFonts_0": {
-      "expected": "엠"
+      "expected": "m"
     },
     "OtherFonts_1": {
-      "expected": "기본 엠"
+      "expected": "기본 m"
     },
     "OtherFonts_2": {
-      "expected": "엠 아이"
+      "expected": "m 아이"
     },
     "OtherFonts_3": {
-      "expected": "기울인 엠 아이"
+      "expected": "기울인 m 아이"
     },
     "OtherFonts_4": {
       "expected": "30"
@@ -165,13 +165,13 @@
       "expected": "30 도"
     },
     "OtherFonts_7": {
-      "expected": "3 0 엠 큰 에이"
+      "expected": "3 0 m 큰 a"
     },
     "Multiline_0": {
-      "expected": "배열시작 첫번째 행  에이 두번째 행  비 배열끝"
+      "expected": "배열시작 첫번째 행  a 두번째 행  비 배열끝"
     },
     "Multiline_1": {
-      "expected": "배열시작 첫번째 행 첫번째 열 에이 두번째 열 씨 두번째 행 첫번째 열 비 두번째 열 디 배열끝"
+      "expected": "배열시작 첫번째 행 첫번째 열 a 두번째 열 씨 두번째 행 첫번째 열 비 두번째 열 디 배열끝"
     },
     "RelationsWithEmpty_0": {
       "expected": "less than or equals 2"
@@ -186,13 +186,13 @@
       "expected": "배열시작 첫번째 행 첫번째 열 1 두번째 열 less than or equals 2 배열끝"
     },
     "EncloseGeneral": {
-      "expected": "인클로즈시작 동그라미 에이 인클로즈끝"
+      "expected": "인클로즈시작 동그라미 a 인클로즈끝"
     },
     "EncloseLeftbar": {
-      "expected": "세로선 에이"
+      "expected": "세로선 a"
     },
     "EncloseRightbar": {
-      "expected": "에이 세로선"
+      "expected": "a 세로선"
     },
     "_comment_": " mglyph is ignored!",
     "Issue279_0": {
@@ -220,46 +220,46 @@
       "expected": "편미분 편미분 엑스"
     },
     "Issue320_6": {
-      "expected": "왼쪽 괄호 분수시작 편미분 엑스 제곱 분의 편미분 제곱 분수끝 더하기 분수시작 편미분 와이 제곱 분의 편미분 제곱 분수끝 오른쪽 괄호 절댓값시작 파이 왼쪽 괄호 엑스 더하기 기본 아이 와이 오른쪽 괄호 절댓값끝 제곱 equals 0"
+      "expected": "왼쪽 괄호 분수 시작 편미분 엑스 제곱 분의 편미분 제곱 분수 끝 더하기 분수 시작 편미분 와이 제곱 분의 편미분 제곱 분수 끝 오른쪽 괄호 절댓값시작 파이 왼쪽 괄호 엑스 더하기 기본 아이 와이 오른쪽 괄호 절댓값끝 제곱 equals 0"
     },
     "LatinMathfonts_0": {
-      "expected": "프락투어 큰 에이"
+      "expected": "프락투어 큰 a"
     },
     "LatinMathfonts_1": {
-      "expected": "진한 프락투어 큰 에이"
+      "expected": "진한 프락투어 큰 a"
     },
     "LatinMathfonts_2": {
-      "expected": "진한 필기체 큰 에이"
+      "expected": "진한 필기체 큰 a"
     },
     "LatinMathfonts_3": {
-      "expected": "진한 기울임체 큰 에이"
+      "expected": "진한 기울임체 큰 a"
     },
     "LatinMathfonts_4": {
-      "expected": "진한 큰 에이"
+      "expected": "진한 큰 a"
     },
     "LatinMathfonts_5": {
-      "expected": "테두리체 큰 에이"
+      "expected": "테두리체 큰 a"
     },
     "LatinMathfonts_6": {
-      "expected": "기울인 큰 에이"
+      "expected": "기울인 큰 a"
     },
     "LatinMathfonts_7": {
-      "expected": "고정폭 큰 에이"
+      "expected": "고정폭 큰 a"
     },
     "LatinMathfonts_8": {
-      "expected": "진한 고딕 큰 에이"
+      "expected": "진한 고딕 큰 a"
     },
     "LatinMathfonts_9": {
-      "expected": "기울인 고딕 큰 에이"
+      "expected": "기울인 고딕 큰 a"
     },
     "LatinMathfonts_10": {
-      "expected": "진한 고딕 기울임체 큰 에이"
+      "expected": "진한 고딕 기울임체 큰 a"
     },
     "LatinMathfonts_11": {
-      "expected": "고딕 큰 에이"
+      "expected": "고딕 큰 a"
     },
     "LatinMathfonts_12": {
-      "expected": "필기체 큰 에이"
+      "expected": "필기체 큰 a"
     },
     "GreekMathfonts_0": {
       "expected": "진한 큰 알파"
@@ -346,31 +346,31 @@
       "expected": "시그마 합 하단첨자 n 상단첨자 2 첨자끝"
     },
     "LimBoth_4": {
-      "expected": "시그마 합 하단첨자 n 상단첨자 2 첨자끝 에이"
+      "expected": "시그마 합 하단첨자 n 상단첨자 2 첨자끝 a"
     },
     "LimUpper_0": {
       "expected": "시그마 합 상단첨자 n 첨자끝"
     },
     "LimUpper_1": {
-      "expected": "시그마 합 상단첨자 n 첨자끝 에이"
+      "expected": "시그마 합 상단첨자 n 첨자끝 a"
     },
     "LimUpper_2": {
       "expected": "시그마 합 상단첨자 n 첨자끝"
     },
     "LimUpper_3": {
-      "expected": "시그마 합 상단첨자 n 첨자끝 에이"
+      "expected": "시그마 합 상단첨자 n 첨자끝 a"
     },
     "LimLower_0": {
       "expected": "시그마 합 하단첨자 n 첨자끝"
     },
     "LimLower_1": {
-      "expected": "시그마 합 하단첨자 n 첨자끝 에이"
+      "expected": "시그마 합 하단첨자 n 첨자끝 a"
     },
     "LimLower_2": {
       "expected": "시그마 합 하단첨자 n 첨자끝"
     },
     "LimLower_3": {
-      "expected": "시그마 합 하단첨자 n 첨자끝 에이"
+      "expected": "시그마 합 하단첨자 n 첨자끝 a"
     },
     "Issue_442_0": {
       "expected": "9 나누기 3 not equals 9 곱하기 3"
