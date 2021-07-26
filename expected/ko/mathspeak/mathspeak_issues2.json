@@ -2,7 +2,7 @@
   "name": "KoreanMathspeakIssues2",
   "locale": "ko",
   "factory": "speech",
-  "비ase": "input/mathspeak/mathspeak_issues2.json",
+  "base": "input/mathspeak/mathspeak_issues2.json",
   "information": "Korean Mathspeak Issues 2.",
   "domain": "mathspeak",
   "active": "MathspeakIssuesKorean",
@@ -21,13 +21,13 @@
       "expected": "네제곱 루트시작 a 루트끝"
     },
     "MathspeakRoots_4": {
-      "expected": "Nested루트시작 루트시작 a 루트끝 Nested루트끝"
+      "expected": "중첩루트시작 루트시작 a 루트끝 중첩루트끝"
     },
     "MathspeakRoots_5": {
-      "expected": "NestedTwice루트시작 Nested루트시작 루트시작 a 루트끝 Nested루트끝 NestedTwice루트끝"
+      "expected": "이중중첩루트시작 중첩루트시작 루트시작 a 루트끝 중첩루트끝 이중중첩루트끝"
     },
     "MathspeakRoots_6": {
-      "expected": "NestedRootIndex 2 Nested루트시작 RootIndex 2 루트시작 a 루트끝 Nested루트끝"
+      "expected": "NestedRootIndex 2 중첩루트시작 RootIndex 2 루트시작 a 루트끝 중첩루트끝"
     },
     "MathspeakRoots_7": {
       "expected": "NestedTwiceRootIndex 2 NestedTwice루트시작 NestedRootIndex 2 Nested루트시작 RootIndex 2 루트시작 a 루트끝 Nested루트끝 NestedTwice루트끝"
@@ -111,28 +111,28 @@
       "expected": "빼기 분수시작 18 분의 5.2 분수끝"
     },
     "TrivialStuff_0": {
-      "expected": "a equals 비"
+      "expected": "a 등호 b"
     },
     "TrivialStuff_1": {
-      "expected": "따옴표"
+      "expected": "큰 따옴표"
     },
     "TrivialStuff_2": {
-      "expected": "따옴표 엑스 따옴표"
+      "expected": "큰 따옴표 x 큰 따옴표"
     },
     "TrivialStuff_3": {
       "expected": "프라임"
     },
     "GermanFonts_0": {
-      "expected": "프락투어 큰 a"
+      "expected": "프락투어 대문자 a"
     },
     "GermanFonts_1": {
-      "expected": "진한 프락투어 큰 a"
+      "expected": "진한 프락투어 대문자 a"
     },
     "GermanFonts_2": {
-      "expected": "프락투어 큰 a"
+      "expected": "프락투어 대문자 a"
     },
     "GermanFonts_3": {
-      "expected": "진한 프락투어 큰 a"
+      "expected": "진한 프락투어 대문자 a"
     },
     "GermanFonts_4": {
       "expected": "진한 프락투어 abc"
@@ -141,7 +141,7 @@
       "expected": "진한 프락투어 ABC"
     },
     "GermanFonts_6": {
-      "expected": "진한 프락투어 큰 a 큰 비 큰 씨"
+      "expected": "진한 프락투어 대문자 a 대문자 b 대문자 c"
     },
     "OtherFonts_0": {
       "expected": "m"
@@ -150,10 +150,10 @@
       "expected": "기본 m"
     },
     "OtherFonts_2": {
-      "expected": "m 아이"
+      "expected": "m i"
     },
     "OtherFonts_3": {
-      "expected": "기울인 m 아이"
+      "expected": "기울인 m i"
     },
     "OtherFonts_4": {
       "expected": "30"
@@ -165,22 +165,22 @@
       "expected": "30 도"
     },
     "OtherFonts_7": {
-      "expected": "3 0 m 큰 a"
+      "expected": "3 0 m 대문자 a"
     },
     "Multiline_0": {
-      "expected": "배열시작 첫번째 행  a 두번째 행  비 배열끝"
+      "expected": "배열시작 첫번째 행  a 두번째 행  b 배열끝"
     },
     "Multiline_1": {
-      "expected": "배열시작 첫번째 행 첫번째 열 a 두번째 열 씨 두번째 행 첫번째 열 비 두번째 열 디 배열끝"
+      "expected": "배열시작 첫번째 행 첫번째 열 a 두번째 열 c 두번째 행 첫번째 열 b 두번째 열 d 배열끝"
     },
     "RelationsWithEmpty_0": {
       "expected": "less than or equals 2"
     },
     "RelationsWithEmpty_1": {
-      "expected": "equals 2 equals"
+      "expected": "등호 2 등호"
     },
     "RelationsWithEmpty_2": {
-      "expected": "less than or equals 2 equals"
+      "expected": "less than or equals 2 등호"
     },
     "RelationsWithEmpty_3": {
       "expected": "배열시작 첫번째 행 첫번째 열 1 두번째 열 less than or equals 2 배열끝"
@@ -205,142 +205,142 @@
       "expected": "편미분"
     },
     "Issue320_1": {
-      "expected": "엑스 팩토리얼"
+      "expected": "x 팩토리얼"
     },
     "Issue320_2": {
-      "expected": "빼기 마이너스 엑스"
+      "expected": "빼기 마이너스 x"
     },
     "Issue320_3": {
-      "expected": "더하기 더하기 엑스"
+      "expected": "더하기 더하기 x"
     },
     "Issue320_4": {
-      "expected": "싸인 싸인 엑스"
+      "expected": "싸인 싸인 x"
     },
     "Issue320_5": {
-      "expected": "편미분 편미분 엑스"
+      "expected": "편미분 편미분 x"
     },
     "Issue320_6": {
-      "expected": "왼쪽 괄호 분수시작 편미분 엑스 제곱 분의 편미분 제곱 분수끝 더하기 분수시작 편미분 와이 제곱 분의 편미분 제곱 분수끝 오른쪽 괄호 절댓값시작 파이 왼쪽 괄호 엑스 더하기 기본 아이 와이 오른쪽 괄호 절댓값끝 제곱 equals 0"
+      "expected": "왼쪽 괄호 분수시작 편미분 x 제곱 분의 편미분 제곱 분수끝 더하기 분수시작 편미분 y 제곱 분의 편미분 제곱 분수끝 오른쪽 괄호 절댓값시작 파이 왼쪽 괄호 x 더하기 기본 i y 오른쪽 괄호 절댓값끝 제곱 등호 0"
     },
     "LatinMathfonts_0": {
-      "expected": "프락투어 큰 a"
+      "expected": "프락투어 대문자 a"
     },
     "LatinMathfonts_1": {
-      "expected": "진한 프락투어 큰 a"
+      "expected": "진한 프락투어 대문자 a"
     },
     "LatinMathfonts_2": {
-      "expected": "진한 필기체 큰 a"
+      "expected": "진한 필기체 대문자 a"
     },
     "LatinMathfonts_3": {
-      "expected": "진한 기울임체 큰 a"
+      "expected": "진한 기울임체 대문자 a"
     },
     "LatinMathfonts_4": {
-      "expected": "진한 큰 a"
+      "expected": "진한 대문자 a"
     },
     "LatinMathfonts_5": {
-      "expected": "테두리체 큰 a"
+      "expected": "테두리체 대문자 a"
     },
     "LatinMathfonts_6": {
-      "expected": "기울인 큰 a"
+      "expected": "기울인 대문자 a"
     },
     "LatinMathfonts_7": {
-      "expected": "고정폭 큰 a"
+      "expected": "고정폭 대문자 a"
     },
     "LatinMathfonts_8": {
-      "expected": "진한 고딕 큰 a"
+      "expected": "진한 고딕 대문자 a"
     },
     "LatinMathfonts_9": {
-      "expected": "기울인 고딕 큰 a"
+      "expected": "기울인 고딕 대문자 a"
     },
     "LatinMathfonts_10": {
-      "expected": "진한 고딕 기울임체 큰 a"
+      "expected": "진한 고딕 기울임체 대문자 a"
     },
     "LatinMathfonts_11": {
-      "expected": "고딕 큰 a"
+      "expected": "고딕 대문자 a"
     },
     "LatinMathfonts_12": {
-      "expected": "필기체 큰 a"
+      "expected": "필기체 대문자 a"
     },
     "GreekMathfonts_0": {
-      "expected": "진한 큰 알파"
+      "expected": "진한 대문자 알파"
     },
     "GreekMathfonts_1": {
-      "expected": "기울인 큰 알파"
+      "expected": "기울인 대문자 알파"
     },
     "GreekMathfonts_2": {
-      "expected": "진한 기울임체 큰 알파"
+      "expected": "진한 기울임체 대문자 알파"
     },
     "GreekMathfonts_3": {
-      "expected": "진한 고딕 큰 알파"
+      "expected": "진한 고딕 대문자 알파"
     },
     "GreekMathfonts_4": {
-      "expected": "진한 고딕 기울임체 큰 알파"
+      "expected": "진한 고딕 기울임체 대문자 알파"
     },
     "Prime_0": {
-      "expected": "엑스 프라임"
+      "expected": "x 프라임"
     },
     "Prime_1": {
-      "expected": "엑스 더블 프라임"
+      "expected": "x 더블 프라임"
     },
     "Prime_2": {
-      "expected": "엑스 트리플 프라임"
+      "expected": "x 트리플 프라임"
     },
     "Prime_3": {
-      "expected": "엑스 쿼드 프라임"
+      "expected": "x 쿼드러플 프라임"
     },
     "Prime_4": {
-      "expected": "엑스 프라임"
+      "expected": "x 프라임"
     },
     "Prime_5": {
-      "expected": "엑스 더블 프라임"
+      "expected": "x 더블 프라임"
     },
     "Prime_6": {
-      "expected": "엑스 프라임"
+      "expected": "x 프라임"
     },
     "Prime_7": {
-      "expected": "엑스 더블 프라임"
+      "expected": "x 더블 프라임"
     },
     "Prime_8": {
-      "expected": "엑스 프라임"
+      "expected": "x 프라임"
     },
     "Prime_9": {
-      "expected": "엑스 더블 프라임"
+      "expected": "x 더블 프라임"
     },
     "Prime_10": {
-      "expected": "엑스 트리플 프라임"
+      "expected": "x 트리플 프라임"
     },
     "Prime_11": {
-      "expected": "엑스 쿼드 프라임"
+      "expected": "x 쿼드 프라임"
     },
     "Prime_12": {
-      "expected": "엑스 오 프라임"
+      "expected": "x 오 프라임"
     },
     "Prime_13": {
-      "expected": "엑스 육 프라임"
+      "expected": "x 육 프라임"
     },
     "Prime_14": {
-      "expected": "엑스 더블 프라임"
+      "expected": "x 더블 프라임"
     },
     "Prime_15": {
-      "expected": "엑스 트리플 프라임"
+      "expected": "x 트리플 프라임"
     },
     "Prime_16": {
-      "expected": "엑스 쿼드 프라임"
+      "expected": "x 쿼드 프라임"
     },
     "Prime_17": {
-      "expected": "엑스 오 프라임"
+      "expected": "x 오 프라임"
     },
     "Prime_18": {
-      "expected": "엑스 육 프라임"
+      "expected": "x 육 프라임"
     },
     "LimBoth_0": {
-      "expected": "시그마 합 하단첨자 n 상단첨자 2 첨자끝 아래에있는 바 위에있는 물결표"
+      "expected": "시그마 합 하단첨자 n 상단첨자 2 첨자끝 아래에 있는 바 위에 있는 물결표"
     },
     "LimBoth_1": {
-      "expected": "시그마 합 하단첨자 n 상단첨자 2 첨자끝 아래에있는 바 위에있는 물결표"
+      "expected": "시그마 합 하단첨자 n 상단첨자 2 첨자끝 아래에 있는 바 위에 있는 물결표"
     },
     "LimBoth_2": {
-      "expected": "시그마 합 하단첨자 n 상단첨자 2 첨자끝 아래에있는 바 위에있는 물결표"
+      "expected": "시그마 합 하단첨자 n 상단첨자 2 첨자끝 아래에 있는 바 위에 있는 물결표"
     },
     "LimBoth_3": {
       "expected": "시그마 합 하단첨자 n 상단첨자 2 첨자끝"
