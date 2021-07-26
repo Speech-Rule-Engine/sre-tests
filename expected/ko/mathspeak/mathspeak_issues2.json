@@ -111,7 +111,7 @@
       "expected": "빼기 분수시작 18 분의 5.2 분수끝"
     },
     "TrivialStuff_0": {
-      "expected": "a equals 비"
+      "expected": "a 등호 b"
     },
     "TrivialStuff_1": {
       "expected": "따옴표"
@@ -174,16 +174,16 @@
       "expected": "배열시작 첫번째 행 첫번째 열 a 두번째 열 씨 두번째 행 첫번째 열 비 두번째 열 디 배열끝"
     },
     "RelationsWithEmpty_0": {
-      "expected": "less than or equals 2"
+      "expected": "less than or 등호 2"
     },
     "RelationsWithEmpty_1": {
-      "expected": "equals 2 equals"
+      "expected": "등호 2 등호"
     },
     "RelationsWithEmpty_2": {
-      "expected": "less than or equals 2 equals"
+      "expected": "less than or 등호 2 등호"
     },
     "RelationsWithEmpty_3": {
-      "expected": "배열시작 첫번째 행 첫번째 열 1 두번째 열 less than or equals 2 배열끝"
+      "expected": "배열시작 첫번째 행 첫번째 열 1 두번째 열 less than or 등호 2 배열끝"
     },
     "EncloseGeneral": {
       "expected": "인클로즈시작 동그라미 a 인클로즈끝"
@@ -220,7 +220,7 @@
       "expected": "편미분 편미분 엑스"
     },
     "Issue320_6": {
-      "expected": "왼쪽 괄호 분수시작 편미분 엑스 제곱 분의 편미분 제곱 분수끝 더하기 분수시작 편미분 와이 제곱 분의 편미분 제곱 분수끝 오른쪽 괄호 절댓값시작 파이 왼쪽 괄호 엑스 더하기 기본 아이 와이 오른쪽 괄호 절댓값끝 제곱 equals 0"
+      "expected": "왼쪽 괄호 분수시작 편미분 엑스 제곱 분의 편미분 제곱 분수끝 더하기 분수시작 편미분 와이 제곱 분의 편미분 제곱 분수끝 오른쪽 괄호 절댓값시작 파이 왼쪽 괄호 엑스 더하기 기본 아이 와이 오른쪽 괄호 절댓값끝 제곱 등호 0"
     },
     "LatinMathfonts_0": {
       "expected": "프락투어 큰 a"
@@ -373,13 +373,13 @@
       "expected": "시그마 합 하단첨자 n 첨자끝 a"
     },
     "Issue_442_0": {
-      "expected": "9 나누기 3 not equals 9 곱하기 3"
+      "expected": "9 나누기 3 not 등호 9 곱하기 3"
     },
     "Issue_442_1": {
       "expected": "9 나누기 3"
     },
     "Issue_442_2": {
-      "expected": "9 나누기 3 not equals 9 곱하기 3"
+      "expected": "9 나누기 3 not 등호 9 곱하기 3"
     },
     "Issue_442_3": {
       "expected": "9 나누기 3"
