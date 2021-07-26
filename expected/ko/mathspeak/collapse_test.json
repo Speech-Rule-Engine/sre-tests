@@ -12,31 +12,31 @@
       "expected": "여닫기 항이 2 개인 덧셈"
     },
     "CollapsedAddition_brief": {
-      "expected": "여닫기 덧셈"
+      "expected": "여닫기 합"
     },
     "CollapsedAddition_sbrief": {
-      "expected": "여닫기 덧셈"
+      "expected": "여닫기 합"
     },
     "CollapsedBigop_default": {
-      "expected": "여닫기 시그마 합"
+      "expected": "여닫기 시그마 합계"
     },
     "CollapsedBigop_brief": {
-      "expected": "여닫기 시그마 합"
+      "expected": "여닫기 시그마 합계"
     },
     "CollapsedBigop_sbrief": {
-      "expected": "여닫기 시그마 합"
+      "expected": "여닫기 시그마 합계"
     },
     "CollapsedBinomial_default": {
-      "expected": "여닫기 이항계수"
+      "expected": "여닫기 이항식"
     },
     "CollapsedBinomial_brief": {
-      "expected": "여닫기 이항계수"
+      "expected": "여닫기 이항식"
     },
     "CollapsedBinomial_sbrief": {
-      "expected": "여닫기 이항계수"
+      "expected": "여닫기 이항식"
     },
     "CollapsedCases_default": {
-      "expected": "여닫기 케이스가 2 개인 조건문"
+      "expected": "여닫기 총 케이스 수 2 으로 이루어진 조건문"
     },
     "CollapsedCases_brief": {
       "expected": "여닫기 조건문"
@@ -45,7 +45,7 @@
       "expected": "여닫기 조건문"
     },
     "CollapsedContinuedFraction_default": {
-      "expected": "여닫기 연속되는 분수"
+      "expected": "여닫기 연분수"
     },
     "CollapsedContinuedFraction_brief": {
       "expected": "여닫기 연분수"
@@ -73,7 +73,7 @@
     },
     "CollapsedFunction_default": {
       "_comment0_": " var input = '<mi>sin</mi><mi>x</mi>';",
-      "expected": "여닫기 함수식"
+      "expected": "여닫기 함수"
     },
     "CollapsedFunction_brief": {
       "_comment0_": " var input = '<mi>sin</mi><mi>x</mi>';",
@@ -84,16 +84,16 @@
       "expected": "여닫기 함수"
     },
     "CollapsedIdentifier_default": {
-      "expected": "여닫기 긴 식별자"
+      "expected": "여닫기 긴 변수"
     },
     "CollapsedIdentifier_brief": {
-      "expected": "여닫기 긴 식별자"
+      "expected": "여닫기 긴 변수"
     },
     "CollapsedIdentifier_sbrief": {
       "expected": "여닫기 긴 식별자"
     },
     "CollapsedInfixop_default": {
-      "expected": "여닫기 인자가 2 개인 나눗셈"
+      "expected": "여닫기 2 개의 원소로 이루어진 나눗셈"
     },
     "CollapsedInfixop_brief": {
       "expected": "여닫기 나눗셈"
@@ -102,13 +102,13 @@
       "expected": "여닫기 나눗셈"
     },
     "CollapsedIntegral_default": {
-      "expected": "여닫기 인테그럴"
+      "expected": "여닫기 적분"
     },
     "CollapsedIntegral_brief": {
-      "expected": "여닫기 인테그럴"
+      "expected": "여닫기 적분"
     },
     "CollapsedIntegral_sbrief": {
-      "expected": "여닫기 인테그럴"
+      "expected": "여닫기 적분"
     },
     "CollapsedLim_default": {
       "expected": "여닫기 리미트"
@@ -141,19 +141,19 @@
       "expected": "여닫기 인자가 2 개인 곱셈"
     },
     "CollapsedMultiplication_brief": {
-      "expected": "여닫기 곱셈"
+      "expected": "여닫기 곱"
     },
     "CollapsedMultiplication_sbrief": {
-      "expected": "여닫기 곱셈"
+      "expected": "여닫기 곱"
     },
     "CollapsedMultirel_default": {
       "expected": "여닫기 항이 3 개인 연속 관계식"
     },
     "CollapsedMultirel_brief": {
-      "expected": "여닫기 연속 관계식"
+      "expected": "여닫기 연속된 관계식"
     },
     "CollapsedMultirel_sbrief": {
-      "expected": "여닫기 연속 관계식"
+      "expected": "여닫기 연속된 관계식"
     },
     "CollapsedNumber_default": {
       "expected": "여닫기 긴 수"
@@ -165,34 +165,34 @@
       "expected": "여닫기 긴 수"
     },
     "CollapsedPunctuated_default": {
-      "expected": "여닫기 길이가 3 인 콤마 로 구분된 리스트"
+      "expected": "여닫기 콤마 로 나누어진 총 요소의 갯수가 3 인 리스트"
     },
     "CollapsedPunctuated_brief": {
-      "expected": "여닫기 콤마 로 구분된 리스트"
+      "expected": "여닫기 콤마 로 나누어진 리스트"
     },
     "CollapsedPunctuated_sbrief": {
-      "expected": "여닫기 콤마 로 구분된 리스트"
+      "expected": "여닫기 콤마 로 나누어진 리스트"
     },
     "CollapsedRelation_default": {
-      "expected": "여닫기 등식"
+      "expected": "여닫기 등호"
     },
     "CollapsedRelation_brief": {
-      "expected": "여닫기 등식"
+      "expected": "여닫기 등호"
     },
     "CollapsedRelation_sbrief": {
-      "expected": "여닫기 등식"
+      "expected": "여닫기 등호"
     },
     "CollapsedRelationSeq_default": {
       "expected": "여닫기 항이 3 개인 연속 등식"
     },
     "CollapsedRelationSeq_brief": {
-      "expected": "여닫기 연속 등식"
+      "expected": "여닫기 연속된 등식"
     },
     "CollapsedRelationSeq_sbrief": {
-      "expected": "여닫기 연속 등식"
+      "expected": "여닫기 연속된 등식"
     },
     "CollapsedRoot_default": {
-      "expected": "여닫기 세제곱근"
+      "expected": "여닫기 3 제곱근"
     },
     "CollapsedRoot_brief": {
       "expected": "여닫기 루트"
@@ -201,7 +201,7 @@
       "expected": "여닫기 루트"
     },
     "CollapsedRootNested_default": {
-      "expected": "여닫기 세제곱근의 중첩 루트"
+      "expected": "여닫기 중첩 루트의 3"
     },
     "CollapsedRootNested_brief": {
       "expected": "여닫기 중첩 루트"
@@ -210,13 +210,13 @@
       "expected": "여닫기 중첩 루트"
     },
     "CollapsedRowvector_default": {
-      "expected": "여닫기 2 행의 벡터"
+      "expected": "여닫기 2 차원 행 벡터"
     },
     "CollapsedRowvector_brief": {
-      "expected": "여닫기 벡터"
+      "expected": "여닫기 행 벡터"
     },
     "CollapsedRowvector_sbrief": {
-      "expected": "여닫기 벡터"
+      "expected": "여닫기 행 벡터"
     },
     "CollapsedSqrt_default": {
       "expected": "여닫기 제곱근"
@@ -228,31 +228,31 @@
       "expected": "여닫기 제곱근"
     },
     "CollapsedSqrtNested_default": {
-      "expected": "여닫기 중첩 제곱근"
+      "expected": "여닫기 중첩 루트"
     },
     "CollapsedSqrtNested_brief": {
-      "expected": "여닫기 중첩 제곱근"
+      "expected": "여닫기 중첩 루트"
     },
     "CollapsedSqrtNested_sbrief": {
-      "expected": "여닫기 중첩 제곱근"
+      "expected": "여닫기 중첩 루트"
     },
     "CollapsedSquarematrix_default": {
-      "expected": "여닫기 2 차원 정방 행렬"
+      "expected": "여닫기 2 차원 정사각행렬"
     },
     "CollapsedSquarematrix_brief": {
-      "expected": "여닫기 정방 행렬"
+      "expected": "여닫기 정사각행렬"
     },
     "CollapsedSquarematrix_sbrief": {
-      "expected": "여닫기 정방 행렬"
+      "expected": "여닫기 정사각행렬"
     },
     "CollapsedSubscript_default": {
       "expected": "여닫기 아래첨자"
     },
     "CollapsedSubscript_brief": {
-      "expected": "여닫기 아래첨자"
+      "expected": "여닫기 아래 첨자"
     },
     "CollapsedSubscript_sbrief": {
-      "expected": "여닫기 아래첨자"
+      "expected": "여닫기 아래 첨자"
     },
     "CollapsedSubsup_default": {
       "expected": "여닫기 아래첨자가 있는 거듭제곱"
@@ -264,43 +264,43 @@
       "expected": "여닫기 아래첨자가 있는 거듭제곱"
     },
     "CollapsedSuperscript_default": {
-      "expected": "여닫기 거듭제곱"
+      "expected": "여닫기 제곱과 아래 첨자"
     },
     "CollapsedSuperscript_brief": {
-      "expected": "여닫기 거듭제곱"
+      "expected": "여닫기 제곱과 아래 첨자"
     },
     "CollapsedSuperscript_sbrief": {
-      "expected": "여닫기 거듭제곱"
+      "expected": "여닫기 제곱"
     },
     "CollapsedTable_default": {
-      "expected": "여닫기 2 행 2 열의 표"
+      "expected": "여닫기 2 행 2 열로 이루어진 표"
     },
     "CollapsedTable_brief": {
-      "expected": "여닫기 2 행 2 열의 표"
+      "expected": "여닫기 2 행 2 열로 이루어진 표"
     },
     "CollapsedTable_sbrief": {
-      "expected": "여닫기 2 행 2 열의 표"
+      "expected": "여닫기 2 행 2 열로 이루어진 표"
     },
     "CollapsedText_default": {
-      "expected": "여닫기 텍스트"
+      "expected": "여닫기 문자"
     },
     "CollapsedText_brief": {
-      "expected": "여닫기 텍스트"
+      "expected": "여닫기 문자"
     },
     "CollapsedText_sbrief": {
-      "expected": "여닫기 텍스트"
+      "expected": "여닫기 문자"
     },
     "CollapsedVarAddition_default": {
-      "expected": "여닫기 항이 가변 개인 덧셈"
+      "expected": "여닫기 여러 개의 피가수의 합"
     },
     "CollapsedVarAddition_brief": {
-      "expected": "여닫기 덧셈"
+      "expected": "여닫기 합"
     },
     "CollapsedVarAddition_sbrief": {
-      "expected": "여닫기 덧셈"
+      "expected": "여닫기 합"
     },
     "CollapsedVarCases_default": {
-      "expected": "여닫기 케이스가 가변 개인 조건문"
+      "expected": "여닫기 여러 개의 케이스로 이루어진 조건문"
     },
     "CollapsedVarCases_brief": {
       "expected": "여닫기 조건문"
@@ -309,7 +309,7 @@
       "expected": "여닫기 조건문"
     },
     "CollapsedVarDeterminant_default": {
-      "expected": "여닫기 엔 차원 행렬식"
+      "expected": "여닫기 n 차원 행렬식"
     },
     "CollapsedVarDeterminant_brief": {
       "expected": "여닫기 행렬식"
@@ -318,52 +318,52 @@
       "expected": "여닫기 행렬식"
     },
     "CollapsedVarMatrix_default": {
-      "expected": "여닫기 엔 행 엠 열의 행렬"
+      "expected": "여닫기 n 행 m 열의 행렬"
     },
     "CollapsedVarMatrix_brief": {
-      "expected": "여닫기 정방 행렬"
+      "expected": "여닫기 정사각행렬"
     },
     "CollapsedVarMatrix_sbrief": {
-      "expected": "여닫기 정방 행렬"
+      "expected": "여닫기 정사각행렬"
     },
     "CollapsedVarMultiplication_default": {
-      "expected": "여닫기 인자가 가변 개인 곱셈"
+      "expected": "여닫기 여러 개의 피연산자의 곱"
     },
     "CollapsedVarMultiplication_brief": {
-      "expected": "여닫기 곱셈"
+      "expected": "여닫기 곱"
     },
     "CollapsedVarMultiplication_sbrief": {
-      "expected": "여닫기 곱셈"
+      "expected": "여닫기 곱"
     },
     "CollapsedVarMultirel_default": {
-      "expected": "여닫기 항이 가변 개인 연속 관계식"
+      "expected": "여닫기 여러 개의 연속된 관계식"
     },
     "CollapsedVarMultirel_brief": {
-      "expected": "여닫기 연속 관계식"
+      "expected": "여닫기 연속된 관계식"
     },
     "CollapsedVarMultirel_sbrief": {
-      "expected": "여닫기 연속 관계식"
+      "expected": "여닫기 연속된 관계식"
     },
     "CollapsedVarPunctuated_default": {
-      "expected": "여닫기 길이가 가변 인 콤마 로 구분된 리스트"
+      "expected": "여닫기 여러 개의 요소가 콤마 로 나누어진 리스트"
     },
     "CollapsedVarPunctuated_brief": {
-      "expected": "여닫기 콤마 로 구분된 리스트"
+      "expected": "여닫기 콤마 로 나누어진 리스트"
     },
     "CollapsedVarPunctuated_sbrief": {
-      "expected": "여닫기 콤마 로 구분된 리스트"
+      "expected": "여닫기 콤마 로 나누어진 리스트"
     },
     "CollapsedVarRelation_default": {
-      "expected": "여닫기 항이 가변 개인 연속 등식"
+      "expected": "여닫기 여러 개의 연속된 등호"
     },
     "CollapsedVarRelation_brief": {
-      "expected": "여닫기 연속 등식"
+      "expected": "여닫기 연속된 등식"
     },
     "CollapsedVarRelation_sbrief": {
-      "expected": "여닫기 연속 등식"
+      "expected": "여닫기 연속된 등식"
     },
     "CollapsedVarVector_default": {
-      "expected": "여닫기 엔 차원 벡터"
+      "expected": "여닫기 n 차원 벡터"
     },
     "CollapsedVarVector_brief": {
       "expected": "여닫기 벡터"
@@ -387,7 +387,7 @@
       "expected": "여닫기 세제곱근의 중첩 루트 에이"
     },
     "CollapsedVarSubtraction_default": {
-      "expected": "여닫기 항이 가변 개인 뺄셈"
+      "expected": "여닫기 여러 개의 원소로 이루어진 뺄셈"
     },
     "CollapsedVarSubtraction_brief": {
       "expected": "여닫기 뺄셈"
@@ -396,25 +396,25 @@
       "expected": "여닫기 뺄셈"
     },
     "CollapsedCountImplicit_default": {
-      "expected": "여닫기 인자가 3 개인 곱셈"
+      "expected": "여닫기 3 개의 피연산자의 곱"
     },
     "CollapsedCountImplicit_brief": {
-      "expected": "여닫기 곱셈"
+      "expected": "여닫기 곱"
     },
     "CollapsedCountImplicit_sbrief": {
-      "expected": "여닫기 곱셈"
+      "expected": "여닫기 곱"
     },
     "CollapsedVarImplicit_default": {
-      "expected": "여닫기 인자가 가변 개인 곱셈"
+      "expected": "여닫기 여러 개의 피연산자의 곱"
     },
     "CollapsedVarArrowRelation_default": {
-      "expected": "여닫기 항이 가변 개인 연속 화살표"
+      "expected": "여닫기 여러 개의 연속된 화살표"
     },
     "CollapsedArrowRelation_default": {
       "expected": "여닫기 화살표"
     },
     "CollapsedVarRowvector_default": {
-      "expected": "여닫기 엔 행의 벡터"
+      "expected": "여닫기 n 차원 행 벡터"
     }
   }
 }

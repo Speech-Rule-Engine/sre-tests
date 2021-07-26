@@ -33,7 +33,7 @@
       "expected": "마이너스 24.15 빼기 왼쪽 괄호 13.7 오른쪽 괄호 equals"
     },
     "Sample_3_sbrief": {
-      "expected": "마이너스 24.15 빼기 좌 괄호 13.7 우 괄호 equals"
+      "expected": "마이너스 24.15 빼기 좌 괄호 13.7 오른쪽 괄호 equals"
     },
     "Sample_4_default": {
       "expected": "왼쪽 괄호 마이너스 4 오른쪽 괄호 곱하기 3 equals 마이너스 12"
@@ -135,58 +135,58 @@
       "expected": "8 곱하기 7"
     },
     "Sample_15_default": {
-      "expected": "엠 각 1 equals 30 도"
+      "expected": "m 각 1 equals 30 도"
     },
     "Sample_15_brief": {
-      "expected": "엠 각 1 equals 30 도"
+      "expected": "m 각 1 equals 30 도"
     },
     "Sample_15_sbrief": {
-      "expected": "엠 각 1 equals 30 도"
+      "expected": "m 각 1 equals 30 도"
     },
     "Sample_16_default": {
-      "expected": "엠 각 2 equals 60 도"
+      "expected": "m 각 2 equals 60 도"
     },
     "Sample_16_brief": {
-      "expected": "엠 각 2 equals 60 도"
+      "expected": "m 각 2 equals 60 도"
     },
     "Sample_16_sbrief": {
-      "expected": "엠 각 2 equals 60 도"
+      "expected": "m 각 2 equals 60 도"
     },
     "Sample_17_default": {
-      "expected": "엠 각 1 더하기 엠 각 2 equals 90 도"
+      "expected": "m 각 1 더하기 m 각 2 equals 90 도"
     },
     "Sample_17_brief": {
-      "expected": "엠 각 1 더하기 엠 각 2 equals 90 도"
+      "expected": "m 각 1 더하기 m 각 2 equals 90 도"
     },
     "Sample_17_sbrief": {
-      "expected": "엠 각 1 더하기 엠 각 2 equals 90 도"
+      "expected": "m 각 1 더하기 m 각 2 equals 90 도"
     },
     "Sample_18_default": {
-      "expected": "엠 각 큰 엠 더하기 엠 각 큰 엔 equals 180 도"
+      "expected": "m 각 대문자 m 더하기 m 각 대문자 n equals 180 도"
     },
     "Sample_18_brief": {
-      "expected": "엠 각 큰 엠 더하기 엠 각 큰 엔 equals 180 도"
+      "expected": "m 각 대문자 m 더하기 m 각 대문자 n equals 180 도"
     },
     "Sample_18_sbrief": {
-      "expected": "엠 각 큰 엠 더하기 엠 각 큰 엔 equals 180 도"
+      "expected": "m 각 대문자 m 더하기 m 각 대문자 n equals 180 도"
     },
     "Sample_19_default": {
-      "expected": "큰 에이 equals 2 분의 1 비 에이치"
+      "expected": "대문자 a equals 2 분의 1 b h"
     },
     "Sample_19_brief": {
-      "expected": "큰 에이 equals 2 분의 1 비 에이치"
+      "expected": "대문자 a equals 2 분의 1 b h"
     },
     "Sample_19_sbrief": {
-      "expected": "큰 에이 equals 2 분의 1 비 에이치"
+      "expected": "대문자 a equals 2 분의 1 b h"
     },
     "Sample_20_default": {
-      "expected": "분수시작 area of square 분의 area of triangle 분수끝 equals 분수시작 16 units 제곱 분의 1 unit 제곱 분수끝"
+      "expected": "분수 시작 area of square 분의 area of triangle 분수 끝 equals 분수 시작 16 units 제곱 분의 1 unit 제곱 분수 끝"
     },
     "Sample_20_brief": {
-      "expected": "분수시작 area of square 분의 area of triangle 분수끝 equals 분수시작 16 units 제곱 분의 1 unit 제곱 분수끝"
+      "expected": "분수 시작 area of square 분의 area of triangle 분수 끝 equals 분수 시작 16 units 제곱 분의 1 unit 제곱 분수 끝"
     },
     "Sample_20_sbrief": {
-      "expected": "분수 area of square 분의 area of triangle 분수끝 equals 분수 16 units 제곱 분의 1 unit 제곱 분수끝"
+      "expected": "분수 area of square 분의 area of triangle 분수 끝 equals 분수 16 units 제곱 분의 1 unit 제곱 분수 끝"
     },
     "Sample_21_default": {
       "expected": "0.6 제곱"
@@ -207,22 +207,22 @@
       "expected": "1.5 제곱"
     },
     "Sample_23_default": {
-      "expected": "4 왼쪽 괄호 2 엑스 더하기 3 엑스 오른쪽 괄호"
+      "expected": "4 왼쪽 괄호 2 x 더하기 3 x 오른쪽 괄호"
     },
     "Sample_23_brief": {
-      "expected": "4 왼쪽 괄호 2 엑스 더하기 3 엑스 오른쪽 괄호"
+      "expected": "4 왼쪽 괄호 2 x 더하기 3 x 오른쪽 괄호"
     },
     "Sample_23_sbrief": {
-      "expected": "4 좌 괄호 2 엑스 더하기 3 엑스 우 괄호"
+      "expected": "4 좌 괄호 2 x 더하기 3 x 우 괄호"
     },
     "Sample_24_default": {
-      "expected": "36 더하기 4 와이 빼기 1 와이 제곱 더하기 5 와이 제곱 빼기 2"
+      "expected": "36 더하기 4 y 빼기 1 y 제곱 더하기 5 y 제곱 빼기 2"
     },
     "Sample_24_brief": {
-      "expected": "36 더하기 4 와이 빼기 1 와이 제곱 더하기 5 와이 제곱 빼기 2"
+      "expected": "36 더하기 4 y 빼기 1 y 제곱 더하기 5 y 제곱 빼기 2"
     },
     "Sample_24_sbrief": {
-      "expected": "36 더하기 4 와이 빼기 1 와이 제곱 더하기 5 와이 제곱 빼기 2"
+      "expected": "36 더하기 4 y 빼기 1 y 제곱 더하기 5 y 제곱 빼기 2"
     },
     "Sample_25_default": {
       "expected": "왼쪽 괄호 5 더하기 9 오른쪽 괄호 빼기 4 더하기 3 equals"
@@ -234,247 +234,247 @@
       "expected": "좌 괄호 5 더하기 9 우 괄호 빼기 4 더하기 3 equals"
     },
     "Sample_26_default": {
-      "expected": "큰 비 큰 C 위에있는 왼쪽 오른쪽 화살표"
+      "expected": "대문자 b 대문자 c 위에있는 왼쪽 오른쪽 화살표"
     },
     "Sample_26_brief": {
-      "expected": "큰 비 큰 C 위에 왼쪽 오른쪽 화살표"
+      "expected": "대문자 b 대문자 c 위에 왼쪽 오른쪽 화살표"
     },
     "Sample_26_sbrief": {
-      "expected": "큰 비 큰 C 위에 좌 우 화살표"
+      "expected": "대문자 b 대문자 c 위에 좌 우 화살표"
     },
     "Sample_27_default": {
-      "expected": "큰 피 큰 큐 위에있는 오른쪽 화살표"
+      "expected": "대문자 p 대문자 q 위에있는 오른쪽 화살표"
     },
     "Sample_27_brief": {
-      "expected": "큰 피 큰 큐 위에 오른쪽 화살표"
+      "expected": "대문자 p 대문자 q 위에 오른쪽 화살표"
     },
     "Sample_27_sbrief": {
-      "expected": "큰 피 큰 큐 위에 우 화살표"
+      "expected": "대문자 p 대문자 q 위에 우 화살표"
     },
     "Sample_28_default": {
-      "expected": "큰 쥐 큰 에이치 위에있는 바"
+      "expected": "대문자 g 대문자 h 위에있는 바"
     },
     "Sample_28_brief": {
-      "expected": "큰 쥐 큰 에이치 위에 바"
+      "expected": "대문자 g 대문자 h 위에 바"
     },
     "Sample_28_sbrief": {
-      "expected": "큰 쥐 큰 에이치 위에 바"
+      "expected": "대문자 g 대문자 h 위에 바"
     },
     "Sample_29_default": {
-      "expected": "큰 W 큰 엑스 위에있는 바 approximately equals 큰 와이 큰 제트 위에있는 바"
+      "expected": "대문자 w 대문자 x 위에 있는 바 approximately equals 대문자 y 대문자 z 위에 있는 바"
     },
     "Sample_29_brief": {
-      "expected": "큰 W 큰 엑스 위에 바 approximately equals 큰 와이 큰 제트 위에 바"
+      "expected": "대문자 w 대문자 x 위에 바 approximately equals 대문자 y 대문자 z 위에 바"
     },
     "Sample_29_sbrief": {
-      "expected": "큰 W 큰 엑스 위에 바 approximately equals 큰 와이 큰 제트 위에 바"
+      "expected": "대문자 w 대문자 x 위에 바 approximately equals 대문자 y 대문자 z 위에 바"
     },
     "Sample_30_default": {
-      "expected": "각 큰 비 큰 이 큰 에프"
+      "expected": "각 대문자 b 대문자 e 대문자 f"
     },
     "Sample_30_brief": {
-      "expected": "각 큰 비 큰 이 큰 에프"
+      "expected": "각 대문자 b 대문자 e 대문자 f"
     },
     "Sample_30_sbrief": {
-      "expected": "각 큰 비 큰 이 큰 에프"
+      "expected": "각 대문자 b 대문자 e 대문자 f"
     },
     "Sample_31_default": {
-      "expected": "각 큰 비 큰 이 큰 디"
+      "expected": "각 대문자 b 대문자 e 대문자 d"
     },
     "Sample_31_brief": {
-      "expected": "각 큰 비 큰 이 큰 디"
+      "expected": "각 대문자 b 대문자 e 대문자 d"
     },
     "Sample_31_sbrief": {
-      "expected": "각 큰 비 큰 이 큰 디"
+      "expected": "각 대문자 b 대문자 e 대문자 d"
     },
     "Sample_32_default": {
-      "expected": "각 큰 디 큰 이 큰 에프"
+      "expected": "각 대문자 d 대문자 e 대문자 f"
     },
     "Sample_32_brief": {
-      "expected": "각 큰 디 큰 이 큰 에프"
+      "expected": "각 대문자 d 대문자 e 대문자 f"
     },
     "Sample_32_sbrief": {
-      "expected": "각 큰 디 큰 이 큰 에프"
+      "expected": "각 대문자 d 대문자 e 대문자 f"
     },
     "Sample_33_default": {
-      "expected": "엑스 equals 분수시작 2 에이 분의 마이너스 비 플러스마이너스 루트시작 비제곱 빼기 4 에이 씨 루트끝 분수끝"
+      "expected": "x equals 분수 시작 2 a 분의 마이너스 b 플러스 마이너스 루트 시작 b 제곱 빼기 4 a c 루트 끝 분수 끝"
     },
     "Sample_33_brief": {
-      "expected": "엑스 equals 분수시작 2 에이 분의 마이너스 비 플러스마이너스 루트시작 비 제곱 빼기 4 에이 씨 루트끝 분수끝"
+      "expected": "x equals 분수 시작 2 a 분의 마이너스 b 플러스 마이너스 루트 시작 b 제곱 빼기 4 a c 루트 끝 분수 끝"
     },
     "Sample_33_sbrief": {
-      "expected": "엑스 equals 분수 2 에이 분의 마이너스 비 플러스마이너스 루트 비 제곱 빼기 4 에이 씨 루트끝 분수끝"
+      "expected": "x equals 분수 2 a 분의 마이너스 b 플러스 마이너스 루트 b 제곱 빼기 4 a c 루트 끝 분수 끝"
     },
     "Sample_34_default": {
-      "expected": "와이 equals 엑스 제곱 더하기 8 엑스 더하기 16"
+      "expected": "y equals x 제곱 더하기 8 x 더하기 16"
     },
     "Sample_34_brief": {
-      "expected": "와이 equals 엑스 제곱 더하기 8 엑스 더하기 16"
+      "expected": "y equals x 제곱 더하기 8 x 더하기 16"
     },
     "Sample_34_sbrief": {
-      "expected": "와이 equals 엑스 제곱 더하기 8 엑스 더하기 16"
+      "expected": "y equals x 제곱 더하기 8 x 더하기 16"
     },
     "Sample_35_default": {
-      "expected": "와이 equals 3 분의 1 왼쪽 괄호 3 위첨자 엑스 Baseline 오른쪽 괄호"
+      "expected": "y equals 3 분의 1 왼쪽 괄호 3 윗 첨자 x Baseline 오른쪽 괄호"
     },
     "Sample_35_brief": {
-      "expected": "와이 equals 3 분의 1 왼쪽 괄호 3 위 엑스 Base 오른쪽 괄호"
+      "expected": "y equals 3 분의 1 왼쪽 괄호 3 윗 x Base 오른쪽 괄호"
     },
     "Sample_35_sbrief": {
-      "expected": "와이 equals 3 분의 1 좌 괄호 3 위 엑스 Base 우 괄호"
+      "expected": "y equals 3 분의 1 좌 괄호 3 위 x Base 우 괄호"
     },
     "Sample_36_default": {
-      "expected": "와이 equals 10 빼기 2 엑스"
+      "expected": "y equals 10 빼기 2 x"
     },
     "Sample_36_brief": {
-      "expected": "와이 equals 10 빼기 2 엑스"
+      "expected": "y equals 10 빼기 2 x"
     },
     "Sample_36_sbrief": {
-      "expected": "와이 equals 10 빼기 2 엑스"
+      "expected": "y equals 10 빼기 2 x"
     },
     "Sample_37_default": {
-      "expected": "와이 equals 2 엑스 세제곱 더하기 5"
+      "expected": "y equals 2 x 세제곱 더하기 5"
     },
     "Sample_37_brief": {
-      "expected": "와이 equals 2 엑스 세제곱 더하기 5"
+      "expected": "y equals 2 x 세제곱 더하기 5"
     },
     "Sample_37_sbrief": {
-      "expected": "와이 equals 2 엑스 세제곱 더하기 5"
+      "expected": "y equals 2 x 세제곱 더하기 5"
     },
     "Sample_38_default": {
-      "expected": "와이 equals 왼쪽 괄호 엑스 제곱 더하기 1 오른쪽 괄호 왼쪽 괄호 엑스 제곱 더하기 3 오른쪽 괄호"
+      "expected": "y equals 왼쪽 괄호 x 제곱 더하기 1 오른쪽 괄호 왼쪽 괄호 x 제곱 더하기 3 오른쪽 괄호"
     },
     "Sample_38_brief": {
-      "expected": "와이 equals 왼쪽 괄호 엑스 제곱 더하기 1 오른쪽 괄호 왼쪽 괄호 엑스 제곱 더하기 3 오른쪽 괄호"
+      "expected": "y equals 왼쪽 괄호 x 제곱 더하기 1 오른쪽 괄호 왼쪽 괄호 x 제곱 더하기 3 오른쪽 괄호"
     },
     "Sample_38_sbrief": {
-      "expected": "와이 equals 좌 괄호 엑스 제곱 더하기 1 우 괄호 좌 괄호 엑스 제곱 더하기 3 우 괄호"
+      "expected": "y equals 좌 괄호 x 제곱 더하기 1 우 괄호 좌 괄호 x 제곱 더하기 3 우 괄호"
     },
     "Sample_39_default": {
-      "expected": "와이 equals 0.5 위첨자 엑스"
+      "expected": "y equals 0.5 윗 첨자 x"
     },
     "Sample_39_brief": {
-      "expected": "와이 equals 0.5 위 엑스"
+      "expected": "y equals 0.5 위 x"
     },
     "Sample_39_sbrief": {
-      "expected": "와이 equals 0.5 위 엑스"
+      "expected": "y equals 0.5 위 x"
     },
     "Sample_40_default": {
-      "expected": "와이 equals 22 빼기 2 엑스"
+      "expected": "y equals 22 빼기 2 x"
     },
     "Sample_40_brief": {
-      "expected": "와이 equals 22 빼기 2 엑스"
+      "expected": "y equals 22 빼기 2 x"
     },
     "Sample_40_sbrief": {
-      "expected": "와이 equals 22 빼기 2 엑스"
+      "expected": "y equals 22 빼기 2 x"
     },
     "Sample_41_default": {
-      "expected": "와이 equals 분수시작 엑스 분의 3 분수끝"
+      "expected": "y equals 분수 시작 x 분의 3 분수 끝"
     },
     "Sample_41_brief": {
-      "expected": "와이 equals 분수시작 엑스 분의 3 분수끝"
+      "expected": "y equals 분수 시작 x 분의 3 분수 끝"
     },
     "Sample_41_sbrief": {
-      "expected": "와이 equals 분수 엑스 분의 3 분수끝"
+      "expected": "y equals 분수 x 분의 3 분수 끝"
     },
     "Sample_42_default": {
-      "expected": "와이 equals 왼쪽 괄호 엑스 더하기 4 오른쪽 괄호 왼쪽 괄호 엑스 더하기 4 오른쪽 괄호"
+      "expected": "y equals 왼쪽 괄호 x 더하기 4 오른쪽 괄호 왼쪽 괄호 x 더하기 4 오른쪽 괄호"
     },
     "Sample_42_brief": {
-      "expected": "와이 equals 왼쪽 괄호 엑스 더하기 4 오른쪽 괄호 왼쪽 괄호 엑스 더하기 4 오른쪽 괄호"
+      "expected": "y equals 왼쪽 괄호 x 더하기 4 오른쪽 괄호 왼쪽 괄호 x 더하기 4 오른쪽 괄호"
     },
     "Sample_42_sbrief": {
-      "expected": "와이 equals 좌 괄호 엑스 더하기 4 우 괄호 좌 괄호 엑스 더하기 4 우 괄호"
+      "expected": "y equals 좌 괄호 x 더하기 4 우 괄호 좌 괄호 x 더하기 4 우 괄호"
     },
     "Sample_43_default": {
-      "expected": "와이 equals 왼쪽 괄호 4 엑스 빼기 3 오른쪽 괄호 왼쪽 괄호 엑스 더하기 1 오른쪽 괄호"
+      "expected": "y equals 왼쪽 괄호 4 x 빼기 3 오른쪽 괄호 왼쪽 괄호 x 더하기 1 오른쪽 괄호"
     },
     "Sample_43_brief": {
-      "expected": "와이 equals 왼쪽 괄호 4 엑스 빼기 3 오른쪽 괄호 왼쪽 괄호 엑스 더하기 1 오른쪽 괄호"
+      "expected": "y equals 왼쪽 괄호 4 x 빼기 3 오른쪽 괄호 왼쪽 괄호 x 더하기 1 오른쪽 괄호"
     },
     "Sample_43_sbrief": {
-      "expected": "와이 equals 좌 괄호 4 엑스 빼기 3 우 괄호 좌 괄호 엑스 더하기 1 우 괄호"
+      "expected": "y equals 좌 괄호 4 x 빼기 3 우 괄호 좌 괄호 x 더하기 1 우 괄호"
     },
     "Sample_44_default": {
-      "expected": "와이 equals 20 엑스 빼기 4 엑스 제곱"
+      "expected": "y equals 20 x 빼기 4 x 제곱"
     },
     "Sample_44_brief": {
-      "expected": "와이 equals 20 엑스 빼기 4 엑스 제곱"
+      "expected": "y equals 20 x 빼기 4 x 제곱"
     },
     "Sample_44_sbrief": {
-      "expected": "와이 equals 20 엑스 빼기 4 엑스 제곱"
+      "expected": "y equals 20 x 빼기 4 x 제곱"
     },
     "Sample_45_default": {
-      "expected": "와이 equals 엑스 제곱"
+      "expected": "y equals x 제곱"
     },
     "Sample_45_brief": {
-      "expected": "와이 equals 엑스 제곱"
+      "expected": "y equals x 제곱"
     },
     "Sample_45_sbrief": {
-      "expected": "와이 equals 엑스 제곱"
+      "expected": "y equals x 제곱"
     },
     "Sample_46_default": {
-      "expected": "와이 equals 3 위첨자 엑스 빼기 1"
+      "expected": "y equals 3 윗 첨자 x 빼기 1"
     },
     "Sample_46_brief": {
-      "expected": "와이 equals 3 위 엑스 빼기 1"
+      "expected": "y equals 3 위 x 빼기 1"
     },
     "Sample_46_sbrief": {
-      "expected": "와이 equals 3 위 엑스 빼기 1"
+      "expected": "y equals 3 위 x 빼기 1"
     },
     "Sample_47_default": {
-      "expected": "와이 equals 16 빼기 2 왼쪽 괄호 엑스 더하기 3 오른쪽 괄호"
+      "expected": "y equals 16 빼기 2 왼쪽 괄호 x 더하기 3 오른쪽 괄호"
     },
     "Sample_47_brief": {
-      "expected": "와이 equals 16 빼기 2 왼쪽 괄호 엑스 더하기 3 오른쪽 괄호"
+      "expected": "y equals 16 빼기 2 왼쪽 괄호 x 더하기 3 오른쪽 괄호"
     },
     "Sample_47_sbrief": {
-      "expected": "와이 equals 16 빼기 2 좌 괄호 엑스 더하기 3 우 괄호"
+      "expected": "y equals 16 빼기 2 좌 괄호 x 더하기 3 우 괄호"
     },
     "Sample_48_default": {
-      "expected": "와이 equals 4 엑스 제곱 빼기 엑스 빼기 3"
+      "expected": "y equals 4 x 제곱 빼기 x 빼기 3"
     },
     "Sample_48_brief": {
-      "expected": "와이 equals 4 엑스 제곱 빼기 엑스 빼기 3"
+      "expected": "y equals 4 x 제곱 빼기 x 빼기 3"
     },
     "Sample_48_sbrief": {
-      "expected": "와이 equals 4 엑스 제곱 빼기 엑스 빼기 3"
+      "expected": "y equals 4 x 제곱 빼기 x 빼기 3"
     },
     "Sample_49_default": {
-      "expected": "와이 equals 엑스 더하기 분수시작 엑스 분의 1 분수끝"
+      "expected": "y equals x 더하기 분수 시작 x 분의 1 분수 끝"
     },
     "Sample_49_brief": {
-      "expected": "와이 equals 엑스 더하기 분수시작 엑스 분의 1 분수끝"
+      "expected": "y equals x 더하기 분수 시작 x 분의 1 분수 끝"
     },
     "Sample_49_sbrief": {
-      "expected": "와이 equals 엑스 더하기 분수 엑스 분의 1 분수끝"
+      "expected": "y equals x 더하기 분수 x 분의 1 분수 끝"
     },
     "Sample_50_default": {
-      "expected": "와이 equals 4 엑스 왼쪽 괄호 5 빼기 엑스 오른쪽 괄호"
+      "expected": "y equals 4 x 왼쪽 괄호 5 빼기 x 오른쪽 괄호"
     },
     "Sample_50_brief": {
-      "expected": "와이 equals 4 엑스 왼쪽 괄호 5 빼기 엑스 오른쪽 괄호"
+      "expected": "y equals 4 x 왼쪽 괄호 5 빼기 x 오른쪽 괄호"
     },
     "Sample_50_sbrief": {
-      "expected": "와이 equals 4 엑스 좌 괄호 5 빼기 엑스 우 괄호"
+      "expected": "y equals 4 x 좌 괄호 5 빼기 x 우 괄호"
     },
     "Sample_51_default": {
-      "expected": "와이 equals 2 왼쪽 괄호 엑스 빼기 3 오른쪽 괄호 더하기 6 왼쪽 괄호 1 빼기 엑스 오른쪽 괄호"
+      "expected": "y equals 2 왼쪽 괄호 x 빼기 3 오른쪽 괄호 더하기 6 왼쪽 괄호 1 빼기 x 오른쪽 괄호"
     },
     "Sample_51_brief": {
-      "expected": "와이 equals 2 왼쪽 괄호 엑스 빼기 3 오른쪽 괄호 더하기 6 왼쪽 괄호 1 빼기 엑스 오른쪽 괄호"
+      "expected": "y equals 2 왼쪽 괄호 x 빼기 3 오른쪽 괄호 더하기 6 왼쪽 괄호 1 빼기 x 오른쪽 괄호"
     },
     "Sample_51_sbrief": {
-      "expected": "와이 equals 2 좌 괄호 엑스 빼기 3 우 괄호 더하기 6 좌 괄호 1 빼기 엑스 우 괄호"
+      "expected": "y equals 2 좌 괄호 x 빼기 3 우 괄호 더하기 6 좌 괄호 1 빼기 x 우 괄호"
     },
     "Sample_52_default": {
-      "expected": "0.25 greater than 17 분의 5"
+      "expected": "0.25 가 17 분의 5 보다 크다"
     },
     "Sample_52_brief": {
-      "expected": "0.25 greater than 17 분의 5"
+      "expected": "0.25 가 17 분의 5 보다 크다"
     },
     "Sample_52_sbrief": {
-      "expected": "0.25 greater than 17 분의 5"
+      "expected": "0.25 가 17 분의 5 보다 크다"
     },
     "Sample_53_default": {
       "expected": "32 닷 왼쪽 괄호 5 닷 7 오른쪽 괄호"
@@ -495,193 +495,193 @@
       "expected": "좌 괄호 2 분의 1 곱하기 2 분의 1 곱하기 파이 곱하기 2 우 괄호 더하기 좌 괄호 2 곱하기 2 분의 1 곱하기 파이 곱하기 5 우 괄호"
     },
     "Sample_55_default": {
-      "expected": "하극한 하단문자 엔 오른쪽 화살표 무한대 첨자끝 큰 이 아래첨자 엔 Baseline equals 합집합 하단문자 엔 greater than or equals 1 첨자끝 교집합 하단문자 케이 greater than or equals 엔 첨자끝 큰 이 아래첨자 케이 Baseline 콤마 상극한 하단문자 엔 오른쪽 화살표 무한대 첨자끝 큰 이 아래첨자 엔 Baseline equals 교집합 하단문자 엔 greater than or equals 1 첨자끝 합집합 하단문자 케이 greater than or equals 엔 첨자끝 큰 이 아래첨자 케이 Baseline 마침표"
+      "expected": "하극한 하단문자 n 오른쪽 화살표 무한대 첨자 끝 대문자 e 아래 첨자 n Baseline equals 합집합 하단문자 n greater than or equals 1 첨자 끝 교집합 하단문자 k greater than or equals n 첨자 끝 대문자 e 아래 첨자 k Baseline 콤마 상극한 하단문자 n 오른쪽 화살표 무한대 첨자 끝 대문자 e 아래 첨자 n Baseline equals 교집합 하단문자 n greater than or equals 1 첨자 끝 합집합 하단문자 k greater than or equals n 첨자 끝 대문자 e 아래 첨자 k Baseline 마침표"
     },
     "Sample_55_brief": {
-      "expected": "하극한 하단문자 엔 오른쪽 화살표 무한대 첨자끝 큰 이 아래 엔 Base equals 합집합 하단문자 엔 greater than or equals 1 첨자끝 교집합 하단문자 케이 greater than or equals 엔 첨자끝 큰 이 아래 케이 Base 콤마 상극한 하단문자 엔 오른쪽 화살표 무한대 첨자끝 큰 이 아래 엔 Base equals 교집합 하단문자 엔 greater than or equals 1 첨자끝 합집합 하단문자 케이 greater than or equals 엔 첨자끝 큰 이 아래 케이 Base 마침표"
+      "expected": "하극한 하단문자 n 오른쪽 화살표 무한대 첨자 끝 대문자 e 아래 n Base equals 합집합 하단문자 n greater than or equals 1 첨자 끝 교집합 하단문자 k greater than or equals n 첨자 끝 대문자 e 아래 k Base 콤마 상극한 하단문자 n 오른쪽 화살표 무한대 첨자 끝 대문자 e 아래 n Base equals 교집합 하단문자 n greater than or equals 1 첨자 끝 합집합 하단문자 k greater than or equals n 첨자 끝 대문자 e 아래 k Base 마침표"
     },
     "Sample_55_sbrief": {
-      "expected": "하극한 하단문자 엔 우 화살표 무한대 첨자끝 큰 이 아래 엔 Base equals 합집합 하단문자 엔 greater than or equals 1 첨자끝 교집합 하단문자 케이 greater than or equals 엔 첨자끝 큰 이 아래 케이 Base 콤마 상극한 하단문자 엔 우 화살표 무한대 첨자끝 큰 이 아래 엔 Base equals 교집합 하단문자 엔 greater than or equals 1 첨자끝 합집합 하단문자 케이 greater than or equals 엔 첨자끝 큰 이 아래 케이 Base 마침표"
+      "expected": "하극한 하단문자 n 우 화살표 무한대 첨자 끝 대문자 e 아래 n Base equals 합집합 하단문자 n greater than or equals 1 첨자 끝 교집합 하단문자 k greater than or equals n 첨자 끝 대문자 e 아래 k Base 콤마 상극한 하단문자 n 우 화살표 무한대 첨자 끝 대문자 e 아래 n Base equals 교집합 하단문자 n greater than or equals 1 첨자 끝 합집합 하단문자 k greater than or equals n 첨자 끝 대문자 e 아래 k Base 마침표"
     },
     "Sample_56_default": {
-      "expected": "배열시작 첫번째 행 첫번째 열 왼쪽 괄호 아이 오른쪽 괄호 두번째 열 필기체 큰 에스 element of 필기체 큰 에이 세미콜론 두번째 행 첫번째 열 왼쪽 괄호 ii 오른쪽 괄호 두번째 열 if 큰 이 element of 필기체 큰 에이 then 큰 이 윗줄 element of 필기체 큰 에이 세미콜론 세번째 행 첫번째 열 왼쪽 괄호 iii 오른쪽 괄호 두번째 열 if 큰 이 1 콤마 큰 이 2 element of 필기체 큰 에이 then 큰 이 1 합집합 큰 이 2 element of 필기체 큰 에이 마침표 배열끝"
+      "expected": "배열 시작 첫번째 행 첫번째 열 왼쪽 괄호 i 오른쪽 괄호 두번째 열 필기체 대문자 s element of 필기체 대문자 a 세미콜론 두번째 행 첫번째 열 왼쪽 괄호 ii 오른쪽 괄호 두번째 열 if 대문자 e element of 필기체 대문자 a then 대문자 e 윗 줄 element of 필기체 대문자 a 세미콜론 세번째 행 첫번째 열 왼쪽 괄호 iii 오른쪽 괄호 두번째 열 if 대문자 e 1 콤마 대문자 e 2 element of 필기체 대문자 a then 대문자 e 1 합집합 대문자 e 2 element of 필기체 대문자 a 마침표 배열 끝"
     },
     "Sample_56_brief": {
-      "expected": "배열시작 첫번째 행 첫번째 열 왼쪽 괄호 아이 오른쪽 괄호 두번째 열 필기체 큰 에스 element of 필기체 큰 에이 세미콜론 두번째 행 첫번째 열 왼쪽 괄호 ii 오른쪽 괄호 두번째 열 if 큰 이 element of 필기체 큰 에이 then 큰 이 윗줄 element of 필기체 큰 에이 세미콜론 세번째 행 첫번째 열 왼쪽 괄호 iii 오른쪽 괄호 두번째 열 if 큰 이 1 콤마 큰 이 2 element of 필기체 큰 에이 then 큰 이 1 합집합 큰 이 2 element of 필기체 큰 에이 마침표 배열끝"
+      "expected": "배열 시작 첫번째 행 첫번째 열 왼쪽 괄호 i 오른쪽 괄호 두번째 열 필기체 대문자 s element of 필기체 대문자 a 세미콜론 두번째 행 첫번째 열 왼쪽 괄호 ii 오른쪽 괄호 두번째 열 if 대문자 e element of 필기체 대문자 a then 대문자 e 윗 줄 element of 필기체 대문자 a 세미콜론 세번째 행 첫번째 열 왼쪽 괄호 iii 오른쪽 괄호 두번째 열 if 대문자 e 1 콤마 대문자 e 2 element of 필기체 대문자 a then 대문자 e 1 합집합 대문자 e 2 element of 필기체 대문자 a 마침표 배열 끝"
     },
     "Sample_56_sbrief": {
-      "expected": "배열 첫번째 행 첫번째 열 좌 괄호 아이 우 괄호 두번째 열 필기체 큰 에스 element of 필기체 큰 에이 세미콜론 두번째 행 첫번째 열 좌 괄호 ii 우 괄호 두번째 열 if 큰 이 element of 필기체 큰 에이 then 큰 이 윗줄 element of 필기체 큰 에이 세미콜론 세번째 행 첫번째 열 좌 괄호 iii 우 괄호 두번째 열 if 큰 이 1 콤마 큰 이 2 element of 필기체 큰 에이 then 큰 이 1 합집합 큰 이 2 element of 필기체 큰 에이 마침표 배열끝"
+      "expected": "배열 첫번째 행 첫번째 열 좌 괄호 i 우 괄호 두번째 열 필기체 대문자 s element of 필기체 대문자 a 세미콜론 두번째 행 첫번째 열 좌 괄호 ii 우 괄호 두번째 열 if 대문자 e element of 필기체 대문자 a then 대문자 e 윗 줄 element of 필기체 대문자 a 세미콜론 세번째 행 첫번째 열 좌 괄호 iii 우 괄호 두번째 열 if 대문자 e 1 콤마 대문자 e 2 element of 필기체 대문자 a then 대문자 e 1 합집합 대문자 e 2 element of 필기체 대문자 a 마침표 배열 끝"
     },
     "Sample_57_default": {
-      "expected": "배열시작 첫번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 왼쪽 괄호 기본 큰 에이 마침표 1 오른쪽 괄호 큰 아이 에프 큰 에이 element of 필기체 큰 에프 티 에이치 이 엔 0 less than or equals 큰 피 왼쪽 중괄호 큰 에이 오른쪽 중괄호 less than or equals 1 마침표 네번째 열 왼쪽 괄호 1 오른쪽 괄호 두번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 왼쪽 괄호 기본 큰 에이 마침표 2 오른쪽 괄호 큰 피 왼쪽 중괄호 필기체 큰 에스 오른쪽 중괄호 equals 1 마침표 네번째 열 왼쪽 괄호 2 오른쪽 괄호 세번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 왼쪽 괄호 기본 큰 에이 마침표 3 오른쪽 괄호 큰 아이 에프 왼쪽 중괄호 큰 이 아래첨자 엔 Baseline 콤마 엔 greater than or equals 1 오른쪽 중괄호 element of 필기체 큰 에프 is a sequence of disjoint 네번째 열 왼쪽 괄호 3 오른쪽 괄호 배열끝"
+      "expected": "배열 시작 첫번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 왼쪽 괄호 기본 대문자 a 마침표 1 오른쪽 괄호 if 대문자 a element of 필기체 대문자 f the n 0 less than or equals 대문자 p 왼쪽 중괄호 대문자 a 오른쪽 중괄호 less than or equals 1 마침표 네번째 열 왼쪽 괄호 1 오른쪽 괄호 두번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 왼쪽 괄호 기본 대문자 a 마침표 2 오른쪽 괄호 대문자 p 왼쪽 중괄호 필기체 대문자 s 오른쪽 중괄호 equals 1 마침표 네번째 열 왼쪽 괄호 2 오른쪽 괄호 세번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 왼쪽 괄호 기본 대문자 a 마침표 3 오른쪽 괄호 if 왼쪽 중괄호 대문자 e 아래 첨자 n Baseline 콤마 n greater than or equals 1 오른쪽 중괄호 element of 필기체 대문자 f is a sequence of disjoint 네번째 열 왼쪽 괄호 3 오른쪽 괄호 배열 끝"
     },
     "Sample_57_brief": {
-      "expected": "배열시작 첫번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 왼쪽 괄호 기본 큰 에이 마침표 1 오른쪽 괄호 큰 아이 에프 큰 에이 element of 필기체 큰 에프 티 에이치 이 엔 0 less than or equals 큰 피 왼쪽 중괄호 큰 에이 오른쪽 중괄호 less than or equals 1 마침표 네번째 열 왼쪽 괄호 1 오른쪽 괄호 두번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 왼쪽 괄호 기본 큰 에이 마침표 2 오른쪽 괄호 큰 피 왼쪽 중괄호 필기체 큰 에스 오른쪽 중괄호 equals 1 마침표 네번째 열 왼쪽 괄호 2 오른쪽 괄호 세번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 왼쪽 괄호 기본 큰 에이 마침표 3 오른쪽 괄호 큰 아이 에프 왼쪽 중괄호 큰 이 아래 엔 Base 콤마 엔 greater than or equals 1 오른쪽 중괄호 element of 필기체 큰 에프 is a sequence of disjoint 네번째 열 왼쪽 괄호 3 오른쪽 괄호 배열끝"
+      "expected": "배열 시작 첫번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 왼쪽 괄호 기본 대문자 a 마침표 1 오른쪽 괄호 if 대문자 a element of 필기체 대문자 f the n 0 less than or equals 대문자 p 왼쪽 중괄호 대문자 a 오른쪽 중괄호 less than or equals 1 마침표 네번째 열 왼쪽 괄호 1 오른쪽 괄호 두번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 왼쪽 괄호 기본 대문자 a 마침표 2 오른쪽 괄호 대문자 p 왼쪽 중괄호 필기체 대문자 s 오른쪽 중괄호 equals 1 마침표 네번째 열 왼쪽 괄호 2 오른쪽 괄호 세번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 왼쪽 괄호 기본 대문자 a 마침표 3 오른쪽 괄호 if 왼쪽 중괄호 대문자 e 아래 n Base 콤마 n greater than or equals 1 오른쪽 중괄호 element of 필기체 대문자 f is a sequence of disjoint 네번째 열 왼쪽 괄호 3 오른쪽 괄호 배열 끝"
     },
     "Sample_57_sbrief": {
-      "expected": "배열 첫번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 좌 괄호 기본 큰 에이 마침표 1 우 괄호 큰 아이 에프 큰 에이 element of 필기체 큰 에프 티 에이치 이 엔 0 less than or equals 큰 피 좌 중괄호 큰 에이 우 중괄호 less than or equals 1 마침표 네번째 열 좌 괄호 1 우 괄호 두번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 좌 괄호 기본 큰 에이 마침표 2 우 괄호 큰 피 좌 중괄호 필기체 큰 에스 우 중괄호 equals 1 마침표 네번째 열 좌 괄호 2 우 괄호 세번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 좌 괄호 기본 큰 에이 마침표 3 우 괄호 큰 아이 에프 좌 중괄호 큰 이 아래 엔 Base 콤마 엔 greater than or equals 1 우 중괄호 element of 필기체 큰 에프 is a sequence of disjoint 네번째 열 좌 괄호 3 우 괄호 배열끝"
+      "expected": "배열 첫번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 좌 괄호 기본 대문자 a 마침표 1 우 괄호 if 대문자 a element of 필기체 대문자 f the n 0 less than or equals 대문자 p 좌 중괄호 대문자 a 우 중괄호 less than or equals 1 마침표 네번째 열 좌 괄호 1 우 괄호 두번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 좌 괄호 기본 대문자 a 마침표 2 우 괄호 대문자 p 좌 중괄호 필기체 대문자 s 우 중괄호 equals 1 마침표 네번째 열 좌 괄호 2 우 괄호 세번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 좌 괄호 기본 대문자 a 마침표 3 우 괄호 if 좌 중괄호 대문자 e 아래 n Base 콤마 n greater than or equals 1 우 중괄호 element of 필기체 대문자 f is a sequence of disjoint 네번째 열 좌 괄호 3 우 괄호 배열 끝"
     },
     "Sample_58_default": {
-      "expected": "큰 피 왼쪽 중괄호 큰 비 아래첨자 제이 Baseline 세로선 큰 에이 오른쪽 중괄호 equals 분수시작 시그마 합 하단문자 제이 프라임 element of 큰 제이 첨자끝 큰 피 왼쪽 중괄호 큰 비 아래첨자 제이 프라임 Baseline 오른쪽 중괄호 큰 피 왼쪽 중괄호 큰 에이 세로선 큰 비 아래첨자 제이 프라임 Baseline 오른쪽 중괄호 분의 큰 피 왼쪽 중괄호 큰 비 아래첨자 제이 Baseline 오른쪽 중괄호 큰 피 왼쪽 중괄호 큰 에이 세로선 큰 비 아래첨자 제이 Baseline 오른쪽 중괄호 분수끝 마침표"
+      "expected": "대문자 p 왼쪽 중괄호 대문자 b 아래 첨자 j Baseline 세로선 대문자 a 오른쪽 중괄호 equals 분수 시작 시그마 합 하단문자 j 프라임 element of 대문자 j 첨자 끝 대문자 p 왼쪽 중괄호 대문자 b 아래 첨자 j 프라임 Baseline 오른쪽 중괄호 대문자 p 왼쪽 중괄호 대문자 a 세로선 대문자 b 아래 첨자 j 프라임 Baseline 오른쪽 중괄호 분의 대문자 p 왼쪽 중괄호 대문자 b 아래 첨자 j Baseline 오른쪽 중괄호 대문자 p 왼쪽 중괄호 대문자 a 세로선 대문자 b 아래 첨자 j Baseline 오른쪽 중괄호 분수 끝 마침표"
     },
     "Sample_58_brief": {
-      "expected": "큰 피 왼쪽 중괄호 큰 비 아래 제이 Base 세로선 큰 에이 오른쪽 중괄호 equals 분수시작 시그마 합 하단문자 제이 프라임 element of 큰 제이 첨자끝 큰 피 왼쪽 중괄호 큰 비 아래 제이 프라임 Base 오른쪽 중괄호 큰 피 왼쪽 중괄호 큰 에이 세로선 큰 비 아래 제이 프라임 Base 오른쪽 중괄호 분의 큰 피 왼쪽 중괄호 큰 비 아래 제이 Base 오른쪽 중괄호 큰 피 왼쪽 중괄호 큰 에이 세로선 큰 비 아래 제이 Base 오른쪽 중괄호 분수끝 마침표"
+      "expected": "대문자 p 왼쪽 중괄호 대문자 b 아래 j Base 세로선 대문자 a 오른쪽 중괄호 equals 분수 시작 시그마 합 하단문자 j 프라임 element of 대문자 j 첨자 끝 대문자 p 왼쪽 중괄호 대문자 b 아래 j 프라임 Base 오른쪽 중괄호 대문자 p 왼쪽 중괄호 대문자 a 세로선 대문자 b 아래 j 프라임 Base 오른쪽 중괄호 분의 대문자 p 왼쪽 중괄호 대문자 b 아래 j Base 오른쪽 중괄호 대문자 p 왼쪽 중괄호 대문자 a 세로선 대문자 b 아래 j Base 오른쪽 중괄호 분수 끝 마침표"
     },
     "Sample_58_sbrief": {
-      "expected": "큰 피 좌 중괄호 큰 비 아래 제이 Base 세로선 큰 에이 우 중괄호 equals 분수 시그마 합 하단문자 제이 프라임 element of 큰 제이 첨자끝 큰 피 좌 중괄호 큰 비 아래 제이 프라임 Base 우 중괄호 큰 피 좌 중괄호 큰 에이 세로선 큰 비 아래 제이 프라임 Base 우 중괄호 분의 큰 피 좌 중괄호 큰 비 아래 제이 Base 우 중괄호 큰 피 좌 중괄호 큰 에이 세로선 큰 비 아래 제이 Base 우 중괄호 분수끝 마침표"
+      "expected": "대문자 p 좌 중괄호 대문자 b 아래 j Base 세로선 대문자 a 우 중괄호 equals 분수 시그마 합 하단문자 j 프라임 element of 대문자 j 첨자 끝 대문자 p 좌 중괄호 대문자 b 아래 j 프라임 Base 우 중괄호 대문자 p 좌 중괄호 대문자 a 세로선 대문자 b 아래 j 프라임 Base 우 중괄호 분의 대문자 p 좌 중괄호 대문자 b 아래 j Base 우 중괄호 대문자 p 좌 중괄호 대문자 a 세로선 대문자 b 아래 j Base 우 중괄호 분수 끝 마침표"
     },
     "Sample_59_default": {
-      "expected": "뮤 1 왼쪽 괄호 큰 비 오른쪽 괄호 equals 인테그럴 하단문자 큰 비 첨자끝 에프 왼쪽 괄호 엑스 오른쪽 괄호 디 뮤 2 왼쪽 괄호 엑스 오른쪽 괄호"
+      "expected": "뮤 1 왼쪽 괄호 대문자 b 오른쪽 괄호 equals 인테그럴 하단문자 대문자 b 첨자 끝 f 왼쪽 괄호 x 오른쪽 괄호 디 뮤 2 왼쪽 괄호 x 오른쪽 괄호"
     },
     "Sample_59_brief": {
-      "expected": "뮤 1 왼쪽 괄호 큰 비 오른쪽 괄호 equals 인테그럴 하단문자 큰 비 첨자끝 에프 왼쪽 괄호 엑스 오른쪽 괄호 디 뮤 2 왼쪽 괄호 엑스 오른쪽 괄호"
+      "expected": "뮤 1 왼쪽 괄호 대문자 b 오른쪽 괄호 equals 인테그럴 하단문자 대문자 b 첨자 끝 f 왼쪽 괄호 x 오른쪽 괄호 디 뮤 2 왼쪽 괄호 x 오른쪽 괄호"
     },
     "Sample_59_sbrief": {
-      "expected": "뮤 1 좌 괄호 큰 비 우 괄호 equals 인테그럴 하단문자 큰 비 첨자끝 에프 좌 괄호 엑스 우 괄호 디 뮤 2 좌 괄호 엑스 우 괄호"
+      "expected": "뮤 1 좌 괄호 대문자 b 우 괄호 equals 인테그럴 하단문자 대문자 b 첨자 끝 f 좌 괄호 x 우 괄호 디 뮤 2 좌 괄호 x 우 괄호"
     },
     "Sample_60_default": {
-      "expected": "리미트 하단문자 엔 오른쪽 화살표 무한대 첨자끝 큰 이 왼쪽 중괄호 절댓값시작 큰 엑스 아래첨자 엔 Baseline 빼기 큰 엑스 절댓값끝 오른쪽 중괄호 equals 큰 이 왼쪽 중괄호 리미트 하단문자 엔 오른쪽 화살표 무한대 첨자끝 절댓값시작 큰 엑스 아래첨자 엔 Baseline 빼기 큰 엑스 절댓값끝 오른쪽 중괄호 equals 0 마침표"
+      "expected": "리미트 하단문자 n 오른쪽 화살표 무한대 첨자 끝 대문자 e 왼쪽 중괄호 절댓값 시작 대문자 x 아래 첨자 n Baseline 빼기 대문자 x 절댓값 끝 오른쪽 중괄호 equals 대문자 e 왼쪽 중괄호 리미트 하단문자 n 오른쪽 화살표 무한대 첨자 끝 절댓값 시작 대문자 x 아래 첨자 n Baseline 빼기 대문자 x 절댓값 끝 오른쪽 중괄호 equals 0 마침표"
     },
     "Sample_60_brief": {
-      "expected": "리미트 하단문자 엔 오른쪽 화살표 무한대 첨자끝 큰 이 왼쪽 중괄호 절댓값시작 큰 엑스 아래 엔 Base 빼기 큰 엑스 절댓값끝 오른쪽 중괄호 equals 큰 이 왼쪽 중괄호 리미트 하단문자 엔 오른쪽 화살표 무한대 첨자끝 절댓값시작 큰 엑스 아래 엔 Base 빼기 큰 엑스 절댓값끝 오른쪽 중괄호 equals 0 마침표"
+      "expected": "리미트 하단문자 n 오른쪽 화살표 무한대 첨자 끝 대문자 e 왼쪽 중괄호 절댓값 시작 대문자 x 아래 n Base 빼기 대문자 x 절댓값 끝 오른쪽 중괄호 equals 대문자 e 왼쪽 중괄호 리미트 하단문자 n 오른쪽 화살표 무한대 첨자 끝 절댓값 시작 대문자 x 아래 n Base 빼기 대문자 x 절댓값 끝 오른쪽 중괄호 equals 0 마침표"
     },
     "Sample_60_sbrief": {
-      "expected": "리미트 하단문자 엔 우 화살표 무한대 첨자끝 큰 이 좌 중괄호 절댓값 큰 엑스 아래 엔 Base 빼기 큰 엑스 절댓값끝 우 중괄호 equals 큰 이 좌 중괄호 리미트 하단문자 엔 우 화살표 무한대 첨자끝 절댓값 큰 엑스 아래 엔 Base 빼기 큰 엑스 절댓값끝 우 중괄호 equals 0 마침표"
+      "expected": "리미트 하단문자 n 우 화살표 무한대 첨자 끝 대문자 e 좌 중괄호 절댓값 대문자 x 아래 n Base 빼기 대문자 x 절댓값 끝 우 중괄호 equals 대문자 e 좌 중괄호 리미트 하단문자 n 우 화살표 무한대 첨자 끝 절댓값 대문자 x 아래 n Base 빼기 대문자 x 절댓값 끝 우 중괄호 equals 0 마침표"
     },
     "Sample_61_default": {
-      "expected": "배열시작 첫번째 행 첫번째 열 큰 피 아래첨자 뮤 콤마 시그마 Baseline 왼쪽 중괄호 큰 와이 greater than or equals 엘 아래첨자 베타 Baseline 왼쪽 괄호 큰 와이 윗줄 아래첨자 엔 Baseline 콤마 큰 에스 아래첨자 엔 Baseline 오른쪽 괄호 오른쪽 중괄호 equals 큰 피 아래첨자 뮤 콤마 시그마 Baseline 왼쪽 중괄호 왼쪽 괄호 큰 와이 빼기 큰 와이 윗줄 아래첨자 엔 Baseline 오른쪽 괄호 나누기 왼쪽 괄호 큰 에스 닷 왼쪽 괄호 1 더하기 분수시작 엔 분의 1 분수끝 오른쪽 괄호 위첨자 1 나누기 2 Baseline 오른쪽 괄호 greater than or equals 빼기 티 아래첨자 베타 Baseline 왼쪽 대괄호 엔 빼기 1 오른쪽 대괄호 오른쪽 중괄호 equals 베타 콤마 두번째 행 첫번째 열 빈 칸 두번째 열 왼쪽 괄호 1 오른쪽 괄호 배열끝"
+      "expected": "배열 시작 첫번째 행 첫번째 열 대문자 p 아래 첨자 뮤 콤마 시그마 Baseline 왼쪽 중괄호 대문자 y greater than or equals 엘 아래 첨자 베타 Baseline 왼쪽 괄호 대문자 y 윗 줄 아래 첨자 n Baseline 콤마 대문자 s 아래 첨자 n Baseline 오른쪽 괄호 오른쪽 중괄호 equals 대문자 p 아래 첨자 뮤 콤마 시그마 Baseline 왼쪽 중괄호 왼쪽 괄호 대문자 y 빼기 대문자 y 윗 줄 아래 첨자 n Baseline 오른쪽 괄호 나누기 왼쪽 괄호 대문자 s 닷 왼쪽 괄호 1 더하기 분수 시작 n 분의 1 분수 끝 오른쪽 괄호 위첨자 1 나누기 2 Baseline 오른쪽 괄호 greater than or equals 빼기 t 아래 첨자 베타 Baseline 왼쪽 대괄호 n 빼기 1 오른쪽 대괄호 오른쪽 중괄호 equals 베타 콤마 두번째 행 첫번째 열 빈 칸 두번째 열 왼쪽 괄호 1 오른쪽 괄호 배열 끝"
     },
     "Sample_61_brief": {
-      "expected": "배열시작 첫번째 행 첫번째 열 큰 피 아래 뮤 콤마 시그마 Base 왼쪽 중괄호 큰 와이 greater than or equals 엘 아래 베타 Base 왼쪽 괄호 큰 와이 윗줄 아래 엔 Base 콤마 큰 에스 아래 엔 Base 오른쪽 괄호 오른쪽 중괄호 equals 큰 피 아래 뮤 콤마 시그마 Base 왼쪽 중괄호 왼쪽 괄호 큰 와이 빼기 큰 와이 윗줄 아래 엔 Base 오른쪽 괄호 나누기 왼쪽 괄호 큰 에스 닷 왼쪽 괄호 1 더하기 분수시작 엔 분의 1 분수끝 오른쪽 괄호 위 1 나누기 2 Base 오른쪽 괄호 greater than or equals 빼기 티 아래 베타 Base 왼쪽 대괄호 엔 빼기 1 오른쪽 대괄호 오른쪽 중괄호 equals 베타 콤마 두번째 행 첫번째 열 빈 칸 두번째 열 왼쪽 괄호 1 오른쪽 괄호 배열끝"
+      "expected": "배열 시작 첫번째 행 첫번째 열 대문자 p 아래 뮤 콤마 시그마 Base 왼쪽 중괄호 대문자 y greater than or equals 엘 아래 베타 Base 왼쪽 괄호 대문자 y 윗 줄 아래 n Base 콤마 대문자 s 아래 n Base 오른쪽 괄호 오른쪽 중괄호 equals 대문자 p 아래 뮤 콤마 시그마 Base 왼쪽 중괄호 왼쪽 괄호 대문자 y 빼기 대문자 y 윗 줄 아래 n Base 오른쪽 괄호 나누기 왼쪽 괄호 대문자 s 닷 왼쪽 괄호 1 더하기 분수 시작 n 분의 1 분수 끝 오른쪽 괄호 위 1 나누기 2 Base 오른쪽 괄호 greater than or equals 빼기 t 아래 베타 Base 왼쪽 대괄호 n 빼기 1 오른쪽 대괄호 오른쪽 중괄호 equals 베타 콤마 두번째 행 첫번째 열 빈 칸 두번째 열 왼쪽 괄호 1 오른쪽 괄호 배열 끝"
     },
     "Sample_61_sbrief": {
-      "expected": "배열 첫번째 행 첫번째 열 큰 피 아래 뮤 콤마 시그마 Base 좌 중괄호 큰 와이 greater than or equals 엘 아래 베타 Base 좌 괄호 큰 와이 윗줄 아래 엔 Base 콤마 큰 에스 아래 엔 Base 우 괄호 우 중괄호 equals 큰 피 아래 뮤 콤마 시그마 Base 좌 중괄호 좌 괄호 큰 와이 빼기 큰 와이 윗줄 아래 엔 Base 우 괄호 나누기 좌 괄호 큰 에스 닷 좌 괄호 1 더하기 분수 엔 분의 1 분수끝 우 괄호 위 1 나누기 2 Base 우 괄호 greater than or equals 빼기 티 아래 베타 Base 좌 대괄호 엔 빼기 1 우 대괄호 우 중괄호 equals 베타 콤마 두번째 행 첫번째 열 빈 칸 두번째 열 좌 괄호 1 우 괄호 배열끝"
+      "expected": "배열 첫번째 행 첫번째 열 대문자 p 아래 뮤 콤마 시그마 Base 좌 중괄호 대문자 y greater than or equals 엘 아래 베타 Base 좌 괄호 대문자 y 윗 줄 아래 n Base 콤마 대문자 s 아래 n Base 우 괄호 우 중괄호 equals 대문자 p 아래 뮤 콤마 시그마 Base 좌 중괄호 좌 괄호 대문자 y 빼기 대문자 y 윗 줄 아래 n Base 우 괄호 나누기 좌 괄호 대문자 s 닷 좌 괄호 1 더하기 분수 n 분의 1 분수 끝 우 괄호 위 1 나누기 2 Base 우 괄호 greater than or equals 빼기 t 아래 베타 Base 좌 대괄호 n 빼기 1 우 대괄호 우 중괄호 equals 베타 콤마 두번째 행 첫번째 열 빈 칸 두번째 열 좌 괄호 1 우 괄호 배열 끝"
     },
     "Sample_62_default": {
-      "expected": "큰 엘 equals 5 행 6 열의 행렬시작 첫번째 행 첫번째 열 1 두번째 열 마이너스 1 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 두번째 행 첫번째 열 빈 칸 두번째 열 1 세번째 열 마이너스 1 네번째 열 빈 칸 다섯번째 열 0 여섯번째 열 빈 칸 세번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 네번째 행 첫번째 열 빈 칸 두번째 열 0 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 다섯번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 1 여섯번째 열 마이너스 1 행렬끝 마침표"
+      "expected": "대문자 l equals 5 행 6 열의 행렬 시작 첫번째 행 첫번째 열 1 두번째 열 마이너스 1 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 두번째 행 첫번째 열 빈 칸 두번째 열 1 세번째 열 마이너스 1 네번째 열 빈 칸 다섯번째 열 0 여섯번째 열 빈 칸 세번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 네번째 행 첫번째 열 빈 칸 두번째 열 0 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 다섯번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 1 여섯번째 열 마이너스 1 행렬 끝 마침표"
     },
     "Sample_62_brief": {
-      "expected": "큰 엘 equals 5 행 6 열의 행렬시작 첫번째 행 첫번째 열 1 두번째 열 마이너스 1 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 두번째 행 첫번째 열 빈 칸 두번째 열 1 세번째 열 마이너스 1 네번째 열 빈 칸 다섯번째 열 0 여섯번째 열 빈 칸 세번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 네번째 행 첫번째 열 빈 칸 두번째 열 0 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 다섯번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 1 여섯번째 열 마이너스 1 행렬끝 마침표"
+      "expected": "대문자 l equals 5 행 6 열의 행렬 시작 첫번째 행 첫번째 열 1 두번째 열 마이너스 1 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 두번째 행 첫번째 열 빈 칸 두번째 열 1 세번째 열 마이너스 1 네번째 열 빈 칸 다섯번째 열 0 여섯번째 열 빈 칸 세번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 네번째 행 첫번째 열 빈 칸 두번째 열 0 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 다섯번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 1 여섯번째 열 마이너스 1 행렬 끝 마침표"
     },
     "Sample_62_sbrief": {
-      "expected": "큰 엘 equals 5 행 6 열의 행렬 첫번째 행 첫번째 열 1 두번째 열 마이너스 1 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 두번째 행 첫번째 열 빈 칸 두번째 열 1 세번째 열 마이너스 1 네번째 열 빈 칸 다섯번째 열 0 여섯번째 열 빈 칸 세번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 네번째 행 첫번째 열 빈 칸 두번째 열 0 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 다섯번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 1 여섯번째 열 마이너스 1 행렬끝 마침표"
+      "expected": "대문자 l equals 5 행 6 열의 행렬 첫번째 행 첫번째 열 1 두번째 열 마이너스 1 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 두번째 행 첫번째 열 빈 칸 두번째 열 1 세번째 열 마이너스 1 네번째 열 빈 칸 다섯번째 열 0 여섯번째 열 빈 칸 세번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 네번째 행 첫번째 열 빈 칸 두번째 열 0 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 빈 칸 여섯번째 열 빈 칸 다섯번째 행 첫번째 열 빈 칸 두번째 열 빈 칸 세번째 열 빈 칸 네번째 열 빈 칸 다섯번째 열 1 여섯번째 열 마이너스 1 행렬 끝 마침표"
     },
     "Sample_63_default": {
-      "expected": "루트시작 엔 루트끝 왼쪽 대괄호 큰 와이 윗줄 아래첨자 엔 Baseline 빼기 왼쪽 괄호 뮤 더하기 제트 아래첨자 베타 Baseline 시그마 오른쪽 괄호 오른쪽 대괄호 나누기 큰 에스 아래첨자 엔 Baseline 물결표 분수시작 왼쪽 괄호 키 제곱 왼쪽 대괄호 엔 빼기 1 오른쪽 대괄호 나누기 왼쪽 괄호 엔 빼기 1 오른쪽 괄호 오른쪽 괄호 위첨자 1 나누기 2 Baseline 분의 큰 유 더하기 루트시작 엔 루트끝 제트 아래첨자 1 빼기 베타 Baseline 분수끝 물결표 티 왼쪽 대괄호 엔 빼기 1 세미콜론 루트시작 엔 루트끝 제트 아래첨자 1 빼기 베타 Baseline 오른쪽 대괄호 콤마"
+      "expected": "루트 시작 n 루트 끝 왼쪽 대괄호 대문자 y 윗 줄 아래 첨자 n Baseline 빼기 왼쪽 괄호 뮤 더하기 z 아래 첨자 베타 Baseline 시그마 오른쪽 괄호 오른쪽 대괄호 나누기 대문자 s 아래 첨자 n Baseline 물결표 분수 시작 왼쪽 괄호 키 제곱 왼쪽 대괄호 n 빼기 1 오른쪽 대괄호 나누기 왼쪽 괄호 n 빼기 1 오른쪽 괄호 오른쪽 괄호 위첨자 1 나누기 2 Baseline 분의 대문자 u 더하기 루트 시작 n 루트 끝 z 아래 첨자 1 빼기 베타 Baseline 분수 끝 물결표 t 왼쪽 대괄호 n 빼기 1 세미콜론 루트 시작 n 루트 끝 z 아래 첨자 1 빼기 베타 Baseline 오른쪽 대괄호 콤마"
     },
     "Sample_63_brief": {
-      "expected": "루트시작 엔 루트끝 왼쪽 대괄호 큰 와이 윗줄 아래 엔 Base 빼기 왼쪽 괄호 뮤 더하기 제트 아래 베타 Base 시그마 오른쪽 괄호 오른쪽 대괄호 나누기 큰 에스 아래 엔 Base 물결표 분수시작 왼쪽 괄호 키 제곱 왼쪽 대괄호 엔 빼기 1 오른쪽 대괄호 나누기 왼쪽 괄호 엔 빼기 1 오른쪽 괄호 오른쪽 괄호 위 1 나누기 2 Base 분의 큰 유 더하기 루트시작 엔 루트끝 제트 아래 1 빼기 베타 Base 분수끝 물결표 티 왼쪽 대괄호 엔 빼기 1 세미콜론 루트시작 엔 루트끝 제트 아래 1 빼기 베타 Base 오른쪽 대괄호 콤마"
+      "expected": "루트 시작 n 루트 끝 왼쪽 대괄호 대문자 y 윗 줄 아래 n Base 빼기 왼쪽 괄호 뮤 더하기 z 아래 베타 Base 시그마 오른쪽 괄호 오른쪽 대괄호 나누기 대문자 s 아래 n Base 물결표 분수 시작 왼쪽 괄호 키 제곱 왼쪽 대괄호 n 빼기 1 오른쪽 대괄호 나누기 왼쪽 괄호 n 빼기 1 오른쪽 괄호 오른쪽 괄호 위 1 나누기 2 Base 분의 대문자 u 더하기 루트 시작 n 루트 끝 z 아래 1 빼기 베타 Base 분수 끝 물결표 t 왼쪽 대괄호 n 빼기 1 세미콜론 루트 시작 n 루트 끝 z 아래 1 빼기 베타 Base 오른쪽 대괄호 콤마"
     },
     "Sample_63_sbrief": {
-      "expected": "루트 엔 루트끝 좌 대괄호 큰 와이 윗줄 아래 엔 Base 빼기 좌 괄호 뮤 더하기 제트 아래 베타 Base 시그마 우 괄호 우 대괄호 나누기 큰 에스 아래 엔 Base 물결표 분수 좌 괄호 키 제곱 좌 대괄호 엔 빼기 1 우 대괄호 나누기 좌 괄호 엔 빼기 1 우 괄호 우 괄호 위 1 나누기 2 Base 분의 큰 유 더하기 루트 엔 루트끝 제트 아래 1 빼기 베타 Base 분수끝 물결표 티 좌 대괄호 엔 빼기 1 세미콜론 루트 엔 루트끝 제트 아래 1 빼기 베타 Base 우 대괄호 콤마"
+      "expected": "루트 n 루트 끝 좌 대괄호 대문자 y 윗 줄 아래 n Base 빼기 좌 괄호 뮤 더하기 z 아래 베타 Base 시그마 우 괄호 우 대괄호 나누기 대문자 s 아래 n Base 물결표 분수 좌 괄호 키 제곱 좌 대괄호 n 빼기 1 우 대괄호 나누기 좌 괄호 n 빼기 1 우 괄호 우 괄호 위 1 나누기 2 Base 분의 대문자 u 더하기 루트 n 루트 끝 z 아래 1 빼기 베타 Base 분수 끝 물결표 t 좌 대괄호 n 빼기 1 세미콜론 루트 n 루트 끝 z 아래 1 빼기 베타 Base 우 대괄호 콤마"
     },
     "Sample_64_default": {
-      "expected": "배열시작 첫번째 행 첫번째 열 감마 두번째 열 equals 큰 피 왼쪽 중괄호 큰 이 아래첨자 피 콤마 큐 Baseline subset of 왼쪽 괄호 큰 엑스 아래첨자 왼쪽 괄호 알 오른쪽 괄호 Baseline 콤마 큰 엑스 아래첨자 왼쪽 괄호 에스 오른쪽 괄호 Baseline 오른쪽 중괄호 두번째 행 첫번째 열 빈 칸 두번째 열 equals 분수시작 왼쪽 괄호 알 빼기 1 오른쪽 괄호 팩토리얼 분의 엔 팩토리얼 분수끝 시그마 합 하단문자 제이 equals 0 상단첨자 에스 빼기 알 빼기 1 첨자끝 왼쪽 괄호 마이너스 1 오른쪽 괄호 위첨자 제이 Baseline 분수시작 왼쪽 괄호 엔 빼기 알 빼기 제이 오른쪽 괄호 팩토리얼 제이 팩토리얼 분의 피 위첨자 알 더하기 제이 Baseline 분수끝 큰 아이 아래첨자 1 빼기 큐 Baseline 왼쪽 괄호 엔 빼기 에스 더하기 1 콤마 에스 빼기 알 빼기 제이 오른쪽 괄호 마침표 배열끝"
+      "expected": "배열 시작 첫번째 행 첫번째 열 감마 두번째 열 equals 대문자 p 왼쪽 중괄호 대문자 e 아래 첨자 p 콤마 q Baseline subset of 왼쪽 괄호 대문자 x 아래 첨자 왼쪽 괄호 r 오른쪽 괄호 Baseline 콤마 대문자 x 아래 첨자 왼쪽 괄호 s 오른쪽 괄호 Baseline 오른쪽 중괄호 두번째 행 첫번째 열 빈 칸 두번째 열 equals 분수 시작 왼쪽 괄호 r 빼기 1 오른쪽 괄호 팩토리얼 분의 n 팩토리얼 분수 끝 시그마 합 하단문자 j equals 0 상단첨자 s 빼기 r 빼기 1 첨자 끝 왼쪽 괄호 마이너스 1 오른쪽 괄호 위첨자 j Baseline 분수 시작 왼쪽 괄호 n 빼기 r 빼기 j 오른쪽 괄호 팩토리얼 j 팩토리얼 분의 p 위첨자 r 더하기 j Baseline 분수 끝 대문자 i 아래 첨자 1 빼기 q Baseline 왼쪽 괄호 n 빼기 s 더하기 1 콤마 s 빼기 r 빼기 j 오른쪽 괄호 마침표 배열 끝"
     },
     "Sample_64_brief": {
-      "expected": "배열시작 첫번째 행 첫번째 열 감마 두번째 열 equals 큰 피 왼쪽 중괄호 큰 이 아래 피 콤마 큐 Base subset of 왼쪽 괄호 큰 엑스 아래 왼쪽 괄호 알 오른쪽 괄호 Base 콤마 큰 엑스 아래 왼쪽 괄호 에스 오른쪽 괄호 Base 오른쪽 중괄호 두번째 행 첫번째 열 빈 칸 두번째 열 equals 분수시작 왼쪽 괄호 알 빼기 1 오른쪽 괄호 팩토리얼 분의 엔 팩토리얼 분수끝 시그마 합 하단문자 제이 equals 0 상단첨자 에스 빼기 알 빼기 1 첨자끝 왼쪽 괄호 마이너스 1 오른쪽 괄호 위 제이 Base 분수시작 왼쪽 괄호 엔 빼기 알 빼기 제이 오른쪽 괄호 팩토리얼 제이 팩토리얼 분의 피 위 알 더하기 제이 Base 분수끝 큰 아이 아래 1 빼기 큐 Base 왼쪽 괄호 엔 빼기 에스 더하기 1 콤마 에스 빼기 알 빼기 제이 오른쪽 괄호 마침표 배열끝"
+      "expected": "배열 시작 첫번째 행 첫번째 열 감마 두번째 열 equals 대문자 p 왼쪽 중괄호 대문자 e 아래 p 콤마 q Base subset of 왼쪽 괄호 대문자 x 아래 왼쪽 괄호 r 오른쪽 괄호 Base 콤마 대문자 x 아래 왼쪽 괄호 s 오른쪽 괄호 Base 오른쪽 중괄호 두번째 행 첫번째 열 빈 칸 두번째 열 equals 분수 시작 왼쪽 괄호 r 빼기 1 오른쪽 괄호 팩토리얼 분의 n 팩토리얼 분수 끝 시그마 합 하단문자 j equals 0 상단첨자 s 빼기 r 빼기 1 첨자 끝 왼쪽 괄호 마이너스 1 오른쪽 괄호 위 j Base 분수 시작 왼쪽 괄호 n 빼기 r 빼기 j 오른쪽 괄호 팩토리얼 j 팩토리얼 분의 p 위 r 더하기 j Base 분수 끝 대문자 i 아래 1 빼기 q Base 왼쪽 괄호 n 빼기 s 더하기 1 콤마 s 빼기 r 빼기 j 오른쪽 괄호 마침표 배열 끝"
     },
     "Sample_64_sbrief": {
-      "expected": "배열 첫번째 행 첫번째 열 감마 두번째 열 equals 큰 피 좌 중괄호 큰 이 아래 피 콤마 큐 Base subset of 좌 괄호 큰 엑스 아래 좌 괄호 알 우 괄호 Base 콤마 큰 엑스 아래 좌 괄호 에스 우 괄호 Base 우 중괄호 두번째 행 첫번째 열 빈 칸 두번째 열 equals 분수 좌 괄호 알 빼기 1 우 괄호 팩토리얼 분의 엔 팩토리얼 분수끝 시그마 합 하단문자 제이 equals 0 상단첨자 에스 빼기 알 빼기 1 첨자끝 좌 괄호 마이너스 1 우 괄호 위 제이 Base 분수 좌 괄호 엔 빼기 알 빼기 제이 우 괄호 팩토리얼 제이 팩토리얼 분의 피 위 알 더하기 제이 Base 분수끝 큰 아이 아래 1 빼기 큐 Base 좌 괄호 엔 빼기 에스 더하기 1 콤마 에스 빼기 알 빼기 제이 우 괄호 마침표 배열끝"
+      "expected": "배열 첫번째 행 첫번째 열 감마 두번째 열 equals 대문자 p 좌 중괄호 대문자 e 아래 p 콤마 q Base subset of 좌 괄호 대문자 x 아래 좌 괄호 r 우 괄호 Base 콤마 대문자 x 아래 좌 괄호 s 우 괄호 Base 우 중괄호 두번째 행 첫번째 열 빈 칸 두번째 열 equals 분수 좌 괄호 r 빼기 1 우 괄호 팩토리얼 분의 n 팩토리얼 분수 끝 시그마 합 하단문자 j equals 0 상단첨자 s 빼기 r 빼기 1 첨자 끝 좌 괄호 마이너스 1 우 괄호 위 j Base 분수 좌 괄호 n 빼기 r 빼기 j 우 괄호 팩토리얼 j 팩토리얼 분의 p 위 r 더하기 j Base 분수 끝 대문자 i 아래 1 빼기 q Base 좌 괄호 n 빼기 s 더하기 1 콤마 s 빼기 r 빼기 j 우 괄호 마침표 배열 끝"
     },
     "Sample_65_default": {
-      "expected": "큰 에스 아래첨자 아이 Baseline 이항계수시작 조합 티 씨 엑스 이항계수끝 equals 2 행 2 열의 행렬시작 첫번째 행 첫번째 열 1 나누기 엠 두번째 열 0 두번째 행 첫번째 열 a 아래첨자 아이 Baseline 두번째 열 알 아래첨자 i Baseline 행렬끝 이항계수시작 티 Choose 엑스 이항계수끝 더하기 이항계수시작 왼쪽 괄호 i 빼기 1 오른쪽 괄호 나누기 엠 Choose b 아래첨자 i Baseline 이항계수끝 콤마"
+      "expected": "대문자 s 아래 첨자 i Baseline 이항계수 시작 조합 t 씨 x 이항계수 끝 equals 2 행 2 열의 행렬 시작 첫번째 행 첫번째 열 1 나누기 m 두번째 열 0 두번째 행 첫번째 열 a 아래 첨자 i Baseline 두번째 열 r 아래 첨자 i Baseline 행렬 끝 이항계수 시작 t Choose x 이항계수 끝 더하기 이항계수 시작 왼쪽 괄호 i 빼기 1 오른쪽 괄호 나누기 m Choose b 아래 첨자 i Baseline 이항계수 끝 콤마"
     },
     "Sample_65_brief": {
-      "expected": "큰 에스 아래 아이 Base 이항계수시작 조합 티 씨 엑스 이항계수끝 equals 2 행 2 열의 행렬시작 첫번째 행 첫번째 열 1 나누기 엠 두번째 열 0 두번째 행 첫번째 열 a 아래 아이 Base 두번째 열 알 아래 아이 Base 행렬끝 이항계수시작 티 Choose 엑스 이항계수끝 더하기 이항계수시작 왼쪽 괄호 i 빼기 1 오른쪽 괄호 나누기 엠 Choose b 아래 i Base 이항계수끝 콤마"
+      "expected": "대문자 s 아래 i Base 이항계수 시작 조합 t 씨 x 이항계수 끝 equals 2 행 2 열의 행렬 시작 첫번째 행 첫번째 열 1 나누기 m 두번째 열 0 두번째 행 첫번째 열 a 아래 i Base 두번째 열 r 아래 i Base 행렬 끝 이항계수 시작 t Choose x 이항계수 끝 더하기 이항계수 시작 왼쪽 괄호 i 빼기 1 오른쪽 괄호 나누기 m Choose b 아래 i Base 이항계수 끝 콤마"
     },
     "Sample_65_sbrief": {
-      "expected": "큰 에스 아래 아이 Base 이항계수 조합 티 씨 엑스 이항계수끝 equals 2 행 2 열의 행렬 첫번째 행 첫번째 열 1 나누기 엠 두번째 열 0 두번째 행 첫번째 열 a 아래 아이 Base 두번째 열 알 아래 아이 Base 행렬끝 이항계수 티 Choose 엑스 이항계수끝 더하기 BinomialOrMatrix 좌 괄호 i 빼기 1 우 괄호 나누기 엠 Choose b 아래 i Base 이항계수끝 콤마"
+      "expected": "대문자 s 아래 i Base 이항계수 조합 t 씨 x 이항계수 끝 equals 2 행 2 열의 행렬 첫번째 행 첫번째 열 1 나누기 m 두번째 열 0 두번째 행 첫번째 열 a 아래 i Base 두번째 열 r 아래 i Base 행렬 끝 이항계수 t Choose x 이항계수 끝 더하기 BinomialOrMatrix 좌 괄호 i 빼기 1 우 괄호 나누기 m Choose b 아래 i Base 이항계수 끝 콤마"
     },
     "Sample_66_default": {
-      "expected": "c 1 h 위첨자 4 빼기 2 에스 Baseline less than or equals 분수시작 1 Over 2 큰 티 분수끝 integral 아래첨자 마이너스 큰 티 위첨자 큰 티 Baseline 왼쪽 괄호 f 왼쪽 괄호 티 더하기 h 오른쪽 괄호 빼기 f 왼쪽 괄호 티 오른쪽 괄호 오른쪽 괄호 제곱 기본 d 티 less than or equals c 2 h 위첨자 4 빼기 2 s"
+      "expected": "c 1 h 위첨자 4 빼기 2 s Baseline less than or equals 분수 시작 1 Over 2 대문자 t 분수 끝 integral 아래 첨자 마이너스 대문자 t 위첨자 대문자 t Baseline 왼쪽 괄호 f 왼쪽 괄호 t 더하기 h 오른쪽 괄호 빼기 f 왼쪽 괄호 t 오른쪽 괄호 오른쪽 괄호 제곱 기본 d t less than or equals c 2 h 위첨자 4 빼기 2 s"
     },
     "Sample_66_brief": {
-      "expected": "c 1 h 위 4 빼기 2 에스 Base less than or equals 분수시작 1 Over 2 큰 티 분수끝 integral 아래 마이너스 큰 티 위 큰 티 Base 왼쪽 괄호 f 왼쪽 괄호 티 더하기 h 오른쪽 괄호 빼기 f 왼쪽 괄호 티 오른쪽 괄호 오른쪽 괄호 제곱 기본 d 티 less than or equals c 2 h 위 4 빼기 2 s"
+      "expected": "c 1 h 위 4 빼기 2 s Base less than or equals 분수 시작 1 Over 2 대문자 t 분수 끝 integral 아래 마이너스 대문자 t 위 대문자 t Base 왼쪽 괄호 f 왼쪽 괄호 t 더하기 h 오른쪽 괄호 빼기 f 왼쪽 괄호 t 오른쪽 괄호 오른쪽 괄호 제곱 기본 d t less than or equals c 2 h 위 4 빼기 2 s"
     },
     "Sample_66_sbrief": {
-      "expected": "c 1 h 위 4 빼기 2 에스 Base less than or equals 분수 1 Over 2 큰 티 분수끝 integral 아래 마이너스 큰 티 위 큰 티 Base 좌 괄호 f 좌 괄호 티 더하기 h 우 괄호 빼기 f 좌 괄호 티 우 괄호 우 괄호 제곱 기본 d 티 less than or equals c 2 h 위 4 빼기 2 s"
+      "expected": "c 1 h 위 4 빼기 2 s Base less than or equals 분수 1 Over 2 대문자 t 분수 끝 integral 아래 마이너스 대문자 t 위 대문자 t Base 좌 괄호 f 좌 괄호 t 더하기 h 우 괄호 빼기 f 좌 괄호 t 우 괄호 우 괄호 제곱 기본 d t less than or equals c 2 h 위 4 빼기 2 s"
     },
     "Sample_67_default": {
-      "expected": "큰 C 왼쪽 괄호 0 오른쪽 괄호 빼기 큰 C 왼쪽 괄호 h 오른쪽 괄호 asymptotically equals c h 위첨자 4 빼기 2 s"
+      "expected": "대문자 c 왼쪽 괄호 0 오른쪽 괄호 빼기 대문자 c 왼쪽 괄호 h 오른쪽 괄호 asymptotically equals c h 위첨자 4 빼기 2 s"
     },
     "Sample_67_brief": {
-      "expected": "큰 C 왼쪽 괄호 0 오른쪽 괄호 빼기 큰 C 왼쪽 괄호 h 오른쪽 괄호 asymptotically equals c h 위 4 빼기 2 s"
+      "expected": "대문자 c 왼쪽 괄호 0 오른쪽 괄호 빼기 대문자 c 왼쪽 괄호 h 오른쪽 괄호 asymptotically equals c h 위 4 빼기 2 s"
     },
     "Sample_67_sbrief": {
-      "expected": "큰 C 좌 괄호 0 우 괄호 빼기 큰 C 좌 괄호 h 우 괄호 asymptotically equals c h 위 4 빼기 2 s"
+      "expected": "대문자 c 좌 괄호 0 우 괄호 빼기 대문자 c 좌 괄호 h 우 괄호 asymptotically equals c h 위 4 빼기 2 s"
     },
     "Sample_68_default": {
-      "expected": "큰 에스 왼쪽 괄호 오메가 오른쪽 괄호 equals 리미트 하단문자 큰 티 오른쪽 화살표 무한대 첨자끝 분수시작 1 Over 2 큰 티 분수끝 절댓값시작 integral 아래첨자 마이너스 큰 티 위첨자 큰 티 Baseline 콤마 f 콤마 왼쪽 괄호 콤마 티 콤마 오른쪽 괄호 콤마 기본 e 위첨자 italic i 티 오메가 Baseline 콤마 기본 d 콤마 티 절댓값끝 제곱 마침표"
+      "expected": "대문자 s 왼쪽 괄호 오메가 오른쪽 괄호 equals 리미트 하단문자 대문자 t 오른쪽 화살표 무한대 첨자 끝 분수 시작 1 Over 2 대문자 t 분수 끝 절댓값 시작 integral 아래 첨자 마이너스 대문자 t 위첨자 대문자 t Baseline 콤마 f 콤마 왼쪽 괄호 콤마 t 콤마 오른쪽 괄호 콤마 기본 e 위첨자 italic i t 오메가 Baseline 콤마 기본 d 콤마 t 절댓값 끝 제곱 마침표"
     },
     "Sample_68_brief": {
-      "expected": "큰 에스 왼쪽 괄호 오메가 오른쪽 괄호 equals 리미트 하단문자 큰 티 오른쪽 화살표 무한대 첨자끝 분수시작 1 Over 2 큰 티 분수끝 절댓값시작 integral 아래 마이너스 큰 티 위 큰 티 Base 콤마 f 콤마 왼쪽 괄호 콤마 티 콤마 오른쪽 괄호 콤마 기본 e 위 italic i 티 오메가 Base 콤마 기본 d 콤마 티 절댓값끝 제곱 마침표"
+      "expected": "대문자 s 왼쪽 괄호 오메가 오른쪽 괄호 equals 리미트 하단문자 대문자 t 오른쪽 화살표 무한대 첨자 끝 분수 시작 1 Over 2 대문자 t 분수 끝 절댓값 시작 integral 아래 마이너스 대문자 t 위 대문자 t Base 콤마 f 콤마 왼쪽 괄호 콤마 t 콤마 오른쪽 괄호 콤마 기본 e 위 italic i t 오메가 Base 콤마 기본 d 콤마 t 절댓값 끝 제곱 마침표"
     },
     "Sample_68_sbrief": {
-      "expected": "큰 에스 좌 괄호 오메가 우 괄호 equals 리미트 하단문자 큰 티 우 화살표 무한대 첨자끝 분수 1 Over 2 큰 티 분수끝 절댓값 integral 아래 마이너스 큰 티 위 큰 티 Base 콤마 f 콤마 좌 괄호 콤마 티 콤마 우 괄호 콤마 기본 e 위 italic i 티 오메가 Base 콤마 기본 d 콤마 티 절댓값끝 제곱 마침표"
+      "expected": "대문자 s 좌 괄호 오메가 우 괄호 equals 리미트 하단문자 대문자 t 우 화살표 무한대 첨자 끝 분수 1 Over 2 대문자 t 분수 끝 절댓값 integral 아래 마이너스 대문자 t 위 대문자 t Base 콤마 f 콤마 좌 괄호 콤마 t 콤마 우 괄호 콤마 기본 e 위 italic i t 오메가 Base 콤마 기본 d 콤마 t 절댓값 끝 제곱 마침표"
     },
     "Sample_69_default": {
-      "expected": "integral 아래첨자 0 위첨자 1 Baseline integral 아래첨자 0 위첨자 1 Baseline 왼쪽 대괄호 절댓값시작 f 왼쪽 괄호 티 오른쪽 괄호 빼기 f 왼쪽 괄호 u 오른쪽 괄호 절댓값끝 제곱 더하기 절댓값시작 티 빼기 u 절댓값끝 제곱 오른쪽 대괄호 위첨자 마이너스 에스 나누기 2 Baseline 기본 d 티 기본 d u less than 무한대"
+      "expected": "integral 아래 첨자 0 위첨자 1 Baseline integral 아래 첨자 0 위첨자 1 Baseline 왼쪽 대괄호 절댓값 시작 f 왼쪽 괄호 t 오른쪽 괄호 빼기 f 왼쪽 괄호 u 오른쪽 괄호 절댓값 끝 제곱 더하기 절댓값 시작 t 빼기 u 절댓값 끝 제곱 오른쪽 대괄호 위첨자 마이너스 s 나누기 2 Baseline 기본 d t 기본 d u less than 무한대"
     },
     "Sample_69_brief": {
-      "expected": "integral 아래 0 위 1 Base integral 아래 0 위 1 Base 왼쪽 대괄호 절댓값시작 f 왼쪽 괄호 티 오른쪽 괄호 빼기 f 왼쪽 괄호 u 오른쪽 괄호 절댓값끝 제곱 더하기 절댓값시작 티 빼기 u 절댓값끝 제곱 오른쪽 대괄호 위 마이너스 에스 나누기 2 Base 기본 d 티 기본 d u less than 무한대"
+      "expected": "integral 아래 0 위 1 Base integral 아래 0 위 1 Base 왼쪽 대괄호 절댓값 시작 f 왼쪽 괄호 t 오른쪽 괄호 빼기 f 왼쪽 괄호 u 오른쪽 괄호 절댓값 끝 제곱 더하기 절댓값 시작 t 빼기 u 절댓값 끝 제곱 오른쪽 대괄호 위 마이너스 s 나누기 2 Base 기본 d t 기본 d u less than 무한대"
     },
     "Sample_69_sbrief": {
-      "expected": "integral 아래 0 위 1 Base integral 아래 0 위 1 Base 좌 대괄호 절댓값 f 좌 괄호 티 우 괄호 빼기 f 좌 괄호 u 우 괄호 절댓값끝 제곱 더하기 절댓값 티 빼기 u 절댓값끝 제곱 우 대괄호 위 마이너스 에스 나누기 2 Base 기본 d 티 기본 d u less than 무한대"
+      "expected": "integral 아래 0 위 1 Base integral 아래 0 위 1 Base 좌 대괄호 절댓값 f 좌 괄호 t 우 괄호 빼기 f 좌 괄호 u 우 괄호 절댓값 끝 제곱 더하기 절댓값 t 빼기 u 절댓값 끝 제곱 우 대괄호 위 마이너스 s 나누기 2 Base 기본 d t 기본 d u less than 무한대"
     },
     "Sample_70_default": {
-      "expected": "sans serif 큰 이 왼쪽 괄호 시그마 합 하단문자 큰 아이 element of 큰 이 아래첨자 케이 더하기 1 Baseline 첨자끝 절댓값시작 큰 아이 절댓값끝 위첨자 에스 Baseline 오른쪽 괄호 equals sans serif 큰 이 왼쪽 괄호 시그마 합 하단문자 큰 아이 element of 큰 이 아래첨자 케이 Baseline 첨자끝 절댓값시작 큰 아이 절댓값끝 위첨자 에스 Baseline 오른쪽 괄호 sans serif 큰 이 왼쪽 괄호 큰 알 1 위첨자 에스 Baseline 더하기 큰 알 2 위첨자 에스 Baseline 오른쪽 괄호 마침표"
+      "expected": "sans serif 대문자 e 왼쪽 괄호 시그마 합 하단문자 대문자 i element of 대문자 e 아래 첨자 k 더하기 1 Baseline 첨자 끝 절댓값 시작 대문자 i 절댓값 끝 위첨자 s Baseline 오른쪽 괄호 equals sans serif 대문자 e 왼쪽 괄호 시그마 합 하단문자 대문자 i element of 대문자 e 아래 첨자 k Baseline 첨자 끝 절댓값 시작 대문자 i 절댓값 끝 위첨자 s Baseline 오른쪽 괄호 sans serif 대문자 e 왼쪽 괄호 대문자 r 1 위첨자 s Baseline 더하기 대문자 r 2 위첨자 s Baseline 오른쪽 괄호 마침표"
     },
     "Sample_70_brief": {
-      "expected": "sans serif 큰 이 왼쪽 괄호 시그마 합 하단문자 큰 아이 element of 큰 이 아래 케이 더하기 1 Base 첨자끝 절댓값시작 큰 아이 절댓값끝 위 에스 Base 오른쪽 괄호 equals sans serif 큰 이 왼쪽 괄호 시그마 합 하단문자 큰 아이 element of 큰 이 아래 케이 Base 첨자끝 절댓값시작 큰 아이 절댓값끝 위 에스 Base 오른쪽 괄호 sans serif 큰 이 왼쪽 괄호 큰 알 1 위 에스 Base 더하기 큰 알 2 위 에스 Base 오른쪽 괄호 마침표"
+      "expected": "sans serif 대문자 e 왼쪽 괄호 시그마 합 하단문자 대문자 i element of 대문자 e 아래 k 더하기 1 Base 첨자 끝 절댓값 시작 대문자 i 절댓값 끝 위 s Base 오른쪽 괄호 equals sans serif 대문자 e 왼쪽 괄호 시그마 합 하단문자 대문자 i element of 대문자 e 아래 k Base 첨자 끝 절댓값 시작 대문자 i 절댓값 끝 위 s Base 오른쪽 괄호 sans serif 대문자 e 왼쪽 괄호 대문자 r 1 위 s Base 더하기 대문자 r 2 위 s Base 오른쪽 괄호 마침표"
     },
     "Sample_70_sbrief": {
-      "expected": "sans serif 큰 이 좌 괄호 시그마 합 하단문자 큰 아이 element of 큰 이 아래 케이 더하기 1 Base 첨자끝 절댓값 큰 아이 절댓값끝 위 에스 Base 우 괄호 equals sans serif 큰 이 좌 괄호 시그마 합 하단문자 큰 아이 element of 큰 이 아래 케이 Base 첨자끝 절댓값 큰 아이 절댓값끝 위 에스 Base 우 괄호 sans serif 큰 이 좌 괄호 큰 알 1 위 에스 Base 더하기 큰 알 2 위 에스 Base 우 괄호 마침표"
+      "expected": "sans serif 대문자 e 좌 괄호 시그마 합 하단문자 대문자 i element of 대문자 e 아래 k 더하기 1 Base 첨자 끝 절댓값 대문자 i 절댓값 끝 위 s Base 우 괄호 equals sans serif 대문자 e 좌 괄호 시그마 합 하단문자 대문자 i element of 대문자 e 아래 k Base 첨자 끝 절댓값 대문자 i 절댓값 끝 위 s Base 우 괄호 sans serif 대문자 e 좌 괄호 대문자 r 1 위 s Base 더하기 대문자 r 2 위 s Base 우 괄호 마침표"
     },
     "Sample_71_default": {
-      "expected": "왼쪽 괄호 엑스 1 콤마 와이 1 오른쪽 괄호"
+      "expected": "왼쪽 괄호 x 1 콤마 y 1 오른쪽 괄호"
     },
     "Sample_71_brief": {
-      "expected": "왼쪽 괄호 엑스 1 콤마 와이 1 오른쪽 괄호"
+      "expected": "왼쪽 괄호 x 1 콤마 y 1 오른쪽 괄호"
     },
     "Sample_71_sbrief": {
-      "expected": "좌 괄호 엑스 1 콤마 와이 1 우 괄호"
+      "expected": "좌 괄호 x 1 콤마 y 1 우 괄호"
     },
     "Sample_72_default": {
-      "expected": "왼쪽 괄호 엑스 2 콤마 와이 2 오른쪽 괄호"
+      "expected": "왼쪽 괄호 x 2 콤마 y 2 오른쪽 괄호"
     },
     "Sample_72_brief": {
-      "expected": "왼쪽 괄호 엑스 2 콤마 와이 2 오른쪽 괄호"
+      "expected": "왼쪽 괄호 x 2 콤마 y 2 오른쪽 괄호"
     },
     "Sample_72_sbrief": {
-      "expected": "좌 괄호 엑스 2 콤마 와이 2 우 괄호"
+      "expected": "좌 괄호 x 2 콤마 y 2 우 괄호"
     },
     "Sample_73_default": {
-      "expected": "d equals 루트시작 왼쪽 괄호 엑스 2 빼기 엑스 1 오른쪽 괄호 제곱 더하기 왼쪽 괄호 와이 2 빼기 와이 1 오른쪽 괄호 제곱 루트끝"
+      "expected": "d equals 루트 시작 왼쪽 괄호 x 2 빼기 x 1 오른쪽 괄호 제곱 더하기 왼쪽 괄호 y 2 빼기 y 1 오른쪽 괄호 제곱 루트 끝"
     },
     "Sample_73_brief": {
-      "expected": "d equals 루트시작 왼쪽 괄호 엑스 2 빼기 엑스 1 오른쪽 괄호 제곱 더하기 왼쪽 괄호 와이 2 빼기 와이 1 오른쪽 괄호 제곱 루트끝"
+      "expected": "d equals 루트 시작 왼쪽 괄호 x 2 빼기 x 1 오른쪽 괄호 제곱 더하기 왼쪽 괄호 y 2 빼기 y 1 오른쪽 괄호 제곱 루트 끝"
     },
     "Sample_73_sbrief": {
-      "expected": "d equals 루트 좌 괄호 엑스 2 빼기 엑스 1 우 괄호 제곱 더하기 좌 괄호 와이 2 빼기 와이 1 우 괄호 제곱 루트끝"
+      "expected": "d equals 루트 좌 괄호 x 2 빼기 x 1 우 괄호 제곱 더하기 좌 괄호 y 2 빼기 y 1 우 괄호 제곱 루트 끝"
     },
     "Sample_74_default": {
-      "expected": "double struck 큰 R"
+      "expected": "double struck 대문자 r"
     },
     "Sample_74_brief": {
-      "expected": "double struck 큰 R"
+      "expected": "double struck 대문자 r"
     },
     "Sample_74_sbrief": {
-      "expected": "double struck 큰 R"
+      "expected": "double struck 대문자 r"
     },
     "Sample_75_default": {
-      "expected": "double struck 큰 알 equals 왼쪽 괄호 마이너스 무한대 콤마 무한대 오른쪽 괄호"
+      "expected": "double struck 대문자 r equals 왼쪽 괄호 마이너스 무한대 콤마 무한대 오른쪽 괄호"
     },
     "Sample_75_brief": {
-      "expected": "double struck 큰 알 equals 왼쪽 괄호 마이너스 무한대 콤마 무한대 오른쪽 괄호"
+      "expected": "double struck 대문자 r equals 왼쪽 괄호 마이너스 무한대 콤마 무한대 오른쪽 괄호"
     },
     "Sample_75_sbrief": {
-      "expected": "double struck 큰 알 equals 좌 괄호 마이너스 무한대 콤마 무한대 우 괄호"
+      "expected": "double struck 대문자 r equals 좌 괄호 마이너스 무한대 콤마 무한대 우 괄호"
     },
     "Sample_76_default": {
       "expected": "StartSet 1 콤마 2 콤마 3 EndSet"
@@ -693,310 +693,310 @@
       "expected": "Set 1 콤마 2 콤마 3 EndSet"
     },
     "Sample_77_default": {
-      "expected": "1 element of 큰 에스"
+      "expected": "1 element of 대문자 s"
     },
     "Sample_77_brief": {
-      "expected": "1 element of 큰 에스"
+      "expected": "1 element of 대문자 s"
     },
     "Sample_77_sbrief": {
-      "expected": "1 element of 큰 에스"
+      "expected": "1 element of 대문자 s"
     },
     "Sample_78_default": {
-      "expected": "3 element of 큰 에스"
+      "expected": "3 element of 대문자 s"
     },
     "Sample_78_brief": {
-      "expected": "3 element of 큰 에스"
+      "expected": "3 element of 대문자 s"
     },
     "Sample_78_sbrief": {
-      "expected": "3 element of 큰 에스"
+      "expected": "3 element of 대문자 s"
     },
     "Sample_79_default": {
-      "expected": "4 not an element of 큰 에스"
+      "expected": "4 not an element of 대문자 s"
     },
     "Sample_79_brief": {
-      "expected": "4 not an element of 큰 에스"
+      "expected": "4 not an element of 대문자 s"
     },
     "Sample_79_sbrief": {
-      "expected": "4 not an element of 큰 에스"
+      "expected": "4 not an element of 대문자 s"
     },
     "Sample_80_default": {
-      "expected": "a equals 루트시작 3 엑스 빼기 1 루트끝 더하기 왼쪽 괄호 1 더하기 엑스 오른쪽 괄호 제곱"
+      "expected": "a equals 루트 시작 3 x 빼기 1 루트 끝 더하기 왼쪽 괄호 1 더하기 x 오른쪽 괄호 제곱"
     },
     "Sample_80_brief": {
-      "expected": "a equals 루트시작 3 엑스 빼기 1 루트끝 더하기 왼쪽 괄호 1 더하기 엑스 오른쪽 괄호 제곱"
+      "expected": "a equals 루트 시작 3 x 빼기 1 루트 끝 더하기 왼쪽 괄호 1 더하기 x 오른쪽 괄호 제곱"
     },
     "Sample_80_sbrief": {
-      "expected": "a equals 루트 3 엑스 빼기 1 루트끝 더하기 좌 괄호 1 더하기 엑스 우 괄호 제곱"
+      "expected": "a equals 루트 3 x 빼기 1 루트 끝 더하기 좌 괄호 1 더하기 x 우 괄호 제곱"
     },
     "Sample_81_default": {
-      "expected": "a equals 분수시작 왼쪽 괄호 b 더하기 c 오른쪽 괄호 제곱 Over d 분수끝 더하기 분수시작 왼쪽 괄호 e 더하기 f 오른쪽 괄호 제곱 Over g 분수끝"
+      "expected": "a equals 분수 시작 왼쪽 괄호 b 더하기 c 오른쪽 괄호 제곱 Over d 분수 끝 더하기 분수 시작 왼쪽 괄호 e 더하기 f 오른쪽 괄호 제곱 Over g 분수 끝"
     },
     "Sample_81_brief": {
-      "expected": "a equals 분수시작 왼쪽 괄호 b 더하기 c 오른쪽 괄호 제곱 Over d 분수끝 더하기 분수시작 왼쪽 괄호 e 더하기 f 오른쪽 괄호 제곱 Over g 분수끝"
+      "expected": "a equals 분수 시작 왼쪽 괄호 b 더하기 c 오른쪽 괄호 제곱 Over d 분수 끝 더하기 분수 시작 왼쪽 괄호 e 더하기 f 오른쪽 괄호 제곱 Over g 분수 끝"
     },
     "Sample_81_sbrief": {
-      "expected": "a equals 분수 좌 괄호 b 더하기 c 우 괄호 제곱 Over d 분수끝 더하기 분수 좌 괄호 e 더하기 f 우 괄호 제곱 Over g 분수끝"
+      "expected": "a equals 분수 좌 괄호 b 더하기 c 우 괄호 제곱 Over d 분수 끝 더하기 분수 좌 괄호 e 더하기 f 우 괄호 제곱 Over g 분수 끝"
     },
     "Sample_82_default": {
-      "expected": "엑스 equals 왼쪽 대괄호 왼쪽 괄호 a 더하기 b 오른쪽 괄호 제곱 왼쪽 괄호 c 빼기 b 오른쪽 괄호 제곱 오른쪽 대괄호 더하기 왼쪽 대괄호 왼쪽 괄호 d 더하기 e 오른쪽 괄호 제곱 왼쪽 괄호 f 빼기 e 오른쪽 괄호 제곱 오른쪽 대괄호"
+      "expected": "x equals 왼쪽 대괄호 왼쪽 괄호 a 더하기 b 오른쪽 괄호 제곱 왼쪽 괄호 c 빼기 b 오른쪽 괄호 제곱 오른쪽 대괄호 더하기 왼쪽 대괄호 왼쪽 괄호 d 더하기 e 오른쪽 괄호 제곱 왼쪽 괄호 f 빼기 e 오른쪽 괄호 제곱 오른쪽 대괄호"
     },
     "Sample_82_brief": {
-      "expected": "엑스 equals 왼쪽 대괄호 왼쪽 괄호 a 더하기 b 오른쪽 괄호 제곱 왼쪽 괄호 c 빼기 b 오른쪽 괄호 제곱 오른쪽 대괄호 더하기 왼쪽 대괄호 왼쪽 괄호 d 더하기 e 오른쪽 괄호 제곱 왼쪽 괄호 f 빼기 e 오른쪽 괄호 제곱 오른쪽 대괄호"
+      "expected": "x equals 왼쪽 대괄호 왼쪽 괄호 a 더하기 b 오른쪽 괄호 제곱 왼쪽 괄호 c 빼기 b 오른쪽 괄호 제곱 오른쪽 대괄호 더하기 왼쪽 대괄호 왼쪽 괄호 d 더하기 e 오른쪽 괄호 제곱 왼쪽 괄호 f 빼기 e 오른쪽 괄호 제곱 오른쪽 대괄호"
     },
     "Sample_82_sbrief": {
-      "expected": "엑스 equals 좌 대괄호 좌 괄호 a 더하기 b 우 괄호 제곱 좌 괄호 c 빼기 b 우 괄호 제곱 우 대괄호 더하기 좌 대괄호 좌 괄호 d 더하기 e 우 괄호 제곱 좌 괄호 f 빼기 e 우 괄호 제곱 우 대괄호"
+      "expected": "x equals 좌 대괄호 좌 괄호 a 더하기 b 우 괄호 제곱 좌 괄호 c 빼기 b 우 괄호 제곱 우 대괄호 더하기 좌 대괄호 좌 괄호 d 더하기 e 우 괄호 제곱 좌 괄호 f 빼기 e 우 괄호 제곱 우 대괄호"
     },
     "Sample_83_default": {
-      "expected": "엑스 equals 왼쪽 대괄호 왼쪽 괄호 a 더하기 b 오른쪽 괄호 제곱 오른쪽 대괄호 더하기 왼쪽 대괄호 왼쪽 괄호 f 빼기 e 오른쪽 괄호 제곱 오른쪽 대괄호"
+      "expected": "x equals 왼쪽 대괄호 왼쪽 괄호 a 더하기 b 오른쪽 괄호 제곱 오른쪽 대괄호 더하기 왼쪽 대괄호 왼쪽 괄호 f 빼기 e 오른쪽 괄호 제곱 오른쪽 대괄호"
     },
     "Sample_83_brief": {
-      "expected": "엑스 equals 왼쪽 대괄호 왼쪽 괄호 a 더하기 b 오른쪽 괄호 제곱 오른쪽 대괄호 더하기 왼쪽 대괄호 왼쪽 괄호 f 빼기 e 오른쪽 괄호 제곱 오른쪽 대괄호"
+      "expected": "x equals 왼쪽 대괄호 왼쪽 괄호 a 더하기 b 오른쪽 괄호 제곱 오른쪽 대괄호 더하기 왼쪽 대괄호 왼쪽 괄호 f 빼기 e 오른쪽 괄호 제곱 오른쪽 대괄호"
     },
     "Sample_83_sbrief": {
-      "expected": "엑스 equals 좌 대괄호 좌 괄호 a 더하기 b 우 괄호 제곱 우 대괄호 더하기 좌 대괄호 좌 괄호 f 빼기 e 우 괄호 제곱 우 대괄호"
+      "expected": "x equals 좌 대괄호 좌 괄호 a 더하기 b 우 괄호 제곱 우 대괄호 더하기 좌 대괄호 좌 괄호 f 빼기 e 우 괄호 제곱 우 대괄호"
     },
     "Sample_84_default": {
-      "expected": "엑스 equals 왼쪽 대괄호 왼쪽 괄호 a 더하기 b 오른쪽 괄호 제곱 오른쪽 대괄호"
+      "expected": "x equals 왼쪽 대괄호 왼쪽 괄호 a 더하기 b 오른쪽 괄호 제곱 오른쪽 대괄호"
     },
     "Sample_84_brief": {
-      "expected": "엑스 equals 왼쪽 대괄호 왼쪽 괄호 a 더하기 b 오른쪽 괄호 제곱 오른쪽 대괄호"
+      "expected": "x equals 왼쪽 대괄호 왼쪽 괄호 a 더하기 b 오른쪽 괄호 제곱 오른쪽 대괄호"
     },
     "Sample_84_sbrief": {
-      "expected": "엑스 equals 좌 대괄호 좌 괄호 a 더하기 b 우 괄호 제곱 우 대괄호"
+      "expected": "x equals 좌 대괄호 좌 괄호 a 더하기 b 우 괄호 제곱 우 대괄호"
     },
     "Sample_85_default": {
-      "expected": "엑스 equals 왼쪽 괄호 a 더하기 b 오른쪽 괄호 제곱"
+      "expected": "x equals 왼쪽 괄호 a 더하기 b 오른쪽 괄호 제곱"
     },
     "Sample_85_brief": {
-      "expected": "엑스 equals 왼쪽 괄호 a 더하기 b 오른쪽 괄호 제곱"
+      "expected": "x equals 왼쪽 괄호 a 더하기 b 오른쪽 괄호 제곱"
     },
     "Sample_85_sbrief": {
-      "expected": "엑스 equals 좌 괄호 a 더하기 b 우 괄호 제곱"
+      "expected": "x equals 좌 괄호 a 더하기 b 우 괄호 제곱"
     },
     "Sample_86_default": {
-      "expected": "엑스 equals a 더하기 b 제곱"
+      "expected": "x equals a 더하기 b 제곱"
     },
     "Sample_86_brief": {
-      "expected": "엑스 equals a 더하기 b 제곱"
+      "expected": "x equals a 더하기 b 제곱"
     },
     "Sample_86_sbrief": {
-      "expected": "엑스 equals a 더하기 b 제곱"
+      "expected": "x equals a 더하기 b 제곱"
     },
     "Sample_87_default": {
-      "expected": "분수시작 2 분의 1 Over 4 분의 3 분수끝 equals 3 분의 2"
+      "expected": "분수 시작 2 분의 1 Over 4 분의 3 분수 끝 equals 3 분의 2"
     },
     "Sample_87_brief": {
-      "expected": "분수시작 2 분의 1 Over 4 분의 3 분수끝 equals 3 분의 2"
+      "expected": "분수 시작 2 분의 1 Over 4 분의 3 분수 끝 equals 3 분의 2"
     },
     "Sample_87_sbrief": {
-      "expected": "분수 2 분의 1 Over 4 분의 3 분수끝 equals 3 분의 2"
+      "expected": "분수 2 분의 1 Over 4 분의 3 분수 끝 equals 3 분의 2"
     },
     "Sample_88_default": {
-      "expected": "2 왼쪽 괄호 왼쪽 괄호 엑스 더하기 1 오른쪽 괄호 왼쪽 괄호 엑스 더하기 3 오른쪽 괄호 빼기 4 왼쪽 괄호 왼쪽 괄호 엑스 빼기 1 오른쪽 괄호 왼쪽 괄호 엑스 더하기 2 오른쪽 괄호 빼기 3 오른쪽 괄호 오른쪽 괄호 equals y"
+      "expected": "2 왼쪽 괄호 왼쪽 괄호 x 더하기 1 오른쪽 괄호 왼쪽 괄호 x 더하기 3 오른쪽 괄호 빼기 4 왼쪽 괄호 왼쪽 괄호 x 빼기 1 오른쪽 괄호 왼쪽 괄호 x 더하기 2 오른쪽 괄호 빼기 3 오른쪽 괄호 오른쪽 괄호 equals y"
     },
     "Sample_88_brief": {
-      "expected": "2 왼쪽 괄호 왼쪽 괄호 엑스 더하기 1 오른쪽 괄호 왼쪽 괄호 엑스 더하기 3 오른쪽 괄호 빼기 4 왼쪽 괄호 왼쪽 괄호 엑스 빼기 1 오른쪽 괄호 왼쪽 괄호 엑스 더하기 2 오른쪽 괄호 빼기 3 오른쪽 괄호 오른쪽 괄호 equals y"
+      "expected": "2 왼쪽 괄호 왼쪽 괄호 x 더하기 1 오른쪽 괄호 왼쪽 괄호 x 더하기 3 오른쪽 괄호 빼기 4 왼쪽 괄호 왼쪽 괄호 x 빼기 1 오른쪽 괄호 왼쪽 괄호 x 더하기 2 오른쪽 괄호 빼기 3 오른쪽 괄호 오른쪽 괄호 equals y"
     },
     "Sample_88_sbrief": {
-      "expected": "2 좌 괄호 좌 괄호 엑스 더하기 1 우 괄호 좌 괄호 엑스 더하기 3 우 괄호 빼기 4 좌 괄호 좌 괄호 엑스 빼기 1 우 괄호 좌 괄호 엑스 더하기 2 우 괄호 빼기 3 우 괄호 우 괄호 equals y"
+      "expected": "2 좌 괄호 좌 괄호 x 더하기 1 우 괄호 좌 괄호 x 더하기 3 우 괄호 빼기 4 좌 괄호 좌 괄호 x 빼기 1 우 괄호 좌 괄호 x 더하기 2 우 괄호 빼기 3 우 괄호 우 괄호 equals y"
     },
     "Sample_89_default": {
-      "expected": "코싸인 엑스 equals 1 빼기 분수시작 엑스 제곱 Over 2 팩토리얼 분수끝 더하기 분수시작 엑스 위첨자 4 Baseline Over 4 팩토리얼 분수끝 빼기 ellipsis"
+      "expected": "코싸인 x equals 1 빼기 분수 시작 x 제곱 Over 2 팩토리얼 분수 끝 더하기 분수 시작 x 위첨자 4 Baseline Over 4 팩토리얼 분수 끝 빼기 ellipsis"
     },
     "Sample_89_brief": {
-      "expected": "코싸인 엑스 equals 1 빼기 분수시작 엑스 제곱 Over 2 팩토리얼 분수끝 더하기 분수시작 엑스 위 4 Base Over 4 팩토리얼 분수끝 빼기 ellipsis"
+      "expected": "코싸인 x equals 1 빼기 분수 시작 x 제곱 Over 2 팩토리얼 분수 끝 더하기 분수 시작 x 위 4 Base Over 4 팩토리얼 분수 끝 빼기 ellipsis"
     },
     "Sample_89_sbrief": {
-      "expected": "코싸인 엑스 equals 1 빼기 분수 엑스 제곱 Over 2 팩토리얼 분수끝 더하기 분수 엑스 위 4 Base Over 4 팩토리얼 분수끝 빼기 ellipsis"
+      "expected": "코싸인 x equals 1 빼기 분수 x 제곱 Over 2 팩토리얼 분수 끝 더하기 분수 x 위 4 Base Over 4 팩토리얼 분수 끝 빼기 ellipsis"
     },
     "Sample_90_default": {
-      "expected": "엑스 equals 분수시작 마이너스 b 플러스마이너스 루트시작 b 제곱 빼기 4 a c 루트끝 Over 2 a 분수끝"
+      "expected": "x equals 분수 시작 마이너스 b 플러스마이너스 루트 시작 b 제곱 빼기 4 a c 루트 끝 Over 2 a 분수 끝"
     },
     "Sample_90_brief": {
-      "expected": "엑스 equals 분수시작 마이너스 b 플러스마이너스 루트시작 b 제곱 빼기 4 a c 루트끝 Over 2 a 분수끝"
+      "expected": "x equals 분수 시작 마이너스 b 플러스마이너스 루트 시작 b 제곱 빼기 4 a c 루트 끝 Over 2 a 분수 끝"
     },
     "Sample_90_sbrief": {
-      "expected": "엑스 equals 분수 마이너스 b 플러스마이너스 루트 b 제곱 빼기 4 a c 루트끝 Over 2 a 분수끝"
+      "expected": "x equals 분수 마이너스 b 플러스마이너스 루트 b 제곱 빼기 4 a c 루트 끝 Over 2 a 분수 끝"
     },
     "Sample_91_default": {
-      "expected": "엑스 더하기 와이 위첨자 분수시작 2 Over 케이 더하기 1 분수끝"
+      "expected": "x 더하기 y 위첨자 분수 시작 2 Over k 더하기 1 분수 끝"
     },
     "Sample_91_brief": {
-      "expected": "엑스 더하기 와이 위 분수시작 2 Over 케이 더하기 1 분수끝"
+      "expected": "x 더하기 y 위 분수 시작 2 Over k 더하기 1 분수 끝"
     },
     "Sample_91_sbrief": {
-      "expected": "엑스 더하기 와이 위 분수 2 Over 케이 더하기 1 분수끝"
+      "expected": "x 더하기 y 위 분수 2 Over k 더하기 1 분수 끝"
     },
     "Sample_92_default": {
-      "expected": "리미트 하단문자 엑스 오른쪽 화살표 0 첨자끝 분수시작 싸인 엑스 Over 엑스 분수끝 equals 1"
+      "expected": "리미트 하단문자 x 오른쪽 화살표 0 첨자 끝 분수 시작 싸인 x Over x 분수 끝 equals 1"
     },
     "Sample_92_brief": {
-      "expected": "리미트 하단문자 엑스 오른쪽 화살표 0 첨자끝 분수시작 싸인 엑스 Over 엑스 분수끝 equals 1"
+      "expected": "리미트 하단문자 x 오른쪽 화살표 0 첨자 끝 분수 시작 싸인 x Over x 분수 끝 equals 1"
     },
     "Sample_92_sbrief": {
-      "expected": "리미트 하단문자 엑스 우 화살표 0 첨자끝 분수 싸인 엑스 Over 엑스 분수끝 equals 1"
+      "expected": "리미트 하단문자 x 우 화살표 0 첨자 끝 분수 싸인 x Over x 분수 끝 equals 1"
     },
     "Sample_93_default": {
-      "expected": "d equals 루트시작 왼쪽 괄호 엑스 2 빼기 엑스 1 오른쪽 괄호 제곱 더하기 왼쪽 괄호 와이 2 빼기 와이 1 오른쪽 괄호 제곱 루트끝"
+      "expected": "d equals 루트 시작 왼쪽 괄호 x 2 빼기 x 1 오른쪽 괄호 제곱 더하기 왼쪽 괄호 y 2 빼기 y 1 오른쪽 괄호 제곱 루트 끝"
     },
     "Sample_93_brief": {
-      "expected": "d equals 루트시작 왼쪽 괄호 엑스 2 빼기 엑스 1 오른쪽 괄호 제곱 더하기 왼쪽 괄호 와이 2 빼기 와이 1 오른쪽 괄호 제곱 루트끝"
+      "expected": "d equals 루트 시작 왼쪽 괄호 x 2 빼기 x 1 오른쪽 괄호 제곱 더하기 왼쪽 괄호 y 2 빼기 y 1 오른쪽 괄호 제곱 루트 끝"
     },
     "Sample_93_sbrief": {
-      "expected": "d equals 루트 좌 괄호 엑스 2 빼기 엑스 1 우 괄호 제곱 더하기 좌 괄호 와이 2 빼기 와이 1 우 괄호 제곱 루트끝"
+      "expected": "d equals 루트 좌 괄호 x 2 빼기 x 1 우 괄호 제곱 더하기 좌 괄호 y 2 빼기 y 1 우 괄호 제곱 루트 끝"
     },
     "Sample_94_default": {
-      "expected": "큰 에프 아래첨자 엔 Baseline equals 큰 에프 아래첨자 엔 빼기 1 Baseline 더하기 큰 에프 아래첨자 엔 빼기 2"
+      "expected": "대문자 f 아래 첨자 n Baseline equals 대문자 f 아래 첨자 n 빼기 1 Baseline 더하기 대문자 f 아래 첨자 n 빼기 2"
     },
     "Sample_94_brief": {
-      "expected": "큰 에프 아래 엔 Base equals 큰 에프 아래 엔 빼기 1 Base 더하기 큰 에프 아래 엔 빼기 2"
+      "expected": "대문자 f 아래 n Base equals 대문자 f 아래 n 빼기 1 Base 더하기 대문자 f 아래 n 빼기 2"
     },
     "Sample_94_sbrief": {
-      "expected": "큰 에프 아래 엔 Base equals 큰 에프 아래 엔 빼기 1 Base 더하기 큰 에프 아래 엔 빼기 2"
+      "expected": "대문자 f 아래 n Base equals 대문자 f 아래 n 빼기 1 Base 더하기 대문자 f 아래 n 빼기 2"
     },
     "Sample_95_default": {
-      "expected": "bold 큰 피i equals Start 6 By 6 Matrix 첫번째 행 첫번째 열 파이 11 두번째 열 파이 12 세번째 열 파이 12 네번째 열 0 다섯번째 열 0 여섯번째 열 0 두번째 행 첫번째 열 파이 12 두번째 열 파이 11 세번째 열 파이 12 네번째 열 0 다섯번째 열 0 여섯번째 열 0 세번째 행 첫번째 열 파이 12 두번째 열 파이 12 세번째 열 파이 11 네번째 열 0 다섯번째 열 0 여섯번째 열 0 네번째 행 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 파이 44 다섯번째 열 0 여섯번째 열 0 다섯번째 행 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 0 다섯번째 열 파이 44 여섯번째 열 0 6th Row 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 0 다섯번째 열 0 여섯번째 열 파이 44 행렬끝"
+      "expected": "bold 대문자 피아이 equals Start 6 By 6 Matrix 첫번째 행 첫번째 열 파이 11 두번째 열 파이 12 세번째 열 파이 12 네번째 열 0 다섯번째 열 0 여섯번째 열 0 두번째 행 첫번째 열 파이 12 두번째 열 파이 11 세번째 열 파이 12 네번째 열 0 다섯번째 열 0 여섯번째 열 0 세번째 행 첫번째 열 파이 12 두번째 열 파이 12 세번째 열 파이 11 네번째 열 0 다섯번째 열 0 여섯번째 열 0 네번째 행 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 파이 44 다섯번째 열 0 여섯번째 열 0 다섯번째 행 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 0 다섯번째 열 파이 44 여섯번째 열 0 6th Row 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 0 다섯번째 열 0 여섯번째 열 파이 44 행렬 끝"
     },
     "Sample_95_brief": {
-      "expected": "bold 큰 피i equals Start 6 By 6 Matrix 첫번째 행 첫번째 열 파이 11 두번째 열 파이 12 세번째 열 파이 12 네번째 열 0 다섯번째 열 0 여섯번째 열 0 두번째 행 첫번째 열 파이 12 두번째 열 파이 11 세번째 열 파이 12 네번째 열 0 다섯번째 열 0 여섯번째 열 0 세번째 행 첫번째 열 파이 12 두번째 열 파이 12 세번째 열 파이 11 네번째 열 0 다섯번째 열 0 여섯번째 열 0 네번째 행 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 파이 44 다섯번째 열 0 여섯번째 열 0 다섯번째 행 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 0 다섯번째 열 파이 44 여섯번째 열 0 6th Row 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 0 다섯번째 열 0 여섯번째 열 파이 44 행렬끝"
+      "expected": "bold 대문자 피아이 equals Start 6 By 6 Matrix 첫번째 행 첫번째 열 파이 11 두번째 열 파이 12 세번째 열 파이 12 네번째 열 0 다섯번째 열 0 여섯번째 열 0 두번째 행 첫번째 열 파이 12 두번째 열 파이 11 세번째 열 파이 12 네번째 열 0 다섯번째 열 0 여섯번째 열 0 세번째 행 첫번째 열 파이 12 두번째 열 파이 12 세번째 열 파이 11 네번째 열 0 다섯번째 열 0 여섯번째 열 0 네번째 행 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 파이 44 다섯번째 열 0 여섯번째 열 0 다섯번째 행 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 0 다섯번째 열 파이 44 여섯번째 열 0 6th Row 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 0 다섯번째 열 0 여섯번째 열 파이 44 행렬 끝"
     },
     "Sample_95_sbrief": {
-      "expected": "bold 큰 피i equals 6 By 6 Matrix 첫번째 행 첫번째 열 파이 11 두번째 열 파이 12 세번째 열 파이 12 네번째 열 0 다섯번째 열 0 여섯번째 열 0 두번째 행 첫번째 열 파이 12 두번째 열 파이 11 세번째 열 파이 12 네번째 열 0 다섯번째 열 0 여섯번째 열 0 세번째 행 첫번째 열 파이 12 두번째 열 파이 12 세번째 열 파이 11 네번째 열 0 다섯번째 열 0 여섯번째 열 0 네번째 행 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 파이 44 다섯번째 열 0 여섯번째 열 0 다섯번째 행 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 0 다섯번째 열 파이 44 여섯번째 열 0 6th Row 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 0 다섯번째 열 0 여섯번째 열 파이 44 행렬끝"
+      "expected": "bold 대문자 피아이 equals 6 By 6 Matrix 첫번째 행 첫번째 열 파이 11 두번째 열 파이 12 세번째 열 파이 12 네번째 열 0 다섯번째 열 0 여섯번째 열 0 두번째 행 첫번째 열 파이 12 두번째 열 파이 11 세번째 열 파이 12 네번째 열 0 다섯번째 열 0 여섯번째 열 0 세번째 행 첫번째 열 파이 12 두번째 열 파이 12 세번째 열 파이 11 네번째 열 0 다섯번째 열 0 여섯번째 열 0 네번째 행 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 파이 44 다섯번째 열 0 여섯번째 열 0 다섯번째 행 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 0 다섯번째 열 파이 44 여섯번째 열 0 6th Row 첫번째 열 0 두번째 열 0 세번째 열 0 네번째 열 0 다섯번째 열 0 여섯번째 열 파이 44 행렬 끝"
     },
     "Sample_96_default": {
-      "expected": "s 11 equals 분수시작 c 11 더하기 c 12 Over 왼쪽 괄호 c 11 빼기 c 12 오른쪽 괄호 왼쪽 괄호 c 11 더하기 2 c 12 오른쪽 괄호 분수끝"
+      "expected": "s 11 equals 분수 시작 c 11 더하기 c 12 Over 왼쪽 괄호 c 11 빼기 c 12 오른쪽 괄호 왼쪽 괄호 c 11 더하기 2 c 12 오른쪽 괄호 분수 끝"
     },
     "Sample_96_brief": {
-      "expected": "s 11 equals 분수시작 c 11 더하기 c 12 Over 왼쪽 괄호 c 11 빼기 c 12 오른쪽 괄호 왼쪽 괄호 c 11 더하기 2 c 12 오른쪽 괄호 분수끝"
+      "expected": "s 11 equals 분수 시작 c 11 더하기 c 12 Over 왼쪽 괄호 c 11 빼기 c 12 오른쪽 괄호 왼쪽 괄호 c 11 더하기 2 c 12 오른쪽 괄호 분수 끝"
     },
     "Sample_96_sbrief": {
-      "expected": "s 11 equals 분수 c 11 더하기 c 12 Over 좌 괄호 c 11 빼기 c 12 우 괄호 좌 괄호 c 11 더하기 2 c 12 우 괄호 분수끝"
+      "expected": "s 11 equals 분수 c 11 더하기 c 12 Over 좌 괄호 c 11 빼기 c 12 우 괄호 좌 괄호 c 11 더하기 2 c 12 우 괄호 분수 끝"
     },
     "Sample_97_default": {
-      "expected": "큰 에스 i 기본 큰 O 2 더하기 6 기본 큰 H 기본 큰 에프 오른쪽 화살표 기본 큰 H 2 큰 에스 i 기본 큰 에프 6 더하기 2 기본 큰 H 2 기본 큰 O"
+      "expected": "대문자 s i 기본 대문자 o 2 더하기 6 기본 대문자 h 기본 대문자 f 오른쪽 화살표 기본 대문자 h 2 대문자 s i 기본 대문자 f 6 더하기 2 기본 대문자 h 2 기본 대문자 o"
     },
     "Sample_97_brief": {
-      "expected": "큰 에스 i 기본 큰 O 2 더하기 6 기본 큰 H 기본 큰 에프 오른쪽 화살표 기본 큰 H 2 큰 에스 i 기본 큰 에프 6 더하기 2 기본 큰 H 2 기본 큰 O"
+      "expected": "대문자 s i 기본 대문자 o 2 더하기 6 기본 대문자 h 기본 대문자 f 오른쪽 화살표 기본 대문자 h 2 대문자 s i 기본 대문자 f 6 더하기 2 기본 대문자 h 2 기본 대문자 o"
     },
     "Sample_97_sbrief": {
-      "expected": "큰 에스 i 기본 큰 O 2 더하기 6 기본 큰 H 기본 큰 에프 우 화살표 기본 큰 H 2 큰 에스 i 기본 큰 에프 6 더하기 2 기본 큰 H 2 기본 큰 O"
+      "expected": "대문자 s i 기본 대문자 o 2 더하기 6 기본 대문자 h 기본 대문자 f 우 화살표 기본 대문자 h 2 대문자 s i 기본 대문자 f 6 더하기 2 기본 대문자 h 2 기본 대문자 o"
     },
     "Sample_98_default": {
-      "expected": "분수시작 d Over d 엑스 분수끝 왼쪽 괄호 큰 이 왼쪽 괄호 엑스 오른쪽 괄호 큰 에이 왼쪽 괄호 엑스 오른쪽 괄호 분수시작 d w 왼쪽 괄호 엑스 오른쪽 괄호 Over d 엑스 분수끝 오른쪽 괄호 더하기 피 왼쪽 괄호 엑스 오른쪽 괄호 equals 0"
+      "expected": "분수 시작 d Over d x 분수 끝 왼쪽 괄호 대문자 e 왼쪽 괄호 x 오른쪽 괄호 대문자 a 왼쪽 괄호 x 오른쪽 괄호 분수 시작 d w 왼쪽 괄호 x 오른쪽 괄호 Over d x 분수 끝 오른쪽 괄호 더하기 p 왼쪽 괄호 x 오른쪽 괄호 equals 0"
     },
     "Sample_98_brief": {
-      "expected": "분수시작 d Over d 엑스 분수끝 왼쪽 괄호 큰 이 왼쪽 괄호 엑스 오른쪽 괄호 큰 에이 왼쪽 괄호 엑스 오른쪽 괄호 분수시작 d w 왼쪽 괄호 엑스 오른쪽 괄호 Over d 엑스 분수끝 오른쪽 괄호 더하기 피 왼쪽 괄호 엑스 오른쪽 괄호 equals 0"
+      "expected": "분수 시작 d Over d x 분수 끝 왼쪽 괄호 대문자 e 왼쪽 괄호 x 오른쪽 괄호 대문자 a 왼쪽 괄호 x 오른쪽 괄호 분수 시작 d w 왼쪽 괄호 x 오른쪽 괄호 Over d x 분수 끝 오른쪽 괄호 더하기 p 왼쪽 괄호 x 오른쪽 괄호 equals 0"
     },
     "Sample_98_sbrief": {
-      "expected": "분수 d Over d 엑스 분수끝 좌 괄호 큰 이 좌 괄호 엑스 우 괄호 큰 에이 좌 괄호 엑스 우 괄호 분수 d w 좌 괄호 엑스 우 괄호 Over d 엑스 분수끝 우 괄호 더하기 피 좌 괄호 엑스 우 괄호 equals 0"
+      "expected": "분수 d Over d x 분수 끝 좌 괄호 대문자 e 좌 괄호 x 우 괄호 대문자 a 좌 괄호 x 우 괄호 분수 d w 좌 괄호 x 우 괄호 Over d x 분수 끝 우 괄호 더하기 p 좌 괄호 x 우 괄호 equals 0"
     },
     "Sample_99_default": {
-      "expected": "TCS 아래첨자 gas Baseline equals 빼기 2 분의 1 왼쪽 괄호 분수시작 큰 피 아래첨자 seal Baseline Over 큰 피 아래첨자 max Baseline 분수끝 오른쪽 괄호 왼쪽 괄호 분수시작 1 Over 큰 티 아래첨자 seal Baseline 분수끝 오른쪽 괄호"
+      "expected": "TCS 아래 첨자 gas Baseline equals 빼기 2 분의 1 왼쪽 괄호 분수 시작 대문자 p 아래 첨자 seal Baseline Over 대문자 p 아래 첨자 max Baseline 분수 끝 오른쪽 괄호 왼쪽 괄호 분수 시작 1 Over 대문자 t 아래 첨자 seal Baseline 분수 끝 오른쪽 괄호"
     },
     "Sample_99_brief": {
-      "expected": "TCS 아래 gas Base equals 빼기 2 분의 1 왼쪽 괄호 분수시작 큰 피 아래 seal Base Over 큰 피 아래 max Base 분수끝 오른쪽 괄호 왼쪽 괄호 분수시작 1 Over 큰 티 아래 seal Base 분수끝 오른쪽 괄호"
+      "expected": "TCS 아래 gas Base equals 빼기 2 분의 1 왼쪽 괄호 분수 시작 대문자 p 아래 seal Base Over 대문자 p 아래 max Base 분수 끝 오른쪽 괄호 왼쪽 괄호 분수 시작 1 Over 대문자 t 아래 seal Base 분수 끝 오른쪽 괄호"
     },
     "Sample_99_sbrief": {
-      "expected": "TCS 아래 gas Base equals 빼기 2 분의 1 좌 괄호 분수 큰 피 아래 seal Base Over 큰 피 아래 max Base 분수끝 우 괄호 좌 괄호 분수 1 Over 큰 티 아래 seal Base 분수끝 우 괄호"
+      "expected": "TCS 아래 gas Base equals 빼기 2 분의 1 좌 괄호 분수 대문자 p 아래 seal Base Over 대문자 p 아래 max Base 분수 끝 우 괄호 좌 괄호 분수 1 Over 대문자 t 아래 seal Base 분수 끝 우 괄호"
     },
     "Sample_100_default": {
-      "expected": "큰 비 아래첨자 피 Baseline equals Start분수시작 분수시작 7 빼기 v 제곱 Over 3 분수끝 왼쪽 괄호 1 더하기 분수시작 c 제곱 Over a 제곱 분수끝 더하기 분수시작 c 위첨자 4 Baseline Over a 위첨자 4 Baseline 분수끝 오른쪽 괄호 더하기 분수시작 왼쪽 괄호 3 빼기 v 오른쪽 괄호 제곱 c 제곱 Over 왼쪽 괄호 1 더하기 v 오른쪽 괄호 a 제곱 분수끝 OverOver 왼쪽 괄호 1 빼기 v 오른쪽 괄호 왼쪽 괄호 1 빼기 분수시작 c 위첨자 4 Baseline Over a 위첨자 4 Baseline 분수끝 오른쪽 괄호 왼쪽 괄호 1 빼기 분수시작 c 제곱 Over a 제곱 분수끝 오른쪽 괄호 End분수끝"
+      "expected": "대문자 b 아래 첨자 p Baseline equals Start분수 시작 분수 시작 7 빼기 v 제곱 Over 3 분수 끝 왼쪽 괄호 1 더하기 분수 시작 c 제곱 Over a 제곱 분수 끝 더하기 분수 시작 c 위첨자 4 Baseline Over a 위첨자 4 Baseline 분수 끝 오른쪽 괄호 더하기 분수 시작 왼쪽 괄호 3 빼기 v 오른쪽 괄호 제곱 c 제곱 Over 왼쪽 괄호 1 더하기 v 오른쪽 괄호 a 제곱 분수 끝 OverOver 왼쪽 괄호 1 빼기 v 오른쪽 괄호 왼쪽 괄호 1 빼기 분수 시작 c 위첨자 4 Baseline Over a 위첨자 4 Baseline 분수 끝 오른쪽 괄호 왼쪽 괄호 1 빼기 분수 시작 c 제곱 Over a 제곱 분수 끝 오른쪽 괄호 End분수 끝"
     },
     "Sample_100_brief": {
-      "expected": "큰 비 아래 피 Base equals Start분수시작 분수시작 7 빼기 v 제곱 Over 3 분수끝 왼쪽 괄호 1 더하기 분수시작 c 제곱 Over a 제곱 분수끝 더하기 분수시작 c 위 4 Base Over a 위 4 Base 분수끝 오른쪽 괄호 더하기 분수시작 왼쪽 괄호 3 빼기 v 오른쪽 괄호 제곱 c 제곱 Over 왼쪽 괄호 1 더하기 v 오른쪽 괄호 a 제곱 분수끝 OverOver 왼쪽 괄호 1 빼기 v 오른쪽 괄호 왼쪽 괄호 1 빼기 분수시작 c 위 4 Base Over a 위 4 Base 분수끝 오른쪽 괄호 왼쪽 괄호 1 빼기 분수시작 c 제곱 Over a 제곱 분수끝 오른쪽 괄호 End분수끝"
+      "expected": "대문자 b 아래 p Base equals Start분수 시작 분수 시작 7 빼기 v 제곱 Over 3 분수 끝 왼쪽 괄호 1 더하기 분수 시작 c 제곱 Over a 제곱 분수 끝 더하기 분수 시작 c 위 4 Base Over a 위 4 Base 분수 끝 오른쪽 괄호 더하기 분수 시작 왼쪽 괄호 3 빼기 v 오른쪽 괄호 제곱 c 제곱 Over 왼쪽 괄호 1 더하기 v 오른쪽 괄호 a 제곱 분수 끝 OverOver 왼쪽 괄호 1 빼기 v 오른쪽 괄호 왼쪽 괄호 1 빼기 분수 시작 c 위 4 Base Over a 위 4 Base 분수 끝 오른쪽 괄호 왼쪽 괄호 1 빼기 분수 시작 c 제곱 Over a 제곱 분수 끝 오른쪽 괄호 End분수 끝"
     },
     "Sample_100_sbrief": {
-      "expected": "큰 비 아래 피 Base equals Nest분수 분수 7 빼기 v 제곱 Over 3 분수끝 좌 괄호 1 더하기 분수 c 제곱 Over a 제곱 분수끝 더하기 분수 c 위 4 Base Over a 위 4 Base 분수끝 우 괄호 더하기 분수 좌 괄호 3 빼기 v 우 괄호 제곱 c 제곱 Over 좌 괄호 1 더하기 v 우 괄호 a 제곱 분수끝 NestOver 좌 괄호 1 빼기 v 우 괄호 좌 괄호 1 빼기 분수 c 위 4 Base Over a 위 4 Base 분수끝 우 괄호 좌 괄호 1 빼기 분수 c 제곱 Over a 제곱 분수끝 우 괄호 Nest분수끝"
+      "expected": "대문자 b 아래 p Base equals Nest분수 분수 7 빼기 v 제곱 Over 3 분수 끝 좌 괄호 1 더하기 분수 c 제곱 Over a 제곱 분수 끝 더하기 분수 c 위 4 Base Over a 위 4 Base 분수 끝 우 괄호 더하기 분수 좌 괄호 3 빼기 v 우 괄호 제곱 c 제곱 Over 좌 괄호 1 더하기 v 우 괄호 a 제곱 분수 끝 NestOver 좌 괄호 1 빼기 v 우 괄호 좌 괄호 1 빼기 분수 c 위 4 Base Over a 위 4 Base 분수 끝 우 괄호 좌 괄호 1 빼기 분수 c 제곱 Over a 제곱 분수 끝 우 괄호 Nest분수 끝"
     },
     "Sample_101_default": {
-      "expected": "큰 큐 아래첨자 tank 위첨자 series Baseline equals 분수시작 1 Over 큰 알 아래첨자 에스 Baseline 분수끝 루트시작 분수시작 큰 엘 아래첨자 에스 Baseline Over 큰 C 아래첨자 에스 Baseline 분수끝 루트끝"
+      "expected": "대문자 q 아래 첨자 tank 위첨자 series Baseline equals 분수 시작 1 Over 대문자 r 아래 첨자 s Baseline 분수 끝 루트 시작 분수 시작 대문자 l 아래 첨자 s Baseline Over 대문자 c 아래 첨자 s Baseline 분수 끝 루트 끝"
     },
     "Sample_101_brief": {
-      "expected": "큰 큐 아래 tank 위 series Base equals 분수시작 1 Over 큰 알 아래 에스 Base 분수끝 루트시작 분수시작 큰 엘 아래 에스 Base Over 큰 C 아래 에스 Base 분수끝 루트끝"
+      "expected": "대문자 q 아래 tank 위 series Base equals 분수 시작 1 Over 대문자 r 아래 s Base 분수 끝 루트 시작 분수 시작 대문자 l 아래 s Base Over 대문자 c 아래 s Base 분수 끝 루트 끝"
     },
     "Sample_101_sbrief": {
-      "expected": "큰 큐 아래 tank 위 series Base equals 분수 1 Over 큰 엘 아래 에스 Base 분수끝 루트 분수 큰 엘 아래 에스 Base Over 큰 씨 아래 에스 Base 분수끝 루트끝"
+      "expected": "대문자 q 아래 tank 위 series Base equals 분수 1 Over 대문자 l 아래 s Base 분수 끝 루트 분수 대문자 l 아래 s Base Over 대문자 씨 아래 s Base 분수 끝 루트 끝"
     },
     "Sample_102_default": {
-      "expected": "큰 델타 파이 아래첨자 peak Baseline equals 탄젠트 위첨자 마이너스 1 Baseline 왼쪽 괄호 케이 제곱 큰 큐 아래첨자 tank 위첨자 series Baseline 오른쪽 괄호"
+      "expected": "대문자 델타 파이 아래 첨자 peak Baseline equals 탄젠트 위첨자 마이너스 1 Baseline 왼쪽 괄호 k 제곱 대문자 q 아래 첨자 tank 위첨자 series Baseline 오른쪽 괄호"
     },
     "Sample_102_brief": {
-      "expected": "큰 델타 파이 아래 peak Base equals 탄젠트 위 마이너스 1 Base 왼쪽 괄호 케이 제곱 큰 큐 아래 tank 위 series Base 오른쪽 괄호"
+      "expected": "대문자 델타 파이 아래 peak Base equals 탄젠트 위 마이너스 1 Base 왼쪽 괄호 k 제곱 대문자 q 아래 tank 위 series Base 오른쪽 괄호"
     },
     "Sample_102_sbrief": {
-      "expected": "큰 델타 파이 아래 peak Base equals 탄젠트 위 마이너스 1 Base 좌 괄호 케이 제곱 큰 큐 아래 tank 위 series Base 우 괄호"
+      "expected": "대문자 델타 파이 아래 peak Base equals 탄젠트 위 마이너스 1 Base 좌 괄호 k 제곱 대문자 q 아래 tank 위 series Base 우 괄호"
     },
     "Sample_103_default": {
-      "expected": "에프 equals 1.013 분수시작 큰 엘 제곱 분의 큰 더블류 분수끝 루트시작 분수시작 로 분의 큰 이 분수끝 루트끝 루트시작 왼쪽 괄호 1 더하기 0.293 분수시작 EW 제곱 분의 큰 엘 제곱 분수끝 시그마 오른쪽 괄호 루트끝"
+      "expected": "f equals 1.013 분수 시작 대문자 l 제곱 분의 대문자 w 분수 끝 루트 시작 분수 시작 로 분의 대문자 e 분수 끝 루트 끝 루트 시작 왼쪽 괄호 1 더하기 0.293 분수 시작 EW 제곱 분의 대문자 l 제곱 분수 끝 시그마 오른쪽 괄호 루트 끝"
     },
     "Sample_103_brief": {
-      "expected": "에프 equals 1.013 분수시작 큰 엘 제곱 분의 큰 더블류 분수끝 루트시작 분수시작 로 분의 큰 이 분수끝 루트끝 루트시작 왼쪽 괄호 1 더하기 0.293 분수시작 EW 제곱 분의 큰 엘 제곱 분수끝 시그마 오른쪽 괄호 루트끝"
+      "expected": "f equals 1.013 분수 시작 대문자 l 제곱 분의 대문자 w 분수 끝 루트 시작 분수 시작 로 분의 대문자 e 분수 끝 루트 끝 루트 시작 왼쪽 괄호 1 더하기 0.293 분수 시작 EW 제곱 분의 대문자 l 제곱 분수 끝 시그마 오른쪽 괄호 루트 끝"
     },
     "Sample_103_sbrief": {
-      "expected": "에프 equals 1.013 분수 큰 엘 제곱 분의 큰 더블류 분수끝 루트 분수 로 분의 큰 이 분수끝 루트끝 루트 좌 괄호 1 더하기 0.293 분수 EW 제곱 분의 큰 엘 제곱 분수끝 시그마 우 괄호 루트끝"
+      "expected": "f equals 1.013 분수 대문자 l 제곱 분의 대문자 w 분수 끝 루트 분수 로 분의 대문자 e 분수 끝 루트 끝 루트 좌 괄호 1 더하기 0.293 분수 EW 제곱 분의 대문자 l 제곱 분수 끝 시그마 우 괄호 루트 끝"
     },
     "Sample_104_default": {
-      "expected": "유 아래첨자 엔 Baseline 왼쪽 괄호 엑스 오른쪽 괄호 equals 감마 아래첨자 엔 Baseline 왼쪽 괄호 하이퍼볼릭 코싸인 케이 아래첨자 엔 Baseline 엑스 빼기 코싸인 케이 아래첨자 엔 Baseline 엑스 오른쪽 괄호 더하기 왼쪽 괄호 하이퍼볼릭 싸인 케이 아래첨자 엔 Baseline 엑스 빼기 싸인 케이 아래첨자 엔 Baseline 엑스 오른쪽 괄호"
+      "expected": "유 아래 첨자 n Baseline 왼쪽 괄호 x 오른쪽 괄호 equals 감마 아래 첨자 n Baseline 왼쪽 괄호 하이퍼볼릭 코싸인 k 아래 첨자 n Baseline x 빼기 코싸인 k 아래 첨자 n Baseline x 오른쪽 괄호 더하기 왼쪽 괄호 하이퍼볼릭 싸인 k 아래 첨자 n Baseline x 빼기 싸인 k 아래 첨자 n Baseline x 오른쪽 괄호"
     },
     "Sample_104_brief": {
-      "expected": "유 아래 엔 Base 왼쪽 괄호 엑스 오른쪽 괄호 equals 감마 아래 엔 Base 왼쪽 괄호 하이퍼볼릭 코싸인 케이 아래 엔 Base 엑스 빼기 코싸인 케이 아래 엔 Base 엑스 오른쪽 괄호 더하기 왼쪽 괄호 하이퍼볼릭 싸인 케이 아래 엔 Base 엑스 빼기 싸인 케이 아래 엔 Base 엑스 오른쪽 괄호"
+      "expected": "유 아래 n Base 왼쪽 괄호 x 오른쪽 괄호 equals 감마 아래 n Base 왼쪽 괄호 하이퍼볼릭 코싸인 k 아래 n Base x 빼기 코싸인 k 아래 n Base x 오른쪽 괄호 더하기 왼쪽 괄호 하이퍼볼릭 싸인 k 아래 n Base x 빼기 싸인 k 아래 n Base x 오른쪽 괄호"
     },
     "Sample_104_sbrief": {
-      "expected": "유 아래 엔 Base 좌 괄호 엑스 우 괄호 equals 감마 아래 엔 Base 좌 괄호 하이퍼볼릭 코싸인 케이 아래 엔 Base 엑스 빼기 코싸인 케이 아래 엔 Base 엑스 우 괄호 더하기 좌 괄호 하이퍼볼릭 싸인 케이 아래 엔 Base 엑스 빼기 싸인 케이 아래 엔 Base 엑스 우 괄호"
+      "expected": "유 아래 n Base 좌 괄호 x 우 괄호 equals 감마 아래 n Base 좌 괄호 하이퍼볼릭 코싸인 k 아래 n Base x 빼기 코싸인 k 아래 n Base x 우 괄호 더하기 좌 괄호 하이퍼볼릭 싸인 k 아래 n Base x 빼기 싸인 k 아래 n Base x 우 괄호"
     },
     "Sample_105_default": {
-      "expected": "배열시작 첫번째 행 첫번째 열 큰 비 두번째 열 equals 분수시작시작 루트시작 왼쪽 괄호 오메가 0 제곱 빼기 오메가 제곱 오른쪽 괄호 제곱 더하기 4 엔 제곱 오메가 제곱 루트끝 분의분의 분수시작 엠 분의 큰 에프 분수끝 분수끝끝 두번째 행 첫번째 열 빈 칸 두번째 열 equals 분수시작시작 루트시작 왼쪽 괄호 1 빼기 왼쪽 괄호 오메가 나누기 오메가 0 제곱 오른쪽 괄호 제곱 오른쪽 괄호 제곱 더하기 4 왼쪽 괄호 엔 나누기 오메가 0 오른쪽 괄호 제곱 왼쪽 괄호 오메가 나누기 오메가 0 오른쪽 괄호 제곱 루트끝 분의분의 분수시작 케이 분의 큰 에프 0 분수끝 분수끝끝 배열끝"
+      "expected": "배열 시작 첫번째 행 첫번째 열 대문자 b 두번째 열 equals 분수 시작시작 루트 시작 왼쪽 괄호 오메가 0 제곱 빼기 오메가 제곱 오른쪽 괄호 제곱 더하기 4 n 제곱 오메가 제곱 루트 끝 분의분의 분수 시작 m 분의 대문자 f 분수 끝 분수 끝끝 두번째 행 첫번째 열 빈 칸 두번째 열 equals 분수 시작시작 루트 시작 왼쪽 괄호 1 빼기 왼쪽 괄호 오메가 나누기 오메가 0 제곱 오른쪽 괄호 제곱 오른쪽 괄호 제곱 더하기 4 왼쪽 괄호 n 나누기 오메가 0 오른쪽 괄호 제곱 왼쪽 괄호 오메가 나누기 오메가 0 오른쪽 괄호 제곱 루트 끝 분의분의 분수 시작 k 분의 대문자 f 0 분수 끝 분수 끝끝 배열 끝"
     },
     "Sample_105_brief": {
-      "expected": "배열시작 첫번째 행 첫번째 열 큰 비 두번째 열 equals 분수시작시작 루트시작 왼쪽 괄호 오메가 0 제곱 빼기 오메가 제곱 오른쪽 괄호 제곱 더하기 4 엔 제곱 오메가 제곱 루트끝 분의분의 분수시작 엠 분의 큰 에프 분수끝 분수끝끝 두번째 행 첫번째 열 빈 칸 두번째 열 equals 분수시작시작 루트시작 왼쪽 괄호 1 빼기 왼쪽 괄호 오메가 나누기 오메가 0 제곱 오른쪽 괄호 제곱 오른쪽 괄호 제곱 더하기 4 왼쪽 괄호 엔 나누기 오메가 0 오른쪽 괄호 제곱 왼쪽 괄호 오메가 나누기 오메가 0 오른쪽 괄호 제곱 루트끝 분의분의 분수시작 케이 분의 큰 에프 0 분수끝 분수끝끝 배열끝"
+      "expected": "배열 시작 첫번째 행 첫번째 열 대문자 b 두번째 열 equals 분수 시작시작 루트 시작 왼쪽 괄호 오메가 0 제곱 빼기 오메가 제곱 오른쪽 괄호 제곱 더하기 4 n 제곱 오메가 제곱 루트 끝 분의분의 분수 시작 m 분의 대문자 f 분수 끝 분수 끝끝 두번째 행 첫번째 열 빈 칸 두번째 열 equals 분수 시작시작 루트 시작 왼쪽 괄호 1 빼기 왼쪽 괄호 오메가 나누기 오메가 0 제곱 오른쪽 괄호 제곱 오른쪽 괄호 제곱 더하기 4 왼쪽 괄호 n 나누기 오메가 0 오른쪽 괄호 제곱 왼쪽 괄호 오메가 나누기 오메가 0 오른쪽 괄호 제곱 루트 끝 분의분의 분수 시작 k 분의 대문자 f 0 분수 끝 분수 끝끝 배열 끝"
     },
     "Sample_105_sbrief": {
-      "expected": "배열 첫번째 행 첫번째 열 큰 비 두번째 열 equals Nest분수 루트 좌 괄호 오메가 0 제곱 빼기 오메가 제곱 우 괄호 제곱 더하기 4 엔 제곱 오메가 제곱 루트끝 Nest분의 분수 엠 분의 큰 에프 0 분수끝 Nest분수끝 두번째 행 첫번째 열 빈 칸 두번째 열 equals Nest분수 루트 좌 괄호 1 빼기 좌 괄호 오메가 나누기 오메가 0 제곱 우 괄호 제곱 우 괄호 제곱 더하기 4 좌 괄호 엔 나누기 오메가 0 우 괄호 제곱 좌 괄호 오메가 나누기 오메가 0 우 괄호 제곱 루트끝 Nest분의 분수 케이 분의 큰 에프 0 분수끝 Nest분수끝 배열끝"
+      "expected": "배열 첫번째 행 첫번째 열 대문자 b 두번째 열 equals Nest분수 루트 좌 괄호 오메가 0 제곱 빼기 오메가 제곱 우 괄호 제곱 더하기 4 n 제곱 오메가 제곱 루트 끝 Nest분의 분수 m 분의 대문자 f 0 분수 끝 Nest분수 끝 두번째 행 첫번째 열 빈 칸 두번째 열 equals Nest분수 루트 좌 괄호 1 빼기 좌 괄호 오메가 나누기 오메가 0 제곱 우 괄호 제곱 우 괄호 제곱 더하기 4 좌 괄호 n 나누기 오메가 0 우 괄호 제곱 좌 괄호 오메가 나누기 오메가 0 우 괄호 제곱 루트 끝 Nest분의 분수 k 분의 대문자 f 0 분수 끝 Nest분수 끝 배열 끝"
     },
     "Sample_106_default": {
-      "expected": "기본 피 왼쪽 괄호 큰 에이 에이 엔 디 큰 비 오른쪽 괄호 equals 기본 피 왼쪽 괄호 큰 에이 오른쪽 괄호 기본 피 왼쪽 괄호 큰 비 세로선 큰 에이 오른쪽 괄호"
+      "expected": "기본 p 왼쪽 괄호 대문자 a and 대문자 b 오른쪽 괄호 equals 기본 p 왼쪽 괄호 대문자 a 오른쪽 괄호 기본 p 왼쪽 괄호 대문자 b 세로선 대문자 a 오른쪽 괄호"
     },
     "Sample_106_brief": {
-      "expected": "기본 피 왼쪽 괄호 큰 에이 에이 엔 디 큰 비 오른쪽 괄호 equals 기본 피 왼쪽 괄호 큰 에이 오른쪽 괄호 기본 피 왼쪽 괄호 큰 비 세로선 큰 에이 오른쪽 괄호"
+      "expected": "기본 p 왼쪽 괄호 대문자 a and 대문자 b 오른쪽 괄호 equals 기본 p 왼쪽 괄호 대문자 a 오른쪽 괄호 기본 p 왼쪽 괄호 대문자 b 세로선 대문자 a 오른쪽 괄호"
     },
     "Sample_106_sbrief": {
-      "expected": "기본 피 좌 괄호 큰 에이 에이 엔 디 큰 비 우 괄호 equals 기본 피 좌 괄호 큰 에이 우 괄호 기본 피 좌 괄호 큰 비 세로선 큰 에이 우 괄호"
+      "expected": "기본 p 좌 괄호 대문자 a and 대문자 b 우 괄호 equals 기본 p 좌 괄호 대문자 a 우 괄호 기본 p 좌 괄호 대문자 b 세로선 대문자 a 우 괄호"
     },
     "Sample_107_default": {
-      "expected": "큰 피 큰 엠 큰 에프 왼쪽 괄호 엑스 오른쪽 괄호 proportional to 왼쪽 괄호 분수시작 엑스 분의 1 분수끝 오른쪽 괄호 위첨자 alpha"
+      "expected": "대문자 p 대문자 m 대문자 f 왼쪽 괄호 x 오른쪽 괄호 proportional to 왼쪽 괄호 분수 시작 x 분의 1 분수 끝 오른쪽 괄호 위첨자 alpha"
     },
     "Sample_107_brief": {
-      "expected": "큰 피 큰 엠 큰 에프 왼쪽 괄호 엑스 오른쪽 괄호 proportional to 왼쪽 괄호 분수시작 엑스 분의 1 분수끝 오른쪽 괄호 위 알파"
+      "expected": "대문자 p 대문자 m 대문자 f 왼쪽 괄호 x 오른쪽 괄호 proportional to 왼쪽 괄호 분수 시작 x 분의 1 분수 끝 오른쪽 괄호 위 알파"
     },
     "Sample_107_sbrief": {
-      "expected": "큰 피 큰 엠 큰 에프 좌 괄호 엑스 우 괄호 proportional to 좌 괄호 분수 엑스 분의 1 분수끝 우 괄호 위 알파"
+      "expected": "대문자 p 대문자 m 대문자 f 좌 괄호 x 우 괄호 proportional to 좌 괄호 분수 x 분의 1 분수 끝 우 괄호 위 알파"
     },
     "Sample_108_default": {
-      "expected": "에프 왼쪽 괄호 엑스 오른쪽 괄호 equals 분수시작 루트시작 2 파이 루트끝 분의 1 분수끝 exp 왼쪽 괄호 빼기 엑스 제곱 슬래시 2 오른쪽 괄호"
+      "expected": "f 왼쪽 괄호 x 오른쪽 괄호 equals 분수 시작 루트 시작 2 파이 루트 끝 분의 1 분수 끝 exp 왼쪽 괄호 빼기 x 제곱 슬래시 2 오른쪽 괄호"
     },
     "Sample_108_brief": {
-      "expected": "에프 왼쪽 괄호 엑스 오른쪽 괄호 equals 분수시작 루트시작 2 파이 루트끝 분의 1 분수끝 exp 왼쪽 괄호 빼기 엑스 제곱 슬래시 2 오른쪽 괄호"
+      "expected": "f 왼쪽 괄호 x 오른쪽 괄호 equals 분수 시작 루트 시작 2 파이 루트 끝 분의 1 분수 끝 exp 왼쪽 괄호 빼기 x 제곱 슬래시 2 오른쪽 괄호"
     },
     "Sample_108_sbrief": {
-      "expected": "에프 좌 괄호 엑스 우 괄호 equals 분수 루트 2 파이 루트끝 분의 1 분수끝 exp 좌 괄호 빼기 엑스 제곱 슬래시 2 우 괄호"
+      "expected": "f 좌 괄호 x 우 괄호 equals 분수 루트 2 파이 루트 끝 분의 1 분수 끝 exp 좌 괄호 빼기 x 제곱 슬래시 2 우 괄호"
     },
     "Sample_109_default": {
-      "expected": "분수시작 디 쎄타 분의 디 엑스 분수끝 equals 분수시작 코싸인 제곱 쎄타 분의 베타 분수끝"
+      "expected": "분수 시작 디 쎄타 분의 디 x 분수 끝 equals 분수 시작 코싸인 제곱 쎄타 분의 베타 분수 끝"
     },
     "Sample_109_brief": {
-      "expected": "분수시작 디 쎄타 분의 디 엑스 분수끝 equals 분수시작 코싸인 제곱 쎄타 분의 베타 분수끝"
+      "expected": "분수 시작 디 쎄타 분의 디 x 분수 끝 equals 분수 시작 코싸인 제곱 쎄타 분의 베타 분수 끝"
     },
     "Sample_109_sbrief": {
-      "expected": "분수 디 쎄타 분의 디 엑스 분수끝 equals 분수 코싸인 제곱 쎄타 분의 베타 분수끝"
+      "expected": "분수 디 쎄타 분의 디 x 분수 끝 equals 분수 코싸인 제곱 쎄타 분의 베타 분수 끝"
     },
     "Sample_110_default": {
-      "expected": "에스 나누기 루트시작 2 왼쪽 괄호 엔 빼기 1 오른쪽 괄호 루트끝"
+      "expected": "s 나누기 루트 시작 2 왼쪽 괄호 n 빼기 1 오른쪽 괄호 루트 끝"
     },
     "Sample_110_brief": {
-      "expected": "에스 나누기 루트시작 2 왼쪽 괄호 엔 빼기 1 오른쪽 괄호 루트끝"
+      "expected": "s 나누기 루트 시작 2 왼쪽 괄호 n 빼기 1 오른쪽 괄호 루트 끝"
     },
     "Sample_110_sbrief": {
-      "expected": "에스 나누기 루트 2 좌 괄호 엔 빼기 1 우 괄호 루트끝"
+      "expected": "s 나누기 루트 2 좌 괄호 n 빼기 1 우 괄호 루트 끝"
     }
   }
 }

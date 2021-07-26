@@ -9,22 +9,22 @@
   "exclude": [],
   "tests": {
     "AriaLabels_0": {
-      "expected": "큰 에이 큰 씨 위에있는 선"
+      "expected": "대문자 a 대문자 c 위에 있는 선"
     },
     "AriaLabels_1": {
-      "expected": "엑스 의 도함수 is equal to 시그마 왼쪽 괄호 와이 빼기 엑스 오른쪽 괄호"
+      "expected": "x 의 도함수 is equal to 시그마 왼쪽 괄호 y 빼기 x 오른쪽 괄호"
     },
     "AltText_0": {
-      "expected": "에이 씨 아래 상단 선"
+      "expected": "a c 아래 상단 선"
     },
     "AltText_1": {
-      "expected": "큰 에이 큰 씨 위에있는 선"
+      "expected": "대문자 a 대문자 c 위에있는 선"
     },
     "ExactSpeech_0": {
       "expected": "A C 상단 선"
     },
     "ExactSpeech_1": {
-      "expected": "큰 에이 큰 씨 위에있는 선"
+      "expected": "대문자 a 대문자 c 위에있는 선"
     },
     "MglyphTokens_0": {
       "_comment0_": " mi",
@@ -65,7 +65,7 @@
       "expected": "23braid 더하기 132braid equals 13braid"
     },
     "MglyphGeneral_1": {
-      "expected": "큰 엔 큰 엠 아래첨자 1 부분집합 끝"
+      "expected": "대문자 n 대문자 m 아래첨자 1 부분집합 끝"
     }
   }
 }
