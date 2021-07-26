@@ -9,46 +9,46 @@
   "exclude": [],
   "tests": {
     "MathspeakRoots_0": {
-      "expected": "루트 시작 a a 끝"
+      "expected": "루트시작 a 루트끝"
     },
     "MathspeakRoots_1": {
-      "expected": "제곱 루트 시작 a 루트 끝"
+      "expected": "제곱 루트시작 a 루트끝"
     },
     "MathspeakRoots_2": {
-      "expected": "세제곱 루트 시작 a 루트 끝"
+      "expected": "세제곱 루트시작 a 루트끝"
     },
     "MathspeakRoots_3": {
-      "expected": "네제곱 루트 시작 a 루트 끝"
+      "expected": "네제곱 루트시작 a 루트끝"
     },
     "MathspeakRoots_4": {
-      "expected": "Nested루트 시작 루트 시작 a 루트 끝 Nested루트 끝"
+      "expected": "Nested루트시작 루트시작 a 루트끝 Nested루트끝"
     },
     "MathspeakRoots_5": {
-      "expected": "NestedTwice루트 시작 Nested루트 시작 루트 시작 a 루트 끝 Nested루트 끝 NestedTwice루트 끝"
+      "expected": "NestedTwice루트시작 Nested루트시작 루트시작 a 루트끝 Nested루트끝 NestedTwice루트끝"
     },
     "MathspeakRoots_6": {
-      "expected": "NestedRootIndex 2 Nested루트 시작 RootIndex 2 루트 시작 a 루트 끝 Nested루트 끝"
+      "expected": "NestedRootIndex 2 Nested루트시작 RootIndex 2 루트시작 a 루트끝 Nested루트끝"
     },
     "MathspeakRoots_7": {
-      "expected": "NestedTwiceRootIndex 2 NestedTwice루트 시작 NestedRootIndex 2 Nested루트 시작 RootIndex 2 루트 시작 a 루트 끝 Nested루트 끝 NestedTwice루트 끝"
+      "expected": "NestedTwiceRootIndex 2 NestedTwice루트시작 NestedRootIndex 2 Nested루트시작 RootIndex 2 루트시작 a 루트끝 Nested루트끝 NestedTwice루트끝"
     },
     "MathspeakRoots_8": {
-      "expected": "NestedRootIndex 3 Nested루트 시작 RootIndex 3 루트 시작 a 루트 끝 Nested루트 끝"
+      "expected": "NestedRootIndex 3 Nested루트시작 RootIndex 3 루트시작 a 루트끝 Nested루트끝"
     },
     "MathspeakRoots_9": {
-      "expected": "NestedTwiceRootIndex 3 NestedTwice루트 시작 NestedRootIndex 3 Nested루트 시작 RootIndex 3 루트 시작 a 루트 끝 Nested루트 끝 NestedTwice루트 끝"
+      "expected": "NestedTwiceRootIndex 3 NestedTwice루트시작 NestedRootIndex 3 Nested루트시작 RootIndex 3 루트시작 a 루트끝 Nested루트끝 NestedTwice루트끝"
     },
     "MathspeakRoots_10": {
-      "expected": "NestedRootIndex 4 Nested루트 시작 RootIndex 4 루트 시작 a 루트 끝 Nested루트 끝"
+      "expected": "NestedRootIndex 4 Nested루트시작 RootIndex 4 루트시작 a 루트끝 Nested루트끝"
     },
     "MathspeakRoots_11": {
-      "expected": "NestedTwiceRootIndex 4 NestedTwice루트 시작 NestedRootIndex 4 Nested루트 시작 RootIndex 4 루트 시작 a 루트 끝 Nested루트 끝 NestedTwice루트 끝"
+      "expected": "NestedTwiceRootIndex 4 NestedTwice루트시작 NestedRootIndex 4 Nested루트시작 RootIndex 4 루트시작 a 루트끝 Nested루트끝 NestedTwice루트끝"
     },
     "MathspeakRoots_12": {
-      "expected": "NestedTwiceRootIndex 2 NestedTwice루트 시작 NestedRootIndex 3 Nested루트 시작 RootIndex 4 루트 시작 a 루트 끝 Nested루트 끝 NestedTwice루트 끝"
+      "expected": "NestedTwiceRootIndex 2 NestedTwice루트시작 NestedRootIndex 3 Nested루트시작 RootIndex 4 루트시작 a 루트끝 Nested루트끝 NestedTwice루트끝"
     },
     "MathspeakRoots_13": {
-      "expected": "NestedTwiceRootIndex 4 NestedTwice루트 시작 NestedRootIndex 3 Nested루트 시작 RootIndex 2 루트 시작 a 루트 끝 Nested루트 끝 NestedTwice루트 끝"
+      "expected": "NestedTwiceRootIndex 4 NestedTwice루트시작 NestedRootIndex 3 Nested루트시작 RootIndex 2 루트시작 a 루트끝 Nested루트끝 NestedTwice루트끝"
     },
     "HtmlEntities_0": {
       "expected": "less than"
@@ -69,22 +69,22 @@
       "expected": "n m"
     },
     "BinomialFromFrac_0": {
-      "expected": "이항계수 시작 조합 n 씨 k 이항계수 끝"
+      "expected": "이항계수시작 조합 n 씨 k 이항계수끝"
     },
     "BinomialFromFrac_1": {
-      "expected": "이항계수 시작 조합 n 씨 k 이항계수 끝"
+      "expected": "이항계수시작 조합 n 씨 k 이항계수끝"
     },
     "BinomialFromFrac_2": {
-      "expected": "이항계수 시작 조합 n 씨 k 이항계수 끝"
+      "expected": "이항계수시작 조합 n 씨 k 이항계수끝"
     },
     "BinomialFromFrac_3": {
-      "expected": "왼쪽 괄호 분수 시작 k 분의 n 분수 끝 오른쪽 괄호"
+      "expected": "왼쪽 괄호 분수시작 k 분의 n 분수끝 오른쪽 괄호"
     },
     "BinomialFromFrac_4": {
-      "expected": "왼쪽 괄호 분수 시작 k 분의 n 분수 끝 오른쪽 괄호"
+      "expected": "왼쪽 괄호 분수시작 k 분의 n 분수끝 오른쪽 괄호"
     },
     "BinomialFromFrac_5": {
-      "expected": "왼쪽 괄호 분수 시작 k 분의 n 분수 끝 오른쪽 괄호"
+      "expected": "왼쪽 괄호 분수시작 k 분의 n 분수끝 오른쪽 괄호"
     },
     "UnnecessarySpaces_0": {
       "expected": "5"
@@ -105,10 +105,10 @@
       "expected": "2 분의 1 빼기 18 분의 5"
     },
     "NegativeVulgarFraction_1": {
-      "expected": "빼기 분수 시작 a 분의 5.2 분수 끝"
+      "expected": "빼기 분수시작 a 분의 5.2 분수끝"
     },
     "NegativeVulgarFraction_2": {
-      "expected": "빼기 분수 시작 18 분의 5.2 분수 끝"
+      "expected": "빼기 분수시작 18 분의 5.2 분수끝"
     },
     "TrivialStuff_0": {
       "expected": "a equals 비"
@@ -220,7 +220,7 @@
       "expected": "편미분 편미분 엑스"
     },
     "Issue320_6": {
-      "expected": "왼쪽 괄호 분수 시작 편미분 엑스 제곱 분의 편미분 제곱 분수 끝 더하기 분수 시작 편미분 와이 제곱 분의 편미분 제곱 분수 끝 오른쪽 괄호 절댓값시작 파이 왼쪽 괄호 엑스 더하기 기본 아이 와이 오른쪽 괄호 절댓값끝 제곱 equals 0"
+      "expected": "왼쪽 괄호 분수시작 편미분 엑스 제곱 분의 편미분 제곱 분수끝 더하기 분수시작 편미분 와이 제곱 분의 편미분 제곱 분수끝 오른쪽 괄호 절댓값시작 파이 왼쪽 괄호 엑스 더하기 기본 아이 와이 오른쪽 괄호 절댓값끝 제곱 equals 0"
     },
     "LatinMathfonts_0": {
       "expected": "프락투어 큰 a"

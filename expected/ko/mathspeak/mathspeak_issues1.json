@@ -9,22 +9,22 @@
   "exclude": [],
   "tests": {
     "AbsValueVsNeutral_0_default": {
-      "expected": "절댓값 시작 a 절댓값 끝"
+      "expected": "절댓값시작 a 절댓값끝"
     },
     "AbsValueVsNeutral_0_brief": {
-      "expected": "절댓값 시작 a 절댓값 끝"
+      "expected": "절댓값시작 a 절댓값끝"
     },
     "AbsValueVsNeutral_0_sbrief": {
-      "expected": "절댓값 a 절댓값 끝"
+      "expected": "절댓값 a 절댓값끝"
     },
     "AbsValueVsNeutral_1_default": {
-      "expected": "절댓값 시작 a 절댓값 끝"
+      "expected": "절댓값시작 a 절댓값끝"
     },
     "AbsValueVsNeutral_1_brief": {
-      "expected": "절댓값 시작 a 절댓값 끝"
+      "expected": "절댓값시작 a 절댓값끝"
     },
     "AbsValueVsNeutral_1_sbrief": {
-      "expected": "절댓값 a 절댓값 끝"
+      "expected": "절댓값 a 절댓값끝"
     },
     "NegativeVulgarFraction_default": {
       "expected": "마이너스 18 분의 5"
@@ -72,67 +72,67 @@
       "expected": "좌 괄호 빼기 x 제곱 슬래시 2 우 괄호"
     },
     "SupBaseRelseq_default": {
-      "expected": "c 1 h 위첨자 4 빼기 2 s 기준 less than or equals 분수 시작 2 대문자 t 분의 1 분수 끝 less than or equals c 2 h 위첨자 4 빼기 2 s"
+      "expected": "c 1 h 위첨자 4 빼기 2 s 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 less than or equals c 2 h 위첨자 4 빼기 2 s"
     },
     "SupBaseRelseq_brief": {
-      "expected": "c 1 h 위 4 빼기 2 s 기준 less than or equals 분수 시작 2 대문자 t 분의 1 분수 끝 less than or equals c 2 h 위 4 빼기 2 s"
+      "expected": "c 1 h 위 4 빼기 2 s 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 less than or equals c 2 h 위 4 빼기 2 s"
     },
     "SupBaseRelseq_sbrief": {
-      "expected": "c 1 h 위 4 빼기 2 s 기준 less than or equals 분수 2 대문자 t 분의 1 분수 끝 less than or equals c 2 h 위 4 빼기 2 s"
+      "expected": "c 1 h 위 4 빼기 2 s 기준 less than or equals 분수 2 대문자 t 분의 1 분수끝 less than or equals c 2 h 위 4 빼기 2 s"
     },
     "SupBaseMultirel_default": {
-      "expected": "c 1 h 위첨자 4 빼기 2 s 기준 less than or equals 분수 시작 2 대문자 t 분의 1 분수 끝 equals c 2 h 위첨자 4 빼기 2 s"
+      "expected": "c 1 h 위첨자 4 빼기 2 s 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 equals c 2 h 위첨자 4 빼기 2 s"
     },
     "SupBaseMultirel_brief": {
-      "expected": "c 1 h 위 4 빼기 2 s 기준 less than or equals 분수 시작 2 대문자 t 분의 1 분수 끝 equals c 2 h 위 4 빼기 2 s"
+      "expected": "c 1 h 위 4 빼기 2 s 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 equals c 2 h 위 4 빼기 2 s"
     },
     "SupBaseMultirel_sbrief": {
-      "expected": "c 1 h 위 4 빼기 2 s 기준 less than or equals 분수 2 대문자 t 분의 1 분수 끝 equals c 2 h 위 4 빼기 2 s"
+      "expected": "c 1 h 위 4 빼기 2 s 기준 less than or equals 분수 2 대문자 t 분의 1 분수끝 equals c 2 h 위 4 빼기 2 s"
     },
     "SubBaseRelseq_default": {
-      "expected": "h 아래첨자 s 기준 less than or equals 분수 시작 2 대문자 t 분의 1 분수 끝 less than or equals h 아래첨자 s"
+      "expected": "h 아래첨자 s 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 less than or equals h 아래첨자 s"
     },
     "SubBaseRelseq_brief": {
-      "expected": "h 아래 s 기준 less than or equals 분수 시작 2 대문자 t 분의 1 분수 끝 less than or equals h 아래 s"
+      "expected": "h 아래 s 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 less than or equals h 아래 s"
     },
     "SubBaseRelseq_sbrief": {
-      "expected": "h 아래 s 기준 less than or equals 분수 2 대문자 t 분의 1 분수 끝 less than or equals h 아래 s"
+      "expected": "h 아래 s 기준 less than or equals 분수 2 대문자 t 분의 1 분수끝 less than or equals h 아래 s"
     },
     "SubBaseMultirel_default": {
-      "expected": "h 아래첨자 s 기준 less than or equals 분수 시작 2 대문자 t 분의 1 분수 끝 equals h 아래첨자 s"
+      "expected": "h 아래첨자 s 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 equals h 아래첨자 s"
     },
     "SubBaseMultirel_brief": {
-      "expected": "h 아래 s 기준 less than or equals 분수 시작 2 대문자 t 분의 1 분수 끝 equals h 아래 s"
+      "expected": "h 아래 s 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 equals h 아래 s"
     },
     "SubBaseMultirel_sbrief": {
-      "expected": "h 아래 s 기준 less than or equals 분수 2 대문자 t 분의 1 분수 끝 equals h 아래 s"
+      "expected": "h 아래 s 기준 less than or equals 분수 2 대문자 t 분의 1 분수끝 equals h 아래 s"
     },
     "SubSuperBaseRelseq_default": {
-      "expected": "h 아래첨자 s 위첨자 t 기준 less than or equals 분수 시작 2 대문자 t 분의 1 분수 끝 less than or equals h 아래첨자 s 위첨자 t"
+      "expected": "h 아래첨자 s 위첨자 t 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 less than or equals h 아래첨자 s 위첨자 t"
     },
     "SubSuperBaseRelseq_brief": {
-      "expected": "h 아래 s 위 t 기준 less than or equals 분수 시작 2 대문자 t 분의 1 분수 끝 less than or equals h 아래 s 위 t"
+      "expected": "h 아래 s 위 t 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 less than or equals h 아래 s 위 t"
     },
     "SubSuperBaseRelseq_sbrief": {
-      "expected": "h 아래 s 위 t 기준 less than or equals 분수 2 대문자 t 분의 1 분수 끝 less than or equals h 아래 s 위 t"
+      "expected": "h 아래 s 위 t 기준 less than or equals 분수 2 대문자 t 분의 1 분수끝 less than or equals h 아래 s 위 t"
     },
     "SubSuperBaseMultirel_default": {
-      "expected": "h 아래첨자 s 위첨자 t 기준 less than or equals 분수 시작 2 대문자 t 분의 1 분수 끝 equals h 아래첨자 s 위첨자 t"
+      "expected": "h 아래첨자 s 위첨자 t 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 equals h 아래첨자 s 위첨자 t"
     },
     "SubSuperBaseMultirel_brief": {
-      "expected": "h 아래 s 위 t 기준 less than or equals 분수 시작 2 대문자 t 분의 1 분수 끝 equals h 아래 s 위 t"
+      "expected": "h 아래 s 위 t 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 equals h 아래 s 위 t"
     },
     "SubSuperBaseMultirel_sbrief": {
-      "expected": "h 아래 s 위 t 기준 less than or equals 분수 2 대문자 t 분의 1 분수 끝 equals h 아래 s 위 t"
+      "expected": "h 아래 s 위 t 기준 less than or equals 분수 2 대문자 t 분의 1 분수끝 equals h 아래 s 위 t"
     },
     "SquareWithText_default": {
-      "expected": "분수 시작 area of square 분의 area of triangle 분수 끝 equals 분수 시작 16 units 세제곱 분의 1 unit 제곱 분수 끝"
+      "expected": "분수시작 area of square 분의 area of triangle 분수끝 equals 분수시작 16 units 세제곱 분의 1 unit 제곱 분수끝"
     },
     "SquareWithText_brief": {
-      "expected": "분수 시작 area of square 분의 area of triangle 분수 끝 equals 분수 시작 16 units 세제곱 분의 1 unit 분수 끝"
+      "expected": "분수시작 area of square 분의 area of triangle 분수끝 equals 분수시작 16 units 세제곱 분의 1 unit 분수끝"
     },
     "SquareWithText_sbrief": {
-      "expected": "분수 area of square 분의 area of triangle 분수 끝 equals 분수 16 units 세제곱 분의 1 unit 분수 끝"
+      "expected": "분수 area of square 분의 area of triangle 분수끝 equals 분수 16 units 세제곱 분의 1 unit 분수끝"
     },
     "FootnoteWithText_default": {
       "expected": "area of triangle area of square 위첨자 1 기준 1 unit 위첨자 2 기준 16 units 위첨자 3"
@@ -153,76 +153,76 @@
       "expected": "area of triangle 위 2"
     },
     "LabelledRow_default": {
-      "expected": "배열 시작 첫번째 행  꼬리표 시작 왼쪽 괄호 1 오른쪽 괄호 꼬리표 끝 첫번째 열 a 두번째 열 b 배열 끝"
+      "expected": "배열시작 첫번째 행  꼬리표시작 왼쪽 괄호 1 오른쪽 괄호 꼬리표끝 첫번째 열 a 두번째 열 b 배열끝"
     },
     "LabelledRow_brief": {
-      "expected": "배열 시작 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 첫번째 열 a 두번째 열 b 배열 끝"
+      "expected": "배열시작 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 첫번째 열 a 두번째 열 b 배열끝"
     },
     "LabelledRow_sbrief": {
-      "expected": "배열 첫번째 행  꼬리표 좌 괄호 1 우 괄호 첫번째 열 a 두번째 열 b 배열 끝"
+      "expected": "배열 첫번째 행  꼬리표 좌 괄호 1 우 괄호 첫번째 열 a 두번째 열 b 배열끝"
     },
     "LabelledLine_default": {
-      "expected": "배열 시작 첫번째 행  꼬리표시작 왼쪽 괄호 1 오른쪽 괄호 꼬리표끝 a 배열 끝"
+      "expected": "배열시작 첫번째 행  꼬리표시작 왼쪽 괄호 1 오른쪽 괄호 꼬리표끝 a 배열끝"
     },
     "LabelledLine_brief": {
-      "expected": "배열 시작 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 a 배열 끝"
+      "expected": "배열시작 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 a 배열끝"
     },
     "LabelledLine_sbrief": {
-      "expected": "배열 첫번째 행  꼬리표 좌 괄호 1 우 괄호 a 배열 끝"
+      "expected": "배열 첫번째 행  꼬리표 좌 괄호 1 우 괄호 a 배열끝"
     },
     "LabelledEmptyLine_default": {
-      "expected": "배열 시작 첫번째 행  꼬리표시작 왼쪽 괄호 1 오른쪽 괄호 꼬리표끝 빈 칸 배열 끝"
+      "expected": "배열시작 첫번째 행  꼬리표시작 왼쪽 괄호 1 오른쪽 괄호 꼬리표끝 빈 칸 배열끝"
     },
     "LabelledEmptyLine_brief": {
-      "expected": "배열시작 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 빈 칸 배열 끝"
+      "expected": "배열시작 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 빈 칸 배열끝"
     },
     "LabelledEmptyLine_sbrief": {
-      "expected": "배열 첫번째 행  꼬리표 좌 괄호 1 우 괄호 빈 칸 배열 끝"
+      "expected": "배열 첫번째 행  꼬리표 좌 괄호 1 우 괄호 빈 칸 배열끝"
     },
     "EmptyLine_default": {
-      "expected": "배열 시작 첫번째 행  빈 칸 배열 끝"
+      "expected": "배열시작 첫번째 행  빈 칸 배열끝"
     },
     "EmptyLine_brief": {
-      "expected": "배열 시작 첫번째 행  빈 칸 배열 끝"
+      "expected": "배열시작 첫번째 행  빈 칸 배열끝"
     },
     "EmptyLine_sbrief": {
       "expected": "배열 첫번째 행  빈 칸 배열끝"
     },
     "EmptyRow_default": {
-      "expected": "배열 시작 첫번째 행 첫번째 열 a 두번째 열 b 두번째 행  빈 칸 배열 끝"
+      "expected": "배열시작 첫번째 행 첫번째 열 a 두번째 열 b 두번째 행  빈 칸 배열끝"
     },
     "EmptyRow_brief": {
-      "expected": "배열 시작 첫번째 행 첫번째 열 a 두번째 열 b 두번째 행  빈 칸 배열 끝"
+      "expected": "배열시작 첫번째 행 첫번째 열 a 두번째 열 b 두번째 행  빈 칸 배열끝"
     },
     "EmptyRow_sbrief": {
-      "expected": "배열 첫번째 행 첫번째 열 a 두번째 열 b 두번째 행  빈 칸 배열 끝"
+      "expected": "배열 첫번째 행 첫번째 열 a 두번째 열 b 두번째 행  빈 칸 배열끝"
     },
     "EmptyCell_default": {
-      "expected": "배열 시작 첫번째 행  빈 칸 배열 끝"
+      "expected": "배열시작 첫번째 행  빈 칸 배열끝"
     },
     "EmptyCell_brief": {
-      "expected": "배열 시작 첫번째 행  빈 칸 배열 끝"
+      "expected": "배열시작 첫번째 행  빈 칸 배열끝"
     },
     "EmptyCell_sbrief": {
-      "expected": "배열 첫번째 행  빈 칸 배열 끝"
+      "expected": "배열 첫번째 행  빈 칸 배열끝"
     },
     "TextLabelledLine_default": {
-      "expected": "배열 시작 첫번째 행  꼬리표 시작 왼쪽 괄호 1 오른쪽 괄호 꼬리표 끝 a 배열 끝"
+      "expected": "배열시작 첫번째 행  꼬리표시작 왼쪽 괄호 1 오른쪽 괄호 꼬리표끝 a 배열끝"
     },
     "TextLabelledLine_brief": {
-      "expected": "배열 시작 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 a 배열 끝"
+      "expected": "배열시작 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 a 배열끝"
     },
     "TextLabelledLine_sbrief": {
-      "expected": "배열 첫번째 행  꼬리표 1 a 배열 끝"
+      "expected": "배열 첫번째 행  꼬리표 1 a 배열끝"
     },
     "TextLabelledRow_default": {
-      "expected": "배열 시작 첫번째 행  꼬리표 시작 왼쪽 괄호 1 오른쪽 괄호 꼬리표 끝 첫번째 열 a 두번째 열 b 배열 끝"
+      "expected": "배열시작 첫번째 행  꼬리표시작 왼쪽 괄호 1 오른쪽 괄호 꼬리표끝 첫번째 열 a 두번째 열 b 배열끝"
     },
     "TextLabelledRow_brief": {
-      "expected": "배열 시작 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 첫번째 열 a 두번째 열 b 배열 끝"
+      "expected": "배열시작 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 첫번째 열 a 두번째 열 b 배열끝"
     },
     "TextLabelledRow_sbrief": {
-      "expected": "배열 첫번째 행  꼬리표 1 첫번째 열 a 두번째 열 b 배열 끝"
+      "expected": "배열 첫번째 행  꼬리표 1 첫번째 열 a 두번째 열 b 배열끝"
     },
     "EncloseOverbar_default": {
       "expected": "a 윗줄"
@@ -261,13 +261,13 @@
       "expected": "편미분 세제곱 x"
     },
     "Vector_default": {
-      "expected": "시작 3 곱하기 1 행렬 시작 첫번째 행  a 두번째 행  b 세번째 행  c 행렬 끝"
+      "expected": "시작 3 곱하기 1 행렬시작 첫번째 행  a 두번째 행  b 세번째 행  c 행렬끝"
     },
     "Vector_brief": {
-      "expected": "시작 3 곱하기 1 행렬 시작 첫번째 행  a 두번째 행  b 세번째 행  c 행렬 끝"
+      "expected": "시작 3 곱하기 1 행렬시작 첫번째 행  a 두번째 행  b 세번째 행  c 행렬끝"
     },
     "Vector_sbrief": {
-      "expected": "3 곱하기 1 행렬 시작 첫번째 행  a 두번째 행  b 세번째 행  c 행렬 끝"
+      "expected": "3 곱하기 1 행렬시작 첫번째 행  a 두번째 행  b 세번째 행  c 행렬끝"
     }
   }
 }
