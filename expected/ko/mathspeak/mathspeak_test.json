@@ -1,1136 +1,1136 @@
 {
   "name": "EnglishMathspeak",
   "locale": "en",
-  "factory": "speech",
+  "에프actor와이": "speech",
   "base": "input/mathspeak/mathspeak_test.json",
   "information": "English Mathspeak tests.",
   "domain": "mathspeak",
-  "active": "MathspeakEnglish",
+  "에이ctive": "MathspeakEnglish",
   "exclude": [],
   "tests": {
     "Sample_1_1_1_default": {
-      "expected": "pi almost equals 3.14159"
+      "expected": "파이 almost equals 3.14159"
     },
     "Sample_1_1_1_brief": {
-      "expected": "pi almost equals 3.14159"
+      "expected": "파이 almost equals 3.14159"
     },
     "Sample_1_1_1_sbrief": {
-      "expected": "pi almost equals 3.14159"
+      "expected": "파이 almost equals 3.14159"
     },
     "Sample_1_1_2_default": {
-      "expected": "102 plus 2,214 plus 15 equals 2,331"
+      "expected": "102 더하기 2,214 더하기 15 equals 2,331"
     },
     "Sample_1_1_2_brief": {
-      "expected": "102 plus 2,214 plus 15 equals 2,331"
+      "expected": "102 더하기 2,214 더하기 15 equals 2,331"
     },
     "Sample_1_1_2_sbrief": {
-      "expected": "102 plus 2,214 plus 15 equals 2,331"
+      "expected": "102 더하기 2,214 더하기 15 equals 2,331"
     },
     "Sample_1_1_3_default": {
-      "expected": "59 times 0 equals 0"
+      "expected": "59 곱하기 0 equals 0"
     },
     "Sample_1_1_3_brief": {
-      "expected": "59 times 0 equals 0"
+      "expected": "59 곱하기 0 equals 0"
     },
     "Sample_1_1_3_sbrief": {
-      "expected": "59 times 0 equals 0"
+      "expected": "59 곱하기 0 equals 0"
     },
     "Sample_1_2_1_default": {
-      "expected": "3 minus negative 2"
+      "expected": "3 빼기 마이너스 2"
     },
     "Sample_1_2_1_brief": {
-      "expected": "3 minus negative 2"
+      "expected": "3 빼기 마이너스 2"
     },
     "Sample_1_2_1_sbrief": {
-      "expected": "3 minus negative 2"
+      "expected": "3 빼기 마이너스 2"
     },
     "Sample_1_2_2_default": {
-      "expected": "negative y"
+      "expected": "마이너스 와이"
     },
     "Sample_1_2_2_brief": {
-      "expected": "negative y"
+      "expected": "마이너스 와이"
     },
     "Sample_1_2_2_sbrief": {
-      "expected": "negative y"
+      "expected": "마이너스 와이"
     },
     "Sample_1_2_3_default": {
-      "expected": "negative 32"
+      "expected": "마이너스 32"
     },
     "Sample_1_2_3_brief": {
-      "expected": "negative 32"
+      "expected": "마이너스 32"
     },
     "Sample_1_2_3_sbrief": {
-      "expected": "negative 32"
+      "expected": "마이너스 32"
     },
     "Sample_1_4_1_default": {
-      "expected": "Number t 2 e 4"
+      "expected": "수 티 2 이 4"
     },
     "Sample_1_4_1_brief": {
-      "expected": "Num t 2 e 4"
+      "expected": "수 티 2 이 4"
     },
     "Sample_1_4_1_sbrief": {
-      "expected": "Num t 2 e 4"
+      "expected": "수 티 2 이 4"
     },
     "Sample_1_4_2_default": {
-      "expected": "Number number sign F F 0 0 0 0"
+      "expected": "수 number sign 에프 에프 0 0 0 0"
     },
     "Sample_1_4_2_brief": {
-      "expected": "Num num sign F F 0 0 0 0"
+      "expected": "수 num sign 에프 에프 0 0 0 0"
     },
     "Sample_1_4_2_sbrief": {
-      "expected": "Num num sign F F 0 0 0 0"
+      "expected": "수 num sign 에프 에프 0 0 0 0"
     },
     "Sample_1_4_3_default": {
-      "expected": "Number 0 x 1 5 F F plus Number 0 x 2 B 0 1 equals Number 0 x 4 1 0 0"
+      "expected": "수 0 엑스 1 5 에프 에프 더하기 수 0 엑스 2 비 0 1 equals 수 0 엑스 4 1 0 0"
     },
     "Sample_1_4_3_brief": {
-      "expected": "Num 0 x 1 5 F F plus Num 0 x 2 B 0 1 equals Num 0 x 4 1 0 0"
+      "expected": "수 0 엑스 1 5 에프 에프 더하기 수 0 엑스 2 비 0 1 equals 수 0 엑스 4 1 0 0"
     },
     "Sample_1_4_3_sbrief": {
-      "expected": "Num 0 x 1 5 F F plus Num 0 x 2 B 0 1 equals Num 0 x 4 1 0 0"
+      "expected": "수 0 엑스 1 5 에프 에프 더하기 수 0 엑스 2 비 0 1 equals 수 0 엑스 4 1 0 0"
     },
     "Sample_1_5_1_default": {
-      "expected": "upper I comma UpperWord I I comma UpperWord I I I comma UpperWord I V comma upper V period"
+      "expected": "대문자 아이 콤마 대문자묶음 아이 아이 콤마 대문자묶음 아이 아이 아이 콤마 대문자묶음 아이 브이 콤마 대문자 브이 마침표"
     },
     "Sample_1_5_1_brief": {
-      "expected": "upper I comma UpperWord I I comma UpperWord I I I comma UpperWord I V comma upper V period"
+      "expected": "대문자 아이 콤마 대문자묶음 아이 아이 콤마 대문자묶음 아이 아이 아이 콤마 대문자묶음 아이 브이 콤마 대문자 브이 마침표"
     },
     "Sample_1_5_1_sbrief": {
-      "expected": "upper I comma UpperWord I I comma UpperWord I I I comma UpperWord I V comma upper V period"
+      "expected": "대문자 아이 콤마 대문자묶음 아이 아이 콤마 대문자묶음 아이 아이 아이 콤마 대문자묶음 아이 브이 콤마 대문자 브이 마침표"
     },
-    "_comment0_": " Not yet possible, as we do not yet handle mstack.",
+    "_comment0_": " not yet possible, 에이s we do not yet handle mstack.",
     "Sample_1_6_1_default": {
-      "expected": "StartFraction 22 Over 7 EndFraction equals 3 point ModifyingAbove 1 4 2 8 5 7 With bar"
+      "expected": "분수시작 7 분의 22 분수끝 equals 3 점 ModifyingAbove 1 4 2 8 5 7 With bar"
     },
     "Sample_1_6_1_brief": {
-      "expected": "StartFrac 22 Over 7 EndFrac equals 3 point ModAbove 1 4 2 8 5 7 With bar"
+      "expected": "분수시작 7 분의 22 분수끝 equals 3 점 ModAbove 1 4 2 8 5 7 With bar"
     },
     "Sample_1_6_1_sbrief": {
-      "expected": "Frac 22 Over 7 EndFrac equals 3 point ModAbove 1 4 2 8 5 7 With bar"
+      "expected": "분수 7 분의 22 분수끝 equals 3 점 ModAbove 1 4 2 8 5 7 With bar"
     },
     "Sample_2_1_1_default": {
-      "expected": "d equals StartRoot left parenthesis upper X minus x right parenthesis squared minus left parenthesis upper Y minus y right parenthesis squared EndRoot"
+      "expected": "d equals 루트시작 왼쪽 괄호 대문자 엑스 빼기 엑스 오른쪽 괄호 제곱 빼기 왼쪽 괄호 대문자 와이 빼기 와이 오른쪽 괄호 제곱 루트끝"
     },
     "Sample_2_1_1_brief": {
-      "expected": "d equals StartRoot left p'ren upper X minus x right p'ren squared minus left p'ren upper Y minus y right p'ren squared EndRoot"
+      "expected": "d equals 루트시작 왼쪽 괄호 대문자 엑스 빼기 엑스 오른쪽 괄호 제곱 빼기 왼쪽 괄호 대문자 와이 빼기 와이 오른쪽 괄호 제곱 루트끝"
     },
     "Sample_2_1_1_sbrief": {
-      "expected": "d equals Root L p'ren upper X minus x R p'ren squared minus L p'ren upper Y minus y R p'ren squared EndRoot"
+      "expected": "d equals 루트 좌 괄호 대문자 엑스 빼기 엑스 우 괄호 제곱 빼기 좌 괄호 대문자 와이 빼기 와이 우 괄호 제곱 루트끝"
     },
     "Sample_2_3_1_default": {
-      "expected": "If upper A right arrow upper B and upper B right arrow upper C then upper A right arrow upper C period"
+      "expected": "If 대문자 에이 오른쪽 화살표 대문자 비 and 대문자 비 오른쪽 화살표 대문자 씨 then 대문자 에이 오른쪽 화살표 대문자 씨 마침표"
     },
     "Sample_2_3_1_brief": {
-      "expected": "If upper A right arrow upper B and upper B right arrow upper C then upper A right arrow upper C period"
+      "expected": "If 대문자 에이 오른쪽 화살표 대문자 비 and 대문자 비 오른쪽 화살표 대문자 씨 then 대문자 에이 오른쪽 화살표 대문자 씨 마침표"
     },
     "Sample_2_3_1_sbrief": {
-      "expected": "If upper A R arrow upper B and upper B R arrow upper C then upper A R arrow upper C period"
+      "expected": "If 대문자 에이 우 화살표 대문자 비 and 대문자 비 우 화살표 대문자 씨 then 대문자 에이 우 화살표 대문자 씨 마침표"
     },
     "Sample_2_6_1_default": {
-      "expected": "bold left bracket x bold right bracket"
+      "expected": "진한 왼쪽 대괄호 엑스 진한 오른쪽 대괄호"
     },
     "Sample_2_6_1_brief": {
-      "expected": "bold left brack x bold right brack"
+      "expected": "진한 왼쪽 대괄호 엑스 진한 오른쪽 대괄호"
     },
     "Sample_2_6_1_sbrief": {
-      "expected": "bold L brack x bold R brack"
+      "expected": "진한 좌 대괄호 엑스 진한 우 대괄호"
     },
     "Sample_2_6_2_default": {
-      "expected": "contour integral upper E dot d bold l equals minus StartFraction d upper Phi upper B Over d t EndFraction"
+      "expected": "contour integral 대문자 이 닷 디 진한 엘 equals 빼기 분수시작 디 티 분의 디 대문자 파이 대문자 비 분수끝"
     },
     "Sample_2_6_2_brief": {
-      "expected": "contour integral upper E dot d bold l equals minus StartFrac d upper Phi upper B Over d t EndFrac"
+      "expected": "contour integral 대문자 이 닷 디 진한 엘 equals 빼기 분수시작 디 티 분의 디 대문자 파이 대문자 비 분수끝"
     },
     "Sample_2_6_2_sbrief": {
-      "expected": "contour integral upper E dot d bold l equals minus Frac d upper Phi upper B Over d t EndFrac"
+      "expected": "contour integral 대문자 이 닷 디 진한 엘 equals 빼기 분수 디 티 분의 디 대문자 파이 대문자 비 분수끝"
     },
-    "NegativeVsMinus_0": {
-      "expected": "minus StartFraction 1 Over b EndFraction"
+    "마이너스Vs빼기_0": {
+      "expected": "빼기 분수시작 비 분의 1 분수끝"
     },
-    "NegativeVsMinus_1": {
-      "expected": "minus StartFraction a Over b EndFraction"
+    "마이너스Vs빼기_1": {
+      "expected": "빼기 분수시작 비 분의 에이 분수끝"
     },
-    "NegativeVsMinus_2": {
-      "expected": "negative 3 and one half"
+    "마이너스Vs빼기_2": {
+      "expected": "마이너스 3 와(과) 2 분의 1"
     },
     "Sample_4_2_1_default": {
-      "expected": "Uppercase left parenthesis StartSet alpha comma beta comma gamma comma delta comma epsilon comma phi EndSet right parenthesis equals StartSet upper Alpha comma upper Beta comma upper Gamma comma upper Delta comma upper Epsilon comma upper Phi EndSet"
+      "expected": "Uppercase 왼쪽 괄호 집합시작 알파 콤마 베타 콤마 감마 콤마 델타 콤마 엡실론 콤마 파이 집합끝 오른쪽 괄호 equals 집합시작 대문자 알파 콤마 대문자 베타 콤마 대문자 감마 콤마 대문자 델타 콤마 대문자 엡실론 콤마 대문자 파이 집합끝"
     },
     "Sample_4_2_1_brief": {
-      "expected": "Uppercase left p'ren StartSet alpha comma beta comma gamma comma delta comma epsilon comma phi EndSet right p'ren equals StartSet upper Alpha comma upper Beta comma upper Gamma comma upper Delta comma upper Epsilon comma upper Phi EndSet"
+      "expected": "Uppercase 왼쪽 괄호 집합시작 알파 콤마 베타 콤마 감마 콤마 델타 콤마 엡실론 콤마 파이 집합끝 오른쪽 괄호 equals 집합시작 대문자 알파 콤마 대문자 베타 콤마 대문자 감마 콤마 대문자 델타 콤마 대문자 엡실론 콤마 대문자 파이 집합끝"
     },
     "Sample_4_2_1_sbrief": {
-      "expected": "Uppercase L p'ren Set alpha comma beta comma gamma comma delta comma epsilon comma phi EndSet R p'ren equals Set upper Alpha comma upper Beta comma upper Gamma comma upper Delta comma upper Epsilon comma upper Phi EndSet"
+      "expected": "Uppercase 좌 괄호 집합 알파 콤마 베타 콤마 감마 콤마 델타 콤마 엡실론 콤마 파이 집합끝 우 괄호 equals 집합 대문자 알파 콤마 대문자 베타 콤마 대문자 감마 콤마 대문자 델타 콤마 대문자 엡실론 콤마 대문자 파이 집합끝"
     },
     "Sample_5_1_1_default": {
-      "expected": "y minus 1"
+      "expected": "와이 빼기 1"
     },
     "Sample_5_1_1_brief": {
-      "expected": "y minus 1"
+      "expected": "와이 빼기 1"
     },
     "Sample_5_1_1_sbrief": {
-      "expected": "y minus 1"
+      "expected": "와이 빼기 1"
     },
     "Sample_5_1_2_default": {
-      "expected": "left parenthesis 1 hyphen to hyphen 1 right parenthesis"
+      "expected": "왼쪽 괄호 1 하이픈 to 하이픈 1 오른쪽 괄호"
     },
     "Sample_5_1_2_brief": {
-      "expected": "left p'ren 1 hyphen to hyphen 1 right p'ren"
+      "expected": "왼쪽 괄호 1 하이픈 to 하이픈 1 오른쪽 괄호"
     },
     "Sample_5_1_2_sbrief": {
-      "expected": "L p'ren 1 hyphen to hyphen 1 R p'ren"
+      "expected": "좌 괄호 1 하이픈 to 하이픈 1 우 괄호"
     },
     "Sample_5_1_3_default": {
-      "expected": "negative 1"
+      "expected": "마이너스 1"
     },
     "Sample_5_1_3_brief": {
-      "expected": "negative 1"
+      "expected": "마이너스 1"
     },
     "Sample_5_1_3_sbrief": {
-      "expected": "negative 1"
+      "expected": "마이너스 1"
     },
     "Sample_6_1_1_default": {
-      "expected": "The Fibonacci numbers are colon StartSet 0 comma 1 comma 1 comma 2 comma 3 comma 5 comma 8 comma ellipsis EndSet"
+      "expected": "The Fibonacci numbers are 콜론 집합시작 0 콤마 1 콤마 1 콤마 2 콤마 3 콤마 5 콤마 8 콤마 ellipsis 집합끝"
     },
     "Sample_6_1_1_brief": {
-      "expected": "The Fibonacci numbers are colon StartSet 0 comma 1 comma 1 comma 2 comma 3 comma 5 comma 8 comma ellipsis EndSet"
+      "expected": "The Fibonacci numbers are 콜론 집합시작 0 콤마 1 콤마 1 콤마 2 콤마 3 콤마 5 콤마 8 콤마 ellipsis 집합끝"
     },
     "Sample_6_1_1_sbrief": {
-      "expected": "The Fibonacci numbers are colon Set 0 comma 1 comma 1 comma 2 comma 3 comma 5 comma 8 comma ellipsis EndSet"
+      "expected": "The Fibonacci numbers are 콜론 집합 0 콤마 1 콤마 1 콤마 2 콤마 3 콤마 5 콤마 8 콤마 ellipsis 집합끝"
     },
     "Sample_6_2_1_default": {
-      "expected": "StartAbsoluteValue 4 minus 7 EndAbsoluteValue equals 3"
+      "expected": "절댓값시작 4 빼기 7 절댓값끝 equals 3"
     },
     "Sample_6_2_1_brief": {
-      "expected": "StartAbsoluteValue 4 minus 7 EndAbsoluteValue equals 3"
+      "expected": "절댓값시작 4 빼기 7 절댓값끝 equals 3"
     },
     "Sample_6_2_1_sbrief": {
-      "expected": "AbsoluteValue 4 minus 7 EndAbsoluteValue equals 3"
+      "expected": "절댓값 4 빼기 7 절댓값끝 equals 3"
     },
     "_comment1_": " This equation does not make sense! We could do it purely syntactically!",
     "Sample_6_2_2_old_default": {
-      "expected": "StartAbsoluteValue a StartAbsoluteValue plus or minus b EndAbsoluteValue minus 15 EndAbsoluteValue not equals StartAbsoluteValue a EndAbsoluteValue plus or minus b StartAbsoluteValue minus 15 EndAbsoluteValue"
+      "expected": "절댓값시작 에이 절댓값시작 더하기 or 빼기 비 절댓값끝 빼기 15 절댓값끝 not equals 절댓값시작 에이 절댓값끝 더하기 or 빼기 비 절댓값시작 빼기 15 절댓값끝"
     },
     "Sample_6_2_2_old_brief": {
-      "expected": "StartAbsoluteValue a StartAbsoluteValue plus or minus b EndAbsoluteValue minus 15 EndAbsoluteValue not equals StartAbsoluteValue a EndAbsoluteValue plus or minus b StartAbsoluteValue minus 15 EndAbsoluteValue"
+      "expected": "절댓값시작 에이 절댓값시작 더하기 or 빼기 비 절댓값끝 빼기 15 절댓값끝 not equals 절댓값시작 에이 절댓값끝 더하기 or 빼기 비 절댓값시작 빼기 15 절댓값끝"
     },
     "Sample_6_2_2_old_sbrief": {
-      "expected": "AbsoluteValue a AbsoluteValue plus or minus b EndAbsoluteValue minus 15 EndAbsoluteValue not equals AbsoluteValue a EndAbsoluteValue plus or minus b AbsoluteValue minus 15 EndAbsoluteValue"
+      "expected": "절댓값 에이 절댓값 더하기 or 빼기 비 절댓값끝 빼기 15 절댓값끝 not equals 절댓값 에이 절댓값끝 더하기 or 빼기 비 절댓값 빼기 15 절댓값끝"
     },
     "Sample_6_2_2_default": {
-      "expected": "StartAbsoluteValue a plus or minus StartAbsoluteValue b minus c EndAbsoluteValue EndAbsoluteValue not equals StartAbsoluteValue a EndAbsoluteValue plus or minus StartAbsoluteValue b minus c EndAbsoluteValue"
+      "expected": "절댓값시작 에이 더하기 or 빼기 절댓값시작 비 빼기 씨 절댓값끝 절댓값끝 not equals 절댓값시작 에이 절댓값끝 더하기 or 빼기 절댓값시작 비 빼기 씨 절댓값끝"
     },
     "Sample_6_2_2_brief": {
-      "expected": "StartAbsoluteValue a plus or minus StartAbsoluteValue b minus c EndAbsoluteValue EndAbsoluteValue not equals StartAbsoluteValue a EndAbsoluteValue plus or minus StartAbsoluteValue b minus c EndAbsoluteValue"
+      "expected": "절댓값시작 에이 더하기 or 빼기 절댓값시작 비 빼기 씨 절댓값끝 절댓값끝 not equals 절댓값시작 에이 절댓값끝 더하기 or 빼기 절댓값시작 비 빼기 씨 절댓값끝"
     },
     "Sample_6_2_2_sbrief": {
-      "expected": "AbsoluteValue a plus or minus AbsoluteValue b minus c EndAbsoluteValue EndAbsoluteValue not equals AbsoluteValue a EndAbsoluteValue plus or minus AbsoluteValue b minus c EndAbsoluteValue"
+      "expected": "절댓값 에이 더하기 or 빼기 절댓값 비 빼기 씨 절댓값끝 절댓값끝 not equals 절댓값 에이 절댓값끝 더하기 or 빼기 절댓값 비 빼기 씨 절댓값끝"
     },
     "Sample_7_1_1_default": {
-      "expected": "StartFraction 1 Over x EndFraction"
+      "expected": "분수시작 엑스 분의 1 분수끝"
     },
     "Sample_7_1_1_brief": {
-      "expected": "StartFrac 1 Over x EndFrac"
+      "expected": "분수시작 엑스 분의 1 분수끝"
     },
     "Sample_7_1_1_sbrief": {
-      "expected": "Frac 1 Over x EndFrac"
+      "expected": "분수 엑스 분의 1 분수끝"
     },
     "Sample_7_1_2_default": {
-      "expected": "a minus StartFraction b plus c Over d minus e EndFraction times f"
+      "expected": "에이 빼기 분수시작 디 빼기 이 분의 비 더하기 씨 분수끝 곱하기 에프"
     },
     "Sample_7_1_2_brief": {
-      "expected": "a minus StartFrac b plus c Over d minus e EndFrac times f"
+      "expected": "에이 빼기 분수시작 디 빼기 이 분의 비 더하기 씨 분수끝 곱하기 에프"
     },
     "Sample_7_1_2_sbrief": {
-      "expected": "a minus Frac b plus c Over d minus e EndFrac times f"
+      "expected": "에이 빼기 분수 디 빼기 이 분의 비 더하기 씨 분수끝 곱하기 에프"
     },
     "Sample_7_2_1_default": {
-      "expected": "StartStartFraction StartFraction x Over y EndFraction OverOver z EndEndFraction not equals StartStartFraction x OverOver StartFraction y Over z EndFraction EndEndFraction"
+      "expected": "분수시작시작 제트 분의분의 분수시작 와이 분의 엑스 분수끝 분수끝끝 not equals 분수시작시작 분수시작 제트 분의 와이 분수끝 분의분의 엑스 분수끝끝"
     },
     "Sample_7_2_1_brief": {
-      "expected": "StartStartFrac StartFrac x Over y EndFrac OverOver z EndEndFrac not equals StartStartFrac x OverOver StartFrac y Over z EndFrac EndEndFrac"
+      "expected": "분수시작시작 제트 분의분의 분수시작 와이 분의 엑스 분수끝 분수끝끝 not equals 분수시작시작 분수시작 제트 분의 와이 분수끝 분의분의 엑스 분수끝끝"
     },
     "Sample_7_2_1_sbrief": {
-      "expected": "NestFrac Frac x Over y EndFrac NestOver z NestEndFrac not equals NestFrac x NestOver Frac y Over z EndFrac NestEndFrac"
+      "expected": "Nest분수 분수 와이 분의 엑스 분수끝 NestOver 제트 Nest분수끝 not equals Nest분수 엑스 NestOver 분수 제트 분의 와이 분수끝 Nest분수끝"
     },
     "Sample_7_3_1_default": {
-      "expected": "StartStartStartFraction StartStartFraction left parenthesis 1 minus x right parenthesis StartFraction d Over d x EndFraction left parenthesis 2 x right parenthesis minus 2 x StartFraction d Over d x EndFraction left parenthesis 1 minus x right parenthesis OverOver left parenthesis 1 minus x right parenthesis squared EndEndFraction OverOverOver 1 plus left parenthesis StartFraction 2 x Over 1 minus x EndFraction right parenthesis squared EndEndEndFraction"
+      "expected": "분수시작시작시작 1 더하기 왼쪽 괄호 분수시작 1 빼기 엑스 분의 2 엑스 분수끝 오른쪽 괄호 제곱 분의분의분의 분수시작시작 왼쪽 괄호 1 빼기 엑스 오른쪽 괄호 제곱 분의분의분의 왼쪽 괄호 1 빼기 엑스 오른쪽 괄호 분수시작 디 엑스 분의 디  분수끝 왼쪽 괄호 2 엑스 오른쪽 괄호 빼기 2 엑스 분수시작 디 엑스 분의 디 분수끝 왼쪽 괄호 1 빼기 엑스 오른쪽 괄호 분수끝끝 분수끝끝끝"
     },
     "Sample_7_3_1_brief": {
-      "expected": "StartStartStartFrac StartStartFrac left p'ren 1 minus x right p'ren StartFrac d Over d x EndFrac left p'ren 2 x right p'ren minus 2 x StartFrac d Over d x EndFrac left p'ren 1 minus x right p'ren OverOver left p'ren 1 minus x right p'ren squared EndEndFrac OverOverOver 1 plus left p'ren StartFrac 2 x Over 1 minus x EndFrac right p'ren squared EndEndEndFrac"
+      "expected": "분수시작시작시작 1 더하기 왼쪽 괄호 분수시작 1 빼기 엑스 분의 2 엑스 분수끝 오른쪽 괄호 제곱 분의분의분의 분수시작시작 왼쪽 괄호 1 빼기 엑스 오른쪽 괄호 제곱 분의분의분의 왼쪽 괄호 1 빼기 엑스 오른쪽 괄호 분수시작 디 엑스 분의 디  분수끝 왼쪽 괄호 2 엑스 오른쪽 괄호 빼기 2 엑스 분수시작 디 엑스 분의 디 분수끝 왼쪽 괄호 1 빼기 엑스 오른쪽 괄호 분수끝끝 분수끝끝끝"
     },
     "Sample_7_3_1_sbrief": {
-      "expected": "NestTwiceFrac NestFrac L p'ren 1 minus x R p'ren Frac d Over d x EndFrac L p'ren 2 x R p'ren minus 2 x Frac d Over d x EndFrac L p'ren 1 minus x R p'ren NestOver L p'ren 1 minus x R p'ren squared NestEndFrac NestTwiceOver 1 plus L p'ren Frac 2 x Over 1 minus x EndFrac R p'ren squared NestTwiceEndFrac"
+      "expected": "NestTwice분수 Nest분수 좌 괄호 1 빼기 엑스 우 괄호 분수 디 Over 디 엑스 분수끝 좌 괄호 2 엑스 우 괄호 빼기 2 엑스 분수 디 Over 디 엑스 분수끝 좌 괄호 1 빼기 엑스 우 괄호 NestOver 좌 괄호 1 빼기 엑스 우 괄호 제곱 Nest분수끝 NestTwiceOver 1 더하기 좌 괄호 분수 2 엑스 Over 1 빼기 엑스 분수끝 우 괄호 제곱 NestTwice분수끝"
     },
     "Sample_7_3_2_default": {
-      "expected": "a 0 plus StartStartStartStartFraction 1 OverOverOverOver a 1 plus StartStartStartFraction 1 OverOverOver a 2 plus StartStartFraction 1 OverOver ellipsis plus StartFraction 1 Over a Subscript n Baseline EndFraction EndEndFraction EndEndEndFraction EndEndEndEndFraction"
+      "expected": "에이 0 더하기 분수시작시작시작시작 에이 1 더하기 분수시작시작시작 에이 2 더하기 분수시작시작 ellipsis 더하기 분수시작 에이 아래첨자 엔 Baseline 분의 1 분수끝 분의분의 1 분수끝끝 분의분의분의 1 분수끝끝끝 분의분의분의분의 1 분수끝끝끝끝"
     },
     "Sample_7_3_2_brief": {
-      "expected": "a 0 plus StartStartStartStartFrac 1 OverOverOverOver a 1 plus StartStartStartFrac 1 OverOverOver a 2 plus StartStartFrac 1 OverOver ellipsis plus StartFrac 1 Over a Sub n Base EndFrac EndEndFrac EndEndEndFrac EndEndEndEndFrac"
+      "expected": "에이 0 더하기 분수시작시작시작시작 에이 1 더하기 분수시작시작시작 에이 2 더하기 분수시작시작 ellipsis 더하기 분수시작 에이 아래 엔 Base 분의 1 분수끝 분의분의 1 분수끝끝 분의분의분의 1 분수끝끝끝 분의분의분의분의 1 분수끝끝끝끝"
     },
     "Sample_7_3_2_sbrief": {
-      "expected": "a 0 plus Nest3Frac 1 Nest3Over a 1 plus NestTwiceFrac 1 NestTwiceOver a 2 plus NestFrac 1 NestOver ellipsis plus Frac 1 Over a Sub n Base EndFrac NestEndFrac NestTwiceEndFrac Nest3EndFrac"
+      "expected": "에이 0 더하기 Nest3분수 1 Nest3Over 에이 1 더하기 NestTwice분수 1 NestTwiceOver 에이 2 더하기 Nest분수 1 NestOver ellipsis 더하기 분수 1 Over 에이 아래 엔 Base 분수끝 Nest분수끝 NestTwice분수끝 Nest3분수끝"
     },
     "Sample_7_4_1_default": {
-      "expected": "one half plus two halves plus three halves plus four halves plus ellipsis equals sigma summation Underscript n equals 1 Overscript infinity Endscripts StartFraction n Over 2 EndFraction"
+      "expected": "2 분의 1 더하기 2 분의 2 더하기 2 분의 3 더하기 2 분의 4 더하기 ellipsis equals 시그마 합 하단첨자 엔 equals 1 상단첨자 무한대 첨자끝 분수시작 2 분의 엔 분수끝"
     },
     "Sample_7_4_1_brief": {
-      "expected": "one half plus two halves plus three halves plus four halves plus ellipsis equals sigma summation Underscript n equals 1 Overscript infinity Endscripts StartFrac n Over 2 EndFrac"
+      "expected": "2 분의 1 더하기 2 분의 2 더하기 2 분의 3 더하기 2 분의 4 더하기 ellipsis equals 시그마 합 하단첨자 엔 equals 1 상단첨자 무한대 첨자끝 분수시작 2 분의 엔 분수끝"
     },
     "Sample_7_4_1_sbrief": {
-      "expected": "one half plus two halves plus three halves plus four halves plus ellipsis equals sigma summation Underscript n equals 1 Overscript infinity Endscripts Frac n Over 2 EndFrac"
+      "expected": "2 분의 1 더하기 2 분의 2 더하기 2 분의 3 더하기 2 분의 4 더하기 ellipsis equals 시그마 합 하단첨자 엔 equals 1 상단첨자 무한대 첨자끝 분수 2 분의 엔 분수끝"
     },
     "Sample_7_4_2_default": {
-      "expected": "StartFraction 20 Over 5 EndFraction times StartFraction 1 Over 100 EndFraction equals one twenty fifth"
+      "expected": "분수시작 5 분의 20 분수끝 곱하기 분수시작 100 분의 1 분수끝 equals 25 분의 1"
     },
     "Sample_7_4_2_brief": {
-      "expected": "StartFrac 20 Over 5 EndFrac times StartFrac 1 Over 100 EndFrac equals one twenty fifth"
+      "expected": "분수시작 5 분의 20 분수끝 곱하기 분수시작 100 분의 1 분수끝 equals 25 분의 1"
     },
     "Sample_7_4_2_sbrief": {
-      "expected": "Frac 20 Over 5 EndFrac times Frac 1 Over 100 EndFrac equals one twenty fifth"
+      "expected": "분수 5 분의 20 분수끝 곱하기 분수 100 분의 1 분수끝 equals 25 분의 1"
     },
     "Sample_7_4_3_default": {
-      "expected": "StartFraction three fifths Over 8 EndFraction equals three fifths times one eighth"
+      "expected": "분수시작 8 분의 5 분의 3 분수끝 equals 5 분의 3 곱하기 8 분의 1"
     },
     "Sample_7_4_3_brief": {
-      "expected": "StartFrac three fifths Over 8 EndFrac equals three fifths times one eighth"
+      "expected": "분수시작 8 분의 5 분의 3 분수끝 equals 5 분의 3 곱하기 8 분의 1"
     },
     "Sample_7_4_3_sbrief": {
-      "expected": "Frac three fifths Over 8 EndFrac equals three fifths times one eighth"
+      "expected": "분수 8 분의 5 분의 3 분수끝 equals 5 분의 3 곱하기 8 분의 1"
     },
     "Sample_7_5_1_default": {
-      "expected": "3 and five eighths equals StartFraction 29 Over 8 EndFraction"
+      "expected": "3 와(과) 8 분의 5 equals 분수시작 8 분의 29 분수끝"
     },
     "Sample_7_5_1_brief": {
-      "expected": "3 and five eighths equals StartFrac 29 Over 8 EndFrac"
+      "expected": "3 와(과) 8 분의 5 equals 분수시작 8 분의 29 분수끝"
     },
     "Sample_7_5_1_sbrief": {
-      "expected": "3 and five eighths equals Frac 29 Over 8 EndFrac"
+      "expected": "3 와(과) 8 분의 5 equals 분수 8 분의 29 분수끝"
     },
     "Sample_7_6_1_default": {
-      "expected": "a 0 plus ContinuedFraction b 1 Over a 1 plus StartFraction b 2 Over a 2 plus StartFraction b 3 Over a 3 plus ellipsis equals a 0 plus StartFraction b 1 Over a 1 EndFraction plus StartFraction b 2 Over a 2 EndFraction plus ellipsis"
+      "expected": "에이 0 더하기 연속분수 비 1 Over 에이 1 더하기 분수시작 비 2 Over 에이 2 더하기 분수시작 비 3 Over 에이 3 더하기 ellipsis equals 에이 0 더하기 분수시작 에이 1 분의 1 비 1 분수끝 더하기 분수시작 에이 2 분의 비 2 분수끝 더하기 ellipsis"
     },
     "Sample_7_6_1_brief": {
-      "expected": "a 0 plus ContinuedFrac b 1 Over a 1 plus StartFrac b 2 Over a 2 plus StartFrac b 3 Over a 3 plus ellipsis equals a 0 plus StartFrac b 1 Over a 1 EndFrac plus StartFrac b 2 Over a 2 EndFrac plus ellipsis"
+      "expected": "에이 0 더하기 연속분수 비 1 Over 에이 1 더하기 분수시작 비 2 Over 에이 2 더하기 분수시작 비 3 Over 에이 3 더하기 ellipsis equals 에이 0 더하기 분수시작 에이 1 분의 1 비 1 분수끝 더하기 분수시작 에이 2 분의 비 2 분수끝 더하기 ellipsis"
     },
     "Sample_7_6_1_sbrief": {
-      "expected": "a 0 plus ContinuedFrac b 1 Over a 1 plus Frac b 2 Over a 2 plus Frac b 3 Over a 3 plus ellipsis equals a 0 plus Frac b 1 Over a 1 EndFrac plus Frac b 2 Over a 2 EndFrac plus ellipsis"
+      "expected": "에이 0 더하기 연속분수 비 1 Over 에이 1 더하기 분수 비 2 Over 에이 2 더하기 분수 비 3 Over 에이 3 더하기 ellipsis equals 에이 0 더하기 분수 에이 1 분의 1 비 1 분수끝 더하기 분수 에이 2 분의 비 2 분수끝 더하기 ellipsis"
     },
     "Sample_8_1_1_default": {
-      "expected": "x cubed plus 6 x squared minus x equals 30"
+      "expected": "엑스 세제곱 더하기 6 엑스 제곱 빼기 엑스 equals 30"
     },
     "Sample_8_1_1_brief": {
-      "expected": "x cubed plus 6 x squared minus x equals 30"
+      "expected": "엑스 세제곱 더하기 6 엑스 제곱 빼기 엑스 equals 30"
     },
     "Sample_8_1_1_sbrief": {
-      "expected": "x cubed plus 6 x squared minus x equals 30"
+      "expected": "엑스 세제곱 더하기 6 엑스 제곱 빼기 엑스 equals 30"
     },
     "Sample_8_1_2_default": {
-      "expected": "StartFraction d squared y Over d x squared EndFraction plus left parenthesis a x squared plus b x plus c right parenthesis y equals 0"
+      "expected": "분수시작 디 제곱 와이 Over 디 엑스 제곱 분수끝 더하기 왼쪽 괄호 에이 엑스 제곱 더하기 비 엑스 더하기 씨 오른쪽 괄호 와이 equals 0"
     },
     "Sample_8_1_2_brief": {
-      "expected": "StartFrac d squared y Over d x squared EndFrac plus left p'ren a x squared plus b x plus c right p'ren y equals 0"
+      "expected": "분수시작 디 제곱 와이 Over 디 엑스 제곱 분수끝 더하기 왼쪽 괄호 에이 엑스 제곱 더하기 비 엑스 더하기 씨 오른쪽 괄호 와이 equals 0"
     },
     "Sample_8_1_2_sbrief": {
-      "expected": "Frac d squared y Over d x squared EndFrac plus L p'ren a x squared plus b x plus c R p'ren y equals 0"
+      "expected": "분수 디 제곱 와이 Over 디 엑스 제곱 분수끝 더하기 좌 괄호 에이 엑스 제곱 더하기 비 엑스 더하기 씨 우 괄호 와이 equals 0"
     },
     "Sample_8_2_1_default": {
-      "expected": "x Superscript one half"
+      "expected": "엑스 위첨자 2 분의 1"
     },
     "Sample_8_2_1_brief": {
-      "expected": "x Sup one half"
+      "expected": "엑스 위 2 분의 1"
     },
     "Sample_8_2_1_sbrief": {
-      "expected": "x Sup one half"
+      "expected": "엑스 위 2 분의 1"
     },
     "Sample_8_2_2_default": {
-      "expected": "x Subscript n"
+      "expected": "엑스 아래첨자 엔"
     },
     "Sample_8_2_2_brief": {
-      "expected": "x Sub n"
+      "expected": "엑스 아래 엔"
     },
     "Sample_8_2_2_sbrief": {
-      "expected": "x Sub n"
+      "expected": "엑스 아래 엔"
     },
     "Sample_8_2_3_default": {
-      "expected": "x Superscript a"
+      "expected": "엑스 위첨자 에이"
     },
     "Sample_8_2_3_brief": {
-      "expected": "x Sup a"
+      "expected": "엑스 위 에이"
     },
     "Sample_8_2_3_sbrief": {
-      "expected": "x Sup a"
+      "expected": "엑스 위 에이"
     },
     "Sample_8_3_1_default": {
-      "expected": "x Superscript m plus n"
+      "expected": "엑스 위첨자 엠 더하기 엔"
     },
     "Sample_8_3_1_brief": {
-      "expected": "x Sup m plus n"
+      "expected": "엑스 위 엠 더하기 엔"
     },
     "Sample_8_3_1_sbrief": {
-      "expected": "x Sup m plus n"
+      "expected": "엑스 위 엠 더하기 엔"
     },
     "Sample_8_3_2_default": {
-      "expected": "upper T Subscript n minus 1 Baseline plus 5 equals 0"
+      "expected": "대문자 티 아래첨자 엔 빼기 1 Baseline 더하기 5 equals 0"
     },
     "Sample_8_3_2_brief": {
-      "expected": "upper T Sub n minus 1 Base plus 5 equals 0"
+      "expected": "대문자 티 아래 엔 빼기 1 Base 더하기 5 equals 0"
     },
     "Sample_8_3_2_sbrief": {
-      "expected": "upper T Sub n minus 1 Base plus 5 equals 0"
+      "expected": "대문자 티 아래 엔 빼기 1 Base 더하기 5 equals 0"
     },
     "Sample_8_3_3_default": {
-      "expected": "x Superscript m plus n Baseline equals x Superscript m Baseline x Superscript n"
+      "expected": "엑스 위첨자 엠 더하기 엔 Baseline equals 엑스 위첨자 엠 Baseline 엑스 위첨자 엔"
     },
     "Sample_8_3_3_brief": {
-      "expected": "x Sup m plus n Base equals x Sup m Base x Sup n"
+      "expected": "엑스 위 엠 더하기 엔 Base equals 엑스 위 엠 Base 엑스 위 엔"
     },
     "Sample_8_3_3_sbrief": {
-      "expected": "x Sup m plus n Base equals x Sup m Base x Sup n"
+      "expected": "엑스 위 엠 더하기 엔 Base equals 엑스 위 엠 Base 엑스 위 엔"
     },
     "Sample_8_4_1_default": {
-      "expected": "x Superscript a Super Subscript n Superscript plus a Super Subscript n minus 1"
+      "expected": "엑스 위첨자 에이 위 아래첨자 엔 위첨자 더하기 에이 위 아래첨자 엔 빼기 1"
     },
     "Sample_8_4_1_brief": {
-      "expected": "x Sup a Sup Sub n Sup plus a Sup Sub n minus 1"
+      "expected": "엑스 위 에이 위 아래 엔 위 더하기 에이 위 아래 엔 빼기 1"
     },
     "Sample_8_4_1_sbrief": {
-      "expected": "x Sup a Sup Sub n Sup plus a Sup Sub n minus 1"
+      "expected": "엑스 위 에이 위 아래 엔 위 더하기 에이 위 아래 엔 빼기 1"
     },
     "Sample_8_4_2_default": {
-      "expected": "x Superscript a Super Subscript b"
+      "expected": "엑스 위첨자 에이 위 아래첨자 비"
     },
     "Sample_8_4_2_brief": {
-      "expected": "x Sup a Sup Sub b"
+      "expected": "엑스 위 에이 위 아래 비"
     },
     "Sample_8_4_2_sbrief": {
-      "expected": "x Sup a Sup Sub b"
+      "expected": "엑스 위 에이 위 아래 비"
     },
     "Sample_8_4_3_default": {
-      "expected": "x Subscript a Sub Superscript b"
+      "expected": "엑스 아래첨자 에이 아래 위첨자 비"
     },
     "Sample_8_4_3_brief": {
-      "expected": "x Sub a Sub Sup b"
+      "expected": "엑스 아래 에이 아래 위 비"
     },
     "Sample_8_4_3_sbrief": {
-      "expected": "x Sub a Sub Sup b"
+      "expected": "엑스 아래 에이 아래 위 비"
     },
     "Sample_8_4_4_default": {
-      "expected": "y Superscript a Super Superscript b Super Super Subscript c Baseline not equals y Superscript a Super Superscript b Superscript c"
+      "expected": "와이 위첨자 에이 위 위첨자 비 위 위 아래첨자 씨 Baseline not equals 와이 위첨자 에이 위 위첨자 비 위첨자 씨"
     },
     "Sample_8_4_4_brief": {
-      "expected": "y Sup a Sup Sup b Sup Sup Sub c Base not equals y Sup a Sup Sup b Sup c"
+      "expected": "와이 위 에이 위 위 비 위 위 아래 씨 Base not equals 와이 위 에이 위 위 비 위 씨"
     },
     "Sample_8_4_4_sbrief": {
-      "expected": "y Sup a Sup Sup b Sup Sup Sub c Base not equals y Sup a Sup Sup b Sup c"
+      "expected": "와이 위 에이 위 위 비 위 위 아래 씨 Base not equals 와이 위 에이 위 위 비 위 씨"
     },
     "Sample_8_4_5_default": {
-      "expected": "y Superscript a Super Super Subscript c Super Superscript b"
+      "expected": "와이 위첨자 에이 위 위 아래첨자 씨 위 위첨자 비"
     },
     "Sample_8_4_5_brief": {
-      "expected": "y Sup a Sup Sup Sub c Sup Sup b"
+      "expected": "와이 위 에이 위 위 아래 씨 위 위 비"
     },
     "Sample_8_4_5_sbrief": {
-      "expected": "y Sup a Sup Sup Sub c Sup Sup b"
+      "expected": "와이 위 에이 위 위 아래 씨 위 위 비"
     },
     "Sample_8_4_5Short_default": {
-      "expected": "y Superscript a Super Super Subscript c"
+      "expected": "와이 위첨자 에이 위 위 아래첨자 씨"
     },
     "Sample_8_4_5Short_brief": {
-      "expected": "y Sup a Sup Sup Sub c"
+      "expected": "와이 위 에이 위 위 아래 씨"
     },
     "Sample_8_4_5Short_sbrief": {
-      "expected": "y Sup a Sup Sup Sub c"
+      "expected": "와이 위 에이 위 위 아래 씨"
     },
     "Sample_8_4_5Inv_default": {
-      "expected": "y Subscript a Sub Sub Superscript c"
+      "expected": "와이 아래첨자 에이 아래 아래 위첨자 씨"
     },
     "Sample_8_4_5Inv_brief": {
-      "expected": "y Sub a Sub Sub Sup c"
+      "expected": "와이 아래 에이 아래 아래 위 씨"
     },
     "Sample_8_4_5Inv_sbrief": {
-      "expected": "y Sub a Sub Sub Sup c"
+      "expected": "와이 아래 에이 아래 아래 위 씨"
     },
     "Sample_8_4_5InvShort_default": {
-      "expected": "y Subscript a Sub Sub Superscript c Sub Subscript b"
+      "expected": "와이 아래첨자 에이 아래 아래 위첨자 씨 아래 아래첨자 비"
     },
     "Sample_8_4_5InvShort_brief": {
-      "expected": "y Sub a Sub Sub Sup c Sub Sub b"
+      "expected": "와이 아래 에이 아래 아래 위 씨 아래 아래 비"
     },
     "Sample_8_4_5InvShort_sbrief": {
-      "expected": "y Sub a Sub Sub Sup c Sub Sub b"
+      "expected": "와이 아래 에이 아래 아래 위 씨 아래 아래 비"
     },
     "Sample_8_4_6_default": {
-      "expected": "x Superscript a Super Superscript b"
+      "expected": "엑스 위첨자 에이 위 위첨자 비"
     },
     "Sample_8_4_6_brief": {
-      "expected": "x Sup a Sup Sup b"
+      "expected": "엑스 위 에이 위 위 비"
     },
     "Sample_8_4_6_sbrief": {
-      "expected": "x Sup a Sup Sup b"
+      "expected": "엑스 위 에이 위 위 비"
     },
     "Sample_8_4_7_default": {
-      "expected": "x Subscript a Sub Subscript b"
+      "expected": "엑스 아래첨자 에이 아래 아래첨자 비"
     },
     "Sample_8_4_7_brief": {
-      "expected": "x Sub a Sub Sub b"
+      "expected": "엑스 아래 에이 아래 아래 비"
     },
     "Sample_8_4_7_sbrief": {
-      "expected": "x Sub a Sub Sub b"
+      "expected": "엑스 아래 에이 아래 아래 비"
     },
     "Sample_8_4_8_default": {
-      "expected": "upper T Superscript left parenthesis x Super Superscript a Superscript plus y Super Superscript b Superscript right parenthesis"
+      "expected": "대문자 티 위첨자 왼쪽 괄호 엑스 위 위첨자 에이 위첨자 더하기 와이 위 위첨자 비 위첨자 오른쪽 괄호"
     },
     "Sample_8_4_8_brief": {
-      "expected": "upper T Sup left p'ren x Sup Sup a Sup plus y Sup Sup b Sup right p'ren"
+      "expected": "대문자 티 위 왼쪽 괄호 엑스 위 위 에이 위 더하기 와이 위 위 비 위 오른쪽 괄호"
     },
     "Sample_8_4_8_sbrief": {
-      "expected": "upper T Sup L p'ren x Sup Sup a Sup plus y Sup Sup b Sup R p'ren"
+      "expected": "대문자 티 위 좌 괄호 엑스 위 위 에이 위 더하기 와이 위 위 비 위 우 괄호"
     },
     "Sample_8_5_1_default": {
-      "expected": "x 1"
+      "expected": "엑스 1"
     },
     "Sample_8_5_1_brief": {
-      "expected": "x 1"
+      "expected": "엑스 1"
     },
     "Sample_8_5_1_sbrief": {
-      "expected": "x 1"
+      "expected": "엑스 1"
     },
     "Sample_8_5_2_default": {
-      "expected": "x Subscript negative 1"
+      "expected": "엑스 아래첨자 마이너스 1"
     },
     "Sample_8_5_2_brief": {
-      "expected": "x Sub negative 1"
+      "expected": "엑스 아래 마이너스 1"
     },
     "Sample_8_5_2_sbrief": {
-      "expected": "x Sub negative 1"
+      "expected": "엑스 아래 마이너스 1"
     },
     "Sample_8_5_3_default": {
-      "expected": "x 10,000"
+      "expected": "엑스 10,000"
     },
     "Sample_8_5_3_brief": {
-      "expected": "x 10,000"
+      "expected": "엑스 10,000"
     },
     "Sample_8_5_3_sbrief": {
-      "expected": "x 10,000"
+      "expected": "엑스 10,000"
     },
     "Sample_8_5_4_default": {
-      "expected": "x 1.3"
+      "expected": "엑스 1.3"
     },
     "Sample_8_5_4_brief": {
-      "expected": "x 1.3"
+      "expected": "엑스 1.3"
     },
     "Sample_8_5_4_sbrief": {
-      "expected": "x 1.3"
+      "expected": "엑스 1.3"
     },
     "Sample_8_5_5_default": {
-      "expected": "4 upper F e plus 3 upper O 2 right arrow 2 upper F e 2 upper O 3"
+      "expected": "4 대문자 에프 이 더하기 3 대문자 O 2 오른쪽 화살표 2 대문자 에프 이 2 대문자 O 3"
     },
     "Sample_8_5_5_brief": {
-      "expected": "4 upper F e plus 3 upper O 2 right arrow 2 upper F e 2 upper O 3"
+      "expected": "4 대문자 에프 이 더하기 3 대문자 O 2 오른쪽 화살표 2 대문자 에프 이 2 대문자 O 3"
     },
     "Sample_8_5_5_sbrief": {
-      "expected": "4 upper F e plus 3 upper O 2 R arrow 2 upper F e 2 upper O 3"
+      "expected": "4 대문자 에프 이 더하기 3 대문자 O 2 우 화살표 2 대문자 에프 이 2 대문자 O 3"
     },
     "Sample_8_5_6_default": {
-      "expected": "a Subscript 2 comma 3"
+      "expected": "에이 아래첨자 2 콤마 3"
     },
     "Sample_8_5_6_brief": {
-      "expected": "a Sub 2 comma 3"
+      "expected": "에이 아래 2 콤마 3"
     },
     "Sample_8_5_6_sbrief": {
-      "expected": "a Sub 2 comma 3"
+      "expected": "에이 아래 2 콤마 3"
     },
     "Sample_8_5_7_default": {
-      "expected": "upper T Subscript n 1 plus n 0"
+      "expected": "대문자 티 아래첨자 엔 1 더하기 엔 0"
     },
     "Sample_8_5_7_brief": {
-      "expected": "upper T Sub n 1 plus n 0"
+      "expected": "대문자 티 아래 엔 1 더하기 엔 0"
     },
     "Sample_8_5_7_sbrief": {
-      "expected": "upper T Sub n 1 plus n 0"
+      "expected": "대문자 티 아래 엔 1 더하기 엔 0"
     },
     "Sample_8_5_8_default": {
-      "expected": "log Subscript 2 Baseline left parenthesis x right parenthesis equals StartFraction log Subscript 10 Baseline left parenthesis x right parenthesis Over log Subscript 10 Baseline left parenthesis 2 right parenthesis EndFraction"
+      "expected": "로그 아래첨자 2 Baseline 왼쪽 괄호 엑스 오른쪽 괄호 equals 분수시작 로그 아래첨자 10 Baseline 왼쪽 괄호 2 오른쪽 괄호 분의 로그 아래첨자 10 Baseline 왼쪽 괄호 엑스 오른쪽 괄호 분수끝"
     },
     "Sample_8_5_8_brief": {
-      "expected": "log Sub 2 Base left p'ren x right p'ren equals StartFrac log Sub 10 Base left p'ren x right p'ren Over log Sub 10 Base left p'ren 2 right p'ren EndFrac"
+      "expected": "로그 아래 2 Base 왼쪽 괄호 엑스 오른쪽 괄호 equals 분수시작 로그 아래 10 Base 왼쪽 괄호 2 오른쪽 괄호 분의 로그 아래 10 Base 왼쪽 괄호 엑스 오른쪽 괄호 분수끝"
     },
     "Sample_8_5_8_sbrief": {
-      "expected": "log Sub 2 Base L p'ren x R p'ren equals Frac log Sub 10 Base L p'ren x R p'ren Over log Sub 10 Base L p'ren 2 R p'ren EndFrac"
+      "expected": "로그 아래 2 Base 좌 괄호 엑스 우 괄호 equals 분수 로그 아래 10 Base 좌 괄호 2 우 괄호 분의 로그 아래 10 Base 좌 괄호 엑스 우 괄호 분수끝"
     },
     "Sample_8_5_9_default": {
-      "expected": "upper Phi 5"
+      "expected": "대문자 파이 5"
     },
     "Sample_8_5_9_brief": {
-      "expected": "upper Phi 5"
+      "expected": "대문자 파이 5"
     },
     "Sample_8_5_9_sbrief": {
-      "expected": "upper Phi 5"
+      "expected": "대문자 파이 5"
     },
     "Sample_8_5_10_default": {
-      "expected": "ln x equals integral Subscript 1 Superscript x Baseline StartFraction d t Over t EndFraction"
+      "expected": "엘엔 엑스 equals 인테그럴 아래첨자 1 위첨자 엑스 Baseline 분수시작 티 분의 디 티 분수끝"
     },
     "Sample_8_5_10_brief": {
-      "expected": "ln x equals integral Sub 1 Sup x Base StartFrac d t Over t EndFrac"
+      "expected": "엘엔 엑스 equals 인테그럴 아래 1 위 엑스 Base 분수시작 티 분의 디 티 분수끝"
     },
     "Sample_8_5_10_sbrief": {
-      "expected": "ln x equals integral Sub 1 Sup x Base Frac d t Over t EndFrac"
+      "expected": "엘엔 엑스 equals 인테그럴 아래 1 위 엑스 Base 분수 티 분의 디 티 분수끝"
     },
     "Sample_8_6_1_default": {
-      "expected": "dollar sign n Baseline 2 equals 2 asterisk dollar sign n plus 1 semicolon"
+      "expected": "달러 기호 엔 Baseline 2 equals 2 별표 달러 기호 엔 더하기 1 세미콜론"
     },
     "Sample_8_6_1_brief": {
-      "expected": "dollar sign n Base 2 equals 2 asterisk dollar sign n plus 1 semicolon"
+      "expected": "달러 기호 엔 Base 2 equals 2 별표 달러 기호 엔 더하기 1 세미콜론"
     },
     "Sample_8_6_1_sbrief": {
-      "expected": "dollar sign n Base 2 equals 2 asterisk dollar sign n plus 1 semicolon"
+      "expected": "달러 기호 엔 Base 2 equals 2 별표 달러 기호 엔 더하기 1 세미콜론"
     },
     "Sample_8_8_1_naive_default": {
-      "expected": "Subscript c d Superscript a b Baseline x Subscript e f Superscript g h"
+      "expected": "아래첨자 씨 디 위첨자 에이 비 Baseline 엑스 아래첨자 이 에프 위첨자 쥐 에이치"
     },
     "Sample_8_8_1_naive_brief": {
-      "expected": "Sub c d Sup a b Base x Sub e f Sup g h"
+      "expected": "아래 씨 디 위 에이 비 Base 엑스 아래 이 에프 위 쥐 에이치"
     },
     "Sample_8_8_1_naive_sbrief": {
-      "expected": "Sub c d Sup a b Base x Sub e f Sup g h"
+      "expected": "아래 씨 디 위 에이 비 Base 엑스 아래 이 에프 위 쥐 에이치"
     },
     "Sample_8_8_1_default": {
-      "expected": "Subscript c d Superscript a b Baseline x Subscript e f Superscript g h"
+      "expected": "아래첨자 씨 디 위첨자 에이 비 Baseline 엑스 아래첨자 이 에프 위첨자 쥐 에이치"
     },
     "Sample_8_8_1_brief": {
-      "expected": "Sub c d Sup a b Base x Sub e f Sup g h"
+      "expected": "아래 씨 디 위 에이 비 Base 엑스 아래 이 에프 위 쥐 에이치"
     },
     "Sample_8_8_1_sbrief": {
-      "expected": "Sub c d Sup a b Base x Sub e f Sup g h"
+      "expected": "아래 씨 디 위 에이 비 Base 엑스 아래 이 에프 위 쥐 에이치"
     },
     "SampleSimpleSquare_default": {
-      "expected": "upper T 0 squared"
+      "expected": "대문자 티 0 제곱"
     },
     "SampleSimpleSquare_brief": {
-      "expected": "upper T 0 squared"
+      "expected": "대문자 티 0 제곱"
     },
     "SampleSimpleSquare_sbrief": {
-      "expected": "upper T 0 squared"
+      "expected": "대문자 티 0 제곱"
     },
     "SampleSimpleSquare_2_default": {
-      "expected": "upper T 0 squared"
+      "expected": "대문자 티 0 제곱"
     },
     "SampleSimpleSquare_2_brief": {
-      "expected": "upper T 0 squared"
+      "expected": "대문자 티 0 제곱"
     },
     "SampleSimpleSquare_2_sbrief": {
-      "expected": "upper T 0 squared"
+      "expected": "대문자 티 0 제곱"
     },
     "SampleSimpleCube_default": {
-      "expected": "upper T 0 cubed"
+      "expected": "대문자 티 0 세제곱"
     },
     "SampleSimpleCube_brief": {
-      "expected": "upper T 0 cubed"
+      "expected": "대문자 티 0 세제곱"
     },
     "SampleSimpleCube_sbrief": {
-      "expected": "upper T 0 cubed"
+      "expected": "대문자 티 0 세제곱"
     },
     "SampleSimpleCube_2_default": {
-      "expected": "upper T 0 cubed"
+      "expected": "대문자 티 0 세제곱"
     },
     "SampleSimpleCube_2_brief": {
-      "expected": "upper T 0 cubed"
+      "expected": "대문자 티 0 세제곱"
     },
     "SampleSimpleCube_2_sbrief": {
-      "expected": "upper T 0 cubed"
+      "expected": "대문자 티 0 세제곱"
     },
     "Sample_8_8_2_default": {
-      "expected": "upper T Subscript n minus 1 Superscript 2"
+      "expected": "대문자 티 아래첨자 엔 빼기 1 위첨자 2"
     },
     "Sample_8_8_2_brief": {
-      "expected": "upper T Sub n minus 1 Sup 2"
+      "expected": "대문자 티 아래 엔 빼기 1 위 2"
     },
     "Sample_8_8_2_sbrief": {
-      "expected": "upper T Sub n minus 1 Sup 2"
+      "expected": "대문자 티 아래 엔 빼기 1 위 2"
     },
     "Sample_8_9_1_default": {
-      "expected": "x prime"
+      "expected": "엑스 프라임"
     },
     "Sample_8_9_1_brief": {
-      "expected": "x prime"
+      "expected": "엑스 프라임"
     },
     "Sample_8_9_1_sbrief": {
-      "expected": "x prime"
+      "expected": "엑스 프라임"
     },
     "Sample_8_9_2_default": {
-      "expected": "f triple prime left parenthesis y right parenthesis equals StartFraction d f double prime left parenthesis y right parenthesis Over d y EndFraction"
+      "expected": "에프 트리플 프라임 왼쪽 괄호 와이 오른쪽 괄호 equals 분수시작 디 와이 분의 디 에프 더블 프라임 왼쪽 괄호 와이 오른쪽 괄호 분수끝"
     },
     "Sample_8_9_2_brief": {
-      "expected": "f triple prime left p'ren y right p'ren equals StartFrac d f double prime left p'ren y right p'ren Over d y EndFrac"
+      "expected": "에프 트리플 프라임 왼쪽 괄호 와이 오른쪽 괄호 equals 분수시작 디 와이 분의 디 에프 더블 프라임 왼쪽 괄호 와이 오른쪽 괄호 분수끝"
     },
     "Sample_8_9_2_sbrief": {
-      "expected": "f triple prime L p'ren y R p'ren equals Frac d f double prime L p'ren y R p'ren Over d y EndFrac"
+      "expected": "에프 트리플 프라임 좌 괄호 와이 우 괄호 equals 분수 디 에프 디 와이 분의 더블 프라임 좌 괄호 와이 우 괄호 분수끝"
     },
     "Sample_8_10_1_default": {
-      "expected": "rho prime equals rho prime Subscript plus Baseline plus rho prime Subscript minus"
+      "expected": "로 프라임 equals 로 프라임 아래첨자 더하기 Baseline 더하기 로 프라임 아래첨자 빼기"
     },
     "Sample_8_10_1_brief": {
-      "expected": "rho prime equals rho prime Sub plus Base plus rho prime Sub minus"
+      "expected": "로 프라임 equals 로 프라임 아래 더하기 Base 더하기 로 프라임 아래 빼기"
     },
     "Sample_8_10_1_sbrief": {
-      "expected": "rho prime equals rho prime Sub plus Base plus rho prime Sub minus"
+      "expected": "로 프라임 equals 로 프라임 아래 더하기 Base 더하기 로 프라임 아래 빼기"
     },
     "Sample_8_10_2_default": {
-      "expected": "x prime 10"
+      "expected": "엑스 프라임 10"
     },
     "Sample_8_10_2_brief": {
-      "expected": "x prime 10"
+      "expected": "엑스 프라임 10"
     },
     "Sample_8_10_2_sbrief": {
-      "expected": "x prime 10"
+      "expected": "엑스 프라임 10"
     },
     "Sample_8_10_3_default": {
-      "expected": "upper T prime Subscript n"
+      "expected": "대문자 티 프라임 아래첨자 엔"
     },
     "Sample_8_10_3_brief": {
-      "expected": "upper T prime Sub n"
+      "expected": "대문자 티 프라임 아래 엔"
     },
     "Sample_8_10_3_sbrief": {
-      "expected": "upper T prime Sub n"
+      "expected": "대문자 티 프라임 아래 엔"
     },
     "Sample_8_11_1_default": {
-      "expected": "Start 2 By 3 Matrix 1st Row 1st Column x Superscript n 2nd Column y Superscript n 3rd Column z Superscript n 2nd Row 1st Column x Superscript n plus 1 2nd Column y Superscript n plus 1 3rd Column z Superscript n plus 1 EndMatrix"
+      "expected": "2 행 3 열의 행렬시작 첫번째 행 첫번째 열 엑스 위첨자 엔 두번째 열 와이 위첨자 엔 세번째 열 제트 위첨자 엔 두번째 행 첫번째 열 엑스 위첨자 엔 더하기 1 두번째 열 와이 위첨자 엔 더하기 1 세번째 열 제트 위첨자 엔 더하기 1 행렬끝"
     },
     "Sample_8_11_1_brief": {
-      "expected": "Start 2 By 3 Matrix 1st Row 1st Column x Sup n 2nd Column y Sup n 3rd Column z Sup n 2nd Row 1st Column x Sup n plus 1 2nd Column y Sup n plus 1 3rd Column z Sup n plus 1 EndMatrix"
+      "expected": "2 행 3 열의 행렬시작 첫번째 행 첫번째 열 엑스 위 엔 두번째 열 와이 위 엔 세번째 열 제트 위 엔 두번째 행 첫번째 열 엑스 위 엔 더하기 1 두번째 열 와이 위 엔 더하기 1 세번째 열 제트 위 엔 더하기 1 행렬끝"
     },
     "Sample_8_11_1_sbrief": {
-      "expected": "2 By 3 Matrix 1st Row 1st Column x Sup n 2nd Column y Sup n 3rd Column z Sup n 2nd Row 1st Column x Sup n plus 1 2nd Column y Sup n plus 1 3rd Column z Sup n plus 1 EndMatrix"
+      "expected": "2 행 3 열의 행렬 첫번째 행 첫번째 열 엑스 위 엔 두번째 열 와이 위 엔 세번째 열 제트 위 엔 두번째 행 첫번째 열 엑스 위 엔 더하기 1 두번째 열 와이 위 엔 더하기 1 세번째 열 제트 위 엔 더하기 1 행렬끝"
     },
     "Sample_8_12_1_default": {
-      "expected": "x Subscript a Baseline Superscript b"
+      "expected": "엑스 아래첨자 에이 Baseline 위첨자 비"
     },
     "Sample_8_12_1_brief": {
-      "expected": "x Sub a Base Sup b"
+      "expected": "엑스 아래 에이 Base 위 비"
     },
     "Sample_8_12_1_sbrief": {
-      "expected": "x Sub a Base Sup b"
+      "expected": "엑스 아래 에이 Base 위 비"
     },
     "Sample_8_12_2_default": {
-      "expected": "x Superscript b Baseline Subscript a"
+      "expected": "엑스 위첨자 비 Baseline 아래첨자 에이"
     },
     "Sample_8_12_2_brief": {
-      "expected": "x Sup b Base Sub a"
+      "expected": "엑스 위 비 Base 아래 에이"
     },
     "Sample_8_12_2_sbrief": {
-      "expected": "x Sup b Base Sub a"
+      "expected": "엑스 위 비 Base 아래 에이"
     },
     "Sample_8_13_1_default": {
-      "expected": "log Superscript 4 Superscript b Baseline x"
+      "expected": "로그 위첨자 4 위첨자 비 Baseline 엑스"
     },
     "Sample_8_13_1_brief": {
-      "expected": "log Sup 4 Sup b Base x"
+      "expected": "로그 위 4 위 비 Base 엑스"
     },
     "Sample_8_13_1_sbrief": {
-      "expected": "log Sup 4 Sup b Base x"
+      "expected": "로그 위 4 위 비 Base 엑스"
     },
     "Sample_8_13_2_default": {
-      "expected": "upper T Subscript n Subscript a Baseline y"
+      "expected": "대문자 티 아래첨자 엔 아래첨자 에이 Baseline 와이"
     },
     "Sample_8_13_2_brief": {
-      "expected": "upper T Sub n Sub a Base y"
+      "expected": "대문자 티 아래 엔 아래 에이 Base 와이"
     },
     "Sample_8_13_2_sbrief": {
-      "expected": "upper T Sub n Sub a Base y"
+      "expected": "대문자 티 아래 엔 아래 에이 Base 와이"
     },
     "Sample_9_1_1_default": {
-      "expected": "StartRoot 2 EndRoot"
+      "expected": "루트시작 2 루트끝"
     },
     "Sample_9_1_1_brief": {
-      "expected": "StartRoot 2 EndRoot"
+      "expected": "루트시작 2 루트끝"
     },
     "Sample_9_1_1_sbrief": {
-      "expected": "Root 2 EndRoot"
+      "expected": "루트 2 루트끝"
     },
     "Sample_9_1_2_default": {
-      "expected": "StartRoot m plus n EndRoot"
+      "expected": "루트시작 엠 더하기 엔 루트끝"
     },
     "Sample_9_1_2_brief": {
-      "expected": "StartRoot m plus n EndRoot"
+      "expected": "루트시작 엠 더하기 엔 루트끝"
     },
     "Sample_9_1_2_sbrief": {
-      "expected": "Root m plus n EndRoot"
+      "expected": "루트 엠 더하기 엔 루트끝"
     },
     "Sample_9_2_1_default": {
-      "expected": "RootIndex m plus n StartRoot x plus y EndRoot"
+      "expected": "루트Index 엠 더하기 엔 루트시작 엑스 더하기 와이 루트끝"
     },
     "Sample_9_2_1_brief": {
-      "expected": "RootIndex m plus n StartRoot x plus y EndRoot"
+      "expected": "루트Index 엠 더하기 엔 루트시작 엑스 더하기 와이 루트끝"
     },
     "Sample_9_2_1_sbrief": {
-      "expected": "Index m plus n Root x plus y EndRoot"
+      "expected": "Index 엠 더하기 엔 루트 엑스 더하기 와이 루트끝"
     },
     "Sample_9_2_2_default": {
-      "expected": "RootIndex n StartRoot x Superscript m Baseline EndRoot equals left parenthesis RootIndex n StartRoot x EndRoot right parenthesis Superscript m Baseline equals x Superscript StartFraction m Over n EndFraction Baseline comma x greater than 0"
+      "expected": "루트Index 엔 루트시작 엑스 위첨자 엠 Baseline 루트끝 equals 왼쪽 괄호 루트Index 엔 루트시작 엑스 루트끝 오른쪽 괄호 위첨자 엠 Baseline equals 엑스 위첨자 분수시작 엔 분의 엠 분수끝 Baseline 콤마 엑스 greater than 0"
     },
     "Sample_9_2_2_brief": {
-      "expected": "RootIndex n StartRoot x Sup m Base EndRoot equals left p'ren RootIndex n StartRoot x EndRoot right p'ren Sup m Base equals x Sup StartFrac m Over n EndFrac Base comma x greater than 0"
+      "expected": "루트Index 엔 루트시작 엑스 위 엠 Base 루트끝 equals 왼쪽 괄호 루트Index 엔 루트시작 엑스 루트끝 오른쪽 괄호 위 엠 Base equals 엑스 위 분수시작 엔 분의 엠 분수끝 Base 콤마 엑스 greater than 0"
     },
     "Sample_9_2_2_sbrief": {
-      "expected": "Index n Root x Sup m Base EndRoot equals L p'ren Index n Root x EndRoot R p'ren Sup m Base equals x Sup Frac m Over n EndFrac Base comma x greater than 0"
+      "expected": "Index 엔 루트 엑스 위 엠 Base 루트끝 equals 좌 괄호 Index 엔 루트 엑스 루트끝 우 괄호 위 엠 Base equals 엑스 위 분수 엔 분의 엠 분수끝 Base 콤마 엑스 greater than 0"
     },
     "Sample_9_2_3_default": {
-      "expected": "RootIndex 3 StartRoot x EndRoot equals x Superscript one third"
+      "expected": "루트Index 3 루트시작 엑스 루트끝 equals 엑스 위첨자 3 분의 1"
     },
     "Sample_9_2_3_brief": {
-      "expected": "RootIndex 3 StartRoot x EndRoot equals x Sup one third"
+      "expected": "루트Index 3 루트시작 엑스 루트끝 equals 엑스 위 3 분의 1"
     },
     "Sample_9_2_3_sbrief": {
-      "expected": "Index 3 Root x EndRoot equals x Sup one third"
+      "expected": "Index 3 루트 엑스 루트끝 equals 엑스 위 3 분의 1"
     },
     "Sample_9_3_1_default": {
-      "expected": "NestedStartRoot StartRoot x plus 1 EndRoot plus StartRoot y plus 1 EndRoot NestedEndRoot"
+      "expected": "Nested루트시작 루트시작 엑스 더하기 1 루트끝 더하기 루트시작 와이 더하기 1 루트끝 Nested루트끝"
     },
     "Sample_9_3_1_brief": {
-      "expected": "NestStartRoot StartRoot x plus 1 EndRoot plus StartRoot y plus 1 EndRoot NestEndRoot"
+      "expected": "Nest루트시작 루트시작 엑스 더하기 1 루트끝 더하기 루트시작 와이 더하기 1 루트끝 Nest루트끝"
     },
     "Sample_9_3_1_sbrief": {
-      "expected": "NestRoot Root x plus 1 EndRoot plus Root y plus 1 EndRoot NestEndRoot"
+      "expected": "Nest루트 루트 엑스 더하기 1 루트끝 더하기 루트 와이 더하기 1 루트끝 Nest루트끝"
     },
     "Sample_9_3_2_default": {
-      "expected": "NestedRootIndex n NestedStartRoot RootIndex m StartRoot x EndRoot NestedEndRoot equals NestedRootIndex m NestedStartRoot RootIndex n StartRoot x EndRoot NestedEndRoot"
+      "expected": "Nested루트Index 엔 Nested루트시작 루트Index 엠 루트시작 엑스 루트끝 Nested루트끝 equals Nested루트Index 엠 Nested루트시작 루트Index 엔 루트시작 엑스 루트끝 Nested루트끝"
     },
     "Sample_9_3_2_brief": {
-      "expected": "NestRootIndex n NestStartRoot RootIndex m StartRoot x EndRoot NestEndRoot equals NestRootIndex m NestStartRoot RootIndex n StartRoot x EndRoot NestEndRoot"
+      "expected": "Nest루트Index 엔 Nest루트시작 루트Index 엠 루트시작 엑스 루트끝 Nest루트끝 equals Nest루트Index 엠 Nest루트시작 루트Index 엔 루트시작 엑스 루트끝 Nest루트끝"
     },
     "Sample_9_3_2_sbrief": {
-      "expected": "NestIndex n NestRoot Index m Root x EndRoot NestEndRoot equals NestIndex m NestRoot Index n Root x EndRoot NestEndRoot"
+      "expected": "NestIndex 엔 Nest루트 Index 엠 루트 엑스 루트끝 Nest루트끝 equals NestIndex 엠 Nest루트 Index 엔 루트 엑스 루트끝 Nest루트끝"
     },
     "Sample_9_3_3_default": {
-      "expected": "x Superscript e minus 2 Baseline equals Nested3StartRoot x NestedTwiceRootIndex 3 NestedTwiceStartRoot x NestedRootIndex 4 NestedStartRoot x RootIndex 5 StartRoot x ellipsis EndRoot NestedEndRoot NestedTwiceEndRoot Nested3EndRoot comma x element of double struck upper R"
+      "expected": "엑스 위첨자 이 빼기 2 Baseline equals Nested3루트시작 엑스 NestedTwice루트Index 3 NestedTwice루트시작 엑스 Nested루트Index 4 Nested루트시작 엑스 루트Index 5 루트시작 엑스 ellipsis 루트끝 Nested루트끝 NestedTwice루트끝 Nested3루트끝 콤마 엑스 element of 테두리체 대문자 알"
     },
     "Sample_9_3_3_brief": {
-      "expected": "x Sup e minus 2 Base equals Nest3StartRoot x NestTwiceRootIndex 3 NestTwiceStartRoot x NestRootIndex 4 NestStartRoot x RootIndex 5 StartRoot x ellipsis EndRoot NestEndRoot NestTwiceEndRoot Nest3EndRoot comma x element of double struck upper R"
+      "expected": "엑스 위 이 빼기 2 Base equals Nest3루트시작 엑스 NestTwice루트Index 3 NestTwice루트시작 엑스 Nest루트Index 4 Nest루트시작 엑스 루트Index 5 루트시작 엑스 ellipsis 루트끝 Nest루트끝 NestTwice루트끝 Nest3루트끝 콤마 엑스 element of 테두리체 대문자 알"
     },
     "Sample_9_3_3_sbrief": {
-      "expected": "x Sup e minus 2 Base equals Nest3Root x NestTwiceIndex 3 NestTwiceRoot x NestIndex 4 NestRoot x Index 5 Root x ellipsis EndRoot NestEndRoot NestTwiceEndRoot Nest3EndRoot comma x element of double struck upper R"
+      "expected": "엑스 위 이 빼기 2 Base equals Nest3루트 엑스 NestTwiceIndex 3 NestTwice루트 엑스 NestIndex 4 Nest루트 엑스 Index 5 루트 엑스 ellipsis 루트끝 Nest루트끝 NestTwice루트끝 Nest3루트끝 콤마 엑스 element of 테두리체 대문자 알"
     },
     "Sample_9_3_4_default": {
-      "expected": "StartFraction 2 Over pi EndFraction equals StartFraction StartRoot 2 EndRoot Over 2 EndFraction StartFraction NestedStartRoot 2 plus StartRoot 2 EndRoot NestedEndRoot Over 2 EndFraction StartFraction NestedTwiceStartRoot 2 plus NestedStartRoot 2 plus StartRoot 2 EndRoot NestedEndRoot NestedTwiceEndRoot Over 2 EndFraction ellipsis"
+      "expected": "분수시작 파이 분의 2 분수끝 equals 분수시작 2 분의 루트시작 2 루트끝 분수끝 분수시작 Nested루트시작 2 더하기 루트시작 2 루트끝 Nested루트끝 Over 2 분수끝 분수시작 2 분의 NestedTwice루트시작 2 더하기 Nested루트시작 2 더하기 루트시작 2 루트끝 Nested루트끝 NestedTwice루트끝 분수끝 ellipsis"
     },
     "Sample_9_3_4_brief": {
-      "expected": "StartFrac 2 Over pi EndFrac equals StartFrac StartRoot 2 EndRoot Over 2 EndFrac StartFrac NestStartRoot 2 plus StartRoot 2 EndRoot NestEndRoot Over 2 EndFrac StartFrac NestTwiceStartRoot 2 plus NestStartRoot 2 plus StartRoot 2 EndRoot NestEndRoot NestTwiceEndRoot Over 2 EndFrac ellipsis"
+      "expected": "분수시작 파이 분의 2 분수끝 equals 분수시작 2 분의 루트시작 2 루트끝분수끝 분수시작 Nest루트시작 2 더하기 루트시작 2 루트끝 Nest루트끝 Over 2 분수끝 분수시작 2 분의 NestTwice루트시작 2 더하기 Nest루트시작 2 더하기 루트시작 2 루트끝 Nest루트끝 NestTwice루트끝 분수끝 ellipsis"
     },
     "Sample_9_3_4_sbrief": {
-      "expected": "Frac 2 Over pi EndFrac equals Frac Root 2 EndRoot Over 2 EndFrac Frac NestRoot 2 plus Root 2 EndRoot NestEndRoot Over 2 EndFrac Frac NestTwiceRoot 2 plus NestRoot 2 plus Root 2 EndRoot NestEndRoot NestTwiceEndRoot Over 2 EndFrac ellipsis"
+      "expected": "분수 파이 분의 2 분수끝 equals 분수 2 분의 루트 2 루트끝분수끝 분수 Nest루트 2 더하기 루트 2 루트끝 Nest루트끝 Over 2 분수끝 분수 2 분의 NestTwice루트 2 더하기 Nest루트 2 더하기 루트 2 루트끝 Nest루트끝 NestTwice루트끝 Over 2 분수끝 ellipsis"
     },
     "Sample_10_1_1_default": {
-      "expected": "StartFraction 5 x CrossOut y EndCrossOut Over 2 CrossOut y EndCrossOut EndFraction equals five halves x"
+      "expected": "분수시작 2 소거 와이 소거끝 분의 5 엑스 소거 와이 소거끝 분수끝 equals 2 분의 5 엑스"
     },
     "Sample_10_1_1_brief": {
-      "expected": "StartFrac 5 x CrossOut y EndCrossOut Over 2 CrossOut y EndCrossOut EndFrac equals five halves x"
+      "expected": "분수시작 2 소거 와이 소거끝 분의 5 엑스 소거 와이 소거끝 분수끝 equals 2 분의 5 엑스"
     },
     "Sample_10_1_1_sbrief": {
-      "expected": "Frac 5 x CrossOut y EndCrossOut Over 2 CrossOut y EndCrossOut EndFrac equals five halves x"
+      "expected": "분수 2 소거 와이 소거끝 분의 5 엑스 소거 와이 소거끝 분수끝 equals 2 분의 5 엑스"
     },
     "Sample_10_2_1_default": {
-      "expected": "StartFraction 12 Over 18 EndFraction equals StartFraction CrossOut 12 With 2 EndCrossOut Over CrossOut 18 With 3 EndCrossOut EndFraction equals two thirds"
+      "expected": "분수시작 18 분의 12 분수끝 equals 분수시작 소거 12 With 2 소거끝 Over 소거 18 With 3 소거끝 분수끝 equals 3 분의 2"
     },
     "Sample_10_2_1_brief": {
-      "expected": "StartFrac 12 Over 18 EndFrac equals StartFrac CrossOut 12 With 2 EndCrossOut Over CrossOut 18 With 3 EndCrossOut EndFrac equals two thirds"
+      "expected": "분수시작 18 분의 12 분수끝 equals 분수시작 소거 12 With 2 소거끝 Over 소거 18 With 3 소거끝 분수끝 equals 3 분의 2"
     },
     "Sample_10_2_1_sbrief": {
-      "expected": "Frac 12 Over 18 EndFrac equals Frac CrossOut 12 With 2 EndCrossOut Over CrossOut 18 With 3 EndCrossOut EndFrac equals two thirds"
+      "expected": "분수 18 분의 12 분수끝 equals 분수 소거 12 With 2 소거끝 Over 소거 18 With 3 소거끝 분수끝 equals 3 분의 2"
     },
     "Sample_10_2_2_default": {
-      "expected": "StartFraction 12 Over 18 EndFraction equals StartFraction CrossOut 12 With 2 EndCrossOut Over CrossOut 18 With 3 EndCrossOut EndFraction equals two thirds"
+      "expected": "분수시작 18 분의 12 분수끝 equals 분수시작 소거 12 With 2 소거끝 Over 소거 18 With 3 소거끝 분수끝 equals 3 분의 2"
     },
     "Sample_10_2_2_brief": {
-      "expected": "StartFrac 12 Over 18 EndFrac equals StartFrac CrossOut 12 With 2 EndCrossOut Over CrossOut 18 With 3 EndCrossOut EndFrac equals two thirds"
+      "expected": "분수시작 18 분의 12 분수끝 equals 분수시작 소거 12 With 2 소거끝 Over 소거 18 With 3 소거끝 분수끝 equals 3 분의 2"
     },
     "Sample_10_2_2_sbrief": {
-      "expected": "Frac 12 Over 18 EndFrac equals Frac CrossOut 12 With 2 EndCrossOut Over CrossOut 18 With 3 EndCrossOut EndFrac equals two thirds"
+      "expected": "분수 18 분의 12 분수끝 equals 분수 소거 12 With 2 소거끝 Over 소거 18 With 3 소거끝 분수끝 equals 3 분의 2"
     },
     "Sample_11_1_1_default": {
-      "expected": "ModifyingAbove x With two dots"
+      "expected": "ModifyingAbove 엑스 With two dots"
     },
     "Sample_11_1_1_brief": {
-      "expected": "ModAbove x With two dots"
+      "expected": "ModAbove 엑스 With two dots"
     },
     "Sample_11_1_1_sbrief": {
-      "expected": "ModAbove x With two dots"
+      "expected": "ModAbove 엑스 With two dots"
     },
     "Sample_11_1_2_default": {
-      "expected": "ModifyingAbove x plus y With right arrow"
+      "expected": "ModifyingAbove 엑스 더하기 와이 With 오른쪽 화살표"
     },
     "Sample_11_1_2_brief": {
-      "expected": "ModAbove x plus y With right arrow"
+      "expected": "ModAbove 엑스 더하기 와이 With 오른쪽 화살표"
     },
     "Sample_11_1_2_sbrief": {
-      "expected": "ModAbove x plus y With R arrow"
+      "expected": "ModAbove 엑스 더하기 와이 With 우 화살표"
     },
     "Sample_11_1_3_default": {
-      "expected": "ModifyingAbove x With caret"
+      "expected": "ModifyingAbove 엑스 With caret"
     },
     "Sample_11_1_3_brief": {
-      "expected": "ModAbove x With caret"
+      "expected": "ModAbove 엑스 With caret"
     },
     "Sample_11_1_3_sbrief": {
-      "expected": "ModAbove x With caret"
+      "expected": "ModAbove 엑스 With caret"
     },
     "Sample_11_2_1_default": {
-      "expected": "ModifyingBelow x With dot"
+      "expected": "ModifyingBelow 엑스 With 닷"
     },
     "Sample_11_2_1_brief": {
-      "expected": "ModBelow x With dot"
+      "expected": "ModBelow 엑스 With 닷"
     },
     "Sample_11_2_1_sbrief": {
-      "expected": "ModBelow x With dot"
+      "expected": "ModBelow 엑스 With 닷"
     },
     "Sample_11_3_1_default": {
-      "expected": "x overTilde"
+      "expected": "엑스 overTilde"
     },
     "Sample_11_3_1_brief": {
-      "expected": "x overtilde"
+      "expected": "엑스 overtilde"
     },
     "Sample_11_3_1_sbrief": {
-      "expected": "x overtilde"
+      "expected": "엑스 overtilde"
     },
     "Sample_11_3_2_default": {
-      "expected": "x overbar"
+      "expected": "엑스 overbar"
     },
     "Sample_11_3_2_brief": {
-      "expected": "x overBar"
+      "expected": "엑스 overBar"
     },
     "Sample_11_3_2_sbrief": {
-      "expected": "x overBar"
+      "expected": "엑스 overBar"
     },
     "Sample_11_3_3_default": {
-      "expected": "y underTilde"
+      "expected": "와이 underTilde"
     },
     "Sample_11_3_3_brief": {
-      "expected": "y undertilde"
+      "expected": "와이 undertilde"
     },
     "Sample_11_3_3_sbrief": {
-      "expected": "y undertilde"
+      "expected": "와이 undertilde"
     },
     "Sample_11_4_1_default": {
-      "expected": "x overbar overbar"
+      "expected": "엑스 overbar overbar"
     },
     "Sample_11_4_1_brief": {
-      "expected": "x overBar overBar"
+      "expected": "엑스 overBar overBar"
     },
     "Sample_11_4_1_sbrief": {
-      "expected": "x overBar overBar"
+      "expected": "엑스 overBar overBar"
     },
     "Sample_11_4_2_default": {
-      "expected": "y overbar overbar underbar underbar"
+      "expected": "와이 overbar overbar underbar underbar"
     },
     "Sample_11_4_2_brief": {
-      "expected": "y overBar overBar underBar underBar"
+      "expected": "와이 overBar overBar underBar underBar"
     },
     "Sample_11_4_2_sbrief": {
-      "expected": "y overBar overBar underBar underBar"
+      "expected": "와이 overBar overBar underBar underBar"
     },
     "Sample_11_6_1_default": {
-      "expected": "ModifyingBelow Below ModifyingBelow a plus b With bar With asterisk"
+      "expected": "ModifyingBelow Below ModifyingBelow 에이 더하기 비 With bar With 별표"
     },
     "Sample_11_6_1_brief": {
-      "expected": "ModBelow Below ModBelow a plus b With bar With asterisk"
+      "expected": "ModBelow Below ModBelow 에이 더하기 비 With bar With 별표"
     },
     "Sample_11_6_1_sbrief": {
-      "expected": "ModBelow Below ModBelow a plus b With bar With asterisk"
+      "expected": "ModBelow Below ModBelow 에이 더하기 비 With bar With 별표"
     },
     "_comment8_": " This one is odd. This rule example seems to contradict Rule 11.2, where we",
-    "_comment9_": " ModifyAbove/Below with dot.  Here the dot is used as",
-    "_comment10_": " Over/Underscript. However, we express dot as a multi modifier.",
+    "_comment9_": " ModifyAbove/Below with 닷.  Here the 닷 is used 에이s",
+    "_comment10_": " Over/하단첨자. However, we express 닷 에이s 에이 multi modifier.",
     "Sample_11_6_2_default": {
-      "expected": "ModifyingAbove ModifyingBelow a plus b With left arrow With right arrow Underscript dot Overscript dot Endscripts"
+      "expected": "ModifyingAbove ModifyingBelow 에이 더하기 비 With 왼쪽 화살표 With 오른쪽 화살표 하단첨자 닷 상단첨자 닷 첨자끝"
     },
     "Sample_11_6_2_brief": {
-      "expected": "ModAbove ModBelow a plus b With left arrow With right arrow Underscript dot Overscript dot Endscripts"
+      "expected": "ModAbove ModBelow 에이 더하기 비 With 왼쪽 화살표 With 오른쪽 화살표 하단첨자 닷 상단첨자 닷 첨자끝"
     },
     "Sample_11_6_2_sbrief": {
-      "expected": "ModAbove ModBelow a plus b With l arrow With r arrow Underscript dot Overscript dot Endscripts"
+      "expected": "ModAbove ModBelow 에이 더하기 비 With 좌 화살표 With 우 화살표 하단첨자 닷 상단첨자 닷 첨자끝"
     },
     "Sample_11_6_3_default": {
-      "expected": "ModifyingAbove Above ModifyingAbove x plus y With tilde With bar"
+      "expected": "ModifyingAbove Above ModifyingAbove 엑스 더하기 와이 With tilde With bar"
     },
     "Sample_11_6_3_brief": {
-      "expected": "ModAbove Above ModAbove x plus y With tilde With bar"
+      "expected": "ModAbove Above ModAbove 엑스 더하기 와이 With tilde With bar"
     },
     "Sample_11_6_3_sbrief": {
-      "expected": "ModAbove Above ModAbove x plus y With tilde With bar"
+      "expected": "ModAbove Above ModAbove 엑스 더하기 와이 With tilde With bar"
     },
     "Sample_11_7_1_default": {
-      "expected": "sigma summation Underscript n equals 1 Overscript infinity Endscripts a Subscript n"
+      "expected": "시그마 합 하단첨자 엔 equals 1 상단첨자 무한대 첨자끝 에이 아래첨자 엔"
     },
     "Sample_11_7_1_brief": {
-      "expected": "sigma summation Underscript n equals 1 Overscript infinity Endscripts a Sub n"
+      "expected": "시그마 합 하단첨자 엔 equals 1 상단첨자 무한대 첨자끝 에이 아래 엔"
     },
     "Sample_11_7_1_sbrief": {
-      "expected": "sigma summation Underscript n equals 1 Overscript infinity Endscripts a Sub n"
+      "expected": "시그마 합 하단첨자 엔 equals 1 상단첨자 무한대 첨자끝 에이 아래 엔"
     },
     "Sample_11_8_1_default": {
-      "expected": "ModifyingBelow x plus y With bar Underscript a equals 5 UnderUnderscript b equals 3 Endscripts"
+      "expected": "ModifyingBelow 엑스 더하기 와이 With bar 하단첨자 에이 equals 5 Under하단첨자 비 equals 3 첨자끝"
     },
     "Sample_11_8_1_brief": {
-      "expected": "ModBelow x plus y With bar Underscript a equals 5 UnderUnderscript b equals 3 Endscripts"
+      "expected": "ModBelow 엑스 더하기 와이 With bar 하단첨자 에이 equals 5 Under하단첨자 비 equals 3 첨자끝"
     },
     "Sample_11_8_1_sbrief": {
-      "expected": "ModBelow x plus y With bar Underscript a equals 5 UnderUnderscript b equals 3 Endscripts"
+      "expected": "ModBelow 엑스 더하기 와이 With bar 하단첨자 에이 equals 5 Under하단첨자 비 equals 3 첨자끝"
     },
     "Sample_11_8_2_default": {
-      "expected": "ModifyingAbove x plus y With bar Overscript n equals 1 OverOverscript m equals 2 Endscripts"
+      "expected": "ModifyingAbove 엑스 더하기 와이 With bar 상단첨자 엔 equals 1 Over상단첨자 엠 equals 2 첨자끝"
     },
     "Sample_11_8_2_brief": {
-      "expected": "ModAbove x plus y With bar Overscript n equals 1 OverOverscript m equals 2 Endscripts"
+      "expected": "ModAbove 엑스 더하기 와이 With bar 상단첨자 엔 equals 1 Over상단첨자 엠 equals 2 첨자끝"
     },
     "Sample_11_8_2_sbrief": {
-      "expected": "ModAbove x plus y With bar Overscript n equals 1 OverOverscript m equals 2 Endscripts"
+      "expected": "ModAbove 엑스 더하기 와이 With bar 상단첨자 엔 equals 1 Over상단첨자 엠 equals 2 첨자끝"
     },
-    "_comment11_": " This rule is currently not possible. It needs an enhanced processing in the",
-    "_comment12_": " semantic tree maybe together with a simultaneous treatment of mstacks.",
+    "_comment11_": " This rule is currently not possible. It 엔eeds 에이n enhanced processing in the",
+    "_comment12_": " semantic tree maybe together with 에이 simultaneous treatment of mstacks.",
     "Sample_11_9_1_default": {
-      "expected": "seven twelfths equals .58 ModifyingEachAbove 3 3 3 With dot"
+      "expected": "12 분의 7 equals .58 ModifyingEachAbove 3 3 3 With 닷"
     },
     "Sample_11_9_1_brief": {
-      "expected": "seven twelfths equals .58 ModEachAbove 3 3 3 With dot"
+      "expected": "12 분의 7 equals .58 ModEachAbove 3 3 3 With 닷"
     },
     "Sample_11_9_1_sbrief": {
-      "expected": "seven twelfths equals .58 ModEachAbove 3 3 3 With dot"
+      "expected": "12 분의 7 equals .58 ModEachAbove 3 3 3 With 닷"
     },
     "Sample_12_1_1_default": {
-      "expected": "log Subscript b Baseline x"
+      "expected": "로그 아래첨자 비 Baseline 엑스"
     },
     "Sample_12_1_1_brief": {
-      "expected": "log Sub b Base x"
+      "expected": "로그 아래 비 Base 엑스"
     },
     "Sample_12_1_1_sbrief": {
-      "expected": "log Sub b Base x"
+      "expected": "로그 아래 비 Base 엑스"
     },
     "Sample_12_1_2_default": {
-      "expected": "cosine y"
+      "expected": "코싸인 와이"
     },
     "Sample_12_1_2_brief": {
-      "expected": "cosine y"
+      "expected": "코싸인 와이"
     },
     "Sample_12_1_2_sbrief": {
-      "expected": "cosine y"
+      "expected": "코싸인 와이"
     },
     "Sample_12_1_3_default": {
-      "expected": "sine x"
+      "expected": "싸인 엑스"
     },
     "Sample_12_1_3_brief": {
-      "expected": "sine x"
+      "expected": "싸인 엑스"
     },
     "Sample_12_1_3_sbrief": {
-      "expected": "sine x"
+      "expected": "싸인 엑스"
     },
     "Sample_13_1_1_default": {
-      "expected": "StartFraction 60 CrossOut miles EndCrossOut Over CrossOut hours EndCrossOut EndFraction times StartFraction 5,280 feet Over 1 CrossOut miles EndCrossOut EndFraction times StartFraction 1 CrossOut hours EndCrossOut Over 60 minutes EndFraction equals StartFraction 5,280 feet Over minutes EndFraction"
+      "expected": "분수시작 소거 시간 소거끝 분의 60 소거 마일 소거끝 분수끝 곱하기 분수시작 1 소거 마일 소거끝 분의 5,280 피트 분수끝 곱하기 분수시작 60 분 분의 1 소거 시간 소거끝 분수끝 equals 분수시작 분 분의 5,280 피트 분수끝"
     },
     "Sample_13_1_1_brief": {
-      "expected": "StartFrac 60 CrossOut miles EndCrossOut Over CrossOut hours EndCrossOut EndFrac times StartFrac 5,280 feet Over 1 CrossOut miles EndCrossOut EndFrac times StartFrac 1 CrossOut hours EndCrossOut Over 60 minutes EndFrac equals StartFrac 5,280 feet Over minutes EndFrac"
+      "expected": "분수시작 소거 시간 소거끝 분의 60 소거 마일 소거끝 분수끝 곱하기 분수시작 1 소거 마일 소거끝 분의 5,280 피트 분수끝 곱하기 분수시작 60 분 분의 1 소거 시간 소거끝 분수끝 equals 분수시작 분 분의 5,280 피트 분수끝"
     },
     "Sample_13_1_1_sbrief": {
-      "expected": "Frac 60 CrossOut miles EndCrossOut Over CrossOut hours EndCrossOut EndFrac times Frac 5,280 feet Over 1 CrossOut miles EndCrossOut EndFrac times Frac 1 CrossOut hours EndCrossOut Over 60 minutes EndFrac equals Frac 5,280 feet Over minutes EndFrac"
+      "expected": "분수 소거 시간 소거끝 분의 60 소거 마일 소거끝 분수끝 곱하기 분수 1 소거 마일 소거끝 분의 5,280 피트 분수끝 곱하기 분수 60 분 분의 1 소거 시간 소거끝 분수끝 equals 분수 분 분의 5,280 피트 분수끝"
     },
-    "_comment13_": " That should be negative 2!",
+    "_comment13_": " That should be 마이너스 2!",
     "Sample_13_1_2_default": {
-      "expected": "1 joules equals 1 kilograms dot meters squared dot seconds Superscript negative 2"
+      "expected": "1 줄 equals 1 킬로그램 닷 미터 제곱 닷 초 위첨자 마이너스 2"
     },
     "Sample_13_1_2_brief": {
-      "expected": "1 joules equals 1 kilograms dot meters squared dot seconds Sup negative 2"
+      "expected": "1 줄 equals 1 킬로그램 닷 미터 제곱 닷 초 위 마이너스 2"
     },
     "Sample_13_1_2_sbrief": {
-      "expected": "1 joules equals 1 kilograms dot meters squared dot seconds Sup negative 2"
+      "expected": "1 줄 equals 1 킬로그램 닷 미터 제곱 닷 초 위 마이너스 2"
     },
     "Sample_13_1_3_default": {
-      "expected": "m meters equals 100 m centimeters equals StartFraction m Over 1,000 EndFraction kilometers"
+      "expected": "엠 미터 equals 100 엠 센티미터 equals 분수시작 1,000 분의 엠 분수끝 킬로미터"
     },
     "Sample_13_1_3_brief": {
-      "expected": "m meters equals 100 m centimeters equals StartFrac m Over 1,000 EndFrac kilometers"
+      "expected": "엠 미터 equals 100 엠 센티미터 equals 분수시작 1,000 분의 엠 분수끝 킬로미터"
     },
     "Sample_13_1_3_sbrief": {
-      "expected": "m meters equals 100 m centimeters equals Frac m Over 1,000 EndFrac kilometers"
+      "expected": "엠 미터 equals 100 엠 센티미터 equals 분수 1,000 분의 엠 분수끝 킬로미터"
     },
     "Sample_13_1_4_default": {
-      "expected": "1 miles almost equals 1.6 kilometers"
+      "expected": "1 마일 almost equals 1.6 킬로미터"
     },
     "Sample_13_1_4_brief": {
-      "expected": "1 miles almost equals 1.6 kilometers"
+      "expected": "1 마일 almost equals 1.6 킬로미터"
     },
     "Sample_13_1_4_sbrief": {
-      "expected": "1 miles almost equals 1.6 kilometers"
+      "expected": "1 마일 almost equals 1.6 킬로미터"
     },
     "Sample_13_1_5_default": {
-      "expected": "1 inches equals 2.54 centimeters"
+      "expected": "1 인치 equals 2.54 센티미터"
     },
     "Sample_13_1_5_brief": {
-      "expected": "1 inches equals 2.54 centimeters"
+      "expected": "1 인치 equals 2.54 센티미터"
     },
     "Sample_13_1_5_sbrief": {
-      "expected": "1 inches equals 2.54 centimeters"
+      "expected": "1 인치 equals 2.54 센티미터"
     },
     "Sample_14_1_1_default": {
-      "expected": "StartLayout 1st Row 1st Column upper H 2 2nd Column plus 3rd Column upper F 2 4th Column right arrow 5th Column 2 upper H upper F 2nd Row 1st Column hydrogen 2nd Column Blank 3rd Column fluorine 4th Column Blank 5th Column hydrogen fluoride EndLayout"
+      "expected": "배열시작 첫번째 행 첫번째 열 대문자 에이치 2 두번째 열 더하기 세번째 열 대문자 에프 2 네번째 열 오른쪽 화살표 다섯번째 열 2 대문자 에이치 대문자 에프 두번째 행 첫번째 열 hydrogen 두번째 열 빈 칸 세번째 열 fluorine 네번째 열 빈 칸 다섯번째 열 hydrogen fluoride 배열끝"
     },
     "Sample_14_1_1_brief": {
-      "expected": "StartLayout 1st Row 1st Column upper H 2 2nd Column plus 3rd Column upper F 2 4th Column right arrow 5th Column 2 upper H upper F 2nd Row 1st Column hydrogen 2nd Column Blank 3rd Column fluorine 4th Column Blank 5th Column hydrogen fluoride EndLayout"
+      "expected": "배열시작 첫번째 행 첫번째 열 대문자 에이치 2 두번째 열 더하기 세번째 열 대문자 에프 2 네번째 열 오른쪽 화살표 다섯번째 열 2 대문자 에이치 대문자 에프 두번째 행 첫번째 열 hydrogen 두번째 열 빈 칸 세번째 열 fluorine 네번째 열 빈 칸 다섯번째 열 hydrogen fluoride 배열끝"
     },
     "Sample_14_1_1_sbrief": {
-      "expected": "Layout 1st Row 1st Column upper H 2 2nd Column plus 3rd Column upper F 2 4th Column R arrow 5th Column 2 upper H upper F 2nd Row 1st Column hydrogen 2nd Column Blank 3rd Column fluorine 4th Column Blank 5th Column hydrogen fluoride EndLayout"
+      "expected": "배열 첫번째 행 첫번째 열 대문자 에이치 2 두번째 열 더하기 세번째 열 대문자 에프 2 네번째 열 우 화살표 다섯번째 열 2 대문자 에이치 대문자 에프 두번째 행 첫번째 열 hydrogen 두번째 열 빈 칸 세번째 열 fluorine 네번째 열 빈 칸 다섯번째 열 hydrogen fluoride 배열끝"
     },
     "Sample_14_3_1_default": {
-      "expected": "x equals StartLayout Enlarged left brace 1st Row 1st Column y less than 0 2nd Column 0 2nd Row 1st Column y greater than or equals 0 2nd Column 2 y EndLayout"
+      "expected": "엑스 equals 배열시작 Enlarged 왼쪽 중괄호 첫번째 행 첫번째 열 와이 less than 0 두번째 열 0 두번째 행 첫번째 열 와이 greater than or equals 0 두번째 열 2 와이 배열끝"
     },
     "Sample_14_3_1_brief": {
-      "expected": "x equals StartLayout Enlarged left brace 1st Row 1st Column y less than 0 2nd Column 0 2nd Row 1st Column y greater than or equals 0 2nd Column 2 y EndLayout"
+      "expected": "엑스 equals 배열시작 Enlarged 왼쪽 중괄호 첫번째 행 첫번째 열 와이 less than 0 두번째 열 0 두번째 행 첫번째 열 와이 greater than or equals 0 두번째 열 2 와이 배열끝"
     },
     "Sample_14_3_1_sbrief": {
-      "expected": "x equals Layout Enlarged L brace 1st Row 1st Column y less than 0 2nd Column 0 2nd Row 1st Column y greater than or equals 0 2nd Column 2 y EndLayout"
+      "expected": "엑스 equals 배열 Enlarged 좌 중괄호 첫번째 행 첫번째 열 와이 less than 0 두번째 열 0 두번째 행 첫번째 열 와이 greater than or equals 0 두번째 열 2 와이 배열끝"
     },
     "Sample_15_1_1_default": {
-      "expected": "Start 3 By 3 Matrix 1st Row 1st Column x plus a 2nd Column x plus b 3rd Column x plus c 2nd Row 1st Column y plus a 2nd Column y plus b 3rd Column y plus c 3rd Row 1st Column z plus a 2nd Column z plus b 3rd Column z plus c EndMatrix"
+      "expected": "시작 3 행 3 열의 행렬시작 첫번째 행 첫번째 열 엑스 더하기 에이 두번째 열 엑스 더하기 비 세번째 열 엑스 더하기 씨 두번째 행 첫번째 열 와이 더하기 에이 두번째 열 와이 더하기 비 세번째 열 와이 더하기 씨 세번째 행 첫번째 열 제트 더하기 에이 두번째 열 제트 더하기 비 세번째 열 제트 더하기 씨 행렬끝"
     },
     "Sample_15_1_1_brief": {
-      "expected": "Start 3 By 3 Matrix 1st Row 1st Column x plus a 2nd Column x plus b 3rd Column x plus c 2nd Row 1st Column y plus a 2nd Column y plus b 3rd Column y plus c 3rd Row 1st Column z plus a 2nd Column z plus b 3rd Column z plus c EndMatrix"
+      "expected": "시작 3 행 3 열의 행렬시작 첫번째 행 첫번째 열 엑스 더하기 에이 두번째 열 엑스 더하기 비 세번째 열 엑스 더하기 씨 두번째 행 첫번째 열 와이 더하기 에이 두번째 열 와이 더하기 비 세번째 열 와이 더하기 씨 세번째 행 첫번째 열 제트 더하기 에이 두번째 열 제트 더하기 비 세번째 열 제트 더하기 씨 행렬끝"
     },
     "Sample_15_1_1_sbrief": {
-      "expected": "3 By 3 Matrix 1st Row 1st Column x plus a 2nd Column x plus b 3rd Column x plus c 2nd Row 1st Column y plus a 2nd Column y plus b 3rd Column y plus c 3rd Row 1st Column z plus a 2nd Column z plus b 3rd Column z plus c EndMatrix"
+      "expected": "3 행 3 열의 행렬시작 첫번째 행 첫번째 열 엑스 더하기 에이 두번째 열 엑스 더하기 비 세번째 열 엑스 더하기 씨 두번째 행 첫번째 열 와이 더하기 에이 두번째 열 와이 더하기 비 세번째 열 와이 더하기 씨 세번째 행 첫번째 열 제트 더하기 에이 두번째 열 제트 더하기 비 세번째 열 제트 더하기 씨 행렬끝"
     },
     "Sample_15_2_1_default": {
-      "expected": "Start 2 By 2 Determinant 1st Row 1st Column a plus 1 2nd Column b 2nd Row 1st Column c 2nd Column d EndDeterminant equals left parenthesis a plus 1 right parenthesis d minus b c"
+      "expected": "2 행 2 열의 행렬식시작 첫번째 행 첫번째 열 에이 더하기 1 두번째 열 비 두번째 행 첫번째 열 씨 두번째 열 디 행렬식끝 equals 왼쪽 괄호 에이 더하기 1 오른쪽 괄호 디 빼기 비 씨"
     },
     "Sample_15_2_1_brief": {
-      "expected": "Start 2 By 2 Determinant 1st Row 1st Column a plus 1 2nd Column b 2nd Row 1st Column c 2nd Column d EndDeterminant equals left p'ren a plus 1 right p'ren d minus b c"
+      "expected": "2 행 2 열의 행렬식시작 첫번째 행 첫번째 열 에이 더하기 1 두번째 열 비 두번째 행 첫번째 열 씨 두번째 열 디 행렬식끝 equals 왼쪽 괄호 에이 더하기 1 오른쪽 괄호 디 빼기 비 씨"
     },
     "Sample_15_2_1_sbrief": {
-      "expected": "2 By 2 Determinant 1st Row 1st Column a plus 1 2nd Column b 2nd Row 1st Column c 2nd Column d EndDeterminant equals L p'ren a plus 1 R p'ren d minus b c"
+      "expected": "2 행 2 열의 행렬식 첫번째 행 첫번째 열 에이 더하기 1 두번째 열 비 두번째 행 첫번째 열 씨 두번째 열 디 행렬식끝 equals 좌 괄호 에이 더하기 1 우 괄호 디 빼기 비 씨"
     },
     "Sample_15_4_1_default": {
-      "expected": "Start 2 By 2 Determinant 1st Row a b 2nd Row c d EndDeterminant equals a d minus b c"
+      "expected": "2 행 2 열의 행렬식시작 첫번째 행 에이 비 두번째 행 씨 디 행렬식끝 equals 에이 디 빼기 비 씨"
     },
     "Sample_15_4_1_brief": {
-      "expected": "Start 2 By 2 Determinant 1st Row a b 2nd Row c d EndDeterminant equals a d minus b c"
+      "expected": "2 행 2 열의 행렬식시작 첫번째 행 에이 비 두번째 행 씨 디 행렬식끝 equals 에이 디 빼기 비 씨"
     },
     "Sample_15_4_1_sbrief": {
-      "expected": "2 By 2 Determinant 1st Row a b 2nd Row c d EndDeterminant equals a d minus b c"
+      "expected": "2 행 2 열의 행렬식 첫번째 행 에이 비 두번째 행 씨 디 행렬식끝 equals 에이 디 빼기 비 씨"
     },
     "Sample_15_6_1_default": {
-      "expected": "StartBinomialOrMatrix x Choose y EndBinomialOrMatrix"
+      "expected": "이항계수시작 조합 엑스 씨 와이 이항계수끝"
     },
     "Sample_15_6_1_brief": {
-      "expected": "StartBinomialOrMatrix x Choose y EndBinomialOrMatrix"
+      "expected": "이항계수시작 조합 엑스 씨 와이 이항계수끝"
     },
     "Sample_15_6_1_sbrief": {
-      "expected": "BinomialOrMatrix x Choose y EndBinomialOrMatrix"
+      "expected": "이항계수 조합 엑스 씨 와이 이항계수끝"
     },
-    "BaselineNumberFont_default": {
-      "expected": "n Baseline bold 2"
+    "Baseline수Font_default": {
+      "expected": "엔 Baseline 진한 2"
     },
-    "BaselineNumberFont_brief": {
-      "expected": "n Base bold 2"
+    "Baseline수Font_brief": {
+      "expected": "엔 Base 진한 2"
     },
-    "BaselineNumberFont_sbrief": {
-      "expected": "n Base bold 2"
+    "Baseline수Font_sbrief": {
+      "expected": "엔 Base 진한 2"
     }
   }
 }
