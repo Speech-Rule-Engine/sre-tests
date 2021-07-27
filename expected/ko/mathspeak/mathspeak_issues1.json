@@ -72,67 +72,67 @@
       "expected": "좌 괄호 빼기 x 제곱 슬래시 2 우 괄호"
     },
     "SupBaseRelseq_default": {
-      "expected": "c 1 h 위첨자 4 빼기 2 s 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 less than or equals c 2 h 위첨자 4 빼기 2 s"
+      "expected": "c 1 h 위첨자 4 빼기 2 s 기준 less than or 등호 분수시작 2 대문자 t 분의 1 분수끝 less than or 등호 c 2 h 위첨자 4 빼기 2 s"
     },
     "SupBaseRelseq_brief": {
-      "expected": "c 1 h 위 4 빼기 2 s 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 less than or equals c 2 h 위 4 빼기 2 s"
+      "expected": "c 1 h 위 4 빼기 2 s 기준 less than or 등호 분수시작 2 대문자 t 분의 1 분수끝 less than or 등호 c 2 h 위 4 빼기 2 s"
     },
     "SupBaseRelseq_sbrief": {
-      "expected": "c 1 h 위 4 빼기 2 s 기준 less than or equals 분수 2 대문자 t 분의 1 분수끝 less than or equals c 2 h 위 4 빼기 2 s"
+      "expected": "c 1 h 위 4 빼기 2 s 기준 less than or 등호 분수 2 대문자 t 분의 1 분수끝 less than or 등호 c 2 h 위 4 빼기 2 s"
     },
     "SupBaseMultirel_default": {
-      "expected": "c 1 h 위첨자 4 빼기 2 s 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 equals c 2 h 위첨자 4 빼기 2 s"
+      "expected": "c 1 h 위첨자 4 빼기 2 s 기준 less than or 등호 분수시작 2 대문자 t 분의 1 분수끝 등호 c 2 h 위첨자 4 빼기 2 s"
     },
     "SupBaseMultirel_brief": {
-      "expected": "c 1 h 위 4 빼기 2 s 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 equals c 2 h 위 4 빼기 2 s"
+      "expected": "c 1 h 위 4 빼기 2 s 기준 less than or 등호 분수시작 2 대문자 t 분의 1 분수끝 등호 c 2 h 위 4 빼기 2 s"
     },
     "SupBaseMultirel_sbrief": {
-      "expected": "c 1 h 위 4 빼기 2 s 기준 less than or equals 분수 2 대문자 t 분의 1 분수끝 equals c 2 h 위 4 빼기 2 s"
+      "expected": "c 1 h 위 4 빼기 2 s 기준 less than or 등호 분수 2 대문자 t 분의 1 분수끝 등호 c 2 h 위 4 빼기 2 s"
     },
     "SubBaseRelseq_default": {
-      "expected": "h 아래첨자 s 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 less than or equals h 아래첨자 s"
+      "expected": "h 아래첨자 s 기준 less than or 등호 분수시작 2 대문자 t 분의 1 분수끝 less than or 등호 h 아래첨자 s"
     },
     "SubBaseRelseq_brief": {
-      "expected": "h 아래 s 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 less than or equals h 아래 s"
+      "expected": "h 아래 s 기준 less than or 등호 분수시작 2 대문자 t 분의 1 분수끝 less than or 등호 h 아래 s"
     },
     "SubBaseRelseq_sbrief": {
-      "expected": "h 아래 s 기준 less than or equals 분수 2 대문자 t 분의 1 분수끝 less than or equals h 아래 s"
+      "expected": "h 아래 s 기준 less than or 등호 분수 2 대문자 t 분의 1 분수끝 less than or 등호 h 아래 s"
     },
     "SubBaseMultirel_default": {
-      "expected": "h 아래첨자 s 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 equals h 아래첨자 s"
+      "expected": "h 아래첨자 s 기준 less than or 등호 분수시작 2 대문자 t 분의 1 분수끝 등호 h 아래첨자 s"
     },
     "SubBaseMultirel_brief": {
-      "expected": "h 아래 s 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 equals h 아래 s"
+      "expected": "h 아래 s 기준 less than or 등호 분수시작 2 대문자 t 분의 1 분수끝 등호 h 아래 s"
     },
     "SubBaseMultirel_sbrief": {
-      "expected": "h 아래 s 기준 less than or equals 분수 2 대문자 t 분의 1 분수끝 equals h 아래 s"
+      "expected": "h 아래 s 기준 less than or 등호 분수 2 대문자 t 분의 1 분수끝 등호 h 아래 s"
     },
     "SubSuperBaseRelseq_default": {
-      "expected": "h 아래첨자 s 위첨자 t 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 less than or equals h 아래첨자 s 위첨자 t"
+      "expected": "h 아래첨자 s 위첨자 t 기준 less than or 등호 분수시작 2 대문자 t 분의 1 분수끝 less than or 등호 h 아래첨자 s 위첨자 t"
     },
     "SubSuperBaseRelseq_brief": {
-      "expected": "h 아래 s 위 t 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 less than or equals h 아래 s 위 t"
+      "expected": "h 아래 s 위 t 기준 less than or 등호 분수시작 2 대문자 t 분의 1 분수끝 less than or 등호 h 아래 s 위 t"
     },
     "SubSuperBaseRelseq_sbrief": {
-      "expected": "h 아래 s 위 t 기준 less than or equals 분수 2 대문자 t 분의 1 분수끝 less than or equals h 아래 s 위 t"
+      "expected": "h 아래 s 위 t 기준 less than or 등호 분수 2 대문자 t 분의 1 분수끝 less than or 등호 h 아래 s 위 t"
     },
     "SubSuperBaseMultirel_default": {
-      "expected": "h 아래첨자 s 위첨자 t 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 equals h 아래첨자 s 위첨자 t"
+      "expected": "h 아래첨자 s 위첨자 t 기준 less than or 등호 분수시작 2 대문자 t 분의 1 분수끝 등호 h 아래첨자 s 위첨자 t"
     },
     "SubSuperBaseMultirel_brief": {
-      "expected": "h 아래 s 위 t 기준 less than or equals 분수시작 2 대문자 t 분의 1 분수끝 equals h 아래 s 위 t"
+      "expected": "h 아래 s 위 t 기준 less than or 등호 분수시작 2 대문자 t 분의 1 분수끝 등호 h 아래 s 위 t"
     },
     "SubSuperBaseMultirel_sbrief": {
-      "expected": "h 아래 s 위 t 기준 less than or equals 분수 2 대문자 t 분의 1 분수끝 equals h 아래 s 위 t"
+      "expected": "h 아래 s 위 t 기준 less than or 등호 분수 2 대문자 t 분의 1 분수끝 등호 h 아래 s 위 t"
     },
     "SquareWithText_default": {
-      "expected": "분수시작 area of square 분의 area of triangle 분수끝 equals 분수시작 16 units 세제곱 분의 1 unit 제곱 분수끝"
+      "expected": "분수시작 area of square 분의 area of triangle 분수끝 등호 분수시작 16 units 세제곱 분의 1 unit 제곱 분수끝"
     },
     "SquareWithText_brief": {
-      "expected": "분수시작 area of square 분의 area of triangle 분수끝 equals 분수시작 16 units 세제곱 분의 1 unit 분수끝"
+      "expected": "분수시작 area of square 분의 area of triangle 분수끝 등호 분수시작 16 units 세제곱 분의 1 unit 분수끝"
     },
     "SquareWithText_sbrief": {
-      "expected": "분수 area of square 분의 area of triangle 분수끝 equals 분수 16 units 세제곱 분의 1 unit 분수끝"
+      "expected": "분수 area of square 분의 area of triangle 분수끝 등호 분수 16 units 세제곱 분의 1 unit 분수끝"
     },
     "FootnoteWithText_default": {
       "expected": "area of triangle area of square 위첨자 1 기준 1 unit 위첨자 2 기준 16 units 위첨자 3"
