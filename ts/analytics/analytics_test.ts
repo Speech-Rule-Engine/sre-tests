@@ -19,11 +19,11 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
+import {SpeechRuleEngine} from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
+import {SpeechRule} from '../../speech-rule-engine/js/rule_engine/speech_rule';
+
 import * as fs from 'fs';
-import {sre} from '../base/test_external';
 import {TestPath, TestUtil} from '../base/test_util';
-import * as sret from '../typings/sre';
-import AnalyticsTrie from './analytics_trie';
 import AnalyticsUtil from './analytics_util';
 
 // Saves
@@ -32,22 +32,25 @@ import AnalyticsUtil from './analytics_util';
 //  * Unique applied rules for each test suite
 //  * Comparison with actual rules
 
+let oldLookupRule = SpeechRuleEngine.prototype.lookupRule;
+
 /**
  * @override
  */
-sre.MathStore.prototype.lookupRule = function(node: any, dynamic: any) {
-  let rule = sre.MathStore.base(this, 'lookupRule', node, dynamic);
+SpeechRuleEngine.prototype.lookupRule = function(node: any, dynamic: any) {
+  let rule = oldLookupRule.bind(this)(node, dynamic);
   if (AnalyticsTest.deep && rule) {
     AnalyticsTest.addAppliedRule(rule);
   }
   return rule;
 };
 
+let oldLookupRules = SpeechRuleEngine.prototype.lookupRules;
 /**
  * @override
  */
-sre.MathStore.prototype.lookupRules = function(node: any, dynamic: any) {
-  let rules = sre.MathStore.base(this, 'lookupRules', node, dynamic);
+SpeechRuleEngine.prototype.lookupRules = function(node: any, dynamic: any) {
+  let rules = oldLookupRules.bind(this)(node, dynamic);
   if (AnalyticsTest.deep) {
     AnalyticsTest.addApplicableRules(rules);
   }
@@ -60,15 +63,15 @@ namespace AnalyticsTest {
   export let currentTestcase = '';
   export let deep = false;
 
-  export let appliedRule: Map<string, sret.SpeechRule[]> = new Map();
-  export let applicableRules: Map<string, sret.SpeechRule[][]> = new Map();
+  export let appliedRule: Map<string, SpeechRule[]> = new Map();
+  export let applicableRules: Map<string, SpeechRule[][]> = new Map();
 
   /**
    * Records a rule applied while a running a test case.
    *
    * @param rule The applied rule.
    */
-  export function addAppliedRule(rule: sret.SpeechRule) {
+  export function addAppliedRule(rule: SpeechRule) {
     let cases = appliedRule.get(currentTestcase);
     if (!cases) {
       cases = [];
@@ -82,7 +85,7 @@ namespace AnalyticsTest {
    *
    * @param rules The list of applicable rules.
    */
-  export function addApplicableRules(rules: sret.SpeechRule[]) {
+  export function addApplicableRules(rules: SpeechRule[]) {
     let cases = applicableRules.get(currentTestcase);
     if (!cases) {
       cases = [];
@@ -111,9 +114,9 @@ namespace AnalyticsTest {
    */
   export function outputAllRules() {
     loadAllAppliedRules();
-    let ruleSets = AnalyticsTrie.getAllSets();
+    let ruleSets = AnalyticsUtil.getAllSets();
     for (let [name, obj] of Object.entries(ruleSets)) {
-      let rules = obj.map((x: sret.SpeechRule) => x.toString());
+      let rules = obj.map((x: SpeechRule) => x.toString());
       AnalyticsUtil.fileJson('allRules', rules.sort(), name);
       allRulesDifference(rules, name);
     }
@@ -183,7 +186,7 @@ namespace AnalyticsTest {
    * Outputs the unique applied rules for each test suite.
    */
   export function outputUniqueAppliedRules() {
-    let rules: sret.SpeechRule[] = [];
+    let rules: SpeechRule[] = [];
     for (let value of appliedRule.values()) {
       rules = rules.concat(value);
     }

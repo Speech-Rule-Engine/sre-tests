@@ -20,8 +20,11 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
 import {SpeechTest} from './speech_test';
+import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
+import AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
+import * as SpeechGeneratorUtil from '../../speech-rule-engine/js/speech_generator/speech_generator_util';
+import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
 
 export class CollapseTest extends SpeechTest {
 
@@ -74,21 +77,23 @@ export class CollapseTest extends SpeechTest {
    * @override
    */
   public getSpeech(mathMl: string) {
-    let mml = sre.DomUtil.parseInput(mathMl);
-    let stree = sre.Semantic.getTree(mml);
+    let mml = DomUtil.parseInput(mathMl);
+    let stree = Semantic.getTree(mml);
     let xml = stree.xml();
-    let node = sre.DomUtil.querySelectorAllByAttr(xml, 'ext-id')[0];
+    let node = DomUtil.querySelectorAllByAttr(xml, 'ext-id')[0];
     node.setAttribute('id', node.getAttribute('ext-id'));
-    sre.SpeechGeneratorUtil.connectAllMactions(mml, xml);
-    let descrs = sre.SpeechGeneratorUtil.computeSpeech(xml);
-    return sre.AuralRendering.getInstance().markup(descrs);
+    SpeechGeneratorUtil.connectAllMactions(mml, xml);
+    let descrs = SpeechGeneratorUtil.computeSpeech(xml);
+    return AuralRendering.markup(descrs);
   }
 
   /**
    * @override
    */
-  public method(...args: any[]) {
-    this.executeTest(args[0], args[1], args[2], args[3], args[4]);
+  public method() {
+    this.executeTest(
+      this.field('input'), this.field('expected'), this.field('preference'),
+      this.field('pre'), this.field('post'));
   }
 
 }

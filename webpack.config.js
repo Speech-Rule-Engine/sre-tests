@@ -31,19 +31,6 @@ let config = {
   mode: 'production'
 };
 
-let baseConfig = Object.assign({}, config, {
-  entry: path.resolve(__dirname, 'ts/index.ts'),
-  target:'node',
-  output: {
-    filename: 'sretest.js',
-    library: 'sretest',
-    libraryTarget: 'umd',
-    globalObject: 'this',
-    path: path.join(__dirname, 'dist'),
-  }
-});
-
-
 let harvestConfig = Object.assign({}, config, {
   entry: path.resolve(__dirname, 'ts/frontend/fire_frontend.ts'),
   // devtool: false,
@@ -57,4 +44,4 @@ let harvestConfig = Object.assign({}, config, {
   }
 });
 
-module.exports = [baseConfig, harvestConfig]; 
+module.exports = [harvestConfig]; 

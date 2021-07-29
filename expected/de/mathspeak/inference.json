@@ -2,7 +2,8 @@
   "name": "GermanMathspeakInference",
   "domain": "mathspeak",
   "locale": "de",
-  "factory": "speech",
+  "modality": "speech",
+  "factory": "summary",
   "base": "input/common/inference.json",
   "information": "German Mathspeak Inference rules.",
   "active": "InferenceGerman",
@@ -24,7 +25,7 @@
       "expected": "Axiom großes A"
     },
     "EmptyAxiom": {
-      "expected": "Axiom"
+      "expected": "leeres Axiom"
     },
     "RightLabel_0": {
       "expected": "Schlussregel Regel großes N mit Folgerung großes X aus 1 Prämisse"
@@ -43,6 +44,15 @@
     },
     "LeftLabel_2": {
       "expected": "Schlussregel Regel großes N mit Folgerung großes X aus 3 Prämissen"
+    },
+    "Premises_0": {
+      "expected": "1. Prämisse  Axiom großes A"
+    },
+    "Premises_1": {
+      "expected": "1. Prämisse  Axiom großes A 2. Prämisse  Axiom großes B"
+    },
+    "Premises_2": {
+      "expected": "1. Prämisse  Axiom großes A 2. Prämisse  Axiom großes B 3. Prämisse  Axiom großes C"
     }
   }
 }

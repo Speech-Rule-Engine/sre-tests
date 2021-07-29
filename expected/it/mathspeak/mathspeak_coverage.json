@@ -133,6 +133,11 @@
     },
     "SubBaseMultirel_sbrief": {
       "expected": "c 1 h sub 4 meno 2 s base minore o uguale a frazione 1 fratto 2 T maiuscola fine frazione uguale a c 2 h sub 4 meno 2 s"
+    },
+    "_comment_": "Italian Only",
+    "SquaredFemale": {
+      "input": "<mrow><msup><mi>f</mi><mn>2</mn></msup><mo>(</mo><mi>x</mi><mo>)</mo></mrow>",
+      "expected": "f quadrata parentesi tonda aperta x parentesi tonda chiusa"
     }
   }
 }

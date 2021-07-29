@@ -18,8 +18,18 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
+import {Grammar} from '../../speech-rule-engine/js/rule_engine/grammar';
+import {MathMap} from '../../speech-rule-engine/js/speech_rules/math_map';
+import * as AlphabetGenerator from '../../speech-rule-engine/js/speech_rules/alphabet_generator';
+import * as System from '../../speech-rule-engine/js/common/system';
+import {Variables} from '../../speech-rule-engine/js/common/variables';
+import * as BaseUtil from '../../speech-rule-engine/js/common/base_util';
+import SystemExternal from '../../speech-rule-engine/js/common/system_external';
+import AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
+import {AuditoryDescription} from '../../speech-rule-engine/js/audio/auditory_description';
+import * as SemanticUtil from '../../speech-rule-engine/js/semantic_tree/semantic_util';
+
 import * as fs from 'fs';
-import {sre} from '../base/test_external';
 import * as tu from '../base/test_util';
 
 // All files that are generated.
@@ -58,14 +68,13 @@ function loadBaseFile(file: string): string[] {
  */
 function getCharOutput(
   dom: string, modality: string, loc: string, style: string, char: string) {
-  let aural = sre.AuralRendering.getInstance();
-  sre.System.getInstance().setupEngine({
+  System.setupEngine({
     domain: dom, modality: modality, locale: loc, style: style});
   // let grammar = {translate: true};
   let descrs = [
-    sre.AuditoryDescription.create({text: char},
-                                   {adjust: true, translate: true})];
-  return aural.finalize(aural.markup(descrs));
+    AuditoryDescription.create({text: char},
+                               {adjust: true, translate: true})];
+  return AuralRendering.finalize(AuralRendering.markup(descrs));
 }
 
 /**
@@ -77,9 +86,9 @@ function getCharOutput(
  */
 function getUnitOutput(
   dom: string, modality: string, loc: string, style: string, unit: string) {
-  sre.Grammar.getInstance().pushState({annotation: 'unit'});
+  Grammar.getInstance().pushState({annotation: 'unit'});
   let output = getCharOutput(dom, modality, loc, style, unit);
-  sre.Grammar.getInstance().popState();
+  Grammar.getInstance().popState();
   return output;
 }
 
@@ -173,9 +182,9 @@ export function testFromBase(locale: string, kind: SymbolType): tu.JsonFile {
  * @param kind
  */
 export function testFromLocale(locale: string, kind: SymbolType): tu.JsonFile {
-  let file = sre.BaseUtil.makePath(sre.SystemExternal.jsonPath) +
+  let file = BaseUtil.makePath(SystemExternal.jsonPath) +
       locale + '.js';
-  let json = JSON.parse(sre.MathMap.loadFile(file));
+  let json = JSON.parse(MathMap.loadFile(file));
   let keys = getNamesFor(json, kind);
   return testOutput(locale, keys, isUnitTest(kind));
 }
@@ -214,9 +223,9 @@ export function testOutputFromExtras(
  * @param kind
  */
 export function testFromExtras(locale: string, kind: SymbolType): tu.JsonFile {
-  let file = sre.BaseUtil.makePath(sre.SystemExternal.jsonPath) +
+  let file = BaseUtil.makePath(SystemExternal.jsonPath) +
       locale + '.js';
-  let json = JSON.parse(sre.MathMap.loadFile(file));
+  let json = JSON.parse(MathMap.loadFile(file));
   let extras = getExtrasFor(locale, json, kind);
   return testExtras(locale, extras, kind);
 }
@@ -364,9 +373,9 @@ export function testOutputFromBoth(
 export function splitNemethForFire(dir: string, json: tu.JsonFile) {
   let tests = json.tests as tu.JsonTests;
   splitNemethByAlphabet(dir, tests);
-  let file = sre.BaseUtil.makePath(sre.SystemExternal.jsonPath) +
+  let file = BaseUtil.makePath(SystemExternal.jsonPath) +
     'nemeth.js';
-  let locale = JSON.parse(sre.MathMap.loadFile(file));
+  let locale = JSON.parse(MathMap.loadFile(file));
   splitNemethByFile(dir, locale, tests, 'math_symbols');
   splitNemethByFile(dir, locale, tests, 'latin-lower-phonetic');
   splitNemethByFile(dir, locale, tests, 'math_geometry');
@@ -396,16 +405,16 @@ function splitNemethByFile(dir: string, locale: tu.JsonTests,
  * @param json
  */
 function splitNemethByAlphabet(dir: string, json: tu.JsonTests) {
-  let intervals = sre.AlphabetGenerator.INTERVALS;
+  let intervals = AlphabetGenerator.INTERVALS;
   let byFonts: {[name: string]: tu.JsonTests} = {};
-  for (let value of Object.values(sre.AlphabetGenerator.Font)) {
+  for (let value of Object.values(AlphabetGenerator.Font)) {
     byFonts[value as string] = {};
   }
-  for (let value of Object.values(sre.AlphabetGenerator.Embellish)) {
+  for (let value of Object.values(AlphabetGenerator.Embellish)) {
     byFonts[value as string] = {};
   }
   for (let i = 0, int: tu.JsonTest; int = intervals[i]; i++) {
-    let keys = sre.AlphabetGenerator.makeInterval(int.interval, int.subst);
+    let keys = AlphabetGenerator.makeInterval(int.interval, int.subst);
     splitOffKeys(json, keys, byFonts[int.font]);
   }
   for (let [key, values] of Object.entries(byFonts)) {
@@ -425,7 +434,7 @@ function splitNemethByAlphabet(dir: string, json: tu.JsonTests) {
 function splitOffKeys(
   json: tu.JsonTests, keys: string[], result: tu.JsonTests = {}) {
   keys.forEach(function(x: string) {
-    let letter = sre.SemanticUtil.numberToUnicode(parseInt(x, 16));
+    let letter = SemanticUtil.numberToUnicode(parseInt(x, 16));
     result[letter] = json[letter];
     delete json[letter];
   });
@@ -574,7 +583,7 @@ export function diffBaseVsLocale(
  * @param dir
  */
 export function allTests(dir = '/tmp/symbols') {
-  for (let loc of sre.Variables.LOCALES) {
+  for (let loc of Variables.LOCALES) {
     for (const kind of Object.values(SymbolType)) {
       testOutputFromBoth(loc, kind, dir);
       testOutputFromExtras(loc, kind, dir);

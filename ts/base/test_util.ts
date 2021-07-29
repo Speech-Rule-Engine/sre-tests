@@ -18,9 +18,8 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
-import {baseDir} from './test_external';
 
-let TestDir = baseDir;
+let TestDir = __dirname.replace(/(dist|js\/base)$/, '');
 
 export const TestPath: {[key: string]: string} = {
   INPUT: TestDir + 'input/',
@@ -48,7 +47,7 @@ export class TestError extends Error {
    * @param value An arbitrary error value to propagate.
    */
   public constructor(public message: string, public value: any) {
-    super();
+    super(value);
   }
 }
 
@@ -217,7 +216,7 @@ export namespace TestUtil {
     if (fs.existsSync(dir) && fs.lstatSync(dir).isDirectory()) {
       let files = fs.readdirSync(dir);
       files.forEach(
-        x => readDir_(dir ? path.join(dir, x) : x, result));
+        (x: string) => readDir_(dir ? path.join(dir, x) : x, result));
       return;
     }
     if (dir.match(/\.json$/)) {

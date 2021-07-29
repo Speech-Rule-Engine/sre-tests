@@ -20,7 +20,9 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
+import {ProcessorFactory} from '../../speech-rule-engine/js/common/processors';
+import {Key} from './keycodes';
+
 import {SpeechTest} from './speech_test';
 
 export class SummaryTest extends SpeechTest {
@@ -62,18 +64,18 @@ export class SummaryTest extends SpeechTest {
     if (!this.steps) {
       return super.getSpeech(mathMl);
     }
-    sre.ProcessorFactory.process('walker', mathMl);
+    ProcessorFactory.process('walker', mathMl);
     this.steps.forEach(step =>
-      sre.ProcessorFactory.process('move', sre.EventUtil.KeyCode[step]));
-    return sre.ProcessorFactory.process('move', sre.EventUtil.KeyCode['X']);
+      ProcessorFactory.process('move', Key.get(step) as any));
+    return ProcessorFactory.process('move', Key.get('RETURN') as any) as string;
   }
 
   /**
    * @override
    */
-  public method(...args: any[]) {
-    this.steps = args[3];
-    super.method(args[0], args[1], args[2]);
+  public method() {
+    this.steps = this.field('steps');
+    super.method();
     this.steps = null;
   }
 }

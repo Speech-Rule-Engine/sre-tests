@@ -18,10 +18,15 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
+import {SemanticTree} from '../../speech-rule-engine/js/semantic_tree/semantic_tree';
+import {SemanticNode} from '../../speech-rule-engine/js/semantic_tree/semantic_node';
+import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
+import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
+import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
+
+
 import * as tu from '../base/test_util';
 import * as TestFactory from '../classes/test_factory';
-import * as sret from '../typings/sre';
 import {addActual} from './fill_tests';
 import {Tex2Mml} from './tex_transformer';
 import {AbstractTransformer, Transformer} from './transformers';
@@ -161,6 +166,87 @@ export function transformTestsFile(file: string,
   tu.TestUtil.saveJson(file, json);
 }
 
+/**
+ * Triples tests in a json file for all three Mathspeak preferences.
+ *
+ * @param input Input filename.
+ * @param output Output filename.
+ */
+export function generateMathspeakTest(input: string, output: string) {
+  let json = tu.TestUtil.loadJson(input);
+  let tests = json.tests;
+  json.tests = {};
+  for (let [key, entry] of Object.entries(tests)) {
+    json.tests[`${key}_default`] =
+      Object.assign({'preference': 'default'}, entry);
+    json.tests[`${key}_brief`] =
+      Object.assign({'preference': 'brief'}, entry);
+    json.tests[`${key}_sbrief`] =
+      Object.assign({'preference': 'sbrief'}, entry);
+  }
+  tu.TestUtil.saveJson(output, json);
+}
+
+/**
+ * Duplicates default tests for a new preference.
+ *
+ * @param input Input filename.
+ * @param preference The preference string.
+ */
+export function generatePreferenceTest(input: string, preference: string) {
+  if (!preference) {
+    return;
+  }
+  let filename = tu.TestUtil.fileExists(input, tu.TestPath.INPUT);
+  let json = tu.TestUtil.loadJson(filename);
+  let tests = json.tests as tu.JsonTests;
+  for (let [key, entry] of Object.entries(tests)) {
+    if (key.match(/_default$/)) {
+      let newKey = key.replace(/default$/, preference);
+      if (tests[newKey]) {
+        continue;
+      }
+      let newEntry = Object.assign({}, entry);
+      newEntry.preference = preference;
+      tests[newKey] = newEntry;
+    }
+  }
+  tu.TestUtil.saveJson(filename, json);
+}
+
+/**
+ * Generates a list of tests to be excluded by preference ending.
+ *
+ * @param input Input filename.
+ * @param preferences The list of preference strings.
+ * @param output An optional output file where the exclusion list will be
+ *    updated.
+ */
+export function generateExclusionList(input: string, preferences: string[],
+                                      output: string = '') {
+  let filename = tu.TestUtil.fileExists(input, tu.TestPath.INPUT);
+  let json = tu.TestUtil.loadJson(filename);
+  let result = [];
+  for (let pref of preferences) {
+    for (let key of Object.keys(json.tests)) {
+      if (key.match(new RegExp(`_${pref}$`))) {
+        result.push(key);
+      }
+    }
+  }
+  if (!output) {
+    return result;
+  }
+  let outfile = tu.TestUtil.fileExists(output, tu.TestPath.EXPECTED);
+  if (!outfile) {
+    return result;
+  }
+  let outjson = tu.TestUtil.loadJson(outfile);
+  outjson.exclude = result;
+  tu.TestUtil.saveJson(outfile, outjson);
+  return result;
+}
+
 /* ********************************************************** */
 /*
  * Splitting input files from expected into base files.
@@ -226,8 +312,8 @@ export class SemanticTransformer extends AbstractTransformer {
    * @override
    */
   public via(src: string) {
-    return sre.Semantic.getTreeFromString(
-      sre.Enrich.prepareMmlString(src)).xml().toString();
+    return Semantic.getTreeFromString(
+      Enrich.prepareMmlString(src)).xml().toString();
   }
 
 }
@@ -238,7 +324,7 @@ export class SemanticTransformer extends AbstractTransformer {
 export class Splitter {
 
   constructor(public name: string,
-              public pred: (n: sret.SemanticNode) => boolean) {}
+              public pred: (n: SemanticNode) => boolean) {}
 
   /**
    * @param tests
@@ -247,8 +333,8 @@ export class Splitter {
   public split(tests: tu.JsonTests): tu.JsonTests {
     let result: tu.JsonTests = {};
     for (let [key, test] of Object.entries(tests)) {
-      let stree = sre.SemanticTree.fromXml(
-        sre.DomUtil.parseInput(test.stree)).root;
+      let stree = SemanticTree.fromXml(
+        DomUtil.parseInput(test.stree)).root;
       if (this.pred(stree)) {
         result[key] = test;
         delete tests[key];
@@ -267,45 +353,45 @@ export namespace SplitterFactory {
     return mapping.get(name);
   }
 
-  export function set(name: string, pred: (n: sret.SemanticNode) => boolean) {
+  export function set(name: string, pred: (n: SemanticNode) => boolean) {
     mapping.set(name, new Splitter(name, pred));
   }
 
-  SplitterFactory.set('number', (x: sret.SemanticNode) =>
+  SplitterFactory.set('number', (x: SemanticNode) =>
     x.type === 'number' || (x.type === 'prefixop' && x.role === 'negative'));
-  SplitterFactory.set('letter', (x: sret.SemanticNode) =>
+  SplitterFactory.set('letter', (x: SemanticNode) =>
     x.type === 'identifier' || x.type === 'overscore' ||
     ((x.type === 'subscript' || x.type === 'superscript') &&
       !!x.role.match(/letter/)));
-  SplitterFactory.set('script', (x: sret.SemanticNode) =>
+  SplitterFactory.set('script', (x: SemanticNode) =>
         x.type === 'subscript' || x.type === 'superscript');
-  SplitterFactory.set('appl', (x: sret.SemanticNode) => x.type === 'appl');
-  SplitterFactory.set('function', (x: sret.SemanticNode) =>
+  SplitterFactory.set('appl', (x: SemanticNode) => x.type === 'appl');
+  SplitterFactory.set('function', (x: SemanticNode) =>
     x.type === 'relseq' && x.role === 'equality' &&
     x.childNodes.some(y => y.role === 'simple function'));
-  SplitterFactory.set('set', (x: sret.SemanticNode) =>
+  SplitterFactory.set('set', (x: SemanticNode) =>
     x.type === 'relseq' && x.role === 'equality' &&
     x.childNodes.some(y => y.role.match(/^set/)));
-  SplitterFactory.set('equality', (x: sret.SemanticNode) =>
+  SplitterFactory.set('equality', (x: SemanticNode) =>
     (x.type === 'relseq' || x.type === 'multirel') && x.role === 'equality');
-  SplitterFactory.set('element', (x: sret.SemanticNode) =>
+  SplitterFactory.set('element', (x: SemanticNode) =>
     x.textContent === '∈' || x.textContent === '∉' || (
       x.type === 'punctuated' && x.role === 'sequence' &&
         (x.childNodes[x.childNodes.length - 1].textContent === '∈' ||
           x.childNodes[x.childNodes.length - 1].textContent === '∉')));
-  SplitterFactory.set('inequality', (x: sret.SemanticNode) =>
+  SplitterFactory.set('inequality', (x: SemanticNode) =>
     (x.type === 'relseq' || x.type === 'multirel') && x.role === 'inequality');
-  SplitterFactory.set('sum', (x: sret.SemanticNode) =>
+  SplitterFactory.set('sum', (x: SemanticNode) =>
     x.type === 'infixop' &&
     (x.role === 'addition' || x.role === 'subtraction'));
   SplitterFactory.set(
-    'sequence', (x: sret.SemanticNode) => x.type === 'punctuated');
+    'sequence', (x: SemanticNode) => x.type === 'punctuated');
   SplitterFactory.set(
-    'fenced', (x: sret.SemanticNode) => x.type === 'fenced');
+    'fenced', (x: SemanticNode) => x.type === 'fenced');
   SplitterFactory.set(
-    'prefix',  (x: sret.SemanticNode) => !!x.querySelectorAll(
-      (y: sret.SemanticNode) => y.role === 'prefix function').length);
-  SplitterFactory.set('simpequ', (x: sret.SemanticNode) =>
+    'prefix',  (x: SemanticNode) => !!x.querySelectorAll(
+      (y: SemanticNode) => y.role === 'prefix function').length);
+  SplitterFactory.set('simpequ', (x: SemanticNode) =>
     x.type === 'relseq' && x.role === 'equality' &&
     x.childNodes.every(y => y.type === 'identifier' || y.type === 'number'));
 }
@@ -545,8 +631,8 @@ export class PretextGenerator extends AbstractGenerator {
    */
   private static addPretextReference(orig: tu.JsonTest[], ref: tu.JsonTests) {
     for (let test of orig) {
-      let stree = sre.Semantic.getTreeFromString(
-        sre.Enrich.prepareMmlString(test.input)).xml().toString();
+      let stree = Semantic.getTreeFromString(
+        Enrich.prepareMmlString(test.input)).xml().toString();
       let reference = ref[stree];
       if (reference) {
         test.reference = reference;

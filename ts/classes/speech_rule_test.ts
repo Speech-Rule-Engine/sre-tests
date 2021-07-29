@@ -19,18 +19,18 @@
  * @author sorge@google.com (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
 import {AbstractJsonTest} from './abstract_test';
+import {Component, Action} from '../../speech-rule-engine/js/rule_engine/speech_rule';
 
 export class SpeechRuleTest extends AbstractJsonTest {
 
-  private _fromString = new Map([
-    ['Grammar', sre.SpeechRule.Component.grammarFromString],
-    ['Attributes', sre.SpeechRule.Component.attributesFromString],
-    ['Components', sre.SpeechRule.Component.fromString],
-    ['Actions', sre.SpeechRule.Action.fromString],
+  private _fromString: Map<string, (p1: string) => any> = new Map([
+    ['Grammar', Component.grammarFromString as (p1: string) => any],
+    ['Attributes', Component.attributesFromString as (p1: string) => any],
+    ['Components', Component.fromString as (p1: string) => any],
+    ['Actions', Action.fromString as (p1: string) => any],
     ['AttributesList', (inp: string) =>
-      sre.SpeechRule.Component.fromString(inp).getAttributes()]
+      Component.fromString(inp).getAttributes()]
   ],
   );
 
@@ -46,9 +46,7 @@ export class SpeechRuleTest extends AbstractJsonTest {
    */
   public constructor() {
     super();
-    this.pickFields.push('kind');
-    this.pickFields.push('string');
-    this.pickFields.push('pick');
+    this.pickFields.push('kind', 'string', 'pick');
   }
 
   /**
@@ -66,20 +64,21 @@ export class SpeechRuleTest extends AbstractJsonTest {
   /**
    * @override
    */
-  public method(...args: any[]) {
-    let fromString = this._fromString.get(args[2]);
+  public method() {
+    let fromString = this._fromString.get(this.field('kind'));
     if (!fromString) {
       this.assert.fail();
     }
-    let received = this.pickComponent(fromString(args[0]), args[4]);
-    if (args[3]) {
-      let toString = this._toString.get(args[3]);
+    let received = this.pickComponent(fromString(this.field('input')),
+                                      this.field('pick'));
+    if (this.field('string')) {
+      let toString = this._toString.get(this.field('string'));
       if (!toString) {
         this.assert.fail();
       }
-      this.assert.equal(toString(received), args[1]);
+      this.assert.equal(toString(received), this.field('expected'));
     } else {
-      this.assertStructEquals(received, args[1]);
+      this.assertStructEquals(received, this.field('expected'));
     }
   }
 

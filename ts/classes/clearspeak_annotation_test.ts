@@ -18,7 +18,9 @@
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import {sre} from '../base/test_external';
+import {SemanticAnnotations} from '../../speech-rule-engine/js/semantic_tree/semantic_annotations';
+import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
+
 import {AbstractJsonTest} from './abstract_test';
 
 export class ClearspeakAnnotationTest extends AbstractJsonTest {
@@ -32,7 +34,7 @@ export class ClearspeakAnnotationTest extends AbstractJsonTest {
    * The clearspeak annotator to test.
    */
   public annotator: any =
-    sre.SemanticAnnotations.getInstance().annotators['clearspeak:simple'];
+    SemanticAnnotations.annotators['clearspeak:simple'];
 
   /**
    * Tests simple annotator for Clearspeak.
@@ -43,7 +45,7 @@ export class ClearspeakAnnotationTest extends AbstractJsonTest {
   public executeTest(mml: string, expected: boolean) {
     let mathMl = '<math xmlns="http://www.w3.org/1998/Math/MathML">' +
       mml + '</math>';
-    let semantic = sre.Semantic.getTreeFromString(mathMl);
+    let semantic = Semantic.getTreeFromString(mathMl);
     this.annotator.annotate(semantic.root);
     this.assert.equal(semantic.root.hasAnnotation('clearspeak', 'simple'),
                       expected);
@@ -52,7 +54,7 @@ export class ClearspeakAnnotationTest extends AbstractJsonTest {
   /**
    * @override
    */
-  public method(...args: any[]) {
-    this.executeTest(args[0], args[1]);
+  public method() {
+    this.executeTest(this.field('input'), this.field('expected'));
   }
 }

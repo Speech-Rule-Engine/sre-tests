@@ -20,8 +20,8 @@ import * as process from 'process';
 import {ExampleFiles} from '../classes/abstract_examples';
 import * as TestFactory from '../classes/test_factory';
 import {TestRunner} from './runner';
-import {sre} from './test_external';
 import {TestUtil} from './test_util';
+import {Debugger} from '../../speech-rule-engine/js/common/debugger';
 
 export class Tests {
 
@@ -161,7 +161,7 @@ export class Tests {
   public run() {
     ExampleFiles.noOutput = !!this.environment['NOOUTPUT'];
     if (this.environment['DEBUG']) {
-      sre.Debugger.getInstance().init();
+      Debugger.getInstance().init();
     }
     let timeIn = (new Date()).getTime();
     for (let i = 0, test; test = this.testList[i]; i++) {

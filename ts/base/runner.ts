@@ -132,8 +132,9 @@ export class TestRunner {
       if (!test.test) {
         continue;
       }
+      testcase.pick(test);
       this.executeJsonTest(
-        test.name, testcase.method.bind(testcase), testcase.pick(test));
+        test.name, testcase.method.bind(testcase));
     }
     testcase.tearDownTest();
   }
@@ -146,8 +147,8 @@ export class TestRunner {
    * @param args A list of arguments.
    */
   public executeJsonTest(name: string,
-                         func: (...p1: string[]) => any, args: string[]) {
-    this.executeTest(name, () => func.apply(null, args));
+                         func: () => any) {
+    this.executeTest(name, func());
   }
 
   /**
