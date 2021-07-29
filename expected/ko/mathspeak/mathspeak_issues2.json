@@ -12,13 +12,13 @@
       "expected": "루트시작 a 루트끝"
     },
     "MathspeakRoots_1": {
-      "expected": "제곱 루트시작 a 루트끝"
+      "expected": "2 제곱근 루트시작 a 루트끝"
     },
     "MathspeakRoots_2": {
-      "expected": "세제곱 루트시작 a 루트끝"
+      "expected": "3 제곱근 루트시작 a 루트끝"
     },
     "MathspeakRoots_3": {
-      "expected": "네제곱 루트시작 a 루트끝"
+      "expected": "4 제곱근 루트시작 a 루트끝"
     },
     "MathspeakRoots_4": {
       "expected": "중첩루트시작 루트시작 a 루트끝 중첩루트끝"
@@ -27,34 +27,34 @@
       "expected": "이중중첩루트시작 중첩루트시작 루트시작 a 루트끝 중첩루트끝 이중중첩루트끝"
     },
     "MathspeakRoots_6": {
-      "expected": "NestedRootIndex 2 중첩루트시작 RootIndex 2 루트시작 a 루트끝 중첩루트끝"
+      "expected": "2 중첩제곱근 중첩루트시작 2 제곱근 루트시작 a 루트끝 중첩루트끝"
     },
     "MathspeakRoots_7": {
-      "expected": "NestedTwiceRootIndex 2 NestedTwice루트시작 NestedRootIndex 2 Nested루트시작 RootIndex 2 루트시작 a 루트끝 Nested루트끝 NestedTwice루트끝"
+      "expected": "2 이중중첩제곱근 이중중첩루트시작 2 중첩제곱근 중첩루트시작 2 제곱근 루트시작 a 루트끝 중첩루트끝 이중중첩루트끝"
     },
     "MathspeakRoots_8": {
-      "expected": "NestedRootIndex 3 Nested루트시작 RootIndex 3 루트시작 a 루트끝 Nested루트끝"
+      "expected": "3 중첩제곱근 중첩루트시작 3 제곱근 루트시작 a 루트끝 중첩루트끝"
     },
     "MathspeakRoots_9": {
-      "expected": "NestedTwiceRootIndex 3 NestedTwice루트시작 NestedRootIndex 3 Nested루트시작 RootIndex 3 루트시작 a 루트끝 Nested루트끝 NestedTwice루트끝"
+      "expected": "3 이중중첩제곱근 이중중첩루트시작 3 중첩제곱근 중첩루트시작 3 제곱근 루트시작 a 루트끝 중첩루트끝 이중중첩루트끝"
     },
     "MathspeakRoots_10": {
-      "expected": "NestedRootIndex 4 Nested루트시작 RootIndex 4 루트시작 a 루트끝 Nested루트끝"
+      "expected": "4 중첩제곱근 중첩루트시작 4 제곱근 루트시작 a 루트끝 중첩루트끝"
     },
     "MathspeakRoots_11": {
-      "expected": "NestedTwiceRootIndex 4 NestedTwice루트시작 NestedRootIndex 4 Nested루트시작 RootIndex 4 루트시작 a 루트끝 Nested루트끝 NestedTwice루트끝"
+      "expected": "4 이중중첩제곱근 이중중첩루트시작 4 중첩제곱근 중첩루트시작 4 제곱근 루트시작 a 루트끝 중첩루트끝 이중중첩루트끝"
     },
     "MathspeakRoots_12": {
-      "expected": "NestedTwiceRootIndex 2 NestedTwice루트시작 NestedRootIndex 3 Nested루트시작 RootIndex 4 루트시작 a 루트끝 Nested루트끝 NestedTwice루트끝"
+      "expected": "2 이중중첩제곱근 이중중첩루트시작 3 중첩제곱근 중첩루트시작 4 제곱근 루트시작 a 루트끝 중첩루트끝 이중중첩루트끝"
     },
     "MathspeakRoots_13": {
-      "expected": "NestedTwiceRootIndex 4 NestedTwice루트시작 NestedRootIndex 3 Nested루트시작 RootIndex 2 루트시작 a 루트끝 Nested루트끝 NestedTwice루트끝"
+      "expected": "4 이중중첩제곱근 이중중첩루트시작 3 중첩제곱근 중첩루트시작 2 제곱근 루트시작 a 루트끝 중첩루트끝 이중중첩루트끝"
     },
     "HtmlEntities_0": {
-      "expected": "less than"
+      "expected": "작다"
     },
     "HtmlEntities_1": {
-      "expected": "greater than"
+      "expected": "크다"
     },
     "HtmlEntities_2": {
       "expected": "n"
@@ -111,13 +111,13 @@
       "expected": "빼기 분수시작 18 분의 5.2 분수끝"
     },
     "TrivialStuff_0": {
-      "expected": "a 등호 b"
+      "expected": "a 같다 b"
     },
     "TrivialStuff_1": {
-      "expected": "큰 따옴표"
+      "expected": "큰따옴표"
     },
     "TrivialStuff_2": {
-      "expected": "큰 따옴표 x 큰 따옴표"
+      "expected": "큰따옴표 x 큰따옴표"
     },
     "TrivialStuff_3": {
       "expected": "프라임"
@@ -174,16 +174,16 @@
       "expected": "배열시작 첫번째 행 첫번째 열 a 두번째 열 c 두번째 행 첫번째 열 b 두번째 열 d 배열끝"
     },
     "RelationsWithEmpty_0": {
-      "expected": "less than or equals 2"
+      "expected": "작거나 같다 2"
     },
     "RelationsWithEmpty_1": {
-      "expected": "등호 2 등호"
+      "expected": "같다 2 같다"
     },
     "RelationsWithEmpty_2": {
-      "expected": "less than or equals 2 등호"
+      "expected": "작거나 같다 2 같다"
     },
     "RelationsWithEmpty_3": {
-      "expected": "배열시작 첫번째 행 첫번째 열 1 두번째 열 less than or equals 2 배열끝"
+      "expected": "배열시작 첫번째 행 첫번째 열 1 두번째 열 작거나 같다 2 배열끝"
     },
     "EncloseGeneral": {
       "expected": "인클로즈시작 동그라미 a 인클로즈끝"
@@ -220,7 +220,7 @@
       "expected": "편미분 편미분 x"
     },
     "Issue320_6": {
-      "expected": "왼쪽 괄호 분수시작 편미분 x 제곱 분의 편미분 제곱 분수끝 더하기 분수시작 편미분 y 제곱 분의 편미분 제곱 분수끝 오른쪽 괄호 절댓값시작 파이 왼쪽 괄호 x 더하기 기본 i y 오른쪽 괄호 절댓값끝 제곱 등호 0"
+      "expected": "왼쪽 괄호 분수시작 편미분 x 제곱 분의 편미분 제곱 분수끝 더하기 분수시작 편미분 y 제곱 분의 편미분 제곱 분수끝 오른쪽 괄호 절댓값시작 파이 왼쪽 괄호 x 더하기 기본 i y 오른쪽 괄호 절댓값끝 제곱 같다 0"
     },
     "LatinMathfonts_0": {
       "expected": "프락투어 대문자 a"
@@ -286,7 +286,7 @@
       "expected": "x 트리플 프라임"
     },
     "Prime_3": {
-      "expected": "x 쿼드러플 프라임"
+      "expected": "x 쿼드 프라임"
     },
     "Prime_4": {
       "expected": "x 프라임"
@@ -373,13 +373,13 @@
       "expected": "시그마 합 하단첨자 n 첨자끝 a"
     },
     "Issue_442_0": {
-      "expected": "9 나누기 3 not equals 9 곱하기 3"
+      "expected": "9 나누기 3 같지 않다 9 곱하기 3"
     },
     "Issue_442_1": {
       "expected": "9 나누기 3"
     },
     "Issue_442_2": {
-      "expected": "9 나누기 3 not equals 9 곱하기 3"
+      "expected": "9 나누기 3 같지 않다 9 곱하기 3"
     },
     "Issue_442_3": {
       "expected": "9 나누기 3"
