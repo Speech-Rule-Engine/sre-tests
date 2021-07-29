@@ -25,7 +25,7 @@ import {AbstractJsonTest} from './abstract_test';
 
 import {ApiTest} from './api_test';
 import {ClearspeakAnnotationTest} from './clearspeak_annotation_test';
-import {ClearspeakTest} from './clearspeak_test';
+import {BrailleLayoutTest, ClearspeakTest} from './clearspeak_test';
 import {CollapseTest} from './collapse_test';
 import {ColorPickerTest} from './color_picker_test';
 import {HtmlTest, XpathTest} from './dom_test';
@@ -41,6 +41,7 @@ import {WalkerTest} from './walker_test';
 
 const map = new Map<string, any>([
   ['api', ApiTest],
+  ['braille2D', BrailleLayoutTest],
   ['clearspeak', ClearspeakTest],
   ['clearspeakAnnotation', ClearspeakAnnotationTest],
   ['collapse', CollapseTest],

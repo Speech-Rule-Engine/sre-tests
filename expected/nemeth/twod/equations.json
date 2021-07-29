@@ -1,0 +1,19 @@
+{
+  "factory": "braille2D",
+  "name": "Nemeth2dMatricesTests",
+  "information": "Two Dimensional rules for matrix structures.",
+  "locale": "nemeth",
+  "domain": "default",
+  "style": "default",
+  "modality": "braille",
+  "tests": {
+    "aata-8.3.11": {
+      "input": "<math><mtable><mtr><mtd><msub><mrow><mrow><mi mathvariant=\"bold\">e</mi></mrow></mrow><mn>1</mn></msub></mtd><mtd><mi></mi><mo>=</mo><mo>(</mo><mn>100</mn><mo>&#x22EF;</mo><mn>00</mn><msup><mo>)</mo><mtext>t</mtext></msup></mtd></mtr><mtr><mtd><msub><mrow><mrow><mi mathvariant=\"bold\">e</mi></mrow></mrow><mn>2</mn></msub></mtd><mtd><mi></mi><mo>=</mo><mo>(</mo><mn>010</mn><mo>&#x22EF;</mo><mn>00</mn><msup><mo>)</mo><mtext>t</mtext></msup></mtd></mtr><mtr><mtd></mtd><mtd><mi></mi><mrow><mo>&#x22EE;</mo></mrow></mtd></mtr><mtr><mtd><msub><mrow><mrow><mi mathvariant=\"bold\">e</mi></mrow></mrow><mi>n</mi></msub></mtd><mtd><mi></mi><mo>=</mo><mo>(</mo><mn>000</mn><mo>&#x22EF;</mo><mn>01</mn><msup><mo>)</mo><mtext>t</mtext></msup></mtd></mtr></mtable></math>",
+      "expected": "⠸⠰⠑⠂  ⠀⠨⠅⠀⠷⠂⠴⠴⠀⠄⠄⠄⠀⠴⠴⠾⠘⠞⠐\n⠸⠰⠑⠆  ⠀⠨⠅⠀⠷⠴⠂⠴⠀⠄⠄⠄⠀⠴⠴⠾⠘⠞⠐\n⠄⠄⠄   \n⠸⠰⠑⠰⠝⠐⠀⠨⠅⠀⠷⠴⠴⠴⠀⠄⠄⠄⠀⠴⠂⠾⠘⠞"
+    },
+    "aata-8.3.8": {
+      "input": "<math><mtable><mtr><mtd><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><msub><mi>x</mi><mn>3</mn></msub><mo>+</mo><msub><mi>x</mi><mn>4</mn></msub></mtd><mtd><mi></mi><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><msub><mi>x</mi><mn>5</mn></msub></mtd><mtd><mi></mi><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>3</mn></msub><mo>+</mo><msub><mi>x</mi><mn>6</mn></msub></mtd><mtd><mi></mi><mo>=</mo><mn>0</mn><mtext>.</mtext></mtd></mtr></mtable></math>",
+      "expected": "⠭⠆⠬⠭⠒⠬⠭⠲⠀⠨⠅⠀⠼⠴ \n⠭⠂⠬⠭⠆⠬⠭⠢⠀⠨⠅⠀⠼⠴ \n⠭⠂⠬⠭⠒⠬⠭⠖⠀⠨⠅⠀⠼⠴⠨"
+    }
+  }
+}
