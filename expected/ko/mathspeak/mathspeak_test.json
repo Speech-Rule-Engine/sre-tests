@@ -9,13 +9,13 @@
   "exclude": [],
   "tests": {
     "Sample_1_1_1_default": {
-      "expected": "파이 almost 같다 3.14159"
+      "expected": "파이 거의 같다 3.14159"
     },
     "Sample_1_1_1_brief": {
-      "expected": "파이 almost 같다 3.14159"
+      "expected": "파이 거의 같다 3.14159"
     },
     "Sample_1_1_1_sbrief": {
-      "expected": "파이 almost 같다 3.14159"
+      "expected": "파이 거의 같다 3.14159"
     },
     "Sample_1_1_2_default": {
       "expected": "102 더하기 2,214 더하기 15 같다 2,331"
@@ -72,13 +72,13 @@
       "expected": "수 t 2 e 4"
     },
     "Sample_1_4_2_default": {
-      "expected": "수 number sign f f 0 0 0 0"
+      "expected": "수 숫자 기호 f f 0 0 0 0"
     },
     "Sample_1_4_2_brief": {
-      "expected": "수 num sign f f 0 0 0 0"
+      "expected": "수 숫자 기호 f f 0 0 0 0"
     },
     "Sample_1_4_2_sbrief": {
-      "expected": "수 num sign f f 0 0 0 0"
+      "expected": "수 숫자 기호 f f 0 0 0 0"
     },
     "Sample_1_4_3_default": {
       "expected": "수 0 x 1 5 f f 더하기 수 0 x 2 b 0 1 같다 수 0 x 4 1 0 0"
@@ -136,13 +136,13 @@
       "expected": "진한 좌 대괄호 x 진한 우 대괄호"
     },
     "Sample_2_6_2_default": {
-      "expected": "contour integral 대문자 E 닷 d 진한 l 같다 빼기 분수시작 d t 분의 d 대문자 파이 대문자 B 분수끝"
+      "expected": "경로 적분 대문자 E 닷 d 진한 l 같다 빼기 분수시작 d t 분의 d 대문자 파이 대문자 B 분수끝"
     },
     "Sample_2_6_2_brief": {
-      "expected": "contour integral 대문자 E 닷 d 진한 l 같다 빼기 분수시작 d t 분의 d 대문자 파이 대문자 B 분수끝"
+      "expected": "경로 적분 대문자 E 닷 d 진한 l 같다 빼기 분수시작 d t 분의 d 대문자 파이 대문자 B 분수끝"
     },
     "Sample_2_6_2_sbrief": {
-      "expected": "contour integral 대문자 E 닷 d 진한 l 같다 빼기 분수 d t 분의 d 대문자 파이 대문자 B 분수끝"
+      "expected": "경로 적분 대문자 E 닷 d 진한 l 같다 빼기 분수 d t 분의 d 대문자 파이 대문자 B 분수끝"
     },
     "NegativeVsMinus_0": {
       "expected": "빼기 분수시작 b 분의 1 분수끝"
@@ -190,13 +190,13 @@
       "expected": "마이너스 1"
     },
     "Sample_6_1_1_default": {
-      "expected": "The Fibonacci numbers are 콜론 집합시작 0 콤마 1 콤마 1 콤마 2 콤마 3 콤마 5 콤마 8 콤마 ellipsis 집합끝"
+      "expected": "The Fibonacci numbers are 콜론 집합시작 0 콤마 1 콤마 1 콤마 2 콤마 3 콤마 5 콤마 8 콤마 줄임표 집합끝"
     },
     "Sample_6_1_1_brief": {
-      "expected": "The Fibonacci numbers are 콜론 집합시작 0 콤마 1 콤마 1 콤마 2 콤마 3 콤마 5 콤마 8 콤마 ellipsis 집합끝"
+      "expected": "The Fibonacci numbers are 콜론 집합시작 0 콤마 1 콤마 1 콤마 2 콤마 3 콤마 5 콤마 8 콤마 줄임표 집합끝"
     },
     "Sample_6_1_1_sbrief": {
-      "expected": "The Fibonacci numbers are 콜론 집합 0 콤마 1 콤마 1 콤마 2 콤마 3 콤마 5 콤마 8 콤마 ellipsis 집합끝"
+      "expected": "The Fibonacci numbers are 콜론 집합 0 콤마 1 콤마 1 콤마 2 콤마 3 콤마 5 콤마 8 콤마 줄임표 집합끝"
     },
     "Sample_6_2_1_default": {
       "expected": "절댓값시작 4 빼기 7 절댓값끝 같다 3"
@@ -263,22 +263,22 @@
       "expected": "NestTwice분수 Nest분수 좌 괄호 1 빼기 x 우 괄호 분수 d Over d x 분수끝 좌 괄호 2 x 우 괄호 빼기 2 x 분수 d Over d x 분수끝 좌 괄호 1 빼기 x 우 괄호 NestOver 좌 괄호 1 빼기 x 우 괄호 제곱 Nest분수끝 NestTwiceOver 1 더하기 좌 괄호 분수 2 x Over 1 빼기 x 분수끝 우 괄호 제곱 NestTwice분수끝"
     },
     "Sample_7_3_2_default": {
-      "expected": "a 0 더하기 분수시작시작시작시작 a 1 더하기 분수시작시작시작 a 2 더하기 분수시작시작 ellipsis 더하기 분수시작 a 아래첨자 n 기준 분의 1 분수끝 분의분의 1 분수끝끝 분의분의분의 1 분수끝끝끝 분의분의분의분의 1 분수끝끝끝끝"
+      "expected": "a 0 더하기 분수시작시작시작시작 a 1 더하기 분수시작시작시작 a 2 더하기 분수시작시작 줄임표 더하기 분수시작 a 아래첨자 n 기준 분의 1 분수끝 분의분의 1 분수끝끝 분의분의분의 1 분수끝끝끝 분의분의분의분의 1 분수끝끝끝끝"
     },
     "Sample_7_3_2_brief": {
-      "expected": "a 0 더하기 분수시작시작시작시작 a 1 더하기 분수시작시작시작 a 2 더하기 분수시작시작 ellipsis 더하기 분수시작 a 아래 n 기준 분의 1 분수끝 분의분의 1 분수끝끝 분의분의분의 1 분수끝끝끝 분의분의분의분의 1 분수끝끝끝끝"
+      "expected": "a 0 더하기 분수시작시작시작시작 a 1 더하기 분수시작시작시작 a 2 더하기 분수시작시작 줄임표 더하기 분수시작 a 아래 n 기준 분의 1 분수끝 분의분의 1 분수끝끝 분의분의분의 1 분수끝끝끝 분의분의분의분의 1 분수끝끝끝끝"
     },
     "Sample_7_3_2_sbrief": {
-      "expected": "a 0 더하기 Nest3분수 1 Nest3Over a 1 더하기 NestTwice분수 1 NestTwiceOver a 2 더하기 Nest분수 1 NestOver ellipsis 더하기 분수 1 Over a 아래 n 기준 분수끝 Nest분수끝 NestTwice분수끝 Nest3분수끝"
+      "expected": "a 0 더하기 Nest3분수 1 Nest3Over a 1 더하기 NestTwice분수 1 NestTwiceOver a 2 더하기 Nest분수 1 NestOver 줄임표 더하기 분수 1 Over a 아래 n 기준 분수끝 Nest분수끝 NestTwice분수끝 Nest3분수끝"
     },
     "Sample_7_4_1_default": {
-      "expected": "2 분의 1 더하기 2 분의 2 더하기 2 분의 3 더하기 2 분의 4 더하기 ellipsis 같다 시그마 합 하단첨자 n 같다 1 상단첨자 무한대 첨자끝 분수시작 2 분의 n 분수끝"
+      "expected": "2 분의 1 더하기 2 분의 2 더하기 2 분의 3 더하기 2 분의 4 더하기 줄임표 같다 시그마 합 하단첨자 n 같다 1 상단첨자 무한대 첨자끝 분수시작 2 분의 n 분수끝"
     },
     "Sample_7_4_1_brief": {
-      "expected": "2 분의 1 더하기 2 분의 2 더하기 2 분의 3 더하기 2 분의 4 더하기 ellipsis 같다 시그마 합 하단첨자 n 같다 1 상단첨자 무한대 첨자끝 분수시작 2 분의 n 분수끝"
+      "expected": "2 분의 1 더하기 2 분의 2 더하기 2 분의 3 더하기 2 분의 4 더하기 줄임표 같다 시그마 합 하단첨자 n 같다 1 상단첨자 무한대 첨자끝 분수시작 2 분의 n 분수끝"
     },
     "Sample_7_4_1_sbrief": {
-      "expected": "2 분의 1 더하기 2 분의 2 더하기 2 분의 3 더하기 2 분의 4 더하기 ellipsis 같다 시그마 합 하단첨자 n 같다 1 상단첨자 무한대 첨자끝 분수 2 분의 n 분수끝"
+      "expected": "2 분의 1 더하기 2 분의 2 더하기 2 분의 3 더하기 2 분의 4 더하기 줄임표 같다 시그마 합 하단첨자 n 같다 1 상단첨자 무한대 첨자끝 분수 2 분의 n 분수끝"
     },
     "Sample_7_4_2_default": {
       "expected": "분수시작 5 분의 20 분수끝 곱하기 분수시작 100 분의 1 분수끝 같다 25 분의 1"
@@ -308,13 +308,13 @@
       "expected": "3 와(과) 8 분의 5 같다 분수 8 분의 29 분수끝"
     },
     "Sample_7_6_1_default": {
-      "expected": "a 0 더하기 연속분수 b 1 Over a 1 더하기 분수시작 b 2 Over a 2 더하기 분수시작 b 3 Over a 3 더하기 ellipsis 같다 a 0 더하기 분수시작 a 1 분의 1 b 1 분수끝 더하기 분수시작 a 2 분의 b 2 분수끝 더하기 ellipsis"
+      "expected": "a 0 더하기 연속분수 b 1 Over a 1 더하기 분수시작 b 2 Over a 2 더하기 분수시작 b 3 Over a 3 더하기 줄임표 같다 a 0 더하기 분수시작 a 1 분의 1 b 1 분수끝 더하기 분수시작 a 2 분의 b 2 분수끝 더하기 줄임표"
     },
     "Sample_7_6_1_brief": {
-      "expected": "a 0 더하기 연속분수 b 1 Over a 1 더하기 분수시작 b 2 Over a 2 더하기 분수시작 b 3 Over a 3 더하기 ellipsis 같다 a 0 더하기 분수시작 a 1 분의 1 b 1 분수끝 더하기 분수시작 a 2 분의 b 2 분수끝 더하기 ellipsis"
+      "expected": "a 0 더하기 연속분수 b 1 Over a 1 더하기 분수시작 b 2 Over a 2 더하기 분수시작 b 3 Over a 3 더하기 줄임표 같다 a 0 더하기 분수시작 a 1 분의 1 b 1 분수끝 더하기 분수시작 a 2 분의 b 2 분수끝 더하기 줄임표"
     },
     "Sample_7_6_1_sbrief": {
-      "expected": "a 0 더하기 연속분수 b 1 Over a 1 더하기 분수 b 2 Over a 2 더하기 분수 b 3 Over a 3 더하기 ellipsis 같다 a 0 더하기 분수 a 1 분의 1 b 1 분수끝 더하기 분수 a 2 분의 b 2 분수끝 더하기 ellipsis"
+      "expected": "a 0 더하기 연속분수 b 1 Over a 1 더하기 분수 b 2 Over a 2 더하기 분수 b 3 Over a 3 더하기 줄임표 같다 a 0 더하기 분수 a 1 분의 1 b 1 분수끝 더하기 분수 a 2 분의 b 2 분수끝 더하기 줄임표"
     },
     "Sample_8_1_1_default": {
       "expected": "x 세제곱 더하기 6 x 제곱 빼기 x 같다 30"
@@ -569,22 +569,22 @@
       "expected": "대문자 파이 5"
     },
     "Sample_8_5_10_default": {
-      "expected": "엘n x 같다 인테그럴 아래첨자 1 위첨자 x 기준 분수시작 t 분의 d t 분수끝"
+      "expected": "엘엔 x 같다 인테그럴 아래첨자 1 위첨자 x 기준 분수시작 t 분의 d t 분수끝"
     },
     "Sample_8_5_10_brief": {
-      "expected": "엘n x 같다 인테그럴 아래 1 위 x 기준 분수시작 t 분의 d t 분수끝"
+      "expected": "엘엔 x 같다 인테그럴 아래 1 위 x 기준 분수시작 t 분의 d t 분수끝"
     },
     "Sample_8_5_10_sbrief": {
-      "expected": "엘n x 같다 인테그럴 아래 1 위 x 기준 분수 t 분의 d t 분수끝"
+      "expected": "엘엔 x 같다 인테그럴 아래 1 위 x 기준 분수 t 분의 d t 분수끝"
     },
     "Sample_8_6_1_default": {
-      "expected": "달러 기호 n 기준 2 같다 2 별표 달러 기호 n 더하기 1 세미콜론"
+      "expected": "달러 n 기준 2 같다 2 별표 달러 n 더하기 1 세미콜론"
     },
     "Sample_8_6_1_brief": {
-      "expected": "달러 기호 n 기준 2 같다 2 별표 달러 기호 n 더하기 1 세미콜론"
+      "expected": "달러 n 기준 2 같다 2 별표 달러 n 더하기 1 세미콜론"
     },
     "Sample_8_6_1_sbrief": {
-      "expected": "달러 기호 n 기준 2 같다 2 별표 달러 기호 n 더하기 1 세미콜론"
+      "expected": "달러 n 기준 2 같다 2 별표 달러 n 더하기 1 세미콜론"
     },
     "Sample_8_8_1_naive_default": {
       "expected": "아래첨자 c d 위첨자 a b 기준 x 아래첨자 e f 위첨자 g h"
@@ -803,22 +803,22 @@
       "expected": "NestIndex n Nest루트 Index m 루트 x 루트끝 Nest루트끝 같다 NestIndex m Nest루트 Index n 루트 x 루트끝 Nest루트끝"
     },
     "Sample_9_3_3_default": {
-      "expected": "x 위첨자 e 빼기 2 기준 같다 Nested3루트시작 x NestedTwice루트Index 3 NestedTwice루트시작 x Nested루트Index 4 Nested루트시작 x 루트Index 5 루트시작 x ellipsis 루트끝 Nested루트끝 NestedTwice루트끝 Nested3루트끝 콤마 x element of 테두리체 대문자 알"
+      "expected": "x 위첨자 e 빼기 2 기준 같다 Nested3루트시작 x NestedTwice루트Index 3 NestedTwice루트시작 x Nested루트Index 4 Nested루트시작 x 루트Index 5 루트시작 x 줄임표 루트끝 Nested루트끝 NestedTwice루트끝 Nested3루트끝 콤마 x element of 테두리체 대문자 알"
     },
     "Sample_9_3_3_brief": {
-      "expected": "x 위 e 빼기 2 기준 같다 Nest3루트시작 x NestTwice루트Index 3 NestTwice루트시작 x Nest루트Index 4 Nest루트시작 x 루트Index 5 루트시작 x ellipsis 루트끝 Nest루트끝 NestTwice루트끝 Nest3루트끝 콤마 x element of 테두리체 대문자 알"
+      "expected": "x 위 e 빼기 2 기준 같다 Nest3루트시작 x NestTwice루트Index 3 NestTwice루트시작 x Nest루트Index 4 Nest루트시작 x 루트Index 5 루트시작 x 줄임표 루트끝 Nest루트끝 NestTwice루트끝 Nest3루트끝 콤마 x element of 테두리체 대문자 알"
     },
     "Sample_9_3_3_sbrief": {
-      "expected": "x 위 e 빼기 2 기준 같다 Nest3루트 x NestTwiceIndex 3 NestTwice루트 x NestIndex 4 Nest루트 x Index 5 루트 x ellipsis 루트끝 Nest루트끝 NestTwice루트끝 Nest3루트끝 콤마 x element of 테두리체 대문자 알"
+      "expected": "x 위 e 빼기 2 기준 같다 Nest3루트 x NestTwiceIndex 3 NestTwice루트 x NestIndex 4 Nest루트 x Index 5 루트 x 줄임표 루트끝 Nest루트끝 NestTwice루트끝 Nest3루트끝 콤마 x element of 테두리체 대문자 알"
     },
     "Sample_9_3_4_default": {
-      "expected": "분수시작 파이 분의 2 분수끝 같다 분수시작 2 분의 루트시작 2 루트끝 분수끝 분수시작 Nested루트시작 2 더하기 루트시작 2 루트끝 Nested루트끝 Over 2 분수끝 분수시작 2 분의 NestedTwice루트시작 2 더하기 Nested루트시작 2 더하기 루트시작 2 루트끝 Nested루트끝 NestedTwice루트끝 분수끝 ellipsis"
+      "expected": "분수시작 파이 분의 2 분수끝 같다 분수시작 2 분의 루트시작 2 루트끝 분수끝 분수시작 Nested루트시작 2 더하기 루트시작 2 루트끝 Nested루트끝 Over 2 분수끝 분수시작 2 분의 NestedTwice루트시작 2 더하기 Nested루트시작 2 더하기 루트시작 2 루트끝 Nested루트끝 NestedTwice루트끝 분수끝 줄임표"
     },
     "Sample_9_3_4_brief": {
-      "expected": "분수시작 파이 분의 2 분수끝 같다 분수시작 2 분의 루트시작 2 루트끝분수끝 분수시작 Nest루트시작 2 더하기 루트시작 2 루트끝 Nest루트끝 Over 2 분수끝 분수시작 2 분의 NestTwice루트시작 2 더하기 Nest루트시작 2 더하기 루트시작 2 루트끝 Nest루트끝 NestTwice루트끝 분수끝 ellipsis"
+      "expected": "분수시작 파이 분의 2 분수끝 같다 분수시작 2 분의 루트시작 2 루트끝분수끝 분수시작 Nest루트시작 2 더하기 루트시작 2 루트끝 Nest루트끝 Over 2 분수끝 분수시작 2 분의 NestTwice루트시작 2 더하기 Nest루트시작 2 더하기 루트시작 2 루트끝 Nest루트끝 NestTwice루트끝 분수끝 줄임표"
     },
     "Sample_9_3_4_sbrief": {
-      "expected": "분수 파이 분의 2 분수끝 같다 분수 2 분의 루트 2 루트끝분수끝 분수 Nest루트 2 더하기 루트 2 루트끝 Nest루트끝 Over 2 분수끝 분수 2 분의 NestTwice루트 2 더하기 Nest루트 2 더하기 루트 2 루트끝 Nest루트끝 NestTwice루트끝 Over 2 분수끝 ellipsis"
+      "expected": "분수 파이 분의 2 분수끝 같다 분수 2 분의 루트 2 루트끝분수끝 분수 Nest루트 2 더하기 루트 2 루트끝 Nest루트끝 Over 2 분수끝 분수 2 분의 NestTwice루트 2 더하기 Nest루트 2 더하기 루트 2 루트끝 Nest루트끝 NestTwice루트끝 Over 2 분수끝 줄임표"
     },
     "Sample_10_1_1_default": {
       "expected": "분수시작 2 소거 y 소거끝 분의 5 x 소거 y 소거끝 분수끝 같다 2 분의 5 x"
@@ -1043,40 +1043,40 @@
       "expected": "1 줄 같다 1 킬로그램 닷 미터 제곱 닷 초 위 마이너스 2"
     },
     "Sample_13_1_3_default": {
-      "expected": "m 미터 같다 100 m 센t미터 같다 분수시작 1,000 분의 m 분수끝 킬로미터"
+      "expected": "m 미터 같다 100 m 센티미터 같다 분수시작 1,000 분의 m 분수끝 킬로미터"
     },
     "Sample_13_1_3_brief": {
-      "expected": "m 미터 같다 100 m 센t미터 같다 분수시작 1,000 분의 m 분수끝 킬로미터"
+      "expected": "m 미터 같다 100 m 센티미터 같다 분수시작 1,000 분의 m 분수끝 킬로미터"
     },
     "Sample_13_1_3_sbrief": {
-      "expected": "m 미터 같다 100 m 센t미터 같다 분수 1,000 분의 m 분수끝 킬로미터"
+      "expected": "m 미터 같다 100 m 센티미터 같다 분수 1,000 분의 m 분수끝 킬로미터"
     },
     "Sample_13_1_4_default": {
-      "expected": "1 마일 almost 같다 1.6 킬로미터"
+      "expected": "1 마일 거의 같다 1.6 킬로미터"
     },
     "Sample_13_1_4_brief": {
-      "expected": "1 마일 almost 같다 1.6 킬로미터"
+      "expected": "1 마일 거의 같다 1.6 킬로미터"
     },
     "Sample_13_1_4_sbrief": {
-      "expected": "1 마일 almost 같다 1.6 킬로미터"
+      "expected": "1 마일 거의 같다 1.6 킬로미터"
     },
     "Sample_13_1_5_default": {
-      "expected": "1 인치 같다 2.54 센t미터"
+      "expected": "1 인치 같다 2.54 센티미터"
     },
     "Sample_13_1_5_brief": {
-      "expected": "1 인치 같다 2.54 센t미터"
+      "expected": "1 인치 같다 2.54 센티미터"
     },
     "Sample_13_1_5_sbrief": {
-      "expected": "1 인치 같다 2.54 센t미터"
+      "expected": "1 인치 같다 2.54 센티미터"
     },
     "Sample_14_1_1_default": {
-      "expected": "배열시작 첫번째 행 첫번째 열 대문자 A치 2 두번째 열 더하기 세번째 열 대문자 F 2 네번째 열 오른쪽 화살표 다섯번째 열 2 대문자 A치 대문자 F 두번째 행 첫번째 열 hydrogen 두번째 열 빈 칸 세번째 열 fluorine 네번째 열 빈 칸 다섯번째 열 hydrogen fluoride 배열끝"
+      "expected": "배열시작 첫번째 행 첫번째 열 대문자 H 2 두번째 열 더하기 세번째 열 대문자 F 2 네번째 열 오른쪽 화살표 다섯번째 열 2 대문자 H 대문자 F 두번째 행 첫번째 열 hydrogen 두번째 열 빈 칸 세번째 열 fluorine 네번째 열 빈 칸 다섯번째 열 hydrogen fluoride 배열끝"
     },
     "Sample_14_1_1_brief": {
-      "expected": "배열시작 첫번째 행 첫번째 열 대문자 A치 2 두번째 열 더하기 세번째 열 대문자 F 2 네번째 열 오른쪽 화살표 다섯번째 열 2 대문자 A치 대문자 F 두번째 행 첫번째 열 hydrogen 두번째 열 빈 칸 세번째 열 fluorine 네번째 열 빈 칸 다섯번째 열 hydrogen fluoride 배열끝"
+      "expected": "배열시작 첫번째 행 첫번째 열 대문자 H 2 두번째 열 더하기 세번째 열 대문자 F 2 네번째 열 오른쪽 화살표 다섯번째 열 2 대문자 H 대문자 F 두번째 행 첫번째 열 hydrogen 두번째 열 빈 칸 세번째 열 fluorine 네번째 열 빈 칸 다섯번째 열 hydrogen fluoride 배열끝"
     },
     "Sample_14_1_1_sbrief": {
-      "expected": "배열 첫번째 행 첫번째 열 대문자 A치 2 두번째 열 더하기 세번째 열 대문자 F 2 네번째 열 우 화살표 다섯번째 열 2 대문자 A치 대문자 F 두번째 행 첫번째 열 hydrogen 두번째 열 빈 칸 세번째 열 fluorine 네번째 열 빈 칸 다섯번째 열 hydrogen fluoride 배열끝"
+      "expected": "배열 첫번째 행 첫번째 열 대문자 H 2 두번째 열 더하기 세번째 열 대문자 F 2 네번째 열 우 화살표 다섯번째 열 2 대문자 H 대문자 F 두번째 행 첫번째 열 hydrogen 두번째 열 빈 칸 세번째 열 fluorine 네번째 열 빈 칸 다섯번째 열 hydrogen fluoride 배열끝"
     },
     "Sample_14_3_1_default": {
       "expected": "x 같다 배열시작 Enlarged 왼쪽 중괄호 첫번째 행 첫번째 열 y less than 0 두번째 열 0 두번째 행 첫번째 열 y greater than or 같다 0 두번째 열 2 y 배열끝"
@@ -1123,13 +1123,22 @@
     "Sample_15_6_1_sbrief": {
       "expected": "이항계수 조합 x c y 이항계수끝"
     },
-    "기준수Font_default": {
+    "Sample_15_6_2_default": {
+      "expected": "테스트"
+    },
+    "Sample_15_6_2_brief": {
+      "expected": "테스트"
+    },
+    "Sample_15_6_2_sbrief": {
+      "expected": "테스트"
+    },
+    "BaselineNumberFont_default": {
       "expected": "n 기준 진한 2"
     },
-    "기준수Font_brief": {
+    "BaselineNumberFont_brief": {
       "expected": "n 기준 진한 2"
     },
-    "기준수Font_sbrief": {
+    "BaselineNumberFont_sbrief": {
       "expected": "n 기준 진한 2"
     }
   }
