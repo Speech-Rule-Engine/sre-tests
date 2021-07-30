@@ -93,7 +93,7 @@
       "expected": "여닫기 긴 변수"
     },
     "CollapsedInfixop_default": {
-      "expected": "여닫기 두 개의 원소로 이루어진 나눗셈"
+      "expected": "여닫기 2 개의 원소로 이루어진 나눗셈"
     },
     "CollapsedInfixop_brief": {
       "expected": "여닫기 나눗셈"
@@ -246,22 +246,22 @@
       "expected": "여닫기 정방행렬"
     },
     "CollapsedSubscript_default": {
-      "expected": "여닫기 아래 첨자"
+      "expected": "여닫기 아래첨자"
     },
     "CollapsedSubscript_brief": {
-      "expected": "여닫기 아래 첨자"
+      "expected": "여닫기 아래첨자"
     },
     "CollapsedSubscript_sbrief": {
-      "expected": "여닫기 아래 첨자"
+      "expected": "여닫기 아래첨자"
     },
     "CollapsedSubsup_default": {
-      "expected": "여닫기 제곱과 아래 첨자"
+      "expected": "여닫기 제곱과 아래첨자"
     },
     "CollapsedSubsup_brief": {
-      "expected": "여닫기 제곱과 아래 첨자"
+      "expected": "여닫기 제곱과 아래첨자"
     },
     "CollapsedSubsup_sbrief": {
-      "expected": "여닫기 제곱과 아래 첨자"
+      "expected": "여닫기 제곱과 아래첨자"
     },
     "CollapsedSuperscript_default": {
       "expected": "여닫기 제곱"
@@ -291,7 +291,7 @@
       "expected": "여닫기 문자"
     },
     "CollapsedVarAddition_default": {
-      "expected": "여닫기 여러 개의 피가수의 합"
+      "expected": "여닫기 항이 여러 개인 덧셈"
     },
     "CollapsedVarAddition_brief": {
       "expected": "여닫기 합"
@@ -327,7 +327,7 @@
       "expected": "여닫기 정방행렬"
     },
     "CollapsedVarMultiplication_default": {
-      "expected": "여닫기 여러 개의 피연산자의 곱"
+      "expected": "여닫기 인자가 여러 개인 곱셈"
     },
     "CollapsedVarMultiplication_brief": {
       "expected": "여닫기 곱"
@@ -396,7 +396,7 @@
       "expected": "여닫기 뺄셈"
     },
     "CollapsedCountImplicit_default": {
-      "expected": "여닫기 3 개의 피연산자의 곱"
+      "expected": "여닫기 인자가 3 개인 곱셈"
     },
     "CollapsedCountImplicit_brief": {
       "expected": "여닫기 곱"
@@ -405,7 +405,7 @@
       "expected": "여닫기 곱"
     },
     "CollapsedVarImplicit_default": {
-      "expected": "여닫기 여러 개의 피연산자의 곱"
+      "expected": "여닫기 인자가 여러 개인 곱셈"
     },
     "CollapsedVarArrowRelation_default": {
       "expected": "여닫기 여러 개의 연속된 화살표"
