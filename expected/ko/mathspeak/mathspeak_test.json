@@ -151,7 +151,7 @@
       "expected": "빼기 분수시작 b 분의 a 분수끝"
     },
     "NegativeVsMinus_2": {
-      "expected": "마이너스 3 과(와) 2 분의 1"
+      "expected": "마이너스 3 과 2 분의 1"
     },
     "Sample_4_2_1_default": {
       "expected": "Uppercase 괄호 열고 집합시작 알파 콤마 베타 콤마 감마 콤마 델타 콤마 엡실론 콤마 파이 집합끝 괄호 닫고 는 집합시작 대문자 알파 콤마 대문자 베타 콤마 대문자 감마 콤마 대문자 델타 콤마 대문자 엡실론 콤마 대문자 파이 집합끝"
@@ -299,13 +299,13 @@
       "expected": "분수 8 분의 5 분의 3 분수끝 은 5 분의 3 곱하기 8 분의 1"
     },
     "Sample_7_5_1_default": {
-      "expected": "3 과(와) 8 분의 5 같다 분수시작 8 분의 29 분수끝"
+      "expected": "3 과 8 분의 5 같다 분수시작 8 분의 29 분수끝"
     },
     "Sample_7_5_1_brief": {
-      "expected": "3 과(와) 8 분의 5 같다 분수시작 8 분의 29 분수끝"
+      "expected": "3 과 8 분의 5 같다 분수시작 8 분의 29 분수끝"
     },
     "Sample_7_5_1_sbrief": {
-      "expected": "3 과(와) 8 분의 5 같다 분수 8 분의 29 분수끝"
+      "expected": "3 과 8 분의 5 같다 분수 8 분의 29 분수끝"
     },
     "Sample_7_6_1_default": {
       "expected": "a 0 더하기 연속분수 a 1 더하기 분수시작 a 2 더하기 분수시작 a 3 더하기 줄임표 분의 b 3 분의 b 2 분의 b 1 은 a 0 더하기 분수시작 a 1 분의 b 1 분수끝 더하기 분수시작 a 2 분의 b 2 분수끝 더하기 줄임표"
@@ -722,13 +722,13 @@
       "expected": "x 위 b 기준 아래 a"
     },
     "Sample_8_13_1_default": {
-      "expected": "로그 위첨자 4 위첨자 b 기준 x"
+      "expected": "로그 네제곱 위첨자 b 기준 x"
     },
     "Sample_8_13_1_brief": {
-      "expected": "로그 위 4 위 b 기준 x"
+      "expected": "로그 네제곱 위 b 기준 x"
     },
     "Sample_8_13_1_sbrief": {
-      "expected": "로그 위 4 위 b 기준 x"
+      "expected": "로그 네제곱 위 b 기준 x"
     },
     "Sample_8_13_2_default": {
       "expected": "대문자 t 아래첨자 n 아래첨자 a 기준 y"
@@ -758,49 +758,49 @@
       "expected": "루트 m 더하기 n 루트끝"
     },
     "Sample_9_2_1_default": {
-      "expected": "루트Index m 더하기 n 루트시작 x 더하기 y 루트끝"
+      "expected": "m 더하기 n 제곱근 루트시작 x 더하기 y 루트끝"
     },
     "Sample_9_2_1_brief": {
-      "expected": "루트Index m 더하기 n 루트시작 x 더하기 y 루트끝"
+      "expected": "m 더하기 n 제곱근 루트시작 x 더하기 y 루트끝"
     },
     "Sample_9_2_1_sbrief": {
-      "expected": "Index m 더하기 n 루트 x 더하기 y 루트끝"
+      "expected": "m 더하기 n 제곱 루트 x 더하기 y 루트끝"
     },
     "Sample_9_2_2_default": {
-      "expected": "루트Index n 루트시작 x 위첨자 m 기준 루트끝 은 왼쪽 괄호 루트Index n 루트시작 x 루트끝 오른쪽 괄호 위첨자 m 기준 은 x 위첨자 분수시작 n 분의 m 분수끝 기준 콤마 x 크다 0"
+      "expected": "n제곱근 루트시작 x 위첨자 m 기준 루트끝 은 괄호 열고 n제곱근 루트시작 x 루트끝 괄호 닫고 위첨자 m 기준 은 x 위첨자 분수시작 n 분의 m 분수끝 기준 콤마 x 크다 0"
     },
     "Sample_9_2_2_brief": {
-      "expected": "루트Index n 루트시작 x 위 m 기준 루트끝 은 왼쪽 괄호 루트Index n 루트시작 x 루트끝 오른쪽 괄호 위 m 기준 은 x 위 분수시작 n 분의 m 분수끝 기준 콤마 x 크다 0"
+      "expected": "n제곱근 루트시작 x 위 m 기준 루트끝 은 괄열 n제곱근 루트시작 x 루트끝 괄닫 위 m 기준 은 x 위 분수시작 n 분의 m 분수끝 기준 콤마 x 크다 0"
     },
     "Sample_9_2_2_sbrief": {
-      "expected": "Index n 루트 x 위 m 기준 루트끝 은 괄열 Index n 루트 x 루트끝 괄닫 위 m 기준 은 x 위 분수 n 분의 m 분수끝 기준 콤마 x 크다 0"
+      "expected": "n제곱근 루트 x 위 m 기준 루트끝 은 괄열 n제곱근 루트 x 루트끝 괄닫 위 m 기준 은 x 위 분수 n 분의 m 분수끝 기준 콤마 x 크다 0"
     },
     "Sample_9_2_3_default": {
-      "expected": "루트Index 3 루트시작 x 루트끝 은 x 위첨자 3 분의 1"
+      "expected": "세제곱근 루트시작 x 루트끝 은 x 위첨자 3 분의 1"
     },
     "Sample_9_2_3_brief": {
-      "expected": "루트Index 3 루트시작 x 루트끝 은 x 위 3 분의 1"
+      "expected": "세제곱근 루트시작 x 루트끝 은 x 위첨자 3 분의 1"
     },
     "Sample_9_2_3_sbrief": {
-      "expected": "Index 3 루트 x 루트끝 은 x 위 3 분의 1"
+      "expected": "세제곱근 루트 x 루트끝 은 x 위 3 분의 1"
     },
     "Sample_9_3_1_default": {
-      "expected": "중첩루트시작 루트시작 x 더하기 1 루트끝 더하기 루트시작 y 더하기 1 루트끝 Nested루트끝"
+      "expected": "중첩루트시작 루트시작 x 더하기 1 루트끝 더하기 루트시작 y 더하기 1 루트끝 중첩루트끝"
     },
     "Sample_9_3_1_brief": {
-      "expected": "중첩루트시작 루트시작 x 더하기 1 루트끝 더하기 루트시작 y 더하기 1 루트끝 Nest루트끝"
+      "expected": "중첩루트시작 루트시작 x 더하기 1 루트끝 더하기 루트시작 y 더하기 1 루트끝 중첩루트끝"
     },
     "Sample_9_3_1_sbrief": {
-      "expected": "중첩루트 루트 x 더하기 1 루트끝 더하기 루트 y 더하기 1 루트끝 Nest루트끝"
+      "expected": "중첩루트 루트 x 더하기 1 루트끝 더하기 루트 y 더하기 1 루트끝 중첩루트끝"
     },
     "Sample_9_3_2_default": {
-      "expected": "Nested루트Index n Nested루트시작 루트Index m 루트시작 x 루트끝 Nested루트끝 은 Nested루트Index m Nested루트시작 루트Index n 루트시작 x 루트끝 Nested루트끝"
+      "expected": "n제곱근 중첩루트시작 m제곱근 루트시작 x 루트끝 중첩루트끝 은 m제곱근 중첩루트시작 n제곱근 루트시작 x 루트끝 중첩루트끝"
     },
     "Sample_9_3_2_brief": {
-      "expected": "Nest루트Index n Nest루트시작 루트Index m 루트시작 x 루트끝 Nest루트끝 은 Nest루트Index m Nest루트시작 루트Index n 루트시작 x 루트끝 Nest루트끝"
+      "expected": "n제곱근 중첩루트시작 m제곱근 루트시작 x 루트끝 중첩루트끝 은 m제곱근 중첩루트시작 n제곱근 루트시작 x 루트끝 중첩루트끝"
     },
     "Sample_9_3_2_sbrief": {
-      "expected": "NestIndex n Nest루트 Index m 루트 x 루트끝 Nest루트끝 은 NestIndex m Nest루트 Index n 루트 x 루트끝 Nest루트끝"
+      "expected": "n제곱근 중첩루트 m제곱근 루트 x 루트끝 중첩루트끝 은 m제곱근 중첩루트 n제곱근 루트 x 루트끝 중첩루트끝"
     },
     "Sample_9_3_3_default": {
       "expected": "x 위첨자 e 빼기 2 기준 은 Nested3루트시작 x NestedTwice루트Index 3 NestedTwice루트시작 x Nested루트Index 4 Nested루트시작 x 루트Index 5 루트시작 x 줄임표 루트끝 Nested루트끝 NestedTwice루트끝 Nested3루트끝 콤마 x element of 테두리체 대문자 알"
@@ -812,13 +812,13 @@
       "expected": "x 위 e 빼기 2 기준 은 Nest3루트 x NestTwiceIndex 3 NestTwice루트 x NestIndex 4 Nest루트 x Index 5 루트 x 줄임표 루트끝 Nest루트끝 NestTwice루트끝 Nest3루트끝 콤마 x element of 테두리체 대문자 알"
     },
     "Sample_9_3_4_default": {
-      "expected": "분수시작 파이 분의 2 분수끝 은 분수시작 2 분의 루트시작 2 루트끝 분수끝 분수시작 Nested루트시작 2 더하기 루트시작 2 루트끝 Nested루트끝 Over 2 분수끝 분수시작 2 분의 NestedTwice루트시작 2 더하기 Nested루트시작 2 더하기 루트시작 2 루트끝 Nested루트끝 NestedTwice루트끝 분수끝 줄임표"
+      "expected": "분수시작 파이 분의 2 분수끝 은 분수시작 2 분의 루트시작 2 루트끝 분수끝 분수시작 2 분의 중첩루트시작 2 더하기 루트시작 2 루트끝 중첩루트끝 분수끝 분수시작 2 분의 이중첩루트시작 2 더하기 중첩루트시작 2 더하기 루트시작 2 루트끝 중첩루트끝 이중첩루트끝 분수끝 줄임표"
     },
     "Sample_9_3_4_brief": {
-      "expected": "분수시작 파이 분의 2 분수끝 은 분수시작 2 분의 루트시작 2 루트끝분수끝 분수시작 Nest루트시작 2 더하기 루트시작 2 루트끝 Nest루트끝 Over 2 분수끝 분수시작 2 분의 NestTwice루트시작 2 더하기 Nest루트시작 2 더하기 루트시작 2 루트끝 Nest루트끝 NestTwice루트끝 분수끝 줄임표"
+      "expected": "분수시작 파이 분의 2 분수끝 은 분수시작 2 분의 루트시작 2 루트끝 분수끝 분수시작 2 분의 중첩루트시작 2 더하기 루트시작 2 루트끝 중첩루트끝 분수끝 분수시작 2 분의 이중첩루트시작 2 더하기 중첩루트시작 2 더하기 루트시작 2 루트끝 중첩루트끝 이중첩루트끝 분수끝 줄임표"
     },
     "Sample_9_3_4_sbrief": {
-      "expected": "분수 파이 분의 2 분수끝 은 분수 2 분의 루트 2 루트끝분수끝 분수 Nest루트 2 더하기 루트 2 루트끝 Nest루트끝 Over 2 분수끝 분수 2 분의 NestTwice루트 2 더하기 Nest루트 2 더하기 루트 2 루트끝 Nest루트끝 NestTwice루트끝 Over 2 분수끝 줄임표"
+      "expected": "분수 파이 분의 2 분수끝 은 분수 2 분의 루트 2 루트끝 분수끝 분수 2 분의 중첩루트 2 더하기 루트 2 루트끝 중첩루트끝 분수끝 분수 2 분의 이중첩루트 2 더하기 중첩루트 2 더하기 루트 2 루트끝 중첩루트끝 이중첩루트끝 분수끝 줄임표"
     },
     "Sample_10_1_1_default": {
       "expected": "분수시작 2 소거시작 y 소거끝 분의 5 x 소거시작 y 소거끝 분수끝 은 2 분의 5 x"
@@ -830,13 +830,13 @@
       "expected": "분수 2 소거시작 y 소거끝 분의 5 x 소거시작 y 소거끝 분수끝 은 2 분의 5 x"
     },
     "Sample_10_2_1_default": {
-      "expected": "분수시작 18 분의 12 분수끝 같다 분수시작 소거 18 을(를) 3 으로(로) 소거끝 분의 소거 12 을(를) 2 으로(로) 소거끝 분수끝 같다 3 분의 2"
+      "expected": "분수시작 18 분의 12 분수끝 은 분수시작 소거 18 을 3 으로 소거끝 분의 소거 12 를 2 로 소거끝 분수끝 은 3 분의 2"
     },
     "Sample_10_2_1_brief": {
-      "expected": "분수시작 18 분의 12 분수끝 같다 분수시작 소거 18 을(를) 3 으로(로) 소거끝 분의 소거 12 을(를) 2 으로(로) 소거끝 분수끝 같다 3 분의 2"
+      "expected": "분수시작 18 분의 12 분수끝 은 분수시작 소거 18 을 3 으로 소거끝 분의 소거 12 를 2 로 소거끝 분수끝 은 3 분의 2"
     },
     "Sample_10_2_1_sbrief": {
-      "expected": "분수 18 분의 12 분수끝 같다 분수 소거 18 을(를) 3 으로(로) 소거끝 분의 소거 12 을(를) 2 으로(로) 소거끝 분수끝 같다 3 분의 2"
+      "expected": "분수 18 분의 12 분수끝 은 분수 소거 18 을 3 으로 소거끝 분의 소거 12 를 2 로 소거끝 분수끝 은 3 분의 2"
     },
     "Sample_10_2_2_default": {
       "expected": "분수시작 18 분의 12 분수끝 은 분수시작 소거 18 을 3 으로 소거끝 분의 소거 12 을 2 으로 소거끝 분수끝 은 3 분의 2"
@@ -1133,13 +1133,13 @@
       "expected": "테스트"
     },
     "BaselineNumberFont_default": {
-      "expected": "n 기준 진한 2"
+      "expected": "n 기준 bold 2"
     },
     "BaselineNumberFont_brief": {
-      "expected": "n 기준 진한 2"
+      "expected": "n 기준 bold 2"
     },
     "BaselineNumberFont_sbrief": {
-      "expected": "n 기준 진한 2"
+      "expected": "n 기준 bold 2"
     }
   }
 }
