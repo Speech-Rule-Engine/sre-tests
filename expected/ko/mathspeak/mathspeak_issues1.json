@@ -54,22 +54,22 @@
       "expected": "대문자 s i 기본 대문자 o 2 더하기 6 기본 대문자 h 기본 대문자 f 오른쪽 화살표 기본 대문자 h 2 대문자 s i 기본 대문자 f 6 더하기 2 기본 대문자 h 2 기본 대문자 o"
     },
     "ParenSuper_default": {
-      "expected": "왼쪽 괄호 a 오른쪽 괄호 제곱"
+      "expected": "괄호 열고 a 괄호 닫고 제곱"
     },
     "ParenSuper_brief": {
-      "expected": "왼쪽 괄호 a 오른쪽 괄호 제곱"
+      "expected": "괄열 a 괄닫 제곱"
     },
     "ParenSuper_sbrief": {
-      "expected": "왼쪽 괄호 a 오른쪽 괄호 제곱"
+      "expected": "괄열 a 괄닫 제곱"
     },
     "ParenConvoluted_default": {
-      "expected": "왼쪽 괄호 빼기 x 제곱 슬래시 2 오른쪽 괄호"
+      "expected": "괄호 열고 빼기 x 제곱 슬래시 2 괄호 닫고"
     },
     "ParenConvoluted_brief": {
-      "expected": "왼쪽 괄호 빼기 x 제곱 슬래시 2 오른쪽 괄호"
+      "expected": "괄열 빼기 x 제곱 슬래시 2 괄닫"
     },
     "ParenConvoluted_sbrief": {
-      "expected": "왼쪽 괄호 빼기 x 제곱 슬래시 2 오른쪽 괄호"
+      "expected": "괄열 빼기 x 제곱 슬래시 2 괄닫"
     },
     "SupBaseRelseq_default": {
       "expected": "c 1 h 위첨자 4 빼기 2 s 기준 작거나 같다 분수시작 2 대문자 t 분의 1 분수끝 작거나 같다 c 2 h 위첨자 4 빼기 2 s"
@@ -153,31 +153,31 @@
       "expected": "area of triangle 위 2"
     },
     "LabelledRow_default": {
-      "expected": "배열시작 첫번째 행  꼬리표시작 왼쪽 괄호 1 오른쪽 괄호 꼬리표끝 첫번째 열 a 두번째 열 b 배열끝"
+      "expected": "배열시작 첫번째 행  꼬리표시작 괄호 열고 1 괄호 닫고 꼬리표끝 첫번째 열 a 두번째 열 b 배열끝"
     },
     "LabelledRow_brief": {
-      "expected": "배열시작 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 첫번째 열 a 두번째 열 b 배열끝"
+      "expected": "배열시작 첫번째 행  꼬리표 괄열 1 괄닫 첫번째 열 a 두번째 열 b 배열끝"
     },
     "LabelledRow_sbrief": {
-      "expected": "배열 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 첫번째 열 a 두번째 열 b 배열끝"
+      "expected": "배열 첫번째 행  꼬리표 괄열 1 괄닫 첫번째 열 a 두번째 열 b 배열끝"
     },
     "LabelledLine_default": {
-      "expected": "배열시작 첫번째 행  꼬리표시작 왼쪽 괄호 1 오른쪽 괄호 꼬리표끝 a 배열끝"
+      "expected": "배열시작 첫번째 행  꼬리표시작 괄호 열고 1 괄호 닫고 꼬리표끝 a 배열끝"
     },
     "LabelledLine_brief": {
-      "expected": "배열시작 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 a 배열끝"
+      "expected": "배열시작 첫번째 행  꼬리표 괄열 1 괄닫 a 배열끝"
     },
     "LabelledLine_sbrief": {
-      "expected": "배열 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 a 배열끝"
+      "expected": "배열 첫번째 행  꼬리표 괄열 1 괄닫 a 배열끝"
     },
     "LabelledEmptyLine_default": {
-      "expected": "배열시작 첫번째 행  꼬리표시작 왼쪽 괄호 1 오른쪽 괄호 꼬리표끝 빈 칸 배열끝"
+      "expected": "배열시작 첫번째 행  꼬리표시작 괄호 열고 1 괄호 닫고 꼬리표끝 빈 칸 배열끝"
     },
     "LabelledEmptyLine_brief": {
-      "expected": "배열시작 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 빈 칸 배열끝"
+      "expected": "배열시작 첫번째 행  꼬리표 괄열 1 괄닫 빈 칸 배열끝"
     },
     "LabelledEmptyLine_sbrief": {
-      "expected": "배열 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 빈 칸 배열끝"
+      "expected": "배열 첫번째 행  꼬리표 괄열 1 괄닫 빈 칸 배열끝"
     },
     "EmptyLine_default": {
       "expected": "배열시작 첫번째 행  빈 칸 배열끝"
@@ -207,19 +207,19 @@
       "expected": "배열 첫번째 행  빈 칸 배열끝"
     },
     "TextLabelledLine_default": {
-      "expected": "배열시작 첫번째 행  꼬리표시작 왼쪽 괄호 1 오른쪽 괄호 꼬리표끝 a 배열끝"
+      "expected": "배열시작 첫번째 행  꼬리표시작 괄호 열고 1 괄호 닫고 꼬리표끝 a 배열끝"
     },
     "TextLabelledLine_brief": {
-      "expected": "배열시작 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 a 배열끝"
+      "expected": "배열시작 첫번째 행  꼬리표 괄열 1 괄닫 a 배열끝"
     },
     "TextLabelledLine_sbrief": {
       "expected": "배열 첫번째 행  꼬리표 1 a 배열끝"
     },
     "TextLabelledRow_default": {
-      "expected": "배열시작 첫번째 행  꼬리표시작 왼쪽 괄호 1 오른쪽 괄호 꼬리표끝 첫번째 열 a 두번째 열 b 배열끝"
+      "expected": "배열시작 첫번째 행  꼬리표시작 괄호 열고 1 괄호 닫고 꼬리표끝 첫번째 열 a 두번째 열 b 배열끝"
     },
     "TextLabelledRow_brief": {
-      "expected": "배열시작 첫번째 행  꼬리표 왼쪽 괄호 1 오른쪽 괄호 첫번째 열 a 두번째 열 b 배열끝"
+      "expected": "배열시작 첫번째 행  꼬리표 괄열 1 괄닫 첫번째 열 a 두번째 열 b 배열끝"
     },
     "TextLabelledRow_sbrief": {
       "expected": "배열 첫번째 행  꼬리표 1 첫번째 열 a 두번째 열 b 배열끝"
