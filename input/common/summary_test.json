@@ -744,6 +744,31 @@
       "test": true,
       "input": "<mfenced open=\"[\" close=\"]\"><mtable><mtr><mtd><mi>a</mi></mtd><mtd><mo>&#x2026;</mo></mtd><mtd><mi>b</mi></mtd></mtr></mtable></mfenced>",
       "preference": "default"
+    },
+    "Test_AbstrAddition_default": {
+      "test": true,
+      "input": "<mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>b</mi>",
+      "preference": "default"
+    },
+    "Test_AbstrMultiplication_default": {
+      "test": true,
+      "input": "<mi>a</mi><mo>*</mo><mi>b</mi><mo>*</mo><mi>b</mi><mo>*</mo><mi>b</mi><mo>*</mo><mi>b</mi><mo>*</mo><mi>b</mi><mo>*</mo><mi>b</mi><mo>*</mo><mi>b</mi><mo>*</mo><mi>b</mi><mo>*</mo><mi>b</mi><mo>*</mo><mi>b</mi><mo>*</mo><mi>b</mi>",
+      "preference": "default"
+    },
+    "Test_AbstrInfixop_default": {
+      "test": true,
+      "input": "<mi>a</mi><mo>/</mo><mi>b</mi><mo>/</mo><mi>b</mi><mo>/</mo><mi>b</mi><mo>/</mo><mi>b</mi><mo>/</mo><mi>b</mi><mo>/</mo><mi>b</mi><mo>/</mo><mi>b</mi><mo>/</mo><mi>b</mi><mo>/</mo><mi>b</mi><mo>/</mo><mi>b</mi><mo>/</mo><mi>b</mi><mo>/</mo><mi>b</mi>",
+      "preference": "default"
+    },
+    "Test_AbstrMultirel_default": {
+      "test": true,
+      "input": "<mi>a</mi><mo>=</mo><mi>b</mi><mo>&#x2264;</mo><mi>b</mi><mo>&#x2264;</mo><mi>b</mi><mo>&#x2264;</mo><mi>b</mi><mo>&#x2264;</mo><mi>b</mi><mo>&#x2264;</mo><mi>b</mi><mo>&#x2264;</mo><mi>b</mi><mo>&#x2264;</mo><mi>b</mi><mo>&#x2264;</mo><mi>b</mi>",
+      "preference": "default"
+    },
+    "Test_AbstrVarImplicit_default": {
+      "test": true,
+      "input": "<mi>a</mi><mi>b</mi><mi>c</mi><mi>b</mi><mi>c</mi><mi>b</mi><mi>c</mi><mi>b</mi><mi>c</mi><mi>b</mi><mi>c</mi><mi>b</mi><mi>c</mi><mi>b</mi><mi>c</mi><mi>b</mi><mi>c</mi><mi>b</mi><mi>c</mi><mi>b</mi><mi>c</mi><mi>b</mi><mi>c</mi>",
+      "preference": "default"
     }
   }
 }
