@@ -212,7 +212,7 @@
       "expected": "연속된 등식"
     },
     "AbstrRoot_default": {
-      "expected": "세제곱근"
+      "expected": "세제곱근 루트"
     },
     "AbstrRoot_brief": {
       "expected": "루트"
@@ -221,13 +221,13 @@
       "expected": "루트"
     },
     "AbstrRootNested_default": {
-      "expected": "중첩 세제곱근"
+      "expected": "세제곱근 중첩루트"
     },
     "AbstrRootNested_brief": {
-      "expected": "중첩 루트"
+      "expected": "중첩루트"
     },
     "AbstrRootNested_sbrief": {
-      "expected": "중첩 루트"
+      "expected": "중첩루트"
     },
     "_comment3_": " TODO",
     "AbstrRow_default": {
@@ -258,13 +258,13 @@
       "expected": "루트"
     },
     "AbstrSqrtNested_default": {
-      "expected": "중첩 루트"
+      "expected": "중첩루트"
     },
     "AbstrSqrtNested_brief": {
-      "expected": "중첩 루트"
+      "expected": "중첩루트"
     },
     "AbstrSqrtNested_sbrief": {
-      "expected": "중첩 루트"
+      "expected": "중첩루트"
     },
     "AbstrSquarematrix_default": {
       "expected": "2 차원 정방행렬"
@@ -439,24 +439,6 @@
     },
     "AbstrVarRowvector_default": {
       "expected": "n 차원 행 벡터"
-    },
-    "Test_AbstrAddition_default": {
-      "expected": "테스트"
-    },
-    "Test_AbstrMultiplication_default": {
-      "expected": "테스트"
-    },
-    "Test_AbstrInfixop_default": {
-      "expected": "테스트"
-    },
-    "Test_AbstrMultirel_default": {
-      "expected": "테스트"
-    },
-    "Test_AbstrVarImplicit_default": {
-      "expected": "테스트"
-    },
-    "Test_ComplexRoot_default": {
-      "expected": "테스트"
     }
   }
 }
