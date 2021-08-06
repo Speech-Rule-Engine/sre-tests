@@ -9,7 +9,7 @@
   "exclude": [],
   "tests": {
     "AbstrAddition_default": {
-      "expected": "항이 2 개인 덧셈"
+      "expected": "항이 두 개인 덧셈"
     },
     "AbstrAddition_brief": {
       "expected": "합"
@@ -36,7 +36,7 @@
       "expected": "이항식"
     },
     "AbstrCases_default": {
-      "expected": "총 케이스 수 2 으로 이루어진 조건문"
+      "expected": "케이스가 두 개인 조건문"
     },
     "AbstrCases_brief": {
       "expected": "조건문"
@@ -103,7 +103,7 @@
       "expected": "변수"
     },
     "AbstrInfixop_default": {
-      "expected": "두 개의 원소로 이루어진 나눗셈"
+      "expected": "인자가 두 개인 나눗셈"
     },
     "AbstrInfixop_brief": {
       "expected": "나눗셈"
@@ -158,7 +158,7 @@
       "expected": "대분수"
     },
     "AbstrMultiplication_default": {
-      "expected": "인자가 2 개인 곱셈"
+      "expected": "인자가 두 개인 곱셈"
     },
     "AbstrMultiplication_brief": {
       "expected": "곱"
@@ -185,7 +185,7 @@
       "expected": "수"
     },
     "AbstrPunctuated_default": {
-      "expected": "콤마 로 나누어진 총 요소의 개수가 3 인 리스트"
+      "expected": "세 개의 원소가 콤마 로 나누어진 리스트"
     },
     "AbstrPunctuated_brief": {
       "expected": "콤마 로 나누어진 리스트"
@@ -330,7 +330,7 @@
       "expected": "합"
     },
     "AbstrVarCases_default": {
-      "expected": "여러 개의 케이스로 이루어진 조건문"
+      "expected": "케이스가 여러 개인 조건문"
     },
     "AbstrVarCases_brief": {
       "expected": "조건문"
@@ -375,7 +375,7 @@
       "expected": "연속된 관계식"
     },
     "AbstrVarPunctuated_default": {
-      "expected": "여러 개의 요소가 콤마 로 나누어진 리스트"
+      "expected": "여러 개의 원소가 콤마 로 나누어진 리스트"
     },
     "AbstrVarPunctuated_brief": {
       "expected": "콤마 로 나누어진 리스트"
@@ -411,7 +411,7 @@
       "expected": "벡터"
     },
     "AbstrVarSubtraction_default": {
-      "expected": "여러 개의 원소로 이루어진 뺄셈"
+      "expected": "항이 여러 개인 뺄셈"
     },
     "AbstrVarSubtraction_brief": {
       "expected": "뺄셈"
