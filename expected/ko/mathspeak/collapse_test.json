@@ -300,7 +300,7 @@
       "expected": "여닫기 합"
     },
     "CollapsedVarCases_default": {
-      "expected": "여닫기 여러 개의 케이스로 이루어진 조건문"
+      "expected": "여닫기 케이스가 여러 개인 조건문"
     },
     "CollapsedVarCases_brief": {
       "expected": "여닫기 조건문"
@@ -345,7 +345,7 @@
       "expected": "여닫기 연속된 관계식"
     },
     "CollapsedVarPunctuated_default": {
-      "expected": "여닫기 여러 개의 요소가 콤마 로 나누어진 리스트"
+      "expected": "여닫기 여러 개의 원소가 콤마 로 나누어진 리스트"
     },
     "CollapsedVarPunctuated_brief": {
       "expected": "여닫기 콤마 로 나누어진 리스트"
@@ -387,7 +387,7 @@
       "expected": "여닫기 중첩 루트의 제곱근시작 3 제곱근끝 a"
     },
     "CollapsedVarSubtraction_default": {
-      "expected": "여닫기 여러 개의 원소로 이루어진 뺄셈"
+      "expected": "여닫기 항이 여러 개인 뺄셈"
     },
     "CollapsedVarSubtraction_brief": {
       "expected": "여닫기 뺄셈"
@@ -396,7 +396,7 @@
       "expected": "여닫기 뺄셈"
     },
     "CollapsedCountImplicit_default": {
-      "expected": "여닫기 인자가 3 개인 곱셈"
+      "expected": "여닫기 인자가 세 개인 곱셈"
     },
     "CollapsedCountImplicit_brief": {
       "expected": "여닫기 곱"
@@ -405,7 +405,7 @@
       "expected": "여닫기 곱"
     },
     "CollapsedVarImplicit_default": {
-      "expected": "여닫기 인자가 세 개인 곱셈"
+      "expected": "여닫기 인자가 여러 개인 곱셈"
     },
     "CollapsedVarArrowRelation_default": {
       "expected": "여닫기 여러 개의 연속된 화살표"
