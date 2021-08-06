@@ -9,7 +9,7 @@
   "exclude": [],
   "tests": {
     "CollapsedAddition_default": {
-      "expected": "여닫기 항이 2 개인 덧셈"
+      "expected": "여닫기 항이 두 개인 덧셈"
     },
     "CollapsedAddition_brief": {
       "expected": "여닫기 합"
@@ -36,7 +36,7 @@
       "expected": "여닫기 이항식"
     },
     "CollapsedCases_default": {
-      "expected": "여닫기 총 케이스 수 2 으로 이루어진 조건문"
+      "expected": "여닫기 케이스가 두 개인 조건문"
     },
     "CollapsedCases_brief": {
       "expected": "여닫기 조건문"
@@ -93,7 +93,7 @@
       "expected": "여닫기 긴 변수"
     },
     "CollapsedInfixop_default": {
-      "expected": "여닫기 두 개의 원소로 이루어진 나눗셈"
+      "expected": "여닫기 인자가 두 개인 나눗셈"
     },
     "CollapsedInfixop_brief": {
       "expected": "여닫기 나눗셈"
@@ -138,7 +138,7 @@
       "expected": "여닫기 긴 대분수"
     },
     "CollapsedMultiplication_default": {
-      "expected": "여닫기 인자가 2 개인 곱셈"
+      "expected": "여닫기 인자가 두 개인 곱셈"
     },
     "CollapsedMultiplication_brief": {
       "expected": "여닫기 곱"
@@ -165,7 +165,7 @@
       "expected": "여닫기 긴 수"
     },
     "CollapsedPunctuated_default": {
-      "expected": "여닫기 콤마 로 나누어진 총 요소의 개수가 3 인 리스트"
+      "expected": "여닫기 세 개의 원소가 콤마 로 나누어진 리스트"
     },
     "CollapsedPunctuated_brief": {
       "expected": "여닫기 콤마 로 나누어진 리스트"
@@ -192,7 +192,7 @@
       "expected": "여닫기 연속된 등식"
     },
     "CollapsedRoot_default": {
-      "expected": "여닫기 3 제곱근"
+      "expected": "여닫기 루트의 3"
     },
     "CollapsedRoot_brief": {
       "expected": "여닫기 루트"
@@ -405,7 +405,7 @@
       "expected": "여닫기 곱"
     },
     "CollapsedVarImplicit_default": {
-      "expected": "여닫기 인자가 여러 개인 곱셈"
+      "expected": "여닫기 인자가 세 개인 곱셈"
     },
     "CollapsedVarArrowRelation_default": {
       "expected": "여닫기 여러 개의 연속된 화살표"
