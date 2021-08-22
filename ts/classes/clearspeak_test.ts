@@ -74,4 +74,14 @@ export class BrailleLayoutTest extends SpeechTest {
       {markup: EngineConst.Markup.NONE});
     super.tearDownTest();
   }
+
+  /**
+   * @override
+   */
+  public appendRuleExample(
+    input: string, output: string, style: string, ...rest: string[]) {
+    output = output.replace(/\n/g, '<br>\n');
+    super.appendRuleExample(input, output, style, ...rest);
+  }
+
 }
