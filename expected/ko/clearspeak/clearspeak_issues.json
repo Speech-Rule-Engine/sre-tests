@@ -1,11 +1,11 @@
 {
-    "_comment0_": " Tests from the issues discovered in ClearspeakEnglish rules.",
-    "name": "EnglishClearspeakIssues",
-    "locale": "en",
+    "_comment0_": " Tests from the issues discovered in ClearspeakKorean rules.",
+    "name": "KoreanClearspeakIssues",
+    "locale": "ko",
     "factory": "clearspeak",
     "base": "input/clearspeak/clearspeak_issues.json",
-    "information": "English Clearspeak Issues tests.",
-    "active": "ClearspeakIssuesEnglish",
+    "information": "Korean Clearspeak Issues tests.",
+    "active": "ClearspeakIssuesKorean",
     "exclude": [],
     "tests": {
       "_comment1_": " Issues",
@@ -18,11 +18,11 @@
       "IssueNumbers_1": {
         "expected": "수 t 2 e 4"
       },
-      "IssueNumbers_2": { // 보류
-        "expected": "number number sign F F 0 0 0 0"
+      "IssueNumbers_2": {
+        "expected": "보류 number number sign F F 0 0 0 0"
       },
-      "IssueNumbers_3": { // 보류
-        "expected": "number number sign F F F F"
+      "IssueNumbers_3": {
+        "expected": "보류 number number sign F F F F"
       },
       "Issue320_1": {
         "expected": "편미분"
@@ -42,8 +42,8 @@
       "Issue320_6": {
         "expected": "편미분 편미분 x"
       },
-      "Issue320_7": { // 보류 (normal?)
-        "expected": "괄호 열고, 분모가 편미분 x 제곱이고, 분자가 편미분 제곱인 분수, 더하기, 분모가 편미분 y 제곱이고, 분자가 편미분 제곱인 분수, 괄호 닫고, 곱하기, 절댓값 파이 곱하기, 괄호 열고, x 더하기 normal i, y, 괄호 닫고, 제곱 등호 0"
+      "Issue320_7": { 
+        "expected": "보류 (normal?) 괄호 열고, 분모가 편미분 x 제곱이고, 분자가 편미분 제곱인 분수, 더하기, 분모가 편미분 y 제곱이고, 분자가 편미분 제곱인 분수, 괄호 닫고, 곱하기, 절댓값 파이 곱하기, 괄호 열고, x 더하기 normal i, y, 괄호 닫고, 제곱 등호 0"
       },
       "Issue301_1": {
         "expected": "4 밀리미터"
@@ -57,8 +57,8 @@
       "Issue301_4": {
         "expected": "1 밀리미터"
       },
-      "Issue_442_0": { // 보류
-        "expected": "9 나누기 3 은 9 곱하기 3 과 같지 않다"
+      "Issue_442_0": {
+        "expected": "// 보류 9 나누기 3 은 9 곱하기 3 과 같지 않다"
       },
       "Issue_442_1": {
         "expected": "9 나누기 3"
