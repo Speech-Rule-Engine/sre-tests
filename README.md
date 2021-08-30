@@ -379,7 +379,7 @@ using method:
 gt.generateTestJson(INPUT, OUTPUT, option FIELD);
 ```
 
-This transforms the `INPUT` file sets into `OUTPUT` fof the form
+This transforms the `INPUT` file sets into `OUTPUT` of the form
 
 ```javascript
 {
