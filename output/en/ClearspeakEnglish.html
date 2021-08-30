@@ -179,11 +179,11 @@
 </table>
 <h2 id="English_Clearspeak_Coverage_tests__en_SetMemberSymbol_Element">English Clearspeak Coverage tests. Locale: en, Style: <td>SetMemberSymbol_Element</td>.</h2>
 <table>
-<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>x</mi><mo>&#x2209;</mo><mi>A</mi><mo>|</mo><mi>B</mi><mo>}</mo></math></td><td>the set of all x not element of A such that B</td></tr>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>x</mi><mo>&#x2209;</mo><mi>A</mi><mo>|</mo><mi>B</mi><mo>}</mo></math></td><td>the set of all x not an element of A such that B</td></tr>
 </table>
 <h2 id="English_Clearspeak_Coverage_tests__en_SetMemberSymbol_Member">English Clearspeak Coverage tests. Locale: en, Style: <td>SetMemberSymbol_Member</td>.</h2>
 <table>
-<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>x</mi><mo>&#x2209;</mo><mi>A</mi><mo>|</mo><mi>B</mi><mo>}</mo></math></td><td>the set of all x not member of A such that B</td></tr>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi>x</mi><mo>&#x2209;</mo><mi>A</mi><mo>|</mo><mi>B</mi><mo>}</mo></math></td><td>the set of all x not a member of A such that B</td></tr>
 </table>
 <h2 id="English_Clearspeak_Coverage_tests__en_MultiLineLabel_Case">English Clearspeak Coverage tests. Locale: en, Style: <td>MultiLineLabel_Case</td>.</h2>
 <table>
@@ -204,6 +204,76 @@
 <h2 id="English_Clearspeak_Coverage_tests__en_Paren_Speak">English Clearspeak Coverage tests. Locale: en, Style: <td>Paren_Speak</td>.</h2>
 <table>
 <tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>(</mo><mi>f</mi><mo>+</mo><mi>g</mi><mo>)</mo></mrow><mo>(</mo><mn>2</mn><mo>+</mo><mi>x</mi><mo>)</mo></mrow></math></td><td>open paren, f plus g, close paren, of, open paren, 2 plus x, close paren</td></tr>
+</table>
+<h2 id="English_Clearspeak_Coverage_for_Elements_symbol_tests__en_default">English Clearspeak Coverage for Elements symbol tests. Locale: en, Style: <td>Verbose</td>.</h2>
+<table>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mo>{</mo><mi>z</mi><mo>&#x2208;</mo><mi>A</mi><mo>:</mo><mi>z</mi><mo>}</mo></math></math></td><td>the set of all z in A such that z</td></tr>
+<tr><td>1</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mo>{</mo><mi>z</mi><mo>&#x220A;</mo><mi>A</mi><mo>:</mo><mi>z</mi><mo>}</mo></math></math></td><td>the set of all z in A such that z</td></tr>
+<tr><td>2</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mo>{</mo><mi>z</mi><mo>&#x2209;</mo><mi>A</mi><mo>:</mo><mi>z</mi><mo>}</mo></math></math></td><td>the set of all z not in A such that z</td></tr>
+<tr><td>3</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mo>{</mo><mi>A</mi><mo>&#x220B;</mo><mi>z</mi><mo>:</mo><mi>z</mi><mo>}</mo></math></math></td><td>the set of all A contains as member z such that z</td></tr>
+<tr><td>4</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mo>{</mo><mi>A</mi><mo>&#x220D;</mo><mi>z</mi><mo>:</mo><mi>z</mi><mo>}</mo></math></math></td><td>the set of all A contains as member z such that z</td></tr>
+<tr><td>5</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mo>{</mo><mi>A</mi><mo>&#x220C;</mo><mi>z</mi><mo>:</mo><mi>z</mi><mo>}</mo></math></math></td><td>the set of all A does not contain as member z such that z</td></tr>
+<tr><td>6</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mi>z</mi><mo>&#x2208;</mo><mi>A</mi></math></math></td><td>z is a member of A</td></tr>
+<tr><td>7</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mi>z</mi><mo>&#x220A;</mo><mi>A</mi></math></math></td><td>z is a member of A</td></tr>
+<tr><td>8</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mi>z</mi><mo>&#x2209;</mo><mi>A</mi></math></math></td><td>z is not a member of A</td></tr>
+<tr><td>9</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mi>A</mi><mo>&#x220B;</mo><mi>z</mi></math></math></td><td>A contains as member z</td></tr>
+<tr><td>10</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mi>A</mi><mo>&#x220D;</mo><mi>z</mi></math></math></td><td>A contains as member z</td></tr>
+<tr><td>11</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mi>A</mi><mo>&#x220C;</mo><mi>z</mi></math></math></td><td>A does not contain as member z</td></tr>
+<tr><td>12</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><munder><mo>&#x2211;</mo><mrow><mi>z</mi><mo>&#x2208;</mo><mi>A</mi></mrow></munder></math></math></td><td>sum over z is a member of A</td></tr>
+<tr><td>13</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><munder><mo>&#x2211;</mo><mrow><mi>z</mi><mo>&#x220A;</mo><mi>A</mi></mrow></munder></math></math></td><td>sum over z is a member of A</td></tr>
+<tr><td>14</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><munder><mo>&#x2211;</mo><mrow><mi>z</mi><mo>&#x2209;</mo><mi>A</mi></mrow></munder></math></math></td><td>sum over z is not a member of A</td></tr>
+<tr><td>15</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><munder><mo>&#x2211;</mo><mrow><mi>A</mi><mo>&#x220B;</mo><mi>z</mi></mrow></munder></math></math></td><td>sum over A contains as member z</td></tr>
+<tr><td>16</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><munder><mo>&#x2211;</mo><mrow><mi>A</mi><mo>&#x220D;</mo><mi>z</mi></mrow></munder></math></math></td><td>sum over A contains as member z</td></tr>
+<tr><td>17</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><munder><mo>&#x2211;</mo><mrow><mi>A</mi><mo>&#x220C;</mo><mi>z</mi></mrow></munder></math></math></td><td>sum over A does not contain as member z</td></tr>
+</table>
+<h2 id="English_Clearspeak_Coverage_for_Elements_symbol_tests__en_SetMemberSymbol_Auto">English Clearspeak Coverage for Elements symbol tests. Locale: en, Style: <td>SetMemberSymbol_Auto</td>.</h2>
+<table>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mi>z</mi><mo>&#x2208;</mo><mi>A</mi></math></math></td><td>z is a member of A</td></tr>
+<tr><td>1</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mo>{</mo><mi>z</mi><mo>&#x2208;</mo><mi>A</mi><mo>:</mo><mi>z</mi><mo>}</mo></math></math></td><td>the set of all z in A such that z</td></tr>
+<tr><td>2</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><munder><mo>&#x2211;</mo><mrow><mi>z</mi><mo>&#x2208;</mo><mi>A</mi></mrow></munder></math></math></td><td>sum over z is a member of A</td></tr>
+<tr><td>3</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mi>z</mi><mo>&#x2209;</mo><mi>A</mi></math></math></td><td>z is not a member of A</td></tr>
+<tr><td>4</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mo>{</mo><mi>z</mi><mo>&#x2209;</mo><mi>A</mi><mo>:</mo><mi>z</mi><mo>}</mo></math></math></td><td>the set of all z not in A such that z</td></tr>
+<tr><td>5</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><munder><mo>&#x2211;</mo><mrow><mi>z</mi><mo>&#x2209;</mo><mi>A</mi></mrow></munder></math></math></td><td>sum over z is not a member of A</td></tr>
+</table>
+<h2 id="English_Clearspeak_Coverage_for_Elements_symbol_tests__en_SetMemberSymbol_Member">English Clearspeak Coverage for Elements symbol tests. Locale: en, Style: <td>SetMemberSymbol_Member</td>.</h2>
+<table>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mi>z</mi><mo>&#x2208;</mo><mi>A</mi></math></math></td><td>z is a member of A</td></tr>
+<tr><td>1</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mo>{</mo><mi>z</mi><mo>&#x2208;</mo><mi>A</mi><mo>:</mo><mi>z</mi><mo>}</mo></math></math></td><td>the set of all z member of A such that z</td></tr>
+<tr><td>2</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><munder><mo>&#x2211;</mo><mrow><mi>z</mi><mo>&#x2208;</mo><mi>A</mi></mrow></munder></math></math></td><td>sum over z is a member of A</td></tr>
+<tr><td>3</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mi>z</mi><mo>&#x2209;</mo><mi>A</mi></math></math></td><td>z is not a member of A</td></tr>
+<tr><td>4</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mo>{</mo><mi>z</mi><mo>&#x2209;</mo><mi>A</mi><mo>:</mo><mi>z</mi><mo>}</mo></math></math></td><td>the set of all z not a member of A such that z</td></tr>
+<tr><td>5</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><munder><mo>&#x2211;</mo><mrow><mi>z</mi><mo>&#x2209;</mo><mi>A</mi></mrow></munder></math></math></td><td>sum over z is not a member of A</td></tr>
+</table>
+<h2 id="English_Clearspeak_Coverage_for_Elements_symbol_tests__en_SetMemberSymbol_Element">English Clearspeak Coverage for Elements symbol tests. Locale: en, Style: <td>SetMemberSymbol_Element</td>.</h2>
+<table>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mi>z</mi><mo>&#x2208;</mo><mi>A</mi></math></math></td><td>z is an element of A</td></tr>
+<tr><td>1</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mo>{</mo><mi>z</mi><mo>&#x2208;</mo><mi>A</mi><mo>:</mo><mi>z</mi><mo>}</mo></math></math></td><td>the set of all z element of A such that z</td></tr>
+<tr><td>2</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><munder><mo>&#x2211;</mo><mrow><mi>z</mi><mo>&#x2208;</mo><mi>A</mi></mrow></munder></math></math></td><td>sum over z is an element of A</td></tr>
+<tr><td>3</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mi>z</mi><mo>&#x2209;</mo><mi>A</mi></math></math></td><td>z is not an element of A</td></tr>
+<tr><td>4</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mo>{</mo><mi>z</mi><mo>&#x2209;</mo><mi>A</mi><mo>:</mo><mi>z</mi><mo>}</mo></math></math></td><td>the set of all z not an element of A such that z</td></tr>
+<tr><td>5</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><munder><mo>&#x2211;</mo><mrow><mi>z</mi><mo>&#x2209;</mo><mi>A</mi></mrow></munder></math></math></td><td>sum over z is not an element of A</td></tr>
+</table>
+<h2 id="English_Clearspeak_Coverage_for_Elements_symbol_tests__en_SetMemberSymbol_In">English Clearspeak Coverage for Elements symbol tests. Locale: en, Style: <td>SetMemberSymbol_In</td>.</h2>
+<table>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mi>z</mi><mo>&#x2208;</mo><mi>A</mi></math></math></td><td>z is in A</td></tr>
+<tr><td>1</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mo>{</mo><mi>z</mi><mo>&#x2208;</mo><mi>A</mi><mo>:</mo><mi>z</mi><mo>}</mo></math></math></td><td>the set of all z in A such that z</td></tr>
+<tr><td>2</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><munder><mo>&#x2211;</mo><mrow><mi>z</mi><mo>&#x2208;</mo><mi>A</mi></mrow></munder></math></math></td><td>sum over z is in A</td></tr>
+<tr><td>3</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mi>z</mi><mo>&#x2209;</mo><mi>A</mi></math></math></td><td>z is not in A</td></tr>
+<tr><td>4</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mo>{</mo><mi>z</mi><mo>&#x2209;</mo><mi>A</mi><mo>:</mo><mi>z</mi><mo>}</mo></math></math></td><td>the set of all z not in A such that z</td></tr>
+<tr><td>5</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><munder><mo>&#x2211;</mo><mrow><mi>z</mi><mo>&#x2209;</mo><mi>A</mi></mrow></munder></math></math></td><td>sum over z is not in A</td></tr>
+</table>
+<h2 id="English_Clearspeak_Coverage_for_Elements_symbol_tests__en_SetMemberSymbol_Belongs">English Clearspeak Coverage for Elements symbol tests. Locale: en, Style: <td>SetMemberSymbol_Belongs</td>.</h2>
+<table>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mi>z</mi><mo>&#x2208;</mo><mi>A</mi></math></math></td><td>z belongs to A</td></tr>
+<tr><td>1</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mo>{</mo><mi>z</mi><mo>&#x2208;</mo><mi>A</mi><mo>:</mo><mi>z</mi><mo>}</mo></math></math></td><td>the set of all z belonging to A such that z</td></tr>
+<tr><td>2</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><munder><mo>&#x2211;</mo><mrow><mi>z</mi><mo>&#x2208;</mo><mi>A</mi></mrow></munder></math></math></td><td>sum over z belongs to A</td></tr>
+<tr><td>3</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mi>z</mi><mo>&#x2209;</mo><mi>A</mi></math></math></td><td>z does not belong to A</td></tr>
+<tr><td>4</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mo>{</mo><mi>z</mi><mo>&#x2209;</mo><mi>A</mi><mo>:</mo><mi>z</mi><mo>}</mo></math></math></td><td>the set of all z not belonging to A such that z</td></tr>
+<tr><td>5</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><munder><mo>&#x2211;</mo><mrow><mi>z</mi><mo>&#x2209;</mo><mi>A</mi></mrow></munder></math></math></td><td>sum over z does not belong to A</td></tr>
+</table>
+<h2 id="English_Clearspeak_Coverage_for_Elements_symbol_tests__en_SetMemberSymbol_Belongs:Caps_SayCaps:Fraction_GeneralEndFrac">English Clearspeak Coverage for Elements symbol tests. Locale: en, Style: <td>SetMemberSymbol_Belongs:Caps_SayCaps:Fraction_GeneralEndFrac</td>.</h2>
+<table>
+<tr><td>0</td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><math><mo>{</mo><mi>a</mi><mo>&#x2208;</mo><mi>A</mi><mrow><mo>|</mo></mrow><mfrac><mn>1</mn><mi>a</mi></mfrac><mo>}</mo></math></math></td><td>the set of all a belonging to, cap A such that, the fraction with numerator 1, and denominator a, end fraction</td></tr>
 </table>
 <h2 id="English_Clearspeak_Exponents_rule_tests__en_Exponent_Auto">English Clearspeak Exponents rule tests. Locale: en, Style: <td>Exponent_Auto</td>.</h2>
 <table>
