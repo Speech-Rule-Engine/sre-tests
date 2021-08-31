@@ -1,0 +1,274 @@
+{
+  "name": "BokmalMathspeakIssues1",
+  "locale": "nb",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_issues1.json",
+  "information": "Bokmal Mathspeak Issues 1.",
+  "domain": "mathspeak",
+  "active": "MathspeakIssuesBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "AbsValueVsNeutral_0_default": {
+      "expected": "vertikalstrek vertikalstrek a"
+    },
+    "AbsValueVsNeutral_0_brief": {
+      "expected": "vertikalstrek vertikalstrek a"
+    },
+    "AbsValueVsNeutral_0_sbrief": {
+      "expected": "vertikalstrek vertikalstrek a"
+    },
+    "AbsValueVsNeutral_1_default": {
+      "expected": "vertikal strek vertikal strek a"
+    },
+    "AbsValueVsNeutral_1_brief": {
+      "expected": "vertikal strek vertikal strek a"
+    },
+    "AbsValueVsNeutral_1_sbrief": {
+      "expected": "vertikal strek vertikal strek a"
+    },
+    "NegativeVulgarFraction_default": {
+      "expected": "minus fem attentel"
+    },
+    "NegativeVulgarFraction_brief": {
+      "expected": "minus fem attentel"
+    },
+    "NegativeVulgarFraction_sbrief": {
+      "expected": "minus fem attentel"
+    },
+    "NonalphaIdentifier_default": {
+      "expected": "30 grader"
+    },
+    "NonalphaIdentifier_brief": {
+      "expected": "30 grader"
+    },
+    "NonalphaIdentifier_sbrief": {
+      "expected": "30 grader"
+    },
+    "MixedIdentifier_default": {
+      "expected": "S i O 2 pluss 6 H F høyrepil H 2 S i F 6 pluss 2 H 2 O"
+    },
+    "MixedIdentifier_brief": {
+      "expected": "S i O 2 pluss 6 H F høyrepil H 2 S i F 6 pluss 2 H 2 O"
+    },
+    "MixedIdentifier_sbrief": {
+      "expected": "S i O 2 pluss 6 H F høyrepil H 2 S i F 6 pluss 2 H 2 O"
+    },
+    "ParenSuper_default": {
+      "expected": "venstre parentes a høyre parentes Superskript 2"
+    },
+    "ParenSuper_brief": {
+      "expected": "venstre parentes a høyre parentes Sub 2"
+    },
+    "ParenSuper_sbrief": {
+      "expected": "venstre parentes a høyre parentes Sub 2"
+    },
+    "ParenConvoluted_default": {
+      "expected": "venstre parentes minus x Superskript 2 skråstrek 2 høyre parentes"
+    },
+    "ParenConvoluted_brief": {
+      "expected": "venstre parentes minus x Sub 2 skråstrek 2 høyre parentes"
+    },
+    "ParenConvoluted_sbrief": {
+      "expected": "venstre parentes minus x Sub 2 skråstrek 2 høyre parentes"
+    },
+    "SupBaseRelseq_default": {
+      "expected": "c 1 h Superskript 4 minus 2 s Grunnlinje er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk er mindre enn eller er lik c 2 h Superskript 4 minus 2 s"
+    },
+    "SupBaseRelseq_brief": {
+      "expected": "c 1 h Sub 4 minus 2 s Basis er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk er mindre enn eller er lik c 2 h Sub 4 minus 2 s"
+    },
+    "SupBaseRelseq_sbrief": {
+      "expected": "c 1 h Sub 4 minus 2 s Basis er mindre enn eller er lik Brøk 1 Over 2 T SluttBrøk er mindre enn eller er lik c 2 h Sub 4 minus 2 s"
+    },
+    "SupBaseMultirel_default": {
+      "expected": "c 1 h Superskript 4 minus 2 s Grunnlinje er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk er lik c 2 h Superskript 4 minus 2 s"
+    },
+    "SupBaseMultirel_brief": {
+      "expected": "c 1 h Sub 4 minus 2 s Basis er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk er lik c 2 h Sub 4 minus 2 s"
+    },
+    "SupBaseMultirel_sbrief": {
+      "expected": "c 1 h Sub 4 minus 2 s Basis er mindre enn eller er lik Brøk 1 Over 2 T SluttBrøk er lik c 2 h Sub 4 minus 2 s"
+    },
+    "SubBaseRelseq_default": {
+      "expected": "h Subskript s Grunnlinje er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk er mindre enn eller er lik h Subskript s"
+    },
+    "SubBaseRelseq_brief": {
+      "expected": "h Sub s Basis er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk er mindre enn eller er lik h Sub s"
+    },
+    "SubBaseRelseq_sbrief": {
+      "expected": "h Sub s Basis er mindre enn eller er lik Brøk 1 Over 2 T SluttBrøk er mindre enn eller er lik h Sub s"
+    },
+    "SubBaseMultirel_default": {
+      "expected": "h Subskript s Grunnlinje er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk er lik h Subskript s"
+    },
+    "SubBaseMultirel_brief": {
+      "expected": "h Sub s Basis er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk er lik h Sub s"
+    },
+    "SubBaseMultirel_sbrief": {
+      "expected": "h Sub s Basis er mindre enn eller er lik Brøk 1 Over 2 T SluttBrøk er lik h Sub s"
+    },
+    "SubSuperBaseRelseq_default": {
+      "expected": "h Subskript s Superskript t Grunnlinje er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk er mindre enn eller er lik h Subskript s Superskript t"
+    },
+    "SubSuperBaseRelseq_brief": {
+      "expected": "h Sub s Sub t Basis er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk er mindre enn eller er lik h Sub s Sub t"
+    },
+    "SubSuperBaseRelseq_sbrief": {
+      "expected": "h Sub s Sub t Basis er mindre enn eller er lik Brøk 1 Over 2 T SluttBrøk er mindre enn eller er lik h Sub s Sub t"
+    },
+    "SubSuperBaseMultirel_default": {
+      "expected": "h Subskript s Superskript t Grunnlinje er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk er lik h Subskript s Superskript t"
+    },
+    "SubSuperBaseMultirel_brief": {
+      "expected": "h Sub s Sub t Basis er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk er lik h Sub s Sub t"
+    },
+    "SubSuperBaseMultirel_sbrief": {
+      "expected": "h Sub s Sub t Basis er mindre enn eller er lik Brøk 1 Over 2 T SluttBrøk er lik h Sub s Sub t"
+    },
+    "SquareWithText_default": {
+      "expected": "Start Brøk area of triangle Over area of square Slutt Brøk er lik Start Brøk 1 unit Superskript 2 Grunnlinje Over 16 units Superskript 3 Grunnlinje Slutt Brøk"
+    },
+    "SquareWithText_brief": {
+      "expected": "Start Brøk area of triangle Over area of square Slutt Brøk er lik Start Brøk 1 unit Sub 2 Basis Over 16 units Sub 3 Basis Slutt Brøk"
+    },
+    "SquareWithText_sbrief": {
+      "expected": "Brøk area of triangle Over area of square SluttBrøk er lik Brøk 1 unit Sub 2 Basis Over 16 units Sub 3 Basis SluttBrøk"
+    },
+    "FootnoteWithText_default": {
+      "expected": "area of triangle area of square Superskript 1 Grunnlinje 1 unit Superskript 2 Grunnlinje 16 units Superskript 3"
+    },
+    "FootnoteWithText_brief": {
+      "expected": "area of triangle area of square Sub 1 Basis 1 unit Sub 2 Basis 16 units Sub 3"
+    },
+    "FootnoteWithText_sbrief": {
+      "expected": "area of triangle area of square Sub 1 Basis 1 unit Sub 2 Basis 16 units Sub 3"
+    },
+    "FootnoteWithSimpleText_default": {
+      "expected": "area of triangle Superskript 2"
+    },
+    "FootnoteWithSimpleText_brief": {
+      "expected": "area of triangle Sub 2"
+    },
+    "FootnoteWithSimpleText_sbrief": {
+      "expected": "area of triangle Sub 2"
+    },
+    "LabelledRow_default": {
+      "expected": "venstre parentes 1 høyre parentes ab"
+    },
+    "LabelledRow_brief": {
+      "expected": "venstre parentes 1 høyre parentes ab"
+    },
+    "LabelledRow_sbrief": {
+      "expected": "venstre parentes 1 høyre parentes ab"
+    },
+    "LabelledLine_default": {
+      "expected": "venstre parentes 1 høyre parentes a"
+    },
+    "LabelledLine_brief": {
+      "expected": "venstre parentes 1 høyre parentes a"
+    },
+    "LabelledLine_sbrief": {
+      "expected": "venstre parentes 1 høyre parentes a"
+    },
+    "LabelledEmptyLine_default": {
+      "expected": "venstre parentes 1 høyre parentes"
+    },
+    "LabelledEmptyLine_brief": {
+      "expected": "venstre parentes 1 høyre parentes"
+    },
+    "LabelledEmptyLine_sbrief": {
+      "expected": "venstre parentes 1 høyre parentes"
+    },
+    "EmptyLine_default": {
+      "expected": ""
+    },
+    "EmptyLine_brief": {
+      "expected": ""
+    },
+    "EmptyLine_sbrief": {
+      "expected": ""
+    },
+    "EmptyRow_default": {
+      "expected": "ab"
+    },
+    "EmptyRow_brief": {
+      "expected": "ab"
+    },
+    "EmptyRow_sbrief": {
+      "expected": "ab"
+    },
+    "EmptyCell_default": {
+      "expected": ""
+    },
+    "EmptyCell_brief": {
+      "expected": ""
+    },
+    "EmptyCell_sbrief": {
+      "expected": ""
+    },
+    "TextLabelledLine_default": {
+      "expected": "venstre parentes 1 høyre parentes a"
+    },
+    "TextLabelledLine_brief": {
+      "expected": "venstre parentes 1 høyre parentes a"
+    },
+    "TextLabelledLine_sbrief": {
+      "expected": "venstre parentes 1 høyre parentes a"
+    },
+    "TextLabelledRow_default": {
+      "expected": "venstre parentes 1 høyre parentes ab"
+    },
+    "TextLabelledRow_brief": {
+      "expected": "venstre parentes 1 høyre parentes ab"
+    },
+    "TextLabelledRow_sbrief": {
+      "expected": "venstre parentes 1 høyre parentes ab"
+    },
+    "EncloseOverbar_default": {
+      "expected": "a"
+    },
+    "EncloseOverbar_brief": {
+      "expected": "a"
+    },
+    "EncloseOverbar_sbrief": {
+      "expected": "a"
+    },
+    "EncloseUnderbar_default": {
+      "expected": "a"
+    },
+    "EncloseUnderbar_brief": {
+      "expected": "a"
+    },
+    "EncloseUnderbar_sbrief": {
+      "expected": "a"
+    },
+    "PrefixopSquare_default": {
+      "expected": "partiellderivert Superskript 2 Grunnlinje x"
+    },
+    "PrefixopSquare_brief": {
+      "expected": "partiellderivert Sub 2 Basis x"
+    },
+    "PrefixopSquare_sbrief": {
+      "expected": "partiellderivert Sub 2 Basis x"
+    },
+    "PrefixopCube_default": {
+      "expected": "partiellderivert Superskript 3 Grunnlinje x"
+    },
+    "PrefixopCube_brief": {
+      "expected": "partiellderivert Sub 3 Basis x"
+    },
+    "PrefixopCube_sbrief": {
+      "expected": "partiellderivert Sub 3 Basis x"
+    },
+    "Vector_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes abc"
+    },
+    "Vector_brief": {
+      "expected": "venstre hakeparentes høyre hakeparentes abc"
+    },
+    "Vector_sbrief": {
+      "expected": "venstre hakeparentes høyre hakeparentes abc"
+    }
+  }
+}

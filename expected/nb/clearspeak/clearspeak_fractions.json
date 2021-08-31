@@ -1,0 +1,421 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "BokmalClearspeakFractions",
+  "locale": "nb",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_fractions.json",
+  "information": "Bokmal Clearspeak Fractions rule tests.",
+  "active": "ClearspeakBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Frac001": {
+      "expected": "12"
+    },
+    "Frac002": {
+      "expected": "1232"
+    },
+    "Frac002a": {
+      "expected": "xy"
+    },
+    "Frac002b": {
+      "expected": "ganger ganger 2 x ganger ganger 3 y"
+    },
+    "Frac002c": {
+      "expected": "ganger ganger xy ganger ganger cd"
+    },
+    "Frac002d": {
+      "expected": "1213"
+    },
+    "Frac002e": {
+      "expected": "minus minus xy"
+    },
+    "Frac002f": {
+      "expected": "minus minus ganger ganger 2 x ganger ganger 3 y"
+    },
+    "Frac002g": {
+      "expected": "ganger ganger xy minus minus ganger ganger cd"
+    },
+    "Frac002h": {
+      "expected": "12 minus minus 13"
+    },
+    "Frac003": {
+      "expected": "pluss pluss 2313"
+    },
+    "Frac004": {
+      "expected": "pluss pluss xy 2"
+    },
+    "Frac005": {
+      "expected": "pluss pluss xy minus minus xy"
+    },
+    "Frac006": {
+      "expected": "pluss pluss xy minus minus xy pluss 23"
+    },
+    "Frac007": {
+      "expected": "milesgallon"
+    },
+    "Frac008": {
+      "expected": "skiller 2 miles skiller 3 gallons"
+    },
+    "Frac009": {
+      "expected": "12"
+    },
+    "Frac010": {
+      "expected": "1232"
+    },
+    "Frac011": {
+      "expected": "pluss pluss 2313"
+    },
+    "Frac012": {
+      "expected": "pluss pluss xy 2"
+    },
+    "Frac013": {
+      "expected": "pluss pluss xy minus minus xy"
+    },
+    "Frac014": {
+      "expected": "pluss pluss xy minus minus xy pluss 23"
+    },
+    "Frac015": {
+      "expected": "milesgallon"
+    },
+    "Frac016": {
+      "expected": "skiller 2 miles skiller 3 gallons"
+    },
+    "Frac017": {
+      "expected": "12"
+    },
+    "Frac018": {
+      "expected": "1232"
+    },
+    "Frac019": {
+      "expected": "pluss pluss 2313"
+    },
+    "Frac020": {
+      "expected": "pluss pluss xy 2"
+    },
+    "Frac021": {
+      "expected": "pluss pluss xy minus minus xy"
+    },
+    "Frac022": {
+      "expected": "pluss pluss xy minus minus xy pluss 23"
+    },
+    "Frac023": {
+      "expected": "milesgallons"
+    },
+    "Frac024": {
+      "expected": "skiller 2 miles skiller 3 gallons"
+    },
+    "Frac025": {
+      "expected": "12"
+    },
+    "Frac026": {
+      "expected": "1232"
+    },
+    "Frac027": {
+      "expected": "pluss pluss 2313"
+    },
+    "Frac028": {
+      "expected": "pluss pluss xy 2"
+    },
+    "Frac029": {
+      "expected": "pluss pluss xy minus minus xy"
+    },
+    "Frac030": {
+      "expected": "pluss pluss xy minus minus xy pluss 23"
+    },
+    "Frac031": {
+      "expected": "milesgallon"
+    },
+    "Frac032": {
+      "expected": "12"
+    },
+    "Frac033": {
+      "expected": "1232"
+    },
+    "Frac034": {
+      "expected": "pluss pluss 2313"
+    },
+    "Frac035": {
+      "expected": "pluss pluss xy 2"
+    },
+    "Frac036": {
+      "expected": "pluss pluss xy minus minus xy"
+    },
+    "Frac037": {
+      "expected": "pluss pluss xy minus minus xy pluss 23"
+    },
+    "Frac038": {
+      "expected": "milesgallon"
+    },
+    "Frac039": {
+      "expected": "skiller 2 miles skiller 3 gallons"
+    },
+    "Frac040": {
+      "expected": "12"
+    },
+    "Frac041": {
+      "expected": "1232"
+    },
+    "Frac042": {
+      "expected": "pluss pluss 2313"
+    },
+    "Frac043": {
+      "expected": "pluss pluss xy 2"
+    },
+    "Frac044": {
+      "expected": "pluss pluss xy minus minus xy"
+    },
+    "Frac045": {
+      "expected": "pluss pluss xy minus minus xy pluss 23"
+    },
+    "Frac046": {
+      "expected": "milesgallon"
+    },
+    "Frac047": {
+      "expected": "skiller 2 miles skiller 3 gallons"
+    },
+    "Frac048": {
+      "expected": "12"
+    },
+    "Frac049": {
+      "expected": "1232"
+    },
+    "Frac050": {
+      "expected": "pluss pluss 2313"
+    },
+    "Frac051": {
+      "expected": "pluss pluss xy 2"
+    },
+    "Frac052": {
+      "expected": "pluss pluss xy minus minus xy"
+    },
+    "Frac053": {
+      "expected": "pluss pluss xy minus minus xy pluss 23"
+    },
+    "Frac054": {
+      "expected": "milesgallon"
+    },
+    "Frac055": {
+      "expected": "skiller 2 miles skiller 3 gallons"
+    },
+    "Frac056": {
+      "expected": "12"
+    },
+    "Frac057": {
+      "expected": "1232"
+    },
+    "Frac058": {
+      "expected": "pluss pluss 2313"
+    },
+    "Frac059": {
+      "expected": "pluss pluss xy 2"
+    },
+    "Frac060": {
+      "expected": "pluss pluss xy minus minus xy"
+    },
+    "Frac061": {
+      "expected": "pluss pluss xy minus minus xy pluss 23"
+    },
+    "Frac062": {
+      "expected": "milesgallon"
+    },
+    "Frac063": {
+      "expected": "skiller 2 miles skiller 3 gallons"
+    },
+    "Frac064": {
+      "expected": "12"
+    },
+    "Frac065": {
+      "expected": "1232"
+    },
+    "Frac066": {
+      "expected": "pluss pluss 2313"
+    },
+    "Frac067": {
+      "expected": "pluss pluss xy 2"
+    },
+    "Frac068": {
+      "expected": "pluss pluss xy minus minus xy"
+    },
+    "Frac069": {
+      "expected": "pluss pluss xy minus minus xy pluss 23"
+    },
+    "Frac070": {
+      "expected": "milesgallons"
+    },
+    "Frac071": {
+      "expected": "skiller 2 miles skiller 3 gallons"
+    },
+    "FrTxt001": {
+      "expected": "skiller 2 miles skiller 3 gallons"
+    },
+    "FrTxt002": {
+      "expected": "riserun"
+    },
+    "FrTxt003": {
+      "expected": "successful outcomestotal outcomes"
+    },
+    "FrTxt004": {
+      "expected": "skiller 6 ways of rolling a 7 skiller 36 ways of rolling the pair of dice"
+    },
+    "NestFrac001": {
+      "expected": "1213"
+    },
+    "NestFrac002": {
+      "expected": "1213"
+    },
+    "NestFrac003": {
+      "expected": "123"
+    },
+    "NestFrac004": {
+      "expected": "123"
+    },
+    "NestFrac005": {
+      "expected": "11321651"
+    },
+    "NestFrac006": {
+      "expected": "11321651"
+    },
+    "NestFrac007": {
+      "expected": "pluss pluss 14 x 2"
+    },
+    "NestFrac008": {
+      "expected": "3 pluss pluss 24 x"
+    },
+    "NestFrac009": {
+      "expected": "102212"
+    },
+    "NestFrac010": {
+      "expected": "pluss pluss 123 minus minus 123"
+    },
+    "NestFrac011": {
+      "expected": "pluss pluss 1 x 2 minus minus 1 x 2"
+    },
+    "NestFrac012": {
+      "expected": "pluss pluss pluss pluss x 1 minus minus x 11 pluss pluss x 1"
+    },
+    "NestFrac013": {
+      "expected": "pluss pluss pluss pluss x 1 minus minus x 412 pluss pluss x 116"
+    },
+    "NestFrac014": {
+      "expected": "1 pluss x pluss pluss 12 x"
+    },
+    "NestFrac015": {
+      "expected": "1 pluss pluss pluss x 3 pluss pluss 12 pluss pluss x 3"
+    },
+    "NestFrac016": {
+      "expected": "1 pluss 1 pluss pluss 11 pluss pluss 11 pluss pluss 11"
+    },
+    "NestFrac017": {
+      "expected": "1 pluss 1 pluss pluss 11 pluss pluss 11 pluss pluss 1 prikk prikk prikk"
+    },
+    "NestFrac018": {
+      "expected": "a 0 pluss 1 pluss pluss a 11 pluss pluss a 21 pluss pluss a 3 prikk prikk prikk"
+    },
+    "NestFrac019": {
+      "expected": "1213"
+    },
+    "NestFrac020": {
+      "expected": "1213"
+    },
+    "NestFrac021": {
+      "expected": "123"
+    },
+    "NestFrac022": {
+      "expected": "123"
+    },
+    "NestFrac023": {
+      "expected": "11321651"
+    },
+    "NestFrac024": {
+      "expected": "11321651"
+    },
+    "NestFrac025": {
+      "expected": "pluss pluss 14 x 2"
+    },
+    "NestFrac026": {
+      "expected": "3 pluss pluss 24 x"
+    },
+    "NestFrac027": {
+      "expected": "102212"
+    },
+    "NestFrac028": {
+      "expected": "pluss pluss 123 minus minus 123"
+    },
+    "NestFrac029": {
+      "expected": "pluss pluss 1 x 2 minus minus 1 x 2"
+    },
+    "NestFrac030": {
+      "expected": "pluss pluss pluss pluss x 1 minus minus x 11 pluss pluss x 1"
+    },
+    "NestFrac031": {
+      "expected": "pluss pluss pluss pluss x 1 minus minus x 412 pluss pluss x 116"
+    },
+    "NestFrac032": {
+      "expected": "1 pluss x pluss pluss 12 x"
+    },
+    "NestFrac033": {
+      "expected": "1 pluss pluss pluss x 3 pluss pluss 12 pluss pluss x 3"
+    },
+    "NestFrac034": {
+      "expected": "1 pluss 1 pluss pluss 11 pluss pluss 11 pluss pluss 11"
+    },
+    "NestFrac035": {
+      "expected": "1 pluss 1 pluss pluss 11 pluss pluss 11 pluss pluss 1 prikk prikk prikk"
+    },
+    "NestFrac036": {
+      "expected": "a 0 pluss 1 pluss pluss a 11 pluss pluss a 21 pluss pluss a 3 prikk prikk prikk"
+    },
+    "Fracfunct001": {
+      "expected": "av ff venstre parentes høyre parentes x av gg venstre parentes høyre parentes x"
+    },
+    "Fracfunct002": {
+      "expected": "pluss pluss av ff venstre parentes høyre parentes x av gg venstre parentes høyre parentes x av gg venstre parentes høyre parentes x"
+    },
+    "Fracfunct003": {
+      "expected": "av ff venstre parentes høyre parentes pluss pluss x 1 av gg venstre parentes høyre parentes x"
+    },
+    "Fracfunct004": {
+      "expected": "av ff venstre parentes høyre parentes x 2"
+    },
+    "Fracfunct005": {
+      "expected": "2 av ff venstre parentes høyre parentes x"
+    },
+    "Fracfunct006": {
+      "expected": "2 pluss pluss av gg venstre parentes høyre parentes x av gg venstre parentes høyre parentes pluss pluss x 1"
+    },
+    "Fracfunct007": {
+      "expected": "av sinsinx av coscosx"
+    },
+    "Fracfunct009": {
+      "expected": "pluss pluss av sinsinx av coscosx av coscosx"
+    },
+    "Fracfunct010": {
+      "expected": "av sinsin ganger ganger 2 x av coscos ganger ganger 3 x"
+    },
+    "Fracfunct011": {
+      "expected": "av sinsin venstre parentes høyre parentes pluss pluss xy av coscos venstre parentes høyre parentes pluss pluss xy"
+    },
+    "Fracfunct012": {
+      "expected": "av ff venstre parentes høyre parentes ganger ganger 2 x av gg venstre parentes høyre parentes ganger ganger 3 x"
+    },
+    "Fracfunct013": {
+      "expected": "av loglogx av loglogy"
+    },
+    "Fracfunct014": {
+      "expected": "av loglog ganger ganger 2 x av loglog ganger ganger 3 y"
+    },
+    "Fracfunct015": {
+      "expected": "av loglog 10 x av loglog 5 y"
+    },
+    "Fracfunct016": {
+      "expected": "av loglog 10 ganger ganger 2 x av loglog 5 ganger ganger 3 y"
+    },
+    "Fracfunct017": {
+      "expected": "av loglog venstre parentes høyre parentes pluss pluss x 1 av loglogy"
+    },
+    "Fracfunct018": {
+      "expected": "av ff 1 venstre parentes høyre parentes x av gg 1 venstre parentes høyre parentes x"
+    }
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "BokmalClearspeakMultiLineEntries",
+  "locale": "nb",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_multi_line_entries.json",
+  "information": "Bokmal Clearspeak MultiLineEntries rule tests.",
+  "active": "ClearspeakBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Multiline001": {
+      "expected": "er lik er lik pluss pluss xy 7 er lik er lik pluss pluss ganger ganger 2 x ganger ganger 3 y 17"
+    },
+    "Multiline002": {
+      "expected": "pluss pluss xy er lik 7 pluss pluss ganger ganger 2 x ganger ganger 3 y er lik 17"
+    },
+    "Multiline003": {
+      "expected": "x pluss y er lik 7 ganger ganger 2 x pluss ganger ganger 3 y er lik 17"
+    },
+    "Multiline004": {
+      "expected": "skiller Equation 1 kolon er lik er lik pluss pluss xy 7 skiller Equation 2 kolon er lik er lik pluss pluss ganger ganger 2 x ganger ganger 3 y 17"
+    },
+    "Multiline005": {
+      "expected": "Equation 1 kolon er lik er lik pluss pluss xy 7 Equation 2 kolon er lik er lik pluss pluss ganger ganger 2 x ganger ganger 3 y 17"
+    },
+    "Multiline006": {
+      "expected": "Equation 1 kolon pluss pluss xy er lik 7 Equation 2 kolon pluss pluss ganger ganger 2 x ganger ganger 3 y er lik 17"
+    },
+    "Multiline007": {
+      "expected": "er lik er lik pluss pluss pluss ganger ganger 4 x ganger ganger 3 y ganger ganger 2 z 17 er lik er lik pluss pluss pluss ganger ganger 2 x ganger ganger 4 y ganger ganger 6 z 6 er lik er lik pluss pluss pluss ganger ganger 3 x ganger ganger 2 y ganger ganger 5 z 1"
+    },
+    "Multiline008": {
+      "expected": "ganger ganger 4 x pluss ganger ganger 3 y pluss ganger ganger 2 z er lik 1 ganger ganger 2 x pluss ganger ganger 4 y pluss ganger ganger 6 z er lik 6 ganger ganger 3 x pluss ganger ganger 2 y pluss ganger ganger 5 z er lik 1"
+    },
+    "Multiline009": {
+      "expected": "skiller Equation 1 kolon er lik er lik pluss pluss pluss ganger ganger 4 x ganger ganger 3 y ganger ganger 2 z 17 skiller Equation 2 kolon er lik er lik pluss pluss pluss ganger ganger 2 x ganger ganger 4 y ganger ganger 6 z 6 skiller Equation 3 kolon er lik er lik pluss pluss pluss ganger ganger 3 x ganger ganger 2 y ganger ganger 5 z 1"
+    },
+    "Multiline010": {
+      "expected": "er større enn eller er lik er større enn eller er lik x 0 er større enn eller er lik er større enn eller er lik y 0 er mindre enn eller er lik er mindre enn eller er lik minus minus ganger ganger 3 x ganger ganger 5 y 30"
+    },
+    "Multiline011": {
+      "expected": "er lik er lik pluss pluss ganger ganger 3 x 8 ganger ganger 5 x er lik er lik 8 minus minus ganger ganger 5 x ganger ganger 3 x er lik er lik 8 ganger ganger 2 x er lik er lik 4 x"
+    },
+    "Multiline012": {
+      "expected": "ganger ganger 3 x pluss 8 er lik ganger ganger 5 x 8 er lik ganger ganger 5 x minus ganger ganger 3 x 8 er lik ganger ganger 2 x 4 er lik x"
+    },
+    "Multiline013": {
+      "expected": "skiller Step 1 kolon er lik er lik pluss pluss ganger ganger 3 x 8 ganger ganger 5 x skiller Step 2 kolon er lik er lik 8 minus minus ganger ganger 5 x ganger ganger 3 x skiller Step 3 kolon er lik er lik 8 ganger ganger 2 x skiller Step 4 kolon er lik er lik 4 x"
+    },
+    "Multiline014": {
+      "expected": "av ff venstre parentes høyre parentes x er lik venstre krøllparentes skiller skiller minus minus xif er mindre enn er mindre enn x 0 skiller skiller xif er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "Multiline015": {
+      "expected": "av ff venstre parentes høyre parentes x er lik venstre krøllparentes minus minus x skiller if er mindre enn er mindre enn x 0 x skiller if er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "Multiline016": {
+      "expected": "av ff venstre parentes høyre parentes x er lik venstre krøllparentes skiller skiller minus minus xif er mindre enn er mindre enn x 0 skiller skiller xif er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "Multiline017": {
+      "expected": "av ff venstre parentes høyre parentes x er lik venstre krøllparentes minus minus x skiller if er mindre enn er mindre enn x 0 x skiller if er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "Multiline018": {
+      "expected": "er lik er lik av ff venstre parentes høyre parentes x minus minus x skiller if er mindre enn er mindre enn x 0 er lik er lik av ff venstre parentes høyre parentes xx skiller if er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "Multiline019": {
+      "expected": "er lik er lik pluss pluss xy 7 er lik er lik pluss pluss ganger ganger 2 x ganger ganger 3 y 17"
+    },
+    "Multiline019a": {
+      "expected": "pluss pluss xy er lik 7 pluss pluss ganger ganger 2 x ganger ganger 3 y er lik 17"
+    },
+    "Multiline020": {
+      "expected": "er lik er lik pluss pluss xy 7 er lik er lik pluss pluss ganger ganger 2 x ganger ganger 3 y 17"
+    },
+    "Multiline021": {
+      "expected": "pluss pluss xy er lik 7 pluss pluss ganger ganger 2 x ganger ganger 3 y er lik 17"
+    },
+    "Multiline022": {
+      "expected": "er lik er lik pluss pluss xy 7 er lik er lik pluss pluss ganger ganger 2 x ganger ganger 3 y 17"
+    },
+    "Multiline023": {
+      "expected": "pluss pluss xy er lik 7 pluss pluss ganger ganger 2 x ganger ganger 3 y er lik 17"
+    },
+    "Multiline024": {
+      "expected": "er lik er lik pluss pluss ganger ganger 3 x 8 ganger ganger 5 x er lik er lik 8 minus minus ganger ganger 5 x ganger ganger 3 x er lik er lik 8 ganger ganger 2 x er lik er lik 4 x"
+    },
+    "Multiline025": {
+      "expected": "ganger ganger 3 x pluss 8 er lik ganger ganger 5 x 8 er lik ganger ganger 5 x minus ganger ganger 3 x 8 er lik ganger ganger 2 x 4 er lik x"
+    },
+    "Multiline026": {
+      "expected": "er større enn eller er lik er større enn eller er lik x 0 er større enn eller er lik er større enn eller er lik y 0 er mindre enn eller er lik er mindre enn eller er lik minus minus ganger ganger 3 x ganger ganger 5 y 30"
+    },
+    "Multiline026a": {
+      "expected": "er større enn eller er lik er større enn eller er lik x 0 er større enn eller er lik er større enn eller er lik y 0 er mindre enn eller er lik er mindre enn eller er lik minus minus ganger ganger 3 x ganger ganger 5 y 30"
+    },
+    "Multiline026b": {
+      "expected": "ganger ganger 3 x pluss 8 er lik ganger ganger 5 x 8 er lik ganger ganger 5 x minus ganger ganger 3 x 8 er lik ganger ganger 2 x 4 er lik x"
+    },
+    "Multiline026c": {
+      "expected": "av ff venstre parentes høyre parentes x er lik venstre krøllparentes skiller skiller minus minus xif er mindre enn er mindre enn x 0 skiller skiller xif er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "Multiline027": {
+      "expected": "er lik er lik pluss pluss xy 7 er lik er lik pluss pluss ganger ganger 2 x ganger ganger 3 y 17"
+    },
+    "Multiline028": {
+      "expected": "pluss pluss xy er lik 7 pluss pluss ganger ganger 2 x ganger ganger 3 y er lik 17"
+    },
+    "Multiline029": {
+      "expected": "x pluss y er lik 7 ganger ganger 2 x pluss ganger ganger 3 y er lik 17"
+    },
+    "Multiline030": {
+      "expected": "Equation 1 kolon er lik er lik pluss pluss xy 7 Equation 2 kolon er lik er lik pluss pluss ganger ganger 2 x ganger ganger 3 y 17"
+    },
+    "Multiline031": {
+      "expected": "Equation 1 kolon pluss pluss xy er lik 7 Equation 2 kolon pluss pluss ganger ganger 2 x ganger ganger 3 y er lik 17"
+    },
+    "Multiline032": {
+      "expected": "ganger ganger 4 x pluss ganger ganger 3 y pluss ganger ganger 2 z er lik 1 ganger ganger 2 x pluss ganger ganger 4 y pluss ganger ganger 6 z er lik 6 ganger ganger 3 x pluss ganger ganger 2 y pluss ganger ganger 5 z er lik 1"
+    },
+    "Multiline033": {
+      "expected": "ganger ganger 3 x pluss 8 er lik ganger ganger 5 x 8 er lik ganger ganger 5 x minus ganger ganger 3 x 8 er lik ganger ganger 2 x 4 er lik x"
+    },
+    "Multiline034": {
+      "expected": "av ff venstre parentes høyre parentes x er lik venstre krøllparentes minus minus x skiller if er mindre enn er mindre enn x 0 x skiller if er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "Multiline035": {
+      "expected": "av ff venstre parentes høyre parentes x er lik venstre krøllparentes minus minus x skiller if er mindre enn er mindre enn x 0 x skiller if er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "Multiline036": {
+      "expected": "er lik er lik av ff venstre parentes høyre parentes x minus minus x skiller if er mindre enn er mindre enn x 0 er lik er lik av ff venstre parentes høyre parentes xx skiller if er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "Multiline037": {
+      "expected": "pluss pluss xy er lik 7 pluss pluss ganger ganger 2 x ganger ganger 3 y er lik 17"
+    },
+    "Multiline038": {
+      "expected": "pluss pluss xy er lik 7 pluss pluss ganger ganger 2 x ganger ganger 3 y er lik 17"
+    },
+    "Multiline039": {
+      "expected": "pluss pluss xy er lik 7 pluss pluss ganger ganger 2 x ganger ganger 3 y er lik 17"
+    },
+    "Multiline040": {
+      "expected": "ganger ganger 3 x pluss 8 er lik ganger ganger 5 x 8 er lik ganger ganger 5 x minus ganger ganger 3 x 8 er lik ganger ganger 2 x 4 er lik x"
+    },
+    "Multiline041": {
+      "expected": "pluss pluss xy er lik 7 pluss pluss ganger ganger 2 x ganger ganger 3 y er lik 17"
+    },
+    "Multiline042": {
+      "expected": "x pluss y er lik 7 ganger ganger 2 x pluss ganger ganger 3 y er lik 17"
+    },
+    "Multiline043": {
+      "expected": "Equation 1 kolon er lik er lik pluss pluss xy 7 Equation 2 kolon er lik er lik pluss pluss ganger ganger 2 x ganger ganger 3 y 17"
+    },
+    "Multiline044": {
+      "expected": "Equation 1 kolon pluss pluss xy er lik 7 Equation 2 kolon pluss pluss ganger ganger 2 x ganger ganger 3 y er lik 17"
+    },
+    "Multiline045": {
+      "expected": "ganger ganger 4 x pluss ganger ganger 3 y pluss ganger ganger 2 z er lik 1 ganger ganger 2 x pluss ganger ganger 4 y pluss ganger ganger 6 z er lik 6 ganger ganger 3 x pluss ganger ganger 2 y pluss ganger ganger 5 z er lik 1"
+    },
+    "Multiline046": {
+      "expected": "ganger ganger 3 x pluss 8 er lik ganger ganger 5 x 8 er lik ganger ganger 5 x minus ganger ganger 3 x 8 er lik ganger ganger 2 x 4 er lik x"
+    },
+    "Multiline047": {
+      "expected": "av ff venstre parentes høyre parentes x er lik venstre krøllparentes minus minus x skiller if er mindre enn er mindre enn x 0 x skiller if er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "Multiline048": {
+      "expected": "av ff venstre parentes høyre parentes x er lik venstre krøllparentes minus minus x skiller if er mindre enn er mindre enn x 0 x skiller if er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "Multiline049": {
+      "expected": "er lik er lik av ff venstre parentes høyre parentes x minus minus x skiller if er mindre enn er mindre enn x 0 er lik er lik av ff venstre parentes høyre parentes xx skiller if er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "Multiline050": {
+      "expected": "pluss pluss xy er lik 7 pluss pluss ganger ganger 2 x ganger ganger 3 y er lik 17"
+    },
+    "Multiline051": {
+      "expected": "pluss pluss xy er lik 7 pluss pluss ganger ganger 2 x ganger ganger 3 y er lik 17"
+    },
+    "Multiline052": {
+      "expected": "pluss pluss xy er lik 7 pluss pluss ganger ganger 2 x ganger ganger 3 y er lik 17"
+    },
+    "Multiline053": {
+      "expected": "ganger ganger 3 x pluss 8 er lik ganger ganger 5 x 8 er lik ganger ganger 5 x minus ganger ganger 3 x 8 er lik ganger ganger 2 x 4 er lik x"
+    },
+    "Multiline054": {
+      "expected": "er lik er lik pluss pluss xy 7 er lik er lik pluss pluss ganger ganger 2 x ganger ganger 3 y 17"
+    },
+    "Multiline055": {
+      "expected": "pluss pluss xy er lik 7 pluss pluss ganger ganger 2 x ganger ganger 3 y er lik 17"
+    },
+    "Multiline056": {
+      "expected": "x pluss y er lik 7 ganger ganger 2 x pluss ganger ganger 3 y er lik 17"
+    },
+    "Multiline057": {
+      "expected": "skiller Equation 1 kolon er lik er lik pluss pluss xy 7 skiller Equation 2 kolon er lik er lik pluss pluss ganger ganger 2 x ganger ganger 3 y 17"
+    },
+    "Multiline058": {
+      "expected": "Equation 1 kolon er lik er lik pluss pluss xy 7 Equation 2 kolon er lik er lik pluss pluss ganger ganger 2 x ganger ganger 3 y 17"
+    },
+    "Multiline059": {
+      "expected": "Equation 1 kolon pluss pluss xy er lik 7 Equation 2 kolon pluss pluss ganger ganger 2 x ganger ganger 3 y er lik 17"
+    },
+    "Multiline060": {
+      "expected": "er lik er lik pluss pluss pluss ganger ganger 4 x ganger ganger 3 y ganger ganger 2 z 17 er lik er lik pluss pluss pluss ganger ganger 2 x ganger ganger 4 y ganger ganger 6 z 6 er lik er lik pluss pluss pluss ganger ganger 3 x ganger ganger 2 y ganger ganger 5 z 1"
+    },
+    "Multiline061": {
+      "expected": "ganger ganger 4 x pluss ganger ganger 3 y pluss ganger ganger 2 z er lik 1 ganger ganger 2 x pluss ganger ganger 4 y pluss ganger ganger 6 z er lik 6 ganger ganger 3 x pluss ganger ganger 2 y pluss ganger ganger 5 z er lik 1"
+    },
+    "Multiline062": {
+      "expected": "skiller Equation 1 kolon er lik er lik pluss pluss pluss ganger ganger 4 x ganger ganger 3 y ganger ganger 2 z 17 skiller Equation 2 kolon er lik er lik pluss pluss pluss ganger ganger 2 x ganger ganger 4 y ganger ganger 6 z 6 skiller Equation 3 kolon er lik er lik pluss pluss pluss ganger ganger 3 x ganger ganger 2 y ganger ganger 5 z 1"
+    },
+    "Multiline063": {
+      "expected": "skiller Step 1 kolon er lik er lik pluss pluss ganger ganger 3 x 8 ganger ganger 5 x skiller Step 2 kolon er lik er lik 8 minus minus ganger ganger 5 x ganger ganger 3 x skiller Step 3 kolon er lik er lik 8 ganger ganger 2 x skiller Step 4 kolon er lik er lik 4 x"
+    },
+    "Multiline064": {
+      "expected": "av ff venstre parentes høyre parentes x er lik venstre krøllparentes skiller skiller minus minus xif er mindre enn er mindre enn x 0 skiller skiller xif er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "Multiline065": {
+      "expected": "av ff venstre parentes høyre parentes x er lik venstre krøllparentes minus minus x skiller if er mindre enn er mindre enn x 0 x skiller if er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "Multiline066": {
+      "expected": "av ff venstre parentes høyre parentes x er lik venstre krøllparentes skiller skiller minus minus xif er mindre enn er mindre enn x 0 skiller skiller xif er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "Multiline067": {
+      "expected": "er lik er lik av ff venstre parentes høyre parentes x minus minus x skiller if er mindre enn er mindre enn x 0 er lik er lik av ff venstre parentes høyre parentes xx skiller if er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "Multiline068": {
+      "expected": "er lik er lik pluss pluss xy 7 er lik er lik pluss pluss ganger ganger 2 x ganger ganger 3 y 17"
+    },
+    "Multiline069": {
+      "expected": "er lik er lik pluss pluss xy 7 er lik er lik pluss pluss ganger ganger 2 x ganger ganger 3 y 17"
+    },
+    "Multiline070": {
+      "expected": "er lik er lik pluss pluss xy 7 er lik er lik pluss pluss ganger ganger 2 x ganger ganger 3 y 17"
+    },
+    "Multiline071": {
+      "expected": "er lik er lik pluss pluss ganger ganger 3 x 8 ganger ganger 5 x er lik er lik 8 minus minus ganger ganger 5 x ganger ganger 3 x er lik er lik 8 ganger ganger 2 x er lik er lik 4 x"
+    },
+    "Multiline072": {
+      "expected": "ganger ganger 3 x pluss 8 er lik ganger ganger 5 x 8 er lik ganger ganger 5 x minus ganger ganger 3 x 8 er lik ganger ganger 2 x 4 er lik x"
+    },
+    "Multiline073": {
+      "expected": "er større enn eller er lik er større enn eller er lik x 0 er større enn eller er lik er større enn eller er lik y 0 er mindre enn eller er lik er mindre enn eller er lik minus minus ganger ganger 3 x ganger ganger 5 y 30"
+    }
+  }
+}

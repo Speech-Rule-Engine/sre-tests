@@ -1,0 +1,1003 @@
+{
+  "name": "BokmalMathspeakNoble",
+  "locale": "nb",
+  "factory": "speech",
+  "base": "input/mathspeak/noble_test.json",
+  "information": "Bokmal Mathspeak Steve Noble's samples.",
+  "domain": "mathspeak",
+  "active": "NobleSamplesBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Sample_1_default": {
+      "expected": "minus minus er lik"
+    },
+    "Sample_1_brief": {
+      "expected": "minus minus er lik"
+    },
+    "Sample_1_sbrief": {
+      "expected": "minus minus er lik"
+    },
+    "Sample_2_default": {
+      "expected": "minus minus venstre parentes minus høyre parentes er lik"
+    },
+    "Sample_2_brief": {
+      "expected": "minus minus venstre parentes minus høyre parentes er lik"
+    },
+    "Sample_2_sbrief": {
+      "expected": "minus minus venstre parentes minus høyre parentes er lik"
+    },
+    "Sample_3_default": {
+      "expected": "minus 24,15 minus venstre parentes 13,7 høyre parentes er lik"
+    },
+    "Sample_3_brief": {
+      "expected": "minus 24,15 minus venstre parentes 13,7 høyre parentes er lik"
+    },
+    "Sample_3_sbrief": {
+      "expected": "minus 24,15 minus venstre parentes 13,7 høyre parentes er lik"
+    },
+    "Sample_4_default": {
+      "expected": "venstre parentes minus 4 høyre parentes gangetegn 3 er lik minus 12"
+    },
+    "Sample_4_brief": {
+      "expected": "venstre parentes minus 4 høyre parentes gangetegn 3 er lik minus 12"
+    },
+    "Sample_4_sbrief": {
+      "expected": "venstre parentes minus 4 høyre parentes gangetegn 3 er lik minus 12"
+    },
+    "Sample_5_default": {
+      "expected": "minus 12 deletegn 3 er lik minus 4"
+    },
+    "Sample_5_brief": {
+      "expected": "minus 12 deletegn 3 er lik minus 4"
+    },
+    "Sample_5_sbrief": {
+      "expected": "minus 12 deletegn 3 er lik minus 4"
+    },
+    "Sample_6_default": {
+      "expected": "minus 12 deletegn venstre parentes minus 4 høyre parentes er lik 3"
+    },
+    "Sample_6_brief": {
+      "expected": "minus 12 deletegn venstre parentes minus 4 høyre parentes er lik 3"
+    },
+    "Sample_6_sbrief": {
+      "expected": "minus 12 deletegn venstre parentes minus 4 høyre parentes er lik 3"
+    },
+    "Sample_7_default": {
+      "expected": "6 gangetegn 5"
+    },
+    "Sample_7_brief": {
+      "expected": "6 gangetegn 5"
+    },
+    "Sample_7_sbrief": {
+      "expected": "6 gangetegn 5"
+    },
+    "Sample_8_default": {
+      "expected": "6 gangetegn venstre parentes minus 5 høyre parentes"
+    },
+    "Sample_8_brief": {
+      "expected": "6 gangetegn venstre parentes minus 5 høyre parentes"
+    },
+    "Sample_8_sbrief": {
+      "expected": "6 gangetegn venstre parentes minus 5 høyre parentes"
+    },
+    "Sample_9_default": {
+      "expected": "minus 6 gangetegn 5"
+    },
+    "Sample_9_brief": {
+      "expected": "minus 6 gangetegn 5"
+    },
+    "Sample_9_sbrief": {
+      "expected": "minus 6 gangetegn 5"
+    },
+    "Sample_10_default": {
+      "expected": "minus 6 gangetegn venstre parentes minus 5 høyre parentes"
+    },
+    "Sample_10_brief": {
+      "expected": "minus 6 gangetegn venstre parentes minus 5 høyre parentes"
+    },
+    "Sample_10_sbrief": {
+      "expected": "minus 6 gangetegn venstre parentes minus 5 høyre parentes"
+    },
+    "Sample_11_default": {
+      "expected": "minus 8 gangetegn 7"
+    },
+    "Sample_11_brief": {
+      "expected": "minus 8 gangetegn 7"
+    },
+    "Sample_11_sbrief": {
+      "expected": "minus 8 gangetegn 7"
+    },
+    "Sample_12_default": {
+      "expected": "minus 8 gangetegn venstre parentes minus 7 høyre parentes"
+    },
+    "Sample_12_brief": {
+      "expected": "minus 8 gangetegn venstre parentes minus 7 høyre parentes"
+    },
+    "Sample_12_sbrief": {
+      "expected": "minus 8 gangetegn venstre parentes minus 7 høyre parentes"
+    },
+    "Sample_13_default": {
+      "expected": "8 gangetegn venstre parentes minus 7 høyre parentes"
+    },
+    "Sample_13_brief": {
+      "expected": "8 gangetegn venstre parentes minus 7 høyre parentes"
+    },
+    "Sample_13_sbrief": {
+      "expected": "8 gangetegn venstre parentes minus 7 høyre parentes"
+    },
+    "Sample_14_default": {
+      "expected": "8 gangetegn 7"
+    },
+    "Sample_14_brief": {
+      "expected": "8 gangetegn 7"
+    },
+    "Sample_14_sbrief": {
+      "expected": "8 gangetegn 7"
+    },
+    "Sample_15_default": {
+      "expected": "m vinkel 1 er lik 30 grader"
+    },
+    "Sample_15_brief": {
+      "expected": "m vinkel 1 er lik 30 grader"
+    },
+    "Sample_15_sbrief": {
+      "expected": "m vinkel 1 er lik 30 grader"
+    },
+    "Sample_16_default": {
+      "expected": "m vinkel 2 er lik 60 grader"
+    },
+    "Sample_16_brief": {
+      "expected": "m vinkel 2 er lik 60 grader"
+    },
+    "Sample_16_sbrief": {
+      "expected": "m vinkel 2 er lik 60 grader"
+    },
+    "Sample_17_default": {
+      "expected": "m vinkel 1 pluss m vinkel 2 er lik 90 grader"
+    },
+    "Sample_17_brief": {
+      "expected": "m vinkel 1 pluss m vinkel 2 er lik 90 grader"
+    },
+    "Sample_17_sbrief": {
+      "expected": "m vinkel 1 pluss m vinkel 2 er lik 90 grader"
+    },
+    "Sample_18_default": {
+      "expected": "m vinkel M pluss m vinkel N er lik 180 grader"
+    },
+    "Sample_18_brief": {
+      "expected": "m vinkel M pluss m vinkel N er lik 180 grader"
+    },
+    "Sample_18_sbrief": {
+      "expected": "m vinkel M pluss m vinkel N er lik 180 grader"
+    },
+    "Sample_19_default": {
+      "expected": "A er lik eins halb b h"
+    },
+    "Sample_19_brief": {
+      "expected": "A er lik eins halb b h"
+    },
+    "Sample_19_sbrief": {
+      "expected": "A er lik eins halb b h"
+    },
+    "Sample_20_default": {
+      "expected": "Start Brøk area of triangle Over area of square Slutt Brøk er lik Start Brøk 1 unit Superskript 2 Grunnlinje Over 16 units Superskript 2 Grunnlinje Slutt Brøk"
+    },
+    "Sample_20_brief": {
+      "expected": "Start Brøk area of triangle Over area of square Slutt Brøk er lik Start Brøk 1 unit Sub 2 Basis Over 16 units Sub 2 Basis Slutt Brøk"
+    },
+    "Sample_20_sbrief": {
+      "expected": "Brøk area of triangle Over area of square SluttBrøk er lik Brøk 1 unit Sub 2 Basis Over 16 units Sub 2 Basis SluttBrøk"
+    },
+    "Sample_21_default": {
+      "expected": "0,6 Superskript 2"
+    },
+    "Sample_21_brief": {
+      "expected": "0,6 Sub 2"
+    },
+    "Sample_21_sbrief": {
+      "expected": "0,6 Sub 2"
+    },
+    "Sample_22_default": {
+      "expected": "1,5 Superskript 2"
+    },
+    "Sample_22_brief": {
+      "expected": "1,5 Sub 2"
+    },
+    "Sample_22_sbrief": {
+      "expected": "1,5 Sub 2"
+    },
+    "Sample_23_default": {
+      "expected": "4 venstre parentes 2 x pluss 3 x høyre parentes"
+    },
+    "Sample_23_brief": {
+      "expected": "4 venstre parentes 2 x pluss 3 x høyre parentes"
+    },
+    "Sample_23_sbrief": {
+      "expected": "4 venstre parentes 2 x pluss 3 x høyre parentes"
+    },
+    "Sample_24_default": {
+      "expected": "36 pluss 4 y minus 1 y Superskript 2 pluss 5 y Superskript 2 minus 2"
+    },
+    "Sample_24_brief": {
+      "expected": "36 pluss 4 y minus 1 y Sub 2 pluss 5 y Sub 2 minus 2"
+    },
+    "Sample_24_sbrief": {
+      "expected": "36 pluss 4 y minus 1 y Sub 2 pluss 5 y Sub 2 minus 2"
+    },
+    "Sample_25_default": {
+      "expected": "venstre parentes 5 pluss 9 høyre parentes minus 4 pluss 3 er lik"
+    },
+    "Sample_25_brief": {
+      "expected": "venstre parentes 5 pluss 9 høyre parentes minus 4 pluss 3 er lik"
+    },
+    "Sample_25_sbrief": {
+      "expected": "venstre parentes 5 pluss 9 høyre parentes minus 4 pluss 3 er lik"
+    },
+    "Sample_26_default": {
+      "expected": "B C Overskript venstre-høyrepil Sluttskript"
+    },
+    "Sample_26_brief": {
+      "expected": "B C Overskript venstre-høyrepil Sluttskript"
+    },
+    "Sample_26_sbrief": {
+      "expected": "B C Overskript venstre-høyrepil Sluttskript"
+    },
+    "Sample_27_default": {
+      "expected": "P Q Overskript høyrepil Sluttskript"
+    },
+    "Sample_27_brief": {
+      "expected": "P Q Overskript høyrepil Sluttskript"
+    },
+    "Sample_27_sbrief": {
+      "expected": "P Q Overskript høyrepil Sluttskript"
+    },
+    "Sample_28_default": {
+      "expected": "G H Overskript strek Sluttskript"
+    },
+    "Sample_28_brief": {
+      "expected": "G H Overskript strek Sluttskript"
+    },
+    "Sample_28_sbrief": {
+      "expected": "G H Overskript strek Sluttskript"
+    },
+    "Sample_29_default": {
+      "expected": "W X Overskript strek Sluttskript tilnærmet lik Y Z Overskript strek Sluttskript"
+    },
+    "Sample_29_brief": {
+      "expected": "W X Overskript strek Sluttskript tilnærmet lik Y Z Overskript strek Sluttskript"
+    },
+    "Sample_29_sbrief": {
+      "expected": "W X Overskript strek Sluttskript tilnærmet lik Y Z Overskript strek Sluttskript"
+    },
+    "Sample_30_default": {
+      "expected": "vinkel B E F"
+    },
+    "Sample_30_brief": {
+      "expected": "vinkel B E F"
+    },
+    "Sample_30_sbrief": {
+      "expected": "vinkel B E F"
+    },
+    "Sample_31_default": {
+      "expected": "vinkel B E D"
+    },
+    "Sample_31_brief": {
+      "expected": "vinkel B E D"
+    },
+    "Sample_31_sbrief": {
+      "expected": "vinkel B E D"
+    },
+    "Sample_32_default": {
+      "expected": "vinkel D E F"
+    },
+    "Sample_32_brief": {
+      "expected": "vinkel D E F"
+    },
+    "Sample_32_sbrief": {
+      "expected": "vinkel D E F"
+    },
+    "Sample_33_default": {
+      "expected": "x er lik Start Brøk minus b pluss minus StartRot b Superskript 2 Grunnlinje minus 4 a c SluttRot Over 2 a Slutt Brøk"
+    },
+    "Sample_33_brief": {
+      "expected": "x er lik Start Brøk minus b pluss minus StartRot b Sub 2 Basis minus 4 a c SluttRot Over 2 a Slutt Brøk"
+    },
+    "Sample_33_sbrief": {
+      "expected": "x er lik Brøk minus b pluss minus Rot b Sub 2 Basis minus 4 a c SluttRot Over 2 a SluttBrøk"
+    },
+    "Sample_34_default": {
+      "expected": "y er lik x Superskript 2 Grunnlinje pluss 8 x pluss 16"
+    },
+    "Sample_34_brief": {
+      "expected": "y er lik x Sub 2 Basis pluss 8 x pluss 16"
+    },
+    "Sample_34_sbrief": {
+      "expected": "y er lik x Sub 2 Basis pluss 8 x pluss 16"
+    },
+    "Sample_35_default": {
+      "expected": "y er lik eins drittel venstre parentes 3 Superskript x Grunnlinje høyre parentes"
+    },
+    "Sample_35_brief": {
+      "expected": "y er lik eins drittel venstre parentes 3 Sub x Basis høyre parentes"
+    },
+    "Sample_35_sbrief": {
+      "expected": "y er lik eins drittel venstre parentes 3 Sub x Basis høyre parentes"
+    },
+    "Sample_36_default": {
+      "expected": "y er lik 10 minus 2 x"
+    },
+    "Sample_36_brief": {
+      "expected": "y er lik 10 minus 2 x"
+    },
+    "Sample_36_sbrief": {
+      "expected": "y er lik 10 minus 2 x"
+    },
+    "Sample_37_default": {
+      "expected": "y er lik 2 x Superskript 3 Grunnlinje pluss 5"
+    },
+    "Sample_37_brief": {
+      "expected": "y er lik 2 x Sub 3 Basis pluss 5"
+    },
+    "Sample_37_sbrief": {
+      "expected": "y er lik 2 x Sub 3 Basis pluss 5"
+    },
+    "Sample_38_default": {
+      "expected": "y er lik venstre parentes x Superskript 2 Grunnlinje pluss 1 høyre parentes venstre parentes x Superskript 2 Grunnlinje pluss 3 høyre parentes"
+    },
+    "Sample_38_brief": {
+      "expected": "y er lik venstre parentes x Sub 2 Basis pluss 1 høyre parentes venstre parentes x Sub 2 Basis pluss 3 høyre parentes"
+    },
+    "Sample_38_sbrief": {
+      "expected": "y er lik venstre parentes x Sub 2 Basis pluss 1 høyre parentes venstre parentes x Sub 2 Basis pluss 3 høyre parentes"
+    },
+    "Sample_39_default": {
+      "expected": "y er lik 0,5 Superskript x"
+    },
+    "Sample_39_brief": {
+      "expected": "y er lik 0,5 Sub x"
+    },
+    "Sample_39_sbrief": {
+      "expected": "y er lik 0,5 Sub x"
+    },
+    "Sample_40_default": {
+      "expected": "y er lik 22 minus 2 x"
+    },
+    "Sample_40_brief": {
+      "expected": "y er lik 22 minus 2 x"
+    },
+    "Sample_40_sbrief": {
+      "expected": "y er lik 22 minus 2 x"
+    },
+    "Sample_41_default": {
+      "expected": "y er lik Start Brøk 3 Over x Slutt Brøk"
+    },
+    "Sample_41_brief": {
+      "expected": "y er lik Start Brøk 3 Over x Slutt Brøk"
+    },
+    "Sample_41_sbrief": {
+      "expected": "y er lik Brøk 3 Over x SluttBrøk"
+    },
+    "Sample_42_default": {
+      "expected": "y er lik venstre parentes x pluss 4 høyre parentes venstre parentes x pluss 4 høyre parentes"
+    },
+    "Sample_42_brief": {
+      "expected": "y er lik venstre parentes x pluss 4 høyre parentes venstre parentes x pluss 4 høyre parentes"
+    },
+    "Sample_42_sbrief": {
+      "expected": "y er lik venstre parentes x pluss 4 høyre parentes venstre parentes x pluss 4 høyre parentes"
+    },
+    "Sample_43_default": {
+      "expected": "y er lik venstre parentes 4 x minus 3 høyre parentes venstre parentes x pluss 1 høyre parentes"
+    },
+    "Sample_43_brief": {
+      "expected": "y er lik venstre parentes 4 x minus 3 høyre parentes venstre parentes x pluss 1 høyre parentes"
+    },
+    "Sample_43_sbrief": {
+      "expected": "y er lik venstre parentes 4 x minus 3 høyre parentes venstre parentes x pluss 1 høyre parentes"
+    },
+    "Sample_44_default": {
+      "expected": "y er lik 20 x minus 4 x Superskript 2"
+    },
+    "Sample_44_brief": {
+      "expected": "y er lik 20 x minus 4 x Sub 2"
+    },
+    "Sample_44_sbrief": {
+      "expected": "y er lik 20 x minus 4 x Sub 2"
+    },
+    "Sample_45_default": {
+      "expected": "y er lik x Superskript 2"
+    },
+    "Sample_45_brief": {
+      "expected": "y er lik x Sub 2"
+    },
+    "Sample_45_sbrief": {
+      "expected": "y er lik x Sub 2"
+    },
+    "Sample_46_default": {
+      "expected": "y er lik 3 Superskript x minus 1"
+    },
+    "Sample_46_brief": {
+      "expected": "y er lik 3 Sub x minus 1"
+    },
+    "Sample_46_sbrief": {
+      "expected": "y er lik 3 Sub x minus 1"
+    },
+    "Sample_47_default": {
+      "expected": "y er lik 16 minus 2 venstre parentes x pluss 3 høyre parentes"
+    },
+    "Sample_47_brief": {
+      "expected": "y er lik 16 minus 2 venstre parentes x pluss 3 høyre parentes"
+    },
+    "Sample_47_sbrief": {
+      "expected": "y er lik 16 minus 2 venstre parentes x pluss 3 høyre parentes"
+    },
+    "Sample_48_default": {
+      "expected": "y er lik 4 x Superskript 2 Grunnlinje minus x minus 3"
+    },
+    "Sample_48_brief": {
+      "expected": "y er lik 4 x Sub 2 Basis minus x minus 3"
+    },
+    "Sample_48_sbrief": {
+      "expected": "y er lik 4 x Sub 2 Basis minus x minus 3"
+    },
+    "Sample_49_default": {
+      "expected": "y er lik x pluss Start Brøk 1 Over x Slutt Brøk"
+    },
+    "Sample_49_brief": {
+      "expected": "y er lik x pluss Start Brøk 1 Over x Slutt Brøk"
+    },
+    "Sample_49_sbrief": {
+      "expected": "y er lik x pluss Brøk 1 Over x SluttBrøk"
+    },
+    "Sample_50_default": {
+      "expected": "y er lik 4 x venstre parentes 5 minus x høyre parentes"
+    },
+    "Sample_50_brief": {
+      "expected": "y er lik 4 x venstre parentes 5 minus x høyre parentes"
+    },
+    "Sample_50_sbrief": {
+      "expected": "y er lik 4 x venstre parentes 5 minus x høyre parentes"
+    },
+    "Sample_51_default": {
+      "expected": "y er lik 2 venstre parentes x minus 3 høyre parentes pluss 6 venstre parentes 1 minus x høyre parentes"
+    },
+    "Sample_51_brief": {
+      "expected": "y er lik 2 venstre parentes x minus 3 høyre parentes pluss 6 venstre parentes 1 minus x høyre parentes"
+    },
+    "Sample_51_sbrief": {
+      "expected": "y er lik 2 venstre parentes x minus 3 høyre parentes pluss 6 venstre parentes 1 minus x høyre parentes"
+    },
+    "Sample_52_default": {
+      "expected": "0,25 er større enn fem sekstentel"
+    },
+    "Sample_52_brief": {
+      "expected": "0,25 er større enn fem sekstentel"
+    },
+    "Sample_52_sbrief": {
+      "expected": "0,25 er større enn fem sekstentel"
+    },
+    "Sample_53_default": {
+      "expected": "32 ganger venstre parentes 5 ganger 7 høyre parentes"
+    },
+    "Sample_53_brief": {
+      "expected": "32 ganger venstre parentes 5 ganger 7 høyre parentes"
+    },
+    "Sample_53_sbrief": {
+      "expected": "32 ganger venstre parentes 5 ganger 7 høyre parentes"
+    },
+    "Sample_54_default": {
+      "expected": "venstre parentes eins halb gangetegn eins halb gangetegn pi gangetegn 2 høyre parentes pluss venstre parentes 2 gangetegn eins halb gangetegn pi gangetegn 5 høyre parentes"
+    },
+    "Sample_54_brief": {
+      "expected": "venstre parentes eins halb gangetegn eins halb gangetegn pi gangetegn 2 høyre parentes pluss venstre parentes 2 gangetegn eins halb gangetegn pi gangetegn 5 høyre parentes"
+    },
+    "Sample_54_sbrief": {
+      "expected": "venstre parentes eins halb gangetegn eins halb gangetegn pi gangetegn 2 høyre parentes pluss venstre parentes 2 gangetegn eins halb gangetegn pi gangetegn 5 høyre parentes"
+    },
+    "Sample_55_default": {
+      "expected": "nedre grense Underskript n høyrepil uendelig Sluttskript E Subskript n Grunnlinje er lik forening Underskript n er større enn eller er lik 1 Sluttskript interseksjon Underskript k er større enn eller er lik n Sluttskript E Subskript k Grunnlinje komma øvre grense Underskript n høyrepil uendelig Sluttskript E Subskript n Grunnlinje er lik interseksjon Underskript n er større enn eller er lik 1 Sluttskript forening Underskript k er større enn eller er lik n Sluttskript E Subskript k Grunnlinje punktum"
+    },
+    "Sample_55_brief": {
+      "expected": "nedre grense Underskript n høyrepil uendelig Sluttskript E Sub n Basis er lik forening Underskript n er større enn eller er lik 1 Sluttskript interseksjon Underskript k er større enn eller er lik n Sluttskript E Sub k Basis komma øvre grense Underskript n høyrepil uendelig Sluttskript E Sub n Basis er lik interseksjon Underskript n er større enn eller er lik 1 Sluttskript forening Underskript k er større enn eller er lik n Sluttskript E Sub k Basis punktum"
+    },
+    "Sample_55_sbrief": {
+      "expected": "nedre grense Underskript n høyrepil uendelig Sluttskript E Sub n Basis er lik forening Underskript n er større enn eller er lik 1 Sluttskript interseksjon Underskript k er større enn eller er lik n Sluttskript E Sub k Basis komma øvre grense Underskript n høyrepil uendelig Sluttskript E Sub n Basis er lik interseksjon Underskript n er større enn eller er lik 1 Sluttskript forening Underskript k er større enn eller er lik n Sluttskript E Sub k Basis punktum"
+    },
+    "Sample_56_default": {
+      "expected": "venstre parentes i høyre parentes semikolon element av element av S A semikolon venstre parentes ii høyre parentes semikolon skiller skiller skiller if element av element av E A then element av element av E overstrek A semikolon venstre parentes iii høyre parentes komma punktum skiller ifE 1 komma skiller skiller element av element av E 2 A then element av element av union union E 1 E 2 A punktum"
+    },
+    "Sample_56_brief": {
+      "expected": "venstre parentes i høyre parentes semikolon element av element av S A semikolon venstre parentes ii høyre parentes semikolon skiller skiller skiller if element av element av E A then element av element av E overstrek A semikolon venstre parentes iii høyre parentes komma punktum skiller ifE 1 komma skiller skiller element av element av E 2 A then element av element av union union E 1 E 2 A punktum"
+    },
+    "Sample_56_sbrief": {
+      "expected": "venstre parentes i høyre parentes semikolon element av element av S A semikolon venstre parentes ii høyre parentes semikolon skiller skiller skiller if element av element av E A then element av element av E overstrek A semikolon venstre parentes iii høyre parentes komma punktum skiller ifE 1 komma skiller skiller element av element av E 2 A then element av element av union union E 1 E 2 A punktum"
+    },
+    "Sample_57_default": {
+      "expected": "punktum er mindre enn eller er lik er mindre enn eller er lik er mindre enn eller er lik element av element av ganger ganger venstre parentes høyre parentes punktum A punktum 1 av IfIfA ganger ganger ganger F then 0 av PP venstre krøllparentes høyre krøllparentes A 1 punktum venstre parentes høyre parentes 1 punktum er lik er lik ganger ganger venstre parentes høyre parentes punktum A punktum 2 av PP venstre krøllparentes høyre krøllparentes S 1 punktum venstre parentes høyre parentes 2 skiller skiller element av element av ganger ganger venstre parentes høyre parentes punktum A punktum 3 av IfIf venstre krøllparentes høyre krøllparentes komma En komma er større enn eller er lik er større enn eller er lik n 1 F is a sequence ofdisjoint venstre parentes høyre parentes 3"
+    },
+    "Sample_57_brief": {
+      "expected": "punktum er mindre enn eller er lik er mindre enn eller er lik er mindre enn eller er lik element av element av ganger ganger venstre parentes høyre parentes punktum A punktum 1 av IfIfA ganger ganger ganger F then 0 av PP venstre krøllparentes høyre krøllparentes A 1 punktum venstre parentes høyre parentes 1 punktum er lik er lik ganger ganger venstre parentes høyre parentes punktum A punktum 2 av PP venstre krøllparentes høyre krøllparentes S 1 punktum venstre parentes høyre parentes 2 skiller skiller element av element av ganger ganger venstre parentes høyre parentes punktum A punktum 3 av IfIf venstre krøllparentes høyre krøllparentes komma En komma er større enn eller er lik er større enn eller er lik n 1 F is a sequence ofdisjoint venstre parentes høyre parentes 3"
+    },
+    "Sample_57_sbrief": {
+      "expected": "punktum er mindre enn eller er lik er mindre enn eller er lik er mindre enn eller er lik element av element av ganger ganger venstre parentes høyre parentes punktum A punktum 1 av IfIfA ganger ganger ganger F then 0 av PP venstre krøllparentes høyre krøllparentes A 1 punktum venstre parentes høyre parentes 1 punktum er lik er lik ganger ganger venstre parentes høyre parentes punktum A punktum 2 av PP venstre krøllparentes høyre krøllparentes S 1 punktum venstre parentes høyre parentes 2 skiller skiller element av element av ganger ganger venstre parentes høyre parentes punktum A punktum 3 av IfIf venstre krøllparentes høyre krøllparentes komma En komma er større enn eller er lik er større enn eller er lik n 1 F is a sequence ofdisjoint venstre parentes høyre parentes 3"
+    },
+    "Sample_58_default": {
+      "expected": "P venstre krøllparentes B Subskript j Grunnlinje vertikalstrek A høyre krøllparentes er lik Start Brøk P venstre krøllparentes B Subskript j Grunnlinje høyre krøllparentes P venstre krøllparentes A vertikalstrek B Subskript j Grunnlinje høyre krøllparentes Over sum Underskript j prim element av J Sluttskript P venstre krøllparentes B Subskript j prim Grunnlinje høyre krøllparentes P venstre krøllparentes A vertikalstrek B Subskript j prim Grunnlinje høyre krøllparentes Slutt Brøk punktum"
+    },
+    "Sample_58_brief": {
+      "expected": "P venstre krøllparentes B Sub j Basis vertikalstrek A høyre krøllparentes er lik Start Brøk P venstre krøllparentes B Sub j Basis høyre krøllparentes P venstre krøllparentes A vertikalstrek B Sub j Basis høyre krøllparentes Over sum Underskript j prim element av J Sluttskript P venstre krøllparentes B Sub j prim Basis høyre krøllparentes P venstre krøllparentes A vertikalstrek B Sub j prim Basis høyre krøllparentes Slutt Brøk punktum"
+    },
+    "Sample_58_sbrief": {
+      "expected": "P venstre krøllparentes B Sub j Basis vertikalstrek A høyre krøllparentes er lik Brøk P venstre krøllparentes B Sub j Basis høyre krøllparentes P venstre krøllparentes A vertikalstrek B Sub j Basis høyre krøllparentes Over sum Underskript j prim element av J Sluttskript P venstre krøllparentes B Sub j prim Basis høyre krøllparentes P venstre krøllparentes A vertikalstrek B Sub j prim Basis høyre krøllparentes SluttBrøk punktum"
+    },
+    "Sample_59_default": {
+      "expected": "my 1 venstre parentes B høyre parentes er lik integral Underskript B Sluttskript f venstre parentes x høyre parentes d my 2 venstre parentes x høyre parentes"
+    },
+    "Sample_59_brief": {
+      "expected": "my 1 venstre parentes B høyre parentes er lik integral Underskript B Sluttskript f venstre parentes x høyre parentes d my 2 venstre parentes x høyre parentes"
+    },
+    "Sample_59_sbrief": {
+      "expected": "my 1 venstre parentes B høyre parentes er lik integral Underskript B Sluttskript f venstre parentes x høyre parentes d my 2 venstre parentes x høyre parentes"
+    },
+    "Sample_60_default": {
+      "expected": "grense Underskript n høyrepil uendelig Sluttskript E venstre krøllparentes vertikalstrek vertikalstrek minus minus XnX høyre krøllparentes er lik E venstre krøllparentes grense Underskript n høyrepil uendelig Sluttskript vertikalstrek vertikalstrek minus minus XnX høyre krøllparentes er lik 0 punktum"
+    },
+    "Sample_60_brief": {
+      "expected": "grense Underskript n høyrepil uendelig Sluttskript E venstre krøllparentes vertikalstrek vertikalstrek minus minus XnX høyre krøllparentes er lik E venstre krøllparentes grense Underskript n høyrepil uendelig Sluttskript vertikalstrek vertikalstrek minus minus XnX høyre krøllparentes er lik 0 punktum"
+    },
+    "Sample_60_sbrief": {
+      "expected": "grense Underskript n høyrepil uendelig Sluttskript E venstre krøllparentes vertikalstrek vertikalstrek minus minus XnX høyre krøllparentes er lik E venstre krøllparentes grense Underskript n høyrepil uendelig Sluttskript vertikalstrek vertikalstrek minus minus XnX høyre krøllparentes er lik 0 punktum"
+    },
+    "Sample_61_default": {
+      "expected": "komma er lik er lik er lik av PP komma my komma sigma venstre krøllparentes høyre krøllparentes er større enn eller er lik er større enn eller er lik Y av ll beta venstre parentes høyre parentes komma Y overstrek n komma Sn av PP komma my komma sigma venstre krøllparentes høyre krøllparentes er større enn eller er lik er større enn eller er lik skråstrek skråstrek venstre parentes høyre parentes minus minus YY overstrek n venstre parentes høyre parentes prikk prikk S venstre parentes høyre parentes pluss pluss 11 n skråstrek skråstrek 12 minus minus ganger ganger t beta venstre hakeparentes høyre hakeparentes minus minus n 1 beta komma venstre parentes høyre parentes 1"
+    },
+    "Sample_61_brief": {
+      "expected": "komma er lik er lik er lik av PP komma my komma sigma venstre krøllparentes høyre krøllparentes er større enn eller er lik er større enn eller er lik Y av ll beta venstre parentes høyre parentes komma Y overstrek n komma Sn av PP komma my komma sigma venstre krøllparentes høyre krøllparentes er større enn eller er lik er større enn eller er lik skråstrek skråstrek venstre parentes høyre parentes minus minus YY overstrek n venstre parentes høyre parentes prikk prikk S venstre parentes høyre parentes pluss pluss 11 n skråstrek skråstrek 12 minus minus ganger ganger t beta venstre hakeparentes høyre hakeparentes minus minus n 1 beta komma venstre parentes høyre parentes 1"
+    },
+    "Sample_61_sbrief": {
+      "expected": "komma er lik er lik er lik av PP komma my komma sigma venstre krøllparentes høyre krøllparentes er større enn eller er lik er større enn eller er lik Y av ll beta venstre parentes høyre parentes komma Y overstrek n komma Sn av PP komma my komma sigma venstre krøllparentes høyre krøllparentes er større enn eller er lik er større enn eller er lik skråstrek skråstrek venstre parentes høyre parentes minus minus YY overstrek n venstre parentes høyre parentes prikk prikk S venstre parentes høyre parentes pluss pluss 11 n skråstrek skråstrek 12 minus minus ganger ganger t beta venstre hakeparentes høyre hakeparentes minus minus n 1 beta komma venstre parentes høyre parentes 1"
+    },
+    "Sample_62_default": {
+      "expected": "L er lik venstre parentes høyre parentes 1 minus minus 11 minus minus 100 1 minus minus 1 punktum"
+    },
+    "Sample_62_brief": {
+      "expected": "L er lik venstre parentes høyre parentes 1 minus minus 11 minus minus 100 1 minus minus 1 punktum"
+    },
+    "Sample_62_sbrief": {
+      "expected": "L er lik venstre parentes høyre parentes 1 minus minus 11 minus minus 100 1 minus minus 1 punktum"
+    },
+    "Sample_63_default": {
+      "expected": "StartRot n SluttRot venstre hakeparentes Y Overskript overstrek Sluttskript Subskript n Grunnlinje minus venstre parentes my pluss z Subskript beta Grunnlinje sigma høyre parentes høyre hakeparentes skråstrek S Subskript n Grunnlinje tilde Start Brøk U pluss StartRot n SluttRot z Subskript 1 minus beta Grunnlinje Over venstre parentes khi Superskript 2 Grunnlinje venstre hakeparentes n minus 1 høyre hakeparentes skråstrek venstre parentes n minus 1 høyre parentes høyre parentes Superskript 1 skråstrek 2 Grunnlinje Slutt Brøk tilde t venstre hakeparentes n minus 1 semikolon StartRot n SluttRot z Subskript 1 minus beta Grunnlinje høyre hakeparentes komma"
+    },
+    "Sample_63_brief": {
+      "expected": "StartRot n SluttRot venstre hakeparentes Y Overskript overstrek Sluttskript Sub n Basis minus venstre parentes my pluss z Sub beta Basis sigma høyre parentes høyre hakeparentes skråstrek S Sub n Basis tilde Start Brøk U pluss StartRot n SluttRot z Sub 1 minus beta Basis Over venstre parentes khi Sub 2 Basis venstre hakeparentes n minus 1 høyre hakeparentes skråstrek venstre parentes n minus 1 høyre parentes høyre parentes Sub 1 skråstrek 2 Basis Slutt Brøk tilde t venstre hakeparentes n minus 1 semikolon StartRot n SluttRot z Sub 1 minus beta Basis høyre hakeparentes komma"
+    },
+    "Sample_63_sbrief": {
+      "expected": "Rot n SluttRot venstre hakeparentes Y Overskript overstrek Sluttskript Sub n Basis minus venstre parentes my pluss z Sub beta Basis sigma høyre parentes høyre hakeparentes skråstrek S Sub n Basis tilde Brøk U pluss Rot n SluttRot z Sub 1 minus beta Basis Over venstre parentes khi Sub 2 Basis venstre hakeparentes n minus 1 høyre hakeparentes skråstrek venstre parentes n minus 1 høyre parentes høyre parentes Sub 1 skråstrek 2 Basis SluttBrøk tilde t venstre hakeparentes n minus 1 semikolon Rot n SluttRot z Sub 1 minus beta Basis høyre hakeparentes komma"
+    },
+    "Sample_64_default": {
+      "expected": "gamma venstre krøllparentes er lik er lik P venstre krøllparentes subsettt av subsettt av E komma p komma q venstre parentes høyre krøllparentes komma X venstre parentes høyre parentes r komma X venstre parentes høyre parentes s punktum er lik er lik ganger ganger faktorisk n faktorisk faktorisk venstre parentes høyre parentes minus minus r 1 faktorisk sum sum er lik er lik j 0 minus minus minus sr 1 ganger ganger ganger ganger venstre parentes høyre parentes minus minus 1 jp pluss pluss rj faktorisk faktorisk venstre parentes høyre parentes minus minus minus nrj faktorisk j faktorisk av II minus minus 1 q venstre parentes høyre parentes komma pluss pluss minus minus ns 1 komma minus minus minus srj punktum"
+    },
+    "Sample_64_brief": {
+      "expected": "gamma venstre krøllparentes er lik er lik P venstre krøllparentes subsettt av subsettt av E komma p komma q venstre parentes høyre krøllparentes komma X venstre parentes høyre parentes r komma X venstre parentes høyre parentes s punktum er lik er lik ganger ganger faktorisk n faktorisk faktorisk venstre parentes høyre parentes minus minus r 1 faktorisk sum sum er lik er lik j 0 minus minus minus sr 1 ganger ganger ganger ganger venstre parentes høyre parentes minus minus 1 jp pluss pluss rj faktorisk faktorisk venstre parentes høyre parentes minus minus minus nrj faktorisk j faktorisk av II minus minus 1 q venstre parentes høyre parentes komma pluss pluss minus minus ns 1 komma minus minus minus srj punktum"
+    },
+    "Sample_64_sbrief": {
+      "expected": "gamma venstre krøllparentes er lik er lik P venstre krøllparentes subsettt av subsettt av E komma p komma q venstre parentes høyre krøllparentes komma X venstre parentes høyre parentes r komma X venstre parentes høyre parentes s punktum er lik er lik ganger ganger faktorisk n faktorisk faktorisk venstre parentes høyre parentes minus minus r 1 faktorisk sum sum er lik er lik j 0 minus minus minus sr 1 ganger ganger ganger ganger venstre parentes høyre parentes minus minus 1 jp pluss pluss rj faktorisk faktorisk venstre parentes høyre parentes minus minus minus nrj faktorisk j faktorisk av II minus minus 1 q venstre parentes høyre parentes komma pluss pluss minus minus ns 1 komma minus minus minus srj punktum"
+    },
+    "Sample_65_default": {
+      "expected": "S Subskript i Grunnlinje venstre hakeparentes høyre hakeparentes tx er lik venstre hakeparentes høyre hakeparentes skråstrek skråstrek 1 m 0 airi venstre hakeparentes høyre hakeparentes tx pluss venstre hakeparentes høyre hakeparentes skråstrek skråstrek venstre parentes høyre parentes minus minus i 1 mbi komma"
+    },
+    "Sample_65_brief": {
+      "expected": "S Sub i Basis venstre hakeparentes høyre hakeparentes tx er lik venstre hakeparentes høyre hakeparentes skråstrek skråstrek 1 m 0 airi venstre hakeparentes høyre hakeparentes tx pluss venstre hakeparentes høyre hakeparentes skråstrek skråstrek venstre parentes høyre parentes minus minus i 1 mbi komma"
+    },
+    "Sample_65_sbrief": {
+      "expected": "S Sub i Basis venstre hakeparentes høyre hakeparentes tx er lik venstre hakeparentes høyre hakeparentes skråstrek skråstrek 1 m 0 airi venstre hakeparentes høyre hakeparentes tx pluss venstre hakeparentes høyre hakeparentes skråstrek skråstrek venstre parentes høyre parentes minus minus i 1 mbi komma"
+    },
+    "Sample_66_default": {
+      "expected": "c 1 h Superskript 4 minus 2 s Grunnlinje er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk integral Underskript minus T Overskript T Sluttskript venstre parentes f venstre parentes t pluss h høyre parentes minus f venstre parentes t høyre parentes høyre parentes Superskript 2 Grunnlinje d t er mindre enn eller er lik c 2 h Superskript 4 minus 2 s"
+    },
+    "Sample_66_brief": {
+      "expected": "c 1 h Sub 4 minus 2 s Basis er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk integral Underskript minus T Overskript T Sluttskript venstre parentes f venstre parentes t pluss h høyre parentes minus f venstre parentes t høyre parentes høyre parentes Sub 2 Basis d t er mindre enn eller er lik c 2 h Sub 4 minus 2 s"
+    },
+    "Sample_66_sbrief": {
+      "expected": "c 1 h Sub 4 minus 2 s Basis er mindre enn eller er lik Brøk 1 Over 2 T SluttBrøk integral Underskript minus T Overskript T Sluttskript venstre parentes f venstre parentes t pluss h høyre parentes minus f venstre parentes t høyre parentes høyre parentes Sub 2 Basis d t er mindre enn eller er lik c 2 h Sub 4 minus 2 s"
+    },
+    "Sample_67_default": {
+      "expected": "C venstre parentes 0 høyre parentes minus C venstre parentes h høyre parentes asymptomatisk lik c h Superskript 4 minus 2 s"
+    },
+    "Sample_67_brief": {
+      "expected": "C venstre parentes 0 høyre parentes minus C venstre parentes h høyre parentes asymptomatisk lik c h Sub 4 minus 2 s"
+    },
+    "Sample_67_sbrief": {
+      "expected": "C venstre parentes 0 høyre parentes minus C venstre parentes h høyre parentes asymptomatisk lik c h Sub 4 minus 2 s"
+    },
+    "Sample_68_default": {
+      "expected": "S venstre parentes omega høyre parentes er lik grense Underskript T høyrepil uendelig Sluttskript Start Brøk 1 Over 2 T Slutt Brøk vertikalstrek vertikalstrek komma komma komma komma komma integral minus minus TT komma f komma venstre parentes høyre parentes komma komma komma t komma komma e ganger ganger it omega komma d komma t Superskript 2 Grunnlinje punktum"
+    },
+    "Sample_68_brief": {
+      "expected": "S venstre parentes omega høyre parentes er lik grense Underskript T høyrepil uendelig Sluttskript Start Brøk 1 Over 2 T Slutt Brøk vertikalstrek vertikalstrek komma komma komma komma komma integral minus minus TT komma f komma venstre parentes høyre parentes komma komma komma t komma komma e ganger ganger it omega komma d komma t Sub 2 Basis punktum"
+    },
+    "Sample_68_sbrief": {
+      "expected": "S venstre parentes omega høyre parentes er lik grense Underskript T høyrepil uendelig Sluttskript Brøk 1 Over 2 T SluttBrøk vertikalstrek vertikalstrek komma komma komma komma komma integral minus minus TT komma f komma venstre parentes høyre parentes komma komma komma t komma komma e ganger ganger it omega komma d komma t Sub 2 Basis punktum"
+    },
+    "Sample_69_default": {
+      "expected": "integral Underskript 0 Overskript 1 Sluttskript integral Underskript 0 Overskript 1 Sluttskript venstre hakeparentes vertikalstrek vertikalstrek minus minus av ff venstre parentes høyre parentes t av ff venstre parentes høyre parentes u Superskript 2 Grunnlinje pluss vertikalstrek vertikalstrek minus minus tu Superskript 2 Grunnlinje høyre hakeparentes Superskript minus s skråstrek 2 Grunnlinje d t d u er mindre enn uendelig"
+    },
+    "Sample_69_brief": {
+      "expected": "integral Underskript 0 Overskript 1 Sluttskript integral Underskript 0 Overskript 1 Sluttskript venstre hakeparentes vertikalstrek vertikalstrek minus minus av ff venstre parentes høyre parentes t av ff venstre parentes høyre parentes u Sub 2 Basis pluss vertikalstrek vertikalstrek minus minus tu Sub 2 Basis høyre hakeparentes Sub minus s skråstrek 2 Basis d t d u er mindre enn uendelig"
+    },
+    "Sample_69_sbrief": {
+      "expected": "integral Underskript 0 Overskript 1 Sluttskript integral Underskript 0 Overskript 1 Sluttskript venstre hakeparentes vertikalstrek vertikalstrek minus minus av ff venstre parentes høyre parentes t av ff venstre parentes høyre parentes u Sub 2 Basis pluss vertikalstrek vertikalstrek minus minus tu Sub 2 Basis høyre hakeparentes Sub minus s skråstrek 2 Basis d t d u er mindre enn uendelig"
+    },
+    "Sample_70_default": {
+      "expected": "E venstre parentes sum Underskript I element av E Subskript k pluss 1 Grunnlinje Sluttskript vertikalstrek vertikalstrek I Superskript s Grunnlinje høyre parentes er lik E venstre parentes sum Underskript I element av E Subskript k Grunnlinje Sluttskript vertikalstrek vertikalstrek I Superskript s Grunnlinje høyre parentes E venstre parentes R 1 Superskript s Grunnlinje pluss R 2 Superskript s Grunnlinje høyre parentes punktum"
+    },
+    "Sample_70_brief": {
+      "expected": "E venstre parentes sum Underskript I element av E Sub k pluss 1 Basis Sluttskript vertikalstrek vertikalstrek I Sub s Basis høyre parentes er lik E venstre parentes sum Underskript I element av E Sub k Basis Sluttskript vertikalstrek vertikalstrek I Sub s Basis høyre parentes E venstre parentes R 1 Sub s Basis pluss R 2 Sub s Basis høyre parentes punktum"
+    },
+    "Sample_70_sbrief": {
+      "expected": "E venstre parentes sum Underskript I element av E Sub k pluss 1 Basis Sluttskript vertikalstrek vertikalstrek I Sub s Basis høyre parentes er lik E venstre parentes sum Underskript I element av E Sub k Basis Sluttskript vertikalstrek vertikalstrek I Sub s Basis høyre parentes E venstre parentes R 1 Sub s Basis pluss R 2 Sub s Basis høyre parentes punktum"
+    },
+    "Sample_71_default": {
+      "expected": "venstre parentes x 1 komma y 1 høyre parentes"
+    },
+    "Sample_71_brief": {
+      "expected": "venstre parentes x 1 komma y 1 høyre parentes"
+    },
+    "Sample_71_sbrief": {
+      "expected": "venstre parentes x 1 komma y 1 høyre parentes"
+    },
+    "Sample_72_default": {
+      "expected": "venstre parentes x 2 komma y 2 høyre parentes"
+    },
+    "Sample_72_brief": {
+      "expected": "venstre parentes x 2 komma y 2 høyre parentes"
+    },
+    "Sample_72_sbrief": {
+      "expected": "venstre parentes x 2 komma y 2 høyre parentes"
+    },
+    "Sample_73_default": {
+      "expected": "d er lik StartRot venstre parentes x 2 minus x 1 høyre parentes Superskript 2 Grunnlinje pluss venstre parentes y 2 minus y 1 høyre parentes Superskript 2 Grunnlinje SluttRot"
+    },
+    "Sample_73_brief": {
+      "expected": "d er lik StartRot venstre parentes x 2 minus x 1 høyre parentes Sub 2 Basis pluss venstre parentes y 2 minus y 1 høyre parentes Sub 2 Basis SluttRot"
+    },
+    "Sample_73_sbrief": {
+      "expected": "d er lik Rot venstre parentes x 2 minus x 1 høyre parentes Sub 2 Basis pluss venstre parentes y 2 minus y 1 høyre parentes Sub 2 Basis SluttRot"
+    },
+    "Sample_74_default": {
+      "expected": "R"
+    },
+    "Sample_74_brief": {
+      "expected": "R"
+    },
+    "Sample_74_sbrief": {
+      "expected": "R"
+    },
+    "Sample_75_default": {
+      "expected": "R er lik venstre parentes minus uendelig komma uendelig høyre parentes"
+    },
+    "Sample_75_brief": {
+      "expected": "R er lik venstre parentes minus uendelig komma uendelig høyre parentes"
+    },
+    "Sample_75_sbrief": {
+      "expected": "R er lik venstre parentes minus uendelig komma uendelig høyre parentes"
+    },
+    "Sample_76_default": {
+      "expected": "venstre krøllparentes høyre krøllparentes komma ,1 ,2 ,3"
+    },
+    "Sample_76_brief": {
+      "expected": "venstre krøllparentes høyre krøllparentes komma ,1 ,2 ,3"
+    },
+    "Sample_76_sbrief": {
+      "expected": "venstre krøllparentes høyre krøllparentes komma ,1 ,2 ,3"
+    },
+    "Sample_77_default": {
+      "expected": "1 element av S"
+    },
+    "Sample_77_brief": {
+      "expected": "1 element av S"
+    },
+    "Sample_77_sbrief": {
+      "expected": "1 element av S"
+    },
+    "Sample_78_default": {
+      "expected": "3 element av S"
+    },
+    "Sample_78_brief": {
+      "expected": "3 element av S"
+    },
+    "Sample_78_sbrief": {
+      "expected": "3 element av S"
+    },
+    "Sample_79_default": {
+      "expected": "4 ikke et element av S"
+    },
+    "Sample_79_brief": {
+      "expected": "4 ikke et element av S"
+    },
+    "Sample_79_sbrief": {
+      "expected": "4 ikke et element av S"
+    },
+    "Sample_80_default": {
+      "expected": "a er lik StartRot 3 x minus 1 SluttRot pluss venstre parentes 1 pluss x høyre parentes Superskript 2"
+    },
+    "Sample_80_brief": {
+      "expected": "a er lik StartRot 3 x minus 1 SluttRot pluss venstre parentes 1 pluss x høyre parentes Sub 2"
+    },
+    "Sample_80_sbrief": {
+      "expected": "a er lik Rot 3 x minus 1 SluttRot pluss venstre parentes 1 pluss x høyre parentes Sub 2"
+    },
+    "Sample_81_default": {
+      "expected": "a er lik Start Brøk venstre parentes b pluss c høyre parentes Superskript 2 Grunnlinje Over d Slutt Brøk pluss Start Brøk venstre parentes e pluss f høyre parentes Superskript 2 Grunnlinje Over g Slutt Brøk"
+    },
+    "Sample_81_brief": {
+      "expected": "a er lik Start Brøk venstre parentes b pluss c høyre parentes Sub 2 Basis Over d Slutt Brøk pluss Start Brøk venstre parentes e pluss f høyre parentes Sub 2 Basis Over g Slutt Brøk"
+    },
+    "Sample_81_sbrief": {
+      "expected": "a er lik Brøk venstre parentes b pluss c høyre parentes Sub 2 Basis Over d SluttBrøk pluss Brøk venstre parentes e pluss f høyre parentes Sub 2 Basis Over g SluttBrøk"
+    },
+    "Sample_82_default": {
+      "expected": "x er lik venstre hakeparentes venstre parentes a pluss b høyre parentes Superskript 2 Grunnlinje venstre parentes c minus b høyre parentes Superskript 2 Grunnlinje høyre hakeparentes pluss venstre hakeparentes venstre parentes d pluss e høyre parentes Superskript 2 Grunnlinje venstre parentes f minus e høyre parentes Superskript 2 Grunnlinje høyre hakeparentes"
+    },
+    "Sample_82_brief": {
+      "expected": "x er lik venstre hakeparentes venstre parentes a pluss b høyre parentes Sub 2 Basis venstre parentes c minus b høyre parentes Sub 2 Basis høyre hakeparentes pluss venstre hakeparentes venstre parentes d pluss e høyre parentes Sub 2 Basis venstre parentes f minus e høyre parentes Sub 2 Basis høyre hakeparentes"
+    },
+    "Sample_82_sbrief": {
+      "expected": "x er lik venstre hakeparentes venstre parentes a pluss b høyre parentes Sub 2 Basis venstre parentes c minus b høyre parentes Sub 2 Basis høyre hakeparentes pluss venstre hakeparentes venstre parentes d pluss e høyre parentes Sub 2 Basis venstre parentes f minus e høyre parentes Sub 2 Basis høyre hakeparentes"
+    },
+    "Sample_83_default": {
+      "expected": "x er lik venstre hakeparentes venstre parentes a pluss b høyre parentes Superskript 2 Grunnlinje høyre hakeparentes pluss venstre hakeparentes venstre parentes f minus e høyre parentes Superskript 2 Grunnlinje høyre hakeparentes"
+    },
+    "Sample_83_brief": {
+      "expected": "x er lik venstre hakeparentes venstre parentes a pluss b høyre parentes Sub 2 Basis høyre hakeparentes pluss venstre hakeparentes venstre parentes f minus e høyre parentes Sub 2 Basis høyre hakeparentes"
+    },
+    "Sample_83_sbrief": {
+      "expected": "x er lik venstre hakeparentes venstre parentes a pluss b høyre parentes Sub 2 Basis høyre hakeparentes pluss venstre hakeparentes venstre parentes f minus e høyre parentes Sub 2 Basis høyre hakeparentes"
+    },
+    "Sample_84_default": {
+      "expected": "x er lik venstre hakeparentes venstre parentes a pluss b høyre parentes Superskript 2 Grunnlinje høyre hakeparentes"
+    },
+    "Sample_84_brief": {
+      "expected": "x er lik venstre hakeparentes venstre parentes a pluss b høyre parentes Sub 2 Basis høyre hakeparentes"
+    },
+    "Sample_84_sbrief": {
+      "expected": "x er lik venstre hakeparentes venstre parentes a pluss b høyre parentes Sub 2 Basis høyre hakeparentes"
+    },
+    "Sample_85_default": {
+      "expected": "x er lik venstre parentes a pluss b høyre parentes Superskript 2"
+    },
+    "Sample_85_brief": {
+      "expected": "x er lik venstre parentes a pluss b høyre parentes Sub 2"
+    },
+    "Sample_85_sbrief": {
+      "expected": "x er lik venstre parentes a pluss b høyre parentes Sub 2"
+    },
+    "Sample_86_default": {
+      "expected": "x er lik a pluss b Superskript 2"
+    },
+    "Sample_86_brief": {
+      "expected": "x er lik a pluss b Sub 2"
+    },
+    "Sample_86_sbrief": {
+      "expected": "x er lik a pluss b Sub 2"
+    },
+    "Sample_87_default": {
+      "expected": "Start Brøk eins halb Over tre firetel Slutt Brøk er lik to drittel"
+    },
+    "Sample_87_brief": {
+      "expected": "Start Brøk eins halb Over tre firetel Slutt Brøk er lik to drittel"
+    },
+    "Sample_87_sbrief": {
+      "expected": "Brøk eins halb Over tre firetel SluttBrøk er lik to drittel"
+    },
+    "Sample_88_default": {
+      "expected": "2 venstre parentes venstre parentes x pluss 1 høyre parentes venstre parentes x pluss 3 høyre parentes minus 4 venstre parentes venstre parentes x minus 1 høyre parentes venstre parentes x pluss 2 høyre parentes minus 3 høyre parentes høyre parentes er lik y"
+    },
+    "Sample_88_brief": {
+      "expected": "2 venstre parentes venstre parentes x pluss 1 høyre parentes venstre parentes x pluss 3 høyre parentes minus 4 venstre parentes venstre parentes x minus 1 høyre parentes venstre parentes x pluss 2 høyre parentes minus 3 høyre parentes høyre parentes er lik y"
+    },
+    "Sample_88_sbrief": {
+      "expected": "2 venstre parentes venstre parentes x pluss 1 høyre parentes venstre parentes x pluss 3 høyre parentes minus 4 venstre parentes venstre parentes x minus 1 høyre parentes venstre parentes x pluss 2 høyre parentes minus 3 høyre parentes høyre parentes er lik y"
+    },
+    "Sample_89_default": {
+      "expected": "cosinus x er lik 1 minus Start Brøk x Superskript 2 Grunnlinje Over 2 faktorisk Slutt Brøk pluss Start Brøk x Superskript 4 Grunnlinje Over 4 faktorisk Slutt Brøk minus prikk prikk prikk"
+    },
+    "Sample_89_brief": {
+      "expected": "cosinus x er lik 1 minus Start Brøk x Sub 2 Basis Over 2 faktorisk Slutt Brøk pluss Start Brøk x Sub 4 Basis Over 4 faktorisk Slutt Brøk minus prikk prikk prikk"
+    },
+    "Sample_89_sbrief": {
+      "expected": "cosinus x er lik 1 minus Brøk x Sub 2 Basis Over 2 faktorisk SluttBrøk pluss Brøk x Sub 4 Basis Over 4 faktorisk SluttBrøk minus prikk prikk prikk"
+    },
+    "Sample_90_default": {
+      "expected": "x er lik Start Brøk minus b pluss minus StartRot b Superskript 2 Grunnlinje minus 4 a c SluttRot Over 2 a Slutt Brøk"
+    },
+    "Sample_90_brief": {
+      "expected": "x er lik Start Brøk minus b pluss minus StartRot b Sub 2 Basis minus 4 a c SluttRot Over 2 a Slutt Brøk"
+    },
+    "Sample_90_sbrief": {
+      "expected": "x er lik Brøk minus b pluss minus Rot b Sub 2 Basis minus 4 a c SluttRot Over 2 a SluttBrøk"
+    },
+    "Sample_91_default": {
+      "expected": "x pluss y Superskript Start Brøk 2 Over k pluss 1 Slutt Brøk"
+    },
+    "Sample_91_brief": {
+      "expected": "x pluss y Sub Start Brøk 2 Over k pluss 1 Slutt Brøk"
+    },
+    "Sample_91_sbrief": {
+      "expected": "x pluss y Sub Brøk 2 Over k pluss 1 SluttBrøk"
+    },
+    "Sample_92_default": {
+      "expected": "grense Underskript x høyrepil 0 Sluttskript Start Brøk sinus x Over x Slutt Brøk er lik 1"
+    },
+    "Sample_92_brief": {
+      "expected": "grense Underskript x høyrepil 0 Sluttskript Start Brøk sinus x Over x Slutt Brøk er lik 1"
+    },
+    "Sample_92_sbrief": {
+      "expected": "grense Underskript x høyrepil 0 Sluttskript Brøk sinus x Over x SluttBrøk er lik 1"
+    },
+    "Sample_93_default": {
+      "expected": "d er lik StartRot venstre parentes x 2 minus x 1 høyre parentes Superskript 2 Grunnlinje pluss venstre parentes y 2 minus y 1 høyre parentes Superskript 2 Grunnlinje SluttRot"
+    },
+    "Sample_93_brief": {
+      "expected": "d er lik StartRot venstre parentes x 2 minus x 1 høyre parentes Sub 2 Basis pluss venstre parentes y 2 minus y 1 høyre parentes Sub 2 Basis SluttRot"
+    },
+    "Sample_93_sbrief": {
+      "expected": "d er lik Rot venstre parentes x 2 minus x 1 høyre parentes Sub 2 Basis pluss venstre parentes y 2 minus y 1 høyre parentes Sub 2 Basis SluttRot"
+    },
+    "Sample_94_default": {
+      "expected": "F Subskript n Grunnlinje er lik F Subskript n minus 1 Grunnlinje pluss F Subskript n minus 2"
+    },
+    "Sample_94_brief": {
+      "expected": "F Sub n Basis er lik F Sub n minus 1 Basis pluss F Sub n minus 2"
+    },
+    "Sample_94_sbrief": {
+      "expected": "F Sub n Basis er lik F Sub n minus 1 Basis pluss F Sub n minus 2"
+    },
+    "Sample_95_default": {
+      "expected": "Pi er lik venstre parentes høyre parentes pi 11 pi 12π120 00 pi 12 pi 11π120 00 pi 12 pi 12π1100000 0π4400000 0π4400000 0 pi 44"
+    },
+    "Sample_95_brief": {
+      "expected": "Pi er lik venstre parentes høyre parentes pi 11 pi 12π120 00 pi 12 pi 11π120 00 pi 12 pi 12π1100000 0π4400000 0π4400000 0 pi 44"
+    },
+    "Sample_95_sbrief": {
+      "expected": "Pi er lik venstre parentes høyre parentes pi 11 pi 12π120 00 pi 12 pi 11π120 00 pi 12 pi 12π1100000 0π4400000 0π4400000 0 pi 44"
+    },
+    "Sample_96_default": {
+      "expected": "s 11 er lik Start Brøk c 11 pluss c 12 Over venstre parentes c 11 minus c 12 høyre parentes venstre parentes c 11 pluss 2 c 12 høyre parentes Slutt Brøk"
+    },
+    "Sample_96_brief": {
+      "expected": "s 11 er lik Start Brøk c 11 pluss c 12 Over venstre parentes c 11 minus c 12 høyre parentes venstre parentes c 11 pluss 2 c 12 høyre parentes Slutt Brøk"
+    },
+    "Sample_96_sbrief": {
+      "expected": "s 11 er lik Brøk c 11 pluss c 12 Over venstre parentes c 11 minus c 12 høyre parentes venstre parentes c 11 pluss 2 c 12 høyre parentes SluttBrøk"
+    },
+    "Sample_97_default": {
+      "expected": "S i O 2 pluss 6 H F høyrepil H 2 S i F 6 pluss 2 H 2 O"
+    },
+    "Sample_97_brief": {
+      "expected": "S i O 2 pluss 6 H F høyrepil H 2 S i F 6 pluss 2 H 2 O"
+    },
+    "Sample_97_sbrief": {
+      "expected": "S i O 2 pluss 6 H F høyrepil H 2 S i F 6 pluss 2 H 2 O"
+    },
+    "Sample_98_default": {
+      "expected": "Start Brøk d Over d x Slutt Brøk venstre parentes E venstre parentes x høyre parentes A venstre parentes x høyre parentes Start Brøk d w venstre parentes x høyre parentes Over d x Slutt Brøk høyre parentes pluss p venstre parentes x høyre parentes er lik 0"
+    },
+    "Sample_98_brief": {
+      "expected": "Start Brøk d Over d x Slutt Brøk venstre parentes E venstre parentes x høyre parentes A venstre parentes x høyre parentes Start Brøk d w venstre parentes x høyre parentes Over d x Slutt Brøk høyre parentes pluss p venstre parentes x høyre parentes er lik 0"
+    },
+    "Sample_98_sbrief": {
+      "expected": "Brøk d Over d x SluttBrøk venstre parentes E venstre parentes x høyre parentes A venstre parentes x høyre parentes Brøk d w venstre parentes x høyre parentes Over d x SluttBrøk høyre parentes pluss p venstre parentes x høyre parentes er lik 0"
+    },
+    "Sample_99_default": {
+      "expected": "TCS Subskript gas Grunnlinje er lik minus eins halb venstre parentes Start Brøk P Subskript seal Grunnlinje Over P Subskript maks Grunnlinje Slutt Brøk høyre parentes venstre parentes Start Brøk 1 Over T Subskript seal Grunnlinje Slutt Brøk høyre parentes"
+    },
+    "Sample_99_brief": {
+      "expected": "TCS Sub gas Basis er lik minus eins halb venstre parentes Start Brøk P Sub seal Basis Over P Sub maks Basis Slutt Brøk høyre parentes venstre parentes Start Brøk 1 Over T Sub seal Basis Slutt Brøk høyre parentes"
+    },
+    "Sample_99_sbrief": {
+      "expected": "TCS Sub gas Basis er lik minus eins halb venstre parentes Brøk P Sub seal Basis Over P Sub maks Basis SluttBrøk høyre parentes venstre parentes Brøk 1 Over T Sub seal Basis SluttBrøk høyre parentes"
+    },
+    "Sample_100_default": {
+      "expected": "B Subskript p Grunnlinje er lik Start Start Brøk Start Brøk 7 minus v Superskript 2 Grunnlinje Over 3 Slutt Brøk venstre parentes 1 pluss Start Brøk c Superskript 2 Grunnlinje Over a Superskript 2 Grunnlinje Slutt Brøk pluss Start Brøk c Superskript 4 Grunnlinje Over a Superskript 4 Grunnlinje Slutt Brøk høyre parentes pluss Start Brøk venstre parentes 3 minus v høyre parentes Superskript 2 Grunnlinje c Superskript 2 Grunnlinje Over venstre parentes 1 pluss v høyre parentes a Superskript 2 Grunnlinje Slutt Brøk Over Over venstre parentes 1 minus v høyre parentes venstre parentes 1 minus Start Brøk c Superskript 4 Grunnlinje Over a Superskript 4 Grunnlinje Slutt Brøk høyre parentes venstre parentes 1 minus Start Brøk c Superskript 2 Grunnlinje Over a Superskript 2 Grunnlinje Slutt Brøk høyre parentes Slutt Slutt Brøk"
+    },
+    "Sample_100_brief": {
+      "expected": "B Sub p Basis er lik Start Start Brøk Start Brøk 7 minus v Sub 2 Basis Over 3 Slutt Brøk venstre parentes 1 pluss Start Brøk c Sub 2 Basis Over a Sub 2 Basis Slutt Brøk pluss Start Brøk c Sub 4 Basis Over a Sub 4 Basis Slutt Brøk høyre parentes pluss Start Brøk venstre parentes 3 minus v høyre parentes Sub 2 Basis c Sub 2 Basis Over venstre parentes 1 pluss v høyre parentes a Sub 2 Basis Slutt Brøk Over Over venstre parentes 1 minus v høyre parentes venstre parentes 1 minus Start Brøk c Sub 4 Basis Over a Sub 4 Basis Slutt Brøk høyre parentes venstre parentes 1 minus Start Brøk c Sub 2 Basis Over a Sub 2 Basis Slutt Brøk høyre parentes Slutt Slutt Brøk"
+    },
+    "Sample_100_sbrief": {
+      "expected": "B Sub p Basis er lik NøstBrøk Brøk 7 minus v Sub 2 Basis Over 3 SluttBrøk venstre parentes 1 pluss Brøk c Sub 2 Basis Over a Sub 2 Basis SluttBrøk pluss Brøk c Sub 4 Basis Over a Sub 4 Basis SluttBrøk høyre parentes pluss Brøk venstre parentes 3 minus v høyre parentes Sub 2 Basis c Sub 2 Basis Over venstre parentes 1 pluss v høyre parentes a Sub 2 Basis SluttBrøk NøstOver venstre parentes 1 minus v høyre parentes venstre parentes 1 minus Brøk c Sub 4 Basis Over a Sub 4 Basis SluttBrøk høyre parentes venstre parentes 1 minus Brøk c Sub 2 Basis Over a Sub 2 Basis SluttBrøk høyre parentes NøstSluttBrøk"
+    },
+    "Sample_101_default": {
+      "expected": "Q Subskript tank Superskript series Grunnlinje er lik Start Brøk 1 Over R Subskript s Grunnlinje Slutt Brøk StartRot Start Brøk L Subskript s Grunnlinje Over C Subskript s Grunnlinje Slutt Brøk SluttRot"
+    },
+    "Sample_101_brief": {
+      "expected": "Q Sub tank Sub series Basis er lik Start Brøk 1 Over R Sub s Basis Slutt Brøk StartRot Start Brøk L Sub s Basis Over C Sub s Basis Slutt Brøk SluttRot"
+    },
+    "Sample_101_sbrief": {
+      "expected": "Q Sub tank Sub series Basis er lik Brøk 1 Over R Sub s Basis SluttBrøk Rot Brøk L Sub s Basis Over C Sub s Basis SluttBrøk SluttRot"
+    },
+    "Sample_102_default": {
+      "expected": "triangel phi Subskript peak Grunnlinje er lik tangens Superskript minus 1 Grunnlinje venstre parentes k Superskript 2 Grunnlinje Q Subskript tank Superskript series Grunnlinje høyre parentes"
+    },
+    "Sample_102_brief": {
+      "expected": "triangel phi Sub peak Basis er lik tangens Sub minus 1 Basis venstre parentes k Sub 2 Basis Q Sub tank Sub series Basis høyre parentes"
+    },
+    "Sample_102_sbrief": {
+      "expected": "triangel phi Sub peak Basis er lik tangens Sub minus 1 Basis venstre parentes k Sub 2 Basis Q Sub tank Sub series Basis høyre parentes"
+    },
+    "Sample_103_default": {
+      "expected": "f er lik 1.013 Start Brøk W Over L Superskript 2 Grunnlinje Slutt Brøk StartRot Start Brøk E Over rho Slutt Brøk SluttRot StartRot venstre parentes 1 pluss 0.293 Start Brøk L Superskript 2 Grunnlinje Over EW Superskript 2 Grunnlinje Slutt Brøk sigma høyre parentes SluttRot"
+    },
+    "Sample_103_brief": {
+      "expected": "f er lik 1.013 Start Brøk W Over L Sub 2 Basis Slutt Brøk StartRot Start Brøk E Over rho Slutt Brøk SluttRot StartRot venstre parentes 1 pluss 0.293 Start Brøk L Sub 2 Basis Over EW Sub 2 Basis Slutt Brøk sigma høyre parentes SluttRot"
+    },
+    "Sample_103_sbrief": {
+      "expected": "f er lik 1.013 Brøk W Over L Sub 2 Basis SluttBrøk Rot Brøk E Over rho SluttBrøk SluttRot Rot venstre parentes 1 pluss 0.293 Brøk L Sub 2 Basis Over EW Sub 2 Basis SluttBrøk sigma høyre parentes SluttRot"
+    },
+    "Sample_104_default": {
+      "expected": "u Subskript n Grunnlinje venstre parentes x høyre parentes er lik gamma Subskript n Grunnlinje venstre parentes hyperbolsk cosinus k Subskript n Grunnlinje x minus cosinus k Subskript n Grunnlinje x høyre parentes pluss venstre parentes hyperbolsk sinus k Subskript n Grunnlinje x minus sinus k Subskript n Grunnlinje x høyre parentes"
+    },
+    "Sample_104_brief": {
+      "expected": "u Sub n Basis venstre parentes x høyre parentes er lik gamma Sub n Basis venstre parentes hyperbolsk cosinus k Sub n Basis x minus cosinus k Sub n Basis x høyre parentes pluss venstre parentes hyperbolsk sinus k Sub n Basis x minus sinus k Sub n Basis x høyre parentes"
+    },
+    "Sample_104_sbrief": {
+      "expected": "u Sub n Basis venstre parentes x høyre parentes er lik gamma Sub n Basis venstre parentes hyperbolsk cosinus k Sub n Basis x minus cosinus k Sub n Basis x høyre parentes pluss venstre parentes hyperbolsk sinus k Sub n Basis x minus sinus k Sub n Basis x høyre parentes"
+    },
+    "Sample_105_default": {
+      "expected": "B er lik er lik F 0 m pluss pluss venstre parentes høyre parentes minus minus omega 02 omega 22 ganger ganger ganger 4 n 2 omega 2 er lik er lik F 0 k pluss pluss venstre parentes høyre parentes minus minus 1 venstre parentes høyre parentes skråstrek skråstrek omega omega 022 2 ganger ganger ganger 4 venstre parentes høyre parentes skråstrek skråstrek n omega 02 venstre parentes høyre parentes skråstrek skråstrek omega omega 02"
+    },
+    "Sample_105_brief": {
+      "expected": "B er lik er lik F 0 m pluss pluss venstre parentes høyre parentes minus minus omega 02 omega 22 ganger ganger ganger 4 n 2 omega 2 er lik er lik F 0 k pluss pluss venstre parentes høyre parentes minus minus 1 venstre parentes høyre parentes skråstrek skråstrek omega omega 022 2 ganger ganger ganger 4 venstre parentes høyre parentes skråstrek skråstrek n omega 02 venstre parentes høyre parentes skråstrek skråstrek omega omega 02"
+    },
+    "Sample_105_sbrief": {
+      "expected": "B er lik er lik F 0 m pluss pluss venstre parentes høyre parentes minus minus omega 02 omega 22 ganger ganger ganger 4 n 2 omega 2 er lik er lik F 0 k pluss pluss venstre parentes høyre parentes minus minus 1 venstre parentes høyre parentes skråstrek skråstrek omega omega 022 2 ganger ganger ganger 4 venstre parentes høyre parentes skråstrek skråstrek n omega 02 venstre parentes høyre parentes skråstrek skråstrek omega omega 02"
+    },
+    "Sample_106_default": {
+      "expected": "p venstre parentes A a n d B høyre parentes er lik p venstre parentes A høyre parentes p venstre parentes B vertikalstrek A høyre parentes"
+    },
+    "Sample_106_brief": {
+      "expected": "p venstre parentes A a n d B høyre parentes er lik p venstre parentes A høyre parentes p venstre parentes B vertikalstrek A høyre parentes"
+    },
+    "Sample_106_sbrief": {
+      "expected": "p venstre parentes A a n d B høyre parentes er lik p venstre parentes A høyre parentes p venstre parentes B vertikalstrek A høyre parentes"
+    },
+    "Sample_107_default": {
+      "expected": "P M F venstre parentes x høyre parentes proporsjonal med venstre parentes Start Brøk 1 Over x Slutt Brøk høyre parentes Superskript alfa"
+    },
+    "Sample_107_brief": {
+      "expected": "P M F venstre parentes x høyre parentes proporsjonal med venstre parentes Start Brøk 1 Over x Slutt Brøk høyre parentes Sub alfa"
+    },
+    "Sample_107_sbrief": {
+      "expected": "P M F venstre parentes x høyre parentes proporsjonal med venstre parentes Brøk 1 Over x SluttBrøk høyre parentes Sub alfa"
+    },
+    "Sample_108_default": {
+      "expected": "f venstre parentes x høyre parentes er lik Start Brøk 1 Over StartRot 2 pi SluttRot Slutt Brøk eksponent venstre parentes minus x Superskript 2 skråstrek 2 høyre parentes"
+    },
+    "Sample_108_brief": {
+      "expected": "f venstre parentes x høyre parentes er lik Start Brøk 1 Over StartRot 2 pi SluttRot Slutt Brøk eksponent venstre parentes minus x Sub 2 skråstrek 2 høyre parentes"
+    },
+    "Sample_108_sbrief": {
+      "expected": "f venstre parentes x høyre parentes er lik Brøk 1 Over Rot 2 pi SluttRot SluttBrøk eksponent venstre parentes minus x Sub 2 skråstrek 2 høyre parentes"
+    },
+    "Sample_109_default": {
+      "expected": "Start Brøk d x Over d theta Slutt Brøk er lik Start Brøk beta Over cosinus Superskript 2 Grunnlinje theta Slutt Brøk"
+    },
+    "Sample_109_brief": {
+      "expected": "Start Brøk d x Over d theta Slutt Brøk er lik Start Brøk beta Over cosinus Sub 2 Basis theta Slutt Brøk"
+    },
+    "Sample_109_sbrief": {
+      "expected": "Brøk d x Over d theta SluttBrøk er lik Brøk beta Over cosinus Sub 2 Basis theta SluttBrøk"
+    },
+    "Sample_110_default": {
+      "expected": "s skråstrek StartRot 2 venstre parentes n minus 1 høyre parentes SluttRot"
+    },
+    "Sample_110_brief": {
+      "expected": "s skråstrek StartRot 2 venstre parentes n minus 1 høyre parentes SluttRot"
+    },
+    "Sample_110_sbrief": {
+      "expected": "s skråstrek Rot 2 venstre parentes n minus 1 høyre parentes SluttRot"
+    }
+  }
+}

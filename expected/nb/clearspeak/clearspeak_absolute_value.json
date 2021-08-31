@@ -1,0 +1,85 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "BokmalClearspeakAbsoluteValue",
+  "locale": "nb",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_absolute_value.json",
+  "information": "Bokmal Clearspeak AbsoluteValue rule tests.",
+  "active": "ClearspeakBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Abs01": {
+      "expected": "vertikalstrek vertikalstrek x"
+    },
+    "Abs02": {
+      "expected": "vertikalstrek vertikalstrek pluss pluss x 1"
+    },
+    "Abs03": {
+      "expected": "vertikalstrek vertikalstrek x pluss 1"
+    },
+    "Abs04": {
+      "expected": "vertikalstrek vertikalstrek x pluss vertikalstrek vertikalstrek y er større enn eller er lik vertikalstrek vertikalstrek z"
+    },
+    "AbsEnd01": {
+      "expected": "vertikalstrek vertikalstrek x"
+    },
+    "AbsEnd02": {
+      "expected": "vertikalstrek vertikalstrek pluss pluss x 1"
+    },
+    "AbsEnd03": {
+      "expected": "vertikalstrek vertikalstrek x pluss 1"
+    },
+    "AbsEnd04": {
+      "expected": "vertikalstrek vertikalstrek x pluss vertikalstrek vertikalstrek y er større enn eller er lik vertikalstrek vertikalstrek z"
+    },
+    "Card01": {
+      "expected": "vertikalstrek vertikalstrek S"
+    },
+    "Determinant01": {
+      "expected": "vertikalstrek vertikalstrek M"
+    },
+    "AbsDet01": {
+      "expected": "vertikalstrek vertikalstrek 2175"
+    },
+    "AbsDet02": {
+      "expected": "vertikalstrek vertikalstrek 241352147"
+    },
+    "AbsDet03": {
+      "expected": "vertikalstrek vertikalstrek 0343210930216290"
+    },
+    "AbsDet04": {
+      "expected": "vertikalstrek vertikalstrek 217 pluss pluss 5 x"
+    },
+    "AbsDet05": {
+      "expected": "vertikalstrek vertikalstrek ganger ganger 2x175"
+    },
+    "AbsDet06": {
+      "expected": "vertikalstrek vertikalstrek ganger ganger 2 xy 1223"
+    },
+    "AbsDet07": {
+      "expected": "vertikalstrek vertikalstrek 12233415"
+    },
+    "AbsDet08": {
+      "expected": "vertikalstrek vertikalstrek 2175"
+    },
+    "AbsDet09": {
+      "expected": "vertikalstrek vertikalstrek 241352147"
+    },
+    "AbsDet10": {
+      "expected": "vertikalstrek vertikalstrek 0343210930216290"
+    },
+    "AbsDet11": {
+      "expected": "vertikalstrek vertikalstrek 217 pluss pluss 5 x"
+    },
+    "AbsDet12": {
+      "expected": "vertikalstrek vertikalstrek ganger ganger 2x175"
+    },
+    "AbsDet13": {
+      "expected": "vertikalstrek vertikalstrek ganger ganger 2 xy 1223"
+    },
+    "AbsDet14": {
+      "expected": "vertikalstrek vertikalstrek 12233415"
+    }
+  }
+}

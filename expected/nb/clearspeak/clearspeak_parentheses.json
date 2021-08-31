@@ -1,0 +1,247 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "BokmalClearspeakParentheses",
+  "locale": "nb",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_parentheses.json",
+  "information": "Bokmal Clearspeak Parentheses rule tests.",
+  "active": "ClearspeakBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Paren001": {
+      "expected": "25"
+    },
+    "Paren002": {
+      "expected": "2 x"
+    },
+    "Paren003": {
+      "expected": "2 pluss minus 2"
+    },
+    "Paren004": {
+      "expected": "2 minus minus 2"
+    },
+    "Paren004a": {
+      "expected": "2 minus minus 2"
+    },
+    "Paren005": {
+      "expected": "2 minus venstre parentes høyre parentes minus minus 23"
+    },
+    "Paren006": {
+      "expected": "venstre parentes høyre parentes ganger ganger 2 x 2"
+    },
+    "Paren007": {
+      "expected": "venstre parentes høyre parentes ganger ganger 2 x pluss pluss y 1"
+    },
+    "Paren008": {
+      "expected": "minus 2 x"
+    },
+    "Paren009": {
+      "expected": "venstre parentes høyre parentes minus minus ganger ganger 2 x 2"
+    },
+    "Paren010": {
+      "expected": "minus venstre parentes høyre parentes ganger ganger 2 x 2"
+    },
+    "Paren011": {
+      "expected": "12"
+    },
+    "Paren012": {
+      "expected": "34 x"
+    },
+    "Paren013": {
+      "expected": "venstre parentes, 1122, høyre parentes"
+    },
+    "Paren014": {
+      "expected": "venstre parentes høyre parentes 124"
+    },
+    "Paren015": {
+      "expected": "venstre parentes høyre parentes 11152"
+    },
+    "Paren016": {
+      "expected": "venstre parentes, 25, høyre parentes"
+    },
+    "Paren017": {
+      "expected": "venstre parentes, 2 x, høyre parentes"
+    },
+    "Paren018": {
+      "expected": "2 pluss, venstre parentes, minus 2, høyre parentes"
+    },
+    "Paren019": {
+      "expected": "2 minus, venstre parentes, minus 2, høyre parentes"
+    },
+    "Paren020": {
+      "expected": "2 minus venstre parentes høyre parentes minus minus 23"
+    },
+    "Paren021": {
+      "expected": "venstre parentes høyre parentes ganger ganger 2 x 2"
+    },
+    "Paren022": {
+      "expected": "venstre parentes høyre parentes ganger ganger 2 x pluss pluss y 1"
+    },
+    "Paren023": {
+      "expected": "venstre parentes, minus 2 x, høyre parentes"
+    },
+    "Paren024": {
+      "expected": "venstre parentes høyre parentes minus minus ganger ganger 2 x 2"
+    },
+    "Paren025": {
+      "expected": "minus venstre parentes høyre parentes ganger ganger 2 x 2"
+    },
+    "Paren026": {
+      "expected": "venstre parentes, 12, høyre parentes"
+    },
+    "Paren027": {
+      "expected": "venstre parentes, 34 x, høyre parentes"
+    },
+    "Paren028": {
+      "expected": "venstre parentes, 1122, høyre parentes"
+    },
+    "Paren029": {
+      "expected": "venstre parentes høyre parentes 124"
+    },
+    "Paren030": {
+      "expected": "venstre parentes høyre parentes 11152"
+    },
+    "Paren031": {
+      "expected": "venstre parentes, 1 komma 2, høyre parentes"
+    },
+    "Paren032": {
+      "expected": "venstre parentes, x komma y, høyre parentes"
+    },
+    "Paren033": {
+      "expected": "venstre parentes, 1 komma 2 komma 3, høyre parentes"
+    },
+    "Paren034": {
+      "expected": "venstre parentes, x komma y komma z, høyre parentes"
+    },
+    "Paren035": {
+      "expected": "venstre parentes, 1 komma 2 komma 386, høyre parentes"
+    },
+    "Paren036": {
+      "expected": "venstre parentes, a komma b, høyre parentes"
+    },
+    "Paren037": {
+      "expected": "venstre parentes, 0 komma 1, høyre parentes"
+    },
+    "Paren038": {
+      "expected": "venstre hakeparentes, a komma b, høyre parentes"
+    },
+    "Paren039": {
+      "expected": "venstre hakeparentes, 0 komma 1, høyre parentes"
+    },
+    "Paren040": {
+      "expected": "venstre parentes, a komma b, høyre hakeparentes"
+    },
+    "Paren041": {
+      "expected": "venstre parentes, 0 komma 1, høyre hakeparentes"
+    },
+    "Paren042": {
+      "expected": "venstre hakeparentes, a komma b, høyre hakeparentes"
+    },
+    "Paren043": {
+      "expected": "venstre hakeparentes, 0 komma 1, høyre hakeparentes"
+    },
+    "Paren044": {
+      "expected": "venstre parentes, minus uendelig, komma b, høyre parentes"
+    },
+    "Paren045": {
+      "expected": "venstre parentes, minus uendelig, komma 1, høyre parentes"
+    },
+    "Paren046": {
+      "expected": "venstre parentes, minus uendelig, komma b, høyre hakeparentes"
+    },
+    "Paren047": {
+      "expected": "venstre parentes, minus uendelig, komma 1, høyre hakeparentes"
+    },
+    "Paren048": {
+      "expected": "venstre parentes, a komma uendelig, høyre parentes"
+    },
+    "Paren049": {
+      "expected": "venstre parentes, 1 komma uendelig, høyre parentes"
+    },
+    "Paren050": {
+      "expected": "venstre hakeparentes, a komma uendelig, høyre parentes"
+    },
+    "Paren051": {
+      "expected": "venstre hakeparentes, 1 komma uendelig, høyre parentes"
+    },
+    "Paren052": {
+      "expected": "venstre parentes, minus uendelig, komma uendelig, høyre parentes"
+    },
+    "Paren053": {
+      "expected": "venstre parentes, minus uendelig, komma, pluss uendelig, høyre parentes"
+    },
+    "Nest001": {
+      "expected": "av ff venstre parentes høyre parentes av gg venstre parentes høyre parentes x"
+    },
+    "Nest002": {
+      "expected": "av ff venstre parentes høyre parentes av gg venstre parentes høyre parentes pluss pluss x 1"
+    },
+    "Nest003": {
+      "expected": "6 minus, venstre hakeparentes, 2 minus, venstre parentes, 3 pluss 5, høyre parentes, høyre hakeparentes"
+    },
+    "Nest004": {
+      "expected": "6 minus, venstre parentes, 2 minus, tote venstre parentes, 3 pluss 5, tote høyre parentes, høyre parentes"
+    },
+    "Nest005": {
+      "expected": "4 ganger, venstre hakeparentes, x pluss 3 ganger, venstre parentes, 2 x, pluss 1, høyre parentes, høyre hakeparentes"
+    },
+    "Nest006": {
+      "expected": "4 ganger, venstre parentes, x pluss 3 ganger, tote venstre parentes, 2 x, pluss 1, tote høyre parentes, høyre parentes"
+    },
+    "Nest007": {
+      "expected": "1 pluss, venstre parentes, 2 pluss, tote venstre parentes, 3 pluss 7, tote høyre parentes, minus, tote venstre parentes, 2 pluss 8, tote høyre parentes, høyre parentes"
+    },
+    "Nest008": {
+      "expected": "1 pluss, venstre parentes, 2 pluss, tote venstre parentes, 3 minus, dritte venstre parentes, 4 minus 5, dritte høyre parentes, tote høyre parentes, høyre parentes"
+    },
+    "Nest009": {
+      "expected": "venstre parentes, tote venstre parentes, 2 pluss, dritte venstre parentes, 3 pluss 4, dritte høyre parentes, pluss 5, tote høyre parentes, pluss 6 pluss, tote venstre parentes, dritte venstre parentes, 7 pluss, firete venstre parentes, 8 pluss 1, firete høyre parentes, dritte høyre parentes, pluss 2, tote høyre parentes, høyre parentes"
+    },
+    "SilParen001": {
+      "expected": "25"
+    },
+    "SilParen002": {
+      "expected": "2 x"
+    },
+    "SilParen003": {
+      "expected": "2 pluss, minus 2"
+    },
+    "SilParen004": {
+      "expected": "2 minus, minus 2"
+    },
+    "SilParen005": {
+      "expected": "2 minus venstre parentes høyre parentes minus minus 23"
+    },
+    "SilParen006": {
+      "expected": "venstre parentes høyre parentes ganger ganger 2 x 2"
+    },
+    "SilParen007": {
+      "expected": "venstre parentes høyre parentes ganger ganger 2 x pluss pluss y 1"
+    },
+    "SilParen008": {
+      "expected": "minus 2 x"
+    },
+    "SilParen009": {
+      "expected": "venstre parentes høyre parentes minus minus ganger ganger 2 x 2"
+    },
+    "SilParen010": {
+      "expected": "minus venstre parentes høyre parentes ganger ganger 2 x 2"
+    },
+    "SilParen011": {
+      "expected": "12"
+    },
+    "SilParen012": {
+      "expected": "34 x"
+    },
+    "SilParen013": {
+      "expected": "1122"
+    },
+    "SilParen014": {
+      "expected": "venstre parentes høyre parentes 124"
+    },
+    "SilParen015": {
+      "expected": "venstre parentes høyre parentes 11152"
+    }
+  }
+}

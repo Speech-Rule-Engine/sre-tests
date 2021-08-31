@@ -1,0 +1,285 @@
+{
+  "name": "BokmalClearspeakCoverage",
+  "locale": "nb",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_coverage.json",
+  "information": "Bokmal Clearspeak Coverage tests.",
+  "active": "ClearspeakBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "ApplSimple_0": {
+      "expected": "av ff av gg venstre parentes høyre parentes x"
+    },
+    "ApplSimple_1": {
+      "expected": "av ff av ggx er lik av ff venstre parentes høyre parentes x pluss av gg venstre parentes høyre parentes x"
+    },
+    "BinaryOperationPause_0": {
+      "expected": "av sinsin venstre parentes høyre parentes x y"
+    },
+    "Empty_Line_0": {
+      "expected": "a"
+    },
+    "Empty_Line_1": {
+      "expected": "a"
+    },
+    "Empty_Line_2": {
+      "expected": "a"
+    },
+    "Empty_Cell_0": {
+      "expected": "a er lik b"
+    },
+    "Empty_Cell_1": {
+      "expected": "a er lik b"
+    },
+    "Empty_Cell_2": {
+      "expected": "a er lik b"
+    },
+    "Empty_Cell_3": {
+      "expected": "a er lik b 12"
+    },
+    "Angle_0_default": {
+      "expected": "45 grader, 10 minutter, 20 sekunder"
+    },
+    "Angle_1_default": {
+      "expected": "1 grad, 10 minutter, 20 sekunder"
+    },
+    "Angle_2_default": {
+      "expected": "45 grader, 1 minutt, 20 sekunder"
+    },
+    "Angle_3_default": {
+      "expected": "45 grader, 10 minutter, 1 sekund"
+    },
+    "Angle_4_default": {
+      "expected": "1 fot, 20 in"
+    },
+    "Angle_5_default": {
+      "expected": "10 fot, 1 in"
+    },
+    "Angle_0_Angle": {
+      "expected": "45 grader, 10 minutter, 20 sekunder"
+    },
+    "Angle_1_Angle": {
+      "expected": "1 grad, 10 minutter, 20 sekunder"
+    },
+    "Angle_2_Angle": {
+      "expected": "45 grader, 1 minutt, 20 sekunder"
+    },
+    "Angle_3_Angle": {
+      "expected": "45 grader, 10 minutter, 1 sekund"
+    },
+    "Angle_4_Angle": {
+      "expected": "1 minutt, 20 sekunder"
+    },
+    "Angle_5_Angle": {
+      "expected": "10 minutter, 1 sekund"
+    },
+    "Angle_0_Length": {
+      "expected": "45 grader, 10 minutter, 20 sekunder"
+    },
+    "Angle_1_Length": {
+      "expected": "1 grad, 10 minutter, 20 sekunder"
+    },
+    "Angle_2_Length": {
+      "expected": "45 grader, 1 minutt, 20 sekunder"
+    },
+    "Angle_3_Length": {
+      "expected": "45 grader, 10 minutter, 1 sekund"
+    },
+    "Angle_4_Length": {
+      "expected": "1 fot, 20 in"
+    },
+    "Angle_5_Length": {
+      "expected": "10 fot, 1 in"
+    },
+    "Enclose_0": {
+      "expected": "12"
+    },
+    "Enclose_1": {
+      "expected": "12"
+    },
+    "Enclose_2": {
+      "expected": "212"
+    },
+    "Enclose_3": {
+      "expected": "122"
+    },
+    "Enclose_4": {
+      "expected": "122"
+    },
+    "Enclose_5": {
+      "expected": "212"
+    },
+    "Enclose_6": {
+      "expected": "12"
+    },
+    "Enclose_7": {
+      "expected": "12"
+    },
+    "Enclose_8": {
+      "expected": "212"
+    },
+    "Enclose_9": {
+      "expected": "122"
+    },
+    "Enclose_10": {
+      "expected": "122"
+    },
+    "Enclose_11": {
+      "expected": "212"
+    },
+    "EncloseSpecial_0": {
+      "expected": "A"
+    },
+    "EncloseSpecial_1": {
+      "expected": "A"
+    },
+    "EncloseSpecial_2": {
+      "expected": "A"
+    },
+    "EncloseSpecial_3": {
+      "expected": "A"
+    },
+    "NestedRoots_0": {
+      "expected": "pluss pluss 3 ab"
+    },
+    "NestedRoots_1": {
+      "expected": "pluss pluss 4 ab"
+    },
+    "NestedRoots_2": {
+      "expected": "pluss pluss ab"
+    },
+    "NestedRoots_3": {
+      "expected": "pluss pluss ab"
+    },
+    "NestedRoots_4": {
+      "expected": "pluss pluss ab"
+    },
+    "NestedRoots_5": {
+      "expected": "pluss pluss minus minus ab"
+    },
+    "Tensor_0": {
+      "expected": "a b x c d"
+    },
+    "Tensor_1": {
+      "expected": "a b g h x c d e f"
+    },
+    "Tensor_2": {
+      "expected": "a b x; d"
+    },
+    "Tensor_3": {
+      "expected": "a b x c; r"
+    },
+    "Tensor_4": {
+      "expected": "l; b x c d"
+    },
+    "Tensor_5": {
+      "expected": "a; x c d"
+    },
+    "Set_0": {
+      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek ikke et element av ikke et element av xA vertikalstrek B"
+    },
+    "Set_1": {
+      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek ikke et element av ikke et element av xA vertikalstrek B"
+    },
+    "Set_2": {
+      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek ikke et element av ikke et element av xA vertikalstrek B"
+    },
+    "Set_3": {
+      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek ikke et element av ikke et element av xA vertikalstrek B"
+    },
+    "Set_4": {
+      "expected": "venstre krøllparentes høyre krøllparentes B"
+    },
+    "Set_5": {
+      "expected": "venstre krøllparentes høyre krøllparentes"
+    },
+    "NamedSet_0": {
+      "expected": "q-pluss"
+    },
+    "NamedSet_1": {
+      "expected": "q-pluss"
+    },
+    "NamedSet_2": {
+      "expected": "q-minus"
+    },
+    "NamedSet_3": {
+      "expected": "q-minus"
+    },
+    "NamedSet_4": {
+      "expected": "q-to"
+    },
+    "NamedSet_5": {
+      "expected": "q-to"
+    },
+    "NamedSet_6": {
+      "expected": "n-to"
+    },
+    "NamedSet_7": {
+      "expected": "n-to"
+    },
+    "Unknown": {
+      "expected": "a"
+    },
+    "MultiLines_0": {
+      "expected": "ganger ganger er lik er lik av ff venstre parentes høyre parentes x minus minus x skiller if er mindre enn er mindre enn x 0 ganger ganger er lik er lik av ff venstre parentes høyre parentes xx skiller if er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "MultiLines_1": {
+      "expected": "er lik er lik av ff venstre parentes høyre parentes x minus minus x skiller if er mindre enn er mindre enn x 0 ganger ganger er lik er lik av ff venstre parentes høyre parentes xx skiller if er større enn eller er lik er større enn eller er lik x 0"
+    },
+    "VulgarFraction": {
+      "expected": "1020"
+    },
+    "UnitFraction": {
+      "expected": "ganger ganger 2 kmb"
+    },
+    "Decimal": {
+      "expected": "1,4, 3 strek"
+    },
+    "VertLine_SuchThat": {
+      "expected": "3 vertikalstrek 6"
+    },
+    "VectorEndDeterminant": {
+      "expected": "vertikalstrek vertikalstrek 2175"
+    },
+    "SimpleExponentSquared_0": {
+      "expected": "322"
+    },
+    "SimpleExponentSquared_1": {
+      "expected": "3 i 2"
+    },
+    "SimpleExponentSquared_2": {
+      "expected": "3232"
+    },
+    "SimpleExponentCubed_0": {
+      "expected": "323"
+    },
+    "SimpleExponentCubed_1": {
+      "expected": "3 i 3"
+    },
+    "SimpleExponentCubed_2": {
+      "expected": "3233"
+    },
+    "MultiRel": {
+      "expected": "a er mindre enn eller er lik b er lik c"
+    },
+    "PrefixFunctionAsExponent": {
+      "expected": "3 av sinsin venstre parentes høyre parentes pluss pluss 2 x"
+    },
+    "CompositeFunctionFences": {
+      "expected": "av f venstre parentes høyre parentes pluss pluss fg venstre parentes høyre parentes pluss pluss 2 x"
+    },
+    "LimUpper": {
+      "expected": "sum I"
+    },
+    "Overscript": {
+      "expected": "AB"
+    },
+    "DetFemale": {
+      "expected": "av detdetA"
+    },
+    "ExponentLatinCap": {
+      "expected": "xA"
+    }
+  }
+}

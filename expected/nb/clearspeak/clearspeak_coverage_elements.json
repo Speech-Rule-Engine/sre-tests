@@ -1,0 +1,159 @@
+{
+  "name": "BokmalClearspeakCoverageElements",
+  "locale": "nb",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_coverage_elements.json",
+  "information": "Bokmal Clearspeak Coverage for Elements symbol tests.",
+  "active": "ClearspeakBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "In_set_0": {
+      "expected": "venstre krøllparentes høyre krøllparentes kolon element av element av zA kolon z"
+    },
+    "In_set_1": {
+      "expected": "venstre krøllparentes høyre krøllparentes kolon er et medlem av er et medlem av zA kolon z"
+    },
+    "In_set_2": {
+      "expected": "venstre krøllparentes høyre krøllparentes kolon ikke et element av ikke et element av zA kolon z"
+    },
+    "In_set_3": {
+      "expected": "venstre krøllparentes høyre krøllparentes kolon inneholder som medlem inneholder som medlem Az kolon z"
+    },
+    "In_set_4": {
+      "expected": "venstre krøllparentes høyre krøllparentes kolon inneholder som medlem inneholder som medlem Az kolon z"
+    },
+    "In_set_5": {
+      "expected": "venstre krøllparentes høyre krøllparentes kolon inneholder ikke som medlem inneholder ikke som medlem Az kolon z"
+    },
+    "Free_standing_0": {
+      "expected": "z element av A"
+    },
+    "Free_standing_1": {
+      "expected": "z er et medlem av A"
+    },
+    "Free_standing_2": {
+      "expected": "z ikke et element av A"
+    },
+    "Free_standing_3": {
+      "expected": "A inneholder som medlem z"
+    },
+    "Free_standing_4": {
+      "expected": "A inneholder som medlem z"
+    },
+    "Free_standing_5": {
+      "expected": "A inneholder ikke som medlem z"
+    },
+    "Under_bigop_0": {
+      "expected": "sum element av element av zA"
+    },
+    "Under_bigop_1": {
+      "expected": "sum er et medlem av er et medlem av zA"
+    },
+    "Under_bigop_2": {
+      "expected": "sum ikke et element av ikke et element av zA"
+    },
+    "Under_bigop_3": {
+      "expected": "sum inneholder som medlem inneholder som medlem Az"
+    },
+    "Under_bigop_4": {
+      "expected": "sum inneholder som medlem inneholder som medlem Az"
+    },
+    "Under_bigop_5": {
+      "expected": "sum inneholder ikke som medlem inneholder ikke som medlem Az"
+    },
+    "Preferences_in_0": {
+      "expected": "z element av A"
+    },
+    "Preferences_in_1": {
+      "expected": "venstre krøllparentes høyre krøllparentes kolon element av element av zA kolon z"
+    },
+    "Preferences_in_2": {
+      "expected": "sum element av element av zA"
+    },
+    "Preferences_in_3": {
+      "expected": "z element av A"
+    },
+    "Preferences_in_4": {
+      "expected": "venstre krøllparentes høyre krøllparentes kolon element av element av zA kolon z"
+    },
+    "Preferences_in_5": {
+      "expected": "sum element av element av zA"
+    },
+    "Preferences_in_6": {
+      "expected": "z element av A"
+    },
+    "Preferences_in_7": {
+      "expected": "venstre krøllparentes høyre krøllparentes kolon element av element av zA kolon z"
+    },
+    "Preferences_in_8": {
+      "expected": "sum element av element av zA"
+    },
+    "Preferences_in_9": {
+      "expected": "z element av A"
+    },
+    "Preferences_in_10": {
+      "expected": "venstre krøllparentes høyre krøllparentes kolon element av element av zA kolon z"
+    },
+    "Preferences_in_11": {
+      "expected": "sum element av element av zA"
+    },
+    "Preferences_in_12": {
+      "expected": "z element av A"
+    },
+    "Preferences_in_13": {
+      "expected": "venstre krøllparentes høyre krøllparentes kolon element av element av zA kolon z"
+    },
+    "Preferences_in_14": {
+      "expected": "sum element av element av zA"
+    },
+    "Preferences_not_in_0": {
+      "expected": "z ikke et element av A"
+    },
+    "Preferences_not_in_1": {
+      "expected": "venstre krøllparentes høyre krøllparentes kolon ikke et element av ikke et element av zA kolon z"
+    },
+    "Preferences_not_in_2": {
+      "expected": "sum ikke et element av ikke et element av zA"
+    },
+    "Preferences_not_in_3": {
+      "expected": "z ikke et element av A"
+    },
+    "Preferences_not_in_4": {
+      "expected": "venstre krøllparentes høyre krøllparentes kolon ikke et element av ikke et element av zA kolon z"
+    },
+    "Preferences_not_in_5": {
+      "expected": "sum ikke et element av ikke et element av zA"
+    },
+    "Preferences_not_in_6": {
+      "expected": "z ikke et element av A"
+    },
+    "Preferences_not_in_7": {
+      "expected": "venstre krøllparentes høyre krøllparentes kolon ikke et element av ikke et element av zA kolon z"
+    },
+    "Preferences_not_in_8": {
+      "expected": "sum ikke et element av ikke et element av zA"
+    },
+    "Preferences_not_in_9": {
+      "expected": "z ikke et element av A"
+    },
+    "Preferences_not_in_10": {
+      "expected": "venstre krøllparentes høyre krøllparentes kolon ikke et element av ikke et element av zA kolon z"
+    },
+    "Preferences_not_in_11": {
+      "expected": "sum ikke et element av ikke et element av zA"
+    },
+    "Preferences_not_in_12": {
+      "expected": "z ikke et element av A"
+    },
+    "Preferences_not_in_13": {
+      "expected": "venstre krøllparentes høyre krøllparentes kolon ikke et element av ikke et element av zA kolon z"
+    },
+    "Preferences_not_in_14": {
+      "expected": "sum ikke et element av ikke et element av zA"
+    },
+    "Complex": {
+      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek element av element av aA vertikalstrek 1 a"
+    }
+  }
+}

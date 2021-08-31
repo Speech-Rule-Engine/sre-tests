@@ -1,0 +1,418 @@
+{
+  "name": "BokmalMathspeakCollapse",
+  "locale": "nb",
+  "factory": "collapse",
+  "base": "input/common/collapse_test.json",
+  "information": "Bokmal Mathspeak Collapse tests.",
+  "domain": "mathspeak",
+  "active": "CollapseBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "CollapsedAddition_default": {
+      "expected": "a pluss b"
+    },
+    "CollapsedAddition_brief": {
+      "expected": "a pluss b"
+    },
+    "CollapsedAddition_sbrief": {
+      "expected": "a pluss b"
+    },
+    "CollapsedBigop_default": {
+      "expected": "sum x"
+    },
+    "CollapsedBigop_brief": {
+      "expected": "sum x"
+    },
+    "CollapsedBigop_sbrief": {
+      "expected": "sum x"
+    },
+    "CollapsedBinomial_default": {
+      "expected": "venstre parentes høyre parentes xy"
+    },
+    "CollapsedBinomial_brief": {
+      "expected": "venstre parentes høyre parentes xy"
+    },
+    "CollapsedBinomial_sbrief": {
+      "expected": "venstre parentes høyre parentes xy"
+    },
+    "CollapsedCases_default": {
+      "expected": "venstre krøllparentes y 0 y 2"
+    },
+    "CollapsedCases_brief": {
+      "expected": "venstre krøllparentes y 0 y 2"
+    },
+    "CollapsedCases_sbrief": {
+      "expected": "venstre krøllparentes y 0 y 2"
+    },
+    "CollapsedContinuedFraction_default": {
+      "expected": "Start Start Start Brøk b 1 Over Over Over a 1 pluss Start Start Brøk b 2 Over Over a 2 pluss Start Brøk b 3 Over a 3 pluss prikk prikk prikk Slutt Brøk Slutt Slutt Brøk Slutt Slutt Slutt Brøk"
+    },
+    "CollapsedContinuedFraction_brief": {
+      "expected": "Start Start Start Brøk b 1 Over Over Over a 1 pluss Start Start Brøk b 2 Over Over a 2 pluss Start Brøk b 3 Over a 3 pluss prikk prikk prikk Slutt Brøk Slutt Slutt Brøk Slutt Slutt Slutt Brøk"
+    },
+    "CollapsedContinuedFraction_sbrief": {
+      "expected": "NøsttofachBrøk b 1 NøsttofachOver a 1 pluss NøstBrøk b 2 NøstOver a 2 pluss Brøk b 3 Over a 3 pluss prikk prikk prikk SluttBrøk NøstSluttBrøk NøsttofachSluttBrøk"
+    },
+    "CollapsedDeterminant_default": {
+      "expected": "vertikalstrek vertikalstrek abcd"
+    },
+    "CollapsedDeterminant_brief": {
+      "expected": "vertikalstrek vertikalstrek abcd"
+    },
+    "CollapsedDeterminant_sbrief": {
+      "expected": "vertikalstrek vertikalstrek abcd"
+    },
+    "CollapsedFraction_default": {
+      "expected": "Start Brøk 1 Over x Slutt Brøk"
+    },
+    "CollapsedFraction_brief": {
+      "expected": "Start Brøk 1 Over x Slutt Brøk"
+    },
+    "CollapsedFraction_sbrief": {
+      "expected": "Brøk 1 Over x SluttBrøk"
+    },
+    "CollapsedFunction_default": {
+      "expected": "sinus"
+    },
+    "CollapsedFunction_brief": {
+      "expected": "sinus"
+    },
+    "CollapsedFunction_sbrief": {
+      "expected": "sinus"
+    },
+    "CollapsedIdentifier_default": {
+      "expected": "a"
+    },
+    "CollapsedIdentifier_brief": {
+      "expected": "a"
+    },
+    "CollapsedIdentifier_sbrief": {
+      "expected": "a"
+    },
+    "CollapsedInfixop_default": {
+      "expected": "a skråstrek b"
+    },
+    "CollapsedInfixop_brief": {
+      "expected": "a skråstrek b"
+    },
+    "CollapsedInfixop_sbrief": {
+      "expected": "a skråstrek b"
+    },
+    "CollapsedIntegral_default": {
+      "expected": "konturintegral E prikk d l"
+    },
+    "CollapsedIntegral_brief": {
+      "expected": "konturintegral E prikk d l"
+    },
+    "CollapsedIntegral_sbrief": {
+      "expected": "konturintegral E prikk d l"
+    },
+    "CollapsedLim_default": {
+      "expected": "grense"
+    },
+    "CollapsedLim_brief": {
+      "expected": "grense"
+    },
+    "CollapsedLim_sbrief": {
+      "expected": "grense"
+    },
+    "CollapsedMatrix_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes abcdef"
+    },
+    "CollapsedMatrix_brief": {
+      "expected": "venstre hakeparentes høyre hakeparentes abcdef"
+    },
+    "CollapsedMatrix_sbrief": {
+      "expected": "venstre hakeparentes høyre hakeparentes abcdef"
+    },
+    "CollapsedMixedNumber_default": {
+      "expected": ""
+    },
+    "CollapsedMixedNumber_brief": {
+      "expected": ""
+    },
+    "CollapsedMixedNumber_sbrief": {
+      "expected": ""
+    },
+    "CollapsedMultiplication_default": {
+      "expected": "a asterisk b"
+    },
+    "CollapsedMultiplication_brief": {
+      "expected": "a asterisk b"
+    },
+    "CollapsedMultiplication_sbrief": {
+      "expected": "a asterisk b"
+    },
+    "CollapsedMultirel_default": {
+      "expected": "a er lik b er mindre enn eller er lik b"
+    },
+    "CollapsedMultirel_brief": {
+      "expected": "a er lik b er mindre enn eller er lik b"
+    },
+    "CollapsedMultirel_sbrief": {
+      "expected": "a er lik b er mindre enn eller er lik b"
+    },
+    "CollapsedNumber_default": {
+      "expected": "123456"
+    },
+    "CollapsedNumber_brief": {
+      "expected": "123456"
+    },
+    "CollapsedNumber_sbrief": {
+      "expected": "123456"
+    },
+    "CollapsedPunctuated_default": {
+      "expected": "a komma b komma c"
+    },
+    "CollapsedPunctuated_brief": {
+      "expected": "a komma b komma c"
+    },
+    "CollapsedPunctuated_sbrief": {
+      "expected": "a komma b komma c"
+    },
+    "CollapsedRelation_default": {
+      "expected": "a er lik b"
+    },
+    "CollapsedRelation_brief": {
+      "expected": "a er lik b"
+    },
+    "CollapsedRelation_sbrief": {
+      "expected": "a er lik b"
+    },
+    "CollapsedRelationSeq_default": {
+      "expected": "a er lik b er lik b"
+    },
+    "CollapsedRelationSeq_brief": {
+      "expected": "a er lik b er lik b"
+    },
+    "CollapsedRelationSeq_sbrief": {
+      "expected": "a er lik b er lik b"
+    },
+    "CollapsedRoot_default": {
+      "expected": "RotIndeks 3 StartRot x SluttRot"
+    },
+    "CollapsedRoot_brief": {
+      "expected": "RotIndeks 3 StartRot x SluttRot"
+    },
+    "CollapsedRoot_sbrief": {
+      "expected": "Indeks 3 Rot x SluttRot"
+    },
+    "CollapsedRootNested_default": {
+      "expected": "Nøstet RotIndeks 3 Nøstet StartRot RotIndeks 4 StartRot x SluttRot pluss x Nøstet SluttRot"
+    },
+    "CollapsedRootNested_brief": {
+      "expected": "Nøst RotIndeks 3 Nøst StartRot RotIndeks 4 StartRot x SluttRot pluss x Nøst SluttRot"
+    },
+    "CollapsedRootNested_sbrief": {
+      "expected": "Nøst Indeks 3 Nøst Rot Indeks 4 Rot x SluttRot pluss x Nøst SluttRot"
+    },
+    "CollapsedRowvector_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes ab"
+    },
+    "CollapsedRowvector_brief": {
+      "expected": "venstre hakeparentes høyre hakeparentes ab"
+    },
+    "CollapsedRowvector_sbrief": {
+      "expected": "venstre hakeparentes høyre hakeparentes ab"
+    },
+    "CollapsedSqrt_default": {
+      "expected": "StartRot 2 SluttRot"
+    },
+    "CollapsedSqrt_brief": {
+      "expected": "StartRot 2 SluttRot"
+    },
+    "CollapsedSqrt_sbrief": {
+      "expected": "Rot 2 SluttRot"
+    },
+    "CollapsedSqrtNested_default": {
+      "expected": "Nøstet StartRot 2 StartRot 2 SluttRot Nøstet SluttRot"
+    },
+    "CollapsedSqrtNested_brief": {
+      "expected": "Nøst StartRot 2 StartRot 2 SluttRot Nøst SluttRot"
+    },
+    "CollapsedSqrtNested_sbrief": {
+      "expected": "Nøst Rot 2 Rot 2 SluttRot Nøst SluttRot"
+    },
+    "CollapsedSquarematrix_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes abcd"
+    },
+    "CollapsedSquarematrix_brief": {
+      "expected": "venstre hakeparentes høyre hakeparentes abcd"
+    },
+    "CollapsedSquarematrix_sbrief": {
+      "expected": "venstre hakeparentes høyre hakeparentes abcd"
+    },
+    "CollapsedSubscript_default": {
+      "expected": "a Subskript b"
+    },
+    "CollapsedSubscript_brief": {
+      "expected": "a Sub b"
+    },
+    "CollapsedSubscript_sbrief": {
+      "expected": "a Sub b"
+    },
+    "CollapsedSubsup_default": {
+      "expected": "a Subskript c Superskript b"
+    },
+    "CollapsedSubsup_brief": {
+      "expected": "a Sub c Sub b"
+    },
+    "CollapsedSubsup_sbrief": {
+      "expected": "a Sub c Sub b"
+    },
+    "CollapsedSuperscript_default": {
+      "expected": "a Superskript b"
+    },
+    "CollapsedSuperscript_brief": {
+      "expected": "a Sub b"
+    },
+    "CollapsedSuperscript_sbrief": {
+      "expected": "a Sub b"
+    },
+    "CollapsedTable_default": {
+      "expected": "abcd"
+    },
+    "CollapsedTable_brief": {
+      "expected": "abcd"
+    },
+    "CollapsedTable_sbrief": {
+      "expected": "abcd"
+    },
+    "CollapsedText_default": {
+      "expected": "a b c"
+    },
+    "CollapsedText_brief": {
+      "expected": "a b c"
+    },
+    "CollapsedText_sbrief": {
+      "expected": "a b c"
+    },
+    "CollapsedVarAddition_default": {
+      "expected": "a pluss prikk prikk prikk pluss b"
+    },
+    "CollapsedVarAddition_brief": {
+      "expected": "a pluss prikk prikk prikk pluss b"
+    },
+    "CollapsedVarAddition_sbrief": {
+      "expected": "a pluss prikk prikk prikk pluss b"
+    },
+    "CollapsedVarCases_default": {
+      "expected": "venstre krøllparentes a prikk prikk prikk b"
+    },
+    "CollapsedVarCases_brief": {
+      "expected": "venstre krøllparentes a prikk prikk prikk b"
+    },
+    "CollapsedVarCases_sbrief": {
+      "expected": "venstre krøllparentes a prikk prikk prikk b"
+    },
+    "CollapsedVarDeterminant_default": {
+      "expected": "vertikalstrek vertikalstrek abe prikk prikk prikk cdf"
+    },
+    "CollapsedVarDeterminant_brief": {
+      "expected": "vertikalstrek vertikalstrek abe prikk prikk prikk cdf"
+    },
+    "CollapsedVarDeterminant_sbrief": {
+      "expected": "vertikalstrek vertikalstrek abe prikk prikk prikk cdf"
+    },
+    "CollapsedVarMatrix_default": {
+      "expected": "venstre parentes høyre parentes abe prikk prikk prikk cdf"
+    },
+    "CollapsedVarMatrix_brief": {
+      "expected": "venstre parentes høyre parentes abe prikk prikk prikk cdf"
+    },
+    "CollapsedVarMatrix_sbrief": {
+      "expected": "venstre parentes høyre parentes abe prikk prikk prikk cdf"
+    },
+    "CollapsedVarMultiplication_default": {
+      "expected": "a asterisk prikk prikk prikk asterisk b"
+    },
+    "CollapsedVarMultiplication_brief": {
+      "expected": "a asterisk prikk prikk prikk asterisk b"
+    },
+    "CollapsedVarMultiplication_sbrief": {
+      "expected": "a asterisk prikk prikk prikk asterisk b"
+    },
+    "CollapsedVarMultirel_default": {
+      "expected": "a er lik prikk prikk prikk er mindre enn eller er lik b"
+    },
+    "CollapsedVarMultirel_brief": {
+      "expected": "a er lik prikk prikk prikk er mindre enn eller er lik b"
+    },
+    "CollapsedVarMultirel_sbrief": {
+      "expected": "a er lik prikk prikk prikk er mindre enn eller er lik b"
+    },
+    "CollapsedVarPunctuated_default": {
+      "expected": "a komma prikk prikk prikk komma b"
+    },
+    "CollapsedVarPunctuated_brief": {
+      "expected": "a komma prikk prikk prikk komma b"
+    },
+    "CollapsedVarPunctuated_sbrief": {
+      "expected": "a komma prikk prikk prikk komma b"
+    },
+    "CollapsedVarRelation_default": {
+      "expected": "a er lik prikk prikk prikk er lik b"
+    },
+    "CollapsedVarRelation_brief": {
+      "expected": "a er lik prikk prikk prikk er lik b"
+    },
+    "CollapsedVarRelation_sbrief": {
+      "expected": "a er lik prikk prikk prikk er lik b"
+    },
+    "CollapsedVarVector_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes a vertikal ellipse cd"
+    },
+    "CollapsedVarVector_brief": {
+      "expected": "venstre hakeparentes høyre hakeparentes a vertikal ellipse cd"
+    },
+    "CollapsedVarVector_sbrief": {
+      "expected": "venstre hakeparentes høyre hakeparentes a vertikal ellipse cd"
+    },
+    "CollapsedVector_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes ace"
+    },
+    "CollapsedVector_brief": {
+      "expected": "venstre hakeparentes høyre hakeparentes ace"
+    },
+    "CollapsedVector_sbrief": {
+      "expected": "venstre hakeparentes høyre hakeparentes ace"
+    },
+    "CollapsedVarSubtraction_default": {
+      "expected": "a minus prikk prikk prikk minus b"
+    },
+    "CollapsedVarSubtraction_brief": {
+      "expected": "a minus prikk prikk prikk minus b"
+    },
+    "CollapsedVarSubtraction_sbrief": {
+      "expected": "a minus prikk prikk prikk minus b"
+    },
+    "CollapsedCountImplicit_default": {
+      "expected": "a b c"
+    },
+    "CollapsedCountImplicit_brief": {
+      "expected": "a b c"
+    },
+    "CollapsedCountImplicit_sbrief": {
+      "expected": "a b c"
+    },
+    "CollapsedVarImplicit_default": {
+      "expected": "a prikk prikk prikk b"
+    },
+    "CollapsedVarArrowRelation_default": {
+      "expected": "a høyrepil prikk prikk prikk venstre-høyrepil b"
+    },
+    "CollapsedArrowRelation_default": {
+      "expected": "a høyrepil c venstre-høyrepil b"
+    },
+    "CollapsedVarRowvector_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes a prikk prikk prikk b"
+    },
+    "CollapsedRootInside_default": {
+      "expected": "RotIndeks 3 StartRot x SluttRot a"
+    },
+    "CollapsedRootNestedInside_default": {
+      "expected": "Nøstet RotIndeks 3 Nøstet StartRot RotIndeks 4 StartRot x SluttRot pluss x Nøstet SluttRot a"
+    }
+  }
+}

@@ -1,0 +1,577 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "BokmalClearspeakMatricesAndCombinatorics",
+  "locale": "nb",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_matrices_vectors_and_combinatorics.json",
+  "information": "Bokmal Clearspeak Matrices, Vectors, and Combinatorics rule tests.",
+  "active": "ClearspeakBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Matrix001": {
+      "expected": "venstre parentes høyre parentes 2175"
+    },
+    "Matrix002": {
+      "expected": "venstre hakeparentes høyre hakeparentes 2175"
+    },
+    "Matrix003": {
+      "expected": "venstre parentes høyre parentes 314026"
+    },
+    "Matrix004": {
+      "expected": "venstre hakeparentes høyre hakeparentes 314026"
+    },
+    "Matrix005": {
+      "expected": "venstre parentes høyre parentes 123"
+    },
+    "Matrix006": {
+      "expected": "venstre hakeparentes høyre hakeparentes 123"
+    },
+    "Matrix007": {
+      "expected": "venstre parentes høyre parentes 35"
+    },
+    "Matrix008": {
+      "expected": "venstre hakeparentes høyre hakeparentes 35"
+    },
+    "Matrix008a": {
+      "expected": "venstre parentes høyre parentes 3"
+    },
+    "Matrix008b": {
+      "expected": "venstre parentes høyre parentes 3"
+    },
+    "Matrix009": {
+      "expected": "venstre parentes høyre parentes pluss pluss x 1 minus minus x 1"
+    },
+    "Matrix010": {
+      "expected": "venstre parentes høyre parentes 3612"
+    },
+    "Matrix011": {
+      "expected": "venstre parentes høyre parentes pluss pluss x 1 ganger ganger 2 x"
+    },
+    "Matrix012": {
+      "expected": "venstre parentes høyre parentes 3612"
+    },
+    "Matrix013": {
+      "expected": "venstre parentes høyre parentes 241352147"
+    },
+    "Matrix014": {
+      "expected": "venstre parentes høyre parentes 0343210930216290"
+    },
+    "Matrix015": {
+      "expected": "venstre parentes høyre parentes 2105334270"
+    },
+    "Matrix016": {
+      "expected": "venstre parentes høyre parentes 13422105"
+    },
+    "Matrix017": {
+      "expected": "venstre parentes høyre parentes 217 pluss pluss 5 x"
+    },
+    "Matrix018": {
+      "expected": "venstre parentes høyre parentes 3 minus minus 1x402 6"
+    },
+    "Matrix019": {
+      "expected": "venstre parentes høyre parentes ganger ganger 2x175"
+    },
+    "Matrix019b": {
+      "expected": "venstre parentes høyre parentes ganger ganger 2 xy 1223"
+    },
+    "Matrix020": {
+      "expected": "venstre parentes høyre parentes 12233415"
+    },
+    "Matrix021": {
+      "expected": "venstre parentes høyre parentes b ganger ganger 11 b ganger ganger 12 b ganger ganger 21 b ganger ganger 22"
+    },
+    "Matrix022": {
+      "expected": "3 ganger venstre parentes høyre parentes 2175 ganger venstre parentes høyre parentes 314026"
+    },
+    "Matrix023": {
+      "expected": "venstre parentes høyre parentes 12233415 ganger venstre parentes høyre parentes 3 minus minus 1x402 6"
+    },
+    "Matrix024": {
+      "expected": "venstre parentes høyre parentes 0343210930216290 ganger venstre parentes høyre parentes 13422105"
+    },
+    "Matrix025": {
+      "expected": "vertikalstrek vertikalstrek 2175"
+    },
+    "Matrix026": {
+      "expected": "av detdet venstre parentes høyre parentes 2175"
+    },
+    "Matrix027": {
+      "expected": "vertikalstrek vertikalstrek 241352147"
+    },
+    "Matrix028": {
+      "expected": "av detdet venstre parentes høyre parentes 241352147"
+    },
+    "Matrix029": {
+      "expected": "vertikalstrek vertikalstrek 0343210930216290"
+    },
+    "Matrix030": {
+      "expected": "av detdet venstre parentes høyre parentes 0343210930216290"
+    },
+    "Matrix031": {
+      "expected": "vertikalstrek vertikalstrek 217 pluss pluss 5 x"
+    },
+    "Matrix032": {
+      "expected": "av detdet venstre parentes høyre parentes 217 pluss pluss 5 x"
+    },
+    "Matrix033": {
+      "expected": "vertikalstrek vertikalstrek ganger ganger 2x175"
+    },
+    "Matrix034": {
+      "expected": "av detdet venstre parentes høyre parentes ganger ganger 2x175"
+    },
+    "Matrix035": {
+      "expected": "vertikalstrek vertikalstrek ganger ganger 2 xy 1223"
+    },
+    "Matrix036": {
+      "expected": "av detdet venstre parentes høyre parentes ganger ganger 2 xy 1223"
+    },
+    "Matrix037": {
+      "expected": "vertikalstrek vertikalstrek 12233415"
+    },
+    "Matrix038": {
+      "expected": "av detdet venstre parentes høyre parentes 12233415"
+    },
+    "Matrix039": {
+      "expected": "venstre parentes høyre parentes 2175"
+    },
+    "Matrix040": {
+      "expected": "venstre hakeparentes høyre hakeparentes 2175"
+    },
+    "Matrix041": {
+      "expected": "venstre parentes høyre parentes 314026"
+    },
+    "Matrix042": {
+      "expected": "venstre hakeparentes høyre hakeparentes 314026"
+    },
+    "Matrix043": {
+      "expected": "venstre parentes høyre parentes 123"
+    },
+    "Matrix044": {
+      "expected": "venstre hakeparentes høyre hakeparentes 123"
+    },
+    "Matrix045": {
+      "expected": "venstre parentes høyre parentes 35"
+    },
+    "Matrix046": {
+      "expected": "venstre hakeparentes høyre hakeparentes 35"
+    },
+    "Matrix047": {
+      "expected": "venstre parentes høyre parentes 1234"
+    },
+    "Matrix048": {
+      "expected": "venstre hakeparentes høyre hakeparentes 1234"
+    },
+    "Matrix049": {
+      "expected": "venstre parentes høyre parentes 1234"
+    },
+    "Matrix050": {
+      "expected": "venstre hakeparentes høyre hakeparentes 1234"
+    },
+    "Matrix051": {
+      "expected": "venstre parentes høyre parentes pluss pluss x 1 minus minus x 1"
+    },
+    "Matrix052": {
+      "expected": "venstre parentes høyre parentes 3612"
+    },
+    "Matrix053": {
+      "expected": "venstre parentes høyre parentes pluss pluss x 1 ganger ganger 2 x"
+    },
+    "Matrix054": {
+      "expected": "venstre parentes høyre parentes 3612"
+    },
+    "Matrix055": {
+      "expected": "venstre parentes høyre parentes 241352147"
+    },
+    "Matrix056": {
+      "expected": "venstre parentes høyre parentes 0343210930216290"
+    },
+    "Matrix057": {
+      "expected": "venstre parentes høyre parentes 2105334270"
+    },
+    "Matrix057a": {
+      "expected": "venstre parentes høyre parentes 13422105"
+    },
+    "Matrix058": {
+      "expected": "venstre parentes høyre parentes 217 pluss pluss 5 x"
+    },
+    "Matrix059": {
+      "expected": "venstre parentes høyre parentes 3 minus minus 1x402 6"
+    },
+    "Matrix060": {
+      "expected": "venstre parentes høyre parentes ganger ganger 2x175"
+    },
+    "Matrix061": {
+      "expected": "venstre parentes høyre parentes ganger ganger 2 xy 1223"
+    },
+    "Matrix062": {
+      "expected": "venstre parentes høyre parentes 12233415"
+    },
+    "Matrix063": {
+      "expected": "venstre parentes høyre parentes b ganger ganger 11 b ganger ganger 12 b ganger ganger 21 b ganger ganger 22"
+    },
+    "Matrix064": {
+      "expected": "3 ganger venstre parentes høyre parentes 2175 ganger venstre parentes høyre parentes 314026"
+    },
+    "Matrix065": {
+      "expected": "venstre parentes høyre parentes 12233415 ganger venstre parentes høyre parentes 3 minus minus 1x402 6"
+    },
+    "Matrix066": {
+      "expected": "venstre parentes høyre parentes 0343210930216290 ganger venstre parentes høyre parentes 13422105"
+    },
+    "Matrix067": {
+      "expected": "vertikalstrek vertikalstrek 2175"
+    },
+    "Matrix068": {
+      "expected": "av detdet venstre parentes høyre parentes 2175"
+    },
+    "Matrix069": {
+      "expected": "vertikalstrek vertikalstrek 241352147"
+    },
+    "Matrix070": {
+      "expected": "av detdet venstre parentes høyre parentes 241352147"
+    },
+    "Matrix071": {
+      "expected": "vertikalstrek vertikalstrek 0343210930216290"
+    },
+    "Matrix072": {
+      "expected": "av detdet venstre parentes høyre parentes 0343210930216290"
+    },
+    "Matrix073": {
+      "expected": "vertikalstrek vertikalstrek 217 pluss pluss 5 x"
+    },
+    "Matrix074": {
+      "expected": "av detdet venstre parentes høyre parentes 217 pluss pluss 5 x"
+    },
+    "Matrix075": {
+      "expected": "vertikalstrek vertikalstrek ganger ganger 2x175"
+    },
+    "Matrix076": {
+      "expected": "av detdet venstre parentes høyre parentes ganger ganger 2x175"
+    },
+    "Matrix077": {
+      "expected": "vertikalstrek vertikalstrek ganger ganger 2 xy 1223"
+    },
+    "Matrix078": {
+      "expected": "av detdet venstre parentes høyre parentes ganger ganger 2 xy 1223"
+    },
+    "Matrix079": {
+      "expected": "vertikalstrek vertikalstrek 12233415"
+    },
+    "Matrix080": {
+      "expected": "av detdet venstre parentes høyre parentes 12233415"
+    },
+    "Matrix081": {
+      "expected": "venstre parentes høyre parentes 2175"
+    },
+    "Matrix082": {
+      "expected": "venstre hakeparentes høyre hakeparentes 2175"
+    },
+    "Matrix083": {
+      "expected": "venstre parentes høyre parentes 314026"
+    },
+    "Matrix084": {
+      "expected": "venstre hakeparentes høyre hakeparentes 314026"
+    },
+    "Matrix085": {
+      "expected": "venstre parentes høyre parentes 123"
+    },
+    "Matrix086": {
+      "expected": "venstre hakeparentes høyre hakeparentes 123"
+    },
+    "Matrix087": {
+      "expected": "venstre parentes høyre parentes 35"
+    },
+    "Matrix088": {
+      "expected": "venstre hakeparentes høyre hakeparentes 35"
+    },
+    "Matrix089": {
+      "expected": "venstre parentes høyre parentes pluss pluss x 1 minus minus x 1"
+    },
+    "Matrix090": {
+      "expected": "venstre parentes høyre parentes 3612"
+    },
+    "Matrix091": {
+      "expected": "venstre parentes høyre parentes pluss pluss x 1 ganger ganger 2 x"
+    },
+    "Matrix092": {
+      "expected": "venstre parentes høyre parentes 3612"
+    },
+    "Matrix092a": {
+      "expected": "venstre parentes høyre parentes 241352147"
+    },
+    "Matrix093": {
+      "expected": "venstre parentes høyre parentes 0343210930216290"
+    },
+    "Matrix094": {
+      "expected": "venstre parentes høyre parentes 2105334270"
+    },
+    "Matrix095": {
+      "expected": "venstre parentes høyre parentes 13422105"
+    },
+    "Matrix096": {
+      "expected": "venstre parentes høyre parentes 217 pluss pluss 5 x"
+    },
+    "Matrix097": {
+      "expected": "venstre parentes høyre parentes 3 minus minus 1x402 6"
+    },
+    "Matrix098": {
+      "expected": "venstre parentes høyre parentes ganger ganger 2x175"
+    },
+    "Matrix099": {
+      "expected": "venstre parentes høyre parentes ganger ganger 2 xy 1223"
+    },
+    "Matrix100": {
+      "expected": "venstre parentes høyre parentes 12233415"
+    },
+    "Matrix101": {
+      "expected": "venstre parentes høyre parentes b ganger ganger 11 b ganger ganger 12 b ganger ganger 21 b ganger ganger 22"
+    },
+    "Matrix102": {
+      "expected": "3 ganger venstre parentes høyre parentes 2175 ganger venstre parentes høyre parentes 314026"
+    },
+    "Matrix103": {
+      "expected": "venstre parentes høyre parentes 12233415 ganger venstre parentes høyre parentes 3 minus minus 1x402 6"
+    },
+    "Matrix104": {
+      "expected": "venstre parentes høyre parentes 0343210930216290 ganger venstre parentes høyre parentes 13422105"
+    },
+    "Matrix105": {
+      "expected": "vertikalstrek vertikalstrek 2175"
+    },
+    "Matrix106": {
+      "expected": "av detdet venstre parentes høyre parentes 2175"
+    },
+    "Matrix107": {
+      "expected": "vertikalstrek vertikalstrek 241352147"
+    },
+    "Matrix108": {
+      "expected": "av detdet venstre parentes høyre parentes 241352147"
+    },
+    "Matrix109": {
+      "expected": "vertikalstrek vertikalstrek 0343210930216290"
+    },
+    "Matrix110": {
+      "expected": "av detdet venstre parentes høyre parentes 0343210930216290"
+    },
+    "Matrix111": {
+      "expected": "vertikalstrek vertikalstrek 217 pluss pluss 5 x"
+    },
+    "Matrix112": {
+      "expected": "av detdet venstre parentes høyre parentes 217 pluss pluss 5 x"
+    },
+    "Matrix113": {
+      "expected": "vertikalstrek vertikalstrek ganger ganger 2x175"
+    },
+    "Matrix114": {
+      "expected": "av detdet venstre parentes høyre parentes ganger ganger 2x175"
+    },
+    "Matrix115": {
+      "expected": "vertikalstrek vertikalstrek ganger ganger 2 xy 1223"
+    },
+    "Matrix116": {
+      "expected": "av detdet venstre parentes høyre parentes ganger ganger 2 xy 1223"
+    },
+    "Matrix117": {
+      "expected": "vertikalstrek vertikalstrek 12233415"
+    },
+    "Matrix118": {
+      "expected": "av detdet venstre parentes høyre parentes 12233415"
+    },
+    "Matrix119": {
+      "expected": "venstre parentes høyre parentes 2175"
+    },
+    "Matrix120": {
+      "expected": "venstre hakeparentes høyre hakeparentes 2175"
+    },
+    "Matrix121": {
+      "expected": "venstre parentes høyre parentes 314026"
+    },
+    "Matrix122": {
+      "expected": "venstre hakeparentes høyre hakeparentes 314026"
+    },
+    "Matrix123": {
+      "expected": "venstre parentes høyre parentes 123"
+    },
+    "Matrix124": {
+      "expected": "venstre hakeparentes høyre hakeparentes 123"
+    },
+    "Matrix125": {
+      "expected": "venstre parentes høyre parentes 35"
+    },
+    "Matrix126": {
+      "expected": "venstre hakeparentes høyre hakeparentes 35"
+    },
+    "Matrix127": {
+      "expected": "venstre parentes høyre parentes pluss pluss x 1 minus minus x 1"
+    },
+    "Matrix128": {
+      "expected": "venstre parentes høyre parentes 3612"
+    },
+    "Matrix129": {
+      "expected": "venstre parentes høyre parentes pluss pluss x 1 ganger ganger 2 x"
+    },
+    "Matrix130": {
+      "expected": "venstre parentes høyre parentes 3612"
+    },
+    "Matrix131": {
+      "expected": "venstre parentes høyre parentes 241352147"
+    },
+    "Matrix132": {
+      "expected": "venstre parentes høyre parentes 0343210930216290"
+    },
+    "Matrix133": {
+      "expected": "venstre parentes høyre parentes 2105334270"
+    },
+    "Matrix134": {
+      "expected": "venstre parentes høyre parentes 13422105"
+    },
+    "Matrix135": {
+      "expected": "venstre parentes høyre parentes 217 pluss pluss 5 x"
+    },
+    "Matrix136": {
+      "expected": "venstre parentes høyre parentes 3 minus minus 1x402 6"
+    },
+    "Matrix137": {
+      "expected": "venstre parentes høyre parentes ganger ganger 2x175"
+    },
+    "Matrix138": {
+      "expected": "venstre parentes høyre parentes ganger ganger 2 xy 1223"
+    },
+    "Matrix139": {
+      "expected": "venstre parentes høyre parentes 12233415"
+    },
+    "Matrix140": {
+      "expected": "venstre parentes høyre parentes b ganger ganger 11 b ganger ganger 12 b ganger ganger 21 b ganger ganger 22"
+    },
+    "Matrix141": {
+      "expected": "3 ganger venstre parentes høyre parentes 2175 ganger venstre parentes høyre parentes 314026"
+    },
+    "Matrix142": {
+      "expected": "venstre parentes høyre parentes 12233415 ganger venstre parentes høyre parentes 3 minus minus 1x402 6"
+    },
+    "Matrix143": {
+      "expected": "venstre parentes høyre parentes 0343210930216290 ganger venstre parentes høyre parentes 13422105"
+    },
+    "Matrix144": {
+      "expected": "vertikalstrek vertikalstrek 2175"
+    },
+    "Matrix145": {
+      "expected": "av detdet venstre parentes høyre parentes 2175"
+    },
+    "Matrix146": {
+      "expected": "vertikalstrek vertikalstrek 241352147"
+    },
+    "Matrix147": {
+      "expected": "av detdet venstre parentes høyre parentes 241352147"
+    },
+    "Matrix148": {
+      "expected": "vertikalstrek vertikalstrek 0343210930216290"
+    },
+    "Matrix149": {
+      "expected": "av detdet venstre parentes høyre parentes 0343210930216290"
+    },
+    "Matrix150": {
+      "expected": "vertikalstrek vertikalstrek 217 pluss pluss 5 x"
+    },
+    "Matrix151": {
+      "expected": "av detdet venstre parentes høyre parentes 217 pluss pluss 5 x"
+    },
+    "Matrix152": {
+      "expected": "vertikalstrek vertikalstrek ganger ganger 2x175"
+    },
+    "Matrix153": {
+      "expected": "av detdet venstre parentes høyre parentes ganger ganger 2x175"
+    },
+    "Matrix154": {
+      "expected": "vertikalstrek vertikalstrek ganger ganger 2 xy 1223"
+    },
+    "Matrix155": {
+      "expected": "av detdet venstre parentes høyre parentes ganger ganger 2 xy 1223"
+    },
+    "Matrix156": {
+      "expected": "vertikalstrek vertikalstrek 12233415"
+    },
+    "Matrix157": {
+      "expected": "av detdet venstre parentes høyre parentes 12233415"
+    },
+    "Matrix158": {
+      "expected": "venstre parentes høyre parentes 123"
+    },
+    "Matrix159": {
+      "expected": "venstre hakeparentes høyre hakeparentes 123"
+    },
+    "Matrix160": {
+      "expected": "venstre parentes høyre parentes 35"
+    },
+    "Matrix161": {
+      "expected": "venstre hakeparentes høyre hakeparentes 35"
+    },
+    "Matrix162": {
+      "expected": "venstre parentes høyre parentes pluss pluss x 1 minus minus x 1"
+    },
+    "Matrix163": {
+      "expected": "venstre parentes høyre parentes 3612"
+    },
+    "Matrix164": {
+      "expected": "venstre parentes høyre parentes pluss pluss x 1 ganger ganger 2 x"
+    },
+    "Matrix165": {
+      "expected": "venstre parentes høyre parentes 32 ganger venstre parentes høyre parentes 0594"
+    },
+    "Matrix166": {
+      "expected": "venstre parentes høyre parentes 127 ganger venstre parentes høyre parentes 354806142"
+    },
+    "Matrix167": {
+      "expected": "venstre parentes høyre parentes 0594 ganger venstre parentes høyre parentes 32"
+    },
+    "Matrix168": {
+      "expected": "venstre parentes høyre parentes 354806142 ganger venstre parentes høyre parentes 127"
+    },
+    "Matrix169": {
+      "expected": "venstre parentes høyre parentes 123"
+    },
+    "Matrix170": {
+      "expected": "venstre hakeparentes høyre hakeparentes 123"
+    },
+    "Matrix171": {
+      "expected": "venstre parentes høyre parentes 35"
+    },
+    "Matrix172": {
+      "expected": "venstre hakeparentes høyre hakeparentes 35"
+    },
+    "Matrix173": {
+      "expected": "venstre parentes høyre parentes pluss pluss x 1 minus minus x 1"
+    },
+    "Matrix174": {
+      "expected": "venstre parentes høyre parentes 3612"
+    },
+    "Matrix175": {
+      "expected": "venstre parentes høyre parentes pluss pluss x 1 ganger ganger 2 x"
+    },
+    "Matrix176": {
+      "expected": "venstre parentes høyre parentes 32 ganger venstre parentes høyre parentes 0594"
+    },
+    "Matrix177": {
+      "expected": "venstre parentes høyre parentes 127 ganger venstre parentes høyre parentes 354806142"
+    },
+    "Matrix178": {
+      "expected": "venstre parentes høyre parentes 0594 ganger venstre parentes høyre parentes 32"
+    },
+    "Matrix179": {
+      "expected": "venstre parentes høyre parentes 354806142 ganger venstre parentes høyre parentes 127"
+    },
+    "Matrix180": {
+      "expected": "venstre parentes høyre parentes nr"
+    },
+    "Matrix181": {
+      "expected": "venstre parentes høyre parentes 107"
+    },
+    "Matrix182": {
+      "expected": "venstre parentes høyre parentes 150"
+    },
+    "Matrix183": {
+      "expected": "venstre parentes høyre parentes 83"
+    }
+  }
+}

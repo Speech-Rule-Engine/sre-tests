@@ -1,0 +1,439 @@
+{
+  "name": "BokmalMathspeakSummary",
+  "locale": "nb",
+  "domain": "mathspeak",
+  "factory": "summary",
+  "base": "input/common/summary_test.json",
+  "information": "Bokmal Mathspeak Summary tests.",
+  "active": "SummaryBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "AbstrAddition_default": {
+      "expected": "a pluss b"
+    },
+    "AbstrAddition_brief": {
+      "expected": "a pluss b"
+    },
+    "AbstrAddition_sbrief": {
+      "expected": "a pluss b"
+    },
+    "AbstrBigop_default": {
+      "expected": "sum x"
+    },
+    "AbstrBigop_brief": {
+      "expected": "sum x"
+    },
+    "AbstrBigop_sbrief": {
+      "expected": "sum x"
+    },
+    "AbstrBinomial_default": {
+      "expected": "venstre parentes høyre parentes xy"
+    },
+    "AbstrBinomial_brief": {
+      "expected": "venstre parentes høyre parentes xy"
+    },
+    "AbstrBinomial_sbrief": {
+      "expected": "venstre parentes høyre parentes xy"
+    },
+    "AbstrCases_default": {
+      "expected": "venstre krøllparentes y 0 y 2"
+    },
+    "AbstrCases_brief": {
+      "expected": "venstre krøllparentes y 0 y 2"
+    },
+    "AbstrCases_sbrief": {
+      "expected": "venstre krøllparentes y 0 y 2"
+    },
+    "AbstrCell_default": {
+      "expected": "1. Column a"
+    },
+    "AbstrCell_brief": {
+      "expected": "1. Column a"
+    },
+    "AbstrCell_sbrief": {
+      "expected": "1. Column a"
+    },
+    "AbstrContinuedFraction_default": {
+      "expected": "Start Start Start Brøk b 1 Over Over Over a 1 pluss Start Start Brøk b 2 Over Over a 2 pluss Start Brøk b 3 Over a 3 pluss prikk prikk prikk Slutt Brøk Slutt Slutt Brøk Slutt Slutt Slutt Brøk"
+    },
+    "AbstrContinuedFraction_brief": {
+      "expected": "Start Start Start Brøk b 1 Over Over Over a 1 pluss Start Start Brøk b 2 Over Over a 2 pluss Start Brøk b 3 Over a 3 pluss prikk prikk prikk Slutt Brøk Slutt Slutt Brøk Slutt Slutt Slutt Brøk"
+    },
+    "AbstrContinuedFraction_sbrief": {
+      "expected": "NøsttofachBrøk b 1 NøsttofachOver a 1 pluss NøstBrøk b 2 NøstOver a 2 pluss Brøk b 3 Over a 3 pluss prikk prikk prikk SluttBrøk NøstSluttBrøk NøsttofachSluttBrøk"
+    },
+    "AbstrDeterminant_default": {
+      "expected": "vertikalstrek vertikalstrek abcd"
+    },
+    "AbstrDeterminant_brief": {
+      "expected": "vertikalstrek vertikalstrek abcd"
+    },
+    "AbstrDeterminant_sbrief": {
+      "expected": "vertikalstrek vertikalstrek abcd"
+    },
+    "AbstrFraction_default": {
+      "expected": "Start Brøk 1 Over x Slutt Brøk"
+    },
+    "AbstrFraction_brief": {
+      "expected": "Start Brøk 1 Over x Slutt Brøk"
+    },
+    "AbstrFraction_sbrief": {
+      "expected": "Brøk 1 Over x SluttBrøk"
+    },
+    "AbstrFunction_default": {
+      "expected": "sinus"
+    },
+    "AbstrFunction_brief": {
+      "expected": "sinus"
+    },
+    "AbstrFunction_sbrief": {
+      "expected": "sinus"
+    },
+    "AbstrIdentifier_default": {
+      "expected": "a"
+    },
+    "AbstrIdentifier_brief": {
+      "expected": "a"
+    },
+    "AbstrIdentifier_sbrief": {
+      "expected": "a"
+    },
+    "AbstrInfixop_default": {
+      "expected": "a skråstrek b"
+    },
+    "AbstrInfixop_brief": {
+      "expected": "a skråstrek b"
+    },
+    "AbstrInfixop_sbrief": {
+      "expected": "a skråstrek b"
+    },
+    "AbstrIntegral_default": {
+      "expected": "konturintegral E prikk d l"
+    },
+    "AbstrIntegral_brief": {
+      "expected": "konturintegral E prikk d l"
+    },
+    "AbstrIntegral_sbrief": {
+      "expected": "konturintegral E prikk d l"
+    },
+    "AbstrLim_default": {
+      "expected": "grense"
+    },
+    "AbstrLim_brief": {
+      "expected": "grense"
+    },
+    "AbstrLim_sbrief": {
+      "expected": "grense"
+    },
+    "AbstrLine_default": {
+      "expected": "1. Row a"
+    },
+    "AbstrLine_brief": {
+      "expected": "1. Row a"
+    },
+    "AbstrLine_sbrief": {
+      "expected": "1. Row a"
+    },
+    "AbstrMatrix_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes abcdef"
+    },
+    "AbstrMatrix_brief": {
+      "expected": "venstre hakeparentes høyre hakeparentes abcdef"
+    },
+    "AbstrMatrix_sbrief": {
+      "expected": "venstre hakeparentes høyre hakeparentes abcdef"
+    },
+    "AbstrMixedNumber_default": {
+      "expected": ""
+    },
+    "AbstrMixedNumber_brief": {
+      "expected": ""
+    },
+    "AbstrMixedNumber_sbrief": {
+      "expected": ""
+    },
+    "AbstrMultiplication_default": {
+      "expected": "a asterisk b"
+    },
+    "AbstrMultiplication_brief": {
+      "expected": "a asterisk b"
+    },
+    "AbstrMultiplication_sbrief": {
+      "expected": "a asterisk b"
+    },
+    "AbstrMultirel_default": {
+      "expected": "a er lik b er mindre enn eller er lik b"
+    },
+    "AbstrMultirel_brief": {
+      "expected": "a er lik b er mindre enn eller er lik b"
+    },
+    "AbstrMultirel_sbrief": {
+      "expected": "a er lik b er mindre enn eller er lik b"
+    },
+    "AbstrNumber_default": {
+      "expected": "123456"
+    },
+    "AbstrNumber_brief": {
+      "expected": "123456"
+    },
+    "AbstrNumber_sbrief": {
+      "expected": "123456"
+    },
+    "AbstrPunctuated_default": {
+      "expected": "a komma b komma c"
+    },
+    "AbstrPunctuated_brief": {
+      "expected": "a komma b komma c"
+    },
+    "AbstrPunctuated_sbrief": {
+      "expected": "a komma b komma c"
+    },
+    "AbstrRelation_default": {
+      "expected": "a er lik b"
+    },
+    "AbstrRelation_brief": {
+      "expected": "a er lik b"
+    },
+    "AbstrRelation_sbrief": {
+      "expected": "a er lik b"
+    },
+    "AbstrRelationSeq_default": {
+      "expected": "a er lik b er lik b"
+    },
+    "AbstrRelationSeq_brief": {
+      "expected": "a er lik b er lik b"
+    },
+    "AbstrRelationSeq_sbrief": {
+      "expected": "a er lik b er lik b"
+    },
+    "AbstrRoot_default": {
+      "expected": "RotIndeks 3 StartRot x SluttRot"
+    },
+    "AbstrRoot_brief": {
+      "expected": "RotIndeks 3 StartRot x SluttRot"
+    },
+    "AbstrRoot_sbrief": {
+      "expected": "Indeks 3 Rot x SluttRot"
+    },
+    "AbstrRootNested_default": {
+      "expected": "Nøstet RotIndeks 3 Nøstet StartRot RotIndeks 4 StartRot x SluttRot pluss x Nøstet SluttRot"
+    },
+    "AbstrRootNested_brief": {
+      "expected": "Nøst RotIndeks 3 Nøst StartRot RotIndeks 4 StartRot x SluttRot pluss x Nøst SluttRot"
+    },
+    "AbstrRootNested_sbrief": {
+      "expected": "Nøst Indeks 3 Nøst Rot Indeks 4 Rot x SluttRot pluss x Nøst SluttRot"
+    },
+    "AbstrRow_default": {
+      "expected": "1. Row ab"
+    },
+    "AbstrRow_brief": {
+      "expected": "1. Row ab"
+    },
+    "AbstrRow_sbrief": {
+      "expected": "1. Row ab"
+    },
+    "AbstrRowvector_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes ab"
+    },
+    "AbstrRowvector_brief": {
+      "expected": "venstre hakeparentes høyre hakeparentes ab"
+    },
+    "AbstrRowvector_sbrief": {
+      "expected": "venstre hakeparentes høyre hakeparentes ab"
+    },
+    "AbstrSqrt_default": {
+      "expected": "StartRot 2 SluttRot"
+    },
+    "AbstrSqrt_brief": {
+      "expected": "StartRot 2 SluttRot"
+    },
+    "AbstrSqrt_sbrief": {
+      "expected": "Rot 2 SluttRot"
+    },
+    "AbstrSqrtNested_default": {
+      "expected": "Nøstet StartRot 2 StartRot 2 SluttRot Nøstet SluttRot"
+    },
+    "AbstrSqrtNested_brief": {
+      "expected": "Nøst StartRot 2 StartRot 2 SluttRot Nøst SluttRot"
+    },
+    "AbstrSqrtNested_sbrief": {
+      "expected": "Nøst Rot 2 Rot 2 SluttRot Nøst SluttRot"
+    },
+    "AbstrSquarematrix_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes abcd"
+    },
+    "AbstrSquarematrix_brief": {
+      "expected": "venstre hakeparentes høyre hakeparentes abcd"
+    },
+    "AbstrSquarematrix_sbrief": {
+      "expected": "venstre hakeparentes høyre hakeparentes abcd"
+    },
+    "AbstrSubscript_default": {
+      "expected": "a Subskript b"
+    },
+    "AbstrSubscript_brief": {
+      "expected": "a Sub b"
+    },
+    "AbstrSubscript_sbrief": {
+      "expected": "a Sub b"
+    },
+    "AbstrSubsup_default": {
+      "expected": "a Subskript c Superskript b"
+    },
+    "AbstrSubsup_brief": {
+      "expected": "a Sub c Sub b"
+    },
+    "AbstrSubsup_sbrief": {
+      "expected": "a Sub c Sub b"
+    },
+    "AbstrSuperscript_default": {
+      "expected": "a Superskript b"
+    },
+    "AbstrSuperscript_brief": {
+      "expected": "a Sub b"
+    },
+    "AbstrSuperscript_sbrief": {
+      "expected": "a Sub b"
+    },
+    "AbstrTable_default": {
+      "expected": "abcd"
+    },
+    "AbstrTable_brief": {
+      "expected": "abcd"
+    },
+    "AbstrTable_sbrief": {
+      "expected": "abcd"
+    },
+    "AbstrText_default": {
+      "expected": "a b c"
+    },
+    "AbstrText_brief": {
+      "expected": "a b c"
+    },
+    "AbstrText_sbrief": {
+      "expected": "a b c"
+    },
+    "AbstrVarAddition_default": {
+      "expected": "a pluss prikk prikk prikk pluss b"
+    },
+    "AbstrVarAddition_brief": {
+      "expected": "a pluss prikk prikk prikk pluss b"
+    },
+    "AbstrVarAddition_sbrief": {
+      "expected": "a pluss prikk prikk prikk pluss b"
+    },
+    "AbstrVarCases_default": {
+      "expected": "venstre krøllparentes a prikk prikk prikk b"
+    },
+    "AbstrVarCases_brief": {
+      "expected": "venstre krøllparentes a prikk prikk prikk b"
+    },
+    "AbstrVarCases_sbrief": {
+      "expected": "venstre krøllparentes a prikk prikk prikk b"
+    },
+    "AbstrVarDeterminant_default": {
+      "expected": "vertikalstrek vertikalstrek abe prikk prikk prikk cdf"
+    },
+    "AbstrVarDeterminant_brief": {
+      "expected": "vertikalstrek vertikalstrek abe prikk prikk prikk cdf"
+    },
+    "AbstrVarDeterminant_sbrief": {
+      "expected": "vertikalstrek vertikalstrek abe prikk prikk prikk cdf"
+    },
+    "AbstrVarMatrix_default": {
+      "expected": "venstre parentes høyre parentes abe prikk prikk prikk cdf"
+    },
+    "AbstrVarMatrix_brief": {
+      "expected": "venstre parentes høyre parentes abe prikk prikk prikk cdf"
+    },
+    "AbstrVarMatrix_sbrief": {
+      "expected": "venstre parentes høyre parentes abe prikk prikk prikk cdf"
+    },
+    "AbstrVarMultiplication_default": {
+      "expected": "a asterisk prikk prikk prikk asterisk b"
+    },
+    "AbstrVarMultiplication_brief": {
+      "expected": "a asterisk prikk prikk prikk asterisk b"
+    },
+    "AbstrVarMultiplication_sbrief": {
+      "expected": "a asterisk prikk prikk prikk asterisk b"
+    },
+    "AbstrVarMultirel_default": {
+      "expected": "a er lik prikk prikk prikk er mindre enn eller er lik b"
+    },
+    "AbstrVarMultirel_brief": {
+      "expected": "a er lik prikk prikk prikk er mindre enn eller er lik b"
+    },
+    "AbstrVarMultirel_sbrief": {
+      "expected": "a er lik prikk prikk prikk er mindre enn eller er lik b"
+    },
+    "AbstrVarPunctuated_default": {
+      "expected": "a komma prikk prikk prikk komma b"
+    },
+    "AbstrVarPunctuated_brief": {
+      "expected": "a komma prikk prikk prikk komma b"
+    },
+    "AbstrVarPunctuated_sbrief": {
+      "expected": "a komma prikk prikk prikk komma b"
+    },
+    "AbstrVarRelation_default": {
+      "expected": "a er lik prikk prikk prikk er lik b"
+    },
+    "AbstrVarRelation_brief": {
+      "expected": "a er lik prikk prikk prikk er lik b"
+    },
+    "AbstrVarRelation_sbrief": {
+      "expected": "a er lik prikk prikk prikk er lik b"
+    },
+    "AbstrVarVector_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes a vertikal ellipse cd"
+    },
+    "AbstrVarVector_brief": {
+      "expected": "venstre hakeparentes høyre hakeparentes a vertikal ellipse cd"
+    },
+    "AbstrVarVector_sbrief": {
+      "expected": "venstre hakeparentes høyre hakeparentes a vertikal ellipse cd"
+    },
+    "AbstrVector_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes ace"
+    },
+    "AbstrVector_brief": {
+      "expected": "venstre hakeparentes høyre hakeparentes ace"
+    },
+    "AbstrVector_sbrief": {
+      "expected": "venstre hakeparentes høyre hakeparentes ace"
+    },
+    "AbstrVarSubtraction_default": {
+      "expected": "a minus prikk prikk prikk minus b"
+    },
+    "AbstrVarSubtraction_brief": {
+      "expected": "a minus prikk prikk prikk minus b"
+    },
+    "AbstrVarSubtraction_sbrief": {
+      "expected": "a minus prikk prikk prikk minus b"
+    },
+    "AbstrCountImplicit_default": {
+      "expected": "a b c"
+    },
+    "AbstrCountImplicit_brief": {
+      "expected": "a b c"
+    },
+    "AbstrCountImplicit_sbrief": {
+      "expected": "a b c"
+    },
+    "AbstrVarImplicit_default": {
+      "expected": "a prikk prikk prikk b"
+    },
+    "AbstrVarArrowRelation_default": {
+      "expected": "a høyrepil prikk prikk prikk venstre-høyrepil b"
+    },
+    "AbstrArrowRelation_default": {
+      "expected": "a høyrepil c venstre-høyrepil b"
+    },
+    "AbstrVarRowvector_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes a prikk prikk prikk b"
+    }
+  }
+}

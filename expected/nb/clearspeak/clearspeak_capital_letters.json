@@ -1,0 +1,76 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "BokmalClearspeakCapitalLetters",
+  "locale": "nb",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_capital_letters.json",
+  "information": "Bokmal Clearspeak CapitalLetters rule tests.",
+  "active": "ClearspeakBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Cap001": {
+      "expected": "av sinsinAa er lik av sinsinBb"
+    },
+    "Cap002": {
+      "expected": "c 2 er lik a 2 pluss b 2 minus 2 a b av coscosC"
+    },
+    "Cap003": {
+      "expected": "av tantanA er lik ab"
+    },
+    "Cap004": {
+      "expected": "A B"
+    },
+    "Cap005": {
+      "expected": "a A"
+    },
+    "Cap006": {
+      "expected": "b A"
+    },
+    "Cap007": {
+      "expected": "B a"
+    },
+    "Cap008": {
+      "expected": "vinkel A B C"
+    },
+    "Cap009": {
+      "expected": "m vinkel A B C"
+    },
+    "Cap010": {
+      "expected": "m vinkel A"
+    },
+    "Cap011": {
+      "expected": "av sinsinAa er lik av sinsinBb"
+    },
+    "Cap012": {
+      "expected": "c 2 er lik a 2 pluss b 2 minus 2 a b av coscosC"
+    },
+    "Cap013": {
+      "expected": "av tantanA er lik ab"
+    },
+    "Cap014": {
+      "expected": "A, B"
+    },
+    "Cap015": {
+      "expected": "a, A"
+    },
+    "Cap016": {
+      "expected": "b, A"
+    },
+    "Cap017": {
+      "expected": "B, a"
+    },
+    "Cap018": {
+      "expected": "vinkel A, B, C"
+    },
+    "Cap019": {
+      "expected": "m vinkel A, B, C"
+    },
+    "Cap020": {
+      "expected": "m vinkel, A"
+    },
+    "Cap020a": {
+      "expected": "vinkel A"
+    }
+  }
+}

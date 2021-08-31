@@ -1,0 +1,492 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "BokmalClearspeakTrigometry",
+  "locale": "nb",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_trigometry.json",
+  "information": "Bokmal Clearspeak Trigometry rule tests.",
+  "active": "ClearspeakBokmal",
+  "exclude": [
+    "TrigReciprocal001",
+    "TrigReciprocal002",
+    "TrigReciprocal003",
+    "TrigReciprocal004",
+    "TrigReciprocal005",
+    "TrigReciprocal006",
+    "TrigReciprocal007",
+    "TrigReciprocal008",
+    "TrigReciprocal009",
+    "TrigReciprocal010",
+    "TrigReciprocal011",
+    "TrigReciprocal012",
+    "TrigReciprocal013",
+    "TrigReciprocal014",
+    "TrigReciprocal015",
+    "TrigReciprocal016",
+    "TrigReciprocal017",
+    "TrigReciprocal018",
+    "TrigReciprocal019",
+    "TrigReciprocal020",
+    "TrigReciprocal021",
+    "TrigReciprocal022",
+    "TrigReciprocal023",
+    "TrigReciprocal024",
+    "TrigReciprocal025",
+    "TrigReciprocal026",
+    "HypTrigReciprocal001",
+    "HypTrigReciprocal002",
+    "HypTrigReciprocal003",
+    "HypTrigReciprocal004",
+    "HypTrigReciprocal005",
+    "HypTrigReciprocal006",
+    "HypTrigReciprocal007",
+    "HypTrigReciprocal008",
+    "HypTrigReciprocal009",
+    "HypTrigReciprocal010",
+    "HypTrigReciprocal011",
+    "HypTrigReciprocal012",
+    "HypTrigReciprocal013",
+    "HypTrigReciprocal014",
+    "HypTrigReciprocal015",
+    "HypTrigReciprocal016",
+    "HypTrigReciprocal017",
+    "HypTrigReciprocal018",
+    "HypTrigReciprocal019",
+    "HypTrigReciprocal020"
+  ],
+  "compare": true,
+  "tests": {
+    "Trig001": {
+      "expected": "av sinsinx"
+    },
+    "Trig002": {
+      "expected": "av coscosx"
+    },
+    "Trig003": {
+      "expected": "av tantan theta"
+    },
+    "Trig004": {
+      "expected": "av secsec theta"
+    },
+    "Trig005": {
+      "expected": "av csccscx"
+    },
+    "Trig006": {
+      "expected": "av cotcotx"
+    },
+    "Trig007": {
+      "expected": "av sinsin 2 x"
+    },
+    "Trig008": {
+      "expected": "av coscos 3 x"
+    },
+    "Trig009": {
+      "expected": "av tantan 2 x"
+    },
+    "Trig010": {
+      "expected": "av secsec 3 x"
+    },
+    "Trig011": {
+      "expected": "av csccsc 2 x"
+    },
+    "Trig012": {
+      "expected": "av cotcot 2 x"
+    },
+    "Trig013": {
+      "expected": "av sinsin ganger ganger 2 pi"
+    },
+    "Trig014": {
+      "expected": "av sinsin venstre parentes høyre parentes pluss pluss ganger ganger pi k pi 2"
+    },
+    "Trig015": {
+      "expected": "av coscos pi 2"
+    },
+    "Trig016": {
+      "expected": "av sinsin pi 2"
+    },
+    "Trig017": {
+      "expected": "av sinsin pi 2"
+    },
+    "Trig018": {
+      "expected": "2 av sinsin pi"
+    },
+    "Trig019": {
+      "expected": "av sinsin pi 23"
+    },
+    "Trig020": {
+      "expected": "av tantan venstre parentes høyre parentes minus minus pi"
+    },
+    "Trig021": {
+      "expected": "av sinsin venstre parentes høyre parentes pluss pluss x pi"
+    },
+    "Trig022": {
+      "expected": "av coscos venstre parentes høyre parentes pluss pluss x pi 2"
+    },
+    "Trig023": {
+      "expected": "av coscos venstre parentes høyre parentes pluss pluss pi 2 x"
+    },
+    "Trig024": {
+      "expected": "av sinsin 2 x pluss av coscos 2 x er lik 1"
+    },
+    "Trig025": {
+      "expected": "av sinsin 4 x"
+    },
+    "Trig026": {
+      "expected": "av coscos 5 x"
+    },
+    "Trig027": {
+      "expected": "av tantannx"
+    },
+    "Trig028": {
+      "expected": "av sinsinx av coscosx"
+    },
+    "Trig029": {
+      "expected": "av tantan 35 grader"
+    },
+    "Trig031": {
+      "expected": "av tantan venstre parentes høyre parentes vinkel vinkel ganger ganger ganger DEF"
+    },
+    "Trig032": {
+      "expected": "av tantan venstre parentes høyre parentes vinkel vinkel D"
+    },
+    "Trig033": {
+      "expected": "av sinsin venstre parentes høyre parentes pluss pluss xy er lik, av sinsinx av coscosy, pluss, av coscosx av sinsiny"
+    },
+    "Trig034": {
+      "expected": "av coscos venstre parentes høyre parentes pluss pluss xy er lik, av coscosx av coscosy, minus, av sinsinx av sinsiny"
+    },
+    "Trig035": {
+      "expected": "av tantan venstre parentes høyre parentes pluss pluss xy er lik minus minus av tantanx av tantany minus minus 1 ganger ganger av tantanx av tantany"
+    },
+    "Trig037": {
+      "expected": "av tantan venstre parentes høyre parentes pluss pluss pi 6 ganger ganger 2 pi 3 er lik minus minus av tantan pi 6 av tantan ganger ganger 2 pi 3 minus minus 1 ganger ganger av tantan pi 6 av tantan ganger ganger 2 pi 3"
+    },
+    "Trig038": {
+      "expected": "av tantan ganger ganger 2 x er lik ganger ganger 2 av tantanx minus minus 1 av tantan 2 x"
+    },
+    "Trig039": {
+      "expected": "av coscos ganger ganger 2 x er lik 2 av coscos 2 x, minus 1"
+    },
+    "Trig040": {
+      "expected": "av sinsinx 2 er lik pluss minus minus minus 1 av coscosx 2"
+    },
+    "Trig041": {
+      "expected": "av tantanx 2 er lik pluss minus minus minus 1 av coscosx pluss pluss 1 av coscosx"
+    },
+    "Trig042": {
+      "expected": "av coscosx av coscosy, er lik 2 av coscos pluss pluss xy 2 av coscos minus minus xy 2"
+    },
+    "Trig043": {
+      "expected": "av sinsin venstre parentes høyre parentes minus minus pi 8 er lik minus 12 minus minus 22"
+    },
+    "Trig044": {
+      "expected": "av tantan ganger ganger 3 pi 8 er lik pluss pluss 21 minus minus 21"
+    },
+    "Trig045": {
+      "expected": "av tantan pi 12 er lik 12 minus minus 23"
+    },
+    "TrigInvAuto001": {
+      "expected": "av sinsin minus minus 1 x"
+    },
+    "TrigInvAuto002": {
+      "expected": "av coscos minus minus 1 x"
+    },
+    "TrigInvAuto003": {
+      "expected": "av tantan minus minus 1 x"
+    },
+    "TrigInvAuto004": {
+      "expected": "av cotcot minus minus 1 x"
+    },
+    "TrigInvAuto005": {
+      "expected": "av secsec minus minus 1 x"
+    },
+    "TrigInvAuto006": {
+      "expected": "av csccsc minus minus 1 x"
+    },
+    "TrigInvAuto007": {
+      "expected": "av sinsin minus minus 122"
+    },
+    "TrigInvAuto008": {
+      "expected": "av coscos minus minus 112"
+    },
+    "TrigInvAuto009": {
+      "expected": "av tantan minus minus 117"
+    },
+    "TrigInvAuto010": {
+      "expected": "av cotcot minus minus 132"
+    },
+    "TrigInvAuto011": {
+      "expected": "av secsec minus minus 1100"
+    },
+    "TrigInvAuto012": {
+      "expected": "av csccsc minus minus 185"
+    },
+    "TrigInvAuto013": {
+      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes minus minus x"
+    },
+    "TrigInvAuto014": {
+      "expected": "av coscos minus minus 1 venstre parentes høyre parentes minus minus x"
+    },
+    "TrigInvAuto015": {
+      "expected": "av tantan minus minus 1 venstre parentes høyre parentes pluss pluss minus minus x 12"
+    },
+    "TrigInvAuto016": {
+      "expected": "av cotcot minus minus 1 venstre parentes høyre parentes minus minus minus minus x 1"
+    },
+    "TrigInvAuto017": {
+      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes av sinsin 0"
+    },
+    "TrigInvAuto018": {
+      "expected": "av csccsc minus minus 1 venstre parentes høyre parentes av csccscx"
+    },
+    "TrigInvAuto019": {
+      "expected": "av coscos venstre parentes høyre parentes av coscos minus minus 1 venstre parentes høyre parentes minus minus 22"
+    },
+    "TrigInvAuto020": {
+      "expected": "av coscos venstre parentes høyre parentes minus minus av coscos minus minus 1 venstre parentes høyre parentes 22"
+    },
+    "TrigInvAuto021": {
+      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes av coscos pi 4"
+    },
+    "TrigInvAuto022": {
+      "expected": "av sinsin venstre parentes høyre parentes av coscos minus minus 112"
+    },
+    "TrigInvAuto023": {
+      "expected": "av sinsin venstre parentes høyre parentes av tantan minus minus 11"
+    },
+    "TrigInvAuto024": {
+      "expected": "av sinsin venstre parentes høyre parentes minus minus av tantan minus minus 11"
+    },
+    "TrigInvAuto025": {
+      "expected": "av sinsin venstre parentes høyre parentes minus minus av tantan minus minus 1 venstre parentes høyre parentes minus minus 1"
+    },
+    "TrigInvAuto026": {
+      "expected": "av secsec minus minus 1 venstre parentes høyre parentes av secsecx"
+    },
+    "TrigInverse001": {
+      "expected": "av sinsin minus minus 1 x"
+    },
+    "TrigInverse002": {
+      "expected": "av coscos minus minus 1 x"
+    },
+    "TrigInverse003": {
+      "expected": "av tantan minus minus 1 x"
+    },
+    "TrigInverse004": {
+      "expected": "av cotcot minus minus 1 x"
+    },
+    "TrigInverse005": {
+      "expected": "av secsec minus minus 1 x"
+    },
+    "TrigInverse006": {
+      "expected": "av csccsc minus minus 1 x"
+    },
+    "TrigInverse007": {
+      "expected": "av sinsin minus minus 122"
+    },
+    "TrigInverse008": {
+      "expected": "av coscos minus minus 112"
+    },
+    "TrigInverse009": {
+      "expected": "av tantan minus minus 117"
+    },
+    "TrigInverse010": {
+      "expected": "av cotcot minus minus 132"
+    },
+    "TrigInverse011": {
+      "expected": "av secsec minus minus 1100"
+    },
+    "TrigInverse012": {
+      "expected": "av csccsc minus minus 185"
+    },
+    "TrigInverse013": {
+      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes minus minus x"
+    },
+    "TrigInverse014": {
+      "expected": "av coscos minus minus 1 venstre parentes høyre parentes minus minus x"
+    },
+    "TrigInverse015": {
+      "expected": "av tantan minus minus 1 venstre parentes høyre parentes pluss pluss minus minus x 12"
+    },
+    "TrigInverse016": {
+      "expected": "av cotcot minus minus 1 venstre parentes høyre parentes minus minus minus minus x 1"
+    },
+    "TrigInverse017": {
+      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes av sinsin 0"
+    },
+    "TrigInverse018": {
+      "expected": "av csccsc minus minus 1 venstre parentes høyre parentes av csccscx"
+    },
+    "TrigInverse019": {
+      "expected": "av coscos venstre parentes høyre parentes av coscos minus minus 1 venstre parentes høyre parentes minus minus 22"
+    },
+    "TrigInverse020": {
+      "expected": "av coscos venstre parentes høyre parentes minus minus av coscos minus minus 1 venstre parentes høyre parentes 22"
+    },
+    "TrigInverse021": {
+      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes av coscos pi 4"
+    },
+    "TrigInverse022": {
+      "expected": "av sinsin venstre parentes høyre parentes av coscos minus minus 112"
+    },
+    "TrigInverse023": {
+      "expected": "av sinsin venstre parentes høyre parentes av tantan minus minus 11"
+    },
+    "TrigInverse024": {
+      "expected": "av sinsin venstre parentes høyre parentes minus minus av tantan minus minus 11"
+    },
+    "TrigInverse025": {
+      "expected": "av sinsin venstre parentes høyre parentes minus minus av tantan minus minus 1 venstre parentes høyre parentes minus minus 1"
+    },
+    "TrigInverse026": {
+      "expected": "av secsec minus minus 1 venstre parentes høyre parentes av secsecx"
+    },
+    "ArcTrig001": {
+      "expected": "av sinsin minus minus 1 x"
+    },
+    "ArcTrig002": {
+      "expected": "av coscos minus minus 1 x"
+    },
+    "ArcTrig003": {
+      "expected": "av tantan minus minus 1 x"
+    },
+    "ArcTrig004": {
+      "expected": "av cotcot minus minus 1 x"
+    },
+    "ArcTrig005": {
+      "expected": "av secsec minus minus 1 x"
+    },
+    "ArcTrig006": {
+      "expected": "av csccsc minus minus 1 x"
+    },
+    "ArcTrig007": {
+      "expected": "av sinsin minus minus 122"
+    },
+    "ArcTrig008": {
+      "expected": "av coscos minus minus 112"
+    },
+    "ArcTrig009": {
+      "expected": "av tantan minus minus 117"
+    },
+    "ArcTrig010": {
+      "expected": "av cotcot minus minus 132"
+    },
+    "ArcTrig011": {
+      "expected": "av secsec minus minus 1100"
+    },
+    "ArcTrig012": {
+      "expected": "av csccsc minus minus 185"
+    },
+    "ArcTrig013": {
+      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes minus minus x"
+    },
+    "ArcTrig014": {
+      "expected": "av coscos minus minus 1 venstre parentes høyre parentes minus minus x"
+    },
+    "ArcTrig015": {
+      "expected": "av tantan minus minus 1 venstre parentes høyre parentes pluss pluss minus minus x 12"
+    },
+    "ArcTrig016": {
+      "expected": "av cotcot minus minus 1 venstre parentes høyre parentes minus minus minus minus x 1"
+    },
+    "ArcTrig017": {
+      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes av sinsin 0"
+    },
+    "ArcTrig018": {
+      "expected": "av csccsc minus minus 1 venstre parentes høyre parentes av csccscx"
+    },
+    "ArcTrig019": {
+      "expected": "av coscos venstre parentes høyre parentes av coscos minus minus 1 venstre parentes høyre parentes minus minus 22"
+    },
+    "ArcTrig020": {
+      "expected": "av coscos venstre parentes høyre parentes minus minus av coscos minus minus 1 venstre parentes høyre parentes 22"
+    },
+    "ArcTrig021": {
+      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes av coscos pi 4"
+    },
+    "ArcTrig022": {
+      "expected": "av sinsin venstre parentes høyre parentes av coscos minus minus 112"
+    },
+    "ArcTrig023": {
+      "expected": "av sinsin venstre parentes høyre parentes av tantan minus minus 11"
+    },
+    "ArcTrig024": {
+      "expected": "av sinsin venstre parentes høyre parentes minus minus av tantan minus minus 11"
+    },
+    "ArcTrig025": {
+      "expected": "av sinsin venstre parentes høyre parentes minus minus av tantan minus minus 1 venstre parentes høyre parentes minus minus 1"
+    },
+    "ArcTrig026": {
+      "expected": "av secsec minus minus 1 venstre parentes høyre parentes av secsecx"
+    },
+    "AllTrig01": {
+      "expected": "av arcsinarcsinx"
+    },
+    "AllTrig02": {
+      "expected": "av arccosarccosx"
+    },
+    "AllTrig03": {
+      "expected": "av arctanarctanx"
+    },
+    "HypTrig001": {
+      "expected": "av sinhsinhx"
+    },
+    "HypTrig002": {
+      "expected": "av coshcoshx"
+    },
+    "HypTrig003": {
+      "expected": "av tanhtanhx"
+    },
+    "HypTrig004": {
+      "expected": "av cothcothx"
+    },
+    "HypTrig005": {
+      "expected": "av sechsechx"
+    },
+    "HypTrig006": {
+      "expected": "av cschcschx"
+    },
+    "HypTrig007": {
+      "expected": "av sinhsinh minus minus 1 x"
+    },
+    "HypTrig008": {
+      "expected": "av coshcosh minus minus 1 x"
+    },
+    "HypTrig009": {
+      "expected": "av tanhtanh minus minus 1 x"
+    },
+    "HypTrig010": {
+      "expected": "av cothcoth minus minus 1 x"
+    },
+    "HypTrig011": {
+      "expected": "av sechsech minus minus 1 x"
+    },
+    "HypTrig012": {
+      "expected": "av cschcsch minus minus 1 x"
+    },
+    "HypTrig013": {
+      "expected": "av sinhsinh venstre parentes høyre parentes av sinhsinh minus minus 1 x"
+    },
+    "HypTrig014": {
+      "expected": "av coshcosh venstre parentes høyre parentes av coshcosh minus minus 1 x"
+    },
+    "HypTrig015": {
+      "expected": "av tanhtanh venstre parentes høyre parentes av tanhtanh minus minus 1 x"
+    },
+    "HypTrig016": {
+      "expected": "av cothcoth venstre parentes høyre parentes av cothcoth minus minus 1 x"
+    },
+    "HypTrig017": {
+      "expected": "av sinhsinh minus minus 1 venstre parentes høyre parentes av sinhsinhx"
+    },
+    "HypTrig018": {
+      "expected": "av coshcosh minus minus 1 venstre parentes høyre parentes av coshcoshx"
+    },
+    "HypTrig019": {
+      "expected": "av tanhtanh minus minus 1 venstre parentes høyre parentes av tanhtanhx"
+    },
+    "HypTrig020": {
+      "expected": "av cothcoth minus minus 1 venstre parentes høyre parentes av cothcothx"
+    }
+  }
+}

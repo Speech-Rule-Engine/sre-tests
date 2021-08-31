@@ -1,0 +1,214 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "BokmalClearspeakPart2Symbols",
+  "locale": "nb",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_part2_symbols.json",
+  "information": "Bokmal Clearspeak Part2Symbols rule tests.",
+  "active": "ClearspeakBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "X001": {
+      "expected": "6 gangetegn 8"
+    },
+    "X002": {
+      "expected": "m gangetegn n"
+    },
+    "X003": {
+      "expected": "3 gangetegn 3"
+    },
+    "X004": {
+      "expected": "6 gangetegn 8"
+    },
+    "X005": {
+      "expected": "m gangetegn n"
+    },
+    "X006": {
+      "expected": "3 gangetegn 3"
+    },
+    "X007": {
+      "expected": "u gangetegn v"
+    },
+    "Dot001": {
+      "expected": "6 ganger 8"
+    },
+    "Dot002": {
+      "expected": "m ganger n"
+    },
+    "Dot003": {
+      "expected": "3 ganger 3"
+    },
+    "Dot004": {
+      "expected": "6 ganger 8"
+    },
+    "Dot005": {
+      "expected": "m ganger n"
+    },
+    "Dot006": {
+      "expected": "3 ganger 3"
+    },
+    "Triangle001": {
+      "expected": "triangel A B C"
+    },
+    "Triangle002": {
+      "expected": "triangel D E F"
+    },
+    "Triangle003": {
+      "expected": "stor Delta x"
+    },
+    "Triangle004": {
+      "expected": "av ff venstre parentes høyre parentes pluss pluss x ganger ganger stor Delta x"
+    },
+    "Ellipses001": {
+      "expected": "1 komma 2 komma 3 komma prikk prikk prikk"
+    },
+    "Ellipses002": {
+      "expected": "1 komma 2 komma 3 komma prikk prikk prikk komma 20"
+    },
+    "Ellipses003": {
+      "expected": "prikk prikk prikk komma, minus 2, komma, minus 1, komma 0 komma 1 komma 2 komma prikk prikk prikk"
+    },
+    "Ellipses004": {
+      "expected": "1 komma 2 komma 3 komma prikk prikk prikk"
+    },
+    "Ellipses005": {
+      "expected": "1 komma 2 komma 3 komma prikk prikk prikk komma 20"
+    },
+    "Ellipses006": {
+      "expected": "prikk prikk prikk komma, minus 2, komma, minus 1, komma 0 komma 1 komma 2 komma prikk prikk prikk"
+    },
+    "VertLine001": {
+      "expected": "3 vertikalstrek 6"
+    },
+    "VertLine002": {
+      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek x vertikalstrek er større enn er større enn x 0"
+    },
+    "VertLine003": {
+      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek x vertikalstrek er større enn er større enn vertikalstrek vertikalstrek x 2"
+    },
+    "VertLine004": {
+      "expected": "av ff venstre parentes høyre parentes x vertikalstrek er lik er lik x 5"
+    },
+    "VertLine005": {
+      "expected": "x 2 pluss 2 x, vertikalstrek er lik er lik x 2"
+    },
+    "VertLine006": {
+      "expected": "x 2 pluss x vertikalstrek 01"
+    },
+    "VertLine007": {
+      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek x vertikalstrek er større enn er større enn x 0"
+    },
+    "VertLine008": {
+      "expected": "3 vertikalstrek 6"
+    },
+    "VertLine009": {
+      "expected": "av PP venstre parentes høyre parentes vertikalstrek A vertikalstrek B"
+    },
+    "MembSym001": {
+      "expected": "If x element av Z then 2 x, is an even number punktum"
+    },
+    "MembSym002": {
+      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek element av element av x Z vertikalstrek er større enn er større enn x 5"
+    },
+    "MembSym003": {
+      "expected": "3 pluss 2 i, ikke et element av R"
+    },
+    "MembSym004": {
+      "expected": "If x element av Z then 2 x, is an even number punktum"
+    },
+    "MembSym005": {
+      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek element av element av x Z vertikalstrek er større enn er større enn x 5"
+    },
+    "MembSym006": {
+      "expected": "3 pluss 2 i, ikke et element av R"
+    },
+    "MembSym007": {
+      "expected": "If x element av Z then 2 x, is an even number punktum"
+    },
+    "MembSym008": {
+      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek element av element av x Z vertikalstrek er større enn er større enn x 5"
+    },
+    "MembSym009": {
+      "expected": "3 pluss 2 i, ikke et element av R"
+    },
+    "MembSym010": {
+      "expected": "If x element av Z then 2 x, is an even number punktum"
+    },
+    "MembSym011": {
+      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek element av element av x Z vertikalstrek er større enn er større enn x 5"
+    },
+    "MembSym012": {
+      "expected": "3 pluss 2 i, ikke et element av R"
+    },
+    "MembSym013": {
+      "expected": "If x element av Z then 2 x, is an even number punktum"
+    },
+    "MembSym014": {
+      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek element av element av x Z vertikalstrek er større enn er større enn x 5"
+    },
+    "MembSym015": {
+      "expected": "3 pluss 2 i, ikke et element av R"
+    },
+    "SetMemb001": {
+      "expected": "venstre krøllparentes høyre krøllparentes kolon element av element av x Z kolon er mindre enn er mindre enn er mindre enn 2 x 7"
+    },
+    "SetMemb002": {
+      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek element av element av x Z vertikalstrek er større enn er større enn x 5"
+    },
+    "Sum001": {
+      "expected": "sum sum er lik er lik n 110 n"
+    },
+    "Sum002": {
+      "expected": "sum sum er lik er lik n 1 uendelig n"
+    },
+    "Sum003": {
+      "expected": "sum sum element av element av i Z pluss i"
+    },
+    "Sum004": {
+      "expected": "sum sum Si"
+    },
+    "Sum005": {
+      "expected": "sum sum ai"
+    },
+    "Sum006": {
+      "expected": "produkt produkt er lik er lik i 110 i"
+    },
+    "Sum007": {
+      "expected": "produkt produkt element av element av i Z pluss i pluss pluss i 1"
+    },
+    "Sum008": {
+      "expected": "produkt produkt Z pluss i pluss pluss i 1"
+    },
+    "Sum009": {
+      "expected": "produkt produkt ai"
+    },
+    "Sum010": {
+      "expected": "kryss er lik er lik i 110 Si"
+    },
+    "Sum011": {
+      "expected": "union er lik er lik i 110 Si"
+    },
+    "Sum012": {
+      "expected": "kryss Si"
+    },
+    "Sum013": {
+      "expected": "union Si"
+    },
+    "Sum014": {
+      "expected": "kryss C Si"
+    },
+    "Sum015": {
+      "expected": "union C Si"
+    },
+    "Sum016": {
+      "expected": "integral integral av ff venstre parentes høyre parentes x, d x"
+    },
+    "Sum017": {
+      "expected": "integral integral 01 av ff venstre parentes høyre parentes x, d x"
+    },
+    "Sum018": {
+      "expected": "integral integral R av ff venstre parentes høyre parentes x, d x"
+    }
+  }
+}

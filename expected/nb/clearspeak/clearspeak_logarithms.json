@@ -1,0 +1,130 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "BokmalClearspeakLogarithms",
+  "locale": "nb",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_logarithms.json",
+  "information": "Bokmal Clearspeak Logarithms rule tests.",
+  "active": "ClearspeakBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Log001": {
+      "expected": "av loglogx"
+    },
+    "Log002": {
+      "expected": "av loglog 10 x"
+    },
+    "Log003": {
+      "expected": "av loglogb ganger ganger ax er lik av loglogba pluss av loglogbx"
+    },
+    "Log004": {
+      "expected": "av loglogbST er lik av loglogbS minus av loglogbT"
+    },
+    "Log005": {
+      "expected": "av loglogb venstre parentes høyre parentes xk er lik k av loglogbx"
+    },
+    "Log006": {
+      "expected": "10 av loglog 10 x er lik x"
+    },
+    "Log007": {
+      "expected": "av loglog 101 0 x er lik x"
+    },
+    "Log008": {
+      "expected": "10 av loglog 105 er lik 5"
+    },
+    "Log009": {
+      "expected": "av loglog 10103 er lik 3"
+    },
+    "Log010": {
+      "expected": "av loglogax er lik av loglogbx av loglogba"
+    },
+    "Log011": {
+      "expected": "av loglog 101 8 av loglog 103 er lik av loglog 318"
+    },
+    "Log012": {
+      "expected": "av loglogx av logloga"
+    },
+    "Log013": {
+      "expected": "av loglog venstre parentes høyre parentes pluss pluss x 1"
+    },
+    "Log014": {
+      "expected": "av loglog venstre parentes høyre parentes pluss pluss x 12"
+    },
+    "Log015": {
+      "expected": "av loglog venstre parentes høyre parentes ganger ganger xy"
+    },
+    "Log016": {
+      "expected": "av loglog venstre parentes høyre parentes pluss pluss x 1 av loglog venstre parentes høyre parentes pluss pluss x 2"
+    },
+    "Log017": {
+      "expected": "av loglog 6 venstre parentes høyre parentes pluss pluss x 1 av loglog 6 venstre parentes høyre parentes pluss pluss x 2"
+    },
+    "Log018": {
+      "expected": "pluss pluss av loglog 40 av loglog 60 av loglog 5"
+    },
+    "Log019": {
+      "expected": "pluss pluss av loglog 340 av loglog 360 av loglog 35"
+    },
+    "Log020": {
+      "expected": "av loglog venstre parentes høyre parentes ganger ganger 34129 er lik 4 av loglog 3, pluss 9 av loglog 12"
+    },
+    "Log021": {
+      "expected": "av loglog venstre parentes høyre parentes xy"
+    },
+    "Log022": {
+      "expected": "av loglog venstre parentes høyre parentes 34810 er lik 4 av loglog 3, minus 10 av loglog 8"
+    },
+    "Log023": {
+      "expected": "10 av loglogx"
+    },
+    "NatLog001": {
+      "expected": "av lnlnx"
+    },
+    "NatLog002": {
+      "expected": "av lnlnx minus av lnln venstre parentes høyre parentes minus minus x 1 er lik av lnln venstre parentes høyre parentes x minus minus x 1"
+    },
+    "NatLog003": {
+      "expected": "av lnln venstre parentes høyre parentes ex er lik x"
+    },
+    "NatLog004": {
+      "expected": "e av lnlnx er lik x"
+    },
+    "NatLog005": {
+      "expected": "av lnln venstre parentes høyre parentes ex er lik x"
+    },
+    "NatLog006": {
+      "expected": "e av lnln 4 er lik 4"
+    },
+    "NatLog007": {
+      "expected": "av lnln 40 av lnln 5 er lik av loglog 540"
+    },
+    "NatLog008": {
+      "expected": "pluss pluss av lnln 40 av lnln 60 av lnln 5"
+    },
+    "NatLog009": {
+      "expected": "av lnlnx"
+    },
+    "NatLog010": {
+      "expected": "av lnlnx, minus av lnln venstre parentes høyre parentes minus minus x 1 er lik av lnln venstre parentes høyre parentes x minus minus x 1"
+    },
+    "NatLog011": {
+      "expected": "av lnln venstre parentes høyre parentes ex, er lik x"
+    },
+    "NatLog012": {
+      "expected": "e av lnlnx er lik x"
+    },
+    "NatLog013": {
+      "expected": "av lnln venstre parentes høyre parentes ex, er lik x"
+    },
+    "NatLog014": {
+      "expected": "e av lnln 4 er lik 4"
+    },
+    "NatLog015": {
+      "expected": "av lnln 40 av lnln 5 er lik av loglog 540"
+    },
+    "NatLog016": {
+      "expected": "pluss pluss av lnln 40 av lnln 60 av lnln 5"
+    }
+  }
+}

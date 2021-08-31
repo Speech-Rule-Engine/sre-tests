@@ -1,0 +1,59 @@
+{
+  "name": "BokmalMathspeakInference",
+  "domain": "mathspeak",
+  "locale": "nb",
+  "modality": "speech",
+  "factory": "summary",
+  "base": "input/common/inference.json",
+  "information": "Bokmal Mathspeak Inference rules.",
+  "active": "InferenceBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "NoLabel_0": {
+      "expected": "XA"
+    },
+    "NoLabel_1": {
+      "expected": "XA"
+    },
+    "Premise_0": {
+      "expected": "X"
+    },
+    "Premise_1": {
+      "expected": "NX"
+    },
+    "Axiom": {
+      "expected": "A"
+    },
+    "EmptyAxiom": {
+      "expected": ""
+    },
+    "RightLabel_0": {
+      "expected": "NXA"
+    },
+    "RightLabel_1": {
+      "expected": "NXAB"
+    },
+    "RightLabel_2": {
+      "expected": "NXABC"
+    },
+    "LeftLabel_0": {
+      "expected": "NXA"
+    },
+    "LeftLabel_1": {
+      "expected": "NXAB"
+    },
+    "LeftLabel_2": {
+      "expected": "NXABC"
+    },
+    "Premises_0": {
+      "expected": "A"
+    },
+    "Premises_1": {
+      "expected": "AB"
+    },
+    "Premises_2": {
+      "expected": "ABC"
+    }
+  }
+}

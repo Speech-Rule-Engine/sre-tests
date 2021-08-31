@@ -1,0 +1,139 @@
+{
+  "name": "BokmalMathspeakCoverage",
+  "locale": "nb",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_coverage.json",
+  "information": "Bokmal Mathspeak tests for achieving full coverage.",
+  "domain": "mathspeak",
+  "active": "MathspeakIssuesBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "BaselineNumberGreek_default": {
+      "expected": "alfa 2"
+    },
+    "BaselineNumberGreek_brief": {
+      "expected": "alfa 2"
+    },
+    "BaselineNumberGreek_sbrief": {
+      "expected": "alfa 2"
+    },
+    "BaselineNumberOther_default": {
+      "expected": "alef 2"
+    },
+    "BaselineNumberOther_brief": {
+      "expected": "alef 2"
+    },
+    "BaselineNumberOther_sbrief": {
+      "expected": "alef 2"
+    },
+    "BaselineNumberFontGreek_default": {
+      "expected": "alfa 2"
+    },
+    "BaselineNumberFontGreek_brief": {
+      "expected": "alfa 2"
+    },
+    "BaselineNumberFontGreek_sbrief": {
+      "expected": "alfa 2"
+    },
+    "BaselineNumberFontOther_default": {
+      "expected": "alef 2"
+    },
+    "BaselineNumberFontOther_brief": {
+      "expected": "alef 2"
+    },
+    "BaselineNumberFontOther_sbrief": {
+      "expected": "alef 2"
+    },
+    "OverbarGreek_default": {
+      "expected": "alfa Overskript strek Sluttskript"
+    },
+    "OverbarOther_default": {
+      "expected": "alef Overskript strek Sluttskript"
+    },
+    "UnderbarGreek_default": {
+      "expected": "alfa Underskript strek Sluttskript"
+    },
+    "UnderbarOther_default": {
+      "expected": "alef Underskript strek Sluttskript"
+    },
+    "OvertildeGreek_default": {
+      "expected": "alfa Overskript tilde Sluttskript"
+    },
+    "OvertildeOther_default": {
+      "expected": "alef Overskript tilde Sluttskript"
+    },
+    "UndertildeGreek_default": {
+      "expected": "alfa Underskript tilde Sluttskript"
+    },
+    "UndertildeOther_default": {
+      "expected": "alef Underskript tilde Sluttskript"
+    },
+    "SetEmpty_default": {
+      "expected": "venstre krøllparentes høyre krøllparentes"
+    },
+    "SetEmpty_brief": {
+      "expected": "venstre krøllparentes høyre krøllparentes"
+    },
+    "SetEmpty_sbrief": {
+      "expected": "venstre krøllparentes høyre krøllparentes"
+    },
+    "SetSingleton_default": {
+      "expected": "venstre krøllparentes høyre krøllparentes a"
+    },
+    "SetSingleton_brief": {
+      "expected": "venstre krøllparentes høyre krøllparentes a"
+    },
+    "SetSingleton_sbrief": {
+      "expected": "venstre krøllparentes høyre krøllparentes a"
+    },
+    "SetCollection_default": {
+      "expected": "venstre krøllparentes høyre krøllparentes komma a komma b"
+    },
+    "SetCollection_brief": {
+      "expected": "venstre krøllparentes høyre krøllparentes komma a komma b"
+    },
+    "SetCollection_sbrief": {
+      "expected": "venstre krøllparentes høyre krøllparentes komma a komma b"
+    },
+    "SetExtended_default": {
+      "expected": "venstre krøllparentes høyre krøllparentes komma a komma b"
+    },
+    "SetExtended_brief": {
+      "expected": "venstre krøllparentes høyre krøllparentes komma a komma b"
+    },
+    "SetExtended_sbrief": {
+      "expected": "venstre krøllparentes høyre krøllparentes komma a komma b"
+    },
+    "NumberSet": {
+      "expected": "C"
+    },
+    "LimitLower0_default": {
+      "expected": "grense Underskript understrek Sluttskript Underskript a er lik 5 Sluttskript Underskript b er lik 3 Sluttskript"
+    },
+    "LimitLower1_default": {
+      "expected": "grense Underskript n Overskript 2 Sluttskript Overskript x Sluttskript"
+    },
+    "BlankLineEmpty0_default": {
+      "expected": "a"
+    },
+    "SubBaseRelseq_default": {
+      "expected": "c 1 h Subskript 4 minus 2 s Grunnlinje er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk er mindre enn eller er lik c 2 h Subskript 4 minus 2 s"
+    },
+    "SubBaseRelseq_brief": {
+      "expected": "c 1 h Sub 4 minus 2 s Basis er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk er mindre enn eller er lik c 2 h Sub 4 minus 2 s"
+    },
+    "SubBaseRelseq_sbrief": {
+      "expected": "c 1 h Sub 4 minus 2 s Basis er mindre enn eller er lik Brøk 1 Over 2 T SluttBrøk er mindre enn eller er lik c 2 h Sub 4 minus 2 s"
+    },
+    "SubBaseMultirel_default": {
+      "expected": "c 1 h Subskript 4 minus 2 s Grunnlinje er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk er lik c 2 h Subskript 4 minus 2 s"
+    },
+    "SubBaseMultirel_brief": {
+      "expected": "c 1 h Sub 4 minus 2 s Basis er mindre enn eller er lik Start Brøk 1 Over 2 T Slutt Brøk er lik c 2 h Sub 4 minus 2 s"
+    },
+    "SubBaseMultirel_sbrief": {
+      "expected": "c 1 h Sub 4 minus 2 s Basis er mindre enn eller er lik Brøk 1 Over 2 T SluttBrøk er lik c 2 h Sub 4 minus 2 s"
+    }
+  }
+}

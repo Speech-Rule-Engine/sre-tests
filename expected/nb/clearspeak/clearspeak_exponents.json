@@ -1,0 +1,562 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "BokmalClearspeakExponents",
+  "locale": "nb",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_exponents.json",
+  "information": "Bokmal Clearspeak Exponents rule tests.",
+  "active": "ClearspeakBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Exp001": {
+      "expected": "32"
+    },
+    "Exp002a": {
+      "expected": "33"
+    },
+    "Exp003": {
+      "expected": "35"
+    },
+    "Exp004": {
+      "expected": "31"
+    },
+    "Exp005": {
+      "expected": "b 1"
+    },
+    "Exp006": {
+      "expected": "35,0"
+    },
+    "Exp007": {
+      "expected": "30"
+    },
+    "Exp008": {
+      "expected": "411"
+    },
+    "Exp009": {
+      "expected": "3 minus minus 2"
+    },
+    "Exp010a": {
+      "expected": "3 minus minus 2,0"
+    },
+    "Exp011": {
+      "expected": "4 x"
+    },
+    "Exp012": {
+      "expected": "3 pluss pluss y 2"
+    },
+    "Exp013": {
+      "expected": "venstre parentes høyre parentes minus minus ganger ganger 2 y 3 pluss pluss ganger ganger 3 z 8"
+    },
+    "Exp014": {
+      "expected": "p 12"
+    },
+    "Exp015": {
+      "expected": "p 13"
+    },
+    "Exp016": {
+      "expected": "p 14"
+    },
+    "Exp017": {
+      "expected": "p 110"
+    },
+    "Exp018": {
+      "expected": "p 1 pluss pluss x 1"
+    },
+    "Exp019": {
+      "expected": "px 12"
+    },
+    "Exp010b": {
+      "expected": "px 13"
+    },
+    "Exp011b": {
+      "expected": "px 14"
+    },
+    "Exp012b": {
+      "expected": "px 110"
+    },
+    "Exp013b": {
+      "expected": "px 1 pluss pluss y 1"
+    },
+    "Exp014b": {
+      "expected": "322"
+    },
+    "Exp015b": {
+      "expected": "3 ganger ganger 2 x 2"
+    },
+    "Exp016b": {
+      "expected": "523"
+    },
+    "Exp017b": {
+      "expected": "5 ganger ganger 2 x 3"
+    },
+    "Exp018b": {
+      "expected": "3 pluss pluss 221"
+    },
+    "Exp019b": {
+      "expected": "322 pluss 1"
+    },
+    "Exp020": {
+      "expected": "2 pluss pluss x 2 ganger ganger 3 x 3"
+    },
+    "Exp021": {
+      "expected": "334"
+    },
+    "Exp022": {
+      "expected": "3 pluss pluss 342"
+    },
+    "Exp023": {
+      "expected": "334 pluss 2"
+    },
+    "Exp024": {
+      "expected": "2 x 4"
+    },
+    "Exp025": {
+      "expected": "210 pluss pluss x 3"
+    },
+    "Exp026": {
+      "expected": "3310"
+    },
+    "Exp027": {
+      "expected": "3 pluss pluss 3101"
+    },
+    "Exp028": {
+      "expected": "3310 pluss 1"
+    },
+    "Exp029": {
+      "expected": "3 venstre parentes høyre parentes pluss pluss x 12"
+    },
+    "Exp030": {
+      "expected": "3 venstre parentes høyre parentes pluss pluss x 110"
+    },
+    "Exp031": {
+      "expected": "3 venstre parentes høyre parentes pluss pluss x 1 pluss pluss y 2"
+    },
+    "Exp032": {
+      "expected": "3 pluss pluss venstre parentes høyre parentes pluss pluss x 1 y 2"
+    },
+    "Exp033": {
+      "expected": "3 venstre parentes høyre parentes pluss pluss x 1 y pluss 2"
+    },
+    "Exp035": {
+      "expected": "e minus minus ganger ganger 12 venstre parentes høyre parentes minus minus x my sigma 2"
+    },
+    "Exp036": {
+      "expected": "2 n"
+    },
+    "Exp037": {
+      "expected": "2 m"
+    },
+    "Exp038": {
+      "expected": "2 i"
+    },
+    "Exp039": {
+      "expected": "2 j"
+    },
+    "Exp040": {
+      "expected": "2 a"
+    },
+    "Exp041": {
+      "expected": "32"
+    },
+    "Exp042": {
+      "expected": "33"
+    },
+    "Exp043": {
+      "expected": "30"
+    },
+    "Exp044": {
+      "expected": "31"
+    },
+    "Exp045": {
+      "expected": "35"
+    },
+    "Exp046": {
+      "expected": "43,0"
+    },
+    "Exp047": {
+      "expected": "411"
+    },
+    "Exp048": {
+      "expected": "3 minus minus 2"
+    },
+    "Exp049": {
+      "expected": "3 minus minus 2,0"
+    },
+    "Exp050": {
+      "expected": "4 x"
+    },
+    "Exp051": {
+      "expected": "3 pluss pluss y 2"
+    },
+    "Exp052": {
+      "expected": "venstre parentes høyre parentes minus minus ganger ganger 2 y 3 pluss pluss ganger ganger 3 z 8"
+    },
+    "Exp053": {
+      "expected": "p 1, 2"
+    },
+    "Exp054": {
+      "expected": "p 1, 3"
+    },
+    "Exp055": {
+      "expected": "p 1, 4"
+    },
+    "Exp056": {
+      "expected": "p 1, 10"
+    },
+    "Exp057": {
+      "expected": "p 1, pluss pluss x 1"
+    },
+    "Exp058": {
+      "expected": "px 1, 2"
+    },
+    "Exp059": {
+      "expected": "px 1, 3"
+    },
+    "Exp060": {
+      "expected": "px 1, 4"
+    },
+    "Exp061": {
+      "expected": "px 1, 10"
+    },
+    "Exp062": {
+      "expected": "px 1, pluss pluss y 1"
+    },
+    "Exp063": {
+      "expected": "322"
+    },
+    "Exp064": {
+      "expected": "3 ganger ganger 2 x 2"
+    },
+    "Exp065": {
+      "expected": "523"
+    },
+    "Exp066": {
+      "expected": "5 ganger ganger 2 x 3"
+    },
+    "Exp067": {
+      "expected": "3 pluss pluss 221"
+    },
+    "Exp068": {
+      "expected": "322 pluss 1"
+    },
+    "Exp069": {
+      "expected": "2 pluss pluss x 2 ganger ganger 3 x 3"
+    },
+    "Exp070": {
+      "expected": "334"
+    },
+    "Exp071": {
+      "expected": "3 pluss pluss 342"
+    },
+    "Exp072": {
+      "expected": "334 pluss 2"
+    },
+    "Exp073": {
+      "expected": "2 x 4"
+    },
+    "Exp074": {
+      "expected": "210 pluss pluss x 3"
+    },
+    "Exp075": {
+      "expected": "3310"
+    },
+    "Exp076": {
+      "expected": "3 pluss pluss 3101"
+    },
+    "Exp077": {
+      "expected": "3310 pluss 1"
+    },
+    "Exp078": {
+      "expected": "3 venstre parentes høyre parentes pluss pluss x 12"
+    },
+    "Exp079": {
+      "expected": "3 venstre parentes høyre parentes pluss pluss x 110"
+    },
+    "Exp080": {
+      "expected": "3 venstre parentes høyre parentes pluss pluss x 1 pluss pluss y 2"
+    },
+    "Exp081": {
+      "expected": "3 pluss pluss venstre parentes høyre parentes pluss pluss x 1 y 2"
+    },
+    "Exp082": {
+      "expected": "3 venstre parentes høyre parentes pluss pluss x 1 y pluss 2"
+    },
+    "Exp083": {
+      "expected": "e minus minus ganger ganger 12 x 2"
+    },
+    "Exp084": {
+      "expected": "e minus minus ganger ganger 12 venstre parentes høyre parentes minus minus x my sigma 2"
+    },
+    "Exp085": {
+      "expected": "32"
+    },
+    "Exp086": {
+      "expected": "33"
+    },
+    "Exp087": {
+      "expected": "30"
+    },
+    "Exp088": {
+      "expected": "31"
+    },
+    "Exp089": {
+      "expected": "35"
+    },
+    "Exp090": {
+      "expected": "35,0"
+    },
+    "Exp091": {
+      "expected": "411"
+    },
+    "Exp092": {
+      "expected": "3 minus minus 2"
+    },
+    "Exp093": {
+      "expected": "3 minus minus 2,0"
+    },
+    "Exp094": {
+      "expected": "4 x"
+    },
+    "Exp095": {
+      "expected": "3 pluss pluss y 2"
+    },
+    "Exp096": {
+      "expected": "venstre parentes høyre parentes minus minus ganger ganger 2 y 3 pluss pluss ganger ganger 3 z 8"
+    },
+    "Exp097": {
+      "expected": "p 1, 2"
+    },
+    "Exp098": {
+      "expected": "p 1, 3"
+    },
+    "Exp099": {
+      "expected": "p 1, 4"
+    },
+    "Exp100": {
+      "expected": "p 1, 10"
+    },
+    "Exp101": {
+      "expected": "p 1, pluss pluss x 1"
+    },
+    "Exp102": {
+      "expected": "px 1, 2"
+    },
+    "Exp103": {
+      "expected": "px 1, 3"
+    },
+    "Exp104": {
+      "expected": "px 1, 4"
+    },
+    "Exp105": {
+      "expected": "px 1, 10"
+    },
+    "Exp106": {
+      "expected": "px 1, pluss pluss y 1"
+    },
+    "Exp107": {
+      "expected": "322"
+    },
+    "Exp108": {
+      "expected": "3 ganger ganger 2 x 2"
+    },
+    "Exp109": {
+      "expected": "523"
+    },
+    "Exp110": {
+      "expected": "5 ganger ganger 2 x 3"
+    },
+    "Exp111": {
+      "expected": "3 pluss pluss 221"
+    },
+    "Exp112": {
+      "expected": "322 pluss 1"
+    },
+    "Exp113": {
+      "expected": "2 pluss pluss x 2 ganger ganger 3 x 3"
+    },
+    "Exp114": {
+      "expected": "334"
+    },
+    "Exp115": {
+      "expected": "3 pluss pluss 342"
+    },
+    "Exp116": {
+      "expected": "334 pluss 2"
+    },
+    "Exp117": {
+      "expected": "2 x 4"
+    },
+    "Exp118": {
+      "expected": "210 pluss pluss x 3"
+    },
+    "Exp119": {
+      "expected": "3310"
+    },
+    "Exp120": {
+      "expected": "3 pluss pluss 3101"
+    },
+    "Exp121": {
+      "expected": "3310 pluss 1"
+    },
+    "Exp122": {
+      "expected": "3 venstre parentes høyre parentes pluss pluss x 12"
+    },
+    "Exp123": {
+      "expected": "3 venstre parentes høyre parentes pluss pluss x 110"
+    },
+    "Exp124": {
+      "expected": "3 venstre parentes høyre parentes pluss pluss x 1 pluss pluss y 2"
+    },
+    "Exp125": {
+      "expected": "3 pluss pluss venstre parentes høyre parentes pluss pluss x 1 y 2"
+    },
+    "Exp126": {
+      "expected": "3 venstre parentes høyre parentes pluss pluss x 1 y pluss 2"
+    },
+    "Exp127": {
+      "expected": "e minus minus ganger ganger 12 x 2"
+    },
+    "Exp128": {
+      "expected": "e minus minus ganger ganger 12 venstre parentes høyre parentes minus minus x my sigma 2"
+    },
+    "Exp129": {
+      "expected": "32"
+    },
+    "Exp130": {
+      "expected": "33"
+    },
+    "Exp131": {
+      "expected": "31"
+    },
+    "Exp132b": {
+      "expected": "30"
+    },
+    "Exp133": {
+      "expected": "35"
+    },
+    "Exp134": {
+      "expected": "35,0"
+    },
+    "Exp135": {
+      "expected": "411"
+    },
+    "Exp136": {
+      "expected": "3 minus minus 2"
+    },
+    "Exp137": {
+      "expected": "3 minus minus 2,0"
+    },
+    "Exp138": {
+      "expected": "4 x"
+    },
+    "Exp139": {
+      "expected": "3 pluss pluss y 2"
+    },
+    "Exp140": {
+      "expected": "venstre parentes høyre parentes minus minus ganger ganger 2 y 3 pluss pluss ganger ganger 3 z 8"
+    },
+    "Exp141": {
+      "expected": "p 1, 2"
+    },
+    "Exp142": {
+      "expected": "p 1, 3"
+    },
+    "Exp143": {
+      "expected": "p 1, 4"
+    },
+    "Exp144": {
+      "expected": "p 1, 10"
+    },
+    "Exp145": {
+      "expected": "p 1, pluss pluss x 1"
+    },
+    "Exp146": {
+      "expected": "px 1, 2"
+    },
+    "Exp147": {
+      "expected": "px 1, 3"
+    },
+    "Exp148": {
+      "expected": "px 1, 4"
+    },
+    "Exp149": {
+      "expected": "px 1, 10"
+    },
+    "Exp150": {
+      "expected": "px 1, pluss pluss y 1"
+    },
+    "Exp151": {
+      "expected": "322"
+    },
+    "Exp152": {
+      "expected": "3 ganger ganger 2 x 2"
+    },
+    "Exp153": {
+      "expected": "322"
+    },
+    "Exp154": {
+      "expected": "3 ganger ganger 2 x 2"
+    },
+    "Exp155": {
+      "expected": "523"
+    },
+    "Exp156": {
+      "expected": "5 ganger ganger 2 x 3"
+    },
+    "Exp157": {
+      "expected": "3 pluss pluss 221"
+    },
+    "Exp158": {
+      "expected": "322 pluss 1"
+    },
+    "Exp159": {
+      "expected": "2 pluss pluss x 2 ganger ganger 3 x 3"
+    },
+    "Exp160": {
+      "expected": "334"
+    },
+    "Exp161": {
+      "expected": "3 pluss pluss 342"
+    },
+    "Exp162": {
+      "expected": "334 pluss 2"
+    },
+    "Exp163": {
+      "expected": "2 x 4"
+    },
+    "Exp164": {
+      "expected": "210 pluss pluss x 3"
+    },
+    "Exp165": {
+      "expected": "3310"
+    },
+    "Exp166": {
+      "expected": "3 pluss pluss 3101"
+    },
+    "Exp167": {
+      "expected": "3310 pluss 1"
+    },
+    "Exp168": {
+      "expected": "3 venstre parentes høyre parentes pluss pluss x 12"
+    },
+    "Exp169": {
+      "expected": "3 venstre parentes høyre parentes pluss pluss x 110"
+    },
+    "Exp170": {
+      "expected": "3 venstre parentes høyre parentes pluss pluss x 1 pluss pluss y 2"
+    },
+    "Exp171": {
+      "expected": "3 pluss pluss venstre parentes høyre parentes pluss pluss x 1 y 2"
+    },
+    "Exp172": {
+      "expected": "3 venstre parentes høyre parentes pluss pluss x 1 y pluss 2"
+    },
+    "Exp173": {
+      "expected": "e minus minus ganger ganger 12 x 2"
+    },
+    "Exp174": {
+      "expected": "e minus minus ganger ganger 12 venstre parentes høyre parentes minus minus x my sigma 2"
+    }
+  }
+}

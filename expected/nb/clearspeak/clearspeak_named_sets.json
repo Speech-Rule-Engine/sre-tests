@@ -1,0 +1,85 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "BokmalClearspeakNamedSets",
+  "locale": "nb",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_named_sets.json",
+  "information": "Bokmal Clearspeak NamedSets rule tests.",
+  "active": "ClearspeakBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "NumSys001": {
+      "expected": "R"
+    },
+    "NumSys001a": {
+      "expected": "R"
+    },
+    "NumSys002": {
+      "expected": "C"
+    },
+    "NumSys002a": {
+      "expected": "C"
+    },
+    "NumSys003": {
+      "expected": "Z"
+    },
+    "NumSys003a": {
+      "expected": "Z"
+    },
+    "NumSys004": {
+      "expected": "Q"
+    },
+    "NumSys004a": {
+      "expected": "Q"
+    },
+    "NumSys005": {
+      "expected": "N"
+    },
+    "NumSys005a": {
+      "expected": "N"
+    },
+    "NumSys005_1": {
+      "expected": "N 0"
+    },
+    "NumSys005_1a": {
+      "expected": "N 0"
+    },
+    "NumSys006": {
+      "expected": "z-pluss"
+    },
+    "NumSys006a": {
+      "expected": "z-pluss"
+    },
+    "NumSys006_1": {
+      "expected": "z-minus"
+    },
+    "NumSys006_1a": {
+      "expected": "z-minus"
+    },
+    "NumSys007": {
+      "expected": "r-to"
+    },
+    "NumSys007a": {
+      "expected": "r-to"
+    },
+    "NumSys008": {
+      "expected": "z-tre"
+    },
+    "NumSys008a": {
+      "expected": "z-tre"
+    },
+    "NumSys009": {
+      "expected": "c-n"
+    },
+    "NumSys009a": {
+      "expected": "c-n"
+    },
+    "NumSys010": {
+      "expected": "r-uendelig"
+    },
+    "NumSys010a": {
+      "expected": "r-uendelig"
+    }
+  }
+}

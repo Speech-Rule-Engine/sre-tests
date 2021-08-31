@@ -1,0 +1,256 @@
+{
+  "name": "BokmalClearspeakSummary",
+  "locale": "nb",
+  "domain": "clearspeak",
+  "factory": "summary",
+  "base": "input/common/summary_test.json",
+  "information": "Bokmal Clearspeak Summary tests.",
+  "active": "SummaryBokmal",
+  "exclude": [
+    "AbstrAddition_brief",
+    "AbstrAddition_sbrief",
+    "AbstrBigop_brief",
+    "AbstrBigop_sbrief",
+    "AbstrBinomial_brief",
+    "AbstrBinomial_sbrief",
+    "AbstrCases_brief",
+    "AbstrCases_sbrief",
+    "AbstrCell_brief",
+    "AbstrCell_sbrief",
+    "AbstrContinuedFraction_brief",
+    "AbstrContinuedFraction_sbrief",
+    "AbstrDeterminant_brief",
+    "AbstrDeterminant_sbrief",
+    "AbstrFraction_brief",
+    "AbstrFraction_sbrief",
+    "AbstrFunction_brief",
+    "AbstrFunction_sbrief",
+    "AbstrIdentifier_brief",
+    "AbstrIdentifier_sbrief",
+    "AbstrInfixop_brief",
+    "AbstrInfixop_sbrief",
+    "AbstrIntegral_brief",
+    "AbstrIntegral_sbrief",
+    "AbstrLim_brief",
+    "AbstrLim_sbrief",
+    "AbstrLine_brief",
+    "AbstrLine_sbrief",
+    "AbstrMatrix_brief",
+    "AbstrMatrix_sbrief",
+    "AbstrMixedNumber_brief",
+    "AbstrMixedNumber_sbrief",
+    "AbstrMultiplication_brief",
+    "AbstrMultiplication_sbrief",
+    "AbstrMultirel_brief",
+    "AbstrMultirel_sbrief",
+    "AbstrNumber_brief",
+    "AbstrNumber_sbrief",
+    "AbstrPunctuated_brief",
+    "AbstrPunctuated_sbrief",
+    "AbstrRelation_brief",
+    "AbstrRelation_sbrief",
+    "AbstrRelationSeq_brief",
+    "AbstrRelationSeq_sbrief",
+    "AbstrRoot_brief",
+    "AbstrRoot_sbrief",
+    "AbstrRootNested_brief",
+    "AbstrRootNested_sbrief",
+    "AbstrRow_brief",
+    "AbstrRow_sbrief",
+    "AbstrRowvector_brief",
+    "AbstrRowvector_sbrief",
+    "AbstrSqrt_brief",
+    "AbstrSqrt_sbrief",
+    "AbstrSqrtNested_brief",
+    "AbstrSqrtNested_sbrief",
+    "AbstrSquarematrix_brief",
+    "AbstrSquarematrix_sbrief",
+    "AbstrSubscript_brief",
+    "AbstrSubscript_sbrief",
+    "AbstrSubsup_brief",
+    "AbstrSubsup_sbrief",
+    "AbstrSuperscript_brief",
+    "AbstrSuperscript_sbrief",
+    "AbstrTable_brief",
+    "AbstrTable_sbrief",
+    "AbstrText_brief",
+    "AbstrText_sbrief",
+    "AbstrVarAddition_brief",
+    "AbstrVarAddition_sbrief",
+    "AbstrVarCases_brief",
+    "AbstrVarCases_sbrief",
+    "AbstrVarDeterminant_brief",
+    "AbstrVarDeterminant_sbrief",
+    "AbstrVarMatrix_brief",
+    "AbstrVarMatrix_sbrief",
+    "AbstrVarMultiplication_brief",
+    "AbstrVarMultiplication_sbrief",
+    "AbstrVarMultirel_brief",
+    "AbstrVarMultirel_sbrief",
+    "AbstrVarPunctuated_brief",
+    "AbstrVarPunctuated_sbrief",
+    "AbstrVarRelation_brief",
+    "AbstrVarRelation_sbrief",
+    "AbstrVarVector_brief",
+    "AbstrVarVector_sbrief",
+    "AbstrVector_brief",
+    "AbstrVector_sbrief",
+    "AbstrVarSubtraction_brief",
+    "AbstrVarSubtraction_sbrief",
+    "AbstrCountImplicit_brief",
+    "AbstrCountImplicit_sbrief"
+  ],
+  "compare": true,
+  "tests": {
+    "AbstrAddition_default": {
+      "expected": "a pluss b"
+    },
+    "AbstrBigop_default": {
+      "expected": "sum sum x"
+    },
+    "AbstrBinomial_default": {
+      "expected": "venstre parentes høyre parentes xy"
+    },
+    "AbstrCases_default": {
+      "expected": "venstre krøllparentes y 0 y 2"
+    },
+    "AbstrCell_default": {
+      "expected": "1. Column a"
+    },
+    "AbstrContinuedFraction_default": {
+      "expected": "b 1 pluss pluss a 1 b 2 pluss pluss a 2 b 3 pluss pluss a 3 prikk prikk prikk"
+    },
+    "AbstrDeterminant_default": {
+      "expected": "vertikalstrek vertikalstrek abcd"
+    },
+    "AbstrFraction_default": {
+      "expected": "1 x"
+    },
+    "AbstrFunction_default": {
+      "expected": "sinus"
+    },
+    "AbstrIdentifier_default": {
+      "expected": "a"
+    },
+    "AbstrInfixop_default": {
+      "expected": "a skråstrek b"
+    },
+    "AbstrIntegral_default": {
+      "expected": "konturintegral konturintegral prikk prikk Eddl"
+    },
+    "AbstrLim_default": {
+      "expected": "grense"
+    },
+    "AbstrLine_default": {
+      "expected": "1. Row a"
+    },
+    "AbstrMatrix_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes abcdef"
+    },
+    "AbstrMixedNumber_default": {
+      "expected": ""
+    },
+    "AbstrMultiplication_default": {
+      "expected": "a asterisk b"
+    },
+    "AbstrMultirel_default": {
+      "expected": "a er lik b er mindre enn eller er lik b"
+    },
+    "AbstrNumber_default": {
+      "expected": "123456"
+    },
+    "AbstrPunctuated_default": {
+      "expected": "a komma b komma c"
+    },
+    "AbstrRelation_default": {
+      "expected": "a er lik b"
+    },
+    "AbstrRelationSeq_default": {
+      "expected": "a er lik b er lik b"
+    },
+    "AbstrRoot_default": {
+      "expected": "3 x"
+    },
+    "AbstrRootNested_default": {
+      "expected": "3 pluss pluss 4 xx"
+    },
+    "AbstrRow_default": {
+      "expected": "1. Row a b"
+    },
+    "AbstrRowvector_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes ab"
+    },
+    "AbstrSqrt_default": {
+      "expected": "2"
+    },
+    "AbstrSqrtNested_default": {
+      "expected": "ganger ganger 22"
+    },
+    "AbstrSquarematrix_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes abcd"
+    },
+    "AbstrSubscript_default": {
+      "expected": "ab"
+    },
+    "AbstrSubsup_default": {
+      "expected": "acb"
+    },
+    "AbstrSuperscript_default": {
+      "expected": "ab"
+    },
+    "AbstrTable_default": {
+      "expected": "abcd"
+    },
+    "AbstrText_default": {
+      "expected": "a b c"
+    },
+    "AbstrVarAddition_default": {
+      "expected": "a pluss prikk prikk prikk pluss b"
+    },
+    "AbstrVarCases_default": {
+      "expected": "venstre krøllparentes a prikk prikk prikk b"
+    },
+    "AbstrVarDeterminant_default": {
+      "expected": "vertikalstrek vertikalstrek abe prikk prikk prikk cdf"
+    },
+    "AbstrVarMatrix_default": {
+      "expected": "venstre parentes høyre parentes abe prikk prikk prikk cdf"
+    },
+    "AbstrVarMultiplication_default": {
+      "expected": "a asterisk prikk prikk prikk asterisk b"
+    },
+    "AbstrVarMultirel_default": {
+      "expected": "a er lik prikk prikk prikk er mindre enn eller er lik b"
+    },
+    "AbstrVarPunctuated_default": {
+      "expected": "a komma prikk prikk prikk komma b"
+    },
+    "AbstrVarRelation_default": {
+      "expected": "a er lik prikk prikk prikk er lik b"
+    },
+    "AbstrVarVector_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes a vertikal ellipse cd"
+    },
+    "AbstrVector_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes ace"
+    },
+    "AbstrVarSubtraction_default": {
+      "expected": "a minus prikk prikk prikk minus b"
+    },
+    "AbstrCountImplicit_default": {
+      "expected": "a b c"
+    },
+    "AbstrVarImplicit_default": {
+      "expected": "a prikk prikk prikk b"
+    },
+    "AbstrVarArrowRelation_default": {
+      "expected": "a høyrepil prikk prikk prikk venstre-høyrepil b"
+    },
+    "AbstrArrowRelation_default": {
+      "expected": "a høyrepil c venstre-høyrepil b"
+    },
+    "AbstrVarRowvector_default": {
+      "expected": "venstre hakeparentes høyre hakeparentes a prikk prikk prikk b"
+    }
+  }
+}

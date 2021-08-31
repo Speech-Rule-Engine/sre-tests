@@ -1,0 +1,265 @@
+{
+  "name": "BokmalClearspeakFencesNeutral",
+  "locale": "nb",
+  "factory": "clearspeak",
+  "base": "input/common/fences_neutral.json",
+  "information": "Bokmal Clearspeak Neutral Fences rule tests.",
+  "active": "ClearspeakBokmal",
+  "exclude": [
+    "BarFenced_0_sbrief",
+    "BarFenced_1_sbrief",
+    "BarFenced_2_sbrief",
+    "BarFenced_3_sbrief",
+    "BarFenced_4_sbrief",
+    "BarFenced_5_sbrief",
+    "BarFenced_6_sbrief",
+    "BarFencedMixed_0_sbrief",
+    "BarFencedMixed_1_sbrief",
+    "BarFencedMixed_2_sbrief",
+    "BarFencedMixed_3_sbrief",
+    "CenterBar_0_sbrief",
+    "CenterBar_1_sbrief",
+    "CenterBar_2_sbrief",
+    "CenterBar_3_sbrief",
+    "CenterBar_4_sbrief",
+    "CenterBar_5_sbrief",
+    "Function_0_sbrief",
+    "Function_1_sbrief",
+    "Function_2_sbrief",
+    "Function_3_sbrief",
+    "Function_4_sbrief",
+    "Function_5_sbrief",
+    "FunctionMetric0_sbrief",
+    "FunctionMetric1_sbrief",
+    "FunctionMetric2_sbrief",
+    "FunctionMetric3_sbrief",
+    "FunctionMetric4_sbrief",
+    "FunctionMetric5_sbrief",
+    "CenterBarFunc_0_sbrief",
+    "CenterBarFunc_1_sbrief",
+    "CenterBarFunc_2_sbrief",
+    "CenterBarFunc_3_sbrief",
+    "CenterBarFunc_4_sbrief",
+    "CenterBarFunc_5_sbrief",
+    "CenterBarFunc_6_sbrief"
+  ],
+  "compare": true,
+  "tests": {
+    "BarFenced_0_default": {
+      "expected": "vertikalstrek vertikalstrek a"
+    },
+    "BarFenced_1_default": {
+      "expected": "vertikal strek vertikal strek a"
+    },
+    "BarFenced_2_default": {
+      "expected": "brutt vertikalstrek brutt vertikalstrek a"
+    },
+    "BarFenced_3_default": {
+      "expected": "parallell til parallell til a"
+    },
+    "BarFenced_4_default": {
+      "expected": "trippel vertikalstrek-avgrensing trippel vertikalstrek-avgrensing a"
+    },
+    "BarFenced_5_default": {
+      "expected": "trippel vertikalstrek med horisontal strek trippel vertikalstrek med horisontal strek a"
+    },
+    "BarFenced_6_default": {
+      "expected": "dobbel vertikal strek dobbel vertikal strek a"
+    },
+    "BarFencedMixed_0_default": {
+      "expected": "vertikal strek a dobbel vertikal strek"
+    },
+    "BarFencedMixed_1_default": {
+      "expected": "parallell til a dobbel vertikal strek"
+    },
+    "BarFencedMixed_2_default": {
+      "expected": "vertikal strek a brutt vertikalstrek"
+    },
+    "BarFencedMixed_3_default": {
+      "expected": "trippel vertikalstrek-avgrensing a dobbel vertikal strek"
+    },
+    "CenterBar_0_default": {
+      "expected": "a vertikal strek b"
+    },
+    "CenterBar_1_default": {
+      "expected": "a vertikalstrek b"
+    },
+    "CenterBar_2_default": {
+      "expected": "a brutt vertikalstrek b"
+    },
+    "CenterBar_3_default": {
+      "expected": "a dobbel vertikal strek b"
+    },
+    "CenterBar_4_default": {
+      "expected": "a parallell til b"
+    },
+    "CenterBar_5_default": {
+      "expected": "a trippel vertikalstrek-avgrensing b"
+    },
+    "CenterBarFunc_0_default": {
+      "expected": "f vertikal strek g"
+    },
+    "CenterBarFunc_1_default": {
+      "expected": "f vertikalstrek g"
+    },
+    "CenterBarFunc_2_default": {
+      "expected": "f brutt vertikalstrek g"
+    },
+    "CenterBarFunc_3_default": {
+      "expected": "f dobbel vertikal strek g"
+    },
+    "CenterBarFunc_4_default": {
+      "expected": "f parallell til g"
+    },
+    "CenterBarFunc_5_default": {
+      "expected": "f trippel vertikalstrek-avgrensing g"
+    },
+    "CenterBarFunc_6_default": {
+      "expected": "sinus trippel vertikalstrek-avgrensing g"
+    },
+    "Function_0_default": {
+      "expected": "av ff vertikalstrek vertikalstrek a"
+    },
+    "Function_1_default": {
+      "expected": "av gg vertikalstrek vertikalstrek a"
+    },
+    "Function_2_default": {
+      "expected": "av hh vertikalstrek vertikalstrek a"
+    },
+    "Function_3_default": {
+      "expected": "r ganger vertikalstrek vertikalstrek a"
+    },
+    "Function_4_default": {
+      "expected": "av sinsin vertikalstrek vertikalstrek a"
+    },
+    "Function_5_default": {
+      "expected": "sum sum vertikalstrek vertikalstrek a"
+    },
+    "FunctionMetric0_default": {
+      "expected": "av ff dobbel vertikal strek dobbel vertikal strek a"
+    },
+    "FunctionMetric1_default": {
+      "expected": "av gg dobbel vertikal strek dobbel vertikal strek a"
+    },
+    "FunctionMetric2_default": {
+      "expected": "av hh dobbel vertikal strek dobbel vertikal strek a"
+    },
+    "FunctionMetric3_default": {
+      "expected": "r ganger dobbel vertikal strek dobbel vertikal strek a"
+    },
+    "FunctionMetric4_default": {
+      "expected": "av sinsin dobbel vertikal strek dobbel vertikal strek a"
+    },
+    "FunctionMetric5_default": {
+      "expected": "sum sum dobbel vertikal strek dobbel vertikal strek a"
+    },
+    "BarFenced_0_AbsoluteValue_AbsEnd": {
+      "expected": "vertikalstrek vertikalstrek a"
+    },
+    "BarFenced_1_AbsoluteValue_AbsEnd": {
+      "expected": "vertikal strek vertikal strek a"
+    },
+    "BarFenced_2_AbsoluteValue_AbsEnd": {
+      "expected": "brutt vertikalstrek brutt vertikalstrek a"
+    },
+    "BarFenced_3_AbsoluteValue_AbsEnd": {
+      "expected": "parallell til parallell til a"
+    },
+    "BarFenced_4_AbsoluteValue_AbsEnd": {
+      "expected": "trippel vertikalstrek-avgrensing trippel vertikalstrek-avgrensing a"
+    },
+    "BarFenced_5_AbsoluteValue_AbsEnd": {
+      "expected": "trippel vertikalstrek med horisontal strek trippel vertikalstrek med horisontal strek a"
+    },
+    "BarFenced_6_AbsoluteValue_AbsEnd": {
+      "expected": "dobbel vertikal strek dobbel vertikal strek a"
+    },
+    "BarFencedMixed_0_AbsoluteValue_AbsEnd": {
+      "expected": "vertikal strek a dobbel vertikal strek"
+    },
+    "BarFencedMixed_1_AbsoluteValue_AbsEnd": {
+      "expected": "parallell til a dobbel vertikal strek"
+    },
+    "BarFencedMixed_2_AbsoluteValue_AbsEnd": {
+      "expected": "vertikal strek a brutt vertikalstrek"
+    },
+    "BarFencedMixed_3_AbsoluteValue_AbsEnd": {
+      "expected": "trippel vertikalstrek-avgrensing a dobbel vertikal strek"
+    },
+    "CenterBar_0_AbsoluteValue_AbsEnd": {
+      "expected": "a vertikal strek b"
+    },
+    "CenterBar_1_AbsoluteValue_AbsEnd": {
+      "expected": "a vertikalstrek b"
+    },
+    "CenterBar_2_AbsoluteValue_AbsEnd": {
+      "expected": "a brutt vertikalstrek b"
+    },
+    "CenterBar_3_AbsoluteValue_AbsEnd": {
+      "expected": "a dobbel vertikal strek b"
+    },
+    "CenterBar_4_AbsoluteValue_AbsEnd": {
+      "expected": "a parallell til b"
+    },
+    "CenterBar_5_AbsoluteValue_AbsEnd": {
+      "expected": "a trippel vertikalstrek-avgrensing b"
+    },
+    "Function_0_AbsoluteValue_AbsEnd": {
+      "expected": "av ff vertikalstrek vertikalstrek a"
+    },
+    "Function_1_AbsoluteValue_AbsEnd": {
+      "expected": "av gg vertikalstrek vertikalstrek a"
+    },
+    "Function_2_AbsoluteValue_AbsEnd": {
+      "expected": "av hh vertikalstrek vertikalstrek a"
+    },
+    "Function_3_AbsoluteValue_AbsEnd": {
+      "expected": "r ganger vertikalstrek vertikalstrek a"
+    },
+    "Function_4_AbsoluteValue_AbsEnd": {
+      "expected": "av sinsin vertikalstrek vertikalstrek a"
+    },
+    "Function_5_AbsoluteValue_AbsEnd": {
+      "expected": "sum sum vertikalstrek vertikalstrek a"
+    },
+    "FunctionMetric0_AbsoluteValue_AbsEnd": {
+      "expected": "av ff dobbel vertikal strek dobbel vertikal strek a"
+    },
+    "FunctionMetric1_AbsoluteValue_AbsEnd": {
+      "expected": "av gg dobbel vertikal strek dobbel vertikal strek a"
+    },
+    "FunctionMetric2_AbsoluteValue_AbsEnd": {
+      "expected": "av hh dobbel vertikal strek dobbel vertikal strek a"
+    },
+    "FunctionMetric3_AbsoluteValue_AbsEnd": {
+      "expected": "r ganger dobbel vertikal strek dobbel vertikal strek a"
+    },
+    "FunctionMetric4_AbsoluteValue_AbsEnd": {
+      "expected": "av sinsin dobbel vertikal strek dobbel vertikal strek a"
+    },
+    "FunctionMetric5_AbsoluteValue_AbsEnd": {
+      "expected": "sum sum dobbel vertikal strek dobbel vertikal strek a"
+    },
+    "CenterBarFunc_0_AbsoluteValue_AbsEnd": {
+      "expected": "f vertikal strek g"
+    },
+    "CenterBarFunc_1_AbsoluteValue_AbsEnd": {
+      "expected": "f vertikalstrek g"
+    },
+    "CenterBarFunc_2_AbsoluteValue_AbsEnd": {
+      "expected": "f brutt vertikalstrek g"
+    },
+    "CenterBarFunc_3_AbsoluteValue_AbsEnd": {
+      "expected": "f dobbel vertikal strek g"
+    },
+    "CenterBarFunc_4_AbsoluteValue_AbsEnd": {
+      "expected": "f parallell til g"
+    },
+    "CenterBarFunc_5_AbsoluteValue_AbsEnd": {
+      "expected": "f trippel vertikalstrek-avgrensing g"
+    },
+    "CenterBarFunc_6_AbsoluteValue_AbsEnd": {
+      "expected": "sinus trippel vertikalstrek-avgrensing g"
+    }
+  }
+}

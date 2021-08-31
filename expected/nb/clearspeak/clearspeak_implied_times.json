@@ -1,0 +1,466 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "BokmalClearspeakImpliedTimes",
+  "locale": "nb",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_implied_times.json",
+  "information": "Bokmal Clearspeak ImpliedTimes rule tests.",
+  "active": "ClearspeakBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "ImpTimes001": {
+      "expected": "2 ganger 3"
+    },
+    "ImpTimes002": {
+      "expected": "2 ganger 3"
+    },
+    "ImpTimes003": {
+      "expected": "24 ganger 3"
+    },
+    "ImpTimes004": {
+      "expected": "2 ganger, venstre parentes, 3 pluss 4, høyre parentes"
+    },
+    "ImpTimes005": {
+      "expected": "2 ganger, venstre hakeparentes, 3 pluss 4, høyre hakeparentes"
+    },
+    "ImpTimes006": {
+      "expected": "3 ganger 2"
+    },
+    "ImpTimes007": {
+      "expected": "2 ganger venstre parentes høyre parentes pluss pluss 342"
+    },
+    "ImpTimes008": {
+      "expected": "venstre parentes, 2 pluss 7, høyre parentes, ganger, venstre parentes, 3 minus 6, høyre parentes"
+    },
+    "ImpTimes009": {
+      "expected": "venstre hakeparentes, 2 pluss 7, høyre hakeparentes, ganger, venstre hakeparentes, 3 minus 6, høyre hakeparentes"
+    },
+    "ImpTimes011": {
+      "expected": "x ganger, venstre parentes, y pluss z, høyre parentes"
+    },
+    "ImpTimes012": {
+      "expected": "2 ganger, venstre parentes, y pluss 1, høyre parentes"
+    },
+    "ImpTimes013": {
+      "expected": "venstre parentes, 2 minus 1, høyre parentes, ganger x"
+    },
+    "ImpTimes014": {
+      "expected": "p 1 ganger, venstre parentes, 3 pluss 7, høyre parentes"
+    },
+    "ImpTimes015": {
+      "expected": "p 1 a 1, p 2 a 2"
+    },
+    "ImpTimes016": {
+      "expected": "venstre parentes høyre parentes pluss pluss xy minus minus 4 ganger venstre parentes høyre parentes minus minus xy minus minus 4"
+    },
+    "ImpTimes017": {
+      "expected": "2 ganger ganger 4 venstre parentes høyre parentes pluss pluss xy"
+    },
+    "ImpTimes018": {
+      "expected": "x y"
+    },
+    "ImpTimes019": {
+      "expected": "x 2, y 3"
+    },
+    "ImpTimes020": {
+      "expected": "x pluss pluss y 1, x pluss pluss y 2"
+    },
+    "ImpTimes021": {
+      "expected": "a, b er lik ganger ganger ab"
+    },
+    "ImpTimes022": {
+      "expected": "3, 10 er lik 30"
+    },
+    "ImpTimes023": {
+      "expected": "2 3"
+    },
+    "ImpTimes024": {
+      "expected": "1 pluss 2 3"
+    },
+    "ImpTimes025": {
+      "expected": "av ff venstre parentes høyre parentes x er lik x 2 ganger, venstre parentes, x pluss 1, høyre parentes"
+    },
+    "ImpTimes026": {
+      "expected": "av ff venstre parentes høyre parentes x er lik x 2 ganger, venstre parentes, x pluss 1, høyre parentes"
+    },
+    "ImpTimes027": {
+      "expected": "av sinsinx av coscosy, pluss, av coscosx av sinsiny"
+    },
+    "ImpTimes027a": {
+      "expected": "av sinsin venstre parentes høyre parentes pluss pluss xy av coscos venstre parentes høyre parentes pluss pluss xy"
+    },
+    "ImpTimes028": {
+      "expected": "av loglog 10 ganger ganger xy"
+    },
+    "ImpTimes029": {
+      "expected": "av loglog venstre parentes høyre parentes pluss pluss xy er lik, av loglogx av loglogy"
+    },
+    "ImpTimes030": {
+      "expected": "venstre parentes høyre parentes 1352 ganger venstre parentes høyre parentes 7401"
+    },
+    "ImpTimes031": {
+      "expected": "2 ganger, venstre parentes, 3 ganger, venstre parentes, venstre parentes, 4 pluss 5, høyre parentes, pluss 6, høyre parentes, høyre parentes"
+    },
+    "ImpTimes032": {
+      "expected": "2 ganger, venstre parentes, 3 ganger, tote venstre parentes, dritte venstre parentes, 4 pluss 5, dritte høyre parentes, pluss 6, tote høyre parentes, høyre parentes"
+    },
+    "ImpTimes033": {
+      "expected": "2 ganger, venstre hakeparentes, 3 ganger, venstre parentes, venstre parentes, 4 pluss 5, høyre parentes, pluss 6, høyre parentes, høyre hakeparentes"
+    },
+    "ImpTimes034": {
+      "expected": "2 ganger, venstre hakeparentes, 3 ganger, venstre parentes, tote venstre parentes, 4 pluss 5, tote høyre parentes, pluss 6, høyre parentes, høyre hakeparentes"
+    },
+    "ImpTimes035": {
+      "expected": "2 ganger vertikalstrek vertikalstrek x"
+    },
+    "ImpTimes036": {
+      "expected": "vertikalstrek vertikalstrek x ganger vertikalstrek vertikalstrek y"
+    },
+    "ImpTimes037": {
+      "expected": "vertikalstrek vertikalstrek pluss pluss x 1 ganger vertikalstrek vertikalstrek minus minus y 1"
+    },
+    "ImpTimes037a": {
+      "expected": "vertikalstrek vertikalstrek pluss pluss x 1 ganger vertikalstrek vertikalstrek minus minus y 1"
+    },
+    "ImpTimes038": {
+      "expected": "vertikalstrek vertikalstrek pluss pluss x 1 ganger vertikalstrek vertikalstrek y minus 1"
+    },
+    "ImpTimes0381": {
+      "expected": "vertikalstrek vertikalstrek pluss pluss x 1 ganger vertikalstrek vertikalstrek y minus 1"
+    },
+    "ImpTimes039": {
+      "expected": "2 ganger 3"
+    },
+    "ImpTimes040": {
+      "expected": "2 ganger 3"
+    },
+    "ImpTimes041": {
+      "expected": "24 ganger 3"
+    },
+    "ImpTimes042": {
+      "expected": "2 ganger, venstre parentes, 3 pluss 4, høyre parentes"
+    },
+    "ImpTimes043": {
+      "expected": "2 ganger, venstre hakeparentes, 3 pluss 4, høyre hakeparentes"
+    },
+    "ImpTimes044": {
+      "expected": "3 ganger 2"
+    },
+    "ImpTimes045": {
+      "expected": "2 ganger venstre parentes høyre parentes pluss pluss 342"
+    },
+    "ImpTimes046": {
+      "expected": "venstre parentes, 2 pluss 7, høyre parentes, ganger, venstre parentes, 3 minus 6, høyre parentes"
+    },
+    "ImpTimes047": {
+      "expected": "venstre hakeparentes, 2 pluss 7, høyre hakeparentes, ganger, venstre hakeparentes, 3 minus 6, høyre hakeparentes"
+    },
+    "ImpTimes049": {
+      "expected": "x ganger, venstre parentes, y pluss z, høyre parentes"
+    },
+    "ImpTimes050": {
+      "expected": "2 ganger, venstre parentes, y pluss 1, høyre parentes"
+    },
+    "ImpTimes051": {
+      "expected": "venstre parentes, 2 minus 1, høyre parentes, ganger x"
+    },
+    "ImpTimes052": {
+      "expected": "p 1 ganger, venstre parentes, 3 pluss 7, høyre parentes"
+    },
+    "ImpTimes053": {
+      "expected": "p 1 a 1 ganger p 2 a 2"
+    },
+    "ImpTimes054": {
+      "expected": "venstre parentes høyre parentes pluss pluss xy minus minus 4 ganger venstre parentes høyre parentes minus minus xy minus minus 4"
+    },
+    "ImpTimes055": {
+      "expected": "2 ganger ganger 4 venstre parentes høyre parentes pluss pluss xy"
+    },
+    "ImpTimes056": {
+      "expected": "x ganger y"
+    },
+    "ImpTimes057": {
+      "expected": "x 2 ganger y 3"
+    },
+    "ImpTimes058": {
+      "expected": "x pluss pluss y 1 ganger x pluss pluss y 2"
+    },
+    "ImpTimes059": {
+      "expected": "a ganger b er lik ganger ganger ab"
+    },
+    "ImpTimes060": {
+      "expected": "3 ganger 10 er lik 30"
+    },
+    "ImpTimes061": {
+      "expected": "2 ganger 3"
+    },
+    "ImpTimes062": {
+      "expected": "1 pluss 2 ganger 3"
+    },
+    "ImpTimes063": {
+      "expected": "av ff venstre parentes høyre parentes x er lik x 2 ganger, venstre parentes, x pluss 1, høyre parentes"
+    },
+    "ImpTimes064": {
+      "expected": "av ff venstre parentes høyre parentes x er lik x 2 ganger, venstre parentes, x pluss 1, høyre parentes"
+    },
+    "ImpTimes065": {
+      "expected": "av sinsinx, ganger av coscosy pluss av coscosx, ganger av sinsiny"
+    },
+    "ImpTimes065a": {
+      "expected": "av sinsin venstre parentes høyre parentes pluss pluss xy, ganger av coscos venstre parentes høyre parentes pluss pluss xy"
+    },
+    "ImpTimes066": {
+      "expected": "av loglog 10 ganger ganger xy"
+    },
+    "ImpTimes067": {
+      "expected": "av loglog venstre parentes høyre parentes pluss pluss xy er lik av loglogx, ganger av loglogy"
+    },
+    "ImpTimes068": {
+      "expected": "venstre parentes høyre parentes 1352 ganger venstre parentes høyre parentes 7401"
+    },
+    "ImpTimes069": {
+      "expected": "2 ganger, venstre parentes, 3 ganger, venstre parentes, venstre parentes, 4 pluss 5, høyre parentes, pluss 6, høyre parentes, høyre parentes"
+    },
+    "ImpTimes070": {
+      "expected": "2 ganger, venstre parentes, 3 ganger, tote venstre parentes, dritte venstre parentes, 4 pluss 5, dritte høyre parentes, pluss 6, tote høyre parentes, høyre parentes"
+    },
+    "ImpTimes070a": {
+      "expected": "2 ganger, venstre hakeparentes, 3 ganger, venstre parentes, venstre parentes, 4 pluss 5, høyre parentes, pluss 6, høyre parentes, høyre hakeparentes"
+    },
+    "ImpTimes071": {
+      "expected": "2 ganger, venstre hakeparentes, 3 ganger, venstre parentes, tote venstre parentes, 4 pluss 5, tote høyre parentes, pluss 6, høyre parentes, høyre hakeparentes"
+    },
+    "ImpTimes072": {
+      "expected": "2 ganger vertikalstrek vertikalstrek x"
+    },
+    "ImpTimes073": {
+      "expected": "vertikalstrek vertikalstrek x ganger vertikalstrek vertikalstrek y"
+    },
+    "ImpTimes074": {
+      "expected": "vertikalstrek vertikalstrek pluss pluss x 1 ganger vertikalstrek vertikalstrek minus minus y 1"
+    },
+    "ImpTimes074a": {
+      "expected": "vertikalstrek vertikalstrek pluss pluss x 1 ganger vertikalstrek vertikalstrek minus minus y 1"
+    },
+    "ImpTimes075": {
+      "expected": "vertikalstrek vertikalstrek pluss pluss x 1 ganger vertikalstrek vertikalstrek y minus 1"
+    },
+    "ImpTimes076": {
+      "expected": "vertikalstrek vertikalstrek pluss pluss x 1 ganger vertikalstrek vertikalstrek y minus 1"
+    },
+    "ImpTimes077": {
+      "expected": "2, venstre parentes, 3, høyre parentes"
+    },
+    "ImpTimes078": {
+      "expected": "2, venstre hakeparentes, 3, høyre hakeparentes"
+    },
+    "ImpTimes079": {
+      "expected": "24, venstre parentes, 3, høyre parentes"
+    },
+    "ImpTimes080": {
+      "expected": "2, venstre parentes, 3 pluss 4, høyre parentes"
+    },
+    "ImpTimes081": {
+      "expected": "2, venstre hakeparentes, 3 pluss 4, høyre hakeparentes"
+    },
+    "ImpTimes082": {
+      "expected": "venstre parentes, 3, høyre parentes, venstre parentes, 2, høyre parentes"
+    },
+    "ImpTimes083": {
+      "expected": "2 venstre parentes høyre parentes pluss pluss 342"
+    },
+    "ImpTimes084": {
+      "expected": "venstre parentes, 2 pluss 7, høyre parentes, venstre parentes, 3 minus 6, høyre parentes"
+    },
+    "ImpTimes085": {
+      "expected": "venstre hakeparentes, 2 pluss 7, høyre hakeparentes, venstre hakeparentes, 3 minus 6, høyre hakeparentes"
+    },
+    "ImpTimes087": {
+      "expected": "x, venstre parentes, y pluss z, høyre parentes"
+    },
+    "ImpTimes088": {
+      "expected": "2, venstre parentes, y pluss 1, høyre parentes"
+    },
+    "ImpTimes089": {
+      "expected": "venstre parentes, 2 minus 1, høyre parentes, x"
+    },
+    "ImpTimes090": {
+      "expected": "p 1, venstre parentes, 3 pluss 7, høyre parentes"
+    },
+    "ImpTimes091": {
+      "expected": "p 1 a 1 p 2 a 2"
+    },
+    "ImpTimes092": {
+      "expected": "venstre parentes høyre parentes pluss pluss xy minus minus 4 venstre parentes høyre parentes minus minus xy minus minus 4"
+    },
+    "ImpTimes093": {
+      "expected": "2 ganger ganger 4 venstre parentes høyre parentes pluss pluss xy"
+    },
+    "ImpTimes094": {
+      "expected": "x y"
+    },
+    "ImpTimes095": {
+      "expected": "x 2 y 3"
+    },
+    "ImpTimes096": {
+      "expected": "x pluss pluss y 1 x pluss pluss y 2"
+    },
+    "ImpTimes097": {
+      "expected": "a b er lik ganger ganger ab"
+    },
+    "ImpTimes098": {
+      "expected": "3 10 er lik 30"
+    },
+    "ImpTimes099": {
+      "expected": "2 3"
+    },
+    "ImpTimes100": {
+      "expected": "1 pluss 2 3"
+    },
+    "ImpTimes101": {
+      "expected": "av ff venstre parentes høyre parentes x er lik x 2, venstre parentes, x pluss 1, høyre parentes"
+    },
+    "ImpTimes103": {
+      "expected": "av sinsinx av coscosy, pluss, av coscosx av sinsiny"
+    },
+    "ImpTimes104": {
+      "expected": "av loglog 10 ganger ganger xy"
+    },
+    "ImpTimes105": {
+      "expected": "av loglog venstre parentes høyre parentes pluss pluss xy er lik, av loglogx av loglogy"
+    },
+    "ImpTimes106": {
+      "expected": "venstre parentes høyre parentes 1352 venstre parentes høyre parentes 7401"
+    },
+    "ImpTimes107": {
+      "expected": "2, venstre parentes, 3, venstre parentes, venstre parentes, 4 pluss 5, høyre parentes, pluss 6, høyre parentes, høyre parentes"
+    },
+    "ImpTimes108": {
+      "expected": "2, venstre parentes, 3, tote venstre parentes, dritte venstre parentes, 4 pluss 5, dritte høyre parentes, pluss 6, tote høyre parentes, høyre parentes"
+    },
+    "ImpTimes109": {
+      "expected": "2, venstre hakeparentes, 3, venstre parentes, venstre parentes, 4 pluss 5, høyre parentes, pluss 6, høyre parentes, høyre hakeparentes"
+    },
+    "ImpTimes110": {
+      "expected": "2, venstre hakeparentes, 3, venstre parentes, tote venstre parentes, 4 pluss 5, tote høyre parentes, pluss 6, høyre parentes, høyre hakeparentes"
+    },
+    "ImpTimes111": {
+      "expected": "2 vertikalstrek vertikalstrek x"
+    },
+    "ImpTimes112": {
+      "expected": "vertikalstrek vertikalstrek x vertikalstrek vertikalstrek y"
+    },
+    "ImpTimes113": {
+      "expected": "vertikalstrek vertikalstrek pluss pluss x 1 vertikalstrek vertikalstrek minus minus y 1"
+    },
+    "ImpTimes114": {
+      "expected": "vertikalstrek vertikalstrek pluss pluss x 1 vertikalstrek vertikalstrek y minus 1"
+    },
+    "ImpTimesSilPar001": {
+      "expected": "2, venstre parentes, 3, høyre parentes"
+    },
+    "ImpTimesSilPar002": {
+      "expected": "2, venstre hakeparentes, 3, høyre hakeparentes"
+    },
+    "ImpTimesSilPar003": {
+      "expected": "24, venstre parentes, 3, høyre parentes"
+    },
+    "ImpTimesSilPar004": {
+      "expected": "2, venstre parentes, 3 pluss 4, høyre parentes"
+    },
+    "ImpTimesSilPar005": {
+      "expected": "2, venstre hakeparentes, 3 pluss 4, høyre hakeparentes"
+    },
+    "ImpTimesSilPar006": {
+      "expected": "venstre parentes, 3, høyre parentes, venstre parentes, 2, høyre parentes"
+    },
+    "ImpTimesSilPar007": {
+      "expected": "2 venstre parentes høyre parentes pluss pluss 342"
+    },
+    "ImpTimesSilPar008": {
+      "expected": "venstre parentes, 2 pluss 7, høyre parentes, venstre parentes, 3 minus 6, høyre parentes"
+    },
+    "ImpTimesSilPar009": {
+      "expected": "venstre hakeparentes, 2 pluss 7, høyre hakeparentes, venstre hakeparentes, 3 minus 6, høyre hakeparentes"
+    },
+    "ImpTimesSilPar011": {
+      "expected": "x, venstre parentes, y pluss z, høyre parentes"
+    },
+    "ImpTimesSilPar012": {
+      "expected": "2, venstre parentes, y pluss 1, høyre parentes"
+    },
+    "ImpTimesSilPar013": {
+      "expected": "venstre parentes, 2 minus 1, høyre parentes, x"
+    },
+    "ImpTimesSilPar014": {
+      "expected": "p 1, venstre parentes, 3 pluss 7, høyre parentes"
+    },
+    "ImpTimesSilPar015": {
+      "expected": "venstre parentes høyre parentes pluss pluss xy minus minus 4 venstre parentes høyre parentes minus minus xy minus minus 4"
+    },
+    "ImpTimesSilPar016": {
+      "expected": "2 ganger ganger 4 venstre parentes høyre parentes pluss pluss xy"
+    },
+    "ImpTimesSilPar017": {
+      "expected": "av ff venstre parentes høyre parentes x er lik x 2, venstre parentes, x pluss 1, høyre parentes"
+    },
+    "ImpTimesSilPar019": {
+      "expected": "av loglog venstre parentes høyre parentes pluss pluss xy er lik, av loglogx av loglogy"
+    },
+    "ImpTimesSilPar020": {
+      "expected": "venstre parentes høyre parentes 1352 venstre parentes høyre parentes 7401"
+    },
+    "ImpTimesSilPar021": {
+      "expected": "2, venstre parentes, 3, venstre parentes, venstre parentes, 4 pluss 5, høyre parentes, pluss 6, høyre parentes, høyre parentes"
+    },
+    "ImpTimesSilPar022": {
+      "expected": "2, venstre parentes, 3, tote venstre parentes, dritte venstre parentes, 4 pluss 5, dritte høyre parentes, pluss 6, tote høyre parentes, høyre parentes"
+    },
+    "ImpTimesSilPar023": {
+      "expected": "2, venstre hakeparentes, 3, venstre parentes, venstre parentes, 4 pluss 5, høyre parentes, pluss 6, høyre parentes, høyre hakeparentes"
+    },
+    "ImpTimesSilPar024": {
+      "expected": "2, venstre hakeparentes, 3, venstre parentes, tote venstre parentes, 4 pluss 5, tote høyre parentes, pluss 6, høyre parentes, høyre hakeparentes"
+    },
+    "Extra001": {
+      "expected": "A er lik av hh venstre parentes høyre parentes pluss pluss b 1 b 22"
+    },
+    "Extra002": {
+      "expected": "A er lik av hh venstre parentes høyre parentes pluss pluss b 1 b 22"
+    },
+    "Extra003": {
+      "expected": "av aa venstre parentes høyre parentes 0 er lik 0 ganger a er lik 0"
+    },
+    "Extra004": {
+      "expected": "av aa venstre parentes høyre parentes 0 er lik 0 ganger a er lik 0"
+    },
+    "Extra005": {
+      "expected": "av aa venstre parentes høyre parentes minus minus 1 er lik minus a"
+    },
+    "Extra006": {
+      "expected": "av aa venstre parentes høyre parentes minus minus 1 er lik minus a"
+    },
+    "Extra010": {
+      "expected": "av BB venstre parentes høyre parentes ,2 ,6"
+    },
+    "Extra012": {
+      "expected": "av BB venstre parentes høyre parentes ,2 ,6"
+    },
+    "Extra014": {
+      "expected": "av pp venstre parentes høyre parentes w"
+    },
+    "Extra015": {
+      "expected": "av xx venstre parentes høyre parentes t er lik 2 t, pluss 4"
+    },
+    "Extra016": {
+      "expected": "av kk venstre parentes høyre parentes x er lik, venstre parentes, x pluss 3, høyre parentes, ganger, venstre parentes, x minus 5, høyre parentes"
+    },
+    "Extra018": {
+      "expected": "av TT venstre parentes høyre parentes t er lik Ts pluss, venstre parentes, T 0 minus Ts, høyre parentes, ganger e minus minus ganger ganger kt"
+    },
+    "Extra019": {
+      "expected": "V er lik l av ww venstre parentes høyre parentes 8"
+    }
+  }
+}

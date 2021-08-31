@@ -1,0 +1,379 @@
+{
+  "name": "BokmalMathspeakIssues2",
+  "locale": "nb",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_issues2.json",
+  "information": "Bokmal Mathspeak Issues 2.",
+  "domain": "mathspeak",
+  "active": "MathspeakIssuesBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "MathspeakRoots_0": {
+      "expected": "StartRot a SluttRot"
+    },
+    "MathspeakRoots_1": {
+      "expected": "RotIndeks 2 StartRot a SluttRot"
+    },
+    "MathspeakRoots_2": {
+      "expected": "RotIndeks 3 StartRot a SluttRot"
+    },
+    "MathspeakRoots_3": {
+      "expected": "RotIndeks 4 StartRot a SluttRot"
+    },
+    "MathspeakRoots_4": {
+      "expected": "Nøstet StartRot StartRot a SluttRot Nøstet SluttRot"
+    },
+    "MathspeakRoots_5": {
+      "expected": "tofach Nøstet StartRot Nøstet StartRot StartRot a SluttRot Nøstet SluttRot tofach Nøstet SluttRot"
+    },
+    "MathspeakRoots_6": {
+      "expected": "Nøstet RotIndeks 2 Nøstet StartRot RotIndeks 2 StartRot a SluttRot Nøstet SluttRot"
+    },
+    "MathspeakRoots_7": {
+      "expected": "tofach Nøstet RotIndeks 2 tofach Nøstet StartRot Nøstet RotIndeks 2 Nøstet StartRot RotIndeks 2 StartRot a SluttRot Nøstet SluttRot tofach Nøstet SluttRot"
+    },
+    "MathspeakRoots_8": {
+      "expected": "Nøstet RotIndeks 3 Nøstet StartRot RotIndeks 3 StartRot a SluttRot Nøstet SluttRot"
+    },
+    "MathspeakRoots_9": {
+      "expected": "tofach Nøstet RotIndeks 3 tofach Nøstet StartRot Nøstet RotIndeks 3 Nøstet StartRot RotIndeks 3 StartRot a SluttRot Nøstet SluttRot tofach Nøstet SluttRot"
+    },
+    "MathspeakRoots_10": {
+      "expected": "Nøstet RotIndeks 4 Nøstet StartRot RotIndeks 4 StartRot a SluttRot Nøstet SluttRot"
+    },
+    "MathspeakRoots_11": {
+      "expected": "tofach Nøstet RotIndeks 4 tofach Nøstet StartRot Nøstet RotIndeks 4 Nøstet StartRot RotIndeks 4 StartRot a SluttRot Nøstet SluttRot tofach Nøstet SluttRot"
+    },
+    "MathspeakRoots_12": {
+      "expected": "tofach Nøstet RotIndeks 2 tofach Nøstet StartRot Nøstet RotIndeks 3 Nøstet StartRot RotIndeks 4 StartRot a SluttRot Nøstet SluttRot tofach Nøstet SluttRot"
+    },
+    "MathspeakRoots_13": {
+      "expected": "tofach Nøstet RotIndeks 4 tofach Nøstet StartRot Nøstet RotIndeks 3 Nøstet StartRot RotIndeks 2 StartRot a SluttRot Nøstet SluttRot tofach Nøstet SluttRot"
+    },
+    "HtmlEntities_0": {
+      "expected": "er mindre enn"
+    },
+    "HtmlEntities_1": {
+      "expected": "er større enn"
+    },
+    "HtmlEntities_2": {
+      "expected": "n"
+    },
+    "HtmlEntities_3": {
+      "expected": "m"
+    },
+    "HtmlEntities_4": {
+      "expected": "n m"
+    },
+    "HtmlEntities_5": {
+      "expected": "n m"
+    },
+    "BinomialFromFrac_0": {
+      "expected": "venstre parentes høyre parentes nk"
+    },
+    "BinomialFromFrac_1": {
+      "expected": "venstre parentes høyre parentes nk"
+    },
+    "BinomialFromFrac_2": {
+      "expected": "venstre parentes høyre parentes nk"
+    },
+    "BinomialFromFrac_3": {
+      "expected": "venstre parentes Start Brøk n Over k Slutt Brøk høyre parentes"
+    },
+    "BinomialFromFrac_4": {
+      "expected": "venstre parentes Start Brøk n Over k Slutt Brøk høyre parentes"
+    },
+    "BinomialFromFrac_5": {
+      "expected": "venstre parentes Start Brøk n Over k Slutt Brøk høyre parentes"
+    },
+    "UnnecessarySpaces_0": {
+      "expected": "5"
+    },
+    "UnnecessarySpaces_1": {
+      "expected": "5"
+    },
+    "NegativeVulgarFraction_0": {
+      "expected": "eins halb minus fem attentel"
+    },
+    "NegativeVulgarFraction_1": {
+      "expected": "minus Start Brøk 5,2 Over a Slutt Brøk"
+    },
+    "NegativeVulgarFraction_2": {
+      "expected": "minus Start Brøk 5,2 Over 18 Slutt Brøk"
+    },
+    "TrivialStuff_0": {
+      "expected": "a er lik b"
+    },
+    "TrivialStuff_1": {
+      "expected": "sitat-tegn"
+    },
+    "TrivialStuff_2": {
+      "expected": "sitat-tegn x sitat-tegn"
+    },
+    "TrivialStuff_3": {
+      "expected": "apostrof"
+    },
+    "GermanFonts_0": {
+      "expected": "A"
+    },
+    "GermanFonts_1": {
+      "expected": "A"
+    },
+    "GermanFonts_2": {
+      "expected": "A"
+    },
+    "GermanFonts_3": {
+      "expected": "A"
+    },
+    "GermanFonts_4": {
+      "expected": "abc"
+    },
+    "GermanFonts_5": {
+      "expected": "ABC"
+    },
+    "GermanFonts_6": {
+      "expected": "ABC"
+    },
+    "OtherFonts_0": {
+      "expected": "m"
+    },
+    "OtherFonts_1": {
+      "expected": "m"
+    },
+    "OtherFonts_2": {
+      "expected": "m i"
+    },
+    "OtherFonts_3": {
+      "expected": "mi"
+    },
+    "OtherFonts_4": {
+      "expected": "30"
+    },
+    "OtherFonts_5": {
+      "expected": "3"
+    },
+    "OtherFonts_6": {
+      "expected": "30 grader"
+    },
+    "OtherFonts_7": {
+      "expected": "3 0 m A"
+    },
+    "Multiline_0": {
+      "expected": "ab"
+    },
+    "Multiline_1": {
+      "expected": "acbd"
+    },
+    "RelationsWithEmpty_0": {
+      "expected": "er mindre enn eller er lik 2"
+    },
+    "RelationsWithEmpty_1": {
+      "expected": "er lik 2 er lik"
+    },
+    "RelationsWithEmpty_2": {
+      "expected": "er mindre enn eller er lik 2 er lik"
+    },
+    "RelationsWithEmpty_3": {
+      "expected": "1 er mindre enn eller er lik er mindre enn eller er lik 2"
+    },
+    "EncloseGeneral": {
+      "expected": "a"
+    },
+    "EncloseLeftbar": {
+      "expected": "a"
+    },
+    "EncloseRightbar": {
+      "expected": "a"
+    },
+    "LatinMathfonts_0": {
+      "expected": "A"
+    },
+    "LatinMathfonts_1": {
+      "expected": "A"
+    },
+    "LatinMathfonts_2": {
+      "expected": "A"
+    },
+    "LatinMathfonts_3": {
+      "expected": "A"
+    },
+    "LatinMathfonts_4": {
+      "expected": "A"
+    },
+    "LatinMathfonts_5": {
+      "expected": "A"
+    },
+    "LatinMathfonts_6": {
+      "expected": "A"
+    },
+    "LatinMathfonts_7": {
+      "expected": "A"
+    },
+    "LatinMathfonts_8": {
+      "expected": "A"
+    },
+    "LatinMathfonts_9": {
+      "expected": "A"
+    },
+    "LatinMathfonts_10": {
+      "expected": "A"
+    },
+    "LatinMathfonts_11": {
+      "expected": "A"
+    },
+    "LatinMathfonts_12": {
+      "expected": "A"
+    },
+    "GreekMathfonts_0": {
+      "expected": "Alfa"
+    },
+    "GreekMathfonts_1": {
+      "expected": "Alfa"
+    },
+    "GreekMathfonts_2": {
+      "expected": "Alfa"
+    },
+    "GreekMathfonts_3": {
+      "expected": "Alfa"
+    },
+    "GreekMathfonts_4": {
+      "expected": "Alfa"
+    },
+    "Issue279_0": {
+      "expected": ""
+    },
+    "Issue279_1": {
+      "expected": "venstre parentes 3 punktum 1 punktum 10 høyre parentes"
+    },
+    "Issue320_0": {
+      "expected": "partiellderivert"
+    },
+    "Issue320_1": {
+      "expected": "x faktorisk"
+    },
+    "Issue320_2": {
+      "expected": "minus minus x"
+    },
+    "Issue320_3": {
+      "expected": "pluss pluss x"
+    },
+    "Issue320_4": {
+      "expected": "sinus sinus x"
+    },
+    "Issue320_5": {
+      "expected": "partiellderivert partiellderivert x"
+    },
+    "Issue320_6": {
+      "expected": "venstre parentes Start Brøk partiellderivert Superskript 2 Grunnlinje Over partiellderivert x Superskript 2 Grunnlinje Slutt Brøk pluss Start Brøk partiellderivert Superskript 2 Grunnlinje Over partiellderivert y Superskript 2 Grunnlinje Slutt Brøk høyre parentes vertikalstrek vertikalstrek ganger ganger pi venstre parentes høyre parentes pluss pluss x ganger ganger iy Superskript 2 Grunnlinje er lik 0"
+    },
+    "Prime_0": {
+      "expected": "x Superskript prim"
+    },
+    "Prime_1": {
+      "expected": "x Superskript dobbel prim"
+    },
+    "Prime_2": {
+      "expected": "x Superskript trippelprom"
+    },
+    "Prime_3": {
+      "expected": "x Superskript kvadruppel prim"
+    },
+    "Prime_4": {
+      "expected": "x Superskript prim"
+    },
+    "Prime_5": {
+      "expected": "x Superskript dobbel prim"
+    },
+    "Prime_6": {
+      "expected": "x Superskript prim"
+    },
+    "Prime_7": {
+      "expected": "x Superskript dobbelt prim"
+    },
+    "Prime_8": {
+      "expected": "x Superskript apostrof"
+    },
+    "Prime_9": {
+      "expected": "x Superskript dobbel prim"
+    },
+    "Prime_10": {
+      "expected": "x Superskript trippelprom"
+    },
+    "Prime_11": {
+      "expected": "x Superskript kvadruppel prim"
+    },
+    "Prime_12": {
+      "expected": "x Superskript apostrof apostrof apostrof apostrof apostrof"
+    },
+    "Prime_13": {
+      "expected": "x Superskript apostrof apostrof apostrof apostrof apostrof apostrof"
+    },
+    "Prime_14": {
+      "expected": "x Superskript dobbel prim"
+    },
+    "Prime_15": {
+      "expected": "x Superskript trippelprom"
+    },
+    "Prime_16": {
+      "expected": "x Superskript kvadruppel prim"
+    },
+    "Prime_17": {
+      "expected": "x Superskript apostrof apostrof apostrof apostrof apostrof"
+    },
+    "Prime_18": {
+      "expected": "x Superskript apostrof apostrof apostrof apostrof apostrof apostrof"
+    },
+    "LimBoth_0": {
+      "expected": "sum Underskript n Overskript 2 Sluttskript Underskript understrek Sluttskript Overskript tilde Sluttskript"
+    },
+    "LimBoth_1": {
+      "expected": "sum Underskript n Overskript 2 Sluttskript Underskript understrek Sluttskript Overskript tilde Sluttskript"
+    },
+    "LimBoth_2": {
+      "expected": "sum Underskript n Overskript 2 Sluttskript Underskript understrek Sluttskript Overskript tilde Sluttskript"
+    },
+    "LimBoth_3": {
+      "expected": "sum Underskript n Overskript 2 Sluttskript"
+    },
+    "LimBoth_4": {
+      "expected": "sum Underskript n Overskript 2 Sluttskript a"
+    },
+    "LimUpper_0": {
+      "expected": "sum Overskript n Sluttskript"
+    },
+    "LimUpper_1": {
+      "expected": "sum Overskript n Sluttskript a"
+    },
+    "LimUpper_2": {
+      "expected": "sum Overskript n Sluttskript"
+    },
+    "LimUpper_3": {
+      "expected": "sum Overskript n Sluttskript a"
+    },
+    "LimLower_0": {
+      "expected": "sum Underskript n Sluttskript"
+    },
+    "LimLower_1": {
+      "expected": "sum Underskript n Sluttskript a"
+    },
+    "LimLower_2": {
+      "expected": "sum Underskript n Sluttskript"
+    },
+    "LimLower_3": {
+      "expected": "sum Underskript n Sluttskript a"
+    },
+    "Issue_442_0": {
+      "expected": "9 deletegn 3 er ikke lik 9 gangetegn 3"
+    },
+    "Issue_442_1": {
+      "expected": "9 deletegn 3"
+    },
+    "Issue_442_2": {
+      "expected": "9 skråstrek 3 er ikke lik 9 gangetegn 3"
+    },
+    "Issue_442_3": {
+      "expected": "9 skråstrek 3"
+    }
+  }
+}

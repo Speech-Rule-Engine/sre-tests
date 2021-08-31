@@ -1,0 +1,73 @@
+{
+  "_comment0_": " Tests from the issues discovered in ClearspeakEnglish rules.",
+  "name": "BokmalClearspeakIssues",
+  "locale": "nb",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_issues.json",
+  "information": "Bokmal Clearspeak Issues tests.",
+  "active": "ClearspeakIssuesBokmal",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Issue230_1": {
+      "expected": ""
+    },
+    "Issue230_2": {
+      "expected": ""
+    },
+    "IssueNumbers_1": {
+      "expected": "t 2 e 4"
+    },
+    "IssueNumbers_2": {
+      "expected": "talltegn FF 0000"
+    },
+    "IssueNumbers_3": {
+      "expected": "talltegn FFFF"
+    },
+    "Issue320_1": {
+      "expected": "partiellderivert"
+    },
+    "Issue320_2": {
+      "expected": "x faktorisk"
+    },
+    "Issue320_3": {
+      "expected": "minus minus x"
+    },
+    "Issue320_4": {
+      "expected": "pluss pluss x"
+    },
+    "Issue320_5": {
+      "expected": "av sinsin av sinsinx"
+    },
+    "Issue320_6": {
+      "expected": "partiellderivert partiellderivert x"
+    },
+    "Issue320_7": {
+      "expected": "venstre parentes, partiellderivert 2 partiellderivert partiellderivert x 2 pluss partiellderivert 2 partiellderivert partiellderivert y 2, høyre parentes, ganger vertikalstrek vertikalstrek ganger ganger pi venstre parentes høyre parentes pluss pluss x ganger ganger iy 2 er lik 0"
+    },
+    "Issue301_1": {
+      "expected": "4 mm"
+    },
+    "Issue301_2": {
+      "expected": "1 mm"
+    },
+    "Issue301_3": {
+      "expected": "4 mm"
+    },
+    "Issue301_4": {
+      "expected": "1 mm"
+    },
+    "Issue_442_0": {
+      "expected": "9 deletegn 3 er ikke lik 9 gangetegn 3"
+    },
+    "Issue_442_1": {
+      "expected": "9 deletegn 3"
+    },
+    "Issue_442_2": {
+      "expected": "9 skråstrek 3 er ikke lik 9 gangetegn 3"
+    },
+    "Issue_442_3": {
+      "expected": "9 skråstrek 3"
+    }
+  }
+}

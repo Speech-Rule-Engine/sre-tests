@@ -94,7 +94,11 @@ export function addToFile(file: string, expected: JsonTests) {
   let oldJson: JsonFile = TestUtil.loadJson(filename);
   let oldTests = oldJson.tests as JsonTests;
   for (let key of Object.keys(expected)) {
-    Object.assign(oldTests[key], expected[key]);
+    if (oldTests[key]) {
+      Object.assign(oldTests[key], expected[key]);
+    } else {
+      oldTests[key] = expected[key];
+    }
   }
   TestUtil.saveJson(filename, oldJson);
 }
