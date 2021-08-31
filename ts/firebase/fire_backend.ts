@@ -261,7 +261,7 @@ export function updateSymbolMappings(tests: JsonTests, file: string) {
       new Array(4 - unicode.length + 1).join('0') + unicode;
     result[filler.toUpperCase()] = value.expected;
   }
-  let env = path.join(process.env['SRE_JSON_PATH'], '../..', 'src/mathmaps');
+  let env = path.join(process.env['SRE_JSON_PATH'], '../..', 'mathmaps');
   let mathmaps = path.join(
     env, path.dirname(file),
     path.basename(file).replace(/^default_characters_/, '').replace(/on$/, ''));
