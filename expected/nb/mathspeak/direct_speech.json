@@ -10,7 +10,7 @@
   "compare": true,
   "tests": {
     "AriaLabels_0": {
-      "expected": "A C Overskript line Sluttskript"
+      "expected": "stor bokstav A stor bokstav C Overskript line Sluttskript"
     },
     "AriaLabels_1": {
       "expected": "derivative of x is equal to sigma left parenthesis y minus x right parenthesis"
@@ -19,13 +19,13 @@
       "expected": "A C under line"
     },
     "AltText_1": {
-      "expected": "A C Overskript line Sluttskript"
+      "expected": "stor bokstav A stor bokstav C Overskript line Sluttskript"
     },
     "ExactSpeech_0": {
       "expected": "A C under line"
     },
     "ExactSpeech_1": {
-      "expected": "A C Overskript line Sluttskript"
+      "expected": "stor bokstav A stor bokstav C Overskript line Sluttskript"
     },
     "MglyphTokens_0": {
       "expected": "my glyph"
@@ -61,7 +61,7 @@
       "expected": "23braid pluss 132braid er lik 13braid"
     },
     "MglyphGeneral_1": {
-      "expected": "N M Subskript 1 subsettt av mfin"
+      "expected": "stor bokstav N stor bokstav M Subskript 1 subsettt av mfin"
     }
   }
 }

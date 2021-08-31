@@ -61,7 +61,7 @@
       "expected": "Start Start Start Brøk b 1 Over Over Over a 1 pluss Start Start Brøk b 2 Over Over a 2 pluss Start Brøk b 3 Over a 3 pluss prikk prikk prikk Slutt Brøk Slutt Slutt Brøk Slutt Slutt Slutt Brøk"
     },
     "AbstrContinuedFraction_sbrief": {
-      "expected": "NøsttofachBrøk b 1 NøsttofachOver a 1 pluss NøstBrøk b 2 NøstOver a 2 pluss Brøk b 3 Over a 3 pluss prikk prikk prikk SluttBrøk NøstSluttBrøk NøsttofachSluttBrøk"
+      "expected": "NøstTo gangerBrøk b 1 NøstTo gangerOver a 1 pluss NøstBrøk b 2 NøstOver a 2 pluss Brøk b 3 Over a 3 pluss prikk prikk prikk SluttBrøk NøstSluttBrøk NøstTo gangerSluttBrøk"
     },
     "AbstrDeterminant_default": {
       "expected": "vertikalstrek vertikalstrek abcd"
@@ -109,13 +109,13 @@
       "expected": "a skråstrek b"
     },
     "AbstrIntegral_default": {
-      "expected": "konturintegral E prikk d l"
+      "expected": "konturintegral stor bokstav E prikk d l"
     },
     "AbstrIntegral_brief": {
-      "expected": "konturintegral E prikk d l"
+      "expected": "konturintegral stor bokstav E prikk d l"
     },
     "AbstrIntegral_sbrief": {
-      "expected": "konturintegral E prikk d l"
+      "expected": "konturintegral stor bokstav E prikk d l"
     },
     "AbstrLim_default": {
       "expected": "grense"
@@ -217,13 +217,13 @@
       "expected": "Indeks 3 Rot x SluttRot"
     },
     "AbstrRootNested_default": {
-      "expected": "Nøstet RotIndeks 3 Nøstet StartRot RotIndeks 4 StartRot x SluttRot pluss x Nøstet SluttRot"
+      "expected": "NøstetRotIndeks 3 NøstetStartRot RotIndeks 4 StartRot x SluttRot pluss x NøstetSluttRot"
     },
     "AbstrRootNested_brief": {
-      "expected": "Nøst RotIndeks 3 Nøst StartRot RotIndeks 4 StartRot x SluttRot pluss x Nøst SluttRot"
+      "expected": "NøstRotIndeks 3 NøstStartRot RotIndeks 4 StartRot x SluttRot pluss x NøstSluttRot"
     },
     "AbstrRootNested_sbrief": {
-      "expected": "Nøst Indeks 3 Nøst Rot Indeks 4 Rot x SluttRot pluss x Nøst SluttRot"
+      "expected": "NøstIndeks 3 NøstRot Indeks 4 Rot x SluttRot pluss x NøstSluttRot"
     },
     "AbstrRow_default": {
       "expected": "1. Row ab"
@@ -253,13 +253,13 @@
       "expected": "Rot 2 SluttRot"
     },
     "AbstrSqrtNested_default": {
-      "expected": "Nøstet StartRot 2 StartRot 2 SluttRot Nøstet SluttRot"
+      "expected": "NøstetStartRot 2 StartRot 2 SluttRot NøstetSluttRot"
     },
     "AbstrSqrtNested_brief": {
-      "expected": "Nøst StartRot 2 StartRot 2 SluttRot Nøst SluttRot"
+      "expected": "NøstStartRot 2 StartRot 2 SluttRot NøstSluttRot"
     },
     "AbstrSqrtNested_sbrief": {
-      "expected": "Nøst Rot 2 Rot 2 SluttRot Nøst SluttRot"
+      "expected": "NøstRot 2 Rot 2 SluttRot NøstSluttRot"
     },
     "AbstrSquarematrix_default": {
       "expected": "venstre hakeparentes høyre hakeparentes abcd"
