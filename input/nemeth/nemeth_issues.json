@@ -1,0 +1,54 @@
+{
+  "domain": "default",
+  "modality": "braille",
+  "tests": {
+    "bar_0": {
+      "input": "<mover><mrow><mi>z</mi><mo>+</mo><mi>r</mi></mrow><mo>&#x2015;</mo></mover>"
+    },
+    "bar_1": {
+      "input": "<mover><mrow><mi>z</mi><mo>+</mo><mi>r</mi></mrow><mo>&#x00AF;</mo></mover>"
+    },
+    "bar_2": {
+      "input": "<mover><mover><mrow><mi>z</mi><mo>+</mo><mi>r</mi></mrow><mo>&#x00AF;</mo></mover><mo>&#x00AF;</mo></mover>"
+    },
+    "bar_3": {
+      "input": "<mover><mover><mrow><mi>z</mi><mo>+</mo><mi>r</mi></mrow><mo>&#x2015;</mo></mover><mo>&#x00AF;</mo></mover>"
+    },
+    "bar_4": {
+      "input": "<mover><mover><mrow><mi>z</mi><mo>+</mo><mi>r</mi></mrow><mo>&#x00AF;</mo></mover><mo>&#x2015;</mo></mover>"
+    },
+    "bar_5": {
+      "input": "<mover><mover><mrow><mi>z</mi><mo>+</mo><mi>r</mi></mrow><mo>&#x2015;</mo></mover><mo>&#x2015;</mo></mover>"
+    },
+    "bar_6": {
+      "input": "<mover><mi>z</mi><mo>&#x2015;</mo></mover>"
+    },
+    "bar_7": {
+      "input": "<mover><mi>z</mi><mo>&#x00AF;</mo></mover>"
+    },
+    "bar_8": {
+      "input": "<munder><mrow><mi>z</mi><mo>+</mo><mi>r</mi></mrow><mo>&#x2015;</mo></munder>"
+    },
+    "bar_9": {
+      "input": "<munder><mrow><mi>z</mi><mo>+</mo><mi>r</mi></mrow><mo>&#x00AF;</mo></munder>"
+    },
+    "bar_10": {
+      "input": "<munder><munder><mrow><mi>z</mi><mo>+</mo><mi>r</mi></mrow><mo>&#x00AF;</mo></munder><mo>&#x00AF;</mo></munder>"
+    },
+    "bar_11": {
+      "input": "<munder><munder><mrow><mi>z</mi><mo>+</mo><mi>r</mi></mrow><mo>&#x2015;</mo></munder><mo>&#x00AF;</mo></munder>"
+    },
+    "bar_12": {
+      "input": "<munder><munder><mrow><mi>z</mi><mo>+</mo><mi>r</mi></mrow><mo>&#x00AF;</mo></munder><mo>&#x2015;</mo></munder>"
+    },
+    "bar_13": {
+      "input": "<munder><munder><mrow><mi>z</mi><mo>+</mo><mi>r</mi></mrow><mo>&#x2015;</mo></munder><mo>&#x2015;</mo></munder>"
+    },
+    "bar_14": {
+      "input": "<munder><mi>z</mi><mo>&#x2015;</mo></munder>"
+    },
+    "bar_15": {
+      "input": "<munder><mi>z</mi><mo>&#x00AF;</mo></munder>"
+    }
+  }
+}

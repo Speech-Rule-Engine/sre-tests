@@ -1,13 +1,13 @@
 {
-  "name": "EnglishClearspeakFunction",
-  "locale": "en",
+  "name": "KoreanClearspeakFunction",
+  "locale": "ko",
   "domain": "clearspeak",
   "style": "default",
-  "active": "ClearspeakSymbolsEnglish",
+  "active": "ClearspeakSymbolsKorean",
   "type": "function",
   "factory": "symbol",
   "base": "input/common/functions.json",
-  "information": "English Clearspeak Function tests.",
+  "information": "Korean Clearspeak Function tests.",
   "tests": {
     "deg": {
       "expected": "degree"

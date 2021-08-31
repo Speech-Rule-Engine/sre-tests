@@ -153,13 +153,13 @@ export function showNonExpected(loc: string, exclude: string[] = []) {
     console.info(`${file} ${key}:`);
     console.info(value);
   }
-  console.log('Same');
+  console.info('Same');
   for (let [file, key, value, base] of same) {
     console.info(`${file} ${key}:`);
     console.info(value);
     console.info(base);
   }
-  console.log('Different');
+  console.info('Different');
   for (let [file, key, value, base] of different) {
     console.info(`${file} ${key}:`);
     console.info(value);
@@ -175,6 +175,10 @@ function siftNonExpected(nonExpected: [string, string, JsonTest][]) {
     let json = factoryget(file);
     json.loadBase();
     let base = json.baseTests.tests as JsonTests;
+    if (!base) {
+      missing.push([file, key, value]);
+      continue;
+    }
     let baseTest = base[key];
     if (typeof baseTest === 'undefined') {
       missing.push([file, key, value]);

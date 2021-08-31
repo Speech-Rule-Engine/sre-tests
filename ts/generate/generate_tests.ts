@@ -18,12 +18,11 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {SemanticTree} from '../../speech-rule-engine/js/semantic_tree/semantic_tree';
-import {SemanticNode} from '../../speech-rule-engine/js/semantic_tree/semantic_node';
-import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
-import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
 import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
-
+import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
+ import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
+ import {SemanticNode} from '../../speech-rule-engine/js/semantic_tree/semantic_node';
+ import {SemanticTree} from '../../speech-rule-engine/js/semantic_tree/semantic_tree';
 
 import * as tu from '../base/test_util';
 import * as TestFactory from '../classes/test_factory';
@@ -164,6 +163,87 @@ export function transformTestsFile(file: string,
   let json = tu.TestUtil.loadJson(file) as tu.JsonTest[];
   transformTests(json, transformers);
   tu.TestUtil.saveJson(file, json);
+}
+
+/**
+ * Triples tests in a json file for all three Mathspeak preferences.
+ *
+ * @param input Input filename.
+ * @param output Output filename.
+ */
+export function generateMathspeakTest(input: string, output: string) {
+  let json = tu.TestUtil.loadJson(input);
+  let tests = json.tests;
+  json.tests = {};
+  for (let [key, entry] of Object.entries(tests)) {
+    json.tests[`${key}_default`] =
+      Object.assign({'preference': 'default'}, entry);
+    json.tests[`${key}_brief`] =
+      Object.assign({'preference': 'brief'}, entry);
+    json.tests[`${key}_sbrief`] =
+      Object.assign({'preference': 'sbrief'}, entry);
+  }
+  tu.TestUtil.saveJson(output, json);
+}
+
+/**
+ * Duplicates default tests for a new preference.
+ *
+ * @param input Input filename.
+ * @param preference The preference string.
+ */
+export function generatePreferenceTest(input: string, preference: string) {
+  if (!preference) {
+    return;
+  }
+  let filename = tu.TestUtil.fileExists(input, tu.TestPath.INPUT);
+  let json = tu.TestUtil.loadJson(filename);
+  let tests = json.tests as tu.JsonTests;
+  for (let [key, entry] of Object.entries(tests)) {
+    if (key.match(/_default$/)) {
+      let newKey = key.replace(/default$/, preference);
+      if (tests[newKey]) {
+        continue;
+      }
+      let newEntry = Object.assign({}, entry);
+      newEntry.preference = preference;
+      tests[newKey] = newEntry;
+    }
+  }
+  tu.TestUtil.saveJson(filename, json);
+}
+
+/**
+ * Generates a list of tests to be excluded by preference ending.
+ *
+ * @param input Input filename.
+ * @param preferences The list of preference strings.
+ * @param output An optional output file where the exclusion list will be
+ *    updated.
+ */
+export function generateExclusionList(input: string, preferences: string[],
+                                      output: string = '') {
+  let filename = tu.TestUtil.fileExists(input, tu.TestPath.INPUT);
+  let json = tu.TestUtil.loadJson(filename);
+  let result = [];
+  for (let pref of preferences) {
+    for (let key of Object.keys(json.tests)) {
+      if (key.match(new RegExp(`_${pref}$`))) {
+        result.push(key);
+      }
+    }
+  }
+  if (!output) {
+    return result;
+  }
+  let outfile = tu.TestUtil.fileExists(output, tu.TestPath.EXPECTED);
+  if (!outfile) {
+    return result;
+  }
+  let outjson = tu.TestUtil.loadJson(outfile);
+  outjson.exclude = result;
+  tu.TestUtil.saveJson(outfile, outjson);
+  return result;
 }
 
 /* ********************************************************** */

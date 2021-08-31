@@ -261,10 +261,10 @@
       "expected": "a subíndice 0 línea base más empezar empezar empezar empezar fracción 1 entre entre entre entre a subíndice 1 línea base más empezar empezar empezar fracción 1 entre entre entre a subíndice 2 línea base más empezar empezar fracción 1 entre entre puntos suspensivos más empezar fracción 1 entre a subíndice n línea base finalizar fracción finalizar finalizar fracción finalizar finalizar finalizar fracción finalizar finalizar finalizar finalizar fracción"
     },
     "Sample_7_3_2_brief": {
-      "expected": "a sub 0 más empezar empezar empezar empezar frac 1 entre entre entre entre a sub 1 más empezar empezar empezar frac 1 entre entre entre a sub 2 más empezar empezar frac 1 entre entre puntos suspensivos más empezar frac 1 entre a sub n finalizar frac finalizar finalizar frac finalizar finalizar finalizar frac finalizar finalizar finalizar finalizar frac"
+      "expected": "a sub 0 base más empezar empezar empezar empezar frac 1 entre entre entre entre a sub 1 base más empezar empezar empezar frac 1 entre entre entre a sub 2 base más empezar empezar frac 1 entre entre puntos suspensivos más empezar frac 1 entre a sub n base finalizar frac finalizar finalizar frac finalizar finalizar finalizar frac finalizar finalizar finalizar finalizar frac"
     },
     "Sample_7_3_2_sbrief": {
-      "expected": "a sub 0 más frac 1 entre a sub 1 más frac 1 entre a sub 2 más frac 1 entre puntos suspensivos más frac 1 entre a sub n"
+      "expected": "a sub 0 base más frac 1 entre a sub 1 base más frac 1 entre a sub 2 base más frac 1 entre puntos suspensivos más frac 1 entre a sub n base"
     },
     "Sample_7_4_1_default": {
       "expected": "empezar fracción 1 entre 2 finalizar fracción más empezar fracción 2 entre 2 finalizar fracción más empezar fracción 3 entre 2 finalizar fracción más empezar fracción 4 entre 2 finalizar fracción más puntos suspensivos igual sumatorio bajoíndice n igual 1 sobreíndice infinito finalizar índices empezar fracción n entre 2 finalizar fracción"
@@ -306,10 +306,10 @@
       "expected": "a subíndice 0 línea base más fracción continua b subíndice 1 línea base entre a subíndice 1 línea base más empezar fracción b subíndice 2 línea base entre a subíndice 2 línea base más empezar fracción b subíndice 3 línea base entre a subíndice 3 línea base más puntos suspensivos igual a subíndice 0 línea base más empezar fracción b subíndice 1 línea base entre a subíndice 1 línea base finalizar fracción más empezar fracción b subíndice 2 línea base entre a subíndice 2 línea base finalizar fracción más puntos suspensivos"
     },
     "Sample_7_6_1_brief": {
-      "expected": "a sub 0 más frac continua b sub 1 entre a sub 1 más empezar frac b sub 2 entre a sub 2 más empezar frac b sub 3 entre a sub 3 más puntos suspensivos igual a sub 0 más empezar frac b sub 1 entre a sub 1 finalizar frac más empezar frac b sub 2 entre a sub 2 finalizar frac más puntos suspensivos"
+      "expected": "a sub 0 base más frac continua b sub 1 base entre a sub 1 base más empezar frac b sub 2 base entre a sub 2 base más empezar frac b sub 3 base entre a sub 3 base más puntos suspensivos igual a sub 0 base más empezar frac b sub 1 base entre a sub 1 base finalizar frac más empezar frac b sub 2 base entre a sub 2 base finalizar frac más puntos suspensivos"
     },
     "Sample_7_6_1_sbrief": {
-      "expected": "a sub 0 más frac continua b sub 1 entre a sub 1 más frac b sub 2 entre a sub 2 más frac b sub 3 entre a sub 3 más puntos suspensivos igual a sub 0 más frac b sub 1 entre a sub 1 más frac b sub 2 entre a sub 2 más puntos suspensivos"
+      "expected": "a sub 0 base más frac continua b sub 1 base entre a sub 1 base más frac b sub 2 base entre a sub 2 base más frac b sub 3 base entre a sub 3 base más puntos suspensivos igual a sub 0 base más frac b sub 1 base entre a sub 1 base más frac b sub 2 base entre a sub 2 base más puntos suspensivos"
     },
     "Sample_8_1_1_default": {
       "expected": "x al cubo más 6 x al cuadrado menos x igual 30"
@@ -369,28 +369,28 @@
       "expected": "mayúscula T subíndice n menos 1 línea base más 5 igual 0"
     },
     "Sample_8_3_2_brief": {
-      "expected": "mayúscula T sub n menos 1 más 5 igual 0"
+      "expected": "mayúscula T sub n menos 1 base más 5 igual 0"
     },
     "Sample_8_3_2_sbrief": {
-      "expected": "mayúscula T sub n menos 1 más 5 igual 0"
+      "expected": "mayúscula T sub n menos 1 base más 5 igual 0"
     },
     "Sample_8_3_3_default": {
       "expected": "x superíndice m más n línea base igual x superíndice m línea base x superíndice n"
     },
     "Sample_8_3_3_brief": {
-      "expected": "x sup m más n igual x sup m x sup n"
+      "expected": "x sup m más n base igual x sup m base x sup n"
     },
     "Sample_8_3_3_sbrief": {
-      "expected": "x sup m más n igual x sup m x sup n"
+      "expected": "x sup m más n base igual x sup m base x sup n"
     },
     "Sample_8_4_1_default": {
       "expected": "x superíndice a super subíndice n superíndice más a super subíndice n menos 1"
     },
     "Sample_8_4_1_brief": {
-      "expected": "x sup a sup sub n más a sup sub n menos 1"
+      "expected": "x sup a sup sub n sup más a sup sub n menos 1"
     },
     "Sample_8_4_1_sbrief": {
-      "expected": "x sup a sup sub n más a sup sub n menos 1"
+      "expected": "x sup a sup sub n sup más a sup sub n menos 1"
     },
     "Sample_8_4_2_default": {
       "expected": "x superíndice a super subíndice b"
@@ -414,19 +414,19 @@
       "expected": "y superíndice a super superíndice b super super subíndice c línea base no es igual a y superíndice a super superíndice b superíndice c"
     },
     "Sample_8_4_4_brief": {
-      "expected": "y sup a sup sup b sup sup sub c no es igual a y sup a sup sup b c"
+      "expected": "y sup a sup sup b sup sup sub c base no es igual a y sup a sup sup b sup c"
     },
     "Sample_8_4_4_sbrief": {
-      "expected": "y sup a sup sup b sup sup sub c no es igual a y sup a sup sup b c"
+      "expected": "y sup a sup sup b sup sup sub c base no es igual a y sup a sup sup b sup c"
     },
     "Sample_8_4_5_default": {
       "expected": "y superíndice a super super subíndice c super superíndice b"
     },
     "Sample_8_4_5_brief": {
-      "expected": "y sup a sup sup sub c b"
+      "expected": "y sup a sup sup sub c sup sup b"
     },
     "Sample_8_4_5_sbrief": {
-      "expected": "y sup a sup sup sub c b"
+      "expected": "y sup a sup sup sub c sup sup b"
     },
     "Sample_8_4_5Short_default": {
       "expected": "y superíndice a super super subíndice c"
@@ -450,10 +450,10 @@
       "expected": "y subíndice a sub sub superíndice c sub subíndice b"
     },
     "Sample_8_4_5InvShort_brief": {
-      "expected": "y sub a sub sub sup c b"
+      "expected": "y sub a sub sub sup c sub sub b"
     },
     "Sample_8_4_5InvShort_sbrief": {
-      "expected": "y sub a sub sub sup c b"
+      "expected": "y sub a sub sub sup c sub sub b"
     },
     "Sample_8_4_6_default": {
       "expected": "x superíndice a super superíndice b"
@@ -477,10 +477,10 @@
       "expected": "mayúscula T superíndice paréntesis izquierdo x super superíndice a superíndice más y super superíndice b superíndice paréntesis derecho"
     },
     "Sample_8_4_8_brief": {
-      "expected": "mayúscula T sup paréntesis izquierdo x sup sup a más y sup sup b paréntesis derecho"
+      "expected": "mayúscula T sup paréntesis izquierdo x sup sup a sup más y sup sup b sup paréntesis derecho"
     },
     "Sample_8_4_8_sbrief": {
-      "expected": "mayúscula T sup paréntesis izquierdo x sup sup a más y sup sup b paréntesis derecho"
+      "expected": "mayúscula T sup paréntesis izquierdo x sup sup a sup más y sup sup b sup paréntesis derecho"
     },
     "Sample_8_5_1_default": {
       "expected": "x subíndice 1"
@@ -525,10 +525,10 @@
       "expected": "4 mayúscula F e más 3 mayúscula O subíndice 2 línea base flecha derecha 2 mayúscula F e subíndice 2 línea base mayúscula O subíndice 3"
     },
     "Sample_8_5_5_brief": {
-      "expected": "4 mayúscula F e más 3 mayúscula O sub 2 flecha derecha 2 mayúscula F e sub 2 mayúscula O sub 3"
+      "expected": "4 mayúscula F e más 3 mayúscula O sub 2 base flecha derecha 2 mayúscula F e sub 2 base mayúscula O sub 3"
     },
     "Sample_8_5_5_sbrief": {
-      "expected": "4 mayúscula F e más 3 mayúscula O sub 2 flecha derecha 2 mayúscula F e sub 2 mayúscula O sub 3"
+      "expected": "4 mayúscula F e más 3 mayúscula O sub 2 base flecha derecha 2 mayúscula F e sub 2 base mayúscula O sub 3"
     },
     "Sample_8_5_6_default": {
       "expected": "a subíndice 2 coma 3"
@@ -543,19 +543,19 @@
       "expected": "mayúscula T subíndice n sub subíndice 1 subíndice más n sub subíndice 0"
     },
     "Sample_8_5_7_brief": {
-      "expected": "mayúscula T sub n sub sub 1 más n sub sub 0"
+      "expected": "mayúscula T sub n sub sub 1 sub más n sub sub 0"
     },
     "Sample_8_5_7_sbrief": {
-      "expected": "mayúscula T sub n sub sub 1 más n sub sub 0"
+      "expected": "mayúscula T sub n sub sub 1 sub más n sub sub 0"
     },
     "Sample_8_5_8_default": {
       "expected": "logaritmo subíndice 2 línea base paréntesis izquierdo x paréntesis derecho igual empezar fracción logaritmo subíndice 10 línea base paréntesis izquierdo x paréntesis derecho entre logaritmo subíndice 10 línea base paréntesis izquierdo 2 paréntesis derecho finalizar fracción"
     },
     "Sample_8_5_8_brief": {
-      "expected": "logaritmo sub 2 paréntesis izquierdo x paréntesis derecho igual empezar frac logaritmo sub 10 paréntesis izquierdo x paréntesis derecho entre logaritmo sub 10 paréntesis izquierdo 2 paréntesis derecho finalizar frac"
+      "expected": "logaritmo sub 2 base paréntesis izquierdo x paréntesis derecho igual empezar frac logaritmo sub 10 base paréntesis izquierdo x paréntesis derecho entre logaritmo sub 10 base paréntesis izquierdo 2 paréntesis derecho finalizar frac"
     },
     "Sample_8_5_8_sbrief": {
-      "expected": "logaritmo sub 2 paréntesis izquierdo x paréntesis derecho igual frac logaritmo sub 10 paréntesis izquierdo x paréntesis derecho entre logaritmo sub 10 paréntesis izquierdo 2 paréntesis derecho"
+      "expected": "logaritmo sub 2 base paréntesis izquierdo x paréntesis derecho igual frac logaritmo sub 10 base paréntesis izquierdo x paréntesis derecho entre logaritmo sub 10 base paréntesis izquierdo 2 paréntesis derecho"
     },
     "Sample_8_5_9_default": {
       "expected": "mayúscula Phi subíndice 5"
@@ -615,10 +615,10 @@
       "expected": "mayúscula T subíndice 0 línea base al cuadrado"
     },
     "SampleSimpleSquare_2_brief": {
-      "expected": "mayúscula T sub 0 al cuadrado"
+      "expected": "mayúscula T sub 0 base al cuadrado"
     },
     "SampleSimpleSquare_2_sbrief": {
-      "expected": "mayúscula T sub 0 al cuadrado"
+      "expected": "mayúscula T sub 0 base al cuadrado"
     },
     "SampleSimpleCube_default": {
       "expected": "mayúscula T subíndice 0 al cubo"
@@ -633,10 +633,10 @@
       "expected": "mayúscula T subíndice 0 línea base al cubo"
     },
     "SampleSimpleCube_2_brief": {
-      "expected": "mayúscula T sub 0 al cubo"
+      "expected": "mayúscula T sub 0 base al cubo"
     },
     "SampleSimpleCube_2_sbrief": {
-      "expected": "mayúscula T sub 0 al cubo"
+      "expected": "mayúscula T sub 0 base al cubo"
     },
     "Sample_8_8_2_default": {
       "expected": "mayúscula T subíndice n menos 1 superíndice 2"
@@ -669,10 +669,10 @@
       "expected": "rho prima igual rho prima subíndice más línea base más rho prima subíndice menos"
     },
     "Sample_8_10_1_brief": {
-      "expected": "rho prima igual rho prima sub más más rho prima sub menos"
+      "expected": "rho prima igual rho prima sub más base más rho prima sub menos"
     },
     "Sample_8_10_1_sbrief": {
-      "expected": "rho prima igual rho prima sub más más rho prima sub menos"
+      "expected": "rho prima igual rho prima sub más base más rho prima sub menos"
     },
     "Sample_8_10_2_default": {
       "expected": "x prima subíndice 10"
@@ -705,37 +705,37 @@
       "expected": "x subíndice a línea base superíndice b"
     },
     "Sample_8_12_1_brief": {
-      "expected": "x sub a sup b"
+      "expected": "x sub a base sup b"
     },
     "Sample_8_12_1_sbrief": {
-      "expected": "x sub a sup b"
+      "expected": "x sub a base sup b"
     },
     "Sample_8_12_2_default": {
       "expected": "x superíndice b línea base subíndice a"
     },
     "Sample_8_12_2_brief": {
-      "expected": "x sup b sub a"
+      "expected": "x sup b base sub a"
     },
     "Sample_8_12_2_sbrief": {
-      "expected": "x sup b sub a"
+      "expected": "x sup b base sub a"
     },
     "Sample_8_13_1_default": {
       "expected": "logaritmo superíndice 4 superíndice b línea base x"
     },
     "Sample_8_13_1_brief": {
-      "expected": "logaritmo sup 4 sup b x"
+      "expected": "logaritmo sup 4 sup b base x"
     },
     "Sample_8_13_1_sbrief": {
-      "expected": "logaritmo sup 4 sup b x"
+      "expected": "logaritmo sup 4 sup b base x"
     },
     "Sample_8_13_2_default": {
       "expected": "mayúscula T subíndice n subíndice a línea base y"
     },
     "Sample_8_13_2_brief": {
-      "expected": "mayúscula T sub n sub a y"
+      "expected": "mayúscula T sub n sub a base y"
     },
     "Sample_8_13_2_sbrief": {
-      "expected": "mayúscula T sub n sub a y"
+      "expected": "mayúscula T sub n sub a base y"
     },
     "Sample_9_1_1_default": {
       "expected": "empezar raíz cuadrada 2 finalizar raíz cuadrada"
@@ -770,10 +770,10 @@
       "expected": "índice de raíz n empezar raíz x superíndice m línea base finalizar raíz igual paréntesis izquierdo índice de raíz n empezar raíz x finalizar raíz paréntesis derecho superíndice m línea base igual x superíndice empezar fracción m entre n finalizar fracción línea base coma x mayor que 0"
     },
     "Sample_9_2_2_brief": {
-      "expected": "índice de raíz n empezar raíz x sup m finalizar raíz igual paréntesis izquierdo índice de raíz n empezar raíz x finalizar raíz paréntesis derecho sup m igual x sup empezar frac m entre n finalizar frac coma x mayor que 0"
+      "expected": "índice de raíz n empezar raíz x sup m base finalizar raíz igual paréntesis izquierdo índice de raíz n empezar raíz x finalizar raíz paréntesis derecho sup m base igual x sup empezar frac m entre n finalizar frac base coma x mayor que 0"
     },
     "Sample_9_2_2_sbrief": {
-      "expected": "n raíz x sup m finalizar raíz igual paréntesis izquierdo n raíz x finalizar raíz paréntesis derecho sup m igual x sup frac m entre n coma x mayor que 0"
+      "expected": "n raíz x sup m base finalizar raíz igual paréntesis izquierdo n raíz x finalizar raíz paréntesis derecho sup m base igual x sup frac m entre n base coma x mayor que 0"
     },
     "Sample_9_2_3_default": {
       "expected": "empezar raíz cúbica x finalizar raíz cúbica igual x superíndice empezar fracción 1 entre 3 finalizar fracción"
@@ -806,10 +806,10 @@
       "expected": "x superíndice e menos 2 línea base igual empezar raíz cuadrada x empezar raíz cúbica x empezar raíz a la cuarta x empezar raíz a la quinta x puntos suspensivos finalizar raíz a la quinta finalizar raíz a la cuarta finalizar raíz cúbica finalizar raíz cuadrada coma x perteneciente a negrita de pizarra mayúscula R"
     },
     "Sample_9_3_3_brief": {
-      "expected": "x sup e menos 2 igual empezar raíz cuadrada x empezar raíz cúbica x empezar raíz a la cuarta x empezar raíz a la quinta x puntos suspensivos finalizar raíz a la quinta finalizar raíz a la cuarta finalizar raíz cúbica finalizar raíz cuadrada coma x perteneciente a negrita de pizarra mayúscula R"
+      "expected": "x sup e menos 2 base igual empezar raíz cuadrada x empezar raíz cúbica x empezar raíz a la cuarta x empezar raíz a la quinta x puntos suspensivos finalizar raíz a la quinta finalizar raíz a la cuarta finalizar raíz cúbica finalizar raíz cuadrada coma x perteneciente a negrita de pizarra mayúscula R"
     },
     "Sample_9_3_3_sbrief": {
-      "expected": "x sup e menos 2 igual raíz cuadrada x raíz cúbica x raíz a la cuarta x raíz a la quinta x puntos suspensivos finalizar raíz a la quinta finalizar raíz a la cuarta finalizar raíz cúbica finalizar raíz cuadrada coma x perteneciente a negrita de pizarra mayúscula R"
+      "expected": "x sup e menos 2 base igual raíz cuadrada x raíz cúbica x raíz a la cuarta x raíz a la quinta x puntos suspensivos finalizar raíz a la quinta finalizar raíz a la cuarta finalizar raíz cúbica finalizar raíz cuadrada coma x perteneciente a negrita de pizarra mayúscula R"
     },
     "Sample_9_3_4_default": {
       "expected": "empezar fracción 2 entre pi finalizar fracción igual empezar fracción empezar raíz cuadrada 2 finalizar raíz cuadrada entre 2 finalizar fracción empezar fracción empezar raíz cuadrada 2 más empezar raíz cuadrada 2 finalizar raíz cuadrada finalizar raíz cuadrada entre 2 finalizar fracción empezar fracción empezar raíz cuadrada 2 más empezar raíz cuadrada 2 más empezar raíz cuadrada 2 finalizar raíz cuadrada finalizar raíz cuadrada finalizar raíz cuadrada entre 2 finalizar fracción puntos suspensivos"
@@ -977,10 +977,10 @@
       "expected": "logaritmo subíndice b línea base x"
     },
     "Sample_12_1_1_brief": {
-      "expected": "logaritmo sub b x"
+      "expected": "logaritmo sub b base x"
     },
     "Sample_12_1_1_sbrief": {
-      "expected": "logaritmo sub b x"
+      "expected": "logaritmo sub b base x"
     },
     "Sample_12_1_2_default": {
       "expected": "coseno y"

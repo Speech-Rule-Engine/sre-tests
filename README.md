@@ -317,6 +317,8 @@ generated files are of type `.test.ts` so they can be run with `jest` directly.
 
 # Analytics
 
+
+
 Run with
 
 ``` shell
@@ -377,7 +379,7 @@ using method:
 gt.generateTestJson(INPUT, OUTPUT, option FIELD);
 ```
 
-This transforms the `INPUT` file sets into `OUTPUT` fof the form
+This transforms the `INPUT` file sets into `OUTPUT` of the form
 
 ```javascript
 {
@@ -418,10 +420,11 @@ Each of the following commands takes an path to a file with expected values and
 optionally a flag indicating if it is a dry run or if the changes are to be made
 destructively to the input file.
 
-| `addMissing` | Adds expected values for all missing tests.          |
-| `addActual`  | Overwrites all expected values with the actual ones. |
-| `addFailed`  | Overwrites expected values for all failed tests.     |
-
+| `addMissing`    | Adds expected values for all missing tests.          |
+| `addActual`     | Overwrites all expected values with the actual ones. |
+| `addFailed`     | Overwrites expected values for all failed tests.     |
+| `removeMissing` | Removes tests in expected file that has been removed |
+|                 | from the base file.                                  |
 
 `showMissing` prints all missing tests for all available test files. Output can
 be restricted by providing a regular expression for filtering filenames.
@@ -563,7 +566,7 @@ Recursively performs the above action on a subdirectory.
 Show the difference between test files existing in locale directories.
 
 ``` javascript
-ct.showDifference('en', 'it');
+ct.localeDifference('en', 'it');
 ```
 
 ## Semantic Tests

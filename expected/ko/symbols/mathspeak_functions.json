@@ -1,13 +1,13 @@
 {
-  "name": "EnglishMathspeakFunction",
-  "locale": "en",
+  "name": "KoreanMathspeakFunction",
+  "locale": "ko",
   "domain": "mathspeak",
   "style": "default",
-  "active": "MathspeakSymbolsEnglish",
+  "active": "MathspeakSymbolsKorean",
   "type": "function",
   "factory": "symbol",
   "base": "input/common/functions.json",
-  "information": "English Mathspeak Function tests.",
+  "information": "Korean Mathspeak Function tests.",
   "tests": {
     "deg": {
       "expected": "degree"
