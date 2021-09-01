@@ -56,4 +56,12 @@ export class NumberTest extends SpeechTest {
     return (LOCALE.NUMBERS as any)[this.kind](this.num);
   }
 
+  /**
+   * @override
+   */
+  public appendRuleExample(
+    _input: string, output: string, style: string, ...rest: string[]) {
+    super.appendRuleExample(this.num.toString(), output, style, ...rest);
+  }
+
 }
