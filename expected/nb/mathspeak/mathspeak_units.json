@@ -27,76 +27,76 @@
   "compare": true,
   "tests": {
     "UnitSquare_0_default": {
-      "expected": "in Superskript 2"
+      "expected": "in i andre potens"
     },
     "UnitSquare_0_brief": {
-      "expected": "in Sub 2"
+      "expected": "in i andre potens"
     },
     "UnitSquare_0_sbrief": {
-      "expected": "in Sub 2"
+      "expected": "in i andre potens"
     },
     "UnitSquare_1_default": {
-      "expected": "sekunder Superskript 2"
+      "expected": "sekunder i andre potens"
     },
     "UnitSquare_1_brief": {
-      "expected": "sekunder Sub 2"
+      "expected": "sekunder i andre potens"
     },
     "UnitSquare_1_sbrief": {
-      "expected": "sekunder Sub 2"
+      "expected": "sekunder i andre potens"
     },
     "UnitSquare_2_default": {
-      "expected": "meter Superskript 2"
+      "expected": "meter i andre potens"
     },
     "UnitSquare_2_brief": {
-      "expected": "meter Sub 2"
+      "expected": "meter i andre potens"
     },
     "UnitSquare_2_sbrief": {
-      "expected": "meter Sub 2"
+      "expected": "meter i andre potens"
     },
     "UnitCube_0_default": {
-      "expected": "in Superskript 3"
+      "expected": "in i tredje potens"
     },
     "UnitCube_0_brief": {
-      "expected": "in Sub 3"
+      "expected": "in i tredje potens"
     },
     "UnitCube_0_sbrief": {
-      "expected": "in Sub 3"
+      "expected": "in i tredje potens"
     },
     "UnitCube_1_default": {
-      "expected": "sekunder Superskript 3"
+      "expected": "sekunder i tredje potens"
     },
     "UnitCube_1_brief": {
-      "expected": "sekunder Sub 3"
+      "expected": "sekunder i tredje potens"
     },
     "UnitCube_1_sbrief": {
-      "expected": "sekunder Sub 3"
+      "expected": "sekunder i tredje potens"
     },
     "UnitCube_2_default": {
-      "expected": "meter Superskript 3"
+      "expected": "meter i tredje potens"
     },
     "UnitCube_2_brief": {
-      "expected": "meter Sub 3"
+      "expected": "meter i tredje potens"
     },
     "UnitCube_2_sbrief": {
-      "expected": "meter Sub 3"
+      "expected": "meter i tredje potens"
     },
     "UnitInverse_default": {
-      "expected": "in Superskript minus 1"
+      "expected": "in Superskript negativ 1"
     },
     "UnitInverse_brief": {
-      "expected": "in Sub minus 1"
+      "expected": "in Sub negativ 1"
     },
     "UnitInverse_sbrief": {
-      "expected": "in Sub minus 1"
+      "expected": "in Sub negativ 1"
     },
     "UnitDoubleInverse_default": {
-      "expected": "in Superskript minus 1 Grunnlinje mm Superskript minus 1"
+      "expected": "in Superskript negativ 1 Grunnlinje mm Superskript negativ 1"
     },
     "UnitDoubleInverse_brief": {
-      "expected": "in Sub minus 1 Basis mm Sub minus 1"
+      "expected": "in Sub negativ 1 Basis mm Sub negativ 1"
     },
     "UnitDoubleInverse_sbrief": {
-      "expected": "in Sub minus 1 Basis mm Sub minus 1"
+      "expected": "in Sub negativ 1 Basis mm Sub negativ 1"
     },
     "UnitDivide_default": {
       "expected": "Start Brøk in Over mm Slutt Brøk"
@@ -132,28 +132,28 @@
       "expected": "km pluss sekunder"
     },
     "UnitsSuperscript_0": {
-      "expected": "km Superskript 2"
+      "expected": "km i andre potens"
     },
     "UnitsSuperscript_1": {
-      "expected": "meter Superskript 3"
+      "expected": "meter i tredje potens"
     },
     "UnitsSuperscript_2": {
       "expected": "km Superskript 4"
     },
     "UnitsSuperscript_3": {
-      "expected": "meter Superskript minus 1"
+      "expected": "meter Superskript negativ 1"
     },
     "UnitsSuperscript_4": {
-      "expected": "sekunder meter Superskript minus 1"
+      "expected": "sekunder meter Superskript negativ 1"
     },
     "UnitsSuperscript_5": {
-      "expected": "Start Brøk sekunder Over meter Slutt Brøk Superskript minus 1"
+      "expected": "Start Brøk sekunder Over meter Slutt Brøk Superskript negativ 1"
     },
     "UnitsSuperscript_6": {
-      "expected": "Start Brøk sekunder Over meter Slutt Brøk Superskript minus 1"
+      "expected": "Start Brøk sekunder Over meter Slutt Brøk Superskript negativ 1"
     },
     "UnitsSuperscript_7": {
-      "expected": "3 meter Superskript minus 1"
+      "expected": "3 meter Superskript negativ 1"
     },
     "UnitsSuperscript_8": {
       "expected": "Start Brøk km Over timer Slutt Brøk"
@@ -171,13 +171,13 @@
       "expected": "sekunder 3 m km timer"
     },
     "UnitsExpressions_1": {
-      "expected": "km sekunder Superskript 2 3 m km timer"
+      "expected": "km sekunder i andre potens 3 m km timer"
     },
     "UnitsExpressions_2": {
-      "expected": "3 m km timer Start Brøk stor bokstav N Over sekunder Superskript 2 Grunnlinje Slutt Brøk"
+      "expected": "3 m km timer Start Brøk stor bokstav N Over sekunder i andre potens Slutt Brøk"
     },
     "UnitsExpressions_3": {
-      "expected": "3 m km timer Start Brøk newton Over sekunder Superskript 2 Grunnlinje Slutt Brøk"
+      "expected": "3 m km timer Start Brøk newton Over sekunder i andre potens Slutt Brøk"
     },
     "UnitPlural_1": {
       "expected": "4 mm"
@@ -213,16 +213,16 @@
       "expected": "meter sekunder liter"
     },
     "issue_364_1": {
-      "expected": "63360 in er lik 63360 in. er lik 63360 Superskript dobbel prim Grunnlinje er lik 63360 inches er lik 5280 fot er lik 5280 fot er lik 5280 Superskript prim Grunnlinje er lik 5280 feet er lik 1760 yd er lik 1760 yd. er lik 1760 yards er lik 1 mil er lik 1 mil er lik 1 mile"
+      "expected": "63360 in er lik 63360 in. er lik 63360 dobbel prim er lik 63360 inches er lik 5280 fot er lik 5280 fot er lik 5280 prim er lik 5280 feet er lik 1760 yd er lik 1760 yd. er lik 1760 yards er lik 1 mil er lik 1 mil er lik 1 mile"
     },
     "issue_364_2": {
       "expected": "8000 links er lik 8000 links er lik 8000 links er lik 320 rods er lik 320 rods er lik 320 rods er lik 80 chains er lik 80 chains er lik 80 chains er lik 8 fur er lik 8 fur. er lik 8 furlongs er lik 1 mil er lik 1 mil er lik 1 mile"
     },
     "issue_364_3": {
-      "expected": "43560 sq ft er lik 43560 sq. ft. er lik 43560 fot Superskript 2 Grunnlinje er lik 43560 Superskript prim Grunnlinje Superskript 2 Grunnlinje er lik 43560 square feet er lik 4840 kvadratmeter er lik 4840 kvadratmeter er lik 4840 yd Superskript 2 Grunnlinje er lik 4840 square yards er lik 160 sq rd er lik 160 sq. rd. er lik 160 rods Superskript 2 Grunnlinje er lik 160 square rods er lik 1 acres er lik 1 acres er lik 1 acre er lik Start Brøk 1 Over 640 Slutt Brøk kvadratkilometer er lik Start Brøk 1 Over 640 Slutt Brøk kvadratkilometer er lik Start Brøk 1 Over 640 Slutt Brøk mil Superskript 2 Grunnlinje er lik Start Brøk 1 Over 640 Slutt Brøk square miles"
+      "expected": "43560 sq ft er lik 43560 sq. ft. er lik 43560 fot i andre potens er lik 43560 prim i andre potens er lik 43560 square feet er lik 4840 kvadratmeter er lik 4840 kvadratmeter er lik 4840 yd i andre potens er lik 4840 square yards er lik 160 sq rd er lik 160 sq. rd. er lik 160 rods i andre potens er lik 160 square rods er lik 1 acres er lik 1 acres er lik 1 acre er lik Start Brøk 1 Over 640 Slutt Brøk kvadratkilometer er lik Start Brøk 1 Over 640 Slutt Brøk kvadratkilometer er lik Start Brøk 1 Over 640 Slutt Brøk mil i andre potens er lik Start Brøk 1 Over 640 Slutt Brøk square miles"
     },
     "issue_364_4": {
-      "expected": "46656 cubic inches er lik 46656 cubic inches er lik 46656 in Superskript 3 Grunnlinje er lik 46656 Superskript dobbel prim Grunnlinje Superskript 3 Grunnlinje er lik 46656 cubic inches er lik 27 cu ft er lik 27 cu. ft. er lik 27 fot Superskript 3 Grunnlinje er lik 27 Superskript prim Grunnlinje Superskript 3 Grunnlinje er lik 27 cubic feet er lik 1 cu yd er lik 1 cu. yd. er lik 1 yd Superskript 3 Grunnlinje er lik 1 cubic yard"
+      "expected": "46656 cubic inches er lik 46656 cubic inches er lik 46656 in i tredje potens er lik 46656 dobbel prim i tredje potens er lik 46656 cubic inches er lik 27 cu ft er lik 27 cu. ft. er lik 27 fot i tredje potens er lik 27 prim i tredje potens er lik 27 cubic feet er lik 1 cu yd er lik 1 cu. yd. er lik 1 yd i tredje potens er lik 1 cubic yard"
     },
     "issue_364_5": {
       "expected": "1024 fluid drams er lik 1024 fluid drams er lik 1024 fluid drams er lik 768 teskje er lik 768 teskje er lik 768 teaspoons er lik 256 spiseskje er lik 256 spiseskje er lik 256 tablespoons er lik 128 fluid ounces er lik 128 fluid ounces er lik 128 fluid ounces er lik 16 cups er lik 16 cups er lik 16 cups er lik 8 pt er lik 8 pt. er lik 8 pints er lik 4 qt er lik 4 qt. er lik 4 quarts er lik 1 gal er lik 1 gal. er lik 1 gallon"
@@ -231,46 +231,46 @@
       "expected": "256 drams er lik 256 drams er lik 256 drams er lik 16 oz er lik 16 oz. er lik 16 ounces er lik 1 # er lik 1 lb er lik 1 lb. er lik 1 pounds er lik 100 cwt er lik 100 cwt. er lik 100 hundredweights er lik 2000 tons"
     },
     "issue_366": {
-      "expected": "63360 in er lik 63360 in. er lik 63360 Superskript dobbel prim Grunnlinje er lik 63360 inches er lik 5280 fot er lik 5280 fot er lik 5280 Superskript prim Grunnlinje er lik 5280 feet er lik 1760 yd er lik 1760 yd. er lik 1760 yards er lik 1 mil er lik 1 mil er lik 1 mile"
+      "expected": "63360 in er lik 63360 in. er lik 63360 dobbel prim er lik 63360 inches er lik 5280 fot er lik 5280 fot er lik 5280 prim er lik 5280 feet er lik 1760 yd er lik 1760 yd. er lik 1760 yards er lik 1 mil er lik 1 mil er lik 1 mile"
     },
     "testSample_13_1_2_var0": {
-      "expected": "1 joule er lik 1 kg prikk meter Superskript 2 Grunnlinje prikk sekunder Superskript minus 2"
+      "expected": "1 joule er lik 1 kg prikk meter i andre potens prikk sekunder Superskript negativ 2"
     },
     "testSample_13_1_2_var1": {
-      "expected": "1 joule er lik 1 kg meter Superskript 2 Grunnlinje sekunder Superskript minus 2"
+      "expected": "1 joule er lik 1 kg meter i andre potens sekunder Superskript negativ 2"
     },
     "testSample_13_1_2_var2": {
-      "expected": "1 joule er lik 1 kg meter Superskript 2 Grunnlinje sekunder Superskript minus 2"
+      "expected": "1 joule er lik 1 kg meter i andre potens sekunder Superskript negativ 2"
     },
     "unit_cube": {
-      "expected": "in Superskript 3"
+      "expected": "in i tredje potens"
     },
     "UnitDiv_0": {
-      "expected": "Start Brøk km kg sekunder Superskript 2 Grunnlinje Over joule Slutt Brøk"
+      "expected": "Start Brøk km kg sekunder i andre potens Over joule Slutt Brøk"
     },
     "UnitDiv_1": {
-      "expected": "Start Brøk 3 km 1 kg sekunder Superskript 2 Grunnlinje Over joule Slutt Brøk"
+      "expected": "Start Brøk 3 km 1 kg sekunder i andre potens Over joule Slutt Brøk"
     },
     "UnitDiv_2": {
-      "expected": "Start Brøk 1 km kg sekunder Superskript 2 Grunnlinje Over joule Slutt Brøk"
+      "expected": "Start Brøk 1 km kg sekunder i andre potens Over joule Slutt Brøk"
     },
     "UnitDiv_3": {
-      "expected": "Start Brøk 1 km kg sekunder Superskript 2 Grunnlinje Over 5 joule Slutt Brøk"
+      "expected": "Start Brøk 1 km kg sekunder i andre potens Over 5 joule Slutt Brøk"
     },
     "UnitKm": {
       "expected": "km"
     },
     "UnitLong_1": {
-      "expected": "3 km kg sekunder Superskript 2 Grunnlinje joule"
+      "expected": "3 km kg sekunder i andre potens joule"
     },
     "UnitLong_2": {
-      "expected": "3 km kg sekunder Superskript 2 Grunnlinje joule"
+      "expected": "3 km kg sekunder i andre potens joule"
     },
     "UnitLong_3": {
-      "expected": "3 km 4 kg sekunder Superskript 2 Grunnlinje joule"
+      "expected": "3 km 4 kg sekunder i andre potens joule"
     },
     "UnitLong_4": {
-      "expected": "3 km 1 kg sekunder Superskript 2 Grunnlinje joule"
+      "expected": "3 km 1 kg sekunder i andre potens joule"
     },
     "UnitMultiple": {
       "expected": "1 km sekunder pluss 2 km sekunder pluss 0 km sekunder pluss a km sekunder pluss"
@@ -279,10 +279,10 @@
       "expected": "1 km pluss 2 km pluss 0 km pluss a km"
     },
     "UnitNumb_0": {
-      "expected": "kg"
+      "expected": "1 og to tredje kg"
     },
     "UnitNumb_1": {
-      "expected": "kg km"
+      "expected": "1 og to tredje kg km"
     },
     "UnitNumb_2": {
       "expected": "1 km 2 kg km"

@@ -10,430 +10,430 @@
   "compare": true,
   "tests": {
     "AbstrAddition_default": {
-      "expected": "a pluss b"
+      "expected": "sum med 2 delsummer"
     },
     "AbstrAddition_brief": {
-      "expected": "a pluss b"
+      "expected": "sum"
     },
     "AbstrAddition_sbrief": {
-      "expected": "a pluss b"
+      "expected": "sum"
     },
     "AbstrBigop_default": {
-      "expected": "sum x"
+      "expected": "sum"
     },
     "AbstrBigop_brief": {
-      "expected": "sum x"
+      "expected": "sum"
     },
     "AbstrBigop_sbrief": {
-      "expected": "sum x"
+      "expected": "sum"
     },
     "AbstrBinomial_default": {
-      "expected": "venstre parentes høyre parentes xy"
+      "expected": "binomialkoeffisient"
     },
     "AbstrBinomial_brief": {
-      "expected": "venstre parentes høyre parentes xy"
+      "expected": "binomialkoeffisient"
     },
     "AbstrBinomial_sbrief": {
-      "expected": "venstre parentes høyre parentes xy"
+      "expected": "binomialkoeffisient"
     },
     "AbstrCases_default": {
-      "expected": "venstre krøllparentes y 0 y 2"
+      "expected": "case-setning med 2 caser"
     },
     "AbstrCases_brief": {
-      "expected": "venstre krøllparentes y 0 y 2"
+      "expected": "case-setning"
     },
     "AbstrCases_sbrief": {
-      "expected": "venstre krøllparentes y 0 y 2"
+      "expected": "case-setning"
     },
     "AbstrCell_default": {
-      "expected": "1. Column a"
+      "expected": "1. Kolonne i tabell"
     },
     "AbstrCell_brief": {
-      "expected": "1. Column a"
+      "expected": "1. Kolonne i tabell"
     },
     "AbstrCell_sbrief": {
-      "expected": "1. Column a"
+      "expected": "1. Kolonne i tabell"
     },
     "AbstrContinuedFraction_default": {
-      "expected": "Start Start Start Brøk b 1 Over Over Over a 1 pluss Start Start Brøk b 2 Over Over a 2 pluss Start Brøk b 3 Over a 3 pluss prikk prikk prikk Slutt Brøk Slutt Slutt Brøk Slutt Slutt Slutt Brøk"
+      "expected": "kjedebrøk"
     },
     "AbstrContinuedFraction_brief": {
-      "expected": "Start Start Start Brøk b 1 Over Over Over a 1 pluss Start Start Brøk b 2 Over Over a 2 pluss Start Brøk b 3 Over a 3 pluss prikk prikk prikk Slutt Brøk Slutt Slutt Brøk Slutt Slutt Slutt Brøk"
+      "expected": "kjedebrøk"
     },
     "AbstrContinuedFraction_sbrief": {
-      "expected": "NøstTo gangerBrøk b 1 NøstTo gangerOver a 1 pluss NøstBrøk b 2 NøstOver a 2 pluss Brøk b 3 Over a 3 pluss prikk prikk prikk SluttBrøk NøstSluttBrøk NøstTo gangerSluttBrøk"
+      "expected": "kjedebrøk"
     },
     "AbstrDeterminant_default": {
-      "expected": "vertikalstrek vertikalstrek abcd"
+      "expected": "2 dimensjonal determinant"
     },
     "AbstrDeterminant_brief": {
-      "expected": "vertikalstrek vertikalstrek abcd"
+      "expected": "determinant"
     },
     "AbstrDeterminant_sbrief": {
-      "expected": "vertikalstrek vertikalstrek abcd"
+      "expected": "determinant"
     },
     "AbstrFraction_default": {
-      "expected": "Start Brøk 1 Over x Slutt Brøk"
+      "expected": "brøk"
     },
     "AbstrFraction_brief": {
-      "expected": "Start Brøk 1 Over x Slutt Brøk"
+      "expected": "brøk"
     },
     "AbstrFraction_sbrief": {
-      "expected": "Brøk 1 Over x SluttBrøk"
+      "expected": "brøk"
     },
     "AbstrFunction_default": {
-      "expected": "sinus"
+      "expected": "funksjonsuttrykk"
     },
     "AbstrFunction_brief": {
-      "expected": "sinus"
+      "expected": "funksjon"
     },
     "AbstrFunction_sbrief": {
-      "expected": "sinus"
+      "expected": "funksjon"
     },
     "AbstrIdentifier_default": {
-      "expected": "a"
+      "expected": "identifikator"
     },
     "AbstrIdentifier_brief": {
-      "expected": "a"
+      "expected": "identifikator"
     },
     "AbstrIdentifier_sbrief": {
-      "expected": "a"
+      "expected": "identifikator"
     },
     "AbstrInfixop_default": {
-      "expected": "a skråstrek b"
+      "expected": "divisjon med 2 elementer"
     },
     "AbstrInfixop_brief": {
-      "expected": "a skråstrek b"
+      "expected": "divisjon"
     },
     "AbstrInfixop_sbrief": {
-      "expected": "a skråstrek b"
+      "expected": "divisjon"
     },
     "AbstrIntegral_default": {
-      "expected": "konturintegral stor bokstav E prikk d l"
+      "expected": "integral"
     },
     "AbstrIntegral_brief": {
-      "expected": "konturintegral stor bokstav E prikk d l"
+      "expected": "integral"
     },
     "AbstrIntegral_sbrief": {
-      "expected": "konturintegral stor bokstav E prikk d l"
+      "expected": "integral"
     },
     "AbstrLim_default": {
-      "expected": "grense"
+      "expected": "grenseverdifunksjon"
     },
     "AbstrLim_brief": {
-      "expected": "grense"
+      "expected": "grenseverdi"
     },
     "AbstrLim_sbrief": {
-      "expected": "grense"
+      "expected": "grenseverdi"
     },
     "AbstrLine_default": {
-      "expected": "1. Row a"
+      "expected": "1. Rad i flere linjer"
     },
     "AbstrLine_brief": {
-      "expected": "1. Row a"
+      "expected": "1. Rad i flere linjer"
     },
     "AbstrLine_sbrief": {
-      "expected": "1. Row a"
+      "expected": "1. Rad i flere linjer"
     },
     "AbstrMatrix_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes abcdef"
+      "expected": "3 ganger 2 matrise"
     },
     "AbstrMatrix_brief": {
-      "expected": "venstre hakeparentes høyre hakeparentes abcdef"
+      "expected": "matrise"
     },
     "AbstrMatrix_sbrief": {
-      "expected": "venstre hakeparentes høyre hakeparentes abcdef"
+      "expected": "matrise"
     },
     "AbstrMixedNumber_default": {
-      "expected": ""
+      "expected": "blandet nummer"
     },
     "AbstrMixedNumber_brief": {
-      "expected": ""
+      "expected": "blandet nummer"
     },
     "AbstrMixedNumber_sbrief": {
-      "expected": ""
+      "expected": "blandet nummer"
     },
     "AbstrMultiplication_default": {
-      "expected": "a asterisk b"
+      "expected": "produkt med 2 faktorer"
     },
     "AbstrMultiplication_brief": {
-      "expected": "a asterisk b"
+      "expected": "produkt"
     },
     "AbstrMultiplication_sbrief": {
-      "expected": "a asterisk b"
+      "expected": "produkt"
     },
     "AbstrMultirel_default": {
-      "expected": "a er lik b er mindre enn eller er lik b"
+      "expected": "relasjonssekvens med 3 elementer"
     },
     "AbstrMultirel_brief": {
-      "expected": "a er lik b er mindre enn eller er lik b"
+      "expected": "relasjonssekvens"
     },
     "AbstrMultirel_sbrief": {
-      "expected": "a er lik b er mindre enn eller er lik b"
+      "expected": "relasjonssekvens"
     },
     "AbstrNumber_default": {
-      "expected": "123456"
+      "expected": "nummer"
     },
     "AbstrNumber_brief": {
-      "expected": "123456"
+      "expected": "nummer"
     },
     "AbstrNumber_sbrief": {
-      "expected": "123456"
+      "expected": "nummer"
     },
     "AbstrPunctuated_default": {
-      "expected": "a komma b komma c"
+      "expected": "komma separert liste med lengde 3"
     },
     "AbstrPunctuated_brief": {
-      "expected": "a komma b komma c"
+      "expected": "komma separatert liste"
     },
     "AbstrPunctuated_sbrief": {
-      "expected": "a komma b komma c"
+      "expected": "komma separatert liste"
     },
     "AbstrRelation_default": {
-      "expected": "a er lik b"
+      "expected": "likhet"
     },
     "AbstrRelation_brief": {
-      "expected": "a er lik b"
+      "expected": "likhet"
     },
     "AbstrRelation_sbrief": {
-      "expected": "a er lik b"
+      "expected": "likhet"
     },
     "AbstrRelationSeq_default": {
-      "expected": "a er lik b er lik b"
+      "expected": "likhet sekvens med 3 elementer"
     },
     "AbstrRelationSeq_brief": {
-      "expected": "a er lik b er lik b"
+      "expected": "likhet sekvens"
     },
     "AbstrRelationSeq_sbrief": {
-      "expected": "a er lik b er lik b"
+      "expected": "likhet sekvens"
     },
     "AbstrRoot_default": {
-      "expected": "RotIndeks 3 StartRot x SluttRot"
+      "expected": "rot med eksponent 3"
     },
     "AbstrRoot_brief": {
-      "expected": "RotIndeks 3 StartRot x SluttRot"
+      "expected": "rot"
     },
     "AbstrRoot_sbrief": {
-      "expected": "Indeks 3 Rot x SluttRot"
+      "expected": "rot"
     },
     "AbstrRootNested_default": {
-      "expected": "NøstetRotIndeks 3 NøstetStartRot RotIndeks 4 StartRot x SluttRot pluss x NøstetSluttRot"
+      "expected": "nøstet rot med eksponent 3"
     },
     "AbstrRootNested_brief": {
-      "expected": "NøstRotIndeks 3 NøstStartRot RotIndeks 4 StartRot x SluttRot pluss x NøstSluttRot"
+      "expected": "nøstet rot"
     },
     "AbstrRootNested_sbrief": {
-      "expected": "NøstIndeks 3 NøstRot Indeks 4 Rot x SluttRot pluss x NøstSluttRot"
+      "expected": "nøstet rot"
     },
     "AbstrRow_default": {
-      "expected": "1. Row ab"
+      "expected": "1. Rad i tabell med 2 kolonner"
     },
     "AbstrRow_brief": {
-      "expected": "1. Row ab"
+      "expected": "1. Rad i tabell med 2 kolonner"
     },
     "AbstrRow_sbrief": {
-      "expected": "1. Row ab"
+      "expected": "1. Rad i tabell med 2 kolonner"
     },
     "AbstrRowvector_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes ab"
+      "expected": "2 dimensjonal radvektor"
     },
     "AbstrRowvector_brief": {
-      "expected": "venstre hakeparentes høyre hakeparentes ab"
+      "expected": "radvektor"
     },
     "AbstrRowvector_sbrief": {
-      "expected": "venstre hakeparentes høyre hakeparentes ab"
+      "expected": "radvektor"
     },
     "AbstrSqrt_default": {
-      "expected": "StartRot 2 SluttRot"
+      "expected": "kvadratrot"
     },
     "AbstrSqrt_brief": {
-      "expected": "StartRot 2 SluttRot"
+      "expected": "kvadratrot"
     },
     "AbstrSqrt_sbrief": {
-      "expected": "Rot 2 SluttRot"
+      "expected": "kvadratrot"
     },
     "AbstrSqrtNested_default": {
-      "expected": "NøstetStartRot 2 StartRot 2 SluttRot NøstetSluttRot"
+      "expected": "n-te rot"
     },
     "AbstrSqrtNested_brief": {
-      "expected": "NøstStartRot 2 StartRot 2 SluttRot NøstSluttRot"
+      "expected": "n-te rot"
     },
     "AbstrSqrtNested_sbrief": {
-      "expected": "NøstRot 2 Rot 2 SluttRot NøstSluttRot"
+      "expected": "n-te rot"
     },
     "AbstrSquarematrix_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes abcd"
+      "expected": "2 dimensjonal kvadratmatrise"
     },
     "AbstrSquarematrix_brief": {
-      "expected": "venstre hakeparentes høyre hakeparentes abcd"
+      "expected": "kvadratmatrise"
     },
     "AbstrSquarematrix_sbrief": {
-      "expected": "venstre hakeparentes høyre hakeparentes abcd"
+      "expected": "kvadratmatrise"
     },
     "AbstrSubscript_default": {
-      "expected": "a Subskript b"
+      "expected": "indeks"
     },
     "AbstrSubscript_brief": {
-      "expected": "a Sub b"
+      "expected": "indeks"
     },
     "AbstrSubscript_sbrief": {
-      "expected": "a Sub b"
+      "expected": "indeks"
     },
     "AbstrSubsup_default": {
-      "expected": "a Subskript c Superskript b"
+      "expected": "potens med indeks"
     },
     "AbstrSubsup_brief": {
-      "expected": "a Sub c Sub b"
+      "expected": "potens med indeks"
     },
     "AbstrSubsup_sbrief": {
-      "expected": "a Sub c Sub b"
+      "expected": "potens med indeks"
     },
     "AbstrSuperscript_default": {
-      "expected": "a Superskript b"
+      "expected": "potens"
     },
     "AbstrSuperscript_brief": {
-      "expected": "a Sub b"
+      "expected": "potens"
     },
     "AbstrSuperscript_sbrief": {
-      "expected": "a Sub b"
+      "expected": "potens"
     },
     "AbstrTable_default": {
-      "expected": "abcd"
+      "expected": "tabell med 2 rader og 2 kolonner"
     },
     "AbstrTable_brief": {
-      "expected": "abcd"
+      "expected": "tabell med 2 rader og 2 kolonner"
     },
     "AbstrTable_sbrief": {
-      "expected": "abcd"
+      "expected": "tabell med 2 rader og 2 kolonner"
     },
     "AbstrText_default": {
-      "expected": "a b c"
+      "expected": "tekst"
     },
     "AbstrText_brief": {
-      "expected": "a b c"
+      "expected": "tekst"
     },
     "AbstrText_sbrief": {
-      "expected": "a b c"
+      "expected": "tekst"
     },
     "AbstrVarAddition_default": {
-      "expected": "a pluss prikk prikk prikk pluss b"
+      "expected": "sum med variabelt antall delsummer"
     },
     "AbstrVarAddition_brief": {
-      "expected": "a pluss prikk prikk prikk pluss b"
+      "expected": "sum"
     },
     "AbstrVarAddition_sbrief": {
-      "expected": "a pluss prikk prikk prikk pluss b"
+      "expected": "sum"
     },
     "AbstrVarCases_default": {
-      "expected": "venstre krøllparentes a prikk prikk prikk b"
+      "expected": "case-setning med variabelt antall alternativer"
     },
     "AbstrVarCases_brief": {
-      "expected": "venstre krøllparentes a prikk prikk prikk b"
+      "expected": "case-setning"
     },
     "AbstrVarCases_sbrief": {
-      "expected": "venstre krøllparentes a prikk prikk prikk b"
+      "expected": "case-setning"
     },
     "AbstrVarDeterminant_default": {
-      "expected": "vertikalstrek vertikalstrek abe prikk prikk prikk cdf"
+      "expected": "n-dimensjonal determinant"
     },
     "AbstrVarDeterminant_brief": {
-      "expected": "vertikalstrek vertikalstrek abe prikk prikk prikk cdf"
+      "expected": "determinant"
     },
     "AbstrVarDeterminant_sbrief": {
-      "expected": "vertikalstrek vertikalstrek abe prikk prikk prikk cdf"
+      "expected": "determinant"
     },
     "AbstrVarMatrix_default": {
-      "expected": "venstre parentes høyre parentes abe prikk prikk prikk cdf"
+      "expected": "n ganger m-dimensjonal matrise"
     },
     "AbstrVarMatrix_brief": {
-      "expected": "venstre parentes høyre parentes abe prikk prikk prikk cdf"
+      "expected": "kvadratmatrise"
     },
     "AbstrVarMatrix_sbrief": {
-      "expected": "venstre parentes høyre parentes abe prikk prikk prikk cdf"
+      "expected": "kvadratmatrise"
     },
     "AbstrVarMultiplication_default": {
-      "expected": "a asterisk prikk prikk prikk asterisk b"
+      "expected": "produkt med variabelt antall faktorer"
     },
     "AbstrVarMultiplication_brief": {
-      "expected": "a asterisk prikk prikk prikk asterisk b"
+      "expected": "produkt"
     },
     "AbstrVarMultiplication_sbrief": {
-      "expected": "a asterisk prikk prikk prikk asterisk b"
+      "expected": "produkt"
     },
     "AbstrVarMultirel_default": {
-      "expected": "a er lik prikk prikk prikk er mindre enn eller er lik b"
+      "expected": "relasjonssekvens med variabelt antall elementer"
     },
     "AbstrVarMultirel_brief": {
-      "expected": "a er lik prikk prikk prikk er mindre enn eller er lik b"
+      "expected": "relasjonssekvens"
     },
     "AbstrVarMultirel_sbrief": {
-      "expected": "a er lik prikk prikk prikk er mindre enn eller er lik b"
+      "expected": "relasjonssekvens"
     },
     "AbstrVarPunctuated_default": {
-      "expected": "a komma prikk prikk prikk komma b"
+      "expected": "komma separert liste med variabel lengde"
     },
     "AbstrVarPunctuated_brief": {
-      "expected": "a komma prikk prikk prikk komma b"
+      "expected": "komma separatert liste"
     },
     "AbstrVarPunctuated_sbrief": {
-      "expected": "a komma prikk prikk prikk komma b"
+      "expected": "komma separatert liste"
     },
     "AbstrVarRelation_default": {
-      "expected": "a er lik prikk prikk prikk er lik b"
+      "expected": "likhet sekvens med variabelt antall elementer"
     },
     "AbstrVarRelation_brief": {
-      "expected": "a er lik prikk prikk prikk er lik b"
+      "expected": "likhet sekvens"
     },
     "AbstrVarRelation_sbrief": {
-      "expected": "a er lik prikk prikk prikk er lik b"
+      "expected": "likhet sekvens"
     },
     "AbstrVarVector_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes a vertikal ellipse cd"
+      "expected": "n-dimensjonal vektor"
     },
     "AbstrVarVector_brief": {
-      "expected": "venstre hakeparentes høyre hakeparentes a vertikal ellipse cd"
+      "expected": "vektor"
     },
     "AbstrVarVector_sbrief": {
-      "expected": "venstre hakeparentes høyre hakeparentes a vertikal ellipse cd"
+      "expected": "vektor"
     },
     "AbstrVector_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes ace"
+      "expected": "3 dimensjonal vektor"
     },
     "AbstrVector_brief": {
-      "expected": "venstre hakeparentes høyre hakeparentes ace"
+      "expected": "vektor"
     },
     "AbstrVector_sbrief": {
-      "expected": "venstre hakeparentes høyre hakeparentes ace"
+      "expected": "vektor"
     },
     "AbstrVarSubtraction_default": {
-      "expected": "a minus prikk prikk prikk minus b"
+      "expected": "subtraksjon med variabelt antall elementer"
     },
     "AbstrVarSubtraction_brief": {
-      "expected": "a minus prikk prikk prikk minus b"
+      "expected": "subtraksjon"
     },
     "AbstrVarSubtraction_sbrief": {
-      "expected": "a minus prikk prikk prikk minus b"
+      "expected": "subtraksjon"
     },
     "AbstrCountImplicit_default": {
-      "expected": "a b c"
+      "expected": "produkt med 3 faktorer"
     },
     "AbstrCountImplicit_brief": {
-      "expected": "a b c"
+      "expected": "produkt"
     },
     "AbstrCountImplicit_sbrief": {
-      "expected": "a b c"
+      "expected": "produkt"
     },
     "AbstrVarImplicit_default": {
-      "expected": "a prikk prikk prikk b"
+      "expected": "produkt med variabelt antall faktorer"
     },
     "AbstrVarArrowRelation_default": {
-      "expected": "a høyrepil prikk prikk prikk venstre-høyrepil b"
+      "expected": "pil sekvens med variabelt antall elementer"
     },
     "AbstrArrowRelation_default": {
-      "expected": "a høyrepil c venstre-høyrepil b"
+      "expected": "pil"
     },
     "AbstrVarRowvector_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes a prikk prikk prikk b"
+      "expected": "n-dimensjonal radvektor"
     }
   }
 }

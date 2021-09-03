@@ -10,31 +10,31 @@
   "compare": true,
   "tests": {
     "AbsValueVsNeutral_0_default": {
-      "expected": "vertikalstrek vertikalstrek a"
+      "expected": "StartAbsoluttVerdi a StoppAbsoluttVerdi"
     },
     "AbsValueVsNeutral_0_brief": {
-      "expected": "vertikalstrek vertikalstrek a"
+      "expected": "StartAbsoluttVerdi a StoppAbsoluttVerdi"
     },
     "AbsValueVsNeutral_0_sbrief": {
-      "expected": "vertikalstrek vertikalstrek a"
+      "expected": "AbsoluttVerdi a StoppAbsoluttVerdi"
     },
     "AbsValueVsNeutral_1_default": {
-      "expected": "vertikal strek vertikal strek a"
+      "expected": "StartAbsoluttVerdi a StoppAbsoluttVerdi"
     },
     "AbsValueVsNeutral_1_brief": {
-      "expected": "vertikal strek vertikal strek a"
+      "expected": "StartAbsoluttVerdi a StoppAbsoluttVerdi"
     },
     "AbsValueVsNeutral_1_sbrief": {
-      "expected": "vertikal strek vertikal strek a"
+      "expected": "AbsoluttVerdi a StoppAbsoluttVerdi"
     },
     "NegativeVulgarFraction_default": {
-      "expected": "minus fem attende"
+      "expected": "negativ fem attende"
     },
     "NegativeVulgarFraction_brief": {
-      "expected": "minus fem attende"
+      "expected": "negativ fem attende"
     },
     "NegativeVulgarFraction_sbrief": {
-      "expected": "minus fem attende"
+      "expected": "negativ fem attende"
     },
     "NonalphaIdentifier_default": {
       "expected": "30 grader"
@@ -46,31 +46,31 @@
       "expected": "30 grader"
     },
     "MixedIdentifier_default": {
-      "expected": "stor bokstav S i stor bokstav O 2 pluss 6 stor bokstav H stor bokstav F høyrepil stor bokstav H 2 stor bokstav S i stor bokstav F 6 pluss 2 stor bokstav H 2 stor bokstav O"
+      "expected": "stor bokstav S i normal stor bokstav O 2 pluss 6 normal stor bokstav H normal stor bokstav F høyrepil normal stor bokstav H 2 stor bokstav S i normal stor bokstav F 6 pluss 2 normal stor bokstav H 2 normal stor bokstav O"
     },
     "MixedIdentifier_brief": {
-      "expected": "stor bokstav S i stor bokstav O 2 pluss 6 stor bokstav H stor bokstav F høyrepil stor bokstav H 2 stor bokstav S i stor bokstav F 6 pluss 2 stor bokstav H 2 stor bokstav O"
+      "expected": "stor bokstav S i normal stor bokstav O 2 pluss 6 normal stor bokstav H normal stor bokstav F høyrepil normal stor bokstav H 2 stor bokstav S i normal stor bokstav F 6 pluss 2 normal stor bokstav H 2 normal stor bokstav O"
     },
     "MixedIdentifier_sbrief": {
-      "expected": "stor bokstav S i stor bokstav O 2 pluss 6 stor bokstav H stor bokstav F høyrepil stor bokstav H 2 stor bokstav S i stor bokstav F 6 pluss 2 stor bokstav H 2 stor bokstav O"
+      "expected": "stor bokstav S i normal stor bokstav O 2 pluss 6 normal stor bokstav H normal stor bokstav F høyrepil normal stor bokstav H 2 stor bokstav S i normal stor bokstav F 6 pluss 2 normal stor bokstav H 2 normal stor bokstav O"
     },
     "ParenSuper_default": {
-      "expected": "venstre parentes a høyre parentes Superskript 2"
+      "expected": "venstre parentes a høyre parentes i andre potens"
     },
     "ParenSuper_brief": {
-      "expected": "venstre parentes a høyre parentes Sub 2"
+      "expected": "venstre parentes a høyre parentes i andre potens"
     },
     "ParenSuper_sbrief": {
-      "expected": "venstre parentes a høyre parentes Sub 2"
+      "expected": "venstre parentes a høyre parentes i andre potens"
     },
     "ParenConvoluted_default": {
-      "expected": "venstre parentes minus x Superskript 2 skråstrek 2 høyre parentes"
+      "expected": "venstre parentes minus x i andre potens skråstrek 2 høyre parentes"
     },
     "ParenConvoluted_brief": {
-      "expected": "venstre parentes minus x Sub 2 skråstrek 2 høyre parentes"
+      "expected": "venstre parentes minus x i andre potens skråstrek 2 høyre parentes"
     },
     "ParenConvoluted_sbrief": {
-      "expected": "venstre parentes minus x Sub 2 skråstrek 2 høyre parentes"
+      "expected": "venstre parentes minus x i andre potens skråstrek 2 høyre parentes"
     },
     "SupBaseRelseq_default": {
       "expected": "c 1 h Superskript 4 minus 2 s Grunnlinje er mindre enn eller er lik Start Brøk 1 Over 2 stor bokstav T Slutt Brøk er mindre enn eller er lik c 2 h Superskript 4 minus 2 s"
@@ -127,13 +127,13 @@
       "expected": "h Sub s Sub t Basis er mindre enn eller er lik Brøk 1 Over 2 stor bokstav T SluttBrøk er lik h Sub s Sub t"
     },
     "SquareWithText_default": {
-      "expected": "Start Brøk area of triangle Over area of square Slutt Brøk er lik Start Brøk 1 unit Superskript 2 Grunnlinje Over 16 units Superskript 3 Grunnlinje Slutt Brøk"
+      "expected": "Start Brøk area of triangle Over area of square Slutt Brøk er lik Start Brøk 1 unit i andre potens Over 16 units i tredje potens Slutt Brøk"
     },
     "SquareWithText_brief": {
-      "expected": "Start Brøk area of triangle Over area of square Slutt Brøk er lik Start Brøk 1 unit Sub 2 Basis Over 16 units Sub 3 Basis Slutt Brøk"
+      "expected": "Start Brøk area of triangle Over area of square Slutt Brøk er lik Start Brøk 1 unit i andre potens Over 16 units i tredje potens Slutt Brøk"
     },
     "SquareWithText_sbrief": {
-      "expected": "Brøk area of triangle Over area of square SluttBrøk er lik Brøk 1 unit Sub 2 Basis Over 16 units Sub 3 Basis SluttBrøk"
+      "expected": "Brøk area of triangle Over area of square SluttBrøk er lik Brøk 1 unit i andre potens Over 16 units i tredje potens SluttBrøk"
     },
     "FootnoteWithText_default": {
       "expected": "area of triangle area of square Superskript 1 Grunnlinje 1 unit Superskript 2 Grunnlinje 16 units Superskript 3"
@@ -154,121 +154,121 @@
       "expected": "area of triangle Sub 2"
     },
     "LabelledRow_default": {
-      "expected": "venstre parentes 1 høyre parentes ab"
+      "expected": "StartOppsett 1. Rad  med etikett venstre parentes 1 høyre parentes StoppEtikett 1. Kolonne a 2. Kolonne b StoppOppsett"
     },
     "LabelledRow_brief": {
-      "expected": "venstre parentes 1 høyre parentes ab"
+      "expected": "StartOppsett 1. Rad  Etikett venstre parentes 1 høyre parentes 1. Kolonne a 2. Kolonne b StoppOppsett"
     },
     "LabelledRow_sbrief": {
-      "expected": "venstre parentes 1 høyre parentes ab"
+      "expected": "Oppsett 1. Rad  Etikett venstre parentes 1 høyre parentes 1. Kolonne a 2. Kolonne b StoppOppsett"
     },
     "LabelledLine_default": {
-      "expected": "venstre parentes 1 høyre parentes a"
+      "expected": "StartOppsett 1. Rad  med Etikett venstre parentes 1 høyre parentes StoppEtikett a StoppOppsett"
     },
     "LabelledLine_brief": {
-      "expected": "venstre parentes 1 høyre parentes a"
+      "expected": "StartOppsett 1. Rad  Etikett venstre parentes 1 høyre parentes a StoppOppsett"
     },
     "LabelledLine_sbrief": {
-      "expected": "venstre parentes 1 høyre parentes a"
+      "expected": "Oppsett 1. Rad  Etikett venstre parentes 1 høyre parentes a StoppOppsett"
     },
     "LabelledEmptyLine_default": {
-      "expected": "venstre parentes 1 høyre parentes"
+      "expected": "StartOppsett 1. Rad  med Etikett venstre parentes 1 høyre parentes StoppEtikett Tom StoppOppsett"
     },
     "LabelledEmptyLine_brief": {
-      "expected": "venstre parentes 1 høyre parentes"
+      "expected": "StartOppsett 1. Rad  Etikett venstre parentes 1 høyre parentes Tom StoppOppsett"
     },
     "LabelledEmptyLine_sbrief": {
-      "expected": "venstre parentes 1 høyre parentes"
+      "expected": "Oppsett 1. Rad  Etikett venstre parentes 1 høyre parentes Tom StoppOppsett"
     },
     "EmptyLine_default": {
-      "expected": ""
+      "expected": "StartOppsett 1. Rad  Tom StoppOppsett"
     },
     "EmptyLine_brief": {
-      "expected": ""
+      "expected": "StartOppsett 1. Rad  Tom StoppOppsett"
     },
     "EmptyLine_sbrief": {
-      "expected": ""
+      "expected": "Oppsett 1. Rad  Tom StoppOppsett"
     },
     "EmptyRow_default": {
-      "expected": "ab"
+      "expected": "StartOppsett 1. Rad 1. Kolonne a 2. Kolonne b 2. Rad  Tom StoppOppsett"
     },
     "EmptyRow_brief": {
-      "expected": "ab"
+      "expected": "StartOppsett 1. Rad 1. Kolonne a 2. Kolonne b 2. Rad  Tom StoppOppsett"
     },
     "EmptyRow_sbrief": {
-      "expected": "ab"
+      "expected": "Oppsett 1. Rad 1. Kolonne a 2. Kolonne b 2. Rad  Tom StoppOppsett"
     },
     "EmptyCell_default": {
-      "expected": ""
+      "expected": "StartOppsett 1. Rad  Tom StoppOppsett"
     },
     "EmptyCell_brief": {
-      "expected": ""
+      "expected": "StartOppsett 1. Rad  Tom StoppOppsett"
     },
     "EmptyCell_sbrief": {
-      "expected": ""
+      "expected": "Oppsett 1. Rad  Tom StoppOppsett"
     },
     "TextLabelledLine_default": {
-      "expected": "venstre parentes 1 høyre parentes a"
+      "expected": "StartOppsett 1. Rad  med Etikett venstre parentes 1 høyre parentes StoppEtikett a StoppOppsett"
     },
     "TextLabelledLine_brief": {
-      "expected": "venstre parentes 1 høyre parentes a"
+      "expected": "StartOppsett 1. Rad  Etikett venstre parentes 1 høyre parentes a StoppOppsett"
     },
     "TextLabelledLine_sbrief": {
-      "expected": "venstre parentes 1 høyre parentes a"
+      "expected": "Oppsett 1. Rad  Etikett 1 a StoppOppsett"
     },
     "TextLabelledRow_default": {
-      "expected": "venstre parentes 1 høyre parentes ab"
+      "expected": "StartOppsett 1. Rad  med etikett venstre parentes 1 høyre parentes StoppEtikett 1. Kolonne a 2. Kolonne b StoppOppsett"
     },
     "TextLabelledRow_brief": {
-      "expected": "venstre parentes 1 høyre parentes ab"
+      "expected": "StartOppsett 1. Rad  Etikett venstre parentes 1 høyre parentes 1. Kolonne a 2. Kolonne b StoppOppsett"
     },
     "TextLabelledRow_sbrief": {
-      "expected": "venstre parentes 1 høyre parentes ab"
+      "expected": "Oppsett 1. Rad  Etikett 1 1. Kolonne a 2. Kolonne b StoppOppsett"
     },
     "EncloseOverbar_default": {
-      "expected": "a"
+      "expected": "a overstrek"
     },
     "EncloseOverbar_brief": {
-      "expected": "a"
+      "expected": "a overstrek"
     },
     "EncloseOverbar_sbrief": {
-      "expected": "a"
+      "expected": "a overstrek"
     },
     "EncloseUnderbar_default": {
-      "expected": "a"
+      "expected": "a understrek"
     },
     "EncloseUnderbar_brief": {
-      "expected": "a"
+      "expected": "a understrek"
     },
     "EncloseUnderbar_sbrief": {
-      "expected": "a"
+      "expected": "a understrek"
     },
     "PrefixopSquare_default": {
-      "expected": "partiellderivert Superskript 2 Grunnlinje x"
+      "expected": "partiellderivert i andre potens x"
     },
     "PrefixopSquare_brief": {
-      "expected": "partiellderivert Sub 2 Basis x"
+      "expected": "partiellderivert i andre potens x"
     },
     "PrefixopSquare_sbrief": {
-      "expected": "partiellderivert Sub 2 Basis x"
+      "expected": "partiellderivert i andre potens x"
     },
     "PrefixopCube_default": {
-      "expected": "partiellderivert Superskript 3 Grunnlinje x"
+      "expected": "partiellderivert i tredje potens x"
     },
     "PrefixopCube_brief": {
-      "expected": "partiellderivert Sub 3 Basis x"
+      "expected": "partiellderivert i tredje potens x"
     },
     "PrefixopCube_sbrief": {
-      "expected": "partiellderivert Sub 3 Basis x"
+      "expected": "partiellderivert i tredje potens x"
     },
     "Vector_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes abc"
+      "expected": "Start 3 Med 1 Matrise 1. Rad  a 2. Rad  b 3. Rad  c StoppMatrise"
     },
     "Vector_brief": {
-      "expected": "venstre hakeparentes høyre hakeparentes abc"
+      "expected": "Start 3 Med 1 Matrise 1. Rad  a 2. Rad  b 3. Rad  c StoppMatrise"
     },
     "Vector_sbrief": {
-      "expected": "venstre hakeparentes høyre hakeparentes abc"
+      "expected": "3 Med 1 Matrise 1. Rad  a 2. Rad  b 3. Rad  c StoppMatrise"
     }
   }
 }

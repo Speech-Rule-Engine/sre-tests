@@ -103,154 +103,154 @@
   "compare": true,
   "tests": {
     "AbstrAddition_default": {
-      "expected": "a pluss b"
+      "expected": "sum med 2 delsummer"
     },
     "AbstrBigop_default": {
-      "expected": "sum sum x"
+      "expected": "sum"
     },
     "AbstrBinomial_default": {
-      "expected": "venstre parentes høyre parentes xy"
+      "expected": "binomialkoeffisient"
     },
     "AbstrCases_default": {
-      "expected": "venstre krøllparentes y 0 y 2"
+      "expected": "case-setning med 2 caser"
     },
     "AbstrCell_default": {
-      "expected": "1. Column a"
+      "expected": "1. Kolonne i tabell"
     },
     "AbstrContinuedFraction_default": {
-      "expected": "b 1 pluss pluss a 1 b 2 pluss pluss a 2 b 3 pluss pluss a 3 prikk prikk prikk"
+      "expected": "kjedebrøk"
     },
     "AbstrDeterminant_default": {
-      "expected": "vertikalstrek vertikalstrek abcd"
+      "expected": "2 dimensjonal determinant"
     },
     "AbstrFraction_default": {
-      "expected": "1 x"
+      "expected": "brøk"
     },
     "AbstrFunction_default": {
-      "expected": "sinus"
+      "expected": "funksjonsuttrykk"
     },
     "AbstrIdentifier_default": {
-      "expected": "a"
+      "expected": "identifikator"
     },
     "AbstrInfixop_default": {
-      "expected": "a skråstrek b"
+      "expected": "divisjon med 2 elementer"
     },
     "AbstrIntegral_default": {
-      "expected": "konturintegral konturintegral prikk prikk Eddl"
+      "expected": "integral"
     },
     "AbstrLim_default": {
-      "expected": "grense"
+      "expected": "grenseverdifunksjon"
     },
     "AbstrLine_default": {
-      "expected": "1. Row a"
+      "expected": "1. Rad i flere linjer"
     },
     "AbstrMatrix_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes abcdef"
+      "expected": "3 ganger 2 matrise"
     },
     "AbstrMixedNumber_default": {
-      "expected": ""
+      "expected": "blandet nummer"
     },
     "AbstrMultiplication_default": {
-      "expected": "a asterisk b"
+      "expected": "produkt med 2 faktorer"
     },
     "AbstrMultirel_default": {
-      "expected": "a er lik b er mindre enn eller er lik b"
+      "expected": "relasjonssekvens med 3 elementer"
     },
     "AbstrNumber_default": {
-      "expected": "123456"
+      "expected": "nummer"
     },
     "AbstrPunctuated_default": {
-      "expected": "a komma b komma c"
+      "expected": "komma separert liste med lengde 3"
     },
     "AbstrRelation_default": {
-      "expected": "a er lik b"
+      "expected": "likhet"
     },
     "AbstrRelationSeq_default": {
-      "expected": "a er lik b er lik b"
+      "expected": "likhet sekvens med 3 elementer"
     },
     "AbstrRoot_default": {
-      "expected": "3 x"
+      "expected": "rot med eksponent 3"
     },
     "AbstrRootNested_default": {
-      "expected": "3 pluss pluss 4 xx"
+      "expected": "nøstet rot med eksponent 3"
     },
     "AbstrRow_default": {
-      "expected": "1. Row a b"
+      "expected": "1. Rad i tabell med 2 kolonner"
     },
     "AbstrRowvector_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes ab"
+      "expected": "2 dimensjonal radvektor"
     },
     "AbstrSqrt_default": {
-      "expected": "2"
+      "expected": "kvadratrot"
     },
     "AbstrSqrtNested_default": {
-      "expected": "ganger ganger 22"
+      "expected": "n-te rot"
     },
     "AbstrSquarematrix_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes abcd"
+      "expected": "2 dimensjonal kvadratmatrise"
     },
     "AbstrSubscript_default": {
-      "expected": "ab"
+      "expected": "indeks"
     },
     "AbstrSubsup_default": {
-      "expected": "acb"
+      "expected": "potens med indeks"
     },
     "AbstrSuperscript_default": {
-      "expected": "ab"
+      "expected": "potens"
     },
     "AbstrTable_default": {
-      "expected": "abcd"
+      "expected": "tabell med 2 rader og 2 kolonner"
     },
     "AbstrText_default": {
-      "expected": "a b c"
+      "expected": "tekst"
     },
     "AbstrVarAddition_default": {
-      "expected": "a pluss prikk prikk prikk pluss b"
+      "expected": "sum med variabelt antall delsummer"
     },
     "AbstrVarCases_default": {
-      "expected": "venstre krøllparentes a prikk prikk prikk b"
+      "expected": "case-setning med variabelt antall alternativer"
     },
     "AbstrVarDeterminant_default": {
-      "expected": "vertikalstrek vertikalstrek abe prikk prikk prikk cdf"
+      "expected": "n-dimensjonal determinant"
     },
     "AbstrVarMatrix_default": {
-      "expected": "venstre parentes høyre parentes abe prikk prikk prikk cdf"
+      "expected": "n ganger m-dimensjonal matrise"
     },
     "AbstrVarMultiplication_default": {
-      "expected": "a asterisk prikk prikk prikk asterisk b"
+      "expected": "produkt med variabelt antall faktorer"
     },
     "AbstrVarMultirel_default": {
-      "expected": "a er lik prikk prikk prikk er mindre enn eller er lik b"
+      "expected": "relasjonssekvens med variabelt antall elementer"
     },
     "AbstrVarPunctuated_default": {
-      "expected": "a komma prikk prikk prikk komma b"
+      "expected": "komma separert liste med variabel lengde"
     },
     "AbstrVarRelation_default": {
-      "expected": "a er lik prikk prikk prikk er lik b"
+      "expected": "likhet sekvens med variabelt antall elementer"
     },
     "AbstrVarVector_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes a vertikal ellipse cd"
+      "expected": "n-dimensjonal vektor"
     },
     "AbstrVector_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes ace"
+      "expected": "3 dimensjonal vektor"
     },
     "AbstrVarSubtraction_default": {
-      "expected": "a minus prikk prikk prikk minus b"
+      "expected": "subtraksjon med variabelt antall elementer"
     },
     "AbstrCountImplicit_default": {
-      "expected": "a b c"
+      "expected": "produkt med 3 faktorer"
     },
     "AbstrVarImplicit_default": {
-      "expected": "a prikk prikk prikk b"
+      "expected": "produkt med variabelt antall faktorer"
     },
     "AbstrVarArrowRelation_default": {
-      "expected": "a høyrepil prikk prikk prikk venstre-høyrepil b"
+      "expected": "pil sekvens med variabelt antall elementer"
     },
     "AbstrArrowRelation_default": {
-      "expected": "a høyrepil c venstre-høyrepil b"
+      "expected": "pil"
     },
     "AbstrVarRowvector_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes a prikk prikk prikk b"
+      "expected": "n-dimensjonal radvektor"
     }
   }
 }

@@ -70,13 +70,13 @@
       "expected": "n m"
     },
     "BinomialFromFrac_0": {
-      "expected": "venstre parentes høyre parentes nk"
+      "expected": "StartBinomialEllerMatrise n Velg k StoppBinomialEllerMatrise"
     },
     "BinomialFromFrac_1": {
-      "expected": "venstre parentes høyre parentes nk"
+      "expected": "StartBinomialEllerMatrise n Velg k StoppBinomialEllerMatrise"
     },
     "BinomialFromFrac_2": {
-      "expected": "venstre parentes høyre parentes nk"
+      "expected": "StartBinomialEllerMatrise n Velg k StoppBinomialEllerMatrise"
     },
     "BinomialFromFrac_3": {
       "expected": "venstre parentes Start Brøk n Over k Slutt Brøk høyre parentes"
@@ -115,10 +115,10 @@
       "expected": "apostrof"
     },
     "GermanFonts_0": {
-      "expected": "stor bokstav A"
+      "expected": "gotisk stor bokstav A"
     },
     "GermanFonts_1": {
-      "expected": "stor bokstav A"
+      "expected": "fet gotisk stor bokstav A"
     },
     "GermanFonts_2": {
       "expected": "gotisk stor bokstav A"
@@ -127,31 +127,31 @@
       "expected": "fet gotisk stor bokstav A"
     },
     "GermanFonts_4": {
-      "expected": "abc"
+      "expected": "fet gotisk abc"
     },
     "GermanFonts_5": {
-      "expected": "ABC"
+      "expected": "fet gotisk ABC"
     },
     "GermanFonts_6": {
-      "expected": "ABC"
+      "expected": "fet gotisk stor bokstav A stor bokstav B stor bokstav C"
     },
     "OtherFonts_0": {
       "expected": "m"
     },
     "OtherFonts_1": {
-      "expected": "m"
+      "expected": "normal m"
     },
     "OtherFonts_2": {
       "expected": "m i"
     },
     "OtherFonts_3": {
-      "expected": "mi"
+      "expected": "kursiv m i"
     },
     "OtherFonts_4": {
       "expected": "30"
     },
     "OtherFonts_5": {
-      "expected": "3"
+      "expected": "kursiv 3"
     },
     "OtherFonts_6": {
       "expected": "30 grader"
@@ -160,10 +160,10 @@
       "expected": "3 0 m stor bokstav A"
     },
     "Multiline_0": {
-      "expected": "ab"
+      "expected": "StartOppsett 1. Rad  a 2. Rad  b StoppOppsett"
     },
     "Multiline_1": {
-      "expected": "acbd"
+      "expected": "StartOppsett 1. Rad 1. Kolonne a 2. Kolonne c 2. Rad 1. Kolonne b 2. Kolonne d StoppOppsett"
     },
     "RelationsWithEmpty_0": {
       "expected": "er mindre enn eller er lik 2"
@@ -175,16 +175,16 @@
       "expected": "er mindre enn eller er lik 2 er lik"
     },
     "RelationsWithEmpty_3": {
-      "expected": "1 er mindre enn eller er lik er mindre enn eller er lik 2"
+      "expected": "StartOppsett 1. Rad 1. Kolonne 1 2. Kolonne er mindre enn eller er lik 2 StoppOppsett"
     },
     "EncloseGeneral": {
-      "expected": "a"
+      "expected": "StartOmslutting sirkel a StoppOmslutting"
     },
     "EncloseLeftbar": {
-      "expected": "a"
+      "expected": "vertikal strek a"
     },
     "EncloseRightbar": {
-      "expected": "a"
+      "expected": "a vertikal strek"
     },
     "LatinMathfonts_0": {
       "expected": "gotisk stor bokstav A"
@@ -244,7 +244,7 @@
       "expected": ""
     },
     "Issue279_1": {
-      "expected": "venstre parentes 3 punktum 1 punktum 10 høyre parentes"
+      "expected": "StartOppsett 1. Rad  med Etikett venstre parentes 3 punktum 1 punktum 10 høyre parentes StoppEtikett StoppOppsett"
     },
     "Issue320_0": {
       "expected": "partiellderivert"
@@ -253,7 +253,7 @@
       "expected": "x faktorisk"
     },
     "Issue320_2": {
-      "expected": "minus minus x"
+      "expected": "minus negativ x"
     },
     "Issue320_3": {
       "expected": "pluss pluss x"
@@ -265,73 +265,73 @@
       "expected": "partiellderivert partiellderivert x"
     },
     "Issue320_6": {
-      "expected": "venstre parentes Start Brøk partiellderivert Superskript 2 Grunnlinje Over partiellderivert x Superskript 2 Grunnlinje Slutt Brøk pluss Start Brøk partiellderivert Superskript 2 Grunnlinje Over partiellderivert y Superskript 2 Grunnlinje Slutt Brøk høyre parentes vertikalstrek vertikalstrek ganger ganger pi venstre parentes høyre parentes pluss pluss x ganger ganger iy Superskript 2 Grunnlinje er lik 0"
+      "expected": "venstre parentes Start Brøk partiellderivert i andre potens Over partiellderivert x i andre potens Slutt Brøk pluss Start Brøk partiellderivert i andre potens Over partiellderivert y i andre potens Slutt Brøk høyre parentes StartAbsoluttVerdi pi venstre parentes x pluss normal i y høyre parentes StoppAbsoluttVerdi i andre potens er lik 0"
     },
     "Prime_0": {
-      "expected": "x Superskript prim"
+      "expected": "x prim"
     },
     "Prime_1": {
-      "expected": "x Superskript dobbel prim"
+      "expected": "x dobbel prim"
     },
     "Prime_2": {
-      "expected": "x Superskript trippelprom"
+      "expected": "x trippelprom"
     },
     "Prime_3": {
-      "expected": "x Superskript kvadruppel prim"
+      "expected": "x kvadruppel prim"
     },
     "Prime_4": {
-      "expected": "x Superskript prim"
+      "expected": "x prim"
     },
     "Prime_5": {
-      "expected": "x Superskript dobbel prim"
+      "expected": "x dobbel prim"
     },
     "Prime_6": {
-      "expected": "x Superskript prim"
+      "expected": "x prim"
     },
     "Prime_7": {
-      "expected": "x Superskript dobbelt prim"
+      "expected": "x dobbelt prim"
     },
     "Prime_8": {
-      "expected": "x Superskript apostrof"
+      "expected": "x apostrof"
     },
     "Prime_9": {
-      "expected": "x Superskript dobbel prim"
+      "expected": "x dobbel prim"
     },
     "Prime_10": {
-      "expected": "x Superskript trippelprom"
+      "expected": "x trippelprom"
     },
     "Prime_11": {
-      "expected": "x Superskript kvadruppel prim"
+      "expected": "x kvadruppel prim"
     },
     "Prime_12": {
-      "expected": "x Superskript apostrof apostrof apostrof apostrof apostrof"
+      "expected": "x fem prim"
     },
     "Prime_13": {
-      "expected": "x Superskript apostrof apostrof apostrof apostrof apostrof apostrof"
+      "expected": "x seks prim"
     },
     "Prime_14": {
-      "expected": "x Superskript dobbel prim"
+      "expected": "x dobbel prim"
     },
     "Prime_15": {
-      "expected": "x Superskript trippelprom"
+      "expected": "x trippelprom"
     },
     "Prime_16": {
-      "expected": "x Superskript kvadruppel prim"
+      "expected": "x kvadruppel prim"
     },
     "Prime_17": {
-      "expected": "x Superskript apostrof apostrof apostrof apostrof apostrof"
+      "expected": "x fem prim"
     },
     "Prime_18": {
-      "expected": "x Superskript apostrof apostrof apostrof apostrof apostrof apostrof"
+      "expected": "x seks prim"
     },
     "LimBoth_0": {
-      "expected": "sum Underskript n Overskript 2 Sluttskript Underskript understrek Sluttskript Overskript tilde Sluttskript"
+      "expected": "ModifiserOver ModifiserUnder sum Underskript n Overskript 2 Sluttskript Med understrek Med tilde"
     },
     "LimBoth_1": {
-      "expected": "sum Underskript n Overskript 2 Sluttskript Underskript understrek Sluttskript Overskript tilde Sluttskript"
+      "expected": "ModifiserOver ModifiserUnder sum Underskript n Overskript 2 Sluttskript Med understrek Med tilde"
     },
     "LimBoth_2": {
-      "expected": "sum Underskript n Overskript 2 Sluttskript Underskript understrek Sluttskript Overskript tilde Sluttskript"
+      "expected": "ModifiserOver ModifiserUnder sum Underskript n Overskript 2 Sluttskript Med understrek Med tilde"
     },
     "LimBoth_3": {
       "expected": "sum Underskript n Overskript 2 Sluttskript"
@@ -364,16 +364,16 @@
       "expected": "sum Underskript n Sluttskript a"
     },
     "Issue_442_0": {
-      "expected": "9 deletegn 3 er ikke lik 9 gangetegn 3"
+      "expected": "9 delt på 3 er ikke lik 9 gangetegn 3"
     },
     "Issue_442_1": {
-      "expected": "9 deletegn 3"
+      "expected": "9 delt på 3"
     },
     "Issue_442_2": {
-      "expected": "9 skråstrek 3 er ikke lik 9 gangetegn 3"
+      "expected": "9 delt på 3 er ikke lik 9 gangetegn 3"
     },
     "Issue_442_3": {
-      "expected": "9 skråstrek 3"
+      "expected": "9 delt på 3"
     }
   }
 }

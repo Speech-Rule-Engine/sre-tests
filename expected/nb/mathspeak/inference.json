@@ -11,49 +11,49 @@
   "compare": true,
   "tests": {
     "NoLabel_0": {
-      "expected": "XA"
+      "expected": "slutningsregel med konklusjon stor bokstav X og 1 premiss"
     },
     "NoLabel_1": {
-      "expected": "XA"
+      "expected": "slutningsregel med konklusjon stor bokstav X og 1 premiss"
     },
     "Premise_0": {
-      "expected": "stor bokstav X"
+      "expected": "slutningsregel med konklusjon stor bokstav X og 1 premiss"
     },
     "Premise_1": {
-      "expected": "NX"
+      "expected": "slutningsregel etikett stor bokstav N med konklusjon stor bokstav X og 1 premiss"
     },
     "Axiom": {
-      "expected": "stor bokstav A"
+      "expected": "aksiom stor bokstav A"
     },
     "EmptyAxiom": {
-      "expected": ""
+      "expected": "tomt aksiom"
     },
     "RightLabel_0": {
-      "expected": "NXA"
+      "expected": "slutningsregel etikett stor bokstav N med konklusjon stor bokstav X og 1 premiss"
     },
     "RightLabel_1": {
-      "expected": "NXAB"
+      "expected": "slutningsregel etikett stor bokstav N med konklusjon stor bokstav X og 2 premisser"
     },
     "RightLabel_2": {
-      "expected": "NXABC"
+      "expected": "slutningsregel etikett stor bokstav N med konklusjon stor bokstav X og 3 premisser"
     },
     "LeftLabel_0": {
-      "expected": "NXA"
+      "expected": "slutningsregel etikett stor bokstav N med konklusjon stor bokstav X og 1 premiss"
     },
     "LeftLabel_1": {
-      "expected": "NXAB"
+      "expected": "slutningsregel etikett stor bokstav N med konklusjon stor bokstav X og 2 premisser"
     },
     "LeftLabel_2": {
-      "expected": "NXABC"
+      "expected": "slutningsregel etikett stor bokstav N med konklusjon stor bokstav X og 3 premisser"
     },
     "Premises_0": {
-      "expected": "stor bokstav A"
+      "expected": "1. premiss  aksiom stor bokstav A"
     },
     "Premises_1": {
-      "expected": "AB"
+      "expected": "1. premiss  aksiom stor bokstav A 2. premiss  aksiom stor bokstav B"
     },
     "Premises_2": {
-      "expected": "ABC"
+      "expected": "1. premiss  aksiom stor bokstav A 2. premiss  aksiom stor bokstav B 3. premiss  aksiom stor bokstav C"
     }
   }
 }
