@@ -1,0 +1,373 @@
+{
+  "name": "CatalanMathspeakRoots",
+  "locale": "ca",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_roots.json",
+  "information": "Catalan Mathspeak Roots tests.",
+  "domain": "mathspeak",
+  "active": "MathspeakCatalan",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "sqrt_0_default": {
+      "expected": "començar arrel a finalitzar arrel"
+    },
+    "sqrt_0_brief": {
+      "expected": "començar arrel a finalitzar arrel"
+    },
+    "sqrt_0_sbrief": {
+      "expected": "arrel a finalitzar arrel"
+    },
+    "sqrt_1_default": {
+      "expected": "índex d'arrel 2 començar arrel a finalitzar arrel"
+    },
+    "sqrt_1_brief": {
+      "expected": "índex d'arrel 2 començar arrel a finalitzar arrel"
+    },
+    "sqrt_1_sbrief": {
+      "expected": "índex 2 arrel a finalitzar arrel"
+    },
+    "sqrt_2_default": {
+      "expected": "undefinedcomençar arrel començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "sqrt_2_brief": {
+      "expected": "undefinedcomençar arrel començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "sqrt_2_sbrief": {
+      "expected": "undefinedarrel arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "sqrt_3_default": {
+      "expected": "undefinedcomençar arrel undefinedcomençar arrel undefinedcomençar arrel començar arrel a finalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel"
+    },
+    "sqrt_3_brief": {
+      "expected": "undefinedcomençar arrel undefinedcomençar arrel undefinedcomençar arrel començar arrel a finalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel"
+    },
+    "sqrt_3_sbrief": {
+      "expected": "undefinedarrel undefinedarrel undefinedarrel arrel a finalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel"
+    },
+    "roots_0_default": {
+      "expected": "índex d'arrel 1 començar arrel a finalitzar arrel"
+    },
+    "roots_0_brief": {
+      "expected": "índex d'arrel 1 començar arrel a finalitzar arrel"
+    },
+    "roots_0_sbrief": {
+      "expected": "índex 1 arrel a finalitzar arrel"
+    },
+    "roots_1_default": {
+      "expected": "índex d'arrel 2 començar arrel a finalitzar arrel"
+    },
+    "roots_1_brief": {
+      "expected": "índex d'arrel 2 començar arrel a finalitzar arrel"
+    },
+    "roots_1_sbrief": {
+      "expected": "índex 2 arrel a finalitzar arrel"
+    },
+    "roots_2_default": {
+      "expected": "índex d'arrel 3 començar arrel a finalitzar arrel"
+    },
+    "roots_2_brief": {
+      "expected": "índex d'arrel 3 començar arrel a finalitzar arrel"
+    },
+    "roots_2_sbrief": {
+      "expected": "índex 3 arrel a finalitzar arrel"
+    },
+    "roots_3_default": {
+      "expected": "índex d'arrel 4 començar arrel a finalitzar arrel"
+    },
+    "roots_3_brief": {
+      "expected": "índex d'arrel 4 començar arrel a finalitzar arrel"
+    },
+    "roots_3_sbrief": {
+      "expected": "índex 4 arrel a finalitzar arrel"
+    },
+    "roots_4_default": {
+      "expected": "índex d'arrel 5 començar arrel a finalitzar arrel"
+    },
+    "roots_4_brief": {
+      "expected": "índex d'arrel 5 començar arrel a finalitzar arrel"
+    },
+    "roots_4_sbrief": {
+      "expected": "índex 5 arrel a finalitzar arrel"
+    },
+    "roots_5_default": {
+      "expected": "índex d'arrel 6 començar arrel a finalitzar arrel"
+    },
+    "roots_5_brief": {
+      "expected": "índex d'arrel 6 començar arrel a finalitzar arrel"
+    },
+    "roots_5_sbrief": {
+      "expected": "índex 6 arrel a finalitzar arrel"
+    },
+    "roots_6_default": {
+      "expected": "índex d'arrel 7 començar arrel a finalitzar arrel"
+    },
+    "roots_6_brief": {
+      "expected": "índex d'arrel 7 començar arrel a finalitzar arrel"
+    },
+    "roots_6_sbrief": {
+      "expected": "índex 7 arrel a finalitzar arrel"
+    },
+    "roots_7_default": {
+      "expected": "índex d'arrel 8 començar arrel a finalitzar arrel"
+    },
+    "roots_7_brief": {
+      "expected": "índex d'arrel 8 començar arrel a finalitzar arrel"
+    },
+    "roots_7_sbrief": {
+      "expected": "índex 8 arrel a finalitzar arrel"
+    },
+    "roots_8_default": {
+      "expected": "índex d'arrel 9 començar arrel a finalitzar arrel"
+    },
+    "roots_8_brief": {
+      "expected": "índex d'arrel 9 començar arrel a finalitzar arrel"
+    },
+    "roots_8_sbrief": {
+      "expected": "índex 9 arrel a finalitzar arrel"
+    },
+    "roots_9_default": {
+      "expected": "índex d'arrel 10 començar arrel a finalitzar arrel"
+    },
+    "roots_9_brief": {
+      "expected": "índex d'arrel 10 començar arrel a finalitzar arrel"
+    },
+    "roots_9_sbrief": {
+      "expected": "índex 10 arrel a finalitzar arrel"
+    },
+    "roots_10_default": {
+      "expected": "índex d'arrel 11 començar arrel a finalitzar arrel"
+    },
+    "roots_10_brief": {
+      "expected": "índex d'arrel 11 començar arrel a finalitzar arrel"
+    },
+    "roots_10_sbrief": {
+      "expected": "índex 11 arrel a finalitzar arrel"
+    },
+    "nested-roots_0_default": {
+      "expected": "undefinedíndex d'arrel 1 undefinedcomençar arrel índex d'arrel 1 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_0_brief": {
+      "expected": "undefinedíndex d'arrel 1 undefinedcomençar arrel índex d'arrel 1 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_0_sbrief": {
+      "expected": "undefinedíndex 1 undefinedarrel índex 1 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_1_default": {
+      "expected": "undefinedíndex d'arrel 2 undefinedcomençar arrel índex d'arrel 2 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_1_brief": {
+      "expected": "undefinedíndex d'arrel 2 undefinedcomençar arrel índex d'arrel 2 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_1_sbrief": {
+      "expected": "undefinedíndex 2 undefinedarrel índex 2 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_2_default": {
+      "expected": "undefinedíndex d'arrel 3 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_2_brief": {
+      "expected": "undefinedíndex d'arrel 3 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_2_sbrief": {
+      "expected": "undefinedíndex 3 undefinedarrel índex 3 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_3_default": {
+      "expected": "undefinedíndex d'arrel 4 undefinedcomençar arrel índex d'arrel 4 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_3_brief": {
+      "expected": "undefinedíndex d'arrel 4 undefinedcomençar arrel índex d'arrel 4 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_3_sbrief": {
+      "expected": "undefinedíndex 4 undefinedarrel índex 4 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_4_default": {
+      "expected": "undefinedíndex d'arrel 5 undefinedcomençar arrel índex d'arrel 5 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_4_brief": {
+      "expected": "undefinedíndex d'arrel 5 undefinedcomençar arrel índex d'arrel 5 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_4_sbrief": {
+      "expected": "undefinedíndex 5 undefinedarrel índex 5 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_5_default": {
+      "expected": "undefinedíndex d'arrel 6 undefinedcomençar arrel índex d'arrel 6 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_5_brief": {
+      "expected": "undefinedíndex d'arrel 6 undefinedcomençar arrel índex d'arrel 6 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_5_sbrief": {
+      "expected": "undefinedíndex 6 undefinedarrel índex 6 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_6_default": {
+      "expected": "undefinedíndex d'arrel 7 undefinedcomençar arrel índex d'arrel 7 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_6_brief": {
+      "expected": "undefinedíndex d'arrel 7 undefinedcomençar arrel índex d'arrel 7 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_6_sbrief": {
+      "expected": "undefinedíndex 7 undefinedarrel índex 7 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_7_default": {
+      "expected": "undefinedíndex d'arrel 8 undefinedcomençar arrel índex d'arrel 8 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_7_brief": {
+      "expected": "undefinedíndex d'arrel 8 undefinedcomençar arrel índex d'arrel 8 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_7_sbrief": {
+      "expected": "undefinedíndex 8 undefinedarrel índex 8 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_8_default": {
+      "expected": "undefinedíndex d'arrel 9 undefinedcomençar arrel índex d'arrel 9 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_8_brief": {
+      "expected": "undefinedíndex d'arrel 9 undefinedcomençar arrel índex d'arrel 9 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_8_sbrief": {
+      "expected": "undefinedíndex 9 undefinedarrel índex 9 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_9_default": {
+      "expected": "undefinedíndex d'arrel 10 undefinedcomençar arrel índex d'arrel 10 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_9_brief": {
+      "expected": "undefinedíndex d'arrel 10 undefinedcomençar arrel índex d'arrel 10 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_9_sbrief": {
+      "expected": "undefinedíndex 10 undefinedarrel índex 10 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_10_default": {
+      "expected": "undefinedíndex d'arrel 11 undefinedcomençar arrel índex d'arrel 11 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_10_brief": {
+      "expected": "undefinedíndex d'arrel 11 undefinedcomençar arrel índex d'arrel 11 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "nested-roots_10_sbrief": {
+      "expected": "undefinedíndex 11 undefinedarrel índex 11 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_0_default": {
+      "expected": "undefinedíndex d'arrel 1 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_0_brief": {
+      "expected": "undefinedíndex d'arrel 1 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_0_sbrief": {
+      "expected": "undefinedíndex 1 undefinedarrel índex 3 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_1_default": {
+      "expected": "undefinedíndex d'arrel 2 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_1_brief": {
+      "expected": "undefinedíndex d'arrel 2 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_1_sbrief": {
+      "expected": "undefinedíndex 2 undefinedarrel índex 3 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_2_default": {
+      "expected": "undefinedíndex d'arrel 3 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_2_brief": {
+      "expected": "undefinedíndex d'arrel 3 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_2_sbrief": {
+      "expected": "undefinedíndex 3 undefinedarrel índex 3 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_3_default": {
+      "expected": "undefinedíndex d'arrel 4 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_3_brief": {
+      "expected": "undefinedíndex d'arrel 4 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_3_sbrief": {
+      "expected": "undefinedíndex 4 undefinedarrel índex 3 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_4_default": {
+      "expected": "undefinedíndex d'arrel 5 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_4_brief": {
+      "expected": "undefinedíndex d'arrel 5 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_4_sbrief": {
+      "expected": "undefinedíndex 5 undefinedarrel índex 3 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_5_default": {
+      "expected": "undefinedíndex d'arrel 6 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_5_brief": {
+      "expected": "undefinedíndex d'arrel 6 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_5_sbrief": {
+      "expected": "undefinedíndex 6 undefinedarrel índex 3 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_6_default": {
+      "expected": "undefinedíndex d'arrel 7 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_6_brief": {
+      "expected": "undefinedíndex d'arrel 7 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_6_sbrief": {
+      "expected": "undefinedíndex 7 undefinedarrel índex 3 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_7_default": {
+      "expected": "undefinedíndex d'arrel 8 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_7_brief": {
+      "expected": "undefinedíndex d'arrel 8 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_7_sbrief": {
+      "expected": "undefinedíndex 8 undefinedarrel índex 3 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_8_default": {
+      "expected": "undefinedíndex d'arrel 9 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_8_brief": {
+      "expected": "undefinedíndex d'arrel 9 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_8_sbrief": {
+      "expected": "undefinedíndex 9 undefinedarrel índex 3 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_9_default": {
+      "expected": "undefinedíndex d'arrel 10 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_9_brief": {
+      "expected": "undefinedíndex d'arrel 10 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_9_sbrief": {
+      "expected": "undefinedíndex 10 undefinedarrel índex 3 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_10_default": {
+      "expected": "undefinedíndex d'arrel 11 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_10_brief": {
+      "expected": "undefinedíndex d'arrel 11 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "hybrided-nested-roots_10_sbrief": {
+      "expected": "undefinedíndex 11 undefinedarrel índex 3 arrel a finalitzar arrel undefinedfinalitzar arrel"
+    },
+    "deep-nested-roots_0_default": {
+      "expected": "undefinedíndex d'arrel 2 undefinedcomençar arrel undefinedíndex d'arrel 3 undefinedcomençar arrel undefinedíndex d'arrel 4 undefinedcomençar arrel índex d'arrel 5 començar arrel a finalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel"
+    },
+    "deep-nested-roots_0_brief": {
+      "expected": "undefinedíndex d'arrel 2 undefinedcomençar arrel undefinedíndex d'arrel 3 undefinedcomençar arrel undefinedíndex d'arrel 4 undefinedcomençar arrel índex d'arrel 5 començar arrel a finalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel"
+    },
+    "deep-nested-roots_0_sbrief": {
+      "expected": "undefinedíndex 2 undefinedarrel undefinedíndex 3 undefinedarrel undefinedíndex 4 undefinedarrel índex 5 arrel a finalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel"
+    },
+    "deep-nested-roots_1_default": {
+      "expected": "undefinedíndex d'arrel 2 undefinedcomençar arrel undefinedíndex d'arrel 3 undefinedcomençar arrel undefinedíndex d'arrel 2 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel"
+    },
+    "deep-nested-roots_1_brief": {
+      "expected": "undefinedíndex d'arrel 2 undefinedcomençar arrel undefinedíndex d'arrel 3 undefinedcomençar arrel undefinedíndex d'arrel 2 undefinedcomençar arrel índex d'arrel 3 començar arrel a finalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel"
+    },
+    "deep-nested-roots_1_sbrief": {
+      "expected": "undefinedíndex 2 undefinedarrel undefinedíndex 3 undefinedarrel undefinedíndex 2 undefinedarrel índex 3 arrel a finalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel"
+    },
+    "deep-nested-roots_2_default": {
+      "expected": "undefinedíndex d'arrel 2 undefinedcomençar arrel undefinedíndex d'arrel 3 undefinedcomençar arrel undefinedcomençar arrel undefinedíndex d'arrel 3 undefinedcomençar arrel començar arrel a finalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel"
+    },
+    "deep-nested-roots_2_brief": {
+      "expected": "undefinedíndex d'arrel 2 undefinedcomençar arrel undefinedíndex d'arrel 3 undefinedcomençar arrel undefinedcomençar arrel undefinedíndex d'arrel 3 undefinedcomençar arrel començar arrel a finalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel"
+    },
+    "deep-nested-roots_2_sbrief": {
+      "expected": "undefinedíndex 2 undefinedarrel undefinedíndex 3 undefinedarrel undefinedarrel undefinedíndex 3 undefinedarrel arrel a finalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel undefinedfinalitzar arrel"
+    }
+  }
+}

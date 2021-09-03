@@ -1,0 +1,697 @@
+{
+  "name": "CatalanMathspeakTensors",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_tensors.json",
+  "information": "Catalan Mathspeak Tensor tests.",
+  "domain": "mathspeak",
+  "locale": "ca",
+  "active": "MathspeakCatalan",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "PartialTensorABCD_default": {
+      "expected": "subíndex a superíndex b línia base x subíndex c superíndex d"
+    },
+    "PartialTensorABCD_brief": {
+      "expected": "sub a sup b base x sub c sup d"
+    },
+    "PartialTensorABCD_sbrief": {
+      "expected": "sub a sup b base x sub c sup d"
+    },
+    "PartialTensorABC_default": {
+      "expected": "subíndex a superíndex b línia base x subíndex c"
+    },
+    "PartialTensorABC_brief": {
+      "expected": "sub a sup b base x sub c"
+    },
+    "PartialTensorABC_sbrief": {
+      "expected": "sub a sup b base x sub c"
+    },
+    "PartialTensorABD_default": {
+      "expected": "subíndex a superíndex b línia base x superíndex d"
+    },
+    "PartialTensorABD_brief": {
+      "expected": "sub a sup b base x sup d"
+    },
+    "PartialTensorABD_sbrief": {
+      "expected": "sub a sup b base x sup d"
+    },
+    "PartialTensorABDR_default": {
+      "expected": "subíndex a superíndex b línia base x superíndex d línia base r"
+    },
+    "PartialTensorABDR_brief": {
+      "expected": "sub a sup b base x sup d base r"
+    },
+    "PartialTensorABDR_sbrief": {
+      "expected": "sub a sup b base x sup d base r"
+    },
+    "PartialTensorABDRootR_default": {
+      "expected": "començar arrel subíndex a superíndex b línia base x superíndex d finalitzar arrel r"
+    },
+    "PartialTensorABDRootR_brief": {
+      "expected": "començar arrel sub a sup b base x sup d finalitzar arrel r"
+    },
+    "PartialTensorABDRootR_sbrief": {
+      "expected": "arrel sub a sup b base x sup d finalitzar arrel r"
+    },
+    "PartialTensorABDRRoot_default": {
+      "expected": "començar arrel subíndex a superíndex b línia base x superíndex d línia base r finalitzar arrel"
+    },
+    "PartialTensorABDRRoot_brief": {
+      "expected": "començar arrel sub a sup b base x sup d base r finalitzar arrel"
+    },
+    "PartialTensorABDRRoot_sbrief": {
+      "expected": "arrel sub a sup b base x sup d base r finalitzar arrel"
+    },
+    "PartialTensorABDFracR_default": {
+      "expected": "començar fracció 1 entre subíndex a superíndex b línia base x superíndex d finalitzar fracció r"
+    },
+    "PartialTensorABDFracR_brief": {
+      "expected": "començar frac 1 entre sub a sup b base x sup d finalitzar frac r"
+    },
+    "PartialTensorABDFracR_sbrief": {
+      "expected": "frac 1 entre sub a sup b base x sup d r"
+    },
+    "PartialTensorABDRFrac_default": {
+      "expected": "començar fracció 1 entre subíndex a superíndex b línia base x superíndex d línia base r finalitzar fracció"
+    },
+    "PartialTensorABDRFrac_brief": {
+      "expected": "començar frac 1 entre sub a sup b base x sup d base r finalitzar frac"
+    },
+    "PartialTensorABDRFrac_sbrief": {
+      "expected": "frac 1 entre sub a sup b base x sup d base r"
+    },
+    "PartialTensorAB_default": {
+      "expected": "subíndex a superíndex b línia base x"
+    },
+    "PartialTensorAB_brief": {
+      "expected": "sub a sup b base x"
+    },
+    "PartialTensorAB_sbrief": {
+      "expected": "sub a sup b base x"
+    },
+    "PartialTensorABR_default": {
+      "expected": "subíndex a superíndex b línia base x línia base r"
+    },
+    "PartialTensorABR_brief": {
+      "expected": "sub a sup b base x base r"
+    },
+    "PartialTensorABR_sbrief": {
+      "expected": "sub a sup b base x base r"
+    },
+    "PartialTensorABRootR_default": {
+      "expected": "començar arrel subíndex a superíndex b línia base x finalitzar arrel r"
+    },
+    "PartialTensorABRootR_brief": {
+      "expected": "començar arrel sub a sup b base x finalitzar arrel r"
+    },
+    "PartialTensorABRootR_sbrief": {
+      "expected": "arrel sub a sup b base x finalitzar arrel r"
+    },
+    "PartialTensorABRRoot_default": {
+      "expected": "començar arrel subíndex a superíndex b línia base x línia base r finalitzar arrel"
+    },
+    "PartialTensorABRRoot_brief": {
+      "expected": "començar arrel sub a sup b base x base r finalitzar arrel"
+    },
+    "PartialTensorABRRoot_sbrief": {
+      "expected": "arrel sub a sup b base x base r finalitzar arrel"
+    },
+    "PartialTensorABFracR_default": {
+      "expected": "començar fracció 1 entre subíndex a superíndex b línia base x finalitzar fracció r"
+    },
+    "PartialTensorABFracR_brief": {
+      "expected": "començar frac 1 entre sub a sup b base x finalitzar frac r"
+    },
+    "PartialTensorABFracR_sbrief": {
+      "expected": "frac 1 entre sub a sup b base x r"
+    },
+    "PartialTensorABRFrac_default": {
+      "expected": "començar fracció 1 entre subíndex a superíndex b línia base x línia base r finalitzar fracció"
+    },
+    "PartialTensorABRFrac_brief": {
+      "expected": "començar frac 1 entre sub a sup b base x base r finalitzar frac"
+    },
+    "PartialTensorABRFrac_sbrief": {
+      "expected": "frac 1 entre sub a sup b base x base r"
+    },
+    "PartialTensorABCR_default": {
+      "expected": "subíndex a superíndex b línia base x subíndex c línia base r"
+    },
+    "PartialTensorABCR_brief": {
+      "expected": "sub a sup b base x sub c base r"
+    },
+    "PartialTensorABCR_sbrief": {
+      "expected": "sub a sup b base x sub c base r"
+    },
+    "PartialTensorABCDR_default": {
+      "expected": "subíndex a superíndex b línia base x subíndex c superíndex d línia base r"
+    },
+    "PartialTensorABCDR_brief": {
+      "expected": "sub a sup b base x sub c sup d base r"
+    },
+    "PartialTensorABCDR_sbrief": {
+      "expected": "sub a sup b base x sub c sup d base r"
+    },
+    "PartialTensorABCDRoot_default": {
+      "expected": "començar arrel subíndex a superíndex b línia base x subíndex c superíndex d finalitzar arrel"
+    },
+    "PartialTensorABCDRoot_brief": {
+      "expected": "començar arrel sub a sup b base x sub c sup d finalitzar arrel"
+    },
+    "PartialTensorABCDRoot_sbrief": {
+      "expected": "arrel sub a sup b base x sub c sup d finalitzar arrel"
+    },
+    "PartialTensorABCDRootR_default": {
+      "expected": "començar arrel subíndex a superíndex b línia base x subíndex c superíndex d finalitzar arrel r"
+    },
+    "PartialTensorABCDRootR_brief": {
+      "expected": "començar arrel sub a sup b base x sub c sup d finalitzar arrel r"
+    },
+    "PartialTensorABCDRootR_sbrief": {
+      "expected": "arrel sub a sup b base x sub c sup d finalitzar arrel r"
+    },
+    "PartialTensorABCDRRoot_default": {
+      "expected": "començar arrel subíndex a superíndex b línia base x subíndex c superíndex d línia base r finalitzar arrel"
+    },
+    "PartialTensorABCDRRoot_brief": {
+      "expected": "començar arrel sub a sup b base x sub c sup d base r finalitzar arrel"
+    },
+    "PartialTensorABCDRRoot_sbrief": {
+      "expected": "arrel sub a sup b base x sub c sup d base r finalitzar arrel"
+    },
+    "PartialTensorABCDFrac_default": {
+      "expected": "començar fracció 1 entre subíndex a superíndex b línia base x subíndex c superíndex d finalitzar fracció"
+    },
+    "PartialTensorABCDFrac_brief": {
+      "expected": "començar frac 1 entre sub a sup b base x sub c sup d finalitzar frac"
+    },
+    "PartialTensorABCDFrac_sbrief": {
+      "expected": "frac 1 entre sub a sup b base x sub c sup d"
+    },
+    "PartialTensorABCDFracR_default": {
+      "expected": "començar fracció 1 entre subíndex a superíndex b línia base x subíndex c superíndex d finalitzar fracció r"
+    },
+    "PartialTensorABCDFracR_brief": {
+      "expected": "començar frac 1 entre sub a sup b base x sub c sup d finalitzar frac r"
+    },
+    "PartialTensorABCDFracR_sbrief": {
+      "expected": "frac 1 entre sub a sup b base x sub c sup d r"
+    },
+    "PartialTensorABCDRFrac_default": {
+      "expected": "començar fracció 1 entre subíndex a superíndex b línia base x subíndex c superíndex d línia base r finalitzar fracció"
+    },
+    "PartialTensorABCDRFrac_brief": {
+      "expected": "començar frac 1 entre sub a sup b base x sub c sup d base r finalitzar frac"
+    },
+    "PartialTensorABCDRFrac_sbrief": {
+      "expected": "frac 1 entre sub a sup b base x sub c sup d base r"
+    },
+    "PartialTensorB_default": {
+      "expected": "superíndex b línia base x"
+    },
+    "PartialTensorB_brief": {
+      "expected": "sup b base x"
+    },
+    "PartialTensorB_sbrief": {
+      "expected": "sup b base x"
+    },
+    "PartialTensorBR_default": {
+      "expected": "superíndex b línia base x línia base r"
+    },
+    "PartialTensorBR_brief": {
+      "expected": "sup b base x base r"
+    },
+    "PartialTensorBR_sbrief": {
+      "expected": "sup b base x base r"
+    },
+    "PartialTensorBRootR_default": {
+      "expected": "començar arrel superíndex b línia base x finalitzar arrel r"
+    },
+    "PartialTensorBRootR_brief": {
+      "expected": "començar arrel sup b base x finalitzar arrel r"
+    },
+    "PartialTensorBRootR_sbrief": {
+      "expected": "arrel sup b base x finalitzar arrel r"
+    },
+    "PartialTensorBRRoot_default": {
+      "expected": "començar arrel superíndex b línia base x línia base r finalitzar arrel"
+    },
+    "PartialTensorBRRoot_brief": {
+      "expected": "començar arrel sup b base x base r finalitzar arrel"
+    },
+    "PartialTensorBRRoot_sbrief": {
+      "expected": "arrel sup b base x base r finalitzar arrel"
+    },
+    "PartialTensorBFracR_default": {
+      "expected": "començar fracció 1 entre superíndex b línia base x finalitzar fracció r"
+    },
+    "PartialTensorBFracR_brief": {
+      "expected": "començar frac 1 entre sup b base x finalitzar frac r"
+    },
+    "PartialTensorBFracR_sbrief": {
+      "expected": "frac 1 entre sup b base x r"
+    },
+    "PartialTensorBRFrac_default": {
+      "expected": "començar fracció 1 entre superíndex b línia base x línia base r finalitzar fracció"
+    },
+    "PartialTensorBRFrac_brief": {
+      "expected": "començar frac 1 entre sup b base x base r finalitzar frac"
+    },
+    "PartialTensorBRFrac_sbrief": {
+      "expected": "frac 1 entre sup b base x base r"
+    },
+    "PartialTensorBD_default": {
+      "expected": "superíndex b línia base x superíndex d"
+    },
+    "PartialTensorBD_brief": {
+      "expected": "sup b base x sup d"
+    },
+    "PartialTensorBD_sbrief": {
+      "expected": "sup b base x sup d"
+    },
+    "PartialTensorBDR_default": {
+      "expected": "superíndex b línia base x superíndex d línia base r"
+    },
+    "PartialTensorBDR_brief": {
+      "expected": "sup b base x sup d base r"
+    },
+    "PartialTensorBDR_sbrief": {
+      "expected": "sup b base x sup d base r"
+    },
+    "PartialTensorBDRootR_default": {
+      "expected": "començar arrel superíndex b línia base x superíndex d finalitzar arrel r"
+    },
+    "PartialTensorBDRootR_brief": {
+      "expected": "començar arrel sup b base x sup d finalitzar arrel r"
+    },
+    "PartialTensorBDRootR_sbrief": {
+      "expected": "arrel sup b base x sup d finalitzar arrel r"
+    },
+    "PartialTensorBDRRoot_default": {
+      "expected": "començar arrel superíndex b línia base x superíndex d línia base r finalitzar arrel"
+    },
+    "PartialTensorBDRRoot_brief": {
+      "expected": "començar arrel sup b base x sup d base r finalitzar arrel"
+    },
+    "PartialTensorBDRRoot_sbrief": {
+      "expected": "arrel sup b base x sup d base r finalitzar arrel"
+    },
+    "PartialTensorBDFracR_default": {
+      "expected": "començar fracció 1 entre superíndex b línia base x superíndex d finalitzar fracció r"
+    },
+    "PartialTensorBDFracR_brief": {
+      "expected": "començar frac 1 entre sup b base x sup d finalitzar frac r"
+    },
+    "PartialTensorBDFracR_sbrief": {
+      "expected": "frac 1 entre sup b base x sup d r"
+    },
+    "PartialTensorBDRFrac_default": {
+      "expected": "començar fracció 1 entre superíndex b línia base x superíndex d línia base r finalitzar fracció"
+    },
+    "PartialTensorBDRFrac_brief": {
+      "expected": "començar frac 1 entre sup b base x sup d base r finalitzar frac"
+    },
+    "PartialTensorBDRFrac_sbrief": {
+      "expected": "frac 1 entre sup b base x sup d base r"
+    },
+    "PartialTensorBC_default": {
+      "expected": "superíndex b línia base x subíndex c"
+    },
+    "PartialTensorBC_brief": {
+      "expected": "sup b base x sub c"
+    },
+    "PartialTensorBC_sbrief": {
+      "expected": "sup b base x sub c"
+    },
+    "PartialTensorBCR_default": {
+      "expected": "superíndex b línia base x subíndex c línia base r"
+    },
+    "PartialTensorBCR_brief": {
+      "expected": "sup b base x sub c base r"
+    },
+    "PartialTensorBCR_sbrief": {
+      "expected": "sup b base x sub c base r"
+    },
+    "PartialTensorBCRootR_default": {
+      "expected": "començar arrel superíndex b línia base x subíndex c finalitzar arrel r"
+    },
+    "PartialTensorBCRootR_brief": {
+      "expected": "començar arrel sup b base x sub c finalitzar arrel r"
+    },
+    "PartialTensorBCRootR_sbrief": {
+      "expected": "arrel sup b base x sub c finalitzar arrel r"
+    },
+    "PartialTensorBCRRoot_default": {
+      "expected": "començar arrel superíndex b línia base x subíndex c línia base r finalitzar arrel"
+    },
+    "PartialTensorBCRRoot_brief": {
+      "expected": "començar arrel sup b base x sub c base r finalitzar arrel"
+    },
+    "PartialTensorBCRRoot_sbrief": {
+      "expected": "arrel sup b base x sub c base r finalitzar arrel"
+    },
+    "PartialTensorBCFracR_default": {
+      "expected": "començar fracció 1 entre superíndex b línia base x subíndex c finalitzar fracció r"
+    },
+    "PartialTensorBCFracR_brief": {
+      "expected": "començar frac 1 entre sup b base x sub c finalitzar frac r"
+    },
+    "PartialTensorBCFracR_sbrief": {
+      "expected": "frac 1 entre sup b base x sub c r"
+    },
+    "PartialTensorBCRFrac_default": {
+      "expected": "començar fracció 1 entre superíndex b línia base x subíndex c línia base r finalitzar fracció"
+    },
+    "PartialTensorBCRFrac_brief": {
+      "expected": "començar frac 1 entre sup b base x sub c base r finalitzar frac"
+    },
+    "PartialTensorBCRFrac_sbrief": {
+      "expected": "frac 1 entre sup b base x sub c base r"
+    },
+    "PartialTensorBCD_default": {
+      "expected": "superíndex b línia base x subíndex c superíndex d"
+    },
+    "PartialTensorBCD_brief": {
+      "expected": "sup b base x sub c sup d"
+    },
+    "PartialTensorBCD_sbrief": {
+      "expected": "sup b base x sub c sup d"
+    },
+    "PartialTensorBCDR_default": {
+      "expected": "superíndex b línia base x subíndex c superíndex d línia base r"
+    },
+    "PartialTensorBCDR_brief": {
+      "expected": "sup b base x sub c sup d base r"
+    },
+    "PartialTensorBCDR_sbrief": {
+      "expected": "sup b base x sub c sup d base r"
+    },
+    "PartialTensorBCDRootR_default": {
+      "expected": "començar arrel superíndex b línia base x subíndex c superíndex d finalitzar arrel r"
+    },
+    "PartialTensorBCDRootR_brief": {
+      "expected": "començar arrel sup b base x sub c sup d finalitzar arrel r"
+    },
+    "PartialTensorBCDRootR_sbrief": {
+      "expected": "arrel sup b base x sub c sup d finalitzar arrel r"
+    },
+    "PartialTensorBCDRRoot_default": {
+      "expected": "començar arrel superíndex b línia base x subíndex c superíndex d línia base r finalitzar arrel"
+    },
+    "PartialTensorBCDRRoot_brief": {
+      "expected": "començar arrel sup b base x sub c sup d base r finalitzar arrel"
+    },
+    "PartialTensorBCDRRoot_sbrief": {
+      "expected": "arrel sup b base x sub c sup d base r finalitzar arrel"
+    },
+    "PartialTensorBCDFracR_default": {
+      "expected": "començar fracció 1 entre superíndex b línia base x subíndex c superíndex d finalitzar fracció r"
+    },
+    "PartialTensorBCDFracR_brief": {
+      "expected": "començar frac 1 entre sup b base x sub c sup d finalitzar frac r"
+    },
+    "PartialTensorBCDFracR_sbrief": {
+      "expected": "frac 1 entre sup b base x sub c sup d r"
+    },
+    "PartialTensorBCDRFrac_default": {
+      "expected": "començar fracció 1 entre superíndex b línia base x subíndex c superíndex d línia base r finalitzar fracció"
+    },
+    "PartialTensorBCDRFrac_brief": {
+      "expected": "començar frac 1 entre sup b base x sub c sup d base r finalitzar frac"
+    },
+    "PartialTensorBCDRFrac_sbrief": {
+      "expected": "frac 1 entre sup b base x sub c sup d base r"
+    },
+    "PartialTensorA_default": {
+      "expected": "subíndex a línia base x"
+    },
+    "PartialTensorA_brief": {
+      "expected": "sub a base x"
+    },
+    "PartialTensorA_sbrief": {
+      "expected": "sub a base x"
+    },
+    "PartialTensorAR_default": {
+      "expected": "subíndex a línia base x línia base r"
+    },
+    "PartialTensorAR_brief": {
+      "expected": "sub a base x base r"
+    },
+    "PartialTensorAR_sbrief": {
+      "expected": "sub a base x base r"
+    },
+    "PartialTensorARootR_default": {
+      "expected": "començar arrel subíndex a línia base x finalitzar arrel r"
+    },
+    "PartialTensorARootR_brief": {
+      "expected": "començar arrel sub a base x finalitzar arrel r"
+    },
+    "PartialTensorARootR_sbrief": {
+      "expected": "arrel sub a base x finalitzar arrel r"
+    },
+    "PartialTensorARRoot_default": {
+      "expected": "començar arrel subíndex a línia base x línia base r finalitzar arrel"
+    },
+    "PartialTensorARRoot_brief": {
+      "expected": "començar arrel sub a base x base r finalitzar arrel"
+    },
+    "PartialTensorARRoot_sbrief": {
+      "expected": "arrel sub a base x base r finalitzar arrel"
+    },
+    "PartialTensorAFracR_default": {
+      "expected": "començar fracció 1 entre subíndex a línia base x finalitzar fracció r"
+    },
+    "PartialTensorAFracR_brief": {
+      "expected": "començar frac 1 entre sub a base x finalitzar frac r"
+    },
+    "PartialTensorAFracR_sbrief": {
+      "expected": "frac 1 entre sub a base x r"
+    },
+    "PartialTensorARFrac_default": {
+      "expected": "començar fracció 1 entre subíndex a línia base x línia base r finalitzar fracció"
+    },
+    "PartialTensorARFrac_brief": {
+      "expected": "començar frac 1 entre sub a base x base r finalitzar frac"
+    },
+    "PartialTensorARFrac_sbrief": {
+      "expected": "frac 1 entre sub a base x base r"
+    },
+    "PartialTensorAD_default": {
+      "expected": "subíndex a línia base x superíndex d"
+    },
+    "PartialTensorAD_brief": {
+      "expected": "sub a base x sup d"
+    },
+    "PartialTensorAD_sbrief": {
+      "expected": "sub a base x sup d"
+    },
+    "PartialTensorADR_default": {
+      "expected": "subíndex a línia base x superíndex d línia base r"
+    },
+    "PartialTensorADR_brief": {
+      "expected": "sub a base x sup d base r"
+    },
+    "PartialTensorADR_sbrief": {
+      "expected": "sub a base x sup d base r"
+    },
+    "PartialTensorADRootR_default": {
+      "expected": "començar arrel subíndex a línia base x superíndex d finalitzar arrel r"
+    },
+    "PartialTensorADRootR_brief": {
+      "expected": "començar arrel sub a base x sup d finalitzar arrel r"
+    },
+    "PartialTensorADRootR_sbrief": {
+      "expected": "arrel sub a base x sup d finalitzar arrel r"
+    },
+    "PartialTensorADRRoot_default": {
+      "expected": "començar arrel subíndex a línia base x superíndex d línia base r finalitzar arrel"
+    },
+    "PartialTensorADRRoot_brief": {
+      "expected": "començar arrel sub a base x sup d base r finalitzar arrel"
+    },
+    "PartialTensorADRRoot_sbrief": {
+      "expected": "arrel sub a base x sup d base r finalitzar arrel"
+    },
+    "PartialTensorADFracR_default": {
+      "expected": "començar fracció 1 entre subíndex a línia base x superíndex d finalitzar fracció r"
+    },
+    "PartialTensorADFracR_brief": {
+      "expected": "començar frac 1 entre sub a base x sup d finalitzar frac r"
+    },
+    "PartialTensorADFracR_sbrief": {
+      "expected": "frac 1 entre sub a base x sup d r"
+    },
+    "PartialTensorADRFrac_default": {
+      "expected": "començar fracció 1 entre subíndex a línia base x superíndex d línia base r finalitzar fracció"
+    },
+    "PartialTensorADRFrac_brief": {
+      "expected": "començar frac 1 entre sub a base x sup d base r finalitzar frac"
+    },
+    "PartialTensorADRFrac_sbrief": {
+      "expected": "frac 1 entre sub a base x sup d base r"
+    },
+    "PartialTensorAC_default": {
+      "expected": "subíndex a línia base x subíndex c"
+    },
+    "PartialTensorAC_brief": {
+      "expected": "sub a base x sub c"
+    },
+    "PartialTensorAC_sbrief": {
+      "expected": "sub a base x sub c"
+    },
+    "PartialTensorACR_default": {
+      "expected": "subíndex a línia base x subíndex c línia base r"
+    },
+    "PartialTensorACR_brief": {
+      "expected": "sub a base x sub c base r"
+    },
+    "PartialTensorACR_sbrief": {
+      "expected": "sub a base x sub c base r"
+    },
+    "PartialTensorACRootR_default": {
+      "expected": "començar arrel subíndex a línia base x subíndex c finalitzar arrel r"
+    },
+    "PartialTensorACRootR_brief": {
+      "expected": "començar arrel sub a base x sub c finalitzar arrel r"
+    },
+    "PartialTensorACRootR_sbrief": {
+      "expected": "arrel sub a base x sub c finalitzar arrel r"
+    },
+    "PartialTensorACRRoot_default": {
+      "expected": "començar arrel subíndex a línia base x subíndex c línia base r finalitzar arrel"
+    },
+    "PartialTensorACRRoot_brief": {
+      "expected": "començar arrel sub a base x sub c base r finalitzar arrel"
+    },
+    "PartialTensorACRRoot_sbrief": {
+      "expected": "arrel sub a base x sub c base r finalitzar arrel"
+    },
+    "PartialTensorACFracR_default": {
+      "expected": "començar fracció 1 entre subíndex a línia base x subíndex c finalitzar fracció r"
+    },
+    "PartialTensorACFracR_brief": {
+      "expected": "començar frac 1 entre sub a base x sub c finalitzar frac r"
+    },
+    "PartialTensorACFracR_sbrief": {
+      "expected": "frac 1 entre sub a base x sub c r"
+    },
+    "PartialTensorACRFrac_default": {
+      "expected": "començar fracció 1 entre subíndex a línia base x subíndex c línia base r finalitzar fracció"
+    },
+    "PartialTensorACRFrac_brief": {
+      "expected": "començar frac 1 entre sub a base x sub c base r finalitzar frac"
+    },
+    "PartialTensorACRFrac_sbrief": {
+      "expected": "frac 1 entre sub a base x sub c base r"
+    },
+    "PartialTensorACD_default": {
+      "expected": "subíndex a línia base x subíndex c superíndex d"
+    },
+    "PartialTensorACD_brief": {
+      "expected": "sub a base x sub c sup d"
+    },
+    "PartialTensorACD_sbrief": {
+      "expected": "sub a base x sub c sup d"
+    },
+    "PartialTensorACDR_default": {
+      "expected": "subíndex a línia base x subíndex c superíndex d línia base r"
+    },
+    "PartialTensorACDR_brief": {
+      "expected": "sub a base x sub c sup d base r"
+    },
+    "PartialTensorACDR_sbrief": {
+      "expected": "sub a base x sub c sup d base r"
+    },
+    "PartialTensorACDRootR_default": {
+      "expected": "començar arrel subíndex a línia base x subíndex c superíndex d finalitzar arrel r"
+    },
+    "PartialTensorACDRootR_brief": {
+      "expected": "començar arrel sub a base x sub c sup d finalitzar arrel r"
+    },
+    "PartialTensorACDRootR_sbrief": {
+      "expected": "arrel sub a base x sub c sup d finalitzar arrel r"
+    },
+    "PartialTensorACDRRoot_default": {
+      "expected": "començar arrel subíndex a línia base x subíndex c superíndex d línia base r finalitzar arrel"
+    },
+    "PartialTensorACDRRoot_brief": {
+      "expected": "començar arrel sub a base x sub c sup d base r finalitzar arrel"
+    },
+    "PartialTensorACDRRoot_sbrief": {
+      "expected": "arrel sub a base x sub c sup d base r finalitzar arrel"
+    },
+    "PartialTensorACDFracR_default": {
+      "expected": "començar fracció 1 entre subíndex a línia base x subíndex c superíndex d finalitzar fracció r"
+    },
+    "PartialTensorACDFracR_brief": {
+      "expected": "començar frac 1 entre sub a base x sub c sup d finalitzar frac r"
+    },
+    "PartialTensorACDFracR_sbrief": {
+      "expected": "frac 1 entre sub a base x sub c sup d r"
+    },
+    "PartialTensorACDRFrac_default": {
+      "expected": "començar fracció 1 entre subíndex a línia base x subíndex c superíndex d línia base r finalitzar fracció"
+    },
+    "PartialTensorACDRFrac_brief": {
+      "expected": "començar frac 1 entre sub a base x sub c sup d base r finalitzar frac"
+    },
+    "PartialTensorACDRFrac_sbrief": {
+      "expected": "frac 1 entre sub a base x sub c sup d base r"
+    },
+    "TensorMultiSimpleABC_default": {
+      "expected": "subíndex a superíndex b línia base x subíndex c sub superíndex l"
+    },
+    "TensorMultiSimpleABC_brief": {
+      "expected": "sub a sup b base x sub c sub sup l"
+    },
+    "TensorMultiSimpleABC_sbrief": {
+      "expected": "sub a sup b base x sub c sub sup l"
+    },
+    "TensorMultiSub_default": {
+      "expected": "subíndex a superíndex b línia base x subíndex c sub subíndex l superíndex d"
+    },
+    "TensorMultiSub_brief": {
+      "expected": "sub a sup b base x sub c sub sub l sup d"
+    },
+    "TensorMultiSub_sbrief": {
+      "expected": "sub a sup b base x sub c sub sub l sup d"
+    },
+    "TensorMultiSubSup_default": {
+      "expected": "subíndex a superíndex b línia base x subíndex c sub subíndex l sub sub superíndex k subíndex e superíndex d"
+    },
+    "TensorMultiSubSup_brief": {
+      "expected": "sub a sup b base x sub c sub sub l sub sub sup k sub e sup d"
+    },
+    "TensorMultiSubSup_sbrief": {
+      "expected": "sub a sup b base x sub c sub sub l sub sub sup k sub e sup d"
+    },
+    "TensorMultiSimple_default": {
+      "expected": "subíndex a superíndex b línia base x subíndex c sub superíndex l superíndex d"
+    },
+    "TensorMultiSimple_brief": {
+      "expected": "sub a sup b base x sub c sub sup l sup d"
+    },
+    "TensorMultiSimple_sbrief": {
+      "expected": "sub a sup b base x sub c sub sup l sup d"
+    },
+    "TensorMultiComplex_default": {
+      "expected": "subíndex a superíndex b línia base x subíndex c k sub superíndex l superíndex d"
+    },
+    "TensorMultiComplex_brief": {
+      "expected": "sub a sup b base x sub c k sub sup l sup d"
+    },
+    "TensorMultiComplex_sbrief": {
+      "expected": "sub a sup b base x sub c k sub sup l sup d"
+    },
+    "TwoTensors_default": {
+      "expected": "subíndex a superíndex b línia base x subíndex c superíndex d línia base subíndex a superíndex b línia base x subíndex c superíndex d"
+    },
+    "TwoTensors_brief": {
+      "expected": "sub a sup b base x sub c sup d base sub a sup b base x sub c sup d"
+    },
+    "TwoTensors_sbrief": {
+      "expected": "sub a sup b base x sub c sup d base sub a sup b base x sub c sup d"
+    }
+  }
+}
