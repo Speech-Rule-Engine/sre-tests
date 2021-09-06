@@ -1,0 +1,193 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "NynorskClearspeakPart3Adornments",
+  "locale": "nn",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_part3_adornments.json",
+  "information": "Nynorsk Clearspeak Part3Adornments rule tests.",
+  "active": "ClearspeakNynorsk",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Prime001": {
+      "expected": "A prim, B prim"
+    },
+    "Prime002": {
+      "expected": "A dobbel prim, B dobbel prim"
+    },
+    "Prime003": {
+      "expected": "A trippel prim, B trippel prim"
+    },
+    "Prime004": {
+      "expected": "f-th prim of x-th"
+    },
+    "Prime005": {
+      "expected": "f-th dobbel prim of x-th"
+    },
+    "Prime006": {
+      "expected": "f-th trippel prim of x-th"
+    },
+    "Prime007": {},
+    "Prime008": {},
+    "Prime009": {},
+    "Prime010": {},
+    "Prime011": {},
+    "Prime012": {},
+    "Prime013": {
+      "expected": "x-th grader, y-th minutter"
+    },
+    "Prime014": {},
+    "Prime015": {
+      "expected": "x-th grader, y-th minutter, z-th sekunder"
+    },
+    "Prime016": {},
+    "Prime017": {
+      "expected": "x-th minutter"
+    },
+    "Prime018": {},
+    "Prime019": {},
+    "Prime020": {
+      "expected": "x-th sekunder"
+    },
+    "Prime021": {},
+    "Prime022": {},
+    "Prime023": {
+      "expected": "x-th minutter, y-th sekunder"
+    },
+    "Prime024": {},
+    "Prime025": {},
+    "Prime026": {
+      "expected": "A minutter, B minutter"
+    },
+    "Prime027": {
+      "expected": "A sekunder, B sekunder"
+    },
+    "Prime028": {
+      "expected": "A trippel prim, B trippel prim"
+    },
+    "Prime029": {
+      "expected": "f-th minutter of x-th"
+    },
+    "Prime030": {
+      "expected": "f-th sekunder of x-th"
+    },
+    "Prime031": {
+      "expected": "f-th trippel prim of x-th"
+    },
+    "Prime032": {},
+    "Prime033": {
+      "expected": "x-th minutter"
+    },
+    "Prime034": {},
+    "Prime035": {},
+    "Prime036": {
+      "expected": "x-th sekunder"
+    },
+    "Prime037": {},
+    "Prime038": {},
+    "Prime039": {
+      "expected": "x-th minutter, y-th sekunder"
+    },
+    "Prime040": {},
+    "Prime041": {},
+    "Prime042": {
+      "expected": "A minutter, B minutter"
+    },
+    "Prime043": {
+      "expected": "A sekunder, B sekunder"
+    },
+    "Prime044": {
+      "expected": "A trippel prim, B trippel prim"
+    },
+    "Prime045": {
+      "expected": "f-th minutter of x-th"
+    },
+    "Prime046": {
+      "expected": "f-th sekunder of x-th"
+    },
+    "Prime047": {
+      "expected": "f-th trippel prim of x-th"
+    },
+    "CombPerm001a": {
+      "expected": "n-th C r-th"
+    },
+    "CombPerm002a": {
+      "expected": "n-th P r-th"
+    },
+    "CombPerm003a": {
+      "expected": "ti C tre"
+    },
+    "CombPerm004a": {
+      "expected": "ti P tre"
+    },
+    "CombPerm005a": {
+      "expected": "n-th choose r-th"
+    },
+    "CombPerm006a": {
+      "expected": "n-th permute r-th"
+    },
+    "CombPerm007a": {
+      "expected": "ti choose tre"
+    },
+    "CombPerm008a": {
+      "expected": "ti permute tre"
+    },
+    "Bar001": {
+      "expected": "f-th strek"
+    },
+    "Bar002": {
+      "expected": "f-th strek of x-th"
+    },
+    "Bar003": {},
+    "Bar004": {},
+    "Bar005": {
+      "expected": "z-th strek"
+    },
+    "Bar006": {},
+    "Bar007": {
+      "expected": "the repeating decimal point followed by repeating digits tolv"
+    },
+    "Bar008": {},
+    "Bar009": {},
+    "Bar010": {},
+    "Bar011": {
+      "expected": "z-th, z-th strek"
+    },
+    "Bar012": {
+      "expected": "the line segment C D"
+    },
+    "Bar013": {
+      "expected": "the line segment C minutter D minutter"
+    },
+    "Bar014": {
+      "expected": "the line segment C sekunder D sekunder"
+    },
+    "Bar015": {
+      "expected": "the line segment C trippel prim D trippel prim"
+    },
+    "Bar016": {
+      "expected": "the complex conjugate of z-th"
+    },
+    "Bar017": {
+      "expected": "z-th, the complex conjugate of z-th"
+    },
+    "Bar018": {},
+    "Bar006a": {},
+    "Bar007a": {
+      "expected": "the repeating decimal point followed by repeating digits tolv"
+    },
+    "Bar008a": {},
+    "Bar009a": {},
+    "Bar010a": {},
+    "Equal001": {
+      "expected": "is defined to be"
+    },
+    "Equal002": {
+      "expected": "venstreparentes, f-th grad g-th, høgreparentes, of x-th, is defined to be, f-th of, g-th of x-th"
+    },
+    "Equal003": {
+      "expected": "er lik sign with spørsmålsteikn over it"
+    },
+    "Equal004": {}
+  }
+}

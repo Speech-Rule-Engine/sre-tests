@@ -1,0 +1,84 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "NynorskClearspeakLogarithms",
+  "locale": "nn",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_logarithms.json",
+  "information": "Nynorsk Clearspeak Logarithms rule tests.",
+  "active": "ClearspeakNynorsk",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Log001": {
+      "expected": "log x-th"
+    },
+    "Log002": {},
+    "Log003": {
+      "expected": "log sub b-th of, a-th x-th, er lik, log sub b-th of, a-th, pluss, log sub b-th of, x-th"
+    },
+    "Log004": {
+      "expected": "log sub b-th of, S over T, er lik, log sub b-th of, S, minus, log sub b-th of, T"
+    },
+    "Log005": {
+      "expected": "log sub b-th of, venstreparentes, x-th to the k-th power, høgreparentes, er lik k-th, log sub b-th of, x-th"
+    },
+    "Log006": {},
+    "Log007": {},
+    "Log008": {},
+    "Log009": {},
+    "Log010": {
+      "expected": "log sub a-th of, x-th, er lik, log sub b-th of, x-th, over, log sub b-th of, a-th"
+    },
+    "Log011": {},
+    "Log012": {
+      "expected": "log x-th over log a-th"
+    },
+    "Log013": {},
+    "Log014": {},
+    "Log015": {
+      "expected": "log x-th y-th"
+    },
+    "Log016": {},
+    "Log017": {},
+    "Log018": {},
+    "Log019": {},
+    "Log020": {},
+    "Log021": {
+      "expected": "log of, venstreparentes, x-th over y-th, høgreparentes"
+    },
+    "Log022": {},
+    "Log023": {},
+    "NatLog001": {
+      "expected": "ln x-th"
+    },
+    "NatLog002": {},
+    "NatLog003": {
+      "expected": "ln of, venstreparentes, e-th to the x-th power, høgreparentes, er lik x-th"
+    },
+    "NatLog004": {
+      "expected": "e-th raised to the ln x-th power, er lik x-th"
+    },
+    "NatLog005": {
+      "expected": "ln of, venstreparentes, e-th to the x-th power, høgreparentes, er lik x-th"
+    },
+    "NatLog006": {},
+    "NatLog007": {},
+    "NatLog008": {},
+    "NatLog009": {
+      "expected": "ln x-th"
+    },
+    "NatLog010": {},
+    "NatLog011": {
+      "expected": "ln of, venstreparentes, e-th to the x-th power, høgreparentes, er lik x-th"
+    },
+    "NatLog012": {
+      "expected": "e-th raised to the ln x-th power, er lik x-th"
+    },
+    "NatLog013": {
+      "expected": "ln of, venstreparentes, e-th to the x-th power, høgreparentes, er lik x-th"
+    },
+    "NatLog014": {},
+    "NatLog015": {},
+    "NatLog016": {}
+  }
+}

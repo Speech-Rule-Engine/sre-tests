@@ -1,0 +1,222 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "NynorskClearspeakImpliedTimes",
+  "locale": "nn",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_implied_times.json",
+  "information": "Nynorsk Clearspeak ImpliedTimes rule tests.",
+  "active": "ClearspeakNynorsk",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "ImpTimes001": {},
+    "ImpTimes002": {},
+    "ImpTimes003": {},
+    "ImpTimes004": {},
+    "ImpTimes005": {},
+    "ImpTimes006": {},
+    "ImpTimes007": {},
+    "ImpTimes008": {},
+    "ImpTimes009": {},
+    "ImpTimes011": {
+      "expected": "x-th ganger, venstreparentes, y-th pluss z-th, høgreparentes"
+    },
+    "ImpTimes012": {},
+    "ImpTimes013": {},
+    "ImpTimes014": {},
+    "ImpTimes015": {},
+    "ImpTimes016": {},
+    "ImpTimes017": {},
+    "ImpTimes018": {
+      "expected": "x-th y-th"
+    },
+    "ImpTimes019": {
+      "expected": "x-th squared, y-th cubed"
+    },
+    "ImpTimes020": {},
+    "ImpTimes021": {
+      "expected": "the square root of a-th, the square root of b-th, er lik the square root of a-th b-th"
+    },
+    "ImpTimes022": {},
+    "ImpTimes023": {},
+    "ImpTimes024": {},
+    "ImpTimes025": {},
+    "ImpTimes026": {},
+    "ImpTimes027": {
+      "expected": "sinus x-th cosinus y-th, pluss, cosinus x-th sinus y-th"
+    },
+    "ImpTimes027a": {
+      "expected": "sinus of, venstreparentes, x-th pluss y-th, høgreparentes, cosinus of, venstreparentes, x-th pluss y-th, høgreparentes"
+    },
+    "ImpTimes028": {},
+    "ImpTimes029": {
+      "expected": "log of, venstreparentes, x-th pluss y-th, høgreparentes, er lik, log x-th log y-th"
+    },
+    "ImpTimes030": {},
+    "ImpTimes031": {},
+    "ImpTimes032": {},
+    "ImpTimes033": {},
+    "ImpTimes034": {},
+    "ImpTimes035": {},
+    "ImpTimes036": {
+      "expected": "the absolute value of x-th, ganger, the absolute value of y-th"
+    },
+    "ImpTimes037": {},
+    "ImpTimes037a": {},
+    "ImpTimes038": {},
+    "ImpTimes0381": {},
+    "ImpTimes039": {},
+    "ImpTimes040": {},
+    "ImpTimes041": {},
+    "ImpTimes042": {},
+    "ImpTimes043": {},
+    "ImpTimes044": {},
+    "ImpTimes045": {},
+    "ImpTimes046": {},
+    "ImpTimes047": {},
+    "ImpTimes049": {
+      "expected": "x-th ganger, venstreparentes, y-th pluss z-th, høgreparentes"
+    },
+    "ImpTimes050": {},
+    "ImpTimes051": {},
+    "ImpTimes052": {},
+    "ImpTimes053": {},
+    "ImpTimes054": {},
+    "ImpTimes055": {},
+    "ImpTimes056": {
+      "expected": "x-th ganger y-th"
+    },
+    "ImpTimes057": {
+      "expected": "x-th squared ganger y-th cubed"
+    },
+    "ImpTimes058": {},
+    "ImpTimes059": {
+      "expected": "the square root of a-th, ganger the square root of b-th, er lik the square root of a-th ganger b-th"
+    },
+    "ImpTimes060": {},
+    "ImpTimes061": {},
+    "ImpTimes062": {},
+    "ImpTimes063": {},
+    "ImpTimes064": {},
+    "ImpTimes065": {
+      "expected": "sinus x-th, ganger cosinus y-th pluss cosinus x-th, ganger sinus y-th"
+    },
+    "ImpTimes065a": {
+      "expected": "sinus of, venstreparentes, x-th pluss y-th, høgreparentes, ganger, cosinus of, venstreparentes, x-th pluss y-th, høgreparentes"
+    },
+    "ImpTimes066": {},
+    "ImpTimes067": {
+      "expected": "log of, venstreparentes, x-th pluss y-th, høgreparentes, er lik log x-th, ganger log y-th"
+    },
+    "ImpTimes068": {},
+    "ImpTimes069": {},
+    "ImpTimes070": {},
+    "ImpTimes070a": {},
+    "ImpTimes071": {},
+    "ImpTimes072": {},
+    "ImpTimes073": {
+      "expected": "the absolute value of x-th, ganger, the absolute value of y-th"
+    },
+    "ImpTimes074": {},
+    "ImpTimes074a": {},
+    "ImpTimes075": {},
+    "ImpTimes076": {},
+    "ImpTimes077": {},
+    "ImpTimes078": {},
+    "ImpTimes079": {},
+    "ImpTimes080": {},
+    "ImpTimes081": {},
+    "ImpTimes082": {},
+    "ImpTimes083": {},
+    "ImpTimes084": {},
+    "ImpTimes085": {},
+    "ImpTimes087": {
+      "expected": "x-th, venstreparentes, y-th pluss z-th, høgreparentes"
+    },
+    "ImpTimes088": {},
+    "ImpTimes089": {},
+    "ImpTimes090": {},
+    "ImpTimes091": {},
+    "ImpTimes092": {},
+    "ImpTimes093": {},
+    "ImpTimes094": {
+      "expected": "x-th y-th"
+    },
+    "ImpTimes095": {
+      "expected": "x-th squared y-th cubed"
+    },
+    "ImpTimes096": {},
+    "ImpTimes097": {
+      "expected": "the square root of a-th, the square root of b-th, er lik the square root of a-th b-th"
+    },
+    "ImpTimes098": {},
+    "ImpTimes099": {},
+    "ImpTimes100": {},
+    "ImpTimes101": {},
+    "ImpTimes103": {
+      "expected": "sinus x-th cosinus y-th, pluss, cosinus x-th sinus y-th"
+    },
+    "ImpTimes104": {},
+    "ImpTimes105": {
+      "expected": "log of, venstreparentes, x-th pluss y-th, høgreparentes, er lik, log x-th log y-th"
+    },
+    "ImpTimes106": {},
+    "ImpTimes107": {},
+    "ImpTimes108": {},
+    "ImpTimes109": {},
+    "ImpTimes110": {},
+    "ImpTimes111": {},
+    "ImpTimes112": {
+      "expected": "the absolute value of x-th, the absolute value of y-th"
+    },
+    "ImpTimes113": {},
+    "ImpTimes114": {},
+    "ImpTimesSilPar001": {},
+    "ImpTimesSilPar002": {},
+    "ImpTimesSilPar003": {},
+    "ImpTimesSilPar004": {},
+    "ImpTimesSilPar005": {},
+    "ImpTimesSilPar006": {},
+    "ImpTimesSilPar007": {},
+    "ImpTimesSilPar008": {},
+    "ImpTimesSilPar009": {},
+    "ImpTimesSilPar011": {
+      "expected": "x-th, venstreparentes, y-th pluss z-th, høgreparentes"
+    },
+    "ImpTimesSilPar012": {},
+    "ImpTimesSilPar013": {},
+    "ImpTimesSilPar014": {},
+    "ImpTimesSilPar015": {},
+    "ImpTimesSilPar016": {},
+    "ImpTimesSilPar017": {},
+    "ImpTimesSilPar019": {
+      "expected": "log of, venstreparentes, x-th pluss y-th, høgreparentes, er lik, log x-th log y-th"
+    },
+    "ImpTimesSilPar020": {},
+    "ImpTimesSilPar021": {},
+    "ImpTimesSilPar022": {},
+    "ImpTimesSilPar023": {},
+    "ImpTimesSilPar024": {},
+    "Extra001": {},
+    "Extra002": {},
+    "Extra003": {
+      "expected": "a-th of, er lik ganger a-th er lik"
+    },
+    "Extra004": {
+      "expected": "a-th times, er lik ganger a-th er lik"
+    },
+    "Extra005": {},
+    "Extra006": {},
+    "Extra010": {},
+    "Extra012": {},
+    "Extra014": {
+      "expected": "p-th of w-th"
+    },
+    "Extra015": {},
+    "Extra016": {},
+    "Extra018": {
+      "expected": "T of t-th, er lik T sub s-th pluss, venstreparentes, T sub minus T sub s-th, høgreparentes, ganger e-th raised to the negative k-th t-th power"
+    },
+    "Extra019": {}
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "_comment0_": " Tests from the issues discovered in ClearspeakEnglish rules.",
+  "name": "NynorskClearspeakIssues",
+  "locale": "nn",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_issues.json",
+  "information": "Nynorsk Clearspeak Issues tests.",
+  "active": "ClearspeakIssuesNynorsk",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Issue230_1": {},
+    "Issue230_2": {},
+    "IssueNumbers_1": {},
+    "IssueNumbers_2": {
+      "expected": "tallteikn FF"
+    },
+    "IssueNumbers_3": {
+      "expected": "tallteikn FFFF"
+    },
+    "Issue320_1": {
+      "expected": "partiellderivert"
+    },
+    "Issue320_2": {
+      "expected": "x-th factorial"
+    },
+    "Issue320_3": {
+      "expected": "negative negative x-th"
+    },
+    "Issue320_4": {
+      "expected": "pluss pluss x-th"
+    },
+    "Issue320_5": {
+      "expected": "sinus sinus x-th"
+    },
+    "Issue320_6": {
+      "expected": "partiellderivert partiellderivert x-th"
+    },
+    "Issue320_7": {
+      "expected": "venstreparentes, fraction with numerator partiellderivert squared, and denominator partiellderivert x-th squared, pluss, fraction with numerator partiellderivert squared, and denominator partiellderivert y-th squared, høgreparentes, ganger, the absolute value of pi-th ganger, venstreparentes, x-th pluss normal I-th, y-th, høgreparentes, squared er lik"
+    },
+    "Issue301_1": {},
+    "Issue301_2": {},
+    "Issue301_3": {},
+    "Issue301_4": {},
+    "Issue_442_0": {},
+    "Issue_442_1": {},
+    "Issue_442_2": {},
+    "Issue_442_3": {}
+  }
+}

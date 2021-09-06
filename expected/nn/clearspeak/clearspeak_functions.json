@@ -1,0 +1,344 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "NynorskClearspeakFunctions",
+  "locale": "nn",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_functions.json",
+  "information": "Nynorsk Clearspeak Functions rule tests.",
+  "active": "ClearspeakNynorsk",
+  "exclude": [
+    "Function011b",
+    "Function012b",
+    "Function013b",
+    "Function014b",
+    "Function015b",
+    "Function016b",
+    "Function017b",
+    "Function018b",
+    "Function019b",
+    "Function020b",
+    "Function021b",
+    "Function022b",
+    "Function023b",
+    "Function024b",
+    "Function025b",
+    "Function026b",
+    "Function027b",
+    "Function028b",
+    "Function029b",
+    "Function030b",
+    "Function031b",
+    "Function032b",
+    "Function033b",
+    "Function034b",
+    "Function035b",
+    "Function036b",
+    "Function037b",
+    "Function038b",
+    "Function039b",
+    "Function040b",
+    "Function041b",
+    "Function042b",
+    "Function043b",
+    "Function044b",
+    "Function045b",
+    "Function046b",
+    "Function047b",
+    "Function048b",
+    "Function049b",
+    "Function050b",
+    "Function051b",
+    "Function052b",
+    "Function053b",
+    "Function054b",
+    "Function055b",
+    "Function056b",
+    "Function057b",
+    "Function058b",
+    "Function059b",
+    "Function060b",
+    "Function061b",
+    "Function062b",
+    "Function063b",
+    "Function064b",
+    "Function065b",
+    "Function066b",
+    "Function067b",
+    "Function068b",
+    "Function069b",
+    "Function070b",
+    "Function071b",
+    "Function072b",
+    "Function073b",
+    "Function074b",
+    "Function075b",
+    "Function076b",
+    "Function077b",
+    "Function078b",
+    "Function079b"
+  ],
+  "compare": true,
+  "tests": {
+    "Function001": {
+      "expected": "f-th of x-th"
+    },
+    "Function002": {
+      "expected": "g-th of x-th"
+    },
+    "Function003": {
+      "expected": "h-th of x-th"
+    },
+    "Function004": {},
+    "Function005": {},
+    "Function006": {},
+    "Function007": {},
+    "Function008": {},
+    "Function009": {},
+    "Function010": {
+      "expected": "g-th of, venstreparentes, x-th squared, høgreparentes"
+    },
+    "Function011": {
+      "expected": "f-th inverse of x-th"
+    },
+    "Function012": {
+      "expected": "g-th inverse of x-th"
+    },
+    "Function013": {
+      "expected": "h-th inverse of x-th"
+    },
+    "Function014": {},
+    "Function015": {},
+    "Function016": {},
+    "Function017": {
+      "expected": "g-th inverse of, venstreparentes, x-th squared, høgreparentes"
+    },
+    "Function018": {},
+    "Function019": {},
+    "Function020": {
+      "expected": "f-th inverse of, f-th of x-th"
+    },
+    "Function021": {
+      "expected": "g-th inverse of, g-th of x-th"
+    },
+    "Function022": {
+      "expected": "h-th inverse of, h-th of x-th"
+    },
+    "Function023": {},
+    "Function024": {},
+    "Function025": {},
+    "Function026": {},
+    "Function027": {},
+    "Function028": {},
+    "Function029": {
+      "expected": "g-th inverse of, venstreparentes, g-th of, venstreparentes, x-th squared, høgreparentes, høgreparentes"
+    },
+    "Function030": {
+      "expected": "f-th of, f-th inverse of x-th"
+    },
+    "Function031": {
+      "expected": "g-th of, g-th inverse of x-th"
+    },
+    "Function032": {
+      "expected": "h-th of, h-th inverse of x-th"
+    },
+    "Function033": {},
+    "Function034": {},
+    "Function035": {},
+    "Function036": {
+      "expected": "g-th of, g-th inverse of, venstreparentes, x-th squared, høgreparentes"
+    },
+    "Function037": {},
+    "Function038": {},
+    "Function039": {
+      "expected": "f-th of, g-th of x-th"
+    },
+    "Function040": {},
+    "Function041": {
+      "expected": "h-th of, g-th of x-th"
+    },
+    "Function042": {},
+    "Function043": {
+      "expected": "venstreparentes, f-th pluss g-th, høgreparentes, of x-th, er lik f-th of x-th, pluss g-th of x-th"
+    },
+    "Function044": {},
+    "Function045": {
+      "expected": "venstreparentes, f-th ganger g-th, høgreparentes, of x-th"
+    },
+    "Function046": {},
+    "Function047": {
+      "expected": "venstreparentes, f-th over g-th, høgreparentes, of x-th, er lik, f-th of x-th, over g-th of x-th"
+    },
+    "Function048": {},
+    "Function049": {
+      "expected": "venstreparentes, f-th grad g-th, høgreparentes, of x-th, er lik f-th of, g-th of x-th"
+    },
+    "Function050": {},
+    "Function051": {
+      "expected": "c-th f-th of x-th"
+    },
+    "Function052": {
+      "expected": "f-th squared of x-th"
+    },
+    "Function053": {},
+    "Function054": {
+      "expected": "f-th cubed of x-th"
+    },
+    "Function055": {},
+    "Function056": {},
+    "Function057": {},
+    "Function058": {},
+    "Function059": {},
+    "Function060": {
+      "expected": "n-th power of, f-th of x-th"
+    },
+    "Function061": {},
+    "Function062": {
+      "expected": "g-th squared of x-th"
+    },
+    "Function063": {},
+    "Function064": {
+      "expected": "h-th cubed of x-th"
+    },
+    "Function065": {},
+    "Function066": {},
+    "Function067": {},
+    "Function068": {},
+    "Function069": {},
+    "Function070": {
+      "expected": "n-th power of, g-th of x-th"
+    },
+    "Function071": {},
+    "Function072": {},
+    "Function073": {},
+    "Function074": {},
+    "Function075": {},
+    "Function076": {},
+    "Function077": {
+      "expected": "h-th sub n-th inverse of x-th"
+    },
+    "Function078": {},
+    "Function079": {},
+    "Function080": {
+      "expected": "f-th of, venstreparentes, x-th komma y-th, høgreparentes"
+    },
+    "Function081": {
+      "expected": "f-th of, venstreparentes, x-th komma y-th komma z-th, høgreparentes"
+    },
+    "Function082": {},
+    "Function083": {},
+    "Function084": {
+      "expected": "f-th times x-th"
+    },
+    "Function085": {
+      "expected": "g-th times x-th"
+    },
+    "Function086": {
+      "expected": "h-th times x-th"
+    },
+    "Function087": {},
+    "Function088": {},
+    "Function089": {},
+    "Function091": {},
+    "Function092": {},
+    "Function093": {
+      "expected": "g-th times, venstreparentes, x-th squared, høgreparentes"
+    },
+    "Function094": {},
+    "Function095": {},
+    "Function096": {},
+    "Function097": {},
+    "Function098": {},
+    "Function099": {},
+    "Function100": {},
+    "Function101": {},
+    "Function103": {},
+    "Function104": {},
+    "Function105": {},
+    "Function106": {},
+    "Function107": {},
+    "Function108": {},
+    "Function110": {},
+    "Function111": {},
+    "Function112": {},
+    "Function113": {},
+    "Function114": {},
+    "Function115": {},
+    "Function116": {},
+    "Function117": {},
+    "Function118": {},
+    "Function119": {},
+    "Function120": {},
+    "Function122": {
+      "expected": "f-th times, g-th times x-th"
+    },
+    "Function123": {},
+    "Function124": {
+      "expected": "h-th times, g-th times x-th"
+    },
+    "Function125": {},
+    "Function126": {
+      "expected": "venstreparentes, f-th pluss g-th, høgreparentes, times x-th, er lik, f-th times x-th, pluss, g-th times x-th"
+    },
+    "Function127": {},
+    "Function128": {
+      "expected": "venstreparentes, f-th ganger g-th, høgreparentes, times x-th"
+    },
+    "Function129": {},
+    "Function130": {
+      "expected": "venstreparentes, f-th over g-th, høgreparentes, times x-th, er lik, fraction with numerator, f-th times x-th, and denominator, g-th times x-th"
+    },
+    "Function131": {},
+    "Function132": {},
+    "Function133": {
+      "expected": "c-th, f-th times x-th"
+    },
+    "Function134": {
+      "expected": "f-th squared times x-th"
+    },
+    "Function135": {},
+    "Function136": {
+      "expected": "f-th cubed times x-th"
+    },
+    "Function137": {},
+    "Function138": {},
+    "Function139": {},
+    "Function140": {},
+    "Function141": {},
+    "Function142": {
+      "expected": "f-th to the n-th power, times x-th"
+    },
+    "Function143": {},
+    "Function144": {
+      "expected": "g-th squared times x-th"
+    },
+    "Function145": {},
+    "Function146": {
+      "expected": "h-th cubed times x-th"
+    },
+    "Function147": {},
+    "Function148": {},
+    "Function149": {},
+    "Function150": {},
+    "Function151": {},
+    "Function152": {
+      "expected": "g-th to the n-th power, times x-th"
+    },
+    "Function153": {},
+    "Function154": {},
+    "Function156": {},
+    "Function157": {},
+    "Function158": {},
+    "Function159": {},
+    "Function160": {},
+    "Function161": {},
+    "Function162": {},
+    "Function163": {
+      "expected": "f-th times, venstreparentes, x-th komma y-th, høgreparentes"
+    },
+    "Function164": {
+      "expected": "f-th times, venstreparentes, x-th komma y-th komma z-th, høgreparentes"
+    },
+    "Function165": {},
+    "Function166": {}
+  }
+}

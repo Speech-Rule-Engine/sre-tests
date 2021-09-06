@@ -1,0 +1,157 @@
+{
+  "name": "NynorskClearspeakCoverageElements",
+  "locale": "nn",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_coverage_elements.json",
+  "information": "Nynorsk Clearspeak Coverage for Elements symbol tests.",
+  "active": "ClearspeakNynorsk",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "In_set_0": {
+      "expected": "the set of all z-th in A such that z-th"
+    },
+    "In_set_1": {
+      "expected": "the set of all z-th in A such that z-th"
+    },
+    "In_set_2": {
+      "expected": "the set of all z-th not in A such that z-th"
+    },
+    "In_set_3": {
+      "expected": "the set of all A inneheld som medlem z-th such that z-th"
+    },
+    "In_set_4": {
+      "expected": "the set of all A inneheld som medlem z-th such that z-th"
+    },
+    "In_set_5": {
+      "expected": "the set of all A inneheld ikkje som medlem z-th such that z-th"
+    },
+    "Free_standing_0": {
+      "expected": "z-th is a member of A"
+    },
+    "Free_standing_1": {
+      "expected": "z-th is a member of A"
+    },
+    "Free_standing_2": {
+      "expected": "z-th is not a member of A"
+    },
+    "Free_standing_3": {
+      "expected": "A inneheld som medlem z-th"
+    },
+    "Free_standing_4": {
+      "expected": "A inneheld som medlem z-th"
+    },
+    "Free_standing_5": {
+      "expected": "A inneheld ikkje som medlem z-th"
+    },
+    "Under_bigop_0": {
+      "expected": "sum over z-th is a member of A"
+    },
+    "Under_bigop_1": {
+      "expected": "sum over z-th is a member of A"
+    },
+    "Under_bigop_2": {
+      "expected": "sum over z-th is not a member of A"
+    },
+    "Under_bigop_3": {
+      "expected": "sum over A inneheld som medlem z-th"
+    },
+    "Under_bigop_4": {
+      "expected": "sum over A inneheld som medlem z-th"
+    },
+    "Under_bigop_5": {
+      "expected": "sum over A inneheld ikkje som medlem z-th"
+    },
+    "Preferences_in_0": {
+      "expected": "z-th is a member of A"
+    },
+    "Preferences_in_1": {
+      "expected": "the set of all z-th in A such that z-th"
+    },
+    "Preferences_in_2": {
+      "expected": "sum over z-th is a member of A"
+    },
+    "Preferences_in_3": {
+      "expected": "z-th is a member of A"
+    },
+    "Preferences_in_4": {
+      "expected": "the set of all z-th member of A such that z-th"
+    },
+    "Preferences_in_5": {
+      "expected": "sum over z-th is a member of A"
+    },
+    "Preferences_in_6": {
+      "expected": "z-th is an element of A"
+    },
+    "Preferences_in_7": {
+      "expected": "the set of all z-th element of A such that z-th"
+    },
+    "Preferences_in_8": {
+      "expected": "sum over z-th is an element of A"
+    },
+    "Preferences_in_9": {
+      "expected": "z-th is in A"
+    },
+    "Preferences_in_10": {
+      "expected": "the set of all z-th in A such that z-th"
+    },
+    "Preferences_in_11": {
+      "expected": "sum over z-th is in A"
+    },
+    "Preferences_in_12": {
+      "expected": "z-th belongs to A"
+    },
+    "Preferences_in_13": {
+      "expected": "the set of all z-th belonging to A such that z-th"
+    },
+    "Preferences_in_14": {
+      "expected": "sum over z-th belongs to A"
+    },
+    "Preferences_not_in_0": {
+      "expected": "z-th is not a member of A"
+    },
+    "Preferences_not_in_1": {
+      "expected": "the set of all z-th not in A such that z-th"
+    },
+    "Preferences_not_in_2": {
+      "expected": "sum over z-th is not a member of A"
+    },
+    "Preferences_not_in_3": {
+      "expected": "z-th is not a member of A"
+    },
+    "Preferences_not_in_4": {
+      "expected": "the set of all z-th not a member of A such that z-th"
+    },
+    "Preferences_not_in_5": {
+      "expected": "sum over z-th is not a member of A"
+    },
+    "Preferences_not_in_6": {
+      "expected": "z-th is not an element of A"
+    },
+    "Preferences_not_in_7": {
+      "expected": "the set of all z-th not an element of A such that z-th"
+    },
+    "Preferences_not_in_8": {
+      "expected": "sum over z-th is not an element of A"
+    },
+    "Preferences_not_in_9": {
+      "expected": "z-th is not in A"
+    },
+    "Preferences_not_in_10": {
+      "expected": "the set of all z-th not in A such that z-th"
+    },
+    "Preferences_not_in_11": {
+      "expected": "sum over z-th is not in A"
+    },
+    "Preferences_not_in_12": {
+      "expected": "z-th does not belong to A"
+    },
+    "Preferences_not_in_13": {
+      "expected": "the set of all z-th not belonging to A such that z-th"
+    },
+    "Preferences_not_in_14": {
+      "expected": "sum over z-th does not belong to A"
+    },
+    "Complex": {}
+  }
+}

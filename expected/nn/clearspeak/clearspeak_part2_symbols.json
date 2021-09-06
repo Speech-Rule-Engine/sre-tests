@@ -1,0 +1,124 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "NynorskClearspeakPart2Symbols",
+  "locale": "nn",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_part2_symbols.json",
+  "information": "Nynorsk Clearspeak Part2Symbols rule tests.",
+  "active": "ClearspeakNynorsk",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "X001": {},
+    "X002": {
+      "expected": "m-th gangeteikn n-th"
+    },
+    "X003": {},
+    "X004": {},
+    "X005": {
+      "expected": "m-th gangeteikn n-th"
+    },
+    "X006": {},
+    "X007": {
+      "expected": "u-th gangeteikn v-th"
+    },
+    "Dot001": {},
+    "Dot002": {
+      "expected": "m-th ganger n-th"
+    },
+    "Dot003": {},
+    "Dot004": {},
+    "Dot005": {
+      "expected": "m-th ganger n-th"
+    },
+    "Dot006": {},
+    "Triangle001": {
+      "expected": "triangel A B C"
+    },
+    "Triangle002": {
+      "expected": "triangel D E F"
+    },
+    "Triangle003": {
+      "expected": "triangel x-th"
+    },
+    "Triangle004": {
+      "expected": "f-th of, venstreparentes, x-th pluss triangel x-th, høgreparentes"
+    },
+    "Ellipses001": {},
+    "Ellipses002": {},
+    "Ellipses003": {},
+    "Ellipses004": {},
+    "Ellipses005": {},
+    "Ellipses006": {},
+    "VertLine001": {},
+    "VertLine002": {
+      "expected": "the set of all x-th such that x-th er større enn"
+    },
+    "VertLine003": {},
+    "VertLine004": {},
+    "VertLine005": {},
+    "VertLine006": {},
+    "VertLine007": {
+      "expected": "the set of all x-th such that x-th er større enn"
+    },
+    "VertLine008": {},
+    "VertLine009": {
+      "expected": "P of, venstreparentes, A given B, høgreparentes"
+    },
+    "MembSym001": {},
+    "MembSym002": {},
+    "MembSym003": {},
+    "MembSym004": {},
+    "MembSym005": {},
+    "MembSym006": {},
+    "MembSym007": {},
+    "MembSym008": {},
+    "MembSym009": {},
+    "MembSym010": {},
+    "MembSym011": {},
+    "MembSym012": {},
+    "MembSym013": {},
+    "MembSym014": {},
+    "MembSym015": {},
+    "SetMemb001": {},
+    "SetMemb002": {},
+    "Sum001": {},
+    "Sum002": {},
+    "Sum003": {
+      "expected": "sum over I-th is a member of the positive integers, of I-th"
+    },
+    "Sum004": {
+      "expected": "sum over S, of I-th"
+    },
+    "Sum005": {
+      "expected": "sum of a-th sub I-th"
+    },
+    "Sum006": {},
+    "Sum007": {},
+    "Sum008": {},
+    "Sum009": {
+      "expected": "produkt of a-th sub I-th"
+    },
+    "Sum010": {},
+    "Sum011": {},
+    "Sum012": {
+      "expected": "kryss of S sub I-th"
+    },
+    "Sum013": {
+      "expected": "union of S sub I-th"
+    },
+    "Sum014": {
+      "expected": "kryss over C, of S sub I-th"
+    },
+    "Sum015": {
+      "expected": "union over C, of S sub I-th"
+    },
+    "Sum016": {
+      "expected": "integral of f-th of x-th, d-th x-th"
+    },
+    "Sum017": {},
+    "Sum018": {
+      "expected": "integral over the real numbers, of f-th of x-th, d-th x-th"
+    }
+  }
+}

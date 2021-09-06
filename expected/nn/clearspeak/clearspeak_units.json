@@ -1,0 +1,200 @@
+{
+  "name": "NynorskClearspeakUnits",
+  "locale": "nn",
+  "factory": "speech",
+  "base": "input/common/units_speech.json",
+  "information": "Nynorsk Clearspeak Units tests.",
+  "domain": "clearspeak",
+  "active": "ClearspeakNynorsk",
+  "exclude": [
+    "UnitSquare_0_brief",
+    "UnitSquare_0_sbrief",
+    "UnitSquare_1_brief",
+    "UnitSquare_1_sbrief",
+    "UnitSquare_2_brief",
+    "UnitSquare_2_sbrief",
+    "UnitCube_0_brief",
+    "UnitCube_0_sbrief",
+    "UnitCube_1_brief",
+    "UnitCube_1_sbrief",
+    "UnitCube_2_brief",
+    "UnitCube_2_sbrief",
+    "UnitInverse_brief",
+    "UnitInverse_sbrief",
+    "UnitDoubleInverse_brief",
+    "UnitDoubleInverse_sbrief",
+    "UnitDivide_brief",
+    "UnitDivide_sbrief"
+  ],
+  "compare": true,
+  "tests": {
+    "UnitSquare_0_default": {
+      "expected": "square in"
+    },
+    "UnitSquare_1_default": {},
+    "UnitSquare_2_default": {
+      "expected": "square meter"
+    },
+    "UnitCube_0_default": {
+      "expected": "cubic in"
+    },
+    "UnitCube_1_default": {},
+    "UnitCube_2_default": {
+      "expected": "cubic meter"
+    },
+    "UnitInverse_default": {
+      "expected": "reciprocal in"
+    },
+    "UnitDoubleInverse_default": {
+      "expected": "reciprocal in per mm"
+    },
+    "UnitDivide_default": {
+      "expected": "in per mm"
+    },
+    "UnitsSingle_0": {
+      "expected": "km"
+    },
+    "UnitsSingle_1": {
+      "expected": "ampere"
+    },
+    "UnitsSingle_2": {
+      "expected": "ohm"
+    },
+    "UnitsSingle_3": {
+      "expected": "kΩ"
+    },
+    "UnitsSingle_4": {
+      "expected": "Celsius"
+    },
+    "UnitsSimple_0": {
+      "expected": "min of minutter"
+    },
+    "UnitsSimple_1": {},
+    "UnitsSimple_2": {
+      "expected": "km pluss sekunder"
+    },
+    "UnitsSuperscript_0": {
+      "expected": "square km"
+    },
+    "UnitsSuperscript_1": {
+      "expected": "cubic meter"
+    },
+    "UnitsSuperscript_2": {},
+    "UnitsSuperscript_3": {
+      "expected": "reciprocal meter"
+    },
+    "UnitsSuperscript_4": {
+      "expected": "sekunder per meter"
+    },
+    "UnitsSuperscript_5": {},
+    "UnitsSuperscript_6": {},
+    "UnitsSuperscript_7": {},
+    "UnitsSuperscript_8": {
+      "expected": "km per time"
+    },
+    "UnitsSuperscript_9": {
+      "expected": "newton km per time"
+    },
+    "UnitsSuperscript_10": {
+      "expected": "m-th over km"
+    },
+    "UnitsSuperscript_11": {},
+    "UnitsExpressions_0": {},
+    "UnitsExpressions_1": {},
+    "UnitsExpressions_2": {},
+    "UnitsExpressions_3": {},
+    "UnitPlural_1": {},
+    "UnitPlural_2": {},
+    "UnitPlural_3": {},
+    "UnitPlural_4": {},
+    "UnitCombine_0": {
+      "expected": "meter sekunder"
+    },
+    "UnitCombine_1": {
+      "expected": "m-th sekunder"
+    },
+    "UnitCombine_2": {
+      "expected": "meter s-th"
+    },
+    "UnitCombine_3": {
+      "expected": "meter sekunder"
+    },
+    "UnitCombine_4": {
+      "expected": "m-th sekunder"
+    },
+    "UnitCombine_5": {
+      "expected": "meter s-th"
+    },
+    "UnitCombine_6": {
+      "expected": "meter sekunder liter"
+    },
+    "issue_364_1": {},
+    "issue_364_2": {},
+    "issue_364_3": {},
+    "issue_364_4": {},
+    "issue_364_5": {},
+    "issue_364_6": {},
+    "issue_366": {},
+    "testSample_13_1_2_var0": {},
+    "testSample_13_1_2_var1": {},
+    "testSample_13_1_2_var2": {},
+    "unit_cube": {
+      "expected": "cubic in"
+    },
+    "UnitDiv_0": {},
+    "UnitDiv_1": {},
+    "UnitDiv_2": {},
+    "UnitDiv_3": {},
+    "UnitKm": {
+      "expected": "km"
+    },
+    "UnitLong_1": {},
+    "UnitLong_2": {},
+    "UnitLong_3": {},
+    "UnitLong_4": {},
+    "UnitMultiple": {},
+    "UnitMultitude": {},
+    "UnitNumb_0": {},
+    "UnitNumb_1": {},
+    "UnitNumb_2": {},
+    "UnitTriple": {},
+    "CurrencySingular_0_default": {},
+    "CurrencySingular_0_Currency_Position": {},
+    "CurrencySingular_0_Currency_Prefix": {},
+    "CurrencySingular_1_default": {},
+    "CurrencySingular_1_Currency_Position": {},
+    "CurrencySingular_1_Currency_Prefix": {},
+    "CurrencySingle_0_default": {
+      "expected": "dollar"
+    },
+    "CurrencySingle_0_Currency_Position": {
+      "expected": "dollar"
+    },
+    "CurrencySingle_0_Currency_Prefix": {
+      "expected": "dollar"
+    },
+    "CurrencySingle_1_default": {
+      "expected": "dollar"
+    },
+    "CurrencySingle_1_Currency_Position": {
+      "expected": "dollar"
+    },
+    "CurrencySingle_1_Currency_Prefix": {
+      "expected": "dollar"
+    },
+    "CurrencyPlural_0_default": {},
+    "CurrencyPlural_0_Currency_Position": {},
+    "CurrencyPlural_0_Currency_Prefix": {},
+    "CurrencyPlural_1_default": {},
+    "CurrencyPlural_1_Currency_Position": {},
+    "CurrencyPlural_1_Currency_Prefix": {},
+    "CurrencyMultitude_0_default": {},
+    "CurrencyMultitude_0_Currency_Position": {},
+    "CurrencyMultitude_0_Currency_Prefix": {},
+    "CurrencyMultitude_1_default": {},
+    "CurrencyMultitude_1_Currency_Position": {},
+    "CurrencyMultitude_1_Currency_Prefix": {},
+    "CurrencyMultitude_2_default": {},
+    "CurrencyMultitude_3_default": {}
+  }
+}

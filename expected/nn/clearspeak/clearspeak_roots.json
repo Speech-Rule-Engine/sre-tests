@@ -1,0 +1,248 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "NynorskClearspeakRoots",
+  "locale": "nn",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_roots.json",
+  "information": "Nynorsk Clearspeak Roots rule tests.",
+  "active": "ClearspeakNynorsk",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Root001": {},
+    "Root002": {},
+    "Root003": {},
+    "Root004": {},
+    "Root005": {},
+    "Root006": {},
+    "Root007": {},
+    "Root008": {},
+    "Root009": {},
+    "Root010": {},
+    "Root011": {},
+    "Root011a": {},
+    "Root012": {
+      "expected": "the negative square root of x-th"
+    },
+    "Root013": {
+      "expected": "venstreparentes, the square root of x-th, høgreparentes, squared"
+    },
+    "Root014": {
+      "expected": "negative, venstreparentes, the square root of x-th, høgreparentes, squared"
+    },
+    "Root015": {
+      "expected": "the square root of x-th, squared"
+    },
+    "Root016": {
+      "expected": "the square root of x-th squared"
+    },
+    "Root017": {
+      "expected": "the square root of x-th squared pluss y-th squared"
+    },
+    "Root018": {},
+    "Root019": {},
+    "Root020": {},
+    "Root021": {
+      "expected": "the square root of, treogtjue over seksogseksti"
+    },
+    "Root022": {},
+    "Root023": {},
+    "Root024": {},
+    "Root025": {},
+    "Root026": {},
+    "Root027": {},
+    "Root028": {},
+    "Root029": {},
+    "Root030": {},
+    "Root031": {},
+    "Root032": {},
+    "Root033": {},
+    "Root034": {},
+    "Root034a": {},
+    "Root035": {
+      "expected": "the negative square root of x-th"
+    },
+    "Root036": {
+      "expected": "venstreparentes, the positive square root of x-th, høgreparentes, squared"
+    },
+    "Root037": {
+      "expected": "venstreparentes, the negative square root of x-th, høgreparentes, squared"
+    },
+    "Root038": {
+      "expected": "negative, venstreparentes, the positive square root of x-th, høgreparentes, squared"
+    },
+    "Root039": {
+      "expected": "the positive square root of x-th, squared"
+    },
+    "Root040": {
+      "expected": "the positive square root of x-th squared"
+    },
+    "Root041": {
+      "expected": "the positive square root of x-th squared pluss y-th squared"
+    },
+    "Root042": {},
+    "Root043": {},
+    "Root044": {},
+    "Root045": {
+      "expected": "the positive square root of, treogtjue over seksogseksti"
+    },
+    "Root046": {},
+    "Root047": {},
+    "Root048": {},
+    "Root049": {},
+    "Root050": {},
+    "Root051": {},
+    "Root052": {},
+    "Root053": {},
+    "Root054": {},
+    "Root055": {},
+    "Root056": {},
+    "Root057": {},
+    "Root058": {},
+    "Root058a": {},
+    "Root059": {
+      "expected": "the negative square root of x-th, end root"
+    },
+    "Root060": {
+      "expected": "venstreparentes, the square root of x-th, end root, høgreparentes, squared"
+    },
+    "Root061": {
+      "expected": "negative, venstreparentes, the square root of x-th, end root, høgreparentes, squared"
+    },
+    "Root062": {
+      "expected": "the square root of x-th, end root, squared"
+    },
+    "Root063": {
+      "expected": "the square root of x-th squared, end root"
+    },
+    "Root064": {
+      "expected": "the square root of x-th squared pluss y-th squared, end root"
+    },
+    "Root065": {},
+    "Root066": {},
+    "Root067": {},
+    "Root068": {
+      "expected": "the square root of, treogtjue over seksogseksti, end root"
+    },
+    "Root069": {},
+    "Root070": {},
+    "Root071": {},
+    "Root072": {},
+    "Root073": {},
+    "Root074": {},
+    "Root075": {},
+    "Root076": {},
+    "Root077": {},
+    "Root078": {},
+    "Root079": {},
+    "Root080": {},
+    "Root081": {},
+    "Root081a": {},
+    "Root082": {
+      "expected": "the negative square root of x-th, end root"
+    },
+    "Root083": {
+      "expected": "venstreparentes, the positive square root of x-th, end root, høgreparentes, squared"
+    },
+    "Root084": {
+      "expected": "venstreparentes, the negative square root of x-th, end root, høgreparentes, squared"
+    },
+    "Root085": {
+      "expected": "the positive square root of x-th, end root, squared"
+    },
+    "Root086": {
+      "expected": "the positive square root of x-th squared, end root"
+    },
+    "Root087": {
+      "expected": "the positive square root of x-th squared pluss y-th squared, end root"
+    },
+    "Root088": {},
+    "Root089": {},
+    "Root090": {},
+    "Root091": {
+      "expected": "the positive square root of, treogtjue over seksogseksti, end root"
+    },
+    "Root092": {},
+    "Root093": {},
+    "HighRoot001": {
+      "expected": "the cube root of y-th"
+    },
+    "HighRoot002": {},
+    "HighRoot003": {},
+    "HighRoot004": {},
+    "HighRoot005": {
+      "expected": "n-th root of d-th"
+    },
+    "HighRoot006": {
+      "expected": "m-th root of tohundreogtreogførti"
+    },
+    "HighRoot007": {},
+    "HighRoot008": {
+      "expected": "j-th root of etthundreogfemogtjue"
+    },
+    "HighRoot009": {
+      "expected": "negative the cube root of y-th"
+    },
+    "HighRoot010": {},
+    "HighRoot011": {
+      "expected": "the cube root of y-th, end root"
+    },
+    "HighRoot012": {},
+    "HighRoot013": {},
+    "HighRoot014": {},
+    "HighRoot015": {
+      "expected": "n-th root of d-th"
+    },
+    "HighRoot016": {
+      "expected": "m-th root of tohundreogtreogførti"
+    },
+    "HighRoot017": {},
+    "HighRoot018": {
+      "expected": "j-th root of etthundreogfemogtjue, end root"
+    },
+    "HighRoot019": {
+      "expected": "negative the cube root of y-th, end root"
+    },
+    "HighRoot020": {},
+    "HighRoot021": {
+      "expected": "the cube root of y-th"
+    },
+    "HighRoot022": {},
+    "HighRoot023": {},
+    "HighRoot024": {},
+    "HighRoot025": {
+      "expected": "n-th root of d-th"
+    },
+    "HighRoot026": {
+      "expected": "m-th root of tohundreogtreogførti"
+    },
+    "HighRoot027": {},
+    "HighRoot028": {
+      "expected": "j-th root of etthundreogfemogtjue"
+    },
+    "HighRoot029": {
+      "expected": "negative the cube root of y-th"
+    },
+    "HighRoot030": {},
+    "HighRoot031": {
+      "expected": "the cube root of y-th, end root"
+    },
+    "HighRoot032": {},
+    "HighRoot033": {},
+    "HighRoot034": {},
+    "HighRoot035": {
+      "expected": "n-th root of d-th"
+    },
+    "HighRoot036": {
+      "expected": "m-th root of tohundreogtreogførti"
+    },
+    "HighRoot037": {},
+    "HighRoot038": {
+      "expected": "j-th root of etthundreogfemogtjue, end root"
+    },
+    "HighRoot039": {
+      "expected": "negative the cube root of y-th, end root"
+    },
+    "HighRoot040": {}
+  }
+}

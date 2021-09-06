@@ -1,0 +1,373 @@
+{
+  "name": "NynorskMathspeakRoots",
+  "locale": "nn",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_roots.json",
+  "information": "Nynorsk Mathspeak Roots tests.",
+  "domain": "mathspeak",
+  "active": "MathspeakNynorsk",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "sqrt_0_default": {
+      "expected": "StartRot a SluttRot"
+    },
+    "sqrt_0_brief": {
+      "expected": "StartRot a SluttRot"
+    },
+    "sqrt_0_sbrief": {
+      "expected": "Rot a SluttRot"
+    },
+    "sqrt_1_default": {
+      "expected": "RotIndeks to StartRot a SluttRot"
+    },
+    "sqrt_1_brief": {
+      "expected": "RotIndeks to StartRot a SluttRot"
+    },
+    "sqrt_1_sbrief": {
+      "expected": "Indeks to Rot a SluttRot"
+    },
+    "sqrt_2_default": {
+      "expected": "NøstaStartRot StartRot a SluttRot NøstaSluttRot"
+    },
+    "sqrt_2_brief": {
+      "expected": "NøstStartRot StartRot a SluttRot NøstSluttRot"
+    },
+    "sqrt_2_sbrief": {
+      "expected": "NøstRot Rot a SluttRot NøstSluttRot"
+    },
+    "sqrt_3_default": {
+      "expected": "NøstaTo gangerStartRot NøstaStartRot StartRot a SluttRot NøstaSluttRot NøstaTo gangerSluttRot"
+    },
+    "sqrt_3_brief": {
+      "expected": "NøstTo gangerStartRot NøstStartRot StartRot a SluttRot NøstSluttRot NøstTo gangerSluttRot"
+    },
+    "sqrt_3_sbrief": {
+      "expected": "NøstTo gangerRot NøstRot Rot a SluttRot NøstSluttRot NøstTo gangerSluttRot"
+    },
+    "roots_0_default": {
+      "expected": "RotIndeks ein StartRot a SluttRot"
+    },
+    "roots_0_brief": {
+      "expected": "RotIndeks ein StartRot a SluttRot"
+    },
+    "roots_0_sbrief": {
+      "expected": "Indeks ein Rot a SluttRot"
+    },
+    "roots_1_default": {
+      "expected": "RotIndeks to StartRot a SluttRot"
+    },
+    "roots_1_brief": {
+      "expected": "RotIndeks to StartRot a SluttRot"
+    },
+    "roots_1_sbrief": {
+      "expected": "Indeks to Rot a SluttRot"
+    },
+    "roots_2_default": {
+      "expected": "RotIndeks tre StartRot a SluttRot"
+    },
+    "roots_2_brief": {
+      "expected": "RotIndeks tre StartRot a SluttRot"
+    },
+    "roots_2_sbrief": {
+      "expected": "Indeks tre Rot a SluttRot"
+    },
+    "roots_3_default": {
+      "expected": "RotIndeks fire StartRot a SluttRot"
+    },
+    "roots_3_brief": {
+      "expected": "RotIndeks fire StartRot a SluttRot"
+    },
+    "roots_3_sbrief": {
+      "expected": "Indeks fire Rot a SluttRot"
+    },
+    "roots_4_default": {
+      "expected": "RotIndeks fem StartRot a SluttRot"
+    },
+    "roots_4_brief": {
+      "expected": "RotIndeks fem StartRot a SluttRot"
+    },
+    "roots_4_sbrief": {
+      "expected": "Indeks fem Rot a SluttRot"
+    },
+    "roots_5_default": {
+      "expected": "RotIndeks seks StartRot a SluttRot"
+    },
+    "roots_5_brief": {
+      "expected": "RotIndeks seks StartRot a SluttRot"
+    },
+    "roots_5_sbrief": {
+      "expected": "Indeks seks Rot a SluttRot"
+    },
+    "roots_6_default": {
+      "expected": "RotIndeks sju StartRot a SluttRot"
+    },
+    "roots_6_brief": {
+      "expected": "RotIndeks sju StartRot a SluttRot"
+    },
+    "roots_6_sbrief": {
+      "expected": "Indeks sju Rot a SluttRot"
+    },
+    "roots_7_default": {
+      "expected": "RotIndeks åtte StartRot a SluttRot"
+    },
+    "roots_7_brief": {
+      "expected": "RotIndeks åtte StartRot a SluttRot"
+    },
+    "roots_7_sbrief": {
+      "expected": "Indeks åtte Rot a SluttRot"
+    },
+    "roots_8_default": {
+      "expected": "RotIndeks ni StartRot a SluttRot"
+    },
+    "roots_8_brief": {
+      "expected": "RotIndeks ni StartRot a SluttRot"
+    },
+    "roots_8_sbrief": {
+      "expected": "Indeks ni Rot a SluttRot"
+    },
+    "roots_9_default": {
+      "expected": "RotIndeks ti StartRot a SluttRot"
+    },
+    "roots_9_brief": {
+      "expected": "RotIndeks ti StartRot a SluttRot"
+    },
+    "roots_9_sbrief": {
+      "expected": "Indeks ti Rot a SluttRot"
+    },
+    "roots_10_default": {
+      "expected": "RotIndeks elleve StartRot a SluttRot"
+    },
+    "roots_10_brief": {
+      "expected": "RotIndeks elleve StartRot a SluttRot"
+    },
+    "roots_10_sbrief": {
+      "expected": "Indeks elleve Rot a SluttRot"
+    },
+    "nested-roots_0_default": {
+      "expected": "NøstaRotIndeks ein NøstaStartRot RotIndeks ein StartRot a SluttRot NøstaSluttRot"
+    },
+    "nested-roots_0_brief": {
+      "expected": "NøstRotIndeks ein NøstStartRot RotIndeks ein StartRot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_0_sbrief": {
+      "expected": "NøstIndeks ein NøstRot Indeks ein Rot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_1_default": {
+      "expected": "NøstaRotIndeks to NøstaStartRot RotIndeks to StartRot a SluttRot NøstaSluttRot"
+    },
+    "nested-roots_1_brief": {
+      "expected": "NøstRotIndeks to NøstStartRot RotIndeks to StartRot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_1_sbrief": {
+      "expected": "NøstIndeks to NøstRot Indeks to Rot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_2_default": {
+      "expected": "NøstaRotIndeks tre NøstaStartRot RotIndeks tre StartRot a SluttRot NøstaSluttRot"
+    },
+    "nested-roots_2_brief": {
+      "expected": "NøstRotIndeks tre NøstStartRot RotIndeks tre StartRot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_2_sbrief": {
+      "expected": "NøstIndeks tre NøstRot Indeks tre Rot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_3_default": {
+      "expected": "NøstaRotIndeks fire NøstaStartRot RotIndeks fire StartRot a SluttRot NøstaSluttRot"
+    },
+    "nested-roots_3_brief": {
+      "expected": "NøstRotIndeks fire NøstStartRot RotIndeks fire StartRot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_3_sbrief": {
+      "expected": "NøstIndeks fire NøstRot Indeks fire Rot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_4_default": {
+      "expected": "NøstaRotIndeks fem NøstaStartRot RotIndeks fem StartRot a SluttRot NøstaSluttRot"
+    },
+    "nested-roots_4_brief": {
+      "expected": "NøstRotIndeks fem NøstStartRot RotIndeks fem StartRot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_4_sbrief": {
+      "expected": "NøstIndeks fem NøstRot Indeks fem Rot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_5_default": {
+      "expected": "NøstaRotIndeks seks NøstaStartRot RotIndeks seks StartRot a SluttRot NøstaSluttRot"
+    },
+    "nested-roots_5_brief": {
+      "expected": "NøstRotIndeks seks NøstStartRot RotIndeks seks StartRot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_5_sbrief": {
+      "expected": "NøstIndeks seks NøstRot Indeks seks Rot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_6_default": {
+      "expected": "NøstaRotIndeks sju NøstaStartRot RotIndeks sju StartRot a SluttRot NøstaSluttRot"
+    },
+    "nested-roots_6_brief": {
+      "expected": "NøstRotIndeks sju NøstStartRot RotIndeks sju StartRot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_6_sbrief": {
+      "expected": "NøstIndeks sju NøstRot Indeks sju Rot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_7_default": {
+      "expected": "NøstaRotIndeks åtte NøstaStartRot RotIndeks åtte StartRot a SluttRot NøstaSluttRot"
+    },
+    "nested-roots_7_brief": {
+      "expected": "NøstRotIndeks åtte NøstStartRot RotIndeks åtte StartRot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_7_sbrief": {
+      "expected": "NøstIndeks åtte NøstRot Indeks åtte Rot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_8_default": {
+      "expected": "NøstaRotIndeks ni NøstaStartRot RotIndeks ni StartRot a SluttRot NøstaSluttRot"
+    },
+    "nested-roots_8_brief": {
+      "expected": "NøstRotIndeks ni NøstStartRot RotIndeks ni StartRot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_8_sbrief": {
+      "expected": "NøstIndeks ni NøstRot Indeks ni Rot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_9_default": {
+      "expected": "NøstaRotIndeks ti NøstaStartRot RotIndeks ti StartRot a SluttRot NøstaSluttRot"
+    },
+    "nested-roots_9_brief": {
+      "expected": "NøstRotIndeks ti NøstStartRot RotIndeks ti StartRot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_9_sbrief": {
+      "expected": "NøstIndeks ti NøstRot Indeks ti Rot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_10_default": {
+      "expected": "NøstaRotIndeks elleve NøstaStartRot RotIndeks elleve StartRot a SluttRot NøstaSluttRot"
+    },
+    "nested-roots_10_brief": {
+      "expected": "NøstRotIndeks elleve NøstStartRot RotIndeks elleve StartRot a SluttRot NøstSluttRot"
+    },
+    "nested-roots_10_sbrief": {
+      "expected": "NøstIndeks elleve NøstRot Indeks elleve Rot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_0_default": {
+      "expected": "NøstaRotIndeks ein NøstaStartRot RotIndeks tre StartRot a SluttRot NøstaSluttRot"
+    },
+    "hybrided-nested-roots_0_brief": {
+      "expected": "NøstRotIndeks ein NøstStartRot RotIndeks tre StartRot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_0_sbrief": {
+      "expected": "NøstIndeks ein NøstRot Indeks tre Rot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_1_default": {
+      "expected": "NøstaRotIndeks to NøstaStartRot RotIndeks tre StartRot a SluttRot NøstaSluttRot"
+    },
+    "hybrided-nested-roots_1_brief": {
+      "expected": "NøstRotIndeks to NøstStartRot RotIndeks tre StartRot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_1_sbrief": {
+      "expected": "NøstIndeks to NøstRot Indeks tre Rot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_2_default": {
+      "expected": "NøstaRotIndeks tre NøstaStartRot RotIndeks tre StartRot a SluttRot NøstaSluttRot"
+    },
+    "hybrided-nested-roots_2_brief": {
+      "expected": "NøstRotIndeks tre NøstStartRot RotIndeks tre StartRot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_2_sbrief": {
+      "expected": "NøstIndeks tre NøstRot Indeks tre Rot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_3_default": {
+      "expected": "NøstaRotIndeks fire NøstaStartRot RotIndeks tre StartRot a SluttRot NøstaSluttRot"
+    },
+    "hybrided-nested-roots_3_brief": {
+      "expected": "NøstRotIndeks fire NøstStartRot RotIndeks tre StartRot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_3_sbrief": {
+      "expected": "NøstIndeks fire NøstRot Indeks tre Rot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_4_default": {
+      "expected": "NøstaRotIndeks fem NøstaStartRot RotIndeks tre StartRot a SluttRot NøstaSluttRot"
+    },
+    "hybrided-nested-roots_4_brief": {
+      "expected": "NøstRotIndeks fem NøstStartRot RotIndeks tre StartRot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_4_sbrief": {
+      "expected": "NøstIndeks fem NøstRot Indeks tre Rot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_5_default": {
+      "expected": "NøstaRotIndeks seks NøstaStartRot RotIndeks tre StartRot a SluttRot NøstaSluttRot"
+    },
+    "hybrided-nested-roots_5_brief": {
+      "expected": "NøstRotIndeks seks NøstStartRot RotIndeks tre StartRot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_5_sbrief": {
+      "expected": "NøstIndeks seks NøstRot Indeks tre Rot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_6_default": {
+      "expected": "NøstaRotIndeks sju NøstaStartRot RotIndeks tre StartRot a SluttRot NøstaSluttRot"
+    },
+    "hybrided-nested-roots_6_brief": {
+      "expected": "NøstRotIndeks sju NøstStartRot RotIndeks tre StartRot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_6_sbrief": {
+      "expected": "NøstIndeks sju NøstRot Indeks tre Rot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_7_default": {
+      "expected": "NøstaRotIndeks åtte NøstaStartRot RotIndeks tre StartRot a SluttRot NøstaSluttRot"
+    },
+    "hybrided-nested-roots_7_brief": {
+      "expected": "NøstRotIndeks åtte NøstStartRot RotIndeks tre StartRot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_7_sbrief": {
+      "expected": "NøstIndeks åtte NøstRot Indeks tre Rot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_8_default": {
+      "expected": "NøstaRotIndeks ni NøstaStartRot RotIndeks tre StartRot a SluttRot NøstaSluttRot"
+    },
+    "hybrided-nested-roots_8_brief": {
+      "expected": "NøstRotIndeks ni NøstStartRot RotIndeks tre StartRot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_8_sbrief": {
+      "expected": "NøstIndeks ni NøstRot Indeks tre Rot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_9_default": {
+      "expected": "NøstaRotIndeks ti NøstaStartRot RotIndeks tre StartRot a SluttRot NøstaSluttRot"
+    },
+    "hybrided-nested-roots_9_brief": {
+      "expected": "NøstRotIndeks ti NøstStartRot RotIndeks tre StartRot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_9_sbrief": {
+      "expected": "NøstIndeks ti NøstRot Indeks tre Rot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_10_default": {
+      "expected": "NøstaRotIndeks elleve NøstaStartRot RotIndeks tre StartRot a SluttRot NøstaSluttRot"
+    },
+    "hybrided-nested-roots_10_brief": {
+      "expected": "NøstRotIndeks elleve NøstStartRot RotIndeks tre StartRot a SluttRot NøstSluttRot"
+    },
+    "hybrided-nested-roots_10_sbrief": {
+      "expected": "NøstIndeks elleve NøstRot Indeks tre Rot a SluttRot NøstSluttRot"
+    },
+    "deep-nested-roots_0_default": {
+      "expected": "to NøstaTo gangerRotIndeks tre NøstaTo gangerStartRot NøstaRotIndeks fire NøstaStartRot RotIndeks fem StartRot a SluttRot NøstaSluttRot NøstaTo gangerSluttRot"
+    },
+    "deep-nested-roots_0_brief": {
+      "expected": "to NøstTo gangerRotIndeks tre NøstTo gangerStartRot NøstRotIndeks fire NøstStartRot RotIndeks fem StartRot a SluttRot NøstSluttRot NøstTo gangerSluttRot"
+    },
+    "deep-nested-roots_0_sbrief": {
+      "expected": "to NøstTo gangerIndeks tre NøstTo gangerRot NøstIndeks fire NøstRot Indeks fem Rot a SluttRot NøstSluttRot NøstTo gangerSluttRot"
+    },
+    "deep-nested-roots_1_default": {
+      "expected": "to NøstaTo gangerRotIndeks tre NøstaTo gangerStartRot NøstaRotIndeks to NøstaStartRot RotIndeks tre StartRot a SluttRot NøstaSluttRot NøstaTo gangerSluttRot"
+    },
+    "deep-nested-roots_1_brief": {
+      "expected": "to NøstTo gangerRotIndeks tre NøstTo gangerStartRot NøstRotIndeks to NøstStartRot RotIndeks tre StartRot a SluttRot NøstSluttRot NøstTo gangerSluttRot"
+    },
+    "deep-nested-roots_1_sbrief": {
+      "expected": "to NøstTo gangerIndeks tre NøstTo gangerRot NøstIndeks to NøstRot Indeks tre Rot a SluttRot NøstSluttRot NøstTo gangerSluttRot"
+    },
+    "deep-nested-roots_2_default": {
+      "expected": "to tre NøstaTo gangerStartRot NøstaRotIndeks tre NøstaStartRot StartRot a SluttRot NøstaSluttRot NøstaTo gangerSluttRot"
+    },
+    "deep-nested-roots_2_brief": {
+      "expected": "to tre NøstTo gangerStartRot NøstRotIndeks tre NøstStartRot StartRot a SluttRot NøstSluttRot NøstTo gangerSluttRot"
+    },
+    "deep-nested-roots_2_sbrief": {
+      "expected": "to tre NøstTo gangerRot NøstIndeks tre NøstRot Rot a SluttRot NøstSluttRot NøstTo gangerSluttRot"
+    }
+  }
+}

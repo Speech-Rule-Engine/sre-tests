@@ -1,0 +1,233 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "NynorskClearspeakFractions",
+  "locale": "nn",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_fractions.json",
+  "information": "Nynorsk Clearspeak Fractions rule tests.",
+  "active": "ClearspeakNynorsk",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Frac001": {},
+    "Frac002": {
+      "expected": "tolv over toogtretti"
+    },
+    "Frac002a": {
+      "expected": "x-th over y-th"
+    },
+    "Frac002b": {},
+    "Frac002c": {
+      "expected": "x-th y-th over c-th d-th"
+    },
+    "Frac002d": {},
+    "Frac002e": {
+      "expected": "negative x-th over y-th"
+    },
+    "Frac002f": {},
+    "Frac002g": {
+      "expected": "x-th y-th over negative c-th d-th"
+    },
+    "Frac002h": {},
+    "Frac003": {},
+    "Frac004": {},
+    "Frac005": {
+      "expected": "fraction with numerator x-th pluss y-th, and denominator x-th minus y-th"
+    },
+    "Frac006": {},
+    "Frac007": {
+      "expected": "miles over gallon"
+    },
+    "Frac008": {},
+    "Frac009": {},
+    "Frac010": {
+      "expected": "tolv over toogtretti"
+    },
+    "Frac011": {},
+    "Frac012": {},
+    "Frac013": {
+      "expected": "x-th pluss y-th over x-th minus y-th"
+    },
+    "Frac014": {},
+    "Frac015": {
+      "expected": "miles over gallon"
+    },
+    "Frac016": {},
+    "Frac017": {},
+    "Frac018": {
+      "expected": "tolv over toogtretti, end fraction"
+    },
+    "Frac019": {},
+    "Frac020": {},
+    "Frac021": {
+      "expected": "x-th pluss y-th over x-th minus y-th, end fraction"
+    },
+    "Frac022": {},
+    "Frac023": {
+      "expected": "miles over gallons, end fraction"
+    },
+    "Frac024": {},
+    "Frac025": {},
+    "Frac026": {
+      "expected": "the fraction with numerator tolv, and denominator toogtretti, end fraction"
+    },
+    "Frac027": {},
+    "Frac028": {},
+    "Frac029": {
+      "expected": "the fraction with numerator x-th pluss y-th, and denominator x-th minus y-th, end fraction"
+    },
+    "Frac030": {},
+    "Frac031": {
+      "expected": "the fraction with numerator miles, and denominator gallon, end fraction"
+    },
+    "Frac032": {},
+    "Frac033": {
+      "expected": "the fraction with numerator tolv, and denominator toogtretti"
+    },
+    "Frac034": {},
+    "Frac035": {},
+    "Frac036": {
+      "expected": "the fraction with numerator x-th pluss y-th, and denominator x-th minus y-th"
+    },
+    "Frac037": {},
+    "Frac038": {
+      "expected": "the fraction with numerator miles, and denominator gallon"
+    },
+    "Frac039": {},
+    "Frac040": {},
+    "Frac041": {
+      "expected": "the fraction tolv over toogtretti"
+    },
+    "Frac042": {},
+    "Frac043": {},
+    "Frac044": {
+      "expected": "the fraction x-th pluss y-th over x-th minus y-th"
+    },
+    "Frac045": {},
+    "Frac046": {
+      "expected": "the fraction miles over gallon"
+    },
+    "Frac047": {},
+    "Frac048": {},
+    "Frac049": {
+      "expected": "tolv per toogtretti"
+    },
+    "Frac050": {},
+    "Frac051": {},
+    "Frac052": {
+      "expected": "x-th pluss y-th per x-th minus y-th"
+    },
+    "Frac053": {},
+    "Frac054": {
+      "expected": "miles per gallon"
+    },
+    "Frac055": {},
+    "Frac056": {},
+    "Frac057": {},
+    "Frac058": {},
+    "Frac059": {},
+    "Frac060": {
+      "expected": "fraction with numerator x-th pluss y-th, and denominator x-th minus y-th"
+    },
+    "Frac061": {},
+    "Frac062": {
+      "expected": "miles over gallon"
+    },
+    "Frac063": {},
+    "Frac064": {},
+    "Frac065": {
+      "expected": "tolv over toogtretti, end fraction"
+    },
+    "Frac066": {},
+    "Frac067": {},
+    "Frac068": {
+      "expected": "fraction with numerator x-th pluss y-th, and denominator x-th minus y-th"
+    },
+    "Frac069": {},
+    "Frac070": {
+      "expected": "miles over gallons"
+    },
+    "Frac071": {},
+    "FrTxt001": {},
+    "FrTxt002": {
+      "expected": "rise over run"
+    },
+    "FrTxt003": {
+      "expected": "successful outcomes over total outcomes"
+    },
+    "FrTxt004": {},
+    "NestFrac001": {},
+    "NestFrac002": {},
+    "NestFrac003": {},
+    "NestFrac004": {},
+    "NestFrac005": {
+      "expected": "fraction with numerator, elleve over toogtretti, and denominator, seksten over einogfemti"
+    },
+    "NestFrac006": {
+      "expected": "fraction with numerator elleve, and denominator, fraction with numerator toogtretti, and denominator, seksten over einogfemti"
+    },
+    "NestFrac007": {},
+    "NestFrac008": {},
+    "NestFrac009": {},
+    "NestFrac010": {},
+    "NestFrac011": {},
+    "NestFrac012": {},
+    "NestFrac013": {},
+    "NestFrac014": {},
+    "NestFrac015": {},
+    "NestFrac016": {},
+    "NestFrac017": {},
+    "NestFrac018": {},
+    "NestFrac019": {},
+    "NestFrac020": {},
+    "NestFrac021": {},
+    "NestFrac022": {},
+    "NestFrac023": {
+      "expected": "fraction with numerator, elleve over toogtretti, and denominator, seksten over einogfemti"
+    },
+    "NestFrac024": {
+      "expected": "fraction with numerator elleve, and denominator, fraction with numerator toogtretti, and denominator, seksten over einogfemti"
+    },
+    "NestFrac025": {},
+    "NestFrac026": {},
+    "NestFrac027": {},
+    "NestFrac028": {},
+    "NestFrac029": {},
+    "NestFrac030": {},
+    "NestFrac031": {},
+    "NestFrac032": {},
+    "NestFrac033": {},
+    "NestFrac034": {},
+    "NestFrac035": {},
+    "NestFrac036": {},
+    "Fracfunct001": {
+      "expected": "f-th of x-th, over g-th of x-th"
+    },
+    "Fracfunct002": {
+      "expected": "fraction with numerator f-th of x-th, pluss g-th of x-th, and denominator g-th of x-th"
+    },
+    "Fracfunct003": {},
+    "Fracfunct004": {},
+    "Fracfunct005": {},
+    "Fracfunct006": {},
+    "Fracfunct007": {
+      "expected": "sinus x-th over cosinus x-th"
+    },
+    "Fracfunct009": {
+      "expected": "fraction with numerator sinus x-th pluss cosinus x-th, and denominator cosinus x-th"
+    },
+    "Fracfunct010": {},
+    "Fracfunct011": {
+      "expected": "fraction with numerator, sinus of, venstreparentes, x-th pluss y-th, høgreparentes, and denominator, cosinus of, venstreparentes, x-th pluss y-th, høgreparentes"
+    },
+    "Fracfunct012": {},
+    "Fracfunct013": {
+      "expected": "log x-th over log y-th"
+    },
+    "Fracfunct014": {},
+    "Fracfunct015": {},
+    "Fracfunct016": {},
+    "Fracfunct017": {},
+    "Fracfunct018": {}
+  }
+}

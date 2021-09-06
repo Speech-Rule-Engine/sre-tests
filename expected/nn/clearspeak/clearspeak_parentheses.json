@@ -1,0 +1,135 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "NynorskClearspeakParentheses",
+  "locale": "nn",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_parentheses.json",
+  "information": "Nynorsk Clearspeak Parentheses rule tests.",
+  "active": "ClearspeakNynorsk",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Paren001": {
+      "expected": "femogtjue"
+    },
+    "Paren002": {},
+    "Paren003": {},
+    "Paren004": {},
+    "Paren004a": {},
+    "Paren005": {},
+    "Paren006": {},
+    "Paren007": {},
+    "Paren008": {},
+    "Paren009": {},
+    "Paren010": {},
+    "Paren011": {},
+    "Paren012": {},
+    "Paren013": {
+      "expected": "venstreparentes, elleve over toogtjue, høgreparentes"
+    },
+    "Paren014": {},
+    "Paren015": {
+      "expected": "venstreparentes, elleve over femten, høgreparentes, squared"
+    },
+    "Paren016": {
+      "expected": "venstreparentes, femogtjue, høgreparentes"
+    },
+    "Paren017": {},
+    "Paren018": {},
+    "Paren019": {},
+    "Paren020": {},
+    "Paren021": {},
+    "Paren022": {},
+    "Paren023": {},
+    "Paren024": {},
+    "Paren025": {},
+    "Paren026": {},
+    "Paren027": {},
+    "Paren028": {
+      "expected": "venstreparentes, elleve over toogtjue, høgreparentes"
+    },
+    "Paren029": {},
+    "Paren030": {
+      "expected": "venstreparentes, elleve over femten, høgreparentes, squared"
+    },
+    "Paren031": {},
+    "Paren032": {
+      "expected": "the point with coordinates x-th komma y-th"
+    },
+    "Paren033": {},
+    "Paren034": {
+      "expected": "the point with coordinates x-th komma y-th komma z-th"
+    },
+    "Paren035": {},
+    "Paren036": {
+      "expected": "the interval from a-th to b-th, not including a-th or b-th"
+    },
+    "Paren037": {},
+    "Paren038": {
+      "expected": "the interval from a-th to b-th, including a-th, but not including b-th"
+    },
+    "Paren039": {},
+    "Paren040": {
+      "expected": "the interval from a-th to b-th, not including a-th, but including b-th"
+    },
+    "Paren041": {},
+    "Paren042": {
+      "expected": "the interval from a-th to b-th, including a-th and b-th"
+    },
+    "Paren043": {},
+    "Paren044": {
+      "expected": "the interval from negative uendeleg-th to b-th, not including b-th"
+    },
+    "Paren045": {},
+    "Paren046": {
+      "expected": "the interval from negative uendeleg-th to b-th, including b-th"
+    },
+    "Paren047": {},
+    "Paren048": {
+      "expected": "the interval from a-th to uendeleg-th, not including a-th"
+    },
+    "Paren049": {},
+    "Paren050": {
+      "expected": "the interval from a-th to uendeleg-th, including a-th"
+    },
+    "Paren051": {},
+    "Paren052": {
+      "expected": "the interval from negative uendeleg-th to uendeleg-th"
+    },
+    "Paren053": {
+      "expected": "the interval from negative uendeleg-th to positive uendeleg-th"
+    },
+    "Nest001": {
+      "expected": "f-th of, g-th of x-th"
+    },
+    "Nest002": {},
+    "Nest003": {},
+    "Nest004": {},
+    "Nest005": {},
+    "Nest006": {},
+    "Nest007": {},
+    "Nest008": {},
+    "Nest009": {},
+    "SilParen001": {
+      "expected": "femogtjue"
+    },
+    "SilParen002": {},
+    "SilParen003": {},
+    "SilParen004": {},
+    "SilParen005": {},
+    "SilParen006": {},
+    "SilParen007": {},
+    "SilParen008": {},
+    "SilParen009": {},
+    "SilParen010": {},
+    "SilParen011": {},
+    "SilParen012": {},
+    "SilParen013": {
+      "expected": "elleve over toogtjue"
+    },
+    "SilParen014": {},
+    "SilParen015": {
+      "expected": "elleve over femten, squared"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "NynorskClearspeakSetsEnclosedInSetBrackets",
+  "locale": "nn",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_sets_enclosed_in_set_brackets.json",
+  "information": "Nynorsk Clearspeak SetsEnclosedInSetBrackets rule tests.",
+  "active": "ClearspeakNynorsk",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Set001": {},
+    "Set002": {},
+    "Set003": {},
+    "Set004": {
+      "expected": "the set of all x-th in the natural numbers such that x-th is an even number"
+    },
+    "Set005": {},
+    "Set006": {},
+    "Set007": {},
+    "Set008": {},
+    "Set009": {},
+    "Set010": {},
+    "Set011": {},
+    "Set012": {},
+    "Set013": {},
+    "Set014": {},
+    "Set015": {
+      "expected": "the set of all x-th in the natural numbers such that x-th is an even number"
+    },
+    "Set016": {},
+    "Set017": {}
+  }
+}

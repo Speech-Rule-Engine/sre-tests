@@ -1,0 +1,320 @@
+{
+  "name": "NynorskMathspeakUnits",
+  "locale": "nn",
+  "factory": "speech",
+  "base": "input/common/units_speech.json",
+  "information": "Nynorsk Mathspeak Units tests.",
+  "domain": "mathspeak",
+  "active": "MathspeakNynorsk",
+  "exclude": [
+    "CurrencySingular_0_Currency_Position",
+    "CurrencySingular_0_Currency_Prefix",
+    "CurrencySingular_1_Currency_Position",
+    "CurrencySingular_1_Currency_Prefix",
+    "CurrencySingle_0_Currency_Position",
+    "CurrencySingle_0_Currency_Prefix",
+    "CurrencySingle_1_Currency_Position",
+    "CurrencySingle_1_Currency_Prefix",
+    "CurrencyPlural_0_Currency_Position",
+    "CurrencyPlural_0_Currency_Prefix",
+    "CurrencyPlural_1_Currency_Position",
+    "CurrencyPlural_1_Currency_Prefix",
+    "CurrencyMultitude_0_Currency_Position",
+    "CurrencyMultitude_0_Currency_Prefix",
+    "CurrencyMultitude_1_Currency_Position",
+    "CurrencyMultitude_1_Currency_Prefix"
+  ],
+  "compare": true,
+  "tests": {
+    "UnitSquare_0_default": {
+      "expected": "in i andre potens"
+    },
+    "UnitSquare_0_brief": {
+      "expected": "in i andre potens"
+    },
+    "UnitSquare_0_sbrief": {
+      "expected": "in i andre potens"
+    },
+    "UnitSquare_1_default": {
+      "expected": "sekunder i andre potens"
+    },
+    "UnitSquare_1_brief": {
+      "expected": "sekunder i andre potens"
+    },
+    "UnitSquare_1_sbrief": {
+      "expected": "sekunder i andre potens"
+    },
+    "UnitSquare_2_default": {
+      "expected": "meter i andre potens"
+    },
+    "UnitSquare_2_brief": {
+      "expected": "meter i andre potens"
+    },
+    "UnitSquare_2_sbrief": {
+      "expected": "meter i andre potens"
+    },
+    "UnitCube_0_default": {
+      "expected": "in i tredje potens"
+    },
+    "UnitCube_0_brief": {
+      "expected": "in i tredje potens"
+    },
+    "UnitCube_0_sbrief": {
+      "expected": "in i tredje potens"
+    },
+    "UnitCube_1_default": {
+      "expected": "sekunder i tredje potens"
+    },
+    "UnitCube_1_brief": {
+      "expected": "sekunder i tredje potens"
+    },
+    "UnitCube_1_sbrief": {
+      "expected": "sekunder i tredje potens"
+    },
+    "UnitCube_2_default": {
+      "expected": "meter i tredje potens"
+    },
+    "UnitCube_2_brief": {
+      "expected": "meter i tredje potens"
+    },
+    "UnitCube_2_sbrief": {
+      "expected": "meter i tredje potens"
+    },
+    "UnitInverse_default": {
+      "expected": "in Superskript negativ ein"
+    },
+    "UnitInverse_brief": {
+      "expected": "in Sub negativ ein"
+    },
+    "UnitInverse_sbrief": {
+      "expected": "in Sub negativ ein"
+    },
+    "UnitDoubleInverse_default": {
+      "expected": "in Superskript negativ ein Grunnlinje mm Superskript negativ ein"
+    },
+    "UnitDoubleInverse_brief": {
+      "expected": "in Sub negativ ein Basis mm Sub negativ ein"
+    },
+    "UnitDoubleInverse_sbrief": {
+      "expected": "in Sub negativ ein Basis mm Sub negativ ein"
+    },
+    "UnitDivide_default": {
+      "expected": "Start Brøk in Over mm Slutt Brøk"
+    },
+    "UnitDivide_brief": {
+      "expected": "Start Brøk in Over mm Slutt Brøk"
+    },
+    "UnitDivide_sbrief": {
+      "expected": "Brøk in Over mm SluttBrøk"
+    },
+    "UnitsSingle_0": {
+      "expected": "km"
+    },
+    "UnitsSingle_1": {
+      "expected": "ampere"
+    },
+    "UnitsSingle_2": {
+      "expected": "ohm"
+    },
+    "UnitsSingle_3": {
+      "expected": "kΩ"
+    },
+    "UnitsSingle_4": {
+      "expected": "Celsius"
+    },
+    "UnitsSimple_0": {
+      "expected": "min minutter"
+    },
+    "UnitsSimple_1": {
+      "expected": "tre km"
+    },
+    "UnitsSimple_2": {
+      "expected": "km pluss sekunder"
+    },
+    "UnitsSuperscript_0": {
+      "expected": "km i andre potens"
+    },
+    "UnitsSuperscript_1": {
+      "expected": "meter i tredje potens"
+    },
+    "UnitsSuperscript_2": {
+      "expected": "km Superskript fire"
+    },
+    "UnitsSuperscript_3": {
+      "expected": "meter Superskript negativ ein"
+    },
+    "UnitsSuperscript_4": {
+      "expected": "sekunder meter Superskript negativ ein"
+    },
+    "UnitsSuperscript_5": {
+      "expected": "Start Brøk sekunder Over meter Slutt Brøk Superskript negativ ein"
+    },
+    "UnitsSuperscript_6": {
+      "expected": "Start Brøk sekunder Over meter Slutt Brøk Superskript negativ ein"
+    },
+    "UnitsSuperscript_7": {
+      "expected": "tre meter Superskript negativ ein"
+    },
+    "UnitsSuperscript_8": {
+      "expected": "Start Brøk km Over timer Slutt Brøk"
+    },
+    "UnitsSuperscript_9": {
+      "expected": "newton Start Brøk km Over timer Slutt Brøk"
+    },
+    "UnitsSuperscript_10": {
+      "expected": "Start Brøk m Over km Slutt Brøk"
+    },
+    "UnitsSuperscript_11": {
+      "expected": "tre km timer"
+    },
+    "UnitsExpressions_0": {
+      "expected": "sekunder tre m km timer"
+    },
+    "UnitsExpressions_1": {
+      "expected": "km sekunder i andre potens tre m km timer"
+    },
+    "UnitsExpressions_2": {
+      "expected": "tre m km timer Start Brøk stor bokstav N Over sekunder i andre potens Slutt Brøk"
+    },
+    "UnitsExpressions_3": {
+      "expected": "tre m km timer Start Brøk newton Over sekunder i andre potens Slutt Brøk"
+    },
+    "UnitPlural_1": {
+      "expected": "fire mm"
+    },
+    "UnitPlural_2": {
+      "expected": "ein mm"
+    },
+    "UnitPlural_3": {
+      "expected": "fire mm"
+    },
+    "UnitPlural_4": {
+      "expected": "ein mm"
+    },
+    "UnitCombine_0": {
+      "expected": "meter sekunder"
+    },
+    "UnitCombine_1": {
+      "expected": "m sekunder"
+    },
+    "UnitCombine_2": {
+      "expected": "meter s"
+    },
+    "UnitCombine_3": {
+      "expected": "meter sekunder"
+    },
+    "UnitCombine_4": {
+      "expected": "m sekunder"
+    },
+    "UnitCombine_5": {
+      "expected": "meter s"
+    },
+    "UnitCombine_6": {
+      "expected": "meter sekunder liter"
+    },
+    "issue_364_1": {
+      "expected": "treogsekstitusentrehundreogseksti in er lik treogsekstitusentrehundreogseksti in. er lik treogsekstitusentrehundreogseksti dobbel prim er lik treogsekstitusentrehundreogseksti inches er lik femtusentohundreogåtti fot er lik femtusentohundreogåtti fot er lik femtusentohundreogåtti prim er lik femtusentohundreogåtti feet er lik ettusensjuhundreogseksti yd er lik ettusensjuhundreogseksti yd. er lik ettusensjuhundreogseksti yards er lik ein mil er lik ein mil er lik ein mile"
+    },
+    "issue_364_2": {
+      "expected": "åttetusen li er lik åttetusen li. er lik åttetusen links er lik trehundreogtjue rd er lik trehundreogtjue rd. er lik trehundreogtjue rods er lik åtti ch er lik åtti ch. er lik åtti chains er lik åtte fur er lik åtte fur. er lik åtte furlongs er lik ein mil er lik ein mil er lik ein mile"
+    },
+    "issue_364_3": {
+      "expected": "treogførtitusenfemhundreogseksti sq ft er lik treogførtitusenfemhundreogseksti sq. ft. er lik treogførtitusenfemhundreogseksti fot i andre potens er lik treogførtitusenfemhundreogseksti prim i andre potens er lik treogførtitusenfemhundreogseksti square feet er lik firetusenåttehundreogførti kvadratmeter er lik firetusenåttehundreogførti kvadratmeter er lik firetusenåttehundreogførti yd i andre potens er lik firetusenåttehundreogførti square yards er lik etthundreogseksti sq rd er lik etthundreogseksti sq. rd. er lik etthundreogseksti rd i andre potens er lik etthundreogseksti square rods er lik ein mål er lik ein mål er lik ein acre er lik Start Brøk ein Over sekshundreogførti Slutt Brøk kvadratkilometer er lik Start Brøk ein Over sekshundreogførti Slutt Brøk kvadratkilometer er lik Start Brøk ein Over sekshundreogførti Slutt Brøk mil i andre potens er lik Start Brøk ein Over sekshundreogførti Slutt Brøk square miles"
+    },
+    "issue_364_4": {
+      "expected": "seksogførtitusensekshundreogseksogfemti cu in er lik seksogførtitusensekshundreogseksogfemti cu. in. er lik seksogførtitusensekshundreogseksogfemti in i tredje potens er lik seksogførtitusensekshundreogseksogfemti dobbel prim i tredje potens er lik seksogførtitusensekshundreogseksogfemti cubic inches er lik sjuogtjue cu ft er lik sjuogtjue cu. ft. er lik sjuogtjue fot i tredje potens er lik sjuogtjue prim i tredje potens er lik sjuogtjue cubic feet er lik ein cu yd er lik ein cu. yd. er lik ein yd i tredje potens er lik ein cubic yard"
+    },
+    "issue_364_5": {
+      "expected": "ettusenfireogtjue fl dr er lik ettusenfireogtjue fl. dr. er lik ettusenfireogtjue fluid drams er lik sjuhundreogåtteogseksti teskje er lik sjuhundreogåtteogseksti teskje er lik sjuhundreogåtteogseksti teaspoons er lik tohundreogseksogfemti spiseskje er lik tohundreogseksogfemti spiseskje er lik tohundreogseksogfemti tablespoons er lik etthundreogåtteogtjue fl oz er lik etthundreogåtteogtjue fl. oz. er lik etthundreogåtteogtjue fluid ounces er lik seksten cp er lik seksten cp. er lik seksten cups er lik åtte pt er lik åtte pt. er lik åtte pints er lik fire qt er lik fire qt. er lik fire quarts er lik ein gal er lik ein gal. er lik ein gallon"
+    },
+    "issue_364_6": {
+      "expected": "tohundreogseksogfemti dr er lik tohundreogseksogfemti dr. er lik tohundreogseksogfemti drams er lik seksten oz er lik seksten oz. er lik seksten ounces er lik ein # er lik ein lb er lik ein lb. er lik ein pounds er lik etthundre cwt er lik etthundre cwt. er lik etthundre hundredweights er lik totusen tons"
+    },
+    "issue_366": {
+      "expected": "treogsekstitusentrehundreogseksti in er lik treogsekstitusentrehundreogseksti in. er lik treogsekstitusentrehundreogseksti dobbel prim er lik treogsekstitusentrehundreogseksti inches er lik femtusentohundreogåtti fot er lik femtusentohundreogåtti fot er lik femtusentohundreogåtti prim er lik femtusentohundreogåtti feet er lik ettusensjuhundreogseksti yd er lik ettusensjuhundreogseksti yd. er lik ettusensjuhundreogseksti yards er lik ein mil er lik ein mil er lik ein mile"
+    },
+    "testSample_13_1_2_var0": {
+      "expected": "ein joule er lik ein kg prikk meter i andre potens prikk sekunder Superskript negativ to"
+    },
+    "testSample_13_1_2_var1": {
+      "expected": "ein joule er lik ein kg meter i andre potens sekunder Superskript negativ to"
+    },
+    "testSample_13_1_2_var2": {
+      "expected": "ein joule er lik ein kg meter i andre potens sekunder Superskript negativ to"
+    },
+    "unit_cube": {
+      "expected": "in i tredje potens"
+    },
+    "UnitDiv_0": {
+      "expected": "Start Brøk km kg sekunder i andre potens Over joule Slutt Brøk"
+    },
+    "UnitDiv_1": {
+      "expected": "Start Brøk tre km ein kg sekunder i andre potens Over joule Slutt Brøk"
+    },
+    "UnitDiv_2": {
+      "expected": "Start Brøk ein km kg sekunder i andre potens Over joule Slutt Brøk"
+    },
+    "UnitDiv_3": {
+      "expected": "Start Brøk ein km kg sekunder i andre potens Over fem joule Slutt Brøk"
+    },
+    "UnitKm": {
+      "expected": "km"
+    },
+    "UnitLong_1": {
+      "expected": "tre km kg sekunder i andre potens joule"
+    },
+    "UnitLong_2": {
+      "expected": "tre km kg sekunder i andre potens joule"
+    },
+    "UnitLong_3": {
+      "expected": "tre km fire kg sekunder i andre potens joule"
+    },
+    "UnitLong_4": {
+      "expected": "tre km ein kg sekunder i andre potens joule"
+    },
+    "UnitMultiple": {
+      "expected": "ein km sekunder pluss to km sekunder pluss km sekunder pluss a km sekunder pluss"
+    },
+    "UnitMultitude": {
+      "expected": "ein km pluss to km pluss km pluss a km"
+    },
+    "UnitNumb_0": {},
+    "UnitNumb_1": {},
+    "UnitNumb_2": {
+      "expected": "ein km to kg km"
+    },
+    "UnitTriple": {
+      "expected": "ein km kg sekunder pluss to km kg sekunder pluss km kg sekunder pluss a km kg sekunder pluss"
+    },
+    "CurrencySingular_0_default": {
+      "expected": "ein dollar"
+    },
+    "CurrencySingular_1_default": {
+      "expected": "dollar ein"
+    },
+    "CurrencySingle_0_default": {
+      "expected": "dollar"
+    },
+    "CurrencySingle_1_default": {
+      "expected": "dollar"
+    },
+    "CurrencyPlural_0_default": {
+      "expected": "to dollar"
+    },
+    "CurrencyPlural_1_default": {
+      "expected": "dollar to"
+    },
+    "CurrencyMultitude_0_default": {
+      "expected": "ein dollar pluss to dollar pluss dollar pluss a dollar"
+    },
+    "CurrencyMultitude_1_default": {
+      "expected": "ein dollar pluss dollar to pluss dollar pluss dollar a"
+    },
+    "CurrencyMultitude_2_default": {
+      "expected": "ein euro pluss to euro pluss euro pluss a euro"
+    },
+    "CurrencyMultitude_3_default": {
+      "expected": "ein pund pluss to pund pluss pund pluss a pund"
+    }
+  }
+}

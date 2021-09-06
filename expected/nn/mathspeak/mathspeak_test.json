@@ -1,0 +1,1037 @@
+{
+  "name": "NynorskMathspeak",
+  "locale": "nn",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_test.json",
+  "information": "Nynorsk Mathspeak tests.",
+  "domain": "mathspeak",
+  "active": "MathspeakNynorsk",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Sample_1_1_1_default": {
+      "expected": "pi tilnærma lik tre"
+    },
+    "Sample_1_1_1_brief": {
+      "expected": "pi tilnærma lik tre"
+    },
+    "Sample_1_1_1_sbrief": {
+      "expected": "pi tilnærma lik tre"
+    },
+    "Sample_1_1_2_default": {
+      "expected": "etthundreogto pluss to pluss femten er lik to"
+    },
+    "Sample_1_1_2_brief": {
+      "expected": "etthundreogto pluss to pluss femten er lik to"
+    },
+    "Sample_1_1_2_sbrief": {
+      "expected": "etthundreogto pluss to pluss femten er lik to"
+    },
+    "Sample_1_1_3_default": {
+      "expected": "niogfemti gangeteikn er lik"
+    },
+    "Sample_1_1_3_brief": {
+      "expected": "niogfemti gangeteikn er lik"
+    },
+    "Sample_1_1_3_sbrief": {
+      "expected": "niogfemti gangeteikn er lik"
+    },
+    "Sample_1_2_1_default": {
+      "expected": "tre minus negativ to"
+    },
+    "Sample_1_2_1_brief": {
+      "expected": "tre minus negativ to"
+    },
+    "Sample_1_2_1_sbrief": {
+      "expected": "tre minus negativ to"
+    },
+    "Sample_1_2_2_default": {
+      "expected": "negativ y"
+    },
+    "Sample_1_2_2_brief": {
+      "expected": "negativ y"
+    },
+    "Sample_1_2_2_sbrief": {
+      "expected": "negativ y"
+    },
+    "Sample_1_2_3_default": {
+      "expected": "negativ toogtretti"
+    },
+    "Sample_1_2_3_brief": {
+      "expected": "negativ toogtretti"
+    },
+    "Sample_1_2_3_sbrief": {
+      "expected": "negativ toogtretti"
+    },
+    "Sample_1_4_1_default": {
+      "expected": "t to e fire"
+    },
+    "Sample_1_4_1_brief": {
+      "expected": "t to e fire"
+    },
+    "Sample_1_4_1_sbrief": {
+      "expected": "t to e fire"
+    },
+    "Sample_1_4_2_default": {
+      "expected": "tallteikn FF"
+    },
+    "Sample_1_4_2_brief": {
+      "expected": "tallteikn FF"
+    },
+    "Sample_1_4_2_sbrief": {
+      "expected": "tallteikn FF"
+    },
+    "Sample_1_4_3_default": {
+      "expected": "x femten FF pluss x to B ein er lik"
+    },
+    "Sample_1_4_3_brief": {
+      "expected": "x femten FF pluss x to B ein er lik"
+    },
+    "Sample_1_4_3_sbrief": {
+      "expected": "x femten FF pluss x to B ein er lik"
+    },
+    "Sample_1_5_1_default": {
+      "expected": "I komma ord stor I I komma ord stor I I I komma ord stor I V komma V punktum"
+    },
+    "Sample_1_5_1_brief": {
+      "expected": "I komma ord stor I I komma ord stor I I I komma ord stor I V komma V punktum"
+    },
+    "Sample_1_5_1_sbrief": {
+      "expected": "I komma ord stor I I komma ord stor I I I komma ord stor I V komma V punktum"
+    },
+    "Sample_2_1_1_default": {
+      "expected": "d er lik StartRot venstreparentes stor bokstav X minus x høgreparentes i andre potens minus venstreparentes stor bokstav Y minus y høgreparentes i andre potens SluttRot"
+    },
+    "Sample_2_1_1_brief": {
+      "expected": "d er lik StartRot venstreparentes stor bokstav X minus x høgreparentes i andre potens minus venstreparentes stor bokstav Y minus y høgreparentes i andre potens SluttRot"
+    },
+    "Sample_2_1_1_sbrief": {
+      "expected": "d er lik Rot venstreparentes stor bokstav X minus x høgreparentes i andre potens minus venstreparentes stor bokstav Y minus y høgreparentes i andre potens SluttRot"
+    },
+    "Sample_2_3_1_default": {
+      "expected": "If stor bokstav A høgrepil stor bokstav B and stor bokstav B høgrepil stor bokstav C then stor bokstav A høgrepil stor bokstav C punktum"
+    },
+    "Sample_2_3_1_brief": {
+      "expected": "If stor bokstav A høgrepil stor bokstav B and stor bokstav B høgrepil stor bokstav C then stor bokstav A høgrepil stor bokstav C punktum"
+    },
+    "Sample_2_3_1_sbrief": {
+      "expected": "If stor bokstav A høgrepil stor bokstav B and stor bokstav B høgrepil stor bokstav C then stor bokstav A høgrepil stor bokstav C punktum"
+    },
+    "Sample_2_6_1_default": {
+      "expected": "feit venstre hakeparentes x feit høgre hakeparentes"
+    },
+    "Sample_2_6_1_brief": {
+      "expected": "feit venstre hakeparentes x feit høgre hakeparentes"
+    },
+    "Sample_2_6_1_sbrief": {
+      "expected": "feit venstre hakeparentes x feit høgre hakeparentes"
+    },
+    "Sample_2_6_2_default": {
+      "expected": "konturintegral stor bokstav E prikk d feit l er lik minus Start Brøk d stor bokstav Pi stor bokstav B Over d t Slutt Brøk"
+    },
+    "Sample_2_6_2_brief": {
+      "expected": "konturintegral stor bokstav E prikk d feit l er lik minus Start Brøk d stor bokstav Pi stor bokstav B Over d t Slutt Brøk"
+    },
+    "Sample_2_6_2_sbrief": {
+      "expected": "konturintegral stor bokstav E prikk d feit l er lik minus Brøk d stor bokstav Pi stor bokstav B Over d t SluttBrøk"
+    },
+    "NegativeVsMinus_0": {
+      "expected": "minus Start Brøk ein Over b Slutt Brøk"
+    },
+    "NegativeVsMinus_1": {
+      "expected": "minus Start Brøk a Over b Slutt Brøk"
+    },
+    "NegativeVsMinus_2": {},
+    "Sample_4_2_1_default": {
+      "expected": "Uppercase venstreparentes StartSett alfa komma beta komma gamma komma delta komma epsilon komma pi StoppSett høgreparentes er lik StartSett stor bokstav Alfa komma stor bokstav Beta komma stor bokstav Gamma komma triangel komma stor bokstav Epsilon komma stor bokstav Pi StoppSett"
+    },
+    "Sample_4_2_1_brief": {
+      "expected": "Uppercase venstreparentes StartSett alfa komma beta komma gamma komma delta komma epsilon komma pi StoppSett høgreparentes er lik StartSett stor bokstav Alfa komma stor bokstav Beta komma stor bokstav Gamma komma triangel komma stor bokstav Epsilon komma stor bokstav Pi StoppSett"
+    },
+    "Sample_4_2_1_sbrief": {
+      "expected": "Uppercase venstreparentes Sett alfa komma beta komma gamma komma delta komma epsilon komma pi StoppSet høgreparentes er lik Sett stor bokstav Alfa komma stor bokstav Beta komma stor bokstav Gamma komma triangel komma stor bokstav Epsilon komma stor bokstav Pi StoppSet"
+    },
+    "Sample_5_1_1_default": {
+      "expected": "y minus ein"
+    },
+    "Sample_5_1_1_brief": {
+      "expected": "y minus ein"
+    },
+    "Sample_5_1_1_sbrief": {
+      "expected": "y minus ein"
+    },
+    "Sample_5_1_2_default": {
+      "expected": "venstreparentes ein minus to minus ein høgreparentes"
+    },
+    "Sample_5_1_2_brief": {
+      "expected": "venstreparentes ein minus to minus ein høgreparentes"
+    },
+    "Sample_5_1_2_sbrief": {
+      "expected": "venstreparentes ein minus to minus ein høgreparentes"
+    },
+    "Sample_5_1_3_default": {
+      "expected": "negativ ein"
+    },
+    "Sample_5_1_3_brief": {
+      "expected": "negativ ein"
+    },
+    "Sample_5_1_3_sbrief": {
+      "expected": "negativ ein"
+    },
+    "Sample_6_1_1_default": {
+      "expected": "The Fibonacci numbers are kolon StartSett komma ein komma ein komma to komma tre komma fem komma åtte komma prikk prikk prikk StoppSett"
+    },
+    "Sample_6_1_1_brief": {
+      "expected": "The Fibonacci numbers are kolon StartSett komma ein komma ein komma to komma tre komma fem komma åtte komma prikk prikk prikk StoppSett"
+    },
+    "Sample_6_1_1_sbrief": {
+      "expected": "The Fibonacci numbers are kolon Sett komma ein komma ein komma to komma tre komma fem komma åtte komma prikk prikk prikk StoppSet"
+    },
+    "Sample_6_2_1_default": {
+      "expected": "StartAbsoluttVerdi fire minus sju StoppAbsoluttVerdi er lik tre"
+    },
+    "Sample_6_2_1_brief": {
+      "expected": "StartAbsoluttVerdi fire minus sju StoppAbsoluttVerdi er lik tre"
+    },
+    "Sample_6_2_1_sbrief": {
+      "expected": "AbsoluttVerdi fire minus sju StoppAbsoluttVerdi er lik tre"
+    },
+    "Sample_6_2_2_default": {
+      "expected": "StartAbsoluttVerdi a pluss minus StartAbsoluttVerdi b minus c StoppAbsoluttVerdi StoppAbsoluttVerdi er ikkje lik StartAbsoluttVerdi a StoppAbsoluttVerdi pluss minus StartAbsoluttVerdi b minus c StoppAbsoluttVerdi"
+    },
+    "Sample_6_2_2_brief": {
+      "expected": "StartAbsoluttVerdi a pluss minus StartAbsoluttVerdi b minus c StoppAbsoluttVerdi StoppAbsoluttVerdi er ikkje lik StartAbsoluttVerdi a StoppAbsoluttVerdi pluss minus StartAbsoluttVerdi b minus c StoppAbsoluttVerdi"
+    },
+    "Sample_6_2_2_sbrief": {
+      "expected": "AbsoluttVerdi a pluss minus AbsoluttVerdi b minus c StoppAbsoluttVerdi StoppAbsoluttVerdi er ikkje lik AbsoluttVerdi a StoppAbsoluttVerdi pluss minus AbsoluttVerdi b minus c StoppAbsoluttVerdi"
+    },
+    "Sample_7_1_1_default": {
+      "expected": "Start Brøk ein Over x Slutt Brøk"
+    },
+    "Sample_7_1_1_brief": {
+      "expected": "Start Brøk ein Over x Slutt Brøk"
+    },
+    "Sample_7_1_1_sbrief": {
+      "expected": "Brøk ein Over x SluttBrøk"
+    },
+    "Sample_7_1_2_default": {
+      "expected": "a minus Start Brøk b pluss c Over d minus e Slutt Brøk gangeteikn f"
+    },
+    "Sample_7_1_2_brief": {
+      "expected": "a minus Start Brøk b pluss c Over d minus e Slutt Brøk gangeteikn f"
+    },
+    "Sample_7_1_2_sbrief": {
+      "expected": "a minus Brøk b pluss c Over d minus e SluttBrøk gangeteikn f"
+    },
+    "Sample_7_2_1_default": {
+      "expected": "Start Start Brøk Start Brøk x Over y Slutt Brøk Over Over z Slutt Slutt Brøk er ikkje lik Start Start Brøk x Over Over Start Brøk y Over z Slutt Brøk Slutt Slutt Brøk"
+    },
+    "Sample_7_2_1_brief": {
+      "expected": "Start Start Brøk Start Brøk x Over y Slutt Brøk Over Over z Slutt Slutt Brøk er ikkje lik Start Start Brøk x Over Over Start Brøk y Over z Slutt Brøk Slutt Slutt Brøk"
+    },
+    "Sample_7_2_1_sbrief": {
+      "expected": "NøstBrøk Brøk x Over y SluttBrøk NøstOver z NøstSluttBrøk er ikkje lik NøstBrøk x NøstOver Brøk y Over z SluttBrøk NøstSluttBrøk"
+    },
+    "Sample_7_3_1_default": {
+      "expected": "Start Start Start Brøk Start Start Brøk venstreparentes ein minus x høgreparentes Start Brøk d Over d x Slutt Brøk venstreparentes to x høgreparentes minus to x Start Brøk d Over d x Slutt Brøk venstreparentes ein minus x høgreparentes Over Over venstreparentes ein minus x høgreparentes i andre potens Slutt Slutt Brøk Over Over Over ein pluss venstreparentes Start Brøk to x Over ein minus x Slutt Brøk høgreparentes i andre potens Slutt Slutt Slutt Brøk"
+    },
+    "Sample_7_3_1_brief": {
+      "expected": "Start Start Start Brøk Start Start Brøk venstreparentes ein minus x høgreparentes Start Brøk d Over d x Slutt Brøk venstreparentes to x høgreparentes minus to x Start Brøk d Over d x Slutt Brøk venstreparentes ein minus x høgreparentes Over Over venstreparentes ein minus x høgreparentes i andre potens Slutt Slutt Brøk Over Over Over ein pluss venstreparentes Start Brøk to x Over ein minus x Slutt Brøk høgreparentes i andre potens Slutt Slutt Slutt Brøk"
+    },
+    "Sample_7_3_1_sbrief": {
+      "expected": "NøstTo gangerBrøk NøstBrøk venstreparentes ein minus x høgreparentes Brøk d Over d x SluttBrøk venstreparentes to x høgreparentes minus to x Brøk d Over d x SluttBrøk venstreparentes ein minus x høgreparentes NøstOver venstreparentes ein minus x høgreparentes i andre potens NøstSluttBrøk NøstTo gangerOver ein pluss venstreparentes Brøk to x Over ein minus x SluttBrøk høgreparentes i andre potens NøstTo gangerSluttBrøk"
+    },
+    "Sample_7_3_2_default": {
+      "expected": "a pluss Start Start Start Start Brøk ein Over Over Over Over a ein pluss Start Start Start Brøk ein Over Over Over a to pluss Start Start Brøk ein Over Over prikk prikk prikk pluss Start Brøk ein Over a Subskript n Grunnlinje Slutt Brøk Slutt Slutt Brøk Slutt Slutt Slutt Brøk Slutt Slutt Slutt Slutt Brøk"
+    },
+    "Sample_7_3_2_brief": {
+      "expected": "a pluss Start Start Start Start Brøk ein Over Over Over Over a ein pluss Start Start Start Brøk ein Over Over Over a to pluss Start Start Brøk ein Over Over prikk prikk prikk pluss Start Brøk ein Over a Sub n Basis Slutt Brøk Slutt Slutt Brøk Slutt Slutt Slutt Brøk Slutt Slutt Slutt Slutt Brøk"
+    },
+    "Sample_7_3_2_sbrief": {
+      "expected": "a pluss ein a ein pluss NøstTo gangerBrøk ein NøstTo gangerOver a to pluss NøstBrøk ein NøstOver prikk prikk prikk pluss Brøk ein Over a Sub n Basis SluttBrøk NøstSluttBrøk NøstTo gangerSluttBrøk"
+    },
+    "Sample_7_4_1_default": {},
+    "Sample_7_4_1_brief": {},
+    "Sample_7_4_1_sbrief": {},
+    "Sample_7_4_2_default": {},
+    "Sample_7_4_2_brief": {},
+    "Sample_7_4_2_sbrief": {},
+    "Sample_7_4_3_default": {},
+    "Sample_7_4_3_brief": {},
+    "Sample_7_4_3_sbrief": {},
+    "Sample_7_5_1_default": {},
+    "Sample_7_5_1_brief": {},
+    "Sample_7_5_1_sbrief": {},
+    "Sample_7_6_1_default": {
+      "expected": "a pluss KontinuerligBrøk b ein Over a ein pluss StartBrøk b to Over a to pluss StartBrøk b tre Over a tre pluss prikk prikk prikk er lik a pluss Start Brøk b ein Over a ein Slutt Brøk pluss Start Brøk b to Over a to Slutt Brøk pluss prikk prikk prikk"
+    },
+    "Sample_7_6_1_brief": {
+      "expected": "a pluss KontinuerligBrøk b ein Over a ein pluss StartBrøk b to Over a to pluss StartBrøk b tre Over a tre pluss prikk prikk prikk er lik a pluss Start Brøk b ein Over a ein Slutt Brøk pluss Start Brøk b to Over a to Slutt Brøk pluss prikk prikk prikk"
+    },
+    "Sample_7_6_1_sbrief": {
+      "expected": "a pluss KontinuerligBrøk b ein Over a ein pluss Brøk b to Over a to pluss Brøk b tre Over a tre pluss prikk prikk prikk er lik a pluss Brøk b ein Over a ein SluttBrøk pluss Brøk b to Over a to SluttBrøk pluss prikk prikk prikk"
+    },
+    "Sample_8_1_1_default": {
+      "expected": "x i tredje potens pluss seks x i andre potens minus x er lik tretti"
+    },
+    "Sample_8_1_1_brief": {
+      "expected": "x i tredje potens pluss seks x i andre potens minus x er lik tretti"
+    },
+    "Sample_8_1_1_sbrief": {
+      "expected": "x i tredje potens pluss seks x i andre potens minus x er lik tretti"
+    },
+    "Sample_8_1_2_default": {
+      "expected": "Start Brøk d i andre potens y Over d x i andre potens Slutt Brøk pluss venstreparentes a x i andre potens pluss b x pluss c høgreparentes y er lik"
+    },
+    "Sample_8_1_2_brief": {
+      "expected": "Start Brøk d i andre potens y Over d x i andre potens Slutt Brøk pluss venstreparentes a x i andre potens pluss b x pluss c høgreparentes y er lik"
+    },
+    "Sample_8_1_2_sbrief": {
+      "expected": "Brøk d i andre potens y Over d x i andre potens SluttBrøk pluss venstreparentes a x i andre potens pluss b x pluss c høgreparentes y er lik"
+    },
+    "Sample_8_2_1_default": {},
+    "Sample_8_2_1_brief": {},
+    "Sample_8_2_1_sbrief": {},
+    "Sample_8_2_2_default": {
+      "expected": "x Subskript n"
+    },
+    "Sample_8_2_2_brief": {
+      "expected": "x Sub n"
+    },
+    "Sample_8_2_2_sbrief": {
+      "expected": "x Sub n"
+    },
+    "Sample_8_2_3_default": {
+      "expected": "x Superskript a"
+    },
+    "Sample_8_2_3_brief": {
+      "expected": "x Sub a"
+    },
+    "Sample_8_2_3_sbrief": {
+      "expected": "x Sub a"
+    },
+    "Sample_8_3_1_default": {
+      "expected": "x Superskript m pluss n"
+    },
+    "Sample_8_3_1_brief": {
+      "expected": "x Sub m pluss n"
+    },
+    "Sample_8_3_1_sbrief": {
+      "expected": "x Sub m pluss n"
+    },
+    "Sample_8_3_2_default": {
+      "expected": "stor bokstav T Subskript n minus ein Grunnlinje pluss fem er lik"
+    },
+    "Sample_8_3_2_brief": {
+      "expected": "stor bokstav T Sub n minus ein Basis pluss fem er lik"
+    },
+    "Sample_8_3_2_sbrief": {
+      "expected": "stor bokstav T Sub n minus ein Basis pluss fem er lik"
+    },
+    "Sample_8_3_3_default": {
+      "expected": "x Superskript m pluss n Grunnlinje er lik x Superskript m Grunnlinje x Superskript n"
+    },
+    "Sample_8_3_3_brief": {
+      "expected": "x Sub m pluss n Basis er lik x Sub m Basis x Sub n"
+    },
+    "Sample_8_3_3_sbrief": {
+      "expected": "x Sub m pluss n Basis er lik x Sub m Basis x Sub n"
+    },
+    "Sample_8_4_1_default": {
+      "expected": "x Superskript a Super Subskript n Superskript pluss a Super Subskript n minus ein"
+    },
+    "Sample_8_4_1_brief": {
+      "expected": "x Sub a Sub Sub n Sub pluss a Sub Sub n minus ein"
+    },
+    "Sample_8_4_1_sbrief": {
+      "expected": "x Sub a Sub Sub n Sub pluss a Sub Sub n minus ein"
+    },
+    "Sample_8_4_2_default": {
+      "expected": "x Superskript a Super Subskript b"
+    },
+    "Sample_8_4_2_brief": {
+      "expected": "x Sub a Sub Sub b"
+    },
+    "Sample_8_4_2_sbrief": {
+      "expected": "x Sub a Sub Sub b"
+    },
+    "Sample_8_4_3_default": {
+      "expected": "x Subskript a Sub Superskript b"
+    },
+    "Sample_8_4_3_brief": {
+      "expected": "x Sub a Sub Sub b"
+    },
+    "Sample_8_4_3_sbrief": {
+      "expected": "x Sub a Sub Sub b"
+    },
+    "Sample_8_4_4_default": {
+      "expected": "y Superskript a Super Superskript b Super Super Subskript c Grunnlinje er ikkje lik y Superskript a Super Superskript b Superskript c"
+    },
+    "Sample_8_4_4_brief": {
+      "expected": "y Sub a Sub Sub b Sub Sub Sub c Basis er ikkje lik y Sub a Sub Sub b Sub c"
+    },
+    "Sample_8_4_4_sbrief": {
+      "expected": "y Sub a Sub Sub b Sub Sub Sub c Basis er ikkje lik y Sub a Sub Sub b Sub c"
+    },
+    "Sample_8_4_5_default": {
+      "expected": "y Superskript a Super Super Subskript c Super Superskript b"
+    },
+    "Sample_8_4_5_brief": {
+      "expected": "y Sub a Sub Sub Sub c Sub Sub b"
+    },
+    "Sample_8_4_5_sbrief": {
+      "expected": "y Sub a Sub Sub Sub c Sub Sub b"
+    },
+    "Sample_8_4_5Short_default": {
+      "expected": "y Superskript a Super Super Subskript c"
+    },
+    "Sample_8_4_5Short_brief": {
+      "expected": "y Sub a Sub Sub Sub c"
+    },
+    "Sample_8_4_5Short_sbrief": {
+      "expected": "y Sub a Sub Sub Sub c"
+    },
+    "Sample_8_4_5Inv_default": {
+      "expected": "y Subskript a Sub Sub Superskript c"
+    },
+    "Sample_8_4_5Inv_brief": {
+      "expected": "y Sub a Sub Sub Sub c"
+    },
+    "Sample_8_4_5Inv_sbrief": {
+      "expected": "y Sub a Sub Sub Sub c"
+    },
+    "Sample_8_4_5InvShort_default": {
+      "expected": "y Subskript a Sub Sub Superskript c Sub Subskript b"
+    },
+    "Sample_8_4_5InvShort_brief": {
+      "expected": "y Sub a Sub Sub Sub c Sub Sub b"
+    },
+    "Sample_8_4_5InvShort_sbrief": {
+      "expected": "y Sub a Sub Sub Sub c Sub Sub b"
+    },
+    "Sample_8_4_6_default": {
+      "expected": "x Superskript a Super Superskript b"
+    },
+    "Sample_8_4_6_brief": {
+      "expected": "x Sub a Sub Sub b"
+    },
+    "Sample_8_4_6_sbrief": {
+      "expected": "x Sub a Sub Sub b"
+    },
+    "Sample_8_4_7_default": {
+      "expected": "x Subskript a Sub Subskript b"
+    },
+    "Sample_8_4_7_brief": {
+      "expected": "x Sub a Sub Sub b"
+    },
+    "Sample_8_4_7_sbrief": {
+      "expected": "x Sub a Sub Sub b"
+    },
+    "Sample_8_4_8_default": {
+      "expected": "stor bokstav T Superskript venstreparentes x Super Superskript a Superskript pluss y Super Superskript b Superskript høgreparentes"
+    },
+    "Sample_8_4_8_brief": {
+      "expected": "stor bokstav T Sub venstreparentes x Sub Sub a Sub pluss y Sub Sub b Sub høgreparentes"
+    },
+    "Sample_8_4_8_sbrief": {
+      "expected": "stor bokstav T Sub venstreparentes x Sub Sub a Sub pluss y Sub Sub b Sub høgreparentes"
+    },
+    "Sample_8_5_1_default": {
+      "expected": "x ein"
+    },
+    "Sample_8_5_1_brief": {
+      "expected": "x ein"
+    },
+    "Sample_8_5_1_sbrief": {
+      "expected": "x ein"
+    },
+    "Sample_8_5_2_default": {
+      "expected": "x Subskript negativ ein"
+    },
+    "Sample_8_5_2_brief": {
+      "expected": "x Sub negativ ein"
+    },
+    "Sample_8_5_2_sbrief": {
+      "expected": "x Sub negativ ein"
+    },
+    "Sample_8_5_3_default": {
+      "expected": "x ti"
+    },
+    "Sample_8_5_3_brief": {
+      "expected": "x ti"
+    },
+    "Sample_8_5_3_sbrief": {
+      "expected": "x ti"
+    },
+    "Sample_8_5_4_default": {
+      "expected": "x ein"
+    },
+    "Sample_8_5_4_brief": {
+      "expected": "x ein"
+    },
+    "Sample_8_5_4_sbrief": {
+      "expected": "x ein"
+    },
+    "Sample_8_5_5_default": {
+      "expected": "fire stor bokstav F e pluss tre stor bokstav O to høgrepil to stor bokstav F e to stor bokstav O tre"
+    },
+    "Sample_8_5_5_brief": {
+      "expected": "fire stor bokstav F e pluss tre stor bokstav O to høgrepil to stor bokstav F e to stor bokstav O tre"
+    },
+    "Sample_8_5_5_sbrief": {
+      "expected": "fire stor bokstav F e pluss tre stor bokstav O to høgrepil to stor bokstav F e to stor bokstav O tre"
+    },
+    "Sample_8_5_6_default": {
+      "expected": "a Subskript to komma tre"
+    },
+    "Sample_8_5_6_brief": {
+      "expected": "a Sub to komma tre"
+    },
+    "Sample_8_5_6_sbrief": {
+      "expected": "a Sub to komma tre"
+    },
+    "Sample_8_5_7_default": {
+      "expected": "stor bokstav T Subskript n ein pluss n"
+    },
+    "Sample_8_5_7_brief": {
+      "expected": "stor bokstav T Sub n ein pluss n"
+    },
+    "Sample_8_5_7_sbrief": {
+      "expected": "stor bokstav T Sub n ein pluss n"
+    },
+    "Sample_8_5_8_default": {
+      "expected": "log Subskript to Grunnlinje venstreparentes x høgreparentes er lik Start Brøk log Subskript ti Grunnlinje venstreparentes x høgreparentes Over log Subskript ti Grunnlinje venstreparentes to høgreparentes Slutt Brøk"
+    },
+    "Sample_8_5_8_brief": {
+      "expected": "log Sub to Basis venstreparentes x høgreparentes er lik Start Brøk log Sub ti Basis venstreparentes x høgreparentes Over log Sub ti Basis venstreparentes to høgreparentes Slutt Brøk"
+    },
+    "Sample_8_5_8_sbrief": {
+      "expected": "log Sub to Basis venstreparentes x høgreparentes er lik Brøk log Sub ti Basis venstreparentes x høgreparentes Over log Sub ti Basis venstreparentes to høgreparentes SluttBrøk"
+    },
+    "Sample_8_5_9_default": {
+      "expected": "stor bokstav Pi fem"
+    },
+    "Sample_8_5_9_brief": {
+      "expected": "stor bokstav Pi fem"
+    },
+    "Sample_8_5_9_sbrief": {
+      "expected": "stor bokstav Pi fem"
+    },
+    "Sample_8_5_10_default": {
+      "expected": "ln x er lik integral subskript ein superskript x grunnlinje Start Brøk d t Over t Slutt Brøk"
+    },
+    "Sample_8_5_10_brief": {
+      "expected": "ln x er lik integral sub ein super x grunn Start Brøk d t Over t Slutt Brøk"
+    },
+    "Sample_8_5_10_sbrief": {
+      "expected": "ln x er lik integral sub ein super x grunn Brøk d t Over t SluttBrøk"
+    },
+    "Sample_8_6_1_default": {
+      "expected": "dollarteikn n grunnlinje to er lik to asterisk dollarteikn n pluss ein semikolon"
+    },
+    "Sample_8_6_1_brief": {
+      "expected": "dollarteikn n basis to er lik to asterisk dollarteikn n pluss ein semikolon"
+    },
+    "Sample_8_6_1_sbrief": {
+      "expected": "dollarteikn n basis to er lik to asterisk dollarteikn n pluss ein semikolon"
+    },
+    "BaselineNumberFont_default": {
+      "expected": "n grunnlinje bold to"
+    },
+    "BaselineNumberFont_brief": {
+      "expected": "n basis bold to"
+    },
+    "BaselineNumberFont_sbrief": {
+      "expected": "n basis bold to"
+    },
+    "Sample_8_8_1_naive_default": {
+      "expected": "Subskript c d Superskript a b Grunnlinje x Subskript e f Superskript g h"
+    },
+    "Sample_8_8_1_naive_brief": {
+      "expected": "Sub c d Sub a b Basis x Sub e f Sub g h"
+    },
+    "Sample_8_8_1_naive_sbrief": {
+      "expected": "Sub c d Sub a b Basis x Sub e f Sub g h"
+    },
+    "Sample_8_8_1_default": {
+      "expected": "Subskript c d Superskript a b Grunnlinje x Subskript e f Superskript g h"
+    },
+    "Sample_8_8_1_brief": {
+      "expected": "Sub c d Sub a b Basis x Sub e f Sub g h"
+    },
+    "Sample_8_8_1_sbrief": {
+      "expected": "Sub c d Sub a b Basis x Sub e f Sub g h"
+    },
+    "SampleSimpleSquare_default": {
+      "expected": "stor bokstav T i andre potens"
+    },
+    "SampleSimpleSquare_brief": {
+      "expected": "stor bokstav T i andre potens"
+    },
+    "SampleSimpleSquare_sbrief": {
+      "expected": "stor bokstav T i andre potens"
+    },
+    "SampleSimpleSquare_2_default": {
+      "expected": "stor bokstav T i andre potens"
+    },
+    "SampleSimpleSquare_2_brief": {
+      "expected": "stor bokstav T i andre potens"
+    },
+    "SampleSimpleSquare_2_sbrief": {
+      "expected": "stor bokstav T i andre potens"
+    },
+    "SampleSimpleCube_default": {
+      "expected": "stor bokstav T i tredje potens"
+    },
+    "SampleSimpleCube_brief": {
+      "expected": "stor bokstav T i tredje potens"
+    },
+    "SampleSimpleCube_sbrief": {
+      "expected": "stor bokstav T i tredje potens"
+    },
+    "SampleSimpleCube_2_default": {
+      "expected": "stor bokstav T i tredje potens"
+    },
+    "SampleSimpleCube_2_brief": {
+      "expected": "stor bokstav T i tredje potens"
+    },
+    "SampleSimpleCube_2_sbrief": {
+      "expected": "stor bokstav T i tredje potens"
+    },
+    "Sample_8_8_2_default": {
+      "expected": "stor bokstav T Subskript n minus ein Superskript to"
+    },
+    "Sample_8_8_2_brief": {
+      "expected": "stor bokstav T Sub n minus ein Sub to"
+    },
+    "Sample_8_8_2_sbrief": {
+      "expected": "stor bokstav T Sub n minus ein Sub to"
+    },
+    "Sample_8_9_1_default": {
+      "expected": "x apostrof"
+    },
+    "Sample_8_9_1_brief": {
+      "expected": "x apostrof"
+    },
+    "Sample_8_9_1_sbrief": {
+      "expected": "x apostrof"
+    },
+    "Sample_8_9_2_default": {
+      "expected": "f trippel prim venstreparentes y høgreparentes er lik Start Brøk d f dobbel prim venstreparentes y høgreparentes Over d y Slutt Brøk"
+    },
+    "Sample_8_9_2_brief": {
+      "expected": "f trippel prim venstreparentes y høgreparentes er lik Start Brøk d f dobbel prim venstreparentes y høgreparentes Over d y Slutt Brøk"
+    },
+    "Sample_8_9_2_sbrief": {
+      "expected": "f trippel prim venstreparentes y høgreparentes er lik Brøk d f dobbel prim venstreparentes y høgreparentes Over d y SluttBrøk"
+    },
+    "Sample_8_10_1_default": {
+      "expected": "rho apostrof er lik rho apostrof Subskript pluss Grunnlinje pluss rho apostrof Subskript minus"
+    },
+    "Sample_8_10_1_brief": {
+      "expected": "rho apostrof er lik rho apostrof Sub pluss Basis pluss rho apostrof Sub minus"
+    },
+    "Sample_8_10_1_sbrief": {
+      "expected": "rho apostrof er lik rho apostrof Sub pluss Basis pluss rho apostrof Sub minus"
+    },
+    "Sample_8_10_2_default": {
+      "expected": "x apostrof ti"
+    },
+    "Sample_8_10_2_brief": {
+      "expected": "x apostrof ti"
+    },
+    "Sample_8_10_2_sbrief": {
+      "expected": "x apostrof ti"
+    },
+    "Sample_8_10_3_default": {
+      "expected": "stor bokstav T apostrof Subskript n"
+    },
+    "Sample_8_10_3_brief": {
+      "expected": "stor bokstav T apostrof Sub n"
+    },
+    "Sample_8_10_3_sbrief": {
+      "expected": "stor bokstav T apostrof Sub n"
+    },
+    "Sample_8_11_1_default": {
+      "expected": "Start to Med tre Matrise 1. rad 1. Kolonne x Superskript n 2. Kolonne y Superskript n 3. Kolonne z Superskript n 2. rad 1. Kolonne x Superskript n pluss ein 2. Kolonne y Superskript n pluss ein 3. Kolonne z Superskript n pluss ein Stopp matrise"
+    },
+    "Sample_8_11_1_brief": {
+      "expected": "Start to Med tre Matrise 1. rad 1. Kolonne x Sub n 2. Kolonne y Sub n 3. Kolonne z Sub n 2. rad 1. Kolonne x Sub n pluss ein 2. Kolonne y Sub n pluss ein 3. Kolonne z Sub n pluss ein Stopp matrise"
+    },
+    "Sample_8_11_1_sbrief": {
+      "expected": "to Med tre Matrise 1. rad 1. Kolonne x Sub n 2. Kolonne y Sub n 3. Kolonne z Sub n 2. rad 1. Kolonne x Sub n pluss ein 2. Kolonne y Sub n pluss ein 3. Kolonne z Sub n pluss ein Stopp matrise"
+    },
+    "Sample_8_12_1_default": {
+      "expected": "x Subskript a Grunnlinje Superskript b"
+    },
+    "Sample_8_12_1_brief": {
+      "expected": "x Sub a Basis Sub b"
+    },
+    "Sample_8_12_1_sbrief": {
+      "expected": "x Sub a Basis Sub b"
+    },
+    "Sample_8_12_2_default": {
+      "expected": "x Superskript b Grunnlinje Subskript a"
+    },
+    "Sample_8_12_2_brief": {
+      "expected": "x Sub b Basis Sub a"
+    },
+    "Sample_8_12_2_sbrief": {
+      "expected": "x Sub b Basis Sub a"
+    },
+    "Sample_8_13_1_default": {
+      "expected": "log Superskript fire Superskript b Grunnlinje x"
+    },
+    "Sample_8_13_1_brief": {
+      "expected": "log Sub fire Sub b Basis x"
+    },
+    "Sample_8_13_1_sbrief": {
+      "expected": "log Sub fire Sub b Basis x"
+    },
+    "Sample_8_13_2_default": {
+      "expected": "stor bokstav T Subskript n Subskript a Grunnlinje y"
+    },
+    "Sample_8_13_2_brief": {
+      "expected": "stor bokstav T Sub n Sub a Basis y"
+    },
+    "Sample_8_13_2_sbrief": {
+      "expected": "stor bokstav T Sub n Sub a Basis y"
+    },
+    "Sample_9_1_1_default": {
+      "expected": "StartRot to SluttRot"
+    },
+    "Sample_9_1_1_brief": {
+      "expected": "StartRot to SluttRot"
+    },
+    "Sample_9_1_1_sbrief": {
+      "expected": "Rot to SluttRot"
+    },
+    "Sample_9_1_2_default": {
+      "expected": "StartRot m pluss n SluttRot"
+    },
+    "Sample_9_1_2_brief": {
+      "expected": "StartRot m pluss n SluttRot"
+    },
+    "Sample_9_1_2_sbrief": {
+      "expected": "Rot m pluss n SluttRot"
+    },
+    "Sample_9_2_1_default": {
+      "expected": "RotIndeks m pluss n StartRot x pluss y SluttRot"
+    },
+    "Sample_9_2_1_brief": {
+      "expected": "RotIndeks m pluss n StartRot x pluss y SluttRot"
+    },
+    "Sample_9_2_1_sbrief": {
+      "expected": "Indeks m pluss n Rot x pluss y SluttRot"
+    },
+    "Sample_9_2_2_default": {
+      "expected": "RotIndeks n StartRot x Superskript m Grunnlinje SluttRot er lik venstreparentes RotIndeks n StartRot x SluttRot høgreparentes Superskript m Grunnlinje er lik x Superskript Start Brøk m Over n Slutt Brøk Grunnlinje komma x er større enn"
+    },
+    "Sample_9_2_2_brief": {
+      "expected": "RotIndeks n StartRot x Sub m Basis SluttRot er lik venstreparentes RotIndeks n StartRot x SluttRot høgreparentes Sub m Basis er lik x Sub Start Brøk m Over n Slutt Brøk Basis komma x er større enn"
+    },
+    "Sample_9_2_2_sbrief": {
+      "expected": "Indeks n Rot x Sub m Basis SluttRot er lik venstreparentes Indeks n Rot x SluttRot høgreparentes Sub m Basis er lik x Sub Brøk m Over n SluttBrøk Basis komma x er større enn"
+    },
+    "Sample_9_2_3_default": {},
+    "Sample_9_2_3_brief": {},
+    "Sample_9_2_3_sbrief": {},
+    "Sample_9_3_1_default": {
+      "expected": "NøstaStartRot StartRot x pluss ein SluttRot pluss StartRot y pluss ein SluttRot NøstaSluttRot"
+    },
+    "Sample_9_3_1_brief": {
+      "expected": "NøstStartRot StartRot x pluss ein SluttRot pluss StartRot y pluss ein SluttRot NøstSluttRot"
+    },
+    "Sample_9_3_1_sbrief": {
+      "expected": "NøstRot Rot x pluss ein SluttRot pluss Rot y pluss ein SluttRot NøstSluttRot"
+    },
+    "Sample_9_3_2_default": {
+      "expected": "NøstaRotIndeks n NøstaStartRot RotIndeks m StartRot x SluttRot NøstaSluttRot er lik NøstaRotIndeks m NøstaStartRot RotIndeks n StartRot x SluttRot NøstaSluttRot"
+    },
+    "Sample_9_3_2_brief": {
+      "expected": "NøstRotIndeks n NøstStartRot RotIndeks m StartRot x SluttRot NøstSluttRot er lik NøstRotIndeks m NøstStartRot RotIndeks n StartRot x SluttRot NøstSluttRot"
+    },
+    "Sample_9_3_2_sbrief": {
+      "expected": "NøstIndeks n NøstRot Indeks m Rot x SluttRot NøstSluttRot er lik NøstIndeks m NøstRot Indeks n Rot x SluttRot NøstSluttRot"
+    },
+    "Sample_9_3_3_default": {
+      "expected": "x Superskript e minus to Grunnlinje er lik x NøstaTo gangerRotIndeks tre NøstaTo gangerStartRot x NøstaRotIndeks fire NøstaStartRot x RotIndeks fem StartRot x prikk prikk prikk SluttRot NøstaSluttRot NøstaTo gangerSluttRot komma x element av double-struck stor bokstav R"
+    },
+    "Sample_9_3_3_brief": {
+      "expected": "x Sub e minus to Basis er lik x NøstTo gangerRotIndeks tre NøstTo gangerStartRot x NøstRotIndeks fire NøstStartRot x RotIndeks fem StartRot x prikk prikk prikk SluttRot NøstSluttRot NøstTo gangerSluttRot komma x element av double-struck stor bokstav R"
+    },
+    "Sample_9_3_3_sbrief": {
+      "expected": "x Sub e minus to Basis er lik x NøstTo gangerIndeks tre NøstTo gangerRot x NøstIndeks fire NøstRot x Indeks fem Rot x prikk prikk prikk SluttRot NøstSluttRot NøstTo gangerSluttRot komma x element av double-struck stor bokstav R"
+    },
+    "Sample_9_3_4_default": {
+      "expected": "Start Brøk to Over pi Slutt Brøk er lik Start Brøk StartRot to SluttRot Over to Slutt Brøk Start Brøk NøstaStartRot to pluss StartRot to SluttRot NøstaSluttRot Over to Slutt Brøk Start Brøk NøstaTo gangerStartRot to pluss NøstaStartRot to pluss StartRot to SluttRot NøstaSluttRot NøstaTo gangerSluttRot Over to Slutt Brøk prikk prikk prikk"
+    },
+    "Sample_9_3_4_brief": {
+      "expected": "Start Brøk to Over pi Slutt Brøk er lik Start Brøk StartRot to SluttRot Over to Slutt Brøk Start Brøk NøstStartRot to pluss StartRot to SluttRot NøstSluttRot Over to Slutt Brøk Start Brøk NøstTo gangerStartRot to pluss NøstStartRot to pluss StartRot to SluttRot NøstSluttRot NøstTo gangerSluttRot Over to Slutt Brøk prikk prikk prikk"
+    },
+    "Sample_9_3_4_sbrief": {
+      "expected": "Brøk to Over pi SluttBrøk er lik Brøk Rot to SluttRot Over to SluttBrøk Brøk NøstRot to pluss Rot to SluttRot NøstSluttRot Over to SluttBrøk Brøk NøstTo gangerRot to pluss NøstRot to pluss Rot to SluttRot NøstSluttRot NøstTo gangerSluttRot Over to SluttBrøk prikk prikk prikk"
+    },
+    "Sample_10_1_1_default": {},
+    "Sample_10_1_1_brief": {},
+    "Sample_10_1_1_sbrief": {},
+    "Sample_10_2_1_default": {},
+    "Sample_10_2_1_brief": {},
+    "Sample_10_2_1_sbrief": {},
+    "Sample_10_2_2_default": {},
+    "Sample_10_2_2_brief": {},
+    "Sample_10_2_2_sbrief": {},
+    "Sample_11_1_1_default": {
+      "expected": "ModifiserOver x Med tøddel"
+    },
+    "Sample_11_1_1_brief": {
+      "expected": "ModOver x Med tøddel"
+    },
+    "Sample_11_1_1_sbrief": {
+      "expected": "ModOver x Med tøddel"
+    },
+    "Sample_11_1_2_default": {
+      "expected": "ModifiserOver x pluss y Med høgrepil"
+    },
+    "Sample_11_1_2_brief": {
+      "expected": "ModOver x pluss y Med høgrepil"
+    },
+    "Sample_11_1_2_sbrief": {
+      "expected": "ModOver x pluss y Med høgrepil"
+    },
+    "Sample_11_1_3_default": {
+      "expected": "ModifiserOver x Med sirkumfleks"
+    },
+    "Sample_11_1_3_brief": {
+      "expected": "ModOver x Med sirkumfleks"
+    },
+    "Sample_11_1_3_sbrief": {
+      "expected": "ModOver x Med sirkumfleks"
+    },
+    "Sample_11_2_1_default": {
+      "expected": "ModifiserUnder x Med prikk over"
+    },
+    "Sample_11_2_1_brief": {
+      "expected": "ModUnder x Med prikk over"
+    },
+    "Sample_11_2_1_sbrief": {
+      "expected": "ModUnder x Med prikk over"
+    },
+    "Sample_11_3_1_default": {
+      "expected": "x overtilde"
+    },
+    "Sample_11_3_1_brief": {
+      "expected": "x overtilde"
+    },
+    "Sample_11_3_1_sbrief": {
+      "expected": "x overtilde"
+    },
+    "Sample_11_3_2_default": {
+      "expected": "x overstrek"
+    },
+    "Sample_11_3_2_brief": {
+      "expected": "x overstrek"
+    },
+    "Sample_11_3_2_sbrief": {
+      "expected": "x overstrek"
+    },
+    "Sample_11_3_3_default": {
+      "expected": "y undertilde"
+    },
+    "Sample_11_3_3_brief": {
+      "expected": "y undertilde"
+    },
+    "Sample_11_3_3_sbrief": {
+      "expected": "y undertilde"
+    },
+    "Sample_11_4_1_default": {
+      "expected": "x overstrek overstrek"
+    },
+    "Sample_11_4_1_brief": {
+      "expected": "x overstrek overstrek"
+    },
+    "Sample_11_4_1_sbrief": {
+      "expected": "x overstrek overstrek"
+    },
+    "Sample_11_4_2_default": {
+      "expected": "y overstrek overstrek understrek understrek"
+    },
+    "Sample_11_4_2_brief": {
+      "expected": "y overstrek overstrek understrek understrek"
+    },
+    "Sample_11_4_2_sbrief": {
+      "expected": "y overstrek overstrek understrek understrek"
+    },
+    "Sample_11_6_1_default": {
+      "expected": "ModifiserUnder Under ModifiserUnder a pluss b Med understrek Med asterisk"
+    },
+    "Sample_11_6_1_brief": {
+      "expected": "ModUnder Under ModUnder a pluss b Med understrek Med asterisk"
+    },
+    "Sample_11_6_1_sbrief": {
+      "expected": "ModUnder Under ModUnder a pluss b Med understrek Med asterisk"
+    },
+    "Sample_11_6_3_default": {
+      "expected": "ModifiserOver Over ModifiserOver x pluss y Med tilde Med strek"
+    },
+    "Sample_11_6_3_brief": {
+      "expected": "ModOver Over ModOver x pluss y Med tilde Med strek"
+    },
+    "Sample_11_6_3_sbrief": {
+      "expected": "ModOver Over ModOver x pluss y Med tilde Med strek"
+    },
+    "Sample_11_7_1_default": {
+      "expected": "sum Underskript n er lik ein Overskript uendeleg Sluttskript a Subskript n"
+    },
+    "Sample_11_7_1_brief": {
+      "expected": "sum Underskript n er lik ein Overskript uendeleg Sluttskript a Sub n"
+    },
+    "Sample_11_7_1_sbrief": {
+      "expected": "sum Underskript n er lik ein Overskript uendeleg Sluttskript a Sub n"
+    },
+    "Sample_11_8_1_default": {
+      "expected": "ModifiserUnder x pluss y Med understrek Underskript a er lik fem UnderUnderskript b er lik tre Sluttskript"
+    },
+    "Sample_11_8_1_brief": {
+      "expected": "ModUnder x pluss y Med understrek Underskript a er lik fem UnderUnderskript b er lik tre Sluttskript"
+    },
+    "Sample_11_8_1_sbrief": {
+      "expected": "ModUnder x pluss y Med understrek Underskript a er lik fem UnderUnderskript b er lik tre Sluttskript"
+    },
+    "Sample_11_8_2_default": {
+      "expected": "ModifiserOver x pluss y Med strek Overskript n er lik ein OverOverskript m er lik to Sluttskript"
+    },
+    "Sample_11_8_2_brief": {
+      "expected": "ModOver x pluss y Med strek Overskript n er lik ein OverOverskript m er lik to Sluttskript"
+    },
+    "Sample_11_8_2_sbrief": {
+      "expected": "ModOver x pluss y Med strek Overskript n er lik ein OverOverskript m er lik to Sluttskript"
+    },
+    "Sample_12_1_1_default": {
+      "expected": "log Subskript b Grunnlinje x"
+    },
+    "Sample_12_1_1_brief": {
+      "expected": "log Sub b Basis x"
+    },
+    "Sample_12_1_1_sbrief": {
+      "expected": "log Sub b Basis x"
+    },
+    "Sample_12_1_2_default": {
+      "expected": "cosinus y"
+    },
+    "Sample_12_1_2_brief": {
+      "expected": "cosinus y"
+    },
+    "Sample_12_1_2_sbrief": {
+      "expected": "cosinus y"
+    },
+    "Sample_12_1_3_default": {
+      "expected": "sinus x"
+    },
+    "Sample_12_1_3_brief": {
+      "expected": "sinus x"
+    },
+    "Sample_12_1_3_sbrief": {
+      "expected": "sinus x"
+    },
+    "Sample_13_1_1_default": {
+      "expected": "Start Brøk seksti Utkryssing mil StoppUtkryssing Over Utkryssing timer StoppUtkryssing Slutt Brøk gangeteikn Start Brøk fem fot Over ein Utkryssing mil StoppUtkryssing Slutt Brøk gangeteikn Start Brøk ein Utkryssing timer StoppUtkryssing Over seksti minutter Slutt Brøk er lik Start Brøk fem fot Over minutter Slutt Brøk"
+    },
+    "Sample_13_1_1_brief": {
+      "expected": "Start Brøk seksti Utkryssing mil StoppUtkryssing Over Utkryssing timer StoppUtkryssing Slutt Brøk gangeteikn Start Brøk fem fot Over ein Utkryssing mil StoppUtkryssing Slutt Brøk gangeteikn Start Brøk ein Utkryssing timer StoppUtkryssing Over seksti minutter Slutt Brøk er lik Start Brøk fem fot Over minutter Slutt Brøk"
+    },
+    "Sample_13_1_1_sbrief": {
+      "expected": "Brøk seksti Utkryssing mil StoppUtkryssing Over Utkryssing timer StoppUtkryssing SluttBrøk gangeteikn Brøk fem fot Over ein Utkryssing mil StoppUtkryssing SluttBrøk gangeteikn Brøk ein Utkryssing timer StoppUtkryssing Over seksti minutter SluttBrøk er lik Brøk fem fot Over minutter SluttBrøk"
+    },
+    "Sample_13_1_2_default": {
+      "expected": "ein joule er lik ein kg prikk meter i andre potens prikk sekunder Superskript negativ to"
+    },
+    "Sample_13_1_2_brief": {
+      "expected": "ein joule er lik ein kg prikk meter i andre potens prikk sekunder Sub negativ to"
+    },
+    "Sample_13_1_2_sbrief": {
+      "expected": "ein joule er lik ein kg prikk meter i andre potens prikk sekunder Sub negativ to"
+    },
+    "Sample_13_1_3_default": {
+      "expected": "m meter er lik etthundre m cm er lik Start Brøk m Over ein Slutt Brøk km"
+    },
+    "Sample_13_1_3_brief": {
+      "expected": "m meter er lik etthundre m cm er lik Start Brøk m Over ein Slutt Brøk km"
+    },
+    "Sample_13_1_3_sbrief": {
+      "expected": "m meter er lik etthundre m cm er lik Brøk m Over ein SluttBrøk km"
+    },
+    "Sample_13_1_4_default": {
+      "expected": "ein mil tilnærma lik ein km"
+    },
+    "Sample_13_1_4_brief": {
+      "expected": "ein mil tilnærma lik ein km"
+    },
+    "Sample_13_1_4_sbrief": {
+      "expected": "ein mil tilnærma lik ein km"
+    },
+    "Sample_13_1_5_default": {
+      "expected": "ein in er lik to cm"
+    },
+    "Sample_13_1_5_brief": {
+      "expected": "ein in er lik to cm"
+    },
+    "Sample_13_1_5_sbrief": {
+      "expected": "ein in er lik to cm"
+    },
+    "Sample_14_1_1_default": {
+      "expected": "StartOppsett 1. rad 1. Kolonne stor bokstav H to 2. Kolonne pluss 3. Kolonne stor bokstav F to 4. Kolonne høgrepil 5. Kolonne to stor bokstav H stor bokstav F 2. rad 1. Kolonne hydrogen 2. Kolonne Tom 3. Kolonne fluorine 4. Kolonne Tom 5. Kolonne hydrogen fluoride StoppOppsett"
+    },
+    "Sample_14_1_1_brief": {
+      "expected": "StartOppsett 1. rad 1. Kolonne stor bokstav H to 2. Kolonne pluss 3. Kolonne stor bokstav F to 4. Kolonne høgrepil 5. Kolonne to stor bokstav H stor bokstav F 2. rad 1. Kolonne hydrogen 2. Kolonne Tom 3. Kolonne fluorine 4. Kolonne Tom 5. Kolonne hydrogen fluoride StoppOppsett"
+    },
+    "Sample_14_1_1_sbrief": {
+      "expected": "Oppsett 1. rad 1. Kolonne stor bokstav H to 2. Kolonne pluss 3. Kolonne stor bokstav F to 4. Kolonne høgrepil 5. Kolonne to stor bokstav H stor bokstav F 2. rad 1. Kolonne hydrogen 2. Kolonne Tom 3. Kolonne fluorine 4. Kolonne Tom 5. Kolonne hydrogen fluoride StoppOppsett"
+    },
+    "Sample_14_3_1_default": {
+      "expected": "x er lik StartOppsett Forstørra venstre krøllparentes 1. rad1. Kolonne y er mindre enn 2. Kolonne 2. rad1. Kolonne y er større enn eller er lik 2. Kolonne to y StoppOppsett"
+    },
+    "Sample_14_3_1_brief": {
+      "expected": "x er lik StartOppsett Forstørra venstre krøllparentes 1. rad1. Kolonne y er mindre enn 2. Kolonne 2. rad1. Kolonne y er større enn eller er lik 2. Kolonne to y StoppOppsett"
+    },
+    "Sample_14_3_1_sbrief": {
+      "expected": "x er lik Oppsett Forstørra venstre krøllparentes 1. rad 1. Kolonne y er mindre enn 2. Kolonne 2. rad 1. Kolonne y er større enn eller er lik 2. Kolonne to y StoppOppsett"
+    },
+    "Sample_15_1_1_default": {
+      "expected": "Start tre Med tre Matrise 1. rad 1. Kolonne x pluss a 2. Kolonne x pluss b 3. Kolonne x pluss c 2. rad 1. Kolonne y pluss a 2. Kolonne y pluss b 3. Kolonne y pluss c 3. rad 1. Kolonne z pluss a 2. Kolonne z pluss b 3. Kolonne z pluss c Stopp matrise"
+    },
+    "Sample_15_1_1_brief": {
+      "expected": "Start tre Med tre Matrise 1. rad 1. Kolonne x pluss a 2. Kolonne x pluss b 3. Kolonne x pluss c 2. rad 1. Kolonne y pluss a 2. Kolonne y pluss b 3. Kolonne y pluss c 3. rad 1. Kolonne z pluss a 2. Kolonne z pluss b 3. Kolonne z pluss c Stopp matrise"
+    },
+    "Sample_15_1_1_sbrief": {
+      "expected": "tre Med tre Matrise 1. rad 1. Kolonne x pluss a 2. Kolonne x pluss b 3. Kolonne x pluss c 2. rad 1. Kolonne y pluss a 2. Kolonne y pluss b 3. Kolonne y pluss c 3. rad 1. Kolonne z pluss a 2. Kolonne z pluss b 3. Kolonne z pluss c Stopp matrise"
+    },
+    "Sample_15_2_1_default": {
+      "expected": "Start to Med to Determinant 1. rad  a pluss ein b 2. rad  c d StoppDeterminant er lik venstreparentes a pluss ein høgreparentes d minus b c"
+    },
+    "Sample_15_2_1_brief": {
+      "expected": "Start to Med to Determinant 1. rad  a pluss ein b 2. rad  c d StoppDeterminant er lik venstreparentes a pluss ein høgreparentes d minus b c"
+    },
+    "Sample_15_2_1_sbrief": {
+      "expected": "to Med to Determinant 1. rad  a pluss ein b 2. rad  c d StoppDeterminant er lik venstreparentes a pluss ein høgreparentes d minus b c"
+    },
+    "Sample_15_4_1_default": {
+      "expected": "Start to Med to Determinant 1. Rad a b 2. Rad c d StoppDeterminant er lik a d minus b c"
+    },
+    "Sample_15_4_1_brief": {
+      "expected": "Start to Med to Determinant 1. Rad a b 2. Rad c d StoppDeterminant er lik a d minus b c"
+    },
+    "Sample_15_4_1_sbrief": {
+      "expected": "to Med to Determinant 1. rad a b 2. rad c d StoppDeterminant er lik a d minus b c"
+    },
+    "Sample_15_6_1_default": {
+      "expected": "StartBinomialEllerMatrise x Velg y StoppBinomialEllerMatrise"
+    },
+    "Sample_15_6_1_brief": {
+      "expected": "StartBinomialEllerMatrise x Velg y StoppBinomialEllerMatrise"
+    },
+    "Sample_15_6_1_sbrief": {
+      "expected": "BinomialEllerMatrise x Velg y StoppBinomialEllerMatrise"
+    }
+  }
+}

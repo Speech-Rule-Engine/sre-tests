@@ -1,0 +1,264 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "NynorskClearspeakTrigometry",
+  "locale": "nn",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_trigometry.json",
+  "information": "Nynorsk Clearspeak Trigometry rule tests.",
+  "active": "ClearspeakNynorsk",
+  "exclude": [
+    "TrigReciprocal001",
+    "TrigReciprocal002",
+    "TrigReciprocal003",
+    "TrigReciprocal004",
+    "TrigReciprocal005",
+    "TrigReciprocal006",
+    "TrigReciprocal007",
+    "TrigReciprocal008",
+    "TrigReciprocal009",
+    "TrigReciprocal010",
+    "TrigReciprocal011",
+    "TrigReciprocal012",
+    "TrigReciprocal013",
+    "TrigReciprocal014",
+    "TrigReciprocal015",
+    "TrigReciprocal016",
+    "TrigReciprocal017",
+    "TrigReciprocal018",
+    "TrigReciprocal019",
+    "TrigReciprocal020",
+    "TrigReciprocal021",
+    "TrigReciprocal022",
+    "TrigReciprocal023",
+    "TrigReciprocal024",
+    "TrigReciprocal025",
+    "TrigReciprocal026",
+    "HypTrigReciprocal001",
+    "HypTrigReciprocal002",
+    "HypTrigReciprocal003",
+    "HypTrigReciprocal004",
+    "HypTrigReciprocal005",
+    "HypTrigReciprocal006",
+    "HypTrigReciprocal007",
+    "HypTrigReciprocal008",
+    "HypTrigReciprocal009",
+    "HypTrigReciprocal010",
+    "HypTrigReciprocal011",
+    "HypTrigReciprocal012",
+    "HypTrigReciprocal013",
+    "HypTrigReciprocal014",
+    "HypTrigReciprocal015",
+    "HypTrigReciprocal016",
+    "HypTrigReciprocal017",
+    "HypTrigReciprocal018",
+    "HypTrigReciprocal019",
+    "HypTrigReciprocal020"
+  ],
+  "compare": true,
+  "tests": {
+    "Trig001": {
+      "expected": "sinus x-th"
+    },
+    "Trig002": {
+      "expected": "cosinus x-th"
+    },
+    "Trig003": {
+      "expected": "tangens theta-th"
+    },
+    "Trig004": {
+      "expected": "secans theta-th"
+    },
+    "Trig005": {
+      "expected": "cosecans x-th"
+    },
+    "Trig006": {
+      "expected": "cotangens x-th"
+    },
+    "Trig007": {
+      "expected": "sinus squared x-th"
+    },
+    "Trig008": {
+      "expected": "cosinus cubed x-th"
+    },
+    "Trig009": {
+      "expected": "tangens squared x-th"
+    },
+    "Trig010": {
+      "expected": "secans cubed x-th"
+    },
+    "Trig011": {
+      "expected": "cosecans squared x-th"
+    },
+    "Trig012": {
+      "expected": "cotangens squared x-th"
+    },
+    "Trig013": {},
+    "Trig014": {},
+    "Trig015": {},
+    "Trig016": {},
+    "Trig017": {},
+    "Trig018": {},
+    "Trig019": {},
+    "Trig020": {
+      "expected": "tangens negative pi-th"
+    },
+    "Trig021": {
+      "expected": "sinus of, venstreparentes, x-th pluss pi-th, høgreparentes"
+    },
+    "Trig022": {},
+    "Trig023": {},
+    "Trig024": {},
+    "Trig025": {},
+    "Trig026": {},
+    "Trig027": {
+      "expected": "n-th power of tangens x-th"
+    },
+    "Trig028": {
+      "expected": "sinus x-th over cosinus x-th"
+    },
+    "Trig029": {
+      "expected": "tangens femogtretti grader"
+    },
+    "Trig031": {
+      "expected": "tangens of, venstreparentes, vinkel D E F, høgreparentes"
+    },
+    "Trig032": {
+      "expected": "tangens of, venstreparentes, vinkel D, høgreparentes"
+    },
+    "Trig033": {
+      "expected": "sinus of, venstreparentes, x-th pluss y-th, høgreparentes, er lik, sinus x-th cosinus y-th, pluss, cosinus x-th sinus y-th"
+    },
+    "Trig034": {
+      "expected": "cosinus of, venstreparentes, x-th pluss y-th, høgreparentes, er lik, cosinus x-th cosinus y-th, minus, sinus x-th sinus y-th"
+    },
+    "Trig035": {},
+    "Trig037": {},
+    "Trig038": {},
+    "Trig039": {},
+    "Trig040": {},
+    "Trig041": {},
+    "Trig042": {},
+    "Trig043": {},
+    "Trig044": {},
+    "Trig045": {},
+    "TrigInvAuto001": {},
+    "TrigInvAuto002": {},
+    "TrigInvAuto003": {},
+    "TrigInvAuto004": {},
+    "TrigInvAuto005": {},
+    "TrigInvAuto006": {},
+    "TrigInvAuto007": {},
+    "TrigInvAuto008": {},
+    "TrigInvAuto009": {},
+    "TrigInvAuto010": {},
+    "TrigInvAuto011": {},
+    "TrigInvAuto012": {},
+    "TrigInvAuto013": {},
+    "TrigInvAuto014": {},
+    "TrigInvAuto015": {},
+    "TrigInvAuto016": {},
+    "TrigInvAuto017": {},
+    "TrigInvAuto018": {},
+    "TrigInvAuto019": {},
+    "TrigInvAuto020": {},
+    "TrigInvAuto021": {},
+    "TrigInvAuto022": {},
+    "TrigInvAuto023": {},
+    "TrigInvAuto024": {},
+    "TrigInvAuto025": {},
+    "TrigInvAuto026": {},
+    "TrigInverse001": {},
+    "TrigInverse002": {},
+    "TrigInverse003": {},
+    "TrigInverse004": {},
+    "TrigInverse005": {},
+    "TrigInverse006": {},
+    "TrigInverse007": {},
+    "TrigInverse008": {},
+    "TrigInverse009": {},
+    "TrigInverse010": {},
+    "TrigInverse011": {},
+    "TrigInverse012": {},
+    "TrigInverse013": {},
+    "TrigInverse014": {},
+    "TrigInverse015": {},
+    "TrigInverse016": {},
+    "TrigInverse017": {},
+    "TrigInverse018": {},
+    "TrigInverse019": {},
+    "TrigInverse020": {},
+    "TrigInverse021": {},
+    "TrigInverse022": {},
+    "TrigInverse023": {},
+    "TrigInverse024": {},
+    "TrigInverse025": {},
+    "TrigInverse026": {},
+    "ArcTrig001": {},
+    "ArcTrig002": {},
+    "ArcTrig003": {},
+    "ArcTrig004": {},
+    "ArcTrig005": {},
+    "ArcTrig006": {},
+    "ArcTrig007": {},
+    "ArcTrig008": {},
+    "ArcTrig009": {},
+    "ArcTrig010": {},
+    "ArcTrig011": {},
+    "ArcTrig012": {},
+    "ArcTrig013": {},
+    "ArcTrig014": {},
+    "ArcTrig015": {},
+    "ArcTrig016": {},
+    "ArcTrig017": {},
+    "ArcTrig018": {},
+    "ArcTrig019": {},
+    "ArcTrig020": {},
+    "ArcTrig021": {},
+    "ArcTrig022": {},
+    "ArcTrig023": {},
+    "ArcTrig024": {},
+    "ArcTrig025": {},
+    "ArcTrig026": {},
+    "AllTrig01": {
+      "expected": "invers sinus x-th"
+    },
+    "AllTrig02": {
+      "expected": "invers cosinus x-th"
+    },
+    "AllTrig03": {
+      "expected": "invers tangens x-th"
+    },
+    "HypTrig001": {
+      "expected": "hyperbolsk sinus of x-th"
+    },
+    "HypTrig002": {
+      "expected": "hyperbolsk cosinus of x-th"
+    },
+    "HypTrig003": {
+      "expected": "hyperbolsk tangens of x-th"
+    },
+    "HypTrig004": {
+      "expected": "hyperbolsk cotangens of x-th"
+    },
+    "HypTrig005": {
+      "expected": "hyperbolsk secans of x-th"
+    },
+    "HypTrig006": {
+      "expected": "hyperbolsk cosecans of x-th"
+    },
+    "HypTrig007": {},
+    "HypTrig008": {},
+    "HypTrig009": {},
+    "HypTrig010": {},
+    "HypTrig011": {},
+    "HypTrig012": {},
+    "HypTrig013": {},
+    "HypTrig014": {},
+    "HypTrig015": {},
+    "HypTrig016": {},
+    "HypTrig017": {},
+    "HypTrig018": {},
+    "HypTrig019": {},
+    "HypTrig020": {}
+  }
+}

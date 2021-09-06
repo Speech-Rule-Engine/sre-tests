@@ -1,0 +1,412 @@
+{
+  "name": "NynorskMathspeakCollapse",
+  "locale": "nn",
+  "factory": "collapse",
+  "base": "input/common/collapse_test.json",
+  "information": "Nynorsk Mathspeak Collapse tests.",
+  "domain": "mathspeak",
+  "active": "CollapseNynorsk",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "CollapsedAddition_default": {
+      "expected": "a pluss b"
+    },
+    "CollapsedAddition_brief": {
+      "expected": "a pluss b"
+    },
+    "CollapsedAddition_sbrief": {
+      "expected": "a pluss b"
+    },
+    "CollapsedBigop_default": {
+      "expected": "sum x"
+    },
+    "CollapsedBigop_brief": {
+      "expected": "sum x"
+    },
+    "CollapsedBigop_sbrief": {
+      "expected": "sum x"
+    },
+    "CollapsedBinomial_default": {
+      "expected": "StartBinomialEllerMatrise x Velg y StoppBinomialEllerMatrise"
+    },
+    "CollapsedBinomial_brief": {
+      "expected": "StartBinomialEllerMatrise x Velg y StoppBinomialEllerMatrise"
+    },
+    "CollapsedBinomial_sbrief": {
+      "expected": "BinomialEllerMatrise x Velg y StoppBinomialEllerMatrise"
+    },
+    "CollapsedCases_default": {
+      "expected": "StartOppsett Forstørra venstre krøllparentes 1. rad1. Kolonne y 2. Kolonne 2. rad1. Kolonne y 2. Kolonne to StoppOppsett"
+    },
+    "CollapsedCases_brief": {
+      "expected": "StartOppsett Forstørra venstre krøllparentes 1. rad1. Kolonne y 2. Kolonne 2. rad1. Kolonne y 2. Kolonne to StoppOppsett"
+    },
+    "CollapsedCases_sbrief": {
+      "expected": "Oppsett Forstørra venstre krøllparentes 1. rad 1. Kolonne y 2. Kolonne 2. rad 1. Kolonne y 2. Kolonne to StoppOppsett"
+    },
+    "CollapsedContinuedFraction_default": {
+      "expected": "KontinuerligBrøk b ein Over a ein pluss StartBrøk b to Over a to pluss StartBrøk b tre Over a tre pluss prikk prikk prikk"
+    },
+    "CollapsedContinuedFraction_brief": {
+      "expected": "KontinuerligBrøk b ein Over a ein pluss StartBrøk b to Over a to pluss StartBrøk b tre Over a tre pluss prikk prikk prikk"
+    },
+    "CollapsedContinuedFraction_sbrief": {
+      "expected": "KontinuerligBrøk b ein Over a ein pluss Brøk b to Over a to pluss Brøk b tre Over a tre pluss prikk prikk prikk"
+    },
+    "CollapsedDeterminant_default": {
+      "expected": "Start to Med to Determinant 1. Rad a b 2. Rad c d StoppDeterminant"
+    },
+    "CollapsedDeterminant_brief": {
+      "expected": "Start to Med to Determinant 1. Rad a b 2. Rad c d StoppDeterminant"
+    },
+    "CollapsedDeterminant_sbrief": {
+      "expected": "to Med to Determinant 1. rad a b 2. rad c d StoppDeterminant"
+    },
+    "CollapsedFraction_default": {
+      "expected": "Start Brøk ein Over x Slutt Brøk"
+    },
+    "CollapsedFraction_brief": {
+      "expected": "Start Brøk ein Over x Slutt Brøk"
+    },
+    "CollapsedFraction_sbrief": {
+      "expected": "Brøk ein Over x SluttBrøk"
+    },
+    "CollapsedFunction_default": {
+      "expected": "sinus"
+    },
+    "CollapsedFunction_brief": {
+      "expected": "sinus"
+    },
+    "CollapsedFunction_sbrief": {
+      "expected": "sinus"
+    },
+    "CollapsedIdentifier_default": {
+      "expected": "a"
+    },
+    "CollapsedIdentifier_brief": {
+      "expected": "a"
+    },
+    "CollapsedIdentifier_sbrief": {
+      "expected": "a"
+    },
+    "CollapsedInfixop_default": {
+      "expected": "a delt på b"
+    },
+    "CollapsedInfixop_brief": {
+      "expected": "a delt på b"
+    },
+    "CollapsedInfixop_sbrief": {
+      "expected": "a delt på b"
+    },
+    "CollapsedIntegral_default": {
+      "expected": "konturintegral stor bokstav E prikk d feit l"
+    },
+    "CollapsedIntegral_brief": {
+      "expected": "konturintegral stor bokstav E prikk d feit l"
+    },
+    "CollapsedIntegral_sbrief": {
+      "expected": "konturintegral stor bokstav E prikk d feit l"
+    },
+    "CollapsedLim_default": {
+      "expected": "grense"
+    },
+    "CollapsedLim_brief": {
+      "expected": "grense"
+    },
+    "CollapsedLim_sbrief": {
+      "expected": "grense"
+    },
+    "CollapsedMatrix_default": {
+      "expected": "Start tre Med to Matrise 1. rad 1. Kolonne a 2. Kolonne b 2. rad 1. Kolonne c 2. Kolonne d 3. rad 1. Kolonne e 2. Kolonne f Stopp matrise"
+    },
+    "CollapsedMatrix_brief": {
+      "expected": "Start tre Med to Matrise 1. rad 1. Kolonne a 2. Kolonne b 2. rad 1. Kolonne c 2. Kolonne d 3. rad 1. Kolonne e 2. Kolonne f Stopp matrise"
+    },
+    "CollapsedMatrix_sbrief": {
+      "expected": "tre Med to Matrise 1. rad 1. Kolonne a 2. Kolonne b 2. rad 1. Kolonne c 2. Kolonne d 3. rad 1. Kolonne e 2. Kolonne f Stopp matrise"
+    },
+    "CollapsedMixedNumber_default": {},
+    "CollapsedMixedNumber_brief": {},
+    "CollapsedMixedNumber_sbrief": {},
+    "CollapsedMultiplication_default": {
+      "expected": "a asterisk b"
+    },
+    "CollapsedMultiplication_brief": {
+      "expected": "a asterisk b"
+    },
+    "CollapsedMultiplication_sbrief": {
+      "expected": "a asterisk b"
+    },
+    "CollapsedMultirel_default": {
+      "expected": "a er lik b er mindre enn eller er lik b"
+    },
+    "CollapsedMultirel_brief": {
+      "expected": "a er lik b er mindre enn eller er lik b"
+    },
+    "CollapsedMultirel_sbrief": {
+      "expected": "a er lik b er mindre enn eller er lik b"
+    },
+    "CollapsedNumber_default": {
+      "expected": "etthundreogtreogtjuetusenfirehundreogseksogfemti"
+    },
+    "CollapsedNumber_brief": {
+      "expected": "etthundreogtreogtjuetusenfirehundreogseksogfemti"
+    },
+    "CollapsedNumber_sbrief": {
+      "expected": "etthundreogtreogtjuetusenfirehundreogseksogfemti"
+    },
+    "CollapsedPunctuated_default": {
+      "expected": "a komma b komma c"
+    },
+    "CollapsedPunctuated_brief": {
+      "expected": "a komma b komma c"
+    },
+    "CollapsedPunctuated_sbrief": {
+      "expected": "a komma b komma c"
+    },
+    "CollapsedRelation_default": {
+      "expected": "a er lik b"
+    },
+    "CollapsedRelation_brief": {
+      "expected": "a er lik b"
+    },
+    "CollapsedRelation_sbrief": {
+      "expected": "a er lik b"
+    },
+    "CollapsedRelationSeq_default": {
+      "expected": "a er lik b er lik b"
+    },
+    "CollapsedRelationSeq_brief": {
+      "expected": "a er lik b er lik b"
+    },
+    "CollapsedRelationSeq_sbrief": {
+      "expected": "a er lik b er lik b"
+    },
+    "CollapsedRoot_default": {
+      "expected": "RotIndeks tre StartRot x SluttRot"
+    },
+    "CollapsedRoot_brief": {
+      "expected": "RotIndeks tre StartRot x SluttRot"
+    },
+    "CollapsedRoot_sbrief": {
+      "expected": "Indeks tre Rot x SluttRot"
+    },
+    "CollapsedRootNested_default": {
+      "expected": "NøstaRotIndeks tre NøstaStartRot RotIndeks fire StartRot x SluttRot pluss x NøstaSluttRot"
+    },
+    "CollapsedRootNested_brief": {
+      "expected": "NøstRotIndeks tre NøstStartRot RotIndeks fire StartRot x SluttRot pluss x NøstSluttRot"
+    },
+    "CollapsedRootNested_sbrief": {
+      "expected": "NøstIndeks tre NøstRot Indeks fire Rot x SluttRot pluss x NøstSluttRot"
+    },
+    "CollapsedRowvector_default": {
+      "expected": "Start ein Med to Matrise 1. rad 1. Kolonne a 2. Kolonne b Stopp matrise"
+    },
+    "CollapsedRowvector_brief": {
+      "expected": "Start ein Med to Matrise 1. rad 1. Kolonne a 2. Kolonne b Stopp matrise"
+    },
+    "CollapsedRowvector_sbrief": {
+      "expected": "ein Med to Matrise 1. rad 1. Kolonne a 2. Kolonne b Stopp matrise"
+    },
+    "CollapsedSqrt_default": {
+      "expected": "StartRot to SluttRot"
+    },
+    "CollapsedSqrt_brief": {
+      "expected": "StartRot to SluttRot"
+    },
+    "CollapsedSqrt_sbrief": {
+      "expected": "Rot to SluttRot"
+    },
+    "CollapsedSqrtNested_default": {
+      "expected": "NøstaStartRot to StartRot to SluttRot NøstaSluttRot"
+    },
+    "CollapsedSqrtNested_brief": {
+      "expected": "NøstStartRot to StartRot to SluttRot NøstSluttRot"
+    },
+    "CollapsedSqrtNested_sbrief": {
+      "expected": "NøstRot to Rot to SluttRot NøstSluttRot"
+    },
+    "CollapsedSquarematrix_default": {
+      "expected": "Start to Med to Matrise 1. rad 1. Kolonne a 2. Kolonne b 2. rad 1. Kolonne c 2. Kolonne d Stopp matrise"
+    },
+    "CollapsedSquarematrix_brief": {
+      "expected": "Start to Med to Matrise 1. rad 1. Kolonne a 2. Kolonne b 2. rad 1. Kolonne c 2. Kolonne d Stopp matrise"
+    },
+    "CollapsedSquarematrix_sbrief": {
+      "expected": "to Med to Matrise 1. rad 1. Kolonne a 2. Kolonne b 2. rad 1. Kolonne c 2. Kolonne d Stopp matrise"
+    },
+    "CollapsedSubscript_default": {
+      "expected": "a Subskript b"
+    },
+    "CollapsedSubscript_brief": {
+      "expected": "a Sub b"
+    },
+    "CollapsedSubscript_sbrief": {
+      "expected": "a Sub b"
+    },
+    "CollapsedSubsup_default": {
+      "expected": "a Subskript c Superskript b"
+    },
+    "CollapsedSubsup_brief": {
+      "expected": "a Sub c Sub b"
+    },
+    "CollapsedSubsup_sbrief": {
+      "expected": "a Sub c Sub b"
+    },
+    "CollapsedSuperscript_default": {
+      "expected": "a Superskript b"
+    },
+    "CollapsedSuperscript_brief": {
+      "expected": "a Sub b"
+    },
+    "CollapsedSuperscript_sbrief": {
+      "expected": "a Sub b"
+    },
+    "CollapsedTable_default": {
+      "expected": "StartOppsett 1. rad 1. Kolonne a 2. Kolonne b 2. rad 1. Kolonne c 2. Kolonne d StoppOppsett"
+    },
+    "CollapsedTable_brief": {
+      "expected": "StartOppsett 1. rad 1. Kolonne a 2. Kolonne b 2. rad 1. Kolonne c 2. Kolonne d StoppOppsett"
+    },
+    "CollapsedTable_sbrief": {
+      "expected": "Oppsett 1. rad 1. Kolonne a 2. Kolonne b 2. rad 1. Kolonne c 2. Kolonne d StoppOppsett"
+    },
+    "CollapsedText_default": {
+      "expected": "a b c"
+    },
+    "CollapsedText_brief": {
+      "expected": "a b c"
+    },
+    "CollapsedText_sbrief": {
+      "expected": "a b c"
+    },
+    "CollapsedVarAddition_default": {
+      "expected": "a pluss prikk prikk prikk pluss b"
+    },
+    "CollapsedVarAddition_brief": {
+      "expected": "a pluss prikk prikk prikk pluss b"
+    },
+    "CollapsedVarAddition_sbrief": {
+      "expected": "a pluss prikk prikk prikk pluss b"
+    },
+    "CollapsedVarCases_default": {
+      "expected": "StartOppsett Forstørra venstre krøllparentes 1. rad a 2. rad prikk prikk prikk 3. rad b StoppOppsett"
+    },
+    "CollapsedVarCases_brief": {
+      "expected": "StartOppsett Forstørra venstre krøllparentes 1. rad a 2. rad prikk prikk prikk 3. rad b StoppOppsett"
+    },
+    "CollapsedVarCases_sbrief": {
+      "expected": "Oppsett Forstørra venstre krøllparentes 1. rad  a 2. rad  prikk prikk prikk 3. rad  b StoppOppsett"
+    },
+    "CollapsedVarDeterminant_default": {
+      "expected": "Start tre Med tre Determinant 1. rad  a b e 2. rad  Tom prikk prikk prikk Tom 3. rad  c d f StoppDeterminant"
+    },
+    "CollapsedVarDeterminant_brief": {
+      "expected": "Start tre Med tre Determinant 1. rad  a b e 2. rad  Tom prikk prikk prikk Tom 3. rad  c d f StoppDeterminant"
+    },
+    "CollapsedVarDeterminant_sbrief": {
+      "expected": "tre Med tre Determinant 1. rad  a b e 2. rad  Tom prikk prikk prikk Tom 3. rad  c d f StoppDeterminant"
+    },
+    "CollapsedVarMatrix_default": {
+      "expected": "Start tre Med tre Matrise 1. rad 1. Kolonne a 2. Kolonne b 3. Kolonne e 2. rad 1. Kolonne Tom 2. Kolonne prikk prikk prikk 3. Kolonne Tom 3. rad 1. Kolonne c 2. Kolonne d 3. Kolonne f Stopp matrise"
+    },
+    "CollapsedVarMatrix_brief": {
+      "expected": "Start tre Med tre Matrise 1. rad 1. Kolonne a 2. Kolonne b 3. Kolonne e 2. rad 1. Kolonne Tom 2. Kolonne prikk prikk prikk 3. Kolonne Tom 3. rad 1. Kolonne c 2. Kolonne d 3. Kolonne f Stopp matrise"
+    },
+    "CollapsedVarMatrix_sbrief": {
+      "expected": "tre Med tre Matrise 1. rad 1. Kolonne a 2. Kolonne b 3. Kolonne e 2. rad 1. Kolonne Tom 2. Kolonne prikk prikk prikk 3. Kolonne Tom 3. rad 1. Kolonne c 2. Kolonne d 3. Kolonne f Stopp matrise"
+    },
+    "CollapsedVarMultiplication_default": {
+      "expected": "a asterisk prikk prikk prikk asterisk b"
+    },
+    "CollapsedVarMultiplication_brief": {
+      "expected": "a asterisk prikk prikk prikk asterisk b"
+    },
+    "CollapsedVarMultiplication_sbrief": {
+      "expected": "a asterisk prikk prikk prikk asterisk b"
+    },
+    "CollapsedVarMultirel_default": {
+      "expected": "a er lik prikk prikk prikk er mindre enn eller er lik b"
+    },
+    "CollapsedVarMultirel_brief": {
+      "expected": "a er lik prikk prikk prikk er mindre enn eller er lik b"
+    },
+    "CollapsedVarMultirel_sbrief": {
+      "expected": "a er lik prikk prikk prikk er mindre enn eller er lik b"
+    },
+    "CollapsedVarPunctuated_default": {
+      "expected": "a komma prikk prikk prikk komma b"
+    },
+    "CollapsedVarPunctuated_brief": {
+      "expected": "a komma prikk prikk prikk komma b"
+    },
+    "CollapsedVarPunctuated_sbrief": {
+      "expected": "a komma prikk prikk prikk komma b"
+    },
+    "CollapsedVarRelation_default": {
+      "expected": "a er lik prikk prikk prikk er lik b"
+    },
+    "CollapsedVarRelation_brief": {
+      "expected": "a er lik prikk prikk prikk er lik b"
+    },
+    "CollapsedVarRelation_sbrief": {
+      "expected": "a er lik prikk prikk prikk er lik b"
+    },
+    "CollapsedVarVector_default": {
+      "expected": "Start fire Med ein Matrise 1. rad  a 2. rad  vertikal ellipse 3. rad  c 4. rad  d Stopp matrise"
+    },
+    "CollapsedVarVector_brief": {
+      "expected": "Start fire Med ein Matrise 1. rad  a 2. rad  vertikal ellipse 3. rad  c 4. rad  d Stopp matrise"
+    },
+    "CollapsedVarVector_sbrief": {
+      "expected": "fire Med ein Matrise 1. rad  a 2. rad  vertikal ellipse 3. rad  c 4. rad  d Stopp matrise"
+    },
+    "CollapsedVector_default": {
+      "expected": "Start tre Med ein Matrise 1. rad  a 2. rad  c 3. rad  e Stopp matrise"
+    },
+    "CollapsedVector_brief": {
+      "expected": "Start tre Med ein Matrise 1. rad  a 2. rad  c 3. rad  e Stopp matrise"
+    },
+    "CollapsedVector_sbrief": {
+      "expected": "tre Med ein Matrise 1. rad  a 2. rad  c 3. rad  e Stopp matrise"
+    },
+    "CollapsedVarSubtraction_default": {
+      "expected": "a minus prikk prikk prikk minus b"
+    },
+    "CollapsedVarSubtraction_brief": {
+      "expected": "a minus prikk prikk prikk minus b"
+    },
+    "CollapsedVarSubtraction_sbrief": {
+      "expected": "a minus prikk prikk prikk minus b"
+    },
+    "CollapsedCountImplicit_default": {
+      "expected": "a b c"
+    },
+    "CollapsedCountImplicit_brief": {
+      "expected": "a b c"
+    },
+    "CollapsedCountImplicit_sbrief": {
+      "expected": "a b c"
+    },
+    "CollapsedVarImplicit_default": {
+      "expected": "a prikk prikk prikk b"
+    },
+    "CollapsedVarArrowRelation_default": {
+      "expected": "a høgrepil prikk prikk prikk venstre-høgrepil b"
+    },
+    "CollapsedArrowRelation_default": {
+      "expected": "a høgrepil c venstre-høgrepil b"
+    },
+    "CollapsedVarRowvector_default": {
+      "expected": "Start ein Med tre Matrise 1. rad 1. Kolonne a 2. Kolonne prikk prikk prikk 3. Kolonne b Stopp matrise"
+    },
+    "CollapsedRootInside_default": {
+      "expected": "RotIndeks tre StartRot x SluttRot a"
+    },
+    "CollapsedRootNestedInside_default": {
+      "expected": "NøstaRotIndeks tre NøstaStartRot RotIndeks fire StartRot x SluttRot pluss x NøstaSluttRot a"
+    }
+  }
+}
