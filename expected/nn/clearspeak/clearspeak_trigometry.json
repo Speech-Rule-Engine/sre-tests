@@ -57,208 +57,436 @@
   "compare": true,
   "tests": {
     "Trig001": {
-      "expected": "sinus x-th"
+      "expected": "sinus x"
     },
     "Trig002": {
-      "expected": "cosinus x-th"
+      "expected": "cosinus x"
     },
     "Trig003": {
-      "expected": "tangens theta-th"
+      "expected": "tangens theta"
     },
     "Trig004": {
-      "expected": "secans theta-th"
+      "expected": "secans theta"
     },
     "Trig005": {
-      "expected": "cosecans x-th"
+      "expected": "cosecans x"
     },
     "Trig006": {
-      "expected": "cotangens x-th"
+      "expected": "cotangens x"
     },
     "Trig007": {
-      "expected": "sinus squared x-th"
+      "expected": "sinus squared x"
     },
     "Trig008": {
-      "expected": "cosinus cubed x-th"
+      "expected": "cosinus cubed x"
     },
     "Trig009": {
-      "expected": "tangens squared x-th"
+      "expected": "tangens squared x"
     },
     "Trig010": {
-      "expected": "secans cubed x-th"
+      "expected": "secans cubed x"
     },
     "Trig011": {
-      "expected": "cosecans squared x-th"
+      "expected": "cosecans squared x"
     },
     "Trig012": {
-      "expected": "cotangens squared x-th"
+      "expected": "cotangens squared x"
     },
-    "Trig013": {},
-    "Trig014": {},
-    "Trig015": {},
-    "Trig016": {},
-    "Trig017": {},
-    "Trig018": {},
-    "Trig019": {},
+    "Trig013": {
+      "expected": "sinus 2 pi"
+    },
+    "Trig014": {
+      "expected": "the sinus of, venstreparentes, pi k, pluss, pi over 2, høgreparentes"
+    },
+    "Trig015": {
+      "expected": "the cosinus of, pi over 2"
+    },
+    "Trig016": {
+      "expected": "the sinus of, pi over 2"
+    },
+    "Trig017": {
+      "expected": "sinus pi over 2"
+    },
+    "Trig018": {
+      "expected": "2 over sinus pi"
+    },
+    "Trig019": {
+      "expected": "the fraction with numerator, the sinus of, pi over 2, and denominator 3"
+    },
     "Trig020": {
-      "expected": "tangens negative pi-th"
+      "expected": "tangens negative pi"
     },
     "Trig021": {
-      "expected": "sinus of, venstreparentes, x-th pluss pi-th, høgreparentes"
+      "expected": "the sinus of, venstreparentes, x pluss pi, høgreparentes"
     },
-    "Trig022": {},
-    "Trig023": {},
-    "Trig024": {},
-    "Trig025": {},
-    "Trig026": {},
+    "Trig022": {
+      "expected": "the cosinus of, venstreparentes, x pluss, pi over 2, høgreparentes"
+    },
+    "Trig023": {
+      "expected": "the cosinus of, venstreparentes, pi over 2, pluss x, høgreparentes"
+    },
+    "Trig024": {
+      "expected": "sinus squared x, pluss, cosinus squared x, er lik 1"
+    },
+    "Trig025": {
+      "expected": "the fjerde power of sinus x"
+    },
+    "Trig026": {
+      "expected": "the femte power of cosinus x"
+    },
     "Trig027": {
-      "expected": "n-th power of tangens x-th"
+      "expected": "the n-th power of tangens x"
     },
     "Trig028": {
-      "expected": "sinus x-th over cosinus x-th"
+      "expected": "sinus x over cosinus x"
     },
     "Trig029": {
-      "expected": "tangens femogtretti grader"
+      "expected": "tangens 35 grader"
     },
     "Trig031": {
-      "expected": "tangens of, venstreparentes, vinkel D E F, høgreparentes"
+      "expected": "the tangens of, venstreparentes, vinkel D E F, høgreparentes"
     },
     "Trig032": {
-      "expected": "tangens of, venstreparentes, vinkel D, høgreparentes"
+      "expected": "the tangens of, venstreparentes, vinkel D, høgreparentes"
     },
     "Trig033": {
-      "expected": "sinus of, venstreparentes, x-th pluss y-th, høgreparentes, er lik, sinus x-th cosinus y-th, pluss, cosinus x-th sinus y-th"
+      "expected": "the sinus of, venstreparentes, x pluss y, høgreparentes, er lik, sinus x cosinus y, pluss, cosinus x sinus y"
     },
     "Trig034": {
-      "expected": "cosinus of, venstreparentes, x-th pluss y-th, høgreparentes, er lik, cosinus x-th cosinus y-th, minus, sinus x-th sinus y-th"
+      "expected": "the cosinus of, venstreparentes, x pluss y, høgreparentes, er lik, cosinus x cosinus y, minus, sinus x sinus y"
     },
-    "Trig035": {},
-    "Trig037": {},
-    "Trig038": {},
-    "Trig039": {},
-    "Trig040": {},
-    "Trig041": {},
-    "Trig042": {},
-    "Trig043": {},
-    "Trig044": {},
-    "Trig045": {},
-    "TrigInvAuto001": {},
-    "TrigInvAuto002": {},
-    "TrigInvAuto003": {},
-    "TrigInvAuto004": {},
-    "TrigInvAuto005": {},
-    "TrigInvAuto006": {},
-    "TrigInvAuto007": {},
-    "TrigInvAuto008": {},
-    "TrigInvAuto009": {},
-    "TrigInvAuto010": {},
-    "TrigInvAuto011": {},
-    "TrigInvAuto012": {},
-    "TrigInvAuto013": {},
-    "TrigInvAuto014": {},
-    "TrigInvAuto015": {},
-    "TrigInvAuto016": {},
-    "TrigInvAuto017": {},
-    "TrigInvAuto018": {},
-    "TrigInvAuto019": {},
-    "TrigInvAuto020": {},
-    "TrigInvAuto021": {},
-    "TrigInvAuto022": {},
-    "TrigInvAuto023": {},
-    "TrigInvAuto024": {},
-    "TrigInvAuto025": {},
-    "TrigInvAuto026": {},
-    "TrigInverse001": {},
-    "TrigInverse002": {},
-    "TrigInverse003": {},
-    "TrigInverse004": {},
-    "TrigInverse005": {},
-    "TrigInverse006": {},
-    "TrigInverse007": {},
-    "TrigInverse008": {},
-    "TrigInverse009": {},
-    "TrigInverse010": {},
-    "TrigInverse011": {},
-    "TrigInverse012": {},
-    "TrigInverse013": {},
-    "TrigInverse014": {},
-    "TrigInverse015": {},
-    "TrigInverse016": {},
-    "TrigInverse017": {},
-    "TrigInverse018": {},
-    "TrigInverse019": {},
-    "TrigInverse020": {},
-    "TrigInverse021": {},
-    "TrigInverse022": {},
-    "TrigInverse023": {},
-    "TrigInverse024": {},
-    "TrigInverse025": {},
-    "TrigInverse026": {},
-    "ArcTrig001": {},
-    "ArcTrig002": {},
-    "ArcTrig003": {},
-    "ArcTrig004": {},
-    "ArcTrig005": {},
-    "ArcTrig006": {},
-    "ArcTrig007": {},
-    "ArcTrig008": {},
-    "ArcTrig009": {},
-    "ArcTrig010": {},
-    "ArcTrig011": {},
-    "ArcTrig012": {},
-    "ArcTrig013": {},
-    "ArcTrig014": {},
-    "ArcTrig015": {},
-    "ArcTrig016": {},
-    "ArcTrig017": {},
-    "ArcTrig018": {},
-    "ArcTrig019": {},
-    "ArcTrig020": {},
-    "ArcTrig021": {},
-    "ArcTrig022": {},
-    "ArcTrig023": {},
-    "ArcTrig024": {},
-    "ArcTrig025": {},
-    "ArcTrig026": {},
+    "Trig035": {
+      "expected": "the tangens of, venstreparentes, x pluss y, høgreparentes, er lik, the fraction with numerator tangens x minus tangens y, and denominator 1 minus, tangens x tangens y"
+    },
+    "Trig037": {
+      "expected": "the tangens of, venstreparentes, pi over 6, pluss, 2 pi over 3, høgreparentes, er lik, the fraction with numerator, the tangens of, pi over 6, minus, the tangens of, 2 pi over 3, and denominator 1 minus, the tangens of, pi over 6, the tangens of, 2 pi over 3"
+    },
+    "Trig038": {
+      "expected": "tangens 2 x, er lik, the fraction with numerator 2 tangens x, and denominator 1 minus, tangens squared x"
+    },
+    "Trig039": {
+      "expected": "cosinus 2 x, er lik 2, cosinus squared x, minus 1"
+    },
+    "Trig040": {
+      "expected": "the sinus of, x over 2, er lik pluss minus the square root of, the fraction with numerator 1 minus cosinus x, and denominator 2"
+    },
+    "Trig041": {
+      "expected": "the tangens of, x over 2, er lik pluss minus the square root of, the fraction with numerator 1 minus cosinus x, and denominator 1 pluss cosinus x"
+    },
+    "Trig042": {
+      "expected": "cosinus x cosinus y, er lik 2, the cosinus of, the fraction with numerator x pluss y, and denominator 2, the cosinus of, the fraction with numerator x minus y, and denominator 2"
+    },
+    "Trig043": {
+      "expected": "the sinus of, venstreparentes, negative, pi over 8, høgreparentes, er lik negative ein andre the square root of 2 minus the square root of 2, end root, end root"
+    },
+    "Trig044": {
+      "expected": "the tangens of, 3 pi over 8, er lik, the fraction with numerator the square root of, the square root of 2, end root, pluss 1, end root, and denominator the square root of, the square root of 2, end root, minus 1, end root"
+    },
+    "Trig045": {
+      "expected": "the tangens of, pi over 12, er lik ein andre the square root of 2 minus the square root of 3, end root, end root"
+    },
+    "TrigInvAuto001": {
+      "expected": "the inverse sinus of x"
+    },
+    "TrigInvAuto002": {
+      "expected": "the inverse cosinus of x"
+    },
+    "TrigInvAuto003": {
+      "expected": "the inverse tangens of x"
+    },
+    "TrigInvAuto004": {
+      "expected": "the inverse cotangens of x"
+    },
+    "TrigInvAuto005": {
+      "expected": "the inverse secans of x"
+    },
+    "TrigInvAuto006": {
+      "expected": "the inverse cosecans of x"
+    },
+    "TrigInvAuto007": {
+      "expected": "the inverse sinus of, the fraction with numerator the square root of 2, and denominator 2"
+    },
+    "TrigInvAuto008": {
+      "expected": "the inverse cosinus of ein andre"
+    },
+    "TrigInvAuto009": {
+      "expected": "the inverse tangens of 17"
+    },
+    "TrigInvAuto010": {
+      "expected": "the inverse cotangens of 32"
+    },
+    "TrigInvAuto011": {
+      "expected": "the inverse secans of 100"
+    },
+    "TrigInvAuto012": {
+      "expected": "the inverse cosecans of 85"
+    },
+    "TrigInvAuto013": {
+      "expected": "the inverse sinus of negative x"
+    },
+    "TrigInvAuto014": {
+      "expected": "the inverse cosinus of negative x"
+    },
+    "TrigInvAuto015": {
+      "expected": "the inverse tangens of, venstreparentes, negative x pluss 12, høgreparentes"
+    },
+    "TrigInvAuto016": {
+      "expected": "the inverse cotangens of, venstreparentes, negative x minus 1, høgreparentes"
+    },
+    "TrigInvAuto017": {
+      "expected": "the inverse sinus of sinus 0"
+    },
+    "TrigInvAuto018": {
+      "expected": "the inverse cosecans of cosecans x"
+    },
+    "TrigInvAuto019": {
+      "expected": "the cosinus of, venstreparentes, the inverse cosinus of, venstreparentes, negative, the fraction with numerator the square root of 2, and denominator 2, høgreparentes, høgreparentes"
+    },
+    "TrigInvAuto020": {
+      "expected": "the cosinus of, venstreparentes, negative, the inverse cosinus of, venstreparentes, the fraction with numerator the square root of 2, and denominator 2, høgreparentes, høgreparentes"
+    },
+    "TrigInvAuto021": {
+      "expected": "the inverse sinus of, venstreparentes, the cosinus of, pi over 4, høgreparentes"
+    },
+    "TrigInvAuto022": {
+      "expected": "sinus, the inverse cosinus of ein andre"
+    },
+    "TrigInvAuto023": {
+      "expected": "sinus, the inverse tangens of 1"
+    },
+    "TrigInvAuto024": {
+      "expected": "the sinus of, venstreparentes, negative, the inverse tangens of 1, høgreparentes"
+    },
+    "TrigInvAuto025": {
+      "expected": "the sinus of, venstreparentes, negative, the inverse tangens of negative 1, høgreparentes"
+    },
+    "TrigInvAuto026": {
+      "expected": "the inverse secans of secans x"
+    },
+    "TrigInverse001": {
+      "expected": "sinus inverse of x"
+    },
+    "TrigInverse002": {
+      "expected": "cosinus inverse of x"
+    },
+    "TrigInverse003": {
+      "expected": "tangens inverse of x"
+    },
+    "TrigInverse004": {
+      "expected": "cotangens inverse of x"
+    },
+    "TrigInverse005": {
+      "expected": "secans inverse of x"
+    },
+    "TrigInverse006": {
+      "expected": "cosecans inverse of x"
+    },
+    "TrigInverse007": {
+      "expected": "sinus inverse of, the fraction with numerator the square root of 2, and denominator 2"
+    },
+    "TrigInverse008": {
+      "expected": "cosinus inverse of ein andre"
+    },
+    "TrigInverse009": {
+      "expected": "tangens inverse of 17"
+    },
+    "TrigInverse010": {
+      "expected": "cotangens inverse of 32"
+    },
+    "TrigInverse011": {
+      "expected": "secans inverse of 100"
+    },
+    "TrigInverse012": {
+      "expected": "cosecans inverse of 85"
+    },
+    "TrigInverse013": {
+      "expected": "sinus inverse of negative x"
+    },
+    "TrigInverse014": {
+      "expected": "cosinus inverse of negative x"
+    },
+    "TrigInverse015": {
+      "expected": "tangens inverse of, venstreparentes, negative x pluss 12, høgreparentes"
+    },
+    "TrigInverse016": {
+      "expected": "cotangens inverse of, venstreparentes, negative x minus 1, høgreparentes"
+    },
+    "TrigInverse017": {
+      "expected": "sinus inverse of sinus 0"
+    },
+    "TrigInverse018": {
+      "expected": "cosecans inverse of cosecans x"
+    },
+    "TrigInverse019": {
+      "expected": "the cosinus of, venstreparentes, cosinus inverse of, venstreparentes, negative, the fraction with numerator the square root of 2, and denominator 2, høgreparentes, høgreparentes"
+    },
+    "TrigInverse020": {
+      "expected": "the cosinus of, venstreparentes, negative, cosinus inverse of, venstreparentes, the fraction with numerator the square root of 2, and denominator 2, høgreparentes, høgreparentes"
+    },
+    "TrigInverse021": {
+      "expected": "sinus inverse of, venstreparentes, the cosinus of, pi over 4, høgreparentes"
+    },
+    "TrigInverse022": {
+      "expected": "sinus, cosinus inverse of ein andre"
+    },
+    "TrigInverse023": {
+      "expected": "sinus, tangens inverse of 1"
+    },
+    "TrigInverse024": {
+      "expected": "the sinus of, venstreparentes, negative, tangens inverse of 1, høgreparentes"
+    },
+    "TrigInverse025": {
+      "expected": "the sinus of, venstreparentes, negative, tangens inverse of negative 1, høgreparentes"
+    },
+    "TrigInverse026": {
+      "expected": "secans inverse of secans x"
+    },
+    "ArcTrig001": {
+      "expected": "arc sinus x"
+    },
+    "ArcTrig002": {
+      "expected": "arc cosinus x"
+    },
+    "ArcTrig003": {
+      "expected": "arc tangens x"
+    },
+    "ArcTrig004": {
+      "expected": "arc cotangens x"
+    },
+    "ArcTrig005": {
+      "expected": "arc secans x"
+    },
+    "ArcTrig006": {
+      "expected": "arc cosecans x"
+    },
+    "ArcTrig007": {
+      "expected": "arc sinus of, the fraction with numerator the square root of 2, and denominator 2"
+    },
+    "ArcTrig008": {
+      "expected": "arc cosinus ein andre"
+    },
+    "ArcTrig009": {
+      "expected": "arc tangens 17"
+    },
+    "ArcTrig010": {
+      "expected": "arc cotangens 32"
+    },
+    "ArcTrig011": {
+      "expected": "arc secans 100"
+    },
+    "ArcTrig012": {
+      "expected": "arc cosecans 85"
+    },
+    "ArcTrig013": {
+      "expected": "arc sinus negative x"
+    },
+    "ArcTrig014": {
+      "expected": "arc cosinus negative x"
+    },
+    "ArcTrig015": {
+      "expected": "arc tangens of, venstreparentes, negative x pluss 12, høgreparentes"
+    },
+    "ArcTrig016": {
+      "expected": "arc cotangens of, venstreparentes, negative x minus 1, høgreparentes"
+    },
+    "ArcTrig017": {
+      "expected": "arc sinus, sinus 0"
+    },
+    "ArcTrig018": {
+      "expected": "arc cosecans, cosecans x"
+    },
+    "ArcTrig019": {
+      "expected": "the cosinus of, venstreparentes, arc cosinus of, venstreparentes, negative, the fraction with numerator the square root of 2, and denominator 2, høgreparentes, høgreparentes"
+    },
+    "ArcTrig020": {
+      "expected": "the cosinus of, venstreparentes, negative, arc cosinus of, venstreparentes, the fraction with numerator the square root of 2, and denominator 2, høgreparentes, høgreparentes"
+    },
+    "ArcTrig021": {
+      "expected": "arc sinus of, venstreparentes, the cosinus of, pi over 4, høgreparentes"
+    },
+    "ArcTrig022": {
+      "expected": "sinus, arc cosinus ein andre"
+    },
+    "ArcTrig023": {
+      "expected": "sinus, arc tangens 1"
+    },
+    "ArcTrig024": {
+      "expected": "the sinus of, venstreparentes, negative, arc tangens 1, høgreparentes"
+    },
+    "ArcTrig025": {
+      "expected": "the sinus of, venstreparentes, negative, arc tangens negative 1, høgreparentes"
+    },
+    "ArcTrig026": {
+      "expected": "arc secans, secans x"
+    },
     "AllTrig01": {
-      "expected": "invers sinus x-th"
+      "expected": "invers sinus x"
     },
     "AllTrig02": {
-      "expected": "invers cosinus x-th"
+      "expected": "invers cosinus x"
     },
     "AllTrig03": {
-      "expected": "invers tangens x-th"
+      "expected": "invers tangens x"
     },
     "HypTrig001": {
-      "expected": "hyperbolsk sinus of x-th"
+      "expected": "hyperbolsk sinus of x"
     },
     "HypTrig002": {
-      "expected": "hyperbolsk cosinus of x-th"
+      "expected": "hyperbolsk cosinus of x"
     },
     "HypTrig003": {
-      "expected": "hyperbolsk tangens of x-th"
+      "expected": "hyperbolsk tangens of x"
     },
     "HypTrig004": {
-      "expected": "hyperbolsk cotangens of x-th"
+      "expected": "hyperbolsk cotangens of x"
     },
     "HypTrig005": {
-      "expected": "hyperbolsk secans of x-th"
+      "expected": "hyperbolsk secans of x"
     },
     "HypTrig006": {
-      "expected": "hyperbolsk cosecans of x-th"
+      "expected": "hyperbolsk cosecans of x"
     },
-    "HypTrig007": {},
-    "HypTrig008": {},
-    "HypTrig009": {},
-    "HypTrig010": {},
-    "HypTrig011": {},
-    "HypTrig012": {},
-    "HypTrig013": {},
-    "HypTrig014": {},
-    "HypTrig015": {},
-    "HypTrig016": {},
-    "HypTrig017": {},
-    "HypTrig018": {},
-    "HypTrig019": {},
-    "HypTrig020": {}
+    "HypTrig007": {
+      "expected": "the inverse hyperbolsk sinus of x"
+    },
+    "HypTrig008": {
+      "expected": "the inverse hyperbolsk cosinus of x"
+    },
+    "HypTrig009": {
+      "expected": "the inverse hyperbolsk tangens of x"
+    },
+    "HypTrig010": {
+      "expected": "the inverse hyperbolsk cotangens of x"
+    },
+    "HypTrig011": {
+      "expected": "the inverse hyperbolsk secans of x"
+    },
+    "HypTrig012": {
+      "expected": "the inverse hyperbolsk cosecans of x"
+    },
+    "HypTrig013": {
+      "expected": "hyperbolsk sinus of, the inverse hyperbolsk sinus of x"
+    },
+    "HypTrig014": {
+      "expected": "hyperbolsk cosinus of, the inverse hyperbolsk cosinus of x"
+    },
+    "HypTrig015": {
+      "expected": "hyperbolsk tangens of, the inverse hyperbolsk tangens of x"
+    },
+    "HypTrig016": {
+      "expected": "hyperbolsk cotangens of, the inverse hyperbolsk cotangens of x"
+    },
+    "HypTrig017": {
+      "expected": "the inverse hyperbolsk sinus of, hyperbolsk sinus of x"
+    },
+    "HypTrig018": {
+      "expected": "the inverse hyperbolsk cosinus of, hyperbolsk cosinus of x"
+    },
+    "HypTrig019": {
+      "expected": "the inverse hyperbolsk tangens of, hyperbolsk tangens of x"
+    },
+    "HypTrig020": {
+      "expected": "the inverse hyperbolsk cotangens of, hyperbolsk cotangens of x"
+    }
   }
 }

@@ -10,40 +10,40 @@
   "compare": true,
   "tests": {
     "BaselineNumberGreek_default": {
-      "expected": "alfa grunnlinje to"
+      "expected": "alfa grunnlinje 2"
     },
     "BaselineNumberGreek_brief": {
-      "expected": "alfa basis to"
+      "expected": "alfa basis 2"
     },
     "BaselineNumberGreek_sbrief": {
-      "expected": "alfa basis to"
+      "expected": "alfa basis 2"
     },
     "BaselineNumberOther_default": {
-      "expected": "normal alef grunnlinje to"
+      "expected": "normal alef grunnlinje 2"
     },
     "BaselineNumberOther_brief": {
-      "expected": "normal alef basis to"
+      "expected": "normal alef basis 2"
     },
     "BaselineNumberOther_sbrief": {
-      "expected": "normal alef basis to"
+      "expected": "normal alef basis 2"
     },
     "BaselineNumberFontGreek_default": {
-      "expected": "alfa grunnlinje bold to"
+      "expected": "alfa grunnlinje bold 2"
     },
     "BaselineNumberFontGreek_brief": {
-      "expected": "alfa basis bold to"
+      "expected": "alfa basis bold 2"
     },
     "BaselineNumberFontGreek_sbrief": {
-      "expected": "alfa basis bold to"
+      "expected": "alfa basis bold 2"
     },
     "BaselineNumberFontOther_default": {
-      "expected": "normal alef grunnlinje bold to"
+      "expected": "normal alef grunnlinje bold 2"
     },
     "BaselineNumberFontOther_brief": {
-      "expected": "normal alef basis bold to"
+      "expected": "normal alef basis bold 2"
     },
     "BaselineNumberFontOther_sbrief": {
-      "expected": "normal alef basis bold to"
+      "expected": "normal alef basis bold 2"
     },
     "OverbarGreek_default": {
       "expected": "alfa overstrek"
@@ -109,31 +109,31 @@
       "expected": "double-struck stor bokstav C"
     },
     "LimitLower0_default": {
-      "expected": "ModifiserUnder grense Med understrek Underskript a er lik fem Sluttskript Underskript b er lik tre Sluttskript"
+      "expected": "ModifiserUnder grense Med understrek Underskript a er lik 5 Sluttskript Underskript b er lik 3 Sluttskript"
     },
     "LimitLower1_default": {
-      "expected": "grense Underskript n Overskript to Sluttskript Overskript x Sluttskript"
+      "expected": "grense Underskript n Overskript 2 Sluttskript Overskript x Sluttskript"
     },
     "BlankLineEmpty0_default": {
       "expected": "StartOppsett 1. rad  a 2. rad  tom StoppOppsett"
     },
     "SubBaseRelseq_default": {
-      "expected": "c ein h Subskript fire minus to s Grunnlinje er mindre enn eller er lik Start Brøk ein Over to stor bokstav T Slutt Brøk er mindre enn eller er lik c to h Subskript fire minus to s"
+      "expected": "c 1 h Subskript 4 minus 2 s Grunnlinje er mindre enn eller er lik Start Brøk 1 Over 2 stor bokstav T Slutt Brøk er mindre enn eller er lik c 2 h Subskript 4 minus 2 s"
     },
     "SubBaseRelseq_brief": {
-      "expected": "c ein h Sub fire minus to s Basis er mindre enn eller er lik Start Brøk ein Over to stor bokstav T Slutt Brøk er mindre enn eller er lik c to h Sub fire minus to s"
+      "expected": "c 1 h Sub 4 minus 2 s Basis er mindre enn eller er lik Start Brøk 1 Over 2 stor bokstav T Slutt Brøk er mindre enn eller er lik c 2 h Sub 4 minus 2 s"
     },
     "SubBaseRelseq_sbrief": {
-      "expected": "c ein h Sub fire minus to s Basis er mindre enn eller er lik Brøk ein Over to stor bokstav T SluttBrøk er mindre enn eller er lik c to h Sub fire minus to s"
+      "expected": "c 1 h Sub 4 minus 2 s Basis er mindre enn eller er lik Brøk 1 Over 2 stor bokstav T SluttBrøk er mindre enn eller er lik c 2 h Sub 4 minus 2 s"
     },
     "SubBaseMultirel_default": {
-      "expected": "c ein h Subskript fire minus to s Grunnlinje er mindre enn eller er lik Start Brøk ein Over to stor bokstav T Slutt Brøk er lik c to h Subskript fire minus to s"
+      "expected": "c 1 h Subskript 4 minus 2 s Grunnlinje er mindre enn eller er lik Start Brøk 1 Over 2 stor bokstav T Slutt Brøk er lik c 2 h Subskript 4 minus 2 s"
     },
     "SubBaseMultirel_brief": {
-      "expected": "c ein h Sub fire minus to s Basis er mindre enn eller er lik Start Brøk ein Over to stor bokstav T Slutt Brøk er lik c to h Sub fire minus to s"
+      "expected": "c 1 h Sub 4 minus 2 s Basis er mindre enn eller er lik Start Brøk 1 Over 2 stor bokstav T Slutt Brøk er lik c 2 h Sub 4 minus 2 s"
     },
     "SubBaseMultirel_sbrief": {
-      "expected": "c ein h Sub fire minus to s Basis er mindre enn eller er lik Brøk ein Over to stor bokstav T SluttBrøk er lik c to h Sub fire minus to s"
+      "expected": "c 1 h Sub 4 minus 2 s Basis er mindre enn eller er lik Brøk 1 Over 2 stor bokstav T SluttBrøk er lik c 2 h Sub 4 minus 2 s"
     }
   }
 }

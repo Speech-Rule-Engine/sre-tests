@@ -9,26 +9,56 @@
   "exclude": [],
   "compare": true,
   "tests": {
-    "Set001": {},
-    "Set002": {},
-    "Set003": {},
+    "Set001": {
+      "expected": "the set of all x in the integers such that 2 er mindre enn x er mindre enn 7"
+    },
+    "Set002": {
+      "expected": "the set of all x such that, the absolute value of x, er større enn 2"
+    },
+    "Set003": {
+      "expected": "the set of all x in the integers such that 2 er mindre enn x er mindre enn 7"
+    },
     "Set004": {
-      "expected": "the set of all x-th in the natural numbers such that x-th is an even number"
+      "expected": "the set of all x in the natural numbers such that x is an even number"
     },
-    "Set005": {},
-    "Set006": {},
-    "Set007": {},
-    "Set008": {},
-    "Set009": {},
-    "Set010": {},
-    "Set011": {},
-    "Set012": {},
-    "Set013": {},
-    "Set014": {},
+    "Set005": {
+      "expected": "the set 1 komma 2 komma 3"
+    },
+    "Set006": {
+      "expected": "the set 1 komma 112 komma 1 komma 253"
+    },
+    "Set007": {
+      "expected": "the set of x in the integers such that 2 er mindre enn x er mindre enn 7"
+    },
+    "Set008": {
+      "expected": "the set of x such that, the absolute value of x, er større enn 2"
+    },
+    "Set009": {
+      "expected": "the set of x in the integers such that 2 er mindre enn x er mindre enn 7"
+    },
+    "Set010": {
+      "expected": "the set 1 komma 2 komma 3"
+    },
+    "Set011": {
+      "expected": "the set 1 komma 112 komma 1 komma 253"
+    },
+    "Set012": {
+      "expected": "the set of all x in the integers such that 2 er mindre enn x er mindre enn 7"
+    },
+    "Set013": {
+      "expected": "the set of all x such that, the absolute value of x, er større enn 2"
+    },
+    "Set014": {
+      "expected": "the set of all x in the integers such that 2 er mindre enn x er mindre enn 7"
+    },
     "Set015": {
-      "expected": "the set of all x-th in the natural numbers such that x-th is an even number"
+      "expected": "the set of all x in the natural numbers such that x is an even number"
     },
-    "Set016": {},
-    "Set017": {}
+    "Set016": {
+      "expected": "1 komma 2 komma 3"
+    },
+    "Set017": {
+      "expected": "1 komma 112 komma 1 komma 253"
+    }
   }
 }

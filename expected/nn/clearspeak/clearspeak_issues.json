@@ -9,43 +9,65 @@
   "exclude": [],
   "compare": true,
   "tests": {
-    "Issue230_1": {},
-    "Issue230_2": {},
-    "IssueNumbers_1": {},
+    "Issue230_1": {
+      "expected": "5 and, 3 over 224"
+    },
+    "Issue230_2": {
+      "expected": "5 and tre fjerde"
+    },
+    "IssueNumbers_1": {
+      "expected": "number t 2 e 4"
+    },
     "IssueNumbers_2": {
-      "expected": "tallteikn FF"
+      "expected": "number tallteikn F F 0 0 0 0"
     },
     "IssueNumbers_3": {
-      "expected": "tallteikn FFFF"
+      "expected": "number tallteikn F F F F"
     },
     "Issue320_1": {
       "expected": "partiellderivert"
     },
     "Issue320_2": {
-      "expected": "x-th factorial"
+      "expected": "x factorial"
     },
     "Issue320_3": {
-      "expected": "negative negative x-th"
+      "expected": "negative negative x"
     },
     "Issue320_4": {
-      "expected": "pluss pluss x-th"
+      "expected": "pluss pluss x"
     },
     "Issue320_5": {
-      "expected": "sinus sinus x-th"
+      "expected": "sinus sinus x"
     },
     "Issue320_6": {
-      "expected": "partiellderivert partiellderivert x-th"
+      "expected": "partiellderivert partiellderivert x"
     },
     "Issue320_7": {
-      "expected": "venstreparentes, fraction with numerator partiellderivert squared, and denominator partiellderivert x-th squared, pluss, fraction with numerator partiellderivert squared, and denominator partiellderivert y-th squared, høgreparentes, ganger, the absolute value of pi-th ganger, venstreparentes, x-th pluss normal I-th, y-th, høgreparentes, squared er lik"
+      "expected": "venstreparentes, the fraction with numerator partiellderivert squared, and denominator partiellderivert x squared, pluss, the fraction with numerator partiellderivert squared, and denominator partiellderivert y squared, høgreparentes, ganger, the absolute value of pi ganger, venstreparentes, x pluss normal I, y, høgreparentes, squared er lik 0"
     },
-    "Issue301_1": {},
-    "Issue301_2": {},
-    "Issue301_3": {},
-    "Issue301_4": {},
-    "Issue_442_0": {},
-    "Issue_442_1": {},
-    "Issue_442_2": {},
-    "Issue_442_3": {}
+    "Issue301_1": {
+      "expected": "4 mm"
+    },
+    "Issue301_2": {
+      "expected": "1 mm"
+    },
+    "Issue301_3": {
+      "expected": "4 mm"
+    },
+    "Issue301_4": {
+      "expected": "1 mm"
+    },
+    "Issue_442_0": {
+      "expected": "9 divided by 3 er ikkje lik 9 gangeteikn 3"
+    },
+    "Issue_442_1": {
+      "expected": "9 divided by 3"
+    },
+    "Issue_442_2": {
+      "expected": "9 divided by 3 er ikkje lik 9 gangeteikn 3"
+    },
+    "Issue_442_3": {
+      "expected": "9 divided by 3"
+    }
   }
 }

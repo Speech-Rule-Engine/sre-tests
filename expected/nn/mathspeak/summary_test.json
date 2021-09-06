@@ -10,7 +10,7 @@
   "compare": true,
   "tests": {
     "AbstrAddition_default": {
-      "expected": "sum med to delsummar"
+      "expected": "sum med 2 delsummar"
     },
     "AbstrAddition_brief": {
       "expected": "sum"
@@ -37,7 +37,7 @@
       "expected": "binomialkoeffisient"
     },
     "AbstrCases_default": {
-      "expected": "case-setning med to casar"
+      "expected": "case-setning med 2 casar"
     },
     "AbstrCases_brief": {
       "expected": "case-setning"
@@ -46,13 +46,13 @@
       "expected": "case-setning"
     },
     "AbstrCell_default": {
-      "expected": "ein Kolonne i tabell"
+      "expected": "1. Kolonne i tabell"
     },
     "AbstrCell_brief": {
-      "expected": "ein Kolonne i tabell"
+      "expected": "1. Kolonne i tabell"
     },
     "AbstrCell_sbrief": {
-      "expected": "ein Kolonne i tabell"
+      "expected": "1. Kolonne i tabell"
     },
     "AbstrContinuedFraction_default": {
       "expected": "kjedebrøk"
@@ -64,7 +64,7 @@
       "expected": "kjedebrøk"
     },
     "AbstrDeterminant_default": {
-      "expected": "to dimensjonal determinant"
+      "expected": "2 dimensjonal determinant"
     },
     "AbstrDeterminant_brief": {
       "expected": "determinant"
@@ -91,16 +91,16 @@
       "expected": "funksjon"
     },
     "AbstrIdentifier_default": {
-      "expected": "lang identifikator"
+      "expected": "identifikator"
     },
     "AbstrIdentifier_brief": {
-      "expected": "lang identifikator"
+      "expected": "identifikator"
     },
     "AbstrIdentifier_sbrief": {
-      "expected": "lang identifikator"
+      "expected": "identifikator"
     },
     "AbstrInfixop_default": {
-      "expected": "divisjon med to element"
+      "expected": "divisjon med 2 element"
     },
     "AbstrInfixop_brief": {
       "expected": "divisjon"
@@ -127,16 +127,16 @@
       "expected": "grenseverdi"
     },
     "AbstrLine_default": {
-      "expected": "ein Rad i flere linjer"
+      "expected": "1. Rad i flere linjer"
     },
     "AbstrLine_brief": {
-      "expected": "ein Rad i flere linjer"
+      "expected": "1. Rad i flere linjer"
     },
     "AbstrLine_sbrief": {
-      "expected": "ein Rad i flere linjer"
+      "expected": "1. Rad i flere linjer"
     },
     "AbstrMatrix_default": {
-      "expected": "tre gangar to matrise"
+      "expected": "3 gangar 2 matrise"
     },
     "AbstrMatrix_brief": {
       "expected": "matrise"
@@ -145,16 +145,16 @@
       "expected": "matrise"
     },
     "AbstrMixedNumber_default": {
-      "expected": "langt blanda nummer"
+      "expected": "blanda nummer"
     },
     "AbstrMixedNumber_brief": {
-      "expected": "langt blanda nummer"
+      "expected": "blanda nummer"
     },
     "AbstrMixedNumber_sbrief": {
-      "expected": "langt blanda nummer"
+      "expected": "blanda nummer"
     },
     "AbstrMultiplication_default": {
-      "expected": "produkt med to faktorar"
+      "expected": "produkt med 2 faktorar"
     },
     "AbstrMultiplication_brief": {
       "expected": "produkt"
@@ -163,7 +163,7 @@
       "expected": "produkt"
     },
     "AbstrMultirel_default": {
-      "expected": "relasjonssekvens med tre element"
+      "expected": "relasjonssekvens med 3 element"
     },
     "AbstrMultirel_brief": {
       "expected": "relasjonssekvens"
@@ -172,16 +172,16 @@
       "expected": "relasjonssekvens"
     },
     "AbstrNumber_default": {
-      "expected": "langt nummer"
+      "expected": "nummer"
     },
     "AbstrNumber_brief": {
-      "expected": "langt nummer"
+      "expected": "nummer"
     },
     "AbstrNumber_sbrief": {
-      "expected": "langt nummer"
+      "expected": "nummer"
     },
     "AbstrPunctuated_default": {
-      "expected": "komma separert liste med lengde tre"
+      "expected": "komma separert liste med lengde 3"
     },
     "AbstrPunctuated_brief": {
       "expected": "komma separatert liste"
@@ -199,7 +199,7 @@
       "expected": "likhet"
     },
     "AbstrRelationSeq_default": {
-      "expected": "likhet sekvens med tre element"
+      "expected": "likhet sekvens med 3 element"
     },
     "AbstrRelationSeq_brief": {
       "expected": "likhet sekvens"
@@ -208,7 +208,7 @@
       "expected": "likhet sekvens"
     },
     "AbstrRoot_default": {
-      "expected": "rot med eksponent tre"
+      "expected": "rot med eksponent 3"
     },
     "AbstrRoot_brief": {
       "expected": "rot"
@@ -217,7 +217,7 @@
       "expected": "rot"
     },
     "AbstrRootNested_default": {
-      "expected": "nøsta rot med eksponent tre"
+      "expected": "nøsta rot med eksponent 3"
     },
     "AbstrRootNested_brief": {
       "expected": "nøsta rot"
@@ -226,16 +226,16 @@
       "expected": "nøsta rot"
     },
     "AbstrRow_default": {
-      "expected": "ein Rad i tabell med to kolonner"
+      "expected": "1. Rad i tabell med 2 kolonner"
     },
     "AbstrRow_brief": {
-      "expected": "ein Rad i tabell med to kolonner"
+      "expected": "1. Rad i tabell med 2 kolonner"
     },
     "AbstrRow_sbrief": {
-      "expected": "ein Rad i tabell med to kolonner"
+      "expected": "1. Rad i tabell med 2 kolonner"
     },
     "AbstrRowvector_default": {
-      "expected": "to dimensjonal radvektor"
+      "expected": "2 dimensjonal radvektor"
     },
     "AbstrRowvector_brief": {
       "expected": "radvektor"
@@ -262,7 +262,7 @@
       "expected": "n-te rot"
     },
     "AbstrSquarematrix_default": {
-      "expected": "to dimensjonal kvadratmatrise"
+      "expected": "2 dimensjonal kvadratmatrise"
     },
     "AbstrSquarematrix_brief": {
       "expected": "kvadratmatrise"
@@ -298,13 +298,13 @@
       "expected": "potens"
     },
     "AbstrTable_default": {
-      "expected": "tabell med to radar og to kolonner"
+      "expected": "tabell med 2 radar og 2 kolonner"
     },
     "AbstrTable_brief": {
-      "expected": "tabell med to radar og to kolonner"
+      "expected": "tabell med 2 radar og 2 kolonner"
     },
     "AbstrTable_sbrief": {
-      "expected": "tabell med to radar og to kolonner"
+      "expected": "tabell med 2 radar og 2 kolonner"
     },
     "AbstrText_default": {
       "expected": "tekst"
@@ -397,7 +397,7 @@
       "expected": "vektor"
     },
     "AbstrVector_default": {
-      "expected": "tre dimensjonal vektor"
+      "expected": "3 dimensjonal vektor"
     },
     "AbstrVector_brief": {
       "expected": "vektor"
@@ -415,7 +415,7 @@
       "expected": "subtraksjon"
     },
     "AbstrCountImplicit_default": {
-      "expected": "produkt med tre faktorar"
+      "expected": "produkt med 3 faktorar"
     },
     "AbstrCountImplicit_brief": {
       "expected": "produkt"

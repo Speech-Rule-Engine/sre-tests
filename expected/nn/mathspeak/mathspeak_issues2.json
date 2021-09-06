@@ -13,13 +13,13 @@
       "expected": "StartRot a SluttRot"
     },
     "MathspeakRoots_1": {
-      "expected": "RotIndeks to StartRot a SluttRot"
+      "expected": "RotIndeks 2 StartRot a SluttRot"
     },
     "MathspeakRoots_2": {
-      "expected": "RotIndeks tre StartRot a SluttRot"
+      "expected": "RotIndeks 3 StartRot a SluttRot"
     },
     "MathspeakRoots_3": {
-      "expected": "RotIndeks fire StartRot a SluttRot"
+      "expected": "RotIndeks 4 StartRot a SluttRot"
     },
     "MathspeakRoots_4": {
       "expected": "NøstaStartRot StartRot a SluttRot NøstaSluttRot"
@@ -28,28 +28,28 @@
       "expected": "NøstaTo gangerStartRot NøstaStartRot StartRot a SluttRot NøstaSluttRot NøstaTo gangerSluttRot"
     },
     "MathspeakRoots_6": {
-      "expected": "NøstaRotIndeks to NøstaStartRot RotIndeks to StartRot a SluttRot NøstaSluttRot"
+      "expected": "NøstaRotIndeks 2 NøstaStartRot RotIndeks 2 StartRot a SluttRot NøstaSluttRot"
     },
     "MathspeakRoots_7": {
-      "expected": "NøstaTo gangerRotIndeks to NøstaTo gangerStartRot NøstaRotIndeks to NøstaStartRot RotIndeks to StartRot a SluttRot NøstaSluttRot NøstaTo gangerSluttRot"
+      "expected": "NøstaTo gangerRotIndeks 2 NøstaTo gangerStartRot NøstaRotIndeks 2 NøstaStartRot RotIndeks 2 StartRot a SluttRot NøstaSluttRot NøstaTo gangerSluttRot"
     },
     "MathspeakRoots_8": {
-      "expected": "NøstaRotIndeks tre NøstaStartRot RotIndeks tre StartRot a SluttRot NøstaSluttRot"
+      "expected": "NøstaRotIndeks 3 NøstaStartRot RotIndeks 3 StartRot a SluttRot NøstaSluttRot"
     },
     "MathspeakRoots_9": {
-      "expected": "NøstaTo gangerRotIndeks tre NøstaTo gangerStartRot NøstaRotIndeks tre NøstaStartRot RotIndeks tre StartRot a SluttRot NøstaSluttRot NøstaTo gangerSluttRot"
+      "expected": "NøstaTo gangerRotIndeks 3 NøstaTo gangerStartRot NøstaRotIndeks 3 NøstaStartRot RotIndeks 3 StartRot a SluttRot NøstaSluttRot NøstaTo gangerSluttRot"
     },
     "MathspeakRoots_10": {
-      "expected": "NøstaRotIndeks fire NøstaStartRot RotIndeks fire StartRot a SluttRot NøstaSluttRot"
+      "expected": "NøstaRotIndeks 4 NøstaStartRot RotIndeks 4 StartRot a SluttRot NøstaSluttRot"
     },
     "MathspeakRoots_11": {
-      "expected": "NøstaTo gangerRotIndeks fire NøstaTo gangerStartRot NøstaRotIndeks fire NøstaStartRot RotIndeks fire StartRot a SluttRot NøstaSluttRot NøstaTo gangerSluttRot"
+      "expected": "NøstaTo gangerRotIndeks 4 NøstaTo gangerStartRot NøstaRotIndeks 4 NøstaStartRot RotIndeks 4 StartRot a SluttRot NøstaSluttRot NøstaTo gangerSluttRot"
     },
     "MathspeakRoots_12": {
-      "expected": "NøstaTo gangerRotIndeks to NøstaTo gangerStartRot NøstaRotIndeks tre NøstaStartRot RotIndeks fire StartRot a SluttRot NøstaSluttRot NøstaTo gangerSluttRot"
+      "expected": "NøstaTo gangerRotIndeks 2 NøstaTo gangerStartRot NøstaRotIndeks 3 NøstaStartRot RotIndeks 4 StartRot a SluttRot NøstaSluttRot NøstaTo gangerSluttRot"
     },
     "MathspeakRoots_13": {
-      "expected": "NøstaTo gangerRotIndeks fire NøstaTo gangerStartRot NøstaRotIndeks tre NøstaStartRot RotIndeks to StartRot a SluttRot NøstaSluttRot NøstaTo gangerSluttRot"
+      "expected": "NøstaTo gangerRotIndeks 4 NøstaTo gangerStartRot NøstaRotIndeks 3 NøstaStartRot RotIndeks 2 StartRot a SluttRot NøstaSluttRot NøstaTo gangerSluttRot"
     },
     "HtmlEntities_0": {
       "expected": "er mindre enn"
@@ -88,17 +88,19 @@
       "expected": "venstreparentes Start Brøk n Over k Slutt Brøk høgreparentes"
     },
     "UnnecessarySpaces_0": {
-      "expected": "fem"
+      "expected": "5"
     },
     "UnnecessarySpaces_1": {
-      "expected": "fem"
+      "expected": "5"
     },
-    "NegativeVulgarFraction_0": {},
+    "NegativeVulgarFraction_0": {
+      "expected": "ein andre minus fem attende"
+    },
     "NegativeVulgarFraction_1": {
-      "expected": "minus Start Brøk fem Over a Slutt Brøk"
+      "expected": "minus Start Brøk 5,2 Over a Slutt Brøk"
     },
     "NegativeVulgarFraction_2": {
-      "expected": "minus Start Brøk fem Over atten Slutt Brøk"
+      "expected": "minus Start Brøk 5,2 Over 18 Slutt Brøk"
     },
     "TrivialStuff_0": {
       "expected": "a er lik b"
@@ -146,16 +148,16 @@
       "expected": "kursiv m I"
     },
     "OtherFonts_4": {
-      "expected": "tretti"
+      "expected": "30"
     },
     "OtherFonts_5": {
-      "expected": "kursiv tre"
+      "expected": "kursiv 3"
     },
     "OtherFonts_6": {
-      "expected": "tretti grader"
+      "expected": "30 grader"
     },
     "OtherFonts_7": {
-      "expected": "tre m stor bokstav A"
+      "expected": "3 0 m stor bokstav A"
     },
     "Multiline_0": {
       "expected": "StartOppsett 1. rad  a 2. rad  b StoppOppsett"
@@ -164,16 +166,16 @@
       "expected": "StartOppsett 1. rad 1. Kolonne a 2. Kolonne c 2. rad 1. Kolonne b 2. Kolonne d StoppOppsett"
     },
     "RelationsWithEmpty_0": {
-      "expected": "er mindre enn eller er lik to"
+      "expected": "er mindre enn eller er lik 2"
     },
     "RelationsWithEmpty_1": {
-      "expected": "er lik to er lik"
+      "expected": "er lik 2 er lik"
     },
     "RelationsWithEmpty_2": {
-      "expected": "er mindre enn eller er lik to er lik"
+      "expected": "er mindre enn eller er lik 2 er lik"
     },
     "RelationsWithEmpty_3": {
-      "expected": "StartOppsett 1. rad 1. Kolonne ein 2. Kolonne er mindre enn eller er lik to StoppOppsett"
+      "expected": "StartOppsett 1. rad 1. Kolonne 1 2. Kolonne er mindre enn eller er lik 2 StoppOppsett"
     },
     "EncloseGeneral": {
       "expected": "StartOmslutting sirkel a StoppOmslutting"
@@ -242,7 +244,7 @@
       "expected": ""
     },
     "Issue279_1": {
-      "expected": "StartOppsett 1. rad  med etikett venstreparentes tre punktum ein punktum ti høgreparentes StoppEtikett StoppOppsett"
+      "expected": "StartOppsett 1. rad  med etikett venstreparentes 3 punktum 1 punktum 10 høgreparentes StoppEtikett StoppOppsett"
     },
     "Issue320_0": {
       "expected": "partiellderivert"
@@ -263,7 +265,7 @@
       "expected": "partiellderivert partiellderivert x"
     },
     "Issue320_6": {
-      "expected": "venstreparentes Start Brøk partiellderivert i andre potens Over partiellderivert x i andre potens Slutt Brøk pluss Start Brøk partiellderivert i andre potens Over partiellderivert y i andre potens Slutt Brøk høgreparentes StartAbsoluttVerdi pi venstreparentes x pluss normal I y høgreparentes StoppAbsoluttVerdi i andre potens er lik"
+      "expected": "venstreparentes Start Brøk partiellderivert i andre potens Over partiellderivert x i andre potens Slutt Brøk pluss Start Brøk partiellderivert i andre potens Over partiellderivert y i andre potens Slutt Brøk høgreparentes StartAbsoluttVerdi pi venstreparentes x pluss normal I y høgreparentes StoppAbsoluttVerdi i andre potens er lik 0"
     },
     "Prime_0": {
       "expected": "x prim"
@@ -323,19 +325,19 @@
       "expected": "x seks prim"
     },
     "LimBoth_0": {
-      "expected": "ModifiserOver ModifiserUnder sum Underskript n Overskript to Sluttskript Med understrek Med tilde"
+      "expected": "ModifiserOver ModifiserUnder sum Underskript n Overskript 2 Sluttskript Med understrek Med tilde"
     },
     "LimBoth_1": {
-      "expected": "ModifiserOver ModifiserUnder sum Underskript n Overskript to Sluttskript Med understrek Med tilde"
+      "expected": "ModifiserOver ModifiserUnder sum Underskript n Overskript 2 Sluttskript Med understrek Med tilde"
     },
     "LimBoth_2": {
-      "expected": "ModifiserOver ModifiserUnder sum Underskript n Overskript to Sluttskript Med understrek Med tilde"
+      "expected": "ModifiserOver ModifiserUnder sum Underskript n Overskript 2 Sluttskript Med understrek Med tilde"
     },
     "LimBoth_3": {
-      "expected": "sum Underskript n Overskript to Sluttskript"
+      "expected": "sum Underskript n Overskript 2 Sluttskript"
     },
     "LimBoth_4": {
-      "expected": "sum Underskript n Overskript to Sluttskript a"
+      "expected": "sum Underskript n Overskript 2 Sluttskript a"
     },
     "LimUpper_0": {
       "expected": "sum Overskript n Sluttskript"
@@ -362,16 +364,16 @@
       "expected": "sum Underskript n Sluttskript a"
     },
     "Issue_442_0": {
-      "expected": "ni delt på tre er ikkje lik ni gangeteikn tre"
+      "expected": "9 delt på 3 er ikkje lik 9 gangeteikn 3"
     },
     "Issue_442_1": {
-      "expected": "ni delt på tre"
+      "expected": "9 delt på 3"
     },
     "Issue_442_2": {
-      "expected": "ni delt på tre er ikkje lik ni gangeteikn tre"
+      "expected": "9 delt på 3 er ikkje lik 9 gangeteikn 3"
     },
     "Issue_442_3": {
-      "expected": "ni delt på tre"
+      "expected": "9 delt på 3"
     }
   }
 }

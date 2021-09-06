@@ -99,7 +99,7 @@
   "compare": true,
   "tests": {
     "CollapsedAddition_default": {
-      "expected": "collapsed sum med to delsummar"
+      "expected": "collapsed sum med 2 delsummar"
     },
     "CollapsedBigop_default": {
       "expected": "collapsed sum"
@@ -108,13 +108,13 @@
       "expected": "collapsed binomialkoeffisient"
     },
     "CollapsedCases_default": {
-      "expected": "collapsed case-setning med to casar"
+      "expected": "collapsed case-setning med 2 casar"
     },
     "CollapsedContinuedFraction_default": {
       "expected": "collapsed kjedebrøk"
     },
     "CollapsedDeterminant_default": {
-      "expected": "collapsed to dimensjonal determinant"
+      "expected": "collapsed 2 dimensjonal determinant"
     },
     "CollapsedFraction_default": {
       "expected": "collapsed brøk"
@@ -126,7 +126,7 @@
       "expected": "collapsed lang identifikator"
     },
     "CollapsedInfixop_default": {
-      "expected": "collapsed divisjon med to element"
+      "expected": "collapsed divisjon med 2 element"
     },
     "CollapsedIntegral_default": {
       "expected": "collapsed integral"
@@ -135,117 +135,127 @@
       "expected": "collapsed grenseverdifunksjon"
     },
     "CollapsedMatrix_default": {
-      "expected": "collapsed tre gangar to matrise"
+      "expected": "collapsed 3 gangar 2 matrise"
     },
     "CollapsedMixedNumber_default": {
       "expected": "collapsed langt blanda nummer"
     },
     "CollapsedMultiplication_default": {
-      "expected": "collapsed produkt med to faktorar"
+      "expected": "collapsed produkt med 2 faktorar"
     },
     "CollapsedMultirel_default": {
-      "expected": "collapsed relasjonssekvens med tre element"
+      "expected": "collapsed relasjonssekvens med 3 element"
     },
     "CollapsedNumber_default": {
       "expected": "collapsed langt nummer"
     },
     "CollapsedPunctuated_default": {
-      "expected": "collapsed komma separert liste med lengde tre"
+      "expected": "collapsed komma separert liste med lengde 3"
     },
     "CollapsedRelation_default": {
       "expected": "collapsed likhet"
     },
     "CollapsedRelationSeq_default": {
-      "expected": "collapsed likhet sekvens med tre element"
+      "expected": "collapsed likhet sekvens med 3 element"
     },
-    "CollapsedRoot_default": {},
-    "CollapsedRootNested_default": {},
+    "CollapsedRoot_default": {
+      "expected": "collapsed rot med eksponent 3"
+    },
+    "CollapsedRootNested_default": {
+      "expected": "collapsed nøsta rot med eksponent 3"
+    },
     "CollapsedRowvector_default": {
-      "expected": "the ein by to row matrix a-th b-th"
+      "expected": "collapsed 2 dimensjonal radvektor"
     },
-    "CollapsedSqrt_default": {},
-    "CollapsedSqrtNested_default": {},
+    "CollapsedSqrt_default": {
+      "expected": "collapsed kvadratrot"
+    },
+    "CollapsedSqrtNested_default": {
+      "expected": "collapsed n-te rot"
+    },
     "CollapsedSquarematrix_default": {
-      "expected": "the to by to matrix Row 1: a-th b-th Row 2: c-th d-th"
+      "expected": "collapsed 2 dimensjonal kvadratmatrise"
     },
     "CollapsedSubscript_default": {
-      "expected": "a-th sub b-th"
+      "expected": "collapsed indeks"
     },
     "CollapsedSubsup_default": {
-      "expected": "a-th sub c-th to the b-th power"
+      "expected": "collapsed potens med indeks"
     },
     "CollapsedSuperscript_default": {
-      "expected": "a-th to the b-th power"
+      "expected": "collapsed potens"
     },
     "CollapsedTable_default": {
-      "expected": "Line 1: a-th b-th Line 2: c-th d-th"
+      "expected": "collapsed tabell med 2 radar og 2 kolonner"
     },
     "CollapsedText_default": {
-      "expected": "a b c"
+      "expected": "collapsed tekst"
     },
     "CollapsedVarAddition_default": {
-      "expected": "a-th pluss prikk prikk prikk pluss b-th"
+      "expected": "collapsed sum med variabelt tal på delsummar"
     },
     "CollapsedVarCases_default": {
-      "expected": "Case 1: a-th Case 2: prikk prikk prikk Case 3: b-th"
+      "expected": "collapsed case-setning med variabelt tal på alternativ"
     },
     "CollapsedVarDeterminant_default": {
-      "expected": "the determinant of the tre by tre matrix Row 1: a-th b-th e-th Row 2: blank prikk prikk prikk blank Row 3: c-th d-th f-th"
+      "expected": "collapsed n-dimensjonal determinant"
     },
     "CollapsedVarMatrix_default": {
-      "expected": "the tre by tre matrix Row 1: a-th b-th e-th Row 2: blank prikk prikk prikk blank Row 3: c-th d-th f-th"
+      "expected": "collapsed n gangar m-dimensjonal matrise"
     },
     "CollapsedVarMultiplication_default": {
-      "expected": "a-th asterisk prikk prikk prikk asterisk b-th"
+      "expected": "collapsed produkt med variabelt tal på faktorar"
     },
     "CollapsedVarMultirel_default": {
-      "expected": "a-th er lik prikk prikk prikk er mindre enn eller er lik b-th"
+      "expected": "collapsed relasjonssekvens med variabelt antall element"
     },
     "CollapsedVarPunctuated_default": {
-      "expected": "a-th komma prikk prikk prikk komma b-th"
+      "expected": "collapsed komma separert liste med variabel lengd"
     },
     "CollapsedVarRelation_default": {
-      "expected": "a-th er lik prikk prikk prikk er lik b-th"
+      "expected": "collapsed likhet sekvens med variabelt tal på element"
     },
     "CollapsedVarVector_default": {
-      "expected": "the fire by ein column matrix Row 1: a-th Row 2: vertikal ellipse Row 3: c-th Row 4: d-th"
+      "expected": "collapsed n-dimensjonal vektor"
     },
     "CollapsedVector_default": {
-      "expected": "the tre by ein column matrix a-th c-th e-th"
+      "expected": "collapsed 3 dimensjonal vektor"
     },
     "CollapsedVarSubtraction_default": {
-      "expected": "a-th minus prikk prikk prikk minus b-th"
+      "expected": "collapsed subtraksjon med variabelt tal på element"
     },
     "CollapsedVarSubtraction_brief": {
-      "expected": "a-th minus prikk prikk prikk minus b-th"
+      "expected": "collapsed subtraksjon med variabelt tal på element"
     },
     "CollapsedVarSubtraction_sbrief": {
-      "expected": "a-th minus prikk prikk prikk minus b-th"
+      "expected": "collapsed subtraksjon med variabelt tal på element"
     },
     "CollapsedCountImplicit_default": {
-      "expected": "a-th b-th c-th"
+      "expected": "collapsed produkt med 3 faktorar"
     },
     "CollapsedCountImplicit_brief": {
-      "expected": "a-th b-th c-th"
+      "expected": "collapsed produkt med 3 faktorar"
     },
     "CollapsedCountImplicit_sbrief": {
-      "expected": "a-th b-th c-th"
+      "expected": "collapsed produkt med 3 faktorar"
     },
     "CollapsedVarImplicit_default": {
-      "expected": "a-th prikk prikk prikk b-th"
+      "expected": "collapsed produkt med variabelt tal på faktorar"
     },
     "CollapsedVarArrowRelation_default": {
-      "expected": "a-th høgrepil prikk prikk prikk venstre-høgrepil b-th"
+      "expected": "collapsed pil sekvens med variabelt tal på element"
     },
     "CollapsedArrowRelation_default": {
-      "expected": "a-th høgrepil c-th venstre-høgrepil b-th"
+      "expected": "collapsed pil"
     },
     "CollapsedVarRowvector_default": {
-      "expected": "the ein by tre row matrix Column 1: a-th Column 2: prikk prikk prikk Column 3: b-th"
+      "expected": "collapsed n-dimensjonal radvektor"
     },
     "CollapsedRootInside_default": {
-      "expected": "the cube root of x-th a-th"
+      "expected": "collapsed rot med eksponent 3 slutteksponent a"
     },
-    "CollapsedRootNestedInside_default": {}
+    "CollapsedRootNestedInside_default": {
+      "expected": "collapsed nøsta rot med eksponent 3 slutteksponent a"
+    }
   }
 }

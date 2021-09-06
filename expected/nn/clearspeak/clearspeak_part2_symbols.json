@@ -9,29 +9,45 @@
   "exclude": [],
   "compare": true,
   "tests": {
-    "X001": {},
+    "X001": {
+      "expected": "6 gangeteikn 8"
+    },
     "X002": {
-      "expected": "m-th gangeteikn n-th"
+      "expected": "m gangeteikn n"
     },
-    "X003": {},
-    "X004": {},
+    "X003": {
+      "expected": "3 gangeteikn 3"
+    },
+    "X004": {
+      "expected": "6 gangeteikn 8"
+    },
     "X005": {
-      "expected": "m-th gangeteikn n-th"
+      "expected": "m gangeteikn n"
     },
-    "X006": {},
+    "X006": {
+      "expected": "3 gangeteikn 3"
+    },
     "X007": {
-      "expected": "u-th gangeteikn v-th"
+      "expected": "u gangeteikn v"
     },
-    "Dot001": {},
+    "Dot001": {
+      "expected": "6 ganger 8"
+    },
     "Dot002": {
-      "expected": "m-th ganger n-th"
+      "expected": "m ganger n"
     },
-    "Dot003": {},
-    "Dot004": {},
+    "Dot003": {
+      "expected": "3 ganger 3"
+    },
+    "Dot004": {
+      "expected": "6 ganger 8"
+    },
     "Dot005": {
-      "expected": "m-th ganger n-th"
+      "expected": "m ganger n"
     },
-    "Dot006": {},
+    "Dot006": {
+      "expected": "3 ganger 3"
+    },
     "Triangle001": {
       "expected": "triangel A B C"
     },
@@ -39,86 +55,160 @@
       "expected": "triangel D E F"
     },
     "Triangle003": {
-      "expected": "triangel x-th"
+      "expected": "triangel x"
     },
     "Triangle004": {
-      "expected": "f-th of, venstreparentes, x-th pluss triangel x-th, høgreparentes"
+      "expected": "f of, venstreparentes, x pluss triangel x, høgreparentes"
     },
-    "Ellipses001": {},
-    "Ellipses002": {},
-    "Ellipses003": {},
-    "Ellipses004": {},
-    "Ellipses005": {},
-    "Ellipses006": {},
-    "VertLine001": {},
+    "Ellipses001": {
+      "expected": "1 komma 2 komma 3 komma prikk prikk prikk"
+    },
+    "Ellipses002": {
+      "expected": "1 komma 2 komma 3 komma prikk prikk prikk komma 20"
+    },
+    "Ellipses003": {
+      "expected": "prikk prikk prikk komma, negative 2, komma, negative 1, komma 0 komma 1 komma 2 komma prikk prikk prikk"
+    },
+    "Ellipses004": {
+      "expected": "1 komma 2 komma 3 komma and so on"
+    },
+    "Ellipses005": {
+      "expected": "1 komma 2 komma 3 komma and so on up to komma 20"
+    },
+    "Ellipses006": {
+      "expected": "prikk prikk prikk komma, negative 2, komma, negative 1, komma 0 komma 1 komma 2 komma prikk prikk prikk"
+    },
+    "VertLine001": {
+      "expected": "3 divides 6"
+    },
     "VertLine002": {
-      "expected": "the set of all x-th such that x-th er større enn"
+      "expected": "the set of all x such that x er større enn 0"
     },
-    "VertLine003": {},
-    "VertLine004": {},
-    "VertLine005": {},
-    "VertLine006": {},
+    "VertLine003": {
+      "expected": "the set of all x such that, the absolute value of x, er større enn 2"
+    },
+    "VertLine004": {
+      "expected": "f of x, evaluated at x er lik 5"
+    },
+    "VertLine005": {
+      "expected": "x squared pluss 2 x, evaluated at x er lik 2"
+    },
+    "VertLine006": {
+      "expected": "x squared pluss x, evaluated at 1, minus the same expression evaluated at 0"
+    },
     "VertLine007": {
-      "expected": "the set of all x-th such that x-th er større enn"
+      "expected": "the set of all x such that x er større enn 0"
     },
-    "VertLine008": {},
+    "VertLine008": {
+      "expected": "3 divides 6"
+    },
     "VertLine009": {
       "expected": "P of, venstreparentes, A given B, høgreparentes"
     },
-    "MembSym001": {},
-    "MembSym002": {},
-    "MembSym003": {},
-    "MembSym004": {},
-    "MembSym005": {},
-    "MembSym006": {},
-    "MembSym007": {},
-    "MembSym008": {},
-    "MembSym009": {},
-    "MembSym010": {},
-    "MembSym011": {},
-    "MembSym012": {},
-    "MembSym013": {},
-    "MembSym014": {},
-    "MembSym015": {},
-    "SetMemb001": {},
-    "SetMemb002": {},
-    "Sum001": {},
-    "Sum002": {},
+    "MembSym001": {
+      "expected": "If x is a member of the integers then 2 x, is an even number punktum"
+    },
+    "MembSym002": {
+      "expected": "the set of all x in the integers such that x er større enn 5"
+    },
+    "MembSym003": {
+      "expected": "3 pluss 2 I, is not a member of the real numbers"
+    },
+    "MembSym004": {
+      "expected": "If x is a member of the integers then 2 x, is an even number punktum"
+    },
+    "MembSym005": {
+      "expected": "the set of all x member of the integers such that x er større enn 5"
+    },
+    "MembSym006": {
+      "expected": "3 pluss 2 I, is not a member of the real numbers"
+    },
+    "MembSym007": {
+      "expected": "If x is an element of the integers then 2 x, is an even number punktum"
+    },
+    "MembSym008": {
+      "expected": "the set of all x element of the integers such that x er større enn 5"
+    },
+    "MembSym009": {
+      "expected": "3 pluss 2 I, is not an element of the real numbers"
+    },
+    "MembSym010": {
+      "expected": "If x belongs to the integers then 2 x, is an even number punktum"
+    },
+    "MembSym011": {
+      "expected": "the set of all x belonging to the integers such that x er større enn 5"
+    },
+    "MembSym012": {
+      "expected": "3 pluss 2 I, does not belong to the real numbers"
+    },
+    "MembSym013": {
+      "expected": "If x belongs to the integers then 2 x, is an even number punktum"
+    },
+    "MembSym014": {
+      "expected": "the set of all x belonging to the integers such that x er større enn 5"
+    },
+    "MembSym015": {
+      "expected": "3 pluss 2 I, does not belong to the real numbers"
+    },
+    "SetMemb001": {
+      "expected": "the set of x belonging to the integers such that 2 er mindre enn x er mindre enn 7"
+    },
+    "SetMemb002": {
+      "expected": "the set of x member of the integers such that x er større enn 5"
+    },
+    "Sum001": {
+      "expected": "the sum from n er lik 1 to 10 of n"
+    },
+    "Sum002": {
+      "expected": "the sum from n er lik 1 to uendeleg of n"
+    },
     "Sum003": {
-      "expected": "sum over I-th is a member of the positive integers, of I-th"
+      "expected": "the sum over I is a member of the positive integers, of I"
     },
     "Sum004": {
-      "expected": "sum over S, of I-th"
+      "expected": "the sum over S, of I"
     },
     "Sum005": {
-      "expected": "sum of a-th sub I-th"
+      "expected": "the sum of, a sub I"
     },
-    "Sum006": {},
-    "Sum007": {},
-    "Sum008": {},
+    "Sum006": {
+      "expected": "the produkt from I er lik 1 to 10 of I"
+    },
+    "Sum007": {
+      "expected": "the produkt over I is a member of the positive integers, of, the fraction with numerator I, and denominator I pluss 1"
+    },
+    "Sum008": {
+      "expected": "the produkt over the positive integers, of, the fraction with numerator I, and denominator I pluss 1"
+    },
     "Sum009": {
-      "expected": "produkt of a-th sub I-th"
+      "expected": "the produkt of, a sub I"
     },
-    "Sum010": {},
-    "Sum011": {},
+    "Sum010": {
+      "expected": "the kryss from I er lik 1 to 10 of, S sub I"
+    },
+    "Sum011": {
+      "expected": "the union from I er lik 1 to 10 of, S sub I"
+    },
     "Sum012": {
-      "expected": "kryss of S sub I-th"
+      "expected": "the kryss of, S sub I"
     },
     "Sum013": {
-      "expected": "union of S sub I-th"
+      "expected": "the union of, S sub I"
     },
     "Sum014": {
-      "expected": "kryss over C, of S sub I-th"
+      "expected": "the kryss over C, of, S sub I"
     },
     "Sum015": {
-      "expected": "union over C, of S sub I-th"
+      "expected": "the union over C, of, S sub I"
     },
     "Sum016": {
-      "expected": "integral of f-th of x-th, d-th x-th"
+      "expected": "the integral of f of x, d x"
     },
-    "Sum017": {},
+    "Sum017": {
+      "expected": "the integral from 0 to 1 of f of x, d x"
+    },
     "Sum018": {
-      "expected": "integral over the real numbers, of f-th of x-th, d-th x-th"
+      "expected": "the integral over the real numbers, of f of x, d x"
     }
   }
 }

@@ -103,7 +103,7 @@
   "compare": true,
   "tests": {
     "AbstrAddition_default": {
-      "expected": "sum med to delsummar"
+      "expected": "sum med 2 delsummar"
     },
     "AbstrBigop_default": {
       "expected": "sum"
@@ -112,16 +112,16 @@
       "expected": "binomialkoeffisient"
     },
     "AbstrCases_default": {
-      "expected": "case-setning med to casar"
+      "expected": "case-setning med 2 casar"
     },
     "AbstrCell_default": {
-      "expected": "ein Kolonne i tabell"
+      "expected": "1. Kolonne i tabell"
     },
     "AbstrContinuedFraction_default": {
       "expected": "kjedebrøk"
     },
     "AbstrDeterminant_default": {
-      "expected": "to dimensjonal determinant"
+      "expected": "2 dimensjonal determinant"
     },
     "AbstrFraction_default": {
       "expected": "brøk"
@@ -130,10 +130,10 @@
       "expected": "funksjonsuttrykk"
     },
     "AbstrIdentifier_default": {
-      "expected": "lang identifikator"
+      "expected": "identifikator"
     },
     "AbstrInfixop_default": {
-      "expected": "divisjon med to element"
+      "expected": "divisjon med 2 element"
     },
     "AbstrIntegral_default": {
       "expected": "integral"
@@ -142,39 +142,43 @@
       "expected": "grenseverdifunksjon"
     },
     "AbstrLine_default": {
-      "expected": "ein Rad i flere linjer"
+      "expected": "1. Rad i flere linjer"
     },
     "AbstrMatrix_default": {
-      "expected": "tre gangar to matrise"
+      "expected": "3 gangar 2 matrise"
     },
     "AbstrMixedNumber_default": {
-      "expected": "langt blanda nummer"
+      "expected": "blanda nummer"
     },
     "AbstrMultiplication_default": {
-      "expected": "produkt med to faktorar"
+      "expected": "produkt med 2 faktorar"
     },
     "AbstrMultirel_default": {
-      "expected": "relasjonssekvens med tre element"
+      "expected": "relasjonssekvens med 3 element"
     },
     "AbstrNumber_default": {
-      "expected": "langt nummer"
+      "expected": "nummer"
     },
     "AbstrPunctuated_default": {
-      "expected": "komma separert liste med lengde tre"
+      "expected": "komma separert liste med lengde 3"
     },
     "AbstrRelation_default": {
       "expected": "likhet"
     },
     "AbstrRelationSeq_default": {
-      "expected": "likhet sekvens med tre element"
+      "expected": "likhet sekvens med 3 element"
     },
-    "AbstrRoot_default": {},
-    "AbstrRootNested_default": {},
+    "AbstrRoot_default": {
+      "expected": "rot med eksponent 3"
+    },
+    "AbstrRootNested_default": {
+      "expected": "nøsta rot med eksponent 3"
+    },
     "AbstrRow_default": {
-      "expected": "ein Rad i tabell med to kolonner"
+      "expected": "1. Rad i tabell med 2 kolonner"
     },
     "AbstrRowvector_default": {
-      "expected": "to dimensjonal radvektor"
+      "expected": "2 dimensjonal radvektor"
     },
     "AbstrSqrt_default": {
       "expected": "kvadratrot"
@@ -183,7 +187,7 @@
       "expected": "n-te rot"
     },
     "AbstrSquarematrix_default": {
-      "expected": "to dimensjonal kvadratmatrise"
+      "expected": "2 dimensjonal kvadratmatrise"
     },
     "AbstrSubscript_default": {
       "expected": "indeks"
@@ -195,7 +199,7 @@
       "expected": "potens"
     },
     "AbstrTable_default": {
-      "expected": "tabell med to radar og to kolonner"
+      "expected": "tabell med 2 radar og 2 kolonner"
     },
     "AbstrText_default": {
       "expected": "tekst"
@@ -228,13 +232,13 @@
       "expected": "n-dimensjonal vektor"
     },
     "AbstrVector_default": {
-      "expected": "tre dimensjonal vektor"
+      "expected": "3 dimensjonal vektor"
     },
     "AbstrVarSubtraction_default": {
       "expected": "subtraksjon med variabelt tal på element"
     },
     "AbstrCountImplicit_default": {
-      "expected": "produkt med tre faktorar"
+      "expected": "produkt med 3 faktorar"
     },
     "AbstrVarImplicit_default": {
       "expected": "produkt med variabelt tal på faktorar"

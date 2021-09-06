@@ -9,114 +9,236 @@
   "exclude": [],
   "compare": true,
   "tests": {
-    "Multiline001": {},
-    "Multiline002": {},
-    "Multiline003": {},
-    "Multiline004": {},
-    "Multiline005": {},
-    "Multiline006": {},
-    "Multiline007": {},
-    "Multiline008": {},
-    "Multiline009": {},
-    "Multiline010": {},
-    "Multiline011": {},
-    "Multiline012": {},
-    "Multiline013": {},
+    "Multiline001": {
+      "expected": "2 lines, Line 1: x pluss y er lik 7. Line 2: 2 x, pluss 3 y, er lik 17"
+    },
+    "Multiline002": {
+      "expected": "2 lines, Line 1: x pluss y; er lik; 7. Line 2: 2 x, pluss 3 y; er lik; 17"
+    },
+    "Multiline003": {
+      "expected": "2 lines, Line 1: x; pluss; y; er lik; 7. Line 2: 2 x; pluss; 3 y; er lik; 17"
+    },
+    "Multiline004": {
+      "expected": "2 lines, Line 1: Equation 1 kolon x pluss y er lik 7. Line 2: Equation 2 kolon 2 x, pluss 3 y, er lik 17"
+    },
+    "Multiline005": {
+      "expected": "2 lines, Line 1: Equation 1 kolon; x pluss y er lik 7. Line 2: Equation 2 kolon; 2 x, pluss 3 y, er lik 17"
+    },
+    "Multiline006": {
+      "expected": "2 lines, Line 1: Equation 1 kolon; x pluss y; er lik; 7. Line 2: Equation 2 kolon; 2 x, pluss 3 y; er lik; 17"
+    },
+    "Multiline007": {
+      "expected": "3 lines, Line 1: 4 x, pluss 3 y, pluss 2 z, er lik 17. Line 2: 2 x, pluss 4 y, pluss 6 z, er lik 6. Line 3: 3 x, pluss 2 y, pluss 5 z, er lik 1"
+    },
+    "Multiline008": {
+      "expected": "3 lines, Line 1: 4 x; pluss; 3 y; pluss; 2 z; er lik; 1. Line 2: 2 x; pluss; 4 y; pluss; 6 z; er lik; 6. Line 3: 3 x; pluss; 2 y; pluss; 5 z; er lik; 1"
+    },
+    "Multiline009": {
+      "expected": "3 lines, Line 1: Equation 1 kolon 4 x, pluss 3 y, pluss 2 z, er lik 17. Line 2: Equation 2 kolon 2 x, pluss 4 y, pluss 6 z, er lik 6. Line 3: Equation 3 kolon 3 x, pluss 2 y, pluss 5 z, er lik 1"
+    },
+    "Multiline010": {
+      "expected": "3 lines, Line 1: x er større enn eller er lik 0. Line 2: y er større enn eller er lik 0. Line 3: 3 x, minus 5 y, er mindre enn eller er lik 30"
+    },
+    "Multiline011": {
+      "expected": "4 lines, Line 1: 3 x, pluss 8 er lik 5 x. Line 2: 8 er lik 5 x, minus 3 x. Line 3: 8 er lik 2 x. Line 4: 4 er lik x"
+    },
+    "Multiline012": {
+      "expected": "4 lines, Line 1: 3 x; pluss; 8; er lik; 5 x; blank; blank. Line 2: blank; blank; 8; er lik; 5 x; minus; 3 x. Line 3: blank; blank; 8; er lik; 2 x; blank; blank. Line 4: blank; blank; 4; er lik; x; blank; blank"
+    },
+    "Multiline013": {
+      "expected": "4 lines, Line 1: Step 1 kolon 3 x, pluss 8 er lik 5 x. Line 2: Step 2 kolon 8 er lik 5 x, minus 3 x. Line 3: Step 3 kolon 8 er lik 2 x. Line 4: Step 4 kolon 4 er lik x"
+    },
     "Multiline014": {
-      "expected": "f-th of x-th, er lik, Case 1: negative x-th if x-th er mindre enn. Case 2: x-th if x-th er større enn eller er lik"
+      "expected": "f of x, er lik, 2 cases, Case 1: negative x if x er mindre enn 0. Case 2: x if x er større enn eller er lik 0"
     },
     "Multiline015": {
-      "expected": "f-th of x-th, er lik, Case 1: negative x-th, if x-th er mindre enn. Case 2: x-th, if x-th er større enn eller er lik"
+      "expected": "f of x, er lik, 2 cases, Case 1: negative x; if x er mindre enn 0. Case 2: x; if x er større enn eller er lik 0"
     },
     "Multiline016": {
-      "expected": "f-th of x-th, er lik, Case 1: negative x-th if x-th er mindre enn. Case 2: x-th if x-th er større enn eller er lik"
+      "expected": "f of x, er lik, 2 cases, Case 1: negative x if x er mindre enn 0. Case 2: x if x er større enn eller er lik 0"
     },
     "Multiline017": {
-      "expected": "f-th of x-th, er lik, Case 1: negative x-th, if x-th er mindre enn. Case 2: x-th, if x-th er større enn eller er lik"
+      "expected": "f of x, er lik, 2 cases, Case 1: negative x; if x er mindre enn 0. Case 2: x; if x er større enn eller er lik 0"
     },
     "Multiline018": {
-      "expected": "Case 1: f-th of x-th, er lik negative x-th; if x-th er mindre enn. Case 2: f-th of x-th, er lik x-th; if x-th er større enn eller er lik"
+      "expected": "2 cases, Case 1: f of x, er lik negative x; if x er mindre enn 0. Case 2: f of x, er lik x; if x er større enn eller er lik 0"
     },
-    "Multiline019": {},
-    "Multiline019a": {},
-    "Multiline020": {},
-    "Multiline021": {},
-    "Multiline022": {},
-    "Multiline023": {},
-    "Multiline024": {},
-    "Multiline025": {},
-    "Multiline026": {},
-    "Multiline026a": {},
-    "Multiline026b": {},
+    "Multiline019": {
+      "expected": "2 equations, Equation 1: x pluss y er lik 7. Equation 2: 2 x, pluss 3 y, er lik 17"
+    },
+    "Multiline019a": {
+      "expected": "2 equations, Equation 1: x pluss y; er lik; 7. Equation 2: 2 x, pluss 3 y; er lik; 17"
+    },
+    "Multiline020": {
+      "expected": "2 lines, Line 1: x pluss y er lik 7. Line 2: 2 x, pluss 3 y, er lik 17"
+    },
+    "Multiline021": {
+      "expected": "2 lines, Line 1: x pluss y; er lik; 7. Line 2: 2 x, pluss 3 y; er lik; 17"
+    },
+    "Multiline022": {
+      "expected": "2 rows, Row 1: x pluss y er lik 7. Row 2: 2 x, pluss 3 y, er lik 17"
+    },
+    "Multiline023": {
+      "expected": "2 rows, Row 1: x pluss y; er lik; 7. Row 2: 2 x, pluss 3 y; er lik; 17"
+    },
+    "Multiline024": {
+      "expected": "4 steps, Step 1: 3 x, pluss 8 er lik 5 x. Step 2: 8 er lik 5 x, minus 3 x. Step 3: 8 er lik 2 x. Step 4: 4 er lik x"
+    },
+    "Multiline025": {
+      "expected": "4 steps, Step 1: 3 x; pluss; 8; er lik; 5 x; blank; blank. Step 2: blank; blank; 8; er lik; 5 x; minus; 3 x. Step 3: blank; blank; 8; er lik; 2 x; blank; blank. Step 4: blank; blank; 4; er lik; x; blank; blank"
+    },
+    "Multiline026": {
+      "expected": "3 constraints, Constraint 1: x er større enn eller er lik 0. Constraint 2: y er større enn eller er lik 0. Constraint 3: 3 x, minus 5 y, er mindre enn eller er lik 30"
+    },
+    "Multiline026a": {
+      "expected": "3 lines, x er større enn eller er lik 0. y er større enn eller er lik 0. 3 x, minus 5 y, er mindre enn eller er lik 30"
+    },
+    "Multiline026b": {
+      "expected": "4 lines, 3 x; pluss; 8; er lik; 5 x; blank; blank. blank; blank; 8; er lik; 5 x; minus; 3 x. blank; blank; 8; er lik; 2 x; blank; blank. blank; blank; 4; er lik; x; blank; blank"
+    },
     "Multiline026c": {
-      "expected": "f-th of x-th, er lik, negative x-th if x-th er mindre enn. x-th if x-th er større enn eller er lik"
+      "expected": "f of x, er lik, 2 cases, negative x if x er mindre enn 0. x if x er større enn eller er lik 0"
     },
-    "Multiline027": {},
-    "Multiline028": {},
-    "Multiline029": {},
-    "Multiline030": {},
-    "Multiline031": {},
-    "Multiline032": {},
-    "Multiline033": {},
+    "Multiline027": {
+      "expected": "2 lines, Line 1: x pluss y er lik 7. Line 2: 2 x, pluss 3 y, er lik 17"
+    },
+    "Multiline028": {
+      "expected": "2 lines, Line 1: x pluss y. er lik. 7. Line 2: 2 x, pluss 3 y. er lik. 17"
+    },
+    "Multiline029": {
+      "expected": "2 lines, Line 1: x. pluss. y. er lik. 7. Line 2: 2 x. pluss. 3 y. er lik. 17"
+    },
+    "Multiline030": {
+      "expected": "2 lines, Line 1: Equation 1 kolon. x pluss y er lik 7. Line 2: Equation 2 kolon. 2 x, pluss 3 y, er lik 17"
+    },
+    "Multiline031": {
+      "expected": "2 lines, Line 1: Equation 1 kolon. x pluss y. er lik. 7. Line 2: Equation 2 kolon. 2 x, pluss 3 y. er lik. 17"
+    },
+    "Multiline032": {
+      "expected": "3 lines, Line 1: 4 x. pluss. 3 y. pluss. 2 z. er lik. 1. Line 2: 2 x. pluss. 4 y. pluss. 6 z. er lik. 6. Line 3: 3 x. pluss. 2 y. pluss. 5 z. er lik. 1"
+    },
+    "Multiline033": {
+      "expected": "4 lines, Line 1: 3 x. pluss. 8. er lik. 5 x. blank. blank. Line 2: blank. blank. 8. er lik. 5 x. minus. 3 x. Line 3: blank. blank. 8. er lik. 2 x. blank. blank. Line 4: blank. blank. 4. er lik. x. blank. blank"
+    },
     "Multiline034": {
-      "expected": "f-th of x-th, er lik, Case 1: negative x-th. if x-th er mindre enn. Case 2: x-th. if x-th er større enn eller er lik"
+      "expected": "f of x, er lik, 2 cases, Case 1: negative x. if x er mindre enn 0. Case 2: x. if x er større enn eller er lik 0"
     },
     "Multiline035": {
-      "expected": "f-th of x-th, er lik, Case 1: negative x-th. if x-th er mindre enn. Case 2: x-th. if x-th er større enn eller er lik"
+      "expected": "f of x, er lik, 2 cases, Case 1: negative x. if x er mindre enn 0. Case 2: x. if x er større enn eller er lik 0"
     },
     "Multiline036": {
-      "expected": "Case 1: f-th of x-th, er lik negative x-th. if x-th er mindre enn. Case 2: f-th of x-th, er lik x-th. if x-th er større enn eller er lik"
+      "expected": "2 cases, Case 1: f of x, er lik negative x. if x er mindre enn 0. Case 2: f of x, er lik x. if x er større enn eller er lik 0"
     },
-    "Multiline037": {},
-    "Multiline038": {},
-    "Multiline039": {},
-    "Multiline040": {},
-    "Multiline041": {},
-    "Multiline042": {},
-    "Multiline043": {},
-    "Multiline044": {},
-    "Multiline045": {},
-    "Multiline046": {},
+    "Multiline037": {
+      "expected": "2 equations, Equation 1: x pluss y. er lik. 7. Equation 2: 2 x, pluss 3 y. er lik. 17"
+    },
+    "Multiline038": {
+      "expected": "2 lines, Line 1: x pluss y. er lik. 7. Line 2: 2 x, pluss 3 y. er lik. 17"
+    },
+    "Multiline039": {
+      "expected": "2 rows, Row 1: x pluss y. er lik. 7. Row 2: 2 x, pluss 3 y. er lik. 17"
+    },
+    "Multiline040": {
+      "expected": "4 steps, Step 1: 3 x. pluss. 8. er lik. 5 x. blank. blank. Step 2: blank. blank. 8. er lik. 5 x. minus. 3 x. Step 3: blank. blank. 8. er lik. 2 x. blank. blank. Step 4: blank. blank. 4. er lik. x. blank. blank"
+    },
+    "Multiline041": {
+      "expected": "2 lines, Line 1: x pluss y, er lik, 7. Line 2: 2 x, pluss 3 y, er lik, 17"
+    },
+    "Multiline042": {
+      "expected": "2 lines, Line 1: x, pluss, y, er lik, 7. Line 2: 2 x, pluss, 3 y, er lik, 17"
+    },
+    "Multiline043": {
+      "expected": "2 lines, Line 1: Equation 1 kolon, x pluss y er lik 7. Line 2: Equation 2 kolon, 2 x, pluss 3 y, er lik 17"
+    },
+    "Multiline044": {
+      "expected": "2 lines, Line 1: Equation 1 kolon, x pluss y, er lik, 7. Line 2: Equation 2 kolon, 2 x, pluss 3 y, er lik, 17"
+    },
+    "Multiline045": {
+      "expected": "3 lines, Line 1: 4 x, pluss, 3 y, pluss, 2 z, er lik, 1. Line 2: 2 x, pluss, 4 y, pluss, 6 z, er lik, 6. Line 3: 3 x, pluss, 2 y, pluss, 5 z, er lik, 1"
+    },
+    "Multiline046": {
+      "expected": "4 lines, Line 1: 3 x, pluss, 8, er lik, 5 x, blank, blank. Line 2: blank, blank, 8, er lik, 5 x, minus, 3 x. Line 3: blank, blank, 8, er lik, 2 x, blank, blank. Line 4: blank, blank, 4, er lik, x, blank, blank"
+    },
     "Multiline047": {
-      "expected": "f-th of x-th, er lik, Case 1: negative x-th, if x-th er mindre enn. Case 2: x-th, if x-th er større enn eller er lik"
+      "expected": "f of x, er lik, 2 cases, Case 1: negative x, if x er mindre enn 0. Case 2: x, if x er større enn eller er lik 0"
     },
     "Multiline048": {
-      "expected": "f-th of x-th, er lik, Case 1: negative x-th, if x-th er mindre enn. Case 2: x-th, if x-th er større enn eller er lik"
+      "expected": "f of x, er lik, 2 cases, Case 1: negative x, if x er mindre enn 0. Case 2: x, if x er større enn eller er lik 0"
     },
     "Multiline049": {
-      "expected": "Case 1: f-th of x-th, er lik negative x-th, if x-th er mindre enn. Case 2: f-th of x-th, er lik x-th, if x-th er større enn eller er lik"
+      "expected": "2 cases, Case 1: f of x, er lik negative x, if x er mindre enn 0. Case 2: f of x, er lik x, if x er større enn eller er lik 0"
     },
-    "Multiline050": {},
-    "Multiline051": {},
-    "Multiline052": {},
-    "Multiline053": {},
-    "Multiline054": {},
-    "Multiline055": {},
-    "Multiline056": {},
-    "Multiline057": {},
-    "Multiline058": {},
-    "Multiline059": {},
-    "Multiline060": {},
-    "Multiline061": {},
-    "Multiline062": {},
-    "Multiline063": {},
+    "Multiline050": {
+      "expected": "2 equations, Equation 1: x pluss y, er lik, 7. Equation 2: 2 x, pluss 3 y, er lik, 17"
+    },
+    "Multiline051": {
+      "expected": "2 lines, Line 1: x pluss y, er lik, 7. Line 2: 2 x, pluss 3 y, er lik, 17"
+    },
+    "Multiline052": {
+      "expected": "2 rows, Row 1: x pluss y, er lik, 7. Row 2: 2 x, pluss 3 y, er lik, 17"
+    },
+    "Multiline053": {
+      "expected": "4 steps, Step 1: 3 x, pluss, 8, er lik, 5 x, blank, blank. Step 2: blank, blank, 8, er lik, 5 x, minus, 3 x. Step 3: blank, blank, 8, er lik, 2 x, blank, blank. Step 4: blank, blank, 4, er lik, x, blank, blank"
+    },
+    "Multiline054": {
+      "expected": "Line 1: x pluss y er lik 7. Line 2: 2 x, pluss 3 y, er lik 17"
+    },
+    "Multiline055": {
+      "expected": "Line 1: x pluss y; er lik; 7. Line 2: 2 x, pluss 3 y; er lik; 17"
+    },
+    "Multiline056": {
+      "expected": "Line 1: x; pluss; y; er lik; 7. Line 2: 2 x; pluss; 3 y; er lik; 17"
+    },
+    "Multiline057": {
+      "expected": "Line 1: Equation 1 kolon x pluss y er lik 7. Line 2: Equation 2 kolon 2 x, pluss 3 y, er lik 17"
+    },
+    "Multiline058": {
+      "expected": "Line 1: Equation 1 kolon; x pluss y er lik 7. Line 2: Equation 2 kolon; 2 x, pluss 3 y, er lik 17"
+    },
+    "Multiline059": {
+      "expected": "Line 1: Equation 1 kolon; x pluss y; er lik; 7. Line 2: Equation 2 kolon; 2 x, pluss 3 y; er lik; 17"
+    },
+    "Multiline060": {
+      "expected": "Line 1: 4 x, pluss 3 y, pluss 2 z, er lik 17. Line 2: 2 x, pluss 4 y, pluss 6 z, er lik 6. Line 3: 3 x, pluss 2 y, pluss 5 z, er lik 1"
+    },
+    "Multiline061": {
+      "expected": "Line 1: 4 x; pluss; 3 y; pluss; 2 z; er lik; 1. Line 2: 2 x; pluss; 4 y; pluss; 6 z; er lik; 6. Line 3: 3 x; pluss; 2 y; pluss; 5 z; er lik; 1"
+    },
+    "Multiline062": {
+      "expected": "Line 1: Equation 1 kolon 4 x, pluss 3 y, pluss 2 z, er lik 17. Line 2: Equation 2 kolon 2 x, pluss 4 y, pluss 6 z, er lik 6. Line 3: Equation 3 kolon 3 x, pluss 2 y, pluss 5 z, er lik 1"
+    },
+    "Multiline063": {
+      "expected": "Line 1: Step 1 kolon 3 x, pluss 8 er lik 5 x. Line 2: Step 2 kolon 8 er lik 5 x, minus 3 x. Line 3: Step 3 kolon 8 er lik 2 x. Line 4: Step 4 kolon 4 er lik x"
+    },
     "Multiline064": {
-      "expected": "f-th of x-th, er lik, Case 1: negative x-th if x-th er mindre enn. Case 2: x-th if x-th er større enn eller er lik"
+      "expected": "f of x, er lik, Case 1: negative x if x er mindre enn 0. Case 2: x if x er større enn eller er lik 0"
     },
     "Multiline065": {
-      "expected": "f-th of x-th, er lik, Case 1: negative x-th, if x-th er mindre enn. Case 2: x-th, if x-th er større enn eller er lik"
+      "expected": "f of x, er lik, Case 1: negative x; if x er mindre enn 0. Case 2: x; if x er større enn eller er lik 0"
     },
     "Multiline066": {
-      "expected": "f-th of x-th, er lik, Case 1: negative x-th if x-th er mindre enn. Case 2: x-th if x-th er større enn eller er lik"
+      "expected": "f of x, er lik, Case 1: negative x if x er mindre enn 0. Case 2: x if x er større enn eller er lik 0"
     },
     "Multiline067": {
-      "expected": "Case 1: f-th of x-th, er lik negative x-th; if x-th er mindre enn. Case 2: f-th of x-th, er lik x-th; if x-th er større enn eller er lik"
+      "expected": "Case 1: f of x, er lik negative x; if x er mindre enn 0. Case 2: f of x, er lik x; if x er større enn eller er lik 0"
     },
-    "Multiline068": {},
-    "Multiline069": {},
-    "Multiline070": {},
-    "Multiline071": {},
-    "Multiline072": {},
-    "Multiline073": {}
+    "Multiline068": {
+      "expected": "Equation 1: x pluss y er lik 7. Equation 2: 2 x, pluss 3 y, er lik 17"
+    },
+    "Multiline069": {
+      "expected": "Line 1: x pluss y er lik 7. Line 2: 2 x, pluss 3 y, er lik 17"
+    },
+    "Multiline070": {
+      "expected": "Row 1: x pluss y er lik 7. Row 2: 2 x, pluss 3 y, er lik 17"
+    },
+    "Multiline071": {
+      "expected": "Step 1: 3 x, pluss 8 er lik 5 x. Step 2: 8 er lik 5 x, minus 3 x. Step 3: 8 er lik 2 x. Step 4: 4 er lik x"
+    },
+    "Multiline072": {
+      "expected": "Step 1: 3 x; pluss; 8; er lik; 5 x; blank; blank. Step 2: blank; blank; 8; er lik; 5 x; minus; 3 x. Step 3: blank; blank; 8; er lik; 2 x; blank; blank. Step 4: blank; blank; 4; er lik; x; blank; blank"
+    },
+    "Multiline073": {
+      "expected": "Constraint 1: x er større enn eller er lik 0. Constraint 2: y er større enn eller er lik 0. Constraint 3: 3 x, minus 5 y, er mindre enn eller er lik 30"
+    }
   }
 }

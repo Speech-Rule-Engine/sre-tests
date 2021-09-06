@@ -9,225 +9,413 @@
   "exclude": [],
   "compare": true,
   "tests": {
-    "Frac001": {},
+    "Frac001": {
+      "expected": "ein andre"
+    },
     "Frac002": {
-      "expected": "tolv over toogtretti"
+      "expected": "12 over 32"
     },
     "Frac002a": {
-      "expected": "x-th over y-th"
+      "expected": "x over y"
     },
-    "Frac002b": {},
+    "Frac002b": {
+      "expected": "2 x over 3 y"
+    },
     "Frac002c": {
-      "expected": "x-th y-th over c-th d-th"
+      "expected": "x y over c d"
     },
-    "Frac002d": {},
+    "Frac002d": {
+      "expected": "ein andre over ein tredje"
+    },
     "Frac002e": {
-      "expected": "negative x-th over y-th"
+      "expected": "negative x over y"
     },
-    "Frac002f": {},
+    "Frac002f": {
+      "expected": "negative 2 x over 3 y"
+    },
     "Frac002g": {
-      "expected": "x-th y-th over negative c-th d-th"
+      "expected": "x y over negative c d"
     },
-    "Frac002h": {},
-    "Frac003": {},
-    "Frac004": {},
+    "Frac002h": {
+      "expected": "ein andre over negative ein tredje"
+    },
+    "Frac003": {
+      "expected": "the fraction with numerator 2 pluss 3, and denominator 13"
+    },
+    "Frac004": {
+      "expected": "the fraction with numerator x pluss y, and denominator 2"
+    },
     "Frac005": {
-      "expected": "fraction with numerator x-th pluss y-th, and denominator x-th minus y-th"
+      "expected": "the fraction with numerator x pluss y, and denominator x minus y"
     },
-    "Frac006": {},
+    "Frac006": {
+      "expected": "the fraction with numerator x pluss y, and denominator x minus y, pluss to tredje"
+    },
     "Frac007": {
       "expected": "miles over gallon"
     },
-    "Frac008": {},
-    "Frac009": {},
+    "Frac008": {
+      "expected": "2 miles over 3 gallons"
+    },
+    "Frac009": {
+      "expected": "1 over 2"
+    },
     "Frac010": {
-      "expected": "tolv over toogtretti"
+      "expected": "12 over 32"
     },
-    "Frac011": {},
-    "Frac012": {},
+    "Frac011": {
+      "expected": "2 pluss 3 over 13"
+    },
+    "Frac012": {
+      "expected": "x pluss y over 2"
+    },
     "Frac013": {
-      "expected": "x-th pluss y-th over x-th minus y-th"
+      "expected": "x pluss y over x minus y"
     },
-    "Frac014": {},
+    "Frac014": {
+      "expected": "x pluss y over x minus y, pluss, 2 over 3"
+    },
     "Frac015": {
       "expected": "miles over gallon"
     },
-    "Frac016": {},
-    "Frac017": {},
+    "Frac016": {
+      "expected": "2 miles over 3 gallons"
+    },
+    "Frac017": {
+      "expected": "1 over 2, end fraction"
+    },
     "Frac018": {
-      "expected": "tolv over toogtretti, end fraction"
+      "expected": "12 over 32, end fraction"
     },
-    "Frac019": {},
-    "Frac020": {},
+    "Frac019": {
+      "expected": "2 pluss 3 over 13, end fraction"
+    },
+    "Frac020": {
+      "expected": "x pluss y over 2, end fraction"
+    },
     "Frac021": {
-      "expected": "x-th pluss y-th over x-th minus y-th, end fraction"
+      "expected": "x pluss y over x minus y, end fraction"
     },
-    "Frac022": {},
+    "Frac022": {
+      "expected": "x pluss y over x minus y, end fraction, pluss, 2 over 3, end fraction"
+    },
     "Frac023": {
       "expected": "miles over gallons, end fraction"
     },
-    "Frac024": {},
-    "Frac025": {},
+    "Frac024": {
+      "expected": "2 miles over 3 gallons, end fraction"
+    },
+    "Frac025": {
+      "expected": "the fraction with numerator 1, and denominator 2, end fraction"
+    },
     "Frac026": {
-      "expected": "the fraction with numerator tolv, and denominator toogtretti, end fraction"
+      "expected": "the fraction with numerator 12, and denominator 32, end fraction"
     },
-    "Frac027": {},
-    "Frac028": {},
+    "Frac027": {
+      "expected": "the fraction with numerator 2 pluss 3, and denominator 13, end fraction"
+    },
+    "Frac028": {
+      "expected": "the fraction with numerator x pluss y, and denominator 2, end fraction"
+    },
     "Frac029": {
-      "expected": "the fraction with numerator x-th pluss y-th, and denominator x-th minus y-th, end fraction"
+      "expected": "the fraction with numerator x pluss y, and denominator x minus y, end fraction"
     },
-    "Frac030": {},
+    "Frac030": {
+      "expected": "the fraction with numerator x pluss y, and denominator x minus y, end fraction, pluss, the fraction with numerator 2, and denominator 3, end fraction"
+    },
     "Frac031": {
       "expected": "the fraction with numerator miles, and denominator gallon, end fraction"
     },
-    "Frac032": {},
+    "Frac032": {
+      "expected": "the fraction with numerator 1, and denominator 2"
+    },
     "Frac033": {
-      "expected": "the fraction with numerator tolv, and denominator toogtretti"
+      "expected": "the fraction with numerator 12, and denominator 32"
     },
-    "Frac034": {},
-    "Frac035": {},
+    "Frac034": {
+      "expected": "the fraction with numerator 2 pluss 3, and denominator 13"
+    },
+    "Frac035": {
+      "expected": "the fraction with numerator x pluss y, and denominator 2"
+    },
     "Frac036": {
-      "expected": "the fraction with numerator x-th pluss y-th, and denominator x-th minus y-th"
+      "expected": "the fraction with numerator x pluss y, and denominator x minus y"
     },
-    "Frac037": {},
+    "Frac037": {
+      "expected": "the fraction with numerator x pluss y, and denominator x minus y, pluss, the fraction with numerator 2, and denominator 3"
+    },
     "Frac038": {
       "expected": "the fraction with numerator miles, and denominator gallon"
     },
-    "Frac039": {},
-    "Frac040": {},
+    "Frac039": {
+      "expected": "the fraction with numerator 2 miles, and denominator 3 gallons"
+    },
+    "Frac040": {
+      "expected": "the fraction 1 over 2"
+    },
     "Frac041": {
-      "expected": "the fraction tolv over toogtretti"
+      "expected": "the fraction 12 over 32"
     },
-    "Frac042": {},
-    "Frac043": {},
+    "Frac042": {
+      "expected": "the fraction 2 pluss 3 over 13"
+    },
+    "Frac043": {
+      "expected": "the fraction x pluss y over 2"
+    },
     "Frac044": {
-      "expected": "the fraction x-th pluss y-th over x-th minus y-th"
+      "expected": "the fraction x pluss y over x minus y"
     },
-    "Frac045": {},
+    "Frac045": {
+      "expected": "the fraction x pluss y over x minus y, pluss, the fraction 2 over 3"
+    },
     "Frac046": {
       "expected": "the fraction miles over gallon"
     },
-    "Frac047": {},
-    "Frac048": {},
+    "Frac047": {
+      "expected": "the fraction 2 miles over 3 gallons"
+    },
+    "Frac048": {
+      "expected": "1 per 2"
+    },
     "Frac049": {
-      "expected": "tolv per toogtretti"
+      "expected": "12 per 32"
     },
-    "Frac050": {},
-    "Frac051": {},
+    "Frac050": {
+      "expected": "2 pluss 3 per 13"
+    },
+    "Frac051": {
+      "expected": "x pluss y per 2"
+    },
     "Frac052": {
-      "expected": "x-th pluss y-th per x-th minus y-th"
+      "expected": "x pluss y per x minus y"
     },
-    "Frac053": {},
+    "Frac053": {
+      "expected": "x pluss y per x minus y, pluss, 2 per 3"
+    },
     "Frac054": {
       "expected": "miles per gallon"
     },
-    "Frac055": {},
-    "Frac056": {},
-    "Frac057": {},
-    "Frac058": {},
-    "Frac059": {},
-    "Frac060": {
-      "expected": "fraction with numerator x-th pluss y-th, and denominator x-th minus y-th"
+    "Frac055": {
+      "expected": "2 miles per 3 gallons"
     },
-    "Frac061": {},
+    "Frac056": {
+      "expected": "ein andre"
+    },
+    "Frac057": {
+      "expected": "tolv toogtrettiende"
+    },
+    "Frac058": {
+      "expected": "the fraction with numerator 2 pluss 3, and denominator 13"
+    },
+    "Frac059": {
+      "expected": "the fraction with numerator x pluss y, and denominator 2"
+    },
+    "Frac060": {
+      "expected": "the fraction with numerator x pluss y, and denominator x minus y"
+    },
+    "Frac061": {
+      "expected": "the fraction with numerator x pluss y, and denominator x minus y, pluss to tredje"
+    },
     "Frac062": {
       "expected": "miles over gallon"
     },
-    "Frac063": {},
-    "Frac064": {},
+    "Frac063": {
+      "expected": "2 miles over 3 gallons"
+    },
+    "Frac064": {
+      "expected": "ein andre"
+    },
     "Frac065": {
-      "expected": "tolv over toogtretti, end fraction"
+      "expected": "12 over 32, end fraction"
     },
-    "Frac066": {},
-    "Frac067": {},
+    "Frac066": {
+      "expected": "the fraction with numerator 2 pluss 3, and denominator 13, end fraction"
+    },
+    "Frac067": {
+      "expected": "the fraction with numerator x pluss y, and denominator 2, end fraction"
+    },
     "Frac068": {
-      "expected": "fraction with numerator x-th pluss y-th, and denominator x-th minus y-th"
+      "expected": "the fraction with numerator x pluss y, and denominator x minus y, end fraction"
     },
-    "Frac069": {},
+    "Frac069": {
+      "expected": "the fraction with numerator x pluss y, and denominator x minus y, end fraction, pluss to tredje"
+    },
     "Frac070": {
       "expected": "miles over gallons"
     },
-    "Frac071": {},
-    "FrTxt001": {},
+    "Frac071": {
+      "expected": "2 miles over 3 gallons"
+    },
+    "FrTxt001": {
+      "expected": "2 miles over 3 gallons"
+    },
     "FrTxt002": {
       "expected": "rise over run"
     },
     "FrTxt003": {
       "expected": "successful outcomes over total outcomes"
     },
-    "FrTxt004": {},
-    "NestFrac001": {},
-    "NestFrac002": {},
-    "NestFrac003": {},
-    "NestFrac004": {},
+    "FrTxt004": {
+      "expected": "6 ways of rolling a 7 over 36 ways of rolling the pair of dice"
+    },
+    "NestFrac001": {
+      "expected": "ein andre over ein tredje"
+    },
+    "NestFrac002": {
+      "expected": "the fraction with numerator 1, and denominator, 2 over ein tredje"
+    },
+    "NestFrac003": {
+      "expected": "ein andre over 3"
+    },
+    "NestFrac004": {
+      "expected": "1 over to tredje"
+    },
     "NestFrac005": {
-      "expected": "fraction with numerator, elleve over toogtretti, and denominator, seksten over einogfemti"
+      "expected": "the fraction with numerator, 11 over 32, and denominator, 16 over 51"
     },
     "NestFrac006": {
-      "expected": "fraction with numerator elleve, and denominator, fraction with numerator toogtretti, and denominator, seksten over einogfemti"
+      "expected": "the fraction with numerator 11, and denominator, the fraction with numerator 32, and denominator, 16 over 51"
     },
-    "NestFrac007": {},
-    "NestFrac008": {},
-    "NestFrac009": {},
-    "NestFrac010": {},
-    "NestFrac011": {},
-    "NestFrac012": {},
-    "NestFrac013": {},
-    "NestFrac014": {},
-    "NestFrac015": {},
-    "NestFrac016": {},
-    "NestFrac017": {},
-    "NestFrac018": {},
-    "NestFrac019": {},
-    "NestFrac020": {},
-    "NestFrac021": {},
-    "NestFrac022": {},
+    "NestFrac007": {
+      "expected": "the fraction with numerator 1 pluss, 4 over x, and denominator 2"
+    },
+    "NestFrac008": {
+      "expected": "the fraction with numerator 3, and denominator 2 pluss, 4 over x"
+    },
+    "NestFrac009": {
+      "expected": "the fraction with numerator, 10 over 22, and denominator ein andre"
+    },
+    "NestFrac010": {
+      "expected": "the fraction with numerator 1 pluss to tredje, and denominator 1 minus to tredje"
+    },
+    "NestFrac011": {
+      "expected": "the fraction with numerator 1 pluss, x over 2, and denominator 1 minus, x over 2"
+    },
+    "NestFrac012": {
+      "expected": "the fraction with numerator, the fraction with numerator x pluss 1, and denominator x minus 1, pluss 1, and denominator x pluss 1"
+    },
+    "NestFrac013": {
+      "expected": "the fraction with numerator, the fraction with numerator x pluss 1, and denominator x minus 4, pluss ein andre, and denominator x pluss, 1 over 16"
+    },
+    "NestFrac014": {
+      "expected": "1 pluss, the fraction with numerator x, and denominator 1 pluss, 2 over x"
+    },
+    "NestFrac015": {
+      "expected": "1 pluss, the fraction with numerator x pluss 3, and denominator 1 pluss, the fraction with numerator 2, and denominator x pluss 3"
+    },
+    "NestFrac016": {
+      "expected": "1 pluss, the fraction with numerator 1, and denominator 1 pluss, the fraction with numerator 1, and denominator 1 pluss, the fraction with numerator 1, and denominator 1 pluss 1"
+    },
+    "NestFrac017": {
+      "expected": "1 pluss, the fraction with numerator 1, and denominator 1 pluss, the fraction with numerator 1, and denominator 1 pluss, the fraction with numerator 1, and denominator 1 pluss prikk prikk prikk"
+    },
+    "NestFrac018": {
+      "expected": "a sub 0, pluss, the fraction with numerator 1, and denominator, a sub 1, pluss, the fraction with numerator 1, and denominator, a sub 2, pluss, the fraction with numerator 1, and denominator, a sub 3, pluss prikk prikk prikk"
+    },
+    "NestFrac019": {
+      "expected": "ein andre over ein tredje"
+    },
+    "NestFrac020": {
+      "expected": "the fraction with numerator 1, and denominator, 2 over ein tredje, end fraction"
+    },
+    "NestFrac021": {
+      "expected": "ein andre over 3, end fraction"
+    },
+    "NestFrac022": {
+      "expected": "1 over to tredje, end fraction"
+    },
     "NestFrac023": {
-      "expected": "fraction with numerator, elleve over toogtretti, and denominator, seksten over einogfemti"
+      "expected": "the fraction with numerator, 11 over 32, and denominator, 16 over 51, end fraction"
     },
     "NestFrac024": {
-      "expected": "fraction with numerator elleve, and denominator, fraction with numerator toogtretti, and denominator, seksten over einogfemti"
+      "expected": "the fraction with numerator 11, and denominator, the fraction with numerator 32, and denominator, 16 over 51, end fraction"
     },
-    "NestFrac025": {},
-    "NestFrac026": {},
-    "NestFrac027": {},
-    "NestFrac028": {},
-    "NestFrac029": {},
-    "NestFrac030": {},
-    "NestFrac031": {},
-    "NestFrac032": {},
-    "NestFrac033": {},
-    "NestFrac034": {},
-    "NestFrac035": {},
-    "NestFrac036": {},
+    "NestFrac025": {
+      "expected": "the fraction with numerator 1 pluss, 4 over x, and denominator 2, end fraction"
+    },
+    "NestFrac026": {
+      "expected": "the fraction with numerator 3, and denominator 2 pluss, 4 over x, end fraction"
+    },
+    "NestFrac027": {
+      "expected": "the fraction with numerator, 10 over 22, and denominator ein andre, end fraction"
+    },
+    "NestFrac028": {
+      "expected": "the fraction with numerator 1 pluss to tredje, and denominator 1 minus to tredje, end fraction"
+    },
+    "NestFrac029": {
+      "expected": "the fraction with numerator 1 pluss, x over 2, and denominator 1 minus, x over 2, end fraction"
+    },
+    "NestFrac030": {
+      "expected": "the fraction with numerator, the fraction with numerator x pluss 1, and denominator x minus 1, pluss 1, and denominator x pluss 1, end fraction"
+    },
+    "NestFrac031": {
+      "expected": "the fraction with numerator, the fraction with numerator x pluss 1, and denominator x minus 4, pluss ein andre, and denominator x pluss, 1 over 16, end fraction"
+    },
+    "NestFrac032": {
+      "expected": "1 pluss, the fraction with numerator x, and denominator 1 pluss, 2 over x, end fraction"
+    },
+    "NestFrac033": {
+      "expected": "1 pluss, the fraction with numerator x pluss 3, and denominator 1 pluss, the fraction with numerator 2, and denominator x pluss 3, end fraction"
+    },
+    "NestFrac034": {
+      "expected": "1 pluss, the fraction with numerator 1, and denominator 1 pluss, the fraction with numerator 1, and denominator 1 pluss, the fraction with numerator 1, and denominator 1 pluss 1, end fraction"
+    },
+    "NestFrac035": {
+      "expected": "1 pluss, the fraction with numerator 1, and denominator 1 pluss, the fraction with numerator 1, and denominator 1 pluss, the fraction with numerator 1, and denominator 1 pluss prikk prikk prikk, end fraction"
+    },
+    "NestFrac036": {
+      "expected": "a sub 0, pluss, the fraction with numerator 1, and denominator, a sub 1, pluss, the fraction with numerator 1, and denominator, a sub 2, pluss, the fraction with numerator 1, and denominator, a sub 3, pluss prikk prikk prikk, end fraction"
+    },
     "Fracfunct001": {
-      "expected": "f-th of x-th, over g-th of x-th"
+      "expected": "f of x, over g of x"
     },
     "Fracfunct002": {
-      "expected": "fraction with numerator f-th of x-th, pluss g-th of x-th, and denominator g-th of x-th"
+      "expected": "the fraction with numerator f of x, pluss g of x, and denominator g of x"
     },
-    "Fracfunct003": {},
-    "Fracfunct004": {},
-    "Fracfunct005": {},
-    "Fracfunct006": {},
+    "Fracfunct003": {
+      "expected": "the fraction with numerator f of, venstreparentes, x pluss 1, høgreparentes, and denominator g of x"
+    },
+    "Fracfunct004": {
+      "expected": "f of x, over 2"
+    },
+    "Fracfunct005": {
+      "expected": "2 over f of x"
+    },
+    "Fracfunct006": {
+      "expected": "the fraction with numerator 2, and denominator g of x, pluss g of, venstreparentes, x pluss 1, høgreparentes"
+    },
     "Fracfunct007": {
-      "expected": "sinus x-th over cosinus x-th"
+      "expected": "sinus x over cosinus x"
     },
     "Fracfunct009": {
-      "expected": "fraction with numerator sinus x-th pluss cosinus x-th, and denominator cosinus x-th"
+      "expected": "the fraction with numerator sinus x pluss cosinus x, and denominator cosinus x"
     },
-    "Fracfunct010": {},
+    "Fracfunct010": {
+      "expected": "sinus 2 x over cosinus 3 x"
+    },
     "Fracfunct011": {
-      "expected": "fraction with numerator, sinus of, venstreparentes, x-th pluss y-th, høgreparentes, and denominator, cosinus of, venstreparentes, x-th pluss y-th, høgreparentes"
+      "expected": "the fraction with numerator, the sinus of, venstreparentes, x pluss y, høgreparentes, and denominator, the cosinus of, venstreparentes, x pluss y, høgreparentes"
     },
-    "Fracfunct012": {},
+    "Fracfunct012": {
+      "expected": "f of 2 x, over g of 3 x"
+    },
     "Fracfunct013": {
-      "expected": "log x-th over log y-th"
+      "expected": "log x over log y"
     },
-    "Fracfunct014": {},
-    "Fracfunct015": {},
-    "Fracfunct016": {},
-    "Fracfunct017": {},
-    "Fracfunct018": {}
+    "Fracfunct014": {
+      "expected": "log 2 x over log 3 y"
+    },
+    "Fracfunct015": {
+      "expected": "the log base 10 of, x, over, the log base 5 of, y"
+    },
+    "Fracfunct016": {
+      "expected": "the log base 10 of, 2 x, over, the log base 5 of, 3 y"
+    },
+    "Fracfunct017": {
+      "expected": "the fraction with numerator, the log of, venstreparentes, x pluss 1, høgreparentes, and denominator log y"
+    },
+    "Fracfunct018": {
+      "expected": "f sub 1, of x, over, g sub 1, of x"
+    }
   }
 }

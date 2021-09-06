@@ -9,214 +9,458 @@
   "exclude": [],
   "compare": true,
   "tests": {
-    "ImpTimes001": {},
-    "ImpTimes002": {},
-    "ImpTimes003": {},
-    "ImpTimes004": {},
-    "ImpTimes005": {},
-    "ImpTimes006": {},
-    "ImpTimes007": {},
-    "ImpTimes008": {},
-    "ImpTimes009": {},
-    "ImpTimes011": {
-      "expected": "x-th ganger, venstreparentes, y-th pluss z-th, høgreparentes"
+    "ImpTimes001": {
+      "expected": "2 ganger 3"
     },
-    "ImpTimes012": {},
-    "ImpTimes013": {},
-    "ImpTimes014": {},
-    "ImpTimes015": {},
-    "ImpTimes016": {},
-    "ImpTimes017": {},
+    "ImpTimes002": {
+      "expected": "2 ganger 3"
+    },
+    "ImpTimes003": {
+      "expected": "2 to the fjerde power, ganger 3"
+    },
+    "ImpTimes004": {
+      "expected": "2 ganger, venstreparentes, 3 pluss 4, høgreparentes"
+    },
+    "ImpTimes005": {
+      "expected": "2 ganger, venstre hakeparentes, 3 pluss 4, høgre hakeparentes"
+    },
+    "ImpTimes006": {
+      "expected": "3 ganger 2"
+    },
+    "ImpTimes007": {
+      "expected": "2 ganger, venstreparentes, 3 pluss 4, høgreparentes, squared"
+    },
+    "ImpTimes008": {
+      "expected": "venstreparentes, 2 pluss 7, høgreparentes, ganger, venstreparentes, 3 minus 6, høgreparentes"
+    },
+    "ImpTimes009": {
+      "expected": "venstre hakeparentes, 2 pluss 7, høgre hakeparentes, ganger, venstre hakeparentes, 3 minus 6, høgre hakeparentes"
+    },
+    "ImpTimes011": {
+      "expected": "x ganger, venstreparentes, y pluss z, høgreparentes"
+    },
+    "ImpTimes012": {
+      "expected": "2 ganger, venstreparentes, y pluss 1, høgreparentes"
+    },
+    "ImpTimes013": {
+      "expected": "venstreparentes, 2 minus 1, høgreparentes, ganger x"
+    },
+    "ImpTimes014": {
+      "expected": "p sub 1, ganger, venstreparentes, 3 pluss 7, høgreparentes"
+    },
+    "ImpTimes015": {
+      "expected": "p sub 1, raised to the, a sub 1, power, p sub 2, raised to the, a sub 2, power"
+    },
+    "ImpTimes016": {
+      "expected": "venstreparentes, x pluss y, høgreparentes, to the negative 4 power, ganger, venstreparentes, x minus y, høgreparentes, to the negative 4 power"
+    },
+    "ImpTimes017": {
+      "expected": "2 raised to the 4 ganger, venstreparentes, x pluss y, høgreparentes, power"
+    },
     "ImpTimes018": {
-      "expected": "x-th y-th"
+      "expected": "x y"
     },
     "ImpTimes019": {
-      "expected": "x-th squared, y-th cubed"
+      "expected": "x squared, y cubed"
     },
-    "ImpTimes020": {},
+    "ImpTimes020": {
+      "expected": "x raised to the y pluss 1 power, x raised to the y pluss 2 power"
+    },
     "ImpTimes021": {
-      "expected": "the square root of a-th, the square root of b-th, er lik the square root of a-th b-th"
+      "expected": "the square root of a, the square root of b, er lik the square root of a b"
     },
-    "ImpTimes022": {},
-    "ImpTimes023": {},
-    "ImpTimes024": {},
-    "ImpTimes025": {},
-    "ImpTimes026": {},
+    "ImpTimes022": {
+      "expected": "the square root of 3, the square root of 10, er lik the square root of 30"
+    },
+    "ImpTimes023": {
+      "expected": "2 the square root of 3"
+    },
+    "ImpTimes024": {
+      "expected": "1 pluss 2 the square root of 3"
+    },
+    "ImpTimes025": {
+      "expected": "f of x, er lik x squared ganger, venstreparentes, x pluss 1, høgreparentes"
+    },
+    "ImpTimes026": {
+      "expected": "f times x, er lik x squared ganger, venstreparentes, x pluss 1, høgreparentes"
+    },
     "ImpTimes027": {
-      "expected": "sinus x-th cosinus y-th, pluss, cosinus x-th sinus y-th"
+      "expected": "sinus x cosinus y, pluss, cosinus x sinus y"
     },
     "ImpTimes027a": {
-      "expected": "sinus of, venstreparentes, x-th pluss y-th, høgreparentes, cosinus of, venstreparentes, x-th pluss y-th, høgreparentes"
+      "expected": "the sinus of, venstreparentes, x pluss y, høgreparentes, the cosinus of, venstreparentes, x pluss y, høgreparentes"
     },
-    "ImpTimes028": {},
+    "ImpTimes028": {
+      "expected": "the log base 10 of, x y"
+    },
     "ImpTimes029": {
-      "expected": "log of, venstreparentes, x-th pluss y-th, høgreparentes, er lik, log x-th log y-th"
+      "expected": "the log of, venstreparentes, x pluss y, høgreparentes, er lik, log x log y"
     },
-    "ImpTimes030": {},
-    "ImpTimes031": {},
-    "ImpTimes032": {},
-    "ImpTimes033": {},
-    "ImpTimes034": {},
-    "ImpTimes035": {},
+    "ImpTimes030": {
+      "expected": "the 2 by 2 matrix. Row 1: 1, 3 Row 2: 5, 2. ganger the 2 by 2 matrix. Row 1: 7, 4 Row 2: 0, 1"
+    },
+    "ImpTimes031": {
+      "expected": "2 ganger, venstreparentes, 3 ganger, venstreparentes, venstreparentes, 4 pluss 5, høgreparentes, pluss 6, høgreparentes, høgreparentes"
+    },
+    "ImpTimes032": {
+      "expected": "2 ganger, venstreparentes, 3 ganger, andre venstreparentes, tredje venstreparentes, 4 pluss 5, tredje høgreparentes, pluss 6, andre høgreparentes, høgreparentes"
+    },
+    "ImpTimes033": {
+      "expected": "2 ganger, venstre hakeparentes, 3 ganger, venstreparentes, venstreparentes, 4 pluss 5, høgreparentes, pluss 6, høgreparentes, høgre hakeparentes"
+    },
+    "ImpTimes034": {
+      "expected": "2 ganger, venstre hakeparentes, 3 ganger, venstreparentes, andre venstreparentes, 4 pluss 5, andre høgreparentes, pluss 6, høgreparentes, høgre hakeparentes"
+    },
+    "ImpTimes035": {
+      "expected": "2 ganger, the absolute value of x"
+    },
     "ImpTimes036": {
-      "expected": "the absolute value of x-th, ganger, the absolute value of y-th"
+      "expected": "the absolute value of x, ganger, the absolute value of y"
     },
-    "ImpTimes037": {},
-    "ImpTimes037a": {},
-    "ImpTimes038": {},
-    "ImpTimes0381": {},
-    "ImpTimes039": {},
-    "ImpTimes040": {},
-    "ImpTimes041": {},
-    "ImpTimes042": {},
-    "ImpTimes043": {},
-    "ImpTimes044": {},
-    "ImpTimes045": {},
-    "ImpTimes046": {},
-    "ImpTimes047": {},
+    "ImpTimes037": {
+      "expected": "the absolute value of x pluss 1, ganger, the absolute value of y minus 1"
+    },
+    "ImpTimes037a": {
+      "expected": "the absolute value of x pluss 1, end absolute value, ganger, the absolute value of y minus 1, end absolute value"
+    },
+    "ImpTimes038": {
+      "expected": "the absolute value of x pluss 1, ganger, the absolute value of y, minus 1"
+    },
+    "ImpTimes0381": {
+      "expected": "the absolute value of x pluss 1, end absolute value, ganger, the absolute value of y, end absolute value, minus 1"
+    },
+    "ImpTimes039": {
+      "expected": "2 ganger 3"
+    },
+    "ImpTimes040": {
+      "expected": "2 ganger 3"
+    },
+    "ImpTimes041": {
+      "expected": "2 to the fjerde power, ganger 3"
+    },
+    "ImpTimes042": {
+      "expected": "2 ganger, venstreparentes, 3 pluss 4, høgreparentes"
+    },
+    "ImpTimes043": {
+      "expected": "2 ganger, venstre hakeparentes, 3 pluss 4, høgre hakeparentes"
+    },
+    "ImpTimes044": {
+      "expected": "3 ganger 2"
+    },
+    "ImpTimes045": {
+      "expected": "2 ganger, venstreparentes, 3 pluss 4, høgreparentes, squared"
+    },
+    "ImpTimes046": {
+      "expected": "venstreparentes, 2 pluss 7, høgreparentes, ganger, venstreparentes, 3 minus 6, høgreparentes"
+    },
+    "ImpTimes047": {
+      "expected": "venstre hakeparentes, 2 pluss 7, høgre hakeparentes, ganger, venstre hakeparentes, 3 minus 6, høgre hakeparentes"
+    },
     "ImpTimes049": {
-      "expected": "x-th ganger, venstreparentes, y-th pluss z-th, høgreparentes"
+      "expected": "x ganger, venstreparentes, y pluss z, høgreparentes"
     },
-    "ImpTimes050": {},
-    "ImpTimes051": {},
-    "ImpTimes052": {},
-    "ImpTimes053": {},
-    "ImpTimes054": {},
-    "ImpTimes055": {},
+    "ImpTimes050": {
+      "expected": "2 ganger, venstreparentes, y pluss 1, høgreparentes"
+    },
+    "ImpTimes051": {
+      "expected": "venstreparentes, 2 minus 1, høgreparentes, ganger x"
+    },
+    "ImpTimes052": {
+      "expected": "p sub 1, ganger, venstreparentes, 3 pluss 7, høgreparentes"
+    },
+    "ImpTimes053": {
+      "expected": "p sub 1, raised to the, a sub 1, power, ganger, p sub 2, raised to the, a sub 2, power"
+    },
+    "ImpTimes054": {
+      "expected": "venstreparentes, x pluss y, høgreparentes, to the negative 4 power, ganger, venstreparentes, x minus y, høgreparentes, to the negative 4 power"
+    },
+    "ImpTimes055": {
+      "expected": "2 raised to the 4 ganger, venstreparentes, x pluss y, høgreparentes, power"
+    },
     "ImpTimes056": {
-      "expected": "x-th ganger y-th"
+      "expected": "x ganger y"
     },
     "ImpTimes057": {
-      "expected": "x-th squared ganger y-th cubed"
+      "expected": "x squared ganger y cubed"
     },
-    "ImpTimes058": {},
+    "ImpTimes058": {
+      "expected": "x raised to the y pluss 1 power, ganger x raised to the y pluss 2 power"
+    },
     "ImpTimes059": {
-      "expected": "the square root of a-th, ganger the square root of b-th, er lik the square root of a-th ganger b-th"
+      "expected": "the square root of a, ganger the square root of b, er lik the square root of a ganger b"
     },
-    "ImpTimes060": {},
-    "ImpTimes061": {},
-    "ImpTimes062": {},
-    "ImpTimes063": {},
-    "ImpTimes064": {},
+    "ImpTimes060": {
+      "expected": "the square root of 3, ganger the square root of 10, er lik the square root of 30"
+    },
+    "ImpTimes061": {
+      "expected": "2 ganger the square root of 3"
+    },
+    "ImpTimes062": {
+      "expected": "1 pluss 2 ganger the square root of 3"
+    },
+    "ImpTimes063": {
+      "expected": "f of x, er lik x squared ganger, venstreparentes, x pluss 1, høgreparentes"
+    },
+    "ImpTimes064": {
+      "expected": "f times x, er lik x squared ganger, venstreparentes, x pluss 1, høgreparentes"
+    },
     "ImpTimes065": {
-      "expected": "sinus x-th, ganger cosinus y-th pluss cosinus x-th, ganger sinus y-th"
+      "expected": "sinus x, ganger cosinus y pluss cosinus x, ganger sinus y"
     },
     "ImpTimes065a": {
-      "expected": "sinus of, venstreparentes, x-th pluss y-th, høgreparentes, ganger, cosinus of, venstreparentes, x-th pluss y-th, høgreparentes"
+      "expected": "the sinus of, venstreparentes, x pluss y, høgreparentes, ganger, the cosinus of, venstreparentes, x pluss y, høgreparentes"
     },
-    "ImpTimes066": {},
+    "ImpTimes066": {
+      "expected": "the log base 10 of, x ganger y"
+    },
     "ImpTimes067": {
-      "expected": "log of, venstreparentes, x-th pluss y-th, høgreparentes, er lik log x-th, ganger log y-th"
+      "expected": "the log of, venstreparentes, x pluss y, høgreparentes, er lik log x, ganger log y"
     },
-    "ImpTimes068": {},
-    "ImpTimes069": {},
-    "ImpTimes070": {},
-    "ImpTimes070a": {},
-    "ImpTimes071": {},
-    "ImpTimes072": {},
+    "ImpTimes068": {
+      "expected": "the 2 by 2 matrix. Row 1: 1, 3 Row 2: 5, 2. ganger the 2 by 2 matrix. Row 1: 7, 4 Row 2: 0, 1"
+    },
+    "ImpTimes069": {
+      "expected": "2 ganger, venstreparentes, 3 ganger, venstreparentes, venstreparentes, 4 pluss 5, høgreparentes, pluss 6, høgreparentes, høgreparentes"
+    },
+    "ImpTimes070": {
+      "expected": "2 ganger, venstreparentes, 3 ganger, andre venstreparentes, tredje venstreparentes, 4 pluss 5, tredje høgreparentes, pluss 6, andre høgreparentes, høgreparentes"
+    },
+    "ImpTimes070a": {
+      "expected": "2 ganger, venstre hakeparentes, 3 ganger, venstreparentes, venstreparentes, 4 pluss 5, høgreparentes, pluss 6, høgreparentes, høgre hakeparentes"
+    },
+    "ImpTimes071": {
+      "expected": "2 ganger, venstre hakeparentes, 3 ganger, venstreparentes, andre venstreparentes, 4 pluss 5, andre høgreparentes, pluss 6, høgreparentes, høgre hakeparentes"
+    },
+    "ImpTimes072": {
+      "expected": "2 ganger, the absolute value of x"
+    },
     "ImpTimes073": {
-      "expected": "the absolute value of x-th, ganger, the absolute value of y-th"
+      "expected": "the absolute value of x, ganger, the absolute value of y"
     },
-    "ImpTimes074": {},
-    "ImpTimes074a": {},
-    "ImpTimes075": {},
-    "ImpTimes076": {},
-    "ImpTimes077": {},
-    "ImpTimes078": {},
-    "ImpTimes079": {},
-    "ImpTimes080": {},
-    "ImpTimes081": {},
-    "ImpTimes082": {},
-    "ImpTimes083": {},
-    "ImpTimes084": {},
-    "ImpTimes085": {},
+    "ImpTimes074": {
+      "expected": "the absolute value of x pluss 1, ganger, the absolute value of y minus 1"
+    },
+    "ImpTimes074a": {
+      "expected": "the absolute value of x pluss 1, end absolute value, ganger, the absolute value of y minus 1, end absolute value"
+    },
+    "ImpTimes075": {
+      "expected": "the absolute value of x pluss 1, ganger, the absolute value of y, minus 1"
+    },
+    "ImpTimes076": {
+      "expected": "the absolute value of x pluss 1, end absolute value, ganger, the absolute value of y, end absolute value, minus 1"
+    },
+    "ImpTimes077": {
+      "expected": "2, venstreparentes, 3, høgreparentes"
+    },
+    "ImpTimes078": {
+      "expected": "2, venstre hakeparentes, 3, høgre hakeparentes"
+    },
+    "ImpTimes079": {
+      "expected": "2 to the fjerde power, venstreparentes, 3, høgreparentes"
+    },
+    "ImpTimes080": {
+      "expected": "2, venstreparentes, 3 pluss 4, høgreparentes"
+    },
+    "ImpTimes081": {
+      "expected": "2, venstre hakeparentes, 3 pluss 4, høgre hakeparentes"
+    },
+    "ImpTimes082": {
+      "expected": "venstreparentes, 3, høgreparentes, venstreparentes, 2, høgreparentes"
+    },
+    "ImpTimes083": {
+      "expected": "2, venstreparentes, 3 pluss 4, høgreparentes, squared"
+    },
+    "ImpTimes084": {
+      "expected": "venstreparentes, 2 pluss 7, høgreparentes, venstreparentes, 3 minus 6, høgreparentes"
+    },
+    "ImpTimes085": {
+      "expected": "venstre hakeparentes, 2 pluss 7, høgre hakeparentes, venstre hakeparentes, 3 minus 6, høgre hakeparentes"
+    },
     "ImpTimes087": {
-      "expected": "x-th, venstreparentes, y-th pluss z-th, høgreparentes"
+      "expected": "x, venstreparentes, y pluss z, høgreparentes"
     },
-    "ImpTimes088": {},
-    "ImpTimes089": {},
-    "ImpTimes090": {},
-    "ImpTimes091": {},
-    "ImpTimes092": {},
-    "ImpTimes093": {},
+    "ImpTimes088": {
+      "expected": "2, venstreparentes, y pluss 1, høgreparentes"
+    },
+    "ImpTimes089": {
+      "expected": "venstreparentes, 2 minus 1, høgreparentes, x"
+    },
+    "ImpTimes090": {
+      "expected": "p sub 1, venstreparentes, 3 pluss 7, høgreparentes"
+    },
+    "ImpTimes091": {
+      "expected": "p sub 1, raised to the, a sub 1, power, p sub 2, raised to the, a sub 2, power"
+    },
+    "ImpTimes092": {
+      "expected": "venstreparentes, x pluss y, høgreparentes, to the negative 4 power, venstreparentes, x minus y, høgreparentes, to the negative 4 power"
+    },
+    "ImpTimes093": {
+      "expected": "2 raised to the 4, venstreparentes, x pluss y, høgreparentes, power"
+    },
     "ImpTimes094": {
-      "expected": "x-th y-th"
+      "expected": "x y"
     },
     "ImpTimes095": {
-      "expected": "x-th squared y-th cubed"
+      "expected": "x squared y cubed"
     },
-    "ImpTimes096": {},
+    "ImpTimes096": {
+      "expected": "x raised to the y pluss 1 power, x raised to the y pluss 2 power"
+    },
     "ImpTimes097": {
-      "expected": "the square root of a-th, the square root of b-th, er lik the square root of a-th b-th"
+      "expected": "the square root of a, the square root of b, er lik the square root of a b"
     },
-    "ImpTimes098": {},
-    "ImpTimes099": {},
-    "ImpTimes100": {},
-    "ImpTimes101": {},
+    "ImpTimes098": {
+      "expected": "the square root of 3, the square root of 10, er lik the square root of 30"
+    },
+    "ImpTimes099": {
+      "expected": "2 the square root of 3"
+    },
+    "ImpTimes100": {
+      "expected": "1 pluss 2 the square root of 3"
+    },
+    "ImpTimes101": {
+      "expected": "f of x, er lik x squared, venstreparentes, x pluss 1, høgreparentes"
+    },
     "ImpTimes103": {
-      "expected": "sinus x-th cosinus y-th, pluss, cosinus x-th sinus y-th"
+      "expected": "sinus x cosinus y, pluss, cosinus x sinus y"
     },
-    "ImpTimes104": {},
+    "ImpTimes104": {
+      "expected": "the log base 10 of, x y"
+    },
     "ImpTimes105": {
-      "expected": "log of, venstreparentes, x-th pluss y-th, høgreparentes, er lik, log x-th log y-th"
+      "expected": "the log of, venstreparentes, x pluss y, høgreparentes, er lik, log x log y"
     },
-    "ImpTimes106": {},
-    "ImpTimes107": {},
-    "ImpTimes108": {},
-    "ImpTimes109": {},
-    "ImpTimes110": {},
-    "ImpTimes111": {},
+    "ImpTimes106": {
+      "expected": "the 2 by 2 matrix. Row 1: 1, 3 Row 2: 5, 2. the 2 by 2 matrix. Row 1: 7, 4 Row 2: 0, 1"
+    },
+    "ImpTimes107": {
+      "expected": "2, venstreparentes, 3, venstreparentes, venstreparentes, 4 pluss 5, høgreparentes, pluss 6, høgreparentes, høgreparentes"
+    },
+    "ImpTimes108": {
+      "expected": "2, venstreparentes, 3, andre venstreparentes, tredje venstreparentes, 4 pluss 5, tredje høgreparentes, pluss 6, andre høgreparentes, høgreparentes"
+    },
+    "ImpTimes109": {
+      "expected": "2, venstre hakeparentes, 3, venstreparentes, venstreparentes, 4 pluss 5, høgreparentes, pluss 6, høgreparentes, høgre hakeparentes"
+    },
+    "ImpTimes110": {
+      "expected": "2, venstre hakeparentes, 3, venstreparentes, andre venstreparentes, 4 pluss 5, andre høgreparentes, pluss 6, høgreparentes, høgre hakeparentes"
+    },
+    "ImpTimes111": {
+      "expected": "2, the absolute value of x"
+    },
     "ImpTimes112": {
-      "expected": "the absolute value of x-th, the absolute value of y-th"
+      "expected": "the absolute value of x, the absolute value of y"
     },
-    "ImpTimes113": {},
-    "ImpTimes114": {},
-    "ImpTimesSilPar001": {},
-    "ImpTimesSilPar002": {},
-    "ImpTimesSilPar003": {},
-    "ImpTimesSilPar004": {},
-    "ImpTimesSilPar005": {},
-    "ImpTimesSilPar006": {},
-    "ImpTimesSilPar007": {},
-    "ImpTimesSilPar008": {},
-    "ImpTimesSilPar009": {},
+    "ImpTimes113": {
+      "expected": "the absolute value of x pluss 1, the absolute value of y minus 1"
+    },
+    "ImpTimes114": {
+      "expected": "the absolute value of x pluss 1, the absolute value of y, minus 1"
+    },
+    "ImpTimesSilPar001": {
+      "expected": "2, venstreparentes, 3, høgreparentes"
+    },
+    "ImpTimesSilPar002": {
+      "expected": "2, venstre hakeparentes, 3, høgre hakeparentes"
+    },
+    "ImpTimesSilPar003": {
+      "expected": "2 to the fjerde power, venstreparentes, 3, høgreparentes"
+    },
+    "ImpTimesSilPar004": {
+      "expected": "2, venstreparentes, 3 pluss 4, høgreparentes"
+    },
+    "ImpTimesSilPar005": {
+      "expected": "2, venstre hakeparentes, 3 pluss 4, høgre hakeparentes"
+    },
+    "ImpTimesSilPar006": {
+      "expected": "venstreparentes, 3, høgreparentes, venstreparentes, 2, høgreparentes"
+    },
+    "ImpTimesSilPar007": {
+      "expected": "2, venstreparentes, 3 pluss 4, høgreparentes, squared"
+    },
+    "ImpTimesSilPar008": {
+      "expected": "venstreparentes, 2 pluss 7, høgreparentes, venstreparentes, 3 minus 6, høgreparentes"
+    },
+    "ImpTimesSilPar009": {
+      "expected": "venstre hakeparentes, 2 pluss 7, høgre hakeparentes, venstre hakeparentes, 3 minus 6, høgre hakeparentes"
+    },
     "ImpTimesSilPar011": {
-      "expected": "x-th, venstreparentes, y-th pluss z-th, høgreparentes"
+      "expected": "x, venstreparentes, y pluss z, høgreparentes"
     },
-    "ImpTimesSilPar012": {},
-    "ImpTimesSilPar013": {},
-    "ImpTimesSilPar014": {},
-    "ImpTimesSilPar015": {},
-    "ImpTimesSilPar016": {},
-    "ImpTimesSilPar017": {},
+    "ImpTimesSilPar012": {
+      "expected": "2, venstreparentes, y pluss 1, høgreparentes"
+    },
+    "ImpTimesSilPar013": {
+      "expected": "venstreparentes, 2 minus 1, høgreparentes, x"
+    },
+    "ImpTimesSilPar014": {
+      "expected": "p sub 1, venstreparentes, 3 pluss 7, høgreparentes"
+    },
+    "ImpTimesSilPar015": {
+      "expected": "venstreparentes, x pluss y, høgreparentes, to the negative 4 power, venstreparentes, x minus y, høgreparentes, to the negative 4 power"
+    },
+    "ImpTimesSilPar016": {
+      "expected": "2 raised to the 4, venstreparentes, x pluss y, høgreparentes, power"
+    },
+    "ImpTimesSilPar017": {
+      "expected": "f of x, er lik x squared, venstreparentes, x pluss 1, høgreparentes"
+    },
     "ImpTimesSilPar019": {
-      "expected": "log of, venstreparentes, x-th pluss y-th, høgreparentes, er lik, log x-th log y-th"
+      "expected": "the log of, venstreparentes, x pluss y, høgreparentes, er lik, log x log y"
     },
-    "ImpTimesSilPar020": {},
-    "ImpTimesSilPar021": {},
-    "ImpTimesSilPar022": {},
-    "ImpTimesSilPar023": {},
-    "ImpTimesSilPar024": {},
-    "Extra001": {},
-    "Extra002": {},
+    "ImpTimesSilPar020": {
+      "expected": "the 2 by 2 matrix. Row 1: 1, 3 Row 2: 5, 2. the 2 by 2 matrix. Row 1: 7, 4 Row 2: 0, 1"
+    },
+    "ImpTimesSilPar021": {
+      "expected": "2, venstreparentes, 3, venstreparentes, venstreparentes, 4 pluss 5, høgreparentes, pluss 6, høgreparentes, høgreparentes"
+    },
+    "ImpTimesSilPar022": {
+      "expected": "2, venstreparentes, 3, andre venstreparentes, tredje venstreparentes, 4 pluss 5, tredje høgreparentes, pluss 6, andre høgreparentes, høgreparentes"
+    },
+    "ImpTimesSilPar023": {
+      "expected": "2, venstre hakeparentes, 3, venstreparentes, venstreparentes, 4 pluss 5, høgreparentes, pluss 6, høgreparentes, høgre hakeparentes"
+    },
+    "ImpTimesSilPar024": {
+      "expected": "2, venstre hakeparentes, 3, venstreparentes, andre venstreparentes, 4 pluss 5, andre høgreparentes, pluss 6, høgreparentes, høgre hakeparentes"
+    },
+    "Extra001": {
+      "expected": "A er lik h of, venstreparentes, the fraction with numerator, b sub 1, pluss, b sub 2, and denominator 2, høgreparentes"
+    },
+    "Extra002": {
+      "expected": "A er lik, h times, venstreparentes, the fraction with numerator, b sub 1, pluss, b sub 2, and denominator 2, høgreparentes"
+    },
     "Extra003": {
-      "expected": "a-th of, er lik ganger a-th er lik"
+      "expected": "a of 0, er lik 0 ganger a er lik 0"
     },
     "Extra004": {
-      "expected": "a-th times, er lik ganger a-th er lik"
+      "expected": "a times 0, er lik 0 ganger a er lik 0"
     },
-    "Extra005": {},
-    "Extra006": {},
-    "Extra010": {},
-    "Extra012": {},
+    "Extra005": {
+      "expected": "a times negative 1, er lik negative a"
+    },
+    "Extra006": {
+      "expected": "a of negative 1, er lik negative a"
+    },
+    "Extra010": {
+      "expected": "B of, venstreparentes, 2 komma 6, høgreparentes"
+    },
+    "Extra012": {
+      "expected": "B times, venstreparentes, 2 komma 6, høgreparentes"
+    },
     "Extra014": {
-      "expected": "p-th of w-th"
+      "expected": "p of w"
     },
-    "Extra015": {},
-    "Extra016": {},
+    "Extra015": {
+      "expected": "x of t, er lik 2 t, pluss 4"
+    },
+    "Extra016": {
+      "expected": "k of x, er lik, venstreparentes, x pluss 3, høgreparentes, ganger, venstreparentes, x minus 5, høgreparentes"
+    },
     "Extra018": {
-      "expected": "T of t-th, er lik T sub s-th pluss, venstreparentes, T sub minus T sub s-th, høgreparentes, ganger e-th raised to the negative k-th t-th power"
+      "expected": "T of t, er lik, T sub s, pluss, venstreparentes, T sub 0, minus, T sub s, høgreparentes, ganger e raised to the negative k t, power"
     },
-    "Extra019": {}
+    "Extra019": {
+      "expected": "V er lik script l, w of 8"
+    }
   }
 }

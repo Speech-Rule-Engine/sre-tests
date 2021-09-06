@@ -10,7 +10,7 @@
   "compare": true,
   "tests": {
     "AriaLabels_0": {
-      "expected": "AC-th line"
+      "expected": "AC line"
     },
     "AriaLabels_1": {
       "expected": "derivative of x is equal to sigma ganger left parenthesis y minus x right parenthesis"
@@ -19,13 +19,13 @@
       "expected": "A C under line"
     },
     "AltText_1": {
-      "expected": "AC-th line"
+      "expected": "AC line"
     },
     "ExactSpeech_0": {
       "expected": "A C under line"
     },
     "ExactSpeech_1": {
-      "expected": "AC-th line"
+      "expected": "AC line"
     },
     "MglyphTokens_0": {
       "expected": "my glyph"
@@ -58,8 +58,10 @@
       "expected": "your glyph"
     },
     "MglyphGeneral_0": {
-      "expected": "treogtjue pluss etthundreogtoogtretti er lik tretten"
+      "expected": "23braid pluss 132braid er lik 13braid"
     },
-    "MglyphGeneral_1": {}
+    "MglyphGeneral_1": {
+      "expected": "N M sub 1 subsett av mfin"
+    }
   }
 }

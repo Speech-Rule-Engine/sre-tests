@@ -80,265 +80,487 @@
   "compare": true,
   "tests": {
     "Function001": {
-      "expected": "f-th of x-th"
+      "expected": "f of x"
     },
     "Function002": {
-      "expected": "g-th of x-th"
+      "expected": "g of x"
     },
     "Function003": {
-      "expected": "h-th of x-th"
+      "expected": "h of x"
     },
-    "Function004": {},
-    "Function005": {},
-    "Function006": {},
-    "Function007": {},
-    "Function008": {},
-    "Function009": {},
+    "Function004": {
+      "expected": "f of 2 x"
+    },
+    "Function005": {
+      "expected": "g of negative 2 x"
+    },
+    "Function006": {
+      "expected": "h of ein andre"
+    },
+    "Function007": {
+      "expected": "h of, venstreparentes, 1 over 2, høgreparentes"
+    },
+    "Function008": {
+      "expected": "f of, venstreparentes, x pluss 1, høgreparentes, er lik f of x, pluss 1"
+    },
+    "Function009": {
+      "expected": "g of, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
     "Function010": {
-      "expected": "g-th of, venstreparentes, x-th squared, høgreparentes"
+      "expected": "g of, venstreparentes, x squared, høgreparentes"
     },
     "Function011": {
-      "expected": "f-th inverse of x-th"
+      "expected": "f inverse of x"
     },
     "Function012": {
-      "expected": "g-th inverse of x-th"
+      "expected": "g inverse of x"
     },
     "Function013": {
-      "expected": "h-th inverse of x-th"
+      "expected": "h inverse of x"
     },
-    "Function014": {},
-    "Function015": {},
-    "Function016": {},
+    "Function014": {
+      "expected": "f inverse of 2 x"
+    },
+    "Function015": {
+      "expected": "g inverse of negative 2 x"
+    },
+    "Function016": {
+      "expected": "f inverse of, venstreparentes, 3 x, minus 1, høgreparentes"
+    },
     "Function017": {
-      "expected": "g-th inverse of, venstreparentes, x-th squared, høgreparentes"
+      "expected": "g inverse of, venstreparentes, x squared, høgreparentes"
     },
-    "Function018": {},
-    "Function019": {},
+    "Function018": {
+      "expected": "h inverse of ein andre"
+    },
+    "Function019": {
+      "expected": "h inverse of, venstreparentes, 1 over 2, høgreparentes"
+    },
     "Function020": {
-      "expected": "f-th inverse of, f-th of x-th"
+      "expected": "f inverse of, f of x"
     },
     "Function021": {
-      "expected": "g-th inverse of, g-th of x-th"
+      "expected": "g inverse of, g of x"
     },
     "Function022": {
-      "expected": "h-th inverse of, h-th of x-th"
+      "expected": "h inverse of, h of x"
     },
-    "Function023": {},
-    "Function024": {},
-    "Function025": {},
-    "Function026": {},
-    "Function027": {},
-    "Function028": {},
+    "Function023": {
+      "expected": "f inverse of, f of 2 x"
+    },
+    "Function024": {
+      "expected": "g inverse of, g of negative 2 x"
+    },
+    "Function025": {
+      "expected": "h inverse of, h of ein andre"
+    },
+    "Function026": {
+      "expected": "h inverse of, venstreparentes, h of, venstreparentes, 1 over 2, høgreparentes, høgreparentes"
+    },
+    "Function027": {
+      "expected": "f inverse of, venstreparentes, f of, venstreparentes, x pluss 1, høgreparentes, høgreparentes, er lik x pluss 1"
+    },
+    "Function028": {
+      "expected": "g inverse of, venstreparentes, g of, venstreparentes, 2 x, pluss 1, høgreparentes, høgreparentes"
+    },
     "Function029": {
-      "expected": "g-th inverse of, venstreparentes, g-th of, venstreparentes, x-th squared, høgreparentes, høgreparentes"
+      "expected": "g inverse of, venstreparentes, g of, venstreparentes, x squared, høgreparentes, høgreparentes"
     },
     "Function030": {
-      "expected": "f-th of, f-th inverse of x-th"
+      "expected": "f of, f inverse of x"
     },
     "Function031": {
-      "expected": "g-th of, g-th inverse of x-th"
+      "expected": "g of, g inverse of x"
     },
     "Function032": {
-      "expected": "h-th of, h-th inverse of x-th"
+      "expected": "h of, h inverse of x"
     },
-    "Function033": {},
-    "Function034": {},
-    "Function035": {},
+    "Function033": {
+      "expected": "f of, f inverse of 2 x"
+    },
+    "Function034": {
+      "expected": "g of, g inverse of negative 2 x"
+    },
+    "Function035": {
+      "expected": "f of, venstreparentes, f inverse of, venstreparentes, 3 x, minus 1, høgreparentes, høgreparentes"
+    },
     "Function036": {
-      "expected": "g-th of, g-th inverse of, venstreparentes, x-th squared, høgreparentes"
+      "expected": "g of, g inverse of, venstreparentes, x squared, høgreparentes"
     },
-    "Function037": {},
-    "Function038": {},
+    "Function037": {
+      "expected": "h of, h inverse of ein andre"
+    },
+    "Function038": {
+      "expected": "h of, h inverse of, venstreparentes, the fraction 1 over 2, høgreparentes"
+    },
     "Function039": {
-      "expected": "f-th of, g-th of x-th"
+      "expected": "f of, g of x"
     },
-    "Function040": {},
+    "Function040": {
+      "expected": "f of, venstreparentes, g of, venstreparentes, x pluss 1, høgreparentes, høgreparentes"
+    },
     "Function041": {
-      "expected": "h-th of, g-th of x-th"
+      "expected": "h of, g of x"
     },
-    "Function042": {},
+    "Function042": {
+      "expected": "h of, venstreparentes, g of, venstreparentes, the fraction with numerator x, and denominator x pluss 1, høgreparentes, høgreparentes"
+    },
     "Function043": {
-      "expected": "venstreparentes, f-th pluss g-th, høgreparentes, of x-th, er lik f-th of x-th, pluss g-th of x-th"
+      "expected": "venstreparentes, f pluss g, høgreparentes, of x, er lik f of x, pluss g of x"
     },
-    "Function044": {},
+    "Function044": {
+      "expected": "venstreparentes, f pluss g, høgreparentes, of, venstreparentes, x pluss 1, høgreparentes, er lik f of, venstreparentes, x pluss 1, høgreparentes, pluss g of, venstreparentes, x pluss 1, høgreparentes"
+    },
     "Function045": {
-      "expected": "venstreparentes, f-th ganger g-th, høgreparentes, of x-th"
+      "expected": "venstreparentes, f ganger g, høgreparentes, of x"
     },
-    "Function046": {},
+    "Function046": {
+      "expected": "venstreparentes, f ganger g, høgreparentes, of, venstreparentes, 2 x, pluss 5, høgreparentes"
+    },
     "Function047": {
-      "expected": "venstreparentes, f-th over g-th, høgreparentes, of x-th, er lik, f-th of x-th, over g-th of x-th"
+      "expected": "venstreparentes, f over g, høgreparentes, of x, er lik, f of x, over g of x"
     },
-    "Function048": {},
+    "Function048": {
+      "expected": "venstreparentes, f over g, høgreparentes, of, venstreparentes, 2 x, pluss 5, høgreparentes, er lik, the fraction with numerator f of, venstreparentes, 2 x, pluss 5, høgreparentes, and denominator g of, venstreparentes, 2 x, pluss 5, høgreparentes"
+    },
     "Function049": {
-      "expected": "venstreparentes, f-th grad g-th, høgreparentes, of x-th, er lik f-th of, g-th of x-th"
+      "expected": "venstreparentes, f grad g, høgreparentes, of x, er lik f of, g of x"
     },
-    "Function050": {},
+    "Function050": {
+      "expected": "2 f of x"
+    },
     "Function051": {
-      "expected": "c-th f-th of x-th"
+      "expected": "c f of x"
     },
     "Function052": {
-      "expected": "f-th squared of x-th"
+      "expected": "f squared of x"
     },
-    "Function053": {},
+    "Function053": {
+      "expected": "f squared of, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
     "Function054": {
-      "expected": "f-th cubed of x-th"
+      "expected": "f cubed of x"
     },
-    "Function055": {},
-    "Function056": {},
-    "Function057": {},
-    "Function058": {},
-    "Function059": {},
+    "Function055": {
+      "expected": "f cubed of, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
+    "Function056": {
+      "expected": "the fjerde power of, f of x"
+    },
+    "Function057": {
+      "expected": "the fjerde power of, f of, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
+    "Function058": {
+      "expected": "the femte power of, f of x"
+    },
+    "Function059": {
+      "expected": "the femte power of, f of, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
     "Function060": {
-      "expected": "n-th power of, f-th of x-th"
+      "expected": "the n-th power of, f of x"
     },
-    "Function061": {},
+    "Function061": {
+      "expected": "the n-th power of, f of, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
     "Function062": {
-      "expected": "g-th squared of x-th"
+      "expected": "g squared of x"
     },
-    "Function063": {},
+    "Function063": {
+      "expected": "g squared of, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
     "Function064": {
-      "expected": "h-th cubed of x-th"
+      "expected": "h cubed of x"
     },
-    "Function065": {},
-    "Function066": {},
-    "Function067": {},
-    "Function068": {},
-    "Function069": {},
+    "Function065": {
+      "expected": "h cubed of, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
+    "Function066": {
+      "expected": "the fjerde power of, g of x"
+    },
+    "Function067": {
+      "expected": "the fjerde power of, g of, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
+    "Function068": {
+      "expected": "the femte power of, h of x"
+    },
+    "Function069": {
+      "expected": "the femte power of, h of, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
     "Function070": {
-      "expected": "n-th power of, g-th of x-th"
+      "expected": "the n-th power of, g of x"
     },
-    "Function071": {},
-    "Function072": {},
-    "Function073": {},
-    "Function074": {},
-    "Function075": {},
-    "Function076": {},
+    "Function071": {
+      "expected": "the n-th power of, g of, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
+    "Function072": {
+      "expected": "f sub 1, of x"
+    },
+    "Function073": {
+      "expected": "g sub 2, of, venstreparentes, x cubed, høgreparentes"
+    },
+    "Function074": {
+      "expected": "h sub n, of, venstreparentes, 3 x, minus 2, høgreparentes"
+    },
+    "Function075": {
+      "expected": "f sub 1, inverse of x"
+    },
+    "Function076": {
+      "expected": "g sub 2, inverse of, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
     "Function077": {
-      "expected": "h-th sub n-th inverse of x-th"
+      "expected": "h sub n, inverse of x"
     },
-    "Function078": {},
-    "Function079": {},
+    "Function078": {
+      "expected": "g sub 1, inverse of, g sub 2, of x"
+    },
+    "Function079": {
+      "expected": "f sub 1, of, g sub 2, inverse of x"
+    },
     "Function080": {
-      "expected": "f-th of, venstreparentes, x-th komma y-th, høgreparentes"
+      "expected": "f of, venstreparentes, x komma y, høgreparentes"
     },
     "Function081": {
-      "expected": "f-th of, venstreparentes, x-th komma y-th komma z-th, høgreparentes"
+      "expected": "f of, venstreparentes, x komma y komma z, høgreparentes"
     },
-    "Function082": {},
-    "Function083": {},
+    "Function082": {
+      "expected": "f of, venstreparentes, x pluss 1, komma, 2 y, høgreparentes"
+    },
+    "Function083": {
+      "expected": "f of, venstreparentes, 2 x, komma, x pluss 1, komma, x squared, høgreparentes"
+    },
     "Function084": {
-      "expected": "f-th times x-th"
+      "expected": "f times x"
     },
     "Function085": {
-      "expected": "g-th times x-th"
+      "expected": "g times x"
     },
     "Function086": {
-      "expected": "h-th times x-th"
+      "expected": "h times x"
     },
-    "Function087": {},
-    "Function088": {},
-    "Function089": {},
-    "Function091": {},
-    "Function092": {},
+    "Function087": {
+      "expected": "f times 2 x"
+    },
+    "Function088": {
+      "expected": "g times negative 2 x"
+    },
+    "Function089": {
+      "expected": "h times ein andre"
+    },
+    "Function091": {
+      "expected": "f times, venstreparentes, x pluss 1, høgreparentes, er lik, f times x, pluss 1"
+    },
+    "Function092": {
+      "expected": "g times, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
     "Function093": {
-      "expected": "g-th times, venstreparentes, x-th squared, høgreparentes"
+      "expected": "g times, venstreparentes, x squared, høgreparentes"
     },
-    "Function094": {},
-    "Function095": {},
-    "Function096": {},
-    "Function097": {},
-    "Function098": {},
-    "Function099": {},
-    "Function100": {},
-    "Function101": {},
-    "Function103": {},
-    "Function104": {},
-    "Function105": {},
-    "Function106": {},
-    "Function107": {},
-    "Function108": {},
-    "Function110": {},
-    "Function111": {},
-    "Function112": {},
-    "Function113": {},
-    "Function114": {},
-    "Function115": {},
-    "Function116": {},
-    "Function117": {},
-    "Function118": {},
-    "Function119": {},
-    "Function120": {},
+    "Function094": {
+      "expected": "f to the negative 1 power, times x"
+    },
+    "Function095": {
+      "expected": "g to the negative 1 power, times x"
+    },
+    "Function096": {
+      "expected": "h to the negative 1 power, times x"
+    },
+    "Function097": {
+      "expected": "f to the negative 1 power, times 2 x"
+    },
+    "Function098": {
+      "expected": "g to the negative 1 power, times negative 2 x"
+    },
+    "Function099": {
+      "expected": "f to the negative 1 power, times, venstreparentes, 3 x, minus 1, høgreparentes"
+    },
+    "Function100": {
+      "expected": "g to the negative 1 power, times, venstreparentes, x squared, høgreparentes"
+    },
+    "Function101": {
+      "expected": "h to the negative 1 power, times ein andre"
+    },
+    "Function103": {
+      "expected": "f to the negative 1 power, times, f times x"
+    },
+    "Function104": {
+      "expected": "g to the negative 1 power, times, g times x"
+    },
+    "Function105": {
+      "expected": "h to the negative 1 power, times, h times x"
+    },
+    "Function106": {
+      "expected": "f to the negative 1 power, times, f times 2 x"
+    },
+    "Function107": {
+      "expected": "g to the negative 1 power, times, g times negative 2 x"
+    },
+    "Function108": {
+      "expected": "h to the negative 1 power, times, h times ein andre"
+    },
+    "Function110": {
+      "expected": "f to the negative 1 power, times, venstreparentes, f times, venstreparentes, x pluss 1, høgreparentes, høgreparentes, er lik x pluss 1"
+    },
+    "Function111": {
+      "expected": "g to the negative 1 power, times, venstreparentes, g times, venstreparentes, 2 x, pluss 1, høgreparentes, høgreparentes"
+    },
+    "Function112": {
+      "expected": "g to the negative 1 power, times, venstreparentes, g times, venstreparentes, x squared, høgreparentes, høgreparentes"
+    },
+    "Function113": {
+      "expected": "f times, venstreparentes, f to the negative 1 power, times x, høgreparentes"
+    },
+    "Function114": {
+      "expected": "g times, venstreparentes, g to the negative 1 power, times x, høgreparentes"
+    },
+    "Function115": {
+      "expected": "h times, venstreparentes, h to the negative 1 power, times x, høgreparentes"
+    },
+    "Function116": {
+      "expected": "f times, venstreparentes, f to the negative 1 power, times 2 x, høgreparentes"
+    },
+    "Function117": {
+      "expected": "g times, venstreparentes, g to the negative 1 power, times negative 2 x, høgreparentes"
+    },
+    "Function118": {
+      "expected": "f times, venstreparentes, f to the negative 1 power, times, venstreparentes, 3 x, minus 1, høgreparentes, høgreparentes"
+    },
+    "Function119": {
+      "expected": "g times, venstreparentes, g to the negative 1 power, times, venstreparentes, x squared, høgreparentes, høgreparentes"
+    },
+    "Function120": {
+      "expected": "h times, venstreparentes, h to the negative 1 power, times ein andre, høgreparentes"
+    },
     "Function122": {
-      "expected": "f-th times, g-th times x-th"
+      "expected": "f times, g times x"
     },
-    "Function123": {},
+    "Function123": {
+      "expected": "f times, venstreparentes, g times, venstreparentes, x pluss 1, høgreparentes, høgreparentes"
+    },
     "Function124": {
-      "expected": "h-th times, g-th times x-th"
+      "expected": "h times, g times x"
     },
-    "Function125": {},
+    "Function125": {
+      "expected": "h times, venstreparentes, g times, venstreparentes, the fraction with numerator x, and denominator x pluss 1, høgreparentes, høgreparentes"
+    },
     "Function126": {
-      "expected": "venstreparentes, f-th pluss g-th, høgreparentes, times x-th, er lik, f-th times x-th, pluss, g-th times x-th"
+      "expected": "venstreparentes, f pluss g, høgreparentes, times x, er lik, f times x, pluss, g times x"
     },
-    "Function127": {},
+    "Function127": {
+      "expected": "venstreparentes, f pluss g, høgreparentes, times, venstreparentes, x pluss 1, høgreparentes, er lik, f times, venstreparentes, x pluss 1, høgreparentes, pluss, g times, venstreparentes, x pluss 1, høgreparentes"
+    },
     "Function128": {
-      "expected": "venstreparentes, f-th ganger g-th, høgreparentes, times x-th"
+      "expected": "venstreparentes, f ganger g, høgreparentes, times x"
     },
-    "Function129": {},
+    "Function129": {
+      "expected": "venstreparentes, f ganger g, høgreparentes, times, venstreparentes, 2 x, pluss 5, høgreparentes"
+    },
     "Function130": {
-      "expected": "venstreparentes, f-th over g-th, høgreparentes, times x-th, er lik, fraction with numerator, f-th times x-th, and denominator, g-th times x-th"
+      "expected": "venstreparentes, f over g, høgreparentes, times x, er lik, the fraction with numerator, f times x, and denominator, g times x"
     },
-    "Function131": {},
-    "Function132": {},
+    "Function131": {
+      "expected": "venstreparentes, f over g, høgreparentes, times, venstreparentes, 2 x, pluss 5, høgreparentes, er lik, the fraction with numerator, f times, venstreparentes, 2 x, pluss 5, høgreparentes, and denominator, g times, venstreparentes, 2 x, pluss 5, høgreparentes"
+    },
+    "Function132": {
+      "expected": "2, f times x"
+    },
     "Function133": {
-      "expected": "c-th, f-th times x-th"
+      "expected": "c, f times x"
     },
     "Function134": {
-      "expected": "f-th squared times x-th"
+      "expected": "f squared times x"
     },
-    "Function135": {},
+    "Function135": {
+      "expected": "f squared times, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
     "Function136": {
-      "expected": "f-th cubed times x-th"
+      "expected": "f cubed times x"
     },
-    "Function137": {},
-    "Function138": {},
-    "Function139": {},
-    "Function140": {},
-    "Function141": {},
+    "Function137": {
+      "expected": "f cubed times, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
+    "Function138": {
+      "expected": "f to the fjerde power, times x"
+    },
+    "Function139": {
+      "expected": "f to the fjerde power, times, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
+    "Function140": {
+      "expected": "f to the femte power, times x"
+    },
+    "Function141": {
+      "expected": "f to the femte power, times, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
     "Function142": {
-      "expected": "f-th to the n-th power, times x-th"
+      "expected": "f to the n-th power, times x"
     },
-    "Function143": {},
+    "Function143": {
+      "expected": "f to the n-th power, times, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
     "Function144": {
-      "expected": "g-th squared times x-th"
+      "expected": "g squared times x"
     },
-    "Function145": {},
+    "Function145": {
+      "expected": "g squared times, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
     "Function146": {
-      "expected": "h-th cubed times x-th"
+      "expected": "h cubed times x"
     },
-    "Function147": {},
-    "Function148": {},
-    "Function149": {},
-    "Function150": {},
-    "Function151": {},
+    "Function147": {
+      "expected": "h cubed times, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
+    "Function148": {
+      "expected": "g to the fjerde power, times x"
+    },
+    "Function149": {
+      "expected": "g to the fjerde power, times, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
+    "Function150": {
+      "expected": "h to the femte power, times x"
+    },
+    "Function151": {
+      "expected": "h to the femte power, times, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
     "Function152": {
-      "expected": "g-th to the n-th power, times x-th"
+      "expected": "g to the n-th power, times x"
     },
-    "Function153": {},
-    "Function154": {},
-    "Function156": {},
-    "Function157": {},
-    "Function158": {},
-    "Function159": {},
-    "Function160": {},
-    "Function161": {},
-    "Function162": {},
+    "Function153": {
+      "expected": "g to the n-th power, times, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
+    "Function154": {
+      "expected": "f sub 1, times x"
+    },
+    "Function156": {
+      "expected": "g sub 2, times, venstreparentes, x cubed, høgreparentes"
+    },
+    "Function157": {
+      "expected": "h sub n, times, venstreparentes, 3 x, minus 2, høgreparentes"
+    },
+    "Function158": {
+      "expected": "f sub 1, to the negative 1 power, times x"
+    },
+    "Function159": {
+      "expected": "g sub 2, to the negative 1 power, times, venstreparentes, 2 x, pluss 1, høgreparentes"
+    },
+    "Function160": {
+      "expected": "h sub n, to the negative 1 power, times x"
+    },
+    "Function161": {
+      "expected": "g sub 1, to the negative 1 power, times, venstreparentes, g sub 2, times x, høgreparentes"
+    },
+    "Function162": {
+      "expected": "f sub 1, times, venstreparentes, g sub 2, to the negative 1 power, times x, høgreparentes"
+    },
     "Function163": {
-      "expected": "f-th times, venstreparentes, x-th komma y-th, høgreparentes"
+      "expected": "f times, venstreparentes, x komma y, høgreparentes"
     },
     "Function164": {
-      "expected": "f-th times, venstreparentes, x-th komma y-th komma z-th, høgreparentes"
+      "expected": "f times, venstreparentes, x komma y komma z, høgreparentes"
     },
-    "Function165": {},
-    "Function166": {}
+    "Function165": {
+      "expected": "f times, venstreparentes, x pluss 1, komma, 2 y, høgreparentes"
+    },
+    "Function166": {
+      "expected": "f times, venstreparentes, 2 x, komma, x pluss 1, komma, x squared, høgreparentes"
+    }
   }
 }

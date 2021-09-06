@@ -10,75 +10,121 @@
   "compare": true,
   "tests": {
     "Log001": {
-      "expected": "log x-th"
+      "expected": "log x"
     },
-    "Log002": {},
+    "Log002": {
+      "expected": "the log base 10 of, x"
+    },
     "Log003": {
-      "expected": "log sub b-th of, a-th x-th, er lik, log sub b-th of, a-th, pluss, log sub b-th of, x-th"
+      "expected": "the log base b of, a x, er lik, the log base b of, a, pluss, the log base b of, x"
     },
     "Log004": {
-      "expected": "log sub b-th of, S over T, er lik, log sub b-th of, S, minus, log sub b-th of, T"
+      "expected": "the log base b of, S over T, er lik, the log base b of, S, minus, the log base b of, T"
     },
     "Log005": {
-      "expected": "log sub b-th of, venstreparentes, x-th to the k-th power, høgreparentes, er lik k-th, log sub b-th of, x-th"
+      "expected": "the log base b of, venstreparentes, x to the k-th power, høgreparentes, er lik k, the log base b of, x"
     },
-    "Log006": {},
-    "Log007": {},
-    "Log008": {},
-    "Log009": {},
+    "Log006": {
+      "expected": "10 raised to the log base 10 of, x, power, er lik x"
+    },
+    "Log007": {
+      "expected": "the log base 10 of, 10 to the x-th power, er lik x"
+    },
+    "Log008": {
+      "expected": "10 raised to the log base 10 of, 5, power, er lik 5"
+    },
+    "Log009": {
+      "expected": "the log base 10 of, 10 cubed, er lik 3"
+    },
     "Log010": {
-      "expected": "log sub a-th of, x-th, er lik, log sub b-th of, x-th, over, log sub b-th of, a-th"
+      "expected": "the log base a of, x, er lik, the log base b of, x, over, the log base b of, a"
     },
-    "Log011": {},
+    "Log011": {
+      "expected": "the log base 10 of, 18, over, the log base 10 of, 3, er lik, the log base 3 of, 18"
+    },
     "Log012": {
-      "expected": "log x-th over log a-th"
+      "expected": "log x over log a"
     },
-    "Log013": {},
-    "Log014": {},
+    "Log013": {
+      "expected": "the log of, venstreparentes, x pluss 1, høgreparentes"
+    },
+    "Log014": {
+      "expected": "the log of, venstreparentes, x pluss 1, høgreparentes, squared"
+    },
     "Log015": {
-      "expected": "log x-th y-th"
+      "expected": "log x y"
     },
-    "Log016": {},
-    "Log017": {},
-    "Log018": {},
-    "Log019": {},
-    "Log020": {},
+    "Log016": {
+      "expected": "the fraction with numerator, the log of, venstreparentes, x pluss 1, høgreparentes, and denominator, the log of, venstreparentes, x pluss 2, høgreparentes"
+    },
+    "Log017": {
+      "expected": "the fraction with numerator, the log base 6 of, venstreparentes, x pluss 1, høgreparentes, and denominator, the log base 6 of, venstreparentes, x pluss 2, høgreparentes"
+    },
+    "Log018": {
+      "expected": "the fraction with numerator log 40 pluss log 60, and denominator log 5"
+    },
+    "Log019": {
+      "expected": "the fraction with numerator, the log base 3 of, 40, pluss, the log base 3 of, 60, and denominator, the log base 3 of, 5"
+    },
+    "Log020": {
+      "expected": "the log of, venstreparentes, 3 to the fjerde power, 12 to the niende power, høgreparentes, er lik 4 log 3, pluss 9 log 12"
+    },
     "Log021": {
-      "expected": "log of, venstreparentes, x-th over y-th, høgreparentes"
+      "expected": "the log of, venstreparentes, x over y, høgreparentes"
     },
-    "Log022": {},
-    "Log023": {},
+    "Log022": {
+      "expected": "the log of, venstreparentes, the fraction with numerator 3 to the fjerde power, and denominator 8 to the tiende power, høgreparentes, er lik 4 log 3, minus 10 log 8"
+    },
+    "Log023": {
+      "expected": "10 raised to the log x power"
+    },
     "NatLog001": {
-      "expected": "ln x-th"
+      "expected": "ln x"
     },
-    "NatLog002": {},
+    "NatLog002": {
+      "expected": "ln x, minus ln of, venstreparentes, x minus 1, høgreparentes, er lik ln of, venstreparentes, the fraction with numerator x, and denominator x minus 1, høgreparentes"
+    },
     "NatLog003": {
-      "expected": "ln of, venstreparentes, e-th to the x-th power, høgreparentes, er lik x-th"
+      "expected": "ln of, venstreparentes, e to the x-th power, høgreparentes, er lik x"
     },
     "NatLog004": {
-      "expected": "e-th raised to the ln x-th power, er lik x-th"
+      "expected": "e raised to the ln x power, er lik x"
     },
     "NatLog005": {
-      "expected": "ln of, venstreparentes, e-th to the x-th power, høgreparentes, er lik x-th"
+      "expected": "ln of, venstreparentes, e to the x-th power, høgreparentes, er lik x"
     },
-    "NatLog006": {},
-    "NatLog007": {},
-    "NatLog008": {},
+    "NatLog006": {
+      "expected": "e raised to the ln 4 power, er lik 4"
+    },
+    "NatLog007": {
+      "expected": "ln 40, over ln 5, er lik, the log base 5 of, 40"
+    },
+    "NatLog008": {
+      "expected": "the fraction with numerator ln 40, pluss ln 60, and denominator ln 5"
+    },
     "NatLog009": {
-      "expected": "ln x-th"
+      "expected": "ln x"
     },
-    "NatLog010": {},
+    "NatLog010": {
+      "expected": "ln x, minus, the ln of, venstreparentes, x minus 1, høgreparentes, er lik, the ln of, venstreparentes, the fraction with numerator x, and denominator x minus 1, høgreparentes"
+    },
     "NatLog011": {
-      "expected": "ln of, venstreparentes, e-th to the x-th power, høgreparentes, er lik x-th"
+      "expected": "the ln of, venstreparentes, e to the x-th power, høgreparentes, er lik x"
     },
     "NatLog012": {
-      "expected": "e-th raised to the ln x-th power, er lik x-th"
+      "expected": "e raised to the ln x power, er lik x"
     },
     "NatLog013": {
-      "expected": "ln of, venstreparentes, e-th to the x-th power, høgreparentes, er lik x-th"
+      "expected": "the ln of, venstreparentes, e to the x-th power, høgreparentes, er lik x"
     },
-    "NatLog014": {},
-    "NatLog015": {},
-    "NatLog016": {}
+    "NatLog014": {
+      "expected": "e raised to the ln 4 power, er lik 4"
+    },
+    "NatLog015": {
+      "expected": "ln 40, over ln 5, er lik, the log base 5 of, 40"
+    },
+    "NatLog016": {
+      "expected": "the fraction with numerator ln 40, pluss ln 60, and denominator ln 5"
+    }
   }
 }
