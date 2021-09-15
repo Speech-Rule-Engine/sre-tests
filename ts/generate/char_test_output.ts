@@ -19,12 +19,9 @@
  */
 
 import {Grammar} from '../../speech-rule-engine/js/rule_engine/grammar';
-import {MathMap} from '../../speech-rule-engine/js/speech_rules/math_map';
 import * as AlphabetGenerator from '../../speech-rule-engine/js/speech_rules/alphabet_generator';
 import * as System from '../../speech-rule-engine/js/common/system';
 import {Variables} from '../../speech-rule-engine/js/common/variables';
-import * as BaseUtil from '../../speech-rule-engine/js/common/base_util';
-import SystemExternal from '../../speech-rule-engine/js/common/system_external';
 import AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
 import {AuditoryDescription} from '../../speech-rule-engine/js/audio/auditory_description';
 import * as SemanticUtil from '../../speech-rule-engine/js/semantic_tree/semantic_util';
@@ -176,16 +173,23 @@ export function testFromBase(locale: string, kind: SymbolType): tu.JsonFile {
   return testOutput(locale, keys, isUnitTest(kind));
 }
 
+/**
+ * Reads a JSON locale file directly from the mathmaps directory.
+ * @param locale The locale.
+ * @return The JSON content.
+ */
+function loadMathmaps(locale: string): tu.JsonTest {
+  let file = System.localePath(locale);
+  return JSON.parse(fs.readFileSync(file, {encoding: 'utf8'}));
+}
+
 // Loads the locale symbol file from mathmaps and generates the actual output.
 /**
  * @param locale
  * @param kind
  */
 export function testFromLocale(locale: string, kind: SymbolType): tu.JsonFile {
-  let file = BaseUtil.makePath(SystemExternal.jsonPath) +
-      locale + '.js';
-  let json = JSON.parse(MathMap.loadFile(file));
-  let keys = getNamesFor(json, kind);
+  let keys = getNamesFor(loadMathmaps(locale), kind);
   return testOutput(locale, keys, isUnitTest(kind));
 }
 
@@ -223,10 +227,7 @@ export function testOutputFromExtras(
  * @param kind
  */
 export function testFromExtras(locale: string, kind: SymbolType): tu.JsonFile {
-  let file = BaseUtil.makePath(SystemExternal.jsonPath) +
-      locale + '.js';
-  let json = JSON.parse(MathMap.loadFile(file));
-  let extras = getExtrasFor(locale, json, kind);
+  let extras = getExtrasFor(locale, loadMathmaps(locale), kind);
   return testExtras(locale, extras, kind);
 }
 
@@ -373,9 +374,7 @@ export function testOutputFromBoth(
 export function splitNemethForFire(dir: string, json: tu.JsonFile) {
   let tests = json.tests as tu.JsonTests;
   splitNemethByAlphabet(dir, tests);
-  let file = BaseUtil.makePath(SystemExternal.jsonPath) +
-    'nemeth.js';
-  let locale = JSON.parse(MathMap.loadFile(file));
+  let locale = loadMathmaps('nemeth');
   splitNemethByFile(dir, locale, tests, 'math_symbols');
   splitNemethByFile(dir, locale, tests, 'latin-lower-phonetic');
   splitNemethByFile(dir, locale, tests, 'math_geometry');

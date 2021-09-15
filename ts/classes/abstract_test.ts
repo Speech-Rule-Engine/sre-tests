@@ -53,7 +53,8 @@ export abstract class AbstractTest {
   /**
    * Sets up the basic requirements for the test.
    */
-  public setUpTest() {
+  public async setUpTest(): Promise<string> {
+    return Promise.resolve('');
   }
 
   /**

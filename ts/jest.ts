@@ -18,7 +18,7 @@ export function runJsonTest(file: string) {
     () => {
       // This ensures clean testing even for multiple calls.
       beforeAll(() => {
-        testcases.setUpTest();
+        return testcases.setUpTest();
       });
       afterAll(() => {
         testcases.tearDownTest();

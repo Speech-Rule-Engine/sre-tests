@@ -57,8 +57,8 @@ export class WalkerTest extends AbstractJsonTest {
   /**
    * @override
    */
-  public setUpTest() {
-    System.setupEngine(
+  public async setUpTest() {
+    return System.setupEngine(
       {modality: 'speech', locale: 'en', domain: 'mathspeak',
        style: 'default', speech: EngineConst.Speech.NONE});
   }
