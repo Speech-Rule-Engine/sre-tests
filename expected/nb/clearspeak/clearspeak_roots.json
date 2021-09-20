@@ -10,415 +10,415 @@
   "compare": true,
   "tests": {
     "Root001": {
-      "expected": "2"
+      "expected": "kvadratroten av 2"
     },
     "Root002": {
-      "expected": "3 pluss 2"
+      "expected": "3 pluss kvadratroten av 2"
     },
     "Root003": {
-      "expected": "3 pluss minus 2"
+      "expected": "3 pluss minus kvadratroten av 2"
     },
     "Root004": {
-      "expected": "3 minus pluss 2"
+      "expected": "3 minus pluss kvadratroten av 2"
     },
     "Root005": {
-      "expected": "minus 2"
+      "expected": "den negative kvadratroten av 2"
     },
     "Root006": {
-      "expected": "3 minus 2"
+      "expected": "3 minus kvadratroten av 2"
     },
     "Root007": {
-      "expected": "3 pluss minus 2"
+      "expected": "3 pluss den negative kvadratroten av 2"
     },
     "Root008": {
-      "expected": "3 minus minus 2"
+      "expected": "3 minus den negative kvadratroten av 2"
     },
     "Root009": {
-      "expected": "3 pluss, venstre parentes, minus 2, høyre parentes"
+      "expected": "3 pluss, venstre parentes, den negative kvadratroten av 2, høyre parentes"
     },
     "Root010": {
-      "expected": "3 minus, venstre parentes, minus 2, høyre parentes"
+      "expected": "3 minus, venstre parentes, den negative kvadratroten av 2, høyre parentes"
     },
     "Root011": {
-      "expected": "pluss pluss x 1"
+      "expected": "kvadratroten av x pluss 1"
     },
     "Root011a": {
-      "expected": "x pluss 1"
+      "expected": "kvadratroten av x, pluss 1"
     },
     "Root012": {
-      "expected": "minus x"
+      "expected": "den negative kvadratroten av x"
     },
     "Root013": {
-      "expected": "venstre parentes høyre parentes x 2"
+      "expected": "venstre parentes, kvadratroten av x, høyre parentes, kvadrat"
     },
     "Root014": {
-      "expected": "minus venstre parentes høyre parentes x 2"
+      "expected": "minus, venstre parentes, kvadratroten av x, høyre parentes, kvadrat"
     },
     "Root015": {
-      "expected": "x 2"
+      "expected": "kvadratroten av x, kvadrat"
     },
     "Root016": {
-      "expected": "x 2"
+      "expected": "kvadratroten av x kvadrat"
     },
     "Root017": {
-      "expected": "pluss pluss x 2 y 2"
+      "expected": "kvadratroten av x kvadrat pluss y kvadrat"
     },
     "Root018": {
-      "expected": "pluss pluss ganger ganger x 12 ganger ganger x 22"
+      "expected": "kvadratroten av, x indeks 1, kvadrat pluss, x indeks 2, kvadrat"
     },
     "Root019": {
-      "expected": "pluss pluss venstre parentes høyre parentes minus minus x 2 x 12 venstre parentes høyre parentes minus minus y 2 y 12"
+      "expected": "kvadratroten av, venstre parentes, x indeks 2, minus, x indeks 1, høyre parentes, kvadrat pluss, venstre parentes, y indeks 2, minus, y indeks 1, høyre parentes, kvadrat"
     },
     "Root020": {
-      "expected": "12"
+      "expected": "kvadratroten av en andre"
     },
     "Root021": {
-      "expected": "2366"
+      "expected": "kvadratroten av, 23 delt på 66"
     },
     "Root022": {
-      "expected": "pluss pluss x 1 pluss pluss ganger ganger 2 x 5"
+      "expected": "kvadratroten av, brøk med teller x pluss 1, og nevner 2 x, pluss 5"
     },
     "Root023": {
-      "expected": "pluss minus pluss minus minus minus b minus minus b 2 ganger ganger ganger 4 ac ganger ganger 2 a"
+      "expected": "brøk med teller minus b pluss minus kvadratroten av b kvadrat minus 4 a c, og nevner 2 a"
     },
     "Root024": {
-      "expected": "2"
+      "expected": "den positive kvadratroten av 2"
     },
     "Root025": {
-      "expected": "3 pluss 2"
+      "expected": "3 pluss den positive kvadratroten av 2"
     },
     "Root026": {
-      "expected": "3 pluss minus 2"
+      "expected": "3 pluss minus kvadratroten av 2"
     },
     "Root027": {
-      "expected": "3 minus pluss 2"
+      "expected": "3 minus pluss kvadratroten av 2"
     },
     "Root028": {
-      "expected": "minus 2"
+      "expected": "den negative kvadratroten av 2"
     },
     "Root029": {
-      "expected": "3 minus 2"
+      "expected": "3 minus den positive kvadratroten av 2"
     },
     "Root030": {
-      "expected": "3 pluss minus 2"
+      "expected": "3 pluss den negative kvadratroten av 2"
     },
     "Root031": {
-      "expected": "3 minus minus 2"
+      "expected": "3 minus den negative kvadratroten av 2"
     },
     "Root032": {
-      "expected": "3 pluss, venstre parentes, minus 2, høyre parentes"
+      "expected": "3 pluss, venstre parentes, den negative kvadratroten av 2, høyre parentes"
     },
     "Root033": {
-      "expected": "3 minus, venstre parentes, minus 2, høyre parentes"
+      "expected": "3 minus, venstre parentes, den negative kvadratroten av 2, høyre parentes"
     },
     "Root034": {
-      "expected": "pluss pluss x 1"
+      "expected": "den positive kvadratroten av x pluss 1"
     },
     "Root034a": {
-      "expected": "x pluss 1"
+      "expected": "den positive kvadratroten av x, pluss 1"
     },
     "Root035": {
-      "expected": "minus x"
+      "expected": "den negative kvadratroten av x"
     },
     "Root036": {
-      "expected": "venstre parentes høyre parentes x 2"
+      "expected": "venstre parentes, den positive kvadratroten av x, høyre parentes, kvadrat"
     },
     "Root037": {
-      "expected": "venstre parentes høyre parentes minus minus x 2"
+      "expected": "venstre parentes, den negative kvadratroten av x, høyre parentes, kvadrat"
     },
     "Root038": {
-      "expected": "minus venstre parentes høyre parentes x 2"
+      "expected": "minus, venstre parentes, den positive kvadratroten av x, høyre parentes, kvadrat"
     },
     "Root039": {
-      "expected": "x 2"
+      "expected": "den positive kvadratroten av x, kvadrat"
     },
     "Root040": {
-      "expected": "x 2"
+      "expected": "den positive kvadratroten av x kvadrat"
     },
     "Root041": {
-      "expected": "pluss pluss x 2 y 2"
+      "expected": "den positive kvadratroten av x kvadrat pluss y kvadrat"
     },
     "Root042": {
-      "expected": "pluss pluss ganger ganger x 12 ganger ganger x 22"
+      "expected": "den positive kvadratroten av, x indeks 1, kvadrat pluss, x indeks 2, kvadrat"
     },
     "Root043": {
-      "expected": "pluss pluss venstre parentes høyre parentes minus minus x 2 x 12 venstre parentes høyre parentes minus minus y 2 y 12"
+      "expected": "den positive kvadratroten av, venstre parentes, x indeks 2, minus, x indeks 1, høyre parentes, kvadrat pluss, venstre parentes, y indeks 2, minus, y indeks 1, høyre parentes, kvadrat"
     },
     "Root044": {
-      "expected": "12"
+      "expected": "den positive kvadratroten av en andre"
     },
     "Root045": {
-      "expected": "2366"
+      "expected": "den positive kvadratroten av, 23 delt på 66"
     },
     "Root046": {
-      "expected": "pluss pluss x 1 pluss pluss ganger ganger 2 x 5"
+      "expected": "den positive kvadratroten av, brøk med teller x pluss 1, og nevner 2 x, pluss 5"
     },
     "Root047": {
-      "expected": "pluss minus pluss minus minus minus b minus minus b 2 ganger ganger ganger 4 ac ganger ganger 2 a"
+      "expected": "brøk med teller minus b pluss minus kvadratroten av b kvadrat minus 4 a c, og nevner 2 a"
     },
     "Root048": {
-      "expected": "2"
+      "expected": "kvadratroten av 2, slutt rot"
     },
     "Root049": {
-      "expected": "3 pluss 2"
+      "expected": "3 pluss kvadratroten av 2, slutt rot"
     },
     "Root050": {
-      "expected": "3 pluss minus 2"
+      "expected": "3 pluss minus kvadratroten av 2, slutt rot"
     },
     "Root051": {
-      "expected": "3 minus pluss 2"
+      "expected": "3 minus pluss kvadratroten av 2, slutt rot"
     },
     "Root052": {
-      "expected": "minus 2"
+      "expected": "den negative kvadratroten av 2, slutt rot"
     },
     "Root053": {
-      "expected": "3 minus 2"
+      "expected": "3 minus kvadratroten av 2, slutt rot"
     },
     "Root054": {
-      "expected": "3 pluss minus 2"
+      "expected": "3 pluss den negative kvadratroten av 2, slutt rot"
     },
     "Root055": {
-      "expected": "3 minus minus 2"
+      "expected": "3 minus den negative kvadratroten av 2, slutt rot"
     },
     "Root056": {
-      "expected": "3 pluss, venstre parentes, minus 2, høyre parentes"
+      "expected": "3 pluss, venstre parentes, den negative kvadratroten av 2, slutt rot, høyre parentes"
     },
     "Root057": {
-      "expected": "3 minus, venstre parentes, minus 2, høyre parentes"
+      "expected": "3 minus, venstre parentes, den negative kvadratroten av 2, slutt rot, høyre parentes"
     },
     "Root058": {
-      "expected": "pluss pluss x 1"
+      "expected": "kvadratroten av x pluss 1, slutt rot"
     },
     "Root058a": {
-      "expected": "x pluss 1"
+      "expected": "kvadratroten av x, slutt rot, pluss 1"
     },
     "Root059": {
-      "expected": "minus x"
+      "expected": "den negative kvadratroten av x, slutt rot"
     },
     "Root060": {
-      "expected": "venstre parentes høyre parentes x 2"
+      "expected": "venstre parentes, kvadratroten av x, slutt rot, høyre parentes, kvadrat"
     },
     "Root061": {
-      "expected": "minus venstre parentes høyre parentes x 2"
+      "expected": "minus, venstre parentes, kvadratroten av x, slutt rot, høyre parentes, kvadrat"
     },
     "Root062": {
-      "expected": "x 2"
+      "expected": "kvadratroten av x, slutt rot, kvadrat"
     },
     "Root063": {
-      "expected": "x 2"
+      "expected": "kvadratroten av x kvadrat, slutt rot"
     },
     "Root064": {
-      "expected": "pluss pluss x 2 y 2"
+      "expected": "kvadratroten av x kvadrat pluss y kvadrat, slutt rot"
     },
     "Root065": {
-      "expected": "pluss pluss ganger ganger x 12 ganger ganger x 22"
+      "expected": "kvadratroten av, x indeks 1, kvadrat pluss, x indeks 2, kvadrat, slutt rot"
     },
     "Root066": {
-      "expected": "pluss pluss venstre parentes høyre parentes minus minus x 2 x 12 venstre parentes høyre parentes minus minus y 2 y 12"
+      "expected": "kvadratroten av, venstre parentes, x indeks 2, minus, x indeks 1, høyre parentes, kvadrat pluss, venstre parentes, y indeks 2, minus, y indeks 1, høyre parentes, kvadrat, slutt rot"
     },
     "Root067": {
-      "expected": "12"
+      "expected": "kvadratroten av en andre, slutt rot"
     },
     "Root068": {
-      "expected": "2366"
+      "expected": "kvadratroten av, 23 delt på 66, slutt rot"
     },
     "Root069": {
-      "expected": "pluss pluss x 1 pluss pluss ganger ganger 2 x 5"
+      "expected": "kvadratroten av, brøk med teller x pluss 1, og nevner 2 x, pluss 5, slutt rot"
     },
     "Root070": {
-      "expected": "pluss minus pluss minus minus minus b minus minus b 2 ganger ganger ganger 4 ac ganger ganger 2 a"
+      "expected": "brøk med teller minus b pluss minus kvadratroten av b kvadrat minus 4 a c, slutt rot, og nevner 2 a"
     },
     "Root071": {
-      "expected": "2"
+      "expected": "den positive kvadratroten av 2, slutt rot"
     },
     "Root072": {
-      "expected": "3 pluss 2"
+      "expected": "3 pluss den positive kvadratroten av 2, slutt rot"
     },
     "Root073": {
-      "expected": "3 pluss minus 2"
+      "expected": "3 pluss minus kvadratroten av 2, slutt rot"
     },
     "Root074": {
-      "expected": "3 minus pluss 2"
+      "expected": "3 minus pluss kvadratroten av 2, slutt rot"
     },
     "Root075": {
-      "expected": "minus 2"
+      "expected": "den negative kvadratroten av 2, slutt rot"
     },
     "Root076": {
-      "expected": "3 minus 2"
+      "expected": "3 minus den positive kvadratroten av 2, slutt rot"
     },
     "Root077": {
-      "expected": "3 pluss minus 2"
+      "expected": "3 pluss den negative kvadratroten av 2, slutt rot"
     },
     "Root078": {
-      "expected": "3 minus minus 2"
+      "expected": "3 minus den negative kvadratroten av 2, slutt rot"
     },
     "Root079": {
-      "expected": "3 pluss, venstre parentes, minus 2, høyre parentes"
+      "expected": "3 pluss, venstre parentes, den negative kvadratroten av 2, slutt rot, høyre parentes"
     },
     "Root080": {
-      "expected": "3 minus, venstre parentes, minus 2, høyre parentes"
+      "expected": "3 minus, venstre parentes, den negative kvadratroten av 2, slutt rot, høyre parentes"
     },
     "Root081": {
-      "expected": "pluss pluss x 1"
+      "expected": "den positive kvadratroten av x pluss 1, slutt rot"
     },
     "Root081a": {
-      "expected": "x pluss 1"
+      "expected": "den positive kvadratroten av x, slutt rot, pluss 1"
     },
     "Root082": {
-      "expected": "minus x"
+      "expected": "den negative kvadratroten av x, slutt rot"
     },
     "Root083": {
-      "expected": "venstre parentes høyre parentes x 2"
+      "expected": "venstre parentes, den positive kvadratroten av x, slutt rot, høyre parentes, kvadrat"
     },
     "Root084": {
-      "expected": "venstre parentes høyre parentes minus minus x 2"
+      "expected": "venstre parentes, den negative kvadratroten av x, slutt rot, høyre parentes, kvadrat"
     },
     "Root085": {
-      "expected": "x 2"
+      "expected": "den positive kvadratroten av x, slutt rot, kvadrat"
     },
     "Root086": {
-      "expected": "x 2"
+      "expected": "den positive kvadratroten av x kvadrat, slutt rot"
     },
     "Root087": {
-      "expected": "pluss pluss x 2 y 2"
+      "expected": "den positive kvadratroten av x kvadrat pluss y kvadrat, slutt rot"
     },
     "Root088": {
-      "expected": "pluss pluss ganger ganger x 12 ganger ganger x 22"
+      "expected": "den positive kvadratroten av, x indeks 1, kvadrat pluss, x indeks 2, kvadrat, slutt rot"
     },
     "Root089": {
-      "expected": "pluss pluss venstre parentes høyre parentes minus minus x 2 x 12 venstre parentes høyre parentes minus minus y 2 y 12"
+      "expected": "den positive kvadratroten av, venstre parentes, x indeks 2, minus, x indeks 1, høyre parentes, kvadrat pluss, venstre parentes, y indeks 2, minus, y indeks 1, høyre parentes, kvadrat, slutt rot"
     },
     "Root090": {
-      "expected": "12"
+      "expected": "den positive kvadratroten av en andre, slutt rot"
     },
     "Root091": {
-      "expected": "2366"
+      "expected": "den positive kvadratroten av, 23 delt på 66, slutt rot"
     },
     "Root092": {
-      "expected": "pluss pluss x 1 pluss pluss ganger ganger 2 x 5"
+      "expected": "den positive kvadratroten av, brøk med teller x pluss 1, og nevner 2 x, pluss 5, slutt rot"
     },
     "Root093": {
-      "expected": "pluss minus pluss minus minus minus b minus minus b 2 ganger ganger ganger 4 ac ganger ganger 2 a"
+      "expected": "brøk med teller minus b pluss minus kvadratroten av b kvadrat minus 4 a c, slutt rot, og nevner 2 a"
     },
     "HighRoot001": {
-      "expected": "3 y"
+      "expected": "kubikkroten av y"
     },
     "HighRoot002": {
-      "expected": "4 n"
+      "expected": "roten av n"
     },
     "HighRoot003": {
-      "expected": "535"
+      "expected": "roten av 35"
     },
     "HighRoot004": {
-      "expected": "9146"
+      "expected": "roten av 146"
     },
     "HighRoot005": {
-      "expected": "nd"
+      "expected": "roten av d"
     },
     "HighRoot006": {
-      "expected": "m 243"
+      "expected": "roten av 243"
     },
     "HighRoot007": {
-      "expected": "i 2 i"
+      "expected": "roten av 2 i i-te potens"
     },
     "HighRoot008": {
-      "expected": "j 125"
+      "expected": "roten av 125"
     },
     "HighRoot009": {
-      "expected": "minus 3 y"
+      "expected": "minus kubikkroten av y"
     },
     "HighRoot010": {
-      "expected": "minus 4 n"
+      "expected": "minus roten av n"
     },
     "HighRoot011": {
-      "expected": "3 y"
+      "expected": "kubikkroten av y, slutt rot"
     },
     "HighRoot012": {
-      "expected": "4 n"
+      "expected": "roten av n, slutt rot"
     },
     "HighRoot013": {
-      "expected": "535"
+      "expected": "roten av 35, slutt rot"
     },
     "HighRoot014": {
-      "expected": "9146"
+      "expected": "roten av 146, slutt rot"
     },
     "HighRoot015": {
-      "expected": "nd"
+      "expected": "roten av d, slutt rot"
     },
     "HighRoot016": {
-      "expected": "m 243"
+      "expected": "roten av 243, slutt rot"
     },
     "HighRoot017": {
-      "expected": "i 2 i"
+      "expected": "roten av 2 i i-te potens, slutt rot"
     },
     "HighRoot018": {
-      "expected": "j 125"
+      "expected": "roten av 125, slutt rot"
     },
     "HighRoot019": {
-      "expected": "minus 3 y"
+      "expected": "minus kubikkroten av y, slutt rot"
     },
     "HighRoot020": {
-      "expected": "minus 4 n"
+      "expected": "minus roten av n, slutt rot"
     },
     "HighRoot021": {
-      "expected": "3 y"
+      "expected": "kubikkroten av y"
     },
     "HighRoot022": {
-      "expected": "4 n"
+      "expected": "roten av n"
     },
     "HighRoot023": {
-      "expected": "535"
+      "expected": "roten av 35"
     },
     "HighRoot024": {
-      "expected": "9146"
+      "expected": "roten av 146"
     },
     "HighRoot025": {
-      "expected": "nd"
+      "expected": "roten av d"
     },
     "HighRoot026": {
-      "expected": "m 243"
+      "expected": "roten av 243"
     },
     "HighRoot027": {
-      "expected": "i 2 i"
+      "expected": "roten av 2 i i-te potens"
     },
     "HighRoot028": {
-      "expected": "j 125"
+      "expected": "roten av 125"
     },
     "HighRoot029": {
-      "expected": "minus 3 y"
+      "expected": "minus kubikkroten av y"
     },
     "HighRoot030": {
-      "expected": "minus 4 n"
+      "expected": "minus roten av n"
     },
     "HighRoot031": {
-      "expected": "3 y"
+      "expected": "kubikkroten av y, slutt rot"
     },
     "HighRoot032": {
-      "expected": "4 n"
+      "expected": "roten av n, slutt rot"
     },
     "HighRoot033": {
-      "expected": "535"
+      "expected": "roten av 35, slutt rot"
     },
     "HighRoot034": {
-      "expected": "9146"
+      "expected": "roten av 146, slutt rot"
     },
     "HighRoot035": {
-      "expected": "nd"
+      "expected": "roten av d, slutt rot"
     },
     "HighRoot036": {
-      "expected": "m 243"
+      "expected": "roten av 243, slutt rot"
     },
     "HighRoot037": {
-      "expected": "i 2 i"
+      "expected": "roten av 2 i i-te potens, slutt rot"
     },
     "HighRoot038": {
-      "expected": "j 125"
+      "expected": "roten av 125, slutt rot"
     },
     "HighRoot039": {
-      "expected": "minus 3 y"
+      "expected": "minus kubikkroten av y, slutt rot"
     },
     "HighRoot040": {
-      "expected": "minus 4 n"
+      "expected": "minus roten av n, slutt rot"
     }
   }
 }

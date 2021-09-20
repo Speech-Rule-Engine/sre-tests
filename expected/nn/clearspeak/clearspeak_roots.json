@@ -10,415 +10,415 @@
   "compare": true,
   "tests": {
     "Root001": {
-      "expected": "the square root of 2"
+      "expected": "kvadratrota av 2"
     },
     "Root002": {
-      "expected": "3 pluss the square root of 2"
+      "expected": "3 pluss kvadratrota av 2"
     },
     "Root003": {
-      "expected": "3 pluss minus the square root of 2"
+      "expected": "3 pluss minus kvadratrota av 2"
     },
     "Root004": {
-      "expected": "3 minus pluss the square root of 2"
+      "expected": "3 minus pluss kvadratrota av 2"
     },
     "Root005": {
-      "expected": "the negative square root of 2"
+      "expected": "den negative kvadratrota av 2"
     },
     "Root006": {
-      "expected": "3 minus the square root of 2"
+      "expected": "3 minus kvadratrota av 2"
     },
     "Root007": {
-      "expected": "3 pluss the negative square root of 2"
+      "expected": "3 pluss den negative kvadratrota av 2"
     },
     "Root008": {
-      "expected": "3 minus the negative square root of 2"
+      "expected": "3 minus den negative kvadratrota av 2"
     },
     "Root009": {
-      "expected": "3 pluss, venstreparentes, the negative square root of 2, høgreparentes"
+      "expected": "3 pluss, venstreparentes, den negative kvadratrota av 2, høgreparentes"
     },
     "Root010": {
-      "expected": "3 minus, venstreparentes, the negative square root of 2, høgreparentes"
+      "expected": "3 minus, venstreparentes, den negative kvadratrota av 2, høgreparentes"
     },
     "Root011": {
-      "expected": "the square root of x pluss 1"
+      "expected": "kvadratrota av x pluss 1"
     },
     "Root011a": {
-      "expected": "the square root of x, pluss 1"
+      "expected": "kvadratrota av x, pluss 1"
     },
     "Root012": {
-      "expected": "the negative square root of x"
+      "expected": "den negative kvadratrota av x"
     },
     "Root013": {
-      "expected": "venstreparentes, the square root of x, høgreparentes, squared"
+      "expected": "venstreparentes, kvadratrota av x, høgreparentes, kvadrat"
     },
     "Root014": {
-      "expected": "negative, venstreparentes, the square root of x, høgreparentes, squared"
+      "expected": "minus, venstreparentes, kvadratrota av x, høgreparentes, kvadrat"
     },
     "Root015": {
-      "expected": "the square root of x, squared"
+      "expected": "kvadratrota av x, kvadrat"
     },
     "Root016": {
-      "expected": "the square root of x squared"
+      "expected": "kvadratrota av x kvadrat"
     },
     "Root017": {
-      "expected": "the square root of x squared pluss y squared"
+      "expected": "kvadratrota av x kvadrat pluss y kvadrat"
     },
     "Root018": {
-      "expected": "the square root of, x sub 1, squared pluss, x sub 2, squared"
+      "expected": "kvadratrota av, x indeks 1, kvadrat pluss, x indeks 2, kvadrat"
     },
     "Root019": {
-      "expected": "the square root of, venstreparentes, x sub 2, minus, x sub 1, høgreparentes, squared pluss, venstreparentes, y sub 2, minus, y sub 1, høgreparentes, squared"
+      "expected": "kvadratrota av, venstreparentes, x indeks 2, minus, x indeks 1, høgreparentes, kvadrat pluss, venstreparentes, y indeks 2, minus, y indeks 1, høgreparentes, kvadrat"
     },
     "Root020": {
-      "expected": "the square root of ein andre"
+      "expected": "kvadratrota av ein andre"
     },
     "Root021": {
-      "expected": "the square root of, 23 over 66"
+      "expected": "kvadratrota av, 23 delt på 66"
     },
     "Root022": {
-      "expected": "the square root of, the fraction with numerator x pluss 1, and denominator 2 x, pluss 5"
+      "expected": "kvadratrota av, brøk med tellar x pluss 1, og nemnar 2 x, pluss 5"
     },
     "Root023": {
-      "expected": "the fraction with numerator negative b pluss minus the square root of b squared minus 4 a c, and denominator 2 a"
+      "expected": "brøk med tellar minus b pluss minus kvadratrota av b kvadrat minus 4 a c, og nemnar 2 a"
     },
     "Root024": {
-      "expected": "the positive square root of 2"
+      "expected": "den positive kvadratrota av 2"
     },
     "Root025": {
-      "expected": "3 pluss the positive square root of 2"
+      "expected": "3 pluss den positive kvadratrota av 2"
     },
     "Root026": {
-      "expected": "3 pluss minus the square root of 2"
+      "expected": "3 pluss minus kvadratrota av 2"
     },
     "Root027": {
-      "expected": "3 minus pluss the square root of 2"
+      "expected": "3 minus pluss kvadratrota av 2"
     },
     "Root028": {
-      "expected": "the negative square root of 2"
+      "expected": "den negative kvadratrota av 2"
     },
     "Root029": {
-      "expected": "3 minus the positive square root of 2"
+      "expected": "3 minus den positive kvadratrota av 2"
     },
     "Root030": {
-      "expected": "3 pluss the negative square root of 2"
+      "expected": "3 pluss den negative kvadratrota av 2"
     },
     "Root031": {
-      "expected": "3 minus the negative square root of 2"
+      "expected": "3 minus den negative kvadratrota av 2"
     },
     "Root032": {
-      "expected": "3 pluss, venstreparentes, the negative square root of 2, høgreparentes"
+      "expected": "3 pluss, venstreparentes, den negative kvadratrota av 2, høgreparentes"
     },
     "Root033": {
-      "expected": "3 minus, venstreparentes, the negative square root of 2, høgreparentes"
+      "expected": "3 minus, venstreparentes, den negative kvadratrota av 2, høgreparentes"
     },
     "Root034": {
-      "expected": "the positive square root of x pluss 1"
+      "expected": "den positive kvadratrota av x pluss 1"
     },
     "Root034a": {
-      "expected": "the positive square root of x, pluss 1"
+      "expected": "den positive kvadratrota av x, pluss 1"
     },
     "Root035": {
-      "expected": "the negative square root of x"
+      "expected": "den negative kvadratrota av x"
     },
     "Root036": {
-      "expected": "venstreparentes, the positive square root of x, høgreparentes, squared"
+      "expected": "venstreparentes, den positive kvadratrota av x, høgreparentes, kvadrat"
     },
     "Root037": {
-      "expected": "venstreparentes, the negative square root of x, høgreparentes, squared"
+      "expected": "venstreparentes, den negative kvadratrota av x, høgreparentes, kvadrat"
     },
     "Root038": {
-      "expected": "negative, venstreparentes, the positive square root of x, høgreparentes, squared"
+      "expected": "minus, venstreparentes, den positive kvadratrota av x, høgreparentes, kvadrat"
     },
     "Root039": {
-      "expected": "the positive square root of x, squared"
+      "expected": "den positive kvadratrota av x, kvadrat"
     },
     "Root040": {
-      "expected": "the positive square root of x squared"
+      "expected": "den positive kvadratrota av x kvadrat"
     },
     "Root041": {
-      "expected": "the positive square root of x squared pluss y squared"
+      "expected": "den positive kvadratrota av x kvadrat pluss y kvadrat"
     },
     "Root042": {
-      "expected": "the positive square root of, x sub 1, squared pluss, x sub 2, squared"
+      "expected": "den positive kvadratrota av, x indeks 1, kvadrat pluss, x indeks 2, kvadrat"
     },
     "Root043": {
-      "expected": "the positive square root of, venstreparentes, x sub 2, minus, x sub 1, høgreparentes, squared pluss, venstreparentes, y sub 2, minus, y sub 1, høgreparentes, squared"
+      "expected": "den positive kvadratrota av, venstreparentes, x indeks 2, minus, x indeks 1, høgreparentes, kvadrat pluss, venstreparentes, y indeks 2, minus, y indeks 1, høgreparentes, kvadrat"
     },
     "Root044": {
-      "expected": "the positive square root of ein andre"
+      "expected": "den positive kvadratrota av ein andre"
     },
     "Root045": {
-      "expected": "the positive square root of, 23 over 66"
+      "expected": "den positive kvadratrota av, 23 delt på 66"
     },
     "Root046": {
-      "expected": "the positive square root of, the fraction with numerator x pluss 1, and denominator 2 x, pluss 5"
+      "expected": "den positive kvadratrota av, brøk med tellar x pluss 1, og nemnar 2 x, pluss 5"
     },
     "Root047": {
-      "expected": "the fraction with numerator negative b pluss minus the square root of b squared minus 4 a c, and denominator 2 a"
+      "expected": "brøk med tellar minus b pluss minus kvadratrota av b kvadrat minus 4 a c, og nemnar 2 a"
     },
     "Root048": {
-      "expected": "the square root of 2, end root"
+      "expected": "kvadratrota av 2, slutt rot"
     },
     "Root049": {
-      "expected": "3 pluss the square root of 2, end root"
+      "expected": "3 pluss kvadratrota av 2, slutt rot"
     },
     "Root050": {
-      "expected": "3 pluss minus the square root of 2, end root"
+      "expected": "3 pluss minus kvadratrota av 2, slutt rot"
     },
     "Root051": {
-      "expected": "3 minus pluss the square root of 2, end root"
+      "expected": "3 minus pluss kvadratrota av 2, slutt rot"
     },
     "Root052": {
-      "expected": "the negative square root of 2, end root"
+      "expected": "den negative kvadratrota av 2, slutt rot"
     },
     "Root053": {
-      "expected": "3 minus the square root of 2, end root"
+      "expected": "3 minus kvadratrota av 2, slutt rot"
     },
     "Root054": {
-      "expected": "3 pluss the negative square root of 2, end root"
+      "expected": "3 pluss den negative kvadratrota av 2, slutt rot"
     },
     "Root055": {
-      "expected": "3 minus the negative square root of 2, end root"
+      "expected": "3 minus den negative kvadratrota av 2, slutt rot"
     },
     "Root056": {
-      "expected": "3 pluss, venstreparentes, the negative square root of 2, end root, høgreparentes"
+      "expected": "3 pluss, venstreparentes, den negative kvadratrota av 2, slutt rot, høgreparentes"
     },
     "Root057": {
-      "expected": "3 minus, venstreparentes, the negative square root of 2, end root, høgreparentes"
+      "expected": "3 minus, venstreparentes, den negative kvadratrota av 2, slutt rot, høgreparentes"
     },
     "Root058": {
-      "expected": "the square root of x pluss 1, end root"
+      "expected": "kvadratrota av x pluss 1, slutt rot"
     },
     "Root058a": {
-      "expected": "the square root of x, end root, pluss 1"
+      "expected": "kvadratrota av x, slutt rot, pluss 1"
     },
     "Root059": {
-      "expected": "the negative square root of x, end root"
+      "expected": "den negative kvadratrota av x, slutt rot"
     },
     "Root060": {
-      "expected": "venstreparentes, the square root of x, end root, høgreparentes, squared"
+      "expected": "venstreparentes, kvadratrota av x, slutt rot, høgreparentes, kvadrat"
     },
     "Root061": {
-      "expected": "negative, venstreparentes, the square root of x, end root, høgreparentes, squared"
+      "expected": "minus, venstreparentes, kvadratrota av x, slutt rot, høgreparentes, kvadrat"
     },
     "Root062": {
-      "expected": "the square root of x, end root, squared"
+      "expected": "kvadratrota av x, slutt rot, kvadrat"
     },
     "Root063": {
-      "expected": "the square root of x squared, end root"
+      "expected": "kvadratrota av x kvadrat, slutt rot"
     },
     "Root064": {
-      "expected": "the square root of x squared pluss y squared, end root"
+      "expected": "kvadratrota av x kvadrat pluss y kvadrat, slutt rot"
     },
     "Root065": {
-      "expected": "the square root of, x sub 1, squared pluss, x sub 2, squared, end root"
+      "expected": "kvadratrota av, x indeks 1, kvadrat pluss, x indeks 2, kvadrat, slutt rot"
     },
     "Root066": {
-      "expected": "the square root of, venstreparentes, x sub 2, minus, x sub 1, høgreparentes, squared pluss, venstreparentes, y sub 2, minus, y sub 1, høgreparentes, squared, end root"
+      "expected": "kvadratrota av, venstreparentes, x indeks 2, minus, x indeks 1, høgreparentes, kvadrat pluss, venstreparentes, y indeks 2, minus, y indeks 1, høgreparentes, kvadrat, slutt rot"
     },
     "Root067": {
-      "expected": "the square root of ein andre, end root"
+      "expected": "kvadratrota av ein andre, slutt rot"
     },
     "Root068": {
-      "expected": "the square root of, 23 over 66, end root"
+      "expected": "kvadratrota av, 23 delt på 66, slutt rot"
     },
     "Root069": {
-      "expected": "the square root of, the fraction with numerator x pluss 1, and denominator 2 x, pluss 5, end root"
+      "expected": "kvadratrota av, brøk med tellar x pluss 1, og nemnar 2 x, pluss 5, slutt rot"
     },
     "Root070": {
-      "expected": "the fraction with numerator negative b pluss minus the square root of b squared minus 4 a c, end root, and denominator 2 a"
+      "expected": "brøk med tellar minus b pluss minus kvadratrota av b kvadrat minus 4 a c, slutt rot, og nemnar 2 a"
     },
     "Root071": {
-      "expected": "the positive square root of 2, end root"
+      "expected": "den positive kvadratrota av 2, slutt rot"
     },
     "Root072": {
-      "expected": "3 pluss the positive square root of 2, end root"
+      "expected": "3 pluss den positive kvadratrota av 2, slutt rot"
     },
     "Root073": {
-      "expected": "3 pluss minus the square root of 2, end root"
+      "expected": "3 pluss minus kvadratrota av 2, slutt rot"
     },
     "Root074": {
-      "expected": "3 minus pluss the square root of 2, end root"
+      "expected": "3 minus pluss kvadratrota av 2, slutt rot"
     },
     "Root075": {
-      "expected": "the negative square root of 2, end root"
+      "expected": "den negative kvadratrota av 2, slutt rot"
     },
     "Root076": {
-      "expected": "3 minus the positive square root of 2, end root"
+      "expected": "3 minus den positive kvadratrota av 2, slutt rot"
     },
     "Root077": {
-      "expected": "3 pluss the negative square root of 2, end root"
+      "expected": "3 pluss den negative kvadratrota av 2, slutt rot"
     },
     "Root078": {
-      "expected": "3 minus the negative square root of 2, end root"
+      "expected": "3 minus den negative kvadratrota av 2, slutt rot"
     },
     "Root079": {
-      "expected": "3 pluss, venstreparentes, the negative square root of 2, end root, høgreparentes"
+      "expected": "3 pluss, venstreparentes, den negative kvadratrota av 2, slutt rot, høgreparentes"
     },
     "Root080": {
-      "expected": "3 minus, venstreparentes, the negative square root of 2, end root, høgreparentes"
+      "expected": "3 minus, venstreparentes, den negative kvadratrota av 2, slutt rot, høgreparentes"
     },
     "Root081": {
-      "expected": "the positive square root of x pluss 1, end root"
+      "expected": "den positive kvadratrota av x pluss 1, slutt rot"
     },
     "Root081a": {
-      "expected": "the positive square root of x, end root, pluss 1"
+      "expected": "den positive kvadratrota av x, slutt rot, pluss 1"
     },
     "Root082": {
-      "expected": "the negative square root of x, end root"
+      "expected": "den negative kvadratrota av x, slutt rot"
     },
     "Root083": {
-      "expected": "venstreparentes, the positive square root of x, end root, høgreparentes, squared"
+      "expected": "venstreparentes, den positive kvadratrota av x, slutt rot, høgreparentes, kvadrat"
     },
     "Root084": {
-      "expected": "venstreparentes, the negative square root of x, end root, høgreparentes, squared"
+      "expected": "venstreparentes, den negative kvadratrota av x, slutt rot, høgreparentes, kvadrat"
     },
     "Root085": {
-      "expected": "the positive square root of x, end root, squared"
+      "expected": "den positive kvadratrota av x, slutt rot, kvadrat"
     },
     "Root086": {
-      "expected": "the positive square root of x squared, end root"
+      "expected": "den positive kvadratrota av x kvadrat, slutt rot"
     },
     "Root087": {
-      "expected": "the positive square root of x squared pluss y squared, end root"
+      "expected": "den positive kvadratrota av x kvadrat pluss y kvadrat, slutt rot"
     },
     "Root088": {
-      "expected": "the positive square root of, x sub 1, squared pluss, x sub 2, squared, end root"
+      "expected": "den positive kvadratrota av, x indeks 1, kvadrat pluss, x indeks 2, kvadrat, slutt rot"
     },
     "Root089": {
-      "expected": "the positive square root of, venstreparentes, x sub 2, minus, x sub 1, høgreparentes, squared pluss, venstreparentes, y sub 2, minus, y sub 1, høgreparentes, squared, end root"
+      "expected": "den positive kvadratrota av, venstreparentes, x indeks 2, minus, x indeks 1, høgreparentes, kvadrat pluss, venstreparentes, y indeks 2, minus, y indeks 1, høgreparentes, kvadrat, slutt rot"
     },
     "Root090": {
-      "expected": "the positive square root of ein andre, end root"
+      "expected": "den positive kvadratrota av ein andre, slutt rot"
     },
     "Root091": {
-      "expected": "the positive square root of, 23 over 66, end root"
+      "expected": "den positive kvadratrota av, 23 delt på 66, slutt rot"
     },
     "Root092": {
-      "expected": "the positive square root of, the fraction with numerator x pluss 1, and denominator 2 x, pluss 5, end root"
+      "expected": "den positive kvadratrota av, brøk med tellar x pluss 1, og nemnar 2 x, pluss 5, slutt rot"
     },
     "Root093": {
-      "expected": "the fraction with numerator negative b pluss minus the square root of b squared minus 4 a c, end root, and denominator 2 a"
+      "expected": "brøk med tellar minus b pluss minus kvadratrota av b kvadrat minus 4 a c, slutt rot, og nemnar 2 a"
     },
     "HighRoot001": {
-      "expected": "the cube root of y"
+      "expected": "kubikkrota av y"
     },
     "HighRoot002": {
-      "expected": "the fjerde root of n"
+      "expected": "rota av n"
     },
     "HighRoot003": {
-      "expected": "the femte root of 35"
+      "expected": "rota av 35"
     },
     "HighRoot004": {
-      "expected": "the niande root of 146"
+      "expected": "rota av 146"
     },
     "HighRoot005": {
-      "expected": "the n-th root of d"
+      "expected": "rota av d"
     },
     "HighRoot006": {
-      "expected": "the m-th root of 243"
+      "expected": "rota av 243"
     },
     "HighRoot007": {
-      "expected": "the I-th root of 2 to the I-th power"
+      "expected": "rota av 2 i I-te potens"
     },
     "HighRoot008": {
-      "expected": "the j-th root of 125"
+      "expected": "rota av 125"
     },
     "HighRoot009": {
-      "expected": "negative the cube root of y"
+      "expected": "minus kubikkrota av y"
     },
     "HighRoot010": {
-      "expected": "negative the fjerde root of n"
+      "expected": "minus rota av n"
     },
     "HighRoot011": {
-      "expected": "the cube root of y, end root"
+      "expected": "kubikkrota av y, slutt rot"
     },
     "HighRoot012": {
-      "expected": "the fjerde root of n, end root"
+      "expected": "rota av n, slutt rot"
     },
     "HighRoot013": {
-      "expected": "the femte root of 35, end root"
+      "expected": "rota av 35, slutt rot"
     },
     "HighRoot014": {
-      "expected": "the niande root of 146, end root"
+      "expected": "rota av 146, slutt rot"
     },
     "HighRoot015": {
-      "expected": "the n-th root of d, end root"
+      "expected": "rota av d, slutt rot"
     },
     "HighRoot016": {
-      "expected": "the m-th root of 243, end root"
+      "expected": "rota av 243, slutt rot"
     },
     "HighRoot017": {
-      "expected": "the I-th root of 2 to the I-th power, end root"
+      "expected": "rota av 2 i I-te potens, slutt rot"
     },
     "HighRoot018": {
-      "expected": "the j-th root of 125, end root"
+      "expected": "rota av 125, slutt rot"
     },
     "HighRoot019": {
-      "expected": "negative the cube root of y, end root"
+      "expected": "minus kubikkrota av y, slutt rot"
     },
     "HighRoot020": {
-      "expected": "negative the fjerde root of n, end root"
+      "expected": "minus rota av n, slutt rot"
     },
     "HighRoot021": {
-      "expected": "the cube root of y"
+      "expected": "kubikkrota av y"
     },
     "HighRoot022": {
-      "expected": "the fjerde root of n"
+      "expected": "rota av n"
     },
     "HighRoot023": {
-      "expected": "the femte root of 35"
+      "expected": "rota av 35"
     },
     "HighRoot024": {
-      "expected": "the niande root of 146"
+      "expected": "rota av 146"
     },
     "HighRoot025": {
-      "expected": "the n-th root of d"
+      "expected": "rota av d"
     },
     "HighRoot026": {
-      "expected": "the m-th root of 243"
+      "expected": "rota av 243"
     },
     "HighRoot027": {
-      "expected": "the I-th root of 2 to the I-th power"
+      "expected": "rota av 2 i I-te potens"
     },
     "HighRoot028": {
-      "expected": "the j-th root of 125"
+      "expected": "rota av 125"
     },
     "HighRoot029": {
-      "expected": "negative the cube root of y"
+      "expected": "minus kubikkrota av y"
     },
     "HighRoot030": {
-      "expected": "negative the fjerde root of n"
+      "expected": "minus rota av n"
     },
     "HighRoot031": {
-      "expected": "the cube root of y, end root"
+      "expected": "kubikkrota av y, slutt rot"
     },
     "HighRoot032": {
-      "expected": "the fjerde root of n, end root"
+      "expected": "rota av n, slutt rot"
     },
     "HighRoot033": {
-      "expected": "the femte root of 35, end root"
+      "expected": "rota av 35, slutt rot"
     },
     "HighRoot034": {
-      "expected": "the niande root of 146, end root"
+      "expected": "rota av 146, slutt rot"
     },
     "HighRoot035": {
-      "expected": "the n-th root of d, end root"
+      "expected": "rota av d, slutt rot"
     },
     "HighRoot036": {
-      "expected": "the m-th root of 243, end root"
+      "expected": "rota av 243, slutt rot"
     },
     "HighRoot037": {
-      "expected": "the I-th root of 2 to the I-th power, end root"
+      "expected": "rota av 2 i I-te potens, slutt rot"
     },
     "HighRoot038": {
-      "expected": "the j-th root of 125, end root"
+      "expected": "rota av 125, slutt rot"
     },
     "HighRoot039": {
-      "expected": "negative the cube root of y, end root"
+      "expected": "minus kubikkrota av y, slutt rot"
     },
     "HighRoot040": {
-      "expected": "negative the fjerde root of n, end root"
+      "expected": "minus rota av n, slutt rot"
     }
   }
 }

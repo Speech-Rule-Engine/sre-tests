@@ -10,121 +10,121 @@
   "compare": true,
   "tests": {
     "Log001": {
-      "expected": "av loglogx"
+      "expected": "log x"
     },
     "Log002": {
-      "expected": "av loglog 10 x"
+      "expected": "log basis 10 av, x"
     },
     "Log003": {
-      "expected": "av loglogb ganger ganger ax er lik av loglogba pluss av loglogbx"
+      "expected": "log basis b av, a x, er lik, log basis b av, a, pluss, log basis b av, x"
     },
     "Log004": {
-      "expected": "av loglogbST er lik av loglogbS minus av loglogbT"
+      "expected": "log basis b av, S delt på T, er lik, log basis b av, S, minus, log basis b av, T"
     },
     "Log005": {
-      "expected": "av loglogb venstre parentes høyre parentes xk er lik k av loglogbx"
+      "expected": "log basis b av, venstre parentes, x i k-te potens, høyre parentes, er lik k, log basis b av, x"
     },
     "Log006": {
-      "expected": "10 av loglog 10 x er lik x"
+      "expected": "10 hevet til log basis 10 av, x, er lik x"
     },
     "Log007": {
-      "expected": "av loglog 101 0 x er lik x"
+      "expected": "log basis 10 av, 10 i x-te potens, er lik x"
     },
     "Log008": {
-      "expected": "10 av loglog 105 er lik 5"
+      "expected": "10 hevet til log basis 10 av, 5, er lik 5"
     },
     "Log009": {
-      "expected": "av loglog 10103 er lik 3"
+      "expected": "log basis 10 av, 10 kubikk, er lik 3"
     },
     "Log010": {
-      "expected": "av loglogax er lik av loglogbx av loglogba"
+      "expected": "log basis a av, x, er lik, log basis b av, x, delt på, log basis b av, a"
     },
     "Log011": {
-      "expected": "av loglog 101 8 av loglog 103 er lik av loglog 318"
+      "expected": "log basis 10 av, 18, delt på, log basis 10 av, 3, er lik, log basis 3 av, 18"
     },
     "Log012": {
-      "expected": "av loglogx av logloga"
+      "expected": "log x delt på log a"
     },
     "Log013": {
-      "expected": "av loglog venstre parentes høyre parentes pluss pluss x 1"
+      "expected": "log av, venstre parentes, x pluss 1, høyre parentes"
     },
     "Log014": {
-      "expected": "av loglog venstre parentes høyre parentes pluss pluss x 12"
+      "expected": "log av, venstre parentes, x pluss 1, høyre parentes, kvadrat"
     },
     "Log015": {
-      "expected": "av loglog venstre parentes høyre parentes ganger ganger xy"
+      "expected": "log x y"
     },
     "Log016": {
-      "expected": "av loglog venstre parentes høyre parentes pluss pluss x 1 av loglog venstre parentes høyre parentes pluss pluss x 2"
+      "expected": "brøk med teller, log av, venstre parentes, x pluss 1, høyre parentes, og nevner, log av, venstre parentes, x pluss 2, høyre parentes"
     },
     "Log017": {
-      "expected": "av loglog 6 venstre parentes høyre parentes pluss pluss x 1 av loglog 6 venstre parentes høyre parentes pluss pluss x 2"
+      "expected": "brøk med teller, log basis 6 av, venstre parentes, x pluss 1, høyre parentes, og nevner, log basis 6 av, venstre parentes, x pluss 2, høyre parentes"
     },
     "Log018": {
-      "expected": "pluss pluss av loglog 40 av loglog 60 av loglog 5"
+      "expected": "brøk med teller log 40 pluss log 60, og nevner log 5"
     },
     "Log019": {
-      "expected": "pluss pluss av loglog 340 av loglog 360 av loglog 35"
+      "expected": "brøk med teller, log basis 3 av, 40, pluss, log basis 3 av, 60, og nevner, log basis 3 av, 5"
     },
     "Log020": {
-      "expected": "av loglog venstre parentes høyre parentes ganger ganger 34129 er lik 4 av loglog 3, pluss 9 av loglog 12"
+      "expected": "log av, venstre parentes, 3 i fjerde potens, 12 i niende potens, høyre parentes, er lik 4 log 3, pluss 9 log 12"
     },
     "Log021": {
-      "expected": "av loglog venstre parentes høyre parentes xy"
+      "expected": "log av, venstre parentes, x delt på y, høyre parentes"
     },
     "Log022": {
-      "expected": "av loglog venstre parentes høyre parentes 34810 er lik 4 av loglog 3, minus 10 av loglog 8"
+      "expected": "log av, venstre parentes, brøk med teller 3 i fjerde potens, og nevner 8 i tiende potens, høyre parentes, er lik 4 log 3, minus 10 log 8"
     },
     "Log023": {
-      "expected": "10 av loglogx"
+      "expected": "10 hevet til log x"
     },
     "NatLog001": {
-      "expected": "av lnlnx"
+      "expected": "ln x"
     },
     "NatLog002": {
-      "expected": "av lnlnx minus av lnln venstre parentes høyre parentes minus minus x 1 er lik av lnln venstre parentes høyre parentes x minus minus x 1"
+      "expected": "ln x, minus ln av, venstre parentes, x minus 1, høyre parentes, er lik ln av, venstre parentes, brøk med teller x, og nevner x minus 1, høyre parentes"
     },
     "NatLog003": {
-      "expected": "av lnln venstre parentes høyre parentes ex er lik x"
+      "expected": "ln av, venstre parentes, e i x-te potens, høyre parentes, er lik x"
     },
     "NatLog004": {
-      "expected": "e av lnlnx er lik x"
+      "expected": "e hevet til ln x, er lik x"
     },
     "NatLog005": {
-      "expected": "av lnln venstre parentes høyre parentes ex er lik x"
+      "expected": "ln av, venstre parentes, e i x-te potens, høyre parentes, er lik x"
     },
     "NatLog006": {
-      "expected": "e av lnln 4 er lik 4"
+      "expected": "e hevet til ln 4, er lik 4"
     },
     "NatLog007": {
-      "expected": "av lnln 40 av lnln 5 er lik av loglog 540"
+      "expected": "ln 40, delt på ln 5, er lik, log basis 5 av, 40"
     },
     "NatLog008": {
-      "expected": "pluss pluss av lnln 40 av lnln 60 av lnln 5"
+      "expected": "brøk med teller ln 40, pluss ln 60, og nevner ln 5"
     },
     "NatLog009": {
-      "expected": "av lnlnx"
+      "expected": "ln x"
     },
     "NatLog010": {
-      "expected": "av lnlnx, minus av lnln venstre parentes høyre parentes minus minus x 1 er lik av lnln venstre parentes høyre parentes x minus minus x 1"
+      "expected": "ln x, minus, ln av, venstre parentes, x minus 1, høyre parentes, er lik, ln av, venstre parentes, brøk med teller x, og nevner x minus 1, høyre parentes"
     },
     "NatLog011": {
-      "expected": "av lnln venstre parentes høyre parentes ex, er lik x"
+      "expected": "ln av, venstre parentes, e i x-te potens, høyre parentes, er lik x"
     },
     "NatLog012": {
-      "expected": "e av lnlnx er lik x"
+      "expected": "e hevet til ln x, er lik x"
     },
     "NatLog013": {
-      "expected": "av lnln venstre parentes høyre parentes ex, er lik x"
+      "expected": "ln av, venstre parentes, e i x-te potens, høyre parentes, er lik x"
     },
     "NatLog014": {
-      "expected": "e av lnln 4 er lik 4"
+      "expected": "e hevet til ln 4, er lik 4"
     },
     "NatLog015": {
-      "expected": "av lnln 40 av lnln 5 er lik av loglog 540"
+      "expected": "ln 40, delt på ln 5, er lik, log basis 5 av, 40"
     },
     "NatLog016": {
-      "expected": "pluss pluss av lnln 40 av lnln 60 av lnln 5"
+      "expected": "brøk med teller ln 40, pluss ln 60, og nevner ln 5"
     }
   }
 }

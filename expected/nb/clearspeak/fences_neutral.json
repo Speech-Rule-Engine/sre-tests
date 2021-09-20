@@ -46,46 +46,46 @@
   "compare": true,
   "tests": {
     "BarFenced_0_default": {
-      "expected": "vertikalstrek vertikalstrek a"
+      "expected": "den absolutte verdien av a"
     },
     "BarFenced_1_default": {
-      "expected": "vertikal strek vertikal strek a"
+      "expected": "den absolutte verdien av a"
     },
     "BarFenced_2_default": {
-      "expected": "brutt vertikalstrek brutt vertikalstrek a"
+      "expected": "den absolutte verdien av a"
     },
     "BarFenced_3_default": {
-      "expected": "parallell til parallell til a"
+      "expected": "beregningen av a"
     },
     "BarFenced_4_default": {
-      "expected": "trippel vertikalstrek-avgrensing trippel vertikalstrek-avgrensing a"
+      "expected": "beregningen av a"
     },
     "BarFenced_5_default": {
-      "expected": "trippel vertikalstrek med horisontal strek trippel vertikalstrek med horisontal strek a"
+      "expected": "beregningen av a"
     },
     "BarFenced_6_default": {
-      "expected": "dobbel vertikal strek dobbel vertikal strek a"
+      "expected": "beregningen av a"
     },
     "BarFencedMixed_0_default": {
-      "expected": "vertikal strek a dobbel vertikal strek"
+      "expected": "deler a dobbel vertikal strek"
     },
     "BarFencedMixed_1_default": {
       "expected": "parallell til a dobbel vertikal strek"
     },
     "BarFencedMixed_2_default": {
-      "expected": "vertikal strek a brutt vertikalstrek"
+      "expected": "deler a deler"
     },
     "BarFencedMixed_3_default": {
       "expected": "trippel vertikalstrek-avgrensing a dobbel vertikal strek"
     },
     "CenterBar_0_default": {
-      "expected": "a vertikal strek b"
+      "expected": "a deler b"
     },
     "CenterBar_1_default": {
-      "expected": "a vertikalstrek b"
+      "expected": "a deler b"
     },
     "CenterBar_2_default": {
-      "expected": "a brutt vertikalstrek b"
+      "expected": "a deler b"
     },
     "CenterBar_3_default": {
       "expected": "a dobbel vertikal strek b"
@@ -97,13 +97,13 @@
       "expected": "a trippel vertikalstrek-avgrensing b"
     },
     "CenterBarFunc_0_default": {
-      "expected": "f vertikal strek g"
+      "expected": "f deler g"
     },
     "CenterBarFunc_1_default": {
-      "expected": "f vertikalstrek g"
+      "expected": "f deler g"
     },
     "CenterBarFunc_2_default": {
-      "expected": "f brutt vertikalstrek g"
+      "expected": "f deler g"
     },
     "CenterBarFunc_3_default": {
       "expected": "f dobbel vertikal strek g"
@@ -118,82 +118,82 @@
       "expected": "sinus trippel vertikalstrek-avgrensing g"
     },
     "Function_0_default": {
-      "expected": "av ff vertikalstrek vertikalstrek a"
+      "expected": "f av, den absolutte verdien av a"
     },
     "Function_1_default": {
-      "expected": "av gg vertikalstrek vertikalstrek a"
+      "expected": "g av, den absolutte verdien av a"
     },
     "Function_2_default": {
-      "expected": "av hh vertikalstrek vertikalstrek a"
+      "expected": "h av, den absolutte verdien av a"
     },
     "Function_3_default": {
-      "expected": "r ganger vertikalstrek vertikalstrek a"
+      "expected": "r ganger, den absolutte verdien av a"
     },
     "Function_4_default": {
-      "expected": "av sinsin vertikalstrek vertikalstrek a"
+      "expected": "sinus, den absolutte verdien av a"
     },
     "Function_5_default": {
-      "expected": "sum sum vertikalstrek vertikalstrek a"
+      "expected": "sum over, den absolutte verdien av a"
     },
     "FunctionMetric0_default": {
-      "expected": "av ff dobbel vertikal strek dobbel vertikal strek a"
+      "expected": "f av, beregningen av a"
     },
     "FunctionMetric1_default": {
-      "expected": "av gg dobbel vertikal strek dobbel vertikal strek a"
+      "expected": "g av, beregningen av a"
     },
     "FunctionMetric2_default": {
-      "expected": "av hh dobbel vertikal strek dobbel vertikal strek a"
+      "expected": "h av, beregningen av a"
     },
     "FunctionMetric3_default": {
-      "expected": "r ganger dobbel vertikal strek dobbel vertikal strek a"
+      "expected": "r ganger, beregningen av a"
     },
     "FunctionMetric4_default": {
-      "expected": "av sinsin dobbel vertikal strek dobbel vertikal strek a"
+      "expected": "sinus, beregningen av a"
     },
     "FunctionMetric5_default": {
-      "expected": "sum sum dobbel vertikal strek dobbel vertikal strek a"
+      "expected": "sum over, beregningen av a"
     },
     "BarFenced_0_AbsoluteValue_AbsEnd": {
-      "expected": "vertikalstrek vertikalstrek a"
+      "expected": "den absolutte verdien av a, slutt absolutt verdi"
     },
     "BarFenced_1_AbsoluteValue_AbsEnd": {
-      "expected": "vertikal strek vertikal strek a"
+      "expected": "den absolutte verdien av a, slutt absolutt verdi"
     },
     "BarFenced_2_AbsoluteValue_AbsEnd": {
-      "expected": "brutt vertikalstrek brutt vertikalstrek a"
+      "expected": "den absolutte verdien av a, slutt absolutt verdi"
     },
     "BarFenced_3_AbsoluteValue_AbsEnd": {
-      "expected": "parallell til parallell til a"
+      "expected": "beregningen av a, slutt beregning"
     },
     "BarFenced_4_AbsoluteValue_AbsEnd": {
-      "expected": "trippel vertikalstrek-avgrensing trippel vertikalstrek-avgrensing a"
+      "expected": "beregningen av a, slutt beregning"
     },
     "BarFenced_5_AbsoluteValue_AbsEnd": {
-      "expected": "trippel vertikalstrek med horisontal strek trippel vertikalstrek med horisontal strek a"
+      "expected": "beregningen av a, slutt beregning"
     },
     "BarFenced_6_AbsoluteValue_AbsEnd": {
-      "expected": "dobbel vertikal strek dobbel vertikal strek a"
+      "expected": "beregningen av a, slutt beregning"
     },
     "BarFencedMixed_0_AbsoluteValue_AbsEnd": {
-      "expected": "vertikal strek a dobbel vertikal strek"
+      "expected": "deler a dobbel vertikal strek"
     },
     "BarFencedMixed_1_AbsoluteValue_AbsEnd": {
       "expected": "parallell til a dobbel vertikal strek"
     },
     "BarFencedMixed_2_AbsoluteValue_AbsEnd": {
-      "expected": "vertikal strek a brutt vertikalstrek"
+      "expected": "deler a deler"
     },
     "BarFencedMixed_3_AbsoluteValue_AbsEnd": {
       "expected": "trippel vertikalstrek-avgrensing a dobbel vertikal strek"
     },
     "CenterBar_0_AbsoluteValue_AbsEnd": {
-      "expected": "a vertikal strek b"
+      "expected": "a deler b"
     },
     "CenterBar_1_AbsoluteValue_AbsEnd": {
-      "expected": "a vertikalstrek b"
+      "expected": "a deler b"
     },
     "CenterBar_2_AbsoluteValue_AbsEnd": {
-      "expected": "a brutt vertikalstrek b"
+      "expected": "a deler b"
     },
     "CenterBar_3_AbsoluteValue_AbsEnd": {
       "expected": "a dobbel vertikal strek b"
@@ -205,49 +205,49 @@
       "expected": "a trippel vertikalstrek-avgrensing b"
     },
     "Function_0_AbsoluteValue_AbsEnd": {
-      "expected": "av ff vertikalstrek vertikalstrek a"
+      "expected": "f av, den absolutte verdien av a, slutt absolutt verdi"
     },
     "Function_1_AbsoluteValue_AbsEnd": {
-      "expected": "av gg vertikalstrek vertikalstrek a"
+      "expected": "g av, den absolutte verdien av a, slutt absolutt verdi"
     },
     "Function_2_AbsoluteValue_AbsEnd": {
-      "expected": "av hh vertikalstrek vertikalstrek a"
+      "expected": "h av, den absolutte verdien av a, slutt absolutt verdi"
     },
     "Function_3_AbsoluteValue_AbsEnd": {
-      "expected": "r ganger vertikalstrek vertikalstrek a"
+      "expected": "r ganger, den absolutte verdien av a, slutt absolutt verdi"
     },
     "Function_4_AbsoluteValue_AbsEnd": {
-      "expected": "av sinsin vertikalstrek vertikalstrek a"
+      "expected": "sinus, den absolutte verdien av a, slutt absolutt verdi"
     },
     "Function_5_AbsoluteValue_AbsEnd": {
-      "expected": "sum sum vertikalstrek vertikalstrek a"
+      "expected": "sum over, den absolutte verdien av a, slutt absolutt verdi"
     },
     "FunctionMetric0_AbsoluteValue_AbsEnd": {
-      "expected": "av ff dobbel vertikal strek dobbel vertikal strek a"
+      "expected": "f av, beregningen av a, slutt beregning"
     },
     "FunctionMetric1_AbsoluteValue_AbsEnd": {
-      "expected": "av gg dobbel vertikal strek dobbel vertikal strek a"
+      "expected": "g av, beregningen av a, slutt beregning"
     },
     "FunctionMetric2_AbsoluteValue_AbsEnd": {
-      "expected": "av hh dobbel vertikal strek dobbel vertikal strek a"
+      "expected": "h av, beregningen av a, slutt beregning"
     },
     "FunctionMetric3_AbsoluteValue_AbsEnd": {
-      "expected": "r ganger dobbel vertikal strek dobbel vertikal strek a"
+      "expected": "r ganger, beregningen av a, slutt beregning"
     },
     "FunctionMetric4_AbsoluteValue_AbsEnd": {
-      "expected": "av sinsin dobbel vertikal strek dobbel vertikal strek a"
+      "expected": "sinus, beregningen av a, slutt beregning"
     },
     "FunctionMetric5_AbsoluteValue_AbsEnd": {
-      "expected": "sum sum dobbel vertikal strek dobbel vertikal strek a"
+      "expected": "sum over, beregningen av a, slutt beregning"
     },
     "CenterBarFunc_0_AbsoluteValue_AbsEnd": {
-      "expected": "f vertikal strek g"
+      "expected": "f deler g"
     },
     "CenterBarFunc_1_AbsoluteValue_AbsEnd": {
-      "expected": "f vertikalstrek g"
+      "expected": "f deler g"
     },
     "CenterBarFunc_2_AbsoluteValue_AbsEnd": {
-      "expected": "f brutt vertikalstrek g"
+      "expected": "f deler g"
     },
     "CenterBarFunc_3_AbsoluteValue_AbsEnd": {
       "expected": "f dobbel vertikal strek g"

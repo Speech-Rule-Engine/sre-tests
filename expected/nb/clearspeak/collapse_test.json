@@ -99,163 +99,163 @@
   "compare": true,
   "tests": {
     "CollapsedAddition_default": {
-      "expected": "a pluss b"
+      "expected": "kollapset sum med 2 delsummer"
     },
     "CollapsedBigop_default": {
-      "expected": "sum sum x"
+      "expected": "kollapset sum"
     },
     "CollapsedBinomial_default": {
-      "expected": "venstre parentes høyre parentes xy"
+      "expected": "kollapset binomialkoeffisient"
     },
     "CollapsedCases_default": {
-      "expected": "venstre krøllparentes y 0 y 2"
+      "expected": "kollapset case-setning med 2 caser"
     },
     "CollapsedContinuedFraction_default": {
-      "expected": "b 1 pluss pluss a 1 b 2 pluss pluss a 2 b 3 pluss pluss a 3 prikk prikk prikk"
+      "expected": "kollapset kjedebrøk"
     },
     "CollapsedDeterminant_default": {
-      "expected": "vertikalstrek vertikalstrek abcd"
+      "expected": "kollapset 2 dimensjonal determinant"
     },
     "CollapsedFraction_default": {
-      "expected": "1 x"
+      "expected": "kollapset brøk"
     },
     "CollapsedFunction_default": {
-      "expected": "sinus"
+      "expected": "kollapset funksjonsuttrykk"
     },
     "CollapsedIdentifier_default": {
-      "expected": "a"
+      "expected": "kollapset lang identifikator"
     },
     "CollapsedInfixop_default": {
-      "expected": "a skråstrek b"
+      "expected": "kollapset divisjon med 2 elementer"
     },
     "CollapsedIntegral_default": {
-      "expected": "konturintegral konturintegral prikk prikk Eddl"
+      "expected": "kollapset integral"
     },
     "CollapsedLim_default": {
-      "expected": "grense"
+      "expected": "kollapset grenseverdifunksjon"
     },
     "CollapsedMatrix_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes abcdef"
+      "expected": "kollapset 3 ganger 2 matrise"
     },
     "CollapsedMixedNumber_default": {
-      "expected": ""
+      "expected": "kollapset langt blandet nummer"
     },
     "CollapsedMultiplication_default": {
-      "expected": "a asterisk b"
+      "expected": "kollapset produkt med 2 faktorer"
     },
     "CollapsedMultirel_default": {
-      "expected": "a er lik b er mindre enn eller er lik b"
+      "expected": "kollapset relasjonssekvens med 3 elementer"
     },
     "CollapsedNumber_default": {
-      "expected": "123456"
+      "expected": "kollapset langt nummer"
     },
     "CollapsedPunctuated_default": {
-      "expected": "a komma b komma c"
+      "expected": "kollapset komma separert liste med lengde 3"
     },
     "CollapsedRelation_default": {
-      "expected": "a er lik b"
+      "expected": "kollapset likhet"
     },
     "CollapsedRelationSeq_default": {
-      "expected": "a er lik b er lik b"
+      "expected": "kollapset likhet sekvens med 3 elementer"
     },
     "CollapsedRoot_default": {
-      "expected": "3 x"
+      "expected": "kollapset rot med eksponent 3"
     },
     "CollapsedRootNested_default": {
-      "expected": "3 pluss pluss 4 xx"
+      "expected": "kollapset nøstet rot med eksponent 3"
     },
     "CollapsedRowvector_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes ab"
+      "expected": "kollapset 2 dimensjonal radvektor"
     },
     "CollapsedSqrt_default": {
-      "expected": "2"
+      "expected": "kollapset kvadratrot"
     },
     "CollapsedSqrtNested_default": {
-      "expected": "ganger ganger 22"
+      "expected": "kollapset n-te rot"
     },
     "CollapsedSquarematrix_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes abcd"
+      "expected": "kollapset 2 dimensjonal kvadratmatrise"
     },
     "CollapsedSubscript_default": {
-      "expected": "ab"
+      "expected": "kollapset indeks"
     },
     "CollapsedSubsup_default": {
-      "expected": "acb"
+      "expected": "kollapset potens med indeks"
     },
     "CollapsedSuperscript_default": {
-      "expected": "ab"
+      "expected": "kollapset potens"
     },
     "CollapsedTable_default": {
-      "expected": "abcd"
+      "expected": "kollapset tabell med 2 rader og 2 kolonner"
     },
     "CollapsedText_default": {
-      "expected": "a b c"
+      "expected": "kollapset tekst"
     },
     "CollapsedVarAddition_default": {
-      "expected": "a pluss prikk prikk prikk pluss b"
+      "expected": "kollapset sum med variabelt antall delsummer"
     },
     "CollapsedVarCases_default": {
-      "expected": "venstre krøllparentes a prikk prikk prikk b"
+      "expected": "kollapset case-setning med variabelt antall alternativer"
     },
     "CollapsedVarDeterminant_default": {
-      "expected": "vertikalstrek vertikalstrek abe prikk prikk prikk cdf"
+      "expected": "kollapset n-dimensjonal determinant"
     },
     "CollapsedVarMatrix_default": {
-      "expected": "venstre parentes høyre parentes abe prikk prikk prikk cdf"
+      "expected": "kollapset n ganger m-dimensjonal matrise"
     },
     "CollapsedVarMultiplication_default": {
-      "expected": "a asterisk prikk prikk prikk asterisk b"
+      "expected": "kollapset produkt med variabelt antall faktorer"
     },
     "CollapsedVarMultirel_default": {
-      "expected": "a er lik prikk prikk prikk er mindre enn eller er lik b"
+      "expected": "kollapset relasjonssekvens med variabelt antall elementer"
     },
     "CollapsedVarPunctuated_default": {
-      "expected": "a komma prikk prikk prikk komma b"
+      "expected": "kollapset komma separert liste med variabel lengde"
     },
     "CollapsedVarRelation_default": {
-      "expected": "a er lik prikk prikk prikk er lik b"
+      "expected": "kollapset likhet sekvens med variabelt antall elementer"
     },
     "CollapsedVarVector_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes a vertikal ellipse cd"
+      "expected": "kollapset n-dimensjonal vektor"
     },
     "CollapsedVector_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes ace"
+      "expected": "kollapset 3 dimensjonal vektor"
     },
     "CollapsedVarSubtraction_default": {
-      "expected": "a minus prikk prikk prikk minus b"
+      "expected": "kollapset subtraksjon med variabelt antall elementer"
     },
     "CollapsedVarSubtraction_brief": {
-      "expected": "a minus prikk prikk prikk minus b"
+      "expected": "kollapset subtraksjon med variabelt antall elementer"
     },
     "CollapsedVarSubtraction_sbrief": {
-      "expected": "a minus prikk prikk prikk minus b"
+      "expected": "kollapset subtraksjon med variabelt antall elementer"
     },
     "CollapsedCountImplicit_default": {
-      "expected": "a b c"
+      "expected": "kollapset produkt med 3 faktorer"
     },
     "CollapsedCountImplicit_brief": {
-      "expected": "a b c"
+      "expected": "kollapset produkt med 3 faktorer"
     },
     "CollapsedCountImplicit_sbrief": {
-      "expected": "a b c"
+      "expected": "kollapset produkt med 3 faktorer"
     },
     "CollapsedVarImplicit_default": {
-      "expected": "a prikk prikk prikk b"
+      "expected": "kollapset produkt med variabelt antall faktorer"
     },
     "CollapsedVarArrowRelation_default": {
-      "expected": "a høyrepil prikk prikk prikk venstre-høyrepil b"
+      "expected": "kollapset pil sekvens med variabelt antall elementer"
     },
     "CollapsedArrowRelation_default": {
-      "expected": "a høyrepil c venstre-høyrepil b"
+      "expected": "kollapset pil"
     },
     "CollapsedVarRowvector_default": {
-      "expected": "venstre hakeparentes høyre hakeparentes a prikk prikk prikk b"
+      "expected": "kollapset n-dimensjonal radvektor"
     },
     "CollapsedRootInside_default": {
-      "expected": "3 x a"
+      "expected": "kollapset rot med eksponent 3 slutteksponent a"
     },
     "CollapsedRootNestedInside_default": {
-      "expected": "3 pluss pluss 4 xx a"
+      "expected": "kollapset nøstet rot med eksponent 3 slutteksponent a"
     }
   }
 }

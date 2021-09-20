@@ -58,7 +58,7 @@
       "expected": "stor Delta x"
     },
     "Triangle004": {
-      "expected": "av ff venstre parentes høyre parentes pluss pluss x ganger ganger stor Delta x"
+      "expected": "f av, venstre parentes, x pluss stor Delta x, høyre parentes"
     },
     "Ellipses001": {
       "expected": "1 komma 2 komma 3 komma prikk prikk prikk"
@@ -70,145 +70,145 @@
       "expected": "prikk prikk prikk komma, minus 2, komma, minus 1, komma 0 komma 1 komma 2 komma prikk prikk prikk"
     },
     "Ellipses004": {
-      "expected": "1 komma 2 komma 3 komma prikk prikk prikk"
+      "expected": "1 komma 2 komma 3 komma og så videre"
     },
     "Ellipses005": {
-      "expected": "1 komma 2 komma 3 komma prikk prikk prikk komma 20"
+      "expected": "1 komma 2 komma 3 komma og så videre til komma 20"
     },
     "Ellipses006": {
       "expected": "prikk prikk prikk komma, minus 2, komma, minus 1, komma 0 komma 1 komma 2 komma prikk prikk prikk"
     },
     "VertLine001": {
-      "expected": "3 vertikalstrek 6"
+      "expected": "3 deler 6"
     },
     "VertLine002": {
-      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek x vertikalstrek er større enn er større enn x 0"
+      "expected": "hele mengden x med x er større enn 0"
     },
     "VertLine003": {
-      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek x vertikalstrek er større enn er større enn vertikalstrek vertikalstrek x 2"
+      "expected": "hele mengden x med, den absolutte verdien av x, er større enn 2"
     },
     "VertLine004": {
-      "expected": "av ff venstre parentes høyre parentes x vertikalstrek er lik er lik x 5"
+      "expected": "f av x, evaluert for x er lik 5"
     },
     "VertLine005": {
-      "expected": "x 2 pluss 2 x, vertikalstrek er lik er lik x 2"
+      "expected": "x kvadrat pluss 2 x, evaluert for x er lik 2"
     },
     "VertLine006": {
-      "expected": "x 2 pluss x vertikalstrek 01"
+      "expected": "x kvadrat pluss x, evaluert for 1, minus det samme uttrykket evaluert for 0"
     },
     "VertLine007": {
-      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek x vertikalstrek er større enn er større enn x 0"
+      "expected": "hele mengden x med x er større enn 0"
     },
     "VertLine008": {
-      "expected": "3 vertikalstrek 6"
+      "expected": "3 deler 6"
     },
     "VertLine009": {
-      "expected": "av PP venstre parentes høyre parentes vertikalstrek stor bokstav A vertikalstrek stor bokstav B"
+      "expected": "P av, venstre parentes, A gitt B, høyre parentes"
     },
     "MembSym001": {
-      "expected": "If x element av double-struck stor bokstav Z then 2 x, is an even number punktum"
+      "expected": "If x er et element av heltallene then 2 x, is an even number punktum"
     },
     "MembSym002": {
-      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek element av element av x double-struck stor bokstav Z vertikalstrek er større enn er større enn x 5"
+      "expected": "hele mengden x i heltallene med x er større enn 5"
     },
     "MembSym003": {
-      "expected": "3 pluss 2 i, ikke et element av double-struck stor bokstav R"
+      "expected": "3 pluss 2 i, er ikke et element av de reelle tallene"
     },
     "MembSym004": {
-      "expected": "If x element av double-struck stor bokstav Z then 2 x, is an even number punktum"
+      "expected": "If x er et element av heltallene then 2 x, is an even number punktum"
     },
     "MembSym005": {
-      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek element av element av x double-struck stor bokstav Z vertikalstrek er større enn er større enn x 5"
+      "expected": "hele mengden x medlem av heltallene med x er større enn 5"
     },
     "MembSym006": {
-      "expected": "3 pluss 2 i, ikke et element av double-struck stor bokstav R"
+      "expected": "3 pluss 2 i, er ikke et element av de reelle tallene"
     },
     "MembSym007": {
-      "expected": "If x element av double-struck stor bokstav Z then 2 x, is an even number punktum"
+      "expected": "If x er et element av heltallene then 2 x, is an even number punktum"
     },
     "MembSym008": {
-      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek element av element av x double-struck stor bokstav Z vertikalstrek er større enn er større enn x 5"
+      "expected": "hele mengden x medlem av heltallene med x er større enn 5"
     },
     "MembSym009": {
-      "expected": "3 pluss 2 i, ikke et element av double-struck stor bokstav R"
+      "expected": "3 pluss 2 i, er ikke et element av de reelle tallene"
     },
     "MembSym010": {
-      "expected": "If x element av double-struck stor bokstav Z then 2 x, is an even number punktum"
+      "expected": "If x tilhører heltallene then 2 x, is an even number punktum"
     },
     "MembSym011": {
-      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek element av element av x double-struck stor bokstav Z vertikalstrek er større enn er større enn x 5"
+      "expected": "hele mengden x tilhørende heltallene med x er større enn 5"
     },
     "MembSym012": {
-      "expected": "3 pluss 2 i, ikke et element av double-struck stor bokstav R"
+      "expected": "3 pluss 2 i, tilhører ikke de reelle tallene"
     },
     "MembSym013": {
-      "expected": "If x element av double-struck stor bokstav Z then 2 x, is an even number punktum"
+      "expected": "If x tilhører heltallene then 2 x, is an even number punktum"
     },
     "MembSym014": {
-      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek element av element av x double-struck stor bokstav Z vertikalstrek er større enn er større enn x 5"
+      "expected": "hele mengden x tilhørende heltallene med x er større enn 5"
     },
     "MembSym015": {
-      "expected": "3 pluss 2 i, ikke et element av double-struck stor bokstav R"
+      "expected": "3 pluss 2 i, tilhører ikke de reelle tallene"
     },
     "SetMemb001": {
-      "expected": "venstre krøllparentes høyre krøllparentes kolon element av element av x double-struck stor bokstav Z kolon er mindre enn er mindre enn er mindre enn 2 x 7"
+      "expected": "mengden av x tilhørende heltallene med 2 er mindre enn x er mindre enn 7"
     },
     "SetMemb002": {
-      "expected": "venstre krøllparentes høyre krøllparentes vertikalstrek element av element av x double-struck stor bokstav Z vertikalstrek er større enn er større enn x 5"
+      "expected": "mengden av x medlem av heltallene med x er større enn 5"
     },
     "Sum001": {
-      "expected": "sum sum er lik er lik n 110 n"
+      "expected": "sum fra n er lik 1 til 10 over n"
     },
     "Sum002": {
-      "expected": "sum sum er lik er lik n 1 uendelig n"
+      "expected": "sum fra n er lik 1 til uendelig over n"
     },
     "Sum003": {
-      "expected": "sum sum element av element av i double-struck stor bokstav Z pluss i"
+      "expected": "sum over i er et element av de positive heltallene, over i"
     },
     "Sum004": {
-      "expected": "sum sum Si"
+      "expected": "sum over S, over i"
     },
     "Sum005": {
-      "expected": "sum sum ai"
+      "expected": "sum over, a indeks i"
     },
     "Sum006": {
-      "expected": "produkt produkt er lik er lik i 110 i"
+      "expected": "produkt fra i er lik 1 til 10 over i"
     },
     "Sum007": {
-      "expected": "produkt produkt element av element av i double-struck stor bokstav Z pluss i pluss pluss i 1"
+      "expected": "produkt over i er et element av de positive heltallene, over, brøk med teller i, og nevner i pluss 1"
     },
     "Sum008": {
-      "expected": "produkt produkt double-struck stor bokstav Z pluss i pluss pluss i 1"
+      "expected": "produkt over de positive heltallene, over, brøk med teller i, og nevner i pluss 1"
     },
     "Sum009": {
-      "expected": "produkt produkt ai"
+      "expected": "produkt over, a indeks i"
     },
     "Sum010": {
-      "expected": "kryss er lik er lik i 110 Si"
+      "expected": "kryss fra i er lik 1 til 10 av, S indeks i"
     },
     "Sum011": {
-      "expected": "union er lik er lik i 110 Si"
+      "expected": "union fra i er lik 1 til 10 av, S indeks i"
     },
     "Sum012": {
-      "expected": "kryss Si"
+      "expected": "kryss av, S indeks i"
     },
     "Sum013": {
-      "expected": "union Si"
+      "expected": "union av, S indeks i"
     },
     "Sum014": {
-      "expected": "kryss stor bokstav C Si"
+      "expected": "kryss over C, av, S indeks i"
     },
     "Sum015": {
-      "expected": "union stor bokstav C Si"
+      "expected": "union over C, av, S indeks i"
     },
     "Sum016": {
-      "expected": "integral integral av ff venstre parentes høyre parentes x, d x"
+      "expected": "integral over f av x, d x"
     },
     "Sum017": {
-      "expected": "integral integral 01 av ff venstre parentes høyre parentes x, d x"
+      "expected": "integral fra 0 til 1 over f av x, d x"
     },
     "Sum018": {
-      "expected": "integral integral double-struck stor bokstav R av ff venstre parentes høyre parentes x, d x"
+      "expected": "integral over de reelle tallene, over f av x, d x"
     }
   }
 }

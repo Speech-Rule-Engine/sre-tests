@@ -29,28 +29,28 @@
   "compare": true,
   "tests": {
     "UnitSquare_0_default": {
-      "expected": "square in"
+      "expected": "kvadrat in"
     },
     "UnitSquare_1_default": {
-      "expected": "sekunder to the andre power"
+      "expected": "kvadrat sekunder"
     },
     "UnitSquare_2_default": {
-      "expected": "square meter"
+      "expected": "kvadrat meter"
     },
     "UnitCube_0_default": {
-      "expected": "cubic in"
+      "expected": "kubikk in"
     },
     "UnitCube_1_default": {
-      "expected": "sekunder to the tredje power"
+      "expected": "kubikk sekunder"
     },
     "UnitCube_2_default": {
-      "expected": "cubic meter"
+      "expected": "kubikk meter"
     },
     "UnitInverse_default": {
-      "expected": "reciprocal in"
+      "expected": "invers in"
     },
     "UnitDoubleInverse_default": {
-      "expected": "reciprocal in per mm"
+      "expected": "invers in per mm"
     },
     "UnitDivide_default": {
       "expected": "in per mm"
@@ -71,7 +71,7 @@
       "expected": "Celsius"
     },
     "UnitsSimple_0": {
-      "expected": "min of minutter"
+      "expected": "min av minutter"
     },
     "UnitsSimple_1": {
       "expected": "3 km"
@@ -80,28 +80,28 @@
       "expected": "km pluss sekunder"
     },
     "UnitsSuperscript_0": {
-      "expected": "square km"
+      "expected": "kvadrat km"
     },
     "UnitsSuperscript_1": {
-      "expected": "cubic meter"
+      "expected": "kubikk meter"
     },
     "UnitsSuperscript_2": {
-      "expected": "km to the fjerde power"
+      "expected": "km i fjerde potens"
     },
     "UnitsSuperscript_3": {
-      "expected": "reciprocal meter"
+      "expected": "invers meter"
     },
     "UnitsSuperscript_4": {
       "expected": "sekunder per meter"
     },
     "UnitsSuperscript_5": {
-      "expected": "sekunder per meter to the negative 1 power"
+      "expected": "sekunder per meter med eksponent minus 1"
     },
     "UnitsSuperscript_6": {
-      "expected": "sekunder per meter to the negative 1 power"
+      "expected": "sekunder per meter med eksponent minus 1"
     },
     "UnitsSuperscript_7": {
-      "expected": "3 reciprocal meter"
+      "expected": "3 invers meter"
     },
     "UnitsSuperscript_8": {
       "expected": "km per time"
@@ -110,7 +110,7 @@
       "expected": "newton km per time"
     },
     "UnitsSuperscript_10": {
-      "expected": "m over km"
+      "expected": "m delt på km"
     },
     "UnitsSuperscript_11": {
       "expected": "3 km timer"
@@ -119,13 +119,13 @@
       "expected": "sekunder 3 m km timer"
     },
     "UnitsExpressions_1": {
-      "expected": "km sekunder to the andre power 3 m km timer"
+      "expected": "km kvadrat sekunder 3 m km timer"
     },
     "UnitsExpressions_2": {
-      "expected": "3 m km timer the fraction with numerator N and denominator sekunder to the andre power"
+      "expected": "3 m km timer brøk med tellar N og nemnar kvadrat sekunder"
     },
     "UnitsExpressions_3": {
-      "expected": "3 m km timer newton per sekund to the andre power"
+      "expected": "3 m km timer newton per kvadrat sekund"
     },
     "UnitPlural_1": {
       "expected": "4 mm"
@@ -167,10 +167,10 @@
       "expected": "8000 li er lik 8000 li. er lik 8000 links er lik 320 rd er lik 320 rd. er lik 320 rods er lik 80 ch er lik 80 ch. er lik 80 chains er lik 8 fur er lik 8 fur. er lik 8 furlongs er lik 1 mil er lik 1 mil er lik 1 mile"
     },
     "issue_364_3": {
-      "expected": "43560 sq ft er lik 43560 sq. ft. er lik 43560 square fot er lik 43560 fot squared er lik 43560 square feet er lik 4840 kvadratmeter er lik 4840 kvadratmeter er lik 4840 square yd er lik 4840 square yards er lik 160 sq rd er lik 160 sq. rd. er lik 160 square rd er lik 160 square rods er lik 1 mål er lik 1 mål er lik 1 acre er lik 1 over 640 kvadratkilometer er lik 1 over 640 kvadratkilometer er lik 1 over 640 square mil er lik 1 over 640 square miles"
+      "expected": "43560 sq ft er lik 43560 sq. ft. er lik 43560 kvadrat fot er lik 43560 fot kvadrat er lik 43560 square feet er lik 4840 kvadratmeter er lik 4840 kvadratmeter er lik 4840 kvadrat yd er lik 4840 square yards er lik 160 sq rd er lik 160 sq. rd. er lik 160 kvadrat rd er lik 160 square rods er lik 1 mål er lik 1 mål er lik 1 acre er lik 1 delt på 640 kvadratkilometer er lik 1 delt på 640 kvadratkilometer er lik 1 delt på 640 kvadrat mil er lik 1 delt på 640 square miles"
     },
     "issue_364_4": {
-      "expected": "46656 cu in er lik 46656 cu. in. er lik 46656 cubic in er lik 46656 in cubed er lik 46656 cubic inches er lik 27 cu ft er lik 27 cu. ft. er lik 27 cubic fot er lik 27 fot cubed er lik 27 cubic feet er lik 1 cu yd er lik 1 cu. yd. er lik 1 cubic yd er lik 1 cubic yard"
+      "expected": "46656 cu in er lik 46656 cu. in. er lik 46656 kubikk in er lik 46656 in kubikk er lik 46656 cubic inches er lik 27 cu ft er lik 27 cu. ft. er lik 27 kubikk fot er lik 27 fot kubikk er lik 27 cubic feet er lik 1 cu yd er lik 1 cu. yd. er lik 1 kubikk yd er lik 1 cubic yard"
     },
     "issue_364_5": {
       "expected": "1024 fl dr er lik 1024 fl. dr. er lik 1024 fluid drams er lik 768 teskje er lik 768 teskje er lik 768 teaspoons er lik 256 spiseskje er lik 256 spiseskje er lik 256 tablespoons er lik 128 fl oz er lik 128 fl. oz. er lik 128 fluid ounces er lik 16 cp er lik 16 cp. er lik 16 cups er lik 8 pt er lik 8 pt. er lik 8 pints er lik 4 qt er lik 4 qt. er lik 4 quarts er lik 1 gal er lik 1 gal. er lik 1 gallon"
@@ -182,43 +182,43 @@
       "expected": "63360 in er lik 63360 in. er lik 63360 in er lik 63360 inches er lik 5280 fot er lik 5280 fot er lik 5280 fot er lik 5280 feet er lik 1760 yd er lik 1760 yd. er lik 1760 yards er lik 1 mil er lik 1 mil er lik 1 mile"
     },
     "testSample_13_1_2_var0": {
-      "expected": "1 joule er lik 1 kg prikk square meter prikk sekunder to the negative 2 power"
+      "expected": "1 joule er lik 1 kg prikk kvadrat meter prikk sekunder med eksponent minus 2"
     },
     "testSample_13_1_2_var1": {
-      "expected": "1 joule er lik 1 kg square meter sekunder to the negative 2 power"
+      "expected": "1 joule er lik 1 kg kvadrat meter sekunder med eksponent minus 2"
     },
     "testSample_13_1_2_var2": {
-      "expected": "1 joule er lik 1 kg square meter sekunder to the negative 2 power"
+      "expected": "1 joule er lik 1 kg kvadrat meter sekunder med eksponent minus 2"
     },
     "unit_cube": {
-      "expected": "cubic in"
+      "expected": "kubikk in"
     },
     "UnitDiv_0": {
-      "expected": "km kg sekunder to the andre power per joule"
+      "expected": "km kg kvadrat sekunder per joule"
     },
     "UnitDiv_1": {
-      "expected": "3 km 1 kg sekunder to the andre power over joule"
+      "expected": "3 km 1 kg kvadrat sekunder delt på joule"
     },
     "UnitDiv_2": {
-      "expected": "1 km kg sekunder to the andre power over joule"
+      "expected": "1 km kg kvadrat sekunder delt på joule"
     },
     "UnitDiv_3": {
-      "expected": "1 km kg sekunder to the andre power over 5 joule"
+      "expected": "1 km kg kvadrat sekunder delt på 5 joule"
     },
     "UnitKm": {
       "expected": "km"
     },
     "UnitLong_1": {
-      "expected": "3 km kg sekunder to the andre power joule"
+      "expected": "3 km kg kvadrat sekunder joule"
     },
     "UnitLong_2": {
-      "expected": "3 km kg sekunder to the andre power joule"
+      "expected": "3 km kg kvadrat sekunder joule"
     },
     "UnitLong_3": {
-      "expected": "3 km 4 kg sekunder to the andre power joule"
+      "expected": "3 km 4 kg kvadrat sekunder joule"
     },
     "UnitLong_4": {
-      "expected": "3 km 1 kg sekunder to the andre power joule"
+      "expected": "3 km 1 kg kvadrat sekunder joule"
     },
     "UnitMultiple": {
       "expected": "1 km sekunder pluss 2 km sekunder pluss 0 km sekunder pluss a km sekunder pluss"
@@ -227,10 +227,10 @@
       "expected": "1 km pluss 2 km pluss 0 km pluss a km"
     },
     "UnitNumb_0": {
-      "expected": "1 and to tredje kg"
+      "expected": "1 og to tredje kg"
     },
     "UnitNumb_1": {
-      "expected": "1 and to tredje kg km"
+      "expected": "1 og to tredje kg km"
     },
     "UnitNumb_2": {
       "expected": "1 km 2 kg km"

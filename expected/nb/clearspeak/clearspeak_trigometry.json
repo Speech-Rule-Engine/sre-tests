@@ -57,436 +57,436 @@
   "compare": true,
   "tests": {
     "Trig001": {
-      "expected": "av sinsinx"
+      "expected": "sinus x"
     },
     "Trig002": {
-      "expected": "av coscosx"
+      "expected": "cosinus x"
     },
     "Trig003": {
-      "expected": "av tantan theta"
+      "expected": "tangens theta"
     },
     "Trig004": {
-      "expected": "av secsec theta"
+      "expected": "sekant theta"
     },
     "Trig005": {
-      "expected": "av csccscx"
+      "expected": "cosekant x"
     },
     "Trig006": {
-      "expected": "av cotcotx"
+      "expected": "cotangens x"
     },
     "Trig007": {
-      "expected": "av sinsin 2 x"
+      "expected": "sinus kvadrat x"
     },
     "Trig008": {
-      "expected": "av coscos 3 x"
+      "expected": "cosinus kubikk x"
     },
     "Trig009": {
-      "expected": "av tantan 2 x"
+      "expected": "tangens kvadrat x"
     },
     "Trig010": {
-      "expected": "av secsec 3 x"
+      "expected": "sekant kubikk x"
     },
     "Trig011": {
-      "expected": "av csccsc 2 x"
+      "expected": "cosekant kvadrat x"
     },
     "Trig012": {
-      "expected": "av cotcot 2 x"
+      "expected": "cotangens kvadrat x"
     },
     "Trig013": {
-      "expected": "av sinsin ganger ganger 2 pi"
+      "expected": "sinus 2 pi"
     },
     "Trig014": {
-      "expected": "av sinsin venstre parentes høyre parentes pluss pluss ganger ganger pi k pi 2"
+      "expected": "sinus av, venstre parentes, pi k, pluss, pi delt på 2, høyre parentes"
     },
     "Trig015": {
-      "expected": "av coscos pi 2"
+      "expected": "cosinus av, pi delt på 2"
     },
     "Trig016": {
-      "expected": "av sinsin pi 2"
+      "expected": "sinus av, pi delt på 2"
     },
     "Trig017": {
-      "expected": "av sinsin pi 2"
+      "expected": "sinus pi delt på 2"
     },
     "Trig018": {
-      "expected": "2 av sinsin pi"
+      "expected": "2 delt på sinus pi"
     },
     "Trig019": {
-      "expected": "av sinsin pi 23"
+      "expected": "brøk med teller, sinus av, pi delt på 2, og nevner 3"
     },
     "Trig020": {
-      "expected": "av tantan venstre parentes høyre parentes minus minus pi"
+      "expected": "tangens minus pi"
     },
     "Trig021": {
-      "expected": "av sinsin venstre parentes høyre parentes pluss pluss x pi"
+      "expected": "sinus av, venstre parentes, x pluss pi, høyre parentes"
     },
     "Trig022": {
-      "expected": "av coscos venstre parentes høyre parentes pluss pluss x pi 2"
+      "expected": "cosinus av, venstre parentes, x pluss, pi delt på 2, høyre parentes"
     },
     "Trig023": {
-      "expected": "av coscos venstre parentes høyre parentes pluss pluss pi 2 x"
+      "expected": "cosinus av, venstre parentes, pi delt på 2, pluss x, høyre parentes"
     },
     "Trig024": {
-      "expected": "av sinsin 2 x pluss av coscos 2 x er lik 1"
+      "expected": "sinus kvadrat x, pluss, cosinus kvadrat x, er lik 1"
     },
     "Trig025": {
-      "expected": "av sinsin 4 x"
+      "expected": "fjerde effekten av sinus x"
     },
     "Trig026": {
-      "expected": "av coscos 5 x"
+      "expected": "femte effekten av cosinus x"
     },
     "Trig027": {
-      "expected": "av tantannx"
+      "expected": "n-te effekten av tangens x"
     },
     "Trig028": {
-      "expected": "av sinsinx av coscosx"
+      "expected": "sinus x delt på cosinus x"
     },
     "Trig029": {
-      "expected": "av tantan 35 grader"
+      "expected": "tangens 35 grader"
     },
     "Trig031": {
-      "expected": "av tantan venstre parentes høyre parentes vinkel vinkel ganger ganger ganger DEF"
+      "expected": "tangens av, venstre parentes, vinkel D E F, høyre parentes"
     },
     "Trig032": {
-      "expected": "av tantan venstre parentes høyre parentes vinkel vinkel stor bokstav D"
+      "expected": "tangens av, venstre parentes, vinkel D, høyre parentes"
     },
     "Trig033": {
-      "expected": "av sinsin venstre parentes høyre parentes pluss pluss xy er lik, av sinsinx av coscosy, pluss, av coscosx av sinsiny"
+      "expected": "sinus av, venstre parentes, x pluss y, høyre parentes, er lik, sinus x cosinus y, pluss, cosinus x sinus y"
     },
     "Trig034": {
-      "expected": "av coscos venstre parentes høyre parentes pluss pluss xy er lik, av coscosx av coscosy, minus, av sinsinx av sinsiny"
+      "expected": "cosinus av, venstre parentes, x pluss y, høyre parentes, er lik, cosinus x cosinus y, minus, sinus x sinus y"
     },
     "Trig035": {
-      "expected": "av tantan venstre parentes høyre parentes pluss pluss xy er lik minus minus av tantanx av tantany minus minus 1 ganger ganger av tantanx av tantany"
+      "expected": "tangens av, venstre parentes, x pluss y, høyre parentes, er lik, brøk med teller tangens x minus tangens y, og nevner 1 minus, tangens x tangens y"
     },
     "Trig037": {
-      "expected": "av tantan venstre parentes høyre parentes pluss pluss pi 6 ganger ganger 2 pi 3 er lik minus minus av tantan pi 6 av tantan ganger ganger 2 pi 3 minus minus 1 ganger ganger av tantan pi 6 av tantan ganger ganger 2 pi 3"
+      "expected": "tangens av, venstre parentes, pi delt på 6, pluss, 2 pi delt på 3, høyre parentes, er lik, brøk med teller, tangens av, pi delt på 6, minus, tangens av, 2 pi delt på 3, og nevner 1 minus, tangens av, pi delt på 6, tangens av, 2 pi delt på 3"
     },
     "Trig038": {
-      "expected": "av tantan ganger ganger 2 x er lik ganger ganger 2 av tantanx minus minus 1 av tantan 2 x"
+      "expected": "tangens 2 x, er lik, brøk med teller 2 tangens x, og nevner 1 minus, tangens kvadrat x"
     },
     "Trig039": {
-      "expected": "av coscos ganger ganger 2 x er lik 2 av coscos 2 x, minus 1"
+      "expected": "cosinus 2 x, er lik 2, cosinus kvadrat x, minus 1"
     },
     "Trig040": {
-      "expected": "av sinsinx 2 er lik pluss minus minus minus 1 av coscosx 2"
+      "expected": "sinus av, x delt på 2, er lik pluss minus kvadratroten av, brøk med teller 1 minus cosinus x, og nevner 2"
     },
     "Trig041": {
-      "expected": "av tantanx 2 er lik pluss minus minus minus 1 av coscosx pluss pluss 1 av coscosx"
+      "expected": "tangens av, x delt på 2, er lik pluss minus kvadratroten av, brøk med teller 1 minus cosinus x, og nevner 1 pluss cosinus x"
     },
     "Trig042": {
-      "expected": "av coscosx av coscosy, er lik 2 av coscos pluss pluss xy 2 av coscos minus minus xy 2"
+      "expected": "cosinus x cosinus y, er lik 2, cosinus av, brøk med teller x pluss y, og nevner 2, cosinus av, brøk med teller x minus y, og nevner 2"
     },
     "Trig043": {
-      "expected": "av sinsin venstre parentes høyre parentes minus minus pi 8 er lik minus 12 minus minus 22"
+      "expected": "sinus av, venstre parentes, minus, pi delt på 8, høyre parentes, er lik minus en andre kvadratroten av 2 minus kvadratroten av 2, slutt rot, slutt rot"
     },
     "Trig044": {
-      "expected": "av tantan ganger ganger 3 pi 8 er lik pluss pluss 21 minus minus 21"
+      "expected": "tangens av, 3 pi delt på 8, er lik, brøk med teller kvadratroten av, kvadratroten av 2, slutt rot, pluss 1, slutt rot, og nevner kvadratroten av, kvadratroten av 2, slutt rot, minus 1, slutt rot"
     },
     "Trig045": {
-      "expected": "av tantan pi 12 er lik 12 minus minus 23"
+      "expected": "tangens av, pi delt på 12, er lik en andre kvadratroten av 2 minus kvadratroten av 3, slutt rot, slutt rot"
     },
     "TrigInvAuto001": {
-      "expected": "av sinsin minus minus 1 x"
+      "expected": "invers sinus av x"
     },
     "TrigInvAuto002": {
-      "expected": "av coscos minus minus 1 x"
+      "expected": "invers cosinus av x"
     },
     "TrigInvAuto003": {
-      "expected": "av tantan minus minus 1 x"
+      "expected": "invers tangens av x"
     },
     "TrigInvAuto004": {
-      "expected": "av cotcot minus minus 1 x"
+      "expected": "invers cotangens av x"
     },
     "TrigInvAuto005": {
-      "expected": "av secsec minus minus 1 x"
+      "expected": "invers sekant av x"
     },
     "TrigInvAuto006": {
-      "expected": "av csccsc minus minus 1 x"
+      "expected": "invers cosekant av x"
     },
     "TrigInvAuto007": {
-      "expected": "av sinsin minus minus 122"
+      "expected": "invers sinus av, brøk med teller kvadratroten av 2, og nevner 2"
     },
     "TrigInvAuto008": {
-      "expected": "av coscos minus minus 112"
+      "expected": "invers cosinus av en andre"
     },
     "TrigInvAuto009": {
-      "expected": "av tantan minus minus 117"
+      "expected": "invers tangens av 17"
     },
     "TrigInvAuto010": {
-      "expected": "av cotcot minus minus 132"
+      "expected": "invers cotangens av 32"
     },
     "TrigInvAuto011": {
-      "expected": "av secsec minus minus 1100"
+      "expected": "invers sekant av 100"
     },
     "TrigInvAuto012": {
-      "expected": "av csccsc minus minus 185"
+      "expected": "invers cosekant av 85"
     },
     "TrigInvAuto013": {
-      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes minus minus x"
+      "expected": "invers sinus av minus x"
     },
     "TrigInvAuto014": {
-      "expected": "av coscos minus minus 1 venstre parentes høyre parentes minus minus x"
+      "expected": "invers cosinus av minus x"
     },
     "TrigInvAuto015": {
-      "expected": "av tantan minus minus 1 venstre parentes høyre parentes pluss pluss minus minus x 12"
+      "expected": "invers tangens av, venstre parentes, minus x pluss 12, høyre parentes"
     },
     "TrigInvAuto016": {
-      "expected": "av cotcot minus minus 1 venstre parentes høyre parentes minus minus minus minus x 1"
+      "expected": "invers cotangens av, venstre parentes, minus x minus 1, høyre parentes"
     },
     "TrigInvAuto017": {
-      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes av sinsin 0"
+      "expected": "invers sinus av sinus 0"
     },
     "TrigInvAuto018": {
-      "expected": "av csccsc minus minus 1 venstre parentes høyre parentes av csccscx"
+      "expected": "invers cosekant av cosekant x"
     },
     "TrigInvAuto019": {
-      "expected": "av coscos venstre parentes høyre parentes av coscos minus minus 1 venstre parentes høyre parentes minus minus 22"
+      "expected": "cosinus av, venstre parentes, invers cosinus av, venstre parentes, minus, brøk med teller kvadratroten av 2, og nevner 2, høyre parentes, høyre parentes"
     },
     "TrigInvAuto020": {
-      "expected": "av coscos venstre parentes høyre parentes minus minus av coscos minus minus 1 venstre parentes høyre parentes 22"
+      "expected": "cosinus av, venstre parentes, minus, invers cosinus av, venstre parentes, brøk med teller kvadratroten av 2, og nevner 2, høyre parentes, høyre parentes"
     },
     "TrigInvAuto021": {
-      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes av coscos pi 4"
+      "expected": "invers sinus av, venstre parentes, cosinus av, pi delt på 4, høyre parentes"
     },
     "TrigInvAuto022": {
-      "expected": "av sinsin venstre parentes høyre parentes av coscos minus minus 112"
+      "expected": "sinus, invers cosinus av en andre"
     },
     "TrigInvAuto023": {
-      "expected": "av sinsin venstre parentes høyre parentes av tantan minus minus 11"
+      "expected": "sinus, invers tangens av 1"
     },
     "TrigInvAuto024": {
-      "expected": "av sinsin venstre parentes høyre parentes minus minus av tantan minus minus 11"
+      "expected": "sinus av, venstre parentes, minus, invers tangens av 1, høyre parentes"
     },
     "TrigInvAuto025": {
-      "expected": "av sinsin venstre parentes høyre parentes minus minus av tantan minus minus 1 venstre parentes høyre parentes minus minus 1"
+      "expected": "sinus av, venstre parentes, minus, invers tangens av minus 1, høyre parentes"
     },
     "TrigInvAuto026": {
-      "expected": "av secsec minus minus 1 venstre parentes høyre parentes av secsecx"
+      "expected": "invers sekant av sekant x"
     },
     "TrigInverse001": {
-      "expected": "av sinsin minus minus 1 x"
+      "expected": "sinus invers av x"
     },
     "TrigInverse002": {
-      "expected": "av coscos minus minus 1 x"
+      "expected": "cosinus invers av x"
     },
     "TrigInverse003": {
-      "expected": "av tantan minus minus 1 x"
+      "expected": "tangens invers av x"
     },
     "TrigInverse004": {
-      "expected": "av cotcot minus minus 1 x"
+      "expected": "cotangens invers av x"
     },
     "TrigInverse005": {
-      "expected": "av secsec minus minus 1 x"
+      "expected": "sekant invers av x"
     },
     "TrigInverse006": {
-      "expected": "av csccsc minus minus 1 x"
+      "expected": "cosekant invers av x"
     },
     "TrigInverse007": {
-      "expected": "av sinsin minus minus 122"
+      "expected": "sinus invers av, brøk med teller kvadratroten av 2, og nevner 2"
     },
     "TrigInverse008": {
-      "expected": "av coscos minus minus 112"
+      "expected": "cosinus invers av en andre"
     },
     "TrigInverse009": {
-      "expected": "av tantan minus minus 117"
+      "expected": "tangens invers av 17"
     },
     "TrigInverse010": {
-      "expected": "av cotcot minus minus 132"
+      "expected": "cotangens invers av 32"
     },
     "TrigInverse011": {
-      "expected": "av secsec minus minus 1100"
+      "expected": "sekant invers av 100"
     },
     "TrigInverse012": {
-      "expected": "av csccsc minus minus 185"
+      "expected": "cosekant invers av 85"
     },
     "TrigInverse013": {
-      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes minus minus x"
+      "expected": "sinus invers av minus x"
     },
     "TrigInverse014": {
-      "expected": "av coscos minus minus 1 venstre parentes høyre parentes minus minus x"
+      "expected": "cosinus invers av minus x"
     },
     "TrigInverse015": {
-      "expected": "av tantan minus minus 1 venstre parentes høyre parentes pluss pluss minus minus x 12"
+      "expected": "tangens invers av, venstre parentes, minus x pluss 12, høyre parentes"
     },
     "TrigInverse016": {
-      "expected": "av cotcot minus minus 1 venstre parentes høyre parentes minus minus minus minus x 1"
+      "expected": "cotangens invers av, venstre parentes, minus x minus 1, høyre parentes"
     },
     "TrigInverse017": {
-      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes av sinsin 0"
+      "expected": "sinus invers av sinus 0"
     },
     "TrigInverse018": {
-      "expected": "av csccsc minus minus 1 venstre parentes høyre parentes av csccscx"
+      "expected": "cosekant invers av cosekant x"
     },
     "TrigInverse019": {
-      "expected": "av coscos venstre parentes høyre parentes av coscos minus minus 1 venstre parentes høyre parentes minus minus 22"
+      "expected": "cosinus av, venstre parentes, cosinus invers av, venstre parentes, minus, brøk med teller kvadratroten av 2, og nevner 2, høyre parentes, høyre parentes"
     },
     "TrigInverse020": {
-      "expected": "av coscos venstre parentes høyre parentes minus minus av coscos minus minus 1 venstre parentes høyre parentes 22"
+      "expected": "cosinus av, venstre parentes, minus, cosinus invers av, venstre parentes, brøk med teller kvadratroten av 2, og nevner 2, høyre parentes, høyre parentes"
     },
     "TrigInverse021": {
-      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes av coscos pi 4"
+      "expected": "sinus invers av, venstre parentes, cosinus av, pi delt på 4, høyre parentes"
     },
     "TrigInverse022": {
-      "expected": "av sinsin venstre parentes høyre parentes av coscos minus minus 112"
+      "expected": "sinus, cosinus invers av en andre"
     },
     "TrigInverse023": {
-      "expected": "av sinsin venstre parentes høyre parentes av tantan minus minus 11"
+      "expected": "sinus, tangens invers av 1"
     },
     "TrigInverse024": {
-      "expected": "av sinsin venstre parentes høyre parentes minus minus av tantan minus minus 11"
+      "expected": "sinus av, venstre parentes, minus, tangens invers av 1, høyre parentes"
     },
     "TrigInverse025": {
-      "expected": "av sinsin venstre parentes høyre parentes minus minus av tantan minus minus 1 venstre parentes høyre parentes minus minus 1"
+      "expected": "sinus av, venstre parentes, minus, tangens invers av minus 1, høyre parentes"
     },
     "TrigInverse026": {
-      "expected": "av secsec minus minus 1 venstre parentes høyre parentes av secsecx"
+      "expected": "sekant invers av sekant x"
     },
     "ArcTrig001": {
-      "expected": "av sinsin minus minus 1 x"
+      "expected": "bue sinus x"
     },
     "ArcTrig002": {
-      "expected": "av coscos minus minus 1 x"
+      "expected": "bue cosinus x"
     },
     "ArcTrig003": {
-      "expected": "av tantan minus minus 1 x"
+      "expected": "bue tangens x"
     },
     "ArcTrig004": {
-      "expected": "av cotcot minus minus 1 x"
+      "expected": "bue cotangens x"
     },
     "ArcTrig005": {
-      "expected": "av secsec minus minus 1 x"
+      "expected": "bue sekant x"
     },
     "ArcTrig006": {
-      "expected": "av csccsc minus minus 1 x"
+      "expected": "bue cosekant x"
     },
     "ArcTrig007": {
-      "expected": "av sinsin minus minus 122"
+      "expected": "bue sinus av, brøk med teller kvadratroten av 2, og nevner 2"
     },
     "ArcTrig008": {
-      "expected": "av coscos minus minus 112"
+      "expected": "bue cosinus en andre"
     },
     "ArcTrig009": {
-      "expected": "av tantan minus minus 117"
+      "expected": "bue tangens 17"
     },
     "ArcTrig010": {
-      "expected": "av cotcot minus minus 132"
+      "expected": "bue cotangens 32"
     },
     "ArcTrig011": {
-      "expected": "av secsec minus minus 1100"
+      "expected": "bue sekant 100"
     },
     "ArcTrig012": {
-      "expected": "av csccsc minus minus 185"
+      "expected": "bue cosekant 85"
     },
     "ArcTrig013": {
-      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes minus minus x"
+      "expected": "bue sinus minus x"
     },
     "ArcTrig014": {
-      "expected": "av coscos minus minus 1 venstre parentes høyre parentes minus minus x"
+      "expected": "bue cosinus minus x"
     },
     "ArcTrig015": {
-      "expected": "av tantan minus minus 1 venstre parentes høyre parentes pluss pluss minus minus x 12"
+      "expected": "bue tangens av, venstre parentes, minus x pluss 12, høyre parentes"
     },
     "ArcTrig016": {
-      "expected": "av cotcot minus minus 1 venstre parentes høyre parentes minus minus minus minus x 1"
+      "expected": "bue cotangens av, venstre parentes, minus x minus 1, høyre parentes"
     },
     "ArcTrig017": {
-      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes av sinsin 0"
+      "expected": "bue sinus, sinus 0"
     },
     "ArcTrig018": {
-      "expected": "av csccsc minus minus 1 venstre parentes høyre parentes av csccscx"
+      "expected": "bue cosekant, cosekant x"
     },
     "ArcTrig019": {
-      "expected": "av coscos venstre parentes høyre parentes av coscos minus minus 1 venstre parentes høyre parentes minus minus 22"
+      "expected": "cosinus av, venstre parentes, bue cosinus av, venstre parentes, minus, brøk med teller kvadratroten av 2, og nevner 2, høyre parentes, høyre parentes"
     },
     "ArcTrig020": {
-      "expected": "av coscos venstre parentes høyre parentes minus minus av coscos minus minus 1 venstre parentes høyre parentes 22"
+      "expected": "cosinus av, venstre parentes, minus, bue cosinus av, venstre parentes, brøk med teller kvadratroten av 2, og nevner 2, høyre parentes, høyre parentes"
     },
     "ArcTrig021": {
-      "expected": "av sinsin minus minus 1 venstre parentes høyre parentes av coscos pi 4"
+      "expected": "bue sinus av, venstre parentes, cosinus av, pi delt på 4, høyre parentes"
     },
     "ArcTrig022": {
-      "expected": "av sinsin venstre parentes høyre parentes av coscos minus minus 112"
+      "expected": "sinus, bue cosinus en andre"
     },
     "ArcTrig023": {
-      "expected": "av sinsin venstre parentes høyre parentes av tantan minus minus 11"
+      "expected": "sinus, bue tangens 1"
     },
     "ArcTrig024": {
-      "expected": "av sinsin venstre parentes høyre parentes minus minus av tantan minus minus 11"
+      "expected": "sinus av, venstre parentes, minus, bue tangens 1, høyre parentes"
     },
     "ArcTrig025": {
-      "expected": "av sinsin venstre parentes høyre parentes minus minus av tantan minus minus 1 venstre parentes høyre parentes minus minus 1"
+      "expected": "sinus av, venstre parentes, minus, bue tangens minus 1, høyre parentes"
     },
     "ArcTrig026": {
-      "expected": "av secsec minus minus 1 venstre parentes høyre parentes av secsecx"
+      "expected": "bue sekant, sekant x"
     },
     "AllTrig01": {
-      "expected": "av arcsinarcsinx"
+      "expected": "invers sinus x"
     },
     "AllTrig02": {
-      "expected": "av arccosarccosx"
+      "expected": "invers cosinus x"
     },
     "AllTrig03": {
-      "expected": "av arctanarctanx"
+      "expected": "invers tangens x"
     },
     "HypTrig001": {
-      "expected": "av sinhsinhx"
+      "expected": "hyperbolsk sinus av x"
     },
     "HypTrig002": {
-      "expected": "av coshcoshx"
+      "expected": "hyperbolsk cosinus av x"
     },
     "HypTrig003": {
-      "expected": "av tanhtanhx"
+      "expected": "hyperbolsk tangens av x"
     },
     "HypTrig004": {
-      "expected": "av cothcothx"
+      "expected": "hyperbolsk cotangens av x"
     },
     "HypTrig005": {
-      "expected": "av sechsechx"
+      "expected": "hyperbolsk sekant av x"
     },
     "HypTrig006": {
-      "expected": "av cschcschx"
+      "expected": "hyperbolsk cosekant av x"
     },
     "HypTrig007": {
-      "expected": "av sinhsinh minus minus 1 x"
+      "expected": "invers hyperbolsk sinus av x"
     },
     "HypTrig008": {
-      "expected": "av coshcosh minus minus 1 x"
+      "expected": "invers hyperbolsk cosinus av x"
     },
     "HypTrig009": {
-      "expected": "av tanhtanh minus minus 1 x"
+      "expected": "invers hyperbolsk tangens av x"
     },
     "HypTrig010": {
-      "expected": "av cothcoth minus minus 1 x"
+      "expected": "invers hyperbolsk cotangens av x"
     },
     "HypTrig011": {
-      "expected": "av sechsech minus minus 1 x"
+      "expected": "invers hyperbolsk sekant av x"
     },
     "HypTrig012": {
-      "expected": "av cschcsch minus minus 1 x"
+      "expected": "invers hyperbolsk cosekant av x"
     },
     "HypTrig013": {
-      "expected": "av sinhsinh venstre parentes høyre parentes av sinhsinh minus minus 1 x"
+      "expected": "hyperbolsk sinus av, invers hyperbolsk sinus av x"
     },
     "HypTrig014": {
-      "expected": "av coshcosh venstre parentes høyre parentes av coshcosh minus minus 1 x"
+      "expected": "hyperbolsk cosinus av, invers hyperbolsk cosinus av x"
     },
     "HypTrig015": {
-      "expected": "av tanhtanh venstre parentes høyre parentes av tanhtanh minus minus 1 x"
+      "expected": "hyperbolsk tangens av, invers hyperbolsk tangens av x"
     },
     "HypTrig016": {
-      "expected": "av cothcoth venstre parentes høyre parentes av cothcoth minus minus 1 x"
+      "expected": "hyperbolsk cotangens av, invers hyperbolsk cotangens av x"
     },
     "HypTrig017": {
-      "expected": "av sinhsinh minus minus 1 venstre parentes høyre parentes av sinhsinhx"
+      "expected": "invers hyperbolsk sinus av, hyperbolsk sinus av x"
     },
     "HypTrig018": {
-      "expected": "av coshcosh minus minus 1 venstre parentes høyre parentes av coshcoshx"
+      "expected": "invers hyperbolsk cosinus av, hyperbolsk cosinus av x"
     },
     "HypTrig019": {
-      "expected": "av tanhtanh minus minus 1 venstre parentes høyre parentes av tanhtanhx"
+      "expected": "invers hyperbolsk tangens av, hyperbolsk tangens av x"
     },
     "HypTrig020": {
-      "expected": "av cothcoth minus minus 1 venstre parentes høyre parentes av cothcothx"
+      "expected": "invers hyperbolsk cotangens av, hyperbolsk cotangens av x"
     }
   }
 }

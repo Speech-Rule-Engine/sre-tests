@@ -16,31 +16,31 @@
       "expected": "2 x"
     },
     "Paren003": {
-      "expected": "2 pluss negative 2"
+      "expected": "2 pluss minus 2"
     },
     "Paren004": {
-      "expected": "2 minus negative 2"
+      "expected": "2 minus minus 2"
     },
     "Paren004a": {
-      "expected": "2 minus negative 2"
+      "expected": "2 minus minus 2"
     },
     "Paren005": {
-      "expected": "2 minus, venstreparentes, negative 2, høgreparentes, cubed"
+      "expected": "2 minus, venstreparentes, minus 2, høgreparentes, kubikk"
     },
     "Paren006": {
-      "expected": "venstreparentes, 2 x, høgreparentes, squared"
+      "expected": "venstreparentes, 2 x, høgreparentes, kvadrat"
     },
     "Paren007": {
-      "expected": "venstreparentes, 2 x, høgreparentes, raised to the y pluss 1 power"
+      "expected": "venstreparentes, 2 x, høgreparentes, heva til y pluss 1"
     },
     "Paren008": {
-      "expected": "negative 2 x"
+      "expected": "minus 2 x"
     },
     "Paren009": {
-      "expected": "venstreparentes, negative 2 x, høgreparentes, squared"
+      "expected": "venstreparentes, minus 2 x, høgreparentes, kvadrat"
     },
     "Paren010": {
-      "expected": "negative, venstreparentes, 2 x, høgreparentes, squared"
+      "expected": "minus, venstreparentes, 2 x, høgreparentes, kvadrat"
     },
     "Paren011": {
       "expected": "ein andre"
@@ -49,13 +49,13 @@
       "expected": "tre fjerde x"
     },
     "Paren013": {
-      "expected": "venstreparentes, 11 over 22, høgreparentes"
+      "expected": "venstreparentes, 11 delt på 22, høgreparentes"
     },
     "Paren014": {
-      "expected": "ein andre to the fjerde power"
+      "expected": "ein andre i fjerde potens"
     },
     "Paren015": {
-      "expected": "venstreparentes, 11 over 15, høgreparentes, squared"
+      "expected": "venstreparentes, 11 delt på 15, høgreparentes, kvadrat"
     },
     "Paren016": {
       "expected": "venstreparentes, 25, høgreparentes"
@@ -64,28 +64,28 @@
       "expected": "venstreparentes, 2 x, høgreparentes"
     },
     "Paren018": {
-      "expected": "2 pluss, venstreparentes, negative 2, høgreparentes"
+      "expected": "2 pluss, venstreparentes, minus 2, høgreparentes"
     },
     "Paren019": {
-      "expected": "2 minus, venstreparentes, negative 2, høgreparentes"
+      "expected": "2 minus, venstreparentes, minus 2, høgreparentes"
     },
     "Paren020": {
-      "expected": "2 minus, venstreparentes, negative 2, høgreparentes, cubed"
+      "expected": "2 minus, venstreparentes, minus 2, høgreparentes, kubikk"
     },
     "Paren021": {
-      "expected": "venstreparentes, 2 x, høgreparentes, squared"
+      "expected": "venstreparentes, 2 x, høgreparentes, kvadrat"
     },
     "Paren022": {
-      "expected": "venstreparentes, 2 x, høgreparentes, raised to the y pluss 1 power"
+      "expected": "venstreparentes, 2 x, høgreparentes, heva til y pluss 1"
     },
     "Paren023": {
-      "expected": "venstreparentes, negative 2 x, høgreparentes"
+      "expected": "venstreparentes, minus 2 x, høgreparentes"
     },
     "Paren024": {
-      "expected": "venstreparentes, negative 2 x, høgreparentes, squared"
+      "expected": "venstreparentes, minus 2 x, høgreparentes, kvadrat"
     },
     "Paren025": {
-      "expected": "negative, venstreparentes, 2 x, høgreparentes, squared"
+      "expected": "minus, venstreparentes, 2 x, høgreparentes, kvadrat"
     },
     "Paren026": {
       "expected": "venstreparentes, ein andre, høgreparentes"
@@ -94,88 +94,88 @@
       "expected": "venstreparentes, tre fjerde x, høgreparentes"
     },
     "Paren028": {
-      "expected": "venstreparentes, 11 over 22, høgreparentes"
+      "expected": "venstreparentes, 11 delt på 22, høgreparentes"
     },
     "Paren029": {
-      "expected": "venstreparentes, ein andre, høgreparentes, to the fjerde power"
+      "expected": "venstreparentes, ein andre, høgreparentes, i fjerde potens"
     },
     "Paren030": {
-      "expected": "venstreparentes, 11 over 15, høgreparentes, squared"
+      "expected": "venstreparentes, 11 delt på 15, høgreparentes, kvadrat"
     },
     "Paren031": {
-      "expected": "the point with coordinates 1 komma 2"
+      "expected": "punktet med koordinatar 1 komma 2"
     },
     "Paren032": {
-      "expected": "the point with coordinates x komma y"
+      "expected": "punktet med koordinatar x komma y"
     },
     "Paren033": {
-      "expected": "the point with coordinates 1 komma 2 komma 3"
+      "expected": "punktet med koordinatar 1 komma 2 komma 3"
     },
     "Paren034": {
-      "expected": "the point with coordinates x komma y komma z"
+      "expected": "punktet med koordinatar x komma y komma z"
     },
     "Paren035": {
-      "expected": "the point with coordinates 1 komma 2 komma 386"
+      "expected": "punktet med koordinatar 1 komma 2 komma 386"
     },
     "Paren036": {
-      "expected": "the interval from a to b, not including a or b"
+      "expected": "intervallet frå a til b, utan a eller b"
     },
     "Paren037": {
-      "expected": "the interval from 0 to 1, not including 0 or 1"
+      "expected": "intervallet frå 0 til 1, utan 0 eller 1"
     },
     "Paren038": {
-      "expected": "the interval from a to b, including a, but not including b"
+      "expected": "intervallet frå a til b, inkludert a, men utan b"
     },
     "Paren039": {
-      "expected": "the interval from 0 to 1, including 0, but not including 1"
+      "expected": "intervallet frå 0 til 1, inkludert 0, men utan 1"
     },
     "Paren040": {
-      "expected": "the interval from a to b, not including a, but including b"
+      "expected": "intervallet frå a til b, utan a, men inkludert b"
     },
     "Paren041": {
-      "expected": "the interval from 0 to 1, not including 0, but including 1"
+      "expected": "intervallet frå 0 til 1, utan 0, men inkludert 1"
     },
     "Paren042": {
-      "expected": "the interval from a to b, including a and b"
+      "expected": "intervallet frå a til b, inkludert a og b"
     },
     "Paren043": {
-      "expected": "the interval from 0 to 1, including 0 and 1"
+      "expected": "intervallet frå 0 til 1, inkludert 0 og 1"
     },
     "Paren044": {
-      "expected": "the interval from negative uendeleg to b, not including b"
+      "expected": "intervallet frå minus uendeleg til b, utan b"
     },
     "Paren045": {
-      "expected": "the interval from negative uendeleg to 1, not including 1"
+      "expected": "intervallet frå minus uendeleg til 1, utan 1"
     },
     "Paren046": {
-      "expected": "the interval from negative uendeleg to b, including b"
+      "expected": "intervallet frå minus uendeleg til b, inkludert b"
     },
     "Paren047": {
-      "expected": "the interval from negative uendeleg to 1, including 1"
+      "expected": "intervallet frå minus uendeleg til 1, inkludert 1"
     },
     "Paren048": {
-      "expected": "the interval from a to uendeleg, not including a"
+      "expected": "intervallet frå a til uendeleg, utan a"
     },
     "Paren049": {
-      "expected": "the interval from 1 to uendeleg, not including 1"
+      "expected": "intervallet frå 1 til uendeleg, utan 1"
     },
     "Paren050": {
-      "expected": "the interval from a to uendeleg, including a"
+      "expected": "intervallet frå a til uendeleg, inkludert a"
     },
     "Paren051": {
-      "expected": "the interval from 1 to uendeleg, including 1"
+      "expected": "intervallet frå 1 til uendeleg, inkludert 1"
     },
     "Paren052": {
-      "expected": "the interval from negative uendeleg to uendeleg"
+      "expected": "intervallet frå minus uendeleg til uendeleg"
     },
     "Paren053": {
-      "expected": "the interval from negative uendeleg to positive uendeleg"
+      "expected": "intervallet frå minus uendeleg til pluss uendeleg"
     },
     "Nest001": {
-      "expected": "f of, g of x"
+      "expected": "f av, g av x"
     },
     "Nest002": {
-      "expected": "f of, venstreparentes, g of, venstreparentes, x pluss 1, høgreparentes, høgreparentes"
+      "expected": "f av, venstreparentes, g av, venstreparentes, x pluss 1, høgreparentes, høgreparentes"
     },
     "Nest003": {
       "expected": "6 minus, venstre hakeparentes, 2 minus, venstreparentes, 3 pluss 5, høgreparentes, høgre hakeparentes"
@@ -205,28 +205,28 @@
       "expected": "2 x"
     },
     "SilParen003": {
-      "expected": "2 pluss, negative 2"
+      "expected": "2 pluss, minus 2"
     },
     "SilParen004": {
-      "expected": "2 minus, negative 2"
+      "expected": "2 minus, minus 2"
     },
     "SilParen005": {
-      "expected": "2 minus, negative 2, cubed"
+      "expected": "2 minus, minus 2, kubikk"
     },
     "SilParen006": {
-      "expected": "2 x, squared"
+      "expected": "2 x, kvadrat"
     },
     "SilParen007": {
-      "expected": "2 x, raised to the y pluss 1 power"
+      "expected": "2 x, heva til y pluss 1"
     },
     "SilParen008": {
-      "expected": "negative 2 x"
+      "expected": "minus 2 x"
     },
     "SilParen009": {
-      "expected": "negative 2 x, squared"
+      "expected": "minus 2 x, kvadrat"
     },
     "SilParen010": {
-      "expected": "negative, 2 x, squared"
+      "expected": "minus, 2 x, kvadrat"
     },
     "SilParen011": {
       "expected": "ein andre"
@@ -235,13 +235,13 @@
       "expected": "tre fjerde x"
     },
     "SilParen013": {
-      "expected": "11 over 22"
+      "expected": "11 delt på 22"
     },
     "SilParen014": {
-      "expected": "ein andre, to the fjerde power"
+      "expected": "ein andre, i fjerde potens"
     },
     "SilParen015": {
-      "expected": "11 over 15, squared"
+      "expected": "11 delt på 15, kvadrat"
     }
   }
 }
