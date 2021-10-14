@@ -46,22 +46,22 @@
       "expected": "sub a sup b base x sup d base r"
     },
     "PartialTensorABDRootR_default": {
-      "expected": "començar arrel subíndex a superíndex b línia base x superíndex d finalitzar arrel r"
+      "expected": "començar arrel quadrada subíndex a superíndex b línia base x superíndex d finalitzar arrel quadrada r"
     },
     "PartialTensorABDRootR_brief": {
-      "expected": "començar arrel sub a sup b base x sup d finalitzar arrel r"
+      "expected": "començar arrel quadrada sub a sup b base x sup d finalitzar arrel quadrada r"
     },
     "PartialTensorABDRootR_sbrief": {
-      "expected": "arrel sub a sup b base x sup d finalitzar arrel r"
+      "expected": "arrel quadrada sub a sup b base x sup d finalitzar arrel quadrada r"
     },
     "PartialTensorABDRRoot_default": {
-      "expected": "començar arrel subíndex a superíndex b línia base x superíndex d línia base r finalitzar arrel"
+      "expected": "començar arrel quadrada subíndex a superíndex b línia base x superíndex d línia base r finalitzar arrel quadrada"
     },
     "PartialTensorABDRRoot_brief": {
-      "expected": "començar arrel sub a sup b base x sup d base r finalitzar arrel"
+      "expected": "començar arrel quadrada sub a sup b base x sup d base r finalitzar arrel quadrada"
     },
     "PartialTensorABDRRoot_sbrief": {
-      "expected": "arrel sub a sup b base x sup d base r finalitzar arrel"
+      "expected": "arrel quadrada sub a sup b base x sup d base r finalitzar arrel quadrada"
     },
     "PartialTensorABDFracR_default": {
       "expected": "començar fracció 1 entre subíndex a superíndex b línia base x superíndex d finalitzar fracció r"
@@ -70,7 +70,7 @@
       "expected": "començar frac 1 entre sub a sup b base x sup d finalitzar frac r"
     },
     "PartialTensorABDFracR_sbrief": {
-      "expected": "frac 1 entre sub a sup b base x sup d r"
+      "expected": "començar frac 1 entre sub a sup b base x sup d finalitzar frac r"
     },
     "PartialTensorABDRFrac_default": {
       "expected": "començar fracció 1 entre subíndex a superíndex b línia base x superíndex d línia base r finalitzar fracció"
@@ -79,7 +79,7 @@
       "expected": "començar frac 1 entre sub a sup b base x sup d base r finalitzar frac"
     },
     "PartialTensorABDRFrac_sbrief": {
-      "expected": "frac 1 entre sub a sup b base x sup d base r"
+      "expected": "començar frac 1 entre sub a sup b base x sup d base r finalitzar frac"
     },
     "PartialTensorAB_default": {
       "expected": "subíndex a superíndex b línia base x"
@@ -100,22 +100,22 @@
       "expected": "sub a sup b base x base r"
     },
     "PartialTensorABRootR_default": {
-      "expected": "començar arrel subíndex a superíndex b línia base x finalitzar arrel r"
+      "expected": "començar arrel quadrada subíndex a superíndex b línia base x finalitzar arrel quadrada r"
     },
     "PartialTensorABRootR_brief": {
-      "expected": "començar arrel sub a sup b base x finalitzar arrel r"
+      "expected": "començar arrel quadrada sub a sup b base x finalitzar arrel quadrada r"
     },
     "PartialTensorABRootR_sbrief": {
-      "expected": "arrel sub a sup b base x finalitzar arrel r"
+      "expected": "arrel quadrada sub a sup b base x finalitzar arrel quadrada r"
     },
     "PartialTensorABRRoot_default": {
-      "expected": "començar arrel subíndex a superíndex b línia base x línia base r finalitzar arrel"
+      "expected": "començar arrel quadrada subíndex a superíndex b línia base x línia base r finalitzar arrel quadrada"
     },
     "PartialTensorABRRoot_brief": {
-      "expected": "començar arrel sub a sup b base x base r finalitzar arrel"
+      "expected": "començar arrel quadrada sub a sup b base x base r finalitzar arrel quadrada"
     },
     "PartialTensorABRRoot_sbrief": {
-      "expected": "arrel sub a sup b base x base r finalitzar arrel"
+      "expected": "arrel quadrada sub a sup b base x base r finalitzar arrel quadrada"
     },
     "PartialTensorABFracR_default": {
       "expected": "començar fracció 1 entre subíndex a superíndex b línia base x finalitzar fracció r"
@@ -124,7 +124,7 @@
       "expected": "començar frac 1 entre sub a sup b base x finalitzar frac r"
     },
     "PartialTensorABFracR_sbrief": {
-      "expected": "frac 1 entre sub a sup b base x r"
+      "expected": "començar frac 1 entre sub a sup b base x finalitzar frac r"
     },
     "PartialTensorABRFrac_default": {
       "expected": "començar fracció 1 entre subíndex a superíndex b línia base x línia base r finalitzar fracció"
@@ -133,7 +133,7 @@
       "expected": "començar frac 1 entre sub a sup b base x base r finalitzar frac"
     },
     "PartialTensorABRFrac_sbrief": {
-      "expected": "frac 1 entre sub a sup b base x base r"
+      "expected": "començar frac 1 entre sub a sup b base x base r finalitzar frac"
     },
     "PartialTensorABCR_default": {
       "expected": "subíndex a superíndex b línia base x subíndex c línia base r"
@@ -154,31 +154,31 @@
       "expected": "sub a sup b base x sub c sup d base r"
     },
     "PartialTensorABCDRoot_default": {
-      "expected": "començar arrel subíndex a superíndex b línia base x subíndex c superíndex d finalitzar arrel"
+      "expected": "començar arrel quadrada subíndex a superíndex b línia base x subíndex c superíndex d finalitzar arrel quadrada"
     },
     "PartialTensorABCDRoot_brief": {
-      "expected": "començar arrel sub a sup b base x sub c sup d finalitzar arrel"
+      "expected": "començar arrel quadrada sub a sup b base x sub c sup d finalitzar arrel quadrada"
     },
     "PartialTensorABCDRoot_sbrief": {
-      "expected": "arrel sub a sup b base x sub c sup d finalitzar arrel"
+      "expected": "arrel quadrada sub a sup b base x sub c sup d finalitzar arrel quadrada"
     },
     "PartialTensorABCDRootR_default": {
-      "expected": "començar arrel subíndex a superíndex b línia base x subíndex c superíndex d finalitzar arrel r"
+      "expected": "començar arrel quadrada subíndex a superíndex b línia base x subíndex c superíndex d finalitzar arrel quadrada r"
     },
     "PartialTensorABCDRootR_brief": {
-      "expected": "començar arrel sub a sup b base x sub c sup d finalitzar arrel r"
+      "expected": "començar arrel quadrada sub a sup b base x sub c sup d finalitzar arrel quadrada r"
     },
     "PartialTensorABCDRootR_sbrief": {
-      "expected": "arrel sub a sup b base x sub c sup d finalitzar arrel r"
+      "expected": "arrel quadrada sub a sup b base x sub c sup d finalitzar arrel quadrada r"
     },
     "PartialTensorABCDRRoot_default": {
-      "expected": "començar arrel subíndex a superíndex b línia base x subíndex c superíndex d línia base r finalitzar arrel"
+      "expected": "començar arrel quadrada subíndex a superíndex b línia base x subíndex c superíndex d línia base r finalitzar arrel quadrada"
     },
     "PartialTensorABCDRRoot_brief": {
-      "expected": "començar arrel sub a sup b base x sub c sup d base r finalitzar arrel"
+      "expected": "començar arrel quadrada sub a sup b base x sub c sup d base r finalitzar arrel quadrada"
     },
     "PartialTensorABCDRRoot_sbrief": {
-      "expected": "arrel sub a sup b base x sub c sup d base r finalitzar arrel"
+      "expected": "arrel quadrada sub a sup b base x sub c sup d base r finalitzar arrel quadrada"
     },
     "PartialTensorABCDFrac_default": {
       "expected": "començar fracció 1 entre subíndex a superíndex b línia base x subíndex c superíndex d finalitzar fracció"
@@ -187,7 +187,7 @@
       "expected": "començar frac 1 entre sub a sup b base x sub c sup d finalitzar frac"
     },
     "PartialTensorABCDFrac_sbrief": {
-      "expected": "frac 1 entre sub a sup b base x sub c sup d"
+      "expected": "començar frac 1 entre sub a sup b base x sub c sup d finalitzar frac"
     },
     "PartialTensorABCDFracR_default": {
       "expected": "començar fracció 1 entre subíndex a superíndex b línia base x subíndex c superíndex d finalitzar fracció r"
@@ -196,7 +196,7 @@
       "expected": "començar frac 1 entre sub a sup b base x sub c sup d finalitzar frac r"
     },
     "PartialTensorABCDFracR_sbrief": {
-      "expected": "frac 1 entre sub a sup b base x sub c sup d r"
+      "expected": "començar frac 1 entre sub a sup b base x sub c sup d finalitzar frac r"
     },
     "PartialTensorABCDRFrac_default": {
       "expected": "començar fracció 1 entre subíndex a superíndex b línia base x subíndex c superíndex d línia base r finalitzar fracció"
@@ -205,7 +205,7 @@
       "expected": "començar frac 1 entre sub a sup b base x sub c sup d base r finalitzar frac"
     },
     "PartialTensorABCDRFrac_sbrief": {
-      "expected": "frac 1 entre sub a sup b base x sub c sup d base r"
+      "expected": "començar frac 1 entre sub a sup b base x sub c sup d base r finalitzar frac"
     },
     "PartialTensorB_default": {
       "expected": "superíndex b línia base x"
@@ -226,22 +226,22 @@
       "expected": "sup b base x base r"
     },
     "PartialTensorBRootR_default": {
-      "expected": "començar arrel superíndex b línia base x finalitzar arrel r"
+      "expected": "començar arrel quadrada superíndex b línia base x finalitzar arrel quadrada r"
     },
     "PartialTensorBRootR_brief": {
-      "expected": "començar arrel sup b base x finalitzar arrel r"
+      "expected": "començar arrel quadrada sup b base x finalitzar arrel quadrada r"
     },
     "PartialTensorBRootR_sbrief": {
-      "expected": "arrel sup b base x finalitzar arrel r"
+      "expected": "arrel quadrada sup b base x finalitzar arrel quadrada r"
     },
     "PartialTensorBRRoot_default": {
-      "expected": "començar arrel superíndex b línia base x línia base r finalitzar arrel"
+      "expected": "començar arrel quadrada superíndex b línia base x línia base r finalitzar arrel quadrada"
     },
     "PartialTensorBRRoot_brief": {
-      "expected": "començar arrel sup b base x base r finalitzar arrel"
+      "expected": "començar arrel quadrada sup b base x base r finalitzar arrel quadrada"
     },
     "PartialTensorBRRoot_sbrief": {
-      "expected": "arrel sup b base x base r finalitzar arrel"
+      "expected": "arrel quadrada sup b base x base r finalitzar arrel quadrada"
     },
     "PartialTensorBFracR_default": {
       "expected": "començar fracció 1 entre superíndex b línia base x finalitzar fracció r"
@@ -250,7 +250,7 @@
       "expected": "començar frac 1 entre sup b base x finalitzar frac r"
     },
     "PartialTensorBFracR_sbrief": {
-      "expected": "frac 1 entre sup b base x r"
+      "expected": "començar frac 1 entre sup b base x finalitzar frac r"
     },
     "PartialTensorBRFrac_default": {
       "expected": "començar fracció 1 entre superíndex b línia base x línia base r finalitzar fracció"
@@ -259,7 +259,7 @@
       "expected": "començar frac 1 entre sup b base x base r finalitzar frac"
     },
     "PartialTensorBRFrac_sbrief": {
-      "expected": "frac 1 entre sup b base x base r"
+      "expected": "començar frac 1 entre sup b base x base r finalitzar frac"
     },
     "PartialTensorBD_default": {
       "expected": "superíndex b línia base x superíndex d"
@@ -280,22 +280,22 @@
       "expected": "sup b base x sup d base r"
     },
     "PartialTensorBDRootR_default": {
-      "expected": "començar arrel superíndex b línia base x superíndex d finalitzar arrel r"
+      "expected": "començar arrel quadrada superíndex b línia base x superíndex d finalitzar arrel quadrada r"
     },
     "PartialTensorBDRootR_brief": {
-      "expected": "començar arrel sup b base x sup d finalitzar arrel r"
+      "expected": "començar arrel quadrada sup b base x sup d finalitzar arrel quadrada r"
     },
     "PartialTensorBDRootR_sbrief": {
-      "expected": "arrel sup b base x sup d finalitzar arrel r"
+      "expected": "arrel quadrada sup b base x sup d finalitzar arrel quadrada r"
     },
     "PartialTensorBDRRoot_default": {
-      "expected": "començar arrel superíndex b línia base x superíndex d línia base r finalitzar arrel"
+      "expected": "començar arrel quadrada superíndex b línia base x superíndex d línia base r finalitzar arrel quadrada"
     },
     "PartialTensorBDRRoot_brief": {
-      "expected": "començar arrel sup b base x sup d base r finalitzar arrel"
+      "expected": "començar arrel quadrada sup b base x sup d base r finalitzar arrel quadrada"
     },
     "PartialTensorBDRRoot_sbrief": {
-      "expected": "arrel sup b base x sup d base r finalitzar arrel"
+      "expected": "arrel quadrada sup b base x sup d base r finalitzar arrel quadrada"
     },
     "PartialTensorBDFracR_default": {
       "expected": "començar fracció 1 entre superíndex b línia base x superíndex d finalitzar fracció r"
@@ -304,7 +304,7 @@
       "expected": "començar frac 1 entre sup b base x sup d finalitzar frac r"
     },
     "PartialTensorBDFracR_sbrief": {
-      "expected": "frac 1 entre sup b base x sup d r"
+      "expected": "començar frac 1 entre sup b base x sup d finalitzar frac r"
     },
     "PartialTensorBDRFrac_default": {
       "expected": "començar fracció 1 entre superíndex b línia base x superíndex d línia base r finalitzar fracció"
@@ -313,7 +313,7 @@
       "expected": "començar frac 1 entre sup b base x sup d base r finalitzar frac"
     },
     "PartialTensorBDRFrac_sbrief": {
-      "expected": "frac 1 entre sup b base x sup d base r"
+      "expected": "començar frac 1 entre sup b base x sup d base r finalitzar frac"
     },
     "PartialTensorBC_default": {
       "expected": "superíndex b línia base x subíndex c"
@@ -334,22 +334,22 @@
       "expected": "sup b base x sub c base r"
     },
     "PartialTensorBCRootR_default": {
-      "expected": "començar arrel superíndex b línia base x subíndex c finalitzar arrel r"
+      "expected": "començar arrel quadrada superíndex b línia base x subíndex c finalitzar arrel quadrada r"
     },
     "PartialTensorBCRootR_brief": {
-      "expected": "començar arrel sup b base x sub c finalitzar arrel r"
+      "expected": "començar arrel quadrada sup b base x sub c finalitzar arrel quadrada r"
     },
     "PartialTensorBCRootR_sbrief": {
-      "expected": "arrel sup b base x sub c finalitzar arrel r"
+      "expected": "arrel quadrada sup b base x sub c finalitzar arrel quadrada r"
     },
     "PartialTensorBCRRoot_default": {
-      "expected": "començar arrel superíndex b línia base x subíndex c línia base r finalitzar arrel"
+      "expected": "començar arrel quadrada superíndex b línia base x subíndex c línia base r finalitzar arrel quadrada"
     },
     "PartialTensorBCRRoot_brief": {
-      "expected": "començar arrel sup b base x sub c base r finalitzar arrel"
+      "expected": "començar arrel quadrada sup b base x sub c base r finalitzar arrel quadrada"
     },
     "PartialTensorBCRRoot_sbrief": {
-      "expected": "arrel sup b base x sub c base r finalitzar arrel"
+      "expected": "arrel quadrada sup b base x sub c base r finalitzar arrel quadrada"
     },
     "PartialTensorBCFracR_default": {
       "expected": "començar fracció 1 entre superíndex b línia base x subíndex c finalitzar fracció r"
@@ -358,7 +358,7 @@
       "expected": "començar frac 1 entre sup b base x sub c finalitzar frac r"
     },
     "PartialTensorBCFracR_sbrief": {
-      "expected": "frac 1 entre sup b base x sub c r"
+      "expected": "començar frac 1 entre sup b base x sub c finalitzar frac r"
     },
     "PartialTensorBCRFrac_default": {
       "expected": "començar fracció 1 entre superíndex b línia base x subíndex c línia base r finalitzar fracció"
@@ -367,7 +367,7 @@
       "expected": "començar frac 1 entre sup b base x sub c base r finalitzar frac"
     },
     "PartialTensorBCRFrac_sbrief": {
-      "expected": "frac 1 entre sup b base x sub c base r"
+      "expected": "començar frac 1 entre sup b base x sub c base r finalitzar frac"
     },
     "PartialTensorBCD_default": {
       "expected": "superíndex b línia base x subíndex c superíndex d"
@@ -388,22 +388,22 @@
       "expected": "sup b base x sub c sup d base r"
     },
     "PartialTensorBCDRootR_default": {
-      "expected": "començar arrel superíndex b línia base x subíndex c superíndex d finalitzar arrel r"
+      "expected": "començar arrel quadrada superíndex b línia base x subíndex c superíndex d finalitzar arrel quadrada r"
     },
     "PartialTensorBCDRootR_brief": {
-      "expected": "començar arrel sup b base x sub c sup d finalitzar arrel r"
+      "expected": "començar arrel quadrada sup b base x sub c sup d finalitzar arrel quadrada r"
     },
     "PartialTensorBCDRootR_sbrief": {
-      "expected": "arrel sup b base x sub c sup d finalitzar arrel r"
+      "expected": "arrel quadrada sup b base x sub c sup d finalitzar arrel quadrada r"
     },
     "PartialTensorBCDRRoot_default": {
-      "expected": "començar arrel superíndex b línia base x subíndex c superíndex d línia base r finalitzar arrel"
+      "expected": "començar arrel quadrada superíndex b línia base x subíndex c superíndex d línia base r finalitzar arrel quadrada"
     },
     "PartialTensorBCDRRoot_brief": {
-      "expected": "començar arrel sup b base x sub c sup d base r finalitzar arrel"
+      "expected": "començar arrel quadrada sup b base x sub c sup d base r finalitzar arrel quadrada"
     },
     "PartialTensorBCDRRoot_sbrief": {
-      "expected": "arrel sup b base x sub c sup d base r finalitzar arrel"
+      "expected": "arrel quadrada sup b base x sub c sup d base r finalitzar arrel quadrada"
     },
     "PartialTensorBCDFracR_default": {
       "expected": "començar fracció 1 entre superíndex b línia base x subíndex c superíndex d finalitzar fracció r"
@@ -412,7 +412,7 @@
       "expected": "començar frac 1 entre sup b base x sub c sup d finalitzar frac r"
     },
     "PartialTensorBCDFracR_sbrief": {
-      "expected": "frac 1 entre sup b base x sub c sup d r"
+      "expected": "començar frac 1 entre sup b base x sub c sup d finalitzar frac r"
     },
     "PartialTensorBCDRFrac_default": {
       "expected": "començar fracció 1 entre superíndex b línia base x subíndex c superíndex d línia base r finalitzar fracció"
@@ -421,7 +421,7 @@
       "expected": "començar frac 1 entre sup b base x sub c sup d base r finalitzar frac"
     },
     "PartialTensorBCDRFrac_sbrief": {
-      "expected": "frac 1 entre sup b base x sub c sup d base r"
+      "expected": "començar frac 1 entre sup b base x sub c sup d base r finalitzar frac"
     },
     "PartialTensorA_default": {
       "expected": "subíndex a línia base x"
@@ -442,22 +442,22 @@
       "expected": "sub a base x base r"
     },
     "PartialTensorARootR_default": {
-      "expected": "començar arrel subíndex a línia base x finalitzar arrel r"
+      "expected": "començar arrel quadrada subíndex a línia base x finalitzar arrel quadrada r"
     },
     "PartialTensorARootR_brief": {
-      "expected": "començar arrel sub a base x finalitzar arrel r"
+      "expected": "començar arrel quadrada sub a base x finalitzar arrel quadrada r"
     },
     "PartialTensorARootR_sbrief": {
-      "expected": "arrel sub a base x finalitzar arrel r"
+      "expected": "arrel quadrada sub a base x finalitzar arrel quadrada r"
     },
     "PartialTensorARRoot_default": {
-      "expected": "començar arrel subíndex a línia base x línia base r finalitzar arrel"
+      "expected": "començar arrel quadrada subíndex a línia base x línia base r finalitzar arrel quadrada"
     },
     "PartialTensorARRoot_brief": {
-      "expected": "començar arrel sub a base x base r finalitzar arrel"
+      "expected": "començar arrel quadrada sub a base x base r finalitzar arrel quadrada"
     },
     "PartialTensorARRoot_sbrief": {
-      "expected": "arrel sub a base x base r finalitzar arrel"
+      "expected": "arrel quadrada sub a base x base r finalitzar arrel quadrada"
     },
     "PartialTensorAFracR_default": {
       "expected": "començar fracció 1 entre subíndex a línia base x finalitzar fracció r"
@@ -466,7 +466,7 @@
       "expected": "començar frac 1 entre sub a base x finalitzar frac r"
     },
     "PartialTensorAFracR_sbrief": {
-      "expected": "frac 1 entre sub a base x r"
+      "expected": "començar frac 1 entre sub a base x finalitzar frac r"
     },
     "PartialTensorARFrac_default": {
       "expected": "començar fracció 1 entre subíndex a línia base x línia base r finalitzar fracció"
@@ -475,7 +475,7 @@
       "expected": "començar frac 1 entre sub a base x base r finalitzar frac"
     },
     "PartialTensorARFrac_sbrief": {
-      "expected": "frac 1 entre sub a base x base r"
+      "expected": "començar frac 1 entre sub a base x base r finalitzar frac"
     },
     "PartialTensorAD_default": {
       "expected": "subíndex a línia base x superíndex d"
@@ -496,22 +496,22 @@
       "expected": "sub a base x sup d base r"
     },
     "PartialTensorADRootR_default": {
-      "expected": "començar arrel subíndex a línia base x superíndex d finalitzar arrel r"
+      "expected": "començar arrel quadrada subíndex a línia base x superíndex d finalitzar arrel quadrada r"
     },
     "PartialTensorADRootR_brief": {
-      "expected": "començar arrel sub a base x sup d finalitzar arrel r"
+      "expected": "començar arrel quadrada sub a base x sup d finalitzar arrel quadrada r"
     },
     "PartialTensorADRootR_sbrief": {
-      "expected": "arrel sub a base x sup d finalitzar arrel r"
+      "expected": "arrel quadrada sub a base x sup d finalitzar arrel quadrada r"
     },
     "PartialTensorADRRoot_default": {
-      "expected": "començar arrel subíndex a línia base x superíndex d línia base r finalitzar arrel"
+      "expected": "començar arrel quadrada subíndex a línia base x superíndex d línia base r finalitzar arrel quadrada"
     },
     "PartialTensorADRRoot_brief": {
-      "expected": "començar arrel sub a base x sup d base r finalitzar arrel"
+      "expected": "començar arrel quadrada sub a base x sup d base r finalitzar arrel quadrada"
     },
     "PartialTensorADRRoot_sbrief": {
-      "expected": "arrel sub a base x sup d base r finalitzar arrel"
+      "expected": "arrel quadrada sub a base x sup d base r finalitzar arrel quadrada"
     },
     "PartialTensorADFracR_default": {
       "expected": "començar fracció 1 entre subíndex a línia base x superíndex d finalitzar fracció r"
@@ -520,7 +520,7 @@
       "expected": "començar frac 1 entre sub a base x sup d finalitzar frac r"
     },
     "PartialTensorADFracR_sbrief": {
-      "expected": "frac 1 entre sub a base x sup d r"
+      "expected": "començar frac 1 entre sub a base x sup d finalitzar frac r"
     },
     "PartialTensorADRFrac_default": {
       "expected": "començar fracció 1 entre subíndex a línia base x superíndex d línia base r finalitzar fracció"
@@ -529,7 +529,7 @@
       "expected": "començar frac 1 entre sub a base x sup d base r finalitzar frac"
     },
     "PartialTensorADRFrac_sbrief": {
-      "expected": "frac 1 entre sub a base x sup d base r"
+      "expected": "començar frac 1 entre sub a base x sup d base r finalitzar frac"
     },
     "PartialTensorAC_default": {
       "expected": "subíndex a línia base x subíndex c"
@@ -550,22 +550,22 @@
       "expected": "sub a base x sub c base r"
     },
     "PartialTensorACRootR_default": {
-      "expected": "començar arrel subíndex a línia base x subíndex c finalitzar arrel r"
+      "expected": "començar arrel quadrada subíndex a línia base x subíndex c finalitzar arrel quadrada r"
     },
     "PartialTensorACRootR_brief": {
-      "expected": "començar arrel sub a base x sub c finalitzar arrel r"
+      "expected": "començar arrel quadrada sub a base x sub c finalitzar arrel quadrada r"
     },
     "PartialTensorACRootR_sbrief": {
-      "expected": "arrel sub a base x sub c finalitzar arrel r"
+      "expected": "arrel quadrada sub a base x sub c finalitzar arrel quadrada r"
     },
     "PartialTensorACRRoot_default": {
-      "expected": "començar arrel subíndex a línia base x subíndex c línia base r finalitzar arrel"
+      "expected": "començar arrel quadrada subíndex a línia base x subíndex c línia base r finalitzar arrel quadrada"
     },
     "PartialTensorACRRoot_brief": {
-      "expected": "començar arrel sub a base x sub c base r finalitzar arrel"
+      "expected": "començar arrel quadrada sub a base x sub c base r finalitzar arrel quadrada"
     },
     "PartialTensorACRRoot_sbrief": {
-      "expected": "arrel sub a base x sub c base r finalitzar arrel"
+      "expected": "arrel quadrada sub a base x sub c base r finalitzar arrel quadrada"
     },
     "PartialTensorACFracR_default": {
       "expected": "començar fracció 1 entre subíndex a línia base x subíndex c finalitzar fracció r"
@@ -574,7 +574,7 @@
       "expected": "començar frac 1 entre sub a base x sub c finalitzar frac r"
     },
     "PartialTensorACFracR_sbrief": {
-      "expected": "frac 1 entre sub a base x sub c r"
+      "expected": "començar frac 1 entre sub a base x sub c finalitzar frac r"
     },
     "PartialTensorACRFrac_default": {
       "expected": "començar fracció 1 entre subíndex a línia base x subíndex c línia base r finalitzar fracció"
@@ -583,7 +583,7 @@
       "expected": "començar frac 1 entre sub a base x sub c base r finalitzar frac"
     },
     "PartialTensorACRFrac_sbrief": {
-      "expected": "frac 1 entre sub a base x sub c base r"
+      "expected": "començar frac 1 entre sub a base x sub c base r finalitzar frac"
     },
     "PartialTensorACD_default": {
       "expected": "subíndex a línia base x subíndex c superíndex d"
@@ -604,22 +604,22 @@
       "expected": "sub a base x sub c sup d base r"
     },
     "PartialTensorACDRootR_default": {
-      "expected": "començar arrel subíndex a línia base x subíndex c superíndex d finalitzar arrel r"
+      "expected": "començar arrel quadrada subíndex a línia base x subíndex c superíndex d finalitzar arrel quadrada r"
     },
     "PartialTensorACDRootR_brief": {
-      "expected": "començar arrel sub a base x sub c sup d finalitzar arrel r"
+      "expected": "començar arrel quadrada sub a base x sub c sup d finalitzar arrel quadrada r"
     },
     "PartialTensorACDRootR_sbrief": {
-      "expected": "arrel sub a base x sub c sup d finalitzar arrel r"
+      "expected": "arrel quadrada sub a base x sub c sup d finalitzar arrel quadrada r"
     },
     "PartialTensorACDRRoot_default": {
-      "expected": "començar arrel subíndex a línia base x subíndex c superíndex d línia base r finalitzar arrel"
+      "expected": "començar arrel quadrada subíndex a línia base x subíndex c superíndex d línia base r finalitzar arrel quadrada"
     },
     "PartialTensorACDRRoot_brief": {
-      "expected": "començar arrel sub a base x sub c sup d base r finalitzar arrel"
+      "expected": "començar arrel quadrada sub a base x sub c sup d base r finalitzar arrel quadrada"
     },
     "PartialTensorACDRRoot_sbrief": {
-      "expected": "arrel sub a base x sub c sup d base r finalitzar arrel"
+      "expected": "arrel quadrada sub a base x sub c sup d base r finalitzar arrel quadrada"
     },
     "PartialTensorACDFracR_default": {
       "expected": "començar fracció 1 entre subíndex a línia base x subíndex c superíndex d finalitzar fracció r"
@@ -628,7 +628,7 @@
       "expected": "començar frac 1 entre sub a base x sub c sup d finalitzar frac r"
     },
     "PartialTensorACDFracR_sbrief": {
-      "expected": "frac 1 entre sub a base x sub c sup d r"
+      "expected": "començar frac 1 entre sub a base x sub c sup d finalitzar frac r"
     },
     "PartialTensorACDRFrac_default": {
       "expected": "començar fracció 1 entre subíndex a línia base x subíndex c superíndex d línia base r finalitzar fracció"
@@ -637,7 +637,7 @@
       "expected": "començar frac 1 entre sub a base x sub c sup d base r finalitzar frac"
     },
     "PartialTensorACDRFrac_sbrief": {
-      "expected": "frac 1 entre sub a base x sub c sup d base r"
+      "expected": "començar frac 1 entre sub a base x sub c sup d base r finalitzar frac"
     },
     "TensorMultiSimpleABC_default": {
       "expected": "subíndex a superíndex b línia base x subíndex c sub superíndex l"
