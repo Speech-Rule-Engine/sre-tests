@@ -1140,6 +1140,192 @@
     },
     "BaselineNumberFont_sbrief": {
       "expected": "n 기준 bold 2"
+    },
+    "Sample_16_1_1_default": {
+      "expected": "a 는 b 보다 크거나 같다"
+    },
+    "Sample_16_1_2_default": {
+      "expected": "12000 더하기 1500 x 는 14000 더하기 1200 x 보다 크거나 같다"
+    },
+    "Sample_16_1_3_default": {
+      "expected": "y 는 a x 더하기 b 보다 크거나 같다"
+    },
+    "Sample_16_1_4_default": {
+      "expected": "루트 a b 는 2 a b 분의 a 더하기 b 보다 크거나 같다"
+    },
+    "Sample_16_1_5_default": {
+      "expected": "a 크거나 같다 분수시작 2 분의 1 더하기 2 분수끝"
+    },
+    "Sample_16_1_6_default": {
+      "expected": "a 크거나 같다 분수시작 2 분의 1 더하기 루트 2 분수끝"
+    },
+    "Sample_16_2_1_default": {
+      "expected": "n 은 m 보다 작거나 같다"
+    },
+    "Sample_16_2_2_default": {
+      "expected": "1024 더하기 256 x 는 512 더하기 512 x 보다 작거나 같다"
+    },
+    "Sample_16_2_3_default": {
+      "expected": "y 는 a x 더하기 b 보다 작거나 같다"
+    },
+    "Sample_16_2_4_default": {
+      "expected": "루트 a 1 더하기 a 2 는 a 1 더하기 a 2 분의 2 보다 작거나 같다"
+    },
+    "Sample_16_3_1_default": {
+      "expected": "a 분의 2 는 b 분의 2 보다 작다"
+    },
+    "Sample_16_3_2_default": {
+      "expected": "괄호 열고 1 분의 8 더하기 1 괄호 닫고 는 괄호 열고 1 분의 4 더하기 1 괄호 닫고 보다 작다"
+    },
+    "Sample_16_3_3_default": {
+      "expected": "y 는 a x 더하기 b 보다 작다"
+    },
+    "Sample_16_3_4_default": {
+      "expected": "a 더하기 b 더하기 c 분의 3 은 세제곱 루트 a b c 보다 작다"
+    },
+    "Sample_16_4_1_default": {
+      "expected": "n 분의 100 은 m 분의 100 보다 크다"
+    },
+    "Sample_16_4_2_default": {
+      "expected": "2 위첨자 10 기준 은 10 세제곱 보다 크다"
+    },
+    "Sample_16_4_3_default": {
+      "expected": "y 는 a x 더하기 b 보다 크다"
+    },
+    "Sample_16_4_4_default": {
+      "expected": "r 제곱 은 괄호 열고 x 빼기 a 괄호 닫고 제곱 더하기 괄호 열고 y 빼기 b 괄호 닫고 제곱 보다 크다"
+    },
+    "Sample_17_1_1_default": {
+      "expected": "a 는 b 에 속한다"
+    },
+    "Sample_17_1_2_default": {
+      "expected": "a 는 괄호 열고 대문자 A 교집합 대문자 B 괄호 닫고 에 속한다"
+    },
+    "Sample_17_1_3_default": {
+      "expected": "b 는 괄호 열고 대문자 A 합집합 대문자 B 괄호 닫고 에 속한다"
+    },
+    "Sample_17_1_4_default": {
+      "expected": "x 는 대문자 A 합집합 괄호 열고 대문자 B 교집합 대문자 C 괄호 닫고 에 속한다"
+    },
+    "Sample_17_2_1_default": {
+      "expected": "n 은 m 에 속한다"
+    },
+    "Sample_17_2_2_default": {
+      "expected": "n 은 괄호 열고 대문자 X 합집합 대문자 Y 괄호 닫고 에 속한다"
+    },
+    "Sample_17_2_3_default": {
+      "expected": "m 은 괄호 열고 대문자 X 교집합 대문자 Y 괄호 닫고 에 속한다"
+    },
+    "Sample_17_2_4_default": {
+      "expected": "m 은 대문자 A 교집합 괄호 열고 대문자 B 합집합 대문자 C 괄호 닫고 에 속한다"
+    },
+    "Sample_17_3_1_default": {
+      "expected": "a 는 b 에 속하지 않는다"
+    },
+    "Sample_17_3_2_default": {
+      "expected": "a 는 괄호 열고 대문자 A 교집합 대문자 B 괄호 닫고 에 속하지 않는다"
+    },
+    "Sample_17_3_3_default": {
+      "expected": "b 는 괄호 열고 대문자 A 합집합 대문자 B 괄호 닫고 에 속하지 않는다"
+    },
+    "Sample_17_3_4_default": {
+      "expected": "x 는 대문자 A 합집합 괄호 열고 대문자 B 교집합 대문자 C 괄호 닫고 에 속하지 않는다"
+    },
+    "Sample_17_4_1_default": {
+      "expected": "n 은 m 에 속하지 않는다"
+    },
+    "Sample_17_4_2_default": {
+      "expected": "n 은 괄호 열고 대문자 X 합집합 대문자 Y 괄호 닫고 에 속하지 않는다"
+    },
+    "Sample_17_4_3_default": {
+      "expected": "m 은 괄호 열고 대문자 X 교집합 대문자 Y 괄호 닫고 에 속하지 않는다"
+    },
+    "Sample_17_4_4_default": {
+      "expected": "m 은 대문자 A 교집합 괄호 열고 대문자 B 합집합 대문자 C 괄호 닫고 에 속하지 않는다"
+    },
+    "Sample_17_5_1_default": {
+      "expected": "A 는 B 에 포함된다"
+    },
+    "Sample_17_5_2_default": {
+      "expected": "괄호 열고 대문자 A 교집합 대문자 B 괄호 닫고 는 대문자 B 에 포함된다"
+    },
+    "Sample_17_5_3_default": {
+      "expected": "f 괄호 열고 대문자 A 교집합 대문자 B 괄호 닫고 는 f 괄호 열고 대문자 A 괄호 닫고 교집합 f 괄호 열고 대문자 B 괄호 닫고 에 포함된다"
+    },
+    "Sample_17_5_4_default": {
+      "expected": "중괄호 열고 2 콤마 2 분의 4 콤마 2 분의 16 중괄호 닫고 는 대문자 A 에 포함된다"
+    },
+    "Sample_18_1_1_default": {
+      "expected": "a 는 b 와 같지 않다"
+    },
+    "Sample_18_1_2_default": {
+      "expected": "절댓값 1 분의 2 는 절댓값 마이너스 2 분의 5 와 같지 않다"
+    },
+    "Sample_18_1_3_default": {
+      "expected": "루트 a 위첨자 10 은 루트 b 위첨자 13 과 같지 않다"
+    },
+    "Sample_18_1_4_default": {
+      "expected": "n 세제곱 더하기 4 n 제곱 더하기 4 는 9 와 같지 않다"
+    },
+    "Sample_19_1_1_default": {
+      "expected": "q 는 p 이기 위한 필요조건"
+    },
+    "Sample_19_1_2_default": {
+      "expected": "괄호 열고 x 제곱 은 4 괄호 닫고 는 괄호 열고 x 는 2 괄호 닫고 이기 위한 필요조건"
+    },
+    "Sample_19_1_3_default": {
+      "expected": "괄호 열고 x 제곱 빼기 9 는 0 보다 작거나 같다 괄호 닫고 는 괄호 열고 x 는 알파 보다 작거나 같다 괄호 닫고 이기 위한 필요조건"
+    },
+    "Sample_19_1_4_default": {
+      "expected": "절댓값 x 더하기 절댓값 y 는 1 보다 작다 는 x 제곱 더하기 y 제곱 은 1 보다 작다 이기 위한 필요조건"
+    },
+    "Sample_19_2_1_default": {
+      "expected": "q 는 p 이기 위한 충분조건"
+    },
+    "Sample_19_2_2_default": {
+      "expected": "괄호 열고 x 는 2 괄호 닫고 는 괄호 열고 x 제곱 은 4 괄호 닫고 이기 위한 충분조건"
+    },
+    "Sample_19_2_3_default": {
+      "expected": "x 는 0 보다 크다 는 x 더하기 1 은 1 보다 크다 이기 위한 충분조건"
+    },
+    "Sample_19_2_4_default": {
+      "expected": "x 는 2 는 x 제곱 더하기 x 빼기 6 은 0 이기 위한 충분조건"
+    },
+    "Sample_19_3_1_default": {
+      "expected": "q 는 p 이기 위한 필요충분조건"
+    },
+    "Sample_19_3_2_default": {
+      "expected": "x 는 y 는 m x 는 m y 이기 위한 필요충분조건"
+    },
+    "Sample_19_3_3_default": {
+      "expected": "x 제곱 빼기 2 x 빼기 8 은 x 는 a 보다 크거나 같다 이기 위한 필요충분조건"
+    },
+    "Sample_19_3_4_default": {
+      "expected": "0 작다 x 제곱 작거나 같다 2 는 0 작다 x 작다 루트 2 이기 위한 필요충분조건"
+    },
+    "Sample_20_1_1_default": {
+      "expected": "n 와 m 은 평행하다"
+    },
+    "Sample_20_1_2_default": {
+      "expected": "y 는 m x 더하기 n 과 y 는 a x 더하기 b 는 평행하다"
+    },
+    "Sample_20_1_3_default": {
+      "expected": "선분 AB 와 선분 CD 는 평행하다"
+    },
+    "Sample_20_1_4_default": {
+      "expected": "알파 와 베타 는 평행하다"
+    },
+    "Sample_20_2_1_default": {
+      "expected": "a 와 b 는 수직이다"
+    },
+    "Sample_20_2_2_default": {
+      "expected": "y 는 m x 와 y 는 m 프라임 x 는 수직이다"
+    },
+    "Sample_20_2_3_default": {
+      "expected": "선분 AB 와 선분 BC 는 수직이다"
+    },
+    "Sample_20_2_4_default": {
+      "expected": "대문자 F 와 m g 는 수직이다"
     }
   }
 }
