@@ -201,4 +201,3 @@ Trie.prototype.byConstraint = function(constraint: string[]): TrieNode {
   }
   return node || null;
 };
-

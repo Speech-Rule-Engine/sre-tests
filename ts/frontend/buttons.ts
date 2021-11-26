@@ -169,3 +169,27 @@ export function init(test: FireTest) {
   div.appendChild(forwardBtn.span);
   forwardBtn.show();
 }
+
+/**
+ * @param test
+ */
+export function harvest(test: FireTest, clear = () => {}) {
+  addListeners(test);
+  let div = document.createElement('div');
+  div.classList.add('btns');
+  document.body.appendChild(div);
+  div.appendChild(backwardBtn.span);
+  backwardBtn.show();
+  access.init(test);
+  div.appendChild(access.anchor);
+  let up = Buttons.createElement('btn center', 'selection');
+  up.textContent = 'Save';
+  up.setAttribute('tabindex', '0');
+  addListener(up, () => {
+    test.saveTest(test.getTest());
+    clear();
+  });
+  div.appendChild(up);
+  div.appendChild(forwardBtn.span);
+  forwardBtn.show();
+}

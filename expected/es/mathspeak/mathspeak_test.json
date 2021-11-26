@@ -138,7 +138,7 @@
       "expected": "integral de contorno mayúscula E punto medio d negrita l igual menos empezar frac d mayúscula Phi mayúscula B entre d t finalizar frac"
     },
     "Sample_2_6_2_sbrief": {
-      "expected": "integral de contorno mayúscula E punto medio d negrita l igual menos frac d mayúscula Phi mayúscula B entre d t"
+      "expected": "integral de contorno mayúscula E punto medio d negrita l igual menos empezar frac d mayúscula Phi mayúscula B entre d t finalizar frac"
     },
     "NegativeVsMinus_0": {
       "expected": "menos empezar fracción 1 entre b finalizar fracción"
@@ -228,7 +228,7 @@
       "expected": "empezar frac 1 entre x finalizar frac"
     },
     "Sample_7_1_1_sbrief": {
-      "expected": "frac 1 entre x"
+      "expected": "empezar frac 1 entre x finalizar frac"
     },
     "Sample_7_1_2_default": {
       "expected": "a menos empezar fracción b más c entre d menos e finalizar fracción por f"
@@ -237,7 +237,7 @@
       "expected": "a menos empezar frac b más c entre d menos e finalizar frac por f"
     },
     "Sample_7_1_2_sbrief": {
-      "expected": "a menos frac b más c entre d menos e por f"
+      "expected": "a menos empezar frac b más c entre d menos e finalizar frac por f"
     },
     "Sample_7_2_1_default": {
       "expected": "empezar empezar fracción empezar fracción x entre y finalizar fracción entre entre z finalizar finalizar fracción no es igual a empezar empezar fracción x entre entre empezar fracción y entre z finalizar fracción finalizar finalizar fracción"
@@ -246,7 +246,7 @@
       "expected": "empezar empezar frac empezar frac x entre y finalizar frac entre entre z finalizar finalizar frac no es igual a empezar empezar frac x entre entre empezar frac y entre z finalizar frac finalizar finalizar frac"
     },
     "Sample_7_2_1_sbrief": {
-      "expected": "frac frac x entre y entre z no es igual a frac x entre frac y entre z"
+      "expected": "empezar empezar frac empezar frac x entre y finalizar frac entre entre z finalizar finalizar frac no es igual a empezar empezar frac x entre entre empezar frac y entre z finalizar frac finalizar finalizar frac"
     },
     "Sample_7_3_1_default": {
       "expected": "empezar empezar empezar fracción empezar empezar fracción paréntesis izquierdo 1 menos x paréntesis derecho empezar fracción d entre d x finalizar fracción paréntesis izquierdo 2 x paréntesis derecho menos 2 x empezar fracción d entre d x finalizar fracción paréntesis izquierdo 1 menos x paréntesis derecho entre entre paréntesis izquierdo 1 menos x paréntesis derecho al cuadrado finalizar finalizar fracción entre entre entre 1 más paréntesis izquierdo empezar fracción 2 x entre 1 menos x finalizar fracción paréntesis derecho al cuadrado finalizar finalizar finalizar fracción"
@@ -255,7 +255,7 @@
       "expected": "empezar empezar empezar frac empezar empezar frac paréntesis izquierdo 1 menos x paréntesis derecho empezar frac d entre d x finalizar frac paréntesis izquierdo 2 x paréntesis derecho menos 2 x empezar frac d entre d x finalizar frac paréntesis izquierdo 1 menos x paréntesis derecho entre entre paréntesis izquierdo 1 menos x paréntesis derecho al cuadrado finalizar finalizar frac entre entre entre 1 más paréntesis izquierdo empezar frac 2 x entre 1 menos x finalizar frac paréntesis derecho al cuadrado finalizar finalizar finalizar frac"
     },
     "Sample_7_3_1_sbrief": {
-      "expected": "frac frac paréntesis izquierdo 1 menos x paréntesis derecho frac d entre d x paréntesis izquierdo 2 x paréntesis derecho menos 2 x frac d entre d x paréntesis izquierdo 1 menos x paréntesis derecho entre paréntesis izquierdo 1 menos x paréntesis derecho al cuadrado entre 1 más paréntesis izquierdo frac 2 x entre 1 menos x paréntesis derecho al cuadrado"
+      "expected": "empezar empezar empezar frac empezar empezar frac paréntesis izquierdo 1 menos x paréntesis derecho empezar frac d entre d x finalizar frac paréntesis izquierdo 2 x paréntesis derecho menos 2 x empezar frac d entre d x finalizar frac paréntesis izquierdo 1 menos x paréntesis derecho entre entre paréntesis izquierdo 1 menos x paréntesis derecho al cuadrado finalizar finalizar frac entre entre entre 1 más paréntesis izquierdo empezar frac 2 x entre 1 menos x finalizar frac paréntesis derecho al cuadrado finalizar finalizar finalizar frac"
     },
     "Sample_7_3_2_default": {
       "expected": "a subíndice 0 línea base más empezar empezar empezar empezar fracción 1 entre entre entre entre a subíndice 1 línea base más empezar empezar empezar fracción 1 entre entre entre a subíndice 2 línea base más empezar empezar fracción 1 entre entre puntos suspensivos más empezar fracción 1 entre a subíndice n línea base finalizar fracción finalizar finalizar fracción finalizar finalizar finalizar fracción finalizar finalizar finalizar finalizar fracción"
@@ -264,7 +264,7 @@
       "expected": "a sub 0 base más empezar empezar empezar empezar frac 1 entre entre entre entre a sub 1 base más empezar empezar empezar frac 1 entre entre entre a sub 2 base más empezar empezar frac 1 entre entre puntos suspensivos más empezar frac 1 entre a sub n base finalizar frac finalizar finalizar frac finalizar finalizar finalizar frac finalizar finalizar finalizar finalizar frac"
     },
     "Sample_7_3_2_sbrief": {
-      "expected": "a sub 0 base más frac 1 entre a sub 1 base más frac 1 entre a sub 2 base más frac 1 entre puntos suspensivos más frac 1 entre a sub n base"
+      "expected": "a sub 0 base más empezar empezar empezar empezar frac 1 entre entre entre entre a sub 1 base más empezar empezar empezar frac 1 entre entre entre a sub 2 base más empezar empezar frac 1 entre entre puntos suspensivos más empezar frac 1 entre a sub n base finalizar frac finalizar finalizar frac finalizar finalizar finalizar frac finalizar finalizar finalizar finalizar frac"
     },
     "Sample_7_4_1_default": {
       "expected": "empezar fracción 1 entre 2 finalizar fracción más empezar fracción 2 entre 2 finalizar fracción más empezar fracción 3 entre 2 finalizar fracción más empezar fracción 4 entre 2 finalizar fracción más puntos suspensivos igual sumatorio bajoíndice n igual 1 sobreíndice infinito finalizar índices empezar fracción n entre 2 finalizar fracción"
@@ -273,7 +273,7 @@
       "expected": "empezar frac 1 entre 2 finalizar frac más empezar frac 2 entre 2 finalizar frac más empezar frac 3 entre 2 finalizar frac más empezar frac 4 entre 2 finalizar frac más puntos suspensivos igual sumatorio bajoíndice n igual 1 sobreíndice infinito finalizar índices empezar frac n entre 2 finalizar frac"
     },
     "Sample_7_4_1_sbrief": {
-      "expected": "frac 1 entre 2 más frac 2 entre 2 más frac 3 entre 2 más frac 4 entre 2 más puntos suspensivos igual sumatorio bajoíndice n igual 1 sobreíndice infinito finalizar índices frac n entre 2"
+      "expected": "empezar frac 1 entre 2 finalizar frac más empezar frac 2 entre 2 finalizar frac más empezar frac 3 entre 2 finalizar frac más empezar frac 4 entre 2 finalizar frac más puntos suspensivos igual sumatorio bajoíndice n igual 1 sobreíndice infinito finalizar índices empezar frac n entre 2 finalizar frac"
     },
     "Sample_7_4_2_default": {
       "expected": "empezar fracción 20 entre 5 finalizar fracción por empezar fracción 1 entre 100 finalizar fracción igual empezar fracción 1 entre 25 finalizar fracción"
@@ -282,7 +282,7 @@
       "expected": "empezar frac 20 entre 5 finalizar frac por empezar frac 1 entre 100 finalizar frac igual empezar frac 1 entre 25 finalizar frac"
     },
     "Sample_7_4_2_sbrief": {
-      "expected": "frac 20 entre 5 por frac 1 entre 100 igual frac 1 entre 25"
+      "expected": "empezar frac 20 entre 5 finalizar frac por empezar frac 1 entre 100 finalizar frac igual empezar frac 1 entre 25 finalizar frac"
     },
     "Sample_7_4_3_default": {
       "expected": "empezar empezar fracción empezar fracción 3 entre 5 finalizar fracción entre entre 8 finalizar finalizar fracción igual empezar fracción 3 entre 5 finalizar fracción por empezar fracción 1 entre 8 finalizar fracción"
@@ -291,7 +291,7 @@
       "expected": "empezar empezar frac empezar frac 3 entre 5 finalizar frac entre entre 8 finalizar finalizar frac igual empezar frac 3 entre 5 finalizar frac por empezar frac 1 entre 8 finalizar frac"
     },
     "Sample_7_4_3_sbrief": {
-      "expected": "frac frac 3 entre 5 entre 8 igual frac 3 entre 5 por frac 1 entre 8"
+      "expected": "empezar empezar frac empezar frac 3 entre 5 finalizar frac entre entre 8 finalizar finalizar frac igual empezar frac 3 entre 5 finalizar frac por empezar frac 1 entre 8 finalizar frac"
     },
     "Sample_7_5_1_default": {
       "expected": "3 más empezar fracción 5 entre 8 finalizar fracción igual empezar fracción 29 entre 8 finalizar fracción"
@@ -300,7 +300,7 @@
       "expected": "3 más empezar frac 5 entre 8 finalizar frac igual empezar frac 29 entre 8 finalizar frac"
     },
     "Sample_7_5_1_sbrief": {
-      "expected": "3 más frac 5 entre 8 igual frac 29 entre 8"
+      "expected": "3 más empezar frac 5 entre 8 finalizar frac igual empezar frac 29 entre 8 finalizar frac"
     },
     "Sample_7_6_1_default": {
       "expected": "a subíndice 0 línea base más fracción continua b subíndice 1 línea base entre a subíndice 1 línea base más empezar fracción b subíndice 2 línea base entre a subíndice 2 línea base más empezar fracción b subíndice 3 línea base entre a subíndice 3 línea base más puntos suspensivos igual a subíndice 0 línea base más empezar fracción b subíndice 1 línea base entre a subíndice 1 línea base finalizar fracción más empezar fracción b subíndice 2 línea base entre a subíndice 2 línea base finalizar fracción más puntos suspensivos"
@@ -309,7 +309,7 @@
       "expected": "a sub 0 base más frac continua b sub 1 base entre a sub 1 base más empezar frac b sub 2 base entre a sub 2 base más empezar frac b sub 3 base entre a sub 3 base más puntos suspensivos igual a sub 0 base más empezar frac b sub 1 base entre a sub 1 base finalizar frac más empezar frac b sub 2 base entre a sub 2 base finalizar frac más puntos suspensivos"
     },
     "Sample_7_6_1_sbrief": {
-      "expected": "a sub 0 base más frac continua b sub 1 base entre a sub 1 base más frac b sub 2 base entre a sub 2 base más frac b sub 3 base entre a sub 3 base más puntos suspensivos igual a sub 0 base más frac b sub 1 base entre a sub 1 base más frac b sub 2 base entre a sub 2 base más puntos suspensivos"
+      "expected": "a sub 0 base más frac continua b sub 1 base entre a sub 1 base más frac b sub 2 base entre a sub 2 base más frac b sub 3 base entre a sub 3 base más puntos suspensivos igual a sub 0 base más empezar frac b sub 1 base entre a sub 1 base finalizar frac más empezar frac b sub 2 base entre a sub 2 base finalizar frac más puntos suspensivos"
     },
     "Sample_8_1_1_default": {
       "expected": "x al cubo más 6 x al cuadrado menos x igual 30"
@@ -327,7 +327,7 @@
       "expected": "empezar frac d al cuadrado y entre d x al cuadrado finalizar frac más paréntesis izquierdo a x al cuadrado más b x más c paréntesis derecho y igual 0"
     },
     "Sample_8_1_2_sbrief": {
-      "expected": "frac d al cuadrado y entre d x al cuadrado más paréntesis izquierdo a x al cuadrado más b x más c paréntesis derecho y igual 0"
+      "expected": "empezar frac d al cuadrado y entre d x al cuadrado finalizar frac más paréntesis izquierdo a x al cuadrado más b x más c paréntesis derecho y igual 0"
     },
     "Sample_8_2_1_default": {
       "expected": "x superíndice empezar fracción 1 entre 2 finalizar fracción"
@@ -336,7 +336,7 @@
       "expected": "x sup empezar frac 1 entre 2 finalizar frac"
     },
     "Sample_8_2_1_sbrief": {
-      "expected": "x sup frac 1 entre 2"
+      "expected": "x sup empezar frac 1 entre 2 finalizar frac"
     },
     "Sample_8_2_2_default": {
       "expected": "x subíndice n"
@@ -555,7 +555,7 @@
       "expected": "logaritmo sub 2 base paréntesis izquierdo x paréntesis derecho igual empezar frac logaritmo sub 10 base paréntesis izquierdo x paréntesis derecho entre logaritmo sub 10 base paréntesis izquierdo 2 paréntesis derecho finalizar frac"
     },
     "Sample_8_5_8_sbrief": {
-      "expected": "logaritmo sub 2 base paréntesis izquierdo x paréntesis derecho igual frac logaritmo sub 10 base paréntesis izquierdo x paréntesis derecho entre logaritmo sub 10 base paréntesis izquierdo 2 paréntesis derecho"
+      "expected": "logaritmo sub 2 base paréntesis izquierdo x paréntesis derecho igual empezar frac logaritmo sub 10 base paréntesis izquierdo x paréntesis derecho entre logaritmo sub 10 base paréntesis izquierdo 2 paréntesis derecho finalizar frac"
     },
     "Sample_8_5_9_default": {
       "expected": "mayúscula Phi subíndice 5"
@@ -573,7 +573,7 @@
       "expected": "logaritmo neperiano x igual integral Sub 1 Sup x Base empezar frac d t entre t finalizar frac"
     },
     "Sample_8_5_10_sbrief": {
-      "expected": "logaritmo neperiano x igual integral Sub 1 Sup x Base frac d t entre t"
+      "expected": "logaritmo neperiano x igual integral Sub 1 Sup x Base empezar frac d t entre t finalizar frac"
     },
     "Sample_8_6_1_default": {
       "expected": "dólar n línea base 2 igual 2 por dólar n más 1 punto y coma"
@@ -663,7 +663,7 @@
       "expected": "f tres prima paréntesis izquierdo y paréntesis derecho igual empezar frac d f dos prima paréntesis izquierdo y paréntesis derecho entre d y finalizar frac"
     },
     "Sample_8_9_2_sbrief": {
-      "expected": "f tres prima paréntesis izquierdo y paréntesis derecho igual frac d f dos prima paréntesis izquierdo y paréntesis derecho entre d y"
+      "expected": "f tres prima paréntesis izquierdo y paréntesis derecho igual empezar frac d f dos prima paréntesis izquierdo y paréntesis derecho entre d y finalizar frac"
     },
     "Sample_8_10_1_default": {
       "expected": "rho prima igual rho prima subíndice más línea base más rho prima subíndice menos"
@@ -773,7 +773,7 @@
       "expected": "índice de raíz n empezar raíz x sup m base finalizar raíz igual paréntesis izquierdo índice de raíz n empezar raíz x finalizar raíz paréntesis derecho sup m base igual x sup empezar frac m entre n finalizar frac base coma x mayor que 0"
     },
     "Sample_9_2_2_sbrief": {
-      "expected": "n raíz x sup m base finalizar raíz igual paréntesis izquierdo n raíz x finalizar raíz paréntesis derecho sup m base igual x sup frac m entre n base coma x mayor que 0"
+      "expected": "n raíz x sup m base finalizar raíz igual paréntesis izquierdo n raíz x finalizar raíz paréntesis derecho sup m base igual x sup empezar frac m entre n finalizar frac base coma x mayor que 0"
     },
     "Sample_9_2_3_default": {
       "expected": "empezar raíz cúbica x finalizar raíz cúbica igual x superíndice empezar fracción 1 entre 3 finalizar fracción"
@@ -782,7 +782,7 @@
       "expected": "empezar raíz cúbica x finalizar raíz cúbica igual x sup empezar frac 1 entre 3 finalizar frac"
     },
     "Sample_9_2_3_sbrief": {
-      "expected": "raíz cúbica x finalizar raíz cúbica igual x sup frac 1 entre 3"
+      "expected": "raíz cúbica x finalizar raíz cúbica igual x sup empezar frac 1 entre 3 finalizar frac"
     },
     "Sample_9_3_1_default": {
       "expected": "empezar raíz cuadrada empezar raíz cuadrada x más 1 finalizar raíz cuadrada más empezar raíz cuadrada y más 1 finalizar raíz cuadrada finalizar raíz cuadrada"
@@ -818,7 +818,7 @@
       "expected": "empezar frac 2 entre pi finalizar frac igual empezar frac empezar raíz cuadrada 2 finalizar raíz cuadrada entre 2 finalizar frac empezar frac empezar raíz cuadrada 2 más empezar raíz cuadrada 2 finalizar raíz cuadrada finalizar raíz cuadrada entre 2 finalizar frac empezar frac empezar raíz cuadrada 2 más empezar raíz cuadrada 2 más empezar raíz cuadrada 2 finalizar raíz cuadrada finalizar raíz cuadrada finalizar raíz cuadrada entre 2 finalizar frac puntos suspensivos"
     },
     "Sample_9_3_4_sbrief": {
-      "expected": "frac 2 entre pi igual frac raíz cuadrada 2 finalizar raíz cuadrada entre 2 frac raíz cuadrada 2 más raíz cuadrada 2 finalizar raíz cuadrada finalizar raíz cuadrada entre 2 frac raíz cuadrada 2 más raíz cuadrada 2 más raíz cuadrada 2 finalizar raíz cuadrada finalizar raíz cuadrada finalizar raíz cuadrada entre 2 puntos suspensivos"
+      "expected": "empezar frac 2 entre pi finalizar frac igual empezar frac raíz cuadrada 2 finalizar raíz cuadrada entre 2 finalizar frac empezar frac raíz cuadrada 2 más raíz cuadrada 2 finalizar raíz cuadrada finalizar raíz cuadrada entre 2 finalizar frac empezar frac raíz cuadrada 2 más raíz cuadrada 2 más raíz cuadrada 2 finalizar raíz cuadrada finalizar raíz cuadrada finalizar raíz cuadrada entre 2 finalizar frac puntos suspensivos"
     },
     "Sample_10_1_1_default": {
       "expected": "empezar fracción 5 x tachado y finalizar tachado entre 2 tachado y finalizar tachado finalizar fracción igual empezar fracción 5 entre 2 finalizar fracción x"
@@ -827,7 +827,7 @@
       "expected": "empezar frac 5 x tachado y finalizar tachado entre 2 tachado y finalizar tachado finalizar frac igual empezar frac 5 entre 2 finalizar frac x"
     },
     "Sample_10_1_1_sbrief": {
-      "expected": "frac 5 x tachado y finalizar tachado entre 2 tachado y finalizar tachado igual frac 5 entre 2 x"
+      "expected": "empezar frac 5 x tachado y finalizar tachado entre 2 tachado y finalizar tachado finalizar frac igual empezar frac 5 entre 2 finalizar frac x"
     },
     "Sample_10_2_1_default": {
       "expected": "empezar fracción 12 entre 18 finalizar fracción igual empezar fracción tachado 12 con 2 finalizar tachado entre tachado 18 con 3 finalizar tachado finalizar fracción igual empezar fracción 2 entre 3 finalizar fracción"
@@ -836,7 +836,7 @@
       "expected": "empezar frac 12 entre 18 finalizar frac igual empezar frac tachado 12 con 2 finalizar tachado entre tachado 18 con 3 finalizar tachado finalizar frac igual empezar frac 2 entre 3 finalizar frac"
     },
     "Sample_10_2_1_sbrief": {
-      "expected": "frac 12 entre 18 igual frac tachado 12 con 2 finalizar tachado entre tachado 18 con 3 finalizar tachado igual frac 2 entre 3"
+      "expected": "empezar frac 12 entre 18 finalizar frac igual empezar frac tachado 12 con 2 finalizar tachado entre tachado 18 con 3 finalizar tachado finalizar frac igual empezar frac 2 entre 3 finalizar frac"
     },
     "Sample_10_2_2_default": {
       "expected": "empezar fracción 12 entre 18 finalizar fracción igual empezar fracción tachado 12 con 2 finalizar tachado entre tachado 18 con 3 finalizar tachado finalizar fracción igual empezar fracción 2 entre 3 finalizar fracción"
@@ -845,7 +845,7 @@
       "expected": "empezar frac 12 entre 18 finalizar frac igual empezar frac tachado 12 con 2 finalizar tachado entre tachado 18 con 3 finalizar tachado finalizar frac igual empezar frac 2 entre 3 finalizar frac"
     },
     "Sample_10_2_2_sbrief": {
-      "expected": "frac 12 entre 18 igual frac tachado 12 con 2 finalizar tachado entre tachado 18 con 3 finalizar tachado igual frac 2 entre 3"
+      "expected": "empezar frac 12 entre 18 finalizar frac igual empezar frac tachado 12 con 2 finalizar tachado entre tachado 18 con 3 finalizar tachado finalizar frac igual empezar frac 2 entre 3 finalizar frac"
     },
     "Sample_11_1_1_default": {
       "expected": "modificando superior x con diéresis"
@@ -1010,7 +1010,7 @@
     },
     "Sample_13_1_1_sbrief": {
       "input": "<mrow><mfrac><mrow><mn>60</mn><menclose notation=\"updiagonalstrike\"><mi mathvariant=\"normal\" class=\"MathML-Unit\">mi</mi></menclose></mrow><menclose notation=\"updiagonalstrike\"><mi mathvariant=\"normal\" class=\"MathML-Unit\">hr</mi></menclose></mfrac><mo>×</mo><mfrac><mrow><mn>5280</mn><mi mathvariant=\"normal\" class=\"MathML-Unit\">ft</mi></mrow><mrow><mn>1</mn><menclose notation=\"updiagonalstrike\"><mi mathvariant=\"normal\" class=\"MathML-Unit\">mi</mi></menclose></mrow></mfrac><mo>×</mo><mfrac><mrow><mn>1</mn><menclose notation=\"updiagonalstrike\"><mi mathvariant=\"normal\" class=\"MathML-Unit\">hr</mi></menclose></mrow><mrow><mn>60</mn><mi mathvariant=\"normal\" class=\"MathML-Unit\">min</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>5280</mn><mi mathvariant=\"normal\" class=\"MathML-Unit\">ft</mi></mrow><mi mathvariant=\"normal\" class=\"MathML-Unit\">min</mi></mfrac></mrow>",
-      "expected": "frac 60 tachado millas finalizar tachado entre tachado horas finalizar tachado por frac 5280 pieses entre 1 tachado millas finalizar tachado por frac 1 tachado horas finalizar tachado entre 60 minutos igual frac 5280 pieses entre minutos"
+      "expected": "empezar frac 60 tachado millas finalizar tachado entre tachado horas finalizar tachado finalizar frac por empezar frac 5280 pieses entre 1 tachado millas finalizar tachado finalizar frac por empezar frac 1 tachado horas finalizar tachado entre 60 minutos finalizar frac igual empezar frac 5280 pieses entre minutos finalizar frac"
     },
     "Sample_13_1_2_default": {
       "expected": "1 Joule igual 1 kilogramo por metros cuadrado por segundos superíndice menos 2"
@@ -1031,7 +1031,7 @@
     },
     "Sample_13_1_3_sbrief": {
       "input": "<mrow><mi>m</mi><mi mathvariant=\"normal\" class=\"MathML-Unit\">m</mi></mrow><mo>=</mo><mn>100</mn><mi>m</mi><mi mathvariant=\"normal\" class=\"MathML-Unit\">cm</mi><mo>=</mo><mrow><mfrac><mi>m</mi><mn>1000</mn></mfrac><mi mathvariant=\"normal\" class=\"MathML-Unit\">km</mi></mrow>",
-      "expected": "m metros igual 100 m centímetros igual frac m entre 1000 kilómetros"
+      "expected": "m metros igual 100 m centímetros igual empezar frac m entre 1000 finalizar frac kilómetros"
     },
     "Sample_13_1_4_default": {
       "expected": "1 milla aproximado 1,6 kilómetros"

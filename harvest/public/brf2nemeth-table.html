@@ -19,22 +19,27 @@
 
 <div class="converter" id="inputpanel">
   <div class="section" id="mathjax">
-    <span class="pretitle" id="mathname"></span>
+    <span class="pretitle" id="mathoutput">Math Output:</span>
     <span class="mathexpression" id="mathexpression"></span>
   </div>
-  <div class="section">
-    <span class="pretitle">Input Format:
+  <div class="semitall">
+    <span class="pretitle">Math Input:
+    </span>
+    <span class="active">
+      <textarea class="twod input" rows="6" cols="80" id="mathinput" onKeyUp="Nemeth.Convert.generateMath()"></textarea>
+    </span>
+  </div>
+  <div class="semitall">
+    <span class="pretitle">Braille Input:
     <span>
         <select id="format" onchange="Nemeth.Convert.changeFormat()">
           <option value="nabt-table">NABT-2D</option>
           <option value="bldt-table">BLDT-2D</option>
-          <option value="sdf/jkl">sdf/jkl</option>
-          <option value="1-6">1-6</option>
         </select>
         </span>
     </span>
     <span class="active">
-      <textarea class="twod" rows="6" cols="80" id="input" onMouseUp="Nemeth.Convert.generatem()" onKeyUp="Nemeth.Convert.generate()"></textarea>
+      <textarea class="twod input" rows="6" cols="80" id="input" onMouseUp="Nemeth.Convert.generatem()" onKeyUp="Nemeth.Convert.generate()"></textarea>
     </span>
   </div>
   <div class="section">
@@ -43,36 +48,14 @@
   </div>
   <div class="section"> </div>
   <div class="section"> </div>
-  <div class="tall">
-    <span class="pretitle">Braille:</span>
+  <div class="semitall">
+    <span class="pretitle">Braille Output:</span>
     <span class="active"><div class="braille boxed" id="braille"> </div></span>
   </div>
   <div class="section">
-    <span class="pretitle"></span>
-    <span class="active"><div class="error" id="error"> </div></span>
-  </div>
-  <div class="section">
-    <span class="pretitle" id="refname"></span>
-    <span class="active"><div id="references"> </div></span>
-  </div>
-  <div class="section">
-    <span class="pretitle">Status:</span>
-        <span class="active"><div class="status" id="status">
-        <span id="statuscolor"></span>
-        <span id="statusvalue"></span>
-        </div></span>
-  </div>
-  <div class="section">
-    <span class="pretitle">Feedback:</span>
+    <span class="pretitle">Name:</span>
     <span class="active">
-        <select id="feedback" onchange="Nemeth.Convert.changeFeedback()">
-          <option value="0">Correct - Correct transcription</option>
-          <option value="1">Unknown - A symbol is not in the Nemeth standard</option>
-          <option value="2">Layout - Can only be expressed in 2D layout</option>
-          <option value="3">Discussion - This needs further discussion</option>
-          <option value="4">Semantic - Interpretation depends on the context</option>
-          <option value="5">Print - Transcription depends on typesetting. E.g., inline vs block formulas</option>
-        </select>
+      <textarea class="input" rows="1" cols="40" id="mathname"></textarea>
     </span>
   </div>
 </div>
@@ -93,7 +76,7 @@
     <script src="./nemeth-project.js"></script>
     <script>
     window.addEventListener('load', Nemeth.User.init);
-    window.addEventListener('load', Nemeth.Convert.init);
+    window.addEventListener('load', Nemeth.Convert.harvest);
     </script>
 </body>
 </html>

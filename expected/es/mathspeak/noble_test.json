@@ -15,7 +15,7 @@
       "expected": "menos 5 más empezar frac 1 entre 5 finalizar frac menos 6 más empezar frac 2 entre 3 finalizar frac igual"
     },
     "Sample_1_sbrief": {
-      "expected": "menos 5 más frac 1 entre 5 menos 6 más frac 2 entre 3 igual"
+      "expected": "menos 5 más empezar frac 1 entre 5 finalizar frac menos 6 más empezar frac 2 entre 3 finalizar frac igual"
     },
     "Sample_2_default": {
       "expected": "menos 7 más empezar fracción 3 entre 4 finalizar fracción menos paréntesis izquierdo menos 4 más empezar fracción 7 entre 8 finalizar fracción paréntesis derecho igual"
@@ -24,7 +24,7 @@
       "expected": "menos 7 más empezar frac 3 entre 4 finalizar frac menos paréntesis izquierdo menos 4 más empezar frac 7 entre 8 finalizar frac paréntesis derecho igual"
     },
     "Sample_2_sbrief": {
-      "expected": "menos 7 más frac 3 entre 4 menos paréntesis izquierdo menos 4 más frac 7 entre 8 paréntesis derecho igual"
+      "expected": "menos 7 más empezar frac 3 entre 4 finalizar frac menos paréntesis izquierdo menos 4 más empezar frac 7 entre 8 finalizar frac paréntesis derecho igual"
     },
     "Sample_3_default": {
       "expected": "menos 24,15 menos paréntesis izquierdo 13,7 paréntesis derecho igual"
@@ -177,7 +177,7 @@
       "expected": "mayúscula A igual empezar frac 1 entre 2 finalizar frac b h"
     },
     "Sample_19_sbrief": {
-      "expected": "mayúscula A igual frac 1 entre 2 b h"
+      "expected": "mayúscula A igual empezar frac 1 entre 2 finalizar frac b h"
     },
     "Sample_20_default": {
       "expected": "empezar fracción area of triangle entre area of square finalizar fracción igual empezar fracción 1 unit al cuadrado entre 16 units al cuadrado finalizar fracción"
@@ -186,7 +186,7 @@
       "expected": "empezar frac area of triangle entre area of square finalizar frac igual empezar frac 1 unit al cuadrado entre 16 units al cuadrado finalizar frac"
     },
     "Sample_20_sbrief": {
-      "expected": "frac area of triangle entre area of square igual frac 1 unit al cuadrado entre 16 units al cuadrado"
+      "expected": "empezar frac area of triangle entre area of square finalizar frac igual empezar frac 1 unit al cuadrado entre 16 units al cuadrado finalizar frac"
     },
     "Sample_21_default": {
       "expected": "0,6 al cuadrado"
@@ -303,7 +303,7 @@
       "expected": "x igual empezar frac menos b más menos empezar raíz cuadrada b al cuadrado menos 4 a c finalizar raíz cuadrada entre 2 a finalizar frac"
     },
     "Sample_33_sbrief": {
-      "expected": "x igual frac menos b más menos raíz cuadrada b al cuadrado menos 4 a c finalizar raíz cuadrada entre 2 a"
+      "expected": "x igual empezar frac menos b más menos raíz cuadrada b al cuadrado menos 4 a c finalizar raíz cuadrada entre 2 a finalizar frac"
     },
     "Sample_34_default": {
       "expected": "y igual x al cuadrado más 8 x más 16"
@@ -321,7 +321,7 @@
       "expected": "y igual empezar frac 1 entre 3 finalizar frac paréntesis izquierdo 3 sup x base paréntesis derecho"
     },
     "Sample_35_sbrief": {
-      "expected": "y igual frac 1 entre 3 paréntesis izquierdo 3 sup x base paréntesis derecho"
+      "expected": "y igual empezar frac 1 entre 3 finalizar frac paréntesis izquierdo 3 sup x base paréntesis derecho"
     },
     "Sample_36_default": {
       "expected": "y igual 10 menos 2 x"
@@ -375,7 +375,7 @@
       "expected": "y igual empezar frac 3 entre x finalizar frac"
     },
     "Sample_41_sbrief": {
-      "expected": "y igual frac 3 entre x"
+      "expected": "y igual empezar frac 3 entre x finalizar frac"
     },
     "Sample_42_default": {
       "expected": "y igual paréntesis izquierdo x más 4 paréntesis derecho paréntesis izquierdo x más 4 paréntesis derecho"
@@ -447,7 +447,7 @@
       "expected": "y igual x más empezar frac 1 entre x finalizar frac"
     },
     "Sample_49_sbrief": {
-      "expected": "y igual x más frac 1 entre x"
+      "expected": "y igual x más empezar frac 1 entre x finalizar frac"
     },
     "Sample_50_default": {
       "expected": "y igual 4 x paréntesis izquierdo 5 menos x paréntesis derecho"
@@ -474,7 +474,7 @@
       "expected": "0,25 mayor que empezar frac 5 entre 16 finalizar frac"
     },
     "Sample_52_sbrief": {
-      "expected": "0,25 mayor que frac 5 entre 16"
+      "expected": "0,25 mayor que empezar frac 5 entre 16 finalizar frac"
     },
     "Sample_53_default": {
       "expected": "32 punto paréntesis izquierdo 5 punto 7 paréntesis derecho"
@@ -492,7 +492,7 @@
       "expected": "paréntesis izquierdo empezar frac 1 entre 2 finalizar frac por empezar frac 1 entre 2 finalizar frac por pi por 2 paréntesis derecho más paréntesis izquierdo 2 por empezar frac 1 entre 2 finalizar frac por pi por 5 paréntesis derecho"
     },
     "Sample_54_sbrief": {
-      "expected": "paréntesis izquierdo frac 1 entre 2 por frac 1 entre 2 por pi por 2 paréntesis derecho más paréntesis izquierdo 2 por frac 1 entre 2 por pi por 5 paréntesis derecho"
+      "expected": "paréntesis izquierdo empezar frac 1 entre 2 finalizar frac por empezar frac 1 entre 2 finalizar frac por pi por 2 paréntesis derecho más paréntesis izquierdo 2 por empezar frac 1 entre 2 finalizar frac por pi por 5 paréntesis derecho"
     },
     "Sample_55_default": {
       "expected": "liminf bajoíndice n flecha derecha infinito finalizar índices mayúscula E subíndice n línea base igual unión bajoíndice n mayor o igual que 1 finalizar índices intersección bajoíndice k mayor o igual que n finalizar índices mayúscula E subíndice k línea base coma limsup bajoíndice n flecha derecha infinito finalizar índices mayúscula E subíndice n línea base igual intersección bajoíndice n mayor o igual que 1 finalizar índices unión bajoíndice k mayor o igual que n finalizar índices mayúscula E subíndice k línea base punto"
@@ -528,7 +528,7 @@
       "expected": "mayúscula P llave izquierda mayúscula B sub j base barra vertical mayúscula A llaves derecha igual empezar frac mayúscula P llave izquierda mayúscula B sub j base llaves derecha mayúscula P llave izquierda mayúscula A barra vertical mayúscula B sub j base llaves derecha entre sumatorio bajoíndice j prima perteneciente a mayúscula J finalizar índices mayúscula P llave izquierda mayúscula B sub j prima base llaves derecha mayúscula P llave izquierda mayúscula A barra vertical mayúscula B sub j prima base llaves derecha finalizar frac punto"
     },
     "Sample_58_sbrief": {
-      "expected": "mayúscula P llave izquierda mayúscula B sub j base barra vertical mayúscula A llaves derecha igual frac mayúscula P llave izquierda mayúscula B sub j base llaves derecha mayúscula P llave izquierda mayúscula A barra vertical mayúscula B sub j base llaves derecha entre sumatorio bajoíndice j prima perteneciente a mayúscula J finalizar índices mayúscula P llave izquierda mayúscula B sub j prima base llaves derecha mayúscula P llave izquierda mayúscula A barra vertical mayúscula B sub j prima base llaves derecha punto"
+      "expected": "mayúscula P llave izquierda mayúscula B sub j base barra vertical mayúscula A llaves derecha igual empezar frac mayúscula P llave izquierda mayúscula B sub j base llaves derecha mayúscula P llave izquierda mayúscula A barra vertical mayúscula B sub j base llaves derecha entre sumatorio bajoíndice j prima perteneciente a mayúscula J finalizar índices mayúscula P llave izquierda mayúscula B sub j prima base llaves derecha mayúscula P llave izquierda mayúscula A barra vertical mayúscula B sub j prima base llaves derecha finalizar frac punto"
     },
     "Sample_59_default": {
       "expected": "mi subíndice 1 línea base paréntesis izquierdo mayúscula B paréntesis derecho igual integral bajoíndice mayúscula B finalizar índices f paréntesis izquierdo x paréntesis derecho d mi subíndice 2 línea base paréntesis izquierdo x paréntesis derecho"
@@ -555,7 +555,7 @@
       "expected": "empezar esquema primera fila primera columna mayúscula P sub mi coma sigma base llave izquierda mayúscula Y mayor o igual que l sub beta base paréntesis izquierdo mayúscula Y barra sub n base coma mayúscula S sub n base paréntesis derecho llaves derecha igual mayúscula P sub mi coma sigma base llave izquierda paréntesis izquierdo mayúscula Y menos mayúscula Y barra sub n base paréntesis derecho dividido paréntesis izquierdo mayúscula S punto medio paréntesis izquierdo 1 más empezar frac 1 entre n finalizar frac paréntesis derecho sup 1 dividido 2 base paréntesis derecho mayor o igual que menos t sub beta base corchete izquierdo n menos 1 corchete derecho llaves derecha igual beta coma segunda fila primera columna espacio segunda columna paréntesis izquierdo 1 paréntesis derecho finalizar esquema"
     },
     "Sample_61_sbrief": {
-      "expected": "esquema primera fila primera columna mayúscula P sub mi coma sigma base llave izquierda mayúscula Y mayor o igual que l sub beta base paréntesis izquierdo mayúscula Y barra sub n base coma mayúscula S sub n base paréntesis derecho llaves derecha igual mayúscula P sub mi coma sigma base llave izquierda paréntesis izquierdo mayúscula Y menos mayúscula Y barra sub n base paréntesis derecho dividido paréntesis izquierdo mayúscula S punto medio paréntesis izquierdo 1 más frac 1 entre n paréntesis derecho sup 1 dividido 2 base paréntesis derecho mayor o igual que menos t sub beta base corchete izquierdo n menos 1 corchete derecho llaves derecha igual beta coma segunda fila primera columna espacio segunda columna paréntesis izquierdo 1 paréntesis derecho finalizar esquema"
+      "expected": "esquema primera fila primera columna mayúscula P sub mi coma sigma base llave izquierda mayúscula Y mayor o igual que l sub beta base paréntesis izquierdo mayúscula Y barra sub n base coma mayúscula S sub n base paréntesis derecho llaves derecha igual mayúscula P sub mi coma sigma base llave izquierda paréntesis izquierdo mayúscula Y menos mayúscula Y barra sub n base paréntesis derecho dividido paréntesis izquierdo mayúscula S punto medio paréntesis izquierdo 1 más empezar frac 1 entre n finalizar frac paréntesis derecho sup 1 dividido 2 base paréntesis derecho mayor o igual que menos t sub beta base corchete izquierdo n menos 1 corchete derecho llaves derecha igual beta coma segunda fila primera columna espacio segunda columna paréntesis izquierdo 1 paréntesis derecho finalizar esquema"
     },
     "Sample_62_default": {
       "expected": "mayúscula L igual empezar matriz 5 por 6 primera fila primera columna 1 segunda columna menos 1 tercera columna espacio cuarta columna espacio quinta columna espacio sexta columna espacio segunda fila primera columna espacio segunda columna 1 tercera columna menos 1 cuarta columna espacio quinta columna 0 sexta columna espacio tercera fila primera columna espacio segunda columna espacio tercera columna espacio cuarta columna espacio quinta columna espacio sexta columna espacio cuarta fila primera columna espacio segunda columna 0 tercera columna espacio cuarta columna espacio quinta columna espacio sexta columna espacio quinta fila primera columna espacio segunda columna espacio tercera columna espacio cuarta columna espacio quinta columna 1 sexta columna menos 1 finalizar matriz punto"
@@ -573,7 +573,7 @@
       "expected": "empezar raíz cuadrada n finalizar raíz cuadrada corchete izquierdo mayúscula Y barra sub n base menos paréntesis izquierdo mi más z sub beta base sigma paréntesis derecho corchete derecho dividido mayúscula S sub n base tilde empezar frac mayúscula U más empezar raíz cuadrada n finalizar raíz cuadrada z sub 1 menos beta base entre paréntesis izquierdo ji al cuadrado corchete izquierdo n menos 1 corchete derecho dividido paréntesis izquierdo n menos 1 paréntesis derecho paréntesis derecho sup 1 dividido 2 base finalizar frac tilde t corchete izquierdo n menos 1 punto y coma empezar raíz cuadrada n finalizar raíz cuadrada z sub 1 menos beta base corchete derecho coma"
     },
     "Sample_63_sbrief": {
-      "expected": "raíz cuadrada n finalizar raíz cuadrada corchete izquierdo mayúscula Y barra sub n base menos paréntesis izquierdo mi más z sub beta base sigma paréntesis derecho corchete derecho dividido mayúscula S sub n base tilde frac mayúscula U más raíz cuadrada n finalizar raíz cuadrada z sub 1 menos beta base entre paréntesis izquierdo ji al cuadrado corchete izquierdo n menos 1 corchete derecho dividido paréntesis izquierdo n menos 1 paréntesis derecho paréntesis derecho sup 1 dividido 2 base tilde t corchete izquierdo n menos 1 punto y coma raíz cuadrada n finalizar raíz cuadrada z sub 1 menos beta base corchete derecho coma"
+      "expected": "raíz cuadrada n finalizar raíz cuadrada corchete izquierdo mayúscula Y barra sub n base menos paréntesis izquierdo mi más z sub beta base sigma paréntesis derecho corchete derecho dividido mayúscula S sub n base tilde empezar frac mayúscula U más raíz cuadrada n finalizar raíz cuadrada z sub 1 menos beta base entre paréntesis izquierdo ji al cuadrado corchete izquierdo n menos 1 corchete derecho dividido paréntesis izquierdo n menos 1 paréntesis derecho paréntesis derecho sup 1 dividido 2 base finalizar frac tilde t corchete izquierdo n menos 1 punto y coma raíz cuadrada n finalizar raíz cuadrada z sub 1 menos beta base corchete derecho coma"
     },
     "Sample_64_default": {
       "expected": "empezar esquema primera fila primera columna gamma segunda columna igual mayúscula P llave izquierda mayúscula E subíndice p coma q línea base incluido en paréntesis izquierdo mayúscula X subíndice paréntesis izquierdo r paréntesis derecho línea base coma mayúscula X subíndice paréntesis izquierdo s paréntesis derecho línea base llaves derecha segunda fila primera columna espacio segunda columna igual empezar fracción n factorial entre paréntesis izquierdo r menos 1 paréntesis derecho factorial finalizar fracción sumatorio bajoíndice j igual 0 sobreíndice s menos r menos 1 finalizar índices paréntesis izquierdo menos 1 paréntesis derecho superíndice j línea base empezar fracción p superíndice r más j línea base entre paréntesis izquierdo n menos r menos j paréntesis derecho factorial j factorial finalizar fracción mayúscula I subíndice 1 menos q línea base paréntesis izquierdo n menos s más 1 coma s menos r menos j paréntesis derecho punto finalizar esquema"
@@ -582,7 +582,7 @@
       "expected": "empezar esquema primera fila primera columna gamma segunda columna igual mayúscula P llave izquierda mayúscula E sub p coma q base incluido en paréntesis izquierdo mayúscula X sub paréntesis izquierdo r paréntesis derecho base coma mayúscula X sub paréntesis izquierdo s paréntesis derecho base llaves derecha segunda fila primera columna espacio segunda columna igual empezar frac n factorial entre paréntesis izquierdo r menos 1 paréntesis derecho factorial finalizar frac sumatorio bajoíndice j igual 0 sobreíndice s menos r menos 1 finalizar índices paréntesis izquierdo menos 1 paréntesis derecho sup j base empezar frac p sup r más j base entre paréntesis izquierdo n menos r menos j paréntesis derecho factorial j factorial finalizar frac mayúscula I sub 1 menos q base paréntesis izquierdo n menos s más 1 coma s menos r menos j paréntesis derecho punto finalizar esquema"
     },
     "Sample_64_sbrief": {
-      "expected": "esquema primera fila primera columna gamma segunda columna igual mayúscula P llave izquierda mayúscula E sub p coma q base incluido en paréntesis izquierdo mayúscula X sub paréntesis izquierdo r paréntesis derecho base coma mayúscula X sub paréntesis izquierdo s paréntesis derecho base llaves derecha segunda fila primera columna espacio segunda columna igual frac n factorial entre paréntesis izquierdo r menos 1 paréntesis derecho factorial sumatorio bajoíndice j igual 0 sobreíndice s menos r menos 1 finalizar índices paréntesis izquierdo menos 1 paréntesis derecho sup j base frac p sup r más j base entre paréntesis izquierdo n menos r menos j paréntesis derecho factorial j factorial mayúscula I sub 1 menos q base paréntesis izquierdo n menos s más 1 coma s menos r menos j paréntesis derecho punto finalizar esquema"
+      "expected": "esquema primera fila primera columna gamma segunda columna igual mayúscula P llave izquierda mayúscula E sub p coma q base incluido en paréntesis izquierdo mayúscula X sub paréntesis izquierdo r paréntesis derecho base coma mayúscula X sub paréntesis izquierdo s paréntesis derecho base llaves derecha segunda fila primera columna espacio segunda columna igual empezar frac n factorial entre paréntesis izquierdo r menos 1 paréntesis derecho factorial finalizar frac sumatorio bajoíndice j igual 0 sobreíndice s menos r menos 1 finalizar índices paréntesis izquierdo menos 1 paréntesis derecho sup j base empezar frac p sup r más j base entre paréntesis izquierdo n menos r menos j paréntesis derecho factorial j factorial finalizar frac mayúscula I sub 1 menos q base paréntesis izquierdo n menos s más 1 coma s menos r menos j paréntesis derecho punto finalizar esquema"
     },
     "Sample_65_default": {
       "expected": "mayúscula S subíndice i línea base empezar binomial t en x finalizar binomial igual empezar matriz 2 por 2 primera fila primera columna 1 dividido m segunda columna 0 segunda fila primera columna a subíndice i línea base segunda columna r subíndice i línea base finalizar matriz empezar binomial t en x finalizar binomial más empezar binomial paréntesis izquierdo i menos 1 paréntesis derecho dividido m en b subíndice i línea base finalizar binomial coma"
@@ -600,7 +600,7 @@
       "expected": "c sub 1 base h sup 4 menos 2 s base menor o igual que empezar frac 1 entre 2 mayúscula T finalizar frac integral Sub menos mayúscula T Sup mayúscula T Base paréntesis izquierdo f paréntesis izquierdo t más h paréntesis derecho menos f paréntesis izquierdo t paréntesis derecho paréntesis derecho al cuadrado normal d t menor o igual que c sub 2 base h sup 4 menos 2 s"
     },
     "Sample_66_sbrief": {
-      "expected": "c sub 1 base h sup 4 menos 2 s base menor o igual que frac 1 entre 2 mayúscula T integral Sub menos mayúscula T Sup mayúscula T Base paréntesis izquierdo f paréntesis izquierdo t más h paréntesis derecho menos f paréntesis izquierdo t paréntesis derecho paréntesis derecho al cuadrado normal d t menor o igual que c sub 2 base h sup 4 menos 2 s"
+      "expected": "c sub 1 base h sup 4 menos 2 s base menor o igual que empezar frac 1 entre 2 mayúscula T finalizar frac integral Sub menos mayúscula T Sup mayúscula T Base paréntesis izquierdo f paréntesis izquierdo t más h paréntesis derecho menos f paréntesis izquierdo t paréntesis derecho paréntesis derecho al cuadrado normal d t menor o igual que c sub 2 base h sup 4 menos 2 s"
     },
     "Sample_67_default": {
       "expected": "mayúscula C paréntesis izquierdo 0 paréntesis derecho menos mayúscula C paréntesis izquierdo h paréntesis derecho asintóticamente igual a c h superíndice 4 menos 2 s"
@@ -618,7 +618,7 @@
       "expected": "mayúscula S paréntesis izquierdo omega paréntesis derecho igual límite bajoíndice mayúscula T flecha derecha infinito finalizar índices empezar frac 1 entre 2 mayúscula T finalizar frac empezar valor absoluto integral Sub menos mayúscula T Sup mayúscula T Base coma f coma paréntesis izquierdo coma t coma paréntesis derecho coma normal e sup cursiva i t omega base coma normal d coma t finalizar valor absoluto al cuadrado punto"
     },
     "Sample_68_sbrief": {
-      "expected": "mayúscula S paréntesis izquierdo omega paréntesis derecho igual límite bajoíndice mayúscula T flecha derecha infinito finalizar índices frac 1 entre 2 mayúscula T valor absoluto integral Sub menos mayúscula T Sup mayúscula T Base coma f coma paréntesis izquierdo coma t coma paréntesis derecho coma normal e sup cursiva i t omega base coma normal d coma t finalizar valor absoluto al cuadrado punto"
+      "expected": "mayúscula S paréntesis izquierdo omega paréntesis derecho igual límite bajoíndice mayúscula T flecha derecha infinito finalizar índices empezar frac 1 entre 2 mayúscula T finalizar frac valor absoluto integral Sub menos mayúscula T Sup mayúscula T Base coma f coma paréntesis izquierdo coma t coma paréntesis derecho coma normal e sup cursiva i t omega base coma normal d coma t finalizar valor absoluto al cuadrado punto"
     },
     "Sample_69_default": {
       "expected": "integral definida subíndice 0 superíndice 1 línea base integral definida subíndice 0 superíndice 1 línea base corchete izquierdo empezar valor absoluto f paréntesis izquierdo t paréntesis derecho menos f paréntesis izquierdo u paréntesis derecho finalizar valor absoluto al cuadrado más empezar valor absoluto t menos u finalizar valor absoluto al cuadrado corchete derecho superíndice menos s dividido 2 línea base normal d t normal d u menor que infinito"
@@ -735,7 +735,7 @@
       "expected": "a igual empezar frac paréntesis izquierdo b más c paréntesis derecho al cuadrado entre d finalizar frac más empezar frac paréntesis izquierdo e más f paréntesis derecho al cuadrado entre g finalizar frac"
     },
     "Sample_81_sbrief": {
-      "expected": "a igual frac paréntesis izquierdo b más c paréntesis derecho al cuadrado entre d más frac paréntesis izquierdo e más f paréntesis derecho al cuadrado entre g"
+      "expected": "a igual empezar frac paréntesis izquierdo b más c paréntesis derecho al cuadrado entre d finalizar frac más empezar frac paréntesis izquierdo e más f paréntesis derecho al cuadrado entre g finalizar frac"
     },
     "Sample_82_default": {
       "expected": "x igual corchete izquierdo paréntesis izquierdo a más b paréntesis derecho al cuadrado paréntesis izquierdo c menos b paréntesis derecho al cuadrado corchete derecho más corchete izquierdo paréntesis izquierdo d más e paréntesis derecho al cuadrado paréntesis izquierdo f menos e paréntesis derecho al cuadrado corchete derecho"
@@ -789,7 +789,7 @@
       "expected": "empezar empezar frac empezar frac 1 entre 2 finalizar frac entre entre empezar frac 3 entre 4 finalizar frac finalizar finalizar frac igual empezar frac 2 entre 3 finalizar frac"
     },
     "Sample_87_sbrief": {
-      "expected": "frac frac 1 entre 2 entre frac 3 entre 4 igual frac 2 entre 3"
+      "expected": "empezar empezar frac empezar frac 1 entre 2 finalizar frac entre entre empezar frac 3 entre 4 finalizar frac finalizar finalizar frac igual empezar frac 2 entre 3 finalizar frac"
     },
     "Sample_88_default": {
       "expected": "2 paréntesis izquierdo paréntesis izquierdo x más 1 paréntesis derecho paréntesis izquierdo x más 3 paréntesis derecho menos 4 paréntesis izquierdo paréntesis izquierdo x menos 1 paréntesis derecho paréntesis izquierdo x más 2 paréntesis derecho menos 3 paréntesis derecho paréntesis derecho igual y"
@@ -807,7 +807,7 @@
       "expected": "coseno x igual 1 menos empezar frac x al cuadrado entre 2 factorial finalizar frac más empezar frac x sup 4 base entre 4 factorial finalizar frac menos puntos suspensivos"
     },
     "Sample_89_sbrief": {
-      "expected": "coseno x igual 1 menos frac x al cuadrado entre 2 factorial más frac x sup 4 base entre 4 factorial menos puntos suspensivos"
+      "expected": "coseno x igual 1 menos empezar frac x al cuadrado entre 2 factorial finalizar frac más empezar frac x sup 4 base entre 4 factorial finalizar frac menos puntos suspensivos"
     },
     "Sample_90_default": {
       "expected": "x igual empezar fracción menos b más menos empezar raíz cuadrada b al cuadrado menos 4 a c finalizar raíz cuadrada entre 2 a finalizar fracción"
@@ -816,7 +816,7 @@
       "expected": "x igual empezar frac menos b más menos empezar raíz cuadrada b al cuadrado menos 4 a c finalizar raíz cuadrada entre 2 a finalizar frac"
     },
     "Sample_90_sbrief": {
-      "expected": "x igual frac menos b más menos raíz cuadrada b al cuadrado menos 4 a c finalizar raíz cuadrada entre 2 a"
+      "expected": "x igual empezar frac menos b más menos raíz cuadrada b al cuadrado menos 4 a c finalizar raíz cuadrada entre 2 a finalizar frac"
     },
     "Sample_91_default": {
       "expected": "x más y superíndice empezar fracción 2 entre k más 1 finalizar fracción"
@@ -825,7 +825,7 @@
       "expected": "x más y sup empezar frac 2 entre k más 1 finalizar frac"
     },
     "Sample_91_sbrief": {
-      "expected": "x más y sup frac 2 entre k más 1"
+      "expected": "x más y sup empezar frac 2 entre k más 1 finalizar frac"
     },
     "Sample_92_default": {
       "expected": "límite bajoíndice x flecha derecha 0 finalizar índices empezar fracción seno x entre x finalizar fracción igual 1"
@@ -834,7 +834,7 @@
       "expected": "límite bajoíndice x flecha derecha 0 finalizar índices empezar frac seno x entre x finalizar frac igual 1"
     },
     "Sample_92_sbrief": {
-      "expected": "límite bajoíndice x flecha derecha 0 finalizar índices frac seno x entre x igual 1"
+      "expected": "límite bajoíndice x flecha derecha 0 finalizar índices empezar frac seno x entre x finalizar frac igual 1"
     },
     "Sample_93_default": {
       "expected": "d igual empezar raíz cuadrada paréntesis izquierdo x subíndice 2 línea base menos x subíndice 1 línea base paréntesis derecho al cuadrado más paréntesis izquierdo y subíndice 2 línea base menos y subíndice 1 línea base paréntesis derecho al cuadrado finalizar raíz cuadrada"
@@ -870,7 +870,7 @@
       "expected": "s sub 11 base igual empezar frac c sub 11 base más c sub 12 base entre paréntesis izquierdo c sub 11 base menos c sub 12 base paréntesis derecho paréntesis izquierdo c sub 11 base más 2 c sub 12 base paréntesis derecho finalizar frac"
     },
     "Sample_96_sbrief": {
-      "expected": "s sub 11 base igual frac c sub 11 base más c sub 12 base entre paréntesis izquierdo c sub 11 base menos c sub 12 base paréntesis derecho paréntesis izquierdo c sub 11 base más 2 c sub 12 base paréntesis derecho"
+      "expected": "s sub 11 base igual empezar frac c sub 11 base más c sub 12 base entre paréntesis izquierdo c sub 11 base menos c sub 12 base paréntesis derecho paréntesis izquierdo c sub 11 base más 2 c sub 12 base paréntesis derecho finalizar frac"
     },
     "Sample_97_default": {
       "expected": "mayúscula S i normal mayúscula O subíndice 2 línea base más 6 normal mayúscula H normal mayúscula F flecha derecha normal mayúscula H subíndice 2 línea base mayúscula S i normal mayúscula F subíndice 6 línea base más 2 normal mayúscula H subíndice 2 línea base normal mayúscula O"
@@ -888,7 +888,7 @@
       "expected": "empezar frac d entre d x finalizar frac paréntesis izquierdo mayúscula E paréntesis izquierdo x paréntesis derecho mayúscula A paréntesis izquierdo x paréntesis derecho empezar frac d w paréntesis izquierdo x paréntesis derecho entre d x finalizar frac paréntesis derecho más p paréntesis izquierdo x paréntesis derecho igual 0"
     },
     "Sample_98_sbrief": {
-      "expected": "frac d entre d x paréntesis izquierdo mayúscula E paréntesis izquierdo x paréntesis derecho mayúscula A paréntesis izquierdo x paréntesis derecho frac d w paréntesis izquierdo x paréntesis derecho entre d x paréntesis derecho más p paréntesis izquierdo x paréntesis derecho igual 0"
+      "expected": "empezar frac d entre d x finalizar frac paréntesis izquierdo mayúscula E paréntesis izquierdo x paréntesis derecho mayúscula A paréntesis izquierdo x paréntesis derecho empezar frac d w paréntesis izquierdo x paréntesis derecho entre d x finalizar frac paréntesis derecho más p paréntesis izquierdo x paréntesis derecho igual 0"
     },
     "Sample_99_default": {
       "expected": "TCS subíndice gas línea base igual menos empezar fracción 1 entre 2 finalizar fracción paréntesis izquierdo empezar fracción mayúscula P subíndice seal línea base entre mayúscula P subíndice max línea base finalizar fracción paréntesis derecho paréntesis izquierdo empezar fracción 1 entre mayúscula T subíndice seal línea base finalizar fracción paréntesis derecho"
@@ -897,7 +897,7 @@
       "expected": "TCS sub gas base igual menos empezar frac 1 entre 2 finalizar frac paréntesis izquierdo empezar frac mayúscula P sub seal base entre mayúscula P sub max base finalizar frac paréntesis derecho paréntesis izquierdo empezar frac 1 entre mayúscula T sub seal base finalizar frac paréntesis derecho"
     },
     "Sample_99_sbrief": {
-      "expected": "TCS sub gas base igual menos frac 1 entre 2 paréntesis izquierdo frac mayúscula P sub seal base entre mayúscula P sub max base paréntesis derecho paréntesis izquierdo frac 1 entre mayúscula T sub seal base paréntesis derecho"
+      "expected": "TCS sub gas base igual menos empezar frac 1 entre 2 finalizar frac paréntesis izquierdo empezar frac mayúscula P sub seal base entre mayúscula P sub max base finalizar frac paréntesis derecho paréntesis izquierdo empezar frac 1 entre mayúscula T sub seal base finalizar frac paréntesis derecho"
     },
     "Sample_100_default": {
       "expected": "mayúscula B subíndice p línea base igual empezar empezar fracción empezar fracción 7 menos v al cuadrado entre 3 finalizar fracción paréntesis izquierdo 1 más empezar fracción c al cuadrado entre a al cuadrado finalizar fracción más empezar fracción c superíndice 4 línea base entre a superíndice 4 línea base finalizar fracción paréntesis derecho más empezar fracción paréntesis izquierdo 3 menos v paréntesis derecho al cuadrado c al cuadrado entre paréntesis izquierdo 1 más v paréntesis derecho a al cuadrado finalizar fracción entre entre paréntesis izquierdo 1 menos v paréntesis derecho paréntesis izquierdo 1 menos empezar fracción c superíndice 4 línea base entre a superíndice 4 línea base finalizar fracción paréntesis derecho paréntesis izquierdo 1 menos empezar fracción c al cuadrado entre a al cuadrado finalizar fracción paréntesis derecho finalizar finalizar fracción"
@@ -906,7 +906,7 @@
       "expected": "mayúscula B sub p base igual empezar empezar frac empezar frac 7 menos v al cuadrado entre 3 finalizar frac paréntesis izquierdo 1 más empezar frac c al cuadrado entre a al cuadrado finalizar frac más empezar frac c sup 4 base entre a sup 4 base finalizar frac paréntesis derecho más empezar frac paréntesis izquierdo 3 menos v paréntesis derecho al cuadrado c al cuadrado entre paréntesis izquierdo 1 más v paréntesis derecho a al cuadrado finalizar frac entre entre paréntesis izquierdo 1 menos v paréntesis derecho paréntesis izquierdo 1 menos empezar frac c sup 4 base entre a sup 4 base finalizar frac paréntesis derecho paréntesis izquierdo 1 menos empezar frac c al cuadrado entre a al cuadrado finalizar frac paréntesis derecho finalizar finalizar frac"
     },
     "Sample_100_sbrief": {
-      "expected": "mayúscula B sub p base igual frac frac 7 menos v al cuadrado entre 3 paréntesis izquierdo 1 más frac c al cuadrado entre a al cuadrado más frac c sup 4 base entre a sup 4 base paréntesis derecho más frac paréntesis izquierdo 3 menos v paréntesis derecho al cuadrado c al cuadrado entre paréntesis izquierdo 1 más v paréntesis derecho a al cuadrado entre paréntesis izquierdo 1 menos v paréntesis derecho paréntesis izquierdo 1 menos frac c sup 4 base entre a sup 4 base paréntesis derecho paréntesis izquierdo 1 menos frac c al cuadrado entre a al cuadrado paréntesis derecho"
+      "expected": "mayúscula B sub p base igual empezar empezar frac empezar frac 7 menos v al cuadrado entre 3 finalizar frac paréntesis izquierdo 1 más empezar frac c al cuadrado entre a al cuadrado finalizar frac más empezar frac c sup 4 base entre a sup 4 base finalizar frac paréntesis derecho más empezar frac paréntesis izquierdo 3 menos v paréntesis derecho al cuadrado c al cuadrado entre paréntesis izquierdo 1 más v paréntesis derecho a al cuadrado finalizar frac entre entre paréntesis izquierdo 1 menos v paréntesis derecho paréntesis izquierdo 1 menos empezar frac c sup 4 base entre a sup 4 base finalizar frac paréntesis derecho paréntesis izquierdo 1 menos empezar frac c al cuadrado entre a al cuadrado finalizar frac paréntesis derecho finalizar finalizar frac"
     },
     "Sample_101_default": {
       "expected": "mayúscula Q subíndice tank superíndice series línea base igual empezar fracción 1 entre mayúscula R subíndice s línea base finalizar fracción empezar raíz cuadrada empezar fracción mayúscula L subíndice s línea base entre mayúscula C subíndice s línea base finalizar fracción finalizar raíz cuadrada"
@@ -915,7 +915,7 @@
       "expected": "mayúscula Q sub tank sup series base igual empezar frac 1 entre mayúscula R sub s base finalizar frac empezar raíz cuadrada empezar frac mayúscula L sub s base entre mayúscula C sub s base finalizar frac finalizar raíz cuadrada"
     },
     "Sample_101_sbrief": {
-      "expected": "mayúscula Q sub tank sup series base igual frac 1 entre mayúscula R sub s base raíz cuadrada frac mayúscula L sub s base entre mayúscula C sub s base finalizar raíz cuadrada"
+      "expected": "mayúscula Q sub tank sup series base igual empezar frac 1 entre mayúscula R sub s base finalizar frac raíz cuadrada empezar frac mayúscula L sub s base entre mayúscula C sub s base finalizar frac finalizar raíz cuadrada"
     },
     "Sample_102_default": {
       "expected": "mayúscula Delta phi subíndice peak línea base igual tangente superíndice menos 1 línea base paréntesis izquierdo k al cuadrado mayúscula Q subíndice tank superíndice series línea base paréntesis derecho"
@@ -933,7 +933,7 @@
       "expected": "f igual 1,013 empezar frac mayúscula W entre mayúscula L al cuadrado finalizar frac empezar raíz cuadrada empezar frac mayúscula E entre rho finalizar frac finalizar raíz cuadrada empezar raíz cuadrada paréntesis izquierdo 1 más 0,293 empezar frac mayúscula L al cuadrado entre EW al cuadrado finalizar frac sigma paréntesis derecho finalizar raíz cuadrada"
     },
     "Sample_103_sbrief": {
-      "expected": "f igual 1,013 frac mayúscula W entre mayúscula L al cuadrado raíz cuadrada frac mayúscula E entre rho finalizar raíz cuadrada raíz cuadrada paréntesis izquierdo 1 más 0,293 frac mayúscula L al cuadrado entre EW al cuadrado sigma paréntesis derecho finalizar raíz cuadrada"
+      "expected": "f igual 1,013 empezar frac mayúscula W entre mayúscula L al cuadrado finalizar frac raíz cuadrada empezar frac mayúscula E entre rho finalizar frac finalizar raíz cuadrada raíz cuadrada paréntesis izquierdo 1 más 0,293 empezar frac mayúscula L al cuadrado entre EW al cuadrado finalizar frac sigma paréntesis derecho finalizar raíz cuadrada"
     },
     "Sample_104_default": {
       "expected": "u subíndice n línea base paréntesis izquierdo x paréntesis derecho igual gamma subíndice n línea base paréntesis izquierdo coseno hiperbólico k subíndice n línea base x menos coseno k subíndice n línea base x paréntesis derecho más paréntesis izquierdo seno hiperbólico k subíndice n línea base x menos seno k subíndice n línea base x paréntesis derecho"
@@ -951,7 +951,7 @@
       "expected": "empezar esquema primera fila primera columna mayúscula B segunda columna igual empezar empezar frac empezar frac mayúscula F sub 0 base entre m finalizar frac entre entre empezar raíz cuadrada paréntesis izquierdo omega sub 0 al cuadrado menos omega al cuadrado paréntesis derecho al cuadrado más 4 n al cuadrado omega al cuadrado finalizar raíz cuadrada finalizar finalizar frac segunda fila primera columna espacio segunda columna igual empezar empezar frac empezar frac mayúscula F sub 0 base entre k finalizar frac entre entre empezar raíz cuadrada paréntesis izquierdo 1 menos paréntesis izquierdo omega dividido omega sub 0 al cuadrado paréntesis derecho al cuadrado paréntesis derecho al cuadrado más 4 paréntesis izquierdo n dividido omega sub 0 base paréntesis derecho al cuadrado paréntesis izquierdo omega dividido omega sub 0 base paréntesis derecho al cuadrado finalizar raíz cuadrada finalizar finalizar frac finalizar esquema"
     },
     "Sample_105_sbrief": {
-      "expected": "esquema primera fila primera columna mayúscula B segunda columna igual frac frac mayúscula F sub 0 base entre m entre raíz cuadrada paréntesis izquierdo omega sub 0 al cuadrado menos omega al cuadrado paréntesis derecho al cuadrado más 4 n al cuadrado omega al cuadrado finalizar raíz cuadrada segunda fila primera columna espacio segunda columna igual frac frac mayúscula F sub 0 base entre k entre raíz cuadrada paréntesis izquierdo 1 menos paréntesis izquierdo omega dividido omega sub 0 al cuadrado paréntesis derecho al cuadrado paréntesis derecho al cuadrado más 4 paréntesis izquierdo n dividido omega sub 0 base paréntesis derecho al cuadrado paréntesis izquierdo omega dividido omega sub 0 base paréntesis derecho al cuadrado finalizar raíz cuadrada finalizar esquema"
+      "expected": "esquema primera fila primera columna mayúscula B segunda columna igual empezar empezar frac empezar frac mayúscula F sub 0 base entre m finalizar frac entre entre raíz cuadrada paréntesis izquierdo omega sub 0 al cuadrado menos omega al cuadrado paréntesis derecho al cuadrado más 4 n al cuadrado omega al cuadrado finalizar raíz cuadrada finalizar finalizar frac segunda fila primera columna espacio segunda columna igual empezar empezar frac empezar frac mayúscula F sub 0 base entre k finalizar frac entre entre raíz cuadrada paréntesis izquierdo 1 menos paréntesis izquierdo omega dividido omega sub 0 al cuadrado paréntesis derecho al cuadrado paréntesis derecho al cuadrado más 4 paréntesis izquierdo n dividido omega sub 0 base paréntesis derecho al cuadrado paréntesis izquierdo omega dividido omega sub 0 base paréntesis derecho al cuadrado finalizar raíz cuadrada finalizar finalizar frac finalizar esquema"
     },
     "Sample_106_default": {
       "expected": "normal p paréntesis izquierdo mayúscula A a n d mayúscula B paréntesis derecho igual normal p paréntesis izquierdo mayúscula A paréntesis derecho normal p paréntesis izquierdo mayúscula B barra vertical mayúscula A paréntesis derecho"
@@ -969,7 +969,7 @@
       "expected": "mayúscula P mayúscula M mayúscula F paréntesis izquierdo x paréntesis derecho proporcional a paréntesis izquierdo empezar frac 1 entre x finalizar frac paréntesis derecho sup alfa"
     },
     "Sample_107_sbrief": {
-      "expected": "mayúscula P mayúscula M mayúscula F paréntesis izquierdo x paréntesis derecho proporcional a paréntesis izquierdo frac 1 entre x paréntesis derecho sup alfa"
+      "expected": "mayúscula P mayúscula M mayúscula F paréntesis izquierdo x paréntesis derecho proporcional a paréntesis izquierdo empezar frac 1 entre x finalizar frac paréntesis derecho sup alfa"
     },
     "Sample_108_default": {
       "expected": "f paréntesis izquierdo x paréntesis derecho igual empezar fracción 1 entre empezar raíz cuadrada 2 pi finalizar raíz cuadrada finalizar fracción exponente paréntesis izquierdo menos x al cuadrado barra oblicua 2 paréntesis derecho"
@@ -978,7 +978,7 @@
       "expected": "f paréntesis izquierdo x paréntesis derecho igual empezar frac 1 entre empezar raíz cuadrada 2 pi finalizar raíz cuadrada finalizar frac exponente paréntesis izquierdo menos x al cuadrado barra oblicua 2 paréntesis derecho"
     },
     "Sample_108_sbrief": {
-      "expected": "f paréntesis izquierdo x paréntesis derecho igual frac 1 entre raíz cuadrada 2 pi finalizar raíz cuadrada exponente paréntesis izquierdo menos x al cuadrado barra oblicua 2 paréntesis derecho"
+      "expected": "f paréntesis izquierdo x paréntesis derecho igual empezar frac 1 entre raíz cuadrada 2 pi finalizar raíz cuadrada finalizar frac exponente paréntesis izquierdo menos x al cuadrado barra oblicua 2 paréntesis derecho"
     },
     "Sample_109_default": {
       "expected": "empezar fracción d x entre d theta finalizar fracción igual empezar fracción beta entre coseno al cuadrado theta finalizar fracción"
@@ -987,7 +987,7 @@
       "expected": "empezar frac d x entre d theta finalizar frac igual empezar frac beta entre coseno al cuadrado theta finalizar frac"
     },
     "Sample_109_sbrief": {
-      "expected": "frac d x entre d theta igual frac beta entre coseno al cuadrado theta"
+      "expected": "empezar frac d x entre d theta finalizar frac igual empezar frac beta entre coseno al cuadrado theta finalizar frac"
     },
     "Sample_110_default": {
       "expected": "s dividido empezar raíz cuadrada 2 paréntesis izquierdo n menos 1 paréntesis derecho finalizar raíz cuadrada"

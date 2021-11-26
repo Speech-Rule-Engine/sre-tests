@@ -20,9 +20,9 @@
 
 import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
 import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
- import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
- import {SemanticNode} from '../../speech-rule-engine/js/semantic_tree/semantic_node';
- import {SemanticTree} from '../../speech-rule-engine/js/semantic_tree/semantic_tree';
+import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
+import {SemanticNode} from '../../speech-rule-engine/js/semantic_tree/semantic_node';
+import {SemanticTree} from '../../speech-rule-engine/js/semantic_tree/semantic_tree';
 
 import * as tu from '../base/test_util';
 import * as TestFactory from '../classes/test_factory';
