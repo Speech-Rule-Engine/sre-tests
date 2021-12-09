@@ -57,9 +57,10 @@ export class ApiTest extends AbstractJsonTest {
   /**
    * @override
    */
-  public setUpTest() {
+  public async setUpTest() {
     SemanticAnnotations.annotators = {};
     SemanticAnnotations.visitors = {};
+    return Promise.resolve('');
   }
 
   /**

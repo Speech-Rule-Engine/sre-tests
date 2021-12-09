@@ -116,8 +116,9 @@ export abstract class AbstractExamples extends AbstractJsonTest
   /**
    * @override
    */
-  public setUpTest() {
+  public async setUpTest() {
     this.startExamples();
+    return super.setUpTest();
   }
 
   /**

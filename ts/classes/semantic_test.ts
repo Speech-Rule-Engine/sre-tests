@@ -93,9 +93,9 @@ export class EnrichSpeechTest extends SemanticTest {
   /**
    * @override
    */
-  public setUpTest() {
-    super.setUpTest();
-    System.setupEngine(
+  public async setUpTest() {
+    await super.setUpTest();
+    return System.setupEngine(
       {domain: 'mathspeak',
        style: 'default',
        speech: EngineConst.Speech.SHALLOW});

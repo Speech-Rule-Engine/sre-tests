@@ -106,8 +106,8 @@ export class SymbolTest extends SpeechTest {
    * @override
    */
   public setUpTest() {
-    super.setUpTest();
     Grammar.getInstance().pushState(Object.assign({}, this.grammar));
+    return super.setUpTest();
   }
 
   /**

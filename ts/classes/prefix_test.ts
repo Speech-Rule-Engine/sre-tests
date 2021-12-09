@@ -62,9 +62,9 @@ export class PrefixTest extends SpeechTest {
   /**
    * @override
    */
-  public setUpTest() {
-    super.setUpTest();
-    System.setupEngine(
+  public async setUpTest() {
+    await super.setUpTest();
+    return System.setupEngine(
       {markup: EngineConst.Markup.PUNCTUATION});
   }
 

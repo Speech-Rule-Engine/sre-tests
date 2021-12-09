@@ -101,6 +101,15 @@ export class SpeechTest extends AbstractExamples {
   /**
    * @override
    */
+  public async setUpTest() {
+    await super.setUpTest();
+    return System.setupEngine(
+      {domain: this.domain, modality: this.modality, locale: this.locale});
+  }
+
+  /**
+   * @override
+   */
   public setActive(file: string, ext?: string) {
     this.fileDirectory = this.fileDirectory + this.locale + '/';
     super.setActive(file, ext);
