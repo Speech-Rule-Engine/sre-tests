@@ -18,6 +18,9 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
+import * as fs from 'fs';
+import * as path from 'path';
+
 import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
 import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
 import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
@@ -643,10 +646,46 @@ export class PretextGenerator extends AbstractGenerator {
 
 }
 
+/* ********************************************************** */
+/*
+ * Test generation from issue files.
+ * Note: These files are not included in the public repository!
+ *
+ */
+/* ********************************************************** */
+
+
+/**
+ * Load issues from files and add them to the tests.
+ * @param {string} dir Directory with the source files.
+ * @param {string} file Base name of files.
+ * @param {string} targe The target tests in the input directory.
+ */
+export function fromIssueFiles(dir: string, file: string, target: string) {
+  let filename = tu.TestUtil.fileExists(target, tu.TestPath.INPUT);
+  let tests = tu.TestUtil.loadJson(filename);
+  if (tests.tests === 'ALL') {
+    return {};
+  }
+  let files = fs.readdirSync(dir);
+  files = files.filter(f => f.match(new RegExp(file + '.*$')));
+  for (file of files) {
+    console.log(file);
+    let name = path.basename(file).match(/(^.+)\./)[1] || file;
+    let xml = DomUtil.parseInput(
+      fs.readFileSync(path.join(dir, file), {encoding: 'utf-8'}));
+    if (DomUtil.tagName(xml) === 'MATH') {
+      xml = xml.childNodes[0] as Element;
+    }
+    tests.tests[name] = {input: xml.toString()};
+  }
+  return tests;
+}
+
 
 /* ********************************************************** */
 /*
- * Test generation for experiements with Publishers corpora.
+ * Test generation for experiments with Publishers corpora.
  * Note: These files are not included in the public repository!
  *
  */
