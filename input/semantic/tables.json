@@ -1,7 +1,7 @@
 {
   "_comment_0": "Table structures",
   "tests": {
-        "_comment_109": " Variations of matrices and their roles as determinants, square matrices or",
+    "_comment_109": " Variations of matrices and their roles as determinants, square matrices or",
     "_comment_110": " rowvectors.",
     "Matrices_0": {
       "input": "<mrow class=\"MJX-TeXAtom-ORD\"><mi mathvariant=\"bold\">A</mi><mo>=</mo><mo>[</mo><mtable rowspacing=\"4pt\" columnspacing=\"1em\"><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd></mtr></mtable><mo>]</mo></mrow>"
@@ -21,7 +21,7 @@
     "Matrices_5": {
       "input": "<mfenced open=\"(\" close=\")\"><mtable><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd></mtr></mtable></mfenced>"
     },
-    "_comment_111": " Variations of vectors and their roles as determinants or binomial",
+    "_comment_111": " Multline with empty row!",
     "_comment_112": " coefficients.",
     "Vectors_0": {
       "input": "<mrow class=\"MJX-TeXAtom-ORD\"><mi mathvariant=\"bold\">V</mi><mo>=</mo><mo>[</mo><mtable rowspacing=\"4pt\" columnspacing=\"1em\"><mtr><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd></mtr></mtable><mo>]</mo></mrow>"
@@ -58,7 +58,6 @@
     "Tables_5": {
       "input": "<mtable><mtr><mtd><mi>x</mi><maligngroup/><mo>=</mo><mn>4</mn></mtd></mtr><mtr><mtd><mi>y</mi><maligngroup/><mo>=</mo><mn>2</mn></mtd></mtr><mtr><mtd><mi>x</mi><mi>y</mi><maligngroup/><mo>+</mo><mn>6</mn></mtd></mtr></mtable>"
     },
-    "_comment_111": " Multline with empty row!",
     "Tables_6": {
       "input": "<mtable><mtr><mtd><mi>a</mi></mtd></mtr><mtr/><mtr><mtd><mi>b</mi></mtd></mtr></mtable>"
     },
@@ -175,7 +174,7 @@
       "input": "<mi>&#x222B;</mi><mi>&#x222B;</mi><mi>&#x222B;</mi><mi>dx</mi><mi>dy</mi><mi>dz</mi>"
     },
     "Integrals_11": {
-      "input": "<msub><mo>\u222B</mo><mi>X</mi></msub><mrow><msub><mo>\u2211</mo><mi>Y</mi></msub><mi>a</mi></mrow><mi>dx</mi>"
+      "input": "<msub><mo>∫</mo><mi>X</mi></msub><mrow><msub><mo>∑</mo><mi>Y</mi></msub><mi>a</mi></mrow><mi>dx</mi>"
     },
     "_comment_122": " Translation of text elements.",
     "Text_0": {
@@ -933,6 +932,18 @@
     },
     "SpacesAndEmptyFences_6": {
       "input": "<mo>{</mo><mtable><mtr><mtd><mi>u</mi><mo fence=\"true\"></mo><mspace width=\"2em\"/><mi>v</mi></mtd></mtr></mtable>"
+    },
+    "issue_564_0": {
+      "input": "<mfrac xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mo stretchy=\"false\">(</mo><mi>a</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow><mrow/></mfrac>"
+    },
+    "issue_564_1": {
+      "input": "<mfrac xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mo stretchy=\"false\">|</mo><mi>a</mi><mrow data-mjx-texclass=\"ORD\"><mi>b</mi><mi>c</mi></mrow><msup><mo stretchy=\"false\">|</mo><mi>d</mi></msup></mrow><mrow/></mfrac>"
+    },
+    "issue_564_2": {
+      "input": "<mo stretchy=\"false\" xmlns=\"http://www.w3.org/1998/Math/MathML\">|</mo><mi xmlns=\"http://www.w3.org/1998/Math/MathML\">a</mi><mrow data-mjx-texclass=\"ORD\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi><mi>c</mi></mrow><msup xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo stretchy=\"false\">|</mo><mi>d</mi></msup>"
+    },
+    "issue_564_3": {
+      "input": "<mpadded mathbackground=\"blue\"><munder><mmultiscripts><mo>(</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mo>~</mo></munder></mpadded><mi>x</mi><mpadded mathbackground=\"red\"><mover><msubsup><mo>)</mo><mn>1</mn><mn>2</mn></msubsup><mo>^</mo></mover></mpadded>"
     }
   }
 }

@@ -157,37 +157,32 @@
     "NeutralFencesOnly_4": {
       "input": "<mrow><mi>a</mi><mo>|</mo><mi>b</mi><mo>&#x00A6;</mo><mi>c</mi></mrow>"
     },
-    "_comment_80": " Three different bars.",
+    "_comment_80": " Neutrals and close.",
     "NeutralFencesOnly_5": {
       "input": "<mrow><mi>a</mi><mo>&#x2016;</mo><mi>b</mi><mo>|</mo><mi>c</mi><mo>&#x00A6;</mo><mi>d</mi></mrow>"
     },
-    "_comment_81": " Multiple plus inner fenced.",
+    "_comment_81": " Neutrals and open.",
     "NeutralFencesOnly_6": {
       "input": "<mrow><mo>&#x2016;</mo><mo>[</mo><mi>a</mi><mo>&#x2016;</mo><mi>b</mi><mo>]</mo><mo>&#x2016;</mo><mo>|</mo><mi>x</mi><mo>&#x2016;</mo><mi>y</mi><mo>&#x00A6;</mo><mi>z</mi></mrow>"
     },
-    "_comment_82": " Pathological cases with mixed fences.",
-    "_comment_83": " Close, },",
-    "_comment_84": " Neutrals and close.",
+    "_comment_82": " Multiple fences, fenced and operations",
+    "_comment_83": " Multiple fences, fenced and operations",
+    "_comment_84": " Multiple fences, fenced and operations",
     "MixedUnmatchedFences_0": {
       "input": "<mrow><mo>]</mo><mo>&#x2016;</mo><mi>b</mi><mo>|</mo><mi>c</mi><mo>(</mo></mrow>"
     },
-    "_comment_80": " Neutrals and close.",
     "MixedUnmatchedFences_1": {
       "input": "<mrow><mi>a</mi><mo>&#x2016;</mo><mi>b</mi><mo>|</mo><mi>c</mi><mo>&#x00A6;</mo><mi>d</mi><mo>]</mo><mi>e</mi></mrow>"
     },
-    "_comment_81": " Neutrals and open.",
     "MixedUnmatchedFences_2": {
       "input": "<mrow><mo>[</mo><mi>a</mi><mo>&#x2016;</mo><mi>b</mi><mo>|</mo><mi>c</mi><mo>&#x00A6;</mo><mi>d</mi></mrow>"
     },
-    "_comment_82": " Multiple fences, fenced and operations",
     "MixedUnmatchedFences_3": {
       "input": "<mrow><mo>&#x2016;</mo><mo>[</mo><mi>a</mi><mo>&#x2016;</mo><mi>b</mi><mo>]</mo><mo>|</mo><mo>[</mo><mi>c</mi><mo>&#x2016;</mo><mo>&#x00A6;</mo><mi>d</mi><mo>]</mo><mo>&#x2016;</mo><mo>|</mo><mi>x</mi><mo>&#x2016;</mo><mi>y</mi><mo>&#x00A6;</mo><mi>z</mi><mo>]</mo></mrow>"
     },
-    "_comment_83": " Multiple fences, fenced and operations",
     "MixedUnmatchedFences_4": {
       "input": "<mrow><mo>&#x2016;</mo><mo>]</mo><mo>&#x00A6;</mo><mo>&#x2016;</mo><mo>[</mo><mo>|</mo><mo>[</mo><mi>a</mi><mo>&#x2016;</mo><mi>b</mi><mo>]</mo><mo>&#x2016;</mo><mo>|</mo><mi>[</mi><mo>&#x2016;</mo><mi>y</mi><mo>&#x00A6;</mo><mi>z</mi></mrow>"
     },
-    "_comment_84": " Multiple fences, fenced and operations",
     "MixedUnmatchedFences_5": {
       "input": "<mrow><mo>&#x2016;</mo><mo>[</mo><mi>a</mi><mo>&#x00A6;</mo><mo>&#x2016;</mo><mo>[</mo><mo>+</mo><mo>[</mo><mi>b</mi><mo>&#x2016;</mo><mi>c</mi><mo>]</mo><mo>+</mo><mo>&#x2016;</mo><mo>|</mo><mi>d</mi><mo>+</mo><mi>e</mi><mi>[</mi><mo>&#x2016;</mo><mi>y</mi><mo>&#x00A6;</mo><mo>+</mo><mi>z</mi></mrow>"
     },
@@ -392,6 +387,15 @@
     },
     "ElligibleBoth_2": {
       "input": "<mmultiscripts><mo>|</mo><mprescripts/><mn>3</mn></mmultiscripts><mi>x</mi><msub><mo>|</mo><mn>2</mn></msub><mi>z</mi><mmultiscripts><mo>|</mo><mprescripts/><mn>3</mn></mmultiscripts><mi>y</mi><msub><mo>|</mo><mn>1</mn></msub>"
+    },
+    "issue_616_0": {
+      "input": "<mtable displaystyle=\"true\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mlabeledtr><mtd><mtext>(1)</mtext></mtd><mtd><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mtd></mlabeledtr></mtable>"
+    },
+    "issue_616_1": {
+      "input": "<mtable displaystyle=\"true\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mlabeledtr><mtd><mtext>(1)</mtext></mtd><mtd><mi>x</mi><mo>=</mo><mi>y</mi></mtd></mlabeledtr></mtable>"
+    },
+    "issue_616_2": {
+      "input": "<mtable displaystyle=\"true\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mlabeledtr><mtd><mtext>(3.42)</mtext></mtd><mtd><mo stretchy=\"false\">(</mo><msub><mi>L</mi><mrow><mn>1</mn></mrow></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>L</mi><mi>j</mi></msub><mo>,</mo><msub><mi>σ</mi><mrow><mo>−</mo><mi>r</mi></mrow></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>σ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msubsup><mi>L</mi><mrow><mn>1</mn></mrow><mo data-mjx-alternate=\"1\">′</mo></msubsup><mo>,</mo><mo>…</mo><mo>,</mo><msubsup><mi>L</mi><mi>k</mi><mo data-mjx-alternate=\"1\">′</mo></msubsup><mo>,</mo><msubsup><mi>σ</mi><mrow><mn>0</mn></mrow><mi>ϕ</mi></msubsup><mo>,</mo><msubsup><mi>σ</mi><mrow><mn>1</mn></mrow><mi>ϕ</mi></msubsup><mo>,</mo><mo>…</mo><mo>,</mo><msubsup><mi>σ</mi><mi>ℓ</mi><mi>ϕ</mi></msubsup><mo stretchy=\"false\">)</mo></mtd></mlabeledtr></mtable>"
     }
   }
 }

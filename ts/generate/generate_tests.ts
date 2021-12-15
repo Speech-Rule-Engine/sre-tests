@@ -665,23 +665,23 @@ export function fromIssueFiles(dir: string, file: string, target: string) {
   let filename = tu.TestUtil.fileExists(target, tu.TestPath.INPUT);
   let tests = tu.TestUtil.loadJson(filename);
   if (tests.tests === 'ALL') {
-    return {};
+    return;
   }
   let files = fs.readdirSync(dir);
-  files = files.filter(f => f.match(new RegExp(file + '.*$')));
+  files = files.filter(
+    f => f.match(new RegExp(file + '.*$')) && !f.match(/.*~$/));
   for (file of files) {
     console.log(file);
     let name = path.basename(file).match(/(^.+)\./)[1] || file;
     let xml = DomUtil.parseInput(
       fs.readFileSync(path.join(dir, file), {encoding: 'utf-8'}));
-    if (DomUtil.tagName(xml) === 'MATH') {
-      xml = xml.childNodes[0] as Element;
-    }
-    tests.tests[name] = {input: xml.toString()};
+    let str = (DomUtil.tagName(xml) === 'MATH') ?
+      Array.from(xml.childNodes).map(x => x.toString()).join('') :
+      xml.toString();
+    tests.tests[name] = {input: str};
   }
-  return tests;
+  tu.TestUtil.saveJson(filename, tests);
 }
-
 
 /* ********************************************************** */
 /*
