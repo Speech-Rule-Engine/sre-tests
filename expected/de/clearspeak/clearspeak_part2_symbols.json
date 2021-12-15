@@ -113,58 +113,58 @@
     "_comment7_": " Set Membership Symbols",
     "MembSym001": {
       "input": "<math><mtext>Wenn </mtext><mrow><mi>x</mi><mo>∈</mo><mi>ℤ</mi></mrow><mtext> dann ist </mtext><mrow><mn>2</mn><mi>x</mi></mrow><mtext> eine gerade Zahl.</mtext></math>",
-      "expected": "Wenn x Element von die ganzen Zahlen dann ist 2 x, eine gerade Zahl Punkt"
+      "expected": "Wenn x Element von den ganzen Zahlen dann ist 2 x, eine gerade Zahl Punkt"
     },
     "MembSym002": {
-      "expected": "die Menge aller x in die ganzen Zahlen mit x größer als 5"
+      "expected": "die Menge aller x aus den ganzen Zahlen mit x größer als 5"
     },
     "MembSym003": {
-      "expected": "3 plus 2 i, nicht Element von die reellen Zahlen"
+      "expected": "3 plus 2 i, ist kein Element von den reellen Zahlen"
     },
     "MembSym004": {
       "input": "<math><mtext>Wenn </mtext><mrow><mi>x</mi><mo>∈</mo><mi>ℤ</mi></mrow><mtext> dann ist </mtext><mrow><mn>2</mn><mi>x</mi></mrow><mtext> eine gerade Zahl.</mtext></math>",
-      "expected": "Wenn x Element von die ganzen Zahlen dann ist 2 x, eine gerade Zahl Punkt"
+      "expected": "Wenn x Element von den ganzen Zahlen dann ist 2 x, eine gerade Zahl Punkt"
     },
     "MembSym005": {
-      "expected": "die Menge aller x in die ganzen Zahlen mit x größer als 5"
+      "expected": "die Menge aller x aus den ganzen Zahlen mit x größer als 5"
     },
     "MembSym006": {
-      "expected": "3 plus 2 i, nicht Element von die reellen Zahlen"
+      "expected": "3 plus 2 i, ist kein Element von den reellen Zahlen"
     },
     "MembSym007": {
-      "expected": "If x Element von die ganzen Zahlen then 2 x, is an even number Punkt"
+      "expected": "If x Element von den ganzen Zahlen then 2 x, is an even number Punkt"
     },
     "MembSym008": {
-      "expected": "die Menge aller x Element von die ganzen Zahlen mit x größer als 5"
+      "expected": "die Menge aller x Element von den ganzen Zahlen mit x größer als 5"
     },
     "MembSym009": {
-      "expected": "3 plus 2 i, nicht Element von die reellen Zahlen"
+      "expected": "3 plus 2 i, ist kein Element von den reellen Zahlen"
     },
     "MembSym010": {
       "_comment8_": " var mathml = '<math><mrow><mi>x</mi><mo>∈</mo><mi>ℤ</mi></mrow></math>';",
-      "expected": "If x Element von die ganzen Zahlen then 2 x, is an even number Punkt"
+      "expected": "If x gehört zu den ganzen Zahlen then 2 x, is an even number Punkt"
     },
     "MembSym011": {
-      "expected": "die Menge aller x gehört zu die ganzen Zahlen mit x größer als 5"
+      "expected": "die Menge aller x gehört zu den ganzen Zahlen mit x größer als 5"
     },
     "MembSym012": {
-      "expected": "3 plus 2 i, nicht Element von die reellen Zahlen"
+      "expected": "3 plus 2 i, gehört nicht zu den reellen Zahlen"
     },
     "MembSym013": {
-      "expected": "If x Element von die ganzen Zahlen then 2 x, is an even number Punkt"
+      "expected": "If x gehört zu den ganzen Zahlen then 2 x, is an even number Punkt"
     },
     "MembSym014": {
-      "expected": "die Menge aller x gehört zu die ganzen Zahlen mit x größer als 5"
+      "expected": "die Menge aller x gehört zu den ganzen Zahlen mit x größer als 5"
     },
     "MembSym015": {
-      "expected": "3 plus 2 i, nicht Element von die reellen Zahlen"
+      "expected": "3 plus 2 i, gehört nicht zu den reellen Zahlen"
     },
     "_comment9_": " Two preferences set: One for Sets and one for SetMemberSymbol",
     "SetMemb001": {
-      "expected": "die Menge von x gehört zu die ganzen Zahlen mit 2 kleiner als x kleiner als 7"
+      "expected": "die Menge von x gehört zu den ganzen Zahlen mit 2 kleiner als x kleiner als 7"
     },
     "SetMemb002": {
-      "expected": "die Menge von x in die ganzen Zahlen mit x größer als 5"
+      "expected": "die Menge von x aus den ganzen Zahlen mit x größer als 5"
     },
     "_comment10_": " Sums, Products, Unions, Intersections, and Integrals",
     "Sum001": {
@@ -174,7 +174,7 @@
       "expected": "Summe von n ist gleich 1 bis unendlich über n"
     },
     "Sum003": {
-      "expected": "Summe über i Element von die positiven ganzen Zahlen, über i"
+      "expected": "Summe über i Element von den positiven ganzen Zahlen, über i"
     },
     "Sum004": {
       "expected": "Summe über S, über i"
@@ -186,7 +186,7 @@
       "expected": "Produkt von i ist gleich 1 bis 10 über i"
     },
     "Sum007": {
-      "expected": "Produkt über i Element von die positiven ganzen Zahlen, über, Bruch mit Zähler i, und Nenner i plus 1"
+      "expected": "Produkt über i Element von den positiven ganzen Zahlen, über, Bruch mit Zähler i, und Nenner i plus 1"
     },
     "Sum008": {
       "expected": "Produkt über die positiven ganzen Zahlen, über, Bruch mit Zähler i, und Nenner i plus 1"

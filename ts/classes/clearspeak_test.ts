@@ -31,10 +31,6 @@ export class ClearspeakTest extends SpeechTest {
    */
   public domain = 'clearspeak';
 
-  public constructor() {
-    super();
-  }
-
   /**
    * @override
    */
@@ -52,4 +48,40 @@ export class ClearspeakTest extends SpeechTest {
       {markup: EngineConst.Markup.NONE});
     super.tearDownTest();
   }
+}
+
+export class BrailleLayoutTest extends SpeechTest {
+
+  /**
+   * @override
+   */
+  public domain = 'nemeth';
+
+  /**
+   * @override
+   */
+  public setUpTest() {
+    super.setUpTest();
+    System.setupEngine(
+      {markup: EngineConst.Markup.LAYOUT});
+  }
+
+  /**
+   * @override
+   */
+  public tearDownTest() {
+    System.setupEngine(
+      {markup: EngineConst.Markup.NONE});
+    super.tearDownTest();
+  }
+
+  /**
+   * @override
+   */
+  public appendRuleExample(
+    input: string, output: string, style: string, ...rest: string[]) {
+    output = output.replace(/\n/g, '<br>\n');
+    super.appendRuleExample(input, output, style, ...rest);
+  }
+
 }

@@ -22,7 +22,7 @@ import {JsonTest} from '../base/test_util';
 import * as FC from '../firebase/fire_constants';
 import {FireTest} from '../firebase/fire_test';
 import * as BT  from '../generate/braille_transformer';
-import {init as initButtons, updateAccess} from './buttons';
+import {harvest as harvestButtons, init as initButtons, updateAccess} from './buttons';
 import * as LU from './local_util';
 
 let transformers: Map<string, BT.BrailleTransformer> =
@@ -49,8 +49,6 @@ let kind = 'NABT';
  *
  */
 function transformer() {
-  console.log(7);
-  console.log(kind.toUpperCase());
   return transformers.get(kind.toUpperCase());
 }
 
@@ -163,7 +161,7 @@ function setFeedback(feedback: FC.Feedback) {
  * @param status
  */
 function setStatus(status: FC.Status) {
-  if (status !== undefined) {
+  if (status !== undefined && field.statuscolor && field.statusvalue) {
     switch (status) {
     case FC.Status.NEW:
       field.statuscolor.className = 'green';
@@ -341,7 +339,43 @@ export function harvest() {
   }
 }
 
-export function initHarvest(user: string, path: string) {
+function clearHarvest() {
+  (field.mathinput as HTMLTextAreaElement).value = '';
+  (field.input as HTMLTextAreaElement).value = '';
+  generateMath();
+  generate();
+}
+
+export async function initHarvest(user: string, path: string) {
+  const db = firebase.app().firestore();
+  fireTest = new FireTest(db, user, path, getTest, setTest);
+  await fireTest.prepareTests();
+  fillField();
+  harvestButtons(fireTest, clearHarvest);
   console.log(path);
   console.log(user);
+}
+
+let currentMath: string = '';
+
+/**
+ * Generates with keyboard interaction.
+ */
+export function generateMath() {
+  let ip = field.mathinput as HTMLTextAreaElement;
+  if (currentMath === ip.value) {
+    return;
+  }
+  currentMath = ip.value;
+  processMath(ip.value);
+}
+
+/**
+ *
+ */
+function processMath(math: string) {
+  field.mathexpression.innerHTML = `\\[${math}\\]`;
+  if (MathJax.typeset) {
+    MathJax.typeset();
+  }
 }

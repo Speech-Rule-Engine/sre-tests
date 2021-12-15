@@ -144,54 +144,6 @@
       "style": "sbrief",
       "expected": "좌하향 화살표"
     },
-    "2208-clearspeak-SetMemberSymbol_Member": {
-      "key": "∈",
-      "domain": "clearspeak",
-      "style": "SetMemberSymbol_Member",
-      "expected": "is a member of"
-    },
-    "2208-clearspeak-SetMemberSymbol_Element": {
-      "key": "∈",
-      "domain": "clearspeak",
-      "style": "SetMemberSymbol_Element",
-      "expected": "is an element of"
-    },
-    "2208-clearspeak-SetMemberSymbol_In": {
-      "key": "∈",
-      "domain": "clearspeak",
-      "style": "SetMemberSymbol_In",
-      "expected": "is in"
-    },
-    "2208-clearspeak-SetMemberSymbol_Belongs": {
-      "key": "∈",
-      "domain": "clearspeak",
-      "style": "SetMemberSymbol_Belongs",
-      "expected": "belongs to"
-    },
-    "2209-clearspeak-SetMemberSymbol_Member": {
-      "key": "∉",
-      "domain": "clearspeak",
-      "style": "SetMemberSymbol_Member",
-      "expected": "is not a member of"
-    },
-    "2209-clearspeak-SetMemberSymbol_Element": {
-      "key": "∉",
-      "domain": "clearspeak",
-      "style": "SetMemberSymbol_Element",
-      "expected": "is not an element of"
-    },
-    "2209-clearspeak-SetMemberSymbol_In": {
-      "key": "∉",
-      "domain": "clearspeak",
-      "style": "SetMemberSymbol_In",
-      "expected": "is not in"
-    },
-    "2209-clearspeak-SetMemberSymbol_Belongs": {
-      "key": "∉",
-      "domain": "clearspeak",
-      "style": "SetMemberSymbol_Belongs",
-      "expected": "does not belong to"
-    },
     "2223-default-alternative": {
       "key": "∣",
       "domain": "default",
@@ -5596,19 +5548,19 @@
       "key": "⇽",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "촉이 비어잇는 왼쪽 화살표"
+      "expected": "촉이 비어있는 왼쪽 화살표"
     },
     "21FE-mathspeak-sbrief": {
       "key": "⇾",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "촉이 비어잇는 오른쪽 화살표"
+      "expected": "촉이 비어있는 오른쪽 화살표"
     },
     "21FF-mathspeak-sbrief": {
       "key": "⇿",
       "domain": "mathspeak",
       "style": "sbrief",
-      "expected": "촉이 비어잇는 좌우 화살표"
+      "expected": "촉이 비어있는 좌우 화살표"
     },
     "279A-mathspeak-sbrief": {
       "key": "➚",
@@ -7078,19 +7030,19 @@
       "key": "∊",
       "domain": "clearspeak",
       "style": "SetMemberSymbol_Element",
-      "expected": "is an element of"
+      "expected": "is a member of"
     },
     "220A-clearspeak-SetMemberSymbol_In": {
       "key": "∊",
       "domain": "clearspeak",
       "style": "SetMemberSymbol_In",
-      "expected": "is in"
+      "expected": "is a member of"
     },
     "220A-clearspeak-SetMemberSymbol_Belongs": {
       "key": "∊",
       "domain": "clearspeak",
       "style": "SetMemberSymbol_Belongs",
-      "expected": "belongs to"
+      "expected": "is a member of"
     },
     "22C5-clearspeak-MultsymbolDot_Dot": {
       "key": "⋅",

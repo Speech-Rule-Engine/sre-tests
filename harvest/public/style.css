@@ -109,7 +109,7 @@ tr.selection:hover, tr.selection:focus {
     border: 2px solid #CCC;
     padding: .75em;
 }
-#input {
+.input {
     font-family: monospace;
     font-size: 80%;
     width: 100%;
@@ -131,6 +131,10 @@ span {
 
 div.section {
     height: 25px;
+}
+
+div.semitall {
+    height: 100px;
 }
 
 div.tall {
