@@ -18,7 +18,7 @@
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import {SemanticAnnotations} from '../../speech-rule-engine/js/semantic_tree/semantic_annotations';
+import { annotators } from '../../speech-rule-engine/js/semantic_tree/semantic_annotations';
 import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
 
 import {AbstractJsonTest} from './abstract_test';
@@ -33,8 +33,7 @@ export class ClearspeakAnnotationTest extends AbstractJsonTest {
   /**
    * The clearspeak annotator to test.
    */
-  public annotator: any =
-    SemanticAnnotations.annotators['clearspeak:simple'];
+  public annotator: any = annotators.get('clearspeak:simple');
 
   /**
    * Tests simple annotator for Clearspeak.

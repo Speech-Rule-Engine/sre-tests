@@ -20,9 +20,9 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {SemanticAnnotations} from '../../speech-rule-engine/js/semantic_tree/semantic_annotations';
 import {EngineConst} from '../../speech-rule-engine/js/common/engine';
 import * as System from '../../speech-rule-engine/js/common/system';
+import { annotators, visitors } from '../../speech-rule-engine/js/semantic_tree/semantic_annotations';
 import {Key} from './keycodes';
 
 import {AbstractJsonTest} from './abstract_test';
@@ -58,8 +58,8 @@ export class ApiTest extends AbstractJsonTest {
    * @override
    */
   public async setUpTest() {
-    SemanticAnnotations.annotators = {};
-    SemanticAnnotations.visitors = {};
+    annotators.clear();
+    visitors.clear();
     return Promise.resolve('');
   }
 

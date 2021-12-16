@@ -18,7 +18,7 @@
  */
 
 import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
-import XpathUtil from '../../speech-rule-engine/js/common/xpath_util';
+import * as XpathUtil from '../../speech-rule-engine/js/common/xpath_util';
 
 import {AbstractJsonTest} from '../classes/abstract_test';
 
