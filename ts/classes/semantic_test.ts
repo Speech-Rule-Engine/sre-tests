@@ -28,7 +28,7 @@ import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
 import {SemanticTree} from '../../speech-rule-engine/js/semantic_tree/semantic_tree';
 import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
 import {RebuildStree} from '../../speech-rule-engine/js/walker/rebuild_stree';
-import {EngineConst} from '../../speech-rule-engine/js/common/engine';
+import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
 import * as System from '../../speech-rule-engine/js/common/system';
 import * as WalkerUtil from '../../speech-rule-engine/js/walker/walker_util';
 

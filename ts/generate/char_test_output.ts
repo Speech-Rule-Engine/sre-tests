@@ -22,7 +22,7 @@ import {Grammar} from '../../speech-rule-engine/js/rule_engine/grammar';
 import * as AlphabetGenerator from '../../speech-rule-engine/js/speech_rules/alphabet_generator';
 import * as System from '../../speech-rule-engine/js/common/system';
 import {Variables} from '../../speech-rule-engine/js/common/variables';
-import AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
+import * as AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
 import {AuditoryDescription} from '../../speech-rule-engine/js/audio/auditory_description';
 import * as SemanticUtil from '../../speech-rule-engine/js/semantic_tree/semantic_util';
 

@@ -20,7 +20,7 @@ import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
 import * as System from '../../speech-rule-engine/js/common/system';
 import {SpeechRuleEngine} from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
 import {Grammar} from '../../speech-rule-engine/js/rule_engine/grammar';
-import AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
+import * as AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
 import {AuditoryDescription} from '../../speech-rule-engine/js/audio/auditory_description';
 
 import {SpeechTest} from './speech_test';
