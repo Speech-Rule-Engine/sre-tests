@@ -20,7 +20,7 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {EngineConst} from '../../speech-rule-engine/js/common/engine';
+import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
 import * as System from '../../speech-rule-engine/js/common/system';
 import { annotators, visitors } from '../../speech-rule-engine/js/semantic_tree/semantic_annotations';
 import {Key} from './keycodes';
