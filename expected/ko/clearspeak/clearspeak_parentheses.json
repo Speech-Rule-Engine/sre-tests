@@ -13,7 +13,7 @@
       "expected": "25"
     },
     "Paren002": {
-      "expected": "2 엑스"
+      "expected": "2 x"
     },
     "Paren003": {
       "expected": "2 더하기 마이너스 2"
@@ -28,19 +28,19 @@
       "expected": "2 빼기, 괄호 열고, 마이너스 2, 괄호 닫고, 세제곱"
     },
     "Paren006": {
-      "expected": "괄호 열고, 2 엑스, 괄호 닫고, 제곱"
+      "expected": "괄호 열고, 2 x, 괄호 닫고, 제곱"
     },
     "Paren007": {
-      "expected": "괄호 열고, 2 엑스, 괄호 닫고, 의 y 더하기 1 제곱"
+      "expected": "괄호 열고, 2 x, 괄호 닫고, 의 y 더하기 1 제곱"
     },
     "Paren008": {
-      "expected": "마이너스 2 엑스"
+      "expected": "마이너스 2 x"
     },
     "Paren009": {
-      "expected": "괄호 열고, 마이너스 2 엑스, 괄호 닫고, 제곱"
+      "expected": "괄호 열고, 마이너스 2 x, 괄호 닫고, 제곱"
     },
     "Paren010": {
-      "expected": "마이너스, 괄호 열고, 2 엑스, 괄호 닫고, 제곱"
+      "expected": "마이너스, 괄호 열고, 2 x, 괄호 닫고, 제곱"
     },
     "Paren011": {
       "expected": "2 분의 1"
@@ -48,13 +48,13 @@
     "Paren012": {
       "_comment2_": " TODO: (QUESTION) This is against the Paren_Auto rules! (page 31)!",
       "_comment3_": " var speech = 'open paren, three fourths, 엑스, close paren';",
-      "expected": "4 분의 3 엑스"
+      "expected": "4 분의 3 x"
     },
     "Paren013": {
       "expected": "괄호 열고, 22 분의 11, 괄호 닫고"
     },
     "Paren014": {
-      "expected": "2 분의 1 네제곱"
+      "expected": "2 분의 1 의 4 제곱"
     },
     "Paren015": {
       "expected": "괄호 열고, 15 분의 11, 괄호 닫고, 제곱"
@@ -63,7 +63,7 @@
       "expected": "괄호 열고, 25, 괄호 닫고"
     },
     "Paren017": {
-      "expected": "괄호 열고, 2 엑스, 괄호 닫고"
+      "expected": "괄호 열고, 2 x, 괄호 닫고"
     },
     "Paren018": {
       "expected": "2 더하기, 괄호 열고, 마이너스 2, 괄호 닫고"
@@ -75,31 +75,31 @@
       "expected": "2 빼기, 괄호 열고, 마이너스 2, 괄호 닫고, 세제곱"
     },
     "Paren021": {
-      "expected": "괄호 열고, 2 엑스, 괄호 닫고, 제곱"
+      "expected": "괄호 열고, 2 x, 괄호 닫고, 제곱"
     },
     "Paren022": {
-      "expected": "괄호 열고, 2 엑스, 괄호 닫고, 의 와이 더하기 1 제곱"
+      "expected": "괄호 열고, 2 x, 괄호 닫고, 의 y 더하기 1 제곱"
     },
     "Paren023": {
-      "expected": "괄호 열고, 마이너스 2 엑스, 괄호 닫고"
+      "expected": "괄호 열고, 마이너스 2 x, 괄호 닫고"
     },
     "Paren024": {
-      "expected": "괄호 열고, 마이너스 2 엑스, 괄호 닫고, 제곱"
+      "expected": "괄호 열고, 마이너스 2 x, 괄호 닫고, 제곱"
     },
     "Paren025": {
-      "expected": "마이너스, 괄호 열고, 2 엑스, 괄호 닫고, 제곱"
+      "expected": "마이너스, 괄호 열고, 2 x, 괄호 닫고, 제곱"
     },
     "Paren026": {
       "expected": "괄호 열고, 2 분의 1, 괄호 닫고"
     },
     "Paren027": {
-      "expected": "괄호 열고, 4 분의 3 엑스, 괄호 닫고"
+      "expected": "괄호 열고, 4 분의 3 x, 괄호 닫고"
     },
     "Paren028": {
       "expected": "괄호 열고, 22 분의 11, 괄호 닫고"
     },
     "Paren029": {
-      "expected": "괄호 열고, 2 분의 1, 괄호 닫고, 네제곱"
+      "expected": "괄호 열고, 2 분의 1, 괄호 닫고, 의 4 제곱"
     },
     "Paren030": {
       "expected": "괄호 열고, 15 분의 11, 괄호 닫고, 제곱"
@@ -108,13 +108,13 @@
       "expected": "좌표 1 콤마 2"
     },
     "Paren032": {
-      "expected": "좌표 엑스 콤마 와이"
+      "expected": "좌표 x 콤마 y"
     },
     "Paren033": {
       "expected": "좌표 1 콤마 2 콤마 3"
     },
     "Paren034": {
-      "expected": "좌표 엑스 콤마 와이 콤마 제트"
+      "expected": "좌표 x 콤마 y 콤마 z"
     },
     "Paren035": {
       "_comment4_": " var speech = 'the point with coordinates 1 comma 2 comma three hundred",
@@ -122,49 +122,49 @@
       "expected": "좌표 1 콤마 2 콤마 386"
     },
     "Paren036": {
-      "expected": "열린 구간 에이 에서 비 까지"
+      "expected": "열린 구간 a 에서 b 까지"
     },
     "Paren037": {
-      "expected": "반 열린 구간 에이 이상 비 미만"
+      "expected": "열린 구간 0 에서 1 까지"
     },
     "Paren038": {
-      "expected": "반 열린 구간 에이 이상 비 미만"
+      "expected": "반 열린 구간 a, 이상 b 미만"
     },
     "Paren039": {
-      "expected": "반 열린 구간 0 이상 1 미만"
+      "expected": "반 열린 구간 0, 이상 1 미만"
     },
     "Paren040": {
-      "expected": "반 열린 구간 에이 초과 비 이하"
+      "expected": "반 열린 구간 a, 초과 b 이하"
     },
     "Paren041": {
-      "expected": "반 열린 구간 0 초과 1 이하"
+      "expected": "반 열린 구간 0, 초과 1 이하"
     },
     "Paren042": {
-      "expected": "닫힌 구간 에이 에서 비 까지"
+      "expected": "닫힌 구간 a 에서 b 까지"
     },
     "Paren043": {
       "expected": "닫힌 구간 0 에서 1 까지"
     },
     "Paren044": {
-      "expected": "열린 구간 음의 무한대에서 비 까지"
+      "expected": "열린 구간 음의 무한대에서 b 까지"
     },
     "Paren045": {
       "expected": "열린 구간 음의 무한대에서 1 까지"
     },
     "Paren046": {
-      "expected": "닫힌 구간 음의 무한대에서 비 까지"
+      "expected": "닫힌 구간 음의 무한대에서 b 까지"
     },
     "Paren047": {
       "expected": "닫힌 구간 음의 무한대에서 1 까지"
     },
     "Paren048": {
-      "expected": "열린 구간 에이 에서 무한대까지"
+      "expected": "열린 구간 a 에서 무한대까지"
     },
     "Paren049": {
       "expected": "열린 구간 1 에서 무한대까지"
     },
     "Paren050": {
-      "expected": "닫힌 구간 에이 에서 무한대까지"
+      "expected": "닫힌 구간 a 에서 무한대까지"
     },
     "Paren051": {
       "expected": "닫힌 구간 1 에서 무한대까지"
@@ -176,37 +176,37 @@
       "expected": "전 구간"
     },
     "Nest001": {
-      "expected": "에프 의, 쥐 의 엑스"
+      "expected": "f 의, g 의 x"
     },
     "Nest002": {
-      "expected": "에프 의, 괄호 열고, 쥐 의, 괄호 열고, 엑스 더하기 1, 괄호 닫고, 괄호 닫고"
+      "expected": "f 의, 괄호 열고, g 의, 괄호 열고, x 더하기 1, 괄호 닫고, 괄호 닫고"
     },
     "Nest003": {
       "expected": "6 빼기, 대괄호 열고, 2 빼기, 괄호 열고, 3 더하기 5, 괄호 닫고, 대괄호 닫고"
     },
     "Nest004": {
-      "expected": "6 빼기, 괄호 열고, 2 빼기, 두번째 괄호 열고, 3 더하기 5, 두번째 괄호 닫고, 괄호 닫고"
+      "expected": "6 빼기, 괄호 열고, 2 빼기, 두 괄호 열고, 3 더하기 5, 두 괄호 닫고, 괄호 닫고"
     },
     "Nest005": {
-      "expected": "4 곱하기, 대괄호 열고, 엑스 더하기 3 times, 괄호 열고, 2 엑스, 더하기 1, 괄호 닫고, 대괄호 닫고"
+      "expected": "4 곱하기, 대괄호 열고, x 더하기 3 곱하기, 괄호 열고, 2 x, 더하기 1, 괄호 닫고, 대괄호 닫고"
     },
     "Nest006": {
-      "expected": "4 곱하기, 괄호 열고, 엑스 더하기 3 times, 두번째 괄호 열고, 2 엑스, 더하기 1, 두번째 괄호 닫고, 괄호 닫고"
+      "expected": "4 곱하기, 괄호 열고, x 더하기 3 곱하기, 두 괄호 열고, 2 x, 더하기 1, 두 괄호 닫고, 괄호 닫고"
     },
     "Nest007": {
-      "expected": "1 더하기, 괄호 열고, 2 더하기, 두번째 괄호 열고, 3 더하기 7, 두번째 괄호 닫고, 빼기, 두번째 괄호 열고, 2 더하기 8, 두번째 괄호 닫고, 괄호 닫고"
+      "expected": "1 더하기, 괄호 열고, 2 더하기, 두 괄호 열고, 3 더하기 7, 두 괄호 닫고, 빼기, 두 괄호 열고, 2 더하기 8, 두 괄호 닫고, 괄호 닫고"
     },
     "Nest008": {
-      "expected": "1 더하기, 괄호 열고, 2 더하기, 두번째 괄호 열고, 3 빼기, 세번째 괄호 열고, 4 빼기 5, 세번째 괄호 닫고, 두번째 괄호 닫고, 괄호 닫고"
+      "expected": "1 더하기, 괄호 열고, 2 더하기, 두 괄호 열고, 3 빼기, 세 괄호 열고, 4 빼기 5, 세 괄호 닫고, 두 괄호 닫고, 괄호 닫고"
     },
     "Nest009": {
-      "expected": "괄호 열고, 두번째 괄호 열고, 2 더하기, 세번째 괄호 열고, 3 더하기 4, 세번째 괄호 닫고, 더하기 5, 두번째 괄호 닫고, 더하기 6 더하기, 두번째 괄호 열고, 세번째 괄호 열고, 7 더하기, 네번째 괄호 열고, 8 더하기 1, 네번째 괄호 닫고, 세번째 괄호 닫고, 더하기 2, 두번째 괄호 닫고, 괄호 닫고"
+      "expected": "괄호 열고, 두 괄호 열고, 2 더하기, 세 괄호 열고, 3 더하기 4, 세 괄호 닫고, 더하기 5, 두 괄호 닫고, 더하기 6 더하기, 두 괄호 열고, 세 괄호 열고, 7 더하기, 네 괄호 열고, 8 더하기 1, 네 괄호 닫고, 세 괄호 닫고, 더하기 2, 두 괄호 닫고, 괄호 닫고"
     },
     "SilParen001": {
       "expected": "25"
     },
     "SilParen002": {
-      "expected": "2 엑스"
+      "expected": "2 x"
     },
     "SilParen003": {
       "expected": "2 더하기, 마이너스 2"
@@ -218,31 +218,31 @@
       "expected": "2 빼기, 마이너스 2, 세제곱"
     },
     "SilParen006": {
-      "expected": "2 엑스, 제곱"
+      "expected": "2 x, 제곱"
     },
     "SilParen007": {
-      "expected": "2 엑스, 의 와이 더하기 1 제곱"
+      "expected": "2 x, 의 y 더하기 1 제곱"
     },
     "SilParen008": {
-      "expected": "마이너스 2 엑스"
+      "expected": "마이너스 2 x"
     },
     "SilParen009": {
-      "expected": "마이너스 2 엑스, 제곱"
+      "expected": "마이너스 2 x, 제곱"
     },
     "SilParen010": {
-      "expected": "마이너스, 2 엑스, 제곱"
+      "expected": "마이너스, 2 x, 제곱"
     },
     "SilParen011": {
       "expected": "2 분의 1"
     },
     "SilParen012": {
-      "expected": "4 분의 3 엑스"
+      "expected": "4 분의 3 x"
     },
     "SilParen013": {
       "expected": "22 분의 11"
     },
     "SilParen014": {
-      "expected": "2 분의 1, 네제곱"
+      "expected": "22 분의 1, 의 4 제곱"
     },
     "SilParen015": {
       "expected": "15 분의 11, 제곱"

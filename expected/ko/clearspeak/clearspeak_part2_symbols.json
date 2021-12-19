@@ -33,13 +33,13 @@
     },
     "_comment3_": " Multiplication Symbol",
     "Dot001": {
-      "expected": "6 곱하기 8"
+      "expected": "6 닷 8"
     },
     "Dot002": {
-      "expected": "m 곱하기 n"
+      "expected": "m 닷 n"
     },
     "Dot003": {
-      "expected": "3 곱하기 3"
+      "expected": "3 닷 3"
     },
     "Dot004": {
       "expected": "6 내적 8"
@@ -68,23 +68,23 @@
       "expected": "1 콤마 2 콤마 3 콤마 점 점 점"
     },
     "Ellipses002": {
-      "expected": "1 comma 2 comma 3 comma dot dot dot comma 20"
+      "expected": "1 콤마 2 콤마 3 콤마 점 점 점 콤마 20"
     },
     "Ellipses003": {
-      "expected": "점 점 점 comma, 마이너스 2, comma, 마이너스 1, comma 0 comma 1 comma 2 comma 점 점 점"
+      "expected": "점 점 점 콤마, 마이너스 2, 콤마, 마이너스 1, 콤마 0 콤마 1 콤마 2 콤마 점 점 점"
     },
     "Ellipses004": {
       "expected": "1 콤마 2 콤마 3 콤마 점 점 점"
     },
     "Ellipses005": {
-      "expected": "1 comma 2 comma 3 comma and so on up to comma 20"
+      "expected": "1 콤마 2 콤마 3 콤마 부터 콤마 20"
     },
     "Ellipses006": {
       "expected": "점 점 점 콤마, 마이너스 2, 콤마, 마이너스 1, 콤마 0 콤마 1 콤마 2 콤마 점 점 점"
     },
     "_comment6_": " Vertical Line",
     "VertLine001": {
-      "expected": "3 divides 6"
+      "expected": "3 은 6 의 약수이다"
     },
     "VertLine002": {
       "expected": "x 는 0 보다 크다 를 만족하는 모든 x 의 집합"
@@ -93,22 +93,22 @@
       "expected": "절댓값 x, 는 2 보다 크다 를 만족하는 모든 x 의 집합"
     },
     "VertLine004": {
-      "expected": "f 의 x, 조건 x 는 5"
+      "expected": "f 의 x, 조건 x 는 5 와 같다"
     },
     "VertLine005": {
-      "expected": "x 제곱 더하기 2 x, 조건 x 는 2"
+      "expected": "x 제곱 더하기 2 x, 조건 x 는 2 와 같다"
     },
     "VertLine006": {
-      "expected": "x 제곱 더하기 x, 1 일 때, 빼기 같은 수식 0 일 때"
+      "expected": "x 제곱 더하기 x, 1, 일 때 빼기 같은 수식 0, 일 때"
     },
     "VertLine007": {
       "expected": "x 는 0 보다 크다 를 만족하는 모든 x 의 집합"
     },
     "VertLine008": {
-      "expected": "3 divides 6"
+      "expected": "3 은 6 의 약수이다"
     },
     "VertLine009": {
-      "expected": "P 의, 괄호 열고, A given B, 괄호 닫고"
+      "expected": "P 의, 괄호 열고, A 는 B 의 약수이다, 괄호 닫고"
     },
     "_comment7_": " Set Membership Symbols",
     "MembSym001": {
@@ -166,10 +166,10 @@
     },
     "_comment10_": " Sums, Products, Unions, Intersections, and Integrals",
     "Sum001": {
-      "expected": "시그마 n 는 1 에서 10 까지 n"
+      "expected": "시그마 n 은 1 과 같다 에서 10 까지 n"
     },
     "Sum002": {
-      "expected": "시그마 n 는 1 에서 무한대 까지 n"
+      "expected": "시그마 n 은 1 과 같다 에서 무한대 까지 n"
     },
     "Sum003": {
       "expected": "the sum over i is a member of the positive integers, of i"
@@ -178,37 +178,37 @@
       "expected": "S 에 대한 시그마, i"
     },
     "Sum005": {
-      "expected": "시그마 a 아래첨자 i"
+      "expected": "시그마, a 아래첨자 i"
     },
     "Sum006": {
-      "expected": "파이 i 는 1 에서 10 까지 i"
+      "expected": "파이 i 는 1 과 같다 에서 10 까지 i"
     },
     "Sum007": {
       "expected": "the product over i is a member of the positive integers, of, the fraction with numerator i, and denominator i plus 1"
     },
     "Sum008": {
-      "expected": "양의 정수 집합 에 대한 파이, 분모가 i 더하기 1 이고 분자가 with i 인 분수"
+      "expected": "양의 정수 집합 에 대한 파이, 분모가 i 더하기 1, 이고 분자가 i, 인 분수"
     },
     "Sum009": {
-      "expected": "파이 a 아래첨자 i"
+      "expected": "파이, a 아래첨자 i"
     },
     "Sum010": {
-      "expected": "교집합 i 는 1 에서 10 까지, S 아래첨자 i"
+      "expected": "교집합 i 는 1 과 같다 에서 10 까지, S 아래첨자 i"
     },
     "Sum011": {
-      "expected": "합집합 i 는 1 에서 10 까지, S 아래첨자 i"
+      "expected": "합집합 i 는 1 과 같다 에서 10 까지, S 아래첨자 i"
     },
     "Sum012": {
-      "expected": "교집합 S 아래첨자 i"
+      "expected": "교집합, S 아래첨자 i"
     },
     "Sum013": {
-      "expected": "합집합 S 아래첨자 i"
+      "expected": "합집합, S 아래첨자 i"
     },
     "Sum014": {
-      "expected": "C 에 대한 교집합, S 아래첨자 i"
+      "expected": "조건 C 에 대한 교집합, S 아래첨자 i"
     },
     "Sum015": {
-      "expected": "C 에 대한 합집합, S 아래첨자 i"
+      "expected": "조건 C 에 대한 합집합, S 아래첨자 i"
     },
     "Sum016": {
       "expected": "인테그럴 f 의 x, d x"

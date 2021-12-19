@@ -81,10 +81,10 @@
       "expected": "x 분, y 초"
     },
     "Prime024": {
-      "expected": "45 초, 10 분"
+      "expected": "45 도, 10 분"
     },
     "Prime025": {
-      "expected": "45 초, 10 분, 25 seconds"
+      "expected": "45 도, 10 분, 25 초"
     },
     "Prime026": {
       "expected": "A 프라임, B 프라임"
@@ -185,16 +185,16 @@
     },
     "_comment11_": " Cleaned up tests with the correct usage of multiscript elements.",
     "CombPerm001a": {
-      "expected": "조합 n 씨 r"
+      "expected": "n C r"
     },
     "CombPerm002a": {
-      "expected": "순열 n 피 r"
+      "expected": "n P r"
     },
     "CombPerm003a": {
-      "expected": "조합 10 씨 3"
+      "expected": "10 C 3"
     },
     "CombPerm004a": {
-      "expected": "순열 10 피 3"
+      "expected": "10 P 3"
     },
     "CombPerm005a": {
       "expected": "조합 n 씨 r"
@@ -261,7 +261,7 @@
       "expected": "z, 켤레복소수 z"
     },
     "Bar018": {
-      "expected": "켤레복소수 3 빼기 2 i, 는 3 더하기 2 i"
+      "expected": "켤레복소수 3 빼기 2 i, 는 3 더하기 2 i, 와 같다"
     },
     "_comment13_": " Added! Test that still decimal period still works.",
     "Bar006a": {
@@ -281,13 +281,13 @@
     },
     "_comment14_": " Equals Sign with Adornments",
     "Equal001": {
-      "expected": "의 정의는"
+      "expected": ""
     },
     "Equal002": {
       "expected": "괄호 열고, f 복합 함수 g, 괄호 닫고, 의 x, 의 정의는, f 의, g 의 x"
     },
     "Equal003": {
-      "expected": "물음표 기호가 위에 있는 등호"
+      "expected": "물음표 기호가 위에 있는 같다"
     },
     "Equal004": {
       "expected": "x 더하기 2 물음표 기호가 위에 있는 등호 4"
