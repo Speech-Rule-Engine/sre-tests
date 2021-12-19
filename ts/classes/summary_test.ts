@@ -40,7 +40,7 @@ export class SummaryTest extends SpeechTest {
   /**
    * @override
    */
-  public modality = 'summary';
+  public modality = 'speech';
 
   /**
    * Keyboard steps preceding speech computation.
@@ -61,13 +61,13 @@ export class SummaryTest extends SpeechTest {
    * @override
    */
   public getSpeech(mathMl: string) {
-    if (!this.steps) {
-      return super.getSpeech(mathMl);
-    }
     ProcessorFactory.process('walker', mathMl);
-    this.steps.forEach(step =>
-      ProcessorFactory.process('move', Key.get(step) as any));
-    return ProcessorFactory.process('move', Key.get('RETURN') as any) as string;
+    if (this.steps) {
+      this.steps.forEach(step => {
+        ProcessorFactory.process('move', Key.get(step) as any);
+      });
+    }
+    return ProcessorFactory.process('move', Key.get('X') as any) as string;
   }
 
   /**
