@@ -35,7 +35,7 @@ import {PrefixTest} from './prefix_test';
 import * as st from './semantic_test';
 import {SpeechRuleTest} from './speech_rule_test';
 import {SpeechTest} from './speech_test';
-import {SummaryTest} from './summary_test';
+import {SummaryTest, SummarySpeechTest} from './summary_test';
 import {SymbolTest} from './symbol_test';
 import {WalkerTest} from './walker_test';
 
@@ -59,6 +59,7 @@ const map = new Map<string, any>([
   ['speech', SpeechTest],
   ['stree', st.SemanticTreeTest],
   ['summary', SummaryTest],
+  ['summarySpeech', SummarySpeechTest],
   ['symbol', SymbolTest],
   ['walker', WalkerTest],
   ['xpath', XpathTest]

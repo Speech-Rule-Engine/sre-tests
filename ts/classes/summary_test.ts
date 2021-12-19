@@ -67,6 +67,14 @@ export class SummaryTest extends SpeechTest {
         ProcessorFactory.process('move', Key.get(step) as any);
       });
     }
+    return this.computeSpeech();
+  }
+
+  /**
+   * @param _mathMl The original input.
+   * @return Computes the speech output.
+   */
+  protected computeSpeech(): string {
     return ProcessorFactory.process('move', Key.get('X') as any) as string;
   }
 
@@ -78,4 +86,15 @@ export class SummaryTest extends SpeechTest {
     super.method();
     this.steps = null;
   }
+}
+
+export class SummarySpeechTest extends SummaryTest {
+
+  /**
+   * @override
+   */
+  protected computeSpeech(): string {
+    return ProcessorFactory.process('move', Key.get('TAB') as any) as string;
+  }
+
 }
