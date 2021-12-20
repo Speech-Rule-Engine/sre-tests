@@ -23,7 +23,8 @@ import xmldom = require('xmldom-sre');
 import {AbstractExamples} from './abstract_examples';
 
 import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
-import * as EnrichMathml from '../../speech-rule-engine/js/enrich_mathml/enrich_mathml';
+import { Attribute, removeAttributePrefix } from '../../speech-rule-engine/js/enrich_mathml/enrich_attr';
+import { enrich } from '../../speech-rule-engine/js/enrich_mathml/enrich_mathml';
 import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
 import {SemanticTree} from '../../speech-rule-engine/js/semantic_tree/semantic_tree';
 import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
@@ -74,7 +75,7 @@ export class RebuildStreeTest extends SemanticTest {
     let mathMl = Enrich.prepareMmlString(expr);
     let mml = DomUtil.parseInput(mathMl);
     let stree = new SemanticTree(mml);
-    let emml = EnrichMathml.enrich(mml, stree);
+    let emml = enrich(mml, stree);
     let reass = (new RebuildStree(emml)).getTree();
     this.assert.equal(stree.toString(), reass.toString());
   }
@@ -123,7 +124,7 @@ export class EnrichSpeechTest extends SemanticTest {
     let sysSpeech = System.toSpeech(mml);
     let enr = WalkerUtil.getSemanticRoot(
       System.toEnriched(mml));
-    let enrSpeech = enr.getAttribute(EnrichMathml.Attribute.SPEECH);
+    let enrSpeech = enr.getAttribute(Attribute.SPEECH);
     this.assert.equal(sysSpeech, enrSpeech);
   }
 }
@@ -266,7 +267,7 @@ export class EnrichMathmlTest extends SemanticBlacklistTest {
     let xmls = new xmldom.XMLSerializer();
     this.customizeXml(node);
     this.appendExamples('', mml);
-    let cleaned = EnrichMathml.removeAttributePrefix(
+    let cleaned = removeAttributePrefix(
       xmls.serializeToString(node));
     this.assert.equal(cleaned, xmls.serializeToString(xml));
   }
