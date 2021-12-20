@@ -16,6 +16,7 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
+import * as process from 'process';
 import {AbstractTest} from '../classes/abstract_test';
 import {AbstractJsonTest} from '../classes/abstract_test';
 

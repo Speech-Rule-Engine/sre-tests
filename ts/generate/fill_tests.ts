@@ -30,15 +30,16 @@ const enum TestFlag {ALL, FAILED, MISSING, REMOVE}
  *
  * @param expected Relative file name of the expected file.
  * @param flag Flag which tests to run. Values: all, failed, missing.
- * @return Pair of JSON structure with expected output and the test object.
+ * @return A promise resolving to the Pair of JSON structure with expected
+ *    output and the test object.
  */
-export function runTests(
-  expected: string, flag: TestFlag): [JsonTests, AbstractJsonTest] {
+export async function runTests(
+  expected: string, flag: TestFlag): Promise<[JsonTests, AbstractJsonTest]> {
   let tests = factoryget(expected);
   tests.prepare();
   let result: JsonTests = {};
   try {
-    tests.setUpTest();
+    await tests.setUpTest();
   } catch (e) { }
   let base = ((tests.baseTests.tests && flag !== TestFlag.REMOVE) ?
     tests.baseTests.tests : tests.jsonTests.tests) as JsonTests;
@@ -75,8 +76,8 @@ export function runTests(
  * @param flag Flag which tests to run. Values: all, failed, missing.
  * @param dryrun Print to console instead to file.
  */
-function add(expected: string, flag: TestFlag, dryrun: boolean) {
-  let [result, tests] = runTests(expected, flag);
+async function add(expected: string, flag: TestFlag, dryrun: boolean) {
+  let [result, tests] = await runTests(expected, flag);
   if (dryrun) {
     console.log(JSON.stringify(result, null, 2));
     return;
@@ -153,8 +154,8 @@ export function removeFromFile(file: string, removal: JsonTests) {
  * @param expected Relative file name of the expected file.
  * @param dryrun Print to console instead to file.
  */
-export function removeMissing(expected: string, dryrun: boolean = false) {
-  let [result, tests] = runTests(expected, TestFlag.REMOVE);
+export async function removeMissing(expected: string, dryrun: boolean = false) {
+  let [result, tests] = await runTests(expected, TestFlag.REMOVE);
   if (dryrun) {
     console.log(JSON.stringify(result, null, 2));
     return;
