@@ -12,30 +12,29 @@
 // limitations under the License.
 
 /**
- * @fileoverview Abstract class for test cases of single characters.
+ * @file Abstract class for test cases of single characters.
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
 import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
 import * as System from '../../speech-rule-engine/js/common/system';
-import {SpeechRuleEngine} from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
-import {Grammar} from '../../speech-rule-engine/js/rule_engine/grammar';
+import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
+import { Grammar } from '../../speech-rule-engine/js/rule_engine/grammar';
 import * as AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
-import {AuditoryDescription} from '../../speech-rule-engine/js/audio/auditory_description';
+import { AuditoryDescription } from '../../speech-rule-engine/js/audio/auditory_description';
 
-import {SpeechTest} from './speech_test';
+import { SpeechTest } from './speech_test';
 
 export class SymbolTest extends SpeechTest {
-
   /**
    * The type of symbol that is tested.
    */
-  public kind: string = 'character';
+  public kind = 'character';
 
   /**
    * A grammar annotation.
    */
-  public grammar: {[name: string]: string | boolean} = {};
+  public grammar: { [name: string]: string | boolean } = {};
 
   /**
    * @override
@@ -47,11 +46,14 @@ export class SymbolTest extends SpeechTest {
    */
   public executeTest(text: string, answer: string, style?: string) {
     style = style || this.style;
-    System.setupEngine(
-      {domain: this.domain, style: style,
-       modality: this.modality, locale: this.locale});
-    let actual = this.getSpeech(text);
-    let expected = this.actual ? actual : answer;
+    System.setupEngine({
+      domain: this.domain,
+      style: style,
+      modality: this.modality,
+      locale: this.locale
+    });
+    const actual = this.getSpeech(text);
+    const expected = this.actual ? actual : answer;
     this.appendRuleExample(text, expected, style, this.domain);
     this.assert.equal(actual, expected);
   }
@@ -66,14 +68,20 @@ export class SymbolTest extends SpeechTest {
         // TODO: This is just a temporary fix.
         return '⠀';
       }
-      let node = DomUtil.parseInput('<mi></mi>');
+      const node = DomUtil.parseInput('<mi></mi>');
       node.textContent = text;
-      let evaluator = SpeechRuleEngine.getInstance()
-        .getEvaluator(this.locale, this.modality);
+      const evaluator = SpeechRuleEngine.getInstance().getEvaluator(
+        this.locale,
+        this.modality
+      );
       descrs = evaluator(node);
     } else {
-      descrs = [AuditoryDescription.create(
-        {text: text}, {adjust: true, translate: true})];
+      descrs = [
+        AuditoryDescription.create(
+          { text: text },
+          { adjust: true, translate: true }
+        )
+      ];
     }
     return AuralRendering.finalize(AuralRendering.markup(descrs));
   }
@@ -88,8 +96,8 @@ export class SymbolTest extends SpeechTest {
       throw e;
     } finally {
       this.kind = this.baseTests.type || this.jsonTests.type || 'character';
-      this.grammar = this.baseTests.grammar ||
-        this.jsonTests.grammar || this.grammar;
+      this.grammar =
+        this.baseTests.grammar || this.jsonTests.grammar || this.grammar;
     }
   }
 
@@ -97,7 +105,7 @@ export class SymbolTest extends SpeechTest {
    * @override
    */
   public method() {
-    let key = this.field('key') ? this.field('key') : this.field('name');
+    const key = this.field('key') ? this.field('key') : this.field('name');
     this.domain = this.field('domain') || this.domain;
     this.executeTest(key, this.field('expected'), this.field('style'));
   }
@@ -117,5 +125,4 @@ export class SymbolTest extends SpeechTest {
     Grammar.getInstance().popState();
     super.tearDownTest();
   }
-
 }

@@ -13,17 +13,16 @@
 // limitations under the License.
 
 /**
- * @fileoverview Analytics methods for determining speech rule coverage of
+ * @file Analytics methods for determining speech rule coverage of
  * tests.
- *
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {SpeechRuleEngine} from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
-import {SpeechRule} from '../../speech-rule-engine/js/rule_engine/speech_rule';
+import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
+import { SpeechRule } from '../../speech-rule-engine/js/rule_engine/speech_rule';
 
 import * as fs from 'fs';
-import {TestPath, TestUtil} from '../base/test_util';
+import { TestPath, TestUtil } from '../base/test_util';
 import AnalyticsUtil from './analytics_util';
 
 // Saves
@@ -32,25 +31,25 @@ import AnalyticsUtil from './analytics_util';
 //  * Unique applied rules for each test suite
 //  * Comparison with actual rules
 
-let oldLookupRule = SpeechRuleEngine.prototype.lookupRule;
+const oldLookupRule = SpeechRuleEngine.prototype.lookupRule;
 
 /**
  * @override
  */
-SpeechRuleEngine.prototype.lookupRule = function(node: any, dynamic: any) {
-  let rule = oldLookupRule.bind(this)(node, dynamic);
+SpeechRuleEngine.prototype.lookupRule = function (node: any, dynamic: any) {
+  const rule = oldLookupRule.bind(this)(node, dynamic);
   if (AnalyticsTest.deep && rule) {
     AnalyticsTest.addAppliedRule(rule);
   }
   return rule;
 };
 
-let oldLookupRules = SpeechRuleEngine.prototype.lookupRules;
+const oldLookupRules = SpeechRuleEngine.prototype.lookupRules;
 /**
  * @override
  */
-SpeechRuleEngine.prototype.lookupRules = function(node: any, dynamic: any) {
-  let rules = oldLookupRules.bind(this)(node, dynamic);
+SpeechRuleEngine.prototype.lookupRules = function (node: any, dynamic: any) {
+  const rules = oldLookupRules.bind(this)(node, dynamic);
   if (AnalyticsTest.deep) {
     AnalyticsTest.addApplicableRules(rules);
   }
@@ -58,13 +57,12 @@ SpeechRuleEngine.prototype.lookupRules = function(node: any, dynamic: any) {
 };
 
 namespace AnalyticsTest {
-
   export let currentTest = '';
   export let currentTestcase = '';
-  export let deep = false;
+  export const deep = false;
 
-  export let appliedRule: Map<string, SpeechRule[]> = new Map();
-  export let applicableRules: Map<string, SpeechRule[][]> = new Map();
+  export const appliedRule: Map<string, SpeechRule[]> = new Map();
+  export const applicableRules: Map<string, SpeechRule[][]> = new Map();
 
   /**
    * Records a rule applied while a running a test case.
@@ -114,29 +112,30 @@ namespace AnalyticsTest {
    */
   export function outputAllRules() {
     loadAllAppliedRules();
-    let ruleSets = AnalyticsUtil.getAllSets();
-    for (let [name, obj] of Object.entries(ruleSets)) {
-      let rules = obj.map((x: SpeechRule) => x.toString());
+    const ruleSets = AnalyticsUtil.getAllSets();
+    for (const [name, obj] of Object.entries(ruleSets)) {
+      const rules = obj.map((x: SpeechRule) => x.toString());
       AnalyticsUtil.fileJson('allRules', rules.sort(), name);
       allRulesDifference(rules, name);
     }
   }
 
   let allAppliedRules: string[] = [];
-  let uniqueAppliedRules: Map<string, boolean> = new Map();
+  const uniqueAppliedRules: Map<string, boolean> = new Map();
 
   /**
    * Loads the list of all uniquely applied rules.
    */
   function loadAllAppliedRules() {
-    let path = TestPath.ANALYSIS + '/uniqueAppliedRules/';
-    let files = fs.readdirSync(path);
-    files.forEach(file => {
+    const path = TestPath.ANALYSIS + '/uniqueAppliedRules/';
+    const files = fs.readdirSync(path);
+    files.forEach((file) => {
       allAppliedRules = allAppliedRules.concat(
-        TestUtil.loadJson(path + file) as string[]);
+        TestUtil.loadJson(path + file) as string[]
+      );
     });
     allAppliedRules = AnalyticsUtil.removeDuplicates(allAppliedRules);
-    allAppliedRules.forEach(x => uniqueAppliedRules.set(x, true));
+    allAppliedRules.forEach((x) => uniqueAppliedRules.set(x, true));
   }
 
   /**
@@ -147,8 +146,8 @@ namespace AnalyticsTest {
    * @param name The name of the rule set.
    */
   function allRulesDifference(rules: string[], name: string) {
-    let diff = [];
-    for (let rule of rules) {
+    const diff = [];
+    for (const rule of rules) {
       if (!uniqueAppliedRules.get(rule)) {
         diff.push(rule);
       }
@@ -161,9 +160,9 @@ namespace AnalyticsTest {
    * suite.
    */
   export function outputAppliedRules() {
-    let jsonObj: {[name: string]: string[]} = {};
-    for (let [key, value] of appliedRule.entries()) {
-      jsonObj[key] = value.map(x => x.toString());
+    const jsonObj: { [name: string]: string[] } = {};
+    for (const [key, value] of appliedRule.entries()) {
+      jsonObj[key] = value.map((x) => x.toString());
       AnalyticsUtil.fileJson('appliedRules', jsonObj, currentTest);
     }
   }
@@ -173,11 +172,11 @@ namespace AnalyticsTest {
    * test suite.
    */
   export function outputApplicableRules() {
-    let jsonObj: {[name: string]: string[][]} = {};
-    for (let [key, value] of applicableRules.entries()) {
+    const jsonObj: { [name: string]: string[][] } = {};
+    for (const [key, value] of applicableRules.entries()) {
       jsonObj[key] = value
-        .filter(x => x.length)
-        .map(x => x.map(y => y.toString()));
+        .filter((x) => x.length)
+        .map((x) => x.map((y) => y.toString()));
     }
     AnalyticsUtil.fileJson('applicableRules', jsonObj, currentTest);
   }
@@ -187,14 +186,16 @@ namespace AnalyticsTest {
    */
   export function outputUniqueAppliedRules() {
     let rules: SpeechRule[] = [];
-    for (let value of appliedRule.values()) {
+    for (const value of appliedRule.values()) {
       rules = rules.concat(value);
     }
     rules = AnalyticsUtil.removeDuplicates(rules);
-    AnalyticsUtil.fileJson('uniqueAppliedRules',
-                           rules.map(x => x.toString()), currentTest);
+    AnalyticsUtil.fileJson(
+      'uniqueAppliedRules',
+      rules.map((x) => x.toString()),
+      currentTest
+    );
   }
-
 }
 
 export default AnalyticsTest;

@@ -13,41 +13,53 @@
 // limitations under the License.
 
 /**
- * @fileoverview Methods for generating missing expected values.
- *
+ * @file Methods for generating missing expected values.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {Tests} from '../base/tests';
-import {JsonFile, JsonTests, TestPath, TestUtil} from '../base/test_util';
-import {AbstractJsonTest} from '../classes/abstract_test';
-import {get as factoryget} from '../classes/test_factory';
+import { Tests } from '../base/tests';
+import { JsonFile, JsonTests, TestPath, TestUtil } from '../base/test_util';
+import { AbstractJsonTest } from '../classes/abstract_test';
+import { get as factoryget } from '../classes/test_factory';
 
-const enum TestFlag {ALL, FAILED, MISSING, REMOVE}
+const enum TestFlag {
+  ALL,
+  FAILED,
+  MISSING,
+  REMOVE
+}
 
 /**
  * Runs all tests for the given expected file and collates the failing ones.
  *
  * @param expected Relative file name of the expected file.
  * @param flag Flag which tests to run. Values: all, failed, missing.
- * @return A promise resolving to the Pair of JSON structure with expected
+ * @returns A promise resolving to the Pair of JSON structure with expected
  *    output and the test object.
  */
 export async function runTests(
-  expected: string, flag: TestFlag): Promise<[JsonTests, AbstractJsonTest]> {
-  let tests = factoryget(expected);
+  expected: string,
+  flag: TestFlag
+): Promise<[JsonTests, AbstractJsonTest]> {
+  const tests = factoryget(expected);
   tests.prepare();
-  let result: JsonTests = {};
+  const result: JsonTests = {};
   try {
     await tests.setUpTest();
-  } catch (e) { }
-  let base = ((tests.baseTests.tests && flag !== TestFlag.REMOVE) ?
-    tests.baseTests.tests : tests.jsonTests.tests) as JsonTests;
-  let keys = flag === TestFlag.MISSING ? tests.warn : Object.keys(base);
-  for (let key of keys) {
-    let test = base[key];
-    if (key.match(/_comment/) || !test.test || (tests.jsonTests.exclude &&
-      tests.jsonTests.exclude.indexOf(key) !== -1)) {
+  } catch (e) {}
+  const base = (
+    tests.baseTests.tests && flag !== TestFlag.REMOVE
+      ? tests.baseTests.tests
+      : tests.jsonTests.tests
+  ) as JsonTests;
+  const keys = flag === TestFlag.MISSING ? tests.warn : Object.keys(base);
+  for (const key of keys) {
+    const test = base[key];
+    if (
+      key.match(/_comment/) ||
+      !test.test ||
+      (tests.jsonTests.exclude && tests.jsonTests.exclude.indexOf(key) !== -1)
+    ) {
       if (key.match(/_comment/) && flag === TestFlag.ALL) {
         result[key] = test;
       }
@@ -59,7 +71,7 @@ export async function runTests(
     try {
       tests.method.apply(tests, tests.pick(test));
     } catch (e) {
-      result[key] = {'expected': e.actual};
+      result[key] = { expected: e.actual };
     }
   }
   try {
@@ -77,7 +89,7 @@ export async function runTests(
  * @param dryrun Print to console instead to file.
  */
 async function add(expected: string, flag: TestFlag, dryrun: boolean) {
-  let [result, tests] = await runTests(expected, flag);
+  const [result, tests] = await runTests(expected, flag);
   if (dryrun) {
     console.log(JSON.stringify(result, null, 2));
     return;
@@ -87,14 +99,15 @@ async function add(expected: string, flag: TestFlag, dryrun: boolean) {
 
 /**
  * Adds the expected values to the file, overwriting the current ones.
+ *
  * @param {string} file The file name.
  * @param {JsonTests} expected The expected values.
  */
 export function addToFile(file: string, expected: JsonTests) {
-  let filename = TestUtil.fileExists(file, TestPath.EXPECTED);
-  let oldJson: JsonFile = TestUtil.loadJson(filename);
-  let oldTests = oldJson.tests as JsonTests;
-  for (let key of Object.keys(expected)) {
+  const filename = TestUtil.fileExists(file, TestPath.EXPECTED);
+  const oldJson: JsonFile = TestUtil.loadJson(filename);
+  const oldTests = oldJson.tests as JsonTests;
+  for (const key of Object.keys(expected)) {
     if (oldTests[key]) {
       Object.assign(oldTests[key], expected[key]);
     } else {
@@ -111,7 +124,7 @@ export function addToFile(file: string, expected: JsonTests) {
  * @param expected Relative file name of the expected file.
  * @param dryrun Print to console instead to file.
  */
-export function addMissing(expected: string, dryrun: boolean = false) {
+export function addMissing(expected: string, dryrun = false) {
   add(expected, TestFlag.MISSING, dryrun);
 }
 
@@ -122,7 +135,7 @@ export function addMissing(expected: string, dryrun: boolean = false) {
  * @param expected Relative file name of the expected file.
  * @param dryrun Print to console instead to file.
  */
-export function addActual(expected: string, dryrun: boolean = false) {
+export function addActual(expected: string, dryrun = false) {
   add(expected, TestFlag.ALL, dryrun);
 }
 
@@ -133,15 +146,19 @@ export function addActual(expected: string, dryrun: boolean = false) {
  * @param expected Relative file name of the expected file.
  * @param dryrun Print to console instead to file.
  */
-export function addFailed(expected: string, dryrun: boolean = false) {
+export function addFailed(expected: string, dryrun = false) {
   add(expected, TestFlag.FAILED, dryrun);
 }
 
+/**
+ * @param file
+ * @param removal
+ */
 export function removeFromFile(file: string, removal: JsonTests) {
-  let filename = TestUtil.fileExists(file, TestPath.EXPECTED);
-  let oldJson: JsonFile = TestUtil.loadJson(filename);
-  let tests = oldJson.tests as JsonTests;
-  for (let key of Object.keys(removal)) {
+  const filename = TestUtil.fileExists(file, TestPath.EXPECTED);
+  const oldJson: JsonFile = TestUtil.loadJson(filename);
+  const tests = oldJson.tests as JsonTests;
+  for (const key of Object.keys(removal)) {
     delete tests[key];
   }
   TestUtil.saveJson(filename, oldJson);
@@ -154,8 +171,8 @@ export function removeFromFile(file: string, removal: JsonTests) {
  * @param expected Relative file name of the expected file.
  * @param dryrun Print to console instead to file.
  */
-export async function removeMissing(expected: string, dryrun: boolean = false) {
-  let [result, tests] = await runTests(expected, TestFlag.REMOVE);
+export async function removeMissing(expected: string, dryrun = false) {
+  const [result, tests] = await runTests(expected, TestFlag.REMOVE);
   if (dryrun) {
     console.log(JSON.stringify(result, null, 2));
     return;
@@ -166,13 +183,14 @@ export async function removeMissing(expected: string, dryrun: boolean = false) {
 /**
  * Shows the result for all missing tests. This is to inspect before adding them
  * automatically using, for example, `addMissing`.
+ *
  * @param regexp A regular expression to filter output.
  */
-export function showMissing(regexp: RegExp = /./) {
-  let tests = new Tests();
+export function showMissing(regexp = /./) {
+  const tests = new Tests();
   tests.runner
-    .queryJsonTests(x => [x, x.warn])
-    .filter(([x, y]) => (y.length && x.jsonFile.match(regexp)))
+    .queryJsonTests((x) => [x, x.warn])
+    .filter(([x, y]) => y.length && x.jsonFile.match(regexp))
     .map(([x]) => {
       console.log(x.jsonFile);
       addMissing(x.jsonFile, true);

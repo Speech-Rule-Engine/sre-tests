@@ -13,8 +13,7 @@
 // limitations under the License.
 
 /**
- * @fileoverview Methods for generating tests from single expressions.
- *
+ * @file Methods for generating tests from single expressions.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
@@ -24,14 +23,14 @@ import * as path from 'path';
 import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
 import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
 import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
-import {SemanticNode} from '../../speech-rule-engine/js/semantic_tree/semantic_node';
-import {SemanticTree} from '../../speech-rule-engine/js/semantic_tree/semantic_tree';
+import { SemanticNode } from '../../speech-rule-engine/js/semantic_tree/semantic_node';
+import { SemanticTree } from '../../speech-rule-engine/js/semantic_tree/semantic_tree';
 
 import * as tu from '../base/test_util';
 import * as TestFactory from '../classes/test_factory';
-import {addActual} from './fill_tests';
-import {Tex2Mml} from './tex_transformer';
-import {AbstractTransformer, Transformer} from './transformers';
+import { addActual } from './fill_tests';
+import { Tex2Mml } from './tex_transformer';
+import { AbstractTransformer, Transformer } from './transformers';
 
 /* ********************************************************* */
 /*
@@ -72,24 +71,26 @@ import {AbstractTransformer, Transformer} from './transformers';
  *
  * @param {tu.JsonTest} json The initial JSON input.
  * @param {string=} field The optional field name, defaults to input.
- * @return {tu.JsonTests} The newly transformed JSON.
+ * @returns {tu.JsonTests} The newly transformed JSON.
  */
 export function transformInput(
-  json: tu.JsonTest, field: string = 'input'): tu.JsonTests {
-  let result: {[name: string]: {}} = {};
-  for (let [name, expressions] of Object.entries(json)) {
+  json: tu.JsonTest,
+  field = 'input'
+): tu.JsonTests {
+  const result: { [name: string]: {} } = {};
+  for (const [name, expressions] of Object.entries(json)) {
     let count = 0;
     if (!expressions.length) {
       continue;
     }
     if (expressions.length === 1) {
-      let map: {[name: string]: string} = {};
+      const map: { [name: string]: string } = {};
       map[field] = expressions[0];
       result[name] = map;
       continue;
     }
-    for (let expr of expressions) {
-      let map: {[name: string]: string} = {};
+    for (const expr of expressions) {
+      const map: { [name: string]: string } = {};
       map[field] = expr;
       result[`${name}_${count++}`] = map;
     }
@@ -104,10 +105,13 @@ export function transformInput(
  * @param output Output filename.
  * @param field The optional field name, defaults to input.
  */
-export function generateTestJson(input: string, output: string,
-  field: string = 'input') {
-  let oldJson = tu.TestUtil.loadJson(input);
-  let newJson = transformInput(oldJson, field);
+export function generateTestJson(
+  input: string,
+  output: string,
+  field = 'input'
+) {
+  const oldJson = tu.TestUtil.loadJson(input);
+  const newJson = transformInput(oldJson, field);
   tu.TestUtil.saveJson(output, newJson);
 }
 
@@ -116,11 +120,13 @@ export function generateTestJson(input: string, output: string,
  *
  * @param {tu.JsonTest[]} json The JSON tests.
  * @param {Transformer[]} transformers List of transformers.
- * @return {tu.JsonTest[]} The updated json test.
+ * @returns {tu.JsonTest[]} The updated json test.
  */
-export function transformTests(json: tu.JsonTest[],
-  transformers: Transformer[]): tu.JsonTest[] {
-  json.forEach(x => transformTest(x, transformers));
+export function transformTests(
+  json: tu.JsonTest[],
+  transformers: Transformer[]
+): tu.JsonTest[] {
+  json.forEach((x) => transformTest(x, transformers));
   return json;
 }
 
@@ -129,12 +135,14 @@ export function transformTests(json: tu.JsonTest[],
  *
  * @param {tu.JsonTest} json The JSON test.
  * @param {Transformer[]} transformers List of transformers.
- * @return {tu.JsonTest} The updated json test.
+ * @returns {tu.JsonTest} The updated json test.
  */
 export function transformTest(
-  json: tu.JsonTest, transformers: Transformer[]): tu.JsonTest {
-  for (let transformer of transformers) {
-    let src = json[transformer.src];
+  json: tu.JsonTest,
+  transformers: Transformer[]
+): tu.JsonTest {
+  for (const transformer of transformers) {
+    const src = json[transformer.src];
     if (typeof src !== undefined) {
       json[transformer.dst] = transformer.via(src);
     }
@@ -148,9 +156,8 @@ export function transformTest(
  * @param file File name.
  * @param transformers Transformer list.
  */
-export function transformJsonTests(file: string,
-  transformers: Transformer[]) {
-  let json = tu.TestUtil.loadJson(file);
+export function transformJsonTests(file: string, transformers: Transformer[]) {
+  const json = tu.TestUtil.loadJson(file);
   transformTests(Object.values(json), transformers);
   tu.TestUtil.saveJson(file, json);
 }
@@ -161,9 +168,8 @@ export function transformJsonTests(file: string,
  * @param file File name.
  * @param transformers Transformer list.
  */
-export function transformTestsFile(file: string,
-  transformers: Transformer[]) {
-  let json = tu.TestUtil.loadJson(file) as tu.JsonTest[];
+export function transformTestsFile(file: string, transformers: Transformer[]) {
+  const json = tu.TestUtil.loadJson(file) as tu.JsonTest[];
   transformTests(json, transformers);
   tu.TestUtil.saveJson(file, json);
 }
@@ -175,16 +181,19 @@ export function transformTestsFile(file: string,
  * @param output Output filename.
  */
 export function generateMathspeakTest(input: string, output: string) {
-  let json = tu.TestUtil.loadJson(input);
-  let tests = json.tests;
+  const json = tu.TestUtil.loadJson(input);
+  const tests = json.tests;
   json.tests = {};
-  for (let [key, entry] of Object.entries(tests)) {
-    json.tests[`${key}_default`] =
-      Object.assign({'preference': 'default'}, entry);
-    json.tests[`${key}_brief`] =
-      Object.assign({'preference': 'brief'}, entry);
-    json.tests[`${key}_sbrief`] =
-      Object.assign({'preference': 'sbrief'}, entry);
+  for (const [key, entry] of Object.entries(tests)) {
+    json.tests[`${key}_default`] = Object.assign(
+      { preference: 'default' },
+      entry
+    );
+    json.tests[`${key}_brief`] = Object.assign({ preference: 'brief' }, entry);
+    json.tests[`${key}_sbrief`] = Object.assign(
+      { preference: 'sbrief' },
+      entry
+    );
   }
   tu.TestUtil.saveJson(output, json);
 }
@@ -199,16 +208,16 @@ export function generatePreferenceTest(input: string, preference: string) {
   if (!preference) {
     return;
   }
-  let filename = tu.TestUtil.fileExists(input, tu.TestPath.INPUT);
-  let json = tu.TestUtil.loadJson(filename);
-  let tests = json.tests as tu.JsonTests;
-  for (let [key, entry] of Object.entries(tests)) {
+  const filename = tu.TestUtil.fileExists(input, tu.TestPath.INPUT);
+  const json = tu.TestUtil.loadJson(filename);
+  const tests = json.tests as tu.JsonTests;
+  for (const [key, entry] of Object.entries(tests)) {
     if (key.match(/_default$/)) {
-      let newKey = key.replace(/default$/, preference);
+      const newKey = key.replace(/default$/, preference);
       if (tests[newKey]) {
         continue;
       }
-      let newEntry = Object.assign({}, entry);
+      const newEntry = Object.assign({}, entry);
       newEntry.preference = preference;
       tests[newKey] = newEntry;
     }
@@ -224,13 +233,16 @@ export function generatePreferenceTest(input: string, preference: string) {
  * @param output An optional output file where the exclusion list will be
  *    updated.
  */
-export function generateExclusionList(input: string, preferences: string[],
-                                      output: string = '') {
-  let filename = tu.TestUtil.fileExists(input, tu.TestPath.INPUT);
-  let json = tu.TestUtil.loadJson(filename);
-  let result = [];
-  for (let pref of preferences) {
-    for (let key of Object.keys(json.tests)) {
+export function generateExclusionList(
+  input: string,
+  preferences: string[],
+  output = ''
+) {
+  const filename = tu.TestUtil.fileExists(input, tu.TestPath.INPUT);
+  const json = tu.TestUtil.loadJson(filename);
+  const result = [];
+  for (const pref of preferences) {
+    for (const key of Object.keys(json.tests)) {
       if (key.match(new RegExp(`_${pref}$`))) {
         result.push(key);
       }
@@ -239,11 +251,11 @@ export function generateExclusionList(input: string, preferences: string[],
   if (!output) {
     return result;
   }
-  let outfile = tu.TestUtil.fileExists(output, tu.TestPath.EXPECTED);
+  const outfile = tu.TestUtil.fileExists(output, tu.TestPath.EXPECTED);
   if (!outfile) {
     return result;
   }
-  let outjson = tu.TestUtil.loadJson(outfile);
+  const outjson = tu.TestUtil.loadJson(outfile);
   outjson.exclude = result;
   tu.TestUtil.saveJson(outfile, outjson);
   return result;
@@ -264,16 +276,16 @@ export function generateExclusionList(input: string, preferences: string[],
  * overwritten! So apply only once!
  */
 export function splitExpected(expected: string, base: string) {
-  let filename = tu.TestUtil.fileExists(expected, tu.TestPath.EXPECTED);
-  let json = tu.TestUtil.loadJson(filename);
-  let tests = json.tests;
+  const filename = tu.TestUtil.fileExists(expected, tu.TestPath.EXPECTED);
+  const json = tu.TestUtil.loadJson(filename);
+  const tests = json.tests;
   json.tests = {};
-  let baseJson: tu.JsonTests = {tests: {}};
-  for (let [key, entry] of Object.entries(tests)) {
-    let expected = entry.expected;
+  const baseJson: tu.JsonTests = { tests: {} };
+  for (const [key, entry] of Object.entries(tests)) {
+    const expected = entry.expected;
     delete entry.expected;
     baseJson.tests[key] = entry;
-    json.tests[key] = {expected: expected};
+    json.tests[key] = { expected: expected };
   }
   json.base = base;
   tu.TestUtil.saveJson(filename, json);
@@ -302,11 +314,10 @@ export function splitExpected(expected: string, base: string) {
 /* ********************************************************** */
 
 export class SemanticTransformer extends AbstractTransformer {
-
   /**
    * @override
    */
-  public constructor(src: string = 'input', dst: string = 'stree') {
+  public constructor(src = 'input', dst = 'stree') {
     super(src, dst);
   }
 
@@ -314,29 +325,26 @@ export class SemanticTransformer extends AbstractTransformer {
    * @override
    */
   public via(src: string) {
-    return Semantic.getTreeFromString(
-      Enrich.prepareMmlString(src)).xml().toString();
+    return Semantic.getTreeFromString(Enrich.prepareMmlString(src))
+      .xml()
+      .toString();
   }
-
 }
 
 /**
  * Splitters filter by some constellation of the semantic tree.
  */
 export class Splitter {
-
-  constructor(public name: string,
-              public pred: (n: SemanticNode) => boolean) {}
+  constructor(public name: string, public pred: (n: SemanticNode) => boolean) {}
 
   /**
    * @param tests
    * @param pred
    */
   public split(tests: tu.JsonTests): tu.JsonTests {
-    let result: tu.JsonTests = {};
-    for (let [key, test] of Object.entries(tests)) {
-      let stree = SemanticTree.fromXml(
-        DomUtil.parseInput(test.stree)).root;
+    const result: tu.JsonTests = {};
+    for (const [key, test] of Object.entries(tests)) {
+      const stree = SemanticTree.fromXml(DomUtil.parseInput(test.stree)).root;
       if (this.pred(stree)) {
         result[key] = test;
         delete tests[key];
@@ -344,65 +352,134 @@ export class Splitter {
     }
     return result;
   }
-
 }
 
 export namespace SplitterFactory {
+  const mapping = new Map();
 
-  let mapping = new Map();
-
+  /**
+   * @param name
+   */
   export function get(name: string) {
     return mapping.get(name);
   }
 
+  /**
+   * @param name
+   * @param pred
+   */
   export function set(name: string, pred: (n: SemanticNode) => boolean) {
     mapping.set(name, new Splitter(name, pred));
   }
 
-  SplitterFactory.set('number', (x: SemanticNode) =>
-    x.type === 'number' || (x.type === 'prefixop' && x.role === 'negative'));
-  SplitterFactory.set('letter', (x: SemanticNode) =>
-    x.type === 'identifier' || x.type === 'overscore' ||
-    ((x.type === 'subscript' || x.type === 'superscript') &&
-      !!x.role.match(/letter/)));
-  SplitterFactory.set('script', (x: SemanticNode) =>
-        x.type === 'subscript' || x.type === 'superscript');
+  SplitterFactory.set(
+    'number',
+    (x: SemanticNode) =>
+      x.type === 'number' || (x.type === 'prefixop' && x.role === 'negative')
+  );
+  SplitterFactory.set(
+    'letter',
+    (x: SemanticNode) =>
+      x.type === 'identifier' ||
+      x.type === 'overscore' ||
+      ((x.type === 'subscript' || x.type === 'superscript') &&
+        !!x.role.match(/letter/))
+  );
+  SplitterFactory.set(
+    'script',
+    (x: SemanticNode) => x.type === 'subscript' || x.type === 'superscript'
+  );
   SplitterFactory.set('appl', (x: SemanticNode) => x.type === 'appl');
-  SplitterFactory.set('function', (x: SemanticNode) =>
-    x.type === 'relseq' && x.role === 'equality' &&
-    x.childNodes.some(y => y.role === 'simple function'));
-  SplitterFactory.set('set', (x: SemanticNode) =>
-    x.type === 'relseq' && x.role === 'equality' &&
-    x.childNodes.some(y => y.role.match(/^set/)));
-  SplitterFactory.set('equality', (x: SemanticNode) =>
-    (x.type === 'relseq' || x.type === 'multirel') && x.role === 'equality');
-  SplitterFactory.set('element', (x: SemanticNode) =>
-    x.textContent === '∈' || x.textContent === '∉' || (
-      x.type === 'punctuated' && x.role === 'sequence' &&
+  SplitterFactory.set(
+    'function',
+    (x: SemanticNode) =>
+      x.type === 'relseq' &&
+      x.role === 'equality' &&
+      x.childNodes.some((y) => y.role === 'simple function')
+  );
+  SplitterFactory.set(
+    'set',
+    (x: SemanticNode) =>
+      x.type === 'relseq' &&
+      x.role === 'equality' &&
+      x.childNodes.some((y) => y.role.match(/^set/))
+  );
+  SplitterFactory.set(
+    'equality',
+    (x: SemanticNode) =>
+      (x.type === 'relseq' || x.type === 'multirel') && x.role === 'equality'
+  );
+  SplitterFactory.set(
+    'element',
+    (x: SemanticNode) =>
+      x.textContent === '∈' ||
+      x.textContent === '∉' ||
+      (x.type === 'punctuated' &&
+        x.role === 'sequence' &&
         (x.childNodes[x.childNodes.length - 1].textContent === '∈' ||
-          x.childNodes[x.childNodes.length - 1].textContent === '∉')));
-  SplitterFactory.set('inequality', (x: SemanticNode) =>
-    (x.type === 'relseq' || x.type === 'multirel') && x.role === 'inequality');
-  SplitterFactory.set('sum', (x: SemanticNode) =>
-    x.type === 'infixop' &&
-    (x.role === 'addition' || x.role === 'subtraction'));
+          x.childNodes[x.childNodes.length - 1].textContent === '∉'))
+  );
   SplitterFactory.set(
-    'sequence', (x: SemanticNode) => x.type === 'punctuated');
+    'inequality',
+    (x: SemanticNode) =>
+      (x.type === 'relseq' || x.type === 'multirel') && x.role === 'inequality'
+  );
   SplitterFactory.set(
-    'fenced', (x: SemanticNode) => x.type === 'fenced');
+    'sum',
+    (x: SemanticNode) =>
+      x.type === 'infixop' &&
+      (x.role === 'addition' || x.role === 'subtraction')
+  );
+  SplitterFactory.set('sequence', (x: SemanticNode) => x.type === 'punctuated');
+  SplitterFactory.set('fenced', (x: SemanticNode) => x.type === 'fenced');
   SplitterFactory.set(
-    'prefix',  (x: SemanticNode) => !!x.querySelectorAll(
-      (y: SemanticNode) => y.role === 'prefix function').length);
-  SplitterFactory.set('simpequ', (x: SemanticNode) =>
-    x.type === 'relseq' && x.role === 'equality' &&
-    x.childNodes.every(y => y.type === 'identifier' || y.type === 'number'));
+    'prefix',
+    (x: SemanticNode) =>
+      !!x.querySelectorAll((y: SemanticNode) => y.role === 'prefix function')
+        .length
+  );
+  SplitterFactory.set(
+    'simpequ',
+    (x: SemanticNode) =>
+      x.type === 'relseq' &&
+      x.role === 'equality' &&
+      x.childNodes.every((y) => y.type === 'identifier' || y.type === 'number')
+  );
 }
 
 const PretextSplitters = new Map([
-  ['aata', ['number', 'letter', 'script', 'appl', 'function', 'set',
-            'equality', 'element', 'inequality', 'sum', 'sequence']],
-  ['acs', ['number', 'letter', 'prefix', 'appl', 'function', 'simpequ',
-           'equality', 'inequality', 'sum', 'sequence', 'fenced']]
+  [
+    'aata',
+    [
+      'number',
+      'letter',
+      'script',
+      'appl',
+      'function',
+      'set',
+      'equality',
+      'element',
+      'inequality',
+      'sum',
+      'sequence'
+    ]
+  ],
+  [
+    'acs',
+    [
+      'number',
+      'letter',
+      'prefix',
+      'appl',
+      'function',
+      'simpequ',
+      'equality',
+      'inequality',
+      'sum',
+      'sequence',
+      'fenced'
+    ]
+  ]
 ]);
 
 const TransformerFactory = new Map([
@@ -410,27 +487,30 @@ const TransformerFactory = new Map([
   ['tex', new Tex2Mml()]
 ]);
 
+/**
+ * @param trans
+ */
 export function getTransformers(trans: string[]) {
-  return trans.map(x => TransformerFactory.get(x));
+  return trans.map((x) => TransformerFactory.get(x));
 }
 
 abstract class AbstractGenerator {
-
   public kind: string;
   public tests: tu.JsonTests = {};
   public fileBase: tu.JsonFile = {};
   public transformers: Transformer[] = [];
   public remove: string[] = [];
   public splitters: string[] = [];
-  public file: string = '';
+  public file = '';
 
   /**
    * @param {string} basename The base name of the tests.
    * @param {string} outdir The output directory.
    */
-  constructor(protected basename: string = 'Test',
-              protected outdir: string = '/tmp') {
-  }
+  constructor(
+    protected basename: string = 'Test',
+    protected outdir: string = '/tmp'
+  ) {}
 
   /**
    * @param {string} file The filename to use for the generator.
@@ -449,10 +529,10 @@ abstract class AbstractGenerator {
    * Splitting of test files.
    */
   public split() {
-    for (let name of this.splitters) {
-      let splitter = SplitterFactory.get(name);
+    for (const name of this.splitters) {
+      const splitter = SplitterFactory.get(name);
       if (splitter) {
-        let tests = splitter.split(this.tests);
+        const tests = splitter.split(this.tests);
         this.save(tests, name);
       }
     }
@@ -460,18 +540,21 @@ abstract class AbstractGenerator {
 
   /**
    * Save of test files.
+   *
+   * @param tests
+   * @param prefix
    */
-  public save(tests: tu.JsonTests, prefix: string = '') {
-    let name = tu.TestUtil.capitalize(prefix);
-    let basename = tu.TestUtil.capitalize(this.basename);
-    let kind = tu.TestUtil.capitalize(this.kind);
-    let json: tu.JsonFile = Object.assign({}, this.fileBase);
-    json.name = `${kind}${basename}${name}Tests`,
-    json.information = `${kind} ${basename} document` +
-      (name ? ` ${name} expressions.` : '');
+  public save(tests: tu.JsonTests, prefix = '') {
+    const name = tu.TestUtil.capitalize(prefix);
+    const basename = tu.TestUtil.capitalize(this.basename);
+    const kind = tu.TestUtil.capitalize(this.kind);
+    const json: tu.JsonFile = Object.assign({}, this.fileBase);
+    (json.name = `${kind}${basename}${name}Tests`),
+      (json.information =
+        `${kind} ${basename} document` + (name ? ` ${name} expressions.` : ''));
     json.tests = this.clean(tests, name);
-    let outfile = `${this.outdir}/${this.basename}` +
-      (name ? `_${prefix}` : '') + '.json';
+    const outfile =
+      `${this.outdir}/${this.basename}` + (name ? `_${prefix}` : '') + '.json';
     tu.TestUtil.saveJson(outfile, json);
     this.addExpected(outfile);
   }
@@ -491,13 +574,13 @@ abstract class AbstractGenerator {
    *
    * @param {tu.JsonTests} tests The list of tests.
    * @param {string = ''} name The new name for the tests.
-   * @return {tu.JsonTests} The cleaned list.
+   * @returns {tu.JsonTests} The cleaned list.
    */
-  public clean(tests: tu.JsonTests, name: string = ''): tu.JsonTests {
-    let result: tu.JsonTests = {};
+  public clean(tests: tu.JsonTests, name = ''): tu.JsonTests {
+    const result: tu.JsonTests = {};
     let count = 0;
-    for (let [id, test] of Object.entries(tests)) {
-      for (let remove of this.remove) {
+    for (const [id, test] of Object.entries(tests)) {
+      for (const remove of this.remove) {
         delete test[remove];
       }
       this.cleanTest(test);
@@ -508,7 +591,9 @@ abstract class AbstractGenerator {
 
   /**
    * Additional cleaning on a single test.
+   *
    * @param {tu.JsonTest} test
+   * @param _test
    */
   protected cleanTest(_test: tu.JsonTest) {}
 
@@ -518,9 +603,9 @@ abstract class AbstractGenerator {
   public collate() {
     console.log(this.basename);
     console.log(Object.keys(this.tests).length);
-    let stree = new Map();
-    let result: tu.JsonTests = {};
-    for (let [name, test] of Object.entries(this.tests)) {
+    const stree = new Map();
+    const result: tu.JsonTests = {};
+    for (const [name, test] of Object.entries(this.tests)) {
       let streeId = stree.get(test.stree);
       if (!streeId) {
         stree.set(test.stree, name);
@@ -535,6 +620,9 @@ abstract class AbstractGenerator {
 
   /**
    * Actions taken to collate a single test.
+   *
+   * @param _retain
+   * @param _discard
    */
   protected collateTest(_retain: tu.JsonTest, _discard: tu.JsonTest) {}
 
@@ -551,18 +639,16 @@ abstract class AbstractGenerator {
   public prepare() {
     this.tests = tu.TestUtil.loadJson(this.file);
   }
-
 }
 
 export class PretextGenerator extends AbstractGenerator {
-
-  public kind: string = 'Pretext';
+  public kind = 'Pretext';
   public fileBase: tu.JsonFile = {
-    'factory': 'speech',
-    'locale': 'nemeth',
-    'domain': 'default',
-    'style': 'default',
-    'modality': 'braille'
+    factory: 'speech',
+    locale: 'nemeth',
+    domain: 'default',
+    style: 'default',
+    modality: 'braille'
   };
   public remove: string[] = ['stree'];
 
@@ -582,6 +668,9 @@ export class PretextGenerator extends AbstractGenerator {
 
   /**
    * Cleans tests by removing duplicates and collating references.
+   *
+   * @param retain
+   * @param discard
    */
   public collateTest(retain: tu.JsonTest, discard: tu.JsonTest) {
     // This is very pretext specific.
@@ -594,10 +683,10 @@ export class PretextGenerator extends AbstractGenerator {
   public prepare() {
     this.splitters = PretextSplitters.get(this.basename);
     (this.transformers[0] as Tex2Mml).display = false;
-    let json = tu.TestUtil.loadJson(this.file) as tu.JsonTest[];
+    const json = tu.TestUtil.loadJson(this.file) as tu.JsonTest[];
     let count = 0;
-    for (let test of json) {
-      let id = `${this.basename}_${count++}`;
+    for (const test of json) {
+      const id = `${this.basename}_${count++}`;
       this.tests[id] = test;
       test.reference = {};
     }
@@ -612,13 +701,14 @@ export class PretextGenerator extends AbstractGenerator {
    * @param {string} refFile The path to the reference file.
    */
   public static addPretextReferences(origFile: string, refFile: string) {
-    let refTests = new PretextGenerator(refFile);
+    const refTests = new PretextGenerator(refFile);
     refTests.collate();
-    let streeRefs: tu.JsonTests = {};
+    const streeRefs: tu.JsonTests = {};
     // Associates references by their semantic trees.
     Object.entries(refTests).forEach(
-      ([_x, y]) => streeRefs[y.stree] = y.reference);
-    let orig = TestFactory.get(origFile);
+      ([_x, y]) => (streeRefs[y.stree] = y.reference)
+    );
+    const orig = TestFactory.get(origFile);
     orig.prepare();
     PretextGenerator.addPretextReference(orig.inputTests, streeRefs);
     tu.TestUtil.saveJson(orig['baseFile'], orig.baseTests);
@@ -632,10 +722,13 @@ export class PretextGenerator extends AbstractGenerator {
    * representations.
    */
   private static addPretextReference(orig: tu.JsonTest[], ref: tu.JsonTests) {
-    for (let test of orig) {
-      let stree = Semantic.getTreeFromString(
-        Enrich.prepareMmlString(test.input)).xml().toString();
-      let reference = ref[stree];
+    for (const test of orig) {
+      const stree = Semantic.getTreeFromString(
+        Enrich.prepareMmlString(test.input)
+      )
+        .xml()
+        .toString();
+      const reference = ref[stree];
       if (reference) {
         test.reference = reference;
       }
@@ -643,7 +736,6 @@ export class PretextGenerator extends AbstractGenerator {
       delete test.name;
     }
   }
-
 }
 
 /* ********************************************************** */
@@ -654,31 +746,37 @@ export class PretextGenerator extends AbstractGenerator {
  */
 /* ********************************************************** */
 
-
 /**
  * Load issues from files and add them to the tests.
+ *
  * @param {string} dir Directory with the source files.
  * @param {string} file Base name of files.
  * @param {string} targe The target tests in the input directory.
+ * @param target
  */
 export function fromIssueFiles(dir: string, file: string, target: string) {
-  let filename = tu.TestUtil.fileExists(target, tu.TestPath.INPUT);
-  let tests = tu.TestUtil.loadJson(filename);
+  const filename = tu.TestUtil.fileExists(target, tu.TestPath.INPUT);
+  const tests = tu.TestUtil.loadJson(filename);
   if (tests.tests === 'ALL') {
     return;
   }
   let files = fs.readdirSync(dir);
   files = files.filter(
-    f => f.match(new RegExp(file + '.*$')) && !f.match(/.*~$/));
+    (f) => f.match(new RegExp(file + '.*$')) && !f.match(/.*~$/)
+  );
   for (file of files) {
     console.log(file);
-    let name = path.basename(file).match(/(^.+)\./)[1] || file;
-    let xml = DomUtil.parseInput(
-      fs.readFileSync(path.join(dir, file), {encoding: 'utf-8'}));
-    let str = (DomUtil.tagName(xml) === 'MATH') ?
-      Array.from(xml.childNodes).map(x => x.toString()).join('') :
-      xml.toString();
-    tests.tests[name] = {input: str};
+    const name = path.basename(file).match(/(^.+)\./)[1] || file;
+    const xml = DomUtil.parseInput(
+      fs.readFileSync(path.join(dir, file), { encoding: 'utf-8' })
+    );
+    const str =
+      DomUtil.tagName(xml) === 'MATH'
+        ? Array.from(xml.childNodes)
+            .map((x) => x.toString())
+            .join('')
+        : xml.toString();
+    tests.tests[name] = { input: str };
   }
   tu.TestUtil.saveJson(filename, tests);
 }
@@ -692,7 +790,6 @@ export function fromIssueFiles(dir: string, file: string, target: string) {
 /* ********************************************************** */
 
 export class PublisherGenerator extends AbstractGenerator {
-
   /**
    * @override
    */
@@ -702,14 +799,13 @@ export class PublisherGenerator extends AbstractGenerator {
    * @override
    */
   public fileBase: tu.JsonFile = {
-    'factory': 'stree'
+    factory: 'stree'
   };
 
   /**
    * @override
    */
-  constructor(public kind: string,
-              protected outdir: string = '/tmp') {
+  constructor(public kind: string, protected outdir: string = '/tmp') {
     super(kind, outdir);
   }
 
@@ -717,14 +813,17 @@ export class PublisherGenerator extends AbstractGenerator {
    * @override
    */
   public run(file: string) {
-    this.basename = file.split('/').reverse()[0].replace(/\.json$/, '');
+    this.basename = file
+      .split('/')
+      .reverse()[0]
+      .replace(/\.json$/, '');
     super.run(file);
   }
 
   /**
    * @override
    */
-  protected addExpected(_outfile: string) { }
+  protected addExpected(_outfile: string) {}
 
   /**
    * @override
@@ -733,11 +832,9 @@ export class PublisherGenerator extends AbstractGenerator {
     test.expected = test.stree;
     delete test.stree;
   }
-
 }
 
 export class TexlistGenerator extends PublisherGenerator {
-
   /**
    * @override
    */
@@ -747,35 +844,40 @@ export class TexlistGenerator extends PublisherGenerator {
    * @override
    */
   public prepare() {
-    let json = tu.TestUtil.loadJson(this.file) as string[];
+    const json = tu.TestUtil.loadJson(this.file) as string[];
     let count = 0;
     for (let test of json) {
       if (test.match(/\&(lt|gt|amp|nbsp);/g)) {
-        test = test.replace(/&nbsp;/g, ' ')
+        test = test
+          .replace(/&nbsp;/g, ' ')
           .replace(/&gt;/g, '>')
           .replace(/&lt;/g, '<')
           .replace(/&amp;/g, '&');
       }
-      let id = `${this.basename}_${count++}`;
-      this.tests[id] = {tex: test};
+      const id = `${this.basename}_${count++}`;
+      this.tests[id] = { tex: test };
     }
   }
-
 }
 
 /**
  * Generates tests for an entire corpus.
+ *
  * @param {string} indir Input directory of the corpus files.
  * @param {string} outdir The output directory for the test files.
  * @param {string} publisher Name of the publisher.
  */
 export function generatePublisherTests(
-  indir: string, outdir: string, publisher: string) {
-  let files = tu.TestUtil.readDir(indir);
-  let generator = publisher === 'AMS' ?
-      new TexlistGenerator(publisher, outdir) :
-    new PublisherGenerator(publisher, outdir);
-  for (let file of files) {
+  indir: string,
+  outdir: string,
+  publisher: string
+) {
+  const files = tu.TestUtil.readDir(indir);
+  const generator =
+    publisher === 'AMS'
+      ? new TexlistGenerator(publisher, outdir)
+      : new PublisherGenerator(publisher, outdir);
+  for (const file of files) {
     generator.run(file);
   }
 }

@@ -15,27 +15,24 @@
 // limitations under the License.
 
 /**
- * @fileoverview Tests for walkers.
- *
+ * @file Tests for walkers.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
 import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
 import * as System from '../../speech-rule-engine/js/common/system';
-import {Walker} from '../../speech-rule-engine/js/walker/walker';
-import {TableWalker} from '../../speech-rule-engine/js/walker/table_walker';
+import { Walker } from '../../speech-rule-engine/js/walker/walker';
+import { TableWalker } from '../../speech-rule-engine/js/walker/table_walker';
 import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
 import * as WalkerFactory from '../../speech-rule-engine/js/walker/walker_factory';
 import * as SpeechGeneratorFactory from '../../speech-rule-engine/js/speech_generator/speech_generator_factory';
-import {Highlighter} from '../../speech-rule-engine/js/highlighter/highlighter';
+import { Highlighter } from '../../speech-rule-engine/js/highlighter/highlighter';
 import * as HighlighterFactory from '../../speech-rule-engine/js/highlighter/highlighter_factory';
 
-import {AbstractJsonTest} from '../classes/abstract_test';
-import {Key} from './keycodes';
-
+import { AbstractJsonTest } from '../classes/abstract_test';
+import { Key } from './keycodes';
 
 export class WalkerTest extends AbstractJsonTest {
-
   private walker: Walker;
 
   /**
@@ -58,9 +55,13 @@ export class WalkerTest extends AbstractJsonTest {
    * @override
    */
   public async setUpTest() {
-    return System.setupEngine(
-      {modality: 'speech', locale: 'en', domain: 'mathspeak',
-       style: 'default', speech: EngineConst.Speech.NONE});
+    return System.setupEngine({
+      modality: 'speech',
+      locale: 'en',
+      domain: 'mathspeak',
+      style: 'default',
+      speech: EngineConst.Speech.NONE
+    });
   }
 
   // /**
@@ -81,8 +82,11 @@ export class WalkerTest extends AbstractJsonTest {
    * @param result The expected result.
    * @param modifier
    */
-  public executeTest(move: string | null, result: string | null,
-                     modifier: boolean = false) {
+  public executeTest(
+    move: string | null,
+    result: string | null,
+    modifier = false
+  ) {
     (this.walker as TableWalker).modifier = modifier;
     if (move) {
       this.walker.move(Key.get(move));
@@ -95,7 +99,10 @@ export class WalkerTest extends AbstractJsonTest {
    */
   public method() {
     this.executeTest(
-      this.field('input'), this.field('expected'), this.field('modifier'));
+      this.field('input'),
+      this.field('expected'),
+      this.field('modifier')
+    );
   }
 
   /**
@@ -109,23 +116,27 @@ export class WalkerTest extends AbstractJsonTest {
    *         browser. Has to at least contain the
    *     renderer field.
    * @param mml The MathML string for the node.
-   * @return The newly created walker.
+   * @returns The newly created walker.
    */
   private createWalker() {
-    let renderer: {renderer: string,
-                   browser?: string} = {renderer: this.jsonTests['renderer']};
-    let browser = this.jsonTests['browser'];
+    const renderer: { renderer: string; browser?: string } = {
+      renderer: this.jsonTests['renderer']
+    };
+    const browser = this.jsonTests['browser'];
     if (browser) {
       renderer['browser'] = browser;
     }
-    let expression = this.jsonTests['expression'];
+    const expression = this.jsonTests['expression'];
     this.walker = WalkerFactory.walker(
       this.jsonTests['walker'],
       DomUtil.parseInput(this.baseTests['inputs'][expression]),
       SpeechGeneratorFactory.generator(this.jsonTests['generator']),
-      (HighlighterFactory.highlighter(
-        {color: 'black'}, {color: 'white'}, renderer) as Highlighter),
-      this.baseTests['inputs'][expression.replace(/_.*$/, '_Mml')]);
+      HighlighterFactory.highlighter(
+        { color: 'black' },
+        { color: 'white' },
+        renderer
+      ) as Highlighter,
+      this.baseTests['inputs'][expression.replace(/_.*$/, '_Mml')]
+    );
   }
-
 }

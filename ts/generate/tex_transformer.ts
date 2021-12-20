@@ -13,39 +13,38 @@
 // limitations under the License.
 
 /**
- * @fileoverview Transformers for TeX input.
- *
+ * @file Transformers for TeX input.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {liteAdaptor} from '../../node_modules/mathjax-full/js/adaptors/liteAdaptor';
-import {STATE} from '../../node_modules/mathjax-full/js/core/MathItem';
-import {SerializedMmlVisitor} from '../../node_modules/mathjax-full/js/core/MmlTree/SerializedMmlVisitor';
-import {RegisterHTMLHandler} from '../../node_modules/mathjax-full/js/handlers/html';
-import {TeX} from '../../node_modules/mathjax-full/js/input/tex';
-import {AllPackages} from '../../node_modules/mathjax-full/js/input/tex/AllPackages';
-import {mathjax} from '../../node_modules/mathjax-full/js/mathjax';
-import {SVG} from '../../node_modules/mathjax-full/js/output/svg';
-import {AbstractTransformer} from './transformers';
+import { liteAdaptor } from '../../node_modules/mathjax-full/js/adaptors/liteAdaptor';
+import { STATE } from '../../node_modules/mathjax-full/js/core/MathItem';
+import { SerializedMmlVisitor } from '../../node_modules/mathjax-full/js/core/MmlTree/SerializedMmlVisitor';
+import { RegisterHTMLHandler } from '../../node_modules/mathjax-full/js/handlers/html';
+import { TeX } from '../../node_modules/mathjax-full/js/input/tex';
+import { AllPackages } from '../../node_modules/mathjax-full/js/input/tex/AllPackages';
+import { mathjax } from '../../node_modules/mathjax-full/js/mathjax';
+import { SVG } from '../../node_modules/mathjax-full/js/output/svg';
+import { AbstractTransformer } from './transformers';
 
 export class Tex2Mml extends AbstractTransformer {
-
   /**
    * Display math input. Default is true.
+   *
    * @type {boolean}
    */
-  public display: boolean = true;
+  public display = true;
   private visitor = new SerializedMmlVisitor();
   private document: any = null;
 
   /**
    * @override
    */
-  public constructor(src: string = 'tex', dst: string = 'input') {
+  public constructor(src = 'tex', dst = 'input') {
     super(src, dst);
     RegisterHTMLHandler(liteAdaptor());
     this.document = mathjax.document('', {
-      InputJax: new TeX({packages: AllPackages}),
+      InputJax: new TeX({ packages: AllPackages }),
       OutputJax: new SVG()
     });
   }
@@ -58,10 +57,11 @@ export class Tex2Mml extends AbstractTransformer {
   }
 
   private tex2mml(input: string) {
-    let math = this.document.convert(
-      input, {display: this.display, end: STATE.CONVERT});
-    let str = this.visitor.visitTree(math);
+    const math = this.document.convert(input, {
+      display: this.display,
+      end: STATE.CONVERT
+    });
+    const str = this.visitor.visitTree(math);
     return str.replace(/>\n *</g, '><');
   }
-
 }

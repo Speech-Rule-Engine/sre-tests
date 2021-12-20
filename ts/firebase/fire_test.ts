@@ -13,37 +13,37 @@
 // limitations under the License.
 
 /**
- * @fileoverview Test handling in front-end and firebase.
- *
+ * @file Test handling in front-end and firebase.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {JsonTest, JsonTests} from '../base/test_util';
+import { JsonTest, JsonTests } from '../base/test_util';
 import * as FC from './fire_constants';
 import * as FU from './fire_util';
 
 export class FireTest {
-
   public tests: JsonTests;
   public order: string[];
-  public update: boolean = true;
+  public update = true;
 
   private countTests = 0;
   private preparedTests: JsonTest[] = [];
   private _data: JsonTests;
 
-  public constructor(public db: any, public collection: string,
-                     public doc: string,
-                     public getTest: () => JsonTest,
-                     public setTest: (test: JsonTest) => void) {
-  }
+  public constructor(
+    public db: any,
+    public collection: string,
+    public doc: string,
+    public getTest: () => JsonTest,
+    public setTest: (test: JsonTest) => void
+  ) {}
 
   public getData() {
     return this._data;
   }
 
   /**
-   * @return The currently active test.
+   * @returns The currently active test.
    */
   public currentTest() {
     return this.preparedTests[this.countTests];
@@ -54,8 +54,8 @@ export class FireTest {
     this._data = await FU.downloadData(this.db, this.collection, this.doc);
     this.order = this._data.order as string[];
     this.tests = this._data.tests as JsonTests;
-    for (let key of this.order) {
-      let test = this.tests[key];
+    for (const key of this.order) {
+      const test = this.tests[key];
       test.brf = '';
       test.unicode = '';
       this.preparedTests.push(test);
@@ -64,9 +64,9 @@ export class FireTest {
 
   // Where should that go?
   public async saveTest(values: JsonTest) {
-    let test = this.currentTest();
+    const test = this.currentTest();
     let status = null;
-    for (let key of Object.keys(values)) {
+    for (const key of Object.keys(values)) {
       if (test[key] !== values[key]) {
         status = FC.Status.CHANGED;
       }
@@ -76,23 +76,33 @@ export class FireTest {
       // Save full test.
       test[FC.Interaction] = status;
       if (this.update) {
-        FU.updateData(this.db, this.collection,
-                      this.doc, test, ['tests', test.name]);
+        FU.updateData(this.db, this.collection, this.doc, test, [
+          'tests',
+          test.name
+        ]);
       }
     }
     if (!status && !test[FC.Interaction]) {
       test[FC.Interaction] = FC.Status.VIEWED;
       if (this.update) {
-        FU.updateData(this.db, this.collection, this.doc, test[FC.Interaction],
-                      ['tests', test.name, FC.Interaction]);
+        FU.updateData(
+          this.db,
+          this.collection,
+          this.doc,
+          test[FC.Interaction],
+          ['tests', test.name, FC.Interaction]
+        );
       }
     }
   }
 
   public async saveFeedback(feedback: FC.Feedback) {
-    let test = this.currentTest();
-    FU.updateData(this.db, this.collection, this.doc, feedback,
-                  ['tests', test.name, FC.FeedbackStatus]);
+    const test = this.currentTest();
+    FU.updateData(this.db, this.collection, this.doc, feedback, [
+      'tests',
+      test.name,
+      FC.FeedbackStatus
+    ]);
   }
 
   /**
@@ -113,8 +123,9 @@ export class FireTest {
   public async cycleUnchangedTests(direction: boolean) {
     // TODO: Add functionality.
     await this.saveTest(this.getTest());
-    this.setTest(this.jumpTest(direction,
-                               (x: FC.Status) => x !== FC.Status.CHANGED));
+    this.setTest(
+      this.jumpTest(direction, (x: FC.Status) => x !== FC.Status.CHANGED)
+    );
   }
 
   /**
@@ -125,8 +136,9 @@ export class FireTest {
   public async cycleNewTests(direction: boolean) {
     // TODO: Add functionality.
     await this.saveTest(this.getTest());
-    this.setTest(this.jumpTest(direction,
-                               (x: FC.Status) => x === FC.Status.NEW));
+    this.setTest(
+      this.jumpTest(direction, (x: FC.Status) => x === FC.Status.NEW)
+    );
   }
 
   /**
@@ -136,7 +148,7 @@ export class FireTest {
    */
   public async goTest(name: string) {
     await this.saveTest(this.getTest());
-    let index = this.order.indexOf(name);
+    const index = this.order.indexOf(name);
     if (index === -1) {
       return;
     }
@@ -156,11 +168,13 @@ export class FireTest {
   }
 
   protected jumpTest(direction: boolean, stop: (x: FC.Status) => boolean) {
-    let currentCount = this.countTests;
-    while (!stop(this.nextTest(direction)[FC.Interaction]) &&
-      this.countTests !== currentCount) {}
-    return currentCount !== this.countTests ? this.currentTest() :
-      this.nextTest(direction);
+    const currentCount = this.countTests;
+    while (
+      !stop(this.nextTest(direction)[FC.Interaction]) &&
+      this.countTests !== currentCount
+    ) {}
+    return currentCount !== this.countTests
+      ? this.currentTest()
+      : this.nextTest(direction);
   }
-
 }

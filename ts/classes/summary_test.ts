@@ -15,18 +15,16 @@
 // limitations under the License.
 
 /**
- * @fileoverview Testcases for summary speech generation.
- *
+ * @file Testcases for summary speech generation.
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
 import * as ProcessorFactory from '../../speech-rule-engine/js/common/processor_factory';
-import {Key} from './keycodes';
+import { Key } from './keycodes';
 
-import {SpeechTest} from './speech_test';
+import { SpeechTest } from './speech_test';
 
 export class SummaryTest extends SpeechTest {
-
   /**
    * @override
    */
@@ -63,7 +61,7 @@ export class SummaryTest extends SpeechTest {
   public getSpeech(mathMl: string) {
     ProcessorFactory.process('walker', mathMl);
     if (this.steps) {
-      this.steps.forEach(step => {
+      this.steps.forEach((step) => {
         ProcessorFactory.process('move', Key.get(step) as any);
       });
     }
@@ -72,7 +70,7 @@ export class SummaryTest extends SpeechTest {
 
   /**
    * @param _mathMl The original input.
-   * @return Computes the speech output.
+   * @returns Computes the speech output.
    */
   protected computeSpeech(): string {
     return ProcessorFactory.process('move', Key.get('X') as any) as string;
@@ -89,12 +87,10 @@ export class SummaryTest extends SpeechTest {
 }
 
 export class SummarySpeechTest extends SummaryTest {
-
   /**
    * @override
    */
   protected computeSpeech(): string {
     return ProcessorFactory.process('move', Key.get('TAB') as any) as string;
   }
-
 }
