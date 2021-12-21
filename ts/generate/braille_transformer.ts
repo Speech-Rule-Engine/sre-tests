@@ -191,7 +191,6 @@ export class Nabt2UnicodeTable extends Nabt2Unicode {
   }
 
   public cleanInput(str: string): [string, string] {
-    console.log(5);
     const input = [];
     const error = [];
     for (const line of str.split('\n')) {
@@ -230,7 +229,6 @@ export class Bldt2UnicodeTable extends Bldt2Unicode {
   }
 
   public cleanInput(str: string): [string, string] {
-    console.log(5);
     const input = [];
     const error = [];
     for (const line of str.split('\n')) {

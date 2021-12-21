@@ -748,8 +748,7 @@ export class PretextGenerator extends AbstractGenerator {
  *
  * @param {string} dir Directory with the source files.
  * @param {string} file Base name of files.
- * @param {string} targe The target tests in the input directory.
- * @param target
+ * @param {string} target The target tests in the input directory.
  */
 export function fromIssueFiles(dir: string, file: string, target: string) {
   const filename = tu.TestUtil.fileExists(target, tu.TestPath.INPUT);
