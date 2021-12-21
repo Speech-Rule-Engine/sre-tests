@@ -12,25 +12,32 @@
 // limitations under the License.
 
 /**
- * @fileoverview The module that initializes and runs the tests.
+ * @file The module that initializes and runs the tests.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
 import * as process from 'process';
-import {ExampleFiles} from '../classes/abstract_examples';
+import { ExampleFiles } from '../classes/abstract_examples';
 import * as TestFactory from '../classes/test_factory';
-import {TestRunner} from './runner';
-import {TestUtil} from './test_util';
-import {Debugger} from '../../speech-rule-engine/js/common/debugger';
+import { TestRunner } from './runner';
+import { TestUtil } from './test_util';
+import { Debugger } from '../../speech-rule-engine/js/common/debugger';
 
 export class Tests {
-
   /**
    * List of all environment variables that can be set.
    */
   public static environmentVars: string[] = [
-    'FILE', 'FILES', 'LOCALE', 'BLOCK', 'JSON',
-    'VERBOSE', 'WARN', 'NOOUTPUT', 'DEBUG'];
+    'FILE',
+    'FILES',
+    'LOCALE',
+    'BLOCK',
+    'JSON',
+    'VERBOSE',
+    'WARN',
+    'NOOUTPUT',
+    'DEBUG'
+  ];
 
   /**
    * List of all available tests.
@@ -45,7 +52,7 @@ export class Tests {
   /**
    * The instantiated environment variables.
    */
-  public environment: {[key: string]: number | boolean | string[]} = {
+  public environment: { [key: string]: number | boolean | string[] } = {
     JSON: true,
     DEBUG: false,
     VERBOSE: 2,
@@ -60,7 +67,7 @@ export class Tests {
   /**
    * Load all json files from the expected directory
    *
-   * @return A list of all json file path names.
+   * @returns A list of all json file path names.
    */
   public static allJson(): string[] {
     return TestUtil.cleanFiles(TestUtil.readDir(''));
@@ -74,17 +81,22 @@ export class Tests {
    * @param start The start of the filtering regular expression.
    * @param end The end of the filtering regular expression. The idea is that a
    * filter is generated as `/start + fil + end/` where `fil \in filter`.
-   * @return The filtered list of files.
+   * @returns The filtered list of files.
    */
   private static fileFilter(
-    files: string[], filter: string[], start: string, end: string): string[] {
+    files: string[],
+    filter: string[],
+    start: string,
+    end: string
+  ): string[] {
     if (!filter || !filter.length) {
       return files;
     }
     let result: string[] = [];
-    for (let fil of filter) {
+    for (const fil of filter) {
       result = result.concat(
-        files.filter(x => x.match(RegExp(start + fil + end))));
+        files.filter((x) => x.match(RegExp(start + fil + end)))
+      );
     }
     return result;
   }
@@ -93,12 +105,12 @@ export class Tests {
    * @class
    */
   public constructor() {
-    Tests.environmentVars.forEach(x => this.getEnvironment(x));
-    let file = this.environment['FILE'] as string[];
+    Tests.environmentVars.forEach((x) => this.getEnvironment(x));
+    const file = this.environment['FILE'] as string[];
     if (file) {
-      let names: {[key: string]: Function} = {};
-      Tests.allTests.map(x => names[x.name] = x);
-      this.testList = file.map((x: string) =>  names[x]);
+      const names: { [key: string]: Function } = {};
+      Tests.allTests.map((x) => (names[x.name] = x));
+      this.testList = file.map((x: string) => names[x]);
     }
     if (!this.testList.length) {
       this.testList = this.testList.concat(Tests.allTests);
@@ -108,10 +120,9 @@ export class Tests {
     this.runner.verbose = this.environment['VERBOSE'] as number;
 
     if (this.environment['JSON']) {
-      let files = (
-        this.environment['FILES'] || this.getFiles()) as string[];
-      for (let key of files) {
-        let test = TestFactory.get(key);
+      const files = (this.environment['FILES'] || this.getFiles()) as string[];
+      for (const key of files) {
+        const test = TestFactory.get(key);
         if (test) {
           this.runner.registerTest(test);
         }
@@ -122,12 +133,12 @@ export class Tests {
   /**
    * Finds and filter the JSON files wrt. locale or category block
    *
-   * @return A list of filenames.
+   * @returns A list of filenames.
    */
   public getFiles(): string[] {
     let files = Tests.allJson() as string[];
-    let locale = this.environment['LOCALE'] as string[];
-    let block = this.environment['BLOCK'] as string[];
+    const locale = this.environment['LOCALE'] as string[];
+    const block = this.environment['BLOCK'] as string[];
     files = Tests.fileFilter(files, locale, '^', '/');
     files = Tests.fileFilter(files, block, '^(\\w+/(?!\\w+/)|\\w+/', '/\\w+)');
     return files;
@@ -139,15 +150,15 @@ export class Tests {
    * @param variable The variable name.
    */
   public getEnvironment(variable: string) {
-    let env = process.env[variable];
+    const env = process.env[variable];
     if (!env) {
       return;
     }
     if (env === 'true' || env === 'false') {
-      this.environment[variable] = (JSON.parse(env) as boolean);
+      this.environment[variable] = JSON.parse(env) as boolean;
       return;
     }
-    let num = parseInt(env, 10);
+    const num = parseInt(env, 10);
     if (!isNaN(num)) {
       this.environment[variable] = num;
       return;
@@ -163,17 +174,16 @@ export class Tests {
     if (this.environment['DEBUG']) {
       Debugger.getInstance().init();
     }
-    let timeIn = (new Date()).getTime();
-    for (let i = 0, test; test = this.testList[i]; i++) {
-      let obj = new test();
+    const timeIn = new Date().getTime();
+    for (let i = 0, test; (test = this.testList[i]); i++) {
+      const obj = new test();
       this.runner.registerTest(obj);
     }
     this.runner.runTests();
     this.runner.summary();
-    let timeOut = (new Date()).getTime();
+    const timeOut = new Date().getTime();
     this.runner.outputLine(0, 'Time for tests: ' + (timeOut - timeIn) + 'ms');
     ExampleFiles.closeFiles();
     process.exit(this.runner.success() ? 0 : 1);
   }
-
 }

@@ -1,4 +1,3 @@
-
 //
 // Copyright 2018 Volker Sorge
 //
@@ -13,17 +12,16 @@
 // limitations under the License.
 
 /**
- * @fileoverview Testcases for DOM and Xpath functionality.
+ * @file Testcases for DOM and Xpath functionality.
  * @author sorge@google.com (Volker Sorge)
  */
 
 import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
 import * as XpathUtil from '../../speech-rule-engine/js/common/xpath_util';
 
-import {AbstractJsonTest} from '../classes/abstract_test';
+import { AbstractJsonTest } from '../classes/abstract_test';
 
 export class HtmlTest extends AbstractJsonTest {
-
   /**
    * Executes entity tests.
    *
@@ -31,7 +29,7 @@ export class HtmlTest extends AbstractJsonTest {
    * @param result The expected output.
    */
   public entitiesTest(xml: string, result: string) {
-    let parsed = DomUtil.parseInput(xml);
+    const parsed = DomUtil.parseInput(xml);
     this.assert.equal(parsed.toString(), result);
   }
 
@@ -41,11 +39,9 @@ export class HtmlTest extends AbstractJsonTest {
   public method() {
     this.entitiesTest(this.field('input'), this.field('expected'));
   }
-
 }
 
 export class XpathTest extends AbstractJsonTest {
-
   /**
    * @override
    */
@@ -62,10 +58,14 @@ export class XpathTest extends AbstractJsonTest {
    * @param kind The type of Xpath query.
    * @param query The Xpath query.
    */
-  public entitiesTest(xml: string, result: string,
-                      kind: string, query: string) {
-    let parsed = DomUtil.parseInput(xml);
-    let actual = (XpathUtil as any)[kind](query, parsed);
+  public entitiesTest(
+    xml: string,
+    result: string,
+    kind: string,
+    query: string
+  ) {
+    const parsed = DomUtil.parseInput(xml);
+    const actual = (XpathUtil as any)[kind](query, parsed);
     this.assert.equal(actual.toString(), result.toString());
   }
 
@@ -73,8 +73,11 @@ export class XpathTest extends AbstractJsonTest {
    * @override
    */
   public method() {
-    this.entitiesTest(this.field('input'), this.field('expected'),
-                      this.field('type'), this.field('query'));
+    this.entitiesTest(
+      this.field('input'),
+      this.field('expected'),
+      this.field('type'),
+      this.field('query')
+    );
   }
-
 }

@@ -13,31 +13,29 @@
 // limitations under the License.
 
 /**
- * @fileoverview Analytics of speech rules sets.
- *
+ * @file Analytics of speech rules sets.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {allStores} from './analytics_module';
-import {Trie} from '../../speech-rule-engine/js/indexing/trie';
-import {StaticTrieNode} from '../../speech-rule-engine/js/indexing/abstract_trie_node';
-import {MathStore} from '../../speech-rule-engine/js/rule_engine/math_store';
-import {SpeechRule} from '../../speech-rule-engine/js/rule_engine/speech_rule';
-import {SpeechRuleEngine} from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
+import { allStores } from './analytics_module';
+import { Trie } from '../../speech-rule-engine/js/indexing/trie';
+import { StaticTrieNode } from '../../speech-rule-engine/js/indexing/abstract_trie_node';
+import { MathStore } from '../../speech-rule-engine/js/rule_engine/math_store';
+import { SpeechRule } from '../../speech-rule-engine/js/rule_engine/speech_rule';
+import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
 
-import {TestUtil} from '../base/test_util';
+import { TestUtil } from '../base/test_util';
 
 import AnalyticsUtil from './analytics_util';
 import AnalyticsTest from './analytics_test';
 
 namespace AnalyticsTrie {
-
   /**
    * @param rules
    */
   export function tempTrie(rules: SpeechRule[]): Trie {
-    let trie = new Trie();
-    for (let rule of rules) {
+    const trie = new Trie();
+    for (const rule of rules) {
       trie.addRule(rule);
     }
     return trie;
@@ -48,30 +46,40 @@ namespace AnalyticsTrie {
    * @param name
    */
   export function outputTrie(trie: Trie, name: string) {
-    let json = trie.json();
-    let rules = trie.collectRules();
+    const json = trie.json();
+    const rules = trie.collectRules();
     AnalyticsUtil.fileJson('trie', json, name);
-    AnalyticsUtil.fileJson('trie',
-                           rules.map((x: SpeechRule) => x.toString()),
-                           name, 'txt');
+    AnalyticsUtil.fileJson(
+      'trie',
+      rules.map((x: SpeechRule) => x.toString()),
+      name,
+      'txt'
+    );
   }
 
   /**
    *
    */
   export function restTrie() {
-    let applied = Array.from(AnalyticsTest.appliedRule.values())
-      .reduce((x, y) => x.concat(y), []);
-    let usedTrie = tempTrie(applied);
-    let allRules = SpeechRuleEngine.getInstance().trie.collectRules();
-    let outTrie = tempTrie([]);
-    for (let rule of allRules) {
-      let prec = rule.precondition;
-      let cstr = rule.dynamicCstr.getValues();
-      let node = usedTrie.byConstraint(
-        cstr.concat([prec.query], prec.constraints));
-      if (!node || !(node instanceof StaticTrieNode) || !node.getRule() ||
-        node.getRule() !== rule) {
+    const applied = Array.from(AnalyticsTest.appliedRule.values()).reduce(
+      (x, y) => x.concat(y),
+      []
+    );
+    const usedTrie = tempTrie(applied);
+    const allRules = SpeechRuleEngine.getInstance().trie.collectRules();
+    const outTrie = tempTrie([]);
+    for (const rule of allRules) {
+      const prec = rule.precondition;
+      const cstr = rule.dynamicCstr.getValues();
+      const node = usedTrie.byConstraint(
+        cstr.concat([prec.query], prec.constraints)
+      );
+      if (
+        !node ||
+        !(node instanceof StaticTrieNode) ||
+        !node.getRule() ||
+        node.getRule() !== rule
+      ) {
         outTrie.addRule(rule);
       }
     }
@@ -82,13 +90,14 @@ namespace AnalyticsTrie {
    *
    */
   export function disjunctiveRules() {
-    let ruleSets = AnalyticsUtil.getAllSets();
-    let result: SpeechRule[] = [];
-    for (let [ , rules] of Object.entries(ruleSets)) {
-      rules.forEach(rule => {
+    const ruleSets = AnalyticsUtil.getAllSets();
+    const result: SpeechRule[] = [];
+    for (const [, rules] of Object.entries(ruleSets)) {
+      rules.forEach((rule) => {
         if (rule.precondition.hasDisjunctive()) {
           result.push(rule);
-        }});
+        }
+      });
     }
     outputTrie(tempTrie(result), 'disjunctiveRules');
   }
@@ -98,50 +107,57 @@ namespace AnalyticsTrie {
    * @param comparator
    */
   export function compareRuleSets(
-    rules: MathStore[], comparator: Function = compareTries) {
-    let set1 = rules[0];
-    let set2 = rules[1];
+    rules: MathStore[],
+    comparator: Function = compareTries
+  ) {
+    const set1 = rules[0];
+    const set2 = rules[1];
     if (!(set1 && set2)) {
       return;
     }
-    let trie1 = trieFromStore(set1);
-    let trie2 = trieFromStore(set2);
+    const trie1 = trieFromStore(set1);
+    const trie2 = trieFromStore(set2);
     let trie = comparator(trie1, trie2);
-    for (let i = 2, nextSet; nextSet = rules[i]; i++) {
-      let nextTrie = trieFromStore(nextSet);
+    for (let i = 2, nextSet; (nextSet = rules[i]); i++) {
+      const nextTrie = trieFromStore(nextSet);
       trie = comparator(trie, nextTrie);
     }
     return trie;
   }
 
+  /**
+   * @param store
+   */
   function trieFromStore(store: MathStore) {
-    let trie = new Trie();
-    store.getSpeechRules().forEach(x => trie.addRule(x));
+    const trie = new Trie();
+    store.getSpeechRules().forEach((x) => trie.addRule(x));
     return trie;
   }
 
   /**
    * Compares constraints ignoring the locale.
+   *
    * @param trie1
    * @param trie2
    */
   export function compareTriesConstraints(trie1: Trie, trie2: Trie) {
-    let rules = trie2.collectRules();
-    let old = trie1.collectRules();
-    let locale = old.length ? old[0].dynamicCstr.getValues()[0] : '';
-    let result = [];
-    for (let rule of rules) {
-      let prec = rule.precondition;
-      let cstr2 = rule.dynamicCstr.getValues();
-      let cstr1 = cstr2.slice(1);
+    const rules = trie2.collectRules();
+    const old = trie1.collectRules();
+    const locale = old.length ? old[0].dynamicCstr.getValues()[0] : '';
+    const result = [];
+    for (const rule of rules) {
+      const prec = rule.precondition;
+      const cstr2 = rule.dynamicCstr.getValues();
+      const cstr1 = cstr2.slice(1);
       cstr1.unshift(locale);
-      let node = trie1.byConstraint(
-        cstr1.concat([prec.query], prec.constraints));
-      if (node && (node instanceof StaticTrieNode) && node.getRule()) {
+      const node = trie1.byConstraint(
+        cstr1.concat([prec.query], prec.constraints)
+      );
+      if (node && node instanceof StaticTrieNode && node.getRule()) {
         result.push(rule);
       }
     }
-    let tmp = tempTrie(result);
+    const tmp = tempTrie(result);
     return tmp;
   }
 
@@ -152,24 +168,29 @@ namespace AnalyticsTrie {
    * @param trie2
    */
   export function compareTries(trie1: Trie, trie2: Trie) {
-    let rules = trie2.collectRules();
-    let old = trie1.collectRules();
-    let locale = old.length ? old[0].dynamicCstr.getValues()[0] : '';
-    let result = [];
-    for (let rule of rules) {
-      let prec = rule.precondition;
-      let cstr2 = rule.dynamicCstr.getValues();
-      let cstr1 = cstr2.slice(1);
+    const rules = trie2.collectRules();
+    const old = trie1.collectRules();
+    const locale = old.length ? old[0].dynamicCstr.getValues()[0] : '';
+    const result = [];
+    for (const rule of rules) {
+      const prec = rule.precondition;
+      const cstr2 = rule.dynamicCstr.getValues();
+      const cstr1 = cstr2.slice(1);
       cstr1.unshift(locale);
-      let node = trie1.byConstraint(
-        cstr1.concat([prec.query], prec.constraints));
-      if (node && (node instanceof StaticTrieNode) && node.getRule() &&
+      const node = trie1.byConstraint(
+        cstr1.concat([prec.query], prec.constraints)
+      );
+      if (
+        node &&
+        node instanceof StaticTrieNode &&
+        node.getRule() &&
         node.getRule().action.toString() === rule.action.toString() &&
-        !rule.action.localizable()) {
+        !rule.action.localizable()
+      ) {
         result.push(rule);
       }
     }
-    let tmp = tempTrie(result);
+    const tmp = tempTrie(result);
     return tmp;
   }
 
@@ -180,23 +201,31 @@ namespace AnalyticsTrie {
    * @param style
    */
   export function compareTriesStyle(
-    trie1: Trie, trie2: Trie, style = 'default') {
-    let rules = Trie.collectRules_(trie2.singleStyle(style));
+    trie1: Trie,
+    trie2: Trie,
+    style = 'default'
+  ) {
+    const rules = Trie.collectRules_(trie2.singleStyle(style));
     let cstr1 = trie1.getSingletonDynamic_();
     cstr1.push(style);
     cstr1 = cstr1.slice(0, 4);
-    let result = [];
-    for (let rule of rules) {
-      let prec = rule.precondition;
-      let node = trie1.byConstraint(
-        cstr1.concat([prec.query], prec.constraints));
-      if (node && (node instanceof StaticTrieNode) && node.getRule() &&
+    const result = [];
+    for (const rule of rules) {
+      const prec = rule.precondition;
+      const node = trie1.byConstraint(
+        cstr1.concat([prec.query], prec.constraints)
+      );
+      if (
+        node &&
+        node instanceof StaticTrieNode &&
+        node.getRule() &&
         node.getRule().action.toString() === rule.action.toString() &&
-        !rule.action.localizable()) {
+        !rule.action.localizable()
+      ) {
         result.push(rule);
       }
     }
-    let tmp = tempTrie(result);
+    const tmp = tempTrie(result);
     return tmp;
   }
 
@@ -205,36 +234,40 @@ namespace AnalyticsTrie {
   /**
    * @param rules1
    * @param rules2
+   * @param set1
+   * @param set2
    */
   export function diffRuleSets(set1: MathStore, set2: MathStore): Trie {
     if (!(set1 && set2)) {
       return null;
     }
-    let trie = tempTrie([]);
-    let trie1 = trieFromStore(set1);
-    let trie2 = trieFromStore(set2);
+    const trie = tempTrie([]);
+    const trie1 = trieFromStore(set1);
+    const trie2 = trieFromStore(set2);
     let locale = set1.locale;
     let rules = set2.getSpeechRules();
-    for (let rule of rules) {
-      let prec = rule.precondition;
-      let cstr = rule.dynamicCstr.getValues();
+    for (const rule of rules) {
+      const prec = rule.precondition;
+      const cstr = rule.dynamicCstr.getValues();
       cstr.shift();
       cstr.unshift(locale);
-      let node = trie1.byConstraint(
-        cstr.concat([prec.query], prec.constraints));
+      const node = trie1.byConstraint(
+        cstr.concat([prec.query], prec.constraints)
+      );
       if (!node || !(node instanceof StaticTrieNode) || !node.getRule()) {
         trie.addRule(rule);
       }
     }
     locale = set2.locale;
     rules = set1.getSpeechRules();
-    for (let rule of rules) {
-      let prec = rule.precondition;
-      let cstr = rule.dynamicCstr.getValues();
+    for (const rule of rules) {
+      const prec = rule.precondition;
+      const cstr = rule.dynamicCstr.getValues();
       cstr.shift();
       cstr.unshift(locale);
-      let node = trie2.byConstraint(
-        cstr.concat([prec.query], prec.constraints));
+      const node = trie2.byConstraint(
+        cstr.concat([prec.query], prec.constraints)
+      );
       if (!node || !(node instanceof StaticTrieNode) || !node.getRule()) {
         trie.addRule(rule);
       }
@@ -242,57 +275,74 @@ namespace AnalyticsTrie {
     return trie;
   }
 
+  /**
+   * @param store
+   */
   function outputName(store: MathStore) {
-    return TestUtil.capitalize(store.locale) +
+    return (
+      TestUtil.capitalize(store.locale) +
       TestUtil.capitalize(store.modality) +
-      (store.domain === 'default' ? '' : TestUtil.capitalize(store.domain));
+      (store.domain === 'default' ? '' : TestUtil.capitalize(store.domain))
+    );
   }
-  
+
   /**
    *
    */
   export function output() {
     AnalyticsUtil.initAllSets();
-    let rules = allStores;
+    const rules = allStores;
     outputStats(allStores);
     // TODO: Divides these by modality and domain. O/w it makes little sense!
     outputTrie(compareRuleSets(rules), outputName(rules[0]));
-    outputTrie(compareRuleSets(rules, compareTriesConstraints),
-               outputName(rules[0]) + '-constr');
+    outputTrie(
+      compareRuleSets(rules, compareTriesConstraints),
+      outputName(rules[0]) + '-constr'
+    );
     disjunctiveRules();
   }
 
+  /**
+   * @param store
+   */
   function inheritedRules(store: MathStore) {
     let inherits = store.inherits;
-    let rules = new Map();
+    const rules = new Map();
     while (inherits) {
-      inherits.getSpeechRules().forEach(x => rules.set(x.name, true));
+      inherits.getSpeechRules().forEach((x) => rules.set(x.name, true));
       inherits = inherits.inherits;
     }
     return rules;
   }
 
+  /**
+   * @param stores
+   */
   function outputStats(stores: MathStore[]) {
-    for (let store of stores) {
+    for (const store of stores) {
       if (store.kind === 'abstract') continue;
-      let prec = store.getAllPreconditions();
-      let inherited = inheritedRules(store);
-      let rules = store.getSpeechRules();
-      let diff = rules.
-        filter(x => !(prec.get(x.name) || inherited.get(x.name))).
-        map(x => x.name);
-      let rest: string[] = [];
-      rules.forEach(x => prec.set(x.name, false));
+      const prec = store.getAllPreconditions();
+      const inherited = inheritedRules(store);
+      const rules = store.getSpeechRules();
+      const diff = rules
+        .filter((x) => !(prec.get(x.name) || inherited.get(x.name)))
+        .map((x) => x.name);
+      const rest: string[] = [];
+      rules.forEach((x) => prec.set(x.name, false));
       prec.forEach((value, key) => {
         if (value) {
           rest.push(key);
-        }});
-      console.log(`${outputName(store)}: ${Array.from(prec.keys()).length} ${rules.length}`);
+        }
+      });
+      console.log(
+        `${outputName(store)}: ${Array.from(prec.keys()).length} ${
+          rules.length
+        }`
+      );
       console.log(`  Extra Rules: ${diff}`);
       console.log(`  Extra Precs: ${rest}`);
     }
   }
-
 }
 
 export default AnalyticsTrie;

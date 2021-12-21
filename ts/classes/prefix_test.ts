@@ -15,22 +15,20 @@
 // limitations under the License.
 
 /**
- * @fileoverview Testcases for prefix speech generation in MathML enrichment.
- *
+ * @file Testcases for prefix speech generation in MathML enrichment.
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
 import * as System from '../../speech-rule-engine/js/common/system';
-import {Grammar} from '../../speech-rule-engine/js/rule_engine/grammar';
+import { Grammar } from '../../speech-rule-engine/js/rule_engine/grammar';
 import * as SpeechGeneratorUtil from '../../speech-rule-engine/js/speech_generator/speech_generator_util';
 import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
-import {SemanticNode} from '../../speech-rule-engine/js/semantic_tree/semantic_node';
+import { SemanticNode } from '../../speech-rule-engine/js/semantic_tree/semantic_node';
 import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
 
-import {SpeechTest} from './speech_test';
+import { SpeechTest } from './speech_test';
 
 export class PrefixTest extends SpeechTest {
-
   /**
    * @override
    */
@@ -64,16 +62,14 @@ export class PrefixTest extends SpeechTest {
    */
   public async setUpTest() {
     await super.setUpTest();
-    return System.setupEngine(
-      {markup: EngineConst.Markup.PUNCTUATION});
+    return System.setupEngine({ markup: EngineConst.Markup.PUNCTUATION });
   }
 
   /**
    * @override
    */
   public tearDownTest() {
-    System.setupEngine(
-      {markup: EngineConst.Markup.NONE});
+    System.setupEngine({ markup: EngineConst.Markup.NONE });
     super.tearDownTest();
   }
 
@@ -81,8 +77,8 @@ export class PrefixTest extends SpeechTest {
    * @override
    */
   public method() {
-    this.id = this.field('id') === undefined ? null :
-        parseInt(this.field('id'), 10);
+    this.id =
+      this.field('id') === undefined ? null : parseInt(this.field('id'), 10);
     if (this.field('grammar')) {
       Grammar.getInstance().setParameter(this.field('grammar'), true);
     }
@@ -94,11 +90,12 @@ export class PrefixTest extends SpeechTest {
    * @override
    */
   public getSpeech(mml: string) {
-    let stree = Semantic.getTreeFromString(mml);
-    let node = stree.root.querySelectorAll(
-      this.id === null ?
-        (x: SemanticNode) => x.attributes['extid'] === 'A' :
-        (x: SemanticNode) => x.id === this.id)[0];
+    const stree = Semantic.getTreeFromString(mml);
+    const node = stree.root.querySelectorAll(
+      this.id === null
+        ? (x: SemanticNode) => x.attributes['extid'] === 'A'
+        : (x: SemanticNode) => x.id === this.id
+    )[0];
     if (!node) {
       this.assert.fail();
       return '';
@@ -111,9 +108,14 @@ export class PrefixTest extends SpeechTest {
    * @override
    */
   public appendRuleExample(
-    input: string, output: string, style: string, ..._rest: string[]) {
-    let sub = this.subExpr ?
-      '<math>' + this.subExpr.toString() + '</math>' : '';
+    input: string,
+    output: string,
+    style: string,
+    ..._rest: string[]
+  ) {
+    const sub = this.subExpr
+      ? '<math>' + this.subExpr.toString() + '</math>'
+      : '';
     super.appendRuleExample(input, output, style, sub);
   }
 }

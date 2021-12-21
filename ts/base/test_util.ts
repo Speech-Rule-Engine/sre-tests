@@ -12,16 +12,16 @@
 // limitations under the License.
 
 /**
- * @fileoverview Utillities for tests.
+ * @file Utillities for tests.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
 import * as fs from 'fs';
 import * as path from 'path';
 
-let TestDir = __dirname.replace(/(dist|js\/base)$/, '');
+const TestDir = __dirname.replace(/(dist|js\/base)$/, '');
 
-export const TestPath: {[key: string]: string} = {
+export const TestPath: { [key: string]: string } = {
   INPUT: TestDir + 'input/',
   OUTPUT: TestDir + 'output/',
   EXPECTED: TestDir + 'expected/',
@@ -35,7 +35,6 @@ export const TestPath: {[key: string]: string} = {
  * @param value Additional values.
  */
 export class TestError extends Error {
-
   /**
    * @override
    */
@@ -59,7 +58,7 @@ export interface JsonTest {
   expected?: string | string[];
 }
 
-export declare type JsonTests = {[name: string]: JsonTest};
+export declare type JsonTests = { [name: string]: JsonTest };
 
 export interface JsonFile {
   [propName: string]: any;
@@ -71,17 +70,15 @@ export interface JsonFile {
 }
 
 export namespace TestUtil {
-
   /**
    * Loads and parses a JSON file.
    *
    * @param file The filename.
-   * @return The parsed JSON object.
+   * @returns The parsed JSON object.
    */
   export function loadJson(file: string): JsonFile {
     try {
-      return (
-        JSON.parse(fs.readFileSync(file).toString()) as JsonFile);
+      return JSON.parse(fs.readFileSync(file).toString()) as JsonFile;
     } catch (e) {
       throw new TestError('Bad filename or content', file);
     }
@@ -93,8 +90,8 @@ export namespace TestUtil {
    * @param file The filename.
    */
   export function makeDir(file: string) {
-    let dir = path.dirname(file);
-    fs.mkdirSync(dir, {recursive: true});
+    const dir = path.dirname(file);
+    fs.mkdirSync(dir, { recursive: true });
   }
 
   /**
@@ -113,7 +110,7 @@ export namespace TestUtil {
    *
    * @param file The filename.
    * @param opt_path An optional path name.
-   * @return The actual filename with full path.
+   * @returns The actual filename with full path.
    */
   export function fileExists(file: string, opt_path?: string): string {
     if (fs.existsSync(file)) {
@@ -122,7 +119,7 @@ export namespace TestUtil {
     if (opt_path && fs.existsSync(opt_path + file)) {
       return opt_path + file;
     }
-    let newFile = TestDir + file;
+    const newFile = TestDir + file;
     if (fs.existsSync(newFile)) {
       return newFile;
     }
@@ -141,18 +138,21 @@ export namespace TestUtil {
    * @param expected A association list of test specifications with expected
    *     values.
    * @param exclude A list of tests to be excluded.
-   * @return Done.
+   * @returns Done.
    */
-  export function combineTests(input: JsonTests, expected: JsonTests | 'ALL',
-    exclude: string[]): [JsonTest[], string[]] {
-    let warn = [];
-    let results = [];
+  export function combineTests(
+    input: JsonTests,
+    expected: JsonTests | 'ALL',
+    exclude: string[]
+  ): [JsonTest[], string[]] {
+    const warn = [];
+    const results = [];
     if (expected === 'ALL') {
-      for (let key of Object.keys(input)) {
+      for (const key of Object.keys(input)) {
         if (key.match(/^_/) || exclude.indexOf(key) !== -1) {
           continue;
         }
-        let json = input[key];
+        const json = input[key];
         if (typeof json.test === 'undefined') {
           json.test = true;
         }
@@ -161,13 +161,13 @@ export namespace TestUtil {
       }
       return [results, []];
     }
-    for (let key of Object.keys(input)) {
+    for (const key of Object.keys(input)) {
       if (key.match(/^_/) || exclude.indexOf(key) !== -1) {
         delete expected[key];
         continue;
       }
-      let json = input[key];
-      let exp = expected[key];
+      const json = input[key];
+      const exp = expected[key];
       if (typeof json.test === 'undefined') {
         json.test = true;
       }
@@ -179,11 +179,11 @@ export namespace TestUtil {
       results.push(Object.assign(json, exp));
       delete expected[key];
     }
-    for (let key of Object.keys((expected as Object))) {
+    for (const key of Object.keys(expected as Object)) {
       if (key.match(/^_/)) {
         continue;
       }
-      let json = expected[key];
+      const json = expected[key];
       if (typeof json.test === 'undefined') {
         json.test = true;
       }
@@ -197,7 +197,7 @@ export namespace TestUtil {
    * Capitalizes the input string.
    *
    * @param str The input string.
-   * @return The capitalized string.
+   * @returns The capitalized string.
    */
   export function capitalize(str: string): string {
     return str.charAt(0).toUpperCase() + str.slice(1);
@@ -214,9 +214,10 @@ export namespace TestUtil {
       return;
     }
     if (fs.existsSync(dir) && fs.lstatSync(dir).isDirectory()) {
-      let files = fs.readdirSync(dir);
-      files.forEach(
-        (x: string) => readDir_(dir ? path.join(dir, x) : x, result));
+      const files = fs.readdirSync(dir);
+      files.forEach((x: string) =>
+        readDir_(dir ? path.join(dir, x) : x, result)
+      );
       return;
     }
     if (dir.match(/\.json$/)) {
@@ -228,10 +229,10 @@ export namespace TestUtil {
    * Recursively find all files with .json extension under the given path.
    *
    * @param dir The top pathname.
-   * @return List of all filenames.
+   * @returns List of all filenames.
    */
   export function readDir(dir: string): string[] {
-    let result: string[] = [];
+    const result: string[] = [];
     let file = TestPath.EXPECTED + dir;
     if (!fs.existsSync(file) || !fs.lstatSync(file).isDirectory()) {
       file = dir;
@@ -242,13 +243,13 @@ export namespace TestUtil {
 
   /**
    * Cleans a list of filenames by removing expected path.
+   *
    * @param {string[]} files The files.
    * @param {string = ''} dir The optional additional path.
-   * @return {string[]} The cleaned up list.
+   * @returns {string[]} The cleaned up list.
    */
-  export function cleanFiles(files: string[], dir: string = ''): string[] {
-    let regexp = new RegExp(`^${TestPath.EXPECTED}` + (dir ? `${dir}/` : ''));
-    return files.map(x => x.replace(regexp, ''));
+  export function cleanFiles(files: string[], dir = ''): string[] {
+    const regexp = new RegExp(`^${TestPath.EXPECTED}` + (dir ? `${dir}/` : ''));
+    return files.map((x) => x.replace(regexp, ''));
   }
-
 }

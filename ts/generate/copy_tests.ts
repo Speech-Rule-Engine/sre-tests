@@ -13,15 +13,20 @@
 // limitations under the License.
 
 /**
- * @fileoverview Methods for copying and transforming test files.
- *
+ * @file Methods for copying and transforming test files.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
 import * as path from 'path';
-import {JsonFile, JsonTest, JsonTests, TestPath, TestUtil} from '../base/test_util';
-import {get as factoryget} from '../classes/test_factory';
-import {addMissing} from './fill_tests';
+import {
+  JsonFile,
+  JsonTest,
+  JsonTests,
+  TestPath,
+  TestUtil
+} from '../base/test_util';
+import { get as factoryget } from '../classes/test_factory';
+import { addMissing } from './fill_tests';
 
 /**
  * Copies and adapts a single test file from one locale to another.
@@ -31,11 +36,18 @@ import {addMissing} from './fill_tests';
  * @param loc1 Source locale string (e.g., "English").
  * @param loc2 Destination locale string (e.g., "Italian").
  */
-export function copyTestLocale(source: string, locale: string,
-  loc1: string, loc2: string) {
-  let tests = factoryget(source);
-  let dst = path.join(
-    TestPath.EXPECTED, locale, ...source.split('/').slice(-2));
+export function copyTestLocale(
+  source: string,
+  locale: string,
+  loc1: string,
+  loc2: string
+) {
+  const tests = factoryget(source);
+  const dst = path.join(
+    TestPath.EXPECTED,
+    locale,
+    ...source.split('/').slice(-2)
+  );
   delete tests.jsonTests.tests;
   tests.jsonTests.locale = locale;
   replaceInTests(tests.jsonTests, 'name', loc1, loc2);
@@ -55,10 +67,14 @@ export function copyTestLocale(source: string, locale: string,
  * @param loc1 Source locale string (e.g., "English").
  * @param loc2 Destination locale string (e.g., "Italian").
  */
-export function copyTestLocaleDir(source: string, locale: string,
-  loc1: string, loc2: string) {
-  let files = TestUtil.readDir(source);
-  for (let file of files) {
+export function copyTestLocaleDir(
+  source: string,
+  locale: string,
+  loc1: string,
+  loc2: string
+) {
+  const files = TestUtil.readDir(source);
+  for (const file of files) {
     copyTestLocale(file, locale, loc1, loc2);
   }
 }
@@ -72,7 +88,11 @@ export function copyTestLocaleDir(source: string, locale: string,
  * @param {string} by By what it should be replaced.
  */
 function replaceInTests(
-  tests: JsonFile, key: string, what: string, by: string) {
+  tests: JsonFile,
+  key: string,
+  what: string,
+  by: string
+) {
   if (tests[key]) {
     tests[key] = tests[key].replace(what, by);
   }
@@ -89,10 +109,12 @@ function replaceInTests(
  * @param {string} loc2 Second locale.
  */
 export function localeDifference(loc1: string, loc2: string) {
-  let tests1 = localeToBlocks(
-    TestUtil.cleanFiles(TestUtil.readDir(loc1), loc1));
-  let tests2 = localeToBlocks(
-    TestUtil.cleanFiles(TestUtil.readDir(loc2), loc2));
+  const tests1 = localeToBlocks(
+    TestUtil.cleanFiles(TestUtil.readDir(loc1), loc1)
+  );
+  const tests2 = localeToBlocks(
+    TestUtil.cleanFiles(TestUtil.readDir(loc2), loc2)
+  );
   console.info(`Missing ${loc1}:`);
   outputDifference(tests2, tests1);
   console.info(`Missing ${loc2}:`);
@@ -105,16 +127,18 @@ export function localeDifference(loc1: string, loc2: string) {
  * @param {{[name: string]: string[]}} tests1 Test files for locale 1.
  * @param {{[name: string]: string[]}} tests2 Test files for locale 2.
  */
-function outputDifference(tests1: {[name: string]: string[]},
-                          tests2: {[name: string]: string[]}) {
-  for (let block of Object.keys(tests1)) {
-    let block2 = tests2[block];
+function outputDifference(
+  tests1: { [name: string]: string[] },
+  tests2: { [name: string]: string[] }
+) {
+  for (const block of Object.keys(tests1)) {
+    const block2 = tests2[block];
     console.info(`Block ${block}:`);
     if (!block2) {
       console.info(tests1[block]);
       continue;
     }
-    console.info(tests1[block].filter(x => !block2.includes(x)));
+    console.info(tests1[block].filter((x) => !block2.includes(x)));
   }
 }
 
@@ -125,11 +149,11 @@ function outputDifference(tests1: {[name: string]: string[]},
  * @param {string[]} files The list of all files.
  */
 function localeToBlocks(files: string[]) {
-  let result: {[name: string]: string[]} = {};
-  for (let path of files) {
-    let match = path.match(/^(\w*)\/(.*)/);
-    let block = match[1];
-    let file = match[2];
+  const result: { [name: string]: string[] } = {};
+  for (const path of files) {
+    const match = path.match(/^(\w*)\/(.*)/);
+    const block = match[1];
+    const file = match[2];
     if (result[block]) {
       result[block].push(file);
     } else {
@@ -145,41 +169,48 @@ function localeToBlocks(files: string[]) {
  */
 /* ********************************************************* */
 
+/**
+ * @param loc
+ * @param exclude
+ */
 export function showNonExpected(loc: string, exclude: string[] = []) {
-  let nonExpected = getNonExpected(loc, exclude);
-  let [missing, same, different] = siftNonExpected(nonExpected);
+  const nonExpected = getNonExpected(loc, exclude);
+  const [missing, same, different] = siftNonExpected(nonExpected);
   console.info('Missing');
-  for (let [file, key, value] of missing) {
+  for (const [file, key, value] of missing) {
     console.info(`${file} ${key}:`);
     console.info(value);
   }
   console.info('Same');
-  for (let [file, key, value, base] of same) {
+  for (const [file, key, value, base] of same) {
     console.info(`${file} ${key}:`);
     console.info(value);
     console.info(base);
   }
   console.info('Different');
-  for (let [file, key, value, base] of different) {
+  for (const [file, key, value, base] of different) {
     console.info(`${file} ${key}:`);
     console.info(value);
     console.info(base);
   }
 }
 
+/**
+ * @param nonExpected
+ */
 function siftNonExpected(nonExpected: [string, string, JsonTest][]) {
-  let missing: [string, string, JsonTest][] = [];
-  let same: [string, string, JsonTest, JsonTest][] = [];
-  let different: [string, string, JsonTest, JsonTest][] = [];
-  for (let [file, key, value] of nonExpected) {
-    let json = factoryget(file);
+  const missing: [string, string, JsonTest][] = [];
+  const same: [string, string, JsonTest, JsonTest][] = [];
+  const different: [string, string, JsonTest, JsonTest][] = [];
+  for (const [file, key, value] of nonExpected) {
+    const json = factoryget(file);
     json.loadBase();
-    let base = json.baseTests.tests as JsonTests;
+    const base = json.baseTests.tests as JsonTests;
     if (!base) {
       missing.push([file, key, value]);
       continue;
     }
-    let baseTest = base[key];
+    const baseTest = base[key];
     if (typeof baseTest === 'undefined') {
       missing.push([file, key, value]);
       continue;
@@ -193,16 +224,22 @@ function siftNonExpected(nonExpected: [string, string, JsonTest][]) {
   return [missing, same, different];
 }
 
+/**
+ * @param loc
+ * @param exclude
+ */
 function getNonExpected(
-  loc: string, exclude: string[] = []): [string, string, JsonTest][] {
-  let result: [string, string, JsonTest][] = [];
-  let tests = TestUtil.cleanFiles(TestUtil.readDir(loc));
-  for (let test of tests) {
-    let json = factoryget(test);
+  loc: string,
+  exclude: string[] = []
+): [string, string, JsonTest][] {
+  const result: [string, string, JsonTest][] = [];
+  const tests = TestUtil.cleanFiles(TestUtil.readDir(loc));
+  for (const test of tests) {
+    const json = factoryget(test);
     if (exclude.indexOf(json.jsonTests.factory) !== -1) {
       continue;
     }
-    for (let [key, entry] of Object.entries(json.jsonTests.tests)) {
+    for (const [key, entry] of Object.entries(json.jsonTests.tests)) {
       if (key.match(/_comment/)) {
         continue;
       }
@@ -215,12 +252,15 @@ function getNonExpected(
   return result;
 }
 
+/**
+ * @param entry
+ */
 function cleanEntry(entry: JsonTest) {
   delete entry.expected;
   delete entry.test;
-  Object.keys(entry).
-    filter(key => key.match(/_comment/)).
-    forEach(x => delete entry[x]);
+  Object.keys(entry)
+    .filter((key) => key.match(/_comment/))
+    .forEach((x) => delete entry[x]);
 }
 
 /* ********************************************************* */
@@ -240,38 +280,64 @@ function cleanEntry(entry: JsonTest) {
  */
 /* ********************************************************* */
 
+/**
+ * @param base
+ */
 export function copySemanticTest(base: string) {
-  let filename = TestUtil.fileExists(base, TestPath.INPUT);
+  const filename = TestUtil.fileExists(base, TestPath.INPUT);
   if (!filename) {
     return;
   }
-  let json = TestUtil.loadJson(filename);
-  let info = json.information || '';
-  let basename = path.basename(base);
-  let dirname = path.dirname(base);
-  createSemanticTestFile(dirname, 'semantic_tree', basename, info,
-                         {factory: 'stree'});
-  createSemanticTestFile(dirname, 'enrich_mathml', basename, info,
-                         {factory: 'enrichMathml', active: 'EnrichExamples'});
-  createSemanticTestFile(dirname, 'enrich_speech', basename, info,
-                         {factory: 'enrichSpeech', tests: 'ALL'});
-  createSemanticTestFile(dirname, 'rebuild_stree', basename, info,
-                         {factory: 'rebuild', tests: 'ALL'});
-  createSemanticTestFile(dirname, 'semantic_xml', basename, info,
-                         {factory: 'semanticXml', tests: 'ALL'});
-  createSemanticTestFile(dirname, 'semantic_api', basename, info,
-                         {factory: 'semanticApi', tests: 'ALL'});
+  const json = TestUtil.loadJson(filename);
+  const info = json.information || '';
+  const basename = path.basename(base);
+  const dirname = path.dirname(base);
+  createSemanticTestFile(dirname, 'semantic_tree', basename, info, {
+    factory: 'stree'
+  });
+  createSemanticTestFile(dirname, 'enrich_mathml', basename, info, {
+    factory: 'enrichMathml',
+    active: 'EnrichExamples'
+  });
+  createSemanticTestFile(dirname, 'enrich_speech', basename, info, {
+    factory: 'enrichSpeech',
+    tests: 'ALL'
+  });
+  createSemanticTestFile(dirname, 'rebuild_stree', basename, info, {
+    factory: 'rebuild',
+    tests: 'ALL'
+  });
+  createSemanticTestFile(dirname, 'semantic_xml', basename, info, {
+    factory: 'semanticXml',
+    tests: 'ALL'
+  });
+  createSemanticTestFile(dirname, 'semantic_api', basename, info, {
+    factory: 'semanticApi',
+    tests: 'ALL'
+  });
 }
 
-function createSemanticTestFile(dir: string, kind: string, base: string,
-                                info: string, init: JsonFile) {
-  let filename = path.join(dir, kind, base);
-  let file = TestUtil.fileExists(filename, TestPath.EXPECTED);
+/**
+ * @param dir
+ * @param kind
+ * @param base
+ * @param info
+ * @param init
+ */
+function createSemanticTestFile(
+  dir: string,
+  kind: string,
+  base: string,
+  info: string,
+  init: JsonFile
+) {
+  const filename = path.join(dir, kind, base);
+  const file = TestUtil.fileExists(filename, TestPath.EXPECTED);
   if (file) {
     console.error(`File ${file} already exists.`);
     return;
   }
-  let baseinfo = TestUtil.capitalize(kind).split('_');
+  const baseinfo = TestUtil.capitalize(kind).split('_');
   if (info) {
     baseinfo.push(info);
   } else {
@@ -279,7 +345,7 @@ function createSemanticTestFile(dir: string, kind: string, base: string,
     baseinfo.push('tests.');
   }
   init.information = baseinfo.join(' ');
-  let basefile = path.join('input', dir, base);
+  const basefile = path.join('input', dir, base);
   init.base = basefile;
   if (!init.tests) {
     init.tests = {};

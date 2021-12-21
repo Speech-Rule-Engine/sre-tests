@@ -1,4 +1,3 @@
-
 declare const firebase: any;
 
 /**
@@ -22,4 +21,3 @@ export function getStorage(key: string) {
 export function setStorage(key: string, value: string) {
   localStorage.setItem(key, value);
 }
-

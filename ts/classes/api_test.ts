@@ -15,26 +15,30 @@
 // limitations under the License.
 
 /**
- * @fileoverview Tests of API functions.
- *
+ * @file Tests of API functions.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
 import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
 import * as System from '../../speech-rule-engine/js/common/system';
-import { annotators, visitors } from '../../speech-rule-engine/js/semantic_tree/semantic_annotations';
-import {Key} from './keycodes';
+import {
+  annotators,
+  visitors
+} from '../../speech-rule-engine/js/semantic_tree/semantic_annotations';
+import { Key } from './keycodes';
 
-import {AbstractJsonTest} from './abstract_test';
+import { AbstractJsonTest } from './abstract_test';
 
 export class ApiTest extends AbstractJsonTest {
-
   /**
    * Feature vector for setting up the engine.
    */
-  public static SETUP: {[key: string]: string} = {
-    locale: 'en', domain: 'mathspeak', style: 'default',
-    modality: 'speech', speech: EngineConst.Speech.NONE
+  public static SETUP: { [key: string]: string } = {
+    locale: 'en',
+    domain: 'mathspeak',
+    style: 'default',
+    modality: 'speech',
+    speech: EngineConst.Speech.NONE
   };
 
   /**
@@ -51,8 +55,7 @@ export class ApiTest extends AbstractJsonTest {
   /**
    * @override
    */
-  public pickFields = ['type', 'input', 'expected',
-                       'setup', 'json', 'move'];
+  public pickFields = ['type', 'input', 'expected', 'setup', 'json', 'move'];
 
   /**
    * @override
@@ -68,7 +71,7 @@ export class ApiTest extends AbstractJsonTest {
    *
    * @param feature The feature vector for the engine.
    */
-  public setupEngine(feature: {[key: string]: string}) {
+  public setupEngine(feature: { [key: string]: string }) {
     System.setupEngine(feature || ApiTest.SETUP);
   }
 
@@ -82,15 +85,23 @@ export class ApiTest extends AbstractJsonTest {
    * @param json Json output expected?
    * @param move Is this a move with some keyboard input?
    */
-  public executeTest(func: string, expr: any, result: string | null,
-                     feature: {[key: string]: string},
-                     json: boolean, move: boolean) {
+  public executeTest(
+    func: string,
+    expr: any,
+    result: string | null,
+    feature: { [key: string]: string },
+    json: boolean,
+    move: boolean
+  ) {
     this.setupEngine(feature);
     // TODO (TS): This is an enum and does not work!
     expr = move ? Key.get(expr) : expr || ApiTest.QUADRATIC;
     let output = (System as any)[func](expr);
-    output = output ?
-      (json ? JSON.stringify(output) : output.toString()) : output;
+    output = output
+      ? json
+        ? JSON.stringify(output)
+        : output.toString()
+      : output;
     this.assert.equal(output, result);
   }
 
@@ -99,10 +110,14 @@ export class ApiTest extends AbstractJsonTest {
    */
   public method() {
     this.executeTest(
-      this.field('type'), this.field('input'), this.field('expected'),
-      this.field('setup'), this.field('json'), this.field('move'));
+      this.field('type'),
+      this.field('input'),
+      this.field('expected'),
+      this.field('setup'),
+      this.field('json'),
+      this.field('move')
+    );
   }
-
 }
 
 ApiTest.QUADRATIC =

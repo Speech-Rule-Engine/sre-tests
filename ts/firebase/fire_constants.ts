@@ -13,9 +13,8 @@
 // limitations under the License.
 
 /**
- * @fileoverview Constans for firebse functionality in case we want to change
+ * @file Constans for firebse functionality in case we want to change
  *     names.
- *
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
@@ -28,11 +27,18 @@ export const NemethCollection = 'nemeth';
 export const TestsCollection = 'tests';
 
 export const enum Status {
-  NEW, VIEWED, CHANGED
+  NEW,
+  VIEWED,
+  CHANGED
 }
 
 export const enum Feedback {
-  CORRECT, UNKNOWN, LAYOUT, DISCUSSION, SEMANTIC, PRINT
+  CORRECT,
+  UNKNOWN,
+  LAYOUT,
+  DISCUSSION,
+  SEMANTIC,
+  PRINT
 }
 
 export const Interaction = 'InteractionStatus';

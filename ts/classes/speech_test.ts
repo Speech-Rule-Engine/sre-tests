@@ -12,20 +12,22 @@
 // limitations under the License.
 
 /**
- * @fileoverview Testcases for ChromeVox's speech rules.
+ * @file Testcases for ChromeVox's speech rules.
  *     Abstract superclass that provides facilities to parameterize the speech
  *     rule engine and to execute rule tests on math expressions.
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
 import * as System from '../../speech-rule-engine/js/common/system';
-import {Axis, DynamicCstr} from '../../speech-rule-engine/js/rule_engine/dynamic_cstr';
+import {
+  Axis,
+  DynamicCstr
+} from '../../speech-rule-engine/js/rule_engine/dynamic_cstr';
 
-import {TestUtil} from '../base/test_util';
-import {AbstractExamples} from './abstract_examples';
+import { TestUtil } from '../base/test_util';
+import { AbstractExamples } from './abstract_examples';
 
 export class SpeechTest extends AbstractExamples {
-
   /**
    * The speech style of the tests.
    */
@@ -50,18 +52,18 @@ export class SpeechTest extends AbstractExamples {
    * Flag indicating if the actual output should be written to the HTML example
    * file, rather than the expected output.
    */
-  public actual: boolean = false;
+  public actual = false;
 
   /**
    * Flag indicating if English output should be generate for comparison.
    */
-  public compare: boolean = false;
+  public compare = false;
 
   /**
    * Wraps an entry into an HTML cell.
    *
    * @param entries A list of entries.
-   * @return The HTML cell.
+   * @returns The HTML cell.
    */
   public static htmlRow(entries: (number | string)[]): string {
     return entries.map(SpeechTest.htmlCell_).join('');
@@ -71,12 +73,14 @@ export class SpeechTest extends AbstractExamples {
    * Maps a style name to its English equivalent and does some pretty printing.
    *
    * @param style The style name.
-   * @return The prettier name.
+   * @returns The prettier name.
    */
   private static styleMap_(style: string): string {
-    let map: {[key: string]: string} = {'default': 'verbose',
-                                        'sbrief': 'superbrief'};
-    let newStyle = map[style] || style;
+    const map: { [key: string]: string } = {
+      default: 'verbose',
+      sbrief: 'superbrief'
+    };
+    const newStyle = map[style] || style;
     return TestUtil.capitalize(newStyle);
   }
 
@@ -84,7 +88,7 @@ export class SpeechTest extends AbstractExamples {
    * Wraps an entry into an HTML cell.
    *
    * @param entry A single entry.
-   * @return The HTML cell.
+   * @returns The HTML cell.
    */
   private static htmlCell_(entry: number | string): string {
     return '<td>' + entry + '</td>';
@@ -103,8 +107,11 @@ export class SpeechTest extends AbstractExamples {
    */
   public async setUpTest() {
     await super.setUpTest();
-    return System.setupEngine(
-      {domain: this.domain, modality: this.modality, locale: this.locale});
+    return System.setupEngine({
+      domain: this.domain,
+      modality: this.modality,
+      locale: this.locale
+    });
   }
 
   /**
@@ -123,16 +130,18 @@ export class SpeechTest extends AbstractExamples {
    * @param answer Expected speech translation of MathML expression.
    * @param opt_style Mathspeak style for translation.
    */
-  public executeTest(mml: string, answer: string,
-                     opt_style?: string) {
-    let style = opt_style || this.style;
-    let mathMl = '<math xmlns="http://www.w3.org/1998/Math/MathML">' +
-      mml + '</math>';
-    System.setupEngine(
-      {domain: this.domain, style: style,
-       modality: this.modality, locale: this.locale});
-    let actual = this.getSpeech(mathMl);
-    let expected = this.actual ? actual : answer;
+  public executeTest(mml: string, answer: string, opt_style?: string) {
+    const style = opt_style || this.style;
+    const mathMl =
+      '<math xmlns="http://www.w3.org/1998/Math/MathML">' + mml + '</math>';
+    System.setupEngine({
+      domain: this.domain,
+      style: style,
+      modality: this.modality,
+      locale: this.locale
+    });
+    const actual = this.getSpeech(mathMl);
+    const expected = this.actual ? actual : answer;
     this.appendRuleExample(mathMl, expected, style);
     this.assert.equal(actual, expected);
   }
@@ -141,7 +150,7 @@ export class SpeechTest extends AbstractExamples {
    * Retrieves the speech for a MathML element.
    *
    * @param mathMl The element to transcribe.
-   * @return The resulting speech.
+   * @returns The resulting speech.
    */
   public getSpeech(mathMl: string): string {
     return System.toSpeech(mathMl);
@@ -157,23 +166,35 @@ export class SpeechTest extends AbstractExamples {
    * @param {...any} rest
    */
   public appendRuleExample(
-    input: string, output: string, style: string, ...rest: string[]) {
-    let id = this.information.replace(/\s|\./g, '_') + '_' +
-      this.locale + '_' + style;
-    let key = '<h2 id="' + id + '">' + this.information +
-      ' Locale: ' + this.locale + ', Style: ' +
+    input: string,
+    output: string,
+    style: string,
+    ...rest: string[]
+  ) {
+    const id =
+      this.information.replace(/\s|\./g, '_') + '_' + this.locale + '_' + style;
+    const key =
+      '<h2 id="' +
+      id +
+      '">' +
+      this.information +
+      ' Locale: ' +
+      this.locale +
+      ', Style: ' +
       SpeechTest.htmlCell_(SpeechTest.styleMap_(style)) +
       '.</h2>';
-    let outList = [input];
+    const outList = [input];
     if (this.compare) {
-      System.setupEngine(
-        {domain: this.domain, style: style,  locale: 'en',
-         modality: (this.modality === 'braille') ? 'speech' : this.modality});
+      System.setupEngine({
+        domain: this.domain,
+        style: style,
+        locale: 'en',
+        modality: this.modality === 'braille' ? 'speech' : this.modality
+      });
       outList.push(this.getSpeech(input));
     }
     outList.push(output);
-    this.appendExamples(
-      key, SpeechTest.htmlRow(outList.concat(rest)));
+    this.appendExamples(key, SpeechTest.htmlRow(outList.concat(rest)));
   }
 
   /**
@@ -181,9 +202,7 @@ export class SpeechTest extends AbstractExamples {
    */
   public join(examples: string[]) {
     for (let i = 0, l = examples.length; i < l; i++) {
-      examples[i] = '<tr>' +
-        SpeechTest.htmlCell_(i) + examples[i] +
-        '</tr>';
+      examples[i] = '<tr>' + SpeechTest.htmlCell_(i) + examples[i] + '</tr>';
     }
     return '\n<table>\n' + examples.join('\n') + '\n</table>\n';
   }
@@ -192,19 +211,25 @@ export class SpeechTest extends AbstractExamples {
    * @override
    */
   public header() {
-    let mathjax =
+    const mathjax =
       '<script src="https://polyfill.io/v3/polyfill.min.js?features=es6">' +
       '</script>\n<script id="MathJax-script" async ' +
       'src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">' +
       '</script>';
-    let style = '\n<style>\n table, th, td {\n' +
+    const style =
+      '\n<style>\n table, th, td {\n' +
       '  border: 1px solid black; }\n</style>\n';
-    return '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">' +
+    return (
+      '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">' +
       '<html> <head>\n' +
       '<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n' +
       mathjax +
-      '\n<title>' + this.information + '</title>\n' + style +
-      '\n</head>\n<body>\n';
+      '\n<title>' +
+      this.information +
+      '</title>\n' +
+      style +
+      '\n</head>\n<body>\n'
+    );
   }
 
   /**
@@ -235,6 +260,9 @@ export class SpeechTest extends AbstractExamples {
    */
   public method() {
     this.executeTest(
-      this.field('input'), this.field('expected'), this.field('preference'));
+      this.field('input'),
+      this.field('expected'),
+      this.field('preference')
+    );
   }
 }
