@@ -10,418 +10,418 @@
   "tests": {
     "_comment1_": " Fractions",
     "Frac001": {
-      "expected": "one half"
+        "expected": "2 분의 1"
     },
     "Frac002": {
-      "expected": "12 over 32"
+        "expected": "32 분의 12"
     },
     "Frac002a": {
-      "expected": "x over y"
+        "expected": "y 분의 x"
     },
     "Frac002b": {
-      "expected": "2 x over 3 y"
+        "expected": "3 y, 분의 2 x"
     },
     "Frac002c": {
-      "expected": "x y over c d"
+        "expected": "c d, 분의 x y"
     },
     "Frac002d": {
-      "expected": "one half over one third"
+        "expected": "3 분의 1 분의 2 분의 1"
     },
     "Frac002e": {
-      "expected": "negative x over y"
+        "expected": "y 분의 마이너스 x"
     },
     "Frac002f": {
-      "expected": "negative 2 x over 3 y"
+        "expected": "3 y, 분의 마이너스 2 x"
     },
     "Frac002g": {
-      "expected": "x y over negative c d"
+        "expected": "마이너스 c d, 분의 x y"
     },
     "Frac002h": {
-      "expected": "one half over negative one third"
+        "expected": "마이너스 3 분의 1 분의 2 분의 1"
     },
     "Frac003": {
-      "expected": "the fraction with numerator 2 plus 3, and denominator 13"
+        "expected": "분모가 13, 이고 분자가 2 더하기 3, 인 분수"
     },
     "Frac004": {
-      "expected": "the fraction with numerator x plus y, and denominator 2"
+        "expected": "분모가 2, 이고 분자가 x 더하기 y, 인 분수"
     },
     "Frac005": {
-      "expected": "the fraction with numerator x plus y, and denominator x minus y"
+        "expected": "분모가 x 빼기 y, 이고 분자가 x 더하기 y, 인 분수"
     },
     "Frac006": {
-      "expected": "the fraction with numerator x plus y, and denominator x minus y, plus two thirds"
+        "expected": "분모가 x 빼기 y, 이고 분자가 x 더하기 y, 인 분수 더하기 3 분의 2"
     },
     "Frac007": {
-      "expected": "miles over gallon"
+        "expected": "gallon 분의 miles"
     },
     "Frac008": {
-      "expected": "2 miles over 3 gallons"
+        "expected": "3 gallons 분의 2 miles"
     },
     "Frac009": {
-      "expected": "1 over 2"
+        "expected": "2 분의 1"
     },
     "Frac010": {
-      "expected": "12 over 32"
+        "expected": "32 분의 12"
     },
     "Frac011": {
-      "expected": "2 plus 3 over 13"
+        "expected": "13 분의 2 더하기 3"
     },
     "Frac012": {
-      "expected": "x plus y over 2"
+        "expected": "2 분의 x 더하기 y"
     },
     "Frac013": {
-      "expected": "x plus y over x minus y"
+        "expected": "x 빼기 y 분의 x 더하기 y"
     },
     "Frac014": {
-      "expected": "x plus y over x minus y, plus, 2 over 3"
+        "expected": "x 빼기 y 분의 x 더하기 y, 더하기, 3 분의 2"
     },
     "Frac015": {
-      "expected": "miles over gallon"
+        "expected": "gallon 분의 miles"
     },
     "Frac016": {
-      "expected": "2 miles over 3 gallons"
+        "expected": "3 gallons 분의 2 miles"
     },
     "Frac017": {
-      "expected": "1 over 2, end fraction"
+        "expected": "2 분의 1, 분수끝"
     },
     "Frac018": {
-      "expected": "12 over 32, end fraction"
+        "expected": "32 분의 12, 분수끝"
     },
     "Frac019": {
-      "expected": "2 plus 3 over 13, end fraction"
+        "expected": "13 분의 2 더하기 3, 분수끝"
     },
     "Frac020": {
-      "expected": "x plus y over 2, end fraction"
+        "expected": "2 분의 x 더하기 y, 분수끝"
     },
     "Frac021": {
-      "expected": "x plus y over x minus y, end fraction"
+        "expected": "x 빼기 y 분의 x 더하기 y, 분수끝"
     },
     "Frac022": {
-      "expected": "x plus y over x minus y, end fraction, plus, 2 over 3, end fraction"
+        "expected": "x 빼기 y 분의 x 더하기 y, 분수끝, 더하기, 3 분의 2, 분수끝"
     },
     "Frac023": {
-      "expected": "miles over gallons, end fraction"
+        "expected": "gallons 분의 miles, 분수끝"
     },
     "Frac024": {
-      "expected": "2 miles over 3 gallons, end fraction"
+        "expected": "3 gallons 분의 2 miles, 분수끝"
     },
     "Frac025": {
-      "expected": "the fraction with numerator 1, and denominator 2, end fraction"
+        "expected": "분수시작, 분모가 2, 이고 분자가 1, 인 분수끝"
     },
     "Frac026": {
-      "expected": "the fraction with numerator 12, and denominator 32, end fraction"
+        "expected": "분수시작, 분모가 32, 이고 분자가 12, 인 분수끝"
     },
     "Frac027": {
-      "expected": "the fraction with numerator 2 plus 3, and denominator 13, end fraction"
+        "expected": "분수시작, 분모가 13, 이고 분자가 2 더하기 3, 인 분수끝"
     },
     "Frac028": {
-      "expected": "the fraction with numerator x plus y, and denominator 2, end fraction"
+        "expected": "분수시작, 분모가 2, 이고 분자가 x 더하기 y, 인 분수끝"
     },
     "Frac029": {
-      "expected": "the fraction with numerator x plus y, and denominator x minus y, end fraction"
+        "expected": "분수시작, 분모가 x 빼기 y, 이고 분자가 x 더하기 y, 인 분수끝"
     },
     "Frac030": {
-      "expected": "the fraction with numerator x plus y, and denominator x minus y, end fraction, plus, the fraction with numerator 2, and denominator 3, end fraction"
+        "expected": "분수시작, 분모가 x 빼기 y, 이고 분자가 x 더하기 y, 인 분수끝, 더하기, 분수시작, 분모가 3, 이고 분자가 2, 인 분수끝"
     },
     "Frac031": {
-      "expected": "the fraction with numerator miles, and denominator gallon, end fraction"
+        "expected": "분수시작, 분모가 gallon, 이고 분자가 miles, 인 분수끝"
     },
     "Frac032": {
-      "expected": "the fraction with numerator 1, and denominator 2"
+        "expected": "분모가 2, 이고 분자가 1, 인 분수"
     },
     "Frac033": {
-      "expected": "the fraction with numerator 12, and denominator 32"
+        "expected": "분모가 32, 이고 분자가 12, 인 분수"
     },
     "Frac034": {
-      "expected": "the fraction with numerator 2 plus 3, and denominator 13"
+        "expected": "분모가 13, 이고 분자가 2 더하기 3, 인 분수"
     },
     "Frac035": {
-      "expected": "the fraction with numerator x plus y, and denominator 2"
+        "expected": "분모가 2, 이고 분자가 x 더하기 y, 인 분수"
     },
     "Frac036": {
-      "expected": "the fraction with numerator x plus y, and denominator x minus y"
+        "expected": "분모가 x 빼기 y, 이고 분자가 x 더하기 y, 인 분수"
     },
     "Frac037": {
-      "expected": "the fraction with numerator x plus y, and denominator x minus y, plus, the fraction with numerator 2, and denominator 3"
+        "expected": "분모가 x 빼기 y, 이고 분자가 x 더하기 y, 인 분수, 더하기, 분모가 3, 이고 분자가 2, 인 분수"
     },
     "Frac038": {
-      "expected": "the fraction with numerator miles, and denominator gallon"
+        "expected": "분모가 gallon, 이고 분자가 miles, 인 분수"
     },
     "Frac039": {
-      "expected": "the fraction with numerator 2 miles, and denominator 3 gallons"
+        "expected": "분모가 3 gallons, 이고 분자가 2 miles, 인 분수"
     },
     "Frac040": {
-      "expected": "the fraction 1 over 2"
+        "expected": "분수 2 분의 1"
     },
     "Frac041": {
-      "expected": "the fraction 12 over 32"
+        "expected": "분수 32 분의 12"
     },
     "Frac042": {
-      "expected": "the fraction 2 plus 3 over 13"
+        "expected": "분수 13 분의 2 더하기 3"
     },
     "Frac043": {
-      "expected": "the fraction x plus y over 2"
+        "expected": "분수 2 분의 x 더하기 y"
     },
     "Frac044": {
-      "expected": "the fraction x plus y over x minus y"
+        "expected": "분수 x 빼기 y 분의 x 더하기 y"
     },
     "Frac045": {
-      "expected": "the fraction x plus y over x minus y, plus, the fraction 2 over 3"
+        "expected": "분수 x 빼기 y 분의 x 더하기 y, 더하기, 분수 3 분의 2"
     },
     "Frac046": {
-      "expected": "the fraction miles over gallon"
+        "expected": "분수 gallon 분의 miles"
     },
     "Frac047": {
-      "expected": "the fraction 2 miles over 3 gallons"
+        "expected": "분수 3 gallons 분의 2 miles"
     },
     "Frac048": {
-      "expected": "1 per 2"
+        "expected": "1 퍼 2"
     },
     "Frac049": {
-      "expected": "12 per 32"
+        "expected": "12 퍼 32"
     },
     "Frac050": {
-      "expected": "2 plus 3 per 13"
+        "expected": "2 더하기 3 퍼 13"
     },
     "Frac051": {
-      "expected": "x plus y per 2"
+        "expected": "x 더하기 y 퍼 2"
     },
     "Frac052": {
-      "expected": "x plus y per x minus y"
+        "expected": "x 더하기 y 퍼 x 빼기 y"
     },
     "Frac053": {
-      "expected": "x plus y per x minus y, plus, 2 per 3"
+        "expected": "x 더하기 y 퍼 x 빼기 y, 더하기, 2 퍼 3"
     },
     "Frac054": {
-      "expected": "miles per gallon"
+        "expected": "miles 퍼 gallon"
     },
     "Frac055": {
-      "expected": "2 miles per 3 gallons"
+        "expected": "2 miles 퍼 3 gallons"
     },
     "Frac056": {
-      "expected": "one half"
+        "expected": "2 분의 1"
     },
     "Frac057": {
-      "expected": "twelve thirty seconds"
+        "expected": "32 분의 12"
     },
     "Frac058": {
-      "expected": "the fraction with numerator 2 plus 3, and denominator 13"
+        "expected": "분모가 13, 이고 분자가 2 더하기 3, 인 분수"
     },
     "Frac059": {
-      "expected": "the fraction with numerator x plus y, and denominator 2"
+        "expected": "분모가 2, 이고 분자가 x 더하기 y, 인 분수"
     },
     "Frac060": {
-      "expected": "the fraction with numerator x plus y, and denominator x minus y"
+        "expected": "분모가 x 빼기 y, 이고 분자가 x 더하기 y, 인 분수"
     },
     "Frac061": {
-      "expected": "the fraction with numerator x plus y, and denominator x minus y, plus two thirds"
+        "expected": "분모가 x 빼기 y, 이고 분자가 x 더하기 y, 인 분수 더하기 3 분의 2"
     },
     "Frac062": {
-      "expected": "miles over gallon"
+        "expected": "gallon 분의 miles"
     },
     "Frac063": {
-      "expected": "2 miles over 3 gallons"
+        "expected": "3 gallons 분의 2 miles"
     },
     "Frac064": {
-      "expected": "one half"
+        "expected": "2 분의 1"
     },
     "Frac065": {
-      "expected": "12 over 32, end fraction"
+        "expected": "32 분의 12, 분수끝"
     },
     "Frac066": {
-      "expected": "the fraction with numerator 2 plus 3, and denominator 13, end fraction"
+        "expected": "분모가 13, 이고 분자가 2 더하기 3, 인 분수 분수끝"
     },
     "Frac067": {
-      "expected": "the fraction with numerator x plus y, and denominator 2, end fraction"
+        "expected": "분모가 2, 이고 분자가 x 더하기 y, 인 분수 분수끝"
     },
     "Frac068": {
-      "expected": "the fraction with numerator x plus y, and denominator x minus y, end fraction"
+        "expected": "분모가 x 빼기 y, 이고 분자가 x 더하기 y, 인 분수 분수끝"
     },
     "Frac069": {
-      "expected": "the fraction with numerator x plus y, and denominator x minus y, end fraction, plus two thirds"
+        "expected": "분모가 x 빼기 y, 이고 분자가 x 더하기 y, 인 분수 분수끝, 더하기 3 분의 2"
     },
     "Frac070": {
-      "expected": "miles over gallons"
+        "expected": "gallons 분의 miles"
     },
     "Frac071": {
-      "expected": "2 miles over 3 gallons"
+        "expected": "3 gallons 분의 2 miles"
     },
     "_comment2_": " Fraction (with Text in Numerator and/or denominator)",
     "FrTxt001": {
-      "expected": "2 miles over 3 gallons"
+        "expected": "3 gallons 분의 2 miles"
     },
     "FrTxt002": {
-      "expected": "rise over run"
+        "expected": "run 분의 rise"
     },
     "FrTxt003": {
-      "expected": "successful outcomes over total outcomes"
+        "expected": "total outcomes 분의 successful outcomes"
     },
     "FrTxt004": {
-      "expected": "6 ways of rolling a 7 over 36 ways of rolling the pair of dice"
+        "expected": "36 ways of rolling the pair of dice 분의 6 ways of rolling a 7"
     },
     "_comment3_": " Nested Fractions",
     "NestFrac001": {
-      "expected": "one half over one third"
+        "expected": "3 분의 1 분의 2 분의 1"
     },
     "NestFrac002": {
-      "expected": "the fraction with numerator 1, and denominator, 2 over one third"
+        "expected": "분모가, 3 분의 1 분의 2, 이고 분자가 1, 인 분수"
     },
     "NestFrac003": {
-      "expected": "one half over 3"
+        "expected": "3 분의 2 분의 1"
     },
     "NestFrac004": {
-      "expected": "1 over two thirds"
+        "expected": "3 분의 2 분의 1"
     },
     "NestFrac005": {
-      "expected": "the fraction with numerator, 11 over 32, and denominator, 16 over 51"
+        "expected": "분모가, 51 분의 16, 이고 분자가, 32 분의 11, 인 분수"
     },
     "NestFrac006": {
-      "expected": "the fraction with numerator 11, and denominator, the fraction with numerator 32, and denominator, 16 over 51"
+        "expected": "분모가, 분모가, 51 분의 16, 이고 분자가 32, 인 분수, 이고 분자가 11, 인 분수"
     },
     "NestFrac007": {
-      "expected": "the fraction with numerator 1 plus, 4 over x, and denominator 2"
+        "expected": "분모가 2, 이고 분자가 1 더하기, x 분의 4, 인 분수"
     },
     "NestFrac008": {
-      "expected": "the fraction with numerator 3, and denominator 2 plus, 4 over x"
+        "expected": "분모가 2 더하기, x 분의 4, 이고 분자가 3, 인 분수"
     },
     "NestFrac009": {
-      "expected": "the fraction with numerator, 10 over 22, and denominator one half"
+        "expected": "분모가 2 분의 1, 이고 분자가, 22 분의 10, 인 분수"
     },
     "NestFrac010": {
-      "expected": "the fraction with numerator 1 plus two thirds, and denominator 1 minus two thirds"
+        "expected": "분모가 1 빼기 3 분의 2, 이고 분자가 1 더하기 3 분의 2, 인 분수"
     },
     "NestFrac011": {
-      "expected": "the fraction with numerator 1 plus, x over 2, and denominator 1 minus, x over 2"
+        "expected": "분모가 1 빼기, 2 분의 x, 이고 분자가 1 더하기, 2 분의 x, 인 분수"
     },
     "NestFrac012": {
-      "expected": "the fraction with numerator, the fraction with numerator x plus 1, and denominator x minus 1, plus 1, and denominator x plus 1"
+        "expected": "분모가 x 더하기 1, 이고 분자가, 분모가 x 빼기 1, 이고 분자가 x 더하기 1, 인 분수 더하기 1, 인 분수"
     },
     "NestFrac013": {
-      "expected": "the fraction with numerator, the fraction with numerator x plus 1, and denominator x minus 4, plus one half, and denominator x plus, 1 over 16"
+        "expected": "분모가 x 더하기, 16 분의 1, 이고 분자가, 분모가 x 빼기 4, 이고 분자가 x 더하기 1, 인 분수 더하기 2 분의 1, 인 분수"
     },
     "NestFrac014": {
-      "expected": "1 plus, the fraction with numerator x, and denominator 1 plus, 2 over x"
+        "expected": "1 더하기, 분모가 1 더하기, x 분의 2, 이고 분자가 x, 인 분수"
     },
     "NestFrac015": {
-      "expected": "1 plus, the fraction with numerator x plus 3, and denominator 1 plus, the fraction with numerator 2, and denominator x plus 3"
+        "expected": "1 더하기, 분모가 1 더하기, 분모가 x 더하기 3, 이고 분자가 2, 인 분수, 이고 분자가 x 더하기 3, 인 분수"
     },
     "NestFrac016": {
-      "expected": "1 plus, the fraction with numerator 1, and denominator 1 plus, the fraction with numerator 1, and denominator 1 plus, the fraction with numerator 1, and denominator 1 plus 1"
+        "expected": "1 더하기, 분모가 1 더하기, 분모가 1 더하기, 분모가 1 더하기 1, 이고 분자가 1, 인 분수, 이고 분자가 1, 인 분수, 이고 분자가 1, 인 분수"
     },
     "NestFrac017": {
-      "expected": "1 plus, the fraction with numerator 1, and denominator 1 plus, the fraction with numerator 1, and denominator 1 plus, the fraction with numerator 1, and denominator 1 plus dot dot dot"
+        "expected": "1 더하기, 분모가 1 더하기, 분모가 1 더하기, 분모가 1 더하기 점 점 점, 이고 분자가 1, 인 분수, 이고 분자가 1, 인 분수, 이고 분자가 1, 인 분수"
     },
     "NestFrac018": {
-      "expected": "a sub 0, plus, the fraction with numerator 1, and denominator, a sub 1, plus, the fraction with numerator 1, and denominator, a sub 2, plus, the fraction with numerator 1, and denominator, a sub 3, plus dot dot dot"
+        "expected": "a 아래첨자 0, 더하기, 분모가, a 아래첨자 1, 더하기, 분모가, a 아래첨자 2, 더하기, 분모가, a 아래첨자 3, 더하기 점 점 점, 이고 분자가 1, 인 분수, 이고 분자가 1, 인 분수, 이고 분자가 1, 인 분수"
     },
     "NestFrac019": {
-      "expected": "one half over one third"
+        "expected": "3 분의 1 분의 2 분의 1"
     },
     "NestFrac020": {
-      "expected": "the fraction with numerator 1, and denominator, 2 over one third, end fraction"
+        "expected": "분모가, 3 분의 1 분의 2, 이고 분자가 1, 인 분수 분수끝"
     },
     "NestFrac021": {
-      "expected": "one half over 3, end fraction"
+        "expected": "3 분의 2 분의 1, 분수끝"
     },
     "NestFrac022": {
-      "expected": "1 over two thirds, end fraction"
+        "expected": "3 분의 2 분의 1, 분수끝"
     },
     "NestFrac023": {
-      "expected": "the fraction with numerator, 11 over 32, and denominator, 16 over 51, end fraction"
+        "expected": "분모가, 51 분의 16, 이고 분자가, 32 분의 11, 인 분수 분수끝"
     },
     "NestFrac024": {
-      "expected": "the fraction with numerator 11, and denominator, the fraction with numerator 32, and denominator, 16 over 51, end fraction"
+        "expected": "분모가, 분모가, 51 분의 16, 이고 분자가 32, 인 분수, 이고 분자가 11, 인 분수 분수끝"
     },
     "NestFrac025": {
-      "expected": "the fraction with numerator 1 plus, 4 over x, and denominator 2, end fraction"
+        "expected": "분모가 2, 이고 분자가 1 더하기, x 분의 4, 인 분수 분수끝"
     },
     "NestFrac026": {
-      "expected": "the fraction with numerator 3, and denominator 2 plus, 4 over x, end fraction"
+        "expected": "분모가 2 더하기, x 분의 4, 이고 분자가 3, 인 분수 분수끝"
     },
     "NestFrac027": {
-      "expected": "the fraction with numerator, 10 over 22, and denominator one half, end fraction"
+        "expected": "분모가 2 분의 1, 이고 분자가, 22 분의 10, 인 분수 분수끝"
     },
     "NestFrac028": {
-      "expected": "the fraction with numerator 1 plus two thirds, and denominator 1 minus two thirds, end fraction"
+        "expected": "분모가 1 빼기 3 분의 2, 이고 분자가 1 더하기 3 분의 2, 인 분수 분수끝"
     },
     "NestFrac029": {
-      "expected": "the fraction with numerator 1 plus, x over 2, and denominator 1 minus, x over 2, end fraction"
+        "expected": "분모가 1 빼기, 2 분의 x, 이고 분자가 1 더하기, 2 분의 x, 인 분수 분수끝"
     },
     "NestFrac030": {
-      "expected": "the fraction with numerator, the fraction with numerator x plus 1, and denominator x minus 1, plus 1, and denominator x plus 1, end fraction"
+        "expected": "분모가 x 더하기 1, 이고 분자가, 분모가 x 빼기 1, 이고 분자가 x 더하기 1, 인 분수 더하기 1, 인 분수 분수끝"
     },
     "NestFrac031": {
-      "expected": "the fraction with numerator, the fraction with numerator x plus 1, and denominator x minus 4, plus one half, and denominator x plus, 1 over 16, end fraction"
+        "expected": "분모가 x 더하기, 16 분의 1, 이고 분자가, 분모가 x 빼기 4, 이고 분자가 x 더하기 1, 인 분수 더하기 2 분의 1, 인 분수 분수끝"
     },
     "NestFrac032": {
-      "expected": "1 plus, the fraction with numerator x, and denominator 1 plus, 2 over x, end fraction"
+        "expected": "1 더하기, 분모가 1 더하기, x 분의 2, 이고 분자가 x, 인 분수 분수끝"
     },
     "NestFrac033": {
-      "expected": "1 plus, the fraction with numerator x plus 3, and denominator 1 plus, the fraction with numerator 2, and denominator x plus 3, end fraction"
+        "expected": "1 더하기, 분모가 1 더하기, 분모가 x 더하기 3, 이고 분자가 2, 인 분수, 이고 분자가 x 더하기 3, 인 분수 분수끝"
     },
     "NestFrac034": {
-      "expected": "1 plus, the fraction with numerator 1, and denominator 1 plus, the fraction with numerator 1, and denominator 1 plus, the fraction with numerator 1, and denominator 1 plus 1, end fraction"
+        "expected": "1 더하기, 분모가 1 더하기, 분모가 1 더하기, 분모가 1 더하기 1, 이고 분자가 1, 인 분수, 이고 분자가 1, 인 분수, 이고 분자가 1, 인 분수 분수끝"
     },
     "NestFrac035": {
-      "expected": "1 plus, the fraction with numerator 1, and denominator 1 plus, the fraction with numerator 1, and denominator 1 plus, the fraction with numerator 1, and denominator 1 plus dot dot dot, end fraction"
+        "expected": "1 더하기, 분모가 1 더하기, 분모가 1 더하기, 분모가 1 더하기 점 점 점, 이고 분자가 1, 인 분수, 이고 분자가 1, 인 분수, 이고 분자가 1, 인 분수 분수끝"
     },
     "NestFrac036": {
-      "expected": "a sub 0, plus, the fraction with numerator 1, and denominator, a sub 1, plus, the fraction with numerator 1, and denominator, a sub 2, plus, the fraction with numerator 1, and denominator, a sub 3, plus dot dot dot, end fraction"
+        "expected": "a 아래첨자 0, 더하기, 분모가, a 아래첨자 1, 더하기, 분모가, a 아래첨자 2, 더하기, 분모가, a 아래첨자 3, 더하기 점 점 점, 이고 분자가 1, 인 분수, 이고 분자가 1, 인 분수, 이고 분자가 1, 인 분수 분수끝"
     },
     "_comment4_": " Fractions with Functions",
     "Fracfunct001": {
-      "expected": "f of x, over g of x"
+        "expected": "g 의 x, 분의 f 의 x"
     },
     "Fracfunct002": {
-      "expected": "the fraction with numerator f of x, plus g of x, and denominator g of x"
+        "expected": "분모가 g 의 x, 이고 분자가 f 의 x, 더하기 g 의 x, 인 분수"
     },
     "Fracfunct003": {
-      "expected": "the fraction with numerator f of, open paren, x plus 1, close paren, and denominator g of x"
+        "expected": "분모가 g 의 x, 이고 분자가 f 의, 괄호 열고, x 더하기 1, 괄호 닫고, 인 분수"
     },
     "Fracfunct004": {
-      "expected": "f of x, over 2"
+        "expected": "2 분의 f 의 x"
     },
     "Fracfunct005": {
-      "expected": "2 over f of x"
+        "expected": "f 의 x, 분의 2"
     },
     "Fracfunct006": {
-      "expected": "the fraction with numerator 2, and denominator g of x, plus g of, open paren, x plus 1, close paren"
+        "expected": "분모가 g 의 x, 더하기 g 의, 괄호 열고, x 더하기 1, 괄호 닫고, 이고 분자가 2, 인 분수"
     },
     "Fracfunct007": {
-      "expected": "sine x over cosine x"
+        "expected": "코싸인 x 분의 싸인 x"
     },
     "Fracfunct008": {
       "expected": "sine, open paren, x plus y, close paren, over, cosine, open paren, x plus y, close paren"
     },
     "Fracfunct009": {
-      "expected": "the fraction with numerator sine x plus cosine x, and denominator cosine x"
+        "expected": "분모가 코싸인 x, 이고 분자가 싸인 x 더하기 코싸인 x, 인 분수"
     },
     "Fracfunct010": {
-      "expected": "sine 2 x over cosine 3 x"
+        "expected": "코싸인 3 x, 분의 싸인 2 x"
     },
     "Fracfunct011": {
-      "expected": "the fraction with numerator, the sine of, open paren, x plus y, close paren, and denominator, the cosine of, open paren, x plus y, close paren"
+        "expected": "분모가, 코싸인 의, 괄호 열고, x 더하기 y, 괄호 닫고, 이고 분자가, 싸인 의, 괄호 열고, x 더하기 y, 괄호 닫고, 인 분수"
     },
     "Fracfunct012": {
-      "expected": "f of 2 x, over g of 3 x"
+        "expected": "g 의 3 x, 분의 f 의 2 x"
     },
     "Fracfunct013": {
-      "expected": "log x over log y"
+        "expected": "로그 y 분의 로그 x"
     },
     "Fracfunct014": {
-      "expected": "log 2 x over log 3 y"
+        "expected": "로그 3 y, 분의 로그 2 x"
     },
     "Fracfunct015": {
-      "expected": "the log base 10 of, x, over, the log base 5 of, y"
+        "expected": "밑이 5 인 로그 의, y, 분의, 밑이 10 인 로그 의, x"
     },
     "Fracfunct016": {
-      "expected": "the log base 10 of, 2 x, over, the log base 5 of, 3 y"
+        "expected": "밑이 5 인 로그 의, 3 y, 분의, 밑이 10 인 로그 의, 2 x"
     },
     "Fracfunct017": {
-      "expected": "the fraction with numerator, the log of, open paren, x plus 1, close paren, and denominator log y"
+        "expected": "분모가 로그 y, 이고 분자가, 로그 의, 괄호 열고, x 더하기 1, 괄호 닫고, 인 분수"
     },
     "Fracfunct018": {
-      "expected": "f sub 1, of x, over, g sub 1, of x"
+        "expected": "g 아래첨자 1, 의 x, 분의, f 아래첨자 1, 의 x"
     }
   }
 }
