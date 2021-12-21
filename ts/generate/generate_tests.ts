@@ -77,7 +77,7 @@ export function transformInput(
   json: tu.JsonTest,
   field = 'input'
 ): tu.JsonTests {
-  const result: { [name: string]: {} } = {};
+  const result: { [name: string]: any } = {};
   for (const [name, expressions] of Object.entries(json)) {
     let count = 0;
     if (!expressions.length) {
@@ -601,8 +601,6 @@ abstract class AbstractGenerator {
    * Cleans tests by removing duplicates and collating references.
    */
   public collate() {
-    console.log(this.basename);
-    console.log(Object.keys(this.tests).length);
     const stree = new Map();
     const result: tu.JsonTests = {};
     for (const [name, test] of Object.entries(this.tests)) {
@@ -615,7 +613,6 @@ abstract class AbstractGenerator {
       this.collateTest(result[streeId], test);
     }
     this.tests = result;
-    console.log(Object.keys(this.tests).length);
   }
 
   /**
@@ -765,7 +762,6 @@ export function fromIssueFiles(dir: string, file: string, target: string) {
     (f) => f.match(new RegExp(file + '.*$')) && !f.match(/.*~$/)
   );
   for (file of files) {
-    console.log(file);
     const name = path.basename(file).match(/(^.+)\./)[1] || file;
     const xml = DomUtil.parseInput(
       fs.readFileSync(path.join(dir, file), { encoding: 'utf-8' })
@@ -847,7 +843,7 @@ export class TexlistGenerator extends PublisherGenerator {
     const json = tu.TestUtil.loadJson(this.file) as string[];
     let count = 0;
     for (let test of json) {
-      if (test.match(/\&(lt|gt|amp|nbsp);/g)) {
+      if (test.match(/&(lt|gt|amp|nbsp);/g)) {
         test = test
           .replace(/&nbsp;/g, ' ')
           .replace(/&gt;/g, '>')

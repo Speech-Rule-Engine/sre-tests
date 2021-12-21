@@ -56,24 +56,24 @@ SpeechRuleEngine.prototype.lookupRules = function (node: any, dynamic: any) {
   return rules;
 };
 
-namespace AnalyticsTest {
-  export let currentTest = '';
-  export let currentTestcase = '';
-  export const deep = false;
+class AnalyticsTest {
+  public static currentTest = '';
+  public static currentTestcase = '';
+  public static deep = false;
 
-  export const appliedRule: Map<string, SpeechRule[]> = new Map();
-  export const applicableRules: Map<string, SpeechRule[][]> = new Map();
+  public static appliedRule: Map<string, SpeechRule[]> = new Map();
+  public static applicableRules: Map<string, SpeechRule[][]> = new Map();
 
   /**
    * Records a rule applied while a running a test case.
    *
    * @param rule The applied rule.
    */
-  export function addAppliedRule(rule: SpeechRule) {
-    let cases = appliedRule.get(currentTestcase);
+  public static addAppliedRule(rule: SpeechRule) {
+    let cases = AnalyticsTest.appliedRule.get(AnalyticsTest.currentTestcase);
     if (!cases) {
       cases = [];
-      appliedRule.set(currentTestcase, cases);
+      AnalyticsTest.appliedRule.set(AnalyticsTest.currentTestcase, cases);
     }
     cases.push(rule);
   }
@@ -83,11 +83,11 @@ namespace AnalyticsTest {
    *
    * @param rules The list of applicable rules.
    */
-  export function addApplicableRules(rules: SpeechRule[]) {
-    let cases = applicableRules.get(currentTestcase);
+  public static addApplicableRules(rules: SpeechRule[]) {
+    let cases = AnalyticsTest.applicableRules.get(AnalyticsTest.currentTestcase);
     if (!cases) {
       cases = [];
-      applicableRules.set(currentTestcase, cases);
+      AnalyticsTest.applicableRules.set(AnalyticsTest.currentTestcase, cases);
     }
     cases.push(rules);
   }
@@ -95,13 +95,13 @@ namespace AnalyticsTest {
   /**
    * Generate all output files.
    */
-  export function output() {
-    if (!deep) {
+  public static output() {
+    if (!AnalyticsTest.deep) {
       return;
     }
-    outputAppliedRules();
-    outputApplicableRules();
-    outputUniqueAppliedRules();
+    AnalyticsTest.outputAppliedRules();
+    AnalyticsTest.outputApplicableRules();
+    AnalyticsTest.outputUniqueAppliedRules();
   }
 
   // This works now as all rule sets are loaded.
@@ -110,32 +110,32 @@ namespace AnalyticsTest {
    * difference between those and the list of unique rules actually applied
    * during tests.
    */
-  export function outputAllRules() {
-    loadAllAppliedRules();
+  public static outputAllRules() {
+    AnalyticsTest.loadAllAppliedRules();
     const ruleSets = AnalyticsUtil.getAllSets();
     for (const [name, obj] of Object.entries(ruleSets)) {
       const rules = obj.map((x: SpeechRule) => x.toString());
       AnalyticsUtil.fileJson('allRules', rules.sort(), name);
-      allRulesDifference(rules, name);
+      AnalyticsTest.allRulesDifference(rules, name);
     }
   }
 
-  let allAppliedRules: string[] = [];
-  const uniqueAppliedRules: Map<string, boolean> = new Map();
+  private static allAppliedRules: string[] = [];
+  private static uniqueAppliedRules: Map<string, boolean> = new Map();
 
   /**
    * Loads the list of all uniquely applied rules.
    */
-  function loadAllAppliedRules() {
+  private static loadAllAppliedRules() {
     const path = TestPath.ANALYSIS + '/uniqueAppliedRules/';
     const files = fs.readdirSync(path);
     files.forEach((file) => {
-      allAppliedRules = allAppliedRules.concat(
+      AnalyticsTest.allAppliedRules = AnalyticsTest.allAppliedRules.concat(
         TestUtil.loadJson(path + file) as string[]
       );
     });
-    allAppliedRules = AnalyticsUtil.removeDuplicates(allAppliedRules);
-    allAppliedRules.forEach((x) => uniqueAppliedRules.set(x, true));
+    AnalyticsTest.allAppliedRules = AnalyticsUtil.removeDuplicates(AnalyticsTest.allAppliedRules);
+    AnalyticsTest.allAppliedRules.forEach((x) => AnalyticsTest.uniqueAppliedRules.set(x, true));
   }
 
   /**
@@ -145,10 +145,10 @@ namespace AnalyticsTest {
    * @param rules The list of rules in the set.
    * @param name The name of the rule set.
    */
-  function allRulesDifference(rules: string[], name: string) {
+  private static allRulesDifference(rules: string[], name: string) {
     const diff = [];
     for (const rule of rules) {
-      if (!uniqueAppliedRules.get(rule)) {
+      if (!AnalyticsTest.uniqueAppliedRules.get(rule)) {
         diff.push(rule);
       }
     }
@@ -159,11 +159,11 @@ namespace AnalyticsTest {
    * Outputs a list of all applied rules for each test of the current test
    * suite.
    */
-  export function outputAppliedRules() {
+  public static outputAppliedRules() {
     const jsonObj: { [name: string]: string[] } = {};
-    for (const [key, value] of appliedRule.entries()) {
+    for (const [key, value] of AnalyticsTest.appliedRule.entries()) {
       jsonObj[key] = value.map((x) => x.toString());
-      AnalyticsUtil.fileJson('appliedRules', jsonObj, currentTest);
+      AnalyticsUtil.fileJson('appliedRules', jsonObj, AnalyticsTest.currentTest);
     }
   }
 
@@ -171,29 +171,29 @@ namespace AnalyticsTest {
    * Outputs lists of lists of all applicable rules for each test of the current
    * test suite.
    */
-  export function outputApplicableRules() {
+  public static outputApplicableRules() {
     const jsonObj: { [name: string]: string[][] } = {};
-    for (const [key, value] of applicableRules.entries()) {
+    for (const [key, value] of AnalyticsTest.applicableRules.entries()) {
       jsonObj[key] = value
         .filter((x) => x.length)
         .map((x) => x.map((y) => y.toString()));
     }
-    AnalyticsUtil.fileJson('applicableRules', jsonObj, currentTest);
+    AnalyticsUtil.fileJson('applicableRules', jsonObj, AnalyticsTest.currentTest);
   }
 
   /**
    * Outputs the unique applied rules for each test suite.
    */
-  export function outputUniqueAppliedRules() {
+  public static outputUniqueAppliedRules() {
     let rules: SpeechRule[] = [];
-    for (const value of appliedRule.values()) {
+    for (const value of AnalyticsTest.appliedRule.values()) {
       rules = rules.concat(value);
     }
     rules = AnalyticsUtil.removeDuplicates(rules);
     AnalyticsUtil.fileJson(
       'uniqueAppliedRules',
       rules.map((x) => x.toString()),
-      currentTest
+      AnalyticsTest.currentTest
     );
   }
 }
