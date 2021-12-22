@@ -8,34 +8,34 @@
   "exclude": [],
   "tests": {
     "ApplSimple_0": {
-        "expected": "f 의, g 의 x"
+      "expected": "f 의, g 의 x"
     },
     "ApplSimple_1": {
-        "expected": "f 의, g 의 x, 는 f 의 x, 더하기 g 의 x"
+      "expected": "f 의, g 의 x, 는 f 의 x, 더하기 g 의 x"
     },
     "BinaryOperationPause_0": {
-        "expected": "싸인 x y"
+      "expected": "싸인 x y"
     },
     "Empty_Line_0": {
-        "expected": "총 줄 수 2,  1행: a.  2행: 빈 칸"
+      "expected": "총 줄 수 2,  1행: a.  2행: 빈 칸"
     },
     "Empty_Line_1": {
-        "expected": "총 줄 수 2,  1행: a.  2행: 빈 칸"
+      "expected": "총 줄 수 2,  1행: a.  2행: 빈 칸"
     },
     "Empty_Line_2": {
-        "expected": "총 줄 수 2,  1행: a.  2행: 빈 칸"
+      "expected": "총 줄 수 2,  1행: a.  2행: 빈 칸"
     },
     "Empty_Cell_0": {
-        "expected": "총 줄 수 2,  1행: a; 같다; b"
+      "expected": "총 줄 수 2,  1행: a; 같다; b"
     },
     "Empty_Cell_1": {
-        "expected": "총 줄 수 2,  1행: a; 같다; b.  2행: 빈 칸"
+      "expected": "총 줄 수 2,  1행: a; 같다; b.  2행: 빈 칸"
     },
     "Empty_Cell_2": {
-        "expected": "총 줄 수 2,  1행: a; 같다; b.  2행: 빈 칸"
+      "expected": "총 줄 수 2,  1행: a; 같다; b.  2행: 빈 칸"
     },
     "Empty_Cell_3": {
-        "expected": "총 줄 수 2,  1행: a; 같다; b.  2행: 1; 빈 칸; 2"
+      "expected": "총 줄 수 2,  1행: a; 같다; b.  2행: 1; 빈 칸; 2"
     },
     "Angle_0_default": {
       "expected": "45 도, 10 분, 20 초"

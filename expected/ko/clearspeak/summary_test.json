@@ -34,7 +34,7 @@
     },
     "AbstrFunction_default": {
       "_comment1_": " var input = '<mi>sin</mi><mi>x</mi>';",
-      "expected": "functional expression"
+      "expected": "함수"
     },
     "AbstrIdentifier_default": {
       "expected": "변수"
@@ -49,7 +49,7 @@
       "expected": "리미트"
     },
     "AbstrLine_default": {
-      "expected": "1st Row in multiple lines"
+      "expected": "첫번째 행 이 다음과 같은 연립"
     },
     "AbstrMatrix_default": {
       "expected": "3 행 2 열의 행렬"
@@ -82,7 +82,7 @@
       "expected": "세제곱근 중첩루트"
     },
     "AbstrRow_default": {
-      "expected": "1st Row in table with 2 columns"
+      "expected": "첫번째 행 이 다음과 같은 2 열의 표"
     },
     "AbstrRowvector_default": {
       "expected": "2 차원 행 벡터"
