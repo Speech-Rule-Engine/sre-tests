@@ -2,9 +2,10 @@
   "locale": "nb",
   "factory": "number",
   "base": "input/common/numbers.json",
-  "information": "Bokmal Number word tests.",
+  "information": "Bokmal Germanic-style Number word tests.",
   "kind": "numberToWords",
   "active": "NumbersBokmal",
+  "subiso": "alt",
   "compare": true,
   "tests": {
     "Number_0": {
@@ -71,619 +72,465 @@
       "expected": "tjue"
     },
     "Number_21": {
-      "test": false,
-      "expected": "enogtjue"
+      "expected": "tjueen"
     },
     "Number_22": {
-      "test": false,
-      "expected": "toogtjue"
+      "expected": "tjueto"
     },
     "Number_23": {
-      "test": false,
-      "expected": "treogtjue"
+      "expected": "tjuetre"
     },
     "Number_24": {
-      "test": false,
-      "expected": "fireogtjue"
+      "expected": "tjuefire"
     },
     "Number_25": {
-      "test": false,
-      "expected": "femogtjue"
+      "expected": "tjuefem"
     },
     "Number_26": {
-      "test": false,
-      "expected": "seksogtjue"
+      "expected": "tjueseks"
     },
     "Number_27": {
-      "test": false,
-      "expected": "sjuogtjue"
+      "expected": "tjuesju"
     },
     "Number_28": {
-      "test": false,
-      "expected": "åtteogtjue"
+      "expected": "tjueåtte"
     },
     "Number_29": {
-      "test": false,
-      "expected": "niogtjue"
+      "expected": "tjueni"
     },
     "Number_30": {
-      "test": false,
       "expected": "tretti"
     },
     "Number_31": {
-      "test": false,
-      "expected": "enogtretti"
+      "expected": "trettien"
     },
     "Number_32": {
-      "test": false,
-      "expected": "toogtretti"
+      "expected": "trettito"
     },
     "Number_33": {
-      "test": false,
-      "expected": "treogtretti"
+      "expected": "trettitre"
     },
     "Number_34": {
-      "test": false,
-      "expected": "fireogtretti"
+      "expected": "trettifire"
     },
     "Number_35": {
-      "test": false,
-      "expected": "femogtretti"
+      "expected": "trettifem"
     },
     "Number_36": {
-      "test": false,
-      "expected": "seksogtretti"
+      "expected": "trettiseks"
     },
     "Number_37": {
-      "test": false,
-      "expected": "sjuogtretti"
+      "expected": "trettisju"
     },
     "Number_38": {
-      "test": false,
-      "expected": "åtteogtretti"
+      "expected": "trettiåtte"
     },
     "Number_39": {
-      "test": false,
-      "expected": "niogtretti"
+      "expected": "trettini"
     },
     "Number_40": {
-      "test": false,
       "expected": "førti"
     },
     "Number_41": {
-      "test": false,
-      "expected": "enogførti"
+      "expected": "førtien"
     },
     "Number_42": {
-      "test": false,
-      "expected": "toogførti"
+      "expected": "førtito"
     },
     "Number_43": {
-      "test": false,
-      "expected": "treogførti"
+      "expected": "førtitre"
     },
     "Number_44": {
-      "test": false,
-      "expected": "fireogførti"
+      "expected": "førtifire"
     },
     "Number_45": {
-      "test": false,
-      "expected": "femogførti"
+      "expected": "førtifem"
     },
     "Number_46": {
-      "test": false,
-      "expected": "seksogførti"
+      "expected": "førtiseks"
     },
     "Number_47": {
-      "test": false,
-      "expected": "sjuogførti"
+      "expected": "førtisju"
     },
     "Number_48": {
-      "test": false,
-      "expected": "åtteogførti"
+      "expected": "førtiåtte"
     },
     "Number_49": {
-      "test": false,
-      "expected": "niogførti"
+      "expected": "førtini"
     },
     "Number_50": {
-      "test": false,
       "expected": "femti"
     },
     "Number_51": {
-      "test": false,
-      "expected": "enogfemti"
+      "expected": "femtien"
     },
     "Number_52": {
-      "test": false,
-      "expected": "toogfemti"
+      "expected": "femtito"
     },
     "Number_53": {
-      "test": false,
-      "expected": "treogfemti"
+      "expected": "femtitre"
     },
     "Number_54": {
-      "test": false,
-      "expected": "fireogfemti"
+      "expected": "femtifire"
     },
     "Number_55": {
-      "test": false,
-      "expected": "femogfemti"
+      "expected": "femtifem"
     },
     "Number_56": {
-      "test": false,
-      "expected": "seksogfemti"
+      "expected": "femtiseks"
     },
     "Number_57": {
-      "test": false,
-      "expected": "sjuogfemti"
+      "expected": "femtisju"
     },
     "Number_58": {
-      "test": false,
-      "expected": "åtteogfemti"
+      "expected": "femtiåtte"
     },
     "Number_59": {
-      "test": false,
-      "expected": "niogfemti"
+      "expected": "femtini"
     },
     "Number_60": {
-      "test": false,
       "expected": "seksti"
     },
     "Number_61": {
-      "test": false,
-      "expected": "enogseksti"
+      "expected": "sekstien"
     },
     "Number_62": {
-      "test": false,
-      "expected": "toogseksti"
+      "expected": "sekstito"
     },
     "Number_63": {
-      "test": false,
-      "expected": "treogseksti"
+      "expected": "sekstitre"
     },
     "Number_64": {
-      "test": false,
-      "expected": "fireogseksti"
+      "expected": "sekstifire"
     },
     "Number_65": {
-      "test": false,
-      "expected": "femogseksti"
+      "expected": "sekstifem"
     },
     "Number_66": {
-      "test": false,
-      "expected": "seksogseksti"
+      "expected": "sekstiseks"
     },
     "Number_67": {
-      "test": false,
-      "expected": "sjuogseksti"
+      "expected": "sekstisju"
     },
     "Number_68": {
-      "test": false,
-      "expected": "åtteogseksti"
+      "expected": "sekstiåtte"
     },
     "Number_69": {
-      "test": false,
-      "expected": "niogseksti"
+      "expected": "sekstini"
     },
     "Number_70": {
-      "test": false,
       "expected": "søtti"
     },
     "Number_71": {
-      "test": false,
-      "expected": "enogsøtti"
+      "expected": "søttien"
     },
     "Number_72": {
-      "test": false,
-      "expected": "toogsøtti"
+      "expected": "søttito"
     },
     "Number_73": {
-      "test": false,
-      "expected": "treogsøtti"
+      "expected": "søttitre"
     },
     "Number_74": {
-      "test": false,
-      "expected": "fireogsøtti"
+      "expected": "søttifire"
     },
     "Number_75": {
-      "test": false,
-      "expected": "femogsøtti"
+      "expected": "søttifem"
     },
     "Number_76": {
-      "test": false,
-      "expected": "seksogsøtti"
+      "expected": "søttiseks"
     },
     "Number_77": {
-      "test": false,
-      "expected": "sjuogsøtti"
+      "expected": "søttisju"
     },
     "Number_78": {
-      "test": false,
-      "expected": "åtteogsøtti"
+      "expected": "søttiåtte"
     },
     "Number_79": {
-      "test": false,
-      "expected": "niogsøtti"
+      "expected": "søttini"
     },
     "Number_80": {
-      "test": false,
       "expected": "åtti"
     },
     "Number_81": {
-      "test": false,
-      "expected": "enogåtti"
+      "expected": "åttien"
     },
     "Number_82": {
-      "test": false,
-      "expected": "toogåtti"
+      "expected": "åttito"
     },
     "Number_83": {
-      "test": false,
-      "expected": "treogåtti"
+      "expected": "åttitre"
     },
     "Number_84": {
-      "test": false,
-      "expected": "fireogåtti"
+      "expected": "åttifire"
     },
     "Number_85": {
-      "test": false,
-      "expected": "femogåtti"
+      "expected": "åttifem"
     },
     "Number_86": {
-      "test": false,
-      "expected": "seksogåtti"
+      "expected": "åttiseks"
     },
     "Number_87": {
-      "test": false,
-      "expected": "sjuogåtti"
+      "expected": "åttisju"
     },
     "Number_88": {
-      "test": false,
-      "expected": "åtteogåtti"
+      "expected": "åttiåtte"
     },
     "Number_89": {
-      "test": false,
-      "expected": "niogåtti"
+      "expected": "åttini"
     },
     "Number_90": {
-      "test": false,
       "expected": "nitti"
     },
     "Number_91": {
-      "test": false,
-      "expected": "enognitti"
+      "expected": "nittien"
     },
     "Number_92": {
-      "test": false,
-      "expected": "toognitti"
+      "expected": "nittito"
     },
     "Number_93": {
-      "test": false,
-      "expected": "treognitti"
+      "expected": "nittitre"
     },
     "Number_94": {
-      "test": false,
-      "expected": "fireognitti"
+      "expected": "nittifire"
     },
     "Number_95": {
-      "test": false,
-      "expected": "femognitti"
+      "expected": "nittifem"
     },
     "Number_96": {
-      "test": false,
-      "expected": "seksognitti"
+      "expected": "nittiseks"
     },
     "Number_97": {
-      "test": false,
-      "expected": "sjuognitti"
+      "expected": "nittisju"
     },
     "Number_98": {
-      "test": false,
-      "expected": "åtteognitti"
+      "expected": "nittiåtte"
     },
     "Number_99": {
-      "test": false,
-      "expected": "niognitti"
+      "expected": "nittini"
     },
     "Number_100": {
-      "test": false,
-      "expected": "etthundre"
+      "expected": "hundre"
     },
     "Number_101": {
-      "test": false,
-      "expected": "etthundreogen"
+      "expected": "hundreogen"
     },
     "Number_102": {
-      "test": false,
-      "expected": "etthundreogto"
+      "expected": "hundreogto"
     },
     "Number_103": {
-      "test": false,
-      "expected": "etthundreogtre"
+      "expected": "hundreogtre"
     },
     "Number_104": {
-      "test": false,
-      "expected": "etthundreogfire"
+      "expected": "hundreogfire"
     },
     "Number_105": {
-      "test": false,
-      "expected": "etthundreogfem"
+      "expected": "hundreogfem"
     },
     "Number_106": {
-      "test": false,
-      "expected": "etthundreogseks"
+      "expected": "hundreogseks"
     },
     "Number_107": {
-      "test": false,
-      "expected": "etthundreogsju"
+      "expected": "hundreogsju"
     },
     "Number_108": {
-      "test": false,
-      "expected": "etthundreogåtte"
+      "expected": "hundreogåtte"
     },
     "Number_109": {
-      "test": false,
-      "expected": "etthundreogni"
+      "expected": "hundreogni"
     },
     "Number_110": {
-      "test": false,
-      "expected": "etthundreogti"
+      "expected": "hundreogti"
     },
     "Number_200": {
-      "test": false,
       "expected": "tohundre"
     },
     "Number_201": {
-      "test": false,
       "expected": "tohundreogen"
     },
     "Number_300": {
-      "test": false,
       "expected": "trehundre"
     },
     "Number_301": {
-      "test": false,
       "expected": "trehundreogen"
     },
     "Number_400": {
-      "test": false,
       "expected": "firehundre"
     },
     "Number_401": {
-      "test": false,
       "expected": "firehundreogen"
     },
     "Number_500": {
-      "test": false,
       "expected": "femhundre"
     },
     "Number_501": {
-      "test": false,
       "expected": "femhundreogen"
     },
     "Number_600": {
-      "test": false,
       "expected": "sekshundre"
     },
     "Number_601": {
-      "test": false,
       "expected": "sekshundreogen"
     },
     "Number_700": {
-      "test": false,
       "expected": "sjuhundre"
     },
     "Number_701": {
-      "test": false,
       "expected": "sjuhundreogen"
     },
     "Number_800": {
-      "test": false,
       "expected": "åttehundre"
     },
     "Number_801": {
-      "test": false,
       "expected": "åttehundreogen"
     },
     "Number_900": {
-      "test": false,
       "expected": "nihundre"
     },
     "Number_901": {
-      "test": false,
       "expected": "nihundreogen"
     },
     "Number_1000": {
-      "test": false,
-      "expected": "ettusen"
+      "expected": "en tusen"
     },
     "Number_1001": {
-      "test": false,
-      "expected": "ettusenen"
+      "expected": "en tusen en"
     },
     "Number_2000": {
-      "test": false,
-      "expected": "totusen"
+      "expected": "to tusen"
     },
     "Number_2001": {
-      "test": false,
-      "expected": "totusenen"
+      "expected": "to tusen en"
     },
     "Number_3000": {
-      "test": false,
-      "expected": "tretusen"
+      "expected": "tre tusen"
     },
     "Number_3001": {
-      "test": false,
-      "expected": "tretusenen"
+      "expected": "tre tusen en"
     },
     "Number_4000": {
-      "test": false,
-      "expected": "firetusen"
+      "expected": "fire tusen"
     },
     "Number_4001": {
-      "test": false,
-      "expected": "firetusenen"
+      "expected": "fire tusen en"
     },
     "Number_5000": {
-      "test": false,
-      "expected": "femtusen"
+      "expected": "fem tusen"
     },
     "Number_5001": {
-      "test": false,
-      "expected": "femtusenen"
+      "expected": "fem tusen en"
     },
     "Number_6000": {
-      "test": false,
-      "expected": "sekstusen"
+      "expected": "seks tusen"
     },
     "Number_6001": {
-      "test": false,
-      "expected": "sekstusenen"
+      "expected": "seks tusen en"
     },
     "Number_7000": {
-      "test": false,
-      "expected": "sjutusen"
+      "expected": "sju tusen"
     },
     "Number_7001": {
-      "test": false,
-      "expected": "sjutusenen"
+      "expected": "sju tusen en"
     },
     "Number_8000": {
-      "test": false,
-      "expected": "åttetusen"
+      "expected": "åtte tusen"
     },
     "Number_8001": {
-      "test": false,
-      "expected": "åttetusenen"
+      "expected": "åtte tusen en"
     },
     "Number_9000": {
-      "test": false,
-      "expected": "nitusen"
+      "expected": "ni tusen"
     },
     "Number_9001": {
-      "test": false,
-      "expected": "nitusenen"
+      "expected": "ni tusen en"
     },
     "Number_10000": {
-      "test": false,
-      "expected": "titusen"
+      "expected": "ti tusen"
     },
     "Number_10001": {
-      "test": false,
-      "expected": "titusenen"
+      "expected": "ti tusen en"
     },
     "Number_20000": {
-      "test": false,
-      "expected": "tjuetusen"
+      "expected": "tjue tusen"
     },
     "Number_20001": {
-      "test": false,
-      "expected": "tjuetusenen"
+      "expected": "tjue tusen en"
     },
     "Number_30000": {
-      "test": false,
-      "expected": "trettitusen"
+      "expected": "tretti tusen"
     },
     "Number_30001": {
-      "test": false,
-      "expected": "trettitusenen"
+      "expected": "tretti tusen en"
     },
     "Number_40000": {
-      "test": false,
-      "expected": "førtitusen"
+      "expected": "førti tusen"
     },
     "Number_40001": {
-      "test": false,
-      "expected": "førtitusenen"
+      "expected": "førti tusen en"
     },
     "Number_50000": {
-      "test": false,
-      "expected": "femtitusen"
+      "expected": "femti tusen"
     },
     "Number_50001": {
-      "test": false,
-      "expected": "femtitusenen"
+      "expected": "femti tusen en"
     },
     "Number_60000": {
-      "test": false,
-      "expected": "sekstitusen"
+      "expected": "seksti tusen"
     },
     "Number_60001": {
-      "test": false,
-      "expected": "sekstitusenen"
+      "expected": "seksti tusen en"
     },
     "Number_70000": {
-      "test": false,
-      "expected": "søttitusen"
+      "expected": "søtti tusen"
     },
     "Number_70001": {
-      "test": false,
-      "expected": "søttitusenen"
+      "expected": "søtti tusen en"
     },
     "Number_80000": {
-      "test": false,
-      "expected": "åttitusen"
+      "expected": "åtti tusen"
     },
     "Number_80001": {
-      "test": false,
-      "expected": "åttitusenen"
+      "expected": "åtti tusen en"
     },
     "Number_90000": {
-      "test": false,
-      "expected": "nittitusen"
+      "expected": "nitti tusen"
     },
     "Number_90001": {
-      "test": false,
-      "expected": "nittitusenen"
+      "expected": "nitti tusen en"
     },
     "Number_100000": {
-      "test": false,
-      "expected": "etthundretusen"
+      "expected": "hundre tusen"
     },
     "Number_1000000": {
-      "test": false,
       "expected": "en million"
     },
     "Number_10000000": {
-      "test": false,
       "expected": "ti millioner"
     },
     "Number_100000000": {
-      "test": false,
-      "expected": "etthundre millioner"
+      "expected": "hundre millioner"
     },
     "Number_1000000000": {
-      "test": false,
       "expected": "en milliard"
     },
     "Number_10000000000": {
-      "test": false,
       "expected": "ti milliarder"
     },
     "Number_100000000000": {
-      "test": false,
-      "expected": "etthundre milliarder"
+      "expected": "hundre milliarder"
     },
     "Number_1000000000000": {
-      "test": false,
       "expected": "en billion"
     },
     "Number_10000000000000": {
-      "test": false,
       "expected": "ti billioner"
     },
     "Number_100000000000000": {
-      "test": false,
-      "expected": "etthundre billioner"
+      "expected": "hundre billioner"
     },
     "Number_1000000000000000": {
-      "test": false,
       "expected": "en billiard"
     },
     "Number_10000000000000000": {
-      "test": false,
       "expected": "ti billiarder"
     }
   }
