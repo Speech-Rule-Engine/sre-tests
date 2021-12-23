@@ -2,8 +2,9 @@
   "locale": "nb",
   "factory": "number",
   "base": "input/common/numbers.json",
-  "information": "Bokmal Ordinal word as used in fractions tests.",
-  "kind": "numberToOrdinal",
+  "information": "Bokmal Germanic-style Ordinal word tests.",
+  "kind": "wordOrdinal",
+  "subiso": "alt",
   "active": "NumbersBokmal",
   "compare": true,
   "tests": {

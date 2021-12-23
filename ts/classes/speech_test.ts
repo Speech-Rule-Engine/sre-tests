@@ -44,6 +44,11 @@ export class SpeechTest extends AbstractExamples {
   public locale: string = DynamicCstr.DEFAULT_VALUES[Axis.LOCALE];
 
   /**
+   * The subiso for the tests.
+   */
+  public subiso: string = '';
+
+  /**
    * The modality for the tests.
    */
   public modality: string = DynamicCstr.DEFAULT_VALUES[Axis.MODALITY];
@@ -110,7 +115,8 @@ export class SpeechTest extends AbstractExamples {
     return System.setupEngine({
       domain: this.domain,
       modality: this.modality,
-      locale: this.locale
+      locale: this.locale,
+      subiso: this.subiso
     });
   }
 
@@ -138,7 +144,8 @@ export class SpeechTest extends AbstractExamples {
       domain: this.domain,
       style: style,
       modality: this.modality,
-      locale: this.locale
+      locale: this.locale,
+      subiso: this.subiso
     });
     const actual = this.getSpeech(mathMl);
     const expected = this.actual ? actual : answer;
@@ -248,6 +255,7 @@ export class SpeechTest extends AbstractExamples {
     this.locale = this.jsonTests.locale || this.locale;
     this.domain = this.jsonTests.domain || this.domain;
     this.style = this.jsonTests.style || this.style;
+    this.subiso = this.jsonTests.subiso || this.subiso;
     this.actual = this.jsonTests.actual || this.actual;
     this.compare = this.jsonTests.compare || this.compare;
     if (this.jsonTests.active) {

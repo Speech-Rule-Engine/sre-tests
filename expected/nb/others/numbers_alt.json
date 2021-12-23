@@ -1,17 +1,18 @@
 {
-  "locale": "nn",
+  "locale": "nb",
   "factory": "number",
   "base": "input/common/numbers.json",
-  "information": "Nynorsk Number word tests.",
+  "information": "Bokmal Germanic-style Number word tests.",
   "kind": "numberToWords",
-  "active": "NumbersNynorsk",
+  "active": "NumbersBokmal",
+  "subiso": "alt",
   "compare": true,
   "tests": {
     "Number_0": {
       "expected": "null"
     },
     "Number_1": {
-      "expected": "ein"
+      "expected": "en"
     },
     "Number_2": {
       "expected": "to"
@@ -59,7 +60,7 @@
       "expected": "seksten"
     },
     "Number_17": {
-      "expected": "sytten"
+      "expected": "søtten"
     },
     "Number_18": {
       "expected": "atten"
@@ -71,7 +72,7 @@
       "expected": "tjue"
     },
     "Number_21": {
-      "expected": "tjueein"
+      "expected": "tjueen"
     },
     "Number_22": {
       "expected": "tjueto"
@@ -101,7 +102,7 @@
       "expected": "tretti"
     },
     "Number_31": {
-      "expected": "trettiein"
+      "expected": "trettien"
     },
     "Number_32": {
       "expected": "trettito"
@@ -131,7 +132,7 @@
       "expected": "førti"
     },
     "Number_41": {
-      "expected": "førtiein"
+      "expected": "førtien"
     },
     "Number_42": {
       "expected": "førtito"
@@ -161,7 +162,7 @@
       "expected": "femti"
     },
     "Number_51": {
-      "expected": "femtiein"
+      "expected": "femtien"
     },
     "Number_52": {
       "expected": "femtito"
@@ -191,7 +192,7 @@
       "expected": "seksti"
     },
     "Number_61": {
-      "expected": "sekstiein"
+      "expected": "sekstien"
     },
     "Number_62": {
       "expected": "sekstito"
@@ -218,40 +219,40 @@
       "expected": "sekstini"
     },
     "Number_70": {
-      "expected": "sytti"
+      "expected": "søtti"
     },
     "Number_71": {
-      "expected": "syttiein"
+      "expected": "søttien"
     },
     "Number_72": {
-      "expected": "syttito"
+      "expected": "søttito"
     },
     "Number_73": {
-      "expected": "syttitre"
+      "expected": "søttitre"
     },
     "Number_74": {
-      "expected": "syttifire"
+      "expected": "søttifire"
     },
     "Number_75": {
-      "expected": "syttifem"
+      "expected": "søttifem"
     },
     "Number_76": {
-      "expected": "syttiseks"
+      "expected": "søttiseks"
     },
     "Number_77": {
-      "expected": "syttisju"
+      "expected": "søttisju"
     },
     "Number_78": {
-      "expected": "syttiåtte"
+      "expected": "søttiåtte"
     },
     "Number_79": {
-      "expected": "syttini"
+      "expected": "søttini"
     },
     "Number_80": {
       "expected": "åtti"
     },
     "Number_81": {
-      "expected": "åttiein"
+      "expected": "åttien"
     },
     "Number_82": {
       "expected": "åttito"
@@ -281,7 +282,7 @@
       "expected": "nitti"
     },
     "Number_91": {
-      "expected": "nittiein"
+      "expected": "nittien"
     },
     "Number_92": {
       "expected": "nittito"
@@ -311,7 +312,7 @@
       "expected": "hundre"
     },
     "Number_101": {
-      "expected": "hundreogein"
+      "expected": "hundreogen"
     },
     "Number_102": {
       "expected": "hundreogto"
@@ -344,163 +345,163 @@
       "expected": "tohundre"
     },
     "Number_201": {
-      "expected": "tohundreogein"
+      "expected": "tohundreogen"
     },
     "Number_300": {
       "expected": "trehundre"
     },
     "Number_301": {
-      "expected": "trehundreogein"
+      "expected": "trehundreogen"
     },
     "Number_400": {
       "expected": "firehundre"
     },
     "Number_401": {
-      "expected": "firehundreogein"
+      "expected": "firehundreogen"
     },
     "Number_500": {
       "expected": "femhundre"
     },
     "Number_501": {
-      "expected": "femhundreogein"
+      "expected": "femhundreogen"
     },
     "Number_600": {
       "expected": "sekshundre"
     },
     "Number_601": {
-      "expected": "sekshundreogein"
+      "expected": "sekshundreogen"
     },
     "Number_700": {
       "expected": "sjuhundre"
     },
     "Number_701": {
-      "expected": "sjuhundreogein"
+      "expected": "sjuhundreogen"
     },
     "Number_800": {
       "expected": "åttehundre"
     },
     "Number_801": {
-      "expected": "åttehundreogein"
+      "expected": "åttehundreogen"
     },
     "Number_900": {
       "expected": "nihundre"
     },
     "Number_901": {
-      "expected": "nihundreogein"
+      "expected": "nihundreogen"
     },
     "Number_1000": {
-      "expected": "ein tusen"
+      "expected": "en tusen"
     },
     "Number_1001": {
-      "expected": "ein tusen ein"
+      "expected": "en tusen en"
     },
     "Number_2000": {
       "expected": "to tusen"
     },
     "Number_2001": {
-      "expected": "to tusen ein"
+      "expected": "to tusen en"
     },
     "Number_3000": {
       "expected": "tre tusen"
     },
     "Number_3001": {
-      "expected": "tre tusen ein"
+      "expected": "tre tusen en"
     },
     "Number_4000": {
       "expected": "fire tusen"
     },
     "Number_4001": {
-      "expected": "fire tusen ein"
+      "expected": "fire tusen en"
     },
     "Number_5000": {
       "expected": "fem tusen"
     },
     "Number_5001": {
-      "expected": "fem tusen ein"
+      "expected": "fem tusen en"
     },
     "Number_6000": {
       "expected": "seks tusen"
     },
     "Number_6001": {
-      "expected": "seks tusen ein"
+      "expected": "seks tusen en"
     },
     "Number_7000": {
       "expected": "sju tusen"
     },
     "Number_7001": {
-      "expected": "sju tusen ein"
+      "expected": "sju tusen en"
     },
     "Number_8000": {
       "expected": "åtte tusen"
     },
     "Number_8001": {
-      "expected": "åtte tusen ein"
+      "expected": "åtte tusen en"
     },
     "Number_9000": {
       "expected": "ni tusen"
     },
     "Number_9001": {
-      "expected": "ni tusen ein"
+      "expected": "ni tusen en"
     },
     "Number_10000": {
       "expected": "ti tusen"
     },
     "Number_10001": {
-      "expected": "ti tusen ein"
+      "expected": "ti tusen en"
     },
     "Number_20000": {
       "expected": "tjue tusen"
     },
     "Number_20001": {
-      "expected": "tjue tusen ein"
+      "expected": "tjue tusen en"
     },
     "Number_30000": {
       "expected": "tretti tusen"
     },
     "Number_30001": {
-      "expected": "tretti tusen ein"
+      "expected": "tretti tusen en"
     },
     "Number_40000": {
       "expected": "førti tusen"
     },
     "Number_40001": {
-      "expected": "førti tusen ein"
+      "expected": "førti tusen en"
     },
     "Number_50000": {
       "expected": "femti tusen"
     },
     "Number_50001": {
-      "expected": "femti tusen ein"
+      "expected": "femti tusen en"
     },
     "Number_60000": {
       "expected": "seksti tusen"
     },
     "Number_60001": {
-      "expected": "seksti tusen ein"
+      "expected": "seksti tusen en"
     },
     "Number_70000": {
-      "expected": "sytti tusen"
+      "expected": "søtti tusen"
     },
     "Number_70001": {
-      "expected": "sytti tusen ein"
+      "expected": "søtti tusen en"
     },
     "Number_80000": {
       "expected": "åtti tusen"
     },
     "Number_80001": {
-      "expected": "åtti tusen ein"
+      "expected": "åtti tusen en"
     },
     "Number_90000": {
       "expected": "nitti tusen"
     },
     "Number_90001": {
-      "expected": "nitti tusen ein"
+      "expected": "nitti tusen en"
     },
     "Number_100000": {
       "expected": "hundre tusen"
     },
     "Number_1000000": {
-      "expected": "ein million"
+      "expected": "en million"
     },
     "Number_10000000": {
       "expected": "ti millioner"
@@ -509,7 +510,7 @@
       "expected": "hundre millioner"
     },
     "Number_1000000000": {
-      "expected": "ein milliard"
+      "expected": "en milliard"
     },
     "Number_10000000000": {
       "expected": "ti milliarder"
@@ -518,7 +519,7 @@
       "expected": "hundre milliarder"
     },
     "Number_1000000000000": {
-      "expected": "ein billion"
+      "expected": "en billion"
     },
     "Number_10000000000000": {
       "expected": "ti billioner"
@@ -527,7 +528,7 @@
       "expected": "hundre billioner"
     },
     "Number_1000000000000000": {
-      "expected": "ein billiard"
+      "expected": "en billiard"
     },
     "Number_10000000000000000": {
       "expected": "ti billiarder"
