@@ -1,0 +1,808 @@
+{
+  "name": "NynorskDefaultSiUnit",
+  "locale": "nn",
+  "domain": "default",
+  "style": "default",
+  "active": "DefaultSymbolsNynorsk",
+  "grammar": {
+    "annotation": "unit"
+  },
+  "factory": "symbol",
+  "base": "input/common/si_units.json",
+  "information": "Nynorsk Default SI Unit tests.",
+  "compare": true,
+  "tests": {
+    "YW": {
+      "expected": "YW"
+    },
+    "Yw": {
+      "expected": "Yw"
+    },
+    "ZW": {
+      "expected": "ZW"
+    },
+    "Zw": {
+      "expected": "Zw"
+    },
+    "EW": {
+      "expected": "EW"
+    },
+    "Ew": {
+      "expected": "Ew"
+    },
+    "PW": {
+      "expected": "PW"
+    },
+    "Pw": {
+      "expected": "Pw"
+    },
+    "TW": {
+      "expected": "TW"
+    },
+    "Tw": {
+      "expected": "Tw"
+    },
+    "GW": {
+      "expected": "GW"
+    },
+    "Gw": {
+      "expected": "Gw"
+    },
+    "MW": {
+      "expected": "MW"
+    },
+    "Mw": {
+      "expected": "Mw"
+    },
+    "kW": {
+      "expected": "kW"
+    },
+    "kw": {
+      "expected": "kw"
+    },
+    "hW": {
+      "expected": "hW"
+    },
+    "hw": {
+      "expected": "hw"
+    },
+    "daW": {
+      "expected": "daW"
+    },
+    "daw": {
+      "expected": "daw"
+    },
+    "dW": {
+      "expected": "dW"
+    },
+    "dw": {
+      "expected": "dw"
+    },
+    "cW": {
+      "expected": "cW"
+    },
+    "cw": {
+      "expected": "cw"
+    },
+    "mW": {
+      "expected": "mW"
+    },
+    "mw": {
+      "expected": "mw"
+    },
+    "µW": {
+      "expected": "µW"
+    },
+    "µw": {
+      "expected": "µw"
+    },
+    "μW": {
+      "expected": "mikrowatt"
+    },
+    "μw": {
+      "expected": "mikrowatt"
+    },
+    "nW": {
+      "expected": "nW"
+    },
+    "nw": {
+      "expected": "nw"
+    },
+    "pW": {
+      "expected": "pW"
+    },
+    "pw": {
+      "expected": "pw"
+    },
+    "fW": {
+      "expected": "fW"
+    },
+    "fw": {
+      "expected": "fw"
+    },
+    "aW": {
+      "expected": "aW"
+    },
+    "aw": {
+      "expected": "aw"
+    },
+    "zW": {
+      "expected": "zW"
+    },
+    "zw": {
+      "expected": "zw"
+    },
+    "yW": {
+      "expected": "yW"
+    },
+    "yw": {
+      "expected": "yw"
+    },
+    "W": {
+      "expected": "watt"
+    },
+    "w": {
+      "expected": "watt"
+    },
+    "YJ": {
+      "expected": "YJ"
+    },
+    "ZJ": {
+      "expected": "ZJ"
+    },
+    "EJ": {
+      "expected": "EJ"
+    },
+    "PJ": {
+      "expected": "PJ"
+    },
+    "TJ": {
+      "expected": "TJ"
+    },
+    "GJ": {
+      "expected": "GJ"
+    },
+    "MJ": {
+      "expected": "MJ"
+    },
+    "kJ": {
+      "expected": "kJ"
+    },
+    "hJ": {
+      "expected": "hJ"
+    },
+    "daJ": {
+      "expected": "daJ"
+    },
+    "dJ": {
+      "expected": "dJ"
+    },
+    "cJ": {
+      "expected": "cJ"
+    },
+    "mJ": {
+      "expected": "mJ"
+    },
+    "µJ": {
+      "expected": "µJ"
+    },
+    "μJ": {
+      "expected": "mikrojoule"
+    },
+    "nJ": {
+      "expected": "nJ"
+    },
+    "pJ": {
+      "expected": "pJ"
+    },
+    "fJ": {
+      "expected": "fJ"
+    },
+    "aJ": {
+      "expected": "aJ"
+    },
+    "zJ": {
+      "expected": "zJ"
+    },
+    "yJ": {
+      "expected": "yJ"
+    },
+    "J": {
+      "expected": "joule"
+    },
+    "YN": {
+      "expected": "YN"
+    },
+    "ZN": {
+      "expected": "ZN"
+    },
+    "EN": {
+      "expected": "EN"
+    },
+    "PN": {
+      "expected": "PN"
+    },
+    "TN": {
+      "expected": "TN"
+    },
+    "GN": {
+      "expected": "GN"
+    },
+    "MN": {
+      "expected": "MN"
+    },
+    "kN": {
+      "expected": "kN"
+    },
+    "hN": {
+      "expected": "hN"
+    },
+    "daN": {
+      "expected": "daN"
+    },
+    "dN": {
+      "expected": "dN"
+    },
+    "cN": {
+      "expected": "cN"
+    },
+    "mN": {
+      "expected": "mN"
+    },
+    "µN": {
+      "expected": "µN"
+    },
+    "μN": {
+      "expected": "mikronewton"
+    },
+    "nN": {
+      "expected": "nN"
+    },
+    "pN": {
+      "expected": "pN"
+    },
+    "fN": {
+      "expected": "fN"
+    },
+    "aN": {
+      "expected": "aN"
+    },
+    "zN": {
+      "expected": "zN"
+    },
+    "yN": {
+      "expected": "yN"
+    },
+    "N": {
+      "expected": "newton"
+    },
+    "YA": {
+      "expected": "YA"
+    },
+    "ZA": {
+      "expected": "ZA"
+    },
+    "EA": {
+      "expected": "EA"
+    },
+    "PA": {
+      "expected": "PA"
+    },
+    "TA": {
+      "expected": "TA"
+    },
+    "GA": {
+      "expected": "GA"
+    },
+    "MA": {
+      "expected": "MA"
+    },
+    "kA": {
+      "expected": "kA"
+    },
+    "hA": {
+      "expected": "hA"
+    },
+    "daA": {
+      "expected": "daA"
+    },
+    "dA": {
+      "expected": "dA"
+    },
+    "cA": {
+      "expected": "cA"
+    },
+    "mA": {
+      "expected": "mA"
+    },
+    "µA": {
+      "expected": "µA"
+    },
+    "μA": {
+      "expected": "mikroampere"
+    },
+    "nA": {
+      "expected": "nA"
+    },
+    "pA": {
+      "expected": "pA"
+    },
+    "fA": {
+      "expected": "fA"
+    },
+    "aA": {
+      "expected": "aA"
+    },
+    "zA": {
+      "expected": "zA"
+    },
+    "yA": {
+      "expected": "yA"
+    },
+    "A": {
+      "expected": "ampere"
+    },
+    "YV": {
+      "expected": "YV"
+    },
+    "ZV": {
+      "expected": "ZV"
+    },
+    "EV": {
+      "expected": "EV"
+    },
+    "PV": {
+      "expected": "PV"
+    },
+    "TV": {
+      "expected": "TV"
+    },
+    "GV": {
+      "expected": "GV"
+    },
+    "MV": {
+      "expected": "MV"
+    },
+    "kV": {
+      "expected": "kV"
+    },
+    "hV": {
+      "expected": "hV"
+    },
+    "daV": {
+      "expected": "daV"
+    },
+    "dV": {
+      "expected": "dV"
+    },
+    "cV": {
+      "expected": "cV"
+    },
+    "mV": {
+      "expected": "mV"
+    },
+    "µV": {
+      "expected": "µV"
+    },
+    "μV": {
+      "expected": "mikrovolt"
+    },
+    "nV": {
+      "expected": "nV"
+    },
+    "pV": {
+      "expected": "pV"
+    },
+    "fV": {
+      "expected": "fV"
+    },
+    "aV": {
+      "expected": "aV"
+    },
+    "zV": {
+      "expected": "zV"
+    },
+    "yV": {
+      "expected": "yV"
+    },
+    "V": {
+      "expected": "volt"
+    },
+    "YΩ": {
+      "expected": "YΩ"
+    },
+    "ZΩ": {
+      "expected": "ZΩ"
+    },
+    "EΩ": {
+      "expected": "EΩ"
+    },
+    "PΩ": {
+      "expected": "PΩ"
+    },
+    "TΩ": {
+      "expected": "TΩ"
+    },
+    "GΩ": {
+      "expected": "GΩ"
+    },
+    "MΩ": {
+      "expected": "MΩ"
+    },
+    "kΩ": {
+      "expected": "kΩ"
+    },
+    "hΩ": {
+      "expected": "hΩ"
+    },
+    "daΩ": {
+      "expected": "daΩ"
+    },
+    "dΩ": {
+      "expected": "dΩ"
+    },
+    "cΩ": {
+      "expected": "cΩ"
+    },
+    "mΩ": {
+      "expected": "mΩ"
+    },
+    "µΩ": {
+      "expected": "µΩ"
+    },
+    "μΩ": {
+      "expected": "mikroohm"
+    },
+    "nΩ": {
+      "expected": "nΩ"
+    },
+    "pΩ": {
+      "expected": "pΩ"
+    },
+    "fΩ": {
+      "expected": "fΩ"
+    },
+    "aΩ": {
+      "expected": "aΩ"
+    },
+    "zΩ": {
+      "expected": "zΩ"
+    },
+    "yΩ": {
+      "expected": "yΩ"
+    },
+    "Ω": {
+      "expected": "ohm"
+    },
+    "Ym": {
+      "expected": "Ym"
+    },
+    "Zm": {
+      "expected": "Zm"
+    },
+    "Em": {
+      "expected": "Em"
+    },
+    "Pm": {
+      "expected": "Pm"
+    },
+    "Tm": {
+      "expected": "Tm"
+    },
+    "Gm": {
+      "expected": "Gm"
+    },
+    "Mm": {
+      "expected": "Mm"
+    },
+    "km": {
+      "expected": "km"
+    },
+    "hm": {
+      "expected": "hm"
+    },
+    "dam": {
+      "expected": "dam"
+    },
+    "dm": {
+      "expected": "dm"
+    },
+    "cm": {
+      "expected": "cm"
+    },
+    "mm": {
+      "expected": "mm"
+    },
+    "µm": {
+      "expected": "µm"
+    },
+    "μm": {
+      "expected": "mikrometer"
+    },
+    "nm": {
+      "expected": "nm"
+    },
+    "pm": {
+      "expected": "pm"
+    },
+    "fm": {
+      "expected": "fm"
+    },
+    "am": {
+      "expected": "am"
+    },
+    "zm": {
+      "expected": "zm"
+    },
+    "ym": {
+      "expected": "ym"
+    },
+    "m": {
+      "expected": "meter"
+    },
+    "YB": {
+      "expected": "YB"
+    },
+    "ZB": {
+      "expected": "ZB"
+    },
+    "EB": {
+      "expected": "EB"
+    },
+    "PB": {
+      "expected": "PB"
+    },
+    "TB": {
+      "expected": "TB"
+    },
+    "GB": {
+      "expected": "GB"
+    },
+    "MB": {
+      "expected": "MB"
+    },
+    "kB": {
+      "expected": "kB"
+    },
+    "hB": {
+      "expected": "hB"
+    },
+    "daB": {
+      "expected": "daB"
+    },
+    "dB": {
+      "expected": "dB"
+    },
+    "cB": {
+      "expected": "cB"
+    },
+    "mB": {
+      "expected": "mB"
+    },
+    "µB": {
+      "expected": "µB"
+    },
+    "μB": {
+      "expected": "mikrobyte"
+    },
+    "nB": {
+      "expected": "nB"
+    },
+    "pB": {
+      "expected": "pB"
+    },
+    "fB": {
+      "expected": "fB"
+    },
+    "aB": {
+      "expected": "aB"
+    },
+    "zB": {
+      "expected": "zB"
+    },
+    "yB": {
+      "expected": "yB"
+    },
+    "B": {
+      "expected": "byte"
+    },
+    "Ys": {
+      "expected": "Ys"
+    },
+    "Zs": {
+      "expected": "Zs"
+    },
+    "Es": {
+      "expected": "Es"
+    },
+    "Ps": {
+      "expected": "Ps"
+    },
+    "Ts": {
+      "expected": "Ts"
+    },
+    "Gs": {
+      "expected": "Gs"
+    },
+    "Ms": {
+      "expected": "Ms"
+    },
+    "ks": {
+      "expected": "ks"
+    },
+    "hs": {
+      "expected": "hs"
+    },
+    "das": {
+      "expected": "das"
+    },
+    "ds": {
+      "expected": "ds"
+    },
+    "cs": {
+      "expected": "cs"
+    },
+    "ms": {
+      "expected": "ms"
+    },
+    "µs": {
+      "expected": "µs"
+    },
+    "μs": {
+      "expected": "mikrosekund"
+    },
+    "ns": {
+      "expected": "ns"
+    },
+    "ps": {
+      "expected": "ps"
+    },
+    "fs": {
+      "expected": "fs"
+    },
+    "as": {
+      "expected": "as"
+    },
+    "zs": {
+      "expected": "zs"
+    },
+    "ys": {
+      "expected": "ys"
+    },
+    "s": {
+      "expected": "sekund"
+    },
+    "Yl": {
+      "expected": "Yl"
+    },
+    "Zl": {
+      "expected": "Zl"
+    },
+    "El": {
+      "expected": "El"
+    },
+    "Pl": {
+      "expected": "Pl"
+    },
+    "Tl": {
+      "expected": "Tl"
+    },
+    "Gl": {
+      "expected": "Gl"
+    },
+    "Ml": {
+      "expected": "Ml"
+    },
+    "kl": {
+      "expected": "kl"
+    },
+    "hl": {
+      "expected": "hl"
+    },
+    "dal": {
+      "expected": "dal"
+    },
+    "dl": {
+      "expected": "dl"
+    },
+    "cl": {
+      "expected": "cl"
+    },
+    "ml": {
+      "expected": "ml"
+    },
+    "µl": {
+      "expected": "µl"
+    },
+    "μl": {
+      "expected": "mikroliter"
+    },
+    "nl": {
+      "expected": "nl"
+    },
+    "pl": {
+      "expected": "pl"
+    },
+    "fl": {
+      "expected": "fl"
+    },
+    "al": {
+      "expected": "al"
+    },
+    "zl": {
+      "expected": "zl"
+    },
+    "yl": {
+      "expected": "yl"
+    },
+    "l": {
+      "expected": "liter"
+    },
+    "Yg": {
+      "expected": "Yg"
+    },
+    "Zg": {
+      "expected": "Zg"
+    },
+    "Eg": {
+      "expected": "Eg"
+    },
+    "Pg": {
+      "expected": "Pg"
+    },
+    "Tg": {
+      "expected": "Tg"
+    },
+    "Gg": {
+      "expected": "Gg"
+    },
+    "Mg": {
+      "expected": "Mg"
+    },
+    "kg": {
+      "expected": "kg"
+    },
+    "hg": {
+      "expected": "hg"
+    },
+    "dag": {
+      "expected": "dag"
+    },
+    "dg": {
+      "expected": "dg"
+    },
+    "cg": {
+      "expected": "cg"
+    },
+    "mg": {
+      "expected": "mg"
+    },
+    "µg": {
+      "expected": "µg"
+    },
+    "μg": {
+      "expected": "mikrogram"
+    },
+    "ng": {
+      "expected": "ng"
+    },
+    "pg": {
+      "expected": "pg"
+    },
+    "fg": {
+      "expected": "fg"
+    },
+    "ag": {
+      "expected": "ag"
+    },
+    "zg": {
+      "expected": "zg"
+    },
+    "yg": {
+      "expected": "yg"
+    },
+    "g": {
+      "expected": "gram"
+    }
+  }
+}

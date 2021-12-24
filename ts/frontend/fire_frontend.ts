@@ -3,7 +3,7 @@ import * as select from './selection';
 import * as signin from './signin';
 import * as user from './user';
 
-export let Convert = convert;
-export let Select = select;
-export let User = user;
-export let Signin = signin;
+export const Convert = convert;
+export const Select = select;
+export const User = user;
+export const Signin = signin;

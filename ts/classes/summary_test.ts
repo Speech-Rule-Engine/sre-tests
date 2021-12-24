@@ -15,18 +15,16 @@
 // limitations under the License.
 
 /**
- * @fileoverview Testcases for summary speech generation.
- *
+ * @file Testcases for summary speech generation.
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import {ProcessorFactory} from '../../speech-rule-engine/js/common/processors';
-import {Key} from './keycodes';
+import * as ProcessorFactory from '../../speech-rule-engine/js/common/processor_factory';
+import { Key } from './keycodes';
 
-import {SpeechTest} from './speech_test';
+import { SpeechTest } from './speech_test';
 
 export class SummaryTest extends SpeechTest {
-
   /**
    * @override
    */
@@ -40,7 +38,7 @@ export class SummaryTest extends SpeechTest {
   /**
    * @override
    */
-  public modality = 'summary';
+  public modality = 'speech';
 
   /**
    * Keyboard steps preceding speech computation.
@@ -61,13 +59,21 @@ export class SummaryTest extends SpeechTest {
    * @override
    */
   public getSpeech(mathMl: string) {
-    if (!this.steps) {
-      return super.getSpeech(mathMl);
-    }
     ProcessorFactory.process('walker', mathMl);
-    this.steps.forEach(step =>
-      ProcessorFactory.process('move', Key.get(step) as any));
-    return ProcessorFactory.process('move', Key.get('RETURN') as any) as string;
+    if (this.steps) {
+      this.steps.forEach((step) => {
+        ProcessorFactory.process('move', Key.get(step) as any);
+      });
+    }
+    return this.computeSpeech();
+  }
+
+  /**
+   * @param _mathMl The original input.
+   * @returns Computes the speech output.
+   */
+  protected computeSpeech(): string {
+    return ProcessorFactory.process('move', Key.get('X') as any) as string;
   }
 
   /**
@@ -77,5 +83,14 @@ export class SummaryTest extends SpeechTest {
     this.steps = this.field('steps');
     super.method();
     this.steps = null;
+  }
+}
+
+export class SummarySpeechTest extends SummaryTest {
+  /**
+   * @override
+   */
+  protected computeSpeech(): string {
+    return ProcessorFactory.process('move', Key.get('TAB') as any) as string;
   }
 }

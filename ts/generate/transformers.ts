@@ -13,8 +13,7 @@
 // limitations under the License.
 
 /**
- * @fileoverview Transformers to translate fields in test specifications.
- *
+ * @file Transformers to translate fields in test specifications.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
@@ -22,7 +21,6 @@
  * Interface for test transformers.
  */
 export interface Transformer {
-
   /**
    * Source field to transform from.
    */
@@ -37,11 +35,9 @@ export interface Transformer {
    * Transformer method.
    */
   via: (src: string) => string;
-
 }
 
 export abstract class AbstractTransformer implements Transformer {
-
   /**
    * @param src Source field to transform from.
    * @param dst Destination field to transform to.

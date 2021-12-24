@@ -12,12 +12,11 @@
 // limitations under the License.
 
 /**
- * @fileoverview Interface for tests that produce examples as output.
+ * @file Interface for tests that produce examples as output.
  * @author v.sorge@gmail.com (Volker Sorge)
  */
 
 export interface ExamplesOutput {
-
   /**
    * Activates the example output.
    *

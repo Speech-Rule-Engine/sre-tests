@@ -13,24 +13,22 @@
 // Partially funded by the Diagram Project.
 
 /**
- * @fileoverview Tests of markup output.
- *
+ * @file Tests of markup output.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {EngineConst} from '../../speech-rule-engine/js/common/engine';
+import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
 import * as System from '../../speech-rule-engine/js/common/system';
-import AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
+import * as AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
 
-import {AbstractJsonTest} from '../classes/abstract_test';
+import { AbstractJsonTest } from '../classes/abstract_test';
 
 export class MarkupTest extends AbstractJsonTest {
-
   /**
    * The quadratic equation as a MathML string with some external markup.
    */
   public static QUADRATIC: string =
-  '<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">' +
+    '<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">' +
     '<mi extid="0">x</mi>' +
     '<mo extid="1">=</mo>' +
     '<mfrac extid="3">' +
@@ -68,8 +66,7 @@ export class MarkupTest extends AbstractJsonTest {
    * @override
    */
   public tearDownTest() {
-    System.setupEngine(
-      {markup: EngineConst.Markup.NONE});
+    System.setupEngine({ markup: EngineConst.Markup.NONE });
   }
 
   /**
@@ -80,16 +77,23 @@ export class MarkupTest extends AbstractJsonTest {
    * @param markup The markup to test.
    * @param domain The domain for the engine.
    */
-  public executeTest(expr: string, result: string, markup: string,
-                     domain: string) {
+  public executeTest(
+    expr: string,
+    result: string,
+    markup: string,
+    domain: string
+  ) {
     expr = expr || MarkupTest.QUADRATIC;
-    System.setupEngine(
-      {locale: 'en', modality: 'speech', domain: domain || 'default',
-       style: 'default',
-       markup: markup ? markup.toLowerCase() : EngineConst.Markup.NONE});
+    System.setupEngine({
+      locale: 'en',
+      modality: 'speech',
+      domain: domain || 'default',
+      style: 'default',
+      markup: markup ? markup.toLowerCase() : EngineConst.Markup.NONE
+    });
     // TODO (TS): Markup should be taken from the enum.
-    let descrs = System.toDescription(expr);
-    let output = AuralRendering.markup(descrs);
+    const descrs = System.toDescription(expr);
+    const output = AuralRendering.markup(descrs);
     this.assert.equal(output, result);
   }
 
@@ -98,8 +102,12 @@ export class MarkupTest extends AbstractJsonTest {
    */
   public method() {
     this.executeTest(
-      ...this.pickFields.map(x =>
-        this.inputFields.get(x)) as [string, string, string, string]);
+      ...(this.pickFields.map((x) => this.inputFields.get(x)) as [
+        string,
+        string,
+        string,
+        string
+      ])
+    );
   }
-
 }

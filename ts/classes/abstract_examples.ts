@@ -12,18 +12,19 @@
 // limitations under the License.
 
 /**
- * @fileoverview Abstract class for test cases that produce example output.
+ * @file Abstract class for test cases that produce example output.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
 import * as fs from 'fs';
-import {TestError, TestPath, TestUtil} from '../base/test_util';
-import {AbstractJsonTest} from './abstract_test';
-import {ExamplesOutput} from './examples_output';
+import { TestError, TestPath, TestUtil } from '../base/test_util';
+import { AbstractJsonTest } from './abstract_test';
+import { ExamplesOutput } from './examples_output';
 
-export abstract class AbstractExamples extends AbstractJsonTest
-  implements ExamplesOutput {
-
+export abstract class AbstractExamples
+  extends AbstractJsonTest
+  implements ExamplesOutput
+{
   /**
    * Base directory for the output file.
    */
@@ -34,27 +35,27 @@ export abstract class AbstractExamples extends AbstractJsonTest
    */
   public fileName: string;
 
-  private active_: boolean = false;
+  private active_ = false;
 
   /**
    * Possible file error.
    */
-  private fileError_: string = '';
+  private fileError_ = '';
 
   /**
    * Sets example output file for tests.
    */
-  private examplesFile_: string = '';
+  private examplesFile_ = '';
 
   /**
    * The output values.
    */
-  private examples_: {[key: string]: string[]} = {};
+  private examples_: { [key: string]: string[] } = {};
 
   /**
    * @override
    */
-  public setActive(file: string, ext: string = 'html') {
+  public setActive(file: string, ext = 'html') {
     this.active_ = true;
     this.fileName = file;
     this.examplesFile_ = this.fileDirectory + file + '.' + ext;
@@ -79,7 +80,7 @@ export abstract class AbstractExamples extends AbstractJsonTest
    */
   public appendExamples(type: string, example: string) {
     if (this.active_ && !this.fileError_) {
-      let examples = this.examples_[type];
+      const examples = this.examples_[type];
       if (examples) {
         examples.push(example);
       } else {
@@ -97,10 +98,12 @@ export abstract class AbstractExamples extends AbstractJsonTest
     }
     if (!this.fileError_) {
       try {
-        for (let key in this.examples_) {
+        for (const key in this.examples_) {
           ExampleFiles.append(this.examplesFile_, key);
           ExampleFiles.append(
-            this.examplesFile_, this.join(this.examples_[key]));
+            this.examplesFile_,
+            this.join(this.examples_[key])
+          );
         }
       } catch (err) {
         this.fileError_ = 'Could not append to file ' + this.examplesFile_;
@@ -116,8 +119,9 @@ export abstract class AbstractExamples extends AbstractJsonTest
   /**
    * @override
    */
-  public setUpTest() {
+  public async setUpTest() {
     this.startExamples();
+    return super.setUpTest();
   }
 
   /**
@@ -131,21 +135,21 @@ export abstract class AbstractExamples extends AbstractJsonTest
    * Joins the accumulated list of examples into a single output string.
    *
    * @param examples The list of examples.
-   * @return The joined string.
+   * @returns The joined string.
    */
   public join(examples: string[]): string {
     return JSON.stringify(examples, null, 2);
   }
 
   /**
-   * @return Output file header.
+   * @returns Output file header.
    */
   public header(): string {
     return '';
   }
 
   /**
-   * @return Output file footer.
+   * @returns Output file footer.
    */
   public footer(): string {
     return '';
@@ -153,10 +157,9 @@ export abstract class AbstractExamples extends AbstractJsonTest
 }
 
 export namespace ExampleFiles {
+  const openFiles: { [key: string]: AbstractExamples } = {};
 
-  const openFiles: {[key: string]: AbstractExamples} = {};
-
-  const descriptors: {[key: string]: number} = {};
+  const descriptors: { [key: string]: number } = {};
 
   export let currentExample: AbstractExamples = null;
   export let noOutput = false;
@@ -174,7 +177,7 @@ export namespace ExampleFiles {
     }
     if (!openFiles[file]) {
       TestUtil.makeDir(file);
-      let fd = fs.openSync(file, 'w+');
+      const fd = fs.openSync(file, 'w+');
       descriptors[file] = fd;
       fs.appendFileSync(fd, obj.header());
     }
@@ -188,9 +191,8 @@ export namespace ExampleFiles {
     if (noOutput) {
       return;
     }
-    for (let file of Object.keys(openFiles)) {
-      fs.appendFileSync(
-        file, openFiles[file].footer());
+    for (const file of Object.keys(openFiles)) {
+      fs.appendFileSync(file, openFiles[file].footer());
       fs.closeSync(descriptors[file]);
     }
   }
@@ -207,5 +209,4 @@ export namespace ExampleFiles {
     }
     fs.appendFileSync(file, content);
   }
-
 }

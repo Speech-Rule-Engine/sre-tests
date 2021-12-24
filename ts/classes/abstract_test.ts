@@ -12,7 +12,7 @@
 // limitations under the License.
 
 /**
- * @fileoverview Abstract class of test cases.
+ * @file Abstract class of test cases.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
@@ -20,47 +20,48 @@ import * as assert from 'assert';
 import * as tu from '../base/test_util';
 
 export abstract class AbstractTest {
-
   /**
    * The Jest package.
    */
-  protected jest: boolean = false;
+  protected jest = false;
 
   /**
    * Basic information on the test case.
    */
-  public information: string = '';
+  public information = '';
 
   /**
    * The assertion package.
    */
   public assert: {
-    equal: (expected: any, actual: any) => void,
-    deepEqual: (expected: any, actual: any) => void,
-    fail: () => void
+    equal: (expected: any, actual: any) => void;
+    deepEqual: (expected: any, actual: any) => void;
+    fail: () => void;
   } = {
-    equal: !this.jest ? assert.strictEqual :
-      (actual, expected) => {
-        expect(actual).toEqual(expected);
-      },
-    deepEqual: !this.jest ? assert.deepStrictEqual :
-      (actual, expected) => {
-        expect(actual).toEqual(expected);
-      },
+    equal: !this.jest
+      ? assert.strictEqual
+      : (actual, expected) => {
+          expect(actual).toEqual(expected);
+        },
+    deepEqual: !this.jest
+      ? assert.deepStrictEqual
+      : (actual, expected) => {
+          expect(actual).toEqual(expected);
+        },
     fail: assert.fail
   };
 
   /**
    * Sets up the basic requirements for the test.
    */
-  public setUpTest() {
+  public async setUpTest(): Promise<string> {
+    return Promise.resolve('');
   }
 
   /**
    * Finalises the test.
    */
-  public tearDownTest() {
-  }
+  public tearDownTest() {}
 }
 
 /**
@@ -73,7 +74,6 @@ export abstract class AbstractTest {
  *
  */
 export abstract class AbstractJsonTest extends AbstractTest {
-
   /**
    * The Json for the input from an expected file.
    */
@@ -107,26 +107,27 @@ export abstract class AbstractJsonTest extends AbstractTest {
   /**
    * An information string.
    */
-  public information: string = '';
+  public information = '';
 
-  private prepared: boolean = false;
-  private jsonFile: string = '';
-  private baseFile: string = '';
+  private prepared = false;
+  private jsonFile = '';
+  private baseFile = '';
 
   /**
    * Picks arguments from a JSON element.
    *
    * @param json The JSON element.
-   * @return The array of arguments for the test method.
+   * @returns The array of arguments for the test method.
    */
   public pick(json: tu.JsonTest) {
-    this.pickFields.forEach(x => this.inputFields.set(x, json[x]));
+    this.pickFields.forEach((x) => this.inputFields.set(x, json[x]));
   }
 
   /**
    * Retrieves an input field.
+   *
    * @param key The key.
-   * @return The input field for that key.
+   * @returns The input field for that key.
    */
   public field(key: string) {
     return this.inputFields.get(key);
@@ -140,14 +141,15 @@ export abstract class AbstractJsonTest extends AbstractTest {
     if (this.prepared) {
       return;
     }
-    this.jsonTests = this.jsonTests || (
-      this.jsonFile ? tu.TestUtil.loadJson(this.jsonFile) : {});
+    this.jsonTests =
+      this.jsonTests ||
+      (this.jsonFile ? tu.TestUtil.loadJson(this.jsonFile) : {});
     this.information = this.jsonTests.information || 'Unnamed tests';
     this.loadBase();
-    let input: tu.JsonTests = (this.baseTests['tests'] || {}) as tu.JsonTests;
-    let output = this.jsonTests['tests'] || {};
-    let exclude = this.jsonTests['exclude'] || [];
-    let tests = tu.TestUtil.combineTests(input, output, exclude);
+    const input: tu.JsonTests = (this.baseTests['tests'] || {}) as tu.JsonTests;
+    const output = this.jsonTests['tests'] || {};
+    const exclude = this.jsonTests['exclude'] || [];
+    const tests = tu.TestUtil.combineTests(input, output, exclude);
     this.inputTests = tests[0];
     this.warn = tests[1];
     this.prepared = true;
@@ -157,7 +159,7 @@ export abstract class AbstractJsonTest extends AbstractTest {
    * Loads the base file if it exists.
    */
   public loadBase() {
-    let file = this.jsonTests['base'];
+    const file = this.jsonTests['base'];
     this.baseFile = tu.TestUtil.fileExists(file, tu.TestPath.INPUT);
     this.baseTests = this.baseFile ? tu.TestUtil.loadJson(this.baseFile) : {};
   }
@@ -168,5 +170,4 @@ export abstract class AbstractJsonTest extends AbstractTest {
    * @param args Arguments for the test method.
    */
   public abstract method(): void;
-
 }

@@ -12,19 +12,25 @@
 // limitations under the License.
 
 /**
- * @fileoverview An implementation of a test runner.
+ * @file An implementation of a test runner.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {AbstractTest} from '../classes/abstract_test';
-import {AbstractJsonTest} from '../classes/abstract_test';
+import * as process from 'process';
+import { AbstractTest } from '../classes/abstract_test';
+import { AbstractJsonTest } from '../classes/abstract_test';
 
-enum Warning {NONE, WARN, ERROR}
+enum Warning {
+  NONE,
+  WARN,
+  ERROR
+}
 
 enum Results {
   PASS = 'pass',
   FAIL = 'fail',
-  WARN = 'warn'}
+  WARN = 'warn'
+}
 
 /**
  * Console colors.
@@ -37,7 +43,6 @@ enum Color {
 }
 
 export class TestRunner {
-
   /**
    * Warning level of the runner.
    */
@@ -46,7 +51,7 @@ export class TestRunner {
   /**
    * Verbosity level.
    */
-  public verbose: number = 2;
+  public verbose = 2;
 
   /**
    * Strings to be output on a single line once its end is reached.
@@ -81,7 +86,7 @@ export class TestRunner {
   /**
    * Success status of the runner.
    *
-   * @return True if tests have passed.
+   * @returns True if tests have passed.
    */
   public success(): boolean {
     return this.status_ === Results.PASS;
@@ -100,7 +105,7 @@ export class TestRunner {
    * Test case runner.
    */
   public runTests() {
-    for (let i = 0, test; test = this.testQueue_[i]; i++) {
+    for (let i = 0, test; (test = this.testQueue_[i]); i++) {
       if (test instanceof AbstractJsonTest) {
         this.executeJsonTests(test);
       } else {
@@ -118,7 +123,7 @@ export class TestRunner {
     this.prepareJsonTest(testcase);
     this.outputLine(1, 'Running ' + testcase.information);
     if (this.warn && testcase.warn.length) {
-      for (let warn of testcase.warn) {
+      for (const warn of testcase.warn) {
         this.outputStart('No results specified for test: ' + warn);
         this.outputEnd(2, '[WARN]', Color.ORANGE);
         this.warningTests_.push(warn);
@@ -128,13 +133,12 @@ export class TestRunner {
       }
     }
     testcase.setUpTest();
-    for (let test of testcase.inputTests) {
+    for (const test of testcase.inputTests) {
       if (!test.test) {
         continue;
       }
       testcase.pick(test);
-      this.executeJsonTest(
-        test.name, testcase.method.bind(testcase));
+      this.executeJsonTest(test.name, testcase.method.bind(testcase));
     }
     testcase.tearDownTest();
   }
@@ -146,8 +150,7 @@ export class TestRunner {
    * @param func The actual test function.
    * @param args A list of arguments.
    */
-  public executeJsonTest(name: string,
-                         func: () => any) {
+  public executeJsonTest(name: string, func: () => any) {
     this.executeTest(name, func());
   }
 
@@ -159,10 +162,12 @@ export class TestRunner {
   public executeTests(testcase: AbstractTest) {
     this.outputLine(1, 'Running ' + testcase.information);
     testcase.setUpTest();
-    for (let propertyName in testcase) {
+    for (const propertyName in testcase) {
       if (propertyName.search('test') === 0) {
-        this.executeTest(propertyName,
-                         (testcase as any)[propertyName].bind(testcase));
+        this.executeTest(
+          propertyName,
+          (testcase as any)[propertyName].bind(testcase)
+        );
       }
     }
     testcase.tearDownTest();
@@ -205,7 +210,7 @@ export class TestRunner {
    *
    * @param output The output string.
    * @param color An optional color argument.
-   * @return The colored string.
+   * @returns The colored string.
    */
   public outputColor(output: string, color: Color | undefined): string {
     return color ? color + output + Color.WHITE : output;
@@ -221,8 +226,8 @@ export class TestRunner {
    */
   public outputLine(priority: number, output: string, opt_color?: Color) {
     output = this.outputColor(output, opt_color);
-    let mid = 80 - output.length;
-    output = output + (new Array(mid > 0 ? mid + 1 : 1)).join(' ');
+    const mid = 80 - output.length;
+    output = output + new Array(mid > 0 ? mid + 1 : 1).join(' ');
     this.output(priority, '\r' + output + '\n');
   }
 
@@ -246,21 +251,27 @@ export class TestRunner {
    */
   public outputEnd(priority: number, output: string, opt_color?: Color) {
     output = this.outputColor(output, opt_color);
-    let start = this.outputQueue.join(' ');
-    let mid = 80 - (start.length + output.length);
-    output = start + (new Array(mid > 0 ? mid + 1 : 1)).join(' ') + output;
-    output = this.verbose === 3 ? output + '\n' :
-      priority <= 1 ? '\r' + output + '\n' : '\r' + output;
+    const start = this.outputQueue.join(' ');
+    const mid = 80 - (start.length + output.length);
+    output = start + new Array(mid > 0 ? mid + 1 : 1).join(' ') + output;
+    output =
+      this.verbose === 3
+        ? output + '\n'
+        : priority <= 1
+        ? '\r' + output + '\n'
+        : '\r' + output;
     this.output(priority, output);
     this.outputQueue = [];
   }
 
   /**
    * Test case runner.
+   *
+   * @param query
    */
   public queryJsonTests(query: (x: AbstractJsonTest) => any): any[] {
-    let result = [];
-    for (let i = 0, test; test = this.testQueue_[i]; i++) {
+    const result = [];
+    for (let i = 0, test; (test = this.testQueue_[i]); i++) {
       if (test instanceof AbstractJsonTest) {
         this.prepareJsonTest(test);
         result.push(query(test));
@@ -308,5 +319,4 @@ export class TestRunner {
     this.succeededTests_.push(name);
     return;
   }
-
 }
