@@ -15,30 +15,30 @@
 // limitations under the License.
 
 /**
- * @fileoverview Testcases for number words.
- *
+ * @file Testcases for number words.
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import {LOCALE} from '../../speech-rule-engine/js/l10n/locale';
+import { LOCALE } from '../../speech-rule-engine/js/l10n/locale';
 
-import {SpeechTest} from './speech_test';
-
+import { SpeechTest } from './speech_test';
 
 export class NumberTest extends SpeechTest {
+  protected num = 1;
 
-  protected num: number = 1;
-
-  private kind: string = 'numberToWords';
+  private kind = 'numberToWords';
 
   /**
    * @override
    */
   public method() {
-    this.num = this.field('input') === undefined ? 0 :
-      parseInt(this.field('input'), 10);
+    this.num =
+      this.field('input') === undefined ? 0 : parseInt(this.field('input'), 10);
     this.executeTest(
-      this.field('input'), this.field('expected'), this.field('preference'));
+      this.field('input'),
+      this.field('expected'),
+      this.field('preference')
+    );
   }
 
   /**
@@ -60,8 +60,11 @@ export class NumberTest extends SpeechTest {
    * @override
    */
   public appendRuleExample(
-    _input: string, output: string, style: string, ...rest: string[]) {
+    _input: string,
+    output: string,
+    style: string,
+    ...rest: string[]
+  ) {
     super.appendRuleExample(this.num.toString(), output, style, ...rest);
   }
-
 }

@@ -408,6 +408,26 @@ Applies a TeX transformer to all `tex` fields in `INPUT` resulting in an `input`
 field with a mml expression, writing the output to the same file. Other useful
 transformers are found in `braille_transformer.ts`.
 
+
+To reuse tests that are actually in issue files, e.g., separate `.xml` files,
+use the following method:
+
+``` javascript
+gt.fromIssueFiles(dir, file, target);
+```
+
+Attaches tests from issue files in `dir` with the basename `file` to the
+`target` tests. For example, the following code will attach all expression for
+`issue_616` to the `fences` tests:
+
+``` javascript
+gt.loadIssueFile(ISSUE_DIR, 'issue_616', 'semantic/fences.json');
+```
+
+The content of the file `issue_616_0.xml` will be added as input with test name
+`issue_616_0` in the fences tests. Note, that currently expected values for
+these tests still need to be added manually or with a `fill_tests` method below.
+
 ## Filling Tests and Expected Values
 
 Tests can be generated or regenerated using the `fill_tests` module:

@@ -13,18 +13,17 @@
 // limitations under the License.
 
 /**
- * @fileoverview Utilities for firebase that work both in node and web.
- *
+ * @file Utilities for firebase that work both in node and web.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {JsonTest, JsonTests} from '../base/test_util';
+import { JsonTest, JsonTests } from '../base/test_util';
 import * as FC from './fire_constants';
 
 /**
  * Verbosity flag.
  */
-export let verbose: boolean = false;
+export const verbose = false;
 
 /**
  * Output method for controlling verbosity.
@@ -45,14 +44,24 @@ function output(str: string) {
  * @param {string} doc The document to add data to.
  * @param {any} data The data to upload.
  */
-export async function uploadData(db: any, collection: string,
-  doc: string, data: any) {
-  db.collection(collection).doc(doc).set(data).
-    then(() => {
-      output(`Data for document ${doc} successfully uploaded to collection ${collection}`);
-    }).
-    catch((error: Error) => {
-      output(`Uploading data to document ${doc} in collection ${collection} failed with: ${error}`);
+export async function uploadData(
+  db: any,
+  collection: string,
+  doc: string,
+  data: any
+) {
+  db.collection(collection)
+    .doc(doc)
+    .set(data)
+    .then(() => {
+      output(
+        `Data for document ${doc} successfully uploaded to collection ${collection}`
+      );
+    })
+    .catch((error: Error) => {
+      output(
+        `Uploading data to document ${doc} in collection ${collection} failed with: ${error}`
+      );
     });
 }
 
@@ -65,17 +74,28 @@ export async function uploadData(db: any, collection: string,
  * @param {any} data The data to upload.
  * @param nesting
  */
-export async function updateData(db: any, collection: string,
-  path: string, data: any, nesting: string[]) {
-  let entry: JsonTest = {};
-  let key = nesting.join('.');
+export async function updateData(
+  db: any,
+  collection: string,
+  path: string,
+  data: any,
+  nesting: string[]
+) {
+  const entry: JsonTest = {};
+  const key = nesting.join('.');
   entry[key] = data;
-  db.collection(collection).doc(path).update(entry).
-    then(() => {
-      output(`Data successfully updated in collection ${collection} with path ${path}`);
-    }).
-    catch((error: Error) => {
-      output(`Updating data in collection ${collection} with path ${path} failed with: ${error}`);
+  db.collection(collection)
+    .doc(path)
+    .update(entry)
+    .then(() => {
+      output(
+        `Data successfully updated in collection ${collection} with path ${path}`
+      );
+    })
+    .catch((error: Error) => {
+      output(
+        `Updating data in collection ${collection} with path ${path} failed with: ${error}`
+      );
     });
 }
 
@@ -85,10 +105,10 @@ export async function updateData(db: any, collection: string,
  * @param {any} db The database.
  * @param {string} collection The collection containing the document.
  * @param {string} path The path to the data to download.
- * @return The data content.
+ * @returns The data content.
  */
 export async function downloadData(db: any, collection: string, path: string) {
-  let doc = await db.collection(collection).doc(path).get();
+  const doc = await db.collection(collection).doc(path).get();
   return doc.data();
 }
 
@@ -100,9 +120,14 @@ export async function downloadData(db: any, collection: string, path: string) {
  * @param {string} path The path to the data to download.
  * @param {any=} value An optional value for the path.
  */
-export async function setPath(db: any, collection: string, path: string, value: any = true) {
-  let doc = path.split('/')[0];
-  let paths = await db.collection(collection).doc(doc).get();
+export async function setPath(
+  db: any,
+  collection: string,
+  path: string,
+  value: any = true
+) {
+  const doc = path.split('/')[0];
+  const paths = await db.collection(collection).doc(doc).get();
   let data = paths.data();
   if (!data) {
     data = {};
@@ -117,11 +142,11 @@ export async function setPath(db: any, collection: string, path: string, value: 
  * @param {any} db The database.
  * @param {string} collection The collection containing the document.
  * @param {string} doc The document name.
- * @return The paths object.
+ * @returns The paths object.
  */
 export async function getPaths(db: any, collection: string, doc: string) {
-  let path = doc.split('/')[0];
-  let paths = await db.collection(collection).doc(path).get();
+  const path = doc.split('/')[0];
+  const paths = await db.collection(collection).doc(path).get();
   return paths.data();
 }
 
@@ -133,19 +158,25 @@ export async function getPaths(db: any, collection: string, doc: string) {
  * @param {string} collB Target collection.
  * @param {string} doc The document to update.
  * @param callback
- * @return List of info on loaded documents.
+ * @returns List of info on loaded documents.
  */
 export async function updateCollection(
-  db: any, collA: string, collB: string, doc: string, callback: Function =
-  (_x: string, _y: string[]) => {}) {
-  let result: {name: string; information: string; path: string}[] = [];
-  let paths = await getPaths(db, collA, doc);
+  db: any,
+  collA: string,
+  collB: string,
+  doc: string,
+  callback: Function = (_x: string, _y: string[]) => {}
+) {
+  const result: { name: string; information: string; path: string }[] = [];
+  const paths = await getPaths(db, collA, doc);
   if (!paths) {
     return result;
   }
-  let pathsB = await getPaths(db, collB, doc);
-  for (let [path, [name, info]] of
-    Object.entries(paths) as [string, [string, string]]) {
+  const pathsB = await getPaths(db, collB, doc);
+  for (const [path, [name, info]] of Object.entries(paths) as [
+    string,
+    [string, string]
+  ]) {
     callback(path, Object.keys(paths));
     result.push({
       name: name,
@@ -156,8 +187,8 @@ export async function updateCollection(
     if (pathsB && pathsB[path] && !path.match(/^nemeth\/rules/)) {
       continue;
     }
-    let dataA = await downloadData(db, collA, path);
-    let dataB = await downloadData(db, collB, path);
+    const dataA = await downloadData(db, collA, path);
+    const dataB = await downloadData(db, collB, path);
     if (!dataB) {
       setTestsStatus(dataA);
       setTestsFeedback(dataA);
@@ -166,12 +197,12 @@ export async function updateCollection(
       continue;
     }
     // Update single entries only for documents.
-    let tests = dataB.tests;
-    for (let key of dataA.order) {
+    const tests = dataB.tests;
+    for (const key of dataA.order) {
       if (tests[key]) {
         continue;
       }
-      let entryA: JsonTest = dataA.tests[key];
+      const entryA: JsonTest = dataA.tests[key];
       setStatus(entryA);
       setFeedback(entryA);
       await updateData(db, collB, path, entryA, ['tests', key]);
@@ -190,11 +221,15 @@ export async function updateCollection(
  * @param value
  */
 export async function updateField(
-  db: any, collection: string, path: string, field: string, value: any) {
-  let data = await downloadData(db, collection, path);
-  for (let key of data.order) {
-    await updateData(db, collection, path, value,
-                     ['tests', key, field]);
+  db: any,
+  collection: string,
+  path: string,
+  field: string,
+  value: any
+) {
+  const data = await downloadData(db, collection, path);
+  for (const key of data.order) {
+    await updateData(db, collection, path, value, ['tests', key, field]);
   }
 }
 
@@ -209,18 +244,23 @@ export async function updateField(
  * @param {string} field The field name.
  */
 export async function restoreField(
-  db: any, collA: string, collB: string, doc: string, field: string) {
-  let dataA = await downloadData(db, collA, doc);
-  let dataB = await downloadData(db, collB, doc);
+  db: any,
+  collA: string,
+  collB: string,
+  doc: string,
+  field: string
+) {
+  const dataA = await downloadData(db, collA, doc);
+  const dataB = await downloadData(db, collB, doc);
   if (!dataB) {
     return;
   }
-  for (let key of dataB.order) {
-    let testA = dataA.tests[key];
+  for (const key of dataB.order) {
+    const testA = dataA.tests[key];
     if (!testA) {
       continue;
     }
-    let value = testA[field];
+    const value = testA[field];
     if (typeof value === 'undefined') {
       continue;
     }
@@ -235,7 +275,7 @@ export async function restoreField(
  * @param {JsonTests} tests The tests object.
  */
 function setTestsStatus(tests: JsonTests) {
-  for (let entry of Object.values(tests.tests)) {
+  for (const entry of Object.values(tests.tests)) {
     setStatus(entry);
   }
 }
@@ -255,7 +295,7 @@ function setStatus(entry: JsonTest) {
  * @param {JsonTests} tests The tests object.
  */
 function setTestsFeedback(tests: JsonTests) {
-  for (let entry of Object.values(tests.tests)) {
+  for (const entry of Object.values(tests.tests)) {
     setFeedback(entry);
   }
 }

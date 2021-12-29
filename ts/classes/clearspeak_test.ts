@@ -15,17 +15,16 @@
 // limitations under the License.
 
 /**
- * @fileoverview Abstract class for clearspeak rule tests.
+ * @file Abstract class for clearspeak rule tests.
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import {EngineConst} from '../../speech-rule-engine/js/common/engine';
+import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
 import * as System from '../../speech-rule-engine/js/common/system';
 
-import {SpeechTest} from './speech_test';
+import { SpeechTest } from './speech_test';
 
 export class ClearspeakTest extends SpeechTest {
-
   /**
    * @override
    */
@@ -34,24 +33,21 @@ export class ClearspeakTest extends SpeechTest {
   /**
    * @override
    */
-  public setUpTest() {
-    super.setUpTest();
-    System.setupEngine(
-      {markup: EngineConst.Markup.PUNCTUATION});
+  public async setUpTest() {
+    await super.setUpTest();
+    return System.setupEngine({ markup: EngineConst.Markup.PUNCTUATION });
   }
 
   /**
    * @override
    */
   public tearDownTest() {
-    System.setupEngine(
-      {markup: EngineConst.Markup.NONE});
+    System.setupEngine({ markup: EngineConst.Markup.NONE });
     super.tearDownTest();
   }
 }
 
 export class BrailleLayoutTest extends SpeechTest {
-
   /**
    * @override
    */
@@ -60,18 +56,16 @@ export class BrailleLayoutTest extends SpeechTest {
   /**
    * @override
    */
-  public setUpTest() {
-    super.setUpTest();
-    System.setupEngine(
-      {markup: EngineConst.Markup.LAYOUT});
+  public async setUpTest() {
+    await super.setUpTest();
+    return System.setupEngine({ markup: EngineConst.Markup.LAYOUT });
   }
 
   /**
    * @override
    */
   public tearDownTest() {
-    System.setupEngine(
-      {markup: EngineConst.Markup.NONE});
+    System.setupEngine({ markup: EngineConst.Markup.NONE });
     super.tearDownTest();
   }
 
@@ -79,9 +73,12 @@ export class BrailleLayoutTest extends SpeechTest {
    * @override
    */
   public appendRuleExample(
-    input: string, output: string, style: string, ...rest: string[]) {
+    input: string,
+    output: string,
+    style: string,
+    ...rest: string[]
+  ) {
     output = output.replace(/\n/g, '<br>\n');
     super.appendRuleExample(input, output, style, ...rest);
   }
-
 }

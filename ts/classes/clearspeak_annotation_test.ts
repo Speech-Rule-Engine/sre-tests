@@ -14,17 +14,16 @@
 // With support from the Mozilla Foundation under a MOSS grant.
 
 /**
- * @fileoverview Test simple annotations for Clearspeak.
+ * @file Test simple annotations for Clearspeak.
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import {SemanticAnnotations} from '../../speech-rule-engine/js/semantic_tree/semantic_annotations';
+import { annotators } from '../../speech-rule-engine/js/semantic_tree/semantic_annotations';
 import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
 
-import {AbstractJsonTest} from './abstract_test';
+import { AbstractJsonTest } from './abstract_test';
 
 export class ClearspeakAnnotationTest extends AbstractJsonTest {
-
   /**
    * @override
    */
@@ -33,8 +32,7 @@ export class ClearspeakAnnotationTest extends AbstractJsonTest {
   /**
    * The clearspeak annotator to test.
    */
-  public annotator: any =
-    SemanticAnnotations.annotators['clearspeak:simple'];
+  public annotator: any = annotators.get('clearspeak:simple');
 
   /**
    * Tests simple annotator for Clearspeak.
@@ -43,12 +41,14 @@ export class ClearspeakAnnotationTest extends AbstractJsonTest {
    * @param expected The expression is simple or not.
    */
   public executeTest(mml: string, expected: boolean) {
-    let mathMl = '<math xmlns="http://www.w3.org/1998/Math/MathML">' +
-      mml + '</math>';
-    let semantic = Semantic.getTreeFromString(mathMl);
+    const mathMl =
+      '<math xmlns="http://www.w3.org/1998/Math/MathML">' + mml + '</math>';
+    const semantic = Semantic.getTreeFromString(mathMl);
     this.annotator.annotate(semantic.root);
-    this.assert.equal(semantic.root.hasAnnotation('clearspeak', 'simple'),
-                      expected);
+    this.assert.equal(
+      semantic.root.hasAnnotation('clearspeak', 'simple'),
+      expected
+    );
   }
 
   /**

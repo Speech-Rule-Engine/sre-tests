@@ -15,31 +15,33 @@
 // limitations under the License.
 
 /**
- * @fileoverview Testcases for math speech rules. Running directly with Jest.
+ * @file Testcases for math speech rules. Running directly with Jest.
  * @author sorge@google.com (Volker Sorge)
  */
 
-import {AbstractJsonTest} from './abstract_test';
-import {Component, Action} from '../../speech-rule-engine/js/rule_engine/speech_rule';
+import { AbstractJsonTest } from './abstract_test';
+import {
+  Component,
+  Action
+} from '../../speech-rule-engine/js/rule_engine/speech_rule';
 
 export class SpeechRuleTest extends AbstractJsonTest {
-
   private _fromString: Map<string, (p1: string) => any> = new Map([
     ['Grammar', Component.grammarFromString as (p1: string) => any],
     ['Attributes', Component.attributesFromString as (p1: string) => any],
     ['Components', Component.fromString as (p1: string) => any],
     ['Actions', Action.fromString as (p1: string) => any],
-    ['AttributesList', (inp: string) =>
-      Component.fromString(inp).getAttributes()]
-  ],
-  );
+    [
+      'AttributesList',
+      (inp: string) => Component.fromString(inp).getAttributes()
+    ]
+  ]);
 
   private _toString = new Map([
     ['Grammar', (inp: any) => inp.grammarToString()],
-    ['Attributes',  (inp: any) => inp.attributesToString()],
+    ['Attributes', (inp: any) => inp.attributesToString()],
     ['Components', (inp: any) => inp.toString()]
-  ],
-  );
+  ]);
 
   /**
    * @override
@@ -57,22 +59,26 @@ export class SpeechRuleTest extends AbstractJsonTest {
    * @param actual The actual computed value.
    */
   public assertStructEquals(expected: any, actual: any) {
-    this.assert.deepEqual(JSON.parse(JSON.stringify(expected)),
-                          JSON.parse(JSON.stringify(actual)));
+    this.assert.deepEqual(
+      JSON.parse(JSON.stringify(expected)),
+      JSON.parse(JSON.stringify(actual))
+    );
   }
 
   /**
    * @override
    */
   public method() {
-    let fromString = this._fromString.get(this.field('kind'));
+    const fromString = this._fromString.get(this.field('kind'));
     if (!fromString) {
       this.assert.fail();
     }
-    let received = this.pickComponent(fromString(this.field('input')),
-                                      this.field('pick'));
+    const received = this.pickComponent(
+      fromString(this.field('input')),
+      this.field('pick')
+    );
     if (this.field('string')) {
-      let toString = this._toString.get(this.field('string'));
+      const toString = this._toString.get(this.field('string'));
       if (!toString) {
         this.assert.fail();
       }
@@ -89,14 +95,13 @@ export class SpeechRuleTest extends AbstractJsonTest {
    * @param components Components list to pick, as key value pairs. Note that if
    *     the value is -1 the entire component will be picked.
    */
-  private pickComponent(element: any, components: [string, string|number][]) {
+  private pickComponent(element: any, components: [string, string | number][]) {
     if (!components) {
       return element;
     }
-    for (let [key, position] of components) {
-      element = (position === -1) ? element[key] : element[key][position];
+    for (const [key, position] of components) {
+      element = position === -1 ? element[key] : element[key][position];
     }
     return element;
   }
-
 }

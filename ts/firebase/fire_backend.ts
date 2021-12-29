@@ -13,18 +13,17 @@
 // limitations under the License.
 
 /**
- * @fileoverview Functionality to work server side with firebase, in particular
+ * @file Functionality to work server side with firebase, in particular
  *     to fill, update and harvest firestore.
- *
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
 import admin = require('firebase-admin');
 import * as path from 'path';
-import {JsonTest, JsonTests, TestUtil} from '../base/test_util';
-import {AbstractJsonTest} from '../classes/abstract_test';
-import {get} from '../classes/test_factory';
-import {addToFile} from '../generate/fill_tests';
+import { JsonTest, JsonTests, TestUtil } from '../base/test_util';
+import { AbstractJsonTest } from '../classes/abstract_test';
+import { get } from '../classes/test_factory';
+import { addToFile } from '../generate/fill_tests';
 import * as FC from './fire_constants';
 import * as FU from './fire_util';
 
@@ -34,9 +33,8 @@ import * as FU from './fire_util';
  * @param {string} credentials File with credentials.
  * @param {string} url URL of the firebase.
  */
-export function initFirebase(
-  credentials: string, url: string = FC.NemethUrl) {
-  let serviceAccount = require(credentials);
+export function initFirebase(credentials: string, url: string = FC.NemethUrl) {
+  const serviceAccount = require(credentials);
   admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
     databaseURL: url
@@ -51,8 +49,11 @@ export function initFirebase(
  * @param {string} file The test file to upload.
  * @param {string} collection The collection name.
  */
-export async function uploadTest(db: any, file: string,
-  collection: string = FC.TestsCollection) {
+export async function uploadTest(
+  db: any,
+  file: string,
+  collection: string = FC.TestsCollection
+) {
   let testcases: AbstractJsonTest = null;
   try {
     testcases = get(file);
@@ -63,27 +64,29 @@ export async function uploadTest(db: any, file: string,
     return;
   }
   testcases.prepare();
-  let testMap: JsonTests = {};
-  let order = testcases.inputTests.map(x => {
+  const testMap: JsonTests = {};
+  const order = testcases.inputTests.map((x) => {
     testMap[x.name] = x;
     return x.name;
   });
-  FU.uploadData(db, collection, testcases['jsonFile'],
-                {information: testcases.information,
-                 name: testcases.jsonTests.name,
-                 order: order,
-                 tests: testMap
-                });
-  FU.setPath(db, collection, testcases['jsonFile'],
-             [testcases.jsonTests.name, testcases.information]);
+  FU.uploadData(db, collection, testcases['jsonFile'], {
+    information: testcases.information,
+    name: testcases.jsonTests.name,
+    order: order,
+    tests: testMap
+  });
+  FU.setPath(db, collection, testcases['jsonFile'], [
+    testcases.jsonTests.name,
+    testcases.information
+  ]);
 }
 
 /**
- * @return Promise with the list of uids.
+ * @returns Promise with the list of uids.
  */
 export async function getUsers() {
-  let users = await admin.auth().listUsers();
-  return users.users.map(y => y.uid);
+  const users = await admin.auth().listUsers();
+  return users.users.map((y) => y.uid);
 }
 
 // This forces an update of a field for every user. Be careful!
@@ -94,11 +97,15 @@ export async function getUsers() {
  * @param value
  */
 export async function updateField(
-  db: any, doc: string, field: string, value: any) {
-  let users = await getUsers();
-  for (let user of users) {
-    let paths = await FU.getPaths(db, user, doc);
-    for (let path of Object.keys(paths)) {
+  db: any,
+  doc: string,
+  field: string,
+  value: any
+) {
+  const users = await getUsers();
+  for (const user of users) {
+    const paths = await FU.getPaths(db, user, doc);
+    for (const path of Object.keys(paths)) {
       FU.updateField(db, user, path, field, value);
     }
   }
@@ -111,10 +118,9 @@ export async function updateField(
  * @param doc Document with full path.
  * @param field The field torestore.
  */
-export async function restoreField(
-  db: any, doc: string, field: string) {
-  let users = await getUsers();
-  for (let user of users) {
+export async function restoreField(db: any, doc: string, field: string) {
+  const users = await getUsers();
+  for (const user of users) {
     await FU.restoreField(db, FC.TestsCollection, user, doc, field);
   }
   console.log('Done restoring fields');
@@ -122,12 +128,13 @@ export async function restoreField(
 
 /**
  * Backup the firebase.
+ *
  * @param {any} db The database.
  * @param {string = '/tmp/backup'} dir The backup directory.
  */
-export async function backup(db: any, dir: string = '/tmp/backup') {
-  let users = await getUsers();
-  for (let user of users) {
+export async function backup(db: any, dir = '/tmp/backup') {
+  const users = await getUsers();
+  for (const user of users) {
     await downloadUser(db, user, dir);
   }
   await downloadUser(db, FC.TestsCollection, dir);
@@ -136,19 +143,23 @@ export async function backup(db: any, dir: string = '/tmp/backup') {
 
 /**
  * Backs up a single user.
+ *
  * @param {any} db The database.
  * @param {string} user The user as a hash string.
  * @param {string = '/tmp/backup'} dir The backup directoy.
  */
 export async function downloadUser(
-  db: any, user: string, dir: string = '/tmp/backup') {
-  let paths = await FU.getPaths(db, user, FC.NemethCollection);
+  db: any,
+  user: string,
+  dir = '/tmp/backup'
+) {
+  const paths = await FU.getPaths(db, user, FC.NemethCollection);
   TestUtil.saveJson(`${dir}/${user}/paths.json`, paths);
   if (!paths) {
     return;
   }
-  for (let path of Object.keys(paths)) {
-    let data = await FU.downloadData(db, user, path);
+  for (const path of Object.keys(paths)) {
+    const data = await FU.downloadData(db, user, path);
     if (data) {
       TestUtil.saveJson(`${dir}/${user}/` + path, data);
     }
@@ -167,25 +178,30 @@ export async function downloadUser(
  * @param {string} user The user authentication.
  * @param {string = '/tmp/backup'} dir The backup directory.
  */
-export function loadUser(user: string, dir: string = '/tmp/backup') {
-  let basepath = path.join(dir, user);
-  let paths = TestUtil.loadJson(path.join(basepath, 'paths.json'));
-  for (let file of Object.keys(paths)) {
+export function loadUser(user: string, dir = '/tmp/backup') {
+  const basepath = path.join(dir, user);
+  const paths = TestUtil.loadJson(path.join(basepath, 'paths.json'));
+  for (const file of Object.keys(paths)) {
     paths[file] = TestUtil.loadJson(path.join(basepath, file));
   }
   return paths;
 }
 
-
 declare type TestFilter = (test: JsonTest) => boolean;
 
-let changedFilter: TestFilter =
-  (test: JsonTest) => test[FC.Interaction] === FC.Status.CHANGED;
+const changedFilter: TestFilter = (test: JsonTest) =>
+  test[FC.Interaction] === FC.Status.CHANGED;
 
-export function filterTests(tests: JsonTests,
-                            filter: TestFilter = changedFilter) {
-  let result: JsonTests = {};
-  for (let [key, test] of Object.entries(tests)) {
+/**
+ * @param tests
+ * @param filter
+ */
+export function filterTests(
+  tests: JsonTests,
+  filter: TestFilter = changedFilter
+) {
+  const result: JsonTests = {};
+  for (const [key, test] of Object.entries(tests)) {
     if (filter(test)) {
       result[key] = test;
     }
@@ -193,11 +209,17 @@ export function filterTests(tests: JsonTests,
   return result;
 }
 
-export function filterFiles(tests: JsonTests,
-                            filter: TestFilter = changedFilter) {
-  let result: JsonTests = {};
-  for (let [path, test] of Object.entries(tests)) {
-    let changed = filterTests(test.tests, filter);
+/**
+ * @param tests
+ * @param filter
+ */
+export function filterFiles(
+  tests: JsonTests,
+  filter: TestFilter = changedFilter
+) {
+  const result: JsonTests = {};
+  for (const [path, test] of Object.entries(tests)) {
+    const changed = filterTests(test.tests, filter);
     if (Object.keys(changed).length) {
       result[path] = changed;
     }
@@ -207,35 +229,48 @@ export function filterFiles(tests: JsonTests,
 
 /**
  * Find all tests that are changed (i.e., either changed or with some feedback).
+ *
  * @param {JsonTests} tests The users tests.
  */
 export function changedTests(tests: JsonTests) {
   return filterFiles(
-    tests, (test: JsonTest) => test[FC.Interaction] === FC.Status.CHANGED ||
-      test[FC.FeedbackStatus] !== FC.Feedback.CORRECT);
+    tests,
+    (test: JsonTest) =>
+      test[FC.Interaction] === FC.Status.CHANGED ||
+      test[FC.FeedbackStatus] !== FC.Feedback.CORRECT
+  );
 }
 
+/**
+ * @param tests
+ */
 export function feedbackTests(tests: JsonTests) {
   return filterFiles(
-    tests, (test: JsonTest) => test[FC.FeedbackStatus] !== FC.Feedback.CORRECT);
+    tests,
+    (test: JsonTest) => test[FC.FeedbackStatus] !== FC.Feedback.CORRECT
+  );
 }
 
-
+/**
+ * @param tests
+ */
 export function editedTests(tests: JsonTests) {
   return filterFiles(tests);
 }
 
+/**
+ * @param tests
+ */
 export function updateEditedTests(tests: JsonTests) {
-  let edited = editedTests(tests);
-  for (let [file, test] of Object.entries(edited)) {
-    let expected: JsonTest = {};
-    for (let [name, result] of Object.entries(test)) {
-      expected[name] = {expected: result.expected};
+  const edited = editedTests(tests);
+  for (const [file, test] of Object.entries(edited)) {
+    const expected: JsonTest = {};
+    for (const [name, result] of Object.entries(test)) {
+      expected[name] = { expected: result.expected };
     }
     addToFile(file, expected);
   }
 }
-
 
 /**
  * Updates Symbol mappings in SRE from edited Tests. The given file should be of
@@ -246,29 +281,36 @@ export function updateEditedTests(tests: JsonTests) {
  * @param {string} file The name of the test file.
  */
 export function updateSymbolMappings(tests: JsonTests, file: string) {
-  let changes: JsonTest = editedTests(tests);
-  let selection: JsonTest = changes[file];
-  let result: JsonTest = {};
+  const changes: JsonTest = editedTests(tests);
+  const selection: JsonTest = changes[file];
+  const result: JsonTest = {};
   if (!selection) {
     return result;
   }
-  for (let [key, value] of Object.entries(selection)) {
+  for (const [key, value] of Object.entries(selection)) {
     if ([...key].length > 1) {
       continue;
     }
-    let unicode = key.codePointAt(0).toString(16);
-    let filler = (4 - unicode.length <= 0) ? unicode :
-      new Array(4 - unicode.length + 1).join('0') + unicode;
+    const unicode = key.codePointAt(0).toString(16);
+    const filler =
+      4 - unicode.length <= 0
+        ? unicode
+        : new Array(4 - unicode.length + 1).join('0') + unicode;
     result[filler.toUpperCase()] = value.expected;
   }
-  let env = path.join(process.env['SRE_JSON_PATH'], '../..', 'mathmaps');
-  let mathmaps = path.join(
-    env, path.dirname(file),
-    path.basename(file).replace(/^default_characters_/, '').replace(/on$/, ''));
-  let json = TestUtil.loadJson(mathmaps) as JsonTest[];
-  for (let entry of json) {
+  const env = path.join(process.env['SRE_JSON_PATH'], '../..', 'mathmaps');
+  const mathmaps = path.join(
+    env,
+    path.dirname(file),
+    path
+      .basename(file)
+      .replace(/^default_characters_/, '')
+      .replace(/on$/, '')
+  );
+  const json = TestUtil.loadJson(mathmaps) as JsonTest[];
+  for (const entry of json) {
     if (entry.mappings) {
-      let replace = result[entry.key];
+      const replace = result[entry.key];
       if (replace !== undefined) {
         entry.mappings.default.default = replace;
       }

@@ -13,37 +13,50 @@
 // limitations under the License.
 
 /**
- * @fileoverview Front-end methods for document selection.
- *
+ * @file Front-end methods for document selection.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
 import * as fc from '../firebase/fire_constants';
 import * as lu from './local_util';
 
-
+/**
+ * @param id
+ * @param path
+ * @param info
+ * @param anchor
+ */
 export function addSection(
-  id: string, path: string, info: string, anchor: Element) {
+  id: string,
+  path: string,
+  info: string,
+  anchor: Element
+) {
   info = `Select ${info} to work on:`;
-  let hr = document.createElement('hr');
+  const hr = document.createElement('hr');
   hr.setAttribute(
     'style',
-    'width:100%;border-width:0;background-color:#B1DF84;color:#B1DF84;height:6px');
-  let outerDiv = document.createElement('div');
+    'width:100%;border-width:0;background-color:#B1DF84;color:#B1DF84;height:6px'
+  );
+  const outerDiv = document.createElement('div');
   outerDiv.classList.add('converter');
   outerDiv.id = id + 'table';
-  let innerDiv = document.createElement('div');
+  const innerDiv = document.createElement('div');
   innerDiv.classList.add('section');
   innerDiv.textContent = info;
-  let table = createTable(id, path);
+  const table = createTable(id, path);
   outerDiv.append(innerDiv, table);
   anchor.append(hr, outerDiv);
 }
 
+/**
+ * @param id
+ * @param path
+ */
 function createTable(id: string, path: string): Element {
-  let table = document.createElement('table');
+  const table = document.createElement('table');
   table.id = id;
-  let tr = document.createElement('tr');
+  const tr = document.createElement('tr');
   tr.classList.add('heading');
   tr.innerHTML = '<th>Name</th><th>Information</th><th>Path</th>';
   table.appendChild(tr);
@@ -59,15 +72,18 @@ function createTable(id: string, path: string): Element {
  * @param path The regexp representing the path to choose the documents.
  */
 export function addDocuments(node: Element, path: string) {
-  let storage = lu.getStorage(fc.NemethProjectDocuments);
+  const storage = lu.getStorage(fc.NemethProjectDocuments);
   if (storage) {
-    let documents = JSON.parse(storage);
-    createRows(documents.filter((doc: any) => doc.path.match(path)), node);
+    const documents = JSON.parse(storage);
+    createRows(
+      documents.filter((doc: any) => doc.path.match(path)),
+      node
+    );
   }
 }
 
 /**
- * @return The ID of the current user.
+ * @returns The ID of the current user.
  */
 export function getUid() {
   return (lu.getFirebase().auth() as any).getUid();
@@ -80,14 +96,14 @@ export function getUid() {
  * @param anchor The table element where to add the rows.
  */
 function createRows(documents: any, anchor: Element) {
-  documents.sort((x: any, y: any) =>
-    ('' + x.name).localeCompare(y.name));
-  for (let entry of documents) {
-    let row = document.createElement('tr');
+  documents.sort((x: any, y: any) => ('' + x.name).localeCompare(y.name));
+  for (const entry of documents) {
+    const row = document.createElement('tr');
     row.setAttribute('tabindex', '0');
     row.classList.add('selection');
-    row.innerHTML = `<td class="selection">${entry.name}</td>`
-      + `<td>${entry.information}</td><td>${entry.path}</td>`;
+    row.innerHTML =
+      `<td class="selection">${entry.name}</td>` +
+      `<td>${entry.information}</td><td>${entry.path}</td>`;
     row.addEventListener('click', () => {
       lu.setStorage(fc.NemethProjectPath, entry.path);
       lu.setStorage(fc.NemethProjectUser, getUid());

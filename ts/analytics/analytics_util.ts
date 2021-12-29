@@ -13,30 +13,27 @@
 // limitations under the License.
 
 /**
- * @fileoverview Some base methods for analytics.
- *
+ * @file Some base methods for analytics.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {Trie} from '../../speech-rule-engine/js/indexing/trie';
+import { Trie } from '../../speech-rule-engine/js/indexing/trie';
 import * as System from '../../speech-rule-engine/js/common/system';
-import {Variables} from '../../speech-rule-engine/js/common/variables';
-import {SpeechRuleEngine} from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
-import {SpeechRule} from '../../speech-rule-engine/js/rule_engine/speech_rule';
+import { Variables } from '../../speech-rule-engine/js/common/variables';
+import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
+import { SpeechRule } from '../../speech-rule-engine/js/rule_engine/speech_rule';
 
-import {JsonFile, TestPath, TestUtil} from '../base/test_util';
+import { JsonFile, TestPath, TestUtil } from '../base/test_util';
 
 namespace AnalyticsUtil {
-
   // Removes duplicates from a list in O(n).
   /**
    * @param list
    */
   export function removeDuplicates<T>(list: T[]): T[] {
-    let entries: Map<T, boolean> = new Map();
-    for (let entry of list) {
+    const entries: Map<T, boolean> = new Map();
+    for (const entry of list) {
       entries.set(entry, true);
-
     }
     return Array.from(entries.keys());
   }
@@ -48,26 +45,37 @@ namespace AnalyticsUtil {
    * @param ext
    */
   export function fileJson(
-    prefix: string, json: JsonFile, name: string, ext: string = 'json') {
-    let path = `${TestPath.ANALYSIS + prefix}/${name}.${ext}`;
+    prefix: string,
+    json: JsonFile,
+    name: string,
+    ext = 'json'
+  ) {
+    const path = `${TestPath.ANALYSIS + prefix}/${name}.${ext}`;
     TestUtil.saveJson(path, json);
   }
 
-
+  /**
+   *
+   */
   export function initAllSets(): void {
-    for (let locale of Variables.LOCALES) {
-      System.setupEngine({locale: locale});
+    for (const locale of Variables.LOCALES) {
+      System.setupEngine({ locale: locale });
     }
   }
 
-  export function getAllSets(): {[name: string]: SpeechRule[]} {
+  /**
+   *
+   */
+  export function getAllSets(): { [name: string]: SpeechRule[] } {
     initAllSets();
-    let trie = SpeechRuleEngine.getInstance().trie;
-    let result: {[name: string]: SpeechRule[]} = {};
-    for (let [loc, rest] of Object.entries(SpeechRuleEngine.getInstance().enumerate())) {
-      for (let [mod, rules] of Object.entries(rest)) {
+    const trie = SpeechRuleEngine.getInstance().trie;
+    const result: { [name: string]: SpeechRule[] } = {};
+    for (const [loc, rest] of Object.entries(
+      SpeechRuleEngine.getInstance().enumerate()
+    )) {
+      for (const [mod, rules] of Object.entries(rest)) {
         if (mod === 'speech') {
-          for (let rule of Object.keys(rules)) {
+          for (const rule of Object.keys(rules)) {
             result[TestUtil.capitalize(rule) + TestUtil.capitalize(loc)] =
               Trie.collectRules_(trie.byConstraint([loc, mod, rule]));
           }
@@ -79,7 +87,6 @@ namespace AnalyticsUtil {
     }
     return result;
   }
-
 }
 
 export default AnalyticsUtil;

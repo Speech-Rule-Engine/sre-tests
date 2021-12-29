@@ -15,29 +15,28 @@
 // limitations under the License.
 
 /**
- * @fileoverview Factory for testcases form the classes in this directory.
- *
+ * @file Factory for testcases form the classes in this directory.
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import {TestError, TestPath, TestUtil} from '../base/test_util';
-import {AbstractJsonTest} from './abstract_test';
+import { TestError, TestPath, TestUtil } from '../base/test_util';
+import { AbstractJsonTest } from './abstract_test';
 
-import {ApiTest} from './api_test';
-import {ClearspeakAnnotationTest} from './clearspeak_annotation_test';
-import {BrailleLayoutTest, ClearspeakTest} from './clearspeak_test';
-import {CollapseTest} from './collapse_test';
-import {ColorPickerTest} from './color_picker_test';
-import {HtmlTest, XpathTest} from './dom_test';
-import {MarkupTest} from './markup_test';
-import {NumberTest} from './number_test';
-import {PrefixTest} from './prefix_test';
+import { ApiTest } from './api_test';
+import { ClearspeakAnnotationTest } from './clearspeak_annotation_test';
+import { BrailleLayoutTest, ClearspeakTest } from './clearspeak_test';
+import { CollapseTest } from './collapse_test';
+import { ColorPickerTest } from './color_picker_test';
+import { HtmlTest, XpathTest } from './dom_test';
+import { MarkupTest } from './markup_test';
+import { NumberTest } from './number_test';
+import { PrefixTest } from './prefix_test';
 import * as st from './semantic_test';
-import {SpeechRuleTest} from './speech_rule_test';
-import {SpeechTest} from './speech_test';
-import {SummaryTest} from './summary_test';
-import {SymbolTest} from './symbol_test';
-import {WalkerTest} from './walker_test';
+import { SpeechRuleTest } from './speech_rule_test';
+import { SpeechTest } from './speech_test';
+import { SummaryTest, SummarySpeechTest } from './summary_test';
+import { SymbolTest } from './symbol_test';
+import { WalkerTest } from './walker_test';
 
 const map = new Map<string, any>([
   ['api', ApiTest],
@@ -59,6 +58,7 @@ const map = new Map<string, any>([
   ['speech', SpeechTest],
   ['stree', st.SemanticTreeTest],
   ['summary', SummaryTest],
+  ['summarySpeech', SummarySpeechTest],
   ['symbol', SymbolTest],
   ['walker', WalkerTest],
   ['xpath', XpathTest]
@@ -68,17 +68,17 @@ const map = new Map<string, any>([
  * Retrieves and instantiates a test object for a given input json file.
  *
  * @param file The input json file.
- * @return The JSON test.
+ * @returns The JSON test.
  */
 export function get(file: string): AbstractJsonTest {
-  let filename = TestUtil.fileExists(file, TestPath.EXPECTED);
-  let json = TestUtil.loadJson(filename);
-  let factory = json['factory'] as string;
-  let constructor = map.get(factory);
+  const filename = TestUtil.fileExists(file, TestPath.EXPECTED);
+  const json = TestUtil.loadJson(filename);
+  const factory = json['factory'] as string;
+  const constructor = map.get(factory);
   if (!constructor) {
     throw new TestError('Bad factory name', file);
   }
-  let obj = new constructor();
+  const obj = new constructor();
   obj.jsonFile = file;
   obj.jsonTests = json;
   return obj;

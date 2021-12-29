@@ -12,16 +12,18 @@
 // limitations under the License.
 
 /**
- * @fileoverview Test for the color picker.
+ * @file Test for the color picker.
  * @author sorge@google.com (Volker Sorge)
  */
 
-import {Color, ColorPicker} from '../../speech-rule-engine/js/highlighter/color_picker';
+import {
+  Color,
+  ColorPicker
+} from '../../speech-rule-engine/js/highlighter/color_picker';
 
-import {AbstractJsonTest} from '../classes/abstract_test';
+import { AbstractJsonTest } from '../classes/abstract_test';
 
 export class ColorPickerTest extends AbstractJsonTest {
-
   /**
    * Tests if a given color object produces the correct rgba value. The test is
    * run on background colors.
@@ -30,7 +32,7 @@ export class ColorPickerTest extends AbstractJsonTest {
    * @param expected The expected rgba string.
    */
   public executeTest(color: Color, expected: string) {
-    let picker = new ColorPicker(color);
+    const picker = new ColorPicker(color);
     this.assert.equal(picker.rgba().background, expected);
   }
 
@@ -40,5 +42,4 @@ export class ColorPickerTest extends AbstractJsonTest {
   public method() {
     this.executeTest(this.field('input'), this.field('expected'));
   }
-
 }

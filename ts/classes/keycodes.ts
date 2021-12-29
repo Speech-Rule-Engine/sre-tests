@@ -1,7 +1,6 @@
-import {KeyCode as kc} from '../../speech-rule-engine/js/common/event_util';
+import { KeyCode as kc } from '../../speech-rule-engine/js/common/event_util';
 
-export const Key = new Map(
-[
+export const Key = new Map([
   ['ENTER', kc.ENTER],
   ['ESC', kc.ESC],
   ['SPACE', kc.SPACE],
@@ -53,5 +52,4 @@ export const Key = new Map(
   ['X', kc.X],
   ['Y', kc.Y],
   ['Z', kc.Z]
-]
-);
+]);

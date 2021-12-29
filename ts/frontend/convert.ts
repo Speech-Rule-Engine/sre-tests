@@ -13,35 +13,42 @@
 // limitations under the License.
 
 /**
- * @fileoverview Front-end methods for conversion.
- *
+ * @file Front-end methods for conversion.
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import {JsonTest} from '../base/test_util';
+import { JsonTest } from '../base/test_util';
 import * as FC from '../firebase/fire_constants';
-import {FireTest} from '../firebase/fire_test';
-import * as BT  from '../generate/braille_transformer';
-import {harvest as harvestButtons, init as initButtons, updateAccess} from './buttons';
+import { FireTest } from '../firebase/fire_test';
+import * as BT from '../generate/braille_transformer';
+import {
+  harvest as harvestButtons,
+  init as initButtons,
+  updateAccess
+} from './buttons';
 import * as LU from './local_util';
 
-let transformers: Map<string, BT.BrailleTransformer> =
-  new Map<string, BT.BrailleTransformer>([
-    ['NABT', new BT.Nabt2Unicode()],
-    ['BLDT', new BT.Bldt2Unicode()],
-    ['NABT-TABLE', new BT.Nabt2UnicodeTable()],
-    ['BLDT-TABLE', new BT.Bldt2UnicodeTable()],
-    ['SDF/JKL', new BT.Ascii2Braille('', '')],
-    ['1-6', new BT.Numeric2Braille('', '')]
-  ]);
+const transformers: Map<string, BT.BrailleTransformer> = new Map<
+  string,
+  BT.BrailleTransformer
+>([
+  ['NABT', new BT.Nabt2Unicode()],
+  ['BLDT', new BT.Bldt2Unicode()],
+  ['NABT-TABLE', new BT.Nabt2UnicodeTable()],
+  ['BLDT-TABLE', new BT.Bldt2UnicodeTable()],
+  ['SDF/JKL', new BT.Ascii2Braille('', '')],
+  ['1-6', new BT.Numeric2Braille('', '')]
+]);
 
-let backtransformers: Map<string, BT.BrailleTransformer> =
-  new Map<string, BT.BrailleTransformer>([
-    ['NABT', new BT.Unicode2Nabt()],
-    ['BLDT', new BT.Unicode2Bldt()],
-    ['SDF/JKL', new BT.Braille2Ascii('', '')],
-    ['1-6', new BT.Braille2Numeric('', '')]
-  ]);
+const backtransformers: Map<string, BT.BrailleTransformer> = new Map<
+  string,
+  BT.BrailleTransformer
+>([
+  ['NABT', new BT.Unicode2Nabt()],
+  ['BLDT', new BT.Unicode2Bldt()],
+  ['SDF/JKL', new BT.Braille2Ascii('', '')],
+  ['1-6', new BT.Braille2Numeric('', '')]
+]);
 
 let kind = 'NABT';
 
@@ -61,9 +68,9 @@ function backtransformer() {
   return backtransformers.get(kind.toUpperCase());
 }
 
-let field: {[name: string]: Element} = {};
+const field: { [name: string]: Element } = {};
 export let fireTest: FireTest = null;
-let current: string = '';
+let current = '';
 
 declare const MathJax: any;
 declare const firebase: any;
@@ -75,13 +82,16 @@ declare const firebase: any;
  */
 function setTest(test: JsonTest) {
   field.mathname.innerHTML = test.name;
-  field.mathexpression.innerHTML = test.input ?
-    `<math display="block">${test.input}</math>` : (
-      test.tex ? `\\[${test.tex}\\]`  : `${test.name}`);
+  field.mathexpression.innerHTML = test.input
+    ? `<math display="block">${test.input}</math>`
+    : test.tex
+    ? `\\[${test.tex}\\]`
+    : `${test.name}`;
   field.braille.innerHTML = test.expected as string;
   // TODO: Transform here, depending on the transformation value;
-  (field.input as HTMLTextAreaElement).value =
-    backtransformer().via(test.expected as string);
+  (field.input as HTMLTextAreaElement).value = backtransformer().via(
+    test.expected as string
+  );
   (field.input as HTMLTextAreaElement).focus();
   setReferences(test.reference);
   setStatus(test[FC.Interaction]);
@@ -92,37 +102,39 @@ function setTest(test: JsonTest) {
   updateAccess();
 }
 
-function setReferences(references: {[id: string]: string}) {
+/**
+ *
+ */
+function setReferences(references: { [id: string]: string }) {
   field.refname.innerHTML = '';
   field.references.innerHTML = '';
   if (!references) {
     return;
   }
-  let keys = Object.keys(references).sort((x, y) => {
-    let numX = parseInt(x.split('-')[1], 10);
-    let numY = parseInt(y.split('-')[1], 10);
-    return numX < numY ? -1 : (numX > numY ? 1 : 0);
+  const keys = Object.keys(references).sort((x, y) => {
+    const numX = parseInt(x.split('-')[1], 10);
+    const numY = parseInt(y.split('-')[1], 10);
+    return numX < numY ? -1 : numX > numY ? 1 : 0;
   });
-  let size = keys.length;
+  const size = keys.length;
   if (!size) {
     return;
   }
   field.refname.innerHTML = 'References:';
-  let links = [];
-  let makeRef = size > 10 ? optionReference : linkReference;
-  for (let id of keys) {
-    let url = references[id];
+  const links = [];
+  const makeRef = size > 10 ? optionReference : linkReference;
+  for (const id of keys) {
+    const url = references[id];
     links.push(makeRef(id, url));
   }
   if (size <= 10) {
     field.references.append(...links);
     return;
   }
-  let select = document.createElement('select');
-  select.setAttribute('onChange',
-                      'window.open(this.value, "_blank")');
+  const select = document.createElement('select');
+  select.setAttribute('onChange', 'window.open(this.value, "_blank")');
   select.classList.add('access');
-  let option = document.createElement('option');
+  const option = document.createElement('option');
   option.setAttribute('disabled', '');
   option.setAttribute('selected', '');
   option.textContent = 'Select:';
@@ -131,8 +143,12 @@ function setReferences(references: {[id: string]: string}) {
   field.references.appendChild(select);
 }
 
+/**
+ * @param id
+ * @param url
+ */
 function linkReference(id: string, url: string) {
-  let link = document.createElement('a');
+  const link = document.createElement('a');
   link.classList.add('reflink');
   link.setAttribute('href', url);
   link.setAttribute('target', '_blank');
@@ -140,8 +156,12 @@ function linkReference(id: string, url: string) {
   return link;
 }
 
+/**
+ * @param id
+ * @param url
+ */
 function optionReference(id: string, url: string) {
-  let option = document.createElement('option');
+  const option = document.createElement('option');
   option.classList.add('access');
   option.textContent = id;
   option.value = url;
@@ -163,21 +183,21 @@ function setFeedback(feedback: FC.Feedback) {
 function setStatus(status: FC.Status) {
   if (status !== undefined && field.statuscolor && field.statusvalue) {
     switch (status) {
-    case FC.Status.NEW:
-      field.statuscolor.className = 'green';
-      field.statusvalue.innerHTML = 'New';
-      break;
-    case FC.Status.VIEWED:
-      field.statuscolor.className = 'yellow';
-      field.statusvalue.innerHTML = 'Viewed';
-      break;
-    case FC.Status.CHANGED:
-      field.statuscolor.className = 'red';
-      field.statusvalue.innerHTML = 'Changed';
-      break;
-    default:
-      field.statuscolor.className = '';
-      field.statusvalue.innerHTML = '';
+      case FC.Status.NEW:
+        field.statuscolor.className = 'green';
+        field.statusvalue.innerHTML = 'New';
+        break;
+      case FC.Status.VIEWED:
+        field.statuscolor.className = 'yellow';
+        field.statusvalue.innerHTML = 'Viewed';
+        break;
+      case FC.Status.CHANGED:
+        field.statuscolor.className = 'red';
+        field.statusvalue.innerHTML = 'Changed';
+        break;
+      default:
+        field.statuscolor.className = '';
+        field.statusvalue.innerHTML = '';
     }
   }
 }
@@ -185,10 +205,10 @@ function setStatus(status: FC.Status) {
 /**
  * Method for getting tests from HTML elements.
  *
- * @return The test fields that are harvested from the HTML.
+ * @returns The test fields that are harvested from the HTML.
  */
 function getTest(): JsonTest {
-  return {expected: field.braille.innerHTML};
+  return { expected: field.braille.innerHTML };
 }
 
 /**
@@ -207,8 +227,8 @@ function initConversion(collection: string, file: string) {
  *
  */
 export function init() {
-  let path = LU.getStorage(FC.NemethProjectPath);
-  let user = LU.getStorage(FC.NemethProjectUser);
+  const path = LU.getStorage(FC.NemethProjectPath);
+  const user = LU.getStorage(FC.NemethProjectUser);
   if (path && user) {
     initConversion(user, path);
   }
@@ -232,9 +252,12 @@ async function initFile(collection: string, file: string) {
  * Automatically fills all the field elements.
  */
 function fillField() {
-  let nodes = document.evaluate('//*[@id]', document.body);
-  for (let node = nodes.iterateNext() as Element; node;
-       node = nodes.iterateNext() as Element) {
+  const nodes = document.evaluate('//*[@id]', document.body);
+  for (
+    let node = nodes.iterateNext() as Element;
+    node;
+    node = nodes.iterateNext() as Element
+  ) {
     field[node.id] = node;
   }
 }
@@ -243,7 +266,7 @@ function fillField() {
  * @param str
  */
 function translate(str: string) {
-  let [input, error] = transformer().cleanInput(str);
+  const [input, error] = transformer().cleanInput(str);
   return [input, transformer().via(input), error];
 }
 
@@ -251,7 +274,7 @@ function translate(str: string) {
  * Generates with keyboard interaction.
  */
 export function generate() {
-  let ip = field.input as HTMLTextAreaElement;
+  const ip = field.input as HTMLTextAreaElement;
   if (current === ip.value) {
     return;
   }
@@ -273,7 +296,7 @@ function collateKeys() {
   setTimeout(() => {
     collating = false;
     processKeys();
-    let ip = field.input as HTMLTextAreaElement;
+    const ip = field.input as HTMLTextAreaElement;
     if (ip.value[ip.value.length - 1] !== ',') {
       ip.value = ip.value + ',';
     }
@@ -284,15 +307,15 @@ function collateKeys() {
  *
  */
 function processKeys() {
-  let ip = field.input as HTMLTextAreaElement;
-  let cursor = ip.selectionStart;
+  const ip = field.input as HTMLTextAreaElement;
+  const cursor = ip.selectionStart;
   // let length = ip.value.length;
   field.braille.innerHTML = '';
   field.error.innerHTML = '';
   let [input, output, error] = translate(ip.value);
   if (error) {
-    field.error.innerHTML = 'Unknown ' +
-      (error.length > 1 ? 'elements ' : 'element ') + error;
+    field.error.innerHTML =
+      'Unknown ' + (error.length > 1 ? 'elements ' : 'element ') + error;
   }
   // Change status to changed
   if (input !== current) {
@@ -325,20 +348,26 @@ export function changeFormat() {
  * Changes the feedback entry.
  */
 export function changeFeedback() {
-  let value = parseInt((field.feedback as HTMLButtonElement).value, 10);
+  const value = parseInt((field.feedback as HTMLButtonElement).value, 10);
   fireTest.currentTest()[FC.FeedbackStatus] = value;
   fireTest.saveFeedback(value);
 }
 
 // Harvesting 2D tests.
+/**
+ *
+ */
 export function harvest() {
-  let path = LU.getStorage(FC.NemethProjectPath);
-  let user = LU.getStorage(FC.NemethProjectUser);
+  const path = LU.getStorage(FC.NemethProjectPath);
+  const user = LU.getStorage(FC.NemethProjectUser);
   if (path && user) {
     initHarvest(user, path);
   }
 }
 
+/**
+ *
+ */
 function clearHarvest() {
   (field.mathinput as HTMLTextAreaElement).value = '';
   (field.input as HTMLTextAreaElement).value = '';
@@ -346,6 +375,10 @@ function clearHarvest() {
   generate();
 }
 
+/**
+ * @param user
+ * @param path
+ */
 export async function initHarvest(user: string, path: string) {
   const db = firebase.app().firestore();
   fireTest = new FireTest(db, user, path, getTest, setTest);
@@ -356,13 +389,13 @@ export async function initHarvest(user: string, path: string) {
   console.log(user);
 }
 
-let currentMath: string = '';
+let currentMath = '';
 
 /**
  * Generates with keyboard interaction.
  */
 export function generateMath() {
-  let ip = field.mathinput as HTMLTextAreaElement;
+  const ip = field.mathinput as HTMLTextAreaElement;
   if (currentMath === ip.value) {
     return;
   }
@@ -371,7 +404,7 @@ export function generateMath() {
 }
 
 /**
- *
+ * @param math
  */
 function processMath(math: string) {
   field.mathexpression.innerHTML = `\\[${math}\\]`;
