@@ -92,73 +92,73 @@
       "expected": "10 피트, 1 인치"
     },
     "Enclose_0": {
-      "expected": "enclosed with box 12"
+      "expected": "12"
     },
     "Enclose_1": {
-      "expected": "crossed out 12"
+      "expected": "소거된 12"
     },
     "Enclose_2": {
-      "expected": "12 crossed out with 2"
+      "expected": "12 를 2 로 소거"
     },
     "Enclose_3": {
-      "expected": "12 crossed out with 2"
+      "expected": "12 를 2 로 소거"
     },
     "Enclose_4": {
-      "expected": "12 crossed out with 2"
+      "expected": "12 를 2 로 소거"
     },
     "Enclose_5": {
-      "expected": "12 crossed out with 2"
+      "expected": "12 를 2 로 소거"
     },
     "Enclose_6": {
-      "expected": "enclosed with box 12 end enclosed"
+      "expected": "12"
     },
     "Enclose_7": {
-      "expected": "crossed out 12 end crossout"
+      "expected": "12 를 2 로 소거"
     },
     "Enclose_8": {
-      "expected": "crossed out 12 with 2 end crossout"
+      "expected": "12 를 2 로 소거"
     },
     "Enclose_9": {
-      "expected": "crossed out 12 with 2 end crossout"
+      "expected": "12 를 2 로 소거"
     },
     "Enclose_10": {
-      "expected": "crossed out 12 with 2 end crossout"
+      "expected": "12 를 2 로 소거"
     },
     "Enclose_11": {
-      "expected": "crossed out 12 with 2 end crossout"
+      "expected": "12 를 2 로 소거"
     },
     "NestedRoots_0": {
-      "expected": "the square root of, the cube root of a, plus b"
+      "expected": "루트, 세제곱근 a, 더하기 b"
     },
     "NestedRoots_1": {
-      "expected": "the square root of, the fourth root of a, plus b"
+      "expected": "루트, 네제곱근 a, 더하기 b"
     },
     "NestedRoots_2": {
-      "expected": "the square root of, the square root of a, plus b"
+      "expected": "루트, 루트 a, 더하기 b"
     },
     "NestedRoots_3": {
-      "expected": "the positive square root of, the positive square root of a, plus b"
+      "expected": "플러스 루트, 플러스 루트 a, 더하기 b"
     },
     "NestedRoots_4": {
-      "expected": "the positive square root of, the positive square root of a, plus b, end root"
+      "expected": "플러스 루트, 플러스 루트 a, 더하기 b, 루트끝"
     },
     "Tensor_0": {
-      "expected": "left sub a left super b x right sub c right super d"
+      "expected": "왼쪽 아래첨자 a 왼쪽 위첨자 b x 오른쪽 아래첨자 c 오른쪽 위첨자 d"
     },
     "Tensor_1": {
-      "expected": "left sub a b left super g h x right sub c d right super e f"
+      "expected": "왼쪽 아래첨자 a b 왼쪽 위첨자 g h x 오른쪽 아래첨자 c d 오른쪽 위첨자 e f"
     },
     "Tensor_2": {
-      "expected": "left sub a left super b x; right super d"
+      "expected": "왼쪽 아래첨자 a 왼쪽 위첨자 b x; 오른쪽 위첨자 d"
     },
     "Tensor_3": {
-      "expected": "left sub a left super b x right sub c; r"
+      "expected": "왼쪽 아래첨자 a 왼쪽 위첨자 b x 오른쪽 아래첨자 c; r"
     },
     "Tensor_4": {
-      "expected": "l; left super b x right sub c right super d"
+      "expected": "l; 왼쪽 위첨자 b x 오른쪽 아래첨자 c 오른쪽 위첨자 d"
     },
     "Tensor_5": {
-      "expected": "left sub a; x right sub c right super d"
+      "expected": "왼쪽 아래첨자 a; x 오른쪽 아래첨자 c 오른쪽 위첨자 d"
     },
     "Set_0": {
       "expected": "the set of all x not in A such that B"
@@ -173,10 +173,10 @@
       "expected": "the set of all x not a member of A such that B"
     },
     "Set_4": {
-      "expected": "the set B"
+      "expected": "집합 B"
     },
     "Set_5": {
-      "expected": "the empty set"
+      "expected": "공집합"
     },
     "EncloseSpecial_0": {
       "expected": "vertical bar A"
@@ -191,88 +191,88 @@
       "expected": "A over horizontal bar"
     },
     "NestedRoots_5": {
-      "expected": "the positive square root of, the negative square root of a, end root, plus b, end root"
+      "expected": "플러스 루트, 마이너스 루트 a, 루트끝, 더하기 b, 루트끝"
     },
     "NamedSet_0": {
-      "expected": "the positive rational numbers"
+      "expected": "양의 유리수 집합"
     },
     "NamedSet_1": {
-      "expected": "the positive rational numbers"
+      "expected": "양의 유리수 집합"
     },
     "NamedSet_2": {
-      "expected": "the negative rational numbers"
+      "expected": "음의 유리수 집합"
     },
     "NamedSet_3": {
-      "expected": "the negative rational numbers"
+      "expected": "음의 유리수 집합"
     },
     "NamedSet_4": {
-      "expected": "q-two"
+      "expected": "이 차원 유리수 집합"
     },
     "NamedSet_5": {
-      "expected": "q-two"
+      "expected": "이 차원 유리수 집합"
     },
     "NamedSet_6": {
-      "expected": "n-two"
+      "expected": "이 차원 자연수 집합"
     },
     "NamedSet_7": {
-      "expected": "n-two"
+      "expected": "이 차원 자연수 집합"
     },
     "Unknown": {
       "expected": "a"
     },
     "MultiLines_0": {
-      "expected": "2 cases, Case 1: f of x, equals negative x, if x is less than 0. Case 2: f of x, equals x, if x is greater than or equal to 0"
+      "expected": "총 케이스 수 2, 케이스 1: f 의 x, 는 마이너스 x, if x 는 0 보다 작다. 케이스 2: f 의 x, 는 x, if x 는 0 보다 크거나 같다"
     },
     "MultiLines_1": {
-      "expected": "2 constraints, Constraint 1: f of x, equals negative x; if x is less than 0. Constraint 2: f of x, equals x, if x is greater than or equal to 0"
+      "expected": "총 조건문 수 2, 조건문 1: f 의 x, 는 마이너스 x; if x 는 0 보다 작다. 조건문 2: f 의 x, 는 x, if x 는 0 보다 크거나 같다"
     },
     "UnitFraction": {
-      "expected": "2 kilometers over b"
+      "expected": "b 분의 2 킬로미터"
     },
     "VulgarFraction": {
-      "expected": "10 over 20"
+      "expected": "20 분의 10"
     },
     "Decimal": {
       "expected": "the repeating decimal 1 point 4 followed by repeating digit 3"
     },
     "VertLine_SuchThat": {
-      "expected": "3 such that 6"
+      "expected": "3 은 6 의 약수이다"
     },
     "VectorEndDeterminant": {
-      "expected": "the determinant of the 2 by 2 matrix. Row 1: 2, 1 Row 2: 7, 5. end determinant"
+      "expected": "행렬식 2 행 2 열의 행렬.  1행: 2, 1  2행: 7, 5. 행렬식끝"
     },
     "SimpleExponentSquared_0": {
-      "expected": "3 raised to the 2 squared power"
+      "expected": "3 의 2 제곱 제곱"
     },
     "SimpleExponentSquared_1": {
-      "expected": "3 raised to the i squared power"
+      "expected": "3 의 i 제곱 제곱"
     },
     "SimpleExponentSquared_2": {
-      "expected": "3 raised to the two thirds squared power"
+      "expected": "3 의 3 분의 2 제곱 제곱"
     },
     "SimpleExponentCubed_0": {
-      "expected": "3 raised to the 2 cubed power"
+      "expected": "3 의 2 세제곱 제곱"
     },
     "SimpleExponentCubed_1": {
-      "expected": "3 raised to the i cubed power"
+      "expected": "3 의 i 세제곱 제곱"
     },
     "SimpleExponentCubed_2": {
-      "expected": "3 raised to the two thirds cubed power"
+      "expected": "3 의 3 분의 2 세제곱 제곱"
     },
     "MultiRel": {
-      "expected": "a is less than or equal to b equals c"
+      "expected": "a 작거나 같다 b 같다 c"
     },
     "PrefixFunctionAsExponent": {
       "expected": "3 raised to the sine of, open paren, 2 plus x, close paren, power"
     },
     "CompositeFunctionFences": {
-      "expected": "open paren, f plus g, close paren, of, open paren, 2 plus x, close paren"
+      "expected": "괄호 열고, f 더하기 g, 괄호 닫고, 의, 괄호 열고, 2 더하기 x, 괄호 닫고"
     },
     "LimUpper": {
-      "expected": "sum under I"
+      "expected": "I 에 대한 시그마"
     },
     "Overscript": {
-      "expected": "A under B"
+      "expected": "A B 까지"
     }
   }
 }
