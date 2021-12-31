@@ -1867,21 +1867,6 @@
       "test": true,
       "input": "<mfenced open=\"(\" close=\")\"><mtable><mtr><mtd><mi>x</mi></mtd></mtr><mtr><mtd><mi>y</mi></mtd></mtr></mtable></mfenced>",
       "preference": "sbrief"
-    },
-    "Sample_15_6_2_default": {
-      "test": true,
-      "input": "<mroot><mi>a</mi><mn>5</mn></mroot><mo>+</mo><mroot><mn>3</mn><mi>m</mi></mroot><mo>+</mo><mroot><mroot><mn>7</mn><mn>15</mn></mroot><mn>2</mn></mroot>",
-      "preference": "default"
-    },
-    "Sample_15_6_2_brief": {
-      "test": true,
-      "input": "<mroot><mi>a</mi><mn>5</mn></mroot><mo>+</mo><mroot><mn>3</mn><mi>m</mi></mroot><mo>+</mo><mroot><mroot><mn>7</mn><mn>15</mn></mroot><mn>2</mn></mroot>",
-      "preference": "brief"
-    },
-    "Sample_15_6_2_sbrief": {
-      "test": true,
-      "input": "<mroot><mi>a</mi><mn>5</mn></mroot><mo>+</mo><mroot><mn>3</mn><mi>m</mi></mroot><mo>+</mo><mroot><mroot><mn>7</mn><mn>15</mn></mroot><mn>2</mn></mroot>",
-      "preference": "sbrief"
     }
   }
 }
