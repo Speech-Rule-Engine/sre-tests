@@ -2,7 +2,8 @@
   "name": "KoreanMathspeakInference",
   "domain": "mathspeak",
   "locale": "ko",
-  "factory": "speech",
+  "modality": "speech",
+  "factory": "summarySpeech",
   "base": "input/common/inference.json",
   "information": "Korean Mathspeak Inference rules.",
   "active": "InferenceKorean",
@@ -43,6 +44,15 @@
     },
     "LeftLabel_2": {
       "expected": "추론 규칙 꼬리표 대문자 N 결론은 대문자 X 이고 전제는 3 개"
+    },
+    "Premises_0": {
+      "expected": "1st premise  axiom upper A"
+    },
+    "Premises_1": {
+      "expected": "1st premise  axiom upper A 2nd premise  axiom upper B"
+    },
+    "Premises_2": {
+      "expected": "1st premise  axiom upper A 2nd premise  axiom upper B 3rd premise  axiom upper C"
     }
   }
 }
