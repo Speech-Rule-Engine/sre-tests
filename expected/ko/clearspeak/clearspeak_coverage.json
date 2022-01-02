@@ -113,7 +113,7 @@
       "expected": "12"
     },
     "Enclose_7": {
-      "expected": "12 를 2 로 소거"
+      "expected": "소거시작 12 소거끝"
     },
     "Enclose_8": {
       "expected": "12 를 2 로 소거"
@@ -179,16 +179,16 @@
       "expected": "공집합"
     },
     "EncloseSpecial_0": {
-      "expected": "vertical bar A"
+      "expected": "세로선 A"
     },
     "EncloseSpecial_1": {
-      "expected": "A horizontal bar"
+      "expected": "A 윗줄"
     },
     "EncloseSpecial_2": {
-      "expected": "A vertical bar"
+      "expected": "A 세로선"
     },
     "EncloseSpecial_3": {
-      "expected": "A over horizontal bar"
+      "expected": "A 아랫 줄"
     },
     "NestedRoots_5": {
       "expected": "플러스 루트, 마이너스 루트 a, 루트끝, 더하기 b, 루트끝"
@@ -233,7 +233,7 @@
       "expected": "20 분의 10"
     },
     "Decimal": {
-      "expected": "the repeating decimal 1 point 4 followed by repeating digit 3"
+      "expected": "순환소수 1 점 4 순환마디 3"
     },
     "VertLine_SuchThat": {
       "expected": "3 은 6 의 약수이다"
@@ -263,7 +263,7 @@
       "expected": "a 작거나 같다 b 같다 c"
     },
     "PrefixFunctionAsExponent": {
-      "expected": "3 raised to the sine of, open paren, 2 plus x, close paren, power"
+      "expected": "3 의 싸인 의, 괄호 열고, 2 더하기 x, 괄호 닫고, 제곱"
     },
     "CompositeFunctionFences": {
       "expected": "괄호 열고, f 더하기 g, 괄호 닫고, 의, 괄호 열고, 2 더하기 x, 괄호 닫고"
