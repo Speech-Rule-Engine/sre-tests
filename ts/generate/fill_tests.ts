@@ -75,7 +75,7 @@ export async function runTests(
     }
   }
   try {
-    tests.tearDownTest();
+    await tests.tearDownTest();
   } catch (e) {}
   return [result, tests];
 }

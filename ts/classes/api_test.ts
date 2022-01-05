@@ -71,8 +71,8 @@ export class ApiTest extends AbstractJsonTest {
    *
    * @param feature The feature vector for the engine.
    */
-  public setupEngine(feature: { [key: string]: string }) {
-    System.setupEngine(feature || ApiTest.SETUP);
+  public async setupEngine(feature: { [key: string]: string }) {
+    await System.setupEngine(feature || ApiTest.SETUP);
   }
 
   /**
