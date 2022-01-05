@@ -113,7 +113,7 @@ export class SymbolTest extends SpeechTest {
   /**
    * @override
    */
-  public setUpTest() {
+  public async setUpTest() {
     Grammar.getInstance().pushState(Object.assign({}, this.grammar));
     return super.setUpTest();
   }
@@ -121,8 +121,8 @@ export class SymbolTest extends SpeechTest {
   /**
    * @override
    */
-  public tearDownTest() {
+  public async tearDownTest() {
     Grammar.getInstance().popState();
-    super.tearDownTest();
+    return super.tearDownTest();
   }
 }

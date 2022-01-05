@@ -68,9 +68,9 @@ export class PrefixTest extends SpeechTest {
   /**
    * @override
    */
-  public tearDownTest() {
-    System.setupEngine({ markup: EngineConst.Markup.NONE });
-    super.tearDownTest();
+  public async tearDownTest() {
+    await System.setupEngine({ markup: EngineConst.Markup.NONE });
+    return super.tearDownTest();
   }
 
   /**
