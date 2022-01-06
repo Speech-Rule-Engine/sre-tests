@@ -140,7 +140,6 @@ export class SpeechTest extends AbstractExamples {
     const style = opt_style || this.style;
     const mathMl =
       '<math xmlns="http://www.w3.org/1998/Math/MathML">' + mml + '</math>';
-    // TODO: Is there a need to wait for the setup?
     System.setupEngine({
       domain: this.domain,
       style: style,
@@ -193,7 +192,6 @@ export class SpeechTest extends AbstractExamples {
       '.</h2>';
     const outList = [input];
     if (this.compare) {
-      // TODO: Is there a need to wait for the setup?
       System.setupEngine({
         domain: this.domain,
         style: style,
