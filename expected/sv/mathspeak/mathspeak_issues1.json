@@ -1,0 +1,274 @@
+{
+  "name": "SwedishMathspeakIssues1",
+  "locale": "sv",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_issues1.json",
+  "information": "Swedish Mathspeak Issues 1.",
+  "domain": "mathspeak",
+  "active": "MathspeakIssuesSwedish",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "AbsValueVsNeutral_0_default": {
+      "expected": "StartAbsolutVärde a SlutAbsolutVärde"
+    },
+    "AbsValueVsNeutral_0_brief": {
+      "expected": "StartAbsolutVärde a SlutAbsolutVärde"
+    },
+    "AbsValueVsNeutral_0_sbrief": {
+      "expected": "AbsolutVärde a SlutAbsolutVärde"
+    },
+    "AbsValueVsNeutral_1_default": {
+      "expected": "StartAbsolutVärde a SlutAbsolutVärde"
+    },
+    "AbsValueVsNeutral_1_brief": {
+      "expected": "StartAbsolutVärde a SlutAbsolutVärde"
+    },
+    "AbsValueVsNeutral_1_sbrief": {
+      "expected": "AbsolutVärde a SlutAbsolutVärde"
+    },
+    "NegativeVulgarFraction_default": {
+      "expected": "minus fem artondedelar"
+    },
+    "NegativeVulgarFraction_brief": {
+      "expected": "minus fem artondedelar"
+    },
+    "NegativeVulgarFraction_sbrief": {
+      "expected": "minus fem artondedelar"
+    },
+    "NonalphaIdentifier_default": {
+      "expected": "30 grad"
+    },
+    "NonalphaIdentifier_brief": {
+      "expected": "30 grad"
+    },
+    "NonalphaIdentifier_sbrief": {
+      "expected": "30 grad"
+    },
+    "MixedIdentifier_default": {
+      "expected": "stort S I normal stort O 2 plus 6 normal stort H normal stort F pil åt höger normal stort H 2 stort S I normal stort F 6 plus 2 normal stort H 2 normal stort O"
+    },
+    "MixedIdentifier_brief": {
+      "expected": "stort S I normal stort O 2 plus 6 normal stort H normal stort F pil åt höger normal stort H 2 stort S I normal stort F 6 plus 2 normal stort H 2 normal stort O"
+    },
+    "MixedIdentifier_sbrief": {
+      "expected": "stort S I normal stort O 2 plus 6 normal stort H normal stort F pil åt höger normal stort H 2 stort S I normal stort F 6 plus 2 normal stort H 2 normal stort O"
+    },
+    "ParenSuper_default": {
+      "expected": "öppna a stäng kvadrat"
+    },
+    "ParenSuper_brief": {
+      "expected": "öppna a stäng kvadrat"
+    },
+    "ParenSuper_sbrief": {
+      "expected": "öppna a stäng kvadrat"
+    },
+    "ParenConvoluted_default": {
+      "expected": "öppna minus x kvadrat snedstreck 2 stäng"
+    },
+    "ParenConvoluted_brief": {
+      "expected": "öppna minus x kvadrat snedstreck 2 stäng"
+    },
+    "ParenConvoluted_sbrief": {
+      "expected": "öppna minus x kvadrat snedstreck 2 stäng"
+    },
+    "SupBaseRelseq_default": {
+      "expected": "c 1 h upphöjt 4 minus 2 s baslinje mindre än eller lika med start bråk 1 över 2 stort T slut bråk mindre än eller lika med c 2 h upphöjt 4 minus 2 s"
+    },
+    "SupBaseRelseq_brief": {
+      "expected": "c 1 h Sup 4 minus 2 s bas mindre än eller lika med start bråk 1 över 2 stort T slut bråk mindre än eller lika med c 2 h Sup 4 minus 2 s"
+    },
+    "SupBaseRelseq_sbrief": {
+      "expected": "c 1 h Sup 4 minus 2 s bas mindre än eller lika med bråk 1 över 2 stort T slutbråk mindre än eller lika med c 2 h Sup 4 minus 2 s"
+    },
+    "SupBaseMultirel_default": {
+      "expected": "c 1 h upphöjt 4 minus 2 s baslinje mindre än eller lika med start bråk 1 över 2 stort T slut bråk lika med c 2 h upphöjt 4 minus 2 s"
+    },
+    "SupBaseMultirel_brief": {
+      "expected": "c 1 h Sup 4 minus 2 s bas mindre än eller lika med start bråk 1 över 2 stort T slut bråk lika med c 2 h Sup 4 minus 2 s"
+    },
+    "SupBaseMultirel_sbrief": {
+      "expected": "c 1 h Sup 4 minus 2 s bas mindre än eller lika med bråk 1 över 2 stort T slutbråk lika med c 2 h Sup 4 minus 2 s"
+    },
+    "SubBaseRelseq_default": {
+      "expected": "h nedsänkt s baslinje mindre än eller lika med start bråk 1 över 2 stort T slut bråk mindre än eller lika med h nedsänkt s"
+    },
+    "SubBaseRelseq_brief": {
+      "expected": "h del s bas mindre än eller lika med start bråk 1 över 2 stort T slut bråk mindre än eller lika med h del s"
+    },
+    "SubBaseRelseq_sbrief": {
+      "expected": "h del s bas mindre än eller lika med bråk 1 över 2 stort T slutbråk mindre än eller lika med h del s"
+    },
+    "SubBaseMultirel_default": {
+      "expected": "h nedsänkt s baslinje mindre än eller lika med start bråk 1 över 2 stort T slut bråk lika med h nedsänkt s"
+    },
+    "SubBaseMultirel_brief": {
+      "expected": "h del s bas mindre än eller lika med start bråk 1 över 2 stort T slut bråk lika med h del s"
+    },
+    "SubBaseMultirel_sbrief": {
+      "expected": "h del s bas mindre än eller lika med bråk 1 över 2 stort T slutbråk lika med h del s"
+    },
+    "SubSuperBaseRelseq_default": {
+      "expected": "h nedsänkt s upphöjt t baslinje mindre än eller lika med start bråk 1 över 2 stort T slut bråk mindre än eller lika med h nedsänkt s upphöjt t"
+    },
+    "SubSuperBaseRelseq_brief": {
+      "expected": "h del s Sup t bas mindre än eller lika med start bråk 1 över 2 stort T slut bråk mindre än eller lika med h del s Sup t"
+    },
+    "SubSuperBaseRelseq_sbrief": {
+      "expected": "h del s Sup t bas mindre än eller lika med bråk 1 över 2 stort T slutbråk mindre än eller lika med h del s Sup t"
+    },
+    "SubSuperBaseMultirel_default": {
+      "expected": "h nedsänkt s upphöjt t baslinje mindre än eller lika med start bråk 1 över 2 stort T slut bråk lika med h nedsänkt s upphöjt t"
+    },
+    "SubSuperBaseMultirel_brief": {
+      "expected": "h del s Sup t bas mindre än eller lika med start bråk 1 över 2 stort T slut bråk lika med h del s Sup t"
+    },
+    "SubSuperBaseMultirel_sbrief": {
+      "expected": "h del s Sup t bas mindre än eller lika med bråk 1 över 2 stort T slutbråk lika med h del s Sup t"
+    },
+    "SquareWithText_default": {
+      "expected": "start bråk area of triangle över area of square slut bråk lika med start bråk 1 unit kvadrat över 16 units kubik slut bråk"
+    },
+    "SquareWithText_brief": {
+      "expected": "start bråk area of triangle över area of square slut bråk lika med start bråk 1 unit kvadrat över 16 units kubik slut bråk"
+    },
+    "SquareWithText_sbrief": {
+      "expected": "bråk area of triangle över area of square slutbråk lika med bråk 1 unit kvadrat över 16 units kubik slutbråk"
+    },
+    "FootnoteWithText_default": {
+      "expected": "area of triangle area of square upphöjt 1 baslinje 1 unit upphöjt 2 baslinje 16 units upphöjt 3"
+    },
+    "FootnoteWithText_brief": {
+      "expected": "area of triangle area of square Sup 1 bas 1 unit Sup 2 bas 16 units Sup 3"
+    },
+    "FootnoteWithText_sbrief": {
+      "expected": "area of triangle area of square Sup 1 bas 1 unit Sup 2 bas 16 units Sup 3"
+    },
+    "FootnoteWithSimpleText_default": {
+      "expected": "area of triangle upphöjt 2"
+    },
+    "FootnoteWithSimpleText_brief": {
+      "expected": "area of triangle Sup 2"
+    },
+    "FootnoteWithSimpleText_sbrief": {
+      "expected": "area of triangle Sup 2"
+    },
+    "LabelledRow_default": {
+      "expected": "StartLayout 1:a Rad  med Etikett öppna 1 stäng SlutEtikett 1:a Kolumn a 2:a Kolumn b SlutLayout"
+    },
+    "LabelledRow_brief": {
+      "expected": "StartLayout 1:a Rad  Etikett öppna 1 stäng 1:a Kolumn a 2:a Kolumn b SlutLayout"
+    },
+    "LabelledRow_sbrief": {
+      "expected": "Layout 1:a Rad  Etikett öppna 1 stäng 1:a Kolumn a 2:a Kolumn b SlutLayout"
+    },
+    "LabelledLine_default": {
+      "expected": "StartLayout 1:a Rad  med Etikett öppna 1 stäng SlutEtikett a SlutLayout"
+    },
+    "LabelledLine_brief": {
+      "expected": "StartLayout 1:a Rad  Etikett öppna 1 stäng a SlutLayout"
+    },
+    "LabelledLine_sbrief": {
+      "expected": "Layout 1:a Rad  Etikett öppna 1 stäng a SlutLayout"
+    },
+    "LabelledEmptyLine_default": {
+      "expected": "StartLayout 1:a Rad  med Etikett öppna 1 stäng SlutEtikett Tom SlutLayout"
+    },
+    "LabelledEmptyLine_brief": {
+      "expected": "StartLayout 1:a Rad  Etikett öppna 1 stäng Tom SlutLayout"
+    },
+    "LabelledEmptyLine_sbrief": {
+      "expected": "Layout 1:a Rad  Etikett öppna 1 stäng Tom SlutLayout"
+    },
+    "EmptyLine_default": {
+      "expected": "StartLayout 1:a Rad  Tom SlutLayout"
+    },
+    "EmptyLine_brief": {
+      "expected": "StartLayout 1:a Rad  Tom SlutLayout"
+    },
+    "EmptyLine_sbrief": {
+      "expected": "Layout 1:a Rad  Tom SlutLayout"
+    },
+    "EmptyRow_default": {
+      "expected": "StartLayout 1:a Rad 1:a Kolumn a 2:a Kolumn b 2:a Rad  Tom SlutLayout"
+    },
+    "EmptyRow_brief": {
+      "expected": "StartLayout 1:a Rad 1:a Kolumn a 2:a Kolumn b 2:a Rad  Tom SlutLayout"
+    },
+    "EmptyRow_sbrief": {
+      "expected": "Layout 1:a Rad 1:a Kolumn a 2:a Kolumn b 2:a Rad  Tom SlutLayout"
+    },
+    "EmptyCell_default": {
+      "expected": "StartLayout 1:a Rad  Tom SlutLayout"
+    },
+    "EmptyCell_brief": {
+      "expected": "StartLayout 1:a Rad  Tom SlutLayout"
+    },
+    "EmptyCell_sbrief": {
+      "expected": "Layout 1:a Rad  Tom SlutLayout"
+    },
+    "TextLabelledLine_default": {
+      "expected": "StartLayout 1:a Rad  med Etikett öppna 1 stäng SlutEtikett a SlutLayout"
+    },
+    "TextLabelledLine_brief": {
+      "expected": "StartLayout 1:a Rad  Etikett öppna 1 stäng a SlutLayout"
+    },
+    "TextLabelledLine_sbrief": {
+      "expected": "Layout 1:a Rad  Etikett 1 a SlutLayout"
+    },
+    "TextLabelledRow_default": {
+      "expected": "StartLayout 1:a Rad  med Etikett öppna 1 stäng SlutEtikett 1:a Kolumn a 2:a Kolumn b SlutLayout"
+    },
+    "TextLabelledRow_brief": {
+      "expected": "StartLayout 1:a Rad  Etikett öppna 1 stäng 1:a Kolumn a 2:a Kolumn b SlutLayout"
+    },
+    "TextLabelledRow_sbrief": {
+      "expected": "Layout 1:a Rad  Etikett 1 1:a Kolumn a 2:a Kolumn b SlutLayout"
+    },
+    "EncloseOverbar_default": {
+      "expected": "a överstreck"
+    },
+    "EncloseOverbar_brief": {
+      "expected": "a överstreck"
+    },
+    "EncloseOverbar_sbrief": {
+      "expected": "a överstreck"
+    },
+    "EncloseUnderbar_default": {
+      "expected": "a understreck"
+    },
+    "EncloseUnderbar_brief": {
+      "expected": "a understreck"
+    },
+    "EncloseUnderbar_sbrief": {
+      "expected": "a understreck"
+    },
+    "PrefixopSquare_default": {
+      "expected": "partiell derivata kvadrat x"
+    },
+    "PrefixopSquare_brief": {
+      "expected": "partiell derivata kvadrat x"
+    },
+    "PrefixopSquare_sbrief": {
+      "expected": "partiell derivata kvadrat x"
+    },
+    "PrefixopCube_default": {
+      "expected": "partiell derivata kubik x"
+    },
+    "PrefixopCube_brief": {
+      "expected": "partiell derivata kubik x"
+    },
+    "PrefixopCube_sbrief": {
+      "expected": "partiell derivata kubik x"
+    },
+    "Vector_default": {
+      "expected": "Start 3 Gånger 1 Matris 1:a Rad  a 2:a Rad  b 3:e Rad  c SlutMatris"
+    },
+    "Vector_brief": {
+      "expected": "Start 3 Gånger 1 Matris 1:a Rad  a 2:a Rad  b 3:e Rad  c SlutMatris"
+    },
+    "Vector_sbrief": {
+      "expected": "3 Gånger 1 Matris 1:a Rad  a 2:a Rad  b 3:e Rad  c SlutMatris"
+    }
+  }
+}

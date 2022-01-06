@@ -1,0 +1,493 @@
+{
+  "name": "SwedishDefaultUnit",
+  "locale": "sv",
+  "domain": "default",
+  "style": "default",
+  "active": "DefaultSymbolsSwedish",
+  "grammar": {
+    "annotation": "unit"
+  },
+  "factory": "symbol",
+  "base": "input/common/units.json",
+  "information": "Swedish Default Unit tests.",
+  "compare": true,
+  "tests": {
+    "sq": {
+      "expected": "square"
+    },
+    "sq.": {
+      "expected": "square"
+    },
+    "sq in": {
+      "expected": "kvadrat tum"
+    },
+    "sq. in.": {
+      "expected": "kvadrat tum"
+    },
+    "sq inch": {
+      "expected": "kvadrat tum"
+    },
+    "sq. inch": {
+      "expected": "kvadrat tum"
+    },
+    "sq rd": {
+      "expected": "sq rd"
+    },
+    "sq. rd.": {
+      "expected": "sq. rd."
+    },
+    "sq ft": {
+      "expected": "kvadrat fot"
+    },
+    "sq. ft.": {
+      "expected": "kvadrat fot"
+    },
+    "sq yd": {
+      "expected": "kvadrat yard"
+    },
+    "sq. yd.": {
+      "expected": "kvadrat yard"
+    },
+    "sq mi": {
+      "expected": "kvadrat mile"
+    },
+    "sq. mi.": {
+      "expected": "kvadrat mile"
+    },
+    "ac": {
+      "expected": "acre"
+    },
+    "ac.": {
+      "expected": "acre"
+    },
+    "acr": {
+      "expected": "acre"
+    },
+    "acr.": {
+      "expected": "acre"
+    },
+    "ha": {
+      "expected": "hectare"
+    },
+    "$": {
+      "expected": "dollar"
+    },
+    "💲": {
+      "expected": "dollar"
+    },
+    "＄": {
+      "expected": "dollar"
+    },
+    "﹩": {
+      "expected": "dollar"
+    },
+    "USD": {
+      "expected": "dollar"
+    },
+    "£": {
+      "expected": "pund"
+    },
+    "￡": {
+      "expected": "pund"
+    },
+    "GBP": {
+      "expected": "pund"
+    },
+    "¥": {
+      "expected": "yen"
+    },
+    "￥": {
+      "expected": "yen"
+    },
+    "JPY": {
+      "expected": "yen"
+    },
+    "€": {
+      "expected": "euro"
+    },
+    "EUR": {
+      "expected": "euro"
+    },
+    "₡": {
+      "expected": "colons"
+    },
+    "CRC": {
+      "expected": "colons"
+    },
+    "₢": {
+      "expected": "cruzeiro"
+    },
+    "₣": {
+      "expected": "franc"
+    },
+    "₤": {
+      "expected": "lire"
+    },
+    "₥": {
+      "expected": "mills"
+    },
+    "₦": {
+      "expected": "naira"
+    },
+    "NGN": {
+      "expected": "naira"
+    },
+    "₧": {
+      "expected": "peseta"
+    },
+    "₨": {
+      "expected": "rupis"
+    },
+    "₹": {
+      "expected": "rupis"
+    },
+    "INR": {
+      "expected": "rupis"
+    },
+    "NPR": {
+      "expected": "rupis"
+    },
+    "PKR": {
+      "expected": "rupis"
+    },
+    "LKR": {
+      "expected": "rupis"
+    },
+    "₩": {
+      "expected": "won"
+    },
+    "￦": {
+      "expected": "won"
+    },
+    "KRW": {
+      "expected": "won"
+    },
+    "₪": {
+      "expected": "sheqel"
+    },
+    "₫": {
+      "expected": "dong"
+    },
+    "₭": {
+      "expected": "kip"
+    },
+    "₮": {
+      "expected": "tugrik"
+    },
+    "₯": {
+      "expected": "drachma"
+    },
+    "₰": {
+      "expected": "tyska pennis"
+    },
+    "₱": {
+      "expected": "pesos"
+    },
+    "₲": {
+      "expected": "guaranis"
+    },
+    "₳": {
+      "expected": "australs"
+    },
+    "₴": {
+      "expected": "hryvnias"
+    },
+    "UAH": {
+      "expected": "hryvnias"
+    },
+    "₵": {
+      "expected": "cedis"
+    },
+    "GHS": {
+      "expected": "cedis"
+    },
+    "元": {
+      "expected": "yuan"
+    },
+    "￠": {
+      "expected": "￠"
+    },
+    "¢": {
+      "expected": "¢"
+    },
+    "kwh": {
+      "expected": "kilowatt hour"
+    },
+    "kWh": {
+      "expected": "kilowatt hour"
+    },
+    "Ohm": {
+      "expected": "ohm"
+    },
+    "ohm": {
+      "expected": "ohm"
+    },
+    "ft": {
+      "expected": "fot"
+    },
+    "ft.": {
+      "expected": "fot"
+    },
+    "in": {
+      "expected": "tum"
+    },
+    "in.": {
+      "expected": "tum"
+    },
+    "mi": {
+      "expected": "mile"
+    },
+    "mi.": {
+      "expected": "mile"
+    },
+    "yd": {
+      "expected": "yard"
+    },
+    "yd.": {
+      "expected": "yard"
+    },
+    "li": {
+      "expected": "link"
+    },
+    "li.": {
+      "expected": "link"
+    },
+    "rd": {
+      "expected": "rod"
+    },
+    "rd.": {
+      "expected": "rod"
+    },
+    "ch": {
+      "expected": "chain"
+    },
+    "ch.": {
+      "expected": "chain"
+    },
+    "fur": {
+      "expected": "furlong"
+    },
+    "fur.": {
+      "expected": "furlong"
+    },
+    "n.m.": {
+      "expected": "nautical mile"
+    },
+    "b": {
+      "expected": "bit"
+    },
+    "KB": {
+      "expected": "kilobyte"
+    },
+    "doz": {
+      "expected": "dozen"
+    },
+    "doz.": {
+      "expected": "dozen"
+    },
+    "dz": {
+      "expected": "dozen"
+    },
+    "dz.": {
+      "expected": "dozen"
+    },
+    "kt": {
+      "expected": "knot"
+    },
+    "kt.": {
+      "expected": "knot"
+    },
+    "mph": {
+      "expected": "mile per timme"
+    },
+    "rpm": {
+      "expected": "revolutions per minute"
+    },
+    "kmh": {
+      "expected": "kilometers per hour"
+    },
+    "F": {
+      "expected": "farad"
+    },
+    "F.": {
+      "expected": "farad"
+    },
+    "°F": {
+      "expected": "farad"
+    },
+    "C": {
+      "expected": "coulomb"
+    },
+    "°C": {
+      "expected": "coulomb"
+    },
+    "K": {
+      "expected": "kelvin"
+    },
+    "°K": {
+      "expected": "kelvin"
+    },
+    "min": {
+      "expected": "minute"
+    },
+    "h": {
+      "expected": "hour"
+    },
+    "hr": {
+      "expected": "hour"
+    },
+    "cu": {
+      "expected": "cubic"
+    },
+    "cu.": {
+      "expected": "cubic"
+    },
+    "cu in": {
+      "expected": "kubik tum"
+    },
+    "cu. in.": {
+      "expected": "kubik tum"
+    },
+    "cu ft": {
+      "expected": "kubik fot"
+    },
+    "cu. ft.": {
+      "expected": "kubik fot"
+    },
+    "cu yd": {
+      "expected": "kubik yard"
+    },
+    "cu. yd.": {
+      "expected": "kubik yard"
+    },
+    "bbl.": {
+      "expected": "fat"
+    },
+    "bbl": {
+      "expected": "fat"
+    },
+    "fl. oz.": {
+      "expected": "fluid ounce"
+    },
+    "fl oz": {
+      "expected": "fluid ounce"
+    },
+    "gal": {
+      "expected": "gallon"
+    },
+    "gal.": {
+      "expected": "gallon"
+    },
+    "pt": {
+      "expected": "pint"
+    },
+    "pt.": {
+      "expected": "pint"
+    },
+    "qt": {
+      "expected": "quart"
+    },
+    "qt.": {
+      "expected": "quart"
+    },
+    "fl dr": {
+      "expected": "fluid dram"
+    },
+    "fl. dr.": {
+      "expected": "fluid dram"
+    },
+    "tbsp": {
+      "expected": "matsked"
+    },
+    "tbsp.": {
+      "expected": "matsked"
+    },
+    "Tbsp": {
+      "expected": "matsked"
+    },
+    "Tbsp.": {
+      "expected": "matsked"
+    },
+    "tsp": {
+      "expected": "tesked"
+    },
+    "tsp.": {
+      "expected": "tesked"
+    },
+    "cp": {
+      "expected": "kopp"
+    },
+    "cp.": {
+      "expected": "kopp"
+    },
+    "cc": {
+      "expected": "cubic centimeter"
+    },
+    "ccm": {
+      "expected": "cubic centimeter"
+    },
+    "dr": {
+      "expected": "dram"
+    },
+    "dr.": {
+      "expected": "dram"
+    },
+    "oz": {
+      "expected": "uns"
+    },
+    "oz.": {
+      "expected": "uns"
+    },
+    "lb": {
+      "expected": "skålpund"
+    },
+    "lb.": {
+      "expected": "skålpund"
+    },
+    "st": {
+      "expected": "stone"
+    },
+    "st.": {
+      "expected": "stone"
+    },
+    "qtr": {
+      "expected": "quarter"
+    },
+    "qtr.": {
+      "expected": "quarter"
+    },
+    "cwt": {
+      "expected": "centner"
+    },
+    "cwt.": {
+      "expected": "centner"
+    },
+    "LT": {
+      "expected": "long ton"
+    },
+    "L.T.": {
+      "expected": "long ton"
+    },
+    "gr": {
+      "expected": "grain"
+    },
+    "mcg": {
+      "expected": "microgram"
+    },
+    "t": {
+      "expected": "ton"
+    },
+    "T": {
+      "expected": "ton"
+    },
+    "′": {
+      "expected": "minute"
+    },
+    "°": {
+      "expected": "degree"
+    },
+    "″": {
+      "expected": "second"
+    }
+  }
+}
