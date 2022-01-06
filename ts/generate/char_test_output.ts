@@ -133,7 +133,6 @@ const AllConstraints: { [loc: string]: string[] } = {
   de: ['default', 'mathspeak', 'clearspeak'],
   it: ['default', 'mathspeak', 'clearspeak'],
   hi: ['default', 'mathspeak', 'clearspeak'],
-  ko: ['default', 'mathspeak', 'clearspeak'],
   nn: ['default', 'mathspeak', 'clearspeak'],
   nb: ['default', 'mathspeak', 'clearspeak'],
   sv: ['default', 'mathspeak', 'clearspeak'],
@@ -149,7 +148,7 @@ const AllConstraints: { [loc: string]: string[] } = {
  * @param unit Are the symbols units.
  * @returns The test json structure.
  */
-async function testOutput(locale: string, keys: string[], kind: SymbolType): Promise<tu.JsonFile> {
+async function testOutput(locale: string, keys: string[], unit = false): Promise<tu.JsonFile> {
   const constraints = AllConstraints[locale];
   const unit = isUnitTest(kind);
   if (!constraints) {
@@ -263,6 +262,12 @@ export function testOutputFromExtras(
     }
     const tests = output.tests;
     delete output.tests;
+    const singular =
+      kind === SymbolType.CHARACTERS ? 'character' : kind.replace(/s$/, '');
+    output.name = `Extra${singular.replace(/^\w/, (c) => c.toUpperCase())}`;
+    output.type = singular;
+    output.factory = 'symbol';
+    output.active = 'ExtraSymbols';
     output.tests = tests;
     writeOutputToFile(dir, output, locale, 'extras', kind);
   });
@@ -292,7 +297,7 @@ async function testExtras(
   extras: tu.JsonTests,
   kind: SymbolType
 ): Promise<tu.JsonFile> {
-  const json: tu.JsonFile = initialJsonFile(locale, 'extras', kind);
+  const json: tu.JsonFile = { locale: locale };
   const tests: tu.JsonTests = {};
   for (const [key, constr] of Object.entries(extras)) {
     if (key.match(/^_comment/)) {
