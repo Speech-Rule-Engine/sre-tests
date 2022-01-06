@@ -1,13 +1,13 @@
 {
-  "name": "SwedishClearspeakFunction",
+  "name": "SwedishDefaultFunction",
   "locale": "sv",
-  "domain": "clearspeak",
+  "domain": "chromevox",
   "style": "default",
-  "active": "ClearspeakSymbolsSwedish",
+  "active": "DefaultSymbolsSwedish",
   "type": "function",
   "factory": "symbol",
   "base": "input/common/functions.json",
-  "information": "Swedish Clearspeak Function tests.",
+  "information": "Swedish Default Function tests.",
   "compare": true,
   "tests": {
     "deg": {
