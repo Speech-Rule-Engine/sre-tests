@@ -36,7 +36,7 @@ import { addMissing } from './fill_tests';
  * @param loc1 Source locale string (e.g., "English").
  * @param loc2 Destination locale string (e.g., "Italian").
  */
-export function copyTestLocale(
+export async function copyTestLocale(
   source: string,
   locale: string,
   loc1: string,
@@ -56,7 +56,7 @@ export function copyTestLocale(
   tests.jsonTests['compare'] = true;
   tests.jsonTests.tests = {};
   TestUtil.saveJson(dst, tests.jsonTests);
-  addMissing(dst);
+  return addMissing(dst);
 }
 
 /**
@@ -67,7 +67,7 @@ export function copyTestLocale(
  * @param loc1 Source locale string (e.g., "English").
  * @param loc2 Destination locale string (e.g., "Italian").
  */
-export function copyTestLocaleDir(
+export async function copyTestLocaleDir(
   source: string,
   locale: string,
   loc1: string,
@@ -75,7 +75,7 @@ export function copyTestLocaleDir(
 ) {
   const files = TestUtil.readDir(source);
   for (const file of files) {
-    copyTestLocale(file, locale, loc1, loc2);
+    await copyTestLocale(file, locale, loc1, loc2);
   }
 }
 
