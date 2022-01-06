@@ -82,13 +82,13 @@
       "expected": "2 gånger 2 matrisen. rad 1: b index 1 1, b index 1 2 rad 2: b index 2 1, b index 2 2"
     },
     "Matrix022": {
-      "expected": "3   2 gånger 2 matrisen. rad 1: 2, 1 rad 2: 7, 5.   2 gånger 3 matrisen. rad 1: 3, 1, 4 rad 2: 0, 2, 6"
+      "expected": "3 gånger 2 gånger 2 matrisen. rad 1: 2, 1 rad 2: 7, 5. gånger 2 gånger 3 matrisen. rad 1: 3, 1, 4 rad 2: 0, 2, 6"
     },
     "Matrix023": {
-      "expected": "2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdedelar, ett femtedel.   2 gånger 3 matrisen. rad 1: kolumn 1, 3; kolumn 2, 1 minus x; kolumn 3, 4. rad 2: kolumn 1, 0; kolumn 2, 2; kolumn 3, 6"
+      "expected": "2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdedelar, ett femtedel. gånger 2 gånger 3 matrisen. rad 1: kolumn 1, 3; kolumn 2, 1 minus x; kolumn 3, 4. rad 2: kolumn 1, 0; kolumn 2, 2; kolumn 3, 6"
     },
     "Matrix024": {
-      "expected": "4 gånger 4 matrisen. rad 1: kolumn 1, 0; kolumn 2, 3; kolumn 3, 4; kolumn 4, 3. rad 2: kolumn 1, 2; kolumn 2, 1; kolumn 3, 0; kolumn 4, 9. rad 3: kolumn 1, 3; kolumn 2, 0; kolumn 3, 2; kolumn 4, 1. rad 4: kolumn 1, 6; kolumn 2, 2; kolumn 3, 9; kolumn 4, 0.   4 gånger 2 matrisen. rad 1: kolumn 1, 1; kolumn 2, 3. rad 2: kolumn 1, 4; kolumn 2, 2. rad 3: kolumn 1, 2; kolumn 2, 1. rad 4: kolumn 1, 0; kolumn 2, 5"
+      "expected": "4 gånger 4 matrisen. rad 1: kolumn 1, 0; kolumn 2, 3; kolumn 3, 4; kolumn 4, 3. rad 2: kolumn 1, 2; kolumn 2, 1; kolumn 3, 0; kolumn 4, 9. rad 3: kolumn 1, 3; kolumn 2, 0; kolumn 3, 2; kolumn 4, 1. rad 4: kolumn 1, 6; kolumn 2, 2; kolumn 3, 9; kolumn 4, 0. gånger 4 gånger 2 matrisen. rad 1: kolumn 1, 1; kolumn 2, 3. rad 2: kolumn 1, 4; kolumn 2, 2. rad 3: kolumn 1, 2; kolumn 2, 1. rad 4: kolumn 1, 0; kolumn 2, 5"
     },
     "Matrix025": {
       "expected": "determinanten av 2 gånger 2 matrisen. rad 1: 2, 1 rad 2: 7, 5"
@@ -211,13 +211,13 @@
       "expected": "2 gånger 2 matrisen. rad 1: kolumn 1, b index 1 1; kolumn 2, b index 1 2. rad 2: kolumn 1, b index 2 1; kolumn 2, b index 2 2"
     },
     "Matrix064": {
-      "expected": "3   2 gånger 2 matrisen. rad 1: kolumn 1, 2; kolumn 2, 1. rad 2: kolumn 1, 7; kolumn 2, 5.   2 gånger 3 matrisen. rad 1: kolumn 1, 3; kolumn 2, 1; kolumn 3, 4. rad 2: kolumn 1, 0; kolumn 2, 2; kolumn 3, 6"
+      "expected": "3 gånger 2 gånger 2 matrisen. rad 1: kolumn 1, 2; kolumn 2, 1. rad 2: kolumn 1, 7; kolumn 2, 5. gånger 2 gånger 3 matrisen. rad 1: kolumn 1, 3; kolumn 2, 1; kolumn 3, 4. rad 2: kolumn 1, 0; kolumn 2, 2; kolumn 3, 6"
     },
     "Matrix065": {
-      "expected": "2 gånger 2 matrisen. rad 1: kolumn 1, ett halv; kolumn 2, två tredjedelar. rad 2: kolumn 1, tre fjärdedelar; kolumn 2, ett femtedel.   2 gånger 3 matrisen. rad 1: kolumn 1, 3; kolumn 2, 1 minus x; kolumn 3, 4. rad 2: kolumn 1, 0; kolumn 2, 2; kolumn 3, 6"
+      "expected": "2 gånger 2 matrisen. rad 1: kolumn 1, ett halv; kolumn 2, två tredjedelar. rad 2: kolumn 1, tre fjärdedelar; kolumn 2, ett femtedel. gånger 2 gånger 3 matrisen. rad 1: kolumn 1, 3; kolumn 2, 1 minus x; kolumn 3, 4. rad 2: kolumn 1, 0; kolumn 2, 2; kolumn 3, 6"
     },
     "Matrix066": {
-      "expected": "4 gånger 4 matrisen. rad 1: kolumn 1, 0; kolumn 2, 3; kolumn 3, 4; kolumn 4, 3. rad 2: kolumn 1, 2; kolumn 2, 1; kolumn 3, 0; kolumn 4, 9. rad 3: kolumn 1, 3; kolumn 2, 0; kolumn 3, 2; kolumn 4, 1. rad 4: kolumn 1, 6; kolumn 2, 2; kolumn 3, 9; kolumn 4, 0.   4 gånger 2 matrisen. rad 1: kolumn 1, 1; kolumn 2, 3. rad 2: kolumn 1, 4; kolumn 2, 2. rad 3: kolumn 1, 2; kolumn 2, 1. rad 4: kolumn 1, 0; kolumn 2, 5"
+      "expected": "4 gånger 4 matrisen. rad 1: kolumn 1, 0; kolumn 2, 3; kolumn 3, 4; kolumn 4, 3. rad 2: kolumn 1, 2; kolumn 2, 1; kolumn 3, 0; kolumn 4, 9. rad 3: kolumn 1, 3; kolumn 2, 0; kolumn 3, 2; kolumn 4, 1. rad 4: kolumn 1, 6; kolumn 2, 2; kolumn 3, 9; kolumn 4, 0. gånger 4 gånger 2 matrisen. rad 1: kolumn 1, 1; kolumn 2, 3. rad 2: kolumn 1, 4; kolumn 2, 2. rad 3: kolumn 1, 2; kolumn 2, 1. rad 4: kolumn 1, 0; kolumn 2, 5"
     },
     "Matrix067": {
       "expected": "determinanten av 2 gånger 2 matrisen. rad 1: kolumn 1, 2; kolumn 2, 1. rad 2: kolumn 1, 7; kolumn 2, 5"
@@ -328,13 +328,13 @@
       "expected": "2 gånger 2 matrisen. rad 1: b index 1 1, b index 1 2 rad 2: b index 2 1, b index 2 2"
     },
     "Matrix102": {
-      "expected": "3   2 gånger 2 matrisen. rad 1: 2, 1 rad 2: 7, 5.   2 gånger 3 matrisen. rad 1: 3, 1, 4 rad 2: 0, 2, 6"
+      "expected": "3 gånger 2 gånger 2 matrisen. rad 1: 2, 1 rad 2: 7, 5. gånger 2 gånger 3 matrisen. rad 1: 3, 1, 4 rad 2: 0, 2, 6"
     },
     "Matrix103": {
-      "expected": "2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdedelar, ett femtedel.   2 gånger 3 matrisen. rad 1: 3, 1 minus x, 4 rad 2: 0, 2, 6"
+      "expected": "2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdedelar, ett femtedel. gånger 2 gånger 3 matrisen. rad 1: 3, 1 minus x, 4 rad 2: 0, 2, 6"
     },
     "Matrix104": {
-      "expected": "4 gånger 4 matrisen. rad 1: 0, 3, 4, 3 rad 2: 2, 1, 0, 9 rad 3: 3, 0, 2, 1 rad 4: 6, 2, 9, 0.   4 gånger 2 matrisen. rad 1: 1, 3 rad 2: 4, 2 rad 3: 2, 1 rad 4: 0, 5"
+      "expected": "4 gånger 4 matrisen. rad 1: 0, 3, 4, 3 rad 2: 2, 1, 0, 9 rad 3: 3, 0, 2, 1 rad 4: 6, 2, 9, 0. gånger 4 gånger 2 matrisen. rad 1: 1, 3 rad 2: 4, 2 rad 3: 2, 1 rad 4: 0, 5"
     },
     "Matrix105": {
       "expected": "determinanten av 2 gånger 2 matrisen. rad 1: 2, 1 rad 2: 7, 5"
@@ -445,13 +445,13 @@
       "expected": "2 gånger 2 matrisen. rad 1: b index 1 1, b index 1 2 rad 2: b index 2 1, b index 2 2. slut matris"
     },
     "Matrix141": {
-      "expected": "3   2 gånger 2 matrisen. rad 1: 2, 1 rad 2: 7, 5. slut matris   2 gånger 3 matrisen. rad 1: 3, 1, 4 rad 2: 0, 2, 6. slut matris"
+      "expected": "3 gånger 2 gånger 2 matrisen. rad 1: 2, 1 rad 2: 7, 5. slut matris gånger 2 gånger 3 matrisen. rad 1: 3, 1, 4 rad 2: 0, 2, 6. slut matris"
     },
     "Matrix142": {
-      "expected": "2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdedelar, ett femtedel. slut matris   2 gånger 3 matrisen. rad 1: kolumn 1, 3; kolumn 2, 1 minus x; kolumn 3, 4. rad 2: kolumn 1, 0; kolumn 2, 2; kolumn 3, 6. slut matris"
+      "expected": "2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdedelar, ett femtedel. slut matris gånger 2 gånger 3 matrisen. rad 1: kolumn 1, 3; kolumn 2, 1 minus x; kolumn 3, 4. rad 2: kolumn 1, 0; kolumn 2, 2; kolumn 3, 6. slut matris"
     },
     "Matrix143": {
-      "expected": "4 gånger 4 matrisen. rad 1: kolumn 1, 0; kolumn 2, 3; kolumn 3, 4; kolumn 4, 3. rad 2: kolumn 1, 2; kolumn 2, 1; kolumn 3, 0; kolumn 4, 9. rad 3: kolumn 1, 3; kolumn 2, 0; kolumn 3, 2; kolumn 4, 1. rad 4: kolumn 1, 6; kolumn 2, 2; kolumn 3, 9; kolumn 4, 0. slut matris   4 gånger 2 matrisen. rad 1: kolumn 1, 1; kolumn 2, 3. rad 2: kolumn 1, 4; kolumn 2, 2. rad 3: kolumn 1, 2; kolumn 2, 1. rad 4: kolumn 1, 0; kolumn 2, 5. slut matris"
+      "expected": "4 gånger 4 matrisen. rad 1: kolumn 1, 0; kolumn 2, 3; kolumn 3, 4; kolumn 4, 3. rad 2: kolumn 1, 2; kolumn 2, 1; kolumn 3, 0; kolumn 4, 9. rad 3: kolumn 1, 3; kolumn 2, 0; kolumn 3, 2; kolumn 4, 1. rad 4: kolumn 1, 6; kolumn 2, 2; kolumn 3, 9; kolumn 4, 0. slut matris gånger 4 gånger 2 matrisen. rad 1: kolumn 1, 1; kolumn 2, 3. rad 2: kolumn 1, 4; kolumn 2, 2. rad 3: kolumn 1, 2; kolumn 2, 1. rad 4: kolumn 1, 0; kolumn 2, 5. slut matris"
     },
     "Matrix144": {
       "expected": "determinanten av 2 gånger 2 matrisen. rad 1: 2, 1 rad 2: 7, 5. slut determinant"
@@ -517,16 +517,16 @@
       "expected": "1 gånger 2 radvektorn. kolumn 1: x plus 1 kolumn 2: 2 x"
     },
     "Matrix165": {
-      "expected": "1 gånger 2 radvektorn. 3, 2.   2 gånger 2 matrisen. rad 1: 0, 5 rad 2: 9, 4"
+      "expected": "1 gånger 2 radvektorn. 3, 2. gånger 2 gånger 2 matrisen. rad 1: 0, 5 rad 2: 9, 4"
     },
     "Matrix166": {
-      "expected": "1 gånger 3 radvektorn. 1, 2, 7.   3 gånger 3 matrisen. rad 1: 3, 5, 4 rad 2: 8, 0, 6 rad 3: 1, 4, 2"
+      "expected": "1 gånger 3 radvektorn. 1, 2, 7. gånger 3 gånger 3 matrisen. rad 1: 3, 5, 4 rad 2: 8, 0, 6 rad 3: 1, 4, 2"
     },
     "Matrix167": {
-      "expected": "2 gånger 2 matrisen. rad 1: 0, 5 rad 2: 9, 4.   2 gånger 1 kolumnvektorn. 3, 2"
+      "expected": "2 gånger 2 matrisen. rad 1: 0, 5 rad 2: 9, 4. gånger 2 gånger 1 kolumnvektorn. 3, 2"
     },
     "Matrix168": {
-      "expected": "3 gånger 3 matrisen. rad 1: 3, 5, 4 rad 2: 8, 0, 6 rad 3: 1, 4, 2.   3 gånger 1 kolumnvektorn. 1, 2, 7"
+      "expected": "3 gånger 3 matrisen. rad 1: 3, 5, 4 rad 2: 8, 0, 6 rad 3: 1, 4, 2. gånger 3 gånger 1 kolumnvektorn. 1, 2, 7"
     },
     "Matrix169": {
       "expected": "3 gånger 1 kolumnvektorn. 1, 2, 3. slut vektor"
@@ -550,16 +550,16 @@
       "expected": "1 gånger 2 radvektorn. kolumn 1: x plus 1 kolumn 2: 2 x. slut vektor"
     },
     "Matrix176": {
-      "expected": "1 gånger 2 radvektorn. 3, 2. slut vektor   2 gånger 2 matrisen. rad 1: 0, 5 rad 2: 9, 4. slut matris"
+      "expected": "1 gånger 2 radvektorn. 3, 2. slut vektor gånger 2 gånger 2 matrisen. rad 1: 0, 5 rad 2: 9, 4. slut matris"
     },
     "Matrix177": {
-      "expected": "1 gånger 3 radvektorn. 1, 2, 7. slut vektor   3 gånger 3 matrisen. rad 1: 3, 5, 4 rad 2: 8, 0, 6 rad 3: 1, 4, 2. slut matris"
+      "expected": "1 gånger 3 radvektorn. 1, 2, 7. slut vektor gånger 3 gånger 3 matrisen. rad 1: 3, 5, 4 rad 2: 8, 0, 6 rad 3: 1, 4, 2. slut matris"
     },
     "Matrix178": {
-      "expected": "2 gånger 2 matrisen. rad 1: 0, 5 rad 2: 9, 4. slut matris   2 gånger 1 kolumnvektorn. 3, 2. slut vektor"
+      "expected": "2 gånger 2 matrisen. rad 1: 0, 5 rad 2: 9, 4. slut matris gånger 2 gånger 1 kolumnvektorn. 3, 2. slut vektor"
     },
     "Matrix179": {
-      "expected": "3 gånger 3 matrisen. rad 1: 3, 5, 4 rad 2: 8, 0, 6 rad 3: 1, 4, 2. slut matris   3 gånger 1 kolumnvektorn. 1, 2, 7. slut vektor"
+      "expected": "3 gånger 3 matrisen. rad 1: 3, 5, 4 rad 2: 8, 0, 6 rad 3: 1, 4, 2. slut matris gånger 3 gånger 1 kolumnvektorn. 1, 2, 7. slut vektor"
     },
     "Matrix180": {
       "expected": "n över r"

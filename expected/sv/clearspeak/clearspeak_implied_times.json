@@ -10,52 +10,52 @@
   "compare": true,
   "tests": {
     "ImpTimes001": {
-      "expected": "2   3"
+      "expected": "2 gånger 3"
     },
     "ImpTimes002": {
-      "expected": "2   3"
+      "expected": "2 gånger 3"
     },
     "ImpTimes003": {
-      "expected": "2 upphöjt till fjärde,   3"
+      "expected": "2 upphöjt till fjärde, gånger 3"
     },
     "ImpTimes004": {
-      "expected": "2  , öppna, 3 plus 4, stäng"
+      "expected": "2 gånger, öppna, 3 plus 4, stäng"
     },
     "ImpTimes005": {
-      "expected": "2  , vänster parentes, 3 plus 4, höger parentes"
+      "expected": "2 gånger, vänster parentes, 3 plus 4, höger parentes"
     },
     "ImpTimes006": {
-      "expected": "3   2"
+      "expected": "3 gånger 2"
     },
     "ImpTimes007": {
-      "expected": "2  , öppna, 3 plus 4, stäng, kvadrat"
+      "expected": "2 gånger, öppna, 3 plus 4, stäng, kvadrat"
     },
     "ImpTimes008": {
-      "expected": "öppna, 2 plus 7, stäng,  , öppna, 3 minus 6, stäng"
+      "expected": "öppna, 2 plus 7, stäng, gånger, öppna, 3 minus 6, stäng"
     },
     "ImpTimes009": {
-      "expected": "vänster parentes, 2 plus 7, höger parentes,  , vänster parentes, 3 minus 6, höger parentes"
+      "expected": "vänster parentes, 2 plus 7, höger parentes, gånger, vänster parentes, 3 minus 6, höger parentes"
     },
     "ImpTimes011": {
-      "expected": "x  , öppna, y plus z, stäng"
+      "expected": "x gånger, öppna, y plus z, stäng"
     },
     "ImpTimes012": {
-      "expected": "2  , öppna, y plus 1, stäng"
+      "expected": "2 gånger, öppna, y plus 1, stäng"
     },
     "ImpTimes013": {
-      "expected": "öppna, 2 minus 1, stäng,   x"
+      "expected": "öppna, 2 minus 1, stäng, gånger x"
     },
     "ImpTimes014": {
-      "expected": "p index 1,  , öppna, 3 plus 7, stäng"
+      "expected": "p index 1, gånger, öppna, 3 plus 7, stäng"
     },
     "ImpTimes015": {
       "expected": "p index 1, upphöjt till, a index 1, p index 2, upphöjt till, a index 2"
     },
     "ImpTimes016": {
-      "expected": "öppna, x plus y, stäng, upphöjt till minus 4,  , öppna, x minus y, stäng, upphöjt till minus 4"
+      "expected": "öppna, x plus y, stäng, upphöjt till minus 4, gånger, öppna, x minus y, stäng, upphöjt till minus 4"
     },
     "ImpTimes017": {
-      "expected": "2 upphöjt till 4  , öppna, x plus y, stäng"
+      "expected": "2 upphöjt till 4 gånger, öppna, x plus y, stäng"
     },
     "ImpTimes018": {
       "expected": "x y"
@@ -79,10 +79,10 @@
       "expected": "1 plus 2 kvadratroten av 3"
     },
     "ImpTimes025": {
-      "expected": "f av x, lika med x kvadrat  , öppna, x plus 1, stäng"
+      "expected": "f av x, lika med x kvadrat gånger, öppna, x plus 1, stäng"
     },
     "ImpTimes026": {
-      "expected": "f gånger x, lika med x kvadrat  , öppna, x plus 1, stäng"
+      "expected": "f gånger x, lika med x kvadrat gånger, öppna, x plus 1, stäng"
     },
     "ImpTimes027": {
       "expected": "sinus x cosinus y, plus, cosinus x sinus y"
@@ -97,157 +97,157 @@
       "expected": "logaritmen av, öppna, x plus y, stäng, lika med, logaritmen x logaritmen y"
     },
     "ImpTimes030": {
-      "expected": "2 gånger 2 matrisen. rad 1: 1, 3 rad 2: 5, 2.   2 gånger 2 matrisen. rad 1: 7, 4 rad 2: 0, 1"
+      "expected": "2 gånger 2 matrisen. rad 1: 1, 3 rad 2: 5, 2. gånger 2 gånger 2 matrisen. rad 1: 7, 4 rad 2: 0, 1"
     },
     "ImpTimes031": {
-      "expected": "2  , öppna, 3  , öppna, öppna, 4 plus 5, stäng, plus 6, stäng, stäng"
+      "expected": "2 gånger, öppna, 3 gånger, öppna, öppna, 4 plus 5, stäng, plus 6, stäng, stäng"
     },
     "ImpTimes032": {
-      "expected": "2  , öppna, 3  , andra öppna, tredje öppna, 4 plus 5, tredje stäng, plus 6, andra stäng, stäng"
+      "expected": "2 gånger, öppna, 3 gånger, andra öppna, tredje öppna, 4 plus 5, tredje stäng, plus 6, andra stäng, stäng"
     },
     "ImpTimes033": {
-      "expected": "2  , vänster parentes, 3  , öppna, öppna, 4 plus 5, stäng, plus 6, stäng, höger parentes"
+      "expected": "2 gånger, vänster parentes, 3 gånger, öppna, öppna, 4 plus 5, stäng, plus 6, stäng, höger parentes"
     },
     "ImpTimes034": {
-      "expected": "2  , vänster parentes, 3  , öppna, andra öppna, 4 plus 5, andra stäng, plus 6, stäng, höger parentes"
+      "expected": "2 gånger, vänster parentes, 3 gånger, öppna, andra öppna, 4 plus 5, andra stäng, plus 6, stäng, höger parentes"
     },
     "ImpTimes035": {
-      "expected": "2  , absolutvärdet av x"
+      "expected": "2 gånger, absolutvärdet av x"
     },
     "ImpTimes036": {
-      "expected": "absolutvärdet av x,  , absolutvärdet av y"
+      "expected": "absolutvärdet av x, gånger, absolutvärdet av y"
     },
     "ImpTimes037": {
-      "expected": "absolutvärdet av x plus 1,  , absolutvärdet av y minus 1"
+      "expected": "absolutvärdet av x plus 1, gånger, absolutvärdet av y minus 1"
     },
     "ImpTimes037a": {
-      "expected": "absolutvärdet av x plus 1, slut absolutvärde,  , absolutvärdet av y minus 1, slut absolutvärde"
+      "expected": "absolutvärdet av x plus 1, slut absolutvärde, gånger, absolutvärdet av y minus 1, slut absolutvärde"
     },
     "ImpTimes038": {
-      "expected": "absolutvärdet av x plus 1,  , absolutvärdet av y, minus 1"
+      "expected": "absolutvärdet av x plus 1, gånger, absolutvärdet av y, minus 1"
     },
     "ImpTimes0381": {
-      "expected": "absolutvärdet av x plus 1, slut absolutvärde,  , absolutvärdet av y, slut absolutvärde, minus 1"
+      "expected": "absolutvärdet av x plus 1, slut absolutvärde, gånger, absolutvärdet av y, slut absolutvärde, minus 1"
     },
     "ImpTimes039": {
-      "expected": "2   3"
+      "expected": "2 gånger 3"
     },
     "ImpTimes040": {
-      "expected": "2   3"
+      "expected": "2 gånger 3"
     },
     "ImpTimes041": {
-      "expected": "2 upphöjt till fjärde,   3"
+      "expected": "2 upphöjt till fjärde, gånger 3"
     },
     "ImpTimes042": {
-      "expected": "2  , öppna, 3 plus 4, stäng"
+      "expected": "2 gånger, öppna, 3 plus 4, stäng"
     },
     "ImpTimes043": {
-      "expected": "2  , vänster parentes, 3 plus 4, höger parentes"
+      "expected": "2 gånger, vänster parentes, 3 plus 4, höger parentes"
     },
     "ImpTimes044": {
-      "expected": "3   2"
+      "expected": "3 gånger 2"
     },
     "ImpTimes045": {
-      "expected": "2  , öppna, 3 plus 4, stäng, kvadrat"
+      "expected": "2 gånger, öppna, 3 plus 4, stäng, kvadrat"
     },
     "ImpTimes046": {
-      "expected": "öppna, 2 plus 7, stäng,  , öppna, 3 minus 6, stäng"
+      "expected": "öppna, 2 plus 7, stäng, gånger, öppna, 3 minus 6, stäng"
     },
     "ImpTimes047": {
-      "expected": "vänster parentes, 2 plus 7, höger parentes,  , vänster parentes, 3 minus 6, höger parentes"
+      "expected": "vänster parentes, 2 plus 7, höger parentes, gånger, vänster parentes, 3 minus 6, höger parentes"
     },
     "ImpTimes049": {
-      "expected": "x  , öppna, y plus z, stäng"
+      "expected": "x gånger, öppna, y plus z, stäng"
     },
     "ImpTimes050": {
-      "expected": "2  , öppna, y plus 1, stäng"
+      "expected": "2 gånger, öppna, y plus 1, stäng"
     },
     "ImpTimes051": {
-      "expected": "öppna, 2 minus 1, stäng,   x"
+      "expected": "öppna, 2 minus 1, stäng, gånger x"
     },
     "ImpTimes052": {
-      "expected": "p index 1,  , öppna, 3 plus 7, stäng"
+      "expected": "p index 1, gånger, öppna, 3 plus 7, stäng"
     },
     "ImpTimes053": {
-      "expected": "p index 1, upphöjt till, a index 1,  , p index 2, upphöjt till, a index 2"
+      "expected": "p index 1, upphöjt till, a index 1, gånger, p index 2, upphöjt till, a index 2"
     },
     "ImpTimes054": {
-      "expected": "öppna, x plus y, stäng, upphöjt till minus 4,  , öppna, x minus y, stäng, upphöjt till minus 4"
+      "expected": "öppna, x plus y, stäng, upphöjt till minus 4, gånger, öppna, x minus y, stäng, upphöjt till minus 4"
     },
     "ImpTimes055": {
-      "expected": "2 upphöjt till 4  , öppna, x plus y, stäng"
+      "expected": "2 upphöjt till 4 gånger, öppna, x plus y, stäng"
     },
     "ImpTimes056": {
-      "expected": "x   y"
+      "expected": "x gånger y"
     },
     "ImpTimes057": {
-      "expected": "x kvadrat   y kubik"
+      "expected": "x kvadrat gånger y kubik"
     },
     "ImpTimes058": {
-      "expected": "x upphöjt till y plus 1   x upphöjt till y plus 2"
+      "expected": "x upphöjt till y plus 1 gånger x upphöjt till y plus 2"
     },
     "ImpTimes059": {
-      "expected": "kvadratroten av a,   kvadratroten av b, lika med kvadratroten av a   b"
+      "expected": "kvadratroten av a, gånger kvadratroten av b, lika med kvadratroten av a gånger b"
     },
     "ImpTimes060": {
-      "expected": "kvadratroten av 3,   kvadratroten av 10, lika med kvadratroten av 30"
+      "expected": "kvadratroten av 3, gånger kvadratroten av 10, lika med kvadratroten av 30"
     },
     "ImpTimes061": {
-      "expected": "2   kvadratroten av 3"
+      "expected": "2 gånger kvadratroten av 3"
     },
     "ImpTimes062": {
-      "expected": "1 plus 2   kvadratroten av 3"
+      "expected": "1 plus 2 gånger kvadratroten av 3"
     },
     "ImpTimes063": {
-      "expected": "f av x, lika med x kvadrat  , öppna, x plus 1, stäng"
+      "expected": "f av x, lika med x kvadrat gånger, öppna, x plus 1, stäng"
     },
     "ImpTimes064": {
-      "expected": "f gånger x, lika med x kvadrat  , öppna, x plus 1, stäng"
+      "expected": "f gånger x, lika med x kvadrat gånger, öppna, x plus 1, stäng"
     },
     "ImpTimes065": {
-      "expected": "sinus x,   cosinus y plus cosinus x,   sinus y"
+      "expected": "sinus x, gånger cosinus y plus cosinus x, gånger sinus y"
     },
     "ImpTimes065a": {
-      "expected": "sinus av, öppna, x plus y, stäng,  , cosinus av, öppna, x plus y, stäng"
+      "expected": "sinus av, öppna, x plus y, stäng, gånger, cosinus av, öppna, x plus y, stäng"
     },
     "ImpTimes066": {
-      "expected": "logaritmen bas 10 av, x   y"
+      "expected": "logaritmen bas 10 av, x gånger y"
     },
     "ImpTimes067": {
-      "expected": "logaritmen av, öppna, x plus y, stäng, lika med logaritmen x,   logaritmen y"
+      "expected": "logaritmen av, öppna, x plus y, stäng, lika med logaritmen x, gånger logaritmen y"
     },
     "ImpTimes068": {
-      "expected": "2 gånger 2 matrisen. rad 1: 1, 3 rad 2: 5, 2.   2 gånger 2 matrisen. rad 1: 7, 4 rad 2: 0, 1"
+      "expected": "2 gånger 2 matrisen. rad 1: 1, 3 rad 2: 5, 2. gånger 2 gånger 2 matrisen. rad 1: 7, 4 rad 2: 0, 1"
     },
     "ImpTimes069": {
-      "expected": "2  , öppna, 3  , öppna, öppna, 4 plus 5, stäng, plus 6, stäng, stäng"
+      "expected": "2 gånger, öppna, 3 gånger, öppna, öppna, 4 plus 5, stäng, plus 6, stäng, stäng"
     },
     "ImpTimes070": {
-      "expected": "2  , öppna, 3  , andra öppna, tredje öppna, 4 plus 5, tredje stäng, plus 6, andra stäng, stäng"
+      "expected": "2 gånger, öppna, 3 gånger, andra öppna, tredje öppna, 4 plus 5, tredje stäng, plus 6, andra stäng, stäng"
     },
     "ImpTimes070a": {
-      "expected": "2  , vänster parentes, 3  , öppna, öppna, 4 plus 5, stäng, plus 6, stäng, höger parentes"
+      "expected": "2 gånger, vänster parentes, 3 gånger, öppna, öppna, 4 plus 5, stäng, plus 6, stäng, höger parentes"
     },
     "ImpTimes071": {
-      "expected": "2  , vänster parentes, 3  , öppna, andra öppna, 4 plus 5, andra stäng, plus 6, stäng, höger parentes"
+      "expected": "2 gånger, vänster parentes, 3 gånger, öppna, andra öppna, 4 plus 5, andra stäng, plus 6, stäng, höger parentes"
     },
     "ImpTimes072": {
-      "expected": "2  , absolutvärdet av x"
+      "expected": "2 gånger, absolutvärdet av x"
     },
     "ImpTimes073": {
-      "expected": "absolutvärdet av x,  , absolutvärdet av y"
+      "expected": "absolutvärdet av x, gånger, absolutvärdet av y"
     },
     "ImpTimes074": {
-      "expected": "absolutvärdet av x plus 1,  , absolutvärdet av y minus 1"
+      "expected": "absolutvärdet av x plus 1, gånger, absolutvärdet av y minus 1"
     },
     "ImpTimes074a": {
-      "expected": "absolutvärdet av x plus 1, slut absolutvärde,  , absolutvärdet av y minus 1, slut absolutvärde"
+      "expected": "absolutvärdet av x plus 1, slut absolutvärde, gånger, absolutvärdet av y minus 1, slut absolutvärde"
     },
     "ImpTimes075": {
-      "expected": "absolutvärdet av x plus 1,  , absolutvärdet av y, minus 1"
+      "expected": "absolutvärdet av x plus 1, gånger, absolutvärdet av y, minus 1"
     },
     "ImpTimes076": {
-      "expected": "absolutvärdet av x plus 1, slut absolutvärde,  , absolutvärdet av y, slut absolutvärde, minus 1"
+      "expected": "absolutvärdet av x plus 1, slut absolutvärde, gånger, absolutvärdet av y, slut absolutvärde, minus 1"
     },
     "ImpTimes077": {
       "expected": "2, öppna, 3, stäng"
@@ -430,10 +430,10 @@
       "expected": "A lika med, h gånger, öppna, bråket med täljare, b index 1, plus, b index 2, och nämnare 2, stäng"
     },
     "Extra003": {
-      "expected": "a av 0, lika med 0   a lika med 0"
+      "expected": "a av 0, lika med 0 gånger a lika med 0"
     },
     "Extra004": {
-      "expected": "a gånger 0, lika med 0   a lika med 0"
+      "expected": "a gånger 0, lika med 0 gånger a lika med 0"
     },
     "Extra005": {
       "expected": "a gånger minus 1, lika med minus a"
@@ -454,10 +454,10 @@
       "expected": "x av t, lika med 2 t, plus 4"
     },
     "Extra016": {
-      "expected": "k av x, lika med, öppna, x plus 3, stäng,  , öppna, x minus 5, stäng"
+      "expected": "k av x, lika med, öppna, x plus 3, stäng, gånger, öppna, x minus 5, stäng"
     },
     "Extra018": {
-      "expected": "T av t, lika med, T index s, plus, öppna, T index 0, minus, T index s, stäng,   e upphöjt till minus k t"
+      "expected": "T av t, lika med, T index s, plus, öppna, T index 0, minus, T index s, stäng, gånger e upphöjt till minus k t"
     },
     "Extra019": {
       "expected": "V lika med skript l, w av 8"
