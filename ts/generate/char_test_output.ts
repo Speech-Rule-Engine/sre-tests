@@ -150,20 +150,16 @@ const AllConstraints: { [loc: string]: string[] } = {
  * @param unit Are the symbols units.
  * @returns The test json structure.
  */
-async function testOutput(locale: string, keys: string[], unit = false): Promise<tu.JsonFile> {
+async function testOutput(locale: string, keys: string[], kind: SymbolType): Promise<tu.JsonFile> {
   const constraints = AllConstraints[locale];
+  const unit = isUnitTest(kind);
   if (!constraints) {
     return {};
   }
   const output: tu.JsonFile = {};
   const modality = locale === 'nemeth' ? 'braille' : 'speech';
   for (const dom of constraints) {
-    const json: tu.JsonFile = {
-      name: '',
-      locale: locale,
-      domain: dom,
-      style: 'default'
-    };
+    const json: tu.JsonFile = initialJsonFile(locale, dom, kind, 'default');
     const tests: tu.JsonTests = {};
     for (const key of keys) {
       if (key.match(/^_comment/)) {
@@ -176,6 +172,31 @@ async function testOutput(locale: string, keys: string[], unit = false): Promise
     output[dom] = json;
   }
   return output;
+}
+
+function initialJsonFile(loc: string, dom: string, kind: SymbolType, style?: string) {
+  const type = FILES.get(kind);
+  const file = `${loc}/symbols/${dom}_${type}`;
+  const singular =
+    kind === SymbolType.CHARACTERS ? 'character' : kind.replace(/s$/, '');
+  let json: tu.JsonFile = {
+    locale: loc,
+    type: singular,
+    factory: 'symbol',
+    name: `${tu.TestUtil.capitalize(dom)}${tu.TestUtil.capitalize(singular)}`,
+    active: `${tu.TestUtil.capitalize(dom)}${tu.TestUtil.capitalize(type)}`,
+    domain: dom
+  };
+  if (style) {
+    json.style = style;
+  }
+  try {
+    json = tu.TestUtil.loadJson(`${tu.TestPath.EXPECTED}/${file}`);
+  } catch (err) {
+    console.warn(`Symbol file ${file} does not exist. Creating from scratch!`);
+  } finally {
+    return json;
+  }
 }
 
 /**
@@ -197,7 +218,7 @@ export async function testFromBase(locale: string, kind: SymbolType): Promise<tu
     return [];
   }
   const keys = loadBaseFile(file);
-  return testOutput(locale, keys, isUnitTest(kind));
+  return testOutput(locale, keys, kind);
 }
 
 /**
@@ -218,7 +239,7 @@ function loadMathmaps(locale: string): tu.JsonTest {
  */
 export async function testFromLocale(locale: string, kind: SymbolType): Promise<tu.JsonFile> {
   const keys = getNamesFor(loadMathmaps(locale), kind);
-  return testOutput(locale, keys, isUnitTest(kind));
+  return testOutput(locale, keys, kind);
 }
 
 /**
@@ -243,12 +264,6 @@ export function testOutputFromExtras(
     }
     const tests = output.tests;
     delete output.tests;
-    const singular =
-      kind === SymbolType.CHARACTERS ? 'character' : kind.replace(/s$/, '');
-    output.name = `Extra${singular.replace(/^\w/, (c) => c.toUpperCase())}`;
-    output.type = singular;
-    output.factory = 'symbol';
-    output.active = 'ExtraSymbols';
     output.tests = tests;
     writeOutputToFile(dir, output, locale, 'extras', kind);
   });
@@ -278,7 +293,7 @@ async function testExtras(
   extras: tu.JsonTests,
   kind: SymbolType
 ): Promise<tu.JsonFile> {
-  const json: tu.JsonFile = { locale: locale };
+  const json: tu.JsonFile = initialJsonFile(locale, 'extras', kind);
   const tests: tu.JsonTests = {};
   for (const [key, constr] of Object.entries(extras)) {
     if (key.match(/^_comment/)) {
@@ -316,7 +331,7 @@ async function testExtras(
  * tests.
  *
  * @param locale The locale.
- * @param json The JSON test object.
+ * @param json The JSON locale object (actually the one from SRE mathmaps).
  * @param kind The symbol type.
  */
 function getExtrasFor(locale: string, json: tu.JsonTests, kind: SymbolType) {
@@ -577,7 +592,7 @@ function symbolsfromLocale(json: tu.JsonTest, kind: SymbolType): tu.JsonTest[] {
  * particular symbol type. Note, that the JSON structure is the locale one,
  * mapping filenames to symbol mappings. This also takes care of SI units.
  *
- * @param {tu.JsonTest} json The locale JSON structure.
+ * @param {tu.JsonTest} json The locale JSON structure (from SRE).
  * @param {SymbolType} kind The type of symbol.
  * @returns {string[]} The list of names.
  */
