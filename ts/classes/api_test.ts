@@ -71,8 +71,8 @@ export class ApiTest extends AbstractJsonTest {
    *
    * @param feature The feature vector for the engine.
    */
-  public setupEngine(feature: { [key: string]: string }) {
-    System.setupEngine(feature || ApiTest.SETUP);
+  public async setupEngine(feature: { [key: string]: string }) {
+    await System.setupEngine(feature || ApiTest.SETUP);
   }
 
   /**
@@ -94,7 +94,6 @@ export class ApiTest extends AbstractJsonTest {
     move: boolean
   ) {
     this.setupEngine(feature);
-    // TODO (TS): This is an enum and does not work!
     expr = move ? Key.get(expr) : expr || ApiTest.QUADRATIC;
     let output = (System as any)[func](expr);
     output = output

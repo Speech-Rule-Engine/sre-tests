@@ -75,7 +75,7 @@ export async function runTests(
     }
   }
   try {
-    tests.tearDownTest();
+    await tests.tearDownTest();
   } catch (e) {}
   return [result, tests];
 }
@@ -124,8 +124,8 @@ export function addToFile(file: string, expected: JsonTests) {
  * @param expected Relative file name of the expected file.
  * @param dryrun Print to console instead to file.
  */
-export function addMissing(expected: string, dryrun = false) {
-  add(expected, TestFlag.MISSING, dryrun);
+export async function addMissing(expected: string, dryrun = false) {
+  return add(expected, TestFlag.MISSING, dryrun);
 }
 
 /**
@@ -135,8 +135,8 @@ export function addMissing(expected: string, dryrun = false) {
  * @param expected Relative file name of the expected file.
  * @param dryrun Print to console instead to file.
  */
-export function addActual(expected: string, dryrun = false) {
-  add(expected, TestFlag.ALL, dryrun);
+export async function addActual(expected: string, dryrun = false) {
+  return add(expected, TestFlag.ALL, dryrun);
 }
 
 /**
@@ -146,8 +146,8 @@ export function addActual(expected: string, dryrun = false) {
  * @param expected Relative file name of the expected file.
  * @param dryrun Print to console instead to file.
  */
-export function addFailed(expected: string, dryrun = false) {
-  add(expected, TestFlag.FAILED, dryrun);
+export async function addFailed(expected: string, dryrun = false) {
+  return add(expected, TestFlag.FAILED, dryrun);
 }
 
 /**
