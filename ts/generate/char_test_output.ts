@@ -23,7 +23,6 @@ import * as System from '../../speech-rule-engine/js/common/system';
 import { Variables } from '../../speech-rule-engine/js/common/variables';
 import * as AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
 import { AuditoryDescription } from '../../speech-rule-engine/js/audio/auditory_description';
-import * as SemanticUtil from '../../speech-rule-engine/js/semantic_tree/semantic_util';
 
 import * as fs from 'fs';
 import * as tu from '../base/test_util';
@@ -505,7 +504,7 @@ function splitOffKeys(
   result: tu.JsonTests = {}
 ) {
   keys.forEach(function (x: string) {
-    const letter = SemanticUtil.numberToUnicode(parseInt(x, 16));
+    const letter = String.fromCodePoint(parseInt(x, 16));
     result[letter] = json[letter];
     delete json[letter];
   });
