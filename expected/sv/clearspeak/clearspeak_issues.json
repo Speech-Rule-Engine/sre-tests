@@ -1,0 +1,73 @@
+{
+  "_comment0_": " Tests from the issues discovered in ClearspeakEnglish rules.",
+  "name": "SwedishClearspeakIssues",
+  "locale": "sv",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_issues.json",
+  "information": "Swedish Clearspeak Issues tests.",
+  "active": "ClearspeakIssuesSwedish",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Issue230_1": {
+      "expected": "5 och, 3 delat med 224"
+    },
+    "Issue230_2": {
+      "expected": "5 och tre fjärdedelar"
+    },
+    "IssueNumbers_1": {
+      "expected": "tal t 2 e 4"
+    },
+    "IssueNumbers_2": {
+      "expected": "tal numeriskt tecken F F 0 0 0 0"
+    },
+    "IssueNumbers_3": {
+      "expected": "tal numeriskt tecken F F F F"
+    },
+    "Issue320_1": {
+      "expected": "partiell derivata"
+    },
+    "Issue320_2": {
+      "expected": "x fakultet"
+    },
+    "Issue320_3": {
+      "expected": "minus minus x"
+    },
+    "Issue320_4": {
+      "expected": "plus plus x"
+    },
+    "Issue320_5": {
+      "expected": "sinus sinus x"
+    },
+    "Issue320_6": {
+      "expected": "partiell derivata partiell derivata x"
+    },
+    "Issue320_7": {
+      "expected": "öppna, bråket med täljare partiell derivata kvadrat, och nämnare partiell derivata x kvadrat, plus, bråket med täljare partiell derivata kvadrat, och nämnare partiell derivata y kvadrat, stäng, gånger, absolutvärdet av fi gånger, öppna, x plus normal I, y, stäng, kvadrat lika med 0"
+    },
+    "Issue301_1": {
+      "expected": "4 mm"
+    },
+    "Issue301_2": {
+      "expected": "1 mm"
+    },
+    "Issue301_3": {
+      "expected": "4 mm"
+    },
+    "Issue301_4": {
+      "expected": "1 mm"
+    },
+    "Issue_442_0": {
+      "expected": "9 delat med 3 inte lika med 9 gånger 3"
+    },
+    "Issue_442_1": {
+      "expected": "9 delat med 3"
+    },
+    "Issue_442_2": {
+      "expected": "9 delat med 3 inte lika med 9 gånger 3"
+    },
+    "Issue_442_3": {
+      "expected": "9 delat med 3"
+    }
+  }
+}

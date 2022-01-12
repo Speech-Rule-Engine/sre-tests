@@ -65,8 +65,8 @@ export class MarkupTest extends AbstractJsonTest {
   /**
    * @override
    */
-  public tearDownTest() {
-    System.setupEngine({ markup: EngineConst.Markup.NONE });
+  public async tearDownTest() {
+    return System.setupEngine({ markup: EngineConst.Markup.NONE });
   }
 
   /**
@@ -77,14 +77,14 @@ export class MarkupTest extends AbstractJsonTest {
    * @param markup The markup to test.
    * @param domain The domain for the engine.
    */
-  public executeTest(
+  public async executeTest(
     expr: string,
     result: string,
     markup: string,
     domain: string
   ) {
     expr = expr || MarkupTest.QUADRATIC;
-    System.setupEngine({
+    await System.setupEngine({
       locale: 'en',
       modality: 'speech',
       domain: domain || 'default',

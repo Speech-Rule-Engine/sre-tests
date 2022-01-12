@@ -1,0 +1,324 @@
+{
+  "name": "SwedishMathspeakUnits",
+  "locale": "sv",
+  "factory": "speech",
+  "base": "input/common/units_speech.json",
+  "information": "Swedish Mathspeak Units tests.",
+  "domain": "mathspeak",
+  "active": "MathspeakSwedish",
+  "exclude": [
+    "CurrencySingular_0_Currency_Position",
+    "CurrencySingular_0_Currency_Prefix",
+    "CurrencySingular_1_Currency_Position",
+    "CurrencySingular_1_Currency_Prefix",
+    "CurrencySingle_0_Currency_Position",
+    "CurrencySingle_0_Currency_Prefix",
+    "CurrencySingle_1_Currency_Position",
+    "CurrencySingle_1_Currency_Prefix",
+    "CurrencyPlural_0_Currency_Position",
+    "CurrencyPlural_0_Currency_Prefix",
+    "CurrencyPlural_1_Currency_Position",
+    "CurrencyPlural_1_Currency_Prefix",
+    "CurrencyMultitude_0_Currency_Position",
+    "CurrencyMultitude_0_Currency_Prefix",
+    "CurrencyMultitude_1_Currency_Position",
+    "CurrencyMultitude_1_Currency_Prefix"
+  ],
+  "compare": true,
+  "tests": {
+    "UnitSquare_0_default": {
+      "expected": "tum kvadrat"
+    },
+    "UnitSquare_0_brief": {
+      "expected": "tum kvadrat"
+    },
+    "UnitSquare_0_sbrief": {
+      "expected": "tum kvadrat"
+    },
+    "UnitSquare_1_default": {
+      "expected": "sekunder kvadrat"
+    },
+    "UnitSquare_1_brief": {
+      "expected": "sekunder kvadrat"
+    },
+    "UnitSquare_1_sbrief": {
+      "expected": "sekunder kvadrat"
+    },
+    "UnitSquare_2_default": {
+      "expected": "meter kvadrat"
+    },
+    "UnitSquare_2_brief": {
+      "expected": "meter kvadrat"
+    },
+    "UnitSquare_2_sbrief": {
+      "expected": "meter kvadrat"
+    },
+    "UnitCube_0_default": {
+      "expected": "tum kubik"
+    },
+    "UnitCube_0_brief": {
+      "expected": "tum kubik"
+    },
+    "UnitCube_0_sbrief": {
+      "expected": "tum kubik"
+    },
+    "UnitCube_1_default": {
+      "expected": "sekunder kubik"
+    },
+    "UnitCube_1_brief": {
+      "expected": "sekunder kubik"
+    },
+    "UnitCube_1_sbrief": {
+      "expected": "sekunder kubik"
+    },
+    "UnitCube_2_default": {
+      "expected": "meter kubik"
+    },
+    "UnitCube_2_brief": {
+      "expected": "meter kubik"
+    },
+    "UnitCube_2_sbrief": {
+      "expected": "meter kubik"
+    },
+    "UnitInverse_default": {
+      "expected": "tum upphöjt minus 1"
+    },
+    "UnitInverse_brief": {
+      "expected": "tum Sup minus 1"
+    },
+    "UnitInverse_sbrief": {
+      "expected": "tum Sup minus 1"
+    },
+    "UnitDoubleInverse_default": {
+      "expected": "tum upphöjt minus 1 baslinje mm upphöjt minus 1"
+    },
+    "UnitDoubleInverse_brief": {
+      "expected": "tum Sup minus 1 bas mm Sup minus 1"
+    },
+    "UnitDoubleInverse_sbrief": {
+      "expected": "tum Sup minus 1 bas mm Sup minus 1"
+    },
+    "UnitDivide_default": {
+      "expected": "start bråk tum över mm slut bråk"
+    },
+    "UnitDivide_brief": {
+      "expected": "start bråk tum över mm slut bråk"
+    },
+    "UnitDivide_sbrief": {
+      "expected": "bråk tum över mm slutbråk"
+    },
+    "UnitsSingle_0": {
+      "expected": "km"
+    },
+    "UnitsSingle_1": {
+      "expected": "amp"
+    },
+    "UnitsSingle_2": {
+      "expected": "ohm"
+    },
+    "UnitsSingle_3": {
+      "expected": "kΩ"
+    },
+    "UnitsSingle_4": {
+      "expected": "coulomb"
+    },
+    "UnitsSimple_0": {
+      "expected": "minimum minutes"
+    },
+    "UnitsSimple_1": {
+      "expected": "3 km"
+    },
+    "UnitsSimple_2": {
+      "expected": "km plus sekunder"
+    },
+    "UnitsSuperscript_0": {
+      "expected": "km kvadrat"
+    },
+    "UnitsSuperscript_1": {
+      "expected": "meter kubik"
+    },
+    "UnitsSuperscript_2": {
+      "expected": "km upphöjt 4"
+    },
+    "UnitsSuperscript_3": {
+      "expected": "meter upphöjt minus 1"
+    },
+    "UnitsSuperscript_4": {
+      "expected": "sekunder meter upphöjt minus 1"
+    },
+    "UnitsSuperscript_5": {
+      "expected": "start bråk sekunder över meter slut bråk upphöjt minus 1"
+    },
+    "UnitsSuperscript_6": {
+      "expected": "start bråk sekunder över meter slut bråk upphöjt minus 1"
+    },
+    "UnitsSuperscript_7": {
+      "expected": "3 meter upphöjt minus 1"
+    },
+    "UnitsSuperscript_8": {
+      "expected": "start bråk km över hours slut bråk"
+    },
+    "UnitsSuperscript_9": {
+      "expected": "newton start bråk km över hours slut bråk"
+    },
+    "UnitsSuperscript_10": {
+      "expected": "start bråk m över km slut bråk"
+    },
+    "UnitsSuperscript_11": {
+      "expected": "3 km hours"
+    },
+    "UnitsExpressions_0": {
+      "expected": "sekunder 3 m km hours"
+    },
+    "UnitsExpressions_1": {
+      "expected": "km sekunder kvadrat 3 m km hours"
+    },
+    "UnitsExpressions_2": {
+      "expected": "3 m km hours start bråk stort N över sekunder kvadrat slut bråk"
+    },
+    "UnitsExpressions_3": {
+      "expected": "3 m km hours start bråk newton över sekunder kvadrat slut bråk"
+    },
+    "UnitPlural_1": {
+      "expected": "4 mm"
+    },
+    "UnitPlural_2": {
+      "expected": "1 mm"
+    },
+    "UnitPlural_3": {
+      "expected": "4 mm"
+    },
+    "UnitPlural_4": {
+      "expected": "1 mm"
+    },
+    "UnitCombine_0": {
+      "expected": "meter sekunder"
+    },
+    "UnitCombine_1": {
+      "expected": "m sekunder"
+    },
+    "UnitCombine_2": {
+      "expected": "meter s"
+    },
+    "UnitCombine_3": {
+      "expected": "meter sekunder"
+    },
+    "UnitCombine_4": {
+      "expected": "m sekunder"
+    },
+    "UnitCombine_5": {
+      "expected": "meter s"
+    },
+    "UnitCombine_6": {
+      "expected": "meter sekunder liter"
+    },
+    "issue_364_1": {
+      "expected": "63360 tum lika med 63360 tum lika med 63360 dubbelt prim lika med 63360 inches lika med 5280 fot lika med 5280 fot lika med 5280 prim lika med 5280 feet lika med 1760 yards lika med 1760 yards lika med 1760 yards lika med 1 miles lika med 1 miles lika med 1 mile"
+    },
+    "issue_364_2": {
+      "expected": "8000 links lika med 8000 links lika med 8000 links lika med 320 rods lika med 320 rods lika med 320 rods lika med 80 chains lika med 80 chains lika med 80 chains lika med 8 furlongs lika med 8 furlongs lika med 8 furlongs lika med 1 miles lika med 1 miles lika med 1 mile"
+    },
+    "issue_364_3": {
+      "expected": "43560 kvadrat fot lika med 43560 kvadrat fot lika med 43560 fot kvadrat lika med 43560 prim kvadrat lika med 43560 square feet lika med 4840 kvadrat yards lika med 4840 kvadrat yards lika med 4840 yards kvadrat lika med 4840 square yards lika med 160 sq rd lika med 160 sq. rd. lika med 160 rods kvadrat lika med 160 square rods lika med 1 acres lika med 1 acres lika med 1 acre lika med start bråk 1 över 640 slut bråk kvadrat miles lika med start bråk 1 över 640 slut bråk kvadrat miles lika med start bråk 1 över 640 slut bråk miles kvadrat lika med start bråk 1 över 640 slut bråk square miles"
+    },
+    "issue_364_4": {
+      "expected": "46656 kubik tum lika med 46656 kubik tum lika med 46656 tum kubik lika med 46656 dubbelt prim kubik lika med 46656 cubic inches lika med 27 kubik fot lika med 27 kubik fot lika med 27 fot kubik lika med 27 prim kubik lika med 27 cubic feet lika med 1 kubik yards lika med 1 kubik yards lika med 1 yards kubik lika med 1 cubic yard"
+    },
+    "issue_364_5": {
+      "expected": "1024 fluid drams lika med 1024 fluid drams lika med 1024 fluid drams lika med 768 teskedar lika med 768 teskedar lika med 768 teaspoons lika med 256 matskedar lika med 256 matskedar lika med 256 tablespoons lika med 128 fluid ounces lika med 128 fluid ounces lika med 128 fluid ounces lika med 16 koppar lika med 16 koppar lika med 16 cups lika med 8 pints lika med 8 pints lika med 8 pints lika med 4 quarts lika med 4 quarts lika med 4 quarts lika med 1 gallons lika med 1 gallons lika med 1 gallon"
+    },
+    "issue_364_6": {
+      "expected": "256 drams lika med 256 drams lika med 256 drams lika med 16 uns lika med 16 uns lika med 16 ounces lika med 1 # lika med 1 skålpund lika med 1 skålpund lika med 1 pounds lika med 100 centner lika med 100 centner lika med 100 hundredweights lika med 2000 tons"
+    },
+    "issue_366": {
+      "expected": "63360 tum lika med 63360 tum lika med 63360 dubbelt prim lika med 63360 inches lika med 5280 fot lika med 5280 fot lika med 5280 prim lika med 5280 feet lika med 1760 yards lika med 1760 yards lika med 1760 yards lika med 1 miles lika med 1 miles lika med 1 mile"
+    },
+    "testSample_13_1_2_var0": {
+      "expected": "1 joule lika med 1 kg mellanpunkt meter kvadrat mellanpunkt sekunder upphöjt minus 2"
+    },
+    "testSample_13_1_2_var1": {
+      "expected": "1 joule lika med 1 kg meter kvadrat sekunder upphöjt minus 2"
+    },
+    "testSample_13_1_2_var2": {
+      "expected": "1 joule lika med 1 kg meter kvadrat sekunder upphöjt minus 2"
+    },
+    "unit_cube": {
+      "expected": "tum kubik"
+    },
+    "UnitDiv_0": {
+      "expected": "start bråk km kg sekunder kvadrat över joule slut bråk"
+    },
+    "UnitDiv_1": {
+      "expected": "start bråk 3 km 1 kg sekunder kvadrat över joule slut bråk"
+    },
+    "UnitDiv_2": {
+      "expected": "start bråk 1 km kg sekunder kvadrat över joule slut bråk"
+    },
+    "UnitDiv_3": {
+      "expected": "start bråk 1 km kg sekunder kvadrat över 5 joule slut bråk"
+    },
+    "UnitKm": {
+      "expected": "km"
+    },
+    "UnitLong_1": {
+      "expected": "3 km kg sekunder kvadrat joule"
+    },
+    "UnitLong_2": {
+      "expected": "3 km kg sekunder kvadrat joule"
+    },
+    "UnitLong_3": {
+      "expected": "3 km 4 kg sekunder kvadrat joule"
+    },
+    "UnitLong_4": {
+      "expected": "3 km 1 kg sekunder kvadrat joule"
+    },
+    "UnitMultiple": {
+      "expected": "1 km sekunder plus 2 km sekunder plus 0 km sekunder plus a km sekunder plus"
+    },
+    "UnitMultitude": {
+      "expected": "1 km plus 2 km plus 0 km plus a km"
+    },
+    "UnitNumb_0": {
+      "expected": "1 och två tredjedelar kg"
+    },
+    "UnitNumb_1": {
+      "expected": "1 och två tredjedelar kg km"
+    },
+    "UnitNumb_2": {
+      "expected": "1 km 2 kg km"
+    },
+    "UnitTriple": {
+      "expected": "1 km kg sekunder plus 2 km kg sekunder plus 0 km kg sekunder plus a km kg sekunder plus"
+    },
+    "CurrencySingular_0_default": {
+      "expected": "1 dollar"
+    },
+    "CurrencySingular_1_default": {
+      "expected": "dollar 1"
+    },
+    "CurrencySingle_0_default": {
+      "expected": "dollar"
+    },
+    "CurrencySingle_1_default": {
+      "expected": "dollar"
+    },
+    "CurrencyPlural_0_default": {
+      "expected": "2 dollar"
+    },
+    "CurrencyPlural_1_default": {
+      "expected": "dollar 2"
+    },
+    "CurrencyMultitude_0_default": {
+      "expected": "1 dollar plus 2 dollar plus 0 dollar plus a dollar"
+    },
+    "CurrencyMultitude_1_default": {
+      "expected": "1 dollar plus dollar 2 plus 0 dollar plus dollar a"
+    },
+    "CurrencyMultitude_2_default": {
+      "expected": "1 euro plus 2 euro plus 0 euro plus a euro"
+    },
+    "CurrencyMultitude_3_default": {
+      "expected": "1 pund plus 2 pund plus 0 pund plus a pund"
+    }
+  }
+}

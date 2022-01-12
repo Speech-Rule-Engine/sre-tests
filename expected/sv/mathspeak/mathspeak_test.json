@@ -1,0 +1,1093 @@
+{
+  "name": "SwedishMathspeak",
+  "locale": "sv",
+  "factory": "speech",
+  "base": "input/mathspeak/mathspeak_test.json",
+  "information": "Swedish Mathspeak tests.",
+  "domain": "mathspeak",
+  "active": "MathspeakSwedish",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Sample_1_1_1_default": {
+      "expected": "pi nästan lika med 3,14159"
+    },
+    "Sample_1_1_1_brief": {
+      "expected": "pi nästan lika med 3,14159"
+    },
+    "Sample_1_1_1_sbrief": {
+      "expected": "pi nästan lika med 3,14159"
+    },
+    "Sample_1_1_2_default": {
+      "expected": "102 plus 2,214 plus 15 lika med 2,331"
+    },
+    "Sample_1_1_2_brief": {
+      "expected": "102 plus 2,214 plus 15 lika med 2,331"
+    },
+    "Sample_1_1_2_sbrief": {
+      "expected": "102 plus 2,214 plus 15 lika med 2,331"
+    },
+    "Sample_1_1_3_default": {
+      "expected": "59 gånger 0 lika med 0"
+    },
+    "Sample_1_1_3_brief": {
+      "expected": "59 gånger 0 lika med 0"
+    },
+    "Sample_1_1_3_sbrief": {
+      "expected": "59 gånger 0 lika med 0"
+    },
+    "Sample_1_2_1_default": {
+      "expected": "3 minus minus 2"
+    },
+    "Sample_1_2_1_brief": {
+      "expected": "3 minus minus 2"
+    },
+    "Sample_1_2_1_sbrief": {
+      "expected": "3 minus minus 2"
+    },
+    "Sample_1_2_2_default": {
+      "expected": "minus y"
+    },
+    "Sample_1_2_2_brief": {
+      "expected": "minus y"
+    },
+    "Sample_1_2_2_sbrief": {
+      "expected": "minus y"
+    },
+    "Sample_1_2_3_default": {
+      "expected": "minus 32"
+    },
+    "Sample_1_2_3_brief": {
+      "expected": "minus 32"
+    },
+    "Sample_1_2_3_sbrief": {
+      "expected": "minus 32"
+    },
+    "Sample_1_4_1_default": {
+      "expected": "Nummer t 2 e 4"
+    },
+    "Sample_1_4_1_brief": {
+      "expected": "Num t 2 e 4"
+    },
+    "Sample_1_4_1_sbrief": {
+      "expected": "Num t 2 e 4"
+    },
+    "Sample_1_4_2_default": {
+      "expected": "Nummer numeriskt tecken F F 0 0 0 0"
+    },
+    "Sample_1_4_2_brief": {
+      "expected": "Num numeriskt tecken F F 0 0 0 0"
+    },
+    "Sample_1_4_2_sbrief": {
+      "expected": "Num numeriskt tecken F F 0 0 0 0"
+    },
+    "Sample_1_4_3_default": {
+      "expected": "Nummer 0 x 1 5 F F plus Nummer 0 x 2 B 0 1 lika med Nummer 0 x 4 1 0 0"
+    },
+    "Sample_1_4_3_brief": {
+      "expected": "Num 0 x 1 5 F F plus Num 0 x 2 B 0 1 lika med Num 0 x 4 1 0 0"
+    },
+    "Sample_1_4_3_sbrief": {
+      "expected": "Num 0 x 1 5 F F plus Num 0 x 2 B 0 1 lika med Num 0 x 4 1 0 0"
+    },
+    "Sample_1_5_1_default": {
+      "expected": "stort I komma Ord stort I I komma Ord stort I I I komma Ord stort I V komma stort V"
+    },
+    "Sample_1_5_1_brief": {
+      "expected": "stort I komma Ord stort I I komma Ord stort I I I komma Ord stort I V komma stort V"
+    },
+    "Sample_1_5_1_sbrief": {
+      "expected": "stort I komma Ord stort I I komma Ord stort I I I komma Ord stort I V komma stort V"
+    },
+    "Sample_2_1_1_default": {
+      "expected": "d lika med startrot öppna stort X minus x stäng kvadrat minus öppna stort Y minus y stäng kvadrat slutrot"
+    },
+    "Sample_2_1_1_brief": {
+      "expected": "d lika med startrot öppna stort X minus x stäng kvadrat minus öppna stort Y minus y stäng kvadrat slutrot"
+    },
+    "Sample_2_1_1_sbrief": {
+      "expected": "d lika med rot öppna stort X minus x stäng kvadrat minus öppna stort Y minus y stäng kvadrat slutrot"
+    },
+    "Sample_2_3_1_default": {
+      "expected": "If stort A pil åt höger stort B and stort B pil åt höger stort C then stort A pil åt höger stort C"
+    },
+    "Sample_2_3_1_brief": {
+      "expected": "If stort A pil åt höger stort B and stort B pil åt höger stort C then stort A pil åt höger stort C"
+    },
+    "Sample_2_3_1_sbrief": {
+      "expected": "If stort A pil åt höger stort B and stort B pil åt höger stort C then stort A pil åt höger stort C"
+    },
+    "Sample_2_6_1_default": {
+      "expected": "fetstil vänster parentes x fetstil höger parentes"
+    },
+    "Sample_2_6_1_brief": {
+      "expected": "fetstil vänster parentes x fetstil höger parentes"
+    },
+    "Sample_2_6_1_sbrief": {
+      "expected": "fetstil vänster parentes x fetstil höger parentes"
+    },
+    "Sample_2_6_2_default": {
+      "expected": "kurvintegral stort E mellanpunkt d fetstil l lika med minus start bråk d stort Fi stort B över d t slut bråk"
+    },
+    "Sample_2_6_2_brief": {
+      "expected": "kurvintegral stort E mellanpunkt d fetstil l lika med minus start bråk d stort Fi stort B över d t slut bråk"
+    },
+    "Sample_2_6_2_sbrief": {
+      "expected": "kurvintegral stort E mellanpunkt d fetstil l lika med minus bråk d stort Fi stort B över d t slutbråk"
+    },
+    "NegativeVsMinus_0": {
+      "expected": "minus start bråk 1 över b slut bråk"
+    },
+    "NegativeVsMinus_1": {
+      "expected": "minus start bråk a över b slut bråk"
+    },
+    "NegativeVsMinus_2": {
+      "expected": "minus 3 och ett halv"
+    },
+    "Sample_4_2_1_default": {
+      "expected": "Uppercase öppna StartMängd alpha komma beta komma gamma komma delta komma epsilon komma fi SlutMängd stäng lika med StartMängd stort Alpha komma stort Beta komma stort Gamma komma triangel komma stort Epsilon komma stort Fi SlutMängd"
+    },
+    "Sample_4_2_1_brief": {
+      "expected": "Uppercase öppna StartMängd alpha komma beta komma gamma komma delta komma epsilon komma fi SlutMängd stäng lika med StartMängd stort Alpha komma stort Beta komma stort Gamma komma triangel komma stort Epsilon komma stort Fi SlutMängd"
+    },
+    "Sample_4_2_1_sbrief": {
+      "expected": "Uppercase öppna Mängds alpha komma beta komma gamma komma delta komma epsilon komma fi SlutMängd stäng lika med Mängds stort Alpha komma stort Beta komma stort Gamma komma triangel komma stort Epsilon komma stort Fi SlutMängd"
+    },
+    "Sample_5_1_1_default": {
+      "expected": "y minus 1"
+    },
+    "Sample_5_1_1_brief": {
+      "expected": "y minus 1"
+    },
+    "Sample_5_1_1_sbrief": {
+      "expected": "y minus 1"
+    },
+    "Sample_5_1_2_default": {
+      "expected": "öppna 1 minus to minus 1 stäng"
+    },
+    "Sample_5_1_2_brief": {
+      "expected": "öppna 1 minus to minus 1 stäng"
+    },
+    "Sample_5_1_2_sbrief": {
+      "expected": "öppna 1 minus to minus 1 stäng"
+    },
+    "Sample_5_1_3_default": {
+      "expected": "minus 1"
+    },
+    "Sample_5_1_3_brief": {
+      "expected": "minus 1"
+    },
+    "Sample_5_1_3_sbrief": {
+      "expected": "minus 1"
+    },
+    "Sample_6_1_1_default": {
+      "expected": "The Fibonacci numbers are kolon StartMängd 0 komma 1 komma 1 komma 2 komma 3 komma 5 komma 8 komma punkt punkt punkt SlutMängd"
+    },
+    "Sample_6_1_1_brief": {
+      "expected": "The Fibonacci numbers are kolon StartMängd 0 komma 1 komma 1 komma 2 komma 3 komma 5 komma 8 komma punkt punkt punkt SlutMängd"
+    },
+    "Sample_6_1_1_sbrief": {
+      "expected": "The Fibonacci numbers are kolon Mängds 0 komma 1 komma 1 komma 2 komma 3 komma 5 komma 8 komma punkt punkt punkt SlutMängd"
+    },
+    "Sample_6_2_1_default": {
+      "expected": "StartAbsolutVärde 4 minus 7 SlutAbsolutVärde lika med 3"
+    },
+    "Sample_6_2_1_brief": {
+      "expected": "StartAbsolutVärde 4 minus 7 SlutAbsolutVärde lika med 3"
+    },
+    "Sample_6_2_1_sbrief": {
+      "expected": "AbsolutVärde 4 minus 7 SlutAbsolutVärde lika med 3"
+    },
+    "Sample_6_2_2_default": {
+      "expected": "StartAbsolutVärde a plus minus StartAbsolutVärde b minus c SlutAbsolutVärde SlutAbsolutVärde inte lika med StartAbsolutVärde a SlutAbsolutVärde plus minus StartAbsolutVärde b minus c SlutAbsolutVärde"
+    },
+    "Sample_6_2_2_brief": {
+      "expected": "StartAbsolutVärde a plus minus StartAbsolutVärde b minus c SlutAbsolutVärde SlutAbsolutVärde inte lika med StartAbsolutVärde a SlutAbsolutVärde plus minus StartAbsolutVärde b minus c SlutAbsolutVärde"
+    },
+    "Sample_6_2_2_sbrief": {
+      "expected": "AbsolutVärde a plus minus AbsolutVärde b minus c SlutAbsolutVärde SlutAbsolutVärde inte lika med AbsolutVärde a SlutAbsolutVärde plus minus AbsolutVärde b minus c SlutAbsolutVärde"
+    },
+    "Sample_7_1_1_default": {
+      "expected": "start bråk 1 över x slut bråk"
+    },
+    "Sample_7_1_1_brief": {
+      "expected": "start bråk 1 över x slut bråk"
+    },
+    "Sample_7_1_1_sbrief": {
+      "expected": "bråk 1 över x slutbråk"
+    },
+    "Sample_7_1_2_default": {
+      "expected": "a minus start bråk b plus c över d minus e slut bråk gånger f"
+    },
+    "Sample_7_1_2_brief": {
+      "expected": "a minus start bråk b plus c över d minus e slut bråk gånger f"
+    },
+    "Sample_7_1_2_sbrief": {
+      "expected": "a minus bråk b plus c över d minus e slutbråk gånger f"
+    },
+    "Sample_7_2_1_default": {
+      "expected": "start start bråk start bråk x över y slut bråk över över z slut slut bråk inte lika med start start bråk x över över start bråk y över z slut bråk slut slut bråk"
+    },
+    "Sample_7_2_1_brief": {
+      "expected": "start start bråk start bråk x över y slut bråk över över z slut slut bråk inte lika med start start bråk x över över start bråk y över z slut bråk slut slut bråk"
+    },
+    "Sample_7_2_1_sbrief": {
+      "expected": "nästebråk bråk x över y slutbråk nästeöver z nästeslutbråk inte lika med nästebråk x nästeöver bråk y över z slutbråk nästeslutbråk"
+    },
+    "Sample_7_3_1_default": {
+      "expected": "start start start bråk start start bråk öppna 1 minus x stäng start bråk d över d x slut bråk öppna 2 x stäng minus 2 x start bråk d över d x slut bråk öppna 1 minus x stäng över över öppna 1 minus x stäng kvadrat slut slut bråk över över över 1 plus öppna start bråk 2 x över 1 minus x slut bråk stäng kvadrat slut slut slut bråk"
+    },
+    "Sample_7_3_1_brief": {
+      "expected": "start start start bråk start start bråk öppna 1 minus x stäng start bråk d över d x slut bråk öppna 2 x stäng minus 2 x start bråk d över d x slut bråk öppna 1 minus x stäng över över öppna 1 minus x stäng kvadrat slut slut bråk över över över 1 plus öppna start bråk 2 x över 1 minus x slut bråk stäng kvadrat slut slut slut bråk"
+    },
+    "Sample_7_3_1_sbrief": {
+      "expected": "nästedubbeltbråk nästebråk öppna 1 minus x stäng bråk d över d x slutbråk öppna 2 x stäng minus 2 x bråk d över d x slutbråk öppna 1 minus x stäng nästeöver öppna 1 minus x stäng kvadrat nästeslutbråk nästedubbeltöver 1 plus öppna bråk 2 x över 1 minus x slutbråk stäng kvadrat nästedubbeltslutbråk"
+    },
+    "Sample_7_3_2_default": {
+      "expected": "a 0 plus start start start start bråk 1 över över över över a 1 plus start start start bråk 1 över över över a 2 plus start start bråk 1 över över punkt punkt punkt plus start bråk 1 över a nedsänkt n baslinje slut bråk slut slut bråk slut slut slut bråk slut slut slut slut bråk"
+    },
+    "Sample_7_3_2_brief": {
+      "expected": "a 0 plus start start start start bråk 1 över över över över a 1 plus start start start bråk 1 över över över a 2 plus start start bråk 1 över över punkt punkt punkt plus start bråk 1 över a del n bas slut bråk slut slut bråk slut slut slut bråk slut slut slut slut bråk"
+    },
+    "Sample_7_3_2_sbrief": {
+      "expected": "a 0 plus näste3bråk 1 näste3över a 1 plus nästedubbeltbråk 1 nästedubbeltöver a 2 plus nästebråk 1 nästeöver punkt punkt punkt plus bråk 1 över a del n bas slutbråk nästeslutbråk nästedubbeltslutbråk näste3slutbråk"
+    },
+    "Sample_7_4_1_default": {
+      "expected": "ett halv plus två halva plus tre halva plus fyra halva plus punkt punkt punkt lika med summa underskrift n lika med 1 överskrift oändlighet start bråk n över 2 slut bråk"
+    },
+    "Sample_7_4_1_brief": {
+      "expected": "ett halv plus två halva plus tre halva plus fyra halva plus punkt punkt punkt lika med summa underskrift n lika med 1 överskrift oändlighet start bråk n över 2 slut bråk"
+    },
+    "Sample_7_4_1_sbrief": {
+      "expected": "ett halv plus två halva plus tre halva plus fyra halva plus punkt punkt punkt lika med summa underskrift n lika med 1 överskrift oändlighet bråk n över 2 slutbråk"
+    },
+    "Sample_7_4_2_default": {
+      "expected": "start bråk 20 över 5 slut bråk gånger start bråk 1 över 100 slut bråk lika med ett tjugofemtedel"
+    },
+    "Sample_7_4_2_brief": {
+      "expected": "start bråk 20 över 5 slut bråk gånger start bråk 1 över 100 slut bråk lika med ett tjugofemtedel"
+    },
+    "Sample_7_4_2_sbrief": {
+      "expected": "bråk 20 över 5 slutbråk gånger bråk 1 över 100 slutbråk lika med ett tjugofemtedel"
+    },
+    "Sample_7_4_3_default": {
+      "expected": "start bråk tre femtedelar över 8 slut bråk lika med tre femtedelar gånger ett åttondedel"
+    },
+    "Sample_7_4_3_brief": {
+      "expected": "start bråk tre femtedelar över 8 slut bråk lika med tre femtedelar gånger ett åttondedel"
+    },
+    "Sample_7_4_3_sbrief": {
+      "expected": "bråk tre femtedelar över 8 slutbråk lika med tre femtedelar gånger ett åttondedel"
+    },
+    "Sample_7_5_1_default": {
+      "expected": "3 och fem åttondedelar lika med start bråk 29 över 8 slut bråk"
+    },
+    "Sample_7_5_1_brief": {
+      "expected": "3 och fem åttondedelar lika med start bråk 29 över 8 slut bråk"
+    },
+    "Sample_7_5_1_sbrief": {
+      "expected": "3 och fem åttondedelar lika med bråk 29 över 8 slutbråk"
+    },
+    "Sample_7_6_1_default": {
+      "expected": "a 0 plus KedjeBråk b 1 genom a 1 plus StartBråk b 2 genom a 2 plus StartBråk b 3 genom a 3 plus punkt punkt punkt lika med a 0 plus start bråk b 1 över a 1 slut bråk plus start bråk b 2 över a 2 slut bråk plus punkt punkt punkt"
+    },
+    "Sample_7_6_1_brief": {
+      "expected": "a 0 plus KedjeBråk b 1 genom a 1 plus StartBråk b 2 genom a 2 plus StartBråk b 3 genom a 3 plus punkt punkt punkt lika med a 0 plus start bråk b 1 över a 1 slut bråk plus start bråk b 2 över a 2 slut bråk plus punkt punkt punkt"
+    },
+    "Sample_7_6_1_sbrief": {
+      "expected": "a 0 plus KedjeBråk b 1 genom a 1 plus Bråk b 2 genom a 2 plus Bråk b 3 genom a 3 plus punkt punkt punkt lika med a 0 plus bråk b 1 över a 1 slutbråk plus bråk b 2 över a 2 slutbråk plus punkt punkt punkt"
+    },
+    "Sample_8_1_1_default": {
+      "expected": "x kubik plus 6 x kvadrat minus x lika med 30"
+    },
+    "Sample_8_1_1_brief": {
+      "expected": "x kubik plus 6 x kvadrat minus x lika med 30"
+    },
+    "Sample_8_1_1_sbrief": {
+      "expected": "x kubik plus 6 x kvadrat minus x lika med 30"
+    },
+    "Sample_8_1_2_default": {
+      "expected": "start bråk d kvadrat y över d x kvadrat slut bråk plus öppna a x kvadrat plus b x plus c stäng y lika med 0"
+    },
+    "Sample_8_1_2_brief": {
+      "expected": "start bråk d kvadrat y över d x kvadrat slut bråk plus öppna a x kvadrat plus b x plus c stäng y lika med 0"
+    },
+    "Sample_8_1_2_sbrief": {
+      "expected": "bråk d kvadrat y över d x kvadrat slutbråk plus öppna a x kvadrat plus b x plus c stäng y lika med 0"
+    },
+    "Sample_8_2_1_default": {
+      "expected": "x upphöjt ett halv"
+    },
+    "Sample_8_2_1_brief": {
+      "expected": "x Sup ett halv"
+    },
+    "Sample_8_2_1_sbrief": {
+      "expected": "x Sup ett halv"
+    },
+    "Sample_8_2_2_default": {
+      "expected": "x nedsänkt n"
+    },
+    "Sample_8_2_2_brief": {
+      "expected": "x del n"
+    },
+    "Sample_8_2_2_sbrief": {
+      "expected": "x del n"
+    },
+    "Sample_8_2_3_default": {
+      "expected": "x upphöjt a"
+    },
+    "Sample_8_2_3_brief": {
+      "expected": "x Sup a"
+    },
+    "Sample_8_2_3_sbrief": {
+      "expected": "x Sup a"
+    },
+    "Sample_8_3_1_default": {
+      "expected": "x upphöjt m plus n"
+    },
+    "Sample_8_3_1_brief": {
+      "expected": "x Sup m plus n"
+    },
+    "Sample_8_3_1_sbrief": {
+      "expected": "x Sup m plus n"
+    },
+    "Sample_8_3_2_default": {
+      "expected": "stort T nedsänkt n minus 1 baslinje plus 5 lika med 0"
+    },
+    "Sample_8_3_2_brief": {
+      "expected": "stort T del n minus 1 bas plus 5 lika med 0"
+    },
+    "Sample_8_3_2_sbrief": {
+      "expected": "stort T del n minus 1 bas plus 5 lika med 0"
+    },
+    "Sample_8_3_3_default": {
+      "expected": "x upphöjt m plus n baslinje lika med x upphöjt m baslinje x upphöjt n"
+    },
+    "Sample_8_3_3_brief": {
+      "expected": "x Sup m plus n bas lika med x Sup m bas x Sup n"
+    },
+    "Sample_8_3_3_sbrief": {
+      "expected": "x Sup m plus n bas lika med x Sup m bas x Sup n"
+    },
+    "Sample_8_4_1_default": {
+      "expected": "x upphöjt a super nedsänkt n upphöjt plus a super nedsänkt n minus 1"
+    },
+    "Sample_8_4_1_brief": {
+      "expected": "x Sup a Sup del n Sup plus a Sup del n minus 1"
+    },
+    "Sample_8_4_1_sbrief": {
+      "expected": "x Sup a Sup del n Sup plus a Sup del n minus 1"
+    },
+    "Sample_8_4_2_default": {
+      "expected": "x upphöjt a super nedsänkt b"
+    },
+    "Sample_8_4_2_brief": {
+      "expected": "x Sup a Sup del b"
+    },
+    "Sample_8_4_2_sbrief": {
+      "expected": "x Sup a Sup del b"
+    },
+    "Sample_8_4_3_default": {
+      "expected": "x nedsänkt a del upphöjt b"
+    },
+    "Sample_8_4_3_brief": {
+      "expected": "x del a del Sup b"
+    },
+    "Sample_8_4_3_sbrief": {
+      "expected": "x del a del Sup b"
+    },
+    "Sample_8_4_4_default": {
+      "expected": "y upphöjt a super upphöjt b super super nedsänkt c baslinje inte lika med y upphöjt a super upphöjt b upphöjt c"
+    },
+    "Sample_8_4_4_brief": {
+      "expected": "y Sup a Sup Sup b Sup Sup del c bas inte lika med y Sup a Sup Sup b Sup c"
+    },
+    "Sample_8_4_4_sbrief": {
+      "expected": "y Sup a Sup Sup b Sup Sup del c bas inte lika med y Sup a Sup Sup b Sup c"
+    },
+    "Sample_8_4_5_default": {
+      "expected": "y upphöjt a super super nedsänkt c super upphöjt b"
+    },
+    "Sample_8_4_5_brief": {
+      "expected": "y Sup a Sup Sup del c Sup Sup b"
+    },
+    "Sample_8_4_5_sbrief": {
+      "expected": "y Sup a Sup Sup del c Sup Sup b"
+    },
+    "Sample_8_4_5Short_default": {
+      "expected": "y upphöjt a super super nedsänkt c"
+    },
+    "Sample_8_4_5Short_brief": {
+      "expected": "y Sup a Sup Sup del c"
+    },
+    "Sample_8_4_5Short_sbrief": {
+      "expected": "y Sup a Sup Sup del c"
+    },
+    "Sample_8_4_5Inv_default": {
+      "expected": "y nedsänkt a del del upphöjt c"
+    },
+    "Sample_8_4_5Inv_brief": {
+      "expected": "y del a del del Sup c"
+    },
+    "Sample_8_4_5Inv_sbrief": {
+      "expected": "y del a del del Sup c"
+    },
+    "Sample_8_4_5InvShort_default": {
+      "expected": "y nedsänkt a del del upphöjt c del nedsänkt b"
+    },
+    "Sample_8_4_5InvShort_brief": {
+      "expected": "y del a del del Sup c del del b"
+    },
+    "Sample_8_4_5InvShort_sbrief": {
+      "expected": "y del a del del Sup c del del b"
+    },
+    "Sample_8_4_6_default": {
+      "expected": "x upphöjt a super upphöjt b"
+    },
+    "Sample_8_4_6_brief": {
+      "expected": "x Sup a Sup Sup b"
+    },
+    "Sample_8_4_6_sbrief": {
+      "expected": "x Sup a Sup Sup b"
+    },
+    "Sample_8_4_7_default": {
+      "expected": "x nedsänkt a del nedsänkt b"
+    },
+    "Sample_8_4_7_brief": {
+      "expected": "x del a del del b"
+    },
+    "Sample_8_4_7_sbrief": {
+      "expected": "x del a del del b"
+    },
+    "Sample_8_4_8_default": {
+      "expected": "stort T upphöjt öppna x super upphöjt a upphöjt plus y super upphöjt b upphöjt stäng"
+    },
+    "Sample_8_4_8_brief": {
+      "expected": "stort T Sup öppna x Sup Sup a Sup plus y Sup Sup b Sup stäng"
+    },
+    "Sample_8_4_8_sbrief": {
+      "expected": "stort T Sup öppna x Sup Sup a Sup plus y Sup Sup b Sup stäng"
+    },
+    "Sample_8_5_1_default": {
+      "expected": "x 1"
+    },
+    "Sample_8_5_1_brief": {
+      "expected": "x 1"
+    },
+    "Sample_8_5_1_sbrief": {
+      "expected": "x 1"
+    },
+    "Sample_8_5_2_default": {
+      "expected": "x nedsänkt minus 1"
+    },
+    "Sample_8_5_2_brief": {
+      "expected": "x del minus 1"
+    },
+    "Sample_8_5_2_sbrief": {
+      "expected": "x del minus 1"
+    },
+    "Sample_8_5_3_default": {
+      "expected": "x 10,000"
+    },
+    "Sample_8_5_3_brief": {
+      "expected": "x 10,000"
+    },
+    "Sample_8_5_3_sbrief": {
+      "expected": "x 10,000"
+    },
+    "Sample_8_5_4_default": {
+      "expected": "x 1,3"
+    },
+    "Sample_8_5_4_brief": {
+      "expected": "x 1,3"
+    },
+    "Sample_8_5_4_sbrief": {
+      "expected": "x 1,3"
+    },
+    "Sample_8_5_5_default": {
+      "expected": "4 stort F e plus 3 stort O 2 pil åt höger 2 stort F e 2 stort O 3"
+    },
+    "Sample_8_5_5_brief": {
+      "expected": "4 stort F e plus 3 stort O 2 pil åt höger 2 stort F e 2 stort O 3"
+    },
+    "Sample_8_5_5_sbrief": {
+      "expected": "4 stort F e plus 3 stort O 2 pil åt höger 2 stort F e 2 stort O 3"
+    },
+    "Sample_8_5_6_default": {
+      "expected": "a nedsänkt 2 komma 3"
+    },
+    "Sample_8_5_6_brief": {
+      "expected": "a del 2 komma 3"
+    },
+    "Sample_8_5_6_sbrief": {
+      "expected": "a del 2 komma 3"
+    },
+    "Sample_8_5_7_default": {
+      "expected": "stort T nedsänkt n 1 plus n 0"
+    },
+    "Sample_8_5_7_brief": {
+      "expected": "stort T del n 1 plus n 0"
+    },
+    "Sample_8_5_7_sbrief": {
+      "expected": "stort T del n 1 plus n 0"
+    },
+    "Sample_8_5_8_default": {
+      "expected": "logaritmen nedsänkt 2 baslinje öppna x stäng lika med start bråk logaritmen nedsänkt 10 baslinje öppna x stäng över logaritmen nedsänkt 10 baslinje öppna 2 stäng slut bråk"
+    },
+    "Sample_8_5_8_brief": {
+      "expected": "logaritmen del 2 bas öppna x stäng lika med start bråk logaritmen del 10 bas öppna x stäng över logaritmen del 10 bas öppna 2 stäng slut bråk"
+    },
+    "Sample_8_5_8_sbrief": {
+      "expected": "logaritmen del 2 bas öppna x stäng lika med bråk logaritmen del 10 bas öppna x stäng över logaritmen del 10 bas öppna 2 stäng slutbråk"
+    },
+    "Sample_8_5_9_default": {
+      "expected": "stort Fi 5"
+    },
+    "Sample_8_5_9_brief": {
+      "expected": "stort Fi 5"
+    },
+    "Sample_8_5_9_sbrief": {
+      "expected": "stort Fi 5"
+    },
+    "Sample_8_5_10_default": {
+      "expected": "naturliga logaritmen x lika med integral undre gräns 1 övre gräns x Basnivå start bråk d t över t slut bråk"
+    },
+    "Sample_8_5_10_brief": {
+      "expected": "naturliga logaritmen x lika med integral Undre 1 Övre x Bas start bråk d t över t slut bråk"
+    },
+    "Sample_8_5_10_sbrief": {
+      "expected": "naturliga logaritmen x lika med integral Undre 1 Övre x Bas bråk d t över t slutbråk"
+    },
+    "Sample_8_6_1_default": {
+      "expected": "dollar n Basnivå 2 lika med 2 gånger dollar n plus 1 semikolon"
+    },
+    "Sample_8_6_1_brief": {
+      "expected": "dollar n Bas 2 lika med 2 gånger dollar n plus 1 semikolon"
+    },
+    "Sample_8_6_1_sbrief": {
+      "expected": "dollar n Bas 2 lika med 2 gånger dollar n plus 1 semikolon"
+    },
+    "BaselineNumberFont_default": {
+      "expected": "n Basnivå bold 2"
+    },
+    "BaselineNumberFont_brief": {
+      "expected": "n Bas bold 2"
+    },
+    "BaselineNumberFont_sbrief": {
+      "expected": "n Bas bold 2"
+    },
+    "Sample_8_8_1_naive_default": {
+      "expected": "nedsänkt c d upphöjt a b baslinje x nedsänkt e f upphöjt g h"
+    },
+    "Sample_8_8_1_naive_brief": {
+      "expected": "del c d Sup a b bas x del e f Sup g h"
+    },
+    "Sample_8_8_1_naive_sbrief": {
+      "expected": "del c d Sup a b bas x del e f Sup g h"
+    },
+    "Sample_8_8_1_default": {
+      "expected": "nedsänkt c d upphöjt a b baslinje x nedsänkt e f upphöjt g h"
+    },
+    "Sample_8_8_1_brief": {
+      "expected": "del c d Sup a b bas x del e f Sup g h"
+    },
+    "Sample_8_8_1_sbrief": {
+      "expected": "del c d Sup a b bas x del e f Sup g h"
+    },
+    "SampleSimpleSquare_default": {
+      "expected": "stort T 0 kvadrat"
+    },
+    "SampleSimpleSquare_brief": {
+      "expected": "stort T 0 kvadrat"
+    },
+    "SampleSimpleSquare_sbrief": {
+      "expected": "stort T 0 kvadrat"
+    },
+    "SampleSimpleSquare_2_default": {
+      "expected": "stort T 0 kvadrat"
+    },
+    "SampleSimpleSquare_2_brief": {
+      "expected": "stort T 0 kvadrat"
+    },
+    "SampleSimpleSquare_2_sbrief": {
+      "expected": "stort T 0 kvadrat"
+    },
+    "SampleSimpleCube_default": {
+      "expected": "stort T 0 kubik"
+    },
+    "SampleSimpleCube_brief": {
+      "expected": "stort T 0 kubik"
+    },
+    "SampleSimpleCube_sbrief": {
+      "expected": "stort T 0 kubik"
+    },
+    "SampleSimpleCube_2_default": {
+      "expected": "stort T 0 kubik"
+    },
+    "SampleSimpleCube_2_brief": {
+      "expected": "stort T 0 kubik"
+    },
+    "SampleSimpleCube_2_sbrief": {
+      "expected": "stort T 0 kubik"
+    },
+    "Sample_8_8_2_default": {
+      "expected": "stort T nedsänkt n minus 1 upphöjt 2"
+    },
+    "Sample_8_8_2_brief": {
+      "expected": "stort T del n minus 1 Sup 2"
+    },
+    "Sample_8_8_2_sbrief": {
+      "expected": "stort T del n minus 1 Sup 2"
+    },
+    "Sample_8_9_1_default": {
+      "expected": "x apostrof"
+    },
+    "Sample_8_9_1_brief": {
+      "expected": "x apostrof"
+    },
+    "Sample_8_9_1_sbrief": {
+      "expected": "x apostrof"
+    },
+    "Sample_8_9_2_default": {
+      "expected": "f trippel prim öppna y stäng lika med start bråk d f dubbelt prim öppna y stäng över d y slut bråk"
+    },
+    "Sample_8_9_2_brief": {
+      "expected": "f trippel prim öppna y stäng lika med start bråk d f dubbelt prim öppna y stäng över d y slut bråk"
+    },
+    "Sample_8_9_2_sbrief": {
+      "expected": "f trippel prim öppna y stäng lika med bråk d f dubbelt prim öppna y stäng över d y slutbråk"
+    },
+    "Sample_8_10_1_default": {
+      "expected": "rho apostrof lika med rho apostrof nedsänkt plus baslinje plus rho apostrof nedsänkt minus"
+    },
+    "Sample_8_10_1_brief": {
+      "expected": "rho apostrof lika med rho apostrof del plus bas plus rho apostrof del minus"
+    },
+    "Sample_8_10_1_sbrief": {
+      "expected": "rho apostrof lika med rho apostrof del plus bas plus rho apostrof del minus"
+    },
+    "Sample_8_10_2_default": {
+      "expected": "x apostrof 10"
+    },
+    "Sample_8_10_2_brief": {
+      "expected": "x apostrof 10"
+    },
+    "Sample_8_10_2_sbrief": {
+      "expected": "x apostrof 10"
+    },
+    "Sample_8_10_3_default": {
+      "expected": "stort T apostrof nedsänkt n"
+    },
+    "Sample_8_10_3_brief": {
+      "expected": "stort T apostrof del n"
+    },
+    "Sample_8_10_3_sbrief": {
+      "expected": "stort T apostrof del n"
+    },
+    "Sample_8_11_1_default": {
+      "expected": "Start 2 Gånger 3 Matris 1:a Rad 1:a Kolumn x upphöjt n 2:a Kolumn y upphöjt n 3:e Kolumn z upphöjt n 2:a Rad 1:a Kolumn x upphöjt n plus 1 2:a Kolumn y upphöjt n plus 1 3:e Kolumn z upphöjt n plus 1 SlutMatris"
+    },
+    "Sample_8_11_1_brief": {
+      "expected": "Start 2 Gånger 3 Matris 1:a Rad 1:a Kolumn x Sup n 2:a Kolumn y Sup n 3:e Kolumn z Sup n 2:a Rad 1:a Kolumn x Sup n plus 1 2:a Kolumn y Sup n plus 1 3:e Kolumn z Sup n plus 1 SlutMatris"
+    },
+    "Sample_8_11_1_sbrief": {
+      "expected": "2 Gånger 3 Matris 1:a Rad 1:a Kolumn x Sup n 2:a Kolumn y Sup n 3:e Kolumn z Sup n 2:a Rad 1:a Kolumn x Sup n plus 1 2:a Kolumn y Sup n plus 1 3:e Kolumn z Sup n plus 1 SlutMatris"
+    },
+    "Sample_8_12_1_default": {
+      "expected": "x nedsänkt a baslinje upphöjt b"
+    },
+    "Sample_8_12_1_brief": {
+      "expected": "x del a bas Sup b"
+    },
+    "Sample_8_12_1_sbrief": {
+      "expected": "x del a bas Sup b"
+    },
+    "Sample_8_12_2_default": {
+      "expected": "x upphöjt b baslinje nedsänkt a"
+    },
+    "Sample_8_12_2_brief": {
+      "expected": "x Sup b bas del a"
+    },
+    "Sample_8_12_2_sbrief": {
+      "expected": "x Sup b bas del a"
+    },
+    "Sample_8_13_1_default": {
+      "expected": "logaritmen upphöjt 4 upphöjt b baslinje x"
+    },
+    "Sample_8_13_1_brief": {
+      "expected": "logaritmen Sup 4 Sup b bas x"
+    },
+    "Sample_8_13_1_sbrief": {
+      "expected": "logaritmen Sup 4 Sup b bas x"
+    },
+    "Sample_8_13_2_default": {
+      "expected": "stort T nedsänkt n nedsänkt a baslinje y"
+    },
+    "Sample_8_13_2_brief": {
+      "expected": "stort T del n del a bas y"
+    },
+    "Sample_8_13_2_sbrief": {
+      "expected": "stort T del n del a bas y"
+    },
+    "Sample_9_1_1_default": {
+      "expected": "startrot 2 slutrot"
+    },
+    "Sample_9_1_1_brief": {
+      "expected": "startrot 2 slutrot"
+    },
+    "Sample_9_1_1_sbrief": {
+      "expected": "rot 2 slutrot"
+    },
+    "Sample_9_1_2_default": {
+      "expected": "startrot m plus n slutrot"
+    },
+    "Sample_9_1_2_brief": {
+      "expected": "startrot m plus n slutrot"
+    },
+    "Sample_9_1_2_sbrief": {
+      "expected": "rot m plus n slutrot"
+    },
+    "Sample_9_2_1_default": {
+      "expected": "rotindex m plus n startrot x plus y slutrot"
+    },
+    "Sample_9_2_1_brief": {
+      "expected": "rotindex m plus n startrot x plus y slutrot"
+    },
+    "Sample_9_2_1_sbrief": {
+      "expected": "index m plus n rot x plus y slutrot"
+    },
+    "Sample_9_2_2_default": {
+      "expected": "rotindex n startrot x upphöjt m baslinje slutrot lika med öppna rotindex n startrot x slutrot stäng upphöjt m baslinje lika med x upphöjt start bråk m över n slut bråk baslinje komma x större än 0"
+    },
+    "Sample_9_2_2_brief": {
+      "expected": "rotindex n startrot x Sup m bas slutrot lika med öppna rotindex n startrot x slutrot stäng Sup m bas lika med x Sup start bråk m över n slut bråk bas komma x större än 0"
+    },
+    "Sample_9_2_2_sbrief": {
+      "expected": "index n rot x Sup m bas slutrot lika med öppna index n rot x slutrot stäng Sup m bas lika med x Sup bråk m över n slutbråk bas komma x större än 0"
+    },
+    "Sample_9_2_3_default": {
+      "expected": "rotindex 3 startrot x slutrot lika med x upphöjt ett tredjedel"
+    },
+    "Sample_9_2_3_brief": {
+      "expected": "rotindex 3 startrot x slutrot lika med x Sup ett tredjedel"
+    },
+    "Sample_9_2_3_sbrief": {
+      "expected": "index 3 rot x slutrot lika med x Sup ett tredjedel"
+    },
+    "Sample_9_3_1_default": {
+      "expected": "nästladstartrot startrot x plus 1 slutrot plus startrot y plus 1 slutrot nästladslutrot"
+    },
+    "Sample_9_3_1_brief": {
+      "expected": "nästestartrot startrot x plus 1 slutrot plus startrot y plus 1 slutrot nästeslutrot"
+    },
+    "Sample_9_3_1_sbrief": {
+      "expected": "nästerot rot x plus 1 slutrot plus rot y plus 1 slutrot nästeslutrot"
+    },
+    "Sample_9_3_2_default": {
+      "expected": "nästladrotindex n nästladstartrot rotindex m startrot x slutrot nästladslutrot lika med nästladrotindex m nästladstartrot rotindex n startrot x slutrot nästladslutrot"
+    },
+    "Sample_9_3_2_brief": {
+      "expected": "nästerotindex n nästestartrot rotindex m startrot x slutrot nästeslutrot lika med nästerotindex m nästestartrot rotindex n startrot x slutrot nästeslutrot"
+    },
+    "Sample_9_3_2_sbrief": {
+      "expected": "nästeindex n nästerot index m rot x slutrot nästeslutrot lika med nästeindex m nästerot index n rot x slutrot nästeslutrot"
+    },
+    "Sample_9_3_3_default": {
+      "expected": "x upphöjt e minus 2 baslinje lika med nästlad3startrot x nästladdubbeltrotindex 3 nästladdubbeltstartrot x nästladrotindex 4 nästladstartrot x rotindex 5 startrot x punkt punkt punkt slutrot nästladslutrot nästladdubbeltslutrot nästlad3slutrot komma x tillhör double-struck stort R"
+    },
+    "Sample_9_3_3_brief": {
+      "expected": "x Sup e minus 2 bas lika med näste3startrot x nästedubbeltrotindex 3 nästedubbeltstartrot x nästerotindex 4 nästestartrot x rotindex 5 startrot x punkt punkt punkt slutrot nästeslutrot nästedubbeltslutrot näste3slutrot komma x tillhör double-struck stort R"
+    },
+    "Sample_9_3_3_sbrief": {
+      "expected": "x Sup e minus 2 bas lika med näste3rot x nästedubbeltindex 3 nästedubbeltrot x nästeindex 4 nästerot x index 5 rot x punkt punkt punkt slutrot nästeslutrot nästedubbeltslutrot näste3slutrot komma x tillhör double-struck stort R"
+    },
+    "Sample_9_3_4_default": {
+      "expected": "start bråk 2 över pi slut bråk lika med start bråk startrot 2 slutrot över 2 slut bråk start bråk nästladstartrot 2 plus startrot 2 slutrot nästladslutrot över 2 slut bråk start bråk nästladdubbeltstartrot 2 plus nästladstartrot 2 plus startrot 2 slutrot nästladslutrot nästladdubbeltslutrot över 2 slut bråk punkt punkt punkt"
+    },
+    "Sample_9_3_4_brief": {
+      "expected": "start bråk 2 över pi slut bråk lika med start bråk startrot 2 slutrot över 2 slut bråk start bråk nästestartrot 2 plus startrot 2 slutrot nästeslutrot över 2 slut bråk start bråk nästedubbeltstartrot 2 plus nästestartrot 2 plus startrot 2 slutrot nästeslutrot nästedubbeltslutrot över 2 slut bråk punkt punkt punkt"
+    },
+    "Sample_9_3_4_sbrief": {
+      "expected": "bråk 2 över pi slutbråk lika med bråk rot 2 slutrot över 2 slutbråk bråk nästerot 2 plus rot 2 slutrot nästeslutrot över 2 slutbråk bråk nästedubbeltrot 2 plus nästerot 2 plus rot 2 slutrot nästeslutrot nästedubbeltslutrot över 2 slutbråk punkt punkt punkt"
+    },
+    "Sample_10_1_1_default": {
+      "expected": "start bråk 5 x Genomstruken y SlutGenomstruken över 2 Genomstruken y SlutGenomstruken slut bråk lika med fem halva x"
+    },
+    "Sample_10_1_1_brief": {
+      "expected": "start bråk 5 x Genomstruken y SlutGenomstruken över 2 Genomstruken y SlutGenomstruken slut bråk lika med fem halva x"
+    },
+    "Sample_10_1_1_sbrief": {
+      "expected": "bråk 5 x Genomstruken y SlutGenomstruken över 2 Genomstruken y SlutGenomstruken slutbråk lika med fem halva x"
+    },
+    "Sample_10_2_1_default": {
+      "expected": "start bråk 12 över 18 slut bråk lika med start bråk Genomstruken 12 Med 2 SlutGenomstruken över Genomstruken 18 Med 3 SlutGenomstruken slut bråk lika med två tredjedelar"
+    },
+    "Sample_10_2_1_brief": {
+      "expected": "start bråk 12 över 18 slut bråk lika med start bråk Genomstruken 12 Med 2 SlutGenomstruken över Genomstruken 18 Med 3 SlutGenomstruken slut bråk lika med två tredjedelar"
+    },
+    "Sample_10_2_1_sbrief": {
+      "expected": "bråk 12 över 18 slutbråk lika med bråk Genomstruken 12 Med 2 SlutGenomstruken över Genomstruken 18 Med 3 SlutGenomstruken slutbråk lika med två tredjedelar"
+    },
+    "Sample_10_2_2_default": {
+      "expected": "start bråk 12 över 18 slut bråk lika med start bråk GenomStruken 12 Med 2 SlutGenomstruken över GenomStruken 18 Med 3 SlutGenomstruken slut bråk lika med två tredjedelar"
+    },
+    "Sample_10_2_2_brief": {
+      "expected": "start bråk 12 över 18 slut bråk lika med start bråk GenomStruken 12 Med 2 SlutGenomstruken över GenomStruken 18 Med 3 SlutGenomstruken slut bråk lika med två tredjedelar"
+    },
+    "Sample_10_2_2_sbrief": {
+      "expected": "bråk 12 över 18 slutbråk lika med bråk GenomStruken 12 Med 2 SlutGenomstruken över GenomStruken 18 Med 3 SlutGenomstruken slutbråk lika med två tredjedelar"
+    },
+    "Sample_11_1_1_default": {
+      "expected": "ModifieradÖver x Med trema"
+    },
+    "Sample_11_1_1_brief": {
+      "expected": "ModÖver x Med trema"
+    },
+    "Sample_11_1_1_sbrief": {
+      "expected": "ModÖver x Med trema"
+    },
+    "Sample_11_1_2_default": {
+      "expected": "ModifieradÖver x plus y Med pil åt höger"
+    },
+    "Sample_11_1_2_brief": {
+      "expected": "ModÖver x plus y Med pil åt höger"
+    },
+    "Sample_11_1_2_sbrief": {
+      "expected": "ModÖver x plus y Med pil åt höger"
+    },
+    "Sample_11_1_3_default": {
+      "expected": "ModifieradÖver x Med cirkumflex"
+    },
+    "Sample_11_1_3_brief": {
+      "expected": "ModÖver x Med cirkumflex"
+    },
+    "Sample_11_1_3_sbrief": {
+      "expected": "ModÖver x Med cirkumflex"
+    },
+    "Sample_11_2_1_default": {
+      "expected": "ModifieradUnder x Med punkt över"
+    },
+    "Sample_11_2_1_brief": {
+      "expected": "ModUnder x Med punkt över"
+    },
+    "Sample_11_2_1_sbrief": {
+      "expected": "ModUnder x Med punkt över"
+    },
+    "Sample_11_3_1_default": {
+      "expected": "x övertilde"
+    },
+    "Sample_11_3_1_brief": {
+      "expected": "x övertilde"
+    },
+    "Sample_11_3_1_sbrief": {
+      "expected": "x övertilde"
+    },
+    "Sample_11_3_2_default": {
+      "expected": "x överstreck"
+    },
+    "Sample_11_3_2_brief": {
+      "expected": "x överstreck"
+    },
+    "Sample_11_3_2_sbrief": {
+      "expected": "x överstreck"
+    },
+    "Sample_11_3_3_default": {
+      "expected": "y undetilde"
+    },
+    "Sample_11_3_3_brief": {
+      "expected": "y undetilde"
+    },
+    "Sample_11_3_3_sbrief": {
+      "expected": "y undetilde"
+    },
+    "Sample_11_4_1_default": {
+      "expected": "x överstreck överstreck"
+    },
+    "Sample_11_4_1_brief": {
+      "expected": "x överstreck överstreck"
+    },
+    "Sample_11_4_1_sbrief": {
+      "expected": "x överstreck överstreck"
+    },
+    "Sample_11_4_2_default": {
+      "expected": "y överstreck överstreck understreck understreck"
+    },
+    "Sample_11_4_2_brief": {
+      "expected": "y överstreck överstreck understreck understreck"
+    },
+    "Sample_11_4_2_sbrief": {
+      "expected": "y överstreck överstreck understreck understreck"
+    },
+    "Sample_11_6_1_default": {
+      "expected": "ModifieradÖver Under ModifieradUnder a plus b Med streck under Med gånger"
+    },
+    "Sample_11_6_1_brief": {
+      "expected": "ModUnder Under ModUnder a plus b Med streck under Med gånger"
+    },
+    "Sample_11_6_1_sbrief": {
+      "expected": "ModUnder Under ModUnder a plus b Med streck under Med gånger"
+    },
+    "Sample_11_6_3_default": {
+      "expected": "ModifieradÖver Över ModifieradÖver x plus y Med tilde Med streck"
+    },
+    "Sample_11_6_3_brief": {
+      "expected": "ModÖver Över ModÖver x plus y Med tilde Med streck"
+    },
+    "Sample_11_6_3_sbrief": {
+      "expected": "ModÖver Över ModÖver x plus y Med tilde Med streck"
+    },
+    "Sample_11_7_1_default": {
+      "expected": "summa underskrift n lika med 1 överskrift oändlighet a nedsänkt n"
+    },
+    "Sample_11_7_1_brief": {
+      "expected": "summa underskrift n lika med 1 överskrift oändlighet a del n"
+    },
+    "Sample_11_7_1_sbrief": {
+      "expected": "summa underskrift n lika med 1 överskrift oändlighet a del n"
+    },
+    "Sample_11_8_1_default": {
+      "expected": "ModifieradUnder x plus y Med streck under underskrift a lika med 5 underunderskrift b lika med 3"
+    },
+    "Sample_11_8_1_brief": {
+      "expected": "ModUnder x plus y Med streck under underskrift a lika med 5 underunderskrift b lika med 3"
+    },
+    "Sample_11_8_1_sbrief": {
+      "expected": "ModUnder x plus y Med streck under underskrift a lika med 5 underunderskrift b lika med 3"
+    },
+    "Sample_11_8_2_default": {
+      "expected": "ModifieradÖver x plus y Med streck överskrift n lika med 1 överöverskrift m lika med 2"
+    },
+    "Sample_11_8_2_brief": {
+      "expected": "ModÖver x plus y Med streck överskrift n lika med 1 överöverskrift m lika med 2"
+    },
+    "Sample_11_8_2_sbrief": {
+      "expected": "ModÖver x plus y Med streck överskrift n lika med 1 överöverskrift m lika med 2"
+    },
+    "Sample_12_1_1_default": {
+      "expected": "logaritmen nedsänkt b baslinje x"
+    },
+    "Sample_12_1_1_brief": {
+      "expected": "logaritmen del b bas x"
+    },
+    "Sample_12_1_1_sbrief": {
+      "expected": "logaritmen del b bas x"
+    },
+    "Sample_12_1_2_default": {
+      "expected": "cosinus y"
+    },
+    "Sample_12_1_2_brief": {
+      "expected": "cosinus y"
+    },
+    "Sample_12_1_2_sbrief": {
+      "expected": "cosinus y"
+    },
+    "Sample_12_1_3_default": {
+      "expected": "sinus x"
+    },
+    "Sample_12_1_3_brief": {
+      "expected": "sinus x"
+    },
+    "Sample_12_1_3_sbrief": {
+      "expected": "sinus x"
+    },
+    "Sample_13_1_1_default": {
+      "expected": "start bråk 60 Genomstruken miles SlutGenomstruken över Genomstruken hours SlutGenomstruken slut bråk gånger start bråk 5,280 fot över 1 Genomstruken miles SlutGenomstruken slut bråk gånger start bråk 1 Genomstruken hours SlutGenomstruken över 60 minutes slut bråk lika med start bråk 5,280 fot över minutes slut bråk"
+    },
+    "Sample_13_1_1_brief": {
+      "expected": "start bråk 60 Genomstruken miles SlutGenomstruken över Genomstruken hours SlutGenomstruken slut bråk gånger start bråk 5,280 fot över 1 Genomstruken miles SlutGenomstruken slut bråk gånger start bråk 1 Genomstruken hours SlutGenomstruken över 60 minutes slut bråk lika med start bråk 5,280 fot över minutes slut bråk"
+    },
+    "Sample_13_1_1_sbrief": {
+      "expected": "bråk 60 Genomstruken miles SlutGenomstruken över Genomstruken hours SlutGenomstruken slutbråk gånger bråk 5,280 fot över 1 Genomstruken miles SlutGenomstruken slutbråk gånger bråk 1 Genomstruken hours SlutGenomstruken över 60 minutes slutbråk lika med bråk 5,280 fot över minutes slutbråk"
+    },
+    "Sample_13_1_2_default": {
+      "expected": "1 joule lika med 1 kg mellanpunkt meter kvadrat mellanpunkt sekunder upphöjt minus 2"
+    },
+    "Sample_13_1_2_brief": {
+      "expected": "1 joule lika med 1 kg mellanpunkt meter kvadrat mellanpunkt sekunder Sup minus 2"
+    },
+    "Sample_13_1_2_sbrief": {
+      "expected": "1 joule lika med 1 kg mellanpunkt meter kvadrat mellanpunkt sekunder Sup minus 2"
+    },
+    "Sample_13_1_3_default": {
+      "expected": "m meter lika med 100 m cm lika med start bråk m över 1,000 slut bråk km"
+    },
+    "Sample_13_1_3_brief": {
+      "expected": "m meter lika med 100 m cm lika med start bråk m över 1,000 slut bråk km"
+    },
+    "Sample_13_1_3_sbrief": {
+      "expected": "m meter lika med 100 m cm lika med bråk m över 1,000 slutbråk km"
+    },
+    "Sample_13_1_4_default": {
+      "expected": "1 miles nästan lika med 1,6 km"
+    },
+    "Sample_13_1_4_brief": {
+      "expected": "1 miles nästan lika med 1,6 km"
+    },
+    "Sample_13_1_4_sbrief": {
+      "expected": "1 miles nästan lika med 1,6 km"
+    },
+    "Sample_13_1_5_default": {
+      "expected": "1 tum lika med 2,54 cm"
+    },
+    "Sample_13_1_5_brief": {
+      "expected": "1 tum lika med 2,54 cm"
+    },
+    "Sample_13_1_5_sbrief": {
+      "expected": "1 tum lika med 2,54 cm"
+    },
+    "Sample_14_1_1_default": {
+      "expected": "StartLayout 1:a Rad 1:a Kolumn stort H 2 2:a Kolumn plus 3:e Kolumn stort F 2 4:e Kolumn pil åt höger 5:e Kolumn 2 stort H stort F 2:a Rad 1:a Kolumn hydrogen 2:a Kolumn Tom 3:e Kolumn fluorine 4:e Kolumn Tom 5:e Kolumn hydrogen fluoride SlutLayout"
+    },
+    "Sample_14_1_1_brief": {
+      "expected": "StartLayout 1:a Rad 1:a Kolumn stort H 2 2:a Kolumn plus 3:e Kolumn stort F 2 4:e Kolumn pil åt höger 5:e Kolumn 2 stort H stort F 2:a Rad 1:a Kolumn hydrogen 2:a Kolumn Tom 3:e Kolumn fluorine 4:e Kolumn Tom 5:e Kolumn hydrogen fluoride SlutLayout"
+    },
+    "Sample_14_1_1_sbrief": {
+      "expected": "Layout 1:a Rad 1:a Kolumn stort H 2 2:a Kolumn plus 3:e Kolumn stort F 2 4:e Kolumn pil åt höger 5:e Kolumn 2 stort H stort F 2:a Rad 1:a Kolumn hydrogen 2:a Kolumn Tom 3:e Kolumn fluorine 4:e Kolumn Tom 5:e Kolumn hydrogen fluoride SlutLayout"
+    },
+    "Sample_14_3_1_default": {
+      "expected": "x lika med StartLayout Förstorad vänster klammer 1:a Rad 1:a Kolumn y mindre än 0 2:a Kolumn 0 2:a Rad 1:a Kolumn y större än eller lika med 0 2:a Kolumn 2 y SlutLayout"
+    },
+    "Sample_14_3_1_brief": {
+      "expected": "x lika med StartLayout Förstorad vänster klammer 1:a Rad 1:a Kolumn y mindre än 0 2:a Kolumn 0 2:a Rad 1:a Kolumn y större än eller lika med 0 2:a Kolumn 2 y SlutLayout"
+    },
+    "Sample_14_3_1_sbrief": {
+      "expected": "x lika med Layout Förstorad vänster klammer 1:a Rad 1:a Kolumn y mindre än 0 2:a Kolumn 0 2:a Rad 1:a Kolumn y större än eller lika med 0 2:a Kolumn 2 y SlutLayout"
+    },
+    "Sample_15_1_1_default": {
+      "expected": "Start 3 Gånger 3 Matris 1:a Rad 1:a Kolumn x plus a 2:a Kolumn x plus b 3:e Kolumn x plus c 2:a Rad 1:a Kolumn y plus a 2:a Kolumn y plus b 3:e Kolumn y plus c 3:e Rad 1:a Kolumn z plus a 2:a Kolumn z plus b 3:e Kolumn z plus c SlutMatris"
+    },
+    "Sample_15_1_1_brief": {
+      "expected": "Start 3 Gånger 3 Matris 1:a Rad 1:a Kolumn x plus a 2:a Kolumn x plus b 3:e Kolumn x plus c 2:a Rad 1:a Kolumn y plus a 2:a Kolumn y plus b 3:e Kolumn y plus c 3:e Rad 1:a Kolumn z plus a 2:a Kolumn z plus b 3:e Kolumn z plus c SlutMatris"
+    },
+    "Sample_15_1_1_sbrief": {
+      "expected": "3 Gånger 3 Matris 1:a Rad 1:a Kolumn x plus a 2:a Kolumn x plus b 3:e Kolumn x plus c 2:a Rad 1:a Kolumn y plus a 2:a Kolumn y plus b 3:e Kolumn y plus c 3:e Rad 1:a Kolumn z plus a 2:a Kolumn z plus b 3:e Kolumn z plus c SlutMatris"
+    },
+    "Sample_15_2_1_default": {
+      "expected": "Start 2 Gånger 2 Determinant 1:a Rad 1:a Kolumn a plus 1 2:a Kolumn b 2:a Rad 1:a Kolumn c 2:a Kolumn d SlutDeterminant lika med öppna a plus 1 stäng d minus b c"
+    },
+    "Sample_15_2_1_brief": {
+      "expected": "Start 2 Gånger 2 Determinant 1:a Rad 1:a Kolumn a plus 1 2:a Kolumn b 2:a Rad 1:a Kolumn c 2:a Kolumn d SlutDeterminant lika med öppna a plus 1 stäng d minus b c"
+    },
+    "Sample_15_2_1_sbrief": {
+      "expected": "2 Gånger 2 Determinant 1:a Rad 1:a Kolumn a plus 1 2:a Kolumn b 2:a Rad 1:a Kolumn c 2:a Kolumn d SlutDeterminant lika med öppna a plus 1 stäng d minus b c"
+    },
+    "Sample_15_4_1_default": {
+      "expected": "Start 2 Gånger 2 Determinant 1:a Rad a b 2:a Rad c d SlutDeterminant lika med a d minus b c"
+    },
+    "Sample_15_4_1_brief": {
+      "expected": "Start 2 Gånger 2 Determinant 1:a Rad a b 2:a Rad c d SlutDeterminant lika med a d minus b c"
+    },
+    "Sample_15_4_1_sbrief": {
+      "expected": "2 Gånger 2 Determinant 1:a Rad a b 2:a Rad c d SlutDeterminant lika med a d minus b c"
+    },
+    "Sample_15_6_1_default": {
+      "expected": "StartBinomEllerMatris x Välj y SlutBinomEllerMatris"
+    },
+    "Sample_15_6_1_brief": {
+      "expected": "StartBinomEllerMatris x Välj y SlutBinomEllerMatris"
+    },
+    "Sample_15_6_1_sbrief": {
+      "expected": "BinomEllerMatris x Välj y SlutBinomEllerMatris"
+    }
+  }
+}

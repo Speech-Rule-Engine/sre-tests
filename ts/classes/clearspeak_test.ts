@@ -41,9 +41,9 @@ export class ClearspeakTest extends SpeechTest {
   /**
    * @override
    */
-  public tearDownTest() {
-    System.setupEngine({ markup: EngineConst.Markup.NONE });
-    super.tearDownTest();
+  public async tearDownTest() {
+    await System.setupEngine({ markup: EngineConst.Markup.NONE });
+    return super.tearDownTest();
   }
 }
 
@@ -64,9 +64,9 @@ export class BrailleLayoutTest extends SpeechTest {
   /**
    * @override
    */
-  public tearDownTest() {
-    System.setupEngine({ markup: EngineConst.Markup.NONE });
-    super.tearDownTest();
+  public async tearDownTest() {
+    await System.setupEngine({ markup: EngineConst.Markup.NONE });
+    return super.tearDownTest();
   }
 
   /**

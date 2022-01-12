@@ -1,0 +1,536 @@
+{
+  "locale": "sv",
+  "factory": "number",
+  "base": "input/common/numbers.json",
+  "information": "Swedish Ordinal word as used in fractions tests.",
+  "kind": "numberToOrdinal",
+  "active": "NumbersSwedish",
+  "compare": true,
+  "tests": {
+    "Number_0": {
+      "expected": "nuldedel"
+    },
+    "Number_1": {
+      "expected": "hel"
+    },
+    "Number_2": {
+      "expected": "halv"
+    },
+    "Number_3": {
+      "expected": "tredjedel"
+    },
+    "Number_4": {
+      "expected": "fjärdedel"
+    },
+    "Number_5": {
+      "expected": "femtedel"
+    },
+    "Number_6": {
+      "expected": "sjättedel"
+    },
+    "Number_7": {
+      "expected": "sjundedel"
+    },
+    "Number_8": {
+      "expected": "åttondedel"
+    },
+    "Number_9": {
+      "expected": "niondedel"
+    },
+    "Number_10": {
+      "expected": "tiondedel"
+    },
+    "Number_11": {
+      "expected": "elftedel"
+    },
+    "Number_12": {
+      "expected": "tolftedel"
+    },
+    "Number_13": {
+      "expected": "trettondedel"
+    },
+    "Number_14": {
+      "expected": "fjortondedel"
+    },
+    "Number_15": {
+      "expected": "femtondedel"
+    },
+    "Number_16": {
+      "expected": "sextondedel"
+    },
+    "Number_17": {
+      "expected": "sjuttondedel"
+    },
+    "Number_18": {
+      "expected": "artondedel"
+    },
+    "Number_19": {
+      "expected": "nittondedel"
+    },
+    "Number_20": {
+      "expected": "tjugodedel"
+    },
+    "Number_21": {
+      "expected": "tjugoförstadel"
+    },
+    "Number_22": {
+      "expected": "tjugoandradel"
+    },
+    "Number_23": {
+      "expected": "tjugotredjedel"
+    },
+    "Number_24": {
+      "expected": "tjugofjärdedel"
+    },
+    "Number_25": {
+      "expected": "tjugofemtedel"
+    },
+    "Number_26": {
+      "expected": "tjugosjättedel"
+    },
+    "Number_27": {
+      "expected": "tjugosjundedel"
+    },
+    "Number_28": {
+      "expected": "tjugoåttondedel"
+    },
+    "Number_29": {
+      "expected": "tjugoniondedel"
+    },
+    "Number_30": {
+      "expected": "trettiondedel"
+    },
+    "Number_31": {
+      "expected": "trettioförstadel"
+    },
+    "Number_32": {
+      "expected": "trettioandradel"
+    },
+    "Number_33": {
+      "expected": "trettiotredjedel"
+    },
+    "Number_34": {
+      "expected": "trettiofjärdedel"
+    },
+    "Number_35": {
+      "expected": "trettiofemtedel"
+    },
+    "Number_36": {
+      "expected": "trettiosjättedel"
+    },
+    "Number_37": {
+      "expected": "trettiosjundedel"
+    },
+    "Number_38": {
+      "expected": "trettioåttondedel"
+    },
+    "Number_39": {
+      "expected": "trettioniondedel"
+    },
+    "Number_40": {
+      "expected": "fyrtiondedel"
+    },
+    "Number_41": {
+      "expected": "fyrtioförstadel"
+    },
+    "Number_42": {
+      "expected": "fyrtioandradel"
+    },
+    "Number_43": {
+      "expected": "fyrtiotredjedel"
+    },
+    "Number_44": {
+      "expected": "fyrtiofjärdedel"
+    },
+    "Number_45": {
+      "expected": "fyrtiofemtedel"
+    },
+    "Number_46": {
+      "expected": "fyrtiosjättedel"
+    },
+    "Number_47": {
+      "expected": "fyrtiosjundedel"
+    },
+    "Number_48": {
+      "expected": "fyrtioåttondedel"
+    },
+    "Number_49": {
+      "expected": "fyrtioniondedel"
+    },
+    "Number_50": {
+      "expected": "femtiondedel"
+    },
+    "Number_51": {
+      "expected": "femtioförstadel"
+    },
+    "Number_52": {
+      "expected": "femtioandradel"
+    },
+    "Number_53": {
+      "expected": "femtiotredjedel"
+    },
+    "Number_54": {
+      "expected": "femtiofjärdedel"
+    },
+    "Number_55": {
+      "expected": "femtiofemtedel"
+    },
+    "Number_56": {
+      "expected": "femtiosjättedel"
+    },
+    "Number_57": {
+      "expected": "femtiosjundedel"
+    },
+    "Number_58": {
+      "expected": "femtioåttondedel"
+    },
+    "Number_59": {
+      "expected": "femtioniondedel"
+    },
+    "Number_60": {
+      "expected": "sextiondedel"
+    },
+    "Number_61": {
+      "expected": "sextioförstadel"
+    },
+    "Number_62": {
+      "expected": "sextioandradel"
+    },
+    "Number_63": {
+      "expected": "sextiotredjedel"
+    },
+    "Number_64": {
+      "expected": "sextiofjärdedel"
+    },
+    "Number_65": {
+      "expected": "sextiofemtedel"
+    },
+    "Number_66": {
+      "expected": "sextiosjättedel"
+    },
+    "Number_67": {
+      "expected": "sextiosjundedel"
+    },
+    "Number_68": {
+      "expected": "sextioåttondedel"
+    },
+    "Number_69": {
+      "expected": "sextioniondedel"
+    },
+    "Number_70": {
+      "expected": "sjuttiondedel"
+    },
+    "Number_71": {
+      "expected": "sjuttioförstadel"
+    },
+    "Number_72": {
+      "expected": "sjuttioandradel"
+    },
+    "Number_73": {
+      "expected": "sjuttiotredjedel"
+    },
+    "Number_74": {
+      "expected": "sjuttiofjärdedel"
+    },
+    "Number_75": {
+      "expected": "sjuttiofemtedel"
+    },
+    "Number_76": {
+      "expected": "sjuttiosjättedel"
+    },
+    "Number_77": {
+      "expected": "sjuttiosjundedel"
+    },
+    "Number_78": {
+      "expected": "sjuttioåttondedel"
+    },
+    "Number_79": {
+      "expected": "sjuttioniondedel"
+    },
+    "Number_80": {
+      "expected": "åttiondedel"
+    },
+    "Number_81": {
+      "expected": "åttioförstadel"
+    },
+    "Number_82": {
+      "expected": "åttioandradel"
+    },
+    "Number_83": {
+      "expected": "åttiotredjedel"
+    },
+    "Number_84": {
+      "expected": "åttiofjärdedel"
+    },
+    "Number_85": {
+      "expected": "åttiofemtedel"
+    },
+    "Number_86": {
+      "expected": "åttiosjättedel"
+    },
+    "Number_87": {
+      "expected": "åttiosjundedel"
+    },
+    "Number_88": {
+      "expected": "åttioåttondedel"
+    },
+    "Number_89": {
+      "expected": "åttioniondedel"
+    },
+    "Number_90": {
+      "expected": "nittiondedel"
+    },
+    "Number_91": {
+      "expected": "nittioförstadel"
+    },
+    "Number_92": {
+      "expected": "nittioandradel"
+    },
+    "Number_93": {
+      "expected": "nittiotredjedel"
+    },
+    "Number_94": {
+      "expected": "nittiofjärdedel"
+    },
+    "Number_95": {
+      "expected": "nittiofemtedel"
+    },
+    "Number_96": {
+      "expected": "nittiosjättedel"
+    },
+    "Number_97": {
+      "expected": "nittiosjundedel"
+    },
+    "Number_98": {
+      "expected": "nittioåttondedel"
+    },
+    "Number_99": {
+      "expected": "nittioniondedel"
+    },
+    "Number_100": {
+      "expected": "hundradedel"
+    },
+    "Number_101": {
+      "expected": "hundraförstadel"
+    },
+    "Number_102": {
+      "expected": "hundraandradel"
+    },
+    "Number_103": {
+      "expected": "hundratredjedel"
+    },
+    "Number_104": {
+      "expected": "hundrafjärdedel"
+    },
+    "Number_105": {
+      "expected": "hundrafemtedel"
+    },
+    "Number_106": {
+      "expected": "hundrasjättedel"
+    },
+    "Number_107": {
+      "expected": "hundrasjundedel"
+    },
+    "Number_108": {
+      "expected": "hundraåttondedel"
+    },
+    "Number_109": {
+      "expected": "hundraniondedel"
+    },
+    "Number_110": {
+      "expected": "hundrationdedel"
+    },
+    "Number_200": {
+      "expected": "tvåhundradedel"
+    },
+    "Number_201": {
+      "expected": "tvåhundraförstadel"
+    },
+    "Number_300": {
+      "expected": "trehundradedel"
+    },
+    "Number_301": {
+      "expected": "trehundraförstadel"
+    },
+    "Number_400": {
+      "expected": "fyrahundradedel"
+    },
+    "Number_401": {
+      "expected": "fyrahundraförstadel"
+    },
+    "Number_500": {
+      "expected": "femhundradedel"
+    },
+    "Number_501": {
+      "expected": "femhundraförstadel"
+    },
+    "Number_600": {
+      "expected": "sexhundradedel"
+    },
+    "Number_601": {
+      "expected": "sexhundraförstadel"
+    },
+    "Number_700": {
+      "expected": "sjuhundradedel"
+    },
+    "Number_701": {
+      "expected": "sjuhundraförstadel"
+    },
+    "Number_800": {
+      "expected": "åttahundradedel"
+    },
+    "Number_801": {
+      "expected": "åttahundraförstadel"
+    },
+    "Number_900": {
+      "expected": "niohundradedel"
+    },
+    "Number_901": {
+      "expected": "niohundraförstadel"
+    },
+    "Number_1000": {
+      "expected": "tusendedel"
+    },
+    "Number_1001": {
+      "expected": "tusen förstadel"
+    },
+    "Number_2000": {
+      "expected": "tvåtusendedel"
+    },
+    "Number_2001": {
+      "expected": "tvåtusen förstadel"
+    },
+    "Number_3000": {
+      "expected": "tretusendedel"
+    },
+    "Number_3001": {
+      "expected": "tretusen förstadel"
+    },
+    "Number_4000": {
+      "expected": "fyratusendedel"
+    },
+    "Number_4001": {
+      "expected": "fyratusen förstadel"
+    },
+    "Number_5000": {
+      "expected": "femtusendedel"
+    },
+    "Number_5001": {
+      "expected": "femtusen förstadel"
+    },
+    "Number_6000": {
+      "expected": "sextusendedel"
+    },
+    "Number_6001": {
+      "expected": "sextusen förstadel"
+    },
+    "Number_7000": {
+      "expected": "sjutusendedel"
+    },
+    "Number_7001": {
+      "expected": "sjutusen förstadel"
+    },
+    "Number_8000": {
+      "expected": "åttatusendedel"
+    },
+    "Number_8001": {
+      "expected": "åttatusen förstadel"
+    },
+    "Number_9000": {
+      "expected": "niotusendedel"
+    },
+    "Number_9001": {
+      "expected": "niotusen förstadel"
+    },
+    "Number_10000": {
+      "expected": "tiotusendedel"
+    },
+    "Number_10001": {
+      "expected": "tiotusen förstadel"
+    },
+    "Number_20000": {
+      "expected": "tjugotusendedel"
+    },
+    "Number_20001": {
+      "expected": "tjugotusen förstadel"
+    },
+    "Number_30000": {
+      "expected": "trettiotusendedel"
+    },
+    "Number_30001": {
+      "expected": "trettiotusen förstadel"
+    },
+    "Number_40000": {
+      "expected": "fyrtiotusendedel"
+    },
+    "Number_40001": {
+      "expected": "fyrtiotusen förstadel"
+    },
+    "Number_50000": {
+      "expected": "femtiotusendedel"
+    },
+    "Number_50001": {
+      "expected": "femtiotusen förstadel"
+    },
+    "Number_60000": {
+      "expected": "sextiotusendedel"
+    },
+    "Number_60001": {
+      "expected": "sextiotusen förstadel"
+    },
+    "Number_70000": {
+      "expected": "sjuttiotusendedel"
+    },
+    "Number_70001": {
+      "expected": "sjuttiotusen förstadel"
+    },
+    "Number_80000": {
+      "expected": "åttiotusendedel"
+    },
+    "Number_80001": {
+      "expected": "åttiotusen förstadel"
+    },
+    "Number_90000": {
+      "expected": "nittiotusendedel"
+    },
+    "Number_90001": {
+      "expected": "nittiotusen förstadel"
+    },
+    "Number_100000": {
+      "expected": "hundratusendedel"
+    },
+    "Number_1000000": {
+      "expected": "miljondedel"
+    },
+    "Number_10000000": {
+      "expected": "tio miljondedel"
+    },
+    "Number_100000000": {
+      "expected": "hundra miljondedel"
+    },
+    "Number_1000000000": {
+      "expected": "miljarddedel"
+    },
+    "Number_10000000000": {
+      "expected": "tio miljarddedel"
+    },
+    "Number_100000000000": {
+      "expected": "hundra miljarddedel"
+    },
+    "Number_1000000000000": {
+      "expected": "biljondedel"
+    },
+    "Number_10000000000000": {
+      "expected": "tio biljondedel"
+    },
+    "Number_100000000000000": {
+      "expected": "hundra biljondedel"
+    },
+    "Number_1000000000000000": {
+      "expected": "biljarddedel"
+    },
+    "Number_10000000000000000": {
+      "expected": "tio biljarddedel"
+    }
+  }
+}

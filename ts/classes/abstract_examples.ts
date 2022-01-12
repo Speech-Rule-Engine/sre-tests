@@ -127,8 +127,9 @@ export abstract class AbstractExamples
   /**
    * @override
    */
-  public tearDownTest() {
+  public async tearDownTest() {
     this.endExamples();
+    return super.tearDownTest();
   }
 
   /**

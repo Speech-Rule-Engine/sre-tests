@@ -61,7 +61,9 @@ export abstract class AbstractTest {
   /**
    * Finalises the test.
    */
-  public tearDownTest() {}
+  public async tearDownTest(): Promise<string> {
+    return Promise.resolve('');
+  }
 }
 
 /**

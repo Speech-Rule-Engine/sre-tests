@@ -104,13 +104,13 @@ export class EnrichSpeechTest extends SemanticTest {
   /**
    * @override
    */
-  public tearDownTest() {
-    System.setupEngine({
+  public async tearDownTest() {
+    await System.setupEngine({
       domain: 'default',
       style: 'default',
       speech: EngineConst.Speech.NONE
     });
-    super.tearDownTest();
+    return super.tearDownTest();
   }
 
   /**
