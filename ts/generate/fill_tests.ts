@@ -191,8 +191,7 @@ export function showMissing(regexp = /./) {
   tests.runner
     .queryJsonTests((x) => [x, x.warn])
     .filter(([x, y]) => y.length && x.jsonFile.match(regexp))
-    .map(([x]) => {
-      console.log(x.jsonFile);
-      addMissing(x.jsonFile, true);
-    });
+    .reduce(
+      (p, [x]) => p.then(() => addMissing(x.jsonFile, true)),
+      Promise.resolve());
 }
