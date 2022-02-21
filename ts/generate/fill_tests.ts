@@ -192,6 +192,23 @@ export function showMissing(regexp = /./) {
     .queryJsonTests((x) => [x, x.warn])
     .filter(([x, y]) => y.length && x.jsonFile.match(regexp))
     .reduce(
-      (p, [x]) => p.then(() => addMissing(x.jsonFile, true)),
+      (p, [x]) => p.then(() => {
+        console.log(x.jsonFile);
+        return addMissing(x.jsonFile, true)
+      }),
       Promise.resolve());
+}
+
+/**
+ * Get the files in which tests are missing. E.g., so they can be piped into a
+ * method to fill them.
+ *
+ * @param regexp A regular expression to filter output.
+ */
+export function getMissing(regexp = /./) {
+  const tests = new Tests();
+  return tests.runner
+    .queryJsonTests((x) => [x, x.warn])
+    .filter(([x, y]) => y.length && x.jsonFile.match(regexp))
+    .map(([x]) => x.jsonFile);
 }
