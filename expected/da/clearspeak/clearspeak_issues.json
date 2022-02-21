@@ -1,0 +1,73 @@
+{
+  "_comment0_": " Tests from the issues discovered in ClearspeakEnglish rules.",
+  "name": "DanishClearspeakIssues",
+  "locale": "da",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_issues.json",
+  "information": "Danish Clearspeak Issues tests.",
+  "active": "ClearspeakIssuesDanish",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Issue230_1": {
+      "expected": "5 and, 3 over 224"
+    },
+    "Issue230_2": {
+      "expected": "5 and tre fjerdedele"
+    },
+    "IssueNumbers_1": {
+      "expected": "number t 2 e 4"
+    },
+    "IssueNumbers_2": {
+      "expected": "number symbol for antal F F 0 0 0 0"
+    },
+    "IssueNumbers_3": {
+      "expected": "number symbol for antal F F F F"
+    },
+    "Issue320_1": {
+      "expected": "partielle afledte"
+    },
+    "Issue320_2": {
+      "expected": "x factorial"
+    },
+    "Issue320_3": {
+      "expected": "negative negative x"
+    },
+    "Issue320_4": {
+      "expected": "plustegn plustegn x"
+    },
+    "Issue320_5": {
+      "expected": "sinus sinus x"
+    },
+    "Issue320_6": {
+      "expected": "partielle afledte partielle afledte x"
+    },
+    "Issue320_7": {
+      "expected": "venstre parantes, the fraction with numerator partielle afledte squared, and denominator partielle afledte x squared, plustegn, the fraction with numerator partielle afledte squared, and denominator partielle afledte y squared, højre parantes,  , the absolute value of phi  , venstre parantes, x plustegn normal I, y, højre parantes, squared lig med 0"
+    },
+    "Issue301_1": {
+      "expected": "4 mm"
+    },
+    "Issue301_2": {
+      "expected": "1 mm"
+    },
+    "Issue301_3": {
+      "expected": "4 mm"
+    },
+    "Issue301_4": {
+      "expected": "1 mm"
+    },
+    "Issue_442_0": {
+      "expected": "9 divided by 3 er ikke lig med 9 krydsprodukt 3"
+    },
+    "Issue_442_1": {
+      "expected": "9 divided by 3"
+    },
+    "Issue_442_2": {
+      "expected": "9 divided by 3 er ikke lig med 9 krydsprodukt 3"
+    },
+    "Issue_442_3": {
+      "expected": "9 divided by 3"
+    }
+  }
+}

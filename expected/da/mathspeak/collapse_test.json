@@ -1,0 +1,418 @@
+{
+  "name": "DanishMathspeakCollapse",
+  "locale": "da",
+  "factory": "collapse",
+  "base": "input/common/collapse_test.json",
+  "information": "Danish Mathspeak Collapse tests.",
+  "domain": "mathspeak",
+  "active": "CollapseDanish",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "CollapsedAddition_default": {
+      "expected": "collapsed sum med 2 addender"
+    },
+    "CollapsedAddition_brief": {
+      "expected": "collapsed sum"
+    },
+    "CollapsedAddition_sbrief": {
+      "expected": "collapsed sum"
+    },
+    "CollapsedBigop_default": {
+      "expected": "collapsed sum"
+    },
+    "CollapsedBigop_brief": {
+      "expected": "collapsed sum"
+    },
+    "CollapsedBigop_sbrief": {
+      "expected": "collapsed sum"
+    },
+    "CollapsedBinomial_default": {
+      "expected": "collapsed binomial"
+    },
+    "CollapsedBinomial_brief": {
+      "expected": "collapsed binomial"
+    },
+    "CollapsedBinomial_sbrief": {
+      "expected": "collapsed binomial"
+    },
+    "CollapsedCases_default": {
+      "expected": "collapsed akkolade med 2 udtryk"
+    },
+    "CollapsedCases_brief": {
+      "expected": "collapsed akkolade"
+    },
+    "CollapsedCases_sbrief": {
+      "expected": "collapsed akkolade"
+    },
+    "CollapsedContinuedFraction_default": {
+      "expected": "collapsed kædebrøk"
+    },
+    "CollapsedContinuedFraction_brief": {
+      "expected": "collapsed kædebrøk"
+    },
+    "CollapsedContinuedFraction_sbrief": {
+      "expected": "collapsed kædebrøk"
+    },
+    "CollapsedDeterminant_default": {
+      "expected": "collapsed 2 dimensional determinant"
+    },
+    "CollapsedDeterminant_brief": {
+      "expected": "collapsed determinant"
+    },
+    "CollapsedDeterminant_sbrief": {
+      "expected": "collapsed determinant"
+    },
+    "CollapsedFraction_default": {
+      "expected": "collapsed brøk"
+    },
+    "CollapsedFraction_brief": {
+      "expected": "collapsed brøk"
+    },
+    "CollapsedFraction_sbrief": {
+      "expected": "collapsed brøk"
+    },
+    "CollapsedFunction_default": {
+      "expected": "collapsed funktionsudtryk"
+    },
+    "CollapsedFunction_brief": {
+      "expected": "collapsed funktion"
+    },
+    "CollapsedFunction_sbrief": {
+      "expected": "collapsed funktion"
+    },
+    "CollapsedIdentifier_default": {
+      "expected": "collapsed stor identifikator"
+    },
+    "CollapsedIdentifier_brief": {
+      "expected": "collapsed stor identifikator"
+    },
+    "CollapsedIdentifier_sbrief": {
+      "expected": "collapsed stor identifikator"
+    },
+    "CollapsedInfixop_default": {
+      "expected": "collapsed division med 2 elementer"
+    },
+    "CollapsedInfixop_brief": {
+      "expected": "collapsed division"
+    },
+    "CollapsedInfixop_sbrief": {
+      "expected": "collapsed division"
+    },
+    "CollapsedIntegral_default": {
+      "expected": "collapsed integral"
+    },
+    "CollapsedIntegral_brief": {
+      "expected": "collapsed integral"
+    },
+    "CollapsedIntegral_sbrief": {
+      "expected": "collapsed integral"
+    },
+    "CollapsedLim_default": {
+      "expected": "collapsed grænseværdifunktion"
+    },
+    "CollapsedLim_brief": {
+      "expected": "collapsed lim"
+    },
+    "CollapsedLim_sbrief": {
+      "expected": "collapsed lim"
+    },
+    "CollapsedMatrix_default": {
+      "expected": "collapsed 3 gange 2 matrix"
+    },
+    "CollapsedMatrix_brief": {
+      "expected": "collapsed matrix"
+    },
+    "CollapsedMatrix_sbrief": {
+      "expected": "collapsed matrix"
+    },
+    "CollapsedMixedNumber_default": {
+      "expected": "collapsed stort blandet tal"
+    },
+    "CollapsedMixedNumber_brief": {
+      "expected": "collapsed stort blandet tal"
+    },
+    "CollapsedMixedNumber_sbrief": {
+      "expected": "collapsed stort blandet tal"
+    },
+    "CollapsedMultiplication_default": {
+      "expected": "collapsed produkt med 2 faktorer"
+    },
+    "CollapsedMultiplication_brief": {
+      "expected": "collapsed produkt"
+    },
+    "CollapsedMultiplication_sbrief": {
+      "expected": "collapsed produkt"
+    },
+    "CollapsedMultirel_default": {
+      "expected": "collapsed sammenligningssekvens med 3 elementer"
+    },
+    "CollapsedMultirel_brief": {
+      "expected": "collapsed sammenligningssekvens"
+    },
+    "CollapsedMultirel_sbrief": {
+      "expected": "collapsed sammenligningssekvens"
+    },
+    "CollapsedNumber_default": {
+      "expected": "collapsed stort tal"
+    },
+    "CollapsedNumber_brief": {
+      "expected": "collapsed stort tal"
+    },
+    "CollapsedNumber_sbrief": {
+      "expected": "collapsed stort tal"
+    },
+    "CollapsedPunctuated_default": {
+      "expected": "collapsed komma separeret liste med længde 3"
+    },
+    "CollapsedPunctuated_brief": {
+      "expected": "collapsed komma separeret liste"
+    },
+    "CollapsedPunctuated_sbrief": {
+      "expected": "collapsed komma separeret liste"
+    },
+    "CollapsedRelation_default": {
+      "expected": "collapsed lighed"
+    },
+    "CollapsedRelation_brief": {
+      "expected": "collapsed lighed"
+    },
+    "CollapsedRelation_sbrief": {
+      "expected": "collapsed lighed"
+    },
+    "CollapsedRelationSeq_default": {
+      "expected": "collapsed lighed sekvens men 3 elementer"
+    },
+    "CollapsedRelationSeq_brief": {
+      "expected": "collapsed lighed sekvens"
+    },
+    "CollapsedRelationSeq_sbrief": {
+      "expected": "collapsed lighed sekvens"
+    },
+    "CollapsedRoot_default": {
+      "expected": "collapsed rod med rodeksponent 3"
+    },
+    "CollapsedRoot_brief": {
+      "expected": "collapsed rod"
+    },
+    "CollapsedRoot_sbrief": {
+      "expected": "collapsed rod"
+    },
+    "CollapsedRootNested_default": {
+      "expected": "collapsed indlejret rod med rodeksponent 3"
+    },
+    "CollapsedRootNested_brief": {
+      "expected": "collapsed indlejret rod"
+    },
+    "CollapsedRootNested_sbrief": {
+      "expected": "collapsed indlejret rod"
+    },
+    "CollapsedRowvector_default": {
+      "expected": "collapsed 2 dimensional rækkevektor"
+    },
+    "CollapsedRowvector_brief": {
+      "expected": "collapsed rækkevektor"
+    },
+    "CollapsedRowvector_sbrief": {
+      "expected": "collapsed rækkevektor"
+    },
+    "CollapsedSqrt_default": {
+      "expected": "collapsed kvadratrod"
+    },
+    "CollapsedSqrt_brief": {
+      "expected": "collapsed kvadratrod"
+    },
+    "CollapsedSqrt_sbrief": {
+      "expected": "collapsed kvadratrod"
+    },
+    "CollapsedSqrtNested_default": {
+      "expected": "collapsed indlejret kvadratrod"
+    },
+    "CollapsedSqrtNested_brief": {
+      "expected": "collapsed indlejret kvadratrod"
+    },
+    "CollapsedSqrtNested_sbrief": {
+      "expected": "collapsed indlejret kvadratrod"
+    },
+    "CollapsedSquarematrix_default": {
+      "expected": "collapsed 2 dimensional kvadratisk matrix"
+    },
+    "CollapsedSquarematrix_brief": {
+      "expected": "collapsed kvadratisk matrix"
+    },
+    "CollapsedSquarematrix_sbrief": {
+      "expected": "collapsed kvadratisk matrix"
+    },
+    "CollapsedSubscript_default": {
+      "expected": "collapsed sænket"
+    },
+    "CollapsedSubscript_brief": {
+      "expected": "collapsed sænket"
+    },
+    "CollapsedSubscript_sbrief": {
+      "expected": "collapsed sænket"
+    },
+    "CollapsedSubsup_default": {
+      "expected": "collapsed potens med sænket"
+    },
+    "CollapsedSubsup_brief": {
+      "expected": "collapsed potens med sænket"
+    },
+    "CollapsedSubsup_sbrief": {
+      "expected": "collapsed potens med sænket"
+    },
+    "CollapsedSuperscript_default": {
+      "expected": "collapsed potens"
+    },
+    "CollapsedSuperscript_brief": {
+      "expected": "collapsed potens"
+    },
+    "CollapsedSuperscript_sbrief": {
+      "expected": "collapsed potens"
+    },
+    "CollapsedTable_default": {
+      "expected": "collapsed tabel med 2 rækker og 2 kolonner"
+    },
+    "CollapsedTable_brief": {
+      "expected": "collapsed tabel med 2 rækker og 2 kolonner"
+    },
+    "CollapsedTable_sbrief": {
+      "expected": "collapsed tabel med 2 rækker og 2 kolonner"
+    },
+    "CollapsedText_default": {
+      "expected": "collapsed tekst"
+    },
+    "CollapsedText_brief": {
+      "expected": "collapsed tekst"
+    },
+    "CollapsedText_sbrief": {
+      "expected": "collapsed tekst"
+    },
+    "CollapsedVarAddition_default": {
+      "expected": "collapsed sum med variabelt antal addender"
+    },
+    "CollapsedVarAddition_brief": {
+      "expected": "collapsed sum"
+    },
+    "CollapsedVarAddition_sbrief": {
+      "expected": "collapsed sum"
+    },
+    "CollapsedVarCases_default": {
+      "expected": "collapsed akkolade med variabelt antal udtryk"
+    },
+    "CollapsedVarCases_brief": {
+      "expected": "collapsed akkolade"
+    },
+    "CollapsedVarCases_sbrief": {
+      "expected": "collapsed akkolade"
+    },
+    "CollapsedVarDeterminant_default": {
+      "expected": "collapsed n dimensional determinant"
+    },
+    "CollapsedVarDeterminant_brief": {
+      "expected": "collapsed determinant"
+    },
+    "CollapsedVarDeterminant_sbrief": {
+      "expected": "collapsed determinant"
+    },
+    "CollapsedVarMatrix_default": {
+      "expected": "collapsed n gange m dimensional matrix"
+    },
+    "CollapsedVarMatrix_brief": {
+      "expected": "collapsed kvadratisk matrix"
+    },
+    "CollapsedVarMatrix_sbrief": {
+      "expected": "collapsed kvadratisk matrix"
+    },
+    "CollapsedVarMultiplication_default": {
+      "expected": "collapsed produkt med variabelt antal faktorer"
+    },
+    "CollapsedVarMultiplication_brief": {
+      "expected": "collapsed produkt"
+    },
+    "CollapsedVarMultiplication_sbrief": {
+      "expected": "collapsed produkt"
+    },
+    "CollapsedVarMultirel_default": {
+      "expected": "collapsed sammenligningssekvens med variabelt antal elementer"
+    },
+    "CollapsedVarMultirel_brief": {
+      "expected": "collapsed sammenligningssekvens"
+    },
+    "CollapsedVarMultirel_sbrief": {
+      "expected": "collapsed sammenligningssekvens"
+    },
+    "CollapsedVarPunctuated_default": {
+      "expected": "collapsed komma separeret liste med variabel længde"
+    },
+    "CollapsedVarPunctuated_brief": {
+      "expected": "collapsed komma separeret liste"
+    },
+    "CollapsedVarPunctuated_sbrief": {
+      "expected": "collapsed komma separeret liste"
+    },
+    "CollapsedVarRelation_default": {
+      "expected": "collapsed lighed sekvens med variabelt antal elementer"
+    },
+    "CollapsedVarRelation_brief": {
+      "expected": "collapsed lighed sekvens"
+    },
+    "CollapsedVarRelation_sbrief": {
+      "expected": "collapsed lighed sekvens"
+    },
+    "CollapsedVarVector_default": {
+      "expected": "collapsed n dimensional vektor"
+    },
+    "CollapsedVarVector_brief": {
+      "expected": "collapsed vektor"
+    },
+    "CollapsedVarVector_sbrief": {
+      "expected": "collapsed vektor"
+    },
+    "CollapsedVector_default": {
+      "expected": "collapsed 3 dimensional vektor"
+    },
+    "CollapsedVector_brief": {
+      "expected": "collapsed vektor"
+    },
+    "CollapsedVector_sbrief": {
+      "expected": "collapsed vektor"
+    },
+    "CollapsedVarSubtraction_default": {
+      "expected": "collapsed subtraktion med variabelt antal elementer"
+    },
+    "CollapsedVarSubtraction_brief": {
+      "expected": "collapsed subtraktion"
+    },
+    "CollapsedVarSubtraction_sbrief": {
+      "expected": "collapsed subtraktion"
+    },
+    "CollapsedCountImplicit_default": {
+      "expected": "collapsed produkt med 3 faktorer"
+    },
+    "CollapsedCountImplicit_brief": {
+      "expected": "collapsed produkt"
+    },
+    "CollapsedCountImplicit_sbrief": {
+      "expected": "collapsed produkt"
+    },
+    "CollapsedVarImplicit_default": {
+      "expected": "collapsed produkt med variabelt antal faktorer"
+    },
+    "CollapsedVarArrowRelation_default": {
+      "expected": "collapsed pil sekvens med variabelt antal elementer"
+    },
+    "CollapsedArrowRelation_default": {
+      "expected": "collapsed pil"
+    },
+    "CollapsedVarRowvector_default": {
+      "expected": "collapsed n dimensional rækkevektor"
+    },
+    "CollapsedRootInside_default": {
+      "expected": "collapsed rod med rodeksponent 3 slut rodeksponent a"
+    },
+    "CollapsedRootNestedInside_default": {
+      "expected": "collapsed indlejret rod med rodeksponent 3 slut rodeksponent a"
+    }
+  }
+}

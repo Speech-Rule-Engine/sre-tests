@@ -1,0 +1,130 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "DanishClearspeakLogarithms",
+  "locale": "da",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_logarithms.json",
+  "information": "Danish Clearspeak Logarithms rule tests.",
+  "active": "ClearspeakDanish",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Log001": {
+      "expected": "logaritme x"
+    },
+    "Log002": {
+      "expected": "the logaritme base 10 of, x"
+    },
+    "Log003": {
+      "expected": "the logaritme base b of, a x, lig med, the logaritme base b of, a, plustegn, the logaritme base b of, x"
+    },
+    "Log004": {
+      "expected": "the logaritme base b of, S over T, lig med, the logaritme base b of, S, minustegn, the logaritme base b of, T"
+    },
+    "Log005": {
+      "expected": "the logaritme base b of, venstre parantes, x to the k-th power, højre parantes, lig med k, the logaritme base b of, x"
+    },
+    "Log006": {
+      "expected": "10 raised to the logaritme base 10 of, x, power, lig med x"
+    },
+    "Log007": {
+      "expected": "the logaritme base 10 of, 10 to the x-th power, lig med x"
+    },
+    "Log008": {
+      "expected": "10 raised to the logaritme base 10 of, 5, power, lig med 5"
+    },
+    "Log009": {
+      "expected": "the logaritme base 10 of, 10 cubed, lig med 3"
+    },
+    "Log010": {
+      "expected": "the logaritme base a of, x, lig med, the logaritme base b of, x, over, the logaritme base b of, a"
+    },
+    "Log011": {
+      "expected": "the logaritme base 10 of, 18, over, the logaritme base 10 of, 3, lig med, the logaritme base 3 of, 18"
+    },
+    "Log012": {
+      "expected": "logaritme x over logaritme a"
+    },
+    "Log013": {
+      "expected": "the logaritme of, venstre parantes, x plustegn 1, højre parantes"
+    },
+    "Log014": {
+      "expected": "the logaritme of, venstre parantes, x plustegn 1, højre parantes, squared"
+    },
+    "Log015": {
+      "expected": "logaritme x y"
+    },
+    "Log016": {
+      "expected": "the fraction with numerator, the logaritme of, venstre parantes, x plustegn 1, højre parantes, and denominator, the logaritme of, venstre parantes, x plustegn 2, højre parantes"
+    },
+    "Log017": {
+      "expected": "the fraction with numerator, the logaritme base 6 of, venstre parantes, x plustegn 1, højre parantes, and denominator, the logaritme base 6 of, venstre parantes, x plustegn 2, højre parantes"
+    },
+    "Log018": {
+      "expected": "the fraction with numerator logaritme 40 plustegn logaritme 60, and denominator logaritme 5"
+    },
+    "Log019": {
+      "expected": "the fraction with numerator, the logaritme base 3 of, 40, plustegn, the logaritme base 3 of, 60, and denominator, the logaritme base 3 of, 5"
+    },
+    "Log020": {
+      "expected": "the logaritme of, venstre parantes, 3 to the fjerde power, 12 to the niende power, højre parantes, lig med 4 logaritme 3, plustegn 9 logaritme 12"
+    },
+    "Log021": {
+      "expected": "the logaritme of, venstre parantes, x over y, højre parantes"
+    },
+    "Log022": {
+      "expected": "the logaritme of, venstre parantes, the fraction with numerator 3 to the fjerde power, and denominator 8 to the tiende power, højre parantes, lig med 4 logaritme 3, minustegn 10 logaritme 8"
+    },
+    "Log023": {
+      "expected": "10 raised to the logaritme x power"
+    },
+    "NatLog001": {
+      "expected": "naturlig logaritme x"
+    },
+    "NatLog002": {
+      "expected": "naturlig logaritme x, minustegn naturlig logaritme of, venstre parantes, x minustegn 1, højre parantes, lig med naturlig logaritme of, venstre parantes, the fraction with numerator x, and denominator x minustegn 1, højre parantes"
+    },
+    "NatLog003": {
+      "expected": "naturlig logaritme of, venstre parantes, e to the x-th power, højre parantes, lig med x"
+    },
+    "NatLog004": {
+      "expected": "e raised to the naturlig logaritme x power, lig med x"
+    },
+    "NatLog005": {
+      "expected": "naturlig logaritme of, venstre parantes, e to the x-th power, højre parantes, lig med x"
+    },
+    "NatLog006": {
+      "expected": "e raised to the naturlig logaritme 4 power, lig med 4"
+    },
+    "NatLog007": {
+      "expected": "naturlig logaritme 40, over naturlig logaritme 5, lig med, the logaritme base 5 of, 40"
+    },
+    "NatLog008": {
+      "expected": "the fraction with numerator naturlig logaritme 40, plustegn naturlig logaritme 60, and denominator naturlig logaritme 5"
+    },
+    "NatLog009": {
+      "expected": "naturlig logaritme x"
+    },
+    "NatLog010": {
+      "expected": "naturlig logaritme x, minustegn, the naturlig logaritme of, venstre parantes, x minustegn 1, højre parantes, lig med, the naturlig logaritme of, venstre parantes, the fraction with numerator x, and denominator x minustegn 1, højre parantes"
+    },
+    "NatLog011": {
+      "expected": "the naturlig logaritme of, venstre parantes, e to the x-th power, højre parantes, lig med x"
+    },
+    "NatLog012": {
+      "expected": "e raised to the naturlig logaritme x power, lig med x"
+    },
+    "NatLog013": {
+      "expected": "the naturlig logaritme of, venstre parantes, e to the x-th power, højre parantes, lig med x"
+    },
+    "NatLog014": {
+      "expected": "e raised to the naturlig logaritme 4 power, lig med 4"
+    },
+    "NatLog015": {
+      "expected": "naturlig logaritme 40, over naturlig logaritme 5, lig med, the logaritme base 5 of, 40"
+    },
+    "NatLog016": {
+      "expected": "the fraction with numerator naturlig logaritme 40, plustegn naturlig logaritme 60, and denominator naturlig logaritme 5"
+    }
+  }
+}

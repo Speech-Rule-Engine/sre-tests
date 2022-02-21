@@ -1,0 +1,214 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "DanishClearspeakPart2Symbols",
+  "locale": "da",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_part2_symbols.json",
+  "information": "Danish Clearspeak Part2Symbols rule tests.",
+  "active": "ClearspeakDanish",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "X001": {
+      "expected": "6 krydsprodukt 8"
+    },
+    "X002": {
+      "expected": "m krydsprodukt n"
+    },
+    "X003": {
+      "expected": "3 krydsprodukt 3"
+    },
+    "X004": {
+      "expected": "6 krydsprodukt 8"
+    },
+    "X005": {
+      "expected": "m krydsprodukt n"
+    },
+    "X006": {
+      "expected": "3 krydsprodukt 3"
+    },
+    "X007": {
+      "expected": "u krydsprodukt v"
+    },
+    "Dot001": {
+      "expected": "6 prik 8"
+    },
+    "Dot002": {
+      "expected": "m prik n"
+    },
+    "Dot003": {
+      "expected": "3 prik 3"
+    },
+    "Dot004": {
+      "expected": "6 prik 8"
+    },
+    "Dot005": {
+      "expected": "m prik n"
+    },
+    "Dot006": {
+      "expected": "3 prik 3"
+    },
+    "Triangle001": {
+      "expected": "trekant A B C"
+    },
+    "Triangle002": {
+      "expected": "trekant D E F"
+    },
+    "Triangle003": {
+      "expected": "Delta x"
+    },
+    "Triangle004": {
+      "expected": "f of, venstre parantes, x plustegn Delta x, højre parantes"
+    },
+    "Ellipses001": {
+      "expected": "1 komma 2 komma 3 komma prik prik prik"
+    },
+    "Ellipses002": {
+      "expected": "1 komma 2 komma 3 komma prik prik prik komma 20"
+    },
+    "Ellipses003": {
+      "expected": "prik prik prik komma, negative 2, komma, negative 1, komma 0 komma 1 komma 2 komma prik prik prik"
+    },
+    "Ellipses004": {
+      "expected": "1 komma 2 komma 3 komma and so on"
+    },
+    "Ellipses005": {
+      "expected": "1 komma 2 komma 3 komma and so on up to komma 20"
+    },
+    "Ellipses006": {
+      "expected": "prik prik prik komma, negative 2, komma, negative 1, komma 0 komma 1 komma 2 komma prik prik prik"
+    },
+    "VertLine001": {
+      "expected": "3 divides 6"
+    },
+    "VertLine002": {
+      "expected": "the set of all x such that x større end 0"
+    },
+    "VertLine003": {
+      "expected": "the set of all x such that, the absolute value of x, større end 2"
+    },
+    "VertLine004": {
+      "expected": "f of x, evaluated at x lig med 5"
+    },
+    "VertLine005": {
+      "expected": "x squared plustegn 2 x, evaluated at x lig med 2"
+    },
+    "VertLine006": {
+      "expected": "x squared plustegn x, evaluated at 1, minus the same expression evaluated at 0"
+    },
+    "VertLine007": {
+      "expected": "the set of all x such that x større end 0"
+    },
+    "VertLine008": {
+      "expected": "3 divides 6"
+    },
+    "VertLine009": {
+      "expected": "P of, venstre parantes, A given B, højre parantes"
+    },
+    "MembSym001": {
+      "expected": "If x is a member of the integers then 2 x, is an even number prik"
+    },
+    "MembSym002": {
+      "expected": "the set of all x in the integers such that x større end 5"
+    },
+    "MembSym003": {
+      "expected": "3 plustegn 2 I, is not a member of the real numbers"
+    },
+    "MembSym004": {
+      "expected": "If x is a member of the integers then 2 x, is an even number prik"
+    },
+    "MembSym005": {
+      "expected": "the set of all x member of the integers such that x større end 5"
+    },
+    "MembSym006": {
+      "expected": "3 plustegn 2 I, is not a member of the real numbers"
+    },
+    "MembSym007": {
+      "expected": "If x is an element of the integers then 2 x, is an even number prik"
+    },
+    "MembSym008": {
+      "expected": "the set of all x element of the integers such that x større end 5"
+    },
+    "MembSym009": {
+      "expected": "3 plustegn 2 I, is not an element of the real numbers"
+    },
+    "MembSym010": {
+      "expected": "If x belongs to the integers then 2 x, is an even number prik"
+    },
+    "MembSym011": {
+      "expected": "the set of all x belonging to the integers such that x større end 5"
+    },
+    "MembSym012": {
+      "expected": "3 plustegn 2 I, does not belong to the real numbers"
+    },
+    "MembSym013": {
+      "expected": "If x belongs to the integers then 2 x, is an even number prik"
+    },
+    "MembSym014": {
+      "expected": "the set of all x belonging to the integers such that x større end 5"
+    },
+    "MembSym015": {
+      "expected": "3 plustegn 2 I, does not belong to the real numbers"
+    },
+    "SetMemb001": {
+      "expected": "the set of x belonging to the integers such that 2 mindre end x mindre end 7"
+    },
+    "SetMemb002": {
+      "expected": "the set of x member of the integers such that x større end 5"
+    },
+    "Sum001": {
+      "expected": "the sum from n lig med 1 to 10 of n"
+    },
+    "Sum002": {
+      "expected": "the sum from n lig med 1 to uendelig of n"
+    },
+    "Sum003": {
+      "expected": "the sum over I is a member of the positive integers, of I"
+    },
+    "Sum004": {
+      "expected": "the sum over S, of I"
+    },
+    "Sum005": {
+      "expected": "the sum of, a sub I"
+    },
+    "Sum006": {
+      "expected": "the produkt from I lig med 1 to 10 of I"
+    },
+    "Sum007": {
+      "expected": "the produkt over I is a member of the positive integers, of, the fraction with numerator I, and denominator I plustegn 1"
+    },
+    "Sum008": {
+      "expected": "the produkt over the positive integers, of, the fraction with numerator I, and denominator I plustegn 1"
+    },
+    "Sum009": {
+      "expected": "the produkt of, a sub I"
+    },
+    "Sum010": {
+      "expected": "the snit from I lig med 1 to 10 of, S sub I"
+    },
+    "Sum011": {
+      "expected": "the forening from I lig med 1 to 10 of, S sub I"
+    },
+    "Sum012": {
+      "expected": "the snit of, S sub I"
+    },
+    "Sum013": {
+      "expected": "the forening of, S sub I"
+    },
+    "Sum014": {
+      "expected": "the snit over C, of, S sub I"
+    },
+    "Sum015": {
+      "expected": "the forening over C, of, S sub I"
+    },
+    "Sum016": {
+      "expected": "the integral of f of x, d x"
+    },
+    "Sum017": {
+      "expected": "the integral from 0 to 1 of f of x, d x"
+    },
+    "Sum018": {
+      "expected": "the integral over the real numbers, of f of x, d x"
+    }
+  }
+}

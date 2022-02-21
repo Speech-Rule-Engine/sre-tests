@@ -1,0 +1,566 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "DanishClearspeakFunctions",
+  "locale": "da",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_functions.json",
+  "information": "Danish Clearspeak Functions rule tests.",
+  "active": "ClearspeakDanish",
+  "exclude": [
+    "Function011b",
+    "Function012b",
+    "Function013b",
+    "Function014b",
+    "Function015b",
+    "Function016b",
+    "Function017b",
+    "Function018b",
+    "Function019b",
+    "Function020b",
+    "Function021b",
+    "Function022b",
+    "Function023b",
+    "Function024b",
+    "Function025b",
+    "Function026b",
+    "Function027b",
+    "Function028b",
+    "Function029b",
+    "Function030b",
+    "Function031b",
+    "Function032b",
+    "Function033b",
+    "Function034b",
+    "Function035b",
+    "Function036b",
+    "Function037b",
+    "Function038b",
+    "Function039b",
+    "Function040b",
+    "Function041b",
+    "Function042b",
+    "Function043b",
+    "Function044b",
+    "Function045b",
+    "Function046b",
+    "Function047b",
+    "Function048b",
+    "Function049b",
+    "Function050b",
+    "Function051b",
+    "Function052b",
+    "Function053b",
+    "Function054b",
+    "Function055b",
+    "Function056b",
+    "Function057b",
+    "Function058b",
+    "Function059b",
+    "Function060b",
+    "Function061b",
+    "Function062b",
+    "Function063b",
+    "Function064b",
+    "Function065b",
+    "Function066b",
+    "Function067b",
+    "Function068b",
+    "Function069b",
+    "Function070b",
+    "Function071b",
+    "Function072b",
+    "Function073b",
+    "Function074b",
+    "Function075b",
+    "Function076b",
+    "Function077b",
+    "Function078b",
+    "Function079b"
+  ],
+  "compare": true,
+  "tests": {
+    "Function001": {
+      "expected": "f of x"
+    },
+    "Function002": {
+      "expected": "g of x"
+    },
+    "Function003": {
+      "expected": "h of x"
+    },
+    "Function004": {
+      "expected": "f of 2 x"
+    },
+    "Function005": {
+      "expected": "g of negative 2 x"
+    },
+    "Function006": {
+      "expected": "h of en halve"
+    },
+    "Function007": {
+      "expected": "h of, venstre parantes, 1 over 2, højre parantes"
+    },
+    "Function008": {
+      "expected": "f of, venstre parantes, x plustegn 1, højre parantes, lig med f of x, plustegn 1"
+    },
+    "Function009": {
+      "expected": "g of, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function010": {
+      "expected": "g of, venstre parantes, x squared, højre parantes"
+    },
+    "Function011": {
+      "expected": "f inverse of x"
+    },
+    "Function012": {
+      "expected": "g inverse of x"
+    },
+    "Function013": {
+      "expected": "h inverse of x"
+    },
+    "Function014": {
+      "expected": "f inverse of 2 x"
+    },
+    "Function015": {
+      "expected": "g inverse of negative 2 x"
+    },
+    "Function016": {
+      "expected": "f inverse of, venstre parantes, 3 x, minustegn 1, højre parantes"
+    },
+    "Function017": {
+      "expected": "g inverse of, venstre parantes, x squared, højre parantes"
+    },
+    "Function018": {
+      "expected": "h inverse of en halve"
+    },
+    "Function019": {
+      "expected": "h inverse of, venstre parantes, 1 over 2, højre parantes"
+    },
+    "Function020": {
+      "expected": "f inverse of, f of x"
+    },
+    "Function021": {
+      "expected": "g inverse of, g of x"
+    },
+    "Function022": {
+      "expected": "h inverse of, h of x"
+    },
+    "Function023": {
+      "expected": "f inverse of, f of 2 x"
+    },
+    "Function024": {
+      "expected": "g inverse of, g of negative 2 x"
+    },
+    "Function025": {
+      "expected": "h inverse of, h of en halve"
+    },
+    "Function026": {
+      "expected": "h inverse of, venstre parantes, h of, venstre parantes, 1 over 2, højre parantes, højre parantes"
+    },
+    "Function027": {
+      "expected": "f inverse of, venstre parantes, f of, venstre parantes, x plustegn 1, højre parantes, højre parantes, lig med x plustegn 1"
+    },
+    "Function028": {
+      "expected": "g inverse of, venstre parantes, g of, venstre parantes, 2 x, plustegn 1, højre parantes, højre parantes"
+    },
+    "Function029": {
+      "expected": "g inverse of, venstre parantes, g of, venstre parantes, x squared, højre parantes, højre parantes"
+    },
+    "Function030": {
+      "expected": "f of, f inverse of x"
+    },
+    "Function031": {
+      "expected": "g of, g inverse of x"
+    },
+    "Function032": {
+      "expected": "h of, h inverse of x"
+    },
+    "Function033": {
+      "expected": "f of, f inverse of 2 x"
+    },
+    "Function034": {
+      "expected": "g of, g inverse of negative 2 x"
+    },
+    "Function035": {
+      "expected": "f of, venstre parantes, f inverse of, venstre parantes, 3 x, minustegn 1, højre parantes, højre parantes"
+    },
+    "Function036": {
+      "expected": "g of, g inverse of, venstre parantes, x squared, højre parantes"
+    },
+    "Function037": {
+      "expected": "h of, h inverse of en halve"
+    },
+    "Function038": {
+      "expected": "h of, h inverse of, venstre parantes, the fraction 1 over 2, højre parantes"
+    },
+    "Function039": {
+      "expected": "f of, g of x"
+    },
+    "Function040": {
+      "expected": "f of, venstre parantes, g of, venstre parantes, x plustegn 1, højre parantes, højre parantes"
+    },
+    "Function041": {
+      "expected": "h of, g of x"
+    },
+    "Function042": {
+      "expected": "h of, venstre parantes, g of, venstre parantes, the fraction with numerator x, and denominator x plustegn 1, højre parantes, højre parantes"
+    },
+    "Function043": {
+      "expected": "venstre parantes, f plustegn g, højre parantes, of x, lig med f of x, plustegn g of x"
+    },
+    "Function044": {
+      "expected": "venstre parantes, f plustegn g, højre parantes, of, venstre parantes, x plustegn 1, højre parantes, lig med f of, venstre parantes, x plustegn 1, højre parantes, plustegn g of, venstre parantes, x plustegn 1, højre parantes"
+    },
+    "Function045": {
+      "expected": "venstre parantes, f prik g, højre parantes, of x"
+    },
+    "Function046": {
+      "expected": "venstre parantes, f prik g, højre parantes, of, venstre parantes, 2 x, plustegn 5, højre parantes"
+    },
+    "Function047": {
+      "expected": "venstre parantes, f over g, højre parantes, of x, lig med, f of x, over g of x"
+    },
+    "Function048": {
+      "expected": "venstre parantes, f over g, højre parantes, of, venstre parantes, 2 x, plustegn 5, højre parantes, lig med, the fraction with numerator f of, venstre parantes, 2 x, plustegn 5, højre parantes, and denominator g of, venstre parantes, 2 x, plustegn 5, højre parantes"
+    },
+    "Function049": {
+      "expected": "venstre parantes, f komposition stjerne g, højre parantes, of x, lig med f of, g of x"
+    },
+    "Function050": {
+      "expected": "2 f of x"
+    },
+    "Function051": {
+      "expected": "c f of x"
+    },
+    "Function052": {
+      "expected": "f squared of x"
+    },
+    "Function053": {
+      "expected": "f squared of, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function054": {
+      "expected": "f cubed of x"
+    },
+    "Function055": {
+      "expected": "f cubed of, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function056": {
+      "expected": "the fjerde power of, f of x"
+    },
+    "Function057": {
+      "expected": "the fjerde power of, f of, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function058": {
+      "expected": "the femte power of, f of x"
+    },
+    "Function059": {
+      "expected": "the femte power of, f of, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function060": {
+      "expected": "the n-th power of, f of x"
+    },
+    "Function061": {
+      "expected": "the n-th power of, f of, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function062": {
+      "expected": "g squared of x"
+    },
+    "Function063": {
+      "expected": "g squared of, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function064": {
+      "expected": "h cubed of x"
+    },
+    "Function065": {
+      "expected": "h cubed of, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function066": {
+      "expected": "the fjerde power of, g of x"
+    },
+    "Function067": {
+      "expected": "the fjerde power of, g of, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function068": {
+      "expected": "the femte power of, h of x"
+    },
+    "Function069": {
+      "expected": "the femte power of, h of, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function070": {
+      "expected": "the n-th power of, g of x"
+    },
+    "Function071": {
+      "expected": "the n-th power of, g of, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function072": {
+      "expected": "f sub 1, of x"
+    },
+    "Function073": {
+      "expected": "g sub 2, of, venstre parantes, x cubed, højre parantes"
+    },
+    "Function074": {
+      "expected": "h sub n, of, venstre parantes, 3 x, minustegn 2, højre parantes"
+    },
+    "Function075": {
+      "expected": "f sub 1, inverse of x"
+    },
+    "Function076": {
+      "expected": "g sub 2, inverse of, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function077": {
+      "expected": "h sub n, inverse of x"
+    },
+    "Function078": {
+      "expected": "g sub 1, inverse of, g sub 2, of x"
+    },
+    "Function079": {
+      "expected": "f sub 1, of, g sub 2, inverse of x"
+    },
+    "Function080": {
+      "expected": "f of, venstre parantes, x komma y, højre parantes"
+    },
+    "Function081": {
+      "expected": "f of, venstre parantes, x komma y komma z, højre parantes"
+    },
+    "Function082": {
+      "expected": "f of, venstre parantes, x plustegn 1, komma, 2 y, højre parantes"
+    },
+    "Function083": {
+      "expected": "f of, venstre parantes, 2 x, komma, x plustegn 1, komma, x squared, højre parantes"
+    },
+    "Function084": {
+      "expected": "f times x"
+    },
+    "Function085": {
+      "expected": "g times x"
+    },
+    "Function086": {
+      "expected": "h times x"
+    },
+    "Function087": {
+      "expected": "f times 2 x"
+    },
+    "Function088": {
+      "expected": "g times negative 2 x"
+    },
+    "Function089": {
+      "expected": "h times en halve"
+    },
+    "Function091": {
+      "expected": "f times, venstre parantes, x plustegn 1, højre parantes, lig med, f times x, plustegn 1"
+    },
+    "Function092": {
+      "expected": "g times, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function093": {
+      "expected": "g times, venstre parantes, x squared, højre parantes"
+    },
+    "Function094": {
+      "expected": "f to the negative 1 power, times x"
+    },
+    "Function095": {
+      "expected": "g to the negative 1 power, times x"
+    },
+    "Function096": {
+      "expected": "h to the negative 1 power, times x"
+    },
+    "Function097": {
+      "expected": "f to the negative 1 power, times 2 x"
+    },
+    "Function098": {
+      "expected": "g to the negative 1 power, times negative 2 x"
+    },
+    "Function099": {
+      "expected": "f to the negative 1 power, times, venstre parantes, 3 x, minustegn 1, højre parantes"
+    },
+    "Function100": {
+      "expected": "g to the negative 1 power, times, venstre parantes, x squared, højre parantes"
+    },
+    "Function101": {
+      "expected": "h to the negative 1 power, times en halve"
+    },
+    "Function103": {
+      "expected": "f to the negative 1 power, times, f times x"
+    },
+    "Function104": {
+      "expected": "g to the negative 1 power, times, g times x"
+    },
+    "Function105": {
+      "expected": "h to the negative 1 power, times, h times x"
+    },
+    "Function106": {
+      "expected": "f to the negative 1 power, times, f times 2 x"
+    },
+    "Function107": {
+      "expected": "g to the negative 1 power, times, g times negative 2 x"
+    },
+    "Function108": {
+      "expected": "h to the negative 1 power, times, h times en halve"
+    },
+    "Function110": {
+      "expected": "f to the negative 1 power, times, venstre parantes, f times, venstre parantes, x plustegn 1, højre parantes, højre parantes, lig med x plustegn 1"
+    },
+    "Function111": {
+      "expected": "g to the negative 1 power, times, venstre parantes, g times, venstre parantes, 2 x, plustegn 1, højre parantes, højre parantes"
+    },
+    "Function112": {
+      "expected": "g to the negative 1 power, times, venstre parantes, g times, venstre parantes, x squared, højre parantes, højre parantes"
+    },
+    "Function113": {
+      "expected": "f times, venstre parantes, f to the negative 1 power, times x, højre parantes"
+    },
+    "Function114": {
+      "expected": "g times, venstre parantes, g to the negative 1 power, times x, højre parantes"
+    },
+    "Function115": {
+      "expected": "h times, venstre parantes, h to the negative 1 power, times x, højre parantes"
+    },
+    "Function116": {
+      "expected": "f times, venstre parantes, f to the negative 1 power, times 2 x, højre parantes"
+    },
+    "Function117": {
+      "expected": "g times, venstre parantes, g to the negative 1 power, times negative 2 x, højre parantes"
+    },
+    "Function118": {
+      "expected": "f times, venstre parantes, f to the negative 1 power, times, venstre parantes, 3 x, minustegn 1, højre parantes, højre parantes"
+    },
+    "Function119": {
+      "expected": "g times, venstre parantes, g to the negative 1 power, times, venstre parantes, x squared, højre parantes, højre parantes"
+    },
+    "Function120": {
+      "expected": "h times, venstre parantes, h to the negative 1 power, times en halve, højre parantes"
+    },
+    "Function122": {
+      "expected": "f times, g times x"
+    },
+    "Function123": {
+      "expected": "f times, venstre parantes, g times, venstre parantes, x plustegn 1, højre parantes, højre parantes"
+    },
+    "Function124": {
+      "expected": "h times, g times x"
+    },
+    "Function125": {
+      "expected": "h times, venstre parantes, g times, venstre parantes, the fraction with numerator x, and denominator x plustegn 1, højre parantes, højre parantes"
+    },
+    "Function126": {
+      "expected": "venstre parantes, f plustegn g, højre parantes, times x, lig med, f times x, plustegn, g times x"
+    },
+    "Function127": {
+      "expected": "venstre parantes, f plustegn g, højre parantes, times, venstre parantes, x plustegn 1, højre parantes, lig med, f times, venstre parantes, x plustegn 1, højre parantes, plustegn, g times, venstre parantes, x plustegn 1, højre parantes"
+    },
+    "Function128": {
+      "expected": "venstre parantes, f prik g, højre parantes, times x"
+    },
+    "Function129": {
+      "expected": "venstre parantes, f prik g, højre parantes, times, venstre parantes, 2 x, plustegn 5, højre parantes"
+    },
+    "Function130": {
+      "expected": "venstre parantes, f over g, højre parantes, times x, lig med, the fraction with numerator, f times x, and denominator, g times x"
+    },
+    "Function131": {
+      "expected": "venstre parantes, f over g, højre parantes, times, venstre parantes, 2 x, plustegn 5, højre parantes, lig med, the fraction with numerator, f times, venstre parantes, 2 x, plustegn 5, højre parantes, and denominator, g times, venstre parantes, 2 x, plustegn 5, højre parantes"
+    },
+    "Function132": {
+      "expected": "2, f times x"
+    },
+    "Function133": {
+      "expected": "c, f times x"
+    },
+    "Function134": {
+      "expected": "f squared times x"
+    },
+    "Function135": {
+      "expected": "f squared times, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function136": {
+      "expected": "f cubed times x"
+    },
+    "Function137": {
+      "expected": "f cubed times, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function138": {
+      "expected": "f to the fjerde power, times x"
+    },
+    "Function139": {
+      "expected": "f to the fjerde power, times, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function140": {
+      "expected": "f to the femte power, times x"
+    },
+    "Function141": {
+      "expected": "f to the femte power, times, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function142": {
+      "expected": "f to the n-th power, times x"
+    },
+    "Function143": {
+      "expected": "f to the n-th power, times, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function144": {
+      "expected": "g squared times x"
+    },
+    "Function145": {
+      "expected": "g squared times, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function146": {
+      "expected": "h cubed times x"
+    },
+    "Function147": {
+      "expected": "h cubed times, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function148": {
+      "expected": "g to the fjerde power, times x"
+    },
+    "Function149": {
+      "expected": "g to the fjerde power, times, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function150": {
+      "expected": "h to the femte power, times x"
+    },
+    "Function151": {
+      "expected": "h to the femte power, times, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function152": {
+      "expected": "g to the n-th power, times x"
+    },
+    "Function153": {
+      "expected": "g to the n-th power, times, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function154": {
+      "expected": "f sub 1, times x"
+    },
+    "Function156": {
+      "expected": "g sub 2, times, venstre parantes, x cubed, højre parantes"
+    },
+    "Function157": {
+      "expected": "h sub n, times, venstre parantes, 3 x, minustegn 2, højre parantes"
+    },
+    "Function158": {
+      "expected": "f sub 1, to the negative 1 power, times x"
+    },
+    "Function159": {
+      "expected": "g sub 2, to the negative 1 power, times, venstre parantes, 2 x, plustegn 1, højre parantes"
+    },
+    "Function160": {
+      "expected": "h sub n, to the negative 1 power, times x"
+    },
+    "Function161": {
+      "expected": "g sub 1, to the negative 1 power, times, venstre parantes, g sub 2, times x, højre parantes"
+    },
+    "Function162": {
+      "expected": "f sub 1, times, venstre parantes, g sub 2, to the negative 1 power, times x, højre parantes"
+    },
+    "Function163": {
+      "expected": "f times, venstre parantes, x komma y, højre parantes"
+    },
+    "Function164": {
+      "expected": "f times, venstre parantes, x komma y komma z, højre parantes"
+    },
+    "Function165": {
+      "expected": "f times, venstre parantes, x plustegn 1, komma, 2 y, højre parantes"
+    },
+    "Function166": {
+      "expected": "f times, venstre parantes, 2 x, komma, x plustegn 1, komma, x squared, højre parantes"
+    }
+  }
+}
