@@ -1,0 +1,320 @@
+{
+  "name": "DanishClearspeakUnits",
+  "locale": "da",
+  "factory": "speech",
+  "base": "input/common/units_speech.json",
+  "information": "Danish Clearspeak Units tests.",
+  "domain": "clearspeak",
+  "active": "ClearspeakDanish",
+  "exclude": [
+    "UnitSquare_0_brief",
+    "UnitSquare_0_sbrief",
+    "UnitSquare_1_brief",
+    "UnitSquare_1_sbrief",
+    "UnitSquare_2_brief",
+    "UnitSquare_2_sbrief",
+    "UnitCube_0_brief",
+    "UnitCube_0_sbrief",
+    "UnitCube_1_brief",
+    "UnitCube_1_sbrief",
+    "UnitCube_2_brief",
+    "UnitCube_2_sbrief",
+    "UnitInverse_brief",
+    "UnitInverse_sbrief",
+    "UnitDoubleInverse_brief",
+    "UnitDoubleInverse_sbrief",
+    "UnitDivide_brief",
+    "UnitDivide_sbrief"
+  ],
+  "compare": true,
+  "tests": {
+    "UnitSquare_0_default": {
+      "expected": "square tommer"
+    },
+    "UnitSquare_1_default": {
+      "expected": "sekunder to the anden power"
+    },
+    "UnitSquare_2_default": {
+      "expected": "square meter"
+    },
+    "UnitCube_0_default": {
+      "expected": "cubic tommer"
+    },
+    "UnitCube_1_default": {
+      "expected": "sekunder to the tredje power"
+    },
+    "UnitCube_2_default": {
+      "expected": "cubic meter"
+    },
+    "UnitInverse_default": {
+      "expected": "reciprocal tommer"
+    },
+    "UnitDoubleInverse_default": {
+      "expected": "reciprocal tommer per mm"
+    },
+    "UnitDivide_default": {
+      "expected": "tommer per mm"
+    },
+    "UnitsSingle_0": {
+      "expected": "km"
+    },
+    "UnitsSingle_1": {
+      "expected": "ampere"
+    },
+    "UnitsSingle_2": {
+      "expected": "ohm"
+    },
+    "UnitsSingle_3": {
+      "expected": "kΩ"
+    },
+    "UnitsSingle_4": {
+      "expected": "Celsius"
+    },
+    "UnitsSimple_0": {
+      "expected": "minimum of minutter"
+    },
+    "UnitsSimple_1": {
+      "expected": "3 km"
+    },
+    "UnitsSimple_2": {
+      "expected": "km plustegn sekunder"
+    },
+    "UnitsSuperscript_0": {
+      "expected": "square km"
+    },
+    "UnitsSuperscript_1": {
+      "expected": "cubic meter"
+    },
+    "UnitsSuperscript_2": {
+      "expected": "km to the fjerde power"
+    },
+    "UnitsSuperscript_3": {
+      "expected": "reciprocal meter"
+    },
+    "UnitsSuperscript_4": {
+      "expected": "sekunder per meter"
+    },
+    "UnitsSuperscript_5": {
+      "expected": "sekunder per meter to the negative 1 power"
+    },
+    "UnitsSuperscript_6": {
+      "expected": "sekunder per meter to the negative 1 power"
+    },
+    "UnitsSuperscript_7": {
+      "expected": "3 reciprocal meter"
+    },
+    "UnitsSuperscript_8": {
+      "expected": "km per time"
+    },
+    "UnitsSuperscript_9": {
+      "expected": "Newton km per time"
+    },
+    "UnitsSuperscript_10": {
+      "expected": "m over km"
+    },
+    "UnitsSuperscript_11": {
+      "expected": "3 km timer"
+    },
+    "UnitsExpressions_0": {
+      "expected": "sekunder 3 m km timer"
+    },
+    "UnitsExpressions_1": {
+      "expected": "km sekunder to the anden power 3 m km timer"
+    },
+    "UnitsExpressions_2": {
+      "expected": "3 m km timer the fraction with numerator N and denominator sekunder to the anden power"
+    },
+    "UnitsExpressions_3": {
+      "expected": "3 m km timer Newton per sekund to the anden power"
+    },
+    "UnitPlural_1": {
+      "expected": "4 mm"
+    },
+    "UnitPlural_2": {
+      "expected": "1 mm"
+    },
+    "UnitPlural_3": {
+      "expected": "4 mm"
+    },
+    "UnitPlural_4": {
+      "expected": "1 mm"
+    },
+    "UnitCombine_0": {
+      "expected": "meter sekunder"
+    },
+    "UnitCombine_1": {
+      "expected": "m sekunder"
+    },
+    "UnitCombine_2": {
+      "expected": "meter s"
+    },
+    "UnitCombine_3": {
+      "expected": "meter sekunder"
+    },
+    "UnitCombine_4": {
+      "expected": "m sekunder"
+    },
+    "UnitCombine_5": {
+      "expected": "meter s"
+    },
+    "UnitCombine_6": {
+      "expected": "meter sekunder liter"
+    },
+    "issue_364_1": {
+      "expected": "63360 tommer lig med 63360 tommer lig med 63360 tommer lig med 63360 inches lig med 5280 fod lig med 5280 fod lig med 5280 fod lig med 5280 feet lig med 1760 yards lig med 1760 yards lig med 1760 yards lig med 1 mil lig med 1 mil lig med 1 mile"
+    },
+    "issue_364_2": {
+      "expected": "8000 links lig med 8000 links lig med 8000 links lig med 320 rods lig med 320 rods lig med 320 rods lig med 80 chains lig med 80 chains lig med 80 chains lig med 8 furlong lig med 8 furlong lig med 8 furlongs lig med 1 mil lig med 1 mil lig med 1 mile"
+    },
+    "issue_364_3": {
+      "expected": "43560 kvadrat fod lig med 43560 kvadrat fod lig med 43560 square fod lig med 43560 fod squared lig med 43560 square feet lig med 4840 kvadrat yards lig med 4840 kvadrat yards lig med 4840 square yards lig med 4840 square yards lig med 160 sq rd lig med 160 sq. rd. lig med 160 square rods lig med 160 square rods lig med 1 ager lig med 1 ager lig med 1 acre lig med 1 over 640 kvadrat mile lig med 1 over 640 kvadrat mile lig med 1 over 640 square mil lig med 1 over 640 square miles"
+    },
+    "issue_364_4": {
+      "expected": "46656 kubik inches lig med 46656 kubik inches lig med 46656 cubic tommer lig med 46656 tommer cubed lig med 46656 cubic inches lig med 27 kubik fod lig med 27 kubik fod lig med 27 cubic fod lig med 27 fod cubed lig med 27 cubic feet lig med 1 kubik yard lig med 1 kubik yard lig med 1 cubic yard lig med 1 cubic yard"
+    },
+    "issue_364_5": {
+      "expected": "1024 fluid drams lig med 1024 fluid drams lig med 1024 fluid drams lig med 768 teskeer lig med 768 teskeer lig med 768 teaspoons lig med 256 spiseskeer lig med 256 spiseskeer lig med 256 tablespoons lig med 128 fluid ounces lig med 128 fluid ounces lig med 128 fluid ounces lig med 16 kopper lig med 16 kopper lig med 16 cups lig med 8 pints lig med 8 pints lig med 8 pints lig med 4 quarts lig med 4 quarts lig med 4 quarts lig med 1 gallon lig med 1 gallon lig med 1 gallon"
+    },
+    "issue_364_6": {
+      "expected": "256 drams lig med 256 drams lig med 256 drams lig med 16 ounces lig med 16 ounces lig med 16 ounces lig med 1 # lig med 1 pund lig med 1 pund lig med 1 pounds lig med 100 hektokilogram lig med 100 hektokilogram lig med 100 hundredweights lig med 2000 tons"
+    },
+    "issue_366": {
+      "expected": "63360 tommer lig med 63360 tommer lig med 63360 tommer lig med 63360 inches lig med 5280 fod lig med 5280 fod lig med 5280 fod lig med 5280 feet lig med 1760 yards lig med 1760 yards lig med 1760 yards lig med 1 mil lig med 1 mil lig med 1 mile"
+    },
+    "testSample_13_1_2_var0": {
+      "expected": "1 joule lig med 1 kg prik square meter prik sekunder to the negative 2 power"
+    },
+    "testSample_13_1_2_var1": {
+      "expected": "1 joule lig med 1 kg square meter sekunder to the negative 2 power"
+    },
+    "testSample_13_1_2_var2": {
+      "expected": "1 joule lig med 1 kg square meter sekunder to the negative 2 power"
+    },
+    "unit_cube": {
+      "expected": "cubic tommer"
+    },
+    "UnitDiv_0": {
+      "expected": "km kg sekunder to the anden power per joule"
+    },
+    "UnitDiv_1": {
+      "expected": "3 km 1 kg sekunder to the anden power over joule"
+    },
+    "UnitDiv_2": {
+      "expected": "1 km kg sekunder to the anden power over joule"
+    },
+    "UnitDiv_3": {
+      "expected": "1 km kg sekunder to the anden power over 5 joule"
+    },
+    "UnitKm": {
+      "expected": "km"
+    },
+    "UnitLong_1": {
+      "expected": "3 km kg sekunder to the anden power joule"
+    },
+    "UnitLong_2": {
+      "expected": "3 km kg sekunder to the anden power joule"
+    },
+    "UnitLong_3": {
+      "expected": "3 km 4 kg sekunder to the anden power joule"
+    },
+    "UnitLong_4": {
+      "expected": "3 km 1 kg sekunder to the anden power joule"
+    },
+    "UnitMultiple": {
+      "expected": "1 km sekunder plustegn 2 km sekunder plustegn 0 km sekunder plustegn a km sekunder plustegn"
+    },
+    "UnitMultitude": {
+      "expected": "1 km plustegn 2 km plustegn 0 km plustegn a km"
+    },
+    "UnitNumb_0": {
+      "expected": "1 and to tredjedele kg"
+    },
+    "UnitNumb_1": {
+      "expected": "1 and to tredjedele kg km"
+    },
+    "UnitNumb_2": {
+      "expected": "1 km 2 kg km"
+    },
+    "UnitTriple": {
+      "expected": "1 km kg sekunder plustegn 2 km kg sekunder plustegn 0 km kg sekunder plustegn a km kg sekunder plustegn"
+    },
+    "CurrencySingular_0_default": {
+      "expected": "1 dollar"
+    },
+    "CurrencySingular_0_Currency_Position": {
+      "expected": "1 dollars"
+    },
+    "CurrencySingular_0_Currency_Prefix": {
+      "expected": "dollars 1"
+    },
+    "CurrencySingular_1_default": {
+      "expected": "1 dollars"
+    },
+    "CurrencySingular_1_Currency_Position": {
+      "expected": "dollars 1"
+    },
+    "CurrencySingular_1_Currency_Prefix": {
+      "expected": "dollars 1"
+    },
+    "CurrencySingle_0_default": {
+      "expected": "dollars"
+    },
+    "CurrencySingle_0_Currency_Position": {
+      "expected": "dollars"
+    },
+    "CurrencySingle_0_Currency_Prefix": {
+      "expected": "dollars"
+    },
+    "CurrencySingle_1_default": {
+      "expected": "dollars"
+    },
+    "CurrencySingle_1_Currency_Position": {
+      "expected": "dollars"
+    },
+    "CurrencySingle_1_Currency_Prefix": {
+      "expected": "dollars"
+    },
+    "CurrencyPlural_0_default": {
+      "expected": "2 dollars"
+    },
+    "CurrencyPlural_0_Currency_Position": {
+      "expected": "2 dollars"
+    },
+    "CurrencyPlural_0_Currency_Prefix": {
+      "expected": "dollars 2"
+    },
+    "CurrencyPlural_1_default": {
+      "expected": "2 dollars"
+    },
+    "CurrencyPlural_1_Currency_Position": {
+      "expected": "dollars 2"
+    },
+    "CurrencyPlural_1_Currency_Prefix": {
+      "expected": "dollars 2"
+    },
+    "CurrencyMultitude_0_default": {
+      "expected": "1 dollar plustegn 2 dollars plustegn 0 dollars plustegn a dollars"
+    },
+    "CurrencyMultitude_0_Currency_Position": {
+      "expected": "1 dollars plustegn 2 dollars plustegn 0 dollars plustegn a dollars"
+    },
+    "CurrencyMultitude_0_Currency_Prefix": {
+      "expected": "dollars 1 plustegn dollars 2 plustegn dollars 0 plustegn dollars a"
+    },
+    "CurrencyMultitude_1_default": {
+      "expected": "1 dollar plustegn 2 dollars plustegn 0 dollars plustegn a dollars"
+    },
+    "CurrencyMultitude_1_Currency_Position": {
+      "expected": "1 dollars plustegn dollars 2 plustegn 0 dollars plustegn dollars a"
+    },
+    "CurrencyMultitude_1_Currency_Prefix": {
+      "expected": "dollars 1 plustegn dollars 2 plustegn dollars 0 plustegn dollars a"
+    },
+    "CurrencyMultitude_2_default": {
+      "expected": "1 euro plustegn 2 euro plustegn 0 euro plustegn a euro"
+    },
+    "CurrencyMultitude_3_default": {
+      "expected": "1 pund plustegn 2 pund plustegn 0 pund plustegn a pund"
+    }
+  }
+}

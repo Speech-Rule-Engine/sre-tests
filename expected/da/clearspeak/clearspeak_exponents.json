@@ -1,0 +1,562 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "DanishClearspeakExponents",
+  "locale": "da",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_exponents.json",
+  "information": "Danish Clearspeak Exponents rule tests.",
+  "active": "ClearspeakDanish",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Exp001": {
+      "expected": "3 squared"
+    },
+    "Exp002a": {
+      "expected": "3 cubed"
+    },
+    "Exp003": {
+      "expected": "3 to the femte power"
+    },
+    "Exp004": {
+      "expected": "3 to the første power"
+    },
+    "Exp005": {
+      "expected": "b to the første power"
+    },
+    "Exp006": {
+      "expected": "3 raised to the 5,0 power"
+    },
+    "Exp007": {
+      "expected": "3 to the 0 power"
+    },
+    "Exp008": {
+      "expected": "4 to the 11. power"
+    },
+    "Exp009": {
+      "expected": "3 to the negative 2 power"
+    },
+    "Exp010a": {
+      "expected": "3 raised to the negative 2,0 power"
+    },
+    "Exp011": {
+      "expected": "4 to the x-th power"
+    },
+    "Exp012": {
+      "expected": "3 raised to the y plustegn 2 power"
+    },
+    "Exp013": {
+      "expected": "venstre parantes, 2 y, minustegn 3, højre parantes, raised to the 3 z, plustegn 8 power"
+    },
+    "Exp014": {
+      "expected": "p sub 1, squared"
+    },
+    "Exp015": {
+      "expected": "p sub 1, cubed"
+    },
+    "Exp016": {
+      "expected": "p sub 1, to the fjerde power"
+    },
+    "Exp017": {
+      "expected": "p sub 1, to the tiende power"
+    },
+    "Exp018": {
+      "expected": "p sub 1, raised to the x plustegn 1 power"
+    },
+    "Exp019": {
+      "expected": "p sub, x sub 1, squared"
+    },
+    "Exp010b": {
+      "expected": "p sub, x sub 1, cubed"
+    },
+    "Exp011b": {
+      "expected": "p sub, x sub 1, to the fjerde power"
+    },
+    "Exp012b": {
+      "expected": "p sub, x sub 1, to the tiende power"
+    },
+    "Exp013b": {
+      "expected": "p sub, x sub 1, raised to the y plustegn 1 power"
+    },
+    "Exp014b": {
+      "expected": "3 raised to the 2 squared power"
+    },
+    "Exp015b": {
+      "expected": "3 raised to the 2 x squared power"
+    },
+    "Exp016b": {
+      "expected": "5 raised to the 2 cubed power"
+    },
+    "Exp017b": {
+      "expected": "5 raised to the 2 x cubed power"
+    },
+    "Exp018b": {
+      "expected": "3 raised to the exponent, 2 squared plustegn 1, end exponent"
+    },
+    "Exp019b": {
+      "expected": "3 raised to the 2 squared power, plustegn 1"
+    },
+    "Exp020": {
+      "expected": "2 raised to the exponent, x squared plustegn 3 x cubed, end exponent"
+    },
+    "Exp021": {
+      "expected": "3 raised to the exponent, 3 to the fjerde power, end exponent"
+    },
+    "Exp022": {
+      "expected": "3 raised to the exponent, 3 to the fjerde power, plustegn 2, end exponent"
+    },
+    "Exp023": {
+      "expected": "3 raised to the exponent, 3 to the fjerde power, end exponent, plustegn 2"
+    },
+    "Exp024": {
+      "expected": "2 raised to the exponent, x to the fjerde power, end exponent"
+    },
+    "Exp025": {
+      "expected": "2 raised to the exponent, 10 raised to the x plustegn 3 power, end exponent"
+    },
+    "Exp026": {
+      "expected": "3 raised to the exponent, 3 to the tiende power, end exponent"
+    },
+    "Exp027": {
+      "expected": "3 raised to the exponent, 3 to the tiende power, plustegn 1, end exponent"
+    },
+    "Exp028": {
+      "expected": "3 raised to the exponent, 3 to the tiende power, end exponent, plustegn 1"
+    },
+    "Exp029": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, squared, end exponent"
+    },
+    "Exp030": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, to the tiende power, end exponent"
+    },
+    "Exp031": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, raised to the y plustegn 2 power, end exponent"
+    },
+    "Exp032": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, to the y-th power, plustegn 2, end exponent"
+    },
+    "Exp033": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, to the y-th power, end exponent, plustegn 2"
+    },
+    "Exp035": {
+      "expected": "e raised to the exponent, negative en halve  , venstre parantes, the fraction with numerator x minustegn my, and denominator sigma, højre parantes, squared, end exponent"
+    },
+    "Exp036": {
+      "expected": "2 to the n-th power"
+    },
+    "Exp037": {
+      "expected": "2 to the m-th power"
+    },
+    "Exp038": {
+      "expected": "2 to the I-th power"
+    },
+    "Exp039": {
+      "expected": "2 to the j-th power"
+    },
+    "Exp040": {
+      "expected": "2 to the a-th power"
+    },
+    "Exp041": {
+      "expected": "3 to the anden"
+    },
+    "Exp042": {
+      "expected": "3 to the tredje"
+    },
+    "Exp043": {
+      "expected": "3 to the zero"
+    },
+    "Exp044": {
+      "expected": "3 to the første"
+    },
+    "Exp045": {
+      "expected": "3 to the femte"
+    },
+    "Exp046": {
+      "expected": "4 raised to the 3,0 power"
+    },
+    "Exp047": {
+      "expected": "4 to the ellevte"
+    },
+    "Exp048": {
+      "expected": "3 to the negative 2"
+    },
+    "Exp049": {
+      "expected": "3 raised to the negative 2,0 power"
+    },
+    "Exp050": {
+      "expected": "4 to the x-th"
+    },
+    "Exp051": {
+      "expected": "3 raised to the y plustegn 2 power"
+    },
+    "Exp052": {
+      "expected": "venstre parantes, 2 y, minustegn 3, højre parantes, raised to the 3 z, plustegn 8 power"
+    },
+    "Exp053": {
+      "expected": "p sub 1, to the anden"
+    },
+    "Exp054": {
+      "expected": "p sub 1, to the tredje"
+    },
+    "Exp055": {
+      "expected": "p sub 1, to the fjerde"
+    },
+    "Exp056": {
+      "expected": "p sub 1, to the tiende"
+    },
+    "Exp057": {
+      "expected": "p sub 1, raised to the x plustegn 1 power"
+    },
+    "Exp058": {
+      "expected": "p sub, x sub 1, to the anden"
+    },
+    "Exp059": {
+      "expected": "p sub, x sub 1, to the tredje"
+    },
+    "Exp060": {
+      "expected": "p sub, x sub 1, to the fjerde"
+    },
+    "Exp061": {
+      "expected": "p sub, x sub 1, to the tiende"
+    },
+    "Exp062": {
+      "expected": "p sub, x sub 1, raised to the y plustegn 1 power"
+    },
+    "Exp063": {
+      "expected": "3 raised to the exponent, 2 to the anden, end exponent"
+    },
+    "Exp064": {
+      "expected": "3 raised to the exponent, 2 x to the anden, end exponent"
+    },
+    "Exp065": {
+      "expected": "5 raised to the exponent, 2 to the tredje, end exponent"
+    },
+    "Exp066": {
+      "expected": "5 raised to the exponent, 2 x to the tredje, end exponent"
+    },
+    "Exp067": {
+      "expected": "3 raised to the exponent, 2 to the anden, plustegn 1, end exponent"
+    },
+    "Exp068": {
+      "expected": "3 raised to the exponent, 2 to the anden, end exponent, plustegn 1"
+    },
+    "Exp069": {
+      "expected": "2 raised to the exponent, x to the anden, plustegn 3 x to the tredje, end exponent"
+    },
+    "Exp070": {
+      "expected": "3 raised to the exponent, 3 to the fjerde, end exponent"
+    },
+    "Exp071": {
+      "expected": "3 raised to the exponent, 3 to the fjerde, plustegn 2, end exponent"
+    },
+    "Exp072": {
+      "expected": "3 raised to the exponent, 3 to the fjerde, end exponent, plustegn 2"
+    },
+    "Exp073": {
+      "expected": "2 raised to the exponent, x to the fjerde, end exponent"
+    },
+    "Exp074": {
+      "expected": "2 raised to the exponent, 10 raised to the x plustegn 3 power, end exponent"
+    },
+    "Exp075": {
+      "expected": "3 raised to the exponent, 3 to the tiende, end exponent"
+    },
+    "Exp076": {
+      "expected": "3 raised to the exponent, 3 to the tiende, plustegn 1, end exponent"
+    },
+    "Exp077": {
+      "expected": "3 raised to the exponent, 3 to the tiende, end exponent, plustegn 1"
+    },
+    "Exp078": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, to the anden, end exponent"
+    },
+    "Exp079": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, to the tiende, end exponent"
+    },
+    "Exp080": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, raised to the y plustegn 2 power, end exponent"
+    },
+    "Exp081": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, to the y-th, plustegn 2, end exponent"
+    },
+    "Exp082": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, to the y-th, end exponent, plustegn 2"
+    },
+    "Exp083": {
+      "expected": "e raised to the exponent, negative en halve x to the anden, end exponent"
+    },
+    "Exp084": {
+      "expected": "e raised to the exponent, negative en halve  , venstre parantes, the fraction with numerator x minustegn my, and denominator sigma, højre parantes, to the anden, end exponent"
+    },
+    "Exp085": {
+      "expected": "3 to the anden power"
+    },
+    "Exp086": {
+      "expected": "3 to the tredje power"
+    },
+    "Exp087": {
+      "expected": "3 to the zero power"
+    },
+    "Exp088": {
+      "expected": "3 to the første power"
+    },
+    "Exp089": {
+      "expected": "3 to the femte power"
+    },
+    "Exp090": {
+      "expected": "3 raised to the 5,0 power"
+    },
+    "Exp091": {
+      "expected": "4 to the ellevte power"
+    },
+    "Exp092": {
+      "expected": "3 to the negative 2 power"
+    },
+    "Exp093": {
+      "expected": "3 raised to the negative 2,0 power"
+    },
+    "Exp094": {
+      "expected": "4 to the x-th power"
+    },
+    "Exp095": {
+      "expected": "3 raised to the y plustegn 2 power"
+    },
+    "Exp096": {
+      "expected": "venstre parantes, 2 y, minustegn 3, højre parantes, raised to the 3 z, plustegn 8 power"
+    },
+    "Exp097": {
+      "expected": "p sub 1, to the anden power"
+    },
+    "Exp098": {
+      "expected": "p sub 1, to the tredje power"
+    },
+    "Exp099": {
+      "expected": "p sub 1, to the fjerde power"
+    },
+    "Exp100": {
+      "expected": "p sub 1, to the tiende power"
+    },
+    "Exp101": {
+      "expected": "p sub 1, raised to the x plustegn 1 power"
+    },
+    "Exp102": {
+      "expected": "p sub, x sub 1, to the anden power"
+    },
+    "Exp103": {
+      "expected": "p sub, x sub 1, to the tredje power"
+    },
+    "Exp104": {
+      "expected": "p sub, x sub 1, to the fjerde power"
+    },
+    "Exp105": {
+      "expected": "p sub, x sub 1, to the tiende power"
+    },
+    "Exp106": {
+      "expected": "p sub, x sub 1, raised to the y plustegn 1 power"
+    },
+    "Exp107": {
+      "expected": "3 raised to the exponent, 2 to the anden power, end exponent"
+    },
+    "Exp108": {
+      "expected": "3 raised to the exponent, 2 x to the anden power, end exponent"
+    },
+    "Exp109": {
+      "expected": "5 raised to the exponent, 2 to the tredje power, end exponent"
+    },
+    "Exp110": {
+      "expected": "5 raised to the exponent, 2 x to the tredje power, end exponent"
+    },
+    "Exp111": {
+      "expected": "3 raised to the exponent, 2 to the anden power, plustegn 1, end exponent"
+    },
+    "Exp112": {
+      "expected": "3 raised to the exponent, 2 to the anden power, end exponent, plustegn 1"
+    },
+    "Exp113": {
+      "expected": "2 raised to the exponent, x to the anden power, plustegn 3 x to the tredje power, end exponent"
+    },
+    "Exp114": {
+      "expected": "3 raised to the exponent, 3 to the fjerde power, end exponent"
+    },
+    "Exp115": {
+      "expected": "3 raised to the exponent, 3 to the fjerde power, plustegn 2, end exponent"
+    },
+    "Exp116": {
+      "expected": "3 raised to the exponent, 3 to the fjerde power, end exponent, plustegn 2"
+    },
+    "Exp117": {
+      "expected": "2 raised to the exponent, x to the fjerde power, end exponent"
+    },
+    "Exp118": {
+      "expected": "2 raised to the exponent, 10 raised to the x plustegn 3 power, end exponent"
+    },
+    "Exp119": {
+      "expected": "3 raised to the exponent, 3 to the tiende power, end exponent"
+    },
+    "Exp120": {
+      "expected": "3 raised to the exponent, 3 to the tiende power, plustegn 1, end exponent"
+    },
+    "Exp121": {
+      "expected": "3 raised to the exponent, 3 to the tiende power, end exponent, plustegn 1"
+    },
+    "Exp122": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, to the anden power, end exponent"
+    },
+    "Exp123": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, to the tiende power, end exponent"
+    },
+    "Exp124": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, raised to the y plustegn 2 power, end exponent"
+    },
+    "Exp125": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, to the y-th power, plustegn 2, end exponent"
+    },
+    "Exp126": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, to the y-th power, end exponent, plustegn 2"
+    },
+    "Exp127": {
+      "expected": "e raised to the exponent, negative en halve x to the anden power, end exponent"
+    },
+    "Exp128": {
+      "expected": "e raised to the exponent, negative en halve  , venstre parantes, the fraction with numerator x minustegn my, and denominator sigma, højre parantes, to the anden power, end exponent"
+    },
+    "Exp129": {
+      "expected": "3 raised to the power 2"
+    },
+    "Exp130": {
+      "expected": "3 raised to the power 3"
+    },
+    "Exp131": {
+      "expected": "3 raised to the power 1"
+    },
+    "Exp132b": {
+      "expected": "3 raised to the power 0"
+    },
+    "Exp133": {
+      "expected": "3 raised to the power 5"
+    },
+    "Exp134": {
+      "expected": "3 raised to the power 5,0"
+    },
+    "Exp135": {
+      "expected": "4 raised to the power 11"
+    },
+    "Exp136": {
+      "expected": "3 raised to the power negative 2"
+    },
+    "Exp137": {
+      "expected": "3 raised to the power negative 2,0"
+    },
+    "Exp138": {
+      "expected": "4 raised to the power x"
+    },
+    "Exp139": {
+      "expected": "3 raised to the power y plustegn 2"
+    },
+    "Exp140": {
+      "expected": "venstre parantes, 2 y, minustegn 3, højre parantes, raised to the power 3 z plustegn 8"
+    },
+    "Exp141": {
+      "expected": "p sub 1, raised to the power 2"
+    },
+    "Exp142": {
+      "expected": "p sub 1, raised to the power 3"
+    },
+    "Exp143": {
+      "expected": "p sub 1, raised to the power 4"
+    },
+    "Exp144": {
+      "expected": "p sub 1, raised to the power 10"
+    },
+    "Exp145": {
+      "expected": "p sub 1, raised to the power x plustegn 1"
+    },
+    "Exp146": {
+      "expected": "p sub, x sub 1, raised to the power 2"
+    },
+    "Exp147": {
+      "expected": "p sub, x sub 1, raised to the power 3"
+    },
+    "Exp148": {
+      "expected": "p sub, x sub 1, raised to the power 4"
+    },
+    "Exp149": {
+      "expected": "p sub, x sub 1, raised to the power 10"
+    },
+    "Exp150": {
+      "expected": "p sub, x sub 1, raised to the power y plustegn 1"
+    },
+    "Exp151": {
+      "expected": "3 raised to the exponent, 2 raised to the power 2, end exponent"
+    },
+    "Exp152": {
+      "expected": "3 raised to the exponent, 2 x raised to the power 2, end exponent"
+    },
+    "Exp153": {
+      "expected": "3 raised to the exponent, 2 raised to the power 2, end exponent"
+    },
+    "Exp154": {
+      "expected": "3 raised to the exponent, 2 x raised to the power 2, end exponent"
+    },
+    "Exp155": {
+      "expected": "5 raised to the exponent, 2 raised to the power 3, end exponent"
+    },
+    "Exp156": {
+      "expected": "5 raised to the exponent, 2 x raised to the power 3, end exponent"
+    },
+    "Exp157": {
+      "expected": "3 raised to the exponent, 2 raised to the power 2, plustegn 1, end exponent"
+    },
+    "Exp158": {
+      "expected": "3 raised to the exponent, 2 raised to the power 2, end exponent, plustegn 1"
+    },
+    "Exp159": {
+      "expected": "2 raised to the exponent, x raised to the power 2, plustegn 3 x raised to the power 3, end exponent"
+    },
+    "Exp160": {
+      "expected": "3 raised to the exponent, 3 raised to the power 4, end exponent"
+    },
+    "Exp161": {
+      "expected": "3 raised to the exponent, 3 raised to the power 4, plustegn 2, end exponent"
+    },
+    "Exp162": {
+      "expected": "3 raised to the exponent, 3 raised to the power 4, end exponent, plustegn 2"
+    },
+    "Exp163": {
+      "expected": "2 raised to the exponent, x raised to the power 4, end exponent"
+    },
+    "Exp164": {
+      "expected": "2 raised to the exponent, 10 raised to the power x plustegn 3, end exponent"
+    },
+    "Exp165": {
+      "expected": "3 raised to the exponent, 3 raised to the power 10, end exponent"
+    },
+    "Exp166": {
+      "expected": "3 raised to the exponent, 3 raised to the power 10, plustegn 1, end exponent"
+    },
+    "Exp167": {
+      "expected": "3 raised to the exponent, 3 raised to the power 10, end exponent, plustegn 1"
+    },
+    "Exp168": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, raised to the power 2, end exponent"
+    },
+    "Exp169": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, raised to the power 10, end exponent"
+    },
+    "Exp170": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, raised to the power y plustegn 2, end exponent"
+    },
+    "Exp171": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, raised to the power y, plustegn 2, end exponent"
+    },
+    "Exp172": {
+      "expected": "3 raised to the exponent, venstre parantes, x plustegn 1, højre parantes, raised to the power y, end exponent, plustegn 2"
+    },
+    "Exp173": {
+      "expected": "e raised to the exponent, negative en halve x raised to the power 2, end exponent"
+    },
+    "Exp174": {
+      "expected": "e raised to the exponent, negative en halve  , venstre parantes, the fraction with numerator x minustegn my, and denominator sigma, højre parantes, raised to the power 2, end exponent"
+    }
+  }
+}

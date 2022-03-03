@@ -1,0 +1,1003 @@
+{
+  "name": "DanishMathspeakNoble",
+  "locale": "da",
+  "factory": "speech",
+  "base": "input/mathspeak/noble_test.json",
+  "information": "Danish Mathspeak Steve Noble's samples.",
+  "domain": "mathspeak",
+  "active": "NobleSamplesDanish",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Sample_1_default": {
+      "expected": "negative 5 and en femtedel minus 6 and to tredjedele lig med"
+    },
+    "Sample_1_brief": {
+      "expected": "negative 5 and en femtedel minus 6 and to tredjedele lig med"
+    },
+    "Sample_1_sbrief": {
+      "expected": "negative 5 and en femtedel minus 6 and to tredjedele lig med"
+    },
+    "Sample_2_default": {
+      "expected": "negative 7 and tre fjerdedele minus venstre parantes negative 4 and syv ottendedele højre parantes lig med"
+    },
+    "Sample_2_brief": {
+      "expected": "negative 7 and tre fjerdedele minus venstre parantes negative 4 and syv ottendedele højre parantes lig med"
+    },
+    "Sample_2_sbrief": {
+      "expected": "negative 7 and tre fjerdedele minus venstre parantes negative 4 and syv ottendedele højre parantes lig med"
+    },
+    "Sample_3_default": {
+      "expected": "negative 24,15 minus venstre parantes 13,7 højre parantes lig med"
+    },
+    "Sample_3_brief": {
+      "expected": "negative 24,15 minus venstre parantes 13,7 højre parantes lig med"
+    },
+    "Sample_3_sbrief": {
+      "expected": "negative 24,15 minus venstre parantes 13,7 højre parantes lig med"
+    },
+    "Sample_4_default": {
+      "expected": "venstre parantes negative 4 højre parantes krydsprodukt 3 lig med negative 12"
+    },
+    "Sample_4_brief": {
+      "expected": "venstre parantes negative 4 højre parantes krydsprodukt 3 lig med negative 12"
+    },
+    "Sample_4_sbrief": {
+      "expected": "venstre parantes negative 4 højre parantes krydsprodukt 3 lig med negative 12"
+    },
+    "Sample_5_default": {
+      "expected": "negative 12 divided by 3 lig med negative 4"
+    },
+    "Sample_5_brief": {
+      "expected": "negative 12 divided by 3 lig med negative 4"
+    },
+    "Sample_5_sbrief": {
+      "expected": "negative 12 divided by 3 lig med negative 4"
+    },
+    "Sample_6_default": {
+      "expected": "negative 12 divided by venstre parantes negative 4 højre parantes lig med 3"
+    },
+    "Sample_6_brief": {
+      "expected": "negative 12 divided by venstre parantes negative 4 højre parantes lig med 3"
+    },
+    "Sample_6_sbrief": {
+      "expected": "negative 12 divided by venstre parantes negative 4 højre parantes lig med 3"
+    },
+    "Sample_7_default": {
+      "expected": "6 krydsprodukt 5"
+    },
+    "Sample_7_brief": {
+      "expected": "6 krydsprodukt 5"
+    },
+    "Sample_7_sbrief": {
+      "expected": "6 krydsprodukt 5"
+    },
+    "Sample_8_default": {
+      "expected": "6 krydsprodukt venstre parantes negative 5 højre parantes"
+    },
+    "Sample_8_brief": {
+      "expected": "6 krydsprodukt venstre parantes negative 5 højre parantes"
+    },
+    "Sample_8_sbrief": {
+      "expected": "6 krydsprodukt venstre parantes negative 5 højre parantes"
+    },
+    "Sample_9_default": {
+      "expected": "negative 6 krydsprodukt 5"
+    },
+    "Sample_9_brief": {
+      "expected": "negative 6 krydsprodukt 5"
+    },
+    "Sample_9_sbrief": {
+      "expected": "negative 6 krydsprodukt 5"
+    },
+    "Sample_10_default": {
+      "expected": "negative 6 krydsprodukt venstre parantes negative 5 højre parantes"
+    },
+    "Sample_10_brief": {
+      "expected": "negative 6 krydsprodukt venstre parantes negative 5 højre parantes"
+    },
+    "Sample_10_sbrief": {
+      "expected": "negative 6 krydsprodukt venstre parantes negative 5 højre parantes"
+    },
+    "Sample_11_default": {
+      "expected": "negative 8 krydsprodukt 7"
+    },
+    "Sample_11_brief": {
+      "expected": "negative 8 krydsprodukt 7"
+    },
+    "Sample_11_sbrief": {
+      "expected": "negative 8 krydsprodukt 7"
+    },
+    "Sample_12_default": {
+      "expected": "negative 8 krydsprodukt venstre parantes negative 7 højre parantes"
+    },
+    "Sample_12_brief": {
+      "expected": "negative 8 krydsprodukt venstre parantes negative 7 højre parantes"
+    },
+    "Sample_12_sbrief": {
+      "expected": "negative 8 krydsprodukt venstre parantes negative 7 højre parantes"
+    },
+    "Sample_13_default": {
+      "expected": "8 krydsprodukt venstre parantes negative 7 højre parantes"
+    },
+    "Sample_13_brief": {
+      "expected": "8 krydsprodukt venstre parantes negative 7 højre parantes"
+    },
+    "Sample_13_sbrief": {
+      "expected": "8 krydsprodukt venstre parantes negative 7 højre parantes"
+    },
+    "Sample_14_default": {
+      "expected": "8 krydsprodukt 7"
+    },
+    "Sample_14_brief": {
+      "expected": "8 krydsprodukt 7"
+    },
+    "Sample_14_sbrief": {
+      "expected": "8 krydsprodukt 7"
+    },
+    "Sample_15_default": {
+      "expected": "m vinkel 1 lig med 30 grader"
+    },
+    "Sample_15_brief": {
+      "expected": "m vinkel 1 lig med 30 grader"
+    },
+    "Sample_15_sbrief": {
+      "expected": "m vinkel 1 lig med 30 grader"
+    },
+    "Sample_16_default": {
+      "expected": "m vinkel 2 lig med 60 grader"
+    },
+    "Sample_16_brief": {
+      "expected": "m vinkel 2 lig med 60 grader"
+    },
+    "Sample_16_sbrief": {
+      "expected": "m vinkel 2 lig med 60 grader"
+    },
+    "Sample_17_default": {
+      "expected": "m vinkel 1 plustegn m vinkel 2 lig med 90 grader"
+    },
+    "Sample_17_brief": {
+      "expected": "m vinkel 1 plustegn m vinkel 2 lig med 90 grader"
+    },
+    "Sample_17_sbrief": {
+      "expected": "m vinkel 1 plustegn m vinkel 2 lig med 90 grader"
+    },
+    "Sample_18_default": {
+      "expected": "m vinkel stort M plustegn m vinkel stort N lig med 180 grader"
+    },
+    "Sample_18_brief": {
+      "expected": "m vinkel stort M plustegn m vinkel stort N lig med 180 grader"
+    },
+    "Sample_18_sbrief": {
+      "expected": "m vinkel stort M plustegn m vinkel stort N lig med 180 grader"
+    },
+    "Sample_19_default": {
+      "expected": "stort A lig med en halve b h"
+    },
+    "Sample_19_brief": {
+      "expected": "stort A lig med en halve b h"
+    },
+    "Sample_19_sbrief": {
+      "expected": "stort A lig med en halve b h"
+    },
+    "Sample_20_default": {
+      "expected": "Start Brøk area of triangle Over area of square Slut Brøk lig med Start Brøk 1 unit squared Over 16 units squared Slut Brøk"
+    },
+    "Sample_20_brief": {
+      "expected": "Start Brøk area of triangle Over area of square Slut Brøk lig med Start Brøk 1 unit squared Over 16 units squared Slut Brøk"
+    },
+    "Sample_20_sbrief": {
+      "expected": "Brøk area of triangle Over area of square SlutBrøk lig med Brøk 1 unit squared Over 16 units squared SlutBrøk"
+    },
+    "Sample_21_default": {
+      "expected": "0,6 squared"
+    },
+    "Sample_21_brief": {
+      "expected": "0,6 squared"
+    },
+    "Sample_21_sbrief": {
+      "expected": "0,6 squared"
+    },
+    "Sample_22_default": {
+      "expected": "1,5 squared"
+    },
+    "Sample_22_brief": {
+      "expected": "1,5 squared"
+    },
+    "Sample_22_sbrief": {
+      "expected": "1,5 squared"
+    },
+    "Sample_23_default": {
+      "expected": "4 venstre parantes 2 x plustegn 3 x højre parantes"
+    },
+    "Sample_23_brief": {
+      "expected": "4 venstre parantes 2 x plustegn 3 x højre parantes"
+    },
+    "Sample_23_sbrief": {
+      "expected": "4 venstre parantes 2 x plustegn 3 x højre parantes"
+    },
+    "Sample_24_default": {
+      "expected": "36 plustegn 4 y minus 1 y squared plustegn 5 y squared minus 2"
+    },
+    "Sample_24_brief": {
+      "expected": "36 plustegn 4 y minus 1 y squared plustegn 5 y squared minus 2"
+    },
+    "Sample_24_sbrief": {
+      "expected": "36 plustegn 4 y minus 1 y squared plustegn 5 y squared minus 2"
+    },
+    "Sample_25_default": {
+      "expected": "venstre parantes 5 plustegn 9 højre parantes minus 4 plustegn 3 lig med"
+    },
+    "Sample_25_brief": {
+      "expected": "venstre parantes 5 plustegn 9 højre parantes minus 4 plustegn 3 lig med"
+    },
+    "Sample_25_sbrief": {
+      "expected": "venstre parantes 5 plustegn 9 højre parantes minus 4 plustegn 3 lig med"
+    },
+    "Sample_26_default": {
+      "expected": "ModifyingAbove stort B stort C With venstre-højre-pil"
+    },
+    "Sample_26_brief": {
+      "expected": "ModAbove stort B stort C With venstre-højre-pil"
+    },
+    "Sample_26_sbrief": {
+      "expected": "ModAbove stort B stort C With venstre-højre-pil"
+    },
+    "Sample_27_default": {
+      "expected": "ModifyingAbove stort P stort Q With højrevendt pil"
+    },
+    "Sample_27_brief": {
+      "expected": "ModAbove stort P stort Q With højrevendt pil"
+    },
+    "Sample_27_sbrief": {
+      "expected": "ModAbove stort P stort Q With højrevendt pil"
+    },
+    "Sample_28_default": {
+      "expected": "ModifyingAbove stort G stort H With streg over"
+    },
+    "Sample_28_brief": {
+      "expected": "ModAbove stort G stort H With streg over"
+    },
+    "Sample_28_sbrief": {
+      "expected": "ModAbove stort G stort H With streg over"
+    },
+    "Sample_29_default": {
+      "expected": "ModifyingAbove stort W stort X With streg over tilnærmelsesvist lig med ModifyingAbove stort Y stort Z With streg over"
+    },
+    "Sample_29_brief": {
+      "expected": "ModAbove stort W stort X With streg over tilnærmelsesvist lig med ModAbove stort Y stort Z With streg over"
+    },
+    "Sample_29_sbrief": {
+      "expected": "ModAbove stort W stort X With streg over tilnærmelsesvist lig med ModAbove stort Y stort Z With streg over"
+    },
+    "Sample_30_default": {
+      "expected": "vinkel stort B stort E stort F"
+    },
+    "Sample_30_brief": {
+      "expected": "vinkel stort B stort E stort F"
+    },
+    "Sample_30_sbrief": {
+      "expected": "vinkel stort B stort E stort F"
+    },
+    "Sample_31_default": {
+      "expected": "vinkel stort B stort E stort D"
+    },
+    "Sample_31_brief": {
+      "expected": "vinkel stort B stort E stort D"
+    },
+    "Sample_31_sbrief": {
+      "expected": "vinkel stort B stort E stort D"
+    },
+    "Sample_32_default": {
+      "expected": "vinkel stort D stort E stort F"
+    },
+    "Sample_32_brief": {
+      "expected": "vinkel stort D stort E stort F"
+    },
+    "Sample_32_sbrief": {
+      "expected": "vinkel stort D stort E stort F"
+    },
+    "Sample_33_default": {
+      "expected": "x lig med Start Brøk negative b plus minus StartRod b squared minus 4 a c SlutRot Over 2 a Slut Brøk"
+    },
+    "Sample_33_brief": {
+      "expected": "x lig med Start Brøk negative b plus minus StartRod b squared minus 4 a c SlutRot Over 2 a Slut Brøk"
+    },
+    "Sample_33_sbrief": {
+      "expected": "x lig med Brøk negative b plus minus Rod b squared minus 4 a c SlutRot Over 2 a SlutBrøk"
+    },
+    "Sample_34_default": {
+      "expected": "y lig med x squared plustegn 8 x plustegn 16"
+    },
+    "Sample_34_brief": {
+      "expected": "y lig med x squared plustegn 8 x plustegn 16"
+    },
+    "Sample_34_sbrief": {
+      "expected": "y lig med x squared plustegn 8 x plustegn 16"
+    },
+    "Sample_35_default": {
+      "expected": "y lig med en tredjedel venstre parantes 3 Hævet x Grundlinje højre parantes"
+    },
+    "Sample_35_brief": {
+      "expected": "y lig med en tredjedel venstre parantes 3 Hævet x Basis højre parantes"
+    },
+    "Sample_35_sbrief": {
+      "expected": "y lig med en tredjedel venstre parantes 3 Hævet x Basis højre parantes"
+    },
+    "Sample_36_default": {
+      "expected": "y lig med 10 minus 2 x"
+    },
+    "Sample_36_brief": {
+      "expected": "y lig med 10 minus 2 x"
+    },
+    "Sample_36_sbrief": {
+      "expected": "y lig med 10 minus 2 x"
+    },
+    "Sample_37_default": {
+      "expected": "y lig med 2 x cubed plustegn 5"
+    },
+    "Sample_37_brief": {
+      "expected": "y lig med 2 x cubed plustegn 5"
+    },
+    "Sample_37_sbrief": {
+      "expected": "y lig med 2 x cubed plustegn 5"
+    },
+    "Sample_38_default": {
+      "expected": "y lig med venstre parantes x squared plustegn 1 højre parantes venstre parantes x squared plustegn 3 højre parantes"
+    },
+    "Sample_38_brief": {
+      "expected": "y lig med venstre parantes x squared plustegn 1 højre parantes venstre parantes x squared plustegn 3 højre parantes"
+    },
+    "Sample_38_sbrief": {
+      "expected": "y lig med venstre parantes x squared plustegn 1 højre parantes venstre parantes x squared plustegn 3 højre parantes"
+    },
+    "Sample_39_default": {
+      "expected": "y lig med 0,5 Hævet x"
+    },
+    "Sample_39_brief": {
+      "expected": "y lig med 0,5 Hævet x"
+    },
+    "Sample_39_sbrief": {
+      "expected": "y lig med 0,5 Hævet x"
+    },
+    "Sample_40_default": {
+      "expected": "y lig med 22 minus 2 x"
+    },
+    "Sample_40_brief": {
+      "expected": "y lig med 22 minus 2 x"
+    },
+    "Sample_40_sbrief": {
+      "expected": "y lig med 22 minus 2 x"
+    },
+    "Sample_41_default": {
+      "expected": "y lig med Start Brøk 3 Over x Slut Brøk"
+    },
+    "Sample_41_brief": {
+      "expected": "y lig med Start Brøk 3 Over x Slut Brøk"
+    },
+    "Sample_41_sbrief": {
+      "expected": "y lig med Brøk 3 Over x SlutBrøk"
+    },
+    "Sample_42_default": {
+      "expected": "y lig med venstre parantes x plustegn 4 højre parantes venstre parantes x plustegn 4 højre parantes"
+    },
+    "Sample_42_brief": {
+      "expected": "y lig med venstre parantes x plustegn 4 højre parantes venstre parantes x plustegn 4 højre parantes"
+    },
+    "Sample_42_sbrief": {
+      "expected": "y lig med venstre parantes x plustegn 4 højre parantes venstre parantes x plustegn 4 højre parantes"
+    },
+    "Sample_43_default": {
+      "expected": "y lig med venstre parantes 4 x minus 3 højre parantes venstre parantes x plustegn 1 højre parantes"
+    },
+    "Sample_43_brief": {
+      "expected": "y lig med venstre parantes 4 x minus 3 højre parantes venstre parantes x plustegn 1 højre parantes"
+    },
+    "Sample_43_sbrief": {
+      "expected": "y lig med venstre parantes 4 x minus 3 højre parantes venstre parantes x plustegn 1 højre parantes"
+    },
+    "Sample_44_default": {
+      "expected": "y lig med 20 x minus 4 x squared"
+    },
+    "Sample_44_brief": {
+      "expected": "y lig med 20 x minus 4 x squared"
+    },
+    "Sample_44_sbrief": {
+      "expected": "y lig med 20 x minus 4 x squared"
+    },
+    "Sample_45_default": {
+      "expected": "y lig med x squared"
+    },
+    "Sample_45_brief": {
+      "expected": "y lig med x squared"
+    },
+    "Sample_45_sbrief": {
+      "expected": "y lig med x squared"
+    },
+    "Sample_46_default": {
+      "expected": "y lig med 3 Hævet x minus 1"
+    },
+    "Sample_46_brief": {
+      "expected": "y lig med 3 Hævet x minus 1"
+    },
+    "Sample_46_sbrief": {
+      "expected": "y lig med 3 Hævet x minus 1"
+    },
+    "Sample_47_default": {
+      "expected": "y lig med 16 minus 2 venstre parantes x plustegn 3 højre parantes"
+    },
+    "Sample_47_brief": {
+      "expected": "y lig med 16 minus 2 venstre parantes x plustegn 3 højre parantes"
+    },
+    "Sample_47_sbrief": {
+      "expected": "y lig med 16 minus 2 venstre parantes x plustegn 3 højre parantes"
+    },
+    "Sample_48_default": {
+      "expected": "y lig med 4 x squared minus x minus 3"
+    },
+    "Sample_48_brief": {
+      "expected": "y lig med 4 x squared minus x minus 3"
+    },
+    "Sample_48_sbrief": {
+      "expected": "y lig med 4 x squared minus x minus 3"
+    },
+    "Sample_49_default": {
+      "expected": "y lig med x plustegn Start Brøk 1 Over x Slut Brøk"
+    },
+    "Sample_49_brief": {
+      "expected": "y lig med x plustegn Start Brøk 1 Over x Slut Brøk"
+    },
+    "Sample_49_sbrief": {
+      "expected": "y lig med x plustegn Brøk 1 Over x SlutBrøk"
+    },
+    "Sample_50_default": {
+      "expected": "y lig med 4 x venstre parantes 5 minus x højre parantes"
+    },
+    "Sample_50_brief": {
+      "expected": "y lig med 4 x venstre parantes 5 minus x højre parantes"
+    },
+    "Sample_50_sbrief": {
+      "expected": "y lig med 4 x venstre parantes 5 minus x højre parantes"
+    },
+    "Sample_51_default": {
+      "expected": "y lig med 2 venstre parantes x minus 3 højre parantes plustegn 6 venstre parantes 1 minus x højre parantes"
+    },
+    "Sample_51_brief": {
+      "expected": "y lig med 2 venstre parantes x minus 3 højre parantes plustegn 6 venstre parantes 1 minus x højre parantes"
+    },
+    "Sample_51_sbrief": {
+      "expected": "y lig med 2 venstre parantes x minus 3 højre parantes plustegn 6 venstre parantes 1 minus x højre parantes"
+    },
+    "Sample_52_default": {
+      "expected": "0,25 større end fem sekstendedele"
+    },
+    "Sample_52_brief": {
+      "expected": "0,25 større end fem sekstendedele"
+    },
+    "Sample_52_sbrief": {
+      "expected": "0,25 større end fem sekstendedele"
+    },
+    "Sample_53_default": {
+      "expected": "32 prik venstre parantes 5 prik 7 højre parantes"
+    },
+    "Sample_53_brief": {
+      "expected": "32 prik venstre parantes 5 prik 7 højre parantes"
+    },
+    "Sample_53_sbrief": {
+      "expected": "32 prik venstre parantes 5 prik 7 højre parantes"
+    },
+    "Sample_54_default": {
+      "expected": "venstre parantes en halve krydsprodukt en halve krydsprodukt pi krydsprodukt 2 højre parantes plustegn venstre parantes 2 krydsprodukt en halve krydsprodukt pi krydsprodukt 5 højre parantes"
+    },
+    "Sample_54_brief": {
+      "expected": "venstre parantes en halve krydsprodukt en halve krydsprodukt pi krydsprodukt 2 højre parantes plustegn venstre parantes 2 krydsprodukt en halve krydsprodukt pi krydsprodukt 5 højre parantes"
+    },
+    "Sample_54_sbrief": {
+      "expected": "venstre parantes en halve krydsprodukt en halve krydsprodukt pi krydsprodukt 2 højre parantes plustegn venstre parantes 2 krydsprodukt en halve krydsprodukt pi krydsprodukt 5 højre parantes"
+    },
+    "Sample_55_default": {
+      "expected": "limes inferior Undertekst n højrevendt pil uendelig stort E Sænket n Grundlinje lig med forening Undertekst n større end eller lig med 1 snit Undertekst k større end eller lig med n stort E Sænket k Grundlinje komma limes superior Undertekst n højrevendt pil uendelig stort E Sænket n Grundlinje lig med snit Undertekst n større end eller lig med 1 forening Undertekst k større end eller lig med n stort E Sænket k Grundlinje prik"
+    },
+    "Sample_55_brief": {
+      "expected": "limes inferior Undertekst n højrevendt pil uendelig stort E Sænket n Basis lig med forening Undertekst n større end eller lig med 1 snit Undertekst k større end eller lig med n stort E Sænket k Basis komma limes superior Undertekst n højrevendt pil uendelig stort E Sænket n Basis lig med snit Undertekst n større end eller lig med 1 forening Undertekst k større end eller lig med n stort E Sænket k Basis prik"
+    },
+    "Sample_55_sbrief": {
+      "expected": "limes inferior Undertekst n højrevendt pil uendelig stort E Sænket n Basis lig med forening Undertekst n større end eller lig med 1 snit Undertekst k større end eller lig med n stort E Sænket k Basis komma limes superior Undertekst n højrevendt pil uendelig stort E Sænket n Basis lig med snit Undertekst n større end eller lig med 1 forening Undertekst k større end eller lig med n stort E Sænket k Basis prik"
+    },
+    "Sample_56_default": {
+      "expected": "StartLayout 1. Row 1. Column venstre parantes I højre parantes 2. Column håndskrift stort S håndskrift element i håndskrift stort A håndskrift semikolon 2. Row 1. Column venstre parantes ii højre parantes 2. Column if stort E element i håndskrift stort A håndskrift then stort E overbar element i håndskrift stort A håndskrift semikolon 3. Row 1. Column venstre parantes iii højre parantes 2. Column if stort E 1 komma stort E 2 element i håndskrift stort A håndskrift then stort E 1 forening stort E 2 element i håndskrift stort A håndskrift prik EndLayout"
+    },
+    "Sample_56_brief": {
+      "expected": "StartLayout 1. Row 1. Column venstre parantes I højre parantes 2. Column håndskrift stort S håndskrift element i håndskrift stort A håndskrift semikolon 2. Row 1. Column venstre parantes ii højre parantes 2. Column if stort E element i håndskrift stort A håndskrift then stort E overbar element i håndskrift stort A håndskrift semikolon 3. Row 1. Column venstre parantes iii højre parantes 2. Column if stort E 1 komma stort E 2 element i håndskrift stort A håndskrift then stort E 1 forening stort E 2 element i håndskrift stort A håndskrift prik EndLayout"
+    },
+    "Sample_56_sbrief": {
+      "expected": "Layout 1. Row 1. Column venstre parantes I højre parantes 2. Column håndskrift stort S håndskrift element i håndskrift stort A håndskrift semikolon 2. Row 1. Column venstre parantes ii højre parantes 2. Column if stort E element i håndskrift stort A håndskrift then stort E overbar element i håndskrift stort A håndskrift semikolon 3. Row 1. Column venstre parantes iii højre parantes 2. Column if stort E 1 komma stort E 2 element i håndskrift stort A håndskrift then stort E 1 forening stort E 2 element i håndskrift stort A håndskrift prik EndLayout"
+    },
+    "Sample_57_default": {
+      "expected": "StartLayout 1. Row 1. Column Blank 2. Column Blank 3. Column venstre parantes normal stort A prik 1 højre parantes stort I f stort A element i håndskrift stort F håndskrift t h e n 0 mindre end eller lig med stort P venstre tuborg parantes stort A højre tuborg parantes mindre end eller lig med 1 prik 4. Column venstre parantes 1 højre parantes 2. Row 1. Column Blank 2. Column Blank 3. Column venstre parantes normal stort A prik 2 højre parantes stort P venstre tuborg parantes håndskrift stort S håndskrift højre tuborg parantes lig med 1 prik 4. Column venstre parantes 2 højre parantes 3. Row 1. Column Blank 2. Column Blank 3. Column venstre parantes normal stort A prik 3 højre parantes stort I f venstre tuborg parantes stort E Sænket n Grundlinje komma n større end eller lig med 1 højre tuborg parantes element i håndskrift stort F håndskrift is a sequence of disjoint 4. Column venstre parantes 3 højre parantes EndLayout"
+    },
+    "Sample_57_brief": {
+      "expected": "StartLayout 1. Row 1. Column Blank 2. Column Blank 3. Column venstre parantes normal stort A prik 1 højre parantes stort I f stort A element i håndskrift stort F håndskrift t h e n 0 mindre end eller lig med stort P venstre tuborg parantes stort A højre tuborg parantes mindre end eller lig med 1 prik 4. Column venstre parantes 1 højre parantes 2. Row 1. Column Blank 2. Column Blank 3. Column venstre parantes normal stort A prik 2 højre parantes stort P venstre tuborg parantes håndskrift stort S håndskrift højre tuborg parantes lig med 1 prik 4. Column venstre parantes 2 højre parantes 3. Row 1. Column Blank 2. Column Blank 3. Column venstre parantes normal stort A prik 3 højre parantes stort I f venstre tuborg parantes stort E Sænket n Basis komma n større end eller lig med 1 højre tuborg parantes element i håndskrift stort F håndskrift is a sequence of disjoint 4. Column venstre parantes 3 højre parantes EndLayout"
+    },
+    "Sample_57_sbrief": {
+      "expected": "Layout 1. Row 1. Column Blank 2. Column Blank 3. Column venstre parantes normal stort A prik 1 højre parantes stort I f stort A element i håndskrift stort F håndskrift t h e n 0 mindre end eller lig med stort P venstre tuborg parantes stort A højre tuborg parantes mindre end eller lig med 1 prik 4. Column venstre parantes 1 højre parantes 2. Row 1. Column Blank 2. Column Blank 3. Column venstre parantes normal stort A prik 2 højre parantes stort P venstre tuborg parantes håndskrift stort S håndskrift højre tuborg parantes lig med 1 prik 4. Column venstre parantes 2 højre parantes 3. Row 1. Column Blank 2. Column Blank 3. Column venstre parantes normal stort A prik 3 højre parantes stort I f venstre tuborg parantes stort E Sænket n Basis komma n større end eller lig med 1 højre tuborg parantes element i håndskrift stort F håndskrift is a sequence of disjoint 4. Column venstre parantes 3 højre parantes EndLayout"
+    },
+    "Sample_58_default": {
+      "expected": "stort P venstre tuborg parantes stort B Sænket j Grundlinje lodret linie stort A højre tuborg parantes lig med Start Brøk stort P venstre tuborg parantes stort B Sænket j Grundlinje højre tuborg parantes stort P venstre tuborg parantes stort A lodret linie stort B Sænket j Grundlinje højre tuborg parantes Over sum Undertekst j mærke element i stort J stort P venstre tuborg parantes stort B Sænket j mærke Grundlinje højre tuborg parantes stort P venstre tuborg parantes stort A lodret linie stort B Sænket j mærke Grundlinje højre tuborg parantes Slut Brøk prik"
+    },
+    "Sample_58_brief": {
+      "expected": "stort P venstre tuborg parantes stort B Sænket j Basis lodret linie stort A højre tuborg parantes lig med Start Brøk stort P venstre tuborg parantes stort B Sænket j Basis højre tuborg parantes stort P venstre tuborg parantes stort A lodret linie stort B Sænket j Basis højre tuborg parantes Over sum Undertekst j mærke element i stort J stort P venstre tuborg parantes stort B Sænket j mærke Basis højre tuborg parantes stort P venstre tuborg parantes stort A lodret linie stort B Sænket j mærke Basis højre tuborg parantes Slut Brøk prik"
+    },
+    "Sample_58_sbrief": {
+      "expected": "stort P venstre tuborg parantes stort B Sænket j Basis lodret linie stort A højre tuborg parantes lig med Brøk stort P venstre tuborg parantes stort B Sænket j Basis højre tuborg parantes stort P venstre tuborg parantes stort A lodret linie stort B Sænket j Basis højre tuborg parantes Over sum Undertekst j mærke element i stort J stort P venstre tuborg parantes stort B Sænket j mærke Basis højre tuborg parantes stort P venstre tuborg parantes stort A lodret linie stort B Sænket j mærke Basis højre tuborg parantes SlutBrøk prik"
+    },
+    "Sample_59_default": {
+      "expected": "my 1 venstre parantes stort B højre parantes lig med integral Undertekst stort B f venstre parantes x højre parantes d my 2 venstre parantes x højre parantes"
+    },
+    "Sample_59_brief": {
+      "expected": "my 1 venstre parantes stort B højre parantes lig med integral Undertekst stort B f venstre parantes x højre parantes d my 2 venstre parantes x højre parantes"
+    },
+    "Sample_59_sbrief": {
+      "expected": "my 1 venstre parantes stort B højre parantes lig med integral Undertekst stort B f venstre parantes x højre parantes d my 2 venstre parantes x højre parantes"
+    },
+    "Sample_60_default": {
+      "expected": "grænseværdi Undertekst n højrevendt pil uendelig stort E venstre tuborg parantes StartAbsoluteValue stort X Sænket n Grundlinje minus stort X EndAbsoluteValue højre tuborg parantes lig med stort E venstre tuborg parantes grænseværdi Undertekst n højrevendt pil uendelig StartAbsoluteValue stort X Sænket n Grundlinje minus stort X EndAbsoluteValue højre tuborg parantes lig med 0 prik"
+    },
+    "Sample_60_brief": {
+      "expected": "grænseværdi Undertekst n højrevendt pil uendelig stort E venstre tuborg parantes StartAbsoluteValue stort X Sænket n Basis minus stort X EndAbsoluteValue højre tuborg parantes lig med stort E venstre tuborg parantes grænseværdi Undertekst n højrevendt pil uendelig StartAbsoluteValue stort X Sænket n Basis minus stort X EndAbsoluteValue højre tuborg parantes lig med 0 prik"
+    },
+    "Sample_60_sbrief": {
+      "expected": "grænseværdi Undertekst n højrevendt pil uendelig stort E venstre tuborg parantes AbsoluteValue stort X Sænket n Basis minus stort X EndAbsoluteValue højre tuborg parantes lig med stort E venstre tuborg parantes grænseværdi Undertekst n højrevendt pil uendelig AbsoluteValue stort X Sænket n Basis minus stort X EndAbsoluteValue højre tuborg parantes lig med 0 prik"
+    },
+    "Sample_61_default": {
+      "expected": "StartLayout 1. Row 1. Column stort P Sænket my komma sigma Grundlinje venstre tuborg parantes stort Y større end eller lig med l Sænket beta Grundlinje venstre parantes stort Y overbar Sænket n Grundlinje komma stort S Sænket n Grundlinje højre parantes højre tuborg parantes lig med stort P Sænket my komma sigma Grundlinje venstre tuborg parantes venstre parantes stort Y minus stort Y overbar Sænket n Grundlinje højre parantes divided by venstre parantes stort S prik venstre parantes 1 plustegn Start Brøk 1 Over n Slut Brøk højre parantes Hævet 1 divided by 2 Grundlinje højre parantes større end eller lig med minus t Sænket beta Grundlinje kantet venstreparentes n minus 1 kantet højreparentes højre tuborg parantes lig med beta komma 2. Row 1. Column Blank 2. Column venstre parantes 1 højre parantes EndLayout"
+    },
+    "Sample_61_brief": {
+      "expected": "StartLayout 1. Row 1. Column stort P Sænket my komma sigma Basis venstre tuborg parantes stort Y større end eller lig med l Sænket beta Basis venstre parantes stort Y overbar Sænket n Basis komma stort S Sænket n Basis højre parantes højre tuborg parantes lig med stort P Sænket my komma sigma Basis venstre tuborg parantes venstre parantes stort Y minus stort Y overbar Sænket n Basis højre parantes divided by venstre parantes stort S prik venstre parantes 1 plustegn Start Brøk 1 Over n Slut Brøk højre parantes Hævet 1 divided by 2 Basis højre parantes større end eller lig med minus t Sænket beta Basis kantet venstreparentes n minus 1 kantet højreparentes højre tuborg parantes lig med beta komma 2. Row 1. Column Blank 2. Column venstre parantes 1 højre parantes EndLayout"
+    },
+    "Sample_61_sbrief": {
+      "expected": "Layout 1. Row 1. Column stort P Sænket my komma sigma Basis venstre tuborg parantes stort Y større end eller lig med l Sænket beta Basis venstre parantes stort Y overbar Sænket n Basis komma stort S Sænket n Basis højre parantes højre tuborg parantes lig med stort P Sænket my komma sigma Basis venstre tuborg parantes venstre parantes stort Y minus stort Y overbar Sænket n Basis højre parantes divided by venstre parantes stort S prik venstre parantes 1 plustegn Brøk 1 Over n SlutBrøk højre parantes Hævet 1 divided by 2 Basis højre parantes større end eller lig med minus t Sænket beta Basis kantet venstreparentes n minus 1 kantet højreparentes højre tuborg parantes lig med beta komma 2. Row 1. Column Blank 2. Column venstre parantes 1 højre parantes EndLayout"
+    },
+    "Sample_62_default": {
+      "expected": "stort L lig med Start 5 By 6 Matrix 1. Row 1. Column 1 2. Column negative 1 3. Column Blank 4. Column Blank 5. Column Blank 6. Column Blank 2. Row 1. Column Blank 2. Column 1 3. Column negative 1 4. Column Blank 5. Column 0 6. Column Blank 3. Row 1. Column Blank 2. Column Blank 3. Column Blank 4. Column Blank 5. Column Blank 6. Column Blank 4. Row 1. Column Blank 2. Column 0 3. Column Blank 4. Column Blank 5. Column Blank 6. Column Blank 5. Row 1. Column Blank 2. Column Blank 3. Column Blank 4. Column Blank 5. Column 1 6. Column negative 1 EndMatrix prik"
+    },
+    "Sample_62_brief": {
+      "expected": "stort L lig med Start 5 By 6 Matrix 1. Row 1. Column 1 2. Column negative 1 3. Column Blank 4. Column Blank 5. Column Blank 6. Column Blank 2. Row 1. Column Blank 2. Column 1 3. Column negative 1 4. Column Blank 5. Column 0 6. Column Blank 3. Row 1. Column Blank 2. Column Blank 3. Column Blank 4. Column Blank 5. Column Blank 6. Column Blank 4. Row 1. Column Blank 2. Column 0 3. Column Blank 4. Column Blank 5. Column Blank 6. Column Blank 5. Row 1. Column Blank 2. Column Blank 3. Column Blank 4. Column Blank 5. Column 1 6. Column negative 1 EndMatrix prik"
+    },
+    "Sample_62_sbrief": {
+      "expected": "stort L lig med 5 By 6 Matrix 1. Row 1. Column 1 2. Column negative 1 3. Column Blank 4. Column Blank 5. Column Blank 6. Column Blank 2. Row 1. Column Blank 2. Column 1 3. Column negative 1 4. Column Blank 5. Column 0 6. Column Blank 3. Row 1. Column Blank 2. Column Blank 3. Column Blank 4. Column Blank 5. Column Blank 6. Column Blank 4. Row 1. Column Blank 2. Column 0 3. Column Blank 4. Column Blank 5. Column Blank 6. Column Blank 5. Row 1. Column Blank 2. Column Blank 3. Column Blank 4. Column Blank 5. Column 1 6. Column negative 1 EndMatrix prik"
+    },
+    "Sample_63_default": {
+      "expected": "StartRod n SlutRot kantet venstreparentes stort Y overbar Sænket n Grundlinje minus venstre parantes my plustegn z Sænket beta Grundlinje sigma højre parantes kantet højreparentes divided by stort S Sænket n Grundlinje tilde Start Brøk stort U plustegn StartRod n SlutRot z Sænket 1 minus beta Grundlinje Over venstre parantes chi squared kantet venstreparentes n minus 1 kantet højreparentes divided by venstre parantes n minus 1 højre parantes højre parantes Hævet 1 divided by 2 Grundlinje Slut Brøk tilde t kantet venstreparentes n minus 1 semikolon StartRod n SlutRot z Sænket 1 minus beta Grundlinje kantet højreparentes komma"
+    },
+    "Sample_63_brief": {
+      "expected": "StartRod n SlutRot kantet venstreparentes stort Y overbar Sænket n Basis minus venstre parantes my plustegn z Sænket beta Basis sigma højre parantes kantet højreparentes divided by stort S Sænket n Basis tilde Start Brøk stort U plustegn StartRod n SlutRot z Sænket 1 minus beta Basis Over venstre parantes chi squared kantet venstreparentes n minus 1 kantet højreparentes divided by venstre parantes n minus 1 højre parantes højre parantes Hævet 1 divided by 2 Basis Slut Brøk tilde t kantet venstreparentes n minus 1 semikolon StartRod n SlutRot z Sænket 1 minus beta Basis kantet højreparentes komma"
+    },
+    "Sample_63_sbrief": {
+      "expected": "Rod n SlutRot kantet venstreparentes stort Y overbar Sænket n Basis minus venstre parantes my plustegn z Sænket beta Basis sigma højre parantes kantet højreparentes divided by stort S Sænket n Basis tilde Brøk stort U plustegn Rod n SlutRot z Sænket 1 minus beta Basis Over venstre parantes chi squared kantet venstreparentes n minus 1 kantet højreparentes divided by venstre parantes n minus 1 højre parantes højre parantes Hævet 1 divided by 2 Basis SlutBrøk tilde t kantet venstreparentes n minus 1 semikolon Rod n SlutRot z Sænket 1 minus beta Basis kantet højreparentes komma"
+    },
+    "Sample_64_default": {
+      "expected": "StartLayout 1. Row 1. Column gamma 2. Column lig med stort P venstre tuborg parantes stort E Sænket p komma q Grundlinje delmængde af venstre parantes stort X Sænket venstre parantes r højre parantes Grundlinje komma stort X Sænket venstre parantes s højre parantes Grundlinje højre tuborg parantes 2. Row 1. Column Blank 2. Column lig med Start Brøk n factorial Over venstre parantes r minus 1 højre parantes factorial Slut Brøk sum Undertekst j lig med 0 Overtekst s minus r minus 1 venstre parantes negative 1 højre parantes Hævet j Grundlinje Start Brøk p Hævet r plustegn j Grundlinje Over venstre parantes n minus r minus j højre parantes factorial j factorial Slut Brøk stort I Sænket 1 minus q Grundlinje venstre parantes n minus s plustegn 1 komma s minus r minus j højre parantes prik EndLayout"
+    },
+    "Sample_64_brief": {
+      "expected": "StartLayout 1. Row 1. Column gamma 2. Column lig med stort P venstre tuborg parantes stort E Sænket p komma q Basis delmængde af venstre parantes stort X Sænket venstre parantes r højre parantes Basis komma stort X Sænket venstre parantes s højre parantes Basis højre tuborg parantes 2. Row 1. Column Blank 2. Column lig med Start Brøk n factorial Over venstre parantes r minus 1 højre parantes factorial Slut Brøk sum Undertekst j lig med 0 Overtekst s minus r minus 1 venstre parantes negative 1 højre parantes Hævet j Basis Start Brøk p Hævet r plustegn j Basis Over venstre parantes n minus r minus j højre parantes factorial j factorial Slut Brøk stort I Sænket 1 minus q Basis venstre parantes n minus s plustegn 1 komma s minus r minus j højre parantes prik EndLayout"
+    },
+    "Sample_64_sbrief": {
+      "expected": "Layout 1. Row 1. Column gamma 2. Column lig med stort P venstre tuborg parantes stort E Sænket p komma q Basis delmængde af venstre parantes stort X Sænket venstre parantes r højre parantes Basis komma stort X Sænket venstre parantes s højre parantes Basis højre tuborg parantes 2. Row 1. Column Blank 2. Column lig med Brøk n factorial Over venstre parantes r minus 1 højre parantes factorial SlutBrøk sum Undertekst j lig med 0 Overtekst s minus r minus 1 venstre parantes negative 1 højre parantes Hævet j Basis Brøk p Hævet r plustegn j Basis Over venstre parantes n minus r minus j højre parantes factorial j factorial SlutBrøk stort I Sænket 1 minus q Basis venstre parantes n minus s plustegn 1 komma s minus r minus j højre parantes prik EndLayout"
+    },
+    "Sample_65_default": {
+      "expected": "stort S Sænket I Grundlinje StartBinomialOrMatrix t Choose x EndBinomialOrMatrix lig med Start 2 By 2 Matrix 1. Row 1. Column 1 divided by m 2. Column 0 2. Row 1. Column a Sænket I Grundlinje 2. Column r Sænket I Grundlinje EndMatrix StartBinomialOrMatrix t Choose x EndBinomialOrMatrix plustegn StartBinomialOrMatrix venstre parantes I minus 1 højre parantes divided by m Choose b Sænket I Grundlinje EndBinomialOrMatrix komma"
+    },
+    "Sample_65_brief": {
+      "expected": "stort S Sænket I Basis StartBinomialOrMatrix t Choose x EndBinomialOrMatrix lig med Start 2 By 2 Matrix 1. Row 1. Column 1 divided by m 2. Column 0 2. Row 1. Column a Sænket I Basis 2. Column r Sænket I Basis EndMatrix StartBinomialOrMatrix t Choose x EndBinomialOrMatrix plustegn StartBinomialOrMatrix venstre parantes I minus 1 højre parantes divided by m Choose b Sænket I Basis EndBinomialOrMatrix komma"
+    },
+    "Sample_65_sbrief": {
+      "expected": "stort S Sænket I Basis BinomialOrMatrix t Choose x EndBinomialOrMatrix lig med 2 By 2 Matrix 1. Row 1. Column 1 divided by m 2. Column 0 2. Row 1. Column a Sænket I Basis 2. Column r Sænket I Basis EndMatrix BinomialOrMatrix t Choose x EndBinomialOrMatrix plustegn BinomialOrMatrix venstre parantes I minus 1 højre parantes divided by m Choose b Sænket I Basis EndBinomialOrMatrix komma"
+    },
+    "Sample_66_default": {
+      "expected": "c 1 h Hævet 4 minus 2 s Grundlinje mindre end eller lig med Start Brøk 1 Over 2 stort T Slut Brøk integral Subscript negative stort T Superscript stort T Baseline venstre parantes f venstre parantes t plustegn h højre parantes minus f venstre parantes t højre parantes højre parantes squared normal d t mindre end eller lig med c 2 h Hævet 4 minus 2 s"
+    },
+    "Sample_66_brief": {
+      "expected": "c 1 h Hævet 4 minus 2 s Basis mindre end eller lig med Start Brøk 1 Over 2 stort T Slut Brøk integral Sub negative stort T Sup stort T Base venstre parantes f venstre parantes t plustegn h højre parantes minus f venstre parantes t højre parantes højre parantes squared normal d t mindre end eller lig med c 2 h Hævet 4 minus 2 s"
+    },
+    "Sample_66_sbrief": {
+      "expected": "c 1 h Hævet 4 minus 2 s Basis mindre end eller lig med Brøk 1 Over 2 stort T SlutBrøk integral Sub negative stort T Sup stort T Base venstre parantes f venstre parantes t plustegn h højre parantes minus f venstre parantes t højre parantes højre parantes squared normal d t mindre end eller lig med c 2 h Hævet 4 minus 2 s"
+    },
+    "Sample_67_default": {
+      "expected": "stort C venstre parantes 0 højre parantes minus stort C venstre parantes h højre parantes asymptotisk lig med c h Hævet 4 minus 2 s"
+    },
+    "Sample_67_brief": {
+      "expected": "stort C venstre parantes 0 højre parantes minus stort C venstre parantes h højre parantes asymptotisk lig med c h Hævet 4 minus 2 s"
+    },
+    "Sample_67_sbrief": {
+      "expected": "stort C venstre parantes 0 højre parantes minus stort C venstre parantes h højre parantes asymptotisk lig med c h Hævet 4 minus 2 s"
+    },
+    "Sample_68_default": {
+      "expected": "stort S venstre parantes omega højre parantes lig med grænseværdi Undertekst stort T højrevendt pil uendelig Start Brøk 1 Over 2 stort T Slut Brøk StartAbsoluteValue integral Subscript negative stort T Superscript stort T Baseline komma f komma venstre parantes komma t komma højre parantes komma normal e Hævet kursiv I t omega Grundlinje komma normal d komma t EndAbsoluteValue squared prik"
+    },
+    "Sample_68_brief": {
+      "expected": "stort S venstre parantes omega højre parantes lig med grænseværdi Undertekst stort T højrevendt pil uendelig Start Brøk 1 Over 2 stort T Slut Brøk StartAbsoluteValue integral Sub negative stort T Sup stort T Base komma f komma venstre parantes komma t komma højre parantes komma normal e Hævet kursiv I t omega Basis komma normal d komma t EndAbsoluteValue squared prik"
+    },
+    "Sample_68_sbrief": {
+      "expected": "stort S venstre parantes omega højre parantes lig med grænseværdi Undertekst stort T højrevendt pil uendelig Brøk 1 Over 2 stort T SlutBrøk AbsoluteValue integral Sub negative stort T Sup stort T Base komma f komma venstre parantes komma t komma højre parantes komma normal e Hævet kursiv I t omega Basis komma normal d komma t EndAbsoluteValue squared prik"
+    },
+    "Sample_69_default": {
+      "expected": "integral Subscript 0 Superscript 1 Baseline integral Subscript 0 Superscript 1 Baseline kantet venstreparentes StartAbsoluteValue f venstre parantes t højre parantes minus f venstre parantes u højre parantes EndAbsoluteValue squared plustegn StartAbsoluteValue t minus u EndAbsoluteValue squared kantet højreparentes Hævet negative s divided by 2 Grundlinje normal d t normal d u mindre end uendelig"
+    },
+    "Sample_69_brief": {
+      "expected": "integral Sub 0 Sup 1 Base integral Sub 0 Sup 1 Base kantet venstreparentes StartAbsoluteValue f venstre parantes t højre parantes minus f venstre parantes u højre parantes EndAbsoluteValue squared plustegn StartAbsoluteValue t minus u EndAbsoluteValue squared kantet højreparentes Hævet negative s divided by 2 Basis normal d t normal d u mindre end uendelig"
+    },
+    "Sample_69_sbrief": {
+      "expected": "integral Sub 0 Sup 1 Base integral Sub 0 Sup 1 Base kantet venstreparentes AbsoluteValue f venstre parantes t højre parantes minus f venstre parantes u højre parantes EndAbsoluteValue squared plustegn AbsoluteValue t minus u EndAbsoluteValue squared kantet højreparentes Hævet negative s divided by 2 Basis normal d t normal d u mindre end uendelig"
+    },
+    "Sample_70_default": {
+      "expected": "sans serif stort E venstre parantes sum Undertekst stort I element i stort E Sænket k plustegn 1 Grundlinje StartAbsoluteValue stort I EndAbsoluteValue Hævet s Grundlinje højre parantes lig med sans serif stort E venstre parantes sum Undertekst stort I element i stort E Sænket k Grundlinje StartAbsoluteValue stort I EndAbsoluteValue Hævet s Grundlinje højre parantes sans serif stort E venstre parantes stort R 1 Hævet s Grundlinje plustegn stort R 2 Hævet s Grundlinje højre parantes prik"
+    },
+    "Sample_70_brief": {
+      "expected": "sans serif stort E venstre parantes sum Undertekst stort I element i stort E Sænket k plustegn 1 Basis StartAbsoluteValue stort I EndAbsoluteValue Hævet s Basis højre parantes lig med sans serif stort E venstre parantes sum Undertekst stort I element i stort E Sænket k Basis StartAbsoluteValue stort I EndAbsoluteValue Hævet s Basis højre parantes sans serif stort E venstre parantes stort R 1 Hævet s Basis plustegn stort R 2 Hævet s Basis højre parantes prik"
+    },
+    "Sample_70_sbrief": {
+      "expected": "sans serif stort E venstre parantes sum Undertekst stort I element i stort E Sænket k plustegn 1 Basis AbsoluteValue stort I EndAbsoluteValue Hævet s Basis højre parantes lig med sans serif stort E venstre parantes sum Undertekst stort I element i stort E Sænket k Basis AbsoluteValue stort I EndAbsoluteValue Hævet s Basis højre parantes sans serif stort E venstre parantes stort R 1 Hævet s Basis plustegn stort R 2 Hævet s Basis højre parantes prik"
+    },
+    "Sample_71_default": {
+      "expected": "venstre parantes x 1 komma y 1 højre parantes"
+    },
+    "Sample_71_brief": {
+      "expected": "venstre parantes x 1 komma y 1 højre parantes"
+    },
+    "Sample_71_sbrief": {
+      "expected": "venstre parantes x 1 komma y 1 højre parantes"
+    },
+    "Sample_72_default": {
+      "expected": "venstre parantes x 2 komma y 2 højre parantes"
+    },
+    "Sample_72_brief": {
+      "expected": "venstre parantes x 2 komma y 2 højre parantes"
+    },
+    "Sample_72_sbrief": {
+      "expected": "venstre parantes x 2 komma y 2 højre parantes"
+    },
+    "Sample_73_default": {
+      "expected": "d lig med StartRod venstre parantes x 2 minus x 1 højre parantes squared plustegn venstre parantes y 2 minus y 1 højre parantes squared SlutRot"
+    },
+    "Sample_73_brief": {
+      "expected": "d lig med StartRod venstre parantes x 2 minus x 1 højre parantes squared plustegn venstre parantes y 2 minus y 1 højre parantes squared SlutRot"
+    },
+    "Sample_73_sbrief": {
+      "expected": "d lig med Rod venstre parantes x 2 minus x 1 højre parantes squared plustegn venstre parantes y 2 minus y 1 højre parantes squared SlutRot"
+    },
+    "Sample_74_default": {
+      "expected": "dobbeltstreget stort R dobbeltstreget"
+    },
+    "Sample_74_brief": {
+      "expected": "dobbeltstreget stort R dobbeltstreget"
+    },
+    "Sample_74_sbrief": {
+      "expected": "dobbeltstreget stort R dobbeltstreget"
+    },
+    "Sample_75_default": {
+      "expected": "dobbeltstreget stort R dobbeltstreget lig med venstre parantes negative uendelig komma uendelig højre parantes"
+    },
+    "Sample_75_brief": {
+      "expected": "dobbeltstreget stort R dobbeltstreget lig med venstre parantes negative uendelig komma uendelig højre parantes"
+    },
+    "Sample_75_sbrief": {
+      "expected": "dobbeltstreget stort R dobbeltstreget lig med venstre parantes negative uendelig komma uendelig højre parantes"
+    },
+    "Sample_76_default": {
+      "expected": "StartSet 1 komma 2 komma 3 EndSet"
+    },
+    "Sample_76_brief": {
+      "expected": "StartSet 1 komma 2 komma 3 EndSet"
+    },
+    "Sample_76_sbrief": {
+      "expected": "Set 1 komma 2 komma 3 EndSet"
+    },
+    "Sample_77_default": {
+      "expected": "1 element i stort S"
+    },
+    "Sample_77_brief": {
+      "expected": "1 element i stort S"
+    },
+    "Sample_77_sbrief": {
+      "expected": "1 element i stort S"
+    },
+    "Sample_78_default": {
+      "expected": "3 element i stort S"
+    },
+    "Sample_78_brief": {
+      "expected": "3 element i stort S"
+    },
+    "Sample_78_sbrief": {
+      "expected": "3 element i stort S"
+    },
+    "Sample_79_default": {
+      "expected": "4 ikke element i stort S"
+    },
+    "Sample_79_brief": {
+      "expected": "4 ikke element i stort S"
+    },
+    "Sample_79_sbrief": {
+      "expected": "4 ikke element i stort S"
+    },
+    "Sample_80_default": {
+      "expected": "a lig med StartRod 3 x minus 1 SlutRot plustegn venstre parantes 1 plustegn x højre parantes squared"
+    },
+    "Sample_80_brief": {
+      "expected": "a lig med StartRod 3 x minus 1 SlutRot plustegn venstre parantes 1 plustegn x højre parantes squared"
+    },
+    "Sample_80_sbrief": {
+      "expected": "a lig med Rod 3 x minus 1 SlutRot plustegn venstre parantes 1 plustegn x højre parantes squared"
+    },
+    "Sample_81_default": {
+      "expected": "a lig med Start Brøk venstre parantes b plustegn c højre parantes squared Over d Slut Brøk plustegn Start Brøk venstre parantes e plustegn f højre parantes squared Over g Slut Brøk"
+    },
+    "Sample_81_brief": {
+      "expected": "a lig med Start Brøk venstre parantes b plustegn c højre parantes squared Over d Slut Brøk plustegn Start Brøk venstre parantes e plustegn f højre parantes squared Over g Slut Brøk"
+    },
+    "Sample_81_sbrief": {
+      "expected": "a lig med Brøk venstre parantes b plustegn c højre parantes squared Over d SlutBrøk plustegn Brøk venstre parantes e plustegn f højre parantes squared Over g SlutBrøk"
+    },
+    "Sample_82_default": {
+      "expected": "x lig med kantet venstreparentes venstre parantes a plustegn b højre parantes squared venstre parantes c minus b højre parantes squared kantet højreparentes plustegn kantet venstreparentes venstre parantes d plustegn e højre parantes squared venstre parantes f minus e højre parantes squared kantet højreparentes"
+    },
+    "Sample_82_brief": {
+      "expected": "x lig med kantet venstreparentes venstre parantes a plustegn b højre parantes squared venstre parantes c minus b højre parantes squared kantet højreparentes plustegn kantet venstreparentes venstre parantes d plustegn e højre parantes squared venstre parantes f minus e højre parantes squared kantet højreparentes"
+    },
+    "Sample_82_sbrief": {
+      "expected": "x lig med kantet venstreparentes venstre parantes a plustegn b højre parantes squared venstre parantes c minus b højre parantes squared kantet højreparentes plustegn kantet venstreparentes venstre parantes d plustegn e højre parantes squared venstre parantes f minus e højre parantes squared kantet højreparentes"
+    },
+    "Sample_83_default": {
+      "expected": "x lig med kantet venstreparentes venstre parantes a plustegn b højre parantes squared kantet højreparentes plustegn kantet venstreparentes venstre parantes f minus e højre parantes squared kantet højreparentes"
+    },
+    "Sample_83_brief": {
+      "expected": "x lig med kantet venstreparentes venstre parantes a plustegn b højre parantes squared kantet højreparentes plustegn kantet venstreparentes venstre parantes f minus e højre parantes squared kantet højreparentes"
+    },
+    "Sample_83_sbrief": {
+      "expected": "x lig med kantet venstreparentes venstre parantes a plustegn b højre parantes squared kantet højreparentes plustegn kantet venstreparentes venstre parantes f minus e højre parantes squared kantet højreparentes"
+    },
+    "Sample_84_default": {
+      "expected": "x lig med kantet venstreparentes venstre parantes a plustegn b højre parantes squared kantet højreparentes"
+    },
+    "Sample_84_brief": {
+      "expected": "x lig med kantet venstreparentes venstre parantes a plustegn b højre parantes squared kantet højreparentes"
+    },
+    "Sample_84_sbrief": {
+      "expected": "x lig med kantet venstreparentes venstre parantes a plustegn b højre parantes squared kantet højreparentes"
+    },
+    "Sample_85_default": {
+      "expected": "x lig med venstre parantes a plustegn b højre parantes squared"
+    },
+    "Sample_85_brief": {
+      "expected": "x lig med venstre parantes a plustegn b højre parantes squared"
+    },
+    "Sample_85_sbrief": {
+      "expected": "x lig med venstre parantes a plustegn b højre parantes squared"
+    },
+    "Sample_86_default": {
+      "expected": "x lig med a plustegn b squared"
+    },
+    "Sample_86_brief": {
+      "expected": "x lig med a plustegn b squared"
+    },
+    "Sample_86_sbrief": {
+      "expected": "x lig med a plustegn b squared"
+    },
+    "Sample_87_default": {
+      "expected": "Start Brøk en halve Over tre fjerdedele Slut Brøk lig med to tredjedele"
+    },
+    "Sample_87_brief": {
+      "expected": "Start Brøk en halve Over tre fjerdedele Slut Brøk lig med to tredjedele"
+    },
+    "Sample_87_sbrief": {
+      "expected": "Brøk en halve Over tre fjerdedele SlutBrøk lig med to tredjedele"
+    },
+    "Sample_88_default": {
+      "expected": "2 venstre parantes venstre parantes x plustegn 1 højre parantes venstre parantes x plustegn 3 højre parantes minus 4 venstre parantes venstre parantes x minus 1 højre parantes venstre parantes x plustegn 2 højre parantes minus 3 højre parantes højre parantes lig med y"
+    },
+    "Sample_88_brief": {
+      "expected": "2 venstre parantes venstre parantes x plustegn 1 højre parantes venstre parantes x plustegn 3 højre parantes minus 4 venstre parantes venstre parantes x minus 1 højre parantes venstre parantes x plustegn 2 højre parantes minus 3 højre parantes højre parantes lig med y"
+    },
+    "Sample_88_sbrief": {
+      "expected": "2 venstre parantes venstre parantes x plustegn 1 højre parantes venstre parantes x plustegn 3 højre parantes minus 4 venstre parantes venstre parantes x minus 1 højre parantes venstre parantes x plustegn 2 højre parantes minus 3 højre parantes højre parantes lig med y"
+    },
+    "Sample_89_default": {
+      "expected": "cosinus x lig med 1 minus Start Brøk x squared Over 2 factorial Slut Brøk plustegn Start Brøk x Hævet 4 Grundlinje Over 4 factorial Slut Brøk minus prik prik prik"
+    },
+    "Sample_89_brief": {
+      "expected": "cosinus x lig med 1 minus Start Brøk x squared Over 2 factorial Slut Brøk plustegn Start Brøk x Hævet 4 Basis Over 4 factorial Slut Brøk minus prik prik prik"
+    },
+    "Sample_89_sbrief": {
+      "expected": "cosinus x lig med 1 minus Brøk x squared Over 2 factorial SlutBrøk plustegn Brøk x Hævet 4 Basis Over 4 factorial SlutBrøk minus prik prik prik"
+    },
+    "Sample_90_default": {
+      "expected": "x lig med Start Brøk negative b plus minus StartRod b squared minus 4 a c SlutRot Over 2 a Slut Brøk"
+    },
+    "Sample_90_brief": {
+      "expected": "x lig med Start Brøk negative b plus minus StartRod b squared minus 4 a c SlutRot Over 2 a Slut Brøk"
+    },
+    "Sample_90_sbrief": {
+      "expected": "x lig med Brøk negative b plus minus Rod b squared minus 4 a c SlutRot Over 2 a SlutBrøk"
+    },
+    "Sample_91_default": {
+      "expected": "x plustegn y Hævet Start Brøk 2 Over k plustegn 1 Slut Brøk"
+    },
+    "Sample_91_brief": {
+      "expected": "x plustegn y Hævet Start Brøk 2 Over k plustegn 1 Slut Brøk"
+    },
+    "Sample_91_sbrief": {
+      "expected": "x plustegn y Hævet Brøk 2 Over k plustegn 1 SlutBrøk"
+    },
+    "Sample_92_default": {
+      "expected": "grænseværdi Undertekst x højrevendt pil 0 Start Brøk sinus x Over x Slut Brøk lig med 1"
+    },
+    "Sample_92_brief": {
+      "expected": "grænseværdi Undertekst x højrevendt pil 0 Start Brøk sinus x Over x Slut Brøk lig med 1"
+    },
+    "Sample_92_sbrief": {
+      "expected": "grænseværdi Undertekst x højrevendt pil 0 Brøk sinus x Over x SlutBrøk lig med 1"
+    },
+    "Sample_93_default": {
+      "expected": "d lig med StartRod venstre parantes x 2 minus x 1 højre parantes squared plustegn venstre parantes y 2 minus y 1 højre parantes squared SlutRot"
+    },
+    "Sample_93_brief": {
+      "expected": "d lig med StartRod venstre parantes x 2 minus x 1 højre parantes squared plustegn venstre parantes y 2 minus y 1 højre parantes squared SlutRot"
+    },
+    "Sample_93_sbrief": {
+      "expected": "d lig med Rod venstre parantes x 2 minus x 1 højre parantes squared plustegn venstre parantes y 2 minus y 1 højre parantes squared SlutRot"
+    },
+    "Sample_94_default": {
+      "expected": "stort F Sænket n Grundlinje lig med stort F Sænket n minus 1 Grundlinje plustegn stort F Sænket n minus 2"
+    },
+    "Sample_94_brief": {
+      "expected": "stort F Sænket n Basis lig med stort F Sænket n minus 1 Basis plustegn stort F Sænket n minus 2"
+    },
+    "Sample_94_sbrief": {
+      "expected": "stort F Sænket n Basis lig med stort F Sænket n minus 1 Basis plustegn stort F Sænket n minus 2"
+    },
+    "Sample_95_default": {
+      "expected": "fed stort Pi lig med Start 6 By 6 Matrix 1. Row 1. Column pi 11 2. Column pi 12 3. Column pi 12 4. Column 0 5. Column 0 6. Column 0 2. Row 1. Column pi 12 2. Column pi 11 3. Column pi 12 4. Column 0 5. Column 0 6. Column 0 3. Row 1. Column pi 12 2. Column pi 12 3. Column pi 11 4. Column 0 5. Column 0 6. Column 0 4. Row 1. Column 0 2. Column 0 3. Column 0 4. Column pi 44 5. Column 0 6. Column 0 5. Row 1. Column 0 2. Column 0 3. Column 0 4. Column 0 5. Column pi 44 6. Column 0 6. Row 1. Column 0 2. Column 0 3. Column 0 4. Column 0 5. Column 0 6. Column pi 44 EndMatrix"
+    },
+    "Sample_95_brief": {
+      "expected": "fed stort Pi lig med Start 6 By 6 Matrix 1. Row 1. Column pi 11 2. Column pi 12 3. Column pi 12 4. Column 0 5. Column 0 6. Column 0 2. Row 1. Column pi 12 2. Column pi 11 3. Column pi 12 4. Column 0 5. Column 0 6. Column 0 3. Row 1. Column pi 12 2. Column pi 12 3. Column pi 11 4. Column 0 5. Column 0 6. Column 0 4. Row 1. Column 0 2. Column 0 3. Column 0 4. Column pi 44 5. Column 0 6. Column 0 5. Row 1. Column 0 2. Column 0 3. Column 0 4. Column 0 5. Column pi 44 6. Column 0 6. Row 1. Column 0 2. Column 0 3. Column 0 4. Column 0 5. Column 0 6. Column pi 44 EndMatrix"
+    },
+    "Sample_95_sbrief": {
+      "expected": "fed stort Pi lig med 6 By 6 Matrix 1. Row 1. Column pi 11 2. Column pi 12 3. Column pi 12 4. Column 0 5. Column 0 6. Column 0 2. Row 1. Column pi 12 2. Column pi 11 3. Column pi 12 4. Column 0 5. Column 0 6. Column 0 3. Row 1. Column pi 12 2. Column pi 12 3. Column pi 11 4. Column 0 5. Column 0 6. Column 0 4. Row 1. Column 0 2. Column 0 3. Column 0 4. Column pi 44 5. Column 0 6. Column 0 5. Row 1. Column 0 2. Column 0 3. Column 0 4. Column 0 5. Column pi 44 6. Column 0 6. Row 1. Column 0 2. Column 0 3. Column 0 4. Column 0 5. Column 0 6. Column pi 44 EndMatrix"
+    },
+    "Sample_96_default": {
+      "expected": "s 11 lig med Start Brøk c 11 plustegn c 12 Over venstre parantes c 11 minus c 12 højre parantes venstre parantes c 11 plustegn 2 c 12 højre parantes Slut Brøk"
+    },
+    "Sample_96_brief": {
+      "expected": "s 11 lig med Start Brøk c 11 plustegn c 12 Over venstre parantes c 11 minus c 12 højre parantes venstre parantes c 11 plustegn 2 c 12 højre parantes Slut Brøk"
+    },
+    "Sample_96_sbrief": {
+      "expected": "s 11 lig med Brøk c 11 plustegn c 12 Over venstre parantes c 11 minus c 12 højre parantes venstre parantes c 11 plustegn 2 c 12 højre parantes SlutBrøk"
+    },
+    "Sample_97_default": {
+      "expected": "stort S I normal stort O 2 plustegn 6 normal stort H normal stort F højrevendt pil normal stort H 2 stort S I normal stort F 6 plustegn 2 normal stort H 2 normal stort O"
+    },
+    "Sample_97_brief": {
+      "expected": "stort S I normal stort O 2 plustegn 6 normal stort H normal stort F højrevendt pil normal stort H 2 stort S I normal stort F 6 plustegn 2 normal stort H 2 normal stort O"
+    },
+    "Sample_97_sbrief": {
+      "expected": "stort S I normal stort O 2 plustegn 6 normal stort H normal stort F højrevendt pil normal stort H 2 stort S I normal stort F 6 plustegn 2 normal stort H 2 normal stort O"
+    },
+    "Sample_98_default": {
+      "expected": "Start Brøk d Over d x Slut Brøk venstre parantes stort E venstre parantes x højre parantes stort A venstre parantes x højre parantes Start Brøk d w venstre parantes x højre parantes Over d x Slut Brøk højre parantes plustegn p venstre parantes x højre parantes lig med 0"
+    },
+    "Sample_98_brief": {
+      "expected": "Start Brøk d Over d x Slut Brøk venstre parantes stort E venstre parantes x højre parantes stort A venstre parantes x højre parantes Start Brøk d w venstre parantes x højre parantes Over d x Slut Brøk højre parantes plustegn p venstre parantes x højre parantes lig med 0"
+    },
+    "Sample_98_sbrief": {
+      "expected": "Brøk d Over d x SlutBrøk venstre parantes stort E venstre parantes x højre parantes stort A venstre parantes x højre parantes Brøk d w venstre parantes x højre parantes Over d x SlutBrøk højre parantes plustegn p venstre parantes x højre parantes lig med 0"
+    },
+    "Sample_99_default": {
+      "expected": "TCS Sænket gas Grundlinje lig med minus en halve venstre parantes Start Brøk stort P Sænket seal Grundlinje Over stort P Sænket maksimum Grundlinje Slut Brøk højre parantes venstre parantes Start Brøk 1 Over stort T Sænket seal Grundlinje Slut Brøk højre parantes"
+    },
+    "Sample_99_brief": {
+      "expected": "TCS Sænket gas Basis lig med minus en halve venstre parantes Start Brøk stort P Sænket seal Basis Over stort P Sænket maksimum Basis Slut Brøk højre parantes venstre parantes Start Brøk 1 Over stort T Sænket seal Basis Slut Brøk højre parantes"
+    },
+    "Sample_99_sbrief": {
+      "expected": "TCS Sænket gas Basis lig med minus en halve venstre parantes Brøk stort P Sænket seal Basis Over stort P Sænket maksimum Basis SlutBrøk højre parantes venstre parantes Brøk 1 Over stort T Sænket seal Basis SlutBrøk højre parantes"
+    },
+    "Sample_100_default": {
+      "expected": "stort B Sænket p Grundlinje lig med Start Start Brøk Start Brøk 7 minus v squared Over 3 Slut Brøk venstre parantes 1 plustegn Start Brøk c squared Over a squared Slut Brøk plustegn Start Brøk c Hævet 4 Grundlinje Over a Hævet 4 Grundlinje Slut Brøk højre parantes plustegn Start Brøk venstre parantes 3 minus v højre parantes squared c squared Over venstre parantes 1 plustegn v højre parantes a squared Slut Brøk Over Over venstre parantes 1 minus v højre parantes venstre parantes 1 minus Start Brøk c Hævet 4 Grundlinje Over a Hævet 4 Grundlinje Slut Brøk højre parantes venstre parantes 1 minus Start Brøk c squared Over a squared Slut Brøk højre parantes Slut Slut Brøk"
+    },
+    "Sample_100_brief": {
+      "expected": "stort B Sænket p Basis lig med Start Start Brøk Start Brøk 7 minus v squared Over 3 Slut Brøk venstre parantes 1 plustegn Start Brøk c squared Over a squared Slut Brøk plustegn Start Brøk c Hævet 4 Basis Over a Hævet 4 Basis Slut Brøk højre parantes plustegn Start Brøk venstre parantes 3 minus v højre parantes squared c squared Over venstre parantes 1 plustegn v højre parantes a squared Slut Brøk Over Over venstre parantes 1 minus v højre parantes venstre parantes 1 minus Start Brøk c Hævet 4 Basis Over a Hævet 4 Basis Slut Brøk højre parantes venstre parantes 1 minus Start Brøk c squared Over a squared Slut Brøk højre parantes Slut Slut Brøk"
+    },
+    "Sample_100_sbrief": {
+      "expected": "stort B Sænket p Basis lig med IndlejrBrøkBrøk Brøk 7 minus v squared Over 3 SlutBrøk venstre parantes 1 plustegn Brøk c squared Over a squared SlutBrøk plustegn Brøk c Hævet 4 Basis Over a Hævet 4 Basis SlutBrøk højre parantes plustegn Brøk venstre parantes 3 minus v højre parantes squared c squared Over venstre parantes 1 plustegn v højre parantes a squared SlutBrøk IndlejrBrøkOver venstre parantes 1 minus v højre parantes venstre parantes 1 minus Brøk c Hævet 4 Basis Over a Hævet 4 Basis SlutBrøk højre parantes venstre parantes 1 minus Brøk c squared Over a squared SlutBrøk højre parantes IndlejrBrøkSlutBrøk"
+    },
+    "Sample_101_default": {
+      "expected": "stort Q Sænket tank Hævet series Grundlinje lig med Start Brøk 1 Over stort R Sænket s Grundlinje Slut Brøk StartRod Start Brøk stort L Sænket s Grundlinje Over stort C Sænket s Grundlinje Slut Brøk SlutRot"
+    },
+    "Sample_101_brief": {
+      "expected": "stort Q Sænket tank Hævet series Basis lig med Start Brøk 1 Over stort R Sænket s Basis Slut Brøk StartRod Start Brøk stort L Sænket s Basis Over stort C Sænket s Basis Slut Brøk SlutRot"
+    },
+    "Sample_101_sbrief": {
+      "expected": "stort Q Sænket tank Hævet series Basis lig med Brøk 1 Over stort R Sænket s Basis SlutBrøk Rod Brøk stort L Sænket s Basis Over stort C Sænket s Basis SlutBrøk SlutRot"
+    },
+    "Sample_102_default": {
+      "expected": "trekant phi Sænket peak Grundlinje lig med tangens Hævet negative 1 Grundlinje venstre parantes k squared stort Q Sænket tank Hævet series Grundlinje højre parantes"
+    },
+    "Sample_102_brief": {
+      "expected": "trekant phi Sænket peak Basis lig med tangens Hævet negative 1 Basis venstre parantes k squared stort Q Sænket tank Hævet series Basis højre parantes"
+    },
+    "Sample_102_sbrief": {
+      "expected": "trekant phi Sænket peak Basis lig med tangens Hævet negative 1 Basis venstre parantes k squared stort Q Sænket tank Hævet series Basis højre parantes"
+    },
+    "Sample_103_default": {
+      "expected": "f lig med 1.013 Start Brøk stort W Over stort L squared Slut Brøk StartRod Start Brøk stort E Over rho Slut Brøk SlutRot StartRod venstre parantes 1 plustegn 0.293 Start Brøk stort L squared Over EW squared Slut Brøk sigma højre parantes SlutRot"
+    },
+    "Sample_103_brief": {
+      "expected": "f lig med 1.013 Start Brøk stort W Over stort L squared Slut Brøk StartRod Start Brøk stort E Over rho Slut Brøk SlutRot StartRod venstre parantes 1 plustegn 0.293 Start Brøk stort L squared Over EW squared Slut Brøk sigma højre parantes SlutRot"
+    },
+    "Sample_103_sbrief": {
+      "expected": "f lig med 1.013 Brøk stort W Over stort L squared SlutBrøk Rod Brøk stort E Over rho SlutBrøk SlutRot Rod venstre parantes 1 plustegn 0.293 Brøk stort L squared Over EW squared SlutBrøk sigma højre parantes SlutRot"
+    },
+    "Sample_104_default": {
+      "expected": "u Sænket n Grundlinje venstre parantes x højre parantes lig med gamma Sænket n Grundlinje venstre parantes hyperbolsk cosinus k Sænket n Grundlinje x minus cosinus k Sænket n Grundlinje x højre parantes plustegn venstre parantes sinus hyperbolsk k Sænket n Grundlinje x minus sinus k Sænket n Grundlinje x højre parantes"
+    },
+    "Sample_104_brief": {
+      "expected": "u Sænket n Basis venstre parantes x højre parantes lig med gamma Sænket n Basis venstre parantes hyperbolsk cosinus k Sænket n Basis x minus cosinus k Sænket n Basis x højre parantes plustegn venstre parantes sinus hyperbolsk k Sænket n Basis x minus sinus k Sænket n Basis x højre parantes"
+    },
+    "Sample_104_sbrief": {
+      "expected": "u Sænket n Basis venstre parantes x højre parantes lig med gamma Sænket n Basis venstre parantes hyperbolsk cosinus k Sænket n Basis x minus cosinus k Sænket n Basis x højre parantes plustegn venstre parantes sinus hyperbolsk k Sænket n Basis x minus sinus k Sænket n Basis x højre parantes"
+    },
+    "Sample_105_default": {
+      "expected": "StartLayout 1. Row 1. Column stort B 2. Column lig med Start Start Brøk Start Brøk stort F 0 Over m Slut Brøk Over Over StartRod venstre parantes omega 0 squared minus omega squared højre parantes squared plustegn 4 n squared omega squared SlutRot Slut Slut Brøk 2. Row 1. Column Blank 2. Column lig med Start Start Brøk Start Brøk stort F 0 Over k Slut Brøk Over Over StartRod venstre parantes 1 minus venstre parantes omega divided by omega 0 squared højre parantes squared højre parantes squared plustegn 4 venstre parantes n divided by omega 0 højre parantes squared venstre parantes omega divided by omega 0 højre parantes squared SlutRot Slut Slut Brøk EndLayout"
+    },
+    "Sample_105_brief": {
+      "expected": "StartLayout 1. Row 1. Column stort B 2. Column lig med Start Start Brøk Start Brøk stort F 0 Over m Slut Brøk Over Over StartRod venstre parantes omega 0 squared minus omega squared højre parantes squared plustegn 4 n squared omega squared SlutRot Slut Slut Brøk 2. Row 1. Column Blank 2. Column lig med Start Start Brøk Start Brøk stort F 0 Over k Slut Brøk Over Over StartRod venstre parantes 1 minus venstre parantes omega divided by omega 0 squared højre parantes squared højre parantes squared plustegn 4 venstre parantes n divided by omega 0 højre parantes squared venstre parantes omega divided by omega 0 højre parantes squared SlutRot Slut Slut Brøk EndLayout"
+    },
+    "Sample_105_sbrief": {
+      "expected": "Layout 1. Row 1. Column stort B 2. Column lig med IndlejrBrøkBrøk Brøk stort F 0 Over m SlutBrøk IndlejrBrøkOver Rod venstre parantes omega 0 squared minus omega squared højre parantes squared plustegn 4 n squared omega squared SlutRot IndlejrBrøkSlutBrøk 2. Row 1. Column Blank 2. Column lig med IndlejrBrøkBrøk Brøk stort F 0 Over k SlutBrøk IndlejrBrøkOver Rod venstre parantes 1 minus venstre parantes omega divided by omega 0 squared højre parantes squared højre parantes squared plustegn 4 venstre parantes n divided by omega 0 højre parantes squared venstre parantes omega divided by omega 0 højre parantes squared SlutRot IndlejrBrøkSlutBrøk EndLayout"
+    },
+    "Sample_106_default": {
+      "expected": "normal p venstre parantes stort A a n d stort B højre parantes lig med normal p venstre parantes stort A højre parantes normal p venstre parantes stort B lodret linie stort A højre parantes"
+    },
+    "Sample_106_brief": {
+      "expected": "normal p venstre parantes stort A a n d stort B højre parantes lig med normal p venstre parantes stort A højre parantes normal p venstre parantes stort B lodret linie stort A højre parantes"
+    },
+    "Sample_106_sbrief": {
+      "expected": "normal p venstre parantes stort A a n d stort B højre parantes lig med normal p venstre parantes stort A højre parantes normal p venstre parantes stort B lodret linie stort A højre parantes"
+    },
+    "Sample_107_default": {
+      "expected": "stort P stort M stort F venstre parantes x højre parantes proportional til venstre parantes Start Brøk 1 Over x Slut Brøk højre parantes Hævet alfa"
+    },
+    "Sample_107_brief": {
+      "expected": "stort P stort M stort F venstre parantes x højre parantes proportional til venstre parantes Start Brøk 1 Over x Slut Brøk højre parantes Hævet alfa"
+    },
+    "Sample_107_sbrief": {
+      "expected": "stort P stort M stort F venstre parantes x højre parantes proportional til venstre parantes Brøk 1 Over x SlutBrøk højre parantes Hævet alfa"
+    },
+    "Sample_108_default": {
+      "expected": "f venstre parantes x højre parantes lig med Start Brøk 1 Over StartRod 2 pi SlutRot Slut Brøk eksponentiel venstre parantes minus x squared skråstreg 2 højre parantes"
+    },
+    "Sample_108_brief": {
+      "expected": "f venstre parantes x højre parantes lig med Start Brøk 1 Over StartRod 2 pi SlutRot Slut Brøk eksponentiel venstre parantes minus x squared skråstreg 2 højre parantes"
+    },
+    "Sample_108_sbrief": {
+      "expected": "f venstre parantes x højre parantes lig med Brøk 1 Over Rod 2 pi SlutRot SlutBrøk eksponentiel venstre parantes minus x squared skråstreg 2 højre parantes"
+    },
+    "Sample_109_default": {
+      "expected": "Start Brøk d x Over d theta Slut Brøk lig med Start Brøk beta Over cosinus squared theta Slut Brøk"
+    },
+    "Sample_109_brief": {
+      "expected": "Start Brøk d x Over d theta Slut Brøk lig med Start Brøk beta Over cosinus squared theta Slut Brøk"
+    },
+    "Sample_109_sbrief": {
+      "expected": "Brøk d x Over d theta SlutBrøk lig med Brøk beta Over cosinus squared theta SlutBrøk"
+    },
+    "Sample_110_default": {
+      "expected": "s divided by StartRod 2 venstre parantes n minus 1 højre parantes SlutRot"
+    },
+    "Sample_110_brief": {
+      "expected": "s divided by StartRod 2 venstre parantes n minus 1 højre parantes SlutRot"
+    },
+    "Sample_110_sbrief": {
+      "expected": "s divided by Rod 2 venstre parantes n minus 1 højre parantes SlutRot"
+    }
+  }
+}

@@ -1,0 +1,466 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "DanishClearspeakImpliedTimes",
+  "locale": "da",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_implied_times.json",
+  "information": "Danish Clearspeak ImpliedTimes rule tests.",
+  "active": "ClearspeakDanish",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "ImpTimes001": {
+      "expected": "2   3"
+    },
+    "ImpTimes002": {
+      "expected": "2   3"
+    },
+    "ImpTimes003": {
+      "expected": "2 to the fjerde power,   3"
+    },
+    "ImpTimes004": {
+      "expected": "2  , venstre parantes, 3 plustegn 4, højre parantes"
+    },
+    "ImpTimes005": {
+      "expected": "2  , kantet venstreparentes, 3 plustegn 4, kantet højreparentes"
+    },
+    "ImpTimes006": {
+      "expected": "3   2"
+    },
+    "ImpTimes007": {
+      "expected": "2  , venstre parantes, 3 plustegn 4, højre parantes, squared"
+    },
+    "ImpTimes008": {
+      "expected": "venstre parantes, 2 plustegn 7, højre parantes,  , venstre parantes, 3 minustegn 6, højre parantes"
+    },
+    "ImpTimes009": {
+      "expected": "kantet venstreparentes, 2 plustegn 7, kantet højreparentes,  , kantet venstreparentes, 3 minustegn 6, kantet højreparentes"
+    },
+    "ImpTimes011": {
+      "expected": "x  , venstre parantes, y plustegn z, højre parantes"
+    },
+    "ImpTimes012": {
+      "expected": "2  , venstre parantes, y plustegn 1, højre parantes"
+    },
+    "ImpTimes013": {
+      "expected": "venstre parantes, 2 minustegn 1, højre parantes,   x"
+    },
+    "ImpTimes014": {
+      "expected": "p sub 1,  , venstre parantes, 3 plustegn 7, højre parantes"
+    },
+    "ImpTimes015": {
+      "expected": "p sub 1, raised to the, a sub 1, power, p sub 2, raised to the, a sub 2, power"
+    },
+    "ImpTimes016": {
+      "expected": "venstre parantes, x plustegn y, højre parantes, to the negative 4 power,  , venstre parantes, x minustegn y, højre parantes, to the negative 4 power"
+    },
+    "ImpTimes017": {
+      "expected": "2 raised to the 4  , venstre parantes, x plustegn y, højre parantes, power"
+    },
+    "ImpTimes018": {
+      "expected": "x y"
+    },
+    "ImpTimes019": {
+      "expected": "x squared, y cubed"
+    },
+    "ImpTimes020": {
+      "expected": "x raised to the y plustegn 1 power, x raised to the y plustegn 2 power"
+    },
+    "ImpTimes021": {
+      "expected": "the square root of a, the square root of b, lig med the square root of a b"
+    },
+    "ImpTimes022": {
+      "expected": "the square root of 3, the square root of 10, lig med the square root of 30"
+    },
+    "ImpTimes023": {
+      "expected": "2 the square root of 3"
+    },
+    "ImpTimes024": {
+      "expected": "1 plustegn 2 the square root of 3"
+    },
+    "ImpTimes025": {
+      "expected": "f of x, lig med x squared  , venstre parantes, x plustegn 1, højre parantes"
+    },
+    "ImpTimes026": {
+      "expected": "f times x, lig med x squared  , venstre parantes, x plustegn 1, højre parantes"
+    },
+    "ImpTimes027": {
+      "expected": "sinus x cosinus y, plustegn, cosinus x sinus y"
+    },
+    "ImpTimes027a": {
+      "expected": "the sinus of, venstre parantes, x plustegn y, højre parantes, the cosinus of, venstre parantes, x plustegn y, højre parantes"
+    },
+    "ImpTimes028": {
+      "expected": "the logaritme base 10 of, x y"
+    },
+    "ImpTimes029": {
+      "expected": "the logaritme of, venstre parantes, x plustegn y, højre parantes, lig med, logaritme x logaritme y"
+    },
+    "ImpTimes030": {
+      "expected": "the 2 by 2 matrix. Row 1: 1, 3 Row 2: 5, 2.   the 2 by 2 matrix. Row 1: 7, 4 Row 2: 0, 1"
+    },
+    "ImpTimes031": {
+      "expected": "2  , venstre parantes, 3  , venstre parantes, venstre parantes, 4 plustegn 5, højre parantes, plustegn 6, højre parantes, højre parantes"
+    },
+    "ImpTimes032": {
+      "expected": "2  , venstre parantes, 3  , anden venstre parantes, tredje venstre parantes, 4 plustegn 5, tredje højre parantes, plustegn 6, anden højre parantes, højre parantes"
+    },
+    "ImpTimes033": {
+      "expected": "2  , kantet venstreparentes, 3  , venstre parantes, venstre parantes, 4 plustegn 5, højre parantes, plustegn 6, højre parantes, kantet højreparentes"
+    },
+    "ImpTimes034": {
+      "expected": "2  , kantet venstreparentes, 3  , venstre parantes, anden venstre parantes, 4 plustegn 5, anden højre parantes, plustegn 6, højre parantes, kantet højreparentes"
+    },
+    "ImpTimes035": {
+      "expected": "2  , the absolute value of x"
+    },
+    "ImpTimes036": {
+      "expected": "the absolute value of x,  , the absolute value of y"
+    },
+    "ImpTimes037": {
+      "expected": "the absolute value of x plustegn 1,  , the absolute value of y minustegn 1"
+    },
+    "ImpTimes037a": {
+      "expected": "the absolute value of x plustegn 1, end absolute value,  , the absolute value of y minustegn 1, end absolute value"
+    },
+    "ImpTimes038": {
+      "expected": "the absolute value of x plustegn 1,  , the absolute value of y, minustegn 1"
+    },
+    "ImpTimes0381": {
+      "expected": "the absolute value of x plustegn 1, end absolute value,  , the absolute value of y, end absolute value, minustegn 1"
+    },
+    "ImpTimes039": {
+      "expected": "2   3"
+    },
+    "ImpTimes040": {
+      "expected": "2   3"
+    },
+    "ImpTimes041": {
+      "expected": "2 to the fjerde power,   3"
+    },
+    "ImpTimes042": {
+      "expected": "2  , venstre parantes, 3 plustegn 4, højre parantes"
+    },
+    "ImpTimes043": {
+      "expected": "2  , kantet venstreparentes, 3 plustegn 4, kantet højreparentes"
+    },
+    "ImpTimes044": {
+      "expected": "3   2"
+    },
+    "ImpTimes045": {
+      "expected": "2  , venstre parantes, 3 plustegn 4, højre parantes, squared"
+    },
+    "ImpTimes046": {
+      "expected": "venstre parantes, 2 plustegn 7, højre parantes,  , venstre parantes, 3 minustegn 6, højre parantes"
+    },
+    "ImpTimes047": {
+      "expected": "kantet venstreparentes, 2 plustegn 7, kantet højreparentes,  , kantet venstreparentes, 3 minustegn 6, kantet højreparentes"
+    },
+    "ImpTimes049": {
+      "expected": "x  , venstre parantes, y plustegn z, højre parantes"
+    },
+    "ImpTimes050": {
+      "expected": "2  , venstre parantes, y plustegn 1, højre parantes"
+    },
+    "ImpTimes051": {
+      "expected": "venstre parantes, 2 minustegn 1, højre parantes,   x"
+    },
+    "ImpTimes052": {
+      "expected": "p sub 1,  , venstre parantes, 3 plustegn 7, højre parantes"
+    },
+    "ImpTimes053": {
+      "expected": "p sub 1, raised to the, a sub 1, power,  , p sub 2, raised to the, a sub 2, power"
+    },
+    "ImpTimes054": {
+      "expected": "venstre parantes, x plustegn y, højre parantes, to the negative 4 power,  , venstre parantes, x minustegn y, højre parantes, to the negative 4 power"
+    },
+    "ImpTimes055": {
+      "expected": "2 raised to the 4  , venstre parantes, x plustegn y, højre parantes, power"
+    },
+    "ImpTimes056": {
+      "expected": "x   y"
+    },
+    "ImpTimes057": {
+      "expected": "x squared   y cubed"
+    },
+    "ImpTimes058": {
+      "expected": "x raised to the y plustegn 1 power,   x raised to the y plustegn 2 power"
+    },
+    "ImpTimes059": {
+      "expected": "the square root of a,   the square root of b, lig med the square root of a   b"
+    },
+    "ImpTimes060": {
+      "expected": "the square root of 3,   the square root of 10, lig med the square root of 30"
+    },
+    "ImpTimes061": {
+      "expected": "2   the square root of 3"
+    },
+    "ImpTimes062": {
+      "expected": "1 plustegn 2   the square root of 3"
+    },
+    "ImpTimes063": {
+      "expected": "f of x, lig med x squared  , venstre parantes, x plustegn 1, højre parantes"
+    },
+    "ImpTimes064": {
+      "expected": "f times x, lig med x squared  , venstre parantes, x plustegn 1, højre parantes"
+    },
+    "ImpTimes065": {
+      "expected": "sinus x,   cosinus y plustegn cosinus x,   sinus y"
+    },
+    "ImpTimes065a": {
+      "expected": "the sinus of, venstre parantes, x plustegn y, højre parantes,  , the cosinus of, venstre parantes, x plustegn y, højre parantes"
+    },
+    "ImpTimes066": {
+      "expected": "the logaritme base 10 of, x   y"
+    },
+    "ImpTimes067": {
+      "expected": "the logaritme of, venstre parantes, x plustegn y, højre parantes, lig med logaritme x,   logaritme y"
+    },
+    "ImpTimes068": {
+      "expected": "the 2 by 2 matrix. Row 1: 1, 3 Row 2: 5, 2.   the 2 by 2 matrix. Row 1: 7, 4 Row 2: 0, 1"
+    },
+    "ImpTimes069": {
+      "expected": "2  , venstre parantes, 3  , venstre parantes, venstre parantes, 4 plustegn 5, højre parantes, plustegn 6, højre parantes, højre parantes"
+    },
+    "ImpTimes070": {
+      "expected": "2  , venstre parantes, 3  , anden venstre parantes, tredje venstre parantes, 4 plustegn 5, tredje højre parantes, plustegn 6, anden højre parantes, højre parantes"
+    },
+    "ImpTimes070a": {
+      "expected": "2  , kantet venstreparentes, 3  , venstre parantes, venstre parantes, 4 plustegn 5, højre parantes, plustegn 6, højre parantes, kantet højreparentes"
+    },
+    "ImpTimes071": {
+      "expected": "2  , kantet venstreparentes, 3  , venstre parantes, anden venstre parantes, 4 plustegn 5, anden højre parantes, plustegn 6, højre parantes, kantet højreparentes"
+    },
+    "ImpTimes072": {
+      "expected": "2  , the absolute value of x"
+    },
+    "ImpTimes073": {
+      "expected": "the absolute value of x,  , the absolute value of y"
+    },
+    "ImpTimes074": {
+      "expected": "the absolute value of x plustegn 1,  , the absolute value of y minustegn 1"
+    },
+    "ImpTimes074a": {
+      "expected": "the absolute value of x plustegn 1, end absolute value,  , the absolute value of y minustegn 1, end absolute value"
+    },
+    "ImpTimes075": {
+      "expected": "the absolute value of x plustegn 1,  , the absolute value of y, minustegn 1"
+    },
+    "ImpTimes076": {
+      "expected": "the absolute value of x plustegn 1, end absolute value,  , the absolute value of y, end absolute value, minustegn 1"
+    },
+    "ImpTimes077": {
+      "expected": "2, venstre parantes, 3, højre parantes"
+    },
+    "ImpTimes078": {
+      "expected": "2, kantet venstreparentes, 3, kantet højreparentes"
+    },
+    "ImpTimes079": {
+      "expected": "2 to the fjerde power, venstre parantes, 3, højre parantes"
+    },
+    "ImpTimes080": {
+      "expected": "2, venstre parantes, 3 plustegn 4, højre parantes"
+    },
+    "ImpTimes081": {
+      "expected": "2, kantet venstreparentes, 3 plustegn 4, kantet højreparentes"
+    },
+    "ImpTimes082": {
+      "expected": "venstre parantes, 3, højre parantes, venstre parantes, 2, højre parantes"
+    },
+    "ImpTimes083": {
+      "expected": "2, venstre parantes, 3 plustegn 4, højre parantes, squared"
+    },
+    "ImpTimes084": {
+      "expected": "venstre parantes, 2 plustegn 7, højre parantes, venstre parantes, 3 minustegn 6, højre parantes"
+    },
+    "ImpTimes085": {
+      "expected": "kantet venstreparentes, 2 plustegn 7, kantet højreparentes, kantet venstreparentes, 3 minustegn 6, kantet højreparentes"
+    },
+    "ImpTimes087": {
+      "expected": "x, venstre parantes, y plustegn z, højre parantes"
+    },
+    "ImpTimes088": {
+      "expected": "2, venstre parantes, y plustegn 1, højre parantes"
+    },
+    "ImpTimes089": {
+      "expected": "venstre parantes, 2 minustegn 1, højre parantes, x"
+    },
+    "ImpTimes090": {
+      "expected": "p sub 1, venstre parantes, 3 plustegn 7, højre parantes"
+    },
+    "ImpTimes091": {
+      "expected": "p sub 1, raised to the, a sub 1, power, p sub 2, raised to the, a sub 2, power"
+    },
+    "ImpTimes092": {
+      "expected": "venstre parantes, x plustegn y, højre parantes, to the negative 4 power, venstre parantes, x minustegn y, højre parantes, to the negative 4 power"
+    },
+    "ImpTimes093": {
+      "expected": "2 raised to the 4, venstre parantes, x plustegn y, højre parantes, power"
+    },
+    "ImpTimes094": {
+      "expected": "x y"
+    },
+    "ImpTimes095": {
+      "expected": "x squared y cubed"
+    },
+    "ImpTimes096": {
+      "expected": "x raised to the y plustegn 1 power, x raised to the y plustegn 2 power"
+    },
+    "ImpTimes097": {
+      "expected": "the square root of a, the square root of b, lig med the square root of a b"
+    },
+    "ImpTimes098": {
+      "expected": "the square root of 3, the square root of 10, lig med the square root of 30"
+    },
+    "ImpTimes099": {
+      "expected": "2 the square root of 3"
+    },
+    "ImpTimes100": {
+      "expected": "1 plustegn 2 the square root of 3"
+    },
+    "ImpTimes101": {
+      "expected": "f of x, lig med x squared, venstre parantes, x plustegn 1, højre parantes"
+    },
+    "ImpTimes103": {
+      "expected": "sinus x cosinus y, plustegn, cosinus x sinus y"
+    },
+    "ImpTimes104": {
+      "expected": "the logaritme base 10 of, x y"
+    },
+    "ImpTimes105": {
+      "expected": "the logaritme of, venstre parantes, x plustegn y, højre parantes, lig med, logaritme x logaritme y"
+    },
+    "ImpTimes106": {
+      "expected": "the 2 by 2 matrix. Row 1: 1, 3 Row 2: 5, 2. the 2 by 2 matrix. Row 1: 7, 4 Row 2: 0, 1"
+    },
+    "ImpTimes107": {
+      "expected": "2, venstre parantes, 3, venstre parantes, venstre parantes, 4 plustegn 5, højre parantes, plustegn 6, højre parantes, højre parantes"
+    },
+    "ImpTimes108": {
+      "expected": "2, venstre parantes, 3, anden venstre parantes, tredje venstre parantes, 4 plustegn 5, tredje højre parantes, plustegn 6, anden højre parantes, højre parantes"
+    },
+    "ImpTimes109": {
+      "expected": "2, kantet venstreparentes, 3, venstre parantes, venstre parantes, 4 plustegn 5, højre parantes, plustegn 6, højre parantes, kantet højreparentes"
+    },
+    "ImpTimes110": {
+      "expected": "2, kantet venstreparentes, 3, venstre parantes, anden venstre parantes, 4 plustegn 5, anden højre parantes, plustegn 6, højre parantes, kantet højreparentes"
+    },
+    "ImpTimes111": {
+      "expected": "2, the absolute value of x"
+    },
+    "ImpTimes112": {
+      "expected": "the absolute value of x, the absolute value of y"
+    },
+    "ImpTimes113": {
+      "expected": "the absolute value of x plustegn 1, the absolute value of y minustegn 1"
+    },
+    "ImpTimes114": {
+      "expected": "the absolute value of x plustegn 1, the absolute value of y, minustegn 1"
+    },
+    "ImpTimesSilPar001": {
+      "expected": "2, venstre parantes, 3, højre parantes"
+    },
+    "ImpTimesSilPar002": {
+      "expected": "2, kantet venstreparentes, 3, kantet højreparentes"
+    },
+    "ImpTimesSilPar003": {
+      "expected": "2 to the fjerde power, venstre parantes, 3, højre parantes"
+    },
+    "ImpTimesSilPar004": {
+      "expected": "2, venstre parantes, 3 plustegn 4, højre parantes"
+    },
+    "ImpTimesSilPar005": {
+      "expected": "2, kantet venstreparentes, 3 plustegn 4, kantet højreparentes"
+    },
+    "ImpTimesSilPar006": {
+      "expected": "venstre parantes, 3, højre parantes, venstre parantes, 2, højre parantes"
+    },
+    "ImpTimesSilPar007": {
+      "expected": "2, venstre parantes, 3 plustegn 4, højre parantes, squared"
+    },
+    "ImpTimesSilPar008": {
+      "expected": "venstre parantes, 2 plustegn 7, højre parantes, venstre parantes, 3 minustegn 6, højre parantes"
+    },
+    "ImpTimesSilPar009": {
+      "expected": "kantet venstreparentes, 2 plustegn 7, kantet højreparentes, kantet venstreparentes, 3 minustegn 6, kantet højreparentes"
+    },
+    "ImpTimesSilPar011": {
+      "expected": "x, venstre parantes, y plustegn z, højre parantes"
+    },
+    "ImpTimesSilPar012": {
+      "expected": "2, venstre parantes, y plustegn 1, højre parantes"
+    },
+    "ImpTimesSilPar013": {
+      "expected": "venstre parantes, 2 minustegn 1, højre parantes, x"
+    },
+    "ImpTimesSilPar014": {
+      "expected": "p sub 1, venstre parantes, 3 plustegn 7, højre parantes"
+    },
+    "ImpTimesSilPar015": {
+      "expected": "venstre parantes, x plustegn y, højre parantes, to the negative 4 power, venstre parantes, x minustegn y, højre parantes, to the negative 4 power"
+    },
+    "ImpTimesSilPar016": {
+      "expected": "2 raised to the 4, venstre parantes, x plustegn y, højre parantes, power"
+    },
+    "ImpTimesSilPar017": {
+      "expected": "f of x, lig med x squared, venstre parantes, x plustegn 1, højre parantes"
+    },
+    "ImpTimesSilPar019": {
+      "expected": "the logaritme of, venstre parantes, x plustegn y, højre parantes, lig med, logaritme x logaritme y"
+    },
+    "ImpTimesSilPar020": {
+      "expected": "the 2 by 2 matrix. Row 1: 1, 3 Row 2: 5, 2. the 2 by 2 matrix. Row 1: 7, 4 Row 2: 0, 1"
+    },
+    "ImpTimesSilPar021": {
+      "expected": "2, venstre parantes, 3, venstre parantes, venstre parantes, 4 plustegn 5, højre parantes, plustegn 6, højre parantes, højre parantes"
+    },
+    "ImpTimesSilPar022": {
+      "expected": "2, venstre parantes, 3, anden venstre parantes, tredje venstre parantes, 4 plustegn 5, tredje højre parantes, plustegn 6, anden højre parantes, højre parantes"
+    },
+    "ImpTimesSilPar023": {
+      "expected": "2, kantet venstreparentes, 3, venstre parantes, venstre parantes, 4 plustegn 5, højre parantes, plustegn 6, højre parantes, kantet højreparentes"
+    },
+    "ImpTimesSilPar024": {
+      "expected": "2, kantet venstreparentes, 3, venstre parantes, anden venstre parantes, 4 plustegn 5, anden højre parantes, plustegn 6, højre parantes, kantet højreparentes"
+    },
+    "Extra001": {
+      "expected": "A lig med h of, venstre parantes, the fraction with numerator, b sub 1, plustegn, b sub 2, and denominator 2, højre parantes"
+    },
+    "Extra002": {
+      "expected": "A lig med, h times, venstre parantes, the fraction with numerator, b sub 1, plustegn, b sub 2, and denominator 2, højre parantes"
+    },
+    "Extra003": {
+      "expected": "a of 0, lig med 0   a lig med 0"
+    },
+    "Extra004": {
+      "expected": "a times 0, lig med 0   a lig med 0"
+    },
+    "Extra005": {
+      "expected": "a times negative 1, lig med negative a"
+    },
+    "Extra006": {
+      "expected": "a of negative 1, lig med negative a"
+    },
+    "Extra010": {
+      "expected": "B of, venstre parantes, 2 komma 6, højre parantes"
+    },
+    "Extra012": {
+      "expected": "B times, venstre parantes, 2 komma 6, højre parantes"
+    },
+    "Extra014": {
+      "expected": "p of w"
+    },
+    "Extra015": {
+      "expected": "x of t, lig med 2 t, plustegn 4"
+    },
+    "Extra016": {
+      "expected": "k of x, lig med, venstre parantes, x plustegn 3, højre parantes,  , venstre parantes, x minustegn 5, højre parantes"
+    },
+    "Extra018": {
+      "expected": "T of t, lig med, T sub s, plustegn, venstre parantes, T sub 0, minustegn, T sub s, højre parantes,   e raised to the negative k t, power"
+    },
+    "Extra019": {
+      "expected": "V lig med håndskrift l, w of 8"
+    }
+  }
+}
