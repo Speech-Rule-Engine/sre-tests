@@ -47,25 +47,25 @@
   "compare": true,
   "tests": {
     "BarFenced_0_default": {
-      "expected": "StartAbsoluteValue a EndAbsoluteValue"
+      "expected": "StartNumeriskVærdi a SlutNumeriskVærdi"
     },
     "BarFenced_1_default": {
-      "expected": "StartAbsoluteValue a EndAbsoluteValue"
+      "expected": "StartNumeriskVærdi a SlutNumeriskVærdi"
     },
     "BarFenced_2_default": {
-      "expected": "StartAbsoluteValue a EndAbsoluteValue"
+      "expected": "StartNumeriskVærdi a SlutNumeriskVærdi"
     },
     "BarFenced_3_default": {
-      "expected": "StartMetric a EndMetric"
+      "expected": "StartDobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "BarFenced_4_default": {
-      "expected": "StartMetric a EndMetric"
+      "expected": "StartDobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "BarFenced_5_default": {
-      "expected": "StartMetric a EndMetric"
+      "expected": "StartDobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "BarFenced_6_default": {
-      "expected": "StartMetric a EndMetric"
+      "expected": "StartDobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "BarFencedMixed_0_default": {
       "expected": "lodret streg a dobbelt lodret bar"
@@ -119,61 +119,61 @@
       "expected": "sinus tredobbelt lodret streg g"
     },
     "Function_0_default": {
-      "expected": "f StartAbsoluteValue a EndAbsoluteValue"
+      "expected": "f StartNumeriskVærdi a SlutNumeriskVærdi"
     },
     "Function_1_default": {
-      "expected": "g StartAbsoluteValue a EndAbsoluteValue"
+      "expected": "g StartNumeriskVærdi a SlutNumeriskVærdi"
     },
     "Function_2_default": {
-      "expected": "h StartAbsoluteValue a EndAbsoluteValue"
+      "expected": "h StartNumeriskVærdi a SlutNumeriskVærdi"
     },
     "Function_3_default": {
-      "expected": "r StartAbsoluteValue a EndAbsoluteValue"
+      "expected": "r StartNumeriskVærdi a SlutNumeriskVærdi"
     },
     "Function_4_default": {
-      "expected": "sinus StartAbsoluteValue a EndAbsoluteValue"
+      "expected": "sinus StartNumeriskVærdi a SlutNumeriskVærdi"
     },
     "Function_5_default": {
-      "expected": "sum StartAbsoluteValue a EndAbsoluteValue"
+      "expected": "sum StartNumeriskVærdi a SlutNumeriskVærdi"
     },
     "FunctionMetric0_default": {
-      "expected": "f StartMetric a EndMetric"
+      "expected": "f StartDobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "FunctionMetric1_default": {
-      "expected": "g StartMetric a EndMetric"
+      "expected": "g StartDobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "FunctionMetric2_default": {
-      "expected": "h StartMetric a EndMetric"
+      "expected": "h StartDobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "FunctionMetric3_default": {
-      "expected": "r StartMetric a EndMetric"
+      "expected": "r StartDobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "FunctionMetric4_default": {
-      "expected": "sinus StartMetric a EndMetric"
+      "expected": "sinus StartDobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "FunctionMetric5_default": {
-      "expected": "sum StartMetric a EndMetric"
+      "expected": "sum StartDobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "BarFenced_0_sbrief": {
-      "expected": "AbsoluteValue a EndAbsoluteValue"
+      "expected": "NumeriskVærdi a SlutNumeriskVærdi"
     },
     "BarFenced_1_sbrief": {
-      "expected": "AbsoluteValue a EndAbsoluteValue"
+      "expected": "NumeriskVærdi a SlutNumeriskVærdi"
     },
     "BarFenced_2_sbrief": {
-      "expected": "AbsoluteValue a EndAbsoluteValue"
+      "expected": "NumeriskVærdi a SlutNumeriskVærdi"
     },
     "BarFenced_3_sbrief": {
-      "expected": "Metric a EndMetric"
+      "expected": "DobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "BarFenced_4_sbrief": {
-      "expected": "Metric a EndMetric"
+      "expected": "DobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "BarFenced_5_sbrief": {
-      "expected": "Metric a EndMetric"
+      "expected": "DobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "BarFenced_6_sbrief": {
-      "expected": "Metric a EndMetric"
+      "expected": "DobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "BarFencedMixed_0_sbrief": {
       "expected": "lodret streg a dobbelt lodret bar"
@@ -206,40 +206,40 @@
       "expected": "a tredobbelt lodret streg b"
     },
     "Function_0_sbrief": {
-      "expected": "f AbsoluteValue a EndAbsoluteValue"
+      "expected": "f NumeriskVærdi a SlutNumeriskVærdi"
     },
     "Function_1_sbrief": {
-      "expected": "g AbsoluteValue a EndAbsoluteValue"
+      "expected": "g NumeriskVærdi a SlutNumeriskVærdi"
     },
     "Function_2_sbrief": {
-      "expected": "h AbsoluteValue a EndAbsoluteValue"
+      "expected": "h NumeriskVærdi a SlutNumeriskVærdi"
     },
     "Function_3_sbrief": {
-      "expected": "r AbsoluteValue a EndAbsoluteValue"
+      "expected": "r NumeriskVærdi a SlutNumeriskVærdi"
     },
     "Function_4_sbrief": {
-      "expected": "sinus AbsoluteValue a EndAbsoluteValue"
+      "expected": "sinus NumeriskVærdi a SlutNumeriskVærdi"
     },
     "Function_5_sbrief": {
-      "expected": "sum AbsoluteValue a EndAbsoluteValue"
+      "expected": "sum NumeriskVærdi a SlutNumeriskVærdi"
     },
     "FunctionMetric0_sbrief": {
-      "expected": "f Metric a EndMetric"
+      "expected": "f DobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "FunctionMetric1_sbrief": {
-      "expected": "g Metric a EndMetric"
+      "expected": "g DobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "FunctionMetric2_sbrief": {
-      "expected": "h Metric a EndMetric"
+      "expected": "h DobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "FunctionMetric3_sbrief": {
-      "expected": "r Metric a EndMetric"
+      "expected": "r DobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "FunctionMetric4_sbrief": {
-      "expected": "sinus Metric a EndMetric"
+      "expected": "sinus DobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "FunctionMetric5_sbrief": {
-      "expected": "sum Metric a EndMetric"
+      "expected": "sum DobbeltLodretStreg a SlutDobbeltLodretStreg"
     },
     "CenterBarFunc_0_sbrief": {
       "expected": "f lodret streg g"

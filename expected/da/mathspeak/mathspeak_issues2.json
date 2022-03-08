@@ -70,13 +70,13 @@
       "expected": "n m"
     },
     "BinomialFromFrac_0": {
-      "expected": "StartBinomialOrMatrix n Choose k EndBinomialOrMatrix"
+      "expected": "StartBinomialEllerMatrix n Vælg k SlutBinomialEllerMatrix"
     },
     "BinomialFromFrac_1": {
-      "expected": "StartBinomialOrMatrix n Choose k EndBinomialOrMatrix"
+      "expected": "StartBinomialEllerMatrix n Vælg k SlutBinomialEllerMatrix"
     },
     "BinomialFromFrac_2": {
-      "expected": "StartBinomialOrMatrix n Choose k EndBinomialOrMatrix"
+      "expected": "StartBinomialEllerMatrix n Vælg k SlutBinomialEllerMatrix"
     },
     "BinomialFromFrac_3": {
       "expected": "venstre parantes Start Brøk n Over k Slut Brøk højre parantes"
@@ -115,43 +115,43 @@
       "expected": "apostrof"
     },
     "GermanFonts_0": {
-      "expected": "German stort A"
+      "expected": "stort A fraktur"
     },
     "GermanFonts_1": {
-      "expected": "bold German stort A"
+      "expected": "stort A fed fraktur"
     },
     "GermanFonts_2": {
-      "expected": "German stort A fraktur"
+      "expected": "stort A fraktur"
     },
     "GermanFonts_3": {
-      "expected": "bold German stort A fed fraktur"
+      "expected": "stort A fed fraktur"
     },
     "GermanFonts_4": {
-      "expected": "bold German abc"
+      "expected": "abc fed fraktur"
     },
     "GermanFonts_5": {
-      "expected": "bold German ABC"
+      "expected": "ABC fed fraktur"
     },
     "GermanFonts_6": {
-      "expected": "bold German stort A stort B stort C"
+      "expected": "stort A stort B stort C fed fraktur"
     },
     "OtherFonts_0": {
       "expected": "m"
     },
     "OtherFonts_1": {
-      "expected": "normal m"
+      "expected": "m normal"
     },
     "OtherFonts_2": {
       "expected": "m I"
     },
     "OtherFonts_3": {
-      "expected": "kursiv m I"
+      "expected": "m I kursiv"
     },
     "OtherFonts_4": {
       "expected": "30"
     },
     "OtherFonts_5": {
-      "expected": "kursiv 3"
+      "expected": "3 kursiv"
     },
     "OtherFonts_6": {
       "expected": "30 grader"
@@ -160,10 +160,10 @@
       "expected": "3 0 m stort A"
     },
     "Multiline_0": {
-      "expected": "StartLayout 1. Row  a 2. Row  b EndLayout"
+      "expected": "StartLayout 1. Række  a 2. Række  b SlutLayout"
     },
     "Multiline_1": {
-      "expected": "StartLayout 1. Row 1. Column a 2. Column c 2. Row 1. Column b 2. Column d EndLayout"
+      "expected": "StartLayout 1. Række 1. Kolonne a 2. Kolonne c 2. Række 1. Kolonne b 2. Kolonne d SlutLayout"
     },
     "RelationsWithEmpty_0": {
       "expected": "mindre end eller lig med 2"
@@ -175,85 +175,85 @@
       "expected": "mindre end eller lig med 2 lig med"
     },
     "RelationsWithEmpty_3": {
-      "expected": "StartLayout 1. Row 1. Column 1 2. Column mindre end eller lig med 2 EndLayout"
+      "expected": "StartLayout 1. Række 1. Kolonne 1 2. Kolonne mindre end eller lig med 2 SlutLayout"
     },
     "EncloseGeneral": {
-      "expected": "StartEnclose cirkel a EndEnclose"
+      "expected": "StartOmsluttet cirkel a SlutOmsluttet"
     },
     "EncloseLeftbar": {
-      "expected": "vertical bar a"
+      "expected": "lodret streg a"
     },
     "EncloseRightbar": {
-      "expected": "a vertical bar"
+      "expected": "a lodret streg"
     },
     "LatinMathfonts_0": {
-      "expected": "German stort A fraktur"
+      "expected": "stort A fraktur"
     },
     "LatinMathfonts_1": {
-      "expected": "bold German stort A fed fraktur"
+      "expected": "stort A fed fraktur"
     },
     "LatinMathfonts_2": {
-      "expected": "fed håndskrift stort A fed håndskrift"
+      "expected": "stort A fed håndskrift"
     },
     "LatinMathfonts_3": {
-      "expected": "fed kursiv stort A fed kursiv"
+      "expected": "stort A fed kursiv"
     },
     "LatinMathfonts_4": {
-      "expected": "fed stort A fed"
+      "expected": "stort A fed"
     },
     "LatinMathfonts_5": {
-      "expected": "dobbeltstreget stort A dobbeltstreget"
+      "expected": "stort A dobbeltstreget"
     },
     "LatinMathfonts_6": {
-      "expected": "stort A kursiv"
+      "expected": "stort A"
     },
     "LatinMathfonts_7": {
-      "expected": "monospacieret stort A monospacieret"
+      "expected": "stort A monospacieret"
     },
     "LatinMathfonts_8": {
-      "expected": "sans serif fed stort A sans serif fed"
+      "expected": "stort A sans serif fed"
     },
     "LatinMathfonts_9": {
-      "expected": "sans serif kursiv stort A sans serif kursiv"
+      "expected": "stort A sans serif kursiv"
     },
     "LatinMathfonts_10": {
-      "expected": "sans serif fed kursiv stort A sans serif fed kursiv"
+      "expected": "stort A sans serif fed kursiv"
     },
     "LatinMathfonts_11": {
-      "expected": "sans serif stort A sans serif"
+      "expected": "stort A sans serif"
     },
     "LatinMathfonts_12": {
-      "expected": "håndskrift stort A håndskrift"
+      "expected": "stort A håndskrift"
     },
     "GreekMathfonts_0": {
-      "expected": "fed stort Alfa fed"
+      "expected": "stort Alfa fed"
     },
     "GreekMathfonts_1": {
-      "expected": "stort Alfa kursiv"
+      "expected": "stort Alfa"
     },
     "GreekMathfonts_2": {
-      "expected": "fed kursiv stort Alfa fed kursiv"
+      "expected": "stort Alfa fed kursiv"
     },
     "GreekMathfonts_3": {
-      "expected": "sans serif fed stort Alfa sans serif fed"
+      "expected": "stort Alfa sans serif fed"
     },
     "GreekMathfonts_4": {
-      "expected": "sans serif fed kursiv stort Alfa sans serif fed kursiv"
+      "expected": "stort Alfa sans serif fed kursiv"
     },
     "Issue279_0": {
       "expected": ""
     },
     "Issue279_1": {
-      "expected": "StartLayout 1. Row  with Label venstre parantes 3 prik 1 prik 10 højre parantes EndLabel EndLayout"
+      "expected": "StartLayout 1. Række  med Label venstre parantes 3 prik 1 prik 10 højre parantes SlutLabel SlutLayout"
     },
     "Issue320_0": {
       "expected": "partielle afledte"
     },
     "Issue320_1": {
-      "expected": "x factorial"
+      "expected": "x fakultet"
     },
     "Issue320_2": {
-      "expected": "minus negative x"
+      "expected": "minus negativ x"
     },
     "Issue320_3": {
       "expected": "plustegn plustegn x"
@@ -265,7 +265,7 @@
       "expected": "partielle afledte partielle afledte x"
     },
     "Issue320_6": {
-      "expected": "venstre parantes Start Brøk partielle afledte squared Over partielle afledte x squared Slut Brøk plustegn Start Brøk partielle afledte squared Over partielle afledte y squared Slut Brøk højre parantes StartAbsoluteValue phi venstre parantes x plustegn normal I y højre parantes EndAbsoluteValue squared lig med 0"
+      "expected": "venstre parantes Start Brøk partielle afledte kvadreret Over partielle afledte x kvadreret Slut Brøk plustegn Start Brøk partielle afledte kvadreret Over partielle afledte y kvadreret Slut Brøk højre parantes StartNumeriskVærdi phi venstre parantes x plustegn I normal y højre parantes SlutNumeriskVærdi kvadreret lig med 0"
     },
     "Prime_0": {
       "expected": "x mærke"
@@ -304,10 +304,10 @@
       "expected": "x firdobbelt mærke"
     },
     "Prime_12": {
-      "expected": "x fem prime"
+      "expected": "x fem primtegn"
     },
     "Prime_13": {
-      "expected": "x seks prime"
+      "expected": "x seks primtegn"
     },
     "Prime_14": {
       "expected": "x dobbelt mærke"
@@ -319,19 +319,19 @@
       "expected": "x firdobbelt mærke"
     },
     "Prime_17": {
-      "expected": "x fem prime"
+      "expected": "x fem primtegn"
     },
     "Prime_18": {
-      "expected": "x seks prime"
+      "expected": "x seks primtegn"
     },
     "LimBoth_0": {
-      "expected": "ModifyingAbove ModifyingBelow sum Undertekst n Overtekst 2 With understreget With tilde"
+      "expected": "SymbolOver SymbolUnder sum Undertekst n Overtekst 2 Med understreget Med tilde"
     },
     "LimBoth_1": {
-      "expected": "ModifyingAbove ModifyingBelow sum Undertekst n Overtekst 2 With understreget With tilde"
+      "expected": "SymbolOver SymbolUnder sum Undertekst n Overtekst 2 Med understreget Med tilde"
     },
     "LimBoth_2": {
-      "expected": "ModifyingAbove ModifyingBelow sum Undertekst n Overtekst 2 With understreget With tilde"
+      "expected": "SymbolOver SymbolUnder sum Undertekst n Overtekst 2 Med understreget Med tilde"
     },
     "LimBoth_3": {
       "expected": "sum Undertekst n Overtekst 2"
@@ -364,16 +364,16 @@
       "expected": "sum Undertekst n a"
     },
     "Issue_442_0": {
-      "expected": "9 divided by 3 er ikke lig med 9 krydsprodukt 3"
+      "expected": "9 divideret med 3 er ikke lig med 9 krydsprodukt 3"
     },
     "Issue_442_1": {
-      "expected": "9 divided by 3"
+      "expected": "9 divideret med 3"
     },
     "Issue_442_2": {
-      "expected": "9 divided by 3 er ikke lig med 9 krydsprodukt 3"
+      "expected": "9 divideret med 3 er ikke lig med 9 krydsprodukt 3"
     },
     "Issue_442_3": {
-      "expected": "9 divided by 3"
+      "expected": "9 divideret med 3"
     }
   }
 }
