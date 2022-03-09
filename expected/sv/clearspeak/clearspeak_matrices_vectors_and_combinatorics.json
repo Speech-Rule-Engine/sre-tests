@@ -73,10 +73,10 @@
       "expected": "2 gånger 2 matrisen. rad 1: 2 x, 1 rad 2: 7, 5"
     },
     "Matrix019b": {
-      "expected": "2 gånger 2 matrisen. rad 1: 2 x, y rad 2: ett halv, två tredjedelar"
+      "expected": "2 gånger 2 matrisen. rad 1: 2 x, y rad 2: en halv, två tredjedelar"
     },
     "Matrix020": {
-      "expected": "2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdelar, ett femtedel"
+      "expected": "2 gånger 2 matrisen. rad 1: en halv, två tredjedelar rad 2: tre fjärdelar, en femtedel"
     },
     "Matrix021": {
       "expected": "2 gånger 2 matrisen. rad 1: b index 1 1, b index 1 2 rad 2: b index 2 1, b index 2 2"
@@ -85,7 +85,7 @@
       "expected": "3 gånger 2 gånger 2 matrisen. rad 1: 2, 1 rad 2: 7, 5. gånger 2 gånger 3 matrisen. rad 1: 3, 1, 4 rad 2: 0, 2, 6"
     },
     "Matrix023": {
-      "expected": "2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdelar, ett femtedel. gånger 2 gånger 3 matrisen. rad 1: kolumn 1, 3; kolumn 2, 1 minus x; kolumn 3, 4. rad 2: kolumn 1, 0; kolumn 2, 2; kolumn 3, 6"
+      "expected": "2 gånger 2 matrisen. rad 1: en halv, två tredjedelar rad 2: tre fjärdelar, en femtedel. gånger 2 gånger 3 matrisen. rad 1: kolumn 1, 3; kolumn 2, 1 minus x; kolumn 3, 4. rad 2: kolumn 1, 0; kolumn 2, 2; kolumn 3, 6"
     },
     "Matrix024": {
       "expected": "4 gånger 4 matrisen. rad 1: kolumn 1, 0; kolumn 2, 3; kolumn 3, 4; kolumn 4, 3. rad 2: kolumn 1, 2; kolumn 2, 1; kolumn 3, 0; kolumn 4, 9. rad 3: kolumn 1, 3; kolumn 2, 0; kolumn 3, 2; kolumn 4, 1. rad 4: kolumn 1, 6; kolumn 2, 2; kolumn 3, 9; kolumn 4, 0. gånger 4 gånger 2 matrisen. rad 1: kolumn 1, 1; kolumn 2, 3. rad 2: kolumn 1, 4; kolumn 2, 2. rad 3: kolumn 1, 2; kolumn 2, 1. rad 4: kolumn 1, 0; kolumn 2, 5"
@@ -121,16 +121,16 @@
       "expected": "determinant av 2 gånger 2 matrisen. rad 1: 2 x, 1 rad 2: 7, 5"
     },
     "Matrix035": {
-      "expected": "determinanten av 2 gånger 2 matrisen. rad 1: 2 x, y rad 2: ett halv, två tredjedelar"
+      "expected": "determinanten av 2 gånger 2 matrisen. rad 1: 2 x, y rad 2: en halv, två tredjedelar"
     },
     "Matrix036": {
-      "expected": "determinant av 2 gånger 2 matrisen. rad 1: 2 x, y rad 2: ett halv, två tredjedelar"
+      "expected": "determinant av 2 gånger 2 matrisen. rad 1: 2 x, y rad 2: en halv, två tredjedelar"
     },
     "Matrix037": {
-      "expected": "determinanten av 2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdelar, ett femtedel"
+      "expected": "determinanten av 2 gånger 2 matrisen. rad 1: en halv, två tredjedelar rad 2: tre fjärdelar, en femtedel"
     },
     "Matrix038": {
-      "expected": "determinant av 2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdelar, ett femtedel"
+      "expected": "determinant av 2 gånger 2 matrisen. rad 1: en halv, två tredjedelar rad 2: tre fjärdelar, en femtedel"
     },
     "Matrix039": {
       "expected": "2 gånger 2 matrisen. rad 1: kolumn 1, 2; kolumn 2, 1. rad 2: kolumn 1, 7; kolumn 2, 5"
@@ -202,10 +202,10 @@
       "expected": "2 gånger 2 matrisen. rad 1: kolumn 1, 2 x; kolumn 2, 1. rad 2: kolumn 1, 7; kolumn 2, 5"
     },
     "Matrix061": {
-      "expected": "2 gånger 2 matrisen. rad 1: kolumn 1, 2 x; kolumn 2, y. rad 2: kolumn 1, ett halv; kolumn 2, två tredjedelar"
+      "expected": "2 gånger 2 matrisen. rad 1: kolumn 1, 2 x; kolumn 2, y. rad 2: kolumn 1, en halv; kolumn 2, två tredjedelar"
     },
     "Matrix062": {
-      "expected": "2 gånger 2 matrisen. rad 1: kolumn 1, ett halv; kolumn 2, två tredjedelar. rad 2: kolumn 1, tre fjärdelar; kolumn 2, ett femtedel"
+      "expected": "2 gånger 2 matrisen. rad 1: kolumn 1, en halv; kolumn 2, två tredjedelar. rad 2: kolumn 1, tre fjärdelar; kolumn 2, en femtedel"
     },
     "Matrix063": {
       "expected": "2 gånger 2 matrisen. rad 1: kolumn 1, b index 1 1; kolumn 2, b index 1 2. rad 2: kolumn 1, b index 2 1; kolumn 2, b index 2 2"
@@ -214,7 +214,7 @@
       "expected": "3 gånger 2 gånger 2 matrisen. rad 1: kolumn 1, 2; kolumn 2, 1. rad 2: kolumn 1, 7; kolumn 2, 5. gånger 2 gånger 3 matrisen. rad 1: kolumn 1, 3; kolumn 2, 1; kolumn 3, 4. rad 2: kolumn 1, 0; kolumn 2, 2; kolumn 3, 6"
     },
     "Matrix065": {
-      "expected": "2 gånger 2 matrisen. rad 1: kolumn 1, ett halv; kolumn 2, två tredjedelar. rad 2: kolumn 1, tre fjärdelar; kolumn 2, ett femtedel. gånger 2 gånger 3 matrisen. rad 1: kolumn 1, 3; kolumn 2, 1 minus x; kolumn 3, 4. rad 2: kolumn 1, 0; kolumn 2, 2; kolumn 3, 6"
+      "expected": "2 gånger 2 matrisen. rad 1: kolumn 1, en halv; kolumn 2, två tredjedelar. rad 2: kolumn 1, tre fjärdelar; kolumn 2, en femtedel. gånger 2 gånger 3 matrisen. rad 1: kolumn 1, 3; kolumn 2, 1 minus x; kolumn 3, 4. rad 2: kolumn 1, 0; kolumn 2, 2; kolumn 3, 6"
     },
     "Matrix066": {
       "expected": "4 gånger 4 matrisen. rad 1: kolumn 1, 0; kolumn 2, 3; kolumn 3, 4; kolumn 4, 3. rad 2: kolumn 1, 2; kolumn 2, 1; kolumn 3, 0; kolumn 4, 9. rad 3: kolumn 1, 3; kolumn 2, 0; kolumn 3, 2; kolumn 4, 1. rad 4: kolumn 1, 6; kolumn 2, 2; kolumn 3, 9; kolumn 4, 0. gånger 4 gånger 2 matrisen. rad 1: kolumn 1, 1; kolumn 2, 3. rad 2: kolumn 1, 4; kolumn 2, 2. rad 3: kolumn 1, 2; kolumn 2, 1. rad 4: kolumn 1, 0; kolumn 2, 5"
@@ -250,16 +250,16 @@
       "expected": "determinant av 2 gånger 2 matrisen. rad 1: kolumn 1, 2 x; kolumn 2, 1. rad 2: kolumn 1, 7; kolumn 2, 5"
     },
     "Matrix077": {
-      "expected": "determinanten av 2 gånger 2 matrisen. rad 1: kolumn 1, 2 x; kolumn 2, y. rad 2: kolumn 1, ett halv; kolumn 2, två tredjedelar"
+      "expected": "determinanten av 2 gånger 2 matrisen. rad 1: kolumn 1, 2 x; kolumn 2, y. rad 2: kolumn 1, en halv; kolumn 2, två tredjedelar"
     },
     "Matrix078": {
-      "expected": "determinant av 2 gånger 2 matrisen. rad 1: kolumn 1, 2 x; kolumn 2, y. rad 2: kolumn 1, ett halv; kolumn 2, två tredjedelar"
+      "expected": "determinant av 2 gånger 2 matrisen. rad 1: kolumn 1, 2 x; kolumn 2, y. rad 2: kolumn 1, en halv; kolumn 2, två tredjedelar"
     },
     "Matrix079": {
-      "expected": "determinanten av 2 gånger 2 matrisen. rad 1: kolumn 1, ett halv; kolumn 2, två tredjedelar. rad 2: kolumn 1, tre fjärdelar; kolumn 2, ett femtedel"
+      "expected": "determinanten av 2 gånger 2 matrisen. rad 1: kolumn 1, en halv; kolumn 2, två tredjedelar. rad 2: kolumn 1, tre fjärdelar; kolumn 2, en femtedel"
     },
     "Matrix080": {
-      "expected": "determinant av 2 gånger 2 matrisen. rad 1: kolumn 1, ett halv; kolumn 2, två tredjedelar. rad 2: kolumn 1, tre fjärdelar; kolumn 2, ett femtedel"
+      "expected": "determinant av 2 gånger 2 matrisen. rad 1: kolumn 1, en halv; kolumn 2, två tredjedelar. rad 2: kolumn 1, tre fjärdelar; kolumn 2, en femtedel"
     },
     "Matrix081": {
       "expected": "2 gånger 2 matrisen. rad 1: 2, 1 rad 2: 7, 5"
@@ -319,10 +319,10 @@
       "expected": "2 gånger 2 matrisen. rad 1: 2 x, 1 rad 2: 7, 5"
     },
     "Matrix099": {
-      "expected": "2 gånger 2 matrisen. rad 1: 2 x, y rad 2: ett halv, två tredjedelar"
+      "expected": "2 gånger 2 matrisen. rad 1: 2 x, y rad 2: en halv, två tredjedelar"
     },
     "Matrix100": {
-      "expected": "2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdelar, ett femtedel"
+      "expected": "2 gånger 2 matrisen. rad 1: en halv, två tredjedelar rad 2: tre fjärdelar, en femtedel"
     },
     "Matrix101": {
       "expected": "2 gånger 2 matrisen. rad 1: b index 1 1, b index 1 2 rad 2: b index 2 1, b index 2 2"
@@ -331,7 +331,7 @@
       "expected": "3 gånger 2 gånger 2 matrisen. rad 1: 2, 1 rad 2: 7, 5. gånger 2 gånger 3 matrisen. rad 1: 3, 1, 4 rad 2: 0, 2, 6"
     },
     "Matrix103": {
-      "expected": "2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdelar, ett femtedel. gånger 2 gånger 3 matrisen. rad 1: 3, 1 minus x, 4 rad 2: 0, 2, 6"
+      "expected": "2 gånger 2 matrisen. rad 1: en halv, två tredjedelar rad 2: tre fjärdelar, en femtedel. gånger 2 gånger 3 matrisen. rad 1: 3, 1 minus x, 4 rad 2: 0, 2, 6"
     },
     "Matrix104": {
       "expected": "4 gånger 4 matrisen. rad 1: 0, 3, 4, 3 rad 2: 2, 1, 0, 9 rad 3: 3, 0, 2, 1 rad 4: 6, 2, 9, 0. gånger 4 gånger 2 matrisen. rad 1: 1, 3 rad 2: 4, 2 rad 3: 2, 1 rad 4: 0, 5"
@@ -367,16 +367,16 @@
       "expected": "determinant av 2 gånger 2 matrisen. rad 1: 2 x, 1 rad 2: 7, 5"
     },
     "Matrix115": {
-      "expected": "determinanten av 2 gånger 2 matrisen. rad 1: 2 x, y rad 2: ett halv, två tredjedelar"
+      "expected": "determinanten av 2 gånger 2 matrisen. rad 1: 2 x, y rad 2: en halv, två tredjedelar"
     },
     "Matrix116": {
-      "expected": "determinant av 2 gånger 2 matrisen. rad 1: 2 x, y rad 2: ett halv, två tredjedelar"
+      "expected": "determinant av 2 gånger 2 matrisen. rad 1: 2 x, y rad 2: en halv, två tredjedelar"
     },
     "Matrix117": {
-      "expected": "determinanten av 2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdelar, ett femtedel"
+      "expected": "determinanten av 2 gånger 2 matrisen. rad 1: en halv, två tredjedelar rad 2: tre fjärdelar, en femtedel"
     },
     "Matrix118": {
-      "expected": "determinant av 2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdelar, ett femtedel"
+      "expected": "determinant av 2 gånger 2 matrisen. rad 1: en halv, två tredjedelar rad 2: tre fjärdelar, en femtedel"
     },
     "Matrix119": {
       "expected": "2 gånger 2 matrisen. rad 1: 2, 1 rad 2: 7, 5. slut matris"
@@ -436,10 +436,10 @@
       "expected": "2 gånger 2 matrisen. rad 1: 2 x, 1 rad 2: 7, 5. slut matris"
     },
     "Matrix138": {
-      "expected": "2 gånger 2 matrisen. rad 1: 2 x, y rad 2: ett halv, två tredjedelar. slut matris"
+      "expected": "2 gånger 2 matrisen. rad 1: 2 x, y rad 2: en halv, två tredjedelar. slut matris"
     },
     "Matrix139": {
-      "expected": "2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdelar, ett femtedel. slut matris"
+      "expected": "2 gånger 2 matrisen. rad 1: en halv, två tredjedelar rad 2: tre fjärdelar, en femtedel. slut matris"
     },
     "Matrix140": {
       "expected": "2 gånger 2 matrisen. rad 1: b index 1 1, b index 1 2 rad 2: b index 2 1, b index 2 2. slut matris"
@@ -448,7 +448,7 @@
       "expected": "3 gånger 2 gånger 2 matrisen. rad 1: 2, 1 rad 2: 7, 5. slut matris gånger 2 gånger 3 matrisen. rad 1: 3, 1, 4 rad 2: 0, 2, 6. slut matris"
     },
     "Matrix142": {
-      "expected": "2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdelar, ett femtedel. slut matris gånger 2 gånger 3 matrisen. rad 1: kolumn 1, 3; kolumn 2, 1 minus x; kolumn 3, 4. rad 2: kolumn 1, 0; kolumn 2, 2; kolumn 3, 6. slut matris"
+      "expected": "2 gånger 2 matrisen. rad 1: en halv, två tredjedelar rad 2: tre fjärdelar, en femtedel. slut matris gånger 2 gånger 3 matrisen. rad 1: kolumn 1, 3; kolumn 2, 1 minus x; kolumn 3, 4. rad 2: kolumn 1, 0; kolumn 2, 2; kolumn 3, 6. slut matris"
     },
     "Matrix143": {
       "expected": "4 gånger 4 matrisen. rad 1: kolumn 1, 0; kolumn 2, 3; kolumn 3, 4; kolumn 4, 3. rad 2: kolumn 1, 2; kolumn 2, 1; kolumn 3, 0; kolumn 4, 9. rad 3: kolumn 1, 3; kolumn 2, 0; kolumn 3, 2; kolumn 4, 1. rad 4: kolumn 1, 6; kolumn 2, 2; kolumn 3, 9; kolumn 4, 0. slut matris gånger 4 gånger 2 matrisen. rad 1: kolumn 1, 1; kolumn 2, 3. rad 2: kolumn 1, 4; kolumn 2, 2. rad 3: kolumn 1, 2; kolumn 2, 1. rad 4: kolumn 1, 0; kolumn 2, 5. slut matris"
@@ -484,16 +484,16 @@
       "expected": "determinant av 2 gånger 2 matrisen. rad 1: 2 x, 1 rad 2: 7, 5. slut matris"
     },
     "Matrix154": {
-      "expected": "determinanten av 2 gånger 2 matrisen. rad 1: 2 x, y rad 2: ett halv, två tredjedelar. slut determinant"
+      "expected": "determinanten av 2 gånger 2 matrisen. rad 1: 2 x, y rad 2: en halv, två tredjedelar. slut determinant"
     },
     "Matrix155": {
-      "expected": "determinant av 2 gånger 2 matrisen. rad 1: 2 x, y rad 2: ett halv, två tredjedelar. slut matris"
+      "expected": "determinant av 2 gånger 2 matrisen. rad 1: 2 x, y rad 2: en halv, två tredjedelar. slut matris"
     },
     "Matrix156": {
-      "expected": "determinanten av 2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdelar, ett femtedel. slut determinant"
+      "expected": "determinanten av 2 gånger 2 matrisen. rad 1: en halv, två tredjedelar rad 2: tre fjärdelar, en femtedel. slut determinant"
     },
     "Matrix157": {
-      "expected": "determinant av 2 gånger 2 matrisen. rad 1: ett halv, två tredjedelar rad 2: tre fjärdelar, ett femtedel. slut matris"
+      "expected": "determinant av 2 gånger 2 matrisen. rad 1: en halv, två tredjedelar rad 2: tre fjärdelar, en femtedel. slut matris"
     },
     "Matrix158": {
       "expected": "3 gånger 1 kolumnvektorn. 1, 2, 3"
