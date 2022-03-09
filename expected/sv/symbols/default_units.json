@@ -13,10 +13,10 @@
   "compare": true,
   "tests": {
     "sq": {
-      "expected": "square"
+      "expected": "kvadrat"
     },
     "sq.": {
-      "expected": "square"
+      "expected": "kvadrat"
     },
     "sq in": {
       "expected": "kvadrat tum"
@@ -67,7 +67,7 @@
       "expected": "acre"
     },
     "ha": {
-      "expected": "hectare"
+      "expected": "hektar"
     },
     "$": {
       "expected": "dollar"
@@ -109,10 +109,10 @@
       "expected": "euro"
     },
     "₡": {
-      "expected": "colons"
+      "expected": "colón"
     },
     "CRC": {
-      "expected": "colons"
+      "expected": "colón"
     },
     "₢": {
       "expected": "cruzeiro"
@@ -124,7 +124,7 @@
       "expected": "lire"
     },
     "₥": {
-      "expected": "mills"
+      "expected": "mill"
     },
     "₦": {
       "expected": "naira"
@@ -163,7 +163,7 @@
       "expected": "won"
     },
     "₪": {
-      "expected": "sheqel"
+      "expected": "shekel"
     },
     "₫": {
       "expected": "dong"
@@ -175,31 +175,31 @@
       "expected": "tugrik"
     },
     "₯": {
-      "expected": "drachma"
+      "expected": "drakma"
     },
     "₰": {
       "expected": "tyska pennis"
     },
     "₱": {
-      "expected": "pesos"
+      "expected": "peso"
     },
     "₲": {
-      "expected": "guaranis"
+      "expected": "guarani"
     },
     "₳": {
-      "expected": "australs"
+      "expected": "austral"
     },
     "₴": {
-      "expected": "hryvnias"
+      "expected": "hryvnia"
     },
     "UAH": {
-      "expected": "hryvnias"
+      "expected": "hryvnia"
     },
     "₵": {
-      "expected": "cedis"
+      "expected": "cedi"
     },
     "GHS": {
-      "expected": "cedis"
+      "expected": "cedi"
     },
     "元": {
       "expected": "yuan"
@@ -211,10 +211,10 @@
       "expected": "¢"
     },
     "kwh": {
-      "expected": "kilowatt hour"
+      "expected": "kilowattimme"
     },
     "kWh": {
-      "expected": "kilowatt hour"
+      "expected": "kilowattimme"
     },
     "Ohm": {
       "expected": "ohm"
@@ -271,7 +271,7 @@
       "expected": "furlong"
     },
     "n.m.": {
-      "expected": "nautical mile"
+      "expected": "nautisk mil"
     },
     "b": {
       "expected": "bit"
@@ -280,31 +280,31 @@
       "expected": "kilobyte"
     },
     "doz": {
-      "expected": "dozen"
+      "expected": "dussin"
     },
     "doz.": {
-      "expected": "dozen"
+      "expected": "dussin"
     },
     "dz": {
-      "expected": "dozen"
+      "expected": "dussin"
     },
     "dz.": {
-      "expected": "dozen"
+      "expected": "dussin"
     },
     "kt": {
-      "expected": "knot"
+      "expected": "knop"
     },
     "kt.": {
-      "expected": "knot"
+      "expected": "knop"
     },
     "mph": {
       "expected": "mile per timme"
     },
     "rpm": {
-      "expected": "revolutions per minute"
+      "expected": "varv per minut"
     },
     "kmh": {
-      "expected": "kilometers per hour"
+      "expected": "kilometer per timme"
     },
     "F": {
       "expected": "farad"
@@ -316,10 +316,10 @@
       "expected": "farad"
     },
     "C": {
-      "expected": "coulomb"
+      "expected": "celsius"
     },
     "°C": {
-      "expected": "coulomb"
+      "expected": "celsius"
     },
     "K": {
       "expected": "kelvin"
@@ -328,19 +328,19 @@
       "expected": "kelvin"
     },
     "min": {
-      "expected": "minute"
+      "expected": "minut"
     },
     "h": {
-      "expected": "hour"
+      "expected": "timme"
     },
     "hr": {
-      "expected": "hour"
+      "expected": "timme"
     },
     "cu": {
-      "expected": "cubic"
+      "expected": "kubik"
     },
     "cu.": {
-      "expected": "cubic"
+      "expected": "kubik"
     },
     "cu in": {
       "expected": "kubik tum"
@@ -421,10 +421,10 @@
       "expected": "kopp"
     },
     "cc": {
-      "expected": "cubic centimeter"
+      "expected": "kubikcentimeter"
     },
     "ccm": {
-      "expected": "cubic centimeter"
+      "expected": "kubikcentimeter"
     },
     "dr": {
       "expected": "dram"
@@ -463,16 +463,16 @@
       "expected": "centner"
     },
     "LT": {
-      "expected": "long ton"
+      "expected": "engelskt ton"
     },
     "L.T.": {
-      "expected": "long ton"
+      "expected": "engelskt ton"
     },
     "gr": {
       "expected": "grain"
     },
     "mcg": {
-      "expected": "microgram"
+      "expected": "mikrogram"
     },
     "t": {
       "expected": "ton"
@@ -481,13 +481,13 @@
       "expected": "ton"
     },
     "′": {
-      "expected": "minute"
+      "expected": "minut"
     },
     "°": {
-      "expected": "degree"
+      "expected": "grad"
     },
     "″": {
-      "expected": "second"
+      "expected": "sekund"
     }
   }
 }
