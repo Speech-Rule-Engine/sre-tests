@@ -101,7 +101,7 @@
       "expected": "h av, öppna, 1 delat med 2, stäng"
     },
     "Function008": {
-      "expected": "f av, öppna, x plus 1, stäng, lika med f av x, plus 1"
+      "expected": "f av, öppna, x plus 1, stäng, är lika med f av x, plus 1"
     },
     "Function009": {
       "expected": "g av, öppna, 2 x, plus 1, stäng"
@@ -158,7 +158,7 @@
       "expected": "h invers av, öppna, h av, öppna, 1 delat med 2, stäng, stäng"
     },
     "Function027": {
-      "expected": "f invers av, öppna, f av, öppna, x plus 1, stäng, stäng, lika med x plus 1"
+      "expected": "f invers av, öppna, f av, öppna, x plus 1, stäng, stäng, är lika med x plus 1"
     },
     "Function028": {
       "expected": "g invers av, öppna, g av, öppna, 2 x, plus 1, stäng, stäng"
@@ -206,10 +206,10 @@
       "expected": "h av, öppna, g av, öppna, bråket med täljare x, och nämnare x plus 1, stäng, stäng"
     },
     "Function043": {
-      "expected": "öppna, f plus g, stäng, av x, lika med f av x, plus g av x"
+      "expected": "öppna, f plus g, stäng, av x, är lika med f av x, plus g av x"
     },
     "Function044": {
-      "expected": "öppna, f plus g, stäng, av, öppna, x plus 1, stäng, lika med f av, öppna, x plus 1, stäng, plus g av, öppna, x plus 1, stäng"
+      "expected": "öppna, f plus g, stäng, av, öppna, x plus 1, stäng, är lika med f av, öppna, x plus 1, stäng, plus g av, öppna, x plus 1, stäng"
     },
     "Function045": {
       "expected": "öppna, f punkt g, stäng, av x"
@@ -218,13 +218,13 @@
       "expected": "öppna, f punkt g, stäng, av, öppna, 2 x, plus 5, stäng"
     },
     "Function047": {
-      "expected": "öppna, f delat med g, stäng, av x, lika med, f av x, delat med g av x"
+      "expected": "öppna, f delat med g, stäng, av x, är lika med, f av x, delat med g av x"
     },
     "Function048": {
-      "expected": "öppna, f delat med g, stäng, av, öppna, 2 x, plus 5, stäng, lika med, bråket med täljare f av, öppna, 2 x, plus 5, stäng, och nämnare g av, öppna, 2 x, plus 5, stäng"
+      "expected": "öppna, f delat med g, stäng, av, öppna, 2 x, plus 5, stäng, är lika med, bråket med täljare f av, öppna, 2 x, plus 5, stäng, och nämnare g av, öppna, 2 x, plus 5, stäng"
     },
     "Function049": {
-      "expected": "öppna, f och g, stäng, av x, lika med f av, g av x"
+      "expected": "öppna, f och g, stäng, av x, är lika med f av, g av x"
     },
     "Function050": {
       "expected": "2 f av x"
@@ -257,10 +257,10 @@
       "expected": "femte upphöjt till, f av, öppna, 2 x, plus 1, stäng"
     },
     "Function060": {
-      "expected": "n-te upphöjt till, f av x"
+      "expected": "n upphöjt till, f av x"
     },
     "Function061": {
-      "expected": "n-te upphöjt till, f av, öppna, 2 x, plus 1, stäng"
+      "expected": "n upphöjt till, f av, öppna, 2 x, plus 1, stäng"
     },
     "Function062": {
       "expected": "g kvadrat av x"
@@ -287,10 +287,10 @@
       "expected": "femte upphöjt till, h av, öppna, 2 x, plus 1, stäng"
     },
     "Function070": {
-      "expected": "n-te upphöjt till, g av x"
+      "expected": "n upphöjt till, g av x"
     },
     "Function071": {
-      "expected": "n-te upphöjt till, g av, öppna, 2 x, plus 1, stäng"
+      "expected": "n upphöjt till, g av, öppna, 2 x, plus 1, stäng"
     },
     "Function072": {
       "expected": "f index 1, av x"
@@ -347,7 +347,7 @@
       "expected": "h gånger en halv"
     },
     "Function091": {
-      "expected": "f gånger, öppna, x plus 1, stäng, lika med, f gånger x, plus 1"
+      "expected": "f gånger, öppna, x plus 1, stäng, är lika med, f gånger x, plus 1"
     },
     "Function092": {
       "expected": "g gånger, öppna, 2 x, plus 1, stäng"
@@ -398,7 +398,7 @@
       "expected": "h upphöjt till minus 1, gånger, h gånger en halv"
     },
     "Function110": {
-      "expected": "f upphöjt till minus 1, gånger, öppna, f gånger, öppna, x plus 1, stäng, stäng, lika med x plus 1"
+      "expected": "f upphöjt till minus 1, gånger, öppna, f gånger, öppna, x plus 1, stäng, stäng, är lika med x plus 1"
     },
     "Function111": {
       "expected": "g upphöjt till minus 1, gånger, öppna, g gånger, öppna, 2 x, plus 1, stäng, stäng"
@@ -443,10 +443,10 @@
       "expected": "h gånger, öppna, g gånger, öppna, bråket med täljare x, och nämnare x plus 1, stäng, stäng"
     },
     "Function126": {
-      "expected": "öppna, f plus g, stäng, gånger x, lika med, f gånger x, plus, g gånger x"
+      "expected": "öppna, f plus g, stäng, gånger x, är lika med, f gånger x, plus, g gånger x"
     },
     "Function127": {
-      "expected": "öppna, f plus g, stäng, gånger, öppna, x plus 1, stäng, lika med, f gånger, öppna, x plus 1, stäng, plus, g gånger, öppna, x plus 1, stäng"
+      "expected": "öppna, f plus g, stäng, gånger, öppna, x plus 1, stäng, är lika med, f gånger, öppna, x plus 1, stäng, plus, g gånger, öppna, x plus 1, stäng"
     },
     "Function128": {
       "expected": "öppna, f punkt g, stäng, gånger x"
@@ -455,10 +455,10 @@
       "expected": "öppna, f punkt g, stäng, gånger, öppna, 2 x, plus 5, stäng"
     },
     "Function130": {
-      "expected": "öppna, f delat med g, stäng, gånger x, lika med, bråket med täljare, f gånger x, och nämnare, g gånger x"
+      "expected": "öppna, f delat med g, stäng, gånger x, är lika med, bråket med täljare, f gånger x, och nämnare, g gånger x"
     },
     "Function131": {
-      "expected": "öppna, f delat med g, stäng, gånger, öppna, 2 x, plus 5, stäng, lika med, bråket med täljare, f gånger, öppna, 2 x, plus 5, stäng, och nämnare, g gånger, öppna, 2 x, plus 5, stäng"
+      "expected": "öppna, f delat med g, stäng, gånger, öppna, 2 x, plus 5, stäng, är lika med, bråket med täljare, f gånger, öppna, 2 x, plus 5, stäng, och nämnare, g gånger, öppna, 2 x, plus 5, stäng"
     },
     "Function132": {
       "expected": "2, f gånger x"
@@ -491,10 +491,10 @@
       "expected": "f upphöjt till femte, gånger, öppna, 2 x, plus 1, stäng"
     },
     "Function142": {
-      "expected": "f upphöjt till n-te, gånger x"
+      "expected": "f upphöjt till n, gånger x"
     },
     "Function143": {
-      "expected": "f upphöjt till n-te, gånger, öppna, 2 x, plus 1, stäng"
+      "expected": "f upphöjt till n, gånger, öppna, 2 x, plus 1, stäng"
     },
     "Function144": {
       "expected": "g kvadrat gånger x"
@@ -521,10 +521,10 @@
       "expected": "h upphöjt till femte, gånger, öppna, 2 x, plus 1, stäng"
     },
     "Function152": {
-      "expected": "g upphöjt till n-te, gånger x"
+      "expected": "g upphöjt till n, gånger x"
     },
     "Function153": {
-      "expected": "g upphöjt till n-te, gånger, öppna, 2 x, plus 1, stäng"
+      "expected": "g upphöjt till n, gånger, öppna, 2 x, plus 1, stäng"
     },
     "Function154": {
       "expected": "f index 1, gånger x"
