@@ -29,22 +29,22 @@
   "compare": true,
   "tests": {
     "UnitSquare_0_default": {
-      "expected": "kvadrat tum"
+      "expected": "kvadrattum"
     },
     "UnitSquare_1_default": {
       "expected": "sekunder upphöjt till andra"
     },
     "UnitSquare_2_default": {
-      "expected": "kvadrat meter"
+      "expected": "kvadratmeter"
     },
     "UnitCube_0_default": {
-      "expected": "kubik tum"
+      "expected": "kubiktum"
     },
     "UnitCube_1_default": {
       "expected": "sekunder upphöjt till tredje"
     },
     "UnitCube_2_default": {
-      "expected": "kubik meter"
+      "expected": "kubikmeter"
     },
     "UnitInverse_default": {
       "expected": "invers tum"
@@ -68,10 +68,10 @@
       "expected": "kΩ"
     },
     "UnitsSingle_4": {
-      "expected": "coulomb"
+      "expected": "celsius"
     },
     "UnitsSimple_0": {
-      "expected": "minimum av minutes"
+      "expected": "minimum av minuter"
     },
     "UnitsSimple_1": {
       "expected": "3 km"
@@ -80,10 +80,10 @@
       "expected": "km plus sekunder"
     },
     "UnitsSuperscript_0": {
-      "expected": "kvadrat km"
+      "expected": "kvadratkm"
     },
     "UnitsSuperscript_1": {
-      "expected": "kubik meter"
+      "expected": "kubikmeter"
     },
     "UnitsSuperscript_2": {
       "expected": "km upphöjt till fjärde"
@@ -104,28 +104,28 @@
       "expected": "3 invers meter"
     },
     "UnitsSuperscript_8": {
-      "expected": "km per hour"
+      "expected": "km per timme"
     },
     "UnitsSuperscript_9": {
-      "expected": "newton km per hour"
+      "expected": "newton km per timme"
     },
     "UnitsSuperscript_10": {
       "expected": "m delat med km"
     },
     "UnitsSuperscript_11": {
-      "expected": "3 km hours"
+      "expected": "3 km timmar"
     },
     "UnitsExpressions_0": {
-      "expected": "sekunder 3 m km hours"
+      "expected": "sekunder 3 m km timmar"
     },
     "UnitsExpressions_1": {
-      "expected": "km sekunder upphöjt till andra 3 m km hours"
+      "expected": "km sekunder upphöjt till andra 3 m km timmar"
     },
     "UnitsExpressions_2": {
-      "expected": "3 m km hours bråket med täljare N och nämnare sekunder upphöjt till andra"
+      "expected": "3 m km timmar bråket med täljare N och nämnare sekunder upphöjt till andra"
     },
     "UnitsExpressions_3": {
-      "expected": "3 m km hours newton per sekund upphöjt till andra"
+      "expected": "3 m km timmar newton per sekund upphöjt till andra"
     },
     "UnitPlural_1": {
       "expected": "4 mm"
@@ -161,37 +161,37 @@
       "expected": "meter sekunder liter"
     },
     "issue_364_1": {
-      "expected": "63360 tum lika med 63360 tum lika med 63360 tum lika med 63360 inches lika med 5280 fot lika med 5280 fot lika med 5280 fot lika med 5280 feet lika med 1760 yards lika med 1760 yards lika med 1760 yards lika med 1 mile lika med 1 mile lika med 1 mile"
+      "expected": "63360 tum är lika med 63360 tum är lika med 63360 tum är lika med 63360 inches är lika med 5280 fot är lika med 5280 fot är lika med 5280 fot är lika med 5280 feet är lika med 1760 yards är lika med 1760 yards är lika med 1760 yards är lika med 1 mile är lika med 1 mile är lika med 1 mile"
     },
     "issue_364_2": {
-      "expected": "8000 links lika med 8000 links lika med 8000 links lika med 320 rods lika med 320 rods lika med 320 rods lika med 80 chains lika med 80 chains lika med 80 chains lika med 8 furlongs lika med 8 furlongs lika med 8 furlongs lika med 1 mile lika med 1 mile lika med 1 mile"
+      "expected": "8000 links är lika med 8000 links är lika med 8000 links är lika med 320 rods är lika med 320 rods är lika med 320 rods är lika med 80 chains är lika med 80 chains är lika med 80 chains är lika med 8 furlongs är lika med 8 furlongs är lika med 8 furlongs är lika med 1 mile är lika med 1 mile är lika med 1 mile"
     },
     "issue_364_3": {
-      "expected": "43560 kvadrat fot lika med 43560 kvadrat fot lika med 43560 kvadrat fot lika med 43560 fot kvadrat lika med 43560 square feet lika med 4840 kvadrat yards lika med 4840 kvadrat yards lika med 4840 kvadrat yards lika med 4840 square yards lika med 160 sq rd lika med 160 sq. rd. lika med 160 kvadrat rods lika med 160 square rods lika med 1 acre lika med 1 acre lika med 1 acre lika med 1 delat med 640 kvadrat miles lika med 1 delat med 640 kvadrat miles lika med 1 delat med 640 kvadrat miles lika med 1 delat med 640 square miles"
+      "expected": "43560 kvadrat fot är lika med 43560 kvadrat fot är lika med 43560 kvadratfot är lika med 43560 fot kvadrat är lika med 43560 square feet är lika med 4840 kvadrat yards är lika med 4840 kvadrat yards är lika med 4840 kvadratyards är lika med 4840 square yards är lika med 160 sq rd är lika med 160 sq. rd. är lika med 160 kvadratrods är lika med 160 square rods är lika med 1 acre är lika med 1 acre är lika med 1 acre är lika med 1 delat med 640 kvadrat miles är lika med 1 delat med 640 kvadrat miles är lika med 1 delat med 640 kvadratmiles är lika med 1 delat med 640 square miles"
     },
     "issue_364_4": {
-      "expected": "46656 kubik tum lika med 46656 kubik tum lika med 46656 kubik tum lika med 46656 tum kubik lika med 46656 cubic inches lika med 27 kubik fot lika med 27 kubik fot lika med 27 kubik fot lika med 27 fot kubik lika med 27 cubic feet lika med 1 kubik yard lika med 1 kubik yard lika med 1 kubik yard lika med 1 cubic yard"
+      "expected": "46656 kubik tum är lika med 46656 kubik tum är lika med 46656 kubiktum är lika med 46656 tum kubik är lika med 46656 cubic inches är lika med 27 kubik fot är lika med 27 kubik fot är lika med 27 kubikfot är lika med 27 fot kubik är lika med 27 cubic feet är lika med 1 kubik yard är lika med 1 kubik yard är lika med 1 kubikyard är lika med 1 cubic yard"
     },
     "issue_364_5": {
-      "expected": "1024 fluid drams lika med 1024 fluid drams lika med 1024 fluid drams lika med 768 teskedar lika med 768 teskedar lika med 768 teaspoons lika med 256 matskedar lika med 256 matskedar lika med 256 tablespoons lika med 128 fluid ounces lika med 128 fluid ounces lika med 128 fluid ounces lika med 16 koppar lika med 16 koppar lika med 16 cups lika med 8 pints lika med 8 pints lika med 8 pints lika med 4 quarts lika med 4 quarts lika med 4 quarts lika med 1 gallon lika med 1 gallon lika med 1 gallon"
+      "expected": "1024 fluid drams är lika med 1024 fluid drams är lika med 1024 fluid drams är lika med 768 teskedar är lika med 768 teskedar är lika med 768 teaspoons är lika med 256 matskedar är lika med 256 matskedar är lika med 256 tablespoons är lika med 128 fluid ounces är lika med 128 fluid ounces är lika med 128 fluid ounces är lika med 16 koppar är lika med 16 koppar är lika med 16 cups är lika med 8 pints är lika med 8 pints är lika med 8 pints är lika med 4 quarts är lika med 4 quarts är lika med 4 quarts är lika med 1 gallon är lika med 1 gallon är lika med 1 gallon"
     },
     "issue_364_6": {
-      "expected": "256 drams lika med 256 drams lika med 256 drams lika med 16 uns lika med 16 uns lika med 16 ounces lika med 1 # lika med 1 skålpund lika med 1 skålpund lika med 1 pounds lika med 100 centner lika med 100 centner lika med 100 hundredweights lika med 2000 tons"
+      "expected": "256 drams är lika med 256 drams är lika med 256 drams är lika med 16 uns är lika med 16 uns är lika med 16 ounces är lika med 1 # är lika med 1 skålpund är lika med 1 skålpund är lika med 1 pounds är lika med 100 centner är lika med 100 centner är lika med 100 hundredweights är lika med 2000 tons"
     },
     "issue_366": {
-      "expected": "63360 tum lika med 63360 tum lika med 63360 tum lika med 63360 inches lika med 5280 fot lika med 5280 fot lika med 5280 fot lika med 5280 feet lika med 1760 yards lika med 1760 yards lika med 1760 yards lika med 1 mile lika med 1 mile lika med 1 mile"
+      "expected": "63360 tum är lika med 63360 tum är lika med 63360 tum är lika med 63360 inches är lika med 5280 fot är lika med 5280 fot är lika med 5280 fot är lika med 5280 feet är lika med 1760 yards är lika med 1760 yards är lika med 1760 yards är lika med 1 mile är lika med 1 mile är lika med 1 mile"
     },
     "testSample_13_1_2_var0": {
-      "expected": "1 joule lika med 1 kg mellanpunkt kvadrat meter mellanpunkt sekunder upphöjt till minus 2"
+      "expected": "1 joule är lika med 1 kg halvhög punkt kvadratmeter halvhög punkt sekunder upphöjt till minus 2"
     },
     "testSample_13_1_2_var1": {
-      "expected": "1 joule lika med 1 kg kvadrat meter sekunder upphöjt till minus 2"
+      "expected": "1 joule är lika med 1 kg kvadratmeter sekunder upphöjt till minus 2"
     },
     "testSample_13_1_2_var2": {
-      "expected": "1 joule lika med 1 kg kvadrat meter sekunder upphöjt till minus 2"
+      "expected": "1 joule är lika med 1 kg kvadratmeter sekunder upphöjt till minus 2"
     },
     "unit_cube": {
-      "expected": "kubik tum"
+      "expected": "kubiktum"
     },
     "UnitDiv_0": {
       "expected": "km kg sekunder upphöjt till andra per joule"

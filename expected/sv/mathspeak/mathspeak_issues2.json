@@ -10,46 +10,46 @@
   "compare": true,
   "tests": {
     "MathspeakRoots_0": {
-      "expected": "startrot a slutrot"
+      "expected": "StartRot a SlutRot"
     },
     "MathspeakRoots_1": {
-      "expected": "rotindex 2 startrot a slutrot"
+      "expected": "RotIndex 2 StartRot a SlutRot"
     },
     "MathspeakRoots_2": {
-      "expected": "rotindex 3 startrot a slutrot"
+      "expected": "RotIndex 3 StartRot a SlutRot"
     },
     "MathspeakRoots_3": {
-      "expected": "rotindex 4 startrot a slutrot"
+      "expected": "RotIndex 4 StartRot a SlutRot"
     },
     "MathspeakRoots_4": {
-      "expected": "nästladstartrot startrot a slutrot nästladslutrot"
+      "expected": "NästladStartRot StartRot a SlutRot NästladSlutRot"
     },
     "MathspeakRoots_5": {
-      "expected": "nästladdubbeltstartrot nästladstartrot startrot a slutrot nästladslutrot nästladdubbeltslutrot"
+      "expected": "NästladDubbeltStartRot NästladStartRot StartRot a SlutRot NästladSlutRot NästladDubbeltSlutRot"
     },
     "MathspeakRoots_6": {
-      "expected": "nästladrotindex 2 nästladstartrot rotindex 2 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 2 NästladStartRot RotIndex 2 StartRot a SlutRot NästladSlutRot"
     },
     "MathspeakRoots_7": {
-      "expected": "nästladdubbeltrotindex 2 nästladdubbeltstartrot nästladrotindex 2 nästladstartrot rotindex 2 startrot a slutrot nästladslutrot nästladdubbeltslutrot"
+      "expected": "NästladDubbeltRotIndex 2 NästladDubbeltStartRot NästladRotIndex 2 NästladStartRot RotIndex 2 StartRot a SlutRot NästladSlutRot NästladDubbeltSlutRot"
     },
     "MathspeakRoots_8": {
-      "expected": "nästladrotindex 3 nästladstartrot rotindex 3 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 3 NästladStartRot RotIndex 3 StartRot a SlutRot NästladSlutRot"
     },
     "MathspeakRoots_9": {
-      "expected": "nästladdubbeltrotindex 3 nästladdubbeltstartrot nästladrotindex 3 nästladstartrot rotindex 3 startrot a slutrot nästladslutrot nästladdubbeltslutrot"
+      "expected": "NästladDubbeltRotIndex 3 NästladDubbeltStartRot NästladRotIndex 3 NästladStartRot RotIndex 3 StartRot a SlutRot NästladSlutRot NästladDubbeltSlutRot"
     },
     "MathspeakRoots_10": {
-      "expected": "nästladrotindex 4 nästladstartrot rotindex 4 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 4 NästladStartRot RotIndex 4 StartRot a SlutRot NästladSlutRot"
     },
     "MathspeakRoots_11": {
-      "expected": "nästladdubbeltrotindex 4 nästladdubbeltstartrot nästladrotindex 4 nästladstartrot rotindex 4 startrot a slutrot nästladslutrot nästladdubbeltslutrot"
+      "expected": "NästladDubbeltRotIndex 4 NästladDubbeltStartRot NästladRotIndex 4 NästladStartRot RotIndex 4 StartRot a SlutRot NästladSlutRot NästladDubbeltSlutRot"
     },
     "MathspeakRoots_12": {
-      "expected": "nästladdubbeltrotindex 2 nästladdubbeltstartrot nästladrotindex 3 nästladstartrot rotindex 4 startrot a slutrot nästladslutrot nästladdubbeltslutrot"
+      "expected": "NästladDubbeltRotIndex 2 NästladDubbeltStartRot NästladRotIndex 3 NästladStartRot RotIndex 4 StartRot a SlutRot NästladSlutRot NästladDubbeltSlutRot"
     },
     "MathspeakRoots_13": {
-      "expected": "nästladdubbeltrotindex 4 nästladdubbeltstartrot nästladrotindex 3 nästladstartrot rotindex 2 startrot a slutrot nästladslutrot nästladdubbeltslutrot"
+      "expected": "NästladDubbeltRotIndex 4 NästladDubbeltStartRot NästladRotIndex 3 NästladStartRot RotIndex 2 StartRot a SlutRot NästladSlutRot NästladDubbeltSlutRot"
     },
     "HtmlEntities_0": {
       "expected": "mindre än"
@@ -79,13 +79,13 @@
       "expected": "StartBinomEllerMatris n Välj k SlutBinomEllerMatris"
     },
     "BinomialFromFrac_3": {
-      "expected": "öppna start bråk n över k slut bråk stäng"
+      "expected": "öppna StartBråk n Över k SlutBråk stäng"
     },
     "BinomialFromFrac_4": {
-      "expected": "öppna start bråk n över k slut bråk stäng"
+      "expected": "öppna StartBråk n Över k SlutBråk stäng"
     },
     "BinomialFromFrac_5": {
-      "expected": "öppna start bråk n över k slut bråk stäng"
+      "expected": "öppna StartBråk n Över k SlutBråk stäng"
     },
     "UnnecessarySpaces_0": {
       "expected": "5"
@@ -94,16 +94,16 @@
       "expected": "5"
     },
     "NegativeVulgarFraction_0": {
-      "expected": "ett halv minus fem artondedelar"
+      "expected": "en halv minus fem artondelar"
     },
     "NegativeVulgarFraction_1": {
-      "expected": "minus start bråk 5,2 över a slut bråk"
+      "expected": "minus StartBråk 5,2 Över a SlutBråk"
     },
     "NegativeVulgarFraction_2": {
-      "expected": "minus start bråk 5,2 över 18 slut bråk"
+      "expected": "minus StartBråk 5,2 Över 18 SlutBråk"
     },
     "TrivialStuff_0": {
-      "expected": "a lika med b"
+      "expected": "a är lika med b"
     },
     "TrivialStuff_1": {
       "expected": "citationstecken"
@@ -118,22 +118,22 @@
       "expected": "fraktur stort A"
     },
     "GermanFonts_1": {
-      "expected": "fetstil fraktur  stort A"
+      "expected": "fetstil fraktur stort A"
     },
     "GermanFonts_2": {
       "expected": "fraktur stort A"
     },
     "GermanFonts_3": {
-      "expected": "fetstil fraktur  stort A"
+      "expected": "fetstil fraktur stort A"
     },
     "GermanFonts_4": {
-      "expected": "fetstil fraktur  abc"
+      "expected": "fetstil fraktur abc"
     },
     "GermanFonts_5": {
-      "expected": "fetstil fraktur  ABC"
+      "expected": "fetstil fraktur ABC"
     },
     "GermanFonts_6": {
-      "expected": "fetstil fraktur  stort A stort B stort C"
+      "expected": "fetstil fraktur stort A stort B stort C"
     },
     "OtherFonts_0": {
       "expected": "m"
@@ -169,10 +169,10 @@
       "expected": "mindre än eller lika med 2"
     },
     "RelationsWithEmpty_1": {
-      "expected": "lika med 2 lika med"
+      "expected": "är lika med 2 är lika med"
     },
     "RelationsWithEmpty_2": {
-      "expected": "mindre än eller lika med 2 lika med"
+      "expected": "mindre än eller lika med 2 är lika med"
     },
     "RelationsWithEmpty_3": {
       "expected": "StartLayout 1:a Rad 1:a Kolumn 1 2:a Kolumn mindre än eller lika med 2 SlutLayout"
@@ -190,10 +190,10 @@
       "expected": "fraktur stort A"
     },
     "LatinMathfonts_1": {
-      "expected": "fetstil fraktur  stort A"
+      "expected": "fetstil fraktur stort A"
     },
     "LatinMathfonts_2": {
-      "expected": "fetstil skript stort A"
+      "expected": "fetstil skrivstil stort A"
     },
     "LatinMathfonts_3": {
       "expected": "fetstil kursiv stort A"
@@ -202,7 +202,7 @@
       "expected": "fetstil stort A"
     },
     "LatinMathfonts_5": {
-      "expected": "double-struck stort A"
+      "expected": "stort A med dubbelstreck"
     },
     "LatinMathfonts_6": {
       "expected": "stort A"
@@ -223,7 +223,7 @@
       "expected": "sans-serif stort A"
     },
     "LatinMathfonts_12": {
-      "expected": "skript stort A"
+      "expected": "skrivstil stort A"
     },
     "GreekMathfonts_0": {
       "expected": "fetstil stort Alpha"
@@ -244,7 +244,7 @@
       "expected": ""
     },
     "Issue279_1": {
-      "expected": "StartLayout 1:a Rad  med Etikett öppna 3 1 10 stäng SlutEtikett SlutLayout"
+      "expected": "StartLayout 1:a Rad  med Etikett öppna 3 punkt 1 punkt 10 stäng SlutEtikett SlutLayout"
     },
     "Issue320_0": {
       "expected": "partiell derivata"
@@ -265,7 +265,7 @@
       "expected": "partiell derivata partiell derivata x"
     },
     "Issue320_6": {
-      "expected": "öppna start bråk partiell derivata kvadrat över partiell derivata x kvadrat slut bråk plus start bråk partiell derivata kvadrat över partiell derivata y kvadrat slut bråk stäng StartAbsolutVärde fi öppna x plus normal I y stäng SlutAbsolutVärde kvadrat lika med 0"
+      "expected": "öppna StartBråk partiell derivata kvadrat Över partiell derivata x kvadrat SlutBråk plus StartBråk partiell derivata kvadrat Över partiell derivata y kvadrat SlutBråk stäng StartAbsolutVärde fi öppna x plus normal I y stäng SlutAbsolutVärde kvadrat är lika med 0"
     },
     "Prime_0": {
       "expected": "x prim"
@@ -277,7 +277,7 @@
       "expected": "x trippel prim"
     },
     "Prime_3": {
-      "expected": "x quadruple prime"
+      "expected": "x kvadrupla prim"
     },
     "Prime_4": {
       "expected": "x prim"
@@ -286,10 +286,10 @@
       "expected": "x dubbelt prim"
     },
     "Prime_6": {
-      "expected": "x"
+      "expected": "x prim"
     },
     "Prime_7": {
-      "expected": "x"
+      "expected": "x dubbla prim"
     },
     "Prime_8": {
       "expected": "x apostrof"
@@ -301,7 +301,7 @@
       "expected": "x trippel prim"
     },
     "Prime_11": {
-      "expected": "x quadruple prime"
+      "expected": "x kvadrupla prim"
     },
     "Prime_12": {
       "expected": "x fem prim"
@@ -316,7 +316,7 @@
       "expected": "x trippel prim"
     },
     "Prime_16": {
-      "expected": "x quadruple prime"
+      "expected": "x kvadrupla prim"
     },
     "Prime_17": {
       "expected": "x fem prim"
@@ -325,43 +325,43 @@
       "expected": "x sex prim"
     },
     "LimBoth_0": {
-      "expected": "ModifieradÖver ModifieradUnder summa underskrift n överskrift 2 Med streck under Med tilde"
+      "expected": "ModifieradÖver ModifieradUnder summa UnderSkrift n ÖverSkrift 2 Med streck Med tilde"
     },
     "LimBoth_1": {
-      "expected": "ModifieradÖver ModifieradUnder summa underskrift n överskrift 2 Med streck under Med tilde"
+      "expected": "ModifieradÖver ModifieradUnder summa UnderSkrift n ÖverSkrift 2 Med streck Med tilde"
     },
     "LimBoth_2": {
-      "expected": "ModifieradÖver ModifieradUnder summa underskrift n överskrift 2 Med streck under Med tilde"
+      "expected": "ModifieradÖver ModifieradUnder summa UnderSkrift n ÖverSkrift 2 Med streck Med tilde"
     },
     "LimBoth_3": {
-      "expected": "summa underskrift n överskrift 2"
+      "expected": "summa UnderSkrift n ÖverSkrift 2"
     },
     "LimBoth_4": {
-      "expected": "summa underskrift n överskrift 2 a"
+      "expected": "summa UnderSkrift n ÖverSkrift 2 a"
     },
     "LimUpper_0": {
-      "expected": "summa överskrift n"
+      "expected": "summa ÖverSkrift n"
     },
     "LimUpper_1": {
-      "expected": "summa överskrift n a"
+      "expected": "summa ÖverSkrift n a"
     },
     "LimUpper_2": {
-      "expected": "summa överskrift n"
+      "expected": "summa ÖverSkrift n"
     },
     "LimUpper_3": {
-      "expected": "summa överskrift n a"
+      "expected": "summa ÖverSkrift n a"
     },
     "LimLower_0": {
-      "expected": "summa underskrift n"
+      "expected": "summa UnderSkrift n"
     },
     "LimLower_1": {
-      "expected": "summa underskrift n a"
+      "expected": "summa UnderSkrift n a"
     },
     "LimLower_2": {
-      "expected": "summa underskrift n"
+      "expected": "summa UnderSkrift n"
     },
     "LimLower_3": {
-      "expected": "summa underskrift n a"
+      "expected": "summa UnderSkrift n a"
     },
     "Issue_442_0": {
       "expected": "9 delat med 3 inte lika med 9 gånger 3"
