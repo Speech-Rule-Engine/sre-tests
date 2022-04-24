@@ -65,8 +65,21 @@ export class MarkupTest extends AbstractJsonTest {
   /**
    * @override
    */
+  public async setUpTest() {
+    await super.setUpTest();
+    return System.setupEngine({
+      modality: 'speech',
+      locale: 'en',
+      style: 'default'
+    });
+  }
+
+  /**
+   * @override
+   */
   public async tearDownTest() {
-    return System.setupEngine({ markup: EngineConst.Markup.NONE });
+    await System.setupEngine({ markup: EngineConst.Markup.NONE });
+    return super.tearDownTest();
   }
 
   /**
@@ -85,10 +98,7 @@ export class MarkupTest extends AbstractJsonTest {
   ) {
     expr = expr || MarkupTest.QUADRATIC;
     await System.setupEngine({
-      locale: 'en',
-      modality: 'speech',
       domain: domain || 'default',
-      style: 'default',
       markup: markup ? markup.toLowerCase() : EngineConst.Markup.NONE
     });
     // TODO (TS): Markup should be taken from the enum.

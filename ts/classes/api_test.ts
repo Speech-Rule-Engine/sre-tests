@@ -34,7 +34,6 @@ export class ApiTest extends AbstractJsonTest {
    * Feature vector for setting up the engine.
    */
   public static SETUP: { [key: string]: string } = {
-    locale: 'en',
     domain: 'mathspeak',
     style: 'default',
     modality: 'speech',
@@ -63,16 +62,9 @@ export class ApiTest extends AbstractJsonTest {
   public async setUpTest() {
     annotators.clear();
     visitors.clear();
-    return Promise.resolve('');
-  }
-
-  /**
-   * Sets up SRE.
-   *
-   * @param feature The feature vector for the engine.
-   */
-  public async setupEngine(feature: { [key: string]: string }) {
-    await System.setupEngine(feature || ApiTest.SETUP);
+    return System.setupEngine({
+      locale: 'en'
+    });
   }
 
   /**
@@ -93,7 +85,7 @@ export class ApiTest extends AbstractJsonTest {
     json: boolean,
     move: boolean
   ) {
-    this.setupEngine(feature);
+    System.setupEngine(feature || ApiTest.SETUP);
     expr = move ? Key.get(expr) : expr || ApiTest.QUADRATIC;
     let output = (System as any)[func](expr);
     output = output
