@@ -40,6 +40,28 @@ import * as WalkerUtil from '../../speech-rule-engine/js/walker/walker_util';
  * Base class for all the semantic tree related tests.
  */
 export abstract class SemanticTest extends AbstractExamples {
+
+  /**
+   * @override
+   */
+  public async setUpTest() {
+    await super.setUpTest();
+    return System.setupEngine({
+      domain: 'mathspeak',
+      style: 'default'
+    });
+  }
+
+  /**
+   * @override
+   */
+  public async tearDownTest() {
+    await System.setupEngine({
+      domain: 'default'
+    });
+    return super.tearDownTest();
+  }
+
   /**
    * @override
    */
@@ -95,8 +117,6 @@ export class EnrichSpeechTest extends SemanticTest {
   public async setUpTest() {
     await super.setUpTest();
     return System.setupEngine({
-      domain: 'mathspeak',
-      style: 'default',
       speech: EngineConst.Speech.SHALLOW
     });
   }
@@ -106,8 +126,6 @@ export class EnrichSpeechTest extends SemanticTest {
    */
   public async tearDownTest() {
     await System.setupEngine({
-      domain: 'default',
-      style: 'default',
       speech: EngineConst.Speech.NONE
     });
     return super.tearDownTest();
@@ -132,6 +150,7 @@ export class EnrichSpeechTest extends SemanticTest {
  * Tests that can remove elements from an XML element.
  */
 export abstract class SemanticBlacklistTest extends SemanticTest {
+
   /**
    * The blacklist of attributes to be removed before comparison.
    */
@@ -166,6 +185,7 @@ export abstract class SemanticBlacklistTest extends SemanticTest {
  * Semantic Tree Tests
  */
 export class SemanticTreeTest extends SemanticBlacklistTest {
+
   /**
    * @override
    */
@@ -196,10 +216,10 @@ export class SemanticTreeTest extends SemanticBlacklistTest {
     const mathMl = Enrich.prepareMmlString(mml);
     const node = DomUtil.parseInput(mathMl);
     const sxml = new SemanticTree(node).xml(opt_brief);
+    const xmls = new xmldom.XMLSerializer();
     this.customizeXml(sxml);
     const dp = new xmldom.DOMParser();
     const xml = dp.parseFromString(this.prepareStree(sml), 'text/xml');
-    const xmls = new xmldom.XMLSerializer();
     this.assert.equal(
       xmls.serializeToString(sxml),
       xmls.serializeToString(xml)
