@@ -58,7 +58,7 @@ namespace AnalyticsUtil {
    *
    */
   export async function initAllSets() {
-    for (const locale of Variables.LOCALES) {
+    for (const locale of Variables.LOCALES.keys()) {
       await System.setupEngine({ locale: locale });
     }
   }

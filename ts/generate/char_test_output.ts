@@ -666,7 +666,7 @@ export async function diffBaseVsLocale(
  * @param dir
  */
 export async function allTests(dir = '/tmp/symbols') {
-  for (const loc of Variables.LOCALES) {
+  for (const loc of Variables.LOCALES.keys()) {
     for (const kind of Object.values(SymbolType)) {
       await testOutputFromBoth(loc, kind, dir);
       await testOutputFromExtras(loc, kind, dir);
