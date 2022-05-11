@@ -604,8 +604,11 @@ different sub-directories:
 5. `semantic_tree`, translate into semantic trees.
 6. `semantic_xml`, tests consistency of the semantic tree parser, i.e., parsing
    the XML output of the semantic tree results in the equivalent semantic tree.
+7. `deep_speech`, tests in an enriched Mathml element with deep speech, that
+   every tree element with a semantic id has speech attached and vice versa.
 
-Note that tests 2, 3, 4, and 6, usually run with respect to `"tests": "ALL"`.
+
+Note that tests 2, 3, 4, 6 and 7, usually run with respect to `"tests": "ALL"`.
 
 
 ### Copying tests

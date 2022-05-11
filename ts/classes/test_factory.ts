@@ -41,6 +41,7 @@ import { WalkerTest } from './walker_test';
 const map = new Map<string, any>([
   ['api', ApiTest],
   ['braille2D', BrailleLayoutTest],
+  ['deepSpeech', st.DeepSpeechTest],
   ['clearspeak', ClearspeakTest],
   ['clearspeakAnnotation', ClearspeakAnnotationTest],
   ['collapse', CollapseTest],

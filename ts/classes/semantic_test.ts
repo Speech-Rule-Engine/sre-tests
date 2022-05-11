@@ -112,12 +112,17 @@ export class EnrichSpeechTest extends SemanticTest {
   public pickFields = ['input'];
 
   /**
+   * Nesting depth of generated speech.
+   */
+  protected speech = EngineConst.Speech.SHALLOW;
+
+  /**
    * @override
    */
   public async setUpTest() {
     await super.setUpTest();
     return System.setupEngine({
-      speech: EngineConst.Speech.SHALLOW
+      speech: this.speech
     });
   }
 
@@ -143,6 +148,36 @@ export class EnrichSpeechTest extends SemanticTest {
     const enr = WalkerUtil.getSemanticRoot(System.toEnriched(mml));
     const enrSpeech = enr.getAttribute(Attribute.SPEECH);
     this.assert.equal(sysSpeech, enrSpeech);
+  }
+}
+
+/**
+ * Enriched Speech Tests
+ */
+export class DeepSpeechTest extends EnrichSpeechTest {
+
+  /**
+   * @override
+   */
+  protected speech = EngineConst.Speech.DEEP;
+
+  /**
+   * Tests if speech strings computed directly for a MathML expression are
+   * equivalent to those computed for enriched expressions.
+   *
+   * @override
+   */
+  public executeTest(expr: string) {
+    const mml = Enrich.prepareMmlString(expr);
+    const enr = System.toEnriched(mml);
+    const ids = DomUtil.querySelectorAllByAttr(enr, 'data-semantic-id');
+    for (let id of ids) {
+      expect(id.hasAttribute('data-semantic-speech')).toBe(true);
+    }
+    const speechs = DomUtil.querySelectorAllByAttr(enr, 'data-semantic-speech');
+    for (let speech of speechs) {
+      expect(speech.hasAttribute('data-semantic-id')).toBe(true);
+    }
   }
 }
 

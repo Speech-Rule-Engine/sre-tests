@@ -303,6 +303,10 @@ export function copySemanticTest(base: string) {
     factory: 'enrichSpeech',
     tests: 'ALL'
   });
+  createSemanticTestFile(dirname, 'deep_speech', basename, info, {
+    factory: 'deepSpeech',
+    tests: 'ALL'
+  });
   createSemanticTestFile(dirname, 'rebuild_stree', basename, info, {
     factory: 'rebuild',
     tests: 'ALL'
