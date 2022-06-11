@@ -151,7 +151,7 @@ will run German locale only.
 ``` shell
 npx jest --testPathPattern js/json/de/clearspeak js/json/base
 ```
-will run Clearspeak German tests and base tests. Generally the switch `--testPathPattern` can be omitted. E.g., 
+will run Clearspeak German tests and base tests. Generally the switch `--testPathPattern` can be omitted. E.g.,
 
 ``` shell
 npx jest js/output
@@ -343,7 +343,7 @@ nature:
 ## Working in Node
 
 The majority of test generation, copying, etc. will be handled on the Node
-REPL. There are two ways to ensure that all the necessary files in SRE can be found. 
+REPL. There are two ways to ensure that all the necessary files in SRE can be found.
 
 1. Run node in a shell on where the `SRE_JSON_PATH` variable is set. Or start an
    Emacs that will run the REPL in such a shell.
@@ -456,7 +456,7 @@ and `expected` elements plus all necessary parameters) can be run, it is often
 useful to have separate files for `input` and `expected` values in the
 respective directories. For example, when running speech rule tests all locales
 can use a single base file. Likewise the different types of semantic
-interpretation tests can share the same base file. 
+interpretation tests can share the same base file.
 
 Splitting a comprehensive file into a base file and one with `expected` entries
 only is done by:
@@ -495,7 +495,7 @@ the symbol. Finally, currently no extra tests are generated for `si_unit`.
 ``` javascript
 let cto = require('./js/generate/char_test_output.js');
 ```
-Make sure the `AllConstraints` variable is up to date for all locales, before loading and running: 
+Make sure the `AllConstraints` variable is up to date for all locales, before loading and running:
 
 ``` javascript
 cto.allTests(?dir)
@@ -599,7 +599,7 @@ different sub-directories:
 2. `enrich_speech`, test if speech strings computed directly for a MathML
    expression are equivalent to those computed for enriched expressions.
 3. `rebuild_stree`, test if semantic trees build from enriched MathML
-   expressions are equivalent to hose computed directly.
+   expressions are equivalent to those computed directly.
 4. `semantic_api`, tests consistency of the various semantic APIs.
 5. `semantic_tree`, translate into semantic trees.
 6. `semantic_xml`, tests consistency of the semantic tree parser, i.e., parsing
@@ -617,8 +617,21 @@ Given a base file `BASE` in the `input` directory, we can generate the basic
 structure for the above tests using
 
 ``` javascript
-ct.copySemanticTest(BASE);
+ct.copySemanticTest(BASE, fill?, targetdir?);
 ```
 
 Note, that neither the `semantic_tree` nor the `enrich_mathml` tests will be
-filled with expected. This has to be done manually, e.g., using `ft.addMissing`.
+filled with expected. This has to be either done manually, e.g., using
+`ft.addMissing` or by setting the `fill` flag to `true`.
+
+If only `BASE` is provided, files will copied into a similar directory structure
+from the `input` directory into the `expected` directory. This can be altered by
+providing an explicit `targetdir` parameters. For example,
+
+
+``` javascript
+ct.copySemanticTest('common/direct_speech.json', true, 'semantic');
+```
+
+will generate `direct_speech.json` files in the `semantic` directory with `base`
+file residing in `common`.

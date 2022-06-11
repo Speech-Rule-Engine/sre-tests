@@ -283,7 +283,7 @@ function cleanEntry(entry: JsonTest) {
 /**
  * @param base
  */
-export function copySemanticTest(base: string) {
+export function copySemanticTest(base: string, fill: boolean = false, targetdir?: string) {
   const filename = TestUtil.fileExists(base, TestPath.INPUT);
   if (!filename) {
     return;
@@ -291,34 +291,42 @@ export function copySemanticTest(base: string) {
   const json = TestUtil.loadJson(filename);
   const info = json.information || '';
   const basename = path.basename(base);
-  const dirname = path.dirname(base);
-  createSemanticTestFile(dirname, 'semantic_tree', basename, info, {
+  const sourcedir = path.dirname(base);
+  targetdir = targetdir || sourcedir;
+  createSemanticTestFile(sourcedir, targetdir, 'semantic_tree', basename, info, {
     factory: 'stree'
   });
-  createSemanticTestFile(dirname, 'enrich_mathml', basename, info, {
+  createSemanticTestFile(sourcedir, targetdir, 'enrich_mathml', basename, info, {
     factory: 'enrichMathml',
     active: 'EnrichExamples'
   });
-  createSemanticTestFile(dirname, 'enrich_speech', basename, info, {
+  createSemanticTestFile(sourcedir, targetdir, 'enrich_speech', basename, info, {
     factory: 'enrichSpeech',
     tests: 'ALL'
   });
-  createSemanticTestFile(dirname, 'deep_speech', basename, info, {
+  createSemanticTestFile(sourcedir, targetdir, 'deep_speech', basename, info, {
     factory: 'deepSpeech',
     tests: 'ALL'
   });
-  createSemanticTestFile(dirname, 'rebuild_stree', basename, info, {
+  createSemanticTestFile(sourcedir, targetdir, 'rebuild_stree', basename, info, {
     factory: 'rebuild',
     tests: 'ALL'
   });
-  createSemanticTestFile(dirname, 'semantic_xml', basename, info, {
+  createSemanticTestFile(sourcedir, targetdir, 'semantic_xml', basename, info, {
     factory: 'semanticXml',
     tests: 'ALL'
   });
-  createSemanticTestFile(dirname, 'semantic_api', basename, info, {
+  createSemanticTestFile(sourcedir, targetdir, 'semantic_api', basename, info, {
     factory: 'semanticApi',
     tests: 'ALL'
   });
+  if (fill) {
+    console.log(0);
+    console.log(path.join(targetdir, 'enrich_mathml', basename));
+    addMissing(path.join(targetdir, 'enrich_mathml', basename));
+    console.log(path.join(targetdir, 'semantic_tree', basename));
+    addMissing(path.join(targetdir, 'semantic_tree', basename));
+  }
 }
 
 /**
@@ -329,13 +337,14 @@ export function copySemanticTest(base: string) {
  * @param init
  */
 function createSemanticTestFile(
-  dir: string,
+  src: string,
+  target: string,
   kind: string,
   base: string,
   info: string,
   init: JsonFile
 ) {
-  const filename = path.join(dir, kind, base);
+  const filename = path.join(target, kind, base);
   const file = TestUtil.fileExists(filename, TestPath.EXPECTED);
   if (file) {
     console.error(`File ${file} already exists.`);
@@ -349,7 +358,7 @@ function createSemanticTestFile(
     baseinfo.push('tests.');
   }
   init.information = baseinfo.join(' ');
-  const basefile = path.join('input', dir, base);
+  const basefile = path.join('input', src, base);
   init.base = basefile;
   if (!init.tests) {
     init.tests = {};
