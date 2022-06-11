@@ -88,7 +88,8 @@ export class RebuildStreeTest extends SemanticTest {
   public pickFields = ['input'];
 
   /**
-   * Tests if for a given mathml snippet results in a particular semantic tree.
+   * Tests if the semantic tree rebuilt from an enriched mathml is the same as
+   * the semantic tree constructed from the original mathml snippet.
    *
    * @param expr MathML expression.
    */
@@ -217,6 +218,87 @@ export abstract class SemanticBlacklistTest extends SemanticTest {
 }
 
 /**
+ * Testcases for reconstructing semantic trees from enriched mathml.
+ */
+export class RebuildEnrichedTest extends SemanticBlacklistTest {
+
+  /**
+   * @override
+   */
+  protected blacklist: string[] = [
+    'data-semantic-collapsed',
+    'fencepointer'
+  ];
+
+  /**
+   * @override
+   */
+  public pickFields = ['input'];
+
+  /**
+   * Tests if enrichment is idempotent.
+   *
+   * @param expr MathML expression.
+   */
+  public executeTest(expr: string) {
+    const original = this.semanticTree(expr);
+    const enriched = this.enrichMml(expr);
+    const newTree = this.semanticTree(enriched.toString());
+    let oldXml = original.xml();
+    let newXml = newTree.xml();
+    this.customizeXml(oldXml);
+    this.customizeXml(newXml);
+    this.assert.equal(oldXml.toString(), newXml.toString());
+  }
+
+
+  /**
+   * Semantically enriches a mathml expression.
+   *
+   * @param {string} expr The mathml expression.
+   */
+  private semanticTree(expr: string) {
+    const mathMl = Enrich.prepareMmlString(expr);
+    const mml = DomUtil.parseInput(mathMl);
+    const stree = new SemanticTree(mml);
+    this.canonicalize(stree);
+    return stree;
+  }
+
+  /**
+   * Semantically enriches a mathml expression.
+   *
+   * @param {string} expr The mathml expression.
+   */
+  private enrichMml(expr: string) {
+    const mathMl = Enrich.prepareMmlString(expr);
+    const mml = DomUtil.parseInput(mathMl);
+    const stree = new SemanticTree(mml);
+    this.canonicalize(stree);
+    return enrich(mml, stree);
+  }
+
+  /**
+   * Renumbers the tree in a canonical depth-first order.
+   *
+   * @param {SemanticTree} stree The semantic tree.
+   */
+  private canonicalize(stree: SemanticTree) {
+    let id = 0;
+    const processed = new Map();
+    let nodes = [stree.root];
+    while (nodes.length) {
+      let node = nodes.shift();
+      if (processed.get(node)) continue;
+      nodes = nodes.concat(node.contentNodes, node.childNodes);
+      node.id = id++;
+      processed.set(node, true);
+    }
+  }
+
+}
+
+/**
  * Semantic Tree Tests
  */
 export class SemanticTreeTest extends SemanticBlacklistTest {
@@ -290,6 +372,7 @@ export class EnrichMathmlTest extends SemanticBlacklistTest {
    */
   protected blacklist: string[] = [
     'data-semantic-annotation',
+    'data-semantic-attributes',
     'data-semantic-font',
     'data-semantic-embellished',
     'data-semantic-fencepointer',
