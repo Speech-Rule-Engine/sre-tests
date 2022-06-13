@@ -370,14 +370,7 @@ export class EnrichMathmlTest extends SemanticBlacklistTest {
   /**
    * @override
    */
-  protected blacklist: string[] = [
-    'data-semantic-annotation',
-    'data-semantic-attributes',
-    'data-semantic-font',
-    'data-semantic-embellished',
-    'data-semantic-fencepointer',
-    'data-semantic-structure'
-  ];
+  protected blacklist: string[] = [ ];
 
   /**
    * @override

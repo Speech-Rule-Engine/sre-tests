@@ -180,7 +180,14 @@ export async function removeMissing(expected: string, dryrun = false) {
   removeFromFile(tests['jsonFile'], result);
 }
 
-export function showFailed(regexp = /./, dryrun = false) {
+/**
+ * Shows the result for all missing tests. This is to inspect before adding them
+ * automatically using, for example, `addMissing`.
+ *
+ * @param regexp A regular expression to filter output.
+ * @param dryrun If false, failed tests will be replaced. True by default.
+ */
+export function showFailed(regexp = /./, dryrun = true) {
   const tests = new Tests();
   tests.runner
     .queryJsonTests((x) => x)

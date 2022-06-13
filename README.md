@@ -449,6 +449,11 @@ destructively to the input file.
 `showMissing` prints all missing tests for all available test files. Output can
 be restricted by providing a regular expression for filtering filenames.
 
+`showFailed` prints all failed tests for all available test files. Output can be
+restricted by providing a regular expression for filtering filenames. A second
+parameter offers a dry run flag, which is `true` by default. If set to `false`
+it will correct all the incorrect tests.
+
 ## Splitting Tests
 
 Although test files that provide complete tests (i.e., containing both `input`
