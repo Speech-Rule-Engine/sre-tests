@@ -367,10 +367,6 @@ export class SemanticTreeTest extends SemanticBlacklistTest {
  * Tests for enriched MathML expressions.
  */
 export class EnrichMathmlTest extends SemanticBlacklistTest {
-  /**
-   * @override
-   */
-  protected blacklist: string[] = [ ];
 
   /**
    * @override
