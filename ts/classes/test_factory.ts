@@ -53,6 +53,7 @@ const map = new Map<string, any>([
   ['number', NumberTest],
   ['prefix', PrefixTest],
   ['rebuild', st.RebuildStreeTest],
+  ['rebuildEnriched', st.RebuildEnrichedTest],
   ['rules', SpeechRuleTest],
   ['semanticApi', st.SemanticApiTest],
   ['semanticXml', st.SemanticXmlTest],
