@@ -727,7 +727,7 @@
     },
     "_comment_184": " TODO: This should be improved.",
     "Issue382_1": {
-      "expected": "<integral role=\"integral\" id=\"5\"><content><largeop role=\"integral\" id=\"0\">∫</largeop></content><children><largeop role=\"integral\" id=\"0\">∫</largeop><prefixop role=\"positive\" id=\"3\">+<content><operator role=\"addition\" id=\"1\">+</operator></content><children><largeop role=\"integral\" id=\"2\">∫</largeop></children></prefixop><empty role=\"unknown\" id=\"4\"/></children></integral>"
+      "expected": "<stree><infixop role=\"addition\" id=\"3\">+<content><operator role=\"addition\" id=\"1\">+</operator></content><children><largeop role=\"integral\" id=\"0\">∫</largeop><largeop role=\"integral\" id=\"2\">∫</largeop></children></infixop></stree>"
     },
     "_comment_185": " Issue 383: Mathoperator with dash",
     "Issue383_0": {
