@@ -241,9 +241,12 @@ export class RebuildEnrichedTest extends SemanticBlacklistTest {
    * @param expr MathML expression.
    */
   public executeTest(expr: string) {
-    const original = this.semanticTree(expr);
-    const enriched = this.enrichMml(expr);
-    const newTree = this.semanticTree(enriched.toString());
+    const mml = DomUtil.parseInput(Enrich.prepareMmlString(expr));
+    const original = new SemanticTree(mml);
+    const enriched = enrich(mml, original);
+    const newTree = this.semanticTree(enriched);
+    this.canonicalize(original);
+    this.canonicalize(newTree);
     let oldXml = original.xml();
     let newXml = newTree.xml();
     this.customizeXml(oldXml);
@@ -255,27 +258,12 @@ export class RebuildEnrichedTest extends SemanticBlacklistTest {
   /**
    * Semantically enriches a mathml expression.
    *
-   * @param {string} expr The mathml expression.
+   * @param {string} mml The mathml expression.
    */
-  private semanticTree(expr: string) {
-    const mathMl = Enrich.prepareMmlString(expr);
-    const mml = DomUtil.parseInput(mathMl);
+  private semanticTree(mml: Element) {
     const stree = new SemanticTree(mml);
     this.canonicalize(stree);
     return stree;
-  }
-
-  /**
-   * Semantically enriches a mathml expression.
-   *
-   * @param {string} expr The mathml expression.
-   */
-  private enrichMml(expr: string) {
-    const mathMl = Enrich.prepareMmlString(expr);
-    const mml = DomUtil.parseInput(mathMl);
-    const stree = new SemanticTree(mml);
-    this.canonicalize(stree);
-    return enrich(mml, stree);
   }
 
   /**
