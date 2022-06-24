@@ -24,7 +24,7 @@ import { AbstractJsonTest } from './abstract_test';
 
 import { ApiTest } from './api_test';
 import { ClearspeakAnnotationTest } from './clearspeak_annotation_test';
-import { BrailleLayoutTest, ClearspeakTest } from './clearspeak_test';
+import { BrailleLayoutTest, ClearspeakTest, SpeechMarkupTest } from './clearspeak_test';
 import { CollapseTest } from './collapse_test';
 import { ColorPickerTest } from './color_picker_test';
 import { HtmlTest, XpathTest } from './dom_test';
@@ -58,6 +58,7 @@ const map = new Map<string, any>([
   ['semanticApi', st.SemanticApiTest],
   ['semanticXml', st.SemanticXmlTest],
   ['speech', SpeechTest],
+  ['speechMarkup', SpeechMarkupTest],
   ['stree', st.SemanticTreeTest],
   ['summary', SummaryTest],
   ['summarySpeech', SummarySpeechTest],

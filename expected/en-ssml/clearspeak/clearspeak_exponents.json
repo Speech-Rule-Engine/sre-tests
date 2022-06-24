@@ -1,0 +1,567 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "EnglishClearspeakExponents",
+  "locale": "en",
+  "factory": "speechMarkup",
+  "base": "input/clearspeak/clearspeak_exponents.json",
+  "information": "English Clearspeak Exponents rule tests.",
+  "active": "ClearspeakEnglish",
+  "exclude": [],
+  "tests": {
+    "_comment1_": " Exponents",
+    "Exp001": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"1\"/> squared </prosody></speak>"
+    },
+    "Exp002a": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"1\"/> cubed </prosody></speak>"
+    },
+    "Exp003": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> to the <mark name=\"1\"/> fifth power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp004": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> to the <mark name=\"1\"/> first power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp005": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> <say-as interpret-as=\"character\">b</say-as> <mark name=\"2\"/> to the <mark name=\"1\"/> first power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp006": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> raised to the <mark name=\"1\"/> 5.0 power </prosody></speak>"
+    },
+    "Exp007": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> to the <mark name=\"1\"/> 0 power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp008": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 4 <mark name=\"2\"/> to the <mark name=\"1\"/> 11th power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp009": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> to the <mark name=\"1\"/> negative <mark name=\"2\"/> 2 power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp010a": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the <mark name=\"1\"/> negative <mark name=\"2\"/> 2.0 power </prosody></speak>"
+    },
+    "Exp011": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 4 <mark name=\"2\"/> to the <mark name=\"1\"/> x-th power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp012": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"5\"/> raised to the <mark name=\"1\"/> <say-as interpret-as=\"character\">y</say-as> <mark name=\"2\"/> plus <mark name=\"3\"/> 2 power </prosody></speak>"
+    },
+    "Exp013": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> open paren <break time=\"250ms\"/> <prosody rate=\"+25%\"> <mark name=\"1\"/> 2 <mark name=\"2\"/> <say-as interpret-as=\"character\">y</say-as> </prosody> <break time=\"250ms\"/> <mark name=\"3\"/> minus <mark name=\"4\"/> 3 <break time=\"250ms\"/> <mark name=\"8\"/> close paren <break time=\"250ms\"/> <mark name=\"17\"/> raised to the <prosody rate=\"+25%\"> <mark name=\"10\"/> 3 <mark name=\"11\"/> <say-as interpret-as=\"character\">z</say-as> </prosody> <break time=\"250ms\"/> <mark name=\"12\"/> plus <mark name=\"13\"/> 8 power </prosody></speak>"
+    },
+    "Exp014": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"3\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"2\"/> squared </prosody></speak>"
+    },
+    "Exp015": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"3\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"2\"/> cubed </prosody></speak>"
+    },
+    "Exp016": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"3\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"4\"/> to the <mark name=\"2\"/> fourth power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp017": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"3\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"4\"/> to the <mark name=\"2\"/> tenth power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp018": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"6\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"7\"/> raised to the <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 power </prosody></speak>"
+    },
+    "Exp019": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"5\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"4\"/> squared </prosody></speak>"
+    },
+    "Exp010b": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"5\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"4\"/> cubed </prosody></speak>"
+    },
+    "Exp011b": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"5\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> to the <mark name=\"4\"/> fourth power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp012b": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"5\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> to the <mark name=\"4\"/> tenth power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp013b": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"8\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"9\"/> raised to the <mark name=\"4\"/> <say-as interpret-as=\"character\">y</say-as> <mark name=\"5\"/> plus <mark name=\"6\"/> 1 power </prosody></speak>"
+    },
+    "Exp014b": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the <mark name=\"1\"/> 2 <mark name=\"2\"/> squared power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp015b": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"7\"/> raised to the <mark name=\"1\"/> 2 <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> squared power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp016b": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 5 <mark name=\"4\"/> raised to the <mark name=\"1\"/> 2 <mark name=\"2\"/> cubed power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp017b": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 5 <mark name=\"7\"/> raised to the <mark name=\"1\"/> 2 <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> cubed power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp018b": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"2\"/> squared <mark name=\"4\"/> plus <mark name=\"5\"/> 1 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp019b": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the <mark name=\"1\"/> 2 <mark name=\"2\"/> squared power <break time=\"250ms\"/> <mark name=\"5\"/> plus <mark name=\"6\"/> 1 </prosody></speak>"
+    },
+    "Exp020": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 2 <mark name=\"12\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"2\"/> squared <mark name=\"4\"/> plus <mark name=\"5\"/> 3 <mark name=\"6\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"7\"/> cubed <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp021": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> fourth power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp022": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> fourth power <break time=\"250ms\"/> <mark name=\"4\"/> plus <mark name=\"5\"/> 2 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp023": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> fourth power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> <mark name=\"5\"/> plus <mark name=\"6\"/> 2 </prosody></speak>"
+    },
+    "Exp024": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 2 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> to the <mark name=\"2\"/> fourth power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp025": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 2 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 10 <mark name=\"6\"/> raised to the <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 3 power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp026": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> tenth power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp027": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> tenth power <break time=\"250ms\"/> <mark name=\"4\"/> plus <mark name=\"5\"/> 1 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp028": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> tenth power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> <mark name=\"5\"/> plus <mark name=\"6\"/> 1 </prosody></speak>"
+    },
+    "Exp029": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"10\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"8\"/> squared <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp030": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"10\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"9\"/> to the <mark name=\"8\"/> tenth power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp031": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"13\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"12\"/> raised to the <mark name=\"8\"/> <say-as interpret-as=\"character\">y</say-as> <mark name=\"9\"/> plus <mark name=\"10\"/> 2 power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp032": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"13\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"9\"/> to the <mark name=\"8\"/> y-th power <break time=\"250ms\"/> <mark name=\"10\"/> plus <mark name=\"11\"/> 2 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp033": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"10\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"9\"/> to the <mark name=\"8\"/> y-th power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> <mark name=\"11\"/> plus <mark name=\"12\"/> 2 </prosody></speak>"
+    },
+    "_comment2_": " TODO: (Simons) This does not work as semantically we have a -(xy) rather than",
+    "_comment3_": "       (-x)(y).",
+    "Exp034": {
+      "expected": "e raised to the negative one half, x squared power"
+    },
+    "Exp035": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> <say-as interpret-as=\"character\">e</say-as> <mark name=\"19\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> negative <mark name=\"2\"/> one <mark name=\"4\"/>   <mark name=\"3\"/> half <mark name=\"16\"/> times <break time=\"250ms\"/> <mark name=\"5\"/> open paren <break time=\"250ms\"/> <mark name=\"11\"/> the fraction with numerator <mark name=\"6\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"7\"/> minus <mark name=\"8\"/> mu <break time=\"250ms\"/> and denominator <mark name=\"10\"/> sigma <break time=\"250ms\"/> <mark name=\"12\"/> close paren <break time=\"250ms\"/> <mark name=\"14\"/> squared <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp036": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 2 <mark name=\"2\"/> to the <mark name=\"1\"/> n-th power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp037": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 2 <mark name=\"2\"/> to the <mark name=\"1\"/> m-th power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp038": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 2 <mark name=\"2\"/> to the <mark name=\"1\"/> i-th power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp039": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 2 <mark name=\"2\"/> to the <mark name=\"1\"/> j-th power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp040": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 2 <mark name=\"2\"/> to the <mark name=\"1\"/> a-th power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp041": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> to the <mark name=\"1\"/> second <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp042": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> to the <mark name=\"1\"/> third <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp043": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> to the <mark name=\"1\"/> zero <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp044": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> to the <mark name=\"1\"/> first <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp045": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> to the <mark name=\"1\"/> fifth <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp046": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 4 <mark name=\"2\"/> raised to the <mark name=\"1\"/> 3.0 power </prosody></speak>"
+    },
+    "Exp047": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 4 <mark name=\"2\"/> to the <mark name=\"1\"/> eleventh <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp048": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> to the <mark name=\"1\"/> negative <mark name=\"2\"/> 2 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp049": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the <mark name=\"1\"/> negative <mark name=\"2\"/> 2.0 power </prosody></speak>"
+    },
+    "Exp050": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 4 <mark name=\"2\"/> to the <mark name=\"1\"/> x-th <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp051": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"5\"/> raised to the <mark name=\"1\"/> <say-as interpret-as=\"character\">y</say-as> <mark name=\"2\"/> plus <mark name=\"3\"/> 2 power </prosody></speak>"
+    },
+    "Exp052": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> open paren <break time=\"250ms\"/> <prosody rate=\"+25%\"> <mark name=\"1\"/> 2 <mark name=\"2\"/> <say-as interpret-as=\"character\">y</say-as> </prosody> <break time=\"250ms\"/> <mark name=\"3\"/> minus <mark name=\"4\"/> 3 <break time=\"250ms\"/> <mark name=\"8\"/> close paren <break time=\"250ms\"/> <mark name=\"17\"/> raised to the <prosody rate=\"+25%\"> <mark name=\"10\"/> 3 <mark name=\"11\"/> <say-as interpret-as=\"character\">z</say-as> </prosody> <break time=\"250ms\"/> <mark name=\"12\"/> plus <mark name=\"13\"/> 8 power </prosody></speak>"
+    },
+    "Exp053": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"2\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"5\"/> to the <mark name=\"4\"/> second <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp054": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"2\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"5\"/> to the <mark name=\"4\"/> third <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp055": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"2\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"5\"/> to the <mark name=\"4\"/> fourth <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp056": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"2\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"5\"/> to the <mark name=\"4\"/> tenth <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp057": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"2\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"8\"/> raised to the <mark name=\"4\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"5\"/> plus <mark name=\"6\"/> 1 power </prosody></speak>"
+    },
+    "Exp058": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"4\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"7\"/> to the <mark name=\"6\"/> second <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp059": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"4\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"7\"/> to the <mark name=\"6\"/> third <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp060": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"4\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"7\"/> to the <mark name=\"6\"/> fourth <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp061": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"4\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"7\"/> to the <mark name=\"6\"/> tenth <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp062": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"4\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"10\"/> raised to the <mark name=\"6\"/> <say-as interpret-as=\"character\">y</say-as> <mark name=\"7\"/> plus <mark name=\"8\"/> 1 power </prosody></speak>"
+    },
+    "Exp063": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"3\"/> to the <mark name=\"2\"/> second <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp064": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"4\"/> to the <mark name=\"3\"/> second <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp065": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 5 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"3\"/> to the <mark name=\"2\"/> third <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp066": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 5 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"4\"/> to the <mark name=\"3\"/> third <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp067": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"3\"/> to the <mark name=\"2\"/> second <break time=\"250ms\"/> <mark name=\"4\"/> plus <mark name=\"5\"/> 1 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp068": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"3\"/> to the <mark name=\"2\"/> second <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> <mark name=\"5\"/> plus <mark name=\"6\"/> 1 </prosody></speak>"
+    },
+    "Exp069": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 2 <mark name=\"12\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> to the <mark name=\"2\"/> second <break time=\"250ms\"/> <mark name=\"4\"/> plus <mark name=\"5\"/> 3 <mark name=\"6\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"8\"/> to the <mark name=\"7\"/> third <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp070": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> fourth <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp071": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> fourth <break time=\"250ms\"/> <mark name=\"4\"/> plus <mark name=\"5\"/> 2 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp072": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> fourth <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> <mark name=\"5\"/> plus <mark name=\"6\"/> 2 </prosody></speak>"
+    },
+    "Exp073": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 2 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> to the <mark name=\"2\"/> fourth <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp074": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 2 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 10 <mark name=\"6\"/> raised to the <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 3 power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp075": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> tenth <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp076": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> tenth <break time=\"250ms\"/> <mark name=\"4\"/> plus <mark name=\"5\"/> 1 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp077": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> tenth <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> <mark name=\"5\"/> plus <mark name=\"6\"/> 1 </prosody></speak>"
+    },
+    "Exp078": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"10\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"9\"/> to the <mark name=\"8\"/> second <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp079": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"10\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"9\"/> to the <mark name=\"8\"/> tenth <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp080": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"13\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"12\"/> raised to the <mark name=\"8\"/> <say-as interpret-as=\"character\">y</say-as> <mark name=\"9\"/> plus <mark name=\"10\"/> 2 power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp081": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"13\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"9\"/> to the <mark name=\"8\"/> y-th <break time=\"250ms\"/> <mark name=\"10\"/> plus <mark name=\"11\"/> 2 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp082": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"10\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"9\"/> to the <mark name=\"8\"/> y-th <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> <mark name=\"11\"/> plus <mark name=\"12\"/> 2 </prosody></speak>"
+    },
+    "Exp083": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> <say-as interpret-as=\"character\">e</say-as> <mark name=\"11\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> negative <mark name=\"2\"/> one <mark name=\"4\"/>   <mark name=\"3\"/> half <mark name=\"5\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"7\"/> to the <mark name=\"6\"/> second <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp084": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> <say-as interpret-as=\"character\">e</say-as> <mark name=\"19\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> negative <mark name=\"2\"/> one <mark name=\"4\"/>   <mark name=\"3\"/> half <mark name=\"16\"/> times <break time=\"250ms\"/> <mark name=\"5\"/> open paren <break time=\"250ms\"/> <mark name=\"11\"/> the fraction with numerator <mark name=\"6\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"7\"/> minus <mark name=\"8\"/> mu <break time=\"250ms\"/> and denominator <mark name=\"10\"/> sigma <break time=\"250ms\"/> <mark name=\"12\"/> close paren <break time=\"250ms\"/> <mark name=\"15\"/> to the <mark name=\"14\"/> second <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp085": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> to the <mark name=\"1\"/> second power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp086": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> to the <mark name=\"1\"/> third power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp087": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> to the <mark name=\"1\"/> zero power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp088": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> to the <mark name=\"1\"/> first power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp089": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> to the <mark name=\"1\"/> fifth power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp090": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> raised to the <mark name=\"1\"/> 5.0 power </prosody></speak>"
+    },
+    "Exp091": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 4 <mark name=\"2\"/> to the <mark name=\"1\"/> eleventh power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp092": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> to the <mark name=\"1\"/> negative <mark name=\"2\"/> 2 power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp093": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the <mark name=\"1\"/> negative <mark name=\"2\"/> 2.0 power </prosody></speak>"
+    },
+    "Exp094": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 4 <mark name=\"2\"/> to the <mark name=\"1\"/> x-th power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp095": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"5\"/> raised to the <mark name=\"1\"/> <say-as interpret-as=\"character\">y</say-as> <mark name=\"2\"/> plus <mark name=\"3\"/> 2 power </prosody></speak>"
+    },
+    "Exp096": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> open paren <break time=\"250ms\"/> <prosody rate=\"+25%\"> <mark name=\"1\"/> 2 <mark name=\"2\"/> <say-as interpret-as=\"character\">y</say-as> </prosody> <break time=\"250ms\"/> <mark name=\"3\"/> minus <mark name=\"4\"/> 3 <break time=\"250ms\"/> <mark name=\"8\"/> close paren <break time=\"250ms\"/> <mark name=\"17\"/> raised to the <prosody rate=\"+25%\"> <mark name=\"10\"/> 3 <mark name=\"11\"/> <say-as interpret-as=\"character\">z</say-as> </prosody> <break time=\"250ms\"/> <mark name=\"12\"/> plus <mark name=\"13\"/> 8 power </prosody></speak>"
+    },
+    "Exp097": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"2\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"5\"/> to the <mark name=\"4\"/> second power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp098": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"2\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"5\"/> to the <mark name=\"4\"/> third power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp099": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"2\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"5\"/> to the <mark name=\"4\"/> fourth power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp100": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"2\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"5\"/> to the <mark name=\"4\"/> tenth power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp101": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"2\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"8\"/> raised to the <mark name=\"4\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"5\"/> plus <mark name=\"6\"/> 1 power </prosody></speak>"
+    },
+    "Exp102": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"4\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"7\"/> to the <mark name=\"6\"/> second power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp103": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"4\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"7\"/> to the <mark name=\"6\"/> third power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp104": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"4\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"7\"/> to the <mark name=\"6\"/> fourth power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp105": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"4\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"7\"/> to the <mark name=\"6\"/> tenth power <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp106": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"4\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"10\"/> raised to the <mark name=\"6\"/> <say-as interpret-as=\"character\">y</say-as> <mark name=\"7\"/> plus <mark name=\"8\"/> 1 power </prosody></speak>"
+    },
+    "Exp107": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"3\"/> to the <mark name=\"2\"/> second power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp108": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"4\"/> to the <mark name=\"3\"/> second power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp109": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 5 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"3\"/> to the <mark name=\"2\"/> third power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp110": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 5 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"4\"/> to the <mark name=\"3\"/> third power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp111": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"3\"/> to the <mark name=\"2\"/> second power <break time=\"250ms\"/> <mark name=\"4\"/> plus <mark name=\"5\"/> 1 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp112": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"3\"/> to the <mark name=\"2\"/> second power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> <mark name=\"5\"/> plus <mark name=\"6\"/> 1 </prosody></speak>"
+    },
+    "Exp113": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 2 <mark name=\"12\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> to the <mark name=\"2\"/> second power <break time=\"250ms\"/> <mark name=\"4\"/> plus <mark name=\"5\"/> 3 <mark name=\"6\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"8\"/> to the <mark name=\"7\"/> third power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp114": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> fourth power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp115": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> fourth power <break time=\"250ms\"/> <mark name=\"4\"/> plus <mark name=\"5\"/> 2 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp116": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> fourth power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> <mark name=\"5\"/> plus <mark name=\"6\"/> 2 </prosody></speak>"
+    },
+    "Exp117": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 2 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> to the <mark name=\"2\"/> fourth power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp118": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 2 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 10 <mark name=\"6\"/> raised to the <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 3 power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp119": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> tenth power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp120": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> tenth power <break time=\"250ms\"/> <mark name=\"4\"/> plus <mark name=\"5\"/> 1 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp121": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> to the <mark name=\"2\"/> tenth power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> <mark name=\"5\"/> plus <mark name=\"6\"/> 1 </prosody></speak>"
+    },
+    "Exp122": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"10\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"9\"/> to the <mark name=\"8\"/> second power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp123": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"10\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"9\"/> to the <mark name=\"8\"/> tenth power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp124": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"13\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"12\"/> raised to the <mark name=\"8\"/> <say-as interpret-as=\"character\">y</say-as> <mark name=\"9\"/> plus <mark name=\"10\"/> 2 power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp125": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"13\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"9\"/> to the <mark name=\"8\"/> y-th power <break time=\"250ms\"/> <mark name=\"10\"/> plus <mark name=\"11\"/> 2 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp126": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"10\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"9\"/> to the <mark name=\"8\"/> y-th power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> <mark name=\"11\"/> plus <mark name=\"12\"/> 2 </prosody></speak>"
+    },
+    "Exp127": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> <say-as interpret-as=\"character\">e</say-as> <mark name=\"11\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> negative <mark name=\"2\"/> one <mark name=\"4\"/>   <mark name=\"3\"/> half <mark name=\"5\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"7\"/> to the <mark name=\"6\"/> second power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp128": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> <say-as interpret-as=\"character\">e</say-as> <mark name=\"19\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> negative <mark name=\"2\"/> one <mark name=\"4\"/>   <mark name=\"3\"/> half <mark name=\"16\"/> times <break time=\"250ms\"/> <mark name=\"5\"/> open paren <break time=\"250ms\"/> <mark name=\"11\"/> the fraction with numerator <mark name=\"6\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"7\"/> minus <mark name=\"8\"/> mu <break time=\"250ms\"/> and denominator <mark name=\"10\"/> sigma <break time=\"250ms\"/> <mark name=\"12\"/> close paren <break time=\"250ms\"/> <mark name=\"15\"/> to the <mark name=\"14\"/> second power <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp129": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> raised to the power <mark name=\"1\"/> 2 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp130": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> raised to the power <mark name=\"1\"/> 3 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp131": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> raised to the power <mark name=\"1\"/> 1 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp132b": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> raised to the power <mark name=\"1\"/> 0 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp133": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> raised to the power <mark name=\"1\"/> 5 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp134": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"2\"/> raised to the power <mark name=\"1\"/> 5.0 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp135": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 4 <mark name=\"2\"/> raised to the power <mark name=\"1\"/> 11 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp136": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the power <mark name=\"1\"/> negative <mark name=\"2\"/> 2 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp137": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the power <mark name=\"1\"/> negative <mark name=\"2\"/> 2.0 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp138": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 4 <mark name=\"2\"/> raised to the power <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp139": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"5\"/> raised to the power <mark name=\"1\"/> <say-as interpret-as=\"character\">y</say-as> <mark name=\"2\"/> plus <mark name=\"3\"/> 2 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp140": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> open paren <break time=\"250ms\"/> <prosody rate=\"+25%\"> <mark name=\"1\"/> 2 <mark name=\"2\"/> <say-as interpret-as=\"character\">y</say-as> </prosody> <break time=\"250ms\"/> <mark name=\"3\"/> minus <mark name=\"4\"/> 3 <break time=\"250ms\"/> <mark name=\"8\"/> close paren <break time=\"250ms\"/> <mark name=\"17\"/> raised to the power <prosody rate=\"+25%\"> <mark name=\"10\"/> 3 <mark name=\"11\"/> <say-as interpret-as=\"character\">z</say-as> </prosody> <mark name=\"12\"/> plus <mark name=\"13\"/> 8 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp141": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"2\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"5\"/> raised to the power <mark name=\"4\"/> 2 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp142": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"2\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"5\"/> raised to the power <mark name=\"4\"/> 3 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp143": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"2\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"5\"/> raised to the power <mark name=\"4\"/> 4 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp144": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"2\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"5\"/> raised to the power <mark name=\"4\"/> 10 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp145": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"2\"/> sub <mark name=\"1\"/> 1 <break time=\"250ms\"/> <mark name=\"8\"/> raised to the power <mark name=\"4\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"5\"/> plus <mark name=\"6\"/> 1 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp146": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"4\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"7\"/> raised to the power <mark name=\"6\"/> 2 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp147": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"4\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"7\"/> raised to the power <mark name=\"6\"/> 3 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp148": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"4\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"7\"/> raised to the power <mark name=\"6\"/> 4 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp149": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"4\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"7\"/> raised to the power <mark name=\"6\"/> 10 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp150": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <break time=\"250ms\"/> <mark name=\"0\"/> <say-as interpret-as=\"character\">p</say-as> <mark name=\"4\"/> sub <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> sub <mark name=\"2\"/> 1 <break time=\"250ms\"/> <mark name=\"10\"/> raised to the power <mark name=\"6\"/> <say-as interpret-as=\"character\">y</say-as> <mark name=\"7\"/> plus <mark name=\"8\"/> 1 <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp151": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"3\"/> raised to the power <mark name=\"2\"/> 2 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp152": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"4\"/> raised to the power <mark name=\"3\"/> 2 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp153": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"3\"/> raised to the power <mark name=\"2\"/> 2 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp154": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"4\"/> raised to the power <mark name=\"3\"/> 2 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp155": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 5 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"3\"/> raised to the power <mark name=\"2\"/> 3 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp156": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 5 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"4\"/> raised to the power <mark name=\"3\"/> 3 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp157": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"3\"/> raised to the power <mark name=\"2\"/> 2 <break time=\"250ms\"/> <mark name=\"4\"/> plus <mark name=\"5\"/> 1 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp158": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 2 <mark name=\"3\"/> raised to the power <mark name=\"2\"/> 2 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> <mark name=\"5\"/> plus <mark name=\"6\"/> 1 </prosody></speak>"
+    },
+    "Exp159": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 2 <mark name=\"12\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> raised to the power <mark name=\"2\"/> 2 <break time=\"250ms\"/> <mark name=\"4\"/> plus <mark name=\"5\"/> 3 <mark name=\"6\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"8\"/> raised to the power <mark name=\"7\"/> 3 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp160": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> raised to the power <mark name=\"2\"/> 4 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp161": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> raised to the power <mark name=\"2\"/> 4 <break time=\"250ms\"/> <mark name=\"4\"/> plus <mark name=\"5\"/> 2 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp162": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> raised to the power <mark name=\"2\"/> 4 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> <mark name=\"5\"/> plus <mark name=\"6\"/> 2 </prosody></speak>"
+    },
+    "Exp163": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 2 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> raised to the power <mark name=\"2\"/> 4 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp164": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 2 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 10 <mark name=\"6\"/> raised to the power <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 3 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp165": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> raised to the power <mark name=\"2\"/> 10 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp166": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"7\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> raised to the power <mark name=\"2\"/> 10 <break time=\"250ms\"/> <mark name=\"4\"/> plus <mark name=\"5\"/> 1 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp167": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"4\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> 3 <mark name=\"3\"/> raised to the power <mark name=\"2\"/> 10 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> <mark name=\"5\"/> plus <mark name=\"6\"/> 1 </prosody></speak>"
+    },
+    "Exp168": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"10\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"9\"/> raised to the power <mark name=\"8\"/> 2 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp169": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"10\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"9\"/> raised to the power <mark name=\"8\"/> 10 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp170": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"13\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"12\"/> raised to the power <mark name=\"8\"/> <say-as interpret-as=\"character\">y</say-as> <mark name=\"9\"/> plus <mark name=\"10\"/> 2 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp171": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"13\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"9\"/> raised to the power <mark name=\"8\"/> <say-as interpret-as=\"character\">y</say-as> <break time=\"250ms\"/> <mark name=\"10\"/> plus <mark name=\"11\"/> 2 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp172": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"10\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> open paren <break time=\"250ms\"/> <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> plus <mark name=\"4\"/> 1 <break time=\"250ms\"/> <mark name=\"6\"/> close paren <break time=\"250ms\"/> <mark name=\"9\"/> raised to the power <mark name=\"8\"/> <say-as interpret-as=\"character\">y</say-as> <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> <mark name=\"11\"/> plus <mark name=\"12\"/> 2 </prosody></speak>"
+    },
+    "Exp173": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> <say-as interpret-as=\"character\">e</say-as> <mark name=\"11\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> negative <mark name=\"2\"/> one <mark name=\"4\"/>   <mark name=\"3\"/> half <mark name=\"5\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"7\"/> raised to the power <mark name=\"6\"/> 2 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    },
+    "Exp174": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><prosody rate=\"100%\"> <mark name=\"0\"/> <say-as interpret-as=\"character\">e</say-as> <mark name=\"19\"/> raised to the exponent <break time=\"250ms\"/> <mark name=\"1\"/> negative <mark name=\"2\"/> one <mark name=\"4\"/>   <mark name=\"3\"/> half <mark name=\"16\"/> times <break time=\"250ms\"/> <mark name=\"5\"/> open paren <break time=\"250ms\"/> <mark name=\"11\"/> the fraction with numerator <mark name=\"6\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"7\"/> minus <mark name=\"8\"/> mu <break time=\"250ms\"/> and denominator <mark name=\"10\"/> sigma <break time=\"250ms\"/> <mark name=\"12\"/> close paren <break time=\"250ms\"/> <mark name=\"15\"/> raised to the power <mark name=\"14\"/> 2 <break time=\"250ms\"/> end exponent <break time=\"250ms\"/> </prosody></speak>"
+    }
+  }
+}
