@@ -119,3 +119,34 @@ export class PrefixTest extends SpeechTest {
     super.appendRuleExample(input, output, style, sub);
   }
 }
+
+export class PrefixMarkupTest extends PrefixTest {
+
+  /**
+   * The markup to use.
+   */
+  public markup: string = EngineConst.Markup.SSML_STEP;
+
+  protected automark: boolean = true;
+
+  /**
+   * @override
+   */
+  public async setUpTest() {
+    await super.setUpTest();
+    return System.setupEngine({
+      automark: this.automark,
+      markup: this.markup
+    });
+  }
+
+  /**
+   * @override
+   */
+  public prepare() {
+    super.prepare();
+    this.markup = this.jsonTests.markup || this.markup;
+    this.automark = this.jsonTests.automark || this.automark;
+  }
+
+}

@@ -30,7 +30,7 @@ import { ColorPickerTest } from './color_picker_test';
 import { HtmlTest, XpathTest } from './dom_test';
 import { MarkupTest } from './markup_test';
 import { NumberTest } from './number_test';
-import { PrefixTest } from './prefix_test';
+import { PrefixTest, PrefixMarkupTest } from './prefix_test';
 import * as st from './semantic_test';
 import { SpeechRuleTest } from './speech_rule_test';
 import { SpeechTest } from './speech_test';
@@ -52,6 +52,7 @@ const map = new Map<string, any>([
   ['markup', MarkupTest],
   ['number', NumberTest],
   ['prefix', PrefixTest],
+  ['prefixMarkup', PrefixMarkupTest],
   ['rebuild', st.RebuildStreeTest],
   ['rebuildEnriched', st.RebuildEnrichedTest],
   ['rules', SpeechRuleTest],
