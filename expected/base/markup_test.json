@@ -81,7 +81,7 @@
     },
     "SsmlStep_Quadratic_MS": {
       "domain": "mathspeak",
-      "expected": "<mark name=\"0\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"1\"/> equals <mark name=\"3\"/> StartFraction <mark name=\"4\"/> negative <mark name=\"6\"/> <say-as interpret-as=\"character\">b</say-as> <mark name=\"7\"/> plus or minus <mark name=\"8\"/> StartRoot <mark name=\"10\"/> <say-as interpret-as=\"character\">b</say-as> <mark name=\"9\" kind=\"LAST\"/> squared <mark name=\"8\"/> minus <mark name=\"13\"/> 4 <mark name=\"14\"/> <say-as interpret-as=\"character\">a</say-as> <mark name=\"15\"/> <say-as interpret-as=\"character\">c</say-as> <mark name=\"8\" kind=\"LAST\"/> EndRoot <mark name=\"16\"/> Over <mark name=\"17\"/> 2 <mark name=\"18\"/> <say-as interpret-as=\"character\">a</say-as> <mark name=\"3\" kind=\"LAST\"/> EndFraction",
+      "expected": "<mark name=\"0\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"1\"/> equals <mark name=\"3\"/> StartFraction <mark name=\"4\"/> negative <mark name=\"6\"/> <say-as interpret-as=\"character\">b</say-as> <mark name=\"7\"/> plus or minus <mark name=\"8\"/> StartRoot <mark name=\"10\"/> <say-as interpret-as=\"character\">b</say-as> <mark name=\"11\"/> squared <mark name=\"8\"/> minus <mark name=\"13\"/> 4 <mark name=\"14\"/> <say-as interpret-as=\"character\">a</say-as> <mark name=\"15\"/> <say-as interpret-as=\"character\">c</say-as> <mark name=\"8\" kind=\"LAST\"/> EndRoot <mark name=\"16\"/> Over <mark name=\"17\"/> 2 <mark name=\"18\"/> <say-as interpret-as=\"character\">a</say-as> <mark name=\"3\" kind=\"LAST\"/> EndFraction",
       "markup": "SSML_STEP"
     },
     "_comment2_": " Tests with vulgar fractions.",
@@ -275,7 +275,7 @@
     "SsmlStep_Squared_MS": {
       "domain": "mathspeak",
       "input": "<msup extid=\"0\"><mi extid=\"1\">x</mi><mn extid=\"2\">2</mn></msup>",
-      "expected": "<mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"0\" kind=\"LAST\"/> squared",
+      "expected": "<mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"2\"/> squared",
       "markup": "SSML_STEP"
     },
     "_comment4_": " Tests with cubed.",
@@ -372,7 +372,7 @@
     "SsmlStep_Cubed_MS": {
       "domain": "mathspeak",
       "input": "<msup extid=\"0\"><mi extid=\"1\">x</mi><mn extid=\"2\">3</mn></msup>",
-      "expected": "<mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"0\" kind=\"LAST\"/> cubed",
+      "expected": "<mark name=\"1\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"2\"/> cubed",
       "markup": "SSML_STEP"
     }
   }
