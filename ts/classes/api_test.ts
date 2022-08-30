@@ -21,10 +21,6 @@
 
 import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
 import * as System from '../../speech-rule-engine/js/common/system';
-import {
-  annotators,
-  visitors
-} from '../../speech-rule-engine/js/semantic_tree/semantic_annotations';
 import { Key } from './keycodes';
 
 import { AbstractJsonTest } from './abstract_test';
@@ -60,8 +56,6 @@ export class ApiTest extends AbstractJsonTest {
    * @override
    */
   public async setUpTest() {
-    annotators.clear();
-    visitors.clear();
     return System.setupEngine({
       locale: 'en'
     });

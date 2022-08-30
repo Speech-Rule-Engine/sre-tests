@@ -14,30 +14,30 @@ const analysisdir = 'analysis';
 const allAnalyse = [];
 const allOutputs = {};
 
-let addAllOutputs = function(out, path) {
+let addAllOutputs = function(out, dir) {
   if (!allOutputs[out]) {
     allOutputs[out] = [];
   }
-  allOutputs[out].push(path);
+  allOutputs[out].push(dir);
 };
 
 /**
  * Recursively find all files with .json extension under the given path.
- * @param path The top pathname.
+ * @param dir The top pathname.
  * @param result Accumulator for pathnames.
  */
-let readDir = function(path, result) {
-  if (typeof path === 'undefined') {
+let readDir = function(dir, result) {
+  if (typeof dir === 'undefined') {
     return;
   }
-  let file = indir + path;
+  let file = indir + dir;
   if (fs.lstatSync(file).isDirectory()) {
     let files = fs.readdirSync(file);
     files.forEach(
-      x => readDir(path ? path + '/' + x : x, result));
+      x => readDir(dir ? dir + path.sep + x : x, result));
     return;
   }
-  if (path.match(/\.json$/)) {
+  if (dir.match(/\.json$/)) {
     let grep = cp.spawnSync('grep', ['"active"', file]);
     if (!grep.status) {
       addAllOutputs(
@@ -47,18 +47,18 @@ let readDir = function(path, result) {
     }
     grep = cp.spawnSync('grep', ['"name"', file]);
     if (!grep.status) {
-      allAnalyse.push(path);
+      allAnalyse.push(dir);
       // allAnalyse.set(
       //   grep.stdout.toString()
-      //     .match(/\"name\": *\"(.*)\"/)[1], path);
+      //     .match(/\"name\": *\"(.*)\"/)[1], dir);
     }
-    result.push(path);
+    result.push(dir);
   }
 };
 
 let createFile = function(dir, file, content) {
   fs.mkdirSync(dir, {recursive: true});
-  fs.writeFileSync(dir + '/' + file, content.join('\n'));
+  fs.writeFileSync(dir + path.sep + file, content.join('\n'));
 };
 
 let createJsonTests = function(files) {
@@ -79,23 +79,21 @@ let createJsonTests = function(files) {
 let createActionTests = function(files) {
   let metaFiles = {};
   for (let file of files) {
-    let dir = path.dirname(file);
+    let dir = file.split(path.sep)[0];
     if (!metaFiles[dir]) {
       metaFiles[dir] = [];
     }
     metaFiles[dir].push(file);
   }
   for (let [dir, files] of Object.entries(metaFiles)) {
-    let filename = dir + (path.basename(dir) === dir ? `/${dir}.test.ts` : '.test.ts');
-    let depth = filename.match(/\//g);
-    let base = Array((depth ? depth.length : 0) + 2).join('../');
+    let filename = `${dir}.test.ts`;
     let content = [];
-    content.push(`import {ExampleFiles} from '${base}classes/abstract_examples';`);
-    content.push(`import {runJsonTest} from '${base}jest';`);
+    content.push(`import {ExampleFiles} from '../classes/abstract_examples';`);
+    content.push(`import {runJsonTest} from '../jest';`);
     content.push('ExampleFiles.noOutput = true;');
     files.forEach(x => content.push(`runJsonTest('${x}');`));
     content.push(``);
-    createFile(actionsdir + path.dirname(filename), path.basename(filename), content);
+    createFile(actionsdir, filename, content);
   }
 };
 
@@ -146,13 +144,13 @@ let createHtmlFiles = function() {
   for (let key of Object.keys(allOutputs)) {
     let language = key.match(/^DefaultSymbols(.*)/);
     if (!language || !language[1]) continue;
-    languages[language[1]] = allOutputs[key][0].split('/')[1];
+    languages[language[1]] = allOutputs[key][0].split(path.sep)[1];
     tables[language[1]] = {};
   }
   for (let [language, iso] of Object.entries(languages)) {
     let output = Object.keys(allOutputs).filter(x => x.match(language));
     for (let file of output) {
-      let type = allOutputs[file][0].split('/')[2];
+      let type = allOutputs[file][0].split(path.sep)[2];
       if (tables[language][type]) {
         tables[language][type].push(file);
       } else {
@@ -172,7 +170,7 @@ let createHtmlFiles = function() {
     for (let [type, files] of Object.entries(tables[language])) {
       str += `<tr><th>${cap(type)}</th></tr>\n`;
       for (let file of files) {
-        str += `<tr><td><a href="${iso}/${file}.html">${file}</a></td></tr>\n`;
+        str += `<tr><td><a href="${iso}${path.sep}${file}.html">${file}</a></td></tr>\n`;
       }
     }
     str += '</table>';
