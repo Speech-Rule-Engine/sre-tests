@@ -6,6 +6,7 @@ const cp = require('child_process');
 
 const indir = 'expected/';
 const jsondir = 'ts/json/';
+const actionsdir = 'ts/actions/';  // To run tests as github actions.
 const alldir = 'ts/output/';  // To run tests with output.
 const analysedir = 'ts/analyse/';  // To run tests with analytics.
 const analysisdir = 'analysis';
@@ -75,6 +76,29 @@ let createJsonTests = function(files) {
   }
 };
 
+let createActionTests = function(files) {
+  let metaFiles = {};
+  for (let file of files) {
+    let dir = path.dirname(file);
+    if (!metaFiles[dir]) {
+      metaFiles[dir] = [];
+    }
+    metaFiles[dir].push(file);
+  }
+  for (let [dir, files] of Object.entries(metaFiles)) {
+    let filename = dir + (path.basename(dir) === dir ? `/${dir}.test.ts` : '.test.ts');
+    let depth = filename.match(/\//g);
+    let base = Array((depth ? depth.length : 0) + 2).join('../');
+    let content = [];
+    content.push(`import {ExampleFiles} from '${base}classes/abstract_examples';`);
+    content.push(`import {runJsonTest} from '${base}jest';`);
+    content.push('ExampleFiles.noOutput = true;');
+    files.forEach(x => content.push(`runJsonTest('${x}');`));
+    content.push(``);
+    createFile(actionsdir + path.dirname(filename), path.basename(filename), content);
+  }
+};
+
 let createOutputTests = function() {
   for (let file of Object.keys(allOutputs)) {
     let files = allOutputs[file];
@@ -111,6 +135,7 @@ let createFiles = function() {
   let files = [];
   readDir('', files);
   createJsonTests(files);
+  createActionTests(files);
   createOutputTests();
   createAnalyseTests(files);
 };

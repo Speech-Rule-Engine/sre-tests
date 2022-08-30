@@ -20,7 +20,7 @@
     "test:analytics": "npx rimraf analysis; npx jest --testPathPattern js/analyse; npm run test:allrules",
     "test:allrules": "echo \"import AnalyticsTest from './js/analytics/analytics_test'; AnalyticsTest.outputAllRules()\" | node -r esm",
     "analyse:tries": "echo \"import AnalyticsTrie from './js/analytics/analytics_trie'; AnalyticsTrie.output()\" | node -r esm",
-    "clean": "npx rimraf dist js ts/output ts/json ts/analyse coverage"
+    "clean": "npx rimraf dist js ts/output ts/json ts/analyse ts/actions coverage"
   },
   "maintainers": [
     "Volker Sorge <Volker.Sorge@gmail.com> (http://www.cs.bham.ac.uk/~vxs)"
