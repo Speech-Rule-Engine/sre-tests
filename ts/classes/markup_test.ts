@@ -90,18 +90,17 @@ export class MarkupTest extends AbstractJsonTest {
    * @param markup The markup to test.
    * @param domain The domain for the engine.
    */
-  public async executeTest(
+  public executeTest(
     expr: string,
     result: string,
     markup: string,
     domain: string
   ) {
     expr = expr || MarkupTest.QUADRATIC;
-    await System.setupEngine({
+    System.setupEngine({
       domain: domain || 'default',
       markup: markup ? markup.toLowerCase() : EngineConst.Markup.NONE
-    });
-    // TODO (TS): Markup should be taken from the enum.
+    })
     const descrs = System.toDescription(expr);
     const output = AuralRendering.markup(descrs);
     this.assert.equal(output, result);

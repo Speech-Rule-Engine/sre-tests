@@ -19,6 +19,7 @@
 
 import { Tests } from '../base/tests';
 import { JsonFile, JsonTests, TestPath, TestUtil } from '../base/test_util';
+import { ExampleFiles } from '../classes/abstract_examples';
 import { AbstractJsonTest } from '../classes/abstract_test';
 import { get as factoryget } from '../classes/test_factory';
 
@@ -41,6 +42,8 @@ export async function runTests(
   expected: string,
   flag: TestFlag
 ): Promise<[JsonTests, AbstractJsonTest]> {
+  const saveOutput = ExampleFiles.noOutput;
+  ExampleFiles.noOutput = true;
   const tests = factoryget(expected);
   tests.prepare();
   const result: JsonTests = {};
@@ -71,12 +74,14 @@ export async function runTests(
     try {
       tests.method.apply(tests, tests.pick(test));
     } catch (e) {
+      // TODO: Take care of non-existing actual elements.
       result[key] = { expected: e.actual };
     }
   }
   try {
     await tests.tearDownTest();
   } catch (e) {}
+  ExampleFiles.noOutput = saveOutput;
   return [result, tests];
 }
 

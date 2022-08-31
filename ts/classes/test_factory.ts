@@ -24,13 +24,13 @@ import { AbstractJsonTest } from './abstract_test';
 
 import { ApiTest } from './api_test';
 import { ClearspeakAnnotationTest } from './clearspeak_annotation_test';
-import { BrailleLayoutTest, ClearspeakTest } from './clearspeak_test';
+import { BrailleLayoutTest, ClearspeakTest, SpeechMarkupTest } from './clearspeak_test';
 import { CollapseTest } from './collapse_test';
 import { ColorPickerTest } from './color_picker_test';
 import { HtmlTest, XpathTest } from './dom_test';
 import { MarkupTest } from './markup_test';
 import { NumberTest } from './number_test';
-import { PrefixTest } from './prefix_test';
+import { PrefixTest, PrefixMarkupTest } from './prefix_test';
 import * as st from './semantic_test';
 import { SpeechRuleTest } from './speech_rule_test';
 import { SpeechTest } from './speech_test';
@@ -52,12 +52,14 @@ const map = new Map<string, any>([
   ['markup', MarkupTest],
   ['number', NumberTest],
   ['prefix', PrefixTest],
+  ['prefixMarkup', PrefixMarkupTest],
   ['rebuild', st.RebuildStreeTest],
   ['rebuildEnriched', st.RebuildEnrichedTest],
   ['rules', SpeechRuleTest],
   ['semanticApi', st.SemanticApiTest],
   ['semanticXml', st.SemanticXmlTest],
   ['speech', SpeechTest],
+  ['speechMarkup', SpeechMarkupTest],
   ['stree', st.SemanticTreeTest],
   ['summary', SummaryTest],
   ['summarySpeech', SummarySpeechTest],
