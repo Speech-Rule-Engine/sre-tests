@@ -11,7 +11,7 @@
     "lint": "eslint ts/ --ext .ts,.tsx",
     "lint-fix": "eslint ts/ --ext .ts,.tsx --fix",
     "compile": "./node_modules/.bin/tsc",
-    "prepare": "npm run clean; node tests.config.js; npm run compile; npm run webpack",
+    "prepare": "npm run clean; node tests.config.js; npm run compile",
     "webpack": "./node_modules/.bin/webpack",
     "test": "npm run test:files",
     "test:all": "npm run test:files; npm run test:output; npm run test:analytics",
