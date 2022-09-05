@@ -1,4 +1,5 @@
-[
+{"input/semantic/bad_input.json" :
+  [
   "<mover><mi>?</mi></mover>",
   "<munder><mi>?</mi></munder>",
   "<munderover><mi>a</mi></munderover>",
@@ -78,7 +79,9 @@
   "<msqrt>b<mi>a</mi></msqrt>",
   "<msqrt><mi>a</mi>b</msqrt>",
   "<msqrt>b<mi>a</mi>c</msqrt>"
-][
+],
+"input/semantic/base.json" :
+  [
   "<mrow><mrow><mi>a</mi></mrow></mrow><mrow><mi>b</mi></mrow>",
   "<mstyle><mi>q</mi><mpadded><mstyle><mrow><mi>x</mi><mo>+</mo></mrow></mstyle><mpadded><mrow><mi>a</mi></mrow><mrow><mi>a</mi></mrow></mpadded><mtext>nix</mtext></mpadded></mstyle>",
   "<mrow class=\"MJX-TeXAtom-ORD\"><mo stretchy=\"false\">|</mo></mrow><mi>x</mi><mrow class=\"MJX-TeXAtom-ORD\"><mo stretchy=\"false\">|</mo></mrow>",
@@ -284,7 +287,34 @@
   "<mi>M</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><munder><mrow data-mjx-texclass=\"OP\"><mi mathvariant=\"normal\">l</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">&#x2190;</mo></munder><mo>&#x2061;</mo><mi>M</mi>",
   "<mi>M</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><mrow><mi>l</mi><mi>i</mi></mrow><mo>&#x2061;</mo><mi>M</mi><mi>x</mi>",
   "<mi>M</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><mrow><mrow><mi>l</mi><mi>i</mi></mrow><mo>&#x2061;</mo><mi>M</mi></mrow><mi>x</mi>"
-][
+],
+"input/common/direct_speech.json" :
+  [
+  "<mover> <mi>AC</mi> <mo stretchy=\"true\" aria-label=\"line\">↔</mo> </mover>",
+  "<mover aria-label=\"derivative of x\"><mi>x</mi><mo>&#x02D9;<!-- ˙ --></mo></mover><mi></mi><mo aria-label=\"is equal to\">=</mo><mi aria-label=\"sigma\">&#x03C3;<!-- σ --></mi><mrow><mo aria-label=\"left parenthesis\" stretchy=\"false\">(</mo><mi aria-label=\"y\">y</mi><mo aria-label=\"minus\">&#x2212;<!-- − --></mo><mi aria-label=\"x\">x</mi><mo aria-label=\"right parenthesis\" stretchy=\"false\">)</mo></mrow>",
+  "<math alt=\"A C under line\"><mover> <mi>AC</mi> <mo stretchy=\"true\">↔</mo> </mover></math>",
+  "<mover> <mi>AC</mi> <mo stretchy=\"true\" alt=\"line\">↔</mo> </mover>",
+  "<math exact-speech=\"A C under line\"><mover> <mi>AC</mi> <mo stretchy=\"true\">↔</mo> </mover></math>",
+  "<mover> <mi>AC</mi> <mo stretchy=\"true\" exact-speech=\"line\">↔</mo> </mover>",
+  "<mi><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mi>",
+  "<mi aria-label=\"your glyph\"><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mi>",
+  "<mo><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mo>",
+  "<mo aria-label=\"your glyph\"><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mo>",
+  "<mn><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mn>",
+  "<mn aria-label=\"your glyph\"><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mn>",
+  "<mtext><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mtext>",
+  "<mtext aria-label=\"your glyph\"><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mtext>",
+  "<ms><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></ms>",
+  "<ms aria-label=\"your glyph\"><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></ms>",
+  "<mi><mglyph src=\"my-braid-23.png\" alt=\"23braid\"/></mi><mo>+</mo><mi><mglyph src=\"my-braid-132.png\" alt=\"132braid\"/></mi><mo>=</mo><mi><mglyph src=\"my-braid-13.png\" alt=\"13braid\"/></mi>",
+  "<mrow><mi>N</mi><msub><mi>M</mi><mrow class=\"MJX-TeXAtom-ORD\"><mn>1</mn><mo>⊂</mo><mrow class=\"MJX-TeXAtom-VCENTER\"><mglyph src=\"Images/img64cf9bc6538bb7137dab7b360f92afb4.svg\" width=\"13pt\" height=\"6pt\" alt=\"mfin\"></mglyph></mrow></mrow></msub></mrow>",
+  "<mi><mglyph src=\"my-braid-23.png\"/></mi><mo>+</mo><mi><mglyph src=\"my-braid-132.png\" alt=\"132braid\"/></mi><mo>=</mo><mi><mglyph src=\"my-braid-13.png\" alt=\"13braid\"/></mi>",
+  "<mn>35</mn><mi aria-label=\"mickeys per hour\">mph</mi>",
+  "<mn>35</mn><mi class=\"MathML-Unit\">mph</mi>",
+  "<mn>35</mn><mi class=\"MathML-Unit\" aria-label=\"mickeys per hour\">mph</mi>"
+],
+"input/semantic/fences.json" :
+  [
   "<mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow>",
   "<mo>(</mo><mo>)</mo>",
   "<mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo></mrow>",
@@ -399,7 +429,9 @@
   "<mtable displaystyle=\"true\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mlabeledtr><mtd><mtext>(3.42)</mtext></mtd><mtd><mo stretchy=\"false\">(</mo><msub><mi>L</mi><mrow><mn>1</mn></mrow></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>L</mi><mi>j</mi></msub><mo>,</mo><msub><mi>σ</mi><mrow><mo>−</mo><mi>r</mi></mrow></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>σ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msubsup><mi>L</mi><mrow><mn>1</mn></mrow><mo data-mjx-alternate=\"1\">′</mo></msubsup><mo>,</mo><mo>…</mo><mo>,</mo><msubsup><mi>L</mi><mi>k</mi><mo data-mjx-alternate=\"1\">′</mo></msubsup><mo>,</mo><msubsup><mi>σ</mi><mrow><mn>0</mn></mrow><mi>ϕ</mi></msubsup><mo>,</mo><msubsup><mi>σ</mi><mrow><mn>1</mn></mrow><mi>ϕ</mi></msubsup><mo>,</mo><mo>…</mo><mo>,</mo><msubsup><mi>σ</mi><mi>ℓ</mi><mi>ϕ</mi></msubsup><mo stretchy=\"false\">)</mo></mtd></mlabeledtr></mtable>",
   "<mo stretchy=\"false\" xmlns=\"http://www.w3.org/1998/Math/MathML\">(</mo><mn xmlns=\"http://www.w3.org/1998/Math/MathML\">1</mn><mstyle scriptlevel=\"0\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mspace width=\"0.167em\"/></mstyle><mn xmlns=\"http://www.w3.org/1998/Math/MathML\">1</mn><mstyle scriptlevel=\"0\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mspace width=\"0.167em\"/></mstyle><mn xmlns=\"http://www.w3.org/1998/Math/MathML\">1</mn><msup xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo stretchy=\"false\">)</mo><mn>1</mn></msup>",
   "<mo stretchy=\"false\" xmlns=\"http://www.w3.org/1998/Math/MathML\">(</mo><mi xmlns=\"http://www.w3.org/1998/Math/MathML\">a</mi><mstyle scriptlevel=\"0\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mspace width=\"1em\"/></mstyle><mi xmlns=\"http://www.w3.org/1998/Math/MathML\">b</mi><mstyle scriptlevel=\"0\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mspace width=\"1em\"/></mstyle><mi xmlns=\"http://www.w3.org/1998/Math/MathML\">c</mi><msup xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo stretchy=\"false\">)</mo><mn>2</mn></msup>"
-][
+],
+"input/semantic/implicit.json" :
+  [
   "<mi>n</mi><mo mathvariant=\"normal\">/</mo><mi>ϕ</mi><mo mathvariant=\"italic\">⁢</mo><mi>n</mi>",
   "<mrow><mpadded><mi>n</mi><mo mathvariant=\"normal\">/</mo><mi>ϕ</mi></mpadded></mrow><mo mathvariant=\"italic\">⁢</mo><mi>m</mi>",
   "<mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow><mo>&#x2062;</mo></mrow><mrow><mo>&#x2062;</mo></mrow><mi>a</mi><mi>b</mi></mstyle>",
@@ -475,8 +507,45 @@
   "<mo>&#x2062;</mo><mi>a</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mo>&#x2062;</mo><mi>c</mi><mo>&#x2062;</mo><mo>&#x2062;</mo><mo>&#x2062;</mo><mrow something=\"other\"><mi>b</mi><mi>q</mi><mi>b</mi></mrow><mrow something=\"other2\"><mi>b</mi><mi>q</mi><mi>b</mi></mrow>",
   "<mo>&#x2062;</mo><mi>a</mi><mo>&#x2062;</mo><mrow something=\"other2\"><mi>b</mi><mi>q</mi></mrow>",
   "<mi>a</mi><mo>&#x2062;</mo><mrow><mi>c</mi></mrow><mo>&#x2062;</mo><mrow><mi>b</mi><mi>q</mi><mi>b</mi></mrow>",
-  "<mi>a</mi><mo>&#x2062;</mo><mrow><mi>c</mi></mrow><mo>&#x2062;</mo><mrow><mi>q</mi><mi>b</mi></mrow>"
-][
+  "<mi>a</mi><mo>&#x2062;</mo><mrow><mi>c</mi></mrow><mo>&#x2062;</mo><mrow><mi>q</mi><mi>b</mi></mrow>",
+  "<mi>a</mi><mrow><mi>b</mi><mrow><mi>c</mi><mrow><mi>d</mi></mrow><mi>e</mi></mrow><mi>f</mi></mrow><mi>g</mi>"
+],
+"input/semantic/integrals.json" :
+  [
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mi>a</mi><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>x</mi><mo>+</mo><mi>b</mi><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>y</mi></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mi>a</mi><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>x</mi><mo>+</mo><mi>b</mi><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>y</mi><mo>&#x2212;</mo><mi>c</mi><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>z</mi></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mi>a</mi><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>x</mi><mo>+</mo><mi>b</mi><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>y</mi><mo>+</mo><mi>c</mi><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>z</mi></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><msub><mi>c</mi><mrow data-mjx-texclass=\"ORD\"><mn>1</mn></mrow></msub><msubsup><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mrow data-mjx-texclass=\"ORD\"><mi>a</mi></mrow><mrow data-mjx-texclass=\"ORD\"><mi>b</mi></mrow></msubsup><mi>f</mi><mo>+</mo><msub><mi>c</mi><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msub><msubsup><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mrow data-mjx-texclass=\"ORD\"><mi>a</mi></mrow><mrow data-mjx-texclass=\"ORD\"><mi>b</mi></mrow></msubsup><mi>g</mi></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><msubsup><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mrow data-mjx-texclass=\"ORD\"><mi>a</mi></mrow><mrow data-mjx-texclass=\"ORD\"><mi>b</mi></mrow></msubsup><mo stretchy=\"false\">(</mo><msub><mi>c</mi><mrow data-mjx-texclass=\"ORD\"><mn>1</mn></mrow></msub><mi>f</mi><mo>+</mo><msub><mi>c</mi><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msub><mi>g</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>c</mi><mrow data-mjx-texclass=\"ORD\"><mn>1</mn></mrow></msub><msubsup><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mrow data-mjx-texclass=\"ORD\"><mi>a</mi></mrow><mrow data-mjx-texclass=\"ORD\"><mi>b</mi></mrow></msubsup><mi>f</mi><mo>+</mo><msub><mi>c</mi><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msub><msubsup><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mrow data-mjx-texclass=\"ORD\"><mi>a</mi></mrow><mrow data-mjx-texclass=\"ORD\"><mi>b</mi></mrow></msubsup><mi>g</mi></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mo>+</mo><mo data-mjx-texclass=\"OP\">&#x222B;</mo></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mo>+</mo><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mo>+</mo><mo data-mjx-texclass=\"OP\">&#x222B;</mo></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><msub><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>a</mi></msub><mo>+</mo><msub><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>b</mi></msub><mo>+</mo><msub><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>c</mi></msub></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>x</mi><mrow data-mjx-texclass=\"ORD\"><mi>m</mi><mrow data-mjx-texclass=\"ORD\"><mi>d</mi><mi>x</mi></mrow></mrow><mi>r</mi></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>x</mi><mrow data-mjx-texclass=\"ORD\"><mi>m</mi><mrow data-mjx-texclass=\"ORD\"><mi>d</mi><mrow data-mjx-texclass=\"ORD\"><mi>x</mi></mrow></mrow></mrow><mi>r</mi></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>x</mi><mrow data-mjx-texclass=\"ORD\"><mi>m</mi><mrow data-mjx-texclass=\"ORD\"><mi>d</mi><mrow data-mjx-texclass=\"ORD\"><mi>x</mi></mrow></mrow></mrow><mi>r</mi><mi>d</mi><mi>y</mi></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>x</mi><mrow data-mjx-texclass=\"ORD\"><mi>m</mi><mrow data-mjx-texclass=\"ORD\"><mi>d</mi><mi>x</mi></mrow></mrow><mi>r</mi><mo>+</mo><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>y</mi><mi>l</mi><mrow data-mjx-texclass=\"ORD\"><mi>d</mi><mi>y</mi></mrow><mi>m</mi></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>x</mi><mrow data-mjx-texclass=\"ORD\"><mi>m</mi><mrow data-mjx-texclass=\"ORD\"><mi>d</mi><mi>x</mi></mrow></mrow><mi>r</mi><mo>+</mo><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>y</mi><mi>l</mi><mrow data-mjx-texclass=\"ORD\"><mi>d</mi><mi>y</mi></mrow><mi>m</mi></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mfrac><mrow><mi>d</mi><mi>x</mi></mrow><mi>x</mi></mfrac></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mfrac><mrow><mi>d</mi><mi>x</mi></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac><mi>d</mi><mi>x</mi></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mfrac><mrow><mi>x</mi><mi>d</mi><mi>x</mi></mrow><mi>x</mi></mfrac></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mfrac><mrow><mi>x</mi><mrow data-mjx-texclass=\"ORD\"><mi>d</mi><mi>x</mi></mrow></mrow><mi>x</mi></mfrac></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mrow data-mjx-texclass=\"ORD\"><mi>d</mi><mi>x</mi></mrow></mrow><mi>x</mi></mfrac></math>",
+  "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mfrac><mrow><msup><mi>x</mi><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msup><mi>d</mi><mi>x</mi></mrow><mrow><mo stretchy=\"false\">(</mo><msup><mi>x</mi><mrow data-mjx-texclass=\"ORD\"><mn>3</mn></mrow></msup><mo>+</mo><mn>5</mn><msup><mo stretchy=\"false\">)</mo><mrow data-mjx-texclass=\"ORD\"><mn>2</mn></mrow></msup></mrow></mfrac></math>",
+  "<mo>&#x222B;</mo><mfrac><mi>dx</mi><mi>x</mi></mfrac>",
+  "<mo>&#x222B;</mo><mfrac><mrow><mi>x</mi><mi>dx</mi></mrow><mi>x</mi></mfrac>",
+  "<mo>&#x222B;</mo><mfrac><mi>dx</mi><mi>x</mi></mfrac><mi>dy</mi>",
+  "<mo>&#x222B;</mo><mfrac><mrow><mi>x</mi><mi>dx</mi></mrow><mi>x</mi></mfrac><mi>dy</mi>",
+  "<mo>&#x222B;</mo><mfrac><mi>dx</mi><mi>x</mi></mfrac><mi>d</mi><mi>y</mi>",
+  "<mo>&#x222B;</mo><mfrac><mrow><mi>x</mi><mi>dx</mi></mrow><mi>x</mi></mfrac><mi>d</mi><mi>y</mi>"
+],
+"input/semantic/issues.json" :
+  [
+  "<mi>A</mi><mo>&#x2192;</mo><mrow><mrow><mrow><mi mathvariant=\"script\">B</mi></mrow></mrow><mi>c</mi></mrow><mo>(</mo><mi>d</mi><mo>)</mo>",
+  "<mi>&#x3B9;</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"script\">C</mi></mrow></mrow><mo>&#x2192;</mo><mrow><mrow><mrow><mi mathvariant=\"script\">C</mi></mrow></mrow><mi>o</mi><mi>n</mi><mi>e</mi></mrow><mo>(</mo><mrow><mrow><mi mathvariant=\"script\">C</mi></mrow></mrow><mo>)</mo></math>"
+],
+"input/semantic/juxtaposition.json" :
+  [
   "<mrow><mi>a</mi><mo>&#x2062;</mo><mi>b</mi></mrow>",
   "<mrow><mi>a</mi><mi>b</mi></mrow>",
   "<mrow><mi>a</mi><mo>&#x2062;</mo><mi>b</mi><mo>&#x2062;</mo><mi>c</mi></mrow>",
@@ -1601,7 +1670,9 @@
   "<mrow><mi>a</mi><mi>b</mi></mrow><mo>&#x2062;</mo><mrow><mi>c</mi><mi>d</mi></mrow><mrow><mi>e</mi><mi>f</mi></mrow><mrow><mi>g</mi><mi>h</mi></mrow>",
   "<mrow><mi>a</mi><mo>&#x2062;</mo><mi>b</mi></mrow><mrow><mi>c</mi><mi>d</mi></mrow><mrow><mi>e</mi><mi>f</mi></mrow><mrow><mi>g</mi><mi>h</mi></mrow>",
   "<mrow><mi>a</mi><mi>b</mi></mrow><mrow><mi>c</mi><mi>d</mi></mrow><mrow><mi>e</mi><mi>f</mi></mrow><mrow><mi>g</mi><mi>h</mi></mrow>"
-][
+],
+"input/semantic/limits.json" :
+  [
   "<munder><mo>&#x2211;</mo><mo>_</mo></munder>",
   "<mrow><mover><mo>&#x2211;</mo><mo>~</mo></mover></mrow>",
   "<mover><mrow><mover><mo>&#x2211;</mo><mo>~</mo></mover></mrow><mn>2</mn></mover>",
@@ -1666,7 +1737,9 @@
   "<msub><mo>&#x2211;</mo></msub>",
   "<msup><mo>&#x2211;</mo></msup>",
   "<munderover><mo>&#x2211;</mo><mo>_</mo><mo>~</mo></munderover>"
-][
+],
+"input/semantic/spaces.json" :
+  [
   "<mrow><mtext>area&#x00A0;of&#x00A0;triangle</mtext><mtext>&#x00A0;</mtext><msup><mrow><mtext>area&#x00A0;of&#x00A0;square</mtext></mrow><mn>1</mn></msup><mtext>&#x00A0;</mtext><msup><mrow><mtext>1&#x00A0;unit</mtext></mrow><mn>2</mn></msup><mtext>&#x00A0;</mtext><msup><mrow><mtext>16&#x00A0;units</mtext></mrow><mn>3</mn></msup></mrow>",
   "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mstyle scriptlevel=\"0\"><mspace width=\"1em\"></mspace></mstyle><mi>x</mi><mstyle scriptlevel=\"0\"><mspace width=\"1em\"></mspace></mstyle></math>",
   "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mstyle scriptlevel=\"0\"><mspace width=\"1em\"></mspace></mstyle><mi>x</mi><mstyle scriptlevel=\"0\"><mspace width=\"1em\"></mspace></mstyle><mi>y</mi><mstyle scriptlevel=\"0\"><mspace width=\"1em\"></mspace></mstyle></math>",
@@ -1696,7 +1769,9 @@
   "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><msub><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>A</mi></msub><mstyle scriptlevel=\"0\"><mspace width=\"0.2777777777777778em\"></mspace></mstyle><mi>x</mi><mstyle scriptlevel=\"0\"><mspace width=\"0.2777777777777778em\"></mspace></mstyle><mi>d</mi><mi>x</mi></math>",
   "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><msub><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>B</mi></msub><msub><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>A</mi></msub><mstyle scriptlevel=\"0\"><mspace width=\"0.2777777777777778em\"></mspace></mstyle><mi>x</mi><mstyle scriptlevel=\"0\"><mspace width=\"0.2777777777777778em\"></mspace></mstyle><mi>d</mi><mi>x</mi></math>",
   "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><msub><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>B</mi></msub><msub><mo data-mjx-texclass=\"OP\">&#x222B;</mo><mi>A</mi></msub><mstyle scriptlevel=\"0\"><mspace width=\"0.2777777777777778em\"></mspace></mstyle><mi>x</mi><mstyle scriptlevel=\"0\"><mspace width=\"0.2777777777777778em\"></mspace></mstyle><mi>d</mi><mi>x</mi><mstyle scriptlevel=\"0\"><mspace width=\"0.2777777777777778em\"></mspace></mstyle><mi>d</mi><mi>y</mi></math>"
-][
+],
+"input/semantic/tables.json" :
+  [
   "<mrow class=\"MJX-TeXAtom-ORD\"><mi mathvariant=\"bold\">A</mi><mo>=</mo><mo>[</mo><mtable rowspacing=\"4pt\" columnspacing=\"1em\"><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd></mtr></mtable><mo>]</mo></mrow>",
   "<mo>[</mo><mtable rowspacing=\"4pt\" columnspacing=\"1em\"><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd></mtr><mtr><mtd><mn>4</mn></mtd><mtd><mn>5</mn></mtd></mtr></mtable><mo>]</mo>",
   "<mo>[</mo><mtable rowspacing=\"4pt\" columnspacing=\"1em\"><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd></mtr></mtable><mo>]</mo>",
@@ -1986,30 +2061,6 @@
   "<mfrac xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mo stretchy=\"false\">|</mo><mi>a</mi><mrow data-mjx-texclass=\"ORD\"><mi>b</mi><mi>c</mi></mrow><msup><mo stretchy=\"false\">|</mo><mi>d</mi></msup></mrow><mrow/></mfrac>",
   "<mo stretchy=\"false\" xmlns=\"http://www.w3.org/1998/Math/MathML\">|</mo><mi xmlns=\"http://www.w3.org/1998/Math/MathML\">a</mi><mrow data-mjx-texclass=\"ORD\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi><mi>c</mi></mrow><msup xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo stretchy=\"false\">|</mo><mi>d</mi></msup>",
   "<mpadded mathbackground=\"blue\"><munder><mmultiscripts><mo>(</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mo>~</mo></munder></mpadded><mi>x</mi><mpadded mathbackground=\"red\"><mover><msubsup><mo>)</mo><mn>1</mn><mn>2</mn></msubsup><mo>^</mo></mover></mpadded>"
-][
-  "<mover> <mi>AC</mi> <mo stretchy=\"true\" aria-label=\"line\">↔</mo> </mover>",
-  "<mover aria-label=\"derivative of x\"><mi>x</mi><mo>&#x02D9;<!-- ˙ --></mo></mover><mi></mi><mo aria-label=\"is equal to\">=</mo><mi aria-label=\"sigma\">&#x03C3;<!-- σ --></mi><mrow><mo aria-label=\"left parenthesis\" stretchy=\"false\">(</mo><mi aria-label=\"y\">y</mi><mo aria-label=\"minus\">&#x2212;<!-- − --></mo><mi aria-label=\"x\">x</mi><mo aria-label=\"right parenthesis\" stretchy=\"false\">)</mo></mrow>",
-  "<math alt=\"A C under line\"><mover> <mi>AC</mi> <mo stretchy=\"true\">↔</mo> </mover></math>",
-  "<mover> <mi>AC</mi> <mo stretchy=\"true\" alt=\"line\">↔</mo> </mover>",
-  "<math exact-speech=\"A C under line\"><mover> <mi>AC</mi> <mo stretchy=\"true\">↔</mo> </mover></math>",
-  "<mover> <mi>AC</mi> <mo stretchy=\"true\" exact-speech=\"line\">↔</mo> </mover>",
-  "<mi><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mi>",
-  "<mi aria-label=\"your glyph\"><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mi>",
-  "<mo><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mo>",
-  "<mo aria-label=\"your glyph\"><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mo>",
-  "<mn><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mn>",
-  "<mn aria-label=\"your glyph\"><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mn>",
-  "<mtext><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mtext>",
-  "<mtext aria-label=\"your glyph\"><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mtext>",
-  "<ms><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></ms>",
-  "<ms aria-label=\"your glyph\"><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></ms>",
-  "<mi><mglyph src=\"my-braid-23.png\" alt=\"23braid\"/></mi><mo>+</mo><mi><mglyph src=\"my-braid-132.png\" alt=\"132braid\"/></mi><mo>=</mo><mi><mglyph src=\"my-braid-13.png\" alt=\"13braid\"/></mi>",
-  "<mrow><mi>N</mi><msub><mi>M</mi><mrow class=\"MJX-TeXAtom-ORD\"><mn>1</mn><mo>⊂</mo><mrow class=\"MJX-TeXAtom-VCENTER\"><mglyph src=\"Images/img64cf9bc6538bb7137dab7b360f92afb4.svg\" width=\"13pt\" height=\"6pt\" alt=\"mfin\"></mglyph></mrow></mrow></msub></mrow>",
-  "<mi><mglyph src=\"my-braid-23.png\"/></mi><mo>+</mo><mi><mglyph src=\"my-braid-132.png\" alt=\"132braid\"/></mi><mo>=</mo><mi><mglyph src=\"my-braid-13.png\" alt=\"13braid\"/></mi>",
-  "<mn>35</mn><mi aria-label=\"mickeys per hour\">mph</mi>",
-  "<mn>35</mn><mi class=\"MathML-Unit\">mph</mi>",
-  "<mn>35</mn><mi class=\"MathML-Unit\" aria-label=\"mickeys per hour\">mph</mi>"
-][
-  "<mi>A</mi><mo>&#x2192;</mo><mrow><mrow><mrow><mi mathvariant=\"script\">B</mi></mrow></mrow><mi>c</mi></mrow><mo>(</mo><mi>d</mi><mo>)</mo>",
-  "<mi>&#x3B9;</mi><mo>:</mo><mrow><mrow><mi mathvariant=\"script\">C</mi></mrow></mrow><mo>&#x2192;</mo><mrow><mrow><mrow><mi mathvariant=\"script\">C</mi></mrow></mrow><mi>o</mi><mi>n</mi><mi>e</mi></mrow><mo>(</mo><mrow><mrow><mi mathvariant=\"script\">C</mi></mrow></mrow><mo>)</mo></math>"
-]
+],
+"": {}
+}

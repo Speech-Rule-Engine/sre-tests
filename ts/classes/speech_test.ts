@@ -207,11 +207,16 @@ export class SpeechTest extends AbstractExamples {
   /**
    * @override
    */
-  public join(examples: string[]) {
-    for (let i = 0, l = examples.length; i < l; i++) {
-      examples[i] = '<tr>' + SpeechTest.htmlCell_(i) + examples[i] + '</tr>';
+  public join(map: Map<string, string[]>) {
+    let i = 0;
+    let result = [];
+    for (let [, examples] of [...map].sort(([a], [b]) => a.localeCompare(b))) {
+      for (let example of examples) {
+        result.push('<tr>' + SpeechTest.htmlCell_(i) + example + '</tr>');
+        i++;
+      }
     }
-    return '\n<table>\n' + examples.join('\n') + '\n</table>\n';
+    return '\n<table>\n' + result.join('\n') + '\n</table>\n';
   }
 
   /**

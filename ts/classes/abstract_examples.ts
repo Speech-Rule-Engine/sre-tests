@@ -50,7 +50,7 @@ export abstract class AbstractExamples
   /**
    * The output values.
    */
-  private examples_: { [key: string]: string[] } = {};
+  private examples_: Map<string, Map<string, string[]>> = new Map();
 
   /**
    * @override
@@ -79,13 +79,14 @@ export abstract class AbstractExamples
    * @override
    */
   public appendExamples(type: string, example: string) {
+    let fileName = this.jsonTests.base;
     if (this.active_ && !this.fileError_) {
-      const examples = this.examples_[type];
-      if (examples) {
-        examples.push(example);
-      } else {
-        this.examples_[type] = [example];
+      if (!this.examples_.has(type)) {
+        this.examples_.set(type, new Map([[fileName, []]]));
+      } else if (!this.examples_.get(type).has(fileName)) {
+        this.examples_.get(type).set(fileName, []);
       }
+      this.examples_.get(type).get(fileName).push(example);
     }
   }
 
@@ -98,18 +99,18 @@ export abstract class AbstractExamples
     }
     if (!this.fileError_) {
       try {
-        for (const key in this.examples_) {
+        for (const key of this.examples_.keys()) {
           ExampleFiles.append(this.examplesFile_, key);
           ExampleFiles.append(
             this.examplesFile_,
-            this.join(this.examples_[key])
+            this.join(this.examples_.get(key))
           );
         }
       } catch (err) {
         this.fileError_ = 'Could not append to file ' + this.examplesFile_;
       }
     }
-    this.examples_ = {};
+    this.examples_.clear();
     this.active_ = false;
     if (this.fileError_) {
       throw new TestError('Bad Filename', this.fileError_);
@@ -135,25 +136,29 @@ export abstract class AbstractExamples
   /**
    * Joins the accumulated list of examples into a single output string.
    *
-   * @param examples The list of examples.
+   * @param map The map of examples.
    * @returns The joined string.
    */
-  public join(examples: string[]): string {
-    return JSON.stringify(examples, null, 2);
+  public join(map: Map<string, string[]>): string {
+    let result = [];
+    for (let [file, examples] of [...map].sort(([a], [b]) => a.localeCompare(b))) {
+      result.push(`"${file}" :\n  ${JSON.stringify(examples, null, 2)}`);
+    }
+    return result.join(',\n') + ',\n';
   }
 
   /**
    * @returns Output file header.
    */
   public header(): string {
-    return '';
+    return '{';
   }
 
   /**
    * @returns Output file footer.
    */
   public footer(): string {
-    return '';
+    return '"": {}\n}';
   }
 }
 
