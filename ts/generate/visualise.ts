@@ -19,22 +19,39 @@
 
 import { TestPath, TestUtil } from '../base/test_util';
 import * as fs from 'fs';
+import * as path from 'path';
 
 
-export function visualiseTests(input: string = 'EnrichExamples.json') {
+export function visualiseTests(input: string = 'EnrichExamples.json',
+                               dir: string = 'visualise') {
   let json = TestUtil.loadJson(TestPath.OUTPUT + input);
-  for (let [file, entries] of Object.entries(json)) {
+  let index = [];
+  for (let [filename, entries] of Object.entries(json)) {
+    if (!filename) continue;
+    let file = path.basename(filename, path.extname(filename));
+    index.push(file);
     let output = makeHeader(file);
-    console.log(output);
-    console.log(entries);
     for (let entry of entries) {
       output += visualiseElement(entry);
     }
     output += '\n' + footer;
-    fs.writeFileSync(file, output);
+    file = path.join(dir, file);
+    TestUtil.makeDir(file);
+    fs.writeFileSync(file + '.html', output);
   }
+  makeIndex(dir, index);
 }
 
+
+function makeIndex(dir: string, index: string[]) {
+  let output = '<html>\n<body>\n<ul>\n';
+  for (let file of index.sort()) {
+    output += `<li><a href="${file}.html">${file}</a></li>\n`;
+  }
+  output += '</ul>\n</body>\n</html>\n';
+  let file = path.join(dir, 'index.html');
+  fs.writeFileSync(file, output);
+}
 
 function visualiseElement(expr: string) {
   let output = `<div class="cell">\n`;
@@ -47,13 +64,13 @@ function visualiseElement(expr: string) {
 
 const header = '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">\n<html>\n<head>\n' +
   '<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n' +
-  '<link type="text/css" rel="stylesheet" href="styles/style.css"/>\n' +
+  '<link type="text/css" rel="stylesheet" href="https://speech-rule-engine.github.io/semantic-tree-visualiser/styles/style.css"/>\n' +
   '<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/d3/dist/d3.min.js"></script>\n' +
-  '<link type="text/css" rel="stylesheet" href="styles/tree.css"/>\n' +
-  '<script src="https://cdn.jsdelivr.net/npm/speech-rule-engine/lib/sre.js"></script>\n' +
+  '<link type="text/css" rel="stylesheet" href="https://speech-rule-engine.github.io/semantic-tree-visualiser/styles/tree.css"/>\n' +
+  '<script src="./speech-rule-engine/lib/sre.js"></script>\n' +
   '<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>\n' +
   '<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>\n' +
-  '<script type="text/javascript" src="lib/visualise.js"></script>';
+  '<script type="text/javascript" src="https://speech-rule-engine.github.io/semantic-tree-visualiser/lib/visualise.js"></script>';
 
 function makeHeader(title: string): string {
   return header + `<title>${title}</title>\n</head>\n\n<body>\n<h1>${title}</h1>`;
