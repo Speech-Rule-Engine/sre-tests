@@ -1,0 +1,819 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link type="text/css" rel="stylesheet" href="https://speech-rule-engine.github.io/semantic-tree-visualiser/styles/style.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/d3/dist/d3.min.js"></script>
+<link type="text/css" rel="stylesheet" href="https://speech-rule-engine.github.io/semantic-tree-visualiser/styles/tree.css"/>
+<script src="https://cdn.jsdelivr.net/gh/speech-rule-engine/speech-rule-engine@deploy/lib/sre.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type="text/javascript" src="https://speech-rule-engine.github.io/semantic-tree-visualiser/lib/visualise.js"></script><title>Fences</title>
+</head>
+
+<body>
+<h1>Fences</h1><div class="cell">
+  <span class="counter">1</span>
+  <span class="math">
+     <math><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">2</span>
+  <span class="math">
+     <math><mo>(</mo><mo>)</mo></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">3</span>
+  <span class="math">
+     <math><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">4</span>
+  <span class="math">
+     <math><mrow><mi>a</mi><mo>+</mo><mo>(</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>)</mo><mo>+</mo><mi>d</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">5</span>
+  <span class="math">
+     <math><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo><mo>(</mo><mi>c</mi><mo>+</mo><mi>d</mi><mo>)</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">6</span>
+  <span class="math">
+     <math><mrow><mo>(</mo><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo><mo>(</mo><mi>c</mi><mo>+</mo><mi>d</mi><mo>)</mo><mo>)</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">7</span>
+  <span class="math">
+     <math><mrow><mo>(</mo><mo>[</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>]</mo><mo>+</mo><mi>d</mi><mo>)</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">8</span>
+  <span class="math">
+     <math><mrow><mo>(</mo><msup><mi>a</mi><mrow><mn>2</mn><mo>[</mo><mi>i</mi><mo>+</mo><mi>n</mi><mo>]</mo></mrow></msup><mo>+</mo><mi>b</mi><mo>)</mo><mo>+</mo><mo>{</mo><mi>c</mi><mi>d</mi><mo>-</mo><mo>[</mo><mi>e</mi><mo>+</mo><mi>f</mi><mo>]</mo><mo>}</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">9</span>
+  <span class="math">
+     <math><mrow><mo>|</mo><mo>|</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">10</span>
+  <span class="math">
+     <math><mrow><mo>|</mo><mi>a</mi><mo>|</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">11</span>
+  <span class="math">
+     <math><mrow><mo>|</mo><mi>a</mi><mo>|</mo><mi>b</mi><mo>+</mo><mo>&#x00A6;</mo><mi>c</mi><mo>&#x00A6;</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">12</span>
+  <span class="math">
+     <math><mrow><mo>&#x00A6;</mo><mo>|</mo><mi>a</mi><mo>|</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>&#x00A6;</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">13</span>
+  <span class="math">
+     <math><mrow><mo>|</mo><mo>(</mo><mo>)</mo><mo>|</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">14</span>
+  <span class="math">
+     <math><mrow><mo>(</mo><mo>|</mo><mi>a</mi><mo>|</mo><mi>b</mi><mo>&#x00A6;</mo><mi>c</mi><mo>&#x00A6;</mo><mi>d</mi><mo>)</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">15</span>
+  <span class="math">
+     <math><mrow><mo>|</mo><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo><mo>&#x00A6;</mo><mi>c</mi><mo>&#x00A6;</mo><mi>d</mi><mo>|</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">16</span>
+  <span class="math">
+     <math><mrow><mo>[</mo><mo>|</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>|</mo><mo>+</mo><mi>c</mi><mo>]</mo><mo>+</mo><mo>&#x00A6;</mo><mi>d</mi><mo>+</mo><mo>(</mo><mi>e</mi><mo>+</mo><mi>f</mi><mo>)</mo><mo>&#x00A6;</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">17</span>
+  <span class="math">
+     <math><mrow><mo>{</mo><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo><mo>|</mo><mi>x</mi><mi>y</mi><mo>=</mo><mo>z</mo><mo>}</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">18</span>
+  <span class="math">
+     <math><mrow><mo>[</mo><mi>a</mi><mo>&#x2016;</mo><mi>b</mi><mo>]</mo><mo>|</mo><mo>[</mo><mi>x</mi><mo>&#x2016;</mo><mi>y</mi><mo>]</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">19</span>
+  <span class="math">
+     <math><mrow><mo>&#x2016;</mo><mo>[</mo><mi>a</mi><mo>&#x2016;</mo><mi>b</mi><mo>]</mo><mo>|</mo><mo>[</mo><mi>x</mi><mo>&#x2016;</mo><mi>y</mi><mo>]</mo><mo>&#x2016;</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">20</span>
+  <span class="math">
+     <math><mrow><mo>&#x2016;</mo><mo>[</mo><mi>a</mi><mo>&#x2016;</mo><mi>b</mi><mo>]</mo><mo>|</mo><mo>[</mo><mi>c</mi><mo>&#x2016;</mo><mo>&#x00A6;</mo><mi>d</mi><mo>]</mo><mo>&#x2016;</mo><mo>[</mo><mi>u</mi><mo>&#x2016;</mo><mi>v</mi><mo>]</mo><mo>|</mo><mi>x</mi><mo>&#x2016;</mo><mi>y</mi><mo>&#x00A6;</mo><mi>z</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">21</span>
+  <span class="math">
+     <math><mrow><mo>[</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">22</span>
+  <span class="math">
+     <math><mrow><mi>a</mi><mo>[</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">23</span>
+  <span class="math">
+     <math><mrow><mi>a</mi><mo>[</mo><mi>b</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">24</span>
+  <span class="math">
+     <math><mrow><mo>[</mo><mi>b</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">25</span>
+  <span class="math">
+     <math><mrow><mi>a</mi><mo>[</mo><mi>b</mi><mi>c</mi><mo>(</mo><mi>d</mi><mo>{</mo><mi>e</mi><mo>&#x3008;</mo><mi>f</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">26</span>
+  <span class="math">
+     <math><mrow><mi>a</mi><mo>[</mo><mi>b</mi><mo>[</mo><mo>(</mo><mo>(</mo><mi>c</mi><mo>)</mo><mi>d</mi><mo>{</mo><mi>e</mi><mo>&#x3008;</mo><mi>f</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">27</span>
+  <span class="math">
+     <math><mrow><mo>]</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">28</span>
+  <span class="math">
+     <math><mrow><mi>a</mi><mo>]</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">29</span>
+  <span class="math">
+     <math><mrow><mi>a</mi><mo>]</mo><mi>b</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">30</span>
+  <span class="math">
+     <math><mrow><mo>]</mo><mi>b</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">31</span>
+  <span class="math">
+     <math><mrow><mi>a</mi><mo>]</mo><mi>b</mi><mi>c</mi><mo>)</mo><mi>d</mi><mo>}</mo><mi>e</mi><mo>&#x3009;</mo><mi>f</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">32</span>
+  <span class="math">
+     <math><mrow><mi>a</mi><mo>]</mo><mi>b</mi><mo>]</mo><mo>(</mo><mi>c</mi><mo>)</mo><mo>)</mo><mi>d</mi><mo>}</mo><mi>e</mi><mo>&#x3009;</mo><mi>f</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">33</span>
+  <span class="math">
+     <math><mrow><mo>|</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">34</span>
+  <span class="math">
+     <math><mrow><mi>a</mi><mo>|</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">35</span>
+  <span class="math">
+     <math><mrow><mi>a</mi><mo>|</mo><mi>b</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">36</span>
+  <span class="math">
+     <math><mrow><mo>|</mo><mi>b</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">37</span>
+  <span class="math">
+     <math><mrow><mi>a</mi><mo>|</mo><mi>b</mi><mo>&#x00A6;</mo><mi>c</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">38</span>
+  <span class="math">
+     <math><mrow><mi>a</mi><mo>&#x2016;</mo><mi>b</mi><mo>|</mo><mi>c</mi><mo>&#x00A6;</mo><mi>d</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">39</span>
+  <span class="math">
+     <math><mrow><mo>&#x2016;</mo><mo>[</mo><mi>a</mi><mo>&#x2016;</mo><mi>b</mi><mo>]</mo><mo>&#x2016;</mo><mo>|</mo><mi>x</mi><mo>&#x2016;</mo><mi>y</mi><mo>&#x00A6;</mo><mi>z</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">40</span>
+  <span class="math">
+     <math><mrow><mo>]</mo><mo>&#x2016;</mo><mi>b</mi><mo>|</mo><mi>c</mi><mo>(</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">41</span>
+  <span class="math">
+     <math><mrow><mi>a</mi><mo>&#x2016;</mo><mi>b</mi><mo>|</mo><mi>c</mi><mo>&#x00A6;</mo><mi>d</mi><mo>]</mo><mi>e</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">42</span>
+  <span class="math">
+     <math><mrow><mo>[</mo><mi>a</mi><mo>&#x2016;</mo><mi>b</mi><mo>|</mo><mi>c</mi><mo>&#x00A6;</mo><mi>d</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">43</span>
+  <span class="math">
+     <math><mrow><mo>&#x2016;</mo><mo>[</mo><mi>a</mi><mo>&#x2016;</mo><mi>b</mi><mo>]</mo><mo>|</mo><mo>[</mo><mi>c</mi><mo>&#x2016;</mo><mo>&#x00A6;</mo><mi>d</mi><mo>]</mo><mo>&#x2016;</mo><mo>|</mo><mi>x</mi><mo>&#x2016;</mo><mi>y</mi><mo>&#x00A6;</mo><mi>z</mi><mo>]</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">44</span>
+  <span class="math">
+     <math><mrow><mo>&#x2016;</mo><mo>]</mo><mo>&#x00A6;</mo><mo>&#x2016;</mo><mo>[</mo><mo>|</mo><mo>[</mo><mi>a</mi><mo>&#x2016;</mo><mi>b</mi><mo>]</mo><mo>&#x2016;</mo><mo>|</mo><mi>[</mi><mo>&#x2016;</mo><mi>y</mi><mo>&#x00A6;</mo><mi>z</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">45</span>
+  <span class="math">
+     <math><mrow><mo>&#x2016;</mo><mo>[</mo><mi>a</mi><mo>&#x00A6;</mo><mo>&#x2016;</mo><mo>[</mo><mo>+</mo><mo>[</mo><mi>b</mi><mo>&#x2016;</mo><mi>c</mi><mo>]</mo><mo>+</mo><mo>&#x2016;</mo><mo>|</mo><mi>d</mi><mo>+</mo><mi>e</mi><mi>[</mi><mo>&#x2016;</mo><mi>y</mi><mo>&#x00A6;</mo><mo>+</mo><mi>z</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">46</span>
+  <span class="math">
+     <math><mo>(</mo><mi>x</mi><msup><mo>)</mo><mn>4</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">47</span>
+  <span class="math">
+     <math><mo>(</mo><mi>x</mi><msup><mo>)</mo><mn>4</mn></msup><mo>+</mo><mo>(</mo><mi>y</mi><msup><mo>)</mo><mn>3</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">48</span>
+  <span class="math">
+     <math><mo>(</mo><mi>x</mi><msub><msup><mo>)</mo><mn>4</mn></msup><mn>2</mn></msub></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">49</span>
+  <span class="math">
+     <math><mo>(</mo><mi>x</mi><msubsup><mo>)</mo><mn>4</mn><mn>2</mn></msubsup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">50</span>
+  <span class="math">
+     <math><mo>(</mo><mi>x</mi><mmultiscripts><mo>)</mo><mn>4</mn><mn>2</mn></mmultiscripts></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">51</span>
+  <span class="math">
+     <math><mo>(</mo><mi>x</mi><msup><munder><msub><mover><mo>)</mo><mo>^</mo></mover><mn>2</mn></msub><mo>~</mo></munder><mn>1</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">52</span>
+  <span class="math">
+     <math><mo>(</mo><mi>x</mi><mpadded><msup><munder><msub><mover><mo>)</mo><mo>^</mo></mover><mn>2</mn></msub><mo>~</mo></munder><mn>3</mn></msup></mpadded></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">53</span>
+  <span class="math">
+     <math><msup><mo>(</mo><mn>4</mn></msup><mi>x</mi><mo>)</mo></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">54</span>
+  <span class="math">
+     <math><mmultiscripts><mo>(</mo><mn>4</mn></mmultiscripts><mi>x</mi><mo>)</mo></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">55</span>
+  <span class="math">
+     <math><mmultiscripts><mo>(</mo><mprescripts/><mn>4</mn></mmultiscripts><mi>x</mi><mo>)</mo></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">56</span>
+  <span class="math">
+     <math><mmultiscripts><mo>(</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mi>x</mi><mo>)</mo></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">57</span>
+  <span class="math">
+     <math><mmultiscripts><mo>(</mo><mn>2</mn><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mi>x</mi><mo>)</mo></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">58</span>
+  <span class="math">
+     <math><mmultiscripts><munder><mo>(</mo><mo>~</mo></munder><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mi>x</mi><mo>)</mo></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">59</span>
+  <span class="math">
+     <math><mmultiscripts><mover><mmultiscripts><munder><mo>(</mo><mo>~</mo></munder><mprescripts/><none/><mn>3</mn></mmultiscripts><mo>^</mo></mover><mprescripts/><mn>4</mn></mmultiscripts><mi>x</mi><mo>)</mo></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">60</span>
+  <span class="math">
+     <math><mmultiscripts><mo>(</mo><mprescripts/><mn>4</mn></mmultiscripts><mi>x</mi><msup><mo>)</mo><mn>2</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">61</span>
+  <span class="math">
+     <math><mmultiscripts><mo>(</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mi>x</mi><msubsup><mo>)</mo><mn>1</mn><mn>2</mn></msubsup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">62</span>
+  <span class="math">
+     <math><munder><mmultiscripts><mo>(</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mo>~</mo></munder><mi>x</mi><mover><msubsup><mo>)</mo><mn>1</mn><mn>2</mn></msubsup><mo>^</mo></mover></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">63</span>
+  <span class="math">
+     <math><mo>(</mo><mi>x</mi><mpadded mathbackground="red"><msup><munder><msub><mover><mo>)</mo><mo>^</mo></mover><mn>2</mn></msub><mo>~</mo></munder><mn>3</mn></msup></mpadded></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">64</span>
+  <span class="math">
+     <math><mpadded mathbackground="red"><mmultiscripts><mover><mmultiscripts><munder><mo>(</mo><mo>~</mo></munder><mprescripts/><none/><mn>3</mn></mmultiscripts><mo>^</mo></mover><mprescripts/><mn>4</mn></mmultiscripts></mpadded><mi>x</mi><mo>)</mo></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">65</span>
+  <span class="math">
+     <math><mpadded mathbackground="blue"><munder><mmultiscripts><mo>(</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mo>~</mo></munder></mpadded><mi>x</mi><mpadded mathbackground="red"><mover><msubsup><mo>)</mo><mn>1</mn><mn>2</mn></msubsup><mo>^</mo></mover></mpadded></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">66</span>
+  <span class="math">
+     <math><mo>(</mo><mi>x</mi><msup><mo>)</mo><mn>4</mn></msup><mo>+</mo><mn>1</mn></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">67</span>
+  <span class="math">
+     <math><mn>2</mn><mo>+</mo><mo>(</mo><mi>x</mi><msup><mo>)</mo><mn>4</mn></msup><mo>+</mo><mn>1</mn></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">68</span>
+  <span class="math">
+     <math><mo>-</mo><mo>(</mo><mi>x</mi><msup><mo>)</mo><mn>4</mn></msup><mo>+</mo><mn>1</mn></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">69</span>
+  <span class="math">
+     <math><mmultiscripts><mo>(</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mi>x</mi><mo>)</mo><mo>+</mo><mn>1</mn></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">70</span>
+  <span class="math">
+     <math><mo>-</mo><mmultiscripts><mo>(</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mi>x</mi><mo>)</mo><mo>+</mo><mn>1</mn></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">71</span>
+  <span class="math">
+     <math><mi>k</mi><mo>+</mo><mmultiscripts><mo>(</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mi>x</mi><mo>)</mo><mo>+</mo><mn>1</mn></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">72</span>
+  <span class="math">
+     <math><mmultiscripts><mo>(</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mi>x</mi><msubsup><mo>)</mo><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mn>1</mn></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">73</span>
+  <span class="math">
+     <math><mo>-</mo><mmultiscripts><mo>(</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mi>x</mi><msubsup><mo>)</mo><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mn>1</mn></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">74</span>
+  <span class="math">
+     <math><mi>k</mi><mo>-</mo><mmultiscripts><mo>(</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mi>x</mi><msubsup><mo>)</mo><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mn>1</mn></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">75</span>
+  <span class="math">
+     <math><mo>(</mo><mi>x</mi><mo>+</mo><mi>y</mi><msup><mo>)</mo><mn>4</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">76</span>
+  <span class="math">
+     <math><mo>(</mo><mi>x</mi><mo>+</mo><mi>y</mi><msub><mo>)</mo><mn>4</mn></msub></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">77</span>
+  <span class="math">
+     <math><mo>|</mo><mi>x</mi><msup><mo>|</mo><mn>4</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">78</span>
+  <span class="math">
+     <math><mo>|</mo><mi>x</mi><msup><mo>|</mo><mn>4</mn></msup><mo>+</mo><mo>|</mo><mi>y</mi><msup><mo>|</mo><mn>3</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">79</span>
+  <span class="math">
+     <math><mo>|</mo><mi>x</mi><msub><msup><mo>|</mo><mn>4</mn></msup><mn>2</mn></msub></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">80</span>
+  <span class="math">
+     <math><mo>|</mo><mi>x</mi><mpadded mathbackground="blue"><msup><mo>|</mo><mn>4</mn></msup></mpadded></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">81</span>
+  <span class="math">
+     <math><mmultiscripts><mo>|</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mi>x</mi><mo>|</mo></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">82</span>
+  <span class="math">
+     <math><mmultiscripts><mo>|</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mi>x</mi><msubsup><mo>|</mo><mn>1</mn><mn>2</mn></msubsup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">83</span>
+  <span class="math">
+     <math><mo>|</mo><mi>x</mi><mo>¦</mo><mi>y</mi><msup><mo>|</mo><mn>4</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">84</span>
+  <span class="math">
+     <math><msup><mo>|</mo><mn>1</mn></msup><mi>a</mi><mo>|</mo></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">85</span>
+  <span class="math">
+     <math><msub><mo>|</mo><mn>1</mn></msub><mi>a</mi><mo>|</mo></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">86</span>
+  <span class="math">
+     <math><msubsup><mo>|</mo><mn>1</mn><mn>2</mn></msubsup><mi>a</mi><mo>|</mo></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">87</span>
+  <span class="math">
+     <math><msup><mo>|</mo><mn>1</mn></msup><mi>x</mi><msup><mo>|</mo><mn>1</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">88</span>
+  <span class="math">
+     <math><msub><mo>|</mo><mn>1</mn></msub><mi>x</mi><msub><mo>|</mo><mn>1</mn></msub></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">89</span>
+  <span class="math">
+     <math><msubsup><mo>|</mo><mn>1</mn><mn>2</mn></msubsup><mi>a</mi><msubsup><mo>|</mo><mn>1</mn><mn>2</mn></msubsup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">90</span>
+  <span class="math">
+     <math><mmultiscripts><mo>|</mo><mn>1</mn><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mi>x</mi><msubsup><mo>|</mo><mn>1</mn><mn>2</mn></msubsup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">91</span>
+  <span class="math">
+     <math><mmultiscripts><mo>|</mo><mn>1</mn></mmultiscripts><mi>x</mi><msubsup><mo>|</mo><mn>1</mn><mn>2</mn></msubsup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">92</span>
+  <span class="math">
+     <math><mo>|</mo><mi>a</mi><mmultiscripts><mo>|</mo><mprescripts/><mn>3</mn></mmultiscripts></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">93</span>
+  <span class="math">
+     <math><mo>|</mo><mi>a</mi><mmultiscripts><mo>|</mo><mprescripts/><none/><mn>3</mn></mmultiscripts></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">94</span>
+  <span class="math">
+     <math><mo>|</mo><mi>a</mi><mmultiscripts><mo>|</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">95</span>
+  <span class="math">
+     <math><mmultiscripts><mo>|</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mi>x</mi><mmultiscripts><mo>|</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mi>y</mi><msubsup><mo>|</mo><mn>1</mn><mn>2</mn></msubsup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">96</span>
+  <span class="math">
+     <math><mmultiscripts><mo>|</mo><mprescripts/><mn>3</mn></mmultiscripts><mi>x</mi><mmultiscripts><mo>|</mo><mprescripts/><mn>3</mn></mmultiscripts><mi>y</mi><msup><mo>|</mo><mn>1</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">97</span>
+  <span class="math">
+     <math><mmultiscripts><mo>|</mo><mprescripts/><mn>3</mn></mmultiscripts><mi>x</mi><msub><mo>|</mo><mn>2</mn></msub><mi>y</mi><msup><mo>|</mo><mn>1</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">98</span>
+  <span class="math">
+     <math><mmultiscripts><mo>|</mo><mn>3</mn><mprescripts/></mmultiscripts><mi>x</mi><msub><mo>|</mo><mn>2</mn></msub><mi>y</mi><msup><mo>|</mo><mn>1</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">99</span>
+  <span class="math">
+     <math><mmultiscripts><mo>|</mo><mprescripts/><mn>3</mn></mmultiscripts><mi>x</mi><mmultiscripts><mo>|</mo><mprescripts/><mn>3</mn></mmultiscripts><mi>z</mi><mmultiscripts><mo>|</mo><mprescripts/><mn>3</mn></mmultiscripts><mi>y</mi><msup><mo>|</mo><mn>1</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">100</span>
+  <span class="math">
+     <math><mmultiscripts><mo>|</mo><mprescripts/><mn>3</mn></mmultiscripts><mi>x</mi><msup><mo>|</mo><mn>2</mn></msup><mi>z</mi><mmultiscripts><mo>|</mo><mprescripts/><mn>3</mn></mmultiscripts><mi>y</mi><msup><mo>|</mo><mn>1</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">101</span>
+  <span class="math">
+     <math><mmultiscripts><mo>|</mo><mprescripts/><mn>3</mn></mmultiscripts><mi>x</mi><msup><mo>|</mo><mn>2</mn></msup><mi>z</mi><mmultiscripts><mo>|</mo><mprescripts/><mn>3</mn></mmultiscripts><mi>y</mi><msup><mo>|</mo><mn>1</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">102</span>
+  <span class="math">
+     <math><mmultiscripts><mo>|</mo><mprescripts/><none/><mn>3</mn></mmultiscripts><mi>x</mi><mo>|</mo></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">103</span>
+  <span class="math">
+     <math><mmultiscripts><mo>|</mo><mprescripts/><mn>4</mn></mmultiscripts><mi>x</mi><mo>|</mo></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">104</span>
+  <span class="math">
+     <math><mmultiscripts><mo>|</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mi>x</mi><mo>|</mo></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">105</span>
+  <span class="math">
+     <math><mo>|</mo><mi>x</mi><msubsup><mo>|</mo><mn>1</mn><mn>2</mn></msubsup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">106</span>
+  <span class="math">
+     <math><mo>|</mo><mi>x</mi><mmultiscripts><mo>|</mo><mn>4</mn><mn>3</mn><mprescripts/></mmultiscripts></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">107</span>
+  <span class="math">
+     <math><mmultiscripts><mo>|</mo><mprescripts/><mn>4</mn><mn>3</mn></mmultiscripts><mi>x</mi><msubsup><mo>|</mo><mn>1</mn><mn>2</mn></msubsup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">108</span>
+  <span class="math">
+     <math><mmultiscripts><mo>|</mo><mprescripts/><mn>3</mn></mmultiscripts><mi>x</mi><msup><mo>|</mo><mn>2</mn></msup><mi>z</mi><mmultiscripts><mo>|</mo><mprescripts/><mn>3</mn></mmultiscripts><mi>y</mi><msup><mo>|</mo><mn>1</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">109</span>
+  <span class="math">
+     <math><mmultiscripts><mo>|</mo><mprescripts/><mn>3</mn></mmultiscripts><mi>x</mi><msub><mo>|</mo><mn>2</mn></msub><mi>z</mi><mmultiscripts><mo>|</mo><mprescripts/><mn>3</mn></mmultiscripts><mi>y</mi><msub><mo>|</mo><mn>1</mn></msub></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">110</span>
+  <span class="math">
+     <math><mtable displaystyle="true" xmlns="http://www.w3.org/1998/Math/MathML"><mlabeledtr><mtd><mtext>(1)</mtext></mtd><mtd><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mtd></mlabeledtr></mtable></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">111</span>
+  <span class="math">
+     <math><mtable displaystyle="true" xmlns="http://www.w3.org/1998/Math/MathML"><mlabeledtr><mtd><mtext>(1)</mtext></mtd><mtd><mi>x</mi><mo>=</mo><mi>y</mi></mtd></mlabeledtr></mtable></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">112</span>
+  <span class="math">
+     <math><mtable displaystyle="true" xmlns="http://www.w3.org/1998/Math/MathML"><mlabeledtr><mtd><mtext>(3.42)</mtext></mtd><mtd><mo stretchy="false">(</mo><msub><mi>L</mi><mrow><mn>1</mn></mrow></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>L</mi><mi>j</mi></msub><mo>,</mo><msub><mi>σ</mi><mrow><mo>−</mo><mi>r</mi></mrow></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>σ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msubsup><mi>L</mi><mrow><mn>1</mn></mrow><mo data-mjx-alternate="1">′</mo></msubsup><mo>,</mo><mo>…</mo><mo>,</mo><msubsup><mi>L</mi><mi>k</mi><mo data-mjx-alternate="1">′</mo></msubsup><mo>,</mo><msubsup><mi>σ</mi><mrow><mn>0</mn></mrow><mi>ϕ</mi></msubsup><mo>,</mo><msubsup><mi>σ</mi><mrow><mn>1</mn></mrow><mi>ϕ</mi></msubsup><mo>,</mo><mo>…</mo><mo>,</mo><msubsup><mi>σ</mi><mi>ℓ</mi><mi>ϕ</mi></msubsup><mo stretchy="false">)</mo></mtd></mlabeledtr></mtable></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">113</span>
+  <span class="math">
+     <math><mo stretchy="false" xmlns="http://www.w3.org/1998/Math/MathML">(</mo><mn xmlns="http://www.w3.org/1998/Math/MathML">1</mn><mstyle scriptlevel="0" xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.167em"/></mstyle><mn xmlns="http://www.w3.org/1998/Math/MathML">1</mn><mstyle scriptlevel="0" xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="0.167em"/></mstyle><mn xmlns="http://www.w3.org/1998/Math/MathML">1</mn><msup xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false">)</mo><mn>1</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">114</span>
+  <span class="math">
+     <math><mo stretchy="false" xmlns="http://www.w3.org/1998/Math/MathML">(</mo><mi xmlns="http://www.w3.org/1998/Math/MathML">a</mi><mstyle scriptlevel="0" xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="1em"/></mstyle><mi xmlns="http://www.w3.org/1998/Math/MathML">b</mi><mstyle scriptlevel="0" xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="1em"/></mstyle><mi xmlns="http://www.w3.org/1998/Math/MathML">c</mi><msup xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false">)</mo><mn>2</mn></msup></math>
+  </span>
+  <span class="tree"></span>
+</div>
+
+</body>
+<script type="text/javascript">
+streeVis.config.expanded = true;
+streeVis.renderCells();
+</script>
+</html>
