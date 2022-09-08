@@ -70,7 +70,7 @@ const header = '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">\n<html>\n<head>\n
   '<link type="text/css" rel="stylesheet" href="https://speech-rule-engine.github.io/semantic-tree-visualiser/styles/style.css"/>\n' +
   '<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/d3/dist/d3.min.js"></script>\n' +
   '<link type="text/css" rel="stylesheet" href="https://speech-rule-engine.github.io/semantic-tree-visualiser/styles/tree.css"/>\n' +
-  '<script src="https://cdn.jsdelivr.net/gh/speech-rule-engine/speech-rule-engine@deploy/lib/sre.js"></script>\n' +
+  '<script src="https://cdn.jsdelivr.net/npm/speech-rule-engine/lib/sre.js"></script>\n' +
   '<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>\n' +
   '<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>\n' +
   '<script type="text/javascript" src="https://speech-rule-engine.github.io/semantic-tree-visualiser/lib/visualise.js"></script>';
