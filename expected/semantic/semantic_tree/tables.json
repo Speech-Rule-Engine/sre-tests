@@ -869,6 +869,18 @@
     },
     "issue_564_3": {
       "expected": "<stree><superscript role=\"leftright\" fencepointer=\"9\" id=\"13\"><children><subscript role=\"subsup\" fencepointer=\"9\" id=\"12\"><children><tensor role=\"leftright\" fencepointer=\"0\" id=\"5\"><children><fenced role=\"leftright\" id=\"16\"><content><underscore role=\"open\" embellished=\"fence\" id=\"7\"><children><fence role=\"open\" id=\"0\">(</fence><relation role=\"underaccent\" annotation=\"accent:tilde\" id=\"6\">~</relation></children></underscore><overscore role=\"close\" embellished=\"fence\" id=\"15\"><children><fence role=\"close\" id=\"9\">)</fence><operator role=\"overaccent\" annotation=\"accent:unknown\" id=\"14\">^</operator></children></overscore></content><children><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"8\">x</identifier></children></fenced><number role=\"leftsub\" font=\"normal\" id=\"1\">4</number><number role=\"leftsuper\" font=\"normal\" id=\"2\">3</number><empty role=\"rightsub\" id=\"3\"/><empty role=\"rightsuper\" id=\"4\"/></children></tensor><number role=\"integer\" font=\"normal\" annotation=\"clearspeak:simple\" id=\"10\">1</number></children></subscript><number role=\"integer\" font=\"normal\" annotation=\"clearspeak:simple\" id=\"11\">2</number></children></superscript></stree>"
+    },
+    "Actions_2": {
+      "expected": "<stree><text role=\"unknown\" font=\"normal\" annotation=\"clearspeak:unit\" id=\"0\">something</text></stree>"
+    },
+    "Actions_3": {
+      "expected": "<stree><text role=\"unknown\" font=\"normal\" annotation=\"clearspeak:unit\" id=\"0\">something</text></stree>"
+    },
+    "Actions_4": {
+      "expected": "<stree><infixop role=\"addition\" id=\"5\">+<content><operator role=\"addition\" id=\"1\">+</operator><operator role=\"addition\" id=\"3\">+</operator></content><children><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">a</identifier><number role=\"integer\" font=\"normal\" annotation=\"clearspeak:simple\" id=\"2\">1</number><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"4\">c</identifier></children></infixop></stree>"
+    },
+    "Actions_5": {
+      "expected": "<stree><infixop role=\"addition\" id=\"5\">+<content><operator role=\"addition\" id=\"1\">+</operator><operator role=\"addition\" id=\"3\">+</operator></content><children><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"2\">b</identifier><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"4\">c</identifier></children></infixop></stree>"
     }
   }
 }

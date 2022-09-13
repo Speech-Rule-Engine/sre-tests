@@ -59,7 +59,7 @@ export class CollapseTest extends SpeechTest {
   ) {
     mml =
       (pre || '') +
-      '<maction><mtext>action</mtext>' +
+      '<maction selection="2"><mtext>action</mtext>' +
       '<mrow data-semantic-id="A" ext-id="A">' +
       mml +
       '</mrow></maction>' +

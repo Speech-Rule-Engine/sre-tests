@@ -536,10 +536,10 @@
       "expected": "<math type=\"postfixop\" role=\"multiop\" id=\"7\" children=\"0\" content=\"3,6\"><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\" parent=\"7\">x</mi><msub type=\"subscript\" role=\"addition\" embellished=\"operator\" id=\"3\" children=\"1,2\" parent=\"7\" operator=\"postfixop,+ +\"><mo type=\"operator\" role=\"addition\" id=\"1\" parent=\"3\">+</mo><mn type=\"number\" role=\"integer\" font=\"normal\" id=\"2\" parent=\"3\">2</mn></msub><msub type=\"subscript\" role=\"addition\" embellished=\"operator\" id=\"6\" children=\"4,5\" parent=\"7\" operator=\"postfixop,+ +\"><mo type=\"operator\" role=\"addition\" id=\"4\" parent=\"6\">+</mo><mn type=\"number\" role=\"integer\" font=\"normal\" id=\"5\" parent=\"6\">3</mn></msub></math>"
     },
     "Actions_0": {
-      "expected": "<math><maction type=\"number\" role=\"integer\" font=\"normal\" annotation=\"clearspeak:simple\" id=\"0\"><mtext>something</mtext><mn>2</mn></maction></math>"
+      "expected": "<math><maction selection=\"2\"><mtext>something</mtext><mn type=\"number\" role=\"integer\" font=\"normal\" annotation=\"clearspeak:simple\" id=\"0\">2</mn></maction></math>"
     },
     "Actions_1": {
-      "expected": "<math><maction type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\"><mtext>something</mtext><mi>a</mi></maction></math>"
+      "expected": "<math><maction selection=\"2\"><mtext>something</mtext><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">a</mi></maction></math>"
     },
     "SemanticsElement_0": {
       "expected": "<math type=\"empty\" role=\"unknown\" id=\"0\"><semantics/></math>"
@@ -870,6 +870,18 @@
     },
     "issue_564_3": {
       "expected": "<math><msubsup type=\"subsup\" role=\"leftright\" fencepointer=\"9\" id=\"13\" children=\"5,10,11\" collapsed=\"(13 (12 5 10) 11)\"><mmultiscripts type=\"tensor\" role=\"leftright\" fencepointer=\"0\" id=\"5\" children=\"16,1,2,3,4\" parent=\"13\" collapsed=\"(5 16 1 2 3 4)\"><mrow type=\"fenced\" role=\"leftright\" id=\"16\" children=\"8\" content=\"7,15\" parent=\"5\"><mpadded mathbackground=\"blue\"><munder type=\"underscore\" role=\"open\" embellished=\"fence\" id=\"7\" children=\"0,6\" parent=\"16\"><mo type=\"fence\" role=\"open\" id=\"0\" parent=\"7\">(</mo><mo type=\"relation\" role=\"underaccent\" annotation=\"accent:tilde\" id=\"6\" parent=\"7\">~</mo></munder></mpadded><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"8\" parent=\"16\">x</mi><mpadded mathbackground=\"red\"><mover type=\"overscore\" role=\"close\" embellished=\"fence\" id=\"15\" children=\"9,14\" parent=\"16\"><mo type=\"fence\" role=\"close\" id=\"9\" parent=\"15\">)</mo><mo type=\"operator\" role=\"overaccent\" annotation=\"accent:unknown\" id=\"14\" parent=\"15\">^</mo></mover></mpadded></mrow><none type=\"empty\" role=\"rightsub\" id=\"3\" parent=\"5\" added=\"true\"/><none type=\"empty\" role=\"rightsuper\" id=\"4\" parent=\"5\" added=\"true\"/><mprescripts/><mn type=\"number\" role=\"leftsub\" font=\"normal\" id=\"1\" parent=\"5\">4</mn><mn type=\"number\" role=\"leftsuper\" font=\"normal\" id=\"2\" parent=\"5\">3</mn></mmultiscripts><mn type=\"number\" role=\"integer\" font=\"normal\" annotation=\"clearspeak:simple\" id=\"10\" parent=\"13\">1</mn><mn type=\"number\" role=\"integer\" font=\"normal\" annotation=\"clearspeak:simple\" id=\"11\" parent=\"13\">2</mn></msubsup></math>"
+    },
+    "Actions_2": {
+      "expected": "<math><maction selection=\"1\"><mtext type=\"text\" role=\"unknown\" font=\"normal\" annotation=\"clearspeak:unit\" id=\"0\">something</mtext><mn>2</mn></maction></math>"
+    },
+    "Actions_3": {
+      "expected": "<math><maction selection=\"1\"><mtext type=\"text\" role=\"unknown\" font=\"normal\" annotation=\"clearspeak:unit\" id=\"0\">something</mtext><mi>a</mi></maction></math>"
+    },
+    "Actions_4": {
+      "expected": "<math type=\"infixop\" role=\"addition\" id=\"5\" children=\"0,2,4\" content=\"1,3\"><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\" parent=\"5\">a</mi><mo type=\"operator\" role=\"addition\" id=\"1\" parent=\"5\" operator=\"infixop,+\">+</mo><maction selection=\"1\"><mn type=\"number\" role=\"integer\" font=\"normal\" annotation=\"clearspeak:simple\" id=\"2\" parent=\"5\">1</mn><mi>b</mi></maction><mo type=\"operator\" role=\"addition\" id=\"3\" parent=\"5\" operator=\"infixop,+\">+</mo><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"4\" parent=\"5\">c</mi></math>"
+    },
+    "Actions_5": {
+      "expected": "<math type=\"infixop\" role=\"addition\" id=\"5\" children=\"0,2,4\" content=\"1,3\"><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\" parent=\"5\">a</mi><mo type=\"operator\" role=\"addition\" id=\"1\" parent=\"5\" operator=\"infixop,+\">+</mo><maction selection=\"2\"><mn>1</mn><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"2\" parent=\"5\">b</mi></maction><mo type=\"operator\" role=\"addition\" id=\"3\" parent=\"5\" operator=\"infixop,+\">+</mo><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"4\" parent=\"5\">c</mi></math>"
     }
   }
 }

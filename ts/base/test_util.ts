@@ -64,7 +64,7 @@ export interface JsonFile {
   [propName: string]: any;
   factory?: string;
   information?: string;
-  exlcude?: string[];
+  exclude?: string[];
   base?: string;
   tests?: JsonTests | 'ALL';
 }
