@@ -75,7 +75,7 @@ import { AbstractTransformer, Transformer } from './transformers';
  */
 export function transformInput(
   json: tu.JsonTest,
-  field = 'input'
+  field: string = 'input'
 ): tu.JsonTests {
   const result: { [name: string]: any } = {};
   for (const [name, expressions] of Object.entries(json)) {
@@ -114,6 +114,34 @@ export function generateTestJson(
   const newJson = transformInput(oldJson, field);
   tu.TestUtil.saveJson(output, newJson);
 }
+
+
+export function generateTestList(
+  input: string,
+  output: string,
+  name: string,
+  transformers: Transformer[] = [],
+  newJson: tu.JsonTests = {}
+) {
+  const oldJson = tu.TestUtil.loadJson(input) as tu.JsonTest[];
+  let commentCount = 0;
+  let testCount = 0;
+  let digits = Math.ceil(Math.log(oldJson.length)/Math.log(10))
+  const leading = Array(digits + 1).join('0');
+  digits = -1 * digits;
+  let tests: tu.JsonTests = {};
+  for (let entry of oldJson) {
+    if (entry.comment) {
+      tests[`_comment_${commentCount++}`] = entry.comment;
+      continue;
+    }
+    transformTest(entry, transformers);
+    tests[`${name}_${(leading + testCount++).slice(digits)}`] = entry;
+  }
+  newJson['tests'] = tests;
+  tu.TestUtil.saveJson(output, newJson);
+}
+
 
 /**
  * Runs a series of transformers on the given tests object.
