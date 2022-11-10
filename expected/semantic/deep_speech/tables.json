@@ -2,6 +2,6 @@
   "factory": "deepSpeech",
   "tests": "ALL",
   "information": "Deep speech tables tests.",
-  "exclude": ["Mfenced_14", "Actions_0", "Actions_1", "SemanticsAnnotation_0", "SemanticsAnnotationXml_1"],
+  "exclude": ["SemanticsAnnotation_0", "SemanticsAnnotationXml_1"],
   "base": "input/semantic/tables.json"
 }
