@@ -77,6 +77,21 @@
     },
     "Integral_Issue_2": {
       "expected": "the integral of f of x, d x, equals 8"
+    },
+    "Issue_689_0": {
+      "expected": "2 lines, Line 1:, 2 lines, Line 1: 100. Line 2: 200. Line 2:, 2 lines, Line 1: 300. Line 2: 400"
+    },
+    "Issue_689_1": {
+      "expected": "2 lines, Line 1: a; b. Line 2:, 2 lines, Line 1:, c sub 1; c sub 2. Line 2:, c sub 3; c sub 4. d"
+    },
+    "Issue_689_2": {
+      "expected": "2 cases, Case 1:, 2 cases, Case 1: b. Case 2: c. Case 2: d"
+    },
+    "Issue_689_3": {
+      "expected": "the 2 by 2 matrix. Row 1: Column 1, a; Column 2, b. Row 2: Column 1, the 2 by 2 matrix. Row 1: c sub 1, c sub 2 Row 2: c sub 3, c sub 4. end matrix; Column 2, d. end matrix"
+    },
+    "Issue_689_4": {
+      "expected": "the 2 by 2 matrix. Row 1: Column 1, a; Column 2, b. Row 2: Column 1, the 2 by 2 matrix. Row 1: Column 1,, c sub 1; Column 2,, c sub 2. Row 2: Column 1,, c sub 3, plus a plus b; Column 2,, c sub 4. end matrix; Column 2, d. end matrix"
     }
   }
 }

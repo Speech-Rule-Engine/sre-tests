@@ -77,6 +77,21 @@
     },
     "Integral_Issue_2": {
       "expected": "integral av f av x, d x, är lika med 8"
+    },
+    "Issue_689_0": {
+      "expected": "2 rader, rad 1:, rad 1: 100. rad 2: 200. rad 2:, rad 1: 300. rad 2: 400"
+    },
+    "Issue_689_1": {
+      "expected": "2 rader, rad 1: a; b. rad 2:, rad 1:, c index 1; c index 2. rad 2:, c index 3; c index 4. d"
+    },
+    "Issue_689_2": {
+      "expected": "2 fall, fall 1:, fall 1: b. fall 2: c. fall 2: d"
+    },
+    "Issue_689_3": {
+      "expected": "2 gånger 2 matrisen. rad 1: kolumn 1, a; kolumn 2, b. rad 2: kolumn 1, 2 gånger 2 matrisen. rad 1: c index 1, c index 2 rad 2: c index 3, c index 4. kolumn 2, d. slut matris"
+    },
+    "Issue_689_4": {
+      "expected": "2 gånger 2 matrisen. rad 1: kolumn 1, a; kolumn 2, b. rad 2: kolumn 1, 2 gånger 2 matrisen. rad 1: kolumn 1,, c index 1; kolumn 2,, c index 2. rad 2: kolumn 1,, c index 3, plus a plus b; kolumn 2,, c index 4. kolumn 2, d. slut matris"
     }
   }
 }
