@@ -104,6 +104,26 @@
     "Integral_Issue_2": {
       "preference": "default",
       "input": "<math><mo>∫</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>d</mi><mi>x</mi><mo>=</mo><mn>8</mn></math>"
+    },
+    "Issue_689_0": {
+      "preference": "default",
+      "input": "<math><mtable><mtr><mtd><mtable><mtr><mtd><mn>100</mn></mtd></mtr><mtr><mtd><mn>200</mn></mtd></mtr></mtable></mtd></mtr><mtr><mtd><mtable><mtr><mtd><mn>300</mn></mtd></mtr><mtr><mtd><mn>400</mn></mtd></mtr></mtable></mtd></mtr></mtable></math>"
+    },
+    "Issue_689_1": {
+      "preference": "default",
+      "input": "<math><mtable columnspacing=\"1em\" rowspacing=\"4pt\" columnalign=\"center center\" frame=\"\" framespacing=\".5em .125em\"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mtable columnspacing=\"1em\" rowspacing=\"4pt\" columnalign=\"center center\" frame=\"\" framespacing=\".5em .125em\"><mtr><mtd><msub><mi>c</mi><mn>1</mn></msub></mtd><mtd><msub><mi>c</mi><mn>2</mn></msub></mtd></mtr><mtr><mtd><msub><mi>c</mi><mn>3</mn></msub></mtd><mtd><msub><mi>c</mi><mn>4</mn></msub></mtd></mtr></mtable></mtd><mtd><mi>d</mi></mtd></mtr></mtable></math>"
+    },
+    "Issue_689_2": {
+      "preference": "default",
+      "input": "<math><mrow><mo>{</mo><mtable columnspacing=\"1em\" rowspacing=\".2em\" columnalign=\"left left\"><mtr><mrow><mo>{</mo><mtable columnspacing=\"1em\" rowspacing=\".2em\" columnalign=\"left left\"><mtr><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd></mtr></mtable><mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo></mrow></mtd></mtr><mtr><mtd><mi>d</mi></mtd></mtr></mtable><mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo></mrow></math>"
+    },
+    "Issue_689_3": {
+      "preference": "Matrix_EndMatrix",
+      "input": "<math><mrow><mo>(</mo><mtable columnspacing=\"1em\" rowspacing=\"4pt\"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mrow><mo>(</mo><mtable columnspacing=\"1em\" rowspacing=\"4pt\"><mtr><mtd><msub><mi>c</mi><mn>1</mn></msub></mtd><mtd><msub><mi>c</mi><mn>2</mn></msub></mtd></mtr><mtr><mtd><msub><mi>c</mi><mn>3</mn></msub></mtd><mtd><msub><mi>c</mi><mn>4</mn></msub></mtd></mtr></mtable><mo>)</mo></mrow></mtd><mtd><mi>d</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>"
+    },
+    "Issue_689_4": {
+      "preference": "Matrix_EndMatrix",
+      "input": "<math><mrow><mo>(</mo><mtable columnspacing=\"1em\" rowspacing=\"4pt\"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mrow><mo>(</mo><mtable columnspacing=\"1em\" rowspacing=\"4pt\"><mtr><mtd><msub><mi>c</mi><mn>1</mn></msub></mtd><mtd><msub><mi>c</mi><mn>2</mn></msub></mtd></mtr><mtr><mtd><msub><mi>c</mi><mn>3</mn></msub><mo>+</mo><mi>a</mi><mo>+</mo><mi>b</mi></mtd><mtd><msub><mi>c</mi><mn>4</mn></msub></mtd></mtr></mtable><mo>)</mo></mrow></mtd><mtd><mi>d</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>"
     }
   }
 }
