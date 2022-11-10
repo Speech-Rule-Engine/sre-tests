@@ -58,34 +58,38 @@ namespace AnalyticsUtil {
    *
    */
   export async function initAllSets() {
+    System.setupEngine({mode: 'sync'});
+    let promises: Promise<string | void>[] = [];
     for (const locale of Variables.LOCALES.keys()) {
-      await System.setupEngine({ locale: locale });
+      promises.push(System.setupEngine({ locale: locale }));
     }
+    await Promise.all(promises);
   }
 
   /**
    *
    */
-  export function getAllSets(): { [name: string]: SpeechRule[] } {
-    initAllSets();
-    const trie = SpeechRuleEngine.getInstance().trie;
+  export async function getAllSets(): Promise<{ [name: string]: SpeechRule[] }> {
     const result: { [name: string]: SpeechRule[] } = {};
-    for (const [loc, rest] of Object.entries(
-      SpeechRuleEngine.getInstance().enumerate()
-    )) {
-      for (const [mod, rules] of Object.entries(rest)) {
-        if (mod === 'speech') {
-          for (const rule of Object.keys(rules)) {
-            result[TestUtil.capitalize(rule) + TestUtil.capitalize(loc)] =
-              Trie.collectRules_(trie.byConstraint([loc, mod, rule]));
+    return initAllSets().then(() => {
+      const trie = SpeechRuleEngine.getInstance().trie;
+      for (const [loc, rest] of Object.entries(
+        SpeechRuleEngine.getInstance().enumerate()
+      )) {
+        for (const [mod, rules] of Object.entries(rest)) {
+          if (mod === 'speech') {
+            for (const rule of Object.keys(rules)) {
+              result[TestUtil.capitalize(rule) + TestUtil.capitalize(loc)] =
+                Trie.collectRules_(trie.byConstraint([loc, mod, rule]));
+            }
+          } else {
+            result[TestUtil.capitalize(mod) + TestUtil.capitalize(loc)] =
+              Trie.collectRules_(trie.byConstraint([loc, mod]));
           }
-        } else {
-          result[TestUtil.capitalize(mod) + TestUtil.capitalize(loc)] =
-            Trie.collectRules_(trie.byConstraint([loc, mod]));
         }
       }
-    }
-    return result;
+      return result;
+    });
   }
 }
 

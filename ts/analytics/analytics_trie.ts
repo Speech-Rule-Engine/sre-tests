@@ -90,16 +90,17 @@ namespace AnalyticsTrie {
    *
    */
   export function disjunctiveRules() {
-    const ruleSets = AnalyticsUtil.getAllSets();
-    const result: SpeechRule[] = [];
-    for (const [, rules] of Object.entries(ruleSets)) {
-      rules.forEach((rule) => {
-        if (rule.precondition.hasDisjunctive()) {
-          result.push(rule);
-        }
-      });
-    }
-    outputTrie(tempTrie(result), 'disjunctiveRules');
+    AnalyticsUtil.getAllSets().then((ruleSets) => {
+      const result: SpeechRule[] = [];
+      for (const [, rules] of Object.entries(ruleSets)) {
+        rules.forEach((rule) => {
+          if (rule.precondition.hasDisjunctive()) {
+            result.push(rule);
+          }
+        });
+      }
+      outputTrie(tempTrie(result), 'disjunctiveRules');
+    });
   }
 
   /**
