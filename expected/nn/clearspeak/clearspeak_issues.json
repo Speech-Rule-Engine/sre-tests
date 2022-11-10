@@ -79,19 +79,19 @@
       "expected": "integral over f av x, d x, er lik 8"
     },
     "Issue_689_0": {
-      "expected": "2 rader, rad 1:, rad 1: 100. rad 2: 200. rad 2:, rad 1: 300. rad 2: 400"
+      "expected": "2 rader, rad 1:, 2 rader, rad 1: 100. rad 2: 200. rad 2:, 2 rader, rad 1: 300. rad 2: 400"
     },
     "Issue_689_1": {
-      "expected": "2 rader, rad 1: a; b. rad 2:, rad 1:, c indeks 1; c indeks 2. rad 2:, c indeks 3; c indeks 4. d"
+      "expected": "2 rader, rad 1: a; b. rad 2:, 2 rader, rad 1:, c indeks 1; c indeks 2. rad 2:, c indeks 3; c indeks 4. d"
     },
     "Issue_689_2": {
-      "expected": "2 tilfelle, tilfelle 1:, tilfelle 1: b. tilfelle 2: c. tilfelle 2: d"
+      "expected": "2 tilfelle, tilfelle 1:, 2 tilfelle, tilfelle 1: b. tilfelle 2: c. tilfelle 2: d"
     },
     "Issue_689_3": {
-      "expected": "2 ganger 2 matrisa. rad 1: kolonne 1, a; kolonne 2, b. rad 2: kolonne 1, 2 ganger 2 matrisen. rad 1: c indeks 1, c indeks 2 rad 2: c indeks 3, c indeks 4. kolonne 2, d. slutt matrise"
+      "expected": "2 ganger 2 matrisa. rad 1: kolonne 1, a; kolonne 2, b. rad 2: kolonne 1, 2 ganger 2 matrisen. rad 1: c indeks 1, c indeks 2 rad 2: c indeks 3, c indeks 4. slutt matrise; kolonne 2, d. slutt matrise"
     },
     "Issue_689_4": {
-      "expected": "2 ganger 2 matrisa. rad 1: kolonne 1, a; kolonne 2, b. rad 2: kolonne 1, 2 ganger 2 matrisa. rad 1: kolonne 1,, c indeks 1; kolonne 2,, c indeks 2. rad 2: kolonne 1,, c indeks 3, pluss a pluss b; kolonne 2,, c indeks 4. kolonne 2, d. slutt matrise"
+      "expected": "2 ganger 2 matrisa. rad 1: kolonne 1, a; kolonne 2, b. rad 2: kolonne 1, 2 ganger 2 matrisa. rad 1: kolonne 1,, c indeks 1; kolonne 2,, c indeks 2. rad 2: kolonne 1,, c indeks 3, pluss a pluss b; kolonne 2,, c indeks 4. slutt matrise; kolonne 2, d. slutt matrise"
     }
   }
 }

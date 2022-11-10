@@ -79,19 +79,19 @@
       "expected": "das Integral über f von x, d x, ist gleich 8"
     },
     "Issue_689_0": {
-      "expected": "2 Zeilen, Zeile 1:, Zeile 1: 100. Zeile 2: 200. Zeile 2:, Zeile 1: 300. Zeile 2: 400"
+      "expected": "2 Zeilen, Zeile 1:, 2 Zeilen, Zeile 1: 100. Zeile 2: 200. Zeile 2:, 2 Zeilen, Zeile 1: 300. Zeile 2: 400"
     },
     "Issue_689_1": {
-      "expected": "2 Zeilen, Zeile 1: a; b. Zeile 2:, Zeile 1:, c Index 1; c Index 2. Zeile 2:, c Index 3; c Index 4. d"
+      "expected": "2 Zeilen, Zeile 1: a; b. Zeile 2:, 2 Zeilen, Zeile 1:, c Index 1; c Index 2. Zeile 2:, c Index 3; c Index 4. d"
     },
     "Issue_689_2": {
-      "expected": "2 Fälle, Fall 1:, Fall 1: b. Fall 2: c. Fall 2: d"
+      "expected": "2 Fälle, Fall 1:, 2 Fälle, Fall 1: b. Fall 2: c. Fall 2: d"
     },
     "Issue_689_3": {
-      "expected": "die 2 mal 2 Matrize. Zeile 1: Spalte 1, a; Spalte 2, b. Zeile 2: Spalte 1, die 2 mal 2 Matrize. Zeile 1: c Index 1, c Index 2 Zeile 2: c Index 3, c Index 4. Spalte 2, d. Ende Matrize"
+      "expected": "die 2 mal 2 Matrize. Zeile 1: Spalte 1, a; Spalte 2, b. Zeile 2: Spalte 1, die 2 mal 2 Matrize. Zeile 1: c Index 1, c Index 2 Zeile 2: c Index 3, c Index 4. Ende Matrize; Spalte 2, d. Ende Matrize"
     },
     "Issue_689_4": {
-      "expected": "die 2 mal 2 Matrize. Zeile 1: Spalte 1, a; Spalte 2, b. Zeile 2: Spalte 1, die 2 mal 2 Matrize. Zeile 1: Spalte 1,, c Index 1; Spalte 2,, c Index 2. Zeile 2: Spalte 1,, c Index 3, plus a plus b; Spalte 2,, c Index 4. Spalte 2, d. Ende Matrize"
+      "expected": "die 2 mal 2 Matrize. Zeile 1: Spalte 1, a; Spalte 2, b. Zeile 2: Spalte 1, die 2 mal 2 Matrize. Zeile 1: Spalte 1,, c Index 1; Spalte 2,, c Index 2. Zeile 2: Spalte 1,, c Index 3, plus a plus b; Spalte 2,, c Index 4. Ende Matrize; Spalte 2, d. Ende Matrize"
     }
   }
 }
