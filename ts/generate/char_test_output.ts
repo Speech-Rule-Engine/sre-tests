@@ -18,7 +18,7 @@
  */
 
 import { Grammar } from '../../speech-rule-engine/js/rule_engine/grammar';
-import * as AlphabetGenerator from '../../speech-rule-engine/js/speech_rules/alphabet_generator';
+import * as Alphabet from '../../speech-rule-engine/js/speech_rules/alphabet';
 import * as System from '../../speech-rule-engine/js/common/system';
 import { Variables } from '../../speech-rule-engine/js/common/variables';
 import * as AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
@@ -472,16 +472,15 @@ function splitNemethByFile(
  * @param json
  */
 function splitNemethByAlphabet(dir: string, json: tu.JsonTests) {
-  const intervals = AlphabetGenerator.INTERVALS;
   const byFonts: { [name: string]: tu.JsonTests } = {};
-  for (const value of Object.values(AlphabetGenerator.Font)) {
+  for (const value of Object.values(Alphabet.Font)) {
     byFonts[value as string] = {};
   }
-  for (const value of Object.values(AlphabetGenerator.Embellish)) {
+  for (const value of Object.values(Alphabet.Embellish)) {
     byFonts[value as string] = {};
   }
-  for (let i = 0, int: tu.JsonTest; (int = intervals[i]); i++) {
-    const keys = AlphabetGenerator.makeInterval(int.interval, int.subst);
+  for (const int of Alphabet.INTERVALS.values()) {
+    const keys = Alphabet.makeInterval(int.interval, int.subst);
     splitOffKeys(json, keys, byFonts[int.font]);
   }
   for (const [key, values] of Object.entries(byFonts)) {
