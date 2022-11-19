@@ -31,6 +31,7 @@ import { enrich } from '../../speech-rule-engine/js/enrich_mathml/enrich_mathml'
 import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
 import { SemanticNodeFactory } from '../../speech-rule-engine/js/semantic_tree/semantic_node_factory';
 import { SemanticTree } from '../../speech-rule-engine/js/semantic_tree/semantic_tree';
+import { lookupSecondary } from '../../speech-rule-engine/js/semantic_tree/semantic_attr';
 import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
 import { RebuildStree } from '../../speech-rule-engine/js/walker/rebuild_stree';
 import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
@@ -352,40 +353,6 @@ export class SemanticTreeTest extends SemanticBlacklistTest {
   }
 }
 
-export class SemanticMeaningTest extends SemanticTest {
-
-  factory: SemanticNodeFactory = new SemanticNodeFactory();
-
-  /**
-   * @override
-   */
-  public constructor() {
-    super();
-    this.pickFields.push('name');
-  }
-
-  /**
-   * @override
-   */
-  public method() {
-    this.executeTest(
-      this.field('name'),
-      this.field('expected')
-    );
-  }
-
-  public executeTest(name: string, expected: string) {
-    const meaning = this.factory.makeContentNode(name);
-    meaning.id = 0;
-    const output = meaning.toString().replace(/ id=\"0\"/, '');
-    this.assert.equal(
-      output,
-      expected
-    );
-  }
-
-}
-
 /**
  * Tests for enriched MathML expressions.
  */
@@ -517,4 +484,62 @@ export class SemanticXmlTest extends SemanticTest {
       SemanticTree.fromXml(xml).xml().toString()
     );
   }
+}
+
+export class SemanticMeaningTest extends SemanticTest {
+
+  factory: SemanticNodeFactory = new SemanticNodeFactory();
+
+  /**
+   * @override
+   */
+  public constructor() {
+    super();
+    this.pickFields.push('name');
+  }
+
+  /**
+   * @override
+   */
+  public method() {
+    this.executeTest(
+      this.field('name'),
+      this.field('expected')
+    );
+  }
+
+  public executeTest(name: string, expected: string) {
+    const meaning = this.factory.makeContentNode(name);
+    meaning.id = 0;
+    const output = meaning.toString().replace(/ id=\"0\"/, '');
+    this.assert.equal(
+      output,
+      expected
+    );
+  }
+
+}
+
+export class SemanticSecondaryTest extends AbstractExamples {
+
+  /**
+   * @override
+   */
+  public constructor() {
+    super();
+    this.pickFields.push('name');
+    this.pickFields.push('secondary');
+  }
+
+  /**
+   * @override
+   */
+  public method() {
+    let sec = this.field('secondary') || this.field('expected');
+    this.assert.equal(
+      lookupSecondary(sec, this.field('name')),
+      this.field('expected')
+    );
+  }
+
 }
