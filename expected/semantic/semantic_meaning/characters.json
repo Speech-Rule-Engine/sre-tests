@@ -7795,40 +7795,40 @@
       "expected": "<relation role=\"arrow\">⥵</relation>"
     },
     "⥶": {
-      "expected": "<relation role=\"arrow\">⥶</relation>"
+      "expected": "<relation role=\"inequality\">⥶</relation>"
     },
     "⥷": {
-      "expected": "<relation role=\"arrow\">⥷</relation>"
+      "expected": "<relation role=\"inequality\">⥷</relation>"
     },
     "⥸": {
-      "expected": "<relation role=\"arrow\">⥸</relation>"
+      "expected": "<relation role=\"inequality\">⥸</relation>"
     },
     "⥹": {
-      "expected": "<relation role=\"arrow\">⥹</relation>"
+      "expected": "<relation role=\"set\">⥹</relation>"
     },
     "⥺": {
-      "expected": "<relation role=\"arrow\">⥺</relation>"
+      "expected": "<relation role=\"set\">⥺</relation>"
     },
     "⥻": {
-      "expected": "<relation role=\"arrow\">⥻</relation>"
+      "expected": "<relation role=\"set\">⥻</relation>"
     },
     "⦳": {
-      "expected": "<relation role=\"arrow\">⦳</relation>"
+      "expected": "<identifier role=\"set empty\">⦳</identifier>"
     },
     "⦴": {
-      "expected": "<relation role=\"arrow\">⦴</relation>"
+      "expected": "<identifier role=\"set empty\">⦴</identifier>"
     },
     "⦽": {
-      "expected": "<relation role=\"arrow\">⦽</relation>"
+      "expected": "<operator role=\"geometry\">⦽</operator>"
     },
     "⧪": {
-      "expected": "<relation role=\"arrow\">⧪</relation>"
+      "expected": "<operator role=\"geometry\">⧪</operator>"
     },
     "⧬": {
-      "expected": "<relation role=\"arrow\">⧬</relation>"
+      "expected": "<operator role=\"geometry\">⧬</operator>"
     },
     "⧭": {
-      "expected": "<relation role=\"arrow\">⧭</relation>"
+      "expected": "<operator role=\"geometry\">⧭</operator>"
     },
     "⨗": {
       "expected": "<largeop role=\"integral\">⨗</largeop>"
@@ -10123,7 +10123,7 @@
       "expected": "<operator role=\"prefix operator\">∄</operator>"
     },
     "∅": {
-      "expected": "<unknown role=\"unknown\">∅</unknown>"
+      "expected": "<identifier role=\"set empty\">∅</identifier>"
     },
     "∆": {
       "expected": "<operator role=\"prefix operator\">∆</operator>"
@@ -10591,10 +10591,10 @@
       "expected": "<operator role=\"multiplication\">⊡</operator>"
     },
     "⊢": {
-      "expected": "<relation role=\"unknown\">⊢</relation>"
+      "expected": "<relation role=\"logic\">⊢</relation>"
     },
     "⊣": {
-      "expected": "<relation role=\"unknown\">⊣</relation>"
+      "expected": "<relation role=\"logic\">⊣</relation>"
     },
     "⊤": {
       "expected": "<operator role=\"addition\">⊤</operator>"
@@ -10603,34 +10603,34 @@
       "expected": "<operator role=\"addition\">⊥</operator>"
     },
     "⊦": {
-      "expected": "<relation role=\"unknown\">⊦</relation>"
+      "expected": "<relation role=\"logic\">⊦</relation>"
     },
     "⊧": {
-      "expected": "<relation role=\"unknown\">⊧</relation>"
+      "expected": "<relation role=\"logic\">⊧</relation>"
     },
     "⊨": {
-      "expected": "<relation role=\"unknown\">⊨</relation>"
+      "expected": "<relation role=\"logic\">⊨</relation>"
     },
     "⊩": {
-      "expected": "<relation role=\"unknown\">⊩</relation>"
+      "expected": "<relation role=\"logic\">⊩</relation>"
     },
     "⊪": {
-      "expected": "<relation role=\"unknown\">⊪</relation>"
+      "expected": "<relation role=\"logic\">⊪</relation>"
     },
     "⊫": {
-      "expected": "<relation role=\"unknown\">⊫</relation>"
+      "expected": "<relation role=\"logic\">⊫</relation>"
     },
     "⊬": {
-      "expected": "<relation role=\"unknown\">⊬</relation>"
+      "expected": "<relation role=\"logic\">⊬</relation>"
     },
     "⊭": {
-      "expected": "<relation role=\"unknown\">⊭</relation>"
+      "expected": "<relation role=\"logic\">⊭</relation>"
     },
     "⊮": {
-      "expected": "<relation role=\"unknown\">⊮</relation>"
+      "expected": "<relation role=\"logic\">⊮</relation>"
     },
     "⊯": {
-      "expected": "<relation role=\"unknown\">⊯</relation>"
+      "expected": "<relation role=\"logic\">⊯</relation>"
     },
     "⊰": {
       "expected": "<unknown role=\"unknown\">⊰</unknown>"
@@ -11041,13 +11041,13 @@
       "expected": "<unknown role=\"unknown\">⦚</unknown>"
     },
     "⦰": {
-      "expected": "<unknown role=\"unknown\">⦰</unknown>"
+      "expected": "<identifier role=\"set empty\">⦰</identifier>"
     },
     "⦱": {
-      "expected": "<unknown role=\"unknown\">⦱</unknown>"
+      "expected": "<identifier role=\"set empty\">⦱</identifier>"
     },
     "⦲": {
-      "expected": "<unknown role=\"unknown\">⦲</unknown>"
+      "expected": "<identifier role=\"set empty\">⦲</identifier>"
     },
     "⦵": {
       "expected": "<unknown role=\"unknown\">⦵</unknown>"
@@ -11908,52 +11908,52 @@
       "expected": "<unknown role=\"unknown\">⫝</unknown>"
     },
     "⫞": {
-      "expected": "<relation role=\"unknown\">⫞</relation>"
+      "expected": "<relation role=\"logic\">⫞</relation>"
     },
     "⫟": {
-      "expected": "<relation role=\"unknown\">⫟</relation>"
+      "expected": "<relation role=\"logic\">⫟</relation>"
     },
     "⫠": {
-      "expected": "<relation role=\"unknown\">⫠</relation>"
+      "expected": "<relation role=\"logic\">⫠</relation>"
     },
     "⫡": {
-      "expected": "<relation role=\"unknown\">⫡</relation>"
+      "expected": "<relation role=\"logic\">⫡</relation>"
     },
     "⫢": {
-      "expected": "<relation role=\"unknown\">⫢</relation>"
+      "expected": "<relation role=\"logic\">⫢</relation>"
     },
     "⫣": {
-      "expected": "<relation role=\"unknown\">⫣</relation>"
+      "expected": "<relation role=\"logic\">⫣</relation>"
     },
     "⫤": {
-      "expected": "<relation role=\"unknown\">⫤</relation>"
+      "expected": "<relation role=\"logic\">⫤</relation>"
     },
     "⫥": {
-      "expected": "<relation role=\"unknown\">⫥</relation>"
+      "expected": "<relation role=\"logic\">⫥</relation>"
     },
     "⫦": {
-      "expected": "<relation role=\"unknown\">⫦</relation>"
+      "expected": "<relation role=\"logic\">⫦</relation>"
     },
     "⫧": {
-      "expected": "<relation role=\"unknown\">⫧</relation>"
+      "expected": "<relation role=\"logic\">⫧</relation>"
     },
     "⫨": {
-      "expected": "<relation role=\"unknown\">⫨</relation>"
+      "expected": "<relation role=\"logic\">⫨</relation>"
     },
     "⫩": {
-      "expected": "<relation role=\"unknown\">⫩</relation>"
+      "expected": "<relation role=\"logic\">⫩</relation>"
     },
     "⫪": {
-      "expected": "<relation role=\"unknown\">⫪</relation>"
+      "expected": "<relation role=\"logic\">⫪</relation>"
     },
     "⫫": {
-      "expected": "<relation role=\"unknown\">⫫</relation>"
+      "expected": "<relation role=\"logic\">⫫</relation>"
     },
     "⫬": {
-      "expected": "<relation role=\"unknown\">⫬</relation>"
+      "expected": "<relation role=\"logic\">⫬</relation>"
     },
     "⫭": {
-      "expected": "<relation role=\"unknown\">⫭</relation>"
+      "expected": "<relation role=\"logic\">⫭</relation>"
     },
     "⫮": {
       "expected": "<unknown role=\"unknown\">⫮</unknown>"
