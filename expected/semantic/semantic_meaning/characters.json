@@ -9646,22 +9646,22 @@
       "expected": "<identifier role=\"otherletter\">™</identifier>"
     },
     "℣": {
-      "expected": "<identifier role=\"unit\">℣</identifier>"
+      "expected": "<identifier role=\"unknown\">℣</identifier>"
     },
     "℥": {
-      "expected": "<identifier role=\"unit\">℥</identifier>"
+      "expected": "<identifier role=\"unknown\">℥</identifier>"
     },
     "Ω": {
-      "expected": "<identifier role=\"unit\">Ω</identifier>"
+      "expected": "<identifier role=\"unknown\">Ω</identifier>"
     },
     "℧": {
-      "expected": "<identifier role=\"unit\">℧</identifier>"
+      "expected": "<identifier role=\"unknown\">℧</identifier>"
     },
     "K": {
-      "expected": "<identifier role=\"unit\">K</identifier>"
+      "expected": "<identifier role=\"unknown\">K</identifier>"
     },
     "Å": {
-      "expected": "<identifier role=\"unit\">Å</identifier>"
+      "expected": "<identifier role=\"unknown\">Å</identifier>"
     },
     "℮": {
       "expected": "<identifier role=\"otherletter\">℮</identifier>"
@@ -9700,7 +9700,7 @@
       "expected": "<punctuation role=\"unknown\">#</punctuation>"
     },
     "$": {
-      "expected": "<identifier role=\"unit\">$</identifier>"
+      "expected": "<identifier role=\"unknown\">$</identifier>"
     },
     "%": {
       "expected": "<punctuation role=\"unknown\">%</punctuation>"
@@ -9769,16 +9769,16 @@
       "expected": "<punctuation role=\"unknown\">¡</punctuation>"
     },
     "¢": {
-      "expected": "<identifier role=\"unit\">¢</identifier>"
+      "expected": "<identifier role=\"unknown\">¢</identifier>"
     },
     "£": {
-      "expected": "<identifier role=\"unit\">£</identifier>"
+      "expected": "<identifier role=\"unknown\">£</identifier>"
     },
     "¤": {
-      "expected": "<identifier role=\"unit\">¤</identifier>"
+      "expected": "<identifier role=\"unknown\">¤</identifier>"
     },
     "¥": {
-      "expected": "<identifier role=\"unit\">¥</identifier>"
+      "expected": "<identifier role=\"unknown\">¥</identifier>"
     },
     "¦": {
       "expected": "<fence role=\"neutral\">¦</fence>"
@@ -9817,7 +9817,7 @@
       "expected": "<punctuation role=\"overaccent\">´</punctuation>"
     },
     "µ": {
-      "expected": "<identifier role=\"unit\">µ</identifier>"
+      "expected": "<identifier role=\"unknown\">µ</identifier>"
     },
     "¶": {
       "expected": "<punctuation role=\"unknown\">¶</punctuation>"
@@ -10192,7 +10192,7 @@
       "expected": "<operator role=\"prefix operator\">∜</operator>"
     },
     "∝": {
-      "expected": "<identifier role=\"infty\">∝</identifier>"
+      "expected": "<relation role=\"equality\">∝</relation>"
     },
     "∞": {
       "expected": "<identifier role=\"infty\">∞</identifier>"
@@ -10213,13 +10213,13 @@
       "expected": "<fence role=\"neutral\">∣</fence>"
     },
     "∤": {
-      "expected": "<relation role=\"unknown\">∤</relation>"
+      "expected": "<operator role=\"unknown\">∤</operator>"
     },
     "∥": {
       "expected": "<fence role=\"metric\">∥</fence>"
     },
     "∦": {
-      "expected": "<relation role=\"unknown\">∦</relation>"
+      "expected": "<operator role=\"unknown\">∦</operator>"
     },
     "∧": {
       "expected": "<operator role=\"multiplication\">∧</operator>"
@@ -10276,7 +10276,7 @@
       "expected": "<operator role=\"subtraction\">∸</operator>"
     },
     "∹": {
-      "expected": "<relation role=\"unknown\">∹</relation>"
+      "expected": "<operator role=\"unknown\">∹</operator>"
     },
     "∺": {
       "expected": "<relation role=\"equality\">∺</relation>"
@@ -10882,7 +10882,7 @@
       "expected": "<operator role=\"multiplication\">⌆</operator>"
     },
     "⌇": {
-      "expected": "<relation role=\"unknown\">⌇</relation>"
+      "expected": "<operator role=\"unknown\">⌇</operator>"
     },
     "⌐": {
       "expected": "<operator role=\"prefix operator\">⌐</operator>"
@@ -10909,16 +10909,16 @@
       "expected": "<operator role=\"division\">➗</operator>"
     },
     "➰": {
-      "expected": "<relation role=\"unknown\">➰</relation>"
+      "expected": "<operator role=\"unknown\">➰</operator>"
     },
     "➿": {
-      "expected": "<relation role=\"unknown\">➿</relation>"
+      "expected": "<operator role=\"unknown\">➿</operator>"
     },
     "⟁": {
-      "expected": "<relation role=\"unknown\">⟁</relation>"
+      "expected": "<operator role=\"unknown\">⟁</operator>"
     },
     "⟂": {
-      "expected": "<relation role=\"unknown\">⟂</relation>"
+      "expected": "<operator role=\"unknown\">⟂</operator>"
     },
     "⟃": {
       "expected": "<relation role=\"set\">⟃</relation>"
@@ -10936,16 +10936,16 @@
       "expected": "<relation role=\"set\">⟉</relation>"
     },
     "⟊": {
-      "expected": "<relation role=\"unknown\">⟊</relation>"
+      "expected": "<operator role=\"unknown\">⟊</operator>"
     },
     "⟋": {
-      "expected": "<relation role=\"unknown\">⟋</relation>"
+      "expected": "<operator role=\"unknown\">⟋</operator>"
     },
     "⟌": {
       "expected": "<operator role=\"division\">⟌</operator>"
     },
     "⟍": {
-      "expected": "<relation role=\"unknown\">⟍</relation>"
+      "expected": "<operator role=\"unknown\">⟍</operator>"
     },
     "⟎": {
       "expected": "<operator role=\"multiplication\">⟎</operator>"
@@ -10954,7 +10954,7 @@
       "expected": "<operator role=\"addition\">⟏</operator>"
     },
     "⟐": {
-      "expected": "<relation role=\"unknown\">⟐</relation>"
+      "expected": "<operator role=\"unknown\">⟐</operator>"
     },
     "⟑": {
       "expected": "<operator role=\"multiplication\">⟑</operator>"
@@ -10963,10 +10963,10 @@
       "expected": "<operator role=\"element\">⟒</operator>"
     },
     "⟓": {
-      "expected": "<relation role=\"unknown\">⟓</relation>"
+      "expected": "<operator role=\"unknown\">⟓</operator>"
     },
     "⟔": {
-      "expected": "<relation role=\"unknown\">⟔</relation>"
+      "expected": "<operator role=\"unknown\">⟔</operator>"
     },
     "⟕": {
       "expected": "<relation role=\"set\">⟕</relation>"
@@ -11029,16 +11029,16 @@
       "expected": "<fence role=\"metric\">⦀</fence>"
     },
     "⦁": {
-      "expected": "<relation role=\"unknown\">⦁</relation>"
+      "expected": "<operator role=\"unknown\">⦁</operator>"
     },
     "⦂": {
       "expected": "<punctuation role=\"colon\">⦂</punctuation>"
     },
     "⦙": {
-      "expected": "<relation role=\"unknown\">⦙</relation>"
+      "expected": "<operator role=\"unknown\">⦙</operator>"
     },
     "⦚": {
-      "expected": "<relation role=\"unknown\">⦚</relation>"
+      "expected": "<operator role=\"unknown\">⦚</operator>"
     },
     "⦰": {
       "expected": "<identifier role=\"set empty\">⦰</identifier>"
@@ -11185,7 +11185,7 @@
       "expected": "<relation role=\"equality\">⧦</relation>"
     },
     "⧧": {
-      "expected": "<relation role=\"unknown\">⧧</relation>"
+      "expected": "<operator role=\"unknown\">⧧</operator>"
     },
     "⧨": {
       "expected": "<operator role=\"geometry\">⧨</operator>"
@@ -11215,7 +11215,7 @@
       "expected": "<operator role=\"geometry\">⧳</operator>"
     },
     "⧴": {
-      "expected": "<relation role=\"unknown\">⧴</relation>"
+      "expected": "<operator role=\"unknown\">⧴</operator>"
     },
     "⧵": {
       "expected": "<operator role=\"division\">⧵</operator>"
@@ -11338,10 +11338,10 @@
       "expected": "<punctuation role=\"unknown\">⨟</punctuation>"
     },
     "⨠": {
-      "expected": "<relation role=\"unknown\">⨠</relation>"
+      "expected": "<operator role=\"unknown\">⨠</operator>"
     },
     "⨡": {
-      "expected": "<relation role=\"unknown\">⨡</relation>"
+      "expected": "<operator role=\"unknown\">⨡</operator>"
     },
     "⨢": {
       "expected": "<operator role=\"addition\">⨢</operator>"
@@ -11542,10 +11542,10 @@
       "expected": "<operator role=\"addition\">⩣</operator>"
     },
     "⩤": {
-      "expected": "<relation role=\"unknown\">⩤</relation>"
+      "expected": "<operator role=\"unknown\">⩤</operator>"
     },
     "⩥": {
-      "expected": "<relation role=\"unknown\">⩥</relation>"
+      "expected": "<operator role=\"unknown\">⩥</operator>"
     },
     "⩦": {
       "expected": "<relation role=\"equality\">⩦</relation>"
@@ -11554,10 +11554,10 @@
       "expected": "<relation role=\"equality\">⩧</relation>"
     },
     "⩨": {
-      "expected": "<relation role=\"unknown\">⩨</relation>"
+      "expected": "<operator role=\"unknown\">⩨</operator>"
     },
     "⩩": {
-      "expected": "<relation role=\"unknown\">⩩</relation>"
+      "expected": "<operator role=\"unknown\">⩩</operator>"
     },
     "⩪": {
       "expected": "<relation role=\"equality\">⩪</relation>"
@@ -11917,7 +11917,7 @@
       "expected": "<identifier role=\"logic\">⫠</identifier>"
     },
     "⫡": {
-      "expected": "<relation role=\"unknown\">⫡</relation>"
+      "expected": "<operator role=\"unknown\">⫡</operator>"
     },
     "⫢": {
       "expected": "<relation role=\"logic\">⫢</relation>"
@@ -11956,31 +11956,31 @@
       "expected": "<relation role=\"logic\">⫭</relation>"
     },
     "⫮": {
-      "expected": "<relation role=\"unknown\">⫮</relation>"
+      "expected": "<operator role=\"unknown\">⫮</operator>"
     },
     "⫯": {
-      "expected": "<relation role=\"unknown\">⫯</relation>"
+      "expected": "<operator role=\"unknown\">⫯</operator>"
     },
     "⫰": {
-      "expected": "<relation role=\"unknown\">⫰</relation>"
+      "expected": "<operator role=\"unknown\">⫰</operator>"
     },
     "⫱": {
       "expected": "<identifier role=\"logic\">⫱</identifier>"
     },
     "⫲": {
-      "expected": "<relation role=\"unknown\">⫲</relation>"
+      "expected": "<operator role=\"unknown\">⫲</operator>"
     },
     "⫳": {
-      "expected": "<relation role=\"unknown\">⫳</relation>"
+      "expected": "<operator role=\"unknown\">⫳</operator>"
     },
     "⫴": {
       "expected": "<fence role=\"metric\">⫴</fence>"
     },
     "⫵": {
-      "expected": "<relation role=\"unknown\">⫵</relation>"
+      "expected": "<operator role=\"unknown\">⫵</operator>"
     },
     "⫶": {
-      "expected": "<relation role=\"unknown\">⫶</relation>"
+      "expected": "<operator role=\"unknown\">⫶</operator>"
     },
     "⫷": {
       "expected": "<relation role=\"inequality\">⫷</relation>"
@@ -11995,13 +11995,13 @@
       "expected": "<relation role=\"inequality\">⫺</relation>"
     },
     "⫻": {
-      "expected": "<relation role=\"unknown\">⫻</relation>"
+      "expected": "<operator role=\"unknown\">⫻</operator>"
     },
     "⫼": {
       "expected": "<largeop role=\"sum\">⫼</largeop>"
     },
     "⫽": {
-      "expected": "<relation role=\"unknown\">⫽</relation>"
+      "expected": "<operator role=\"unknown\">⫽</operator>"
     },
     "⫾": {
       "expected": "<operator role=\"geometry\">⫾</operator>"
@@ -12121,7 +12121,7 @@
       "expected": "<punctuation role=\"unknown\">﹨</punctuation>"
     },
     "﹩": {
-      "expected": "<identifier role=\"unit\">﹩</identifier>"
+      "expected": "<identifier role=\"unknown\">﹩</identifier>"
     },
     "﹪": {
       "expected": "<punctuation role=\"unknown\">﹪</punctuation>"
@@ -12139,7 +12139,7 @@
       "expected": "<punctuation role=\"unknown\">＃</punctuation>"
     },
     "＄": {
-      "expected": "<identifier role=\"unit\">＄</identifier>"
+      "expected": "<identifier role=\"unknown\">＄</identifier>"
     },
     "％": {
       "expected": "<punctuation role=\"unknown\">％</punctuation>"
@@ -12208,10 +12208,10 @@
       "expected": "<operator role=\"tilde\">～</operator>"
     },
     "￠": {
-      "expected": "<identifier role=\"unit\">￠</identifier>"
+      "expected": "<identifier role=\"unknown\">￠</identifier>"
     },
     "￡": {
-      "expected": "<identifier role=\"unit\">￡</identifier>"
+      "expected": "<identifier role=\"unknown\">￡</identifier>"
     },
     "￢": {
       "expected": "<operator role=\"prefix operator\">￢</operator>"
@@ -12223,10 +12223,10 @@
       "expected": "<fence role=\"neutral\">￤</fence>"
     },
     "￥": {
-      "expected": "<identifier role=\"unit\">￥</identifier>"
+      "expected": "<identifier role=\"unknown\">￥</identifier>"
     },
     "￦": {
-      "expected": "<identifier role=\"unit\">￦</identifier>"
+      "expected": "<identifier role=\"unknown\">￦</identifier>"
     },
     "￨": {
       "expected": "<fence role=\"neutral\">￨</fence>"
