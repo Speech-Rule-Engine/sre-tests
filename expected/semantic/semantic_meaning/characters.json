@@ -9691,10 +9691,10 @@
       "expected": "<identifier role=\"otherletter\">⅄</identifier>"
     },
     "!": {
-      "expected": "<punctuation role=\"unknown\">!</punctuation>"
+      "expected": "<punctuation role=\"exclamation\">!</punctuation>"
     },
     "\"": {
-      "expected": "<punctuation role=\"unknown\">\"</punctuation>"
+      "expected": "<punctuation role=\"quotes\">\"</punctuation>"
     },
     "#": {
       "expected": "<punctuation role=\"unknown\">#</punctuation>"
@@ -9733,7 +9733,7 @@
       "expected": "<punctuation role=\"colon\">:</punctuation>"
     },
     ";": {
-      "expected": "<punctuation role=\"unknown\">;</punctuation>"
+      "expected": "<punctuation role=\"semicolon\">;</punctuation>"
     },
     "<": {
       "expected": "<relation role=\"inequality\">&lt;</relation>"
@@ -9745,7 +9745,7 @@
       "expected": "<relation role=\"inequality\">></relation>"
     },
     "?": {
-      "expected": "<punctuation role=\"unknown\">?</punctuation>"
+      "expected": "<punctuation role=\"question\">?</punctuation>"
     },
     "@": {
       "expected": "<punctuation role=\"unknown\">@</punctuation>"
@@ -9766,7 +9766,7 @@
       "expected": "<relation role=\"equality\">~</relation>"
     },
     "¡": {
-      "expected": "<punctuation role=\"unknown\">¡</punctuation>"
+      "expected": "<punctuation role=\"quotes\">¡</punctuation>"
     },
     "¢": {
       "expected": "<identifier role=\"unknown\">¢</identifier>"
@@ -9796,7 +9796,7 @@
       "expected": "<punctuation role=\"overaccent\">ª</punctuation>"
     },
     "«": {
-      "expected": "<punctuation role=\"unknown\">«</punctuation>"
+      "expected": "<punctuation role=\"quotes\">«</punctuation>"
     },
     "¬": {
       "expected": "<operator role=\"prefix operator\">¬</operator>"
@@ -9832,7 +9832,7 @@
       "expected": "<punctuation role=\"overaccent\">º</punctuation>"
     },
     "»": {
-      "expected": "<punctuation role=\"unknown\">»</punctuation>"
+      "expected": "<punctuation role=\"quotes\">»</punctuation>"
     },
     "¿": {
       "expected": "<punctuation role=\"unknown\">¿</punctuation>"
@@ -9859,7 +9859,7 @@
       "expected": "<operator role=\"tilde\">˜</operator>"
     },
     "˝": {
-      "expected": "<punctuation role=\"unknown\">˝</punctuation>"
+      "expected": "<punctuation role=\"quotes\">˝</punctuation>"
     },
     "‐": {
       "expected": "<operator role=\"subtraction\">‐</operator>"
@@ -9886,28 +9886,28 @@
       "expected": "<punctuation role=\"unknown\">‗</punctuation>"
     },
     "‘": {
-      "expected": "<punctuation role=\"unknown\">‘</punctuation>"
+      "expected": "<punctuation role=\"quotes\">‘</punctuation>"
     },
     "’": {
-      "expected": "<punctuation role=\"unknown\">’</punctuation>"
+      "expected": "<punctuation role=\"quotes\">’</punctuation>"
     },
     "‚": {
-      "expected": "<punctuation role=\"unknown\">‚</punctuation>"
+      "expected": "<punctuation role=\"quotes\">‚</punctuation>"
     },
     "‛": {
-      "expected": "<punctuation role=\"unknown\">‛</punctuation>"
+      "expected": "<punctuation role=\"quotes\">‛</punctuation>"
     },
     "“": {
-      "expected": "<punctuation role=\"unknown\">“</punctuation>"
+      "expected": "<punctuation role=\"quotes\">“</punctuation>"
     },
     "”": {
-      "expected": "<punctuation role=\"unknown\">”</punctuation>"
+      "expected": "<punctuation role=\"quotes\">”</punctuation>"
     },
     "„": {
-      "expected": "<punctuation role=\"unknown\">„</punctuation>"
+      "expected": "<punctuation role=\"quotes\">„</punctuation>"
     },
     "‟": {
-      "expected": "<punctuation role=\"unknown\">‟</punctuation>"
+      "expected": "<punctuation role=\"quotes\">‟</punctuation>"
     },
     "†": {
       "expected": "<operator role=\"multiplication\">†</operator>"
@@ -9958,13 +9958,13 @@
       "expected": "<punctuation role=\"prime\">‷</punctuation>"
     },
     "‸": {
-      "expected": "<punctuation role=\"unknown\">‸</punctuation>"
+      "expected": "<punctuation role=\"underaccent\">‸</punctuation>"
     },
     "‹": {
-      "expected": "<punctuation role=\"unknown\">‹</punctuation>"
+      "expected": "<punctuation role=\"quotes\">‹</punctuation>"
     },
     "›": {
-      "expected": "<punctuation role=\"unknown\">›</punctuation>"
+      "expected": "<punctuation role=\"quotes\">›</punctuation>"
     },
     "※": {
       "expected": "<punctuation role=\"unknown\">※</punctuation>"
@@ -9973,7 +9973,7 @@
       "expected": "<punctuation role=\"unknown\">‼</punctuation>"
     },
     "‽": {
-      "expected": "<punctuation role=\"unknown\">‽</punctuation>"
+      "expected": "<punctuation role=\"question\">‽</punctuation>"
     },
     "‾": {
       "expected": "<operator role=\"dash\">‾</operator>"
@@ -10018,7 +10018,7 @@
       "expected": "<punctuation role=\"unknown\">⁎</punctuation>"
     },
     "⁏": {
-      "expected": "<punctuation role=\"unknown\">⁏</punctuation>"
+      "expected": "<punctuation role=\"semicolon\">⁏</punctuation>"
     },
     "⁐": {
       "expected": "<punctuation role=\"unknown\">⁐</punctuation>"
@@ -10030,7 +10030,7 @@
       "expected": "<operator role=\"subtraction\">⁒</operator>"
     },
     "⁓": {
-      "expected": "<punctuation role=\"unknown\">⁓</punctuation>"
+      "expected": "<operator role=\"tilde\">⁓</operator>"
     },
     "⁔": {
       "expected": "<punctuation role=\"underaccent\">⁔</punctuation>"
@@ -10267,7 +10267,7 @@
       "expected": "<punctuation role=\"unknown\">∵</punctuation>"
     },
     "∶": {
-      "expected": "<punctuation role=\"unknown\">∶</punctuation>"
+      "expected": "<relation role=\"unknown\">∶</relation>"
     },
     "∷": {
       "expected": "<relation role=\"equality\">∷</relation>"
@@ -11335,7 +11335,7 @@
       "expected": "<operator role=\"geometry\">⨞</operator>"
     },
     "⨟": {
-      "expected": "<punctuation role=\"unknown\">⨟</punctuation>"
+      "expected": "<punctuation role=\"semicolon\">⨟</punctuation>"
     },
     "⨠": {
       "expected": "<operator role=\"unknown\">⨠</operator>"
@@ -11428,7 +11428,7 @@
       "expected": "<operator role=\"multiplication\">⨽</operator>"
     },
     "⨾": {
-      "expected": "<punctuation role=\"unknown\">⨾</punctuation>"
+      "expected": "<punctuation role=\"semicolon\">⨾</punctuation>"
     },
     "⨿": {
       "expected": "<largeop role=\"sum\">⨿</largeop>"
@@ -12013,19 +12013,19 @@
       "expected": "<operator role=\"tilde\">〜</operator>"
     },
     "︐": {
-      "expected": "<punctuation role=\"unknown\">︐</punctuation>"
+      "expected": "<punctuation role=\"quotes\">︐</punctuation>"
     },
     "︓": {
       "expected": "<punctuation role=\"colon\">︓</punctuation>"
     },
     "︔": {
-      "expected": "<punctuation role=\"unknown\">︔</punctuation>"
+      "expected": "<punctuation role=\"semicolon\">︔</punctuation>"
     },
     "︕": {
-      "expected": "<punctuation role=\"unknown\">︕</punctuation>"
+      "expected": "<punctuation role=\"exclamation\">︕</punctuation>"
     },
     "︖": {
-      "expected": "<punctuation role=\"unknown\">︖</punctuation>"
+      "expected": "<punctuation role=\"question\">︖</punctuation>"
     },
     "︙": {
       "expected": "<punctuation role=\"ellipsis\">︙</punctuation>"
@@ -12052,16 +12052,16 @@
       "expected": "<punctuation role=\"unknown\">﹆</punctuation>"
     },
     "﹉": {
-      "expected": "<punctuation role=\"unknown\">﹉</punctuation>"
+      "expected": "<operator role=\"dash\">﹉</operator>"
     },
     "﹊": {
-      "expected": "<punctuation role=\"unknown\">﹊</punctuation>"
+      "expected": "<operator role=\"dash\">﹊</operator>"
     },
     "﹋": {
-      "expected": "<punctuation role=\"unknown\">﹋</punctuation>"
+      "expected": "<operator role=\"dash\">﹋</operator>"
     },
     "﹌": {
-      "expected": "<punctuation role=\"unknown\">﹌</punctuation>"
+      "expected": "<operator role=\"dash\">﹌</operator>"
     },
     "﹍": {
       "expected": "<operator role=\"dash\">﹍</operator>"
@@ -12079,16 +12079,16 @@
       "expected": "<punctuation role=\"fullstop\">﹒</punctuation>"
     },
     "﹔": {
-      "expected": "<punctuation role=\"unknown\">﹔</punctuation>"
+      "expected": "<punctuation role=\"semicolon\">﹔</punctuation>"
     },
     "﹕": {
       "expected": "<punctuation role=\"colon\">﹕</punctuation>"
     },
     "﹖": {
-      "expected": "<punctuation role=\"unknown\">﹖</punctuation>"
+      "expected": "<punctuation role=\"question\">﹖</punctuation>"
     },
     "﹗": {
-      "expected": "<punctuation role=\"unknown\">﹗</punctuation>"
+      "expected": "<punctuation role=\"exclamation\">﹗</punctuation>"
     },
     "﹘": {
       "expected": "<operator role=\"dash\">﹘</operator>"
@@ -12130,10 +12130,10 @@
       "expected": "<punctuation role=\"unknown\">﹫</punctuation>"
     },
     "！": {
-      "expected": "<punctuation role=\"unknown\">！</punctuation>"
+      "expected": "<punctuation role=\"exclamation\">！</punctuation>"
     },
     "＂": {
-      "expected": "<punctuation role=\"unknown\">＂</punctuation>"
+      "expected": "<punctuation role=\"quotes\">＂</punctuation>"
     },
     "＃": {
       "expected": "<punctuation role=\"unknown\">＃</punctuation>"
@@ -12148,7 +12148,7 @@
       "expected": "<punctuation role=\"unknown\">＆</punctuation>"
     },
     "＇": {
-      "expected": "<punctuation role=\"unknown\">＇</punctuation>"
+      "expected": "<punctuation role=\"quotes\">＇</punctuation>"
     },
     "＊": {
       "expected": "<punctuation role=\"unknown\">＊</punctuation>"
@@ -12172,7 +12172,7 @@
       "expected": "<punctuation role=\"colon\">：</punctuation>"
     },
     "；": {
-      "expected": "<punctuation role=\"unknown\">；</punctuation>"
+      "expected": "<punctuation role=\"semicolon\">；</punctuation>"
     },
     "＜": {
       "expected": "<relation role=\"inequality\">＜</relation>"
@@ -12184,7 +12184,7 @@
       "expected": "<relation role=\"inequality\">＞</relation>"
     },
     "？": {
-      "expected": "<punctuation role=\"unknown\">？</punctuation>"
+      "expected": "<punctuation role=\"question\">？</punctuation>"
     },
     "＠": {
       "expected": "<punctuation role=\"unknown\">＠</punctuation>"
