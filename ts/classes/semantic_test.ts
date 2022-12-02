@@ -21,6 +21,7 @@
 
 import xmldom = require('xmldom-sre');
 import { AbstractExamples } from './abstract_examples';
+import { JsonTests } from '../base/test_util';
 
 import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
 import {
@@ -31,7 +32,7 @@ import { enrich } from '../../speech-rule-engine/js/enrich_mathml/enrich_mathml'
 import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
 import { SemanticNodeFactory } from '../../speech-rule-engine/js/semantic_tree/semantic_node_factory';
 import { SemanticTree } from '../../speech-rule-engine/js/semantic_tree/semantic_tree';
-import { lookupSecondary } from '../../speech-rule-engine/js/semantic_tree/semantic_attr';
+import { SemanticMap } from '../../speech-rule-engine/js/semantic_tree/semantic_attr';
 import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
 import { RebuildStree } from '../../speech-rule-engine/js/walker/rebuild_stree';
 import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
@@ -520,8 +521,12 @@ export class SemanticMeaningTest extends SemanticTest {
 
 }
 
-export class SemanticSecondaryTest extends AbstractExamples {
+type index = 'Secondary' | 'Meaning' | 'FencesHoriz' | 'FencesVert';
 
+export class SemanticMapTest extends AbstractExamples {
+
+  private map: index;
+  
   /**
    * @override
    */
@@ -534,10 +539,32 @@ export class SemanticSecondaryTest extends AbstractExamples {
   /**
    * @override
    */
+  public prepare() {
+    const length = Object.keys(this.jsonTests.tests).length;
+    (this.jsonTests.tests as JsonTests)['size'] = {
+      expected: length.toString()
+    };
+    super.prepare();
+    // Add the size test of the map.
+    this.map = this.jsonTests.map;
+  }
+  
+  /**
+   * @override
+   */
   public method() {
-    let sec = this.field('secondary') || this.field('expected');
-    this.assert.equal(
-      lookupSecondary(sec, this.field('name')),
+    if (this.field('name') === 'size') {
+      this.assert.equal(
+        SemanticMap[this.map].size.toString(), this.field('expected'));
+      return;
+    }
+    let input = this.field('name');
+    if (this.map === 'Secondary') {
+      input = input.match(/ ([^ ]+)$/)[1];
+    }
+    const sec = this.field('secondary') || this.field('expected');
+    this.assert.deepEqual(
+      SemanticMap[this.map].get(input, sec),
       this.field('expected')
     );
   }

@@ -8452,13 +8452,13 @@
       "expected": "<fence role=\"close\">〛</fence>"
     },
     "〝": {
-      "expected": "<fence role=\"open\">〝</fence>"
+      "expected": "<punctuation role=\"quotes\">〝</punctuation>"
     },
     "〞": {
-      "expected": "<fence role=\"close\">〞</fence>"
+      "expected": "<punctuation role=\"quotes\">〞</punctuation>"
     },
     "〟": {
-      "expected": "<fence role=\"close\">〟</fence>"
+      "expected": "<punctuation role=\"quotes\">〟</punctuation>"
     },
     "﴾": {
       "expected": "<fence role=\"open\">﴾</fence>"
@@ -10015,7 +10015,7 @@
       "expected": "<punctuation role=\"unknown\">⁍</punctuation>"
     },
     "⁎": {
-      "expected": "<punctuation role=\"unknown\">⁎</punctuation>"
+      "expected": "<operator role=\"multiplication\">⁎</operator>"
     },
     "⁏": {
       "expected": "<punctuation role=\"semicolon\">⁏</punctuation>"
@@ -10024,7 +10024,7 @@
       "expected": "<punctuation role=\"unknown\">⁐</punctuation>"
     },
     "⁑": {
-      "expected": "<punctuation role=\"unknown\">⁑</punctuation>"
+      "expected": "<operator role=\"multiplication\">⁑</operator>"
     },
     "⁒": {
       "expected": "<operator role=\"subtraction\">⁒</operator>"
@@ -12100,7 +12100,7 @@
       "expected": "<punctuation role=\"unknown\">﹠</punctuation>"
     },
     "﹡": {
-      "expected": "<punctuation role=\"unknown\">﹡</punctuation>"
+      "expected": "<operator role=\"multiplication\">﹡</operator>"
     },
     "﹢": {
       "expected": "<operator role=\"addition\">﹢</operator>"
@@ -12151,7 +12151,7 @@
       "expected": "<punctuation role=\"quotes\">＇</punctuation>"
     },
     "＊": {
-      "expected": "<punctuation role=\"unknown\">＊</punctuation>"
+      "expected": "<operator role=\"multiplication\">＊</operator>"
     },
     "＋": {
       "expected": "<operator role=\"addition\">＋</operator>"

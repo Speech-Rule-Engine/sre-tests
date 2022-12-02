@@ -58,7 +58,7 @@ const map = new Map<string, any>([
   ['rules', SpeechRuleTest],
   ['semanticApi', st.SemanticApiTest],
   ['semanticMeaning', st.SemanticMeaningTest],
-  ['semanticSecondary', st.SemanticSecondaryTest],
+  ['semanticMap', st.SemanticMapTest],
   ['semanticXml', st.SemanticXmlTest],
   ['speech', SpeechTest],
   ['speechMarkup', SpeechMarkupTest],
