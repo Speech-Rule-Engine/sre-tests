@@ -16,7 +16,7 @@
       "expected": "<function role=\"prefix function\">hom</function>"
     },
     "Hom": {
-      "expected": "<unknown role=\"unknown\">Hom</unknown>"
+      "expected": "<function role=\"prefix function\">Hom</function>"
     },
     "ker": {
       "expected": "<function role=\"prefix function\">ker</function>"
@@ -46,7 +46,7 @@
       "expected": "<function role=\"prefix function\">gcd</function>"
     },
     "lcm": {
-      "expected": "<unknown role=\"unknown\">lcm</unknown>"
+      "expected": "<function role=\"prefix function\">lcm</function>"
     },
     "arg": {
       "expected": "<function role=\"prefix function\">arg</function>"
@@ -64,13 +64,13 @@
       "expected": "<function role=\"limit function\">lim</function>"
     },
     "lim inf": {
-      "expected": "<unknown role=\"unknown\">lim inf</unknown>"
+      "expected": "<function role=\"limit function\">lim inf</function>"
     },
     "liminf": {
       "expected": "<function role=\"limit function\">liminf</function>"
     },
     "lim sup": {
-      "expected": "<unknown role=\"unknown\">lim sup</unknown>"
+      "expected": "<function role=\"limit function\">lim sup</function>"
     },
     "limsup": {
       "expected": "<function role=\"limit function\">limsup</function>"
@@ -160,7 +160,7 @@
       "expected": "<function role=\"prefix function\">cos</function>"
     },
     "cosine": {
-      "expected": "<unknown role=\"unknown\">cosine</unknown>"
+      "expected": "<function role=\"prefix function\">cosine</function>"
     },
     "cot": {
       "expected": "<function role=\"prefix function\">cot</function>"
@@ -175,7 +175,7 @@
       "expected": "<function role=\"prefix function\">sin</function>"
     },
     "sine": {
-      "expected": "<unknown role=\"unknown\">sine</unknown>"
+      "expected": "<function role=\"prefix function\">sine</function>"
     },
     "tan": {
       "expected": "<function role=\"prefix function\">tan</function>"
