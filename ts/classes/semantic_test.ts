@@ -21,6 +21,7 @@
 
 import xmldom = require('xmldom-sre');
 import { AbstractExamples } from './abstract_examples';
+import { AbstractJsonTest } from './abstract_test';
 import { JsonTests } from '../base/test_util';
 
 import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
@@ -38,6 +39,7 @@ import { RebuildStree } from '../../speech-rule-engine/js/walker/rebuild_stree';
 import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
 import * as System from '../../speech-rule-engine/js/common/system';
 import * as WalkerUtil from '../../speech-rule-engine/js/walker/walker_util';
+import { lookupCategory } from '../../speech-rule-engine/js/rule_engine/math_compound_store';
 
 /**
  * Base class for all the semantic tree related tests.
@@ -523,7 +525,7 @@ export class SemanticMeaningTest extends SemanticTest {
 
 type index = 'Secondary' | 'Meaning' | 'FencesHoriz' | 'FencesVert';
 
-export class SemanticMapTest extends AbstractExamples {
+export class SemanticMapTest extends AbstractJsonTest {
 
   private map: index;
   
@@ -569,4 +571,33 @@ export class SemanticMapTest extends AbstractExamples {
     );
   }
 
+}
+
+/**
+ * Tests for rule stores.
+ */
+export class CategoryTest extends AbstractJsonTest {
+
+  /**
+   * @override
+   */
+  public async setUpTest() {
+    super.setUpTest();
+    return System.engineReady();
+  }
+
+  /**
+   * @override
+   */
+  public constructor() {
+    super();
+    this.pickFields.push('name');
+  }
+
+  public method() {
+    const kind = this.baseTests.type || this.jsonTests.type || 'character';
+    const name = this.field('name') + (kind === 'unit' ? ':unit' : '');
+    this.assert.equal(lookupCategory(name), this.field('expected'));
+  }
+ 
 }
