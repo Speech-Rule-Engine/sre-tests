@@ -18,7 +18,7 @@
  */
 
 import { Grammar } from '../../speech-rule-engine/js/rule_engine/grammar';
-import * as AlphabetGenerator from '../../speech-rule-engine/js/speech_rules/alphabet_generator';
+import * as Alphabet from '../../speech-rule-engine/js/speech_rules/alphabet';
 import * as System from '../../speech-rule-engine/js/common/system';
 import { Variables } from '../../speech-rule-engine/js/common/variables';
 import * as AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
@@ -127,6 +127,7 @@ function getOutput(
 
 const AllConstraints: { [loc: string]: string[] } = {
   ca: ['default', 'mathspeak'],
+  da: ['default', 'mathspeak'],
   en: ['default', 'mathspeak', 'clearspeak'],
   es: ['default', 'mathspeak'],
   fr: ['default', 'mathspeak', 'clearspeak'],
@@ -472,16 +473,15 @@ function splitNemethByFile(
  * @param json
  */
 function splitNemethByAlphabet(dir: string, json: tu.JsonTests) {
-  const intervals = AlphabetGenerator.INTERVALS;
   const byFonts: { [name: string]: tu.JsonTests } = {};
-  for (const value of Object.values(AlphabetGenerator.Font)) {
+  for (const value of Object.values(Alphabet.Font)) {
     byFonts[value as string] = {};
   }
-  for (const value of Object.values(AlphabetGenerator.Embellish)) {
+  for (const value of Object.values(Alphabet.Embellish)) {
     byFonts[value as string] = {};
   }
-  for (let i = 0, int: tu.JsonTest; (int = intervals[i]); i++) {
-    const keys = AlphabetGenerator.makeInterval(int.interval, int.subst);
+  for (const int of Alphabet.INTERVALS.values()) {
+    const keys = Alphabet.makeInterval(int.interval, int.subst);
     splitOffKeys(json, keys, byFonts[int.font]);
   }
   for (const [key, values] of Object.entries(byFonts)) {
@@ -682,7 +682,6 @@ export function replaceTests(dir = '/tmp/symbols') {
   for (const loc of locales) {
     const files = fs.readdirSync(`${dir}/${loc}`);
     for (const file of files) {
-      console.log(file);
       const oldJson: tu.JsonTest = tu.TestUtil.loadJson(
         `${tu.TestPath.EXPECTED}/${loc}/symbols/${file}`
       );
@@ -695,3 +694,51 @@ export function replaceTests(dir = '/tmp/symbols') {
     }
   }
 }
+
+export function alphabetsBase() {
+  const result: tu.JsonTests = {};
+  const fonts = Object.values(Alphabet.Font) as string[];
+  const embel = Object.values(Alphabet.Embellish) as string[];
+  for (const font of fonts.concat(embel)) {
+    for (const base of Object.values(Alphabet.Base)) {
+      const interval = Alphabet.INTERVALS.get(Alphabet.alphabetName(base, font));
+      if (!interval) continue;
+      const tag = base === Alphabet.Base.DIGIT ? 'mn' : 'mi';
+      interval.unicode.forEach(x =>
+        result[x] = {input: `<${tag}>${x}</${tag}>`});
+    }
+  }
+  tu.TestUtil.saveJson(InputPath + 'alphabets.json', {tests: result});
+}
+
+
+export function alphabetsExpected(locale: string) {
+  const constraints = AllConstraints[locale];
+  if (!constraints) {
+    return;
+  }
+  const modality = locale === 'nemeth' ? 'braille' : 'speech';
+  const loc = Variables.LOCALES.get(locale);
+  for (const dom of constraints) {
+    if (dom === 'default' && modality === 'speech') continue;
+    let json: tu.JsonFile = {
+      locale: locale,
+      factory: 'speech',
+      name: `${tu.TestUtil.capitalize(loc)}${tu.TestUtil.capitalize(dom)}Alphabets`,
+      active: `Alphabets${tu.TestUtil.capitalize(loc)}`,
+      information: `${tu.TestUtil.capitalize(loc)} ${tu.TestUtil.capitalize(dom)} Alphabet speech tests.`,
+      domain: dom,
+      modality: modality,
+      base: 'input/common/alphabets.json',
+      tests: {}
+    }
+    tu.TestUtil.saveJson(`${tu.TestPath.EXPECTED}${locale}/${modality === 'speech' ? dom : 'rules'}/alphabets.json`, json);
+  }
+};
+
+
+export function alphabetsAllExpected() {
+  for (const loc of Variables.LOCALES.keys()) {
+    alphabetsExpected(loc);
+  }  
+};

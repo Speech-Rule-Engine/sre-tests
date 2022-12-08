@@ -21,6 +21,8 @@
 
 import xmldom = require('xmldom-sre');
 import { AbstractExamples } from './abstract_examples';
+import { AbstractJsonTest } from './abstract_test';
+import { JsonTests } from '../base/test_util';
 
 import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
 import {
@@ -29,12 +31,15 @@ import {
 } from '../../speech-rule-engine/js/enrich_mathml/enrich_attr';
 import { enrich } from '../../speech-rule-engine/js/enrich_mathml/enrich_mathml';
 import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
+import { SemanticNodeFactory } from '../../speech-rule-engine/js/semantic_tree/semantic_node_factory';
 import { SemanticTree } from '../../speech-rule-engine/js/semantic_tree/semantic_tree';
+import { SemanticMap } from '../../speech-rule-engine/js/semantic_tree/semantic_attr';
 import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
 import { RebuildStree } from '../../speech-rule-engine/js/walker/rebuild_stree';
 import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
 import * as System from '../../speech-rule-engine/js/common/system';
 import * as WalkerUtil from '../../speech-rule-engine/js/walker/walker_util';
+import { lookupCategory } from '../../speech-rule-engine/js/rule_engine/math_compound_store';
 
 /**
  * Base class for all the semantic tree related tests.
@@ -482,4 +487,119 @@ export class SemanticXmlTest extends SemanticTest {
       SemanticTree.fromXml(xml).xml().toString()
     );
   }
+}
+
+export class SemanticMeaningTest extends SemanticTest {
+
+  factory: SemanticNodeFactory = new SemanticNodeFactory();
+
+  /**
+   * @override
+   */
+  public constructor() {
+    super();
+    this.pickFields.push('name');
+  }
+
+  /**
+   * @override
+   */
+  public method() {
+    this.executeTest(
+      this.field('name'),
+      this.field('expected')
+    );
+  }
+
+  public executeTest(name: string, expected: string) {
+    const meaning = this.factory.makeContentNode(name);
+    meaning.id = 0;
+    const output = meaning.toString().replace(/ id=\"0\"/, '');
+    this.assert.equal(
+      output,
+      expected
+    );
+  }
+
+}
+
+type index = 'Secondary' | 'Meaning' | 'FencesHoriz' | 'FencesVert';
+
+export class SemanticMapTest extends AbstractJsonTest {
+
+  private map: index;
+  
+  /**
+   * @override
+   */
+  public constructor() {
+    super();
+    this.pickFields.push('name');
+    this.pickFields.push('secondary');
+  }
+
+  /**
+   * @override
+   */
+  public prepare() {
+    // TODO: currently removed for action tests.
+    //       We need a way to reset the maps in the test setup.
+    // const length = Object.keys(this.jsonTests.tests).length;
+    // (this.jsonTests.tests as JsonTests)['size'] = {
+    //   expected: length.toString()
+    // };
+    super.prepare();
+    // Add the size test of the map.
+    this.map = this.jsonTests.map;
+  }
+  
+  /**
+   * @override
+   */
+  public method() {
+    if (this.field('name') === 'size') {
+      this.assert.equal(
+        SemanticMap[this.map].size.toString(), this.field('expected'));
+      return;
+    }
+    let input = this.field('name');
+    if (this.map === 'Secondary') {
+      input = input.match(/ ([^ ]+)$/)[1];
+    }
+    const sec = this.field('secondary') || this.field('expected');
+    this.assert.deepEqual(
+      SemanticMap[this.map].get(input, sec),
+      this.field('expected')
+    );
+  }
+
+}
+
+/**
+ * Tests for rule stores.
+ */
+export class CategoryTest extends AbstractJsonTest {
+
+  /**
+   * @override
+   */
+  public async setUpTest() {
+    super.setUpTest();
+    return System.engineReady();
+  }
+
+  /**
+   * @override
+   */
+  public constructor() {
+    super();
+    this.pickFields.push('name');
+  }
+
+  public method() {
+    const kind = this.baseTests.type || this.jsonTests.type || 'character';
+    const name = this.field('name') + (kind === 'unit' ? ':unit' : '');
+    this.assert.equal(lookupCategory(name), this.field('expected'));
+  }
+ 
 }
