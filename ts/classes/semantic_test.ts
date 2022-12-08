@@ -542,10 +542,12 @@ export class SemanticMapTest extends AbstractJsonTest {
    * @override
    */
   public prepare() {
-    const length = Object.keys(this.jsonTests.tests).length;
-    (this.jsonTests.tests as JsonTests)['size'] = {
-      expected: length.toString()
-    };
+    // TODO: currently removed for action tests.
+    //       We need a way to reset the maps in the test setup.
+    // const length = Object.keys(this.jsonTests.tests).length;
+    // (this.jsonTests.tests as JsonTests)['size'] = {
+    //   expected: length.toString()
+    // };
     super.prepare();
     // Add the size test of the map.
     this.map = this.jsonTests.map;
