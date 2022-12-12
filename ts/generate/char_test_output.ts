@@ -18,6 +18,7 @@
  */
 
 import { Grammar } from '../../speech-rule-engine/js/rule_engine/grammar';
+import * as MathCompoundStore from '../../speech-rule-engine/js/rule_engine/math_compound_store';
 import * as Alphabet from '../../speech-rule-engine/js/speech_rules/alphabet';
 import * as System from '../../speech-rule-engine/js/common/system';
 import { Variables } from '../../speech-rule-engine/js/common/variables';
@@ -40,6 +41,12 @@ const FILES = new Map([
   [SymbolType.SIUNITS, 'si_units.json'],
   [SymbolType.CHARACTERS, 'characters.json'],
   [SymbolType.FUNCTIONS, 'functions.json']
+]);
+const TYPES = new Map([
+  [SymbolType.UNITS, 'unit'],
+  [SymbolType.SIUNITS, 'unit'],
+  [SymbolType.CHARACTERS, 'character'],
+  [SymbolType.FUNCTIONS, 'function']
 ]);
 const NemethFire = true;
 
@@ -146,7 +153,7 @@ const AllConstraints: { [loc: string]: string[] } = {
  *
  * @param locale The locale.
  * @param keys The keys for symbols to test.
- * @param unit Are the symbols units.
+ * @param kind Are the symbols units.
  * @returns The test json structure.
  */
 async function testOutput(locale: string, keys: string[], kind: SymbolType): Promise<tu.JsonFile> {
@@ -432,6 +439,12 @@ export async function testOutputFromBoth(
   }
 }
 
+
+/**
+ * Generating Nemeth test files. These are separated so they can be more
+ * conveniently handled in the Nemeth transcriber WebApp.
+ */
+
 /**
  * @param dir
  * @param json
@@ -508,7 +521,6 @@ function splitOffKeys(
     result[letter] = json[letter];
     delete json[letter];
   });
-  console.log(Object.keys(result).length);
   return result;
 }
 
@@ -597,8 +609,10 @@ function symbolsfromLocale(json: tu.JsonTest, kind: SymbolType): tu.JsonTest[] {
 function getNamesFor(json: tu.JsonTest, kind: SymbolType): string[] {
   const symbols = symbolsfromLocale(json, kind);
   const si = kind === SymbolType.SIUNITS;
-  const prefixes =
-    json[Object.keys(json).find((j) => j.match(/^.+\/si\/prefixes\.min/))][0];
+  const match =
+    json[Object.keys(json).find((j) => j.match(/^.+\/si\/prefixes\.min/))];
+  if (!match || !match.length) return [];
+  const prefixes = match[0];
   let result: string[] = [];
   for (const obj of symbols) {
     if (si && obj.names && obj.si) {
@@ -669,7 +683,7 @@ export async function allTests(dir = '/tmp/symbols') {
   for (const loc of Variables.LOCALES.keys()) {
     for (const kind of Object.values(SymbolType)) {
       await testOutputFromBoth(loc, kind, dir);
-      await testOutputFromExtras(loc, kind, dir);
+      testOutputFromExtras(loc, kind, dir);
     }
   }
 }
@@ -695,6 +709,43 @@ export function replaceTests(dir = '/tmp/symbols') {
   }
 }
 
+export async function symbolsBase() {
+  // await loadMathmaps('en');
+  // console.log(maps);
+  // await System.setupEngine({locale: 'en'});
+  // console.log(System.engineReady());
+  const outputBase = (kind: SymbolType, tests: tu.JsonTests) => {
+    let json = {type: TYPES.get(kind), tests: tests};
+    tu.TestUtil.saveJson(InputPath + FILES.get(kind), json);
+  }
+  
+  await System.engineReady();
+  const chars: tu.JsonTests = {};
+  const funcs: tu.JsonTests = {};
+  const units: tu.JsonTests = {};
+  const si: tu.JsonTests = {};
+  for (const [key, value] of MathCompoundStore.subStores.entries()) {
+    if (key.match(/:unit$/)) {
+      (value.base?.si ? si : units)[key.replace(/:unit$/, '')] = {};
+      continue;
+    }
+    (value.base?.names ? funcs : chars)[key] = {};
+  }
+  outputBase(SymbolType.UNITS, units);
+  outputBase(SymbolType.SIUNITS, si);
+  outputBase(SymbolType.CHARACTERS, chars);
+  outputBase(SymbolType.FUNCTIONS, funcs);
+}
+
+/**
+ *
+ * File generators for Alphabet related tests.
+ *
+ */
+
+/**
+ * Generates base file for all automatically generated alphabets.
+ */
 export function alphabetsBase() {
   const result: tu.JsonTests = {};
   const fonts = Object.values(Alphabet.Font) as string[];
@@ -711,7 +762,12 @@ export function alphabetsBase() {
   tu.TestUtil.saveJson(InputPath + 'alphabets.json', {tests: result});
 }
 
-
+/**
+ * Generates the skeleton expected file for a locale. This still needs to be
+ * filled with values using the `addMissing` method.
+ *
+ * @param locale The iso string for the locale.
+ */
 export function alphabetsExpected(locale: string) {
   const constraints = AllConstraints[locale];
   if (!constraints) {
@@ -736,9 +792,11 @@ export function alphabetsExpected(locale: string) {
   }
 };
 
-
+/**
+ * Generates skeleton expected files for all available locales.
+ */
 export function alphabetsAllExpected() {
   for (const loc of Variables.LOCALES.keys()) {
     alphabetsExpected(loc);
-  }  
+  }
 };
