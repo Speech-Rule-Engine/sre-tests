@@ -24,6 +24,7 @@ import * as System from '../../speech-rule-engine/js/common/system';
 import { Variables } from '../../speech-rule-engine/js/common/variables';
 import * as AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
 import { AuditoryDescription } from '../../speech-rule-engine/js/audio/auditory_description';
+import { SemanticMap } from '../../speech-rule-engine/js/semantic_tree/semantic_attr';
 
 import * as fs from 'fs';
 import * as tu from '../base/test_util';
@@ -735,6 +736,27 @@ export async function symbolsBase() {
   outputBase(SymbolType.SIUNITS, si);
   outputBase(SymbolType.CHARACTERS, chars);
   outputBase(SymbolType.FUNCTIONS, funcs);
+}
+
+
+export async function completeSemanticMapTests(expected: string) {
+  const json = tu.TestUtil.loadJson(tu.TestPath.EXPECTED + expected);
+  const jsonTests =  json.tests as tu.JsonTests;
+  const tests = Object.assign({}, jsonTests);
+  if (!tests) return;
+  const map = (SemanticMap as any)[json.map];
+  for (const key of map.keys()) {
+    if (tests[key]) {
+      delete tests[key];
+      continue;
+    }
+    jsonTests[key] = {};
+  }
+  for (const key of Object.keys(tests)) {
+    console.warn(`Removing key ${key} from mapping ${json.map}`);
+    delete jsonTests[key];
+  }
+  tu.TestUtil.saveJson(tu.TestPath.EXPECTED + expected, json);
 }
 
 /**
