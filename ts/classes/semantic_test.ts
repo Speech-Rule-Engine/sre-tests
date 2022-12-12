@@ -532,6 +532,15 @@ export class SemanticMapTest extends AbstractJsonTest {
   /**
    * @override
    */
+  public async setUpTest() {
+    await super.setUpTest();
+    // Make sure the base locale is loaded so maps a filled.
+    return System.engineReady();
+  }
+
+  /**
+   * @override
+   */
   public constructor() {
     super();
     this.pickFields.push('name');
@@ -544,10 +553,10 @@ export class SemanticMapTest extends AbstractJsonTest {
   public prepare() {
     // TODO: currently removed for action tests.
     //       We need a way to reset the maps in the test setup.
-    // const length = Object.keys(this.jsonTests.tests).length;
-    // (this.jsonTests.tests as JsonTests)['size'] = {
-    //   expected: length.toString()
-    // };
+    const length = Object.keys(this.jsonTests.tests).length;
+    (this.jsonTests.tests as JsonTests)['size'] = {
+      expected: length.toString()
+    };
     super.prepare();
     // Add the size test of the map.
     this.map = this.jsonTests.map;
