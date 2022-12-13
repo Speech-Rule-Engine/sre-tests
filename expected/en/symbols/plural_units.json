@@ -201,6 +201,18 @@
     "GHS": {
       "expected": "cedis"
     },
+    "₸": {
+      "expected": "tenge"
+    },
+    "KZT": {
+      "expected": "tenge"
+    },
+    "₺": {
+      "expected": "turkish lira"
+    },
+    "TRY": {
+      "expected": "turkish lira"
+    },
     "元": {
       "expected": "yuans"
     },
@@ -307,7 +319,6 @@
       "expected": "kilometers per hour"
     },
     "kph": {
-      "input": "kph",
       "expected": "kilometers per hour"
     },
     "F": {
@@ -331,8 +342,17 @@
     "°K": {
       "expected": "Kelvin"
     },
+    "″": {
+      "expected": "seconds"
+    },
     "min": {
       "expected": "minutes"
+    },
+    "′": {
+      "expected": "minutes"
+    },
+    "°": {
+      "expected": "degrees"
     },
     "h": {
       "expected": "hours"
@@ -484,26 +504,12 @@
     "T": {
       "expected": "tons"
     },
-    "₸": {
-      "expected": "tenge"
+    "_commentAdded_": "Add for locale",
+    "MΩ": {
+      "expected": "megohms"
     },
-    "KZT": {
-      "expected": "tenge"
-    },
-    "₺": {
-      "expected": "turkish lira"
-    },
-    "TRY": {
-      "expected": "turkish lira"
-    },
-    "″": {
-      "expected": "seconds"
-    },
-    "′": {
-      "expected": "minutes"
-    },
-    "°": {
-      "expected": "degrees"
+    "kΩ": {
+      "expected": "kilohms"
     }
   }
 }

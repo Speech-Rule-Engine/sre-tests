@@ -25,6 +25,8 @@ import { Variables } from '../../speech-rule-engine/js/common/variables';
 import * as AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
 import { AuditoryDescription } from '../../speech-rule-engine/js/audio/auditory_description';
 import { SemanticMap } from '../../speech-rule-engine/js/semantic_tree/semantic_attr';
+import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
+import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
 
 import * as fs from 'fs';
 import * as tu from '../base/test_util';
@@ -82,14 +84,28 @@ async function getCharOutput(
     locale: loc,
     style: style
   });
-  // let grammar = {translate: true};
-  const descrs = [
-    AuditoryDescription.create(
-      { text: char },
-      { adjust: true, translate: true }
-    )
-  ];
-  return AuralRendering.finalize(AuralRendering.markup(descrs));
+    let descrs = [];
+    if (modality === 'braille') {
+      if (char.match(/^\s+$/)) {
+        // TODO: This is just a temporary fix.
+        return '⠀';
+      }
+      const node = DomUtil.parseInput('<mi></mi>');
+      node.textContent = char;
+      const evaluator = SpeechRuleEngine.getInstance().getEvaluator(
+        loc,
+        modality
+      );
+      descrs = evaluator(node);
+    } else {
+      descrs = [
+        AuditoryDescription.create(
+          { text: char },
+          { adjust: true, translate: true }
+        )
+      ];
+    }
+    return AuralRendering.finalize(AuralRendering.markup(descrs));
 }
 
 /**
@@ -106,7 +122,11 @@ async function getUnitOutput(
   style: string,
   unit: string
 ) {
-  Grammar.getInstance().pushState({ annotation: 'unit' });
+  const grammar = {
+    annotation: 'unit',
+    plural: (style === 'plural')
+  };
+  Grammar.getInstance().pushState(grammar);
   const output = await getCharOutput(dom, modality, loc, style, unit);
   Grammar.getInstance().popState();
   return output;
@@ -136,7 +156,7 @@ function getOutput(
 const AllConstraints: { [loc: string]: string[] } = {
   ca: ['default', 'mathspeak'],
   da: ['default', 'mathspeak'],
-  en: ['default', 'mathspeak', 'clearspeak'],
+  en: ['default', 'mathspeak', 'clearspeak', 'chromevox'],
   es: ['default', 'mathspeak'],
   fr: ['default', 'mathspeak', 'clearspeak'],
   de: ['default', 'mathspeak', 'clearspeak'],
@@ -158,25 +178,40 @@ const AllConstraints: { [loc: string]: string[] } = {
  * @returns The test json structure.
  */
 async function testOutput(locale: string, keys: string[], kind: SymbolType): Promise<tu.JsonFile> {
-  const constraints = AllConstraints[locale];
-  const unit = isUnitTest(kind);
+  let constraints = AllConstraints[locale];
   if (!constraints) {
     return {};
   }
-  const output: tu.JsonFile = {};
   const modality = locale === 'nemeth' ? 'braille' : 'speech';
+  const unit = modality === 'speech' && isUnitTest(kind);
+  if (unit) {
+    constraints = ['default', 'default'];
+  }
+  const output: tu.JsonFile = {};
+  let style = 'default';
   for (const dom of constraints) {
-    const json: tu.JsonFile = initialJsonFile(locale, dom, kind, 'default');
+    const json: tu.JsonFile = initialJsonFile(locale, dom, kind, style);
+    if (unit) {
+      let grammar: {[key: string]: string|boolean} = {annotation: 'unit'};
+      if (style === 'plural') {
+        grammar['plural'] = true;
+      }
+      json.grammar = grammar;
+    }
     const tests: tu.JsonTests = {};
     for (const key of keys) {
-      if (key.match(/^_comment/)) {
+      if (key.match(/^_comment/) ||
+        (json.exclude && json.exclude?.indexOf(key) !== -1)) {
         continue;
       }
-      const result = await getOutput(dom, modality, locale, 'default', key, unit);
+      const result = await getOutput(dom, modality, locale, style, key, unit);
       tests[key] = { expected: result };
     }
     json.tests = tests;
-    output[dom] = json;
+    output[unit ? style : dom] = json;
+    if (unit) {
+      style = 'plural';
+    }
   }
   return output;
 }
@@ -187,12 +222,16 @@ function initialJsonFile(loc: string, dom: string, kind: SymbolType, style?: str
   const singular =
     kind === SymbolType.CHARACTERS ? 'character' : kind.replace(/s$/, '');
   let json: tu.JsonFile = {
+    name: `${tu.TestUtil.capitalize(dom)}${tu.TestUtil.capitalize(singular)}`,
+    domain: 'default',
     locale: loc,
+    style: 'default',
+    active: `${tu.TestUtil.capitalize(dom)}Symbols${Variables.LOCALES.get(loc)}`,
     type: singular,
     factory: 'symbol',
-    name: `${tu.TestUtil.capitalize(dom)}${tu.TestUtil.capitalize(singular)}`,
-    active: `${tu.TestUtil.capitalize(dom)}${tu.TestUtil.capitalize(type)}`,
-    domain: dom
+    base: `input/common/${FILES.get(kind)}`,
+    information: `${Variables.LOCALES.get(loc)} ${tu.TestUtil.capitalize(dom)} ${tu.TestUtil.capitalize(singular)} tests.`,
+    compare: true
   };
   if (style) {
     json.style = style;
@@ -257,15 +296,15 @@ export async function testFromLocale(locale: string, kind: SymbolType): Promise<
  * @param  kind The kind of symbol for which to generate tests.
  * @param  dir Output directory.
  */
-export function testOutputFromExtras(
+export async function testOutputFromExtras(
   locale: string,
   kind: SymbolType,
   dir = '/tmp'
 ) {
-  if (kind === SymbolType.SIUNITS || locale === 'nemeth') {
+  if (isUnitTest(kind) || locale === 'nemeth' || locale === 'euro') {
     return;
   }
-  testFromExtras(locale, kind).then((output) => {
+  return testFromExtras(locale, kind).then((output) => {
     if (!Object.keys(output.tests).length) {
       return;
     }
@@ -391,7 +430,7 @@ export function testOutputFromBase(
 ) {
   testFromBase(locale, kind).then(output => {
     for (const [_dom, json] of Object.entries(output)) {
-      writeOutputToFile(dir, json, locale, json.domain, kind);
+      writeOutputToFile(dir, json, locale, isUnitTest(kind) ? json.style : json.domain, kind);
     }});
 }
 
@@ -407,7 +446,7 @@ export function testOutputFromLocale(
 ) {
   testFromLocale(locale, kind).then(output => {
     for (const [_dom, json] of Object.entries(output)) {
-      writeOutputToFile(dir, json, locale, json.domain, kind);
+      writeOutputToFile(dir, json, locale, isUnitTest(kind) ? json.style : json.domain, kind);
     }});
 }
 
@@ -415,9 +454,9 @@ export function testOutputFromLocale(
  * Compiles test output using both the locale and base file as input and writes
  * it to the destination directory.
  *
- * @param {string} locale The locale.
- * @param {SymbolType} kind The type of symbol that is considered.
- * @param {string = '/tmp'} dir The output directory.
+ * @param locale The locale.
+ * @param kind The type of symbol that is considered.
+ * @param dir The output directory.
  */
 export async function testOutputFromBoth(
   locale: string,
@@ -425,17 +464,16 @@ export async function testOutputFromBoth(
   dir = '/tmp'
 ) {
   const output = await testFromBase(locale, kind);
-  const comp = await diffBaseVsLocale(locale, kind);
-  for (const [_dom, json] of Object.entries(output)) {
-    const [base, loc] = comp[json.domain];
-    if (Object.keys(base).length && kind !== SymbolType.CHARACTERS) {
-      json.exclude = Object.keys(base);
+  const comp = await testFromLocale(locale, kind);
+  for (const [dom, json] of Object.entries(output)) {
+    if (Object.keys(comp[dom].tests).length) {
+      Object.assign(
+        json.tests, {_commentAdded_: 'Add for locale'}, comp[dom].tests);
     }
-    Object.assign(json.tests, loc);
     if (locale === 'nemeth' && kind === SymbolType.CHARACTERS && NemethFire) {
       splitNemethForFire(dir, json);
     } else {
-      writeOutputToFile(dir, json, locale, json.domain, kind);
+      writeOutputToFile(dir, json, locale, dom, kind);
     }
   }
 }
@@ -476,7 +514,7 @@ function splitNemethByFile(
   const entries = locale[`nemeth/symbols/${file}.min`] as tu.JsonTest[];
   for (const entry of entries) {
     if (entry.key) {
-      keys.push(entry.key);
+      keys.push(String.fromCodePoint(parseInt(entry.key, 16)));
     }
   }
   writeNemethSymbolOutput(dir, splitOffKeys(json, keys), 'Characters', file);
@@ -495,7 +533,7 @@ function splitNemethByAlphabet(dir: string, json: tu.JsonTests) {
     byFonts[value as string] = {};
   }
   for (const int of Alphabet.INTERVALS.values()) {
-    const keys = Alphabet.makeInterval(int.interval, int.subst);
+    const keys = int.unicode;
     splitOffKeys(json, keys, byFonts[int.font]);
   }
   for (const [key, values] of Object.entries(byFonts)) {
@@ -517,8 +555,7 @@ function splitOffKeys(
   keys: string[],
   result: tu.JsonTests = {}
 ) {
-  keys.forEach(function (x: string) {
-    const letter = String.fromCodePoint(parseInt(x, 16));
+  keys.forEach(function (letter: string) {
     result[letter] = json[letter];
     delete json[letter];
   });
@@ -684,7 +721,7 @@ export async function allTests(dir = '/tmp/symbols') {
   for (const loc of Variables.LOCALES.keys()) {
     for (const kind of Object.values(SymbolType)) {
       await testOutputFromBoth(loc, kind, dir);
-      testOutputFromExtras(loc, kind, dir);
+      await testOutputFromExtras(loc, kind, dir);
     }
   }
 }
@@ -697,11 +734,20 @@ export function replaceTests(dir = '/tmp/symbols') {
   for (const loc of locales) {
     const files = fs.readdirSync(`${dir}/${loc}`);
     for (const file of files) {
-      const oldJson: tu.JsonTest = tu.TestUtil.loadJson(
-        `${tu.TestPath.EXPECTED}/${loc}/symbols/${file}`
-      );
+      let oldJson: tu.JsonTest = null;
+      try {
+        oldJson = tu.TestUtil.loadJson(
+          `${tu.TestPath.EXPECTED}/${loc}/symbols/${file}`
+        );
+      } catch (err) {
+        console.warn(`Original file ${file} does not exist. Adding new one!`);
+      }
       const newJson: tu.JsonTest = tu.TestUtil.loadJson(`${dir}/${loc}/${file}`);
-      oldJson.tests = newJson.tests;
+      if (oldJson) {
+        oldJson.tests = newJson.tests;
+      } else {
+        oldJson = newJson;
+      }
       tu.TestUtil.saveJson(
         `${tu.TestPath.EXPECTED}/${loc}/symbols/${file}`,
         oldJson
@@ -711,15 +757,10 @@ export function replaceTests(dir = '/tmp/symbols') {
 }
 
 export async function symbolsBase() {
-  // await loadMathmaps('en');
-  // console.log(maps);
-  // await System.setupEngine({locale: 'en'});
-  // console.log(System.engineReady());
   const outputBase = (kind: SymbolType, tests: tu.JsonTests) => {
     let json = {type: TYPES.get(kind), tests: tests};
     tu.TestUtil.saveJson(InputPath + FILES.get(kind), json);
   }
-  
   await System.engineReady();
   const chars: tu.JsonTests = {};
   const funcs: tu.JsonTests = {};
@@ -738,7 +779,13 @@ export async function symbolsBase() {
   outputBase(SymbolType.FUNCTIONS, funcs);
 }
 
-
+/**
+ * Synchronises a semantic map test with the actual content of the map in SRE.
+ *
+ * Note, new tests still need to be filled with values using the `addFailed` method.
+ *
+ * @param expected The JSON file relative to the expected directory.
+ */
 export async function completeSemanticMapTests(expected: string) {
   const json = tu.TestUtil.loadJson(tu.TestPath.EXPECTED + expected);
   const jsonTests =  json.tests as tu.JsonTests;
