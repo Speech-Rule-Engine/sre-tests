@@ -8,16 +8,16 @@
     "_comment_2": "Underspecified Layout Elements",
     "Layout_Underspec_0": {
       "_comment_": "Issue #317",
-      "expected": "<math><mover><mi type=\"punctuation\" role=\"unknown\" id=\"0\">?</mi></mover></math>"
+      "expected": "<math><mover><mi type=\"punctuation\" role=\"question\" id=\"0\">?</mi></mover></math>"
     },
     "Layout_Underspec_1": {
-      "expected": "<math><munder><mi type=\"punctuation\" role=\"unknown\" id=\"0\">?</mi></munder></math>"
+      "expected": "<math><munder><mi type=\"punctuation\" role=\"question\" id=\"0\">?</mi></munder></math>"
     },
     "Layout_Underspec_2": {
       "expected": "<math><munderover><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">a</mi></munderover></math>"
     },
     "Layout_Underspec_3": {
-      "expected": "<math><munderover type=\"underscore\" role=\"latinletter\" id=\"2\" children=\"0,1\"><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\" parent=\"2\">a</mi><mi type=\"punctuation\" role=\"underaccent\" annotation=\"accent:unknown\" id=\"1\" parent=\"2\">?</mi></munderover></math>"
+      "expected": "<math><munderover type=\"underscore\" role=\"latinletter\" id=\"2\" children=\"0,1\"><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\" parent=\"2\">a</mi><mi type=\"punctuation\" role=\"underaccent\" annotation=\"accent:question\" id=\"1\" parent=\"2\">?</mi></munderover></math>"
     },
     "Layout_Underspec_4": {
       "expected": "<math><msub><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">a</mi></msub></math>"
@@ -29,7 +29,7 @@
       "expected": "<math><msubsup><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">a</mi></msubsup></math>"
     },
     "Layout_Underspec_7": {
-      "expected": "<math><msubsup type=\"subscript\" role=\"latinletter\" id=\"2\" children=\"0,1\"><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\" parent=\"2\">a</mi><mi type=\"punctuation\" role=\"unknown\" id=\"1\" parent=\"2\">?</mi></msubsup></math>"
+      "expected": "<math><msubsup type=\"subscript\" role=\"latinletter\" id=\"2\" children=\"0,1\"><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\" parent=\"2\">a</mi><mi type=\"punctuation\" role=\"question\" id=\"1\" parent=\"2\">?</mi></msubsup></math>"
     },
     "_comment_3": "Overspecified Layout Elements",
     "Layout_Overspec_0": {

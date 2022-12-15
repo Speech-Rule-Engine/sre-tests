@@ -168,8 +168,6 @@ export abstract class AbstractJsonTest extends AbstractTest {
 
   /**
    * The actual test method.
-   *
-   * @param args Arguments for the test method.
    */
   public abstract method(): void;
 }

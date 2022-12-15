@@ -7,16 +7,16 @@
     "_comment_2": "Underspecified Layout Elements",
     "Layout_Underspec_0": {
       "_comment_": "Issue #317",
-      "expected": "<punctuation role=\"unknown\" id=\"0\">?</punctuation>"
+      "expected": "<stree><punctuation role=\"question\" id=\"0\">?</punctuation></stree>"
     },
     "Layout_Underspec_1": {
-      "expected": "<punctuation role=\"unknown\" id=\"0\">?</punctuation>"
+      "expected": "<stree><punctuation role=\"question\" id=\"0\">?</punctuation></stree>"
     },
     "Layout_Underspec_2": {
       "expected": "<stree><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">a</identifier></stree>"
     },
     "Layout_Underspec_3": {
-      "expected": "<stree><underscore role=\"latinletter\" id=\"2\"><children><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">a</identifier><punctuation role=\"underaccent\" annotation=\"accent:unknown\" id=\"1\">?</punctuation></children></underscore></stree>"
+      "expected": "<stree><underscore role=\"latinletter\" id=\"2\"><children><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">a</identifier><punctuation role=\"underaccent\" annotation=\"accent:question\" id=\"1\">?</punctuation></children></underscore></stree>"
     },
     "Layout_Underspec_4": {
       "expected": "<stree><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">a</identifier></stree>"
@@ -28,7 +28,7 @@
       "expected": "<stree><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">a</identifier></stree>"
     },
     "Layout_Underspec_7": {
-      "expected": "<stree><subscript role=\"latinletter\" id=\"2\"><children><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">a</identifier><punctuation role=\"unknown\" id=\"1\">?</punctuation></children></subscript></stree>"
+      "expected": "<stree><subscript role=\"latinletter\" id=\"2\"><children><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">a</identifier><punctuation role=\"question\" id=\"1\">?</punctuation></children></subscript></stree>"
     },
     "_comment_3": "Overspecified Layout Elements",
     "Layout_Overspec_0": {

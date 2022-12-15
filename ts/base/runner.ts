@@ -148,7 +148,6 @@ export class TestRunner {
    *
    * @param name The name of the test.
    * @param func The actual test function.
-   * @param args A list of arguments.
    */
   public executeJsonTest(name: string, func: () => any) {
     this.executeTest(name, func());
