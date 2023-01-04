@@ -9703,7 +9703,7 @@
       "expected": "<identifier role=\"unknown\">$</identifier>"
     },
     "%": {
-      "expected": "<punctuation role=\"unknown\">%</punctuation>"
+      "expected": "<operator role=\"postfix operator\">%</operator>"
     },
     "&": {
       "expected": "<punctuation role=\"unknown\">&amp;</punctuation>"
@@ -9934,10 +9934,10 @@
       "expected": "<punctuation role=\"unknown\">‧</punctuation>"
     },
     "‰": {
-      "expected": "<punctuation role=\"unknown\">‰</punctuation>"
+      "expected": "<operator role=\"postfix operator\">‰</operator>"
     },
     "‱": {
-      "expected": "<punctuation role=\"unknown\">‱</punctuation>"
+      "expected": "<operator role=\"postfix operator\">‱</operator>"
     },
     "′": {
       "expected": "<punctuation role=\"prime\">′</punctuation>"
@@ -12124,7 +12124,7 @@
       "expected": "<identifier role=\"unknown\">﹩</identifier>"
     },
     "﹪": {
-      "expected": "<punctuation role=\"unknown\">﹪</punctuation>"
+      "expected": "<operator role=\"postfix operator\">﹪</operator>"
     },
     "﹫": {
       "expected": "<punctuation role=\"unknown\">﹫</punctuation>"
@@ -12142,7 +12142,7 @@
       "expected": "<identifier role=\"unknown\">＄</identifier>"
     },
     "％": {
-      "expected": "<punctuation role=\"unknown\">％</punctuation>"
+      "expected": "<operator role=\"postfix operator\">％</operator>"
     },
     "＆": {
       "expected": "<punctuation role=\"unknown\">＆</punctuation>"
