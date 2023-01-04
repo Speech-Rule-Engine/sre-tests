@@ -31,6 +31,7 @@ import * as TestFactory from '../classes/test_factory';
 import { addActual } from './fill_tests';
 import { Tex2Mml } from './tex_transformer';
 import { AbstractTransformer, Transformer } from './transformers';
+import { Nabt2Unicode } from './braille_transformer';
 
 /* ********************************************************* */
 /*
@@ -334,9 +335,10 @@ export function fromLines(
  */
 export function transformTests(
   json: tu.JsonTest[],
-  transformers: Transformer[]
+  transformers: Transformer[],
+  force: boolean = false
 ): tu.JsonTest[] {
-  json.forEach((x) => transformTest(x, transformers));
+  json.forEach((x) => transformTest(x, transformers, force));
   return json;
 }
 
@@ -349,12 +351,17 @@ export function transformTests(
  */
 export function transformTest(
   json: tu.JsonTest,
-  transformers: Transformer[]
+  transformers: Transformer[],
+  force: boolean = false
 ): tu.JsonTest {
   for (const transformer of transformers) {
     const src = json[transformer.src];
-    if (typeof src !== undefined) {
-      json[transformer.dst] = transformer.via(src);
+    if (typeof src !== undefined || force) {
+      try {
+        json[transformer.dst] = transformer.via(src);
+      } catch (_err) {
+        console.error(`Transformer on ${transformer.src} failed for input ${src}`);
+      }
     }
   }
   return json;
@@ -366,9 +373,12 @@ export function transformTest(
  * @param file File name.
  * @param transformers Transformer list.
  */
-export function transformJsonTests(file: string, transformers: Transformer[]) {
+export function transformJsonTests(
+  file: string,
+  transformers: Transformer[],
+  force: boolean = false) {
   const json = tu.TestUtil.loadJson(file);
-  transformTests(Object.values(json), transformers);
+  transformTests(Object.values(json.tests), transformers, force);
   tu.TestUtil.saveJson(file, json);
 }
 
@@ -701,9 +711,12 @@ const PretextSplitters = new Map([
   ]
 ]);
 
+const brf = new Nabt2Unicode();
+brf.src = 'brf';
 const TransformerFactory = new Map([
   ['semantic', new SemanticTransformer()],
-  ['tex', new Tex2Mml()]
+  ['tex', new Tex2Mml()],
+  ['brf', brf]
 ]);
 
 /**
