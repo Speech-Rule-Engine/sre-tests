@@ -29,9 +29,9 @@ import { SemanticTree } from '../../speech-rule-engine/js/semantic_tree/semantic
 import * as tu from '../base/test_util';
 import * as TestFactory from '../classes/test_factory';
 import { addActual } from './fill_tests';
-import { Tex2Mml } from './tex_transformer';
+import { Tex2Mml, TexMml2Mml } from './tex_transformer';
 import { AbstractTransformer, Transformer } from './transformers';
-import { Nabt2Unicode } from './braille_transformer';
+import { Both2Unicode } from './braille_transformer';
 
 /* ********************************************************* */
 /*
@@ -63,7 +63,7 @@ function generateFromList(
   digits = -1 * digits;
   for (let entry of list) {
     if (entry.comment) {
-      tests[`_comment_${commentCount++}`] = entry.comment;
+      tests[`_comment${commentCount++}_`] = entry.comment;
       continue;
     }
     tests[`${name}_${(leading + testCount++).slice(digits)}`] = entry;
@@ -185,11 +185,11 @@ export function fromJson(
  *
  * ```javascript
  * {
- *   "_comment_0": "foo",
+ *   "_comment0_": "foo",
  *   "test_0": {"field": d0},
  *   "test_1": {"field": d1},
  *   "test_2": {"field": d2},
- *   "_comment_1": "bar",
+ *   "_comment1_": "bar",
  *   "test_3": {"field": e0},
  *   "test_4": {"field": e1},
  *   "test_5": {"field": e2},
@@ -243,9 +243,14 @@ function generateFromIssues(
 
 function generateFromLines(lines: string[],
                            properties: string[], tests: tu.JsonTests) {
+  let commentCount = 0;
   while (lines.length) {
     let name = lines.shift();
     if (!name) continue;
+    if (name.match(/^\s*_comment/i)) {
+      tests[`_comment${commentCount++}_`] = lines.shift() as any;
+      continue;
+    }
     if (tests[name]) {
       console.warn('Duplicate entry for ' + name);
     }
@@ -356,7 +361,7 @@ export function transformTest(
 ): tu.JsonTest {
   for (const transformer of transformers) {
     const src = json[transformer.src];
-    if (typeof src !== undefined || force) {
+    if (src !== undefined || force) {
       try {
         json[transformer.dst] = transformer.via(src);
       } catch (_err) {
@@ -711,12 +716,11 @@ const PretextSplitters = new Map([
   ]
 ]);
 
-const brf = new Nabt2Unicode();
-brf.src = 'brf';
 const TransformerFactory = new Map([
   ['semantic', new SemanticTransformer()],
   ['tex', new Tex2Mml()],
-  ['brf', brf]
+  ['texmml', new TexMml2Mml()],
+  ['brf', new Both2Unicode()]
 ]);
 
 /**

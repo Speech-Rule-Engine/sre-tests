@@ -56,7 +56,7 @@ export class Tex2Mml extends AbstractTransformer {
     return this.tex2mml(src);
   }
 
-  private tex2mml(input: string) {
+  protected tex2mml(input: string) {
     const math = this.document.convert(input, {
       display: this.display,
       end: STATE.CONVERT
@@ -64,4 +64,16 @@ export class Tex2Mml extends AbstractTransformer {
     const str = this.visitor.visitTree(math);
     return str.replace(/>\n *</g, '><');
   }
+}
+
+
+export class TexMml2Mml extends Tex2Mml {
+
+  /**
+   * @override
+   */
+  public via(src: string) {
+    return src.match(/^\s*<m.+>\s*$/) ? src : super.via(src);
+  }
+
 }

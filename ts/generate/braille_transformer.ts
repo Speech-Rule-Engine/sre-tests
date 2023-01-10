@@ -152,6 +152,30 @@ abstract class Brf2Unicode extends BrfTransformer {
   }
 }
 
+export class Both2Unicode extends Brf2Unicode {
+
+  /**
+   * @override
+   */
+  public kind() {
+    return 'brf';
+  }
+
+  /**
+   * @override
+   */
+  protected setupMap() {
+    let nabt = BrfTransformer.format.NABT.split('');
+    let bldt = BrfTransformer.format.BLDT.split('');
+    for (let i = 0, str1, str2; str1 = nabt[i], str2 = bldt[i]; i++) {
+      let unicode = String.fromCodePoint(0x2800 + i);
+      this.translate.set(str1, unicode);
+      this.translate.set(str2, unicode);
+    }
+  }
+
+}
+
 export class Nabt2Unicode extends Brf2Unicode {
   /**
    * @override
@@ -159,6 +183,7 @@ export class Nabt2Unicode extends Brf2Unicode {
   public kind() {
     return 'NABT';
   }
+
 }
 
 export class Bldt2Unicode extends Brf2Unicode {
@@ -168,6 +193,7 @@ export class Bldt2Unicode extends Brf2Unicode {
   public kind() {
     return 'BLDT';
   }
+
 }
 
 export class Nabt2UnicodeTable extends Nabt2Unicode {
@@ -253,6 +279,7 @@ export class Unicode2Nabt extends Unicode2Brf {
   public kind() {
     return 'NABT';
   }
+
 }
 
 export class Unicode2Bldt extends Unicode2Brf {
@@ -260,8 +287,9 @@ export class Unicode2Bldt extends Unicode2Brf {
    * @override
    */
   public kind() {
-    return 'BLDT';
+    return  'BLDT';
   }
+
 }
 
 abstract class FromMultikey extends BrfTransformer {
