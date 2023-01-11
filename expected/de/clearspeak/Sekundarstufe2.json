@@ -1,4 +1,10 @@
 {
+  "factory": "clearspeak",
+  "locale": "de",
+  "active": "ClearspeakGerman",
+  "name": "GermanClearspeakSekundarstufe2",
+  "information": "LaTeX Manual Sekundarstufe 2",
+  "base": "input/euro/Sekundarstufe2.json",
   "tests": {
     "_comment0_": "Analysis",
     "Analysis_0": {
@@ -42,6 +48,5 @@
     "Analytische_3": {
       "expected": "2 Kreuz 3 Matrix  Zeilenanfang a b c Zeilenende Zeilenanfang d e f Zeilenende Matrixende"
     }
-  },
-  "base": "input/euro/Sekundarstufe2.json"
+  }
 }

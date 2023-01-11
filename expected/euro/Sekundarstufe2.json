@@ -1,6 +1,7 @@
 {
   "name": "Sekundarstufe2",
   "information": "LaTeX Manual Sekundarstufe 2",
+  "base": "input/euro/Sekundarstufe2.json",
   "tests": {
     "_comment0_": "Analysis",
     "Analysis_0": {
@@ -44,6 +45,5 @@
     "Analytische_3": {
       "expected": "\\begin{pmatrix} a & b & c \\\\ d & e & f \\end{pmatrix}"
     }
-  },
-  "base": "input/euro/Sekundarstufe2.json"
+  }
 }

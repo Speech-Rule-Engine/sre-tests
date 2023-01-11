@@ -1,4 +1,10 @@
 {
+  "factory": "clearspeak",
+  "locale": "de",
+  "active": "ClearspeakGerman",
+  "name": "GermanClearspeakSekundarstufe1",
+  "information": "LaTeX Manual Sekundarstufe 1",
+  "base": "input/euro/Sekundarstufe1.json",
   "tests": {
     "_comment0_": "Mengen und deren Verknüpfungen",
     "Mengen_0": {
@@ -227,6 +233,5 @@
     "Geometrie_7": {
       "expected": "F kongruent zu F Strich"
     }
-  },
-  "base": "input/euro/Sekundarstufe1.json"
+  }
 }

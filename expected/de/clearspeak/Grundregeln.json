@@ -1,4 +1,10 @@
 {
+  "factory": "clearspeak",
+  "locale": "de",
+  "active": "ClearspeakGerman",
+  "name": "GermanClearspeakGrundregeln",
+  "information": "LaTeX Manual LaTeX Grundregeln",
+  "base": "input/euro/Grundregeln.json",
   "tests": {
     "_comment0_": "Textzeichen der Tastatur verwenden, solange dies eben geht!",
     "Textzeichen_0": {
@@ -50,6 +56,5 @@
     "Anpassungen_0": {
       "expected": "langer Querstrich über (Komplement von) der Vereinigung von A und B"
     }
-  },
-  "base": "input/euro/Grundregeln.json"
+  }
 }
