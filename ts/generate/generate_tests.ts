@@ -519,11 +519,11 @@ export function splitExpected(expected: string, base: string) {
     const expected = entry.expected;
     delete entry.expected;
     baseJson.tests[key] = entry;
-    json.tests[key] = { expected: expected };
+    json.tests[key] = key.match(/_comment/) ? entry : { expected: expected };
   }
   json.base = base;
-  tu.TestUtil.saveJson(filename, json);
   tu.TestUtil.saveJson(base, baseJson);
+  tu.TestUtil.saveJson(filename, json);
 }
 
 /* ********************************************************** */
