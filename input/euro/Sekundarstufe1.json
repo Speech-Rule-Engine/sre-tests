@@ -1,0 +1,379 @@
+{
+  "name": "Sekundarstufe1",
+  "information": "LaTeX Manual Sekundarstufe 1",
+  "tests": {
+    "_comment0_": "Mengen und deren Verknüpfungen",
+    "Mengen_0": {
+      "tex": "\\{ 1, 2, 3, 4 \\}",
+      "speech": "Mengenklammer auf, 1, 2, 3, 4, Mengenklammer zu",
+      "code": "\\{ 1, 2, 3, 4 \\}"
+    },
+    "Mengen_1": {
+      "tex": "P = { x | x ist Primzahl }",
+      "speech": "groß P ist Menge der Elemente klein x, für die gilt: x ist Primzahl",
+      "code": "P = \\{x|x ist Primzahl \\}"
+    },
+    "Mengen_2": {
+      "tex": "3 \\in P",
+      "speech": "3 ist Element der Menge P",
+      "code": "3 \\in P"
+    },
+    "Mengen_3": {
+      "tex": "4 \\notin P",
+      "speech": "4 ist nicht Element von P",
+      "code": "4 \\notin P"
+    },
+    "Mengen_4": {
+      "tex": "A \\subset B",
+      "speech": "Menge A ist echt in Menge B enthalten",
+      "code": "A \\subset B"
+    },
+    "Mengen_5": {
+      "tex": "A \\subseteq B",
+      "speech": "Menge A ist in Menge B enthalten oder ist gleich der Menge B",
+      "code": "A \\subseteq B"
+    },
+    "Mengen_6": {
+      "tex": "A \\cup B",
+      "speech": "Vereinigung der Mengen A und B",
+      "code": "A \\cup B"
+    },
+    "Mengen_7": {
+      "tex": "A \\cap B",
+      "speech": "Durchschnitt der Mengen A und B",
+      "code": "A \\cap B"
+    },
+    "Mengen_8": {
+      "tex": "A \\backslash B",
+      "speech": "Menge A ohne die Menge B",
+      "code": "A \\backslash B"
+    },
+    "Mengen_9": {
+      "tex": "\\{ \\}   bzw. \\(\\displaystyle{  \\emptyset  }\\)",
+      "speech": "leere Menge als leere Mengenklammern bzw. als Symbol",
+      "code": "\\{ \\} bzw. \\emptyset"
+    },
+    "Mengen_10": {
+      "tex": "\\overline{A}",
+      "speech": "Menge A quer",
+      "code": "\\overline{A}"
+    },
+    "_comment1_": "Spezielle Zahlenmengen  1)",
+    "Spezielle_0": {
+      "tex": "\\N",
+      "speech": "Menge der natürlichen Zahlen",
+      "code": "\\mathbb N"
+    },
+    "Spezielle_1": {
+      "tex": "\\Z",
+      "speech": "Menge der ganzen Zahlen",
+      "code": "\\mathbb Z"
+    },
+    "Spezielle_2": {
+      "tex": "\\Z_0^-",
+      "speech": "Menge der negativen ganzen Zahlen einschließlich der Zahl 0",
+      "code": "\\mathbb Z_0^-"
+    },
+    "Spezielle_3": {
+      "tex": "\\Q",
+      "speech": "Menge der rationalen Zahlen",
+      "code": "\\mathbb Q"
+    },
+    "Spezielle_4": {
+      "tex": "\\R",
+      "speech": "Menge der reellen Zahlen",
+      "code": "\\mathbb R"
+    },
+    "Spezielle_5": {
+      "tex": "\\mathcal P",
+      "speech": "Potenzmenge P",
+      "code": "\\mathcal P"
+    },
+    "_comment2_": "Verknüpfungen von Zahlen",
+    "Verknüpfungen_0": {
+      "tex": "x \\in \\N \\wedge x \\lt  3",
+      "speech": "x ist Element von N und x ist echt kleiner 3",
+      "code": "x \\in \\N \\wedge x < 3"
+    },
+    "Verknüpfungen_1": {
+      "tex": "A \\Rightarrow B",
+      "speech": "Aus A folgt B (\"Wer A sagt, muss auch B sagen.\")",
+      "code": "A \\Rightarrow B"
+    },
+    "Verknüpfungen_2": {
+      "tex": "x \\to \\infty",
+      "speech": "x geht gegen unendlich",
+      "code": "x \\to \\infty"
+    },
+    "Verknüpfungen_3": {
+      "tex": "x =1 \\vee x =2",
+      "speech": "x = 1 oder x = 2",
+      "code": "x =1 \\vee x =2"
+    },
+    "Verknüpfungen_4": {
+      "tex": "3x =12 \\Leftrightarrow x =4",
+      "speech": "3x = 12 ist äquivalent zu x = 4",
+      "code": "3x =12 \\Leftrightarrow x =4"
+    },
+    "Verknüpfungen_5": {
+      "tex": "x \\le 10",
+      "speech": "x ist kleiner oder gleich 10",
+      "code": "x \\le 10"
+    },
+    "Verknüpfungen_6": {
+      "tex": "a \\ge b",
+      "speech": "a ist größer oder gleich b",
+      "code": "a \\ge b"
+    },
+    "Verknüpfungen_7": {
+      "tex": ">>",
+      "speech": "viel größer als",
+      "code": "\\gg"
+    },
+    "Verknüpfungen_8": {
+      "tex": "<<",
+      "speech": "viel kleiner als",
+      "code": "\\ll"
+    },
+    "Verknüpfungen_9": {
+      "tex": "\\pi \\approx 3,14",
+      "speech": "Die Zahl pi ist ungefähr gleich 3,14",
+      "code": "\\pi \\approx 3,14"
+    },
+    "Verknüpfungen_10": {
+      "tex": "(a +b)^2",
+      "speech": "runde Klammer auf, a plus b, runde Klammer zu, hoch 2",
+      "code": "(a +b)^2"
+    },
+    "Verknüpfungen_11": {
+      "tex": "[x -y]^3",
+      "speech": "eckige Klammer auf, x minus y, eckige Klammer zu, hoch 3",
+      "code": "[x -y]^3"
+    },
+    "Verknüpfungen_12": {
+      "tex": "s \\sim t",
+      "speech": "s ist proportional zu t (das Zeichen bedeutet auch \"ähnlich\" (similar))",
+      "code": "s \\sim t"
+    },
+    "Verknüpfungen_13": {
+      "tex": "a \\hat{=} b",
+      "speech": "a entspricht b",
+      "code": "a \\hat{=} b"
+    },
+    "Verknüpfungen_14": {
+      "tex": "7|28",
+      "speech": "7 teilt die Zahl 28",
+      "code": "7 | 28"
+    },
+    "_comment3_": "Verknüpfungen von Aussagen",
+    "_comment4_": "Brüche  2) und Dezimalzahlen",
+    "Brüche_0": {
+      "tex": "\\frac{2}{3}",
+      "speech": "zwei Drittel bzw. Bruchanfang, 2 durch 3, Bruchende",
+      "code": "2/3  bzw.  \\frac{2}{3}"
+    },
+    "Brüche_1": {
+      "tex": "4\\frac{3}{5}",
+      "speech": "vier Dreifünftel bzw. 4 Bruchanfang, 3 durch 5, Bruchende",
+      "code": "4 \\frac{3}{5}"
+    },
+    "Brüche_2": {
+      "tex": "\\frac{1}{x}",
+      "speech": "1 durch x bzw. Bruchanfang, 1 durch x, Bruchende",
+      "code": "\\frac{1}{x}"
+    },
+    "Brüche_3": {
+      "tex": "\\frac{1}{x +2} \\not= \\frac{1}{x} +2",
+      "speech": "Bruchanfang 1 durch x plus 2 Bruchende ist ungleich Bruchanfang 1 durch x Bruchende plus 2",
+      "code": "\\frac{1}{x +2} \\not= \\frac{1}{x} +2"
+    },
+    "Brüche_4": {
+      "tex": "\\frac{ \\frac{a+b}{2}}{\\frac{x}{a-b}} =1",
+      "speech": "Bruchanfang Bruchanfang a plus b durch 2 Bruchende durch Bruchanfang x durch a minus b Bruchende Bruchende ist gleich 1",
+      "code": "\\frac{ \\frac{a+b}{2} }{ \\frac{x}{a-b} } =1"
+    },
+    "Brüche_5": {
+      "tex": "0,25 = 1/4",
+      "speech": "0 Komma 25 ist gleich ein Viertel",
+      "code": "0,25 = 1/4"
+    },
+    "Brüche_6": {
+      "tex": "0,1\\overline{6} = 1/6",
+      "speech": "0 Komma 1 Periode 6 ist gleich ein Sechstel",
+      "code": "0,1\\overline{6} = 1/6"
+    },
+    "Brüche_7": {
+      "tex": "75\\% = 3/4",
+      "speech": "75 Prozent sind gleich 3 Viertel",
+      "code": "75\\% = 3/4"
+    },
+    "Brüche_8": {
+      "tex": "2,5 ‰",
+      "speech": "2,5 Promille",
+      "code": "2,5 \\permil"
+    },
+    "_comment5_": "Potenzen, Wurzeln, Indizes",
+    "Potenzen,_0": {
+      "tex": "a^2",
+      "speech": "a zum Quadrat",
+      "code": "a^2"
+    },
+    "Potenzen,_1": {
+      "tex": "a^{12}",
+      "speech": "a hoch 12",
+      "code": "a^{12}"
+    },
+    "Potenzen,_2": {
+      "tex": "2^{-3} =1/8",
+      "speech": "2 hoch minus 3 ist gleich ein Achtel",
+      "code": "2^{-3} =1/8"
+    },
+    "Potenzen,_3": {
+      "tex": "a^{n+1} \\not= a^n +1",
+      "speech": "a hoch Exponentanfang n + 1 Exponentende ist ungleich a hoch Exponentanfang n Exponentende + 1",
+      "code": "a^{n+1} \\not= a^n +1"
+    },
+    "Potenzen,_4": {
+      "tex": "\\sqrt{25} = 5",
+      "speech": "Die Quadratwurzel aus 25 ist gleich 5",
+      "code": "\\sqrt{25} = 5"
+    },
+    "Potenzen,_5": {
+      "tex": "\\sqrt{x^2 +y^2} \\not= x +y",
+      "speech": "Die Wurzel aus x hoch 2 plus y hoch 2 Wurzelende ist ungleich x plus y",
+      "code": "\\sqrt{x^2 +y^2} \\not= x +y"
+    },
+    "Potenzen,_6": {
+      "tex": "\\sqrt[3]{8} = 2",
+      "speech": "Die dritte Wurzel aus 8 ist gleich 2",
+      "code": "\\sqrt[3]{8} = 2"
+    },
+    "Potenzen,_7": {
+      "tex": "\\sqrt[3]{a^2}  =a^{2/3}",
+      "speech": "Die dritte Wurzel aus a hoch 2 Wurzelende ist gleich a hoch zwei Drittel",
+      "code": "\\sqrt[3]{a^2}  =a^{2/3}"
+    },
+    "Potenzen,_8": {
+      "tex": "a_1 + a_n",
+      "speech": "a Index 1 plus a Index n",
+      "code": "a_1 + a_n"
+    },
+    "Potenzen,_9": {
+      "tex": "a_{n -1}",
+      "speech": "a Index n minus 1 Indexende",
+      "code": "a_{n -1}"
+    },
+    "Potenzen,_10": {
+      "tex": "{}_{95}^{238}\\mathrm{U}",
+      "speech": "Index und Exponent vor einem Zeichen (Bsp. Chemie)",
+      "code": "_{95}^{238}U"
+    },
+    "_comment6_": "Weitere Rechenoperationen, Funktionen",
+    "Weitere_0": {
+      "tex": "f(x) =2x +1",
+      "speech": "f von x ist gleich 2x +1",
+      "code": "f(x) =2x +1"
+    },
+    "Weitere_1": {
+      "tex": "f(3) =7",
+      "speech": "f von 3 ist gleich 7",
+      "code": "f(3) =7"
+    },
+    "Weitere_2": {
+      "tex": "f \\; : \\; y = 2x +1",
+      "speech": "Die Zuordnungsvorschrift der Funktion f lautet: y =2x +1",
+      "code": "f: y =2x +1"
+    },
+    "Weitere_3": {
+      "tex": "f: x \\mapsto 2x +1",
+      "speech": "Die Zuordnungsvorschrift der Funktion f lautet: x Zuordnungspfeil nach rechts 2x +1",
+      "code": "f: x \\mapsto 2x +1"
+    },
+    "Weitere_4": {
+      "tex": "P(3,5 | 8)",
+      "speech": "Punkt P mit der x-Koordinate 3,5 und der y-Koordinate 8",
+      "code": "P(3,5|8)"
+    },
+    "Weitere_5": {
+      "tex": "|a|",
+      "speech": "Betrag von a",
+      "code": "|a|"
+    },
+    "Weitere_6": {
+      "tex": "\\log_a x",
+      "speech": "Logarithmus von x zur Basis a",
+      "code": "\\log_a x"
+    },
+    "Weitere_7": {
+      "tex": "\\ln x",
+      "speech": "natürlicher Logarithmus (Logarithmus von x zur Basis e)",
+      "code": "\\ln x"
+    },
+    "Weitere_8": {
+      "tex": "\\sin \\alpha",
+      "speech": "Sinus von klein alpha",
+      "code": "\\sin \\alpha"
+    },
+    "Weitere_9": {
+      "tex": "\\cos^2 \\beta",
+      "speech": "Kosinus Quadrat von klein beta",
+      "code": "\\cos^2 \\beta"
+    },
+    "Weitere_10": {
+      "tex": "\\tan \\gamma",
+      "speech": "Tangens von klein gamma",
+      "code": "\\tan \\gamma"
+    },
+    "Weitere_11": {
+      "tex": "\\cot 45°",
+      "speech": "Kotangens 45 Grad",
+      "code": "\\cot 45°"
+    },
+    "Weitere_12": {
+      "tex": "\\sin (\\pi /6)",
+      "speech": "Sinus von Klammer auf Pi Sechstel Klammer zu",
+      "code": "\\sin (\\pi /6)"
+    },
+    "_comment7_": "Geometrie",
+    "Geometrie_0": {
+      "tex": "\\overline{AB}",
+      "speech": "Strecke AB",
+      "code": "\\overline{AB}"
+    },
+    "Geometrie_1": {
+      "tex": "\\triangle ABC",
+      "speech": "Dreieck ABC",
+      "code": "\\triangle ABC"
+    },
+    "Geometrie_2": {
+      "tex": "\\angle BAC",
+      "speech": "Winkel BAC",
+      "code": "\\angle BAC"
+    },
+    "Geometrie_3": {
+      "tex": "\\alpha, \\beta, \\gamma, \\delta, \\epsilon",
+      "speech": "klein alpha, beta, gamma, delta, epsilon",
+      "code": "\\alpha, \\beta, \\gamma, \\delta, \\epsilon"
+    },
+    "Geometrie_4": {
+      "tex": "g \\parallel h",
+      "speech": "g parallel zu h",
+      "code": "g \\parallel h"
+    },
+    "Geometrie_5": {
+      "tex": "g \\nparallel h",
+      "speech": "g nicht parallel zu h",
+      "code": "g \\nparallel h"
+    },
+    "Geometrie_6": {
+      "tex": "g \\perp h",
+      "speech": "g senkrecht zu h",
+      "code": "g \\perp h"
+    },
+    "Geometrie_7": {
+      "tex": "F \\cong F'",
+      "speech": "F kongruent zu F Strich",
+      "code": "F \\cong F'"
+    }
+  }
+}
