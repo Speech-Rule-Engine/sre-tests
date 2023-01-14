@@ -1,0 +1,370 @@
+{
+  "name": "NemethSection6",
+  "information": "Nemeth 2020 Book Section 6",
+  "factory": "speech",
+  "domain": "default",
+  "locale": "nemeth",
+  "modality": "braille",
+  "active": "Book2019",
+  "tests": {
+    "_comment0_": "Section 6_2",
+    "Example 6.2-extra-1": {
+      "tex": "38 ± 7   ",
+      "brf": "#38+-7"
+    },
+    "Example 6.2-extra-2": {
+      "tex": "38 ∓ 7     ",
+      "brf": "#38-+7"
+    },
+    "Example 6.2-extra-3": {
+      "tex": "10 + −5 ",
+      "brf": "#10+\"-5"
+    },
+    "Example 6.2-extra-4": {
+      "tex": "10 − +5",
+      "brf": "#10-\"+5"
+    },
+    "Example 6.2-extra-5": {
+      "tex": "10 − −5 ",
+      "brf": "#10-\"-5"
+    },
+    "Example 6.2-1": {
+      "tex": "±5 means +5 and −5",
+      "brf": " +-5 ,'m1ns +5 ,'& -#54"
+    },
+    "Example 6.2-2": {
+      "tex": "Can 3 ± 1 = +4 and +2?",
+      "brf": "#3+-1 .K +4 ,'.1& +28"
+    },
+    "Example 6.2-3": {
+      "tex": "20 + −3; 20 − −3; −20 − −3; −20 + 3 .",
+      "brf": "#20+\"-3_2 #20-\"-3_2 -#20-\"-3_2 -#20+3"
+    },
+    "_comment1_": "Section 6_3",
+    "Example 6.3-1": {
+      "tex": " p & –p ",
+      "brf": " P_&-P"
+    },
+    "6.3.2 Asterisk A": {
+      "tex": "3 ∗ 9 = 27 ",
+      "brf": "#3@##9 .K #27"
+    },
+    "6.3.2 Asterisk B": {
+      "tex": ". 3 ∗ .9 = 0.27 ",
+      "brf": "#.3@##.9 .K #0.27"
+    },
+    "Example 6.3-3": {
+      "tex": "n x # y = y # x",
+      "brf": " X.#Y .K Y.#X "
+    },
+    "Example 6.3-4": {
+      "tex": "𝐴#𝐵",
+      "brf": ",A.#,B "
+    },
+    "Example 6.3-4a": {
+      "tex": "1 # .2 = .2 # 1",
+      "brf": "#1.##.2 .k #.2.##1"
+    },
+    "6.3.4 Dagger": {
+      "tex": "A†B=B†A ",
+      "brf": ",A_],B .K ,B_],A"
+    },
+    "6.3.4 Double Dagger": {
+      "tex": "A‡B=B‡A ",
+      "brf": ",A__],B .K ,B__],A"
+    },
+    "6.3.5 Paragraph Mark A": {
+      "tex": "A¶B",
+      "brf": ",A@,P,B"
+    },
+    "6.3.5 Paragraph Mark B": {
+      "tex": "3¶4=4¶3",
+      "brf": "#3@,P#4 .K #4@,P#3"
+    },
+    "6.3.6 Section Mark A": {
+      "tex": "A§B",
+      "brf": ",A@,s,B"
+    },
+    "6.3.6 Section Mark B": {
+      "tex": "3§4=4§3 #3@,s#4 ",
+      "brf": ".K #4@,s#3"
+    },
+    "_comment2_": "Section 6_4",
+    "Example 6.4-1 ": {
+      "tex": "3/8 ",
+      "brf": "#3_/8"
+    },
+    "Example 6.4-8": {
+      "tex": "𝑎 ∘ (𝑏 ∘ 𝑐) = (𝑎 ∘ 𝑏) ∘ 𝑐",
+      "brf": "A.*(B.*C) .K (A.*B).*C"
+    },
+    "Example 6.4-8b": {
+      "tex": "(F.*G)",
+      "brf": "(𝑓 ∘ 𝑔)"
+    },
+    "Example 6.4-9": {
+      "tex": "(𝑓 ∘ 𝑔)(𝑥)",
+      "brf": "(F.*G)(X)"
+    },
+    "6.4.5 Intersection: This operation symbol is also called a \"cap\".": {
+      "tex": "𝐴∩𝐵 =𝐵∩𝐴",
+      "brf": ",A.%,B .K ,B.%,A"
+    },
+    "6.4.6 Logical Product: In the study of logic, this operation sign means \"and\" or \"meet\".": {
+      "tex": "𝑝∧𝑞∧𝑟",
+      "brf": "P@%Q@%R"
+    },
+    "6.4.7 Logical Sum: In the study of logic, this operation sign means \"or\" or \"join\".": {
+      "tex": "𝑝∨𝑞∨𝑟",
+      "brf": "P@+Q@+R"
+    },
+    "6.4.8 Minus With Dot Over: This operation sign means \"proper difference\".": {
+      "tex": "𝑥∸𝑦=0",
+      "brf": "X.-Y .K #0"
+    },
+    "6.4.9 Tilde: a": {
+      "tex": "∼𝑝",
+      "brf": "@:P"
+    },
+    "6.4.9 Tilde: b": {
+      "tex": "∼ (∼ 𝑝)",
+      "brf": "@:(@:P)"
+    },
+    "6.4.9 Tilde: c": {
+      "tex": "∼∼ 𝑝∨𝑞",
+      "brf": "@:\"@:P@+Q"
+    },
+    "6.4.9 Tilde: d": {
+      "tex": "",
+      "brf": "@,:"
+    },
+    "6.4.9 Tilde: e": {
+      "tex": " 𝑠 ∨ 𝑡",
+      "brf": "@,:S@+T"
+    },
+    "6.4.10 Union: This operation symbol is also called a \"cup\".": {
+      "tex": "𝐴∪𝐵 =𝐵∪𝐴",
+      "brf": ",A.+,B .K ,B.+,A"
+    },
+    "Example 6.4-11": {
+      "tex": "𝑏|𝑎",
+      "brf": "B\\A"
+    },
+    "Example 6.4-11b": {
+      "tex": "6 | 12",
+      "brf": "#6\\12"
+    },
+    "6.4.12 Negated Vertical Bar": {
+      "tex": "/|",
+      "brf": "5∤𝑛"
+    },
+    "6.4.12 Negated Vertical Bar Example": {
+      "tex": "/|",
+      "brf": "#5/|n"
+    },
+    "_comment3_": "Section 6_7",
+    "6.7.1 Greater Than With Curved Sides (\"is greater than\")": {
+      "tex": "7≻4≻3",
+      "brf": "#7 ..1 #4 ..1 #3"
+    },
+    "6.7.2 Less Than With Curved Sides (\"is less than\")": {
+      "tex": "5 ≺ 9 ≺ 11",
+      "brf": "#5 .\"K #9 .\"K #11"
+    },
+    "6.7.3 Arc, Concave Upward": {
+      "tex": "",
+      "brf": "X $A Y"
+    },
+    "6.7.4 Arc, Concave Downward": {
+      "tex": "",
+      "brf": "X $' Y"
+    },
+    "6.7.5 Equivalence (\"is equivalent to\")": {
+      "tex": "𝑥≎𝑦",
+      "brf": "X @<,< Y"
+    },
+    "6.7.6 Identity (Triple Bar): This symbol is used in several different contexts. Most commonly": {
+      "tex": "A+B≡B+A",
+      "brf": ",A+,B _L ,B+,A"
+    },
+    "6.7.7 Inclusion: This symbol is generally used for sets and their elements, meaning \"is": {
+      "tex": "𝐴⊂𝐷",
+      "brf": ",A _\"K ,D"
+    },
+    "6.7.8 Membership: This symbol is generally used for sets and their elements, meaning \"is an": {
+      "tex": "5∈𝐵",
+      "brf": "#5 @E ,B"
+    },
+    "6.7.9 Parallel To (\"is parallel to\")": {
+      "tex": "𝐴𝐵 ∥ 𝐶𝐷",
+      "brf": ",A,B $L ,C,D"
+    },
+    "6.7.10 Perpendicular To (\"is perpendicular to\")": {
+      "tex": "𝑃𝑄 ⊥ 𝑅𝑆",
+      "brf": ",P,Q $P ,R,S"
+    },
+    "\f6.7.11 Relation: When a letter R is used between two expressions to show relation (\"is related": {
+      "tex": "𝐷⊃𝐴",
+      "brf": ",D _.1 ,A"
+    },
+    "6.7.13 Reverse Membership: This symbol means \"contains the element\".": {
+      "tex": "𝐵∋5",
+      "brf": ",B @5 #5"
+    },
+    "6.7.14 Tilde as a Sign of Comparison: When used as a comparison sign (often encountered in": {
+      "tex": "x  y",
+      "brf": "X @,: Y"
+    },
+    "\f6.7.15 Variation (\"varies as\")": {
+      "tex": "𝑥∝𝑦",
+      "brf": "X _= Y"
+    },
+    "Example 6.7-4": {
+      "tex": "{𝑥 ∈ 𝐸|Φ(𝑥)}",
+      "brf": ".(X @E ,E \\ .,F(X).)"
+    },
+    "EXample 6.7-4b": {
+      "tex": "{(𝑥, 𝑦)|𝑥 + 𝑦 < 6} ",
+      "brf": ".((X, Y) \\ X+Y \"K #6.)"
+    },
+    "Example 6.7-5": {
+      "tex": "P(A|B)",
+      "brf": ",P(,A \\ ,B)"
+    },
+    "Example 6.7-6": {
+      "tex": "{𝑥 ∶ 𝑥 > 0}",
+      "brf": ".(;X_3 X .1 #0.)"
+    },
+    "_comment4_": "Section 6_8",
+    "6.8.1a": {
+      "tex": "𝑎⋝𝑏",
+      "brf": "A :.1 B"
+    },
+    "6.8.1b": {
+      "tex": "𝑎⪚𝑏",
+      "brf": "A .K.1 B"
+    },
+    "6.8.1c": {
+      "tex": "𝑥≥𝑦",
+      "brf": "x .1: y"
+    },
+    "6.8.1d": {
+      "tex": "|𝑥| ≧ 0",
+      "brf": "\\X\\ .1.K #0"
+    },
+    "6.8.2a": {
+      "tex": "𝐶⊂̅ 𝐵′",
+      "brf": ",C :_\"K ,B'"
+    },
+    "6.8.2b": {
+      "tex": "𝐶⊂̿ 𝐵′",
+      "brf": ",C .K_\"K ,B'"
+    },
+    "6.8.2c": {
+      "tex": "(𝐷 ∩ 𝐸) ⊆ (𝐸 × 𝐸)",
+      "brf": "(,D.%,E) _\"K: (,E@*,E)"
+    },
+    "6.8.2d": {
+      "tex": "(𝐷 ∩ 𝐸) ⫅ (𝐸 × 𝐸)",
+      "brf": "(,D.%,E) _\"K.K (,E@*,E)"
+    },
+    "6.8.3a": {
+      "tex": "𝑋 ∩ 𝑌",
+      "brf": ",X .%: ,Y"
+    },
+    "6.8.3b": {
+      "tex": "X ∩Y",
+      "brf": ",X .%.K ,Y"
+    },
+    "6.8.4a": {
+      "tex": "𝑣−1⋜5",
+      "brf": "V-1 :\"K #5"
+    },
+    "6.8.4b": {
+      "tex": "𝑣−1⪛5",
+      "brf": "V-1 .K\"K #5"
+    },
+    "6.8.4c": {
+      "tex": "6≤𝑥≤9",
+      "brf": "#6 \"K: X \"K: #9"
+    },
+    "6.8.4d": {
+      "tex": "6⫹𝑥⫹9",
+      "brf": "#6 \"K.K X \"K.K #9"
+    },
+    "6.8.5a": {
+      "tex": "𝐴𝐵𝐷 ∧ 𝐴′𝐵′𝐷′",
+      "brf": ",A,B,D :@% ,A',B',D'"
+    },
+    "6.8.5b": {
+      "tex": "{𝐴} ⩠ 𝐾",
+      "brf": ".(,A.) @%.K ,K"
+    },
+    "6.8.5c": {
+      "tex": "𝑝∧𝑞",
+      "brf": "P @%: Q"
+    },
+    "6.8.6a": {
+      "tex": "𝐴𝐵𝐶 ⊽ 𝐴′𝐵′𝐶′",
+      "brf": ",A,B,C :@+ ,A',B',C'"
+    },
+    "6.8.6b": {
+      "tex": "𝑃(𝐸 ∨ 𝐹)",
+      "brf": ",P(,E @+: ,F)"
+    },
+    "6.8.7a": {
+      "tex": "𝐵⊃𝐴",
+      "brf": ",B :_.1 ,A"
+    },
+    "6.8.7b": {
+      "tex": "𝐷⫆𝐶",
+      "brf": ",D _.1.K ,C"
+    },
+    "6.8.8a": {
+      "tex": "3.14159 ≈ 3.1416",
+      "brf": "#3.14159 @:@: #3.1416"
+    },
+    "6.8.8b": {
+      "tex": "𝐴𝐵𝐶 ≅ 𝐷𝐸𝐹",
+      "brf": ",A,B,C @:.K ,D,E,F"
+    },
+    "6.8.9": {
+      "tex": "𝐴∪𝐵",
+      "brf": ",A .+: ,B"
+    },
+    "_comment5_": "Section 6_9",
+    "6.9.1a": {
+      "tex": "𝑛 ><1",
+      "brf": "N .1\"\"K #1"
+    },
+    "6.9.1b": {
+      "tex": "𝑛 >=<1",
+      "brf": "N .1\".K\"\"K #1"
+    },
+    "6.9.2a": {
+      "tex": "𝑛 <>1",
+      "brf": "N \"K\".1 #1"
+    },
+    "6.9.2b": {
+      "tex": "𝑛 <=>1",
+      "brf": "N \"K\".K\".1 #1"
+    },
+    "_comment6_": "Section 6_10",
+    "6.10a": {
+      "tex": "4 × 13 ≠ 14",
+      "brf": "#4@*13 /.K #14"
+    },
+    "6.10b": {
+      "tex": "𝐶𝐷 ∦ 𝐸𝐹 ⊥ 𝐺𝐻",
+      "brf": ",C,D /$L ,E,F /$p ,g,h"
+    },
+    "6.10c": {
+      "tex": "4≱7",
+      "brf": "#4 /.1: #7"
+    },
+    "6.10d": {
+      "tex": "9∉𝐷",
+      "brf": "#9 /@E ,D"
+    }
+  }
+}
