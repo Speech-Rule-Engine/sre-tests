@@ -176,7 +176,9 @@ let createHtmlFiles = function() {
     str += '</table>';
     str += '\n\n';
   }
-  fs.writeFileSync('output/index.html', '<html>\n<body>\n' + str+ '</body>\n</html>\n');
+  fs.mkdirSync('output', { recursive: true });
+  fs.writeFileSync('output/index.html',
+                   '<!DOCTYPE html>\n<html>\n<body>\n' + str+ '</body>\n</html>\n');
 };
 
 let cleanFiles = function() {
