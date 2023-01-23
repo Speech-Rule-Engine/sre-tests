@@ -25,7 +25,8 @@ export const TestPath: { [key: string]: string } = {
   INPUT: TestDir + 'input/',
   OUTPUT: TestDir + 'output/',
   EXPECTED: TestDir + 'expected/',
-  ANALYSIS: TestDir + 'analysis/'
+  ANALYSIS: TestDir + 'analysis/',
+  VISUALISE: TestDir + 'visualise/'
 };
 
 /**

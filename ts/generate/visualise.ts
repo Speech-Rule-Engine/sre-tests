@@ -24,13 +24,14 @@ import * as path from 'path';
 
 export function visualiseTests(input: string = 'EnrichExamples.json',
                                dir: string = 'visualise') {
+  makeHeader(true);
   let json = TestUtil.loadJson(TestPath.OUTPUT + input);
   let index = [];
   for (let [filename, entries] of Object.entries(json)) {
     if (!filename) continue;
     let file = path.basename(filename, path.extname(filename));
     index.push(file);
-    let output = makeHeader(file);
+    let output = makeTitle(file);
     let count = 1;
     for (let entry of entries) {
       output += visualiseElement(entry, count);
@@ -63,19 +64,24 @@ function visualiseElement(expr: string, count: number) {
   output += '</div>\n';
   return output;
 }
-  
 
-const header = '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">\n<html>\n<head>\n' +
-  '<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n' +
-  '<link type="text/css" rel="stylesheet" href="https://speech-rule-engine.github.io/semantic-tree-visualiser/styles/style.css"/>\n' +
-  '<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/d3/dist/d3.min.js"></script>\n' +
-  '<link type="text/css" rel="stylesheet" href="https://speech-rule-engine.github.io/semantic-tree-visualiser/styles/tree.css"/>\n' +
-  '<script src="https://cdn.jsdelivr.net/npm/speech-rule-engine/lib/sre.js"></script>\n' +
-  '<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>\n' +
-  '<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>\n' +
-  '<script type="text/javascript" src="https://speech-rule-engine.github.io/semantic-tree-visualiser/lib/visualise.js"></script>';
+let header = '';
 
-function makeHeader(title: string): string {
+function makeHeader(local: boolean = false) {
+  // TODO: compute correct local node_modules directory from base.
+  let prefix = local ? '../node_modules' : 'https://cdn.jsdelivr.net/npm';
+  header = '<!DOCTYPE html>';
+  header += '<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n';
+  header += `<link type="text/css" rel="stylesheet" href="${prefix}/sre-visualiser/styles/style.css"/>\n`
+  header += `<script type="text/javascript" src="${prefix}/d3/dist/d3.min.js"></script>\n`;
+  header += `<link type="text/css" rel="stylesheet" href="${prefix}/sre-visualiser/styles/tree.css"/>\n`;
+  header += `<script src="${prefix}/speech-rule-engine/lib/sre.js"></script>\n`;
+  header += `<script async src="${prefix}/mathjax-full/es5/tex-mml-chtml.js"></script>\n`;
+  header += `<script type="text/javascript" src="${prefix}/sre-visualiser/lib/visualise.js"></script>`;
+
+}
+
+function makeTitle(title: string) {
   title = title.replace(/^\w/, x => x.toUpperCase());
   return header + `<title>${title}</title>\n</head>\n\n<body>\n<h1>${title}</h1>`;
 }
@@ -84,4 +90,3 @@ const footer = '</body>\n<script type="text/javascript">\n' +
   'streeVis.config.expanded = true;\n' +
   'streeVis.renderCells();\n' +
   '</script>\n</html>';
-

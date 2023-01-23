@@ -232,7 +232,7 @@ export class SpeechTest extends AbstractExamples {
       '\n<style>\n table, th, td {\n' +
       '  border: 1px solid black; }\n</style>\n';
     return (
-      '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">' +
+      '<!DOCTYPE html>' +
       '<html> <head>\n' +
       '<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n' +
       mathjax +

@@ -834,3 +834,10 @@ ct.copySemanticTest('common/direct_speech.json', true, 'semantic');
 
 will generate `direct_speech.json` files in the `semantic` directory with `base`
 file residing in `common`.
+
+##
+
+``` javascript
+let vis = require('./js/generate/visualise.js');
+```
+
