@@ -17,14 +17,19 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import { TestPath, TestUtil } from '../base/test_util';
 import * as fs from 'fs';
 import * as path from 'path';
 
+import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
 
-export function visualiseTests(input: string = 'EnrichExamples.json',
-                               dir: string = 'visualise') {
-  makeHeader(true);
+import { TestPath, TestUtil } from '../base/test_util';
+
+
+
+export function visualiseTests(dir: string = '',
+                               input: string = 'EnrichExamples.json') {
+  dir = path.join(TestPath.VISUALISE, dir);
+  makeHeader(dir);
   let json = TestUtil.loadJson(TestPath.OUTPUT + input);
   let index = [];
   for (let [filename, entries] of Object.entries(json)) {
@@ -59,18 +64,21 @@ function makeIndex(dir: string, index: string[]) {
 function visualiseElement(expr: string, count: number) {
   let output = `<div class="cell">\n`;
   output += `  <span class="counter">${count}</span>\n`;
-  output += `  <span class="math">\n     <math>${expr}</math>\n  </span>\n`;
+  output += `  <span class="math">\n     ${Enrich.prepareMmlString(expr)}\n  </span>\n`;
   output += '  <span class="tree"></span>\n';
   output += '</div>\n';
   return output;
 }
 
+export let LOCAL = false;
+
 let header = '';
 
-function makeHeader(local: boolean = false) {
-  // TODO: compute correct local node_modules directory from base.
-  let prefix = local ? '../node_modules' : 'https://cdn.jsdelivr.net/npm';
-  header = '<!DOCTYPE html>';
+function makeHeader(dir: string = '') {
+  let basedir = '..' + path.relative(dir, TestPath.VISUALISE);
+  let prefix = LOCAL ? `${basedir}/node_modules` : 'https://cdn.jsdelivr.net/npm';
+  console.log(prefix);
+  header = '<!DOCTYPE html>\n<html>\n<head>\n';
   header += '<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n';
   header += `<link type="text/css" rel="stylesheet" href="${prefix}/sre-visualiser/styles/style.css"/>\n`
   header += `<script type="text/javascript" src="${prefix}/d3/dist/d3.min.js"></script>\n`;
