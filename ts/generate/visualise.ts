@@ -24,8 +24,12 @@ import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
 
 import { TestPath, TestUtil } from '../base/test_util';
 
-
-
+/**
+ * Visulisases the content of the a JSON file with examples per filename.
+ *
+ * @param dir Output directory.
+ * @param input Input file with examples.
+*/
 export function visualiseTests(dir: string = '',
                                input: string = 'EnrichExamples.json') {
   dir = path.join(TestPath.VISUALISE, dir);
@@ -48,6 +52,36 @@ export function visualiseTests(dir: string = '',
     fs.writeFileSync(file + '.html', output);
   }
   makeIndex(dir, index);
+}
+
+/**
+ *
+ * @param {string} file
+ */
+export function visualiseInput(file: string) {
+  const dir = path.join(TestPath.VISUALISE, path.dirname(file));
+  makeHeader(dir);
+  const title = path.basename(file, path.extname(file));
+  const input = TestUtil.fileExists(file, TestPath.INPUT);
+  const tests = input ? TestUtil.loadJson(input) : {tests: {}};
+  if (tests.tests === 'ALL') {
+    return;
+  }
+  let output = makeTitle(title);
+  let count = 1;
+  for (let entry of Object.values(tests.tests)) {
+    if (!entry.input) continue;
+    output += visualiseElement(entry.input, count);
+    count++;
+  }
+  output += '\n' + footer;
+  TestUtil.makeDir(dir);
+  fs.writeFileSync(path.join(dir, title + '.html'), output);
+}
+
+export function visualiseInputs(dir: string) {
+  let files = TestUtil.readDir(dir, TestPath.INPUT);
+  files.forEach(file => visualiseInput(path.relative(TestPath.INPUT, file)));
 }
 
 
@@ -75,9 +109,8 @@ export let LOCAL = false;
 let header = '';
 
 function makeHeader(dir: string = '') {
-  let basedir = '..' + path.relative(dir, TestPath.VISUALISE);
+  let basedir = path.join('..', path.relative(dir, TestPath.VISUALISE));
   let prefix = LOCAL ? `${basedir}/node_modules` : 'https://cdn.jsdelivr.net/npm';
-  console.log(prefix);
   header = '<!DOCTYPE html>\n<html>\n<head>\n';
   header += '<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n';
   header += `<link type="text/css" rel="stylesheet" href="${prefix}/sre-visualiser/styles/style.css"/>\n`
