@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sre-visualiser/styles/style.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/d3/dist/d3.min.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sre-visualiser/styles/tree.css"/>
+<script src="https://cdn.jsdelivr.net/npm/speech-rule-engine/lib/sre.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax-full/es5/tex-mml-chtml.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sre-visualiser/lib/visualise.js"></script><title>Clearspeak_trigometry</title>
+</head>
+
+<body>
+<h1>Clearspeak_trigometry</h1><div class="cell">
+  <span class="counter">1</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">2</span>
+  <span class="math">
+     <math><mrow><mi>cos</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">3</span>
+  <span class="math">
+     <math><mrow><mi>tan</mi><mi>θ</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">4</span>
+  <span class="math">
+     <math><mrow><mi>sec</mi><mi>θ</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">5</span>
+  <span class="math">
+     <math><mrow><mi>csc</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">6</span>
+  <span class="math">
+     <math><mrow><mi>cot</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">7</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mn>2</mn></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">8</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cos</mi></mrow><mn>3</mn></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">9</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tan</mi></mrow><mn>2</mn></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">10</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sec</mi></mrow><mn>3</mn></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">11</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>csc</mi></mrow><mn>2</mn></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">12</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cot</mi></mrow><mn>2</mn></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">13</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mn>2</mn><mi>π</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">14</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><mi>π</mi><mi>k</mi><mo>+</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">15</span>
+  <span class="math">
+     <math><mrow><mi>cos</mi><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">16</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">17</span>
+  <span class="math">
+     <math><mrow><mfrac><mrow><mi>sin</mi><mi>π</mi></mrow><mn>2</mn></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">18</span>
+  <span class="math">
+     <math><mrow><mfrac><mn>2</mn><mrow><mi>sin</mi><mi>π</mi></mrow></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">19</span>
+  <span class="math">
+     <math><mrow><mfrac><mrow><mi>sin</mi><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mn>3</mn></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">20</span>
+  <span class="math">
+     <math><mrow><mi>tan</mi><mrow><mo>(</mo><mrow><mo>−</mo><mi>π</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">21</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mi>π</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">22</span>
+  <span class="math">
+     <math><mrow><mi>cos</mi><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">23</span>
+  <span class="math">
+     <math><mrow><mi>cos</mi><mrow><mo>(</mo><mrow><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">24</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mn>2</mn></msup><mi>x</mi><mo>+</mo><msup><mrow><mi>cos</mi></mrow><mn>2</mn></msup><mi>x</mi><mo>=</mo><mn>1</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">25</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mn>4</mn></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">26</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cos</mi></mrow><mn>5</mn></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">27</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tan</mi></mrow><mi>n</mi></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">28</span>
+  <span class="math">
+     <math><mrow><mfrac><mrow><mi>sin</mi><mi>x</mi></mrow><mrow><mi>cos</mi><mi>x</mi></mrow></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">29</span>
+  <span class="math">
+     <math><mrow><mi>tan</mi><mn>35</mn><mo>°</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">30</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><mn>45</mn><mo>°</mo><mo>+</mo><mn>30</mn><mo>°</mo></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">31</span>
+  <span class="math">
+     <math><mrow><mi>tan</mi><mrow><mo>(</mo><mrow><mo>∠</mo><mi>D</mi><mi>E</mi><mi>F</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">32</span>
+  <span class="math">
+     <math><mrow><mi>tan</mi><mrow><mo>(</mo><mrow><mo>∠</mo><mi>D</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">33</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo stretchy="false">)</mo><mo>=</mo><mi>sin</mi><mi>x</mi><mi>cos</mi><mi>y</mi><mo>+</mo><mi>cos</mi><mi>x</mi><mi>sin</mi><mi>y</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">34</span>
+  <span class="math">
+     <math><mrow><mi>cos</mi><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo stretchy="false">)</mo><mo>=</mo><mi>cos</mi><mi>x</mi><mi>cos</mi><mi>y</mi><mo>−</mo><mi>sin</mi><mi>x</mi><mi>sin</mi><mi>y</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">35</span>
+  <span class="math">
+     <math><mrow><mi>tan</mi><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mi>tan</mi><mi>x</mi><mo>−</mo><mi>tan</mi><mi>y</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>tan</mi><mi>x</mi><mi>tan</mi><mi>y</mi></mrow></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">36</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mn>30</mn><mo>°</mo><mi>cos</mi><mn>15</mn><mo>°</mo><mo>+</mo><mi>cos</mi><mn>30</mn><mo>°</mo><mi>sin</mi><mn>15</mn><mo>°</mo></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">37</span>
+  <span class="math">
+     <math><mrow><mi>tan</mi><mrow><mo>(</mo><mrow><mfrac><mi>π</mi><mn>6</mn></mfrac><mo>+</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mn>3</mn></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mi>tan</mi><mfrac><mi>π</mi><mn>6</mn></mfrac><mo>−</mo><mi>tan</mi><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mn>3</mn></mfrac></mrow><mrow><mn>1</mn><mo>−</mo><mi>tan</mi><mfrac><mi>π</mi><mn>6</mn></mfrac><mi>tan</mi><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mn>3</mn></mfrac></mrow></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">38</span>
+  <span class="math">
+     <math><mrow><mi>tan</mi><mn>2</mn><mi>x</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>tan</mi><mi>x</mi></mrow><mrow><mn>1</mn><mo>−</mo><msup><mrow><mi>tan</mi></mrow><mn>2</mn></msup><mi>x</mi></mrow></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">39</span>
+  <span class="math">
+     <math><mrow><mi>cos</mi><mn>2</mn><mi>x</mi><mo>=</mo><mn>2</mn><msup><mrow><mi>cos</mi></mrow><mn>2</mn></msup><mi>x</mi><mo>−</mo><mn>1</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">40</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mfrac><mi>x</mi><mn>2</mn></mfrac><mo>=</mo><mo>±</mo><msqrt><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><mi>cos</mi><mi>x</mi></mrow><mn>2</mn></mfrac></mrow></msqrt></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">41</span>
+  <span class="math">
+     <math><mrow><mi>tan</mi><mfrac><mi>x</mi><mn>2</mn></mfrac><mo>=</mo><mo>±</mo><msqrt><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><mi>cos</mi><mi>x</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>cos</mi><mi>x</mi></mrow></mfrac></mrow></msqrt></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">42</span>
+  <span class="math">
+     <math><mrow><mi>cos</mi><mi>x</mi><mi>cos</mi><mi>y</mi><mo>=</mo><mn>2</mn><mi>cos</mi><mfrac><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac><mi>cos</mi><mfrac><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mn>2</mn></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">43</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mi>π</mi><mn>8</mn></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msqrt><mrow><mn>2</mn><mo>−</mo><msqrt><mn>2</mn></msqrt></mrow></msqrt></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">44</span>
+  <span class="math">
+     <math><mrow><mi>tan</mi><mfrac><mrow><mn>3</mn><mi>π</mi></mrow><mn>8</mn></mfrac><mo>=</mo><mfrac><mrow><msqrt><mrow><msqrt><mn>2</mn></msqrt><mo>+</mo><mn>1</mn></mrow></msqrt></mrow><mrow><msqrt><mrow><msqrt><mn>2</mn></msqrt><mo>−</mo><mn>1</mn></mrow></msqrt></mrow></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">45</span>
+  <span class="math">
+     <math><mrow><mi>tan</mi><mfrac><mi>π</mi><mrow><mn>12</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msqrt><mrow><mn>2</mn><mo>−</mo><msqrt><mn>3</mn></msqrt></mrow></msqrt></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">46</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">47</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">48</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">49</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cot</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">50</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sec</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">51</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>csc</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">52</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">53</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">54</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>17</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">55</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cot</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>32</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">56</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sec</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>100</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">57</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>csc</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>85</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">58</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">59</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">60</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mi>x</mi><mo>+</mo><mn>12</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">61</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cot</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">62</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>sin</mi><mn>0</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">63</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>csc</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>csc</mi><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">64</span>
+  <span class="math">
+     <math><mrow><mi>cos</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">65</span>
+  <span class="math">
+     <math><mrow><mi>cos</mi><mrow><mo>(</mo><mrow><mo>−</mo><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">66</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>cos</mi><mfrac><mi>π</mi><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">67</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">68</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">69</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><mo>−</mo><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">70</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><mo>−</mo><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">71</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sec</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>sec</mi><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">72</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">73</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">74</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">75</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cot</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">76</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sec</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">77</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>csc</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">78</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">79</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">80</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>17</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">81</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cot</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>32</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">82</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sec</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>100</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">83</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>csc</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>85</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">84</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">85</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">86</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mi>x</mi><mo>+</mo><mn>12</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">87</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cot</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">88</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>sin</mi><mn>0</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">89</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>csc</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>csc</mi><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">90</span>
+  <span class="math">
+     <math><mrow><mi>cos</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">91</span>
+  <span class="math">
+     <math><mrow><mi>cos</mi><mrow><mo>(</mo><mrow><mo>−</mo><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">92</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>cos</mi><mfrac><mi>π</mi><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">93</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">94</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">95</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><mo>−</mo><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">96</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><mo>−</mo><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">97</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sec</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>sec</mi><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">98</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">99</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">100</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">101</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cot</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">102</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sec</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">103</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>csc</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">104</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">105</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">106</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>17</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">107</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cot</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>32</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">108</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sec</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>100</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">109</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>csc</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>85</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">110</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">111</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">112</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mi>x</mi><mo>+</mo><mn>12</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">113</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cot</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">114</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>sin</mi><mn>0</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">115</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>csc</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>csc</mi><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">116</span>
+  <span class="math">
+     <math><mrow><mi>cos</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">117</span>
+  <span class="math">
+     <math><mrow><mi>cos</mi><mrow><mo>(</mo><mrow><mo>−</mo><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">118</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>cos</mi><mfrac><mi>π</mi><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">119</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">120</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">121</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><mo>−</mo><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">122</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><mo>−</mo><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">123</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sec</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>sec</mi><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">124</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">125</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">126</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">127</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cot</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">128</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sec</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">129</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>csc</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">130</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">131</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">132</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>17</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">133</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cot</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>32</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">134</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sec</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>100</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">135</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>csc</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>85</mn></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">136</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">137</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">138</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mi>x</mi><mo>+</mo><mn>12</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">139</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cot</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">140</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>sin</mi><mn>0</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">141</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>csc</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>csc</mi><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">142</span>
+  <span class="math">
+     <math><mrow><mi>cos</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">143</span>
+  <span class="math">
+     <math><mrow><mi>cos</mi><mrow><mo>(</mo><mrow><mo>−</mo><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">144</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>cos</mi><mfrac><mi>π</mi><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">145</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">146</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">147</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><mo>−</mo><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">148</span>
+  <span class="math">
+     <math><mrow><mi>sin</mi><mrow><mo>(</mo><mrow><mo>−</mo><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">149</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sec</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>sec</mi><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">150</span>
+  <span class="math">
+     <math><mrow><mi>arcsin</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">151</span>
+  <span class="math">
+     <math><mrow><mi>arccos</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">152</span>
+  <span class="math">
+     <math><mrow><mi>arctan</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">153</span>
+  <span class="math">
+     <math><mrow><mi>sinh</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">154</span>
+  <span class="math">
+     <math><mrow><mi>cosh</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">155</span>
+  <span class="math">
+     <math><mrow><mi>tanh</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">156</span>
+  <span class="math">
+     <math><mrow><mi>coth</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">157</span>
+  <span class="math">
+     <math><mrow><mi>sech</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">158</span>
+  <span class="math">
+     <math><mrow><mi>csch</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">159</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sinh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">160</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cosh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">161</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tanh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">162</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>coth</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">163</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sech</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">164</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>csch</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">165</span>
+  <span class="math">
+     <math><mrow><mi>sinh</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>sinh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">166</span>
+  <span class="math">
+     <math><mrow><mi>cosh</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>cosh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">167</span>
+  <span class="math">
+     <math><mrow><mi>tanh</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>tanh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">168</span>
+  <span class="math">
+     <math><mrow><mi>coth</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>coth</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">169</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sinh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>sinh</mi><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">170</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cosh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>cosh</mi><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">171</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tanh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>tanh</mi><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">172</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>coth</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>coth</mi><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">173</span>
+  <span class="math">
+     <math><mrow><mi>sinh</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">174</span>
+  <span class="math">
+     <math><mrow><mi>cosh</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">175</span>
+  <span class="math">
+     <math><mrow><mi>tanh</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">176</span>
+  <span class="math">
+     <math><mrow><mi>coth</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">177</span>
+  <span class="math">
+     <math><mrow><mi>sech</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">178</span>
+  <span class="math">
+     <math><mrow><mi>csch</mi><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">179</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sinh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">180</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cosh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">181</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tanh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">182</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>coth</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">183</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sech</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">184</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>csch</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">185</span>
+  <span class="math">
+     <math><mrow><mi>sinh</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>sinh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">186</span>
+  <span class="math">
+     <math><mrow><mi>cosh</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>cosh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">187</span>
+  <span class="math">
+     <math><mrow><mi>tanh</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>tanh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">188</span>
+  <span class="math">
+     <math><mrow><mi>coth</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>coth</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">189</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>sinh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>sinh</mi><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">190</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>cosh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>cosh</mi><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">191</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>tanh</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>tanh</mi><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+<div class="cell">
+  <span class="counter">192</span>
+  <span class="math">
+     <math><mrow><msup><mrow><mi>coth</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mi>coth</mi><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math>
+  </span>
+  <span class="tree"></span>
+</div>
+
+</body>
+<script type="text/javascript">
+streeVis.HOVER_INFO.font = true;
+streeVis.config.expanded = true;
+streeVis.renderCells();
+</script>
+</html>
