@@ -51,41 +51,59 @@ export function visualiseTests(dir: string = '',
     TestUtil.makeDir(file);
     fs.writeFileSync(file + '.html', output);
   }
-  makeIndex(dir, index);
+  makeIndexOld(dir, index);
 }
 
 /**
  *
  * @param {string} file
  */
-export function visualiseInput(file: string) {
+export function visualiseTest(file: string, base: string) {
+  file = path.relative(base, file);
   const dir = path.join(TestPath.VISUALISE, path.dirname(file));
   makeHeader(dir);
   const title = path.basename(file, path.extname(file));
-  const input = TestUtil.fileExists(file, TestPath.INPUT);
+  const input = TestUtil.fileExists(file, base);
   const tests = input ? TestUtil.loadJson(input) : {tests: {}};
-  if (tests.tests === 'ALL') {
+  if (!tests.tests || tests.tests === 'ALL') {
     return;
   }
-  let output = makeTitle(title);
+  let output = '';
   let count = 1;
   for (let entry of Object.values(tests.tests)) {
     if (!entry.input) continue;
     output += visualiseElement(entry.input, count);
     count++;
   }
-  output += '\n' + footer;
-  TestUtil.makeDir(dir);
-  fs.writeFileSync(path.join(dir, title + '.html'), output);
+  if (!output) {
+    return;
+  }
+  output = makeTitle(title) + output + '\n' + footer;
+  const outfile = path.join(dir, title + '.html');
+  TestUtil.makeDir(outfile);
+  fs.writeFileSync(outfile, output);
 }
 
-export function visualiseInputs(dir: string) {
-  let files = TestUtil.readDir(dir, TestPath.INPUT);
-  files.forEach(file => visualiseInput(path.relative(TestPath.INPUT, file)));
+export function visualiseInputs() {
+  let files = TestUtil.readDir('', TestPath.INPUT);
+  // files.forEach(file => visualiseInput(path.relative(TestPath.INPUT, file)));
+  files.forEach(file => visualiseTest(file, TestPath.INPUT));
+}
+
+export function visualiseExpected() {
+  let files = TestUtil.readDir('nemeth', TestPath.EXPECTED);
+  files.forEach(file => visualiseTest(file, TestPath.EXPECTED));
+  // files.forEach(file => visualiseInput(path.relative(TestPath.EXPECTED, file)));
+}
+
+export function visualise() {
+  visualiseInputs();
+  visualiseExpected();
+  makeIndex();
 }
 
 
-function makeIndex(dir: string, index: string[]) {
+function makeIndexOld(dir: string, index: string[]) {
   let output = '<html>\n<body>\n<h1>Semantic Tests</h1>\n<ul>\n';
   for (let file of index.sort()) {
     output += `<li><a href="${file}.html">${file}</a></li>\n`;
@@ -93,6 +111,30 @@ function makeIndex(dir: string, index: string[]) {
   output += '</ul>\n</body>\n</html>\n';
   let file = path.join(dir, 'index.html');
   fs.writeFileSync(file, output);
+}
+
+function makeIndex() {
+  let files = TestUtil.readDir('', TestPath.VISUALISE, /\.html$/);
+  let slotted = new Map();
+  for (let file of files) {
+    let base = path.relative(TestPath.VISUALISE, file);
+    if (base.match(/index\.html$/)) continue;
+    let dir = path.basename(path.dirname(file));
+    slotted.has(dir) ?
+      slotted.get(dir).push(base) :
+      slotted.set(dir, [base]);
+  }
+  let output = '<html>\n<body>\n';
+  for (let [dir, files] of slotted.entries()) {
+    output += `<h1>${TestUtil.capitalize(dir)}</h1>\n`;
+    output += '<ul>\n';
+    for (let file of files.sort()) {
+      output += `<li><a href="${file}">${path.basename(file, '.html')}</a></li>\n`;
+    }
+    output += '</ul>\n';
+  }
+  output += '</body>\n</html>\n';
+  fs.writeFileSync(path.join(TestPath.VISUALISE, 'index.html'), output);
 }
 
 function visualiseElement(expr: string, count: number) {
@@ -128,6 +170,7 @@ function makeTitle(title: string) {
 }
 
 const footer = '</body>\n<script type="text/javascript">\n' +
+  'streeVis.HOVER_INFO.font = true;\n' +
   'streeVis.config.expanded = true;\n' +
   'streeVis.renderCells();\n' +
   '</script>\n</html>';
