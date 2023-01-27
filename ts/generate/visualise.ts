@@ -22,43 +22,13 @@ import * as path from 'path';
 
 import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
 
-import { TestPath, TestUtil } from '../base/test_util';
-
-/**
- * Visulisases the content of the a JSON file with examples per filename.
- *
- * @param dir Output directory.
- * @param input Input file with examples.
-*/
-export function visualiseTests(dir: string = '',
-                               input: string = 'EnrichExamples.json') {
-  dir = path.join(TestPath.VISUALISE, dir);
-  makeHeader(dir);
-  let json = TestUtil.loadJson(TestPath.OUTPUT + input);
-  let index = [];
-  for (let [filename, entries] of Object.entries(json)) {
-    if (!filename) continue;
-    let file = path.basename(filename, path.extname(filename));
-    index.push(file);
-    let output = makeTitle(file);
-    let count = 1;
-    for (let entry of entries) {
-      output += visualiseElement(entry, count);
-      count++;
-    }
-    output += '\n' + footer;
-    file = path.join(dir, file);
-    TestUtil.makeDir(file);
-    fs.writeFileSync(file + '.html', output);
-  }
-  makeIndexOld(dir, index);
-}
+import { JsonTest, TestPath, TestUtil } from '../base/test_util';
 
 /**
  *
  * @param {string} file
  */
-export function visualiseTest(file: string, base: string) {
+function visualiseTest(file: string, base: string) {
   file = path.relative(base, file);
   const dir = path.join(TestPath.VISUALISE, path.dirname(file));
   makeHeader(dir);
@@ -70,47 +40,39 @@ export function visualiseTest(file: string, base: string) {
   }
   let output = '';
   let count = 1;
-  for (let entry of Object.values(tests.tests)) {
+  for (let [name, entry] of Object.entries(tests.tests)) {
     if (!entry.input) continue;
-    output += visualiseElement(entry.input, count);
+    output += visualiseElement(name, entry, count);
     count++;
   }
   if (!output) {
     return;
   }
-  output = makeTitle(title) + output + '\n' + footer;
+  output = makeTitle(title) +
+    '<div style="display:table">\n' +
+    output + '\n' +
+    '</div>\n' +
+    footer;
   const outfile = path.join(dir, title + '.html');
   TestUtil.makeDir(outfile);
   fs.writeFileSync(outfile, output);
 }
 
-export function visualiseInputs() {
+function visualiseInputs() {
   let files = TestUtil.readDir('', TestPath.INPUT);
-  // files.forEach(file => visualiseInput(path.relative(TestPath.INPUT, file)));
   files.forEach(file => visualiseTest(file, TestPath.INPUT));
 }
 
-export function visualiseExpected() {
+function visualiseExpected() {
   let files = TestUtil.readDir('nemeth', TestPath.EXPECTED);
   files.forEach(file => visualiseTest(file, TestPath.EXPECTED));
-  // files.forEach(file => visualiseInput(path.relative(TestPath.EXPECTED, file)));
 }
 
-export function visualise() {
+export function visualise(local = false) {
+  OPTIONS.LOCAL = local;
   visualiseInputs();
   visualiseExpected();
   makeIndex();
-}
-
-
-function makeIndexOld(dir: string, index: string[]) {
-  let output = '<html>\n<body>\n<h1>Semantic Tests</h1>\n<ul>\n';
-  for (let file of index.sort()) {
-    output += `<li><a href="${file}.html">${file}</a></li>\n`;
-  }
-  output += '</ul>\n</body>\n</html>\n';
-  let file = path.join(dir, 'index.html');
-  fs.writeFileSync(file, output);
 }
 
 function makeIndex() {
@@ -137,22 +99,32 @@ function makeIndex() {
   fs.writeFileSync(path.join(TestPath.VISUALISE, 'index.html'), output);
 }
 
-function visualiseElement(expr: string, count: number) {
-  let output = `<div class="cell">\n`;
-  output += `  <span class="counter">${count}</span>\n`;
-  output += `  <span class="math">\n     ${Enrich.prepareMmlString(expr)}\n  </span>\n`;
-  output += '  <span class="tree"></span>\n';
+function visualiseElement(name: string, entry: JsonTest, count: number) {
+  let output = `<div class="cell" style="display:table-row;padding:1em">\n`;
+  output += `  <div style="display:table-cell;padding-right:1ex" class="counter">${count}</div>\n`;
+  output += `  <div style="display:table-cell;padding:1ex" class="name">${name}</div>\n`;
+  output += `  <div style="display:table-cell;padding:1ex" class="math">\n     ${Enrich.prepareMmlString(entry.input)}\n  </div>\n`;
+  if (OPTIONS.VISUALISE) {
+    output += '  <div style="display:table-cell;padding:1ex" class="tree"></div>\n';
+  }
+  if (OPTIONS.TEX && entry.tex) {
+    output += `  <div style="display:table-cell;padding:1ex" class="tex">\\(${entry.tex}\\)</div>\n`;
+  }
   output += '</div>\n';
   return output;
 }
 
-export let LOCAL = false;
+export const OPTIONS = {
+  LOCAL: false,
+  TEX: true,
+  VISUALISE: true
+};
 
 let header = '';
 
 function makeHeader(dir: string = '') {
   let basedir = path.join('..', path.relative(dir, TestPath.VISUALISE));
-  let prefix = LOCAL ? `${basedir}/node_modules` : 'https://cdn.jsdelivr.net/npm';
+  let prefix = OPTIONS.LOCAL ? `${basedir}/node_modules` : 'https://cdn.jsdelivr.net/npm';
   header = '<!DOCTYPE html>\n<html>\n<head>\n';
   header += '<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n';
   header += `<link type="text/css" rel="stylesheet" href="${prefix}/sre-visualiser/styles/style.css"/>\n`

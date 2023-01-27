@@ -835,9 +835,20 @@ ct.copySemanticTest('common/direct_speech.json', true, 'semantic');
 will generate `direct_speech.json` files in the `semantic` directory with `base`
 file residing in `common`.
 
-##
+## Visualisation
+
+Test visualisation aim mainly at checking semantic interpretations. They can
+also be used for
 
 ``` javascript
 let vis = require('./js/generate/visualise.js');
 ```
 
+``` javascript
+vis.visualise();
+```
+
+``` javascript
+vis.OPTIONS;
+{ LOCAL: false, TEX: true, VISUALISE: true }
+```
