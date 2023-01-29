@@ -30,10 +30,14 @@ import { AbstractTransformer } from './transformers';
 export class Tex2Mml extends AbstractTransformer {
   /**
    * Display math input. Default is true.
-   *
-   * @type {boolean}
    */
-  public display = true;
+  public display: boolean = true;
+
+  /**
+   * Remove out layer of mml tags.
+   */
+  public short: boolean = true;
+
   private visitor = new SerializedMmlVisitor();
   private document: any = null;
 
@@ -61,8 +65,12 @@ export class Tex2Mml extends AbstractTransformer {
       display: this.display,
       end: STATE.CONVERT
     });
-    const str = this.visitor.visitTree(math);
-    return str.replace(/>\n *</g, '><');
+    let str = this.visitor.visitTree(math);
+    str = str.replace(/>\n *</g, '><');
+    if (this.short) {
+      str = str.replace(/^\s*<math[^>]*>/g, '').replace(/<\/math>$/g, '');
+    }
+    return str;
   }
 }
 

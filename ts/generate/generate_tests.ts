@@ -247,7 +247,7 @@ function generateFromLines(lines: string[],
   while (lines.length) {
     let name = lines.shift();
     if (!name) continue;
-    if (name.match(/^\s*_comment/i)) {
+    if (tu.TestUtil.isComment(name)) {
       tests[`_comment${commentCount++}_`] = lines.shift() as any;
       continue;
     }
@@ -339,11 +339,14 @@ export function fromLines(
  * @returns {tu.JsonTest[]} The updated json test.
  */
 export function transformTests(
-  json: tu.JsonTest[],
+  json: tu.JsonTests,
   transformers: Transformer[],
   force: boolean = false
-): tu.JsonTest[] {
-  json.forEach((x) => transformTest(x, transformers, force));
+): tu.JsonTests {
+  Object.entries(json).forEach(([key, value]) => {
+    if (!tu.TestUtil.isComment(key)) {
+      transformTest(value, transformers, force);
+    }});
   return json;
 }
 
@@ -361,7 +364,7 @@ export function transformTest(
 ): tu.JsonTest {
   for (const transformer of transformers) {
     const src = json[transformer.src];
-    if (src !== undefined || force) {
+    if (src === undefined || force) {
       try {
         json[transformer.dst] = transformer.via(src);
       } catch (_err) {
@@ -373,7 +376,7 @@ export function transformTest(
 }
 
 /**
- * Transforms test file in place.
+ * Transforms regular test file in place.
  *
  * @param file File name.
  * @param transformers Transformer list.
@@ -383,19 +386,40 @@ export function transformJsonTests(
   transformers: Transformer[],
   force: boolean = false) {
   const json = tu.TestUtil.loadJson(file);
-  transformTests(Object.values(json.tests), transformers, force);
+  if (json.tests === 'ALL') return;
+  transformTests(json.tests, transformers, force);
   tu.TestUtil.saveJson(file, json);
 }
 
 /**
- * Transforms test file in place.
+ * Transforms regular test file in place.
+ *
+ * @param file File name.
+ * @param transformers Transformer list.
+ */
+export function transformNamedTests(
+  file: string,
+  transformers: Transformer[],
+  named: string[],
+  force: boolean = false) {
+  const json = tu.TestUtil.loadJson(file);
+  if (json.tests === 'ALL') return;
+  named.forEach(x => {
+    let tst = (json.tests as tu.JsonTests)[x];
+    transformTest(tst, transformers, force);
+  })
+  tu.TestUtil.saveJson(file, json);
+}
+
+/**
+ * Transforms test file that contains a list of test entries in place.
  *
  * @param file File name.
  * @param transformers Transformer list.
  */
 export function transformTestsFile(file: string, transformers: Transformer[]) {
   const json = tu.TestUtil.loadJson(file) as tu.JsonTest[];
-  transformTests(json, transformers);
+  json.forEach(x => transformTest(x, transformers));
   tu.TestUtil.saveJson(file, json);
 }
 
@@ -519,7 +543,7 @@ export function splitExpected(expected: string, base: string) {
     const expected = entry.expected;
     delete entry.expected;
     baseJson.tests[key] = entry;
-    json.tests[key] = key.match(/_comment/) ? entry : { expected: expected };
+    json.tests[key] = tu.TestUtil.isComment(key) ? entry : { expected: expected };
   }
   json.base = base;
   tu.TestUtil.saveJson(base, baseJson);
@@ -863,7 +887,7 @@ abstract class AbstractGenerator {
    * Applies the transformers.
    */
   public transform() {
-    transformTests(Object.values(this.tests), this.transformers);
+    transformTests(this.tests, this.transformers);
   }
 
   /**

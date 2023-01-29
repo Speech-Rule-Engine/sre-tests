@@ -253,4 +253,13 @@ export namespace TestUtil {
     const regexp = new RegExp(`^${TestPath.EXPECTED}` + (dir ? `${dir}/` : ''));
     return files.map((x) => x.replace(regexp, ''));
   }
+
+  /**
+   * Checks if a key represents a comment.
+   * 
+   * @param key The key to test.
+   */
+  export function isComment(key: string) {
+    return key.match(/^\s*_comment/i);
+  }
 }

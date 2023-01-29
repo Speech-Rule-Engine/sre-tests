@@ -200,7 +200,7 @@ async function testOutput(locale: string, keys: string[], kind: SymbolType): Pro
     }
     const tests: tu.JsonTests = {};
     for (const key of keys) {
-      if (key.match(/^_comment/) ||
+      if (tu.TestUtil.isComment(key) ||
         (json.exclude && json.exclude?.indexOf(key) !== -1)) {
         continue;
       }
@@ -342,7 +342,7 @@ async function testExtras(
   const json: tu.JsonFile = initialJsonFile(locale, 'extras', kind);
   const tests: tu.JsonTests = {};
   for (const [key, constr] of Object.entries(extras)) {
-    if (key.match(/^_comment/)) {
+    if (tu.TestUtil.isComment(key)) {
       continue;
     }
     for (const [dom, styles] of Object.entries(constr)) {
