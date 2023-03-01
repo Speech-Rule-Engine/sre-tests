@@ -44,16 +44,22 @@
       "expected": "⠼⠢⠨⠴⠠⠀⠼⠦⠨⠆⠠⠀⠼⠂⠂⠨⠲⠠⠀⠼⠂⠲⠨⠖⠠⠀⠄⠄⠄"
     },
     "Long Dash": {
-      "tex": "____",
+      "tex": "—",
       "brf": "----",
-      "input": "<mtext>&#x2014;</mtext>",
+      "input": "<mrow data-mjx-texclass=\"ORD\"><mo>&#x2014;</mo></mrow>",
       "expected": "⠤⠤⠤⠤"
     },
-    "Example 2.10-1": {
+    "Example 2.10-1-orig": {
       "test": false,
-      "tex": "79 \\times 542 = ______",
+      "tex": "79 \\times 542 = \\_\\_\\_\\_\\_\\_",
       "brf": "#79@*542 .K ----",
-      "input": "<merror data-mjx-error=\"Missing open brace for subscript\" title=\"Missing open brace for subscript\"><mtext>79 \\times 542 = ______</mtext></merror>",
+      "input": "<mn>79</mn><mo>&#xD7;</mo><mn>542</mn><mo>=</mo><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi>",
+      "expected": "⠼⠶⠔⠈⠡⠢⠲⠆⠀⠨⠅⠀⠤⠤⠤⠤"
+    },
+    "Example 2.10-1": {
+      "tex": "79 \\times 542 = \\_\\_\\_\\_",
+      "brf": "#79@*542 .K ----",
+      "input": "<mn>79</mn><mo>&#xD7;</mo><mn>542</mn><mo>=</mo><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi>",
       "expected": "⠼⠶⠔⠈⠡⠢⠲⠆⠀⠨⠅⠀⠤⠤⠤⠤"
     },
     "Example 2.11-1a": {
@@ -106,7 +112,7 @@
       "expected": "⠼⠆⠲⠨⠌⠒⠀⠿⠀⠼⠆⠲"
     },
     "Example 2.11-4b": {
-      "tex": "24 ÷ 3 ? 24 ÷ 4",
+      "tex": "3 ? 24 ÷ 4",
       "brf": "#3 = #24./4",
       "input": "<mn>3</mn><mo>?</mo><mn>24</mn><mi>&#xF7;</mi><mn>4</mn>",
       "expected": "⠼⠒⠀⠿⠀⠼⠆⠲⠨⠌⠲"
@@ -117,34 +123,34 @@
       "input": "<mn>678</mn><mi>&#xD7;</mi><mn>27</mn><mo>=</mo><munder><mo>?</mo><mo accent=\"true\">&#x2015;</mo></munder><munder><mo>?</mo><mo accent=\"true\">&#x2015;</mo></munder><munder><mo>?</mo><mo accent=\"true\">&#x2015;</mo></munder><munder><mo>?</mo><mo accent=\"true\">&#x2015;</mo></munder><munder><mo>?</mo><mo accent=\"true\">&#x2015;</mo></munder>",
       "expected": "⠼⠖⠶⠦⠈⠡⠆⠶⠀⠨⠅⠀⠿⠿⠿⠿⠿"
     },
-    "Example 2.13-1 ____ + 5,  ____ − 3, 2 × ____, 50 ÷ ____": {
-      "tex": "---- +5, ---- -#3, #2@* ----, #50./ ----",
-      "brf": "",
-      "input": "<merror data-mjx-error=\"You can't use 'macro parameter character #' in math mode\" title=\"You can't use 'macro parameter character #' in math mode\"><mtext>---- +5, ---- -#3, #2@* ----, #50./ ----</mtext></merror>",
-      "expected": ""
+    "Example 2.13-1": {
+      "tex": "\\_\\_\\_\\_ +5, \\_\\_\\_\\_ -3, 2\\times \\_\\_\\_\\_, 50\\div \\_\\_\\_\\_",
+      "brf": "---- +5, ---- -#3, #2@* ----, #50./ ----",
+      "input": "<mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mo>+</mo><mn>5</mn><mo>,</mo><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mo>&#x2212;</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo>&#xD7;</mo><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mo>,</mo><mn>50</mn><mo>&#xF7;</mo><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi>",
+      "expected": "⠤⠤⠤⠤⠀⠬⠢⠠⠀⠤⠤⠤⠤⠀⠤⠼⠒⠠⠀⠼⠆⠈⠡⠀⠤⠤⠤⠤⠠⠀⠼⠢⠴⠨⠌⠀⠤⠤⠤⠤"
     },
     "Example 2.13-2": {
-      "tex": "14.9 - 12.3 = ____.6",
+      "tex": "14.9 - 12.3 = \\_\\_\\_\\_.6",
       "brf": "#14.9-12.3 .K ----.6",
-      "input": "<mn>14.9</mn><mo>&#x2212;</mo><mn>12.3</mn><mo>=</mo><mo>&#x2212;</mo><mo>&#x2212;</mo><mo>&#x2212;</mo><mo>&#x2212;</mo><mn>.6</mn>",
+      "input": "<mn>14.9</mn><mo>&#x2212;</mo><mn>12.3</mn><mo>=</mo><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mn>.6</mn>",
       "expected": "⠼⠂⠲⠨⠔⠤⠂⠆⠨⠒⠀⠨⠅⠀⠤⠤⠤⠤⠨⠖"
     },
     "Example 2.13-3": {
-      "tex": "$3.52 − $7.14 = $----",
-      "brf": "@S3.52-@S7.14 .K @S----",
-      "input": "<mrow data-mjx-texclass=\"ORD\"><mo>$</mo></mrow><mn>3.52</mn><mo>&#x2212;</mo><mrow data-mjx-texclass=\"ORD\"><mo>$</mo></mrow><mn>7.14</mn><mo>=</mo><mrow data-mjx-texclass=\"ORD\"><mo>$</mo></mrow><mo>&#x2212;</mo><mo>&#x2212;</mo><mo>&#x2212;</mo><mo>&#x2212;</mo>",
+      "tex": "$3.52 − $7.14 = $\\_\\_\\_\\_",
+      "brf": "@S3.52-@S7.14 .K @S\\_\\_\\_\\_",
+      "input": "<mrow data-mjx-texclass=\"ORD\"><mo>$</mo></mrow><mn>3.52</mn><mo>&#x2212;</mo><mrow data-mjx-texclass=\"ORD\"><mo>$</mo></mrow><mn>7.14</mn><mo>=</mo><mrow data-mjx-texclass=\"ORD\"><mo>$</mo></mrow><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi>",
       "expected": "⠈⠎⠒⠨⠢⠆⠤⠈⠎⠶⠨⠂⠲⠀⠨⠅⠀⠈⠎⠤⠤⠤⠤"
     },
     "Example 2.13-4": {
       "tex": "92\\% × .04 = \\ldots\\%",
       "brf": "#92@0@*.04 .K '''@0",
-      "input": "<mn>92</mn><mi>%</mi><mi>&#xD7;</mi><mn>.04</mn><mo>=</mo><mo>&#x2026;</mo><mi>%</mi>",
+      "input": "<mn>92</mn><mi mathvariant=\"normal\">%</mi><mi>&#xD7;</mi><mn>.04</mn><mo>=</mo><mo>&#x2026;</mo><mi mathvariant=\"normal\">%</mi>",
       "expected": "⠼⠔⠆⠈⠴⠈⠡⠨⠴⠲⠀⠨⠅⠀⠄⠄⠄⠈⠴"
     },
     "Example 2.13-5": {
-      "tex": "24'' = —'",
+      "tex": "24'' = \\_\\_\\_\\_'",
       "brf": "#24'' .K ----'",
-      "input": "<msup><mn>24</mn><mo>&#x2033;</mo></msup><mo>=</mo><msup><mrow data-mjx-texclass=\"ORD\"><mo>&#x2014;</mo></mrow><mo>&#x2032;</mo></msup></mstyle>",
+      "input": "<msup><mn>24</mn><mo data-mjx-alternate=\"1\">&#x2033;</mo></msup><mo>=</mo><msup><mrow data-mjx-texclass=\"ORD\"><mo>&#x2014;</mo></mrow><mo data-mjx-alternate=\"1\">&#x2032;</mo></msup>",
       "expected": "⠼⠆⠲⠄⠄⠀⠨⠅⠀⠤⠤⠤⠤⠄"
     }
   }

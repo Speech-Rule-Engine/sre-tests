@@ -8,9 +8,9 @@
   "active": "Book2019",
   "tests": {
     "Example 5.13-4": {
-      "tex": "(𝑥 + 𝑦) d𝑥 d𝑦 = ____",
+      "tex": "(𝑥 + 𝑦) d𝑥 d𝑦 = \\_\\_\\_\\_",
       "brf": "(X+Y)DXDY .K ----",
-      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><merror data-mjx-error=\"Missing open brace for subscript\" title=\"Missing open brace for subscript\"><mtext>(&#x1D465; + &#x1D466;) d&#x1D465; d&#x1D466; = ____</mtext></merror></math>",
+      "input": "<mo stretchy=\"false\">(</mo><mi>&#x1D465;</mi><mo>+</mo><mi>&#x1D466;</mi><mo stretchy=\"false\">)</mo><mi>d</mi><mi>&#x1D465;</mi><mi>d</mi><mi>&#x1D466;</mi><mo>=</mo><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi><mi mathvariant=\"normal\">_</mi>",
       "expected": "⠷⠭⠬⠽⠾⠙⠭⠙⠽⠀⠨⠅⠀⠤⠤⠤⠤"
     },
     "Example 5.14-1": {
