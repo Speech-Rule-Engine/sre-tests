@@ -575,17 +575,21 @@ transformers are found in `braille_transformer.ts`.
 
 For convenience there exist three transformer methods, each with three parameters:
 
-| `gt` method          | First input  parameter |
-|----------------------|------------------------|
-| `transformTest`      | A single test          |
-| `transformTests`     | A list of tests        |
-| `transformJsonTests` | A filename             |
+| `gt` method           | First input  parameter | Comment                                      |
+|-----------------------|------------------------|----------------------------------------------|
+| `transformTest`       | A single test          | Transforms a single test                     |
+| `transformTests`      | A list of tests        | Transforms a list of tests                   |
+| `transformJsonTests`  | A filename             | Transforms a regular test file               |
+| `transformTestsFile`  | A filename             | Transforms a file containing a list of tests |
+| `transformNamedTests` | A filename             | Transforms named tests in a test file        |
 
 
 All methods methods take a list of transformers as second argument.
 
+`transformNamedTests` in addition takes a list of test names as third argument.
+
 By default none of the methods will overwrite an existing entry in a test
-structure.  Therefore each transformer method has an optional third `force`
+structure.  Therefore each transformer method has an optional last `force`
 argument, that enforces overwrite when set to true.
 
 

@@ -336,6 +336,7 @@ export function fromLines(
  *
  * @param {tu.JsonTest[]} json The JSON tests.
  * @param {Transformer[]} transformers List of transformers.
+ * @param force Optionally forcing overwrite of test elements.
  * @returns {tu.JsonTest[]} The updated json test.
  */
 export function transformTests(
@@ -355,6 +356,7 @@ export function transformTests(
  *
  * @param {tu.JsonTest} json The JSON test.
  * @param {Transformer[]} transformers List of transformers.
+ * @param force Optionally forcing overwrite of test elements.
  * @returns {tu.JsonTest} The updated json test.
  */
 export function transformTest(
@@ -380,6 +382,7 @@ export function transformTest(
  *
  * @param file File name.
  * @param transformers Transformer list.
+ * @param force Optionally forcing overwrite of test elements.
  */
 export function transformJsonTests(
   file: string,
@@ -392,10 +395,12 @@ export function transformJsonTests(
 }
 
 /**
- * Transforms regular test file in place.
+ * Transforms specified tests in a regular test file in place.
  *
  * @param file File name.
  * @param transformers Transformer list.
+ * @param named A list of test names.
+ * @param force Optionally forcing overwrite of test elements.
  */
 export function transformNamedTests(
   file: string,
@@ -406,7 +411,9 @@ export function transformNamedTests(
   if (json.tests === 'ALL') return;
   named.forEach(x => {
     let tst = (json.tests as tu.JsonTests)[x];
-    transformTest(tst, transformers, force);
+    if (tst) {
+      transformTest(tst, transformers, force);
+    }
   })
   tu.TestUtil.saveJson(file, json);
 }
@@ -416,10 +423,14 @@ export function transformNamedTests(
  *
  * @param file File name.
  * @param transformers Transformer list.
+ * @param force Optionally forcing overwrite of test elements.
  */
-export function transformTestsFile(file: string, transformers: Transformer[]) {
+export function transformTestsFile(
+  file: string,
+  transformers: Transformer[],
+  force: boolean = false) {
   const json = tu.TestUtil.loadJson(file) as tu.JsonTest[];
-  json.forEach(x => transformTest(x, transformers));
+  json.forEach(x => transformTest(x, transformers, force));
   tu.TestUtil.saveJson(file, json);
 }
 
