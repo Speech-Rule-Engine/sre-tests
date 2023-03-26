@@ -100,7 +100,8 @@ export class RebuildStreeTest extends SemanticTest {
    */
   public executeTest(expr: string) {
     const mathMl = Enrich.prepareMmlString(expr);
-    const mml = DomUtil.parseInput(mathMl);
+    // Unclear why this cloning is necessary.
+    const mml = DomUtil.cloneNode(DomUtil.parseInput(mathMl));
     const stree = new SemanticTree(mml);
     const emml = enrich(mml, stree);
     const reass = new RebuildStree(emml).getTree();

@@ -340,7 +340,11 @@ nature:
     └── uniqueAppliedRules  List of all unique rules applied during tests for test suite.
 
 
-# Generators
+# Auxiliary Modules
+
+A number of useful modules are provided in the `generate` directory, that ease
+many tedious tasks surrounding the maintenance of the test suites, such test
+generation, copying files, adding fields, correcting and updating tests, etc.
 
 ## Working in Node
 
@@ -350,7 +354,8 @@ REPL. There are two ways to ensure that all the necessary files in SRE can be fo
 1. Run node in a shell on where the `SRE_JSON_PATH` variable is set. Or start an
    Emacs that will run the REPL in such a shell.
 
-2. Set the `SRE_JSON_PATH` environment variable explicitly in node. For example:
+2. Set the `SRE_JSON_PATH` environment variable explicitly in node before
+   loading a module.. For example:
 
     ``` javascript
     process.env['SRE_JSON_PATH'] = '../speech-rule-engine/lib/mathmaps';
@@ -361,12 +366,46 @@ REPL. There are two ways to ensure that all the necessary files in SRE can be fo
 ## Generating Tests
 
 Simplest way is to generate tests from experimental data using input
-transformers.  The standard use case is: You have a set of expressions from
-experiments or investigating an issue. These should now be transformed into
-tests. Simply combine them into a single json file like where `foo` and `bar`
-represent names for the issue or type of experiment.
+transformers.  The standard use case is this: You have a set of expressions from
+experiments, investigating an issue or conversion from sources or
+literature. These should now be transformed into tests. The basic approach then
+comprises three steps:
 
-```javascript
+* Generate a test entries from the initial sources. We call these the _proto
+  tests_. They can either be written either to a new or to an existing file.
+* Transform the _proto tests_ to generate all the required fields for the tests.
+* Post-process tests for special cases.
+* Compute expected output by running the necessary methods from the `fill_tests`
+  module.
+
+
+### Generating from Diverse Sources
+
+The following are methods to easily import tests that are either generated
+systematically or sporadically during experiments. Methods are loaded with
+
+``` javascript
+let gt = require('./js/generate/generate_tests.js');
+```
+
+There are currently four methods: `fromJson`, `fromList`, `fromIssues`,
+`fromLines`. While they generally have different input parameters, all have an
+`output` parameter, which corresponds to the filename of the basic test file to
+be created. This file will only contain the basic JSON structure with the
+`tests` field. All other parts have to be added manually.
+
+However, if the output file already exists, or exists as file in the test
+input directory, tests will be appended to the existing content. Note that
+append can overwrite existing tests of the same name in the original test file!
+
+We explain how the methods work, by splitting them by use cases.
+
+#### Use Case: Lists of input elements of a particular type
+
+Simply combine them into a single json file like below, where `foo` and `bar`
+represent names for the type of expression or input.
+
+``` json
 {
   "foo": [d0, d1, d2, ....],
   "bar": [e0, e1, e2, ....],
@@ -378,12 +417,12 @@ These case can be loaded and transformed into a regular `JsonTests` structure
 using method:
 
 ``` javascript
-gt.generateTestJson(INPUT, OUTPUT, option FIELD);
+gt.fromJson(INPUT, OUTPUT, option FIELD);
 ```
 
-This transforms the `INPUT` file sets into `OUTPUT` of the form
+This transforms the `INPUT` file sets into `OUTPUT` containing the following tests:
 
-```javascript
+``` json
 {
   "foo_0": {"field": d0},
   "foo_1": {"field": d1},
@@ -400,7 +439,131 @@ The optional `FIELD` parameter can be used to specify the target field in the
 single tests.  E.g. for a set of tex expressions you might want to choose `tex`
 as field so a transformer can be applied directly. `FIELD` defaults to `input`.
 
-To further transform the tests, apply one or more transformers to the file:
+#### Use Case: List of partial test structures
+
+``` javascript
+gt.fromJson(INPUT, OUTPUT, option NAME);
+```
+
+Generates enumerated tests from a list of test data entries, preserving
+comments. The input JSON is of the form
+
+``` json
+[
+  {"comment": "foo"},
+  {"field": d0},
+  {"field": d1},
+  {"field": d2},
+  {"comment": "bar"},
+  {"field": e0},
+  {"field": e1},
+  {"field": e2},
+  ...
+]
+```
+
+The method takes the name of the tests as optional parameters. It defaults to
+the basename of input file. The method will create output containing the
+following tests:
+
+```json
+{
+  "_comment_0": "foo",
+  "test_0": {"field": d0},
+  "test_1": {"field": d1},
+  "test_2": {"field": d2},
+  "_comment_1": "bar",
+  "test_3": {"field": e0},
+  "test_4": {"field": e1},
+  "test_5": {"field": e2},
+  ...
+}
+```
+
+#### Use Case: Collection of input files written while investigating an issue
+
+Often, when investigating an issue, one creates a number of separate input
+files, each containing a single input expression. Commonly these files are
+located in a common directory, e.g., separate `.xml` files, but all with a
+similar base name. These issue files can be reused and turned into a single test
+file or added to an existing test file.
+
+``` javascript
+gt.fromIssues(dir, file, output);
+```
+
+Attaches tests from issue files in `dir` with the basename `file` to the
+`target` tests. For example, the following code will attach all expression for
+`issue_616` to the `fences` tests:
+
+``` javascript
+gt.fromIssues(ISSUE_DIR, 'issue_616', 'semantic/fences.json');
+```
+
+The content of the file `issue_616_0.xml` will be added as input with test name
+`issue_616_0` in the fences tests. Note, that currently expected values for
+these tests still need to be added manually or with a `fill_tests` method below.
+
+#### Use Case: Simple ASCII file with example content
+
+Often it is easier to collate examples without setting them into some JSON
+format, e.g., by grepping out of a LaTeX style file manual, or copying from a
+rule book. We can then generate tests for single lines in an ASCII file. Thereby
+we assume that lines will be of the form:
+
+```
+name0
+prop1
+prop2
+...
+```
+
+That is, the first line is taken as name of the test, the second line the
+value of property 1, third line value of property 2, and so on, according to
+the provided property list to the method:
+
+
+``` javascript
+gt.fromLines(INPUT, OUTPUT, PROPERTIES);
+```
+
+Thereby `PROPERTIES` is an ordered list of properties to be parsed, which will
+make up the test structure. For example,
+
+``` javascript
+gt.fromLines('./input.txt', './output.json', ['tex', 'brf']);
+```
+
+where `input.txt` contains the following lines
+
+``` text
+Example 1.4-1
+5\quad 10\quad 15\quad 20
+#5 #10 #15 #20
+```
+
+will yield a test structure of the form:
+
+``` json
+{
+...
+  "Example 1.4-1": {
+    "tex": "5\\quad 10\\quad 15\\quad 20",
+    "brf": "#5 #10 #15 #20"
+  },
+...
+}
+```
+
+Note, that empty lines will be considered as test separators. Thus a single
+test will be parsed until an empty line is encountered or until the property
+list is exhausted.
+
+
+## Transforming Proto Tests in Files
+
+To further transform initial test content, apply one or more transformers to the
+proto test files. For example:
 
 ``` javascript
 gt.transformJsonTests(INPUT, gt.getTransformers(['tex']));
@@ -410,25 +573,25 @@ Applies a TeX transformer to all `tex` fields in `INPUT` resulting in an `input`
 field with a mml expression, writing the output to the same file. Other useful
 transformers are found in `braille_transformer.ts`.
 
+For convenience there exist three transformer methods, each with three parameters:
 
-To reuse tests that are actually in issue files, e.g., separate `.xml` files,
-use the following method:
+| `gt` method           | First input  parameter | Comment                                      |
+|-----------------------|------------------------|----------------------------------------------|
+| `transformTest`       | A single test          | Transforms a single test                     |
+| `transformTests`      | A list of tests        | Transforms a list of tests                   |
+| `transformJsonTests`  | A filename             | Transforms a regular test file               |
+| `transformTestsFile`  | A filename             | Transforms a file containing a list of tests |
+| `transformNamedTests` | A filename             | Transforms named tests in a test file        |
 
-``` javascript
-gt.fromIssueFiles(dir, file, target);
-```
 
-Attaches tests from issue files in `dir` with the basename `file` to the
-`target` tests. For example, the following code will attach all expression for
-`issue_616` to the `fences` tests:
+All methods methods take a list of transformers as second argument.
 
-``` javascript
-gt.loadIssueFile(ISSUE_DIR, 'issue_616', 'semantic/fences.json');
-```
+`transformNamedTests` in addition takes a list of test names as third argument.
 
-The content of the file `issue_616_0.xml` will be added as input with test name
-`issue_616_0` in the fences tests. Note, that currently expected values for
-these tests still need to be added manually or with a `fill_tests` method below.
+By default none of the methods will overwrite an existing entry in a test
+structure.  Therefore each transformer method has an optional last `force`
+argument, that enforces overwrite when set to true.
+
 
 ## Filling Tests and Expected Values
 
@@ -442,6 +605,8 @@ Each of the following commands takes an path to a file with expected values and
 optionally a flag indicating if it is a dry run or if the changes are to be made
 destructively to the input file.
 
+| `ft` method     | Action                                               |
+|-----------------|------------------------------------------------------|
 | `addMissing`    | Adds expected values for all missing tests.          |
 | `addActual`     | Overwrites all expected values with the actual ones. |
 | `addFailed`     | Overwrites expected values for all failed tests.     |
@@ -456,7 +621,7 @@ restricted by providing a regular expression for filtering filenames. A second
 parameter offers a dry run flag, which is `true` by default. If set to `false`
 it will correct all the incorrect tests.
 
-## Splitting Tests
+## Splitting Testfiles
 
 Although test files that provide complete tests (i.e., containing both `input`
 and `expected` elements plus all necessary parameters) can be run, it is often
@@ -560,7 +725,7 @@ These methods compute and return a JSON test structure. They take a `locale`
 string and a `symbol type` string as input.
 
 | `cto` method     | Usage                                                             |
-| -----            | ----                                                              |
+|------------------|-------------------------------------------------------------------|
 | `testFromBase`   | Compute the tests from the base file for this symbol type.        |
 | `testFromLocale` | Compute the tests from the symbol files in the locale's mathmaps. |
 | `testFromExtras` | Compute tests for all extra definitions (i.e., none default       |
@@ -574,7 +739,7 @@ string and a `symbol type` string as input. Optionally they take a target
 directory for the output, which defaults to `/tmp`.
 
 | `cto` method           | Usage                                |
-| -----                  | ----                                 |
+|------------------------|--------------------------------------|
 | `testOutputFromBase`   | As `testFromBase`.                   |
 | `testOutputFromLocale` | As `testFromLocale`.                 |
 | `testOutputFromBoth`   | Calls both previous methods in turn. |
@@ -673,3 +838,21 @@ ct.copySemanticTest('common/direct_speech.json', true, 'semantic');
 
 will generate `direct_speech.json` files in the `semantic` directory with `base`
 file residing in `common`.
+
+## Visualisation
+
+Test visualisation aim mainly at checking semantic interpretations. They can
+also be used for
+
+``` javascript
+let vis = require('./js/generate/visualise.js');
+```
+
+``` javascript
+vis.visualise();
+```
+
+``` javascript
+vis.OPTIONS;
+{ LOCAL: false, TEX: true, VISUALISE: true }
+```

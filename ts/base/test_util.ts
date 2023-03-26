@@ -25,7 +25,8 @@ export const TestPath: { [key: string]: string } = {
   INPUT: TestDir + 'input/',
   OUTPUT: TestDir + 'output/',
   EXPECTED: TestDir + 'expected/',
-  ANALYSIS: TestDir + 'analysis/'
+  ANALYSIS: TestDir + 'analysis/',
+  VISUALISE: TestDir + 'visualise/'
 };
 
 /**
@@ -209,18 +210,18 @@ export namespace TestUtil {
    * @param dir The top pathname.
    * @param result Accumulator for pathnames.
    */
-  function readDir_(dir: string, result: string[]) {
+  function readDir_(dir: string, result: string[], ext: RegExp) {
     if (typeof dir === 'undefined') {
       return;
     }
     if (fs.existsSync(dir) && fs.lstatSync(dir).isDirectory()) {
       const files = fs.readdirSync(dir);
       files.forEach((x: string) =>
-        readDir_(dir ? path.join(dir, x) : x, result)
+        readDir_(dir ? path.join(dir, x) : x, result, ext)
       );
       return;
     }
-    if (dir.match(/\.json$/)) {
+    if (dir.match(ext)) {
       result.push(dir);
     }
   }
@@ -231,25 +232,34 @@ export namespace TestUtil {
    * @param dir The top pathname.
    * @returns List of all filenames.
    */
-  export function readDir(dir: string): string[] {
+  export function readDir(
+    dir: string, base: string = TestPath.EXPECTED, ext: RegExp = /\.json$/): string[] {
     const result: string[] = [];
-    let file = TestPath.EXPECTED + dir;
+    let file =  base + dir;
     if (!fs.existsSync(file) || !fs.lstatSync(file).isDirectory()) {
       file = dir;
     }
-    readDir_(file, result);
+    readDir_(file, result, ext);
     return result;
   }
 
   /**
    * Cleans a list of filenames by removing expected path.
    *
-   * @param {string[]} files The files.
-   * @param {string = ''} dir The optional additional path.
-   * @returns {string[]} The cleaned up list.
+   * @param files The files.
+   * @returns The cleaned up list.
    */
   export function cleanFiles(files: string[], dir = ''): string[] {
     const regexp = new RegExp(`^${TestPath.EXPECTED}` + (dir ? `${dir}/` : ''));
     return files.map((x) => x.replace(regexp, ''));
+  }
+
+  /**
+   * Checks if a key represents a comment.
+   * 
+   * @param key The key to test.
+   */
+  export function isComment(key: string) {
+    return key.match(/^\s*_comment/i);
   }
 }

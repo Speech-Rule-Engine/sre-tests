@@ -29,8 +29,9 @@ import { SemanticTree } from '../../speech-rule-engine/js/semantic_tree/semantic
 import * as tu from '../base/test_util';
 import * as TestFactory from '../classes/test_factory';
 import { addActual } from './fill_tests';
-import { Tex2Mml } from './tex_transformer';
+import { Tex2Mml, TexMml2Mml } from './tex_transformer';
 import { AbstractTransformer, Transformer } from './transformers';
+import { Both2Unicode } from './braille_transformer';
 
 /* ********************************************************* */
 /*
@@ -41,6 +42,86 @@ import { AbstractTransformer, Transformer } from './transformers';
  *           with consecutively enumerated base names.
  */
 /* ******************************************************** */
+
+/**
+ * Generates named JSON test entries from a list of data elements.
+ *
+ * @param name The base name of the test.
+ * @param list The list of test structures.
+ * @param tests Optionally the tests to append to.
+ * @returns The completed tests.
+ */
+function generateFromList(
+  name: string,
+  list: tu.JsonTest[],
+  tests: tu.JsonTests = {}
+): tu.JsonTests {
+  let commentCount = 0;
+  let testCount = 0;
+  let digits = Math.ceil(Math.log(list.length)/Math.log(10))
+  const leading = Array(digits + 1).join('0');
+  digits = -1 * digits;
+  for (let entry of list) {
+    if (entry.comment) {
+      tests[`_comment${commentCount++}_`] = entry.comment;
+      continue;
+    }
+    tests[`${name}_${(leading + testCount++).slice(digits)}`] = entry;
+  }
+  return tests;
+}
+
+/**
+ * Generates JSON test entries from a name lists of input values.
+ *
+ * @param json JSON structure with named lists.
+ * @param field Field for the elements in the single test structures.
+ * @param tests Optionally the tests to append to.
+ * @returns The completed tests.
+ */
+function generateFromJson(
+  json: tu.JsonTest,
+  field: string,
+  tests: tu.JsonTests = {}
+): tu.JsonTests {
+  const makeMap = (expr: string) => {
+    const map: { [name: string]: string } = {};
+    map[field] = expr;
+    return map;
+  };
+  for (const [name, expressions] of Object.entries(json)) {
+    if (!expressions.length) {
+      continue;
+    }
+    if (expressions.length === 1) {
+      tests[name] = makeMap(expressions[0]);
+      continue;
+    }
+    generateFromList(name, expressions.map(makeMap), tests);
+  }
+  return tests;
+}
+
+/**
+ * Generates tests with the given method and writes the to the given file. If
+ * the file exists at the absolute path or in the input tests directoy, tests
+ * are appended to that test file.
+ *
+ * Note that append can overwrite existing tests of the same name in the
+ * original test file!
+ *
+ * @param file An output filename.
+ * @param method The generating method.
+ */
+function appendTests(file: string, method: (tests: tu.JsonTests) => tu.JsonTests) {
+  const filename = tu.TestUtil.fileExists(file, tu.TestPath.INPUT);
+  const tests = filename ? tu.TestUtil.loadJson(filename) : {tests: {}};
+  if (tests.tests === 'ALL') {
+    return;
+  }
+  tests.tests = method(tests.tests);
+  tu.TestUtil.saveJson(filename ? filename : file, tests);
+}
 
 /**
  * Generates JSON test entries from lists of data elements. The input JSON is of
@@ -69,92 +150,204 @@ import { AbstractTransformer, Transformer } from './transformers';
  * }
  * ```
  *
- * @param {tu.JsonTest} json The initial JSON input.
- * @param {string=} field The optional field name, defaults to input.
- * @returns {tu.JsonTests} The newly transformed JSON.
- */
-export function transformInput(
-  json: tu.JsonTest,
-  field: string = 'input'
-): tu.JsonTests {
-  const result: { [name: string]: any } = {};
-  for (const [name, expressions] of Object.entries(json)) {
-    let count = 0;
-    if (!expressions.length) {
-      continue;
-    }
-    if (expressions.length === 1) {
-      const map: { [name: string]: string } = {};
-      map[field] = expressions[0];
-      result[name] = map;
-      continue;
-    }
-    for (const expr of expressions) {
-      const map: { [name: string]: string } = {};
-      map[field] = expr;
-      result[`${name}_${count++}`] = map;
-    }
-  }
-  return result;
-}
-
-/**
- * Generates test from a json file.
- *
- * @param input Input filename.
- * @param output Output filename.
+ * @param input Input file with data entries.
+ * @param output Output tests file.
  * @param field The optional field name, defaults to input.
  */
-export function generateTestJson(
+export function fromJson(
   input: string,
   output: string,
   field = 'input'
 ) {
   const oldJson = tu.TestUtil.loadJson(input);
-  const newJson = transformInput(oldJson, field);
-  tu.TestUtil.saveJson(output, newJson);
+  appendTests(output, x => generateFromJson(oldJson, field, x));
 }
 
-
-export function generateTestList(
+/**
+ * Generates enumerated tests from a list of test data entries, preserving
+ * comments. The input JSON is of the form
+ *
+ * ```javascript
+ * [
+ *   {"comment": "foo"},
+ *   {"field": d0},
+ *   {"field": d1},
+ *   {"field": d2},
+ *   {"comment": "bar"},
+ *   {"field": e0},
+ *   {"field": e1},
+ *   {"field": e2},
+ *   ...
+ * ]
+ * ```
+ *
+ * Output will be for the form
+ *
+ * ```javascript
+ * {
+ *   "_comment0_": "foo",
+ *   "test_0": {"field": d0},
+ *   "test_1": {"field": d1},
+ *   "test_2": {"field": d2},
+ *   "_comment1_": "bar",
+ *   "test_3": {"field": e0},
+ *   "test_4": {"field": e1},
+ *   "test_5": {"field": e2},
+ *   ...
+ * }
+ * ```
+ *
+ * @param input Input file with data entries.
+ * @param output Output tests file.
+ * @param name The name of the tests. Defaults to the basename of input file.
+ */
+export function fromList(
   input: string,
   output: string,
-  name: string,
-  transformers: Transformer[] = [],
-  newJson: tu.JsonTests = {}
+  name: string = path.parse(input).name,
 ) {
   const oldJson = tu.TestUtil.loadJson(input) as tu.JsonTest[];
-  let commentCount = 0;
-  let testCount = 0;
-  let digits = Math.ceil(Math.log(oldJson.length)/Math.log(10))
-  const leading = Array(digits + 1).join('0');
-  digits = -1 * digits;
-  let tests: tu.JsonTests = {};
-  for (let entry of oldJson) {
-    if (entry.comment) {
-      tests[`_comment_${commentCount++}`] = entry.comment;
-      continue;
-    }
-    transformTest(entry, transformers);
-    tests[`${name}_${(leading + testCount++).slice(digits)}`] = entry;
-  }
-  newJson['tests'] = tests;
-  tu.TestUtil.saveJson(output, newJson);
+  appendTests(output, x => generateFromList(name, oldJson, x));
 }
 
+
+/* ********************************************************** */
+/*
+ * Test generation from non-JSON sources like issue files.
+ * Note: These files are not included in the public repository!
+ *
+ */
+/* ********************************************************** */
+
+function generateFromIssues(
+  dir: string,
+  files: string[],
+  tests: tu.JsonTests = {}
+): tu.JsonTests {
+  for (let file of files) {
+    const name = path.basename(file).match(/(^.+)\./)[1] || file;
+    const xml = DomUtil.parseInput(
+      fs.readFileSync(path.join(dir, file), { encoding: 'utf-8' })
+    );
+    const str =
+      DomUtil.tagName(xml) === 'MATH'
+      ? Array.from(xml.childNodes)
+        .map((x) => x.toString())
+        .join('')
+      : xml.toString();
+    tests[name] = { input: str };
+  }
+  return tests;
+}
+
+
+function generateFromLines(lines: string[],
+                           properties: string[], tests: tu.JsonTests) {
+  let commentCount = 0;
+  while (lines.length) {
+    let name = lines.shift();
+    if (!name) continue;
+    if (tu.TestUtil.isComment(name)) {
+      tests[`_comment${commentCount++}_`] = lines.shift() as any;
+      continue;
+    }
+    if (tests[name]) {
+      console.warn('Duplicate entry for ' + name);
+    }
+    let test: tu.JsonTest = {};
+    for (let prop of properties) {
+      let line = lines.shift();
+      if (!lines) break;
+      test[prop] = line;
+    }
+    tests[name] = test;
+  }
+  return tests;
+}
+
+/**
+ * Load issues from issue files for a particular basename. Issues are assumed to
+ * be in XML syntax. E.g., given the foo, all files for the form `foo*` in the
+ * given directory will be used as tests, omitting all files ending in `~`.
+ *
+ * @param {string} dir Directory with the source files.
+ * @param {string} file Base name of files.
+ * @param {string} output The output name for the target tests.
+ */
+export function fromIssues(dir: string, file: string, output: string) {
+  let files: string[];
+  try {
+    files = fs.readdirSync(dir);
+  } catch (_err) {
+    console.error(`Directory ${dir} does not exist.`);
+  }
+  files = files.filter(
+    (f) => f.match(new RegExp(file + '.*$')) && !f.match(/.*~$/)
+  );
+  appendTests(output,
+              tests => generateFromIssues(dir, files, tests));
+}
+
+/**
+ * Generates tests for single lines in an ASCII file. Thereby we assume that
+ * lines will be of the form:
+ *
+ * ```
+ * name0
+ * prop1
+ * prop2
+ * ...
+ * ```
+ *
+ * That is, the first line is taken as name of the test, the second line the
+ * value of property 1, third line value of property 2, and so on, according to
+ * the provided property list.
+ *
+ * Note, that empty lines will be considered as test separators. Thus a single
+ * test will be parsed until an empty line is encountered or until the property
+ * list is exhausted.
+ *
+ * @param input The input file.
+ * @param output The output filename for the target tests.
+ * @param properties An ordered list of properties to be parsed.
+ */
+export function fromLines(
+  input: string, output: string, properties: string[]) {
+  let data: string[];
+  try {
+    data = fs.readFileSync(input, { encoding: 'utf-8' }).split(/\r?\n/);
+  } catch (_err) {
+    console.error(`File ${input} does not exist.`);
+  }
+  appendTests(output,
+             tests => generateFromLines(data, properties, tests));
+}
+
+
+/* ********************************************************* */
+/*
+ * Transforming Test Entries
+ *
+ */
+/* ******************************************************** */
 
 /**
  * Runs a series of transformers on the given tests object.
  *
  * @param {tu.JsonTest[]} json The JSON tests.
  * @param {Transformer[]} transformers List of transformers.
+ * @param force Optionally forcing overwrite of test elements.
  * @returns {tu.JsonTest[]} The updated json test.
  */
 export function transformTests(
-  json: tu.JsonTest[],
-  transformers: Transformer[]
-): tu.JsonTest[] {
-  json.forEach((x) => transformTest(x, transformers));
+  json: tu.JsonTests,
+  transformers: Transformer[],
+  force: boolean = false
+): tu.JsonTests {
+  Object.entries(json).forEach(([key, value]) => {
+    if (!tu.TestUtil.isComment(key)) {
+      transformTest(value, transformers, force);
+    }});
   return json;
 }
 
@@ -163,44 +356,92 @@ export function transformTests(
  *
  * @param {tu.JsonTest} json The JSON test.
  * @param {Transformer[]} transformers List of transformers.
+ * @param force Optionally forcing overwrite of test elements.
  * @returns {tu.JsonTest} The updated json test.
  */
 export function transformTest(
   json: tu.JsonTest,
-  transformers: Transformer[]
+  transformers: Transformer[],
+  force: boolean = false
 ): tu.JsonTest {
   for (const transformer of transformers) {
     const src = json[transformer.src];
-    if (typeof src !== undefined) {
-      json[transformer.dst] = transformer.via(src);
+    if (src === undefined || force) {
+      try {
+        json[transformer.dst] = transformer.via(src);
+      } catch (_err) {
+        console.error(`Transformer on ${transformer.src} failed for input ${src}`);
+      }
     }
   }
   return json;
 }
 
 /**
- * Transforms test file in place.
+ * Transforms regular test file in place.
  *
  * @param file File name.
  * @param transformers Transformer list.
+ * @param force Optionally forcing overwrite of test elements.
  */
-export function transformJsonTests(file: string, transformers: Transformer[]) {
+export function transformJsonTests(
+  file: string,
+  transformers: Transformer[],
+  force: boolean = false) {
   const json = tu.TestUtil.loadJson(file);
-  transformTests(Object.values(json), transformers);
+  if (json.tests === 'ALL') return;
+  transformTests(json.tests, transformers, force);
   tu.TestUtil.saveJson(file, json);
 }
 
 /**
- * Transforms test file in place.
+ * Transforms specified tests in a regular test file in place.
  *
  * @param file File name.
  * @param transformers Transformer list.
+ * @param named A list of test names.
+ * @param force Optionally forcing overwrite of test elements.
  */
-export function transformTestsFile(file: string, transformers: Transformer[]) {
-  const json = tu.TestUtil.loadJson(file) as tu.JsonTest[];
-  transformTests(json, transformers);
+export function transformNamedTests(
+  file: string,
+  transformers: Transformer[],
+  named: string[],
+  force: boolean = false) {
+  const json = tu.TestUtil.loadJson(file);
+  if (json.tests === 'ALL') return;
+  named.forEach(x => {
+    let tst = (json.tests as tu.JsonTests)[x];
+    if (tst) {
+      transformTest(tst, transformers, force);
+    }
+  })
   tu.TestUtil.saveJson(file, json);
 }
+
+/**
+ * Transforms test file that contains a list of test entries in place.
+ *
+ * @param file File name.
+ * @param transformers Transformer list.
+ * @param force Optionally forcing overwrite of test elements.
+ */
+export function transformTestsFile(
+  file: string,
+  transformers: Transformer[],
+  force: boolean = false) {
+  const json = tu.TestUtil.loadJson(file) as tu.JsonTest[];
+  json.forEach(x => transformTest(x, transformers, force));
+  tu.TestUtil.saveJson(file, json);
+}
+
+
+/* ********************************************************** */
+/**
+ *
+ * Postprocessing methods for specialist tests.
+ *
+ */
+/* ********************************************************** */
 
 /**
  * Triples tests in a json file for all three Mathspeak preferences.
@@ -313,11 +554,11 @@ export function splitExpected(expected: string, base: string) {
     const expected = entry.expected;
     delete entry.expected;
     baseJson.tests[key] = entry;
-    json.tests[key] = { expected: expected };
+    json.tests[key] = tu.TestUtil.isComment(key) ? entry : { expected: expected };
   }
   json.base = base;
-  tu.TestUtil.saveJson(filename, json);
   tu.TestUtil.saveJson(base, baseJson);
+  tu.TestUtil.saveJson(filename, json);
 }
 
 /* ********************************************************** */
@@ -512,7 +753,9 @@ const PretextSplitters = new Map([
 
 const TransformerFactory = new Map([
   ['semantic', new SemanticTransformer()],
-  ['tex', new Tex2Mml()]
+  ['tex', new Tex2Mml()],
+  ['texmml', new TexMml2Mml()],
+  ['brf', new Both2Unicode()]
 ]);
 
 /**
@@ -655,7 +898,7 @@ abstract class AbstractGenerator {
    * Applies the transformers.
    */
   public transform() {
-    transformTests(Object.values(this.tests), this.transformers);
+    transformTests(this.tests, this.transformers);
   }
 
   /**
@@ -761,47 +1004,6 @@ export class PretextGenerator extends AbstractGenerator {
       delete test.name;
     }
   }
-}
-
-/* ********************************************************** */
-/*
- * Test generation from issue files.
- * Note: These files are not included in the public repository!
- *
- */
-/* ********************************************************** */
-
-/**
- * Load issues from files and add them to the tests.
- *
- * @param {string} dir Directory with the source files.
- * @param {string} file Base name of files.
- * @param {string} target The target tests in the input directory.
- */
-export function fromIssueFiles(dir: string, file: string, target: string) {
-  const filename = tu.TestUtil.fileExists(target, tu.TestPath.INPUT);
-  const tests = tu.TestUtil.loadJson(filename);
-  if (tests.tests === 'ALL') {
-    return;
-  }
-  let files = fs.readdirSync(dir);
-  files = files.filter(
-    (f) => f.match(new RegExp(file + '.*$')) && !f.match(/.*~$/)
-  );
-  for (file of files) {
-    const name = path.basename(file).match(/(^.+)\./)[1] || file;
-    const xml = DomUtil.parseInput(
-      fs.readFileSync(path.join(dir, file), { encoding: 'utf-8' })
-    );
-    const str =
-      DomUtil.tagName(xml) === 'MATH'
-        ? Array.from(xml.childNodes)
-            .map((x) => x.toString())
-            .join('')
-        : xml.toString();
-    tests.tests[name] = { input: str };
-  }
-  tu.TestUtil.saveJson(filename, tests);
 }
 
 /* ********************************************************** */

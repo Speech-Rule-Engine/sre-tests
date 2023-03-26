@@ -14,7 +14,7 @@
     },
     "aata-8.3.2-full": {
       "input": "<math><mi>H</mi><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mtable><mtr><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow><mstyle scriptlevel=\"0\"><mspace width=\"2em\"></mspace></mstyle><mtext>and</mtext><mstyle scriptlevel=\"0\"><mspace width=\"2em\"></mspace></mstyle><mi>H</mi><mrow><mrow><mi mathvariant=\"bold\">y</mi></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mtable><mtr><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd></mtr></mtable><mo>)</mo></mrow><mtext>.</mtext></math>",
-      "expected": "⠠⠓⠸⠰⠭⠀⠨⠅⠀⠠⠷⠼⠴⠠⠾⠁⠝⠙⠠⠓⠸⠰⠽⠀⠨⠅⠀⠠⠷⠼⠂⠠⠾⠨\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠷⠼⠴⠠⠾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠷⠼⠴⠠⠾⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠷⠼⠴⠠⠾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠷⠼⠂⠠⠾⠀"
+      "expected": "⠠⠓⠸⠰⠭⠀⠨⠅⠀⠠⠷⠼⠴⠠⠾⠁⠝⠙⠠⠓⠸⠰⠽⠀⠨⠅⠀⠠⠷⠼⠂⠠⠾⠲\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠷⠼⠴⠠⠾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠷⠼⠴⠠⠾⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠷⠼⠴⠠⠾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠷⠼⠂⠠⠾⠀"
     },
     "aata-8.3.2": {
       "input": "<math><mi>H</mi><mrow><mrow><mi mathvariant=\"bold\">x</mi></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mtable><mtr><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>",
@@ -68,7 +68,7 @@
     },
     "aata_3.5_10": {
       "input": "<math><mrow data-mjx-texclass=\"INNER\"><mo data-mjx-texclass=\"OPEN\">(</mo><mtable columnspacing=\"1em\" rowspacing=\"4pt\"><mtr><mtd><mn>1</mn></mtd><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mi>z</mi></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo data-mjx-texclass=\"CLOSE\">)</mo></mrow><mrow data-mjx-texclass=\"INNER\"><mo data-mjx-texclass=\"OPEN\">(</mo><mtable columnspacing=\"1em\" rowspacing=\"4pt\"><mtr><mtd><mn>1</mn></mtd><mtd><msup><mi>x</mi><mo data-mjx-alternate=\"1\">&#x2032;</mo></msup></mtd><mtd><msup><mi>y</mi><mo data-mjx-alternate=\"1\">&#x2032;</mo></msup></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><msup><mi>z</mi><mo data-mjx-alternate=\"1\">&#x2032;</mo></msup></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo data-mjx-texclass=\"CLOSE\">)</mo></mrow><mo>=</mo><mrow data-mjx-texclass=\"INNER\"><mo data-mjx-texclass=\"OPEN\">(</mo><mtable columnspacing=\"1em\" rowspacing=\"4pt\"><mtr><mtd><mn>1</mn></mtd><mtd><mi>x</mi><mo>+</mo><msup><mi>x</mi><mo data-mjx-alternate=\"1\">&#x2032;</mo></msup></mtd><mtd><mi>y</mi><mo>+</mo><msup><mi>y</mi><mo data-mjx-alternate=\"1\">&#x2032;</mo></msup><mo>+</mo><mi>x</mi><msup><mi>z</mi><mo data-mjx-alternate=\"1\">&#x2032;</mo></msup></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mi>z</mi><mo>+</mo><msup><mi>z</mi><mo data-mjx-alternate=\"1\">&#x2032;</mo></msup></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo data-mjx-texclass=\"CLOSE\">)</mo></mrow><mtext>.</mtext></math>",
-      "expected": "⠠⠷⠼⠂⠀⠭⠀⠀⠽⠀⠠⠾⠠⠷⠼⠂⠀⠭⠘⠄⠐⠀⠽⠘⠄⠐⠠⠾⠀⠨⠅⠀⠠⠷⠼⠂⠀⠭⠬⠭⠘⠄⠐⠀⠽⠬⠽⠘⠄⠐⠬⠭⠵⠘⠄⠐⠠⠾⠨\n⠠⠷⠼⠴⠀⠼⠂⠀⠵⠀⠠⠾⠠⠷⠼⠴⠀⠼⠂⠀⠀⠀⠵⠘⠄⠐⠠⠾⠀⠀⠀⠀⠠⠷⠼⠴⠀⠼⠂⠀⠀⠀⠀⠀⠵⠬⠵⠘⠄⠐⠀⠀⠀⠀⠀⠀⠠⠾⠀\n⠠⠷⠼⠴⠀⠼⠴⠀⠼⠂⠠⠾⠠⠷⠼⠴⠀⠼⠴⠀⠀⠀⠼⠂⠀⠀⠠⠾⠀⠀⠀⠀⠠⠷⠼⠴⠀⠼⠴⠀⠀⠀⠀⠀⠼⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠾⠀"
+      "expected": "⠠⠷⠼⠂⠀⠭⠀⠀⠽⠀⠠⠾⠠⠷⠼⠂⠀⠭⠘⠄⠐⠀⠽⠘⠄⠐⠠⠾⠀⠨⠅⠀⠠⠷⠼⠂⠀⠭⠬⠭⠘⠄⠐⠀⠽⠬⠽⠘⠄⠐⠬⠭⠵⠘⠄⠐⠠⠾⠲\n⠠⠷⠼⠴⠀⠼⠂⠀⠵⠀⠠⠾⠠⠷⠼⠴⠀⠼⠂⠀⠀⠀⠵⠘⠄⠐⠠⠾⠀⠀⠀⠀⠠⠷⠼⠴⠀⠼⠂⠀⠀⠀⠀⠀⠵⠬⠵⠘⠄⠐⠀⠀⠀⠀⠀⠀⠠⠾⠀\n⠠⠷⠼⠴⠀⠼⠴⠀⠼⠂⠠⠾⠠⠷⠼⠴⠀⠼⠴⠀⠀⠀⠼⠂⠀⠀⠠⠾⠀⠀⠀⠀⠠⠷⠼⠴⠀⠼⠴⠀⠀⠀⠀⠀⠼⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠾⠀"
     }
   }
 }

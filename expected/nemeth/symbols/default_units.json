@@ -3,7 +3,7 @@
   "locale": "nemeth",
   "domain": "default",
   "modality": "braille",
-  "style": "default",
+  "style": "literary",
   "compare": true,
   "active": "DefaultSymbolsNemeth",
   "grammar": {},
@@ -40,55 +40,55 @@
       "expected": "⠎⠟"
     },
     "sq.": {
-      "expected": "⠎⠟⠨"
+      "expected": "⠎⠟⠲"
     },
     "sq in": {
       "expected": "⠎⠟⠀⠊⠝"
     },
     "sq. in.": {
-      "expected": "⠎⠟⠨⠀⠊⠝⠨"
+      "expected": "⠎⠟⠲⠀⠊⠝⠲"
     },
     "sq inch": {
       "expected": "⠎⠟⠀⠊⠝⠉⠓"
     },
     "sq. inch": {
-      "expected": "⠎⠟⠨⠀⠊⠝⠉⠓"
+      "expected": "⠎⠟⠲⠀⠊⠝⠉⠓"
     },
     "sq rd": {
       "expected": "⠎⠟⠀⠗⠙"
     },
     "sq. rd.": {
-      "expected": "⠎⠟⠨⠀⠗⠙⠨"
+      "expected": "⠎⠟⠲⠀⠗⠙⠲"
     },
     "sq ft": {
       "expected": "⠎⠟⠀⠋⠞"
     },
     "sq. ft.": {
-      "expected": "⠎⠟⠨⠀⠋⠞⠨"
+      "expected": "⠎⠟⠲⠀⠋⠞⠲"
     },
     "sq yd": {
       "expected": "⠎⠟⠀⠽⠙"
     },
     "sq. yd.": {
-      "expected": "⠎⠟⠨⠀⠽⠙⠨"
+      "expected": "⠎⠟⠲⠀⠽⠙⠲"
     },
     "sq mi": {
       "expected": "⠎⠟⠀⠍⠊"
     },
     "sq. mi.": {
-      "expected": "⠎⠟⠨⠀⠍⠊⠨"
+      "expected": "⠎⠟⠲⠀⠍⠊⠲"
     },
     "ac": {
       "expected": "⠁⠉"
     },
     "ac.": {
-      "expected": "⠁⠉⠨"
+      "expected": "⠁⠉⠲"
     },
     "acr": {
       "expected": "⠁⠉⠗"
     },
     "acr.": {
-      "expected": "⠁⠉⠗⠨"
+      "expected": "⠁⠉⠗⠲"
     },
     "ha": {
       "expected": "⠓⠁"
@@ -250,52 +250,52 @@
       "expected": "⠋⠞"
     },
     "ft.": {
-      "expected": "⠋⠞⠨"
+      "expected": "⠋⠞⠲"
     },
     "in": {
       "expected": "⠊⠝"
     },
     "in.": {
-      "expected": "⠊⠝⠨"
+      "expected": "⠊⠝⠲"
     },
     "mi": {
       "expected": "⠍⠊"
     },
     "mi.": {
-      "expected": "⠍⠊⠨"
+      "expected": "⠍⠊⠲"
     },
     "yd": {
       "expected": "⠽⠙"
     },
     "yd.": {
-      "expected": "⠽⠙⠨"
+      "expected": "⠽⠙⠲"
     },
     "li": {
       "expected": "⠇⠊"
     },
     "li.": {
-      "expected": "⠇⠊⠨"
+      "expected": "⠇⠊⠲"
     },
     "rd": {
       "expected": "⠗⠙"
     },
     "rd.": {
-      "expected": "⠗⠙⠨"
+      "expected": "⠗⠙⠲"
     },
     "ch": {
       "expected": "⠉⠓"
     },
     "ch.": {
-      "expected": "⠉⠓⠨"
+      "expected": "⠉⠓⠲"
     },
     "fur": {
       "expected": "⠋⠥⠗"
     },
     "fur.": {
-      "expected": "⠋⠥⠗⠨"
+      "expected": "⠋⠥⠗⠲"
     },
     "n.m.": {
-      "expected": "⠝⠨⠍⠨"
+      "expected": "⠝⠲⠍⠲"
     },
     "b": {
       "expected": "⠃"
@@ -307,19 +307,19 @@
       "expected": "⠙⠕⠵"
     },
     "doz.": {
-      "expected": "⠙⠕⠵⠨"
+      "expected": "⠙⠕⠵⠲"
     },
     "dz": {
       "expected": "⠙⠵"
     },
     "dz.": {
-      "expected": "⠙⠵⠨"
+      "expected": "⠙⠵⠲"
     },
     "kt": {
       "expected": "⠅⠞"
     },
     "kt.": {
-      "expected": "⠅⠞⠨"
+      "expected": "⠅⠞⠲"
     },
     "mph": {
       "expected": "⠍⠏⠓"
@@ -334,7 +334,7 @@
       "expected": "⠠⠋"
     },
     "F.": {
-      "expected": "⠠⠋⠨"
+      "expected": "⠠⠋⠲"
     },
     "°F": {
       "test": false,
@@ -367,34 +367,34 @@
       "expected": "⠉⠥"
     },
     "cu.": {
-      "expected": "⠉⠥⠨"
+      "expected": "⠉⠥⠲"
     },
     "cu in": {
       "expected": "⠉⠥⠀⠊⠝"
     },
     "cu. in.": {
-      "expected": "⠉⠥⠨⠀⠊⠝⠨"
+      "expected": "⠉⠥⠲⠀⠊⠝⠲"
     },
     "cu ft": {
       "expected": "⠉⠥⠀⠋⠞"
     },
     "cu. ft.": {
-      "expected": "⠉⠥⠨⠀⠋⠞⠨"
+      "expected": "⠉⠥⠲⠀⠋⠞⠲"
     },
     "cu yd": {
       "expected": "⠉⠥⠀⠽⠙"
     },
     "cu. yd.": {
-      "expected": "⠉⠥⠨⠀⠽⠙⠨"
+      "expected": "⠉⠥⠲⠀⠽⠙⠲"
     },
     "bbl.": {
-      "expected": "⠃⠃⠇⠨"
+      "expected": "⠃⠃⠇⠲"
     },
     "bbl": {
       "expected": "⠃⠃⠇"
     },
     "fl. oz.": {
-      "expected": "⠋⠇⠨⠀⠕⠵⠨"
+      "expected": "⠋⠇⠲⠀⠕⠵⠲"
     },
     "fl oz": {
       "expected": "⠋⠇⠀⠕⠵"
@@ -403,49 +403,49 @@
       "expected": "⠛⠁⠇"
     },
     "gal.": {
-      "expected": "⠛⠁⠇⠨"
+      "expected": "⠛⠁⠇⠲"
     },
     "pt": {
       "expected": "⠏⠞"
     },
     "pt.": {
-      "expected": "⠏⠞⠨"
+      "expected": "⠏⠞⠲"
     },
     "qt": {
       "expected": "⠟⠞"
     },
     "qt.": {
-      "expected": "⠟⠞⠨"
+      "expected": "⠟⠞⠲"
     },
     "fl dr": {
       "expected": "⠋⠇⠀⠙⠗"
     },
     "fl. dr.": {
-      "expected": "⠋⠇⠨⠀⠙⠗⠨"
+      "expected": "⠋⠇⠲⠀⠙⠗⠲"
     },
     "tbsp": {
       "expected": "⠞⠃⠎⠏"
     },
     "tbsp.": {
-      "expected": "⠞⠃⠎⠏⠨"
+      "expected": "⠞⠃⠎⠏⠲"
     },
     "Tbsp": {
       "expected": "⠠⠞⠃⠎⠏"
     },
     "Tbsp.": {
-      "expected": "⠠⠞⠃⠎⠏⠨"
+      "expected": "⠠⠞⠃⠎⠏⠲"
     },
     "tsp": {
       "expected": "⠞⠎⠏"
     },
     "tsp.": {
-      "expected": "⠞⠎⠏⠨"
+      "expected": "⠞⠎⠏⠲"
     },
     "cp": {
       "expected": "⠉⠏"
     },
     "cp.": {
-      "expected": "⠉⠏⠨"
+      "expected": "⠉⠏⠲"
     },
     "cc": {
       "expected": "⠉⠉"
@@ -457,43 +457,43 @@
       "expected": "⠙⠗"
     },
     "dr.": {
-      "expected": "⠙⠗⠨"
+      "expected": "⠙⠗⠲"
     },
     "oz": {
       "expected": "⠕⠵"
     },
     "oz.": {
-      "expected": "⠕⠵⠨"
+      "expected": "⠕⠵⠲"
     },
     "lb": {
       "expected": "⠇⠃"
     },
     "lb.": {
-      "expected": "⠇⠃⠨"
+      "expected": "⠇⠃⠲"
     },
     "st": {
       "expected": "⠎⠞"
     },
     "st.": {
-      "expected": "⠎⠞⠨"
+      "expected": "⠎⠞⠲"
     },
     "qtr": {
       "expected": "⠟⠞⠗"
     },
     "qtr.": {
-      "expected": "⠟⠞⠗⠨"
+      "expected": "⠟⠞⠗⠲"
     },
     "cwt": {
       "expected": "⠉⠺⠞"
     },
     "cwt.": {
-      "expected": "⠉⠺⠞⠨"
+      "expected": "⠉⠺⠞⠲"
     },
     "LT": {
       "expected": "⠠⠇⠠⠞"
     },
     "L.T.": {
-      "expected": "⠠⠇⠨⠠⠞⠨"
+      "expected": "⠠⠇⠲⠠⠞⠲"
     },
     "gr": {
       "expected": "⠛⠗"
