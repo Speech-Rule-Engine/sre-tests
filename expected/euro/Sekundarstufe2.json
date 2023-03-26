@@ -2,48 +2,53 @@
   "name": "Sekundarstufe2",
   "information": "LaTeX Manual Sekundarstufe 2",
   "base": "input/euro/Sekundarstufe2.json",
+  "locale": "euro",
+  "modality": "braille",
+  "factory": "speech",
+  "domain": "default",
+  "active": "Augenbit",
   "tests": {
     "_comment0_": "Analysis",
     "Analysis_0": {
-      "expected": "n \\to \\infty"
+      "expected": "⠝⠀⡌⠞⠕⡌⠊⠝⠋⠞⠽"
     },
     "Analysis_1": {
-      "expected": "\\lim_{h \\to 0}"
+      "expected": "⡌⠇⠊⠍⠀⡸⠷⠓⠀⡌⠞⠕⠬⠾"
     },
     "Analysis_2": {
-      "expected": "\\lim_{x \\to x_0}"
+      "expected": "⡌⠇⠊⠍⠀⡸⠷⠭⠀⡌⠞⠕⠀⠭⠀⡸⠬⠾"
     },
     "Analysis_3": {
-      "expected": "f'(x), f''(x)"
+      "expected": "⠋⡌⠠⠦⠭⠴⠂⠋⡌⠠⠠⠦⠭⠴"
     },
     "Analysis_4": {
-      "expected": "\\sum_{i =0}^n A_n"
+      "expected": "⡌⠎⠥⠍⠀⡸⠷⠊⠀⠶⠬⠾⡮⠝⡁⠀⡸⠝"
     },
     "Analysis_5": {
-      "expected": "\\int_a^b f(x) dx"
+      "expected": "⡌⠊⠝⠞⠀⡸⠁⡮⠃⠋⠦⠭⠴⠙⠭"
     },
     "_comment1_": "Stochastik",
     "Stochastik_0": {
-      "expected": "n!"
+      "expected": "⠝⠐"
     },
     "Stochastik_1": {
-      "expected": "{ n \\choose k}  oder  \\binom{n}{k}"
+      "expected": "⠷⠝⡌⠉⠓⠕⠕⠎⠑⠀⠅⠾"
     },
     "Stochastik_2": {
-      "expected": "\\sigma   \\Omega"
+      "expected": "⡌⠎⠊⠛⠍⠁⡌⠟⠟⠥⠁⠙⡌⡕⠍⠑⠛⠁"
     },
     "_comment2_": "Analytische Geometrie",
     "Analytische_0": {
-      "expected": "\\vec{p} = \\begin{pmatrix} x; & y; & z-3 \\end{pmatrix}"
+      "expected": "⡌⠧⠑⠉⠷⠏⠾⠀⠶⡌⠃⠑⠛⠊⠝⠷⠏⠍⠁⠞⠗⠊⠭⠾⠭⠆⠯⠽⠆⠯⠵⠀⠤⠩⡌⠑⠝⠙⠷⠏⠍⠁⠞⠗⠊⠭⠾"
     },
     "Analytische_1": {
-      "expected": "\\vec{q} = \\begin{pmatrix} -5 \\\\ 0,5 \\\\ k+4 \\end{pmatrix}"
+      "expected": "⡌⠧⠑⠉⠷⠟⠾⠀⠶⡌⠃⠑⠛⠊⠝⠷⠏⠍⠁⠞⠗⠊⠭⠾⠀⠤⠱⡌⡌⠬⠂⠱⡌⡌⠅⠀⠖⠹⡌⠑⠝⠙⠷⠏⠍⠁⠞⠗⠊⠭⠾"
     },
     "Analytische_2": {
-      "expected": "\\vec{p} \\times \\vec{q}"
+      "expected": "⡌⠧⠑⠉⠷⠏⠾⠀⡌⠞⠊⠍⠑⠎⡌⠧⠑⠉⠷⠟⠾"
     },
     "Analytische_3": {
-      "expected": "\\begin{pmatrix} a & b & c \\\\ d & e & f \\end{pmatrix}"
+      "expected": "⡌⠃⠑⠛⠊⠝⠷⠏⠍⠁⠞⠗⠊⠭⠾⠁⠯⠃⠯⠉⡌⡌⠙⠯⠑⠯⠋⡌⠑⠝⠙⠷⠏⠍⠁⠞⠗⠊⠭⠾"
     }
   }
 }

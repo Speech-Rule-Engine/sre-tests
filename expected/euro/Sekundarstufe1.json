@@ -2,233 +2,238 @@
   "name": "Sekundarstufe1",
   "information": "LaTeX Manual Sekundarstufe 1",
   "base": "input/euro/Sekundarstufe1.json",
+  "locale": "euro",
+  "modality": "braille",
+  "factory": "speech",
+  "domain": "default",
+  "active": "Augenbit",
   "tests": {
     "_comment0_": "Mengen und deren Verknüpfungen",
     "Mengen_0": {
-      "expected": "\\{ 1, 2, 3, 4 \\}"
+      "expected": "⡌⠷⠀⠡⠂⠀⠣⠂⠀⠩⠂⠀⠹⠀⡌⠾"
     },
     "Mengen_1": {
-      "expected": "P = \\{x|x ist Primzahl \\}"
+      "expected": "⡏⠀⠶⠷⠭⠌⠭⠊⠎⠞⡏⠗⠊⠍⠵⠁⠓⠇⠾"
     },
     "Mengen_2": {
-      "expected": "3 \\in P"
+      "expected": "⠩⠀⡌⠊⠝⠀⡏"
     },
     "Mengen_3": {
-      "expected": "4 \\notin P"
+      "expected": "⠹⠀⡌⠝⠕⠞⠊⠝⠀⡏"
     },
     "Mengen_4": {
-      "expected": "A \\subset B"
+      "expected": "⡁⠀⡌⠎⠥⠃⠎⠑⠞⠀⡃"
     },
     "Mengen_5": {
-      "expected": "A \\subseteq B"
+      "expected": "⡁⠀⡌⠎⠥⠃⠎⠑⠞⠑⠟⠀⡃"
     },
     "Mengen_6": {
-      "expected": "A \\cup B"
+      "expected": "⡁⠀⡌⠉⠥⠏⠀⡃"
     },
     "Mengen_7": {
-      "expected": "A \\cap B"
+      "expected": "⡁⠀⡌⠉⠁⠏⠀⡃"
     },
     "Mengen_8": {
-      "expected": "A \\backslash B"
+      "expected": "⡁⠀⡌⠃⠁⠉⠅⠎⠇⠁⠎⠓⠀⡃"
     },
     "Mengen_9": {
-      "expected": "\\{ \\} bzw. \\emptyset"
+      "expected": "⡌⠷⠀⡌⠾⠀⠀⠀⠃⠵⠺⠄⠀⡌⠦⡌⠙⠊⠎⠏⠇⠁⠽⠎⠞⠽⠇⠑⠷⡌⠑⠍⠏⠞⠽⠎⠑⠞⠾⡌⠴"
     },
     "Mengen_10": {
-      "expected": "\\overline{A}"
+      "expected": "⡌⠕⠧⠑⠗⠇⠊⠝⠑⠷⡁⠾"
     },
     "_comment1_": "Spezielle Zahlenmengen  1)",
     "Spezielle_0": {
-      "expected": "\\mathbb N"
+      "expected": "⡌⡝"
     },
     "Spezielle_1": {
-      "expected": "\\mathbb Z"
+      "expected": "⡌⡵"
     },
     "Spezielle_2": {
-      "expected": "\\mathbb Z_0^-"
+      "expected": "⡌⡵⠀⡸⠬⡮⠀⠤"
     },
     "Spezielle_3": {
-      "expected": "\\mathbb Q"
+      "expected": "⡌⡟"
     },
     "Spezielle_4": {
-      "expected": "\\mathbb R"
+      "expected": "⡌⡗"
     },
     "Spezielle_5": {
-      "expected": "\\mathcal P"
+      "expected": "⡌⠍⠁⠞⠓⠉⠁⠇⠀⡏"
     },
     "_comment2_": "Verknüpfungen von Zahlen",
     "Verknüpfungen_0": {
-      "expected": "x \\in \\N \\wedge x < 3"
+      "expected": "⠭⠀⡌⠊⠝⡌⡝⠀⡌⠺⠑⠙⠛⠑⠀⠭⠀⡌⠇⠞⠩"
     },
     "Verknüpfungen_1": {
-      "expected": "A \\Rightarrow B"
+      "expected": "⡁⠀⡌⡗⠊⠛⠓⠞⠁⠗⠗⠕⠺⠀⡃"
     },
     "Verknüpfungen_2": {
-      "expected": "x \\to \\infty"
+      "expected": "⠭⠀⡌⠞⠕⡌⠊⠝⠋⠞⠽"
     },
     "Verknüpfungen_3": {
-      "expected": "x =1 \\vee x =2"
+      "expected": "⠭⠀⠶⠡⠀⡌⠧⠑⠑⠀⠭⠀⠶⠣"
     },
     "Verknüpfungen_4": {
-      "expected": "3x =12 \\Leftrightarrow x =4"
+      "expected": "⠩⠭⠀⠶⠡⠣⠀⡌⡇⠑⠋⠞⠗⠊⠛⠓⠞⠁⠗⠗⠕⠺⠀⠭⠀⠶⠹"
     },
     "Verknüpfungen_5": {
-      "expected": "x \\le 10"
+      "expected": "⠭⠀⡌⠇⠑⠡⠬"
     },
     "Verknüpfungen_6": {
-      "expected": "a \\ge b"
+      "expected": "⠁⠀⡌⠛⠑⠀⠃"
     },
     "Verknüpfungen_7": {
-      "expected": "\\gg"
+      "expected": "⠀⠘⠀⠘"
     },
     "Verknüpfungen_8": {
-      "expected": "\\ll"
+      "expected": "⠀⠰⠀⠰"
     },
     "Verknüpfungen_9": {
-      "expected": "\\pi \\approx 3,14"
+      "expected": "⡌⠏⠊⠀⡌⠁⠏⠏⠗⠕⠭⠩⠂⠡⠹"
     },
     "Verknüpfungen_10": {
-      "expected": "(a +b)^2"
+      "expected": "⠦⠁⠀⠖⠃⠴⡮⠣"
     },
     "Verknüpfungen_11": {
-      "expected": "[x -y]^3"
+      "expected": "⡷⠭⠀⠤⠽⡾⡮⠩"
     },
     "Verknüpfungen_12": {
-      "expected": "s \\sim t"
+      "expected": "⠎⠀⡌⠎⠊⠍⠀⠞"
     },
     "Verknüpfungen_13": {
-      "expected": "a \\hat{=} b"
+      "expected": "⠁⡌⠓⠁⠞⠷⠀⠶⠾⠃"
     },
     "Verknüpfungen_14": {
-      "expected": "7 | 28"
+      "expected": "⠻⠌⠣⠳"
     },
     "_comment3_": "Verknüpfungen von Aussagen",
     "_comment4_": "Brüche  2) und Dezimalzahlen",
     "Brüche_0": {
-      "expected": "2/3  bzw.  \\frac{2}{3}"
+      "expected": "⡌⠋⠗⠁⠉⠷⠣⠾⠷⠩⠾"
     },
     "Brüche_1": {
-      "expected": "4 \\frac{3}{5}"
+      "expected": "⠹⡌⠋⠗⠁⠉⠷⠩⠾⠷⠱⠾"
     },
     "Brüche_2": {
-      "expected": "\\frac{1}{x}"
+      "expected": "⡌⠋⠗⠁⠉⠷⠡⠾⠷⠭⠾"
     },
     "Brüche_3": {
-      "expected": "\\frac{1}{x +2} \\not= \\frac{1}{x} +2"
+      "expected": "⡌⠋⠗⠁⠉⠷⠡⠾⠷⠭⠀⠖⠣⠾⡌⠝⠕⠞⠀⠶⡌⠋⠗⠁⠉⠷⠡⠾⠷⠭⠾⠀⠖⠣"
     },
     "Brüche_4": {
-      "expected": "\\frac{ \\frac{a+b}{2} }{ \\frac{x}{a-b} } =1"
+      "expected": "⡌⠋⠗⠁⠉⠷⡌⠋⠗⠁⠉⠷⠁⠀⠖⠃⠾⠷⠣⠾⠾⠷⡌⠋⠗⠁⠉⠷⠭⠾⠷⠁⠀⠤⠃⠾⠾⠀⠶⠡"
     },
     "Brüche_5": {
-      "expected": "0,25 = 1/4"
+      "expected": "⠬⠂⠣⠱⠀⠶⠡⠀⠲⠹"
     },
     "Brüche_6": {
-      "expected": "0,1\\overline{6} = 1/6"
+      "expected": "⠬⠂⠡⡌⠕⠧⠑⠗⠇⠊⠝⠑⠷⠫⠾⠀⠶⠡⠀⠲⠫"
     },
     "Brüche_7": {
-      "expected": "75\\% = 3/4"
+      "expected": "⠻⠱⡌⠿⠀⠶⠩⠀⠲⠹"
     },
     "Brüche_8": {
-      "expected": "2,5 \\permil"
+      "expected": "⠣⠂⠱⢊"
     },
     "_comment5_": "Potenzen, Wurzeln, Indizes",
     "Potenzen,_0": {
-      "expected": "a^2"
+      "expected": "⠁⡮⠣"
     },
     "Potenzen,_1": {
-      "expected": "a^{12}"
+      "expected": "⠁⡮⠷⠡⠣⠾"
     },
     "Potenzen,_2": {
-      "expected": "2^{-3} =1/8"
+      "expected": "⠣⡮⠷⠀⠤⠩⠾⠀⠶⠡⠀⠲⠳"
     },
     "Potenzen,_3": {
-      "expected": "a^{n+1} \\not= a^n +1"
+      "expected": "⠁⡮⠷⠝⠀⠖⠡⠾⡌⠝⠕⠞⠀⠶⠁⡮⠝⠀⠖⠡"
     },
     "Potenzen,_4": {
-      "expected": "\\sqrt{25} = 5"
+      "expected": "⡌⠎⠟⠗⠞⠷⠣⠱⠾⠀⠶⠱"
     },
     "Potenzen,_5": {
-      "expected": "\\sqrt{x^2 +y^2} \\not= x +y"
+      "expected": "⡌⠎⠟⠗⠞⠷⠭⡮⠣⠀⠖⠽⡮⠣⠾⡌⠝⠕⠞⠀⠶⠭⠀⠖⠽"
     },
     "Potenzen,_6": {
-      "expected": "\\sqrt[3]{8} = 2"
+      "expected": "⡌⠎⠟⠗⠞⡷⠩⡾⠷⠳⠾⠀⠶⠣"
     },
     "Potenzen,_7": {
-      "expected": "\\sqrt[3]{a^2}  =a^{2/3}"
+      "expected": "⡌⠎⠟⠗⠞⡷⠩⡾⠷⠁⡮⠣⠾⠀⠶⠁⡮⠷⠣⠀⠲⠩⠾"
     },
     "Potenzen,_8": {
-      "expected": "a_1 + a_n"
+      "expected": "⠁⠀⡸⠡⠀⠖⠁⠀⡸⠝"
     },
     "Potenzen,_9": {
-      "expected": "a_{n -1}"
+      "expected": "⠁⠀⡸⠷⠝⠀⠤⠡⠾"
     },
     "Potenzen,_10": {
-      "expected": "_{95}^{238}U"
+      "expected": "⠷⠾⠀⡸⠷⠪⠱⠾⡮⠷⠣⠩⠳⠾⡌⠍⠁⠞⠓⠗⠍⠷⡥⠾"
     },
     "_comment6_": "Weitere Rechenoperationen, Funktionen",
     "Weitere_0": {
-      "expected": "f(x) =2x +1"
+      "expected": "⠋⠦⠭⠴⠀⠶⠣⠭⠀⠖⠡"
     },
     "Weitere_1": {
-      "expected": "f(3) =7"
+      "expected": "⠋⠦⠩⠴⠀⠶⠻"
     },
     "Weitere_2": {
-      "expected": "f: y =2x +1"
+      "expected": "⠋⡌⠆⠒⡌⠆⠽⠀⠶⠣⠭⠀⠖⠡"
     },
     "Weitere_3": {
-      "expected": "f: x \\mapsto 2x +1"
+      "expected": "⠋⠒⠭⠀⡌⠍⠁⠏⠎⠞⠕⠣⠭⠀⠖⠡"
     },
     "Weitere_4": {
-      "expected": "P(3,5|8)"
+      "expected": "⡏⠦⠩⠂⠱⠌⠳⠴"
     },
     "Weitere_5": {
-      "expected": "|a|"
+      "expected": "⠌⠁⠌"
     },
     "Weitere_6": {
-      "expected": "\\log_a x"
+      "expected": "⡌⠇⠕⠛⠀⡸⠁⠭"
     },
     "Weitere_7": {
-      "expected": "\\ln x"
+      "expected": "⡌⠇⠝⠀⠭"
     },
     "Weitere_8": {
-      "expected": "\\sin \\alpha"
+      "expected": "⡌⠎⠊⠝⡌⠁⠇⠏⠓⠁"
     },
     "Weitere_9": {
-      "expected": "\\cos^2 \\beta"
+      "expected": "⡌⠉⠕⠎⡮⠣⡌⠃⠑⠞⠁"
     },
     "Weitere_10": {
-      "expected": "\\tan \\gamma"
+      "expected": "⡌⠞⠁⠝⡌⠛⠁⠍⠍⠁"
     },
     "Weitere_11": {
-      "expected": "\\cot 45°"
+      "expected": "⡌⠉⠕⠞⠹⠱⢸"
     },
     "Weitere_12": {
-      "expected": "\\sin (\\pi /6)"
+      "expected": "⡌⠎⠊⠝⠦⡌⠏⠊⠀⠲⠫⠴"
     },
     "_comment7_": "Geometrie",
     "Geometrie_0": {
-      "expected": "\\overline{AB}"
+      "expected": "⡌⠕⠧⠑⠗⠇⠊⠝⠑⠷⡁⡃⠾"
     },
     "Geometrie_1": {
-      "expected": "\\triangle ABC"
+      "expected": "⠀⡌⠞⠗⠊⠁⠝⠛⠇⠑⠀⡁⡃⡉"
     },
     "Geometrie_2": {
-      "expected": "\\angle BAC"
+      "expected": "⠀⡌⠁⠝⠛⠇⠑⠀⡃⡁⡉"
     },
     "Geometrie_3": {
-      "expected": "\\alpha, \\beta, \\gamma, \\delta, \\epsilon"
+      "expected": "⡌⠁⠇⠏⠓⠁⠂⡌⠃⠑⠞⠁⠂⡌⠛⠁⠍⠍⠁⠂⡌⠙⠑⠇⠞⠁⠂⡌⠑⠏⠎⠊⠇⠕⠝"
     },
     "Geometrie_4": {
-      "expected": "g \\parallel h"
+      "expected": "⠛⡌⠏⠁⠗⠁⠇⠇⠑⠇⠀⠓"
     },
     "Geometrie_5": {
-      "expected": "g \\nparallel h"
+      "expected": "⠛⠀⡌⠝⠏⠁⠗⠁⠇⠇⠑⠇⠀⠓"
     },
     "Geometrie_6": {
-      "expected": "g \\perp h"
+      "expected": "⠛⡌⠏⠑⠗⠏⠀⠓"
     },
     "Geometrie_7": {
-      "expected": "F \\cong F'"
+      "expected": "⡋⠀⡌⠉⠕⠝⠛⠀⡋⠠"
     }
   }
 }

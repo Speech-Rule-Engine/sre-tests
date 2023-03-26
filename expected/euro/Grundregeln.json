@@ -2,56 +2,61 @@
   "name": "Grundregeln",
   "information": "LaTeX Manual LaTeX Grundregeln",
   "base": "input/euro/Grundregeln.json",
+  "locale": "euro",
+  "modality": "braille",
+  "factory": "speech",
+  "domain": "default",
+  "active": "Augenbit",
   "tests": {
     "_comment0_": "Textzeichen der Tastatur verwenden, solange dies eben geht!",
     "Textzeichen_0": {
-      "expected": "2 +x =5"
+      "expected": "⠣⠀⠖⠭⠀⠶⠱"
     },
     "Textzeichen_1": {
-      "expected": "|x -1|=|1 -x|"
+      "expected": "⠌⠭⠀⠤⠡⠌⠀⠶⠌⠡⠀⠤⠭⠌"
     },
     "Textzeichen_2": {
-      "expected": "n! =n *(n -1)!"
+      "expected": "⠝⠐⠀⠶⠝⠀⠔⠦⠝⠀⠤⠡⠴⠐"
     },
     "_comment1_": "Abweichungen von der Grundlinie",
     "Abweichungen_0": {
-      "expected": "x^2"
+      "expected": "⠭⡮⠣"
     },
     "Abweichungen_1": {
-      "expected": "x^{10}"
+      "expected": "⠭⡮⠷⠡⠬⠾"
     },
     "Abweichungen_2": {
-      "expected": "a_1 +a_n"
+      "expected": "⠁⡸⠡⠀⠖⠁⡸⠝"
     },
     "Abweichungen_3": {
-      "expected": "x^{n +m}"
+      "expected": "⠭⡮⠷⠝⠀⠖⠍⠾"
     },
     "Abweichungen_4": {
-      "expected": "a_{n -1}"
+      "expected": "⠁⡸⠷⠝⠀⠤⠡⠾"
     },
     "Abweichungen_5": {
-      "expected": "a_{12}"
+      "expected": "⠁⡸⠷⠡⠣⠾"
     },
     "_comment2_": "Mathematische Symbole, die es auf der Tastatur nicht gibt",
     "Mathematische_0": {
-      "expected": "n \\to \\infty"
+      "expected": "⠝⠀⡌⠞⠕⠀⡌⠊⠝⠋⠞⠽"
     },
     "Mathematische_1": {
-      "expected": "x \\notin \\{3; 4\\}"
+      "expected": "⠭⠀⡌⠝⠕⠞⠊⠝⡌⠷⠩⠆⠹⡌⠾"
     },
     "_comment3_": "Konstrukte, die in sich bereits flächig angeordnet sind",
     "Konstrukte,_0": {
-      "expected": "\\frac{a +b}{a -b}"
+      "expected": "⡌⠋⠗⠁⠉⠷⠁⠀⠖⠃⠾⠷⠁⠀⠤⠃⠾"
     },
     "Konstrukte,_1": {
-      "expected": "\\sqrt{a +b}"
+      "expected": "⡌⠎⠟⠗⠞⠷⠁⠀⠖⠃⠾"
     },
     "Konstrukte,_2": {
-      "expected": "\\sum_{n =1}^\\infty \\frac{1}{2^n} =1"
+      "expected": "⡌⠎⠥⠍⡸⠷⠝⠀⠶⠡⠾⡮⡌⠊⠝⠋⠞⠽⠀⡌⠋⠗⠁⠉⠷⠡⠾⠷⠣⡮⠝⠾⠀⠶⠡"
     },
     "_comment4_": "Anpassungen an persönliche Bedürfnisse",
     "Anpassungen_0": {
-      "expected": "\\overline{A \\cup B}"
+      "expected": "⡌⠕⠧⠑⠗⠇⠊⠝⠑⠷⡁⠀⡌⠉⠥⠏⠀⡃⠾"
     }
   }
 }
