@@ -106,34 +106,40 @@
     },
     "_comment2_": "Verknüpfungen von Zahlen",
     "Verknüpfungen_0": {
-      "tex": "x \\in \\N \\wedge x \\lt  3",
-      "speech": "x ist Element von N und x ist echt kleiner 3",
-      "code": "x \\in \\N \\wedge x < 3",
-      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"x \\in \\N \\wedge x \\lt  3\" display=\"block\"><mi latex=\"x\">x</mi><mo latex=\"\\in\">&#x2208;</mo><mtext mathcolor=\"red\" latex=\"\\N\">\\N</mtext><mo latex=\"\\wedge\">&#x2227;</mo><mi latex=\"x\">x</mi><mo latex=\"\\lt\">&lt;</mo><mn latex=\"3\">3</mn></math>"
+      "tex": "2+4 =7",
+      "speech": "3 plus 4 ist gleich 7",
+      "code": "2 +4 = 7",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"2+4 =7\" display=\"block\"><mn latex=\"2\">2</mn><mo latex=\"+\">+</mo><mn latex=\"4\">4</mn><mo latex=\"=\">=</mo><mn latex=\"7\">7</mn></math>"
     },
     "Verknüpfungen_1": {
-      "tex": "A \\Rightarrow B",
-      "speech": "Aus A folgt B (\"Wer A sagt, muss auch B sagen.\")",
-      "code": "A \\Rightarrow B",
-      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"A \\Rightarrow B\" display=\"block\"><mi latex=\"A\">A</mi><mo stretchy=\"false\" latex=\"\\Rightarrow\">&#x21D2;</mo><mi latex=\"B\">B</mi></math>"
+      "tex": " 9-3 \\not= 5",
+      "speech": "9 minus 3 ist ungleich 5",
+      "code": "9 -3 \\not= 5",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\" 9-3 \\not= 5\" display=\"block\"><mn latex=\"9\">9</mn><mo latex=\"-\">&#x2212;</mo><mn latex=\"3\">3</mn><mo latex=\"=\">&#x2260;</mo><mn latex=\"5\">5</mn></math>"
+    },
+    "Verknüpfungen_1a": {
+      "tex": " 9-3 \\neq 5",
+      "speech": "9 minus 3 ist ungleich 5",
+      "code": "9 -3 \\neq 5",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\" 9-3 \\neq 5\" display=\"block\"><mn latex=\"9\">9</mn><mo latex=\"-\">&#x2212;</mo><mn latex=\"3\">3</mn><mo latex=\"\\neq\">&#x2260;</mo><mn latex=\"5\">5</mn></math>"
     },
     "Verknüpfungen_2": {
-      "tex": "x \\to \\infty",
-      "speech": "x geht gegen unendlich",
-      "code": "x \\to \\infty",
-      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"x \\to \\infty\" display=\"block\"><mi latex=\"x\">x</mi><mo accent=\"false\" stretchy=\"false\" latex=\"\\to\">&#x2192;</mo><mi mathvariant=\"normal\" latex=\"\\infty\">&#x221E;</mi></math>"
+      "tex": "x \\pm 3",
+      "speech": "x plus minus drei",
+      "code": " x \\pm 3",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"x \\pm 3\" display=\"block\"><mi latex=\"x\">x</mi><mo latex=\"\\pm\">&#xB1;</mo><mn latex=\"3\">3</mn></math>"
     },
     "Verknüpfungen_3": {
-      "tex": "x =1 \\vee x =2",
-      "speech": "x = 1 oder x = 2",
-      "code": "x =1 \\vee x =2",
-      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"x =1 \\vee x =2\" display=\"block\"><mi latex=\"x\">x</mi><mo latex=\"=\">=</mo><mn latex=\"1\">1</mn><mo latex=\"\\vee\">&#x2228;</mo><mi latex=\"x\">x</mi><mo latex=\"=\">=</mo><mn latex=\"2\">2</mn></math>"
+      "tex": "2*8 \\gt 15",
+      "speech": "2 mal 8 ist echt größer als 15",
+      "code": "2*8 \\gt  15",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"2*8 \\gt 15\" display=\"block\"><mn latex=\"2\">2</mn><mo latex=\"*\">&#x2217;</mo><mn latex=\"8\">8</mn><mo latex=\"\\gt\">&gt;</mo><mn latex=\"5\">15</mn></math>"
     },
     "Verknüpfungen_4": {
-      "tex": "3x =12 \\Leftrightarrow x =4",
-      "speech": "3x = 12 ist äquivalent zu x = 4",
-      "code": "3x =12 \\Leftrightarrow x =4",
-      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"3x =12 \\Leftrightarrow x =4\" display=\"block\"><mn latex=\"3\">3</mn><mi latex=\"x\">x</mi><mo latex=\"=\">=</mo><mn latex=\"2\">12</mn><mo stretchy=\"false\" latex=\"\\Leftrightarrow\">&#x21D4;</mo><mi latex=\"x\">x</mi><mo latex=\"=\">=</mo><mn latex=\"4\">4</mn></math>"
+      "tex": "8:4 \\lt 5",
+      "speech": "8 geteilt durch 4 ist echt kleiner als 5",
+      "code": "8: 4 \\lt  5",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"8:4 \\lt 5\" display=\"block\"><mn latex=\"8\">8</mn><mo latex=\":\">:</mo><mn latex=\"4\">4</mn><mo latex=\"\\lt\">&lt;</mo><mn latex=\"5\">5</mn></math>"
     },
     "Verknüpfungen_5": {
       "tex": "x \\le 10",
@@ -196,6 +202,36 @@
       "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"7|28\" display=\"block\"><mn latex=\"7\">7</mn><mo data-mjx-texclass=\"ORD\" stretchy=\"false\" latex=\"|\">|</mo><mn latex=\"8\">28</mn></math>"
     },
     "_comment3_": "Verknüpfungen von Aussagen",
+    "Aussagen_0": {
+      "tex": "x \\in \\N \\wedge x \\lt  3",
+      "speech": "x ist Element von N und x ist echt kleiner 3",
+      "code": "x \\in \\N \\wedge x < 3",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"x \\in \\N \\wedge x \\lt  3\" display=\"block\"><mi latex=\"x\">x</mi><mo latex=\"\\in\">&#x2208;</mo><mtext mathcolor=\"red\" latex=\"\\N\">\\N</mtext><mo latex=\"\\wedge\">&#x2227;</mo><mi latex=\"x\">x</mi><mo latex=\"\\lt\">&lt;</mo><mn latex=\"3\">3</mn></math>"
+    },
+    "Aussagen_1": {
+      "tex": "A \\Rightarrow B",
+      "speech": "Aus A folgt B (\"Wer A sagt, muss auch B sagen.\")",
+      "code": "A \\Rightarrow B",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"A \\Rightarrow B\" display=\"block\"><mi latex=\"A\">A</mi><mo stretchy=\"false\" latex=\"\\Rightarrow\">&#x21D2;</mo><mi latex=\"B\">B</mi></math>"
+    },
+    "Aussagen_2": {
+      "tex": "x \\to \\infty",
+      "speech": "x geht gegen unendlich",
+      "code": "x \\to \\infty",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"x \\to \\infty\" display=\"block\"><mi latex=\"x\">x</mi><mo accent=\"false\" stretchy=\"false\" latex=\"\\to\">&#x2192;</mo><mi mathvariant=\"normal\" latex=\"\\infty\">&#x221E;</mi></math>"
+    },
+    "Aussagen_3": {
+      "tex": "x =1 \\vee x =2",
+      "speech": "x = 1 oder x = 2",
+      "code": "x =1 \\vee x =2",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"x =1 \\vee x =2\" display=\"block\"><mi latex=\"x\">x</mi><mo latex=\"=\">=</mo><mn latex=\"1\">1</mn><mo latex=\"\\vee\">&#x2228;</mo><mi latex=\"x\">x</mi><mo latex=\"=\">=</mo><mn latex=\"2\">2</mn></math>"
+    },
+    "Aussagen_4": {
+      "tex": "3x =12 \\Leftrightarrow x =4",
+      "speech": "3x = 12 ist äquivalent zu x = 4",
+      "code": "3x =12 \\Leftrightarrow x =4",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"3x =12 \\Leftrightarrow x =4\" display=\"block\"><mn latex=\"3\">3</mn><mi latex=\"x\">x</mi><mo latex=\"=\">=</mo><mn latex=\"2\">12</mn><mo stretchy=\"false\" latex=\"\\Leftrightarrow\">&#x21D4;</mo><mi latex=\"x\">x</mi><mo latex=\"=\">=</mo><mn latex=\"4\">4</mn></math>"
+    },
     "_comment4_": "Brüche  2) und Dezimalzahlen",
     "Brüche_0": {
       "tex": "\\frac{2}{3}",
