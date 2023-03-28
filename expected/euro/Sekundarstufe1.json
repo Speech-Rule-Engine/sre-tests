@@ -10,7 +10,7 @@
   "tests": {
     "_comment0_": "Mengen und deren Verknüpfungen",
     "Mengen_0": {
-      "expected": "⡌⠷⠀⠡⠂⠀⠣⠂⠀⠩⠂⠀⠹⠀⡌⠾"
+      "expected": "⡌⠷⠡⠂⠣⠂⠩⠂⠹⡌⠾"
     },
     "Mengen_1": {
       "expected": "⡏⠀⠶⠷⠭⠌⠭⠊⠎⠞⡏⠗⠊⠍⠵⠁⠓⠇⠾"
@@ -37,29 +37,44 @@
       "expected": "⡁⠀⡌⠃⠁⠉⠅⠎⠇⠁⠎⠓⠀⡃"
     },
     "Mengen_9": {
-      "expected": "⡌⠷⠀⡌⠾⠀⠀⠀⠃⠵⠺⠄⠀⡌⠦⡌⠙⠊⠎⠏⠇⠁⠽⠎⠞⠽⠇⠑⠷⡌⠑⠍⠏⠞⠽⠎⠑⠞⠾⡌⠴"
+      "expected": "⡌⠷⡌⠾"
     },
     "Mengen_10": {
       "expected": "⡌⠕⠧⠑⠗⠇⠊⠝⠑⠷⡁⠾"
     },
     "_comment1_": "Spezielle Zahlenmengen  1)",
     "Spezielle_0": {
-      "expected": "⡌⡝"
+      "expected": "⡌⠍⠁⠞⠓⠃⠃⠀⡝"
     },
     "Spezielle_1": {
-      "expected": "⡌⡵"
+      "expected": "⡌⠍⠁⠞⠓⠃⠃⠀⡵"
     },
     "Spezielle_2": {
-      "expected": "⡌⡵⠀⡸⠬⡮⠀⠤"
+      "expected": "⡌⠍⠁⠞⠓⠃⠃⠀⡵⡸⠬⡮⠤"
     },
     "Spezielle_3": {
-      "expected": "⡌⡟"
+      "expected": "⡌⠍⠁⠞⠓⠃⠃⠀⡟"
     },
     "Spezielle_4": {
-      "expected": "⡌⡗"
+      "expected": "⡌⠍⠁⠞⠓⠃⠃⠀⡗"
     },
     "Spezielle_5": {
       "expected": "⡌⠍⠁⠞⠓⠉⠁⠇⠀⡏"
+    },
+    "Spezielle_0a": {
+      "expected": "⡌⡝"
+    },
+    "Spezielle_1a": {
+      "expected": "⡌⡵"
+    },
+    "Spezielle_2a": {
+      "expected": "⡌⡵⡸⠬⡮⠀⠤"
+    },
+    "Spezielle_3a": {
+      "expected": "⡌⡟"
+    },
+    "Spezielle_4a": {
+      "expected": "⡌⡗"
     },
     "_comment2_": "Verknüpfungen von Zahlen",
     "Verknüpfungen_0": {
@@ -75,10 +90,10 @@
       "expected": "⠭⠀⡌⠏⠍⠩"
     },
     "Verknüpfungen_3": {
-      "expected": "⠣⠀⠔⠳⠀⡌⠛⠞⠡⠱"
+      "expected": "⠣⠀⠔⠳⠀⠘⠡⠱"
     },
     "Verknüpfungen_4": {
-      "expected": "⠳⠒⠹⠀⡌⠇⠞⠱"
+      "expected": "⠳⠀⠒⠹⠀⠰⠱"
     },
     "Verknüpfungen_5": {
       "expected": "⠭⠀⡌⠇⠑⠡⠬"
@@ -180,13 +195,13 @@
       "expected": "⡌⠎⠟⠗⠞⡷⠩⡾⠷⠁⡮⠣⠾⠀⠶⠁⡮⠷⠣⠀⠲⠩⠾"
     },
     "Potenzen,_8": {
-      "expected": "⠁⠀⡸⠡⠀⠖⠁⠀⡸⠝"
+      "expected": "⠁⡸⠡⠀⠖⠁⡸⠝"
     },
     "Potenzen,_9": {
-      "expected": "⠁⠀⡸⠷⠝⠀⠤⠡⠾"
+      "expected": "⠁⡸⠷⠝⠀⠤⠡⠾"
     },
     "Potenzen,_10": {
-      "expected": "⠷⠾⠀⡸⠷⠪⠱⠾⡮⠷⠣⠩⠳⠾⡌⠍⠁⠞⠓⠗⠍⠷⡥⠾"
+      "expected": "⠷⠾⡸⠷⠪⠱⠾⡮⠷⠣⠩⠳⠾⡌⠍⠁⠞⠓⠗⠍⠷⡥⠾"
     },
     "_comment6_": "Weitere Rechenoperationen, Funktionen",
     "Weitere_0": {
@@ -208,7 +223,7 @@
       "expected": "⠌⠁⠌"
     },
     "Weitere_6": {
-      "expected": "⡌⠇⠕⠛⠀⡸⠁⠭"
+      "expected": "⡌⠇⠕⠛⡸⠁⠭"
     },
     "Weitere_7": {
       "expected": "⡌⠇⠝⠀⠭"

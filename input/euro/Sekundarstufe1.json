@@ -56,10 +56,10 @@
       "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"A \\backslash B\" display=\"block\"><mi latex=\"A\">A</mi><mi mathvariant=\"normal\" latex=\"\\backslash\">&#x2216;</mi><mi latex=\"B\">B</mi></math>"
     },
     "Mengen_9": {
-      "tex": "\\{ \\}   bzw. \\(\\displaystyle{  \\emptyset  }\\)",
+      "tex": "\\{ \\}",
       "speech": "leere Menge als leere Mengenklammern bzw. als Symbol",
       "code": "\\{ \\} bzw. \\emptyset",
-      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\{ \\}   bzw. \\(\\displaystyle{  \\emptyset  }\\)\" display=\"block\"><mo fence=\"false\" stretchy=\"false\" latex=\"\\{\">{</mo><mo fence=\"false\" stretchy=\"false\" latex=\"\\}\">}</mo><mi latex=\"b\">b</mi><mi latex=\"z\">z</mi><mi latex=\"w\">w</mi><mo latex=\".\">.</mo><mtext mathcolor=\"red\" latex=\"\\(\">\\(</mtext><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow data-mjx-texclass=\"ORD\" latex=\"{\\emptyset}\"><mi mathvariant=\"normal\" latex=\"\\emptyset\">&#x2205;</mi></mrow><mtext mathcolor=\"red\" latex=\"\\)\">\\)</mtext></mstyle></math>"
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\{ \\}\" display=\"block\"><mo fence=\"false\" stretchy=\"false\" latex=\"\\{\">{</mo><mo fence=\"false\" stretchy=\"false\" latex=\"\\}\">}</mo></math>"
     },
     "Mengen_10": {
       "tex": "\\overline{A}",
@@ -69,40 +69,70 @@
     },
     "_comment1_": "Spezielle Zahlenmengen  1)",
     "Spezielle_0": {
-      "tex": "\\N",
+      "tex": "\\mathbb N",
       "speech": "Menge der natürlichen Zahlen",
-      "code": "\\mathbb N",
-      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\N\" display=\"block\"><mtext mathcolor=\"red\" latex=\"\\N\">\\N</mtext></math>"
+      "code": "\\N",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\mathbb N\" display=\"block\"><mrow data-mjx-texclass=\"ORD\" latex=\"\\mathbb N\"><mi mathvariant=\"double-struck\" latex=\"N\">N</mi></mrow></math>"
     },
     "Spezielle_1": {
-      "tex": "\\Z",
+      "tex": "\\mathbb Z",
       "speech": "Menge der ganzen Zahlen",
-      "code": "\\mathbb Z",
-      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\Z\" display=\"block\"><mtext mathcolor=\"red\" latex=\"\\Z\">\\Z</mtext></math>"
+      "code": "\\Z",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\mathbb Z\" display=\"block\"><mrow data-mjx-texclass=\"ORD\" latex=\"\\mathbb Z\"><mi mathvariant=\"double-struck\" latex=\"Z\">Z</mi></mrow></math>"
     },
     "Spezielle_2": {
-      "tex": "\\Z_0^-",
+      "tex": "\\mathbb Z_0^-",
       "speech": "Menge der negativen ganzen Zahlen einschließlich der Zahl 0",
-      "code": "\\mathbb Z_0^-",
-      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\Z_0^-\" display=\"block\"><msubsup latex=\"\\Z_0 ^-\"><mtext mathcolor=\"red\" latex=\"\\Z\">\\Z</mtext><mn latex=\"0\">0</mn><mo latex=\"-\">&#x2212;</mo></msubsup></math>"
+      "code": "\\Z_0^-",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\mathbb Z_0^-\" display=\"block\"><msubsup latex=\"\\mathbb Z_0 ^-\"><mrow data-mjx-texclass=\"ORD\" latex=\"\\mathbb Z\"><mi mathvariant=\"double-struck\" latex=\"Z\">Z</mi></mrow><mn latex=\"0\">0</mn><mo latex=\"-\">&#x2212;</mo></msubsup></math>"
     },
     "Spezielle_3": {
-      "tex": "\\Q",
+      "tex": "\\mathbb Q",
       "speech": "Menge der rationalen Zahlen",
-      "code": "\\mathbb Q",
-      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\Q\" display=\"block\"><mtext mathcolor=\"red\" latex=\"\\Q\">\\Q</mtext></math>"
+      "code": "\\Q",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\mathbb Q\" display=\"block\"><mrow data-mjx-texclass=\"ORD\" latex=\"\\mathbb Q\"><mi mathvariant=\"double-struck\" latex=\"Q\">Q</mi></mrow></math>"
     },
     "Spezielle_4": {
-      "tex": "\\R",
+      "tex": "\\mathbb R",
       "speech": "Menge der reellen Zahlen",
-      "code": "\\mathbb R",
-      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\R\" display=\"block\"><mtext mathcolor=\"red\" latex=\"\\R\">\\R</mtext></math>"
+      "code": "\\R",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\mathbb R\" display=\"block\"><mrow data-mjx-texclass=\"ORD\" latex=\"\\mathbb R\"><mi mathvariant=\"double-struck\" latex=\"R\">R</mi></mrow></math>"
     },
     "Spezielle_5": {
       "tex": "\\mathcal P",
       "speech": "Potenzmenge P",
       "code": "\\mathcal P",
       "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\mathcal P\" display=\"block\"><mrow data-mjx-texclass=\"ORD\" latex=\"\\mathcal P\"><mi data-mjx-variant=\"-tex-calligraphic\" mathvariant=\"script\" latex=\"P\">P</mi></mrow></math>"
+    },
+    "Spezielle_0a": {
+      "tex": "\\N",
+      "speech": "Menge der natürlichen Zahlen",
+      "code": "\\mathbb N",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\N\" display=\"block\"><mtext mathcolor=\"red\" latex=\"\\N\">\\N</mtext></math>"
+    },
+    "Spezielle_1a": {
+      "tex": "\\Z",
+      "speech": "Menge der ganzen Zahlen",
+      "code": "\\mathbb Z",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\Z\" display=\"block\"><mtext mathcolor=\"red\" latex=\"\\Z\">\\Z</mtext></math>"
+    },
+    "Spezielle_2a": {
+      "tex": "\\Z_0^-",
+      "speech": "Menge der negativen ganzen Zahlen einschließlich der Zahl 0",
+      "code": "\\mathbb Z_0^-",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\Z_0^-\" display=\"block\"><msubsup latex=\"\\Z_0 ^-\"><mtext mathcolor=\"red\" latex=\"\\Z\">\\Z</mtext><mn latex=\"0\">0</mn><mo latex=\"-\">&#x2212;</mo></msubsup></math>"
+    },
+    "Spezielle_3a": {
+      "tex": "\\Q",
+      "speech": "Menge der rationalen Zahlen",
+      "code": "\\mathbb Q",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\Q\" display=\"block\"><mtext mathcolor=\"red\" latex=\"\\Q\">\\Q</mtext></math>"
+    },
+    "Spezielle_4a": {
+      "tex": "\\R",
+      "speech": "Menge der reellen Zahlen",
+      "code": "\\mathbb R",
+      "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" latex=\"\\R\" display=\"block\"><mtext mathcolor=\"red\" latex=\"\\R\">\\R</mtext></math>"
     },
     "_comment2_": "Verknüpfungen von Zahlen",
     "Verknüpfungen_0": {
