@@ -248,7 +248,7 @@
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"3\"/> raised to the <mark name=\"1\"/> <say-as interpret-as=\"character\">i</say-as> <mark name=\"2\"/> squared <mark name=\"4\" kind=\"LAST\"/> power <break time=\"250ms\"/> </prosody></speak>"
     },
     "SimpleExponentSquared_2": {
-      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"5\"/> raised to the <mark name=\"1\"/> two <mark name=\"3\"/>   <mark name=\"2\"/> thirds <mark name=\"4\"/> squared <mark name=\"6\" kind=\"LAST\"/> power <break time=\"250ms\"/> </prosody></speak>"
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"5\"/> raised to the <mark name=\"1\"/> two <mark name=\"2\"/> thirds <mark name=\"4\"/> squared <mark name=\"6\" kind=\"LAST\"/> power <break time=\"250ms\"/> </prosody></speak>"
     },
     "SimpleExponentCubed_0": {
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"3\"/> raised to the <mark name=\"1\"/> 2 <mark name=\"2\"/> cubed <mark name=\"4\" kind=\"LAST\"/> power <break time=\"250ms\"/> </prosody></speak>"
@@ -257,7 +257,7 @@
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"3\"/> raised to the <mark name=\"1\"/> <say-as interpret-as=\"character\">i</say-as> <mark name=\"2\"/> cubed <mark name=\"4\" kind=\"LAST\"/> power <break time=\"250ms\"/> </prosody></speak>"
     },
     "SimpleExponentCubed_2": {
-      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"5\"/> raised to the <mark name=\"1\"/> two <mark name=\"3\"/>   <mark name=\"2\"/> thirds <mark name=\"4\"/> cubed <mark name=\"6\" kind=\"LAST\"/> power <break time=\"250ms\"/> </prosody></speak>"
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> 3 <mark name=\"5\"/> raised to the <mark name=\"1\"/> two <mark name=\"2\"/> thirds <mark name=\"4\"/> cubed <mark name=\"6\" kind=\"LAST\"/> power <break time=\"250ms\"/> </prosody></speak>"
     },
     "MultiRel": {
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> <say-as interpret-as=\"character\">a</say-as> <mark name=\"1\"/> is less than or equal to <mark name=\"2\"/> <say-as interpret-as=\"character\">b</say-as> <mark name=\"3\"/> equals <mark name=\"4\"/> <say-as interpret-as=\"character\">c</say-as> </prosody></speak>"

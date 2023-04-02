@@ -52,7 +52,7 @@ export class SpeechMarkupTest extends ClearspeakTest {
   /**
    * The markup to use.
    */
-  public markup: string = EngineConst.Markup.SSML_STEP;
+  public markup: string = EngineConst.Markup.SSML;
 
   protected automark: boolean = true;
 
@@ -63,6 +63,7 @@ export class SpeechMarkupTest extends ClearspeakTest {
     await super.setUpTest();
     return System.setupEngine({
       automark: this.automark,
+      cleanpause: true,
       markup: this.markup
     });
   }

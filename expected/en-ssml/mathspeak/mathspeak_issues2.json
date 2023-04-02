@@ -93,7 +93,7 @@
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> 5 </prosody></speak>"
     },
     "NegativeVulgarFraction_0": {
-      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> one <mark name=\"2\"/>   <mark name=\"1\"/> half <mark name=\"7\"/> minus <mark name=\"4\"/> five <mark name=\"6\"/>   <mark name=\"5\"/> eighteenths </prosody></speak>"
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> one <mark name=\"1\"/> half <mark name=\"7\"/> minus <mark name=\"4\"/> five <mark name=\"5\"/> eighteenths </prosody></speak>"
     },
     "NegativeVulgarFraction_1": {
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"4\"/> minus <mark name=\"3\"/> StartFraction <mark name=\"1\"/> 5.2 <mark name=\"2\"/> Over <say-as interpret-as=\"character\">a</say-as> <mark name=\"3\" kind=\"LAST\"/> EndFraction </prosody></speak>"
