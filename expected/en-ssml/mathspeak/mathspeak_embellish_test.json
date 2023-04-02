@@ -387,13 +387,13 @@
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> <say-as interpret-as=\"character\">a</say-as> <mark name=\"1\"/> colon <mark name=\"2\"/> Sub 2 <mark name=\"3\" kind=\"LAST\"/> Base <mark name=\"4\"/> <say-as interpret-as=\"character\">b</say-as> <mark name=\"5\"/> colon <mark name=\"6\"/> <say-as interpret-as=\"character\">c</say-as> </prosody></speak>"
     },
     "SemanticsElement_0_default": {
-      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <break time=\"100ms\"/> </prosody></speak>"
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\">  </prosody></speak>"
     },
     "SemanticsElement_0_brief": {
-      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <break time=\"100ms\"/> </prosody></speak>"
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\">  </prosody></speak>"
     },
     "SemanticsElement_0_sbrief": {
-      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <break time=\"100ms\"/> </prosody></speak>"
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\">  </prosody></speak>"
     },
     "SemanticsElement_1_default": {
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> <say-as interpret-as=\"character\">a</say-as> </prosody></speak>"
@@ -424,15 +424,15 @@
     },
     "SemanticsAnnotation_0_default": {
       "_comment0_": " This is not really legal markup.",
-      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <break time=\"100ms\"/> </prosody></speak>"
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\">  </prosody></speak>"
     },
     "SemanticsAnnotation_0_brief": {
       "_comment0_": " This is not really legal markup.",
-      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <break time=\"100ms\"/> </prosody></speak>"
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\">  </prosody></speak>"
     },
     "SemanticsAnnotation_0_sbrief": {
       "_comment0_": " This is not really legal markup.",
-      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <break time=\"100ms\"/> </prosody></speak>"
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\">  </prosody></speak>"
     },
     "SemanticsAnnotation_1_default": {
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> <say-as interpret-as=\"character\">a</say-as> </prosody></speak>"

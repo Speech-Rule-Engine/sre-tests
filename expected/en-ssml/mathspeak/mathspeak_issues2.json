@@ -165,13 +165,13 @@
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"10\"/> StartLayout <mark name=\"0\"/> 1st Row 1st Column a <break time=\"300ms\"/> <mark name=\"2\"/> 2nd Column c <break time=\"500ms\"/> <mark name=\"5\"/> 2nd Row 1st Column b <break time=\"300ms\"/> <mark name=\"7\"/> 2nd Column d <break time=\"500ms\"/> <mark name=\"10\" kind=\"LAST\"/> EndLayout </prosody></speak>"
     },
     "RelationsWithEmpty_0": {
-      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <break time=\"100ms\"/> <mark name=\"0\"/> less than or equals <mark name=\"1\"/> 2 </prosody></speak>"
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> less than or equals <mark name=\"1\"/> 2 </prosody></speak>"
     },
     "RelationsWithEmpty_1": {
-      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <break time=\"100ms\"/> <mark name=\"0\"/> equals <mark name=\"1\"/> 2 <mark name=\"2\"/> equals <break time=\"100ms\"/> </prosody></speak>"
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> equals <mark name=\"1\"/> 2 <mark name=\"2\"/> equals </prosody></speak>"
     },
     "RelationsWithEmpty_2": {
-      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <break time=\"100ms\"/> <mark name=\"0\"/> less than or equals <mark name=\"1\"/> 2 <mark name=\"2\"/> equals <break time=\"100ms\"/> </prosody></speak>"
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> less than or equals <mark name=\"1\"/> 2 <mark name=\"2\"/> equals </prosody></speak>"
     },
     "RelationsWithEmpty_3": {
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"9\"/> StartLayout <mark name=\"0\"/> 1st Row 1st Column 1 <break time=\"300ms\"/> <mark name=\"5\"/> 2nd Column <break time=\"100ms\"/> <mark name=\"3\"/> less than or equals <mark name=\"4\"/> 2 <break time=\"500ms\"/> <mark name=\"9\" kind=\"LAST\"/> EndLayout </prosody></speak>"
