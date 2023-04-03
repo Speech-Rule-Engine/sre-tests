@@ -54,12 +54,19 @@ export class MarkupTest extends AbstractJsonTest {
     '</mfrac>' +
     '</math>';
 
+  private defaults: {[key: string]: boolean} = {
+    automark: false,
+    mark: false,
+    character: false,
+    cleanpause: false
+  }
+
   /**
    * @override
    */
   public constructor() {
     super();
-    this.pickFields.push('markup', 'domain');
+    this.pickFields.push('markup', 'domain', 'options');
   }
 
   /**
@@ -94,13 +101,15 @@ export class MarkupTest extends AbstractJsonTest {
     expr: string,
     result: string,
     markup: string,
-    domain: string
+    domain: string,
+    options: {[key: string]: boolean}
   ) {
     expr = expr || MarkupTest.QUADRATIC;
-    System.setupEngine({
+    const features = Object.assign({}, {
       domain: domain || 'default',
       markup: markup ? markup.toLowerCase() : EngineConst.Markup.NONE
-    })
+    }, this.defaults, options);
+    System.setupEngine(features)
     const descrs = System.toDescription(expr);
     const output = AuralRendering.markup(descrs);
     this.assert.equal(output, result);
@@ -115,7 +124,8 @@ export class MarkupTest extends AbstractJsonTest {
         string,
         string,
         string,
-        string
+        string,
+        {[key: string]: boolean}
       ])
     );
   }
