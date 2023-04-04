@@ -126,7 +126,7 @@ export class PrefixMarkupTest extends PrefixTest {
   /**
    * The markup to use.
    */
-  public markup: string = EngineConst.Markup.SSML_STEP;
+  public markup: string = EngineConst.Markup.SSML;
 
   protected automark: boolean = true;
 
@@ -137,6 +137,7 @@ export class PrefixMarkupTest extends PrefixTest {
     await super.setUpTest();
     return System.setupEngine({
       automark: this.automark,
+      cleanpause: false,
       markup: this.markup
     });
   }
