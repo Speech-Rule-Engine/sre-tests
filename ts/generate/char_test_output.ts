@@ -17,19 +17,19 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import { Grammar } from '../../speech-rule-engine/js/rule_engine/grammar';
-import * as MathCompoundStore from '../../speech-rule-engine/js/rule_engine/math_compound_store';
-import * as Alphabet from '../../speech-rule-engine/js/speech_rules/alphabet';
-import * as System from '../../speech-rule-engine/js/common/system';
-import { Variables } from '../../speech-rule-engine/js/common/variables';
-import * as AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
-import { AuditoryDescription } from '../../speech-rule-engine/js/audio/auditory_description';
-import { SemanticMap } from '../../speech-rule-engine/js/semantic_tree/semantic_attr';
-import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
-import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
+import { Grammar } from '../../speech-rule-engine/js/rule_engine/grammar.js';
+import * as MathCompoundStore from '../../speech-rule-engine/js/rule_engine/math_compound_store.js';
+import * as Alphabet from '../../speech-rule-engine/js/speech_rules/alphabet.js';
+import * as System from '../../speech-rule-engine/js/common/system.js';
+import { Variables } from '../../speech-rule-engine/js/common/variables.js';
+import * as AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering.js';
+import { AuditoryDescription } from '../../speech-rule-engine/js/audio/auditory_description.js';
+import { SemanticMap } from '../../speech-rule-engine/js/semantic_tree/semantic_attr.js';
+import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine.js';
+import * as DomUtil from '../../speech-rule-engine/js/common/dom_util.js';
 
 import * as fs from 'fs';
-import * as tu from '../base/test_util';
+import * as tu from '../base/test_util.js';
 
 // All files that are generated.
 const InputPath = tu.TestPath.INPUT + 'common/';

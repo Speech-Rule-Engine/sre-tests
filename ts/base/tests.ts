@@ -17,11 +17,11 @@
  */
 
 import * as process from 'process';
-import { ExampleFiles } from '../classes/abstract_examples';
-import * as TestFactory from '../classes/test_factory';
-import { TestRunner } from './runner';
-import { TestUtil } from './test_util';
-import { Debugger } from '../../speech-rule-engine/js/common/debugger';
+import { ExampleFiles } from '../classes/abstract_examples.js';
+import * as TestFactory from '../classes/test_factory.js';
+import { TestRunner } from './runner.js';
+import { TestUtil } from './test_util.js';
+import { Debugger } from '../../speech-rule-engine/js/common/debugger.js';
 
 export class Tests {
   /**

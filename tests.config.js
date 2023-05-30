@@ -1,8 +1,8 @@
 // Script to setup tests.
 
-const fs = require('fs');
-const path = require('path');
-const cp = require('child_process');
+import * as fs from 'fs';
+import * as path from 'path';
+import * as cp from 'child_process';
 
 const indir = 'expected/';
 const jsondir = 'ts/json/';
@@ -67,8 +67,8 @@ let createJsonTests = function(files) {
     let depth = dir.match(/\//g);
     let base = Array((depth ? depth.length : 0) + 3).join('../');
     let content = [];
-    content.push(`import {ExampleFiles} from '${base}classes/abstract_examples';`);
-    content.push(`import {runJsonTest} from '${base}jest';`);
+    content.push(`import {ExampleFiles} from '${base}classes/abstract_examples.js';`);
+    content.push(`import {runJsonTest} from '${base}jest.js';`);
     content.push('ExampleFiles.noOutput = true;');
     content.push(`runJsonTest('${file}');`);
     content.push(``);
@@ -88,8 +88,8 @@ let createActionTests = function(files) {
   for (let [dir, files] of Object.entries(metaFiles)) {
     let filename = `${dir}.test.ts`;
     let content = [];
-    content.push(`import {ExampleFiles} from '../classes/abstract_examples';`);
-    content.push(`import {runJsonTest} from '../jest';`);
+    content.push(`import {ExampleFiles} from '../classes/abstract_examples.js';`);
+    content.push(`import {runJsonTest} from '../jest.js';`);
     content.push('ExampleFiles.noOutput = true;');
     files.forEach(x => content.push(`runJsonTest('${x}');`));
     content.push(``);
@@ -101,8 +101,8 @@ let createOutputTests = function() {
   for (let file of Object.keys(allOutputs)) {
     let files = allOutputs[file];
     let content = [];
-    content.push(`import {ExampleFiles} from '../classes/abstract_examples';`);
-    content.push(`import {runJsonTest} from '../jest';`);
+    content.push(`import {ExampleFiles} from '../classes/abstract_examples.js';`);
+    content.push(`import {runJsonTest} from '../jest.js';`);
     content.push('afterAll(() => {\n  ExampleFiles.closeFiles();\n});');
     files.forEach(x => content.push(`runJsonTest('${x}');`));
     content.push(``);
@@ -117,9 +117,9 @@ let createAnalyseTests = function() {
     let depth = dir.match(/\//g);
     let base = Array((depth ? depth.length : 0) + 3).join('../');
     let content = [];
-    content.push(`import AnalyticsTest from '${base}analytics/analytics_test';`);
-    content.push(`import {ExampleFiles} from '${base}classes/abstract_examples';`);
-    content.push(`import {runJsonTest} from '${base}jest';`);
+    content.push(`import AnalyticsTest from '${base}analytics/analytics_test.js';`);
+    content.push(`import {ExampleFiles} from '${base}classes/abstract_examples.js';`);
+    content.push(`import {runJsonTest} from '${base}jest.js';`);
     content.push('AnalyticsTest.deep = true;');
     content.push('ExampleFiles.noOutput = true;');
     content.push('afterAll(() => {\n  AnalyticsTest.output();\n});');
@@ -181,18 +181,16 @@ let createHtmlFiles = function() {
                    '<!DOCTYPE html>\n<html>\n<body>\n' + str+ '</body>\n</html>\n');
 };
 
-let cleanFiles = function() {
+export let cleanFiles = function() {
   fs.rmSync(jsondir, {force: true, recursive: true});
   fs.rmSync(alldir, {force: true, recursive: true});
   fs.rmSync(analysedir, {force: true, recursive: true});
 };
 
-let build = function() {
+export let build = function() {
   cleanFiles();
   createFiles();
   createHtmlFiles();
 };
 
-module.exports.build = build;
-module.exports.clean = cleanFiles;
 build();

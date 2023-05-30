@@ -19,10 +19,10 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import * as ProcessorFactory from '../../speech-rule-engine/js/common/processor_factory';
-import { Key } from './keycodes';
+import * as ProcessorFactory from '../../speech-rule-engine/js/common/processor_factory.js';
+import { Key } from './keycodes.js';
 
-import { SpeechTest } from './speech_test';
+import { SpeechTest } from './speech_test.js';
 
 export class SummaryTest extends SpeechTest {
   /**

@@ -20,12 +20,12 @@
 
 import * as admin from 'firebase-admin';
 import * as path from 'path';
-import { JsonTest, JsonTests, TestUtil } from '../base/test_util';
-import { AbstractJsonTest } from '../classes/abstract_test';
-import { get } from '../classes/test_factory';
-import { addToFile } from '../generate/fill_tests';
-import * as FC from './fire_constants';
-import * as FU from './fire_util';
+import { JsonTest, JsonTests, TestUtil } from '../base/test_util.js';
+import { AbstractJsonTest } from '../classes/abstract_test.js';
+import { get } from '../classes/test_factory.js';
+import { addToFile } from '../generate/fill_tests.js';
+import * as FC from './fire_constants.js';
+import * as FU from './fire_util.js';
 
 /**
  * Inits the firebase communication

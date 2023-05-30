@@ -17,7 +17,7 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import { FireTest } from '../firebase/fire_test';
+import { FireTest } from '../firebase/fire_test.js';
 
 class Buttons {
   /** The container span for buttons  */

@@ -17,16 +17,16 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import { JsonTest } from '../base/test_util';
-import * as FC from '../firebase/fire_constants';
-import { FireTest } from '../firebase/fire_test';
-import * as BT from '../generate/braille_transformer';
+import { JsonTest } from '../base/test_util.js';
+import * as FC from '../firebase/fire_constants.js';
+import { FireTest } from '../firebase/fire_test.js';
+import * as BT from '../generate/braille_transformer.js';
 import {
   harvest as harvestButtons,
   init as initButtons,
   updateAccess
-} from './buttons';
-import * as LU from './local_util';
+} from './buttons.js';
+import * as LU from './local_util.js';
 
 const transformers: Map<string, BT.BrailleTransformer> = new Map<
   string,

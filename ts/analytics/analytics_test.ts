@@ -18,12 +18,12 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
-import { SpeechRule } from '../../speech-rule-engine/js/rule_engine/speech_rule';
+import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine.js';
+import { SpeechRule } from '../../speech-rule-engine/js/rule_engine/speech_rule.js';
 
 import * as fs from 'fs';
-import { TestPath, TestUtil } from '../base/test_util';
-import AnalyticsUtil from './analytics_util';
+import { TestPath, TestUtil } from '../base/test_util.js';
+import AnalyticsUtil from './analytics_util.js';
 
 // Saves
 //  * All applicable rules for a test case

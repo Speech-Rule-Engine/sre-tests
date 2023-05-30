@@ -18,14 +18,14 @@
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import * as System from '../../speech-rule-engine/js/common/system';
+import * as System from '../../speech-rule-engine/js/common/system.js';
 import {
   Axis,
   DynamicCstr
-} from '../../speech-rule-engine/js/rule_engine/dynamic_cstr';
+} from '../../speech-rule-engine/js/rule_engine/dynamic_cstr.js';
 
-import { TestUtil } from '../base/test_util';
-import { AbstractExamples } from './abstract_examples';
+import { TestUtil } from '../base/test_util.js';
+import { AbstractExamples } from './abstract_examples.js';
 
 export class SpeechTest extends AbstractExamples {
   /**

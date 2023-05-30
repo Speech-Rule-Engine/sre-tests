@@ -17,8 +17,8 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import { JsonTest, JsonTests } from '../base/test_util';
-import * as FC from './fire_constants';
+import { JsonTest, JsonTests } from '../base/test_util.js';
+import * as FC from './fire_constants.js';
 
 /**
  * Verbosity flag.

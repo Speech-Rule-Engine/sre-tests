@@ -19,11 +19,11 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
-import * as System from '../../speech-rule-engine/js/common/system';
-import { Key } from './keycodes';
+import * as EngineConst from '../../speech-rule-engine/js/common/engine_const.js';
+import * as System from '../../speech-rule-engine/js/common/system.js';
+import { Key } from './keycodes.js';
 
-import { AbstractJsonTest } from './abstract_test';
+import { AbstractJsonTest } from './abstract_test.js';
 
 export class ApiTest extends AbstractJsonTest {
   /**
