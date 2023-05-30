@@ -18,7 +18,7 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import admin = require('firebase-admin');
+import * as admin from 'firebase-admin';
 import * as path from 'path';
 import { JsonTest, JsonTests, TestUtil } from '../base/test_util';
 import { AbstractJsonTest } from '../classes/abstract_test';

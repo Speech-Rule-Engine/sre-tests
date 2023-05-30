@@ -19,7 +19,7 @@
  * @author sorge@google.com (Volker Sorge)
  */
 
-import xmldom = require('xmldom-sre');
+import * as xmldom from 'xmldom-sre';
 import { AbstractExamples } from './abstract_examples';
 import { AbstractJsonTest } from './abstract_test';
 import { JsonTests } from '../base/test_util';
