@@ -18,8 +18,8 @@
     "test:files": "npx jest --testPathIgnorePatterns js/output --testPathIgnorePatterns js/analyse",
     "test:output": "npx jest --testPathPattern js/output",
     "test:analytics": "npx rimraf analysis; npx jest --testPathPattern js/analyse; npm run test:allrules",
-    "test:allrules": "echo \"import AnalyticsTest from './js/analytics/analytics_test'; AnalyticsTest.outputAllRules()\" | node -r esm",
-    "analyse:tries": "echo \"import AnalyticsTrie from './js/analytics/analytics_trie'; AnalyticsTrie.output()\" | node -r esm",
+    "test:allrules": "echo \"import('./js/module_loader.js').then((m) => m.loadPromise('at')).then(m => m.default.outputAllRules())\" | node ",
+    "analyse:tries": "echo \"import('./js/module_loader.js').then((m) => m.loadPromise('atrie')).then(m => m.default.output())\" | node ",
     "clean": "npx rimraf dist js ts/output ts/json ts/analyse ts/actions coverage"
   },
   "maintainers": [
