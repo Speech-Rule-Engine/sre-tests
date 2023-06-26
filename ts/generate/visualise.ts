@@ -17,7 +17,7 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import { TestPath, TestUtil } from '../base/test_util';
+import { TestPath, TestUtil } from '../base/test_util.js';
 import * as fs from 'fs';
 import * as path from 'path';
 

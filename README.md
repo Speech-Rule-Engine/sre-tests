@@ -354,7 +354,7 @@ REPL. There are two ways to ensure that all the necessary files in SRE can be fo
 
     ``` javascript
     process.env['SRE_JSON_PATH'] = '../speech-rule-engine/lib/mathmaps';
-    let gt = require('./js/generate/generate_tests.js');
+    (await import('./js/module_loader.js')).load('gt');
     ...
     ```
 
@@ -435,7 +435,7 @@ these tests still need to be added manually or with a `fill_tests` method below.
 Tests can be generated or regenerated using the `fill_tests` module:
 
 ``` javascript
-let ft = require('./js/generate/fill_tests.js');
+(await import('./js/module_loader.js')).load('ft');
 ```
 
 Each of the following commands takes an path to a file with expected values and
@@ -500,7 +500,7 @@ the symbol. Finally, currently no extra tests are generated for `si_unit`.
 ### Re-generating Tests
 
 ``` javascript
-let cto = require('./js/generate/char_test_output.js');
+(await import('./js/module_loader.js')).load('cto');
 ```
 Make sure the `AllConstraints` variable is up to date for all locales, before loading and running:
 
@@ -594,7 +594,7 @@ splitNemethForFire
 ### Copying tests
 
 ``` javascript
-let ct = require('./js/generate/copy_tests.js');
+(await import('./js/module_loader.js')).load('ct');
 ```
 
 Methods to copy test files from existing tests for a locale to tests for a new

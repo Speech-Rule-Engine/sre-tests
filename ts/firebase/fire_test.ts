@@ -17,9 +17,9 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import { JsonTest, JsonTests } from '../base/test_util';
-import * as FC from './fire_constants';
-import * as FU from './fire_util';
+import { JsonTest, JsonTests } from '../base/test_util.js';
+import * as FC from './fire_constants.js';
+import * as FU from './fire_util.js';
 
 export class FireTest {
   public tests: JsonTests;

@@ -16,14 +16,14 @@
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
-import * as System from '../../speech-rule-engine/js/common/system';
-import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
-import { Grammar } from '../../speech-rule-engine/js/rule_engine/grammar';
-import * as AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
-import { AuditoryDescription } from '../../speech-rule-engine/js/audio/auditory_description';
+import * as DomUtil from '../../speech-rule-engine/js/common/dom_util.js';
+import * as System from '../../speech-rule-engine/js/common/system.js';
+import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine.js';
+import { Grammar } from '../../speech-rule-engine/js/rule_engine/grammar.js';
+import * as AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering.js';
+import { AuditoryDescription } from '../../speech-rule-engine/js/audio/auditory_description.js';
 
-import { SpeechTest } from './speech_test';
+import { SpeechTest } from './speech_test.js';
 
 export class SymbolTest extends SpeechTest {
   /**
