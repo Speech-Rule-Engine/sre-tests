@@ -80,13 +80,13 @@
       "expected": "루트 아래 a 위 b 기준 x 아래 c 위 d 루트끝"
     },
     "PartialTensorABCDRootR_default": {
-      "expected": "루트시작 아래첨자 a 위첨자 b 기준 x 아래첨자 c 위첨자 d 루트끝 r"
+      "expected": "루트시작 아래첨자 a 위첨자 b 기준 x 아래첨자 c 위첨자 d 기준 루트끝 r"
     },
     "PartialTensorABCDRootR_brief": {
-      "expected": "루트시작 아래 a 위 b 기준 x 아래 c 위 d 루트끝 r"
+      "expected": "루트시작 아래 a 위 b 기준 x 아래 c 위 d 기준 루트끝 r"
     },
     "PartialTensorABCDRootR_sbrief": {
-      "expected": "루트 아래 a 위 b 기준 x 아래 c 위 d 루트끝 r"
+      "expected": "루트 아래 a 위 b 기준 x 아래 c 위 d 기준 루트끝 r"
     },
     "PartialTensorABCDRRoot_default": {
       "expected": "루트시작 아래첨자 a 위첨자 b 기준 x 아래첨자 c 위첨자 d 기준 r 루트끝"
@@ -107,13 +107,13 @@
       "expected": "분수 아래 a 위 b 기준 x 아래 c 위 d 분의 1 분수끝"
     },
     "PartialTensorABCDFracR_default": {
-      "expected": "분수시작 아래첨자 a 위첨자 b 기준 x 아래첨자 c 위첨자 d 분의 1 분수끝 r"
+      "expected": "분수시작 아래첨자 a 위첨자 b 기준 x 아래첨자 c 위첨자 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorABCDFracR_brief": {
-      "expected": "분수시작 아래 a 위 b 기준 x 아래 c 위 d 분의 1 분수끝 r"
+      "expected": "분수시작 아래 a 위 b 기준 x 아래 c 위 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorABCDFracR_sbrief": {
-      "expected": "분수 아래 a 위 b 기준 x 아래 c 위 d 분의 1 분수끝 r"
+      "expected": "분수 아래 a 위 b 기준 x 아래 c 위 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorABCDRFrac_default": {
       "expected": "분수시작 아래첨자 a 위첨자 b 기준 x 아래첨자 c 위첨자 d 기준 r 분의 1 분수끝"
@@ -124,7 +124,6 @@
     "PartialTensorABCDRFrac_sbrief": {
       "expected": "분수 아래 a 위 b 기준 x 아래 c 위 d 기준 r 분의 1 분수끝"
     },
-
     "_comment20_": "New completion.",
     "PartialTensorB_default": {
       "expected": "위첨자 b 기준 x"
@@ -136,13 +135,13 @@
       "expected": "위 b 기준 x"
     },
     "PartialTensorBR_default": {
-      "expected": "위첨자 b 기준 x 기준 r"
+      "expected": "위첨자 b 기준 x r"
     },
     "PartialTensorBR_brief": {
-      "expected": "위 b 기준 x 기준 r"
+      "expected": "위 b 기준 x r"
     },
     "PartialTensorBR_sbrief": {
-      "expected": "위 b 기준 x 기준 r"
+      "expected": "위 b 기준 x r"
     },
     "PartialTensorBRootR_default": {
       "expected": "루트시작 위첨자 b 기준 x 루트끝 r"
@@ -154,13 +153,13 @@
       "expected": "루트 위 b 기준 x 루트끝 r"
     },
     "PartialTensorBRRoot_default": {
-      "expected": "루트시작 위첨자 b 기준 x 기준 r 루트끝"
+      "expected": "루트시작 위첨자 b 기준 x r 루트끝"
     },
     "PartialTensorBRRoot_brief": {
-      "expected": "루트시작 위 b 기준 x 기준 r 루트끝"
+      "expected": "루트시작 위 b 기준 x r 루트끝"
     },
     "PartialTensorBRRoot_sbrief": {
-      "expected": "루트 위 b 기준 x 기준 r 루트끝"
+      "expected": "루트 위 b 기준 x r 루트끝"
     },
     "PartialTensorBFracR_default": {
       "expected": "분수시작 위첨자 b 기준 x 분의 1 분수끝 r"
@@ -172,13 +171,13 @@
       "expected": "분수 위 b 기준 x 분의 1 분수끝 r"
     },
     "PartialTensorBRFrac_default": {
-      "expected": "분수시작 위첨자 b 기준 x 기준 r 분의 1 분수끝"
+      "expected": "분수시작 위첨자 b 기준 x r 분의 1 분수끝"
     },
     "PartialTensorBRFrac_brief": {
-      "expected": "분수시작 위 b 기준 x 기준 r 분의 1 분수끝"
+      "expected": "분수시작 위 b 기준 x r 분의 1 분수끝"
     },
     "PartialTensorBRFrac_sbrief": {
-      "expected": "분수 위 b 기준 x 기준 r 분의 1 분수끝"
+      "expected": "분수 위 b 기준 x r 분의 1 분수끝"
     },
     "PartialTensorBD_default": {
       "expected": "위첨자 b 기준 x 위첨자 d"
@@ -199,13 +198,13 @@
       "expected": "위 b 기준 x 위 d 기준 r"
     },
     "PartialTensorBDRootR_default": {
-      "expected": "루트시작 위첨자 b 기준 x 위첨자 d 루트끝 r"
+      "expected": "루트시작 위첨자 b 기준 x 위첨자 d 기준 루트끝 r"
     },
     "PartialTensorBDRootR_brief": {
-      "expected": "루트시작 위 b 기준 x 위 d 루트끝 r"
+      "expected": "루트시작 위 b 기준 x 위 d 기준 루트끝 r"
     },
     "PartialTensorBDRootR_sbrief": {
-      "expected": "루트 위 b 기준 x 위 d 루트끝 r"
+      "expected": "루트 위 b 기준 x 위 d 기준 루트끝 r"
     },
     "PartialTensorBDRRoot_default": {
       "expected": "루트시작 위첨자 b 기준 x 위첨자 d 기준 r 루트끝"
@@ -217,13 +216,13 @@
       "expected": "루트 위 b 기준 x 위 d 기준 r 루트끝"
     },
     "PartialTensorBDFracR_default": {
-      "expected": "분수시작 위첨자 b 기준 x 위첨자 d 분의 1 분수끝 r"
+      "expected": "분수시작 위첨자 b 기준 x 위첨자 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorBDFracR_brief": {
-      "expected": "분수시작 위 b 기준 x 위 d 분의 1 분수끝 r"
+      "expected": "분수시작 위 b 기준 x 위 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorBDFracR_sbrief": {
-      "expected": "분수 위 b 기준 x 위 d 분의 1 분수끝 r"
+      "expected": "분수 위 b 기준 x 위 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorBDRFrac_default": {
       "expected": "분수시작 위첨자 b 기준 x 위첨자 d 기준 r 분의 1 분수끝"
@@ -253,13 +252,13 @@
       "expected": "위 b 기준 x 아래 c 기준 r"
     },
     "PartialTensorBCRootR_default": {
-      "expected": "루트시작 위첨자 b 기준 x 아래첨자 c 루트끝 r"
+      "expected": "루트시작 위첨자 b 기준 x 아래첨자 c 기준 루트끝 r"
     },
     "PartialTensorBCRootR_brief": {
-      "expected": "루트시작 위 b 기준 x 아래 c 루트끝 r"
+      "expected": "루트시작 위 b 기준 x 아래 c 기준 루트끝 r"
     },
     "PartialTensorBCRootR_sbrief": {
-      "expected": "루트 위 b 기준 x 아래 c 루트끝 r"
+      "expected": "루트 위 b 기준 x 아래 c 기준 루트끝 r"
     },
     "PartialTensorBCRRoot_default": {
       "expected": "루트시작 위첨자 b 기준 x 아래첨자 c 기준 r 루트끝"
@@ -271,13 +270,13 @@
       "expected": "루트 위 b 기준 x 아래 c 기준 r 루트끝"
     },
     "PartialTensorBCFracR_default": {
-      "expected": "분수시작 위첨자 b 기준 x 아래첨자 c 분의 1 분수끝 r"
+      "expected": "분수시작 위첨자 b 기준 x 아래첨자 c 기준 분의 1 분수끝 r"
     },
     "PartialTensorBCFracR_brief": {
-      "expected": "분수시작 위 b 기준 x 아래 c 분의 1 분수끝 r"
+      "expected": "분수시작 위 b 기준 x 아래 c 기준 분의 1 분수끝 r"
     },
     "PartialTensorBCFracR_sbrief": {
-      "expected": "분수 위 b 기준 x 아래 c 분의 1 분수끝 r"
+      "expected": "분수 위 b 기준 x 아래 c 기준 분의 1 분수끝 r"
     },
     "PartialTensorBCRFrac_default": {
       "expected": "분수시작 위첨자 b 기준 x 아래첨자 c 기준 r 분의 1 분수끝"
@@ -307,13 +306,13 @@
       "expected": "위 b 기준 x 아래 c 위 d 기준 r"
     },
     "PartialTensorBCDRootR_default": {
-      "expected": "루트시작 위첨자 b 기준 x 아래첨자 c 위첨자 d 루트끝 r"
+      "expected": "루트시작 위첨자 b 기준 x 아래첨자 c 위첨자 d 기준 루트끝 r"
     },
     "PartialTensorBCDRootR_brief": {
-      "expected": "루트시작 위 b 기준 x 아래 c 위 d 루트끝 r"
+      "expected": "루트시작 위 b 기준 x 아래 c 위 d 기준 루트끝 r"
     },
     "PartialTensorBCDRootR_sbrief": {
-      "expected": "루트 위 b 기준 x 아래 c 위 d 루트끝 r"
+      "expected": "루트 위 b 기준 x 아래 c 위 d 기준 루트끝 r"
     },
     "PartialTensorBCDRRoot_default": {
       "expected": "루트시작 위첨자 b 기준 x 아래첨자 c 위첨자 d 기준 r 루트끝"
@@ -325,13 +324,13 @@
       "expected": "루트 위 b 기준 x 아래 c 위 d 기준 r 루트끝"
     },
     "PartialTensorBCDFracR_default": {
-      "expected": "분수시작 위첨자 b 기준 x 아래첨자 c 위첨자 d 분의 1 분수끝 r"
+      "expected": "분수시작 위첨자 b 기준 x 아래첨자 c 위첨자 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorBCDFracR_brief": {
-      "expected": "분수시작 위 b 기준 x 아래 c 위 d 분의 1 분수끝 r"
+      "expected": "분수시작 위 b 기준 x 아래 c 위 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorBCDFracR_sbrief": {
-      "expected": "분수 위 b 기준 x 아래 c 위 d 분의 1 분수끝 r"
+      "expected": "분수 위 b 기준 x 아래 c 위 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorBCDRFrac_default": {
       "expected": "분수시작 위첨자 b 기준 x 아래첨자 c 위첨자 d 기준 r 분의 1 분수끝"
@@ -352,13 +351,13 @@
       "expected": "아래 a 기준 x"
     },
     "PartialTensorAR_default": {
-      "expected": "아래첨자 a 기준 x 기준 r"
+      "expected": "아래첨자 a 기준 x r"
     },
     "PartialTensorAR_brief": {
-      "expected": "아래 a 기준 x 기준 r"
+      "expected": "아래 a 기준 x r"
     },
     "PartialTensorAR_sbrief": {
-      "expected": "아래 a 기준 x 기준 r"
+      "expected": "아래 a 기준 x r"
     },
     "PartialTensorARootR_default": {
       "expected": "루트시작 아래첨자 a 기준 x 루트끝 r"
@@ -370,13 +369,13 @@
       "expected": "루트 아래 a 기준 x 루트끝 r"
     },
     "PartialTensorARRoot_default": {
-      "expected": "루트시작 아래첨자 a 기준 x 기준 r 루트끝"
+      "expected": "루트시작 아래첨자 a 기준 x r 루트끝"
     },
     "PartialTensorARRoot_brief": {
-      "expected": "루트시작 아래 a 기준 x 기준 r 루트끝"
+      "expected": "루트시작 아래 a 기준 x r 루트끝"
     },
     "PartialTensorARRoot_sbrief": {
-      "expected": "루트 아래 a 기준 x 기준 r 루트끝"
+      "expected": "루트 아래 a 기준 x r 루트끝"
     },
     "PartialTensorAFracR_default": {
       "expected": "분수시작 아래첨자 a 기준 x 분의 1 분수끝 r"
@@ -388,13 +387,13 @@
       "expected": "분수 아래 a 기준 x 분의 1 분수끝 r"
     },
     "PartialTensorARFrac_default": {
-      "expected": "분수시작 아래첨자 a 기준 x 기준 r 분의 1 분수끝"
+      "expected": "분수시작 아래첨자 a 기준 x r 분의 1 분수끝"
     },
     "PartialTensorARFrac_brief": {
-      "expected": "분수시작 아래 a 기준 x 기준 r 분의 1 분수끝"
+      "expected": "분수시작 아래 a 기준 x r 분의 1 분수끝"
     },
     "PartialTensorARFrac_sbrief": {
-      "expected": "분수 아래 a 기준 x 기준 r 분의 1 분수끝"
+      "expected": "분수 아래 a 기준 x r 분의 1 분수끝"
     },
     "PartialTensorAD_default": {
       "expected": "아래첨자 a 기준 x 위첨자 d"
@@ -415,13 +414,13 @@
       "expected": "아래 a 기준 x 위 d 기준 r"
     },
     "PartialTensorADRootR_default": {
-      "expected": "루트시작 아래첨자 a 기준 x 위첨자 d 루트끝 r"
+      "expected": "루트시작 아래첨자 a 기준 x 위첨자 d 기준 루트끝 r"
     },
     "PartialTensorADRootR_brief": {
-      "expected": "루트시작 아래 a 기준 x 위 d 루트끝 r"
+      "expected": "루트시작 아래 a 기준 x 위 d 기준 루트끝 r"
     },
     "PartialTensorADRootR_sbrief": {
-      "expected": "루트 아래 a 기준 x 위 d 루트끝 r"
+      "expected": "루트 아래 a 기준 x 위 d 기준 루트끝 r"
     },
     "PartialTensorADRRoot_default": {
       "expected": "루트시작 아래첨자 a 기준 x 위첨자 d 기준 r 루트끝"
@@ -433,13 +432,13 @@
       "expected": "루트 아래 a 기준 x 위 d 기준 r 루트끝"
     },
     "PartialTensorADFracR_default": {
-      "expected": "분수시작 아래첨자 a 기준 x 위첨자 d 분의 1 분수끝 r"
+      "expected": "분수시작 아래첨자 a 기준 x 위첨자 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorADFracR_brief": {
-      "expected": "분수시작 아래 a 기준 x 위 d 분의 1 분수끝 r"
+      "expected": "분수시작 아래 a 기준 x 위 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorADFracR_sbrief": {
-      "expected": "분수 아래 a 기준 x 위 d 분의 1 분수끝 r"
+      "expected": "분수 아래 a 기준 x 위 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorADRFrac_default": {
       "expected": "분수시작 아래첨자 a 기준 x 위첨자 d 기준 r 분의 1 분수끝"
@@ -469,13 +468,13 @@
       "expected": "아래 a 기준 x 아래 c 기준 r"
     },
     "PartialTensorACRootR_default": {
-      "expected": "루트시작 아래첨자 a 기준 x 아래첨자 c 루트끝 r"
+      "expected": "루트시작 아래첨자 a 기준 x 아래첨자 c 기준 루트끝 r"
     },
     "PartialTensorACRootR_brief": {
-      "expected": "루트시작 아래 a 기준 x 아래 c 루트끝 r"
+      "expected": "루트시작 아래 a 기준 x 아래 c 기준 루트끝 r"
     },
     "PartialTensorACRootR_sbrief": {
-      "expected": "루트 아래 a 기준 x 아래 c 루트끝 r"
+      "expected": "루트 아래 a 기준 x 아래 c 기준 루트끝 r"
     },
     "PartialTensorACRRoot_default": {
       "expected": "루트시작 아래첨자 a 기준 x 아래첨자 c 기준 r 루트끝"
@@ -487,13 +486,13 @@
       "expected": "루트 아래 a 기준 x 아래 c 기준 r 루트끝"
     },
     "PartialTensorACFracR_default": {
-      "expected": "분수시작 아래첨자 a 기준 x 아래첨자 c 분의 1 분수끝 r"
+      "expected": "분수시작 아래첨자 a 기준 x 아래첨자 c 기준 분의 1 분수끝 r"
     },
     "PartialTensorACFracR_brief": {
-      "expected": "분수시작 아래 a 기준 x 아래 c 분의 1 분수끝 r"
+      "expected": "분수시작 아래 a 기준 x 아래 c 기준 분의 1 분수끝 r"
     },
     "PartialTensorACFracR_sbrief": {
-      "expected": "분수 아래 a 기준 x 아래 c 분의 1 분수끝 r"
+      "expected": "분수 아래 a 기준 x 아래 c 기준 분의 1 분수끝 r"
     },
     "PartialTensorACRFrac_default": {
       "expected": "분수시작 아래첨자 a 기준 x 아래첨자 c 기준 r 분의 1 분수끝"
@@ -523,13 +522,13 @@
       "expected": "아래 a 기준 x 아래 c 위 d 기준 r"
     },
     "PartialTensorACDRootR_default": {
-      "expected": "루트시작 아래첨자 a 기준 x 아래첨자 c 위첨자 d 루트끝 r"
+      "expected": "루트시작 아래첨자 a 기준 x 아래첨자 c 위첨자 d 기준 루트끝 r"
     },
     "PartialTensorACDRootR_brief": {
-      "expected": "루트시작 아래 a 기준 x 아래 c 위 d 루트끝 r"
+      "expected": "루트시작 아래 a 기준 x 아래 c 위 d 기준 루트끝 r"
     },
     "PartialTensorACDRootR_sbrief": {
-      "expected": "루트 아래 a 기준 x 아래 c 위 d 루트끝 r"
+      "expected": "루트 아래 a 기준 x 아래 c 위 d 기준 루트끝 r"
     },
     "PartialTensorACDRRoot_default": {
       "expected": "루트시작 아래첨자 a 기준 x 아래첨자 c 위첨자 d 기준 r 루트끝"
@@ -541,13 +540,13 @@
       "expected": "루트 아래 a 기준 x 아래 c 위 d 기준 r 루트끝"
     },
     "PartialTensorACDFracR_default": {
-      "expected": "분수시작 아래첨자 a 기준 x 아래첨자 c 위첨자 d 분의 1 분수끝 r"
+      "expected": "분수시작 아래첨자 a 기준 x 아래첨자 c 위첨자 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorACDFracR_brief": {
-      "expected": "분수시작 아래 a 기준 x 아래 c 위 d 분의 1 분수끝 r"
+      "expected": "분수시작 아래 a 기준 x 아래 c 위 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorACDFracR_sbrief": {
-      "expected": "분수 아래 a 기준 x 아래 c 위 d 분의 1 분수끝 r"
+      "expected": "분수 아래 a 기준 x 아래 c 위 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorACDRFrac_default": {
       "expected": "분수시작 아래첨자 a 기준 x 아래첨자 c 위첨자 d 기준 r 분의 1 분수끝"
@@ -559,13 +558,13 @@
       "expected": "분수 아래 a 기준 x 아래 c 위 d 기준 r 분의 1 분수끝"
     },
     "PartialTensorABR_default": {
-      "expected": "아래첨자 a 위첨자 b 기준 x 기준 r"
+      "expected": "아래첨자 a 위첨자 b 기준 x r"
     },
     "PartialTensorABR_brief": {
-      "expected": "아래 a 위 b 기준 x 기준 r"
+      "expected": "아래 a 위 b 기준 x r"
     },
     "PartialTensorABR_sbrief": {
-      "expected": "아래 a 위 b 기준 x 기준 r"
+      "expected": "아래 a 위 b 기준 x r"
     },
     "PartialTensorABRootR_default": {
       "expected": "루트시작 아래첨자 a 위첨자 b 기준 x 루트끝 r"
@@ -577,13 +576,13 @@
       "expected": "루트 아래 a 위 b 기준 x 루트끝 r"
     },
     "PartialTensorABRRoot_default": {
-      "expected": "루트시작 아래첨자 a 위첨자 b 기준 x 기준 r 루트끝"
+      "expected": "루트시작 아래첨자 a 위첨자 b 기준 x r 루트끝"
     },
     "PartialTensorABRRoot_brief": {
-      "expected": "루트시작 아래 a 위 b 기준 x 기준 r 루트끝"
+      "expected": "루트시작 아래 a 위 b 기준 x r 루트끝"
     },
     "PartialTensorABRRoot_sbrief": {
-      "expected": "루트 아래 a 위 b 기준 x 기준 r 루트끝"
+      "expected": "루트 아래 a 위 b 기준 x r 루트끝"
     },
     "PartialTensorABFracR_default": {
       "expected": "분수시작 아래첨자 a 위첨자 b 기준 x 분의 1 분수끝 r"
@@ -595,13 +594,13 @@
       "expected": "분수 아래 a 위 b 기준 x 분의 1 분수끝 r"
     },
     "PartialTensorABRFrac_default": {
-      "expected": "분수시작 아래첨자 a 위첨자 b 기준 x 기준 r 분의 1 분수끝"
+      "expected": "분수시작 아래첨자 a 위첨자 b 기준 x r 분의 1 분수끝"
     },
     "PartialTensorABRFrac_brief": {
-      "expected": "분수시작 아래 a 위 b 기준 x 기준 r 분의 1 분수끝"
+      "expected": "분수시작 아래 a 위 b 기준 x r 분의 1 분수끝"
     },
     "PartialTensorABRFrac_sbrief": {
-      "expected": "분수 아래 a 위 b 기준 x 기준 r 분의 1 분수끝"
+      "expected": "분수 아래 a 위 b 기준 x r 분의 1 분수끝"
     },
     "PartialTensorABDR_default": {
       "expected": "아래첨자 a 위첨자 b 기준 x 위첨자 d 기준 r"
@@ -613,13 +612,13 @@
       "expected": "아래 a 위 b 기준 x 위 d 기준 r"
     },
     "PartialTensorABDRootR_default": {
-      "expected": "루트시작 아래첨자 a 위첨자 b 기준 x 위첨자 d 루트끝 r"
+      "expected": "루트시작 아래첨자 a 위첨자 b 기준 x 위첨자 d 기준 루트끝 r"
     },
     "PartialTensorABDRootR_brief": {
-      "expected": "루트시작 아래 a 위 b 기준 x 위 d 루트끝 r"
+      "expected": "루트시작 아래 a 위 b 기준 x 위 d 기준 루트끝 r"
     },
     "PartialTensorABDRootR_sbrief": {
-      "expected": "루트 아래 a 위 b 기준 x 위 d 루트끝 r"
+      "expected": "루트 아래 a 위 b 기준 x 위 d 기준 루트끝 r"
     },
     "PartialTensorABDRRoot_default": {
       "expected": "루트시작 아래첨자 a 위첨자 b 기준 x 위첨자 d 기준 r 루트끝"
@@ -631,13 +630,13 @@
       "expected": "루트 아래 a 위 b 기준 x 위 d 기준 r 루트끝"
     },
     "PartialTensorABDFracR_default": {
-      "expected": "분수시작 아래첨자 a 위첨자 b 기준 x 위첨자 d 분의 1 분수끝 r"
+      "expected": "분수시작 아래첨자 a 위첨자 b 기준 x 위첨자 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorABDFracR_brief": {
-      "expected": "분수시작 아래 a 위 b 기준 x 위 d 분의 1 분수끝 r"
+      "expected": "분수시작 아래 a 위 b 기준 x 위 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorABDFracR_sbrief": {
-      "expected": "분수 아래 a 위 b 기준 x 위 d 분의 1 분수끝 r"
+      "expected": "분수 아래 a 위 b 기준 x 위 d 기준 분의 1 분수끝 r"
     },
     "PartialTensorABDRFrac_default": {
       "expected": "분수시작 아래첨자 a 위첨자 b 기준 x 위첨자 d 기준 r 분의 1 분수끝"
@@ -648,9 +647,6 @@
     "PartialTensorABDRFrac_sbrief": {
       "expected": "분수 아래 a 위 b 기준 x 위 d 기준 r 분의 1 분수끝"
     },
-
-    
-    
     "_comment10_": "Simple tensors with multi indices.",
     "TensorMultiSimpleABC_default": {
       "expected": "아래첨자 a 위첨자 b 기준 x 아래첨자 c 아래 위첨자 l"
@@ -688,7 +684,6 @@
     "TensorMultiSimple_sbrief": {
       "expected": "아래 a 위 b 기준 x 아래 c 아래 위 l 위 d"
     },
-
     "_comment11_": "Complex tensors with multi indices.",
     "TensorMultiComplex_default": {
       "expected": "아래첨자 a 위첨자 b 기준 x 아래첨자 c k 아래 위첨자 l 위첨자 d"
@@ -699,7 +694,6 @@
     "TensorMultiComplex_sbrief": {
       "expected": "아래 a 위 b 기준 x 아래 c k 아래 위 l 위 d"
     },
-
     "_comment12_": "Double tensors.",
     "TwoTensors_default": {
       "expected": "아래첨자 a 위첨자 b 기준 x 아래첨자 c 위첨자 d 기준 아래첨자 a 위첨자 b 기준 x 아래첨자 c 위첨자 d"
