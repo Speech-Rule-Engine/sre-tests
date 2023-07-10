@@ -18,14 +18,14 @@
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import * as System from '../../speech-rule-engine/js/common/system';
+import * as System from '../../speech-rule-engine/js/common/system.js';
 import {
   Axis,
   DynamicCstr
-} from '../../speech-rule-engine/js/rule_engine/dynamic_cstr';
+} from '../../speech-rule-engine/js/rule_engine/dynamic_cstr.js';
 
-import { TestUtil } from '../base/test_util';
-import { AbstractExamples } from './abstract_examples';
+import { TestUtil } from '../base/test_util.js';
+import { AbstractExamples } from './abstract_examples.js';
 
 export class SpeechTest extends AbstractExamples {
   /**
@@ -207,11 +207,16 @@ export class SpeechTest extends AbstractExamples {
   /**
    * @override
    */
-  public join(examples: string[]) {
-    for (let i = 0, l = examples.length; i < l; i++) {
-      examples[i] = '<tr>' + SpeechTest.htmlCell_(i) + examples[i] + '</tr>';
+  public join(map: Map<string, string[]>) {
+    let i = 0;
+    let result = [];
+    for (let [, examples] of [...map].sort(([a], [b]) => a.localeCompare(b))) {
+      for (let example of examples) {
+        result.push('<tr>' + SpeechTest.htmlCell_(i) + example + '</tr>');
+        i++;
+      }
     }
-    return '\n<table>\n' + examples.join('\n') + '\n</table>\n';
+    return '\n<table>\n' + result.join('\n') + '\n</table>\n';
   }
 
   /**
@@ -227,7 +232,7 @@ export class SpeechTest extends AbstractExamples {
       '\n<style>\n table, th, td {\n' +
       '  border: 1px solid black; }\n</style>\n';
     return (
-      '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">' +
+      '<!DOCTYPE html>' +
       '<html> <head>\n' +
       '<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n' +
       mathjax +

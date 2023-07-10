@@ -13,10 +13,10 @@
   "information": "English Plural Unit tests.",
   "tests": {
     "sq": {
-      "expected": "squares"
+      "expected": "square"
     },
     "sq.": {
-      "expected": "squares"
+      "expected": "square"
     },
     "sq in": {
       "expected": "square inches"
@@ -201,6 +201,18 @@
     "GHS": {
       "expected": "cedis"
     },
+    "₸": {
+      "expected": "tenge"
+    },
+    "KZT": {
+      "expected": "tenge"
+    },
+    "₺": {
+      "expected": "turkish lira"
+    },
+    "TRY": {
+      "expected": "turkish lira"
+    },
     "元": {
       "expected": "yuans"
     },
@@ -280,16 +292,16 @@
       "expected": "kilobytes"
     },
     "doz": {
-      "expected": "dozens"
+      "expected": "dozen"
     },
     "doz.": {
-      "expected": "dozens"
+      "expected": "dozen"
     },
     "dz": {
-      "expected": "dozens"
+      "expected": "dozen"
     },
     "dz.": {
-      "expected": "dozens"
+      "expected": "dozen"
     },
     "kt": {
       "expected": "knots"
@@ -307,17 +319,16 @@
       "expected": "kilometers per hour"
     },
     "kph": {
-      "input": "kph",
       "expected": "kilometers per hour"
     },
     "F": {
-      "expected": "Fahrenheits"
+      "expected": "Fahrenheit"
     },
     "F.": {
-      "expected": "Fahrenheits"
+      "expected": "Fahrenheit"
     },
     "°F": {
-      "expected": "Fahrenheits"
+      "expected": "Fahrenheit"
     },
     "C": {
       "expected": "Celsius"
@@ -326,13 +337,22 @@
       "expected": "Celsius"
     },
     "K": {
-      "expected": "Kelvins"
+      "expected": "Kelvin"
     },
     "°K": {
-      "expected": "Kelvins"
+      "expected": "Kelvin"
+    },
+    "″": {
+      "expected": "seconds"
     },
     "min": {
       "expected": "minutes"
+    },
+    "′": {
+      "expected": "minutes"
+    },
+    "°": {
+      "expected": "degrees"
     },
     "h": {
       "expected": "hours"
@@ -341,10 +361,10 @@
       "expected": "hours"
     },
     "cu": {
-      "expected": "cubics"
+      "expected": "cubic"
     },
     "cu.": {
-      "expected": "cubics"
+      "expected": "cubic"
     },
     "cu in": {
       "expected": "cubic inches"
@@ -484,32 +504,12 @@
     "T": {
       "expected": "tons"
     },
-    "₶": {
-      "expected": "livre tournois"
+    "_commentAdded_": "Add for locale",
+    "MΩ": {
+      "expected": "megohms"
     },
-    "₷": {
-      "expected": "spesmilos"
-    },
-    "₸": {
-      "expected": "tenges"
-    },
-    "KZT": {
-      "expected": "tenges"
-    },
-    "₺": {
-      "expected": "turkish liras"
-    },
-    "TRY": {
-      "expected": "turkish liras"
-    },
-    "″": {
-      "expected": "seconds"
-    },
-    "′": {
-      "expected": "minutes"
-    },
-    "°": {
-      "expected": "degrees"
+    "kΩ": {
+      "expected": "kilohms"
     }
   }
 }

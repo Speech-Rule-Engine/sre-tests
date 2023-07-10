@@ -571,10 +571,22 @@
     "_comment_154": " Currently foreign Mactions do not work with the enrichment.",
     "_comment_155": " untest Actions",
     "Actions_0": {
-      "input": "<maction><mtext>something</mtext><mn>2</mn></maction>"
+      "input": "<maction selection=\"2\"><mtext>something</mtext><mn>2</mn></maction>"
     },
     "Actions_1": {
-      "input": "<maction><mtext>something</mtext><mi>a</mi></maction>"
+      "input": "<maction selection=\"2\"><mtext>something</mtext><mi>a</mi></maction>"
+    },
+    "Actions_2": {
+      "input": "<maction selection=\"1\"><mtext>something</mtext><mn>2</mn></maction>"
+    },
+    "Actions_3": {
+      "input": "<maction selection=\"1\"><mtext>something</mtext><mi>a</mi></maction>"
+    },
+    "Actions_4": {
+      "input": "<mi>a</mi><mo>+</mo><maction selection=\"1\"><mn>1</mn><mi>b</mi></maction><mo>+</mo><mi>c</mi>"
+    },
+    "Actions_5": {
+      "input": "<mi>a</mi><mo>+</mo><maction selection=\"2\"><mn>1</mn><mi>b</mi></maction><mo>+</mo><mi>c</mi>"
     },
     "_comment_156": " Semantics, annotation, annotation-xml",
     "_comment_157": " Expressions with semantic elements.",

@@ -195,10 +195,22 @@
       "expected": "hryvnia"
     },
     "₵": {
-      "expected": "cedis"
+      "expected": "cedi"
     },
     "GHS": {
-      "expected": "cedis"
+      "expected": "cedi"
+    },
+    "₸": {
+      "expected": "tenge"
+    },
+    "KZT": {
+      "expected": "tenge"
+    },
+    "₺": {
+      "expected": "turkish lira"
+    },
+    "TRY": {
+      "expected": "turkish lira"
     },
     "元": {
       "expected": "yuan"
@@ -306,7 +318,6 @@
       "expected": "kilometer per hour"
     },
     "kph": {
-      "input": "kph",
       "expected": "kilometer per hour"
     },
     "F": {
@@ -330,8 +341,17 @@
     "°K": {
       "expected": "Kelvin"
     },
+    "″": {
+      "expected": "second"
+    },
     "min": {
       "expected": "minute"
+    },
+    "′": {
+      "expected": "minute"
+    },
+    "°": {
+      "expected": "degree"
     },
     "h": {
       "expected": "hour"
@@ -483,32 +503,12 @@
     "T": {
       "expected": "ton"
     },
-    "₶": {
-      "expected": "livre tournois"
+    "_commentAdded_": "Add for locale",
+    "MΩ": {
+      "expected": "megohm"
     },
-    "₷": {
-      "expected": "spesmilo"
-    },
-    "₸": {
-      "expected": "tenge"
-    },
-    "KZT": {
-      "expected": "tenge"
-    },
-    "₺": {
-      "expected": "turkish lira"
-    },
-    "TRY": {
-      "expected": "turkish lira"
-    },
-    "″": {
-      "expected": "second"
-    },
-    "′": {
-      "expected": "minute"
-    },
-    "°": {
-      "expected": "degree"
+    "kΩ": {
+      "expected": "kilohm"
     }
   }
 }

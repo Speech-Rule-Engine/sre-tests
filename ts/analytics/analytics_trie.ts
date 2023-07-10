@@ -17,17 +17,17 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import { allStores } from './analytics_module';
-import { Trie } from '../../speech-rule-engine/js/indexing/trie';
-import { StaticTrieNode } from '../../speech-rule-engine/js/indexing/abstract_trie_node';
-import { MathStore } from '../../speech-rule-engine/js/rule_engine/math_store';
-import { SpeechRule } from '../../speech-rule-engine/js/rule_engine/speech_rule';
-import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
+import { allStores } from './analytics_module.js';
+import { Trie } from '../../speech-rule-engine/js/indexing/trie.js';
+import { StaticTrieNode } from '../../speech-rule-engine/js/indexing/abstract_trie_node.js';
+import { MathStore } from '../../speech-rule-engine/js/rule_engine/math_store.js';
+import { SpeechRule } from '../../speech-rule-engine/js/rule_engine/speech_rule.js';
+import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine.js';
 
-import { TestUtil } from '../base/test_util';
+import { TestUtil } from '../base/test_util.js';
 
-import AnalyticsUtil from './analytics_util';
-import AnalyticsTest from './analytics_test';
+import AnalyticsUtil from './analytics_util.js';
+import AnalyticsTest from './analytics_test.js';
 
 namespace AnalyticsTrie {
   /**
@@ -90,16 +90,17 @@ namespace AnalyticsTrie {
    *
    */
   export function disjunctiveRules() {
-    const ruleSets = AnalyticsUtil.getAllSets();
-    const result: SpeechRule[] = [];
-    for (const [, rules] of Object.entries(ruleSets)) {
-      rules.forEach((rule) => {
-        if (rule.precondition.hasDisjunctive()) {
-          result.push(rule);
-        }
-      });
-    }
-    outputTrie(tempTrie(result), 'disjunctiveRules');
+    AnalyticsUtil.getAllSets().then((ruleSets) => {
+      const result: SpeechRule[] = [];
+      for (const [, rules] of Object.entries(ruleSets)) {
+        rules.forEach((rule) => {
+          if (rule.precondition.hasDisjunctive()) {
+            result.push(rule);
+          }
+        });
+      }
+      outputTrie(tempTrie(result), 'disjunctiveRules');
+    });
   }
 
   /**

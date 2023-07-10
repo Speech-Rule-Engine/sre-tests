@@ -17,11 +17,11 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
-import * as System from '../../speech-rule-engine/js/common/system';
-import * as AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering';
+import * as EngineConst from '../../speech-rule-engine/js/common/engine_const.js';
+import * as System from '../../speech-rule-engine/js/common/system.js';
+import * as AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering.js';
 
-import { AbstractJsonTest } from '../classes/abstract_test';
+import { AbstractJsonTest } from '../classes/abstract_test.js';
 
 export class MarkupTest extends AbstractJsonTest {
   /**
@@ -54,19 +54,39 @@ export class MarkupTest extends AbstractJsonTest {
     '</mfrac>' +
     '</math>';
 
+  private defaults: {[key: string]: boolean} = {
+    automark: false,
+    mark: false,
+    character: false,
+    cleanpause: false
+  }
+
   /**
    * @override
    */
   public constructor() {
     super();
-    this.pickFields.push('markup', 'domain');
+    this.pickFields.push('markup', 'domain', 'options');
+  }
+
+  /**
+   * @override
+   */
+  public async setUpTest() {
+    await super.setUpTest();
+    return System.setupEngine({
+      modality: 'speech',
+      locale: 'en',
+      style: 'default'
+    });
   }
 
   /**
    * @override
    */
   public async tearDownTest() {
-    return System.setupEngine({ markup: EngineConst.Markup.NONE });
+    await System.setupEngine({ markup: EngineConst.Markup.NONE });
+    return super.tearDownTest();
   }
 
   /**
@@ -77,21 +97,19 @@ export class MarkupTest extends AbstractJsonTest {
    * @param markup The markup to test.
    * @param domain The domain for the engine.
    */
-  public async executeTest(
+  public executeTest(
     expr: string,
     result: string,
     markup: string,
-    domain: string
+    domain: string,
+    options: {[key: string]: boolean}
   ) {
     expr = expr || MarkupTest.QUADRATIC;
-    await System.setupEngine({
-      locale: 'en',
-      modality: 'speech',
+    const features = Object.assign({}, {
       domain: domain || 'default',
-      style: 'default',
       markup: markup ? markup.toLowerCase() : EngineConst.Markup.NONE
-    });
-    // TODO (TS): Markup should be taken from the enum.
+    }, this.defaults, options);
+    System.setupEngine(features)
     const descrs = System.toDescription(expr);
     const output = AuralRendering.markup(descrs);
     this.assert.equal(output, result);
@@ -106,7 +124,8 @@ export class MarkupTest extends AbstractJsonTest {
         string,
         string,
         string,
-        string
+        string,
+        {[key: string]: boolean}
       ])
     );
   }

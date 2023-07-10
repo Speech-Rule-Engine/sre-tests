@@ -20,17 +20,17 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
-import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
-import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
-import { SemanticNode } from '../../speech-rule-engine/js/semantic_tree/semantic_node';
-import { SemanticTree } from '../../speech-rule-engine/js/semantic_tree/semantic_tree';
+import * as DomUtil from '../../speech-rule-engine/js/common/dom_util.js';
+import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich.js';
+import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic.js';
+import { SemanticNode } from '../../speech-rule-engine/js/semantic_tree/semantic_node.js';
+import { SemanticTree } from '../../speech-rule-engine/js/semantic_tree/semantic_tree.js';
 
-import * as tu from '../base/test_util';
-import * as TestFactory from '../classes/test_factory';
-import { addActual } from './fill_tests';
-import { Tex2Mml } from './tex_transformer';
-import { AbstractTransformer, Transformer } from './transformers';
+import * as tu from '../base/test_util.js';
+import * as TestFactory from '../classes/test_factory.js';
+import { addActual } from './fill_tests.js';
+import { Tex2Mml } from './tex_transformer.js';
+import { AbstractTransformer, Transformer } from './transformers.js';
 
 /* ********************************************************* */
 /*
@@ -75,7 +75,7 @@ import { AbstractTransformer, Transformer } from './transformers';
  */
 export function transformInput(
   json: tu.JsonTest,
-  field = 'input'
+  field: string = 'input'
 ): tu.JsonTests {
   const result: { [name: string]: any } = {};
   for (const [name, expressions] of Object.entries(json)) {
@@ -114,6 +114,34 @@ export function generateTestJson(
   const newJson = transformInput(oldJson, field);
   tu.TestUtil.saveJson(output, newJson);
 }
+
+
+export function generateTestList(
+  input: string,
+  output: string,
+  name: string,
+  transformers: Transformer[] = [],
+  newJson: tu.JsonTests = {}
+) {
+  const oldJson = tu.TestUtil.loadJson(input) as tu.JsonTest[];
+  let commentCount = 0;
+  let testCount = 0;
+  let digits = Math.ceil(Math.log(oldJson.length)/Math.log(10))
+  const leading = Array(digits + 1).join('0');
+  digits = -1 * digits;
+  let tests: tu.JsonTests = {};
+  for (let entry of oldJson) {
+    if (entry.comment) {
+      tests[`_comment_${commentCount++}`] = entry.comment;
+      continue;
+    }
+    transformTest(entry, transformers);
+    tests[`${name}_${(leading + testCount++).slice(digits)}`] = entry;
+  }
+  newJson['tests'] = tests;
+  tu.TestUtil.saveJson(output, newJson);
+}
+
 
 /**
  * Runs a series of transformers on the given tests object.

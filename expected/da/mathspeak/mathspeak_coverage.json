@@ -10,112 +10,112 @@
   "compare": true,
   "tests": {
     "BaselineNumberGreek_default": {
-      "expected": "alfa Baseline 2"
+      "expected": "alfa Grundlinje 2"
     },
     "BaselineNumberGreek_brief": {
-      "expected": "alfa Base 2"
+      "expected": "alfa Grund 2"
     },
     "BaselineNumberGreek_sbrief": {
-      "expected": "alfa Base 2"
+      "expected": "alfa Grund 2"
     },
     "BaselineNumberOther_default": {
-      "expected": "normal første transfinitte kardinaltal Baseline 2"
+      "expected": "første transfinitte kardinaltal normal Grundlinje 2"
     },
     "BaselineNumberOther_brief": {
-      "expected": "normal første transfinitte kardinaltal Base 2"
+      "expected": "første transfinitte kardinaltal normal Grund 2"
     },
     "BaselineNumberOther_sbrief": {
-      "expected": "normal første transfinitte kardinaltal Base 2"
+      "expected": "første transfinitte kardinaltal normal Grund 2"
     },
     "BaselineNumberFontGreek_default": {
-      "expected": "alfa Baseline bold 2"
+      "expected": "alfa Grundlinje bold 2"
     },
     "BaselineNumberFontGreek_brief": {
-      "expected": "alfa Base bold 2"
+      "expected": "alfa Grund bold 2"
     },
     "BaselineNumberFontGreek_sbrief": {
-      "expected": "alfa Base bold 2"
+      "expected": "alfa Grund bold 2"
     },
     "BaselineNumberFontOther_default": {
-      "expected": "normal første transfinitte kardinaltal Baseline bold 2"
+      "expected": "første transfinitte kardinaltal normal Grundlinje bold 2"
     },
     "BaselineNumberFontOther_brief": {
-      "expected": "normal første transfinitte kardinaltal Base bold 2"
+      "expected": "første transfinitte kardinaltal normal Grund bold 2"
     },
     "BaselineNumberFontOther_sbrief": {
-      "expected": "normal første transfinitte kardinaltal Base bold 2"
+      "expected": "første transfinitte kardinaltal normal Grund bold 2"
     },
     "OverbarGreek_default": {
-      "expected": "alfa overbar"
+      "expected": "alfa overstreg"
     },
     "OverbarOther_default": {
-      "expected": "normal første transfinitte kardinaltal overbar"
+      "expected": "første transfinitte kardinaltal normal overstreg"
     },
     "UnderbarGreek_default": {
-      "expected": "alfa underbar"
+      "expected": "alfa understreg"
     },
     "UnderbarOther_default": {
-      "expected": "normal første transfinitte kardinaltal underbar"
+      "expected": "første transfinitte kardinaltal normal understreg"
     },
     "OvertildeGreek_default": {
       "expected": "alfa overtilde"
     },
     "OvertildeOther_default": {
-      "expected": "normal første transfinitte kardinaltal overtilde"
+      "expected": "første transfinitte kardinaltal normal overtilde"
     },
     "UndertildeGreek_default": {
       "expected": "alfa undertilde"
     },
     "UndertildeOther_default": {
-      "expected": "normal første transfinitte kardinaltal undertilde"
+      "expected": "første transfinitte kardinaltal normal undertilde"
     },
     "SetEmpty_default": {
-      "expected": "empty set"
+      "expected": "den tomme mængde"
     },
     "SetEmpty_brief": {
-      "expected": "empty set"
+      "expected": "den tomme mængde"
     },
     "SetEmpty_sbrief": {
-      "expected": "empty set"
+      "expected": "den tomme mængde"
     },
     "SetSingleton_default": {
-      "expected": "StartSet a EndSet"
+      "expected": "StartMængde a SlutMængde"
     },
     "SetSingleton_brief": {
-      "expected": "StartSet a EndSet"
+      "expected": "StartMængde a SlutMængde"
     },
     "SetSingleton_sbrief": {
-      "expected": "Set a EndSet"
+      "expected": "Mængde a SlutMængde"
     },
     "SetCollection_default": {
-      "expected": "StartSet a komma b EndSet"
+      "expected": "StartMængde a komma b SlutMængde"
     },
     "SetCollection_brief": {
-      "expected": "StartSet a komma b EndSet"
+      "expected": "StartMængde a komma b SlutMængde"
     },
     "SetCollection_sbrief": {
-      "expected": "Set a komma b EndSet"
+      "expected": "Mængde a komma b SlutMængde"
     },
     "SetExtended_default": {
-      "expected": "StartSet a komma b EndSet"
+      "expected": "StartMængde a komma b SlutMængde"
     },
     "SetExtended_brief": {
-      "expected": "StartSet a komma b EndSet"
+      "expected": "StartMængde a komma b SlutMængde"
     },
     "SetExtended_sbrief": {
-      "expected": "Set a komma b EndSet"
+      "expected": "Mængde a komma b SlutMængde"
     },
     "NumberSet": {
-      "expected": "dobbeltstreget stort C dobbeltstreget"
+      "expected": "stort C dobbeltstreget"
     },
     "LimitLower0_default": {
-      "expected": "ModifyingBelow grænseværdi With understreget Undertekst a lig med 5 Undertekst b lig med 3"
+      "expected": "SymbolUnder grænseværdi Med understreget Undertekst a lig med 5 Undertekst b lig med 3"
     },
     "LimitLower1_default": {
       "expected": "grænseværdi Undertekst n Overtekst 2 Overtekst x"
     },
     "BlankLineEmpty0_default": {
-      "expected": "StartLayout 1. Row  a 2. Row  Blank EndLayout"
+      "expected": "StartLayout 1. Række  a 2. Række  Blank SlutLayout"
     },
     "SubBaseRelseq_default": {
       "expected": "c 1 h Sænket 4 minus 2 s Grundlinje mindre end eller lig med Start Brøk 1 Over 2 stort T Slut Brøk mindre end eller lig med c 2 h Sænket 4 minus 2 s"

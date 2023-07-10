@@ -17,10 +17,11 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import { Tests } from '../base/tests';
-import { JsonFile, JsonTests, TestPath, TestUtil } from '../base/test_util';
-import { AbstractJsonTest } from '../classes/abstract_test';
-import { get as factoryget } from '../classes/test_factory';
+import { Tests } from '../base/tests.js';
+import { JsonFile, JsonTests, TestPath, TestUtil } from '../base/test_util.js';
+import { ExampleFiles } from '../classes/abstract_examples.js';
+import { AbstractJsonTest } from '../classes/abstract_test.js';
+import { get as factoryget } from '../classes/test_factory.js';
 
 const enum TestFlag {
   ALL,
@@ -41,6 +42,8 @@ export async function runTests(
   expected: string,
   flag: TestFlag
 ): Promise<[JsonTests, AbstractJsonTest]> {
+  const saveOutput = ExampleFiles.noOutput;
+  ExampleFiles.noOutput = true;
   const tests = factoryget(expected);
   tests.prepare();
   const result: JsonTests = {};
@@ -71,12 +74,14 @@ export async function runTests(
     try {
       tests.method.apply(tests, tests.pick(test));
     } catch (e) {
+      // TODO: Take care of non-existing actual elements.
       result[key] = { expected: e.actual };
     }
   }
   try {
     await tests.tearDownTest();
   } catch (e) {}
+  ExampleFiles.noOutput = saveOutput;
   return [result, tests];
 }
 
@@ -178,6 +183,26 @@ export async function removeMissing(expected: string, dryrun = false) {
     return;
   }
   removeFromFile(tests['jsonFile'], result);
+}
+
+/**
+ * Shows the result for all missing tests. This is to inspect before adding them
+ * automatically using, for example, `addMissing`.
+ *
+ * @param regexp A regular expression to filter output.
+ * @param dryrun If false, failed tests will be replaced. True by default.
+ */
+export function showFailed(regexp = /./, dryrun = true) {
+  const tests = new Tests();
+  tests.runner
+    .queryJsonTests((x) => x)
+    .filter((x) => x.jsonFile.match(regexp))
+    .reduce(
+      (p, x) => p.then(() => {
+        console.log(x.jsonFile);
+        return addFailed(x.jsonFile, dryrun)
+      }),
+      Promise.resolve());
 }
 
 /**

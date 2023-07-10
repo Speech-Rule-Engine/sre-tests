@@ -17,8 +17,8 @@
  */
 
 import * as process from 'process';
-import { AbstractTest } from '../classes/abstract_test';
-import { AbstractJsonTest } from '../classes/abstract_test';
+import { AbstractTest } from '../classes/abstract_test.js';
+import { AbstractJsonTest } from '../classes/abstract_test.js';
 
 enum Warning {
   NONE,
@@ -148,7 +148,6 @@ export class TestRunner {
    *
    * @param name The name of the test.
    * @param func The actual test function.
-   * @param args A list of arguments.
    */
   public executeJsonTest(name: string, func: () => any) {
     this.executeTest(name, func());

@@ -1,7 +1,7 @@
-import * as convert from './convert';
-import * as select from './selection';
-import * as signin from './signin';
-import * as user from './user';
+import * as convert from './convert.js';
+import * as select from './selection.js';
+import * as signin from './signin.js';
+import * as user from './user.js';
 
 export const Convert = convert;
 export const Select = select;

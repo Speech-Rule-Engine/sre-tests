@@ -19,14 +19,14 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import * as System from '../../speech-rule-engine/js/common/system';
-import { Grammar } from '../../speech-rule-engine/js/rule_engine/grammar';
-import * as SpeechGeneratorUtil from '../../speech-rule-engine/js/speech_generator/speech_generator_util';
-import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
-import { SemanticNode } from '../../speech-rule-engine/js/semantic_tree/semantic_node';
-import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
+import * as System from '../../speech-rule-engine/js/common/system.js';
+import { Grammar } from '../../speech-rule-engine/js/rule_engine/grammar.js';
+import * as SpeechGeneratorUtil from '../../speech-rule-engine/js/speech_generator/speech_generator_util.js';
+import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic.js';
+import { SemanticNode } from '../../speech-rule-engine/js/semantic_tree/semantic_node.js';
+import * as EngineConst from '../../speech-rule-engine/js/common/engine_const.js';
 
-import { SpeechTest } from './speech_test';
+import { SpeechTest } from './speech_test.js';
 
 export class PrefixTest extends SpeechTest {
   /**
@@ -118,4 +118,36 @@ export class PrefixTest extends SpeechTest {
       : '';
     super.appendRuleExample(input, output, style, sub);
   }
+}
+
+export class PrefixMarkupTest extends PrefixTest {
+
+  /**
+   * The markup to use.
+   */
+  public markup: string = EngineConst.Markup.SSML;
+
+  protected automark: boolean = true;
+
+  /**
+   * @override
+   */
+  public async setUpTest() {
+    await super.setUpTest();
+    return System.setupEngine({
+      automark: this.automark,
+      cleanpause: false,
+      markup: this.markup
+    });
+  }
+
+  /**
+   * @override
+   */
+  public prepare() {
+    super.prepare();
+    this.markup = this.jsonTests.markup || this.markup;
+    this.automark = this.jsonTests.automark || this.automark;
+  }
+
 }

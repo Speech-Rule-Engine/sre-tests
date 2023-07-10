@@ -19,27 +19,54 @@
  * @author sorge@google.com (Volker Sorge)
  */
 
-import xmldom = require('xmldom-sre');
-import { AbstractExamples } from './abstract_examples';
+import * as xmldom from '@xmldom/xmldom';
+import { AbstractExamples } from './abstract_examples.js';
+import { AbstractJsonTest } from './abstract_test.js';
+import { JsonTests } from '../base/test_util.js';
 
-import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
+import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich.js';
 import {
   Attribute,
   removeAttributePrefix
-} from '../../speech-rule-engine/js/enrich_mathml/enrich_attr';
-import { enrich } from '../../speech-rule-engine/js/enrich_mathml/enrich_mathml';
-import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
-import { SemanticTree } from '../../speech-rule-engine/js/semantic_tree/semantic_tree';
-import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
-import { RebuildStree } from '../../speech-rule-engine/js/walker/rebuild_stree';
-import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
-import * as System from '../../speech-rule-engine/js/common/system';
-import * as WalkerUtil from '../../speech-rule-engine/js/walker/walker_util';
+} from '../../speech-rule-engine/js/enrich_mathml/enrich_attr.js';
+import { enrich } from '../../speech-rule-engine/js/enrich_mathml/enrich_mathml.js';
+import * as DomUtil from '../../speech-rule-engine/js/common/dom_util.js';
+import { SemanticNodeFactory } from '../../speech-rule-engine/js/semantic_tree/semantic_node_factory.js';
+import { SemanticTree } from '../../speech-rule-engine/js/semantic_tree/semantic_tree.js';
+import { SemanticMap } from '../../speech-rule-engine/js/semantic_tree/semantic_attr.js';
+import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic.js';
+import { RebuildStree } from '../../speech-rule-engine/js/walker/rebuild_stree.js';
+import * as EngineConst from '../../speech-rule-engine/js/common/engine_const.js';
+import * as System from '../../speech-rule-engine/js/common/system.js';
+import * as WalkerUtil from '../../speech-rule-engine/js/walker/walker_util.js';
+import { lookupCategory } from '../../speech-rule-engine/js/rule_engine/math_compound_store.js';
 
 /**
  * Base class for all the semantic tree related tests.
  */
 export abstract class SemanticTest extends AbstractExamples {
+
+  /**
+   * @override
+   */
+  public async setUpTest() {
+    await super.setUpTest();
+    return System.setupEngine({
+      domain: 'mathspeak',
+      style: 'default'
+    });
+  }
+
+  /**
+   * @override
+   */
+  public async tearDownTest() {
+    await System.setupEngine({
+      domain: 'default'
+    });
+    return super.tearDownTest();
+  }
+
   /**
    * @override
    */
@@ -66,7 +93,8 @@ export class RebuildStreeTest extends SemanticTest {
   public pickFields = ['input'];
 
   /**
-   * Tests if for a given mathml snippet results in a particular semantic tree.
+   * Tests if the semantic tree rebuilt from an enriched mathml is the same as
+   * the semantic tree constructed from the original mathml snippet.
    *
    * @param expr MathML expression.
    */
@@ -90,14 +118,17 @@ export class EnrichSpeechTest extends SemanticTest {
   public pickFields = ['input'];
 
   /**
+   * Nesting depth of generated speech.
+   */
+  protected speech = EngineConst.Speech.SHALLOW;
+
+  /**
    * @override
    */
   public async setUpTest() {
     await super.setUpTest();
     return System.setupEngine({
-      domain: 'mathspeak',
-      style: 'default',
-      speech: EngineConst.Speech.SHALLOW
+      speech: this.speech
     });
   }
 
@@ -106,8 +137,6 @@ export class EnrichSpeechTest extends SemanticTest {
    */
   public async tearDownTest() {
     await System.setupEngine({
-      domain: 'default',
-      style: 'default',
       speech: EngineConst.Speech.NONE
     });
     return super.tearDownTest();
@@ -129,9 +158,40 @@ export class EnrichSpeechTest extends SemanticTest {
 }
 
 /**
+ * Enriched Speech Tests
+ */
+export class DeepSpeechTest extends EnrichSpeechTest {
+
+  /**
+   * @override
+   */
+  protected speech = EngineConst.Speech.DEEP;
+
+  /**
+   * Tests if speech strings computed directly for a MathML expression are
+   * equivalent to those computed for enriched expressions.
+   *
+   * @override
+   */
+  public executeTest(expr: string) {
+    const mml = Enrich.prepareMmlString(expr);
+    const enr = System.toEnriched(mml);
+    const ids = DomUtil.querySelectorAllByAttr(enr, 'data-semantic-id');
+    for (let id of ids) {
+      expect(id.hasAttribute('data-semantic-speech')).toBe(true);
+    }
+    const speechs = DomUtil.querySelectorAllByAttr(enr, 'data-semantic-speech');
+    for (let speech of speechs) {
+      expect(speech.hasAttribute('data-semantic-id')).toBe(true);
+    }
+  }
+}
+
+/**
  * Tests that can remove elements from an XML element.
  */
 export abstract class SemanticBlacklistTest extends SemanticTest {
+
   /**
    * The blacklist of attributes to be removed before comparison.
    */
@@ -163,9 +223,79 @@ export abstract class SemanticBlacklistTest extends SemanticTest {
 }
 
 /**
+ * Testcases for reconstructing semantic trees from enriched mathml.
+ */
+export class RebuildEnrichedTest extends SemanticBlacklistTest {
+
+  /**
+   * @override
+   */
+  protected blacklist: string[] = [
+    'data-semantic-collapsed',
+    'fencepointer'
+  ];
+
+  /**
+   * @override
+   */
+  public pickFields = ['input'];
+
+  /**
+   * Tests if enrichment is idempotent.
+   *
+   * @param expr MathML expression.
+   */
+  public executeTest(expr: string) {
+    const mml = DomUtil.parseInput(Enrich.prepareMmlString(expr));
+    const original = new SemanticTree(mml);
+    const enriched = enrich(mml, original);
+    const newTree = this.semanticTree(enriched);
+    this.canonicalize(original);
+    this.canonicalize(newTree);
+    let oldXml = original.xml();
+    let newXml = newTree.xml();
+    this.customizeXml(oldXml);
+    this.customizeXml(newXml);
+    this.assert.equal(oldXml.toString(), newXml.toString());
+  }
+
+
+  /**
+   * Semantically enriches a mathml expression.
+   *
+   * @param {string} mml The mathml expression.
+   */
+  private semanticTree(mml: Element) {
+    const stree = new SemanticTree(mml);
+    this.canonicalize(stree);
+    return stree;
+  }
+
+  /**
+   * Renumbers the tree in a canonical depth-first order.
+   *
+   * @param {SemanticTree} stree The semantic tree.
+   */
+  private canonicalize(stree: SemanticTree) {
+    let id = 0;
+    const processed = new Map();
+    let nodes = [stree.root];
+    while (nodes.length) {
+      let node = nodes.shift();
+      if (processed.get(node)) continue;
+      nodes = nodes.concat(node.contentNodes, node.childNodes);
+      node.id = id++;
+      processed.set(node, true);
+    }
+  }
+
+}
+
+/**
  * Semantic Tree Tests
  */
 export class SemanticTreeTest extends SemanticBlacklistTest {
+
   /**
    * @override
    */
@@ -196,10 +326,10 @@ export class SemanticTreeTest extends SemanticBlacklistTest {
     const mathMl = Enrich.prepareMmlString(mml);
     const node = DomUtil.parseInput(mathMl);
     const sxml = new SemanticTree(node).xml(opt_brief);
+    const xmls = new xmldom.XMLSerializer();
     this.customizeXml(sxml);
     const dp = new xmldom.DOMParser();
     const xml = dp.parseFromString(this.prepareStree(sml), 'text/xml');
-    const xmls = new xmldom.XMLSerializer();
     this.assert.equal(
       xmls.serializeToString(sxml),
       xmls.serializeToString(xml)
@@ -230,16 +360,6 @@ export class SemanticTreeTest extends SemanticBlacklistTest {
  * Tests for enriched MathML expressions.
  */
 export class EnrichMathmlTest extends SemanticBlacklistTest {
-  /**
-   * @override
-   */
-  protected blacklist: string[] = [
-    'data-semantic-annotation',
-    'data-semantic-font',
-    'data-semantic-embellished',
-    'data-semantic-fencepointer',
-    'data-semantic-structure'
-  ];
 
   /**
    * @override
@@ -261,7 +381,7 @@ export class EnrichMathmlTest extends SemanticBlacklistTest {
     const mathMl = Enrich.prepareMmlString(mml);
     const node = Enrich.semanticMathmlSync(mathMl);
     const dp = new xmldom.DOMParser();
-    const xml = smml ? dp.parseFromString(smml) : '';
+    const xml = dp.parseFromString(smml ? smml : ' ');
     const xmls = new xmldom.XMLSerializer();
     this.customizeXml(node);
     this.appendExamples('', mml);
@@ -367,4 +487,128 @@ export class SemanticXmlTest extends SemanticTest {
       SemanticTree.fromXml(xml).xml().toString()
     );
   }
+}
+
+export class SemanticMeaningTest extends SemanticTest {
+
+  factory: SemanticNodeFactory = new SemanticNodeFactory();
+
+  /**
+   * @override
+   */
+  public constructor() {
+    super();
+    this.pickFields.push('name');
+  }
+
+  /**
+   * @override
+   */
+  public method() {
+    this.executeTest(
+      this.field('name'),
+      this.field('expected')
+    );
+  }
+
+  public executeTest(name: string, expected: string) {
+    const meaning = this.factory.makeContentNode(name);
+    meaning.id = 0;
+    const output = meaning.toString().replace(/ id=\"0\"/, '');
+    this.assert.equal(
+      output,
+      expected
+    );
+  }
+
+}
+
+type index = 'Secondary' | 'Meaning' | 'FencesHoriz' | 'FencesVert';
+
+export class SemanticMapTest extends AbstractJsonTest {
+
+  private map: index;
+  
+  /**
+   * @override
+   */
+  public async setUpTest() {
+    await super.setUpTest();
+    // Make sure the base locale is loaded so maps a filled.
+    return System.engineReady();
+  }
+
+  /**
+   * @override
+   */
+  public constructor() {
+    super();
+    this.pickFields.push('name');
+    this.pickFields.push('secondary');
+  }
+
+  /**
+   * @override
+   */
+  public prepare() {
+    // TODO: currently removed for action tests.
+    //       We need a way to reset the maps in the test setup.
+    const length = Object.keys(this.jsonTests.tests).length;
+    (this.jsonTests.tests as JsonTests)['size'] = {
+      expected: length.toString()
+    };
+    super.prepare();
+    // Add the size test of the map.
+    this.map = this.jsonTests.map;
+  }
+  
+  /**
+   * @override
+   */
+  public method() {
+    if (this.field('name') === 'size') {
+      this.assert.equal(
+        SemanticMap[this.map].size.toString(), this.field('expected'));
+      return;
+    }
+    let input = this.field('name');
+    if (this.map === 'Secondary') {
+      input = input.match(/ ([^ ]+)$/)[1];
+    }
+    const sec = this.field('secondary') || this.field('expected');
+    this.assert.deepEqual(
+      SemanticMap[this.map].get(input, sec),
+      this.field('expected')
+    );
+  }
+
+}
+
+/**
+ * Tests for rule stores.
+ */
+export class CategoryTest extends AbstractJsonTest {
+
+  /**
+   * @override
+   */
+  public async setUpTest() {
+    super.setUpTest();
+    return System.engineReady();
+  }
+
+  /**
+   * @override
+   */
+  public constructor() {
+    super();
+    this.pickFields.push('name');
+  }
+
+  public method() {
+    const kind = this.baseTests.type || this.jsonTests.type || 'character';
+    const name = this.field('name') + (kind === 'unit' ? ':unit' : '');
+    this.assert.equal(lookupCategory(name), this.field('expected'));
+  }
+ 
 }

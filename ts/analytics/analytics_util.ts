@@ -17,13 +17,13 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import { Trie } from '../../speech-rule-engine/js/indexing/trie';
-import * as System from '../../speech-rule-engine/js/common/system';
-import { Variables } from '../../speech-rule-engine/js/common/variables';
-import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
-import { SpeechRule } from '../../speech-rule-engine/js/rule_engine/speech_rule';
+import { Trie } from '../../speech-rule-engine/js/indexing/trie.js';
+import * as System from '../../speech-rule-engine/js/common/system.js';
+import { Variables } from '../../speech-rule-engine/js/common/variables.js';
+import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine.js';
+import { SpeechRule } from '../../speech-rule-engine/js/rule_engine/speech_rule.js';
 
-import { JsonFile, TestPath, TestUtil } from '../base/test_util';
+import { JsonFile, TestPath, TestUtil } from '../base/test_util.js';
 
 namespace AnalyticsUtil {
   // Removes duplicates from a list in O(n).
@@ -58,34 +58,38 @@ namespace AnalyticsUtil {
    *
    */
   export async function initAllSets() {
-    for (const locale of Variables.LOCALES) {
-      await System.setupEngine({ locale: locale });
+    System.setupEngine({mode: 'sync'});
+    let promises: Promise<string | void>[] = [];
+    for (const locale of Variables.LOCALES.keys()) {
+      promises.push(System.setupEngine({ locale: locale }));
     }
+    await Promise.all(promises);
   }
 
   /**
    *
    */
-  export function getAllSets(): { [name: string]: SpeechRule[] } {
-    initAllSets();
-    const trie = SpeechRuleEngine.getInstance().trie;
+  export async function getAllSets(): Promise<{ [name: string]: SpeechRule[] }> {
     const result: { [name: string]: SpeechRule[] } = {};
-    for (const [loc, rest] of Object.entries(
-      SpeechRuleEngine.getInstance().enumerate()
-    )) {
-      for (const [mod, rules] of Object.entries(rest)) {
-        if (mod === 'speech') {
-          for (const rule of Object.keys(rules)) {
-            result[TestUtil.capitalize(rule) + TestUtil.capitalize(loc)] =
-              Trie.collectRules_(trie.byConstraint([loc, mod, rule]));
+    return initAllSets().then(() => {
+      const trie = SpeechRuleEngine.getInstance().trie;
+      for (const [loc, rest] of Object.entries(
+        SpeechRuleEngine.getInstance().enumerate()
+      )) {
+        for (const [mod, rules] of Object.entries(rest)) {
+          if (mod === 'speech') {
+            for (const rule of Object.keys(rules)) {
+              result[TestUtil.capitalize(rule) + TestUtil.capitalize(loc)] =
+                Trie.collectRules_(trie.byConstraint([loc, mod, rule]));
+            }
+          } else {
+            result[TestUtil.capitalize(mod) + TestUtil.capitalize(loc)] =
+              Trie.collectRules_(trie.byConstraint([loc, mod]));
           }
-        } else {
-          result[TestUtil.capitalize(mod) + TestUtil.capitalize(loc)] =
-            Trie.collectRules_(trie.byConstraint([loc, mod]));
         }
       }
-    }
-    return result;
+      return result;
+    });
   }
 }
 

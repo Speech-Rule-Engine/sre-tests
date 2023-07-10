@@ -1,11 +1,12 @@
 // Script to setup tests.
 
-const fs = require('fs');
-const path = require('path');
-const cp = require('child_process');
+import * as fs from 'fs';
+import * as path from 'path';
+import * as cp from 'child_process';
 
 const indir = 'expected/';
 const jsondir = 'ts/json/';
+const actionsdir = 'ts/actions/';  // To run tests as github actions.
 const alldir = 'ts/output/';  // To run tests with output.
 const analysedir = 'ts/analyse/';  // To run tests with analytics.
 const analysisdir = 'analysis';
@@ -13,30 +14,30 @@ const analysisdir = 'analysis';
 const allAnalyse = [];
 const allOutputs = {};
 
-let addAllOutputs = function(out, path) {
+let addAllOutputs = function(out, dir) {
   if (!allOutputs[out]) {
     allOutputs[out] = [];
   }
-  allOutputs[out].push(path);
+  allOutputs[out].push(dir);
 };
 
 /**
  * Recursively find all files with .json extension under the given path.
- * @param path The top pathname.
+ * @param dir The top pathname.
  * @param result Accumulator for pathnames.
  */
-let readDir = function(path, result) {
-  if (typeof path === 'undefined') {
+let readDir = function(dir, result) {
+  if (typeof dir === 'undefined') {
     return;
   }
-  let file = indir + path;
+  let file = indir + dir;
   if (fs.lstatSync(file).isDirectory()) {
     let files = fs.readdirSync(file);
     files.forEach(
-      x => readDir(path ? path + '/' + x : x, result));
+      x => readDir(dir ? dir + path.sep + x : x, result));
     return;
   }
-  if (path.match(/\.json$/)) {
+  if (dir.match(/\.json$/)) {
     let grep = cp.spawnSync('grep', ['"active"', file]);
     if (!grep.status) {
       addAllOutputs(
@@ -46,18 +47,18 @@ let readDir = function(path, result) {
     }
     grep = cp.spawnSync('grep', ['"name"', file]);
     if (!grep.status) {
-      allAnalyse.push(path);
+      allAnalyse.push(dir);
       // allAnalyse.set(
       //   grep.stdout.toString()
-      //     .match(/\"name\": *\"(.*)\"/)[1], path);
+      //     .match(/\"name\": *\"(.*)\"/)[1], dir);
     }
-    result.push(path);
+    result.push(dir);
   }
 };
 
 let createFile = function(dir, file, content) {
   fs.mkdirSync(dir, {recursive: true});
-  fs.writeFileSync(dir + '/' + file, content.join('\n'));
+  fs.writeFileSync(dir + path.sep + file, content.join('\n'));
 };
 
 let createJsonTests = function(files) {
@@ -66,8 +67,8 @@ let createJsonTests = function(files) {
     let depth = dir.match(/\//g);
     let base = Array((depth ? depth.length : 0) + 3).join('../');
     let content = [];
-    content.push(`import {ExampleFiles} from '${base}classes/abstract_examples';`);
-    content.push(`import {runJsonTest} from '${base}jest';`);
+    content.push(`import {ExampleFiles} from '${base}classes/abstract_examples.js';`);
+    content.push(`import {runJsonTest} from '${base}jest.js';`);
     content.push('ExampleFiles.noOutput = true;');
     content.push(`runJsonTest('${file}');`);
     content.push(``);
@@ -75,12 +76,33 @@ let createJsonTests = function(files) {
   }
 };
 
+let createActionTests = function(files) {
+  let metaFiles = {};
+  for (let file of files) {
+    let dir = file.split(path.sep)[0];
+    if (!metaFiles[dir]) {
+      metaFiles[dir] = [];
+    }
+    metaFiles[dir].push(file);
+  }
+  for (let [dir, files] of Object.entries(metaFiles)) {
+    let filename = `${dir}.test.ts`;
+    let content = [];
+    content.push(`import {ExampleFiles} from '../classes/abstract_examples.js';`);
+    content.push(`import {runJsonTest} from '../jest.js';`);
+    content.push('ExampleFiles.noOutput = true;');
+    files.forEach(x => content.push(`runJsonTest('${x}');`));
+    content.push(``);
+    createFile(actionsdir, filename, content);
+  }
+};
+
 let createOutputTests = function() {
   for (let file of Object.keys(allOutputs)) {
     let files = allOutputs[file];
     let content = [];
-    content.push(`import {ExampleFiles} from '../classes/abstract_examples';`);
-    content.push(`import {runJsonTest} from '../jest';`);
+    content.push(`import {ExampleFiles} from '../classes/abstract_examples.js';`);
+    content.push(`import {runJsonTest} from '../jest.js';`);
     content.push('afterAll(() => {\n  ExampleFiles.closeFiles();\n});');
     files.forEach(x => content.push(`runJsonTest('${x}');`));
     content.push(``);
@@ -95,9 +117,9 @@ let createAnalyseTests = function() {
     let depth = dir.match(/\//g);
     let base = Array((depth ? depth.length : 0) + 3).join('../');
     let content = [];
-    content.push(`import AnalyticsTest from '${base}analytics/analytics_test';`);
-    content.push(`import {ExampleFiles} from '${base}classes/abstract_examples';`);
-    content.push(`import {runJsonTest} from '${base}jest';`);
+    content.push(`import AnalyticsTest from '${base}analytics/analytics_test.js';`);
+    content.push(`import {ExampleFiles} from '${base}classes/abstract_examples.js';`);
+    content.push(`import {runJsonTest} from '${base}jest.js';`);
     content.push('AnalyticsTest.deep = true;');
     content.push('ExampleFiles.noOutput = true;');
     content.push('afterAll(() => {\n  AnalyticsTest.output();\n});');
@@ -111,6 +133,7 @@ let createFiles = function() {
   let files = [];
   readDir('', files);
   createJsonTests(files);
+  createActionTests(files);
   createOutputTests();
   createAnalyseTests(files);
 };
@@ -121,13 +144,13 @@ let createHtmlFiles = function() {
   for (let key of Object.keys(allOutputs)) {
     let language = key.match(/^DefaultSymbols(.*)/);
     if (!language || !language[1]) continue;
-    languages[language[1]] = allOutputs[key][0].split('/')[1];
+    languages[language[1]] = allOutputs[key][0].split(path.sep)[1];
     tables[language[1]] = {};
   }
   for (let [language, iso] of Object.entries(languages)) {
     let output = Object.keys(allOutputs).filter(x => x.match(language));
     for (let file of output) {
-      let type = allOutputs[file][0].split('/')[2];
+      let type = allOutputs[file][0].split(path.sep)[2];
       if (tables[language][type]) {
         tables[language][type].push(file);
       } else {
@@ -147,27 +170,27 @@ let createHtmlFiles = function() {
     for (let [type, files] of Object.entries(tables[language])) {
       str += `<tr><th>${cap(type)}</th></tr>\n`;
       for (let file of files) {
-        str += `<tr><td><a href="${iso}/${file}.html">${file}</a></td></tr>\n`;
+        str += `<tr><td><a href="${iso}${path.sep}${file}.html">${file}</a></td></tr>\n`;
       }
     }
     str += '</table>';
     str += '\n\n';
   }
-  fs.writeFileSync('output/index.html', '<html>\n<body>\n' + str+ '</body>\n</html>\n');
+  fs.mkdirSync('output', { recursive: true });
+  fs.writeFileSync('output/index.html',
+                   '<!DOCTYPE html>\n<html>\n<body>\n' + str+ '</body>\n</html>\n');
 };
 
-let cleanFiles = function() {
+export let cleanFiles = function() {
   fs.rmSync(jsondir, {force: true, recursive: true});
   fs.rmSync(alldir, {force: true, recursive: true});
   fs.rmSync(analysedir, {force: true, recursive: true});
 };
 
-let build = function() {
+export let build = function() {
   cleanFiles();
   createFiles();
   createHtmlFiles();
 };
 
-module.exports.build = build;
-module.exports.clean = cleanFiles;
 build();

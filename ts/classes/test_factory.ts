@@ -19,28 +19,30 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import { TestError, TestPath, TestUtil } from '../base/test_util';
-import { AbstractJsonTest } from './abstract_test';
+import { TestError, TestPath, TestUtil } from '../base/test_util.js';
+import { AbstractJsonTest } from './abstract_test.js';
 
-import { ApiTest } from './api_test';
-import { ClearspeakAnnotationTest } from './clearspeak_annotation_test';
-import { BrailleLayoutTest, ClearspeakTest } from './clearspeak_test';
-import { CollapseTest } from './collapse_test';
-import { ColorPickerTest } from './color_picker_test';
-import { HtmlTest, XpathTest } from './dom_test';
-import { MarkupTest } from './markup_test';
-import { NumberTest } from './number_test';
-import { PrefixTest } from './prefix_test';
-import * as st from './semantic_test';
-import { SpeechRuleTest } from './speech_rule_test';
-import { SpeechTest } from './speech_test';
-import { SummaryTest, SummarySpeechTest } from './summary_test';
-import { SymbolTest } from './symbol_test';
-import { WalkerTest } from './walker_test';
+import { ApiTest } from './api_test.js';
+import { ClearspeakAnnotationTest } from './clearspeak_annotation_test.js';
+import { BrailleLayoutTest, ClearspeakTest, SpeechMarkupTest } from './clearspeak_test.js';
+import { CollapseTest } from './collapse_test.js';
+import { ColorPickerTest } from './color_picker_test.js';
+import { HtmlTest, XpathTest } from './dom_test.js';
+import { MarkupTest } from './markup_test.js';
+import { NumberTest } from './number_test.js';
+import { PrefixTest, PrefixMarkupTest } from './prefix_test.js';
+import * as st from './semantic_test.js';
+import { SpeechRuleTest } from './speech_rule_test.js';
+import { SpeechTest } from './speech_test.js';
+import { SummaryTest, SummarySpeechTest } from './summary_test.js';
+import { SymbolTest } from './symbol_test.js';
+import { WalkerTest } from './walker_test.js';
 
 const map = new Map<string, any>([
   ['api', ApiTest],
   ['braille2D', BrailleLayoutTest],
+  ['deepSpeech', st.DeepSpeechTest],
+  ['category', st.CategoryTest],
   ['clearspeak', ClearspeakTest],
   ['clearspeakAnnotation', ClearspeakAnnotationTest],
   ['collapse', CollapseTest],
@@ -51,11 +53,16 @@ const map = new Map<string, any>([
   ['markup', MarkupTest],
   ['number', NumberTest],
   ['prefix', PrefixTest],
+  ['prefixMarkup', PrefixMarkupTest],
   ['rebuild', st.RebuildStreeTest],
+  ['rebuildEnriched', st.RebuildEnrichedTest],
   ['rules', SpeechRuleTest],
   ['semanticApi', st.SemanticApiTest],
+  ['semanticMeaning', st.SemanticMeaningTest],
+  ['semanticMap', st.SemanticMapTest],
   ['semanticXml', st.SemanticXmlTest],
   ['speech', SpeechTest],
+  ['speechMarkup', SpeechMarkupTest],
   ['stree', st.SemanticTreeTest],
   ['summary', SummaryTest],
   ['summarySpeech', SummarySpeechTest],

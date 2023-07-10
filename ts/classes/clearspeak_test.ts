@@ -19,10 +19,10 @@
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
-import * as System from '../../speech-rule-engine/js/common/system';
+import * as EngineConst from '../../speech-rule-engine/js/common/engine_const.js';
+import * as System from '../../speech-rule-engine/js/common/system.js';
 
-import { SpeechTest } from './speech_test';
+import { SpeechTest } from './speech_test.js';
 
 export class ClearspeakTest extends SpeechTest {
   /**
@@ -45,6 +45,38 @@ export class ClearspeakTest extends SpeechTest {
     await System.setupEngine({ markup: EngineConst.Markup.NONE });
     return super.tearDownTest();
   }
+}
+
+export class SpeechMarkupTest extends ClearspeakTest {
+
+  /**
+   * The markup to use.
+   */
+  public markup: string = EngineConst.Markup.SSML;
+
+  protected automark: boolean = true;
+
+  /**
+   * @override
+   */
+  public async setUpTest() {
+    await super.setUpTest();
+    return System.setupEngine({
+      automark: this.automark,
+      cleanpause: true,
+      markup: this.markup
+    });
+  }
+
+  /**
+   * @override
+   */
+  public prepare() {
+    super.prepare();
+    this.markup = this.jsonTests.markup || this.markup;
+    this.automark = this.jsonTests.automark || this.automark;
+  }
+
 }
 
 export class BrailleLayoutTest extends SpeechTest {

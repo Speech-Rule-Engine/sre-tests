@@ -17,7 +17,7 @@
  */
 
 import * as assert from 'assert';
-import * as tu from '../base/test_util';
+import * as tu from '../base/test_util.js';
 
 export abstract class AbstractTest {
   /**
@@ -168,8 +168,6 @@ export abstract class AbstractJsonTest extends AbstractTest {
 
   /**
    * The actual test method.
-   *
-   * @param args Arguments for the test method.
    */
   public abstract method(): void;
 }

@@ -201,6 +201,18 @@
     "GHS": {
       "expected": "cedi"
     },
+    "₸": {
+      "expected": "tenge"
+    },
+    "KZT": {
+      "expected": "tenge"
+    },
+    "₺": {
+      "expected": "turkish lira"
+    },
+    "TRY": {
+      "expected": "turkish lira"
+    },
     "元": {
       "expected": "iuan"
     },
@@ -306,6 +318,9 @@
     "kmh": {
       "expected": "quilòmetre per hora"
     },
+    "kph": {
+      "expected": "quilòmetre per hora"
+    },
     "F": {
       "expected": "grau Fahrenheit"
     },
@@ -327,8 +342,17 @@
     "°K": {
       "expected": "kelvin"
     },
+    "″": {
+      "expected": "segon"
+    },
     "min": {
       "expected": "minut"
+    },
+    "′": {
+      "expected": "minut"
+    },
+    "°": {
+      "expected": "grau"
     },
     "h": {
       "expected": "hora"
@@ -479,15 +503,6 @@
     },
     "T": {
       "expected": "tona"
-    },
-    "′": {
-      "expected": "minut"
-    },
-    "°": {
-      "expected": "grau"
-    },
-    "″": {
-      "expected": "segon"
     }
   }
 }

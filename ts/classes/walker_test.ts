@@ -19,18 +19,18 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
-import * as System from '../../speech-rule-engine/js/common/system';
-import { Walker } from '../../speech-rule-engine/js/walker/walker';
-import { TableWalker } from '../../speech-rule-engine/js/walker/table_walker';
-import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
-import * as WalkerFactory from '../../speech-rule-engine/js/walker/walker_factory';
-import * as SpeechGeneratorFactory from '../../speech-rule-engine/js/speech_generator/speech_generator_factory';
-import { Highlighter } from '../../speech-rule-engine/js/highlighter/highlighter';
-import * as HighlighterFactory from '../../speech-rule-engine/js/highlighter/highlighter_factory';
+import * as EngineConst from '../../speech-rule-engine/js/common/engine_const.js';
+import * as System from '../../speech-rule-engine/js/common/system.js';
+import { Walker } from '../../speech-rule-engine/js/walker/walker.js';
+import { TableWalker } from '../../speech-rule-engine/js/walker/table_walker.js';
+import * as DomUtil from '../../speech-rule-engine/js/common/dom_util.js';
+import * as WalkerFactory from '../../speech-rule-engine/js/walker/walker_factory.js';
+import * as SpeechGeneratorFactory from '../../speech-rule-engine/js/speech_generator/speech_generator_factory.js';
+import { Highlighter } from '../../speech-rule-engine/js/highlighter/highlighter.js';
+import * as HighlighterFactory from '../../speech-rule-engine/js/highlighter/highlighter_factory.js';
 
-import { AbstractJsonTest } from '../classes/abstract_test';
-import { Key } from './keycodes';
+import { AbstractJsonTest } from '../classes/abstract_test.js';
+import { Key } from './keycodes.js';
 
 export class WalkerTest extends AbstractJsonTest {
   private walker: Walker;
@@ -77,7 +77,6 @@ export class WalkerTest extends AbstractJsonTest {
   /**
    * Executes single walker moves and tests the resulting speech.
    *
-   * @param walker The walker.
    * @param move The move of the walker.
    * @param result The expected result.
    * @param modifier
@@ -107,16 +106,6 @@ export class WalkerTest extends AbstractJsonTest {
 
   /**
    * Creates a walker.
-   *
-   * @param kind The type of the walker.
-   * @param node The node on which to start the walker.
-   * @param generator The speech generator to use.
-   * @param {{renderer: string,
-   *          browser: (undefined|string)}} renderer Information on renderer,
-   *         browser. Has to at least contain the
-   *     renderer field.
-   * @param mml The MathML string for the node.
-   * @returns The newly created walker.
    */
   private createWalker() {
     const renderer: { renderer: string; browser?: string } = {

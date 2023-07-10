@@ -18,12 +18,12 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine';
-import { SpeechRule } from '../../speech-rule-engine/js/rule_engine/speech_rule';
+import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine.js';
+import { SpeechRule } from '../../speech-rule-engine/js/rule_engine/speech_rule.js';
 
 import * as fs from 'fs';
-import { TestPath, TestUtil } from '../base/test_util';
-import AnalyticsUtil from './analytics_util';
+import { TestPath, TestUtil } from '../base/test_util.js';
+import AnalyticsUtil from './analytics_util.js';
 
 // Saves
 //  * All applicable rules for a test case
@@ -110,14 +110,15 @@ class AnalyticsTest {
    * difference between those and the list of unique rules actually applied
    * during tests.
    */
-  public static outputAllRules() {
+  public static async outputAllRules() {
     AnalyticsTest.loadAllAppliedRules();
-    const ruleSets = AnalyticsUtil.getAllSets();
+    AnalyticsUtil.getAllSets().then((ruleSets) => {
     for (const [name, obj] of Object.entries(ruleSets)) {
       const rules = obj.map((x: SpeechRule) => x.toString());
       AnalyticsUtil.fileJson('allRules', rules.sort(), name);
       AnalyticsTest.allRulesDifference(rules, name);
     }
+    });
   }
 
   private static allAppliedRules: string[] = [];
@@ -127,7 +128,7 @@ class AnalyticsTest {
    * Loads the list of all uniquely applied rules.
    */
   private static loadAllAppliedRules() {
-    const path = TestPath.ANALYSIS + '/uniqueAppliedRules/';
+   const path = TestPath.ANALYSIS + '/uniqueAppliedRules/';
     const files = fs.readdirSync(path);
     files.forEach((file) => {
       AnalyticsTest.allAppliedRules = AnalyticsTest.allAppliedRules.concat(

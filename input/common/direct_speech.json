@@ -75,6 +75,18 @@
     "MglyphGeneral_1": {
       "test": true,
       "input": "<mrow><mi>N</mi><msub><mi>M</mi><mrow class=\"MJX-TeXAtom-ORD\"><mn>1</mn><mo>⊂</mo><mrow class=\"MJX-TeXAtom-VCENTER\"><mglyph src=\"Images/img64cf9bc6538bb7137dab7b360f92afb4.svg\" width=\"13pt\" height=\"6pt\" alt=\"mfin\"></mglyph></mrow></mrow></msub></mrow>"
+    },
+    "Issue_635": {
+      "input": "<mi><mglyph src=\"my-braid-23.png\"/></mi><mo>+</mo><mi><mglyph src=\"my-braid-132.png\" alt=\"132braid\"/></mi><mo>=</mo><mi><mglyph src=\"my-braid-13.png\" alt=\"13braid\"/></mi>"
+    },
+    "Issue_644_0": {
+      "input": "<mn>35</mn><mi aria-label=\"mickeys per hour\">mph</mi>"
+    },
+    "Issue_644_1": {
+      "input": "<mn>35</mn><mi class=\"MathML-Unit\">mph</mi>"
+    },
+    "Issue_644_2": {
+      "input": "<mn>35</mn><mi class=\"MathML-Unit\" aria-label=\"mickeys per hour\">mph</mi>"
     }
   }
 }

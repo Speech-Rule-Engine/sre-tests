@@ -12,7 +12,7 @@
       "expected": "f av, g av x"
     },
     "ApplSimple_1": {
-      "expected": "f av, g av x, lika med f av x, plus g av x"
+      "expected": "f av, g av x, är lika med f av x, plus g av x"
     },
     "BinaryOperationPause_0": {
       "expected": "sinus x y"
@@ -27,28 +27,28 @@
       "expected": "2 rader, rad 1: a. rad 2: tom"
     },
     "Empty_Cell_0": {
-      "expected": "2 rader, rad 1: a; lika med; b"
+      "expected": "2 rader, rad 1: a; är lika med; b"
     },
     "Empty_Cell_1": {
-      "expected": "2 rader, rad 1: a; lika med; b. rad 2: tom"
+      "expected": "2 rader, rad 1: a; är lika med; b. rad 2: tom"
     },
     "Empty_Cell_2": {
-      "expected": "2 rader, rad 1: a; lika med; b. rad 2: tom"
+      "expected": "2 rader, rad 1: a; är lika med; b. rad 2: tom"
     },
     "Empty_Cell_3": {
-      "expected": "2 rader, rad 1: a; lika med; b. rad 2: 1; tom; 2"
+      "expected": "2 rader, rad 1: a; är lika med; b. rad 2: 1; tom; 2"
     },
     "Angle_0_default": {
-      "expected": "45 degrees, 10 minutes, 20 seconds"
+      "expected": "45 grader, 10 minuter, 20 sekunder"
     },
     "Angle_1_default": {
-      "expected": "1 degree, 10 minutes, 20 seconds"
+      "expected": "1 grad, 10 minuter, 20 sekunder"
     },
     "Angle_2_default": {
-      "expected": "45 degrees, 1 minute, 20 seconds"
+      "expected": "45 grader, 1 minut, 20 sekunder"
     },
     "Angle_3_default": {
-      "expected": "45 degrees, 10 minutes, 1 second"
+      "expected": "45 grader, 10 minuter, 1 sekund"
     },
     "Angle_4_default": {
       "expected": "1 fot, 20 tum"
@@ -57,34 +57,34 @@
       "expected": "10 fot, 1 tum"
     },
     "Angle_0_Angle": {
-      "expected": "45 degrees, 10 minutes, 20 seconds"
+      "expected": "45 grader, 10 minuter, 20 sekunder"
     },
     "Angle_1_Angle": {
-      "expected": "1 degree, 10 minutes, 20 seconds"
+      "expected": "1 grad, 10 minuter, 20 sekunder"
     },
     "Angle_2_Angle": {
-      "expected": "45 degrees, 1 minute, 20 seconds"
+      "expected": "45 grader, 1 minut, 20 sekunder"
     },
     "Angle_3_Angle": {
-      "expected": "45 degrees, 10 minutes, 1 second"
+      "expected": "45 grader, 10 minuter, 1 sekund"
     },
     "Angle_4_Angle": {
-      "expected": "1 minute, 20 seconds"
+      "expected": "1 minut, 20 sekunder"
     },
     "Angle_5_Angle": {
-      "expected": "10 minutes, 1 second"
+      "expected": "10 minuter, 1 sekund"
     },
     "Angle_0_Length": {
-      "expected": "45 degrees, 10 minutes, 20 seconds"
+      "expected": "45 grader, 10 minuter, 20 sekunder"
     },
     "Angle_1_Length": {
-      "expected": "1 degree, 10 minutes, 20 seconds"
+      "expected": "1 grad, 10 minuter, 20 sekunder"
     },
     "Angle_2_Length": {
-      "expected": "45 degrees, 1 minute, 20 seconds"
+      "expected": "45 grader, 1 minut, 20 sekunder"
     },
     "Angle_3_Length": {
-      "expected": "45 degrees, 10 minutes, 1 second"
+      "expected": "45 grader, 10 minuter, 1 sekund"
     },
     "Angle_4_Length": {
       "expected": "1 fot, 20 tum"
@@ -129,16 +129,16 @@
       "expected": "12 överstruket med 2 slut överstrykning"
     },
     "EncloseSpecial_0": {
-      "expected": "vertikalt sträck A"
+      "expected": "vertikalt streck A"
     },
     "EncloseSpecial_1": {
-      "expected": "A horisontellt sträck"
+      "expected": "A horisontellt streck"
     },
     "EncloseSpecial_2": {
-      "expected": "A vertikalt sträck"
+      "expected": "A vertikalt streck"
     },
     "EncloseSpecial_3": {
-      "expected": "A över horisontellt sträck"
+      "expected": "A över horisontellt streck"
     },
     "NestedRoots_0": {
       "expected": "kvadratroten av, kubikroten av a, plus b"
@@ -222,16 +222,16 @@
       "expected": "a"
     },
     "MultiLines_0": {
-      "expected": "2 fall, fall 1: f av x, lika med minus x, if x mindre än 0. fall 2: f av x, lika med x, if x större än eller lika med 0"
+      "expected": "2 fall, fall 1: f av x, är lika med minus x, if x mindre än 0. fall 2: f av x, är lika med x, if x större än eller lika med 0"
     },
     "MultiLines_1": {
-      "expected": "2 begränsning, begränsning 1: f av x, lika med minus x; if x mindre än 0. begränsning 2: f av x, lika med x, if x större än eller lika med 0"
+      "expected": "2 begränsning, begränsning 1: f av x, är lika med minus x; if x mindre än 0. begränsning 2: f av x, är lika med x, if x större än eller lika med 0"
     },
     "VulgarFraction": {
       "expected": "10 delat med 20"
     },
     "UnitFraction": {
-      "expected": "2 km delat med b"
+      "expected": "2 kilometer delat med b"
     },
     "Decimal": {
       "expected": "decimalbråk 1 komma 4 följt av upprepande siffra 3"
@@ -261,7 +261,7 @@
       "expected": "3 upphöjt till två tredjedelar kubik"
     },
     "MultiRel": {
-      "expected": "a mindre än eller lika med b lika med c"
+      "expected": "a mindre än eller lika med b är lika med c"
     },
     "PrefixFunctionAsExponent": {
       "expected": "3 upphöjt till sinus av, öppna, 2 plus x, stäng"

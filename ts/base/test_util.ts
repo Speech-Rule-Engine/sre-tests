@@ -19,13 +19,16 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-const TestDir = __dirname.replace(/(dist|js\/base)$/, '');
+function getDir() {
+  return __dirname;
+}
+const TestDir = getDir().replace(/(dist|js\/base)$/, '');
 
 export const TestPath: { [key: string]: string } = {
-  INPUT: TestDir + 'input/',
-  OUTPUT: TestDir + 'output/',
-  EXPECTED: TestDir + 'expected/',
-  ANALYSIS: TestDir + 'analysis/'
+  INPUT: path.join(TestDir, 'input/'),
+  OUTPUT: path.join(TestDir, 'output/'),
+  EXPECTED: path.join(TestDir, 'expected/'),
+  ANALYSIS: path.join(TestDir, 'analysis/')
 };
 
 /**
@@ -64,7 +67,7 @@ export interface JsonFile {
   [propName: string]: any;
   factory?: string;
   information?: string;
-  exlcude?: string[];
+  exclude?: string[];
   base?: string;
   tests?: JsonTests | 'ALL';
 }

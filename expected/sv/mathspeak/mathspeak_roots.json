@@ -10,364 +10,364 @@
   "compare": true,
   "tests": {
     "sqrt_0_default": {
-      "expected": "startrot a slutrot"
+      "expected": "StartRot a SlutRot"
     },
     "sqrt_0_brief": {
-      "expected": "startrot a slutrot"
+      "expected": "StartRot a SlutRot"
     },
     "sqrt_0_sbrief": {
-      "expected": "rot a slutrot"
+      "expected": "Rot a SlutRot"
     },
     "sqrt_1_default": {
-      "expected": "rotindex 2 startrot a slutrot"
+      "expected": "RotIndex 2 StartRot a SlutRot"
     },
     "sqrt_1_brief": {
-      "expected": "rotindex 2 startrot a slutrot"
+      "expected": "RotIndex 2 StartRot a SlutRot"
     },
     "sqrt_1_sbrief": {
-      "expected": "index 2 rot a slutrot"
+      "expected": "Index 2 Rot a SlutRot"
     },
     "sqrt_2_default": {
-      "expected": "nästladstartrot startrot a slutrot nästladslutrot"
+      "expected": "NästladStartRot StartRot a SlutRot NästladSlutRot"
     },
     "sqrt_2_brief": {
-      "expected": "nästestartrot startrot a slutrot nästeslutrot"
+      "expected": "NästStartRot StartRot a SlutRot NästSlutRot"
     },
     "sqrt_2_sbrief": {
-      "expected": "nästerot rot a slutrot nästeslutrot"
+      "expected": "NästRot Rot a SlutRot NästSlutRot"
     },
     "sqrt_3_default": {
-      "expected": "nästlad3startrot nästladdubbeltstartrot nästladstartrot startrot a slutrot nästladslutrot nästladdubbeltslutrot nästlad3slutrot"
+      "expected": "Nästlad3StartRot NästladDubbeltStartRot NästladStartRot StartRot a SlutRot NästladSlutRot NästladDubbeltSlutRot Nästlad3SlutRot"
     },
     "sqrt_3_brief": {
-      "expected": "näste3startrot nästedubbeltstartrot nästestartrot startrot a slutrot nästeslutrot nästedubbeltslutrot näste3slutrot"
+      "expected": "Näst3StartRot NästDubbeltStartRot NästStartRot StartRot a SlutRot NästSlutRot NästDubbeltSlutRot Näst3SlutRot"
     },
     "sqrt_3_sbrief": {
-      "expected": "näste3rot nästedubbeltrot nästerot rot a slutrot nästeslutrot nästedubbeltslutrot näste3slutrot"
+      "expected": "Näst3Rot NästDubbeltRot NästRot Rot a SlutRot NästSlutRot NästDubbeltSlutRot Näst3SlutRot"
     },
     "roots_0_default": {
-      "expected": "rotindex 1 startrot a slutrot"
+      "expected": "RotIndex 1 StartRot a SlutRot"
     },
     "roots_0_brief": {
-      "expected": "rotindex 1 startrot a slutrot"
+      "expected": "RotIndex 1 StartRot a SlutRot"
     },
     "roots_0_sbrief": {
-      "expected": "index 1 rot a slutrot"
+      "expected": "Index 1 Rot a SlutRot"
     },
     "roots_1_default": {
-      "expected": "rotindex 2 startrot a slutrot"
+      "expected": "RotIndex 2 StartRot a SlutRot"
     },
     "roots_1_brief": {
-      "expected": "rotindex 2 startrot a slutrot"
+      "expected": "RotIndex 2 StartRot a SlutRot"
     },
     "roots_1_sbrief": {
-      "expected": "index 2 rot a slutrot"
+      "expected": "Index 2 Rot a SlutRot"
     },
     "roots_2_default": {
-      "expected": "rotindex 3 startrot a slutrot"
+      "expected": "RotIndex 3 StartRot a SlutRot"
     },
     "roots_2_brief": {
-      "expected": "rotindex 3 startrot a slutrot"
+      "expected": "RotIndex 3 StartRot a SlutRot"
     },
     "roots_2_sbrief": {
-      "expected": "index 3 rot a slutrot"
+      "expected": "Index 3 Rot a SlutRot"
     },
     "roots_3_default": {
-      "expected": "rotindex 4 startrot a slutrot"
+      "expected": "RotIndex 4 StartRot a SlutRot"
     },
     "roots_3_brief": {
-      "expected": "rotindex 4 startrot a slutrot"
+      "expected": "RotIndex 4 StartRot a SlutRot"
     },
     "roots_3_sbrief": {
-      "expected": "index 4 rot a slutrot"
+      "expected": "Index 4 Rot a SlutRot"
     },
     "roots_4_default": {
-      "expected": "rotindex 5 startrot a slutrot"
+      "expected": "RotIndex 5 StartRot a SlutRot"
     },
     "roots_4_brief": {
-      "expected": "rotindex 5 startrot a slutrot"
+      "expected": "RotIndex 5 StartRot a SlutRot"
     },
     "roots_4_sbrief": {
-      "expected": "index 5 rot a slutrot"
+      "expected": "Index 5 Rot a SlutRot"
     },
     "roots_5_default": {
-      "expected": "rotindex 6 startrot a slutrot"
+      "expected": "RotIndex 6 StartRot a SlutRot"
     },
     "roots_5_brief": {
-      "expected": "rotindex 6 startrot a slutrot"
+      "expected": "RotIndex 6 StartRot a SlutRot"
     },
     "roots_5_sbrief": {
-      "expected": "index 6 rot a slutrot"
+      "expected": "Index 6 Rot a SlutRot"
     },
     "roots_6_default": {
-      "expected": "rotindex 7 startrot a slutrot"
+      "expected": "RotIndex 7 StartRot a SlutRot"
     },
     "roots_6_brief": {
-      "expected": "rotindex 7 startrot a slutrot"
+      "expected": "RotIndex 7 StartRot a SlutRot"
     },
     "roots_6_sbrief": {
-      "expected": "index 7 rot a slutrot"
+      "expected": "Index 7 Rot a SlutRot"
     },
     "roots_7_default": {
-      "expected": "rotindex 8 startrot a slutrot"
+      "expected": "RotIndex 8 StartRot a SlutRot"
     },
     "roots_7_brief": {
-      "expected": "rotindex 8 startrot a slutrot"
+      "expected": "RotIndex 8 StartRot a SlutRot"
     },
     "roots_7_sbrief": {
-      "expected": "index 8 rot a slutrot"
+      "expected": "Index 8 Rot a SlutRot"
     },
     "roots_8_default": {
-      "expected": "rotindex 9 startrot a slutrot"
+      "expected": "RotIndex 9 StartRot a SlutRot"
     },
     "roots_8_brief": {
-      "expected": "rotindex 9 startrot a slutrot"
+      "expected": "RotIndex 9 StartRot a SlutRot"
     },
     "roots_8_sbrief": {
-      "expected": "index 9 rot a slutrot"
+      "expected": "Index 9 Rot a SlutRot"
     },
     "roots_9_default": {
-      "expected": "rotindex 10 startrot a slutrot"
+      "expected": "RotIndex 10 StartRot a SlutRot"
     },
     "roots_9_brief": {
-      "expected": "rotindex 10 startrot a slutrot"
+      "expected": "RotIndex 10 StartRot a SlutRot"
     },
     "roots_9_sbrief": {
-      "expected": "index 10 rot a slutrot"
+      "expected": "Index 10 Rot a SlutRot"
     },
     "roots_10_default": {
-      "expected": "rotindex 11 startrot a slutrot"
+      "expected": "RotIndex 11 StartRot a SlutRot"
     },
     "roots_10_brief": {
-      "expected": "rotindex 11 startrot a slutrot"
+      "expected": "RotIndex 11 StartRot a SlutRot"
     },
     "roots_10_sbrief": {
-      "expected": "index 11 rot a slutrot"
+      "expected": "Index 11 Rot a SlutRot"
     },
     "nested-roots_0_default": {
-      "expected": "nästladrotindex 1 nästladstartrot rotindex 1 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 1 NästladStartRot RotIndex 1 StartRot a SlutRot NästladSlutRot"
     },
     "nested-roots_0_brief": {
-      "expected": "nästerotindex 1 nästestartrot rotindex 1 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 1 NästStartRot RotIndex 1 StartRot a SlutRot NästSlutRot"
     },
     "nested-roots_0_sbrief": {
-      "expected": "nästeindex 1 nästerot index 1 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 1 NästRot Index 1 Rot a SlutRot NästSlutRot"
     },
     "nested-roots_1_default": {
-      "expected": "nästladrotindex 2 nästladstartrot rotindex 2 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 2 NästladStartRot RotIndex 2 StartRot a SlutRot NästladSlutRot"
     },
     "nested-roots_1_brief": {
-      "expected": "nästerotindex 2 nästestartrot rotindex 2 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 2 NästStartRot RotIndex 2 StartRot a SlutRot NästSlutRot"
     },
     "nested-roots_1_sbrief": {
-      "expected": "nästeindex 2 nästerot index 2 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 2 NästRot Index 2 Rot a SlutRot NästSlutRot"
     },
     "nested-roots_2_default": {
-      "expected": "nästladrotindex 3 nästladstartrot rotindex 3 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 3 NästladStartRot RotIndex 3 StartRot a SlutRot NästladSlutRot"
     },
     "nested-roots_2_brief": {
-      "expected": "nästerotindex 3 nästestartrot rotindex 3 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 3 NästStartRot RotIndex 3 StartRot a SlutRot NästSlutRot"
     },
     "nested-roots_2_sbrief": {
-      "expected": "nästeindex 3 nästerot index 3 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 3 NästRot Index 3 Rot a SlutRot NästSlutRot"
     },
     "nested-roots_3_default": {
-      "expected": "nästladrotindex 4 nästladstartrot rotindex 4 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 4 NästladStartRot RotIndex 4 StartRot a SlutRot NästladSlutRot"
     },
     "nested-roots_3_brief": {
-      "expected": "nästerotindex 4 nästestartrot rotindex 4 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 4 NästStartRot RotIndex 4 StartRot a SlutRot NästSlutRot"
     },
     "nested-roots_3_sbrief": {
-      "expected": "nästeindex 4 nästerot index 4 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 4 NästRot Index 4 Rot a SlutRot NästSlutRot"
     },
     "nested-roots_4_default": {
-      "expected": "nästladrotindex 5 nästladstartrot rotindex 5 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 5 NästladStartRot RotIndex 5 StartRot a SlutRot NästladSlutRot"
     },
     "nested-roots_4_brief": {
-      "expected": "nästerotindex 5 nästestartrot rotindex 5 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 5 NästStartRot RotIndex 5 StartRot a SlutRot NästSlutRot"
     },
     "nested-roots_4_sbrief": {
-      "expected": "nästeindex 5 nästerot index 5 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 5 NästRot Index 5 Rot a SlutRot NästSlutRot"
     },
     "nested-roots_5_default": {
-      "expected": "nästladrotindex 6 nästladstartrot rotindex 6 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 6 NästladStartRot RotIndex 6 StartRot a SlutRot NästladSlutRot"
     },
     "nested-roots_5_brief": {
-      "expected": "nästerotindex 6 nästestartrot rotindex 6 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 6 NästStartRot RotIndex 6 StartRot a SlutRot NästSlutRot"
     },
     "nested-roots_5_sbrief": {
-      "expected": "nästeindex 6 nästerot index 6 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 6 NästRot Index 6 Rot a SlutRot NästSlutRot"
     },
     "nested-roots_6_default": {
-      "expected": "nästladrotindex 7 nästladstartrot rotindex 7 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 7 NästladStartRot RotIndex 7 StartRot a SlutRot NästladSlutRot"
     },
     "nested-roots_6_brief": {
-      "expected": "nästerotindex 7 nästestartrot rotindex 7 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 7 NästStartRot RotIndex 7 StartRot a SlutRot NästSlutRot"
     },
     "nested-roots_6_sbrief": {
-      "expected": "nästeindex 7 nästerot index 7 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 7 NästRot Index 7 Rot a SlutRot NästSlutRot"
     },
     "nested-roots_7_default": {
-      "expected": "nästladrotindex 8 nästladstartrot rotindex 8 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 8 NästladStartRot RotIndex 8 StartRot a SlutRot NästladSlutRot"
     },
     "nested-roots_7_brief": {
-      "expected": "nästerotindex 8 nästestartrot rotindex 8 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 8 NästStartRot RotIndex 8 StartRot a SlutRot NästSlutRot"
     },
     "nested-roots_7_sbrief": {
-      "expected": "nästeindex 8 nästerot index 8 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 8 NästRot Index 8 Rot a SlutRot NästSlutRot"
     },
     "nested-roots_8_default": {
-      "expected": "nästladrotindex 9 nästladstartrot rotindex 9 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 9 NästladStartRot RotIndex 9 StartRot a SlutRot NästladSlutRot"
     },
     "nested-roots_8_brief": {
-      "expected": "nästerotindex 9 nästestartrot rotindex 9 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 9 NästStartRot RotIndex 9 StartRot a SlutRot NästSlutRot"
     },
     "nested-roots_8_sbrief": {
-      "expected": "nästeindex 9 nästerot index 9 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 9 NästRot Index 9 Rot a SlutRot NästSlutRot"
     },
     "nested-roots_9_default": {
-      "expected": "nästladrotindex 10 nästladstartrot rotindex 10 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 10 NästladStartRot RotIndex 10 StartRot a SlutRot NästladSlutRot"
     },
     "nested-roots_9_brief": {
-      "expected": "nästerotindex 10 nästestartrot rotindex 10 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 10 NästStartRot RotIndex 10 StartRot a SlutRot NästSlutRot"
     },
     "nested-roots_9_sbrief": {
-      "expected": "nästeindex 10 nästerot index 10 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 10 NästRot Index 10 Rot a SlutRot NästSlutRot"
     },
     "nested-roots_10_default": {
-      "expected": "nästladrotindex 11 nästladstartrot rotindex 11 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 11 NästladStartRot RotIndex 11 StartRot a SlutRot NästladSlutRot"
     },
     "nested-roots_10_brief": {
-      "expected": "nästerotindex 11 nästestartrot rotindex 11 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 11 NästStartRot RotIndex 11 StartRot a SlutRot NästSlutRot"
     },
     "nested-roots_10_sbrief": {
-      "expected": "nästeindex 11 nästerot index 11 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 11 NästRot Index 11 Rot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_0_default": {
-      "expected": "nästladrotindex 1 nästladstartrot rotindex 3 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 1 NästladStartRot RotIndex 3 StartRot a SlutRot NästladSlutRot"
     },
     "hybrided-nested-roots_0_brief": {
-      "expected": "nästerotindex 1 nästestartrot rotindex 3 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 1 NästStartRot RotIndex 3 StartRot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_0_sbrief": {
-      "expected": "nästeindex 1 nästerot index 3 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 1 NästRot Index 3 Rot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_1_default": {
-      "expected": "nästladrotindex 2 nästladstartrot rotindex 3 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 2 NästladStartRot RotIndex 3 StartRot a SlutRot NästladSlutRot"
     },
     "hybrided-nested-roots_1_brief": {
-      "expected": "nästerotindex 2 nästestartrot rotindex 3 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 2 NästStartRot RotIndex 3 StartRot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_1_sbrief": {
-      "expected": "nästeindex 2 nästerot index 3 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 2 NästRot Index 3 Rot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_2_default": {
-      "expected": "nästladrotindex 3 nästladstartrot rotindex 3 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 3 NästladStartRot RotIndex 3 StartRot a SlutRot NästladSlutRot"
     },
     "hybrided-nested-roots_2_brief": {
-      "expected": "nästerotindex 3 nästestartrot rotindex 3 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 3 NästStartRot RotIndex 3 StartRot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_2_sbrief": {
-      "expected": "nästeindex 3 nästerot index 3 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 3 NästRot Index 3 Rot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_3_default": {
-      "expected": "nästladrotindex 4 nästladstartrot rotindex 3 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 4 NästladStartRot RotIndex 3 StartRot a SlutRot NästladSlutRot"
     },
     "hybrided-nested-roots_3_brief": {
-      "expected": "nästerotindex 4 nästestartrot rotindex 3 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 4 NästStartRot RotIndex 3 StartRot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_3_sbrief": {
-      "expected": "nästeindex 4 nästerot index 3 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 4 NästRot Index 3 Rot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_4_default": {
-      "expected": "nästladrotindex 5 nästladstartrot rotindex 3 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 5 NästladStartRot RotIndex 3 StartRot a SlutRot NästladSlutRot"
     },
     "hybrided-nested-roots_4_brief": {
-      "expected": "nästerotindex 5 nästestartrot rotindex 3 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 5 NästStartRot RotIndex 3 StartRot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_4_sbrief": {
-      "expected": "nästeindex 5 nästerot index 3 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 5 NästRot Index 3 Rot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_5_default": {
-      "expected": "nästladrotindex 6 nästladstartrot rotindex 3 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 6 NästladStartRot RotIndex 3 StartRot a SlutRot NästladSlutRot"
     },
     "hybrided-nested-roots_5_brief": {
-      "expected": "nästerotindex 6 nästestartrot rotindex 3 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 6 NästStartRot RotIndex 3 StartRot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_5_sbrief": {
-      "expected": "nästeindex 6 nästerot index 3 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 6 NästRot Index 3 Rot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_6_default": {
-      "expected": "nästladrotindex 7 nästladstartrot rotindex 3 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 7 NästladStartRot RotIndex 3 StartRot a SlutRot NästladSlutRot"
     },
     "hybrided-nested-roots_6_brief": {
-      "expected": "nästerotindex 7 nästestartrot rotindex 3 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 7 NästStartRot RotIndex 3 StartRot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_6_sbrief": {
-      "expected": "nästeindex 7 nästerot index 3 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 7 NästRot Index 3 Rot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_7_default": {
-      "expected": "nästladrotindex 8 nästladstartrot rotindex 3 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 8 NästladStartRot RotIndex 3 StartRot a SlutRot NästladSlutRot"
     },
     "hybrided-nested-roots_7_brief": {
-      "expected": "nästerotindex 8 nästestartrot rotindex 3 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 8 NästStartRot RotIndex 3 StartRot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_7_sbrief": {
-      "expected": "nästeindex 8 nästerot index 3 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 8 NästRot Index 3 Rot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_8_default": {
-      "expected": "nästladrotindex 9 nästladstartrot rotindex 3 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 9 NästladStartRot RotIndex 3 StartRot a SlutRot NästladSlutRot"
     },
     "hybrided-nested-roots_8_brief": {
-      "expected": "nästerotindex 9 nästestartrot rotindex 3 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 9 NästStartRot RotIndex 3 StartRot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_8_sbrief": {
-      "expected": "nästeindex 9 nästerot index 3 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 9 NästRot Index 3 Rot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_9_default": {
-      "expected": "nästladrotindex 10 nästladstartrot rotindex 3 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 10 NästladStartRot RotIndex 3 StartRot a SlutRot NästladSlutRot"
     },
     "hybrided-nested-roots_9_brief": {
-      "expected": "nästerotindex 10 nästestartrot rotindex 3 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 10 NästStartRot RotIndex 3 StartRot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_9_sbrief": {
-      "expected": "nästeindex 10 nästerot index 3 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 10 NästRot Index 3 Rot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_10_default": {
-      "expected": "nästladrotindex 11 nästladstartrot rotindex 3 startrot a slutrot nästladslutrot"
+      "expected": "NästladRotIndex 11 NästladStartRot RotIndex 3 StartRot a SlutRot NästladSlutRot"
     },
     "hybrided-nested-roots_10_brief": {
-      "expected": "nästerotindex 11 nästestartrot rotindex 3 startrot a slutrot nästeslutrot"
+      "expected": "NästRotIndex 11 NästStartRot RotIndex 3 StartRot a SlutRot NästSlutRot"
     },
     "hybrided-nested-roots_10_sbrief": {
-      "expected": "nästeindex 11 nästerot index 3 rot a slutrot nästeslutrot"
+      "expected": "NästIndex 11 NästRot Index 3 Rot a SlutRot NästSlutRot"
     },
     "deep-nested-roots_0_default": {
-      "expected": "nästlad3rotindex 2 nästlad3startrot nästladdubbeltrotindex 3 nästladdubbeltstartrot nästladrotindex 4 nästladstartrot rotindex 5 startrot a slutrot nästladslutrot nästladdubbeltslutrot nästlad3slutrot"
+      "expected": "Nästlad3RotIndex 2 Nästlad3StartRot NästladDubbeltRotIndex 3 NästladDubbeltStartRot NästladRotIndex 4 NästladStartRot RotIndex 5 StartRot a SlutRot NästladSlutRot NästladDubbeltSlutRot Nästlad3SlutRot"
     },
     "deep-nested-roots_0_brief": {
-      "expected": "näste3rotindex 2 näste3startrot nästedubbeltrotindex 3 nästedubbeltstartrot nästerotindex 4 nästestartrot rotindex 5 startrot a slutrot nästeslutrot nästedubbeltslutrot näste3slutrot"
+      "expected": "Näst3RotIndex 2 Näst3StartRot NästDubbeltRotIndex 3 NästDubbeltStartRot NästRotIndex 4 NästStartRot RotIndex 5 StartRot a SlutRot NästSlutRot NästDubbeltSlutRot Näst3SlutRot"
     },
     "deep-nested-roots_0_sbrief": {
-      "expected": "näste3index 2 näste3rot nästedubbeltindex 3 nästedubbeltrot nästeindex 4 nästerot index 5 rot a slutrot nästeslutrot nästedubbeltslutrot näste3slutrot"
+      "expected": "Näst3Index 2 Näst3Rot NästDubbeltIndex 3 NästDubbeltRot NästIndex 4 NästRot Index 5 Rot a SlutRot NästSlutRot NästDubbeltSlutRot Näst3SlutRot"
     },
     "deep-nested-roots_1_default": {
-      "expected": "nästlad3rotindex 2 nästlad3startrot nästladdubbeltrotindex 3 nästladdubbeltstartrot nästladrotindex 2 nästladstartrot rotindex 3 startrot a slutrot nästladslutrot nästladdubbeltslutrot nästlad3slutrot"
+      "expected": "Nästlad3RotIndex 2 Nästlad3StartRot NästladDubbeltRotIndex 3 NästladDubbeltStartRot NästladRotIndex 2 NästladStartRot RotIndex 3 StartRot a SlutRot NästladSlutRot NästladDubbeltSlutRot Nästlad3SlutRot"
     },
     "deep-nested-roots_1_brief": {
-      "expected": "näste3rotindex 2 näste3startrot nästedubbeltrotindex 3 nästedubbeltstartrot nästerotindex 2 nästestartrot rotindex 3 startrot a slutrot nästeslutrot nästedubbeltslutrot näste3slutrot"
+      "expected": "Näst3RotIndex 2 Näst3StartRot NästDubbeltRotIndex 3 NästDubbeltStartRot NästRotIndex 2 NästStartRot RotIndex 3 StartRot a SlutRot NästSlutRot NästDubbeltSlutRot Näst3SlutRot"
     },
     "deep-nested-roots_1_sbrief": {
-      "expected": "näste3index 2 näste3rot nästedubbeltindex 3 nästedubbeltrot nästeindex 2 nästerot index 3 rot a slutrot nästeslutrot nästedubbeltslutrot näste3slutrot"
+      "expected": "Näst3Index 2 Näst3Rot NästDubbeltIndex 3 NästDubbeltRot NästIndex 2 NästRot Index 3 Rot a SlutRot NästSlutRot NästDubbeltSlutRot Näst3SlutRot"
     },
     "deep-nested-roots_2_default": {
-      "expected": "nästlad4rotindex 2 nästlad4startrot nästlad3rotindex 3 nästlad3startrot nästladdubbeltstartrot nästladrotindex 3 nästladstartrot startrot a slutrot nästladslutrot nästladdubbeltslutrot nästlad3slutrot nästlad4slutrot"
+      "expected": "Nästlad4RotIndex 2 Nästlad4StartRot Nästlad3RotIndex 3 Nästlad3StartRot NästladDubbeltStartRot NästladRotIndex 3 NästladStartRot StartRot a SlutRot NästladSlutRot NästladDubbeltSlutRot Nästlad3SlutRot Nästlad4SlutRot"
     },
     "deep-nested-roots_2_brief": {
-      "expected": "näste4rotindex 2 näste4startrot näste3rotindex 3 näste3startrot nästedubbeltstartrot nästerotindex 3 nästestartrot startrot a slutrot nästeslutrot nästedubbeltslutrot näste3slutrot näste4slutrot"
+      "expected": "Näst4RotIndex 2 Näst4StartRot Näst3RotIndex 3 Näst3StartRot NästDubbeltStartRot NästRotIndex 3 NästStartRot StartRot a SlutRot NästSlutRot NästDubbeltSlutRot Näst3SlutRot Näst4SlutRot"
     },
     "deep-nested-roots_2_sbrief": {
-      "expected": "näste4index 2 näste4rot näste3index 3 näste3rot nästedubbeltrot nästeindex 3 nästerot rot a slutrot nästeslutrot nästedubbeltslutrot näste3slutrot näste4slutrot"
+      "expected": "Näst4Index 2 Näst4Rot Näst3Index 3 Näst3Rot NästDubbeltRot NästIndex 3 NästRot Rot a SlutRot NästSlutRot NästDubbeltSlutRot Näst3SlutRot Näst4SlutRot"
     }
   }
 }

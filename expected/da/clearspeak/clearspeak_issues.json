@@ -31,7 +31,7 @@
       "expected": "x factorial"
     },
     "Issue320_3": {
-      "expected": "negative negative x"
+      "expected": "minustegn minustegn x"
     },
     "Issue320_4": {
       "expected": "plustegn plustegn x"
@@ -46,16 +46,16 @@
       "expected": "venstre parantes, the fraction with numerator partielle afledte squared, and denominator partielle afledte x squared, plustegn, the fraction with numerator partielle afledte squared, and denominator partielle afledte y squared, højre parantes,  , the absolute value of phi  , venstre parantes, x plustegn normal I, y, højre parantes, squared lig med 0"
     },
     "Issue301_1": {
-      "expected": "4 mm"
+      "expected": "4 millimeter"
     },
     "Issue301_2": {
-      "expected": "1 mm"
+      "expected": "1 millimeter"
     },
     "Issue301_3": {
-      "expected": "4 mm"
+      "expected": "4 millimeter"
     },
     "Issue301_4": {
-      "expected": "1 mm"
+      "expected": "1 millimeter"
     },
     "Issue_442_0": {
       "expected": "9 divided by 3 er ikke lig med 9 krydsprodukt 3"
@@ -68,6 +68,30 @@
     },
     "Issue_442_3": {
       "expected": "9 divided by 3"
+    },
+    "Integral_Issue_0": {
+      "expected": "the integral of f of x, d x"
+    },
+    "Integral_Issue_1": {
+      "expected": "the integral of f of x, d x"
+    },
+    "Integral_Issue_2": {
+      "expected": "the integral of f of x, d x, lig med 8"
+    },
+    "Issue_689_0": {
+      "expected": "2 lines, Line 1:, 2 lines, Line 1: 100. Line 2: 200. Line 2:, 2 lines, Line 1: 300. Line 2: 400"
+    },
+    "Issue_689_1": {
+      "expected": "2 lines, Line 1: a; b. Line 2:, 2 lines, Line 1:, c sub 1; c sub 2. Line 2:, c sub 3; c sub 4. d"
+    },
+    "Issue_689_2": {
+      "expected": "2 cases, Case 1:, 2 cases, Case 1: b. Case 2: c. Case 2: d"
+    },
+    "Issue_689_3": {
+      "expected": "the 2 by 2 matrix. Row 1: Column 1, a; Column 2, b. Row 2: Column 1, the 2 by 2 matrix. Row 1: c sub 1, c sub 2 Row 2: c sub 3, c sub 4. end matrix; Column 2, d. end matrix"
+    },
+    "Issue_689_4": {
+      "expected": "the 2 by 2 matrix. Row 1: Column 1, a; Column 2, b. Row 2: Column 1, the 2 by 2 matrix. Row 1: Column 1,, c sub 1; Column 2,, c sub 2. Row 2: Column 1,, c sub 3, plustegn a plustegn b; Column 2,, c sub 4. end matrix; Column 2, d. end matrix"
     }
   }
 }
