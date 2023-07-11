@@ -171,15 +171,15 @@
       "expected": "y menos 1"
     },
     "Sample_5_1_2_default": {
-      "input": "<mrow><mo>(</mo><mn>1</mn><mtext> a </mtext><mn>1</mn><mo>)</mo></mrow>",
+      "input": "<mrow><mo>(</mo><mn>1</mn><mtext>&#xA0;a&#xA0;</mtext><mn>1</mn><mo>)</mo></mrow>",
       "expected": "paréntesis izquierdo 1 a 1 paréntesis derecho"
     },
     "Sample_5_1_2_brief": {
-      "input": "<mrow><mo>(</mo><mn>1</mn><mtext> a </mtext><mn>1</mn><mo>)</mo></mrow>",
+      "input": "<mrow><mo>(</mo><mn>1</mn><mtext>&#xA0;a&#xA0;</mtext><mn>1</mn><mo>)</mo></mrow>",
       "expected": "paréntesis izquierdo 1 a 1 paréntesis derecho"
     },
     "Sample_5_1_2_sbrief": {
-      "input": "<mrow><mo>(</mo><mn>1</mn><mtext> a </mtext><mn>1</mn><mo>)</mo></mrow>",
+      "input": "<mrow><mo>(</mo><mn>1</mn><mtext>&#xA0;a&#xA0;</mtext><mn>1</mn><mo>)</mo></mrow>",
       "expected": "paréntesis izquierdo 1 a 1 paréntesis derecho"
     },
     "Sample_5_1_3_default": {
