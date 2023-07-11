@@ -162,6 +162,7 @@ const AllConstraints: { [loc: string]: string[] } = {
   de: ['default', 'mathspeak', 'clearspeak'],
   it: ['default', 'mathspeak', 'clearspeak'],
   hi: ['default', 'mathspeak', 'clearspeak'],
+  ko: ['default', 'mathspeak', 'clearspeak'],
   nn: ['default', 'mathspeak', 'clearspeak'],
   nb: ['default', 'mathspeak', 'clearspeak'],
   sv: ['default', 'mathspeak', 'clearspeak'],
