@@ -20,9 +20,9 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
+import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich.js';
 
-import { JsonTest, TestPath, TestUtil } from '../base/test_util';
+import { JsonTest, TestPath, TestUtil } from '../base/test_util.js';
 
 /**
  *

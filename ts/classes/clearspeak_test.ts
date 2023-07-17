@@ -19,10 +19,10 @@
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
-import * as System from '../../speech-rule-engine/js/common/system';
+import * as EngineConst from '../../speech-rule-engine/js/common/engine_const.js';
+import * as System from '../../speech-rule-engine/js/common/system.js';
 
-import { SpeechTest } from './speech_test';
+import { SpeechTest } from './speech_test.js';
 
 export class ClearspeakTest extends SpeechTest {
   /**

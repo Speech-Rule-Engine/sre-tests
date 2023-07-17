@@ -17,9 +17,9 @@
  */
 
 import * as fs from 'fs';
-import { TestError, TestPath, TestUtil } from '../base/test_util';
-import { AbstractJsonTest } from './abstract_test';
-import { ExamplesOutput } from './examples_output';
+import { TestError, TestPath, TestUtil } from '../base/test_util.js';
+import { AbstractJsonTest } from './abstract_test.js';
+import { ExamplesOutput } from './examples_output.js';
 
 export abstract class AbstractExamples
   extends AbstractJsonTest

@@ -17,7 +17,7 @@
  */
 
 import * as assert from 'assert';
-import * as tu from '../base/test_util';
+import * as tu from '../base/test_util.js';
 
 export abstract class AbstractTest {
   /**

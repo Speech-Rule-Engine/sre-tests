@@ -80,13 +80,13 @@
       "expected": "Root Sub a Sup b Base x Sub c Sup d EndRoot"
     },
     "PartialTensorABCDRootR_default": {
-      "expected": "StartRoot Subscript a Superscript b Baseline x Subscript c Superscript d EndRoot r"
+      "expected": "StartRoot Subscript a Superscript b Baseline x Subscript c Superscript d Baseline EndRoot r"
     },
     "PartialTensorABCDRootR_brief": {
-      "expected": "StartRoot Sub a Sup b Base x Sub c Sup d EndRoot r"
+      "expected": "StartRoot Sub a Sup b Base x Sub c Sup d Base EndRoot r"
     },
     "PartialTensorABCDRootR_sbrief": {
-      "expected": "Root Sub a Sup b Base x Sub c Sup d EndRoot r"
+      "expected": "Root Sub a Sup b Base x Sub c Sup d Base EndRoot r"
     },
     "PartialTensorABCDRRoot_default": {
       "expected": "StartRoot Subscript a Superscript b Baseline x Subscript c Superscript d Baseline r EndRoot"
@@ -107,13 +107,13 @@
       "expected": "Frac 1 Over Sub a Sup b Base x Sub c Sup d EndFrac"
     },
     "PartialTensorABCDFracR_default": {
-      "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x Subscript c Superscript d EndFraction r"
+      "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x Subscript c Superscript d Baseline EndFraction r"
     },
     "PartialTensorABCDFracR_brief": {
-      "expected": "StartFrac 1 Over Sub a Sup b Base x Sub c Sup d EndFrac r"
+      "expected": "StartFrac 1 Over Sub a Sup b Base x Sub c Sup d Base EndFrac r"
     },
     "PartialTensorABCDFracR_sbrief": {
-      "expected": "Frac 1 Over Sub a Sup b Base x Sub c Sup d EndFrac r"
+      "expected": "Frac 1 Over Sub a Sup b Base x Sub c Sup d Base EndFrac r"
     },
     "PartialTensorABCDRFrac_default": {
       "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x Subscript c Superscript d Baseline r EndFraction"
@@ -124,7 +124,6 @@
     "PartialTensorABCDRFrac_sbrief": {
       "expected": "Frac 1 Over Sub a Sup b Base x Sub c Sup d Base r EndFrac"
     },
-
     "_comment20_": "New completion.",
     "PartialTensorB_default": {
       "expected": "Superscript b Baseline x"
@@ -136,13 +135,13 @@
       "expected": "Sup b Base x"
     },
     "PartialTensorBR_default": {
-      "expected": "Superscript b Baseline x Baseline r"
+      "expected": "Superscript b Baseline x r"
     },
     "PartialTensorBR_brief": {
-      "expected": "Sup b Base x Base r"
+      "expected": "Sup b Base x r"
     },
     "PartialTensorBR_sbrief": {
-      "expected": "Sup b Base x Base r"
+      "expected": "Sup b Base x r"
     },
     "PartialTensorBRootR_default": {
       "expected": "StartRoot Superscript b Baseline x EndRoot r"
@@ -154,13 +153,13 @@
       "expected": "Root Sup b Base x EndRoot r"
     },
     "PartialTensorBRRoot_default": {
-      "expected": "StartRoot Superscript b Baseline x Baseline r EndRoot"
+      "expected": "StartRoot Superscript b Baseline x r EndRoot"
     },
     "PartialTensorBRRoot_brief": {
-      "expected": "StartRoot Sup b Base x Base r EndRoot"
+      "expected": "StartRoot Sup b Base x r EndRoot"
     },
     "PartialTensorBRRoot_sbrief": {
-      "expected": "Root Sup b Base x Base r EndRoot"
+      "expected": "Root Sup b Base x r EndRoot"
     },
     "PartialTensorBFracR_default": {
       "expected": "StartFraction 1 Over Superscript b Baseline x EndFraction r"
@@ -172,13 +171,13 @@
       "expected": "Frac 1 Over Sup b Base x EndFrac r"
     },
     "PartialTensorBRFrac_default": {
-      "expected": "StartFraction 1 Over Superscript b Baseline x Baseline r EndFraction"
+      "expected": "StartFraction 1 Over Superscript b Baseline x r EndFraction"
     },
     "PartialTensorBRFrac_brief": {
-      "expected": "StartFrac 1 Over Sup b Base x Base r EndFrac"
+      "expected": "StartFrac 1 Over Sup b Base x r EndFrac"
     },
     "PartialTensorBRFrac_sbrief": {
-      "expected": "Frac 1 Over Sup b Base x Base r EndFrac"
+      "expected": "Frac 1 Over Sup b Base x r EndFrac"
     },
     "PartialTensorBD_default": {
       "expected": "Superscript b Baseline x Superscript d"
@@ -199,13 +198,13 @@
       "expected": "Sup b Base x Sup d Base r"
     },
     "PartialTensorBDRootR_default": {
-      "expected": "StartRoot Superscript b Baseline x Superscript d EndRoot r"
+      "expected": "StartRoot Superscript b Baseline x Superscript d Baseline EndRoot r"
     },
     "PartialTensorBDRootR_brief": {
-      "expected": "StartRoot Sup b Base x Sup d EndRoot r"
+      "expected": "StartRoot Sup b Base x Sup d Base EndRoot r"
     },
     "PartialTensorBDRootR_sbrief": {
-      "expected": "Root Sup b Base x Sup d EndRoot r"
+      "expected": "Root Sup b Base x Sup d Base EndRoot r"
     },
     "PartialTensorBDRRoot_default": {
       "expected": "StartRoot Superscript b Baseline x Superscript d Baseline r EndRoot"
@@ -217,13 +216,13 @@
       "expected": "Root Sup b Base x Sup d Base r EndRoot"
     },
     "PartialTensorBDFracR_default": {
-      "expected": "StartFraction 1 Over Superscript b Baseline x Superscript d EndFraction r"
+      "expected": "StartFraction 1 Over Superscript b Baseline x Superscript d Baseline EndFraction r"
     },
     "PartialTensorBDFracR_brief": {
-      "expected": "StartFrac 1 Over Sup b Base x Sup d EndFrac r"
+      "expected": "StartFrac 1 Over Sup b Base x Sup d Base EndFrac r"
     },
     "PartialTensorBDFracR_sbrief": {
-      "expected": "Frac 1 Over Sup b Base x Sup d EndFrac r"
+      "expected": "Frac 1 Over Sup b Base x Sup d Base EndFrac r"
     },
     "PartialTensorBDRFrac_default": {
       "expected": "StartFraction 1 Over Superscript b Baseline x Superscript d Baseline r EndFraction"
@@ -253,13 +252,13 @@
       "expected": "Sup b Base x Sub c Base r"
     },
     "PartialTensorBCRootR_default": {
-      "expected": "StartRoot Superscript b Baseline x Subscript c EndRoot r"
+      "expected": "StartRoot Superscript b Baseline x Subscript c Baseline EndRoot r"
     },
     "PartialTensorBCRootR_brief": {
-      "expected": "StartRoot Sup b Base x Sub c EndRoot r"
+      "expected": "StartRoot Sup b Base x Sub c Base EndRoot r"
     },
     "PartialTensorBCRootR_sbrief": {
-      "expected": "Root Sup b Base x Sub c EndRoot r"
+      "expected": "Root Sup b Base x Sub c Base EndRoot r"
     },
     "PartialTensorBCRRoot_default": {
       "expected": "StartRoot Superscript b Baseline x Subscript c Baseline r EndRoot"
@@ -271,13 +270,13 @@
       "expected": "Root Sup b Base x Sub c Base r EndRoot"
     },
     "PartialTensorBCFracR_default": {
-      "expected": "StartFraction 1 Over Superscript b Baseline x Subscript c EndFraction r"
+      "expected": "StartFraction 1 Over Superscript b Baseline x Subscript c Baseline EndFraction r"
     },
     "PartialTensorBCFracR_brief": {
-      "expected": "StartFrac 1 Over Sup b Base x Sub c EndFrac r"
+      "expected": "StartFrac 1 Over Sup b Base x Sub c Base EndFrac r"
     },
     "PartialTensorBCFracR_sbrief": {
-      "expected": "Frac 1 Over Sup b Base x Sub c EndFrac r"
+      "expected": "Frac 1 Over Sup b Base x Sub c Base EndFrac r"
     },
     "PartialTensorBCRFrac_default": {
       "expected": "StartFraction 1 Over Superscript b Baseline x Subscript c Baseline r EndFraction"
@@ -307,13 +306,13 @@
       "expected": "Sup b Base x Sub c Sup d Base r"
     },
     "PartialTensorBCDRootR_default": {
-      "expected": "StartRoot Superscript b Baseline x Subscript c Superscript d EndRoot r"
+      "expected": "StartRoot Superscript b Baseline x Subscript c Superscript d Baseline EndRoot r"
     },
     "PartialTensorBCDRootR_brief": {
-      "expected": "StartRoot Sup b Base x Sub c Sup d EndRoot r"
+      "expected": "StartRoot Sup b Base x Sub c Sup d Base EndRoot r"
     },
     "PartialTensorBCDRootR_sbrief": {
-      "expected": "Root Sup b Base x Sub c Sup d EndRoot r"
+      "expected": "Root Sup b Base x Sub c Sup d Base EndRoot r"
     },
     "PartialTensorBCDRRoot_default": {
       "expected": "StartRoot Superscript b Baseline x Subscript c Superscript d Baseline r EndRoot"
@@ -325,13 +324,13 @@
       "expected": "Root Sup b Base x Sub c Sup d Base r EndRoot"
     },
     "PartialTensorBCDFracR_default": {
-      "expected": "StartFraction 1 Over Superscript b Baseline x Subscript c Superscript d EndFraction r"
+      "expected": "StartFraction 1 Over Superscript b Baseline x Subscript c Superscript d Baseline EndFraction r"
     },
     "PartialTensorBCDFracR_brief": {
-      "expected": "StartFrac 1 Over Sup b Base x Sub c Sup d EndFrac r"
+      "expected": "StartFrac 1 Over Sup b Base x Sub c Sup d Base EndFrac r"
     },
     "PartialTensorBCDFracR_sbrief": {
-      "expected": "Frac 1 Over Sup b Base x Sub c Sup d EndFrac r"
+      "expected": "Frac 1 Over Sup b Base x Sub c Sup d Base EndFrac r"
     },
     "PartialTensorBCDRFrac_default": {
       "expected": "StartFraction 1 Over Superscript b Baseline x Subscript c Superscript d Baseline r EndFraction"
@@ -352,13 +351,13 @@
       "expected": "Sub a Base x"
     },
     "PartialTensorAR_default": {
-      "expected": "Subscript a Baseline x Baseline r"
+      "expected": "Subscript a Baseline x r"
     },
     "PartialTensorAR_brief": {
-      "expected": "Sub a Base x Base r"
+      "expected": "Sub a Base x r"
     },
     "PartialTensorAR_sbrief": {
-      "expected": "Sub a Base x Base r"
+      "expected": "Sub a Base x r"
     },
     "PartialTensorARootR_default": {
       "expected": "StartRoot Subscript a Baseline x EndRoot r"
@@ -370,13 +369,13 @@
       "expected": "Root Sub a Base x EndRoot r"
     },
     "PartialTensorARRoot_default": {
-      "expected": "StartRoot Subscript a Baseline x Baseline r EndRoot"
+      "expected": "StartRoot Subscript a Baseline x r EndRoot"
     },
     "PartialTensorARRoot_brief": {
-      "expected": "StartRoot Sub a Base x Base r EndRoot"
+      "expected": "StartRoot Sub a Base x r EndRoot"
     },
     "PartialTensorARRoot_sbrief": {
-      "expected": "Root Sub a Base x Base r EndRoot"
+      "expected": "Root Sub a Base x r EndRoot"
     },
     "PartialTensorAFracR_default": {
       "expected": "StartFraction 1 Over Subscript a Baseline x EndFraction r"
@@ -388,13 +387,13 @@
       "expected": "Frac 1 Over Sub a Base x EndFrac r"
     },
     "PartialTensorARFrac_default": {
-      "expected": "StartFraction 1 Over Subscript a Baseline x Baseline r EndFraction"
+      "expected": "StartFraction 1 Over Subscript a Baseline x r EndFraction"
     },
     "PartialTensorARFrac_brief": {
-      "expected": "StartFrac 1 Over Sub a Base x Base r EndFrac"
+      "expected": "StartFrac 1 Over Sub a Base x r EndFrac"
     },
     "PartialTensorARFrac_sbrief": {
-      "expected": "Frac 1 Over Sub a Base x Base r EndFrac"
+      "expected": "Frac 1 Over Sub a Base x r EndFrac"
     },
     "PartialTensorAD_default": {
       "expected": "Subscript a Baseline x Superscript d"
@@ -415,13 +414,13 @@
       "expected": "Sub a Base x Sup d Base r"
     },
     "PartialTensorADRootR_default": {
-      "expected": "StartRoot Subscript a Baseline x Superscript d EndRoot r"
+      "expected": "StartRoot Subscript a Baseline x Superscript d Baseline EndRoot r"
     },
     "PartialTensorADRootR_brief": {
-      "expected": "StartRoot Sub a Base x Sup d EndRoot r"
+      "expected": "StartRoot Sub a Base x Sup d Base EndRoot r"
     },
     "PartialTensorADRootR_sbrief": {
-      "expected": "Root Sub a Base x Sup d EndRoot r"
+      "expected": "Root Sub a Base x Sup d Base EndRoot r"
     },
     "PartialTensorADRRoot_default": {
       "expected": "StartRoot Subscript a Baseline x Superscript d Baseline r EndRoot"
@@ -433,13 +432,13 @@
       "expected": "Root Sub a Base x Sup d Base r EndRoot"
     },
     "PartialTensorADFracR_default": {
-      "expected": "StartFraction 1 Over Subscript a Baseline x Superscript d EndFraction r"
+      "expected": "StartFraction 1 Over Subscript a Baseline x Superscript d Baseline EndFraction r"
     },
     "PartialTensorADFracR_brief": {
-      "expected": "StartFrac 1 Over Sub a Base x Sup d EndFrac r"
+      "expected": "StartFrac 1 Over Sub a Base x Sup d Base EndFrac r"
     },
     "PartialTensorADFracR_sbrief": {
-      "expected": "Frac 1 Over Sub a Base x Sup d EndFrac r"
+      "expected": "Frac 1 Over Sub a Base x Sup d Base EndFrac r"
     },
     "PartialTensorADRFrac_default": {
       "expected": "StartFraction 1 Over Subscript a Baseline x Superscript d Baseline r EndFraction"
@@ -469,13 +468,13 @@
       "expected": "Sub a Base x Sub c Base r"
     },
     "PartialTensorACRootR_default": {
-      "expected": "StartRoot Subscript a Baseline x Subscript c EndRoot r"
+      "expected": "StartRoot Subscript a Baseline x Subscript c Baseline EndRoot r"
     },
     "PartialTensorACRootR_brief": {
-      "expected": "StartRoot Sub a Base x Sub c EndRoot r"
+      "expected": "StartRoot Sub a Base x Sub c Base EndRoot r"
     },
     "PartialTensorACRootR_sbrief": {
-      "expected": "Root Sub a Base x Sub c EndRoot r"
+      "expected": "Root Sub a Base x Sub c Base EndRoot r"
     },
     "PartialTensorACRRoot_default": {
       "expected": "StartRoot Subscript a Baseline x Subscript c Baseline r EndRoot"
@@ -487,13 +486,13 @@
       "expected": "Root Sub a Base x Sub c Base r EndRoot"
     },
     "PartialTensorACFracR_default": {
-      "expected": "StartFraction 1 Over Subscript a Baseline x Subscript c EndFraction r"
+      "expected": "StartFraction 1 Over Subscript a Baseline x Subscript c Baseline EndFraction r"
     },
     "PartialTensorACFracR_brief": {
-      "expected": "StartFrac 1 Over Sub a Base x Sub c EndFrac r"
+      "expected": "StartFrac 1 Over Sub a Base x Sub c Base EndFrac r"
     },
     "PartialTensorACFracR_sbrief": {
-      "expected": "Frac 1 Over Sub a Base x Sub c EndFrac r"
+      "expected": "Frac 1 Over Sub a Base x Sub c Base EndFrac r"
     },
     "PartialTensorACRFrac_default": {
       "expected": "StartFraction 1 Over Subscript a Baseline x Subscript c Baseline r EndFraction"
@@ -523,13 +522,13 @@
       "expected": "Sub a Base x Sub c Sup d Base r"
     },
     "PartialTensorACDRootR_default": {
-      "expected": "StartRoot Subscript a Baseline x Subscript c Superscript d EndRoot r"
+      "expected": "StartRoot Subscript a Baseline x Subscript c Superscript d Baseline EndRoot r"
     },
     "PartialTensorACDRootR_brief": {
-      "expected": "StartRoot Sub a Base x Sub c Sup d EndRoot r"
+      "expected": "StartRoot Sub a Base x Sub c Sup d Base EndRoot r"
     },
     "PartialTensorACDRootR_sbrief": {
-      "expected": "Root Sub a Base x Sub c Sup d EndRoot r"
+      "expected": "Root Sub a Base x Sub c Sup d Base EndRoot r"
     },
     "PartialTensorACDRRoot_default": {
       "expected": "StartRoot Subscript a Baseline x Subscript c Superscript d Baseline r EndRoot"
@@ -541,13 +540,13 @@
       "expected": "Root Sub a Base x Sub c Sup d Base r EndRoot"
     },
     "PartialTensorACDFracR_default": {
-      "expected": "StartFraction 1 Over Subscript a Baseline x Subscript c Superscript d EndFraction r"
+      "expected": "StartFraction 1 Over Subscript a Baseline x Subscript c Superscript d Baseline EndFraction r"
     },
     "PartialTensorACDFracR_brief": {
-      "expected": "StartFrac 1 Over Sub a Base x Sub c Sup d EndFrac r"
+      "expected": "StartFrac 1 Over Sub a Base x Sub c Sup d Base EndFrac r"
     },
     "PartialTensorACDFracR_sbrief": {
-      "expected": "Frac 1 Over Sub a Base x Sub c Sup d EndFrac r"
+      "expected": "Frac 1 Over Sub a Base x Sub c Sup d Base EndFrac r"
     },
     "PartialTensorACDRFrac_default": {
       "expected": "StartFraction 1 Over Subscript a Baseline x Subscript c Superscript d Baseline r EndFraction"
@@ -559,13 +558,13 @@
       "expected": "Frac 1 Over Sub a Base x Sub c Sup d Base r EndFrac"
     },
     "PartialTensorABR_default": {
-      "expected": "Subscript a Superscript b Baseline x Baseline r"
+      "expected": "Subscript a Superscript b Baseline x r"
     },
     "PartialTensorABR_brief": {
-      "expected": "Sub a Sup b Base x Base r"
+      "expected": "Sub a Sup b Base x r"
     },
     "PartialTensorABR_sbrief": {
-      "expected": "Sub a Sup b Base x Base r"
+      "expected": "Sub a Sup b Base x r"
     },
     "PartialTensorABRootR_default": {
       "expected": "StartRoot Subscript a Superscript b Baseline x EndRoot r"
@@ -577,13 +576,13 @@
       "expected": "Root Sub a Sup b Base x EndRoot r"
     },
     "PartialTensorABRRoot_default": {
-      "expected": "StartRoot Subscript a Superscript b Baseline x Baseline r EndRoot"
+      "expected": "StartRoot Subscript a Superscript b Baseline x r EndRoot"
     },
     "PartialTensorABRRoot_brief": {
-      "expected": "StartRoot Sub a Sup b Base x Base r EndRoot"
+      "expected": "StartRoot Sub a Sup b Base x r EndRoot"
     },
     "PartialTensorABRRoot_sbrief": {
-      "expected": "Root Sub a Sup b Base x Base r EndRoot"
+      "expected": "Root Sub a Sup b Base x r EndRoot"
     },
     "PartialTensorABFracR_default": {
       "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x EndFraction r"
@@ -595,13 +594,13 @@
       "expected": "Frac 1 Over Sub a Sup b Base x EndFrac r"
     },
     "PartialTensorABRFrac_default": {
-      "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x Baseline r EndFraction"
+      "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x r EndFraction"
     },
     "PartialTensorABRFrac_brief": {
-      "expected": "StartFrac 1 Over Sub a Sup b Base x Base r EndFrac"
+      "expected": "StartFrac 1 Over Sub a Sup b Base x r EndFrac"
     },
     "PartialTensorABRFrac_sbrief": {
-      "expected": "Frac 1 Over Sub a Sup b Base x Base r EndFrac"
+      "expected": "Frac 1 Over Sub a Sup b Base x r EndFrac"
     },
     "PartialTensorABDR_default": {
       "expected": "Subscript a Superscript b Baseline x Superscript d Baseline r"
@@ -613,13 +612,13 @@
       "expected": "Sub a Sup b Base x Sup d Base r"
     },
     "PartialTensorABDRootR_default": {
-      "expected": "StartRoot Subscript a Superscript b Baseline x Superscript d EndRoot r"
+      "expected": "StartRoot Subscript a Superscript b Baseline x Superscript d Baseline EndRoot r"
     },
     "PartialTensorABDRootR_brief": {
-      "expected": "StartRoot Sub a Sup b Base x Sup d EndRoot r"
+      "expected": "StartRoot Sub a Sup b Base x Sup d Base EndRoot r"
     },
     "PartialTensorABDRootR_sbrief": {
-      "expected": "Root Sub a Sup b Base x Sup d EndRoot r"
+      "expected": "Root Sub a Sup b Base x Sup d Base EndRoot r"
     },
     "PartialTensorABDRRoot_default": {
       "expected": "StartRoot Subscript a Superscript b Baseline x Superscript d Baseline r EndRoot"
@@ -631,13 +630,13 @@
       "expected": "Root Sub a Sup b Base x Sup d Base r EndRoot"
     },
     "PartialTensorABDFracR_default": {
-      "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x Superscript d EndFraction r"
+      "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x Superscript d Baseline EndFraction r"
     },
     "PartialTensorABDFracR_brief": {
-      "expected": "StartFrac 1 Over Sub a Sup b Base x Sup d EndFrac r"
+      "expected": "StartFrac 1 Over Sub a Sup b Base x Sup d Base EndFrac r"
     },
     "PartialTensorABDFracR_sbrief": {
-      "expected": "Frac 1 Over Sub a Sup b Base x Sup d EndFrac r"
+      "expected": "Frac 1 Over Sub a Sup b Base x Sup d Base EndFrac r"
     },
     "PartialTensorABDRFrac_default": {
       "expected": "StartFraction 1 Over Subscript a Superscript b Baseline x Superscript d Baseline r EndFraction"
@@ -648,9 +647,6 @@
     "PartialTensorABDRFrac_sbrief": {
       "expected": "Frac 1 Over Sub a Sup b Base x Sup d Base r EndFrac"
     },
-
-    
-    
     "_comment10_": "Simple tensors with multi indices.",
     "TensorMultiSimpleABC_default": {
       "expected": "Subscript a Superscript b Baseline x Subscript c Sub Superscript l"
@@ -688,7 +684,6 @@
     "TensorMultiSimple_sbrief": {
       "expected": "Sub a Sup b Base x Sub c Sub Sup l Sup d"
     },
-
     "_comment11_": "Complex tensors with multi indices.",
     "TensorMultiComplex_default": {
       "expected": "Subscript a Superscript b Baseline x Subscript c k Sub Superscript l Superscript d"
@@ -699,7 +694,6 @@
     "TensorMultiComplex_sbrief": {
       "expected": "Sub a Sup b Base x Sub c k Sub Sup l Sup d"
     },
-
     "_comment12_": "Double tensors.",
     "TwoTensors_default": {
       "expected": "Subscript a Superscript b Baseline x Subscript c Superscript d Baseline Subscript a Superscript b Baseline x Subscript c Superscript d"

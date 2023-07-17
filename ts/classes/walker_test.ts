@@ -19,18 +19,18 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
-import * as System from '../../speech-rule-engine/js/common/system';
-import { Walker } from '../../speech-rule-engine/js/walker/walker';
-import { TableWalker } from '../../speech-rule-engine/js/walker/table_walker';
-import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
-import * as WalkerFactory from '../../speech-rule-engine/js/walker/walker_factory';
-import * as SpeechGeneratorFactory from '../../speech-rule-engine/js/speech_generator/speech_generator_factory';
-import { Highlighter } from '../../speech-rule-engine/js/highlighter/highlighter';
-import * as HighlighterFactory from '../../speech-rule-engine/js/highlighter/highlighter_factory';
+import * as EngineConst from '../../speech-rule-engine/js/common/engine_const.js';
+import * as System from '../../speech-rule-engine/js/common/system.js';
+import { Walker } from '../../speech-rule-engine/js/walker/walker.js';
+import { TableWalker } from '../../speech-rule-engine/js/walker/table_walker.js';
+import * as DomUtil from '../../speech-rule-engine/js/common/dom_util.js';
+import * as WalkerFactory from '../../speech-rule-engine/js/walker/walker_factory.js';
+import * as SpeechGeneratorFactory from '../../speech-rule-engine/js/speech_generator/speech_generator_factory.js';
+import { Highlighter } from '../../speech-rule-engine/js/highlighter/highlighter.js';
+import * as HighlighterFactory from '../../speech-rule-engine/js/highlighter/highlighter_factory.js';
 
-import { AbstractJsonTest } from '../classes/abstract_test';
-import { Key } from './keycodes';
+import { AbstractJsonTest } from '../classes/abstract_test.js';
+import { Key } from './keycodes.js';
 
 export class WalkerTest extends AbstractJsonTest {
   private walker: Walker;

@@ -17,9 +17,9 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import * as fc from '../firebase/fire_constants';
-import * as fu from '../firebase/fire_util';
-import * as lu from './local_util';
+import * as fc from '../firebase/fire_constants.js';
+import * as fu from '../firebase/fire_util.js';
+import * as lu from './local_util.js';
 
 /**
  * @param db

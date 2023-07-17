@@ -181,13 +181,13 @@
       "input": "<mtext>text only</mtext>"
     },
     "Text_1": {
-      "input": "<mi>a</mi><mtext>to</mtext>"
+      "input": "<mi>a</mi><mtext>&#xA0;to</mtext>"
     },
     "Text_2": {
-      "input": "<mtext>to</mtext><mi>b</mi>"
+      "input": "<mtext>to&#xA0;</mtext><mi>b</mi>"
     },
     "Text_3": {
-      "input": "<mi>a</mi><mtext>to</mtext><mi>b</mi><mtext>to</mtext><mi>c</mi>"
+      "input": "<mi>a</mi><mtext>&#xA0;to&#xA0;</mtext><mi>b</mi><mtext>&#xA0;to&#xA0;</mtext><mi>c</mi>"
     },
     "Text_4": {
       "input": "<mrow><mi>a</mi><mo>+</mo><mi>b</mi><mtext>is generally not the same as</mtext><mi>a</mi><mi>b</mi><mo>.</mo></mrow>"

@@ -19,9 +19,8 @@
 import {
   Color,
   ColorPicker
-} from '../../speech-rule-engine/js/highlighter/color_picker';
-
-import { AbstractJsonTest } from '../classes/abstract_test';
+} from '../../speech-rule-engine/js/highlighter/color_picker.js';
+import { AbstractJsonTest } from '../classes/abstract_test.js';
 
 export class ColorPickerTest extends AbstractJsonTest {
   /**

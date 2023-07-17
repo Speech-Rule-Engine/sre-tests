@@ -17,7 +17,7 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import { AbstractTransformer, Transformer } from './transformers';
+import { AbstractTransformer, Transformer } from './transformers.js';
 
 export interface BrailleTransformer extends Transformer {
   /**

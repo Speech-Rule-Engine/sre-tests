@@ -19,27 +19,27 @@
  * @author sorge@google.com (Volker Sorge)
  */
 
-import xmldom = require('xmldom-sre');
-import { AbstractExamples } from './abstract_examples';
-import { AbstractJsonTest } from './abstract_test';
-import { JsonTests } from '../base/test_util';
+import * as xmldom from '@xmldom/xmldom';
+import { AbstractExamples } from './abstract_examples.js';
+import { AbstractJsonTest } from './abstract_test.js';
+import { JsonTests } from '../base/test_util.js';
 
-import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
+import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich.js';
 import {
   Attribute,
   removeAttributePrefix
-} from '../../speech-rule-engine/js/enrich_mathml/enrich_attr';
-import { enrich } from '../../speech-rule-engine/js/enrich_mathml/enrich_mathml';
-import * as DomUtil from '../../speech-rule-engine/js/common/dom_util';
-import { SemanticNodeFactory } from '../../speech-rule-engine/js/semantic_tree/semantic_node_factory';
-import { SemanticTree } from '../../speech-rule-engine/js/semantic_tree/semantic_tree';
-import { SemanticMap } from '../../speech-rule-engine/js/semantic_tree/semantic_attr';
-import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
-import { RebuildStree } from '../../speech-rule-engine/js/walker/rebuild_stree';
-import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
-import * as System from '../../speech-rule-engine/js/common/system';
-import * as WalkerUtil from '../../speech-rule-engine/js/walker/walker_util';
-import { lookupCategory } from '../../speech-rule-engine/js/rule_engine/math_compound_store';
+} from '../../speech-rule-engine/js/enrich_mathml/enrich_attr.js';
+import { enrich } from '../../speech-rule-engine/js/enrich_mathml/enrich_mathml.js';
+import * as DomUtil from '../../speech-rule-engine/js/common/dom_util.js';
+import { SemanticNodeFactory } from '../../speech-rule-engine/js/semantic_tree/semantic_node_factory.js';
+import { SemanticTree } from '../../speech-rule-engine/js/semantic_tree/semantic_tree.js';
+import { SemanticMap } from '../../speech-rule-engine/js/semantic_tree/semantic_attr.js';
+import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic.js';
+import { RebuildStree } from '../../speech-rule-engine/js/walker/rebuild_stree.js';
+import * as EngineConst from '../../speech-rule-engine/js/common/engine_const.js';
+import * as System from '../../speech-rule-engine/js/common/system.js';
+import * as WalkerUtil from '../../speech-rule-engine/js/walker/walker_util.js';
+import { lookupCategory } from '../../speech-rule-engine/js/rule_engine/math_compound_store.js';
 
 /**
  * Base class for all the semantic tree related tests.
@@ -382,7 +382,7 @@ export class EnrichMathmlTest extends SemanticBlacklistTest {
     const mathMl = Enrich.prepareMmlString(mml);
     const node = Enrich.semanticMathmlSync(mathMl);
     const dp = new xmldom.DOMParser();
-    const xml = smml ? dp.parseFromString(smml) : '';
+    const xml = dp.parseFromString(smml ? smml : ' ');
     const xmls = new xmldom.XMLSerializer();
     this.customizeXml(node);
     this.appendExamples('', mml);

@@ -19,15 +19,15 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import * as System from '../../speech-rule-engine/js/common/system';
-import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich';
-import { Grammar } from '../../speech-rule-engine/js/rule_engine/grammar';
-import * as SpeechGeneratorUtil from '../../speech-rule-engine/js/speech_generator/speech_generator_util';
-import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic';
-import { SemanticNode } from '../../speech-rule-engine/js/semantic_tree/semantic_node';
-import * as EngineConst from '../../speech-rule-engine/js/common/engine_const';
+import * as System from '../../speech-rule-engine/js/common/system.js';
+import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich.js';
+import { Grammar } from '../../speech-rule-engine/js/rule_engine/grammar.js';
+import * as SpeechGeneratorUtil from '../../speech-rule-engine/js/speech_generator/speech_generator_util.js';
+import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic.js';
+import { SemanticNode } from '../../speech-rule-engine/js/semantic_tree/semantic_node.js';
+import * as EngineConst from '../../speech-rule-engine/js/common/engine_const.js';
 
-import { SpeechTest } from './speech_test';
+import { SpeechTest } from './speech_test.js';
 
 export class PrefixTest extends SpeechTest {
   /**

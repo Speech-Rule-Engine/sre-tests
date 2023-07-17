@@ -19,9 +19,9 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import { LOCALE } from '../../speech-rule-engine/js/l10n/locale';
+import { LOCALE } from '../../speech-rule-engine/js/l10n/locale.js';
 
-import { SpeechTest } from './speech_test';
+import { SpeechTest } from './speech_test.js';
 
 export class NumberTest extends SpeechTest {
   protected num = 1;

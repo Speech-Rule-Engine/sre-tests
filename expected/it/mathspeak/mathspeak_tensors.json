@@ -45,13 +45,13 @@
       "expected": "sub a sup b base x sup d base r"
     },
     "PartialTensorABDRootR_default": {
-      "expected": "inizio radice pedice a apice b linea di base x apice d fine radice r"
+      "expected": "inizio radice pedice a apice b linea di base x apice d linea di base fine radice r"
     },
     "PartialTensorABDRootR_brief": {
-      "expected": "inizio radice sub a sup b base x sup d fine radice r"
+      "expected": "inizio radice sub a sup b base x sup d base fine radice r"
     },
     "PartialTensorABDRootR_sbrief": {
-      "expected": "radice sub a sup b base x sup d fine radice r"
+      "expected": "radice sub a sup b base x sup d base fine radice r"
     },
     "PartialTensorABDRRoot_default": {
       "expected": "inizio radice pedice a apice b linea di base x apice d linea di base r fine radice"
@@ -63,13 +63,13 @@
       "expected": "radice sub a sup b base x sup d base r fine radice"
     },
     "PartialTensorABDFracR_default": {
-      "expected": "inizio frazione 1 fratto pedice a apice b linea di base x apice d fine frazione r"
+      "expected": "inizio frazione 1 fratto pedice a apice b linea di base x apice d linea di base fine frazione r"
     },
     "PartialTensorABDFracR_brief": {
-      "expected": "inizio frazione 1 fratto sub a sup b base x sup d fine frazione r"
+      "expected": "inizio frazione 1 fratto sub a sup b base x sup d base fine frazione r"
     },
     "PartialTensorABDFracR_sbrief": {
-      "expected": "frazione 1 fratto sub a sup b base x sup d fine frazione r"
+      "expected": "frazione 1 fratto sub a sup b base x sup d base fine frazione r"
     },
     "PartialTensorABDRFrac_default": {
       "expected": "inizio frazione 1 fratto pedice a apice b linea di base x apice d linea di base r fine frazione"
@@ -90,13 +90,13 @@
       "expected": "sub a sup b base x"
     },
     "PartialTensorABR_default": {
-      "expected": "pedice a apice b linea di base x linea di base r"
+      "expected": "pedice a apice b linea di base x r"
     },
     "PartialTensorABR_brief": {
-      "expected": "sub a sup b base x base r"
+      "expected": "sub a sup b base x r"
     },
     "PartialTensorABR_sbrief": {
-      "expected": "sub a sup b base x base r"
+      "expected": "sub a sup b base x r"
     },
     "PartialTensorABRootR_default": {
       "expected": "inizio radice pedice a apice b linea di base x fine radice r"
@@ -108,13 +108,13 @@
       "expected": "radice sub a sup b base x fine radice r"
     },
     "PartialTensorABRRoot_default": {
-      "expected": "inizio radice pedice a apice b linea di base x linea di base r fine radice"
+      "expected": "inizio radice pedice a apice b linea di base x r fine radice"
     },
     "PartialTensorABRRoot_brief": {
-      "expected": "inizio radice sub a sup b base x base r fine radice"
+      "expected": "inizio radice sub a sup b base x r fine radice"
     },
     "PartialTensorABRRoot_sbrief": {
-      "expected": "radice sub a sup b base x base r fine radice"
+      "expected": "radice sub a sup b base x r fine radice"
     },
     "PartialTensorABFracR_default": {
       "expected": "inizio frazione 1 fratto pedice a apice b linea di base x fine frazione r"
@@ -126,13 +126,13 @@
       "expected": "frazione 1 fratto sub a sup b base x fine frazione r"
     },
     "PartialTensorABRFrac_default": {
-      "expected": "inizio frazione 1 fratto pedice a apice b linea di base x linea di base r fine frazione"
+      "expected": "inizio frazione 1 fratto pedice a apice b linea di base x r fine frazione"
     },
     "PartialTensorABRFrac_brief": {
-      "expected": "inizio frazione 1 fratto sub a sup b base x base r fine frazione"
+      "expected": "inizio frazione 1 fratto sub a sup b base x r fine frazione"
     },
     "PartialTensorABRFrac_sbrief": {
-      "expected": "frazione 1 fratto sub a sup b base x base r fine frazione"
+      "expected": "frazione 1 fratto sub a sup b base x r fine frazione"
     },
     "PartialTensorABCR_default": {
       "expected": "pedice a apice b linea di base x pedice c linea di base r"
@@ -162,13 +162,13 @@
       "expected": "radice sub a sup b base x sub c sup d fine radice"
     },
     "PartialTensorABCDRootR_default": {
-      "expected": "inizio radice pedice a apice b linea di base x pedice c apice d fine radice r"
+      "expected": "inizio radice pedice a apice b linea di base x pedice c apice d linea di base fine radice r"
     },
     "PartialTensorABCDRootR_brief": {
-      "expected": "inizio radice sub a sup b base x sub c sup d fine radice r"
+      "expected": "inizio radice sub a sup b base x sub c sup d base fine radice r"
     },
     "PartialTensorABCDRootR_sbrief": {
-      "expected": "radice sub a sup b base x sub c sup d fine radice r"
+      "expected": "radice sub a sup b base x sub c sup d base fine radice r"
     },
     "PartialTensorABCDRRoot_default": {
       "expected": "inizio radice pedice a apice b linea di base x pedice c apice d linea di base r fine radice"
@@ -189,13 +189,13 @@
       "expected": "frazione 1 fratto sub a sup b base x sub c sup d fine frazione"
     },
     "PartialTensorABCDFracR_default": {
-      "expected": "inizio frazione 1 fratto pedice a apice b linea di base x pedice c apice d fine frazione r"
+      "expected": "inizio frazione 1 fratto pedice a apice b linea di base x pedice c apice d linea di base fine frazione r"
     },
     "PartialTensorABCDFracR_brief": {
-      "expected": "inizio frazione 1 fratto sub a sup b base x sub c sup d fine frazione r"
+      "expected": "inizio frazione 1 fratto sub a sup b base x sub c sup d base fine frazione r"
     },
     "PartialTensorABCDFracR_sbrief": {
-      "expected": "frazione 1 fratto sub a sup b base x sub c sup d fine frazione r"
+      "expected": "frazione 1 fratto sub a sup b base x sub c sup d base fine frazione r"
     },
     "PartialTensorABCDRFrac_default": {
       "expected": "inizio frazione 1 fratto pedice a apice b linea di base x pedice c apice d linea di base r fine frazione"
@@ -216,13 +216,13 @@
       "expected": "sup b base x"
     },
     "PartialTensorBR_default": {
-      "expected": "apice b linea di base x linea di base r"
+      "expected": "apice b linea di base x r"
     },
     "PartialTensorBR_brief": {
-      "expected": "sup b base x base r"
+      "expected": "sup b base x r"
     },
     "PartialTensorBR_sbrief": {
-      "expected": "sup b base x base r"
+      "expected": "sup b base x r"
     },
     "PartialTensorBRootR_default": {
       "expected": "inizio radice apice b linea di base x fine radice r"
@@ -234,13 +234,13 @@
       "expected": "radice sup b base x fine radice r"
     },
     "PartialTensorBRRoot_default": {
-      "expected": "inizio radice apice b linea di base x linea di base r fine radice"
+      "expected": "inizio radice apice b linea di base x r fine radice"
     },
     "PartialTensorBRRoot_brief": {
-      "expected": "inizio radice sup b base x base r fine radice"
+      "expected": "inizio radice sup b base x r fine radice"
     },
     "PartialTensorBRRoot_sbrief": {
-      "expected": "radice sup b base x base r fine radice"
+      "expected": "radice sup b base x r fine radice"
     },
     "PartialTensorBFracR_default": {
       "expected": "inizio frazione 1 fratto apice b linea di base x fine frazione r"
@@ -252,13 +252,13 @@
       "expected": "frazione 1 fratto sup b base x fine frazione r"
     },
     "PartialTensorBRFrac_default": {
-      "expected": "inizio frazione 1 fratto apice b linea di base x linea di base r fine frazione"
+      "expected": "inizio frazione 1 fratto apice b linea di base x r fine frazione"
     },
     "PartialTensorBRFrac_brief": {
-      "expected": "inizio frazione 1 fratto sup b base x base r fine frazione"
+      "expected": "inizio frazione 1 fratto sup b base x r fine frazione"
     },
     "PartialTensorBRFrac_sbrief": {
-      "expected": "frazione 1 fratto sup b base x base r fine frazione"
+      "expected": "frazione 1 fratto sup b base x r fine frazione"
     },
     "PartialTensorBD_default": {
       "expected": "apice b linea di base x apice d"
@@ -279,13 +279,13 @@
       "expected": "sup b base x sup d base r"
     },
     "PartialTensorBDRootR_default": {
-      "expected": "inizio radice apice b linea di base x apice d fine radice r"
+      "expected": "inizio radice apice b linea di base x apice d linea di base fine radice r"
     },
     "PartialTensorBDRootR_brief": {
-      "expected": "inizio radice sup b base x sup d fine radice r"
+      "expected": "inizio radice sup b base x sup d base fine radice r"
     },
     "PartialTensorBDRootR_sbrief": {
-      "expected": "radice sup b base x sup d fine radice r"
+      "expected": "radice sup b base x sup d base fine radice r"
     },
     "PartialTensorBDRRoot_default": {
       "expected": "inizio radice apice b linea di base x apice d linea di base r fine radice"
@@ -297,13 +297,13 @@
       "expected": "radice sup b base x sup d base r fine radice"
     },
     "PartialTensorBDFracR_default": {
-      "expected": "inizio frazione 1 fratto apice b linea di base x apice d fine frazione r"
+      "expected": "inizio frazione 1 fratto apice b linea di base x apice d linea di base fine frazione r"
     },
     "PartialTensorBDFracR_brief": {
-      "expected": "inizio frazione 1 fratto sup b base x sup d fine frazione r"
+      "expected": "inizio frazione 1 fratto sup b base x sup d base fine frazione r"
     },
     "PartialTensorBDFracR_sbrief": {
-      "expected": "frazione 1 fratto sup b base x sup d fine frazione r"
+      "expected": "frazione 1 fratto sup b base x sup d base fine frazione r"
     },
     "PartialTensorBDRFrac_default": {
       "expected": "inizio frazione 1 fratto apice b linea di base x apice d linea di base r fine frazione"
@@ -333,13 +333,13 @@
       "expected": "sup b base x sub c base r"
     },
     "PartialTensorBCRootR_default": {
-      "expected": "inizio radice apice b linea di base x pedice c fine radice r"
+      "expected": "inizio radice apice b linea di base x pedice c linea di base fine radice r"
     },
     "PartialTensorBCRootR_brief": {
-      "expected": "inizio radice sup b base x sub c fine radice r"
+      "expected": "inizio radice sup b base x sub c base fine radice r"
     },
     "PartialTensorBCRootR_sbrief": {
-      "expected": "radice sup b base x sub c fine radice r"
+      "expected": "radice sup b base x sub c base fine radice r"
     },
     "PartialTensorBCRRoot_default": {
       "expected": "inizio radice apice b linea di base x pedice c linea di base r fine radice"
@@ -351,13 +351,13 @@
       "expected": "radice sup b base x sub c base r fine radice"
     },
     "PartialTensorBCFracR_default": {
-      "expected": "inizio frazione 1 fratto apice b linea di base x pedice c fine frazione r"
+      "expected": "inizio frazione 1 fratto apice b linea di base x pedice c linea di base fine frazione r"
     },
     "PartialTensorBCFracR_brief": {
-      "expected": "inizio frazione 1 fratto sup b base x sub c fine frazione r"
+      "expected": "inizio frazione 1 fratto sup b base x sub c base fine frazione r"
     },
     "PartialTensorBCFracR_sbrief": {
-      "expected": "frazione 1 fratto sup b base x sub c fine frazione r"
+      "expected": "frazione 1 fratto sup b base x sub c base fine frazione r"
     },
     "PartialTensorBCRFrac_default": {
       "expected": "inizio frazione 1 fratto apice b linea di base x pedice c linea di base r fine frazione"
@@ -387,13 +387,13 @@
       "expected": "sup b base x sub c sup d base r"
     },
     "PartialTensorBCDRootR_default": {
-      "expected": "inizio radice apice b linea di base x pedice c apice d fine radice r"
+      "expected": "inizio radice apice b linea di base x pedice c apice d linea di base fine radice r"
     },
     "PartialTensorBCDRootR_brief": {
-      "expected": "inizio radice sup b base x sub c sup d fine radice r"
+      "expected": "inizio radice sup b base x sub c sup d base fine radice r"
     },
     "PartialTensorBCDRootR_sbrief": {
-      "expected": "radice sup b base x sub c sup d fine radice r"
+      "expected": "radice sup b base x sub c sup d base fine radice r"
     },
     "PartialTensorBCDRRoot_default": {
       "expected": "inizio radice apice b linea di base x pedice c apice d linea di base r fine radice"
@@ -405,13 +405,13 @@
       "expected": "radice sup b base x sub c sup d base r fine radice"
     },
     "PartialTensorBCDFracR_default": {
-      "expected": "inizio frazione 1 fratto apice b linea di base x pedice c apice d fine frazione r"
+      "expected": "inizio frazione 1 fratto apice b linea di base x pedice c apice d linea di base fine frazione r"
     },
     "PartialTensorBCDFracR_brief": {
-      "expected": "inizio frazione 1 fratto sup b base x sub c sup d fine frazione r"
+      "expected": "inizio frazione 1 fratto sup b base x sub c sup d base fine frazione r"
     },
     "PartialTensorBCDFracR_sbrief": {
-      "expected": "frazione 1 fratto sup b base x sub c sup d fine frazione r"
+      "expected": "frazione 1 fratto sup b base x sub c sup d base fine frazione r"
     },
     "PartialTensorBCDRFrac_default": {
       "expected": "inizio frazione 1 fratto apice b linea di base x pedice c apice d linea di base r fine frazione"
@@ -432,13 +432,13 @@
       "expected": "sub a base x"
     },
     "PartialTensorAR_default": {
-      "expected": "pedice a linea di base x linea di base r"
+      "expected": "pedice a linea di base x r"
     },
     "PartialTensorAR_brief": {
-      "expected": "sub a base x base r"
+      "expected": "sub a base x r"
     },
     "PartialTensorAR_sbrief": {
-      "expected": "sub a base x base r"
+      "expected": "sub a base x r"
     },
     "PartialTensorARootR_default": {
       "expected": "inizio radice pedice a linea di base x fine radice r"
@@ -450,13 +450,13 @@
       "expected": "radice sub a base x fine radice r"
     },
     "PartialTensorARRoot_default": {
-      "expected": "inizio radice pedice a linea di base x linea di base r fine radice"
+      "expected": "inizio radice pedice a linea di base x r fine radice"
     },
     "PartialTensorARRoot_brief": {
-      "expected": "inizio radice sub a base x base r fine radice"
+      "expected": "inizio radice sub a base x r fine radice"
     },
     "PartialTensorARRoot_sbrief": {
-      "expected": "radice sub a base x base r fine radice"
+      "expected": "radice sub a base x r fine radice"
     },
     "PartialTensorAFracR_default": {
       "expected": "inizio frazione 1 fratto pedice a linea di base x fine frazione r"
@@ -468,13 +468,13 @@
       "expected": "frazione 1 fratto sub a base x fine frazione r"
     },
     "PartialTensorARFrac_default": {
-      "expected": "inizio frazione 1 fratto pedice a linea di base x linea di base r fine frazione"
+      "expected": "inizio frazione 1 fratto pedice a linea di base x r fine frazione"
     },
     "PartialTensorARFrac_brief": {
-      "expected": "inizio frazione 1 fratto sub a base x base r fine frazione"
+      "expected": "inizio frazione 1 fratto sub a base x r fine frazione"
     },
     "PartialTensorARFrac_sbrief": {
-      "expected": "frazione 1 fratto sub a base x base r fine frazione"
+      "expected": "frazione 1 fratto sub a base x r fine frazione"
     },
     "PartialTensorAD_default": {
       "expected": "pedice a linea di base x apice d"
@@ -495,13 +495,13 @@
       "expected": "sub a base x sup d base r"
     },
     "PartialTensorADRootR_default": {
-      "expected": "inizio radice pedice a linea di base x apice d fine radice r"
+      "expected": "inizio radice pedice a linea di base x apice d linea di base fine radice r"
     },
     "PartialTensorADRootR_brief": {
-      "expected": "inizio radice sub a base x sup d fine radice r"
+      "expected": "inizio radice sub a base x sup d base fine radice r"
     },
     "PartialTensorADRootR_sbrief": {
-      "expected": "radice sub a base x sup d fine radice r"
+      "expected": "radice sub a base x sup d base fine radice r"
     },
     "PartialTensorADRRoot_default": {
       "expected": "inizio radice pedice a linea di base x apice d linea di base r fine radice"
@@ -513,13 +513,13 @@
       "expected": "radice sub a base x sup d base r fine radice"
     },
     "PartialTensorADFracR_default": {
-      "expected": "inizio frazione 1 fratto pedice a linea di base x apice d fine frazione r"
+      "expected": "inizio frazione 1 fratto pedice a linea di base x apice d linea di base fine frazione r"
     },
     "PartialTensorADFracR_brief": {
-      "expected": "inizio frazione 1 fratto sub a base x sup d fine frazione r"
+      "expected": "inizio frazione 1 fratto sub a base x sup d base fine frazione r"
     },
     "PartialTensorADFracR_sbrief": {
-      "expected": "frazione 1 fratto sub a base x sup d fine frazione r"
+      "expected": "frazione 1 fratto sub a base x sup d base fine frazione r"
     },
     "PartialTensorADRFrac_default": {
       "expected": "inizio frazione 1 fratto pedice a linea di base x apice d linea di base r fine frazione"
@@ -549,13 +549,13 @@
       "expected": "sub a base x sub c base r"
     },
     "PartialTensorACRootR_default": {
-      "expected": "inizio radice pedice a linea di base x pedice c fine radice r"
+      "expected": "inizio radice pedice a linea di base x pedice c linea di base fine radice r"
     },
     "PartialTensorACRootR_brief": {
-      "expected": "inizio radice sub a base x sub c fine radice r"
+      "expected": "inizio radice sub a base x sub c base fine radice r"
     },
     "PartialTensorACRootR_sbrief": {
-      "expected": "radice sub a base x sub c fine radice r"
+      "expected": "radice sub a base x sub c base fine radice r"
     },
     "PartialTensorACRRoot_default": {
       "expected": "inizio radice pedice a linea di base x pedice c linea di base r fine radice"
@@ -567,13 +567,13 @@
       "expected": "radice sub a base x sub c base r fine radice"
     },
     "PartialTensorACFracR_default": {
-      "expected": "inizio frazione 1 fratto pedice a linea di base x pedice c fine frazione r"
+      "expected": "inizio frazione 1 fratto pedice a linea di base x pedice c linea di base fine frazione r"
     },
     "PartialTensorACFracR_brief": {
-      "expected": "inizio frazione 1 fratto sub a base x sub c fine frazione r"
+      "expected": "inizio frazione 1 fratto sub a base x sub c base fine frazione r"
     },
     "PartialTensorACFracR_sbrief": {
-      "expected": "frazione 1 fratto sub a base x sub c fine frazione r"
+      "expected": "frazione 1 fratto sub a base x sub c base fine frazione r"
     },
     "PartialTensorACRFrac_default": {
       "expected": "inizio frazione 1 fratto pedice a linea di base x pedice c linea di base r fine frazione"
@@ -603,13 +603,13 @@
       "expected": "sub a base x sub c sup d base r"
     },
     "PartialTensorACDRootR_default": {
-      "expected": "inizio radice pedice a linea di base x pedice c apice d fine radice r"
+      "expected": "inizio radice pedice a linea di base x pedice c apice d linea di base fine radice r"
     },
     "PartialTensorACDRootR_brief": {
-      "expected": "inizio radice sub a base x sub c sup d fine radice r"
+      "expected": "inizio radice sub a base x sub c sup d base fine radice r"
     },
     "PartialTensorACDRootR_sbrief": {
-      "expected": "radice sub a base x sub c sup d fine radice r"
+      "expected": "radice sub a base x sub c sup d base fine radice r"
     },
     "PartialTensorACDRRoot_default": {
       "expected": "inizio radice pedice a linea di base x pedice c apice d linea di base r fine radice"
@@ -621,13 +621,13 @@
       "expected": "radice sub a base x sub c sup d base r fine radice"
     },
     "PartialTensorACDFracR_default": {
-      "expected": "inizio frazione 1 fratto pedice a linea di base x pedice c apice d fine frazione r"
+      "expected": "inizio frazione 1 fratto pedice a linea di base x pedice c apice d linea di base fine frazione r"
     },
     "PartialTensorACDFracR_brief": {
-      "expected": "inizio frazione 1 fratto sub a base x sub c sup d fine frazione r"
+      "expected": "inizio frazione 1 fratto sub a base x sub c sup d base fine frazione r"
     },
     "PartialTensorACDFracR_sbrief": {
-      "expected": "frazione 1 fratto sub a base x sub c sup d fine frazione r"
+      "expected": "frazione 1 fratto sub a base x sub c sup d base fine frazione r"
     },
     "PartialTensorACDRFrac_default": {
       "expected": "inizio frazione 1 fratto pedice a linea di base x pedice c apice d linea di base r fine frazione"

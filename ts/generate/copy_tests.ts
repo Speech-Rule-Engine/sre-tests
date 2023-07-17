@@ -24,9 +24,9 @@ import {
   JsonTests,
   TestPath,
   TestUtil
-} from '../base/test_util';
-import { get as factoryget } from '../classes/test_factory';
-import { addMissing } from './fill_tests';
+} from '../base/test_util.js';
+import { get as factoryget } from '../classes/test_factory.js';
+import { addMissing } from './fill_tests.js';
 
 /**
  * Copies and adapts a single test file from one locale to another.

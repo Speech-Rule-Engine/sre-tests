@@ -17,15 +17,15 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import { liteAdaptor } from '../../node_modules/mathjax-full/js/adaptors/liteAdaptor';
-import { STATE } from '../../node_modules/mathjax-full/js/core/MathItem';
-import { SerializedMmlVisitor } from '../../node_modules/mathjax-full/js/core/MmlTree/SerializedMmlVisitor';
-import { RegisterHTMLHandler } from '../../node_modules/mathjax-full/js/handlers/html';
-import { TeX } from '../../node_modules/mathjax-full/js/input/tex';
-import { AllPackages } from '../../node_modules/mathjax-full/js/input/tex/AllPackages';
-import { mathjax } from '../../node_modules/mathjax-full/js/mathjax';
-import { SVG } from '../../node_modules/mathjax-full/js/output/svg';
-import { AbstractTransformer } from './transformers';
+import { liteAdaptor } from '../../node_modules/mathjax-full/js/adaptors/liteAdaptor.js';
+import { STATE } from '../../node_modules/mathjax-full/js/core/MathItem.js';
+import { SerializedMmlVisitor } from '../../node_modules/mathjax-full/js/core/MmlTree/SerializedMmlVisitor.js';
+import { RegisterHTMLHandler } from '../../node_modules/mathjax-full/js/handlers/html.js';
+import { TeX } from '../../node_modules/mathjax-full/js/input/tex.js';
+import { AllPackages } from '../../node_modules/mathjax-full/js/input/tex/AllPackages.js';
+import { mathjax } from '../../node_modules/mathjax-full/js/mathjax.js';
+import { SVG } from '../../node_modules/mathjax-full/js/output/svg.js';
+import { AbstractTransformer } from './transformers.js';
 
 export class Tex2Mml extends AbstractTransformer {
   /**

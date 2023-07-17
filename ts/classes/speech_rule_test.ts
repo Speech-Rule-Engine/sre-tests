@@ -19,11 +19,11 @@
  * @author sorge@google.com (Volker Sorge)
  */
 
-import { AbstractJsonTest } from './abstract_test';
+import { AbstractJsonTest } from './abstract_test.js';
 import {
   Component,
   Action
-} from '../../speech-rule-engine/js/rule_engine/speech_rule';
+} from '../../speech-rule-engine/js/rule_engine/speech_rule.js';
 
 export class SpeechRuleTest extends AbstractJsonTest {
   private _fromString: Map<string, (p1: string) => any> = new Map([

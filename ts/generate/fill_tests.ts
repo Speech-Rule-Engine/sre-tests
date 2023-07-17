@@ -17,11 +17,11 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import { Tests } from '../base/tests';
-import { JsonFile, JsonTests, TestPath, TestUtil } from '../base/test_util';
-import { ExampleFiles } from '../classes/abstract_examples';
-import { AbstractJsonTest } from '../classes/abstract_test';
-import { get as factoryget } from '../classes/test_factory';
+import { Tests } from '../base/tests.js';
+import { JsonFile, JsonTests, TestPath, TestUtil } from '../base/test_util.js';
+import { ExampleFiles } from '../classes/abstract_examples.js';
+import { AbstractJsonTest } from '../classes/abstract_test.js';
+import { get as factoryget } from '../classes/test_factory.js';
 
 const enum TestFlag {
   ALL,
