@@ -51,3 +51,5 @@ export abstract class AbstractTransformer implements Transformer {
     return src;
   }
 }
+
+export class IdentityTransformer extends AbstractTransformer {}
