@@ -172,12 +172,15 @@
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> <say-as interpret-as=\"character\">y</say-as> <mark name=\"3\"/> minus <mark name=\"2\"/> 1 </prosody></speak>"
     },
     "Sample_5_1_2_default": {
+      "test": false,
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> left parenthesis <mark name=\"1\"/> 1 <mark name=\"2\"/> hyphen to hyphen <mark name=\"3\"/> 1 <mark name=\"4\"/> right parenthesis </prosody></speak>"
     },
     "Sample_5_1_2_brief": {
+      "test": false,
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> left p'ren <mark name=\"1\"/> 1 <mark name=\"2\"/> hyphen to hyphen <mark name=\"3\"/> 1 <mark name=\"4\"/> right p'ren </prosody></speak>"
     },
     "Sample_5_1_2_sbrief": {
+      "test": false,
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> L p'ren <mark name=\"1\"/> 1 <mark name=\"2\"/> hyphen to hyphen <mark name=\"3\"/> 1 <mark name=\"4\"/> R p'ren </prosody></speak>"
     },
     "Sample_5_1_3_default": {

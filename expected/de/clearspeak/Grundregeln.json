@@ -5,6 +5,7 @@
   "name": "GermanClearspeakGrundregeln",
   "information": "LaTeX Manual LaTeX Grundregeln",
   "base": "input/euro/Grundregeln.json",
+  "actual": true,
   "tests": {
     "_comment0_": "Textzeichen der Tastatur verwenden, solange dies eben geht!",
     "Textzeichen_0": {
@@ -33,7 +34,7 @@
       "expected": "a Index n minus 1 Indexende"
     },
     "Abweichungen_5": {
-      "expected": "Index 12"
+      "expected": "a Index 12"
     },
     "_comment2_": "Mathematische Symbole, die es auf der Tastatur nicht gibt",
     "Mathematische_0": {
