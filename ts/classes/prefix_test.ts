@@ -20,6 +20,7 @@
  */
 
 import * as System from '../../speech-rule-engine/js/common/system.js';
+import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich.js';
 import { Grammar } from '../../speech-rule-engine/js/rule_engine/grammar.js';
 import * as SpeechGeneratorUtil from '../../speech-rule-engine/js/speech_generator/speech_generator_util.js';
 import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic.js';
@@ -114,7 +115,7 @@ export class PrefixTest extends SpeechTest {
     ..._rest: string[]
   ) {
     const sub = this.subExpr
-      ? '<math>' + this.subExpr.toString() + '</math>'
+      ? Enrich.prepareMmlString(this.subExpr.toString())
       : '';
     super.appendRuleExample(input, output, style, sub);
   }

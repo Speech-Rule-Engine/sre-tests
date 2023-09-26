@@ -766,6 +766,22 @@
     "EllipsesExplicitSpacing_3": {
       "input": "<mtext>&#xA0;</mtext><mo>&#x2026;</mo><mtext>&#xA0;</mtext>"
     },
+    "_comment_166a": " Combined Ellipses.",
+    "EllipsesCombined_0": {
+      "input": "<mo>.</mo><mo>.</mo><mo>.</mo>"
+    },
+    "EllipsesCombined_1": {
+      "input": "<mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo>"
+    },
+    "EllipsesCombined_2": {
+      "input": "<mi>a</mi><mo>.</mo><mo>.</mo><mo>.</mo>"
+    },
+    "EllipsesCombined_3": {
+      "input": "<mo>.</mo><mo>.</mo><mo>.</mo><mi>b</mi>"
+    },
+    "EllipsesCombined_4": {
+      "input": "<mi>a</mi><mo>.</mo><mo>.</mo><mo>.</mo><mi>b</mi>"
+    },
     "_comment_155a": " Labels in multiline expressions.",
     "LabelledLines_0": {
       "input": "<mtable><mlabeledtr><mtd><mtext>(1)</mtext></mtd></mlabeledtr></mtable>"

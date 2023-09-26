@@ -33,6 +33,9 @@ import { enrich } from '../../speech-rule-engine/js/enrich_mathml/enrich_mathml.
 import * as DomUtil from '../../speech-rule-engine/js/common/dom_util.js';
 import { SemanticNodeFactory } from '../../speech-rule-engine/js/semantic_tree/semantic_node_factory.js';
 import { SemanticTree } from '../../speech-rule-engine/js/semantic_tree/semantic_tree.js';
+import {
+  deactivate
+} from '../../speech-rule-engine/js/semantic_tree/semantic_annotations.js';
 import { SemanticMap } from '../../speech-rule-engine/js/semantic_tree/semantic_attr.js';
 import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic.js';
 import { RebuildStree } from '../../speech-rule-engine/js/walker/rebuild_stree.js';
@@ -51,6 +54,7 @@ export abstract class SemanticTest extends AbstractExamples {
    */
   public async setUpTest() {
     await super.setUpTest();
+    deactivate('depth', 'depth');
     return System.setupEngine({
       domain: 'mathspeak',
       style: 'default'
@@ -100,7 +104,8 @@ export class RebuildStreeTest extends SemanticTest {
    */
   public executeTest(expr: string) {
     const mathMl = Enrich.prepareMmlString(expr);
-    const mml = DomUtil.parseInput(mathMl);
+    // Unclear why this cloning is necessary.
+    const mml = DomUtil.cloneNode(DomUtil.parseInput(mathMl));
     const stree = new SemanticTree(mml);
     const emml = enrich(mml, stree);
     const reass = new RebuildStree(emml).getTree();
