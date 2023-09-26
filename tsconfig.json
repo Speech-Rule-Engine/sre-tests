@@ -14,6 +14,9 @@
     "noLib": false,
     "alwaysStrict": true,
     "sourceMap": false,
+    "paths": {
+      "#mathjax/*": ["./node_modules/mathjax-full/mjs/*"]
+    },
     "lib": ["es6", "dom", "es2020"],
     "typeRoots": [
       "./node_modules/@types",
