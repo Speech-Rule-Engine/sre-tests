@@ -114,6 +114,7 @@ export function addToFile(file: string, expected: JsonTests) {
   const oldTests = oldJson.tests as JsonTests;
   for (const key of Object.keys(expected)) {
     if (oldTests[key]) {
+      if (TestUtil.isComment(key)) continue;
       Object.assign(oldTests[key], expected[key]);
     } else {
       oldTests[key] = expected[key];

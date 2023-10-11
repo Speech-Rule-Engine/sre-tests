@@ -21,35 +21,35 @@
       "expected": "3 maal 3"
     },
     "X004": {
-      "expected": "6 by 8"
+      "expected": "6 maal 8"
     },
     "X005": {
-      "expected": "m by n"
+      "expected": "m maal n"
     },
     "X006": {
-      "expected": "3 by 3"
+      "expected": "3 maal 3"
     },
     "X007": {
-      "expected": "u cross v"
+      "expected": "u maal v"
     },
     "_comment3_": " Multiplication Symbol",
     "Dot001": {
-      "expected": "6 times 8"
+      "expected": "6 punt 8"
     },
     "Dot002": {
-      "expected": "m times n"
+      "expected": "m punt n"
     },
     "Dot003": {
-      "expected": "3 times 3"
+      "expected": "3 punt 3"
     },
     "Dot004": {
-      "expected": "6 dot 8"
+      "expected": "6 punt 8"
     },
     "Dot005": {
-      "expected": "m dot n"
+      "expected": "m punt n"
     },
     "Dot006": {
-      "expected": "3 dot 3"
+      "expected": "3 punt 3"
     },
     "_comment4_": " Triangle Symbol",
     "Triangle001": {
@@ -66,13 +66,13 @@
     },
     "_comment5_": " Ellipses",
     "Ellipses001": {
-      "expected": "1 komma 2 komma 3 komma dot dot dot"
+      "expected": "1 komma 2 komma 3 komma ellipsis"
     },
     "Ellipses002": {
-      "expected": "1 komma 2 komma 3 komma dot dot dot komma 20"
+      "expected": "1 komma 2 komma 3 komma ellipsis komma 20"
     },
     "Ellipses003": {
-      "expected": "dot dot dot komma, negatiewe 2, komma, negatiewe 1, komma 0 komma 1 komma 2 komma dot dot dot"
+      "expected": "ellipsis komma, negatiewe 2, komma, negatiewe 1, komma 0 komma 1 komma 2 komma ellipsis"
     },
     "Ellipses004": {
       "expected": "1 komma 2 komma 3 komma en so voorts"
@@ -81,17 +81,17 @@
       "expected": "1 komma 2 komma 3 komma en so voorts tot by komma 20"
     },
     "Ellipses006": {
-      "expected": "dot dot dot komma, negatiewe 2, komma, negatiewe 1, komma 0 komma 1 komma 2 komma dot dot dot"
+      "expected": "ellipsis komma, negatiewe 2, komma, negatiewe 1, komma 0 komma 1 komma 2 komma ellipsis"
     },
     "_comment6_": " Vertical Line",
     "VertLine001": {
       "expected": "3 gedeel deur 6"
     },
     "VertLine002": {
-      "expected": "die versameling van alle x sodat x is greater than 0"
+      "expected": "die versameling van alle x sodat x groter as 0"
     },
     "VertLine003": {
-      "expected": "die versameling van alle x sodat, die absolute waarde van x, is greater than 2"
+      "expected": "die versameling van alle x sodat, die absolute waarde van x, groter as 2"
     },
     "VertLine004": {
       "expected": "f van x, geëvalueer by x is gelyk aan 5"
@@ -103,7 +103,7 @@
       "expected": "x kwadraat plus x, geëvalueer by 1, minus dieselfde uitdrukking geëvalueer by 0"
     },
     "VertLine007": {
-      "expected": "die versameling van alle x sodat x is greater than 0"
+      "expected": "die versameling van alle x sodat x groter as 0"
     },
     "VertLine008": {
       "expected": "3 gedeel deur 6"
@@ -116,7 +116,7 @@
       "expected": "If x is 'n element van die heelgetalle then 2 x, is an even number punt"
     },
     "MembSym002": {
-      "expected": "die versameling van alle x in die heelgetalle sodat x is greater than 5"
+      "expected": "die versameling van alle x in die heelgetalle sodat x groter as 5"
     },
     "MembSym003": {
       "expected": "3 plus 2 i, is nie 'n element van nie die riële getalle"
@@ -125,7 +125,7 @@
       "expected": "If x is 'n element van die heelgetalle then 2 x, is an even number punt"
     },
     "MembSym005": {
-      "expected": "die versameling van alle x element van die heelgetalle sodat x is greater than 5"
+      "expected": "die versameling van alle x element van die heelgetalle sodat x groter as 5"
     },
     "MembSym006": {
       "expected": "3 plus 2 i, is nie 'n element vanf die riële getalle"
@@ -134,7 +134,7 @@
       "expected": "If x is 'n element van die heelgetalle then 2 x, is an even number punt"
     },
     "MembSym008": {
-      "expected": "die versameling van alle x element van die heelgetalle sodat x is greater than 5"
+      "expected": "die versameling van alle x element van die heelgetalle sodat x groter as 5"
     },
     "MembSym009": {
       "expected": "3 plus 2 i, is nie 'n element van die riële getalle"
@@ -143,7 +143,7 @@
       "expected": "If x behoord aan die heelgetalle then 2 x, is an even number punt"
     },
     "MembSym011": {
-      "expected": "die versameling van alle x behoord aan die heelgetalle sodat x is greater than 5"
+      "expected": "die versameling van alle x behoord aan die heelgetalle sodat x groter as 5"
     },
     "MembSym012": {
       "expected": "3 plus 2 i, behoord nie aan die riële getalle"
@@ -152,17 +152,17 @@
       "expected": "If x behoord aan die heelgetalle then 2 x, is an even number punt"
     },
     "MembSym014": {
-      "expected": "die versameling van alle x behoord aan die heelgetalle sodat x is greater than 5"
+      "expected": "die versameling van alle x behoord aan die heelgetalle sodat x groter as 5"
     },
     "MembSym015": {
       "expected": "3 plus 2 i, behoord nie aan die riële getalle"
     },
     "_comment9_": " Two preferences set: One for Sets and one for SetMemberSymbol",
     "SetMemb001": {
-      "expected": "die versameling van x behoord aan die heelgetalle sodat 2 is less than x is less than 7"
+      "expected": "die versameling van x behoord aan die heelgetalle sodat 2 kleiner as x kleiner as 7"
     },
     "SetMemb002": {
-      "expected": "die versameling van x element van die heelgetalle sodat x is greater than 5"
+      "expected": "die versameling van x element van die heelgetalle sodat x groter as 5"
     },
     "_comment10_": " Sums, Products, Unions, Intersections, and Integrals",
     "Sum001": {
