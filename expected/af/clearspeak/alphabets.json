@@ -1,0 +1,4678 @@
+{
+  "locale": "af",
+  "factory": "speech",
+  "name": "AfrikaansClearspeakAlphabets",
+  "active": "AlphabetsAfrikaans",
+  "information": "Afrikaans Clearspeak Alphabet speech tests.",
+  "domain": "clearspeak",
+  "modality": "speech",
+  "base": "input/common/alphabets.json",
+  "compare": true,
+  "tests": {
+    "0": {
+      "expected": "0"
+    },
+    "1": {
+      "expected": "1"
+    },
+    "2": {
+      "expected": "2"
+    },
+    "3": {
+      "expected": "3"
+    },
+    "4": {
+      "expected": "4"
+    },
+    "5": {
+      "expected": "5"
+    },
+    "6": {
+      "expected": "6"
+    },
+    "7": {
+      "expected": "7"
+    },
+    "8": {
+      "expected": "8"
+    },
+    "9": {
+      "expected": "9"
+    },
+    "𝐀": {
+      "expected": "vetgedruk A"
+    },
+    "𝐁": {
+      "expected": "vetgedruk B"
+    },
+    "𝐂": {
+      "expected": "vetgedruk C"
+    },
+    "𝐃": {
+      "expected": "vetgedruk D"
+    },
+    "𝐄": {
+      "expected": "vetgedruk E"
+    },
+    "𝐅": {
+      "expected": "vetgedruk F"
+    },
+    "𝐆": {
+      "expected": "vetgedruk G"
+    },
+    "𝐇": {
+      "expected": "vetgedruk H"
+    },
+    "𝐈": {
+      "expected": "vetgedruk I"
+    },
+    "𝐉": {
+      "expected": "vetgedruk J"
+    },
+    "𝐊": {
+      "expected": "vetgedruk K"
+    },
+    "𝐋": {
+      "expected": "vetgedruk L"
+    },
+    "𝐌": {
+      "expected": "vetgedruk M"
+    },
+    "𝐍": {
+      "expected": "vetgedruk N"
+    },
+    "𝐎": {
+      "expected": "vetgedruk O"
+    },
+    "𝐏": {
+      "expected": "vetgedruk P"
+    },
+    "𝐐": {
+      "expected": "vetgedruk Q"
+    },
+    "𝐑": {
+      "expected": "vetgedruk R"
+    },
+    "𝐒": {
+      "expected": "vetgedruk S"
+    },
+    "𝐓": {
+      "expected": "vetgedruk T"
+    },
+    "𝐔": {
+      "expected": "vetgedruk U"
+    },
+    "𝐕": {
+      "expected": "vetgedruk V"
+    },
+    "𝐖": {
+      "expected": "vetgedruk W"
+    },
+    "𝐗": {
+      "expected": "vetgedruk X"
+    },
+    "𝐘": {
+      "expected": "vetgedruk Y"
+    },
+    "𝐙": {
+      "expected": "vetgedruk Z"
+    },
+    "𝐚": {
+      "expected": "vetgedruk a"
+    },
+    "𝐛": {
+      "expected": "vetgedruk b"
+    },
+    "𝐜": {
+      "expected": "vetgedruk c"
+    },
+    "𝐝": {
+      "expected": "vetgedruk d"
+    },
+    "𝐞": {
+      "expected": "vetgedruk e"
+    },
+    "𝐟": {
+      "expected": "vetgedruk f"
+    },
+    "𝐠": {
+      "expected": "vetgedruk g"
+    },
+    "𝐡": {
+      "expected": "vetgedruk h"
+    },
+    "𝐢": {
+      "expected": "vetgedruk i"
+    },
+    "𝐣": {
+      "expected": "vetgedruk j"
+    },
+    "𝐤": {
+      "expected": "vetgedruk k"
+    },
+    "𝐥": {
+      "expected": "vetgedruk l"
+    },
+    "𝐦": {
+      "expected": "vetgedruk m"
+    },
+    "𝐧": {
+      "expected": "vetgedruk n"
+    },
+    "𝐨": {
+      "expected": "vetgedruk o"
+    },
+    "𝐩": {
+      "expected": "vetgedruk p"
+    },
+    "𝐪": {
+      "expected": "vetgedruk q"
+    },
+    "𝐫": {
+      "expected": "vetgedruk r"
+    },
+    "𝐬": {
+      "expected": "vetgedruk s"
+    },
+    "𝐭": {
+      "expected": "vetgedruk t"
+    },
+    "𝐮": {
+      "expected": "vetgedruk u"
+    },
+    "𝐯": {
+      "expected": "vetgedruk v"
+    },
+    "𝐰": {
+      "expected": "vetgedruk w"
+    },
+    "𝐱": {
+      "expected": "vetgedruk x"
+    },
+    "𝐲": {
+      "expected": "vetgedruk y"
+    },
+    "𝐳": {
+      "expected": "vetgedruk z"
+    },
+    "𝚨": {
+      "expected": "vetgedruk Alfa"
+    },
+    "𝚩": {
+      "expected": "vetgedruk Beta"
+    },
+    "𝚪": {
+      "expected": "vetgedruk Gamma"
+    },
+    "𝚫": {
+      "expected": "vetgedruk Delta"
+    },
+    "𝚬": {
+      "expected": "vetgedruk Epsilon"
+    },
+    "𝚭": {
+      "expected": "vetgedruk Zeta"
+    },
+    "𝚮": {
+      "expected": "vetgedruk Eta"
+    },
+    "𝚯": {
+      "expected": "vetgedruk Theta"
+    },
+    "𝚰": {
+      "expected": "vetgedruk Iota"
+    },
+    "𝚱": {
+      "expected": "vetgedruk Kappa"
+    },
+    "𝚲": {
+      "expected": "vetgedruk Lambda"
+    },
+    "𝚳": {
+      "expected": "vetgedruk My"
+    },
+    "𝚴": {
+      "expected": "vetgedruk Ny"
+    },
+    "𝚵": {
+      "expected": "vetgedruk Xi"
+    },
+    "𝚶": {
+      "expected": "vetgedruk Omikron"
+    },
+    "𝚷": {
+      "expected": "vetgedruk Pi"
+    },
+    "𝚸": {
+      "expected": "vetgedruk Rho"
+    },
+    "𝚹": {
+      "expected": "vetgedruk Theta"
+    },
+    "𝚺": {
+      "expected": "vetgedruk Sigma"
+    },
+    "𝚻": {
+      "expected": "vetgedruk Tau"
+    },
+    "𝚼": {
+      "expected": "vetgedruk Ypsilon"
+    },
+    "𝚽": {
+      "expected": "vetgedruk Phi"
+    },
+    "𝚾": {
+      "expected": "vetgedruk Chi"
+    },
+    "𝚿": {
+      "expected": "vetgedruk Psi"
+    },
+    "𝛀": {
+      "expected": "vetgedruk Omega"
+    },
+    "𝛁": {
+      "expected": "vetgedruk nabla"
+    },
+    "𝛂": {
+      "expected": "vetgedruk alfa"
+    },
+    "𝛃": {
+      "expected": "vetgedruk beta"
+    },
+    "𝛄": {
+      "expected": "vetgedruk gamma"
+    },
+    "𝛅": {
+      "expected": "vetgedruk delta"
+    },
+    "𝛆": {
+      "expected": "vetgedruk epsilon"
+    },
+    "𝛇": {
+      "expected": "vetgedruk zeta"
+    },
+    "𝛈": {
+      "expected": "vetgedruk eta"
+    },
+    "𝛉": {
+      "expected": "vetgedruk theta"
+    },
+    "𝛊": {
+      "expected": "vetgedruk iota"
+    },
+    "𝛋": {
+      "expected": "vetgedruk kappa"
+    },
+    "𝛌": {
+      "expected": "vetgedruk lambda"
+    },
+    "𝛍": {
+      "expected": "vetgedruk my"
+    },
+    "𝛎": {
+      "expected": "vetgedruk ny"
+    },
+    "𝛏": {
+      "expected": "vetgedruk xi"
+    },
+    "𝛐": {
+      "expected": "vetgedruk omikron"
+    },
+    "𝛑": {
+      "expected": "vetgedruk pi"
+    },
+    "𝛒": {
+      "expected": "vetgedruk rho"
+    },
+    "𝛓": {
+      "expected": "vetgedruk abschließendes sigma"
+    },
+    "𝛔": {
+      "expected": "vetgedruk sigma"
+    },
+    "𝛕": {
+      "expected": "vetgedruk tau"
+    },
+    "𝛖": {
+      "expected": "vetgedruk ypsilon"
+    },
+    "𝛗": {
+      "expected": "vetgedruk phi"
+    },
+    "𝛘": {
+      "expected": "vetgedruk chi"
+    },
+    "𝛙": {
+      "expected": "vetgedruk psi"
+    },
+    "𝛚": {
+      "expected": "vetgedruk omega"
+    },
+    "𝛛": {
+      "expected": "vetgedruk partiële afgeleide"
+    },
+    "𝛜": {
+      "expected": "vetgedruk epsilon"
+    },
+    "𝛝": {
+      "expected": "vetgedruk theta"
+    },
+    "𝛞": {
+      "expected": "vetgedruk kappa"
+    },
+    "𝛟": {
+      "expected": "vetgedruk phi"
+    },
+    "𝛠": {
+      "expected": "vetgedruk rho"
+    },
+    "𝛡": {
+      "expected": "vetgedruk pi"
+    },
+    "𝟎": {
+      "expected": "vetgedruk 0"
+    },
+    "𝟏": {
+      "expected": "vetgedruk 1"
+    },
+    "𝟐": {
+      "expected": "vetgedruk 2"
+    },
+    "𝟑": {
+      "expected": "vetgedruk 3"
+    },
+    "𝟒": {
+      "expected": "vetgedruk 4"
+    },
+    "𝟓": {
+      "expected": "vetgedruk 5"
+    },
+    "𝟔": {
+      "expected": "vetgedruk 6"
+    },
+    "𝟕": {
+      "expected": "vetgedruk 7"
+    },
+    "𝟖": {
+      "expected": "vetgedruk 8"
+    },
+    "𝟗": {
+      "expected": "vetgedruk 9"
+    },
+    "𝕬": {
+      "expected": "kursief Duits A"
+    },
+    "𝕭": {
+      "expected": "kursief Duits B"
+    },
+    "𝕮": {
+      "expected": "kursief Duits C"
+    },
+    "𝕯": {
+      "expected": "kursief Duits D"
+    },
+    "𝕰": {
+      "expected": "kursief Duits E"
+    },
+    "𝕱": {
+      "expected": "kursief Duits F"
+    },
+    "𝕲": {
+      "expected": "kursief Duits G"
+    },
+    "𝕳": {
+      "expected": "kursief Duits H"
+    },
+    "𝕴": {
+      "expected": "kursief Duits I"
+    },
+    "𝕵": {
+      "expected": "kursief Duits J"
+    },
+    "𝕶": {
+      "expected": "kursief Duits K"
+    },
+    "𝕷": {
+      "expected": "kursief Duits L"
+    },
+    "𝕸": {
+      "expected": "kursief Duits M"
+    },
+    "𝕹": {
+      "expected": "kursief Duits N"
+    },
+    "𝕺": {
+      "expected": "kursief Duits O"
+    },
+    "𝕻": {
+      "expected": "kursief Duits P"
+    },
+    "𝕼": {
+      "expected": "kursief Duits Q"
+    },
+    "𝕽": {
+      "expected": "kursief Duits R"
+    },
+    "𝕾": {
+      "expected": "kursief Duits S"
+    },
+    "𝕿": {
+      "expected": "kursief Duits T"
+    },
+    "𝖀": {
+      "expected": "kursief Duits U"
+    },
+    "𝖁": {
+      "expected": "kursief Duits V"
+    },
+    "𝖂": {
+      "expected": "kursief Duits W"
+    },
+    "𝖃": {
+      "expected": "kursief Duits X"
+    },
+    "𝖄": {
+      "expected": "kursief Duits Y"
+    },
+    "𝖅": {
+      "expected": "kursief Duits Z"
+    },
+    "𝖆": {
+      "expected": "kursief Duits a"
+    },
+    "𝖇": {
+      "expected": "kursief Duits b"
+    },
+    "𝖈": {
+      "expected": "kursief Duits c"
+    },
+    "𝖉": {
+      "expected": "kursief Duits d"
+    },
+    "𝖊": {
+      "expected": "kursief Duits e"
+    },
+    "𝖋": {
+      "expected": "kursief Duits f"
+    },
+    "𝖌": {
+      "expected": "kursief Duits g"
+    },
+    "𝖍": {
+      "expected": "kursief Duits h"
+    },
+    "𝖎": {
+      "expected": "kursief Duits i"
+    },
+    "𝖏": {
+      "expected": "kursief Duits j"
+    },
+    "𝖐": {
+      "expected": "kursief Duits k"
+    },
+    "𝖑": {
+      "expected": "kursief Duits l"
+    },
+    "𝖒": {
+      "expected": "kursief Duits m"
+    },
+    "𝖓": {
+      "expected": "kursief Duits n"
+    },
+    "𝖔": {
+      "expected": "kursief Duits o"
+    },
+    "𝖕": {
+      "expected": "kursief Duits p"
+    },
+    "𝖖": {
+      "expected": "kursief Duits q"
+    },
+    "𝖗": {
+      "expected": "kursief Duits r"
+    },
+    "𝖘": {
+      "expected": "kursief Duits s"
+    },
+    "𝖙": {
+      "expected": "kursief Duits t"
+    },
+    "𝖚": {
+      "expected": "kursief Duits u"
+    },
+    "𝖛": {
+      "expected": "kursief Duits v"
+    },
+    "𝖜": {
+      "expected": "kursief Duits w"
+    },
+    "𝖝": {
+      "expected": "kursief Duits x"
+    },
+    "𝖞": {
+      "expected": "kursief Duits y"
+    },
+    "𝖟": {
+      "expected": "kursief Duits z"
+    },
+    "𝑨": {
+      "expected": "vetgedruk kursief A"
+    },
+    "𝑩": {
+      "expected": "vetgedruk kursief B"
+    },
+    "𝑪": {
+      "expected": "vetgedruk kursief C"
+    },
+    "𝑫": {
+      "expected": "vetgedruk kursief D"
+    },
+    "𝑬": {
+      "expected": "vetgedruk kursief E"
+    },
+    "𝑭": {
+      "expected": "vetgedruk kursief F"
+    },
+    "𝑮": {
+      "expected": "vetgedruk kursief G"
+    },
+    "𝑯": {
+      "expected": "vetgedruk kursief H"
+    },
+    "𝑰": {
+      "expected": "vetgedruk kursief I"
+    },
+    "𝑱": {
+      "expected": "vetgedruk kursief J"
+    },
+    "𝑲": {
+      "expected": "vetgedruk kursief K"
+    },
+    "𝑳": {
+      "expected": "vetgedruk kursief L"
+    },
+    "𝑴": {
+      "expected": "vetgedruk kursief M"
+    },
+    "𝑵": {
+      "expected": "vetgedruk kursief N"
+    },
+    "𝑶": {
+      "expected": "vetgedruk kursief O"
+    },
+    "𝑷": {
+      "expected": "vetgedruk kursief P"
+    },
+    "𝑸": {
+      "expected": "vetgedruk kursief Q"
+    },
+    "𝑹": {
+      "expected": "vetgedruk kursief R"
+    },
+    "𝑺": {
+      "expected": "vetgedruk kursief S"
+    },
+    "𝑻": {
+      "expected": "vetgedruk kursief T"
+    },
+    "𝑼": {
+      "expected": "vetgedruk kursief U"
+    },
+    "𝑽": {
+      "expected": "vetgedruk kursief V"
+    },
+    "𝑾": {
+      "expected": "vetgedruk kursief W"
+    },
+    "𝑿": {
+      "expected": "vetgedruk kursief X"
+    },
+    "𝒀": {
+      "expected": "vetgedruk kursief Y"
+    },
+    "𝒁": {
+      "expected": "vetgedruk kursief Z"
+    },
+    "𝒂": {
+      "expected": "vetgedruk kursief a"
+    },
+    "𝒃": {
+      "expected": "vetgedruk kursief b"
+    },
+    "𝒄": {
+      "expected": "vetgedruk kursief c"
+    },
+    "𝒅": {
+      "expected": "vetgedruk kursief d"
+    },
+    "𝒆": {
+      "expected": "vetgedruk kursief e"
+    },
+    "𝒇": {
+      "expected": "vetgedruk kursief f"
+    },
+    "𝒈": {
+      "expected": "vetgedruk kursief g"
+    },
+    "𝒉": {
+      "expected": "vetgedruk kursief h"
+    },
+    "𝒊": {
+      "expected": "vetgedruk kursief i"
+    },
+    "𝒋": {
+      "expected": "vetgedruk kursief j"
+    },
+    "𝒌": {
+      "expected": "vetgedruk kursief k"
+    },
+    "𝒍": {
+      "expected": "vetgedruk kursief l"
+    },
+    "𝒎": {
+      "expected": "vetgedruk kursief m"
+    },
+    "𝒏": {
+      "expected": "vetgedruk kursief n"
+    },
+    "𝒐": {
+      "expected": "vetgedruk kursief o"
+    },
+    "𝒑": {
+      "expected": "vetgedruk kursief p"
+    },
+    "𝒒": {
+      "expected": "vetgedruk kursief q"
+    },
+    "𝒓": {
+      "expected": "vetgedruk kursief r"
+    },
+    "𝒔": {
+      "expected": "vetgedruk kursief s"
+    },
+    "𝒕": {
+      "expected": "vetgedruk kursief t"
+    },
+    "𝒖": {
+      "expected": "vetgedruk kursief u"
+    },
+    "𝒗": {
+      "expected": "vetgedruk kursief v"
+    },
+    "𝒘": {
+      "expected": "vetgedruk kursief w"
+    },
+    "𝒙": {
+      "expected": "vetgedruk kursief x"
+    },
+    "𝒚": {
+      "expected": "vetgedruk kursief y"
+    },
+    "𝒛": {
+      "expected": "vetgedruk kursief z"
+    },
+    "𝜜": {
+      "expected": "vetgedruk kursief Alfa"
+    },
+    "𝜝": {
+      "expected": "vetgedruk kursief Beta"
+    },
+    "𝜞": {
+      "expected": "vetgedruk kursief Gamma"
+    },
+    "𝜟": {
+      "expected": "vetgedruk kursief Delta"
+    },
+    "𝜠": {
+      "expected": "vetgedruk kursief Epsilon"
+    },
+    "𝜡": {
+      "expected": "vetgedruk kursief Zeta"
+    },
+    "𝜢": {
+      "expected": "vetgedruk kursief Eta"
+    },
+    "𝜣": {
+      "expected": "vetgedruk kursief Theta"
+    },
+    "𝜤": {
+      "expected": "vetgedruk kursief Iota"
+    },
+    "𝜥": {
+      "expected": "vetgedruk kursief Kappa"
+    },
+    "𝜦": {
+      "expected": "vetgedruk kursief Lambda"
+    },
+    "𝜧": {
+      "expected": "vetgedruk kursief My"
+    },
+    "𝜨": {
+      "expected": "vetgedruk kursief Ny"
+    },
+    "𝜩": {
+      "expected": "vetgedruk kursief Xi"
+    },
+    "𝜪": {
+      "expected": "vetgedruk kursief Omikron"
+    },
+    "𝜫": {
+      "expected": "vetgedruk kursief Pi"
+    },
+    "𝜬": {
+      "expected": "vetgedruk kursief Rho"
+    },
+    "𝜭": {
+      "expected": "vetgedruk kursief Theta"
+    },
+    "𝜮": {
+      "expected": "vetgedruk kursief Sigma"
+    },
+    "𝜯": {
+      "expected": "vetgedruk kursief Tau"
+    },
+    "𝜰": {
+      "expected": "vetgedruk kursief Ypsilon"
+    },
+    "𝜱": {
+      "expected": "vetgedruk kursief Phi"
+    },
+    "𝜲": {
+      "expected": "vetgedruk kursief Chi"
+    },
+    "𝜳": {
+      "expected": "vetgedruk kursief Psi"
+    },
+    "𝜴": {
+      "expected": "vetgedruk kursief Omega"
+    },
+    "𝜵": {
+      "expected": "vetgedruk kursief nabla"
+    },
+    "𝜶": {
+      "expected": "vetgedruk kursief alfa"
+    },
+    "𝜷": {
+      "expected": "vetgedruk kursief beta"
+    },
+    "𝜸": {
+      "expected": "vetgedruk kursief gamma"
+    },
+    "𝜹": {
+      "expected": "vetgedruk kursief delta"
+    },
+    "𝜺": {
+      "expected": "vetgedruk kursief epsilon"
+    },
+    "𝜻": {
+      "expected": "vetgedruk kursief zeta"
+    },
+    "𝜼": {
+      "expected": "vetgedruk kursief eta"
+    },
+    "𝜽": {
+      "expected": "vetgedruk kursief theta"
+    },
+    "𝜾": {
+      "expected": "vetgedruk kursief iota"
+    },
+    "𝜿": {
+      "expected": "vetgedruk kursief kappa"
+    },
+    "𝝀": {
+      "expected": "vetgedruk kursief lambda"
+    },
+    "𝝁": {
+      "expected": "vetgedruk kursief my"
+    },
+    "𝝂": {
+      "expected": "vetgedruk kursief ny"
+    },
+    "𝝃": {
+      "expected": "vetgedruk kursief xi"
+    },
+    "𝝄": {
+      "expected": "vetgedruk kursief omikron"
+    },
+    "𝝅": {
+      "expected": "vetgedruk kursief pi"
+    },
+    "𝝆": {
+      "expected": "vetgedruk kursief rho"
+    },
+    "𝝇": {
+      "expected": "vetgedruk kursief abschließendes sigma"
+    },
+    "𝝈": {
+      "expected": "vetgedruk kursief sigma"
+    },
+    "𝝉": {
+      "expected": "vetgedruk kursief tau"
+    },
+    "𝝊": {
+      "expected": "vetgedruk kursief ypsilon"
+    },
+    "𝝋": {
+      "expected": "vetgedruk kursief phi"
+    },
+    "𝝌": {
+      "expected": "vetgedruk kursief chi"
+    },
+    "𝝍": {
+      "expected": "vetgedruk kursief psi"
+    },
+    "𝝎": {
+      "expected": "vetgedruk kursief omega"
+    },
+    "𝝏": {
+      "expected": "vetgedruk kursief partiële afgeleide"
+    },
+    "𝝐": {
+      "expected": "vetgedruk kursief epsilon"
+    },
+    "𝝑": {
+      "expected": "vetgedruk kursief theta"
+    },
+    "𝝒": {
+      "expected": "vetgedruk kursief kappa"
+    },
+    "𝝓": {
+      "expected": "vetgedruk kursief phi"
+    },
+    "𝝔": {
+      "expected": "vetgedruk kursief rho"
+    },
+    "𝝕": {
+      "expected": "vetgedruk kursief pi"
+    },
+    "𝓐": {
+      "expected": "vetgedruk skrif A"
+    },
+    "𝓑": {
+      "expected": "vetgedruk skrif B"
+    },
+    "𝓒": {
+      "expected": "vetgedruk skrif C"
+    },
+    "𝓓": {
+      "expected": "vetgedruk skrif D"
+    },
+    "𝓔": {
+      "expected": "vetgedruk skrif E"
+    },
+    "𝓕": {
+      "expected": "vetgedruk skrif F"
+    },
+    "𝓖": {
+      "expected": "vetgedruk skrif G"
+    },
+    "𝓗": {
+      "expected": "vetgedruk skrif H"
+    },
+    "𝓘": {
+      "expected": "vetgedruk skrif I"
+    },
+    "𝓙": {
+      "expected": "vetgedruk skrif J"
+    },
+    "𝓚": {
+      "expected": "vetgedruk skrif K"
+    },
+    "𝓛": {
+      "expected": "vetgedruk skrif L"
+    },
+    "𝓜": {
+      "expected": "vetgedruk skrif M"
+    },
+    "𝓝": {
+      "expected": "vetgedruk skrif N"
+    },
+    "𝓞": {
+      "expected": "vetgedruk skrif O"
+    },
+    "𝓟": {
+      "expected": "vetgedruk skrif P"
+    },
+    "𝓠": {
+      "expected": "vetgedruk skrif Q"
+    },
+    "𝓡": {
+      "expected": "vetgedruk skrif R"
+    },
+    "𝓢": {
+      "expected": "vetgedruk skrif S"
+    },
+    "𝓣": {
+      "expected": "vetgedruk skrif T"
+    },
+    "𝓤": {
+      "expected": "vetgedruk skrif U"
+    },
+    "𝓥": {
+      "expected": "vetgedruk skrif V"
+    },
+    "𝓦": {
+      "expected": "vetgedruk skrif W"
+    },
+    "𝓧": {
+      "expected": "vetgedruk skrif X"
+    },
+    "𝓨": {
+      "expected": "vetgedruk skrif Y"
+    },
+    "𝓩": {
+      "expected": "vetgedruk skrif Z"
+    },
+    "𝓪": {
+      "expected": "vetgedruk skrif a"
+    },
+    "𝓫": {
+      "expected": "vetgedruk skrif b"
+    },
+    "𝓬": {
+      "expected": "vetgedruk skrif c"
+    },
+    "𝓭": {
+      "expected": "vetgedruk skrif d"
+    },
+    "𝓮": {
+      "expected": "vetgedruk skrif e"
+    },
+    "𝓯": {
+      "expected": "vetgedruk skrif f"
+    },
+    "𝓰": {
+      "expected": "vetgedruk skrif g"
+    },
+    "𝓱": {
+      "expected": "vetgedruk skrif h"
+    },
+    "𝓲": {
+      "expected": "vetgedruk skrif i"
+    },
+    "𝓳": {
+      "expected": "vetgedruk skrif j"
+    },
+    "𝓴": {
+      "expected": "vetgedruk skrif k"
+    },
+    "𝓵": {
+      "expected": "vetgedruk skrif l"
+    },
+    "𝓶": {
+      "expected": "vetgedruk skrif m"
+    },
+    "𝓷": {
+      "expected": "vetgedruk skrif n"
+    },
+    "𝓸": {
+      "expected": "vetgedruk skrif o"
+    },
+    "𝓹": {
+      "expected": "vetgedruk skrif p"
+    },
+    "𝓺": {
+      "expected": "vetgedruk skrif q"
+    },
+    "𝓻": {
+      "expected": "vetgedruk skrif r"
+    },
+    "𝓼": {
+      "expected": "vetgedruk skrif s"
+    },
+    "𝓽": {
+      "expected": "vetgedruk skrif t"
+    },
+    "𝓾": {
+      "expected": "vetgedruk skrif u"
+    },
+    "𝓿": {
+      "expected": "vetgedruk skrif v"
+    },
+    "𝔀": {
+      "expected": "vetgedruk skrif w"
+    },
+    "𝔁": {
+      "expected": "vetgedruk skrif x"
+    },
+    "𝔂": {
+      "expected": "vetgedruk skrif y"
+    },
+    "𝔃": {
+      "expected": "vetgedruk skrif z"
+    },
+    "𝔸": {
+      "expected": "dubbelgeslaan A"
+    },
+    "𝔹": {
+      "expected": "dubbelgeslaan B"
+    },
+    "ℂ": {
+      "expected": "die komplekse getalle"
+    },
+    "𝔻": {
+      "expected": "dubbelgeslaan D"
+    },
+    "𝔼": {
+      "expected": "dubbelgeslaan E"
+    },
+    "𝔽": {
+      "expected": "dubbelgeslaan F"
+    },
+    "𝔾": {
+      "expected": "dubbelgeslaan G"
+    },
+    "ℍ": {
+      "expected": "dubbelgeslaan groot H"
+    },
+    "𝕀": {
+      "expected": "dubbelgeslaan I"
+    },
+    "𝕁": {
+      "expected": "dubbelgeslaan J"
+    },
+    "𝕂": {
+      "expected": "dubbelgeslaan K"
+    },
+    "𝕃": {
+      "expected": "dubbelgeslaan L"
+    },
+    "𝕄": {
+      "expected": "dubbelgeslaan M"
+    },
+    "ℕ": {
+      "expected": "die natuurlike getalle"
+    },
+    "𝕆": {
+      "expected": "dubbelgeslaan O"
+    },
+    "ℙ": {
+      "expected": "dubbelgeslaan groot P"
+    },
+    "ℚ": {
+      "expected": "die rasionele getalle"
+    },
+    "ℝ": {
+      "expected": "die riële getalle"
+    },
+    "𝕊": {
+      "expected": "dubbelgeslaan S"
+    },
+    "𝕋": {
+      "expected": "dubbelgeslaan T"
+    },
+    "𝕌": {
+      "expected": "dubbelgeslaan U"
+    },
+    "𝕍": {
+      "expected": "dubbelgeslaan V"
+    },
+    "𝕎": {
+      "expected": "dubbelgeslaan W"
+    },
+    "𝕏": {
+      "expected": "dubbelgeslaan X"
+    },
+    "𝕐": {
+      "expected": "dubbelgeslaan Y"
+    },
+    "ℤ": {
+      "expected": "die heelgetalle"
+    },
+    "𝕒": {
+      "expected": "dubbelgeslaan a"
+    },
+    "𝕓": {
+      "expected": "dubbelgeslaan b"
+    },
+    "𝕔": {
+      "expected": "dubbelgeslaan c"
+    },
+    "𝕕": {
+      "expected": "dubbelgeslaan d"
+    },
+    "𝕖": {
+      "expected": "dubbelgeslaan e"
+    },
+    "𝕗": {
+      "expected": "dubbelgeslaan f"
+    },
+    "𝕘": {
+      "expected": "dubbelgeslaan g"
+    },
+    "𝕙": {
+      "expected": "dubbelgeslaan h"
+    },
+    "𝕚": {
+      "expected": "dubbelgeslaan i"
+    },
+    "𝕛": {
+      "expected": "dubbelgeslaan j"
+    },
+    "𝕜": {
+      "expected": "dubbelgeslaan k"
+    },
+    "𝕝": {
+      "expected": "dubbelgeslaan l"
+    },
+    "𝕞": {
+      "expected": "dubbelgeslaan m"
+    },
+    "𝕟": {
+      "expected": "dubbelgeslaan n"
+    },
+    "𝕠": {
+      "expected": "dubbelgeslaan o"
+    },
+    "𝕡": {
+      "expected": "dubbelgeslaan p"
+    },
+    "𝕢": {
+      "expected": "dubbelgeslaan q"
+    },
+    "𝕣": {
+      "expected": "dubbelgeslaan r"
+    },
+    "𝕤": {
+      "expected": "dubbelgeslaan s"
+    },
+    "𝕥": {
+      "expected": "dubbelgeslaan t"
+    },
+    "𝕦": {
+      "expected": "dubbelgeslaan u"
+    },
+    "𝕧": {
+      "expected": "dubbelgeslaan v"
+    },
+    "𝕨": {
+      "expected": "dubbelgeslaan w"
+    },
+    "𝕩": {
+      "expected": "dubbelgeslaan x"
+    },
+    "𝕪": {
+      "expected": "dubbelgeslaan y"
+    },
+    "𝕫": {
+      "expected": "dubbelgeslaan z"
+    },
+    "𝟘": {
+      "expected": "dubbelgeslaan 0"
+    },
+    "𝟙": {
+      "expected": "dubbelgeslaan 1"
+    },
+    "𝟚": {
+      "expected": "dubbelgeslaan 2"
+    },
+    "𝟛": {
+      "expected": "dubbelgeslaan 3"
+    },
+    "𝟜": {
+      "expected": "dubbelgeslaan 4"
+    },
+    "𝟝": {
+      "expected": "dubbelgeslaan 5"
+    },
+    "𝟞": {
+      "expected": "dubbelgeslaan 6"
+    },
+    "𝟟": {
+      "expected": "dubbelgeslaan 7"
+    },
+    "𝟠": {
+      "expected": "dubbelgeslaan 8"
+    },
+    "𝟡": {
+      "expected": "dubbelgeslaan 9"
+    },
+    "Ａ": {
+      "expected": "A"
+    },
+    "Ｂ": {
+      "expected": "B"
+    },
+    "Ｃ": {
+      "expected": "C"
+    },
+    "Ｄ": {
+      "expected": "D"
+    },
+    "Ｅ": {
+      "expected": "E"
+    },
+    "Ｆ": {
+      "expected": "F"
+    },
+    "Ｇ": {
+      "expected": "G"
+    },
+    "Ｈ": {
+      "expected": "H"
+    },
+    "Ｉ": {
+      "expected": "I"
+    },
+    "Ｊ": {
+      "expected": "J"
+    },
+    "Ｋ": {
+      "expected": "K"
+    },
+    "Ｌ": {
+      "expected": "L"
+    },
+    "Ｍ": {
+      "expected": "M"
+    },
+    "Ｎ": {
+      "expected": "N"
+    },
+    "Ｏ": {
+      "expected": "O"
+    },
+    "Ｐ": {
+      "expected": "P"
+    },
+    "Ｑ": {
+      "expected": "Q"
+    },
+    "Ｒ": {
+      "expected": "R"
+    },
+    "Ｓ": {
+      "expected": "S"
+    },
+    "Ｔ": {
+      "expected": "T"
+    },
+    "Ｕ": {
+      "expected": "U"
+    },
+    "Ｖ": {
+      "expected": "V"
+    },
+    "Ｗ": {
+      "expected": "W"
+    },
+    "Ｘ": {
+      "expected": "X"
+    },
+    "Ｙ": {
+      "expected": "Y"
+    },
+    "Ｚ": {
+      "expected": "Z"
+    },
+    "ａ": {
+      "expected": "a"
+    },
+    "ｂ": {
+      "expected": "b"
+    },
+    "ｃ": {
+      "expected": "c"
+    },
+    "ｄ": {
+      "expected": "d"
+    },
+    "ｅ": {
+      "expected": "e"
+    },
+    "ｆ": {
+      "expected": "f"
+    },
+    "ｇ": {
+      "expected": "g"
+    },
+    "ｈ": {
+      "expected": "h"
+    },
+    "ｉ": {
+      "expected": "i"
+    },
+    "ｊ": {
+      "expected": "j"
+    },
+    "ｋ": {
+      "expected": "k"
+    },
+    "ｌ": {
+      "expected": "l"
+    },
+    "ｍ": {
+      "expected": "m"
+    },
+    "ｎ": {
+      "expected": "n"
+    },
+    "ｏ": {
+      "expected": "o"
+    },
+    "ｐ": {
+      "expected": "p"
+    },
+    "ｑ": {
+      "expected": "q"
+    },
+    "ｒ": {
+      "expected": "r"
+    },
+    "ｓ": {
+      "expected": "s"
+    },
+    "ｔ": {
+      "expected": "t"
+    },
+    "ｕ": {
+      "expected": "u"
+    },
+    "ｖ": {
+      "expected": "v"
+    },
+    "ｗ": {
+      "expected": "w"
+    },
+    "ｘ": {
+      "expected": "x"
+    },
+    "ｙ": {
+      "expected": "y"
+    },
+    "ｚ": {
+      "expected": "z"
+    },
+    "０": {
+      "expected": "0"
+    },
+    "１": {
+      "expected": "1"
+    },
+    "２": {
+      "expected": "2"
+    },
+    "３": {
+      "expected": "3"
+    },
+    "４": {
+      "expected": "4"
+    },
+    "５": {
+      "expected": "5"
+    },
+    "６": {
+      "expected": "6"
+    },
+    "７": {
+      "expected": "7"
+    },
+    "８": {
+      "expected": "8"
+    },
+    "９": {
+      "expected": "9"
+    },
+    "𝔄": {
+      "expected": "Duits A"
+    },
+    "𝔅": {
+      "expected": "Duits B"
+    },
+    "ℭ": {
+      "expected": "Duits C"
+    },
+    "𝔇": {
+      "expected": "Duits D"
+    },
+    "𝔈": {
+      "expected": "Duits E"
+    },
+    "𝔉": {
+      "expected": "Duits F"
+    },
+    "𝔊": {
+      "expected": "Duits G"
+    },
+    "ℌ": {
+      "expected": "Duits H"
+    },
+    "ℑ": {
+      "expected": "Duits I"
+    },
+    "𝔍": {
+      "expected": "Duits J"
+    },
+    "𝔎": {
+      "expected": "Duits K"
+    },
+    "𝔏": {
+      "expected": "Duits L"
+    },
+    "𝔐": {
+      "expected": "Duits M"
+    },
+    "𝔑": {
+      "expected": "Duits N"
+    },
+    "𝔒": {
+      "expected": "Duits O"
+    },
+    "𝔓": {
+      "expected": "Duits P"
+    },
+    "𝔔": {
+      "expected": "Duits Q"
+    },
+    "ℜ": {
+      "expected": "Duits R"
+    },
+    "𝔖": {
+      "expected": "Duits S"
+    },
+    "𝔗": {
+      "expected": "Duits T"
+    },
+    "𝔘": {
+      "expected": "Duits U"
+    },
+    "𝔙": {
+      "expected": "Duits V"
+    },
+    "𝔚": {
+      "expected": "Duits W"
+    },
+    "𝔛": {
+      "expected": "Duits X"
+    },
+    "𝔜": {
+      "expected": "Duits Y"
+    },
+    "ℨ": {
+      "expected": "Duits Z"
+    },
+    "𝔞": {
+      "expected": "Duits a"
+    },
+    "𝔟": {
+      "expected": "Duits b"
+    },
+    "𝔠": {
+      "expected": "Duits c"
+    },
+    "𝔡": {
+      "expected": "Duits d"
+    },
+    "𝔢": {
+      "expected": "Duits e"
+    },
+    "𝔣": {
+      "expected": "Duits f"
+    },
+    "𝔤": {
+      "expected": "Duits g"
+    },
+    "𝔥": {
+      "expected": "Duits h"
+    },
+    "𝔦": {
+      "expected": "Duits i"
+    },
+    "𝔧": {
+      "expected": "Duits j"
+    },
+    "𝔨": {
+      "expected": "Duits k"
+    },
+    "𝔩": {
+      "expected": "Duits l"
+    },
+    "𝔪": {
+      "expected": "Duits m"
+    },
+    "𝔫": {
+      "expected": "Duits n"
+    },
+    "𝔬": {
+      "expected": "Duits o"
+    },
+    "𝔭": {
+      "expected": "Duits p"
+    },
+    "𝔮": {
+      "expected": "Duits q"
+    },
+    "𝔯": {
+      "expected": "Duits r"
+    },
+    "𝔰": {
+      "expected": "Duits s"
+    },
+    "𝔱": {
+      "expected": "Duits t"
+    },
+    "𝔲": {
+      "expected": "Duits u"
+    },
+    "𝔳": {
+      "expected": "Duits v"
+    },
+    "𝔴": {
+      "expected": "Duits w"
+    },
+    "𝔵": {
+      "expected": "Duits x"
+    },
+    "𝔶": {
+      "expected": "Duits y"
+    },
+    "𝔷": {
+      "expected": "Duits z"
+    },
+    "𝐴": {
+      "expected": "A"
+    },
+    "𝐵": {
+      "expected": "B"
+    },
+    "𝐶": {
+      "expected": "C"
+    },
+    "𝐷": {
+      "expected": "D"
+    },
+    "𝐸": {
+      "expected": "E"
+    },
+    "𝐹": {
+      "expected": "F"
+    },
+    "𝐺": {
+      "expected": "G"
+    },
+    "𝐻": {
+      "expected": "H"
+    },
+    "𝐼": {
+      "expected": "I"
+    },
+    "𝐽": {
+      "expected": "J"
+    },
+    "𝐾": {
+      "expected": "K"
+    },
+    "𝐿": {
+      "expected": "L"
+    },
+    "𝑀": {
+      "expected": "M"
+    },
+    "𝑁": {
+      "expected": "N"
+    },
+    "𝑂": {
+      "expected": "O"
+    },
+    "𝑃": {
+      "expected": "P"
+    },
+    "𝑄": {
+      "expected": "Q"
+    },
+    "𝑅": {
+      "expected": "R"
+    },
+    "𝑆": {
+      "expected": "S"
+    },
+    "𝑇": {
+      "expected": "T"
+    },
+    "𝑈": {
+      "expected": "U"
+    },
+    "𝑉": {
+      "expected": "V"
+    },
+    "𝑊": {
+      "expected": "W"
+    },
+    "𝑋": {
+      "expected": "X"
+    },
+    "𝑌": {
+      "expected": "Y"
+    },
+    "𝑍": {
+      "expected": "Z"
+    },
+    "𝑎": {
+      "expected": "a"
+    },
+    "𝑏": {
+      "expected": "b"
+    },
+    "𝑐": {
+      "expected": "c"
+    },
+    "𝑑": {
+      "expected": "d"
+    },
+    "𝑒": {
+      "expected": "e"
+    },
+    "𝑓": {
+      "expected": "f"
+    },
+    "𝑔": {
+      "expected": "g"
+    },
+    "ℎ": {
+      "expected": "h"
+    },
+    "𝑖": {
+      "expected": "i"
+    },
+    "𝑗": {
+      "expected": "j"
+    },
+    "𝑘": {
+      "expected": "k"
+    },
+    "𝑙": {
+      "expected": "l"
+    },
+    "𝑚": {
+      "expected": "m"
+    },
+    "𝑛": {
+      "expected": "n"
+    },
+    "𝑜": {
+      "expected": "o"
+    },
+    "𝑝": {
+      "expected": "p"
+    },
+    "𝑞": {
+      "expected": "q"
+    },
+    "𝑟": {
+      "expected": "r"
+    },
+    "𝑠": {
+      "expected": "s"
+    },
+    "𝑡": {
+      "expected": "t"
+    },
+    "𝑢": {
+      "expected": "u"
+    },
+    "𝑣": {
+      "expected": "v"
+    },
+    "𝑤": {
+      "expected": "w"
+    },
+    "𝑥": {
+      "expected": "x"
+    },
+    "𝑦": {
+      "expected": "y"
+    },
+    "𝑧": {
+      "expected": "z"
+    },
+    "𝛢": {
+      "expected": "Alfa"
+    },
+    "𝛣": {
+      "expected": "Beta"
+    },
+    "𝛤": {
+      "expected": "Gamma"
+    },
+    "𝛥": {
+      "expected": "Delta"
+    },
+    "𝛦": {
+      "expected": "Epsilon"
+    },
+    "𝛧": {
+      "expected": "Zeta"
+    },
+    "𝛨": {
+      "expected": "Eta"
+    },
+    "𝛩": {
+      "expected": "Theta"
+    },
+    "𝛪": {
+      "expected": "Iota"
+    },
+    "𝛫": {
+      "expected": "Kappa"
+    },
+    "𝛬": {
+      "expected": "Lambda"
+    },
+    "𝛭": {
+      "expected": "My"
+    },
+    "𝛮": {
+      "expected": "Ny"
+    },
+    "𝛯": {
+      "expected": "Xi"
+    },
+    "𝛰": {
+      "expected": "Omikron"
+    },
+    "𝛱": {
+      "expected": "Pi"
+    },
+    "𝛲": {
+      "expected": "Rho"
+    },
+    "𝛳": {
+      "expected": "Theta"
+    },
+    "𝛴": {
+      "expected": "Sigma"
+    },
+    "𝛵": {
+      "expected": "Tau"
+    },
+    "𝛶": {
+      "expected": "Ypsilon"
+    },
+    "𝛷": {
+      "expected": "Phi"
+    },
+    "𝛸": {
+      "expected": "Chi"
+    },
+    "𝛹": {
+      "expected": "Psi"
+    },
+    "𝛺": {
+      "expected": "Omega"
+    },
+    "𝛻": {
+      "expected": "kursief nabla"
+    },
+    "𝛼": {
+      "expected": "alfa"
+    },
+    "𝛽": {
+      "expected": "beta"
+    },
+    "𝛾": {
+      "expected": "gamma"
+    },
+    "𝛿": {
+      "expected": "delta"
+    },
+    "𝜀": {
+      "expected": "epsilon"
+    },
+    "𝜁": {
+      "expected": "zeta"
+    },
+    "𝜂": {
+      "expected": "eta"
+    },
+    "𝜃": {
+      "expected": "theta"
+    },
+    "𝜄": {
+      "expected": "iota"
+    },
+    "𝜅": {
+      "expected": "kappa"
+    },
+    "𝜆": {
+      "expected": "lambda"
+    },
+    "𝜇": {
+      "expected": "my"
+    },
+    "𝜈": {
+      "expected": "ny"
+    },
+    "𝜉": {
+      "expected": "xi"
+    },
+    "𝜊": {
+      "expected": "omikron"
+    },
+    "𝜋": {
+      "expected": "pi"
+    },
+    "𝜌": {
+      "expected": "rho"
+    },
+    "𝜍": {
+      "expected": "abschließendes sigma"
+    },
+    "𝜎": {
+      "expected": "sigma"
+    },
+    "𝜏": {
+      "expected": "tau"
+    },
+    "𝜐": {
+      "expected": "ypsilon"
+    },
+    "𝜑": {
+      "expected": "phi"
+    },
+    "𝜒": {
+      "expected": "chi"
+    },
+    "𝜓": {
+      "expected": "psi"
+    },
+    "𝜔": {
+      "expected": "omega"
+    },
+    "𝜕": {
+      "expected": "kursief partiële afgeleide"
+    },
+    "𝜖": {
+      "expected": "epsilon"
+    },
+    "𝜗": {
+      "expected": "theta"
+    },
+    "𝜘": {
+      "expected": "kappa"
+    },
+    "𝜙": {
+      "expected": "phi"
+    },
+    "𝜚": {
+      "expected": "rho"
+    },
+    "𝜛": {
+      "expected": "pi"
+    },
+    "𝙰": {
+      "expected": "monospasie A"
+    },
+    "𝙱": {
+      "expected": "monospasie B"
+    },
+    "𝙲": {
+      "expected": "monospasie C"
+    },
+    "𝙳": {
+      "expected": "monospasie D"
+    },
+    "𝙴": {
+      "expected": "monospasie E"
+    },
+    "𝙵": {
+      "expected": "monospasie F"
+    },
+    "𝙶": {
+      "expected": "monospasie G"
+    },
+    "𝙷": {
+      "expected": "monospasie H"
+    },
+    "𝙸": {
+      "expected": "monospasie I"
+    },
+    "𝙹": {
+      "expected": "monospasie J"
+    },
+    "𝙺": {
+      "expected": "monospasie K"
+    },
+    "𝙻": {
+      "expected": "monospasie L"
+    },
+    "𝙼": {
+      "expected": "monospasie M"
+    },
+    "𝙽": {
+      "expected": "monospasie N"
+    },
+    "𝙾": {
+      "expected": "monospasie O"
+    },
+    "𝙿": {
+      "expected": "monospasie P"
+    },
+    "𝚀": {
+      "expected": "monospasie Q"
+    },
+    "𝚁": {
+      "expected": "monospasie R"
+    },
+    "𝚂": {
+      "expected": "monospasie S"
+    },
+    "𝚃": {
+      "expected": "monospasie T"
+    },
+    "𝚄": {
+      "expected": "monospasie U"
+    },
+    "𝚅": {
+      "expected": "monospasie V"
+    },
+    "𝚆": {
+      "expected": "monospasie W"
+    },
+    "𝚇": {
+      "expected": "monospasie X"
+    },
+    "𝚈": {
+      "expected": "monospasie Y"
+    },
+    "𝚉": {
+      "expected": "monospasie Z"
+    },
+    "𝚊": {
+      "expected": "monospasie a"
+    },
+    "𝚋": {
+      "expected": "monospasie b"
+    },
+    "𝚌": {
+      "expected": "monospasie c"
+    },
+    "𝚍": {
+      "expected": "monospasie d"
+    },
+    "𝚎": {
+      "expected": "monospasie e"
+    },
+    "𝚏": {
+      "expected": "monospasie f"
+    },
+    "𝚐": {
+      "expected": "monospasie g"
+    },
+    "𝚑": {
+      "expected": "monospasie h"
+    },
+    "𝚒": {
+      "expected": "monospasie i"
+    },
+    "𝚓": {
+      "expected": "monospasie j"
+    },
+    "𝚔": {
+      "expected": "monospasie k"
+    },
+    "𝚕": {
+      "expected": "monospasie l"
+    },
+    "𝚖": {
+      "expected": "monospasie m"
+    },
+    "𝚗": {
+      "expected": "monospasie n"
+    },
+    "𝚘": {
+      "expected": "monospasie o"
+    },
+    "𝚙": {
+      "expected": "monospasie p"
+    },
+    "𝚚": {
+      "expected": "monospasie q"
+    },
+    "𝚛": {
+      "expected": "monospasie r"
+    },
+    "𝚜": {
+      "expected": "monospasie s"
+    },
+    "𝚝": {
+      "expected": "monospasie t"
+    },
+    "𝚞": {
+      "expected": "monospasie u"
+    },
+    "𝚟": {
+      "expected": "monospasie v"
+    },
+    "𝚠": {
+      "expected": "monospasie w"
+    },
+    "𝚡": {
+      "expected": "monospasie x"
+    },
+    "𝚢": {
+      "expected": "monospasie y"
+    },
+    "𝚣": {
+      "expected": "monospasie z"
+    },
+    "𝟶": {
+      "expected": "monospasie 0"
+    },
+    "𝟷": {
+      "expected": "monospasie 1"
+    },
+    "𝟸": {
+      "expected": "monospasie 2"
+    },
+    "𝟹": {
+      "expected": "monospasie 3"
+    },
+    "𝟺": {
+      "expected": "monospasie 4"
+    },
+    "𝟻": {
+      "expected": "monospasie 5"
+    },
+    "𝟼": {
+      "expected": "monospasie 6"
+    },
+    "𝟽": {
+      "expected": "monospasie 7"
+    },
+    "𝟾": {
+      "expected": "monospasie 8"
+    },
+    "𝟿": {
+      "expected": "monospasie 9"
+    },
+    "A": {
+      "expected": "A"
+    },
+    "B": {
+      "expected": "B"
+    },
+    "C": {
+      "expected": "C"
+    },
+    "D": {
+      "expected": "D"
+    },
+    "E": {
+      "expected": "E"
+    },
+    "F": {
+      "expected": "F"
+    },
+    "G": {
+      "expected": "G"
+    },
+    "H": {
+      "expected": "H"
+    },
+    "I": {
+      "expected": "I"
+    },
+    "J": {
+      "expected": "J"
+    },
+    "K": {
+      "expected": "K"
+    },
+    "L": {
+      "expected": "L"
+    },
+    "M": {
+      "expected": "M"
+    },
+    "N": {
+      "expected": "N"
+    },
+    "O": {
+      "expected": "O"
+    },
+    "P": {
+      "expected": "P"
+    },
+    "Q": {
+      "expected": "Q"
+    },
+    "R": {
+      "expected": "R"
+    },
+    "S": {
+      "expected": "S"
+    },
+    "T": {
+      "expected": "T"
+    },
+    "U": {
+      "expected": "U"
+    },
+    "V": {
+      "expected": "V"
+    },
+    "W": {
+      "expected": "W"
+    },
+    "X": {
+      "expected": "X"
+    },
+    "Y": {
+      "expected": "Y"
+    },
+    "Z": {
+      "expected": "Z"
+    },
+    "a": {
+      "expected": "a"
+    },
+    "b": {
+      "expected": "b"
+    },
+    "c": {
+      "expected": "c"
+    },
+    "d": {
+      "expected": "d"
+    },
+    "e": {
+      "expected": "e"
+    },
+    "f": {
+      "expected": "f"
+    },
+    "g": {
+      "expected": "g"
+    },
+    "h": {
+      "expected": "h"
+    },
+    "i": {
+      "expected": "i"
+    },
+    "j": {
+      "expected": "j"
+    },
+    "k": {
+      "expected": "k"
+    },
+    "l": {
+      "expected": "l"
+    },
+    "m": {
+      "expected": "m"
+    },
+    "n": {
+      "expected": "n"
+    },
+    "o": {
+      "expected": "o"
+    },
+    "p": {
+      "expected": "p"
+    },
+    "q": {
+      "expected": "q"
+    },
+    "r": {
+      "expected": "r"
+    },
+    "s": {
+      "expected": "s"
+    },
+    "t": {
+      "expected": "t"
+    },
+    "u": {
+      "expected": "u"
+    },
+    "v": {
+      "expected": "v"
+    },
+    "w": {
+      "expected": "w"
+    },
+    "x": {
+      "expected": "x"
+    },
+    "y": {
+      "expected": "y"
+    },
+    "z": {
+      "expected": "z"
+    },
+    "Α": {
+      "expected": "Alfa"
+    },
+    "Β": {
+      "expected": "Beta"
+    },
+    "Γ": {
+      "expected": "Gamma"
+    },
+    "Δ": {
+      "expected": "driehoek"
+    },
+    "Ε": {
+      "expected": "Epsilon"
+    },
+    "Ζ": {
+      "expected": "Zeta"
+    },
+    "Η": {
+      "expected": "Eta"
+    },
+    "Θ": {
+      "expected": "Theta"
+    },
+    "Ι": {
+      "expected": "Iota"
+    },
+    "Κ": {
+      "expected": "Kappa"
+    },
+    "Λ": {
+      "expected": "Lambda"
+    },
+    "Μ": {
+      "expected": "My"
+    },
+    "Ν": {
+      "expected": "Ny"
+    },
+    "Ξ": {
+      "expected": "Xi"
+    },
+    "Ο": {
+      "expected": "Omikron"
+    },
+    "Π": {
+      "expected": "Pi"
+    },
+    "Ρ": {
+      "expected": "Rho"
+    },
+    "ϴ": {
+      "expected": "Theta"
+    },
+    "Σ": {
+      "expected": "Sigma"
+    },
+    "Τ": {
+      "expected": "Tau"
+    },
+    "Υ": {
+      "expected": "Ypsilon"
+    },
+    "Φ": {
+      "expected": "Phi"
+    },
+    "Χ": {
+      "expected": "Chi"
+    },
+    "Ψ": {
+      "expected": "Psi"
+    },
+    "Ω": {
+      "expected": "Omega"
+    },
+    "∇": {
+      "expected": "nabla"
+    },
+    "α": {
+      "expected": "alfa"
+    },
+    "β": {
+      "expected": "beta"
+    },
+    "γ": {
+      "expected": "gamma"
+    },
+    "δ": {
+      "expected": "delta"
+    },
+    "ε": {
+      "expected": "epsilon"
+    },
+    "ζ": {
+      "expected": "zeta"
+    },
+    "η": {
+      "expected": "eta"
+    },
+    "θ": {
+      "expected": "theta"
+    },
+    "ι": {
+      "expected": "iota"
+    },
+    "κ": {
+      "expected": "kappa"
+    },
+    "λ": {
+      "expected": "lambda"
+    },
+    "μ": {
+      "expected": "my"
+    },
+    "ν": {
+      "expected": "ny"
+    },
+    "ξ": {
+      "expected": "xi"
+    },
+    "ο": {
+      "expected": "omikron"
+    },
+    "π": {
+      "expected": "pi"
+    },
+    "ρ": {
+      "expected": "rho"
+    },
+    "ς": {
+      "expected": "abschließendes sigma"
+    },
+    "σ": {
+      "expected": "sigma"
+    },
+    "τ": {
+      "expected": "tau"
+    },
+    "υ": {
+      "expected": "ypsilon"
+    },
+    "φ": {
+      "expected": "phi"
+    },
+    "χ": {
+      "expected": "chi"
+    },
+    "ψ": {
+      "expected": "psi"
+    },
+    "ω": {
+      "expected": "omega"
+    },
+    "∂": {
+      "expected": "partiële afgeleide"
+    },
+    "ϵ": {
+      "expected": "epsilon"
+    },
+    "ϑ": {
+      "expected": "theta"
+    },
+    "ϰ": {
+      "expected": "kappa"
+    },
+    "ϕ": {
+      "expected": "phi"
+    },
+    "ϱ": {
+      "expected": "rho"
+    },
+    "ϖ": {
+      "expected": "pi"
+    },
+    "𝒜": {
+      "expected": "skrif A"
+    },
+    "ℬ": {
+      "expected": "skrif B"
+    },
+    "𝒞": {
+      "expected": "skrif C"
+    },
+    "𝒟": {
+      "expected": "skrif D"
+    },
+    "ℰ": {
+      "expected": "skrif E"
+    },
+    "ℱ": {
+      "expected": "skrif F"
+    },
+    "𝒢": {
+      "expected": "skrif G"
+    },
+    "ℋ": {
+      "expected": "skrif H"
+    },
+    "ℐ": {
+      "expected": "skrif I"
+    },
+    "𝒥": {
+      "expected": "skrif J"
+    },
+    "𝒦": {
+      "expected": "skrif K"
+    },
+    "ℒ": {
+      "expected": "skrif L"
+    },
+    "ℳ": {
+      "expected": "skrif M"
+    },
+    "𝒩": {
+      "expected": "skrif N"
+    },
+    "𝒪": {
+      "expected": "skrif O"
+    },
+    "𝒫": {
+      "expected": "skrif P"
+    },
+    "𝒬": {
+      "expected": "skrif Q"
+    },
+    "ℛ": {
+      "expected": "skrif R"
+    },
+    "𝒮": {
+      "expected": "skrif S"
+    },
+    "𝒯": {
+      "expected": "skrif T"
+    },
+    "𝒰": {
+      "expected": "skrif U"
+    },
+    "𝒱": {
+      "expected": "skrif V"
+    },
+    "𝒲": {
+      "expected": "skrif W"
+    },
+    "𝒳": {
+      "expected": "skrif X"
+    },
+    "𝒴": {
+      "expected": "skrif Y"
+    },
+    "𝒵": {
+      "expected": "skrif Z"
+    },
+    "𝒶": {
+      "expected": "skrif a"
+    },
+    "𝒷": {
+      "expected": "skrif b"
+    },
+    "𝒸": {
+      "expected": "skrif c"
+    },
+    "𝒹": {
+      "expected": "skrif d"
+    },
+    "ℯ": {
+      "expected": "skrif e"
+    },
+    "𝒻": {
+      "expected": "skrif f"
+    },
+    "ℊ": {
+      "expected": "skrif g"
+    },
+    "𝒽": {
+      "expected": "skrif h"
+    },
+    "𝒾": {
+      "expected": "skrif i"
+    },
+    "𝒿": {
+      "expected": "skrif j"
+    },
+    "𝓀": {
+      "expected": "skrif k"
+    },
+    "𝓁": {
+      "expected": "skrif l"
+    },
+    "𝓂": {
+      "expected": "skrif m"
+    },
+    "𝓃": {
+      "expected": "skrif n"
+    },
+    "ℴ": {
+      "expected": "skrif o"
+    },
+    "𝓅": {
+      "expected": "skrif p"
+    },
+    "𝓆": {
+      "expected": "skrif q"
+    },
+    "𝓇": {
+      "expected": "skrif r"
+    },
+    "𝓈": {
+      "expected": "skrif s"
+    },
+    "𝓉": {
+      "expected": "skrif t"
+    },
+    "𝓊": {
+      "expected": "skrif u"
+    },
+    "𝓋": {
+      "expected": "skrif v"
+    },
+    "𝓌": {
+      "expected": "skrif w"
+    },
+    "𝓍": {
+      "expected": "skrif x"
+    },
+    "𝓎": {
+      "expected": "skrif y"
+    },
+    "𝓏": {
+      "expected": "skrif z"
+    },
+    "𝖠": {
+      "expected": "sans serif A"
+    },
+    "𝖡": {
+      "expected": "sans serif B"
+    },
+    "𝖢": {
+      "expected": "sans serif C"
+    },
+    "𝖣": {
+      "expected": "sans serif D"
+    },
+    "𝖤": {
+      "expected": "sans serif E"
+    },
+    "𝖥": {
+      "expected": "sans serif F"
+    },
+    "𝖦": {
+      "expected": "sans serif G"
+    },
+    "𝖧": {
+      "expected": "sans serif H"
+    },
+    "𝖨": {
+      "expected": "sans serif I"
+    },
+    "𝖩": {
+      "expected": "sans serif J"
+    },
+    "𝖪": {
+      "expected": "sans serif K"
+    },
+    "𝖫": {
+      "expected": "sans serif L"
+    },
+    "𝖬": {
+      "expected": "sans serif M"
+    },
+    "𝖭": {
+      "expected": "sans serif N"
+    },
+    "𝖮": {
+      "expected": "sans serif O"
+    },
+    "𝖯": {
+      "expected": "sans serif P"
+    },
+    "𝖰": {
+      "expected": "sans serif Q"
+    },
+    "𝖱": {
+      "expected": "sans serif R"
+    },
+    "𝖲": {
+      "expected": "sans serif S"
+    },
+    "𝖳": {
+      "expected": "sans serif T"
+    },
+    "𝖴": {
+      "expected": "sans serif U"
+    },
+    "𝖵": {
+      "expected": "sans serif V"
+    },
+    "𝖶": {
+      "expected": "sans serif W"
+    },
+    "𝖷": {
+      "expected": "sans serif X"
+    },
+    "𝖸": {
+      "expected": "sans serif Y"
+    },
+    "𝖹": {
+      "expected": "sans serif Z"
+    },
+    "𝖺": {
+      "expected": "sans serif a"
+    },
+    "𝖻": {
+      "expected": "sans serif b"
+    },
+    "𝖼": {
+      "expected": "sans serif c"
+    },
+    "𝖽": {
+      "expected": "sans serif d"
+    },
+    "𝖾": {
+      "expected": "sans serif e"
+    },
+    "𝖿": {
+      "expected": "sans serif f"
+    },
+    "𝗀": {
+      "expected": "sans serif g"
+    },
+    "𝗁": {
+      "expected": "sans serif h"
+    },
+    "𝗂": {
+      "expected": "sans serif i"
+    },
+    "𝗃": {
+      "expected": "sans serif j"
+    },
+    "𝗄": {
+      "expected": "sans serif k"
+    },
+    "𝗅": {
+      "expected": "sans serif l"
+    },
+    "𝗆": {
+      "expected": "sans serif m"
+    },
+    "𝗇": {
+      "expected": "sans serif n"
+    },
+    "𝗈": {
+      "expected": "sans serif o"
+    },
+    "𝗉": {
+      "expected": "sans serif p"
+    },
+    "𝗊": {
+      "expected": "sans serif q"
+    },
+    "𝗋": {
+      "expected": "sans serif r"
+    },
+    "𝗌": {
+      "expected": "sans serif s"
+    },
+    "𝗍": {
+      "expected": "sans serif t"
+    },
+    "𝗎": {
+      "expected": "sans serif u"
+    },
+    "𝗏": {
+      "expected": "sans serif v"
+    },
+    "𝗐": {
+      "expected": "sans serif w"
+    },
+    "𝗑": {
+      "expected": "sans serif x"
+    },
+    "𝗒": {
+      "expected": "sans serif y"
+    },
+    "𝗓": {
+      "expected": "sans serif z"
+    },
+    "𝟢": {
+      "expected": "sans serif 0"
+    },
+    "𝟣": {
+      "expected": "sans serif 1"
+    },
+    "𝟤": {
+      "expected": "sans serif 2"
+    },
+    "𝟥": {
+      "expected": "sans serif 3"
+    },
+    "𝟦": {
+      "expected": "sans serif 4"
+    },
+    "𝟧": {
+      "expected": "sans serif 5"
+    },
+    "𝟨": {
+      "expected": "sans serif 6"
+    },
+    "𝟩": {
+      "expected": "sans serif 7"
+    },
+    "𝟪": {
+      "expected": "sans serif 8"
+    },
+    "𝟫": {
+      "expected": "sans serif 9"
+    },
+    "𝘈": {
+      "expected": "sans serif kursief A"
+    },
+    "𝘉": {
+      "expected": "sans serif kursief B"
+    },
+    "𝘊": {
+      "expected": "sans serif kursief C"
+    },
+    "𝘋": {
+      "expected": "sans serif kursief D"
+    },
+    "𝘌": {
+      "expected": "sans serif kursief E"
+    },
+    "𝘍": {
+      "expected": "sans serif kursief F"
+    },
+    "𝘎": {
+      "expected": "sans serif kursief G"
+    },
+    "𝘏": {
+      "expected": "sans serif kursief H"
+    },
+    "𝘐": {
+      "expected": "sans serif kursief I"
+    },
+    "𝘑": {
+      "expected": "sans serif kursief J"
+    },
+    "𝘒": {
+      "expected": "sans serif kursief K"
+    },
+    "𝘓": {
+      "expected": "sans serif kursief L"
+    },
+    "𝘔": {
+      "expected": "sans serif kursief M"
+    },
+    "𝘕": {
+      "expected": "sans serif kursief N"
+    },
+    "𝘖": {
+      "expected": "sans serif kursief O"
+    },
+    "𝘗": {
+      "expected": "sans serif kursief P"
+    },
+    "𝘘": {
+      "expected": "sans serif kursief Q"
+    },
+    "𝘙": {
+      "expected": "sans serif kursief R"
+    },
+    "𝘚": {
+      "expected": "sans serif kursief S"
+    },
+    "𝘛": {
+      "expected": "sans serif kursief T"
+    },
+    "𝘜": {
+      "expected": "sans serif kursief U"
+    },
+    "𝘝": {
+      "expected": "sans serif kursief V"
+    },
+    "𝘞": {
+      "expected": "sans serif kursief W"
+    },
+    "𝘟": {
+      "expected": "sans serif kursief X"
+    },
+    "𝘠": {
+      "expected": "sans serif kursief Y"
+    },
+    "𝘡": {
+      "expected": "sans serif kursief Z"
+    },
+    "𝘢": {
+      "expected": "sans serif kursief a"
+    },
+    "𝘣": {
+      "expected": "sans serif kursief b"
+    },
+    "𝘤": {
+      "expected": "sans serif kursief c"
+    },
+    "𝘥": {
+      "expected": "sans serif kursief d"
+    },
+    "𝘦": {
+      "expected": "sans serif kursief e"
+    },
+    "𝘧": {
+      "expected": "sans serif kursief f"
+    },
+    "𝘨": {
+      "expected": "sans serif kursief g"
+    },
+    "𝘩": {
+      "expected": "sans serif kursief h"
+    },
+    "𝘪": {
+      "expected": "sans serif kursief i"
+    },
+    "𝘫": {
+      "expected": "sans serif kursief j"
+    },
+    "𝘬": {
+      "expected": "sans serif kursief k"
+    },
+    "𝘭": {
+      "expected": "sans serif kursief l"
+    },
+    "𝘮": {
+      "expected": "sans serif kursief m"
+    },
+    "𝘯": {
+      "expected": "sans serif kursief n"
+    },
+    "𝘰": {
+      "expected": "sans serif kursief o"
+    },
+    "𝘱": {
+      "expected": "sans serif kursief p"
+    },
+    "𝘲": {
+      "expected": "sans serif kursief q"
+    },
+    "𝘳": {
+      "expected": "sans serif kursief r"
+    },
+    "𝘴": {
+      "expected": "sans serif kursief s"
+    },
+    "𝘵": {
+      "expected": "sans serif kursief t"
+    },
+    "𝘶": {
+      "expected": "sans serif kursief u"
+    },
+    "𝘷": {
+      "expected": "sans serif kursief v"
+    },
+    "𝘸": {
+      "expected": "sans serif kursief w"
+    },
+    "𝘹": {
+      "expected": "sans serif kursief x"
+    },
+    "𝘺": {
+      "expected": "sans serif kursief y"
+    },
+    "𝘻": {
+      "expected": "sans serif kursief z"
+    },
+    "𝗔": {
+      "expected": "sans serif vetgedruk A"
+    },
+    "𝗕": {
+      "expected": "sans serif vetgedruk B"
+    },
+    "𝗖": {
+      "expected": "sans serif vetgedruk C"
+    },
+    "𝗗": {
+      "expected": "sans serif vetgedruk D"
+    },
+    "𝗘": {
+      "expected": "sans serif vetgedruk E"
+    },
+    "𝗙": {
+      "expected": "sans serif vetgedruk F"
+    },
+    "𝗚": {
+      "expected": "sans serif vetgedruk G"
+    },
+    "𝗛": {
+      "expected": "sans serif vetgedruk H"
+    },
+    "𝗜": {
+      "expected": "sans serif vetgedruk I"
+    },
+    "𝗝": {
+      "expected": "sans serif vetgedruk J"
+    },
+    "𝗞": {
+      "expected": "sans serif vetgedruk K"
+    },
+    "𝗟": {
+      "expected": "sans serif vetgedruk L"
+    },
+    "𝗠": {
+      "expected": "sans serif vetgedruk M"
+    },
+    "𝗡": {
+      "expected": "sans serif vetgedruk N"
+    },
+    "𝗢": {
+      "expected": "sans serif vetgedruk O"
+    },
+    "𝗣": {
+      "expected": "sans serif vetgedruk P"
+    },
+    "𝗤": {
+      "expected": "sans serif vetgedruk Q"
+    },
+    "𝗥": {
+      "expected": "sans serif vetgedruk R"
+    },
+    "𝗦": {
+      "expected": "sans serif vetgedruk S"
+    },
+    "𝗧": {
+      "expected": "sans serif vetgedruk T"
+    },
+    "𝗨": {
+      "expected": "sans serif vetgedruk U"
+    },
+    "𝗩": {
+      "expected": "sans serif vetgedruk V"
+    },
+    "𝗪": {
+      "expected": "sans serif vetgedruk W"
+    },
+    "𝗫": {
+      "expected": "sans serif vetgedruk X"
+    },
+    "𝗬": {
+      "expected": "sans serif vetgedruk Y"
+    },
+    "𝗭": {
+      "expected": "sans serif vetgedruk Z"
+    },
+    "𝗮": {
+      "expected": "sans serif vetgedruk a"
+    },
+    "𝗯": {
+      "expected": "sans serif vetgedruk b"
+    },
+    "𝗰": {
+      "expected": "sans serif vetgedruk c"
+    },
+    "𝗱": {
+      "expected": "sans serif vetgedruk d"
+    },
+    "𝗲": {
+      "expected": "sans serif vetgedruk e"
+    },
+    "𝗳": {
+      "expected": "sans serif vetgedruk f"
+    },
+    "𝗴": {
+      "expected": "sans serif vetgedruk g"
+    },
+    "𝗵": {
+      "expected": "sans serif vetgedruk h"
+    },
+    "𝗶": {
+      "expected": "sans serif vetgedruk i"
+    },
+    "𝗷": {
+      "expected": "sans serif vetgedruk j"
+    },
+    "𝗸": {
+      "expected": "sans serif vetgedruk k"
+    },
+    "𝗹": {
+      "expected": "sans serif vetgedruk l"
+    },
+    "𝗺": {
+      "expected": "sans serif vetgedruk m"
+    },
+    "𝗻": {
+      "expected": "sans serif vetgedruk n"
+    },
+    "𝗼": {
+      "expected": "sans serif vetgedruk o"
+    },
+    "𝗽": {
+      "expected": "sans serif vetgedruk p"
+    },
+    "𝗾": {
+      "expected": "sans serif vetgedruk q"
+    },
+    "𝗿": {
+      "expected": "sans serif vetgedruk r"
+    },
+    "𝘀": {
+      "expected": "sans serif vetgedruk s"
+    },
+    "𝘁": {
+      "expected": "sans serif vetgedruk t"
+    },
+    "𝘂": {
+      "expected": "sans serif vetgedruk u"
+    },
+    "𝘃": {
+      "expected": "sans serif vetgedruk v"
+    },
+    "𝘄": {
+      "expected": "sans serif vetgedruk w"
+    },
+    "𝘅": {
+      "expected": "sans serif vetgedruk x"
+    },
+    "𝘆": {
+      "expected": "sans serif vetgedruk y"
+    },
+    "𝘇": {
+      "expected": "sans serif vetgedruk z"
+    },
+    "𝝖": {
+      "expected": "sans serif vetgedruk Alfa"
+    },
+    "𝝗": {
+      "expected": "sans serif vetgedruk Beta"
+    },
+    "𝝘": {
+      "expected": "sans serif vetgedruk Gamma"
+    },
+    "𝝙": {
+      "expected": "sans serif vetgedruk Delta"
+    },
+    "𝝚": {
+      "expected": "sans serif vetgedruk Epsilon"
+    },
+    "𝝛": {
+      "expected": "sans serif vetgedruk Zeta"
+    },
+    "𝝜": {
+      "expected": "sans serif vetgedruk Eta"
+    },
+    "𝝝": {
+      "expected": "sans serif vetgedruk Theta"
+    },
+    "𝝞": {
+      "expected": "sans serif vetgedruk Iota"
+    },
+    "𝝟": {
+      "expected": "sans serif vetgedruk Kappa"
+    },
+    "𝝠": {
+      "expected": "sans serif vetgedruk Lambda"
+    },
+    "𝝡": {
+      "expected": "sans serif vetgedruk My"
+    },
+    "𝝢": {
+      "expected": "sans serif vetgedruk Ny"
+    },
+    "𝝣": {
+      "expected": "sans serif vetgedruk Xi"
+    },
+    "𝝤": {
+      "expected": "sans serif vetgedruk Omikron"
+    },
+    "𝝥": {
+      "expected": "sans serif vetgedruk Pi"
+    },
+    "𝝦": {
+      "expected": "sans serif vetgedruk Rho"
+    },
+    "𝝧": {
+      "expected": "sans serif vetgedruk Theta"
+    },
+    "𝝨": {
+      "expected": "sans serif vetgedruk Sigma"
+    },
+    "𝝩": {
+      "expected": "sans serif vetgedruk Tau"
+    },
+    "𝝪": {
+      "expected": "sans serif vetgedruk Ypsilon"
+    },
+    "𝝫": {
+      "expected": "sans serif vetgedruk Phi"
+    },
+    "𝝬": {
+      "expected": "sans serif vetgedruk Chi"
+    },
+    "𝝭": {
+      "expected": "sans serif vetgedruk Psi"
+    },
+    "𝝮": {
+      "expected": "sans serif vetgedruk Omega"
+    },
+    "𝝯": {
+      "expected": "sans serif vetgedruk nabla"
+    },
+    "𝝰": {
+      "expected": "sans serif vetgedruk alfa"
+    },
+    "𝝱": {
+      "expected": "sans serif vetgedruk beta"
+    },
+    "𝝲": {
+      "expected": "sans serif vetgedruk gamma"
+    },
+    "𝝳": {
+      "expected": "sans serif vetgedruk delta"
+    },
+    "𝝴": {
+      "expected": "sans serif vetgedruk epsilon"
+    },
+    "𝝵": {
+      "expected": "sans serif vetgedruk zeta"
+    },
+    "𝝶": {
+      "expected": "sans serif vetgedruk eta"
+    },
+    "𝝷": {
+      "expected": "sans serif vetgedruk theta"
+    },
+    "𝝸": {
+      "expected": "sans serif vetgedruk iota"
+    },
+    "𝝹": {
+      "expected": "sans serif vetgedruk kappa"
+    },
+    "𝝺": {
+      "expected": "sans serif vetgedruk lambda"
+    },
+    "𝝻": {
+      "expected": "sans serif vetgedruk my"
+    },
+    "𝝼": {
+      "expected": "sans serif vetgedruk ny"
+    },
+    "𝝽": {
+      "expected": "sans serif vetgedruk xi"
+    },
+    "𝝾": {
+      "expected": "sans serif vetgedruk omikron"
+    },
+    "𝝿": {
+      "expected": "sans serif vetgedruk pi"
+    },
+    "𝞀": {
+      "expected": "sans serif vetgedruk rho"
+    },
+    "𝞁": {
+      "expected": "sans serif vetgedruk abschließendes sigma"
+    },
+    "𝞂": {
+      "expected": "sans serif vetgedruk sigma"
+    },
+    "𝞃": {
+      "expected": "sans serif vetgedruk tau"
+    },
+    "𝞄": {
+      "expected": "sans serif vetgedruk ypsilon"
+    },
+    "𝞅": {
+      "expected": "sans serif vetgedruk phi"
+    },
+    "𝞆": {
+      "expected": "sans serif vetgedruk chi"
+    },
+    "𝞇": {
+      "expected": "sans serif vetgedruk psi"
+    },
+    "𝞈": {
+      "expected": "sans serif vetgedruk omega"
+    },
+    "𝞉": {
+      "expected": "sans serif vetgedruk partiële afgeleide"
+    },
+    "𝞊": {
+      "expected": "sans serif vetgedruk epsilon"
+    },
+    "𝞋": {
+      "expected": "sans serif vetgedruk theta"
+    },
+    "𝞌": {
+      "expected": "sans serif vetgedruk kappa"
+    },
+    "𝞍": {
+      "expected": "sans serif vetgedruk phi"
+    },
+    "𝞎": {
+      "expected": "sans serif vetgedruk rho"
+    },
+    "𝞏": {
+      "expected": "sans serif vetgedruk pi"
+    },
+    "𝟬": {
+      "expected": "sans serif vetgedruk 0"
+    },
+    "𝟭": {
+      "expected": "sans serif vetgedruk 1"
+    },
+    "𝟮": {
+      "expected": "sans serif vetgedruk 2"
+    },
+    "𝟯": {
+      "expected": "sans serif vetgedruk 3"
+    },
+    "𝟰": {
+      "expected": "sans serif vetgedruk 4"
+    },
+    "𝟱": {
+      "expected": "sans serif vetgedruk 5"
+    },
+    "𝟲": {
+      "expected": "sans serif vetgedruk 6"
+    },
+    "𝟳": {
+      "expected": "sans serif vetgedruk 7"
+    },
+    "𝟴": {
+      "expected": "sans serif vetgedruk 8"
+    },
+    "𝟵": {
+      "expected": "sans serif vetgedruk 9"
+    },
+    "𝘼": {
+      "expected": "sans serif vetgedruk kursief A"
+    },
+    "𝘽": {
+      "expected": "sans serif vetgedruk kursief B"
+    },
+    "𝘾": {
+      "expected": "sans serif vetgedruk kursief C"
+    },
+    "𝘿": {
+      "expected": "sans serif vetgedruk kursief D"
+    },
+    "𝙀": {
+      "expected": "sans serif vetgedruk kursief E"
+    },
+    "𝙁": {
+      "expected": "sans serif vetgedruk kursief F"
+    },
+    "𝙂": {
+      "expected": "sans serif vetgedruk kursief G"
+    },
+    "𝙃": {
+      "expected": "sans serif vetgedruk kursief H"
+    },
+    "𝙄": {
+      "expected": "sans serif vetgedruk kursief I"
+    },
+    "𝙅": {
+      "expected": "sans serif vetgedruk kursief J"
+    },
+    "𝙆": {
+      "expected": "sans serif vetgedruk kursief K"
+    },
+    "𝙇": {
+      "expected": "sans serif vetgedruk kursief L"
+    },
+    "𝙈": {
+      "expected": "sans serif vetgedruk kursief M"
+    },
+    "𝙉": {
+      "expected": "sans serif vetgedruk kursief N"
+    },
+    "𝙊": {
+      "expected": "sans serif vetgedruk kursief O"
+    },
+    "𝙋": {
+      "expected": "sans serif vetgedruk kursief P"
+    },
+    "𝙌": {
+      "expected": "sans serif vetgedruk kursief Q"
+    },
+    "𝙍": {
+      "expected": "sans serif vetgedruk kursief R"
+    },
+    "𝙎": {
+      "expected": "sans serif vetgedruk kursief S"
+    },
+    "𝙏": {
+      "expected": "sans serif vetgedruk kursief T"
+    },
+    "𝙐": {
+      "expected": "sans serif vetgedruk kursief U"
+    },
+    "𝙑": {
+      "expected": "sans serif vetgedruk kursief V"
+    },
+    "𝙒": {
+      "expected": "sans serif vetgedruk kursief W"
+    },
+    "𝙓": {
+      "expected": "sans serif vetgedruk kursief X"
+    },
+    "𝙔": {
+      "expected": "sans serif vetgedruk kursief Y"
+    },
+    "𝙕": {
+      "expected": "sans serif vetgedruk kursief Z"
+    },
+    "𝙖": {
+      "expected": "sans serif vetgedruk kursief a"
+    },
+    "𝙗": {
+      "expected": "sans serif vetgedruk kursief b"
+    },
+    "𝙘": {
+      "expected": "sans serif vetgedruk kursief c"
+    },
+    "𝙙": {
+      "expected": "sans serif vetgedruk kursief d"
+    },
+    "𝙚": {
+      "expected": "sans serif vetgedruk kursief e"
+    },
+    "𝙛": {
+      "expected": "sans serif vetgedruk kursief f"
+    },
+    "𝙜": {
+      "expected": "sans serif vetgedruk kursief g"
+    },
+    "𝙝": {
+      "expected": "sans serif vetgedruk kursief h"
+    },
+    "𝙞": {
+      "expected": "sans serif vetgedruk kursief i"
+    },
+    "𝙟": {
+      "expected": "sans serif vetgedruk kursief j"
+    },
+    "𝙠": {
+      "expected": "sans serif vetgedruk kursief k"
+    },
+    "𝙡": {
+      "expected": "sans serif vetgedruk kursief l"
+    },
+    "𝙢": {
+      "expected": "sans serif vetgedruk kursief m"
+    },
+    "𝙣": {
+      "expected": "sans serif vetgedruk kursief n"
+    },
+    "𝙤": {
+      "expected": "sans serif vetgedruk kursief o"
+    },
+    "𝙥": {
+      "expected": "sans serif vetgedruk kursief p"
+    },
+    "𝙦": {
+      "expected": "sans serif vetgedruk kursief q"
+    },
+    "𝙧": {
+      "expected": "sans serif vetgedruk kursief r"
+    },
+    "𝙨": {
+      "expected": "sans serif vetgedruk kursief s"
+    },
+    "𝙩": {
+      "expected": "sans serif vetgedruk kursief t"
+    },
+    "𝙪": {
+      "expected": "sans serif vetgedruk kursief u"
+    },
+    "𝙫": {
+      "expected": "sans serif vetgedruk kursief v"
+    },
+    "𝙬": {
+      "expected": "sans serif vetgedruk kursief w"
+    },
+    "𝙭": {
+      "expected": "sans serif vetgedruk kursief x"
+    },
+    "𝙮": {
+      "expected": "sans serif vetgedruk kursief y"
+    },
+    "𝙯": {
+      "expected": "sans serif vetgedruk kursief z"
+    },
+    "𝞐": {
+      "expected": "sans serif vetgedruk kursief Alfa"
+    },
+    "𝞑": {
+      "expected": "sans serif vetgedruk kursief Beta"
+    },
+    "𝞒": {
+      "expected": "sans serif vetgedruk kursief Gamma"
+    },
+    "𝞓": {
+      "expected": "sans serif vetgedruk kursief Delta"
+    },
+    "𝞔": {
+      "expected": "sans serif vetgedruk kursief Epsilon"
+    },
+    "𝞕": {
+      "expected": "sans serif vetgedruk kursief Zeta"
+    },
+    "𝞖": {
+      "expected": "sans serif vetgedruk kursief Eta"
+    },
+    "𝞗": {
+      "expected": "sans serif vetgedruk kursief Theta"
+    },
+    "𝞘": {
+      "expected": "sans serif vetgedruk kursief Iota"
+    },
+    "𝞙": {
+      "expected": "sans serif vetgedruk kursief Kappa"
+    },
+    "𝞚": {
+      "expected": "sans serif vetgedruk kursief Lambda"
+    },
+    "𝞛": {
+      "expected": "sans serif vetgedruk kursief My"
+    },
+    "𝞜": {
+      "expected": "sans serif vetgedruk kursief Ny"
+    },
+    "𝞝": {
+      "expected": "sans serif vetgedruk kursief Xi"
+    },
+    "𝞞": {
+      "expected": "sans serif vetgedruk kursief Omikron"
+    },
+    "𝞟": {
+      "expected": "sans serif vetgedruk kursief Pi"
+    },
+    "𝞠": {
+      "expected": "sans serif vetgedruk kursief Rho"
+    },
+    "𝞡": {
+      "expected": "sans serif vetgedruk kursief Theta"
+    },
+    "𝞢": {
+      "expected": "sans serif vetgedruk kursief Sigma"
+    },
+    "𝞣": {
+      "expected": "sans serif vetgedruk kursief Tau"
+    },
+    "𝞤": {
+      "expected": "sans serif vetgedruk kursief Ypsilon"
+    },
+    "𝞥": {
+      "expected": "sans serif vetgedruk kursief Phi"
+    },
+    "𝞦": {
+      "expected": "sans serif vetgedruk kursief Chi"
+    },
+    "𝞧": {
+      "expected": "sans serif vetgedruk kursief Psi"
+    },
+    "𝞨": {
+      "expected": "sans serif vetgedruk kursief Omega"
+    },
+    "𝞩": {
+      "expected": "sans serif vetgedruk kursief nabla"
+    },
+    "𝞪": {
+      "expected": "sans serif vetgedruk kursief alfa"
+    },
+    "𝞫": {
+      "expected": "sans serif vetgedruk kursief beta"
+    },
+    "𝞬": {
+      "expected": "sans serif vetgedruk kursief gamma"
+    },
+    "𝞭": {
+      "expected": "sans serif vetgedruk kursief delta"
+    },
+    "𝞮": {
+      "expected": "sans serif vetgedruk kursief epsilon"
+    },
+    "𝞯": {
+      "expected": "sans serif vetgedruk kursief zeta"
+    },
+    "𝞰": {
+      "expected": "sans serif vetgedruk kursief eta"
+    },
+    "𝞱": {
+      "expected": "sans serif vetgedruk kursief theta"
+    },
+    "𝞲": {
+      "expected": "sans serif vetgedruk kursief iota"
+    },
+    "𝞳": {
+      "expected": "sans serif vetgedruk kursief kappa"
+    },
+    "𝞴": {
+      "expected": "sans serif vetgedruk kursief lambda"
+    },
+    "𝞵": {
+      "expected": "sans serif vetgedruk kursief my"
+    },
+    "𝞶": {
+      "expected": "sans serif vetgedruk kursief ny"
+    },
+    "𝞷": {
+      "expected": "sans serif vetgedruk kursief xi"
+    },
+    "𝞸": {
+      "expected": "sans serif vetgedruk kursief omikron"
+    },
+    "𝞹": {
+      "expected": "sans serif vetgedruk kursief pi"
+    },
+    "𝞺": {
+      "expected": "sans serif vetgedruk kursief rho"
+    },
+    "𝞻": {
+      "expected": "sans serif vetgedruk kursief abschließendes sigma"
+    },
+    "𝞼": {
+      "expected": "sans serif vetgedruk kursief sigma"
+    },
+    "𝞽": {
+      "expected": "sans serif vetgedruk kursief tau"
+    },
+    "𝞾": {
+      "expected": "sans serif vetgedruk kursief ypsilon"
+    },
+    "𝞿": {
+      "expected": "sans serif vetgedruk kursief phi"
+    },
+    "𝟀": {
+      "expected": "sans serif vetgedruk kursief chi"
+    },
+    "𝟁": {
+      "expected": "sans serif vetgedruk kursief psi"
+    },
+    "𝟂": {
+      "expected": "sans serif vetgedruk kursief omega"
+    },
+    "𝟃": {
+      "expected": "sans serif vetgedruk kursief partiële afgeleide"
+    },
+    "𝟄": {
+      "expected": "sans serif vetgedruk kursief epsilon"
+    },
+    "𝟅": {
+      "expected": "sans serif vetgedruk kursief theta"
+    },
+    "𝟆": {
+      "expected": "sans serif vetgedruk kursief kappa"
+    },
+    "𝟇": {
+      "expected": "sans serif vetgedruk kursief phi"
+    },
+    "𝟈": {
+      "expected": "sans serif vetgedruk kursief rho"
+    },
+    "𝟉": {
+      "expected": "sans serif vetgedruk kursief pi"
+    },
+    "⁰": {
+      "expected": "super 0"
+    },
+    "¹": {
+      "expected": "super 1"
+    },
+    "²": {
+      "expected": "super 2"
+    },
+    "³": {
+      "expected": "super 3"
+    },
+    "⁴": {
+      "expected": "super 4"
+    },
+    "⁵": {
+      "expected": "super 5"
+    },
+    "⁶": {
+      "expected": "super 6"
+    },
+    "⁷": {
+      "expected": "super 7"
+    },
+    "⁸": {
+      "expected": "super 8"
+    },
+    "⁹": {
+      "expected": "super 9"
+    },
+    "₀": {
+      "expected": "sub 0"
+    },
+    "₁": {
+      "expected": "sub 1"
+    },
+    "₂": {
+      "expected": "sub 2"
+    },
+    "₃": {
+      "expected": "sub 3"
+    },
+    "₄": {
+      "expected": "sub 4"
+    },
+    "₅": {
+      "expected": "sub 5"
+    },
+    "₆": {
+      "expected": "sub 6"
+    },
+    "₇": {
+      "expected": "sub 7"
+    },
+    "₈": {
+      "expected": "sub 8"
+    },
+    "₉": {
+      "expected": "sub 9"
+    },
+    "Ⓐ": {
+      "expected": "omkringde groot A"
+    },
+    "Ⓑ": {
+      "expected": "omkringde groot B"
+    },
+    "Ⓒ": {
+      "expected": "omkringde groot C"
+    },
+    "Ⓓ": {
+      "expected": "omkringde groot D"
+    },
+    "Ⓔ": {
+      "expected": "omkringde groot E"
+    },
+    "Ⓕ": {
+      "expected": "omkringde groot F"
+    },
+    "Ⓖ": {
+      "expected": "omkringde groot G"
+    },
+    "Ⓗ": {
+      "expected": "omkringde groot H"
+    },
+    "Ⓘ": {
+      "expected": "omkringde groot I"
+    },
+    "Ⓙ": {
+      "expected": "omkringde groot J"
+    },
+    "Ⓚ": {
+      "expected": "omkringde groot K"
+    },
+    "Ⓛ": {
+      "expected": "omkringde groot L"
+    },
+    "Ⓜ": {
+      "expected": "omkringde groot M"
+    },
+    "Ⓝ": {
+      "expected": "omkringde groot N"
+    },
+    "Ⓞ": {
+      "expected": "omkringde groot O"
+    },
+    "Ⓟ": {
+      "expected": "omkringde groot P"
+    },
+    "Ⓠ": {
+      "expected": "omkringde groot Q"
+    },
+    "Ⓡ": {
+      "expected": "omkringde groot R"
+    },
+    "Ⓢ": {
+      "expected": "omkringde groot S"
+    },
+    "Ⓣ": {
+      "expected": "omkringde groot T"
+    },
+    "Ⓤ": {
+      "expected": "omkringde groot U"
+    },
+    "Ⓥ": {
+      "expected": "omkringde groot V"
+    },
+    "Ⓦ": {
+      "expected": "omkringde groot W"
+    },
+    "Ⓧ": {
+      "expected": "omkringde groot X"
+    },
+    "Ⓨ": {
+      "expected": "omkringde groot Y"
+    },
+    "Ⓩ": {
+      "expected": "omkringde groot Z"
+    },
+    "ⓐ": {
+      "expected": "omkringde a"
+    },
+    "ⓑ": {
+      "expected": "omkringde b"
+    },
+    "ⓒ": {
+      "expected": "omkringde c"
+    },
+    "ⓓ": {
+      "expected": "omkringde d"
+    },
+    "ⓔ": {
+      "expected": "omkringde e"
+    },
+    "ⓕ": {
+      "expected": "omkringde f"
+    },
+    "ⓖ": {
+      "expected": "omkringde g"
+    },
+    "ⓗ": {
+      "expected": "omkringde h"
+    },
+    "ⓘ": {
+      "expected": "omkringde i"
+    },
+    "ⓙ": {
+      "expected": "omkringde j"
+    },
+    "ⓚ": {
+      "expected": "omkringde k"
+    },
+    "ⓛ": {
+      "expected": "omkringde l"
+    },
+    "ⓜ": {
+      "expected": "omkringde m"
+    },
+    "ⓝ": {
+      "expected": "omkringde n"
+    },
+    "ⓞ": {
+      "expected": "omkringde o"
+    },
+    "ⓟ": {
+      "expected": "omkringde p"
+    },
+    "ⓠ": {
+      "expected": "omkringde q"
+    },
+    "ⓡ": {
+      "expected": "omkringde r"
+    },
+    "ⓢ": {
+      "expected": "omkringde s"
+    },
+    "ⓣ": {
+      "expected": "omkringde t"
+    },
+    "ⓤ": {
+      "expected": "omkringde u"
+    },
+    "ⓥ": {
+      "expected": "omkringde v"
+    },
+    "ⓦ": {
+      "expected": "omkringde w"
+    },
+    "ⓧ": {
+      "expected": "omkringde x"
+    },
+    "ⓨ": {
+      "expected": "omkringde y"
+    },
+    "ⓩ": {
+      "expected": "omkringde z"
+    },
+    "⓪": {
+      "expected": "omkringde 0"
+    },
+    "①": {
+      "expected": "omkringde 1"
+    },
+    "②": {
+      "expected": "omkringde 2"
+    },
+    "③": {
+      "expected": "omkringde 3"
+    },
+    "④": {
+      "expected": "omkringde 4"
+    },
+    "⑤": {
+      "expected": "omkringde 5"
+    },
+    "⑥": {
+      "expected": "omkringde 6"
+    },
+    "⑦": {
+      "expected": "omkringde 7"
+    },
+    "⑧": {
+      "expected": "omkringde 8"
+    },
+    "⑨": {
+      "expected": "omkringde 9"
+    },
+    "⑩": {
+      "expected": "omkringde 10"
+    },
+    "⑪": {
+      "expected": "omkringde 11"
+    },
+    "⑫": {
+      "expected": "omkringde 12"
+    },
+    "⑬": {
+      "expected": "omkringde 13"
+    },
+    "⑭": {
+      "expected": "omkringde 14"
+    },
+    "⑮": {
+      "expected": "omkringde 15"
+    },
+    "⑯": {
+      "expected": "omkringde 16"
+    },
+    "⑰": {
+      "expected": "omkringde 17"
+    },
+    "⑱": {
+      "expected": "omkringde 18"
+    },
+    "⑲": {
+      "expected": "omkringde 19"
+    },
+    "⑳": {
+      "expected": "omkringde 20"
+    },
+    "㉑": {
+      "expected": "omkringde 21"
+    },
+    "㉒": {
+      "expected": "omkringde 22"
+    },
+    "㉓": {
+      "expected": "omkringde 23"
+    },
+    "㉔": {
+      "expected": "omkringde 24"
+    },
+    "㉕": {
+      "expected": "omkringde 25"
+    },
+    "㉖": {
+      "expected": "omkringde 26"
+    },
+    "㉗": {
+      "expected": "omkringde 27"
+    },
+    "㉘": {
+      "expected": "omkringde 28"
+    },
+    "㉙": {
+      "expected": "omkringde 29"
+    },
+    "㉚": {
+      "expected": "omkringde 30"
+    },
+    "㉛": {
+      "expected": "omkringde 31"
+    },
+    "㉜": {
+      "expected": "omkringde 32"
+    },
+    "㉝": {
+      "expected": "omkringde 33"
+    },
+    "㉞": {
+      "expected": "omkringde 34"
+    },
+    "㉟": {
+      "expected": "omkringde 35"
+    },
+    "㊱": {
+      "expected": "omkringde 36"
+    },
+    "㊲": {
+      "expected": "omkringde 37"
+    },
+    "㊳": {
+      "expected": "omkringde 38"
+    },
+    "㊴": {
+      "expected": "omkringde 39"
+    },
+    "㊵": {
+      "expected": "omkringde 40"
+    },
+    "㊶": {
+      "expected": "omkringde 41"
+    },
+    "㊷": {
+      "expected": "omkringde 42"
+    },
+    "㊸": {
+      "expected": "omkringde 43"
+    },
+    "㊹": {
+      "expected": "omkringde 44"
+    },
+    "㊺": {
+      "expected": "omkringde 45"
+    },
+    "㊻": {
+      "expected": "omkringde 46"
+    },
+    "㊼": {
+      "expected": "omkringde 47"
+    },
+    "㊽": {
+      "expected": "omkringde 48"
+    },
+    "㊾": {
+      "expected": "omkringde 49"
+    },
+    "㊿": {
+      "expected": "omkringde 50"
+    },
+    "🄐": {
+      "expected": "in hakkies groot A"
+    },
+    "🄑": {
+      "expected": "in hakkies groot B"
+    },
+    "🄒": {
+      "expected": "in hakkies groot C"
+    },
+    "🄓": {
+      "expected": "in hakkies groot D"
+    },
+    "🄔": {
+      "expected": "in hakkies groot E"
+    },
+    "🄕": {
+      "expected": "in hakkies groot F"
+    },
+    "🄖": {
+      "expected": "in hakkies groot G"
+    },
+    "🄗": {
+      "expected": "in hakkies groot H"
+    },
+    "🄘": {
+      "expected": "in hakkies groot I"
+    },
+    "🄙": {
+      "expected": "in hakkies groot J"
+    },
+    "🄚": {
+      "expected": "in hakkies groot K"
+    },
+    "🄛": {
+      "expected": "in hakkies groot L"
+    },
+    "🄜": {
+      "expected": "in hakkies groot M"
+    },
+    "🄝": {
+      "expected": "in hakkies groot N"
+    },
+    "🄞": {
+      "expected": "in hakkies groot O"
+    },
+    "🄟": {
+      "expected": "in hakkies groot P"
+    },
+    "🄠": {
+      "expected": "in hakkies groot Q"
+    },
+    "🄡": {
+      "expected": "in hakkies groot R"
+    },
+    "🄢": {
+      "expected": "in hakkies groot S"
+    },
+    "🄣": {
+      "expected": "in hakkies groot T"
+    },
+    "🄤": {
+      "expected": "in hakkies groot U"
+    },
+    "🄥": {
+      "expected": "in hakkies groot V"
+    },
+    "🄦": {
+      "expected": "in hakkies groot W"
+    },
+    "🄧": {
+      "expected": "in hakkies groot X"
+    },
+    "🄨": {
+      "expected": "in hakkies groot Y"
+    },
+    "🄩": {
+      "expected": "in hakkies groot Z"
+    },
+    "⒜": {
+      "expected": "in hakkies a"
+    },
+    "⒝": {
+      "expected": "in hakkies b"
+    },
+    "⒞": {
+      "expected": "in hakkies c"
+    },
+    "⒟": {
+      "expected": "in hakkies d"
+    },
+    "⒠": {
+      "expected": "in hakkies e"
+    },
+    "⒡": {
+      "expected": "in hakkies f"
+    },
+    "⒢": {
+      "expected": "in hakkies g"
+    },
+    "⒣": {
+      "expected": "in hakkies h"
+    },
+    "⒤": {
+      "expected": "in hakkies i"
+    },
+    "⒥": {
+      "expected": "in hakkies j"
+    },
+    "⒦": {
+      "expected": "in hakkies k"
+    },
+    "⒧": {
+      "expected": "in hakkies l"
+    },
+    "⒨": {
+      "expected": "in hakkies m"
+    },
+    "⒩": {
+      "expected": "in hakkies n"
+    },
+    "⒪": {
+      "expected": "in hakkies o"
+    },
+    "⒫": {
+      "expected": "in hakkies p"
+    },
+    "⒬": {
+      "expected": "in hakkies q"
+    },
+    "⒭": {
+      "expected": "in hakkies r"
+    },
+    "⒮": {
+      "expected": "in hakkies s"
+    },
+    "⒯": {
+      "expected": "in hakkies t"
+    },
+    "⒰": {
+      "expected": "in hakkies u"
+    },
+    "⒱": {
+      "expected": "in hakkies v"
+    },
+    "⒲": {
+      "expected": "in hakkies w"
+    },
+    "⒳": {
+      "expected": "in hakkies x"
+    },
+    "⒴": {
+      "expected": "in hakkies y"
+    },
+    "⒵": {
+      "expected": "in hakkies z"
+    },
+    "⑴": {
+      "expected": "in hakkies 1"
+    },
+    "⑵": {
+      "expected": "in hakkies 2"
+    },
+    "⑶": {
+      "expected": "in hakkies 3"
+    },
+    "⑷": {
+      "expected": "in hakkies 4"
+    },
+    "⑸": {
+      "expected": "in hakkies 5"
+    },
+    "⑹": {
+      "expected": "in hakkies 6"
+    },
+    "⑺": {
+      "expected": "in hakkies 7"
+    },
+    "⑻": {
+      "expected": "in hakkies 8"
+    },
+    "⑼": {
+      "expected": "in hakkies 9"
+    },
+    "⑽": {
+      "expected": "in hakkies 10"
+    },
+    "⑾": {
+      "expected": "in hakkies 11"
+    },
+    "⑿": {
+      "expected": "in hakkies 12"
+    },
+    "⒀": {
+      "expected": "in hakkies 13"
+    },
+    "⒁": {
+      "expected": "in hakkies 14"
+    },
+    "⒂": {
+      "expected": "in hakkies 15"
+    },
+    "⒃": {
+      "expected": "in hakkies 16"
+    },
+    "⒄": {
+      "expected": "in hakkies 17"
+    },
+    "⒅": {
+      "expected": "in hakkies 18"
+    },
+    "⒆": {
+      "expected": "in hakkies 19"
+    },
+    "⒇": {
+      "expected": "in hakkies 20"
+    },
+    "🄀": {
+      "expected": "0 punt"
+    },
+    "⒈": {
+      "expected": "1 punt"
+    },
+    "⒉": {
+      "expected": "2 punt"
+    },
+    "⒊": {
+      "expected": "3 punt"
+    },
+    "⒋": {
+      "expected": "4 punt"
+    },
+    "⒌": {
+      "expected": "5 punt"
+    },
+    "⒍": {
+      "expected": "6 punt"
+    },
+    "⒎": {
+      "expected": "7 punt"
+    },
+    "⒏": {
+      "expected": "8 punt"
+    },
+    "⒐": {
+      "expected": "9 punt"
+    },
+    "⒑": {
+      "expected": "10 punt"
+    },
+    "⒒": {
+      "expected": "11 punt"
+    },
+    "⒓": {
+      "expected": "12 punt"
+    },
+    "⒔": {
+      "expected": "13 punt"
+    },
+    "⒕": {
+      "expected": "14 punt"
+    },
+    "⒖": {
+      "expected": "15 punt"
+    },
+    "⒗": {
+      "expected": "16 punt"
+    },
+    "⒘": {
+      "expected": "17 punt"
+    },
+    "⒙": {
+      "expected": "18 punt"
+    },
+    "⒚": {
+      "expected": "19 punt"
+    },
+    "⒛": {
+      "expected": "20 punt"
+    },
+    "🅐": {
+      "expected": "swart omkringde groot A"
+    },
+    "🅑": {
+      "expected": "swart omkringde groot B"
+    },
+    "🅒": {
+      "expected": "swart omkringde groot C"
+    },
+    "🅓": {
+      "expected": "swart omkringde groot D"
+    },
+    "🅔": {
+      "expected": "swart omkringde groot E"
+    },
+    "🅕": {
+      "expected": "swart omkringde groot F"
+    },
+    "🅖": {
+      "expected": "swart omkringde groot G"
+    },
+    "🅗": {
+      "expected": "swart omkringde groot H"
+    },
+    "🅘": {
+      "expected": "swart omkringde groot I"
+    },
+    "🅙": {
+      "expected": "swart omkringde groot J"
+    },
+    "🅚": {
+      "expected": "swart omkringde groot K"
+    },
+    "🅛": {
+      "expected": "swart omkringde groot L"
+    },
+    "🅜": {
+      "expected": "swart omkringde groot M"
+    },
+    "🅝": {
+      "expected": "swart omkringde groot N"
+    },
+    "🅞": {
+      "expected": "swart omkringde groot O"
+    },
+    "🅟": {
+      "expected": "swart omkringde groot P"
+    },
+    "🅠": {
+      "expected": "swart omkringde groot Q"
+    },
+    "🅡": {
+      "expected": "swart omkringde groot R"
+    },
+    "🅢": {
+      "expected": "swart omkringde groot S"
+    },
+    "🅣": {
+      "expected": "swart omkringde groot T"
+    },
+    "🅤": {
+      "expected": "swart omkringde groot U"
+    },
+    "🅥": {
+      "expected": "swart omkringde groot V"
+    },
+    "🅦": {
+      "expected": "swart omkringde groot W"
+    },
+    "🅧": {
+      "expected": "swart omkringde groot X"
+    },
+    "🅨": {
+      "expected": "swart omkringde groot Y"
+    },
+    "🅩": {
+      "expected": "swart omkringde groot Z"
+    },
+    "⓿": {
+      "expected": "swart omkringde 0"
+    },
+    "❶": {
+      "expected": "swart omkringde 1"
+    },
+    "❷": {
+      "expected": "swart omkringde 2"
+    },
+    "❸": {
+      "expected": "swart omkringde 3"
+    },
+    "❹": {
+      "expected": "swart omkringde 4"
+    },
+    "❺": {
+      "expected": "swart omkringde 5"
+    },
+    "❻": {
+      "expected": "swart omkringde 6"
+    },
+    "❼": {
+      "expected": "swart omkringde 7"
+    },
+    "❽": {
+      "expected": "swart omkringde 8"
+    },
+    "❾": {
+      "expected": "swart omkringde 9"
+    },
+    "❿": {
+      "expected": "swart omkringde 10"
+    },
+    "⓫": {
+      "expected": "swart omkringde 11"
+    },
+    "⓬": {
+      "expected": "swart omkringde 12"
+    },
+    "⓭": {
+      "expected": "swart omkringde 13"
+    },
+    "⓮": {
+      "expected": "swart omkringde 14"
+    },
+    "⓯": {
+      "expected": "swart omkringde 15"
+    },
+    "⓰": {
+      "expected": "swart omkringde 16"
+    },
+    "⓱": {
+      "expected": "swart omkringde 17"
+    },
+    "⓲": {
+      "expected": "swart omkringde 18"
+    },
+    "⓳": {
+      "expected": "swart omkringde 19"
+    },
+    "⓴": {
+      "expected": "swart omkringde 20"
+    },
+    "⓵": {
+      "expected": "dubbel omkringde 1"
+    },
+    "⓶": {
+      "expected": "dubbel omkringde 2"
+    },
+    "⓷": {
+      "expected": "dubbel omkringde 3"
+    },
+    "⓸": {
+      "expected": "dubbel omkringde 4"
+    },
+    "⓹": {
+      "expected": "dubbel omkringde 5"
+    },
+    "⓺": {
+      "expected": "dubbel omkringde 6"
+    },
+    "⓻": {
+      "expected": "dubbel omkringde 7"
+    },
+    "⓼": {
+      "expected": "dubbel omkringde 8"
+    },
+    "⓽": {
+      "expected": "dubbel omkringde 9"
+    },
+    "⓾": {
+      "expected": "dubbel omkringde 10"
+    },
+    "🄋": {
+      "expected": "omkringde sans serif 0"
+    },
+    "➀": {
+      "expected": "omkringde sans serif 1"
+    },
+    "➁": {
+      "expected": "omkringde sans serif 2"
+    },
+    "➂": {
+      "expected": "omkringde sans serif 3"
+    },
+    "➃": {
+      "expected": "omkringde sans serif 4"
+    },
+    "➄": {
+      "expected": "omkringde sans serif 5"
+    },
+    "➅": {
+      "expected": "omkringde sans serif 6"
+    },
+    "➆": {
+      "expected": "omkringde sans serif 7"
+    },
+    "➇": {
+      "expected": "omkringde sans serif 8"
+    },
+    "➈": {
+      "expected": "omkringde sans serif 9"
+    },
+    "➉": {
+      "expected": "omkringde sans serif 10"
+    },
+    "🄌": {
+      "expected": "swart omkringde sans serif 0"
+    },
+    "➊": {
+      "expected": "swart omkringde sans serif 1"
+    },
+    "➋": {
+      "expected": "swart omkringde sans serif 2"
+    },
+    "➌": {
+      "expected": "swart omkringde sans serif 3"
+    },
+    "➍": {
+      "expected": "swart omkringde sans serif 4"
+    },
+    "➎": {
+      "expected": "swart omkringde sans serif 5"
+    },
+    "➏": {
+      "expected": "swart omkringde sans serif 6"
+    },
+    "➐": {
+      "expected": "swart omkringde sans serif 7"
+    },
+    "➑": {
+      "expected": "swart omkringde sans serif 8"
+    },
+    "➒": {
+      "expected": "swart omkringde sans serif 9"
+    },
+    "➓": {
+      "expected": "swart omkringde sans serif 10"
+    },
+    "🄁": {
+      "expected": "0 komma"
+    },
+    "🄂": {
+      "expected": "1 komma"
+    },
+    "🄃": {
+      "expected": "2 komma"
+    },
+    "🄄": {
+      "expected": "3 komma"
+    },
+    "🄅": {
+      "expected": "4 komma"
+    },
+    "🄆": {
+      "expected": "5 komma"
+    },
+    "🄇": {
+      "expected": "6 komma"
+    },
+    "🄈": {
+      "expected": "7 komma"
+    },
+    "🄉": {
+      "expected": "8 komma"
+    },
+    "🄊": {
+      "expected": "9 komma"
+    },
+    "🄰": {
+      "expected": "vierkantige groot A"
+    },
+    "🄱": {
+      "expected": "vierkantige groot B"
+    },
+    "🄲": {
+      "expected": "vierkantige groot C"
+    },
+    "🄳": {
+      "expected": "vierkantige groot D"
+    },
+    "🄴": {
+      "expected": "vierkantige groot E"
+    },
+    "🄵": {
+      "expected": "vierkantige groot F"
+    },
+    "🄶": {
+      "expected": "vierkantige groot G"
+    },
+    "🄷": {
+      "expected": "vierkantige groot H"
+    },
+    "🄸": {
+      "expected": "vierkantige groot I"
+    },
+    "🄹": {
+      "expected": "vierkantige groot J"
+    },
+    "🄺": {
+      "expected": "vierkantige groot K"
+    },
+    "🄻": {
+      "expected": "vierkantige groot L"
+    },
+    "🄼": {
+      "expected": "vierkantige groot M"
+    },
+    "🄽": {
+      "expected": "vierkantige groot N"
+    },
+    "🄾": {
+      "expected": "vierkantige groot O"
+    },
+    "🄿": {
+      "expected": "vierkantige groot P"
+    },
+    "🅀": {
+      "expected": "vierkantige groot Q"
+    },
+    "🅁": {
+      "expected": "vierkantige groot R"
+    },
+    "🅂": {
+      "expected": "vierkantige groot S"
+    },
+    "🅃": {
+      "expected": "vierkantige groot T"
+    },
+    "🅄": {
+      "expected": "vierkantige groot U"
+    },
+    "🅅": {
+      "expected": "vierkantige groot V"
+    },
+    "🅆": {
+      "expected": "vierkantige groot W"
+    },
+    "🅇": {
+      "expected": "vierkantige groot X"
+    },
+    "🅈": {
+      "expected": "vierkantige groot Y"
+    },
+    "🅉": {
+      "expected": "vierkantige groot Z"
+    },
+    "🅰": {
+      "expected": "swart vierkantige groot A"
+    },
+    "🅱": {
+      "expected": "swart vierkantige groot B"
+    },
+    "🅲": {
+      "expected": "swart vierkantige groot C"
+    },
+    "🅳": {
+      "expected": "swart vierkantige groot D"
+    },
+    "🅴": {
+      "expected": "swart vierkantige groot E"
+    },
+    "🅵": {
+      "expected": "swart vierkantige groot F"
+    },
+    "🅶": {
+      "expected": "swart vierkantige groot G"
+    },
+    "🅷": {
+      "expected": "swart vierkantige groot H"
+    },
+    "🅸": {
+      "expected": "swart vierkantige groot I"
+    },
+    "🅹": {
+      "expected": "swart vierkantige groot J"
+    },
+    "🅺": {
+      "expected": "swart vierkantige groot K"
+    },
+    "🅻": {
+      "expected": "swart vierkantige groot L"
+    },
+    "🅼": {
+      "expected": "swart vierkantige groot M"
+    },
+    "🅽": {
+      "expected": "swart vierkantige groot N"
+    },
+    "🅾": {
+      "expected": "swart vierkantige groot O"
+    },
+    "🅿": {
+      "expected": "swart vierkantige groot P"
+    },
+    "🆀": {
+      "expected": "swart vierkantige groot Q"
+    },
+    "🆁": {
+      "expected": "swart vierkantige groot R"
+    },
+    "🆂": {
+      "expected": "swart vierkantige groot S"
+    },
+    "🆃": {
+      "expected": "swart vierkantige groot T"
+    },
+    "🆄": {
+      "expected": "swart vierkantige groot U"
+    },
+    "🆅": {
+      "expected": "swart vierkantige groot V"
+    },
+    "🆆": {
+      "expected": "swart vierkantige groot W"
+    },
+    "🆇": {
+      "expected": "swart vierkantige groot X"
+    },
+    "🆈": {
+      "expected": "swart vierkantige groot Y"
+    },
+    "🆉": {
+      "expected": "swart vierkantige groot Z"
+    }
+  }
+}

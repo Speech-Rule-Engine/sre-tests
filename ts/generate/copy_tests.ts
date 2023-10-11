@@ -26,7 +26,7 @@ import {
   TestUtil
 } from '../base/test_util.js';
 import { get as factoryget } from '../classes/test_factory.js';
-import { addMissing } from './fill_tests.js';
+import { addMissing, addActual } from './fill_tests.js';
 
 /**
  * Copies and adapts a single test file from one locale to another.
@@ -56,7 +56,7 @@ export async function copyTestLocale(
   tests.jsonTests['compare'] = true;
   tests.jsonTests.tests = {};
   TestUtil.saveJson(dst, tests.jsonTests);
-  return addMissing(dst);
+  return addActual(dst);
 }
 
 /**
@@ -325,10 +325,7 @@ export function copySemanticTest(base: string, fill: boolean = false, targetdir?
     tests: 'ALL'
   });
   if (fill) {
-    console.log(0);
-    console.log(path.join(targetdir, 'enrich_mathml', basename));
     addMissing(path.join(targetdir, 'enrich_mathml', basename));
-    console.log(path.join(targetdir, 'semantic_tree', basename));
     addMissing(path.join(targetdir, 'semantic_tree', basename));
   }
 }

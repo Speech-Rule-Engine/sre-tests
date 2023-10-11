@@ -78,6 +78,9 @@
     "README.md",
     "lib/"
   ],
+  "imports": {
+    "#mathjax/*": "mathjax-full/mjs/*"
+  },
   "main": "dist/sretests.js",
   "type": "module"
 }

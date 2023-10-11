@@ -114,6 +114,7 @@ export function addToFile(file: string, expected: JsonTests) {
   const oldTests = oldJson.tests as JsonTests;
   for (const key of Object.keys(expected)) {
     if (oldTests[key]) {
+      if (TestUtil.isComment(key)) continue;
       Object.assign(oldTests[key], expected[key]);
     } else {
       oldTests[key] = expected[key];
@@ -142,6 +143,19 @@ export async function addMissing(expected: string, dryrun = false) {
  */
 export async function addActual(expected: string, dryrun = false) {
   return add(expected, TestFlag.ALL, dryrun);
+}
+
+/**
+ * Generates all actual expected values for all tests and writes them unless the
+ * dryrun flag is set.
+ *
+ * @param expected List of file names of the expected files.
+ * @param dryrun Print to console instead to file.
+ */
+export async function addAll(expected: string[], dryrun = false) {
+  for (let expt of expected) {
+    await add(expt, TestFlag.ALL, dryrun);
+  }
 }
 
 /**

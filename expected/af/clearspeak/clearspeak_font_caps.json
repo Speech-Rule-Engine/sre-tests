@@ -1,0 +1,152 @@
+{
+  "_comment0_": " This work was sponsored by ETH Zurich",
+  "name": "AfrikaansClearspeakFontCaps",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_font_caps.json",
+  "information": "Afrikaans Clearspeak Font tests with Caps preference.",
+  "domain": "clearspeak",
+  "locale": "af",
+  "active": "ClearspeakAfrikaansFont",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "LatinMathfontsUpperCaps_0": {
+      "expected": "groot A"
+    },
+    "LatinMathfontsUpperCaps_1": {
+      "expected": "groot A"
+    },
+    "LatinMathfontsUpperCaps_2": {
+      "expected": "vetgedruk groot A"
+    },
+    "LatinMathfontsUpperCaps_3": {
+      "expected": "groot A"
+    },
+    "LatinMathfontsUpperCaps_4": {
+      "expected": "vetgedruk kursief groot A"
+    },
+    "LatinMathfontsUpperCaps_5": {
+      "expected": "skrif groot A"
+    },
+    "LatinMathfontsUpperCaps_6": {
+      "expected": "vetgedruk skrif groot A"
+    },
+    "LatinMathfontsUpperCaps_7": {
+      "expected": "fraktur groot A"
+    },
+    "LatinMathfontsUpperCaps_8": {
+      "expected": "dubbelgeslaan groot A"
+    },
+    "LatinMathfontsUpperCaps_9": {
+      "expected": "vetgedruk fraktur groot A"
+    },
+    "LatinMathfontsUpperCaps_10": {
+      "expected": "sans serif groot A"
+    },
+    "LatinMathfontsUpperCaps_11": {
+      "expected": "sans serif vetgedruk groot A"
+    },
+    "LatinMathfontsUpperCaps_12": {
+      "expected": "sans serif kursief groot A"
+    },
+    "LatinMathfontsUpperCaps_13": {
+      "expected": "sans serif vetgedruk kursief groot A"
+    },
+    "LatinMathfontsUpperCaps_14": {
+      "expected": "monospasie groot A"
+    },
+    "GreekMathfontsUpperCaps_0": {
+      "expected": "groot Alfa"
+    },
+    "GreekMathfontsUpperCaps_1": {
+      "expected": "vetgedruk groot Alfa"
+    },
+    "GreekMathfontsUpperCaps_2": {
+      "expected": "groot Alfa"
+    },
+    "GreekMathfontsUpperCaps_3": {
+      "expected": "vetgedruk kursief groot Alfa"
+    },
+    "GreekMathfontsUpperCaps_4": {
+      "expected": "sans serif vetgedruk groot Alfa"
+    },
+    "GreekMathfontsUpperCaps_5": {
+      "expected": "sans serif vetgedruk kursief groot Alfa"
+    },
+    "LatinMathvariantUpperCaps_0": {
+      "expected": "normaal groot A"
+    },
+    "LatinMathvariantUpperCaps_1": {
+      "expected": "vetgedruk groot A"
+    },
+    "LatinMathvariantUpperCaps_2": {
+      "expected": "groot A"
+    },
+    "LatinMathvariantUpperCaps_3": {
+      "expected": "vetgedruk kursief groot A"
+    },
+    "LatinMathvariantUpperCaps_4": {
+      "expected": "skrif groot A"
+    },
+    "LatinMathvariantUpperCaps_5": {
+      "expected": "vetgedruk skrif groot A"
+    },
+    "LatinMathvariantUpperCaps_6": {
+      "expected": "fraktur groot A"
+    },
+    "LatinMathvariantUpperCaps_7": {
+      "expected": "dubbelgeslaan groot A"
+    },
+    "LatinMathvariantUpperCaps_8": {
+      "expected": "vetgedruk fraktur groot A"
+    },
+    "LatinMathvariantUpperCaps_9": {
+      "expected": "sans serif groot A"
+    },
+    "LatinMathvariantUpperCaps_10": {
+      "expected": "sans serif vetgedruk groot A"
+    },
+    "LatinMathvariantUpperCaps_11": {
+      "expected": "sans serif kursief groot A"
+    },
+    "LatinMathvariantUpperCaps_12": {
+      "expected": "sans serif vetgedruk kursief groot A"
+    },
+    "LatinMathvariantUpperCaps_13": {
+      "expected": "monospasie groot A"
+    },
+    "LatinMathvariantMathJaxCaps_0": {
+      "expected": "kalligrafies groot A"
+    },
+    "LatinMathvariantMathJaxCaps_1": {
+      "expected": "kalligrafies vetgedruk groot A"
+    },
+    "LatinMathvariantMathJaxCaps_2": {
+      "expected": "kalligrafies groot A"
+    },
+    "LatinMathvariantMathJaxCaps_3": {
+      "expected": "kalligrafies vetgedruk groot A"
+    },
+    "LatinMathvariantMathJaxCaps_4": {
+      "expected": "groot A"
+    },
+    "GreekMathvariantUpperCaps_0": {
+      "expected": "normaal groot Alfa"
+    },
+    "GreekMathvariantUpperCaps_1": {
+      "expected": "vetgedruk groot Alfa"
+    },
+    "GreekMathvariantUpperCaps_2": {
+      "expected": "groot Alfa"
+    },
+    "GreekMathvariantUpperCaps_3": {
+      "expected": "vetgedruk kursief groot Alfa"
+    },
+    "GreekMathvariantUpperCaps_4": {
+      "expected": "sans serif vetgedruk groot Alfa"
+    },
+    "GreekMathvariantUpperCaps_5": {
+      "expected": "sans serif vetgedruk kursief groot Alfa"
+    }
+  }
+}

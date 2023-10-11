@@ -1,0 +1,567 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "AfrikaansClearspeakFunctions",
+  "locale": "af",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_functions.json",
+  "information": "Afrikaans Clearspeak Functions rule tests.",
+  "active": "ClearspeakAfrikaans",
+  "exclude": [
+    "Function011b",
+    "Function012b",
+    "Function013b",
+    "Function014b",
+    "Function015b",
+    "Function016b",
+    "Function017b",
+    "Function018b",
+    "Function019b",
+    "Function020b",
+    "Function021b",
+    "Function022b",
+    "Function023b",
+    "Function024b",
+    "Function025b",
+    "Function026b",
+    "Function027b",
+    "Function028b",
+    "Function029b",
+    "Function030b",
+    "Function031b",
+    "Function032b",
+    "Function033b",
+    "Function034b",
+    "Function035b",
+    "Function036b",
+    "Function037b",
+    "Function038b",
+    "Function039b",
+    "Function040b",
+    "Function041b",
+    "Function042b",
+    "Function043b",
+    "Function044b",
+    "Function045b",
+    "Function046b",
+    "Function047b",
+    "Function048b",
+    "Function049b",
+    "Function050b",
+    "Function051b",
+    "Function052b",
+    "Function053b",
+    "Function054b",
+    "Function055b",
+    "Function056b",
+    "Function057b",
+    "Function058b",
+    "Function059b",
+    "Function060b",
+    "Function061b",
+    "Function062b",
+    "Function063b",
+    "Function064b",
+    "Function065b",
+    "Function066b",
+    "Function067b",
+    "Function068b",
+    "Function069b",
+    "Function070b",
+    "Function071b",
+    "Function072b",
+    "Function073b",
+    "Function074b",
+    "Function075b",
+    "Function076b",
+    "Function077b",
+    "Function078b",
+    "Function079b"
+  ],
+  "compare": true,
+  "tests": {
+    "_comment1_": " Functions",
+    "Function001": {
+      "expected": "f van x"
+    },
+    "Function002": {
+      "expected": "g van x"
+    },
+    "Function003": {
+      "expected": "h van x"
+    },
+    "Function004": {
+      "expected": "f van 2 x"
+    },
+    "Function005": {
+      "expected": "g van negatiewe 2 x"
+    },
+    "Function006": {
+      "expected": "h van een  helfte"
+    },
+    "Function007": {
+      "expected": "h van, open paren, 1 oor 2, close paren"
+    },
+    "Function008": {
+      "expected": "f van, open paren, x plus 1, close paren, is gelyk aan f van x, plus 1"
+    },
+    "Function009": {
+      "expected": "g van, open paren, 2 x, plus 1, close paren"
+    },
+    "Function010": {
+      "expected": "g van, open paren, x kwadraat, close paren"
+    },
+    "Function011": {
+      "expected": "f inverse van x"
+    },
+    "Function012": {
+      "expected": "g inverse van x"
+    },
+    "Function013": {
+      "expected": "h inverse van x"
+    },
+    "Function014": {
+      "expected": "f inverse van 2 x"
+    },
+    "Function015": {
+      "expected": "g inverse van negatiewe 2 x"
+    },
+    "Function016": {
+      "expected": "f inverse van, open paren, 3 x, minus 1, close paren"
+    },
+    "Function017": {
+      "expected": "g inverse van, open paren, x kwadraat, close paren"
+    },
+    "Function018": {
+      "expected": "h inverse van een  helfte"
+    },
+    "Function019": {
+      "expected": "h inverse van, open paren, 1 oor 2, close paren"
+    },
+    "Function020": {
+      "expected": "f inverse van, f van x"
+    },
+    "Function021": {
+      "expected": "g inverse van, g van x"
+    },
+    "Function022": {
+      "expected": "h inverse van, h van x"
+    },
+    "Function023": {
+      "expected": "f inverse van, f van 2 x"
+    },
+    "Function024": {
+      "expected": "g inverse van, g van negatiewe 2 x"
+    },
+    "Function025": {
+      "expected": "h inverse van, h van een  helfte"
+    },
+    "Function026": {
+      "expected": "h inverse van, open paren, h van, open paren, 1 oor 2, close paren, close paren"
+    },
+    "Function027": {
+      "expected": "f inverse van, open paren, f van, open paren, x plus 1, close paren, close paren, is gelyk aan x plus 1"
+    },
+    "Function028": {
+      "expected": "g inverse van, open paren, g van, open paren, 2 x, plus 1, close paren, close paren"
+    },
+    "Function029": {
+      "expected": "g inverse van, open paren, g van, open paren, x kwadraat, close paren, close paren"
+    },
+    "Function030": {
+      "expected": "f van, f inverse van x"
+    },
+    "Function031": {
+      "expected": "g van, g inverse van x"
+    },
+    "Function032": {
+      "expected": "h van, h inverse van x"
+    },
+    "Function033": {
+      "expected": "f van, f inverse van 2 x"
+    },
+    "Function034": {
+      "expected": "g van, g inverse van negatiewe 2 x"
+    },
+    "Function035": {
+      "expected": "f van, open paren, f inverse van, open paren, 3 x, minus 1, close paren, close paren"
+    },
+    "Function036": {
+      "expected": "g van, g inverse van, open paren, x kwadraat, close paren"
+    },
+    "Function037": {
+      "expected": "h van, h inverse van een  helfte"
+    },
+    "Function038": {
+      "expected": "h van, h inverse van, open paren, die breuk 1 oor 2, close paren"
+    },
+    "Function039": {
+      "expected": "f van, g van x"
+    },
+    "Function040": {
+      "expected": "f van, open paren, g van, open paren, x plus 1, close paren, close paren"
+    },
+    "Function041": {
+      "expected": "h van, g van x"
+    },
+    "Function042": {
+      "expected": "h van, open paren, g van, open paren, die breuk met teller x, en noemer x plus 1, close paren, close paren"
+    },
+    "Function043": {
+      "expected": "open paren, f plus g, close paren, van x, is gelyk aan f van x, plus g van x"
+    },
+    "Function044": {
+      "expected": "open paren, f plus g, close paren, van, open paren, x plus 1, close paren, is gelyk aan f van, open paren, x plus 1, close paren, plus g van, open paren, x plus 1, close paren"
+    },
+    "Function045": {
+      "expected": "open paren, f punt g, close paren, van x"
+    },
+    "Function046": {
+      "expected": "open paren, f punt g, close paren, van, open paren, 2 x, plus 5, close paren"
+    },
+    "Function047": {
+      "expected": "open paren, f oor g, close paren, van x, is gelyk aan, f van x, oor g van x"
+    },
+    "Function048": {
+      "expected": "open paren, f oor g, close paren, van, open paren, 2 x, plus 5, close paren, is gelyk aan, die breuk met teller f van, open paren, 2 x, plus 5, close paren, en noemer g van, open paren, 2 x, plus 5, close paren"
+    },
+    "Function049": {
+      "expected": "open paren, f ring g, close paren, van x, is gelyk aan f van, g van x"
+    },
+    "Function050": {
+      "expected": "2 f van x"
+    },
+    "Function051": {
+      "expected": "c f van x"
+    },
+    "Function052": {
+      "expected": "f kwadraat van x"
+    },
+    "Function053": {
+      "expected": "f kwadraat van, open paren, 2 x, plus 1, close paren"
+    },
+    "Function054": {
+      "expected": "f tot die mag drie van x"
+    },
+    "Function055": {
+      "expected": "f tot die mag drie van, open paren, 2 x, plus 1, close paren"
+    },
+    "Function056": {
+      "expected": "die vier de mag van, f van x"
+    },
+    "Function057": {
+      "expected": "die vier de mag van, f van, open paren, 2 x, plus 1, close paren"
+    },
+    "Function058": {
+      "expected": "die vyf de mag van, f van x"
+    },
+    "Function059": {
+      "expected": "die vyf de mag van, f van, open paren, 2 x, plus 1, close paren"
+    },
+    "Function060": {
+      "expected": "die n-de mag van, f van x"
+    },
+    "Function061": {
+      "expected": "die n-de mag van, f van, open paren, 2 x, plus 1, close paren"
+    },
+    "Function062": {
+      "expected": "g kwadraat van x"
+    },
+    "Function063": {
+      "expected": "g kwadraat van, open paren, 2 x, plus 1, close paren"
+    },
+    "Function064": {
+      "expected": "h tot die mag drie van x"
+    },
+    "Function065": {
+      "expected": "h tot die mag drie van, open paren, 2 x, plus 1, close paren"
+    },
+    "Function066": {
+      "expected": "die vier de mag van, g van x"
+    },
+    "Function067": {
+      "expected": "die vier de mag van, g van, open paren, 2 x, plus 1, close paren"
+    },
+    "Function068": {
+      "expected": "die vyf de mag van, h van x"
+    },
+    "Function069": {
+      "expected": "die vyf de mag van, h van, open paren, 2 x, plus 1, close paren"
+    },
+    "Function070": {
+      "expected": "die n-de mag van, g van x"
+    },
+    "Function071": {
+      "expected": "die n-de mag van, g van, open paren, 2 x, plus 1, close paren"
+    },
+    "Function072": {
+      "expected": "f onderskrif 1, van x"
+    },
+    "Function073": {
+      "expected": "g onderskrif 2, van, open paren, x tot die mag drie, close paren"
+    },
+    "Function074": {
+      "expected": "h onderskrif n, van, open paren, 3 x, minus 2, close paren"
+    },
+    "Function075": {
+      "expected": "f onderskrif 1, inverse van x"
+    },
+    "Function076": {
+      "expected": "g onderskrif 2, inverse van, open paren, 2 x, plus 1, close paren"
+    },
+    "Function077": {
+      "expected": "h onderskrif n, inverse van x"
+    },
+    "Function078": {
+      "expected": "g onderskrif 1, inverse van, g onderskrif 2, van x"
+    },
+    "Function079": {
+      "expected": "f onderskrif 1, van, g onderskrif 2, inverse van x"
+    },
+    "Function080": {
+      "expected": "f van, open paren, x komma y, close paren"
+    },
+    "Function081": {
+      "expected": "f van, open paren, x komma y komma z, close paren"
+    },
+    "Function082": {
+      "expected": "f van, open paren, x plus 1, komma, 2 y, close paren"
+    },
+    "Function083": {
+      "expected": "f van, open paren, 2 x, komma, x plus 1, komma, x kwadraat, close paren"
+    },
+    "Function084": {
+      "expected": "f maal x"
+    },
+    "Function085": {
+      "expected": "g maal x"
+    },
+    "Function086": {
+      "expected": "h maal x"
+    },
+    "Function087": {
+      "expected": "f maal 2 x"
+    },
+    "Function088": {
+      "expected": "g maal negatiewe 2 x"
+    },
+    "Function089": {
+      "expected": "h maal een  helfte"
+    },
+    "Function091": {
+      "expected": "f maal, open paren, x plus 1, close paren, is gelyk aan, f maal x, plus 1"
+    },
+    "Function092": {
+      "expected": "g maal, open paren, 2 x, plus 1, close paren"
+    },
+    "Function093": {
+      "expected": "g maal, open paren, x kwadraat, close paren"
+    },
+    "Function094": {
+      "expected": "f tot die negatiewe 1 mag, maal x"
+    },
+    "Function095": {
+      "expected": "g tot die negatiewe 1 mag, maal x"
+    },
+    "Function096": {
+      "expected": "h tot die negatiewe 1 mag, maal x"
+    },
+    "Function097": {
+      "expected": "f tot die negatiewe 1 mag, maal 2 x"
+    },
+    "Function098": {
+      "expected": "g tot die negatiewe 1 mag, maal negatiewe 2 x"
+    },
+    "Function099": {
+      "expected": "f tot die negatiewe 1 mag, maal, open paren, 3 x, minus 1, close paren"
+    },
+    "Function100": {
+      "expected": "g tot die negatiewe 1 mag, maal, open paren, x kwadraat, close paren"
+    },
+    "Function101": {
+      "expected": "h tot die negatiewe 1 mag, maal een  helfte"
+    },
+    "Function103": {
+      "expected": "f tot die negatiewe 1 mag, maal, f maal x"
+    },
+    "Function104": {
+      "expected": "g tot die negatiewe 1 mag, maal, g maal x"
+    },
+    "Function105": {
+      "expected": "h tot die negatiewe 1 mag, maal, h maal x"
+    },
+    "Function106": {
+      "expected": "f tot die negatiewe 1 mag, maal, f maal 2 x"
+    },
+    "Function107": {
+      "expected": "g tot die negatiewe 1 mag, maal, g maal negatiewe 2 x"
+    },
+    "Function108": {
+      "expected": "h tot die negatiewe 1 mag, maal, h maal een  helfte"
+    },
+    "Function110": {
+      "expected": "f tot die negatiewe 1 mag, maal, open paren, f maal, open paren, x plus 1, close paren, close paren, is gelyk aan x plus 1"
+    },
+    "Function111": {
+      "expected": "g tot die negatiewe 1 mag, maal, open paren, g maal, open paren, 2 x, plus 1, close paren, close paren"
+    },
+    "Function112": {
+      "expected": "g tot die negatiewe 1 mag, maal, open paren, g maal, open paren, x kwadraat, close paren, close paren"
+    },
+    "Function113": {
+      "expected": "f maal, open paren, f tot die negatiewe 1 mag, maal x, close paren"
+    },
+    "Function114": {
+      "expected": "g maal, open paren, g tot die negatiewe 1 mag, maal x, close paren"
+    },
+    "Function115": {
+      "expected": "h maal, open paren, h tot die negatiewe 1 mag, maal x, close paren"
+    },
+    "Function116": {
+      "expected": "f maal, open paren, f tot die negatiewe 1 mag, maal 2 x, close paren"
+    },
+    "Function117": {
+      "expected": "g maal, open paren, g tot die negatiewe 1 mag, maal negatiewe 2 x, close paren"
+    },
+    "Function118": {
+      "expected": "f maal, open paren, f tot die negatiewe 1 mag, maal, open paren, 3 x, minus 1, close paren, close paren"
+    },
+    "Function119": {
+      "expected": "g maal, open paren, g tot die negatiewe 1 mag, maal, open paren, x kwadraat, close paren, close paren"
+    },
+    "Function120": {
+      "expected": "h maal, open paren, h tot die negatiewe 1 mag, maal een  helfte, close paren"
+    },
+    "Function122": {
+      "expected": "f maal, g maal x"
+    },
+    "Function123": {
+      "expected": "f maal, open paren, g maal, open paren, x plus 1, close paren, close paren"
+    },
+    "Function124": {
+      "expected": "h maal, g maal x"
+    },
+    "Function125": {
+      "expected": "h maal, open paren, g maal, open paren, die breuk met teller x, en noemer x plus 1, close paren, close paren"
+    },
+    "Function126": {
+      "expected": "open paren, f plus g, close paren, maal x, is gelyk aan, f maal x, plus, g maal x"
+    },
+    "Function127": {
+      "expected": "open paren, f plus g, close paren, maal, open paren, x plus 1, close paren, is gelyk aan, f maal, open paren, x plus 1, close paren, plus, g maal, open paren, x plus 1, close paren"
+    },
+    "Function128": {
+      "expected": "open paren, f punt g, close paren, maal x"
+    },
+    "Function129": {
+      "expected": "open paren, f punt g, close paren, maal, open paren, 2 x, plus 5, close paren"
+    },
+    "Function130": {
+      "expected": "open paren, f oor g, close paren, maal x, is gelyk aan, die breuk met teller, f maal x, en noemer, g maal x"
+    },
+    "Function131": {
+      "expected": "open paren, f oor g, close paren, maal, open paren, 2 x, plus 5, close paren, is gelyk aan, die breuk met teller, f maal, open paren, 2 x, plus 5, close paren, en noemer, g maal, open paren, 2 x, plus 5, close paren"
+    },
+    "Function132": {
+      "expected": "2, f maal x"
+    },
+    "Function133": {
+      "expected": "c, f maal x"
+    },
+    "Function134": {
+      "expected": "f kwadraat maal x"
+    },
+    "Function135": {
+      "expected": "f kwadraat maal, open paren, 2 x, plus 1, close paren"
+    },
+    "Function136": {
+      "expected": "f tot die mag drie maal x"
+    },
+    "Function137": {
+      "expected": "f tot die mag drie maal, open paren, 2 x, plus 1, close paren"
+    },
+    "Function138": {
+      "expected": "f tot die vier de mag, maal x"
+    },
+    "Function139": {
+      "expected": "f tot die vier de mag, maal, open paren, 2 x, plus 1, close paren"
+    },
+    "Function140": {
+      "expected": "f tot die vyf de mag, maal x"
+    },
+    "Function141": {
+      "expected": "f tot die vyf de mag, maal, open paren, 2 x, plus 1, close paren"
+    },
+    "Function142": {
+      "expected": "f tot die n-de mag, maal x"
+    },
+    "Function143": {
+      "expected": "f tot die n-de mag, maal, open paren, 2 x, plus 1, close paren"
+    },
+    "Function144": {
+      "expected": "g kwadraat maal x"
+    },
+    "Function145": {
+      "expected": "g kwadraat maal, open paren, 2 x, plus 1, close paren"
+    },
+    "Function146": {
+      "expected": "h tot die mag drie maal x"
+    },
+    "Function147": {
+      "expected": "h tot die mag drie maal, open paren, 2 x, plus 1, close paren"
+    },
+    "Function148": {
+      "expected": "g tot die vier de mag, maal x"
+    },
+    "Function149": {
+      "expected": "g tot die vier de mag, maal, open paren, 2 x, plus 1, close paren"
+    },
+    "Function150": {
+      "expected": "h tot die vyf de mag, maal x"
+    },
+    "Function151": {
+      "expected": "h tot die vyf de mag, maal, open paren, 2 x, plus 1, close paren"
+    },
+    "Function152": {
+      "expected": "g tot die n-de mag, maal x"
+    },
+    "Function153": {
+      "expected": "g tot die n-de mag, maal, open paren, 2 x, plus 1, close paren"
+    },
+    "Function154": {
+      "expected": "f onderskrif 1, maal x"
+    },
+    "Function156": {
+      "expected": "g onderskrif 2, maal, open paren, x tot die mag drie, close paren"
+    },
+    "Function157": {
+      "expected": "h onderskrif n, maal, open paren, 3 x, minus 2, close paren"
+    },
+    "Function158": {
+      "expected": "f onderskrif 1, tot die negatiewe 1 mag, maal x"
+    },
+    "Function159": {
+      "expected": "g onderskrif 2, tot die negatiewe 1 mag, maal, open paren, 2 x, plus 1, close paren"
+    },
+    "Function160": {
+      "expected": "h onderskrif n, tot die negatiewe 1 mag, maal x"
+    },
+    "Function161": {
+      "expected": "g onderskrif 1, tot die negatiewe 1 mag, maal, open paren, g onderskrif 2, maal x, close paren"
+    },
+    "Function162": {
+      "expected": "f onderskrif 1, maal, open paren, g onderskrif 2, tot die negatiewe 1 mag, maal x, close paren"
+    },
+    "Function163": {
+      "expected": "f maal, open paren, x komma y, close paren"
+    },
+    "Function164": {
+      "expected": "f maal, open paren, x komma y komma z, close paren"
+    },
+    "Function165": {
+      "expected": "f maal, open paren, x plus 1, komma, 2 y, close paren"
+    },
+    "Function166": {
+      "expected": "f maal, open paren, 2 x, komma, x plus 1, komma, x kwadraat, close paren"
+    }
+  }
+}

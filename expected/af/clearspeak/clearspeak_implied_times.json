@@ -1,0 +1,484 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "AfrikaansClearspeakImpliedTimes",
+  "locale": "af",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_implied_times.json",
+  "information": "Afrikaans Clearspeak ImpliedTimes rule tests.",
+  "active": "ClearspeakAfrikaans",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "_comment1_": " Implied Times",
+    "ImpTimes001": {
+      "expected": "2 maal 3"
+    },
+    "ImpTimes002": {
+      "expected": "2 maal 3"
+    },
+    "ImpTimes003": {
+      "expected": "2 tot die vier de mag, maal 3"
+    },
+    "ImpTimes004": {
+      "expected": "2 maal, open paren, 3 plus 4, close paren"
+    },
+    "ImpTimes005": {
+      "expected": "2 maal, open bracket, 3 plus 4, close bracket"
+    },
+    "ImpTimes006": {
+      "expected": "3 maal 2"
+    },
+    "ImpTimes007": {
+      "expected": "2 maal, open paren, 3 plus 4, close paren, kwadraat"
+    },
+    "ImpTimes008": {
+      "expected": "open paren, 2 plus 7, close paren, maal, open paren, 3 minus 6, close paren"
+    },
+    "ImpTimes009": {
+      "expected": "open bracket, 2 plus 7, close bracket, maal, open bracket, 3 minus 6, close bracket"
+    },
+    "_comment2_": " TODO: (Simons) x is categorised as function!",
+    "ImpTimes011": {
+      "expected": "x maal, open paren, y plus z, close paren"
+    },
+    "ImpTimes012": {
+      "expected": "2 maal, open paren, y plus 1, close paren"
+    },
+    "ImpTimes013": {
+      "expected": "open paren, 2 minus 1, close paren, maal x"
+    },
+    "ImpTimes014": {
+      "expected": "p onderskrif 1, maal, open paren, 3 plus 7, close paren"
+    },
+    "ImpTimes015": {
+      "expected": "p onderskrif 1, verhef tot die, a onderskrif 1, mag, p onderskrif 2, verhef tot die, a onderskrif 2, mag"
+    },
+    "ImpTimes016": {
+      "expected": "open paren, x plus y, close paren, tot die negatiewe 4 mag, maal, open paren, x minus y, close paren, tot die negatiewe 4 mag"
+    },
+    "ImpTimes017": {
+      "expected": "2 verhef tot die 4 maal, open paren, x plus y, close paren, mag"
+    },
+    "ImpTimes018": {
+      "expected": "x y"
+    },
+    "ImpTimes019": {
+      "expected": "x kwadraat, y tot die mag drie"
+    },
+    "ImpTimes020": {
+      "expected": "x verhef tot die y plus 1 mag, x verhef tot die y plus 2 mag"
+    },
+    "ImpTimes021": {
+      "expected": "die vierkantswortel van a, die vierkantswortel van b, is gelyk aan die vierkantswortel van a b"
+    },
+    "ImpTimes022": {
+      "expected": "die vierkantswortel van 3, die vierkantswortel van 10, is gelyk aan die vierkantswortel van 30"
+    },
+    "ImpTimes023": {
+      "expected": "2 die vierkantswortel van 3"
+    },
+    "ImpTimes024": {
+      "expected": "1 plus 2 die vierkantswortel van 3"
+    },
+    "ImpTimes025": {
+      "expected": "f van x, is gelyk aan x kwadraat maal, open paren, x plus 1, close paren"
+    },
+    "ImpTimes026": {
+      "expected": "f maal x, is gelyk aan x kwadraat maal, open paren, x plus 1, close paren"
+    },
+    "ImpTimes027": {
+      "expected": "sinus x kosinus y, plus, kosinus x sinus y"
+    },
+    "ImpTimes027a": {
+      "expected": "die sinus van, open paren, x plus y, close paren, die kosinus van, open paren, x plus y, close paren"
+    },
+    "ImpTimes028": {
+      "expected": "die logaritme basis 10 van, x y"
+    },
+    "ImpTimes029": {
+      "expected": "die logaritme van, open paren, x plus y, close paren, is gelyk aan, logaritme x logaritme y"
+    },
+    "ImpTimes030": {
+      "expected": "die 2 by 2 matriks. Ry 1: 1, 3 Ry 2: 5, 2. maal die 2 by 2 matriks. Ry 1: 7, 4 Ry 2: 0, 1"
+    },
+    "ImpTimes031": {
+      "expected": "2 maal, open paren, 3 maal, open paren, open paren, 4 plus 5, close paren, plus 6, close paren, close paren"
+    },
+    "ImpTimes032": {
+      "expected": "2 maal, open paren, 3 maal, open twee de paren, open derde paren, 4 plus 5, close derde paren, plus 6, close twee de paren, close paren"
+    },
+    "ImpTimes033": {
+      "expected": "2 maal, open bracket, 3 maal, open paren, open paren, 4 plus 5, close paren, plus 6, close paren, close bracket"
+    },
+    "ImpTimes034": {
+      "expected": "2 maal, open bracket, 3 maal, open paren, open twee de paren, 4 plus 5, close twee de paren, plus 6, close paren, close bracket"
+    },
+    "ImpTimes035": {
+      "expected": "2 maal, die absolute waarde van x"
+    },
+    "ImpTimes036": {
+      "expected": "die absolute waarde van x, maal, die absolute waarde van y"
+    },
+    "ImpTimes037": {
+      "expected": "die absolute waarde van x plus 1, maal, die absolute waarde van y minus 1"
+    },
+    "ImpTimes037a": {
+      "expected": "die absolute waarde van x plus 1, end absolute waarde van, maal, die absolute waarde van y minus 1, end absolute waarde van"
+    },
+    "ImpTimes038": {
+      "expected": "die absolute waarde van x plus 1, maal, die absolute waarde van y, minus 1"
+    },
+    "ImpTimes0381": {
+      "expected": "die absolute waarde van x plus 1, end absolute waarde van, maal, die absolute waarde van y, end absolute waarde van, minus 1"
+    },
+    "ImpTimes039": {
+      "expected": "2 maal 3"
+    },
+    "ImpTimes040": {
+      "expected": "2 maal 3"
+    },
+    "ImpTimes041": {
+      "expected": "2 tot die vier de mag, maal 3"
+    },
+    "ImpTimes042": {
+      "expected": "2 maal, open paren, 3 plus 4, close paren"
+    },
+    "ImpTimes043": {
+      "expected": "2 maal, open bracket, 3 plus 4, close bracket"
+    },
+    "ImpTimes044": {
+      "expected": "3 maal 2"
+    },
+    "ImpTimes045": {
+      "expected": "2 maal, open paren, 3 plus 4, close paren, kwadraat"
+    },
+    "ImpTimes046": {
+      "expected": "open paren, 2 plus 7, close paren, maal, open paren, 3 minus 6, close paren"
+    },
+    "ImpTimes047": {
+      "expected": "open bracket, 2 plus 7, close bracket, maal, open bracket, 3 minus 6, close bracket"
+    },
+    "_comment3_": " TODO: (Simons) x is categorised as function!",
+    "ImpTimes049": {
+      "expected": "x maal, open paren, y plus z, close paren"
+    },
+    "ImpTimes050": {
+      "expected": "2 maal, open paren, y plus 1, close paren"
+    },
+    "ImpTimes051": {
+      "expected": "open paren, 2 minus 1, close paren, maal x"
+    },
+    "ImpTimes052": {
+      "expected": "p onderskrif 1, maal, open paren, 3 plus 7, close paren"
+    },
+    "ImpTimes053": {
+      "expected": "p onderskrif 1, verhef tot die, a onderskrif 1, mag, maal, p onderskrif 2, verhef tot die, a onderskrif 2, mag"
+    },
+    "ImpTimes054": {
+      "expected": "open paren, x plus y, close paren, tot die negatiewe 4 mag, maal, open paren, x minus y, close paren, tot die negatiewe 4 mag"
+    },
+    "ImpTimes055": {
+      "expected": "2 verhef tot die 4 maal, open paren, x plus y, close paren, mag"
+    },
+    "ImpTimes056": {
+      "expected": "x maal y"
+    },
+    "ImpTimes057": {
+      "expected": "x kwadraat maal y tot die mag drie"
+    },
+    "ImpTimes058": {
+      "expected": "x verhef tot die y plus 1 mag, maal x verhef tot die y plus 2 mag"
+    },
+    "ImpTimes059": {
+      "expected": "die vierkantswortel van a, maal die vierkantswortel van b, is gelyk aan die vierkantswortel van a maal b"
+    },
+    "ImpTimes060": {
+      "expected": "die vierkantswortel van 3, maal die vierkantswortel van 10, is gelyk aan die vierkantswortel van 30"
+    },
+    "ImpTimes061": {
+      "expected": "2 maal die vierkantswortel van 3"
+    },
+    "ImpTimes062": {
+      "expected": "1 plus 2 maal die vierkantswortel van 3"
+    },
+    "ImpTimes063": {
+      "expected": "f van x, is gelyk aan x kwadraat maal, open paren, x plus 1, close paren"
+    },
+    "ImpTimes064": {
+      "expected": "f maal x, is gelyk aan x kwadraat maal, open paren, x plus 1, close paren"
+    },
+    "ImpTimes065": {
+      "expected": "sinus x, maal kosinus y plus kosinus x, maal sinus y"
+    },
+    "ImpTimes065a": {
+      "expected": "die sinus van, open paren, x plus y, close paren, maal, die kosinus van, open paren, x plus y, close paren"
+    },
+    "ImpTimes066": {
+      "expected": "die logaritme basis 10 van, x maal y"
+    },
+    "ImpTimes067": {
+      "expected": "die logaritme van, open paren, x plus y, close paren, is gelyk aan logaritme x, maal logaritme y"
+    },
+    "ImpTimes068": {
+      "expected": "die 2 by 2 matriks. Ry 1: 1, 3 Ry 2: 5, 2. maal die 2 by 2 matriks. Ry 1: 7, 4 Ry 2: 0, 1"
+    },
+    "ImpTimes069": {
+      "expected": "2 maal, open paren, 3 maal, open paren, open paren, 4 plus 5, close paren, plus 6, close paren, close paren"
+    },
+    "ImpTimes070": {
+      "expected": "2 maal, open paren, 3 maal, open twee de paren, open derde paren, 4 plus 5, close derde paren, plus 6, close twee de paren, close paren"
+    },
+    "ImpTimes070a": {
+      "expected": "2 maal, open bracket, 3 maal, open paren, open paren, 4 plus 5, close paren, plus 6, close paren, close bracket"
+    },
+    "ImpTimes071": {
+      "expected": "2 maal, open bracket, 3 maal, open paren, open twee de paren, 4 plus 5, close twee de paren, plus 6, close paren, close bracket"
+    },
+    "ImpTimes072": {
+      "expected": "2 maal, die absolute waarde van x"
+    },
+    "ImpTimes073": {
+      "expected": "die absolute waarde van x, maal, die absolute waarde van y"
+    },
+    "ImpTimes074": {
+      "expected": "die absolute waarde van x plus 1, maal, die absolute waarde van y minus 1"
+    },
+    "ImpTimes074a": {
+      "expected": "die absolute waarde van x plus 1, end absolute waarde van, maal, die absolute waarde van y minus 1, end absolute waarde van"
+    },
+    "ImpTimes075": {
+      "expected": "die absolute waarde van x plus 1, maal, die absolute waarde van y, minus 1"
+    },
+    "ImpTimes076": {
+      "expected": "die absolute waarde van x plus 1, end absolute waarde van, maal, die absolute waarde van y, end absolute waarde van, minus 1"
+    },
+    "ImpTimes077": {
+      "expected": "2, open paren, 3, close paren"
+    },
+    "ImpTimes078": {
+      "expected": "2, open bracket, 3, close bracket"
+    },
+    "ImpTimes079": {
+      "expected": "2 tot die vier de mag, open paren, 3, close paren"
+    },
+    "ImpTimes080": {
+      "expected": "2, open paren, 3 plus 4, close paren"
+    },
+    "ImpTimes081": {
+      "expected": "2, open bracket, 3 plus 4, close bracket"
+    },
+    "ImpTimes082": {
+      "expected": "open paren, 3, close paren, open paren, 2, close paren"
+    },
+    "ImpTimes083": {
+      "expected": "2, open paren, 3 plus 4, close paren, kwadraat"
+    },
+    "ImpTimes084": {
+      "expected": "open paren, 2 plus 7, close paren, open paren, 3 minus 6, close paren"
+    },
+    "ImpTimes085": {
+      "expected": "open bracket, 2 plus 7, close bracket, open bracket, 3 minus 6, close bracket"
+    },
+    "_comment4_": " TODO: (Simons) x is categorised as function!",
+    "ImpTimes087": {
+      "expected": "x, open paren, y plus z, close paren"
+    },
+    "ImpTimes088": {
+      "expected": "2, open paren, y plus 1, close paren"
+    },
+    "ImpTimes089": {
+      "expected": "open paren, 2 minus 1, close paren, x"
+    },
+    "ImpTimes090": {
+      "expected": "p onderskrif 1, open paren, 3 plus 7, close paren"
+    },
+    "ImpTimes091": {
+      "expected": "p onderskrif 1, verhef tot die, a onderskrif 1, mag, p onderskrif 2, verhef tot die, a onderskrif 2, mag"
+    },
+    "ImpTimes092": {
+      "expected": "open paren, x plus y, close paren, tot die negatiewe 4 mag, open paren, x minus y, close paren, tot die negatiewe 4 mag"
+    },
+    "ImpTimes093": {
+      "expected": "2 verhef tot die 4, open paren, x plus y, close paren, mag"
+    },
+    "ImpTimes094": {
+      "expected": "x y"
+    },
+    "ImpTimes095": {
+      "expected": "x kwadraat y tot die mag drie"
+    },
+    "ImpTimes096": {
+      "expected": "x verhef tot die y plus 1 mag, x verhef tot die y plus 2 mag"
+    },
+    "ImpTimes097": {
+      "expected": "die vierkantswortel van a, die vierkantswortel van b, is gelyk aan die vierkantswortel van a b"
+    },
+    "ImpTimes098": {
+      "expected": "die vierkantswortel van 3, die vierkantswortel van 10, is gelyk aan die vierkantswortel van 30"
+    },
+    "ImpTimes099": {
+      "expected": "2 die vierkantswortel van 3"
+    },
+    "ImpTimes100": {
+      "expected": "1 plus 2 die vierkantswortel van 3"
+    },
+    "ImpTimes101": {
+      "expected": "f van x, is gelyk aan x kwadraat, open paren, x plus 1, close paren"
+    },
+    "_comment5_": " TODO: (Simons) Need to be able to specify excluded preferences.",
+    "ImpTimes103": {
+      "expected": "sinus x kosinus y, plus, kosinus x sinus y"
+    },
+    "ImpTimes104": {
+      "expected": "die logaritme basis 10 van, x y"
+    },
+    "ImpTimes105": {
+      "expected": "die logaritme van, open paren, x plus y, close paren, is gelyk aan, logaritme x logaritme y"
+    },
+    "ImpTimes106": {
+      "expected": "die 2 by 2 matriks. Ry 1: 1, 3 Ry 2: 5, 2. die 2 by 2 matriks. Ry 1: 7, 4 Ry 2: 0, 1"
+    },
+    "ImpTimes107": {
+      "expected": "2, open paren, 3, open paren, open paren, 4 plus 5, close paren, plus 6, close paren, close paren"
+    },
+    "ImpTimes108": {
+      "expected": "2, open paren, 3, open twee de paren, open derde paren, 4 plus 5, close derde paren, plus 6, close twee de paren, close paren"
+    },
+    "ImpTimes109": {
+      "expected": "2, open bracket, 3, open paren, open paren, 4 plus 5, close paren, plus 6, close paren, close bracket"
+    },
+    "ImpTimes110": {
+      "expected": "2, open bracket, 3, open paren, open twee de paren, 4 plus 5, close twee de paren, plus 6, close paren, close bracket"
+    },
+    "ImpTimes111": {
+      "expected": "2, die absolute waarde van x"
+    },
+    "ImpTimes112": {
+      "expected": "die absolute waarde van x, die absolute waarde van y"
+    },
+    "ImpTimes113": {
+      "expected": "die absolute waarde van x plus 1, die absolute waarde van y minus 1"
+    },
+    "ImpTimes114": {
+      "expected": "die absolute waarde van x plus 1, die absolute waarde van y, minus 1"
+    },
+    "_comment6_": " No Implied Times and Silent Parenthesis Preferences both set",
+    "ImpTimesSilPar001": {
+      "expected": "2, open paren, 3, close paren"
+    },
+    "ImpTimesSilPar002": {
+      "expected": "2, open bracket, 3, close bracket"
+    },
+    "ImpTimesSilPar003": {
+      "expected": "2 tot die vier de mag, open paren, 3, close paren"
+    },
+    "ImpTimesSilPar004": {
+      "expected": "2, open paren, 3 plus 4, close paren"
+    },
+    "ImpTimesSilPar005": {
+      "expected": "2, open bracket, 3 plus 4, close bracket"
+    },
+    "ImpTimesSilPar006": {
+      "expected": "open paren, 3, close paren, open paren, 2, close paren"
+    },
+    "ImpTimesSilPar007": {
+      "expected": "2, open paren, 3 plus 4, close paren, kwadraat"
+    },
+    "ImpTimesSilPar008": {
+      "expected": "open paren, 2 plus 7, close paren, open paren, 3 minus 6, close paren"
+    },
+    "ImpTimesSilPar009": {
+      "expected": "open bracket, 2 plus 7, close bracket, open bracket, 3 minus 6, close bracket"
+    },
+    "_comment7_": " TODO: (Simons) x is categorised as function!",
+    "ImpTimesSilPar011": {
+      "expected": "x, open paren, y plus z, close paren"
+    },
+    "ImpTimesSilPar012": {
+      "expected": "2, open paren, y plus 1, close paren"
+    },
+    "ImpTimesSilPar013": {
+      "expected": "open paren, 2 minus 1, close paren, x"
+    },
+    "ImpTimesSilPar014": {
+      "expected": "p onderskrif 1, open paren, 3 plus 7, close paren"
+    },
+    "ImpTimesSilPar015": {
+      "expected": "open paren, x plus y, close paren, tot die negatiewe 4 mag, open paren, x minus y, close paren, tot die negatiewe 4 mag"
+    },
+    "ImpTimesSilPar016": {
+      "expected": "2 verhef tot die 4, open paren, x plus y, close paren, mag"
+    },
+    "ImpTimesSilPar017": {
+      "expected": "f van x, is gelyk aan x kwadraat, open paren, x plus 1, close paren"
+    },
+    "_comment9_": " TODO: (Simons) Need to be able to specify excluded preferences.",
+    "ImpTimesSilPar019": {
+      "expected": "die logaritme van, open paren, x plus y, close paren, is gelyk aan, logaritme x logaritme y"
+    },
+    "ImpTimesSilPar020": {
+      "expected": "die 2 by 2 matriks. Ry 1: 1, 3 Ry 2: 5, 2. die 2 by 2 matriks. Ry 1: 7, 4 Ry 2: 0, 1"
+    },
+    "ImpTimesSilPar021": {
+      "expected": "2, open paren, 3, open paren, open paren, 4 plus 5, close paren, plus 6, close paren, close paren"
+    },
+    "ImpTimesSilPar022": {
+      "expected": "2, open paren, 3, open twee de paren, open derde paren, 4 plus 5, close derde paren, plus 6, close twee de paren, close paren"
+    },
+    "ImpTimesSilPar023": {
+      "expected": "2, open bracket, 3, open paren, open paren, 4 plus 5, close paren, plus 6, close paren, close bracket"
+    },
+    "ImpTimesSilPar024": {
+      "expected": "2, open bracket, 3, open paren, open twee de paren, 4 plus 5, close twee de paren, plus 6, close paren, close bracket"
+    },
+    "_comment11_": " Implied Times, Functions, or Something Else",
+    "_comment12_": " TODO: QUESTION What is exact speech? From MathType?",
+    "_comment13_": "       There is no preference ImpliedTimes_Rules. Reverted to Implied",
+    "_comment14_": "       Times_Auto.",
+    "Extra001": {
+      "expected": "A is gelyk aan h van, open paren, die breuk met teller, b onderskrif 1, plus, b onderskrif 2, en noemer 2, close paren"
+    },
+    "Extra002": {
+      "expected": "A is gelyk aan, h maal, open paren, die breuk met teller, b onderskrif 1, plus, b onderskrif 2, en noemer 2, close paren"
+    },
+    "Extra003": {
+      "expected": "a van 0, is gelyk aan 0 maal a is gelyk aan 0"
+    },
+    "Extra004": {
+      "expected": "a maal 0, is gelyk aan 0 maal a is gelyk aan 0"
+    },
+    "Extra005": {
+      "expected": "a maal negatiewe 1, is gelyk aan negatiewe a"
+    },
+    "Extra006": {
+      "expected": "a van negatiewe 1, is gelyk aan negatiewe a"
+    },
+    "_comment15_": " TODO: (Simons) a is categorised as function!",
+    "_comment16_": " TODO: (Simons) a is categorised as function!",
+    "_comment17_": " TODO: (Simons) a is categorised as function!",
+    "Extra010": {
+      "expected": "B van, open paren, 2 komma 6, close paren"
+    },
+    "Extra012": {
+      "expected": "B maal, open paren, 2 komma 6, close paren"
+    },
+    "_comment18_": " TODO: (Simons) Explore exact speech.",
+    "Extra014": {
+      "expected": "p van w"
+    },
+    "Extra015": {
+      "expected": "x van t, is gelyk aan 2 t, plus 4"
+    },
+    "Extra016": {
+      "expected": "k van x, is gelyk aan, open paren, x plus 3, close paren, maal, open paren, x minus 5, close paren"
+    },
+    "_comment19_": " TODO: (Simons) a is categorised as function!",
+    "Extra018": {
+      "expected": "T van t, is gelyk aan, T onderskrif s, plus, open paren, T onderskrif 0, minus, T onderskrif s, close paren, maal e verhef tot die negatiewe k t, mag"
+    },
+    "Extra019": {
+      "expected": "V is gelyk aan skrif l, w van 8"
+    },
+    "_comment22_": " TODO: (Simons) Explore exact speech."
+  }
+}
