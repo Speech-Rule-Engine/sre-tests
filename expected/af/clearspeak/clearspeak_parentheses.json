@@ -1,0 +1,247 @@
+{
+  "_comment0_": " With support from the Mozilla Foundation under a MOSS grant.",
+  "name": "AfrikaansClearspeakParentheses",
+  "locale": "af",
+  "factory": "clearspeak",
+  "base": "input/clearspeak/clearspeak_parentheses.json",
+  "information": "Afrikaans Clearspeak Parentheses rule tests.",
+  "active": "ClearspeakAfrikaans",
+  "exclude": [],
+  "compare": true,
+  "tests": {
+    "Paren001": {
+      "expected": "25"
+    },
+    "Paren002": {
+      "expected": "2 x"
+    },
+    "Paren003": {
+      "expected": "2 plus negatiewe 2"
+    },
+    "Paren004": {
+      "expected": "2 minus negatiewe 2"
+    },
+    "Paren004a": {
+      "expected": "2 minus negatiewe 2"
+    },
+    "Paren005": {
+      "expected": "2 minus, open paren, negatiewe 2, close paren, tot die mag drie"
+    },
+    "Paren006": {
+      "expected": "open paren, 2 x, close paren, kwadraat"
+    },
+    "Paren007": {
+      "expected": "open paren, 2 x, close paren, verhef tot die y plus 1 mag"
+    },
+    "Paren008": {
+      "expected": "negatiewe 2 x"
+    },
+    "Paren009": {
+      "expected": "open paren, negatiewe 2 x, close paren, kwadraat"
+    },
+    "Paren010": {
+      "expected": "negatiewe, open paren, 2 x, close paren, kwadraat"
+    },
+    "Paren011": {
+      "expected": "een  helfte"
+    },
+    "Paren012": {
+      "expected": "drie  kwarts x"
+    },
+    "Paren013": {
+      "expected": "open paren, 11 oor 22, close paren"
+    },
+    "Paren014": {
+      "expected": "een  helfte tot die vier de mag"
+    },
+    "Paren015": {
+      "expected": "open paren, 11 oor 15, close paren, kwadraat"
+    },
+    "Paren016": {
+      "expected": "open paren, 25, close paren"
+    },
+    "Paren017": {
+      "expected": "open paren, 2 x, close paren"
+    },
+    "Paren018": {
+      "expected": "2 plus, open paren, negatiewe 2, close paren"
+    },
+    "Paren019": {
+      "expected": "2 minus, open paren, negatiewe 2, close paren"
+    },
+    "Paren020": {
+      "expected": "2 minus, open paren, negatiewe 2, close paren, tot die mag drie"
+    },
+    "Paren021": {
+      "expected": "open paren, 2 x, close paren, kwadraat"
+    },
+    "Paren022": {
+      "expected": "open paren, 2 x, close paren, verhef tot die y plus 1 mag"
+    },
+    "Paren023": {
+      "expected": "open paren, negatiewe 2 x, close paren"
+    },
+    "Paren024": {
+      "expected": "open paren, negatiewe 2 x, close paren, kwadraat"
+    },
+    "Paren025": {
+      "expected": "negatiewe, open paren, 2 x, close paren, kwadraat"
+    },
+    "Paren026": {
+      "expected": "open paren, een  helfte, close paren"
+    },
+    "Paren027": {
+      "expected": "open paren, drie  kwarts x, close paren"
+    },
+    "Paren028": {
+      "expected": "open paren, 11 oor 22, close paren"
+    },
+    "Paren029": {
+      "expected": "open paren, een  helfte, close paren, tot die vier de mag"
+    },
+    "Paren030": {
+      "expected": "open paren, 11 oor 15, close paren, kwadraat"
+    },
+    "Paren031": {
+      "expected": "die punt met koördinate 1 komma 2"
+    },
+    "Paren032": {
+      "expected": "die punt met koördinate x komma y"
+    },
+    "Paren033": {
+      "expected": "die punt met koördinate 1 komma 2 komma 3"
+    },
+    "Paren034": {
+      "expected": "die punt met koördinate x komma y komma z"
+    },
+    "Paren035": {
+      "expected": "die punt met koördinate 1 komma 2 komma 386"
+    },
+    "Paren036": {
+      "expected": "die interval van a tot b, nie insluitend a of b"
+    },
+    "Paren037": {
+      "expected": "die interval van 0 tot 1, nie insluitend 0 of 1"
+    },
+    "Paren038": {
+      "expected": "die interval van a tot b, insluitend a, maar nie insluitend b"
+    },
+    "Paren039": {
+      "expected": "die interval van 0 tot 1, insluitend 0, maar nie insluitend 1"
+    },
+    "Paren040": {
+      "expected": "die interval van a tot b, nie insluitend a, maar insluitend b"
+    },
+    "Paren041": {
+      "expected": "die interval van 0 tot 1, nie insluitend 0, maar insluitend 1"
+    },
+    "Paren042": {
+      "expected": "die interval van a tot b, insluitend a en b"
+    },
+    "Paren043": {
+      "expected": "die interval van 0 tot 1, insluitend 0 en 1"
+    },
+    "Paren044": {
+      "expected": "die interval van negatiewe oneindigheid tot b, nie insluitend b"
+    },
+    "Paren045": {
+      "expected": "die interval van negatiewe oneindigheid tot 1, nie insluitend 1"
+    },
+    "Paren046": {
+      "expected": "die interval van negatiewe oneindigheid tot b, insluitend b"
+    },
+    "Paren047": {
+      "expected": "die interval van negatiewe oneindigheid tot 1, insluitend 1"
+    },
+    "Paren048": {
+      "expected": "die interval van a tot oneindigheid, nie insluitend a"
+    },
+    "Paren049": {
+      "expected": "die interval van 1 tot oneindigheid, nie insluitend 1"
+    },
+    "Paren050": {
+      "expected": "die interval van a tot oneindigheid, insluitend a"
+    },
+    "Paren051": {
+      "expected": "die interval van 1 tot oneindigheid, insluitend 1"
+    },
+    "Paren052": {
+      "expected": "die interval van negatiewe oneindigheid tot oneindigheid"
+    },
+    "Paren053": {
+      "expected": "die interval van negatiewe oneindigheid tot positief oneindigheid"
+    },
+    "Nest001": {
+      "expected": "f van, g van x"
+    },
+    "Nest002": {
+      "expected": "f van, open paren, g van, open paren, x plus 1, close paren, close paren"
+    },
+    "Nest003": {
+      "expected": "6 minus, open bracket, 2 minus, open paren, 3 plus 5, close paren, close bracket"
+    },
+    "Nest004": {
+      "expected": "6 minus, open paren, 2 minus, open twee de paren, 3 plus 5, close twee de paren, close paren"
+    },
+    "Nest005": {
+      "expected": "4 maal, open bracket, x plus 3 maal, open paren, 2 x, plus 1, close paren, close bracket"
+    },
+    "Nest006": {
+      "expected": "4 maal, open paren, x plus 3 maal, open twee de paren, 2 x, plus 1, close twee de paren, close paren"
+    },
+    "Nest007": {
+      "expected": "1 plus, open paren, 2 plus, open twee de paren, 3 plus 7, close twee de paren, minus, open twee de paren, 2 plus 8, close twee de paren, close paren"
+    },
+    "Nest008": {
+      "expected": "1 plus, open paren, 2 plus, open twee de paren, 3 minus, open derde paren, 4 minus 5, close derde paren, close twee de paren, close paren"
+    },
+    "Nest009": {
+      "expected": "open paren, open twee de paren, 2 plus, open derde paren, 3 plus 4, close derde paren, plus 5, close twee de paren, plus 6 plus, open twee de paren, open derde paren, 7 plus, open vier de paren, 8 plus 1, close vier de paren, close derde paren, plus 2, close twee de paren, close paren"
+    },
+    "SilParen001": {
+      "expected": "25"
+    },
+    "SilParen002": {
+      "expected": "2 x"
+    },
+    "SilParen003": {
+      "expected": "2 plus, negatiewe 2"
+    },
+    "SilParen004": {
+      "expected": "2 minus, negatiewe 2"
+    },
+    "SilParen005": {
+      "expected": "2 minus, negatiewe 2, tot die mag drie"
+    },
+    "SilParen006": {
+      "expected": "2 x, kwadraat"
+    },
+    "SilParen007": {
+      "expected": "2 x, verhef tot die y plus 1 mag"
+    },
+    "SilParen008": {
+      "expected": "negatiewe 2 x"
+    },
+    "SilParen009": {
+      "expected": "negatiewe 2 x, kwadraat"
+    },
+    "SilParen010": {
+      "expected": "negatiewe, 2 x, kwadraat"
+    },
+    "SilParen011": {
+      "expected": "een  helfte"
+    },
+    "SilParen012": {
+      "expected": "drie  kwarts x"
+    },
+    "SilParen013": {
+      "expected": "11 oor 22"
+    },
+    "SilParen014": {
+      "expected": "een  helfte, tot die vier de mag"
+    },
+    "SilParen015": {
+      "expected": "11 oor 15, kwadraat"
+    }
+  }
+}
