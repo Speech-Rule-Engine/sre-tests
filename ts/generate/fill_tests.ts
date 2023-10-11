@@ -145,6 +145,19 @@ export async function addActual(expected: string, dryrun = false) {
 }
 
 /**
+ * Generates all actual expected values for all tests and writes them unless the
+ * dryrun flag is set.
+ *
+ * @param expected List of file names of the expected files.
+ * @param dryrun Print to console instead to file.
+ */
+export async function addAll(expected: string[], dryrun = false) {
+  for (let expt of expected) {
+    await add(expt, TestFlag.ALL, dryrun);
+  }
+}
+
+/**
  * Generates actual expected values for failed tests and writes them to the
  * given expected file.
  *
