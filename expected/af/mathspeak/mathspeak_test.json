@@ -76,10 +76,10 @@
       "expected": "getal huts F F 0 0 0 0"
     },
     "Sample_1_4_2_brief": {
-      "expected": "Nom num sign F F 0 0 0 0"
+      "expected": "Nom huts F F 0 0 0 0"
     },
     "Sample_1_4_2_sbrief": {
-      "expected": "Nom num sign F F 0 0 0 0"
+      "expected": "Nom huts F F 0 0 0 0"
     },
     "Sample_1_4_3_default": {
       "expected": "getal 0 x 1 5 F F plus getal 0 x 2 B 0 1 is gelyk aan getal 0 x 4 1 0 0"
@@ -115,7 +115,7 @@
       "expected": "If groot A regs pyltjie groot B and groot B regs pyltjie groot C then groot A regs pyltjie groot C punt"
     },
     "Sample_2_3_1_sbrief": {
-      "expected": "If groot A R arrow groot B and groot B R arrow groot C then groot A R arrow groot C punt"
+      "expected": "If groot A regs pyltjie groot B and groot B regs pyltjie groot C then groot A regs pyltjie groot C punt"
     },
     "Sample_2_6_1_default": {
       "expected": "vetgedruk links blokhakkie x vetgedruk regs blokhakkie"
@@ -163,13 +163,13 @@
       "expected": "y minus 1"
     },
     "Sample_5_1_2_default": {
-      "expected": "links hakkie 1 hyphen to hyphen 1 regs hakkie"
+      "expected": "links hakkie 1 minus to minus 1 regs hakkie"
     },
     "Sample_5_1_2_brief": {
-      "expected": "left p'ren 1 hyphen to hyphen 1 right p'ren"
+      "expected": "left p'ren 1 minus to minus 1 right p'ren"
     },
     "Sample_5_1_2_sbrief": {
-      "expected": "L p'ren 1 hyphen to hyphen 1 R p'ren"
+      "expected": "L p'ren 1 minus to minus 1 R p'ren"
     },
     "Sample_5_1_3_default": {
       "expected": "negatief 1"
@@ -254,13 +254,13 @@
       "expected": "a 0 plus genes3Breuk 1 genes3Oor a 1 plus genesTwee keerBreuk 1 genesTwee keerOor a 2 plus genesBreuk 1 genesOor ellipsis plus Breuk 1 Oor a Onderskrif n Basis End breuk genesEnd breuk genesTwee keerEnd breuk genes3End breuk"
     },
     "Sample_7_4_1_default": {
-      "expected": "een  helfte plus twee  helftes plus drie  helftes plus vier  helftes plus ellipsis is gelyk aan sigma summation Onderskrif n is gelyk aan 1 Boskrif oneindigheid End skrifte BeginBreuk n Oor 2 EndBreuk"
+      "expected": "een  helfte plus twee  helftes plus drie  helftes plus vier  helftes plus ellipsis is gelyk aan som Onderskrif n is gelyk aan 1 Boskrif oneindigheid End skrifte BeginBreuk n Oor 2 EndBreuk"
     },
     "Sample_7_4_1_brief": {
-      "expected": "een  helfte plus twee  helftes plus drie  helftes plus vier  helftes plus ellipsis is gelyk aan sigma summation Onderskrif n is gelyk aan 1 Boskrif oneindigheid End skrifte BeginBreuk n Oor 2 EndBreuk"
+      "expected": "een  helfte plus twee  helftes plus drie  helftes plus vier  helftes plus ellipsis is gelyk aan som Onderskrif n is gelyk aan 1 Boskrif oneindigheid End skrifte BeginBreuk n Oor 2 EndBreuk"
     },
     "Sample_7_4_1_sbrief": {
-      "expected": "een  helfte plus twee  helftes plus drie  helftes plus vier  helftes plus ellipsis is gelyk aan sigma summation Onderskrif n is gelyk aan 1 Boskrif oneindigheid End skrifte Breuk n Oor 2 End breuk"
+      "expected": "een  helfte plus twee  helftes plus drie  helftes plus vier  helftes plus ellipsis is gelyk aan som Onderskrif n is gelyk aan 1 Boskrif oneindigheid End skrifte Breuk n Oor 2 End breuk"
     },
     "Sample_7_4_2_default": {
       "expected": "BeginBreuk 20 Oor 5 EndBreuk maal BeginBreuk 1 Oor 100 EndBreuk is gelyk aan een  vyf-en-twintig ste"
@@ -512,7 +512,7 @@
       "expected": "4 groot F e plus 3 groot O 2 regs pyltjie 2 groot F e 2 groot O 3"
     },
     "Sample_8_5_5_sbrief": {
-      "expected": "4 groot F e plus 3 groot O 2 R arrow 2 groot F e 2 groot O 3"
+      "expected": "4 groot F e plus 3 groot O 2 regs pyltjie 2 groot F e 2 groot O 3"
     },
     "Sample_8_5_6_default": {
       "expected": "a Onderskrif 2 komma 3"
@@ -854,25 +854,25 @@
       "expected": "pas aan bo x plus y met regs pyltjie"
     },
     "Sample_11_1_2_sbrief": {
-      "expected": "pas aan bo x plus y met R arrow"
+      "expected": "pas aan bo x plus y met regs pyltjie"
     },
     "Sample_11_1_3_default": {
-      "expected": "pas boonste aan x met caret"
+      "expected": "pas boonste aan x met hoed"
     },
     "Sample_11_1_3_brief": {
-      "expected": "pas aan bo x met caret"
+      "expected": "pas aan bo x met hoed"
     },
     "Sample_11_1_3_sbrief": {
-      "expected": "pas aan bo x met caret"
+      "expected": "pas aan bo x met hoed"
     },
     "Sample_11_2_1_default": {
-      "expected": "Pas aan onder x met dot"
+      "expected": "Pas aan onder x met punt bokant"
     },
     "Sample_11_2_1_brief": {
-      "expected": "Pas aan onder x met dot"
+      "expected": "Pas aan onder x met punt bokant"
     },
     "Sample_11_2_1_sbrief": {
-      "expected": "Pas aan onder x met dot"
+      "expected": "Pas aan onder x met punt bokant"
     },
     "Sample_11_3_1_default": {
       "expected": "x oor tilde"
@@ -941,13 +941,13 @@
       "expected": "Pas aan Bo Bo pas aan bo x plus y met tilde met makron"
     },
     "Sample_11_7_1_default": {
-      "expected": "sigma summation Onderskrif n is gelyk aan 1 Boskrif oneindigheid End skrifte a Onderskrif n"
+      "expected": "som Onderskrif n is gelyk aan 1 Boskrif oneindigheid End skrifte a Onderskrif n"
     },
     "Sample_11_7_1_brief": {
-      "expected": "sigma summation Onderskrif n is gelyk aan 1 Boskrif oneindigheid End skrifte a Onderskrif n"
+      "expected": "som Onderskrif n is gelyk aan 1 Boskrif oneindigheid End skrifte a Onderskrif n"
     },
     "Sample_11_7_1_sbrief": {
-      "expected": "sigma summation Onderskrif n is gelyk aan 1 Boskrif oneindigheid End skrifte a Onderskrif n"
+      "expected": "som Onderskrif n is gelyk aan 1 Boskrif oneindigheid End skrifte a Onderskrif n"
     },
     "Sample_11_8_1_default": {
       "expected": "Pas aan onder x plus y met lyn Onderskrif a is gelyk aan 5 OnderOnderskrif b is gelyk aan 3 End skrifte"
@@ -1049,7 +1049,7 @@
       "expected": "Begin uitleg 1. Ry 1. Kolom groot H 2 2. Kolom plus 3. Kolom groot F 2 4. Kolom regs pyltjie 5. Kolom 2 groot H groot F 2. Ry 1. Kolom hydrogen 2. Kolom leeg 3. Kolom fluorine 4. Kolom leeg 5. Kolom hydrogen fluoride End uitleg"
     },
     "Sample_14_1_1_sbrief": {
-      "expected": "uitleg 1. Ry 1. Kolom groot H 2 2. Kolom plus 3. Kolom groot F 2 4. Kolom R arrow 5. Kolom 2 groot H groot F 2. Ry 1. Kolom hydrogen 2. Kolom leeg 3. Kolom fluorine 4. Kolom leeg 5. Kolom hydrogen fluoride End uitleg"
+      "expected": "uitleg 1. Ry 1. Kolom groot H 2 2. Kolom plus 3. Kolom groot F 2 4. Kolom regs pyltjie 5. Kolom 2 groot H groot F 2. Ry 1. Kolom hydrogen 2. Kolom leeg 3. Kolom fluorine 4. Kolom leeg 5. Kolom hydrogen fluoride End uitleg"
     },
     "Sample_14_3_1_default": {
       "expected": "x is gelyk aan Begin uitleg vergroot links krulhakkie 1. Ry 1. Kolom y kleiner as 0 2. Kolom 0 2. Ry 1. Kolom y groter of gelyk aan 0 2. Kolom 2 y End uitleg"
