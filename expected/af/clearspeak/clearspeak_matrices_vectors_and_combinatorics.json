@@ -9,6 +9,9 @@
   "exclude": [],
   "compare": true,
   "tests": {
+    "_comment1_": " ClearSpeak Rules and Preferences Examples: Matrices, Vectors, and",
+    "_comment2_": " Combinatorics",
+    "_comment3_": " Matrices, Vectors, and Combinatorics",
     "Matrix001": {
       "expected": "die 2 by 2 matriks. Ry 1: 2, 1 Ry 2: 7, 5"
     },
@@ -441,6 +444,8 @@
     "Matrix139": {
       "expected": "die 2 by 2 matriks. Ry 1: een  helfte, twee  derdes Ry 2: drie  kwarts, een  vyf de. end matriks"
     },
+    "_comment7_": " TODO: (Simons) Rewrite certain indices from implicit multiplication to",
+    "_comment8_": " punctuation.",
     "Matrix140": {
       "expected": "die 2 by 2 matriks. Ry 1: b onderskrif 1 1, b onderskrif 1 2 Ry 2: b onderskrif 2 1, b onderskrif 2 2. end matriks"
     },

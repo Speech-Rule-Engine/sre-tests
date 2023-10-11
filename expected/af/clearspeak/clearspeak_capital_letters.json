@@ -9,6 +9,8 @@
   "exclude": [],
   "compare": true,
   "tests": {
+    "_comment1_": " Capital Letters",
+    "_comment2_": " TODO: (QUESTION) This is does not seem to follow the fraction rules.",
     "Cap001": {
       "expected": "sinus A oor a, is gelyk aan, sinus B oor b"
     },
@@ -39,6 +41,7 @@
     "Cap010": {
       "expected": "die hoekmaat hoek A"
     },
+    "_comment5_": " TODO: (QUESTION) This is does not seem to follow the fraction rules.",
     "Cap011": {
       "expected": "sinus groot A oor a, is gelyk aan, sinus groot B oor b"
     },
@@ -71,6 +74,13 @@
     },
     "Cap020a": {
       "expected": "hoek groot A"
-    }
+    },
+    "_comment8_": " /**",
+    "_comment9_": "  * Testing ClearspeakEnglishCapitalLetters Example Cap020 (extra)",
+    "_comment10_": "  */",
+    "_comment12_": "   var preference = 'Caps_SayCaps';",
+    "_comment13_": "   var mathml = '<math><mrow><mi>h</mi><mo>∠</mo><mi>A</mi></mrow></math>';",
+    "_comment14_": "   var speech = 'angle cap A';",
+    "_comment16_": " };"
   }
 }

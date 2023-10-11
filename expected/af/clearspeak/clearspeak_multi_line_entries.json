@@ -9,6 +9,7 @@
   "exclude": [],
   "compare": true,
   "tests": {
+    "_comment1_": " Multi-Line Entries Examples",
     "Multiline001": {
       "expected": "2 lyne, Lyn 1: x plus y is gelyk aan 7. Lyn 2: 2 x, plus 3 y, is gelyk aan 17"
     },
@@ -90,6 +91,7 @@
     "Multiline026": {
       "expected": "3 beperkings, beperking 1: x is greater than or equal to 0. beperking 2: y is greater than or equal to 0. beperking 3: 3 x, minus 5 y, is less than or equal to 30"
     },
+    "_comment2_": " Added examples for preference Label_None.",
     "Multiline026a": {
       "expected": "3 lyne, x is greater than or equal to 0. y is greater than or equal to 0. 3 x, minus 5 y, is less than or equal to 30"
     },

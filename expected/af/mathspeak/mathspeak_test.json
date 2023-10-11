@@ -198,6 +198,7 @@
     "Sample_6_2_1_sbrief": {
       "expected": "Absolute Waarde 4 minus 7 End Absolute Waarde is gelyk aan 3"
     },
+    "_comment1_": " This equation does not make sense! We could do it purely syntactically!",
     "Sample_6_2_2_default": {
       "expected": "begin absolute Waarde a plus of minus begin absolute Waarde b minus c End Absolute Waarde End Absolute Waarde is nie gelyk aan begin absolute Waarde a End Absolute Waarde plus of minus begin absolute Waarde b minus c End Absolute Waarde"
     },
@@ -927,6 +928,9 @@
     "Sample_11_6_1_sbrief": {
       "expected": "Pas aan Onder Onder Pas aan onder a plus b met lyn met ster"
     },
+    "_comment8_": " This one is odd. This rule example seems to contradict Rule 11.2, where we",
+    "_comment9_": " ModifyAbove/Below with dot.  Here the dot is used as",
+    "_comment10_": " Over/Underscript. However, we express dot as a multi modifier.",
     "Sample_11_6_3_default": {
       "expected": "Pas aan Bokant Bokant pas boonste aan x plus y met tilde met makron"
     },
@@ -963,6 +967,8 @@
     "Sample_11_8_2_sbrief": {
       "expected": "pas aan bo x plus y met makron Boskrif n is gelyk aan 1 OorBoskrif m is gelyk aan 2 End skrifte"
     },
+    "_comment11_": " This rule is currently not possible. It needs an enhanced processing in the",
+    "_comment12_": " semantic tree maybe together with a simultaneous treatment of mstacks.",
     "Sample_12_1_1_default": {
       "expected": "logaritme Onderskrif b Basislyn x"
     },
@@ -999,6 +1005,7 @@
     "Sample_13_1_1_sbrief": {
       "expected": "Breuk 60 doodgetrek myl End doodgetrek Oor doodgetrek ure End doodgetrek End breuk maal Breuk 5,280 voet Oor 1 doodgetrek myl End doodgetrek End breuk maal Breuk 1 doodgetrek ure End doodgetrek Oor 60 minute End breuk is gelyk aan Breuk 5,280 voet Oor minute End breuk"
     },
+    "_comment13_": " That should be negative 2!",
     "Sample_13_1_2_default": {
       "expected": "1 joule is gelyk aan 1 kilogram dot meter kwadraat dot sekondes Superskrif negatief 2"
     },

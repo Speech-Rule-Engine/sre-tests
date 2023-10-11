@@ -9,6 +9,7 @@
   "exclude": [],
   "compare": true,
   "tests": {
+    "_comment1_": " Fractions",
     "Frac001": {
       "expected": "een  helfte"
     },
@@ -246,6 +247,7 @@
     "Frac071": {
       "expected": "2 miles oor 3 gallons"
     },
+    "_comment2_": " Fraction (with Text in Numerator and/or denominator)",
     "FrTxt001": {
       "expected": "2 miles oor 3 gallons"
     },
@@ -258,6 +260,7 @@
     "FrTxt004": {
       "expected": "6 ways of rolling a 7 oor 36 ways of rolling the pair of dice"
     },
+    "_comment3_": " Nested Fractions",
     "NestFrac001": {
       "expected": "een  helfte oor een  derde"
     },
@@ -366,6 +369,7 @@
     "NestFrac036": {
       "expected": "a onderskrif 0, plus, die breuk met teller 1, en noemer, a onderskrif 1, plus, die breuk met teller 1, en noemer, a onderskrif 2, plus, die breuk met teller 1, en noemer, a onderskrif 3, plus dot dot dot, end breuk"
     },
+    "_comment4_": " Fractions with Functions",
     "Fracfunct001": {
       "expected": "f van x, oor g van x"
     },

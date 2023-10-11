@@ -9,6 +9,7 @@
   "exclude": [],
   "compare": true,
   "tests": {
+    "_comment1_": " Exponents",
     "Exp001": {
       "expected": "3 kwadraat"
     },
@@ -138,6 +139,8 @@
     "Exp033": {
       "expected": "3 verhef tot die eksponent, open paren, x plus 1, close paren, tot die y-de mag, end eksponent, plus 2"
     },
+    "_comment2_": " TODO: (Simons) This does not work as semantically we have a -(xy) rather than",
+    "_comment3_": "       (-x)(y).",
     "Exp035": {
       "expected": "e verhef tot die eksponent, negatiewe een  helfte maal, open paren, die breuk met teller x minus my, en noemer sigma, close paren, kwadraat, end eksponent"
     },

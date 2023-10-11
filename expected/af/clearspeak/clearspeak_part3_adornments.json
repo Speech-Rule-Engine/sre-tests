@@ -9,6 +9,8 @@
   "exclude": [],
   "compare": true,
   "tests": {
+    "_comment1_": " Part 3: Adornments",
+    "_comment2_": " Prime, Double Prime, and Triple Prime",
     "Prime001": {
       "expected": "A priem, B priem"
     },
@@ -42,6 +44,7 @@
     "Prime011": {
       "expected": "16 voet, 10 duim"
     },
+    "_comment3_": " TODO: (Simons) Better handling of degrees.",
     "Prime012": {
       "expected": "45 grade, 10 minute"
     },
@@ -120,6 +123,7 @@
     "Prime037": {
       "expected": "2 duim"
     },
+    "_comment4_": " TODO: (Simons) Rewrite prime etc into superscript.",
     "Prime038": {
       "expected": "16 voet, 10 duim"
     },
@@ -150,6 +154,13 @@
     "Prime047": {
       "expected": "f trippelpriem van x"
     },
+    "_comment5_": " Combinations and Permutations",
+    "_comment6_": " These 8 tests come out of the clearspeak documents from MathType.  The MathML",
+    "_comment7_": " has a redundant use of subscripts leaving the actual correct placing of the",
+    "_comment8_": " right index in the multiscript empty.",
+    "_comment9_": " TODO: (Simons) Have a cleanup heuristic to combine multiscripts with",
+    "_comment10_": "                sub/superscripts.",
+    "_comment11_": " Cleaned up tests with the correct usage of multiscript elements.",
     "CombPerm001a": {
       "expected": "n C r"
     },
@@ -174,6 +185,7 @@
     "CombPerm008a": {
       "expected": "10 permutasie 3"
     },
+    "_comment12_": " Bar",
     "Bar001": {
       "expected": "f makron"
     },
@@ -228,6 +240,7 @@
     "Bar018": {
       "expected": "die komplekse toegevoegde van 3 minus 2 i, is gelyk aan 3 plus 2 i"
     },
+    "_comment13_": " Added! Test that still decimal period still works.",
     "Bar006a": {
       "expected": "die herhalende dessimaal 0 punt gevolg deur herhalende syfer 3"
     },
@@ -243,6 +256,7 @@
     "Bar010a": {
       "expected": "die herhalende dessimaal 2 5 punt 1 2 gevolg deur herhalende syfers 6 3 2"
     },
+    "_comment14_": " Equals Sign with Adornments",
     "Equal001": {
       "expected": "is gedeffiniëer as"
     },

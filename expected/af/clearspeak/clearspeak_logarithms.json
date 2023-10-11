@@ -9,6 +9,7 @@
   "exclude": [],
   "compare": true,
   "tests": {
+    "_comment1_": " Logarithms",
     "Log001": {
       "expected": "logaritme x"
     },
@@ -72,6 +73,7 @@
     "Log021": {
       "expected": "die logaritme van, open paren, x oor y, close paren"
     },
+    "_comment2_": " TODO: Fix the vulgar fraction predicate!",
     "Log022": {
       "expected": "die logaritme van, open paren, die breuk met teller 3 tot die vier de mag, en noemer 8 tot die tien de mag, close paren, is gelyk aan 4 logaritme 3, minus 10 logaritme 8"
     },

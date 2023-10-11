@@ -56,6 +56,8 @@
   ],
   "compare": true,
   "tests": {
+    "_comment1_": " Trigonometry",
+    "_comment2_": " Table 1: Basic Trigonometric Functions",
     "Trig001": {
       "expected": "sinus x"
     },
@@ -143,6 +145,7 @@
     "Trig029": {
       "expected": "tangens 35 grade"
     },
+    "_comment3_": " TODO: (Simons) Handles degrees as a postfix function.",
     "Trig031": {
       "expected": "die tangens van, open paren, hoek D E F, close paren"
     },
@@ -158,6 +161,7 @@
     "Trig035": {
       "expected": "die tangens van, open paren, x plus y, close paren, is gelyk aan, die breuk met teller tangens x minus tangens y, en noemer 1 minus, tangens x tangens y"
     },
+    "_comment4_": " TODO: (Simons) Handle degrees as a postfix function.",
     "Trig037": {
       "expected": "die tangens van, open paren, pi oor 6, plus, 2 pi oor 3, close paren, is gelyk aan, die breuk met teller, die tangens van, pi oor 6, minus, die tangens van, 2 pi oor 3, en noemer 1 minus, die tangens van, pi oor 6, die tangens van, 2 pi oor 3"
     },
@@ -185,6 +189,7 @@
     "Trig045": {
       "expected": "die tangens van, pi oor 12, is gelyk aan een  helfte die vierkantswortel van 2 minus die vierkantswortel van 3, end wortel, end wortel"
     },
+    "_comment5_": " Table 2: Inverse Trigonometric Functions",
     "TrigInvAuto001": {
       "expected": "die inverse sinus van x"
     },
@@ -263,6 +268,7 @@
     "TrigInvAuto026": {
       "expected": "die inverse sekans van sekans x"
     },
+    "_comment6_": " Table 3: Hyperbolic Trigonometric Functions",
     "TrigInverse001": {
       "expected": "sinus inverse van x"
     },
@@ -487,6 +493,7 @@
     },
     "HypTrig020": {
       "expected": "die inverse hiperboliese kotangens van, hiperboliese kotangens van x"
-    }
+    },
+    "_comment8_": "New: Reciprocal. Not in English"
   }
 }

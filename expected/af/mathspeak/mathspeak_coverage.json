@@ -9,6 +9,8 @@
   "exclude": [],
   "compare": true,
   "tests": {
+    "_comment0_": "Letter related disjunctive rules.",
+    "_comment1_": "number-baseline for greekletter",
     "BaselineNumberGreek_default": {
       "expected": "alfa Basislyn 2"
     },
@@ -18,6 +20,7 @@
     "BaselineNumberGreek_sbrief": {
       "expected": "alfa Basis 2"
     },
+    "_comment2_": "number-baseline for otherletter",
     "BaselineNumberOther_default": {
       "expected": "normaal first transfinite cardinal Basislyn 2"
     },
@@ -27,6 +30,7 @@
     "BaselineNumberOther_sbrief": {
       "expected": "normaal first transfinite cardinal Basis 2"
     },
+    "_comment3_": "number-baseline for greekletter",
     "BaselineNumberFontGreek_default": {
       "expected": "alfa Basislyn bold 2"
     },
@@ -36,6 +40,7 @@
     "BaselineNumberFontGreek_sbrief": {
       "expected": "alfa Basis bold 2"
     },
+    "_comment4_": "number-baseline for otherletter",
     "BaselineNumberFontOther_default": {
       "expected": "normaal first transfinite cardinal Basislyn bold 2"
     },
@@ -69,6 +74,7 @@
     "UndertildeOther_default": {
       "expected": "normaal first transfinite cardinal onder tilde"
     },
+    "_comment5_": "set rules",
     "SetEmpty_default": {
       "expected": "leë versameling"
     },

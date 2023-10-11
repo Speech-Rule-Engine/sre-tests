@@ -9,6 +9,14 @@
   "exclude": [],
   "compare": true,
   "tests": {
+    "_comment1_": "Systematic testing of tensor rules.",
+    "_comment2_": " Tensor tests are named with the convention of including the indices that are",
+    "_comment3_": " present:",
+    "_comment4_": "   B      D",
+    "_comment5_": "      X      R",
+    "_comment6_": "   A      C",
+    "_comment7_": "  Where R is the rest.",
+    "_comment8_": "  Wrapping is indicated before R (without baseline) or after R (with baseline).",
     "PartialTensorABCD_default": {
       "expected": "Onderskrif a Superskrif b Basislyn x Onderskrif c Superskrif d"
     },
@@ -207,6 +215,7 @@
     "PartialTensorABCDRFrac_sbrief": {
       "expected": "Breuk 1 Oor Onderskrif a Sup b Basis x Onderskrif c Sup d Basis r End breuk"
     },
+    "_comment11_": "New completion",
     "PartialTensorB_default": {
       "expected": "Superskrif b Basislyn x"
     },
@@ -639,6 +648,7 @@
     "PartialTensorACDRFrac_sbrief": {
       "expected": "Breuk 1 Oor Onderskrif a Basis x Onderskrif c Sup d Basis r End breuk"
     },
+    "_comment10_": "Rest",
     "TensorMultiSimpleABC_default": {
       "expected": "Onderskrif a Superskrif b Basislyn x Onderskrif c Onderskrif Superskrif l"
     },

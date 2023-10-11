@@ -9,6 +9,7 @@
   "exclude": [],
   "compare": true,
   "tests": {
+    "_comment1_": " Implied Times",
     "ImpTimes001": {
       "expected": "2 maal 3"
     },
@@ -36,6 +37,7 @@
     "ImpTimes009": {
       "expected": "open bracket, 2 plus 7, close bracket, maal, open bracket, 3 minus 6, close bracket"
     },
+    "_comment2_": " TODO: (Simons) x is categorised as function!",
     "ImpTimes011": {
       "expected": "x maal, open paren, y plus z, close paren"
     },
@@ -156,6 +158,7 @@
     "ImpTimes047": {
       "expected": "open bracket, 2 plus 7, close bracket, maal, open bracket, 3 minus 6, close bracket"
     },
+    "_comment3_": " TODO: (Simons) x is categorised as function!",
     "ImpTimes049": {
       "expected": "x maal, open paren, y plus z, close paren"
     },
@@ -276,6 +279,7 @@
     "ImpTimes085": {
       "expected": "open bracket, 2 plus 7, close bracket, open bracket, 3 minus 6, close bracket"
     },
+    "_comment4_": " TODO: (Simons) x is categorised as function!",
     "ImpTimes087": {
       "expected": "x, open paren, y plus z, close paren"
     },
@@ -321,6 +325,7 @@
     "ImpTimes101": {
       "expected": "f van x, is gelyk aan x kwadraat, open paren, x plus 1, close paren"
     },
+    "_comment5_": " TODO: (Simons) Need to be able to specify excluded preferences.",
     "ImpTimes103": {
       "expected": "sinus x kosinus y, plus, kosinus x sinus y"
     },
@@ -357,6 +362,7 @@
     "ImpTimes114": {
       "expected": "die absolute waarde van x plus 1, die absolute waarde van y, minus 1"
     },
+    "_comment6_": " No Implied Times and Silent Parenthesis Preferences both set",
     "ImpTimesSilPar001": {
       "expected": "2, open paren, 3, close paren"
     },
@@ -384,6 +390,7 @@
     "ImpTimesSilPar009": {
       "expected": "open bracket, 2 plus 7, close bracket, open bracket, 3 minus 6, close bracket"
     },
+    "_comment7_": " TODO: (Simons) x is categorised as function!",
     "ImpTimesSilPar011": {
       "expected": "x, open paren, y plus z, close paren"
     },
@@ -405,6 +412,7 @@
     "ImpTimesSilPar017": {
       "expected": "f van x, is gelyk aan x kwadraat, open paren, x plus 1, close paren"
     },
+    "_comment9_": " TODO: (Simons) Need to be able to specify excluded preferences.",
     "ImpTimesSilPar019": {
       "expected": "die logaritme van, open paren, x plus y, close paren, is gelyk aan, logaritme x logaritme y"
     },
@@ -423,6 +431,10 @@
     "ImpTimesSilPar024": {
       "expected": "2, open bracket, 3, open paren, open twee de paren, 4 plus 5, close twee de paren, plus 6, close paren, close bracket"
     },
+    "_comment11_": " Implied Times, Functions, or Something Else",
+    "_comment12_": " TODO: QUESTION What is exact speech? From MathType?",
+    "_comment13_": "       There is no preference ImpliedTimes_Rules. Reverted to Implied",
+    "_comment14_": "       Times_Auto.",
     "Extra001": {
       "expected": "A is gelyk aan h van, open paren, die breuk met teller, b onderskrif 1, plus, b onderskrif 2, en noemer 2, close paren"
     },
@@ -441,12 +453,16 @@
     "Extra006": {
       "expected": "a van negatiewe 1, is gelyk aan negatiewe a"
     },
+    "_comment15_": " TODO: (Simons) a is categorised as function!",
+    "_comment16_": " TODO: (Simons) a is categorised as function!",
+    "_comment17_": " TODO: (Simons) a is categorised as function!",
     "Extra010": {
       "expected": "B van, open paren, 2 komma 6, close paren"
     },
     "Extra012": {
       "expected": "B maal, open paren, 2 komma 6, close paren"
     },
+    "_comment18_": " TODO: (Simons) Explore exact speech.",
     "Extra014": {
       "expected": "p van w"
     },
@@ -456,11 +472,13 @@
     "Extra016": {
       "expected": "k van x, is gelyk aan, open paren, x plus 3, close paren, maal, open paren, x minus 5, close paren"
     },
+    "_comment19_": " TODO: (Simons) a is categorised as function!",
     "Extra018": {
       "expected": "T van t, is gelyk aan, T onderskrif s, plus, open paren, T onderskrif 0, minus, T onderskrif s, close paren, maal e verhef tot die negatiewe k t, mag"
     },
     "Extra019": {
       "expected": "V is gelyk aan skrif l, w van 8"
-    }
+    },
+    "_comment22_": " TODO: (Simons) Explore exact speech."
   }
 }

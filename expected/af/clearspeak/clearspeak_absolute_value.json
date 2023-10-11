@@ -9,6 +9,7 @@
   "exclude": [],
   "compare": true,
   "tests": {
+    "_comment1_": " Absolute Value",
     "Abs01": {
       "expected": "die absolute waarde van x"
     },
@@ -39,6 +40,7 @@
     "Determinant01": {
       "expected": "die determinant van M"
     },
+    "_comment2_": " Absolute Value (Determinants)",
     "AbsDet01": {
       "expected": "die determinant van die 2 by 2 matriks. Ry 1: 2, 1 Ry 2: 7, 5"
     },
