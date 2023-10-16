@@ -225,7 +225,7 @@ export function showFailed(regexp = /./, dryrun = true) {
  *
  * @param regexp A regular expression to filter output.
  */
-export function showMissing(regexp = /./) {
+export function showMissing(regexp = /./, dryrun = true) {
   const tests = new Tests();
   tests.runner
     .queryJsonTests((x) => [x, x.warn])
@@ -233,7 +233,7 @@ export function showMissing(regexp = /./) {
     .reduce(
       (p, [x]) => p.then(() => {
         console.log(x.jsonFile);
-        return addMissing(x.jsonFile, true)
+        return addMissing(x.jsonFile, dryrun)
       }),
       Promise.resolve());
 }
