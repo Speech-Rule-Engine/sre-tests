@@ -98,7 +98,7 @@
       "expected": "sinus 2 pi"
     },
     "Trig014": {
-      "expected": "die sinus van, open paren, pi k, plus, pi oor 2, close paren"
+      "expected": "die sinus van, links hakkie, pi k, plus, pi oor 2, regs hakkie"
     },
     "Trig015": {
       "expected": "die kosinus van, pi oor 2"
@@ -119,13 +119,13 @@
       "expected": "tangens negatiewe pi"
     },
     "Trig021": {
-      "expected": "die sinus van, open paren, x plus pi, close paren"
+      "expected": "die sinus van, links hakkie, x plus pi, regs hakkie"
     },
     "Trig022": {
-      "expected": "die kosinus van, open paren, x plus, pi oor 2, close paren"
+      "expected": "die kosinus van, links hakkie, x plus, pi oor 2, regs hakkie"
     },
     "Trig023": {
-      "expected": "die kosinus van, open paren, pi oor 2, plus x, close paren"
+      "expected": "die kosinus van, links hakkie, pi oor 2, plus x, regs hakkie"
     },
     "Trig024": {
       "expected": "sinus kwadraat x, plus, kosinus kwadraat x, is gelyk aan 1"
@@ -147,23 +147,23 @@
     },
     "_comment3_": " TODO: (Simons) Handles degrees as a postfix function.",
     "Trig031": {
-      "expected": "die tangens van, open paren, hoek D E F, close paren"
+      "expected": "die tangens van, links hakkie, hoek D E F, regs hakkie"
     },
     "Trig032": {
-      "expected": "die tangens van, open paren, hoek D, close paren"
+      "expected": "die tangens van, links hakkie, hoek D, regs hakkie"
     },
     "Trig033": {
-      "expected": "die sinus van, open paren, x plus y, close paren, is gelyk aan, sinus x kosinus y, plus, kosinus x sinus y"
+      "expected": "die sinus van, links hakkie, x plus y, regs hakkie, is gelyk aan, sinus x kosinus y, plus, kosinus x sinus y"
     },
     "Trig034": {
-      "expected": "die kosinus van, open paren, x plus y, close paren, is gelyk aan, kosinus x kosinus y, minus, sinus x sinus y"
+      "expected": "die kosinus van, links hakkie, x plus y, regs hakkie, is gelyk aan, kosinus x kosinus y, minus, sinus x sinus y"
     },
     "Trig035": {
-      "expected": "die tangens van, open paren, x plus y, close paren, is gelyk aan, die breuk met teller tangens x minus tangens y, en noemer 1 minus, tangens x tangens y"
+      "expected": "die tangens van, links hakkie, x plus y, regs hakkie, is gelyk aan, die breuk met teller tangens x minus tangens y, en noemer 1 minus, tangens x tangens y"
     },
     "_comment4_": " TODO: (Simons) Handle degrees as a postfix function.",
     "Trig037": {
-      "expected": "die tangens van, open paren, pi oor 6, plus, 2 pi oor 3, close paren, is gelyk aan, die breuk met teller, die tangens van, pi oor 6, minus, die tangens van, 2 pi oor 3, en noemer 1 minus, die tangens van, pi oor 6, die tangens van, 2 pi oor 3"
+      "expected": "die tangens van, links hakkie, pi oor 6, plus, 2 pi oor 3, regs hakkie, is gelyk aan, die breuk met teller, die tangens van, pi oor 6, minus, die tangens van, 2 pi oor 3, en noemer 1 minus, die tangens van, pi oor 6, die tangens van, 2 pi oor 3"
     },
     "Trig038": {
       "expected": "tangens 2 x, is gelyk aan, die breuk met teller 2 tangens x, en noemer 1 minus, tangens kwadraat x"
@@ -181,7 +181,7 @@
       "expected": "kosinus x kosinus y, is gelyk aan 2, die kosinus van, die breuk met teller x plus y, en noemer 2, die kosinus van, die breuk met teller x minus y, en noemer 2"
     },
     "Trig043": {
-      "expected": "die sinus van, open paren, negatiewe, pi oor 8, close paren, is gelyk aan negatiewe een  helfte die vierkantswortel van 2 minus die vierkantswortel van 2, end wortel, end wortel"
+      "expected": "die sinus van, links hakkie, negatiewe, pi oor 8, regs hakkie, is gelyk aan negatiewe een  helfte die vierkantswortel van 2 minus die vierkantswortel van 2, end wortel, end wortel"
     },
     "Trig044": {
       "expected": "die tangens van, 3 pi oor 8, is gelyk aan, die breuk met teller die vierkantswortel van, die vierkantswortel van 2, end wortel, plus 1, end wortel, en noemer die vierkantswortel van, die vierkantswortel van 2, end wortel, minus 1, end wortel"
@@ -233,10 +233,10 @@
       "expected": "die inverse kosinus van negatiewe x"
     },
     "TrigInvAuto015": {
-      "expected": "die inverse tangens van, open paren, negatiewe x plus 12, close paren"
+      "expected": "die inverse tangens van, links hakkie, negatiewe x plus 12, regs hakkie"
     },
     "TrigInvAuto016": {
-      "expected": "die inverse kotangens van, open paren, negatiewe x minus 1, close paren"
+      "expected": "die inverse kotangens van, links hakkie, negatiewe x minus 1, regs hakkie"
     },
     "TrigInvAuto017": {
       "expected": "die inverse sinus van sinus 0"
@@ -245,13 +245,13 @@
       "expected": "die inverse kosekans van kosekans x"
     },
     "TrigInvAuto019": {
-      "expected": "die kosinus van, open paren, die inverse kosinus van, open paren, negatiewe, die breuk met teller die vierkantswortel van 2, en noemer 2, close paren, close paren"
+      "expected": "die kosinus van, links hakkie, die inverse kosinus van, links hakkie, negatiewe, die breuk met teller die vierkantswortel van 2, en noemer 2, regs hakkie, regs hakkie"
     },
     "TrigInvAuto020": {
-      "expected": "die kosinus van, open paren, negatiewe, die inverse kosinus van, open paren, die breuk met teller die vierkantswortel van 2, en noemer 2, close paren, close paren"
+      "expected": "die kosinus van, links hakkie, negatiewe, die inverse kosinus van, links hakkie, die breuk met teller die vierkantswortel van 2, en noemer 2, regs hakkie, regs hakkie"
     },
     "TrigInvAuto021": {
-      "expected": "die inverse sinus van, open paren, die kosinus van, pi oor 4, close paren"
+      "expected": "die inverse sinus van, links hakkie, die kosinus van, pi oor 4, regs hakkie"
     },
     "TrigInvAuto022": {
       "expected": "sinus, die inverse kosinus van een  helfte"
@@ -260,10 +260,10 @@
       "expected": "sinus, die inverse tangens van 1"
     },
     "TrigInvAuto024": {
-      "expected": "die sinus van, open paren, negatiewe, die inverse tangens van 1, close paren"
+      "expected": "die sinus van, links hakkie, negatiewe, die inverse tangens van 1, regs hakkie"
     },
     "TrigInvAuto025": {
-      "expected": "die sinus van, open paren, negatiewe, die inverse tangens van negatiewe 1, close paren"
+      "expected": "die sinus van, links hakkie, negatiewe, die inverse tangens van negatiewe 1, regs hakkie"
     },
     "TrigInvAuto026": {
       "expected": "die inverse sekans van sekans x"
@@ -312,10 +312,10 @@
       "expected": "kosinus inverse van negatiewe x"
     },
     "TrigInverse015": {
-      "expected": "tangens inverse van, open paren, negatiewe x plus 12, close paren"
+      "expected": "tangens inverse van, links hakkie, negatiewe x plus 12, regs hakkie"
     },
     "TrigInverse016": {
-      "expected": "kotangens inverse van, open paren, negatiewe x minus 1, close paren"
+      "expected": "kotangens inverse van, links hakkie, negatiewe x minus 1, regs hakkie"
     },
     "TrigInverse017": {
       "expected": "sinus inverse van sinus 0"
@@ -324,13 +324,13 @@
       "expected": "kosekans inverse van kosekans x"
     },
     "TrigInverse019": {
-      "expected": "die kosinus van, open paren, kosinus inverse van, open paren, negatiewe, die breuk met teller die vierkantswortel van 2, en noemer 2, close paren, close paren"
+      "expected": "die kosinus van, links hakkie, kosinus inverse van, links hakkie, negatiewe, die breuk met teller die vierkantswortel van 2, en noemer 2, regs hakkie, regs hakkie"
     },
     "TrigInverse020": {
-      "expected": "die kosinus van, open paren, negatiewe, kosinus inverse van, open paren, die breuk met teller die vierkantswortel van 2, en noemer 2, close paren, close paren"
+      "expected": "die kosinus van, links hakkie, negatiewe, kosinus inverse van, links hakkie, die breuk met teller die vierkantswortel van 2, en noemer 2, regs hakkie, regs hakkie"
     },
     "TrigInverse021": {
-      "expected": "sinus inverse van, open paren, die kosinus van, pi oor 4, close paren"
+      "expected": "sinus inverse van, links hakkie, die kosinus van, pi oor 4, regs hakkie"
     },
     "TrigInverse022": {
       "expected": "sinus, kosinus inverse van een  helfte"
@@ -339,10 +339,10 @@
       "expected": "sinus, tangens inverse van 1"
     },
     "TrigInverse024": {
-      "expected": "die sinus van, open paren, negatiewe, tangens inverse van 1, close paren"
+      "expected": "die sinus van, links hakkie, negatiewe, tangens inverse van 1, regs hakkie"
     },
     "TrigInverse025": {
-      "expected": "die sinus van, open paren, negatiewe, tangens inverse van negatiewe 1, close paren"
+      "expected": "die sinus van, links hakkie, negatiewe, tangens inverse van negatiewe 1, regs hakkie"
     },
     "TrigInverse026": {
       "expected": "sekans inverse van sekans x"
@@ -390,10 +390,10 @@
       "expected": "boog kosinus negatiewe x"
     },
     "ArcTrig015": {
-      "expected": "boog tangens van, open paren, negatiewe x plus 12, close paren"
+      "expected": "boog tangens van, links hakkie, negatiewe x plus 12, regs hakkie"
     },
     "ArcTrig016": {
-      "expected": "boog kotangens van, open paren, negatiewe x minus 1, close paren"
+      "expected": "boog kotangens van, links hakkie, negatiewe x minus 1, regs hakkie"
     },
     "ArcTrig017": {
       "expected": "boog sinus, sinus 0"
@@ -402,13 +402,13 @@
       "expected": "boog kosekans, kosekans x"
     },
     "ArcTrig019": {
-      "expected": "die kosinus van, open paren, boog kosinus van, open paren, negatiewe, die breuk met teller die vierkantswortel van 2, en noemer 2, close paren, close paren"
+      "expected": "die kosinus van, links hakkie, boog kosinus van, links hakkie, negatiewe, die breuk met teller die vierkantswortel van 2, en noemer 2, regs hakkie, regs hakkie"
     },
     "ArcTrig020": {
-      "expected": "die kosinus van, open paren, negatiewe, boog kosinus van, open paren, die breuk met teller die vierkantswortel van 2, en noemer 2, close paren, close paren"
+      "expected": "die kosinus van, links hakkie, negatiewe, boog kosinus van, links hakkie, die breuk met teller die vierkantswortel van 2, en noemer 2, regs hakkie, regs hakkie"
     },
     "ArcTrig021": {
-      "expected": "boog sinus van, open paren, die kosinus van, pi oor 4, close paren"
+      "expected": "boog sinus van, links hakkie, die kosinus van, pi oor 4, regs hakkie"
     },
     "ArcTrig022": {
       "expected": "sinus, boog kosinus een  helfte"
@@ -417,10 +417,10 @@
       "expected": "sinus, boog tangens 1"
     },
     "ArcTrig024": {
-      "expected": "die sinus van, open paren, negatiewe, boog tangens 1, close paren"
+      "expected": "die sinus van, links hakkie, negatiewe, boog tangens 1, regs hakkie"
     },
     "ArcTrig025": {
-      "expected": "die sinus van, open paren, negatiewe, boog tangens negatiewe 1, close paren"
+      "expected": "die sinus van, links hakkie, negatiewe, boog tangens negatiewe 1, regs hakkie"
     },
     "ArcTrig026": {
       "expected": "boog sekans, sekans x"
