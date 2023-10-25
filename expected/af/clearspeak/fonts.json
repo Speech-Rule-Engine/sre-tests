@@ -31,13 +31,13 @@
       "expected": "vetgedruk skrif A"
     },
     "LatinMathfontsUpper_7": {
-      "expected": "Duits A"
+      "expected": "fraktur A"
     },
     "LatinMathfontsUpper_8": {
-      "expected": "dubbelgeslaan A"
+      "expected": "A dubbelgeslaan"
     },
     "LatinMathfontsUpper_9": {
-      "expected": "kursief Duits A"
+      "expected": "vetgedruk fraktur A"
     },
     "LatinMathfontsUpper_10": {
       "expected": "sans serif A"
@@ -94,13 +94,13 @@
       "expected": "vetgedruk skrif a"
     },
     "LatinMathfontsSmall_7": {
-      "expected": "Duits a"
+      "expected": "fraktur a"
     },
     "LatinMathfontsSmall_8": {
-      "expected": "dubbelgeslaan a"
+      "expected": "a dubbelgeslaan"
     },
     "LatinMathfontsSmall_9": {
-      "expected": "kursief Duits a"
+      "expected": "vetgedruk fraktur a"
     },
     "LatinMathfontsSmall_10": {
       "expected": "sans serif a"
@@ -154,13 +154,13 @@
       "expected": "vetgedruk skrif A"
     },
     "LatinMathvariantUpper_6": {
-      "expected": "Duits A"
+      "expected": "fraktur A"
     },
     "LatinMathvariantUpper_7": {
-      "expected": "dubbelgeslaan A"
+      "expected": "A dubbelgeslaan"
     },
     "LatinMathvariantUpper_8": {
-      "expected": "kursief Duits A"
+      "expected": "vetgedruk fraktur A"
     },
     "LatinMathvariantUpper_9": {
       "expected": "sans serif A"
@@ -229,13 +229,13 @@
       "expected": "vetgedruk skrif a"
     },
     "LatinMathvariantSmall_6": {
-      "expected": "Duits a"
+      "expected": "fraktur a"
     },
     "LatinMathvariantSmall_7": {
-      "expected": "dubbelgeslaan a"
+      "expected": "a dubbelgeslaan"
     },
     "LatinMathvariantSmall_8": {
-      "expected": "kursief Duits a"
+      "expected": "vetgedruk fraktur a"
     },
     "LatinMathvariantSmall_9": {
       "expected": "sans serif a"
@@ -292,13 +292,13 @@
       "expected": "vetgedruk skrif A"
     },
     "LatinFontVariantsUpper_7": {
-      "expected": "Duits A"
+      "expected": "fraktur A"
     },
     "LatinFontVariantsUpper_8": {
-      "expected": "dubbelgeslaan A"
+      "expected": "A dubbelgeslaan"
     },
     "LatinFontVariantsUpper_9": {
-      "expected": "kursief Duits A"
+      "expected": "vetgedruk fraktur A"
     },
     "LatinFontVariantsUpper_10": {
       "expected": "sans serif A"
@@ -355,13 +355,13 @@
       "expected": "vetgedruk skrif a"
     },
     "LatinFontVariantsSmall_7": {
-      "expected": "Duits a"
+      "expected": "fraktur a"
     },
     "LatinFontVariantsSmall_8": {
-      "expected": "dubbelgeslaan a"
+      "expected": "a dubbelgeslaan"
     },
     "LatinFontVariantsSmall_9": {
-      "expected": "kursief Duits a"
+      "expected": "vetgedruk fraktur a"
     },
     "LatinFontVariantsSmall_10": {
       "expected": "sans serif a"
@@ -406,7 +406,7 @@
       "expected": "vetgedruk 0"
     },
     "DigitsMathfonts_3": {
-      "expected": "dubbelgeslaan 0"
+      "expected": "0 dubbelgeslaan"
     },
     "DigitsMathfonts_4": {
       "expected": "sans serif 0"
@@ -436,13 +436,13 @@
       "expected": "vetgedruk skrif 0"
     },
     "DigitsMathvariant_6": {
-      "expected": "Duits 0"
+      "expected": "fraktur 0"
     },
     "DigitsMathvariant_7": {
-      "expected": "dubbelgeslaan 0"
+      "expected": "0 dubbelgeslaan"
     },
     "DigitsMathvariant_8": {
-      "expected": "kursief Duits 0"
+      "expected": "vetgedruk fraktur 0"
     },
     "DigitsMathvariant_9": {
       "expected": "sans serif 0"
@@ -466,7 +466,7 @@
       "expected": "vetgedruk 0"
     },
     "DigitsFontVariants_3": {
-      "expected": "dubbelgeslaan 0"
+      "expected": "0 dubbelgeslaan"
     },
     "DigitsFontVariants_4": {
       "expected": "sans serif 0"
@@ -476,6 +476,48 @@
     },
     "DigitsFontVariants_6": {
       "expected": "monospasie 0"
+    },
+    "SpecialFont_0": {
+      "expected": "skrif skript l"
+    },
+    "SpecialFont_1": {
+      "expected": "skrif skript hoofletter p"
+    },
+    "SpecialFont_2": {
+      "expected": "pi dubbelgeslaan"
+    },
+    "SpecialFont_3": {
+      "expected": "gamma dubbelgeslaan"
+    },
+    "SpecialFont_4": {
+      "expected": "gamma dubbelgeslaan"
+    },
+    "SpecialFont_5": {
+      "expected": "Pi dubbelgeslaan"
+    },
+    "SpecialFont_6": {
+      "expected": "sommeer dubbelgeslaan"
+    },
+    "SpecialFont_7": {
+      "expected": "dubbelgeslaande kursief d"
+    },
+    "SpecialFont_8": {
+      "expected": "dubbelgeslaande kursief d"
+    },
+    "SpecialFont_9": {
+      "expected": "dubbelgeslaande kursief e"
+    },
+    "SpecialFont_10": {
+      "expected": "dubbelgeslaande kursief i"
+    },
+    "SpecialFont_11": {
+      "expected": "dubbelgeslaande kursief j"
+    },
+    "SpecialFont_12": {
+      "expected": "puntlose i"
+    },
+    "SpecialFont_13": {
+      "expected": "puntlose j"
     }
   }
 }

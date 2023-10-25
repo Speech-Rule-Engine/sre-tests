@@ -23,7 +23,7 @@
       "expected": "die logaritme basis b van, S oor T, is gelyk aan, die logaritme basis b van, S, minus, die logaritme basis b van, T"
     },
     "Log005": {
-      "expected": "die logaritme basis b van, open paren, x tot die k-de mag, close paren, is gelyk aan k, die logaritme basis b van, x"
+      "expected": "die logaritme basis b van, links hakkie, x tot die k-de mag, regs hakkie, is gelyk aan k, die logaritme basis b van, x"
     },
     "Log006": {
       "expected": "10 verhef tot die logaritme basis 10 van, x, mag, is gelyk aan x"
@@ -47,19 +47,19 @@
       "expected": "logaritme x oor logaritme a"
     },
     "Log013": {
-      "expected": "die logaritme van, open paren, x plus 1, close paren"
+      "expected": "die logaritme van, links hakkie, x plus 1, regs hakkie"
     },
     "Log014": {
-      "expected": "die logaritme van, open paren, x plus 1, close paren, kwadraat"
+      "expected": "die logaritme van, links hakkie, x plus 1, regs hakkie, kwadraat"
     },
     "Log015": {
       "expected": "logaritme x y"
     },
     "Log016": {
-      "expected": "die breuk met teller, die logaritme van, open paren, x plus 1, close paren, en noemer, die logaritme van, open paren, x plus 2, close paren"
+      "expected": "die breuk met teller, die logaritme van, links hakkie, x plus 1, regs hakkie, en noemer, die logaritme van, links hakkie, x plus 2, regs hakkie"
     },
     "Log017": {
-      "expected": "die breuk met teller, die logaritme basis 6 van, open paren, x plus 1, close paren, en noemer, die logaritme basis 6 van, open paren, x plus 2, close paren"
+      "expected": "die breuk met teller, die logaritme basis 6 van, links hakkie, x plus 1, regs hakkie, en noemer, die logaritme basis 6 van, links hakkie, x plus 2, regs hakkie"
     },
     "Log018": {
       "expected": "die breuk met teller logaritme 40 plus logaritme 60, en noemer logaritme 5"
@@ -68,14 +68,14 @@
       "expected": "die breuk met teller, die logaritme basis 3 van, 40, plus, die logaritme basis 3 van, 60, en noemer, die logaritme basis 3 van, 5"
     },
     "Log020": {
-      "expected": "die logaritme van, open paren, 3 tot die vier de mag, 12 tot die negende mag, close paren, is gelyk aan 4 logaritme 3, plus 9 logaritme 12"
+      "expected": "die logaritme van, links hakkie, 3 tot die vierde mag, 12 tot die negende mag, regs hakkie, is gelyk aan 4 logaritme 3, plus 9 logaritme 12"
     },
     "Log021": {
-      "expected": "die logaritme van, open paren, x oor y, close paren"
+      "expected": "die logaritme van, links hakkie, x oor y, regs hakkie"
     },
     "_comment2_": " TODO: Fix the vulgar fraction predicate!",
     "Log022": {
-      "expected": "die logaritme van, open paren, die breuk met teller 3 tot die vier de mag, en noemer 8 tot die tien de mag, close paren, is gelyk aan 4 logaritme 3, minus 10 logaritme 8"
+      "expected": "die logaritme van, links hakkie, die breuk met teller 3 tot die vierde mag, en noemer 8 tot die tiende mag, regs hakkie, is gelyk aan 4 logaritme 3, minus 10 logaritme 8"
     },
     "Log023": {
       "expected": "10 verhef tot die logaritme x mag"
@@ -84,16 +84,16 @@
       "expected": "l n x"
     },
     "NatLog002": {
-      "expected": "l n x, minus l n van, open paren, x minus 1, close paren, is gelyk aan l n van, open paren, die breuk met teller x, en noemer x minus 1, close paren"
+      "expected": "l n x, minus l n van, links hakkie, x minus 1, regs hakkie, is gelyk aan l n van, links hakkie, die breuk met teller x, en noemer x minus 1, regs hakkie"
     },
     "NatLog003": {
-      "expected": "l n van, open paren, e tot die x-de mag, close paren, is gelyk aan x"
+      "expected": "l n van, links hakkie, e tot die x-de mag, regs hakkie, is gelyk aan x"
     },
     "NatLog004": {
       "expected": "e verhef tot die l n x mag, is gelyk aan x"
     },
     "NatLog005": {
-      "expected": "l n van, open paren, e tot die x-de mag, close paren, is gelyk aan x"
+      "expected": "l n van, links hakkie, e tot die x-de mag, regs hakkie, is gelyk aan x"
     },
     "NatLog006": {
       "expected": "e verhef tot die l n 4 mag, is gelyk aan 4"
@@ -108,16 +108,16 @@
       "expected": "natuurlike logaritme x"
     },
     "NatLog010": {
-      "expected": "natuurlike logaritme x, minus, die natuurlike logaritme van, open paren, x minus 1, close paren, is gelyk aan, die natuurlike logaritme van, open paren, die breuk met teller x, en noemer x minus 1, close paren"
+      "expected": "natuurlike logaritme x, minus, die natuurlike logaritme van, links hakkie, x minus 1, regs hakkie, is gelyk aan, die natuurlike logaritme van, links hakkie, die breuk met teller x, en noemer x minus 1, regs hakkie"
     },
     "NatLog011": {
-      "expected": "die natuurlike logaritme van, open paren, e tot die x-de mag, close paren, is gelyk aan x"
+      "expected": "die natuurlike logaritme van, links hakkie, e tot die x-de mag, regs hakkie, is gelyk aan x"
     },
     "NatLog012": {
       "expected": "e verhef tot die natuurlike logaritme x mag, is gelyk aan x"
     },
     "NatLog013": {
-      "expected": "die natuurlike logaritme van, open paren, e tot die x-de mag, close paren, is gelyk aan x"
+      "expected": "die natuurlike logaritme van, links hakkie, e tot die x-de mag, regs hakkie, is gelyk aan x"
     },
     "NatLog014": {
       "expected": "e verhef tot die natuurlike logaritme 4 mag, is gelyk aan 4"
