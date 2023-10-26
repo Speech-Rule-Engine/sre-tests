@@ -4,7 +4,7 @@
     "target": "ES6",
     "module": "nodenext",
     "moduleResolution": "nodenext",
-    "declaration": true,
+    "declaration": false,
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
@@ -12,6 +12,7 @@
     "removeComments": true,
     "downlevelIteration": true,
     "noLib": false,
+    "skipLibCheck": true,
     "alwaysStrict": true,
     "sourceMap": false,
     "paths": {

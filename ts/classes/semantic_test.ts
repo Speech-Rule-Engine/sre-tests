@@ -334,7 +334,8 @@ export class SemanticTreeTest extends SemanticBlacklistTest {
     const xmls = new xmldom.XMLSerializer();
     this.customizeXml(sxml);
     const dp = new xmldom.DOMParser();
-    const xml = dp.parseFromString(this.prepareStree(sml), 'text/xml');
+    const xml = dp.parseFromString(
+      this.prepareStree(sml), xmldom.MIME_TYPE.XML_TEXT);
     this.assert.equal(
       xmls.serializeToString(sxml),
       xmls.serializeToString(xml)
