@@ -1,5 +1,8 @@
-const path = require('path');
-const TerserPlugin = require('terser-webpack-plugin');
+import * as path from 'path';
+import TerserPlugin from 'terser-webpack-plugin';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 let config = {
   module: {
@@ -44,4 +47,4 @@ let harvestConfig = Object.assign({}, config, {
   }
 });
 
-module.exports = [harvestConfig]; 
+export default [harvestConfig]; 

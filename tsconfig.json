@@ -2,9 +2,9 @@
   "compileOnSave": true,
   "compilerOptions": {
     "target": "ES6",
-    "module": "es2022",
+    "module": "nodenext",
     "moduleResolution": "nodenext",
-    "declaration": false,
+    "declaration": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
@@ -22,7 +22,7 @@
       "./node_modules/@types",
       "./node_modules/mathjax-full/js"
     ],
-    "types": ["node", "jest"],
+    "types": ["jest"],
     "outDir": "js"
   },
   "include": [
