@@ -6,21 +6,22 @@
     "test": "tests"
   },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "format": "prettier --check ts/",
     "format-fix": "prettier --write ts/",
     "lint": "eslint ts/ --ext .ts,.tsx",
     "lint-fix": "eslint ts/ --ext .ts,.tsx --fix",
     "compile": "./node_modules/.bin/tsc",
-    "prepare": "npm run clean; node tests.config.js; npm run compile",
+    "prepare": "pnpm clean; node tests.config.js; pnpm compile",
     "webpack": "./node_modules/.bin/webpack",
-    "test": "npm run test:files",
-    "test:all": "npm run test:files; npm run test:output; npm run test:analytics",
-    "test:files": "npx jest --testPathIgnorePatterns js/output --testPathIgnorePatterns js/analyse",
-    "test:output": "npx jest --testPathPattern js/output",
-    "test:analytics": "npx rimraf analysis; npx jest --testPathPattern js/analyse; npm run test:allrules",
+    "test": "pnpm test:files",
+    "test:all": "pnpm test:files; pnpm test:output; pnpm test:analytics",
+    "test:files": "pnpm jest --testPathIgnorePatterns js/output --testPathIgnorePatterns js/analyse",
+    "test:output": "pnpm jest --testPathPattern js/output",
+    "test:analytics": "pnpm rimraf analysis; pnpm jest --testPathPattern js/analyse; pnpm test:allrules",
     "test:allrules": "echo \"import('./js/module_loader.js').then((m) => m.loadPromise('at')).then(m => m.default.outputAllRules())\" | node ",
     "analyse:tries": "echo \"import('./js/module_loader.js').then((m) => m.loadPromise('atrie')).then(m => m.default.output())\" | node ",
-    "clean": "npx rimraf dist js ts/output ts/json ts/analyse ts/actions coverage"
+    "clean": "pnpm rimraf dist js ts/output ts/json ts/analyse ts/actions coverage"
   },
   "maintainers": [
     "Volker Sorge <Volker.Sorge@gmail.com> (http://www.cs.bham.ac.uk/~vxs)"
@@ -63,6 +64,7 @@
     "eslint": "8.52.0",
     "eslint-plugin-import": "2.29.0",
     "eslint-plugin-jsdoc": "46.8.2",
+    "only-allow": "^1.2.1",
     "prettier": "^3.0.3",
     "rimraf": "^5.0.5",
     "terser-webpack-plugin": "5.3.9",
