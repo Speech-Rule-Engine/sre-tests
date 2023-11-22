@@ -324,9 +324,17 @@ export function copySemanticTest(base: string, fill: boolean = false, targetdir?
     factory: 'semanticApi',
     tests: 'ALL'
   });
+  // createSemanticTestFile(sourcedir, targetdir, 'semantic_skeleton', basename, info, {
+  //   factory: 'semanticSkeleton',
+  //   tests: 'ALL'
+  // });
+  createSemanticTestFile(sourcedir, targetdir, 'semantic_exploration', basename, info, {
+    factory: 'semanticExploration'
+  });
   if (fill) {
     addMissing(path.join(targetdir, 'enrich_mathml', basename));
     addMissing(path.join(targetdir, 'semantic_tree', basename));
+    addMissing(path.join(targetdir, 'semantic_exploration', basename));
   }
 }
 
@@ -365,4 +373,12 @@ function createSemanticTestFile(
     init.tests = {};
   }
   TestUtil.saveJson(path.join(TestPath.EXPECTED, filename), init);
+}
+
+
+export function copyAllSemanticTests(base: string, fill: boolean = false) {
+  const files = TestUtil.readDir(base);
+  for (let file of files) {
+    copySemanticTest(file.replace('input/', ''), fill, 'semantic');
+  }
 }

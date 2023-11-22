@@ -6,7 +6,6 @@
     "test": "tests"
   },
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "format": "prettier --check ts/",
     "format-fix": "prettier --write ts/",
     "lint": "eslint ts/ --ext .ts,.tsx",

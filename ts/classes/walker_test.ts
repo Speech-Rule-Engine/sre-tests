@@ -129,3 +129,136 @@ export class WalkerTest extends AbstractJsonTest {
     );
   }
 }
+
+import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich.js';
+import { enrich } from '../../speech-rule-engine/js/enrich_mathml/enrich_mathml.js';
+import { SemanticTree } from '../../speech-rule-engine/js/semantic_tree/semantic_tree.js';
+import { SemanticSkeleton } from '../../speech-rule-engine/js/semantic_tree/semantic_skeleton.js'
+
+/**
+ *
+ * Semantic Skeleton and walking structure related functionality and tests.
+ *
+ */
+// Full DFS exploration of the semantic tree using a syntax table walker.
+export class ExplorationTest extends AbstractJsonTest {
+
+  private walker: Walker;
+
+  /**
+   * @override
+   */
+  public method() {
+    this.executeTest(
+      this.field('input'),
+      this.field('expected')
+    );
+  }
+
+  /**
+   * @override
+   */
+  public executeTest(expr: string, expected: number[] | number) {
+    const mml = DomUtil.parseInput(Enrich.prepareMmlString(expr));
+    const stree = new SemanticTree(mml);
+    const emml = enrich(mml, stree);
+    this.walker = WalkerFactory.walker(
+      'table',
+      emml,
+      SpeechGeneratorFactory.generator('dummy'),
+      HighlighterFactory.highlighter(
+        { color: 'black' },
+        { color: 'white' },
+        { renderer: 'NativeMML'}),
+      emml.toString()
+    );
+    // this.assert.equal(ExplorationTest.dfs(this.walker), expected);
+    expect(ExplorationTest.dfs(this.walker)).toEqual(expected);
+  }
+
+  private static dfs(walker: Walker) {
+    const id = (walker.getFocus() as any).primary.id;
+    let result = id;
+    if (walker.move(Key.get('DOWN'))) {
+      result = [result, ExplorationTest.dfs(walker)];
+    } else {
+      return result;
+    }
+  while (walker.move(Key.get('RIGHT'))) {
+    result.push(ExplorationTest.dfs(walker));
+  }
+  walker.move(Key.get('UP'));
+  return result;
+  }
+
+}
+
+export class SemanticSkeletonTest extends AbstractJsonTest {
+
+  private walker: Walker;
+
+  /**
+   * @override
+   */
+  public method() {
+    this.executeTest(
+      this.field('input')
+    );
+  }
+
+  /**
+   * @override
+   */
+  public executeTest(expr: string) {
+    const mml = DomUtil.parseInput(Enrich.prepareMmlString(expr));
+    const stree = new SemanticTree(mml);
+    const emml = enrich(mml, stree);
+    this.walker = WalkerFactory.walker(
+      'table',
+      emml,
+      SpeechGeneratorFactory.generator('dummy'),
+      HighlighterFactory.highlighter(
+        { color: 'black' },
+        { color: 'white' },
+        { renderer: 'NativeMML'}),
+      emml.toString()
+    );
+    const explore = this.explore();
+    const structure = SemanticSkeleton.fromStructure(
+      this.walker.getXml(), this.walker.getRebuilt().stree).toString()
+    this.assert.equal(
+      explore,
+      structure
+    );
+  }
+
+  private explore() {
+    return SemanticSkeletonTest.makeString(
+      SemanticSkeletonTest.dfs(this.walker)
+    );
+  }
+  
+  private static dfs(walker: Walker) {
+    const id = (walker.getFocus() as any).primary.id;
+    let result = id;
+    if (walker.move(Key.get('DOWN'))) {
+      result = [result, SemanticSkeletonTest.dfs(walker)];
+    } else {
+      return result;
+    }
+  while (walker.move(Key.get('RIGHT'))) {
+    result.push(SemanticSkeletonTest.dfs(walker));
+  }
+  walker.move(Key.get('UP'));
+  return result;
+  }
+
+  private static makeString(sexp: number[] | number): string {
+    if (Array.isArray(sexp)) {
+      return `(${sexp.map(SemanticSkeletonTest.makeString).join(' ')})`;
+    }
+    return sexp.toString();
+  }
+
+
+}

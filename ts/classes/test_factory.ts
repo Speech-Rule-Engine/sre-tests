@@ -36,7 +36,7 @@ import { SpeechRuleTest } from './speech_rule_test.js';
 import { SpeechTest } from './speech_test.js';
 import { SummaryTest, SummarySpeechTest } from './summary_test.js';
 import { SymbolTest } from './symbol_test.js';
-import { WalkerTest } from './walker_test.js';
+import { ExplorationTest, WalkerTest, SemanticSkeletonTest } from './walker_test.js';
 
 const map = new Map<string, any>([
   ['api', ApiTest],
@@ -58,8 +58,10 @@ const map = new Map<string, any>([
   ['rebuildEnriched', st.RebuildEnrichedTest],
   ['rules', SpeechRuleTest],
   ['semanticApi', st.SemanticApiTest],
+  ['semanticExploration', ExplorationTest],
   ['semanticMeaning', st.SemanticMeaningTest],
   ['semanticMap', st.SemanticMapTest],
+  ['semanticSkeleton', SemanticSkeletonTest],
   ['semanticXml', st.SemanticXmlTest],
   ['speech', SpeechTest],
   ['speechMarkup', SpeechMarkupTest],
