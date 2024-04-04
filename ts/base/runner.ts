@@ -17,8 +17,7 @@
  */
 
 import * as process from 'process';
-import { AbstractTest } from '../classes/abstract_test.js';
-import { AbstractJsonTest } from '../classes/abstract_test.js';
+import { AbstractJsonTest, AbstractTest } from '../classes/abstract_test.js';
 
 enum Warning {
   NONE,
