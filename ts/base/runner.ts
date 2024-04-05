@@ -149,7 +149,7 @@ export class TestRunner {
    * @param func The actual test function.
    */
   public executeJsonTest(name: string, func: () => any) {
-    this.executeTest(name, func());
+    this.executeTest(name, func);
   }
 
   /**
@@ -313,7 +313,7 @@ export class TestRunner {
       this.failedTests_.push(name);
       return;
     }
-    this.outputEnd(2, '[PASS]', Color.GREEN);
+    this.outputEnd(1, '[PASS]', Color.GREEN);
     this.succeededTests_.push(name);
     return;
   }

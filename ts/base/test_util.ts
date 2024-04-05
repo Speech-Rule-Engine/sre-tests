@@ -19,8 +19,13 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
+declare let global: any;
+declare let process: any;
+
 function getDir() {
-  return __dirname;
+  return process.env.SRE_TEST_PATH ||
+    global.SRE_TEST_PATH || process.cwd();
+  // return __dirname;
 }
 const TestDir = getDir().replace(/(dist|js\/base)$/, '');
 
