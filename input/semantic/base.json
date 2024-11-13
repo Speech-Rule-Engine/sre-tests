@@ -685,6 +685,48 @@
     },
     "issue451_6": {
       "input": "<mi>M</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><mrow><mrow><mi>l</mi><mi>i</mi></mrow><mo>&#x2061;</mo><mi>M</mi></mrow><mi>x</mi>"
+    },
+    "Mglyph_Mixed_Token_0": {
+      "input": "<mi><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/>a</mi>"
+    },
+    "Mglyph_Mixed_Token_1": {
+      "input": "<mo><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/>+</mo>"
+    },
+    "Mglyph_Mixed_Token_2": {
+      "input": "<mn><mglyph src=\"my-glyph.png\" alt=\"my glyph\"/>2</mn>"
+    },
+    "Mglyph_Mixed_Token_3": {
+      "input": "<mi>a<mglyph src=\"my-glyph.png\" alt=\"my glyph\"/>a</mi>"
+    },
+    "Mglyph_Mixed_Token_4": {
+      "input": "<mo>+<mglyph src=\"my-glyph.png\" alt=\"my glyph\"/>+</mo>"
+    },
+    "Mglyph_Mixed_Token_5": {
+      "input": "<mn>2<mglyph src=\"my-glyph.png\" alt=\"my glyph\"/>2</mn>"
+    },
+    "Mglyph_Mixed_Token_6": {
+      "input": "<mi>a<mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mi>"
+    },
+    "Mglyph_Mixed_Token_7": {
+      "input": "<mo>+<mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mo>"
+    },
+    "Mglyph_Mixed_Token_8": {
+      "input": "<mn>2<mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mn>"
+    },
+    "Mglyph_Mixed_Token_9": {
+      "input": "<mi>a</mi><mo>+<mglyph src=\"my-glyph.png\" alt=\"my glyph\"/></mo><mi>b</mi>"
+    },
+    "Html_issue_0": {
+      "input": "<mo><div>a</div>a</mo>"
+    },
+    "Html_issue_1": {
+      "input": "<mtext><span>y</span></mtext>"
+    },
+    "Html_issue_2": {
+      "input": "<mi>x</mi><mtext><span>y</span></mtext>"
+    },
+    "Html_issue_3": {
+      "input": "<mi>x</mi><mtext><span>y</span></mtext><mi>y</mi>"
     }
   }
 }
