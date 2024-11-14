@@ -805,6 +805,66 @@
     },
     "issue451_6": {
       "expected": "<stree><relseq role=\"equality\" id=\"19\">=<content><relation role=\"equality\" id=\"4\">=</relation></content><children><appl role=\"simple function\" annotation=\"clearspeak:simple\" id=\"16\"><content><punctuation role=\"application\" id=\"15\">⁡</punctuation><identifier role=\"simple function\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">M</identifier></content><children><identifier role=\"simple function\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">M</identifier><fenced role=\"leftright\" id=\"14\"><content><fence role=\"open\" id=\"1\">(</fence><fence role=\"close\" id=\"3\">)</fence></content><children><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"2\">t</identifier></children></fenced></children></appl><infixop role=\"implicit\" annotation=\"clearspeak:unit\" id=\"18\">⁢<content><operator role=\"multiplication\" id=\"17\">⁢</operator></content><children><appl role=\"implicit\" id=\"12\"><content><punctuation role=\"application\" id=\"11\">⁡</punctuation></content><children><infixop role=\"implicit\" annotation=\"clearspeak:simple;clearspeak:unit\" id=\"8\">⁢<content><operator role=\"multiplication\" id=\"7\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"5\">l</identifier><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"6\">i</identifier></children></infixop><identifier role=\"simple function\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"10\">M</identifier></children></appl><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"13\">x</identifier></children></infixop></children></relseq></stree>"
+    },
+    "Mglyph_Mixed_Token_0": {
+      "expected": "<stree><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">a</identifier></stree>"
+    },
+    "Mglyph_Mixed_Token_1": {
+      "expected": "<stree><operator role=\"addition\" id=\"0\">+</operator></stree>"
+    },
+    "Mglyph_Mixed_Token_2": {
+      "expected": "<stree><number role=\"integer\" font=\"normal\" annotation=\"clearspeak:simple\" id=\"0\">2</number></stree>"
+    },
+    "Mglyph_Mixed_Token_3": {
+      "expected": "<stree><identifier role=\"unknown\" font=\"normal\" id=\"0\">aa</identifier></stree>"
+    },
+    "Mglyph_Mixed_Token_4": {
+      "expected": "<stree><operator role=\"addition\" id=\"0\">++</operator></stree>"
+    },
+    "Mglyph_Mixed_Token_5": {
+      "expected": "<stree><number role=\"integer\" font=\"normal\" annotation=\"clearspeak:simple\" id=\"0\">22</number></stree>"
+    },
+    "Mglyph_Mixed_Token_6": {
+      "expected": "<stree><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">a</identifier></stree>"
+    },
+    "Mglyph_Mixed_Token_7": {
+      "expected": "<stree><operator role=\"addition\" id=\"0\">+</operator></stree>"
+    },
+    "Mglyph_Mixed_Token_8": {
+      "expected": "<stree><number role=\"integer\" font=\"normal\" annotation=\"clearspeak:simple\" id=\"0\">2</number></stree>"
+    },
+    "Mglyph_Mixed_Token_9": {
+      "expected": "<stree><infixop role=\"addition\" id=\"3\">+<content><operator role=\"addition\" id=\"1\">+</operator></content><children><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">a</identifier><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"2\">b</identifier></children></infixop></stree>"
+    },
+    "Html_issue_0": {
+      "expected": "<stree><identifier role=\"latinletter\" annotation=\"clearspeak:simple\" id=\"0\">aa</identifier></stree>"
+    },
+    "Html_issue_1": {
+      "expected": "<stree><text role=\"unknown\" font=\"normal\" annotation=\"clearspeak:unit\" id=\"0\">y</text></stree>"
+    },
+    "Html_issue_2": {
+      "expected": "<stree><infixop role=\"implicit\" annotation=\"clearspeak:simple;clearspeak:unit\" id=\"3\">⁢<content><operator role=\"multiplication\" id=\"2\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">x</identifier><identifier role=\"latinletter\" font=\"normal\" annotation=\"general:text;clearspeak:simple\" id=\"1\">y</identifier></children></infixop></stree>"
+    },
+    "Html_issue_3": {
+      "expected": "<stree><infixop role=\"implicit\" annotation=\"clearspeak:unit\" id=\"5\">⁢<content><operator role=\"multiplication\" id=\"3\">⁢</operator><operator role=\"multiplication\" id=\"4\">⁢</operator></content><children><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">x</identifier><identifier role=\"latinletter\" font=\"normal\" annotation=\"general:text;clearspeak:simple\" id=\"1\">y</identifier><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"2\">y</identifier></children></infixop></stree>"
+    },
+    "Html_issue_4": {
+      "expected": "<stree><punctuated role=\"text\" id=\"5\"><content><punctuation role=\"dummy\" id=\"3\">⁣</punctuation><punctuation role=\"dummy\" id=\"4\">⁣</punctuation></content><children><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">x</identifier><text role=\"text\" font=\"normal\" annotation=\"clearspeak:unit\" id=\"1\">ay</text><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"2\">y</identifier></children></punctuated></stree>"
+    },
+    "Html_issue_5": {
+      "expected": "<stree><punctuated role=\"text\" id=\"5\"><content><punctuation role=\"dummy\" id=\"3\">⁣</punctuation><punctuation role=\"dummy\" id=\"4\">⁣</punctuation></content><children><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">x</identifier><text role=\"text\" font=\"normal\" annotation=\"clearspeak:unit\" id=\"1\">yb</text><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"2\">y</identifier></children></punctuated></stree>"
+    },
+    "Html_issue_6": {
+      "expected": "<stree><punctuated role=\"text\" id=\"5\"><content><punctuation role=\"dummy\" id=\"3\">⁣</punctuation><punctuation role=\"dummy\" id=\"4\">⁣</punctuation></content><children><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">x</identifier><text role=\"text\" font=\"normal\" annotation=\"clearspeak:unit\" id=\"1\">ayb</text><identifier role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"2\">y</identifier></children></punctuated></stree>"
+    },
+    "Html_issue_7": {
+      "expected": "<stree><text role=\"unknown\" font=\"normal\" annotation=\"clearspeak:unit\" id=\"0\">ay</text></stree>"
+    },
+    "Html_issue_8": {
+      "expected": "<stree><text role=\"unknown\" font=\"normal\" annotation=\"clearspeak:unit\" id=\"0\">yb</text></stree>"
+    },
+    "Html_issue_9": {
+      "expected": "<stree><text role=\"unknown\" font=\"normal\" annotation=\"clearspeak:unit\" id=\"0\">ayb</text></stree>"
     }
   }
 }
