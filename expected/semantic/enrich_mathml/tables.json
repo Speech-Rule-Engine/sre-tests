@@ -572,10 +572,10 @@
       "expected": "<math type=\"infixop\" role=\"addition\" id=\"3\" children=\"0,2\" content=\"1\"><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\" parent=\"3\">a</mi><mo type=\"operator\" role=\"addition\" id=\"1\" parent=\"3\" operator=\"infixop,+\">+</mo><semantics><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"2\" parent=\"3\">b</mi><annotation>something</annotation></semantics></math>"
     },
     "SemanticsAnnotationXml_0": {
-      "expected": "<math><semantics><annotation-xml><content type=\"text\" role=\"annotation\" font=\"normal\" annotation=\"clearspeak:unit\" id=\"0\">something</content></annotation-xml></semantics></math>"
+      "expected": "<math><semantics><annotation-xml type=\"text\" role=\"annotation\" font=\"normal\" annotation=\"clearspeak:unit\" id=\"0\"><content>something</content></annotation-xml></semantics></math>"
     },
     "SemanticsAnnotationXml_1": {
-      "expected": "<math><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\" parent=\"3\">a</mi><semantics><annotation-xml><mrow added=\"true\" type=\"punctuated\" role=\"text\" id=\"3\" children=\"0,1\" collapsed=\"(3 (c 2) 0 1)\"><content type=\"text\" role=\"annotation\" font=\"normal\" annotation=\"clearspeak:unit\" id=\"1\" parent=\"3\">something</content></mrow></annotation-xml></semantics></math>"
+      "expected": "<math><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\" parent=\"3\">a</mi><semantics type=\"punctuated\" role=\"text\" id=\"3\" children=\"0,1\" collapsed=\"(3 (c 2) 0 1)\"><annotation-xml type=\"text\" role=\"annotation\" font=\"normal\" annotation=\"clearspeak:unit\" id=\"1\" parent=\"3\"><content>something</content></annotation-xml></semantics></math>"
     },
     "SemanticsAnnotationXml_2": {
       "expected": "<math><semantics><mi type=\"identifier\" role=\"latinletter\" font=\"italic\" annotation=\"clearspeak:simple\" id=\"0\">a</mi><annotation-xml><content>something</content></annotation-xml></semantics></math>"

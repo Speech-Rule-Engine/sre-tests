@@ -727,6 +727,24 @@
     },
     "Html_issue_3": {
       "input": "<mi>x</mi><mtext><span>y</span></mtext><mi>y</mi>"
+    },
+    "Html_issue_4": {
+      "input": "<mi>x</mi><mtext>a<span>y</span></mtext><mi>y</mi>"
+    },
+    "Html_issue_5": {
+      "input": "<mi>x</mi><mtext><span>y</span>b</mtext><mi>y</mi>"
+    },
+    "Html_issue_6": {
+      "input": "<mi>x</mi><mtext>a<span>y</span>b</mtext><mi>y</mi>"
+    },
+    "Html_issue_7": {
+      "input": "<mtext>a<span>y</span></mtext>"
+    },
+    "Html_issue_8": {
+      "input": "<mtext><span>y</span>b</mtext>"
+    },
+    "Html_issue_9": {
+      "input": "<mtext>a<span>y</span>b</mtext>"
     }
   }
 }
