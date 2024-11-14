@@ -388,7 +388,7 @@ export class EnrichMathmlTest extends SemanticBlacklistTest {
     const node = Enrich.semanticMathmlSync(mathMl);
     const dp = new xmldom.DOMParser();
     const xml = dp.parseFromString(
-      smml ? smml : ' ',
+      smml ? smml : '<math/>',
       xmldom.MIME_TYPE.XML_TEXT);
     const xmls = new xmldom.XMLSerializer();
     this.customizeXml(node);
