@@ -24,25 +24,25 @@ import { AbstractExamples } from './abstract_examples.js';
 import { AbstractJsonTest } from './abstract_test.js';
 import { JsonTests } from '../base/test_util.js';
 
-import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich.js';
+import * as Enrich from '#sre/enrich_mathml/enrich.js';
 import {
   Attribute,
   removeAttributePrefix
-} from '../../speech-rule-engine/js/enrich_mathml/enrich_attr.js';
-import { enrich } from '../../speech-rule-engine/js/enrich_mathml/enrich_mathml.js';
-import * as DomUtil from '../../speech-rule-engine/js/common/dom_util.js';
-import { SemanticNodeFactory } from '../../speech-rule-engine/js/semantic_tree/semantic_node_factory.js';
-import { SemanticTree } from '../../speech-rule-engine/js/semantic_tree/semantic_tree.js';
+} from '#sre/enrich_mathml/enrich_attr.js';
+import { enrich } from '#sre/enrich_mathml/enrich_mathml.js';
+import * as DomUtil from '#sre/common/dom_util.js';
+import { SemanticNodeFactory } from '#sre/semantic_tree/semantic_node_factory.js';
+import { SemanticTree } from '#sre/semantic_tree/semantic_tree.js';
 import {
   deactivate
-} from '../../speech-rule-engine/js/semantic_tree/semantic_annotations.js';
-import { SemanticMap } from '../../speech-rule-engine/js/semantic_tree/semantic_attr.js';
-import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic.js';
-import { RebuildStree } from '../../speech-rule-engine/js/walker/rebuild_stree.js';
-import * as EngineConst from '../../speech-rule-engine/js/common/engine_const.js';
-import * as System from '../../speech-rule-engine/js/common/system.js';
-import * as WalkerUtil from '../../speech-rule-engine/js/walker/walker_util.js';
-import { lookupCategory } from '../../speech-rule-engine/js/rule_engine/math_compound_store.js';
+} from '#sre/semantic_tree/semantic_annotations.js';
+import { SemanticMap } from '#sre/semantic_tree/semantic_attr.js';
+import * as Semantic from '#sre/semantic_tree/semantic.js';
+import { RebuildStree } from '#sre/walker/rebuild_stree.js';
+import * as EngineConst from '#sre/common/engine_const.js';
+import * as System from '#sre/common/system.js';
+import * as WalkerUtil from '#sre/walker/walker_util.js';
+import { lookupCategory } from '#sre/rule_engine/math_compound_store.js';
 
 /**
  * Base class for all the semantic tree related tests.

@@ -13,9 +13,9 @@
     "compile": "./node_modules/.bin/tsc",
     "prepare": "pnpm clean; node tests.config.js; pnpm compile",
     "webpack": "./node_modules/.bin/webpack",
-    "test": "pnpm test:files",
+    "test": "pnpm -s test:files --",
     "test:all": "pnpm test:files; pnpm test:output; pnpm test:analytics",
-    "test:files": "pnpm jest --testPathPattern js/json",
+    "test:files": "pnpm -s jest --testPathPattern js/json --",
     "test:actions": "pnpm jest --testPathPattern js/actions",
     "test:output": "pnpm jest --testPathPattern js/output",
     "test:analytics": "pnpm rimraf analysis; pnpm jest --testPathPattern js/analyse; pnpm test:allrules",
@@ -80,7 +80,8 @@
     "lib/"
   ],
   "imports": {
-    "#mathjax/*": "mathjax-full/mjs/*"
+    "#mathjax/*": "mathjax-full/mjs/*",
+    "#sre/*": "speech-rule-engine/js/*"
   },
   "main": "dist/sretests.js",
   "type": "module"
