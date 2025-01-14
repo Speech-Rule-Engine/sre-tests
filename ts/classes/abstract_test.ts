@@ -23,7 +23,7 @@ export abstract class AbstractTest {
   /**
    * The Jest package.
    */
-  protected jest = false;
+  protected jest = true;
 
   /**
    * Basic information on the test case.

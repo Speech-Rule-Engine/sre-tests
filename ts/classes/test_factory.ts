@@ -23,7 +23,7 @@ import { TestError, TestPath, TestUtil } from '../base/test_util.js';
 import { AbstractJsonTest } from './abstract_test.js';
 
 import { ApiTest } from './api_test.js';
-import { ClearspeakAnnotationTest } from './clearspeak_annotation_test.js';
+import * as cs from './clearspeak_annotation_test.js';
 import { BrailleLayoutTest, ClearspeakTest, SpeechMarkupTest } from './clearspeak_test.js';
 import { CollapseTest } from './collapse_test.js';
 import { ColorPickerTest } from './color_picker_test.js';
@@ -44,7 +44,9 @@ const map = new Map<string, any>([
   ['deepSpeech', st.DeepSpeechTest],
   ['category', st.CategoryTest],
   ['clearspeak', ClearspeakTest],
-  ['clearspeakAnnotation', ClearspeakAnnotationTest],
+  ['clearspeakAnnotation', cs.ClearspeakAnnotationTest],
+  ['clearspeakPreferences', cs.ClearspeakPreferencesTest],
+  ['nextStyle', cs.NextStyleTest],
   ['collapse', CollapseTest],
   ['colorPicker', ColorPickerTest],
   ['enrichMathml', st.EnrichMathmlTest],
