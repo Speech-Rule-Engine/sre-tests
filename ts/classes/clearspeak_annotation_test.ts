@@ -136,7 +136,7 @@ export class NextStyleTest extends AbstractJsonTest {
     const emml = Enrich.semanticMathmlSync(mathMl);
     const generator = new DummySpeechGenerator();
     generator.setOptions({
-      modality: 'speech',
+      modality: this.field('modality') || 'speech',
       style: 'default',
       domain: this.field('domain') || this.domain
     });
@@ -163,6 +163,7 @@ export class NextStyleTest extends AbstractJsonTest {
     super();
     this.pickFields.push('id');
     this.pickFields.push('domain');
+    this.pickFields.push('modality');
   }
 
   /**

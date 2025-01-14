@@ -367,6 +367,14 @@
         "sbrief",
         "default"
       ]
+    },
+    "Braille": {
+      "input": "<mi>a</mi>",
+      "domain": "default",
+      "modality": "braille",
+      "expected": [
+        "default"
+      ]
     }
   }
 }
