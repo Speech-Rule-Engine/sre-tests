@@ -48,6 +48,28 @@
     "MJ_Issue_2979_9": {
       "tex": "a \\int \\underbrace{bc}_{d}",
       "input": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mi>a</mi><mo data-mjx-texclass=\"OP\">&#x222B;</mo><munder><mrow data-mjx-texclass=\"OP\"><munder><mrow><mi>b</mi><mi>c</mi></mrow><mo>&#x23DF;</mo></munder></mrow><mrow data-mjx-texclass=\"ORD\"><mi>d</mi></mrow></munder></math>"
+    },
+    "SRE_Issue_726_1": {
+      "tex": "\\prescript {h_{l-1}}{}{P}",
+      "input": "<mmultiscripts><mi>P</mi><mprescripts></mprescripts><none></none><msub><mi>h</mi><mrow><mi>l</mi><mo>&#x2212;</mo><mn>1</mn></mrow></msub></mmultiscripts>"
+    },
+    "SRE_Issue_726_2": {
+      "tex": "\\prescript {h^{l-1}}{}{P}",
+      "input": "<mmultiscripts><mi>P</mi><mprescripts></mprescripts><none></none><msup><mi>h</mi><mrow><mi>l</mi><mo>&#x2212;</mo><mn>1</mn></mrow></msup></mmultiscripts>"
+    },
+    "SRE_Issue_726_3": {
+      "tex": "\\prescript {h_{l}}{}{P}",
+      "input": "<mmultiscripts><mi>P</mi><mprescripts></mprescripts><none></none><msub><mi>h</mi><mrow><mi>l</mi></mrow></msub></mmultiscripts>"
+    },
+    "SRE_Issue_726_4": {
+      "tex": "\\prescript {h_{ab}}{1}{P}",
+      "input": "<mmultiscripts><mi>P</mi><mprescripts></mprescripts><mn>1</mn><msub><mi>h</mi><mrow><mi>a</mi><mi>b</mi></mrow></msub></mmultiscripts>"
+    },
+    "SRE_Issue_726_4": {
+      "input": "<math><mmultiscripts><mi>x</mi><msub><mi>c</mi><msup><mi>l</mi><mi>k</mi></msup></msub><mi>d</mi><mi>e</mi><none/><mprescripts/><mi>a</mi><mi>q</mi><mi>r</mi><msup><mi>b</mi><mrow><mn>1</mn><mi>a</mi></mrow></msup></mmultiscripts></math>"
+    },
+    "SRE_Issue_726_4": {
+      "input": "<math><mmultiscripts><mi>x</mi><mi>d</mi><msub><mi>c</mi><msup><mi>l</mi><mi>k</mi></msup></msub><mi>e</mi><none/><mprescripts/><mi>a</mi><mi>q</mi><mi>r</mi><msup><mi>b</mi><mrow><mn>1</mn><mi>a</mi></mrow></msup></mmultiscripts></math>"
     }
   }
 }
