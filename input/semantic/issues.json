@@ -70,6 +70,62 @@
     },
     "SRE_Issue_726_4": {
       "input": "<math><mmultiscripts><mi>x</mi><mi>d</mi><msub><mi>c</mi><msup><mi>l</mi><mi>k</mi></msup></msub><mi>e</mi><none/><mprescripts/><mi>a</mi><mi>q</mi><mi>r</mi><msup><mi>b</mi><mrow><mn>1</mn><mi>a</mi></mrow></msup></mmultiscripts></math>"
+    },
+    "issue_767_0": {
+      "tex": "A_n|_{{Ker} P_n}",
+      "input": "<msub><mi>A</mi><mi>n</mi></msub><msub><mo data-mjx-texclass=\"ORD\">|</mo><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>K</mi><mi>e</mi><mi>r</mi></mrow><msub><mi>P</mi><mi>n</mi></msub></mrow></msub>"
+    },
+    "issue_767_1": {
+      "tex": "A_n|_{{abc} P_n}",
+      "input": "<msub><mi>A</mi><mi>n</mi></msub><msub><mo data-mjx-texclass=\"ORD\">|</mo><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>a</mi><mi>b</mi><mi>c</mi></mrow><msub><mi>P</mi><mi>n</mi></msub></mrow></msub>"
+    },
+    "issue_767_2": {
+      "tex": "A_n|_{\\mathrm{abc} P_n}",
+      "input": "<msub><mi>A</mi><mi>n</mi></msub><msub><mo data-mjx-texclass=\"ORD\">|</mo><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi data-mjx-auto-op=\"false\">abc</mi></mrow><msub><mi>P</mi><mi>n</mi></msub></mrow></msub>"
+    },
+"issue_749_0": {
+      "tex": "L\\left([2,+\\infty [\\backslash \\bigcup _{k\\in \\mathcal{K}}[n_k,n_{k+1}[\\right)",
+      "input": "<mi>L</mi><mrow data-mjx-texclass=\"INNER\"><mo data-mjx-texclass=\"OPEN\">(</mo><mo>[</mo><mn>2</mn><mo>,</mo><mo>+</mo><mi mathvariant=\"normal\">&#x221E;</mi><mo>[</mo><mi mathvariant=\"normal\">\\</mi><munder><mo>&#x22C3;</mo><mrow data-mjx-texclass=\"ORD\"><mi>k</mi><mo>&#x2208;</mo><mrow data-mjx-texclass=\"ORD\"><mi data-mjx-variant=\"-tex-calligraphic\" mathvariant=\"script\">K</mi></mrow></mrow></munder><mo>[</mo><msub><mi>n</mi><mi>k</mi></msub><mo>,</mo><msub><mi>n</mi><mrow data-mjx-texclass=\"ORD\"><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>[</mo><mo data-mjx-texclass=\"CLOSE\">)</mo></mrow>"
+    },
+    "issue_749_1": {
+      "tex": "]a,b[+[c,d[+[e,f]",
+      "input": "<mo>]</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>[</mo><mo>+</mo><mo>[</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>[</mo><mo>+</mo><mo>[</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo>]</mo>"
+    },
+    "issue_749_2": {
+      "tex": "]a,b[+[c,d[",
+      "input": "<mo>]</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>[</mo><mo>+</mo><mo>[</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>[</mo>"
+    },
+    "issue_749_3": {
+      "tex": "[e,f]",
+      "input": "<mo>[</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo>]</mo>"
+    },
+    "issue_749_4": {
+      "tex": "]a,b[",
+      "input": "<mo>]</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>[</mo>"
+    },
+    "issue_749_5": {
+      "tex": "[c,d[",
+      "input": "<mo>[</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>[</mo>"
+    },
+    "issue_749_6": {
+      "tex": "]g,h]",
+      "input": "<mo>]</mo><mi>g</mi><mo>,</mo><mi>h</mi><mo>]</mo>"
+    },
+    "issue_749_7": {
+      "tex": "([a,b[)",
+      "input": "<mo>(</mo><mo>[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>[</mo><mo>)</mo>"
+    },
+    "issue_749_8": {
+      "tex": "]a,b[d,d]",
+      "input": "<mo>]</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>[</mo><mi>d</mi><mo>,</mo><mi>d</mi><mo>]</mo>"
+    },
+    "issue_767_3": {
+      "tex": "sin(x)",
+      "input": "<mi>s</mi><mi>i</mi><mi>n</mi><mo>(</mo><mi>x</mi><mo>)</mo>"
+    },
+    "issue_767_4": {
+      "tex": "{sin}(x)",
+      "input": "<mrow data-mjx-texclass=\"ORD\"><mi>s</mi><mi>i</mi><mi>n</mi></mrow><mo>(</mo><mi>x</mi><mo>)</mo>"
     }
   }
 }
