@@ -16,7 +16,8 @@
     "alwaysStrict": true,
     "sourceMap": false,
     "paths": {
-      "#mathjax/*": ["./node_modules/mathjax-full/mjs/*"]
+      "#mathjax/*": ["./node_modules/mathjax-full/mjs/*"],
+      "#sre/*": ["./speech-rule-engine/js/*"]
     },
     "lib": ["es6", "dom", "es2020"],
     "typeRoots": [
