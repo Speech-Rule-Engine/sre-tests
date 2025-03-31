@@ -20,10 +20,10 @@
  */
 
 import { SpeechTest } from './speech_test.js';
-import * as DomUtil from '#sre/common/dom_util.js';
-import * as AuralRendering from '#sre/audio/aural_rendering.js';
-import * as SpeechGeneratorUtil from '#sre/speech_generator/speech_generator_util.js';
-import * as Semantic from '#sre/semantic_tree/semantic.js';
+import * as DomUtil from '../../speech-rule-engine/js/common/dom_util.js';
+import * as AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering.js';
+import * as SpeechGeneratorUtil from '../../speech-rule-engine/js/speech_generator/speech_generator_util.js';
+import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic.js';
 
 export class CollapseTest extends SpeechTest {
   /**
