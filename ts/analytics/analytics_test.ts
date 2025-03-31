@@ -18,8 +18,8 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import { SpeechRuleEngine } from '#sre/rule_engine/speech_rule_engine.js';
-import { SpeechRule } from '#sre/rule_engine/speech_rule.js';
+import { SpeechRuleEngine } from '../../speech-rule-engine/js/rule_engine/speech_rule_engine.js';
+import { SpeechRule } from '../../speech-rule-engine/js/rule_engine/speech_rule.js';
 
 import * as fs from 'fs';
 import { TestPath, TestUtil } from '../base/test_util.js';
