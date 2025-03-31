@@ -18,10 +18,10 @@
  * @author Volker.Sorge@gmail.com (Volker Sorge)
  */
 
-import { annotators } from '#sre/semantic_tree/semantic_annotations.js';
-import * as Semantic from '#sre/semantic_tree/semantic.js';
-import { ClearspeakPreferences } from '#sre/speech_rules/clearspeak_preferences.js';
-import * as System from '#sre/common/system.js';
+import { annotators } from '../../speech-rule-engine/js/semantic_tree/semantic_annotations.js';
+import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic.js';
+import { ClearspeakPreferences } from '../../speech-rule-engine/js/speech_rules/clearspeak_preferences.js';
+import * as System from '../../speech-rule-engine/js/common/system.js';
 
 import { AbstractJsonTest } from './abstract_test.js';
 

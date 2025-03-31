@@ -59,7 +59,7 @@
     "Issue320_7": {
       "test": true,
       "preference": "default",
-      "input": "<mrow><mrow><mo>(</mo><mfrac><msup><mo>∂</mo><mn>2</mn></msup><mrow><mo>∂</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><msup><mo>∂</mo><mn>2</mn></msup><mrow><mo>∂</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac><mo>)</mo></mrow><msup><mrow><mo minsize=\"150%\">|</mo><mi>φ <!-- \u000barphi --></mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>+</mo><mi mathvariant=\"normal\">i</mi><mi>y</mi><mo stretchy=\"false\">)</mo><mo minsize=\"150%\">|</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>0</mn></mrow>"
+      "input": "<mrow><mrow><mo>(</mo><mfrac><msup><mo>∂</mo><mn>2</mn></msup><mrow><mo>∂</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><msup><mo>∂</mo><mn>2</mn></msup><mrow><mo>∂</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac><mo>)</mo></mrow><msup><mrow><mo minsize=\"150%\">|</mo><mi>φ</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>+</mo><mi mathvariant=\"normal\">i</mi><mi>y</mi><mo stretchy=\"false\">)</mo><mo minsize=\"150%\">|</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>0</mn></mrow>"
     },
     "Issue301_1": {
       "preference": "default",
@@ -115,7 +115,7 @@
     },
     "Issue_689_2": {
       "preference": "default",
-      "input": "<math><mrow><mo>{</mo><mtable columnspacing=\"1em\" rowspacing=\".2em\" columnalign=\"left left\"><mtr><mrow><mo>{</mo><mtable columnspacing=\"1em\" rowspacing=\".2em\" columnalign=\"left left\"><mtr><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd></mtr></mtable><mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo></mrow></mtd></mtr><mtr><mtd><mi>d</mi></mtd></mtr></mtable><mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo></mrow></math>"
+      "input": "<math><mrow><mo>{</mo><mtable columnspacing=\"1em\" rowspacing=\".2em\" columnalign=\"left left\"><mtr><mtd><mrow><mo>{</mo><mtable columnspacing=\"1em\" rowspacing=\".2em\" columnalign=\"left left\"><mtr><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd></mtr></mtable><mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo></mrow></mtd></mtr><mtr><mtd><mi>d</mi></mtd></mtr></mtable><mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo></mrow></math>"
     },
     "Issue_689_3": {
       "preference": "Matrix_EndMatrix",

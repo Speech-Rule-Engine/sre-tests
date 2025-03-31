@@ -141,10 +141,10 @@
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> normal <say-as interpret-as=\"character\">m</say-as> </prosody></speak>"
     },
     "OtherFonts_2": {
-      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"1\"/> <say-as interpret-as=\"character\">m</say-as> <mark name=\"2\"/> <say-as interpret-as=\"character\">i</say-as> </prosody></speak>"
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> mi </prosody></speak>"
     },
     "OtherFonts_3": {
-      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> italic <mark name=\"1\"/> <say-as interpret-as=\"character\">m</say-as> <mark name=\"2\"/> <say-as interpret-as=\"character\">i</say-as> </prosody></speak>"
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> italic mi </prosody></speak>"
     },
     "OtherFonts_4": {
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> 30 </prosody></speak>"
@@ -374,6 +374,30 @@
     },
     "Issue_442_3": {
       "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> 9 <mark name=\"2\"/> divided by 3 </prosody></speak>"
+    },
+    "Prime_19": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"1\"/> prime <mark name=\"2\"/> double prime </prosody></speak>"
+    },
+    "issue_728_0": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> <say-as interpret-as=\"character\">a</say-as> <mark name=\"1\"/> mol </prosody></speak>"
+    },
+    "issue_728_1": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> <say-as interpret-as=\"character\">a</say-as> <mark name=\"1\"/> mol <mark name=\"2\"/> 1 </prosody></speak>"
+    },
+    "issue_767_0": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> upper A <mark name=\"1\"/> Subscript <say-as interpret-as=\"character\">n</say-as> <mark name=\"2\" kind=\"LAST\"/> Baseline <mark name=\"3\"/> vertical bar <mark name=\"9\"/> Subscript <mark name=\"4\"/> kernel <mark name=\"5\"/> upper P <mark name=\"6\"/> Sub Subscript <say-as interpret-as=\"character\">n</say-as> <mark name=\"7\" kind=\"LAST\"/> Subscript <mark name=\"10\" kind=\"LAST\"/> Baseline </prosody></speak>"
+    },
+    "issue_767_1": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> upper A <mark name=\"1\"/> Subscript <say-as interpret-as=\"character\">n</say-as> <mark name=\"2\" kind=\"LAST\"/> Baseline <mark name=\"3\"/> vertical bar <mark name=\"14\"/> Subscript <mark name=\"4\"/> <say-as interpret-as=\"character\">a</say-as> <mark name=\"5\"/> <say-as interpret-as=\"character\">b</say-as> <mark name=\"6\"/> <say-as interpret-as=\"character\">c</say-as> <mark name=\"10\"/> upper P <mark name=\"11\"/> Sub Subscript <say-as interpret-as=\"character\">n</say-as> <mark name=\"12\" kind=\"LAST\"/> Subscript <mark name=\"15\" kind=\"LAST\"/> Baseline </prosody></speak>"
+    },
+    "issue_767_2": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> upper A <mark name=\"1\"/> Subscript <say-as interpret-as=\"character\">n</say-as> <mark name=\"2\" kind=\"LAST\"/> Baseline <mark name=\"3\"/> vertical bar <mark name=\"9\"/> Subscript <mark name=\"4\"/> abc <mark name=\"5\"/> upper P <mark name=\"6\"/> Sub Subscript <say-as interpret-as=\"character\">n</say-as> <mark name=\"7\" kind=\"LAST\"/> Subscript <mark name=\"10\" kind=\"LAST\"/> Baseline </prosody></speak>"
+    },
+    "issue_767_3": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> <say-as interpret-as=\"character\">s</say-as> <mark name=\"1\"/> <say-as interpret-as=\"character\">i</say-as> <mark name=\"2\"/> <say-as interpret-as=\"character\">n</say-as> <mark name=\"3\"/> left parenthesis <mark name=\"4\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"5\"/> right parenthesis </prosody></speak>"
+    },
+    "issue_767_4": {
+      "expected": "<?xml version=\"1.0\"?><speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en\"><prosody rate=\"100%\"> <mark name=\"0\"/> sine <mark name=\"1\"/> left parenthesis <mark name=\"2\"/> <say-as interpret-as=\"character\">x</say-as> <mark name=\"3\"/> right parenthesis </prosody></speak>"
     }
   }
 }

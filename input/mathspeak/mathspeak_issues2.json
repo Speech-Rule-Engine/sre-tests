@@ -428,7 +428,7 @@
     },
     "Issue320_6": {
       "test": true,
-      "input": "<mrow><mrow><mo>(</mo><mfrac><msup><mo>∂</mo><mn>2</mn></msup><mrow><mo>∂</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><msup><mo>∂</mo><mn>2</mn></msup><mrow><mo>∂</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac><mo>)</mo></mrow><msup><mrow><mo minsize=\"150%\">|</mo><mi>φ <!-- \u000barphi --></mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>+</mo><mi mathvariant=\"normal\">i</mi><mi>y</mi><mo stretchy=\"false\">)</mo><mo minsize=\"150%\">|</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>0</mn></mrow>",
+      "input": "<mrow><mrow><mo>(</mo><mfrac><msup><mo>∂</mo><mn>2</mn></msup><mrow><mo>∂</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><msup><mo>∂</mo><mn>2</mn></msup><mrow><mo>∂</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac><mo>)</mo></mrow><msup><mrow><mo minsize=\"150%\">|</mo><mi>φ</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>+</mo><mi mathvariant=\"normal\">i</mi><mi>y</mi><mo stretchy=\"false\">)</mo><mo minsize=\"150%\">|</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>0</mn></mrow>",
       "preference": "default"
     },
     "Prime_0": {
@@ -541,6 +541,34 @@
     },
     "Issue_442_3": {
       "input": "<mn>9</mn><mo>/</mo><mn>3</mn>"
+    },
+    "issue_728_0": {
+      "tex": "a\\mathrm{mol}",
+      "input": "<mi>a</mi><mrow data-mjx-texclass=\"ORD\"><mi data-mjx-auto-op=\"false\">mol</mi></mrow>"
+    },
+    "issue_728_1": {
+      "tex": "a\\mathrm{mol1}",
+      "input": "<mi>a</mi><mrow data-mjx-texclass=\"ORD\"><mi data-mjx-auto-op=\"false\">mol</mi><mn>1</mn></mrow>"
+    },
+    "issue_767_0": {
+      "tex": "A_n|_{{Ker} P_n}",
+      "input": "<msub><mi>A</mi><mi>n</mi></msub><msub><mo data-mjx-texclass=\"ORD\">|</mo><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>K</mi><mi>e</mi><mi>r</mi></mrow><msub><mi>P</mi><mi>n</mi></msub></mrow></msub>"
+    },
+    "issue_767_1": {
+      "tex": "A_n|_{{abc} P_n}",
+      "input": "<msub><mi>A</mi><mi>n</mi></msub><msub><mo data-mjx-texclass=\"ORD\">|</mo><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi>a</mi><mi>b</mi><mi>c</mi></mrow><msub><mi>P</mi><mi>n</mi></msub></mrow></msub>"
+    },
+    "issue_767_2": {
+      "tex": "A_n|_{\\mathrm{abc} P_n}",
+      "input": "<msub><mi>A</mi><mi>n</mi></msub><msub><mo data-mjx-texclass=\"ORD\">|</mo><mrow data-mjx-texclass=\"ORD\"><mrow data-mjx-texclass=\"ORD\"><mi data-mjx-auto-op=\"false\">abc</mi></mrow><msub><mi>P</mi><mi>n</mi></msub></mrow></msub>"
+    },
+    "issue_767_3": {
+      "tex": "sin(x)",
+      "input": "<mi>s</mi><mi>i</mi><mi>n</mi><mo>(</mo><mi>x</mi><mo>)</mo>"
+    },
+    "issue_767_4": {
+      "tex": "{sin}(x)",
+      "input": "<mrow data-mjx-texclass=\"ORD\"><mi>s</mi><mi>i</mi><mi>n</mi></mrow><mo>(</mo><mi>x</mi><mo>)</mo>"
     }
   }
 }

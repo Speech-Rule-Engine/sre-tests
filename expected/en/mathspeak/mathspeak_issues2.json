@@ -141,10 +141,10 @@
       "expected": "normal m"
     },
     "OtherFonts_2": {
-      "expected": "m i"
+      "expected": "mi"
     },
     "OtherFonts_3": {
-      "expected": "italic m i"
+      "expected": "italic mi"
     },
     "OtherFonts_4": {
       "expected": "30"
@@ -377,6 +377,27 @@
     },
     "Issue_442_3": {
       "expected": "9 divided by 3"
+    },
+    "issue_728_0": {
+      "expected": "a mol"
+    },
+    "issue_728_1": {
+      "expected": "a mol 1"
+    },
+    "issue_767_0": {
+      "expected": "upper A Subscript n Baseline vertical bar Subscript kernel upper P Sub Subscript n Subscript Baseline"
+    },
+    "issue_767_1": {
+      "expected": "upper A Subscript n Baseline vertical bar Subscript a b c upper P Sub Subscript n Subscript Baseline"
+    },
+    "issue_767_2": {
+      "expected": "upper A Subscript n Baseline vertical bar Subscript abc upper P Sub Subscript n Subscript Baseline"
+    },
+    "issue_767_3": {
+      "expected": "s i n left parenthesis x right parenthesis"
+    },
+    "issue_767_4": {
+      "expected": "sine left parenthesis x right parenthesis"
     }
   }
 }

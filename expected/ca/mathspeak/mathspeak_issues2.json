@@ -142,10 +142,10 @@
       "expected": "normal m"
     },
     "OtherFonts_2": {
-      "expected": "m I"
+      "expected": "mi"
     },
     "OtherFonts_3": {
-      "expected": "cursiva m I"
+      "expected": "cursiva mi"
     },
     "OtherFonts_4": {
       "expected": "30"
@@ -265,7 +265,7 @@
       "expected": "diferencial parcial diferencial parcial x"
     },
     "Issue320_6": {
-      "expected": "parèntesi esquerre començar fracció diferencial parcial al quadrat entre diferencial parcial x al quadrat finalitzar fracció més començar fracció diferencial parcial al quadrat entre diferencial parcial y al quadrat finalitzar fracció parèntesi dret començar valor absolut fi parèntesi esquerre x més normal I y parèntesi dret finalitzar valor absolut al quadrat igual 0"
+      "expected": "parèntesi esquerre començar fracció diferencial parcial al quadrat entre diferencial parcial x al quadrat finalitzar fracció més començar fracció diferencial parcial al quadrat entre diferencial parcial y al quadrat finalitzar fracció parèntesi dret començar valor absolut fi parèntesi esquerre x més normal i y parèntesi dret finalitzar valor absolut al quadrat igual 0"
     },
     "Prime_0": {
       "expected": "x prima"
@@ -374,6 +374,30 @@
     },
     "Issue_442_3": {
       "expected": "9 dividit 3"
+    },
+    "Prime_19": {
+      "expected": "x prima dos prima"
+    },
+    "issue_728_0": {
+      "expected": "a mol"
+    },
+    "issue_728_1": {
+      "expected": "a mol 1"
+    },
+    "issue_767_0": {
+      "expected": "majúscula A subíndex n línia base barra vertical subíndex nucli majúscula P sub subíndex n subíndex línia base"
+    },
+    "issue_767_1": {
+      "expected": "majúscula A subíndex n línia base barra vertical subíndex a b c majúscula P sub subíndex n subíndex línia base"
+    },
+    "issue_767_2": {
+      "expected": "majúscula A subíndex n línia base barra vertical subíndex abc majúscula P sub subíndex n subíndex línia base"
+    },
+    "issue_767_3": {
+      "expected": "s i n parèntesi esquerre x parèntesi dret"
+    },
+    "issue_767_4": {
+      "expected": "sinus parèntesi esquerre x parèntesi dret"
     }
   }
 }
