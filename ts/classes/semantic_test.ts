@@ -19,7 +19,7 @@
  * @author sorge@google.com (Volker Sorge)
  */
 
-import * as xmldom from '@xmldom/xmldom';
+import { SystemExternal } from '../../speech-rule-engine/js/common/system_external.js';
 import { AbstractExamples } from './abstract_examples.js';
 import { AbstractJsonTest } from './abstract_test.js';
 import { JsonTests } from '../base/test_util.js';
@@ -331,11 +331,11 @@ export class SemanticTreeTest extends SemanticBlacklistTest {
     const mathMl = Enrich.prepareMmlString(mml);
     const node = DomUtil.parseInput(mathMl);
     const sxml = new SemanticTree(node).xml(opt_brief);
-    const xmls = new xmldom.XMLSerializer();
+    const xmls = new SystemExternal.xmldom.XMLSerializer();
     this.customizeXml(sxml);
-    const dp = new xmldom.DOMParser();
+    const dp = new SystemExternal.xmldom.DOMParser();
     const xml = dp.parseFromString(
-      this.prepareStree(sml), xmldom.MIME_TYPE.XML_TEXT);
+      this.prepareStree(sml), SystemExternal.xmldom.MIME_TYPE.XML_TEXT);
     this.assert.equal(
       xmls.serializeToString(sxml),
       xmls.serializeToString(xml)
@@ -386,11 +386,11 @@ export class EnrichMathmlTest extends SemanticBlacklistTest {
   public executeTest(mml: string, smml: string) {
     const mathMl = Enrich.prepareMmlString(mml);
     const node = Enrich.semanticMathmlSync(mathMl);
-    const dp = new xmldom.DOMParser();
+    const dp = new SystemExternal.xmldom.DOMParser();
     const xml = dp.parseFromString(
       smml ? smml : '<math/>',
-      xmldom.MIME_TYPE.XML_TEXT);
-    const xmls = new xmldom.XMLSerializer();
+      SystemExternal.xmldom.MIME_TYPE.XML_TEXT);
+    const xmls = new SystemExternal.xmldom.XMLSerializer();
     this.customizeXml(node);
     this.appendExamples('', mml);
     const cleaned = removeAttributePrefix(xmls.serializeToString(node));
@@ -412,7 +412,7 @@ export class SemanticApiTest extends SemanticTest {
    */
   public pickFields = ['input'];
 
-  private xmls = new xmldom.XMLSerializer().serializeToString;
+  private xmls = new SystemExternal.xmldom.XMLSerializer().serializeToString;
 
   /**
    * Tests if for a given mathml snippet results in a particular semantic tree.

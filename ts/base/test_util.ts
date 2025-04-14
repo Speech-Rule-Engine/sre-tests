@@ -16,7 +16,6 @@
  * @author volker.sorge@gmail.com (Volker Sorge)
  */
 
-import '#sre/common/lib_external.js';
 import * as fs from 'fs';
 import * as path from 'path';
 
