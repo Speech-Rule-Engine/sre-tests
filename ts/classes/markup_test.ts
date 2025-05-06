@@ -120,7 +120,7 @@ export class MarkupTest extends AbstractJsonTest {
    */
   public method() {
     this.executeTest(
-      ...(this.pickFields.map((x) => this.inputFields.get(x)) as [
+      ...(this.pickFields.map((x) => this.field(x)) as [
         string,
         string,
         string,
