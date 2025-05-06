@@ -51,6 +51,7 @@ const map = new Map<string, any>([
   ['colorPicker', ColorPickerTest],
   ['enrichMathml', st.EnrichMathmlTest],
   ['enrichSpeech', st.EnrichSpeechTest],
+  ['enrichStructure', st.EnrichStructureTest],
   ['html', HtmlTest],
   ['markup', MarkupTest],
   ['number', NumberTest],

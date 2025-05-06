@@ -399,6 +399,39 @@ export class EnrichMathmlTest extends SemanticBlacklistTest {
 }
 
 /**
+ * Tests for enriched MathML with semantic structure.
+ *
+ * Note, that there can be nodes with multiple `role` attributes in the output:
+ * One is the aria role, the other the abbreviated `data-semantic-role`
+ * attribute.
+ */
+export class EnrichStructureTest extends EnrichMathmlTest {
+
+  /**
+   * @override
+   */
+  public async setUpTest() {
+    await super.setUpTest();
+    return System.setupEngine({
+      structure: true,
+      aria: true
+    });
+  }
+
+  /**
+   * @override
+   */
+  public async tearDownTest() {
+    await System.setupEngine({
+      structure: false,
+      aria: false
+    });
+    return super.tearDownTest();
+  }
+
+}
+
+/**
  * Tests for the semantic API.
  */
 export class SemanticApiTest extends SemanticTest {
