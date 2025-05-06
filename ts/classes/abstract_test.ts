@@ -20,10 +20,21 @@ import * as assert from 'assert';
 import * as tu from '../base/test_util.js';
 
 export abstract class AbstractTest {
+
   /**
-   * The Jest package.
+   * Jest package used?
    */
-  protected jest = true;
+  private _jest = true;
+
+  /**
+   * Jest package usage.
+   *
+   * @param flag True if jest package is used.
+   */
+  public set jest(flag: boolean) {
+    this._jest = flag;
+    this.assert = this.getAssert();
+  }
 
   /**
    * Basic information on the test case.
@@ -37,19 +48,25 @@ export abstract class AbstractTest {
     equal: (expected: any, actual: any) => void;
     deepEqual: (expected: any, actual: any) => void;
     fail: () => void;
-  } = {
-    equal: !this.jest
-      ? assert.strictEqual
-      : (actual, expected) => {
+  } = this.getAssert();
+
+  /**
+   * Sets the assertion methods for executing tests.
+   */
+  private getAssert() {
+    return {
+      equal:
+      !this._jest
+        ? assert.strictEqual
+        : (actual: any, expected: any) => expect(actual).toEqual(expected),
+      deepEqual: !this._jest
+        ? assert.deepStrictEqual
+        : (actual: any, expected: any) => {
           expect(actual).toEqual(expected);
         },
-    deepEqual: !this.jest
-      ? assert.deepStrictEqual
-      : (actual, expected) => {
-          expect(actual).toEqual(expected);
-        },
-    fail: assert.fail
-  };
+      fail: assert.fail
+    };
+  }
 
   /**
    * Sets up the basic requirements for the test.
