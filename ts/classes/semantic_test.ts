@@ -401,11 +401,18 @@ export class EnrichMathmlTest extends SemanticBlacklistTest {
 /**
  * Tests for enriched MathML with semantic structure.
  *
- * Note, that there can be nodes with multiple `role` attributes in the output:
- * One is the aria role, the other the abbreviated `data-semantic-role`
- * attribute.
+ * Note, since there can be nodes with multiple `role` attributes in the output,
+ * aria `role` and the abbreviated `data-semantic-role` attribute, the latter is
+ * removed via the blacklist.
  */
 export class EnrichStructureTest extends EnrichMathmlTest {
+
+  /**
+   * @override
+   */
+  protected blacklist: string[] = [
+    'data-semantic-role'
+  ];
 
   /**
    * @override
