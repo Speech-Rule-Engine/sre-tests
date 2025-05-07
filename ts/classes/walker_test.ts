@@ -20,6 +20,7 @@
  */
 
 import * as EngineConst from '../../speech-rule-engine/js/common/engine_const.js';
+import { Options } from '../../speech-rule-engine/js/common/options.js';
 import * as System from '../../speech-rule-engine/js/common/system.js';
 import { Walker } from '../../speech-rule-engine/js/walker/walker.js';
 import { TableWalker } from '../../speech-rule-engine/js/walker/table_walker.js';
@@ -225,7 +226,8 @@ export class SemanticSkeletonTest extends AbstractJsonTest {
     );
     const explore = this.explore();
     const structure = SemanticSkeleton.fromStructure(
-      this.walker.getXml(), this.walker.getRebuilt().stree).toString()
+      this.walker.getXml(), this.walker.getRebuilt().stree, new Options())
+      .toString()
     this.assert.equal(
       explore,
       structure
