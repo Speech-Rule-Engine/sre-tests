@@ -20,6 +20,9 @@
  */
 
 import { SystemExternal } from '../../speech-rule-engine/js/common/system_external.js';
+// Note: Everything except enrich_structure already works with new Options() only.
+// import { Options } from '../../speech-rule-engine/js/common/options.js';
+import { Engine } from '../../speech-rule-engine/js/common/engine.js';
 import { AbstractExamples } from './abstract_examples.js';
 import { AbstractJsonTest } from './abstract_test.js';
 import { JsonTests } from '../base/test_util.js';
@@ -107,7 +110,7 @@ export class RebuildStreeTest extends SemanticTest {
     // Unclear why this cloning is necessary.
     const mml = DomUtil.cloneNode(DomUtil.parseInput(mathMl));
     const stree = new SemanticTree(mml);
-    const emml = enrich(mml, stree);
+    const emml = enrich(mml, stree, Engine.getInstance().options);
     const reass = new RebuildStree(emml).getTree();
     this.assert.equal(stree.toString(), reass.toString());
   }
@@ -253,7 +256,7 @@ export class RebuildEnrichedTest extends SemanticBlacklistTest {
   public executeTest(expr: string) {
     const mml = DomUtil.parseInput(Enrich.prepareMmlString(expr));
     const original = new SemanticTree(mml);
-    const enriched = enrich(mml, original);
+    const enriched = enrich(mml, original, Engine.getInstance().options);
     const newTree = this.semanticTree(enriched);
     this.canonicalize(original);
     this.canonicalize(newTree);
@@ -385,7 +388,7 @@ export class EnrichMathmlTest extends SemanticBlacklistTest {
    */
   public executeTest(mml: string, smml: string) {
     const mathMl = Enrich.prepareMmlString(mml);
-    const node = Enrich.semanticMathmlSync(mathMl);
+    const node = Enrich.semanticMathmlSync(mathMl, Engine.getInstance().options);
     const dp = new SystemExternal.xmldom.DOMParser();
     const xml = dp.parseFromString(
       smml ? smml : '<math/>',

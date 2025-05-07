@@ -162,7 +162,7 @@ export class ExplorationTest extends AbstractJsonTest {
   public executeTest(expr: string, expected: number[] | number) {
     const mml = DomUtil.parseInput(Enrich.prepareMmlString(expr));
     const stree = new SemanticTree(mml);
-    const emml = enrich(mml, stree);
+    const emml = enrich(mml, stree, new Options());
     this.walker = WalkerFactory.walker(
       'table',
       emml,
@@ -213,7 +213,8 @@ export class SemanticSkeletonTest extends AbstractJsonTest {
   public executeTest(expr: string) {
     const mml = DomUtil.parseInput(Enrich.prepareMmlString(expr));
     const stree = new SemanticTree(mml);
-    const emml = enrich(mml, stree);
+    const options = new Options()
+    const emml = enrich(mml, stree, options);
     this.walker = WalkerFactory.walker(
       'table',
       emml,
@@ -226,7 +227,7 @@ export class SemanticSkeletonTest extends AbstractJsonTest {
     );
     const explore = this.explore();
     const structure = SemanticSkeleton.fromStructure(
-      this.walker.getXml(), this.walker.getRebuilt().stree, new Options())
+      this.walker.getXml(), this.walker.getRebuilt().stree, options)
       .toString()
     this.assert.equal(
       explore,
