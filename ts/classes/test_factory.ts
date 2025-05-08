@@ -52,6 +52,7 @@ const map = new Map<string, any>([
   ['enrichMathml', st.EnrichMathmlTest],
   ['enrichSpeech', st.EnrichSpeechTest],
   ['enrichStructure', st.EnrichStructureTest],
+  ['heuristics', st.SemanticHeuristicTest],
   ['html', HtmlTest],
   ['markup', MarkupTest],
   ['number', NumberTest],

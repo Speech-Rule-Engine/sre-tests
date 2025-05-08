@@ -36,6 +36,7 @@ import { enrich } from '../../speech-rule-engine/js/enrich_mathml/enrich_mathml.
 import * as DomUtil from '../../speech-rule-engine/js/common/dom_util.js';
 import { SemanticNodeFactory } from '../../speech-rule-engine/js/semantic_tree/semantic_node_factory.js';
 import { SemanticTree } from '../../speech-rule-engine/js/semantic_tree/semantic_tree.js';
+import { SemanticHeuristics } from '../../speech-rule-engine/js/semantic_tree/semantic_heuristic_factory.js';
 import {
   deactivate
 } from '../../speech-rule-engine/js/semantic_tree/semantic_annotations.js';
@@ -579,7 +580,7 @@ type index = 'Secondary' | 'Meaning' | 'FencesHoriz' | 'FencesVert';
 export class SemanticMapTest extends AbstractJsonTest {
 
   private map: index;
-  
+
   /**
    * @override
    */
@@ -612,7 +613,7 @@ export class SemanticMapTest extends AbstractJsonTest {
     // Add the size test of the map.
     this.map = this.jsonTests.map;
   }
-  
+
   /**
    * @override
    */
@@ -661,5 +662,69 @@ export class CategoryTest extends AbstractJsonTest {
     const name = this.field('name') + (kind === 'unit' ? ':unit' : '');
     this.assert.equal(lookupCategory(name), this.field('expected'));
   }
- 
+
+}
+
+/**
+ * Semantic Heuristic Tests
+ */
+export class SemanticHeuristicTest extends SemanticTreeTest {
+
+  private optional: string[] = ['domain', 'modality'];
+  private saveOptional: Map<string, string> = new Map();
+
+  /**
+   * @override
+   */
+  public constructor() {
+    super();
+    this.pickFields.push('heuristic');
+    this.pickFields.push('expectedW');
+    this.pickFields.push('expectedO');
+    // Optional
+    this.pickFields.push('domain');
+    this.pickFields.push('modality');
+  }
+
+  /**
+   * @override
+   */
+  public method() {
+    this.setOptional();
+    const heuristic = this.field('heuristic');
+    SemanticHeuristics.blacklist[heuristic] = true;
+    this.executeTest(
+      this.field('input'),
+      this.field('expectedO'),
+      this.field('brief')
+    );
+    SemanticHeuristics.blacklist[heuristic] = false;
+    this.executeTest(
+      this.field('input'),
+      this.field('expectedW'),
+      this.field('brief')
+    );
+    this.unsetOptional();
+  }
+
+  private setOptional() {
+    for (const opt of this.optional) {
+      if (this.field(opt)) {
+        const feature: {[key: string]: string} = {};
+        feature[opt] = this.field(opt);
+        this.saveOptional.set(opt, System.engineSetup()[opt] as string);
+        System.setupEngine(feature);
+      }
+    }
+  }
+
+  private unsetOptional() {
+    for (const [opt, value] of this.saveOptional.entries()) {
+      const feature: {[key: string]: string} = {};
+      feature[opt] = value;
+      System.setupEngine(feature);
+      this.saveOptional.delete(opt);
+    }
+  }
+
 }
