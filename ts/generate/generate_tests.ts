@@ -20,6 +20,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
+import { Engine } from '../../speech-rule-engine/js/common/engine.js';
 import * as DomUtil from '../../speech-rule-engine/js/common/dom_util.js';
 import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich.js';
 import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic.js';
@@ -594,7 +595,8 @@ export class SemanticTransformer extends AbstractTransformer {
    * @override
    */
   public via(src: string) {
-    return Semantic.getTreeFromString(Enrich.prepareMmlString(src))
+    return Semantic.getTreeFromString(Enrich.prepareMmlString(src),
+                                      Engine.getInstance().options)
       .xml()
       .toString();
   }
@@ -992,7 +994,8 @@ export class PretextGenerator extends AbstractGenerator {
   private static addPretextReference(orig: tu.JsonTest[], ref: tu.JsonTests) {
     for (const test of orig) {
       const stree = Semantic.getTreeFromString(
-        Enrich.prepareMmlString(test.input)
+        Enrich.prepareMmlString(test.input),
+        Engine.getInstance().options
       )
         .xml()
         .toString();

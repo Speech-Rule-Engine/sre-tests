@@ -20,6 +20,7 @@
  */
 
 import { SpeechTest } from './speech_test.js';
+import { Engine } from '../../speech-rule-engine/js/common/engine.js';
 import * as DomUtil from '../../speech-rule-engine/js/common/dom_util.js';
 import * as AuralRendering from '../../speech-rule-engine/js/audio/aural_rendering.js';
 import * as SpeechGeneratorUtil from '../../speech-rule-engine/js/speech_generator/speech_generator_util.js';
@@ -90,7 +91,7 @@ export class CollapseTest extends SpeechTest {
    */
   public getSpeech(mathMl: string) {
     const mml = DomUtil.parseInput(mathMl);
-    const stree = Semantic.getTree(mml);
+    const stree = Semantic.getTree(mml, Engine.getInstance().options);
     const xml = stree.xml();
     const node = DomUtil.querySelectorAllByAttr(xml, 'ext-id')[0];
     node.setAttribute('id', node.getAttribute('ext-id'));

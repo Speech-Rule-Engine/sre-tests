@@ -20,6 +20,7 @@
  */
 
 import * as EngineConst from '../../speech-rule-engine/js/common/engine_const.js';
+import { Engine } from '../../speech-rule-engine/js/common/engine.js';
 import { Options } from '../../speech-rule-engine/js/common/options.js';
 import * as System from '../../speech-rule-engine/js/common/system.js';
 import { Walker } from '../../speech-rule-engine/js/walker/walker.js';
@@ -161,7 +162,7 @@ export class ExplorationTest extends AbstractJsonTest {
    */
   public executeTest(expr: string, expected: number[] | number) {
     const mml = DomUtil.parseInput(Enrich.prepareMmlString(expr));
-    const stree = new SemanticTree(mml);
+    const stree = new SemanticTree(mml, Engine.getInstance().options);
     const emml = enrich(mml, stree, new Options());
     this.walker = WalkerFactory.walker(
       'table',
@@ -212,7 +213,7 @@ export class SemanticSkeletonTest extends AbstractJsonTest {
    */
   public executeTest(expr: string) {
     const mml = DomUtil.parseInput(Enrich.prepareMmlString(expr));
-    const stree = new SemanticTree(mml);
+    const stree = new SemanticTree(mml, Engine.getInstance().options);
     const options = new Options()
     const emml = enrich(mml, stree, options);
     this.walker = WalkerFactory.walker(

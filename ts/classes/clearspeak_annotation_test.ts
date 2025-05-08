@@ -48,7 +48,7 @@ export class ClearspeakAnnotationTest extends AbstractJsonTest {
   public executeTest(mml: string, expected: boolean) {
     const mathMl =
       '<math xmlns="http://www.w3.org/1998/Math/MathML">' + mml + '</math>';
-    const semantic = Semantic.getTreeFromString(mathMl);
+    const semantic = Semantic.getTreeFromString(mathMl, Engine.getInstance().options);
     this.annotator.annotate(semantic.root);
     this.assert.equal(
       semantic.root.hasAnnotation('clearspeak', 'simple'),
@@ -80,7 +80,7 @@ export class ClearspeakPreferencesTest extends AbstractJsonTest {
   public executeTest(mml: string, expected: boolean, id?: number) {
     const mathMl =
       '<math xmlns="http://www.w3.org/1998/Math/MathML">' + mml + '</math>';
-    const semantic = Semantic.getTreeFromString(mathMl);    
+    const semantic = Semantic.getTreeFromString(mathMl, Engine.getInstance().options);
     this.assert.equal(
       ClearspeakPreferences.relevantPreferences(
         (id == null) ? semantic.root :
@@ -131,7 +131,7 @@ export class NextStyleTest extends AbstractJsonTest {
    * @param expected The expression is simple or not.
    */
   public executeTest(mml: string, expected: boolean, id?: number) {
-    const mathMl = 
+    const mathMl =
       '<math xmlns="http://www.w3.org/1998/Math/MathML">' + mml + '</math>';
     const emml = Enrich.semanticMathmlSync(mathMl, Engine.getInstance().options);
     const generator = new DummySpeechGenerator();
@@ -155,7 +155,7 @@ export class NextStyleTest extends AbstractJsonTest {
     } while (!style.match('_Auto') && style !== 'default')
     return result;
   }
-  
+
   /**
    * @class
    */

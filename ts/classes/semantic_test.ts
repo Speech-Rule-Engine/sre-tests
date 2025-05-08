@@ -110,7 +110,7 @@ export class RebuildStreeTest extends SemanticTest {
     const mathMl = Enrich.prepareMmlString(expr);
     // Unclear why this cloning is necessary.
     const mml = DomUtil.cloneNode(DomUtil.parseInput(mathMl));
-    const stree = new SemanticTree(mml);
+    const stree = Semantic.getTree(mml, Engine.getInstance().options);
     const emml = enrich(mml, stree, Engine.getInstance().options);
     const reass = new RebuildStree(emml).getTree();
     this.assert.equal(stree.toString(), reass.toString());
@@ -256,7 +256,7 @@ export class RebuildEnrichedTest extends SemanticBlacklistTest {
    */
   public executeTest(expr: string) {
     const mml = DomUtil.parseInput(Enrich.prepareMmlString(expr));
-    const original = new SemanticTree(mml);
+    const original = Semantic.getTree(mml, Engine.getInstance().options);
     const enriched = enrich(mml, original, Engine.getInstance().options);
     const newTree = this.semanticTree(enriched);
     this.canonicalize(original);
@@ -275,7 +275,7 @@ export class RebuildEnrichedTest extends SemanticBlacklistTest {
    * @param {string} mml The mathml expression.
    */
   private semanticTree(mml: Element) {
-    const stree = new SemanticTree(mml);
+    const stree = Semantic.getTree(mml, Engine.getInstance().options);
     this.canonicalize(stree);
     return stree;
   }
@@ -334,7 +334,7 @@ export class SemanticTreeTest extends SemanticBlacklistTest {
   public executeTest(mml: string, sml: string, opt_brief?: boolean) {
     const mathMl = Enrich.prepareMmlString(mml);
     const node = DomUtil.parseInput(mathMl);
-    const sxml = new SemanticTree(node).xml(opt_brief);
+    const sxml = Semantic.getTree(node, Engine.getInstance().options).xml(opt_brief);
     const xmls = new SystemExternal.xmldom.XMLSerializer();
     this.customizeXml(sxml);
     const dp = new SystemExternal.xmldom.DOMParser();
@@ -478,8 +478,8 @@ export class SemanticApiTest extends SemanticTest {
    */
   public treeVsXml(mml: Element) {
     this.assert.equal(
-      this.xmls(Semantic.getTree(mml).xml()),
-      this.xmls(Semantic.xmlTree(mml))
+      this.xmls(Semantic.getTree(mml, Engine.getInstance().options).xml()),
+      this.xmls(Semantic.xmlTree(mml, Engine.getInstance().options))
     );
   }
 
@@ -491,8 +491,8 @@ export class SemanticApiTest extends SemanticTest {
    */
   public stringVsXml(mml: Element, mstr: string) {
     this.assert.equal(
-      this.xmls(Semantic.getTreeFromString(mstr).xml()),
-      this.xmls(Semantic.xmlTree(mml))
+      this.xmls(Semantic.getTreeFromString(mstr, Engine.getInstance().options).xml()),
+      this.xmls(Semantic.xmlTree(mml, Engine.getInstance().options))
     );
   }
 
@@ -504,8 +504,8 @@ export class SemanticApiTest extends SemanticTest {
    */
   public stringVsTree(mml: Element, mstr: string) {
     this.assert.equal(
-      this.xmls(Semantic.getTreeFromString(mstr).xml()),
-      this.xmls(Semantic.getTree(mml).xml())
+      this.xmls(Semantic.getTreeFromString(mstr, Engine.getInstance().options).xml()),
+      this.xmls(Semantic.getTree(mml, Engine.getInstance().options).xml())
     );
   }
 }
@@ -532,7 +532,7 @@ export class SemanticXmlTest extends SemanticTest {
   public executeTest(expr: string) {
     const mathMl = Enrich.prepareMmlString(expr);
     const mml = DomUtil.parseInput(mathMl);
-    const stree = new SemanticTree(mml);
+    const stree = Semantic.getTree(mml, Engine.getInstance().options);
     const xml = stree.xml();
     this.assert.equal(
       xml.toString(),
