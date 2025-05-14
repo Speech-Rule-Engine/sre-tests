@@ -19,8 +19,10 @@
  * @author sorge@google.com (Volker Sorge)
  */
 
-// import * as xmldom from '@xmldom/xmldom';
 import { SystemExternal } from '../../speech-rule-engine/js/common/system_external.js';
+// Note: Everything except enrich_structure already works with new Options() only.
+// import { Options } from '../../speech-rule-engine/js/common/options.js';
+import { Engine } from '../../speech-rule-engine/js/common/engine.js';
 import { AbstractExamples } from './abstract_examples.js';
 import { AbstractJsonTest } from './abstract_test.js';
 import { JsonTests } from '../base/test_util.js';
@@ -34,6 +36,7 @@ import { enrich } from '../../speech-rule-engine/js/enrich_mathml/enrich_mathml.
 import * as DomUtil from '../../speech-rule-engine/js/common/dom_util.js';
 import { SemanticNodeFactory } from '../../speech-rule-engine/js/semantic_tree/semantic_node_factory.js';
 import { SemanticTree } from '../../speech-rule-engine/js/semantic_tree/semantic_tree.js';
+import { SemanticHeuristics } from '../../speech-rule-engine/js/semantic_tree/semantic_heuristic_factory.js';
 import {
   deactivate
 } from '../../speech-rule-engine/js/semantic_tree/semantic_annotations.js';
@@ -107,8 +110,8 @@ export class RebuildStreeTest extends SemanticTest {
     const mathMl = Enrich.prepareMmlString(expr);
     // Unclear why this cloning is necessary.
     const mml = DomUtil.cloneNode(DomUtil.parseInput(mathMl));
-    const stree = new SemanticTree(mml);
-    const emml = enrich(mml, stree);
+    const stree = Semantic.getTree(mml, Engine.getInstance().options);
+    const emml = enrich(mml, stree, Engine.getInstance().options);
     const reass = new RebuildStree(emml).getTree();
     this.assert.equal(stree.toString(), reass.toString());
   }
@@ -253,8 +256,8 @@ export class RebuildEnrichedTest extends SemanticBlacklistTest {
    */
   public executeTest(expr: string) {
     const mml = DomUtil.parseInput(Enrich.prepareMmlString(expr));
-    const original = new SemanticTree(mml);
-    const enriched = enrich(mml, original);
+    const original = Semantic.getTree(mml, Engine.getInstance().options);
+    const enriched = enrich(mml, original, Engine.getInstance().options);
     const newTree = this.semanticTree(enriched);
     this.canonicalize(original);
     this.canonicalize(newTree);
@@ -272,7 +275,7 @@ export class RebuildEnrichedTest extends SemanticBlacklistTest {
    * @param {string} mml The mathml expression.
    */
   private semanticTree(mml: Element) {
-    const stree = new SemanticTree(mml);
+    const stree = Semantic.getTree(mml, Engine.getInstance().options);
     this.canonicalize(stree);
     return stree;
   }
@@ -331,7 +334,7 @@ export class SemanticTreeTest extends SemanticBlacklistTest {
   public executeTest(mml: string, sml: string, opt_brief?: boolean) {
     const mathMl = Enrich.prepareMmlString(mml);
     const node = DomUtil.parseInput(mathMl);
-    const sxml = new SemanticTree(node).xml(opt_brief);
+    const sxml = Semantic.getTree(node, Engine.getInstance().options).xml(opt_brief);
     const xmls = new SystemExternal.xmldom.XMLSerializer();
     this.customizeXml(sxml);
     const dp = new SystemExternal.xmldom.DOMParser();
@@ -386,7 +389,7 @@ export class EnrichMathmlTest extends SemanticBlacklistTest {
    */
   public executeTest(mml: string, smml: string) {
     const mathMl = Enrich.prepareMmlString(mml);
-    const node = Enrich.semanticMathmlSync(mathMl);
+    const node = Enrich.semanticMathmlSync(mathMl, Engine.getInstance().options);
     const dp = new SystemExternal.xmldom.DOMParser();
     const xml = dp.parseFromString(
       smml ? smml : '<math/>',
@@ -397,6 +400,46 @@ export class EnrichMathmlTest extends SemanticBlacklistTest {
     const cleaned = removeAttributePrefix(xmls.serializeToString(node));
     this.assert.equal(cleaned, xmls.serializeToString(xml));
   }
+}
+
+/**
+ * Tests for enriched MathML with semantic structure.
+ *
+ * Note, since there can be nodes with multiple `role` attributes in the output,
+ * aria `role` and the abbreviated `data-semantic-role` attribute, the latter is
+ * removed via the blacklist.
+ */
+export class EnrichStructureTest extends EnrichMathmlTest {
+
+  /**
+   * @override
+   */
+  protected blacklist: string[] = [
+    'data-semantic-role'
+  ];
+
+  /**
+   * @override
+   */
+  public async setUpTest() {
+    await super.setUpTest();
+    return System.setupEngine({
+      structure: true,
+      aria: true
+    });
+  }
+
+  /**
+   * @override
+   */
+  public async tearDownTest() {
+    await System.setupEngine({
+      structure: false,
+      aria: false
+    });
+    return super.tearDownTest();
+  }
+
 }
 
 /**
@@ -435,8 +478,8 @@ export class SemanticApiTest extends SemanticTest {
    */
   public treeVsXml(mml: Element) {
     this.assert.equal(
-      this.xmls(Semantic.getTree(mml).xml()),
-      this.xmls(Semantic.xmlTree(mml))
+      this.xmls(Semantic.getTree(mml, Engine.getInstance().options).xml()),
+      this.xmls(Semantic.xmlTree(mml, Engine.getInstance().options))
     );
   }
 
@@ -448,8 +491,8 @@ export class SemanticApiTest extends SemanticTest {
    */
   public stringVsXml(mml: Element, mstr: string) {
     this.assert.equal(
-      this.xmls(Semantic.getTreeFromString(mstr).xml()),
-      this.xmls(Semantic.xmlTree(mml))
+      this.xmls(Semantic.getTreeFromString(mstr, Engine.getInstance().options).xml()),
+      this.xmls(Semantic.xmlTree(mml, Engine.getInstance().options))
     );
   }
 
@@ -461,8 +504,8 @@ export class SemanticApiTest extends SemanticTest {
    */
   public stringVsTree(mml: Element, mstr: string) {
     this.assert.equal(
-      this.xmls(Semantic.getTreeFromString(mstr).xml()),
-      this.xmls(Semantic.getTree(mml).xml())
+      this.xmls(Semantic.getTreeFromString(mstr, Engine.getInstance().options).xml()),
+      this.xmls(Semantic.getTree(mml, Engine.getInstance().options).xml())
     );
   }
 }
@@ -489,7 +532,7 @@ export class SemanticXmlTest extends SemanticTest {
   public executeTest(expr: string) {
     const mathMl = Enrich.prepareMmlString(expr);
     const mml = DomUtil.parseInput(mathMl);
-    const stree = new SemanticTree(mml);
+    const stree = Semantic.getTree(mml, Engine.getInstance().options);
     const xml = stree.xml();
     this.assert.equal(
       xml.toString(),
@@ -537,7 +580,7 @@ type index = 'Secondary' | 'Meaning' | 'FencesHoriz' | 'FencesVert';
 export class SemanticMapTest extends AbstractJsonTest {
 
   private map: index;
-  
+
   /**
    * @override
    */
@@ -570,7 +613,7 @@ export class SemanticMapTest extends AbstractJsonTest {
     // Add the size test of the map.
     this.map = this.jsonTests.map;
   }
-  
+
   /**
    * @override
    */
@@ -619,5 +662,69 @@ export class CategoryTest extends AbstractJsonTest {
     const name = this.field('name') + (kind === 'unit' ? ':unit' : '');
     this.assert.equal(lookupCategory(name), this.field('expected'));
   }
- 
+
+}
+
+/**
+ * Semantic Heuristic Tests
+ */
+export class SemanticHeuristicTest extends SemanticTreeTest {
+
+  private optional: string[] = ['domain', 'modality'];
+  private saveOptional: Map<string, string> = new Map();
+
+  /**
+   * @override
+   */
+  public constructor() {
+    super();
+    this.pickFields.push('heuristic');
+    this.pickFields.push('expectedW');
+    this.pickFields.push('expectedO');
+    // Optional
+    this.pickFields.push('domain');
+    this.pickFields.push('modality');
+  }
+
+  /**
+   * @override
+   */
+  public method() {
+    this.setOptional();
+    const heuristic = this.field('heuristic');
+    SemanticHeuristics.blacklist[heuristic] = true;
+    this.executeTest(
+      this.field('input'),
+      this.field('expectedO'),
+      this.field('brief')
+    );
+    SemanticHeuristics.blacklist[heuristic] = false;
+    this.executeTest(
+      this.field('input'),
+      this.field('expectedW'),
+      this.field('brief')
+    );
+    this.unsetOptional();
+  }
+
+  private setOptional() {
+    for (const opt of this.optional) {
+      if (this.field(opt)) {
+        const feature: {[key: string]: string} = {};
+        feature[opt] = this.field(opt);
+        this.saveOptional.set(opt, System.engineSetup()[opt] as string);
+        System.setupEngine(feature);
+      }
+    }
+  }
+
+  private unsetOptional() {
+    for (const [opt, value] of this.saveOptional.entries()) {
+      const feature: {[key: string]: string} = {};
+      feature[opt] = value;
+      System.setupEngine(feature);
+      this.saveOptional.delete(opt);
+    }
+  }
+
 }

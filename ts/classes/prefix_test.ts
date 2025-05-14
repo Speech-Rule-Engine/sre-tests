@@ -19,6 +19,7 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
+import { Engine } from '../../speech-rule-engine/js/common/engine.js';
 import * as System from '../../speech-rule-engine/js/common/system.js';
 import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich.js';
 import { Grammar } from '../../speech-rule-engine/js/rule_engine/grammar.js';
@@ -91,7 +92,7 @@ export class PrefixTest extends SpeechTest {
    * @override
    */
   public getSpeech(mml: string) {
-    const stree = Semantic.getTreeFromString(mml);
+    const stree = Semantic.getTreeFromString(mml, Engine.getInstance().options);
     const node = stree.root.querySelectorAll(
       this.id === null
         ? (x: SemanticNode) => x.attributes['extid'] === 'A'

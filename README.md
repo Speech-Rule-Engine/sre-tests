@@ -801,9 +801,13 @@ different sub-directories:
 1. `enrich_mathml`, translate to enriched Mathml output.
 2. `enrich_speech`, test if speech strings computed directly for a MathML
    expression are equivalent to those computed for enriched expressions.
+3. `enrich_structure`, enriched Mathml with semantic structure and aria
+   information.
 3. `rebuild_stree`, test if semantic trees build from enriched MathML
    expressions are equivalent to those computed directly.
+4. `rebuild_enriched`, test if enrichment is idempotent.
 4. `semantic_api`, tests consistency of the various semantic APIs.
+5. `semantic_exploration`, checks the depth first semantic walking order.
 5. `semantic_tree`, translate into semantic trees.
 6. `semantic_xml`, tests consistency of the semantic tree parser, i.e., parsing
    the XML output of the semantic tree results in the equivalent semantic tree.
@@ -811,7 +815,9 @@ different sub-directories:
    every tree element with a semantic id has speech attached and vice versa.
 
 
-Note that tests 2, 3, 4, 6 and 7, usually run with respect to `"tests": "ALL"`.
+Note that tests -- with exceptions of `enrich_mathml`, `enrich_structure`,
+`semantic_exploration`, and `semantic_tree` -- usually run with respect to
+`"tests": "ALL"`.
 
 
 ### Copying tests

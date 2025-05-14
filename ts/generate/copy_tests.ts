@@ -304,6 +304,9 @@ export function copySemanticTest(base: string, fill: boolean = false, targetdir?
     factory: 'enrichSpeech',
     tests: 'ALL'
   });
+  createSemanticTestFile(sourcedir, targetdir, 'enrich_structure', basename, info, {
+    factory: 'enrichStructure',
+  });
   createSemanticTestFile(sourcedir, targetdir, 'deep_speech', basename, info, {
     factory: 'deepSpeech',
     tests: 'ALL'
@@ -333,6 +336,7 @@ export function copySemanticTest(base: string, fill: boolean = false, targetdir?
   });
   if (fill) {
     addMissing(path.join(targetdir, 'enrich_mathml', basename));
+    addMissing(path.join(targetdir, 'enrich_structure', basename));
     addMissing(path.join(targetdir, 'semantic_tree', basename));
     addMissing(path.join(targetdir, 'semantic_exploration', basename));
   }

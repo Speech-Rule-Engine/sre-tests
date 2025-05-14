@@ -45,6 +45,7 @@ export async function runTests(
   const saveOutput = ExampleFiles.noOutput;
   ExampleFiles.noOutput = true;
   const tests = factoryget(expected);
+  tests.jest = false;
   tests.prepare();
   const result: JsonTests = {};
   try {

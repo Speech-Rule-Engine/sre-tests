@@ -189,6 +189,202 @@
       "input": "LEFT",
       "move": true,
       "expected": null
+    },
+    "_comment_": "The following depend on some of the previous setups until the first reset.",
+    "Prepare_0": {
+      "type": "setupEngine",
+      "expected": "[object Promise]",
+      "setup": {
+        "locale": "es"
+      }
+    },
+    "Prepare_1": {
+      "type": "setupEngine",
+      "expected": "[object Promise]",
+      "setup": {
+        "locale": "fr"
+      }
+    },
+    "EngineSetup_JsonPath": {
+      "_comment_": "This is important, as the paths are computed and depend on the location of the tests. This is particularly important to run on github!",
+      "type": "engineSetup",
+      "setup": {
+        "locale": "en",
+        "json": "IGNORE"
+      },
+      "expected": "{\"mode\":\"async\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"IGNORE/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_0": {
+      "type": "engineSetup",
+      "input": {},
+      "expected": "{\"mode\":\"async\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"IGNORE/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "ResetEngine_0": {
+      "type": "resetEngine",
+      "input": {}
+    },
+    "EngineSetup_AfterReset_0": {
+      "type": "engineSetup",
+      "input": {},
+      "expected": "{\"mode\":\"async\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"IGNORE/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_1": {
+      "type": "engineSetup",
+      "setup": {
+        "foo": "bar"
+      },
+      "expected": "{\"mode\":\"async\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"IGNORE/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_2": {
+      "type": "engineSetup",
+      "setup": {
+        "mode": "sync"
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"IGNORE/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_3": {
+      "type": "engineSetup",
+      "setup": {
+        "delay": true,
+        "structure": true,
+        "pprint": true
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":true,\"aria\":false,\"pprint\":true,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"IGNORE/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_4": {
+      "type": "engineSetup",
+      "setup": {
+        "structure": false,
+        "pprint": false
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"IGNORE/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_5": {
+      "type": "engineSetup",
+      "setup": {
+        "domain": "clearspeak",
+        "markup": "ssml"
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"clearspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"IGNORE/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_6": {
+      "type": "engineSetup",
+      "setup": {
+        "json": "../node_modules/speech-rule-engine/lib/mathmaps"
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"clearspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../node_modules/speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_7": {
+      "type": "engineSetup",
+      "setup": {
+        "locale": "es",
+        "json": "../lib/mathmaps"
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"es\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_8": {
+      "type": "engineSetup",
+      "setup": {
+        "locale": "es",
+        "domain": "clearspeak"
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"es\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_9": {
+      "type": "engineSetup",
+      "setup": {
+        "modality": "summary"
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"es\",\"delay\":false,\"modality\":\"summary\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_10": {
+      "type": "engineSetup",
+      "setup": {
+        "locale": "en"
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"summary\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_11": {
+      "type": "engineSetup",
+      "setup": {
+        "modality": "speech",
+        "domain": "default"
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_12": {
+      "type": "engineSetup",
+      "setup": {
+        "domain": "chromevox"
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"chromevox\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_13": {
+      "type": "engineSetup",
+      "setup": {
+        "locale": "fr"
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"fr\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"fr\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_14": {
+      "type": "engineSetup",
+      "setup": {
+        "domain": "nix"
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"fr\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"fr\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_15": {
+      "type": "engineSetup",
+      "setup": {
+        "locale": "en"
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_16": {
+      "type": "engineSetup",
+      "setup": {
+        "locale": "es",
+        "domain": "mathspeak"
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"es\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_17": {
+      "type": "engineSetup",
+      "setup": {
+        "locale": "de",
+        "domain": "clearspeak"
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"clearspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"de\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "ResetEngine_1": {
+      "type": "resetEngine",
+      "input": {}
+    },
+    "EngineSetup_AfterReset_1": {
+      "type": "engineSetup",
+      "input": {},
+      "expected": "{\"mode\":\"sync\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
     }
   }
 }

@@ -19,7 +19,12 @@
  */
 
 import { annotators } from '../../speech-rule-engine/js/semantic_tree/semantic_annotations.js';
+import { Engine } from '../../speech-rule-engine/js/common/engine.js';
 import * as Semantic from '../../speech-rule-engine/js/semantic_tree/semantic.js';
+import { ClearspeakPreferences } from '../../speech-rule-engine/js/speech_rules/clearspeak_preferences.js';
+import * as System from '../../speech-rule-engine/js/common/system.js';
+import * as Enrich from '../../speech-rule-engine/js/enrich_mathml/enrich.js';
+import { DummySpeechGenerator } from '../../speech-rule-engine/js/speech_generator/dummy_speech_generator.js';
 
 import { AbstractJsonTest } from './abstract_test.js';
 
@@ -43,7 +48,7 @@ export class ClearspeakAnnotationTest extends AbstractJsonTest {
   public executeTest(mml: string, expected: boolean) {
     const mathMl =
       '<math xmlns="http://www.w3.org/1998/Math/MathML">' + mml + '</math>';
-    const semantic = Semantic.getTreeFromString(mathMl);
+    const semantic = Semantic.getTreeFromString(mathMl, Engine.getInstance().options);
     this.annotator.annotate(semantic.root);
     this.assert.equal(
       semantic.root.hasAnnotation('clearspeak', 'simple'),
@@ -56,5 +61,135 @@ export class ClearspeakAnnotationTest extends AbstractJsonTest {
    */
   public method() {
     this.executeTest(this.field('input'), this.field('expected'));
+  }
+}
+
+
+export class ClearspeakPreferencesTest extends AbstractJsonTest {
+  /**
+   * @override
+   */
+  public information = 'Clearspeak Preference tests.';
+
+  /**
+   * Tests simple annotator for Clearspeak.
+   *
+   * @param mml Snippet of a MathML expression.
+   * @param expected The expression is simple or not.
+   */
+  public executeTest(mml: string, expected: boolean, id?: number) {
+    const mathMl =
+      '<math xmlns="http://www.w3.org/1998/Math/MathML">' + mml + '</math>';
+    const semantic = Semantic.getTreeFromString(mathMl, Engine.getInstance().options);
+    this.assert.equal(
+      ClearspeakPreferences.relevantPreferences(
+        (id == null) ? semantic.root :
+          semantic.root.querySelectorAll((x) => x.id === id)[0]),
+      expected
+    );
+  }
+
+  /**
+   * @class
+   */
+  public constructor() {
+    super();
+    this.pickFields.push('id');
+  }
+
+  /**
+   * @override
+   */
+  public async setUpTest() {
+    await super.setUpTest();
+    return System.setupEngine({
+      domain: 'clearspeak'
+    });
+  }
+
+  /**
+   * @override
+   */
+  public method() {
+    this.executeTest(
+      this.field('input'), this.field('expected'), this.field('id')
+    );
+  }
+}
+
+export class NextStyleTest extends AbstractJsonTest {
+  /**
+   * @override
+   */
+  public information = 'Next Style and Preference tests.';
+
+  public domain = 'clearspeak';
+  /**
+   * Tests simple annotator for Clearspeak.
+   *
+   * @param mml Snippet of a MathML expression.
+   * @param expected The expression is simple or not.
+   */
+  public executeTest(mml: string, expected: boolean, id?: number) {
+    const mathMl =
+      '<math xmlns="http://www.w3.org/1998/Math/MathML">' + mml + '</math>';
+    const emml = Enrich.semanticMathmlSync(mathMl, Engine.getInstance().options);
+    const generator = new DummySpeechGenerator();
+    generator.setOptions({
+      modality: this.field('modality') || 'speech',
+      style: 'default',
+      domain: this.field('domain') || this.domain
+    });
+    generator.computeRebuilt(emml);
+    this.assert.deepEqual(this.styleSequence(generator, id), expected);
+  }
+
+  private styleSequence(generator: DummySpeechGenerator, id: number) {
+    const sid = (id == null ? generator.getRebuilt().stree.root.id : id).toString();
+    const result: string[] = [];
+    let style;
+    do {
+      generator.nextStyle(sid);
+      style = generator.getOptions().style;
+      result.push(style);
+    } while (!style.match('_Auto') && style !== 'default')
+    return result;
+  }
+
+  /**
+   * @class
+   */
+  public constructor() {
+    super();
+    this.pickFields.push('id');
+    this.pickFields.push('domain');
+    this.pickFields.push('modality');
+  }
+
+  /**
+   * @override
+   */
+  public async setUpTest() {
+    await super.setUpTest();
+    return System.setupEngine({
+      domain: this.field('domain')
+    });
+  }
+
+  /**
+   * @override
+   */
+  public prepare() {
+    super.prepare();
+    this.domain = this.jsonTests.domain || this.domain;
+  }
+
+  /**
+   * @override
+   */
+  public method() {
+    this.executeTest(
+      this.field('input'), this.field('expected'), this.field('id')
+    );
   }
 }
