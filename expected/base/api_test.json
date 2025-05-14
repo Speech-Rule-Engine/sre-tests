@@ -196,12 +196,22 @@
       "expected": "{\"mode\":\"async\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
       "json": true
     },
+    "ResetEngine_0": {
+      "type": "resetEngine",
+      "input": {}
+    },
+    "EngineSetup_AfterReset_0": {
+      "type": "engineSetup",
+      "input": {},
+      "expected": "{\"mode\":\"async\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
     "EngineSetup_1": {
       "type": "engineSetup",
       "setup": {
         "foo": "bar"
       },
-      "expected": "{\"mode\":\"async\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "expected": "{\"mode\":\"async\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
       "json": true
     },
     "EngineSetup_2": {
@@ -209,7 +219,7 @@
       "setup": {
         "mode": "sync"
       },
-      "expected": "{\"mode\":\"sync\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "expected": "{\"mode\":\"sync\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
       "json": true
     },
     "EngineSetup_3": {
@@ -219,7 +229,7 @@
         "structure": true,
         "pprint": true
       },
-      "expected": "{\"mode\":\"sync\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":true,\"aria\":false,\"pprint\":true,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "expected": "{\"mode\":\"sync\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":true,\"aria\":false,\"pprint\":true,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
       "json": true
     },
     "EngineSetup_4": {
@@ -228,7 +238,7 @@
         "structure": false,
         "pprint": false
       },
-      "expected": "{\"mode\":\"sync\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "expected": "{\"mode\":\"sync\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
       "json": true
     },
     "EngineSetup_5": {
@@ -237,7 +247,7 @@
         "domain": "clearspeak",
         "markup": "ssml"
       },
-      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"clearspeak\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"clearspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
       "json": true
     },
     "EngineSetup_6": {
@@ -245,7 +255,7 @@
       "setup": {
         "json": "../node_modules/speech-rule-engine/lib/mathmaps"
       },
-      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"clearspeak\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../node_modules/speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"clearspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../node_modules/speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
       "json": true
     },
     "EngineSetup_7": {
@@ -254,7 +264,7 @@
         "locale": "es",
         "json": "../speech-rule-engine/lib/mathmaps"
       },
-      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"es\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"es\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
       "json": true
     },
     "EngineSetup_8": {
@@ -263,7 +273,7 @@
         "locale": "es",
         "domain": "clearspeak"
       },
-      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"es\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"es\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
       "json": true
     },
     "EngineSetup_9": {
@@ -271,7 +281,7 @@
       "setup": {
         "modality": "summary"
       },
-      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"es\",\"delay\":false,\"modality\":\"summary\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"es\",\"delay\":false,\"modality\":\"summary\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
       "json": true
     },
     "EngineSetup_10": {
@@ -279,7 +289,7 @@
       "setup": {
         "locale": "en"
       },
-      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"en\",\"delay\":false,\"modality\":\"summary\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"summary\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
       "json": true
     },
     "EngineSetup_11": {
@@ -288,7 +298,7 @@
         "modality": "speech",
         "domain": "default"
       },
-      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
       "json": true
     },
     "EngineSetup_12": {
@@ -296,7 +306,7 @@
       "setup": {
         "domain": "chromevox"
       },
-      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"chromevox\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"chromevox\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
       "json": true
     },
     "EngineSetup_13": {
@@ -304,7 +314,7 @@
       "setup": {
         "locale": "fr"
       },
-      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"fr\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"fr\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"fr\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"fr\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
       "json": true
     },
     "EngineSetup_14": {
@@ -312,7 +322,7 @@
       "setup": {
         "domain": "nix"
       },
-      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"fr\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"fr\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"fr\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"fr\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
       "json": true
     },
     "EngineSetup_15": {
@@ -320,7 +330,35 @@
       "setup": {
         "locale": "en"
       },
-      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Semantic\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_16": {
+      "type": "engineSetup",
+      "setup": {
+        "locale": "es",
+        "domain": "mathspeak"
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"es\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "EngineSetup_17": {
+      "type": "engineSetup",
+      "setup": {
+        "locale": "de",
+        "domain": "clearspeak"
+      },
+      "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"clearspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"de\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
+      "json": true
+    },
+    "ResetEngine_1": {
+      "type": "resetEngine",
+      "input": {}
+    },
+    "EngineSetup_AfterReset_1": {
+      "type": "engineSetup",
+      "input": {},
+      "expected": "{\"mode\":\"async\",\"markup\":\"none\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"en\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
       "json": true
     }
   }
