@@ -79,16 +79,15 @@ export class ApiTest extends AbstractJsonTest {
     json: boolean,
     move: boolean
   ) {
-    System.setupEngine(feature || ApiTest.SETUP).then(() => {
-      expr = move ? Key.get(expr) : expr || ApiTest.QUADRATIC;
-      let output = (System as any)[func](expr);
-      output = output
-        ? json
+    System.setupEngine(feature || ApiTest.SETUP);
+    expr = move ? Key.get(expr) : expr || ApiTest.QUADRATIC;
+    let output = (System as any)[func](expr);
+    output = output
+      ? json
         ? JSON.stringify(output)
         : output.toString()
       : output;
-      this.assert.equal(output, result);
-    });
+    this.assert.equal(output, result);
   }
 
   /**
