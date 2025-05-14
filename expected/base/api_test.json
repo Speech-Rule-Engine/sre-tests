@@ -272,7 +272,7 @@
       "type": "engineSetup",
       "setup": {
         "locale": "es",
-        "json": "../speech-rule-engine/lib/mathmaps"
+        "json": "../lib/mathmaps"
       },
       "expected": "{\"mode\":\"sync\",\"markup\":\"ssml\",\"style\":\"default\",\"domain\":\"mathspeak\",\"speech\":\"none\",\"walker\":\"Table\",\"locale\":\"es\",\"delay\":false,\"modality\":\"speech\",\"rate\":\"100\",\"rules\":\"\",\"subiso\":\"\",\"prune\":\"\",\"automark\":false,\"mark\":true,\"character\":true,\"cleanpause\":true,\"strict\":false,\"structure\":false,\"aria\":false,\"pprint\":false,\"cayleyshort\":true,\"linebreaks\":false,\"tree\":false,\"json\":\"../speech-rule-engine/lib/mathmaps/\",\"xpath\":\"https://cdn.jsdelivr.net/npm/wicked-good-xpath@1.3.0/dist/wgxpath.install.js\"}",
       "json": true
