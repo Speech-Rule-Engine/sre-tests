@@ -71,7 +71,7 @@ export class ApiTest extends AbstractJsonTest {
    * @param json Json output expected?
    * @param move Is this a move with some keyboard input?
    */
-  public executeTest(
+  public async executeTest(
     func: string,
     expr: any,
     result: string | null,
@@ -79,7 +79,7 @@ export class ApiTest extends AbstractJsonTest {
     json: boolean,
     move: boolean
   ) {
-    System.setupEngine(feature || ApiTest.SETUP);
+    await System.setupEngine(feature || ApiTest.SETUP);
     expr = move ? Key.get(expr) : expr || ApiTest.QUADRATIC;
     let output = (System as any)[func](expr);
     output = output
