@@ -205,6 +205,13 @@
         "locale": "fr"
       }
     },
+    "Prepare_2": {
+      "type": "setupEngine",
+      "expected": "[object Promise]",
+      "setup": {
+        "locale": "de"
+      }
+    },
     "EngineSetup_JsonPath": {
       "_comment_": "This is important, as the paths are computed and depend on the location of the tests. This is particularly important to run on github!",
       "type": "engineSetup",
