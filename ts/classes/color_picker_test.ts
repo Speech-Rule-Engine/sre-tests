@@ -23,6 +23,17 @@ import {
 import { AbstractJsonTest } from '../classes/abstract_test.js';
 
 export class ColorPickerTest extends AbstractJsonTest {
+
+  /**
+   * Color picker test class.
+   *
+   * @class
+   */
+  public constructor() {
+    super();
+    this.pickFields.push('type');
+  }
+
   /**
    * Tests if a given color object produces the correct rgba value. The test is
    * run on background colors.
@@ -30,15 +41,24 @@ export class ColorPickerTest extends AbstractJsonTest {
    * @param color The color specification.
    * @param expected The expected rgba string.
    */
-  public executeTest(color: Color, expected: string) {
+  public executeTest(color: Color, expected: string, kind?: string) {
     const picker = new ColorPicker(color);
-    this.assert.equal(picker.rgba().background, expected);
+    switch (kind) {
+      case 'hex':
+        this.assert.equal(picker.hex().background, expected);
+        break;
+      case 'rgb':
+        this.assert.equal(picker.rgb().background, expected);
+        break;
+      default:
+        this.assert.equal(picker.rgba().background, expected);
+    }
   }
 
   /**
    * @override
    */
   public method() {
-    this.executeTest(this.field('input'), this.field('expected'));
+    this.executeTest(this.field('input'), this.field('expected'), this.field('type'));
   }
 }
