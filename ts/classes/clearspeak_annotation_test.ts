@@ -136,6 +136,7 @@ export class NextStyleTest extends AbstractJsonTest {
     const emml = Enrich.semanticMathmlSync(mathMl, Engine.getInstance().options);
     const generator = new DummySpeechGenerator();
     generator.setOptions({
+      locale: 'en',
       modality: this.field('modality') || 'speech',
       style: 'default',
       domain: this.field('domain') || this.domain
