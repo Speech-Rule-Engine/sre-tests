@@ -18,9 +18,10 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import {fileURLToPath} from 'url';
 
 function getDir() {
-  return __dirname;
+  return path.dirname(fileURLToPath(import.meta.url)).replace(/js$/, '');
 }
 const TestDir = getDir().replace(/(dist|js\/base)$/, '');
 
